@@ -21,6 +21,10 @@ art/                 Artwork pipeline folders and prompt files
 art/prompts/         Versioned prompt records, one JSON file per entity prompt
 data/                Source-of-truth JSON data for the Pages dashboard
 characters/          Future character records; current canon has no playable Heroes
+npcs/                Non-playable campaign character records
+creatures/           Enemy creatures, Gateborn threats, and world boss records
+maps/                Tactical and campaign map records
+campaigns/           Campaign and chapter records
 codex/               Reserved codex expansion area
 dev/                 Development Platform entry copy
 development/         Reserved development records
@@ -37,8 +41,13 @@ scripts/             Index generation, validation, Pages build scripts
 - Phase: GitHub Pages Development Platform
 - Factions: 7
 - Titans: 63
+- Non-playable characters: 8
+- Creatures/threats: 5
+- Maps: 6
+- Campaigns: 4
+- Chapters: 10
 - Characters: 0 playable characters by canon lock
-- Art prompts: 63 Titan prompts
+- Art prompts: 82 total prompts
 - Game loop: first playable Gate encounter
 
 ## Commands
