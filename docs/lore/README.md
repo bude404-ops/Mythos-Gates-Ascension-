@@ -39,4 +39,5 @@ The following chapters expand every faction, Realm, Gate, and Titan role without
 ## Visual Architecture
 
 - [Hybrid 2D Sprite + 3D Campaign Visual Architecture](11-HYBRID-VISUAL-ARCHITECTURE.md)
+- [Automatic GitHub Sync and Deployment Policy](12-GITHUB-SYNC-DEPLOYMENT-POLICY.md)
 
