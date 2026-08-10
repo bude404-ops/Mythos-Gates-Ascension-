@@ -91,3 +91,16 @@ Current canon is locked around:
 - No Mycocide / fungal civilization content
 
 GitHub is the source of truth. GitHub Pages is the visual command center. The Codex is the canonical knowledge base. The Art Studio is the visual production pipeline. The Directors are the governance system.
+
+## Visual Development Platform
+
+The platform now includes a Visual Game Preview Environment:
+
+- `game/preview.html` — development preview using current repository JSON data.
+- `game/shared-preview.js` — shared visual renderer for preview screens.
+- `data/visual-screens.json` — Visual QA screen status records.
+- `data/visual-change-rules.json` — affected-screen rules by change type.
+- `data/visual-baselines.json` — initial baseline records.
+- `visual/` — visual review/baseline notes, separate from production artwork.
+
+The preview supports mobile-first device presets, Dev View, Player View, affected-screen review, capture metadata, and before/after comparison scaffolding.
