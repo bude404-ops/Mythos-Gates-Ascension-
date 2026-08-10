@@ -19,7 +19,10 @@ const files = {
   'creatures.json': 'creatures',
   'maps.json': 'maps',
   'campaigns.json': 'campaigns',
-  'chapters.json': 'chapters'
+  'chapters.json': 'chapters',
+  'visual-screens.json': 'visualScreens',
+  'visual-change-rules.json': 'visualChangeRules',
+  'visual-baselines.json': 'visualBaselines'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {
