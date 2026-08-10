@@ -36,3 +36,7 @@ The following chapters expand every faction, Realm, Gate, and Titan role without
 - [Empyrean: The White Citadel Above Law](10-EMPYREAN-REALM-CODEX.md)
 - [Infernal Dominion: The Black Iron Court of Dominion](10-INFERNAL-DOMINION-REALM-CODEX.md)
 
+## Visual Architecture
+
+- [Hybrid 2D Sprite + 3D Campaign Visual Architecture](11-HYBRID-VISUAL-ARCHITECTURE.md)
+
