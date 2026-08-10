@@ -38,3 +38,17 @@ Campaigns connect chapters into Director-approved progression arcs.
 ## Safety Rule
 
 No entry in this system may resurrect removed lore, introduce sci-fi, add aliens, add spaceships, or convert NPCs into playable Heroes without explicit Creator approval.
+
+## Expanded Campaign Lore Coverage
+
+Each current campaign now has a dedicated lore file that ties its maps, NPCs, threats, and Realm philosophy back to the canon foundation. Dialogue drafts must follow the Campaign Dialogue Bible: restrained, mythic, strategic, and never modern-cheesy.
+
+Current lore-covered campaigns:
+
+1. The First Reopening
+2. Trial of the Celestial Heights
+3. Roots Below the Gate
+4. Cinders of Dominion
+5. Helio-Kemet Sun Realm
+6. Kami Mirror Tempest
+7. Empyrean Choir Vault
