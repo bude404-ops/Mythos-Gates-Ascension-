@@ -25,6 +25,7 @@ const data = {
   lore: read('data/lore-index.json'),
   npcs: read('data/npcs.json'),
   creatures: read('data/creatures.json'),
+  backstories: read('data/character-backstories.json'),
   maps: read('data/maps.json'),
   campaigns: read('data/campaigns.json'),
   chapters: read('data/chapters.json'),
@@ -61,6 +62,8 @@ const promptIds = new Set(data.prompts.map(p => p.id));
 const artworkIds = new Set(data.artworks.map(a => a.id));
 const npcIds = new Set(data.npcs.map(n => n.id));
 const creatureIds = new Set(data.creatures.map(c => c.id));
+const backstoryIds = new Set(data.backstories.map(b => b.id));
+const backstoryEntityIds = new Set(data.backstories.map(b => b.entityId));
 const mapIds = new Set(data.maps.map(m => m.id));
 const campaignIds = new Set(data.campaigns.map(c => c.id));
 const chapterIds = new Set(data.chapters.map(c => c.id));
@@ -80,7 +83,8 @@ for (const titan of data.titans) {
   if(!factionIds.has(titan.factionId)) fail(`${titan.id}: invalid factionId ${titan.factionId}`);
   if(!promptIds.has(titan.artPromptId)) fail(`${titan.id}: missing prompt ${titan.artPromptId}`);
   if(titan.artworkId && !artworkIds.has(titan.artworkId)) fail(`${titan.id}: invalid artworkId ${titan.artworkId}`);
-  for (const field of ['name','faction','rarity','role','lore','visualDescription','developmentStatus']) if(!titan[field]) fail(`${titan.id}: missing ${field}`);
+  for (const field of ['name','faction','rarity','role','lore','visualDescription','developmentStatus','backstoryId']) if(!titan[field]) fail(`${titan.id}: missing ${field}`);
+  if(!backstoryIds.has(titan.backstoryId) || !backstoryEntityIds.has(titan.id)) fail(`${titan.id}: missing linked backstory ${titan.backstoryId}`);
 }
 
 for (const prompt of data.prompts) {
@@ -98,12 +102,14 @@ for (const npc of data.npcs) {
   if(npc.playable !== false) fail(`${npc.id}: NPC must be non-playable`);
   if(npc.factionId && !factionIds.has(npc.factionId)) fail(`${npc.id}: invalid factionId ${npc.factionId}`);
   if(!promptIds.has(npc.artPromptId)) fail(`${npc.id}: missing prompt ${npc.artPromptId}`);
+  if(!npc.backstoryId || !backstoryIds.has(npc.backstoryId) || !backstoryEntityIds.has(npc.id)) fail(`${npc.id}: missing linked backstory ${npc.backstoryId}`);
   if(!exists(`npcs/${npc.id}.json`)) fail(`${npc.id}: missing individual NPC file`);
 }
 
 for (const creature of data.creatures) {
   if(creature.playable !== false) fail(`${creature.id}: creature must be non-playable`);
   if(!promptIds.has(creature.artPromptId)) fail(`${creature.id}: missing prompt ${creature.artPromptId}`);
+  if(!creature.backstoryId || !backstoryIds.has(creature.backstoryId) || !backstoryEntityIds.has(creature.id)) fail(`${creature.id}: missing linked backstory ${creature.backstoryId}`);
   if(!exists(`creatures/${creature.id}.json`)) fail(`${creature.id}: missing individual creature file`);
 }
 
@@ -163,6 +169,20 @@ for (const art of data.missionArtPackages) {
   for (const field of ['mapEnvironmentPrompt','backgroundPrompt','enemyPlacementGuidance','bossArtworkRequirements','objectiveArtworkRequirements','vfxRequirements','uiRequirements','missionThumbnail','chapterArtwork']) if(!art[field] || (Array.isArray(art[field]) && !art[field].length)) fail(`${art.id}: missing art requirement ${field}`);
   if(!exists(`art/mission-packages/${art.id}.json`)) fail(`${art.id}: missing individual art package file`);
 }
+
+for (const backstory of data.backstories) {
+  if(!['Titan','NPC','Creature'].includes(backstory.entityType)) fail(`${backstory.id}: invalid entityType ${backstory.entityType}`);
+  const validEntity = backstory.entityType === 'Titan' ? titanIds.has(backstory.entityId) : backstory.entityType === 'NPC' ? npcIds.has(backstory.entityId) : creatureIds.has(backstory.entityId);
+  if(!validEntity) fail(`${backstory.id}: invalid entityId ${backstory.entityId}`);
+  if(!backstory.shortBackstory || !Array.isArray(backstory.chapters) || backstory.chapters.length < 5) fail(`${backstory.id}: incomplete readable backstory`);
+  if(!Array.isArray(backstory.storyArcIds) || !backstory.storyArcIds.length) fail(`${backstory.id}: missing story arc tie`);
+  for (const arcId of backstory.storyArcIds) if(!storylineArcIds.has(arcId)) fail(`${backstory.id}: invalid story arc ${arcId}`);
+  if(!Array.isArray(backstory.loreTies) || backstory.loreTies.length < 2) fail(`${backstory.id}: missing lore ties`);
+  const folder = backstory.entityType === 'Titan' ? 'titans' : backstory.entityType === 'NPC' ? 'npcs' : 'creatures';
+  if(!exists(`backstories/${folder}/${backstory.id}.json`)) fail(`${backstory.id}: missing individual backstory file`);
+}
+if(data.backstories.length !== data.titans.length + data.npcs.length + data.creatures.length) fail(`Backstory coverage mismatch: ${data.backstories.length}`);
+
 for (const arc of data.storylineArcs) {
   for (const id of arc.factionFocus || []) if(!factionIds.has(id)) fail(`${arc.id}: invalid faction focus ${id}`);
   for (const id of arc.campaignIds || []) if(!campaignIds.has(id)) fail(`${arc.id}: invalid campaign ${id}`);
@@ -205,4 +225,4 @@ if(!data.visualScreens.some(s => s.id === 'TG-SCREEN-TACTICAL-MAP-PROTOTYPE' && 
 const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','Game Preview','Visual QA','Tactical Map Prototype','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
 
-console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status}, null, 2));
+console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status}, null, 2));
