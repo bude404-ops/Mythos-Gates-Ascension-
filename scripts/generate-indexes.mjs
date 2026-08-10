@@ -14,7 +14,12 @@ const files = {
   'art-prompts.json': 'artPrompts',
   'artworks.json': 'artworks',
   'development-tasks.json': 'developmentTasks',
-  'lore-index.json': 'loreEntries'
+  'lore-index.json': 'loreEntries',
+  'npcs.json': 'npcs',
+  'creatures.json': 'creatures',
+  'maps.json': 'maps',
+  'campaigns.json': 'campaigns',
+  'chapters.json': 'chapters'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {
