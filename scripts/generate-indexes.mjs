@@ -13,6 +13,7 @@ const files = {
   'units.json': 'units',
   'art-prompts.json': 'artPrompts',
   'artworks.json': 'artworks',
+  'art-import-pipeline.json': 'artImportPipeline',
   'development-tasks.json': 'developmentTasks',
   'lore-index.json': 'loreEntries',
   'npcs.json': 'npcs',
