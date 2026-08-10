@@ -1,0 +1,50 @@
+{
+  "id": "TG-GITHUB-SYNC-POLICY-001",
+  "title": "Automatic GitHub Sync and Deployment Policy",
+  "status": "Canon Locked",
+  "updated": "2026-08-10",
+  "sourceOfTruth": "GitHub repository main branch is the authoritative persisted state for Titan Gates.",
+  "nonNegotiables": [
+    "Every approved development change must be persisted to GitHub.",
+    "Temporary runtime, browser, preview, or local working state is never authoritative.",
+    "Do not declare an update complete unless the approved change is pushed to GitHub.",
+    "Do not expose GitHub credentials to frontend code, GitHub Pages, JSON data, localStorage, asset manifests, or build output.",
+    "Do not claim deployment succeeded until GitHub Actions/Pages reports success."
+  ],
+  "pipeline": [
+    "CHANGE",
+    "VALIDATE",
+    "BUILD",
+    "VISUAL TEST",
+    "APPROVE",
+    "VERSION",
+    "COMMIT",
+    "PUSH",
+    "ACTIONS",
+    "DEPLOY",
+    "VERIFY",
+    "REPORT"
+  ],
+  "requiredPushCategories": [
+    "code",
+    "game-data",
+    "lore",
+    "art-system",
+    "development-system"
+  ],
+  "largeFileHandling": {
+    "maxNormalGitAssetMb": 50,
+    "rule": "Stop and report before pushing extremely large artwork. Recommend Git LFS or external asset storage; never silently delete or over-compress approved art."
+  },
+  "commitRules": [
+    "Use meaningful commit messages.",
+    "Group related changes into one logical commit.",
+    "Run validation, build, game data validation, asset validation, Visual QA, and mobile responsiveness checks before commit."
+  ],
+  "statusMeanings": {
+    "SYNCED": "Everything approved is pushed to GitHub.",
+    "CHANGES_PENDING": "Development changes exist that have not yet been pushed.",
+    "SYNC_ERROR": "Push failed or remote verification failed.",
+    "DEPLOYING": "GitHub Actions or Pages deployment is still in progress."
+  }
+}
