@@ -1,0 +1,97 @@
+{
+  "id": "TG-F02-C02-M07",
+  "factionId": "TG-FACTION-002",
+  "campaignId": "TG-F02-CAMPAIGN-NORMAL",
+  "campaignType": "Normal",
+  "chapter": 2,
+  "chapterTitle": "The Forgotten Banner",
+  "missionNumber": 7,
+  "missionInChapter": 3,
+  "title": "Orders From No King",
+  "description": "The Forgotten Banner: Orders From No King unfolds across wind-torn bridge causeway with shredded banners, rusted standard sockets, and buckled oath plates, pushing the 5-Titan Asgardian squad to convert endurance into decisive counterpressure.",
+  "lore": "Orders From No King advances the Storm-Oath Covenant arc: the Gate tries to harvest Asgardian vows, while Valhalla law insists courage must remain chosen responsibility.",
+  "recommendedPower": 536,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "frontline oath guardian",
+    "storm counterstriker",
+    "objective anchor",
+    "mobile rescuer",
+    "rune support"
+  ],
+  "mapId": "TG-MAP-003",
+  "terrain": "wind-torn bridge causeway with shredded banners, rusted standard sockets, and buckled oath plates",
+  "objectives": {
+    "primary": "Destroy the Forgotten banner sockets before their command spreads.",
+    "optional": [
+      "Complete before turn 10",
+      "Keep at least four Titans standing",
+      "Trigger at least two Oathbound counterattacks"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-004",
+        "TG-CREATURE-001"
+      ],
+      "entry": "emerge from storm-shadowed bridge ribs"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-001"
+      ],
+      "entry": "reinforcement from oath-scar high ground",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": null,
+  "turnLimit": 12,
+  "specialRules": [
+    "Banner Pressure: enemy banners grant defense until physically broken by objective actions.",
+    "Oathbound: surviving damage strengthens the next committed strike.",
+    "5-Titan standard squad"
+  ],
+  "victoryConditions": [
+    "Destroy the Forgotten banner sockets before their command spreads."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Mid-tier oath iron",
+      "Asgardian faction shard cache",
+      "Storm rune upgrade dust",
+      "TG-F02-C02-M07 codex shard"
+    ],
+    "replay": [
+      "Oath iron",
+      "Storm rune upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F02-CODEX-07"
+  ],
+  "artPackageId": "TG-F02-ART-C02-M07",
+  "dialogueId": "TG-F02-DLG-C02-M07",
+  "audioRequirements": [
+    "low thunder bed",
+    "iron impact cue",
+    "oath rune resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+}
