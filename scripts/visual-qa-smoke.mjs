@@ -17,6 +17,16 @@ if (!['PASS', 'IN_PROGRESS'].includes(status.visualQa)) {
   console.error(JSON.stringify({ ok: false, visualQa: status.visualQa }, null, 2));
   process.exit(1);
 }
+const indexHtml = readFileSync('index.html', 'utf8');
+const dialogue = JSON.parse(readFileSync('data/dialogue-scripts.json', 'utf8'));
+if (!indexHtml.includes('function dialogueViewer') || !indexHtml.includes('#/dialogue')) {
+  console.error(JSON.stringify({ ok: false, dialogueViewerMissing: true }, null, 2));
+  process.exit(1);
+}
+if (dialogue.length !== 19 || !dialogue.every(s => s.beats && ['missionIntro','midBattlePressure','lowHealthWarning','victory','defeat','postMission'].every(b => s.beats[b]))) {
+  console.error(JSON.stringify({ ok: false, dialogueCoverageInvalid: true }, null, 2));
+  process.exit(1);
+}
 const tactical = readFileSync('game/tactical-map-prototype.html', 'utf8');
 for (const token of ['__TG_TACTICAL_MAP_READY__', 'GRID_W = 10', 'GRID_H = 10', 'function attackUnit', 'function enemyTurn', 'realm-selector']) {
   if (!tactical.includes(token)) {
