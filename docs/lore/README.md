@@ -21,3 +21,5 @@ Titans Gate is not mythology as costume.
 Titans Gate is mythology as evidence of real extradimensional power.
 
 Every Realm must feel like its own ancient civilization. Every Titan must feel born from that civilization's laws, symbols, powers, and wounds. Every gameplay role must come from lore. Every visual design must reject sci-fi, generic fantasy, and ordinary human cosplay. Every Titan Gate must feel ancient, dangerous, sacred, and capable of breaking reality.
+
+- [NPCs, Creatures, Maps, and Campaigns](09-NPCS-CREATURES-MAPS-CAMPAIGNS.md) — Director-approved campaign expansion without playable Heroes.
