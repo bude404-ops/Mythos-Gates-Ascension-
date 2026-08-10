@@ -1,5 +1,1521 @@
 [
   {
+    "id": "TG-BACKSTORY-CREATURE-001",
+    "entityId": "TG-CREATURE-001",
+    "entityType": "Creature",
+    "name": "Hollow Wretch",
+    "slug": "hollow-wretch",
+    "factionId": null,
+    "faction": "Hollow",
+    "role": "Minor",
+    "rarity": "Hollow Creature",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001"
+    ],
+    "campaignHooks": [
+      "The First Reopening"
+    ],
+    "loreTies": [
+      "A small Gateborn husk formed from erased memory. It attacks in groups and leaves cold silence behind when destroyed.",
+      "Rushes isolated Titans and punishes careless positioning."
+    ],
+    "shortBackstory": "Hollow Wretch is a non-playable Hollow Creature whose origin makes The First Reopening visible as living battlefield danger.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Hollow Wretch formed where the Gate consumed names faster than the Codex could preserve them. It is not a faction citizen and should never read like a recruitable Titan. Its existence proves that the Gate crisis produces consequences, predators, remnants, and catastrophes beyond civilized armies."
+      },
+      {
+        "title": "Lore Function",
+        "text": "As a Hollow Creature from Hollow, Hollow carries a specific warning into the story: A small Gateborn husk formed from erased memory. It attacks in groups and leaves cold silence behind when destroyed. This makes the creature useful as canon pressure, not random enemy dressing."
+      },
+      {
+        "title": "Battlefield Behavior",
+        "text": "On the map, Hollow supports its lore through behavior: Rushes isolated Titans and punishes careless positioning. Its abilities \u2014 Scratch of Forgetting, Swarm Pressure \u2014 should feel like the environment and story acting through a threat body."
+      },
+      {
+        "title": "Campaign Tie",
+        "text": "In The First Reopening, Hollow connects to the first proof that erased memory can return as hostile pressure. Encounter designers can place it where the player needs to feel what the Gate has damaged: memory, structure, instinct, oath, water, stone, or command."
+      },
+      {
+        "title": "Visual / Reading Rule",
+        "text": "The creature page must preserve the distinction between Titans, NPCs, and non-playable threats. Hollow can be studied under Creatures and Backstories, but its profile should reinforce danger, not companionship."
+      }
+    ],
+    "relationshipHooks": [
+      "Threat profile",
+      "Encounter pressure",
+      "Campaign consequence"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Mission detail enemy references"
+    ],
+    "developmentStatus": "Readable creature profile integrated into dashboard threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-002",
+    "entityId": "TG-CREATURE-002",
+    "entityType": "Creature",
+    "name": "Gateborn Colossus",
+    "slug": "gateborn-colossus",
+    "factionId": null,
+    "faction": "Unstable Gate",
+    "role": "Major",
+    "rarity": "Gateborn Creature",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001"
+    ],
+    "campaignHooks": [
+      "The First Reopening"
+    ],
+    "loreTies": [
+      "A giant malformed guardian grown around unstable Gate stone. It is not a Titan and has no civilization; it is a defensive catastrophe.",
+      "Controls central objectives and forces Titans to split pressure."
+    ],
+    "shortBackstory": "Gateborn Colossus is a non-playable Gateborn Creature whose origin makes The First Reopening visible as living battlefield danger.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Gateborn Colossus grew around unstable Gate stone as a defensive catastrophe. It is not a faction citizen and should never read like a recruitable Titan. Its existence proves that the Gate crisis produces consequences, predators, remnants, and catastrophes beyond civilized armies."
+      },
+      {
+        "title": "Lore Function",
+        "text": "As a Gateborn Creature from Unstable Gate, Gateborn carries a specific warning into the story: A giant malformed guardian grown around unstable Gate stone. It is not a Titan and has no civilization; it is a defensive catastrophe. This makes the creature useful as canon pressure, not random enemy dressing."
+      },
+      {
+        "title": "Battlefield Behavior",
+        "text": "On the map, Gateborn supports its lore through behavior: Controls central objectives and forces Titans to split pressure. Its abilities \u2014 Gate Stomp, Fracture Roar, Objective Crush \u2014 should feel like the environment and story acting through a threat body."
+      },
+      {
+        "title": "Campaign Tie",
+        "text": "In The First Reopening, Gateborn connects to the unstable Gate proving it can grow guardians instead of summoning soldiers. Encounter designers can place it where the player needs to feel what the Gate has damaged: memory, structure, instinct, oath, water, stone, or command."
+      },
+      {
+        "title": "Visual / Reading Rule",
+        "text": "The creature page must preserve the distinction between Titans, NPCs, and non-playable threats. Gateborn can be studied under Creatures and Backstories, but its profile should reinforce danger, not companionship."
+      }
+    ],
+    "relationshipHooks": [
+      "Threat profile",
+      "Encounter pressure",
+      "Campaign consequence"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Mission detail enemy references"
+    ],
+    "developmentStatus": "Readable creature profile integrated into dashboard threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-003",
+    "entityId": "TG-CREATURE-003",
+    "entityType": "Creature",
+    "name": "Beast Realm Maneater",
+    "slug": "beast-realm-maneater",
+    "factionId": null,
+    "faction": "Beast Realms",
+    "role": "Major",
+    "rarity": "Beast Realm Creature",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001"
+    ],
+    "campaignHooks": [
+      "The First Reopening"
+    ],
+    "loreTies": [
+      "A predator from a Beast Realm where instinct became law. It is not evil in a human sense; it is a living argument that survival has no court of appeal.",
+      "Tracks wounded Titans and escalates if ignored."
+    ],
+    "shortBackstory": "Beast Realm Maneater is a non-playable Beast Realm Creature whose origin makes The First Reopening visible as living battlefield danger.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Beast Realm Maneater crossed from a Beast Realm where survival itself became government. It is not a faction citizen and should never read like a recruitable Titan. Its existence proves that the Gate crisis produces consequences, predators, remnants, and catastrophes beyond civilized armies."
+      },
+      {
+        "title": "Lore Function",
+        "text": "As a Beast Realm Creature from Beast Realms, Beast carries a specific warning into the story: A predator from a Beast Realm where instinct became law. It is not evil in a human sense; it is a living argument that survival has no court of appeal. This makes the creature useful as canon pressure, not random enemy dressing."
+      },
+      {
+        "title": "Battlefield Behavior",
+        "text": "On the map, Beast supports its lore through behavior: Tracks wounded Titans and escalates if ignored. Its abilities \u2014 Pounce, Blood-Scent Mark, Devour Weakness \u2014 should feel like the environment and story acting through a threat body."
+      },
+      {
+        "title": "Campaign Tie",
+        "text": "In The First Reopening, Beast connects to the warning that not every threat is evil; some are Realm law sharpened into hunger. Encounter designers can place it where the player needs to feel what the Gate has damaged: memory, structure, instinct, oath, water, stone, or command."
+      },
+      {
+        "title": "Visual / Reading Rule",
+        "text": "The creature page must preserve the distinction between Titans, NPCs, and non-playable threats. Beast can be studied under Creatures and Backstories, but its profile should reinforce danger, not companionship."
+      }
+    ],
+    "relationshipHooks": [
+      "Threat profile",
+      "Encounter pressure",
+      "Campaign consequence"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Mission detail enemy references"
+    ],
+    "developmentStatus": "Readable creature profile integrated into dashboard threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-004",
+    "entityId": "TG-CREATURE-004",
+    "entityType": "Creature",
+    "name": "Forgotten Standard Bearer",
+    "slug": "forgotten-standard-bearer",
+    "factionId": null,
+    "faction": "Forgotten",
+    "role": "Elite",
+    "rarity": "Forgotten Remnant",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "Storm-Oath Covenant"
+    ],
+    "loreTies": [
+      "A remnant of a removed civilization whose name cannot be safely spoken. It carries a banner that remembers wars the Codex refuses to restore.",
+      "Buffs lesser Hollow enemies and creates denial zones."
+    ],
+    "shortBackstory": "Forgotten Standard Bearer is a non-playable Forgotten Remnant whose origin makes Storm-Oath Covenant visible as living battlefield danger.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Forgotten Standard Bearer remains from a removed war whose civilization cannot be safely restored. It is not a faction citizen and should never read like a recruitable Titan. Its existence proves that the Gate crisis produces consequences, predators, remnants, and catastrophes beyond civilized armies."
+      },
+      {
+        "title": "Lore Function",
+        "text": "As a Forgotten Remnant from Forgotten, Forgotten carries a specific warning into the story: A remnant of a removed civilization whose name cannot be safely spoken. It carries a banner that remembers wars the Codex refuses to restore. This makes the creature useful as canon pressure, not random enemy dressing."
+      },
+      {
+        "title": "Battlefield Behavior",
+        "text": "On the map, Forgotten supports its lore through behavior: Buffs lesser Hollow enemies and creates denial zones. Its abilities \u2014 Banner of Loss, Command the Nameless, Memory Cleave \u2014 should feel like the environment and story acting through a threat body."
+      },
+      {
+        "title": "Campaign Tie",
+        "text": "In Storm-Oath Covenant, Forgotten connects to the banner-memory pressure that returns during Asgardian Elite remixes. Encounter designers can place it where the player needs to feel what the Gate has damaged: memory, structure, instinct, oath, water, stone, or command."
+      },
+      {
+        "title": "Visual / Reading Rule",
+        "text": "The creature page must preserve the distinction between Titans, NPCs, and non-playable threats. Forgotten can be studied under Creatures and Backstories, but its profile should reinforce danger, not companionship."
+      }
+    ],
+    "relationshipHooks": [
+      "Threat profile",
+      "Encounter pressure",
+      "Campaign consequence"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Mission detail enemy references"
+    ],
+    "developmentStatus": "Readable creature profile integrated into dashboard threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-005",
+    "entityId": "TG-CREATURE-005",
+    "entityType": "Creature",
+    "name": "Ancient World Boss: Leviathan of the First Flood",
+    "slug": "ancient-world-boss-leviathan",
+    "factionId": null,
+    "faction": "Pre-Gate Mythic Deep",
+    "role": "World Boss",
+    "rarity": "Ancient World Boss",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "Storm-Oath Covenant"
+    ],
+    "loreTies": [
+      "A catastrophic primordial beast awakened when multiple Gate scars align beneath ancient waters. It is a campaign-scale threat, not a faction unit.",
+      "Campaign boss encounter that transforms terrain each phase."
+    ],
+    "shortBackstory": "Ancient World Boss: Leviathan of the First Flood is a non-playable Ancient World Boss whose origin makes Storm-Oath Covenant visible as living battlefield danger.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Ancient World Boss: Leviathan of the First Flood slept below pre-Gate waters until multiple scars aligned like a wound-map. It is not a faction citizen and should never read like a recruitable Titan. Its existence proves that the Gate crisis produces consequences, predators, remnants, and catastrophes beyond civilized armies."
+      },
+      {
+        "title": "Lore Function",
+        "text": "As a Ancient World Boss from Pre-Gate Mythic Deep, Ancient carries a specific warning into the story: A catastrophic primordial beast awakened when multiple Gate scars align beneath ancient waters. It is a campaign-scale threat, not a faction unit. This makes the creature useful as canon pressure, not random enemy dressing."
+      },
+      {
+        "title": "Battlefield Behavior",
+        "text": "On the map, Ancient supports its lore through behavior: Campaign boss encounter that transforms terrain each phase. Its abilities \u2014 Flood the Map, Temple Chain Drag, Primordial Roar \u2014 should feel like the environment and story acting through a threat body."
+      },
+      {
+        "title": "Campaign Tie",
+        "text": "In Storm-Oath Covenant, Ancient connects to the raid-scale omen beneath future covenant shield objectives. Encounter designers can place it where the player needs to feel what the Gate has damaged: memory, structure, instinct, oath, water, stone, or command."
+      },
+      {
+        "title": "Visual / Reading Rule",
+        "text": "The creature page must preserve the distinction between Titans, NPCs, and non-playable threats. Ancient can be studied under Creatures and Backstories, but its profile should reinforce danger, not companionship."
+      }
+    ],
+    "relationshipHooks": [
+      "Threat profile",
+      "Encounter pressure",
+      "Campaign consequence"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Mission detail enemy references"
+    ],
+    "developmentStatus": "Readable creature profile integrated into dashboard threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-006",
+    "entityId": "TG-CREATURE-006",
+    "entityType": "Creature",
+    "name": "Hollow Choirling",
+    "slug": "hollow-choirling",
+    "factionId": null,
+    "faction": "The Hollow",
+    "role": "Minor",
+    "rarity": "Hollow Creature",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001",
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Storm-Oath Covenant",
+      "Hollow Breach Events"
+    ],
+    "loreTies": [
+      "A small mouthless choir-husk that hums erased prayers until Titan formation timing begins to slip.",
+      "Stays behind Wretches and applies silence pressure to isolated lanes.",
+      "Erasure is not death; erasure is ownership without memory."
+    ],
+    "shortBackstory": "Hollow Choirling is a Hollow threat creature built for campaign and event encounters, turning erased memory into minor battlefield pressure.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Hollow Choirling formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+      },
+      {
+        "title": "Hollow Function",
+        "text": "Its role inside the Hollow threat faction is precise: Stays behind Wretches and applies silence pressure to isolated lanes. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+      },
+      {
+        "title": "Lore Tie",
+        "text": "A small mouthless choir-husk that hums erased prayers until Titan formation timing begins to slip."
+      },
+      {
+        "title": "Campaign Use",
+        "text": "Hollow Choirling can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+      },
+      {
+        "title": "Visual / Encounter Rule",
+        "text": "Art and gameplay must keep Hollow Choirling visibly non-playable. Its silhouette uses small bent humanoid with a smooth unfinished face, throat full of white fracture lines, ash ribbons floating from its shoulders. while its abilities \u2014 Silence Hymn, Formation Stutter \u2014 create battlefield pressure without confusing it for a faction Titan."
+      }
+    ],
+    "relationshipHooks": [
+      "Hollow threat pool",
+      "Event encounter library",
+      "Campaign enemy wave selection"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Hollow Threat Faction"
+    ],
+    "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-007",
+    "entityId": "TG-CREATURE-007",
+    "entityType": "Creature",
+    "name": "Hollow Knell Archer",
+    "slug": "hollow-knell-archer",
+    "factionId": null,
+    "faction": "The Hollow",
+    "role": "Minor",
+    "rarity": "Hollow Creature",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001",
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Storm-Oath Covenant",
+      "Hollow Breach Events"
+    ],
+    "loreTies": [
+      "A long-limbed Hollow marksman grown from remembered executions; every arrow is a moment someone forgot to duck.",
+      "Targets Support and Battery Titans from cover, forcing movement.",
+      "Erasure is not death; erasure is ownership without memory."
+    ],
+    "shortBackstory": "Hollow Knell Archer is a Hollow threat creature built for campaign and event encounters, turning erased memory into minor battlefield pressure.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Hollow Knell Archer formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+      },
+      {
+        "title": "Hollow Function",
+        "text": "Its role inside the Hollow threat faction is precise: Targets Support and Battery Titans from cover, forcing movement. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+      },
+      {
+        "title": "Lore Tie",
+        "text": "A long-limbed Hollow marksman grown from remembered executions; every arrow is a moment someone forgot to duck."
+      },
+      {
+        "title": "Campaign Use",
+        "text": "Hollow Knell Archer can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+      },
+      {
+        "title": "Visual / Encounter Rule",
+        "text": "Art and gameplay must keep Hollow Knell Archer visibly non-playable. Its silhouette uses tall charcoal archer with broken crescent bow, mask slit, pale arrow-sparks, ragged funeral cloth. while its abilities \u2014 Knell Shot, Backline Mark \u2014 create battlefield pressure without confusing it for a faction Titan."
+      }
+    ],
+    "relationshipHooks": [
+      "Hollow threat pool",
+      "Event encounter library",
+      "Campaign enemy wave selection"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Hollow Threat Faction"
+    ],
+    "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-008",
+    "entityId": "TG-CREATURE-008",
+    "entityType": "Creature",
+    "name": "Hollow Oath-Eater",
+    "slug": "hollow-oath-eater",
+    "factionId": null,
+    "faction": "The Hollow",
+    "role": "Major",
+    "rarity": "Hollow Creature",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001",
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Storm-Oath Covenant",
+      "Hollow Breach Events"
+    ],
+    "loreTies": [
+      "A Gateborn hunger that feeds on promises made under pressure, especially Asgardian vows and Empyrean edicts.",
+      "Punishes Titans that repeat the same objective action without support.",
+      "Erasure is not death; erasure is ownership without memory."
+    ],
+    "shortBackstory": "Hollow Oath-Eater is a Hollow threat creature built for campaign and event encounters, turning erased memory into major battlefield pressure.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Hollow Oath-Eater formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+      },
+      {
+        "title": "Hollow Function",
+        "text": "Its role inside the Hollow threat faction is precise: Punishes Titans that repeat the same objective action without support. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+      },
+      {
+        "title": "Lore Tie",
+        "text": "A Gateborn hunger that feeds on promises made under pressure, especially Asgardian vows and Empyrean edicts."
+      },
+      {
+        "title": "Campaign Use",
+        "text": "Hollow Oath-Eater can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+      },
+      {
+        "title": "Visual / Encounter Rule",
+        "text": "Art and gameplay must keep Hollow Oath-Eater visibly non-playable. Its silhouette uses heavy black beast-knight with ringed jaw, torn rune chains, oath-stone lodged in chest, white crack-teeth. while its abilities \u2014 Vow Bite, Break Resolve, Oath Drain \u2014 create battlefield pressure without confusing it for a faction Titan."
+      }
+    ],
+    "relationshipHooks": [
+      "Hollow threat pool",
+      "Event encounter library",
+      "Campaign enemy wave selection"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Hollow Threat Faction"
+    ],
+    "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-009",
+    "entityId": "TG-CREATURE-009",
+    "entityType": "Creature",
+    "name": "Hollow Sunless Magistrate",
+    "slug": "hollow-sunless-magistrate",
+    "factionId": null,
+    "faction": "The Hollow",
+    "role": "Elite",
+    "rarity": "Hollow Creature",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001",
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Storm-Oath Covenant",
+      "Hollow Breach Events"
+    ],
+    "loreTies": [
+      "A false judge created from stolen Aten Ra law; it issues verdicts that erase context and leave only punishment.",
+      "Corrupts capture points and reverses sustain if not interrupted.",
+      "Erasure is not death; erasure is ownership without memory."
+    ],
+    "shortBackstory": "Hollow Sunless Magistrate is a Hollow threat creature built for campaign and event encounters, turning erased memory into elite battlefield pressure.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Hollow Sunless Magistrate formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+      },
+      {
+        "title": "Hollow Function",
+        "text": "Its role inside the Hollow threat faction is precise: Corrupts capture points and reverses sustain if not interrupted. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+      },
+      {
+        "title": "Lore Tie",
+        "text": "A false judge created from stolen Aten Ra law; it issues verdicts that erase context and leave only punishment."
+      },
+      {
+        "title": "Campaign Use",
+        "text": "Hollow Sunless Magistrate can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+      },
+      {
+        "title": "Visual / Encounter Rule",
+        "text": "Art and gameplay must keep Hollow Sunless Magistrate visibly non-playable. Its silhouette uses tall robed absence with bronze-black scales, faceless sun disk cracked in half, floating judgment shards. while its abilities \u2014 Null Verdict, Sentence the Bright, Law Inversion \u2014 create battlefield pressure without confusing it for a faction Titan."
+      }
+    ],
+    "relationshipHooks": [
+      "Hollow threat pool",
+      "Event encounter library",
+      "Campaign enemy wave selection"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Hollow Threat Faction"
+    ],
+    "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-010",
+    "entityId": "TG-CREATURE-010",
+    "entityType": "Creature",
+    "name": "Hollow Banner Maw",
+    "slug": "hollow-banner-maw",
+    "factionId": null,
+    "faction": "The Hollow",
+    "role": "Major",
+    "rarity": "Forgotten Hollow",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001",
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Storm-Oath Covenant",
+      "Hollow Breach Events"
+    ],
+    "loreTies": [
+      "A crawling banner-creature that grew from the Forgotten Standard Bearer\u2019s shadow and devours unit identity.",
+      "Drags nearby swarm units into frenzy when a Titan falls below half health.",
+      "Erasure is not death; erasure is ownership without memory."
+    ],
+    "shortBackstory": "Hollow Banner Maw is a Hollow threat creature built for campaign and event encounters, turning erased memory into major battlefield pressure.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Hollow Banner Maw formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+      },
+      {
+        "title": "Hollow Function",
+        "text": "Its role inside the Hollow threat faction is precise: Drags nearby swarm units into frenzy when a Titan falls below half health. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+      },
+      {
+        "title": "Lore Tie",
+        "text": "A crawling banner-creature that grew from the Forgotten Standard Bearer\u2019s shadow and devours unit identity."
+      },
+      {
+        "title": "Campaign Use",
+        "text": "Hollow Banner Maw can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+      },
+      {
+        "title": "Visual / Encounter Rule",
+        "text": "Art and gameplay must keep Hollow Banner Maw visibly non-playable. Its silhouette uses low quadruped made of torn banners, bone pole ribs, mouth hidden under cloth, erased sigils crawling over hide. while its abilities \u2014 Devour Insignia, Nameless Rally \u2014 create battlefield pressure without confusing it for a faction Titan."
+      }
+    ],
+    "relationshipHooks": [
+      "Hollow threat pool",
+      "Event encounter library",
+      "Campaign enemy wave selection"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Hollow Threat Faction"
+    ],
+    "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-011",
+    "entityId": "TG-CREATURE-011",
+    "entityType": "Creature",
+    "name": "Hollow Mirror Saint",
+    "slug": "hollow-mirror-saint",
+    "factionId": null,
+    "faction": "The Hollow",
+    "role": "Elite",
+    "rarity": "Hollow Creature",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001",
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Storm-Oath Covenant",
+      "Hollow Breach Events"
+    ],
+    "loreTies": [
+      "An Empyrean-shaped absence that reflects protection into imprisonment; it proves order can be imitated without mercy.",
+      "Creates shield zones that help Hollow units unless shattered by coordinated strikes.",
+      "Erasure is not death; erasure is ownership without memory."
+    ],
+    "shortBackstory": "Hollow Mirror Saint is a Hollow threat creature built for campaign and event encounters, turning erased memory into elite battlefield pressure.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Hollow Mirror Saint formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+      },
+      {
+        "title": "Hollow Function",
+        "text": "Its role inside the Hollow threat faction is precise: Creates shield zones that help Hollow units unless shattered by coordinated strikes. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+      },
+      {
+        "title": "Lore Tie",
+        "text": "An Empyrean-shaped absence that reflects protection into imprisonment; it proves order can be imitated without mercy."
+      },
+      {
+        "title": "Campaign Use",
+        "text": "Hollow Mirror Saint can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+      },
+      {
+        "title": "Visual / Encounter Rule",
+        "text": "Art and gameplay must keep Hollow Mirror Saint visibly non-playable. Its silhouette uses winglike negative-space guardian with broken halo mirror, porcelain mask fragments, chain-light without warmth. while its abilities \u2014 False Sanctuary, Reflect Mercy, Halo Lock \u2014 create battlefield pressure without confusing it for a faction Titan."
+      }
+    ],
+    "relationshipHooks": [
+      "Hollow threat pool",
+      "Event encounter library",
+      "Campaign enemy wave selection"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Hollow Threat Faction"
+    ],
+    "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-012",
+    "entityId": "TG-CREATURE-012",
+    "entityType": "Creature",
+    "name": "Hollow Root Parasite",
+    "slug": "hollow-root-parasite",
+    "factionId": null,
+    "faction": "The Hollow",
+    "role": "Minor",
+    "rarity": "Hollow Infestation",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001",
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Storm-Oath Covenant",
+      "Hollow Breach Events"
+    ],
+    "loreTies": [
+      "A rootlike Hollow larva that infects living terrain, making groves remember pain before growth.",
+      "Occupies natural terrain and makes sustain tiles hazardous until cleansed.",
+      "Erasure is not death; erasure is ownership without memory."
+    ],
+    "shortBackstory": "Hollow Root Parasite is a Hollow threat creature built for campaign and event encounters, turning erased memory into minor battlefield pressure.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Hollow Root Parasite formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+      },
+      {
+        "title": "Hollow Function",
+        "text": "Its role inside the Hollow threat faction is precise: Occupies natural terrain and makes sustain tiles hazardous until cleansed. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+      },
+      {
+        "title": "Lore Tie",
+        "text": "A rootlike Hollow larva that infects living terrain, making groves remember pain before growth."
+      },
+      {
+        "title": "Campaign Use",
+        "text": "Hollow Root Parasite can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+      },
+      {
+        "title": "Visual / Encounter Rule",
+        "text": "Art and gameplay must keep Hollow Root Parasite visibly non-playable. Its silhouette uses black root-serpent with pale sap cracks, thorn mouth, leafless tendrils, soil clinging upward. while its abilities \u2014 Blight Root, Terrain Leech \u2014 create battlefield pressure without confusing it for a faction Titan."
+      }
+    ],
+    "relationshipHooks": [
+      "Hollow threat pool",
+      "Event encounter library",
+      "Campaign enemy wave selection"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Hollow Threat Faction"
+    ],
+    "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-013",
+    "entityId": "TG-CREATURE-013",
+    "entityType": "Creature",
+    "name": "Hollow Shrine-Mask",
+    "slug": "hollow-shrine-mask",
+    "factionId": null,
+    "faction": "The Hollow",
+    "role": "Major",
+    "rarity": "Hollow Spirit",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001",
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Storm-Oath Covenant",
+      "Hollow Breach Events"
+    ],
+    "loreTies": [
+      "A mask that learned enough shrine etiquette to lure Kami guardians into the wrong ritual path.",
+      "Repositions around shrine terrain and causes missed timing windows.",
+      "Erasure is not death; erasure is ownership without memory."
+    ],
+    "shortBackstory": "Hollow Shrine-Mask is a Hollow threat creature built for campaign and event encounters, turning erased memory into major battlefield pressure.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Hollow Shrine-Mask formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+      },
+      {
+        "title": "Hollow Function",
+        "text": "Its role inside the Hollow threat faction is precise: Repositions around shrine terrain and causes missed timing windows. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+      },
+      {
+        "title": "Lore Tie",
+        "text": "A mask that learned enough shrine etiquette to lure Kami guardians into the wrong ritual path."
+      },
+      {
+        "title": "Campaign Use",
+        "text": "Hollow Shrine-Mask can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+      },
+      {
+        "title": "Visual / Encounter Rule",
+        "text": "Art and gameplay must keep Hollow Shrine-Mask visibly non-playable. Its silhouette uses floating lacquer mask cracked open with smoke hands, torn paper wards, ink bleeding upward. while its abilities \u2014 False Rite, Spirit Misstep, Mask Blink \u2014 create battlefield pressure without confusing it for a faction Titan."
+      }
+    ],
+    "relationshipHooks": [
+      "Hollow threat pool",
+      "Event encounter library",
+      "Campaign enemy wave selection"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Hollow Threat Faction"
+    ],
+    "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-014",
+    "entityId": "TG-CREATURE-014",
+    "entityType": "Creature",
+    "name": "Hollow Laurel Butcher",
+    "slug": "hollow-laurel-butcher",
+    "factionId": null,
+    "faction": "The Hollow",
+    "role": "Major",
+    "rarity": "Hollow Creature",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001",
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Storm-Oath Covenant",
+      "Hollow Breach Events"
+    ],
+    "loreTies": [
+      "A brutal parody of Olympian excellence that treats victory as proof even when the contest is corrupted.",
+      "Challenges highest-attack Titan and gains pressure if ignored.",
+      "Erasure is not death; erasure is ownership without memory."
+    ],
+    "shortBackstory": "Hollow Laurel Butcher is a Hollow threat creature built for campaign and event encounters, turning erased memory into major battlefield pressure.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Hollow Laurel Butcher formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+      },
+      {
+        "title": "Hollow Function",
+        "text": "Its role inside the Hollow threat faction is precise: Challenges highest-attack Titan and gains pressure if ignored. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+      },
+      {
+        "title": "Lore Tie",
+        "text": "A brutal parody of Olympian excellence that treats victory as proof even when the contest is corrupted."
+      },
+      {
+        "title": "Campaign Use",
+        "text": "Hollow Laurel Butcher can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+      },
+      {
+        "title": "Visual / Encounter Rule",
+        "text": "Art and gameplay must keep Hollow Laurel Butcher visibly non-playable. Its silhouette uses muscular faceless gladiator silhouette, black marble skin, broken bronze laurel fused to skull, ichorless cracks. while its abilities \u2014 Dirty Triumph, Contest Ruin, Laurel Cleave \u2014 create battlefield pressure without confusing it for a faction Titan."
+      }
+    ],
+    "relationshipHooks": [
+      "Hollow threat pool",
+      "Event encounter library",
+      "Campaign enemy wave selection"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Hollow Threat Faction"
+    ],
+    "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-015",
+    "entityId": "TG-CREATURE-015",
+    "entityType": "Creature",
+    "name": "Hollow Chain Auditor",
+    "slug": "hollow-chain-auditor",
+    "factionId": null,
+    "faction": "The Hollow",
+    "role": "Elite",
+    "rarity": "Hollow Creature",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001",
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Storm-Oath Covenant",
+      "Hollow Breach Events"
+    ],
+    "loreTies": [
+      "A contract-thing that writes debts no one agreed to, born where Infernal ambition meets Gate erasure.",
+      "Taxes repeated abilities and punishes greedy burst rotations.",
+      "Erasure is not death; erasure is ownership without memory."
+    ],
+    "shortBackstory": "Hollow Chain Auditor is a Hollow threat creature built for campaign and event encounters, turning erased memory into elite battlefield pressure.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Hollow Chain Auditor formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+      },
+      {
+        "title": "Hollow Function",
+        "text": "Its role inside the Hollow threat faction is precise: Taxes repeated abilities and punishes greedy burst rotations. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+      },
+      {
+        "title": "Lore Tie",
+        "text": "A contract-thing that writes debts no one agreed to, born where Infernal ambition meets Gate erasure."
+      },
+      {
+        "title": "Campaign Use",
+        "text": "Hollow Chain Auditor can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+      },
+      {
+        "title": "Visual / Encounter Rule",
+        "text": "Art and gameplay must keep Hollow Chain Auditor visibly non-playable. Its silhouette uses bent accountant-devil silhouette made of chains and ledgers, no eyes, burning white contract seams. while its abilities \u2014 Unowned Debt, Chain Levy, Clause Snare \u2014 create battlefield pressure without confusing it for a faction Titan."
+      }
+    ],
+    "relationshipHooks": [
+      "Hollow threat pool",
+      "Event encounter library",
+      "Campaign enemy wave selection"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Hollow Threat Faction"
+    ],
+    "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-016",
+    "entityId": "TG-CREATURE-016",
+    "entityType": "Creature",
+    "name": "Hollow Gate Anchor",
+    "slug": "hollow-gate-anchor",
+    "factionId": null,
+    "faction": "The Hollow",
+    "role": "Elite",
+    "rarity": "Gateborn Hollow",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001",
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Storm-Oath Covenant",
+      "Hollow Breach Events"
+    ],
+    "loreTies": [
+      "A stationary living keystone that lets Hollow waves keep returning until the squad breaks the wound itself.",
+      "Acts as a priority objective; spawns minor Hollow until destroyed.",
+      "Erasure is not death; erasure is ownership without memory."
+    ],
+    "shortBackstory": "Hollow Gate Anchor is a Hollow threat creature built for campaign and event encounters, turning erased memory into elite battlefield pressure.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Hollow Gate Anchor formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+      },
+      {
+        "title": "Hollow Function",
+        "text": "Its role inside the Hollow threat faction is precise: Acts as a priority objective; spawns minor Hollow until destroyed. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+      },
+      {
+        "title": "Lore Tie",
+        "text": "A stationary living keystone that lets Hollow waves keep returning until the squad breaks the wound itself."
+      },
+      {
+        "title": "Campaign Use",
+        "text": "Hollow Gate Anchor can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+      },
+      {
+        "title": "Visual / Encounter Rule",
+        "text": "Art and gameplay must keep Hollow Gate Anchor visibly non-playable. Its silhouette uses obsidian gate-stone torso rooted into battlefield, incomplete arms, white fracture core, broken arch crown. while its abilities \u2014 Breach Pulse, Spawn Wretches, Anchor the Wound \u2014 create battlefield pressure without confusing it for a faction Titan."
+      }
+    ],
+    "relationshipHooks": [
+      "Hollow threat pool",
+      "Event encounter library",
+      "Campaign enemy wave selection"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Hollow Threat Faction"
+    ],
+    "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-017",
+    "entityId": "TG-CREATURE-017",
+    "entityType": "Creature",
+    "name": "Hollow Memory Thief",
+    "slug": "hollow-memory-thief",
+    "factionId": null,
+    "faction": "The Hollow",
+    "role": "Major",
+    "rarity": "Hollow Creature",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001",
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Storm-Oath Covenant",
+      "Hollow Breach Events"
+    ],
+    "loreTies": [
+      "A thin assassin that steals the memory of a Titan\u2019s last tactic, forcing the squad to adapt instead of repeat.",
+      "Targets repeated player actions and disrupts cooldown rhythm.",
+      "Erasure is not death; erasure is ownership without memory."
+    ],
+    "shortBackstory": "Hollow Memory Thief is a Hollow threat creature built for campaign and event encounters, turning erased memory into major battlefield pressure.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Hollow Memory Thief formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+      },
+      {
+        "title": "Hollow Function",
+        "text": "Its role inside the Hollow threat faction is precise: Targets repeated player actions and disrupts cooldown rhythm. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+      },
+      {
+        "title": "Lore Tie",
+        "text": "A thin assassin that steals the memory of a Titan\u2019s last tactic, forcing the squad to adapt instead of repeat."
+      },
+      {
+        "title": "Campaign Use",
+        "text": "Hollow Memory Thief can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+      },
+      {
+        "title": "Visual / Encounter Rule",
+        "text": "Art and gameplay must keep Hollow Memory Thief visibly non-playable. Its silhouette uses slender black blade-limbed figure, empty face veil, stolen glyphs orbiting its fingers, quiet white eye-cracks. while its abilities \u2014 Steal Pattern, Cooldown Forgetting, Backstab Silence \u2014 create battlefield pressure without confusing it for a faction Titan."
+      }
+    ],
+    "relationshipHooks": [
+      "Hollow threat pool",
+      "Event encounter library",
+      "Campaign enemy wave selection"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Hollow Threat Faction"
+    ],
+    "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-CREATURE-018",
+    "entityId": "TG-CREATURE-018",
+    "entityType": "Creature",
+    "name": "Hollow World-Wound Behemoth",
+    "slug": "hollow-world-wound-behemoth",
+    "factionId": null,
+    "faction": "The Hollow",
+    "role": "World Boss",
+    "rarity": "Hollow World Event Boss",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001",
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Storm-Oath Covenant",
+      "Hollow Breach Events"
+    ],
+    "loreTies": [
+      "A massive mobile Gate wound used for seasonal Hollow Breach events; it is not summoned, it arrives where too many victories leave unburied memory.",
+      "Seasonal world boss that changes terrain, spawns anchors, and tests multiple squad archetypes.",
+      "Erasure is not death; erasure is ownership without memory."
+    ],
+    "shortBackstory": "Hollow World-Wound Behemoth is a Hollow threat creature built for campaign and event encounters, turning erased memory into world boss battlefield pressure.",
+    "chapters": [
+      {
+        "title": "Origin",
+        "text": "Hollow World-Wound Behemoth formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+      },
+      {
+        "title": "Hollow Function",
+        "text": "Its role inside the Hollow threat faction is precise: Seasonal world boss that changes terrain, spawns anchors, and tests multiple squad archetypes. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+      },
+      {
+        "title": "Lore Tie",
+        "text": "A massive mobile Gate wound used for seasonal Hollow Breach events; it is not summoned, it arrives where too many victories leave unburied memory."
+      },
+      {
+        "title": "Campaign Use",
+        "text": "Hollow World-Wound Behemoth can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+      },
+      {
+        "title": "Visual / Encounter Rule",
+        "text": "Art and gameplay must keep Hollow World-Wound Behemoth visibly non-playable. Its silhouette uses colossal negative-space beast with gate arches as ribs, cities of ash under translucent hide, maskless skull horizon, white storm fractures. while its abilities \u2014 Walk the Breach, Erase the Ground, Call the Nameless Storm \u2014 create battlefield pressure without confusing it for a faction Titan."
+      }
+    ],
+    "relationshipHooks": [
+      "Hollow threat pool",
+      "Event encounter library",
+      "Campaign enemy wave selection"
+    ],
+    "readableUnder": [
+      "Creatures",
+      "Character Backstories",
+      "Hollow Threat Faction"
+    ],
+    "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+  },
+  {
+    "id": "TG-BACKSTORY-NPC-001",
+    "entityId": "TG-NPC-001",
+    "entityType": "NPC",
+    "name": "Mesha Gate-Scribe",
+    "slug": "mesha-gate-scribe",
+    "factionId": "TG-FACTION-001",
+    "faction": "Aten Ra",
+    "role": "Lore witness and Codex keeper",
+    "rarity": "Campaign NPC",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Campaign 01: The First Reopening"
+    ],
+    "loreTies": [
+      "Mesha records Gate behavior from within a bronze observatory built around an inactive solar pylon. She never enters strike force play; her purpose is to preserve canon, interpret ancient signs, and warn the Creator when sacred order is about to fail.",
+      "Sacred order channels solar power into civilization."
+    ],
+    "shortBackstory": "Mesha Gate-Scribe is the Aten Ra witness whose choices explain how The First Reopening changes more than the battlefield.",
+    "chapters": [
+      {
+        "title": "Before the Gate Spoke",
+        "text": "Mesha Gate-Scribe was important before battle records named them. As lore witness and codex keeper, Mesha Gate-Scribe learned the hidden machinery beneath The Golden Dominion of Aten: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
+      },
+      {
+        "title": "Faction Duty",
+        "text": "Mesha Gate-Scribe's loyalty is tied to Aten Ra culture rather than battlefield glory. Their doctrine is simple and dangerous: Sacred order channels solar power into civilization. The story needs them because Titans can win fights and still misunderstand what victory costs."
+      },
+      {
+        "title": "Story Arc Tie",
+        "text": "During The First Reopening, Mesha Gate-Scribe becomes a readable witness to campaign consequence. Their first appearance, Campaign 01: The First Reopening, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
+      },
+      {
+        "title": "Conflict Wound",
+        "text": "The Gate pressures Mesha Gate-Scribe through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
+      },
+      {
+        "title": "Dashboard Role",
+        "text": "As a non-playable character, Mesha Gate-Scribe belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
+      }
+    ],
+    "relationshipHooks": [
+      "Briefs missions",
+      "Unlocks codex context",
+      "Interprets faction consequences"
+    ],
+    "readableUnder": [
+      "Characters",
+      "Character Backstories",
+      "Campaign Dialogue"
+    ],
+    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
+  },
+  {
+    "id": "TG-BACKSTORY-NPC-002",
+    "entityId": "TG-NPC-002",
+    "entityType": "NPC",
+    "name": "Hrodda Oath-Witness",
+    "slug": "hrodda-oath-witness",
+    "factionId": "TG-FACTION-002",
+    "faction": "Asgardian",
+    "role": "Oath judge and campaign herald",
+    "rarity": "Campaign NPC",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "Storm-Oath Covenant",
+      "Campaign 01: The First Reopening"
+    ],
+    "loreTies": [
+      "Hrodda preserves the names of Titans who survive impossible Gate storms. She tests whether a mission objective is worthy of oathbound intervention but never becomes a controllable unit.",
+      "Oaths give war meaning; courage gives power form."
+    ],
+    "shortBackstory": "Hrodda Oath-Witness is the Asgardian witness whose choices explain how Storm-Oath Covenant changes more than the battlefield.",
+    "chapters": [
+      {
+        "title": "Before the Gate Spoke",
+        "text": "Hrodda Oath-Witness was important before battle records named them. As oath judge and campaign herald, Hrodda Oath-Witness learned the hidden machinery beneath Valhalla Beyond the Veil: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
+      },
+      {
+        "title": "Faction Duty",
+        "text": "Hrodda Oath-Witness's loyalty is tied to Asgardian culture rather than battlefield glory. Their doctrine is simple and dangerous: Oaths give war meaning; courage gives power form. The story needs them because Titans can win fights and still misunderstand what victory costs."
+      },
+      {
+        "title": "Story Arc Tie",
+        "text": "During Storm-Oath Covenant, Hrodda Oath-Witness becomes a readable witness to campaign consequence. Their first appearance, Campaign 01: The First Reopening, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
+      },
+      {
+        "title": "Conflict Wound",
+        "text": "The Gate pressures Hrodda Oath-Witness through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
+      },
+      {
+        "title": "Dashboard Role",
+        "text": "As a non-playable character, Hrodda Oath-Witness belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
+      }
+    ],
+    "relationshipHooks": [
+      "Briefs missions",
+      "Unlocks codex context",
+      "Interprets faction consequences"
+    ],
+    "readableUnder": [
+      "Characters",
+      "Character Backstories",
+      "Campaign Dialogue"
+    ],
+    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
+  },
+  {
+    "id": "TG-BACKSTORY-NPC-003",
+    "entityId": "TG-NPC-003",
+    "entityType": "NPC",
+    "name": "Lyrion Laurel-Envoy",
+    "slug": "lyrion-laurel-envoy",
+    "factionId": "TG-FACTION-003",
+    "faction": "Olympian",
+    "role": "Diplomatic envoy and contest architect",
+    "rarity": "Campaign NPC",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "Storm-Oath Covenant",
+      "Campaign 02: Trial of the Celestial Heights"
+    ],
+    "loreTies": [
+      "Lyrion designs divine contests to measure whether Titans deserve passage through contested Gates. He frames battles as tests of excellence rather than simple survival.",
+      "Excellence proves divinity."
+    ],
+    "shortBackstory": "Lyrion Laurel-Envoy is the Olympian witness whose choices explain how Storm-Oath Covenant changes more than the battlefield.",
+    "chapters": [
+      {
+        "title": "Before the Gate Spoke",
+        "text": "Lyrion Laurel-Envoy was important before battle records named them. As diplomatic envoy and contest architect, Lyrion Laurel-Envoy learned the hidden machinery beneath The Celestial Heights of Olympus: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
+      },
+      {
+        "title": "Faction Duty",
+        "text": "Lyrion Laurel-Envoy's loyalty is tied to Olympian culture rather than battlefield glory. Their doctrine is simple and dangerous: Excellence proves divinity. The story needs them because Titans can win fights and still misunderstand what victory costs."
+      },
+      {
+        "title": "Story Arc Tie",
+        "text": "During Storm-Oath Covenant, Lyrion Laurel-Envoy becomes a readable witness to campaign consequence. Their first appearance, Campaign 02: Trial of the Celestial Heights, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
+      },
+      {
+        "title": "Conflict Wound",
+        "text": "The Gate pressures Lyrion Laurel-Envoy through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
+      },
+      {
+        "title": "Dashboard Role",
+        "text": "As a non-playable character, Lyrion Laurel-Envoy belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
+      }
+    ],
+    "relationshipHooks": [
+      "Briefs missions",
+      "Unlocks codex context",
+      "Interprets faction consequences"
+    ],
+    "readableUnder": [
+      "Characters",
+      "Character Backstories",
+      "Campaign Dialogue"
+    ],
+    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
+  },
+  {
+    "id": "TG-BACKSTORY-NPC-004",
+    "entityId": "TG-NPC-004",
+    "entityType": "NPC",
+    "name": "Sayo Shrine-Cartographer",
+    "slug": "sayo-shrine-cartographer",
+    "factionId": "TG-FACTION-004",
+    "faction": "Kami",
+    "role": "Spirit mapmaker",
+    "rarity": "Campaign NPC",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Campaign 01: The First Reopening"
+    ],
+    "loreTies": [
+      "Sayo reads how invisible shrine paths fold around Titan Gates. Her maps show safe passage, forbidden crossings, and where battlefields will shift after spirit disturbances.",
+      "Balance is defended by precision."
+    ],
+    "shortBackstory": "Sayo Shrine-Cartographer is the Kami witness whose choices explain how The First Reopening changes more than the battlefield.",
+    "chapters": [
+      {
+        "title": "Before the Gate Spoke",
+        "text": "Sayo Shrine-Cartographer was important before battle records named them. As spirit mapmaker, Sayo Shrine-Cartographer learned the hidden machinery beneath The Sacred Kingdoms: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
+      },
+      {
+        "title": "Faction Duty",
+        "text": "Sayo Shrine-Cartographer's loyalty is tied to Kami culture rather than battlefield glory. Their doctrine is simple and dangerous: Balance is defended by precision. The story needs them because Titans can win fights and still misunderstand what victory costs."
+      },
+      {
+        "title": "Story Arc Tie",
+        "text": "During The First Reopening, Sayo Shrine-Cartographer becomes a readable witness to campaign consequence. Their first appearance, Campaign 01: The First Reopening, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
+      },
+      {
+        "title": "Conflict Wound",
+        "text": "The Gate pressures Sayo Shrine-Cartographer through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
+      },
+      {
+        "title": "Dashboard Role",
+        "text": "As a non-playable character, Sayo Shrine-Cartographer belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
+      }
+    ],
+    "relationshipHooks": [
+      "Briefs missions",
+      "Unlocks codex context",
+      "Interprets faction consequences"
+    ],
+    "readableUnder": [
+      "Characters",
+      "Character Backstories",
+      "Campaign Dialogue"
+    ],
+    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
+  },
+  {
+    "id": "TG-BACKSTORY-NPC-005",
+    "entityId": "TG-NPC-005",
+    "entityType": "NPC",
+    "name": "Maeve Root-Memory",
+    "slug": "maeve-root-memory",
+    "factionId": "TG-FACTION-005",
+    "faction": "Tuatha",
+    "role": "Living archive of Avalora",
+    "rarity": "Campaign NPC",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Campaign 03: Roots Below the Gate"
+    ],
+    "loreTies": [
+      "Maeve is not fully mortal and not fully tree-spirit; she remembers every Gate scar cut into Avalora. Her warnings prevent living terrain from being treated like ordinary ground.",
+      "The living world adapts and endures."
+    ],
+    "shortBackstory": "Maeve Root-Memory is the Tuatha witness whose choices explain how The First Reopening changes more than the battlefield.",
+    "chapters": [
+      {
+        "title": "Before the Gate Spoke",
+        "text": "Maeve Root-Memory was important before battle records named them. As living archive of avalora, Maeve Root-Memory learned the hidden machinery beneath Avalora: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
+      },
+      {
+        "title": "Faction Duty",
+        "text": "Maeve Root-Memory's loyalty is tied to Tuatha culture rather than battlefield glory. Their doctrine is simple and dangerous: The living world adapts and endures. The story needs them because Titans can win fights and still misunderstand what victory costs."
+      },
+      {
+        "title": "Story Arc Tie",
+        "text": "During The First Reopening, Maeve Root-Memory becomes a readable witness to campaign consequence. Their first appearance, Campaign 03: Roots Below the Gate, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
+      },
+      {
+        "title": "Conflict Wound",
+        "text": "The Gate pressures Maeve Root-Memory through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
+      },
+      {
+        "title": "Dashboard Role",
+        "text": "As a non-playable character, Maeve Root-Memory belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
+      }
+    ],
+    "relationshipHooks": [
+      "Briefs missions",
+      "Unlocks codex context",
+      "Interprets faction consequences"
+    ],
+    "readableUnder": [
+      "Characters",
+      "Character Backstories",
+      "Campaign Dialogue"
+    ],
+    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
+  },
+  {
+    "id": "TG-BACKSTORY-NPC-006",
+    "entityId": "TG-NPC-006",
+    "entityType": "NPC",
+    "name": "Oriel Edict-Keeper",
+    "slug": "oriel-edict-keeper",
+    "factionId": "TG-FACTION-006",
+    "faction": "Empyrean",
+    "role": "Celestial records officer",
+    "rarity": "Campaign NPC",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "Storm-Oath Covenant",
+      "Campaign 02: Trial of the Celestial Heights"
+    ],
+    "loreTies": [
+      "Oriel stores verdicts about which Realms may intervene when Gates destabilize. Oriel is not a hero; Oriel is a lawful voice inside the hierarchy of radiant survival.",
+      "Existence survives through order."
+    ],
+    "shortBackstory": "Oriel Edict-Keeper is the Empyrean witness whose choices explain how Storm-Oath Covenant changes more than the battlefield.",
+    "chapters": [
+      {
+        "title": "Before the Gate Spoke",
+        "text": "Oriel Edict-Keeper was important before battle records named them. As celestial records officer, Oriel Edict-Keeper learned the hidden machinery beneath The Radiant Hierarchies: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
+      },
+      {
+        "title": "Faction Duty",
+        "text": "Oriel Edict-Keeper's loyalty is tied to Empyrean culture rather than battlefield glory. Their doctrine is simple and dangerous: Existence survives through order. The story needs them because Titans can win fights and still misunderstand what victory costs."
+      },
+      {
+        "title": "Story Arc Tie",
+        "text": "During Storm-Oath Covenant, Oriel Edict-Keeper becomes a readable witness to campaign consequence. Their first appearance, Campaign 02: Trial of the Celestial Heights, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
+      },
+      {
+        "title": "Conflict Wound",
+        "text": "The Gate pressures Oriel Edict-Keeper through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
+      },
+      {
+        "title": "Dashboard Role",
+        "text": "As a non-playable character, Oriel Edict-Keeper belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
+      }
+    ],
+    "relationshipHooks": [
+      "Briefs missions",
+      "Unlocks codex context",
+      "Interprets faction consequences"
+    ],
+    "readableUnder": [
+      "Characters",
+      "Character Backstories",
+      "Campaign Dialogue"
+    ],
+    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
+  },
+  {
+    "id": "TG-BACKSTORY-NPC-007",
+    "entityId": "TG-NPC-007",
+    "entityType": "NPC",
+    "name": "Vasha Cinder-Broker",
+    "slug": "vasha-cinder-broker",
+    "factionId": "TG-FACTION-007",
+    "faction": "Infernal Dominion",
+    "role": "Infernal informant and bargain-maker",
+    "rarity": "Campaign NPC",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-002"
+    ],
+    "campaignHooks": [
+      "Storm-Oath Covenant",
+      "Campaign 04: Cinders of Dominion"
+    ],
+    "loreTies": [
+      "Vasha sells information about Dominion power struggles and Gate wounds. Every bargain is useful and dangerous. Vasha never joins the strike force; she exists to tempt, warn, and expose infernal hierarchy.",
+      "Power belongs to those capable of wielding it."
+    ],
+    "shortBackstory": "Vasha Cinder-Broker is the Infernal Dominion witness whose choices explain how Storm-Oath Covenant changes more than the battlefield.",
+    "chapters": [
+      {
+        "title": "Before the Gate Spoke",
+        "text": "Vasha Cinder-Broker was important before battle records named them. As infernal informant and bargain-maker, Vasha Cinder-Broker learned the hidden machinery beneath The Infernal Dominion: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
+      },
+      {
+        "title": "Faction Duty",
+        "text": "Vasha Cinder-Broker's loyalty is tied to Infernal Dominion culture rather than battlefield glory. Their doctrine is simple and dangerous: Power belongs to those capable of wielding it. The story needs them because Titans can win fights and still misunderstand what victory costs."
+      },
+      {
+        "title": "Story Arc Tie",
+        "text": "During Storm-Oath Covenant, Vasha Cinder-Broker becomes a readable witness to campaign consequence. Their first appearance, Campaign 04: Cinders of Dominion, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
+      },
+      {
+        "title": "Conflict Wound",
+        "text": "The Gate pressures Vasha Cinder-Broker through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
+      },
+      {
+        "title": "Dashboard Role",
+        "text": "As a non-playable character, Vasha Cinder-Broker belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
+      }
+    ],
+    "relationshipHooks": [
+      "Briefs missions",
+      "Unlocks codex context",
+      "Interprets faction consequences"
+    ],
+    "readableUnder": [
+      "Characters",
+      "Character Backstories",
+      "Campaign Dialogue"
+    ],
+    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
+  },
+  {
+    "id": "TG-BACKSTORY-NPC-008",
+    "entityId": "TG-NPC-008",
+    "entityType": "NPC",
+    "name": "The Unnamed Hollow Mouth",
+    "slug": "the-unnamed-hollow-mouth",
+    "factionId": null,
+    "faction": "Hollow",
+    "role": "Voice of the empty Gate",
+    "rarity": "Campaign Antagonist",
+    "status": "Canon Backstory Ready",
+    "storyArcIds": [
+      "TG-STORY-ARC-001"
+    ],
+    "campaignHooks": [
+      "The First Reopening",
+      "Campaign 01: The First Reopening"
+    ],
+    "loreTies": [
+      "The Hollow Mouth speaks from Gate wounds where identity has been erased. It is not a Realm civilization. It is the sound left after names, oaths, laws, and memories are consumed.",
+      "Erasure consumes what civilizations fail to defend."
+    ],
+    "shortBackstory": "The Unnamed Hollow Mouth is the Hollow witness whose choices explain how The First Reopening changes more than the battlefield.",
+    "chapters": [
+      {
+        "title": "Before the Gate Spoke",
+        "text": "The Unnamed Hollow Mouth was important before battle records named them. As voice of the empty gate, The Unnamed learned the hidden machinery beneath the Hollow wound: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
+      },
+      {
+        "title": "Faction Duty",
+        "text": "The Unnamed's loyalty is tied to Hollow culture rather than battlefield glory. Their doctrine is simple and dangerous: Erasure consumes what civilizations fail to defend. The story needs them because Titans can win fights and still misunderstand what victory costs."
+      },
+      {
+        "title": "Story Arc Tie",
+        "text": "During The First Reopening, The Unnamed becomes a readable witness to campaign consequence. Their first appearance, Campaign 01: The First Reopening, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
+      },
+      {
+        "title": "Conflict Wound",
+        "text": "The Gate pressures The Unnamed through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
+      },
+      {
+        "title": "Dashboard Role",
+        "text": "As a non-playable character, The Unnamed belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
+      }
+    ],
+    "relationshipHooks": [
+      "Briefs missions",
+      "Unlocks codex context",
+      "Interprets faction consequences"
+    ],
+    "readableUnder": [
+      "Characters",
+      "Character Backstories",
+      "Campaign Dialogue"
+    ],
+    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
+  },
+  {
     "id": "TG-BACKSTORY-TITAN-001",
     "entityId": "TG-TITAN-001",
     "entityType": "Titan",
@@ -3526,741 +5042,5 @@
       "Faction page"
     ],
     "developmentStatus": "Readable profile integrated into dashboard character pages."
-  },
-  {
-    "id": "TG-BACKSTORY-NPC-001",
-    "entityId": "TG-NPC-001",
-    "entityType": "NPC",
-    "name": "Mesha Gate-Scribe",
-    "slug": "mesha-gate-scribe",
-    "factionId": "TG-FACTION-001",
-    "faction": "Aten Ra",
-    "role": "Lore witness and Codex keeper",
-    "rarity": "Campaign NPC",
-    "status": "Canon Backstory Ready",
-    "storyArcIds": [
-      "TG-STORY-ARC-001"
-    ],
-    "campaignHooks": [
-      "The First Reopening",
-      "Campaign 01: The First Reopening"
-    ],
-    "loreTies": [
-      "Mesha records Gate behavior from within a bronze observatory built around an inactive solar pylon. She never enters strike force play; her purpose is to preserve canon, interpret ancient signs, and warn the Creator when sacred order is about to fail.",
-      "Sacred order channels solar power into civilization."
-    ],
-    "shortBackstory": "Mesha Gate-Scribe is the Aten Ra witness whose choices explain how The First Reopening changes more than the battlefield.",
-    "chapters": [
-      {
-        "title": "Before the Gate Spoke",
-        "text": "Mesha Gate-Scribe was important before battle records named them. As lore witness and codex keeper, Mesha Gate-Scribe learned the hidden machinery beneath The Golden Dominion of Aten: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
-      },
-      {
-        "title": "Faction Duty",
-        "text": "Mesha Gate-Scribe's loyalty is tied to Aten Ra culture rather than battlefield glory. Their doctrine is simple and dangerous: Sacred order channels solar power into civilization. The story needs them because Titans can win fights and still misunderstand what victory costs."
-      },
-      {
-        "title": "Story Arc Tie",
-        "text": "During The First Reopening, Mesha Gate-Scribe becomes a readable witness to campaign consequence. Their first appearance, Campaign 01: The First Reopening, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
-      },
-      {
-        "title": "Conflict Wound",
-        "text": "The Gate pressures Mesha Gate-Scribe through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
-      },
-      {
-        "title": "Dashboard Role",
-        "text": "As a non-playable character, Mesha Gate-Scribe belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
-      }
-    ],
-    "relationshipHooks": [
-      "Briefs missions",
-      "Unlocks codex context",
-      "Interprets faction consequences"
-    ],
-    "readableUnder": [
-      "Characters",
-      "Character Backstories",
-      "Campaign Dialogue"
-    ],
-    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
-  },
-  {
-    "id": "TG-BACKSTORY-NPC-002",
-    "entityId": "TG-NPC-002",
-    "entityType": "NPC",
-    "name": "Hrodda Oath-Witness",
-    "slug": "hrodda-oath-witness",
-    "factionId": "TG-FACTION-002",
-    "faction": "Asgardian",
-    "role": "Oath judge and campaign herald",
-    "rarity": "Campaign NPC",
-    "status": "Canon Backstory Ready",
-    "storyArcIds": [
-      "TG-STORY-ARC-002"
-    ],
-    "campaignHooks": [
-      "Storm-Oath Covenant",
-      "Campaign 01: The First Reopening"
-    ],
-    "loreTies": [
-      "Hrodda preserves the names of Titans who survive impossible Gate storms. She tests whether a mission objective is worthy of oathbound intervention but never becomes a controllable unit.",
-      "Oaths give war meaning; courage gives power form."
-    ],
-    "shortBackstory": "Hrodda Oath-Witness is the Asgardian witness whose choices explain how Storm-Oath Covenant changes more than the battlefield.",
-    "chapters": [
-      {
-        "title": "Before the Gate Spoke",
-        "text": "Hrodda Oath-Witness was important before battle records named them. As oath judge and campaign herald, Hrodda Oath-Witness learned the hidden machinery beneath Valhalla Beyond the Veil: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
-      },
-      {
-        "title": "Faction Duty",
-        "text": "Hrodda Oath-Witness's loyalty is tied to Asgardian culture rather than battlefield glory. Their doctrine is simple and dangerous: Oaths give war meaning; courage gives power form. The story needs them because Titans can win fights and still misunderstand what victory costs."
-      },
-      {
-        "title": "Story Arc Tie",
-        "text": "During Storm-Oath Covenant, Hrodda Oath-Witness becomes a readable witness to campaign consequence. Their first appearance, Campaign 01: The First Reopening, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
-      },
-      {
-        "title": "Conflict Wound",
-        "text": "The Gate pressures Hrodda Oath-Witness through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
-      },
-      {
-        "title": "Dashboard Role",
-        "text": "As a non-playable character, Hrodda Oath-Witness belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
-      }
-    ],
-    "relationshipHooks": [
-      "Briefs missions",
-      "Unlocks codex context",
-      "Interprets faction consequences"
-    ],
-    "readableUnder": [
-      "Characters",
-      "Character Backstories",
-      "Campaign Dialogue"
-    ],
-    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
-  },
-  {
-    "id": "TG-BACKSTORY-NPC-003",
-    "entityId": "TG-NPC-003",
-    "entityType": "NPC",
-    "name": "Lyrion Laurel-Envoy",
-    "slug": "lyrion-laurel-envoy",
-    "factionId": "TG-FACTION-003",
-    "faction": "Olympian",
-    "role": "Diplomatic envoy and contest architect",
-    "rarity": "Campaign NPC",
-    "status": "Canon Backstory Ready",
-    "storyArcIds": [
-      "TG-STORY-ARC-002"
-    ],
-    "campaignHooks": [
-      "Storm-Oath Covenant",
-      "Campaign 02: Trial of the Celestial Heights"
-    ],
-    "loreTies": [
-      "Lyrion designs divine contests to measure whether Titans deserve passage through contested Gates. He frames battles as tests of excellence rather than simple survival.",
-      "Excellence proves divinity."
-    ],
-    "shortBackstory": "Lyrion Laurel-Envoy is the Olympian witness whose choices explain how Storm-Oath Covenant changes more than the battlefield.",
-    "chapters": [
-      {
-        "title": "Before the Gate Spoke",
-        "text": "Lyrion Laurel-Envoy was important before battle records named them. As diplomatic envoy and contest architect, Lyrion Laurel-Envoy learned the hidden machinery beneath The Celestial Heights of Olympus: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
-      },
-      {
-        "title": "Faction Duty",
-        "text": "Lyrion Laurel-Envoy's loyalty is tied to Olympian culture rather than battlefield glory. Their doctrine is simple and dangerous: Excellence proves divinity. The story needs them because Titans can win fights and still misunderstand what victory costs."
-      },
-      {
-        "title": "Story Arc Tie",
-        "text": "During Storm-Oath Covenant, Lyrion Laurel-Envoy becomes a readable witness to campaign consequence. Their first appearance, Campaign 02: Trial of the Celestial Heights, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
-      },
-      {
-        "title": "Conflict Wound",
-        "text": "The Gate pressures Lyrion Laurel-Envoy through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
-      },
-      {
-        "title": "Dashboard Role",
-        "text": "As a non-playable character, Lyrion Laurel-Envoy belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
-      }
-    ],
-    "relationshipHooks": [
-      "Briefs missions",
-      "Unlocks codex context",
-      "Interprets faction consequences"
-    ],
-    "readableUnder": [
-      "Characters",
-      "Character Backstories",
-      "Campaign Dialogue"
-    ],
-    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
-  },
-  {
-    "id": "TG-BACKSTORY-NPC-004",
-    "entityId": "TG-NPC-004",
-    "entityType": "NPC",
-    "name": "Sayo Shrine-Cartographer",
-    "slug": "sayo-shrine-cartographer",
-    "factionId": "TG-FACTION-004",
-    "faction": "Kami",
-    "role": "Spirit mapmaker",
-    "rarity": "Campaign NPC",
-    "status": "Canon Backstory Ready",
-    "storyArcIds": [
-      "TG-STORY-ARC-001"
-    ],
-    "campaignHooks": [
-      "The First Reopening",
-      "Campaign 01: The First Reopening"
-    ],
-    "loreTies": [
-      "Sayo reads how invisible shrine paths fold around Titan Gates. Her maps show safe passage, forbidden crossings, and where battlefields will shift after spirit disturbances.",
-      "Balance is defended by precision."
-    ],
-    "shortBackstory": "Sayo Shrine-Cartographer is the Kami witness whose choices explain how The First Reopening changes more than the battlefield.",
-    "chapters": [
-      {
-        "title": "Before the Gate Spoke",
-        "text": "Sayo Shrine-Cartographer was important before battle records named them. As spirit mapmaker, Sayo Shrine-Cartographer learned the hidden machinery beneath The Sacred Kingdoms: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
-      },
-      {
-        "title": "Faction Duty",
-        "text": "Sayo Shrine-Cartographer's loyalty is tied to Kami culture rather than battlefield glory. Their doctrine is simple and dangerous: Balance is defended by precision. The story needs them because Titans can win fights and still misunderstand what victory costs."
-      },
-      {
-        "title": "Story Arc Tie",
-        "text": "During The First Reopening, Sayo Shrine-Cartographer becomes a readable witness to campaign consequence. Their first appearance, Campaign 01: The First Reopening, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
-      },
-      {
-        "title": "Conflict Wound",
-        "text": "The Gate pressures Sayo Shrine-Cartographer through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
-      },
-      {
-        "title": "Dashboard Role",
-        "text": "As a non-playable character, Sayo Shrine-Cartographer belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
-      }
-    ],
-    "relationshipHooks": [
-      "Briefs missions",
-      "Unlocks codex context",
-      "Interprets faction consequences"
-    ],
-    "readableUnder": [
-      "Characters",
-      "Character Backstories",
-      "Campaign Dialogue"
-    ],
-    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
-  },
-  {
-    "id": "TG-BACKSTORY-NPC-005",
-    "entityId": "TG-NPC-005",
-    "entityType": "NPC",
-    "name": "Maeve Root-Memory",
-    "slug": "maeve-root-memory",
-    "factionId": "TG-FACTION-005",
-    "faction": "Tuatha",
-    "role": "Living archive of Avalora",
-    "rarity": "Campaign NPC",
-    "status": "Canon Backstory Ready",
-    "storyArcIds": [
-      "TG-STORY-ARC-001"
-    ],
-    "campaignHooks": [
-      "The First Reopening",
-      "Campaign 03: Roots Below the Gate"
-    ],
-    "loreTies": [
-      "Maeve is not fully mortal and not fully tree-spirit; she remembers every Gate scar cut into Avalora. Her warnings prevent living terrain from being treated like ordinary ground.",
-      "The living world adapts and endures."
-    ],
-    "shortBackstory": "Maeve Root-Memory is the Tuatha witness whose choices explain how The First Reopening changes more than the battlefield.",
-    "chapters": [
-      {
-        "title": "Before the Gate Spoke",
-        "text": "Maeve Root-Memory was important before battle records named them. As living archive of avalora, Maeve Root-Memory learned the hidden machinery beneath Avalora: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
-      },
-      {
-        "title": "Faction Duty",
-        "text": "Maeve Root-Memory's loyalty is tied to Tuatha culture rather than battlefield glory. Their doctrine is simple and dangerous: The living world adapts and endures. The story needs them because Titans can win fights and still misunderstand what victory costs."
-      },
-      {
-        "title": "Story Arc Tie",
-        "text": "During The First Reopening, Maeve Root-Memory becomes a readable witness to campaign consequence. Their first appearance, Campaign 03: Roots Below the Gate, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
-      },
-      {
-        "title": "Conflict Wound",
-        "text": "The Gate pressures Maeve Root-Memory through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
-      },
-      {
-        "title": "Dashboard Role",
-        "text": "As a non-playable character, Maeve Root-Memory belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
-      }
-    ],
-    "relationshipHooks": [
-      "Briefs missions",
-      "Unlocks codex context",
-      "Interprets faction consequences"
-    ],
-    "readableUnder": [
-      "Characters",
-      "Character Backstories",
-      "Campaign Dialogue"
-    ],
-    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
-  },
-  {
-    "id": "TG-BACKSTORY-NPC-006",
-    "entityId": "TG-NPC-006",
-    "entityType": "NPC",
-    "name": "Oriel Edict-Keeper",
-    "slug": "oriel-edict-keeper",
-    "factionId": "TG-FACTION-006",
-    "faction": "Empyrean",
-    "role": "Celestial records officer",
-    "rarity": "Campaign NPC",
-    "status": "Canon Backstory Ready",
-    "storyArcIds": [
-      "TG-STORY-ARC-002"
-    ],
-    "campaignHooks": [
-      "Storm-Oath Covenant",
-      "Campaign 02: Trial of the Celestial Heights"
-    ],
-    "loreTies": [
-      "Oriel stores verdicts about which Realms may intervene when Gates destabilize. Oriel is not a hero; Oriel is a lawful voice inside the hierarchy of radiant survival.",
-      "Existence survives through order."
-    ],
-    "shortBackstory": "Oriel Edict-Keeper is the Empyrean witness whose choices explain how Storm-Oath Covenant changes more than the battlefield.",
-    "chapters": [
-      {
-        "title": "Before the Gate Spoke",
-        "text": "Oriel Edict-Keeper was important before battle records named them. As celestial records officer, Oriel Edict-Keeper learned the hidden machinery beneath The Radiant Hierarchies: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
-      },
-      {
-        "title": "Faction Duty",
-        "text": "Oriel Edict-Keeper's loyalty is tied to Empyrean culture rather than battlefield glory. Their doctrine is simple and dangerous: Existence survives through order. The story needs them because Titans can win fights and still misunderstand what victory costs."
-      },
-      {
-        "title": "Story Arc Tie",
-        "text": "During Storm-Oath Covenant, Oriel Edict-Keeper becomes a readable witness to campaign consequence. Their first appearance, Campaign 02: Trial of the Celestial Heights, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
-      },
-      {
-        "title": "Conflict Wound",
-        "text": "The Gate pressures Oriel Edict-Keeper through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
-      },
-      {
-        "title": "Dashboard Role",
-        "text": "As a non-playable character, Oriel Edict-Keeper belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
-      }
-    ],
-    "relationshipHooks": [
-      "Briefs missions",
-      "Unlocks codex context",
-      "Interprets faction consequences"
-    ],
-    "readableUnder": [
-      "Characters",
-      "Character Backstories",
-      "Campaign Dialogue"
-    ],
-    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
-  },
-  {
-    "id": "TG-BACKSTORY-NPC-007",
-    "entityId": "TG-NPC-007",
-    "entityType": "NPC",
-    "name": "Vasha Cinder-Broker",
-    "slug": "vasha-cinder-broker",
-    "factionId": "TG-FACTION-007",
-    "faction": "Infernal Dominion",
-    "role": "Infernal informant and bargain-maker",
-    "rarity": "Campaign NPC",
-    "status": "Canon Backstory Ready",
-    "storyArcIds": [
-      "TG-STORY-ARC-002"
-    ],
-    "campaignHooks": [
-      "Storm-Oath Covenant",
-      "Campaign 04: Cinders of Dominion"
-    ],
-    "loreTies": [
-      "Vasha sells information about Dominion power struggles and Gate wounds. Every bargain is useful and dangerous. Vasha never joins the strike force; she exists to tempt, warn, and expose infernal hierarchy.",
-      "Power belongs to those capable of wielding it."
-    ],
-    "shortBackstory": "Vasha Cinder-Broker is the Infernal Dominion witness whose choices explain how Storm-Oath Covenant changes more than the battlefield.",
-    "chapters": [
-      {
-        "title": "Before the Gate Spoke",
-        "text": "Vasha Cinder-Broker was important before battle records named them. As infernal informant and bargain-maker, Vasha Cinder-Broker learned the hidden machinery beneath The Infernal Dominion: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
-      },
-      {
-        "title": "Faction Duty",
-        "text": "Vasha Cinder-Broker's loyalty is tied to Infernal Dominion culture rather than battlefield glory. Their doctrine is simple and dangerous: Power belongs to those capable of wielding it. The story needs them because Titans can win fights and still misunderstand what victory costs."
-      },
-      {
-        "title": "Story Arc Tie",
-        "text": "During Storm-Oath Covenant, Vasha Cinder-Broker becomes a readable witness to campaign consequence. Their first appearance, Campaign 04: Cinders of Dominion, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
-      },
-      {
-        "title": "Conflict Wound",
-        "text": "The Gate pressures Vasha Cinder-Broker through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
-      },
-      {
-        "title": "Dashboard Role",
-        "text": "As a non-playable character, Vasha Cinder-Broker belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
-      }
-    ],
-    "relationshipHooks": [
-      "Briefs missions",
-      "Unlocks codex context",
-      "Interprets faction consequences"
-    ],
-    "readableUnder": [
-      "Characters",
-      "Character Backstories",
-      "Campaign Dialogue"
-    ],
-    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
-  },
-  {
-    "id": "TG-BACKSTORY-NPC-008",
-    "entityId": "TG-NPC-008",
-    "entityType": "NPC",
-    "name": "The Unnamed Hollow Mouth",
-    "slug": "the-unnamed-hollow-mouth",
-    "factionId": null,
-    "faction": "Hollow",
-    "role": "Voice of the empty Gate",
-    "rarity": "Campaign Antagonist",
-    "status": "Canon Backstory Ready",
-    "storyArcIds": [
-      "TG-STORY-ARC-001"
-    ],
-    "campaignHooks": [
-      "The First Reopening",
-      "Campaign 01: The First Reopening"
-    ],
-    "loreTies": [
-      "The Hollow Mouth speaks from Gate wounds where identity has been erased. It is not a Realm civilization. It is the sound left after names, oaths, laws, and memories are consumed.",
-      "Erasure consumes what civilizations fail to defend."
-    ],
-    "shortBackstory": "The Unnamed Hollow Mouth is the Hollow witness whose choices explain how The First Reopening changes more than the battlefield.",
-    "chapters": [
-      {
-        "title": "Before the Gate Spoke",
-        "text": "The Unnamed Hollow Mouth was important before battle records named them. As voice of the empty gate, The Unnamed learned the hidden machinery beneath the Hollow wound: who records law, who witnesses oath, who warns the living world, and who profits when warnings are ignored."
-      },
-      {
-        "title": "Faction Duty",
-        "text": "The Unnamed's loyalty is tied to Hollow culture rather than battlefield glory. Their doctrine is simple and dangerous: Erasure consumes what civilizations fail to defend. The story needs them because Titans can win fights and still misunderstand what victory costs."
-      },
-      {
-        "title": "Story Arc Tie",
-        "text": "During The First Reopening, The Unnamed becomes a readable witness to campaign consequence. Their first appearance, Campaign 01: The First Reopening, places them where player decisions need interpretation, warning, and memory instead of another controllable unit."
-      },
-      {
-        "title": "Conflict Wound",
-        "text": "The Gate pressures The Unnamed through knowledge. It offers signs that are useful but incomplete, trying to turn witness into accomplice. Their recurring conflict is whether to reveal truth early and risk panic, or wait for proof and risk lives."
-      },
-      {
-        "title": "Dashboard Role",
-        "text": "As a non-playable character, The Unnamed belongs under Characters and Character Backstories. Their profile should be read beside campaign dialogue, codex unlocks, and faction pages so every briefing feels like canon consequence, not tutorial flavor."
-      }
-    ],
-    "relationshipHooks": [
-      "Briefs missions",
-      "Unlocks codex context",
-      "Interprets faction consequences"
-    ],
-    "readableUnder": [
-      "Characters",
-      "Character Backstories",
-      "Campaign Dialogue"
-    ],
-    "developmentStatus": "Readable NPC profile integrated into dashboard character pages."
-  },
-  {
-    "id": "TG-BACKSTORY-CREATURE-001",
-    "entityId": "TG-CREATURE-001",
-    "entityType": "Creature",
-    "name": "Hollow Wretch",
-    "slug": "hollow-wretch",
-    "factionId": null,
-    "faction": "Hollow",
-    "role": "Minor",
-    "rarity": "Hollow Creature",
-    "status": "Canon Backstory Ready",
-    "storyArcIds": [
-      "TG-STORY-ARC-001"
-    ],
-    "campaignHooks": [
-      "The First Reopening"
-    ],
-    "loreTies": [
-      "A small Gateborn husk formed from erased memory. It attacks in groups and leaves cold silence behind when destroyed.",
-      "Rushes isolated Titans and punishes careless positioning."
-    ],
-    "shortBackstory": "Hollow Wretch is a non-playable Hollow Creature whose origin makes The First Reopening visible as living battlefield danger.",
-    "chapters": [
-      {
-        "title": "Origin",
-        "text": "Hollow Wretch formed where the Gate consumed names faster than the Codex could preserve them. It is not a faction citizen and should never read like a recruitable Titan. Its existence proves that the Gate crisis produces consequences, predators, remnants, and catastrophes beyond civilized armies."
-      },
-      {
-        "title": "Lore Function",
-        "text": "As a Hollow Creature from Hollow, Hollow carries a specific warning into the story: A small Gateborn husk formed from erased memory. It attacks in groups and leaves cold silence behind when destroyed. This makes the creature useful as canon pressure, not random enemy dressing."
-      },
-      {
-        "title": "Battlefield Behavior",
-        "text": "On the map, Hollow supports its lore through behavior: Rushes isolated Titans and punishes careless positioning. Its abilities \u2014 Scratch of Forgetting, Swarm Pressure \u2014 should feel like the environment and story acting through a threat body."
-      },
-      {
-        "title": "Campaign Tie",
-        "text": "In The First Reopening, Hollow connects to the first proof that erased memory can return as hostile pressure. Encounter designers can place it where the player needs to feel what the Gate has damaged: memory, structure, instinct, oath, water, stone, or command."
-      },
-      {
-        "title": "Visual / Reading Rule",
-        "text": "The creature page must preserve the distinction between Titans, NPCs, and non-playable threats. Hollow can be studied under Creatures and Backstories, but its profile should reinforce danger, not companionship."
-      }
-    ],
-    "relationshipHooks": [
-      "Threat profile",
-      "Encounter pressure",
-      "Campaign consequence"
-    ],
-    "readableUnder": [
-      "Creatures",
-      "Character Backstories",
-      "Mission detail enemy references"
-    ],
-    "developmentStatus": "Readable creature profile integrated into dashboard threat pages."
-  },
-  {
-    "id": "TG-BACKSTORY-CREATURE-002",
-    "entityId": "TG-CREATURE-002",
-    "entityType": "Creature",
-    "name": "Gateborn Colossus",
-    "slug": "gateborn-colossus",
-    "factionId": null,
-    "faction": "Unstable Gate",
-    "role": "Major",
-    "rarity": "Gateborn Creature",
-    "status": "Canon Backstory Ready",
-    "storyArcIds": [
-      "TG-STORY-ARC-001"
-    ],
-    "campaignHooks": [
-      "The First Reopening"
-    ],
-    "loreTies": [
-      "A giant malformed guardian grown around unstable Gate stone. It is not a Titan and has no civilization; it is a defensive catastrophe.",
-      "Controls central objectives and forces Titans to split pressure."
-    ],
-    "shortBackstory": "Gateborn Colossus is a non-playable Gateborn Creature whose origin makes The First Reopening visible as living battlefield danger.",
-    "chapters": [
-      {
-        "title": "Origin",
-        "text": "Gateborn Colossus grew around unstable Gate stone as a defensive catastrophe. It is not a faction citizen and should never read like a recruitable Titan. Its existence proves that the Gate crisis produces consequences, predators, remnants, and catastrophes beyond civilized armies."
-      },
-      {
-        "title": "Lore Function",
-        "text": "As a Gateborn Creature from Unstable Gate, Gateborn carries a specific warning into the story: A giant malformed guardian grown around unstable Gate stone. It is not a Titan and has no civilization; it is a defensive catastrophe. This makes the creature useful as canon pressure, not random enemy dressing."
-      },
-      {
-        "title": "Battlefield Behavior",
-        "text": "On the map, Gateborn supports its lore through behavior: Controls central objectives and forces Titans to split pressure. Its abilities \u2014 Gate Stomp, Fracture Roar, Objective Crush \u2014 should feel like the environment and story acting through a threat body."
-      },
-      {
-        "title": "Campaign Tie",
-        "text": "In The First Reopening, Gateborn connects to the unstable Gate proving it can grow guardians instead of summoning soldiers. Encounter designers can place it where the player needs to feel what the Gate has damaged: memory, structure, instinct, oath, water, stone, or command."
-      },
-      {
-        "title": "Visual / Reading Rule",
-        "text": "The creature page must preserve the distinction between Titans, NPCs, and non-playable threats. Gateborn can be studied under Creatures and Backstories, but its profile should reinforce danger, not companionship."
-      }
-    ],
-    "relationshipHooks": [
-      "Threat profile",
-      "Encounter pressure",
-      "Campaign consequence"
-    ],
-    "readableUnder": [
-      "Creatures",
-      "Character Backstories",
-      "Mission detail enemy references"
-    ],
-    "developmentStatus": "Readable creature profile integrated into dashboard threat pages."
-  },
-  {
-    "id": "TG-BACKSTORY-CREATURE-003",
-    "entityId": "TG-CREATURE-003",
-    "entityType": "Creature",
-    "name": "Beast Realm Maneater",
-    "slug": "beast-realm-maneater",
-    "factionId": null,
-    "faction": "Beast Realms",
-    "role": "Major",
-    "rarity": "Beast Realm Creature",
-    "status": "Canon Backstory Ready",
-    "storyArcIds": [
-      "TG-STORY-ARC-001"
-    ],
-    "campaignHooks": [
-      "The First Reopening"
-    ],
-    "loreTies": [
-      "A predator from a Beast Realm where instinct became law. It is not evil in a human sense; it is a living argument that survival has no court of appeal.",
-      "Tracks wounded Titans and escalates if ignored."
-    ],
-    "shortBackstory": "Beast Realm Maneater is a non-playable Beast Realm Creature whose origin makes The First Reopening visible as living battlefield danger.",
-    "chapters": [
-      {
-        "title": "Origin",
-        "text": "Beast Realm Maneater crossed from a Beast Realm where survival itself became government. It is not a faction citizen and should never read like a recruitable Titan. Its existence proves that the Gate crisis produces consequences, predators, remnants, and catastrophes beyond civilized armies."
-      },
-      {
-        "title": "Lore Function",
-        "text": "As a Beast Realm Creature from Beast Realms, Beast carries a specific warning into the story: A predator from a Beast Realm where instinct became law. It is not evil in a human sense; it is a living argument that survival has no court of appeal. This makes the creature useful as canon pressure, not random enemy dressing."
-      },
-      {
-        "title": "Battlefield Behavior",
-        "text": "On the map, Beast supports its lore through behavior: Tracks wounded Titans and escalates if ignored. Its abilities \u2014 Pounce, Blood-Scent Mark, Devour Weakness \u2014 should feel like the environment and story acting through a threat body."
-      },
-      {
-        "title": "Campaign Tie",
-        "text": "In The First Reopening, Beast connects to the warning that not every threat is evil; some are Realm law sharpened into hunger. Encounter designers can place it where the player needs to feel what the Gate has damaged: memory, structure, instinct, oath, water, stone, or command."
-      },
-      {
-        "title": "Visual / Reading Rule",
-        "text": "The creature page must preserve the distinction between Titans, NPCs, and non-playable threats. Beast can be studied under Creatures and Backstories, but its profile should reinforce danger, not companionship."
-      }
-    ],
-    "relationshipHooks": [
-      "Threat profile",
-      "Encounter pressure",
-      "Campaign consequence"
-    ],
-    "readableUnder": [
-      "Creatures",
-      "Character Backstories",
-      "Mission detail enemy references"
-    ],
-    "developmentStatus": "Readable creature profile integrated into dashboard threat pages."
-  },
-  {
-    "id": "TG-BACKSTORY-CREATURE-004",
-    "entityId": "TG-CREATURE-004",
-    "entityType": "Creature",
-    "name": "Forgotten Standard Bearer",
-    "slug": "forgotten-standard-bearer",
-    "factionId": null,
-    "faction": "Forgotten",
-    "role": "Elite",
-    "rarity": "Forgotten Remnant",
-    "status": "Canon Backstory Ready",
-    "storyArcIds": [
-      "TG-STORY-ARC-002"
-    ],
-    "campaignHooks": [
-      "Storm-Oath Covenant"
-    ],
-    "loreTies": [
-      "A remnant of a removed civilization whose name cannot be safely spoken. It carries a banner that remembers wars the Codex refuses to restore.",
-      "Buffs lesser Hollow enemies and creates denial zones."
-    ],
-    "shortBackstory": "Forgotten Standard Bearer is a non-playable Forgotten Remnant whose origin makes Storm-Oath Covenant visible as living battlefield danger.",
-    "chapters": [
-      {
-        "title": "Origin",
-        "text": "Forgotten Standard Bearer remains from a removed war whose civilization cannot be safely restored. It is not a faction citizen and should never read like a recruitable Titan. Its existence proves that the Gate crisis produces consequences, predators, remnants, and catastrophes beyond civilized armies."
-      },
-      {
-        "title": "Lore Function",
-        "text": "As a Forgotten Remnant from Forgotten, Forgotten carries a specific warning into the story: A remnant of a removed civilization whose name cannot be safely spoken. It carries a banner that remembers wars the Codex refuses to restore. This makes the creature useful as canon pressure, not random enemy dressing."
-      },
-      {
-        "title": "Battlefield Behavior",
-        "text": "On the map, Forgotten supports its lore through behavior: Buffs lesser Hollow enemies and creates denial zones. Its abilities \u2014 Banner of Loss, Command the Nameless, Memory Cleave \u2014 should feel like the environment and story acting through a threat body."
-      },
-      {
-        "title": "Campaign Tie",
-        "text": "In Storm-Oath Covenant, Forgotten connects to the banner-memory pressure that returns during Asgardian Elite remixes. Encounter designers can place it where the player needs to feel what the Gate has damaged: memory, structure, instinct, oath, water, stone, or command."
-      },
-      {
-        "title": "Visual / Reading Rule",
-        "text": "The creature page must preserve the distinction between Titans, NPCs, and non-playable threats. Forgotten can be studied under Creatures and Backstories, but its profile should reinforce danger, not companionship."
-      }
-    ],
-    "relationshipHooks": [
-      "Threat profile",
-      "Encounter pressure",
-      "Campaign consequence"
-    ],
-    "readableUnder": [
-      "Creatures",
-      "Character Backstories",
-      "Mission detail enemy references"
-    ],
-    "developmentStatus": "Readable creature profile integrated into dashboard threat pages."
-  },
-  {
-    "id": "TG-BACKSTORY-CREATURE-005",
-    "entityId": "TG-CREATURE-005",
-    "entityType": "Creature",
-    "name": "Ancient World Boss: Leviathan of the First Flood",
-    "slug": "ancient-world-boss-leviathan",
-    "factionId": null,
-    "faction": "Pre-Gate Mythic Deep",
-    "role": "World Boss",
-    "rarity": "Ancient World Boss",
-    "status": "Canon Backstory Ready",
-    "storyArcIds": [
-      "TG-STORY-ARC-002"
-    ],
-    "campaignHooks": [
-      "Storm-Oath Covenant"
-    ],
-    "loreTies": [
-      "A catastrophic primordial beast awakened when multiple Gate scars align beneath ancient waters. It is a campaign-scale threat, not a faction unit.",
-      "Campaign boss encounter that transforms terrain each phase."
-    ],
-    "shortBackstory": "Ancient World Boss: Leviathan of the First Flood is a non-playable Ancient World Boss whose origin makes Storm-Oath Covenant visible as living battlefield danger.",
-    "chapters": [
-      {
-        "title": "Origin",
-        "text": "Ancient World Boss: Leviathan of the First Flood slept below pre-Gate waters until multiple scars aligned like a wound-map. It is not a faction citizen and should never read like a recruitable Titan. Its existence proves that the Gate crisis produces consequences, predators, remnants, and catastrophes beyond civilized armies."
-      },
-      {
-        "title": "Lore Function",
-        "text": "As a Ancient World Boss from Pre-Gate Mythic Deep, Ancient carries a specific warning into the story: A catastrophic primordial beast awakened when multiple Gate scars align beneath ancient waters. It is a campaign-scale threat, not a faction unit. This makes the creature useful as canon pressure, not random enemy dressing."
-      },
-      {
-        "title": "Battlefield Behavior",
-        "text": "On the map, Ancient supports its lore through behavior: Campaign boss encounter that transforms terrain each phase. Its abilities \u2014 Flood the Map, Temple Chain Drag, Primordial Roar \u2014 should feel like the environment and story acting through a threat body."
-      },
-      {
-        "title": "Campaign Tie",
-        "text": "In Storm-Oath Covenant, Ancient connects to the raid-scale omen beneath future covenant shield objectives. Encounter designers can place it where the player needs to feel what the Gate has damaged: memory, structure, instinct, oath, water, stone, or command."
-      },
-      {
-        "title": "Visual / Reading Rule",
-        "text": "The creature page must preserve the distinction between Titans, NPCs, and non-playable threats. Ancient can be studied under Creatures and Backstories, but its profile should reinforce danger, not companionship."
-      }
-    ],
-    "relationshipHooks": [
-      "Threat profile",
-      "Encounter pressure",
-      "Campaign consequence"
-    ],
-    "readableUnder": [
-      "Creatures",
-      "Character Backstories",
-      "Mission detail enemy references"
-    ],
-    "developmentStatus": "Readable creature profile integrated into dashboard threat pages."
   }
 ]
