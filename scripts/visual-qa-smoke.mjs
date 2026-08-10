@@ -19,6 +19,10 @@ if (!['PASS', 'IN_PROGRESS'].includes(status.visualQa)) {
 }
 const indexHtml = readFileSync('index.html', 'utf8');
 const dialogue = JSON.parse(readFileSync('data/dialogue-scripts.json', 'utf8'));
+if (!indexHtml.includes('function chapterDetail') || !indexHtml.includes('#/chapter')) {
+  console.error(JSON.stringify({ ok: false, chapterDetailMissing: true }, null, 2));
+  process.exit(1);
+}
 if (!indexHtml.includes('function dialogueViewer') || !indexHtml.includes('#/dialogue')) {
   console.error(JSON.stringify({ ok: false, dialogueViewerMissing: true }, null, 2));
   process.exit(1);
