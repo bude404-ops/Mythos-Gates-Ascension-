@@ -57,6 +57,26 @@ for (const [file, key] of Object.entries(files)) {
   const value = read(`data/${file}`);
   counts[key] = Array.isArray(value) ? value.length : 1;
 }
-const index = { generated, counts, files: Object.fromEntries(Object.keys(files).map(f => [f, `data/${f}`])) };
+const sourceFiles = Object.fromEntries(Object.keys(files).map(f => [f, `data/${f}`]));
+const artPrompts = read('data/art-prompts.json');
+const artPromptCategories = artPrompts.reduce((acc, prompt) => {
+  const key = prompt.category || 'Uncategorized';
+  acc[key] = (acc[key] || 0) + 1;
+  return acc;
+}, {});
+const artMapPrompts = artPrompts
+  .filter(prompt => prompt.category === 'Map')
+  .map(prompt => ({
+    id: prompt.id,
+    entityId: prompt.entityId,
+    entity: prompt.entity,
+    category: prompt.category,
+    status: prompt.status,
+    prompt: prompt.prompt,
+    negativePrompt: prompt.negativePrompt
+  }));
+counts.artMapPrompts = artMapPrompts.length;
+counts.artCampaignPrompts = artPrompts.filter(prompt => prompt.category === 'Campaign').length;
+const index = { generated, counts, files: sourceFiles, artPromptCategories, artMapPrompts };
 write('data/index.json', index);
 console.log(JSON.stringify(index, null, 2));
