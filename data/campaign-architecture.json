@@ -1,0 +1,84 @@
+{
+  "id": "TG-CAMPAIGN-ARCHITECTURE-V1",
+  "version": "0.5.0",
+  "status": "Implemented Phase 1 + Aten Ra Phase 2",
+  "canonicalFactionCount": 7,
+  "directiveTargetFactionCount": 6,
+  "canonConflict": "Current Canon/Codex registers 7 factions. Architecture preserves all 7 and remains expandable; no faction was removed to satisfy the 6-faction planning number.",
+  "perFactionTarget": {
+    "normalMissions": 20,
+    "eliteMissions": 20,
+    "totalMissions": 40,
+    "chapters": 5,
+    "missionsPerChapter": 4,
+    "teamSize": 3
+  },
+  "currentImplemented": {
+    "factionId": "TG-FACTION-001",
+    "normalMissions": 20,
+    "eliteMissions": 20,
+    "totalMissions": 40
+  },
+  "scalableTotals": {
+    "ifSixFactions": {
+      "normal": 120,
+      "elite": 120,
+      "total": 240
+    },
+    "ifCurrentSevenCanonFactions": {
+      "normal": 140,
+      "elite": 140,
+      "total": 280
+    }
+  },
+  "architectureFlow": [
+    "Canon/Lore",
+    "Faction Registry",
+    "Campaign Registry",
+    "Chapter Registry",
+    "Mission Registry",
+    "Encounter Configuration",
+    "Enemy Registry",
+    "Objective System",
+    "Reward System",
+    "Battle Engine",
+    "Campaign Progression",
+    "UI"
+  ],
+  "directorResponsibilities": {
+    "Gameplay Director": [
+      "mission balance",
+      "objectives",
+      "enemy compositions",
+      "difficulty",
+      "Elite remix quality"
+    ],
+    "Lore Director": [
+      "story",
+      "canon",
+      "dialogue",
+      "codex integration",
+      "faction consistency"
+    ],
+    "Art Director": [
+      "mission art",
+      "map art",
+      "boss presentation",
+      "VFX",
+      "UI readability"
+    ],
+    "Development Director": [
+      "architecture",
+      "validation",
+      "testing",
+      "versioning",
+      "deployment"
+    ]
+  },
+  "progression": {
+    "normal": "Mission 1 through 20 unlocks Elite",
+    "elite": "Elite 1 through 20 unlocks faction elite complete",
+    "replay": "Completed missions remain replayable",
+    "stars": "Three-star performance model per mission"
+  }
+}
