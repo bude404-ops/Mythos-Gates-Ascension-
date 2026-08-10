@@ -1,58 +1,84 @@
-# Titans Gate Ascension
+# Titan Gates: Ascension
 
-Playable browser build plus the Titan Gates Dev Platform.
+Titan Gates: Ascension is a Titan-only mythological tactical RPG built around extradimensional Realms, Titan Gates, the Ascension Collapse, and colossal Titans shaped by their civilizations.
 
-## Play
+This repository is now the source of truth for both:
 
-Open `index.html`, then choose **Play First Build**.
+1. The playable browser game
+2. The GitHub Pages Development Platform
 
-Or open the playable game directly:
+## Open the Project
+
+- Development Platform: `index.html`
+- Playable game: `game/index.html`
+- Legacy exported dev platform: `titan-gates-dev-platform.html`
+- Lore Codex: `docs/lore/README.md`
+
+## Repository Structure
+
+```text
+art/                 Artwork pipeline folders and prompt files
+art/prompts/         Versioned prompt records, one JSON file per entity prompt
+data/                Source-of-truth JSON data for the Pages dashboard
+characters/          Future character records; current canon has no playable Heroes
+codex/               Reserved codex expansion area
+dev/                 Development Platform entry copy
+development/         Reserved development records
+directors/           Reserved Director expansion area
+docs/lore/           Canon lore codex
+game/                Playable Titan Gates game
+scripts/             Index generation, validation, Pages build scripts
+.github/workflows/   GitHub Pages build/validate/deploy workflow
+```
+
+## Current Build
+
+- Version: `0.2.0`
+- Phase: GitHub Pages Development Platform
+- Factions: 7
+- Titans: 63
+- Characters: 0 playable characters by canon lock
+- Art prompts: 63 Titan prompts
+- Game loop: first playable Gate encounter
+
+## Commands
 
 ```bash
-python3 -m http.server 8080
+npm install
+npm run index
+npm run validate
+npm run build
 ```
 
-Then visit:
+`npm run build` generates indexes, validates references, and creates the `dist/` folder used by GitHub Pages.
 
-```text
-http://localhost:8080/game/
-```
+## GitHub Pages
 
-## First playable build
+The workflow at `.github/workflows/pages.yml` builds and deploys the static platform without exposing personal tokens.
 
-The first game build includes:
+It validates:
 
-- 5-Titan strike force selection
-- 12 canon Titans from the seven mythological Realms
-- Mobile-first tactical battle screen
-- 5x5 Gate battlefield
-- Player movement, attacks, signature abilities, energy, rounds, enemy turns
-- Gateborn / Hollow / Forgotten enemy encounter
-- Victory and defeat states
-- Current Titan-only lore direction
+- JSON syntax
+- Duplicate IDs
+- Missing Titan/faction/prompt references
+- Missing lore files
+- Unsafe artwork paths
+- Invalid image extensions
+- Playable game integrity
+- Dashboard integrity
 
-## Dev Platform
+## Canon Direction
 
-The existing Titan Gates Dev Platform remains available at:
+Current canon is locked around:
 
-```text
-titan-gates-dev-platform.html
-```
+- Seven playable mythological Realms
+- Nine Titans per Realm
+- Five-Titan strike forces
+- No playable Heroes in the current format
+- No normal units in the current format
+- No sci-fi
+- No aliens
+- No spaceships
+- No Mycocide / fungal civilization content
 
-It contains the canon tools, lore clipboard, Director Command Center, and release-candidate change ledger.
-
-## Lore Codex
-
-The game canon now lives in:
-
-```text
-docs/lore/README.md
-```
-
-The codex includes canon locks, the full game lore, Titan Gates, Realms, Titans, campaign threats, timeline, glossary, and the art/tone bible.
-
-## Canon direction
-
-Titans Gate is a Titan-only mythological tactical RPG built around extradimensional Realms, Titan Gates, the Ascension Collapse, and colossal Titans shaped by their civilizations.
-
-No sci-fi. No aliens. No spaceships. No guns. Mythology is evidence of extradimensional power.
+GitHub is the source of truth. GitHub Pages is the visual command center. The Codex is the canonical knowledge base. The Art Studio is the visual production pipeline. The Directors are the governance system.
