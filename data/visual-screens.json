@@ -113,12 +113,14 @@
   {
     "id": "TG-SCREEN-CAMPAIGN",
     "slug": "campaign",
-    "name": "Campaign",
+    "name": "Campaign 3D Journey",
     "status": "PASS",
     "director": "Gameplay Director",
     "lastTestedBuild": "0.2.0",
     "lastApprovedBuild": "0.2.0",
-    "warnings": [],
+    "warnings": [
+      "3D environment is represented as preview geometry until production 3D assets are imported."
+    ],
     "errors": [],
     "affectedBy": [
       "campaign",
@@ -127,18 +129,25 @@
       "npc",
       "creature"
     ],
-    "description": "Campaign and chapter browser with maps, objectives, and threats."
+    "description": "Elongated 3D Realm campaign environment with nodes, Gates, terrain, and progression.",
+    "checks": [
+      "3D path clarity",
+      "Gate landmark visibility",
+      "Mobile diorama camera",
+      "Section loading readiness"
+    ]
   },
   {
     "id": "TG-SCREEN-BATTLE",
     "slug": "battle",
-    "name": "Battle",
+    "name": "Hybrid Battle",
     "status": "WARNING",
     "director": "Gameplay Director",
     "lastTestedBuild": "0.2.0",
     "lastApprovedBuild": null,
     "warnings": [
-      "Battle preview uses the current first playable loop and data-informed battlefield context; advanced campaign loading is still in development."
+      "Battle preview uses the current first playable loop and data-informed battlefield context; advanced campaign loading is still in development.",
+      "Battle engine in development; current preview validates hybrid visual architecture."
     ],
     "errors": [],
     "affectedBy": [
@@ -148,7 +157,13 @@
       "ability",
       "ui"
     ],
-    "description": "Current combat interface and tactical battle preview."
+    "description": "3D tactical battlefield with 2D grounded combatant sprites.",
+    "checks": [
+      "2D sprite readability",
+      "Sprite grounding/contact shadows",
+      "3D terrain visibility",
+      "Mobile tactical camera"
+    ]
   },
   {
     "id": "TG-SCREEN-VICTORY",
@@ -236,5 +251,26 @@
       "ui"
     ],
     "description": "Loading screen and build handoff state."
+  },
+  {
+    "id": "TG-VIS-SCREEN-014",
+    "name": "Full Hybrid Flow",
+    "slug": "full-flow",
+    "category": "Flow",
+    "director": "Development Director",
+    "status": "WARNING",
+    "lastTestedBuild": "0.3.2",
+    "lastApprovedBuild": "None",
+    "description": "Primary release preview: 3D campaign journey, encounter reveal, hybrid battle, victory, and return to campaign.",
+    "warnings": [
+      "Gameplay system in development: transition is visual architecture preview until campaign/battle engine mounts here."
+    ],
+    "checks": [
+      "Campaign path clarity",
+      "Gate landmark visibility",
+      "Battlefield sprite grounding",
+      "Victory to campaign continuity",
+      "Mobile performance"
+    ]
   }
 ]
