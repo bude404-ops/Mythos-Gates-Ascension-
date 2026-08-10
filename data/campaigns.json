@@ -114,5 +114,93 @@
       "TG-CREATURE-005"
     ],
     "recommendedNextTask": "Design choice consequence records."
+  },
+  {
+    "id": "TG-CAMPAIGN-005",
+    "slug": "heliokemet-sun-realm",
+    "name": "Helio-Kemet Sun Realm",
+    "phase": "Act II",
+    "status": "Campaign Map Spec Ready",
+    "director": "Art Director",
+    "summary": "Aten Ra forces climb an S-shaped river-of-light campaign road from Sacred Sun Temple to the Titan Gate boss portal, establishing the campaign-map language for faction chapters.",
+    "loreDirectorNotes": "Frames Aten Ra as solar law under siege by obsidian eclipse corruption. The boss gate silhouette is not a playable hero; it is a campaign apex threat.",
+    "gameplayDirectorNotes": "Five-node mobile campaign structure with mission progress, star ratings, challenge node, and tactical battle handoff into a tiered Sun Realm gate map.",
+    "artDirectorNotes": "Uses the Helio-Kemet campaign and battle references as locked layout guides: top-left chapter banner, top-right currency bar, left progress bar, S-path nodes, and peak boss gate.",
+    "developmentDirectorNotes": "Use this campaign as the template for future faction campaign-map menus and tactical battle transitions.",
+    "chapters": [
+      "TG-CHAPTER-011",
+      "TG-CHAPTER-012",
+      "TG-CHAPTER-013"
+    ],
+    "maps": [
+      "TG-MAP-007",
+      "TG-MAP-008"
+    ],
+    "npcs": [
+      "TG-NPC-001"
+    ],
+    "creatures": [
+      "TG-CREATURE-001",
+      "TG-CREATURE-002"
+    ],
+    "recommendedNextTask": "Convert campaign-map prompt into an interactive chapter-select prototype with five mission nodes."
+  },
+  {
+    "id": "TG-CAMPAIGN-006",
+    "slug": "kami-mirror-tempest",
+    "name": "Kami Mirror Tempest",
+    "phase": "Act II",
+    "status": "Campaign Spec Ready",
+    "director": "Lore Director",
+    "summary": "The Kami campaign travels through storm shrines, mirror lakes, and foxfire gates where every reflection can become a hostile tactical lane.",
+    "loreDirectorNotes": "Focuses on contracts with spirits rather than conquest. The campaign tests whether the Creator can win without breaking local shrine law.",
+    "gameplayDirectorNotes": "Map layouts favor shifting lanes, reflection decoys, wind pushes, cleanse objectives, and high-mobility enemy spirits.",
+    "artDirectorNotes": "Vermilion torii gates, moonlit water, lacquer black shrine roofs, paper seals, foxfire blue, and mirror-surface battle grids.",
+    "developmentDirectorNotes": "Ideal for testing terrain state changes and illusion markers after base tactical loop stabilizes.",
+    "chapters": [
+      "TG-CHAPTER-014",
+      "TG-CHAPTER-015",
+      "TG-CHAPTER-016"
+    ],
+    "maps": [
+      "TG-MAP-009",
+      "TG-MAP-010"
+    ],
+    "npcs": [
+      "TG-NPC-003"
+    ],
+    "creatures": [
+      "TG-CREATURE-003"
+    ],
+    "recommendedNextTask": "Prototype mirror-clone hazard tiles and wind-lane movement rules."
+  },
+  {
+    "id": "TG-CAMPAIGN-007",
+    "slug": "empyrean-choir-vault",
+    "name": "Empyrean Choir Vault",
+    "phase": "Act II",
+    "status": "Campaign Spec Ready",
+    "director": "Gameplay Director",
+    "summary": "The Empyrean campaign ascends luminous choir platforms orbiting a broken heaven-engine where harmonic gates rewrite battlefield elevation.",
+    "loreDirectorNotes": "Presents Empyrean order as beautiful but dangerous: songs stabilize worlds while erasing dissonant survivors.",
+    "gameplayDirectorNotes": "Map layouts emphasize vertical tiers, beacon timing, resonance shields, limited bridges, and boss pressure from the upper vault.",
+    "artDirectorNotes": "Ivory-gold celestial architecture, blue-white auroras, floating glass stairs, halo mechanisms, and radiant tactical grids.",
+    "developmentDirectorNotes": "Best used for testing elevation bonuses, timed beacons, and multi-tier mini-map clarity.",
+    "chapters": [
+      "TG-CHAPTER-017",
+      "TG-CHAPTER-018",
+      "TG-CHAPTER-019"
+    ],
+    "maps": [
+      "TG-MAP-011",
+      "TG-MAP-012"
+    ],
+    "npcs": [
+      "TG-NPC-006"
+    ],
+    "creatures": [
+      "TG-CREATURE-005"
+    ],
+    "recommendedNextTask": "Add elevation advantage rules and beacon countdown UI to the tactical prototype."
   }
 ]
