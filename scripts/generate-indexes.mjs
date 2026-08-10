@@ -39,6 +39,8 @@ const files = {
   'objective-system.json': 'objectiveSystem',
   'reward-system.json': 'rewardSystem',
   'campaign-audit.json': 'campaignAudit',
+  'storyline-arc-registry.json': 'storylineArcs',
+  'campaign-consequence-registry.json': 'campaignConsequences',
   'endgame-architecture.json': 'endgameArchitecture',
   'squad-system.json': 'squadSystem',
   'progression-system.json': 'progressionSystem',
