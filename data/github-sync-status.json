@@ -1,13 +1,13 @@
 {
   "id": "TG-GITHUB-SYNC-STATUS-001",
   "status": "SYNCED",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "previousStableVersion": "0.3.3",
   "commit": "LIVE_REMOTE",
-  "commitMessage": "feat: add campaign lore and dialogue",
+  "commitMessage": "feat: expand mission dialogue",
   "branch": "main",
   "repository": "bude404-ops/Titans-Gate-",
-  "lastPushTime": "2026-08-10T19:52:41Z",
+  "lastPushTime": "2026-08-10T20:03:03Z",
   "build": "PASS",
   "github": "SYNCED",
   "deployment": "IGNORED_BY_REQUEST",
@@ -17,11 +17,11 @@
   "manualPushAvailable": true,
   "safeAuthentication": "Server-side token, GitHub Actions secret, GitHub App, or local secure environment variable only. Browser token use is forbidden.",
   "recentChanges": [
-    "Added dedicated lore for all seven campaigns.",
-    "Added Campaign Dialogue Bible with voice anchors.",
-    "Added first-pass chapter-opening dialogue for chapters 1-19.",
-    "Added structured dialogue data for future UI use."
+    "Expanded all 19 chapters into full mission dialogue beat sets.",
+    "Added mission intro, mid-battle, low-health, victory, defeat, and post-mission lines.",
+    "Added Mission Dialogue Expansion lore doc.",
+    "Preserved Titan-only playable canon and non-cheesy tone rules."
   ],
   "liveStatusSource": "Public GitHub API; no credentials in browser.",
-  "syncError": "Pages workflow intentionally ignored by holder request; campaign lore and dialogue synced through repository content updates."
+  "syncError": "Pages workflow intentionally ignored by holder request; mission dialogue synced through repository content updates."
 }
