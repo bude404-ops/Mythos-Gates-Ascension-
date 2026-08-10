@@ -45,7 +45,9 @@
     "achievementSystem": 1,
     "balanceAnalytics": 1,
     "endgameDashboard": 1,
-    "monetizationPolicy": 1
+    "monetizationPolicy": 1,
+    "artMapPrompts": 12,
+    "artCampaignPrompts": 7
   },
   "files": {
     "project.json": "data/project.json",
@@ -93,5 +95,123 @@
     "balance-analytics.json": "data/balance-analytics.json",
     "endgame-dashboard.json": "data/endgame-dashboard.json",
     "monetization-policy.json": "data/monetization-policy.json"
-  }
+  },
+  "artPromptCategories": {
+    "Titan": 63,
+    "NPC": 8,
+    "Creature": 5,
+    "Map": 12,
+    "FactionScreen": 2,
+    "Campaign": 7
+  },
+  "artMapPrompts": [
+    {
+      "id": "TG-PROMPT-MAP-001",
+      "entityId": "TG-MAP-001",
+      "entity": "The First Reopening Gate",
+      "category": "Map",
+      "status": "ready",
+      "prompt": "Titan Gates tactical map environment concept: The First Reopening Gate. A shattered gateway courtyard where the first playable encounter unfolds. Built for 5x5 tactical onboarding before later expansion. Region: Broken Earth-side Gatefield. Hazards: Unstable Gate pulse, Cracked objective tiles. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, no sci-fi.",
+      "negativePrompt": "sci-fi, spaceships, guns, aliens, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo"
+    },
+    {
+      "id": "TG-PROMPT-MAP-002",
+      "entityId": "TG-MAP-002",
+      "entity": "Solar Pylon Observatory",
+      "category": "Map",
+      "status": "ready",
+      "prompt": "Titan Gates tactical map environment concept: Solar Pylon Observatory. A bronze-and-obsidian observatory built around a dormant solar pylon. Mesha uses it to record Gate behavior. Region: Aten Ra border archive. Hazards: Solar overcharge, Judgment beam misfires. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, no sci-fi.",
+      "negativePrompt": "sci-fi, spaceships, guns, aliens, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo"
+    },
+    {
+      "id": "TG-PROMPT-MAP-003",
+      "entityId": "TG-MAP-003",
+      "entity": "Storm-Oath Bridge",
+      "category": "Map",
+      "status": "ready",
+      "prompt": "Titan Gates tactical map environment concept: Storm-Oath Bridge. A colossal bridge of rune-iron suspended in storm cloud, where oaths become visible under lightning. Region: Valhalla Beyond the Veil. Hazards: Lightning lane strikes, Rune collapse. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, no sci-fi.",
+      "negativePrompt": "sci-fi, spaceships, guns, aliens, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo"
+    },
+    {
+      "id": "TG-PROMPT-MAP-004",
+      "entityId": "TG-MAP-004",
+      "entity": "Marble Sky Arena",
+      "category": "Map",
+      "status": "ready",
+      "prompt": "Titan Gates tactical map environment concept: Marble Sky Arena. A floating arena of marble, bronze, and starlight where victory itself alters the battlefield. Region: The Celestial Heights of Olympus. Hazards: Falling sky platforms, Laurel judgment fields. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, no sci-fi.",
+      "negativePrompt": "sci-fi, spaceships, guns, aliens, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo"
+    },
+    {
+      "id": "TG-PROMPT-MAP-005",
+      "entityId": "TG-MAP-005",
+      "entity": "Moon-Grove Rootlabyrinth",
+      "category": "Map",
+      "status": "ready",
+      "prompt": "Titan Gates tactical map environment concept: Moon-Grove Rootlabyrinth. A living forest labyrinth whose roots remember every step and punish careless burning. Region: Avalora. Hazards: Moving root walls, Fae misdirection, Living terrain backlash. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, no sci-fi.",
+      "negativePrompt": "sci-fi, spaceships, guns, aliens, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo"
+    },
+    {
+      "id": "TG-PROMPT-MAP-006",
+      "entityId": "TG-MAP-006",
+      "entity": "Black Iron Court",
+      "category": "Map",
+      "status": "ready",
+      "prompt": "Titan Gates tactical map environment concept: Black Iron Court. An infernal court of chains, volcanic glass, and royal violence where bargains become battlefield hazards. Region: Infernal Dominion throne district. Hazards: Hellfire chains, Dominion execution marks, Bargain traps. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, no sci-fi.",
+      "negativePrompt": "sci-fi, spaceships, guns, aliens, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo"
+    },
+    {
+      "id": "TG-PROMPT-MAP-007",
+      "entityId": "TG-MAP-007",
+      "entity": "Sacred Sun Temple Road",
+      "category": "Map",
+      "status": "ready",
+      "prompt": "Vertical mobile campaign map overview, polished 2D/2.5D digital painting, Helio-Kemet Sun Realm, S-shaped glowing mission path climbing sandstone pyramid terraces, oasis canals, giant sun, ornate top-left chapter banner, top-right currency bar, far-left 4/5 mission progress bar, five mission thumbnails, green checkmark on first node, boss silhouettes on upper nodes, radiant Aten Ra Titan Gate at peak, gold turquoise ivory violet corruption palette.",
+      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot"
+    },
+    {
+      "id": "TG-PROMPT-MAP-008",
+      "entityId": "TG-MAP-008",
+      "entity": "Titan Gate Sun Throne",
+      "category": "Map",
+      "status": "ready",
+      "prompt": "Isometric tactical battle map, polished 2.5D mobile RPG, Helio-Kemet peak citadel, multi-tier S-shaped elevation grid connected by stairs, sandstone temple platforms, turquoise river-of-light channels, black obsidian corruption cracks, glowing tactical tiles, two hero units foreground, enemies on stairs, radiant boss gate at upper peak, top-left HP UI, top-right minimap, bottom action bar.",
+      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot"
+    },
+    {
+      "id": "TG-PROMPT-MAP-009",
+      "entityId": "TG-MAP-009",
+      "entity": "Foxfire Torii Road",
+      "category": "Map",
+      "status": "ready",
+      "prompt": "Vertical mobile campaign map overview for Kami Mirror Tempest, S-shaped shrine road through vermilion torii gates, moonlit mirror lakes, floating paper seals, foxfire blue milestone nodes, five mission thumbnails with star slots, dramatic storm clouds, lacquer black roofs, sacred rope bridges, premium fantasy UI, readable mobile composition.",
+      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot"
+    },
+    {
+      "id": "TG-PROMPT-MAP-010",
+      "entityId": "TG-MAP-010",
+      "entity": "Mirror Lake Sanctum",
+      "category": "Map",
+      "status": "ready",
+      "prompt": "Isometric 2.5D tactical battle map for Kami Mirror Lake Sanctum, multi-tier shrine platforms connected by red bridges and stairs, mirror-water channels reflecting units, foxfire lanterns, paper-seal hazard tiles, wind corridors, glowing grid, spirit enemies placed along stairs, shrine bell objective, top-left tactical UI and bottom action buttons.",
+      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot"
+    },
+    {
+      "id": "TG-PROMPT-MAP-011",
+      "entityId": "TG-MAP-011",
+      "entity": "Choir Vault Ascent",
+      "category": "Map",
+      "status": "ready",
+      "prompt": "Vertical mobile campaign map overview for Empyrean Choir Vault, S-shaped ascent of floating ivory-gold platforms, halo engines, blue-white aurora bridges, glowing mission nodes orbiting a shattered celestial vault, star slots, progress bar, radiant upper gate, dramatic clouds and holy light, premium mobile strategy UI.",
+      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot"
+    },
+    {
+      "id": "TG-PROMPT-MAP-012",
+      "entityId": "TG-MAP-012",
+      "entity": "Broken Heaven Engine",
+      "category": "Map",
+      "status": "ready",
+      "prompt": "Isometric 2.5D tactical battle map for Broken Heaven Engine, floating glass stairs, tiered beacon platforms, aurora bridges, ivory-gold celestial architecture, resonance shield pylons, timed bridge collapse indicators, boss gate-machine suspended over clouds, glowing tactical grid, readable mini-map and action bar.",
+      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot"
+    }
+  ]
 }
