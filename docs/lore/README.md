@@ -41,3 +41,8 @@ The following chapters expand every faction, Realm, Gate, and Titan role without
 - [Hybrid 2D Sprite + 3D Campaign Visual Architecture](11-HYBRID-VISUAL-ARCHITECTURE.md)
 - [Automatic GitHub Sync and Deployment Policy](12-GITHUB-SYNC-DEPLOYMENT-POLICY.md)
 
+
+## Campaign Lore and Dialogue
+
+- [Campaign Dialogue Bible — First Pass](13-CAMPAIGN-DIALOGUE-BIBLE.md)
+- Campaign lore files live under `docs/lore/campaigns/` and cover all seven current campaigns.
