@@ -1,0 +1,96 @@
+{
+  "id": "TG-F01-C02-M08",
+  "factionId": "TG-FACTION-001",
+  "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+  "campaignType": "Normal",
+  "chapter": 2,
+  "chapterTitle": "The First Gate",
+  "missionNumber": 8,
+  "missionInChapter": 4,
+  "title": "The Crocodile Crown",
+  "description": "Aten Ra advances through open desert road, raised obelisks, and timed sunflare tiles while the Gate tests whether solar law can hold under pressure.",
+  "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+  "recommendedPower": 380,
+  "teamSize": 3,
+  "encouragedTitanRoles": [
+    "support guardian",
+    "mobile striker",
+    "objective holder"
+  ],
+  "mapId": "TG-MAP-008",
+  "terrain": "open desert road, raised obelisks, and timed sunflare tiles",
+  "objectives": {
+    "primary": "Complete two battlefield stages under changing solar hazards.",
+    "optional": [
+      "Complete before turn 9",
+      "Keep all three Titans standing",
+      "Trigger at least two faction synergy actions"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-004",
+        "TG-CREATURE-005"
+      ],
+      "entry": "deployed at opposing gate markers"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-005"
+      ],
+      "entry": "reinforcement from shadowed lane",
+      "trigger": "turn 3 or primary objective touched"
+    }
+  ],
+  "boss": {
+    "enemyId": "TG-CREATURE-002",
+    "phaseCount": 2,
+    "mechanic": "changes sunflare timing and objective pressure"
+  },
+  "turnLimit": 12,
+  "specialRules": [
+    "Sunflare Tiles: marked tiles flare after one turn.",
+    "River Push: light channels slide units one tile if they end exposed."
+  ],
+  "victoryConditions": [
+    "Complete two battlefield stages under changing solar hazards."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Solar upgrade dust",
+      "Faction shard cache",
+      "Low-tier gear component",
+      "Aten Ra mission 8 codex shard"
+    ],
+    "replay": [
+      "Solar upgrade dust",
+      "Faction shard cache",
+      "Low-tier gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed with one Titan standing or severe turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F01-CODEX-08"
+  ],
+  "artPackageId": "TG-F01-ART-C02-M08",
+  "dialogueId": "TG-F01-DLG-C02-M08",
+  "audioRequirements": [
+    "low temple pulse",
+    "sunflare impact cue",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed"
+}
