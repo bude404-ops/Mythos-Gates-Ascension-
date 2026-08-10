@@ -3,17 +3,19 @@
   "counts": {
     "project": 1,
     "factions": 7,
+    "hollowThreatFaction": 1,
     "titans": 63,
     "characters": 0,
     "units": 0,
-    "artPrompts": 97,
+    "artPrompts": 110,
     "artworks": 0,
     "artImportPipeline": 1,
     "developmentTasks": 11,
-    "loreEntries": 34,
+    "loreEntries": 35,
     "npcs": 8,
-    "creatures": 5,
-    "characterBackstories": 76,
+    "creatures": 18,
+    "hollowEncounterSystem": 1,
+    "characterBackstories": 89,
     "maps": 12,
     "campaigns": 7,
     "chapters": 19,
@@ -56,6 +58,7 @@
   "files": {
     "project.json": "data/project.json",
     "factions.json": "data/factions.json",
+    "hollow-faction.json": "data/hollow-faction.json",
     "titans.json": "data/titans.json",
     "characters.json": "data/characters.json",
     "units.json": "data/units.json",
@@ -66,6 +69,7 @@
     "lore-index.json": "data/lore-index.json",
     "npcs.json": "data/npcs.json",
     "creatures.json": "data/creatures.json",
+    "hollow-encounter-system.json": "data/hollow-encounter-system.json",
     "character-backstories.json": "data/character-backstories.json",
     "maps.json": "data/maps.json",
     "campaigns.json": "data/campaigns.json",
@@ -106,11 +110,11 @@
   },
   "artPromptCategories": {
     "Titan": 63,
-    "NPC": 8,
-    "Creature": 5,
+    "Campaign": 7,
+    "Creature": 18,
     "Map": 12,
-    "FactionScreen": 2,
-    "Campaign": 7
+    "NPC": 8,
+    "FactionScreen": 2
   },
   "artMapPrompts": [
     {
