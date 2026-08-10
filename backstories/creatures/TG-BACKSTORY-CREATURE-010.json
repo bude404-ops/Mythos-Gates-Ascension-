@@ -1,0 +1,60 @@
+{
+  "id": "TG-BACKSTORY-CREATURE-010",
+  "entityId": "TG-CREATURE-010",
+  "entityType": "Creature",
+  "name": "Hollow Banner Maw",
+  "slug": "hollow-banner-maw",
+  "factionId": null,
+  "faction": "The Hollow",
+  "role": "Major",
+  "rarity": "Forgotten Hollow",
+  "status": "Canon Backstory Ready",
+  "storyArcIds": [
+    "TG-STORY-ARC-001",
+    "TG-STORY-ARC-002"
+  ],
+  "campaignHooks": [
+    "The First Reopening",
+    "Storm-Oath Covenant",
+    "Hollow Breach Events"
+  ],
+  "loreTies": [
+    "A crawling banner-creature that grew from the Forgotten Standard Bearer\u2019s shadow and devours unit identity.",
+    "Drags nearby swarm units into frenzy when a Titan falls below half health.",
+    "Erasure is not death; erasure is ownership without memory."
+  ],
+  "shortBackstory": "Hollow Banner Maw is a Hollow threat creature built for campaign and event encounters, turning erased memory into major battlefield pressure.",
+  "chapters": [
+    {
+      "title": "Origin",
+      "text": "Hollow Banner Maw formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+    },
+    {
+      "title": "Hollow Function",
+      "text": "Its role inside the Hollow threat faction is precise: Drags nearby swarm units into frenzy when a Titan falls below half health. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+    },
+    {
+      "title": "Lore Tie",
+      "text": "A crawling banner-creature that grew from the Forgotten Standard Bearer\u2019s shadow and devours unit identity."
+    },
+    {
+      "title": "Campaign Use",
+      "text": "Hollow Banner Maw can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+    },
+    {
+      "title": "Visual / Encounter Rule",
+      "text": "Art and gameplay must keep Hollow Banner Maw visibly non-playable. Its silhouette uses low quadruped made of torn banners, bone pole ribs, mouth hidden under cloth, erased sigils crawling over hide. while its abilities \u2014 Devour Insignia, Nameless Rally \u2014 create battlefield pressure without confusing it for a faction Titan."
+    }
+  ],
+  "relationshipHooks": [
+    "Hollow threat pool",
+    "Event encounter library",
+    "Campaign enemy wave selection"
+  ],
+  "readableUnder": [
+    "Creatures",
+    "Character Backstories",
+    "Hollow Threat Faction"
+  ],
+  "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+}
