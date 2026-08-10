@@ -23,6 +23,28 @@ const prompts = JSON.parse(readFileSync('data/art-prompts.json', 'utf8'));
 const missions = JSON.parse(readFileSync('data/mission-registry.json', 'utf8'));
 const missionDialogue = JSON.parse(readFileSync('data/mission-dialogue.json', 'utf8'));
 const missionArtPackages = JSON.parse(readFileSync('data/mission-art-packages.json', 'utf8'));
+const endgameArchitecture = JSON.parse(readFileSync('data/endgame-architecture.json', 'utf8'));
+const squadSystem = JSON.parse(readFileSync('data/squad-system.json', 'utf8'));
+const asyncArenaSystem = JSON.parse(readFileSync('data/async-arena-system.json', 'utf8'));
+const endgameDashboard = JSON.parse(readFileSync('data/endgame-dashboard.json', 'utf8'));
+
+if (endgameArchitecture.standardSquadSize !== 5 || endgameArchitecture.livePvpImplemented !== false || asyncArenaSystem.mode !== 'ASYNCHRONOUS' || asyncArenaSystem.livePvpImplemented !== false) {
+  console.error(JSON.stringify({ ok: false, endgameBoundaryInvalid: true }, null, 2));
+  process.exit(1);
+}
+if (!squadSystem.samplePresets.every(p => p.squadSize === 5 && p.titanIds.length === 5)) {
+  console.error(JSON.stringify({ ok: false, squadPresetInvalid: true }, null, 2));
+  process.exit(1);
+}
+if (!indexHtml.includes('function endgameDashboard') || !indexHtml.includes('#/endgame') || !indexHtml.includes('#/arena') || !indexHtml.includes('#/squads')) {
+  console.error(JSON.stringify({ ok: false, endgameRoutesMissing: true }, null, 2));
+  process.exit(1);
+}
+if (JSON.stringify(endgameDashboard.sampleState || {}) !== '{}' || indexHtml.includes('Floor 37') || indexHtml.includes('Gold II')) {
+  console.error(JSON.stringify({ ok: false, fabricatedProgressionVisible: true }, null, 2));
+  process.exit(1);
+}
+
 if (missions.filter(m => m.factionId === 'TG-FACTION-001' && m.campaignType === 'Normal').length !== 20 || missions.filter(m => m.factionId === 'TG-FACTION-001' && m.campaignType === 'Elite').length !== 20 || missionDialogue.length < missions.length || missionArtPackages.length < missions.length) {
   console.error(JSON.stringify({ ok: false, missionArchitectureInvalid: true }, null, 2));
   process.exit(1);
