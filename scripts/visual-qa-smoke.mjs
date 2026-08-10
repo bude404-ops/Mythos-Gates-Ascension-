@@ -71,6 +71,10 @@ if (!indexHtml.includes('#/art-import') || !indexHtml.includes('function artImpo
   console.error(JSON.stringify({ ok: false, artImportUiMissing: true }, null, 2));
   process.exit(1);
 }
+if (!indexHtml.includes('#/backstories') || !indexHtml.includes('Character Backstories') || !indexHtml.includes('function backstoryDetail')) {
+  console.error(JSON.stringify({ ok: false, backstoryRouteMissing: true }, null, 2));
+  process.exit(1);
+}
 if (!indexHtml.includes('#/storylines') || !indexHtml.includes('Storyline Arcs') || !indexHtml.includes('campaign-consequence-registry')) {
   console.error(JSON.stringify({ ok: false, storylineRouteMissing: true }, null, 2));
   process.exit(1);
