@@ -1,0 +1,111 @@
+[
+  {
+    "id": "TG-CREATURE-001",
+    "slug": "hollow-wretch",
+    "name": "Hollow Wretch",
+    "category": "Hollow Creature",
+    "realm": "Hollow",
+    "threatTier": "Minor",
+    "status": "Gameplay Ready",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A small Gateborn husk formed from erased memory. It attacks in groups and leaves cold silence behind when destroyed.",
+    "visualDescription": "Thin charcoal humanoid shard-body, incomplete mask, white cracks, no faction marks.",
+    "abilities": [
+      "Scratch of Forgetting",
+      "Swarm Pressure"
+    ],
+    "mapBehavior": "Rushes isolated Titans and punishes careless positioning.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-001",
+    "artworkId": null
+  },
+  {
+    "id": "TG-CREATURE-002",
+    "slug": "gateborn-colossus",
+    "name": "Gateborn Colossus",
+    "category": "Gateborn Creature",
+    "realm": "Unstable Gate",
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A giant malformed guardian grown around unstable Gate stone. It is not a Titan and has no civilization; it is a defensive catastrophe.",
+    "visualDescription": "Massive stone-black creature with gateway ribs, glowing fracture-core, many broken arch fragments embedded in its shoulders.",
+    "abilities": [
+      "Gate Stomp",
+      "Fracture Roar",
+      "Objective Crush"
+    ],
+    "mapBehavior": "Controls central objectives and forces Titans to split pressure.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-002",
+    "artworkId": null
+  },
+  {
+    "id": "TG-CREATURE-003",
+    "slug": "beast-realm-maneater",
+    "name": "Beast Realm Maneater",
+    "category": "Beast Realm Creature",
+    "realm": "Beast Realms",
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A predator from a Beast Realm where instinct became law. It is not evil in a human sense; it is a living argument that survival has no court of appeal.",
+    "visualDescription": "Mythic lion-wolf-serpent predator, bone mane, ember eyes, ancient scars, earth-dark hide, non-sci-fi monster silhouette.",
+    "abilities": [
+      "Pounce",
+      "Blood-Scent Mark",
+      "Devour Weakness"
+    ],
+    "mapBehavior": "Tracks wounded Titans and escalates if ignored.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-003",
+    "artworkId": null
+  },
+  {
+    "id": "TG-CREATURE-004",
+    "slug": "forgotten-standard-bearer",
+    "name": "Forgotten Standard Bearer",
+    "category": "Forgotten Remnant",
+    "realm": "Forgotten",
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A remnant of a removed civilization whose name cannot be safely spoken. It carries a banner that remembers wars the Codex refuses to restore.",
+    "visualDescription": "Tall armored remnant with faceless helm, shredded banner of erased sigils, rusted mythic plate, ash falling upward.",
+    "abilities": [
+      "Banner of Loss",
+      "Command the Nameless",
+      "Memory Cleave"
+    ],
+    "mapBehavior": "Buffs lesser Hollow enemies and creates denial zones.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-004",
+    "artworkId": null
+  },
+  {
+    "id": "TG-CREATURE-005",
+    "slug": "ancient-world-boss-leviathan",
+    "name": "Ancient World Boss: Leviathan of the First Flood",
+    "category": "Ancient World Boss",
+    "realm": "Pre-Gate Mythic Deep",
+    "threatTier": "World Boss",
+    "status": "Lore Complete",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A catastrophic primordial beast awakened when multiple Gate scars align beneath ancient waters. It is a campaign-scale threat, not a faction unit.",
+    "visualDescription": "Colossal mythic sea serpent-dragon made of stormwater, basalt scales, drowned temple chains, moonlit eyes, and tidal crown horns.",
+    "abilities": [
+      "Flood the Map",
+      "Temple Chain Drag",
+      "Primordial Roar"
+    ],
+    "mapBehavior": "Campaign boss encounter that transforms terrain each phase.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-005",
+    "artworkId": null
+  }
+]
