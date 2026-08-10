@@ -37,7 +37,15 @@ const data = {
   githubSyncPolicy: read('data/github-sync-policy.json'),
   githubSyncStatus: read('data/github-sync-status.json'),
   changeHistory: read('data/change-history.json'),
-  index: read('data/index.json')
+  index: read('data/index.json'),
+  campaignArchitecture: read('data/campaign-architecture.json'),
+  campaignChapters: read('data/campaign-chapter-registry.json'),
+  missions: read('data/mission-registry.json'),
+  missionDialogue: read('data/mission-dialogue.json'),
+  missionArtPackages: read('data/mission-art-packages.json'),
+  objectiveSystem: read('data/objective-system.json'),
+  rewardSystem: read('data/reward-system.json'),
+  campaignAudit: read('data/campaign-audit.json')
 };
 
 for (const [name, arr] of Object.entries(data)) {
@@ -57,6 +65,10 @@ const chapterIds = new Set(data.chapters.map(c => c.id));
 const visualScreenIds = new Set(data.visualScreens.map(s => s.id));
 const realmIds = new Set(data.realmCodex.map(r => r.id));
 const assetTypes = new Set(data.assetPipeline.assetTypes.map(a => a.type));
+const missionIds = new Set(data.missions.map(m => m.id));
+const missionDialogueIds = new Set(data.missionDialogue.map(d => d.id));
+const missionArtPackageIds = new Set(data.missionArtPackages.map(a => a.id));
+const campaignChapterIds = new Set(data.campaignChapters.map(c => c.id));
 
 if(data.factions.length !== 7) fail(`Expected 7 factions, found ${data.factions.length}`);
 if(data.titans.length !== 63) fail(`Expected 63 Titans, found ${data.titans.length}`);
@@ -112,6 +124,46 @@ for (const chapter of data.chapters) {
   if(!exists(`campaigns/chapters/${chapter.id}.json`)) fail(`${chapter.id}: missing individual chapter file`);
 }
 
+
+
+for (const chapter of data.campaignChapters) {
+  if(!factionIds.has(chapter.factionId)) fail(`${chapter.id}: invalid factionId ${chapter.factionId}`);
+  if(!chapter.missionIds || chapter.missionIds.length !== 4) fail(`${chapter.id}: must have 4 Normal missions`);
+  if(!chapter.eliteMissionIds || chapter.eliteMissionIds.length !== 4) fail(`${chapter.id}: must have 4 Elite missions`);
+  for (const id of [...chapter.missionIds, ...chapter.eliteMissionIds]) if(!missionIds.has(id)) fail(`${chapter.id}: invalid mission ${id}`);
+}
+const missionRequired = ['id','factionId','campaignType','chapter','missionNumber','title','description','lore','recommendedPower','mapId','terrain','objectives','enemyWaves','specialRules','victoryConditions','defeatConditions','rewards','artPackageId','dialogueId','completionState'];
+for (const mission of data.missions) {
+  for (const field of missionRequired) if(mission[field] === undefined || mission[field] === null || mission[field] === '') fail(`${mission.id}: missing ${field}`);
+  if(!factionIds.has(mission.factionId)) fail(`${mission.id}: invalid factionId ${mission.factionId}`);
+  if(!['Normal','Elite'].includes(mission.campaignType)) fail(`${mission.id}: invalid campaignType ${mission.campaignType}`);
+  if(!mapIds.has(mission.mapId)) fail(`${mission.id}: invalid mapId ${mission.mapId}`);
+  if(!mission.objectives.primary || !mission.objectives.optional || mission.objectives.optional.length < 2) fail(`${mission.id}: objectives incomplete`);
+  if(!Array.isArray(mission.enemyWaves) || mission.enemyWaves.length < 1) fail(`${mission.id}: enemy waves missing`);
+  for (const wave of mission.enemyWaves) for (const enemyId of wave.enemyIds || []) if(!creatureIds.has(enemyId)) fail(`${mission.id}: invalid enemy ${enemyId}`);
+  if(mission.boss && !creatureIds.has(mission.boss.enemyId)) fail(`${mission.id}: invalid boss ${mission.boss.enemyId}`);
+  if(!missionDialogueIds.has(mission.dialogueId)) fail(`${mission.id}: missing dialogue ${mission.dialogueId}`);
+  if(!missionArtPackageIds.has(mission.artPackageId)) fail(`${mission.id}: missing art package ${mission.artPackageId}`);
+  if(!exists(`missions/${mission.campaignType === 'Elite' ? 'elite' : 'normal'}/${mission.id}.json`)) fail(`${mission.id}: missing individual mission file`);
+  if(mission.campaignType === 'Elite') {
+    if(!mission.eliteRemixOf || !missionIds.has(mission.eliteRemixOf)) fail(`${mission.id}: missing valid eliteRemixOf`);
+    if(!mission.meaningfulDifferences || mission.meaningfulDifferences.length < 4) fail(`${mission.id}: Elite remix not meaningfully different`);
+  }
+}
+for (const dialogue of data.missionDialogue) {
+  if(!missionIds.has(dialogue.missionId)) fail(`${dialogue.id}: invalid missionId ${dialogue.missionId}`);
+  for (const beat of ['missionIntro','enemyIntroduction','midBattle','victory','defeat','codex']) if(!dialogue.lines?.[beat]?.length) fail(`${dialogue.id}: missing beat ${beat}`);
+  if(!exists(`dialogue/missions/${dialogue.id}.json`)) fail(`${dialogue.id}: missing individual dialogue file`);
+}
+for (const art of data.missionArtPackages) {
+  if(!missionIds.has(art.missionId)) fail(`${art.id}: invalid missionId ${art.missionId}`);
+  for (const field of ['mapEnvironmentPrompt','backgroundPrompt','enemyPlacementGuidance','bossArtworkRequirements','objectiveArtworkRequirements','vfxRequirements','uiRequirements','missionThumbnail','chapterArtwork']) if(!art[field] || (Array.isArray(art[field]) && !art[field].length)) fail(`${art.id}: missing art requirement ${field}`);
+  if(!exists(`art/mission-packages/${art.id}.json`)) fail(`${art.id}: missing individual art package file`);
+}
+const atenNormal = data.missions.filter(m => m.factionId === 'TG-FACTION-001' && m.campaignType === 'Normal');
+const atenElite = data.missions.filter(m => m.factionId === 'TG-FACTION-001' && m.campaignType === 'Elite');
+if(atenNormal.length !== 20 || atenElite.length !== 20) fail(`Aten Ra campaign incomplete: ${atenNormal.length} Normal, ${atenElite.length} Elite`);
+
 for (const art of data.artworks) {
   if(!/\.(png|jpe?g|webp)$/i.test(art.file || '')) fail(`${art.id}: invalid image extension`);
   if(!/^(art\/(imported|approved|concepts|reference)\/)/.test(art.file || '')) fail(`${art.id}: unsafe artwork path`);
@@ -136,4 +188,4 @@ if(!data.visualScreens.some(s => s.id === 'TG-SCREEN-TACTICAL-MAP-PROTOTYPE' && 
 const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','Game Preview','Visual QA','Tactical Map Prototype','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
 
-console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, githubSync:data.githubSyncStatus.status}, null, 2));
+console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status}, null, 2));
