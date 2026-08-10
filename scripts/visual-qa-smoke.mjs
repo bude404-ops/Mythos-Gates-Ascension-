@@ -71,7 +71,11 @@ if (!indexHtml.includes('#/art-import') || !indexHtml.includes('function artImpo
   console.error(JSON.stringify({ ok: false, artImportUiMissing: true }, null, 2));
   process.exit(1);
 }
-if (!indexHtml.includes('data-copy-prompt') || !indexHtml.includes('Click prompt to copy') || !indexHtml.includes('Art Map Prompts')) {
+if (!indexHtml.includes('mobileClipboardFallback') || !indexHtml.includes('data-mobile-copy') || !indexHtml.includes('touch-manipulation') || !indexHtml.includes('setSelectionRange(0, value.length)')) {
+  console.error(JSON.stringify({ ok: false, mobileClipboardHardeningMissing: true }, null, 2));
+  process.exit(1);
+}
+if (!indexHtml.includes('data-copy-prompt') || (!indexHtml.includes('Click prompt to copy') && !indexHtml.includes('Tap prompt to copy')) || !indexHtml.includes('Art Map Prompts')) {
   console.error(JSON.stringify({ ok: false, clickablePromptCopyMissing: true }, null, 2));
   process.exit(1);
 }
