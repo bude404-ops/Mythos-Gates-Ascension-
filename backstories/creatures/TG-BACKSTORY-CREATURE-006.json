@@ -1,0 +1,60 @@
+{
+  "id": "TG-BACKSTORY-CREATURE-006",
+  "entityId": "TG-CREATURE-006",
+  "entityType": "Creature",
+  "name": "Hollow Choirling",
+  "slug": "hollow-choirling",
+  "factionId": null,
+  "faction": "The Hollow",
+  "role": "Minor",
+  "rarity": "Hollow Creature",
+  "status": "Canon Backstory Ready",
+  "storyArcIds": [
+    "TG-STORY-ARC-001",
+    "TG-STORY-ARC-002"
+  ],
+  "campaignHooks": [
+    "The First Reopening",
+    "Storm-Oath Covenant",
+    "Hollow Breach Events"
+  ],
+  "loreTies": [
+    "A small mouthless choir-husk that hums erased prayers until Titan formation timing begins to slip.",
+    "Stays behind Wretches and applies silence pressure to isolated lanes.",
+    "Erasure is not death; erasure is ownership without memory."
+  ],
+  "shortBackstory": "Hollow Choirling is a Hollow threat creature built for campaign and event encounters, turning erased memory into minor battlefield pressure.",
+  "chapters": [
+    {
+      "title": "Origin",
+      "text": "Hollow Choirling formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+    },
+    {
+      "title": "Hollow Function",
+      "text": "Its role inside the Hollow threat faction is precise: Stays behind Wretches and applies silence pressure to isolated lanes. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+    },
+    {
+      "title": "Lore Tie",
+      "text": "A small mouthless choir-husk that hums erased prayers until Titan formation timing begins to slip."
+    },
+    {
+      "title": "Campaign Use",
+      "text": "Hollow Choirling can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+    },
+    {
+      "title": "Visual / Encounter Rule",
+      "text": "Art and gameplay must keep Hollow Choirling visibly non-playable. Its silhouette uses small bent humanoid with a smooth unfinished face, throat full of white fracture lines, ash ribbons floating from its shoulders. while its abilities \u2014 Silence Hymn, Formation Stutter \u2014 create battlefield pressure without confusing it for a faction Titan."
+    }
+  ],
+  "relationshipHooks": [
+    "Hollow threat pool",
+    "Event encounter library",
+    "Campaign enemy wave selection"
+  ],
+  "readableUnder": [
+    "Creatures",
+    "Character Backstories",
+    "Hollow Threat Faction"
+  ],
+  "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+}
