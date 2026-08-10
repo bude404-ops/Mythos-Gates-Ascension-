@@ -2,7 +2,8 @@ import playwright from '/usr/local/lib/node_modules/playwright/index.js';
 const { chromium } = playwright;
 const browser = await chromium.launch({ executablePath: '/usr/bin/chromium-browser', args: ['--no-sandbox','--disable-dev-shm-usage'] });
 const page = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
-await page.goto('http://127.0.0.1:8141/index.html?mobilecopy=063#/art?category=Map', { waitUntil: 'networkidle' });
+await page.goto('http://127.0.0.1:8141/index.html?mobilecopy=063#/art?category=Map', { waitUntil: 'domcontentloaded' });
+await page.waitForSelector('[data-art-prompt-card]', { timeout: 10000 });
 const cards = await page.locator('[data-art-prompt-card]').count();
 if (cards !== 12) throw new Error(`Expected 12 map prompt cards, saw ${cards}`);
 const controls = await page.locator('[data-mobile-copy]').count();
@@ -13,7 +14,7 @@ if (!box || box.height < 90 || box.width < 300) throw new Error(`Prompt touch ta
 const clickResult = await page.evaluate(async()=>{
   const btn=document.querySelector('[data-copy-prompt]');
   btn.click();
-  await new Promise(r=>setTimeout(r,150));
+  await new Promise(r=>setTimeout(r,250));
   return { toast: document.getElementById('toast')?.textContent || '', fallbackVisible: !document.getElementById('mobileClipboardFallback')?.classList.contains('hidden') };
 });
 if (!/prompt copied|fallback/i.test(clickResult.toast || '')) throw new Error(`Copy click feedback missing: ${JSON.stringify(clickResult)}`);
