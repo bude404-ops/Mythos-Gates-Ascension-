@@ -1,15 +1,15 @@
 {
   "id": "TG-GITHUB-SYNC-STATUS-001",
-  "status": "SYNCED",
-  "version": "0.6.5",
+  "status": "LOCAL_READY",
+  "version": "0.6.6",
   "previousStableVersion": "0.3.3",
-  "commit": "LIVE_REMOTE",
-  "commitMessage": "feat: add storm oath covenant campaign",
+  "commit": "LOCAL_COMMIT",
+  "commitMessage": "feat: add full character backstory codex",
   "branch": "main",
   "repository": "bude404-ops/Titans-Gate-",
-  "lastPushTime": "2026-08-10T23:13:57Z",
+  "lastPushTime": "2026-08-10T23:30:37Z",
   "build": "PASS",
-  "github": "SYNCED",
+  "github": "PENDING_CREDENTIAL",
   "deployment": "IGNORED_BY_REQUEST",
   "visualQa": "PASS",
   "mobileCheck": "PASS",
@@ -17,9 +17,10 @@
   "manualPushAvailable": true,
   "safeAuthentication": "Server-side token, GitHub Actions secret, GitHub App, or local secure environment variable only. Browser token use is forbidden.",
   "recentChanges": [
-    "Added Storm-Oath Covenant Asgardian story arc.",
-    "Added 20 Normal and 20 Elite Asgardian campaign missions.",
-    "Added mission dialogue, mission art packages, lore doc, storyline consequences, and dashboard route."
+    "Added full backstory registry for every Titan, NPC, and creature.",
+    "Linked all character records to readable backstory pages.",
+    "Added Character Backstories dashboard slot and detail route.",
+    "Local verification passed; GitHub upload pending full credential."
   ],
   "liveStatusSource": "Public GitHub API; no credentials in browser.",
   "syncError": "Pages workflow intentionally ignored by holder request; endgame architecture synced through repository content updates."
