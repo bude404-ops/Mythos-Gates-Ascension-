@@ -20,6 +20,7 @@ if (!['PASS', 'IN_PROGRESS'].includes(status.visualQa)) {
 const indexHtml = readFileSync('index.html', 'utf8');
 const dialogue = JSON.parse(readFileSync('data/dialogue-scripts.json', 'utf8'));
 const prompts = JSON.parse(readFileSync('data/art-prompts.json', 'utf8'));
+const generatedIndex = JSON.parse(readFileSync('data/index.json', 'utf8'));
 const missions = JSON.parse(readFileSync('data/mission-registry.json', 'utf8'));
 const missionDialogue = JSON.parse(readFileSync('data/mission-dialogue.json', 'utf8'));
 const missionArtPackages = JSON.parse(readFileSync('data/mission-art-packages.json', 'utf8'));
@@ -53,8 +54,16 @@ if (!indexHtml.includes('Campaign Architecture') || !indexHtml.includes('#/missi
   console.error(JSON.stringify({ ok: false, missionDashboardMissing: true }, null, 2));
   process.exit(1);
 }
+if ((generatedIndex.counts?.artMapPrompts || 0) !== prompts.filter(p => p.category === 'Map').length || !Array.isArray(generatedIndex.artMapPrompts) || generatedIndex.artMapPrompts.length < 12) {
+  console.error(JSON.stringify({ ok: false, artMapPromptsIndexed: false }, null, 2));
+  process.exit(1);
+}
 if (prompts.filter(p => p.category === 'Campaign').length < 7 || prompts.filter(p => p.category === 'Map').length < 12) {
   console.error(JSON.stringify({ ok: false, campaignPromptCoverageInvalid: true }, null, 2));
+  process.exit(1);
+}
+if (!indexHtml.includes('data-copy-prompt') || !indexHtml.includes('Click prompt to copy') || !indexHtml.includes('Art Map Prompts')) {
+  console.error(JSON.stringify({ ok: false, clickablePromptCopyMissing: true }, null, 2));
   process.exit(1);
 }
 if (!indexHtml.includes('artFilterTabs') || !indexHtml.includes('Campaign Art') || !indexHtml.includes('Map Art')) {
