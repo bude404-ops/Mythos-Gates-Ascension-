@@ -1,0 +1,60 @@
+{
+  "id": "TG-BACKSTORY-CREATURE-008",
+  "entityId": "TG-CREATURE-008",
+  "entityType": "Creature",
+  "name": "Hollow Oath-Eater",
+  "slug": "hollow-oath-eater",
+  "factionId": null,
+  "faction": "The Hollow",
+  "role": "Major",
+  "rarity": "Hollow Creature",
+  "status": "Canon Backstory Ready",
+  "storyArcIds": [
+    "TG-STORY-ARC-001",
+    "TG-STORY-ARC-002"
+  ],
+  "campaignHooks": [
+    "The First Reopening",
+    "Storm-Oath Covenant",
+    "Hollow Breach Events"
+  ],
+  "loreTies": [
+    "A Gateborn hunger that feeds on promises made under pressure, especially Asgardian vows and Empyrean edicts.",
+    "Punishes Titans that repeat the same objective action without support.",
+    "Erasure is not death; erasure is ownership without memory."
+  ],
+  "shortBackstory": "Hollow Oath-Eater is a Hollow threat creature built for campaign and event encounters, turning erased memory into major battlefield pressure.",
+  "chapters": [
+    {
+      "title": "Origin",
+      "text": "Hollow Oath-Eater formed where the Hollow learned a specific weakness in remembered civilization. It is not a Titan, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+    },
+    {
+      "title": "Hollow Function",
+      "text": "Its role inside the Hollow threat faction is precise: Punishes Titans that repeat the same objective action without support. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+    },
+    {
+      "title": "Lore Tie",
+      "text": "A Gateborn hunger that feeds on promises made under pressure, especially Asgardian vows and Empyrean edicts."
+    },
+    {
+      "title": "Campaign Use",
+      "text": "Hollow Oath-Eater can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+    },
+    {
+      "title": "Visual / Encounter Rule",
+      "text": "Art and gameplay must keep Hollow Oath-Eater visibly non-playable. Its silhouette uses heavy black beast-knight with ringed jaw, torn rune chains, oath-stone lodged in chest, white crack-teeth. while its abilities \u2014 Vow Bite, Break Resolve, Oath Drain \u2014 create battlefield pressure without confusing it for a faction Titan."
+    }
+  ],
+  "relationshipHooks": [
+    "Hollow threat pool",
+    "Event encounter library",
+    "Campaign enemy wave selection"
+  ],
+  "readableUnder": [
+    "Creatures",
+    "Character Backstories",
+    "Hollow Threat Faction"
+  ],
+  "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+}
