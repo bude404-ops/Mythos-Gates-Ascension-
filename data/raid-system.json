@@ -1,0 +1,34 @@
+{
+  "id": "TG-RAID-SYSTEM-001",
+  "standardSquadSize": 5,
+  "bosses": [
+    {
+      "id": "TG-RAID-BOSS-001",
+      "name": "The Gate Warden",
+      "phaseCount": 4,
+      "phases": [
+        "Defense",
+        "Aggression",
+        "Gate Destabilization",
+        "Enrage"
+      ],
+      "mechanics": [
+        "Shield windows",
+        "Hazard lanes",
+        "Weakness exposure",
+        "Enrage clock"
+      ],
+      "rewards": [
+        "raidCurrency",
+        "highTierTitanMaterials",
+        "bossCosmeticFragment"
+      ],
+      "artRequirements": [
+        "Massive Gate-linked boss silhouette",
+        "Elongated tactical raid arena",
+        "Phase VFX states",
+        "Boss thumbnail"
+      ]
+    }
+  ]
+}
