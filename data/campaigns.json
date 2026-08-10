@@ -1,0 +1,118 @@
+[
+  {
+    "id": "TG-CAMPAIGN-001",
+    "slug": "the-first-reopening",
+    "name": "The First Reopening",
+    "phase": "Act I",
+    "status": "Playable Scaffold",
+    "director": "Development Director",
+    "summary": "The first modern Titan Gate opens under impossible pressure. The Creator learns how Titans, Gates, Hollow leakage, and Director governance function.",
+    "loreDirectorNotes": "Introduces canon without adding playable Heroes or ordinary units. Mesha and the Hollow Mouth are non-playable narrative anchors.",
+    "gameplayDirectorNotes": "Designed as the onboarding campaign: 5-Titan selection, map objectives, enemy turns, and Gate sealing.",
+    "artDirectorNotes": "Needs approved artwork for the First Reopening Gate, Mesha, Hollow Wretch, and TG-TITAN-001.",
+    "developmentDirectorNotes": "Campaign can be expanded from current game/index.html without replacing the playable loop.",
+    "chapters": [
+      "TG-CHAPTER-001",
+      "TG-CHAPTER-002",
+      "TG-CHAPTER-003"
+    ],
+    "maps": [
+      "TG-MAP-001",
+      "TG-MAP-002"
+    ],
+    "npcs": [
+      "TG-NPC-001",
+      "TG-NPC-008"
+    ],
+    "creatures": [
+      "TG-CREATURE-001",
+      "TG-CREATURE-002"
+    ],
+    "recommendedNextTask": "Create chapter-select UI using campaign data."
+  },
+  {
+    "id": "TG-CAMPAIGN-002",
+    "slug": "trial-of-the-celestial-heights",
+    "name": "Trial of the Celestial Heights",
+    "phase": "Act II",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "summary": "Olympian and Asgardian laws collide over whether the reopened Gates should be treated as contests, oaths, or threats.",
+    "loreDirectorNotes": "Preserves faction separation by presenting allied objectives without implying free faction mixing.",
+    "gameplayDirectorNotes": "Adds environmental tests: storm lanes, arena platforms, and elite enemies.",
+    "artDirectorNotes": "Needs Storm-Oath Bridge, Marble Sky Arena, Hrodda, Lyrion, and Forgotten Standard Bearer art.",
+    "developmentDirectorNotes": "Requires map modifier support before becoming playable.",
+    "chapters": [
+      "TG-CHAPTER-004",
+      "TG-CHAPTER-005",
+      "TG-CHAPTER-006"
+    ],
+    "maps": [
+      "TG-MAP-003",
+      "TG-MAP-004"
+    ],
+    "npcs": [
+      "TG-NPC-002",
+      "TG-NPC-003",
+      "TG-NPC-006"
+    ],
+    "creatures": [
+      "TG-CREATURE-004"
+    ],
+    "recommendedNextTask": "Prototype map hazard modifiers."
+  },
+  {
+    "id": "TG-CAMPAIGN-003",
+    "slug": "roots-below-the-gate",
+    "name": "Roots Below the Gate",
+    "phase": "Act III",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "summary": "Avalora reveals that Gates wound living terrain. The campaign shifts from simple sealing to restoration under pressure.",
+    "loreDirectorNotes": "Defines living-map ethics without making the forest a generic nature backdrop.",
+    "gameplayDirectorNotes": "Adds terrain memory and root movement rules.",
+    "artDirectorNotes": "Needs Maeve Root-Memory and Moon-Grove Rootlabyrinth art.",
+    "developmentDirectorNotes": "Requires dynamic tile-state support.",
+    "chapters": [
+      "TG-CHAPTER-007",
+      "TG-CHAPTER-008"
+    ],
+    "maps": [
+      "TG-MAP-005"
+    ],
+    "npcs": [
+      "TG-NPC-005"
+    ],
+    "creatures": [
+      "TG-CREATURE-003"
+    ],
+    "recommendedNextTask": "Build terrain-state data schema."
+  },
+  {
+    "id": "TG-CAMPAIGN-004",
+    "slug": "cinders-of-dominion",
+    "name": "Cinders of Dominion",
+    "phase": "Act IV",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "summary": "The Infernal Dominion treats Gate wounds as opportunity. The Creator must navigate bargains, execution sigils, and power without confusing ambition for corruption.",
+    "loreDirectorNotes": "Keeps Infernal Dominion as a real civilization, not a generic evil faction.",
+    "gameplayDirectorNotes": "Introduces risk/reward bargains and execution marks.",
+    "artDirectorNotes": "Needs Vasha Cinder-Broker, Black Iron Court, and Infernal court asset prompts.",
+    "developmentDirectorNotes": "Requires campaign decision metadata.",
+    "chapters": [
+      "TG-CHAPTER-009",
+      "TG-CHAPTER-010"
+    ],
+    "maps": [
+      "TG-MAP-006"
+    ],
+    "npcs": [
+      "TG-NPC-007"
+    ],
+    "creatures": [
+      "TG-CREATURE-005"
+    ],
+    "recommendedNextTask": "Design choice consequence records."
+  }
+]
