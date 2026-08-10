@@ -45,7 +45,9 @@ const data = {
   missionArtPackages: read('data/mission-art-packages.json'),
   objectiveSystem: read('data/objective-system.json'),
   rewardSystem: read('data/reward-system.json'),
-  campaignAudit: read('data/campaign-audit.json')
+  campaignAudit: read('data/campaign-audit.json'),
+  storylineArcs: read('data/storyline-arc-registry.json'),
+  campaignConsequences: read('data/campaign-consequence-registry.json')
 };
 
 for (const [name, arr] of Object.entries(data)) {
@@ -69,6 +71,7 @@ const missionIds = new Set(data.missions.map(m => m.id));
 const missionDialogueIds = new Set(data.missionDialogue.map(d => d.id));
 const missionArtPackageIds = new Set(data.missionArtPackages.map(a => a.id));
 const campaignChapterIds = new Set(data.campaignChapters.map(c => c.id));
+const storylineArcIds = new Set(data.storylineArcs.map(s => s.id));
 
 if(data.factions.length !== 7) fail(`Expected 7 factions, found ${data.factions.length}`);
 if(data.titans.length !== 63) fail(`Expected 63 Titans, found ${data.titans.length}`);
@@ -160,6 +163,20 @@ for (const art of data.missionArtPackages) {
   for (const field of ['mapEnvironmentPrompt','backgroundPrompt','enemyPlacementGuidance','bossArtworkRequirements','objectiveArtworkRequirements','vfxRequirements','uiRequirements','missionThumbnail','chapterArtwork']) if(!art[field] || (Array.isArray(art[field]) && !art[field].length)) fail(`${art.id}: missing art requirement ${field}`);
   if(!exists(`art/mission-packages/${art.id}.json`)) fail(`${art.id}: missing individual art package file`);
 }
+for (const arc of data.storylineArcs) {
+  for (const id of arc.factionFocus || []) if(!factionIds.has(id)) fail(`${arc.id}: invalid faction focus ${id}`);
+  for (const id of arc.campaignIds || []) if(!campaignIds.has(id)) fail(`${arc.id}: invalid campaign ${id}`);
+  for (const id of arc.chapterIds || []) if(!campaignChapterIds.has(id)) fail(`${arc.id}: invalid campaign chapter ${id}`);
+  for (const id of [...(arc.normalMissionIds || []), ...(arc.eliteMissionIds || [])]) if(!missionIds.has(id)) fail(`${arc.id}: invalid mission ${id}`);
+}
+for (const consequence of data.campaignConsequences) {
+  if(!storylineArcIds.has(consequence.storyArcId)) fail(`${consequence.id}: invalid storyArcId ${consequence.storyArcId}`);
+  for (const field of ['trigger','effect','scope']) if(!consequence[field]) fail(`${consequence.id}: missing ${field}`);
+}
+const asgardNormal = data.missions.filter(m => m.factionId === 'TG-FACTION-002' && m.campaignType === 'Normal');
+const asgardElite = data.missions.filter(m => m.factionId === 'TG-FACTION-002' && m.campaignType === 'Elite');
+if(asgardNormal.length !== 20 || asgardElite.length !== 20) fail(`Asgardian campaign incomplete: ${asgardNormal.length} Normal, ${asgardElite.length} Elite`);
+
 const atenNormal = data.missions.filter(m => m.factionId === 'TG-FACTION-001' && m.campaignType === 'Normal');
 const atenElite = data.missions.filter(m => m.factionId === 'TG-FACTION-001' && m.campaignType === 'Elite');
 if(atenNormal.length !== 20 || atenElite.length !== 20) fail(`Aten Ra campaign incomplete: ${atenNormal.length} Normal, ${atenElite.length} Elite`);
