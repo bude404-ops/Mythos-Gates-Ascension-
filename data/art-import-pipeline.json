@@ -1,0 +1,50 @@
+{
+  "id": "TG-ART-IMPORT-PIPELINE-001",
+  "version": "0.6.2",
+  "status": "ACTIVE",
+  "purpose": "Import generated art into a local review queue, attach it to the correct entity/prompt, then export governed metadata for repository registration.",
+  "safeFolders": [
+    "art/imported",
+    "art/concepts",
+    "art/approved",
+    "art/reference"
+  ],
+  "acceptedExtensions": [
+    "png",
+    "jpg",
+    "jpeg",
+    "webp"
+  ],
+  "requiredFields": [
+    "id",
+    "entityId",
+    "promptId",
+    "entityName",
+    "category",
+    "status",
+    "type",
+    "file",
+    "version",
+    "created",
+    "source"
+  ],
+  "statuses": [
+    "Imported",
+    "Pending Review",
+    "Approved",
+    "Rejected",
+    "Needs Revision"
+  ],
+  "storagePolicy": "GitHub Pages cannot write repository files directly. The Dev Platform saves an operator-local import queue in browser storage and exports JSON records for data/artworks.json.",
+  "matchingRules": [
+    "Prefer promptId from selected prompt card",
+    "Entity ID must match a known prompt entity or Titan/faction/map record when possible",
+    "File extension must be PNG, JPG, JPEG, or WEBP",
+    "Generated metadata must use a safe art folder"
+  ],
+  "dashboardRoutes": [
+    "#/art-import",
+    "#/art?category=Map"
+  ],
+  "created": "2026-08-10"
+}
