@@ -1,15 +1,15 @@
 {
   "id": "TG-GITHUB-SYNC-STATUS-001",
   "status": "SYNC_ERROR",
-  "version": "0.3.3",
-  "previousStableVersion": "0.3.2",
+  "version": "0.3.4",
+  "previousStableVersion": "0.3.3",
   "commit": "LIVE_REMOTE",
-  "commitMessage": "feat: add automatic github sync and deployment status",
+  "commitMessage": "feat: add playable tactical map prototype",
   "branch": "main",
   "repository": "bude404-ops/Titans-Gate-",
-  "lastPushTime": "2026-08-10T18:14:08Z",
+  "lastPushTime": "2026-08-10T18:25:26Z",
   "build": "PASS",
-  "github": "SYNC_ERROR",
+  "github": "SYNCED",
   "deployment": "BLOCKED_WORKFLOW_PERMISSION",
   "visualQa": "PASS",
   "mobileCheck": "PASS",
@@ -17,10 +17,10 @@
   "manualPushAvailable": true,
   "safeAuthentication": "Server-side token, GitHub Actions secret, GitHub App, or local secure environment variable only. Browser token use is forbidden.",
   "recentChanges": [
-    "Most approved files pushed to GitHub.",
-    "GitHub Pages workflow file is still pending because the provided credential lacks workflow scope.",
-    "Deployment automation is blocked until a token with workflow permission or repository admin action is provided."
+    "Playable tactical map prototype added and prepared for GitHub sync.",
+    "Visual QA and build validation updated for tactical prototype.",
+    "Deployment workflow remains blocked until workflow permission is supplied."
   ],
   "liveStatusSource": "Public GitHub API; no credentials in browser.",
-  "syncError": "GitHub accepted project files but rejected .github/workflows/pages.yml because the credential lacks workflow scope. No credentials exposed."
+  "syncError": "Approved tactical prototype files are pushed to GitHub; deployment remains blocked because .github/workflows/pages.yml requires a workflow-scoped credential."
 }
