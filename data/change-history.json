@@ -5,14 +5,15 @@
     {
       "version": "0.3.3",
       "commit": "LIVE_REMOTE",
-      "status": "SYNCED",
+      "status": "SYNC_ERROR",
       "summary": "Added automatic GitHub sync, Pages deployment, status display, manual push backup, and source-of-truth policy.",
       "checks": [
         "Build passed",
         "Visual QA passed",
         "Mobile preview checked",
         "Secret scan passed",
-        "Fresh clone build required after push"
+        "Fresh clone build required after push",
+        "Workflow push blocked by token scope"
       ]
     },
     {
