@@ -8,14 +8,20 @@ const cards = await page.locator('[data-art-prompt-card]').count();
 if (cards !== 12) throw new Error(`Expected 12 map prompt cards, saw ${cards}`);
 const controls = await page.locator('[data-mobile-copy]').count();
 if (controls < 36) throw new Error(`Expected mobile copy controls, saw ${controls}`);
-const first = page.locator('[data-copy-prompt]').first();
-await first.scrollIntoViewIfNeeded();
-await page.waitForTimeout(100);
-const box = await first.boundingBox();
+const box = await page.evaluate(async()=>{
+  const btn=document.querySelector('[data-copy-prompt]');
+  if(!btn) return null;
+  btn.scrollIntoView({block:'center', inline:'nearest'});
+  await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
+  const r=btn.getBoundingClientRect();
+  return { x:r.x, y:r.y, width:r.width, height:r.height };
+});
 if (!box || box.height < 90 || box.width < 300) throw new Error(`Prompt touch target too small: ${JSON.stringify(box)}`);
 const clickResult = await page.evaluate(async()=>{
   const btn=document.querySelector('[data-copy-prompt]');
-  btn.scrollIntoView({block:'center'});
+  if(!btn) return { toast:'', missing:true, fallbackVisible:false };
+  btn.scrollIntoView({block:'center', inline:'nearest'});
+  await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
   btn.click();
   await new Promise(r=>setTimeout(r,250));
   return { toast: document.getElementById('toast')?.textContent || '', fallbackVisible: !document.getElementById('mobileClipboardFallback')?.classList.contains('hidden') };
