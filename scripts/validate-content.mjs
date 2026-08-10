@@ -34,6 +34,9 @@ const data = {
   realmCodex: read('data/realm-codex.json'),
   hybridVisualArchitecture: read('data/hybrid-visual-architecture.json'),
   assetPipeline: read('data/asset-pipeline.json'),
+  githubSyncPolicy: read('data/github-sync-policy.json'),
+  githubSyncStatus: read('data/github-sync-status.json'),
+  changeHistory: read('data/change-history.json'),
   index: read('data/index.json')
 };
 
@@ -130,4 +133,4 @@ if(!game.includes('OPEN THE TITAN GATE') || !game.includes('function enemyTurn')
 const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','Game Preview','Visual QA','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
 
-console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length}, null, 2));
+console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, githubSync:data.githubSyncStatus.status}, null, 2));
