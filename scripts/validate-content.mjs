@@ -31,6 +31,7 @@ const data = {
   visualScreens: read('data/visual-screens.json'),
   visualChangeRules: read('data/visual-change-rules.json'),
   visualBaselines: read('data/visual-baselines.json'),
+  realmCodex: read('data/realm-codex.json'),
   index: read('data/index.json')
 };
 
@@ -49,6 +50,7 @@ const mapIds = new Set(data.maps.map(m => m.id));
 const campaignIds = new Set(data.campaigns.map(c => c.id));
 const chapterIds = new Set(data.chapters.map(c => c.id));
 const visualScreenIds = new Set(data.visualScreens.map(s => s.id));
+const realmIds = new Set(data.realmCodex.map(r => r.id));
 
 if(data.factions.length !== 7) fail(`Expected 7 factions, found ${data.factions.length}`);
 if(data.titans.length !== 63) fail(`Expected 63 Titans, found ${data.titans.length}`);
@@ -125,4 +127,4 @@ if(!game.includes('OPEN THE TITAN GATE') || !game.includes('function enemyTurn')
 const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','Game Preview','Visual QA','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
 
-console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length}, null, 2));
+console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length}, null, 2));
