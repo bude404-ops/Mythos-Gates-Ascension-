@@ -120,5 +120,57 @@
       "data/creatures.json",
       "game/index.html"
     ]
+  },
+  {
+    "id": "TG-DEV-009",
+    "description": "Approve initial Visual QA baselines after Creator reviews preview screens.",
+    "director": "Development Director",
+    "priority": "High",
+    "status": "NEXT",
+    "dependencies": [
+      "data/visual-screens.json",
+      "game/preview.html"
+    ],
+    "relatedEntity": "TG-SCREEN-HOME",
+    "relatedFiles": [
+      "game/preview.html",
+      "data/visual-baselines.json",
+      "visual/README.md"
+    ]
+  },
+  {
+    "id": "TG-DEV-010",
+    "description": "Connect campaign select and chapter select in the playable game using campaign/map/creature data.",
+    "director": "Gameplay Director",
+    "priority": "High",
+    "status": "NEXT",
+    "dependencies": [
+      "data/campaigns.json",
+      "data/chapters.json",
+      "data/maps.json",
+      "data/creatures.json"
+    ],
+    "relatedEntity": "TG-CAMPAIGN-001",
+    "relatedFiles": [
+      "game/index.html",
+      "data/campaigns.json",
+      "data/chapters.json"
+    ]
+  },
+  {
+    "id": "TG-DEV-011",
+    "description": "Add real screenshot automation for Visual QA baselines once Pages workflow credentials are available.",
+    "director": "Development Director",
+    "priority": "Medium",
+    "status": "NEXT",
+    "dependencies": [
+      "game/preview.html",
+      "visual/README.md"
+    ],
+    "relatedEntity": "TG-SCREEN-HOME",
+    "relatedFiles": [
+      "scripts/validate-content.mjs",
+      "visual/README.md"
+    ]
   }
 ]
