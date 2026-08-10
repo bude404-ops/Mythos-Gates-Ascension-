@@ -8,6 +8,7 @@ const generated = new Date().toISOString().slice(0,10);
 const files = {
   'project.json': 'project',
   'factions.json': 'factions',
+  'hollow-faction.json': 'hollowThreatFaction',
   'titans.json': 'titans',
   'characters.json': 'characters',
   'units.json': 'units',
@@ -18,6 +19,7 @@ const files = {
   'lore-index.json': 'loreEntries',
   'npcs.json': 'npcs',
   'creatures.json': 'creatures',
+  'hollow-encounter-system.json': 'hollowEncounterSystem',
   'character-backstories.json': 'characterBackstories',
   'maps.json': 'maps',
   'campaigns.json': 'campaigns',
