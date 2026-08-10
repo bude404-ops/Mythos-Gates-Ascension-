@@ -133,3 +133,7 @@ Radiant, formal, restrained. Her compassion is structured; her fear is quiet.
 **Vault Warden:** "Mercy variable removed. Preservation purity restored."
 
 **Celiane:** "No. Preservation that cannot recognize the living has become another Collapse."
+
+## Mission Dialogue Expansion
+
+The first production expansion adds mission intro, mid-battle pressure, low-health warning, victory, defeat, and post-mission consequence beats for every current chapter. These beats are stored as structured dialogue data for UI and scripting use.
