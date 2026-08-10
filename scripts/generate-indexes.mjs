@@ -18,6 +18,7 @@ const files = {
   'lore-index.json': 'loreEntries',
   'npcs.json': 'npcs',
   'creatures.json': 'creatures',
+  'character-backstories.json': 'characterBackstories',
   'maps.json': 'maps',
   'campaigns.json': 'campaigns',
   'chapters.json': 'chapters',
