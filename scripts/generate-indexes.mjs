@@ -37,8 +37,21 @@ const files = {
   'mission-art-packages.json': 'missionArtPackages',
   'objective-system.json': 'objectiveSystem',
   'reward-system.json': 'rewardSystem',
-  'campaign-audit.json': 'campaignAudit'
-}
+  'campaign-audit.json': 'campaignAudit',
+  'endgame-architecture.json': 'endgameArchitecture',
+  'squad-system.json': 'squadSystem',
+  'progression-system.json': 'progressionSystem',
+  'ascension-system.json': 'ascensionSystem',
+  'async-arena-system.json': 'asyncArenaSystem',
+  'weekly-trials.json': 'weeklyTrials',
+  'raid-system.json': 'raidSystem',
+  'faction-mastery.json': 'factionMastery',
+  'season-system.json': 'seasonSystem',
+  'achievement-system.json': 'achievementSystem',
+  'balance-analytics.json': 'balanceAnalytics',
+  'endgame-dashboard.json': 'endgameDashboard',
+  'monetization-policy.json': 'monetizationPolicy'
+};
 const counts = {};
 for (const [file, key] of Object.entries(files)) {
   const value = read(`data/${file}`);
