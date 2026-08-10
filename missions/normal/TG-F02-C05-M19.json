@@ -1,0 +1,101 @@
+{
+  "id": "TG-F02-C05-M19",
+  "factionId": "TG-FACTION-002",
+  "campaignId": "TG-F02-CAMPAIGN-NORMAL",
+  "campaignType": "Normal",
+  "chapter": 5,
+  "chapterTitle": "Thunder Gate Covenant",
+  "missionNumber": 19,
+  "missionInChapter": 3,
+  "title": "The Thunder Gate Opens Back",
+  "description": "Thunder Gate Covenant: The Thunder Gate Opens Back unfolds across high storm gate dais of rune-iron ribs, cracked oath monoliths, hanging war chains, and cloudlit abyss edges, pushing the 5-Titan Asgardian squad to convert endurance into decisive counterpressure.",
+  "lore": "The Thunder Gate Opens Back advances the Storm-Oath Covenant arc: the Gate tries to harvest Asgardian vows, while Valhalla law insists courage must remain chosen responsibility.",
+  "recommendedPower": 752,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "frontline oath guardian",
+    "storm counterstriker",
+    "objective anchor",
+    "mobile rescuer",
+    "rune support"
+  ],
+  "mapId": "TG-MAP-003",
+  "terrain": "high storm gate dais of rune-iron ribs, cracked oath monoliths, hanging war chains, and cloudlit abyss edges",
+  "objectives": {
+    "primary": "Bind the Thunder Gate covenant and survive the counterpulse.",
+    "optional": [
+      "Complete before turn 10",
+      "Keep at least four Titans standing",
+      "Trigger at least two Oathbound counterattacks"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-004",
+        "TG-CREATURE-001"
+      ],
+      "entry": "emerge from storm-shadowed bridge ribs"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-002"
+      ],
+      "entry": "reinforcement from oath-scar high ground",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": {
+    "enemyId": "TG-CREATURE-004",
+    "phaseCount": 2,
+    "notes": "Boss pressure tied to banner command and broken-oath memory."
+  },
+  "turnLimit": 15,
+  "specialRules": [
+    "Covenant Stand: the squad can bind damage together, but poor spacing turns shared courage into shared risk.",
+    "Oathbound: surviving damage strengthens the next committed strike.",
+    "5-Titan standard squad"
+  ],
+  "victoryConditions": [
+    "Bind the Thunder Gate covenant and survive the counterpulse."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Mid-tier oath iron",
+      "Asgardian faction shard cache",
+      "Storm rune upgrade dust",
+      "TG-F02-C05-M19 codex shard"
+    ],
+    "replay": [
+      "Oath iron",
+      "Storm rune upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F02-CODEX-19"
+  ],
+  "artPackageId": "TG-F02-ART-C05-M19",
+  "dialogueId": "TG-F02-DLG-C05-M19",
+  "audioRequirements": [
+    "low thunder bed",
+    "iron impact cue",
+    "oath rune resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+}
