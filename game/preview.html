@@ -31,6 +31,14 @@
           <p class="text-xs font-black uppercase tracking-[.24em] text-primary">Responsive Test</p>
           <div id="deviceButtons" class="mt-3 grid grid-cols-3 gap-2"></div>
         </div>
+        <div>
+          <p class="text-xs font-black uppercase tracking-[.24em] text-primary">Hybrid Visual Test</p>
+          <div class="mt-3 grid gap-2">
+            <button data-quick-screen="campaign" class="rounded-2lg border border-amber-700 bg-amber-950/40 px-3 py-3 font-black text-amber-300">Preview Campaign</button>
+            <button data-quick-screen="battle" class="rounded-2lg border border-amber-700 bg-amber-950/40 px-3 py-3 font-black text-amber-300">Preview Battle</button>
+            <button data-quick-screen="full-flow" class="rounded-2lg bg-primary px-3 py-3 font-black text-white">Preview Full Flow</button>
+          </div>
+        </div>
         <div class="grid grid-cols-2 gap-2">
           <button id="devToggle" class="rounded-2lg bg-primary px-3 py-3 font-black text-white">DEV VIEW</button>
           <button id="playerToggle" class="rounded-2lg border border-neutral-700 bg-neutral-800 px-3 py-3 font-black text-neutral-200">PLAYER VIEW</button>
@@ -111,6 +119,7 @@
       $('changeSelect').value = state.changeType;
       document.querySelectorAll('[data-screen]').forEach(b => b.onclick = () => { state.screen=b.dataset.screen; render(); });
       document.querySelectorAll('[data-device]').forEach(b => b.onclick = () => { state.device=b.dataset.device; render(); });
+      document.querySelectorAll('[data-quick-screen]').forEach(b => b.onclick = () => { state.screen=b.dataset.quickScreen; render(); });
     }
     function render(){
       hydrateControls();
