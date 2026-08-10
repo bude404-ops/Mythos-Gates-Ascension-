@@ -92,5 +92,52 @@
     ],
     "director": "Development Director",
     "id": "TG-VIS-RULE-008"
+  },
+  {
+    "id": "TG-VIS-RULE-009",
+    "changeType": "hybrid-visual-architecture",
+    "label": "Hybrid 2D/3D visual architecture changed",
+    "affectedScreens": [
+      "TG-VIS-SCREEN-006",
+      "TG-VIS-SCREEN-007",
+      "TG-VIS-SCREEN-014"
+    ],
+    "reason": "Changing sprite/environment rules affects campaign maps, tactical battlefields, and full flow previews.",
+    "requiredDirectorReview": [
+      "Art Director",
+      "Gameplay Director",
+      "Development Director"
+    ]
+  },
+  {
+    "id": "TG-VIS-RULE-010",
+    "changeType": "campaign-environment",
+    "label": "3D campaign environment changed",
+    "affectedScreens": [
+      "TG-VIS-SCREEN-006",
+      "TG-VIS-SCREEN-014"
+    ],
+    "reason": "Changing Realm terrain, Gates, path nodes, or camera affects Campaign and Full Flow visual testing.",
+    "requiredDirectorReview": [
+      "Art Director",
+      "Lore Director",
+      "Development Director"
+    ]
+  },
+  {
+    "id": "TG-VIS-RULE-011",
+    "changeType": "sprite-combatant",
+    "label": "2D battle sprite changed",
+    "affectedScreens": [
+      "TG-VIS-SCREEN-003",
+      "TG-VIS-SCREEN-004",
+      "TG-VIS-SCREEN-007",
+      "TG-VIS-SCREEN-014"
+    ],
+    "reason": "Changing combatant sprites affects selection, profiles, battle grounding, and full flow readability.",
+    "requiredDirectorReview": [
+      "Art Director",
+      "Gameplay Director"
+    ]
   }
 ]
