@@ -1,0 +1,240 @@
+[
+  {
+    "id": "TG-SCREEN-HOME",
+    "slug": "home",
+    "name": "Home",
+    "status": "PASS",
+    "director": "Development Director",
+    "lastTestedBuild": "0.2.0",
+    "lastApprovedBuild": "0.2.0",
+    "warnings": [],
+    "errors": [],
+    "affectedBy": [
+      "project",
+      "ui",
+      "build"
+    ],
+    "description": "Opening screen and primary game menu."
+  },
+  {
+    "id": "TG-SCREEN-PROFILE",
+    "slug": "profile",
+    "name": "Profile",
+    "status": "NOT TESTED",
+    "director": "Development Director",
+    "lastTestedBuild": "0.2.0",
+    "lastApprovedBuild": null,
+    "warnings": [
+      "Player profile is scaffolded until account/progression systems exist."
+    ],
+    "errors": [],
+    "affectedBy": [
+      "profile",
+      "progression"
+    ],
+    "description": "Player progression/profile preview screen."
+  },
+  {
+    "id": "TG-SCREEN-TITAN-SELECTION",
+    "slug": "titan-selection",
+    "name": "Titan Selection",
+    "status": "PASS",
+    "director": "Gameplay Director",
+    "lastTestedBuild": "0.2.0",
+    "lastApprovedBuild": "0.2.0",
+    "warnings": [],
+    "errors": [],
+    "affectedBy": [
+      "titan",
+      "artwork",
+      "faction",
+      "ability",
+      "ui"
+    ],
+    "description": "Five-Titan strike force selection using current Titan records."
+  },
+  {
+    "id": "TG-SCREEN-TITAN-PROFILE",
+    "slug": "titan-profile",
+    "name": "Titan Profile",
+    "status": "WARNING",
+    "director": "Art Director",
+    "lastTestedBuild": "0.2.0",
+    "lastApprovedBuild": null,
+    "warnings": [
+      "Most Titan artwork is prompt-ready but not approved, so placeholder panels appear."
+    ],
+    "errors": [],
+    "affectedBy": [
+      "titan",
+      "artwork",
+      "ability",
+      "lore"
+    ],
+    "description": "Detailed Titan data, abilities, stats, prompt, lore, and artwork context."
+  },
+  {
+    "id": "TG-SCREEN-CHARACTER-PROFILE",
+    "slug": "character-profile",
+    "name": "Character Profile",
+    "status": "PASS",
+    "director": "Lore Director",
+    "lastTestedBuild": "0.2.0",
+    "lastApprovedBuild": "0.2.0",
+    "warnings": [
+      "Only non-playable campaign NPC records are shown by canon lock."
+    ],
+    "errors": [],
+    "affectedBy": [
+      "npc",
+      "lore",
+      "artwork"
+    ],
+    "description": "NPC profile view for campaign support characters."
+  },
+  {
+    "id": "TG-SCREEN-FACTION",
+    "slug": "faction",
+    "name": "Faction",
+    "status": "PASS",
+    "director": "Lore Director",
+    "lastTestedBuild": "0.2.0",
+    "lastApprovedBuild": "0.2.0",
+    "warnings": [],
+    "errors": [],
+    "affectedBy": [
+      "faction",
+      "titan",
+      "npc",
+      "artwork"
+    ],
+    "description": "Faction identity, culture, passive, visual rules, and associated Titans/NPCs."
+  },
+  {
+    "id": "TG-SCREEN-CAMPAIGN",
+    "slug": "campaign",
+    "name": "Campaign",
+    "status": "PASS",
+    "director": "Gameplay Director",
+    "lastTestedBuild": "0.2.0",
+    "lastApprovedBuild": "0.2.0",
+    "warnings": [],
+    "errors": [],
+    "affectedBy": [
+      "campaign",
+      "chapter",
+      "map",
+      "npc",
+      "creature"
+    ],
+    "description": "Campaign and chapter browser with maps, objectives, and threats."
+  },
+  {
+    "id": "TG-SCREEN-BATTLE",
+    "slug": "battle",
+    "name": "Battle",
+    "status": "WARNING",
+    "director": "Gameplay Director",
+    "lastTestedBuild": "0.2.0",
+    "lastApprovedBuild": null,
+    "warnings": [
+      "Battle preview uses the current first playable loop and data-informed battlefield context; advanced campaign loading is still in development."
+    ],
+    "errors": [],
+    "affectedBy": [
+      "battle",
+      "creature",
+      "map",
+      "ability",
+      "ui"
+    ],
+    "description": "Current combat interface and tactical battle preview."
+  },
+  {
+    "id": "TG-SCREEN-VICTORY",
+    "slug": "victory",
+    "name": "Victory",
+    "status": "PASS",
+    "director": "Gameplay Director",
+    "lastTestedBuild": "0.2.0",
+    "lastApprovedBuild": "0.2.0",
+    "warnings": [],
+    "errors": [],
+    "affectedBy": [
+      "battle",
+      "reward",
+      "ui"
+    ],
+    "description": "Victory/reward state preview."
+  },
+  {
+    "id": "TG-SCREEN-DEFEAT",
+    "slug": "defeat",
+    "name": "Defeat",
+    "status": "PASS",
+    "director": "Gameplay Director",
+    "lastTestedBuild": "0.2.0",
+    "lastApprovedBuild": "0.2.0",
+    "warnings": [],
+    "errors": [],
+    "affectedBy": [
+      "battle",
+      "ui"
+    ],
+    "description": "Defeat/retry state preview."
+  },
+  {
+    "id": "TG-SCREEN-CODEX",
+    "slug": "codex",
+    "name": "Codex",
+    "status": "PASS",
+    "director": "Lore Director",
+    "lastTestedBuild": "0.2.0",
+    "lastApprovedBuild": "0.2.0",
+    "warnings": [],
+    "errors": [],
+    "affectedBy": [
+      "lore",
+      "faction",
+      "titan",
+      "npc",
+      "campaign"
+    ],
+    "description": "Canon Codex index and lore entry presentation."
+  },
+  {
+    "id": "TG-SCREEN-SETTINGS",
+    "slug": "settings",
+    "name": "Settings",
+    "status": "NOT TESTED",
+    "director": "Development Director",
+    "lastTestedBuild": "0.2.0",
+    "lastApprovedBuild": null,
+    "warnings": [
+      "Settings are preview-only until save options are implemented."
+    ],
+    "errors": [],
+    "affectedBy": [
+      "settings",
+      "ui"
+    ],
+    "description": "Audio, display, accessibility, and build information screen."
+  },
+  {
+    "id": "TG-SCREEN-LOADING",
+    "slug": "loading",
+    "name": "Loading",
+    "status": "PASS",
+    "director": "Development Director",
+    "lastTestedBuild": "0.2.0",
+    "lastApprovedBuild": "0.2.0",
+    "warnings": [],
+    "errors": [],
+    "affectedBy": [
+      "build",
+      "performance",
+      "ui"
+    ],
+    "description": "Loading screen and build handoff state."
+  }
+]
