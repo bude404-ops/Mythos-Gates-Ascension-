@@ -1,0 +1,249 @@
+{
+  "id": "TG-VISUAL-ARCH-001",
+  "title": "Hybrid 2D Sprite + 3D Campaign Visual Architecture",
+  "director": "Development Director",
+  "status": "Canon Locked",
+  "updated": "2026-08-10",
+  "nonNegotiables": [
+    "Player Titans, player characters, enemy characters, enemy Titans, units, and combatants are 2D sprites.",
+    "Campaign maps, Realms, exploration spaces, gates, major locations, and tactical environments are 3D environments.",
+    "Do not convert battlefield characters into 3D models because the environment is 3D.",
+    "Do not introduce spaceships or sci-fi spacecraft; Realm travel remains Gate-based.",
+    "Preview and Visual QA must show sprites and environments together before approval."
+  ],
+  "visualLayers": [
+    {
+      "id": "TG-VIS-LAYER-2D-SPRITE",
+      "name": "2D Sprites",
+      "purpose": "Character identity, tactical readability, faction recognition, combat clarity",
+      "usedFor": [
+        "Player Titans",
+        "Player characters",
+        "Enemy characters",
+        "Enemy Titans",
+        "Battlefield units",
+        "Combatants"
+      ],
+      "mustNotBeUsedFor": [
+        "Campaign terrain",
+        "Realm exploration environments",
+        "Gate landmarks"
+      ]
+    },
+    {
+      "id": "TG-VIS-LAYER-3D-ENV",
+      "name": "3D Environments",
+      "purpose": "World scale, atmospheric depth, exploration, campaign progression, Realm identity",
+      "usedFor": [
+        "Campaign maps",
+        "Realms",
+        "Locations",
+        "Exploration environments",
+        "Tactical battle environments",
+        "Gate landmarks"
+      ],
+      "mustNotBeUsedFor": [
+        "Playable Titan sprite replacement",
+        "NPC portrait replacement",
+        "Combatant identity art"
+      ]
+    },
+    {
+      "id": "TG-VIS-LAYER-PORTRAIT",
+      "name": "2D Portraits",
+      "purpose": "Profile identity, Codex presentation, emotional read, dialogue scenes",
+      "usedFor": [
+        "Titan profiles",
+        "NPC profiles",
+        "Codex cards",
+        "Dialogue panels"
+      ],
+      "mustNotBeUsedFor": [
+        "Tactical environment geometry"
+      ]
+    },
+    {
+      "id": "TG-VIS-LAYER-CINEMATIC",
+      "name": "Cinematic Art",
+      "purpose": "Major story beats, chapter reveals, faction presentation moments",
+      "usedFor": [
+        "Campaign intros",
+        "Boss reveals",
+        "Realm splash screens",
+        "Victory/defeat story beats"
+      ],
+      "mustNotBeUsedFor": [
+        "Reusable tactical positioning sprites"
+      ]
+    }
+  ],
+  "campaignMap": {
+    "id": "TG-CAMPAIGN-MAP-ARCH-001",
+    "format": "Elongated 3D journey environment",
+    "camera": "Controlled mobile third-person / diorama camera",
+    "pathModel": [
+      "Start",
+      "Encounter",
+      "Battle",
+      "Event",
+      "Elite Battle",
+      "Treasure / Reward",
+      "Boss",
+      "Next Region"
+    ],
+    "requirements": [
+      "The path physically exists in the 3D Realm environment.",
+      "Distance, direction, terrain, landmarks, Gates, battles, boss encounters, and progression must be visible.",
+      "Campaign sections load in manageable regions rather than loading the entire world.",
+      "Gate landmarks act as transitions, objectives, and Realm travel anchors."
+    ],
+    "mobileCameraRules": [
+      "Slightly elevated perspective",
+      "Clear path visibility",
+      "Limited unnecessary rotation",
+      "Cinematic framing without hiding nodes",
+      "No complicated open-world camera unless gameplay requires it"
+    ]
+  },
+  "battlefield": {
+    "id": "TG-BATTLEFIELD-HYBRID-001",
+    "format": "3D tactical battlefield with 2D combatant sprites",
+    "requirements": [
+      "2D sprites must have ground/contact shadows.",
+      "Sprites must align with tile/grid positioning and perspective.",
+      "Selection circles and movement indicators must ground sprites in the 3D space.",
+      "Terrain should not hide key sprites at mobile camera angles.",
+      "Titan scale may be larger than normal characters, but must remain consistent and intentional."
+    ],
+    "transitionFlow": [
+      "3D Campaign Map",
+      "Encounter reached",
+      "Location reveal camera push",
+      "Battle initialization",
+      "3D tactical environment loads",
+      "2D sprites appear",
+      "Combat begins",
+      "Victory/reward",
+      "Return to 3D campaign map"
+    ]
+  },
+  "assetDirectories": {
+    "spritesTitans": "art/sprites/titans/",
+    "spritesCharacters": "art/sprites/characters/",
+    "spritesEnemies": "art/sprites/enemies/",
+    "threeDRealms": "art/3d/realms/",
+    "threeDCampaign": "art/3d/campaign/",
+    "threeDBattlefields": "art/3d/battlefields/",
+    "threeDLocations": "art/3d/locations/",
+    "threeDGates": "art/3d/gates/",
+    "threeDEnvironment": "art/3d/environment/",
+    "portraits": "art/portraits/",
+    "cinematic": "art/cinematic/"
+  },
+  "assetTypes": [
+    {
+      "type": "SPRITE",
+      "layer": "2D",
+      "definition": "2D battlefield combatant image",
+      "allowedContexts": [
+        "Battle",
+        "Titan Selection miniature",
+        "Combat preview"
+      ],
+      "blockedContexts": [
+        "3D terrain mesh",
+        "Realm map geometry"
+      ]
+    },
+    {
+      "type": "PORTRAIT",
+      "layer": "2D",
+      "definition": "Profile and dialogue presentation art",
+      "allowedContexts": [
+        "Titan Profile",
+        "NPC Profile",
+        "Codex",
+        "Dialogue"
+      ],
+      "blockedContexts": [
+        "Tile/grid combatant if no sprite exists unless temporary placeholder is clearly marked"
+      ]
+    },
+    {
+      "type": "CINEMATIC",
+      "layer": "2D",
+      "definition": "Large story/presentation artwork",
+      "allowedContexts": [
+        "Campaign intro",
+        "Boss reveal",
+        "Victory/defeat story"
+      ],
+      "blockedContexts": [
+        "Reusable tactical sprite"
+      ]
+    },
+    {
+      "type": "ENVIRONMENT",
+      "layer": "3D",
+      "definition": "Realm/world/tactical environmental model or scene",
+      "allowedContexts": [
+        "Campaign",
+        "Battlefield",
+        "Realm Preview"
+      ],
+      "blockedContexts": [
+        "Combatant sprite replacement"
+      ]
+    },
+    {
+      "type": "LOCATION",
+      "layer": "3D",
+      "definition": "Campaign destination or encounter space",
+      "allowedContexts": [
+        "Campaign node",
+        "Location reveal",
+        "Quest scene"
+      ],
+      "blockedContexts": [
+        "Character identity art"
+      ]
+    },
+    {
+      "type": "GATE",
+      "layer": "3D",
+      "definition": "Dimensional travel landmark and objective object",
+      "allowedContexts": [
+        "Realm transition",
+        "Campaign objective",
+        "Story location"
+      ],
+      "blockedContexts": [
+        "Spaceship replacement or sci-fi vehicle"
+      ]
+    }
+  ],
+  "visualQaChecks": [
+    "Sprite readability",
+    "Sprite scale",
+    "Sprite grounding/contact shadows",
+    "3D environment performance",
+    "Camera framing",
+    "Terrain visibility",
+    "UI visibility",
+    "Mobile performance",
+    "Asset loading",
+    "Lighting",
+    "Map navigation",
+    "Campaign path clarity",
+    "Gate landmark visibility",
+    "Battle transition continuity"
+  ],
+  "performanceRules": [
+    "Use optimized meshes and texture compression.",
+    "Divide elongated campaign maps into manageable regions.",
+    "Stream or load only the current campaign section where possible.",
+    "Use level-of-detail systems for large Realm environments.",
+    "Use efficient lighting and limited unnecessary geometry.",
+    "Flag oversized 3D assets and oversized sprites before approval."
+  ]
+}
