@@ -41,6 +41,16 @@ titan-gates-dev-platform.html
 
 It contains the canon tools, lore clipboard, Director Command Center, and release-candidate change ledger.
 
+## Lore Codex
+
+The game canon now lives in:
+
+```text
+docs/lore/README.md
+```
+
+The codex includes canon locks, the full game lore, Titan Gates, Realms, Titans, campaign threats, timeline, glossary, and the art/tone bible.
+
 ## Canon direction
 
 Titans Gate is a Titan-only mythological tactical RPG built around extradimensional Realms, Titan Gates, the Ascension Collapse, and colossal Titans shaped by their civilizations.
