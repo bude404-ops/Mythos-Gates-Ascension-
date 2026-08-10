@@ -70,5 +70,55 @@
     "relatedFiles": [
       ".github/workflows/pages.yml"
     ]
+  },
+  {
+    "id": "TG-DEV-006",
+    "description": "Create campaign chapter-select UI using TG-CAMPAIGN and TG-CHAPTER data.",
+    "director": "Development Director",
+    "priority": "High",
+    "status": "NEXT",
+    "dependencies": [
+      "data/campaigns.json",
+      "data/chapters.json"
+    ],
+    "relatedEntity": "TG-CAMPAIGN-001",
+    "relatedFiles": [
+      "index.html",
+      "game/index.html",
+      "data/campaigns.json",
+      "data/chapters.json"
+    ]
+  },
+  {
+    "id": "TG-DEV-007",
+    "description": "Approve art for Mesha Gate-Scribe and The First Reopening Gate.",
+    "director": "Art Director",
+    "priority": "High",
+    "status": "NEXT",
+    "dependencies": [
+      "TG-PROMPT-NPC-001",
+      "TG-PROMPT-MAP-001"
+    ],
+    "relatedEntity": "TG-NPC-001",
+    "relatedFiles": [
+      "art/prompts/TG-PROMPT-NPC-001.json",
+      "art/prompts/TG-PROMPT-MAP-001.json"
+    ]
+  },
+  {
+    "id": "TG-DEV-008",
+    "description": "Prototype creature behavior records for Hollow Wretch and Gateborn Colossus in the playable battle loop.",
+    "director": "Gameplay Director",
+    "priority": "Medium",
+    "status": "NEXT",
+    "dependencies": [
+      "data/creatures.json",
+      "game/index.html"
+    ],
+    "relatedEntity": "TG-CREATURE-001",
+    "relatedFiles": [
+      "data/creatures.json",
+      "game/index.html"
+    ]
   }
 ]
