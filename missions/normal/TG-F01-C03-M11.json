@@ -1,0 +1,91 @@
+{
+  "id": "TG-F01-C03-M11",
+  "factionId": "TG-FACTION-001",
+  "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+  "campaignType": "Normal",
+  "chapter": 3,
+  "chapterTitle": "Realm Conflict",
+  "missionNumber": 11,
+  "missionInChapter": 3,
+  "title": "The Pylon Choir Falls Silent",
+  "description": "Aten Ra advances through floodplain mirrors, collapsing bridges, and corrupted river channels while the Gate tests whether solar law can hold under pressure.",
+  "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+  "recommendedPower": 485,
+  "teamSize": 3,
+  "encouragedTitanRoles": [
+    "support guardian",
+    "mobile striker",
+    "objective holder"
+  ],
+  "mapId": "TG-MAP-007",
+  "terrain": "floodplain mirrors, collapsing bridges, and corrupted river channels",
+  "objectives": {
+    "primary": "Hold two sun markers at the end of the same round.",
+    "optional": [
+      "Complete before turn 8",
+      "Keep all three Titans standing",
+      "Trigger at least two faction synergy actions"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-002",
+        "TG-CREATURE-003"
+      ],
+      "entry": "deployed at opposing gate markers"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-003",
+        "TG-CREATURE-004"
+      ],
+      "entry": "reinforcement from shadowed lane",
+      "trigger": "turn 3 or primary objective touched"
+    }
+  ],
+  "boss": null,
+  "turnLimit": null,
+  "specialRules": [
+    "Mirror Orders: enemies copy the last objective interaction unless interrupted.",
+    "Anchor Corruption: structures worsen hazards every two turns."
+  ],
+  "victoryConditions": [
+    "Hold two sun markers at the end of the same round."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Protected objective is destroyed"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Solar upgrade dust",
+      "Faction shard cache",
+      "Low-tier gear component",
+      "Aten Ra mission 11 codex shard"
+    ],
+    "replay": [
+      "Solar upgrade dust",
+      "Faction shard cache",
+      "Low-tier gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed with one Titan standing or severe turn pressure"
+    }
+  },
+  "codexUnlocks": [],
+  "artPackageId": "TG-F01-ART-C03-M11",
+  "dialogueId": "TG-F01-DLG-C03-M11",
+  "audioRequirements": [
+    "low temple pulse",
+    "sunflare impact cue",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed"
+}
