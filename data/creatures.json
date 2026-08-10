@@ -19,7 +19,17 @@
     "artStatus": "Prompt Ready",
     "artPromptId": "TG-PROMPT-CREATURE-001",
     "artworkId": null,
-    "backstoryId": "TG-BACKSTORY-CREATURE-001"
+    "backstoryId": "TG-BACKSTORY-CREATURE-001",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "encounterTags": [
+      "hollow",
+      "general"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event"
+    ]
   },
   {
     "id": "TG-CREATURE-002",
@@ -42,7 +52,17 @@
     "artStatus": "Prompt Ready",
     "artPromptId": "TG-PROMPT-CREATURE-002",
     "artworkId": null,
-    "backstoryId": "TG-BACKSTORY-CREATURE-002"
+    "backstoryId": "TG-BACKSTORY-CREATURE-002",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "encounterTags": [
+      "hollow",
+      "general"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event"
+    ]
   },
   {
     "id": "TG-CREATURE-003",
@@ -88,7 +108,17 @@
     "artStatus": "Prompt Ready",
     "artPromptId": "TG-PROMPT-CREATURE-004",
     "artworkId": null,
-    "backstoryId": "TG-BACKSTORY-CREATURE-004"
+    "backstoryId": "TG-BACKSTORY-CREATURE-004",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "encounterTags": [
+      "hollow",
+      "general"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event"
+    ]
   },
   {
     "id": "TG-CREATURE-005",
@@ -112,5 +142,468 @@
     "artPromptId": "TG-PROMPT-CREATURE-005",
     "artworkId": null,
     "backstoryId": "TG-BACKSTORY-CREATURE-005"
+  },
+  {
+    "id": "TG-CREATURE-006",
+    "slug": "hollow-choirling",
+    "name": "Hollow Choirling",
+    "category": "Hollow Creature",
+    "realm": "Hollow",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Minor",
+    "status": "Gameplay Ready",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A small mouthless choir-husk that hums erased prayers until Titan formation timing begins to slip.",
+    "visualDescription": "Small bent humanoid with a smooth unfinished face, throat full of white fracture lines, ash ribbons floating from its shoulders.",
+    "abilities": [
+      "Silence Hymn",
+      "Formation Stutter"
+    ],
+    "mapBehavior": "Stays behind Wretches and applies silence pressure to isolated lanes.",
+    "encounterTags": [
+      "swarm",
+      "silence",
+      "support",
+      "early-campaign"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-006",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-CREATURE-006"
+  },
+  {
+    "id": "TG-CREATURE-007",
+    "slug": "hollow-knell-archer",
+    "name": "Hollow Knell Archer",
+    "category": "Hollow Creature",
+    "realm": "Hollow",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Minor",
+    "status": "Gameplay Ready",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A long-limbed Hollow marksman grown from remembered executions; every arrow is a moment someone forgot to duck.",
+    "visualDescription": "Tall charcoal archer with broken crescent bow, mask slit, pale arrow-sparks, ragged funeral cloth.",
+    "abilities": [
+      "Knell Shot",
+      "Backline Mark"
+    ],
+    "mapBehavior": "Targets Support and Battery Titans from cover, forcing movement.",
+    "encounterTags": [
+      "ranged",
+      "mark",
+      "backline",
+      "event"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-007",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-CREATURE-007"
+  },
+  {
+    "id": "TG-CREATURE-008",
+    "slug": "hollow-oath-eater",
+    "name": "Hollow Oath-Eater",
+    "category": "Hollow Creature",
+    "realm": "Hollow",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Major",
+    "status": "Gameplay Ready",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A Gateborn hunger that feeds on promises made under pressure, especially Asgardian vows and Empyrean edicts.",
+    "visualDescription": "Heavy black beast-knight with ringed jaw, torn rune chains, oath-stone lodged in chest, white crack-teeth.",
+    "abilities": [
+      "Vow Bite",
+      "Break Resolve",
+      "Oath Drain"
+    ],
+    "mapBehavior": "Punishes Titans that repeat the same objective action without support.",
+    "encounterTags": [
+      "anti-oath",
+      "debuff",
+      "asgardian",
+      "elite"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-008",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-CREATURE-008"
+  },
+  {
+    "id": "TG-CREATURE-009",
+    "slug": "hollow-sunless-magistrate",
+    "name": "Hollow Sunless Magistrate",
+    "category": "Hollow Creature",
+    "realm": "Hollow",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Elite",
+    "status": "Gameplay Ready",
+    "director": "Narrative Director",
+    "playable": false,
+    "lore": "A false judge created from stolen Aten Ra law; it issues verdicts that erase context and leave only punishment.",
+    "visualDescription": "Tall robed absence with bronze-black scales, faceless sun disk cracked in half, floating judgment shards.",
+    "abilities": [
+      "Null Verdict",
+      "Sentence the Bright",
+      "Law Inversion"
+    ],
+    "mapBehavior": "Corrupts capture points and reverses sustain if not interrupted.",
+    "encounterTags": [
+      "controller",
+      "objective-corruptor",
+      "aten-ra",
+      "elite"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-009",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-CREATURE-009"
+  },
+  {
+    "id": "TG-CREATURE-010",
+    "slug": "hollow-banner-maw",
+    "name": "Hollow Banner Maw",
+    "category": "Forgotten Hollow",
+    "realm": "Forgotten / Hollow",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Major",
+    "status": "Gameplay Ready",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A crawling banner-creature that grew from the Forgotten Standard Bearer\u2019s shadow and devours unit identity.",
+    "visualDescription": "Low quadruped made of torn banners, bone pole ribs, mouth hidden under cloth, erased sigils crawling over hide.",
+    "abilities": [
+      "Devour Insignia",
+      "Nameless Rally"
+    ],
+    "mapBehavior": "Drags nearby swarm units into frenzy when a Titan falls below half health.",
+    "encounterTags": [
+      "swarm-commander",
+      "forgotten",
+      "morale",
+      "event"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-010",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-CREATURE-010"
+  },
+  {
+    "id": "TG-CREATURE-011",
+    "slug": "hollow-mirror-saint",
+    "name": "Hollow Mirror Saint",
+    "category": "Hollow Creature",
+    "realm": "Hollow",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "An Empyrean-shaped absence that reflects protection into imprisonment; it proves order can be imitated without mercy.",
+    "visualDescription": "Winglike negative-space guardian with broken halo mirror, porcelain mask fragments, chain-light without warmth.",
+    "abilities": [
+      "False Sanctuary",
+      "Reflect Mercy",
+      "Halo Lock"
+    ],
+    "mapBehavior": "Creates shield zones that help Hollow units unless shattered by coordinated strikes.",
+    "encounterTags": [
+      "shield",
+      "empyrean",
+      "elite",
+      "raid-add"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-011",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-CREATURE-011"
+  },
+  {
+    "id": "TG-CREATURE-012",
+    "slug": "hollow-root-parasite",
+    "name": "Hollow Root Parasite",
+    "category": "Hollow Infestation",
+    "realm": "Hollow / Avalora Scar",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Minor",
+    "status": "Gameplay Ready",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A rootlike Hollow larva that infects living terrain, making groves remember pain before growth.",
+    "visualDescription": "Black root-serpent with pale sap cracks, thorn mouth, leafless tendrils, soil clinging upward.",
+    "abilities": [
+      "Blight Root",
+      "Terrain Leech"
+    ],
+    "mapBehavior": "Occupies natural terrain and makes sustain tiles hazardous until cleansed.",
+    "encounterTags": [
+      "terrain-corruptor",
+      "tuatha",
+      "swarm",
+      "weekly-trial"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-012",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-CREATURE-012"
+  },
+  {
+    "id": "TG-CREATURE-013",
+    "slug": "hollow-shrine-mask",
+    "name": "Hollow Shrine-Mask",
+    "category": "Hollow Spirit",
+    "realm": "Hollow / Shrine Scar",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Major",
+    "status": "Gameplay Ready",
+    "director": "Narrative Director",
+    "playable": false,
+    "lore": "A mask that learned enough shrine etiquette to lure Kami guardians into the wrong ritual path.",
+    "visualDescription": "Floating lacquer mask cracked open with smoke hands, torn paper wards, ink bleeding upward.",
+    "abilities": [
+      "False Rite",
+      "Spirit Misstep",
+      "Mask Blink"
+    ],
+    "mapBehavior": "Repositions around shrine terrain and causes missed timing windows.",
+    "encounterTags": [
+      "kami",
+      "reposition",
+      "spirit",
+      "event"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-013",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-CREATURE-013"
+  },
+  {
+    "id": "TG-CREATURE-014",
+    "slug": "hollow-laurel-butcher",
+    "name": "Hollow Laurel Butcher",
+    "category": "Hollow Creature",
+    "realm": "Hollow / Olympian Scar",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Major",
+    "status": "Gameplay Ready",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A brutal parody of Olympian excellence that treats victory as proof even when the contest is corrupted.",
+    "visualDescription": "Muscular faceless gladiator silhouette, black marble skin, broken bronze laurel fused to skull, ichorless cracks.",
+    "abilities": [
+      "Dirty Triumph",
+      "Contest Ruin",
+      "Laurel Cleave"
+    ],
+    "mapBehavior": "Challenges highest-attack Titan and gains pressure if ignored.",
+    "encounterTags": [
+      "olympian",
+      "duelist",
+      "breaker",
+      "elite"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-014",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-CREATURE-014"
+  },
+  {
+    "id": "TG-CREATURE-015",
+    "slug": "hollow-chain-auditor",
+    "name": "Hollow Chain Auditor",
+    "category": "Hollow Creature",
+    "realm": "Hollow / Infernal Scar",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Elite",
+    "status": "Gameplay Ready",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A contract-thing that writes debts no one agreed to, born where Infernal ambition meets Gate erasure.",
+    "visualDescription": "Bent accountant-devil silhouette made of chains and ledgers, no eyes, burning white contract seams.",
+    "abilities": [
+      "Unowned Debt",
+      "Chain Levy",
+      "Clause Snare"
+    ],
+    "mapBehavior": "Taxes repeated abilities and punishes greedy burst rotations.",
+    "encounterTags": [
+      "infernal",
+      "resource-tax",
+      "control",
+      "event"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-015",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-CREATURE-015"
+  },
+  {
+    "id": "TG-CREATURE-016",
+    "slug": "hollow-gate-anchor",
+    "name": "Hollow Gate Anchor",
+    "category": "Gateborn Hollow",
+    "realm": "Unstable Gate / Hollow",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Elite",
+    "status": "Gameplay Ready",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A stationary living keystone that lets Hollow waves keep returning until the squad breaks the wound itself.",
+    "visualDescription": "Obsidian gate-stone torso rooted into battlefield, incomplete arms, white fracture core, broken arch crown.",
+    "abilities": [
+      "Breach Pulse",
+      "Spawn Wretches",
+      "Anchor the Wound"
+    ],
+    "mapBehavior": "Acts as a priority objective; spawns minor Hollow until destroyed.",
+    "encounterTags": [
+      "anchor",
+      "spawner",
+      "objective",
+      "raid-add"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-016",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-CREATURE-016"
+  },
+  {
+    "id": "TG-CREATURE-017",
+    "slug": "hollow-memory-thief",
+    "name": "Hollow Memory Thief",
+    "category": "Hollow Creature",
+    "realm": "Hollow",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Major",
+    "status": "Gameplay Ready",
+    "director": "Systems Director",
+    "playable": false,
+    "lore": "A thin assassin that steals the memory of a Titan\u2019s last tactic, forcing the squad to adapt instead of repeat.",
+    "visualDescription": "Slender black blade-limbed figure, empty face veil, stolen glyphs orbiting its fingers, quiet white eye-cracks.",
+    "abilities": [
+      "Steal Pattern",
+      "Cooldown Forgetting",
+      "Backstab Silence"
+    ],
+    "mapBehavior": "Targets repeated player actions and disrupts cooldown rhythm.",
+    "encounterTags": [
+      "assassin",
+      "cooldown",
+      "adaptive",
+      "ascension"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-017",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-CREATURE-017"
+  },
+  {
+    "id": "TG-CREATURE-018",
+    "slug": "hollow-world-wound-behemoth",
+    "name": "Hollow World-Wound Behemoth",
+    "category": "Hollow World Event Boss",
+    "realm": "Hollow Breach",
+    "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+    "threatTier": "World Boss",
+    "status": "Lore Complete",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A massive mobile Gate wound used for seasonal Hollow Breach events; it is not summoned, it arrives where too many victories leave unburied memory.",
+    "visualDescription": "Colossal negative-space beast with gate arches as ribs, cities of ash under translucent hide, maskless skull horizon, white storm fractures.",
+    "abilities": [
+      "Walk the Breach",
+      "Erase the Ground",
+      "Call the Nameless Storm"
+    ],
+    "mapBehavior": "Seasonal world boss that changes terrain, spawns anchors, and tests multiple squad archetypes.",
+    "encounterTags": [
+      "world-boss",
+      "seasonal",
+      "hollow-breach",
+      "raid"
+    ],
+    "campaignUse": [
+      "Seasonal Hollow Breach world event",
+      "Raid-scale boss",
+      "Ascension milestone boss"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-CREATURE-018",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-CREATURE-018"
   }
 ]
