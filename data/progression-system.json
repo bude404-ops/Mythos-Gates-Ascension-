@@ -1,0 +1,46 @@
+{
+  "id": "TG-PROGRESSION-001",
+  "standardSquadSize": 5,
+  "saveData": [
+    "campaignProgress",
+    "eliteProgress",
+    "titanCollection",
+    "titanLevels",
+    "equipment",
+    "squadPresets",
+    "arenaDefenseSquad",
+    "arenaRating",
+    "arenaHistory",
+    "factionMastery",
+    "ascensionProgress",
+    "raidProgress",
+    "eventProgress",
+    "seasonProgress",
+    "achievements",
+    "cosmetics",
+    "currency",
+    "purchases",
+    "rewards"
+  ],
+  "securityRules": [
+    "Reject duplicate rewards",
+    "Reject impossible squad configurations",
+    "Reject invalid Titan stats",
+    "Reject invalid equipment",
+    "Validate competitive/economy data server-side when available",
+    "Do not grant rating or shop currency from unverified combat summaries"
+  ],
+  "recommendationInputs": [
+    "ownedTitans",
+    "squadPower",
+    "campaignProgress",
+    "eliteProgress",
+    "ascensionFloor",
+    "arenaDefenseWeakness",
+    "weeklyTrialStatus",
+    "raidProgress",
+    "seasonLevel",
+    "nearUnlockShards"
+  ],
+  "rewardsPhilosophy": "Fun first, fair second, monetization third. Cosmetics preferred; progression purchases are speed and convenience, not mandatory power."
+}
