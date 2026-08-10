@@ -1,0 +1,77 @@
+{
+  "id": "TG-ENDGAME-ARCH-001",
+  "version": "0.6.0",
+  "status": "FOUNDATION_ACTIVE",
+  "standardSquadSize": 5,
+  "livePvpImplemented": false,
+  "directive": "Campaign is foundation; Elite is mastery; Endgame provides Ascension, async Arena, Trials, Raids, Faction Mastery, Seasons, Events, Achievements, Cosmetics, and fair monetization hooks.",
+  "coreLoop": [
+    "Collect Titans",
+    "Build 5-Titan Squads",
+    "Upgrade Titans",
+    "Play Campaign",
+    "Unlock Elite",
+    "Master Factions",
+    "Enter Ascension",
+    "Compete in Async Arena",
+    "Complete Weekly Trials",
+    "Fight Raid Bosses",
+    "Earn Rewards",
+    "Customize Titans",
+    "Return for Seasons and Events"
+  ],
+  "architecture": [
+    "Canon",
+    "Faction Registry",
+    "Titan Registry",
+    "Campaign Registry",
+    "Mission Registry",
+    "Combat Engine",
+    "5-Titan Squad System",
+    "Progression System",
+    "Endgame Engine",
+    "Ascension",
+    "Async Arena",
+    "Weekly Trials",
+    "Raids",
+    "Events",
+    "Seasons",
+    "Rewards",
+    "Cosmetics",
+    "Analytics"
+  ],
+  "directorReview": [
+    {
+      "director": "Gameplay Director",
+      "decision": "5-Titan squad is now the standard for Campaign, Elite, Ascension, Arena, Trials, Raids, and Events."
+    },
+    {
+      "director": "Lore Director",
+      "decision": "No Canon rewrite. Seven-faction Canon remains authoritative over six-faction planning math."
+    },
+    {
+      "director": "Art Director",
+      "decision": "2D tactical Titans and 3D elongated tactical maps remain locked for endgame."
+    },
+    {
+      "director": "Development Director",
+      "decision": "Endgame systems are modular registries; live PvP is explicitly reserved as a future control layer."
+    }
+  ],
+  "postCampaignTransition": {
+    "trigger": "Faction Elite Complete",
+    "headline": "THE ASCENSION BEGINS",
+    "nextSystems": [
+      "Ascension",
+      "Async Arena",
+      "Weekly Trial",
+      "Raid Boss",
+      "Faction Mastery",
+      "Titan Collection",
+      "Season Objectives",
+      "Events"
+    ]
+  },
+  "canonNotice": "Current Canon/Codex registers seven factions. Endgame architecture supports all seven and remains expandable; the six-faction 240-mission target is retained only as a directive planning benchmark.",
+  "created": "2026-08-10"
+}
