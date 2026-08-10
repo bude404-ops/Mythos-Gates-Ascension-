@@ -3,6 +3,20 @@
   "updated": "2026-08-10",
   "entries": [
     {
+      "version": "0.6.2",
+      "summary": "Added Art Import Queue so generated art can be attached to the correct prompt/entity, saved locally for review, and exported as artwork metadata.",
+      "commit": "LIVE_REMOTE",
+      "time": "2026-08-10T21:52:39Z",
+      "status": "PUSHED_WORKFLOW_IGNORED",
+      "checks": [
+        "Build passed",
+        "Content validation passed",
+        "Art import pipeline validation passed",
+        "Browser import route smoke passed",
+        "Secret scan passed"
+      ]
+    },
+    {
       "version": "0.6.1",
       "summary": "Surfaced Art Map prompts in the generated index and Dev Dashboard, with clickable prompt cards that copy prompts directly to clipboard.",
       "commit": "LIVE_REMOTE",
