@@ -2,7 +2,7 @@ import playwright from '/usr/local/lib/node_modules/playwright/index.js';
 const { chromium } = playwright;
 const browser = await chromium.launch({ executablePath: '/usr/bin/chromium-browser', args: ['--no-sandbox','--disable-dev-shm-usage'] });
 const page = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
-await page.goto('http://127.0.0.1:8141/index.html?mobilecopy=063#/art?category=Map', { waitUntil: 'domcontentloaded' });
+await page.goto('http://127.0.0.1:8145/index.html?mobilecopy=063#/art?category=Map', { waitUntil: 'domcontentloaded' });
 await page.waitForSelector('[data-art-prompt-card]', { timeout: 10000 });
 const cards = await page.locator('[data-art-prompt-card]').count();
 if (cards !== 12) throw new Error(`Expected 12 map prompt cards, saw ${cards}`);
