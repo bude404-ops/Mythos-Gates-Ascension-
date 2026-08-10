@@ -1,0 +1,119 @@
+{
+  "id": "TG-F01-E-C03-M12",
+  "factionId": "TG-FACTION-001",
+  "campaignId": "TG-F01-CAMPAIGN-ELITE",
+  "campaignType": "Elite",
+  "chapter": 3,
+  "chapterTitle": "Realm Conflict",
+  "missionNumber": 12,
+  "missionInChapter": 4,
+  "title": "Elite: The Eclipse Scribe",
+  "description": "Elite remix of The Eclipse Scribe: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+  "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+  "recommendedPower": 740,
+  "teamSize": 3,
+  "encouragedTitanRoles": [
+    "frontline anchor",
+    "lane controller",
+    "ranged finisher"
+  ],
+  "mapId": "TG-MAP-002",
+  "terrain": "floodplain mirrors, collapsing bridges, and corrupted river channels",
+  "objectives": {
+    "primary": "Break the marked commander before its law spreads across the map. Elite remix: complete it while stabilizing a secondary solar seal.",
+    "optional": [
+      "Win with no Titan defeated",
+      "Win before turn 8",
+      "Stop every reinforcement trigger or defeat the reinforcement commander first"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-005",
+        "TG-CREATURE-004",
+        "TG-CREATURE-003"
+      ],
+      "entry": "split flanks with one enemy already contesting an objective"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-002",
+        "TG-CREATURE-003"
+      ],
+      "entry": "elite reinforcement wave",
+      "trigger": "secondary seal destabilizes or turn 2"
+    },
+    {
+      "wave": 3,
+      "enemyIds": [
+        "TG-CREATURE-004"
+      ],
+      "entry": "late pressure unit",
+      "trigger": "one optional objective completed"
+    }
+  ],
+  "boss": {
+    "enemyId": "TG-CREATURE-001",
+    "phaseCount": 2,
+    "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+  },
+  "turnLimit": 9,
+  "specialRules": [
+    "Mirror Orders: enemies copy the last objective interaction unless interrupted.",
+    "Anchor Corruption: structures worsen hazards every two turns.",
+    "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+    "Restricted Recovery: healing or recovery tiles deactivate after use."
+  ],
+  "victoryConditions": [
+    "Break the marked commander before its law spreads across the map.",
+    "Secondary solar seal stabilized before extraction"
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Secondary seal collapses",
+    "Elite turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Refined solar alloy",
+      "Elite faction shard",
+      "High-tier gear pattern",
+      "Prestige sigil",
+      "Elite Aten Ra mission 12 codex shard"
+    ],
+    "replay": [
+      "Refined solar alloy",
+      "Elite faction shard",
+      "High-tier gear pattern"
+    ],
+    "stars": {
+      "three": "Primary, secondary, and all optional objectives completed",
+      "two": "Primary and secondary completed",
+      "one": "Primary completed after seal instability"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F01-CODEX-12"
+  ],
+  "artPackageId": "TG-F01-ELITE-ART-C03-M12",
+  "dialogueId": "TG-F01-ELITE-DLG-C03-M12",
+  "audioRequirements": [
+    "low temple pulse",
+    "sunflare impact cue",
+    "Gate pressure swell"
+  ],
+  "completionState": "Locked Until Normal Complete",
+  "developmentStatus": "Elite Remix Designed",
+  "eliteRemixOf": "TG-F01-C03-M12",
+  "meaningfulDifferences": [
+    "different starting positions",
+    "secondary seal objective",
+    "additional reinforcement wave",
+    "stricter turn limit",
+    "altered map lane/hazard emphasis",
+    "boss or commander mechanic added"
+  ]
+}
