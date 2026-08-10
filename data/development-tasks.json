@@ -1,0 +1,74 @@
+[
+  {
+    "id": "TG-DEV-001",
+    "description": "Approve first batch of Titan artwork for prompt-ready Titans.",
+    "director": "Art Director",
+    "priority": "High",
+    "status": "NEXT",
+    "dependencies": [
+      "Titan prompt records"
+    ],
+    "relatedEntity": "TG-TITAN-001",
+    "relatedFiles": [
+      "data/art-prompts.json",
+      "art/prompts/TG-TITAN-001.json"
+    ]
+  },
+  {
+    "id": "TG-DEV-002",
+    "description": "Expand first playable mission objectives beyond the Gate sealing encounter.",
+    "director": "Gameplay Director",
+    "priority": "High",
+    "status": "ACTIVE",
+    "dependencies": [
+      "game/index.html"
+    ],
+    "relatedEntity": "TG-GAME-001",
+    "relatedFiles": [
+      "game/index.html"
+    ]
+  },
+  {
+    "id": "TG-DEV-003",
+    "description": "Add non-playable campaign character records without violating no-playable-Hero canon.",
+    "director": "Lore Director",
+    "priority": "Medium",
+    "status": "NEXT",
+    "dependencies": [
+      "Lore Director approval"
+    ],
+    "relatedEntity": null,
+    "relatedFiles": [
+      "data/characters.json"
+    ]
+  },
+  {
+    "id": "TG-DEV-004",
+    "description": "Import first approved Titan artwork into the repository artwork pipeline.",
+    "director": "Art Director",
+    "priority": "High",
+    "status": "BLOCKED",
+    "dependencies": [
+      "Externally generated image asset"
+    ],
+    "relatedEntity": "TG-TITAN-001",
+    "relatedFiles": [
+      "art/imported/",
+      "art/approved/"
+    ]
+  },
+  {
+    "id": "TG-DEV-005",
+    "description": "Enable GitHub Pages deployment workflow after repository Pages settings are connected.",
+    "director": "Development Director",
+    "priority": "High",
+    "status": "ACTIVE",
+    "dependencies": [
+      "GitHub Actions workflow"
+    ],
+    "relatedEntity": "TG-DEPLOY-001",
+    "relatedFiles": [
+      ".github/workflows/pages.yml"
+    ]
+  }
+]
