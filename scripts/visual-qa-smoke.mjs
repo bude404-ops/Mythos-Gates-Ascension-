@@ -19,6 +19,15 @@ if (!['PASS', 'IN_PROGRESS'].includes(status.visualQa)) {
 }
 const indexHtml = readFileSync('index.html', 'utf8');
 const dialogue = JSON.parse(readFileSync('data/dialogue-scripts.json', 'utf8'));
+const prompts = JSON.parse(readFileSync('data/art-prompts.json', 'utf8'));
+if (prompts.filter(p => p.category === 'Campaign').length < 7 || prompts.filter(p => p.category === 'Map').length < 12) {
+  console.error(JSON.stringify({ ok: false, campaignPromptCoverageInvalid: true }, null, 2));
+  process.exit(1);
+}
+if (!indexHtml.includes('artFilterTabs') || !indexHtml.includes('Campaign Art') || !indexHtml.includes('Map Art')) {
+  console.error(JSON.stringify({ ok: false, artStudioFiltersMissing: true }, null, 2));
+  process.exit(1);
+}
 if (!indexHtml.includes('function chapterDetail') || !indexHtml.includes('#/chapter')) {
   console.error(JSON.stringify({ ok: false, chapterDetailMissing: true }, null, 2));
   process.exit(1);
