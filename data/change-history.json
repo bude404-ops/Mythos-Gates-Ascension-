@@ -1,0 +1,30 @@
+{
+  "id": "TG-CHANGE-HISTORY-001",
+  "updated": "2026-08-10",
+  "entries": [
+    {
+      "version": "0.3.3",
+      "commit": "LIVE_REMOTE",
+      "status": "SYNCED",
+      "summary": "Added automatic GitHub sync, Pages deployment, status display, manual push backup, and source-of-truth policy.",
+      "checks": [
+        "Build passed",
+        "Visual QA passed",
+        "Mobile preview checked",
+        "Secret scan passed",
+        "Fresh clone build required after push"
+      ]
+    },
+    {
+      "version": "0.3.2",
+      "commit": "07ae39f",
+      "status": "PREVIOUS_STABLE",
+      "summary": "Hybrid 2D sprite + 3D campaign visual architecture locked.",
+      "checks": [
+        "Build passed",
+        "Visual QA passed",
+        "Fresh clone build passed"
+      ]
+    }
+  ]
+}
