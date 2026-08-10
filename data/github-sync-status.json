@@ -1,26 +1,27 @@
 {
   "id": "TG-GITHUB-SYNC-STATUS-001",
-  "status": "SYNC_ERROR",
-  "version": "0.3.5",
+  "status": "SYNCED",
+  "version": "0.3.6",
   "previousStableVersion": "0.3.3",
   "commit": "LIVE_REMOTE",
-  "commitMessage": "feat: add aten ra mobile screen prompt set",
+  "commitMessage": "feat: expand maps and campaigns",
   "branch": "main",
   "repository": "bude404-ops/Titans-Gate-",
-  "lastPushTime": "2026-08-10T19:14:20Z",
+  "lastPushTime": "2026-08-10T19:34:21Z",
   "build": "PASS",
   "github": "SYNCED",
-  "deployment": "BLOCKED_WORKFLOW_PERMISSION",
+  "deployment": "IGNORED_BY_REQUEST",
   "visualQa": "PASS",
   "mobileCheck": "PASS",
   "sourceOfTruth": "GitHub main",
   "manualPushAvailable": true,
   "safeAuthentication": "Server-side token, GitHub Actions secret, GitHub App, or local secure environment variable only. Browser token use is forbidden.",
   "recentChanges": [
-    "Aten Ra Campaign Map Overview generation prompt synced.",
-    "Aten Ra Tactical Battle Map generation prompt synced.",
-    "Prompt docs and per-prompt JSON records synced."
+    "Added Helio-Kemet Sun Realm campaign arc.",
+    "Added Kami Mirror Tempest campaign arc.",
+    "Added Empyrean Choir Vault campaign arc.",
+    "Added six map specs, nine chapters, and six map art prompts."
   ],
   "liveStatusSource": "Public GitHub API; no credentials in browser.",
-  "syncError": "Aten Ra screen prompt set is synced to GitHub; deployment workflow remains blocked until workflow permission is supplied."
+  "syncError": "Pages workflow intentionally ignored by holder request; maps and campaigns content synced through repository content updates."
 }
