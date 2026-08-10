@@ -1,0 +1,23 @@
+{
+  "id": "TG-ENDGAME-DASHBOARD-001",
+  "sections": [
+    "Today",
+    "Now",
+    "Progress",
+    "Compete",
+    "Challenge",
+    "Season",
+    "Reaper Recommendation"
+  ],
+  "sampleState": {},
+  "recommendationPolicy": "Recommendations must use actual player progression data. No player save is loaded in the Dev Platform, so Reaper shows system-readiness guidance instead of fabricated progress.",
+  "systemReadiness": {
+    "squadSystem": "Ready",
+    "ascension": "Framework Ready",
+    "asyncArena": "Framework Ready",
+    "weeklyTrials": "Framework Ready",
+    "raids": "Framework Ready",
+    "seasons": "Framework Ready",
+    "playerSaveLoaded": "No live player save loaded"
+  }
+}
