@@ -14,6 +14,7 @@ const include = [
   'docs',
   'art',
   'dev',
+  'visual',
   'README.md'
 ];
 
@@ -34,7 +35,7 @@ for(const rel of include){
 }
 
 fs.writeFileSync(path.join(dist,'.nojekyll'), '');
-const required=['index.html','game/index.html','data/index.json','data/titans.json','docs/lore/README.md'];
+const required=['index.html','game/index.html','game/preview.html','game/shared-preview.js','data/index.json','data/titans.json','data/visual-screens.json','docs/lore/README.md'];
 for(const rel of required){
   if(!fs.existsSync(path.join(dist, rel))) throw new Error(`Build missing ${rel}`);
 }
