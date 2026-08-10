@@ -1,15 +1,15 @@
 {
   "id": "TG-GITHUB-SYNC-STATUS-001",
-  "status": "CHANGES_PENDING",
+  "status": "SYNC_ERROR",
   "version": "0.3.5",
   "previousStableVersion": "0.3.3",
-  "commit": "PENDING_PUSH",
+  "commit": "LIVE_REMOTE",
   "commitMessage": "feat: add aten ra mobile screen prompt set",
   "branch": "main",
   "repository": "bude404-ops/Titans-Gate-",
-  "lastPushTime": "2026-08-10T19:11:20Z",
+  "lastPushTime": "2026-08-10T19:14:20Z",
   "build": "PASS",
-  "github": "CHANGES_PENDING",
+  "github": "SYNCED",
   "deployment": "BLOCKED_WORKFLOW_PERMISSION",
   "visualQa": "PASS",
   "mobileCheck": "PASS",
@@ -17,10 +17,10 @@
   "manualPushAvailable": true,
   "safeAuthentication": "Server-side token, GitHub Actions secret, GitHub App, or local secure environment variable only. Browser token use is forbidden.",
   "recentChanges": [
-    "Aten Ra Campaign Map Overview generation prompt added.",
-    "Aten Ra Tactical Battle Map generation prompt added.",
-    "Prompt docs and per-prompt JSON records added."
+    "Aten Ra Campaign Map Overview generation prompt synced.",
+    "Aten Ra Tactical Battle Map generation prompt synced.",
+    "Prompt docs and per-prompt JSON records synced."
   ],
   "liveStatusSource": "Public GitHub API; no credentials in browser.",
-  "syncError": "Prompt set changes are pending validation and GitHub push; deployment workflow remains blocked until workflow permission is supplied."
+  "syncError": "Aten Ra screen prompt set is synced to GitHub; deployment workflow remains blocked until workflow permission is supplied."
 }
