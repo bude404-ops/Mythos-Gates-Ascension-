@@ -1,265 +1,899 @@
 [
   {
-    "id": "TG-DIALOGUE-CHAPTER-001",
+    "id": "TG-DIALOGUE-MISSION-001",
     "chapterId": "TG-CHAPTER-001",
-    "scene": "Chapter Opening",
+    "chapterTitle": "Signal Under Dead Stone",
+    "campaignId": "TG-CAMPAIGN-001",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Mesha Gate-Scribe",
-        "text": "The Gate has begun to breathe under dead stone. That is not reopening. That is distress."
-      },
-      {
-        "speaker": "Mesha Gate-Scribe",
-        "text": "Send Titans, not hope. Hope leaves no footprint on a cracked seal."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The Gate has begun to breathe under dead stone. That is not reopening. That is distress."
+        },
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "Send Titans, not hope. Hope leaves no footprint on a cracked seal."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The seal is counting your steps. Hold formation where the dust rises backward."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "One Titan is carrying too much of the breach. Pull the weight before the Hollow learns their outline."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The first breath is contained. Do not call it healed. Wounds also pause."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The stone closed over the wrong silence. We retreat before the Gate writes loss into law."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "Record restored: partial. Gate appetite: confirmed. The next threshold will not be ignorant of us."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-002",
+    "id": "TG-DIALOGUE-MISSION-002",
     "chapterId": "TG-CHAPTER-002",
-    "scene": "Chapter Opening",
+    "chapterTitle": "Mesha Opens the Solar Record",
+    "campaignId": "TG-CAMPAIGN-001",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Mesha Gate-Scribe",
-        "text": "This tablet held seven thousand gate-signs yesterday. Today it holds six thousand nine hundred and ninety-nine. The missing sign has not been erased. It has been eaten."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "This tablet held seven thousand gate-signs yesterday. Today it holds one fewer. The missing sign has not been erased. It has been eaten."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "Do not pursue the echo. It wants your strike force facing yesterday."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "Their name still answers the record. Keep them inside the light."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The solar record holds. The missing sign leaves a tooth mark, not an absence."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The record dims. We withdraw while there are still names left to carry."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "A Hollow wound can be measured. That means it can be resisted, though not yet understood."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-003",
+    "id": "TG-DIALOGUE-MISSION-003",
     "chapterId": "TG-CHAPTER-003",
-    "scene": "Chapter Opening",
+    "chapterTitle": "The Mouth Without a Name",
+    "campaignId": "TG-CAMPAIGN-001",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Hollow Presence",
-        "text": "Name given. Name taken. Shape remains."
-      },
-      {
-        "speaker": "Mesha Gate-Scribe",
-        "text": "Do not answer it with fear. Fear is still a form of offering."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The thing ahead has no name because names cannot survive in its mouth. Fight from memory, not fear."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "It is not speaking to you. It is testing which parts of you answer."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "A Titan is near erasure. Anchor them by command and proximity."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The mouth closes. The hunger remains beyond the stone, patient and insulted."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "It has taken too much sound from the field. Fall back before retreat becomes nameless."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "Victory against the Hollow is never clean. We saved the shape of this place; now we must save what it meant."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-004",
+    "id": "TG-DIALOGUE-MISSION-004",
     "chapterId": "TG-CHAPTER-004",
-    "scene": "Chapter Opening",
+    "chapterTitle": "Oath Lightning",
+    "campaignId": "TG-CAMPAIGN-002",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Hrodda Oath-Witness",
-        "text": "The first step is not across the bridge. The first step is deciding what your word weighs."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Hrodda Oath-Witness",
+          "text": "The first step is not across the bridge. The first step is deciding what your word weighs."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Hrodda Oath-Witness",
+          "text": "The bridge holds under truth and cracks under noise. Move only where the oath can follow."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Hrodda Oath-Witness",
+          "text": "That wound is becoming a promise the body cannot keep. Guard them."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Hrodda Oath-Witness",
+          "text": "The storm accepts your passage. Not as friends. As combatants who did not lie."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Hrodda Oath-Witness",
+          "text": "The bridge rejects us. Better a living retreat than a false oath screamed into thunder."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Hrodda Oath-Witness",
+          "text": "Remember this crossing. Some roads open only for those willing to be judged by them."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-005",
+    "id": "TG-DIALOGUE-MISSION-005",
     "chapterId": "TG-CHAPTER-005",
-    "scene": "Chapter Opening",
+    "chapterTitle": "Laurel Trial",
+    "campaignId": "TG-CAMPAIGN-002",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Lyrion Laurel-Envoy",
-        "text": "The arena does not hate the unworthy. It simply refuses to pretend."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Lyrion Laurel-Envoy",
+          "text": "The arena does not hate the unworthy. It simply refuses to pretend."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Lyrion Laurel-Envoy",
+          "text": "There. The trial has stopped measuring strength and begun measuring restraint."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Lyrion Laurel-Envoy",
+          "text": "Glory will not seal that wound. Discipline will."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Lyrion Laurel-Envoy",
+          "text": "The laurel does not crown comfort. It recognizes pressure endured without collapse."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Lyrion Laurel-Envoy",
+          "text": "The trial has spoken without cruelty. Return stronger or do not return at all."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Lyrion Laurel-Envoy",
+          "text": "Worth is not a song sung by admirers. It is what remains when the marble has finished judging."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-006",
+    "id": "TG-DIALOGUE-MISSION-006",
     "chapterId": "TG-CHAPTER-006",
-    "scene": "Chapter Opening",
+    "chapterTitle": "The Banner That Should Not Exist",
+    "campaignId": "TG-CAMPAIGN-002",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Forgotten Banner",
-        "text": "I was raised by hands both courts deny. Let them deny the blood next."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Forgotten Banner",
+          "text": "I was raised by hands both courts deny. Let them deny the blood next."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Forgotten Banner",
+          "text": "Old vows wake under your violence. Strike carefully; history loves repetition."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Forgotten Banner",
+          "text": "One banner is enough to gather the fallen. Do not give it a Titan."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Forgotten Banner",
+          "text": "The banner falls, but the accusation remains upright."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Forgotten Banner",
+          "text": "Denied hands. Denied blood. New names for the same old shame."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Forgotten Banner",
+          "text": "Hrodda and Lyrion will argue over blame. The field only remembers impact."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-007",
+    "id": "TG-DIALOGUE-MISSION-007",
     "chapterId": "TG-CHAPTER-007",
-    "scene": "Chapter Opening",
+    "chapterTitle": "Roots Remember Wounds",
+    "campaignId": "TG-CAMPAIGN-003",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Maeve Root-Memory",
-        "text": "Walk lightly. Not because the ground is fragile. Because it is listening."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Maeve Root-Memory",
+          "text": "Walk lightly. Not because the ground is fragile. Because it is listening."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Maeve Root-Memory",
+          "text": "The root is choosing which wounds to close. Earn its trust by not wasting pain."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Maeve Root-Memory",
+          "text": "Blood wakes the deeper wood. Keep the wounded above the rootline."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Maeve Root-Memory",
+          "text": "The grove exhales. It has not forgiven us, but it has permitted us to continue."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Maeve Root-Memory",
+          "text": "The roots close against our weight. We leave before the hill decides we are the infection."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Maeve Root-Memory",
+          "text": "Living terrain remembers action, not intention. Next time, bring proof."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-008",
+    "id": "TG-DIALOGUE-MISSION-008",
     "chapterId": "TG-CHAPTER-008",
-    "scene": "Chapter Opening",
+    "chapterTitle": "The Predator Law",
+    "campaignId": "TG-CAMPAIGN-003",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Maeve Root-Memory",
-        "text": "The Beast Realms do not invade. They arrive where appetite has already been invited."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Maeve Root-Memory",
+          "text": "The Beast Realms do not invade. They arrive where appetite has already been invited."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Maeve Root-Memory",
+          "text": "Predators test the slow edge first. Do not let them choose the rhythm."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Maeve Root-Memory",
+          "text": "A wounded Titan sounds like permission to hungry things. Deny it."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Maeve Root-Memory",
+          "text": "The predator law is answered. Hunger may rule itself elsewhere."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Maeve Root-Memory",
+          "text": "The hunt has learned our scent. Retreat before it learns our habits."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Maeve Root-Memory",
+          "text": "Nature is not innocent. That is why it can survive what innocence cannot."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-009",
+    "id": "TG-DIALOGUE-MISSION-009",
     "chapterId": "TG-CHAPTER-009",
-    "scene": "Chapter Opening",
+    "chapterTitle": "Bargain in Black Iron",
+    "campaignId": "TG-CAMPAIGN-004",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Varak Chain-Magistrate",
-        "text": "You came seeking passage. I offer it. If the price offends you, ask the Gate to become generous."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Varak Chain-Magistrate",
+          "text": "You came seeking passage. I offer it. If the price offends you, ask the Gate to become generous."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Varak Chain-Magistrate",
+          "text": "Every step accepted becomes evidence. Spend your movement like coin."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Varak Chain-Magistrate",
+          "text": "A broken Titan is an expensive witness. Protect your assets."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Varak Chain-Magistrate",
+          "text": "The bargain stands fulfilled. Notice how cleanly honest terms cut."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Varak Chain-Magistrate",
+          "text": "Refusal has a cost as well. The difference is that refusal pretends otherwise."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Varak Chain-Magistrate",
+          "text": "You dislike the chain because you can see it. Most Realms hide theirs under banners."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-010",
+    "id": "TG-DIALOGUE-MISSION-010",
     "chapterId": "TG-CHAPTER-010",
-    "scene": "Chapter Opening",
+    "chapterTitle": "The First Flood Below Fire",
+    "campaignId": "TG-CAMPAIGN-004",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Varak Chain-Magistrate",
-        "text": "Fire does not fear water. It fears a current with judgment behind it."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Varak Chain-Magistrate",
+          "text": "Fire does not fear water. It fears a current with judgment behind it."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Varak Chain-Magistrate",
+          "text": "The flood is not mercy. It is a counterclaim. Let it cross the sigils first."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Varak Chain-Magistrate",
+          "text": "That wound is becoming leverage. Remove it from the court."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Varak Chain-Magistrate",
+          "text": "The cinders cool, and still the contract survives. Fascinating."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Varak Chain-Magistrate",
+          "text": "The court records your retreat. Do not worry; failure is a very common signature."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Varak Chain-Magistrate",
+          "text": "Dominion law has bent without breaking. That should concern everyone."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-011",
+    "id": "TG-DIALOGUE-MISSION-011",
     "chapterId": "TG-CHAPTER-011",
-    "scene": "Chapter Opening",
+    "chapterTitle": "Sacred Sun Temple",
+    "campaignId": "TG-CAMPAIGN-005",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Mesha Gate-Scribe",
-        "text": "The first node is marked complete, but the stars disagree. Something is learning our symbols."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The first node is marked complete, but the stars disagree. Something is learning our symbols."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The milestone shines too brightly. False order often overcompensates."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "Keep the wounded out of the mirrored sun. It is reflecting weakness, not light."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The temple recognizes us again. Recognition is not trust."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The node accepts a false completion. We withdraw before the lie becomes procedure."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "One mission marker is purified. Four remain vulnerable to imitation."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-012",
+    "id": "TG-DIALOGUE-MISSION-012",
     "chapterId": "TG-CHAPTER-012",
-    "scene": "Chapter Opening",
+    "chapterTitle": "River of Light Stronghold",
+    "campaignId": "TG-CAMPAIGN-005",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Mesha Gate-Scribe",
-        "text": "The river bends uphill. Record that before you correct it. Miracles and wounds often wear the same light."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The river bends uphill. Record that before you correct it. Miracles and wounds often wear the same light."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The current is dragging memory toward the stronghold. Cut the pull, not the water."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "Do not let a Titan fall in the river-light. It carries names too efficiently."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The stronghold drinks from the river again without choking on shadow."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The river has learned our resistance. Fall back to dry law."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Mesha Gate-Scribe",
+          "text": "The light still flows. Now we know something beneath the Gate is steering it."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-013",
+    "id": "TG-DIALOGUE-MISSION-013",
     "chapterId": "TG-CHAPTER-013",
-    "scene": "Chapter Opening",
+    "chapterTitle": "The Titan Gate",
+    "campaignId": "TG-CAMPAIGN-005",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Gate Silhouette",
-        "text": "Bring your measures. I have swallowed brighter laws."
-      },
-      {
-        "speaker": "Aten Ra Titan Voice",
-        "text": "Then choke on this one."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Aten Ra Titan Voice",
+          "text": "The Gate silhouette has swallowed brighter laws. Let it learn what remains when law refuses to kneel."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Aten Ra Titan Voice",
+          "text": "Its shadow moves against the sun. Strike where the movement disobeys the source."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Aten Ra Titan Voice",
+          "text": "A Titan staggers under eclipse weight. Answer with formation, not rage."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Aten Ra Titan Voice",
+          "text": "The Gate is not cleansed, but its false crown is broken. The sun keeps witness."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Aten Ra Titan Voice",
+          "text": "The silhouette has measured us in return. We survive by leaving before it completes the sum."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Aten Ra Titan Voice",
+          "text": "At the peak, the Gate did not open. It watched. That is worse."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-014",
+    "id": "TG-DIALOGUE-MISSION-014",
     "chapterId": "TG-CHAPTER-014",
-    "scene": "Chapter Opening",
+    "chapterTitle": "Lanterns That Lie",
+    "campaignId": "TG-CAMPAIGN-006",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Sayo Shrine-Cartographer",
-        "text": "Count the lanterns only after closing your eyes. The honest ones remain warm."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Sayo Shrine-Cartographer",
+          "text": "Count the lanterns only after closing your eyes. The honest ones remain warm."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Sayo Shrine-Cartographer",
+          "text": "Wind-lanes have changed. Follow the silence between chimes."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Sayo Shrine-Cartographer",
+          "text": "A wounded shape invites a false reflection. Keep them moving."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Sayo Shrine-Cartographer",
+          "text": "The lying lanterns gutter out. The path is narrower now, therefore safer."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Sayo Shrine-Cartographer",
+          "text": "Too many lights agree with each other. That is how false paths vote. Leave."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Sayo Shrine-Cartographer",
+          "text": "The map gains one reliable line. Treat it as a blade, not a comfort."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-015",
+    "id": "TG-DIALOGUE-MISSION-015",
     "chapterId": "TG-CHAPTER-015",
-    "scene": "Chapter Opening",
+    "chapterTitle": "Mirror Lake Oath",
+    "campaignId": "TG-CAMPAIGN-006",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Sayo Shrine-Cartographer",
-        "text": "The reflection moved first. That means the Gate has stopped asking permission from cause."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Sayo Shrine-Cartographer",
+          "text": "The reflection moved first. That means the Gate has stopped asking permission from cause."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Sayo Shrine-Cartographer",
+          "text": "Do not strike the nearest image. Strike the one that refuses to ripple."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Sayo Shrine-Cartographer",
+          "text": "Their reflection is standing too straight. Correct the body before the image replaces it."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Sayo Shrine-Cartographer",
+          "text": "Lake and face return to proper order. Cause walks first again."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Sayo Shrine-Cartographer",
+          "text": "The mirror has learned enough of us. Turn away before it practices."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Sayo Shrine-Cartographer",
+          "text": "An oath reflected is still binding. That is why careless promises haunt water."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-016",
+    "id": "TG-DIALOGUE-MISSION-016",
     "chapterId": "TG-CHAPTER-016",
-    "scene": "Chapter Opening",
+    "chapterTitle": "Storm Behind the Torii",
+    "campaignId": "TG-CAMPAIGN-006",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Foxfire Oath-Breaker",
-        "text": "Every promise wants a witness. I became the witness promises deserve."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Foxfire Oath-Breaker",
+          "text": "Every promise wants a witness. I became the witness promises deserve."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Foxfire Oath-Breaker",
+          "text": "Hear that? The storm is repeating words no living throat admits."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Foxfire Oath-Breaker",
+          "text": "One Titan burns at the edge of a broken vow. Pull them back."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Foxfire Oath-Breaker",
+          "text": "The foxfire scatters. The broken oath remains, but it no longer leads the path."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Foxfire Oath-Breaker",
+          "text": "Run, oath-bearers. Your footprints make excellent testimony."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Foxfire Oath-Breaker",
+          "text": "Sayo records the storm path without naming triumph. Wise. Spirits resent celebration."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-017",
+    "id": "TG-DIALOGUE-MISSION-017",
     "chapterId": "TG-CHAPTER-017",
-    "scene": "Chapter Opening",
+    "chapterTitle": "First Harmonic Step",
+    "campaignId": "TG-CAMPAIGN-007",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Celiane White-Vault Witness",
-        "text": "The lower notes are missing. The Choir continues because it has mistaken absence for consent."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "The lower notes are missing. The Choir continues because it has mistaken absence for consent."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "The beacons are aligning judgment. Break the harmony before it calls survival disorder."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "Their wound has entered the Choir. Shield them before correction becomes removal."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "The first harmonic falls silent. I had forgotten silence could be merciful."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "The Choir names our retreat necessary. I refuse to let it name our deaths efficient."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "Beauty did not save the vault from error. Remember that when the light asks for obedience."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-018",
+    "id": "TG-DIALOGUE-MISSION-018",
     "chapterId": "TG-CHAPTER-018",
-    "scene": "Chapter Opening",
+    "chapterTitle": "Glass Stair War",
+    "campaignId": "TG-CAMPAIGN-007",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Celiane White-Vault Witness",
-        "text": "Do not run. The stair punishes urgency more reliably than malice."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "Do not run. The stair punishes urgency more reliably than malice."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "Glass remembers impact. Spread the weight before the path turns testimony into fracture."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "A staggered Titan will draw correction fire. Cover the wound with order of our own."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "The stair remains. Not because we were pure. Because we moved with care."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "The stair rejects us. I will not dignify that with divine will; it is damaged law."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "Above us, the engine continues its song. Below us, the fallen notes still tremble."
+        }
+      ]
+    }
   },
   {
-    "id": "TG-DIALOGUE-CHAPTER-019",
+    "id": "TG-DIALOGUE-MISSION-019",
     "chapterId": "TG-CHAPTER-019",
-    "scene": "Chapter Opening",
+    "chapterTitle": "Broken Heaven Engine",
+    "campaignId": "TG-CAMPAIGN-007",
+    "scene": "Mission Dialogue Set",
     "status": "Draft Canon-Friendly",
     "tone": "Ancient, restrained, strategic, non-cheesy",
-    "lines": [
-      {
-        "speaker": "Vault Warden",
-        "text": "Mercy variable removed. Preservation purity restored."
-      },
-      {
-        "speaker": "Celiane White-Vault Witness",
-        "text": "No. Preservation that cannot recognize the living has become another Collapse."
-      }
-    ]
+    "beats": {
+      "missionIntro": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "Preservation that cannot recognize the living has become another Collapse. We end the engine\u2019s certainty."
+        }
+      ],
+      "midBattlePressure": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "Mercy has been removed from its sequence. Force the engine to calculate interruption."
+        }
+      ],
+      "lowHealthWarning": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "The Warden has marked weakness as waste. Defend them before the vault completes deletion."
+        }
+      ],
+      "victory": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "The engine dims. Not dead. Listening. That is the first honest thing it has done."
+        }
+      ],
+      "defeat": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "The vault has chosen purity over survival. We withdraw with the imperfect, which is to say, the living."
+        }
+      ],
+      "postMission": [
+        {
+          "speaker": "Celiane White-Vault Witness",
+          "text": "The Choir will need a new law: preservation must know whom it preserves."
+        }
+      ]
+    }
   }
 ]
