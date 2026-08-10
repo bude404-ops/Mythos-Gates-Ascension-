@@ -20,6 +20,17 @@ if (!['PASS', 'IN_PROGRESS'].includes(status.visualQa)) {
 const indexHtml = readFileSync('index.html', 'utf8');
 const dialogue = JSON.parse(readFileSync('data/dialogue-scripts.json', 'utf8'));
 const prompts = JSON.parse(readFileSync('data/art-prompts.json', 'utf8'));
+const missions = JSON.parse(readFileSync('data/mission-registry.json', 'utf8'));
+const missionDialogue = JSON.parse(readFileSync('data/mission-dialogue.json', 'utf8'));
+const missionArtPackages = JSON.parse(readFileSync('data/mission-art-packages.json', 'utf8'));
+if (missions.filter(m => m.factionId === 'TG-FACTION-001' && m.campaignType === 'Normal').length !== 20 || missions.filter(m => m.factionId === 'TG-FACTION-001' && m.campaignType === 'Elite').length !== 20 || missionDialogue.length < missions.length || missionArtPackages.length < missions.length) {
+  console.error(JSON.stringify({ ok: false, missionArchitectureInvalid: true }, null, 2));
+  process.exit(1);
+}
+if (!indexHtml.includes('Campaign Architecture') || !indexHtml.includes('#/missions')) {
+  console.error(JSON.stringify({ ok: false, missionDashboardMissing: true }, null, 2));
+  process.exit(1);
+}
 if (prompts.filter(p => p.category === 'Campaign').length < 7 || prompts.filter(p => p.category === 'Map').length < 12) {
   console.error(JSON.stringify({ ok: false, campaignPromptCoverageInvalid: true }, null, 2));
   process.exit(1);
