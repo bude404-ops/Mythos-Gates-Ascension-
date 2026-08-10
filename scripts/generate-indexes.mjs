@@ -29,8 +29,16 @@ const files = {
   'asset-pipeline.json': 'assetPipeline',
   'github-sync-policy.json': 'githubSyncPolicy',
   'github-sync-status.json': 'githubSyncStatus',
-  'change-history.json': 'changeHistory'
-};
+  'change-history.json': 'changeHistory',
+  'campaign-architecture.json': 'campaignArchitecture',
+  'campaign-chapter-registry.json': 'campaignChapters',
+  'mission-registry.json': 'missions',
+  'mission-dialogue.json': 'missionDialogue',
+  'mission-art-packages.json': 'missionArtPackages',
+  'objective-system.json': 'objectiveSystem',
+  'reward-system.json': 'rewardSystem',
+  'campaign-audit.json': 'campaignAudit'
+}
 const counts = {};
 for (const [file, key] of Object.entries(files)) {
   const value = read(`data/${file}`);
