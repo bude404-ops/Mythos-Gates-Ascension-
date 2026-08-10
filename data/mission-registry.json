@@ -1,0 +1,4194 @@
+[
+  {
+    "id": "TG-F01-C01-M01",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 1,
+    "chapterTitle": "Awakening",
+    "missionNumber": 1,
+    "missionInChapter": 1,
+    "title": "First Light Under Dead Stone",
+    "description": "Aten Ra advances through sacred temple approach with shallow river-light lanes and low sandstone cover while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 135,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-001",
+    "terrain": "sacred temple approach with shallow river-light lanes and low sandstone cover",
+    "objectives": {
+      "primary": "Move a three-Titan squad to the marked solar seal before the Hollow closes around it.",
+      "optional": [
+        "Complete before turn 8",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-003"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-003"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": null,
+    "turnLimit": 11,
+    "specialRules": [
+      "Formation Light: adjacent Titans gain minor protection when ending near a solar tile.",
+      "Hollow Drift: basic enemies favor isolated Titans."
+    ],
+    "victoryConditions": [
+      "Move a three-Titan squad to the marked solar seal before the Hollow closes around it."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 1 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [
+      "TG-F01-CODEX-01"
+    ],
+    "artPackageId": "TG-F01-ART-C01-M01",
+    "dialogueId": "TG-F01-DLG-C01-M01",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C01-M01",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 1,
+    "chapterTitle": "Awakening",
+    "missionNumber": 1,
+    "missionInChapter": 1,
+    "title": "Elite: First Light Under Dead Stone",
+    "description": "Elite remix of First Light Under Dead Stone: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 355,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-007",
+    "terrain": "sacred temple approach with shallow river-light lanes and low sandstone cover",
+    "objectives": {
+      "primary": "Move a three-Titan squad to the marked solar seal before the Hollow closes around it. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 9",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-002"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-001",
+          "TG-CREATURE-002"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-003"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-004",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 9,
+    "specialRules": [
+      "Formation Light: adjacent Titans gain minor protection when ending near a solar tile.",
+      "Hollow Drift: basic enemies favor isolated Titans.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Move a three-Titan squad to the marked solar seal before the Hollow closes around it.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 1 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [
+      "TG-F01-CODEX-01"
+    ],
+    "artPackageId": "TG-F01-ELITE-ART-C01-M01",
+    "dialogueId": "TG-F01-ELITE-DLG-C01-M01",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C01-M01",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C01-M02",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 1,
+    "chapterTitle": "Awakening",
+    "missionNumber": 2,
+    "missionInChapter": 2,
+    "title": "River Step Formation",
+    "description": "Aten Ra advances through sacred temple approach with shallow river-light lanes and low sandstone cover while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 170,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-002",
+    "terrain": "sacred temple approach with shallow river-light lanes and low sandstone cover",
+    "objectives": {
+      "primary": "Clear the field while maintaining formation near river-light cover.",
+      "optional": [
+        "Complete before turn 10",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-004"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-004"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": null,
+    "turnLimit": null,
+    "specialRules": [
+      "Formation Light: adjacent Titans gain minor protection when ending near a solar tile.",
+      "Hollow Drift: basic enemies favor isolated Titans."
+    ],
+    "victoryConditions": [
+      "Clear the field while maintaining formation near river-light cover."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Protected objective is destroyed"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 2 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ART-C01-M02",
+    "dialogueId": "TG-F01-DLG-C01-M02",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C01-M02",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 1,
+    "chapterTitle": "Awakening",
+    "missionNumber": 2,
+    "missionInChapter": 2,
+    "title": "Elite: River Step Formation",
+    "description": "Elite remix of River Step Formation: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 390,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-008",
+    "terrain": "sacred temple approach with shallow river-light lanes and low sandstone cover",
+    "objectives": {
+      "primary": "Clear the field while maintaining formation near river-light cover. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 8",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-004",
+          "TG-CREATURE-003"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-003"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-004"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-005",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 9,
+    "specialRules": [
+      "Formation Light: adjacent Titans gain minor protection when ending near a solar tile.",
+      "Hollow Drift: basic enemies favor isolated Titans.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Clear the field while maintaining formation near river-light cover.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 2 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ELITE-ART-C01-M02",
+    "dialogueId": "TG-F01-ELITE-DLG-C01-M02",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C01-M02",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C01-M03",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 1,
+    "chapterTitle": "Awakening",
+    "missionNumber": 3,
+    "missionInChapter": 3,
+    "title": "The Obelisk That Would Not Cast Shadow",
+    "description": "Aten Ra advances through sacred temple approach with shallow river-light lanes and low sandstone cover while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 205,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "frontline anchor",
+      "lane controller",
+      "ranged finisher"
+    ],
+    "mapId": "TG-MAP-007",
+    "terrain": "sacred temple approach with shallow river-light lanes and low sandstone cover",
+    "objectives": {
+      "primary": "Hold two sun markers at the end of the same round.",
+      "optional": [
+        "Complete before turn 9",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-004",
+          "TG-CREATURE-005"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-005"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": null,
+    "turnLimit": null,
+    "specialRules": [
+      "Formation Light: adjacent Titans gain minor protection when ending near a solar tile.",
+      "Hollow Drift: basic enemies favor isolated Titans."
+    ],
+    "victoryConditions": [
+      "Hold two sun markers at the end of the same round."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Protected objective is destroyed"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 3 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ART-C01-M03",
+    "dialogueId": "TG-F01-DLG-C01-M03",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C01-M03",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 1,
+    "chapterTitle": "Awakening",
+    "missionNumber": 3,
+    "missionInChapter": 3,
+    "title": "Elite: The Obelisk That Would Not Cast Shadow",
+    "description": "Elite remix of The Obelisk That Would Not Cast Shadow: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 425,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "frontline anchor",
+      "lane controller",
+      "ranged finisher"
+    ],
+    "mapId": "TG-MAP-001",
+    "terrain": "sacred temple approach with shallow river-light lanes and low sandstone cover",
+    "objectives": {
+      "primary": "Hold two sun markers at the end of the same round. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 7",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-005",
+          "TG-CREATURE-004"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-004"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-005"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-001",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 9,
+    "specialRules": [
+      "Formation Light: adjacent Titans gain minor protection when ending near a solar tile.",
+      "Hollow Drift: basic enemies favor isolated Titans.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Hold two sun markers at the end of the same round.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 3 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ELITE-ART-C01-M03",
+    "dialogueId": "TG-F01-ELITE-DLG-C01-M03",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C01-M03",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C01-M04",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 1,
+    "chapterTitle": "Awakening",
+    "missionNumber": 4,
+    "missionInChapter": 4,
+    "title": "Jackal at the Broken Threshold",
+    "description": "Aten Ra advances through sacred temple approach with shallow river-light lanes and low sandstone cover while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 240,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-008",
+    "terrain": "sacred temple approach with shallow river-light lanes and low sandstone cover",
+    "objectives": {
+      "primary": "Break the marked commander before its law spreads across the map.",
+      "optional": [
+        "Complete before turn 8",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-005",
+          "TG-CREATURE-001"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-001"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-003",
+      "phaseCount": 1,
+      "mechanic": "changes sunflare timing and objective pressure"
+    },
+    "turnLimit": null,
+    "specialRules": [
+      "Formation Light: adjacent Titans gain minor protection when ending near a solar tile.",
+      "Hollow Drift: basic enemies favor isolated Titans."
+    ],
+    "victoryConditions": [
+      "Break the marked commander before its law spreads across the map."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Protected objective is destroyed"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 4 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [
+      "TG-F01-CODEX-04"
+    ],
+    "artPackageId": "TG-F01-ART-C01-M04",
+    "dialogueId": "TG-F01-DLG-C01-M04",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C01-M04",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 1,
+    "chapterTitle": "Awakening",
+    "missionNumber": 4,
+    "missionInChapter": 4,
+    "title": "Elite: Jackal at the Broken Threshold",
+    "description": "Elite remix of Jackal at the Broken Threshold: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 460,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-002",
+    "terrain": "sacred temple approach with shallow river-light lanes and low sandstone cover",
+    "objectives": {
+      "primary": "Break the marked commander before its law spreads across the map. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 6",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-001",
+          "TG-CREATURE-005"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-004",
+          "TG-CREATURE-005"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-001"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-003",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 9,
+    "specialRules": [
+      "Formation Light: adjacent Titans gain minor protection when ending near a solar tile.",
+      "Hollow Drift: basic enemies favor isolated Titans.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Break the marked commander before its law spreads across the map.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 4 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [
+      "TG-F01-CODEX-04"
+    ],
+    "artPackageId": "TG-F01-ELITE-ART-C01-M04",
+    "dialogueId": "TG-F01-ELITE-DLG-C01-M04",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C01-M04",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C02-M05",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 2,
+    "chapterTitle": "The First Gate",
+    "missionNumber": 5,
+    "missionInChapter": 1,
+    "title": "Road of Measured Fire",
+    "description": "Aten Ra advances through open desert road, raised obelisks, and timed sunflare tiles while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 275,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-001",
+    "terrain": "open desert road, raised obelisks, and timed sunflare tiles",
+    "objectives": {
+      "primary": "Hold the formation through four enemy turns while the Gate pulse is measured.",
+      "optional": [
+        "Complete before turn 9",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-001",
+          "TG-CREATURE-002"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-002"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": null,
+    "turnLimit": null,
+    "specialRules": [
+      "Sunflare Tiles: marked tiles flare after one turn.",
+      "River Push: light channels slide units one tile if they end exposed."
+    ],
+    "victoryConditions": [
+      "Hold the formation through four enemy turns while the Gate pulse is measured."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Protected objective is destroyed"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 5 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ART-C02-M05",
+    "dialogueId": "TG-F01-DLG-C02-M05",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C02-M05",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 2,
+    "chapterTitle": "The First Gate",
+    "missionNumber": 5,
+    "missionInChapter": 1,
+    "title": "Elite: Road of Measured Fire",
+    "description": "Elite remix of Road of Measured Fire: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 495,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-007",
+    "terrain": "open desert road, raised obelisks, and timed sunflare tiles",
+    "objectives": {
+      "primary": "Hold the formation through four enemy turns while the Gate pulse is measured. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 10",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-001"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-005",
+          "TG-CREATURE-001"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-002"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-003",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 9,
+    "specialRules": [
+      "Sunflare Tiles: marked tiles flare after one turn.",
+      "River Push: light channels slide units one tile if they end exposed.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Hold the formation through four enemy turns while the Gate pulse is measured.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 5 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ELITE-ART-C02-M05",
+    "dialogueId": "TG-F01-ELITE-DLG-C02-M05",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C02-M05",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C02-M06",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 2,
+    "chapterTitle": "The First Gate",
+    "missionNumber": 6,
+    "missionInChapter": 2,
+    "title": "Sun-Lane Crossing",
+    "description": "Aten Ra advances through open desert road, raised obelisks, and timed sunflare tiles while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 310,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "frontline anchor",
+      "lane controller",
+      "ranged finisher"
+    ],
+    "mapId": "TG-MAP-002",
+    "terrain": "open desert road, raised obelisks, and timed sunflare tiles",
+    "objectives": {
+      "primary": "Shatter corrupted obelisk anchors before they finish darkening the route.",
+      "optional": [
+        "Complete before turn 8",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-003"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-003"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": null,
+    "turnLimit": 12,
+    "specialRules": [
+      "Sunflare Tiles: marked tiles flare after one turn.",
+      "River Push: light channels slide units one tile if they end exposed."
+    ],
+    "victoryConditions": [
+      "Shatter corrupted obelisk anchors before they finish darkening the route."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 6 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ART-C02-M06",
+    "dialogueId": "TG-F01-DLG-C02-M06",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C02-M06",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 2,
+    "chapterTitle": "The First Gate",
+    "missionNumber": 6,
+    "missionInChapter": 2,
+    "title": "Elite: Sun-Lane Crossing",
+    "description": "Elite remix of Sun-Lane Crossing: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 530,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "frontline anchor",
+      "lane controller",
+      "ranged finisher"
+    ],
+    "mapId": "TG-MAP-008",
+    "terrain": "open desert road, raised obelisks, and timed sunflare tiles",
+    "objectives": {
+      "primary": "Shatter corrupted obelisk anchors before they finish darkening the route. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 9",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-002"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-001",
+          "TG-CREATURE-002"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-003"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-004",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 10,
+    "specialRules": [
+      "Sunflare Tiles: marked tiles flare after one turn.",
+      "River Push: light channels slide units one tile if they end exposed.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Shatter corrupted obelisk anchors before they finish darkening the route.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 6 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ELITE-ART-C02-M06",
+    "dialogueId": "TG-F01-ELITE-DLG-C02-M06",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C02-M06",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C02-M07",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 2,
+    "chapterTitle": "The First Gate",
+    "missionNumber": 7,
+    "missionInChapter": 3,
+    "title": "Three Anchors in the Floodplain",
+    "description": "Aten Ra advances through open desert road, raised obelisks, and timed sunflare tiles while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 345,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-007",
+    "terrain": "open desert road, raised obelisks, and timed sunflare tiles",
+    "objectives": {
+      "primary": "Escort a non-playable witness-priest to the upper seal without losing a Titan.",
+      "optional": [
+        "Complete before turn 10",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-004"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-004"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": null,
+    "turnLimit": null,
+    "specialRules": [
+      "Sunflare Tiles: marked tiles flare after one turn.",
+      "River Push: light channels slide units one tile if they end exposed."
+    ],
+    "victoryConditions": [
+      "Escort a non-playable witness-priest to the upper seal without losing a Titan."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Protected objective is destroyed"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 7 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ART-C02-M07",
+    "dialogueId": "TG-F01-DLG-C02-M07",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C02-M07",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 2,
+    "chapterTitle": "The First Gate",
+    "missionNumber": 7,
+    "missionInChapter": 3,
+    "title": "Elite: Three Anchors in the Floodplain",
+    "description": "Elite remix of Three Anchors in the Floodplain: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 565,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-001",
+    "terrain": "open desert road, raised obelisks, and timed sunflare tiles",
+    "objectives": {
+      "primary": "Escort a non-playable witness-priest to the upper seal without losing a Titan. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 8",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-004",
+          "TG-CREATURE-003"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-003"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-004"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-005",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 9,
+    "specialRules": [
+      "Sunflare Tiles: marked tiles flare after one turn.",
+      "River Push: light channels slide units one tile if they end exposed.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Escort a non-playable witness-priest to the upper seal without losing a Titan.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 7 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ELITE-ART-C02-M07",
+    "dialogueId": "TG-F01-ELITE-DLG-C02-M07",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C02-M07",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C02-M08",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 2,
+    "chapterTitle": "The First Gate",
+    "missionNumber": 8,
+    "missionInChapter": 4,
+    "title": "The Crocodile Crown",
+    "description": "Aten Ra advances through open desert road, raised obelisks, and timed sunflare tiles while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 380,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-008",
+    "terrain": "open desert road, raised obelisks, and timed sunflare tiles",
+    "objectives": {
+      "primary": "Complete two battlefield stages under changing solar hazards.",
+      "optional": [
+        "Complete before turn 9",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-004",
+          "TG-CREATURE-005"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-005"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-002",
+      "phaseCount": 2,
+      "mechanic": "changes sunflare timing and objective pressure"
+    },
+    "turnLimit": 12,
+    "specialRules": [
+      "Sunflare Tiles: marked tiles flare after one turn.",
+      "River Push: light channels slide units one tile if they end exposed."
+    ],
+    "victoryConditions": [
+      "Complete two battlefield stages under changing solar hazards."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 8 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [
+      "TG-F01-CODEX-08"
+    ],
+    "artPackageId": "TG-F01-ART-C02-M08",
+    "dialogueId": "TG-F01-DLG-C02-M08",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C02-M08",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 2,
+    "chapterTitle": "The First Gate",
+    "missionNumber": 8,
+    "missionInChapter": 4,
+    "title": "Elite: The Crocodile Crown",
+    "description": "Elite remix of The Crocodile Crown: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 600,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-002",
+    "terrain": "open desert road, raised obelisks, and timed sunflare tiles",
+    "objectives": {
+      "primary": "Complete two battlefield stages under changing solar hazards. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 7",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-005",
+          "TG-CREATURE-004"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-004"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-005"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-002",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 10,
+    "specialRules": [
+      "Sunflare Tiles: marked tiles flare after one turn.",
+      "River Push: light channels slide units one tile if they end exposed.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Complete two battlefield stages under changing solar hazards.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 8 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [
+      "TG-F01-CODEX-08"
+    ],
+    "artPackageId": "TG-F01-ELITE-ART-C02-M08",
+    "dialogueId": "TG-F01-ELITE-DLG-C02-M08",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C02-M08",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C03-M09",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 3,
+    "chapterTitle": "Realm Conflict",
+    "missionNumber": 9,
+    "missionInChapter": 1,
+    "title": "Law Beneath the River Mirror",
+    "description": "Aten Ra advances through floodplain mirrors, collapsing bridges, and corrupted river channels while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 415,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "frontline anchor",
+      "lane controller",
+      "ranged finisher"
+    ],
+    "mapId": "TG-MAP-001",
+    "terrain": "floodplain mirrors, collapsing bridges, and corrupted river channels",
+    "objectives": {
+      "primary": "Move a three-Titan squad to the marked solar seal before the Hollow closes around it.",
+      "optional": [
+        "Complete before turn 10",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-005",
+          "TG-CREATURE-001"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-001",
+          "TG-CREATURE-002"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": null,
+    "turnLimit": 13,
+    "specialRules": [
+      "Mirror Orders: enemies copy the last objective interaction unless interrupted.",
+      "Anchor Corruption: structures worsen hazards every two turns."
+    ],
+    "victoryConditions": [
+      "Move a three-Titan squad to the marked solar seal before the Hollow closes around it."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 9 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ART-C03-M09",
+    "dialogueId": "TG-F01-DLG-C03-M09",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C03-M09",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 3,
+    "chapterTitle": "Realm Conflict",
+    "missionNumber": 9,
+    "missionInChapter": 1,
+    "title": "Elite: Law Beneath the River Mirror",
+    "description": "Elite remix of Law Beneath the River Mirror: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 635,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "frontline anchor",
+      "lane controller",
+      "ranged finisher"
+    ],
+    "mapId": "TG-MAP-007",
+    "terrain": "floodplain mirrors, collapsing bridges, and corrupted river channels",
+    "objectives": {
+      "primary": "Move a three-Titan squad to the marked solar seal before the Hollow closes around it. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 11",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-001",
+          "TG-CREATURE-005"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-004",
+          "TG-CREATURE-005"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-001"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-002",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 11,
+    "specialRules": [
+      "Mirror Orders: enemies copy the last objective interaction unless interrupted.",
+      "Anchor Corruption: structures worsen hazards every two turns.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Move a three-Titan squad to the marked solar seal before the Hollow closes around it.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 9 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ELITE-ART-C03-M09",
+    "dialogueId": "TG-F01-ELITE-DLG-C03-M09",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C03-M09",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C03-M10",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 3,
+    "chapterTitle": "Realm Conflict",
+    "missionNumber": 10,
+    "missionInChapter": 2,
+    "title": "Sandstorm of Witnesses",
+    "description": "Aten Ra advances through floodplain mirrors, collapsing bridges, and corrupted river channels while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 450,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-002",
+    "terrain": "floodplain mirrors, collapsing bridges, and corrupted river channels",
+    "objectives": {
+      "primary": "Clear the field while maintaining formation near river-light cover.",
+      "optional": [
+        "Complete before turn 9",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-001",
+          "TG-CREATURE-002"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-003"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": null,
+    "turnLimit": null,
+    "specialRules": [
+      "Mirror Orders: enemies copy the last objective interaction unless interrupted.",
+      "Anchor Corruption: structures worsen hazards every two turns."
+    ],
+    "victoryConditions": [
+      "Clear the field while maintaining formation near river-light cover."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Protected objective is destroyed"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 10 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ART-C03-M10",
+    "dialogueId": "TG-F01-DLG-C03-M10",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C03-M10",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 3,
+    "chapterTitle": "Realm Conflict",
+    "missionNumber": 10,
+    "missionInChapter": 2,
+    "title": "Elite: Sandstorm of Witnesses",
+    "description": "Elite remix of Sandstorm of Witnesses: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 670,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-008",
+    "terrain": "floodplain mirrors, collapsing bridges, and corrupted river channels",
+    "objectives": {
+      "primary": "Clear the field while maintaining formation near river-light cover. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 10",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-002",
+          "TG-CREATURE-001"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-005",
+          "TG-CREATURE-001"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-002"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-003",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 9,
+    "specialRules": [
+      "Mirror Orders: enemies copy the last objective interaction unless interrupted.",
+      "Anchor Corruption: structures worsen hazards every two turns.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Clear the field while maintaining formation near river-light cover.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 10 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ELITE-ART-C03-M10",
+    "dialogueId": "TG-F01-ELITE-DLG-C03-M10",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C03-M10",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C03-M11",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 3,
+    "chapterTitle": "Realm Conflict",
+    "missionNumber": 11,
+    "missionInChapter": 3,
+    "title": "The Pylon Choir Falls Silent",
+    "description": "Aten Ra advances through floodplain mirrors, collapsing bridges, and corrupted river channels while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 485,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-007",
+    "terrain": "floodplain mirrors, collapsing bridges, and corrupted river channels",
+    "objectives": {
+      "primary": "Hold two sun markers at the end of the same round.",
+      "optional": [
+        "Complete before turn 8",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-003"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-004"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": null,
+    "turnLimit": null,
+    "specialRules": [
+      "Mirror Orders: enemies copy the last objective interaction unless interrupted.",
+      "Anchor Corruption: structures worsen hazards every two turns."
+    ],
+    "victoryConditions": [
+      "Hold two sun markers at the end of the same round."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Protected objective is destroyed"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 11 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ART-C03-M11",
+    "dialogueId": "TG-F01-DLG-C03-M11",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C03-M11",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 3,
+    "chapterTitle": "Realm Conflict",
+    "missionNumber": 11,
+    "missionInChapter": 3,
+    "title": "Elite: The Pylon Choir Falls Silent",
+    "description": "Elite remix of The Pylon Choir Falls Silent: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 705,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-001",
+    "terrain": "floodplain mirrors, collapsing bridges, and corrupted river channels",
+    "objectives": {
+      "primary": "Hold two sun markers at the end of the same round. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 9",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-004",
+          "TG-CREATURE-003",
+          "TG-CREATURE-002"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-001",
+          "TG-CREATURE-002"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-003"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-004",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 9,
+    "specialRules": [
+      "Mirror Orders: enemies copy the last objective interaction unless interrupted.",
+      "Anchor Corruption: structures worsen hazards every two turns.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Hold two sun markers at the end of the same round.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 11 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ELITE-ART-C03-M11",
+    "dialogueId": "TG-F01-ELITE-DLG-C03-M11",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C03-M11",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C03-M12",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 3,
+    "chapterTitle": "Realm Conflict",
+    "missionNumber": 12,
+    "missionInChapter": 4,
+    "title": "The Eclipse Scribe",
+    "description": "Aten Ra advances through floodplain mirrors, collapsing bridges, and corrupted river channels while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 520,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "frontline anchor",
+      "lane controller",
+      "ranged finisher"
+    ],
+    "mapId": "TG-MAP-008",
+    "terrain": "floodplain mirrors, collapsing bridges, and corrupted river channels",
+    "objectives": {
+      "primary": "Break the marked commander before its law spreads across the map.",
+      "optional": [
+        "Complete before turn 10",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-004"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-004",
+          "TG-CREATURE-005"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-001",
+      "phaseCount": 2,
+      "mechanic": "changes sunflare timing and objective pressure"
+    },
+    "turnLimit": null,
+    "specialRules": [
+      "Mirror Orders: enemies copy the last objective interaction unless interrupted.",
+      "Anchor Corruption: structures worsen hazards every two turns."
+    ],
+    "victoryConditions": [
+      "Break the marked commander before its law spreads across the map."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Protected objective is destroyed"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 12 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [
+      "TG-F01-CODEX-12"
+    ],
+    "artPackageId": "TG-F01-ART-C03-M12",
+    "dialogueId": "TG-F01-DLG-C03-M12",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C03-M12",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 3,
+    "chapterTitle": "Realm Conflict",
+    "missionNumber": 12,
+    "missionInChapter": 4,
+    "title": "Elite: The Eclipse Scribe",
+    "description": "Elite remix of The Eclipse Scribe: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 740,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "frontline anchor",
+      "lane controller",
+      "ranged finisher"
+    ],
+    "mapId": "TG-MAP-002",
+    "terrain": "floodplain mirrors, collapsing bridges, and corrupted river channels",
+    "objectives": {
+      "primary": "Break the marked commander before its law spreads across the map. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 8",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-005",
+          "TG-CREATURE-004",
+          "TG-CREATURE-003"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-003"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-004"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-001",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 9,
+    "specialRules": [
+      "Mirror Orders: enemies copy the last objective interaction unless interrupted.",
+      "Anchor Corruption: structures worsen hazards every two turns.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Break the marked commander before its law spreads across the map.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 12 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [
+      "TG-F01-CODEX-12"
+    ],
+    "artPackageId": "TG-F01-ELITE-ART-C03-M12",
+    "dialogueId": "TG-F01-ELITE-DLG-C03-M12",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C03-M12",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C04-M13",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 4,
+    "chapterTitle": "War of Titans",
+    "missionNumber": 13,
+    "missionInChapter": 1,
+    "title": "Twin Gates of Overcharge",
+    "description": "Aten Ra advances through tiered sun platforms with simultaneous anchor points and overcharge hazards while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 555,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-001",
+    "terrain": "tiered sun platforms with simultaneous anchor points and overcharge hazards",
+    "objectives": {
+      "primary": "Hold the formation through four enemy turns while the Gate pulse is measured.",
+      "optional": [
+        "Complete before turn 8",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-004",
+          "TG-CREATURE-005"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-005",
+          "TG-CREATURE-001"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": null,
+    "turnLimit": null,
+    "specialRules": [
+      "Overcharge Law: standing on empowered tiles grants attack reach but increases incoming pressure.",
+      "Split Threat: two objectives resolve on opposite sides of the field."
+    ],
+    "victoryConditions": [
+      "Hold the formation through four enemy turns while the Gate pulse is measured."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Protected objective is destroyed"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 13 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ART-C04-M13",
+    "dialogueId": "TG-F01-DLG-C04-M13",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C04-M13",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 4,
+    "chapterTitle": "War of Titans",
+    "missionNumber": 13,
+    "missionInChapter": 1,
+    "title": "Elite: Twin Gates of Overcharge",
+    "description": "Elite remix of Twin Gates of Overcharge: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 775,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-007",
+    "terrain": "tiered sun platforms with simultaneous anchor points and overcharge hazards",
+    "objectives": {
+      "primary": "Hold the formation through four enemy turns while the Gate pulse is measured. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 12",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-001",
+          "TG-CREATURE-005",
+          "TG-CREATURE-004"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-004"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-005"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-001",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 9,
+    "specialRules": [
+      "Overcharge Law: standing on empowered tiles grants attack reach but increases incoming pressure.",
+      "Split Threat: two objectives resolve on opposite sides of the field.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Hold the formation through four enemy turns while the Gate pulse is measured.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 13 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ELITE-ART-C04-M13",
+    "dialogueId": "TG-F01-ELITE-DLG-C04-M13",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C04-M13",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C04-M14",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 4,
+    "chapterTitle": "War of Titans",
+    "missionNumber": 14,
+    "missionInChapter": 2,
+    "title": "The Black Sun Caravan",
+    "description": "Aten Ra advances through tiered sun platforms with simultaneous anchor points and overcharge hazards while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 590,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-002",
+    "terrain": "tiered sun platforms with simultaneous anchor points and overcharge hazards",
+    "objectives": {
+      "primary": "Shatter corrupted obelisk anchors before they finish darkening the route.",
+      "optional": [
+        "Complete before turn 10",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-005",
+          "TG-CREATURE-001"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-001",
+          "TG-CREATURE-002"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": null,
+    "turnLimit": 14,
+    "specialRules": [
+      "Overcharge Law: standing on empowered tiles grants attack reach but increases incoming pressure.",
+      "Split Threat: two objectives resolve on opposite sides of the field."
+    ],
+    "victoryConditions": [
+      "Shatter corrupted obelisk anchors before they finish darkening the route."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 14 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ART-C04-M14",
+    "dialogueId": "TG-F01-DLG-C04-M14",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C04-M14",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 4,
+    "chapterTitle": "War of Titans",
+    "missionNumber": 14,
+    "missionInChapter": 2,
+    "title": "Elite: The Black Sun Caravan",
+    "description": "Elite remix of The Black Sun Caravan: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 810,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-008",
+    "terrain": "tiered sun platforms with simultaneous anchor points and overcharge hazards",
+    "objectives": {
+      "primary": "Shatter corrupted obelisk anchors before they finish darkening the route. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 11",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-001",
+          "TG-CREATURE-005"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-004",
+          "TG-CREATURE-005"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-001"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-002",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 12,
+    "specialRules": [
+      "Overcharge Law: standing on empowered tiles grants attack reach but increases incoming pressure.",
+      "Split Threat: two objectives resolve on opposite sides of the field.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Shatter corrupted obelisk anchors before they finish darkening the route.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 14 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ELITE-ART-C04-M14",
+    "dialogueId": "TG-F01-ELITE-DLG-C04-M14",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C04-M14",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C04-M15",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 4,
+    "chapterTitle": "War of Titans",
+    "missionNumber": 15,
+    "missionInChapter": 3,
+    "title": "Judgment Across Three Platforms",
+    "description": "Aten Ra advances through tiered sun platforms with simultaneous anchor points and overcharge hazards while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 625,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "frontline anchor",
+      "lane controller",
+      "ranged finisher"
+    ],
+    "mapId": "TG-MAP-007",
+    "terrain": "tiered sun platforms with simultaneous anchor points and overcharge hazards",
+    "objectives": {
+      "primary": "Escort a non-playable witness-priest to the upper seal without losing a Titan.",
+      "optional": [
+        "Complete before turn 9",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-001",
+          "TG-CREATURE-002"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-003"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": null,
+    "turnLimit": null,
+    "specialRules": [
+      "Overcharge Law: standing on empowered tiles grants attack reach but increases incoming pressure.",
+      "Split Threat: two objectives resolve on opposite sides of the field."
+    ],
+    "victoryConditions": [
+      "Escort a non-playable witness-priest to the upper seal without losing a Titan."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Protected objective is destroyed"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 15 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ART-C04-M15",
+    "dialogueId": "TG-F01-DLG-C04-M15",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C04-M15",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 4,
+    "chapterTitle": "War of Titans",
+    "missionNumber": 15,
+    "missionInChapter": 3,
+    "title": "Elite: Judgment Across Three Platforms",
+    "description": "Elite remix of Judgment Across Three Platforms: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 845,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "frontline anchor",
+      "lane controller",
+      "ranged finisher"
+    ],
+    "mapId": "TG-MAP-001",
+    "terrain": "tiered sun platforms with simultaneous anchor points and overcharge hazards",
+    "objectives": {
+      "primary": "Escort a non-playable witness-priest to the upper seal without losing a Titan. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 10",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-002",
+          "TG-CREATURE-001"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-005",
+          "TG-CREATURE-001"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-002"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-003",
+      "phaseCount": 2,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 9,
+    "specialRules": [
+      "Overcharge Law: standing on empowered tiles grants attack reach but increases incoming pressure.",
+      "Split Threat: two objectives resolve on opposite sides of the field.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Escort a non-playable witness-priest to the upper seal without losing a Titan.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 15 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ELITE-ART-C04-M15",
+    "dialogueId": "TG-F01-ELITE-DLG-C04-M15",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C04-M15",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C04-M16",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 4,
+    "chapterTitle": "War of Titans",
+    "missionNumber": 16,
+    "missionInChapter": 4,
+    "title": "Titan Silhouette of the False Dawn",
+    "description": "Aten Ra advances through tiered sun platforms with simultaneous anchor points and overcharge hazards while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 660,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-008",
+    "terrain": "tiered sun platforms with simultaneous anchor points and overcharge hazards",
+    "objectives": {
+      "primary": "Complete two battlefield stages under changing solar hazards.",
+      "optional": [
+        "Complete before turn 8",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-003"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-004"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-005",
+      "phaseCount": 2,
+      "mechanic": "changes sunflare timing and objective pressure"
+    },
+    "turnLimit": 14,
+    "specialRules": [
+      "Overcharge Law: standing on empowered tiles grants attack reach but increases incoming pressure.",
+      "Split Threat: two objectives resolve on opposite sides of the field."
+    ],
+    "victoryConditions": [
+      "Complete two battlefield stages under changing solar hazards."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 16 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [
+      "TG-F01-CODEX-16"
+    ],
+    "artPackageId": "TG-F01-ART-C04-M16",
+    "dialogueId": "TG-F01-DLG-C04-M16",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C04-M16",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 4,
+    "chapterTitle": "War of Titans",
+    "missionNumber": 16,
+    "missionInChapter": 4,
+    "title": "Elite: Titan Silhouette of the False Dawn",
+    "description": "Elite remix of Titan Silhouette of the False Dawn: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 880,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-002",
+    "terrain": "tiered sun platforms with simultaneous anchor points and overcharge hazards",
+    "objectives": {
+      "primary": "Complete two battlefield stages under changing solar hazards. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 9",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-004",
+          "TG-CREATURE-003",
+          "TG-CREATURE-002"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-001",
+          "TG-CREATURE-002"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-003"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-005",
+      "phaseCount": 3,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 12,
+    "specialRules": [
+      "Overcharge Law: standing on empowered tiles grants attack reach but increases incoming pressure.",
+      "Split Threat: two objectives resolve on opposite sides of the field.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Complete two battlefield stages under changing solar hazards.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 16 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [
+      "TG-F01-CODEX-16"
+    ],
+    "artPackageId": "TG-F01-ELITE-ART-C04-M16",
+    "dialogueId": "TG-F01-ELITE-DLG-C04-M16",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C04-M16",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C05-M17",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 5,
+    "chapterTitle": "The Ascension",
+    "missionNumber": 17,
+    "missionInChapter": 1,
+    "title": "The Sun Throne Opens",
+    "description": "Aten Ra advances through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 695,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-001",
+    "terrain": "sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones",
+    "objectives": {
+      "primary": "Move a three-Titan squad to the marked solar seal before the Hollow closes around it.",
+      "optional": [
+        "Complete before turn 9",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-004"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-004",
+          "TG-CREATURE-005"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": null,
+    "turnLimit": 15,
+    "specialRules": [
+      "Eclipse Phase: the boss changes terrain rules at health or objective thresholds.",
+      "Watching Gate: delay increases defeat pressure and locks some recovery tiles."
+    ],
+    "victoryConditions": [
+      "Move a three-Titan squad to the marked solar seal before the Hollow closes around it."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 17 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ART-C05-M17",
+    "dialogueId": "TG-F01-DLG-C05-M17",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C05-M17",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 5,
+    "chapterTitle": "The Ascension",
+    "missionNumber": 17,
+    "missionInChapter": 1,
+    "title": "Elite: The Sun Throne Opens",
+    "description": "Elite remix of The Sun Throne Opens: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 915,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-007",
+    "terrain": "sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones",
+    "objectives": {
+      "primary": "Move a three-Titan squad to the marked solar seal before the Hollow closes around it. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 13",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-005",
+          "TG-CREATURE-004",
+          "TG-CREATURE-003"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-003"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-004"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-005",
+      "phaseCount": 3,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 13,
+    "specialRules": [
+      "Eclipse Phase: the boss changes terrain rules at health or objective thresholds.",
+      "Watching Gate: delay increases defeat pressure and locks some recovery tiles.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Move a three-Titan squad to the marked solar seal before the Hollow closes around it.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 17 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ELITE-ART-C05-M17",
+    "dialogueId": "TG-F01-ELITE-DLG-C05-M17",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C05-M17",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C05-M18",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 5,
+    "chapterTitle": "The Ascension",
+    "missionNumber": 18,
+    "missionInChapter": 2,
+    "title": "Noon Made Hostile",
+    "description": "Aten Ra advances through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 730,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "frontline anchor",
+      "lane controller",
+      "ranged finisher"
+    ],
+    "mapId": "TG-MAP-002",
+    "terrain": "sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones",
+    "objectives": {
+      "primary": "Clear the field while maintaining formation near river-light cover.",
+      "optional": [
+        "Complete before turn 8",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-004",
+          "TG-CREATURE-005"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-005",
+          "TG-CREATURE-001"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": null,
+    "turnLimit": null,
+    "specialRules": [
+      "Eclipse Phase: the boss changes terrain rules at health or objective thresholds.",
+      "Watching Gate: delay increases defeat pressure and locks some recovery tiles."
+    ],
+    "victoryConditions": [
+      "Clear the field while maintaining formation near river-light cover."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Protected objective is destroyed"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 18 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ART-C05-M18",
+    "dialogueId": "TG-F01-DLG-C05-M18",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C05-M18",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 5,
+    "chapterTitle": "The Ascension",
+    "missionNumber": 18,
+    "missionInChapter": 2,
+    "title": "Elite: Noon Made Hostile",
+    "description": "Elite remix of Noon Made Hostile: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 950,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "frontline anchor",
+      "lane controller",
+      "ranged finisher"
+    ],
+    "mapId": "TG-MAP-008",
+    "terrain": "sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones",
+    "objectives": {
+      "primary": "Clear the field while maintaining formation near river-light cover. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 12",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-001",
+          "TG-CREATURE-005",
+          "TG-CREATURE-004"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-004"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-005"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-001",
+      "phaseCount": 3,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 9,
+    "specialRules": [
+      "Eclipse Phase: the boss changes terrain rules at health or objective thresholds.",
+      "Watching Gate: delay increases defeat pressure and locks some recovery tiles.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Clear the field while maintaining formation near river-light cover.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 18 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ELITE-ART-C05-M18",
+    "dialogueId": "TG-F01-ELITE-DLG-C05-M18",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C05-M18",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C05-M19",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 5,
+    "chapterTitle": "The Ascension",
+    "missionNumber": 19,
+    "missionInChapter": 3,
+    "title": "The Crown Before the Gate",
+    "description": "Aten Ra advances through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 765,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-007",
+    "terrain": "sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones",
+    "objectives": {
+      "primary": "Hold two sun markers at the end of the same round.",
+      "optional": [
+        "Complete before turn 10",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-005",
+          "TG-CREATURE-001"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-001",
+          "TG-CREATURE-002"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-003",
+      "phaseCount": 2,
+      "mechanic": "changes sunflare timing and objective pressure"
+    },
+    "turnLimit": null,
+    "specialRules": [
+      "Eclipse Phase: the boss changes terrain rules at health or objective thresholds.",
+      "Watching Gate: delay increases defeat pressure and locks some recovery tiles."
+    ],
+    "victoryConditions": [
+      "Hold two sun markers at the end of the same round."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Protected objective is destroyed"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 19 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ART-C05-M19",
+    "dialogueId": "TG-F01-DLG-C05-M19",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C05-M19",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 5,
+    "chapterTitle": "The Ascension",
+    "missionNumber": 19,
+    "missionInChapter": 3,
+    "title": "Elite: The Crown Before the Gate",
+    "description": "Elite remix of The Crown Before the Gate: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 985,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-001",
+    "terrain": "sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones",
+    "objectives": {
+      "primary": "Hold two sun markers at the end of the same round. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 11",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-001",
+          "TG-CREATURE-005"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-004",
+          "TG-CREATURE-005"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-001"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-003",
+      "phaseCount": 3,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 9,
+    "specialRules": [
+      "Eclipse Phase: the boss changes terrain rules at health or objective thresholds.",
+      "Watching Gate: delay increases defeat pressure and locks some recovery tiles.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Hold two sun markers at the end of the same round.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 19 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [],
+    "artPackageId": "TG-F01-ELITE-ART-C05-M19",
+    "dialogueId": "TG-F01-ELITE-DLG-C05-M19",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C05-M19",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  },
+  {
+    "id": "TG-F01-C05-M20",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-NORMAL",
+    "campaignType": "Normal",
+    "chapter": 5,
+    "chapterTitle": "The Ascension",
+    "missionNumber": 20,
+    "missionInChapter": 4,
+    "title": "Ascension at the Watching Door",
+    "description": "Aten Ra advances through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones while the Gate tests whether solar law can hold under pressure.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 800,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-008",
+    "terrain": "sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones",
+    "objectives": {
+      "primary": "Break the marked commander before its law spreads across the map.",
+      "optional": [
+        "Complete before turn 9",
+        "Keep all three Titans standing",
+        "Trigger at least two faction synergy actions"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-001",
+          "TG-CREATURE-002"
+        ],
+        "entry": "deployed at opposing gate markers"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-002",
+          "TG-CREATURE-003"
+        ],
+        "entry": "reinforcement from shadowed lane",
+        "trigger": "turn 3 or primary objective touched"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-004",
+      "phaseCount": 3,
+      "mechanic": "changes sunflare timing and objective pressure"
+    },
+    "turnLimit": null,
+    "specialRules": [
+      "Eclipse Phase: the boss changes terrain rules at health or objective thresholds.",
+      "Watching Gate: delay increases defeat pressure and locks some recovery tiles."
+    ],
+    "victoryConditions": [
+      "Break the marked commander before its law spreads across the map."
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Primary objective fails",
+      "Protected objective is destroyed"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component",
+        "Aten Ra mission 20 codex shard"
+      ],
+      "replay": [
+        "Solar upgrade dust",
+        "Faction shard cache",
+        "Low-tier gear component"
+      ],
+      "stars": {
+        "three": "Primary plus all optional objectives",
+        "two": "Primary completed",
+        "one": "Primary completed with one Titan standing or severe turn pressure"
+      }
+    },
+    "codexUnlocks": [
+      "TG-F01-CODEX-20"
+    ],
+    "artPackageId": "TG-F01-ART-C05-M20",
+    "dialogueId": "TG-F01-DLG-C05-M20",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Not Started",
+    "developmentStatus": "Designed"
+  },
+  {
+    "id": "TG-F01-E-C05-M20",
+    "factionId": "TG-FACTION-001",
+    "campaignId": "TG-F01-CAMPAIGN-ELITE",
+    "campaignType": "Elite",
+    "chapter": 5,
+    "chapterTitle": "The Ascension",
+    "missionNumber": 20,
+    "missionInChapter": 4,
+    "title": "Elite: Ascension at the Watching Door",
+    "description": "Elite remix of Ascension at the Watching Door: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
+    "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
+    "recommendedPower": 1020,
+    "teamSize": 3,
+    "encouragedTitanRoles": [
+      "support guardian",
+      "mobile striker",
+      "objective holder"
+    ],
+    "mapId": "TG-MAP-002",
+    "terrain": "sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones",
+    "objectives": {
+      "primary": "Break the marked commander before its law spreads across the map. Elite remix: complete it while stabilizing a secondary solar seal.",
+      "optional": [
+        "Win with no Titan defeated",
+        "Win before turn 10",
+        "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      ]
+    },
+    "enemyWaves": [
+      {
+        "wave": 1,
+        "enemyIds": [
+          "TG-CREATURE-003",
+          "TG-CREATURE-002",
+          "TG-CREATURE-001"
+        ],
+        "entry": "split flanks with one enemy already contesting an objective"
+      },
+      {
+        "wave": 2,
+        "enemyIds": [
+          "TG-CREATURE-005",
+          "TG-CREATURE-001"
+        ],
+        "entry": "elite reinforcement wave",
+        "trigger": "secondary seal destabilizes or turn 2"
+      },
+      {
+        "wave": 3,
+        "enemyIds": [
+          "TG-CREATURE-002"
+        ],
+        "entry": "late pressure unit",
+        "trigger": "one optional objective completed"
+      }
+    ],
+    "boss": {
+      "enemyId": "TG-CREATURE-004",
+      "phaseCount": 3,
+      "mechanic": "changes start positions, suppresses one recovery lane, and forces objective timing"
+    },
+    "turnLimit": 9,
+    "specialRules": [
+      "Eclipse Phase: the boss changes terrain rules at health or objective thresholds.",
+      "Watching Gate: delay increases defeat pressure and locks some recovery tiles.",
+      "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+      "Restricted Recovery: healing or recovery tiles deactivate after use."
+    ],
+    "victoryConditions": [
+      "Break the marked commander before its law spreads across the map.",
+      "Secondary solar seal stabilized before extraction"
+    ],
+    "defeatConditions": [
+      "All Titans fall",
+      "Secondary seal collapses",
+      "Elite turn limit expires"
+    ],
+    "rewards": {
+      "firstClear": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern",
+        "Prestige sigil",
+        "Elite Aten Ra mission 20 codex shard"
+      ],
+      "replay": [
+        "Refined solar alloy",
+        "Elite faction shard",
+        "High-tier gear pattern"
+      ],
+      "stars": {
+        "three": "Primary, secondary, and all optional objectives completed",
+        "two": "Primary and secondary completed",
+        "one": "Primary completed after seal instability"
+      }
+    },
+    "codexUnlocks": [
+      "TG-F01-CODEX-20"
+    ],
+    "artPackageId": "TG-F01-ELITE-ART-C05-M20",
+    "dialogueId": "TG-F01-ELITE-DLG-C05-M20",
+    "audioRequirements": [
+      "low temple pulse",
+      "sunflare impact cue",
+      "Gate pressure swell"
+    ],
+    "completionState": "Locked Until Normal Complete",
+    "developmentStatus": "Elite Remix Designed",
+    "eliteRemixOf": "TG-F01-C05-M20",
+    "meaningfulDifferences": [
+      "different starting positions",
+      "secondary seal objective",
+      "additional reinforcement wave",
+      "stricter turn limit",
+      "altered map lane/hazard emphasis",
+      "boss or commander mechanic added"
+    ]
+  }
+]
