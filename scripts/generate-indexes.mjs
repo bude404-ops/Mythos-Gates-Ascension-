@@ -25,7 +25,10 @@ const files = {
   'visual-baselines.json': 'visualBaselines',
   'realm-codex.json': 'realmCodex',
   'hybrid-visual-architecture.json': 'hybridVisualArchitecture',
-  'asset-pipeline.json': 'assetPipeline'
+  'asset-pipeline.json': 'assetPipeline',
+  'github-sync-policy.json': 'githubSyncPolicy',
+  'github-sync-status.json': 'githubSyncStatus',
+  'change-history.json': 'changeHistory'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {
