@@ -15,6 +15,7 @@ function register(collection, item, file){
 const data = {
   project: read('data/project.json'),
   factions: read('data/factions.json'),
+  hollowThreatFaction: read('data/hollow-faction.json'),
   titans: read('data/titans.json'),
   characters: read('data/characters.json'),
   units: read('data/units.json'),
@@ -25,6 +26,7 @@ const data = {
   lore: read('data/lore-index.json'),
   npcs: read('data/npcs.json'),
   creatures: read('data/creatures.json'),
+  hollowEncounterSystem: read('data/hollow-encounter-system.json'),
   backstories: read('data/character-backstories.json'),
   maps: read('data/maps.json'),
   campaigns: read('data/campaigns.json'),
@@ -76,7 +78,8 @@ const missionArtPackageIds = new Set(data.missionArtPackages.map(a => a.id));
 const campaignChapterIds = new Set(data.campaignChapters.map(c => c.id));
 const storylineArcIds = new Set(data.storylineArcs.map(s => s.id));
 
-if(data.factions.length !== 7) fail(`Expected 7 factions, found ${data.factions.length}`);
+if(data.factions.length !== 7) fail(`Expected 7 playable factions, found ${data.factions.length}`);
+if(data.hollowThreatFaction.playable !== false || data.hollowThreatFaction.classification !== 'Hostile Threat Faction') fail('Hollow must remain a non-playable threat faction');
 if(data.titans.length !== 63) fail(`Expected 63 Titans, found ${data.titans.length}`);
 
 for (const titan of data.titans) {
@@ -108,6 +111,7 @@ for (const npc of data.npcs) {
 
 for (const creature of data.creatures) {
   if(creature.playable !== false) fail(`${creature.id}: creature must be non-playable`);
+  if(creature.threatFactionId && creature.threatFactionId !== data.hollowThreatFaction.id) fail(`${creature.id}: invalid threatFactionId ${creature.threatFactionId}`);
   if(!promptIds.has(creature.artPromptId)) fail(`${creature.id}: missing prompt ${creature.artPromptId}`);
   if(!creature.backstoryId || !backstoryIds.has(creature.backstoryId) || !backstoryEntityIds.has(creature.id)) fail(`${creature.id}: missing linked backstory ${creature.backstoryId}`);
   if(!exists(`creatures/${creature.id}.json`)) fail(`${creature.id}: missing individual creature file`);
@@ -183,6 +187,14 @@ for (const backstory of data.backstories) {
 }
 if(data.backstories.length !== data.titans.length + data.npcs.length + data.creatures.length) fail(`Backstory coverage mismatch: ${data.backstories.length}`);
 
+
+const hollowCreatureIds = data.creatures.filter(c => c.threatFactionId === data.hollowThreatFaction.id).map(c => c.id);
+if(hollowCreatureIds.length < 16) fail(`Hollow creature roster too small: ${hollowCreatureIds.length}`);
+for (const id of data.hollowEncounterSystem.roster || []) if(!creatureIds.has(id)) fail(`Hollow encounter roster invalid creature ${id}`);
+if((data.hollowEncounterSystem.roster || []).length !== hollowCreatureIds.length) fail('Hollow encounter roster does not cover all Hollow creatures');
+for (const pool of Object.values(data.hollowEncounterSystem.pools || {})) for (const id of pool || []) if(!creatureIds.has(id)) fail(`Hollow encounter pool invalid creature ${id}`);
+for (const injector of data.hollowEncounterSystem.sampleMissionInjectors || []) for (const id of injector.enemyIds || []) if(!creatureIds.has(id)) fail(`Hollow injector invalid creature ${id}`);
+
 for (const arc of data.storylineArcs) {
   for (const id of arc.factionFocus || []) if(!factionIds.has(id)) fail(`${arc.id}: invalid faction focus ${id}`);
   for (const id of arc.campaignIds || []) if(!campaignIds.has(id)) fail(`${arc.id}: invalid campaign ${id}`);
@@ -225,4 +237,4 @@ if(!data.visualScreens.some(s => s.id === 'TG-SCREEN-TACTICAL-MAP-PROTOTYPE' && 
 const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','Game Preview','Visual QA','Tactical Map Prototype','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
 
-console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status}, null, 2));
+console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status}, null, 2));
