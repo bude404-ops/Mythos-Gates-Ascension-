@@ -23,7 +23,9 @@ const files = {
   'visual-screens.json': 'visualScreens',
   'visual-change-rules.json': 'visualChangeRules',
   'visual-baselines.json': 'visualBaselines',
-  'realm-codex.json': 'realmCodex'
+  'realm-codex.json': 'realmCodex',
+  'hybrid-visual-architecture.json': 'hybridVisualArchitecture',
+  'asset-pipeline.json': 'assetPipeline'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {
