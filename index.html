@@ -17,7 +17,7 @@
           <p class="text-xs font-black uppercase tracking-[.28em] text-primary">Titan Gates: Ascension</p>
           <h1 class="truncate text-2xl font-black md:text-4xl">GitHub Dev Platform</h1>
         </a>
-        <a id="repoLink" target="_blank" rel="noreferrer" class="rounded-2lg border border-primary/40 bg-primary/10 px-3 py-2 text-sm font-black text-primary">GitHub</a>
+        <a id="repoLink" target="_blank" rel="noreferrer" class="rounded-2lg border border-primary/40 bg-primary/10 px-3 py-2 text-sm font-black text-primary">GitHub</a><a href="#/sync" class="rounded-2lg border border-bull-500/40 bg-bull-950/20 px-3 py-2 text-sm font-black text-bull-400">Sync</a>
       </div>
       <div class="mt-3 flex gap-2">
         <input id="search" class="w-full rounded-2lg border border-neutral-700 bg-neutral-900 px-4 py-3 text-neutral-50 placeholder-neutral-500 focus:border-primary" placeholder="Search Titans, factions, lore, prompts, tasks..." />
@@ -32,12 +32,13 @@
       <a class="rounded-xl bg-neutral-900 p-2" href="#/game">Game</a>
       <a class="rounded-xl bg-neutral-900 p-2" href="#/titans">Titans</a>
       <a class="rounded-xl bg-neutral-900 p-2" href="#/art">Art</a>
+      <a class="rounded-xl bg-neutral-900 p-2" href="#/sync">Sync</a>
       <a class="rounded-xl bg-neutral-900 p-2" href="#/dev">Dev</a>
     </div>
   </nav>
   <script>
     const DATA = {};
-    const files = ['project','factions','titans','characters','units','art-prompts','artworks','directors','development-tasks','lore-index','npcs','creatures','maps','campaigns','chapters','visual-screens','visual-change-rules','visual-baselines','index'];
+    const files = ['project','factions','titans','characters','units','art-prompts','artworks','directors','development-tasks','lore-index','npcs','creatures','maps','campaigns','chapters','visual-screens','visual-change-rules','visual-baselines','realm-codex','hybrid-visual-architecture','asset-pipeline','github-sync-policy','github-sync-status','change-history','index'];
     const $ = id => document.getElementById(id);
     const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
     const slug = s => String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
@@ -46,6 +47,19 @@
       try { await navigator.clipboard.writeText(text); toast(label); }
       catch(e){ const t=document.createElement('textarea'); t.value=text; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); toast(label); }
     }
+
+    async function refreshGithubLiveStatus(){
+      const s=DATA['github-sync-status']; if(!s) return;
+      const repo=s.repository || 'bude404-ops/Titans-Gate-';
+      try{
+        const commit=await fetch(`https://api.github.com/repos/${repo}/commits/main`).then(r=>r.ok?r.json():null);
+        if(commit?.sha){ s.commit=commit.sha.slice(0,7); s.lastPushTime=commit.commit?.committer?.date || s.lastPushTime; s.status='SYNCED'; s.github='SYNCED'; }
+        const runs=await fetch(`https://api.github.com/repos/${repo}/actions/runs?branch=main&per_page=1`).then(r=>r.ok?r.json():null);
+        const run=runs?.workflow_runs?.[0];
+        if(run){ s.deployment = run.status==='completed' ? (run.conclusion==='success'?'SUCCESS':'FAILED') : 'IN_PROGRESS'; }
+      }catch(e){ s.deployment = s.deployment || 'UNKNOWN'; }
+    }
+
     function toast(msg){ let el=$('toast'); if(!el){ el=document.createElement('div'); el.id='toast'; el.className='fixed left-4 right-4 top-4 z-50 rounded-2lg border border-bull-500/50 bg-neutral-900 p-3 text-center font-black text-bull-400 md:left-auto md:w-96'; document.body.appendChild(el);} el.textContent=msg; clearTimeout(window.__toast); window.__toast=setTimeout(()=>el.remove(),1800); }
     function card(title, body, href, meta=''){ return `<a href="${href}" class="block rounded-2_5xl border border-neutral-800 bg-neutral-900 p-5 shadow-dark-outline active:scale-[.99]"><p class="text-xs font-black uppercase tracking-[.24em] text-primary">${esc(meta)}</p><h3 class="mt-1 text-2xl font-black">${esc(title)}</h3><p class="mt-2 text-sm text-neutral-300">${esc(body)}</p></a>`; }
     async function load(){ for(const f of files){ const r=await fetch(`data/${f}.json?v=${Date.now()}`); if(!r.ok) throw new Error(`Missing data/${f}.json`); DATA[f]=await r.json(); } $('repoLink').href=DATA.project.githubRepo; window.addEventListener('hashchange', render); $('search').addEventListener('keydown', e=>{ if(e.key==='Enter') go('#/search') }); render(); }
@@ -55,13 +69,38 @@
       const order={High:3,Medium:2,Low:1};
       return [...tasks].filter(t=>['NEXT','ACTIVE','BLOCKED'].includes(t.status)).sort((a,b)=>(order[b.priority]||0)-(order[a.priority]||0))[0];
     }
-    function home(){ const c=counts(), p=DATA.project, rec=directorRecommendation(); return `<section class="space-y-4">
+    
+function syncColor(status){ return status==='SYNCED' ? 'bull' : status==='SYNC_ERROR' ? 'bear' : 'primary'; }
+function githubStatusPanel(){
+  const s=DATA['github-sync-status']||{}, h=DATA['change-history']||{entries:[]}, color=syncColor(s.status);
+  const icon=s.status==='SYNCED'?'🟢':s.status==='SYNC_ERROR'?'🔴':'🟡';
+  const command=`npm run precommit:verify && npm run sync:github -- ${s.commitMessage||'chore: sync approved titan gates changes'}`;
+  return `<section class="rounded-3xl border border-${color}-500/40 bg-${color}-950/10 p-5">
+    <div class="flex flex-wrap items-start justify-between gap-3">
+      <div><p class="text-xs font-black uppercase tracking-[.35em] text-${color}-400">GitHub Status</p><h3 class="mt-1 text-3xl font-black">${icon} ${esc(s.status||'UNKNOWN')}</h3><p class="mt-2 text-neutral-300">GitHub main is the authoritative source of truth. Do not call a change complete until it is pushed and verified.</p></div>
+      <div class="rounded-2lg border border-neutral-800 bg-neutral-950 p-3 text-sm"><b>BUILD</b> ${esc(s.build||'—')}<br/><b>GITHUB</b> ${esc(s.github||'—')}<br/><b>DEPLOYMENT</b> ${esc(s.deployment||'—')}</div>
+    </div>
+    <div class="mt-4 grid gap-2 md:grid-cols-4">
+      <div class="rounded-2lg bg-neutral-950 p-3"><p class="text-xs text-neutral-400">Version</p><b>${esc(s.version||DATA.project.version)}</b></div>
+      <div class="rounded-2lg bg-neutral-950 p-3"><p class="text-xs text-neutral-400">Commit</p><b>${esc(s.commit||'pending')}</b></div>
+      <div class="rounded-2lg bg-neutral-950 p-3"><p class="text-xs text-neutral-400">Last GitHub Push</p><b>${esc(s.lastPushTime||'pending')}</b></div>
+      <div class="rounded-2lg bg-neutral-950 p-3"><p class="text-xs text-neutral-400">Previous Stable</p><b>${esc(s.previousStableVersion||DATA.project.previousStableVersion||'—')}</b></div>
+    </div>
+    <div class="mt-4 rounded-2lg border border-neutral-800 bg-neutral-950 p-4">
+      <div class="flex flex-wrap items-center justify-between gap-2"><div><p class="text-xs font-black uppercase tracking-[.24em] text-primary">Manual Push Backup</p><p class="text-neutral-300">Runs validate → build → Visual QA → secret scan → commit → push. Requires secure local/GitHub Actions authentication; never browser tokens.</p></div><button onclick="copyText(${JSON.stringify(command)},'Manual push command copied')" class="rounded-2lg bg-primary px-4 py-3 font-black text-white">Push to GitHub</button></div>
+    </div>
+    <div class="mt-4 grid gap-2 md:grid-cols-2">${(h.entries||[]).slice(0,4).map(e=>`<article class="rounded-2lg border border-neutral-800 bg-neutral-950 p-3"><p class="text-xs font-black uppercase tracking-[.2em] text-neutral-500">${esc(e.status)} · ${esc(e.version)}</p><h4 class="text-xl font-black">${esc(e.summary)}</h4><p class="text-sm text-neutral-400">Commit ${esc(e.commit||'pending')}</p></article>`).join('')}</div>
+  </section>`;
+}
+
+function home(){ const c=counts(), p=DATA.project, rec=directorRecommendation(); return `<section class="space-y-4">
       <div class="rounded-3xl border border-primary/40 bg-neutral-900 p-5">
         <p class="text-xs font-black uppercase tracking-[.35em] text-primary">Build ${esc(p.version)}</p>
         <h2 class="mt-1 text-4xl font-black md:text-6xl">Titan Gates: Ascension</h2>
         <p class="mt-2 text-neutral-300">${esc(p.phase)} · ${esc(p.buildStatus)} · Last update ${esc(p.lastUpdate)}</p>
         <div class="mt-4 grid grid-cols-2 gap-2 md:grid-cols-6">${[['Titans',c.titans],['Factions',c.factions],['NPCs',c.npcs||0],['Creatures',c.creatures||0],['Maps',c.maps||0],['Campaigns',c.campaigns||0],['Prompts',c.artPrompts],['Tasks',c.developmentTasks]].map(x=>`<div class="rounded-2lg bg-neutral-950 p-3"><p class="text-xs text-neutral-400">${x[0]}</p><b class="text-2xl">${x[1]}</b></div>`).join('')}</div>
       </div>
+      ${githubStatusPanel()}
       <div class="rounded-3xl border border-bull-500/40 bg-bull-950/10 p-5"><p class="text-xs font-black uppercase tracking-[.3em] text-bull-400">What should we work on next?</p><h3 class="mt-1 text-3xl font-black">${esc(rec.description)}</h3><p class="mt-2 text-neutral-300">Priority ${esc(rec.priority)} · ${esc(rec.director)} · ${esc(rec.status)}</p><p class="mt-2 text-sm text-neutral-400">Reason: project data shows this task has the highest active priority and clear dependencies.</p><div class="mt-4 grid gap-3 sm:grid-cols-2"><a href="game/preview.html" class="rounded-2lg bg-primary px-5 py-4 text-center text-xl font-black text-white no-underline">▶ GAME PREVIEW · Game Preview</a><a href="#/visual-qa" class="rounded-2lg border border-amber-700 bg-amber-950/40 px-5 py-4 text-center text-xl font-black text-amber-300 no-underline">🔍 Visual QA</a></div></div>
       <section class="grid gap-3 md:grid-cols-3">${[
         ['Game','Open the playable Titan Gates build.','#/game','Play'],['Game Preview','Open the current development preview with device presets and Dev/Player view.','game/preview.html','Visual'],['Visual QA','Review screen status, warnings, baselines, and affected changes.','#/visual-qa','Review'],['Lore Codex','Read canon lore, timeline, Realms, powers, and history.','#/lore','Canon'],['Titans','Browse all 63 Titan profiles and prompts.','#/titans','Database'],['Characters','Browse non-playable campaign character records.','#/characters','NPCs'],['Creatures','Browse Hollow, Gateborn, Beast Realm, Forgotten, and world boss threats.','#/creatures','Threats'],['Maps','Open tactical and campaign maps with hazards and objectives.','#/maps','World'],['Campaigns','Browse acts, chapters, maps, NPCs, and creatures.','#/campaigns','Campaign'],['Factions','Open seven Realm faction pages.','#/factions','Realms'],['Art Studio','Copy prompts and register artwork safely.','#/art','Production'],['Development','View active, next, blocked, and completed tasks.','#/dev','Tasks'],['Directors','View governance authority by Director.','#/directors','Governance'],['GitHub Repository','Open the source of truth.','#/github','Source']
@@ -83,8 +122,8 @@
     function directors(){ return listPage('Directors', DATA.directors, d=>`<article class="rounded-2_5xl border border-neutral-800 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.24em] text-primary">${esc(d.id)} · ${esc(d.status)}</p><h3 class="mt-1 text-3xl font-black">${esc(d.name)}</h3><p class="mt-2 text-neutral-300">${esc(d.currentFocus)}</p><p class="mt-3 text-sm text-neutral-400">Authority: ${esc(d.authority.join(', '))}</p></article>`); }
     function search(){ const q=$('search').value.toLowerCase(); const all=[...DATA.titans.map(x=>({...x,type:'Titan'})),...DATA.factions.map(x=>({...x,type:'Faction'})),...DATA['lore-index'].map(x=>({...x,name:x.title,type:'Lore'})),...DATA['art-prompts'].map(x=>({...x,name:x.entity,type:'Prompt'})),...DATA['development-tasks'].map(x=>({...x,name:x.description,type:'Task'})),...DATA.npcs.map(x=>({...x,type:'NPC'})),...DATA.creatures.map(x=>({...x,type:'Creature'})),...DATA.maps.map(x=>({...x,type:'Map'})),...DATA.campaigns.map(x=>({...x,type:'Campaign'})),...DATA.chapters.map(x=>({...x,name:x.title,type:'Chapter'}))]; const res=all.filter(x=>JSON.stringify(x).toLowerCase().includes(q)); return listPage(`Search ${q?'· '+q:''}`, res, x=>`<article class="rounded-2_5xl border border-neutral-800 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.24em] text-primary">${esc(x.type)} · ${esc(x.id)}</p><h3 class="mt-1 text-2xl font-black">${esc(x.name||x.title||x.entity||x.description)}</h3><p class="mt-2 text-sm text-neutral-300">${esc(x.faction||x.category||x.director||'Titan Gates')}</p></article>`); }
     function listPage(title, items, renderItem){ return `<section class="space-y-4"><h2 class="text-4xl font-black">${esc(title)}</h2><div class="grid gap-3 md:grid-cols-2 xl:grid-cols-3">${items.map(renderItem).join('')}</div></section>`; }
-    function render(){ const r=(location.hash||'#/').split('?')[0]; const routes={'#/':home,'#/game':game,'#/lore':lore,'#/factions':factions,'#/titans':titans,'#/characters':characters,'#/creatures':creatures,'#/maps':maps,'#/campaigns':campaigns,'#/visual-qa':visualQA,'#/art':art,'#/dev':dev,'#/development':dev,'#/directors':directors,'#/search':search,'#/github':()=>{ location.href=DATA.project.githubRepo; return home(); }}; $('app').innerHTML=(routes[r]||home)(); }
-    load().catch(e=>{ $('app').innerHTML=`<div class="rounded-3xl border border-bear-500 bg-bear-950/20 p-5"><h2 class="text-3xl font-black text-bear-400">Build data failed</h2><p>${esc(e.message)}</p></div>`; console.error(e); });
+    function render(){ const r=(location.hash||'#/').split('?')[0]; const routes={'#/':home,'#/game':game,'#/lore':lore,'#/factions':factions,'#/titans':titans,'#/characters':characters,'#/creatures':creatures,'#/maps':maps,'#/campaigns':campaigns,'#/visual-qa':visualQA,'#/sync':()=>`<section class="space-y-4">${githubStatusPanel()}</section>`,'#/art':art,'#/dev':dev,'#/development':dev,'#/directors':directors,'#/search':search,'#/github':()=>{ location.href=DATA.project.githubRepo; return home(); }}; $('app').innerHTML=(routes[r]||home)(); }
+    load().then(refreshGithubLiveStatus).then(render).catch(e=>{ $('app').innerHTML=`<div class="rounded-3xl border border-bear-500 bg-bear-950/20 p-5"><h2 class="text-3xl font-black text-bear-400">Build data failed</h2><p>${esc(e.message)}</p></div>`; console.error(e); });
   </script>
 </body>
 </html>
