@@ -23,6 +23,11 @@ const data = {
   directors: read('data/directors.json'),
   tasks: read('data/development-tasks.json'),
   lore: read('data/lore-index.json'),
+  npcs: read('data/npcs.json'),
+  creatures: read('data/creatures.json'),
+  maps: read('data/maps.json'),
+  campaigns: read('data/campaigns.json'),
+  chapters: read('data/chapters.json'),
   index: read('data/index.json')
 };
 
@@ -35,6 +40,11 @@ const factionIds = new Set(data.factions.map(f => f.id));
 const titanIds = new Set(data.titans.map(t => t.id));
 const promptIds = new Set(data.prompts.map(p => p.id));
 const artworkIds = new Set(data.artworks.map(a => a.id));
+const npcIds = new Set(data.npcs.map(n => n.id));
+const creatureIds = new Set(data.creatures.map(c => c.id));
+const mapIds = new Set(data.maps.map(m => m.id));
+const campaignIds = new Set(data.campaigns.map(c => c.id));
+const chapterIds = new Set(data.chapters.map(c => c.id));
 
 if(data.factions.length !== 7) fail(`Expected 7 factions, found ${data.factions.length}`);
 if(data.titans.length !== 63) fail(`Expected 63 Titans, found ${data.titans.length}`);
@@ -48,10 +58,46 @@ for (const titan of data.titans) {
 
 for (const prompt of data.prompts) {
   if(prompt.category === 'Titan' && !titanIds.has(prompt.entityId)) fail(`${prompt.id}: invalid Titan entity ${prompt.entityId}`);
+  if(prompt.category === 'NPC' && !npcIds.has(prompt.entityId)) fail(`${prompt.id}: invalid NPC entity ${prompt.entityId}`);
+  if(prompt.category === 'Creature' && !creatureIds.has(prompt.entityId)) fail(`${prompt.id}: invalid creature entity ${prompt.entityId}`);
+  if(prompt.category === 'Map' && !mapIds.has(prompt.entityId)) fail(`${prompt.id}: invalid map entity ${prompt.entityId}`);
   if(!exists(`art/prompts/${prompt.id}.json`)) fail(`${prompt.id}: missing per-prompt JSON file`);
   const per = read(`art/prompts/${prompt.id}.json`);
   if(per.id !== prompt.id || per.version < 1) fail(`${prompt.id}: invalid prompt file content`);
   if(!prompt.prompt || !prompt.negativePrompt) fail(`${prompt.id}: prompt text missing`);
+}
+
+for (const npc of data.npcs) {
+  if(npc.playable !== false) fail(`${npc.id}: NPC must be non-playable`);
+  if(npc.factionId && !factionIds.has(npc.factionId)) fail(`${npc.id}: invalid factionId ${npc.factionId}`);
+  if(!promptIds.has(npc.artPromptId)) fail(`${npc.id}: missing prompt ${npc.artPromptId}`);
+  if(!exists(`npcs/${npc.id}.json`)) fail(`${npc.id}: missing individual NPC file`);
+}
+
+for (const creature of data.creatures) {
+  if(creature.playable !== false) fail(`${creature.id}: creature must be non-playable`);
+  if(!promptIds.has(creature.artPromptId)) fail(`${creature.id}: missing prompt ${creature.artPromptId}`);
+  if(!exists(`creatures/${creature.id}.json`)) fail(`${creature.id}: missing individual creature file`);
+}
+
+for (const map of data.maps) {
+  if(!campaignIds.has(map.campaignId)) fail(`${map.id}: invalid campaignId ${map.campaignId}`);
+  if(!promptIds.has(map.artPromptId)) fail(`${map.id}: missing prompt ${map.artPromptId}`);
+  if(!exists(`maps/${map.id}.json`)) fail(`${map.id}: missing individual map file`);
+}
+
+for (const campaign of data.campaigns) {
+  for (const id of campaign.chapters || []) if(!chapterIds.has(id)) fail(`${campaign.id}: invalid chapter ${id}`);
+  for (const id of campaign.maps || []) if(!mapIds.has(id)) fail(`${campaign.id}: invalid map ${id}`);
+  for (const id of campaign.npcs || []) if(!npcIds.has(id)) fail(`${campaign.id}: invalid npc ${id}`);
+  for (const id of campaign.creatures || []) if(!creatureIds.has(id)) fail(`${campaign.id}: invalid creature ${id}`);
+  if(!exists(`campaigns/${campaign.id}.json`)) fail(`${campaign.id}: missing individual campaign file`);
+}
+
+for (const chapter of data.chapters) {
+  if(!campaignIds.has(chapter.campaignId)) fail(`${chapter.id}: invalid campaignId ${chapter.campaignId}`);
+  if(!mapIds.has(chapter.mapId)) fail(`${chapter.id}: invalid mapId ${chapter.mapId}`);
+  if(!exists(`campaigns/chapters/${chapter.id}.json`)) fail(`${chapter.id}: missing individual chapter file`);
 }
 
 for (const art of data.artworks) {
@@ -75,4 +121,4 @@ if(!game.includes('OPEN THE TITAN GATE') || !game.includes('function enemyTurn')
 const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
 
-console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, prompts:data.prompts.length, tasks:data.tasks.length}, null, 2));
+console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, tasks:data.tasks.length}, null, 2));
