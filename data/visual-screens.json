@@ -272,5 +272,36 @@
       "Victory to campaign continuity",
       "Mobile performance"
     ]
+  },
+  {
+    "id": "TG-SCREEN-TACTICAL-MAP-PROTOTYPE",
+    "slug": "tactical-map-prototype",
+    "name": "Tactical Map Prototype",
+    "status": "PASS",
+    "director": "Gameplay Director",
+    "lastTestedBuild": "0.3.4",
+    "lastApprovedBuild": "0.3.4",
+    "warnings": [
+      "Prototype uses emoji placeholder sprites until approved Titan sprites are imported.",
+      "Terrain is procedural preview geometry until production 3D battlefield assets are authored."
+    ],
+    "errors": [],
+    "affectedBy": [
+      "battle",
+      "map",
+      "tactical",
+      "sprite",
+      "mobile",
+      "camera"
+    ],
+    "description": "Playable isometric tactical battlefield prototype with Realm themes, elevated terrain, 2D Titan/enemy tokens, movement highlights, attack resolution, enemy phase, and mobile camera controls.",
+    "checks": [
+      "2D combatants remain sprites/tokens",
+      "3D/isometric battlefield terrain visible",
+      "Tile movement highlights render",
+      "Attack highlights render",
+      "Enemy phase executes",
+      "Mobile HUD and camera remain readable"
+    ]
   }
 ]
