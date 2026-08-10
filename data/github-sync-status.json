@@ -1,15 +1,15 @@
 {
   "id": "TG-GITHUB-SYNC-STATUS-001",
-  "status": "SYNC_ERROR",
-  "version": "0.3.4",
+  "status": "CHANGES_PENDING",
+  "version": "0.3.5",
   "previousStableVersion": "0.3.3",
-  "commit": "LIVE_REMOTE",
-  "commitMessage": "feat: add playable tactical map prototype",
+  "commit": "PENDING_PUSH",
+  "commitMessage": "feat: add aten ra mobile screen prompt set",
   "branch": "main",
   "repository": "bude404-ops/Titans-Gate-",
-  "lastPushTime": "2026-08-10T18:25:26Z",
+  "lastPushTime": "2026-08-10T19:11:20Z",
   "build": "PASS",
-  "github": "SYNCED",
+  "github": "CHANGES_PENDING",
   "deployment": "BLOCKED_WORKFLOW_PERMISSION",
   "visualQa": "PASS",
   "mobileCheck": "PASS",
@@ -17,10 +17,10 @@
   "manualPushAvailable": true,
   "safeAuthentication": "Server-side token, GitHub Actions secret, GitHub App, or local secure environment variable only. Browser token use is forbidden.",
   "recentChanges": [
-    "Playable tactical map prototype added and prepared for GitHub sync.",
-    "Visual QA and build validation updated for tactical prototype.",
-    "Deployment workflow remains blocked until workflow permission is supplied."
+    "Aten Ra Campaign Map Overview generation prompt added.",
+    "Aten Ra Tactical Battle Map generation prompt added.",
+    "Prompt docs and per-prompt JSON records added."
   ],
   "liveStatusSource": "Public GitHub API; no credentials in browser.",
-  "syncError": "Approved tactical prototype files are pushed to GitHub; deployment remains blocked because .github/workflows/pages.yml requires a workflow-scoped credential."
+  "syncError": "Prompt set changes are pending validation and GitHub push; deployment workflow remains blocked until workflow permission is supplied."
 }
