@@ -23,3 +23,16 @@ Titans Gate is mythology as evidence of real extradimensional power.
 Every Realm must feel like its own ancient civilization. Every Titan must feel born from that civilization's laws, symbols, powers, and wounds. Every gameplay role must come from lore. Every visual design must reject sci-fi, generic fantasy, and ordinary human cosplay. Every Titan Gate must feel ancient, dangerous, sacred, and capable of breaking reality.
 
 - [NPCs, Creatures, Maps, and Campaigns](09-NPCS-CREATURES-MAPS-CAMPAIGNS.md) — Director-approved campaign expansion without playable Heroes.
+
+## Faction Realm Codex
+
+The following chapters expand every faction, Realm, Gate, and Titan role without adding playable Heroes or normal units:
+
+- [Aten Ra: The Solar Dominion of Khepra](10-ATEN-RA-REALM-CODEX.md)
+- [Asgardian: The Storm-Rooted Aesir Holds](10-ASGARDIAN-REALM-CODEX.md)
+- [Olympian: The Marble Sky of Olympus](10-OLYMPIAN-REALM-CODEX.md)
+- [Kami: The Shrine-Path Archipelago](10-KAMI-REALM-CODEX.md)
+- [Tuatha: The Root-Crowned Green Below](10-TUATHA-REALM-CODEX.md)
+- [Empyrean: The White Citadel Above Law](10-EMPYREAN-REALM-CODEX.md)
+- [Infernal Dominion: The Black Iron Court of Dominion](10-INFERNAL-DOMINION-REALM-CODEX.md)
+
