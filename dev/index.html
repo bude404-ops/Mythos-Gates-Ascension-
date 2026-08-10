@@ -15,7 +15,7 @@
       <div class="flex items-center justify-between gap-3">
         <a href="#/" class="min-w-0">
           <p class="text-xs font-black uppercase tracking-[.28em] text-primary">Titan Gates: Ascension</p>
-          <h1 class="truncate text-2xl font-black md:text-4xl">Dev Platform</h1>
+          <h1 class="truncate text-2xl font-black md:text-4xl">GitHub Dev Platform</h1>
         </a>
         <a id="repoLink" target="_blank" rel="noreferrer" class="rounded-2lg border border-primary/40 bg-primary/10 px-3 py-2 text-sm font-black text-primary">GitHub</a>
       </div>
@@ -37,7 +37,7 @@
   </nav>
   <script>
     const DATA = {};
-    const files = ['project','factions','titans','characters','units','art-prompts','artworks','directors','development-tasks','lore-index','npcs','creatures','maps','campaigns','chapters','index'];
+    const files = ['project','factions','titans','characters','units','art-prompts','artworks','directors','development-tasks','lore-index','npcs','creatures','maps','campaigns','chapters','visual-screens','visual-change-rules','visual-baselines','index'];
     const $ = id => document.getElementById(id);
     const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
     const slug = s => String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
@@ -82,7 +82,7 @@
     function directors(){ return listPage('Directors', DATA.directors, d=>`<article class="rounded-2_5xl border border-neutral-800 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.24em] text-primary">${esc(d.id)} · ${esc(d.status)}</p><h3 class="mt-1 text-3xl font-black">${esc(d.name)}</h3><p class="mt-2 text-neutral-300">${esc(d.currentFocus)}</p><p class="mt-3 text-sm text-neutral-400">Authority: ${esc(d.authority.join(', '))}</p></article>`); }
     function search(){ const q=$('search').value.toLowerCase(); const all=[...DATA.titans.map(x=>({...x,type:'Titan'})),...DATA.factions.map(x=>({...x,type:'Faction'})),...DATA['lore-index'].map(x=>({...x,name:x.title,type:'Lore'})),...DATA['art-prompts'].map(x=>({...x,name:x.entity,type:'Prompt'})),...DATA['development-tasks'].map(x=>({...x,name:x.description,type:'Task'})),...DATA.npcs.map(x=>({...x,type:'NPC'})),...DATA.creatures.map(x=>({...x,type:'Creature'})),...DATA.maps.map(x=>({...x,type:'Map'})),...DATA.campaigns.map(x=>({...x,type:'Campaign'})),...DATA.chapters.map(x=>({...x,name:x.title,type:'Chapter'}))]; const res=all.filter(x=>JSON.stringify(x).toLowerCase().includes(q)); return listPage(`Search ${q?'· '+q:''}`, res, x=>`<article class="rounded-2_5xl border border-neutral-800 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.24em] text-primary">${esc(x.type)} · ${esc(x.id)}</p><h3 class="mt-1 text-2xl font-black">${esc(x.name||x.title||x.entity||x.description)}</h3><p class="mt-2 text-sm text-neutral-300">${esc(x.faction||x.category||x.director||'Titan Gates')}</p></article>`); }
     function listPage(title, items, renderItem){ return `<section class="space-y-4"><h2 class="text-4xl font-black">${esc(title)}</h2><div class="grid gap-3 md:grid-cols-2 xl:grid-cols-3">${items.map(renderItem).join('')}</div></section>`; }
-    function render(){ const r=(location.hash||'#/').split('?')[0]; const routes={'#/':home,'#/game':game,'#/lore':lore,'#/factions':factions,'#/titans':titans,'#/characters':characters,'#/creatures':creatures,'#/maps':maps,'#/campaigns':campaigns,'#/art':art,'#/dev':dev,'#/development':dev,'#/directors':directors,'#/search':search,'#/github':()=>{ location.href=DATA.project.githubRepo; return home(); }}; $('app').innerHTML=(routes[r]||home)(); }
+    function render(){ const r=(location.hash||'#/').split('?')[0]; const routes={'#/':home,'#/game':game,'#/lore':lore,'#/factions':factions,'#/titans':titans,'#/characters':characters,'#/creatures':creatures,'#/maps':maps,'#/campaigns':campaigns,'#/visual-qa':visualQA,'#/art':art,'#/dev':dev,'#/development':dev,'#/directors':directors,'#/search':search,'#/github':()=>{ location.href=DATA.project.githubRepo; return home(); }}; $('app').innerHTML=(routes[r]||home)(); }
     load().catch(e=>{ $('app').innerHTML=`<div class="rounded-3xl border border-bear-500 bg-bear-950/20 p-5"><h2 class="text-3xl font-black text-bear-400">Build data failed</h2><p>${esc(e.message)}</p></div>`; console.error(e); });
   </script>
 </body>
