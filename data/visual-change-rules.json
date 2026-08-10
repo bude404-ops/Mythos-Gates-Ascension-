@@ -1,0 +1,96 @@
+[
+  {
+    "changeType": "titan-artwork",
+    "label": "Titan artwork changed",
+    "affectedScreens": [
+      "TG-SCREEN-TITAN-SELECTION",
+      "TG-SCREEN-TITAN-PROFILE",
+      "TG-SCREEN-BATTLE",
+      "TG-SCREEN-CODEX"
+    ],
+    "director": "Art Director",
+    "id": "TG-VIS-RULE-001"
+  },
+  {
+    "changeType": "titan-data",
+    "label": "Titan name/stats/abilities changed",
+    "affectedScreens": [
+      "TG-SCREEN-TITAN-SELECTION",
+      "TG-SCREEN-TITAN-PROFILE",
+      "TG-SCREEN-BATTLE",
+      "TG-SCREEN-CODEX"
+    ],
+    "director": "Gameplay Director",
+    "id": "TG-VIS-RULE-002"
+  },
+  {
+    "changeType": "faction-data",
+    "label": "Faction lore/visual identity changed",
+    "affectedScreens": [
+      "TG-SCREEN-FACTION",
+      "TG-SCREEN-TITAN-SELECTION",
+      "TG-SCREEN-CODEX",
+      "TG-SCREEN-CAMPAIGN"
+    ],
+    "director": "Lore Director",
+    "id": "TG-VIS-RULE-003"
+  },
+  {
+    "changeType": "npc-data",
+    "label": "NPC/campaign character changed",
+    "affectedScreens": [
+      "TG-SCREEN-CHARACTER-PROFILE",
+      "TG-SCREEN-CAMPAIGN",
+      "TG-SCREEN-CODEX"
+    ],
+    "director": "Lore Director",
+    "id": "TG-VIS-RULE-004"
+  },
+  {
+    "changeType": "creature-data",
+    "label": "Creature/threat changed",
+    "affectedScreens": [
+      "TG-SCREEN-BATTLE",
+      "TG-SCREEN-CAMPAIGN",
+      "TG-SCREEN-CODEX"
+    ],
+    "director": "Gameplay Director",
+    "id": "TG-VIS-RULE-005"
+  },
+  {
+    "changeType": "map-data",
+    "label": "Map or hazard changed",
+    "affectedScreens": [
+      "TG-SCREEN-CAMPAIGN",
+      "TG-SCREEN-BATTLE",
+      "TG-SCREEN-CODEX"
+    ],
+    "director": "Gameplay Director",
+    "id": "TG-VIS-RULE-006"
+  },
+  {
+    "changeType": "campaign-data",
+    "label": "Campaign/chapter changed",
+    "affectedScreens": [
+      "TG-SCREEN-CAMPAIGN",
+      "TG-SCREEN-CODEX",
+      "TG-SCREEN-BATTLE"
+    ],
+    "director": "Development Director",
+    "id": "TG-VIS-RULE-007"
+  },
+  {
+    "changeType": "ui-layout",
+    "label": "Game UI layout changed",
+    "affectedScreens": [
+      "TG-SCREEN-HOME",
+      "TG-SCREEN-TITAN-SELECTION",
+      "TG-SCREEN-TITAN-PROFILE",
+      "TG-SCREEN-BATTLE",
+      "TG-SCREEN-VICTORY",
+      "TG-SCREEN-DEFEAT"
+    ],
+    "director": "Development Director",
+    "id": "TG-VIS-RULE-008"
+  }
+]
