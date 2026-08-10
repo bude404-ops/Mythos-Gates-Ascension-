@@ -4,6 +4,14 @@ const browser = await chromium.launch({ executablePath: '/usr/bin/chromium-brows
 const page = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
 await page.goto('http://127.0.0.1:8141/index.html?mobilecopy=063#/art?category=Map', { waitUntil: 'domcontentloaded' });
 await page.waitForSelector('[data-art-prompt-card]', { timeout: 10000 });
+await page.waitForFunction(() => {
+  const cards = document.querySelectorAll('[data-art-prompt-card]').length;
+  const btn = document.querySelector('[data-copy-prompt]');
+  if (!btn || cards !== 12) return false;
+  btn.scrollIntoView({ block: 'center', inline: 'nearest' });
+  const r = btn.getBoundingClientRect();
+  return r.width >= 300 && r.height >= 90;
+}, null, { timeout: 10000 });
 const cards = await page.locator('[data-art-prompt-card]').count();
 if (cards !== 12) throw new Error(`Expected 12 map prompt cards, saw ${cards}`);
 const controls = await page.locator('[data-mobile-copy]').count();
