@@ -1,13 +1,13 @@
 {
   "id": "TG-GITHUB-SYNC-STATUS-001",
   "status": "SYNCED",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "previousStableVersion": "0.3.3",
   "commit": "LIVE_REMOTE",
-  "commitMessage": "feat: expand maps and campaigns",
+  "commitMessage": "feat: add campaign lore and dialogue",
   "branch": "main",
   "repository": "bude404-ops/Titans-Gate-",
-  "lastPushTime": "2026-08-10T19:34:21Z",
+  "lastPushTime": "2026-08-10T19:52:41Z",
   "build": "PASS",
   "github": "SYNCED",
   "deployment": "IGNORED_BY_REQUEST",
@@ -17,11 +17,11 @@
   "manualPushAvailable": true,
   "safeAuthentication": "Server-side token, GitHub Actions secret, GitHub App, or local secure environment variable only. Browser token use is forbidden.",
   "recentChanges": [
-    "Added Helio-Kemet Sun Realm campaign arc.",
-    "Added Kami Mirror Tempest campaign arc.",
-    "Added Empyrean Choir Vault campaign arc.",
-    "Added six map specs, nine chapters, and six map art prompts."
+    "Added dedicated lore for all seven campaigns.",
+    "Added Campaign Dialogue Bible with voice anchors.",
+    "Added first-pass chapter-opening dialogue for chapters 1-19.",
+    "Added structured dialogue data for future UI use."
   ],
   "liveStatusSource": "Public GitHub API; no credentials in browser.",
-  "syncError": "Pages workflow intentionally ignored by holder request; maps and campaigns content synced through repository content updates."
+  "syncError": "Pages workflow intentionally ignored by holder request; campaign lore and dialogue synced through repository content updates."
 }
