@@ -1,0 +1,111 @@
+{
+  "id": "TG-HOLLOW-ENCOUNTER-SYSTEM",
+  "name": "Hollow Encounter System",
+  "version": "0.6.7",
+  "status": "Campaign/Event Ready",
+  "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+  "usableIn": [
+    "Campaign enemy waves",
+    "Elite remixes",
+    "Hollow Breach seasonal events",
+    "Ascension floors",
+    "Weekly Trials",
+    "Raids"
+  ],
+  "selectionRules": [
+    "Choose by encounterTags first, threatTier second, map lore third.",
+    "Never count Hollow as a playable faction.",
+    "World Boss tier requires event or raid context.",
+    "Objective-corruptors should appear with cleanse or interrupt counterplay."
+  ],
+  "roster": [
+    "TG-CREATURE-001",
+    "TG-CREATURE-002",
+    "TG-CREATURE-004",
+    "TG-CREATURE-006",
+    "TG-CREATURE-007",
+    "TG-CREATURE-008",
+    "TG-CREATURE-009",
+    "TG-CREATURE-010",
+    "TG-CREATURE-011",
+    "TG-CREATURE-012",
+    "TG-CREATURE-013",
+    "TG-CREATURE-014",
+    "TG-CREATURE-015",
+    "TG-CREATURE-016",
+    "TG-CREATURE-017",
+    "TG-CREATURE-018"
+  ],
+  "pools": {
+    "swarm": [
+      "TG-CREATURE-006",
+      "TG-CREATURE-012"
+    ],
+    "objectiveCorruption": [
+      "TG-CREATURE-009",
+      "TG-CREATURE-012",
+      "TG-CREATURE-016"
+    ],
+    "elitePressure": [
+      "TG-CREATURE-004",
+      "TG-CREATURE-009",
+      "TG-CREATURE-011",
+      "TG-CREATURE-015",
+      "TG-CREATURE-016",
+      "TG-CREATURE-018"
+    ],
+    "realmScarSpecialists": [
+      "TG-CREATURE-008",
+      "TG-CREATURE-009",
+      "TG-CREATURE-011",
+      "TG-CREATURE-012",
+      "TG-CREATURE-013",
+      "TG-CREATURE-014",
+      "TG-CREATURE-015"
+    ],
+    "eventBosses": [
+      "TG-CREATURE-018"
+    ]
+  },
+  "sampleMissionInjectors": [
+    {
+      "name": "Hollow Breach Opening",
+      "missionTypes": [
+        "Normal"
+      ],
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-006",
+        "TG-CREATURE-016"
+      ],
+      "rule": "Adds a Gate Anchor and minor swarm to teach cleanse/interrupt priorities."
+    },
+    {
+      "name": "Elite Memory Pressure",
+      "missionTypes": [
+        "Elite"
+      ],
+      "enemyIds": [
+        "TG-CREATURE-017",
+        "TG-CREATURE-009",
+        "TG-CREATURE-010"
+      ],
+      "rule": "Punishes repeated tactics and objective turtling."
+    },
+    {
+      "name": "Realm Scar Specialist",
+      "missionTypes": [
+        "Normal",
+        "Elite"
+      ],
+      "enemyIds": [
+        "TG-CREATURE-008",
+        "TG-CREATURE-012",
+        "TG-CREATURE-013",
+        "TG-CREATURE-014",
+        "TG-CREATURE-015"
+      ],
+      "rule": "Pick one specialist matching the current Realm map."
+    }
+  ]
+}
