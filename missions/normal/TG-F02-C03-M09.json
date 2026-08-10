@@ -1,0 +1,97 @@
+{
+  "id": "TG-F02-C03-M09",
+  "factionId": "TG-FACTION-002",
+  "campaignId": "TG-F02-CAMPAIGN-NORMAL",
+  "campaignType": "Normal",
+  "chapter": 3,
+  "chapterTitle": "Marble Law, Iron Oath",
+  "missionNumber": 9,
+  "missionInChapter": 1,
+  "title": "Trial at the Marble Edge",
+  "description": "Marble Law, Iron Oath: Trial at the Marble Edge unfolds across floating marble arena edge connected to storm bridge anchors, with broken terraces and bronze judgment rails, pushing the 5-Titan Asgardian squad to convert endurance into decisive counterpressure.",
+  "lore": "Trial at the Marble Edge advances the Storm-Oath Covenant arc: the Gate tries to harvest Asgardian vows, while Valhalla law insists courage must remain chosen responsibility.",
+  "recommendedPower": 572,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "frontline oath guardian",
+    "storm counterstriker",
+    "objective anchor",
+    "mobile rescuer",
+    "rune support"
+  ],
+  "mapId": "TG-MAP-004",
+  "terrain": "floating marble arena edge connected to storm bridge anchors, with broken terraces and bronze judgment rails",
+  "objectives": {
+    "primary": "Win the trial objective without abandoning Asgardian formation law.",
+    "optional": [
+      "Complete before turn 10",
+      "Keep at least four Titans standing",
+      "Trigger at least two Oathbound counterattacks"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-004",
+        "TG-CREATURE-001"
+      ],
+      "entry": "emerge from storm-shadowed bridge ribs"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-003"
+      ],
+      "entry": "reinforcement from oath-scar high ground",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": null,
+  "turnLimit": 13,
+  "specialRules": [
+    "Trial Terms: optional objectives change rewards but never overwrite faction identity.",
+    "Oathbound: surviving damage strengthens the next committed strike.",
+    "5-Titan standard squad"
+  ],
+  "victoryConditions": [
+    "Win the trial objective without abandoning Asgardian formation law."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Mid-tier oath iron",
+      "Asgardian faction shard cache",
+      "Storm rune upgrade dust",
+      "TG-F02-C03-M09 codex shard"
+    ],
+    "replay": [
+      "Oath iron",
+      "Storm rune upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F02-CODEX-09"
+  ],
+  "artPackageId": "TG-F02-ART-C03-M09",
+  "dialogueId": "TG-F02-DLG-C03-M09",
+  "audioRequirements": [
+    "low thunder bed",
+    "iron impact cue",
+    "oath rune resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+}
