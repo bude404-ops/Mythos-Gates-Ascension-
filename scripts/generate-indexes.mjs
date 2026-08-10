@@ -20,6 +20,7 @@ const files = {
   'maps.json': 'maps',
   'campaigns.json': 'campaigns',
   'chapters.json': 'chapters',
+  'dialogue-scripts.json': 'dialogueScripts',
   'visual-screens.json': 'visualScreens',
   'visual-change-rules.json': 'visualChangeRules',
   'visual-baselines.json': 'visualBaselines',
