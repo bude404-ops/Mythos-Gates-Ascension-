@@ -48,3 +48,4 @@ The following chapters expand every faction, Realm, Gate, and Titan role without
 - Campaign lore files live under `docs/lore/campaigns/` and cover all seven current campaigns.
 - [Mission Dialogue Expansion — v0.3.8](14-MISSION-DIALOGUE-EXPANSION.md)
 - [Chapter Production Cards — v0.4.0](15-CHAPTER-PRODUCTION-CARDS.md)
+- [Art Studio Map & Campaign Prompts — v0.4.1](16-ART-STUDIO-MAP-CAMPAIGN-PROMPTS.md)
