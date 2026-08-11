@@ -57,6 +57,7 @@ const files = {
   'season-system.json': 'seasonSystem',
   'achievement-system.json': 'achievementSystem',
   'balance-analytics.json': 'balanceAnalytics',
+  'continuity-balance-audit.json': 'continuityBalanceAudit',
   'endgame-dashboard.json': 'endgameDashboard',
   'monetization-policy.json': 'monetizationPolicy'
 };

@@ -1,26 +1,27 @@
 {
   "id": "TG-GITHUB-SYNC-STATUS-001",
-  "status": "SYNCED",
-  "version": "0.7.1",
+  "status": "LOCAL_READY",
+  "version": "0.7.2",
   "previousStableVersion": "0.3.3",
-  "commit": "ccfeb84",
-  "commitMessage": "feat: surface mini app updates in github index",
+  "commit": "LOCAL_COMMIT",
+  "commitMessage": "feat: add continuity balance audit and mission pacing fixes",
   "branch": "main",
   "repository": "bude404-ops/Titans-Gate-",
-  "lastPushTime": "2026-08-11T03:41:23Z",
+  "lastPushTime": "2026-08-11T15:42:46Z",
   "build": "PASS",
-  "github": "PASS",
-  "deployment": "GITHUB_MAIN_UPDATED",
-  "visualQa": "PASS",
+  "github": "PENDING_PUSH",
+  "deployment": "PENDING",
+  "visualQa": "IN_PROGRESS",
   "mobileCheck": "PASS",
   "sourceOfTruth": "GitHub main",
   "manualPushAvailable": true,
   "safeAuthentication": "Server-side token, GitHub Actions secret, GitHub App, or local secure environment variable only. Browser token use is forbidden.",
   "recentChanges": [
-    "GitHub index now links directly to the latest Titan Gates Mini App export.",
-    "Home and Game sections surface the playable campaign shell, faction copy packs, Codex faction copy buttons, Art Needs, simulator, and validation tools.",
-    "Build output now includes the Mini App export so the GitHub page can show the changes made."
+    "Added reusable lore/story/mission/campaign continuity and Titan balance audit.",
+    "Patched Aten Ra campaign mission wording from obsolete three-Titan language to five-Titan strike-force language.",
+    "Filled missing Normal mission turn limits for smoother campaign pacing.",
+    "Build output now includes the continuity and balance audit report."
   ],
   "liveStatusSource": "Public GitHub API; no credentials in browser.",
-  "syncError": null
+  "syncError": "Pending continuity audit verification push."
 }

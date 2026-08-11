@@ -10,8 +10,9 @@
     "build": "npm run index && npm run validate && node scripts/build-pages.mjs",
     "test": "npm run build",
     "sync:github": "node scripts/sync-github.mjs",
-    "precommit:verify": "npm run build && npm run index:check && node scripts/visual-qa-smoke.mjs && node scripts/secret-scan.mjs",
-    "index:check": "node scripts/check-index-fresh.mjs"
+    "precommit:verify": "npm run audit:continuity && npm run build && npm run index:check && node scripts/visual-qa-smoke.mjs && node scripts/secret-scan.mjs",
+    "index:check": "node scripts/check-index-fresh.mjs",
+    "audit:continuity": "node scripts/audit-continuity-balance.mjs"
   },
   "engines": {
     "node": ">=20"

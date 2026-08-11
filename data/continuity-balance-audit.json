@@ -1,0 +1,75 @@
+{
+  "id": "TG-CONTINUITY-BALANCE-AUDIT-001",
+  "generated": "2026-08-11T15:43:46.086Z",
+  "status": "PASS",
+  "issues": [],
+  "warnings": [],
+  "summary": {
+    "factions": 7,
+    "realmCodexEntries": 7,
+    "loreEntries": 35,
+    "campaigns": 7,
+    "campaignChapters": 10,
+    "missions": 80,
+    "missionDialogue": 80,
+    "missionArtPackages": 80,
+    "titans": 63,
+    "statBudgetSpread": 4.2
+  },
+  "flow": {
+    "implementedFactionCampaigns": [
+      "Aten Ra: 20 Normal / 20 Elite missions across 5 chapters",
+      "Asgardian: 20 Normal / 20 Elite missions across 5 chapters"
+    ],
+    "powerCurves": {
+      "Aten Ra": {
+        "normal": [
+          135,
+          800
+        ],
+        "elite": [
+          355,
+          1020
+        ]
+      },
+      "Asgardian": {
+        "normal": [
+          428,
+          770
+        ],
+        "elite": [
+          708,
+          1240
+        ]
+      }
+    }
+  },
+  "balance": {
+    "factionBudgetAverages": {
+      "Aten Ra": 91,
+      "Asgardian": 89.4,
+      "Olympian": 89.9,
+      "Kami": 92.3,
+      "Tuatha": 89.2,
+      "Empyrean": 88.1,
+      "Infernal Dominion": 90.6
+    },
+    "roleCounts": {
+      "Defender": 7,
+      "Battery": 7,
+      "Controller": 7,
+      "Breaker": 7,
+      "Disruptor": 7,
+      "Sustain": 7,
+      "Artillery": 7,
+      "Guardian": 7,
+      "Assassin": 7
+    },
+    "rarityCounts": {
+      "Legendary": 14,
+      "Epic": 28,
+      "Rare": 21
+    },
+    "policy": "Gameplay Director reviews balance problems; no automatic balance changes without validation."
+  }
+}
