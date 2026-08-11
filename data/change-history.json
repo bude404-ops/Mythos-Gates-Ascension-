@@ -434,5 +434,20 @@
         "Fresh clone build passed"
       ]
     }
+  ],
+  "changes": [
+    {
+      "id": "TG-CHANGE-2026-08-11-FACTION-MISSION-DIALOGUE-FINISH",
+      "date": "2026-08-11",
+      "type": "Mission + Dialogue Completion",
+      "summary": "Finished and hardened all faction mission/dialogue coverage for one active Titan combat while preserving established faction, realm, storyline, and map canon.",
+      "files": [
+        "mission-registry",
+        "mission-dialogue",
+        "faction-mission-dialogue-completion-audit",
+        "index",
+        "dev platform dashboard"
+      ]
+    }
   ]
 }

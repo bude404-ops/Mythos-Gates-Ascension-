@@ -80,15 +80,20 @@ for (const faction of data.factions) {
   }
 }
 
+const obsoleteStandardCombatTerms = ['three-Titan', 'five-Titan', 'five Titan', 'five Titans', 'strike force', 'standard squad', 'adjacent Titans'];
 for (const mission of data.missions) {
-  if (mission.teamSize !== 5) issues.push(`${mission.id} teamSize ${mission.teamSize} should be 5`);
-  if (String(mission.objectives?.primary || '').includes('three-Titan')) issues.push(`${mission.id} primary uses obsolete three-Titan wording`);
+  if (mission.teamSize !== 1) issues.push(`${mission.id} teamSize ${mission.teamSize} should be 1 for one active Titan combat`);
+  const missionText = JSON.stringify({ objectives: mission.objectives, specialRules: mission.specialRules, victoryConditions: mission.victoryConditions });
+  for (const term of obsoleteStandardCombatTerms) if (missionText.includes(term)) issues.push(`${mission.id} uses obsolete standard-combat wording: ${term}`);
+  if (mission.activeTitanPolicy?.standardCombat !== 'ONE_PLAYER_CONTROLLED_TITAN') issues.push(`${mission.id} missing one active Titan policy`);
+  if (!mission.chapterId) issues.push(`${mission.id} missing chapterId link`);
   if (mission.turnLimit != null && !(mission.turnLimit >= 8 && mission.turnLimit <= 20)) warnings.push(`${mission.id} turnLimit ${mission.turnLimit} outside expected 8-20`);
   if (mission.campaignType === 'Normal' && mission.turnLimit == null) issues.push(`${mission.id} Normal mission missing turnLimit`);
   if (!mission.rewards?.firstClear?.length || !mission.rewards?.replay?.length) issues.push(`${mission.id} rewards incomplete`);
   const dialogue = data.dialogue.find(item => item.id === mission.dialogueId);
   if (!dialogue) issues.push(`${mission.id} missing dialogue object`);
   else if (dialogue.missionId !== mission.id) issues.push(`${mission.id} dialogue points to ${dialogue.missionId}`);
+  if (dialogue) for (const term of obsoleteStandardCombatTerms) if (JSON.stringify(dialogue).includes(term)) issues.push(`${mission.id} dialogue uses obsolete wording: ${term}`);
   const art = data.arts.find(item => item.id === mission.artPackageId);
   if (!art) issues.push(`${mission.id} missing art package object`);
   else if (art.missionId !== mission.id) issues.push(`${mission.id} art package points to ${art.missionId}`);

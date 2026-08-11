@@ -1,5 +1,24 @@
 [
   {
+    "id": "TG-TASK-FACTION-MISSION-DIALOGUE-FINISH-001",
+    "status": "COMPLETED",
+    "priority": "High",
+    "description": "Audit and finish the remaining faction mission/dialogue coverage so every faction campaign has complete one-active-Titan mission objectives, chapter linkage, production-ready dialogue, and validation coverage.",
+    "director": "Campaign Director",
+    "dependencies": [
+      "data/mission-registry.json",
+      "data/mission-dialogue.json",
+      "data/campaign-chapter-registry.json"
+    ],
+    "relatedEntity": "TG-CAMPAIGN-FACTION-MISSION-DIALOGUE-COVERAGE",
+    "relatedFiles": [
+      "data/mission-registry.json",
+      "data/mission-dialogue.json",
+      "data/faction-mission-dialogue-completion-audit.json",
+      "scripts/audit-continuity-balance.mjs"
+    ]
+  },
+  {
     "id": "TG-DEV-001",
     "description": "Approve first batch of Titan artwork for prompt-ready Titans.",
     "director": "Art Director",
