@@ -10,6 +10,7 @@ const include = [
   'index.html',
   'titan-gates-dev-platform.html',
   'game',
+  'mini-app',
   'data',
   'docs',
   'art',
@@ -35,7 +36,7 @@ for(const rel of include){
 }
 
 fs.writeFileSync(path.join(dist,'.nojekyll'), '');
-const required=['index.html','game/index.html','game/preview.html','game/shared-preview.js','game/tactical-map-prototype.html','data/index.json','data/titans.json','data/dialogue-scripts.json','data/visual-screens.json','data/realm-codex.json','data/hybrid-visual-architecture.json','data/asset-pipeline.json','data/github-sync-policy.json','data/github-sync-status.json','data/change-history.json','docs/lore/README.md'];
+const required=['index.html','game/index.html','game/preview.html','game/shared-preview.js','game/tactical-map-prototype.html','mini-app/galaxy-reapers-ascension.html','data/index.json','data/titans.json','data/dialogue-scripts.json','data/visual-screens.json','data/realm-codex.json','data/hybrid-visual-architecture.json','data/asset-pipeline.json','data/github-sync-policy.json','data/github-sync-status.json','data/change-history.json','docs/lore/README.md'];
 for(const rel of required){
   if(!fs.existsSync(path.join(dist, rel))) throw new Error(`Build missing ${rel}`);
 }
