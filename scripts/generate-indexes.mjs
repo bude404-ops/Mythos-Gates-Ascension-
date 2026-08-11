@@ -62,7 +62,9 @@ const files = {
   'monetization-policy.json': 'monetizationPolicy',
   'solo-titan-migration-report.json': 'soloTitanMigrationReport',
   'solo-combat-design-document.json': 'soloCombatDesignDocument',
-  'solo-titan-roster-redesign.json': 'soloTitanRosterRedesign'
+  'solo-titan-roster-redesign.json': 'soloTitanRosterRedesign',
+  'enemy-scaling-design-document.json': 'enemyScalingDesignDocument',
+  'raid-design-document.json': 'raidDesignDocument'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {

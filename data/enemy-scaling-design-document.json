@@ -1,0 +1,341 @@
+{
+  "id": "TG-ENEMY-SCALING-DESIGN-DOCUMENT-001",
+  "version": "0.9.1",
+  "generated": "2026-08-11T20:26:00Z",
+  "directive": "Enemies are designed to challenge one legendary active Titan without relying on inflated health pools.",
+  "corePhilosophy": [
+    "A single Titan should feel powerful, pressured, and readable at all times.",
+    "Scaling adds tactical problems before it adds raw statistics.",
+    "Campaign progression uses mostly fixed bands so old victories become proof of growth.",
+    "Repeatable and endgame content uses controlled dynamic scaling inside explicit caps.",
+    "Enemy AI fights the Titan as a mythic threat: surround, deny resources, exploit terrain, then survive the Divine swing."
+  ],
+  "enemyArchetypes": [
+    {
+      "key": "SWARMER",
+      "purpose": "Create positional pressure and execution chains.",
+      "counterplay": "Area control, hazard baiting, cleave, execution routing.",
+      "scalesBy": [
+        "count",
+        "flank discipline",
+        "on-death effects",
+        "formation spacing"
+      ]
+    },
+    {
+      "key": "BRUTE",
+      "purpose": "Force stance discipline and terrain planning.",
+      "counterplay": "Dodge charge lanes, parry windows, armor break, displacement.",
+      "scalesBy": [
+        "armor",
+        "telegraph complexity",
+        "knockback",
+        "guard break"
+      ]
+    },
+    {
+      "key": "HUNTER",
+      "purpose": "Threaten from range and punish exposed paths.",
+      "counterplay": "Line-of-sight breaks, pursuit reactions, high-ground denial.",
+      "scalesBy": [
+        "range",
+        "overwatch frequency",
+        "focus fire logic",
+        "status arrows"
+      ]
+    },
+    {
+      "key": "CONTROLLER",
+      "purpose": "Restrict movement and disrupt clean objective routes.",
+      "counterplay": "Cleanse zones, destroy anchors, shift stance, terrain immunity builds.",
+      "scalesBy": [
+        "zone size",
+        "root duration",
+        "hazard layering",
+        "objective denial"
+      ]
+    },
+    {
+      "key": "DISRUPTOR",
+      "purpose": "Attack Momentum, Divinity, cooldowns, and reactions.",
+      "counterplay": "Prioritize, interrupt casts, execute before drain resolves.",
+      "scalesBy": [
+        "drain amount",
+        "cast protection",
+        "reaction baiting",
+        "resource lockouts"
+      ]
+    },
+    {
+      "key": "GUARDIAN",
+      "purpose": "Protect bosses, rituals, exits, and high-value threats.",
+      "counterplay": "Displacement, terrain collapse, guard-break abilities.",
+      "scalesBy": [
+        "shield strength",
+        "intercept rules",
+        "aura radius",
+        "objective binding"
+      ]
+    },
+    {
+      "key": "EXECUTIONER",
+      "purpose": "Make low-health Titan states dangerous without cheap instant death.",
+      "counterplay": "Guard stance, preemptive kill, concealment, Divine Ascension reset.",
+      "scalesBy": [
+        "wound threshold",
+        "pursuit movement",
+        "anti-heal",
+        "finisher telegraph speed"
+      ]
+    },
+    {
+      "key": "ELITE",
+      "purpose": "Single mechanic-focused enemy that changes how the room is solved.",
+      "counterplay": "Learn mechanic, exploit weakness, deny setup.",
+      "scalesBy": [
+        "mechanic layers",
+        "reaction behavior",
+        "resistance spread",
+        "terrain synergy"
+      ]
+    },
+    {
+      "key": "CHAMPION",
+      "purpose": "Mini-boss duel embedded inside a larger battlefield.",
+      "counterplay": "Read phases, conserve Momentum, use terrain windows.",
+      "scalesBy": [
+        "phase count",
+        "adds",
+        "arena rules",
+        "enrage condition"
+      ]
+    },
+    {
+      "key": "ENEMY_TITAN",
+      "purpose": "Major boss mirror: another mythic being with its own meter and stance rules.",
+      "counterplay": "Deny their resource loop, punish stance shift, survive Ascension.",
+      "scalesBy": [
+        "unique mechanic depth",
+        "Divine phase",
+        "AI prediction",
+        "signature gear effects"
+      ]
+    }
+  ],
+  "scalingDimensions": {
+    "primaryStats": [
+      "level",
+      "hp",
+      "damage",
+      "armor",
+      "resistance",
+      "movement"
+    ],
+    "tacticalStats": [
+      "initiative",
+      "accuracy",
+      "evasion",
+      "reactionChance",
+      "guardBreak",
+      "statusResistance"
+    ],
+    "behavior": [
+      "flankPreference",
+      "retreatThreshold",
+      "objectivePriority",
+      "resourceDenialPriority",
+      "focusFireDiscipline",
+      "hazardUse"
+    ],
+    "composition": [
+      "enemy count",
+      "archetype mix",
+      "elite insertion",
+      "champion support package",
+      "summon cadence"
+    ],
+    "battlefield": [
+      "hazards",
+      "cover density",
+      "destructible objects",
+      "high ground",
+      "divine/cursed zones",
+      "teleport points"
+    ],
+    "mechanics": [
+      "boss phases",
+      "enrage clocks",
+      "shield windows",
+      "weakness exposure",
+      "ritual timers",
+      "reinforcement triggers"
+    ],
+    "rewards": [
+      "XP",
+      "gear rarity",
+      "mastery credit",
+      "ascension materials",
+      "raid currency",
+      "cosmetics"
+    ]
+  },
+  "campaignScaling": {
+    "early": {
+      "missionRange": "1-20",
+      "enemyLevelRule": "fixed bands within -1/+2 of mission recommendation",
+      "focus": [
+        "movement",
+        "Momentum basics",
+        "single reaction prompts",
+        "simple swarmer/brute pairs"
+      ],
+      "ai": "low coordination; obvious telegraphs"
+    },
+    "mid": {
+      "missionRange": "21-60",
+      "enemyLevelRule": "fixed bands with elite spikes +2/+5",
+      "focus": [
+        "terrain hazards",
+        "controllers",
+        "guardians",
+        "objective pressure",
+        "stance swaps"
+      ],
+      "ai": "flanking and protected casters appear"
+    },
+    "late": {
+      "missionRange": "61-100",
+      "enemyLevelRule": "fixed boss bands and controlled mission modifiers",
+      "focus": [
+        "multi-phase bosses",
+        "enemy Titans",
+        "advanced disruptors",
+        "compound objectives"
+      ],
+      "ai": "coordinated denial of executions, Momentum, and Divinity"
+    }
+  },
+  "missionLevelTemplate": {
+    "recommendedTitanLevel": "declared per mission",
+    "enemyLevel": "recommended -1 to +2",
+    "eliteLevel": "recommended +3",
+    "bossLevel": "recommended +5",
+    "dynamicAllowance": "repeatable variants may flex within +/-10% power, never beyond tier caps"
+  },
+  "difficultyTiers": [
+    {
+      "tier": "NORMAL",
+      "statMultiplier": {
+        "hp": 1.0,
+        "damage": 1.0
+      },
+      "mechanicAdditions": [
+        "baseline mechanics"
+      ],
+      "ai": "teaching behavior",
+      "rewardScalar": 1.0
+    },
+    {
+      "tier": "HARD",
+      "statMultiplier": {
+        "hp": 1.15,
+        "damage": 1.12
+      },
+      "mechanicAdditions": [
+        "one modifier",
+        "smarter target selection"
+      ],
+      "ai": "uses flanks and retreats",
+      "rewardScalar": 1.2
+    },
+    {
+      "tier": "ELITE",
+      "statMultiplier": {
+        "hp": 1.3,
+        "damage": 1.25
+      },
+      "mechanicAdditions": [
+        "elite affix",
+        "extra reaction behavior",
+        "hazard layer"
+      ],
+      "ai": "protects disruptors and objectives",
+      "rewardScalar": 1.55
+    },
+    {
+      "tier": "ASCENDED",
+      "statMultiplier": {
+        "hp": 1.45,
+        "damage": 1.4
+      },
+      "mechanicAdditions": [
+        "boss/elite phase additions",
+        "Divinity denial",
+        "compound modifiers"
+      ],
+      "ai": "build-aware and stance-aware",
+      "rewardScalar": 2.1
+    },
+    {
+      "tier": "MYTHIC",
+      "statMultiplier": {
+        "hp": 1.65,
+        "damage": 1.55
+      },
+      "mechanicAdditions": [
+        "maximum mechanical complexity",
+        "strict enrage or scoring",
+        "unique rewards"
+      ],
+      "ai": "optimized but telegraphed",
+      "rewardScalar": 3.0
+    }
+  ],
+  "missionModifiers": [
+    "Armored Enemies",
+    "Reduced Momentum",
+    "Reduced Divinity",
+    "Burning Field",
+    "Cursed Ground",
+    "Fog of War",
+    "Limited Turns",
+    "No Executions",
+    "Elite Escort",
+    "Boss Enrage",
+    "Reduced Movement",
+    "Reinforcement Gates",
+    "Elemental Storm",
+    "Objective Fragility"
+  ],
+  "bossScaling": {
+    "fixedBands": "story and older bosses stay in declared ranges",
+    "dynamicBands": "endgame rematches flex inside named tier caps",
+    "statCapRule": "never erase overleveling in campaign content",
+    "mechanicRule": "new difficulty adds phases, hazards, AI packages, or weakness puzzles before major stat jumps"
+  },
+  "endgameScaling": {
+    "eliteCampaigns": "fixed tier bands with optional challenge modifiers",
+    "gauntlets": "escalating compositions and fatigue rules",
+    "asyncTitanChallenge": "defender Titan level normalized within bracket, gear effects preserved with caps",
+    "mythic": "controlled scaling plus leaderboard scoring, not endless stat inflation"
+  },
+  "directorTuningControls": [
+    "enemyLevel",
+    "baseStatBudget",
+    "eliteAffixPool",
+    "compositionBudget",
+    "hazardBudget",
+    "objectivePressure",
+    "aiProfile",
+    "reactionFrequency",
+    "resourceDenialBudget",
+    "rewardScalar"
+  ],
+  "antiPatterns": [
+    "Enemy HP x10 as difficulty",
+    "unlimited auto-scaling everywhere",
+    "mandatory healer checks",
+    "unreadable one-shot ambushes",
+    "resource denial with no counterplay"
+  ]
+}

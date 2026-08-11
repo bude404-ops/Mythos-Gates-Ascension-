@@ -10,7 +10,7 @@
     "artPrompts": 110,
     "artworks": 0,
     "artImportPipeline": 1,
-    "developmentTasks": 15,
+    "developmentTasks": 18,
     "loreEntries": 35,
     "npcs": 8,
     "creatures": 18,
@@ -56,6 +56,8 @@
     "soloTitanMigrationReport": 1,
     "soloCombatDesignDocument": 1,
     "soloTitanRosterRedesign": 1,
+    "enemyScalingDesignDocument": 1,
+    "raidDesignDocument": 1,
     "hollowCreatures": 16,
     "artMapPrompts": 12,
     "artCampaignPrompts": 7
@@ -115,13 +117,15 @@
     "monetization-policy.json": "data/monetization-policy.json",
     "solo-titan-migration-report.json": "data/solo-titan-migration-report.json",
     "solo-combat-design-document.json": "data/solo-combat-design-document.json",
-    "solo-titan-roster-redesign.json": "data/solo-titan-roster-redesign.json"
+    "solo-titan-roster-redesign.json": "data/solo-titan-roster-redesign.json",
+    "enemy-scaling-design-document.json": "data/enemy-scaling-design-document.json",
+    "raid-design-document.json": "data/raid-design-document.json"
   },
   "sourceFileFingerprints": {
     "project.json": {
       "path": "data/project.json",
-      "bytes": 2805,
-      "sha256": "2a4b94b06abcf2a5767a4739b79e7ae9dfff91e8008cdd2993369f779cdd92c2"
+      "bytes": 2832,
+      "sha256": "a106093d457511d25b1a2e486cd7ad172bb054151cd827710969146222c4cc61"
     },
     "factions.json": {
       "path": "data/factions.json",
@@ -165,8 +169,8 @@
     },
     "development-tasks.json": {
       "path": "data/development-tasks.json",
-      "bytes": 7538,
-      "sha256": "8e09313b42644480a2dc64b69d1dfc027ce087029095843243add6eae10ce636"
+      "bytes": 9116,
+      "sha256": "b5598c83dcb391d33e2b5a978ab07c2d8eb674cedc62c7fb09377e0ea54a043a"
     },
     "lore-index.json": {
       "path": "data/lore-index.json",
@@ -255,8 +259,8 @@
     },
     "change-history.json": {
       "path": "data/change-history.json",
-      "bytes": 14447,
-      "sha256": "12d42fabf9f3cff17d671d68162a2d446d7defaf01142c37f71d6c43c2611092"
+      "bytes": 15023,
+      "sha256": "d747a8b5ab729beb8eb2537e96eec4cb8a6581aa6164c243014e70250fa642d4"
     },
     "campaign-architecture.json": {
       "path": "data/campaign-architecture.json",
@@ -340,8 +344,8 @@
     },
     "raid-system.json": {
       "path": "data/raid-system.json",
-      "bytes": 720,
-      "sha256": "39a8660bdd6caafdfffef6a893ca20bf145bd8e0ea2bbd54e898f33131eb3ea5"
+      "bytes": 1513,
+      "sha256": "abc6c6ca89d051420de45601c577abec79e9dc6136235e87d09113df9dd4f538"
     },
     "faction-mastery.json": {
       "path": "data/faction-mastery.json",
@@ -366,7 +370,7 @@
     "continuity-balance-audit.json": {
       "path": "data/continuity-balance-audit.json",
       "bytes": 2643,
-      "sha256": "3692ed533f9168233ae2e45c8848b70f1b525971f72d50ff693cf2c275a60665"
+      "sha256": "ed57aa142627d828ff753844badaeeba86bd8d0c2cbc3a3715835a9428616ef6"
     },
     "endgame-dashboard.json": {
       "path": "data/endgame-dashboard.json",
@@ -392,6 +396,16 @@
       "path": "data/solo-titan-roster-redesign.json",
       "bytes": 169349,
       "sha256": "4cb02db083a98fd035f9609b57a8deb2c8b84fedb9230ad73cbf29870a73a857"
+    },
+    "enemy-scaling-design-document.json": {
+      "path": "data/enemy-scaling-design-document.json",
+      "bytes": 9503,
+      "sha256": "896bd0bc041a71444d1ad6ca35287157cf324dc329ffce7856823e64b794e02c"
+    },
+    "raid-design-document.json": {
+      "path": "data/raid-design-document.json",
+      "bytes": 6239,
+      "sha256": "ef383a8c89f6b05e32d05bffef21ebc49a2d957cc4ca903c0e1a7ccf528b6781"
     }
   },
   "artPromptCategories": {

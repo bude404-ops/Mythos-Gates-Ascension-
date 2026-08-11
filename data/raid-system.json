@@ -1,33 +1,53 @@
 {
   "id": "TG-RAID-SYSTEM-001",
-  "standardSquadSize": 5,
+  "version": "0.9.1",
+  "activeTitanRule": "One active player Titan only. Reserve support is deferred architecture, not initial gameplay.",
+  "raidLoop": [
+    "Select one Titan and loadout",
+    "Preview raid stages, boss, modifiers, rewards",
+    "Enter stage chain",
+    "Resolve stage rewards and damage carry rules",
+    "Lock victory and assign raid rewards"
+  ],
+  "difficulties": [
+    "RAID_NORMAL",
+    "RAID_HARD",
+    "RAID_ELITE",
+    "RAID_ASCENDED",
+    "RAID_MYTHIC"
+  ],
   "bosses": [
     {
       "id": "TG-RAID-BOSS-001",
       "name": "The Gate Warden",
-      "phaseCount": 4,
+      "phaseCount": 5,
       "phases": [
-        "Defense",
-        "Aggression",
+        "Sealfield Approach",
+        "Guardian Interdiction",
+        "Weakness Window",
         "Gate Destabilization",
-        "Enrage"
+        "Divine Enrage"
       ],
       "mechanics": [
-        "Shield windows",
-        "Hazard lanes",
-        "Weakness exposure",
-        "Enrage clock"
+        "Seal pillar objectives",
+        "Telegraphed hazard lanes",
+        "Reaction windows against gate slams",
+        "Weakness exposure after terrain interaction",
+        "Final Divine confrontation"
       ],
+      "scaling": "Fixed story bands; endgame rematches flex only within raid tier caps.",
       "rewards": [
         "raidCurrency",
         "highTierTitanMaterials",
-        "bossCosmeticFragment"
+        "bossCosmeticFragment",
+        "signatureGearMaterial"
       ],
       "artRequirements": [
         "Massive Gate-linked boss silhouette",
         "Elongated tactical raid arena",
         "Phase VFX states",
-        "Boss thumbnail"
+        "Boss thumbnail",
+        "Divine confrontation camera beats"
       ]
     }
   ]

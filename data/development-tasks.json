@@ -252,5 +252,56 @@
       "data/solo-titan-roster-redesign.json",
       "data/solo-titan-migration-report.json"
     ]
+  },
+  {
+    "id": "TG-DEV-023",
+    "description": "Implement enemy archetype registry, tactical scaling budgets, and AI profiles for solo-Titan missions.",
+    "director": "Gameplay Director",
+    "priority": "High",
+    "status": "NEXT",
+    "dependencies": [
+      "TG-ENEMY-SCALING-DESIGN-DOCUMENT-001",
+      "game/index.html"
+    ],
+    "relatedEntity": "TG-ENEMY-SCALING-DESIGN-DOCUMENT-001",
+    "relatedFiles": [
+      "data/enemy-scaling-design-document.json",
+      "data/mission-registry.json",
+      "game/index.html"
+    ]
+  },
+  {
+    "id": "TG-DEV-024",
+    "description": "Replace raid system prototype with deterministic one-active-Titan multi-stage raid framework.",
+    "director": "Development Director",
+    "priority": "High",
+    "status": "NEXT",
+    "dependencies": [
+      "TG-RAID-DESIGN-DOCUMENT-001",
+      "data/raid-system.json"
+    ],
+    "relatedEntity": "TG-RAID-DESIGN-DOCUMENT-001",
+    "relatedFiles": [
+      "data/raid-design-document.json",
+      "data/raid-system.json",
+      "game/index.html"
+    ]
+  },
+  {
+    "id": "TG-DEV-025",
+    "description": "Tune rewards, gear materials, mastery credit, and non-pay-to-win raid economy for solo-Titan endgame.",
+    "director": "Progression Director",
+    "priority": "Medium",
+    "status": "NEXT",
+    "dependencies": [
+      "data/reward-system.json",
+      "data/progression-system.json"
+    ],
+    "relatedEntity": "TG-RAID-DESIGN-DOCUMENT-001",
+    "relatedFiles": [
+      "data/raid-design-document.json",
+      "data/reward-system.json",
+      "data/progression-system.json"
+    ]
   }
 ]

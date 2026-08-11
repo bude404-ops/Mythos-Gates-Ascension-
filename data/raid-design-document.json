@@ -1,0 +1,213 @@
+{
+  "id": "TG-RAID-DESIGN-DOCUMENT-001",
+  "version": "0.9.1",
+  "generated": "2026-08-11T20:26:00Z",
+  "directive": "Titan Raids are multi-stage solo-Titan mastery gauntlets: one active Titan crossing an unstable Gate alone.",
+  "raidIdentity": [
+    "larger than bosses",
+    "mechanic-first",
+    "multi-stage",
+    "solo-readable",
+    "built for mastery and replayability"
+  ],
+  "standardStructure": [
+    {
+      "stage": 1,
+      "name": "Gatefield Trial",
+      "goal": "Solve battlefield hazard/objective under pressure.",
+      "checks": [
+        "movement",
+        "terrain interaction",
+        "Momentum routing"
+      ]
+    },
+    {
+      "stage": 2,
+      "name": "Elite Interdiction",
+      "goal": "Defeat protected elites or break ritual guards.",
+      "checks": [
+        "priority targeting",
+        "reaction discipline",
+        "build counterplay"
+      ]
+    },
+    {
+      "stage": 3,
+      "name": "Boss Revelation",
+      "goal": "Fight first boss phase and learn core mechanic.",
+      "checks": [
+        "weakness exposure",
+        "stance timing",
+        "telegraphed survival"
+      ]
+    },
+    {
+      "stage": 4,
+      "name": "Realm Collapse",
+      "goal": "Battlefield changes; hazards, routes, and objectives mutate.",
+      "checks": [
+        "adaptation",
+        "terrain destruction",
+        "resource conservation"
+      ]
+    },
+    {
+      "stage": 5,
+      "name": "Divine Confrontation",
+      "goal": "Final boss phase / enemy Titan Ascension duel.",
+      "checks": [
+        "Divinity timing",
+        "execution routing",
+        "perfect reactions"
+      ]
+    }
+  ],
+  "difficultyTiers": [
+    {
+      "tier": "RAID_NORMAL",
+      "intent": "progression raid",
+      "mechanics": "baseline stages and forgiving enrage",
+      "rewards": [
+        "raid currency",
+        "rare gear materials",
+        "first-clear relic shard"
+      ]
+    },
+    {
+      "tier": "RAID_HARD",
+      "intent": "strong tactical challenge",
+      "mechanics": "additional elite mechanics and tighter hazard timing",
+      "rewards": [
+        "higher gear materials",
+        "signature item fragments"
+      ]
+    },
+    {
+      "tier": "RAID_ELITE",
+      "intent": "advanced build test",
+      "mechanics": "extra stage modifier, stronger AI, altered boss pattern",
+      "rewards": [
+        "legendary set materials",
+        "cosmetic fragments"
+      ]
+    },
+    {
+      "tier": "RAID_ASCENDED",
+      "intent": "endgame mastery",
+      "mechanics": "Divinity denial windows, battlefield mutation, stricter scoring",
+      "rewards": [
+        "ascension materials",
+        "mythic relic rolls",
+        "title progress"
+      ]
+    },
+    {
+      "tier": "RAID_MYTHIC",
+      "intent": "pinnacle challenge",
+      "mechanics": "maximum phase complexity, leaderboard scoring, optional challenge seals",
+      "rewards": [
+        "exclusive cosmetics",
+        "unique title",
+        "best crafting materials",
+        "prestige variants"
+      ]
+    }
+  ],
+  "scalingModel": {
+    "fixedComponents": [
+      "boss tier",
+      "base boss level",
+      "stage mechanics",
+      "reward table"
+    ],
+    "controlledDynamicComponents": [
+      "minor stat flex by bracket",
+      "weekly modifier",
+      "composition variant",
+      "leaderboard normalization"
+    ],
+    "overlevelRule": "older raid tiers remain conquerable; player progression must be visible",
+    "endgameRule": "top tiers flex inside explicit power bands and score mastery rather than infinite gear checks"
+  },
+  "bossPhaseRules": [
+    "Each phase introduces or twists a mechanic",
+    "Every lethal pattern is telegraphed",
+    "Every phase has reaction opportunities",
+    "Weakness windows reward Momentum setup",
+    "Enrage is pressure, not a hidden timer kill"
+  ],
+  "modifierPools": {
+    "environmental": [
+      "Ruptured Gate Lanes",
+      "Cursed Ground",
+      "Flooded Arena",
+      "Solar Eclipse",
+      "Shattered Pillars"
+    ],
+    "combat": [
+      "Reduced Momentum",
+      "Reduced Divinity",
+      "No Free Executions",
+      "Elite Reinforcements",
+      "Boss Armor Cycle"
+    ],
+    "mastery": [
+      "No Damage Medal",
+      "Speed Seal",
+      "Execution Chain",
+      "Terrain Kill Trial",
+      "Stance Purist"
+    ]
+  },
+  "replayability": [
+    "daily attempts for selected raids",
+    "weekly rotation of raid boss variants",
+    "leaderboard speed and score boards",
+    "Titan-specific challenge seals",
+    "no-damage and execution medals",
+    "rotating battlefield hazards"
+  ],
+  "rewardDesign": {
+    "nonPayToWin": "Raid power is earned through play, not required spend.",
+    "categories": [
+      "legendary Titan gear",
+      "signature gear materials",
+      "relics",
+      "ascension materials",
+      "mastery rewards",
+      "cosmetics",
+      "titles",
+      "rare crafting materials"
+    ],
+    "badLuckProtection": "weekly raid tokens can target missing set pieces without trivializing rare drops"
+  },
+  "sampleRaids": [
+    {
+      "id": "TG-RAID-001",
+      "name": "The Gate Warden",
+      "realm": "The First Reopening Gate",
+      "coreMechanic": "Seal pillars expose and hide the boss weakness while hazard lanes divide the battlefield.",
+      "finalPhase": "Warden opens a collapsing Gate and challenges the Titan to survive Divine backlash."
+    },
+    {
+      "id": "TG-RAID-002",
+      "name": "The Hollow Crown",
+      "realm": "Cursed interrealm court",
+      "coreMechanic": "Swarmers feed a crown meter unless executed in correct terrain zones.",
+      "finalPhase": "Enemy champion wears the Crown and becomes an anti-Divinity duelist."
+    },
+    {
+      "id": "TG-RAID-003",
+      "name": "The Drowned Sun Colossus",
+      "realm": "Flooded solar ruin",
+      "coreMechanic": "Water and light zones alternate, empowering different Titan builds.",
+      "finalPhase": "Boss drains the arena, creating high-risk execution lanes."
+    }
+  ],
+  "implementationNotes": [
+    "Raid state remains deterministic and UI-independent",
+    "Each stage serializes separately for resume/replay",
+    "Rewards resolve after validated victory lock",
+    "Leaderboard scoring records turn count, damage taken, executions, objectives, and modifiers"
+  ]
+}
