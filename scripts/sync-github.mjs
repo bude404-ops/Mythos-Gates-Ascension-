@@ -17,6 +17,7 @@ function safeStatus(status, patch = {}) {
 }
 const status = JSON.parse(readFileSync('data/github-sync-status.json', 'utf8'));
 run('npm', ['run', 'build']);
+run('npm', ['run', 'index:check']);
 run('node', ['scripts/visual-qa-smoke.mjs']);
 run('node', ['scripts/secret-scan.mjs']);
 const large = [];
@@ -35,6 +36,7 @@ if (!changed) {
 }
 safeStatus(status, { status: 'CHANGES_PENDING', github: 'CHANGES_PENDING', deployment: 'NOT_STARTED', commitMessage: message });
 run('git', ['add', '-A']);
+run('git', ['add', 'data/index.json']);
 run('git', ['commit', '-m', message]);
 const commit = run('git', ['rev-parse', '--short', 'HEAD'], { capture: true }).trim();
 safeStatus(JSON.parse(readFileSync('data/github-sync-status.json', 'utf8')), { status: 'CHANGES_PENDING', commit, commitMessage: message });
