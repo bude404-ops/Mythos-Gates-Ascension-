@@ -1,6 +1,6 @@
 {
   "name": "titans-gate-ascension",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "private": true,
   "type": "module",
   "description": "Static GitHub Pages development platform and playable build for Titan Gates: Ascension.",
@@ -10,7 +10,8 @@
     "build": "npm run index && npm run validate && node scripts/build-pages.mjs",
     "test": "npm run build",
     "sync:github": "node scripts/sync-github.mjs",
-    "precommit:verify": "npm run build && node scripts/visual-qa-smoke.mjs && node scripts/secret-scan.mjs"
+    "precommit:verify": "npm run build && npm run index:check && node scripts/visual-qa-smoke.mjs && node scripts/secret-scan.mjs",
+    "index:check": "node scripts/check-index-fresh.mjs"
   },
   "engines": {
     "node": ">=20"
