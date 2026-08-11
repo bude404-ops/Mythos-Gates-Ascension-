@@ -3,17 +3,32 @@
   "updated": "2026-08-10",
   "entries": [
     {
-      "version": "0.6.7",
-      "summary": "Added the Hollow as a usable non-playable threat faction with encounter pools and expanded creature roster for campaigns, missions, events, raids, and Ascension.",
+      "version": "0.6.8",
+      "summary": "Enforced dashboard index freshness with SHA-256 source fingerprints and GitHub sync checks so data/index.json updates with every dashboard data change.",
       "commit": "LOCAL_COMMIT",
-      "time": "2026-08-10T23:43:16Z",
+      "time": "2026-08-11T00:02:05Z",
       "status": "LOCAL_READY",
       "checks": [
         "Build pending",
-        "Content validation pending",
+        "Index freshness pending",
         "Visual smoke pending",
-        "Mobile copy smoke pending",
-        "Secret scan pending"
+        "Secret scan pending",
+        "Fresh clone pending"
+      ]
+    },
+    {
+      "version": "0.6.7",
+      "summary": "Added the Hollow as a usable non-playable threat faction with encounter pools and expanded creature roster for campaigns, missions, events, raids, and Ascension.",
+      "commit": "LIVE_REMOTE",
+      "time": "2026-08-10T23:53:36Z",
+      "status": "PUSHED_WORKFLOW_IGNORED",
+      "checks": [
+        "Build passed",
+        "Content validation passed",
+        "Visual smoke passed",
+        "Hollow route smoke passed",
+        "Mobile copy smoke passed",
+        "Secret scan passed"
       ]
     },
     {
