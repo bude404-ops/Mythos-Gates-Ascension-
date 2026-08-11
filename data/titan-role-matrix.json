@@ -1,0 +1,2718 @@
+{
+  "id": "TG-TITAN-ROLE-MATRIX-001",
+  "version": "0.9.2",
+  "generated": "2026-08-11T20:38:00Z",
+  "directive": "Every existing Titan receives a clear solo-combat collection reason while preserving existing canon fields and IDs.",
+  "count": 63,
+  "titans": [
+    {
+      "id": "TG-TITAN-001",
+      "name": "Aten-Ra, Solar Law Monolith",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Legendary",
+      "previousRole": "Defender",
+      "combatIdentity": "frontline solar/order anchor",
+      "uniqueMechanic": "AtenRa's Solar Power: a solo charge meter that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "long survival, objective holding, hazard endurance",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Defender mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings long survival, objective holding, hazard endurance without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-002",
+      "name": "Khemet Suncrown",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Epic",
+      "previousRole": "Battery",
+      "combatIdentity": "resource engine specialist",
+      "uniqueMechanic": "Khemet's Solar Power: a solo mark cycle that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "resource pressure, Divinity/Momentum economy, long missions",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Battery mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-003",
+      "name": "Nefra Obsidian Dawn",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Epic",
+      "previousRole": "Controller",
+      "combatIdentity": "terrain and movement manipulator",
+      "uniqueMechanic": "Nefra's Solar Power: a solo terrain imprint that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "fast enemies, terrain-heavy battles, caster denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Controller mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-004",
+      "name": "Orru Prism Verdict",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Rare",
+      "previousRole": "Breaker",
+      "combatIdentity": "armor and structure destroyer",
+      "uniqueMechanic": "Orru's Solar Power: a solo parry ladder that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "heavily armored enemies, shield windows, boss armor phases",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Breaker mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-005",
+      "name": "Sutekh Dune Eclipse",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Epic",
+      "previousRole": "Disruptor",
+      "combatIdentity": "enemy plan breaker",
+      "uniqueMechanic": "Sutekh's Solar Power: a solo execution chain that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Disruptor mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-006",
+      "name": "Iset Riverlight Throne",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Rare",
+      "previousRole": "Sustain",
+      "combatIdentity": "self-recovery endurance specialist",
+      "uniqueMechanic": "Iset's Solar Power: a solo zone conversion that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "attrition, survival, poison/burn fields",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Sustain mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings attrition, survival, poison/burn fields without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-007",
+      "name": "Karnu Glass Horizon",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Epic",
+      "previousRole": "Artillery",
+      "combatIdentity": "wide-area pressure specialist",
+      "uniqueMechanic": "Karnu's Solar Power: a solo curse ledger that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "large enemy groups, ranged pressure, objective zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Artillery mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-008",
+      "name": "Maahes Noon Bastion",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Rare",
+      "previousRole": "Guardian",
+      "combatIdentity": "reaction defense specialist",
+      "uniqueMechanic": "Maahes's Solar Power: a solo stance fuse that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "boss duels, counterattack, protection under pressure",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Guardian mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-009",
+      "name": "Amunet Hidden Sun",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Legendary",
+      "previousRole": "Assassin",
+      "combatIdentity": "mobility execution specialist",
+      "uniqueMechanic": "Amunet's Solar Power: a solo hazard bloom that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "execution-based encounters, priority targets, mobility assassinations",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Assassin mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-010",
+      "name": "The Allfather Stormvein",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Legendary",
+      "previousRole": "Defender",
+      "combatIdentity": "frontline solar/order anchor",
+      "uniqueMechanic": "The's Storm Oath: a solo pursuit lock that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "long survival, objective holding, hazard endurance",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Asgardian gear modifies Defender mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings long survival, objective holding, hazard endurance without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-011",
+      "name": "Hrothar Rune-Mountain",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Epic",
+      "previousRole": "Battery",
+      "combatIdentity": "resource engine specialist",
+      "uniqueMechanic": "Hrothar's Storm Oath: a solo shield fracture that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "resource pressure, Divinity/Momentum economy, long missions",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Asgardian gear modifies Battery mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-012",
+      "name": "Skeld Iron Tempest",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Epic",
+      "previousRole": "Controller",
+      "combatIdentity": "terrain and movement manipulator",
+      "uniqueMechanic": "Skeld's Storm Oath: a solo echo clone that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "fast enemies, terrain-heavy battles, caster denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Asgardian gear modifies Controller mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-013",
+      "name": "Eirwyn Valkstorm",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Rare",
+      "previousRole": "Breaker",
+      "combatIdentity": "armor and structure destroyer",
+      "uniqueMechanic": "Eirwyn's Storm Oath: a solo range aperture that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "heavily armored enemies, shield windows, boss armor phases",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Asgardian gear modifies Breaker mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-014",
+      "name": "Mordun Frost-Anvil",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Epic",
+      "previousRole": "Disruptor",
+      "combatIdentity": "enemy plan breaker",
+      "uniqueMechanic": "Mordun's Storm Oath: a solo soul counter that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Asgardian gear modifies Disruptor mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-015",
+      "name": "Veyra Thunderloom",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Rare",
+      "previousRole": "Sustain",
+      "combatIdentity": "self-recovery endurance specialist",
+      "uniqueMechanic": "Veyra's Storm Oath: a solo glory stack that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "attrition, survival, poison/burn fields",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Asgardian gear modifies Sustain mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings attrition, survival, poison/burn fields without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-016",
+      "name": "Ragnor Skybreaker",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Epic",
+      "previousRole": "Artillery",
+      "combatIdentity": "wide-area pressure specialist",
+      "uniqueMechanic": "Ragnor's Storm Oath: a solo vow scar that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "large enemy groups, ranged pressure, objective zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Asgardian gear modifies Artillery mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-017",
+      "name": "Ullr Snow-Crown",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Rare",
+      "previousRole": "Guardian",
+      "combatIdentity": "reaction defense specialist",
+      "uniqueMechanic": "Ullr's Storm Oath: a solo root memory that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "boss duels, counterattack, protection under pressure",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Asgardian gear modifies Guardian mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-018",
+      "name": "Sigrun Oathflare",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Legendary",
+      "previousRole": "Assassin",
+      "combatIdentity": "mobility execution specialist",
+      "uniqueMechanic": "Sigrun's Storm Oath: a solo edict seal that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "execution-based encounters, priority targets, mobility assassinations",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Asgardian gear modifies Assassin mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-019",
+      "name": "Aurelion Heaven-Marrow",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Legendary",
+      "previousRole": "Defender",
+      "combatIdentity": "frontline solar/order anchor",
+      "uniqueMechanic": "Aurelion's Laurel Glory: a solo charge meter that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "long survival, objective holding, hazard endurance",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Olympian gear modifies Defender mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings long survival, objective holding, hazard endurance without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-020",
+      "name": "Kallix Marble Thunder",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Epic",
+      "previousRole": "Battery",
+      "combatIdentity": "resource engine specialist",
+      "uniqueMechanic": "Kallix's Laurel Glory: a solo mark cycle that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "resource pressure, Divinity/Momentum economy, long missions",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Olympian gear modifies Battery mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-021",
+      "name": "Thyressa Golden Aegis",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Epic",
+      "previousRole": "Controller",
+      "combatIdentity": "terrain and movement manipulator",
+      "uniqueMechanic": "Thyressa's Laurel Glory: a solo terrain imprint that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "fast enemies, terrain-heavy battles, caster denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Olympian gear modifies Controller mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-022",
+      "name": "Ilyon Laurel Flame",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Rare",
+      "previousRole": "Breaker",
+      "combatIdentity": "armor and structure destroyer",
+      "uniqueMechanic": "Ilyon's Laurel Glory: a solo parry ladder that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "heavily armored enemies, shield windows, boss armor phases",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Olympian gear modifies Breaker mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-023",
+      "name": "Nikos Star-Lance",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Epic",
+      "previousRole": "Disruptor",
+      "combatIdentity": "enemy plan breaker",
+      "uniqueMechanic": "Nikos's Laurel Glory: a solo execution chain that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Olympian gear modifies Disruptor mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-024",
+      "name": "Dione Victory Mirror",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Rare",
+      "previousRole": "Sustain",
+      "combatIdentity": "self-recovery endurance specialist",
+      "uniqueMechanic": "Dione's Laurel Glory: a solo zone conversion that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "attrition, survival, poison/burn fields",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Olympian gear modifies Sustain mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings attrition, survival, poison/burn fields without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-025",
+      "name": "Helior Bronze Summit",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Epic",
+      "previousRole": "Artillery",
+      "combatIdentity": "wide-area pressure specialist",
+      "uniqueMechanic": "Helior's Laurel Glory: a solo curse ledger that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "large enemy groups, ranged pressure, objective zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Olympian gear modifies Artillery mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-026",
+      "name": "Pallas Oath-Spear",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Rare",
+      "previousRole": "Guardian",
+      "combatIdentity": "reaction defense specialist",
+      "uniqueMechanic": "Pallas's Laurel Glory: a solo stance fuse that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "boss duels, counterattack, protection under pressure",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Olympian gear modifies Guardian mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-027",
+      "name": "Eiren Crowned Horizon",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Legendary",
+      "previousRole": "Assassin",
+      "combatIdentity": "mobility execution specialist",
+      "uniqueMechanic": "Eiren's Laurel Glory: a solo hazard bloom that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "execution-based encounters, priority targets, mobility assassinations",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Olympian gear modifies Assassin mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-028",
+      "name": "Amaterion Spirit-Sun",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Legendary",
+      "previousRole": "Defender",
+      "combatIdentity": "frontline solar/order anchor",
+      "uniqueMechanic": "Amaterion's Spirit Balance: a solo pursuit lock that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "long survival, objective holding, hazard endurance",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Kami gear modifies Defender mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings long survival, objective holding, hazard endurance without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-029",
+      "name": "Tsukiro Moon-Veil",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Epic",
+      "previousRole": "Battery",
+      "combatIdentity": "resource engine specialist",
+      "uniqueMechanic": "Tsukiro's Spirit Balance: a solo shield fracture that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "resource pressure, Divinity/Momentum economy, long missions",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Kami gear modifies Battery mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-030",
+      "name": "Raidenko Storm Script",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Epic",
+      "previousRole": "Controller",
+      "combatIdentity": "terrain and movement manipulator",
+      "uniqueMechanic": "Raidenko's Spirit Balance: a solo echo clone that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "fast enemies, terrain-heavy battles, caster denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Kami gear modifies Controller mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-031",
+      "name": "Mizuka Shrine Tide",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Rare",
+      "previousRole": "Breaker",
+      "combatIdentity": "armor and structure destroyer",
+      "uniqueMechanic": "Mizuka's Spirit Balance: a solo range aperture that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "heavily armored enemies, shield windows, boss armor phases",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Kami gear modifies Breaker mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-032",
+      "name": "Kageyori Shadow Gate",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Epic",
+      "previousRole": "Disruptor",
+      "combatIdentity": "enemy plan breaker",
+      "uniqueMechanic": "Kageyori's Spirit Balance: a solo soul counter that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Kami gear modifies Disruptor mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-033",
+      "name": "Hanae Blossom Ward",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Rare",
+      "previousRole": "Sustain",
+      "combatIdentity": "self-recovery endurance specialist",
+      "uniqueMechanic": "Hanae's Spirit Balance: a solo glory stack that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "attrition, survival, poison/burn fields",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Kami gear modifies Sustain mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings attrition, survival, poison/burn fields without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-034",
+      "name": "Onimaru Red Seal",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Epic",
+      "previousRole": "Artillery",
+      "combatIdentity": "wide-area pressure specialist",
+      "uniqueMechanic": "Onimaru's Spirit Balance: a solo vow scar that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "large enemy groups, ranged pressure, objective zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Kami gear modifies Artillery mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-035",
+      "name": "Korin Mist Path",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Rare",
+      "previousRole": "Guardian",
+      "combatIdentity": "reaction defense specialist",
+      "uniqueMechanic": "Korin's Spirit Balance: a solo root memory that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "boss duels, counterattack, protection under pressure",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Kami gear modifies Guardian mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-036",
+      "name": "Yamabito Stone Prayer",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Legendary",
+      "previousRole": "Assassin",
+      "combatIdentity": "mobility execution specialist",
+      "uniqueMechanic": "Yamabito's Spirit Balance: a solo edict seal that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "execution-based encounters, priority targets, mobility assassinations",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Kami gear modifies Assassin mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-037",
+      "name": "Dagoran Root-Crown",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Legendary",
+      "previousRole": "Defender",
+      "combatIdentity": "frontline solar/order anchor",
+      "uniqueMechanic": "Dagoran's Living Grove: a solo charge meter that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "long survival, objective holding, hazard endurance",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Tuatha gear modifies Defender mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings long survival, objective holding, hazard endurance without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-038",
+      "name": "Eryndor Emerald Oath",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Epic",
+      "previousRole": "Battery",
+      "combatIdentity": "resource engine specialist",
+      "uniqueMechanic": "Eryndor's Living Grove: a solo mark cycle that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "resource pressure, Divinity/Momentum economy, long missions",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Tuatha gear modifies Battery mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-039",
+      "name": "Melian Moon-Grove",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Epic",
+      "previousRole": "Controller",
+      "combatIdentity": "terrain and movement manipulator",
+      "uniqueMechanic": "Melian's Living Grove: a solo terrain imprint that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "fast enemies, terrain-heavy battles, caster denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Tuatha gear modifies Controller mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-040",
+      "name": "Bran Granite Bough",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Rare",
+      "previousRole": "Breaker",
+      "combatIdentity": "armor and structure destroyer",
+      "uniqueMechanic": "Bran's Living Grove: a solo parry ladder that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "heavily armored enemies, shield windows, boss armor phases",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Tuatha gear modifies Breaker mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-041",
+      "name": "Nimue Silver Pool",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Epic",
+      "previousRole": "Disruptor",
+      "combatIdentity": "enemy plan breaker",
+      "uniqueMechanic": "Nimue's Living Grove: a solo execution chain that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Tuatha gear modifies Disruptor mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-042",
+      "name": "Cernan Wild Vale",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Rare",
+      "previousRole": "Sustain",
+      "combatIdentity": "self-recovery endurance specialist",
+      "uniqueMechanic": "Cernan's Living Grove: a solo zone conversion that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "attrition, survival, poison/burn fields",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Tuatha gear modifies Sustain mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings attrition, survival, poison/burn fields without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-043",
+      "name": "Ailbhe Thorn-Song",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Epic",
+      "previousRole": "Artillery",
+      "combatIdentity": "wide-area pressure specialist",
+      "uniqueMechanic": "Ailbhe's Living Grove: a solo curse ledger that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "large enemy groups, ranged pressure, objective zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Tuatha gear modifies Artillery mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-044",
+      "name": "Oghma Stone Script",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Rare",
+      "previousRole": "Guardian",
+      "combatIdentity": "reaction defense specialist",
+      "uniqueMechanic": "Oghma's Living Grove: a solo stance fuse that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "boss duels, counterattack, protection under pressure",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Tuatha gear modifies Guardian mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-045",
+      "name": "Tara Dawn Barrow",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Legendary",
+      "previousRole": "Assassin",
+      "combatIdentity": "mobility execution specialist",
+      "uniqueMechanic": "Tara's Living Grove: a solo hazard bloom that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "execution-based encounters, priority targets, mobility assassinations",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Tuatha gear modifies Assassin mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-046",
+      "name": "Seraphel, the Throne Eternal",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Legendary",
+      "previousRole": "Defender",
+      "combatIdentity": "frontline solar/order anchor",
+      "uniqueMechanic": "Seraphel's Radiant Edict: a solo pursuit lock that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "long survival, objective holding, hazard endurance",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Empyrean gear modifies Defender mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings long survival, objective holding, hazard endurance without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-047",
+      "name": "Caelion Dawnborn Axis",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Epic",
+      "previousRole": "Battery",
+      "combatIdentity": "resource engine specialist",
+      "uniqueMechanic": "Caelion's Radiant Edict: a solo shield fracture that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "resource pressure, Divinity/Momentum economy, long missions",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Empyrean gear modifies Battery mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-048",
+      "name": "Aurelia Radiant Spear",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Epic",
+      "previousRole": "Controller",
+      "combatIdentity": "terrain and movement manipulator",
+      "uniqueMechanic": "Aurelia's Radiant Edict: a solo echo clone that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "fast enemies, terrain-heavy battles, caster denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Empyrean gear modifies Controller mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-049",
+      "name": "Malachor Law Warden",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Rare",
+      "previousRole": "Breaker",
+      "combatIdentity": "armor and structure destroyer",
+      "uniqueMechanic": "Malachor's Radiant Edict: a solo range aperture that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "heavily armored enemies, shield windows, boss armor phases",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Empyrean gear modifies Breaker mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-050",
+      "name": "Elyndra Choir Crown",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Epic",
+      "previousRole": "Disruptor",
+      "combatIdentity": "enemy plan breaker",
+      "uniqueMechanic": "Elyndra's Radiant Edict: a solo soul counter that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Empyrean gear modifies Disruptor mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-051",
+      "name": "Orison White Citadel",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Rare",
+      "previousRole": "Sustain",
+      "combatIdentity": "self-recovery endurance specialist",
+      "uniqueMechanic": "Orison's Radiant Edict: a solo glory stack that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "attrition, survival, poison/burn fields",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Empyrean gear modifies Sustain mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings attrition, survival, poison/burn fields without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-052",
+      "name": "Vespera Mercy Blade",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Epic",
+      "previousRole": "Artillery",
+      "combatIdentity": "wide-area pressure specialist",
+      "uniqueMechanic": "Vespera's Radiant Edict: a solo vow scar that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "large enemy groups, ranged pressure, objective zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Empyrean gear modifies Artillery mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-053",
+      "name": "Axiom Gate Choir",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Rare",
+      "previousRole": "Guardian",
+      "combatIdentity": "reaction defense specialist",
+      "uniqueMechanic": "Axiom's Radiant Edict: a solo root memory that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "boss duels, counterattack, protection under pressure",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Empyrean gear modifies Guardian mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-054",
+      "name": "Theon Still Horizon",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Legendary",
+      "previousRole": "Assassin",
+      "combatIdentity": "mobility execution specialist",
+      "uniqueMechanic": "Theon's Radiant Edict: a solo edict seal that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "execution-based encounters, priority targets, mobility assassinations",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Empyrean gear modifies Assassin mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-055",
+      "name": "Mordrath, the Infernal King",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Legendary",
+      "previousRole": "Defender",
+      "combatIdentity": "frontline solar/order anchor",
+      "uniqueMechanic": "Mordrath's Dominion Flame: a solo charge meter that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "long survival, objective holding, hazard endurance",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Defender mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings long survival, objective holding, hazard endurance without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-056",
+      "name": "Varkul Bloodforged Crown",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Epic",
+      "previousRole": "Battery",
+      "combatIdentity": "resource engine specialist",
+      "uniqueMechanic": "Varkul's Dominion Flame: a solo mark cycle that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "resource pressure, Divinity/Momentum economy, long missions",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Battery mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-057",
+      "name": "Nyxara Flameborn Court",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Epic",
+      "previousRole": "Controller",
+      "combatIdentity": "terrain and movement manipulator",
+      "uniqueMechanic": "Nyxara's Dominion Flame: a solo terrain imprint that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "fast enemies, terrain-heavy battles, caster denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Controller mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-058",
+      "name": "Azrakar Chainwarden",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Rare",
+      "previousRole": "Breaker",
+      "combatIdentity": "armor and structure destroyer",
+      "uniqueMechanic": "Azrakar's Dominion Flame: a solo parry ladder that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "heavily armored enemies, shield windows, boss armor phases",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Breaker mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-059",
+      "name": "Orryx Ash Dominion",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Epic",
+      "previousRole": "Disruptor",
+      "combatIdentity": "enemy plan breaker",
+      "uniqueMechanic": "Orryx's Dominion Flame: a solo execution chain that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Disruptor mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-060",
+      "name": "Malvera Ember Throne",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Rare",
+      "previousRole": "Sustain",
+      "combatIdentity": "self-recovery endurance specialist",
+      "uniqueMechanic": "Malvera's Dominion Flame: a solo zone conversion that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "attrition, survival, poison/burn fields",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Sustain mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings attrition, survival, poison/burn fields without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-061",
+      "name": "Kharon Black Iron",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Epic",
+      "previousRole": "Artillery",
+      "combatIdentity": "wide-area pressure specialist",
+      "uniqueMechanic": "Kharon's Dominion Flame: a solo curse ledger that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "large enemy groups, ranged pressure, objective zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Artillery mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-062",
+      "name": "Sablex Cinder Duke",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Rare",
+      "previousRole": "Guardian",
+      "combatIdentity": "reaction defense specialist",
+      "uniqueMechanic": "Sablex's Dominion Flame: a solo stance fuse that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "boss duels, counterattack, protection under pressure",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Guardian mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    },
+    {
+      "id": "TG-TITAN-063",
+      "name": "Zerath Wound Gate",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Legendary",
+      "previousRole": "Assassin",
+      "combatIdentity": "mobility execution specialist",
+      "uniqueMechanic": "Zerath's Dominion Flame: a solo hazard bloom that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "execution-based encounters, priority targets, mobility assassinations",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Assassin mechanics rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations without making the player's main Titan obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock."
+    }
+  ]
+}

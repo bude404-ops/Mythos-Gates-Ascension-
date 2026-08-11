@@ -10,7 +10,7 @@
     "artPrompts": 110,
     "artworks": 0,
     "artImportPipeline": 1,
-    "developmentTasks": 18,
+    "developmentTasks": 21,
     "loreEntries": 35,
     "npcs": 8,
     "creatures": 18,
@@ -58,6 +58,10 @@
     "soloTitanRosterRedesign": 1,
     "enemyScalingDesignDocument": 1,
     "raidDesignDocument": 1,
+    "canonFactionMatrix": 1,
+    "titanRoleMatrix": 1,
+    "rosterDepthMap": 1,
+    "playerOnboardingRosterJourney": 1,
     "hollowCreatures": 16,
     "artMapPrompts": 12,
     "artCampaignPrompts": 7
@@ -119,13 +123,17 @@
     "solo-combat-design-document.json": "data/solo-combat-design-document.json",
     "solo-titan-roster-redesign.json": "data/solo-titan-roster-redesign.json",
     "enemy-scaling-design-document.json": "data/enemy-scaling-design-document.json",
-    "raid-design-document.json": "data/raid-design-document.json"
+    "raid-design-document.json": "data/raid-design-document.json",
+    "canon-faction-matrix.json": "data/canon-faction-matrix.json",
+    "titan-role-matrix.json": "data/titan-role-matrix.json",
+    "roster-depth-map.json": "data/roster-depth-map.json",
+    "player-onboarding-roster-journey.json": "data/player-onboarding-roster-journey.json"
   },
   "sourceFileFingerprints": {
     "project.json": {
       "path": "data/project.json",
       "bytes": 2832,
-      "sha256": "a106093d457511d25b1a2e486cd7ad172bb054151cd827710969146222c4cc61"
+      "sha256": "5a9492656425a08ecd360f4d920723b6688152b802f024cb41c98a48d6d7a059"
     },
     "factions.json": {
       "path": "data/factions.json",
@@ -169,8 +177,8 @@
     },
     "development-tasks.json": {
       "path": "data/development-tasks.json",
-      "bytes": 9116,
-      "sha256": "b5598c83dcb391d33e2b5a978ab07c2d8eb674cedc62c7fb09377e0ea54a043a"
+      "bytes": 10729,
+      "sha256": "21c1a23c2f5e7bec7d753cde436dd1f78f1d464b9d16b79c36e85012baaa2257"
     },
     "lore-index.json": {
       "path": "data/lore-index.json",
@@ -259,8 +267,8 @@
     },
     "change-history.json": {
       "path": "data/change-history.json",
-      "bytes": 15023,
-      "sha256": "d747a8b5ab729beb8eb2537e96eec4cb8a6581aa6164c243014e70250fa642d4"
+      "bytes": 15625,
+      "sha256": "86e2e62f45bb84debe1d51ece67006a1abd0b6640b8469ddd0b03e0e479b2212"
     },
     "campaign-architecture.json": {
       "path": "data/campaign-architecture.json",
@@ -324,8 +332,8 @@
     },
     "progression-system.json": {
       "path": "data/progression-system.json",
-      "bytes": 1574,
-      "sha256": "dca36e54057cc511b30ea743d5814d14cebb548560e6c0d8943faeb20cc4cf1f"
+      "bytes": 2054,
+      "sha256": "45b600aadb7e1b35a9926ea0db49d3633f1ce0f68cf6e0e3706d26ae29cb89b0"
     },
     "ascension-system.json": {
       "path": "data/ascension-system.json",
@@ -370,7 +378,7 @@
     "continuity-balance-audit.json": {
       "path": "data/continuity-balance-audit.json",
       "bytes": 2643,
-      "sha256": "ed57aa142627d828ff753844badaeeba86bd8d0c2cbc3a3715835a9428616ef6"
+      "sha256": "b1bcf0566c3adf59ec5a3f70debf88817b3a862a4a1bb976155b17a10f0d209e"
     },
     "endgame-dashboard.json": {
       "path": "data/endgame-dashboard.json",
@@ -406,6 +414,26 @@
       "path": "data/raid-design-document.json",
       "bytes": 6239,
       "sha256": "ef383a8c89f6b05e32d05bffef21ebc49a2d957cc4ca903c0e1a7ccf528b6781"
+    },
+    "canon-faction-matrix.json": {
+      "path": "data/canon-faction-matrix.json",
+      "bytes": 33311,
+      "sha256": "006bbe15b2f6a2d614ff6fec563bca464cd24614f2b088d1b9bc30b449453dbe"
+    },
+    "titan-role-matrix.json": {
+      "path": "data/titan-role-matrix.json",
+      "bytes": 103677,
+      "sha256": "be961fa745de091d94fc82a982ba2255fe1a7381f1d63412e94e70dbc53da95c"
+    },
+    "roster-depth-map.json": {
+      "path": "data/roster-depth-map.json",
+      "bytes": 7780,
+      "sha256": "bfc7b6f2fc32fb71a9401469131c99a0219239d807a2896584ddae7f7cb09ee1"
+    },
+    "player-onboarding-roster-journey.json": {
+      "path": "data/player-onboarding-roster-journey.json",
+      "bytes": 5597,
+      "sha256": "13b75be2db7252542fe90096f8fb361775abd3fc96e03e59fa3bf1156f3316de"
     }
   },
   "artPromptCategories": {

@@ -303,5 +303,54 @@
       "data/reward-system.json",
       "data/progression-system.json"
     ]
+  },
+  {
+    "id": "TG-DEV-026",
+    "description": "Implement starter Titan choice, Awakening mission beats, and first solo onboarding sequence from canonical Aten Ra data.",
+    "director": "Development Director",
+    "priority": "High",
+    "status": "NEXT",
+    "dependencies": [
+      "TG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001",
+      "TG-CANON-FACTION-MATRIX-001"
+    ],
+    "relatedEntity": "TG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001",
+    "relatedFiles": [
+      "data/player-onboarding-roster-journey.json",
+      "data/canon-faction-matrix.json",
+      "game/index.html"
+    ]
+  },
+  {
+    "id": "TG-DEV-027",
+    "description": "Implement Titan Trial and Faction Trial data model with temporary loadouts, sample gear, Divine Ascension showcase, and conversion path.",
+    "director": "Progression Director",
+    "priority": "High",
+    "status": "NEXT",
+    "dependencies": [
+      "TG-TITAN-ROLE-MATRIX-001",
+      "data/progression-system.json"
+    ],
+    "relatedEntity": "TG-TITAN-ROLE-MATRIX-001",
+    "relatedFiles": [
+      "data/titan-role-matrix.json",
+      "data/progression-system.json"
+    ]
+  },
+  {
+    "id": "TG-DEV-028",
+    "description": "Tag campaign and endgame missions with tactical problem categories and recommended-but-not-required Titan advantages.",
+    "director": "Gameplay Director",
+    "priority": "High",
+    "status": "NEXT",
+    "dependencies": [
+      "TG-ROSTER-DEPTH-MAP-001",
+      "data/mission-registry.json"
+    ],
+    "relatedEntity": "TG-ROSTER-DEPTH-MAP-001",
+    "relatedFiles": [
+      "data/roster-depth-map.json",
+      "data/mission-registry.json"
+    ]
   }
 ]

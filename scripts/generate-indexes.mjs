@@ -64,7 +64,11 @@ const files = {
   'solo-combat-design-document.json': 'soloCombatDesignDocument',
   'solo-titan-roster-redesign.json': 'soloTitanRosterRedesign',
   'enemy-scaling-design-document.json': 'enemyScalingDesignDocument',
-  'raid-design-document.json': 'raidDesignDocument'
+  'raid-design-document.json': 'raidDesignDocument',
+  'canon-faction-matrix.json': 'canonFactionMatrix',
+  'titan-role-matrix.json': 'titanRoleMatrix',
+  'roster-depth-map.json': 'rosterDepthMap',
+  'player-onboarding-roster-journey.json': 'playerOnboardingRosterJourney'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {

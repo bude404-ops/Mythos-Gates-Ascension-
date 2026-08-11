@@ -1,0 +1,765 @@
+{
+  "id": "TG-CANON-FACTION-MATRIX-001",
+  "version": "0.9.2",
+  "generated": "2026-08-11T20:38:00Z",
+  "directive": "Canon wins. This matrix reads existing faction database and realm codex; missing fields are flagged instead of invented.",
+  "canonConflictPolicy": [
+    "Do not rename factions",
+    "Do not replace mythologies",
+    "Do not invent leaders when no canonical leader field exists",
+    "Preserve existing IDs and references",
+    "If gameplay desire conflicts with lore, flag it for Lore Director"
+  ],
+  "factionCount": 7,
+  "factions": [
+    {
+      "factionId": "TG-FACTION-001",
+      "slug": "aten-ra",
+      "exactEstablishedName": "Aten Ra",
+      "canonStatus": "Preserved from faction database and realm codex",
+      "loreIdentity": "A divine solar civilization of judgment, radiance, command, sacred order, temple law, and ancient solar mathematics.",
+      "mythologicalIdentity": "Ancient Egyptian mythology",
+      "worldview": "Sacred order channels solar power into civilization.",
+      "leader": "Not explicitly established in current faction database/realm codex; do not invent until Lore Director defines it.",
+      "realm": "The Solar Dominion of Khepra",
+      "gate": "The Sun-Scale Gate",
+      "centralConflict": "Their law can heal chaos, but it can also harden into tyranny when other Realms refuse the Solar Measure.",
+      "visualIdentity": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms.",
+      "environments": [
+        "The Noon Court",
+        "The Glass Horizon Necropolis",
+        "The River of Verdicts",
+        "The Pyramid Engines",
+        "The Black-Sun Archive"
+      ],
+      "realmHazards": [
+        "Judgment rays that expose hidden lies",
+        "mirage courts that repeat failed choices",
+        "sand that remembers bloodlines"
+      ],
+      "combatPhilosophy": "Defensive command, radiant control, judgment zones, solar sustain.",
+      "factionPassive": "Solar Law: coordinated Titans gain defensive clarity after holding objectives.",
+      "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed strike force.",
+      "titanDesignPhilosophy": "Every Aten Ra Titan expresses Defensive command, radiant control, judgment zones, solar sustain. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+      "enemyDesignPhilosophy": "Enemies in Aten Ra content should test the faction conflict: Their law can heal chaos, but it can also harden into tyranny when other Realms refuse the Solar Measure.",
+      "factionProgression": {
+        "source": "Use factionMastery save data and campaign progression; preserve IDs.",
+        "rewards": [
+          "faction cosmetics",
+          "relics",
+          "Titan shards",
+          "Codex entries",
+          "titles",
+          "special missions",
+          "faction-specific materials"
+        ]
+      },
+      "factionGear": "Gear should carry Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. and modify faction mechanics, not flat stats.",
+      "factionRelics": "Relics should reinforce Sacred order channels solar power into civilization. through terrain, Momentum, Divinity, reactions, or execution rules.",
+      "factionCampaign": {
+        "campaignModel": "20 Normal + 20 Elite missions across 5 chapters for current seven-faction canon",
+        "discoveryRole": "Introduce this faction as a new world, not a reward track."
+      },
+      "factionChallenges": [
+        "Titan trial",
+        "faction trial",
+        "elite remix",
+        "boss rematch",
+        "raid modifier",
+        "asynchronous defensive Titan snapshot"
+      ],
+      "factionMastery": "Relationship deepening: Codex, cosmetics, relic identity, personal quests, and trial access before numerical power.",
+      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other Titans to win through mastery.",
+      "titans": [
+        {
+          "id": "TG-TITAN-001",
+          "name": "Aten-Ra, Solar Law Monolith",
+          "role": "Defender"
+        },
+        {
+          "id": "TG-TITAN-002",
+          "name": "Khemet Suncrown",
+          "role": "Battery"
+        },
+        {
+          "id": "TG-TITAN-003",
+          "name": "Nefra Obsidian Dawn",
+          "role": "Controller"
+        },
+        {
+          "id": "TG-TITAN-004",
+          "name": "Orru Prism Verdict",
+          "role": "Breaker"
+        },
+        {
+          "id": "TG-TITAN-005",
+          "name": "Sutekh Dune Eclipse",
+          "role": "Disruptor"
+        },
+        {
+          "id": "TG-TITAN-006",
+          "name": "Iset Riverlight Throne",
+          "role": "Sustain"
+        },
+        {
+          "id": "TG-TITAN-007",
+          "name": "Karnu Glass Horizon",
+          "role": "Artillery"
+        },
+        {
+          "id": "TG-TITAN-008",
+          "name": "Maahes Noon Bastion",
+          "role": "Guardian"
+        },
+        {
+          "id": "TG-TITAN-009",
+          "name": "Amunet Hidden Sun",
+          "role": "Assassin"
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-002",
+      "slug": "asgardian",
+      "exactEstablishedName": "Asgardian",
+      "canonStatus": "Preserved from faction database and realm codex",
+      "loreIdentity": "A storm-oath warrior civilization where vows, endurance, and battle memory shape power.",
+      "mythologicalIdentity": "Norse mythology",
+      "worldview": "Oaths give war meaning; courage gives power form.",
+      "leader": "Not explicitly established in current faction database/realm codex; do not invent until Lore Director defines it.",
+      "realm": "The Storm-Rooted Aesir Holds",
+      "gate": "The Thunder-Oath Gate",
+      "centralConflict": "Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.",
+      "visualIdentity": "Steel, iron, rune markings, storm energy, mountain-forged mass, frost scars, thunder wounds.",
+      "environments": [
+        "The Storm-Oath Bridge",
+        "The Rune-Mountain Halls",
+        "The Valkyrie Weatherfields",
+        "The Broken Feast Road",
+        "The Frost-Anvil Deep"
+      ],
+      "realmHazards": [
+        "Runes that punish oathbreakers",
+        "blizzards carrying ancestral judgment",
+        "bridges that collapse under cowardice"
+      ],
+      "combatPhilosophy": "Durable assault, counterattack, storm pressure, oath-based endurance.",
+      "factionPassive": "Oathbound: surviving damage strengthens the next committed strike.",
+      "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed strike force.",
+      "titanDesignPhilosophy": "Every Asgardian Titan expresses Durable assault, counterattack, storm pressure, oath-based endurance. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+      "enemyDesignPhilosophy": "Enemies in Asgardian content should test the faction conflict: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.",
+      "factionProgression": {
+        "source": "Use factionMastery save data and campaign progression; preserve IDs.",
+        "rewards": [
+          "faction cosmetics",
+          "relics",
+          "Titan shards",
+          "Codex entries",
+          "titles",
+          "special missions",
+          "faction-specific materials"
+        ]
+      },
+      "factionGear": "Gear should carry Steel, iron, rune markings, storm energy, mountain-forged mass, frost scars, thunder wounds. and modify faction mechanics, not flat stats.",
+      "factionRelics": "Relics should reinforce Oaths give war meaning; courage gives power form. through terrain, Momentum, Divinity, reactions, or execution rules.",
+      "factionCampaign": {
+        "campaignModel": "20 Normal + 20 Elite missions across 5 chapters for current seven-faction canon",
+        "discoveryRole": "Introduce this faction as a new world, not a reward track."
+      },
+      "factionChallenges": [
+        "Titan trial",
+        "faction trial",
+        "elite remix",
+        "boss rematch",
+        "raid modifier",
+        "asynchronous defensive Titan snapshot"
+      ],
+      "factionMastery": "Relationship deepening: Codex, cosmetics, relic identity, personal quests, and trial access before numerical power.",
+      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other Titans to win through mastery.",
+      "titans": [
+        {
+          "id": "TG-TITAN-010",
+          "name": "The Allfather Stormvein",
+          "role": "Defender"
+        },
+        {
+          "id": "TG-TITAN-011",
+          "name": "Hrothar Rune-Mountain",
+          "role": "Battery"
+        },
+        {
+          "id": "TG-TITAN-012",
+          "name": "Skeld Iron Tempest",
+          "role": "Controller"
+        },
+        {
+          "id": "TG-TITAN-013",
+          "name": "Eirwyn Valkstorm",
+          "role": "Breaker"
+        },
+        {
+          "id": "TG-TITAN-014",
+          "name": "Mordun Frost-Anvil",
+          "role": "Disruptor"
+        },
+        {
+          "id": "TG-TITAN-015",
+          "name": "Veyra Thunderloom",
+          "role": "Sustain"
+        },
+        {
+          "id": "TG-TITAN-016",
+          "name": "Ragnor Skybreaker",
+          "role": "Artillery"
+        },
+        {
+          "id": "TG-TITAN-017",
+          "name": "Ullr Snow-Crown",
+          "role": "Guardian"
+        },
+        {
+          "id": "TG-TITAN-018",
+          "name": "Sigrun Oathflare",
+          "role": "Assassin"
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-003",
+      "slug": "olympian",
+      "exactEstablishedName": "Olympian",
+      "canonStatus": "Preserved from faction database and realm codex",
+      "loreIdentity": "A civilization of glory, perfection, contest, beauty, achievement, and divine supremacy.",
+      "mythologicalIdentity": "Greek mythology",
+      "worldview": "Excellence proves divinity.",
+      "leader": "Not explicitly established in current faction database/realm codex; do not invent until Lore Director defines it.",
+      "realm": "The Marble Sky of Olympus",
+      "gate": "The Laurel-Star Gate",
+      "centralConflict": "Glory unites them in public and divides them in private; every victory creates a jealous shadow.",
+      "visualIdentity": "Bronze, gold, marble, celestial light, living statue anatomy, ichor-lit cracks, sculptural bodies.",
+      "environments": [
+        "The Marble Sky Arena",
+        "The Laurel Senate",
+        "The Bronze Summit",
+        "The Mirror-Victory Hall",
+        "The Star-Lance Colonnade"
+      ],
+      "realmHazards": [
+        "Crowds whose belief changes battlefield rules",
+        "living statues of past champions",
+        "laurel flames that burn false heroism"
+      ],
+      "combatPhilosophy": "Elite balanced pressure, precision, dueling, morale momentum.",
+      "factionPassive": "Laurel Supremacy: excellence chains bonuses after clean tactical execution.",
+      "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed strike force.",
+      "titanDesignPhilosophy": "Every Olympian Titan expresses Elite balanced pressure, precision, dueling, morale momentum. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+      "enemyDesignPhilosophy": "Enemies in Olympian content should test the faction conflict: Glory unites them in public and divides them in private; every victory creates a jealous shadow.",
+      "factionProgression": {
+        "source": "Use factionMastery save data and campaign progression; preserve IDs.",
+        "rewards": [
+          "faction cosmetics",
+          "relics",
+          "Titan shards",
+          "Codex entries",
+          "titles",
+          "special missions",
+          "faction-specific materials"
+        ]
+      },
+      "factionGear": "Gear should carry Bronze, gold, marble, celestial light, living statue anatomy, ichor-lit cracks, sculptural bodies. and modify faction mechanics, not flat stats.",
+      "factionRelics": "Relics should reinforce Excellence proves divinity. through terrain, Momentum, Divinity, reactions, or execution rules.",
+      "factionCampaign": {
+        "campaignModel": "20 Normal + 20 Elite missions across 5 chapters for current seven-faction canon",
+        "discoveryRole": "Introduce this faction as a new world, not a reward track."
+      },
+      "factionChallenges": [
+        "Titan trial",
+        "faction trial",
+        "elite remix",
+        "boss rematch",
+        "raid modifier",
+        "asynchronous defensive Titan snapshot"
+      ],
+      "factionMastery": "Relationship deepening: Codex, cosmetics, relic identity, personal quests, and trial access before numerical power.",
+      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other Titans to win through mastery.",
+      "titans": [
+        {
+          "id": "TG-TITAN-019",
+          "name": "Aurelion Heaven-Marrow",
+          "role": "Defender"
+        },
+        {
+          "id": "TG-TITAN-020",
+          "name": "Kallix Marble Thunder",
+          "role": "Battery"
+        },
+        {
+          "id": "TG-TITAN-021",
+          "name": "Thyressa Golden Aegis",
+          "role": "Controller"
+        },
+        {
+          "id": "TG-TITAN-022",
+          "name": "Ilyon Laurel Flame",
+          "role": "Breaker"
+        },
+        {
+          "id": "TG-TITAN-023",
+          "name": "Nikos Star-Lance",
+          "role": "Disruptor"
+        },
+        {
+          "id": "TG-TITAN-024",
+          "name": "Dione Victory Mirror",
+          "role": "Sustain"
+        },
+        {
+          "id": "TG-TITAN-025",
+          "name": "Helior Bronze Summit",
+          "role": "Artillery"
+        },
+        {
+          "id": "TG-TITAN-026",
+          "name": "Pallas Oath-Spear",
+          "role": "Guardian"
+        },
+        {
+          "id": "TG-TITAN-027",
+          "name": "Eiren Crowned Horizon",
+          "role": "Assassin"
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-004",
+      "slug": "kami",
+      "exactEstablishedName": "Kami",
+      "canonStatus": "Preserved from faction database and realm codex",
+      "loreIdentity": "A spiritual civilization of sacred duty, ancestral power, shrine law, discipline, nature spirits, and divine balance.",
+      "mythologicalIdentity": "Japanese mythology",
+      "worldview": "Balance is defended by precision.",
+      "leader": "Not explicitly established in current faction database/realm codex; do not invent until Lore Director defines it.",
+      "realm": "The Shrine-Path Archipelago",
+      "gate": "The Spirit-Moon Gate",
+      "centralConflict": "Their secrecy protects sacred balance but makes allies fear what they cannot see.",
+      "visualIdentity": "Lacquered armor, steel, sacred markings, masks, shrine-light, ink, mist, spirit ribbons.",
+      "environments": [
+        "The Mist Path Thousand Steps",
+        "The Moon-Veil Lake",
+        "The Red Seal Oni Court",
+        "The Shrine Tide Docks",
+        "The Storm-Script Tower"
+      ],
+      "realmHazards": [
+        "Possessed paper wards",
+        "mist corridors that rearrange loyalty",
+        "spirit tides that drown memory"
+      ],
+      "combatPhilosophy": "Precise control, repositioning, evasion, spirit terrain, disciplined burst.",
+      "factionPassive": "Sacred Balance: careful positioning unlocks spirit precision effects.",
+      "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed strike force.",
+      "titanDesignPhilosophy": "Every Kami Titan expresses Precise control, repositioning, evasion, spirit terrain, disciplined burst. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+      "enemyDesignPhilosophy": "Enemies in Kami content should test the faction conflict: Their secrecy protects sacred balance but makes allies fear what they cannot see.",
+      "factionProgression": {
+        "source": "Use factionMastery save data and campaign progression; preserve IDs.",
+        "rewards": [
+          "faction cosmetics",
+          "relics",
+          "Titan shards",
+          "Codex entries",
+          "titles",
+          "special missions",
+          "faction-specific materials"
+        ]
+      },
+      "factionGear": "Gear should carry Lacquered armor, steel, sacred markings, masks, shrine-light, ink, mist, spirit ribbons. and modify faction mechanics, not flat stats.",
+      "factionRelics": "Relics should reinforce Balance is defended by precision. through terrain, Momentum, Divinity, reactions, or execution rules.",
+      "factionCampaign": {
+        "campaignModel": "20 Normal + 20 Elite missions across 5 chapters for current seven-faction canon",
+        "discoveryRole": "Introduce this faction as a new world, not a reward track."
+      },
+      "factionChallenges": [
+        "Titan trial",
+        "faction trial",
+        "elite remix",
+        "boss rematch",
+        "raid modifier",
+        "asynchronous defensive Titan snapshot"
+      ],
+      "factionMastery": "Relationship deepening: Codex, cosmetics, relic identity, personal quests, and trial access before numerical power.",
+      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other Titans to win through mastery.",
+      "titans": [
+        {
+          "id": "TG-TITAN-028",
+          "name": "Amaterion Spirit-Sun",
+          "role": "Defender"
+        },
+        {
+          "id": "TG-TITAN-029",
+          "name": "Tsukiro Moon-Veil",
+          "role": "Battery"
+        },
+        {
+          "id": "TG-TITAN-030",
+          "name": "Raidenko Storm Script",
+          "role": "Controller"
+        },
+        {
+          "id": "TG-TITAN-031",
+          "name": "Mizuka Shrine Tide",
+          "role": "Breaker"
+        },
+        {
+          "id": "TG-TITAN-032",
+          "name": "Kageyori Shadow Gate",
+          "role": "Disruptor"
+        },
+        {
+          "id": "TG-TITAN-033",
+          "name": "Hanae Blossom Ward",
+          "role": "Sustain"
+        },
+        {
+          "id": "TG-TITAN-034",
+          "name": "Onimaru Red Seal",
+          "role": "Artillery"
+        },
+        {
+          "id": "TG-TITAN-035",
+          "name": "Korin Mist Path",
+          "role": "Guardian"
+        },
+        {
+          "id": "TG-TITAN-036",
+          "name": "Yamabito Stone Prayer",
+          "role": "Assassin"
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-005",
+      "slug": "tuatha",
+      "exactEstablishedName": "Tuatha",
+      "canonStatus": "Preserved from faction database and realm codex",
+      "loreIdentity": "An ancient civilization intertwined with sacred forests, fae danger, living stones, druidic force, and moonlit grove law.",
+      "mythologicalIdentity": "Celtic mythology",
+      "worldview": "The living world adapts and endures.",
+      "leader": "Not explicitly established in current faction database/realm codex; do not invent until Lore Director defines it.",
+      "realm": "The Root-Crowned Green Below",
+      "gate": "The Thorn-Memory Gate",
+      "centralConflict": "Their memory is power, but it can become vengeance when old wounds refuse to compost.",
+      "visualIdentity": "Emerald, silver, living wood, ancient stones, roots, bark-bronze skin, antler crowns, moonlit grove power.",
+      "environments": [
+        "The Moon-Grove Rootlabyrinth",
+        "The Silver Pool",
+        "The Thorn-Song Court",
+        "The Barrow Dawn",
+        "The Stone Script Hill"
+      ],
+      "realmHazards": [
+        "Roots that bind liars",
+        "fae bargains hidden in birdsong",
+        "barrow lights that lure Titans into old wars"
+      ],
+      "combatPhilosophy": "Adaptation, healing, roots, terrain control, endurance through life systems.",
+      "factionPassive": "Living Grove: terrain and sustain effects grow stronger over time.",
+      "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed strike force.",
+      "titanDesignPhilosophy": "Every Tuatha Titan expresses Adaptation, healing, roots, terrain control, endurance through life systems. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+      "enemyDesignPhilosophy": "Enemies in Tuatha content should test the faction conflict: Their memory is power, but it can become vengeance when old wounds refuse to compost.",
+      "factionProgression": {
+        "source": "Use factionMastery save data and campaign progression; preserve IDs.",
+        "rewards": [
+          "faction cosmetics",
+          "relics",
+          "Titan shards",
+          "Codex entries",
+          "titles",
+          "special missions",
+          "faction-specific materials"
+        ]
+      },
+      "factionGear": "Gear should carry Emerald, silver, living wood, ancient stones, roots, bark-bronze skin, antler crowns, moonlit grove power. and modify faction mechanics, not flat stats.",
+      "factionRelics": "Relics should reinforce The living world adapts and endures. through terrain, Momentum, Divinity, reactions, or execution rules.",
+      "factionCampaign": {
+        "campaignModel": "20 Normal + 20 Elite missions across 5 chapters for current seven-faction canon",
+        "discoveryRole": "Introduce this faction as a new world, not a reward track."
+      },
+      "factionChallenges": [
+        "Titan trial",
+        "faction trial",
+        "elite remix",
+        "boss rematch",
+        "raid modifier",
+        "asynchronous defensive Titan snapshot"
+      ],
+      "factionMastery": "Relationship deepening: Codex, cosmetics, relic identity, personal quests, and trial access before numerical power.",
+      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other Titans to win through mastery.",
+      "titans": [
+        {
+          "id": "TG-TITAN-037",
+          "name": "Dagoran Root-Crown",
+          "role": "Defender"
+        },
+        {
+          "id": "TG-TITAN-038",
+          "name": "Eryndor Emerald Oath",
+          "role": "Battery"
+        },
+        {
+          "id": "TG-TITAN-039",
+          "name": "Melian Moon-Grove",
+          "role": "Controller"
+        },
+        {
+          "id": "TG-TITAN-040",
+          "name": "Bran Granite Bough",
+          "role": "Breaker"
+        },
+        {
+          "id": "TG-TITAN-041",
+          "name": "Nimue Silver Pool",
+          "role": "Disruptor"
+        },
+        {
+          "id": "TG-TITAN-042",
+          "name": "Cernan Wild Vale",
+          "role": "Sustain"
+        },
+        {
+          "id": "TG-TITAN-043",
+          "name": "Ailbhe Thorn-Song",
+          "role": "Artillery"
+        },
+        {
+          "id": "TG-TITAN-044",
+          "name": "Oghma Stone Script",
+          "role": "Guardian"
+        },
+        {
+          "id": "TG-TITAN-045",
+          "name": "Tara Dawn Barrow",
+          "role": "Assassin"
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-006",
+      "slug": "empyrean",
+      "exactEstablishedName": "Empyrean",
+      "canonStatus": "Preserved from faction database and realm codex",
+      "loreIdentity": "A radiant hierarchy of law, purpose, preservation, sacred geometry, divine halls, and anti-chaos governance.",
+      "mythologicalIdentity": "Human legends of Heaven, celestial kingdoms, angels, divine messengers, radiant beings, and heavenly guardians",
+      "worldview": "Existence survives through order.",
+      "leader": "Not explicitly established in current faction database/realm codex; do not invent until Lore Director defines it.",
+      "realm": "The White Citadel Above Law",
+      "gate": "The Choir-Axiom Gate",
+      "centralConflict": "Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.",
+      "visualIdentity": "Gold-white metals, celestial light, ordered winglike silhouettes, law sigils, halo-spine geometry, throne-like bodies.",
+      "environments": [
+        "The White Citadel",
+        "The Choir Axis",
+        "The Edict Vault",
+        "The Mercy Blade Cloister",
+        "The Still Horizon"
+      ],
+      "realmHazards": [
+        "Edicts that rewrite movement",
+        "choirs that expose contradiction",
+        "light bridges that vanish under impure intent"
+      ],
+      "combatPhilosophy": "Protection, order-locks, shields, anti-chaos control, formationless aura play.",
+      "factionPassive": "Radiant Edict: structured actions reduce chaos effects and protect allies.",
+      "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed strike force.",
+      "titanDesignPhilosophy": "Every Empyrean Titan expresses Protection, order-locks, shields, anti-chaos control, formationless aura play. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+      "enemyDesignPhilosophy": "Enemies in Empyrean content should test the faction conflict: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.",
+      "factionProgression": {
+        "source": "Use factionMastery save data and campaign progression; preserve IDs.",
+        "rewards": [
+          "faction cosmetics",
+          "relics",
+          "Titan shards",
+          "Codex entries",
+          "titles",
+          "special missions",
+          "faction-specific materials"
+        ]
+      },
+      "factionGear": "Gear should carry Gold-white metals, celestial light, ordered winglike silhouettes, law sigils, halo-spine geometry, throne-like bodies. and modify faction mechanics, not flat stats.",
+      "factionRelics": "Relics should reinforce Existence survives through order. through terrain, Momentum, Divinity, reactions, or execution rules.",
+      "factionCampaign": {
+        "campaignModel": "20 Normal + 20 Elite missions across 5 chapters for current seven-faction canon",
+        "discoveryRole": "Introduce this faction as a new world, not a reward track."
+      },
+      "factionChallenges": [
+        "Titan trial",
+        "faction trial",
+        "elite remix",
+        "boss rematch",
+        "raid modifier",
+        "asynchronous defensive Titan snapshot"
+      ],
+      "factionMastery": "Relationship deepening: Codex, cosmetics, relic identity, personal quests, and trial access before numerical power.",
+      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other Titans to win through mastery.",
+      "titans": [
+        {
+          "id": "TG-TITAN-046",
+          "name": "Seraphel, the Throne Eternal",
+          "role": "Defender"
+        },
+        {
+          "id": "TG-TITAN-047",
+          "name": "Caelion Dawnborn Axis",
+          "role": "Battery"
+        },
+        {
+          "id": "TG-TITAN-048",
+          "name": "Aurelia Radiant Spear",
+          "role": "Controller"
+        },
+        {
+          "id": "TG-TITAN-049",
+          "name": "Malachor Law Warden",
+          "role": "Breaker"
+        },
+        {
+          "id": "TG-TITAN-050",
+          "name": "Elyndra Choir Crown",
+          "role": "Disruptor"
+        },
+        {
+          "id": "TG-TITAN-051",
+          "name": "Orison White Citadel",
+          "role": "Sustain"
+        },
+        {
+          "id": "TG-TITAN-052",
+          "name": "Vespera Mercy Blade",
+          "role": "Artillery"
+        },
+        {
+          "id": "TG-TITAN-053",
+          "name": "Axiom Gate Choir",
+          "role": "Guardian"
+        },
+        {
+          "id": "TG-TITAN-054",
+          "name": "Theon Still Horizon",
+          "role": "Assassin"
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-007",
+      "slug": "infernal-dominion",
+      "exactEstablishedName": "Infernal Dominion",
+      "canonStatus": "Preserved from faction database and realm codex",
+      "loreIdentity": "A powerful civilization of ambition, conquest, hierarchy, survival, infernal law, dark artisanship, and royal violence.",
+      "mythologicalIdentity": "Human legends of Hell, demons, devils, underworld rulers, infernal beasts, fire, and darkness",
+      "worldview": "Power belongs to those capable of wielding it.",
+      "leader": "Not explicitly established in current faction database/realm codex; do not invent until Lore Director defines it.",
+      "realm": "The Black Iron Court of Dominion",
+      "gate": "The Cinder-Wound Gate",
+      "centralConflict": "They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.",
+      "visualIdentity": "Obsidian, hellfire, dark iron, chains, burning sigils, horn-lineage anatomy, ash-fire skin, volcanic cracks.",
+      "environments": [
+        "The Black Iron Court",
+        "The Ember Throne",
+        "The Chainwarden Crucible",
+        "The Ash Dominion Road",
+        "The Wound Gate Pit"
+      ],
+      "realmHazards": [
+        "Contracts that bind battlefield choices",
+        "cinder storms that feed rage",
+        "chains that punish weakness and mercy alike"
+      ],
+      "combatPhilosophy": "Aggression, debuffs, pulls, execution, burn pressure, power through risk.",
+      "factionPassive": "Dominion Flame: decisive aggression turns enemy weakness into momentum.",
+      "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed strike force.",
+      "titanDesignPhilosophy": "Every Infernal Dominion Titan expresses Aggression, debuffs, pulls, execution, burn pressure, power through risk. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+      "enemyDesignPhilosophy": "Enemies in Infernal Dominion content should test the faction conflict: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.",
+      "factionProgression": {
+        "source": "Use factionMastery save data and campaign progression; preserve IDs.",
+        "rewards": [
+          "faction cosmetics",
+          "relics",
+          "Titan shards",
+          "Codex entries",
+          "titles",
+          "special missions",
+          "faction-specific materials"
+        ]
+      },
+      "factionGear": "Gear should carry Obsidian, hellfire, dark iron, chains, burning sigils, horn-lineage anatomy, ash-fire skin, volcanic cracks. and modify faction mechanics, not flat stats.",
+      "factionRelics": "Relics should reinforce Power belongs to those capable of wielding it. through terrain, Momentum, Divinity, reactions, or execution rules.",
+      "factionCampaign": {
+        "campaignModel": "20 Normal + 20 Elite missions across 5 chapters for current seven-faction canon",
+        "discoveryRole": "Introduce this faction as a new world, not a reward track."
+      },
+      "factionChallenges": [
+        "Titan trial",
+        "faction trial",
+        "elite remix",
+        "boss rematch",
+        "raid modifier",
+        "asynchronous defensive Titan snapshot"
+      ],
+      "factionMastery": "Relationship deepening: Codex, cosmetics, relic identity, personal quests, and trial access before numerical power.",
+      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other Titans to win through mastery.",
+      "titans": [
+        {
+          "id": "TG-TITAN-055",
+          "name": "Mordrath, the Infernal King",
+          "role": "Defender"
+        },
+        {
+          "id": "TG-TITAN-056",
+          "name": "Varkul Bloodforged Crown",
+          "role": "Battery"
+        },
+        {
+          "id": "TG-TITAN-057",
+          "name": "Nyxara Flameborn Court",
+          "role": "Controller"
+        },
+        {
+          "id": "TG-TITAN-058",
+          "name": "Azrakar Chainwarden",
+          "role": "Breaker"
+        },
+        {
+          "id": "TG-TITAN-059",
+          "name": "Orryx Ash Dominion",
+          "role": "Disruptor"
+        },
+        {
+          "id": "TG-TITAN-060",
+          "name": "Malvera Ember Throne",
+          "role": "Sustain"
+        },
+        {
+          "id": "TG-TITAN-061",
+          "name": "Kharon Black Iron",
+          "role": "Artillery"
+        },
+        {
+          "id": "TG-TITAN-062",
+          "name": "Sablex Cinder Duke",
+          "role": "Guardian"
+        },
+        {
+          "id": "TG-TITAN-063",
+          "name": "Zerath Wound Gate",
+          "role": "Assassin"
+        }
+      ]
+    }
+  ],
+  "conflictsFlagged": [
+    {
+      "field": "leader",
+      "scope": "all factions",
+      "resolution": "Current data does not expose explicit faction leaders. Player onboarding may use faction voice, gate-scribes, Titans, or existing NPCs only where canon supports them."
+    }
+  ]
+}

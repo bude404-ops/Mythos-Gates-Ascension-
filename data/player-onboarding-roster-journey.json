@@ -1,0 +1,162 @@
+{
+  "id": "TG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001",
+  "version": "0.9.2",
+  "generated": "2026-08-11T20:38:00Z",
+  "directive": "Build attachment to a main Titan, then create desire for specialists and faction exploration without mandatory Titan locks.",
+  "startingFactionDecision": {
+    "factionId": "TG-FACTION-001",
+    "name": "Aten Ra",
+    "reason": "Existing campaign architecture currentImplemented points to Aten Ra; realm codex frames Gate law, judgment, and the first one-Titan crossing cleanly. This preserves canon and avoids inventing a starter faction."
+  },
+  "firstTitanChoice": {
+    "mode": "small canon-safe starter choice if product wants choice; otherwise default to Aten-Ra, Solar Law Monolith",
+    "defaultTitan": {
+      "id": "TG-TITAN-001",
+      "name": "Aten-Ra, Solar Law Monolith",
+      "reason": "Durable, readable, objective-safe, and thematically tied to Gates, law, and survival."
+    },
+    "optionalStarterSet": [
+      {
+        "id": "TG-TITAN-001",
+        "name": "Aten-Ra, Solar Law Monolith",
+        "role": "Defender",
+        "why": "long survival, objective holding, hazard endurance"
+      },
+      {
+        "id": "TG-TITAN-003",
+        "name": "Nefra Obsidian Dawn",
+        "role": "Controller",
+        "why": "fast enemies, terrain-heavy battles, caster denial"
+      },
+      {
+        "id": "TG-TITAN-004",
+        "name": "Orru Prism Verdict",
+        "role": "Breaker",
+        "why": "heavily armored enemies, shield windows, boss armor phases"
+      }
+    ],
+    "guardrail": "Do not show the full roster at onboarding."
+  },
+  "firstMissions": [
+    {
+      "step": 1,
+      "lesson": "Awaken first Titan; movement and basic attacks",
+      "missionBeat": "The Gate opens; the Titan crosses alone."
+    },
+    {
+      "step": 2,
+      "lesson": "Abilities and positioning",
+      "missionBeat": "Enemies force use of range, facing, and safe lanes."
+    },
+    {
+      "step": 3,
+      "lesson": "Momentum and reactions",
+      "missionBeat": "First telegraphed attack creates a dodge/parry/counter prompt."
+    },
+    {
+      "step": 4,
+      "lesson": "Terrain",
+      "missionBeat": "Judgment rays, ruins, or river-light lanes reward terrain mastery."
+    },
+    {
+      "step": 5,
+      "lesson": "First elite",
+      "missionBeat": "Elite teaches priority target and stance discipline."
+    },
+    {
+      "step": 6,
+      "lesson": "First meaningful build choice",
+      "missionBeat": "Choose an ability evolution or stance upgrade, not a flat stat."
+    },
+    {
+      "step": 7,
+      "lesson": "First boss",
+      "missionBeat": "Multi-phase Gate enemy with reaction opportunities and a weakness window."
+    },
+    {
+      "step": 8,
+      "lesson": "Second Titan encounter",
+      "missionBeat": "Second Titan appears through story/battlefield event, solves a problem differently."
+    },
+    {
+      "step": 9,
+      "lesson": "Titan Trial",
+      "missionBeat": "Player temporarily pilots the second Titan with its mechanic, gear sample, and Divine Ascension."
+    },
+    {
+      "step": 10,
+      "lesson": "Unlock second Titan",
+      "missionBeat": "Unlock through progression/trial/personal quest path, not pure sales pressure."
+    },
+    {
+      "step": 11,
+      "lesson": "First faction discovery",
+      "missionBeat": "A Gate incident reveals another canon faction as a new world."
+    },
+    {
+      "step": 12,
+      "lesson": "Faction Trial",
+      "missionBeat": "Temporary mission teaches faction environment, combat philosophy, Codex, and Titan identity."
+    }
+  ],
+  "secondTitanRecommendation": {
+    "principle": "Pick a radically different playstyle from the starter.",
+    "candidates": [
+      {
+        "id": "TG-TITAN-005",
+        "name": "Sutekh Dune Eclipse",
+        "role": "Disruptor",
+        "why": "enemy casters, elite mechanics, Momentum/Divinity denial"
+      },
+      {
+        "id": "TG-TITAN-007",
+        "name": "Karnu Glass Horizon",
+        "role": "Artillery",
+        "why": "large enemy groups, ranged pressure, objective zones"
+      },
+      {
+        "id": "TG-TITAN-009",
+        "name": "Amunet Hidden Sun",
+        "role": "Assassin",
+        "why": "execution-based encounters, priority targets, mobility assassinations"
+      }
+    ],
+    "unlockMethod": "story encounter -> playable trial -> personal quest/shard completion -> permanent unlock"
+  },
+  "titanTrialSystem": {
+    "purpose": "Sell gameplay experience, not stats.",
+    "trialContents": [
+      "unique mechanic tutorial",
+      "sample gear loadout",
+      "reaction showcase",
+      "execution reward",
+      "Divine Ascension moment",
+      "one tactical mission"
+    ],
+    "ownershipConversion": "After trial, show what mastery, gear, personal quest, and faction progression would unlock."
+  },
+  "factionTrialSystem": {
+    "purpose": "Make every faction feel like another world and combat philosophy.",
+    "trialContents": [
+      "faction lore intro",
+      "realm environment",
+      "one faction Titan",
+      "faction passive demonstration",
+      "faction gear sample",
+      "Codex unlock",
+      "short boss/elite encounter"
+    ]
+  },
+  "longTermCollectionLoop": [
+    "DISCOVER",
+    "TEST",
+    "UNLOCK",
+    "DEVELOP",
+    "MASTER",
+    "SPECIALIZE",
+    "ASCEND",
+    "USE",
+    "DISCOVER_ANOTHER"
+  ],
+  "freePlayerPolicy": "Titan acquisition must include campaign rewards, trials, personal quests, faction progression, shards, events, bosses, raids, achievements, and Codex discoveries. Premium may accelerate only if existing monetization permits; it must not be required."
+}
