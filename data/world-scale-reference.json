@@ -1,0 +1,47 @@
+{
+  "id": "TG-WORLD-SCALE-REFERENCE-001",
+  "version": "1.0.0",
+  "created": "2026-08-11T21:06:00Z",
+  "directive": "Mobile-first does not mean tiny. Tactical grid spaces are logical; visual scale must make Titans, Gates, and bosses feel immense.",
+  "relativeScaleUnits": {
+    "normalHumanoid": 1.0,
+    "smallSwarm": 0.55,
+    "standardEnemy": 1.15,
+    "eliteEnemy": 1.85,
+    "largeEnemy": 2.8,
+    "playerTitan": 5.2,
+    "smallAgileTitan": 4.4,
+    "heavyTitan": 6.1,
+    "titanScaleEnemy": 5.8,
+    "colossalBoss": 9.5,
+    "standardWall": 3.4,
+    "titanGateArch": 14.0,
+    "gateInteriorOpening": 8.0,
+    "statue": 7.5,
+    "bridgeWidth": 6.5,
+    "templePylon": 11.0
+  },
+  "visualRules": [
+    "Normal enemies must occupy visibly less physical volume than the Titan.",
+    "Do not shrink Titans to fit the map; enlarge architecture and Gate landmarks.",
+    "Titan attacks use larger arcs, shockwaves, dust, terrain reaction, and camera weight.",
+    "The tactical grid expresses decisions, not literal human-sized squares.",
+    "Gates are landmarks visible from major battlefield zones and large enough to justify Titan travel."
+  ],
+  "comparisonViews": [
+    "normal enemy + Titan",
+    "elite + Titan",
+    "Titan + Titan-scale enemy",
+    "Titan + colossal boss",
+    "Titan + Gate",
+    "Titan + architecture",
+    "Titan + interactive terrain object"
+  ],
+  "mobileScaleChecks": [
+    "360x640 tactical zoom",
+    "390x844 normal zoom",
+    "430x932 boss zoom",
+    "landscape action camera",
+    "bottom action bar obstruction test"
+  ]
+}

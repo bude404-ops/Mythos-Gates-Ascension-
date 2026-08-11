@@ -68,7 +68,12 @@ const files = {
   'canon-faction-matrix.json': 'canonFactionMatrix',
   'titan-role-matrix.json': 'titanRoleMatrix',
   'roster-depth-map.json': 'rosterDepthMap',
-  'player-onboarding-roster-journey.json': 'playerOnboardingRosterJourney'
+  'player-onboarding-roster-journey.json': 'playerOnboardingRosterJourney',
+  'battlefield-director.json': 'battlefieldDirector',
+  'world-scale-reference.json': 'worldScaleReference',
+  'battlefield-vertical-slice.json': 'battlefieldVerticalSlice',
+  'battlefield-runtime-architecture.json': 'battlefieldRuntimeArchitecture',
+  'battlefield-quality-gate.json': 'battlefieldQualityGate'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {

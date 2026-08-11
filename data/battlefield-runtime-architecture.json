@@ -1,0 +1,58 @@
+{
+  "id": "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001",
+  "version": "1.0.0",
+  "created": "2026-08-11T21:06:00Z",
+  "pipeline": [
+    "battlefield data",
+    "combat engine",
+    "terrain system",
+    "AI planner",
+    "objective system",
+    "event system",
+    "boss system",
+    "reward system",
+    "progression writer"
+  ],
+  "dataDefinitions": [
+    "layout",
+    "spaces",
+    "terrain",
+    "interactables",
+    "objectives",
+    "enemies",
+    "aiProfiles",
+    "triggers",
+    "events",
+    "boss",
+    "bossPhases",
+    "difficulty",
+    "scaling",
+    "modifiers",
+    "gatePlacement",
+    "storytelling",
+    "scaleClass",
+    "cameraBeats",
+    "mobileUX"
+  ],
+  "runtimeRules": [
+    "No battlefield hardcoded as a one-off after this slice.",
+    "Every map has tactical spaces, terrain semantics, enemy intent, objective state, event triggers, boss state, reward payload, and scale validation.",
+    "Mobile UI shows only contextually relevant information.",
+    "Camera returns to tactical mode after action/cinematic beats."
+  ],
+  "futureWorkflow": [
+    "Lore approval",
+    "Visual design",
+    "Scale design",
+    "Tactical layout",
+    "Terrain",
+    "Encounters",
+    "Objectives",
+    "Events",
+    "Boss",
+    "Mobile UX",
+    "Performance",
+    "Playtest",
+    "Validation"
+  ]
+}

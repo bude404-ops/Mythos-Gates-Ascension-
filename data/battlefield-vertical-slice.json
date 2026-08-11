@@ -1,0 +1,353 @@
+{
+  "id": "TG-BATTLEFIELD-VS-001",
+  "version": "1.0.0",
+  "created": "2026-08-11T21:06:00Z",
+  "title": "The First Reopening Gate",
+  "subtitle": "Aten Ra vertical slice battlefield standard",
+  "canonSource": [
+    "TG-FACTION-001",
+    "TG-TITAN-001",
+    "TG-MAP-001",
+    "TG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001",
+    "TG-CANON-FACTION-MATRIX-001"
+  ],
+  "canonDecision": {
+    "faction": "Aten Ra",
+    "realm": "The Solar Dominion of Khepra",
+    "map": "The First Reopening Gate",
+    "starterTitan": "Aten-Ra, Solar Law Monolith",
+    "rationale": "Current onboarding starts with Aten Ra and the first Titan. The battlefield teaches Gate law, solar judgment terrain, one-Titan combat, and the massive-Gate fantasy without inventing a new faction or replacing lore."
+  },
+  "battlefieldSize": {
+    "logicalGrid": "7 x 7",
+    "meaningfulTacticalSpaces": 49,
+    "mobileRationale": "Compact enough for phone control, dense enough to support entry, open, chokepoint, terrain, objective, elite, and boss zones."
+  },
+  "zones": [
+    {
+      "id": "entry",
+      "name": "Broken Threshold",
+      "purpose": "Gate arrival cinematic and movement tutorial",
+      "spaces": [
+        "A1",
+        "A2",
+        "B1",
+        "B2"
+      ],
+      "story": "The first Titan emerges through a fractured Earth-side Gate courtyard."
+    },
+    {
+      "id": "open",
+      "name": "Sun-Cracked Causeway",
+      "purpose": "Open mobility route with ranged exposure",
+      "spaces": [
+        "C1",
+        "C2",
+        "D1",
+        "D2",
+        "E1",
+        "E2"
+      ]
+    },
+    {
+      "id": "choke",
+      "name": "Fallen Pylon Choke",
+      "purpose": "Direct route, enemy blocking, pillar destruction",
+      "spaces": [
+        "B3",
+        "C3",
+        "D3"
+      ]
+    },
+    {
+      "id": "terrain",
+      "name": "Judgment Ray Lanes",
+      "purpose": "Solar terrain grants Momentum but telegraphs danger",
+      "spaces": [
+        "E3",
+        "F3",
+        "E4",
+        "F4"
+      ]
+    },
+    {
+      "id": "objective",
+      "name": "Solar Seal Court",
+      "purpose": "Primary objective: stabilize three solar seals",
+      "spaces": [
+        "B4",
+        "C4",
+        "D4"
+      ]
+    },
+    {
+      "id": "elite",
+      "name": "Anchor Scar",
+      "purpose": "Elite encounter and reinforcements",
+      "spaces": [
+        "A5",
+        "B5",
+        "C5"
+      ]
+    },
+    {
+      "id": "boss",
+      "name": "Gate Mouth Arena",
+      "purpose": "Colossal boss phase fight beside the massive Gate",
+      "spaces": [
+        "D5",
+        "E5",
+        "F5",
+        "G5",
+        "D6",
+        "E6",
+        "F6",
+        "G6",
+        "D7",
+        "E7",
+        "F7",
+        "G7"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "type": "direct",
+      "description": "Push through Fallen Pylon Choke; fastest path but eats ranged pressure and elite overwatch."
+    },
+    {
+      "type": "safe",
+      "description": "Circle through Broken Threshold ruins; slower, more cover, lower Momentum income."
+    },
+    {
+      "type": "tactical",
+      "description": "Enter Judgment Ray Lanes, use Aten-Ra solar law to gain Momentum and trigger terrain punishment on enemies."
+    },
+    {
+      "type": "optional",
+      "description": "Break the memory obelisk for micro-lore and mastery XP before boss escalation."
+    }
+  ],
+  "terrain": [
+    {
+      "id": "sunlit_stone",
+      "name": "Sunlit Stone",
+      "effect": "Standing here at turn start grants +1 Momentum to Aten Ra Titans; enemies are exposed."
+    },
+    {
+      "id": "judgment_ray",
+      "name": "Judgment Ray",
+      "effect": "Telegraphed lane. At pulse, deals radiant damage to units inside; Aten-Ra can convert a perfect reaction into Divinity."
+    },
+    {
+      "id": "fractured_cover",
+      "name": "Fractured Cover",
+      "effect": "Reduces ranged damage; heavy Titan attacks can destroy it and open shortcuts."
+    },
+    {
+      "id": "gate_pressure",
+      "name": "Gate Pressure",
+      "effect": "Boss arena hazard; grows during boss phases unless Solar Seals remain stable."
+    },
+    {
+      "id": "memory_obelisk",
+      "name": "Memory Obelisk",
+      "effect": "Optional interactable: unlocks micro-Codex and Titan mastery XP."
+    }
+  ],
+  "interactables": [
+    {
+      "id": "pylon_wall",
+      "name": "Fallen Pylon Wall",
+      "interaction": "Titan Strike",
+      "result": "Destroys cover, opens direct route, triggers one Hollow reinforcement."
+    },
+    {
+      "id": "solar_seal_a",
+      "name": "Solar Seal A",
+      "interaction": "Stabilize",
+      "result": "Primary objective progress and reduces boss Gate Pressure."
+    },
+    {
+      "id": "solar_seal_b",
+      "name": "Solar Seal B",
+      "interaction": "Stabilize",
+      "result": "Primary objective progress and grants Divinity spark."
+    },
+    {
+      "id": "solar_seal_c",
+      "name": "Solar Seal C",
+      "interaction": "Stabilize",
+      "result": "Primary objective progress and weakens boss phase 2."
+    },
+    {
+      "id": "memory_obelisk",
+      "name": "Memory Obelisk",
+      "interaction": "Read",
+      "result": "Micro-lore, mastery XP, optional reward."
+    }
+  ],
+  "titanSpecificInteractions": [
+    {
+      "titanId": "TG-TITAN-001",
+      "name": "Aten-Ra, Solar Law Monolith",
+      "rules": [
+        "Gains Momentum on Sunlit Stone.",
+        "Can convert Judgment Ray perfect reaction into Divinity.",
+        "Solar Verdict can stabilize a Solar Seal from range 2.",
+        "Heavy monolith strike destroys pylon walls and visibly shakes the battlefield."
+      ]
+    },
+    {
+      "archetype": "mobility specialist",
+      "rules": [
+        "Can bypass the pylon choke through cracked causeway gaps but has less safe objective control."
+      ]
+    },
+    {
+      "archetype": "control specialist",
+      "rules": [
+        "Can hold enemies inside Judgment Ray lanes for higher tactical payoff."
+      ]
+    },
+    {
+      "archetype": "artillery specialist",
+      "rules": [
+        "Can pressure the boss early from open zone but risks caster/ranged retaliation."
+      ]
+    }
+  ],
+  "encounters": [
+    {
+      "n": 1,
+      "name": "Small Gateborn Group",
+      "teaches": "movement, target priority, Titan scale vs small enemies",
+      "enemies": [
+        "2 Hollow Wretches",
+        "1 Gate Scarab"
+      ]
+    },
+    {
+      "n": 2,
+      "name": "Ranged + Melee Pressure",
+      "teaches": "positioning, cover, predictive danger",
+      "enemies": [
+        "2 Hollow Wretches",
+        "1 Sun-Sick Archer"
+      ]
+    },
+    {
+      "n": 3,
+      "name": "Judgment Terrain Trial",
+      "teaches": "terrain, Momentum, reaction timing",
+      "enemies": [
+        "1 Hollow Caster",
+        "2 Shielded Wretches"
+      ]
+    },
+    {
+      "n": 4,
+      "name": "Anchor Elite",
+      "teaches": "build test, elite telegraphs, reinforcement event",
+      "enemies": [
+        "1 Gateborn Anchor-Knight",
+        "2 Reinforcements at 50% HP"
+      ]
+    },
+    {
+      "n": 5,
+      "name": "Solar Seal Objective",
+      "teaches": "objective priority, danger vs reward, Divinity spend timing",
+      "enemies": [
+        "Objective defenders",
+        "caster protected by cover"
+      ]
+    },
+    {
+      "n": 6,
+      "name": "Boss \u2014 The First Gate Colossus",
+      "teaches": "complete loop: phases, hazards, terrain, resources, escalation",
+      "enemies": [
+        "Colossal boss with Gate Pressure phases"
+      ]
+    }
+  ],
+  "boss": {
+    "id": "TG-BOSS-FIRST-GATE-COLOSSUS",
+    "name": "The First Gate Colossus",
+    "scaleClass": "colossalBoss",
+    "lore": "A massive Hollow pressure-shape forcing the First Reopening Gate wider. It is not a replacement faction; it is a threat born from the existing Gate rupture context.",
+    "phases": [
+      {
+        "phase": 1,
+        "name": "Awakening at the Gate Mouth",
+        "mechanic": "basic sweeps, summons small enemies, Gate visible in background"
+      },
+      {
+        "phase": 2,
+        "name": "Pressure Lanes",
+        "mechanic": "Judgment Ray lanes invert into Gate Pressure hazards unless seals are stable"
+      },
+      {
+        "phase": 3,
+        "name": "Pylon Shatter",
+        "mechanic": "boss destroys parts of cover, creating new routes and danger"
+      },
+      {
+        "phase": 4,
+        "name": "Colossal Verdict",
+        "mechanic": "large telegraphed attack; reaction success grants Momentum/Divinity window"
+      },
+      {
+        "phase": 5,
+        "name": "Solar Execution",
+        "mechanic": "final execution opportunity if player conserved Divinity"
+      }
+    ]
+  },
+  "difficulty": [
+    {
+      "tier": "Normal",
+      "changes": "Learns battlefield; generous telegraphs; boss phase 5 optional execution."
+    },
+    {
+      "tier": "Hard",
+      "changes": "Ranged enemy protects caster; Judgment Ray pulses faster; secondary objective tighter."
+    },
+    {
+      "tier": "Elite",
+      "changes": "Elite gains guard AI, reinforcements flank, boss phase 3 destroys more cover."
+    },
+    {
+      "tier": "Ascended",
+      "changes": "Gate Pressure grows each round; Divinity timing required for clean victory."
+    },
+    {
+      "tier": "Mythic",
+      "changes": "Boss gains alternate phase order, limited healing, extra caster AI, stricter mastery rewards."
+    }
+  ],
+  "rewards": [
+    "Titan XP",
+    "Aten Ra faction mastery",
+    "Aten-Ra mastery XP",
+    "Solar gear material",
+    "Codex: First Reopening Gate",
+    "optional cosmetic banner fragment",
+    "difficulty-tier relic chance"
+  ],
+  "qualityTargets": [
+    "one active Titan",
+    "49 meaningful spaces",
+    "multiple routes",
+    "interactive terrain",
+    "intelligent enemies",
+    "objective + optional objective",
+    "boss phases",
+    "mobile bottom action bar",
+    "camera modes",
+    "scale hierarchy",
+    "progression rewards",
+    "replay modifiers"
+  ]
+}

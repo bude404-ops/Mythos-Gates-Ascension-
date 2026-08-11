@@ -352,5 +352,49 @@
       "data/roster-depth-map.json",
       "data/mission-registry.json"
     ]
+  },
+  {
+    "id": "TG-DEV-029",
+    "description": "Implement production Battlefield Vertical Slice runtime around The First Reopening Gate with one active Titan, touch movement, terrain, objectives, encounters, boss phases, and rewards.",
+    "director": "Battlefield Director",
+    "priority": "Critical",
+    "status": "NEXT",
+    "dependencies": [
+      "TG-BATTLEFIELD-VS-001",
+      "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001"
+    ],
+    "relatedEntity": "TG-BATTLEFIELD-VS-001",
+    "relatedFiles": [
+      "data/battlefield-vertical-slice.json",
+      "game/battlefield-vertical-slice.html"
+    ]
+  },
+  {
+    "id": "TG-DEV-030",
+    "description": "Create Art Director scale reference sheets for normal enemy, elite, Titan, Titan-scale enemy, colossal boss, Gate, architecture, and battlefield objects.",
+    "director": "Art Director",
+    "priority": "High",
+    "status": "NEXT",
+    "dependencies": [
+      "TG-WORLD-SCALE-REFERENCE-001"
+    ],
+    "relatedEntity": "TG-WORLD-SCALE-REFERENCE-001",
+    "relatedFiles": [
+      "data/world-scale-reference.json"
+    ]
+  },
+  {
+    "id": "TG-DEV-031",
+    "description": "Add battlefield telemetry hooks for replayability, difficulty tuning, Momentum/Divinity usage, reaction success, objective timing, and boss phase fail points.",
+    "director": "Development Director",
+    "priority": "High",
+    "status": "NEXT",
+    "dependencies": [
+      "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001"
+    ],
+    "relatedEntity": "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001",
+    "relatedFiles": [
+      "data/battlefield-runtime-architecture.json"
+    ]
   }
 ]
