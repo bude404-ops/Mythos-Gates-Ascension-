@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-10",
+  "generated": "2026-08-11",
   "counts": {
     "project": 1,
     "factions": 7,
@@ -52,6 +52,7 @@
     "balanceAnalytics": 1,
     "endgameDashboard": 1,
     "monetizationPolicy": 1,
+    "hollowCreatures": 16,
     "artMapPrompts": 12,
     "artCampaignPrompts": 7
   },
@@ -107,6 +108,263 @@
     "balance-analytics.json": "data/balance-analytics.json",
     "endgame-dashboard.json": "data/endgame-dashboard.json",
     "monetization-policy.json": "data/monetization-policy.json"
+  },
+  "sourceFileFingerprints": {
+    "project.json": {
+      "path": "data/project.json",
+      "bytes": 2121,
+      "sha256": "e4864abe158f334919d2d74d8ab705e4b0540c58bb7347c15330896f9b7b48f8"
+    },
+    "factions.json": {
+      "path": "data/factions.json",
+      "bytes": 6066,
+      "sha256": "17ee191c007503a66938ba4891c544037068d312aae03bb8aa2b1bb43903e34e"
+    },
+    "hollow-faction.json": {
+      "path": "data/hollow-faction.json",
+      "bytes": 2094,
+      "sha256": "394c4adb3c8e1112709c2b14b4423de909d614d2e620f557465935c99f9ad6af"
+    },
+    "titans.json": {
+      "path": "data/titans.json",
+      "bytes": 88130,
+      "sha256": "783fe2198473b86eefd4de0b4a6a82497911d7df48e69be5b4f2242ff5abdda6"
+    },
+    "characters.json": {
+      "path": "data/characters.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "units.json": {
+      "path": "data/units.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "art-prompts.json": {
+      "path": "data/art-prompts.json",
+      "bytes": 126785,
+      "sha256": "291f9fe1d0764a2c34adbf05108c2c9faf0f892d6bbfc92510baa40f9313a281"
+    },
+    "artworks.json": {
+      "path": "data/artworks.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "art-import-pipeline.json": {
+      "path": "data/art-import-pipeline.json",
+      "bytes": 1294,
+      "sha256": "955d2f67cdfca19a430445a01de586cf487d238d3c0b68023a1f78800ab60d5e"
+    },
+    "development-tasks.json": {
+      "path": "data/development-tasks.json",
+      "bytes": 4679,
+      "sha256": "77d686cf61dd9e6f2680d363203df7f4679ae37078f882b1091edf737b056abf"
+    },
+    "lore-index.json": {
+      "path": "data/lore-index.json",
+      "bytes": 12069,
+      "sha256": "0e2b0c83a5c9fceb3e680e4cc952ebf7fdf9d0d4f26fb045ab28a752a1eebf49"
+    },
+    "npcs.json": {
+      "path": "data/npcs.json",
+      "bytes": 8851,
+      "sha256": "fa3f32d566eedec8e2b5408b15f51b209c9890ab94c07e9f9ccde279d87e8b8a"
+    },
+    "creatures.json": {
+      "path": "data/creatures.json",
+      "bytes": 20630,
+      "sha256": "e7eef55a98b6dd7c2afd71c04d8b3b1217be39e8ca251b5a90d59048e36fe70a"
+    },
+    "hollow-encounter-system.json": {
+      "path": "data/hollow-encounter-system.json",
+      "bytes": 2620,
+      "sha256": "900bf3fc58f5d97dbef98f9ddd2a30f39857c3b8c5c6281701de78cc0e605990"
+    },
+    "character-backstories.json": {
+      "path": "data/character-backstories.json",
+      "bytes": 311583,
+      "sha256": "ef74f4fc110408594aeff79ad4d517eba056a27b7cca5d63818ed13552239e45"
+    },
+    "maps.json": {
+      "path": "data/maps.json",
+      "bytes": 10298,
+      "sha256": "dd4b9d94f8b5c5a2af77882eb2052914dfd91669664f97fc862464680f02d652"
+    },
+    "campaigns.json": {
+      "path": "data/campaigns.json",
+      "bytes": 9249,
+      "sha256": "4c3e2300feb918d4558a916c6df34cc7137b9e98f32a9556be7122ffe8759be9"
+    },
+    "chapters.json": {
+      "path": "data/chapters.json",
+      "bytes": 8244,
+      "sha256": "5c2d15c9dfa116d68c9f08b6956ef2f47edf998d1a84fc4761300c4ec38aaeb5"
+    },
+    "dialogue-scripts.json": {
+      "path": "data/dialogue-scripts.json",
+      "bytes": 28508,
+      "sha256": "19dfe856184d150ac347faebd7151683684f825cfcfe3cafcd12293933ff7373"
+    },
+    "visual-screens.json": {
+      "path": "data/visual-screens.json",
+      "bytes": 8143,
+      "sha256": "4c656f78aa10a4e5e52111b1bc698ff0e185e233ab1f16754b9b77a343f2b061"
+    },
+    "visual-change-rules.json": {
+      "path": "data/visual-change-rules.json",
+      "bytes": 3690,
+      "sha256": "83b0c401b1bff9a21b698ddcfe508663c3e50acc5649558ec3eb07c4dfd27c68"
+    },
+    "visual-baselines.json": {
+      "path": "data/visual-baselines.json",
+      "bytes": 5046,
+      "sha256": "b80a4d0df1bbcdb8f05b94ebb8b560dc7f7dcbef65660cf6683a63d94ac0a18a"
+    },
+    "realm-codex.json": {
+      "path": "data/realm-codex.json",
+      "bytes": 53759,
+      "sha256": "1319bcd077769ccaf4d58c008f4b259186a746470abb5086154c6f4bd8b42a31"
+    },
+    "hybrid-visual-architecture.json": {
+      "path": "data/hybrid-visual-architecture.json",
+      "bytes": 7642,
+      "sha256": "d23007a6445ea62092fbeec5d974995217a033ace019a0bb7c082a981fff2560"
+    },
+    "asset-pipeline.json": {
+      "path": "data/asset-pipeline.json",
+      "bytes": 2994,
+      "sha256": "01c5d4a21ca5f43fe877264a110c1c87bcaed6b80b2a3d936d761da606b48e12"
+    },
+    "github-sync-policy.json": {
+      "path": "data/github-sync-policy.json",
+      "bytes": 2227,
+      "sha256": "6ba5c79488f2241bb583f4cf4ea2820bbb2b948a0c398f6513f1f6bf5f98a6f9"
+    },
+    "github-sync-status.json": {
+      "path": "data/github-sync-status.json",
+      "bytes": 1110,
+      "sha256": "9ad13c8d2edff6bec89db58d9b8c4c834de98b9e2157d6f9c030c3d586b2be7c"
+    },
+    "change-history.json": {
+      "path": "data/change-history.json",
+      "bytes": 10867,
+      "sha256": "58a5aa3d610b256bae8d13f0438b88ae247b84f6593d4a79c882ff7c0aed463c"
+    },
+    "campaign-architecture.json": {
+      "path": "data/campaign-architecture.json",
+      "bytes": 2038,
+      "sha256": "a16354274897e9f97fb661d96ee1fdfdffc3f5faa76dc7e4550fc58a970bac2e"
+    },
+    "campaign-chapter-registry.json": {
+      "path": "data/campaign-chapter-registry.json",
+      "bytes": 8210,
+      "sha256": "2af0ab82edc272ea2ff4ada5ad39cfbccbbf35e9bd8ef3262b3199af3682e882"
+    },
+    "mission-registry.json": {
+      "path": "data/mission-registry.json",
+      "bytes": 290459,
+      "sha256": "515e403baa439520e7e31ef29e46d835a90e05fd5674eb894a0f952d6535397c"
+    },
+    "mission-dialogue.json": {
+      "path": "data/mission-dialogue.json",
+      "bytes": 127087,
+      "sha256": "569e5b9dcc792a7f8b8473580cce45a64e13f27e3a2715668d6fd82747ca89f0"
+    },
+    "mission-art-packages.json": {
+      "path": "data/mission-art-packages.json",
+      "bytes": 133879,
+      "sha256": "2b6188160b3388ede9c2b61a820326812323aad5c255570d6fd9e03e2b50f029"
+    },
+    "objective-system.json": {
+      "path": "data/objective-system.json",
+      "bytes": 717,
+      "sha256": "1c66ecbc641f80513978403bf7d8d46e853182076bd0e160a0fa76a97548eb0c"
+    },
+    "reward-system.json": {
+      "path": "data/reward-system.json",
+      "bytes": 609,
+      "sha256": "9b57e21c919a647c9656bbb23ac92c3619f801fcaac5e1507d8d3b7761f44cb8"
+    },
+    "campaign-audit.json": {
+      "path": "data/campaign-audit.json",
+      "bytes": 1123,
+      "sha256": "56b17d7e1f5cadc1ab433985b5aae494edfdfbce63e49a7311d8722e95f0b0b4"
+    },
+    "storyline-arc-registry.json": {
+      "path": "data/storyline-arc-registry.json",
+      "bytes": 2083,
+      "sha256": "d2d7025dc073dfa4454f7d05fc0f441d0ec50d129faad2700b9b2d9b656ce3b3"
+    },
+    "campaign-consequence-registry.json": {
+      "path": "data/campaign-consequence-registry.json",
+      "bytes": 836,
+      "sha256": "c24e9a2aabd537fee8c1fc57f351f8f7ca2fca8178e95a4fa0d0714561191e1d"
+    },
+    "endgame-architecture.json": {
+      "path": "data/endgame-architecture.json",
+      "bytes": 2309,
+      "sha256": "faf0c45134274f78671cc5effd82f4dc434655e06806662e52c177bbcadd3141"
+    },
+    "squad-system.json": {
+      "path": "data/squad-system.json",
+      "bytes": 4454,
+      "sha256": "419db5f331f4951e93e893bd398eb5e6e2024d84e5dab1f50912b7e46a7a6fa0"
+    },
+    "progression-system.json": {
+      "path": "data/progression-system.json",
+      "bytes": 1189,
+      "sha256": "0e147908e24eb551ad8ba68db69421027e33d2a81c848983096b4687ab224bf5"
+    },
+    "ascension-system.json": {
+      "path": "data/ascension-system.json",
+      "bytes": 6534,
+      "sha256": "b92ded1180b7cf7315a6f0eb52bba6120d8060beb9cd10299a18837ce3f34db2"
+    },
+    "async-arena-system.json": {
+      "path": "data/async-arena-system.json",
+      "bytes": 4112,
+      "sha256": "b25ec4e15b555a1cb333d112c52b365e9274c5e2ed406becf036d9e6e1e4ec34"
+    },
+    "weekly-trials.json": {
+      "path": "data/weekly-trials.json",
+      "bytes": 1151,
+      "sha256": "2e08aeb362ef4bf829cccc03a0a65586ecc36612f1b76330441c373ef86dacde"
+    },
+    "raid-system.json": {
+      "path": "data/raid-system.json",
+      "bytes": 720,
+      "sha256": "39a8660bdd6caafdfffef6a893ca20bf145bd8e0ea2bbd54e898f33131eb3ea5"
+    },
+    "faction-mastery.json": {
+      "path": "data/faction-mastery.json",
+      "bytes": 3863,
+      "sha256": "bba40ab81f4c4ea2c0317028f2a09345a8738529c04d3f692067ae40379ea997"
+    },
+    "season-system.json": {
+      "path": "data/season-system.json",
+      "bytes": 736,
+      "sha256": "370e3d25f414f03ece527d4f021c7f3b5c0d0ab555068de8f8dccaf586cbbfda"
+    },
+    "achievement-system.json": {
+      "path": "data/achievement-system.json",
+      "bytes": 1172,
+      "sha256": "60ef5eae977b17078a8ac97e2dc3163d603607b886aed321f8215a1bf96b6833"
+    },
+    "balance-analytics.json": {
+      "path": "data/balance-analytics.json",
+      "bytes": 521,
+      "sha256": "54459b8ca16d4d9d9ff75c256f4fbb63e405b099676de868f39bfd770d5f1c07"
+    },
+    "endgame-dashboard.json": {
+      "path": "data/endgame-dashboard.json",
+      "bytes": 688,
+      "sha256": "43b17dc355a1258e6a0e6ff958f3bee1ee2b304627659433339dfe77d1b20e3a"
+    },
+    "monetization-policy.json": {
+      "path": "data/monetization-policy.json",
+      "bytes": 693,
+      "sha256": "ad70a9fb5ceff1a2fa25e6e845f857c5cf70d34de725fa65c79b3ec5eefc4b41"
+    }
   },
   "artPromptCategories": {
     "Titan": 63,
