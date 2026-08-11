@@ -1,13 +1,13 @@
 {
   "id": "TG-GITHUB-SYNC-STATUS-001",
   "status": "LOCAL_READY",
-  "version": "0.6.8",
+  "version": "0.6.9",
   "previousStableVersion": "0.3.3",
   "commit": "LOCAL_COMMIT",
-  "commitMessage": "chore: enforce dashboard index freshness",
+  "commitMessage": "feat: expand first playable mission objectives",
   "branch": "main",
   "repository": "bude404-ops/Titans-Gate-",
-  "lastPushTime": "2026-08-11T00:02:05Z",
+  "lastPushTime": "2026-08-11T02:02:26Z",
   "build": "PASS",
   "github": "PENDING_PUSH",
   "deployment": "IGNORED_BY_REQUEST",
@@ -17,9 +17,8 @@
   "manualPushAvailable": true,
   "safeAuthentication": "Server-side token, GitHub Actions secret, GitHub App, or local secure environment variable only. Browser token use is forbidden.",
   "recentChanges": [
-    "Dashboard index now includes source file SHA-256 fingerprints.",
-    "Hollow creature count is displayed from data/index.json.",
-    "GitHub sync now runs index freshness checks before pushing."
+    "First playable battle now has Solar Seal stabilization, Hollow Anchor destruction, threat-wave clearing, turn limit, evacuation tile, reinforcements, and star scoring.",
+    "TG-DEV-002 completed; campaign/chapter select moved active as next gameplay target."
   ],
   "liveStatusSource": "Public GitHub API; no credentials in browser.",
   "syncError": "Pages workflow intentionally ignored by holder request; endgame architecture synced through repository content updates."
