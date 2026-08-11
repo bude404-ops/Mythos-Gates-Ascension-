@@ -27,18 +27,30 @@
       {id:'mordrath', realm:'INFERNAL DOMINION', name:'Mordrath, the Infernal King', hp:33, atk:9, range:1, role:'Aggressive assault', sig:'Hell Crown', color:'text-bear-400'}
     ];
     const ENEMIES_BASE = [
-      {id:'hollow-1', name:'Hollow Memory-Eater', hp:18, atk:5, x:4, y:0, icon:'◈'},
-      {id:'gateborn-1', name:'Gateborn Rift-Bruiser', hp:24, atk:6, x:4, y:2, icon:'◆'},
-      {id:'forgotten-1', name:'Forgotten Oath Remnant', hp:20, atk:5, x:4, y:4, icon:'◇'}
+      {id:'hollow-1', name:'Hollow Wretch', hp:16, atk:4, x:4, y:0, icon:'◈', type:'Swarm'},
+      {id:'gateborn-1', name:'Gateborn Colossus', hp:28, atk:6, x:4, y:2, icon:'◆', type:'Bruiser'},
+      {id:'forgotten-1', name:'Forgotten Standard', hp:22, atk:5, x:4, y:4, icon:'◇', type:'Commander'}
     ];
-    const S = {screen:'squad', selected:['aten-ra','hrothar','aurelion','amaterion','dagoran'], turn:'player', round:1, energy:3, active:null, log:[], units:[], enemies:[], gameOver:null};
+    const REINFORCEMENTS = [
+      {id:'choir-1', name:'Hollow Choirling', hp:14, atk:3, x:4, y:1, icon:'◌', type:'Silencer'},
+      {id:'anchor-guard-1', name:'Hollow Knell Archer', hp:15, atk:5, x:3, y:0, icon:'⌁', type:'Ranged'}
+    ];
+    const OBJECTIVES = [
+      {id:'seal', label:'Solar Seal', x:2, y:2, icon:'☼', help:'End Titan turns on the seal to stabilize it.'},
+      {id:'anchor', label:'Hollow Anchor', x:4, y:3, icon:'⌬', hp:18, maxHp:18, help:'Attack the anchor or it summons Hollow reinforcements.'},
+      {id:'evac', label:'River-Light Exit', x:0, y:2, icon:'△', help:'Fallback tile for wounded Titans.'}
+    ];
+    const S = {screen:'squad', selected:['aten-ra','hrothar','aurelion','amaterion','dagoran'], turn:'player', round:1, energy:3, active:null, log:[], units:[], enemies:[], gameOver:null, stars:0, sealProgress:0, anchorDestroyed:false, reinforcementsCalled:false, optional:{fast:false, flawless:false, anchor:false, formation:false}, woundedEvacs:0};
     const $ = id => document.getElementById(id);
     const esc = x => String(x ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
     const byId = id => TITANS.find(t => t.id === id);
     const dist = (a,b) => Math.abs(a.x-b.x)+Math.abs(a.y-b.y);
+    const objAt = (x,y) => OBJECTIVES.find(o => o.x===x && o.y===y && (o.id!=='anchor' || !S.anchorDestroyed));
     function startGame(){
-      S.screen='battle'; S.round=1; S.energy=3; S.turn='player'; S.gameOver=null; S.log=['The Titan Gate opens. Five warforms answer.'];
-      S.units = S.selected.map((id,i)=>({...byId(id), maxHp:byId(id).hp, hp:byId(id).hp, x:0, y:i, acted:false, team:'player', icon:'⬢'}));
+      S.screen='battle'; S.round=1; S.energy=3; S.turn='player'; S.gameOver=null; S.stars=0; S.sealProgress=0; S.anchorDestroyed=false; S.reinforcementsCalled=false; S.woundedEvacs=0;
+      S.optional={fast:false, flawless:false, anchor:false, formation:false};
+      S.log=['Mission begins: stabilize the Solar Seal, break the Hollow Anchor, and survive the Gate pressure.'];
+      S.units = S.selected.map((id,i)=>({...byId(id), maxHp:byId(id).hp, hp:byId(id).hp, x:0, y:i, acted:false, team:'player', icon:'⬢', evacuated:false}));
       S.enemies = ENEMIES_BASE.map(e=>({...e, maxHp:e.hp, team:'enemy'}));
       S.active = S.units[0].id; render();
     }
@@ -47,63 +59,103 @@
       else if(S.selected.length < 5) S.selected.push(id);
       render();
     }
-    function unitAt(x,y){ return [...S.units, ...S.enemies].find(u => u.hp>0 && u.x===x && u.y===y); }
-    function activeUnit(){ return S.units.find(u => u.id===S.active && u.hp>0) || S.units.find(u=>u.hp>0); }
-    function addLog(t){ S.log.unshift(t); S.log = S.log.slice(0,7); }
-    function selectUnit(id){ if(S.turn==='player' && S.units.find(u=>u.id===id && u.hp>0 && !u.acted)){ S.active=id; render(); } }
+    function unitAt(x,y){ return [...S.units, ...S.enemies].find(u => u.hp>0 && !u.evacuated && u.x===x && u.y===y); }
+    function activeUnit(){ return S.units.find(u => u.id===S.active && u.hp>0 && !u.evacuated) || S.units.find(u=>u.hp>0 && !u.evacuated); }
+    function addLog(t){ S.log.unshift(t); S.log = S.log.slice(0,9); }
+    function selectUnit(id){ if(S.turn==='player' && S.units.find(u=>u.id===id && u.hp>0 && !u.acted && !u.evacuated)){ S.active=id; render(); } }
     function moveActive(x,y){
       const u=activeUnit(); if(!u || S.turn!=='player' || u.acted || S.energy<1 || unitAt(x,y)) return;
       if(Math.abs(u.x-x)+Math.abs(u.y-y)>1) return;
-      u.x=x; u.y=y; S.energy--; addLog(`${u.name} shifts across the Gate field.`); render();
+      u.x=x; u.y=y; S.energy--; addLog(`${u.name} shifts across the Gate field.`); handleTileObjective(u); render();
+    }
+    function handleTileObjective(u){
+      const o=objAt(u.x,u.y); if(!o) return;
+      if(o.id==='seal' && S.sealProgress<3){ S.sealProgress++; addLog(`${u.name} stabilizes the Solar Seal (${S.sealProgress}/3).`); if(formationCount()>=3) S.optional.formation=true; }
+      if(o.id==='evac' && u.hp/u.maxHp <= .35){ u.evacuated=true; u.acted=true; S.woundedEvacs++; addLog(`${u.name} withdraws through river-light instead of falling.`); }
+      cleanup();
+    }
+    function formationCount(){ return S.units.filter(u=>u.hp>0 && !u.evacuated && dist(u,{x:2,y:2})<=1).length; }
+    function attackAnchor(signature=false){
+      const u=activeUnit(); if(!u || S.turn!=='player' || u.acted || S.anchorDestroyed) return;
+      const anchor=OBJECTIVES.find(o=>o.id==='anchor'); const cost=signature?2:1; if(S.energy<cost) return;
+      if(dist(u,anchor)>u.range+(signature?1:0)){ addLog('The Hollow Anchor is outside reach.'); render(); return; }
+      const dmg=u.atk+(signature?4:0); anchor.hp=Math.max(0, anchor.hp-dmg); S.energy-=cost; u.acted=true;
+      addLog(`${u.name} cracks the Hollow Anchor for ${dmg}.`);
+      if(anchor.hp<=0){ S.anchorDestroyed=true; S.optional.anchor=true; addLog('The Hollow Anchor breaks. Reinforcement pressure fades.'); }
+      cleanup();
     }
     function attackEnemy(id, signature=false){
       const u=activeUnit(), e=S.enemies.find(x=>x.id===id && x.hp>0); if(!u || !e || S.turn!=='player' || u.acted) return;
       const cost = signature ? 2 : 1; if(S.energy < cost) return;
       if(dist(u,e) > u.range + (signature ? 1 : 0)) { addLog(`${e.name} is outside ${u.name}'s reach.`); render(); return; }
       let dmg = u.atk + (signature ? 4 : 0);
-      if(signature && u.id==='eryndor') { const ally=[...S.units].sort((a,b)=>a.hp/a.maxHp-b.hp/b.maxHp)[0]; ally.hp=Math.min(ally.maxHp, ally.hp+10); addLog(`${u.sig} restores ${ally.name}.`); }
+      if(signature && u.id==='eryndor') { const ally=[...S.units].filter(x=>x.hp>0 && !x.evacuated).sort((a,b)=>a.hp/a.maxHp-b.hp/b.maxHp)[0]; ally.hp=Math.min(ally.maxHp, ally.hp+10); addLog(`${u.sig} restores ${ally.name}.`); }
       else if(signature && u.id==='dagoran') { e.snared=true; e.hp-=dmg; addLog(`${u.sig} binds ${e.name} for ${dmg}.`); }
       else { e.hp-=dmg; addLog(`${u.sig || 'Strike'} hits ${e.name} for ${dmg}.`); }
       S.energy -= cost; u.acted = true; cleanup();
     }
+    function missionReady(){ return S.sealProgress>=3 && S.anchorDestroyed && S.enemies.every(e=>e.hp<=0); }
+    function scoreStars(){ let stars=2; S.optional.fast=S.round<=8; S.optional.flawless=S.units.every(u=>u.hp>0); if(S.optional.fast && S.optional.flawless && S.optional.anchor && S.optional.formation) stars=3; if(!S.optional.flawless && S.units.filter(u=>u.hp>0 || u.evacuated).length<=2) stars=1; return stars; }
     function cleanup(){
-      S.enemies.forEach(e=>{ if(e.hp<=0) addLog(`${e.name} collapses into Gate ash.`); });
-      if(S.enemies.every(e=>e.hp<=0)){ S.gameOver='VICTORY'; addLog('The Gate is sealed. The Realms remember.'); }
-      else if(S.units.every(u=>u.hp<=0)){ S.gameOver='DEFEAT'; addLog('The strike force falls beneath the Hollow tide.'); }
-      else if(S.turn==='player' && (S.energy<=0 || S.units.filter(u=>u.hp>0).every(u=>u.acted))) enemyTurn();
+      S.enemies.forEach(e=>{ if(e.hp<=0 && !e.deadLogged){ e.deadLogged=true; addLog(`${e.name} collapses into Gate ash.`); } });
+      if(missionReady()){ S.gameOver='VICTORY'; S.stars=scoreStars(); addLog(`Mission clear: ${S.stars} star${S.stars===1?'':'s'} earned.`); }
+      else if(S.round>11){ S.gameOver='DEFEAT'; addLog('The Gate pressure overwhelms the seal.'); }
+      else if(S.units.every(u=>u.hp<=0 || u.evacuated)){ S.gameOver='DEFEAT'; addLog('No Titan remains to hold the Solar Seal.'); }
+      else if(S.turn==='player' && (S.energy<=0 || S.units.filter(u=>u.hp>0 && !u.evacuated).every(u=>u.acted))) enemyTurn();
       render();
+    }
+    function callReinforcements(){
+      if(S.reinforcementsCalled || S.anchorDestroyed) return;
+      S.reinforcementsCalled=true;
+      S.enemies.push(...REINFORCEMENTS.map(e=>({...e, maxHp:e.hp, team:'enemy'})));
+      addLog('The Hollow Anchor calls new shapes through the breach.');
     }
     function enemyTurn(){
       S.turn='enemy'; addLog('The Gateborn surge.');
+      if(S.round===3 || (!S.anchorDestroyed && S.round===5)) callReinforcements();
       S.enemies.filter(e=>e.hp>0).forEach(e=>{
-        const target = S.units.filter(u=>u.hp>0).sort((a,b)=>dist(e,a)-dist(e,b))[0]; if(!target) return;
+        const target = S.units.filter(u=>u.hp>0 && !u.evacuated).sort((a,b)=>dist(e,a)-dist(e,b))[0]; if(!target) return;
         if(e.snared){ e.snared=false; addLog(`${e.name} tears free of roots.`); return; }
+        if(e.type==='Ranged' && dist(e,target)<=3){ target.hp -= e.atk; addLog(`${e.name} pierces ${target.name} for ${e.atk}.`); return; }
+        if(e.type==='Silencer' && dist(e,target)<=2){ S.energy=Math.max(0,S.energy-1); addLog(`${e.name} hums; next command loses energy.`); return; }
         if(dist(e,target)>1){ e.x += Math.sign(target.x-e.x); e.y += Math.abs(target.x-e.x) ? 0 : Math.sign(target.y-e.y); addLog(`${e.name} advances.`); }
         else { target.hp -= e.atk; addLog(`${e.name} wounds ${target.name} for ${e.atk}.`); }
       });
-      if(S.units.every(u=>u.hp<=0)){ S.gameOver='DEFEAT'; }
-      S.turn='player'; S.round++; S.energy=3; S.units.forEach(u=>u.acted=false); S.active = S.units.find(u=>u.hp>0)?.id; render();
+      if(S.units.every(u=>u.hp<=0 || u.evacuated)){ S.gameOver='DEFEAT'; }
+      S.turn='player'; S.round++; S.energy=3; S.units.forEach(u=>{ if(u.hp>0 && !u.evacuated) u.acted=false; }); S.active = S.units.find(u=>u.hp>0 && !u.evacuated)?.id; render();
     }
     function endTurn(){ if(S.turn==='player' && !S.gameOver) enemyTurn(); }
     function hpBar(u){ const pct=Math.max(0,Math.round(100*u.hp/u.maxHp)); return `<div class="mt-1 h-1.5 rounded bg-neutral-800"><div class="h-1.5 rounded ${pct>50?'bg-bull-500':pct>25?'bg-primary':'bg-bear-500'}" style="width:${pct}%"></div></div>`; }
     function renderSquad(){
-      return `<div class="space-y-4"><header class="rounded-3xl border border-primary/40 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.3em] text-primary">First Playable Build</p><h1 class="mt-1 text-4xl font-black">Choose Five Titans</h1><p class="mt-2 text-neutral-300">Build a 5-Titan strike force and seal the unstable Gate. This is the first GitHub game build: tactical loop, roster selection, battle grid, enemy turn, victory and defeat.</p><div class="mt-4 flex gap-2"><span class="rounded-full bg-primary/15 px-3 py-1 text-sm font-black text-primary">${S.selected.length}/5 Selected</span><span class="rounded-full bg-neutral-800 px-3 py-1 text-sm font-black text-neutral-300">Titan-only Canon</span></div></header><section class="grid gap-3 md:grid-cols-2 xl:grid-cols-3">${TITANS.map(t=>`<button onclick="toggleTitan('${t.id}')" class="rounded-2xl border ${S.selected.includes(t.id)?'border-primary bg-primary/10':'border-neutral-800 bg-neutral-900'} p-4 text-left active:scale-[.99]"><p class="text-xs font-black uppercase tracking-[.2em] ${t.color}">${esc(t.realm)}</p><h2 class="text-xl font-black">${esc(t.name)}</h2><p class="mt-1 text-sm text-neutral-300">${esc(t.role)}</p><div class="mt-3 grid grid-cols-4 gap-2 text-center text-xs"><span class="rounded bg-neutral-950 p-2">HP<br><b>${t.hp}</b></span><span class="rounded bg-neutral-950 p-2">ATK<br><b>${t.atk}</b></span><span class="rounded bg-neutral-950 p-2">RNG<br><b>${t.range}</b></span><span class="rounded bg-neutral-950 p-2">SIG<br><b>2E</b></span></div></button>`).join('')}</section><button id="open-gate-btn" type="button" ${S.selected.length===5?'':'disabled'} onclick="startGame()" class="w-full rounded-2lg ${S.selected.length===5?'bg-primary text-white':'bg-neutral-800 text-neutral-500'} px-5 py-4 text-xl font-black">OPEN THE TITAN GATE</button></div>`;
+      return `<div class="space-y-4"><header class="rounded-3xl border border-primary/40 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.3em] text-primary">First Playable Build</p><h1 class="mt-1 text-4xl font-black">Choose Five Titans</h1><p class="mt-2 text-neutral-300">Build a 5-Titan strike force for a real multi-objective mission: stabilize the Solar Seal, destroy the Hollow Anchor, survive reinforcements, and earn stars for fast flawless formation play.</p><div class="mt-4 flex flex-wrap gap-2"><span class="rounded-full bg-primary/15 px-3 py-1 text-sm font-black text-primary">${S.selected.length}/5 Selected</span><span class="rounded-full bg-neutral-800 px-3 py-1 text-sm font-black text-neutral-300">Titan-only Canon</span><span class="rounded-full bg-bear-950 px-3 py-1 text-sm font-black text-bear-300">Hollow Objective Pressure</span></div></header><section class="grid gap-3 md:grid-cols-2 xl:grid-cols-3">${TITANS.map(t=>`<button onclick="toggleTitan('${t.id}')" class="rounded-2xl border ${S.selected.includes(t.id)?'border-primary bg-primary/10':'border-neutral-800 bg-neutral-900'} p-4 text-left active:scale-[.99]"><p class="text-xs font-black uppercase tracking-[.2em] ${t.color}">${esc(t.realm)}</p><h2 class="text-xl font-black">${esc(t.name)}</h2><p class="mt-1 text-sm text-neutral-300">${esc(t.role)}</p><div class="mt-3 grid grid-cols-4 gap-2 text-center text-xs"><span class="rounded bg-neutral-950 p-2">HP<br><b>${t.hp}</b></span><span class="rounded bg-neutral-950 p-2">ATK<br><b>${t.atk}</b></span><span class="rounded bg-neutral-950 p-2">RNG<br><b>${t.range}</b></span><span class="rounded bg-neutral-950 p-2">SIG<br><b>2E</b></span></div></button>`).join('')}</section><button id="open-gate-btn" type="button" ${S.selected.length===5?'':'disabled'} onclick="startGame()" class="w-full rounded-2lg ${S.selected.length===5?'bg-primary text-white':'bg-neutral-800 text-neutral-500'} px-5 py-4 text-xl font-black">OPEN THE TITAN GATE</button></div>`;
     }
     function renderGrid(){
       let cells='';
       for(let y=0;y<5;y++) for(let x=0;x<5;x++){
-        const u=unitAt(x,y), act=activeUnit(); const active=act&&act.x===x&&act.y===y;
-        cells += `<button onclick="${u?u.team==='player'?`selectUnit('${u.id}')`:`attackEnemy('${u.id}',false)`:`moveActive(${x},${y})`}" class="aspect-square rounded-xl border ${active?'border-primary bg-primary/20':u&&u.team==='enemy'?'border-bear-700 bg-bear-950/30':u?'border-bull-700 bg-bull-950/20':'border-neutral-800 bg-neutral-900'} p-1 text-center active:scale-[.98]"><div class="text-2xl">${u?u.team==='enemy'?u.icon:'⬢':'·'}</div><div class="truncate text-[10px] ${u&&u.team==='enemy'?'text-bear-400':u?'text-bull-400':'text-neutral-600'}">${u?u.name.split(' ')[0]:`${x},${y}`}</div>${u?`<div class="text-[10px]">${Math.max(0,u.hp)}</div>`:''}</button>`;
+        const u=unitAt(x,y), o=objAt(x,y), act=activeUnit(); const active=act&&act.x===x&&act.y===y;
+        const click = u ? (u.team==='player'?`selectUnit('${u.id}')`:`attackEnemy('${u.id}',false)`) : (o?.id==='anchor'?`attackAnchor(false)`:`moveActive(${x},${y})`);
+        const tone = active?'border-primary bg-primary/20':u&&u.team==='enemy'?'border-bear-700 bg-bear-950/30':u?'border-bull-700 bg-bull-950/20':o?.id==='seal'?'border-yellow-600 bg-yellow-950/20':o?.id==='anchor'?'border-red-700 bg-red-950/30':o?.id==='evac'?'border-blue-700 bg-blue-950/20':'border-neutral-800 bg-neutral-900';
+        cells += `<button onclick="${click}" class="aspect-square rounded-xl border ${tone} p-1 text-center active:scale-[.98]"><div class="text-2xl">${u?u.team==='enemy'?u.icon:'⬢':o?o.icon:'·'}</div><div class="truncate text-[10px] ${u&&u.team==='enemy'?'text-bear-400':u?'text-bull-400':o?'text-primary':'text-neutral-600'}">${u?u.name.split(' ')[0]:o?o.label.split(' ')[0]:`${x},${y}`}</div>${u?`<div class="text-[10px]">${Math.max(0,u.hp)}</div>`:o?.id==='anchor'?`<div class="text-[10px]">${o.hp}</div>`:''}</button>`;
       }
       return `<div class="grid grid-cols-5 gap-1">${cells}</div>`;
     }
+    function objectivePanel(){
+      const anchor=OBJECTIVES.find(o=>o.id==='anchor');
+      const rows=[
+        ['Primary','Stabilize Solar Seal',`${S.sealProgress}/3`,S.sealProgress>=3],
+        ['Primary','Destroy Hollow Anchor',S.anchorDestroyed?'Broken':`${anchor.hp}/${anchor.maxHp}`,S.anchorDestroyed],
+        ['Primary','Defeat Hollow threat wave',`${S.enemies.filter(e=>e.hp>0).length} left`,S.enemies.every(e=>e.hp<=0)],
+        ['Optional','Clear by round 8',`Round ${S.round}`,S.round<=8],
+        ['Optional','Keep all Titans standing',`${S.units.filter(u=>u.hp>0).length}/5`,S.units.every(u=>u.hp>0)],
+        ['Optional','Hold 3-Titan seal formation',`${formationCount()}/3`,S.optional.formation]
+      ];
+      return `<div class="rounded-2xl border border-neutral-800 bg-neutral-900 p-3"><p class="text-xs uppercase tracking-[.2em] text-primary">Mission Objectives</p>${rows.map(r=>`<div class="mt-2 rounded-xl border ${r[3]?'border-bull-700 bg-bull-950/20':'border-neutral-800 bg-neutral-950'} p-2"><p class="text-[10px] font-black uppercase tracking-[.18em] ${r[0]==='Primary'?'text-primary':'text-amber-300'}">${r[0]} · ${r[2]}</p><p class="text-sm text-neutral-200">${r[1]}</p></div>`).join('')}</div>`;
+    }
     function renderBattle(){
-      const u=activeUnit();
-      return `<div class="space-y-3"><header class="rounded-3xl border border-primary/40 bg-neutral-900 p-4"><div class="flex items-start justify-between gap-3"><div><p class="text-xs font-black uppercase tracking-[.3em] text-primary">Battlefield</p><h1 class="text-3xl font-black">ATEN RA Gate Awakening</h1><p class="text-sm text-neutral-300">Round ${S.round} · ${S.turn==='player'?'Your command':'Enemy surge'} · Energy ${S.energy}/3</p></div><button onclick="S.screen='squad';render()" class="rounded-2lg bg-neutral-800 px-3 py-2 text-xs font-black">SQUAD</button></div></header>${S.gameOver?`<section class="rounded-3xl border ${S.gameOver==='VICTORY'?'border-bull-500/50 bg-bull-950/20':'border-bear-500/50 bg-bear-950/20'} p-5 text-center"><p class="text-xs uppercase tracking-[.3em] ${S.gameOver==='VICTORY'?'text-bull-400':'text-bear-400'}">${S.gameOver}</p><h2 class="text-4xl font-black">${S.gameOver==='VICTORY'?'Gate Sealed':'Strike Force Broken'}</h2><button onclick="startGame()" class="mt-4 rounded-2lg bg-primary px-5 py-3 font-black text-white">PLAY AGAIN</button></section>`:''}<section class="grid gap-3 lg:grid-cols-[1fr_360px]"><div class="rounded-3xl border border-neutral-800 bg-neutral-950 p-3">${renderGrid()}</div><aside class="space-y-3"><div class="rounded-2xl border border-neutral-800 bg-neutral-900 p-3"><p class="text-xs uppercase tracking-[.2em] text-primary">Active Titan</p>${u?`<h2 class="text-xl font-black">${esc(u.name)}</h2><p class="text-sm text-neutral-300">${esc(u.role)}</p>${hpBar(u)}<div class="mt-3 grid grid-cols-2 gap-2"><button onclick="endTurn()" class="rounded-2lg bg-neutral-800 p-3 font-black">END TURN</button><button onclick="attackEnemy('${S.enemies.find(e=>e.hp>0)?.id||''}',true)" class="rounded-2lg bg-primary p-3 font-black text-white">SIGNATURE</button></div>`:'No active Titan'}</div><div class="rounded-2xl border border-neutral-800 bg-neutral-900 p-3"><p class="text-xs uppercase tracking-[.2em] text-bear-400">Enemies</p>${S.enemies.map(e=>`<button onclick="attackEnemy('${e.id}',false)" class="mt-2 w-full rounded-xl border border-neutral-800 bg-neutral-950 p-2 text-left ${e.hp<=0?'opacity-40':''}"><b>${esc(e.name)}</b><p class="text-xs text-neutral-400">HP ${Math.max(0,e.hp)}/${e.maxHp}</p>${hpBar(e)}</button>`).join('')}</div><div class="rounded-2xl border border-neutral-800 bg-neutral-900 p-3"><p class="text-xs uppercase tracking-[.2em] text-primary">Battle Log</p>${S.log.map(l=>`<p class="mt-1 text-sm text-neutral-300">${esc(l)}</p>`).join('')}</div></aside></section><section class="rounded-2xl border border-neutral-800 bg-neutral-900 p-4"><p class="text-xs uppercase tracking-[.2em] text-primary">Lore</p><p class="mt-1 text-sm text-neutral-300">Ancient humans saw fragments through Titan Gates and called them myths. Now the Gates reopen after the Ascension Collapse, and only colossal Realm-born Titans can hold back the Hollow, the Forgotten, and the Gateborn.</p></section></div>`;
+      const u=activeUnit(); const living=S.units.filter(x=>x.hp>0 && !x.evacuated).length;
+      return `<div class="space-y-3"><header class="rounded-3xl border border-primary/40 bg-neutral-900 p-4"><div class="flex items-start justify-between gap-3"><div><p class="text-xs font-black uppercase tracking-[.3em] text-primary">Battlefield · Multi-objective mission</p><h1 class="text-3xl font-black">First Light Under Dead Stone</h1><p class="text-sm text-neutral-300">Round ${S.round}/11 · ${S.turn==='player'?'Your command':'Enemy surge'} · Energy ${S.energy}/3 · Active Titans ${living}</p></div><button onclick="S.screen='squad';render()" class="rounded-2lg bg-neutral-800 px-3 py-2 text-xs font-black">SQUAD</button></div></header>${S.gameOver?`<section class="rounded-3xl border ${S.gameOver==='VICTORY'?'border-bull-500/50 bg-bull-950/20':'border-bear-500/50 bg-bear-950/20'} p-5 text-center"><p class="text-xs uppercase tracking-[.3em] ${S.gameOver==='VICTORY'?'text-bull-400':'text-bear-400'}">${S.gameOver}</p><h2 class="text-4xl font-black">${S.gameOver==='VICTORY'?`${S.stars}★ Mission Clear`:'Strike Force Broken'}</h2><p class="mt-2 text-neutral-300">${S.gameOver==='VICTORY'?'Solar Seal stabilized, Hollow Anchor broken, threat wave cleared.':'The Gate remembers the failure. Re-form the strike force.'}</p><button onclick="startGame()" class="mt-4 rounded-2lg bg-primary px-5 py-3 font-black text-white">PLAY AGAIN</button></section>`:''}<section class="grid gap-3 lg:grid-cols-[1fr_390px]"><div class="rounded-3xl border border-neutral-800 bg-neutral-950 p-3">${renderGrid()}<div class="mt-3 grid gap-2 text-xs text-neutral-300 sm:grid-cols-3"><p class="rounded-xl bg-neutral-900 p-2">☼ Solar Seal: hold 3 times</p><p class="rounded-xl bg-neutral-900 p-2">⌬ Anchor: attack to stop reinforcements</p><p class="rounded-xl bg-neutral-900 p-2">△ Exit: evacuate badly wounded Titans</p></div></div><aside class="space-y-3"><div class="rounded-2xl border border-neutral-800 bg-neutral-900 p-3"><p class="text-xs uppercase tracking-[.2em] text-primary">Active Titan</p>${u?`<h2 class="text-xl font-black">${esc(u.name)}</h2><p class="text-sm text-neutral-300">${esc(u.role)}</p>${hpBar(u)}<div class="mt-3 grid grid-cols-3 gap-2"><button onclick="endTurn()" class="rounded-2lg bg-neutral-800 p-3 font-black">END TURN</button><button onclick="attackEnemy('${S.enemies.find(e=>e.hp>0)?.id||''}',true)" class="rounded-2lg bg-primary p-3 font-black text-white">SIGNATURE</button><button onclick="attackAnchor(true)" class="rounded-2lg bg-bear-700 p-3 font-black text-white">ANCHOR</button></div>`:'No active Titan'}</div>${objectivePanel()}<div class="rounded-2xl border border-neutral-800 bg-neutral-900 p-3"><p class="text-xs uppercase tracking-[.2em] text-bear-400">Enemies</p>${S.enemies.filter(e=>e.hp>0).map(e=>`<button onclick="attackEnemy('${e.id}')" class="mt-2 w-full rounded-xl bg-neutral-950 p-2 text-left"><b>${esc(e.name)}</b><span class="float-right text-bear-300">${e.hp}/${e.maxHp}</span>${hpBar(e)}<p class="text-xs text-neutral-500">${esc(e.type)}</p></button>`).join('')||'<p class="mt-2 text-bull-400">Threat wave cleared.</p>'}</div><div class="rounded-2xl border border-neutral-800 bg-neutral-900 p-3"><p class="text-xs uppercase tracking-[.2em] text-neutral-400">Battle Log</p>${S.log.map(l=>`<p class="mt-2 border-l-2 border-primary pl-2 text-sm text-neutral-300">${esc(l)}</p>`).join('')}</div></aside></section></div>`;
     }
     function render(){ $('app').innerHTML = S.screen === 'squad' ? renderSquad() : renderBattle(); }
-    document.addEventListener('click', e => { if(e.target && e.target.closest && e.target.closest('#open-gate-btn')) startGame(); });
-    document.addEventListener('touchend', e => { if(e.target && e.target.closest && e.target.closest('#open-gate-btn')) { e.preventDefault(); startGame(); } }, {passive:false});
     render();
   </script>
 </body>
