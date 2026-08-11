@@ -3,7 +3,7 @@
   "mode": "ASYNCHRONOUS",
   "livePvpImplemented": false,
   "futureLivePvpReady": true,
-  "standardSquadSize": 5,
+  "standardSquadSize": 1,
   "battleInterface": {
     "shared": [
       "Titan definitions",
@@ -19,12 +19,15 @@
     "futureControl": "Player vs Player networking layer only; combat engine remains shared."
   },
   "defenseSnapshotFields": [
-    "titanIds",
-    "levels",
+    "titanId",
+    "level",
     "equipment",
     "abilities",
-    "faction",
-    "squadConfiguration",
+    "stanceLoadout",
+    "reactions",
+    "uniqueMechanicState",
+    "battlefieldSelection",
+    "aiBehaviorProfile",
     "relevantProgressionState",
     "power",
     "savedAt"
@@ -81,114 +84,74 @@
       "name": "Gate Echo 1",
       "tier": "Silver",
       "rating": 1075,
-      "defenseSquadSize": 5,
-      "visibleTitanIds": [
-        "TG-TITAN-010",
-        "TG-TITAN-011",
-        "TG-TITAN-012",
-        "TG-TITAN-013",
-        "TG-TITAN-014"
-      ],
       "potentialRewards": [
         "arenaCurrency",
         "upgradeMaterials",
         "seasonProgress"
-      ]
+      ],
+      "defensiveTitanId": "TG-TITAN-010"
     },
     {
       "id": "TG-ARENA-OPP-002",
       "name": "Gate Echo 2",
       "tier": "Gold",
       "rating": 1150,
-      "defenseSquadSize": 5,
-      "visibleTitanIds": [
-        "TG-TITAN-019",
-        "TG-TITAN-020",
-        "TG-TITAN-021",
-        "TG-TITAN-022",
-        "TG-TITAN-023"
-      ],
       "potentialRewards": [
         "arenaCurrency",
         "upgradeMaterials",
         "seasonProgress"
-      ]
+      ],
+      "defensiveTitanId": "TG-TITAN-019"
     },
     {
       "id": "TG-ARENA-OPP-003",
       "name": "Gate Echo 3",
       "tier": "Bronze",
       "rating": 1225,
-      "defenseSquadSize": 5,
-      "visibleTitanIds": [
-        "TG-TITAN-028",
-        "TG-TITAN-029",
-        "TG-TITAN-030",
-        "TG-TITAN-031",
-        "TG-TITAN-032"
-      ],
       "potentialRewards": [
         "arenaCurrency",
         "upgradeMaterials",
         "seasonProgress"
-      ]
+      ],
+      "defensiveTitanId": "TG-TITAN-028"
     },
     {
       "id": "TG-ARENA-OPP-004",
       "name": "Gate Echo 4",
       "tier": "Silver",
       "rating": 1300,
-      "defenseSquadSize": 5,
-      "visibleTitanIds": [
-        "TG-TITAN-037",
-        "TG-TITAN-038",
-        "TG-TITAN-039",
-        "TG-TITAN-040",
-        "TG-TITAN-041"
-      ],
       "potentialRewards": [
         "arenaCurrency",
         "upgradeMaterials",
         "seasonProgress"
-      ]
+      ],
+      "defensiveTitanId": "TG-TITAN-037"
     },
     {
       "id": "TG-ARENA-OPP-005",
       "name": "Gate Echo 5",
       "tier": "Gold",
       "rating": 1375,
-      "defenseSquadSize": 5,
-      "visibleTitanIds": [
-        "TG-TITAN-046",
-        "TG-TITAN-047",
-        "TG-TITAN-048",
-        "TG-TITAN-049",
-        "TG-TITAN-050"
-      ],
       "potentialRewards": [
         "arenaCurrency",
         "upgradeMaterials",
         "seasonProgress"
-      ]
+      ],
+      "defensiveTitanId": "TG-TITAN-046"
     },
     {
       "id": "TG-ARENA-OPP-006",
       "name": "Gate Echo 6",
       "tier": "Bronze",
       "rating": 1450,
-      "defenseSquadSize": 5,
-      "visibleTitanIds": [
-        "TG-TITAN-055",
-        "TG-TITAN-056",
-        "TG-TITAN-057",
-        "TG-TITAN-058",
-        "TG-TITAN-059"
-      ],
       "potentialRewards": [
         "arenaCurrency",
         "upgradeMaterials",
         "seasonProgress"
-      ]
+      ],
+      "defensiveTitanId": "TG-TITAN-055"
     }
-  ]
+  ],
+  "name": "Asynchronous Titan Challenge",
+  "currentControl": "Attacker player Titan vs saved defender Titan build controlled by AI"
 }

@@ -59,7 +59,10 @@ const files = {
   'balance-analytics.json': 'balanceAnalytics',
   'continuity-balance-audit.json': 'continuityBalanceAudit',
   'endgame-dashboard.json': 'endgameDashboard',
-  'monetization-policy.json': 'monetizationPolicy'
+  'monetization-policy.json': 'monetizationPolicy',
+  'solo-titan-migration-report.json': 'soloTitanMigrationReport',
+  'solo-combat-design-document.json': 'soloCombatDesignDocument',
+  'solo-titan-roster-redesign.json': 'soloTitanRosterRedesign'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {

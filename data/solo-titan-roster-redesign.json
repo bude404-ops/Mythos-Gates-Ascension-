@@ -1,0 +1,2988 @@
+{
+  "id": "TG-SOLO-TITAN-ROSTER-REDESIGN-001",
+  "version": "0.9.0",
+  "generated": "2026-08-11T20:08:28Z",
+  "rule": "Every existing Titan is redesigned for solo combat. No normal mission allows multiple player Titans active at once.",
+  "archetypeSystem": [
+    "Juggernaut",
+    "Duelist",
+    "Assassin",
+    "Destroyer",
+    "Controller",
+    "Warden",
+    "Reaver",
+    "Arcanist",
+    "Trickster"
+  ],
+  "designPrinciples": [
+    "Every Titan can independently survive and win",
+    "No dedicated healer role",
+    "Different Titans change tactical approach",
+    "Unique mechanic over numeric variance",
+    "Counterplay must exist"
+  ],
+  "count": 63,
+  "titans": [
+    {
+      "id": "TG-TITAN-001",
+      "name": "Aten-Ra, Solar Law Monolith",
+      "faction": "Aten Ra",
+      "previousRole": "Defender",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "uniqueMechanic": "AtenRa's Solar Power: a solo charge meter that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "basicAttack": "Sunder Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through illuminated terrain, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Aten-Ra Signature: transforms Solar Power into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Judgment Light Unbound: the Titan enters Ascendant stance, amplifies Solar Power, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — AtenRa Verdict: restores health through conquest; bonus payoff if the enemy was made vulnerable through illuminated terrain.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Aten Ra passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "illuminated terrain",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-002",
+      "name": "Khemet Suncrown",
+      "faction": "Aten Ra",
+      "previousRole": "Battery",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Khemet's Solar Power: a solo mark cycle that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "basicAttack": "Judge Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Khemet Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Khemet Suncrown Signature: transforms Solar Power into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Judgment Light Unbound: the Titan enters Ascendant stance, amplifies Solar Power, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Khemet Verdict: refunds Momentum and grants follow-up movement; bonus payoff if the enemy was made vulnerable through illuminated terrain.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Aten Ra passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "illuminated terrain",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-003",
+      "name": "Nefra Obsidian Dawn",
+      "faction": "Aten Ra",
+      "previousRole": "Controller",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Nefra's Solar Power: a solo terrain imprint that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "basicAttack": "Hunt Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Judgment Light Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Nefra Obsidian Dawn Signature: transforms Solar Power into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Judgment Light Unbound: the Titan enters Ascendant stance, amplifies Solar Power, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Nefra Verdict: restores Divinity and spreads a mark; bonus payoff if the enemy was made vulnerable through illuminated terrain.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Aten Ra passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "illuminated terrain",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-004",
+      "name": "Orru Prism Verdict",
+      "faction": "Aten Ra",
+      "previousRole": "Breaker",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "uniqueMechanic": "Orru's Solar Power: a solo parry ladder that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "basicAttack": "Bind Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Solar Power.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Orru Prism Verdict Signature: transforms Solar Power into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Judgment Light Unbound: the Titan enters Ascendant stance, amplifies Solar Power, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Orru Verdict: creates shield and primes counterattack; bonus payoff if the enemy was made vulnerable through illuminated terrain.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Aten Ra passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "illuminated terrain",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-005",
+      "name": "Sutekh Dune Eclipse",
+      "faction": "Aten Ra",
+      "previousRole": "Disruptor",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Sutekh's Solar Power: a solo execution chain that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "basicAttack": "Shatter Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through illuminated terrain, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Sutekh Dune Eclipse Signature: transforms Solar Power into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Judgment Light Unbound: the Titan enters Ascendant stance, amplifies Solar Power, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Sutekh Verdict: causes nearby AoE rupture; bonus payoff if the enemy was made vulnerable through illuminated terrain.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Aten Ra passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "illuminated terrain",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-006",
+      "name": "Iset Riverlight Throne",
+      "faction": "Aten Ra",
+      "previousRole": "Sustain",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Iset's Solar Power: a solo zone conversion that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "basicAttack": "Cleave Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Iset Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Iset Riverlight Throne Signature: transforms Solar Power into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Judgment Light Unbound: the Titan enters Ascendant stance, amplifies Solar Power, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Iset Verdict: teleports/repositions and hides intent; bonus payoff if the enemy was made vulnerable through illuminated terrain.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Aten Ra passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "illuminated terrain",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-007",
+      "name": "Karnu Glass Horizon",
+      "faction": "Aten Ra",
+      "previousRole": "Artillery",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "uniqueMechanic": "Karnu's Solar Power: a solo curse ledger that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "basicAttack": "Veil Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Judgment Light Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Karnu Glass Horizon Signature: transforms Solar Power into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Judgment Light Unbound: the Titan enters Ascendant stance, amplifies Solar Power, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Karnu Verdict: converts terrain into a favored zone; bonus payoff if the enemy was made vulnerable through illuminated terrain.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Aten Ra passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "illuminated terrain",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-008",
+      "name": "Maahes Noon Bastion",
+      "faction": "Aten Ra",
+      "previousRole": "Guardian",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Maahes's Solar Power: a solo stance fuse that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "basicAttack": "Ignite Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Solar Power.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Maahes Noon Bastion Signature: transforms Solar Power into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Judgment Light Unbound: the Titan enters Ascendant stance, amplifies Solar Power, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Maahes Verdict: weakens nearby elite enemies; bonus payoff if the enemy was made vulnerable through illuminated terrain.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Aten Ra passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "illuminated terrain",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-009",
+      "name": "Amunet Hidden Sun",
+      "faction": "Aten Ra",
+      "previousRole": "Assassin",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Amunet's Solar Power: a solo hazard bloom that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "basicAttack": "Anchor Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through illuminated terrain, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Amunet Hidden Sun Signature: transforms Solar Power into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Judgment Light Unbound: the Titan enters Ascendant stance, amplifies Solar Power, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Amunet Verdict: extends Ascendant stance by one action; bonus payoff if the enemy was made vulnerable through illuminated terrain.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Aten Ra passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "illuminated terrain",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-010",
+      "name": "The Allfather Stormvein",
+      "faction": "Asgardian",
+      "previousRole": "Defender",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "uniqueMechanic": "The's Storm Oath: a solo pursuit lock that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "basicAttack": "Rend Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "The Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "The Allfather Stormvein Signature: transforms Storm Oath into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Thunder Vow Unbound: the Titan enters Ascendant stance, amplifies Storm Oath, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — The Verdict: restores health through conquest; bonus payoff if the enemy was made vulnerable through movement through storm lanes.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Asgardian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "movement through storm lanes",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-011",
+      "name": "Hrothar Rune-Mountain",
+      "faction": "Asgardian",
+      "previousRole": "Battery",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Hrothar's Storm Oath: a solo shield fracture that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "basicAttack": "Pierce Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Thunder Vow Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Hrothar Rune-Mountain Signature: transforms Storm Oath into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Thunder Vow Unbound: the Titan enters Ascendant stance, amplifies Storm Oath, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Hrothar Verdict: refunds Momentum and grants follow-up movement; bonus payoff if the enemy was made vulnerable through movement through storm lanes.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Asgardian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "movement through storm lanes",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-012",
+      "name": "Skeld Iron Tempest",
+      "faction": "Asgardian",
+      "previousRole": "Controller",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Skeld's Storm Oath: a solo echo clone that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "basicAttack": "Command Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Storm Oath.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Skeld Iron Tempest Signature: transforms Storm Oath into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Thunder Vow Unbound: the Titan enters Ascendant stance, amplifies Storm Oath, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Skeld Verdict: restores Divinity and spreads a mark; bonus payoff if the enemy was made vulnerable through movement through storm lanes.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Asgardian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "movement through storm lanes",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-013",
+      "name": "Eirwyn Valkstorm",
+      "faction": "Asgardian",
+      "previousRole": "Breaker",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "uniqueMechanic": "Eirwyn's Storm Oath: a solo range aperture that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "basicAttack": "Flood Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through movement through storm lanes, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Eirwyn Valkstorm Signature: transforms Storm Oath into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Thunder Vow Unbound: the Titan enters Ascendant stance, amplifies Storm Oath, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Eirwyn Verdict: creates shield and primes counterattack; bonus payoff if the enemy was made vulnerable through movement through storm lanes.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Asgardian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "movement through storm lanes",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-014",
+      "name": "Mordun Frost-Anvil",
+      "faction": "Asgardian",
+      "previousRole": "Disruptor",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Mordun's Storm Oath: a solo soul counter that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "basicAttack": "Banish Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Mordun Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Mordun Frost-Anvil Signature: transforms Storm Oath into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Thunder Vow Unbound: the Titan enters Ascendant stance, amplifies Storm Oath, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Mordun Verdict: causes nearby AoE rupture; bonus payoff if the enemy was made vulnerable through movement through storm lanes.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Asgardian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "movement through storm lanes",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-015",
+      "name": "Veyra Thunderloom",
+      "faction": "Asgardian",
+      "previousRole": "Sustain",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Veyra's Storm Oath: a solo glory stack that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "basicAttack": "Harvest Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Thunder Vow Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Veyra Thunderloom Signature: transforms Storm Oath into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Thunder Vow Unbound: the Titan enters Ascendant stance, amplifies Storm Oath, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Veyra Verdict: teleports/repositions and hides intent; bonus payoff if the enemy was made vulnerable through movement through storm lanes.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Asgardian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "movement through storm lanes",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-016",
+      "name": "Ragnor Skybreaker",
+      "faction": "Asgardian",
+      "previousRole": "Artillery",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "uniqueMechanic": "Ragnor's Storm Oath: a solo vow scar that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "basicAttack": "Crown Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Storm Oath.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Ragnor Skybreaker Signature: transforms Storm Oath into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Thunder Vow Unbound: the Titan enters Ascendant stance, amplifies Storm Oath, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Ragnor Verdict: converts terrain into a favored zone; bonus payoff if the enemy was made vulnerable through movement through storm lanes.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Asgardian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "movement through storm lanes",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-017",
+      "name": "Ullr Snow-Crown",
+      "faction": "Asgardian",
+      "previousRole": "Guardian",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Ullr's Storm Oath: a solo root memory that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "basicAttack": "Mirror Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through movement through storm lanes, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Ullr Snow-Crown Signature: transforms Storm Oath into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Thunder Vow Unbound: the Titan enters Ascendant stance, amplifies Storm Oath, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Ullr Verdict: weakens nearby elite enemies; bonus payoff if the enemy was made vulnerable through movement through storm lanes.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Asgardian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "movement through storm lanes",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-018",
+      "name": "Sigrun Oathflare",
+      "faction": "Asgardian",
+      "previousRole": "Assassin",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Sigrun's Storm Oath: a solo edict seal that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "basicAttack": "Overrun Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Sigrun Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Sigrun Oathflare Signature: transforms Storm Oath into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Thunder Vow Unbound: the Titan enters Ascendant stance, amplifies Storm Oath, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Sigrun Verdict: extends Ascendant stance by one action; bonus payoff if the enemy was made vulnerable through movement through storm lanes.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Asgardian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "movement through storm lanes",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-019",
+      "name": "Aurelion Heaven-Marrow",
+      "faction": "Olympian",
+      "previousRole": "Defender",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "uniqueMechanic": "Aurelion's Laurel Glory: a solo charge meter that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "basicAttack": "Sunder Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Ichor Triumph Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Aurelion Heaven-Marrow Signature: transforms Laurel Glory into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Ichor Triumph Unbound: the Titan enters Ascendant stance, amplifies Laurel Glory, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Aurelion Verdict: restores health through conquest; bonus payoff if the enemy was made vulnerable through high ground and duel circles.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Olympian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "high ground and duel circles",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-020",
+      "name": "Kallix Marble Thunder",
+      "faction": "Olympian",
+      "previousRole": "Battery",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Kallix's Laurel Glory: a solo mark cycle that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "basicAttack": "Judge Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Laurel Glory.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Kallix Marble Thunder Signature: transforms Laurel Glory into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Ichor Triumph Unbound: the Titan enters Ascendant stance, amplifies Laurel Glory, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Kallix Verdict: refunds Momentum and grants follow-up movement; bonus payoff if the enemy was made vulnerable through high ground and duel circles.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Olympian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "high ground and duel circles",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-021",
+      "name": "Thyressa Golden Aegis",
+      "faction": "Olympian",
+      "previousRole": "Controller",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Thyressa's Laurel Glory: a solo terrain imprint that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "basicAttack": "Hunt Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through high ground and duel circles, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Thyressa Golden Aegis Signature: transforms Laurel Glory into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Ichor Triumph Unbound: the Titan enters Ascendant stance, amplifies Laurel Glory, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Thyressa Verdict: restores Divinity and spreads a mark; bonus payoff if the enemy was made vulnerable through high ground and duel circles.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Olympian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "high ground and duel circles",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-022",
+      "name": "Ilyon Laurel Flame",
+      "faction": "Olympian",
+      "previousRole": "Breaker",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "uniqueMechanic": "Ilyon's Laurel Glory: a solo parry ladder that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "basicAttack": "Bind Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Ilyon Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Ilyon Laurel Flame Signature: transforms Laurel Glory into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Ichor Triumph Unbound: the Titan enters Ascendant stance, amplifies Laurel Glory, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Ilyon Verdict: creates shield and primes counterattack; bonus payoff if the enemy was made vulnerable through high ground and duel circles.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Olympian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "high ground and duel circles",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-023",
+      "name": "Nikos Star-Lance",
+      "faction": "Olympian",
+      "previousRole": "Disruptor",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Nikos's Laurel Glory: a solo execution chain that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "basicAttack": "Shatter Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Ichor Triumph Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Nikos Star-Lance Signature: transforms Laurel Glory into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Ichor Triumph Unbound: the Titan enters Ascendant stance, amplifies Laurel Glory, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Nikos Verdict: causes nearby AoE rupture; bonus payoff if the enemy was made vulnerable through high ground and duel circles.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Olympian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "high ground and duel circles",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-024",
+      "name": "Dione Victory Mirror",
+      "faction": "Olympian",
+      "previousRole": "Sustain",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Dione's Laurel Glory: a solo zone conversion that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "basicAttack": "Cleave Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Laurel Glory.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Dione Victory Mirror Signature: transforms Laurel Glory into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Ichor Triumph Unbound: the Titan enters Ascendant stance, amplifies Laurel Glory, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Dione Verdict: teleports/repositions and hides intent; bonus payoff if the enemy was made vulnerable through high ground and duel circles.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Olympian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "high ground and duel circles",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-025",
+      "name": "Helior Bronze Summit",
+      "faction": "Olympian",
+      "previousRole": "Artillery",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "uniqueMechanic": "Helior's Laurel Glory: a solo curse ledger that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "basicAttack": "Veil Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through high ground and duel circles, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Helior Bronze Summit Signature: transforms Laurel Glory into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Ichor Triumph Unbound: the Titan enters Ascendant stance, amplifies Laurel Glory, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Helior Verdict: converts terrain into a favored zone; bonus payoff if the enemy was made vulnerable through high ground and duel circles.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Olympian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "high ground and duel circles",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-026",
+      "name": "Pallas Oath-Spear",
+      "faction": "Olympian",
+      "previousRole": "Guardian",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Pallas's Laurel Glory: a solo stance fuse that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "basicAttack": "Ignite Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Pallas Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Pallas Oath-Spear Signature: transforms Laurel Glory into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Ichor Triumph Unbound: the Titan enters Ascendant stance, amplifies Laurel Glory, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Pallas Verdict: weakens nearby elite enemies; bonus payoff if the enemy was made vulnerable through high ground and duel circles.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Olympian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "high ground and duel circles",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-027",
+      "name": "Eiren Crowned Horizon",
+      "faction": "Olympian",
+      "previousRole": "Assassin",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Eiren's Laurel Glory: a solo hazard bloom that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "basicAttack": "Anchor Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Ichor Triumph Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Eiren Crowned Horizon Signature: transforms Laurel Glory into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Ichor Triumph Unbound: the Titan enters Ascendant stance, amplifies Laurel Glory, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Eiren Verdict: extends Ascendant stance by one action; bonus payoff if the enemy was made vulnerable through high ground and duel circles.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Olympian passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "high ground and duel circles",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-028",
+      "name": "Amaterion Spirit-Sun",
+      "faction": "Kami",
+      "previousRole": "Defender",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "uniqueMechanic": "Amaterion's Spirit Balance: a solo pursuit lock that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "basicAttack": "Rend Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Spirit Balance.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Amaterion Spirit-Sun Signature: transforms Spirit Balance into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Kagami Focus Unbound: the Titan enters Ascendant stance, amplifies Spirit Balance, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Amaterion Verdict: restores health through conquest; bonus payoff if the enemy was made vulnerable through shrines, mist, and mirror paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Kami passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "shrines, mist, and mirror paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-029",
+      "name": "Tsukiro Moon-Veil",
+      "faction": "Kami",
+      "previousRole": "Battery",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Tsukiro's Spirit Balance: a solo shield fracture that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "basicAttack": "Pierce Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through shrines, mist, and mirror paths, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Tsukiro Moon-Veil Signature: transforms Spirit Balance into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Kagami Focus Unbound: the Titan enters Ascendant stance, amplifies Spirit Balance, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Tsukiro Verdict: refunds Momentum and grants follow-up movement; bonus payoff if the enemy was made vulnerable through shrines, mist, and mirror paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Kami passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "shrines, mist, and mirror paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-030",
+      "name": "Raidenko Storm Script",
+      "faction": "Kami",
+      "previousRole": "Controller",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Raidenko's Spirit Balance: a solo echo clone that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "basicAttack": "Command Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Raidenko Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Raidenko Storm Script Signature: transforms Spirit Balance into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Kagami Focus Unbound: the Titan enters Ascendant stance, amplifies Spirit Balance, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Raidenko Verdict: restores Divinity and spreads a mark; bonus payoff if the enemy was made vulnerable through shrines, mist, and mirror paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Kami passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "shrines, mist, and mirror paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-031",
+      "name": "Mizuka Shrine Tide",
+      "faction": "Kami",
+      "previousRole": "Breaker",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "uniqueMechanic": "Mizuka's Spirit Balance: a solo range aperture that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "basicAttack": "Flood Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Kagami Focus Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Mizuka Shrine Tide Signature: transforms Spirit Balance into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Kagami Focus Unbound: the Titan enters Ascendant stance, amplifies Spirit Balance, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Mizuka Verdict: creates shield and primes counterattack; bonus payoff if the enemy was made vulnerable through shrines, mist, and mirror paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Kami passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "shrines, mist, and mirror paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-032",
+      "name": "Kageyori Shadow Gate",
+      "faction": "Kami",
+      "previousRole": "Disruptor",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Kageyori's Spirit Balance: a solo soul counter that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "basicAttack": "Banish Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Spirit Balance.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Kageyori Shadow Gate Signature: transforms Spirit Balance into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Kagami Focus Unbound: the Titan enters Ascendant stance, amplifies Spirit Balance, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Kageyori Verdict: causes nearby AoE rupture; bonus payoff if the enemy was made vulnerable through shrines, mist, and mirror paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Kami passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "shrines, mist, and mirror paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-033",
+      "name": "Hanae Blossom Ward",
+      "faction": "Kami",
+      "previousRole": "Sustain",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Hanae's Spirit Balance: a solo glory stack that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "basicAttack": "Harvest Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through shrines, mist, and mirror paths, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Hanae Blossom Ward Signature: transforms Spirit Balance into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Kagami Focus Unbound: the Titan enters Ascendant stance, amplifies Spirit Balance, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Hanae Verdict: teleports/repositions and hides intent; bonus payoff if the enemy was made vulnerable through shrines, mist, and mirror paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Kami passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "shrines, mist, and mirror paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-034",
+      "name": "Onimaru Red Seal",
+      "faction": "Kami",
+      "previousRole": "Artillery",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "uniqueMechanic": "Onimaru's Spirit Balance: a solo vow scar that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "basicAttack": "Crown Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Onimaru Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Onimaru Red Seal Signature: transforms Spirit Balance into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Kagami Focus Unbound: the Titan enters Ascendant stance, amplifies Spirit Balance, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Onimaru Verdict: converts terrain into a favored zone; bonus payoff if the enemy was made vulnerable through shrines, mist, and mirror paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Kami passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "shrines, mist, and mirror paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-035",
+      "name": "Korin Mist Path",
+      "faction": "Kami",
+      "previousRole": "Guardian",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Korin's Spirit Balance: a solo root memory that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "basicAttack": "Mirror Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Kagami Focus Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Korin Mist Path Signature: transforms Spirit Balance into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Kagami Focus Unbound: the Titan enters Ascendant stance, amplifies Spirit Balance, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Korin Verdict: weakens nearby elite enemies; bonus payoff if the enemy was made vulnerable through shrines, mist, and mirror paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Kami passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "shrines, mist, and mirror paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-036",
+      "name": "Yamabito Stone Prayer",
+      "faction": "Kami",
+      "previousRole": "Assassin",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Yamabito's Spirit Balance: a solo edict seal that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "basicAttack": "Overrun Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Spirit Balance.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Yamabito Stone Prayer Signature: transforms Spirit Balance into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Kagami Focus Unbound: the Titan enters Ascendant stance, amplifies Spirit Balance, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Yamabito Verdict: extends Ascendant stance by one action; bonus payoff if the enemy was made vulnerable through shrines, mist, and mirror paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Kami passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "shrines, mist, and mirror paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-037",
+      "name": "Dagoran Root-Crown",
+      "faction": "Tuatha",
+      "previousRole": "Defender",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "uniqueMechanic": "Dagoran's Living Grove: a solo charge meter that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "basicAttack": "Sunder Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through roots, moonlit growth, and fae paths, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Dagoran Root-Crown Signature: transforms Living Grove into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Grove Memory Unbound: the Titan enters Ascendant stance, amplifies Living Grove, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Dagoran Verdict: restores health through conquest; bonus payoff if the enemy was made vulnerable through roots, moonlit growth, and fae paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Tuatha passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "roots, moonlit growth, and fae paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-038",
+      "name": "Eryndor Emerald Oath",
+      "faction": "Tuatha",
+      "previousRole": "Battery",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Eryndor's Living Grove: a solo mark cycle that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "basicAttack": "Judge Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Eryndor Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Eryndor Emerald Oath Signature: transforms Living Grove into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Grove Memory Unbound: the Titan enters Ascendant stance, amplifies Living Grove, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Eryndor Verdict: refunds Momentum and grants follow-up movement; bonus payoff if the enemy was made vulnerable through roots, moonlit growth, and fae paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Tuatha passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "roots, moonlit growth, and fae paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-039",
+      "name": "Melian Moon-Grove",
+      "faction": "Tuatha",
+      "previousRole": "Controller",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Melian's Living Grove: a solo terrain imprint that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "basicAttack": "Hunt Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Grove Memory Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Melian Moon-Grove Signature: transforms Living Grove into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Grove Memory Unbound: the Titan enters Ascendant stance, amplifies Living Grove, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Melian Verdict: restores Divinity and spreads a mark; bonus payoff if the enemy was made vulnerable through roots, moonlit growth, and fae paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Tuatha passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "roots, moonlit growth, and fae paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-040",
+      "name": "Bran Granite Bough",
+      "faction": "Tuatha",
+      "previousRole": "Breaker",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "uniqueMechanic": "Bran's Living Grove: a solo parry ladder that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "basicAttack": "Bind Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Living Grove.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Bran Granite Bough Signature: transforms Living Grove into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Grove Memory Unbound: the Titan enters Ascendant stance, amplifies Living Grove, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Bran Verdict: creates shield and primes counterattack; bonus payoff if the enemy was made vulnerable through roots, moonlit growth, and fae paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Tuatha passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "roots, moonlit growth, and fae paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-041",
+      "name": "Nimue Silver Pool",
+      "faction": "Tuatha",
+      "previousRole": "Disruptor",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Nimue's Living Grove: a solo execution chain that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "basicAttack": "Shatter Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through roots, moonlit growth, and fae paths, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Nimue Silver Pool Signature: transforms Living Grove into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Grove Memory Unbound: the Titan enters Ascendant stance, amplifies Living Grove, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Nimue Verdict: causes nearby AoE rupture; bonus payoff if the enemy was made vulnerable through roots, moonlit growth, and fae paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Tuatha passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "roots, moonlit growth, and fae paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-042",
+      "name": "Cernan Wild Vale",
+      "faction": "Tuatha",
+      "previousRole": "Sustain",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Cernan's Living Grove: a solo zone conversion that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "basicAttack": "Cleave Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Cernan Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Cernan Wild Vale Signature: transforms Living Grove into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Grove Memory Unbound: the Titan enters Ascendant stance, amplifies Living Grove, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Cernan Verdict: teleports/repositions and hides intent; bonus payoff if the enemy was made vulnerable through roots, moonlit growth, and fae paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Tuatha passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "roots, moonlit growth, and fae paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-043",
+      "name": "Ailbhe Thorn-Song",
+      "faction": "Tuatha",
+      "previousRole": "Artillery",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "uniqueMechanic": "Ailbhe's Living Grove: a solo curse ledger that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "basicAttack": "Veil Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Grove Memory Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Ailbhe Thorn-Song Signature: transforms Living Grove into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Grove Memory Unbound: the Titan enters Ascendant stance, amplifies Living Grove, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Ailbhe Verdict: converts terrain into a favored zone; bonus payoff if the enemy was made vulnerable through roots, moonlit growth, and fae paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Tuatha passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "roots, moonlit growth, and fae paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-044",
+      "name": "Oghma Stone Script",
+      "faction": "Tuatha",
+      "previousRole": "Guardian",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Oghma's Living Grove: a solo stance fuse that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "basicAttack": "Ignite Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Living Grove.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Oghma Stone Script Signature: transforms Living Grove into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Grove Memory Unbound: the Titan enters Ascendant stance, amplifies Living Grove, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Oghma Verdict: weakens nearby elite enemies; bonus payoff if the enemy was made vulnerable through roots, moonlit growth, and fae paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Tuatha passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "roots, moonlit growth, and fae paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-045",
+      "name": "Tara Dawn Barrow",
+      "faction": "Tuatha",
+      "previousRole": "Assassin",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Tara's Living Grove: a solo hazard bloom that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "basicAttack": "Anchor Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through roots, moonlit growth, and fae paths, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Tara Dawn Barrow Signature: transforms Living Grove into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Grove Memory Unbound: the Titan enters Ascendant stance, amplifies Living Grove, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Tara Verdict: extends Ascendant stance by one action; bonus payoff if the enemy was made vulnerable through roots, moonlit growth, and fae paths.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Tuatha passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "roots, moonlit growth, and fae paths",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-046",
+      "name": "Seraphel, the Throne Eternal",
+      "faction": "Empyrean",
+      "previousRole": "Defender",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "uniqueMechanic": "Seraphel's Radiant Edict: a solo pursuit lock that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "basicAttack": "Rend Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Seraphel Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Seraphel Signature: transforms Radiant Edict into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Heaven Mandate Unbound: the Titan enters Ascendant stance, amplifies Radiant Edict, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Seraphel Verdict: restores health through conquest; bonus payoff if the enemy was made vulnerable through ordered sigil zones.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Empyrean passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "ordered sigil zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-047",
+      "name": "Caelion Dawnborn Axis",
+      "faction": "Empyrean",
+      "previousRole": "Battery",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Caelion's Radiant Edict: a solo shield fracture that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "basicAttack": "Pierce Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Heaven Mandate Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Caelion Dawnborn Axis Signature: transforms Radiant Edict into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Heaven Mandate Unbound: the Titan enters Ascendant stance, amplifies Radiant Edict, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Caelion Verdict: refunds Momentum and grants follow-up movement; bonus payoff if the enemy was made vulnerable through ordered sigil zones.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Empyrean passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "ordered sigil zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-048",
+      "name": "Aurelia Radiant Spear",
+      "faction": "Empyrean",
+      "previousRole": "Controller",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Aurelia's Radiant Edict: a solo echo clone that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "basicAttack": "Command Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Radiant Edict.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Aurelia Radiant Spear Signature: transforms Radiant Edict into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Heaven Mandate Unbound: the Titan enters Ascendant stance, amplifies Radiant Edict, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Aurelia Verdict: restores Divinity and spreads a mark; bonus payoff if the enemy was made vulnerable through ordered sigil zones.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Empyrean passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "ordered sigil zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-049",
+      "name": "Malachor Law Warden",
+      "faction": "Empyrean",
+      "previousRole": "Breaker",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "uniqueMechanic": "Malachor's Radiant Edict: a solo range aperture that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "basicAttack": "Flood Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through ordered sigil zones, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Malachor Law Warden Signature: transforms Radiant Edict into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Heaven Mandate Unbound: the Titan enters Ascendant stance, amplifies Radiant Edict, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Malachor Verdict: creates shield and primes counterattack; bonus payoff if the enemy was made vulnerable through ordered sigil zones.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Empyrean passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "ordered sigil zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-050",
+      "name": "Elyndra Choir Crown",
+      "faction": "Empyrean",
+      "previousRole": "Disruptor",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Elyndra's Radiant Edict: a solo soul counter that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "basicAttack": "Banish Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Elyndra Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Elyndra Choir Crown Signature: transforms Radiant Edict into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Heaven Mandate Unbound: the Titan enters Ascendant stance, amplifies Radiant Edict, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Elyndra Verdict: causes nearby AoE rupture; bonus payoff if the enemy was made vulnerable through ordered sigil zones.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Empyrean passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "ordered sigil zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-051",
+      "name": "Orison White Citadel",
+      "faction": "Empyrean",
+      "previousRole": "Sustain",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Orison's Radiant Edict: a solo glory stack that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "basicAttack": "Harvest Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Heaven Mandate Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Orison White Citadel Signature: transforms Radiant Edict into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Heaven Mandate Unbound: the Titan enters Ascendant stance, amplifies Radiant Edict, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Orison Verdict: teleports/repositions and hides intent; bonus payoff if the enemy was made vulnerable through ordered sigil zones.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Empyrean passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "ordered sigil zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-052",
+      "name": "Vespera Mercy Blade",
+      "faction": "Empyrean",
+      "previousRole": "Artillery",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "uniqueMechanic": "Vespera's Radiant Edict: a solo vow scar that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "basicAttack": "Crown Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Radiant Edict.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Vespera Mercy Blade Signature: transforms Radiant Edict into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Heaven Mandate Unbound: the Titan enters Ascendant stance, amplifies Radiant Edict, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Vespera Verdict: converts terrain into a favored zone; bonus payoff if the enemy was made vulnerable through ordered sigil zones.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Empyrean passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "ordered sigil zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-053",
+      "name": "Axiom Gate Choir",
+      "faction": "Empyrean",
+      "previousRole": "Guardian",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Axiom's Radiant Edict: a solo root memory that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "basicAttack": "Mirror Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through ordered sigil zones, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Axiom Gate Choir Signature: transforms Radiant Edict into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Heaven Mandate Unbound: the Titan enters Ascendant stance, amplifies Radiant Edict, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Axiom Verdict: weakens nearby elite enemies; bonus payoff if the enemy was made vulnerable through ordered sigil zones.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Empyrean passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "ordered sigil zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-054",
+      "name": "Theon Still Horizon",
+      "faction": "Empyrean",
+      "previousRole": "Assassin",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Theon's Radiant Edict: a solo edict seal that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "basicAttack": "Overrun Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Theon Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Theon Still Horizon Signature: transforms Radiant Edict into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Heaven Mandate Unbound: the Titan enters Ascendant stance, amplifies Radiant Edict, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Theon Verdict: extends Ascendant stance by one action; bonus payoff if the enemy was made vulnerable through ordered sigil zones.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Empyrean passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "ordered sigil zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-055",
+      "name": "Mordrath, the Infernal King",
+      "faction": "Infernal Dominion",
+      "previousRole": "Defender",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "uniqueMechanic": "Mordrath's Dominion Flame: a solo charge meter that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "basicAttack": "Sunder Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Infernal Claim Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Mordrath Signature: transforms Dominion Flame into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Infernal Claim Unbound: the Titan enters Ascendant stance, amplifies Dominion Flame, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Mordrath Verdict: restores health through conquest; bonus payoff if the enemy was made vulnerable through chains, fire, and cursed ground.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Infernal Dominion passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "chains, fire, and cursed ground",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-056",
+      "name": "Varkul Bloodforged Crown",
+      "faction": "Infernal Dominion",
+      "previousRole": "Battery",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Varkul's Dominion Flame: a solo mark cycle that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "basicAttack": "Judge Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Dominion Flame.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Varkul Bloodforged Crown Signature: transforms Dominion Flame into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Infernal Claim Unbound: the Titan enters Ascendant stance, amplifies Dominion Flame, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Varkul Verdict: refunds Momentum and grants follow-up movement; bonus payoff if the enemy was made vulnerable through chains, fire, and cursed ground.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Infernal Dominion passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "chains, fire, and cursed ground",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-057",
+      "name": "Nyxara Flameborn Court",
+      "faction": "Infernal Dominion",
+      "previousRole": "Controller",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Nyxara's Dominion Flame: a solo terrain imprint that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "basicAttack": "Hunt Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through chains, fire, and cursed ground, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Nyxara Flameborn Court Signature: transforms Dominion Flame into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Infernal Claim Unbound: the Titan enters Ascendant stance, amplifies Dominion Flame, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Nyxara Verdict: restores Divinity and spreads a mark; bonus payoff if the enemy was made vulnerable through chains, fire, and cursed ground.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Infernal Dominion passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "chains, fire, and cursed ground",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-058",
+      "name": "Azrakar Chainwarden",
+      "faction": "Infernal Dominion",
+      "previousRole": "Breaker",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "uniqueMechanic": "Azrakar's Dominion Flame: a solo parry ladder that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "basicAttack": "Bind Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Azrakar Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Azrakar Chainwarden Signature: transforms Dominion Flame into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Infernal Claim Unbound: the Titan enters Ascendant stance, amplifies Dominion Flame, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Azrakar Verdict: creates shield and primes counterattack; bonus payoff if the enemy was made vulnerable through chains, fire, and cursed ground.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Infernal Dominion passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "chains, fire, and cursed ground",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-059",
+      "name": "Orryx Ash Dominion",
+      "faction": "Infernal Dominion",
+      "previousRole": "Disruptor",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Orryx's Dominion Flame: a solo execution chain that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "basicAttack": "Shatter Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Infernal Claim Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Orryx Ash Dominion Signature: transforms Dominion Flame into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Infernal Claim Unbound: the Titan enters Ascendant stance, amplifies Dominion Flame, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Orryx Verdict: causes nearby AoE rupture; bonus payoff if the enemy was made vulnerable through chains, fire, and cursed ground.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Infernal Dominion passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "chains, fire, and cursed ground",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-060",
+      "name": "Malvera Ember Throne",
+      "faction": "Infernal Dominion",
+      "previousRole": "Sustain",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Malvera's Dominion Flame: a solo zone conversion that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "basicAttack": "Cleave Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Mythic Lunge: short burst movement that converts distance closed into Dominion Flame.",
+      "defensiveAbility": "Solo Sustain Guard: converts the next hit into shield, regeneration, or mitigation based on current stance.",
+      "offensiveAbility": "Realmbreaker Arc: line or cone strike that changes terrain and punishes formations.",
+      "reactionAbility": "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+      "signatureAbility": "Malvera Ember Throne Signature: transforms Dominion Flame into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Infernal Claim Unbound: the Titan enters Ascendant stance, amplifies Dominion Flame, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Malvera Verdict: teleports/repositions and hides intent; bonus payoff if the enemy was made vulnerable through chains, fire, and cursed ground.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Infernal Dominion passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "chains, fire, and cursed ground",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-061",
+      "name": "Kharon Black Iron",
+      "faction": "Infernal Dominion",
+      "previousRole": "Artillery",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "uniqueMechanic": "Kharon's Dominion Flame: a solo curse ledger that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "basicAttack": "Veil Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Gate Step through chains, fire, and cursed ground, ignoring one engagement zone and leaving a tactical imprint.",
+      "defensiveAbility": "Defiant Frame: reduce incoming damage and prime a reaction if surrounded.",
+      "offensiveAbility": "Marked Cataclysm: detonate the Titan's unique mark for burst damage and control.",
+      "reactionAbility": "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+      "signatureAbility": "Kharon Black Iron Signature: transforms Dominion Flame into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Infernal Claim Unbound: the Titan enters Ascendant stance, amplifies Dominion Flame, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Kharon Verdict: converts terrain into a favored zone; bonus payoff if the enemy was made vulnerable through chains, fire, and cursed ground.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Infernal Dominion passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "chains, fire, and cursed ground",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-062",
+      "name": "Sablex Cinder Duke",
+      "faction": "Infernal Dominion",
+      "previousRole": "Guardian",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "uniqueMechanic": "Sablex's Dominion Flame: a solo stance fuse that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "basicAttack": "Ignite Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Champion Advance: move after damaging a vulnerable enemy, gaining Momentum if ending in threat range.",
+      "defensiveAbility": "Mythic Evasion: dodge or parry a telegraphed attack and gain Momentum on perfect timing.",
+      "offensiveAbility": "Overwhelming Entry: AoE opener that rewards entering danger rather than hiding from it.",
+      "reactionAbility": "Sablex Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+      "signatureAbility": "Sablex Cinder Duke Signature: transforms Dominion Flame into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Infernal Claim Unbound: the Titan enters Ascendant stance, amplifies Dominion Flame, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Sablex Verdict: weakens nearby elite enemies; bonus payoff if the enemy was made vulnerable through chains, fire, and cursed ground.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Infernal Dominion passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "chains, fire, and cursed ground",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    },
+    {
+      "id": "TG-TITAN-063",
+      "name": "Zerath Wound Gate",
+      "faction": "Infernal Dominion",
+      "previousRole": "Assassin",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "uniqueMechanic": "Zerath's Dominion Flame: a solo hazard bloom that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "basicAttack": "Anchor Blow: identity basic attack that generates Momentum when used from advantage terrain or against the Titan's marked target.",
+      "movementAbility": "Realm Path: traverse favored terrain at reduced cost and drag enemy intent toward the Titan.",
+      "defensiveAbility": "Enduring Legend: survive lethal damage once per battle if Divinity is above threshold, then lose Divinity.",
+      "offensiveAbility": "Infernal Claim Technique: spends Momentum to damage, reposition, and expose vulnerability.",
+      "reactionAbility": "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+      "signatureAbility": "Zerath Wound Gate Signature: transforms Dominion Flame into a battlefield rule for 2 rounds, changing how enemies path and how executions pay out.",
+      "divineAscension": "Divine Ascension — Infernal Claim Unbound: the Titan enters Ascendant stance, amplifies Dominion Flame, alters nearby terrain, unlocks an empowered signature, and creates a decisive victory window without making the Titan invincible.",
+      "executionMechanic": "Execute — Zerath Verdict: extends Ascendant stance by one action; bonus payoff if the enemy was made vulnerable through chains, fire, and cursed ground.",
+      "passive": "Lone Legend: gains bonus Momentum when ending a round without allied Titans on the battlefield; Infernal Dominion passive is rewritten for solo play as personal mastery rather than squad support.",
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "idealBattlefield": "chains, fire, and cursed ground",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "progressionPath": [
+        "unlock stance variant",
+        "improve unique mechanic control",
+        "add reaction mastery node",
+        "add execution payoff branch",
+        "unlock Divine Ascension upgrade",
+        "cosmetic mythic form"
+      ]
+    }
+  ]
+}

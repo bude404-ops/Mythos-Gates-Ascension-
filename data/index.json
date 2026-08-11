@@ -10,7 +10,7 @@
     "artPrompts": 110,
     "artworks": 0,
     "artImportPipeline": 1,
-    "developmentTasks": 11,
+    "developmentTasks": 15,
     "loreEntries": 35,
     "npcs": 8,
     "creatures": 18,
@@ -53,6 +53,9 @@
     "continuityBalanceAudit": 1,
     "endgameDashboard": 1,
     "monetizationPolicy": 1,
+    "soloTitanMigrationReport": 1,
+    "soloCombatDesignDocument": 1,
+    "soloTitanRosterRedesign": 1,
     "hollowCreatures": 16,
     "artMapPrompts": 12,
     "artCampaignPrompts": 7
@@ -109,13 +112,16 @@
     "balance-analytics.json": "data/balance-analytics.json",
     "continuity-balance-audit.json": "data/continuity-balance-audit.json",
     "endgame-dashboard.json": "data/endgame-dashboard.json",
-    "monetization-policy.json": "data/monetization-policy.json"
+    "monetization-policy.json": "data/monetization-policy.json",
+    "solo-titan-migration-report.json": "data/solo-titan-migration-report.json",
+    "solo-combat-design-document.json": "data/solo-combat-design-document.json",
+    "solo-titan-roster-redesign.json": "data/solo-titan-roster-redesign.json"
   },
   "sourceFileFingerprints": {
     "project.json": {
       "path": "data/project.json",
-      "bytes": 2505,
-      "sha256": "29f134a74dd57492a6e19caf6b96e28e855d7df7f81f3e36f7dc62ba4e6704ca"
+      "bytes": 2805,
+      "sha256": "2a4b94b06abcf2a5767a4739b79e7ae9dfff91e8008cdd2993369f779cdd92c2"
     },
     "factions.json": {
       "path": "data/factions.json",
@@ -159,8 +165,8 @@
     },
     "development-tasks.json": {
       "path": "data/development-tasks.json",
-      "bytes": 4687,
-      "sha256": "873af5be911a980b16033524b459ad29be09cdf325dc5e8f5ea3b305fa090bc6"
+      "bytes": 7538,
+      "sha256": "8e09313b42644480a2dc64b69d1dfc027ce087029095843243add6eae10ce636"
     },
     "lore-index.json": {
       "path": "data/lore-index.json",
@@ -249,13 +255,13 @@
     },
     "change-history.json": {
       "path": "data/change-history.json",
-      "bytes": 13862,
-      "sha256": "92ff74e4087eaf117297d27e0b97ee9336c2c08e0bc1a7ef1fe7d6e75718e9f5"
+      "bytes": 14447,
+      "sha256": "12d42fabf9f3cff17d671d68162a2d446d7defaf01142c37f71d6c43c2611092"
     },
     "campaign-architecture.json": {
       "path": "data/campaign-architecture.json",
-      "bytes": 2038,
-      "sha256": "a16354274897e9f97fb661d96ee1fdfdffc3f5faa76dc7e4550fc58a970bac2e"
+      "bytes": 2471,
+      "sha256": "e4ef8f8ec6367f890297a9724bec75a384f171ee0f85866dca1f479360bc7e32"
     },
     "campaign-chapter-registry.json": {
       "path": "data/campaign-chapter-registry.json",
@@ -309,13 +315,13 @@
     },
     "squad-system.json": {
       "path": "data/squad-system.json",
-      "bytes": 4454,
-      "sha256": "419db5f331f4951e93e893bd398eb5e6e2024d84e5dab1f50912b7e46a7a6fa0"
+      "bytes": 4995,
+      "sha256": "65c179bc9899e4ea67aa808c54bfbee5a0e630f7874cee4b992c14f9112222a2"
     },
     "progression-system.json": {
       "path": "data/progression-system.json",
-      "bytes": 1189,
-      "sha256": "0e147908e24eb551ad8ba68db69421027e33d2a81c848983096b4687ab224bf5"
+      "bytes": 1574,
+      "sha256": "dca36e54057cc511b30ea743d5814d14cebb548560e6c0d8943faeb20cc4cf1f"
     },
     "ascension-system.json": {
       "path": "data/ascension-system.json",
@@ -324,8 +330,8 @@
     },
     "async-arena-system.json": {
       "path": "data/async-arena-system.json",
-      "bytes": 4112,
-      "sha256": "b25ec4e15b555a1cb333d112c52b365e9274c5e2ed406becf036d9e6e1e4ec34"
+      "bytes": 3469,
+      "sha256": "d37a37a285681669ec107d274f6f2151f4d58f862dc78e57f9a3d8755e45903b"
     },
     "weekly-trials.json": {
       "path": "data/weekly-trials.json",
@@ -360,7 +366,7 @@
     "continuity-balance-audit.json": {
       "path": "data/continuity-balance-audit.json",
       "bytes": 2643,
-      "sha256": "8d87e053bcd51a8b5d4af8b2f3697ec330d1adf00216c93c69c8f482c39a6859"
+      "sha256": "3692ed533f9168233ae2e45c8848b70f1b525971f72d50ff693cf2c275a60665"
     },
     "endgame-dashboard.json": {
       "path": "data/endgame-dashboard.json",
@@ -371,6 +377,21 @@
       "path": "data/monetization-policy.json",
       "bytes": 693,
       "sha256": "ad70a9fb5ceff1a2fa25e6e845f857c5cf70d34de725fa65c79b3ec5eefc4b41"
+    },
+    "solo-titan-migration-report.json": {
+      "path": "data/solo-titan-migration-report.json",
+      "bytes": 7713,
+      "sha256": "ba09daf55b66398d923ce217a75b488e723c6d06f7c44dbc35a8904254e226e3"
+    },
+    "solo-combat-design-document.json": {
+      "path": "data/solo-combat-design-document.json",
+      "bytes": 11690,
+      "sha256": "62d9dcb9a4524a9dbd185ab843ce1d3e7aa457f9d5ea411452379b02821e9fc3"
+    },
+    "solo-titan-roster-redesign.json": {
+      "path": "data/solo-titan-roster-redesign.json",
+      "bytes": 169349,
+      "sha256": "4cb02db083a98fd035f9609b57a8deb2c8b84fedb9230ad73cbf29870a73a857"
     }
   },
   "artPromptCategories": {

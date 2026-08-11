@@ -1,14 +1,12 @@
 {
   "id": "TG-PROGRESSION-001",
-  "standardSquadSize": 5,
+  "standardSquadSize": 1,
   "saveData": [
     "campaignProgress",
     "eliteProgress",
     "titanCollection",
     "titanLevels",
     "equipment",
-    "squadPresets",
-    "arenaDefenseSquad",
     "arenaRating",
     "arenaHistory",
     "factionMastery",
@@ -20,7 +18,11 @@
     "cosmetics",
     "currency",
     "purchases",
-    "rewards"
+    "rewards",
+    "activeTitanLoadouts",
+    "masteryByTitanId",
+    "defensiveTitanSnapshots",
+    "soloCombatSettings"
   ],
   "securityRules": [
     "Reject duplicate rewards",
@@ -32,15 +34,21 @@
   ],
   "recommendationInputs": [
     "ownedTitans",
-    "squadPower",
     "campaignProgress",
     "eliteProgress",
     "ascensionFloor",
-    "arenaDefenseWeakness",
     "weeklyTrialStatus",
     "raidProgress",
     "seasonLevel",
-    "nearUnlockShards"
+    "nearUnlockShards",
+    "activeTitanPower",
+    "missionArchetypeFit",
+    "terrainAffinity",
+    "reactionReadiness",
+    "momentumMastery",
+    "divinityMastery",
+    "defensiveTitanWeakness"
   ],
-  "rewardsPhilosophy": "Fun first, fair second, monetization third. Cosmetics preferred; progression purchases are speed and convenience, not mandatory power."
+  "rewardsPhilosophy": "Fun first, fair second, monetization third. Cosmetics preferred; progression purchases are speed and convenience, not mandatory power.",
+  "soloCombatUpdate": "Progression now centers individual Titan mastery, one active Titan loadouts, Momentum/Divinity unlocks, stances, reactions, executions, relics, and ascension upgrades."
 }

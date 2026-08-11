@@ -1,0 +1,364 @@
+{
+  "id": "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
+  "version": "0.9.0",
+  "generated": "2026-08-11T20:08:28Z",
+  "fantasy": "I am controlling a legendary Titan, alone, against an impossible battlefield.",
+  "pillars": [
+    "One active player Titan",
+    "Skillful Momentum",
+    "Divine spectacle",
+    "Reactive turn-based tactics",
+    "Terrain as a weapon",
+    "Roster mastery instead of party composition",
+    "Mobile-readable power fantasy"
+  ],
+  "completeCombatLoop": [
+    "Choose one Titan after reading mission type, terrain, enemies, boss, and modifiers.",
+    "Enter tactical battlefield with objective, enemy intents, terrain hazards, Momentum 0, Divinity 0, selected stance.",
+    "Player turn: move, basic attack, technique, stance shift, environmental action, execution, or Divine Ascension if ready.",
+    "Enemy turn: coordinated AI acts against one powerful target, telegraphing threats and creating reaction windows.",
+    "Reaction windows interrupt enemy resolution without becoming real-time combat.",
+    "Momentum rises through aggressive intelligent mastery and falls through poor positioning or passivity.",
+    "Divinity rises through mythic performance and powers Ascendant stance/Divine Ascension.",
+    "Terrain and destructible objects alter movement, damage, enemy AI, and Titan-specific mechanics.",
+    "Victory comes from objective completion, boss defeat, escape, ritual control, or survival state; not always enemy wipe."
+  ],
+  "turnStructure": {
+    "round": "Player Phase -> Enemy Intent Reveal -> Enemy Phase with Reaction Windows -> Terrain/Hazard Tick -> Objective Evaluation -> Round Advance",
+    "playerPhaseActions": [
+      "Move",
+      "Basic Attack",
+      "Technique",
+      "Signature",
+      "Stance Shift",
+      "Environmental Interaction",
+      "Execute",
+      "Divine Ascension",
+      "Wait/Focus"
+    ],
+    "enemyPhase": "Enemies execute coordinated behaviors; each major enemy action can expose one contextual reaction prompt.",
+    "noRealtimeRule": "Reaction choices are turn-based prompts with clear limits and costs."
+  },
+  "movement": {
+    "base": "Titan movement uses speed, size, terrain cost, engagement zones, and stance modifiers.",
+    "skillExpression": [
+      "flank arcs",
+      "line-of-sight denial",
+      "high-ground claims",
+      "hazard baiting",
+      "charge lanes",
+      "retreat denial",
+      "objective timing"
+    ],
+    "soloDifference": "Movement is survival, offense, and resource generation at once; there is no allied backline to save the Titan."
+  },
+  "attacks": {
+    "basic": "Reliable identity-specific generator; not a generic Strike clone.",
+    "techniques": "Cooldown/resource abilities that express archetype and unique mechanic.",
+    "signatures": "High-impact Titan identity moment, usually spending Momentum and/or setup.",
+    "damagePipeline": "Attack roll/seed -> accuracy/evasion/parry -> terrain/stance/status modifiers -> shields/mitigation -> damage -> vulnerability/execution check -> event log."
+  },
+  "momentum": {
+    "definition": "The Titan gaining control of the battlefield.",
+    "range": "0-100",
+    "earnedBy": [
+      "successful attacks",
+      "flanking",
+      "dodge/parry/counter",
+      "interrupts",
+      "executions",
+      "objective captures",
+      "terrain destruction",
+      "hazard kills",
+      "weakness exploitation",
+      "multi-kill chains",
+      "intelligent movement into advantage terrain"
+    ],
+    "lostBy": [
+      "waiting without Focus",
+      "being surrounded",
+      "taking preventable hazard damage",
+      "missing a telegraphed reaction",
+      "letting enemies complete denial actions",
+      "standing in cursed terrain"
+    ],
+    "spentOn": [
+      "enhanced techniques",
+      "special movement",
+      "defensive reactions",
+      "executions",
+      "stance surges",
+      "Titan-specific mechanic triggers"
+    ],
+    "designGoal": "Reward aggressive intelligent play rather than passive waiting."
+  },
+  "divinity": {
+    "definition": "Access to true legendary power.",
+    "range": "0-100",
+    "generatedBy": [
+      "major objective progress",
+      "boss phase breaks",
+      "signature ability use",
+      "taking or dealing mythic-scale damage",
+      "perfect reaction chains",
+      "Titan-specific sacred actions"
+    ],
+    "spentOn": [
+      "Ascendant stance upkeep",
+      "Divine Ascension",
+      "ultimate terrain transformation",
+      "mythic reaction override"
+    ],
+    "divineAscension": "Spectacular temporary state that enhances abilities, changes battlefield rules, and creates unique victory windows."
+  },
+  "reactions": {
+    "windows": [
+      "Dodge enemy attack",
+      "Parry melee entry",
+      "Counter charge",
+      "Interrupt cast",
+      "Execute vulnerable enemy",
+      "Pursue retreat",
+      "Brace boss impact",
+      "Seize objective interruption"
+    ],
+    "costs": "Usually Momentum, cooldown, stance condition, or Titan-specific resource.",
+    "limits": "One default reaction per enemy phase unless Titan mastery, Guard stance, or unique mechanic expands it.",
+    "clarity": "UI shows trigger, cost, likely outcome, and skip option."
+  },
+  "stances": {
+    "Assault": {
+      "benefit": "offense, Momentum gain, pursuit pressure",
+      "tradeoff": "lower mitigation and weaker brace reactions"
+    },
+    "Guard": {
+      "benefit": "defense, parry/dodge/counter availability, shield quality",
+      "tradeoff": "lower damage and slower Divinity generation"
+    },
+    "Ascendant": {
+      "benefit": "divine techniques, mechanic amplification, battlefield impact",
+      "tradeoff": "Divinity drain and post-Ascension vulnerability risk"
+    },
+    "uniqueVariants": "Individual Titans may rename or twist stances while preserving readability."
+  },
+  "executions": {
+    "vulnerability": "Enemies become vulnerable at health thresholds, stagger states, broken guard, terrain trap, or failed cast.",
+    "choice": "Executing may spend action economy but grants Titan-specific payoff.",
+    "payoffs": {
+      "Reaver": "heal/lifesteal surge",
+      "Assassin": "Momentum refund/stealth reset",
+      "Arcanist": "Divinity restoration",
+      "Warden": "shield/counter guard",
+      "Destroyer": "nearby AoE rupture",
+      "Duelist": "follow-up movement or riposte",
+      "Controller": "terrain/status spread",
+      "Trickster": "clone/teleport reset",
+      "Juggernaut": "unstoppable stack"
+    }
+  },
+  "terrain": {
+    "mustMatter": true,
+    "types": [
+      "high ground",
+      "ruins",
+      "sacred zones",
+      "water",
+      "fire",
+      "darkness",
+      "magical zones",
+      "hazards",
+      "destructible structures",
+      "traps",
+      "teleportation points",
+      "divine zones",
+      "cursed zones"
+    ],
+    "effects": [
+      "movement cost",
+      "damage modifier",
+      "defense modifier",
+      "ability targeting",
+      "Momentum gain/loss",
+      "Divinity gain",
+      "Titan mechanic triggers",
+      "enemy behavior choices"
+    ],
+    "destruction": "Pillars, walls, gates, shrines, cover, bridges, chains, roots, and ritual anchors can be broken when mission and Titan rules allow."
+  },
+  "enemyAI": {
+    "principle": "Enemies know they are fighting one powerful opponent.",
+    "behaviors": [
+      "surround",
+      "flank",
+      "retreat",
+      "protect objectives",
+      "exploit terrain",
+      "interrupt abilities",
+      "target weaknesses",
+      "coordinate attacks",
+      "deny Momentum",
+      "prevent executions",
+      "force bad terrain",
+      "bait reactions"
+    ],
+    "enemyTypes": [
+      "Swarmer",
+      "Brute",
+      "Hunter",
+      "Controller",
+      "Disruptor",
+      "Guardian",
+      "Executioner",
+      "Elite",
+      "Champion",
+      "Enemy Titan"
+    ]
+  },
+  "titanArchetypes": [
+    "Juggernaut",
+    "Duelist",
+    "Assassin",
+    "Destroyer",
+    "Controller",
+    "Warden",
+    "Reaver",
+    "Arcanist",
+    "Trickster"
+  ],
+  "progression": {
+    "perTitan": [
+      "level",
+      "stats",
+      "abilities",
+      "passive",
+      "signature mechanic",
+      "equipment",
+      "relics/artifacts",
+      "ascension",
+      "skins/cosmetics",
+      "mastery tree"
+    ],
+    "antiInflation": "Levels unlock versatility, resource control, reaction mastery, terrain options, and Ascension expression more than raw stat bloat."
+  },
+  "mastery": {
+    "examples": [
+      "parry chains",
+      "flanking kills",
+      "terrain destruction",
+      "hazard kills",
+      "perfect boss reactions",
+      "win without critical damage",
+      "complete mission using required stance discipline"
+    ],
+    "reward": "Learning the Titan, not only increasing numbers."
+  },
+  "bossMechanics": {
+    "phases": [
+      "Phase 1 establishes rules",
+      "Phase 2 changes mechanics",
+      "Phase 3 changes battlefield",
+      "Phase 4 enrages or denies core resource",
+      "Phase 5 Divine confrontation"
+    ],
+    "rule": "Bosses win through adaptation pressure, not enormous health pools alone."
+  },
+  "missionTypes": [
+    "Elimination",
+    "Hunt",
+    "Survival",
+    "Assassination",
+    "Escort",
+    "Conquest",
+    "Ritual",
+    "Escape",
+    "Boss Battle",
+    "Titan Duel",
+    "Environmental Battle",
+    "Gauntlet",
+    "Ascension"
+  ],
+  "campaignStructure": {
+    "chapter": "Major story arc",
+    "mission": "Individual tactical battle with explicit solo purpose",
+    "boss": "Major narrative encounter",
+    "chapterFinale": "Cinematic confrontation",
+    "loreJustification": "Unstable Gates allow Titans to cross where armies would be destroyed, scattered, or turned by realm pressure."
+  },
+  "asynchronousPvp": {
+    "name": "Asynchronous Titan Challenge",
+    "notRealTimePvp": true,
+    "defenseSnapshot": [
+      "defensiveTitan",
+      "equipment",
+      "abilities",
+      "battlefield",
+      "AI behavior profile",
+      "ranking",
+      "rewards"
+    ],
+    "futureReady": "Shared deterministic engine can later support live PvP without calling async real-time PvP."
+  },
+  "futureReserveSystem": {
+    "currentRule": "Do not implement reserves in normal build.",
+    "architecture": "Allow fields for 1 active Titan + optional future reserve list; only one Titan ever appears at a time."
+  },
+  "mobileUX": {
+    "top": [
+      "enemy information",
+      "objective",
+      "turn state"
+    ],
+    "center": [
+      "battlefield"
+    ],
+    "bottom": [
+      "abilities",
+      "movement",
+      "stance",
+      "Momentum",
+      "Divinity",
+      "reaction availability"
+    ],
+    "principle": "Large touch targets, low clutter, Titan as visual focal point."
+  },
+  "camera": {
+    "normal": "tactical readable battlefield view",
+    "attacks": "closer framing",
+    "executions": "cinematic cut-in",
+    "divineAscension": "spectacular camera and VFX",
+    "boss": "intro and phase-change shots without sacrificing tactical readability"
+  },
+  "engineRequirements": {
+    "preserve": [
+      "deterministic battle state",
+      "reducer transitions",
+      "turn state machine",
+      "movement validation",
+      "attack resolver",
+      "damage pipeline",
+      "ability catalog",
+      "cooldowns",
+      "status effects",
+      "terrain modifiers",
+      "objective evaluator",
+      "victory locks",
+      "seeded RNG",
+      "battle event log",
+      "combat/UI separation"
+    ],
+    "add": [
+      "Momentum",
+      "Divinity",
+      "reactions",
+      "stances",
+      "executions",
+      "Titan-specific mechanics",
+      "destructible terrain",
+      "environmental interactions",
+      "solo sustain",
+      "boss phases",
+      "advanced enemy AI"
+    ]
+  },
+  "status": "APPROVED_FOR_VERTICAL_SLICE_IMPLEMENTATION"
+}

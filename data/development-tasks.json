@@ -172,5 +172,85 @@
       "scripts/validate-content.mjs",
       "visual/README.md"
     ]
+  },
+  {
+    "id": "TG-TASK-SOLO-001",
+    "title": "Implement solo battle state schema",
+    "owner": "Development Director",
+    "status": "NEXT",
+    "priority": "Critical",
+    "description": "Implement solo battle state schema",
+    "director": "Development Director",
+    "dependencies": [
+      "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001"
+    ],
+    "category": "Solo Titan Combat",
+    "deliverable": "Implement solo battle state schema",
+    "relatedEntity": "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
+    "relatedFiles": [
+      "data/solo-combat-design-document.json",
+      "data/solo-titan-roster-redesign.json",
+      "data/solo-titan-migration-report.json"
+    ]
+  },
+  {
+    "id": "TG-TASK-SOLO-002",
+    "title": "Build Momentum, Divinity, stance, reaction, and execution reducers",
+    "owner": "Gameplay Director",
+    "status": "NEXT",
+    "priority": "Critical",
+    "description": "Build Momentum, Divinity, stance, reaction, and execution reducers",
+    "director": "Gameplay Director",
+    "dependencies": [
+      "TG-TASK-SOLO-001"
+    ],
+    "category": "Solo Titan Combat",
+    "deliverable": "Build Momentum, Divinity, stance, reaction, and execution reducers",
+    "relatedEntity": "TG-TASK-SOLO-001",
+    "relatedFiles": [
+      "data/solo-combat-design-document.json",
+      "data/solo-titan-roster-redesign.json",
+      "data/solo-titan-migration-report.json"
+    ]
+  },
+  {
+    "id": "TG-TASK-SOLO-003",
+    "title": "Create one-faction solo vertical slice with five mission types and one boss",
+    "owner": "Gameplay Director",
+    "status": "NEXT",
+    "priority": "High",
+    "description": "Create one-faction solo vertical slice with five mission types and one boss",
+    "director": "Gameplay Director",
+    "dependencies": [
+      "TG-TASK-SOLO-002"
+    ],
+    "category": "Solo Titan Combat",
+    "deliverable": "Create one-faction solo vertical slice with five mission types and one boss",
+    "relatedEntity": "TG-TASK-SOLO-002",
+    "relatedFiles": [
+      "data/solo-combat-design-document.json",
+      "data/solo-titan-roster-redesign.json",
+      "data/solo-titan-migration-report.json"
+    ]
+  },
+  {
+    "id": "TG-TASK-SOLO-004",
+    "title": "Convert async arena to Asynchronous Titan Challenge snapshot model",
+    "owner": "Development Director",
+    "status": "NEXT",
+    "priority": "High",
+    "description": "Convert async arena to Asynchronous Titan Challenge snapshot model",
+    "director": "Development Director",
+    "dependencies": [
+      "TG-TASK-SOLO-001"
+    ],
+    "category": "Solo Titan Combat",
+    "deliverable": "Convert async arena to Asynchronous Titan Challenge snapshot model",
+    "relatedEntity": "TG-TASK-SOLO-001",
+    "relatedFiles": [
+      "data/solo-combat-design-document.json",
+      "data/solo-titan-roster-redesign.json",
+      "data/solo-titan-migration-report.json"
+    ]
   }
 ]

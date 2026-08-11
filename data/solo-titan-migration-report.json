@@ -1,0 +1,159 @@
+{
+  "id": "TG-SOLO-TITAN-MIGRATION-REPORT-001",
+  "version": "0.9.0",
+  "generated": "2026-08-11T20:08:28Z",
+  "directive": "Only one player Titan may be active on the battlefield at a time. Existing party assumptions must be audited before production rewrites.",
+  "coreDecision": "Titan Gates: Ascension becomes a Solo Titan Tactical RPG: one legendary player Titan versus battlefield-scale enemy problems.",
+  "compatibleSystems": [
+    {
+      "system": "Canon Bible / faction registry / realm codex",
+      "reason": "Faction identities remain authoritative and become stronger as Titan-specific solo mechanics."
+    },
+    {
+      "system": "Entity ID registry and runtime validation",
+      "reason": "Existing IDs remain stable; new solo artifacts are additive."
+    },
+    {
+      "system": "Deterministic battle state, reducers, turn state machine",
+      "reason": "Can support one active player entity with stronger enemy/action layers."
+    },
+    {
+      "system": "Movement validation, damage pipeline, cooldowns, status effects",
+      "reason": "Core primitives remain valid after replacing squad targets with solo Titan state."
+    },
+    {
+      "system": "Campaign shell and mobile navigation",
+      "reason": "Selection flow remains useful; mission data needs solo-objective redesign."
+    },
+    {
+      "system": "Art Import Vault and visual baseline process",
+      "reason": "Still governs high-quality Titan, map, VFX, and UI production."
+    },
+    {
+      "system": "Save/load and content status tracker",
+      "reason": "Must be extended, not removed."
+    }
+  ],
+  "requiresModification": [
+    {
+      "system": "Titan roster",
+      "change": "Replace party roles with solo combat archetype blends, unique mechanics, sustain, reactions, stances, Divinity, and executions."
+    },
+    {
+      "system": "Campaign architecture",
+      "change": "Change teamSize from 3/5 assumptions to one active Titan; redesign missions by tactical purpose."
+    },
+    {
+      "system": "Mission registry",
+      "change": "Stop treating missions as multi-Titan objective pressure tests; assign mission types, solo hazards, boss phases, and Titan suitability tags."
+    },
+    {
+      "system": "Progression system",
+      "change": "Replace squadPower recommendations with activeTitanPower, mastery, stance unlocks, relic builds, and solo readiness."
+    },
+    {
+      "system": "Async arena",
+      "change": "Replace saved defense squads with one defensive Titan build, equipment, AI behavior profile, and battlefield choice."
+    },
+    {
+      "system": "UI",
+      "change": "Top enemy/objective state, center battlefield, bottom Titan controls for abilities, movement, stance, Momentum, Divinity, reactions."
+    },
+    {
+      "system": "Enemy AI",
+      "change": "Enemies must surround, deny Momentum, interrupt, protect objectives, and exploit one powerful target."
+    }
+  ],
+  "requiresReplacement": [
+    {
+      "system": "Traditional Tank/Healer/DPS/Support role wheel",
+      "replacement": "Flexible archetype blends: Juggernaut, Duelist, Assassin, Destroyer, Controller, Warden, Reaver, Arcanist, Trickster."
+    },
+    {
+      "system": "Dedicated healer identity",
+      "replacement": "Solo sustain verbs: regeneration, lifesteal, shields, parry, dodge, execution recovery, debuffs, terrain denial."
+    },
+    {
+      "system": "Squad synergy rules",
+      "replacement": "Titan mastery, terrain affinity, relic loadout, stance discipline, and mission counter-pick logic."
+    },
+    {
+      "system": "5-Titan arena defense snapshots",
+      "replacement": "Asynchronous Titan Challenge defensive Titan snapshot."
+    }
+  ],
+  "shouldBeRemoved": [
+    "Any normal battle rule requiring multiple allied Titans on the field.",
+    "Adjacent-allied objective protection bonuses in standard combat.",
+    "Role restrictions that require a healer/support slot.",
+    "Mission copy implying a strike force of several player Titans unless explicitly future reserve/story exception."
+  ],
+  "shouldBeDeferred": [
+    "Reserve Titan swapping: architect fields only; do not implement normal battlefield reserves yet.",
+    "True live PvP: keep async Titan Challenge first.",
+    "Full procedural encounter generation: define hooks after handcrafted solo mission types are validated.",
+    "Production rewrite of all 280 mission payloads: begin after solo data model and engine primitives land."
+  ],
+  "dependencies": [
+    "Solo combat state schema before UI controls.",
+    "Momentum and Divinity reducers before Ascendant stance and Divine Ascension.",
+    "Reaction resolver before advanced enemy AI timing.",
+    "Execution vulnerability thresholds before enemy health tuning.",
+    "Destructible terrain schema before Destroyer mastery and environmental battle missions.",
+    "Boss phase model before campaign finale redesign."
+  ],
+  "risks": [
+    {
+      "risk": "One Titan may feel invincible or helpless.",
+      "mitigation": "Use Momentum, reactions, terrain, sustain windows, and enemy coordination instead of raw HP inflation."
+    },
+    {
+      "risk": "Roster homogenization.",
+      "mitigation": "Every Titan receives a unique mechanic and mission-counterplay profile."
+    },
+    {
+      "risk": "Mobile UI overload.",
+      "mitigation": "Bottom action rail with stance/resource/reaction clarity; progressive disclosure for enemy details."
+    },
+    {
+      "risk": "Old content contradicts solo premise.",
+      "mitigation": "Rewrite mission templates and lore justification before production campaign conversion."
+    },
+    {
+      "risk": "Async arena can masquerade as real PvP.",
+      "mitigation": "Label it only as Asynchronous Titan Challenge."
+    }
+  ],
+  "requiredUiChanges": [
+    "Single Titan command rail: Move, Basic, Techniques, Reaction, Stance, Ascend.",
+    "Momentum and Divinity meters visible at bottom with spend previews.",
+    "Reaction prompt overlay during enemy action windows.",
+    "Enemy intent markers built for surrounding/flanking threats.",
+    "Terrain tooltip and destructible object affordances.",
+    "Boss phase banner and Divine Ascension cinematic trigger."
+  ],
+  "requiredDataModelChanges": [
+    "battle.activeTitanId replaces battle.playerSquadIds in normal modes.",
+    "titan.soloArchetypes, titan.uniqueMechanic, titan.stances, titan.reactions, titan.execution, titan.divineAscension.",
+    "mission.type, mission.soloTacticalPurpose, mission.idealTitanArchetypes, mission.enemyBehaviorPlan, mission.terrainPlan, mission.bossPhases.",
+    "arena.defensiveTitanSnapshot replaces arenaDefenseSquad.",
+    "save.masteryByTitanId and activeTitanLoadouts replace squad preset priority for normal modes."
+  ],
+  "requiredContentChanges": [
+    "Rewrite Titan abilities away from shared Strike/Signature/Gate Command shells.",
+    "Convert chapter missions into solo mission types instead of enemy-count scaling.",
+    "Add solo Gate lore: unstable Gates permit one Titan champion safely, not armies.",
+    "Add enemy categories and AI behaviors tuned to one powerful opponent.",
+    "Add boss phase scripts and Divine Ascension story beats."
+  ],
+  "implementationOrder": [
+    "1. Lock solo design doctrine and roster redesign.",
+    "2. Update schemas and validators for solo fields.",
+    "3. Add engine reducers for Momentum, Divinity, stance, reaction, execution.",
+    "4. Add terrain interaction/destruction model.",
+    "5. Replace one playable shell battle with true solo combat prototype.",
+    "6. Convert a small vertical slice: one faction chapter, five mission types, one boss.",
+    "7. Expand campaign conversion after QA."
+  ],
+  "status": "DESIGN_BASELINE_READY_FOR_ENGINE_VERTICAL_SLICE"
+}

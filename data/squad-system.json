@@ -1,6 +1,6 @@
 {
   "id": "TG-SQUAD-SYSTEM-001",
-  "standardSquadSize": 5,
+  "standardSquadSize": 1,
   "allowedSpecialModeSizes": [
     1,
     3,
@@ -16,12 +16,11 @@
     "Weekly Trial"
   ],
   "validationRules": [
-    "Exactly 5 Titans for standard modes",
-    "No duplicate Titan IDs inside one squad",
-    "Every Titan ID must exist",
-    "Equipment and ability snapshots must reference valid owned Titan state",
-    "Arena Defense saves a validated snapshot",
-    "Squad switching preserves mode-specific loadouts"
+    "Exactly 1 active Titan for normal campaign, elite, ascension, raid, weekly trial, and async challenge attack modes",
+    "No additional allied player Titans may occupy the battlefield in normal combat",
+    "Owned Titan collection remains valid; mission selection chooses the best single Titan",
+    "Future reserve data may be stored but only one Titan appears at a time",
+    "Equipment and ability snapshots must reference valid owned active Titan state"
   ],
   "displayFields": [
     "Titan",
@@ -159,5 +158,8 @@
       "condition": "Two defensive Titans adjacent to vulnerable objective",
       "effect": "Objective protection bonus in Trials, Arena Defense, and escort missions."
     }
-  ]
+  ],
+  "status": "DEPRECATED_FOR_NORMAL_SOLO_COMBAT",
+  "soloCombatDirective": "Normal combat supports exactly one active player Titan. Existing 5-Titan presets are legacy references pending conversion or future reserve/collection UI use.",
+  "replacementSystem": "Solo Titan Loadout System: activeTitanId, stance loadout, relics, mastery, reactions, preferred AI profile for defense."
 }
