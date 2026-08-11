@@ -46,5 +46,11 @@
     "CHANGES_PENDING": "Development changes exist that have not yet been pushed.",
     "SYNC_ERROR": "Push failed or remote verification failed.",
     "DEPLOYING": "GitHub Actions or Pages deployment is still in progress."
-  }
+  },
+  "requiredBeforeSync": [
+    "Run npm run index before validation",
+    "Commit data/index.json with every dashboard data change",
+    "Reject stale data/index.json via npm run index:check"
+  ],
+  "indexPolicy": "data/index.json is dashboard-critical and must include counts plus source file SHA-256 fingerprints. It is regenerated during build and checked before GitHub sync."
 }
