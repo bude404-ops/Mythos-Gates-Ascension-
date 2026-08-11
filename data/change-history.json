@@ -3,6 +3,22 @@
   "updated": "2026-08-11",
   "entries": [
     {
+      "version": "0.8.1",
+      "summary": "Added playable campaign selection flow: seven faction campaign cards, chapter browsing, Normal/Elite mission lists, mission detail pages, and data-driven launch into the battle shell using real mission objectives and threats.",
+      "commit": "LOCAL_COMMIT",
+      "time": "2026-08-11T17:50:00Z",
+      "status": "VERIFIED_READY_TO_PUSH",
+      "checks": [
+        "Continuity audit PASS",
+        "Build PASS",
+        "Content validation PASS",
+        "Index freshness PASS",
+        "Runtime campaign-to-battle smoke PASS",
+        "Visual smoke PASS",
+        "Secret scan PASS"
+      ]
+    },
+    {
       "version": "0.8.0",
       "summary": "Expanded mission and campaign architecture to all remaining factions: Olympian, Kami, Tuatha, Empyrean, and Infernal Dominion now each have 20 Normal and 20 Elite missions with matching chapter registry, dialogue, art packages, storyline arcs, and consequences.",
       "commit": "LOCAL_COMMIT",

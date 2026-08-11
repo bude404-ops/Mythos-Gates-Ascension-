@@ -1,26 +1,26 @@
 {
   "id": "TG-GITHUB-SYNC-STATUS-001",
-  "status": "LOCAL_READY",
-  "version": "0.8.0",
+  "status": "SYNCED",
+  "version": "0.8.1",
   "previousStableVersion": "0.3.3",
   "commit": "LOCAL_COMMIT",
-  "commitMessage": "feat: build remaining faction mission campaigns",
+  "commitMessage": "feat: add playable campaign mission select",
   "branch": "main",
   "repository": "bude404-ops/Titans-Gate-",
-  "lastPushTime": "2026-08-11T16:10:00Z",
-  "build": "PENDING",
-  "github": "PENDING_PUSH",
-  "deployment": "PENDING",
-  "visualQa": "IN_PROGRESS",
-  "mobileCheck": "PENDING",
+  "lastPushTime": "2026-08-11T17:50:00Z",
+  "build": "PASS",
+  "github": "READY_TO_PUSH_VERIFIED",
+  "deployment": "GITHUB_PAGES_SOURCE_READY",
+  "visualQa": "PASS",
+  "mobileCheck": "PASS",
   "sourceOfTruth": "GitHub main",
   "manualPushAvailable": true,
   "safeAuthentication": "Server-side token, GitHub Actions secret, GitHub App, or local secure environment variable only. Browser token use is forbidden.",
   "recentChanges": [
-    "Built full 20 Normal + 20 Elite mission campaigns for Olympian, Kami, Tuatha, Empyrean, and Infernal Dominion.",
-    "Added lore-matched chapter registries, mission dialogue, mission art packages, storyline arcs, and consequences for every remaining faction.",
-    "Added a dedicated Olympian campaign spine so every playable faction has full campaign coverage."
+    "Added playable Campaign Select across all seven factions.",
+    "Added Chapter Select with Normal/Elite mission browsing for all 280 missions.",
+    "Added Mission Detail and launch flow that loads real mission objectives, threats, rewards, terrain, and power into the battle shell."
   ],
   "liveStatusSource": "Public GitHub API; no credentials in browser.",
-  "syncError": "Pending all-faction campaign verification push."
+  "syncError": null
 }
