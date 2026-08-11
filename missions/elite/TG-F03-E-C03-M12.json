@@ -1,0 +1,111 @@
+{
+  "id": "TG-F03-E-C03-M12",
+  "factionId": "TG-FACTION-003",
+  "campaignId": "TG-F03-CAMPAIGN-ELITE",
+  "campaignType": "Elite",
+  "chapter": 3,
+  "chapterTitle": "Senate Under Hollow Witness",
+  "missionNumber": 12,
+  "missionInChapter": 4,
+  "title": "Elite: Senate Under Hollow Witness: Realm Answer",
+  "description": "Senate Under Hollow Witness unfolds across Laurel Senate dais with collapsing sky terraces and public vow markers, pushing a 5-Titan Olympian squad to prove elite balanced pressure, precision, dueling, morale momentum. without violating established Realm canon.",
+  "lore": "Senate Under Hollow Witness: Realm Answer advances Laurel Senate Trials: Olympus turns the reopened Gate into public trial law, forcing glory to become defense instead of vanity. It directly tests the faction tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.",
+  "recommendedPower": 1026,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "frontline champion",
+    "precision duelist",
+    "morale breaker",
+    "objective laureate",
+    "statue-control support"
+  ],
+  "mapId": "TG-MAP-004",
+  "terrain": "Laurel Senate dais with collapsing sky terraces and public vow markers",
+  "objectives": {
+    "primary": "Defeat the chapter threat and preserve the faction doctrine under pressure. Elite remix: complete it while the secondary hazard condition is active.",
+    "optional": [
+      "Win with no Titan defeated",
+      "Resolve at least three Olympian doctrine actions",
+      "Hold every objective for one full enemy turn"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-006"
+      ],
+      "entry": "emerge through radiant rivalry pressure fractures"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-011"
+      ],
+      "entry": "reinforcement from the Gate wound flank",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": {
+    "enemyId": "TG-CREATURE-007",
+    "name": "Jealous Laurel Judge",
+    "phaseCount": 2,
+    "mechanic": "changes faction hazard timing and objective pressure"
+  },
+  "turnLimit": 15,
+  "specialRules": [
+    "Olympian Trial: public belief empowers clean victories but punishes reckless overreach.",
+    "Laurel Supremacy: clean objective execution chains morale and precision bonuses.",
+    "5-Titan standard squad",
+    "Elite Hazard: secondary realm pressure starts active.",
+    "Elite Command: enemy support persists until objective action breaks the source."
+  ],
+  "victoryConditions": [
+    "Defeat the chapter threat and preserve the faction doctrine under pressure. Elite remix: complete it while the secondary hazard condition is active."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "High-tier Olympian relic material",
+      "Olympian faction shard cache",
+      "Olympian doctrine upgrade dust",
+      "TG-F03-E-C03-M12 codex shard"
+    ],
+    "replay": [
+      "Olympian relic material",
+      "Olympian doctrine upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F03-CODEX-03"
+  ],
+  "artPackageId": "TG-F03-ART-E-C03-M12",
+  "dialogueId": "TG-F03-ELITE-DLG-C03-M12",
+  "audioRequirements": [
+    "Olympian realm ambience",
+    "mythic impact cue",
+    "faction doctrine resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly.",
+  "eliteRemixOf": "TG-F03-C03-M12",
+  "meaningfulDifferences": [
+    "Secondary realm hazard active from opening turn",
+    "Enemy support pressure persists longer",
+    "Objective timing is stricter",
+    "Boss or elite wave uses altered entry timing"
+  ]
+}

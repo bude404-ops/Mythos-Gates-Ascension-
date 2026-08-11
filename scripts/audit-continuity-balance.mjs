@@ -46,11 +46,9 @@ for (const faction of data.factions) {
   const elite = data.missions.filter(m => m.factionId === faction.id && m.campaignType === 'Elite').sort((a, b) => a.missionNumber - b.missionNumber);
   if (normal.length || elite.length) info.push(`${faction.name}: ${normal.length} Normal / ${elite.length} Elite missions across ${chapters.length} chapters`);
 
-  if (['TG-FACTION-001', 'TG-FACTION-002'].includes(faction.id)) {
-    if (chapters.length !== 5) issues.push(`${faction.name} expected 5 campaign chapters, found ${chapters.length}`);
-    if (normal.length !== 20) issues.push(`${faction.name} expected 20 Normal missions, found ${normal.length}`);
-    if (elite.length !== 20) issues.push(`${faction.name} expected 20 Elite missions, found ${elite.length}`);
-  }
+  if (chapters.length !== 5) issues.push(`${faction.name} expected 5 campaign chapters, found ${chapters.length}`);
+  if (normal.length !== 20) issues.push(`${faction.name} expected 20 Normal missions, found ${normal.length}`);
+  if (elite.length !== 20) issues.push(`${faction.name} expected 20 Elite missions, found ${elite.length}`);
 
   if (normal.length) {
     const expected = [...Array(normal.length)].map((_, i) => i + 1).join(',');

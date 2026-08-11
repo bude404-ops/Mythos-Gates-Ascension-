@@ -1,0 +1,106 @@
+{
+  "id": "TG-F06-E-C03-M10",
+  "factionId": "TG-FACTION-006",
+  "campaignId": "TG-F06-CAMPAIGN-ELITE",
+  "campaignType": "Elite",
+  "chapter": 3,
+  "chapterTitle": "Dissonance Trial",
+  "missionNumber": 10,
+  "missionInChapter": 2,
+  "title": "Elite: Dissonance Trial: First Pressure",
+  "description": "Dissonance Trial unfolds across dissonance gallery where false harmonies break formation timing, pushing a 5-Titan Empyrean squad to prove protection, order-locks, shields, anti-chaos control, formationless aura play. without violating established Realm canon.",
+  "lore": "Dissonance Trial: First Pressure advances Empyrean Choir Vault: The Radiant Hierarchies ascend a broken heaven-engine where order can stabilize worlds or erase dissonant survivors. It directly tests the faction tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.",
+  "recommendedPower": 1006,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "radiant protector",
+    "edict controller",
+    "resonance shieldbearer",
+    "halo artillery",
+    "choir sustain"
+  ],
+  "mapId": "TG-MAP-012",
+  "terrain": "dissonance gallery where false harmonies break formation timing",
+  "objectives": {
+    "primary": "Hold two Empyrean objective markers while the Empyrean Choir Vault conflict escalates. Elite remix: complete it while the secondary hazard condition is active.",
+    "optional": [
+      "Win with no Titan defeated",
+      "Resolve at least three Empyrean doctrine actions",
+      "Hold every objective for one full enemy turn"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-006"
+      ],
+      "entry": "emerge through angelic order pressure fractures"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-015"
+      ],
+      "entry": "reinforcement from the Gate wound flank",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": null,
+  "turnLimit": 15,
+  "specialRules": [
+    "Choir Lock: beacon timing shields formation if objectives resolve in order.",
+    "Radiant Edict: structured actions reduce chaos effects and protect allies.",
+    "5-Titan standard squad",
+    "Elite Hazard: secondary realm pressure starts active.",
+    "Elite Command: enemy support persists until objective action breaks the source."
+  ],
+  "victoryConditions": [
+    "Hold two Empyrean objective markers while the Empyrean Choir Vault conflict escalates. Elite remix: complete it while the secondary hazard condition is active."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "High-tier Empyrean relic material",
+      "Empyrean faction shard cache",
+      "Empyrean doctrine upgrade dust",
+      "TG-F06-E-C03-M10 codex shard"
+    ],
+    "replay": [
+      "Empyrean relic material",
+      "Empyrean doctrine upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F06-CODEX-03"
+  ],
+  "artPackageId": "TG-F06-ART-E-C03-M10",
+  "dialogueId": "TG-F06-ELITE-DLG-C03-M10",
+  "audioRequirements": [
+    "Empyrean realm ambience",
+    "mythic impact cue",
+    "faction doctrine resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly.",
+  "eliteRemixOf": "TG-F06-C03-M10",
+  "meaningfulDifferences": [
+    "Secondary realm hazard active from opening turn",
+    "Enemy support pressure persists longer",
+    "Objective timing is stricter",
+    "Boss or elite wave uses altered entry timing"
+  ]
+}

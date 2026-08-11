@@ -1,0 +1,97 @@
+{
+  "id": "TG-F04-C02-M07",
+  "factionId": "TG-FACTION-004",
+  "campaignId": "TG-F04-CAMPAIGN-NORMAL",
+  "campaignType": "Normal",
+  "chapter": 2,
+  "chapterTitle": "Torii Lanes in Storm",
+  "missionNumber": 7,
+  "missionInChapter": 3,
+  "title": "Torii Lanes in Storm: Hidden Law",
+  "description": "Torii Lanes in Storm unfolds across storm-bent shrine path where paper seals redirect hostile wind, pushing a 5-Titan Kami squad to prove precise control, repositioning, evasion, spirit terrain, disciplined burst. without violating established Realm canon.",
+  "lore": "Torii Lanes in Storm: Hidden Law advances Kami Mirror Tempest: The Sacred Kingdoms test whether the Creator can cleanse Gate reflections without breaking shrine law or spirit contracts. It directly tests the faction tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.",
+  "recommendedPower": 599,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "masked defender",
+    "spirit repositioner",
+    "seal breaker",
+    "foxfire scout",
+    "cleanse support"
+  ],
+  "mapId": "TG-MAP-010",
+  "terrain": "storm-bent shrine path where paper seals redirect hostile wind",
+  "objectives": {
+    "primary": "Cleanse the Gate wound without breaking Kami realm law.",
+    "optional": [
+      "Complete before turn 11",
+      "Keep at least four Titans standing",
+      "Trigger at least two Kami faction mechanics"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-006"
+      ],
+      "entry": "emerge through ritual precision pressure fractures"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-007"
+      ],
+      "entry": "reinforcement from the Gate wound flank",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": null,
+  "turnLimit": 13,
+  "specialRules": [
+    "Spirit Contract: objectives must be cleansed without desecrating shrine markers.",
+    "Sacred Balance: careful positioning unlocks spirit precision effects.",
+    "5-Titan standard squad"
+  ],
+  "victoryConditions": [
+    "Cleanse the Gate wound without breaking Kami realm law."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Mid-tier Kami relic material",
+      "Kami faction shard cache",
+      "Kami doctrine upgrade dust",
+      "TG-F04-C02-M07 codex shard"
+    ],
+    "replay": [
+      "Kami relic material",
+      "Kami doctrine upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F04-CODEX-02"
+  ],
+  "artPackageId": "TG-F04-ART-C02-M07",
+  "dialogueId": "TG-F04-DLG-C02-M07",
+  "audioRequirements": [
+    "Kami realm ambience",
+    "mythic impact cue",
+    "faction doctrine resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+}

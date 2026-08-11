@@ -17,8 +17,8 @@
     "hollowEncounterSystem": 1,
     "characterBackstories": 89,
     "maps": 12,
-    "campaigns": 7,
-    "chapters": 19,
+    "campaigns": 8,
+    "chapters": 24,
     "dialogueScripts": 19,
     "visualScreens": 15,
     "visualChangeRules": 11,
@@ -30,15 +30,15 @@
     "githubSyncStatus": 1,
     "changeHistory": 1,
     "campaignArchitecture": 1,
-    "campaignChapters": 10,
-    "missions": 80,
-    "missionDialogue": 80,
-    "missionArtPackages": 80,
+    "campaignChapters": 35,
+    "missions": 280,
+    "missionDialogue": 280,
+    "missionArtPackages": 280,
     "objectiveSystem": 1,
     "rewardSystem": 1,
     "campaignAudit": 1,
-    "storylineArcs": 2,
-    "campaignConsequences": 3,
+    "storylineArcs": 7,
+    "campaignConsequences": 18,
     "endgameArchitecture": 1,
     "squadSystem": 1,
     "progressionSystem": 1,
@@ -114,8 +114,8 @@
   "sourceFileFingerprints": {
     "project.json": {
       "path": "data/project.json",
-      "bytes": 2419,
-      "sha256": "235342523703b6a39492f1cc6e53aacf994df737eb868df284fe252d30523fc8"
+      "bytes": 2447,
+      "sha256": "6321a666d33c154c3fcfd7e522d7d78ff53c84aecaefbfd97892306ce6249ba4"
     },
     "factions.json": {
       "path": "data/factions.json",
@@ -194,13 +194,13 @@
     },
     "campaigns.json": {
       "path": "data/campaigns.json",
-      "bytes": 9249,
-      "sha256": "4c3e2300feb918d4558a916c6df34cc7137b9e98f32a9556be7122ffe8759be9"
+      "bytes": 11651,
+      "sha256": "9434ef1635b5e6f535bbb829f1131f22004019d71299ad84946635d86b4dba19"
     },
     "chapters.json": {
       "path": "data/chapters.json",
-      "bytes": 8244,
-      "sha256": "5c2d15c9dfa116d68c9f08b6956ef2f47edf998d1a84fc4761300c4ec38aaeb5"
+      "bytes": 10706,
+      "sha256": "f8e04b0ad0c34f8cf914762e908cd75e2abfe4ec80d8f2d551c3b447ed81510d"
     },
     "dialogue-scripts.json": {
       "path": "data/dialogue-scripts.json",
@@ -244,13 +244,13 @@
     },
     "github-sync-status.json": {
       "path": "data/github-sync-status.json",
-      "bytes": 1207,
-      "sha256": "d3f72673e6eb1783f5bb2213422fb1f874c4b0e8e9fd60d615d74b6d2ef879a5"
+      "bytes": 1215,
+      "sha256": "b539ec4bf1f38751d9adc1cb0d9885a26ee735c930cf3ffa4f567e3a5c70a352"
     },
     "change-history.json": {
       "path": "data/change-history.json",
-      "bytes": 12605,
-      "sha256": "054776d1ebb7bf0957ff5f38933a3eb10bd86dd7bf709e61edad61fd66a8df69"
+      "bytes": 13212,
+      "sha256": "3bfd61a258e4b985a15119a8f83087a0d48b6f664cd454a832849110d4b6874d"
     },
     "campaign-architecture.json": {
       "path": "data/campaign-architecture.json",
@@ -259,23 +259,23 @@
     },
     "campaign-chapter-registry.json": {
       "path": "data/campaign-chapter-registry.json",
-      "bytes": 8210,
-      "sha256": "2af0ab82edc272ea2ff4ada5ad39cfbccbbf35e9bd8ef3262b3199af3682e882"
+      "bytes": 31544,
+      "sha256": "eb5cb905b0dd4584181b45bb81431d61ac21cebca4ba7d82f391d2b5911bd3ae"
     },
     "mission-registry.json": {
       "path": "data/mission-registry.json",
-      "bytes": 290521,
-      "sha256": "942ea64bbb632e33549a656fa76f61af46b4eca54d814943e416621444215ead"
+      "bytes": 1065897,
+      "sha256": "28a6c97e851c119f2c7e3442de5fbe485d41e1bb2ec8bab12fbee505842b55e4"
     },
     "mission-dialogue.json": {
       "path": "data/mission-dialogue.json",
-      "bytes": 127087,
-      "sha256": "569e5b9dcc792a7f8b8473580cce45a64e13f27e3a2715668d6fd82747ca89f0"
+      "bytes": 459275,
+      "sha256": "b52b81f068bf669f0eb53f3ccd97d7e516877e9c99e67b166c5915e95dcf593e"
     },
     "mission-art-packages.json": {
       "path": "data/mission-art-packages.json",
-      "bytes": 133879,
-      "sha256": "2b6188160b3388ede9c2b61a820326812323aad5c255570d6fd9e03e2b50f029"
+      "bytes": 495403,
+      "sha256": "17b7ea5175699be060e1aab81333c706cbca0d0790c31e874b48f003765d0f0e"
     },
     "objective-system.json": {
       "path": "data/objective-system.json",
@@ -294,13 +294,13 @@
     },
     "storyline-arc-registry.json": {
       "path": "data/storyline-arc-registry.json",
-      "bytes": 2083,
-      "sha256": "d2d7025dc073dfa4454f7d05fc0f441d0ec50d129faad2700b9b2d9b656ce3b3"
+      "bytes": 10623,
+      "sha256": "811434bc4ab124f11126b1e9d7fcbdf9d62940a3e3c04f7ca8c1e2666a8fb17c"
     },
     "campaign-consequence-registry.json": {
       "path": "data/campaign-consequence-registry.json",
-      "bytes": 836,
-      "sha256": "c24e9a2aabd537fee8c1fc57f351f8f7ca2fca8178e95a4fa0d0714561191e1d"
+      "bytes": 5025,
+      "sha256": "c600a6cd3f6c5d263bf30ebc168f5705a0e845cd6be27f51bb88795b45e7365c"
     },
     "endgame-architecture.json": {
       "path": "data/endgame-architecture.json",
@@ -359,8 +359,8 @@
     },
     "continuity-balance-audit.json": {
       "path": "data/continuity-balance-audit.json",
-      "bytes": 1558,
-      "sha256": "f38353ae1bb7fbb02be9067cb5646f4eddbb04b730858f79f146b0ca4b433e04"
+      "bytes": 2643,
+      "sha256": "dd8101f0f5b63ab5ecc064d9af1c6ac7fca49064600cb2f3367804329ce0539c"
     },
     "endgame-dashboard.json": {
       "path": "data/endgame-dashboard.json",

@@ -1,0 +1,102 @@
+{
+  "id": "TG-F04-C04-M16",
+  "factionId": "TG-FACTION-004",
+  "campaignId": "TG-F04-CAMPAIGN-NORMAL",
+  "campaignType": "Normal",
+  "chapter": 4,
+  "chapterTitle": "Shrine Law Under Teeth",
+  "missionNumber": 16,
+  "missionInChapter": 4,
+  "title": "Shrine Law Under Teeth: War Memory",
+  "description": "Shrine Law Under Teeth unfolds across inner shrine court where spirit contracts become tactical boundaries, pushing a 5-Titan Kami squad to prove precise control, repositioning, evasion, spirit terrain, disciplined burst. without violating established Realm canon.",
+  "lore": "Shrine Law Under Teeth: War Memory advances Kami Mirror Tempest: The Sacred Kingdoms test whether the Creator can cleanse Gate reflections without breaking shrine law or spirit contracts. It directly tests the faction tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.",
+  "recommendedPower": 827,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "masked defender",
+    "spirit repositioner",
+    "seal breaker",
+    "foxfire scout",
+    "cleanse support"
+  ],
+  "mapId": "TG-MAP-009",
+  "terrain": "inner shrine court where spirit contracts become tactical boundaries",
+  "objectives": {
+    "primary": "Defeat the chapter threat and preserve the faction doctrine under pressure.",
+    "optional": [
+      "Complete before turn 13",
+      "Keep at least four Titans standing",
+      "Trigger at least two Kami faction mechanics"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-006"
+      ],
+      "entry": "emerge through ritual precision pressure fractures"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-003"
+      ],
+      "entry": "reinforcement from the Gate wound flank",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": {
+    "enemyId": "TG-CREATURE-007",
+    "name": "Storm-Seal Magistrate",
+    "phaseCount": 2,
+    "mechanic": "changes faction hazard timing and objective pressure"
+  },
+  "turnLimit": 15,
+  "specialRules": [
+    "Spirit Contract: objectives must be cleansed without desecrating shrine markers.",
+    "Sacred Balance: careful positioning unlocks spirit precision effects.",
+    "5-Titan standard squad"
+  ],
+  "victoryConditions": [
+    "Defeat the chapter threat and preserve the faction doctrine under pressure."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Mid-tier Kami relic material",
+      "Kami faction shard cache",
+      "Kami doctrine upgrade dust",
+      "TG-F04-C04-M16 codex shard"
+    ],
+    "replay": [
+      "Kami relic material",
+      "Kami doctrine upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F04-CODEX-04"
+  ],
+  "artPackageId": "TG-F04-ART-C04-M16",
+  "dialogueId": "TG-F04-DLG-C04-M16",
+  "audioRequirements": [
+    "Kami realm ambience",
+    "mythic impact cue",
+    "faction doctrine resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+}

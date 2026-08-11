@@ -1,0 +1,97 @@
+{
+  "id": "TG-F03-C03-M10",
+  "factionId": "TG-FACTION-003",
+  "campaignId": "TG-F03-CAMPAIGN-NORMAL",
+  "campaignType": "Normal",
+  "chapter": 3,
+  "chapterTitle": "Senate Under Hollow Witness",
+  "missionNumber": 10,
+  "missionInChapter": 2,
+  "title": "Senate Under Hollow Witness: First Pressure",
+  "description": "Senate Under Hollow Witness unfolds across Laurel Senate dais with collapsing sky terraces and public vow markers, pushing a 5-Titan Olympian squad to prove elite balanced pressure, precision, dueling, morale momentum. without violating established Realm canon.",
+  "lore": "Senate Under Hollow Witness: First Pressure advances Laurel Senate Trials: Olympus turns the reopened Gate into public trial law, forcing glory to become defense instead of vanity. It directly tests the faction tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.",
+  "recommendedPower": 686,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "frontline champion",
+    "precision duelist",
+    "morale breaker",
+    "objective laureate",
+    "statue-control support"
+  ],
+  "mapId": "TG-MAP-004",
+  "terrain": "Laurel Senate dais with collapsing sky terraces and public vow markers",
+  "objectives": {
+    "primary": "Hold two Olympian objective markers while the Laurel Senate Trials conflict escalates.",
+    "optional": [
+      "Complete before turn 12",
+      "Keep at least four Titans standing",
+      "Trigger at least two Olympian faction mechanics"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-006"
+      ],
+      "entry": "emerge through radiant rivalry pressure fractures"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-009"
+      ],
+      "entry": "reinforcement from the Gate wound flank",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": null,
+  "turnLimit": 14,
+  "specialRules": [
+    "Olympian Trial: public belief empowers clean victories but punishes reckless overreach.",
+    "Laurel Supremacy: clean objective execution chains morale and precision bonuses.",
+    "5-Titan standard squad"
+  ],
+  "victoryConditions": [
+    "Hold two Olympian objective markers while the Laurel Senate Trials conflict escalates."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Mid-tier Olympian relic material",
+      "Olympian faction shard cache",
+      "Olympian doctrine upgrade dust",
+      "TG-F03-C03-M10 codex shard"
+    ],
+    "replay": [
+      "Olympian relic material",
+      "Olympian doctrine upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F03-CODEX-03"
+  ],
+  "artPackageId": "TG-F03-ART-C03-M10",
+  "dialogueId": "TG-F03-DLG-C03-M10",
+  "audioRequirements": [
+    "Olympian realm ambience",
+    "mythic impact cue",
+    "faction doctrine resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+}

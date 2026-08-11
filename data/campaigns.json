@@ -81,7 +81,7 @@
     "slug": "roots-below-the-gate",
     "name": "Roots Below the Gate",
     "phase": "Act III",
-    "status": "Lore Complete",
+    "status": "Campaign Expansion Ready",
     "director": "Lore Director",
     "summary": "Avalora reveals that Gates wound living terrain. The campaign shifts from simple sealing to restoration under pressure.",
     "loreDirectorNotes": "Defines living-map ethics without making the forest a generic nature backdrop.",
@@ -104,14 +104,23 @@
     "recommendedNextTask": "Build terrain-state data schema.",
     "threatSystems": [
       "TG-HOLLOW-ENCOUNTER-SYSTEM"
-    ]
+    ],
+    "missionChapterRegistry": [
+      "TG-F05-CH01",
+      "TG-F05-CH02",
+      "TG-F05-CH03",
+      "TG-F05-CH04",
+      "TG-F05-CH05"
+    ],
+    "normalMissionCount": 20,
+    "eliteMissionCount": 20
   },
   {
     "id": "TG-CAMPAIGN-004",
     "slug": "cinders-of-dominion",
     "name": "Cinders of Dominion",
     "phase": "Act IV",
-    "status": "Lore Complete",
+    "status": "Campaign Expansion Ready",
     "director": "Lore Director",
     "summary": "The Infernal Dominion treats Gate wounds as opportunity. The Creator must navigate bargains, execution sigils, and power without confusing ambition for corruption.",
     "loreDirectorNotes": "Keeps Infernal Dominion as a real civilization, not a generic evil faction.",
@@ -134,7 +143,16 @@
     "recommendedNextTask": "Design choice consequence records.",
     "threatSystems": [
       "TG-HOLLOW-ENCOUNTER-SYSTEM"
-    ]
+    ],
+    "missionChapterRegistry": [
+      "TG-F07-CH01",
+      "TG-F07-CH02",
+      "TG-F07-CH03",
+      "TG-F07-CH04",
+      "TG-F07-CH05"
+    ],
+    "normalMissionCount": 20,
+    "eliteMissionCount": 20
   },
   {
     "id": "TG-CAMPAIGN-005",
@@ -174,7 +192,7 @@
     "slug": "kami-mirror-tempest",
     "name": "Kami Mirror Tempest",
     "phase": "Act II",
-    "status": "Campaign Spec Ready",
+    "status": "Campaign Expansion Ready",
     "director": "Lore Director",
     "summary": "The Kami campaign travels through storm shrines, mirror lakes, and foxfire gates where every reflection can become a hostile tactical lane.",
     "loreDirectorNotes": "Focuses on contracts with spirits rather than conquest. The campaign tests whether the Creator can win without breaking local shrine law.",
@@ -199,14 +217,23 @@
     "recommendedNextTask": "Prototype mirror-clone hazard tiles and wind-lane movement rules.",
     "threatSystems": [
       "TG-HOLLOW-ENCOUNTER-SYSTEM"
-    ]
+    ],
+    "missionChapterRegistry": [
+      "TG-F04-CH01",
+      "TG-F04-CH02",
+      "TG-F04-CH03",
+      "TG-F04-CH04",
+      "TG-F04-CH05"
+    ],
+    "normalMissionCount": 20,
+    "eliteMissionCount": 20
   },
   {
     "id": "TG-CAMPAIGN-007",
     "slug": "empyrean-choir-vault",
     "name": "Empyrean Choir Vault",
     "phase": "Act II",
-    "status": "Campaign Spec Ready",
+    "status": "Campaign Expansion Ready",
     "director": "Gameplay Director",
     "summary": "The Empyrean campaign ascends luminous choir platforms orbiting a broken heaven-engine where harmonic gates rewrite battlefield elevation.",
     "loreDirectorNotes": "Presents Empyrean order as beautiful but dangerous: songs stabilize worlds while erasing dissonant survivors.",
@@ -231,6 +258,57 @@
     "recommendedNextTask": "Add elevation advantage rules and beacon countdown UI to the tactical prototype.",
     "threatSystems": [
       "TG-HOLLOW-ENCOUNTER-SYSTEM"
-    ]
+    ],
+    "missionChapterRegistry": [
+      "TG-F06-CH01",
+      "TG-F06-CH02",
+      "TG-F06-CH03",
+      "TG-F06-CH04",
+      "TG-F06-CH05"
+    ],
+    "normalMissionCount": 20,
+    "eliteMissionCount": 20
+  },
+  {
+    "id": "TG-CAMPAIGN-008",
+    "slug": "laurel-senate-trials",
+    "name": "Laurel Senate Trials",
+    "phase": "Act II",
+    "status": "Campaign Expansion Ready",
+    "director": "Lore Director",
+    "summary": "The Olympian campaign turns the reopened Gate into a sequence of public trials where glory must defend the Realm instead of feeding jealous spectacle.",
+    "loreDirectorNotes": "Uses Olympian realm canon: excellence, rivalry, public belief, and laurel judgment without collapsing faction separation.",
+    "gameplayDirectorNotes": "Adds precision duels, morale momentum, living statue pressure, and arena platform objectives.",
+    "artDirectorNotes": "Needs Marble Sky Arena, Laurel Senate, living champion statues, bronze summit, and Laurel-Star Gate art passes.",
+    "developmentDirectorNotes": "Uses the faction campaign architecture template with 20 Normal and 20 Elite missions.",
+    "chapters": [
+      "TG-CHAPTER-020",
+      "TG-CHAPTER-021",
+      "TG-CHAPTER-022",
+      "TG-CHAPTER-023",
+      "TG-CHAPTER-024"
+    ],
+    "maps": [
+      "TG-MAP-004"
+    ],
+    "npcs": [
+      "TG-NPC-003"
+    ],
+    "creatures": [
+      "TG-CREATURE-004"
+    ],
+    "recommendedNextTask": "Prototype Olympian trial objective modifiers and living statue enemy pressure.",
+    "threatSystems": [
+      "TG-HOLLOW-ENCOUNTER-SYSTEM"
+    ],
+    "missionChapterRegistry": [
+      "TG-F03-CH01",
+      "TG-F03-CH02",
+      "TG-F03-CH03",
+      "TG-F03-CH04",
+      "TG-F03-CH05"
+    ],
+    "normalMissionCount": 20,
+    "eliteMissionCount": 20
   }
 ]

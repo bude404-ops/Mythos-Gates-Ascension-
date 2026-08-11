@@ -1,0 +1,97 @@
+{
+  "id": "TG-F07-C01-M02",
+  "factionId": "TG-FACTION-007",
+  "campaignId": "TG-F07-CAMPAIGN-NORMAL",
+  "campaignType": "Normal",
+  "chapter": 1,
+  "chapterTitle": "The Bargain Opens",
+  "missionNumber": 2,
+  "missionInChapter": 2,
+  "title": "The Bargain Opens: First Pressure",
+  "description": "The Bargain Opens unfolds across black iron court with volcanic glass aisles and ember chain channels, pushing a 5-Titan Infernal Dominion squad to prove aggression, debuffs, pulls, execution, burn pressure, power through risk. without violating established Realm canon.",
+  "lore": "The Bargain Opens: First Pressure advances Cinders of Dominion: The Black Iron Court turns Gate wounds into bargains, proving ambition can defend a Realm only when power accepts consequence. It directly tests the faction tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.",
+  "recommendedPower": 559,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "obsidian executioner",
+    "chain pull controller",
+    "hellfire breaker",
+    "court debuffer",
+    "cinder sustain"
+  ],
+  "mapId": "TG-MAP-006",
+  "terrain": "black iron court with volcanic glass aisles and ember chain channels",
+  "objectives": {
+    "primary": "Hold two Infernal Dominion objective markers while the Cinders of Dominion conflict escalates.",
+    "optional": [
+      "Complete before turn 10",
+      "Keep at least four Titans standing",
+      "Trigger at least two Infernal Dominion faction mechanics"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-006"
+      ],
+      "entry": "emerge through infernal contracts pressure fractures"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-004"
+      ],
+      "entry": "reinforcement from the Gate wound flank",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": null,
+  "turnLimit": 12,
+  "specialRules": [
+    "Bargain Mark: accepting risk creates stronger rewards but harsher enemy turns.",
+    "Dominion Flame: decisive aggression turns enemy weakness into momentum.",
+    "5-Titan standard squad"
+  ],
+  "victoryConditions": [
+    "Hold two Infernal Dominion objective markers while the Cinders of Dominion conflict escalates."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Mid-tier Infernal Dominion relic material",
+      "Infernal Dominion faction shard cache",
+      "Infernal Dominion doctrine upgrade dust",
+      "TG-F07-C01-M02 codex shard"
+    ],
+    "replay": [
+      "Infernal Dominion relic material",
+      "Infernal Dominion doctrine upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F07-CODEX-01"
+  ],
+  "artPackageId": "TG-F07-ART-C01-M02",
+  "dialogueId": "TG-F07-DLG-C01-M02",
+  "audioRequirements": [
+    "Infernal Dominion realm ambience",
+    "mythic impact cue",
+    "faction doctrine resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+}

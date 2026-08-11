@@ -1,0 +1,97 @@
+{
+  "id": "TG-F05-C04-M13",
+  "factionId": "TG-FACTION-005",
+  "campaignId": "TG-F05-CAMPAIGN-NORMAL",
+  "campaignType": "Normal",
+  "chapter": 4,
+  "chapterTitle": "Moon-Stone Restoration",
+  "missionNumber": 13,
+  "missionInChapter": 1,
+  "title": "Moon-Stone Restoration: Threshold Sign",
+  "description": "Moon-Stone Restoration unfolds across moon-stone ring where living terrain changes after every objective, pushing a 5-Titan Tuatha squad to prove adaptation, healing, roots, terrain control, endurance through life systems. without violating established Realm canon.",
+  "lore": "Moon-Stone Restoration: Threshold Sign advances Roots Below the Gate: Avalora reveals that Gate wounds can be healed only if living terrain is treated as ally, witness, and battlefield at once. It directly tests the faction tension: Their memory is power, but it can become vengeance when old wounds refuse to compost.",
+  "recommendedPower": 773,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "living-wood defender",
+    "root controller",
+    "druidic healer",
+    "fae misdirection scout",
+    "moon-stone breaker"
+  ],
+  "mapId": "TG-MAP-005",
+  "terrain": "moon-stone ring where living terrain changes after every objective",
+  "objectives": {
+    "primary": "Secure the The Thorn-Memory Gate approach before Hollow pressure rewrites the field.",
+    "optional": [
+      "Complete before turn 13",
+      "Keep at least four Titans standing",
+      "Trigger at least two Tuatha faction mechanics"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-006"
+      ],
+      "entry": "emerge through ancient roots pressure fractures"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-001"
+      ],
+      "entry": "reinforcement from the Gate wound flank",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": null,
+  "turnLimit": 15,
+  "specialRules": [
+    "Root Memory: repeated routes awaken roots that protect allies or trap enemies.",
+    "Living Grove: terrain and sustain effects grow stronger over time.",
+    "5-Titan standard squad"
+  ],
+  "victoryConditions": [
+    "Secure the The Thorn-Memory Gate approach before Hollow pressure rewrites the field."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Mid-tier Tuatha relic material",
+      "Tuatha faction shard cache",
+      "Tuatha doctrine upgrade dust",
+      "TG-F05-C04-M13 codex shard"
+    ],
+    "replay": [
+      "Tuatha relic material",
+      "Tuatha doctrine upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F05-CODEX-04"
+  ],
+  "artPackageId": "TG-F05-ART-C04-M13",
+  "dialogueId": "TG-F05-DLG-C04-M13",
+  "audioRequirements": [
+    "Tuatha realm ambience",
+    "mythic impact cue",
+    "faction doctrine resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+}

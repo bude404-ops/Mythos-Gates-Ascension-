@@ -1,0 +1,102 @@
+{
+  "id": "TG-F06-C05-M20",
+  "factionId": "TG-FACTION-006",
+  "campaignId": "TG-F06-CAMPAIGN-NORMAL",
+  "campaignType": "Normal",
+  "chapter": 5,
+  "chapterTitle": "Choir Vault Ascension",
+  "missionNumber": 20,
+  "missionInChapter": 4,
+  "title": "Choir Vault Ascension: Ascension Seal",
+  "description": "Choir Vault Ascension unfolds across upper choir gate where song, law, and Hollow silence collide, pushing a 5-Titan Empyrean squad to prove protection, order-locks, shields, anti-chaos control, formationless aura play. without violating established Realm canon.",
+  "lore": "Choir Vault Ascension: Ascension Seal advances Empyrean Choir Vault: The Radiant Hierarchies ascend a broken heaven-engine where order can stabilize worlds or erase dissonant survivors. It directly tests the faction tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.",
+  "recommendedPower": 978,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "radiant protector",
+    "edict controller",
+    "resonance shieldbearer",
+    "halo artillery",
+    "choir sustain"
+  ],
+  "mapId": "TG-MAP-012",
+  "terrain": "upper choir gate where song, law, and Hollow silence collide",
+  "objectives": {
+    "primary": "Defeat the chapter threat and preserve the faction doctrine under pressure.",
+    "optional": [
+      "Complete before turn 14",
+      "Keep at least four Titans standing",
+      "Trigger at least two Empyrean faction mechanics"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-006"
+      ],
+      "entry": "emerge through angelic order pressure fractures"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-004"
+      ],
+      "entry": "reinforcement from the Gate wound flank",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": {
+    "enemyId": "TG-CREATURE-007",
+    "name": "Silent Choir Gate",
+    "phaseCount": 3,
+    "mechanic": "changes faction hazard timing and objective pressure"
+  },
+  "turnLimit": 16,
+  "specialRules": [
+    "Choir Lock: beacon timing shields formation if objectives resolve in order.",
+    "Radiant Edict: structured actions reduce chaos effects and protect allies.",
+    "5-Titan standard squad"
+  ],
+  "victoryConditions": [
+    "Defeat the chapter threat and preserve the faction doctrine under pressure."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Mid-tier Empyrean relic material",
+      "Empyrean faction shard cache",
+      "Empyrean doctrine upgrade dust",
+      "TG-F06-C05-M20 codex shard"
+    ],
+    "replay": [
+      "Empyrean relic material",
+      "Empyrean doctrine upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F06-CODEX-05"
+  ],
+  "artPackageId": "TG-F06-ART-C05-M20",
+  "dialogueId": "TG-F06-DLG-C05-M20",
+  "audioRequirements": [
+    "Empyrean realm ambience",
+    "mythic impact cue",
+    "faction doctrine resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+}

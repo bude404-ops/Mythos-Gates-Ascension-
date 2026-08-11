@@ -1,0 +1,97 @@
+{
+  "id": "TG-F06-C01-M01",
+  "factionId": "TG-FACTION-006",
+  "campaignId": "TG-F06-CAMPAIGN-NORMAL",
+  "campaignType": "Normal",
+  "chapter": 1,
+  "chapterTitle": "First Choir Lock",
+  "missionNumber": 1,
+  "missionInChapter": 1,
+  "title": "First Choir Lock: Threshold Sign",
+  "description": "First Choir Lock unfolds across choir vault ascent with bone-white arches, bells, and sanctified stairs, pushing a 5-Titan Empyrean squad to prove protection, order-locks, shields, anti-chaos control, formationless aura play. without violating established Realm canon.",
+  "lore": "First Choir Lock: Threshold Sign advances Empyrean Choir Vault: The Radiant Hierarchies ascend a broken heaven-engine where order can stabilize worlds or erase dissonant survivors. It directly tests the faction tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.",
+  "recommendedPower": 510,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "radiant protector",
+    "edict controller",
+    "resonance shieldbearer",
+    "halo artillery",
+    "choir sustain"
+  ],
+  "mapId": "TG-MAP-011",
+  "terrain": "choir vault ascent with bone-white arches, bells, and sanctified stairs",
+  "objectives": {
+    "primary": "Secure the The Choir-Axiom Gate approach before Hollow pressure rewrites the field.",
+    "optional": [
+      "Complete before turn 10",
+      "Keep at least four Titans standing",
+      "Trigger at least two Empyrean faction mechanics"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-006"
+      ],
+      "entry": "emerge through angelic order pressure fractures"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-007"
+      ],
+      "entry": "reinforcement from the Gate wound flank",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": null,
+  "turnLimit": 12,
+  "specialRules": [
+    "Choir Lock: beacon timing shields formation if objectives resolve in order.",
+    "Radiant Edict: structured actions reduce chaos effects and protect allies.",
+    "5-Titan standard squad"
+  ],
+  "victoryConditions": [
+    "Secure the The Choir-Axiom Gate approach before Hollow pressure rewrites the field."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Mid-tier Empyrean relic material",
+      "Empyrean faction shard cache",
+      "Empyrean doctrine upgrade dust",
+      "TG-F06-C01-M01 codex shard"
+    ],
+    "replay": [
+      "Empyrean relic material",
+      "Empyrean doctrine upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F06-CODEX-01"
+  ],
+  "artPackageId": "TG-F06-ART-C01-M01",
+  "dialogueId": "TG-F06-DLG-C01-M01",
+  "audioRequirements": [
+    "Empyrean realm ambience",
+    "mythic impact cue",
+    "faction doctrine resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+}

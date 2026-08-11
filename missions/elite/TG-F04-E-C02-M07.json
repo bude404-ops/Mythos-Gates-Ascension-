@@ -1,0 +1,106 @@
+{
+  "id": "TG-F04-E-C02-M07",
+  "factionId": "TG-FACTION-004",
+  "campaignId": "TG-F04-CAMPAIGN-ELITE",
+  "campaignType": "Elite",
+  "chapter": 2,
+  "chapterTitle": "Torii Lanes in Storm",
+  "missionNumber": 7,
+  "missionInChapter": 3,
+  "title": "Elite: Torii Lanes in Storm: Hidden Law",
+  "description": "Torii Lanes in Storm unfolds across storm-bent shrine path where paper seals redirect hostile wind, pushing a 5-Titan Kami squad to prove precise control, repositioning, evasion, spirit terrain, disciplined burst. without violating established Realm canon.",
+  "lore": "Torii Lanes in Storm: Hidden Law advances Kami Mirror Tempest: The Sacred Kingdoms test whether the Creator can cleanse Gate reflections without breaking shrine law or spirit contracts. It directly tests the faction tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.",
+  "recommendedPower": 879,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "masked defender",
+    "spirit repositioner",
+    "seal breaker",
+    "foxfire scout",
+    "cleanse support"
+  ],
+  "mapId": "TG-MAP-010",
+  "terrain": "storm-bent shrine path where paper seals redirect hostile wind",
+  "objectives": {
+    "primary": "Cleanse the Gate wound without breaking Kami realm law. Elite remix: complete it while the secondary hazard condition is active.",
+    "optional": [
+      "Win with no Titan defeated",
+      "Resolve at least three Kami doctrine actions",
+      "Hold every objective for one full enemy turn"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-006"
+      ],
+      "entry": "emerge through ritual precision pressure fractures"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-007"
+      ],
+      "entry": "reinforcement from the Gate wound flank",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": null,
+  "turnLimit": 14,
+  "specialRules": [
+    "Spirit Contract: objectives must be cleansed without desecrating shrine markers.",
+    "Sacred Balance: careful positioning unlocks spirit precision effects.",
+    "5-Titan standard squad",
+    "Elite Hazard: secondary realm pressure starts active.",
+    "Elite Command: enemy support persists until objective action breaks the source."
+  ],
+  "victoryConditions": [
+    "Cleanse the Gate wound without breaking Kami realm law. Elite remix: complete it while the secondary hazard condition is active."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "High-tier Kami relic material",
+      "Kami faction shard cache",
+      "Kami doctrine upgrade dust",
+      "TG-F04-E-C02-M07 codex shard"
+    ],
+    "replay": [
+      "Kami relic material",
+      "Kami doctrine upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F04-CODEX-02"
+  ],
+  "artPackageId": "TG-F04-ART-E-C02-M07",
+  "dialogueId": "TG-F04-ELITE-DLG-C02-M07",
+  "audioRequirements": [
+    "Kami realm ambience",
+    "mythic impact cue",
+    "faction doctrine resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly.",
+  "eliteRemixOf": "TG-F04-C02-M07",
+  "meaningfulDifferences": [
+    "Secondary realm hazard active from opening turn",
+    "Enemy support pressure persists longer",
+    "Objective timing is stricter",
+    "Boss or elite wave uses altered entry timing"
+  ]
+}

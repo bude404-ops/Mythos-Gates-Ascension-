@@ -1,0 +1,102 @@
+{
+  "id": "TG-F07-C03-M12",
+  "factionId": "TG-FACTION-007",
+  "campaignId": "TG-F07-CAMPAIGN-NORMAL",
+  "campaignType": "Normal",
+  "chapter": 3,
+  "chapterTitle": "Ash-Court Betrayal",
+  "missionNumber": 12,
+  "missionInChapter": 4,
+  "title": "Ash-Court Betrayal: Realm Answer",
+  "description": "Ash-Court Betrayal unfolds across ash-court gallery where bargain traps split risk from reward, pushing a 5-Titan Infernal Dominion squad to prove aggression, debuffs, pulls, execution, burn pressure, power through risk. without violating established Realm canon.",
+  "lore": "Ash-Court Betrayal: Realm Answer advances Cinders of Dominion: The Black Iron Court turns Gate wounds into bargains, proving ambition can defend a Realm only when power accepts consequence. It directly tests the faction tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.",
+  "recommendedPower": 811,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "obsidian executioner",
+    "chain pull controller",
+    "hellfire breaker",
+    "court debuffer",
+    "cinder sustain"
+  ],
+  "mapId": "TG-MAP-006",
+  "terrain": "ash-court gallery where bargain traps split risk from reward",
+  "objectives": {
+    "primary": "Defeat the chapter threat and preserve the faction doctrine under pressure.",
+    "optional": [
+      "Complete before turn 12",
+      "Keep at least four Titans standing",
+      "Trigger at least two Infernal Dominion faction mechanics"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-006"
+      ],
+      "entry": "emerge through infernal contracts pressure fractures"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-006"
+      ],
+      "entry": "reinforcement from the Gate wound flank",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": {
+    "enemyId": "TG-CREATURE-007",
+    "name": "Ash Court Usurper",
+    "phaseCount": 2,
+    "mechanic": "changes faction hazard timing and objective pressure"
+  },
+  "turnLimit": 14,
+  "specialRules": [
+    "Bargain Mark: accepting risk creates stronger rewards but harsher enemy turns.",
+    "Dominion Flame: decisive aggression turns enemy weakness into momentum.",
+    "5-Titan standard squad"
+  ],
+  "victoryConditions": [
+    "Defeat the chapter threat and preserve the faction doctrine under pressure."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Mid-tier Infernal Dominion relic material",
+      "Infernal Dominion faction shard cache",
+      "Infernal Dominion doctrine upgrade dust",
+      "TG-F07-C03-M12 codex shard"
+    ],
+    "replay": [
+      "Infernal Dominion relic material",
+      "Infernal Dominion doctrine upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F07-CODEX-03"
+  ],
+  "artPackageId": "TG-F07-ART-C03-M12",
+  "dialogueId": "TG-F07-DLG-C03-M12",
+  "audioRequirements": [
+    "Infernal Dominion realm ambience",
+    "mythic impact cue",
+    "faction doctrine resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+}

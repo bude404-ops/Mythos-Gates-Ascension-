@@ -1,0 +1,106 @@
+{
+  "id": "TG-F07-E-C05-M17",
+  "factionId": "TG-FACTION-007",
+  "campaignId": "TG-F07-CAMPAIGN-ELITE",
+  "campaignType": "Elite",
+  "chapter": 5,
+  "chapterTitle": "Crown of Cinders",
+  "missionNumber": 17,
+  "missionInChapter": 1,
+  "title": "Elite: Crown of Cinders: Threshold Sign",
+  "description": "Crown of Cinders unfolds across cinder crown gate under obsidian arches and royal flame, pushing a 5-Titan Infernal Dominion squad to prove aggression, debuffs, pulls, execution, burn pressure, power through risk. without violating established Realm canon.",
+  "lore": "Crown of Cinders: Threshold Sign advances Cinders of Dominion: The Black Iron Court turns Gate wounds into bargains, proving ambition can defend a Realm only when power accepts consequence. It directly tests the faction tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.",
+  "recommendedPower": 1199,
+  "teamSize": 5,
+  "encouragedTitanRoles": [
+    "obsidian executioner",
+    "chain pull controller",
+    "hellfire breaker",
+    "court debuffer",
+    "cinder sustain"
+  ],
+  "mapId": "TG-MAP-006",
+  "terrain": "cinder crown gate under obsidian arches and royal flame",
+  "objectives": {
+    "primary": "Secure the The Cinder-Wound Gate approach before Hollow pressure rewrites the field. Elite remix: complete it while the secondary hazard condition is active.",
+    "optional": [
+      "Win with no Titan defeated",
+      "Resolve at least three Infernal Dominion doctrine actions",
+      "Hold every objective for one full enemy turn"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-006"
+      ],
+      "entry": "emerge through infernal contracts pressure fractures"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "TG-CREATURE-001"
+      ],
+      "entry": "reinforcement from the Gate wound flank",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": null,
+  "turnLimit": 17,
+  "specialRules": [
+    "Bargain Mark: accepting risk creates stronger rewards but harsher enemy turns.",
+    "Dominion Flame: decisive aggression turns enemy weakness into momentum.",
+    "5-Titan standard squad",
+    "Elite Hazard: secondary realm pressure starts active.",
+    "Elite Command: enemy support persists until objective action breaks the source."
+  ],
+  "victoryConditions": [
+    "Secure the The Cinder-Wound Gate approach before Hollow pressure rewrites the field. Elite remix: complete it while the secondary hazard condition is active."
+  ],
+  "defeatConditions": [
+    "All Titans fall",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "High-tier Infernal Dominion relic material",
+      "Infernal Dominion faction shard cache",
+      "Infernal Dominion doctrine upgrade dust",
+      "TG-F07-E-C05-M17 codex shard"
+    ],
+    "replay": [
+      "Infernal Dominion relic material",
+      "Infernal Dominion doctrine upgrade dust",
+      "Gear component"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "TG-F07-CODEX-05"
+  ],
+  "artPackageId": "TG-F07-ART-E-C05-M17",
+  "dialogueId": "TG-F07-ELITE-DLG-C05-M17",
+  "audioRequirements": [
+    "Infernal Dominion realm ambience",
+    "mythic impact cue",
+    "faction doctrine resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly.",
+  "eliteRemixOf": "TG-F07-C05-M17",
+  "meaningfulDifferences": [
+    "Secondary realm hazard active from opening turn",
+    "Enemy support pressure persists longer",
+    "Objective timing is stricter",
+    "Boss or elite wave uses altered entry timing"
+  ]
+}
