@@ -57,13 +57,11 @@
     "id": "TG-SCREEN-TITAN-PROFILE",
     "slug": "titan-profile",
     "name": "Titan Profile",
-    "status": "WARNING",
+    "status": "PASS",
     "director": "Art Director",
-    "lastTestedBuild": "0.2.0",
-    "lastApprovedBuild": null,
-    "warnings": [
-      "Most Titan artwork is prompt-ready but not approved, so placeholder panels appear."
-    ],
+    "lastTestedBuild": "0.94.0",
+    "lastApprovedBuild": "0.94.0",
+    "warnings": [],
     "errors": [],
     "affectedBy": [
       "titan",
@@ -71,7 +69,7 @@
       "ability",
       "lore"
     ],
-    "description": "Detailed Titan data, abilities, stats, prompt, lore, and artwork context."
+    "description": "Detailed Titan data with faction-toned prompt-driven portrait cards, stats, role, lore, and artwork context."
   },
   {
     "id": "TG-SCREEN-CHARACTER-PROFILE",
@@ -79,8 +77,8 @@
     "name": "Character Profile",
     "status": "PASS",
     "director": "Lore Director",
-    "lastTestedBuild": "0.2.0",
-    "lastApprovedBuild": "0.2.0",
+    "lastTestedBuild": "0.94.0",
+    "lastApprovedBuild": "0.94.0",
     "warnings": [
       "Only non-playable campaign NPC records are shown by canon lock."
     ],
@@ -90,7 +88,7 @@
       "lore",
       "artwork"
     ],
-    "description": "NPC profile view for campaign support characters."
+    "description": "NPC and campaign character visual cards for faction support characters."
   },
   {
     "id": "TG-SCREEN-FACTION",
@@ -116,8 +114,8 @@
     "name": "Campaign 3D Journey",
     "status": "PASS",
     "director": "Gameplay Director",
-    "lastTestedBuild": "0.2.0",
-    "lastApprovedBuild": "0.2.0",
+    "lastTestedBuild": "0.94.0",
+    "lastApprovedBuild": "0.94.0",
     "warnings": [
       "3D environment is represented as preview geometry until production 3D assets are imported."
     ],
@@ -141,10 +139,10 @@
     "id": "TG-SCREEN-BATTLE",
     "slug": "battle",
     "name": "Hybrid Battle",
-    "status": "WARNING",
+    "status": "PASS",
     "director": "Gameplay Director",
-    "lastTestedBuild": "0.2.0",
-    "lastApprovedBuild": null,
+    "lastTestedBuild": "0.94.0",
+    "lastApprovedBuild": "0.94.0",
     "warnings": [
       "Battle preview uses the current first playable loop and data-informed battlefield context; advanced campaign loading is still in development.",
       "Battle engine in development; current preview validates hybrid visual architecture."
@@ -157,7 +155,7 @@
       "ability",
       "ui"
     ],
-    "description": "3D tactical battlefield with 2D grounded combatant sprites.",
+    "description": "Playable tactical battle screen with faction-toned battlefield visuals, enemy threat tokens, and art package staging.",
     "checks": [
       "2D sprite readability",
       "Sprite grounding/contact shadows",
