@@ -231,6 +231,7 @@ for (const task of data.tasks) {
 for (const file of ['index.html','game/index.html','game/tactical-map-prototype.html','titan-gates-dev-platform.html']) if(!exists(file)) fail(`Missing required HTML file ${file}`);
 const game = fs.readFileSync(path.join(root,'game/index.html'),'utf8');
 if(!game.includes('OPEN THE TITAN GATE') || !game.includes('function enemyTurn')) fail('Playable game integrity check failed');
+for (const token of ['Mission Objectives','Solar Seal','Hollow Anchor','River-Light Exit','scoreStars','callReinforcements']) if(!game.includes(token)) fail(`Playable objective expansion missing ${token}`);
 const tactical = fs.readFileSync(path.join(root,'game/tactical-map-prototype.html'),'utf8');
 for (const token of ['__TG_TACTICAL_MAP_READY__','const REALMS','const TITANS','function getMovableTiles','function enemyTurn','toggleCamera','realm-selector']) if(!tactical.includes(token)) fail(`Tactical prototype missing ${token}`);
 if(!data.visualScreens.some(s => s.id === 'TG-SCREEN-TACTICAL-MAP-PROTOTYPE' && s.slug === 'tactical-map-prototype')) fail('Visual QA missing tactical map prototype screen');
