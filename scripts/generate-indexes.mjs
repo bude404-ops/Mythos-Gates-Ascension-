@@ -1,9 +1,11 @@
 import fs from 'node:fs';
+import { createHash } from 'node:crypto';
 import path from 'node:path';
 
 const root = process.cwd();
 const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
 const write = (file, data) => fs.writeFileSync(path.join(root, file), JSON.stringify(data, null, 2) + '\n');
+const hashFile = file => createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex');
 const generated = new Date().toISOString().slice(0,10);
 const files = {
   'project.json': 'project',
@@ -64,6 +66,13 @@ for (const [file, key] of Object.entries(files)) {
   counts[key] = Array.isArray(value) ? value.length : 1;
 }
 const sourceFiles = Object.fromEntries(Object.keys(files).map(f => [f, `data/${f}`]));
+const sourceFileFingerprints = Object.fromEntries(Object.keys(files).map(f => {
+  const file = `data/${f}`;
+  const stat = fs.statSync(path.join(root, file));
+  return [f, { path: file, bytes: stat.size, sha256: hashFile(file) }];
+}));
+const hollowEncounterSystem = read('data/hollow-encounter-system.json');
+counts.hollowCreatures = (hollowEncounterSystem.roster || []).length;
 const artPrompts = read('data/art-prompts.json');
 const artPromptCategories = artPrompts.reduce((acc, prompt) => {
   const key = prompt.category || 'Uncategorized';
@@ -83,6 +92,6 @@ const artMapPrompts = artPrompts
   }));
 counts.artMapPrompts = artMapPrompts.length;
 counts.artCampaignPrompts = artPrompts.filter(prompt => prompt.category === 'Campaign').length;
-const index = { generated, counts, files: sourceFiles, artPromptCategories, artMapPrompts };
+const index = { generated, counts, files: sourceFiles, sourceFileFingerprints, artPromptCategories, artMapPrompts };
 write('data/index.json', index);
 console.log(JSON.stringify(index, null, 2));
