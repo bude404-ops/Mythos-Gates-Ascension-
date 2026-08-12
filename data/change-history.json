@@ -1,7 +1,25 @@
 {
   "id": "TG-CHANGE-HISTORY-001",
-  "updated": "2026-08-12T16:15:53Z",
+  "updated": "2026-08-12T16:26:20Z",
   "entries": [
+    {
+      "version": "1.1.0-solo-battle-core",
+      "date": "2026-08-12T16:26:20Z",
+      "title": "Solo Battle State and Reducer Core",
+      "summary": "Added canonical one-active-Titan battle state schema plus deterministic reducer core for Momentum, Divinity, stance shifts, enemy intents, reaction windows, executions, terrain ticks, objectives, and telemetry.",
+      "status": "LOCAL_READY_FOR_VALIDATION",
+      "artifacts": [
+        "TG-SOLO-BATTLE-STATE-SCHEMA-001",
+        "game/solo-battle-engine.mjs",
+        "scripts/test-solo-battle-reducers.mjs",
+        "TG-TASK-SOLO-001",
+        "TG-TASK-SOLO-002"
+      ],
+      "checks": [
+        "Solo reducer test pending",
+        "Precommit verification pending"
+      ]
+    },
     {
       "version": "1.0.1-pages-workflow-template",
       "date": "2026-08-12T16:15:53Z",

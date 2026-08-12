@@ -1,13 +1,13 @@
 {
   "id": "TG-GITHUB-SYNC-STATUS-001",
   "status": "CHANGES_PENDING",
-  "version": "1.0.1-pages-workflow-template",
+  "version": "1.1.0-solo-battle-core",
   "previousStableVersion": "0.8.1",
   "commit": "c4d3233a9e454541e2eb3155c7bfbacafb3fb481",
-  "commitMessage": "ci: stage pages deployment workflow template",
+  "commitMessage": "feat: add solo battle state reducers",
   "branch": "reaper-index-miniapp-update",
   "repository": "bude404-ops/Titans-Gate-",
-  "lastPushTime": "2026-08-12T16:15:53Z",
+  "lastPushTime": "2026-08-12T16:26:20Z",
   "build": "PASS",
   "github": "CHANGES_PENDING",
   "deployment": "WORKFLOW_TEMPLATE_READY_BLOCKED_BY_SCOPE",
@@ -17,15 +17,15 @@
   "manualPushAvailable": true,
   "safeAuthentication": "Server-side token, GitHub Actions secret, GitHub App, or local secure environment variable only. Browser token use is forbidden.",
   "recentChanges": [
-    "Prepared GitHub Pages deployment workflow template for Titan Gates static build.",
-    "Workflow template runs continuity audit, build, index freshness, visual smoke, and secret scan before deploy.",
-    "Marked visual automation task complete and Pages activation blocked on workflow-scoped GitHub credential.",
-    "No frontend or repository data contains credentials."
+    "Added canonical solo battle state schema for one-active-Titan combat.",
+    "Implemented deterministic solo battle reducer core for Momentum, Divinity, stances, reactions, execution, terrain, and objectives.",
+    "Added reducer test harness to precommit verification.",
+    "Marked solo battle state schema complete and reducer implementation active for deeper boss/mechanic passes."
   ],
   "liveStatusSource": "Public GitHub API; no credentials in browser.",
   "syncError": null,
   "lastPublishedAt": "2026-08-11T22:08:48Z",
-  "notes": "GitHub Pages workflow template is staged in the repo under dev/; activation requires a credential with workflow scope to create .github/workflows/pages.yml.",
+  "notes": "Solo battle state foundation and reducer tests are now part of validation; Pages workflow activation still requires workflow-scoped credential.",
   "commitShort": "c4d3233",
   "lastSyncedAt": "2026-08-12T02:12:07Z"
 }

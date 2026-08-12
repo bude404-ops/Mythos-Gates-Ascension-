@@ -71,6 +71,7 @@
     "tacticalBlueprintLayouts": 1,
     "tacticalBlueprintPlacements": 51,
     "titanEnemyBalancePass": 1,
+    "soloBattleStateSchema": 1,
     "hollowCreatures": 16,
     "artMapPrompts": 12,
     "artCampaignPrompts": 7
@@ -145,7 +146,8 @@
     "faction-mission-dialogue-completion-audit.json": "data/faction-mission-dialogue-completion-audit.json",
     "tactical-blueprint-layouts.json": "data/tactical-blueprint-layouts.json",
     "tactical-blueprint-placements.json": "data/tactical-blueprint-placements.json",
-    "titan-enemy-balance-pass.json": "data/titan-enemy-balance-pass.json"
+    "titan-enemy-balance-pass.json": "data/titan-enemy-balance-pass.json",
+    "solo-battle-state-schema.json": "data/solo-battle-state-schema.json"
   },
   "sourceFileFingerprints": {
     "project.json": {
@@ -195,8 +197,8 @@
     },
     "development-tasks.json": {
       "path": "data/development-tasks.json",
-      "bytes": 13563,
-      "sha256": "d2e9e19007e8fbbc00a4292cf5158c98d3829c47c6d4741f139367ae801c64f9"
+      "bytes": 13730,
+      "sha256": "71e750ecc5eae692742e380f223fb8fb83d4dbb159c3c6c58956c298da1f74dc"
     },
     "lore-index.json": {
       "path": "data/lore-index.json",
@@ -280,13 +282,13 @@
     },
     "github-sync-status.json": {
       "path": "data/github-sync-status.json",
-      "bytes": 1564,
-      "sha256": "2396384cd9e21ebfc4f0ef52ec81008d401058e3b6f3ea249deacd46c79e2f8c"
+      "bytes": 1549,
+      "sha256": "b1b1698ae7eb6cc2dee27ba1032ca9586d036f3ae80db2342fc8342f313a6f1f"
     },
     "change-history.json": {
       "path": "data/change-history.json",
-      "bytes": 19738,
-      "sha256": "d138d607651334a594f12390be3451fca0ca1a010eddd65703d58ea19f05a1e4"
+      "bytes": 20482,
+      "sha256": "36ebe2df22fb847500d59bddb895aa09be92ba604e8a8d668439abe1e6fb87cb"
     },
     "campaign-architecture.json": {
       "path": "data/campaign-architecture.json",
@@ -396,7 +398,7 @@
     "continuity-balance-audit.json": {
       "path": "data/continuity-balance-audit.json",
       "bytes": 2652,
-      "sha256": "a0c82e5180aa6f7da3b2d396bcd692851063e23b7235c1640964757a4385f52d"
+      "sha256": "d6b9dc72beed05e55a99497b30659329164467c50f30cce292fb4dd21f72f73e"
     },
     "endgame-dashboard.json": {
       "path": "data/endgame-dashboard.json",
@@ -497,6 +499,11 @@
       "path": "data/titan-enemy-balance-pass.json",
       "bytes": 50570,
       "sha256": "c99e389bcb17bcb945d60ff3ed6338027bb52455c235d21c25f3ad1c5ca7e540"
+    },
+    "solo-battle-state-schema.json": {
+      "path": "data/solo-battle-state-schema.json",
+      "bytes": 4607,
+      "sha256": "0c2e609daca39f72daac59eb147bbeaf9df70c3741fc78ec4427d388dbd45569"
     }
   },
   "artPromptCategories": {

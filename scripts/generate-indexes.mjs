@@ -77,7 +77,8 @@ const files = {
   'faction-mission-dialogue-completion-audit.json': 'factionMissionDialogueCompletionAudit',
   'tactical-blueprint-layouts.json': 'tacticalBlueprintLayouts',
   'tactical-blueprint-placements.json': 'tacticalBlueprintPlacements',
-  'titan-enemy-balance-pass.json': 'titanEnemyBalancePass'
+  'titan-enemy-balance-pass.json': 'titanEnemyBalancePass',
+  'solo-battle-state-schema.json': 'soloBattleStateSchema'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {

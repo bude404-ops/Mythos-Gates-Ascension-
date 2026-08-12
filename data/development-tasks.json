@@ -200,9 +200,9 @@
     "id": "TG-TASK-SOLO-001",
     "title": "Implement solo battle state schema",
     "owner": "Development Director",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "priority": "Critical",
-    "description": "Implement solo battle state schema",
+    "description": "Implemented canonical solo battle state schema plus deterministic engine scaffold for one-active-Titan combat.",
     "director": "Development Director",
     "dependencies": [
       "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001"
@@ -211,18 +211,18 @@
     "deliverable": "Implement solo battle state schema",
     "relatedEntity": "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
     "relatedFiles": [
-      "data/solo-combat-design-document.json",
-      "data/solo-titan-roster-redesign.json",
-      "data/solo-titan-migration-report.json"
+      "data/solo-battle-state-schema.json",
+      "game/solo-battle-engine.mjs",
+      "scripts/test-solo-battle-reducers.mjs"
     ]
   },
   {
     "id": "TG-TASK-SOLO-002",
     "title": "Build Momentum, Divinity, stance, reaction, and execution reducers",
     "owner": "Gameplay Director",
-    "status": "NEXT",
+    "status": "ACTIVE",
     "priority": "Critical",
-    "description": "Build Momentum, Divinity, stance, reaction, and execution reducers",
+    "description": "First Momentum, Divinity, stance, reaction, execution, enemy intent, terrain tick, and objective reducers are implemented and covered by deterministic tests; next pass should deepen per-Titan mechanics and boss phases.",
     "director": "Gameplay Director",
     "dependencies": [
       "TG-TASK-SOLO-001"
@@ -231,9 +231,8 @@
     "deliverable": "Build Momentum, Divinity, stance, reaction, and execution reducers",
     "relatedEntity": "TG-TASK-SOLO-001",
     "relatedFiles": [
-      "data/solo-combat-design-document.json",
-      "data/solo-titan-roster-redesign.json",
-      "data/solo-titan-migration-report.json"
+      "game/solo-battle-engine.mjs",
+      "scripts/test-solo-battle-reducers.mjs"
     ]
   },
   {

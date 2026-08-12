@@ -50,13 +50,15 @@ const data = {
   rewardSystem: read('data/reward-system.json'),
   campaignAudit: read('data/campaign-audit.json'),
   storylineArcs: read('data/storyline-arc-registry.json'),
-  campaignConsequences: read('data/campaign-consequence-registry.json')
+  campaignConsequences: read('data/campaign-consequence-registry.json'),
+  soloBattleStateSchema: read('data/solo-battle-state-schema.json')
 };
 
 for (const [name, arr] of Object.entries(data)) {
   if(Array.isArray(arr)) arr.forEach(item => register(name, item, `data/${name}.json`));
 }
 register('project', data.project, 'data/project.json');
+register('soloBattleStateSchema', data.soloBattleStateSchema, 'data/solo-battle-state-schema.json');
 
 const factionIds = new Set(data.factions.map(f => f.id));
 const titanIds = new Set(data.titans.map(t => t.id));
@@ -228,6 +230,17 @@ for (const task of data.tasks) {
   if(!['ACTIVE','NEXT','BLOCKED','COMPLETED'].includes(task.status)) fail(`${task.id}: invalid status ${task.status}`);
 }
 
+const soloSchema = data.soloBattleStateSchema;
+if(soloSchema.status !== 'IMPLEMENTED') fail('Solo battle state schema must be IMPLEMENTED');
+for (const field of ['stateShape','reducers','resourceRules','qualityGates','verticalSliceDefault']) if(!soloSchema[field]) fail(`Solo battle state schema missing ${field}`);
+if(soloSchema.verticalSliceDefault.starterTitanId !== 'TG-TITAN-001') fail('Solo battle starter Titan must remain canonical Aten-Ra');
+if(!titanIds.has(soloSchema.verticalSliceDefault.starterTitanId)) fail('Solo battle schema references invalid starter Titan');
+for (const enemyId of soloSchema.verticalSliceDefault.starterEnemies || []) if(!creatureIds.has(enemyId)) fail(`Solo battle schema invalid starter enemy ${enemyId}`);
+for (const reducer of ['createInitialSoloBattleState','applyTitanAction','revealEnemyIntents','resolveEnemyPhase','applyReaction','applyTerrainTick','evaluateObjectives']) if(!soloSchema.reducers.some(r => r.name === reducer)) fail(`Solo battle schema missing reducer ${reducer}`);
+const soloEngine = fs.readFileSync(path.join(root,'game/solo-battle-engine.mjs'),'utf8');
+for (const token of ['createInitialSoloBattleState','applyTitanAction','revealEnemyIntents','resolveEnemyPhase','applyReaction','applyTerrainTick','evaluateObjectives','runReducerScript']) if(!soloEngine.includes(`export function ${token}`)) fail(`Solo battle engine missing ${token}`);
+
+
 for (const file of ['index.html','game/index.html','game/tactical-map-prototype.html','titan-gates-dev-platform.html']) if(!exists(file)) fail(`Missing required HTML file ${file}`);
 const game = fs.readFileSync(path.join(root,'game/index.html'),'utf8');
 if(!game.includes('OPEN THE TITAN GATE') || !game.includes('function enemyTurn')) fail('Playable game integrity check failed');
@@ -238,4 +251,4 @@ if(!data.visualScreens.some(s => s.id === 'TG-SCREEN-TACTICAL-MAP-PROTOTYPE' && 
 const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','Game Preview','Visual QA','Tactical Map Prototype','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
 
-console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status}, null, 2));
+console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status, soloBattleSchema:data.soloBattleStateSchema.status}, null, 2));

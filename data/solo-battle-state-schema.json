@@ -1,0 +1,118 @@
+{
+  "id": "TG-SOLO-BATTLE-STATE-SCHEMA-001",
+  "version": "1.1.0",
+  "generated": "2026-08-12T16:25:37Z",
+  "status": "IMPLEMENTED",
+  "purpose": "Canonical runtime state contract for one-active-Titan battles: resources, stance, reactions, objectives, enemy intents, execution windows, terrain ticks, rewards, and telemetry.",
+  "canonSources": [
+    "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
+    "TG-BATTLEFIELD-VS-001",
+    "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001"
+  ],
+  "stateShape": {
+    "battleId": "stable unique encounter id",
+    "missionId": "mission or vertical-slice id",
+    "round": "integer starting at 1",
+    "phase": "PLAYER_PHASE | ENEMY_INTENT | ENEMY_PHASE | REACTION_WINDOW | TERRAIN_TICK | OBJECTIVE_EVALUATION | VICTORY | DEFEAT",
+    "seed": "deterministic integer seed for repeatable reducer tests",
+    "titan": "one active Titan object with stats, hp, position, stance, cooldowns, status, mastery, and resources",
+    "resources": {
+      "momentum": "0-100",
+      "divinity": "0-100",
+      "solarCharge": "Titan-specific 0-100 meter for Aten Ra starter slice"
+    },
+    "enemies": "array of enemy combatants with archetype, hp, position, intent, vulnerable flag, threatWeight, and status",
+    "terrain": "grid spaces with terrain type, hazard, illumination, cover, and objective tags",
+    "objectives": "array of objective state records with progress, requiredProgress, status, and reward hooks",
+    "reactionWindow": "null or prompt containing source enemy, type, cost, options, expiry, and consequence preview",
+    "eventLog": "append-only combat events used for QA and telemetry",
+    "telemetry": "counters for turns, damage, Momentum sources/spends, Divinity sources/spends, reactions, executions, objectives, hazards, and boss phase fails"
+  },
+  "reducers": [
+    {
+      "name": "createInitialSoloBattleState",
+      "responsibility": "Build deterministic vertical-slice state from Titan, enemy, terrain, and objective data."
+    },
+    {
+      "name": "applyTitanAction",
+      "responsibility": "Resolve basic attacks, techniques, signatures, stance shifts, focus, execution, and Divine Ascension."
+    },
+    {
+      "name": "revealEnemyIntents",
+      "responsibility": "Telegraph enemy plans before enemy resolution and expose counterplay."
+    },
+    {
+      "name": "resolveEnemyPhase",
+      "responsibility": "Resolve AI intents against one active Titan, opening reaction windows for major actions."
+    },
+    {
+      "name": "applyReaction",
+      "responsibility": "Spend Momentum/Divinity if needed and resolve dodge, parry, counter, interrupt, mythic override, or failure."
+    },
+    {
+      "name": "applyTerrainTick",
+      "responsibility": "Resolve hazards and terrain resource gains/losses after enemy phase."
+    },
+    {
+      "name": "evaluateObjectives",
+      "responsibility": "Advance seals, anchors, exits, victory, defeat, reward hooks, and telemetry."
+    }
+  ],
+  "resourceRules": {
+    "momentum": {
+      "min": 0,
+      "max": 100,
+      "gainCaps": {
+        "basicAttack": 16,
+        "reaction": 18,
+        "objective": 20,
+        "terrain": 12,
+        "execution": 22
+      },
+      "spendMustClamp": true,
+      "designIntent": "Reward aggressive intelligent play instead of passive waiting."
+    },
+    "divinity": {
+      "min": 0,
+      "max": 100,
+      "gainCaps": {
+        "signature": 22,
+        "bossPhaseBreak": 30,
+        "perfectReaction": 20,
+        "objective": 25
+      },
+      "ascensionCost": 100,
+      "designIntent": "Gate mythic power behind visible performance beats."
+    },
+    "solarCharge": {
+      "min": 0,
+      "max": 100,
+      "starterTitanOnly": true,
+      "spendOn": "Law of Holding and Ascendant reinforcement windows"
+    }
+  },
+  "qualityGates": [
+    "Only one player-controlled Titan may be active in battle state.",
+    "Every major enemy action must have a telegraph or logged exception.",
+    "Reaction windows are turn-based prompts, never real-time inputs.",
+    "Momentum and Divinity must clamp between 0 and 100.",
+    "Objectives can end the fight without enemy wipe.",
+    "Reducers must be deterministic under the same seed and action script."
+  ],
+  "verticalSliceDefault": {
+    "battleId": "TG-BATTLE-FIRST-GATE-001",
+    "missionId": "TG-BATTLEFIELD-VS-001",
+    "starterTitanId": "TG-TITAN-001",
+    "starterEnemies": [
+      "TG-CREATURE-001",
+      "TG-CREATURE-001",
+      "TG-CREATURE-002"
+    ],
+    "objectives": [
+      "stabilize_solar_seals",
+      "destroy_hollow_anchor",
+      "survive_gate_colossus_phase",
+      "reach_river_light_exit"
+    ]
+  }
+}
