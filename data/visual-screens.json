@@ -301,5 +301,23 @@
       "Enemy phase executes",
       "Mobile HUD and camera remain readable"
     ]
+  },
+  {
+    "id": "TG-VISUAL-BATTLEFIELD-ART-GOAL-ISOMETRIC-TEMPLE-BOARD",
+    "name": "Battlefield Art Goal: Layered Isometric Temple Board",
+    "type": "BattlefieldVisualDirection",
+    "status": "PASS",
+    "updatedAt": "2026-08-12T01:34:01Z",
+    "description": "Battlefields should read like tall mobile isometric tactical boards: player spawn at lower plaza, central terraces and waterways, upper ruins, corrupted portal summit, visible stairs, obelisks, tactical lanes, HUD portraits, minimap, and blueprint-readable structure.",
+    "requirements": [
+      "vertical multi-level temple board",
+      "portal summit and corrupted zones",
+      "lower player spawn plaza",
+      "central terrace with water cascades",
+      "upper ruins and tactical cover",
+      "mobile HUD and minimap framing",
+      "blueprint labels for structure, stairs, waterways, platform edges, corrupted zones"
+    ],
+    "referenceIntent": "Matches holder-provided battlefield art target without embedding external images."
   }
 ]
