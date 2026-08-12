@@ -68,6 +68,8 @@
     "battlefieldRuntimeArchitecture": 1,
     "battlefieldQualityGate": 1,
     "factionMissionDialogueCompletionAudit": 1,
+    "tacticalBlueprintLayouts": 1,
+    "tacticalBlueprintPlacements": 51,
     "hollowCreatures": 16,
     "artMapPrompts": 12,
     "artCampaignPrompts": 7
@@ -139,7 +141,9 @@
     "battlefield-vertical-slice.json": "data/battlefield-vertical-slice.json",
     "battlefield-runtime-architecture.json": "data/battlefield-runtime-architecture.json",
     "battlefield-quality-gate.json": "data/battlefield-quality-gate.json",
-    "faction-mission-dialogue-completion-audit.json": "data/faction-mission-dialogue-completion-audit.json"
+    "faction-mission-dialogue-completion-audit.json": "data/faction-mission-dialogue-completion-audit.json",
+    "tactical-blueprint-layouts.json": "data/tactical-blueprint-layouts.json",
+    "tactical-blueprint-placements.json": "data/tactical-blueprint-placements.json"
   },
   "sourceFileFingerprints": {
     "project.json": {
@@ -390,7 +394,7 @@
     "continuity-balance-audit.json": {
       "path": "data/continuity-balance-audit.json",
       "bytes": 2643,
-      "sha256": "e979241da86c428bb00718d65da253d27acd1ec036e43faea8bfa06b68477039"
+      "sha256": "621b89e0a7d2e26d42fb9797d306760172ab71c1ccc7d265924335ce82fb09e1"
     },
     "endgame-dashboard.json": {
       "path": "data/endgame-dashboard.json",
@@ -476,6 +480,16 @@
       "path": "data/faction-mission-dialogue-completion-audit.json",
       "bytes": 2386,
       "sha256": "360f8b90b761361ca74531cd6fb8d9c65eea6f20381855e0883fb460afce393c"
+    },
+    "tactical-blueprint-layouts.json": {
+      "path": "data/tactical-blueprint-layouts.json",
+      "bytes": 19144,
+      "sha256": "ae0e240aae0be6ce7bc636d29b26fb674828f0db947578459b04162fbf046f3c"
+    },
+    "tactical-blueprint-placements.json": {
+      "path": "data/tactical-blueprint-placements.json",
+      "bytes": 13717,
+      "sha256": "6e790f52f5c3af79b6e0ee1941cf9554cd7816cb5d150113d0afd1dc95244cce"
     }
   },
   "artPromptCategories": {

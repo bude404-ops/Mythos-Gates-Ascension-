@@ -1,0 +1,971 @@
+[
+  {
+    "id": "TG-BLUEPRINT-ISO-TEMPLE-BOARD-001",
+    "name": "Layered Isometric Temple Board Blueprint",
+    "version": "1.0.0",
+    "createdAt": "2026-08-12T01:39:12Z",
+    "source": "Derived from the holder battlefield blueprint direction for Titan Gates Dev Platform.",
+    "coordinateSystem": {
+      "origin": "top_left",
+      "x": "left_to_right",
+      "y": "top_to_bottom",
+      "z": "elevation_level",
+      "tileSizeMeters": 2.0,
+      "recommendedBlockoutUnit": "1 tile = 2m x 2m; 1 z level = 1m",
+      "levelHeightMeters": 1.0,
+      "pivot": "tile_center"
+    },
+    "dimensions": {
+      "width": 6,
+      "height": 6,
+      "levels": 5
+    },
+    "matrixLegend": {
+      "W": "structural wall / blocked",
+      "P": "portal summit / boss objective",
+      "S": "stairs / elevation transition",
+      "O": "obelisk hard cover",
+      "V": "void crack corruption",
+      "~": "water channel / slow",
+      "E": "enemy spawn",
+      "A": "player spawn",
+      "F": "stone floor"
+    },
+    "symbolMatrix": [
+      [
+        "W",
+        "W",
+        "W",
+        "P",
+        "P",
+        "V"
+      ],
+      [
+        "O",
+        "W",
+        "S",
+        "F",
+        "E",
+        "V"
+      ],
+      [
+        "W",
+        "F",
+        "F",
+        "S",
+        "E",
+        "V"
+      ],
+      [
+        "F",
+        "F",
+        "~",
+        "~",
+        "S",
+        "V"
+      ],
+      [
+        "O",
+        "W",
+        "~",
+        "~",
+        "E",
+        "S"
+      ],
+      [
+        "A",
+        "A",
+        "A",
+        "F",
+        "W",
+        "W"
+      ]
+    ],
+    "elevationMatrix": [
+      [
+        null,
+        null,
+        null,
+        4,
+        4,
+        3
+      ],
+      [
+        2,
+        null,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        null,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        null,
+        null
+      ]
+    ],
+    "tiles": [
+      [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 3,
+          "tile": "structural_wall",
+          "walkable": false,
+          "cover": 0,
+          "tags": [
+            "boundary",
+            "wall"
+          ],
+          "components": [
+            "wall_block"
+          ]
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "z": 3,
+          "tile": "structural_wall",
+          "walkable": false,
+          "cover": 0,
+          "tags": [
+            "boundary",
+            "wall"
+          ],
+          "components": [
+            "wall_block"
+          ]
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "z": 3,
+          "tile": "structural_wall",
+          "walkable": false,
+          "cover": 0,
+          "tags": [
+            "boundary",
+            "wall"
+          ],
+          "components": [
+            "wall_block"
+          ]
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "z": 4,
+          "tile": "portal_dais",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "portal_summit",
+            "corrupted_zone",
+            "high_ground",
+            "objective"
+          ],
+          "components": [
+            "portal_arch",
+            "void_rift",
+            "upper_dais"
+          ],
+          "spawn": "boss"
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "z": 4,
+          "tile": "portal_dais",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "portal_summit",
+            "corrupted_zone",
+            "high_ground",
+            "objective"
+          ],
+          "components": [
+            "portal_arch",
+            "void_rift",
+            "upper_dais"
+          ],
+          "spawn": "boss"
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "z": 4,
+          "tile": "void_crack",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "portal_summit",
+            "corrupted_zone",
+            "high_ground",
+            "objective",
+            "corrupted_zone",
+            "damage_over_time"
+          ],
+          "components": [
+            "portal_arch",
+            "void_rift",
+            "upper_dais",
+            "void_crack_vfx"
+          ],
+          "spawn": "boss",
+          "hazard": "corruption"
+        }
+      ],
+      [
+        {
+          "x": 0,
+          "y": 1,
+          "z": 2,
+          "tile": "obelisk_cover",
+          "walkable": true,
+          "cover": 2,
+          "tags": [
+            "pillar",
+            "hard_cover"
+          ],
+          "components": [
+            "obelisk_pillar"
+          ]
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "z": 2,
+          "tile": "structural_wall",
+          "walkable": false,
+          "cover": 0,
+          "tags": [
+            "boundary",
+            "wall"
+          ],
+          "components": [
+            "wall_block"
+          ]
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "z": 2,
+          "tile": "stairs",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "stairs",
+            "choke_point"
+          ],
+          "components": [
+            "stair_segment"
+          ],
+          "rampToZ": 1
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "z": 2,
+          "tile": "stone_floor",
+          "walkable": true,
+          "cover": 0,
+          "tags": [],
+          "components": []
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "z": 2,
+          "tile": "stone_floor",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "enemy_spawn"
+          ],
+          "components": [],
+          "spawn": "enemy"
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "z": 2,
+          "tile": "void_crack",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "corrupted_zone",
+            "damage_over_time"
+          ],
+          "components": [
+            "void_crack_vfx"
+          ],
+          "hazard": "corruption"
+        }
+      ],
+      [
+        {
+          "x": 0,
+          "y": 2,
+          "z": 2,
+          "tile": "structural_wall",
+          "walkable": false,
+          "cover": 0,
+          "tags": [
+            "boundary",
+            "wall"
+          ],
+          "components": [
+            "wall_block"
+          ]
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "z": 2,
+          "tile": "stone_floor",
+          "walkable": true,
+          "cover": 0,
+          "tags": [],
+          "components": []
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "z": 2,
+          "tile": "stone_floor",
+          "walkable": true,
+          "cover": 0,
+          "tags": [],
+          "components": []
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "z": 2,
+          "tile": "stairs",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "stairs",
+            "choke_point"
+          ],
+          "components": [
+            "stair_segment"
+          ],
+          "rampToZ": 1
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "z": 2,
+          "tile": "stone_floor",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "enemy_spawn"
+          ],
+          "components": [],
+          "spawn": "enemy"
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "z": 2,
+          "tile": "void_crack",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "corrupted_zone",
+            "damage_over_time"
+          ],
+          "components": [
+            "void_crack_vfx"
+          ],
+          "hazard": "corruption"
+        }
+      ],
+      [
+        {
+          "x": 0,
+          "y": 3,
+          "z": 1,
+          "tile": "stone_floor",
+          "walkable": true,
+          "cover": 0,
+          "tags": [],
+          "components": []
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "z": 1,
+          "tile": "stone_floor",
+          "walkable": true,
+          "cover": 0,
+          "tags": [],
+          "components": []
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "z": 1,
+          "tile": "water_channel",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "waterway",
+            "slow",
+            "low_ground"
+          ],
+          "components": [
+            "water_channel_straight"
+          ]
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "z": 1,
+          "tile": "water_channel",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "waterway",
+            "slow",
+            "low_ground"
+          ],
+          "components": [
+            "water_channel_straight"
+          ]
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "z": 1,
+          "tile": "stairs",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "stairs",
+            "choke_point"
+          ],
+          "components": [
+            "stair_segment"
+          ],
+          "rampToZ": 0
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "z": 1,
+          "tile": "void_crack",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "corrupted_zone",
+            "damage_over_time"
+          ],
+          "components": [
+            "void_crack_vfx"
+          ],
+          "hazard": "corruption"
+        }
+      ],
+      [
+        {
+          "x": 0,
+          "y": 4,
+          "z": 1,
+          "tile": "obelisk_cover",
+          "walkable": true,
+          "cover": 2,
+          "tags": [
+            "pillar",
+            "hard_cover"
+          ],
+          "components": [
+            "obelisk_pillar"
+          ]
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "z": 1,
+          "tile": "structural_wall",
+          "walkable": false,
+          "cover": 0,
+          "tags": [
+            "boundary",
+            "wall"
+          ],
+          "components": [
+            "wall_block"
+          ]
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "z": 1,
+          "tile": "water_channel",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "waterway",
+            "slow",
+            "low_ground"
+          ],
+          "components": [
+            "water_channel_straight"
+          ]
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "z": 1,
+          "tile": "water_channel",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "waterway",
+            "slow",
+            "low_ground"
+          ],
+          "components": [
+            "water_channel_straight"
+          ]
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "z": 1,
+          "tile": "stone_floor",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "enemy_spawn"
+          ],
+          "components": [],
+          "spawn": "enemy"
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "z": 1,
+          "tile": "stairs",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "stairs",
+            "choke_point"
+          ],
+          "components": [
+            "stair_segment"
+          ],
+          "rampToZ": 0
+        }
+      ],
+      [
+        {
+          "x": 0,
+          "y": 5,
+          "z": 0,
+          "tile": "stone_floor",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "player_spawn",
+            "lower_plaza"
+          ],
+          "components": [
+            "spawn_marker"
+          ],
+          "spawn": "player"
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "z": 0,
+          "tile": "stone_floor",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "player_spawn",
+            "lower_plaza"
+          ],
+          "components": [
+            "spawn_marker"
+          ],
+          "spawn": "player"
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "z": 0,
+          "tile": "stone_floor",
+          "walkable": true,
+          "cover": 0,
+          "tags": [
+            "player_spawn",
+            "lower_plaza"
+          ],
+          "components": [
+            "spawn_marker"
+          ],
+          "spawn": "player"
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "z": 0,
+          "tile": "stone_floor",
+          "walkable": true,
+          "cover": 0,
+          "tags": [],
+          "components": []
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "z": 0,
+          "tile": "structural_wall",
+          "walkable": false,
+          "cover": 0,
+          "tags": [
+            "boundary",
+            "wall"
+          ],
+          "components": [
+            "wall_block"
+          ]
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "z": 0,
+          "tile": "structural_wall",
+          "walkable": false,
+          "cover": 0,
+          "tags": [
+            "boundary",
+            "wall"
+          ],
+          "components": [
+            "wall_block"
+          ]
+        }
+      ]
+    ],
+    "zones": [
+      {
+        "id": "zone_player_spawn",
+        "name": "Lower Plaza Spawn",
+        "coords": [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "z": 0,
+        "purpose": "Player deployment and safe start."
+      },
+      {
+        "id": "zone_mid_terrace",
+        "name": "Central Terrace + Waterway",
+        "coords": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "z": 1,
+        "purpose": "Mid-map contention with slow water lane."
+      },
+      {
+        "id": "zone_upper_ruins",
+        "name": "Upper Ruins",
+        "coords": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "z": 2,
+        "purpose": "Choke-point fighting and enemy approach."
+      },
+      {
+        "id": "zone_portal_summit",
+        "name": "Corrupted Portal Summit",
+        "coords": [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "z": 4,
+        "purpose": "Boss/portal objective and high-ground finale."
+      }
+    ],
+    "chokePoints": [
+      {
+        "id": "choke_lower_stairs",
+        "coords": [
+          [
+            5,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "recommendedWidthTiles": 1,
+        "risk": "enemy overwatch from upper lane"
+      },
+      {
+        "id": "choke_mid_stairs",
+        "coords": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "recommendedWidthTiles": 1,
+        "risk": "corruption flank on east edge"
+      },
+      {
+        "id": "choke_portal_entry",
+        "coords": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "recommendedWidthTiles": 1,
+        "risk": "boss portal control"
+      }
+    ],
+    "modularAssets": [
+      {
+        "name": "bp_tile_stone_floor_2x2",
+        "category": "floor",
+        "dimensionsTiles": [
+          1,
+          1,
+          0.15
+        ],
+        "use": "default walkable tile"
+      },
+      {
+        "name": "bp_tile_portal_dais_2x2_z4",
+        "category": "platform",
+        "dimensionsTiles": [
+          1,
+          1,
+          0.35
+        ],
+        "use": "summit objective tile"
+      },
+      {
+        "name": "bp_wall_block_2x2x1",
+        "category": "wall",
+        "dimensionsTiles": [
+          1,
+          1,
+          1
+        ],
+        "use": "blocked boundary and ruin mass"
+      },
+      {
+        "name": "bp_stair_segment_2x2_rise1",
+        "category": "stair",
+        "dimensionsTiles": [
+          1,
+          1,
+          1
+        ],
+        "use": "connect adjacent z levels"
+      },
+      {
+        "name": "bp_obelisk_pillar_1x1x2",
+        "category": "cover",
+        "dimensionsTiles": [
+          0.5,
+          0.5,
+          2
+        ],
+        "use": "hard-cover pillar centered on tile"
+      },
+      {
+        "name": "bp_water_channel_2x2",
+        "category": "hazard",
+        "dimensionsTiles": [
+          1,
+          1,
+          0.05
+        ],
+        "use": "slow movement channel"
+      },
+      {
+        "name": "bp_void_crack_vfx_2x2",
+        "category": "hazard",
+        "dimensionsTiles": [
+          1,
+          1,
+          0.05
+        ],
+        "use": "corruption damage zone"
+      },
+      {
+        "name": "bp_portal_arch_2x1x4",
+        "category": "setpiece",
+        "dimensionsTiles": [
+          2,
+          0.5,
+          4
+        ],
+        "use": "visual gate at summit"
+      },
+      {
+        "name": "bp_spawn_marker_player",
+        "category": "marker",
+        "dimensionsTiles": [
+          0.5,
+          0.5,
+          0.02
+        ],
+        "use": "player deploy point"
+      },
+      {
+        "name": "bp_spawn_marker_enemy",
+        "category": "marker",
+        "dimensionsTiles": [
+          0.5,
+          0.5,
+          0.02
+        ],
+        "use": "enemy deploy point"
+      }
+    ],
+    "placementRules": {
+      "instantiateOrder": [
+        "floor/platform base",
+        "walls and blockers",
+        "stairs",
+        "cover pillars",
+        "hazards/VFX",
+        "spawn markers",
+        "portal setpiece"
+      ],
+      "snapToGrid": true,
+      "pivot": "tile_center",
+      "worldPositionFormula": "world_x = x * tileSize; world_y = z * levelHeight; world_z = y * tileSize"
+    },
+    "engineNotes": {
+      "axisMapping": "X = column, Y = elevation/up, Z = row/depth; exported placements use tile centers.",
+      "movement": "Walkable tiles are any tile where walkable=true; null elevations mark blocked mass. Stair tiles bridge adjacent z-levels."
+    }
+  }
+]

@@ -74,7 +74,9 @@ const files = {
   'battlefield-vertical-slice.json': 'battlefieldVerticalSlice',
   'battlefield-runtime-architecture.json': 'battlefieldRuntimeArchitecture',
   'battlefield-quality-gate.json': 'battlefieldQualityGate',
-  'faction-mission-dialogue-completion-audit.json': 'factionMissionDialogueCompletionAudit'
+  'faction-mission-dialogue-completion-audit.json': 'factionMissionDialogueCompletionAudit',
+  'tactical-blueprint-layouts.json': 'tacticalBlueprintLayouts',
+  'tactical-blueprint-placements.json': 'tacticalBlueprintPlacements'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {
