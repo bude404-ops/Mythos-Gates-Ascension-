@@ -1,7 +1,22 @@
 {
   "id": "TG-CHANGE-HISTORY-001",
-  "updated": "2026-08-12T01:34:30Z",
+  "updated": "2026-08-12T16:15:53Z",
   "entries": [
+    {
+      "version": "1.0.1-pages-workflow-template",
+      "date": "2026-08-12T16:15:53Z",
+      "title": "GitHub Pages Workflow Template Staged",
+      "summary": "Prepared a GitHub Actions Pages workflow template that validates, builds, checks index freshness, runs visual smoke, scans secrets, packages dist, and deploys Titan Gates static output; activation is blocked until a workflow-scoped GitHub credential is available.",
+      "status": "READY_BLOCKED_BY_WORKFLOW_SCOPE",
+      "artifacts": [
+        "dev/github-pages-workflow-template.yml",
+        "TG-DEV-005",
+        "TG-DEV-011"
+      ],
+      "checks": [
+        "Precommit verification pending"
+      ]
+    },
     {
       "version": "1.0.0-battlefield-vs",
       "date": "2026-08-11T21:06:00Z",
