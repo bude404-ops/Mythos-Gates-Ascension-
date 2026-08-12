@@ -51,7 +51,8 @@ const data = {
   campaignAudit: read('data/campaign-audit.json'),
   storylineArcs: read('data/storyline-arc-registry.json'),
   campaignConsequences: read('data/campaign-consequence-registry.json'),
-  soloBattleStateSchema: read('data/solo-battle-state-schema.json')
+  soloBattleStateSchema: read('data/solo-battle-state-schema.json'),
+  soloVerticalSlice: read('data/solo-vertical-slice.json')
 };
 
 for (const [name, arr] of Object.entries(data)) {
@@ -59,6 +60,7 @@ for (const [name, arr] of Object.entries(data)) {
 }
 register('project', data.project, 'data/project.json');
 register('soloBattleStateSchema', data.soloBattleStateSchema, 'data/solo-battle-state-schema.json');
+register('soloVerticalSlice', data.soloVerticalSlice, 'data/solo-vertical-slice.json');
 
 const factionIds = new Set(data.factions.map(f => f.id));
 const titanIds = new Set(data.titans.map(t => t.id));
@@ -237,6 +239,20 @@ if(soloSchema.verticalSliceDefault.starterTitanId !== 'TG-TITAN-001') fail('Solo
 if(!titanIds.has(soloSchema.verticalSliceDefault.starterTitanId)) fail('Solo battle schema references invalid starter Titan');
 for (const enemyId of soloSchema.verticalSliceDefault.starterEnemies || []) if(!creatureIds.has(enemyId)) fail(`Solo battle schema invalid starter enemy ${enemyId}`);
 for (const reducer of ['createInitialSoloBattleState','applyTitanAction','revealEnemyIntents','resolveEnemyPhase','applyReaction','applyTerrainTick','evaluateObjectives']) if(!soloSchema.reducers.some(r => r.name === reducer)) fail(`Solo battle schema missing reducer ${reducer}`);
+const soloSlice = data.soloVerticalSlice;
+if(soloSlice.status !== 'IMPLEMENTED') fail('Solo vertical slice must be IMPLEMENTED');
+if(soloSlice.faction?.id !== 'TG-FACTION-001') fail('Solo vertical slice must stay anchored to Aten Ra');
+if(soloSlice.starterTitan?.id !== soloSchema.verticalSliceDefault.starterTitanId) fail('Solo vertical slice starter Titan mismatch');
+if(!Array.isArray(soloSlice.missionTypes) || soloSlice.missionTypes.length !== 5) fail('Solo vertical slice must contain exactly five pre-boss mission types');
+if(!soloSlice.bossEncounter || !Array.isArray(soloSlice.bossEncounter.phasePlan) || soloSlice.bossEncounter.phasePlan.length !== 5) fail('Solo vertical slice boss must contain five phases');
+for (const mission of soloSlice.missionTypes) {
+  for (const enemyId of mission.enemyIds || []) if(!creatureIds.has(enemyId)) fail(`${mission.id}: invalid solo slice enemy ${enemyId}`);
+  for (const reducer of mission.requiredReducers || []) if(!soloSchema.reducers.some(r => r.name === reducer)) fail(`${mission.id}: invalid solo slice reducer ${reducer}`);
+  for (const objectiveId of mission.objectiveIds || []) if(!(soloSlice.objectiveStateDefaults || []).some(o => o.id === objectiveId)) fail(`${mission.id}: missing solo slice objective default ${objectiveId}`);
+}
+if(!creatureIds.has(soloSlice.bossEncounter.enemyId)) fail('Solo vertical slice boss references invalid creature');
+for (const objectiveId of soloSlice.bossEncounter.objectiveIds || []) if(!(soloSlice.objectiveStateDefaults || []).some(o => o.id === objectiveId)) fail(`Solo vertical slice boss objective missing ${objectiveId}`);
+for (const gate of ['Exactly one active player Titan','Exactly five pre-boss mission types','Exactly one boss encounter with five readable phases']) if(!(soloSlice.qualityGates || []).includes(gate)) fail(`Solo vertical slice missing quality gate ${gate}`);
 const soloEngine = fs.readFileSync(path.join(root,'game/solo-battle-engine.mjs'),'utf8');
 for (const token of ['createInitialSoloBattleState','applyTitanAction','revealEnemyIntents','resolveEnemyPhase','applyReaction','applyTerrainTick','evaluateObjectives','runReducerScript']) if(!soloEngine.includes(`export function ${token}`)) fail(`Solo battle engine missing ${token}`);
 
@@ -251,4 +267,4 @@ if(!data.visualScreens.some(s => s.id === 'TG-SCREEN-TACTICAL-MAP-PROTOTYPE' && 
 const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','Game Preview','Visual QA','Tactical Map Prototype','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
 
-console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status, soloBattleSchema:data.soloBattleStateSchema.status}, null, 2));
+console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status, soloBattleSchema:data.soloBattleStateSchema.status, soloVerticalSlice:data.soloVerticalSlice.status}, null, 2));

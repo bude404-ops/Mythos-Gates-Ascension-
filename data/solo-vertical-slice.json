@@ -1,0 +1,391 @@
+{
+  "id": "TG-SOLO-VERTICAL-SLICE-ATEN-RA-001",
+  "version": "1.0.0",
+  "generated": "2026-08-12T16:44:00Z",
+  "status": "IMPLEMENTED",
+  "title": "Aten Ra Solo Vertical Slice \u2014 The First Reopening Gate",
+  "purpose": "Production-ready one-faction solo combat slice that converts the solo battle reducers into five mission types and one multi-phase boss package.",
+  "canonSources": [
+    "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
+    "TG-SOLO-BATTLE-STATE-SCHEMA-001",
+    "TG-BATTLEFIELD-VS-001",
+    "TG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001"
+  ],
+  "faction": {
+    "id": "TG-FACTION-001",
+    "name": "Aten Ra",
+    "realm": "The Solar Dominion of Khepra"
+  },
+  "starterTitan": {
+    "id": "TG-TITAN-001",
+    "name": "Aten-Ra, Solar Law Monolith",
+    "role": "Defender",
+    "combatPromise": "Hold the Gate alone through law, positioning, Momentum, Divinity, and solar terrain mastery."
+  },
+  "battlefield": {
+    "id": "TG-BATTLEFIELD-VS-001",
+    "grid": {
+      "width": 7,
+      "height": 7
+    },
+    "routePattern": [
+      "Broken Threshold tutorial lane",
+      "Sun-Cracked Causeway pressure lane",
+      "Fallen Pylon Choke destruction lane",
+      "Solar Seal Court objective lane",
+      "Gate Mouth boss arena"
+    ],
+    "terrainPackage": [
+      {
+        "id": "sunlit_stone",
+        "spaces": [
+          "B1",
+          "C1",
+          "B2",
+          "C2"
+        ],
+        "effect": "Aten Ra gains Momentum when entering or holding illuminated spaces."
+      },
+      {
+        "id": "judgment_ray",
+        "spaces": [
+          "E3",
+          "F3",
+          "E4",
+          "F4"
+        ],
+        "effect": "Telegraphed solar lane: punishes careless stance choices; perfect reaction converts pressure into Divinity."
+      },
+      {
+        "id": "fractured_cover",
+        "spaces": [
+          "B3",
+          "C3",
+          "D3"
+        ],
+        "effect": "Cover/chokepoint object that can be destroyed by Titan Strike to open a faster route and spawn one reinforcement."
+      },
+      {
+        "id": "solar_seal_court",
+        "spaces": [
+          "B4",
+          "C4",
+          "D4"
+        ],
+        "effect": "Objective court for stabilizing three seals before Gate Pressure overwhelms the arena."
+      },
+      {
+        "id": "gate_mouth",
+        "spaces": [
+          "D5",
+          "E5",
+          "F5",
+          "G5",
+          "D6",
+          "E6",
+          "F6",
+          "G6",
+          "D7",
+          "E7",
+          "F7",
+          "G7"
+        ],
+        "effect": "Boss arena with escalating Gate Pressure and phase-based reaction checks."
+      }
+    ]
+  },
+  "missionTypes": [
+    {
+      "id": "TG-SOLO-MISSION-MOVE-001",
+      "type": "Movement Tutorial",
+      "title": "Cross the Broken Threshold",
+      "objectiveIds": [
+        "reach_sunlit_court"
+      ],
+      "primaryObjective": "Move from Broken Threshold into illuminated terrain without being surrounded.",
+      "teaches": [
+        "tap movement",
+        "safe lane reading",
+        "Momentum from solar positioning"
+      ],
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-001"
+      ],
+      "requiredReducers": [
+        "createInitialSoloBattleState",
+        "applyTitanAction",
+        "revealEnemyIntents",
+        "resolveEnemyPhase",
+        "applyTerrainTick",
+        "evaluateObjectives"
+      ],
+      "successMetric": {
+        "maxRounds": 3,
+        "minimumMomentum": 8
+      }
+    },
+    {
+      "id": "TG-SOLO-MISSION-REACTION-001",
+      "type": "Reaction Trial",
+      "title": "Parry the Gateborn Rush",
+      "objectiveIds": [
+        "survive_telegraph_chain"
+      ],
+      "primaryObjective": "Resolve or intentionally decline telegraphed attacks and preserve enough Momentum for the next phase.",
+      "teaches": [
+        "enemy intent reveal",
+        "reaction windows",
+        "Dodge/Parry/Counter Charge choice clarity"
+      ],
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-002"
+      ],
+      "requiredReducers": [
+        "revealEnemyIntents",
+        "resolveEnemyPhase",
+        "applyReaction"
+      ],
+      "successMetric": {
+        "minimumReactionsResolved": 1,
+        "maximumDamageTaken": 18
+      }
+    },
+    {
+      "id": "TG-SOLO-MISSION-TERRAIN-001",
+      "type": "Terrain Weapon Trial",
+      "title": "Turn Judgment Rays Into Law",
+      "objectiveIds": [
+        "bait_enemy_into_judgment_ray",
+        "stabilize_solar_seal_a"
+      ],
+      "primaryObjective": "Use solar lanes, stance choice, and terrain ticks to gain resources while controlling hazard risk.",
+      "teaches": [
+        "terrain tick",
+        "hazard risk",
+        "Aten Ra solarCharge meter"
+      ],
+      "enemyIds": [
+        "TG-CREATURE-006",
+        "TG-CREATURE-007"
+      ],
+      "requiredReducers": [
+        "applyTerrainTick",
+        "applyTitanAction",
+        "evaluateObjectives"
+      ],
+      "successMetric": {
+        "minimumSolarCharge": 8,
+        "hazardDamageCap": 8
+      }
+    },
+    {
+      "id": "TG-SOLO-MISSION-OBJECTIVE-001",
+      "type": "Objective Control",
+      "title": "Stabilize the Solar Seal Court",
+      "objectiveIds": [
+        "stabilize_solar_seal_a",
+        "stabilize_solar_seal_b",
+        "stabilize_solar_seal_c"
+      ],
+      "primaryObjective": "Complete non-wipe objectives while enemies deny space and threaten seal progress.",
+      "teaches": [
+        "objective progress",
+        "victory without enemy wipe",
+        "Divinity from objective completion"
+      ],
+      "enemyIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-006",
+        "TG-CREATURE-007"
+      ],
+      "requiredReducers": [
+        "evaluateObjectives",
+        "applyTitanAction",
+        "revealEnemyIntents"
+      ],
+      "successMetric": {
+        "requiredCompletedObjectives": 3,
+        "minimumDivinity": 20
+      }
+    },
+    {
+      "id": "TG-SOLO-MISSION-EXECUTION-001",
+      "type": "Execution Window",
+      "title": "Break the Anchor Scar",
+      "objectiveIds": [
+        "destroy_hollow_anchor"
+      ],
+      "primaryObjective": "Create vulnerability, spend Momentum on execution, and convert the elite kill into a boss-ready Divinity spike.",
+      "teaches": [
+        "vulnerability threshold",
+        "Momentum spend discipline",
+        "execution payoff"
+      ],
+      "enemyIds": [
+        "TG-CREATURE-004",
+        "TG-CREATURE-001",
+        "TG-CREATURE-001"
+      ],
+      "requiredReducers": [
+        "applyTitanAction",
+        "applyReaction",
+        "evaluateObjectives"
+      ],
+      "successMetric": {
+        "minimumExecutions": 1,
+        "minimumDivinity": 18
+      }
+    }
+  ],
+  "bossEncounter": {
+    "id": "TG-BOSS-FIRST-GATE-COLOSSUS",
+    "name": "The First Gate Colossus",
+    "enemyId": "TG-CREATURE-002",
+    "missionType": "Boss",
+    "title": "Seal the First Reopening Gate",
+    "entryRequirement": "Complete the five solo mission type lessons or replay them as one continuous gauntlet.",
+    "objectiveIds": [
+      "survive_gate_colossus_phase",
+      "reach_river_light_exit"
+    ],
+    "phasePlan": [
+      {
+        "phase": 1,
+        "name": "Awakening at the Gate Mouth",
+        "hpThreshold": "100-76%",
+        "mechanic": "Colossus sweeps and summons Hollow Wretches; teaches boss scale and clear telegraphs.",
+        "reactionType": "PARRY",
+        "telemetryKey": "boss_phase_1_sweep"
+      },
+      {
+        "phase": 2,
+        "name": "Pressure Lanes",
+        "hpThreshold": "75-51%",
+        "mechanic": "Gate Pressure inverts Judgment Rays unless at least two Solar Seals are stable.",
+        "reactionType": "DODGE",
+        "telemetryKey": "boss_phase_2_pressure_lane"
+      },
+      {
+        "phase": 3,
+        "name": "Pylon Shatter",
+        "hpThreshold": "50-26%",
+        "mechanic": "Boss destroys cover and changes route topology; player can counter-charge through opened lane.",
+        "reactionType": "COUNTER_CHARGE",
+        "telemetryKey": "boss_phase_3_pylon_shatter"
+      },
+      {
+        "phase": 4,
+        "name": "Colossal Verdict",
+        "hpThreshold": "25-1%",
+        "mechanic": "Large telegraphed strike tests Momentum conservation; success opens final vulnerability.",
+        "reactionType": "BRACE",
+        "telemetryKey": "boss_phase_4_verdict"
+      },
+      {
+        "phase": 5,
+        "name": "Solar Execution",
+        "hpThreshold": "vulnerable",
+        "mechanic": "If Divinity timing is clean, Aten-Ra executes the Colossus and seals the Gate.",
+        "reactionType": "EXECUTE",
+        "telemetryKey": "boss_phase_5_solar_execution"
+      }
+    ],
+    "victoryConditions": [
+      "Gate Colossus defeated or sealed through objective completion",
+      "At least one River-Light Exit route remains open",
+      "Titan HP above 0"
+    ],
+    "defeatConditions": [
+      "Aten-Ra falls",
+      "Gate Pressure reaches 100 before seal stabilization",
+      "all River-Light Exit routes collapse"
+    ],
+    "rewards": [
+      "Titan XP",
+      "Aten Ra faction mastery",
+      "Aten-Ra mastery XP",
+      "Solar gear material",
+      "Codex: First Reopening Gate",
+      "optional cosmetic banner fragment"
+    ]
+  },
+  "objectiveStateDefaults": [
+    {
+      "id": "reach_sunlit_court",
+      "progress": 0,
+      "requiredProgress": 1,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "survive_telegraph_chain",
+      "progress": 0,
+      "requiredProgress": 2,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "bait_enemy_into_judgment_ray",
+      "progress": 0,
+      "requiredProgress": 1,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "stabilize_solar_seal_a",
+      "progress": 0,
+      "requiredProgress": 1,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "stabilize_solar_seal_b",
+      "progress": 0,
+      "requiredProgress": 1,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "stabilize_solar_seal_c",
+      "progress": 0,
+      "requiredProgress": 1,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "destroy_hollow_anchor",
+      "progress": 0,
+      "requiredProgress": 1,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "survive_gate_colossus_phase",
+      "progress": 0,
+      "requiredProgress": 5,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "reach_river_light_exit",
+      "progress": 0,
+      "requiredProgress": 1,
+      "status": "ACTIVE"
+    }
+  ],
+  "telemetryContract": [
+    "missionTypeStarted",
+    "missionTypeCompleted",
+    "roundsToObjective",
+    "momentumPeak",
+    "divinityPeak",
+    "reactionSuccessRate",
+    "executionUsed",
+    "hazardDamageTaken",
+    "bossPhaseReached",
+    "gatePressureAtVictory"
+  ],
+  "qualityGates": [
+    "Exactly one active player Titan",
+    "Exactly five pre-boss mission types",
+    "Exactly one boss encounter with five readable phases",
+    "Every mission references valid creature ids",
+    "Every mission maps to implemented reducer names",
+    "Objectives can produce victory without full enemy wipe",
+    "Telemetry can explain failure points for tuning"
+  ]
+}

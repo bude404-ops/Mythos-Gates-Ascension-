@@ -1,7 +1,23 @@
 {
   "id": "TG-CHANGE-HISTORY-001",
-  "updated": "2026-08-12T16:26:20Z",
+  "updated": "2026-08-12T16:44:00Z",
   "entries": [
+    {
+      "version": "1.2.0-solo-vertical-slice",
+      "date": "2026-08-12T16:44:00Z",
+      "title": "Aten Ra Solo Vertical Slice Package",
+      "summary": "Added a production one-faction solo combat vertical slice with five pre-boss mission types, one five-phase Gate Colossus boss, objective defaults, telemetry contract, quality gates, and validation coverage.",
+      "status": "LOCAL_READY_FOR_VALIDATION",
+      "artifacts": [
+        "TG-SOLO-VERTICAL-SLICE-ATEN-RA-001",
+        "TG-TASK-SOLO-003",
+        "scripts/test-solo-vertical-slice.mjs"
+      ],
+      "checks": [
+        "Solo vertical slice test pending",
+        "Precommit verification pending"
+      ]
+    },
     {
       "version": "1.1.0-solo-battle-core",
       "date": "2026-08-12T16:26:20Z",

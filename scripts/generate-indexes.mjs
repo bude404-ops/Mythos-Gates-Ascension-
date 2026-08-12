@@ -78,7 +78,8 @@ const files = {
   'tactical-blueprint-layouts.json': 'tacticalBlueprintLayouts',
   'tactical-blueprint-placements.json': 'tacticalBlueprintPlacements',
   'titan-enemy-balance-pass.json': 'titanEnemyBalancePass',
-  'solo-battle-state-schema.json': 'soloBattleStateSchema'
+  'solo-battle-state-schema.json': 'soloBattleStateSchema',
+  'solo-vertical-slice.json': 'soloVerticalSlice'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {

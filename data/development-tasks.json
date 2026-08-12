@@ -220,9 +220,9 @@
     "id": "TG-TASK-SOLO-002",
     "title": "Build Momentum, Divinity, stance, reaction, and execution reducers",
     "owner": "Gameplay Director",
-    "status": "ACTIVE",
+    "status": "COMPLETED",
     "priority": "Critical",
-    "description": "First Momentum, Divinity, stance, reaction, execution, enemy intent, terrain tick, and objective reducers are implemented and covered by deterministic tests; next pass should deepen per-Titan mechanics and boss phases.",
+    "description": "Momentum, Divinity, stance, reaction, execution, enemy intent, terrain tick, and objective reducers are implemented and covered by deterministic tests.",
     "director": "Gameplay Director",
     "dependencies": [
       "TG-TASK-SOLO-001"
@@ -239,9 +239,9 @@
     "id": "TG-TASK-SOLO-003",
     "title": "Create one-faction solo vertical slice with five mission types and one boss",
     "owner": "Gameplay Director",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "priority": "High",
-    "description": "Create one-faction solo vertical slice with five mission types and one boss",
+    "description": "Created production Aten Ra solo vertical slice package with five mission types, one five-phase boss encounter, objectives, telemetry contract, quality gates, and validator coverage.",
     "director": "Gameplay Director",
     "dependencies": [
       "TG-TASK-SOLO-002"
@@ -251,8 +251,10 @@
     "relatedEntity": "TG-TASK-SOLO-002",
     "relatedFiles": [
       "data/solo-combat-design-document.json",
+      "data/solo-titan-migration-report.json",
       "data/solo-titan-roster-redesign.json",
-      "data/solo-titan-migration-report.json"
+      "data/solo-vertical-slice.json",
+      "scripts/test-solo-vertical-slice.mjs"
     ]
   },
   {
