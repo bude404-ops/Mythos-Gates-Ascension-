@@ -8,7 +8,12 @@
     "Ascension performance",
     "Raid performance",
     "Trial performance",
-    "Mission performance"
+    "Mission performance",
+    "Titan combat power spread",
+    "Enemy threat weight",
+    "Gear effect pick rate",
+    "Ability cooldown use",
+    "Level-band clear rate"
   ],
   "flags": [
     "Overpowered Titans",
@@ -16,7 +21,19 @@
     "Dominant squads",
     "Weak factions",
     "Unused abilities",
-    "Broken synergies"
+    "Broken synergies",
+    "Titan gear loop exploit",
+    "Enemy hp sponge risk",
+    "Elite remix overtuning",
+    "Ascension recovery bypass"
   ],
-  "policy": "Gameplay Director reviews balance problems; no automatic balance changes without validation."
+  "policy": "Gameplay Director reviews balance problems; no automatic balance changes without validation.",
+  "version": "1.0.0",
+  "latestBalancePassId": "TG-TITAN-ENEMY-BALANCE-PASS-001",
+  "manualReviewThresholds": {
+    "titanWinRateWatch": "<45% or >57% over comparable mission bands",
+    "gearUsageWatch": ">40% pick rate with >3% win lift",
+    "enemyThreatWatch": "Mission failure spike above +12% after elite remix",
+    "combatPowerSpreadWatch": "Role average spread above 18 effective power"
+  }
 }

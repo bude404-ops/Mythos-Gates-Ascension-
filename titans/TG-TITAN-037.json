@@ -7,24 +7,32 @@
   "rarity": "Legendary",
   "role": "Defender",
   "abilities": [
-    "Dagoran Strike",
-    "Tuatha Signature Rite",
-    "Gate Objective Command"
+    "Dagoran Anchor Strike",
+    "Root Bastion Protocol",
+    "Dagoran Root-Crown: Law of Holding",
+    "Divine Ascension — Root Verdant Unbound"
   ],
   "stats": {
-    "hp": 40,
+    "hp": 48,
     "attack": 10,
     "range": 2,
-    "energy": 3,
-    "speed": 3
+    "energy": 5,
+    "speed": 2,
+    "armor": 19,
+    "resistance": 12,
+    "critChance": 7,
+    "accuracy": 82,
+    "evasion": 4,
+    "guardBreak": 8,
+    "combatPower": 234
   },
   "equipment": [
-    "Relic-scale mythic implement",
-    "Realm-forged armor-body",
-    "Titan Gate resonance core"
+    "Tuatha Root Implement",
+    "Dagoran Root-Crown Realmplate",
+    "Dagoran Grove Pulse Core"
   ],
   "passives": [
-    "Living Grove: terrain and sustain effects grow stronger over time."
+    "Living Grove — Dagoran's Mastery: Dagoran's Living Grove: a solo charge meter that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
   ],
   "lore": "Dagoran Root-Crown is a colossal Tuatha Titan shaped by the living world adapts and endures. It manifests the Realm's law through battlefield-scale mythic force.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -32,6 +40,124 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-037",
   "artworkId": null,
-  "developmentStatus": "Playable data scaffold complete; artwork pending.",
-  "backstoryId": "TG-BACKSTORY-TITAN-037"
+  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "TG-BACKSTORY-TITAN-037",
+  "abilityDetails": [
+    {
+      "name": "Dagoran Anchor Strike",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "defender",
+        "verdant"
+      ],
+      "effect": "Deal Verdant damage at range 2; gain 8 Momentum, or 12 if used from living terrain or into the Titan's marked target.",
+      "scaling": "100% attack; +15% vs vulnerable enemies",
+      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+    },
+    {
+      "name": "Root Bastion Protocol",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "defender"
+      ],
+      "effect": "Apply hold-zone shield, taunt, counterstance; also builds 10 Grove Pulse when it changes enemy intent or breaks an objective action.",
+      "scaling": "70% attack plus role utility scaling from energy",
+      "counterplay": "Interrupt before resolution, spread formations, or bait the cooldown."
+    },
+    {
+      "name": "Dagoran Root-Crown: Law of Holding",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "defender",
+        "tuatha"
+      ],
+      "effect": "Spend stored Grove Pulse to create a two-round battlefield rule around living terrain; enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Root Verdant Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Grove Pulse, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Tuatha Root Implement",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Legendary",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
+      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+    },
+    {
+      "name": "Dagoran Root-Crown Realmplate",
+      "slot": "Armor Body",
+      "rarityFloor": "Legendary",
+      "primaryStat": "armor/resistance",
+      "effect": "+3 armor and +2 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
+      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+    },
+    {
+      "name": "Dagoran Grove Pulse Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Legendary",
+      "primaryStat": "energy",
+      "effect": "Grove Pulse cap +20. At 80+ Grove Pulse, the next Technique gains a role-specific rider, then drains 30 Grove Pulse.",
+      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 60,
+    "statGrowthPer10Levels": {
+      "hp": 9,
+      "attack": 1,
+      "armor": 2,
+      "resistance": 1
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      60
+    ],
+    "gearTierCap": "Mythic",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "hold objectives and survive pressure",
+    "budgetTarget": 112,
+    "computedCombatPower": 234,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  }
 }

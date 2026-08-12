@@ -7,24 +7,32 @@
   "rarity": "Legendary",
   "role": "Defender",
   "abilities": [
-    "Amaterion Strike",
-    "Kami Signature Rite",
-    "Gate Objective Command"
+    "Amaterion Anchor Strike",
+    "Mist Bastion Protocol",
+    "Amaterion Spirit-Sun: Law of Holding",
+    "Divine Ascension — Mist Spirit Unbound"
   ],
   "stats": {
-    "hp": 38,
-    "attack": 8,
+    "hp": 52,
+    "attack": 10,
     "range": 2,
-    "energy": 3,
-    "speed": 3
+    "energy": 5,
+    "speed": 2,
+    "armor": 19,
+    "resistance": 12,
+    "critChance": 7,
+    "accuracy": 82,
+    "evasion": 4,
+    "guardBreak": 8,
+    "combatPower": 238
   },
   "equipment": [
-    "Relic-scale mythic implement",
-    "Realm-forged armor-body",
-    "Titan Gate resonance core"
+    "Kami Mist Implement",
+    "Amaterion Spirit-Sun Realmplate",
+    "Amaterion Spirit Balance Core"
   ],
   "passives": [
-    "Sacred Balance: careful positioning unlocks spirit precision effects."
+    "Sacred Balance — Amaterion's Mastery: Amaterion's Spirit Balance: a solo pursuit lock that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
   ],
   "lore": "Amaterion Spirit-Sun is a colossal Kami Titan shaped by balance is defended by precision. It manifests the Realm's law through battlefield-scale mythic force.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -32,6 +40,124 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-028",
   "artworkId": null,
-  "developmentStatus": "Playable data scaffold complete; artwork pending.",
-  "backstoryId": "TG-BACKSTORY-TITAN-028"
+  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "TG-BACKSTORY-TITAN-028",
+  "abilityDetails": [
+    {
+      "name": "Amaterion Anchor Strike",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "defender",
+        "spirit"
+      ],
+      "effect": "Deal Spirit damage at range 2; gain 8 Momentum, or 12 if used from shrine terrain or into the Titan's marked target.",
+      "scaling": "100% attack; +15% vs vulnerable enemies",
+      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+    },
+    {
+      "name": "Mist Bastion Protocol",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "defender"
+      ],
+      "effect": "Apply hold-zone shield, taunt, counterstance; also builds 10 Spirit Balance when it changes enemy intent or breaks an objective action.",
+      "scaling": "70% attack plus role utility scaling from energy",
+      "counterplay": "Interrupt before resolution, spread formations, or bait the cooldown."
+    },
+    {
+      "name": "Amaterion Spirit-Sun: Law of Holding",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "defender",
+        "kami"
+      ],
+      "effect": "Spend stored Spirit Balance to create a two-round battlefield rule around shrine terrain; enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Mist Spirit Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Spirit Balance, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Kami Mist Implement",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Legendary",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
+      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+    },
+    {
+      "name": "Amaterion Spirit-Sun Realmplate",
+      "slot": "Armor Body",
+      "rarityFloor": "Legendary",
+      "primaryStat": "armor/resistance",
+      "effect": "+3 armor and +2 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
+      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+    },
+    {
+      "name": "Amaterion Spirit Balance Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Legendary",
+      "primaryStat": "energy",
+      "effect": "Spirit Balance cap +20. At 80+ Spirit Balance, the next Technique gains a role-specific rider, then drains 30 Spirit Balance.",
+      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 60,
+    "statGrowthPer10Levels": {
+      "hp": 9,
+      "attack": 1,
+      "armor": 2,
+      "resistance": 1
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      60
+    ],
+    "gearTierCap": "Mythic",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "hold objectives and survive pressure",
+    "budgetTarget": 112,
+    "computedCombatPower": 238,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  }
 }

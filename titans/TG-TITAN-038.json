@@ -7,24 +7,32 @@
   "rarity": "Epic",
   "role": "Battery",
   "abilities": [
-    "Eryndor Strike",
-    "Tuatha Signature Rite",
-    "Gate Objective Command"
+    "Eryndor Generator Strike",
+    "Moonwell Resonance Engine",
+    "Eryndor Emerald Oath: Overflow Mandate",
+    "Divine Ascension — Moonwell Verdant Unbound"
   ],
   "stats": {
-    "hp": 28,
-    "attack": 5,
+    "hp": 40,
+    "attack": 11,
     "range": 3,
-    "energy": 3,
-    "speed": 2
+    "energy": 5,
+    "speed": 3,
+    "armor": 9,
+    "resistance": 14,
+    "critChance": 8,
+    "accuracy": 84,
+    "evasion": 7,
+    "guardBreak": 6,
+    "combatPower": 228
   },
   "equipment": [
-    "Relic-scale mythic implement",
-    "Realm-forged armor-body",
-    "Titan Gate resonance core"
+    "Tuatha Moonwell Implement",
+    "Eryndor Emerald Oath Realmplate",
+    "Eryndor Grove Pulse Core"
   ],
   "passives": [
-    "Living Grove: terrain and sustain effects grow stronger over time."
+    "Living Grove — Eryndor's Mastery: Eryndor's Living Grove: a solo mark cycle that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
   ],
   "lore": "Eryndor Emerald Oath is a colossal Tuatha Titan shaped by the living world adapts and endures. It manifests the Realm's law through battlefield-scale mythic force.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -32,6 +40,124 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-038",
   "artworkId": null,
-  "developmentStatus": "Playable data scaffold complete; artwork pending.",
-  "backstoryId": "TG-BACKSTORY-TITAN-038"
+  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "TG-BACKSTORY-TITAN-038",
+  "abilityDetails": [
+    {
+      "name": "Eryndor Generator Strike",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "battery",
+        "verdant"
+      ],
+      "effect": "Deal Verdant damage at range 3; gain 8 Momentum, or 12 if used from living terrain or into the Titan's marked target.",
+      "scaling": "100% attack; +15% vs vulnerable enemies",
+      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+    },
+    {
+      "name": "Moonwell Resonance Engine",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "battery"
+      ],
+      "effect": "Apply resource acceleration, refund, controlled overcharge; also builds 10 Grove Pulse when it changes enemy intent or breaks an objective action.",
+      "scaling": "70% attack plus role utility scaling from energy",
+      "counterplay": "Interrupt before resolution, spread formations, or bait the cooldown."
+    },
+    {
+      "name": "Eryndor Emerald Oath: Overflow Mandate",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "battery",
+        "tuatha"
+      ],
+      "effect": "Spend stored Grove Pulse to create a two-round battlefield rule around living terrain; enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Moonwell Verdant Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Grove Pulse, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Tuatha Moonwell Implement",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Epic",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
+      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+    },
+    {
+      "name": "Eryndor Emerald Oath Realmplate",
+      "slot": "Armor Body",
+      "rarityFloor": "Epic",
+      "primaryStat": "armor/resistance",
+      "effect": "+1 armor and +2 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
+      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+    },
+    {
+      "name": "Eryndor Grove Pulse Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Epic",
+      "primaryStat": "energy",
+      "effect": "Grove Pulse cap +20. At 80+ Grove Pulse, the next Technique gains a role-specific rider, then drains 30 Grove Pulse.",
+      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 55,
+    "statGrowthPer10Levels": {
+      "hp": 7,
+      "attack": 1,
+      "armor": 1,
+      "resistance": 2
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      55
+    ],
+    "gearTierCap": "Legendary",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "generate Momentum and Divinity under pressure",
+    "budgetTarget": 109,
+    "computedCombatPower": 228,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  }
 }

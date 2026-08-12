@@ -7,24 +7,32 @@
   "rarity": "Epic",
   "role": "Artillery",
   "abilities": [
-    "Onimaru Strike",
-    "Kami Signature Rite",
-    "Gate Objective Command"
+    "Onimaru Longshot Strike",
+    "Moonveil Zone Bombardment",
+    "Onimaru Red Seal: Horizon Cataclysm",
+    "Divine Ascension — Moonveil Spirit Unbound"
   ],
   "stats": {
     "hp": 36,
-    "attack": 8,
-    "range": 2,
-    "energy": 3,
-    "speed": 3
+    "attack": 15,
+    "range": 5,
+    "energy": 4,
+    "speed": 2,
+    "armor": 5,
+    "resistance": 11,
+    "critChance": 11,
+    "accuracy": 88,
+    "evasion": 5,
+    "guardBreak": 11,
+    "combatPower": 234
   },
   "equipment": [
-    "Relic-scale mythic implement",
-    "Realm-forged armor-body",
-    "Titan Gate resonance core"
+    "Kami Moonveil Implement",
+    "Onimaru Red Seal Realmplate",
+    "Onimaru Spirit Balance Core"
   ],
   "passives": [
-    "Sacred Balance: careful positioning unlocks spirit precision effects."
+    "Sacred Balance — Onimaru's Mastery: Onimaru's Spirit Balance: a solo vow scar that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
   ],
   "lore": "Onimaru Red Seal is a colossal Kami Titan shaped by balance is defended by precision. It manifests the Realm's law through battlefield-scale mythic force.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -32,6 +40,124 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-034",
   "artworkId": null,
-  "developmentStatus": "Playable data scaffold complete; artwork pending.",
-  "backstoryId": "TG-BACKSTORY-TITAN-034"
+  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "TG-BACKSTORY-TITAN-034",
+  "abilityDetails": [
+    {
+      "name": "Onimaru Longshot Strike",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "artillery",
+        "spirit"
+      ],
+      "effect": "Deal Spirit damage at range 5; gain 8 Momentum, or 12 if used from shrine terrain or into the Titan's marked target.",
+      "scaling": "100% attack; +15% vs vulnerable enemies",
+      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+    },
+    {
+      "name": "Moonveil Zone Bombardment",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "artillery"
+      ],
+      "effect": "Apply ranged area damage and objective-zone denial; also builds 10 Spirit Balance when it changes enemy intent or breaks an objective action.",
+      "scaling": "70% attack plus role utility scaling from energy",
+      "counterplay": "Interrupt before resolution, spread formations, or bait the cooldown."
+    },
+    {
+      "name": "Onimaru Red Seal: Horizon Cataclysm",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "artillery",
+        "kami"
+      ],
+      "effect": "Spend stored Spirit Balance to create a two-round battlefield rule around shrine terrain; enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Moonveil Spirit Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Spirit Balance, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Kami Moonveil Implement",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Epic",
+      "primaryStat": "attack",
+      "effect": "+5 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
+      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+    },
+    {
+      "name": "Onimaru Red Seal Realmplate",
+      "slot": "Armor Body",
+      "rarityFloor": "Epic",
+      "primaryStat": "armor/resistance",
+      "effect": "+1 armor and +1 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
+      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+    },
+    {
+      "name": "Onimaru Spirit Balance Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Epic",
+      "primaryStat": "energy",
+      "effect": "Spirit Balance cap +20. At 80+ Spirit Balance, the next Technique gains a role-specific rider, then drains 30 Spirit Balance.",
+      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 55,
+    "statGrowthPer10Levels": {
+      "hp": 6,
+      "attack": 2,
+      "armor": 1,
+      "resistance": 1
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      55
+    ],
+    "gearTierCap": "Legendary",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "project damage into crowds and objective zones",
+    "budgetTarget": 110,
+    "computedCombatPower": 234,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  }
 }

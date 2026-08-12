@@ -70,6 +70,7 @@
     "factionMissionDialogueCompletionAudit": 1,
     "tacticalBlueprintLayouts": 1,
     "tacticalBlueprintPlacements": 51,
+    "titanEnemyBalancePass": 1,
     "hollowCreatures": 16,
     "artMapPrompts": 12,
     "artCampaignPrompts": 7
@@ -143,7 +144,8 @@
     "battlefield-quality-gate.json": "data/battlefield-quality-gate.json",
     "faction-mission-dialogue-completion-audit.json": "data/faction-mission-dialogue-completion-audit.json",
     "tactical-blueprint-layouts.json": "data/tactical-blueprint-layouts.json",
-    "tactical-blueprint-placements.json": "data/tactical-blueprint-placements.json"
+    "tactical-blueprint-placements.json": "data/tactical-blueprint-placements.json",
+    "titan-enemy-balance-pass.json": "data/titan-enemy-balance-pass.json"
   },
   "sourceFileFingerprints": {
     "project.json": {
@@ -163,8 +165,8 @@
     },
     "titans.json": {
       "path": "data/titans.json",
-      "bytes": 88130,
-      "sha256": "783fe2198473b86eefd4de0b4a6a82497911d7df48e69be5b4f2242ff5abdda6"
+      "bytes": 408328,
+      "sha256": "a0f3e9cfb4f35b634f32440ed9af78e67c008dc541d7e1e02d097cdaf7c8e73c"
     },
     "characters.json": {
       "path": "data/characters.json",
@@ -208,8 +210,8 @@
     },
     "creatures.json": {
       "path": "data/creatures.json",
-      "bytes": 20630,
-      "sha256": "e7eef55a98b6dd7c2afd71c04d8b3b1217be39e8ca251b5a90d59048e36fe70a"
+      "bytes": 43744,
+      "sha256": "28a169694b40ae2346349f215ad84232c4ffcd425faf73df54539bd7e206844d"
     },
     "hollow-encounter-system.json": {
       "path": "data/hollow-encounter-system.json",
@@ -283,8 +285,8 @@
     },
     "change-history.json": {
       "path": "data/change-history.json",
-      "bytes": 18543,
-      "sha256": "2b6e0ad83ea540f1153e45861dea1987096fbf91b08efcc35236498b07a5fde8"
+      "bytes": 19056,
+      "sha256": "e3219db0c853ce28f73a455edf978e237805e69dfe22c3e99d03306689c2ac89"
     },
     "campaign-architecture.json": {
       "path": "data/campaign-architecture.json",
@@ -348,8 +350,8 @@
     },
     "progression-system.json": {
       "path": "data/progression-system.json",
-      "bytes": 2054,
-      "sha256": "45b600aadb7e1b35a9926ea0db49d3633f1ce0f68cf6e0e3706d26ae29cb89b0"
+      "bytes": 3482,
+      "sha256": "1ffe8b7802f53ab274457c26feea1a8ebe69f68b0e956af19c826107eb6e6965"
     },
     "ascension-system.json": {
       "path": "data/ascension-system.json",
@@ -388,13 +390,13 @@
     },
     "balance-analytics.json": {
       "path": "data/balance-analytics.json",
-      "bytes": 521,
-      "sha256": "54459b8ca16d4d9d9ff75c256f4fbb63e405b099676de868f39bfd770d5f1c07"
+      "bytes": 1190,
+      "sha256": "ac4df12613ad19f57a0be9efc82994d5d18f07ad7516ba6162cdc8571384ea3d"
     },
     "continuity-balance-audit.json": {
       "path": "data/continuity-balance-audit.json",
-      "bytes": 2643,
-      "sha256": "621b89e0a7d2e26d42fb9797d306760172ab71c1ccc7d265924335ce82fb09e1"
+      "bytes": 2652,
+      "sha256": "62432f8f60c57698876b455ccb3d9736232c1a766cc03f2092d1f6ea4adf6ace"
     },
     "endgame-dashboard.json": {
       "path": "data/endgame-dashboard.json",
@@ -490,6 +492,11 @@
       "path": "data/tactical-blueprint-placements.json",
       "bytes": 13717,
       "sha256": "6e790f52f5c3af79b6e0ee1941cf9554cd7816cb5d150113d0afd1dc95244cce"
+    },
+    "titan-enemy-balance-pass.json": {
+      "path": "data/titan-enemy-balance-pass.json",
+      "bytes": 50570,
+      "sha256": "c99e389bcb17bcb945d60ff3ed6338027bb52455c235d21c25f3ad1c5ca7e540"
     }
   },
   "artPromptCategories": {

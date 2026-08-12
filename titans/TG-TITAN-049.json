@@ -7,24 +7,32 @@
   "rarity": "Rare",
   "role": "Breaker",
   "abilities": [
-    "Malachor Strike",
-    "Empyrean Signature Rite",
-    "Gate Objective Command"
+    "Malachor Sundering Strike",
+    "Edict Armor Rupture",
+    "Malachor Law Warden: Gatebreaker Decree",
+    "Divine Ascension — Edict Celestial Unbound"
   ],
   "stats": {
-    "hp": 34,
-    "attack": 9,
+    "hp": 42,
+    "attack": 14,
     "range": 2,
     "energy": 3,
-    "speed": 2
+    "speed": 2,
+    "armor": 12,
+    "resistance": 8,
+    "critChance": 9,
+    "accuracy": 81,
+    "evasion": 4,
+    "guardBreak": 18,
+    "combatPower": 218
   },
   "equipment": [
-    "Relic-scale mythic implement",
-    "Realm-forged armor-body",
-    "Titan Gate resonance core"
+    "Empyrean Edict Implement",
+    "Malachor Law Warden Realmplate",
+    "Malachor Edict Charge Core"
   ],
   "passives": [
-    "Radiant Edict: structured actions reduce chaos effects and protect allies."
+    "Radiant Edict — Malachor's Mastery: Malachor's Radiant Edict: a solo range aperture that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
   ],
   "lore": "Malachor Law Warden is a colossal Empyrean Titan shaped by existence survives through order. It manifests the Realm's law through battlefield-scale mythic force.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -32,6 +40,124 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-049",
   "artworkId": null,
-  "developmentStatus": "Playable data scaffold complete; artwork pending.",
-  "backstoryId": "TG-BACKSTORY-TITAN-049"
+  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "TG-BACKSTORY-TITAN-049",
+  "abilityDetails": [
+    {
+      "name": "Malachor Sundering Strike",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "breaker",
+        "celestial"
+      ],
+      "effect": "Deal Celestial damage at range 2; gain 8 Momentum, or 12 if used from ordered terrain or into the Titan's marked target.",
+      "scaling": "100% attack; +15% vs vulnerable enemies",
+      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+    },
+    {
+      "name": "Edict Armor Rupture",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "breaker"
+      ],
+      "effect": "Apply armor break, shield collapse, boss phase pressure; also builds 10 Edict Charge when it changes enemy intent or breaks an objective action.",
+      "scaling": "70% attack plus role utility scaling from energy",
+      "counterplay": "Interrupt before resolution, spread formations, or bait the cooldown."
+    },
+    {
+      "name": "Malachor Law Warden: Gatebreaker Decree",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "breaker",
+        "empyrean"
+      ],
+      "effect": "Spend stored Edict Charge to create a two-round battlefield rule around ordered terrain; enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Edict Celestial Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Edict Charge, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Empyrean Edict Implement",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Rare",
+      "primaryStat": "attack",
+      "effect": "+4 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
+      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+    },
+    {
+      "name": "Malachor Law Warden Realmplate",
+      "slot": "Armor Body",
+      "rarityFloor": "Rare",
+      "primaryStat": "armor/resistance",
+      "effect": "+2 armor and +1 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
+      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+    },
+    {
+      "name": "Malachor Edict Charge Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Rare",
+      "primaryStat": "energy",
+      "effect": "Edict Charge cap +20. At 80+ Edict Charge, the next Technique gains a role-specific rider, then drains 30 Edict Charge.",
+      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 50,
+    "statGrowthPer10Levels": {
+      "hp": 8,
+      "attack": 2,
+      "armor": 1,
+      "resistance": 1
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      50
+    ],
+    "gearTierCap": "Epic",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "break armor, shields, and boss windows",
+    "budgetTarget": 106,
+    "computedCombatPower": 218,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  }
 }

@@ -7,24 +7,32 @@
   "rarity": "Epic",
   "role": "Battery",
   "abilities": [
-    "Khemet Strike",
-    "Aten Ra Signature Rite",
-    "Gate Objective Command"
+    "Khemet Generator Strike",
+    "Sunseal Resonance Engine",
+    "Khemet Suncrown: Overflow Mandate",
+    "Divine Ascension — Sunseal Radiant Unbound"
   ],
   "stats": {
-    "hp": 34,
-    "attack": 9,
+    "hp": 38,
+    "attack": 11,
     "range": 3,
-    "energy": 3,
-    "speed": 2
+    "energy": 5,
+    "speed": 3,
+    "armor": 9,
+    "resistance": 14,
+    "critChance": 8,
+    "accuracy": 84,
+    "evasion": 7,
+    "guardBreak": 6,
+    "combatPower": 226
   },
   "equipment": [
-    "Relic-scale mythic implement",
-    "Realm-forged armor-body",
-    "Titan Gate resonance core"
+    "Aten Sunseal Implement",
+    "Khemet Suncrown Realmplate",
+    "Khemet Solar Charge Core"
   ],
   "passives": [
-    "Solar Law: coordinated Titans gain defensive clarity after holding objectives."
+    "Solar Law — Khemet's Mastery: Khemet's Solar Power: a solo mark cycle that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
   ],
   "lore": "Khemet Suncrown is a colossal Aten Ra Titan shaped by sacred order channels solar power into civilization. It manifests the Realm's law through battlefield-scale mythic force.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -32,6 +40,124 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-002",
   "artworkId": null,
-  "developmentStatus": "Playable data scaffold complete; artwork pending.",
-  "backstoryId": "TG-BACKSTORY-TITAN-002"
+  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "TG-BACKSTORY-TITAN-002",
+  "abilityDetails": [
+    {
+      "name": "Khemet Generator Strike",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "battery",
+        "radiant"
+      ],
+      "effect": "Deal Radiant damage at range 3; gain 8 Momentum, or 12 if used from illuminated terrain or into the Titan's marked target.",
+      "scaling": "100% attack; +15% vs vulnerable enemies",
+      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+    },
+    {
+      "name": "Sunseal Resonance Engine",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "battery"
+      ],
+      "effect": "Apply resource acceleration, refund, controlled overcharge; also builds 10 Solar Charge when it changes enemy intent or breaks an objective action.",
+      "scaling": "70% attack plus role utility scaling from energy",
+      "counterplay": "Interrupt before resolution, spread formations, or bait the cooldown."
+    },
+    {
+      "name": "Khemet Suncrown: Overflow Mandate",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "battery",
+        "aten-ra"
+      ],
+      "effect": "Spend stored Solar Charge to create a two-round battlefield rule around illuminated terrain; enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Sunseal Radiant Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Solar Charge, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Aten Sunseal Implement",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Epic",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
+      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+    },
+    {
+      "name": "Khemet Suncrown Realmplate",
+      "slot": "Armor Body",
+      "rarityFloor": "Epic",
+      "primaryStat": "armor/resistance",
+      "effect": "+1 armor and +2 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
+      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+    },
+    {
+      "name": "Khemet Solar Charge Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Epic",
+      "primaryStat": "energy",
+      "effect": "Solar Charge cap +20. At 80+ Solar Charge, the next Technique gains a role-specific rider, then drains 30 Solar Charge.",
+      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 55,
+    "statGrowthPer10Levels": {
+      "hp": 7,
+      "attack": 1,
+      "armor": 1,
+      "resistance": 2
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      55
+    ],
+    "gearTierCap": "Legendary",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "generate Momentum and Divinity under pressure",
+    "budgetTarget": 109,
+    "computedCombatPower": 226,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  }
 }

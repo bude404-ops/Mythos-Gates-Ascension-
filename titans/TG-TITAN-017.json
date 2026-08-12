@@ -7,24 +7,32 @@
   "rarity": "Rare",
   "role": "Guardian",
   "abilities": [
-    "Ullr Strike",
-    "Asgardian Signature Rite",
-    "Gate Objective Command"
+    "Ullr Sentinel Strike",
+    "Oath Punishing Guard",
+    "Ullr Snow-Crown: Oath of Intercept",
+    "Divine Ascension — Oath Storm Unbound"
   ],
   "stats": {
-    "hp": 34,
-    "attack": 5,
-    "range": 3,
-    "energy": 3,
-    "speed": 2
+    "hp": 48,
+    "attack": 9,
+    "range": 1,
+    "energy": 4,
+    "speed": 2,
+    "armor": 18,
+    "resistance": 12,
+    "critChance": 5,
+    "accuracy": 80,
+    "evasion": 3,
+    "guardBreak": 12,
+    "combatPower": 212
   },
   "equipment": [
-    "Relic-scale mythic implement",
-    "Realm-forged armor-body",
-    "Titan Gate resonance core"
+    "Runebound Oath Implement",
+    "Ullr Snow-Crown Realmplate",
+    "Ullr Oathstorm Core"
   ],
   "passives": [
-    "Oathbound: surviving damage strengthens the next committed strike."
+    "Oathbound — Ullr's Mastery: Ullr's Storm Oath: a solo root memory that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
   ],
   "lore": "Ullr Snow-Crown is a colossal Asgardian Titan shaped by oaths give war meaning; courage gives power form. It manifests the Realm's law through battlefield-scale mythic force.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -32,6 +40,124 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-017",
   "artworkId": null,
-  "developmentStatus": "Playable data scaffold complete; artwork pending.",
-  "backstoryId": "TG-BACKSTORY-TITAN-017"
+  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "TG-BACKSTORY-TITAN-017",
+  "abilityDetails": [
+    {
+      "name": "Ullr Sentinel Strike",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "guardian",
+        "storm"
+      ],
+      "effect": "Deal Storm damage at range 1; gain 8 Momentum, or 12 if used from storm-marked terrain or into the Titan's marked target.",
+      "scaling": "100% attack; +15% vs vulnerable enemies",
+      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+    },
+    {
+      "name": "Oath Punishing Guard",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "guardian"
+      ],
+      "effect": "Apply parry, brace, boss counter, intercept; also builds 10 Oathstorm when it changes enemy intent or breaks an objective action.",
+      "scaling": "70% attack plus role utility scaling from energy",
+      "counterplay": "Interrupt before resolution, spread formations, or bait the cooldown."
+    },
+    {
+      "name": "Ullr Snow-Crown: Oath of Intercept",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "guardian",
+        "asgardian"
+      ],
+      "effect": "Spend stored Oathstorm to create a two-round battlefield rule around storm-marked terrain; enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Oath Storm Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Oathstorm, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Runebound Oath Implement",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Rare",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
+      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+    },
+    {
+      "name": "Ullr Snow-Crown Realmplate",
+      "slot": "Armor Body",
+      "rarityFloor": "Rare",
+      "primaryStat": "armor/resistance",
+      "effect": "+3 armor and +2 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
+      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+    },
+    {
+      "name": "Ullr Oathstorm Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Rare",
+      "primaryStat": "energy",
+      "effect": "Oathstorm cap +20. At 80+ Oathstorm, the next Technique gains a role-specific rider, then drains 30 Oathstorm.",
+      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 50,
+    "statGrowthPer10Levels": {
+      "hp": 9,
+      "attack": 1,
+      "armor": 2,
+      "resistance": 1
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      50
+    ],
+    "gearTierCap": "Epic",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "counter bosses and protect survival windows",
+    "budgetTarget": 105,
+    "computedCombatPower": 212,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  }
 }

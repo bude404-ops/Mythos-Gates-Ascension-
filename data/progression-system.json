@@ -57,5 +57,44 @@
   "rewardsPhilosophy": "Fun first, fair second, monetization third. Cosmetics preferred; progression purchases are speed and convenience, not mandatory power.",
   "soloCombatUpdate": "Progression now centers individual Titan mastery, one active Titan loadouts, Momentum/Divinity unlocks, stances, reactions, executions, relics, and ascension upgrades.",
   "rosterCollectionUpdate": "Players build a main Titan plus specialist roster. Missions recommend tactical advantages but never require ownership of a specific Titan.",
-  "onboardingUpdate": "Opening sequence awakens one main Titan, teaches solo combat, introduces a radically different second Titan through trial, then opens faction discovery."
+  "onboardingUpdate": "Opening sequence awakens one main Titan, teaches solo combat, introduces a radically different second Titan through trial, then opens faction discovery.",
+  "version": "0.9.7",
+  "difficultyAndLevelingBalance": {
+    "directive": "Increase difficulty by making enemies smarter and encounter budgets tighter while letting leveling and gear create visible mastery growth.",
+    "titanLevelBands": [
+      {
+        "band": "Awakening",
+        "levels": "1-10",
+        "enemyPressure": "teaches positioning and Momentum loss",
+        "gear": "Common/Rare starter relics"
+      },
+      {
+        "band": "Trial",
+        "levels": "11-25",
+        "enemyPressure": "adds controllers, hunters, and first elite mechanics",
+        "gear": "Rare/Epic role gear"
+      },
+      {
+        "band": "Dominion",
+        "levels": "26-45",
+        "enemyPressure": "resource denial, shield windows, and boss phase counters",
+        "gear": "Epic/Legendary faction gear"
+      },
+      {
+        "band": "Ascendant",
+        "levels": "46-60",
+        "enemyPressure": "multi-layer elites, enemy Titans, capped endgame scaling",
+        "gear": "Legendary/Mythic signature gear"
+      }
+    ],
+    "powerFormula": "effectivePower = combatPower + level*12 + gearScore*0.85 + masteryTier*35",
+    "gearScoreBands": {
+      "starter": 30,
+      "rare": 70,
+      "epic": 130,
+      "legendary": 210,
+      "mythic": 320
+    },
+    "antiPayToWinGuardrail": "Gear widens tactical options and progression speed; hard counters, telegraphs, and objective reads still decide difficult missions."
+  }
 }

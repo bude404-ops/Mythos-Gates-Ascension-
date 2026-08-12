@@ -440,6 +440,21 @@
       "type": "VISUAL_DIRECTION",
       "summary": "Tuned playable battlefields toward layered isometric temple-board art goal with HUD, minimap, portal summit, terraces, stairs, waterway, corruption, and blueprint notes.",
       "status": "PUBLISHED_PENDING_PUSH"
+    },
+    {
+      "id": "TG-CHANGE-TITAN-ENEMY-BALANCE-001",
+      "date": "2026-08-12",
+      "type": "balance-content",
+      "summary": "Completed Titan names/abilities/gear pass and added enemy stat/scaling profiles for harder solo progression.",
+      "files": [
+        "data/titans.json",
+        "titans/*.json",
+        "data/creatures.json",
+        "creatures/*.json",
+        "data/titan-enemy-balance-pass.json",
+        "data/progression-system.json",
+        "data/balance-analytics.json"
+      ]
     }
   ],
   "changes": [

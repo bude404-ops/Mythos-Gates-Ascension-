@@ -7,24 +7,32 @@
   "rarity": "Rare",
   "role": "Breaker",
   "abilities": [
-    "Orru Strike",
-    "Aten Ra Signature Rite",
-    "Gate Objective Command"
+    "Orru Sundering Strike",
+    "Horizon Armor Rupture",
+    "Orru Prism Verdict: Gatebreaker Decree",
+    "Divine Ascension — Horizon Radiant Unbound"
   ],
   "stats": {
-    "hp": 38,
-    "attack": 5,
+    "hp": 44,
+    "attack": 13,
     "range": 2,
     "energy": 3,
-    "speed": 2
+    "speed": 2,
+    "armor": 12,
+    "resistance": 8,
+    "critChance": 9,
+    "accuracy": 81,
+    "evasion": 4,
+    "guardBreak": 18,
+    "combatPower": 214
   },
   "equipment": [
-    "Relic-scale mythic implement",
-    "Realm-forged armor-body",
-    "Titan Gate resonance core"
+    "Aten Horizon Implement",
+    "Orru Prism Verdict Realmplate",
+    "Orru Solar Charge Core"
   ],
   "passives": [
-    "Solar Law: coordinated Titans gain defensive clarity after holding objectives."
+    "Solar Law — Orru's Mastery: Orru's Solar Power: a solo parry ladder that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
   ],
   "lore": "Orru Prism Verdict is a colossal Aten Ra Titan shaped by sacred order channels solar power into civilization. It manifests the Realm's law through battlefield-scale mythic force.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -32,6 +40,124 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-004",
   "artworkId": null,
-  "developmentStatus": "Playable data scaffold complete; artwork pending.",
-  "backstoryId": "TG-BACKSTORY-TITAN-004"
+  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "TG-BACKSTORY-TITAN-004",
+  "abilityDetails": [
+    {
+      "name": "Orru Sundering Strike",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "breaker",
+        "radiant"
+      ],
+      "effect": "Deal Radiant damage at range 2; gain 8 Momentum, or 12 if used from illuminated terrain or into the Titan's marked target.",
+      "scaling": "100% attack; +15% vs vulnerable enemies",
+      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+    },
+    {
+      "name": "Horizon Armor Rupture",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "breaker"
+      ],
+      "effect": "Apply armor break, shield collapse, boss phase pressure; also builds 10 Solar Charge when it changes enemy intent or breaks an objective action.",
+      "scaling": "70% attack plus role utility scaling from energy",
+      "counterplay": "Interrupt before resolution, spread formations, or bait the cooldown."
+    },
+    {
+      "name": "Orru Prism Verdict: Gatebreaker Decree",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "breaker",
+        "aten-ra"
+      ],
+      "effect": "Spend stored Solar Charge to create a two-round battlefield rule around illuminated terrain; enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Horizon Radiant Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Solar Charge, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Aten Horizon Implement",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Rare",
+      "primaryStat": "attack",
+      "effect": "+4 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
+      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+    },
+    {
+      "name": "Orru Prism Verdict Realmplate",
+      "slot": "Armor Body",
+      "rarityFloor": "Rare",
+      "primaryStat": "armor/resistance",
+      "effect": "+2 armor and +1 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
+      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+    },
+    {
+      "name": "Orru Solar Charge Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Rare",
+      "primaryStat": "energy",
+      "effect": "Solar Charge cap +20. At 80+ Solar Charge, the next Technique gains a role-specific rider, then drains 30 Solar Charge.",
+      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 50,
+    "statGrowthPer10Levels": {
+      "hp": 8,
+      "attack": 2,
+      "armor": 1,
+      "resistance": 1
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      50
+    ],
+    "gearTierCap": "Epic",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "break armor, shields, and boss windows",
+    "budgetTarget": 106,
+    "computedCombatPower": 214,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  }
 }

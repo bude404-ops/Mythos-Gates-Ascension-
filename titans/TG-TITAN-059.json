@@ -7,24 +7,32 @@
   "rarity": "Epic",
   "role": "Disruptor",
   "abilities": [
-    "Orryx Strike",
-    "Infernal Dominion Signature Rite",
-    "Gate Objective Command"
+    "Orryx Null Strike",
+    "Wound Rite Severance",
+    "Orryx Ash Dominion: Interdiction Decree",
+    "Divine Ascension — Wound Infernal Unbound"
   ],
   "stats": {
-    "hp": 38,
-    "attack": 6,
+    "hp": 34,
+    "attack": 12,
     "range": 3,
-    "energy": 3,
-    "speed": 3
+    "energy": 5,
+    "speed": 3,
+    "armor": 7,
+    "resistance": 17,
+    "critChance": 9,
+    "accuracy": 85,
+    "evasion": 9,
+    "guardBreak": 10,
+    "combatPower": 231
   },
   "equipment": [
-    "Relic-scale mythic implement",
-    "Realm-forged armor-body",
-    "Titan Gate resonance core"
+    "Dominion Wound Implement",
+    "Orryx Ash Dominion Realmplate",
+    "Orryx Dominion Heat Core"
   ],
   "passives": [
-    "Dominion Flame: decisive aggression turns enemy weakness into momentum."
+    "Dominion Flame — Orryx's Mastery: Orryx's Dominion Flame: a solo execution chain that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
   ],
   "lore": "Orryx Ash Dominion is a colossal Infernal Dominion Titan shaped by power belongs to those capable of wielding it. It manifests the Realm's law through battlefield-scale mythic force.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -32,6 +40,124 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-059",
   "artworkId": null,
-  "developmentStatus": "Playable data scaffold complete; artwork pending.",
-  "backstoryId": "TG-BACKSTORY-TITAN-059"
+  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "TG-BACKSTORY-TITAN-059",
+  "abilityDetails": [
+    {
+      "name": "Orryx Null Strike",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "disruptor",
+        "infernal"
+      ],
+      "effect": "Deal Infernal damage at range 3; gain 8 Momentum, or 12 if used from burning terrain or into the Titan's marked target.",
+      "scaling": "100% attack; +15% vs vulnerable enemies",
+      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+    },
+    {
+      "name": "Wound Rite Severance",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "disruptor"
+      ],
+      "effect": "Apply cast interrupt, meter drain, reaction lockout; also builds 10 Dominion Heat when it changes enemy intent or breaks an objective action.",
+      "scaling": "70% attack plus role utility scaling from energy",
+      "counterplay": "Interrupt before resolution, spread formations, or bait the cooldown."
+    },
+    {
+      "name": "Orryx Ash Dominion: Interdiction Decree",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "disruptor",
+        "infernal-dominion"
+      ],
+      "effect": "Spend stored Dominion Heat to create a two-round battlefield rule around burning terrain; enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Wound Infernal Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Dominion Heat, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Dominion Wound Implement",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Epic",
+      "primaryStat": "attack",
+      "effect": "+4 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
+      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+    },
+    {
+      "name": "Orryx Ash Dominion Realmplate",
+      "slot": "Armor Body",
+      "rarityFloor": "Epic",
+      "primaryStat": "armor/resistance",
+      "effect": "+1 armor and +2 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
+      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+    },
+    {
+      "name": "Orryx Dominion Heat Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Epic",
+      "primaryStat": "energy",
+      "effect": "Dominion Heat cap +20. At 80+ Dominion Heat, the next Technique gains a role-specific rider, then drains 30 Dominion Heat.",
+      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 55,
+    "statGrowthPer10Levels": {
+      "hp": 6,
+      "attack": 2,
+      "armor": 1,
+      "resistance": 2
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      55
+    ],
+    "gearTierCap": "Legendary",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "interrupt resources, casts, reactions, and elite mechanics",
+    "budgetTarget": 109,
+    "computedCombatPower": 231,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  }
 }

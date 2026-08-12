@@ -76,7 +76,8 @@ const files = {
   'battlefield-quality-gate.json': 'battlefieldQualityGate',
   'faction-mission-dialogue-completion-audit.json': 'factionMissionDialogueCompletionAudit',
   'tactical-blueprint-layouts.json': 'tacticalBlueprintLayouts',
-  'tactical-blueprint-placements.json': 'tacticalBlueprintPlacements'
+  'tactical-blueprint-placements.json': 'tacticalBlueprintPlacements',
+  'titan-enemy-balance-pass.json': 'titanEnemyBalancePass'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {

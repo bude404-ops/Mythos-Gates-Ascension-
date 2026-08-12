@@ -1,0 +1,2241 @@
+{
+  "id": "TG-TITAN-ENEMY-BALANCE-PASS-001",
+  "version": "1.0.0",
+  "generated": "2026-08-12T03:30:52.055244+00:00",
+  "directive": "Named all Titan combat kits and gear, added leveling hooks, gave every enemy stat/scaling/AI profiles, and increased difficulty without requiring inflated health pools.",
+  "titanCount": 63,
+  "enemyCount": 18,
+  "titanBudget": {
+    "combatPowerMin": 203,
+    "combatPowerMax": 242,
+    "combatPowerAverage": 224.48,
+    "roleBands": {
+      "Artillery": {
+        "count": 7,
+        "avgPower": 232.29
+      },
+      "Assassin": {
+        "count": 7,
+        "avgPower": 238.0
+      },
+      "Battery": {
+        "count": 7,
+        "avgPower": 228.57
+      },
+      "Breaker": {
+        "count": 7,
+        "avgPower": 213.14
+      },
+      "Controller": {
+        "count": 7,
+        "avgPower": 226.86
+      },
+      "Defender": {
+        "count": 7,
+        "avgPower": 237.14
+      },
+      "Disruptor": {
+        "count": 7,
+        "avgPower": 227.57
+      },
+      "Guardian": {
+        "count": 7,
+        "avgPower": 211.71
+      },
+      "Sustain": {
+        "count": 7,
+        "avgPower": 205.0
+      }
+    }
+  },
+  "difficultyModel": {
+    "campaignNormal": "Enemies stay mostly fixed by mission so leveling feels meaningful; later missions introduce denial and elite mechanics earlier than before.",
+    "eliteRemix": "Elite variants add +12% hp, +10% damage, one extra mechanic layer, and smarter objective/resource targeting.",
+    "endgame": "Dynamic scaling capped at effective player level +8; boss difficulty comes from phases, adds, counters, and arena rules."
+  },
+  "gearRules": {
+    "slots": [
+      "Relic Weapon",
+      "Armor Body",
+      "Resonance Core"
+    ],
+    "upgradeRisks": [
+      "No extra action loops",
+      "Boss damage bonuses capped",
+      "Ascension windows create recovery risk",
+      "Empowered Techniques cannot chain every round"
+    ],
+    "rarityCaps": {
+      "Rare": {
+        "hp": 0,
+        "attack": 0,
+        "energy": 0,
+        "crit": 0,
+        "armor": 0,
+        "resistance": 0,
+        "budget": 0,
+        "maxLevel": 50,
+        "gearTierCap": "Epic"
+      },
+      "Epic": {
+        "hp": 2,
+        "attack": 1,
+        "energy": 0,
+        "crit": 1,
+        "armor": 1,
+        "resistance": 1,
+        "budget": 4,
+        "maxLevel": 55,
+        "gearTierCap": "Legendary"
+      },
+      "Legendary": {
+        "hp": 4,
+        "attack": 1,
+        "energy": 1,
+        "crit": 2,
+        "armor": 2,
+        "resistance": 2,
+        "budget": 8,
+        "maxLevel": 60,
+        "gearTierCap": "Mythic"
+      }
+    }
+  },
+  "titans": [
+    {
+      "id": "TG-TITAN-001",
+      "name": "Aten-Ra, Solar Law Monolith",
+      "faction": "Aten Ra",
+      "role": "Defender",
+      "rarity": "Legendary",
+      "combatPower": 238,
+      "stats": {
+        "hp": 52,
+        "attack": 10,
+        "range": 2,
+        "energy": 5,
+        "speed": 2,
+        "armor": 19,
+        "resistance": 12,
+        "critChance": 7,
+        "accuracy": 82,
+        "evasion": 4,
+        "guardBreak": 8,
+        "combatPower": 238
+      },
+      "gear": [
+        "Aten Verdict Implement",
+        "Aten-Ra Realmplate",
+        "Aten Solar Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-002",
+      "name": "Khemet Suncrown",
+      "faction": "Aten Ra",
+      "role": "Battery",
+      "rarity": "Epic",
+      "combatPower": 226,
+      "stats": {
+        "hp": 38,
+        "attack": 11,
+        "range": 3,
+        "energy": 5,
+        "speed": 3,
+        "armor": 9,
+        "resistance": 14,
+        "critChance": 8,
+        "accuracy": 84,
+        "evasion": 7,
+        "guardBreak": 6,
+        "combatPower": 226
+      },
+      "gear": [
+        "Aten Sunseal Implement",
+        "Khemet Suncrown Realmplate",
+        "Khemet Solar Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-003",
+      "name": "Nefra Obsidian Dawn",
+      "faction": "Aten Ra",
+      "role": "Controller",
+      "rarity": "Epic",
+      "combatPower": 226,
+      "stats": {
+        "hp": 38,
+        "attack": 10,
+        "range": 4,
+        "energy": 5,
+        "speed": 3,
+        "armor": 8,
+        "resistance": 16,
+        "critChance": 7,
+        "accuracy": 86,
+        "evasion": 8,
+        "guardBreak": 9,
+        "combatPower": 226
+      },
+      "gear": [
+        "Aten Pylon Implement",
+        "Nefra Obsidian Dawn Realmplate",
+        "Nefra Solar Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-004",
+      "name": "Orru Prism Verdict",
+      "faction": "Aten Ra",
+      "role": "Breaker",
+      "rarity": "Rare",
+      "combatPower": 214,
+      "stats": {
+        "hp": 44,
+        "attack": 13,
+        "range": 2,
+        "energy": 3,
+        "speed": 2,
+        "armor": 12,
+        "resistance": 8,
+        "critChance": 9,
+        "accuracy": 81,
+        "evasion": 4,
+        "guardBreak": 18,
+        "combatPower": 214
+      },
+      "gear": [
+        "Aten Horizon Implement",
+        "Orru Prism Verdict Realmplate",
+        "Orru Solar Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-005",
+      "name": "Sutekh Dune Eclipse",
+      "faction": "Aten Ra",
+      "role": "Disruptor",
+      "rarity": "Epic",
+      "combatPower": 225,
+      "stats": {
+        "hp": 34,
+        "attack": 11,
+        "range": 3,
+        "energy": 5,
+        "speed": 3,
+        "armor": 7,
+        "resistance": 17,
+        "critChance": 9,
+        "accuracy": 85,
+        "evasion": 9,
+        "guardBreak": 10,
+        "combatPower": 225
+      },
+      "gear": [
+        "Aten Verdict Implement",
+        "Sutekh Dune Eclipse Realmplate",
+        "Sutekh Solar Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-006",
+      "name": "Iset Riverlight Throne",
+      "faction": "Aten Ra",
+      "role": "Sustain",
+      "rarity": "Rare",
+      "combatPower": 205,
+      "stats": {
+        "hp": 44,
+        "attack": 8,
+        "range": 2,
+        "energy": 4,
+        "speed": 2,
+        "armor": 11,
+        "resistance": 18,
+        "critChance": 5,
+        "accuracy": 82,
+        "evasion": 5,
+        "guardBreak": 7,
+        "combatPower": 205
+      },
+      "gear": [
+        "Aten Sunseal Implement",
+        "Iset Riverlight Throne Realmplate",
+        "Iset Solar Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-007",
+      "name": "Karnu Glass Horizon",
+      "faction": "Aten Ra",
+      "role": "Artillery",
+      "rarity": "Epic",
+      "combatPower": 234,
+      "stats": {
+        "hp": 36,
+        "attack": 15,
+        "range": 5,
+        "energy": 4,
+        "speed": 2,
+        "armor": 5,
+        "resistance": 11,
+        "critChance": 11,
+        "accuracy": 88,
+        "evasion": 5,
+        "guardBreak": 11,
+        "combatPower": 234
+      },
+      "gear": [
+        "Aten Pylon Implement",
+        "Karnu Glass Horizon Realmplate",
+        "Karnu Solar Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-008",
+      "name": "Maahes Noon Bastion",
+      "faction": "Aten Ra",
+      "role": "Guardian",
+      "rarity": "Rare",
+      "combatPower": 210,
+      "stats": {
+        "hp": 46,
+        "attack": 9,
+        "range": 1,
+        "energy": 4,
+        "speed": 2,
+        "armor": 18,
+        "resistance": 12,
+        "critChance": 5,
+        "accuracy": 80,
+        "evasion": 3,
+        "guardBreak": 12,
+        "combatPower": 210
+      },
+      "gear": [
+        "Aten Horizon Implement",
+        "Maahes Noon Bastion Realmplate",
+        "Maahes Solar Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-009",
+      "name": "Amunet Hidden Sun",
+      "faction": "Aten Ra",
+      "role": "Assassin",
+      "rarity": "Legendary",
+      "combatPower": 238,
+      "stats": {
+        "hp": 38,
+        "attack": 14,
+        "range": 1,
+        "energy": 5,
+        "speed": 4,
+        "armor": 7,
+        "resistance": 10,
+        "critChance": 18,
+        "accuracy": 89,
+        "evasion": 14,
+        "guardBreak": 9,
+        "combatPower": 238
+      },
+      "gear": [
+        "Aten Verdict Implement",
+        "Amunet Hidden Sun Realmplate",
+        "Amunet Solar Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-010",
+      "name": "The Allfather Stormvein",
+      "faction": "Asgardian",
+      "role": "Defender",
+      "rarity": "Legendary",
+      "combatPower": 234,
+      "stats": {
+        "hp": 48,
+        "attack": 10,
+        "range": 2,
+        "energy": 5,
+        "speed": 2,
+        "armor": 19,
+        "resistance": 12,
+        "critChance": 7,
+        "accuracy": 82,
+        "evasion": 4,
+        "guardBreak": 8,
+        "combatPower": 234
+      },
+      "gear": [
+        "Runebound Rune Implement",
+        "The Allfather Stormvein Realmplate",
+        "The Oathstorm Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-011",
+      "name": "Hrothar Rune-Mountain",
+      "faction": "Asgardian",
+      "role": "Battery",
+      "rarity": "Epic",
+      "combatPower": 228,
+      "stats": {
+        "hp": 40,
+        "attack": 11,
+        "range": 3,
+        "energy": 5,
+        "speed": 3,
+        "armor": 9,
+        "resistance": 14,
+        "critChance": 8,
+        "accuracy": 84,
+        "evasion": 7,
+        "guardBreak": 6,
+        "combatPower": 228
+      },
+      "gear": [
+        "Runebound Anvil Implement",
+        "Hrothar Rune-Mountain Realmplate",
+        "Hrothar Oathstorm Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-012",
+      "name": "Skeld Iron Tempest",
+      "faction": "Asgardian",
+      "role": "Controller",
+      "rarity": "Epic",
+      "combatPower": 228,
+      "stats": {
+        "hp": 40,
+        "attack": 10,
+        "range": 4,
+        "energy": 5,
+        "speed": 3,
+        "armor": 8,
+        "resistance": 16,
+        "critChance": 7,
+        "accuracy": 86,
+        "evasion": 8,
+        "guardBreak": 9,
+        "combatPower": 228
+      },
+      "gear": [
+        "Runebound Thunder Implement",
+        "Skeld Iron Tempest Realmplate",
+        "Skeld Oathstorm Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-013",
+      "name": "Eirwyn Valkstorm",
+      "faction": "Asgardian",
+      "role": "Breaker",
+      "rarity": "Rare",
+      "combatPower": 210,
+      "stats": {
+        "hp": 40,
+        "attack": 13,
+        "range": 2,
+        "energy": 3,
+        "speed": 2,
+        "armor": 12,
+        "resistance": 8,
+        "critChance": 9,
+        "accuracy": 81,
+        "evasion": 4,
+        "guardBreak": 18,
+        "combatPower": 210
+      },
+      "gear": [
+        "Runebound Oath Implement",
+        "Eirwyn Valkstorm Realmplate",
+        "Eirwyn Oathstorm Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-014",
+      "name": "Mordun Frost-Anvil",
+      "faction": "Asgardian",
+      "role": "Disruptor",
+      "rarity": "Epic",
+      "combatPower": 227,
+      "stats": {
+        "hp": 36,
+        "attack": 11,
+        "range": 3,
+        "energy": 5,
+        "speed": 3,
+        "armor": 7,
+        "resistance": 17,
+        "critChance": 9,
+        "accuracy": 85,
+        "evasion": 9,
+        "guardBreak": 10,
+        "combatPower": 227
+      },
+      "gear": [
+        "Runebound Rune Implement",
+        "Mordun Frost-Anvil Realmplate",
+        "Mordun Oathstorm Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-015",
+      "name": "Veyra Thunderloom",
+      "faction": "Asgardian",
+      "role": "Sustain",
+      "rarity": "Rare",
+      "combatPower": 207,
+      "stats": {
+        "hp": 46,
+        "attack": 8,
+        "range": 2,
+        "energy": 4,
+        "speed": 2,
+        "armor": 11,
+        "resistance": 18,
+        "critChance": 5,
+        "accuracy": 82,
+        "evasion": 5,
+        "guardBreak": 7,
+        "combatPower": 207
+      },
+      "gear": [
+        "Runebound Anvil Implement",
+        "Veyra Thunderloom Realmplate",
+        "Veyra Oathstorm Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-016",
+      "name": "Ragnor Skybreaker",
+      "faction": "Asgardian",
+      "role": "Artillery",
+      "rarity": "Epic",
+      "combatPower": 230,
+      "stats": {
+        "hp": 32,
+        "attack": 15,
+        "range": 5,
+        "energy": 4,
+        "speed": 2,
+        "armor": 5,
+        "resistance": 11,
+        "critChance": 11,
+        "accuracy": 88,
+        "evasion": 5,
+        "guardBreak": 11,
+        "combatPower": 230
+      },
+      "gear": [
+        "Runebound Thunder Implement",
+        "Ragnor Skybreaker Realmplate",
+        "Ragnor Oathstorm Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-017",
+      "name": "Ullr Snow-Crown",
+      "faction": "Asgardian",
+      "role": "Guardian",
+      "rarity": "Rare",
+      "combatPower": 212,
+      "stats": {
+        "hp": 48,
+        "attack": 9,
+        "range": 1,
+        "energy": 4,
+        "speed": 2,
+        "armor": 18,
+        "resistance": 12,
+        "critChance": 5,
+        "accuracy": 80,
+        "evasion": 3,
+        "guardBreak": 12,
+        "combatPower": 212
+      },
+      "gear": [
+        "Runebound Oath Implement",
+        "Ullr Snow-Crown Realmplate",
+        "Ullr Oathstorm Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-018",
+      "name": "Sigrun Oathflare",
+      "faction": "Asgardian",
+      "role": "Assassin",
+      "rarity": "Legendary",
+      "combatPower": 240,
+      "stats": {
+        "hp": 40,
+        "attack": 14,
+        "range": 1,
+        "energy": 5,
+        "speed": 4,
+        "armor": 7,
+        "resistance": 10,
+        "critChance": 18,
+        "accuracy": 89,
+        "evasion": 14,
+        "guardBreak": 9,
+        "combatPower": 240
+      },
+      "gear": [
+        "Runebound Rune Implement",
+        "Sigrun Oathflare Realmplate",
+        "Sigrun Oathstorm Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-019",
+      "name": "Aurelion Heaven-Marrow",
+      "faction": "Olympian",
+      "role": "Defender",
+      "rarity": "Legendary",
+      "combatPower": 242,
+      "stats": {
+        "hp": 50,
+        "attack": 11,
+        "range": 2,
+        "energy": 5,
+        "speed": 2,
+        "armor": 19,
+        "resistance": 12,
+        "critChance": 7,
+        "accuracy": 82,
+        "evasion": 4,
+        "guardBreak": 8,
+        "combatPower": 242
+      },
+      "gear": [
+        "Olympian Summit Implement",
+        "Aurelion Heaven-Marrow Realmplate",
+        "Aurelion Laurel Glory Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-020",
+      "name": "Kallix Marble Thunder",
+      "faction": "Olympian",
+      "role": "Battery",
+      "rarity": "Epic",
+      "combatPower": 230,
+      "stats": {
+        "hp": 42,
+        "attack": 11,
+        "range": 3,
+        "energy": 5,
+        "speed": 3,
+        "armor": 9,
+        "resistance": 14,
+        "critChance": 8,
+        "accuracy": 84,
+        "evasion": 7,
+        "guardBreak": 6,
+        "combatPower": 230
+      },
+      "gear": [
+        "Olympian Contest Implement",
+        "Kallix Marble Thunder Realmplate",
+        "Kallix Laurel Glory Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-021",
+      "name": "Thyressa Golden Aegis",
+      "faction": "Olympian",
+      "role": "Controller",
+      "rarity": "Epic",
+      "combatPower": 224,
+      "stats": {
+        "hp": 36,
+        "attack": 10,
+        "range": 4,
+        "energy": 5,
+        "speed": 3,
+        "armor": 8,
+        "resistance": 16,
+        "critChance": 7,
+        "accuracy": 86,
+        "evasion": 8,
+        "guardBreak": 9,
+        "combatPower": 224
+      },
+      "gear": [
+        "Olympian Laurel Implement",
+        "Thyressa Golden Aegis Realmplate",
+        "Thyressa Laurel Glory Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-022",
+      "name": "Ilyon Laurel Flame",
+      "faction": "Olympian",
+      "role": "Breaker",
+      "rarity": "Rare",
+      "combatPower": 212,
+      "stats": {
+        "hp": 42,
+        "attack": 13,
+        "range": 2,
+        "energy": 3,
+        "speed": 2,
+        "armor": 12,
+        "resistance": 8,
+        "critChance": 9,
+        "accuracy": 81,
+        "evasion": 4,
+        "guardBreak": 18,
+        "combatPower": 212
+      },
+      "gear": [
+        "Olympian Aegis Implement",
+        "Ilyon Laurel Flame Realmplate",
+        "Ilyon Laurel Glory Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-023",
+      "name": "Nikos Star-Lance",
+      "faction": "Olympian",
+      "role": "Disruptor",
+      "rarity": "Epic",
+      "combatPower": 229,
+      "stats": {
+        "hp": 38,
+        "attack": 11,
+        "range": 3,
+        "energy": 5,
+        "speed": 3,
+        "armor": 7,
+        "resistance": 17,
+        "critChance": 9,
+        "accuracy": 85,
+        "evasion": 9,
+        "guardBreak": 10,
+        "combatPower": 229
+      },
+      "gear": [
+        "Olympian Summit Implement",
+        "Nikos Star-Lance Realmplate",
+        "Nikos Laurel Glory Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-024",
+      "name": "Dione Victory Mirror",
+      "faction": "Olympian",
+      "role": "Sustain",
+      "rarity": "Rare",
+      "combatPower": 203,
+      "stats": {
+        "hp": 42,
+        "attack": 8,
+        "range": 2,
+        "energy": 4,
+        "speed": 2,
+        "armor": 11,
+        "resistance": 18,
+        "critChance": 5,
+        "accuracy": 82,
+        "evasion": 5,
+        "guardBreak": 7,
+        "combatPower": 203
+      },
+      "gear": [
+        "Olympian Contest Implement",
+        "Dione Victory Mirror Realmplate",
+        "Dione Laurel Glory Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-025",
+      "name": "Helior Bronze Summit",
+      "faction": "Olympian",
+      "role": "Artillery",
+      "rarity": "Epic",
+      "combatPower": 232,
+      "stats": {
+        "hp": 34,
+        "attack": 15,
+        "range": 5,
+        "energy": 4,
+        "speed": 2,
+        "armor": 5,
+        "resistance": 11,
+        "critChance": 11,
+        "accuracy": 88,
+        "evasion": 5,
+        "guardBreak": 11,
+        "combatPower": 232
+      },
+      "gear": [
+        "Olympian Laurel Implement",
+        "Helior Bronze Summit Realmplate",
+        "Helior Laurel Glory Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-026",
+      "name": "Pallas Oath-Spear",
+      "faction": "Olympian",
+      "role": "Guardian",
+      "rarity": "Rare",
+      "combatPower": 214,
+      "stats": {
+        "hp": 50,
+        "attack": 9,
+        "range": 1,
+        "energy": 4,
+        "speed": 2,
+        "armor": 18,
+        "resistance": 12,
+        "critChance": 5,
+        "accuracy": 80,
+        "evasion": 3,
+        "guardBreak": 12,
+        "combatPower": 214
+      },
+      "gear": [
+        "Olympian Aegis Implement",
+        "Pallas Oath-Spear Realmplate",
+        "Pallas Laurel Glory Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-027",
+      "name": "Eiren Crowned Horizon",
+      "faction": "Olympian",
+      "role": "Assassin",
+      "rarity": "Legendary",
+      "combatPower": 236,
+      "stats": {
+        "hp": 36,
+        "attack": 14,
+        "range": 1,
+        "energy": 5,
+        "speed": 4,
+        "armor": 7,
+        "resistance": 10,
+        "critChance": 18,
+        "accuracy": 89,
+        "evasion": 14,
+        "guardBreak": 9,
+        "combatPower": 236
+      },
+      "gear": [
+        "Olympian Summit Implement",
+        "Eiren Crowned Horizon Realmplate",
+        "Eiren Laurel Glory Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-028",
+      "name": "Amaterion Spirit-Sun",
+      "faction": "Kami",
+      "role": "Defender",
+      "rarity": "Legendary",
+      "combatPower": 238,
+      "stats": {
+        "hp": 52,
+        "attack": 10,
+        "range": 2,
+        "energy": 5,
+        "speed": 2,
+        "armor": 19,
+        "resistance": 12,
+        "critChance": 7,
+        "accuracy": 82,
+        "evasion": 4,
+        "guardBreak": 8,
+        "combatPower": 238
+      },
+      "gear": [
+        "Kami Mist Implement",
+        "Amaterion Spirit-Sun Realmplate",
+        "Amaterion Spirit Balance Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-029",
+      "name": "Tsukiro Moon-Veil",
+      "faction": "Kami",
+      "role": "Battery",
+      "rarity": "Epic",
+      "combatPower": 232,
+      "stats": {
+        "hp": 38,
+        "attack": 12,
+        "range": 3,
+        "energy": 5,
+        "speed": 3,
+        "armor": 9,
+        "resistance": 14,
+        "critChance": 8,
+        "accuracy": 84,
+        "evasion": 7,
+        "guardBreak": 6,
+        "combatPower": 232
+      },
+      "gear": [
+        "Kami Shrine Implement",
+        "Tsukiro Moon-Veil Realmplate",
+        "Tsukiro Spirit Balance Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-030",
+      "name": "Raidenko Storm Script",
+      "faction": "Kami",
+      "role": "Controller",
+      "rarity": "Epic",
+      "combatPower": 226,
+      "stats": {
+        "hp": 38,
+        "attack": 10,
+        "range": 4,
+        "energy": 5,
+        "speed": 3,
+        "armor": 8,
+        "resistance": 16,
+        "critChance": 7,
+        "accuracy": 86,
+        "evasion": 8,
+        "guardBreak": 9,
+        "combatPower": 226
+      },
+      "gear": [
+        "Kami Moonveil Implement",
+        "Raidenko Storm Script Realmplate",
+        "Raidenko Spirit Balance Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-031",
+      "name": "Mizuka Shrine Tide",
+      "faction": "Kami",
+      "role": "Breaker",
+      "rarity": "Rare",
+      "combatPower": 214,
+      "stats": {
+        "hp": 44,
+        "attack": 13,
+        "range": 2,
+        "energy": 3,
+        "speed": 2,
+        "armor": 12,
+        "resistance": 8,
+        "critChance": 9,
+        "accuracy": 81,
+        "evasion": 4,
+        "guardBreak": 18,
+        "combatPower": 214
+      },
+      "gear": [
+        "Kami Seal Implement",
+        "Mizuka Shrine Tide Realmplate",
+        "Mizuka Spirit Balance Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-032",
+      "name": "Kageyori Shadow Gate",
+      "faction": "Kami",
+      "role": "Disruptor",
+      "rarity": "Epic",
+      "combatPower": 225,
+      "stats": {
+        "hp": 34,
+        "attack": 11,
+        "range": 3,
+        "energy": 5,
+        "speed": 3,
+        "armor": 7,
+        "resistance": 17,
+        "critChance": 9,
+        "accuracy": 85,
+        "evasion": 9,
+        "guardBreak": 10,
+        "combatPower": 225
+      },
+      "gear": [
+        "Kami Mist Implement",
+        "Kageyori Shadow Gate Realmplate",
+        "Kageyori Spirit Balance Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-033",
+      "name": "Hanae Blossom Ward",
+      "faction": "Kami",
+      "role": "Sustain",
+      "rarity": "Rare",
+      "combatPower": 205,
+      "stats": {
+        "hp": 44,
+        "attack": 8,
+        "range": 2,
+        "energy": 4,
+        "speed": 2,
+        "armor": 11,
+        "resistance": 18,
+        "critChance": 5,
+        "accuracy": 82,
+        "evasion": 5,
+        "guardBreak": 7,
+        "combatPower": 205
+      },
+      "gear": [
+        "Kami Shrine Implement",
+        "Hanae Blossom Ward Realmplate",
+        "Hanae Spirit Balance Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-034",
+      "name": "Onimaru Red Seal",
+      "faction": "Kami",
+      "role": "Artillery",
+      "rarity": "Epic",
+      "combatPower": 234,
+      "stats": {
+        "hp": 36,
+        "attack": 15,
+        "range": 5,
+        "energy": 4,
+        "speed": 2,
+        "armor": 5,
+        "resistance": 11,
+        "critChance": 11,
+        "accuracy": 88,
+        "evasion": 5,
+        "guardBreak": 11,
+        "combatPower": 234
+      },
+      "gear": [
+        "Kami Moonveil Implement",
+        "Onimaru Red Seal Realmplate",
+        "Onimaru Spirit Balance Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-035",
+      "name": "Korin Mist Path",
+      "faction": "Kami",
+      "role": "Guardian",
+      "rarity": "Rare",
+      "combatPower": 210,
+      "stats": {
+        "hp": 46,
+        "attack": 9,
+        "range": 1,
+        "energy": 4,
+        "speed": 2,
+        "armor": 18,
+        "resistance": 12,
+        "critChance": 5,
+        "accuracy": 80,
+        "evasion": 3,
+        "guardBreak": 12,
+        "combatPower": 210
+      },
+      "gear": [
+        "Kami Seal Implement",
+        "Korin Mist Path Realmplate",
+        "Korin Spirit Balance Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-036",
+      "name": "Yamabito Stone Prayer",
+      "faction": "Kami",
+      "role": "Assassin",
+      "rarity": "Legendary",
+      "combatPower": 238,
+      "stats": {
+        "hp": 38,
+        "attack": 14,
+        "range": 1,
+        "energy": 5,
+        "speed": 4,
+        "armor": 7,
+        "resistance": 10,
+        "critChance": 18,
+        "accuracy": 89,
+        "evasion": 14,
+        "guardBreak": 9,
+        "combatPower": 238
+      },
+      "gear": [
+        "Kami Mist Implement",
+        "Yamabito Stone Prayer Realmplate",
+        "Yamabito Spirit Balance Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-037",
+      "name": "Dagoran Root-Crown",
+      "faction": "Tuatha",
+      "role": "Defender",
+      "rarity": "Legendary",
+      "combatPower": 234,
+      "stats": {
+        "hp": 48,
+        "attack": 10,
+        "range": 2,
+        "energy": 5,
+        "speed": 2,
+        "armor": 19,
+        "resistance": 12,
+        "critChance": 7,
+        "accuracy": 82,
+        "evasion": 4,
+        "guardBreak": 8,
+        "combatPower": 234
+      },
+      "gear": [
+        "Tuatha Root Implement",
+        "Dagoran Root-Crown Realmplate",
+        "Dagoran Grove Pulse Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-038",
+      "name": "Eryndor Emerald Oath",
+      "faction": "Tuatha",
+      "role": "Battery",
+      "rarity": "Epic",
+      "combatPower": 228,
+      "stats": {
+        "hp": 40,
+        "attack": 11,
+        "range": 3,
+        "energy": 5,
+        "speed": 3,
+        "armor": 9,
+        "resistance": 14,
+        "critChance": 8,
+        "accuracy": 84,
+        "evasion": 7,
+        "guardBreak": 6,
+        "combatPower": 228
+      },
+      "gear": [
+        "Tuatha Moonwell Implement",
+        "Eryndor Emerald Oath Realmplate",
+        "Eryndor Grove Pulse Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-039",
+      "name": "Melian Moon-Grove",
+      "faction": "Tuatha",
+      "role": "Controller",
+      "rarity": "Epic",
+      "combatPower": 234,
+      "stats": {
+        "hp": 40,
+        "attack": 11,
+        "range": 4,
+        "energy": 5,
+        "speed": 3,
+        "armor": 8,
+        "resistance": 16,
+        "critChance": 7,
+        "accuracy": 86,
+        "evasion": 8,
+        "guardBreak": 9,
+        "combatPower": 234
+      },
+      "gear": [
+        "Tuatha Thorn Implement",
+        "Melian Moon-Grove Realmplate",
+        "Melian Grove Pulse Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-040",
+      "name": "Bran Granite Bough",
+      "faction": "Tuatha",
+      "role": "Breaker",
+      "rarity": "Rare",
+      "combatPower": 210,
+      "stats": {
+        "hp": 40,
+        "attack": 13,
+        "range": 2,
+        "energy": 3,
+        "speed": 2,
+        "armor": 12,
+        "resistance": 8,
+        "critChance": 9,
+        "accuracy": 81,
+        "evasion": 4,
+        "guardBreak": 18,
+        "combatPower": 210
+      },
+      "gear": [
+        "Tuatha Barrow Implement",
+        "Bran Granite Bough Realmplate",
+        "Bran Grove Pulse Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-041",
+      "name": "Nimue Silver Pool",
+      "faction": "Tuatha",
+      "role": "Disruptor",
+      "rarity": "Epic",
+      "combatPower": 227,
+      "stats": {
+        "hp": 36,
+        "attack": 11,
+        "range": 3,
+        "energy": 5,
+        "speed": 3,
+        "armor": 7,
+        "resistance": 17,
+        "critChance": 9,
+        "accuracy": 85,
+        "evasion": 9,
+        "guardBreak": 10,
+        "combatPower": 227
+      },
+      "gear": [
+        "Tuatha Root Implement",
+        "Nimue Silver Pool Realmplate",
+        "Nimue Grove Pulse Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-042",
+      "name": "Cernan Wild Vale",
+      "faction": "Tuatha",
+      "role": "Sustain",
+      "rarity": "Rare",
+      "combatPower": 207,
+      "stats": {
+        "hp": 46,
+        "attack": 8,
+        "range": 2,
+        "energy": 4,
+        "speed": 2,
+        "armor": 11,
+        "resistance": 18,
+        "critChance": 5,
+        "accuracy": 82,
+        "evasion": 5,
+        "guardBreak": 7,
+        "combatPower": 207
+      },
+      "gear": [
+        "Tuatha Moonwell Implement",
+        "Cernan Wild Vale Realmplate",
+        "Cernan Grove Pulse Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-043",
+      "name": "Ailbhe Thorn-Song",
+      "faction": "Tuatha",
+      "role": "Artillery",
+      "rarity": "Epic",
+      "combatPower": 230,
+      "stats": {
+        "hp": 32,
+        "attack": 15,
+        "range": 5,
+        "energy": 4,
+        "speed": 2,
+        "armor": 5,
+        "resistance": 11,
+        "critChance": 11,
+        "accuracy": 88,
+        "evasion": 5,
+        "guardBreak": 11,
+        "combatPower": 230
+      },
+      "gear": [
+        "Tuatha Thorn Implement",
+        "Ailbhe Thorn-Song Realmplate",
+        "Ailbhe Grove Pulse Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-044",
+      "name": "Oghma Stone Script",
+      "faction": "Tuatha",
+      "role": "Guardian",
+      "rarity": "Rare",
+      "combatPower": 212,
+      "stats": {
+        "hp": 48,
+        "attack": 9,
+        "range": 1,
+        "energy": 4,
+        "speed": 2,
+        "armor": 18,
+        "resistance": 12,
+        "critChance": 5,
+        "accuracy": 80,
+        "evasion": 3,
+        "guardBreak": 12,
+        "combatPower": 212
+      },
+      "gear": [
+        "Tuatha Barrow Implement",
+        "Oghma Stone Script Realmplate",
+        "Oghma Grove Pulse Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-045",
+      "name": "Tara Dawn Barrow",
+      "faction": "Tuatha",
+      "role": "Assassin",
+      "rarity": "Legendary",
+      "combatPower": 240,
+      "stats": {
+        "hp": 40,
+        "attack": 14,
+        "range": 1,
+        "energy": 5,
+        "speed": 4,
+        "armor": 7,
+        "resistance": 10,
+        "critChance": 18,
+        "accuracy": 89,
+        "evasion": 14,
+        "guardBreak": 9,
+        "combatPower": 240
+      },
+      "gear": [
+        "Tuatha Root Implement",
+        "Tara Dawn Barrow Realmplate",
+        "Tara Grove Pulse Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-046",
+      "name": "Seraphel, the Throne Eternal",
+      "faction": "Empyrean",
+      "role": "Defender",
+      "rarity": "Legendary",
+      "combatPower": 236,
+      "stats": {
+        "hp": 50,
+        "attack": 10,
+        "range": 2,
+        "energy": 5,
+        "speed": 2,
+        "armor": 19,
+        "resistance": 12,
+        "critChance": 7,
+        "accuracy": 82,
+        "evasion": 4,
+        "guardBreak": 8,
+        "combatPower": 236
+      },
+      "gear": [
+        "Empyrean Choir Implement",
+        "Seraphel Realmplate",
+        "Seraphel Edict Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-047",
+      "name": "Caelion Dawnborn Axis",
+      "faction": "Empyrean",
+      "role": "Battery",
+      "rarity": "Epic",
+      "combatPower": 230,
+      "stats": {
+        "hp": 42,
+        "attack": 11,
+        "range": 3,
+        "energy": 5,
+        "speed": 3,
+        "armor": 9,
+        "resistance": 14,
+        "critChance": 8,
+        "accuracy": 84,
+        "evasion": 7,
+        "guardBreak": 6,
+        "combatPower": 230
+      },
+      "gear": [
+        "Empyrean Throne Implement",
+        "Caelion Dawnborn Axis Realmplate",
+        "Caelion Edict Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-048",
+      "name": "Aurelia Radiant Spear",
+      "faction": "Empyrean",
+      "role": "Controller",
+      "rarity": "Epic",
+      "combatPower": 224,
+      "stats": {
+        "hp": 36,
+        "attack": 10,
+        "range": 4,
+        "energy": 5,
+        "speed": 3,
+        "armor": 8,
+        "resistance": 16,
+        "critChance": 7,
+        "accuracy": 86,
+        "evasion": 8,
+        "guardBreak": 9,
+        "combatPower": 224
+      },
+      "gear": [
+        "Empyrean Axis Implement",
+        "Aurelia Radiant Spear Realmplate",
+        "Aurelia Edict Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-049",
+      "name": "Malachor Law Warden",
+      "faction": "Empyrean",
+      "role": "Breaker",
+      "rarity": "Rare",
+      "combatPower": 218,
+      "stats": {
+        "hp": 42,
+        "attack": 14,
+        "range": 2,
+        "energy": 3,
+        "speed": 2,
+        "armor": 12,
+        "resistance": 8,
+        "critChance": 9,
+        "accuracy": 81,
+        "evasion": 4,
+        "guardBreak": 18,
+        "combatPower": 218
+      },
+      "gear": [
+        "Empyrean Edict Implement",
+        "Malachor Law Warden Realmplate",
+        "Malachor Edict Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-050",
+      "name": "Elyndra Choir Crown",
+      "faction": "Empyrean",
+      "role": "Disruptor",
+      "rarity": "Epic",
+      "combatPower": 229,
+      "stats": {
+        "hp": 38,
+        "attack": 11,
+        "range": 3,
+        "energy": 5,
+        "speed": 3,
+        "armor": 7,
+        "resistance": 17,
+        "critChance": 9,
+        "accuracy": 85,
+        "evasion": 9,
+        "guardBreak": 10,
+        "combatPower": 229
+      },
+      "gear": [
+        "Empyrean Choir Implement",
+        "Elyndra Choir Crown Realmplate",
+        "Elyndra Edict Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-051",
+      "name": "Orison White Citadel",
+      "faction": "Empyrean",
+      "role": "Sustain",
+      "rarity": "Rare",
+      "combatPower": 203,
+      "stats": {
+        "hp": 42,
+        "attack": 8,
+        "range": 2,
+        "energy": 4,
+        "speed": 2,
+        "armor": 11,
+        "resistance": 18,
+        "critChance": 5,
+        "accuracy": 82,
+        "evasion": 5,
+        "guardBreak": 7,
+        "combatPower": 203
+      },
+      "gear": [
+        "Empyrean Throne Implement",
+        "Orison White Citadel Realmplate",
+        "Orison Edict Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-052",
+      "name": "Vespera Mercy Blade",
+      "faction": "Empyrean",
+      "role": "Artillery",
+      "rarity": "Epic",
+      "combatPower": 232,
+      "stats": {
+        "hp": 34,
+        "attack": 15,
+        "range": 5,
+        "energy": 4,
+        "speed": 2,
+        "armor": 5,
+        "resistance": 11,
+        "critChance": 11,
+        "accuracy": 88,
+        "evasion": 5,
+        "guardBreak": 11,
+        "combatPower": 232
+      },
+      "gear": [
+        "Empyrean Axis Implement",
+        "Vespera Mercy Blade Realmplate",
+        "Vespera Edict Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-053",
+      "name": "Axiom Gate Choir",
+      "faction": "Empyrean",
+      "role": "Guardian",
+      "rarity": "Rare",
+      "combatPower": 214,
+      "stats": {
+        "hp": 50,
+        "attack": 9,
+        "range": 1,
+        "energy": 4,
+        "speed": 2,
+        "armor": 18,
+        "resistance": 12,
+        "critChance": 5,
+        "accuracy": 80,
+        "evasion": 3,
+        "guardBreak": 12,
+        "combatPower": 214
+      },
+      "gear": [
+        "Empyrean Edict Implement",
+        "Axiom Gate Choir Realmplate",
+        "Axiom Edict Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-054",
+      "name": "Theon Still Horizon",
+      "faction": "Empyrean",
+      "role": "Assassin",
+      "rarity": "Legendary",
+      "combatPower": 236,
+      "stats": {
+        "hp": 36,
+        "attack": 14,
+        "range": 1,
+        "energy": 5,
+        "speed": 4,
+        "armor": 7,
+        "resistance": 10,
+        "critChance": 18,
+        "accuracy": 89,
+        "evasion": 14,
+        "guardBreak": 9,
+        "combatPower": 236
+      },
+      "gear": [
+        "Empyrean Choir Implement",
+        "Theon Still Horizon Realmplate",
+        "Theon Edict Charge Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-055",
+      "name": "Mordrath, the Infernal King",
+      "faction": "Infernal Dominion",
+      "role": "Defender",
+      "rarity": "Legendary",
+      "combatPower": 238,
+      "stats": {
+        "hp": 52,
+        "attack": 10,
+        "range": 2,
+        "energy": 5,
+        "speed": 2,
+        "armor": 19,
+        "resistance": 12,
+        "critChance": 7,
+        "accuracy": 82,
+        "evasion": 4,
+        "guardBreak": 8,
+        "combatPower": 238
+      },
+      "gear": [
+        "Dominion Wound Implement",
+        "Mordrath Realmplate",
+        "Mordrath Dominion Heat Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-056",
+      "name": "Varkul Bloodforged Crown",
+      "faction": "Infernal Dominion",
+      "role": "Battery",
+      "rarity": "Epic",
+      "combatPower": 226,
+      "stats": {
+        "hp": 38,
+        "attack": 11,
+        "range": 3,
+        "energy": 5,
+        "speed": 3,
+        "armor": 9,
+        "resistance": 14,
+        "critChance": 8,
+        "accuracy": 84,
+        "evasion": 7,
+        "guardBreak": 6,
+        "combatPower": 226
+      },
+      "gear": [
+        "Dominion Crown Implement",
+        "Varkul Bloodforged Crown Realmplate",
+        "Varkul Dominion Heat Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-057",
+      "name": "Nyxara Flameborn Court",
+      "faction": "Infernal Dominion",
+      "role": "Controller",
+      "rarity": "Epic",
+      "combatPower": 226,
+      "stats": {
+        "hp": 38,
+        "attack": 10,
+        "range": 4,
+        "energy": 5,
+        "speed": 3,
+        "armor": 8,
+        "resistance": 16,
+        "critChance": 7,
+        "accuracy": 86,
+        "evasion": 8,
+        "guardBreak": 9,
+        "combatPower": 226
+      },
+      "gear": [
+        "Dominion Chain Implement",
+        "Nyxara Flameborn Court Realmplate",
+        "Nyxara Dominion Heat Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-058",
+      "name": "Azrakar Chainwarden",
+      "faction": "Infernal Dominion",
+      "role": "Breaker",
+      "rarity": "Rare",
+      "combatPower": 214,
+      "stats": {
+        "hp": 44,
+        "attack": 13,
+        "range": 2,
+        "energy": 3,
+        "speed": 2,
+        "armor": 12,
+        "resistance": 8,
+        "critChance": 9,
+        "accuracy": 81,
+        "evasion": 4,
+        "guardBreak": 18,
+        "combatPower": 214
+      },
+      "gear": [
+        "Dominion Cinder Implement",
+        "Azrakar Chainwarden Realmplate",
+        "Azrakar Dominion Heat Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-059",
+      "name": "Orryx Ash Dominion",
+      "faction": "Infernal Dominion",
+      "role": "Disruptor",
+      "rarity": "Epic",
+      "combatPower": 231,
+      "stats": {
+        "hp": 34,
+        "attack": 12,
+        "range": 3,
+        "energy": 5,
+        "speed": 3,
+        "armor": 7,
+        "resistance": 17,
+        "critChance": 9,
+        "accuracy": 85,
+        "evasion": 9,
+        "guardBreak": 10,
+        "combatPower": 231
+      },
+      "gear": [
+        "Dominion Wound Implement",
+        "Orryx Ash Dominion Realmplate",
+        "Orryx Dominion Heat Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-060",
+      "name": "Malvera Ember Throne",
+      "faction": "Infernal Dominion",
+      "role": "Sustain",
+      "rarity": "Rare",
+      "combatPower": 205,
+      "stats": {
+        "hp": 44,
+        "attack": 8,
+        "range": 2,
+        "energy": 4,
+        "speed": 2,
+        "armor": 11,
+        "resistance": 18,
+        "critChance": 5,
+        "accuracy": 82,
+        "evasion": 5,
+        "guardBreak": 7,
+        "combatPower": 205
+      },
+      "gear": [
+        "Dominion Crown Implement",
+        "Malvera Ember Throne Realmplate",
+        "Malvera Dominion Heat Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-061",
+      "name": "Kharon Black Iron",
+      "faction": "Infernal Dominion",
+      "role": "Artillery",
+      "rarity": "Epic",
+      "combatPower": 234,
+      "stats": {
+        "hp": 36,
+        "attack": 15,
+        "range": 5,
+        "energy": 4,
+        "speed": 2,
+        "armor": 5,
+        "resistance": 11,
+        "critChance": 11,
+        "accuracy": 88,
+        "evasion": 5,
+        "guardBreak": 11,
+        "combatPower": 234
+      },
+      "gear": [
+        "Dominion Chain Implement",
+        "Kharon Black Iron Realmplate",
+        "Kharon Dominion Heat Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-062",
+      "name": "Sablex Cinder Duke",
+      "faction": "Infernal Dominion",
+      "role": "Guardian",
+      "rarity": "Rare",
+      "combatPower": 210,
+      "stats": {
+        "hp": 46,
+        "attack": 9,
+        "range": 1,
+        "energy": 4,
+        "speed": 2,
+        "armor": 18,
+        "resistance": 12,
+        "critChance": 5,
+        "accuracy": 80,
+        "evasion": 3,
+        "guardBreak": 12,
+        "combatPower": 210
+      },
+      "gear": [
+        "Dominion Cinder Implement",
+        "Sablex Cinder Duke Realmplate",
+        "Sablex Dominion Heat Core"
+      ]
+    },
+    {
+      "id": "TG-TITAN-063",
+      "name": "Zerath Wound Gate",
+      "faction": "Infernal Dominion",
+      "role": "Assassin",
+      "rarity": "Legendary",
+      "combatPower": 238,
+      "stats": {
+        "hp": 38,
+        "attack": 14,
+        "range": 1,
+        "energy": 5,
+        "speed": 4,
+        "armor": 7,
+        "resistance": 10,
+        "critChance": 18,
+        "accuracy": 89,
+        "evasion": 14,
+        "guardBreak": 9,
+        "combatPower": 238
+      },
+      "gear": [
+        "Dominion Wound Implement",
+        "Zerath Wound Gate Realmplate",
+        "Zerath Dominion Heat Core"
+      ]
+    }
+  ],
+  "enemies": [
+    {
+      "id": "TG-CREATURE-001",
+      "name": "Hollow Wretch",
+      "tier": "Minor",
+      "combatRole": "SWARMER",
+      "stats": {
+        "levelBand": [
+          1,
+          25
+        ],
+        "hp": 45,
+        "damage": 8,
+        "range": 1,
+        "armor": 2,
+        "resistance": 2,
+        "movement": 4,
+        "initiative": 40,
+        "accuracy": 72,
+        "evasion": 8,
+        "guardBreak": 10,
+        "threatWeight": 1.0,
+        "xpValue": 10
+      }
+    },
+    {
+      "id": "TG-CREATURE-002",
+      "name": "Gateborn Colossus",
+      "tier": "Major",
+      "combatRole": "BRUTE",
+      "stats": {
+        "levelBand": [
+          15,
+          55
+        ],
+        "hp": 131,
+        "damage": 17,
+        "range": 1,
+        "armor": 11,
+        "resistance": 5,
+        "movement": 3,
+        "initiative": 48,
+        "accuracy": 78,
+        "evasion": 6,
+        "guardBreak": 12,
+        "threatWeight": 2.0,
+        "xpValue": 28
+      }
+    },
+    {
+      "id": "TG-CREATURE-003",
+      "name": "Beast Realm Maneater",
+      "tier": "Major",
+      "combatRole": "EXECUTIONER",
+      "stats": {
+        "levelBand": [
+          15,
+          55
+        ],
+        "hp": 104,
+        "damage": 20,
+        "range": 1,
+        "armor": 7,
+        "resistance": 5,
+        "movement": 4,
+        "initiative": 48,
+        "accuracy": 78,
+        "evasion": 10,
+        "guardBreak": 12,
+        "threatWeight": 2.0,
+        "xpValue": 28
+      }
+    },
+    {
+      "id": "TG-CREATURE-004",
+      "name": "Forgotten Standard Bearer",
+      "tier": "Elite",
+      "combatRole": "GUARDIAN",
+      "stats": {
+        "levelBand": [
+          35,
+          85
+        ],
+        "hp": 187,
+        "damage": 18,
+        "range": 3,
+        "armor": 16,
+        "resistance": 10,
+        "movement": 3,
+        "initiative": 58,
+        "accuracy": 82,
+        "evasion": 9,
+        "guardBreak": 16,
+        "threatWeight": 4.0,
+        "xpValue": 70
+      }
+    },
+    {
+      "id": "TG-CREATURE-005",
+      "name": "Ancient World Boss: Leviathan of the First Flood",
+      "tier": "World Boss",
+      "combatRole": "CHAMPION",
+      "stats": {
+        "levelBand": [
+          70,
+          100
+        ],
+        "hp": 535,
+        "damage": 29,
+        "range": 3,
+        "armor": 18,
+        "resistance": 18,
+        "movement": 2,
+        "initiative": 65,
+        "accuracy": 86,
+        "evasion": 5,
+        "guardBreak": 32,
+        "threatWeight": 12.0,
+        "xpValue": 350
+      }
+    },
+    {
+      "id": "TG-CREATURE-006",
+      "name": "Hollow Choirling",
+      "tier": "Minor",
+      "combatRole": "DISRUPTOR",
+      "stats": {
+        "levelBand": [
+          1,
+          25
+        ],
+        "hp": 60,
+        "damage": 9,
+        "range": 4,
+        "armor": 2,
+        "resistance": 6,
+        "movement": 4,
+        "initiative": 46,
+        "accuracy": 72,
+        "evasion": 8,
+        "guardBreak": 10,
+        "threatWeight": 1.0,
+        "xpValue": 10
+      }
+    },
+    {
+      "id": "TG-CREATURE-007",
+      "name": "Hollow Knell Archer",
+      "tier": "Minor",
+      "combatRole": "SWARMER",
+      "stats": {
+        "levelBand": [
+          1,
+          25
+        ],
+        "hp": 63,
+        "damage": 10,
+        "range": 1,
+        "armor": 2,
+        "resistance": 2,
+        "movement": 4,
+        "initiative": 40,
+        "accuracy": 72,
+        "evasion": 8,
+        "guardBreak": 10,
+        "threatWeight": 1.0,
+        "xpValue": 10
+      }
+    },
+    {
+      "id": "TG-CREATURE-008",
+      "name": "Hollow Oath-Eater",
+      "tier": "Major",
+      "combatRole": "BRUTE",
+      "stats": {
+        "levelBand": [
+          15,
+          55
+        ],
+        "hp": 149,
+        "damage": 15,
+        "range": 1,
+        "armor": 11,
+        "resistance": 5,
+        "movement": 3,
+        "initiative": 48,
+        "accuracy": 78,
+        "evasion": 6,
+        "guardBreak": 12,
+        "threatWeight": 2.0,
+        "xpValue": 28
+      }
+    },
+    {
+      "id": "TG-CREATURE-009",
+      "name": "Hollow Sunless Magistrate",
+      "tier": "Elite",
+      "combatRole": "ELITE",
+      "stats": {
+        "levelBand": [
+          35,
+          85
+        ],
+        "hp": 182,
+        "damage": 19,
+        "range": 3,
+        "armor": 11,
+        "resistance": 10,
+        "movement": 3,
+        "initiative": 58,
+        "accuracy": 82,
+        "evasion": 9,
+        "guardBreak": 16,
+        "threatWeight": 4.0,
+        "xpValue": 70
+      }
+    },
+    {
+      "id": "TG-CREATURE-010",
+      "name": "Hollow Banner Maw",
+      "tier": "Major",
+      "combatRole": "BRUTE",
+      "stats": {
+        "levelBand": [
+          15,
+          55
+        ],
+        "hp": 155,
+        "damage": 17,
+        "range": 1,
+        "armor": 11,
+        "resistance": 5,
+        "movement": 3,
+        "initiative": 48,
+        "accuracy": 78,
+        "evasion": 6,
+        "guardBreak": 12,
+        "threatWeight": 2.0,
+        "xpValue": 28
+      }
+    },
+    {
+      "id": "TG-CREATURE-011",
+      "name": "Hollow Mirror Saint",
+      "tier": "Elite",
+      "combatRole": "ELITE",
+      "stats": {
+        "levelBand": [
+          35,
+          85
+        ],
+        "hp": 188,
+        "damage": 21,
+        "range": 3,
+        "armor": 11,
+        "resistance": 10,
+        "movement": 3,
+        "initiative": 58,
+        "accuracy": 82,
+        "evasion": 9,
+        "guardBreak": 16,
+        "threatWeight": 4.0,
+        "xpValue": 70
+      }
+    },
+    {
+      "id": "TG-CREATURE-012",
+      "name": "Hollow Root Parasite",
+      "tier": "Minor",
+      "combatRole": "SWARMER",
+      "stats": {
+        "levelBand": [
+          1,
+          25
+        ],
+        "hp": 78,
+        "damage": 7,
+        "range": 1,
+        "armor": 2,
+        "resistance": 2,
+        "movement": 4,
+        "initiative": 40,
+        "accuracy": 72,
+        "evasion": 8,
+        "guardBreak": 10,
+        "threatWeight": 1.0,
+        "xpValue": 10
+      }
+    },
+    {
+      "id": "TG-CREATURE-013",
+      "name": "Hollow Shrine-Mask",
+      "tier": "Major",
+      "combatRole": "BRUTE",
+      "stats": {
+        "levelBand": [
+          15,
+          55
+        ],
+        "hp": 164,
+        "damage": 16,
+        "range": 1,
+        "armor": 11,
+        "resistance": 5,
+        "movement": 3,
+        "initiative": 48,
+        "accuracy": 78,
+        "evasion": 6,
+        "guardBreak": 12,
+        "threatWeight": 2.0,
+        "xpValue": 28
+      }
+    },
+    {
+      "id": "TG-CREATURE-014",
+      "name": "Hollow Laurel Butcher",
+      "tier": "Major",
+      "combatRole": "BRUTE",
+      "stats": {
+        "levelBand": [
+          15,
+          55
+        ],
+        "hp": 167,
+        "damage": 17,
+        "range": 1,
+        "armor": 11,
+        "resistance": 5,
+        "movement": 3,
+        "initiative": 48,
+        "accuracy": 78,
+        "evasion": 6,
+        "guardBreak": 12,
+        "threatWeight": 2.0,
+        "xpValue": 28
+      }
+    },
+    {
+      "id": "TG-CREATURE-015",
+      "name": "Hollow Chain Auditor",
+      "tier": "Elite",
+      "combatRole": "ELITE",
+      "stats": {
+        "levelBand": [
+          35,
+          85
+        ],
+        "hp": 200,
+        "damage": 21,
+        "range": 3,
+        "armor": 11,
+        "resistance": 10,
+        "movement": 3,
+        "initiative": 58,
+        "accuracy": 82,
+        "evasion": 9,
+        "guardBreak": 16,
+        "threatWeight": 4.0,
+        "xpValue": 70
+      }
+    },
+    {
+      "id": "TG-CREATURE-016",
+      "name": "Hollow Gate Anchor",
+      "tier": "Elite",
+      "combatRole": "CONTROLLER",
+      "stats": {
+        "levelBand": [
+          35,
+          85
+        ],
+        "hp": 203,
+        "damage": 18,
+        "range": 4,
+        "armor": 11,
+        "resistance": 13,
+        "movement": 3,
+        "initiative": 58,
+        "accuracy": 82,
+        "evasion": 9,
+        "guardBreak": 16,
+        "threatWeight": 4.0,
+        "xpValue": 70
+      }
+    },
+    {
+      "id": "TG-CREATURE-017",
+      "name": "Hollow Memory Thief",
+      "tier": "Major",
+      "combatRole": "BRUTE",
+      "stats": {
+        "levelBand": [
+          15,
+          55
+        ],
+        "hp": 176,
+        "damage": 16,
+        "range": 1,
+        "armor": 11,
+        "resistance": 5,
+        "movement": 3,
+        "initiative": 48,
+        "accuracy": 78,
+        "evasion": 6,
+        "guardBreak": 12,
+        "threatWeight": 2.0,
+        "xpValue": 28
+      }
+    },
+    {
+      "id": "TG-CREATURE-018",
+      "name": "Hollow World-Wound Behemoth",
+      "tier": "World Boss",
+      "combatRole": "CHAMPION",
+      "stats": {
+        "levelBand": [
+          70,
+          100
+        ],
+        "hp": 574,
+        "damage": 30,
+        "range": 3,
+        "armor": 18,
+        "resistance": 18,
+        "movement": 2,
+        "initiative": 65,
+        "accuracy": 86,
+        "evasion": 5,
+        "guardBreak": 32,
+        "threatWeight": 12.0,
+        "xpValue": 350
+      }
+    }
+  ]
+}

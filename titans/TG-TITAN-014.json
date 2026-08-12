@@ -7,24 +7,32 @@
   "rarity": "Epic",
   "role": "Disruptor",
   "abilities": [
-    "Mordun Strike",
-    "Asgardian Signature Rite",
-    "Gate Objective Command"
+    "Mordun Null Strike",
+    "Rune Rite Severance",
+    "Mordun Frost-Anvil: Interdiction Decree",
+    "Divine Ascension — Rune Storm Unbound"
   ],
   "stats": {
-    "hp": 28,
-    "attack": 8,
+    "hp": 36,
+    "attack": 11,
     "range": 3,
-    "energy": 3,
-    "speed": 3
+    "energy": 5,
+    "speed": 3,
+    "armor": 7,
+    "resistance": 17,
+    "critChance": 9,
+    "accuracy": 85,
+    "evasion": 9,
+    "guardBreak": 10,
+    "combatPower": 227
   },
   "equipment": [
-    "Relic-scale mythic implement",
-    "Realm-forged armor-body",
-    "Titan Gate resonance core"
+    "Runebound Rune Implement",
+    "Mordun Frost-Anvil Realmplate",
+    "Mordun Oathstorm Core"
   ],
   "passives": [
-    "Oathbound: surviving damage strengthens the next committed strike."
+    "Oathbound — Mordun's Mastery: Mordun's Storm Oath: a solo soul counter that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
   ],
   "lore": "Mordun Frost-Anvil is a colossal Asgardian Titan shaped by oaths give war meaning; courage gives power form. It manifests the Realm's law through battlefield-scale mythic force.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -32,6 +40,124 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-014",
   "artworkId": null,
-  "developmentStatus": "Playable data scaffold complete; artwork pending.",
-  "backstoryId": "TG-BACKSTORY-TITAN-014"
+  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "TG-BACKSTORY-TITAN-014",
+  "abilityDetails": [
+    {
+      "name": "Mordun Null Strike",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "disruptor",
+        "storm"
+      ],
+      "effect": "Deal Storm damage at range 3; gain 8 Momentum, or 12 if used from storm-marked terrain or into the Titan's marked target.",
+      "scaling": "100% attack; +15% vs vulnerable enemies",
+      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+    },
+    {
+      "name": "Rune Rite Severance",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "disruptor"
+      ],
+      "effect": "Apply cast interrupt, meter drain, reaction lockout; also builds 10 Oathstorm when it changes enemy intent or breaks an objective action.",
+      "scaling": "70% attack plus role utility scaling from energy",
+      "counterplay": "Interrupt before resolution, spread formations, or bait the cooldown."
+    },
+    {
+      "name": "Mordun Frost-Anvil: Interdiction Decree",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "disruptor",
+        "asgardian"
+      ],
+      "effect": "Spend stored Oathstorm to create a two-round battlefield rule around storm-marked terrain; enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Rune Storm Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Oathstorm, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Runebound Rune Implement",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Epic",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
+      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+    },
+    {
+      "name": "Mordun Frost-Anvil Realmplate",
+      "slot": "Armor Body",
+      "rarityFloor": "Epic",
+      "primaryStat": "armor/resistance",
+      "effect": "+1 armor and +2 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
+      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+    },
+    {
+      "name": "Mordun Oathstorm Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Epic",
+      "primaryStat": "energy",
+      "effect": "Oathstorm cap +20. At 80+ Oathstorm, the next Technique gains a role-specific rider, then drains 30 Oathstorm.",
+      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 55,
+    "statGrowthPer10Levels": {
+      "hp": 6,
+      "attack": 1,
+      "armor": 1,
+      "resistance": 2
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      55
+    ],
+    "gearTierCap": "Legendary",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "interrupt resources, casts, reactions, and elite mechanics",
+    "budgetTarget": 109,
+    "computedCombatPower": 227,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  }
 }
