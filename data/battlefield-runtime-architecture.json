@@ -73,5 +73,16 @@
       "hook": "recordBossPhaseTelemetry",
       "purpose": "Track boss phase reached/cleared/failed signals for vertical slice fail-point analysis."
     }
-  ]
+  ],
+  "status": "IMPLEMENTED",
+  "taskId": "TG-DEV-029",
+  "implementedRuntimeExports": [
+    "createBattlefieldRuntimeState",
+    "buildBattlefieldTerrain",
+    "applyBattlefieldAction",
+    "applyBattlefieldInteraction",
+    "endBattlefieldRound",
+    "summarizeBattlefieldRuntime"
+  ],
+  "productionSlice": "TG-BATTLEFIELD-VS-001"
 }

@@ -387,10 +387,10 @@
   },
   {
     "id": "TG-DEV-029",
-    "description": "Implement production Battlefield Vertical Slice runtime around The First Reopening Gate with one active Titan, touch movement, terrain, objectives, encounters, boss phases, and rewards.",
+    "description": "Implemented production Battlefield Vertical Slice runtime around The First Reopening Gate with reusable terrain/objective/enemy bindings, one-active-Titan tactical actions, Solar Seal interactions, pylon and Codex events, boss phase telemetry, mobile action-bar quality gates, and deterministic replay coverage.",
     "director": "Battlefield Director",
     "priority": "Critical",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "dependencies": [
       "TG-BATTLEFIELD-VS-001",
       "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001"
@@ -398,8 +398,12 @@
     "relatedEntity": "TG-BATTLEFIELD-VS-001",
     "relatedFiles": [
       "data/battlefield-vertical-slice.json",
-      "game/battlefield-vertical-slice.html"
-    ]
+      "game/battlefield-vertical-slice.html",
+      "game/battlefield-runtime.mjs",
+      "scripts/test-battlefield-runtime.mjs"
+    ],
+    "completedAt": "2026-08-13",
+    "completionSummary": "Added canonical reusable Battlefield runtime for TG-BATTLEFIELD-VS-001: 7x7 tactical terrain, real Aten-Ra + Hollow bindings, Solar Seal/Memory/Pylon interactions, Gate Pressure boss phase telemetry, runtime summary quality targets, deterministic smoke coverage, and release-gate integration."
   },
   {
     "id": "TG-DEV-030",

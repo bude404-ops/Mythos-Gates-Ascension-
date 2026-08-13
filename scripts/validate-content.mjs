@@ -58,7 +58,9 @@ const data = {
   raidSystem: read('data/raid-system.json'),
   endgameDashboard: read('data/endgame-dashboard.json'),
   commandHubContract: read('data/command-hub-contract.json'),
-  assetRegistry: read('data/asset-registry.json')
+  assetRegistry: read('data/asset-registry.json'),
+  battlefieldRuntimeArchitecture: read('data/battlefield-runtime-architecture.json'),
+  battlefieldVerticalSlice: read('data/battlefield-vertical-slice.json')
 };
 
 for (const [name, arr] of Object.entries(data)) {
@@ -73,6 +75,8 @@ register('raidSystem', data.raidSystem, 'data/raid-system.json');
 register('endgameDashboard', data.endgameDashboard, 'data/endgame-dashboard.json');
 register('commandHubContract', data.commandHubContract, 'data/command-hub-contract.json');
 register('assetRegistry', data.assetRegistry, 'data/asset-registry.json');
+register('battlefieldRuntimeArchitecture', data.battlefieldRuntimeArchitecture, 'data/battlefield-runtime-architecture.json');
+register('battlefieldVerticalSlice', data.battlefieldVerticalSlice, 'data/battlefield-vertical-slice.json');
 
 const factionIds = new Set(data.factions.map(f => f.id));
 const titanIds = new Set(data.titans.map(t => t.id));
@@ -303,6 +307,11 @@ if(!game.includes('OPEN THE TITAN GATE') || !game.includes('createCommandHubRunt
 for (const token of ['BOOT_STAGES','validatePlayerState','getNextRecommendedAction','AssetManager','AudioManager','deriveNotifications','bottomNav','Titan Roster','Realm Network','Lore Registry','Playable Solo Battle','battleBasic','battleObjective','normalizeProgression','createRewardCache','claimReward','pendingRewards','rewardHistory','STARTER_TITAN_IDS','AWAKENING_BEATS','starterTitans','ensureOnboarding','Awakening Protocol','chooseStarter','finishAwakening','TRIAL_TITAN_IDS','TRIAL_MODES','trialTitans','ensureTrials','createTrialAttempt','resolveTrialAttempt','trialsScreen','startTrial','finishTrial','Trial Favor','Temporary Loadout','borrowed gear does not','raidProgress','raidRules','stageProfiles','problemTags','preferredCounters','carryRisk','tierCaps','approachRules','createRaidAttempt','resolveRaidStage','completeRaidAttempt','resolveRaidEconomy','applyRaidMastery','Raid Tokens','Signature Alloy','Mastery Seals','raidScreen','startRaid','raidResolve','raidClaim','The Gate Warden']) if(!hubRuntime.includes(token)) fail(`Command Hub runtime missing ${token}`);
 const browserBattle = fs.readFileSync(path.join(root,'game/browser-battle-engine.mjs'),'utf8');
 for (const token of ['createBattleState','applyTitanAction','applyReaction','autoAdvanceEnemyTurn','summarizeBattle','chooseEnemyIntent','HOLLOW_SWARMER','GATEBORN_BRUTE','OBJECTIVE_CRUSH','enemyIntentCounts','enemyBehaviorTags','enemyCounterplay','behaviorTag','counterplay','ISOLATION_PUNISH','OBJECTIVE_DENIAL','ARCHETYPE_BUDGETS','resolveMissionScaling','scaleEnemyForMission','enemyScaling','threatBudget']) if(!browserBattle.includes(token)) fail(`Browser battle engine missing ${token}`);
+const battlefieldRuntime = fs.readFileSync(path.join(root,'game/battlefield-runtime.mjs'),'utf8');
+for (const token of ['createBattlefieldRuntimeState','buildBattlefieldTerrain','createBattlefieldObjectives','createBattlefieldEnemyRoster','applyBattlefieldAction','applyBattlefieldInteraction','endBattlefieldRound','advanceBattlefieldBossPhase','summarizeBattlefieldRuntime','runBattlefieldScript']) if(!battlefieldRuntime.includes(token)) fail(`Battlefield runtime missing ${token}`);
+if(data.battlefieldRuntimeArchitecture.status !== 'IMPLEMENTED' || data.battlefieldRuntimeArchitecture.taskId !== 'TG-DEV-029') fail('Battlefield runtime architecture must be implemented for TG-DEV-029');
+if(data.battlefieldRuntimeArchitecture.productionSlice !== data.battlefieldVerticalSlice.id) fail('Battlefield runtime architecture production slice mismatch');
+for (const target of ['one active Titan','49 meaningful spaces','interactive terrain','boss phases','mobile bottom action bar','camera modes']) if(!data.battlefieldVerticalSlice.qualityTargets.includes(target)) fail(`Battlefield vertical slice missing quality target ${target}`);
 const hub = data.commandHubContract;
 if(hub.status !== 'IMPLEMENTED' || hub.canonFirst !== true) fail('Command Hub contract must be IMPLEMENTED and canon-first');
 if(!Array.isArray(hub.startupPipeline) || hub.startupPipeline.length < 9 || hub.startupPipeline[0] !== 'BOOT' || !hub.startupPipeline.includes('MAIN_COMMAND_HUB')) fail('Command Hub startup pipeline incomplete');
@@ -344,4 +353,4 @@ if(!data.visualScreens.some(s => s.id === 'TG-SCREEN-TACTICAL-MAP-PROTOTYPE' && 
 const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','Game Preview','Visual QA','Tactical Map Prototype','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
 
-console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status, soloBattleSchema:data.soloBattleStateSchema.status, soloVerticalSlice:data.soloVerticalSlice.status, asyncArena:data.asyncArenaSystem.status, commandHub:data.commandHubContract.status}, null, 2));
+console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status, soloBattleSchema:data.soloBattleStateSchema.status, soloVerticalSlice:data.soloVerticalSlice.status, asyncArena:data.asyncArenaSystem.status, commandHub:data.commandHubContract.status, battlefieldRuntime:data.battlefieldRuntimeArchitecture.status}, null, 2));
