@@ -386,18 +386,32 @@
   },
   {
     "id": "TG-DEV-028",
-    "description": "Tag campaign and endgame missions with tactical problem categories and recommended-but-not-required Titan advantages.",
+    "description": "Implemented campaign and endgame mission tactical problem categories with recommended-but-not-required Titan advantages across all 280 missions, plus release validation and system coverage audit.",
     "director": "Gameplay Director",
     "priority": "High",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "dependencies": [
       "TG-ROSTER-DEPTH-MAP-001",
       "data/mission-registry.json"
     ],
     "relatedEntity": "TG-ROSTER-DEPTH-MAP-001",
     "relatedFiles": [
+      "data/mission-tactical-profile-system.json",
       "data/roster-depth-map.json",
-      "data/mission-registry.json"
+      "data/mission-registry.json",
+      "data/titans.json",
+      "data/index.json",
+      "scripts/validate-content.mjs"
+    ],
+    "completedAt": "2026-08-13",
+    "completedIn": "TG-DEV-028-mission-tactical-profiles",
+    "completionSummary": "Sealed mission tactical profiles as a production system: every Normal and Elite mission has problem tags, advantage roles, valid recommended Titans, and explicit no-ownership-lock rules.",
+    "acceptanceEvidence": [
+      "TG-DEV-028 every campaign mission has at least three tactical problem tags.",
+      "TG-DEV-028 every campaign mission has at least two advantage roles from the live Titan role list.",
+      "TG-DEV-028 every recommended Titan exists in data/titans.json.",
+      "TG-DEV-028 all mission tactical profiles are favored-not-required with no ownership lock.",
+      "TG-DEV-028 mission tactical profile system is discoverable through data/index.json and release validation."
     ]
   },
   {

@@ -11,22 +11,21 @@
   "description": "Torii Lanes in Storm unfolds across storm-bent shrine path where paper seals redirect hostile wind, pushing a 5-Titan Kami squad to prove precise control, repositioning, evasion, spirit terrain, disciplined burst. without violating established Realm canon.",
   "lore": "Torii Lanes in Storm: Hidden Law advances Kami Mirror Tempest: The Sacred Kingdoms test whether the Creator can cleanse Gate reflections without breaking shrine law or spirit contracts. It directly tests the faction tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.",
   "recommendedPower": 599,
-  "teamSize": 5,
+  "teamSize": 1,
   "encouragedTitanRoles": [
-    "masked defender",
-    "spirit repositioner",
-    "seal breaker",
-    "foxfire scout",
-    "cleanse support"
+    "spirit-road tactician",
+    "survivable objective holder",
+    "burst or control specialist"
   ],
   "mapId": "TG-MAP-010",
   "terrain": "storm-bent shrine path where paper seals redirect hostile wind",
   "objectives": {
-    "primary": "Cleanse the Gate wound without breaking Kami realm law.",
+    "primary": "Complete Torii Lanes in Storm: Hidden Law with one active Titan while reading storm-bent shrine path where paper seals redirect hostile wind and preserving faction doctrine.",
     "optional": [
       "Complete before turn 11",
-      "Keep at least four Titans standing",
-      "Trigger at least two Kami faction mechanics"
+      "Keep at least four Titan standing",
+      "Trigger at least two Kami faction mechanics",
+      "Trigger at least one Momentum or Divinity decision before victory"
     ]
   },
   "enemyWaves": [
@@ -50,26 +49,29 @@
   "boss": null,
   "turnLimit": 13,
   "specialRules": [
+    "Foxfire Reading: reactions strengthen after using misdirection terrain or shrine cover.",
     "Spirit Contract: objectives must be cleansed without desecrating shrine markers.",
     "Sacred Balance: careful positioning unlocks spirit precision effects.",
-    "5-Titan standard squad"
+    "Solo Titanic Scale: one active Titan occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
   ],
   "victoryConditions": [
-    "Cleanse the Gate wound without breaking Kami realm law."
+    "Complete Torii Lanes in Storm: Hidden Law with one active Titan while reading storm-bent shrine path where paper seals redirect hostile wind and preserving faction doctrine."
   ],
   "defeatConditions": [
-    "All Titans fall",
+    "Your active Titan falls",
     "Primary objective fails",
     "Turn limit expires"
   ],
   "rewards": {
     "firstClear": [
+      "Solo Titan mastery XP",
       "Mid-tier Kami relic material",
       "Kami faction shard cache",
       "Kami doctrine upgrade dust",
       "TG-F04-C02-M07 codex shard"
     ],
     "replay": [
+      "Titan mastery XP",
       "Kami relic material",
       "Kami doctrine upgrade dust",
       "Gear component"
@@ -94,23 +96,33 @@
   "completionState": "Not Started",
   "developmentStatus": "Designed",
   "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly.",
+  "chapterId": "TG-F04-CH02",
+  "difficulty": "Normal",
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "squadCombat": "FORBIDDEN_FOR_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  },
   "tacticalProfile": {
     "problemTags": [
       "fast_enemies",
       "ranged_enemies",
       "boss_duel",
-      "terrain_heavy"
+      "terrain_heavy",
+      "swarm_battle"
     ],
     "advantageRoles": [
       "Controller",
       "Assassin",
       "Defender",
-      "Artillery"
+      "Artillery",
+      "Disruptor"
     ],
     "recommendedTitanIds": [
       "TG-TITAN-030",
       "TG-TITAN-036",
-      "TG-TITAN-028"
+      "TG-TITAN-028",
+      "TG-TITAN-005"
     ],
     "recommendedTitans": [
       {
@@ -127,6 +139,11 @@
         "id": "TG-TITAN-028",
         "name": "Amaterion Spirit-Sun",
         "reason": "Defender advantage for fast enemies"
+      },
+      {
+        "id": "TG-TITAN-005",
+        "name": "Sutekh Dune Eclipse",
+        "reason": "Disruptor advantage for breaking swarm tempo and denying resource pressure"
       }
     ],
     "favoredNotRequired": true,

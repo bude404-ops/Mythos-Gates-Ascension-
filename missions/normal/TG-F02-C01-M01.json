@@ -11,22 +11,21 @@
   "description": "Oath Under Thunder: The First Oath Sparks unfolds across storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span, pushing the 5-Titan Asgardian squad to convert endurance into decisive counterpressure.",
   "lore": "The First Oath Sparks advances the Storm-Oath Covenant arc: the Gate tries to harvest Asgardian vows, while Valhalla law insists courage must remain chosen responsibility.",
   "recommendedPower": 428,
-  "teamSize": 5,
+  "teamSize": 1,
   "encouragedTitanRoles": [
-    "frontline oath guardian",
-    "storm counterstriker",
-    "objective anchor",
-    "mobile rescuer",
-    "rune support"
+    "storm-oath breaker",
+    "survivable objective holder",
+    "burst or control specialist"
   ],
   "mapId": "TG-MAP-003",
   "terrain": "storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span",
   "objectives": {
-    "primary": "Claim two oath-stones before the storm breaks formation.",
+    "primary": "Complete The First Oath Sparks with one active Titan while reading storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span and preserving faction doctrine.",
     "optional": [
       "Complete before turn 10",
-      "Keep at least four Titans standing",
-      "Trigger at least two Oathbound counterattacks"
+      "Keep at least four Titan standing",
+      "Trigger at least two Oathbound counterattacks",
+      "Trigger at least one Momentum or Divinity decision before victory"
     ]
   },
   "enemyWaves": [
@@ -50,26 +49,29 @@
   "boss": null,
   "turnLimit": 11,
   "specialRules": [
-    "Oathbound Guard: Titans that survive damage near oath-stones empower their next committed strike.",
+    "Storm Oath: Momentum surges after decisive movement through exposed lightning lanes.",
+    "Oathbound Guard: Titan that survive damage near oath-stones empower their next committed strike.",
     "Oathbound: surviving damage strengthens the next committed strike.",
-    "5-Titan standard squad"
+    "Solo Titanic Scale: one active Titan occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
   ],
   "victoryConditions": [
-    "Claim two oath-stones before the storm breaks formation."
+    "Complete The First Oath Sparks with one active Titan while reading storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span and preserving faction doctrine."
   ],
   "defeatConditions": [
-    "All Titans fall",
+    "Your active Titan falls",
     "Primary objective fails",
     "Turn limit expires"
   ],
   "rewards": {
     "firstClear": [
+      "Solo Titan mastery XP",
       "Mid-tier oath iron",
       "Asgardian faction shard cache",
       "Storm rune upgrade dust",
       "TG-F02-C01-M01 codex shard"
     ],
     "replay": [
+      "Titan mastery XP",
       "Oath iron",
       "Storm rune upgrade dust",
       "Gear component"
@@ -94,23 +96,33 @@
   "completionState": "Not Started",
   "developmentStatus": "Designed",
   "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly.",
+  "chapterId": "TG-F02-CH01",
+  "difficulty": "Normal",
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "squadCombat": "FORBIDDEN_FOR_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  },
   "tacticalProfile": {
     "problemTags": [
       "heavily_armored_enemies",
       "fast_enemies",
       "ranged_enemies",
-      "long_survival"
+      "long_survival",
+      "enemy_casters"
     ],
     "advantageRoles": [
       "Breaker",
       "Guardian",
       "Controller",
-      "Assassin"
+      "Assassin",
+      "Disruptor"
     ],
     "recommendedTitanIds": [
       "TG-TITAN-013",
       "TG-TITAN-017",
-      "TG-TITAN-012"
+      "TG-TITAN-012",
+      "TG-TITAN-005"
     ],
     "recommendedTitans": [
       {
@@ -127,6 +139,11 @@
         "id": "TG-TITAN-012",
         "name": "Skeld Iron Tempest",
         "reason": "Controller advantage for heavily armored enemies"
+      },
+      {
+        "id": "TG-TITAN-005",
+        "name": "Sutekh Dune Eclipse",
+        "reason": "Disruptor advantage for caster denial and elite mechanic disruption"
       }
     ],
     "favoredNotRequired": true,

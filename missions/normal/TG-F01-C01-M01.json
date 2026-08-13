@@ -11,20 +11,20 @@
   "description": "Aten Ra advances through sacred temple approach with shallow river-light lanes and low sandstone cover while the Gate tests whether solar law can hold under pressure.",
   "lore": "This mission shows the Sun Realm refusing panic: law, river, and formation answer the Gate wound without rewriting established Canon.",
   "recommendedPower": 135,
-  "teamSize": 5,
+  "teamSize": 1,
   "encouragedTitanRoles": [
-    "support guardian",
-    "mobile striker",
-    "objective holder"
+    "solar judgment anchor",
+    "survivable objective holder",
+    "burst or control specialist"
   ],
   "mapId": "TG-MAP-001",
   "terrain": "sacred temple approach with shallow river-light lanes and low sandstone cover",
   "objectives": {
-    "primary": "Move your five-Titan strike force to the marked solar seal before the Hollow closes around it.",
+    "primary": "Drive your active Titan to the marked solar seal before the Hollow closes around it.",
     "optional": [
       "Complete before turn 8",
-      "Keep all five Titans standing",
-      "Trigger at least two faction synergy actions"
+      "Keep your active Titan above 40% integrity",
+      "Trigger at least two Momentum, Divinity, or terrain reactions"
     ]
   },
   "enemyWaves": [
@@ -48,26 +48,28 @@
   "boss": null,
   "turnLimit": 11,
   "specialRules": [
-    "Formation Light: adjacent Titans gain minor protection when ending near a solar tile.",
-    "Hollow Drift: basic enemies favor isolated Titans.",
-    "5-Titan standard squad"
+    "Solar Law: Momentum grows when the lone Titan holds marked light lanes without retreating.",
+    "Hollow Drift: enemies punish exposed Titan positioning and reckless routes.",
+    "Solo Titanic Scale: one active Titan occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
   ],
   "victoryConditions": [
-    "Move your five-Titan strike force to the marked solar seal before the Hollow closes around it."
+    "Drive your active Titan to the marked solar seal before the Hollow closes around it."
   ],
   "defeatConditions": [
-    "All Titans fall",
+    "Your active Titan falls",
     "Primary objective fails",
     "Turn limit expires"
   ],
   "rewards": {
     "firstClear": [
+      "Solo Titan mastery XP",
       "Solar upgrade dust",
       "Faction shard cache",
       "Low-tier gear component",
       "Aten Ra mission 1 codex shard"
     ],
     "replay": [
+      "Titan mastery XP",
       "Solar upgrade dust",
       "Faction shard cache",
       "Low-tier gear component"
@@ -91,23 +93,33 @@
   "completionState": "Not Started",
   "developmentStatus": "Designed",
   "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly.",
+  "chapterId": "TG-F01-CH01",
+  "difficulty": "Normal",
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "squadCombat": "FORBIDDEN_FOR_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  },
   "tacticalProfile": {
     "problemTags": [
       "large_enemy_groups",
       "fast_enemies",
       "ranged_enemies",
-      "long_survival"
+      "long_survival",
+      "swarm_battle"
     ],
     "advantageRoles": [
       "Artillery",
       "Controller",
       "Assassin",
-      "Defender"
+      "Defender",
+      "Battery"
     ],
     "recommendedTitanIds": [
       "TG-TITAN-007",
       "TG-TITAN-003",
-      "TG-TITAN-009"
+      "TG-TITAN-009",
+      "TG-TITAN-002"
     ],
     "recommendedTitans": [
       {
@@ -124,6 +136,11 @@
         "id": "TG-TITAN-009",
         "name": "Amunet Hidden Sun",
         "reason": "Assassin advantage for large enemy groups"
+      },
+      {
+        "id": "TG-TITAN-002",
+        "name": "Khemet Suncrown",
+        "reason": "Battery advantage for resource pressure during swarm battle routing"
       }
     ],
     "favoredNotRequired": true,

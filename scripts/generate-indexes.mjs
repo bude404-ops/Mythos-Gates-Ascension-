@@ -69,6 +69,7 @@ const files = {
   'canon-faction-matrix.json': 'canonFactionMatrix',
   'titan-role-matrix.json': 'titanRoleMatrix',
   'roster-depth-map.json': 'rosterDepthMap',
+  'mission-tactical-profile-system.json': 'missionTacticalProfileSystem',
   'player-onboarding-roster-journey.json': 'playerOnboardingRosterJourney',
   'battlefield-director.json': 'battlefieldDirector',
   'world-scale-reference.json': 'worldScaleReference',

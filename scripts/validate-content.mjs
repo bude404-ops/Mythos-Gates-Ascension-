@@ -57,6 +57,7 @@ const data = {
   weeklyTrials: read('data/weekly-trials.json'),
   raidSystem: read('data/raid-system.json'),
   titanTrialSystem: read('data/titan-trial-system.json'),
+  missionTacticalProfileSystem: read('data/mission-tactical-profile-system.json'),
   endgameDashboard: read('data/endgame-dashboard.json'),
   commandHubContract: read('data/command-hub-contract.json'),
   assetRegistry: read('data/asset-registry.json'),
@@ -74,6 +75,7 @@ register('asyncArenaSystem', data.asyncArenaSystem, 'data/async-arena-system.jso
 register('weeklyTrials', data.weeklyTrials, 'data/weekly-trials.json');
 register('raidSystem', data.raidSystem, 'data/raid-system.json');
 register('titanTrialSystem', data.titanTrialSystem, 'data/titan-trial-system.json');
+register('missionTacticalProfileSystem', data.missionTacticalProfileSystem, 'data/mission-tactical-profile-system.json');
 register('endgameDashboard', data.endgameDashboard, 'data/endgame-dashboard.json');
 register('commandHubContract', data.commandHubContract, 'data/command-hub-contract.json');
 register('assetRegistry', data.assetRegistry, 'data/asset-registry.json');
@@ -101,6 +103,8 @@ const campaignChapterIds = new Set(data.campaignChapters.map(c => c.id));
 const storylineArcIds = new Set(data.storylineArcs.map(s => s.id));
 const allowedMissionProblemTags = new Set(['large_enemy_groups','heavily_armored_enemies','fast_enemies','ranged_enemies','enemy_casters','long_survival','boss_duel','terrain_heavy','environmental_hazard','swarm_battle','execution_chain','objective_pressure']);
 const allowedTitanRoles = new Set(data.titans.map(t => t.role));
+const missionTagCounts = new Map();
+const missionRoleCounts = new Map();
 
 if(data.factions.length !== 7) fail(`Expected 7 playable factions, found ${data.factions.length}`);
 if(data.hollowThreatFaction.playable !== false || data.hollowThreatFaction.classification !== 'Hostile Threat Faction') fail('Hollow must remain a non-playable threat faction');
@@ -185,8 +189,10 @@ for (const mission of data.missions) {
   if(!tactical) fail(`${mission.id}: missing tacticalProfile`);
   if(!Array.isArray(tactical.problemTags) || tactical.problemTags.length < 3) fail(`${mission.id}: tacticalProfile needs at least three problemTags`);
   for (const tag of tactical.problemTags) if(!allowedMissionProblemTags.has(tag)) fail(`${mission.id}: invalid tactical problem tag ${tag}`);
+  for (const tag of tactical.problemTags) missionTagCounts.set(tag, (missionTagCounts.get(tag) || 0) + 1);
   if(!Array.isArray(tactical.advantageRoles) || tactical.advantageRoles.length < 2) fail(`${mission.id}: tacticalProfile needs advantageRoles`);
   for (const role of tactical.advantageRoles) if(!allowedTitanRoles.has(role)) fail(`${mission.id}: invalid advantage role ${role}`);
+  for (const role of tactical.advantageRoles) missionRoleCounts.set(role, (missionRoleCounts.get(role) || 0) + 1);
   if(!Array.isArray(tactical.recommendedTitanIds) || tactical.recommendedTitanIds.length < 1) fail(`${mission.id}: tacticalProfile needs recommendedTitanIds`);
   for (const id of tactical.recommendedTitanIds) if(!titanIds.has(id)) fail(`${mission.id}: invalid recommended Titan ${id}`);
   if(tactical.ownershipLock !== false || tactical.favoredNotRequired !== true) fail(`${mission.id}: tacticalProfile must stay favored-not-required with no ownership lock`);
@@ -358,6 +364,18 @@ if(!trialSystem.rewardGuardrails?.some(rule => String(rule).includes('borrowed g
 if(hub.trialSystem?.status !== 'IMPLEMENTED' || hub.trialSystem?.taskId !== 'TG-DEV-027') fail('Command Hub trial system must implement TG-DEV-027');
 if(hub.trialSystem?.temporaryLoadoutExpires !== 'END_OF_TRIAL') fail('Command Hub trial loadout expiry mismatch');
 if(!hub.qualityGates?.some(g => g.includes('TG-DEV-027'))) fail('Command Hub quality gate missing TG-DEV-027');
+const tacticalProfileSystem = data.missionTacticalProfileSystem;
+if(tacticalProfileSystem.status !== 'IMPLEMENTED' || tacticalProfileSystem.taskId !== 'TG-DEV-028') fail('Mission tactical profile system must complete TG-DEV-028');
+if(tacticalProfileSystem.missionCoverage?.total !== data.missions.length || tacticalProfileSystem.missionCoverage?.missingProfiles !== 0) fail('TG-DEV-028 mission coverage mismatch');
+if(tacticalProfileSystem.missionCoverage?.normal !== 140 || tacticalProfileSystem.missionCoverage?.elite !== 140) fail('TG-DEV-028 Normal/Elite mission coverage mismatch');
+for (const tag of tacticalProfileSystem.allowedProblemTags || []) if(!allowedMissionProblemTags.has(tag)) fail(`TG-DEV-028 invalid allowed tag ${tag}`);
+for (const role of tacticalProfileSystem.allowedTitanRoles || []) if(!allowedTitanRoles.has(role)) fail(`TG-DEV-028 invalid allowed role ${role}`);
+for (const tag of allowedMissionProblemTags) if((missionTagCounts.get(tag) || 0) < 1) fail(`TG-DEV-028 tag has no mission coverage: ${tag}`);
+for (const role of allowedTitanRoles) if((missionRoleCounts.get(role) || 0) < 1) fail(`TG-DEV-028 Titan role has no mission recommendation coverage: ${role}`);
+for (const rule of ['Mission tactical profiles may recommend roles and Titans, but never require ownership.','Every tagged mission must keep ownershipLock=false and favoredNotRequired=true.']) if(!tacticalProfileSystem.antiPayToWinRules?.includes(rule)) fail(`TG-DEV-028 rule missing: ${rule}`);
+if(hub.missionTacticalProfiles?.status !== 'IMPLEMENTED' || hub.missionTacticalProfiles?.taskId !== 'TG-DEV-028') fail('Command Hub mission tactical profile summary must implement TG-DEV-028');
+if(hub.missionTacticalProfiles?.ownershipLock !== false || hub.missionTacticalProfiles?.favoredNotRequired !== true) fail('Command Hub mission profile ownership rule mismatch');
+if(!hub.qualityGates?.some(g => g.includes('TG-DEV-028 all 280 campaign missions'))) fail('Command Hub quality gate missing TG-DEV-028');
 if(!hub.defaultPlayerState?.selectedTitans?.every(id => titanIds.has(id))) fail('Command Hub default PlayerState references invalid Titan');
 if(!missionIds.has(hub.defaultPlayerState?.campaignProgress?.currentMissionId)) fail('Command Hub default PlayerState references invalid mission');
 if((hub.navigationTabs || []).length !== 5) fail('Command Hub must expose five bottom navigation sections');
