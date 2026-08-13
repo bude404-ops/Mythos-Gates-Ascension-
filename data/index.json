@@ -10,7 +10,7 @@
     "artPrompts": 110,
     "artworks": 0,
     "artImportPipeline": 1,
-    "developmentTasks": 44,
+    "developmentTasks": 45,
     "loreEntries": 35,
     "npcs": 8,
     "creatures": 18,
@@ -82,13 +82,15 @@
     "commandHubContract": 1,
     "assetRegistry": 1,
     "blueprint3dSystem": 1,
+    "blueprint3dProductionQueue": 129,
     "hollowCreatures": 16,
     "artMapPrompts": 12,
     "artCampaignPrompts": 7,
     "blueprint3dAssets": 129,
     "blueprint3dTitans": 63,
     "blueprint3dBattlefields": 12,
-    "blueprint3dGates": 7
+    "blueprint3dGates": 7,
+    "blueprint3dFirstHandoffBatch": 12
   },
   "files": {
     "project.json": "data/project.json",
@@ -171,7 +173,8 @@
     "campaign-playflow-contract.json": "data/campaign-playflow-contract.json",
     "command-hub-contract.json": "data/command-hub-contract.json",
     "asset-registry.json": "data/asset-registry.json",
-    "3d-blueprint-system.json": "data/3d-blueprint-system.json"
+    "3d-blueprint-system.json": "data/3d-blueprint-system.json",
+    "3d-production-queue.json": "data/3d-production-queue.json"
   },
   "sourceFileFingerprints": {
     "project.json": {
@@ -221,8 +224,8 @@
     },
     "development-tasks.json": {
       "path": "data/development-tasks.json",
-      "bytes": 27714,
-      "sha256": "52281b3016dae768a8f610e88e151b54ceae937834d25cc525e6559b8d279ef2"
+      "bytes": 28608,
+      "sha256": "ed5a3616ae67e395ab90affd2484ea0e5140293839c48db9fc837074c652ee17"
     },
     "lore-index.json": {
       "path": "data/lore-index.json",
@@ -578,6 +581,11 @@
       "path": "data/3d-blueprint-system.json",
       "bytes": 1523,
       "sha256": "d93136c88bca1c610ababceb171706fcf14250e882436357888163c09e9f89e2"
+    },
+    "3d-production-queue.json": {
+      "path": "data/3d-production-queue.json",
+      "bytes": 131615,
+      "sha256": "dd6fd90f59cd9dee8353753a5abb5695b3fc2b046120e6b6929ef6fa71a8b333"
     }
   },
   "artPromptCategories": {
@@ -702,6 +710,21 @@
     "status": "IMPLEMENTED",
     "director": "3D Asset Director",
     "registryTotal": 129,
-    "registry": "3D_Blueprints/Registry/blueprint-registry.json"
+    "registry": "3D_Blueprints/Registry/blueprint-registry.json",
+    "productionQueue": "data/3d-production-queue.json",
+    "firstHandoffBatch": [
+      "BATTLEFIELD_001",
+      "BATTLEFIELD_002",
+      "BATTLEFIELD_003",
+      "BATTLEFIELD_004",
+      "BATTLEFIELD_005",
+      "BATTLEFIELD_006",
+      "BATTLEFIELD_007",
+      "BATTLEFIELD_008",
+      "BATTLEFIELD_009",
+      "BATTLEFIELD_010",
+      "BATTLEFIELD_011",
+      "BATTLEFIELD_012"
+    ]
   }
 }

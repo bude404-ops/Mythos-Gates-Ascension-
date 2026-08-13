@@ -33,6 +33,7 @@ for (const [type, file] of Object.entries(sourceFiles)) {
 }
 const registry = read('3D_Blueprints/Registry/blueprint-registry.json');
 const system = read('data/3d-blueprint-system.json');
+const productionQueue = read('data/3d-production-queue.json');
 const master = read('3D_Blueprints/Global_References/Master_Scale_Reference/metadata.json');
 const materialLibrary = read('3D_Blueprints/Global_References/Material_Library/metadata.json');
 const styleGuide = read('3D_Blueprints/Global_References/Visual_Style_Guide/metadata.json');
@@ -129,4 +130,26 @@ for (const template of [
   if (!exists(`3D_Blueprints/Templates/${template}`)) fail(`Missing 3D template ${template}`);
 }
 if (!exists('3D_Blueprints/Schemas/blueprint-package.schema.json')) fail('Missing 3D blueprint package schema');
-console.log(JSON.stringify({ ok: true, blueprint3d: 'PASS', ...stats }, null, 2));
+if (productionQueue.status !== 'IMPLEMENTED') fail('3D production queue must be IMPLEMENTED');
+if (productionQueue.sourceRegistry !== '3D_Blueprints/Registry/blueprint-registry.json') fail('3D production queue sourceRegistry mismatch');
+if (!Array.isArray(productionQueue.queue) || productionQueue.queue.length !== registry.assets.length) fail('3D production queue must cover every registry asset');
+if (!Array.isArray(productionQueue.firstHandoffBatch) || productionQueue.firstHandoffBatch.length < 8) fail('3D production queue first handoff batch too small');
+const registryById = new Map(registry.assets.map(asset => [asset.assetId, asset]));
+const queueSeen = new Set();
+for (const row of productionQueue.queue) {
+  const entry = registryById.get(row.assetId);
+  if (!entry) fail(`3D production queue unknown asset ${row.assetId}`);
+  if (queueSeen.has(row.assetId)) fail(`3D production queue duplicate asset ${row.assetId}`);
+  queueSeen.add(row.assetId);
+  if (row.sourcePackage !== entry.path) fail(`${row.assetId}: queue sourcePackage mismatch`);
+  if (row.status !== entry.status || row.assetType !== entry.assetType || row.canonicalEntityId !== entry.canonicalEntityId) fail(`${row.assetId}: queue row must mirror registry identity`);
+  for (const field of ['priority', 'lane', 'phase', 'director', 'handoffInstruction']) if (!row[field]) fail(`${row.assetId}: queue missing ${field}`);
+  if (row.director !== '3D Asset Director') fail(`${row.assetId}: queue director mismatch`);
+  if (!Array.isArray(row.acceptanceCriteria) || !row.acceptanceCriteria.length) fail(`${row.assetId}: queue missing acceptance criteria`);
+  if (row.assetType !== 'GLOBAL_REFERENCE') for (const ref of ['GLOBAL_REF_001', 'GLOBAL_REF_002', 'GLOBAL_REF_003']) if (!(row.dependsOn || []).includes(ref)) fail(`${row.assetId}: queue missing dependency ${ref}`);
+}
+for (const row of productionQueue.firstHandoffBatch) {
+  if (!queueSeen.has(row.assetId)) fail(`${row.assetId}: first handoff missing from queue`);
+  if (row.assetType === 'GLOBAL_REFERENCE') fail(`${row.assetId}: first handoff cannot be a global reference`);
+}
+console.log(JSON.stringify({ ok: true, blueprint3d: 'PASS', productionQueue: productionQueue.queue.length, firstHandoffBatch: productionQueue.firstHandoffBatch.length, ...stats }, null, 2));

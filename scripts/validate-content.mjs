@@ -65,6 +65,7 @@ const data = {
   commandHubContract: read('data/command-hub-contract.json'),
   assetRegistry: read('data/asset-registry.json'),
   blueprint3dSystem: read('data/3d-blueprint-system.json'),
+  blueprint3dProductionQueue: read('data/3d-production-queue.json'),
   blueprint3dRegistry: read('3D_Blueprints/Registry/blueprint-registry.json'),
   worldScaleReference: read('data/world-scale-reference.json'),
   artDirectorScaleSheets: read('data/art-director-scale-sheets.json'),
@@ -89,6 +90,7 @@ register('endgameDashboard', data.endgameDashboard, 'data/endgame-dashboard.json
 register('commandHubContract', data.commandHubContract, 'data/command-hub-contract.json');
 register('assetRegistry', data.assetRegistry, 'data/asset-registry.json');
 register('blueprint3dSystem', data.blueprint3dSystem, 'data/3d-blueprint-system.json');
+register('blueprint3dProductionQueue', data.blueprint3dProductionQueue, 'data/3d-production-queue.json');
 register('blueprint3dRegistry', data.blueprint3dRegistry, '3D_Blueprints/Registry/blueprint-registry.json');
 register('worldScaleReference', data.worldScaleReference, 'data/world-scale-reference.json');
 register('artDirectorScaleSheets', data.artDirectorScaleSheets, 'data/art-director-scale-sheets.json');
@@ -135,6 +137,31 @@ if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'CHARACTER').leng
 if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'CREATURE').length !== data.creatures.length) fail('3D Creature blueprint count must match canon Creatures');
 if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'BATTLEFIELD').length !== data.maps.length) fail('3D Battlefield blueprint count must match canon Maps');
 if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'GATE').length !== data.realmCodex.length) fail('3D Gate blueprint count must match canon Realm Gates');
+if(data.blueprint3dProductionQueue.status !== 'IMPLEMENTED' || data.blueprint3dProductionQueue.taskId !== 'TG-DEV-032') fail('3D production queue must complete TG-DEV-032');
+if(data.blueprint3dProductionQueue.sourceRegistry !== '3D_Blueprints/Registry/blueprint-registry.json') fail('3D production queue source registry mismatch');
+if(data.blueprint3dProductionQueue.coverage?.total !== data.blueprint3dRegistry.assets.length) fail('3D production queue coverage total mismatch');
+if((data.blueprint3dProductionQueue.queue || []).length !== data.blueprint3dRegistry.assets.length) fail('3D production queue must cover every registry asset');
+const blueprintAssetIds = new Set(data.blueprint3dRegistry.assets.map(a => a.assetId));
+const blueprintPathsById = new Map(data.blueprint3dRegistry.assets.map(a => [a.assetId, a.path]));
+const queueIds = new Set();
+for (const row of data.blueprint3dProductionQueue.queue || []) {
+  if(!blueprintAssetIds.has(row.assetId)) fail(`3D production queue references unknown asset ${row.assetId}`);
+  if(queueIds.has(row.assetId)) fail(`3D production queue duplicate asset ${row.assetId}`);
+  queueIds.add(row.assetId);
+  if(row.sourcePackage !== blueprintPathsById.get(row.assetId)) fail(`${row.assetId}: queue sourcePackage must match registry path`);
+  for (const field of ['priority','lane','phase','director','handoffInstruction']) if(!row[field]) fail(`${row.assetId}: queue missing ${field}`);
+  if(row.director !== '3D Asset Director') fail(`${row.assetId}: queue row must belong to 3D Asset Director`);
+  if(!Array.isArray(row.acceptanceCriteria) || row.acceptanceCriteria.length < 1) fail(`${row.assetId}: queue missing acceptanceCriteria`);
+  if(row.assetType !== 'GLOBAL_REFERENCE') {
+    for (const ref of ['GLOBAL_REF_001','GLOBAL_REF_002','GLOBAL_REF_003']) if(!(row.dependsOn || []).includes(ref)) fail(`${row.assetId}: queue row missing global reference dependency ${ref}`);
+  }
+}
+if((data.blueprint3dProductionQueue.firstHandoffBatch || []).length < 8) fail('3D production queue first handoff batch too small');
+for (const row of data.blueprint3dProductionQueue.firstHandoffBatch || []) {
+  if(!queueIds.has(row.assetId)) fail(`${row.assetId}: first handoff row not present in queue`);
+  if(row.assetType === 'GLOBAL_REFERENCE') fail(`${row.assetId}: first handoff batch must contain production assets, not references`);
+}
+if(!data.tasks.some(t => t.id === 'TG-DEV-032' && t.status === 'COMPLETED' && t.relatedEntity === data.blueprint3dProductionQueue.id)) fail('TG-DEV-032 completion task missing for 3D production queue');
 if (!data.visualBaselines.length || data.visualBaselines.some(b => b.status !== 'APPROVED')) fail('Visual baselines must all be APPROVED after TG-DEV-009');
 if (data.visualQaBaselineApproval.status !== 'APPROVED' || data.visualQaBaselineApproval.taskId !== 'TG-DEV-009' || data.visualQaBaselineApproval.screens.length !== data.visualBaselines.length) fail('Visual QA baseline approval artifact invalid');
 for (const b of data.visualBaselines) {
@@ -495,4 +522,4 @@ if(!data.visualScreens.some(s => s.id === 'TG-SCREEN-TACTICAL-MAP-PROTOTYPE' && 
 const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','Game Preview','Visual QA','Tactical Map Prototype','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
 
-console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status, soloBattleSchema:data.soloBattleStateSchema.status, soloVerticalSlice:data.soloVerticalSlice.status, asyncArena:data.asyncArenaSystem.status, commandHub:data.commandHubContract.status, battlefieldRuntime:data.battlefieldRuntimeArchitecture.status, blueprint3d:data.blueprint3dSystem.status, blueprint3dAssets:data.blueprint3dRegistry.assets.length}, null, 2));
+console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status, soloBattleSchema:data.soloBattleStateSchema.status, soloVerticalSlice:data.soloVerticalSlice.status, asyncArena:data.asyncArenaSystem.status, commandHub:data.commandHubContract.status, battlefieldRuntime:data.battlefieldRuntimeArchitecture.status, blueprint3d:data.blueprint3dSystem.status, blueprint3dAssets:data.blueprint3dRegistry.assets.length, blueprint3dProductionQueue:data.blueprint3dProductionQueue.queue.length}, null, 2));

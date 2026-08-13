@@ -88,7 +88,8 @@ const files = {
   'campaign-playflow-contract.json': 'campaignPlayflowContract',
   'command-hub-contract.json': 'commandHubContract',
   'asset-registry.json': 'assetRegistry',
-  '3d-blueprint-system.json': 'blueprint3dSystem'
+  '3d-blueprint-system.json': 'blueprint3dSystem',
+  '3d-production-queue.json': 'blueprint3dProductionQueue'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {
@@ -104,6 +105,7 @@ const sourceFileFingerprints = Object.fromEntries(Object.keys(files).map(f => {
 const hollowEncounterSystem = read('data/hollow-encounter-system.json');
 const blueprint3dSystem = read('data/3d-blueprint-system.json');
 const blueprint3dRegistry = read('3D_Blueprints/Registry/blueprint-registry.json');
+const blueprint3dProductionQueue = read('data/3d-production-queue.json');
 counts.hollowCreatures = (hollowEncounterSystem.roster || []).length;
 const artPrompts = read('data/art-prompts.json');
 const artPromptCategories = artPrompts.reduce((acc, prompt) => {
@@ -128,7 +130,9 @@ counts.blueprint3dAssets = blueprint3dRegistry.assets.length;
 counts.blueprint3dTitans = blueprint3dRegistry.assets.filter(asset => asset.assetType === 'TITAN').length;
 counts.blueprint3dBattlefields = blueprint3dRegistry.assets.filter(asset => asset.assetType === 'BATTLEFIELD').length;
 counts.blueprint3dGates = blueprint3dRegistry.assets.filter(asset => asset.assetType === 'GATE').length;
-const index = { generated, counts, files: sourceFiles, sourceFileFingerprints, artPromptCategories, artMapPrompts, blueprint3dSystem: { status: blueprint3dSystem.status, director: blueprint3dSystem.director, registryTotal: blueprint3dRegistry.assets.length, registry: blueprint3dSystem.registry } };
+counts.blueprint3dProductionQueue = blueprint3dProductionQueue.queue.length;
+counts.blueprint3dFirstHandoffBatch = blueprint3dProductionQueue.firstHandoffBatch.length;
+const index = { generated, counts, files: sourceFiles, sourceFileFingerprints, artPromptCategories, artMapPrompts, blueprint3dSystem: { status: blueprint3dSystem.status, director: blueprint3dSystem.director, registryTotal: blueprint3dRegistry.assets.length, registry: blueprint3dSystem.registry, productionQueue: 'data/3d-production-queue.json', firstHandoffBatch: blueprint3dProductionQueue.firstHandoffBatch.map(item => item.assetId) } };
 write('data/index.json', index);
 console.log(JSON.stringify(index, null, 2));
 
