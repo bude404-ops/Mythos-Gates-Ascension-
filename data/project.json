@@ -1,20 +1,20 @@
 {
   "id": "TG-PROJECT-001",
   "name": "Titan Gates: Ascension",
-  "version": "1.0.0-battlefield-vs",
-  "phase": "Playable Campaign Select Integration",
-  "buildStatus": "Operational - all seven faction campaign mission sets are lore-matched and the playable build now has campaign, chapter, mission detail, and launch flow pending verification.",
-  "lastUpdate": "2026-08-11",
+  "version": "1.0.0-non-art-complete",
+  "phase": "Non-Art Production Complete",
+  "buildStatus": "Operational - all non-art gameplay, campaign, Command Hub, battlefield, validation, GitHub sync, creator handoff, and release systems are complete; only external final artwork import remains blocked.",
+  "lastUpdate": "2026-08-13",
   "githubRepo": "https://github.com/bude404-ops/Titans-Gate-",
   "gamePath": "game/index.html",
   "legacyPlatformPath": "titan-gates-dev-platform.html",
   "canonStatus": "Titan-only seven-Realm canon locked",
-  "artPipelineStatus": "Aten Ra campaign map and tactical battle screen prompt pair ready for generation; artwork import/approval metadata scaffold active",
+  "artPipelineStatus": "Approved prompt and creator handoff pipeline complete; final artwork import remains blocked until external generated assets arrive.",
   "visualPreviewPath": "game/preview.html",
   "visualQAStatus": "15 screen records and 15 baselines; tactical map prototype, mobile preview, dev/player view, affected-screen rules active",
   "realmCodexStatus": "7 Realm chapters; 63 Titan hooks; Codex-linked and validated",
   "hybridVisualStatus": "2D sprites for combatants; 3D environments for Realms, campaign maps, battlefields, Gates, and progression spaces",
-  "githubSyncStatus": "SYNCED",
+  "githubSyncStatus": "SYNCED_TO_MAIN",
   "previousStableVersion": "0.3.3",
   "tacticalPrototypePath": "game/tactical-map-prototype.html",
   "campaignPipelineStatus": "7 campaigns, 12 maps, and 19 chapters now scaffold the first expansion wave.",
@@ -26,18 +26,37 @@
   "campaignArchitectureStatus": "All seven faction campaigns complete with 20 Normal + 20 Elite missions each; playable selection path integrated.",
   "endgameArchitectureStatus": "5-Titan squads, Ascension, Async Arena, Trials, Raids, Mastery, Seasons, Achievements, Analytics, and fair monetization registries active.",
   "miniAppPath": "mini-app/galaxy-reapers-ascension.html",
-  "miniAppStatus": "Latest Mini App export live in repository index; next playable layer now routes campaign select, chapter select, mission detail, and mission launch in game/index.html.",
-  "status": "Solo Titan Combat Redesign Baseline Ready",
-  "currentFocus": "One-active-Titan combat overhaul: design, roster redesign, migration report, and next vertical slice implementation.",
+  "miniAppStatus": "Titan Gates Dev Platform live with non-art completion status, release automation, asset contracts, creator handoffs, and validation evidence.",
+  "status": "NON_ART_COMPLETE_ART_IMPORT_BLOCKED",
+  "currentFocus": "External art dependency only: import approved final artwork when real generated assets are supplied.",
   "systems": {
-    "soloTitanCombat": "Design baseline complete; production engine migration next."
+    "soloTitanCombat": "Complete and validated.",
+    "commandHub": "Complete and validated.",
+    "battlefieldRuntime": "Complete and validated.",
+    "campaignPlayflow": "Complete and validated.",
+    "githubAssetRepository": "Complete and validated; awaiting real source assets.",
+    "releaseAutomation": "Active on GitHub main."
   },
-  "updated": "2026-08-11",
+  "updated": "2026-08-13",
   "milestones": [
     {
       "id": "TG-MILESTONE-FACTION-MISSIONS-DIALOGUES-SOLO-READY",
       "status": "Complete",
       "summary": "All faction missions and dialogues are complete, chapter-linked, production-ready, and aligned with one active Titan standard combat."
+    },
+    {
+      "id": "TG-MILESTONE-NON-ART-COMPLETE",
+      "status": "Complete",
+      "summary": "All non-art dependencies are complete; only externally generated final artwork import remains blocked."
     }
-  ]
+  ],
+  "nonArtCompletion": {
+    "status": "COMPLETE",
+    "completedTasks": 47,
+    "totalTasks": 48,
+    "blockedArtDependency": "TG-DEV-004",
+    "percentAllTasks": 97.9,
+    "percentUnblockedTasks": 100,
+    "statement": "All non-art dependencies are complete. Remaining work is limited to external generated artwork import."
+  }
 }
