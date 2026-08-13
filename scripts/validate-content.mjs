@@ -52,7 +52,11 @@ const data = {
   storylineArcs: read('data/storyline-arc-registry.json'),
   campaignConsequences: read('data/campaign-consequence-registry.json'),
   soloBattleStateSchema: read('data/solo-battle-state-schema.json'),
-  soloVerticalSlice: read('data/solo-vertical-slice.json')
+  soloVerticalSlice: read('data/solo-vertical-slice.json'),
+  asyncArenaSystem: read('data/async-arena-system.json'),
+  endgameDashboard: read('data/endgame-dashboard.json'),
+  commandHubContract: read('data/command-hub-contract.json'),
+  assetRegistry: read('data/asset-registry.json')
 };
 
 for (const [name, arr] of Object.entries(data)) {
@@ -61,6 +65,10 @@ for (const [name, arr] of Object.entries(data)) {
 register('project', data.project, 'data/project.json');
 register('soloBattleStateSchema', data.soloBattleStateSchema, 'data/solo-battle-state-schema.json');
 register('soloVerticalSlice', data.soloVerticalSlice, 'data/solo-vertical-slice.json');
+register('asyncArenaSystem', data.asyncArenaSystem, 'data/async-arena-system.json');
+register('endgameDashboard', data.endgameDashboard, 'data/endgame-dashboard.json');
+register('commandHubContract', data.commandHubContract, 'data/command-hub-contract.json');
+register('assetRegistry', data.assetRegistry, 'data/asset-registry.json');
 
 const factionIds = new Set(data.factions.map(f => f.id));
 const titanIds = new Set(data.titans.map(t => t.id));
@@ -256,15 +264,46 @@ for (const gate of ['Exactly one active player Titan','Exactly five pre-boss mis
 const soloEngine = fs.readFileSync(path.join(root,'game/solo-battle-engine.mjs'),'utf8');
 for (const token of ['createInitialSoloBattleState','applyTitanAction','revealEnemyIntents','resolveEnemyPhase','applyReaction','applyTerrainTick','evaluateObjectives','runReducerScript']) if(!soloEngine.includes(`export function ${token}`)) fail(`Solo battle engine missing ${token}`);
 
+const asyncArena = data.asyncArenaSystem;
+if(asyncArena.status !== 'IMPLEMENTED') fail('Async arena snapshot model must be IMPLEMENTED');
+if(asyncArena.mode !== 'ASYNCHRONOUS' || asyncArena.livePvpImplemented !== false || asyncArena.standardSquadSize !== 1) fail('Async arena must remain asynchronous one-Titan snapshot model');
+if(!asyncArena.snapshotRules?.oneActiveDefenderTitan || !asyncArena.snapshotRules?.checksumRequired || asyncArena.snapshotRules?.noFabricatedProgression !== true) fail('Async arena snapshot rules incomplete');
+if(!Array.isArray(asyncArena.defenseSnapshots) || asyncArena.defenseSnapshots.length !== asyncArena.sampleOpponents.length) fail('Async arena snapshot coverage mismatch');
+for (const snap of asyncArena.defenseSnapshots) {
+  if(!titanIds.has(snap.sourceTitanId)) fail(`${snap.snapshotId}: invalid sourceTitanId`);
+  for (const field of asyncArena.defenseSnapshotFields) if(snap[field] === undefined || snap[field] === null || snap[field] === '') fail(`${snap.snapshotId}: missing snapshot field ${field}`);
+  if(!Array.isArray(snap.stanceLoadout) || !snap.stanceLoadout.includes('Ascendant')) fail(`${snap.snapshotId}: incomplete stance loadout`);
+  if(!Array.isArray(snap.reactionLoadout) || snap.reactionLoadout.length < 2) fail(`${snap.snapshotId}: incomplete reaction loadout`);
+  if(!String(snap.checksum).startsWith('sha256:')) fail(`${snap.snapshotId}: checksum missing`);
+}
+if(data.endgameDashboard.sampleState && JSON.stringify(data.endgameDashboard.sampleState) !== '{}') fail('Endgame dashboard must not fabricate player progression');
+
+
 
 for (const file of ['index.html','game/index.html','game/tactical-map-prototype.html','titan-gates-dev-platform.html']) if(!exists(file)) fail(`Missing required HTML file ${file}`);
 const game = fs.readFileSync(path.join(root,'game/index.html'),'utf8');
-if(!game.includes('OPEN THE TITAN GATE') || !game.includes('function enemyTurn')) fail('Playable game integrity check failed');
-for (const token of ['Mission Objectives','Solar Seal','Hollow Anchor','River-Light Exit','scoreStars','callReinforcements']) if(!game.includes(token)) fail(`Playable objective expansion missing ${token}`);
+const hubRuntime = fs.readFileSync(path.join(root,'game/command-hub-runtime.mjs'),'utf8');
+if(!game.includes('OPEN THE TITAN GATE') || !game.includes('createCommandHubRuntime') || !game.includes('Command Hub')) fail('Playable Command Hub integrity check failed');
+for (const token of ['BOOT_STAGES','validatePlayerState','getNextRecommendedAction','AssetManager','AudioManager','deriveNotifications','bottomNav','Titan Roster','Realm Network','Lore Registry','Playable Solo Battle','battleBasic','battleObjective','normalizeProgression','createRewardCache','claimReward','pendingRewards','rewardHistory']) if(!hubRuntime.includes(token)) fail(`Command Hub runtime missing ${token}`);
+const browserBattle = fs.readFileSync(path.join(root,'game/browser-battle-engine.mjs'),'utf8');
+for (const token of ['createBattleState','applyTitanAction','applyReaction','autoAdvanceEnemyTurn','summarizeBattle','chooseEnemyIntent','HOLLOW_SWARMER','GATEBORN_BRUTE','OBJECTIVE_CRUSH','enemyIntentCounts']) if(!browserBattle.includes(token)) fail(`Browser battle engine missing ${token}`);
+const hub = data.commandHubContract;
+if(hub.status !== 'IMPLEMENTED' || hub.canonFirst !== true) fail('Command Hub contract must be IMPLEMENTED and canon-first');
+if(!Array.isArray(hub.startupPipeline) || hub.startupPipeline.length < 9 || hub.startupPipeline[0] !== 'BOOT' || !hub.startupPipeline.includes('MAIN_COMMAND_HUB')) fail('Command Hub startup pipeline incomplete');
+if(!hub.defaultPlayerState?.selectedTitans?.every(id => titanIds.has(id))) fail('Command Hub default PlayerState references invalid Titan');
+if(!missionIds.has(hub.defaultPlayerState?.campaignProgress?.currentMissionId)) fail('Command Hub default PlayerState references invalid mission');
+if((hub.navigationTabs || []).length !== 5) fail('Command Hub must expose five bottom navigation sections');
+if(!hub.qualityGates?.some(g => g.includes('BOOT -> LOAD -> HUB -> TITANS -> BACK -> BATTLE -> RETURN -> HUB'))) fail('Command Hub smoke quality gate missing');
+const assetRegistry = data.assetRegistry;
+if(assetRegistry.status !== 'IMPLEMENTED' || !Array.isArray(assetRegistry.assets) || assetRegistry.assets.length < data.factions.length * 3) fail('Command Hub asset registry incomplete');
+for (const asset of assetRegistry.assets) {
+  if(!asset.assetId || !asset.entityId || !asset.assetType || !asset.path || !asset.status || !asset.fallback) fail(`Invalid asset registry row ${asset.assetId || 'unknown'}`);
+  if(!assetRegistry.assetStatuses.includes(asset.status)) fail(`${asset.assetId}: invalid asset status`);
+}
 const tactical = fs.readFileSync(path.join(root,'game/tactical-map-prototype.html'),'utf8');
 for (const token of ['__TG_TACTICAL_MAP_READY__','const REALMS','const TITANS','function getMovableTiles','function enemyTurn','toggleCamera','realm-selector']) if(!tactical.includes(token)) fail(`Tactical prototype missing ${token}`);
 if(!data.visualScreens.some(s => s.id === 'TG-SCREEN-TACTICAL-MAP-PROTOTYPE' && s.slug === 'tactical-map-prototype')) fail('Visual QA missing tactical map prototype screen');
 const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','Game Preview','Visual QA','Tactical Map Prototype','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
 
-console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status, soloBattleSchema:data.soloBattleStateSchema.status, soloVerticalSlice:data.soloVerticalSlice.status}, null, 2));
+console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status, soloBattleSchema:data.soloBattleStateSchema.status, soloVerticalSlice:data.soloVerticalSlice.status, asyncArena:data.asyncArenaSystem.status, commandHub:data.commandHubContract.status}, null, 2));

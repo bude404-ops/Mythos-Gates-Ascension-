@@ -1,0 +1,1104 @@
+{
+  "id": "TG-CAMPAIGN-PLAYFLOW-CONTRACT-001",
+  "version": "1.0.0",
+  "generated": "2026-08-12T21:24:00Z",
+  "status": "IMPLEMENTED",
+  "purpose": "Production contract that connects faction campaign selection, chapter browsing, mission detail inspection, and playable battle handoff for the one-active-Titan campaign shell.",
+  "canonSources": [
+    "data/factions.json",
+    "data/campaign-chapter-registry.json",
+    "data/mission-registry.json",
+    "game/index.html"
+  ],
+  "routeStates": [
+    "campaigns",
+    "chapters",
+    "mission",
+    "battle"
+  ],
+  "dataShape": {
+    "campaignCard": [
+      "factionId",
+      "factionName",
+      "chapterCount",
+      "normalMissionCount",
+      "eliteMissionCount",
+      "recommendedPowerRange"
+    ],
+    "chapterBrowser": [
+      "chapterId",
+      "chapterNumber",
+      "title",
+      "normalMissionIds",
+      "eliteMissionIds",
+      "defaultMissionId"
+    ],
+    "missionDetail": [
+      "missionId",
+      "campaignType",
+      "recommendedPower",
+      "primaryObjective",
+      "optionalObjectives",
+      "mapId",
+      "dialogueId",
+      "artPackageId"
+    ],
+    "battleHandoff": [
+      "missionId",
+      "selectedTitanIds",
+      "round",
+      "energy",
+      "objectives",
+      "enemies",
+      "stars"
+    ]
+  },
+  "qualityGates": [
+    "Every playable faction has five chapter routes.",
+    "Every chapter route exposes exactly four Normal and four Elite mission ids.",
+    "Every mission id resolves to mission registry data with map, dialogue, art package, objectives, and rewards.",
+    "Campaign select must expose all seven factions from canonical faction data.",
+    "Mission detail must include launch handoff into battle state.",
+    "Battle shell must preserve mission title, faction, power, primary objective, optional objectives, and enemy pressure.",
+    "Visual smoke blocks release if campaign/chapter/mission route tokens disappear."
+  ],
+  "flow": [
+    {
+      "factionId": "TG-FACTION-001",
+      "factionName": "Aten Ra",
+      "routeSlug": "campaign/TG-FACTION-001/chapters",
+      "defaultMode": "Normal",
+      "chapterCount": 5,
+      "normalMissionCount": 20,
+      "eliteMissionCount": 20,
+      "recommendedPowerRange": [
+        135,
+        800
+      ],
+      "chapterRoutes": [
+        {
+          "chapterId": "TG-F01-CH01",
+          "chapterNumber": 1,
+          "title": "Chapter 1: Awakening",
+          "status": "Architecture Ready",
+          "summary": "Introduce Aten Ra law, solar formation discipline, river-light positioning, and Hollow leakage beneath sacred stone.",
+          "normalMissionIds": [
+            "TG-F01-C01-M01",
+            "TG-F01-C01-M02",
+            "TG-F01-C01-M03",
+            "TG-F01-C01-M04"
+          ],
+          "eliteMissionIds": [
+            "TG-F01-E-C01-M01",
+            "TG-F01-E-C01-M02",
+            "TG-F01-E-C01-M03",
+            "TG-F01-E-C01-M04"
+          ],
+          "defaultMissionId": "TG-F01-C01-M01",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F01-C01-M01",
+            "battleRoute": "battle/TG-F01-C01-M01",
+            "mapId": "TG-MAP-001",
+            "mapName": "The First Reopening Gate"
+          }
+        },
+        {
+          "chapterId": "TG-F01-CH02",
+          "chapterNumber": 2,
+          "title": "Chapter 2: The First Gate",
+          "status": "Architecture Ready",
+          "summary": "Push from temple roads to the first active Gate; environmental light lanes and dangerous enemy timing begin.",
+          "normalMissionIds": [
+            "TG-F01-C02-M05",
+            "TG-F01-C02-M06",
+            "TG-F01-C02-M07",
+            "TG-F01-C02-M08"
+          ],
+          "eliteMissionIds": [
+            "TG-F01-E-C02-M05",
+            "TG-F01-E-C02-M06",
+            "TG-F01-E-C02-M07",
+            "TG-F01-E-C02-M08"
+          ],
+          "defaultMissionId": "TG-F01-C02-M05",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F01-C02-M05",
+            "battleRoute": "battle/TG-F01-C02-M05",
+            "mapId": "TG-MAP-001",
+            "mapName": "The First Reopening Gate"
+          }
+        },
+        {
+          "chapterId": "TG-F01-CH03",
+          "chapterNumber": 3,
+          "title": "Chapter 3: Realm Conflict",
+          "status": "Architecture Ready",
+          "summary": "Escalate into disputed Kemet law: living river channels, corrupted anchors, and enemy orders that punish poor spacing.",
+          "normalMissionIds": [
+            "TG-F01-C03-M09",
+            "TG-F01-C03-M10",
+            "TG-F01-C03-M11",
+            "TG-F01-C03-M12"
+          ],
+          "eliteMissionIds": [
+            "TG-F01-E-C03-M09",
+            "TG-F01-E-C03-M10",
+            "TG-F01-E-C03-M11",
+            "TG-F01-E-C03-M12"
+          ],
+          "defaultMissionId": "TG-F01-C03-M09",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F01-C03-M09",
+            "battleRoute": "battle/TG-F01-C03-M09",
+            "mapId": "TG-MAP-001",
+            "mapName": "The First Reopening Gate"
+          }
+        },
+        {
+          "chapterId": "TG-F01-CH04",
+          "chapterNumber": 4,
+          "title": "Chapter 4: War of Titans",
+          "status": "Architecture Ready",
+          "summary": "Advanced encounters with simultaneous threats, Titan-level silhouettes, and punishing solar overcharge fields.",
+          "normalMissionIds": [
+            "TG-F01-C04-M13",
+            "TG-F01-C04-M14",
+            "TG-F01-C04-M15",
+            "TG-F01-C04-M16"
+          ],
+          "eliteMissionIds": [
+            "TG-F01-E-C04-M13",
+            "TG-F01-E-C04-M14",
+            "TG-F01-E-C04-M15",
+            "TG-F01-E-C04-M16"
+          ],
+          "defaultMissionId": "TG-F01-C04-M13",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F01-C04-M13",
+            "battleRoute": "battle/TG-F01-C04-M13",
+            "mapId": "TG-MAP-001",
+            "mapName": "The First Reopening Gate"
+          }
+        },
+        {
+          "chapterId": "TG-F01-CH05",
+          "chapterNumber": 5,
+          "title": "Chapter 5: The Ascension",
+          "status": "Architecture Ready",
+          "summary": "Final Sun Realm escalation with revelations about the Gate watching, not merely opening.",
+          "normalMissionIds": [
+            "TG-F01-C05-M17",
+            "TG-F01-C05-M18",
+            "TG-F01-C05-M19",
+            "TG-F01-C05-M20"
+          ],
+          "eliteMissionIds": [
+            "TG-F01-E-C05-M17",
+            "TG-F01-E-C05-M18",
+            "TG-F01-E-C05-M19",
+            "TG-F01-E-C05-M20"
+          ],
+          "defaultMissionId": "TG-F01-C05-M17",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F01-C05-M17",
+            "battleRoute": "battle/TG-F01-C05-M17",
+            "mapId": "TG-MAP-001",
+            "mapName": "The First Reopening Gate"
+          }
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-002",
+      "factionName": "Asgardian",
+      "routeSlug": "campaign/TG-FACTION-002/chapters",
+      "defaultMode": "Normal",
+      "chapterCount": 5,
+      "normalMissionCount": 20,
+      "eliteMissionCount": 20,
+      "recommendedPowerRange": [
+        428,
+        770
+      ],
+      "chapterRoutes": [
+        {
+          "chapterId": "TG-F02-CH01",
+          "chapterNumber": 1,
+          "title": "Chapter 1: Oath Under Thunder",
+          "status": "Architecture Ready",
+          "summary": "Asgardian Titans cross the Storm-Oath Bridge as old vows ignite in the ironwork and the Gate begins recording courage as usable force.",
+          "normalMissionIds": [
+            "TG-F02-C01-M01",
+            "TG-F02-C01-M02",
+            "TG-F02-C01-M03",
+            "TG-F02-C01-M04"
+          ],
+          "eliteMissionIds": [
+            "TG-F02-E-C01-M01",
+            "TG-F02-E-C01-M02",
+            "TG-F02-E-C01-M03",
+            "TG-F02-E-C01-M04"
+          ],
+          "defaultMissionId": "TG-F02-C01-M01",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F02-C01-M01",
+            "battleRoute": "battle/TG-F02-C01-M01",
+            "mapId": "TG-MAP-003",
+            "mapName": "Storm-Oath Bridge"
+          }
+        },
+        {
+          "chapterId": "TG-F02-CH02",
+          "chapterNumber": 2,
+          "title": "Chapter 2: The Banner That Forgot Its King",
+          "status": "Architecture Ready",
+          "summary": "A nameless remnant raises a war banner on the bridge and the Asgardian line must cut command knots before forgotten orders spread.",
+          "normalMissionIds": [
+            "TG-F02-C02-M05",
+            "TG-F02-C02-M06",
+            "TG-F02-C02-M07",
+            "TG-F02-C02-M08"
+          ],
+          "eliteMissionIds": [
+            "TG-F02-E-C02-M05",
+            "TG-F02-E-C02-M06",
+            "TG-F02-E-C02-M07",
+            "TG-F02-E-C02-M08"
+          ],
+          "defaultMissionId": "TG-F02-C02-M05",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F02-C02-M05",
+            "battleRoute": "battle/TG-F02-C02-M05",
+            "mapId": "TG-MAP-003",
+            "mapName": "Storm-Oath Bridge"
+          }
+        },
+        {
+          "chapterId": "TG-F02-CH03",
+          "chapterNumber": 3,
+          "title": "Chapter 3: Marble Law, Iron Oath",
+          "status": "Architecture Ready",
+          "summary": "Olympian envoys demand trial by excellence while Asgardian law demands fulfillment of sworn duty; the Creator must win without dissolving either culture.",
+          "normalMissionIds": [
+            "TG-F02-C03-M09",
+            "TG-F02-C03-M10",
+            "TG-F02-C03-M11",
+            "TG-F02-C03-M12"
+          ],
+          "eliteMissionIds": [
+            "TG-F02-E-C03-M09",
+            "TG-F02-E-C03-M10",
+            "TG-F02-E-C03-M11",
+            "TG-F02-E-C03-M12"
+          ],
+          "defaultMissionId": "TG-F02-C03-M09",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F02-C03-M09",
+            "battleRoute": "battle/TG-F02-C03-M09",
+            "mapId": "TG-MAP-004",
+            "mapName": "Marble Sky Arena"
+          }
+        },
+        {
+          "chapterId": "TG-F02-CH04",
+          "chapterNumber": 4,
+          "title": "Chapter 4: The Bridge Remembers Blood",
+          "status": "Architecture Ready",
+          "summary": "The Storm-Oath Bridge begins replaying every broken vow as real battlefield pressure, forcing Asgardian Titans to defend both living allies and old dead names.",
+          "normalMissionIds": [
+            "TG-F02-C04-M13",
+            "TG-F02-C04-M14",
+            "TG-F02-C04-M15",
+            "TG-F02-C04-M16"
+          ],
+          "eliteMissionIds": [
+            "TG-F02-E-C04-M13",
+            "TG-F02-E-C04-M14",
+            "TG-F02-E-C04-M15",
+            "TG-F02-E-C04-M16"
+          ],
+          "defaultMissionId": "TG-F02-C04-M13",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F02-C04-M13",
+            "battleRoute": "battle/TG-F02-C04-M13",
+            "mapId": "TG-MAP-003",
+            "mapName": "Storm-Oath Bridge"
+          }
+        },
+        {
+          "chapterId": "TG-F02-CH05",
+          "chapterNumber": 5,
+          "title": "Chapter 5: Covenant at the Thunder Gate",
+          "status": "Architecture Ready",
+          "summary": "At the Thunder Gate apex, Asgardian Titans swear a covenant that denies the Gate ownership of their courage and turns oath into protection rather than bait.",
+          "normalMissionIds": [
+            "TG-F02-C05-M17",
+            "TG-F02-C05-M18",
+            "TG-F02-C05-M19",
+            "TG-F02-C05-M20"
+          ],
+          "eliteMissionIds": [
+            "TG-F02-E-C05-M17",
+            "TG-F02-E-C05-M18",
+            "TG-F02-E-C05-M19",
+            "TG-F02-E-C05-M20"
+          ],
+          "defaultMissionId": "TG-F02-C05-M17",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F02-C05-M17",
+            "battleRoute": "battle/TG-F02-C05-M17",
+            "mapId": "TG-MAP-003",
+            "mapName": "Storm-Oath Bridge"
+          }
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-003",
+      "factionName": "Olympian",
+      "routeSlug": "campaign/TG-FACTION-003/chapters",
+      "defaultMode": "Normal",
+      "chapterCount": 5,
+      "normalMissionCount": 20,
+      "eliteMissionCount": 20,
+      "recommendedPowerRange": [
+        470,
+        938
+      ],
+      "chapterRoutes": [
+        {
+          "chapterId": "TG-F03-CH01",
+          "chapterNumber": 1,
+          "title": "Chapter 1: The Crowd Names the Trial",
+          "status": "Architecture Ready",
+          "summary": "The Crowd Names the Trial advances Laurel Senate Trials through floating marble arena with bronze laurel circles and crowd-shadow platforms while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F03-C01-M01",
+            "TG-F03-C01-M02",
+            "TG-F03-C01-M03",
+            "TG-F03-C01-M04"
+          ],
+          "eliteMissionIds": [
+            "TG-F03-E-C01-M01",
+            "TG-F03-E-C01-M02",
+            "TG-F03-E-C01-M03",
+            "TG-F03-E-C01-M04"
+          ],
+          "defaultMissionId": "TG-F03-C01-M01",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F03-C01-M01",
+            "battleRoute": "battle/TG-F03-C01-M01",
+            "mapId": "TG-MAP-004",
+            "mapName": "Marble Sky Arena"
+          }
+        },
+        {
+          "chapterId": "TG-F03-CH02",
+          "chapterNumber": 2,
+          "title": "Chapter 2: Statues of Jealous Victory",
+          "status": "Architecture Ready",
+          "summary": "Statues of Jealous Victory advances Laurel Senate Trials through mirror-victory hall with living statue lanes and polished judgment floors while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F03-C02-M05",
+            "TG-F03-C02-M06",
+            "TG-F03-C02-M07",
+            "TG-F03-C02-M08"
+          ],
+          "eliteMissionIds": [
+            "TG-F03-E-C02-M05",
+            "TG-F03-E-C02-M06",
+            "TG-F03-E-C02-M07",
+            "TG-F03-E-C02-M08"
+          ],
+          "defaultMissionId": "TG-F03-C02-M05",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F03-C02-M05",
+            "battleRoute": "battle/TG-F03-C02-M05",
+            "mapId": "TG-MAP-004",
+            "mapName": "Marble Sky Arena"
+          }
+        },
+        {
+          "chapterId": "TG-F03-CH03",
+          "chapterNumber": 3,
+          "title": "Chapter 3: Senate Under Hollow Witness",
+          "status": "Architecture Ready",
+          "summary": "Senate Under Hollow Witness advances Laurel Senate Trials through Laurel Senate dais with collapsing sky terraces and public vow markers while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F03-C03-M09",
+            "TG-F03-C03-M10",
+            "TG-F03-C03-M11",
+            "TG-F03-C03-M12"
+          ],
+          "eliteMissionIds": [
+            "TG-F03-E-C03-M09",
+            "TG-F03-E-C03-M10",
+            "TG-F03-E-C03-M11",
+            "TG-F03-E-C03-M12"
+          ],
+          "defaultMissionId": "TG-F03-C03-M09",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F03-C03-M09",
+            "battleRoute": "battle/TG-F03-C03-M09",
+            "mapId": "TG-MAP-004",
+            "mapName": "Marble Sky Arena"
+          }
+        },
+        {
+          "chapterId": "TG-F03-CH04",
+          "chapterNumber": 4,
+          "title": "Chapter 4: Star-Lance Contest",
+          "status": "Architecture Ready",
+          "summary": "Star-Lance Contest advances Laurel Senate Trials through star-lance colonnade where spear-light divides safe lanes from glory traps while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F03-C04-M13",
+            "TG-F03-C04-M14",
+            "TG-F03-C04-M15",
+            "TG-F03-C04-M16"
+          ],
+          "eliteMissionIds": [
+            "TG-F03-E-C04-M13",
+            "TG-F03-E-C04-M14",
+            "TG-F03-E-C04-M15",
+            "TG-F03-E-C04-M16"
+          ],
+          "defaultMissionId": "TG-F03-C04-M13",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F03-C04-M13",
+            "battleRoute": "battle/TG-F03-C04-M13",
+            "mapId": "TG-MAP-004",
+            "mapName": "Marble Sky Arena"
+          }
+        },
+        {
+          "chapterId": "TG-F03-CH05",
+          "chapterNumber": 5,
+          "title": "Chapter 5: The Laurel-Star Gate",
+          "status": "Architecture Ready",
+          "summary": "The Laurel-Star Gate advances Laurel Senate Trials through Laurel-Star Gate summit above the arena with cracked champion plinths while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F03-C05-M17",
+            "TG-F03-C05-M18",
+            "TG-F03-C05-M19",
+            "TG-F03-C05-M20"
+          ],
+          "eliteMissionIds": [
+            "TG-F03-E-C05-M17",
+            "TG-F03-E-C05-M18",
+            "TG-F03-E-C05-M19",
+            "TG-F03-E-C05-M20"
+          ],
+          "defaultMissionId": "TG-F03-C05-M17",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F03-C05-M17",
+            "battleRoute": "battle/TG-F03-C05-M17",
+            "mapId": "TG-MAP-004",
+            "mapName": "Marble Sky Arena"
+          }
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-004",
+      "factionName": "Kami",
+      "routeSlug": "campaign/TG-FACTION-004/chapters",
+      "defaultMode": "Normal",
+      "chapterCount": 5,
+      "normalMissionCount": 20,
+      "eliteMissionCount": 20,
+      "recommendedPowerRange": [
+        455,
+        923
+      ],
+      "chapterRoutes": [
+        {
+          "chapterId": "TG-F04-CH01",
+          "chapterNumber": 1,
+          "title": "Chapter 1: Foxfire Contracts",
+          "status": "Architecture Ready",
+          "summary": "Foxfire Contracts advances Kami Mirror Tempest through foxfire torii road with cedar roots, shrine stones, and lantern smoke lanes while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F04-C01-M01",
+            "TG-F04-C01-M02",
+            "TG-F04-C01-M03",
+            "TG-F04-C01-M04"
+          ],
+          "eliteMissionIds": [
+            "TG-F04-E-C01-M01",
+            "TG-F04-E-C01-M02",
+            "TG-F04-E-C01-M03",
+            "TG-F04-E-C01-M04"
+          ],
+          "defaultMissionId": "TG-F04-C01-M01",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F04-C01-M01",
+            "battleRoute": "battle/TG-F04-C01-M01",
+            "mapId": "TG-MAP-009",
+            "mapName": "Foxfire Torii Road"
+          }
+        },
+        {
+          "chapterId": "TG-F04-CH02",
+          "chapterNumber": 2,
+          "title": "Chapter 2: Torii Lanes in Storm",
+          "status": "Architecture Ready",
+          "summary": "Torii Lanes in Storm advances Kami Mirror Tempest through storm-bent shrine path where paper seals redirect hostile wind while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F04-C02-M05",
+            "TG-F04-C02-M06",
+            "TG-F04-C02-M07",
+            "TG-F04-C02-M08"
+          ],
+          "eliteMissionIds": [
+            "TG-F04-E-C02-M05",
+            "TG-F04-E-C02-M06",
+            "TG-F04-E-C02-M07",
+            "TG-F04-E-C02-M08"
+          ],
+          "defaultMissionId": "TG-F04-C02-M05",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F04-C02-M05",
+            "battleRoute": "battle/TG-F04-C02-M05",
+            "mapId": "TG-MAP-010",
+            "mapName": "Mirror Lake Sanctum"
+          }
+        },
+        {
+          "chapterId": "TG-F04-CH03",
+          "chapterNumber": 3,
+          "title": "Chapter 3: The Lake Answers Twice",
+          "status": "Architecture Ready",
+          "summary": "The Lake Answers Twice advances Kami Mirror Tempest through mirror lake sanctum with moon bridges and black-water reflection hazards while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F04-C03-M09",
+            "TG-F04-C03-M10",
+            "TG-F04-C03-M11",
+            "TG-F04-C03-M12"
+          ],
+          "eliteMissionIds": [
+            "TG-F04-E-C03-M09",
+            "TG-F04-E-C03-M10",
+            "TG-F04-E-C03-M11",
+            "TG-F04-E-C03-M12"
+          ],
+          "defaultMissionId": "TG-F04-C03-M09",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F04-C03-M09",
+            "battleRoute": "battle/TG-F04-C03-M09",
+            "mapId": "TG-MAP-009",
+            "mapName": "Foxfire Torii Road"
+          }
+        },
+        {
+          "chapterId": "TG-F04-CH04",
+          "chapterNumber": 4,
+          "title": "Chapter 4: Shrine Law Under Teeth",
+          "status": "Architecture Ready",
+          "summary": "Shrine Law Under Teeth advances Kami Mirror Tempest through inner shrine court where spirit contracts become tactical boundaries while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F04-C04-M13",
+            "TG-F04-C04-M14",
+            "TG-F04-C04-M15",
+            "TG-F04-C04-M16"
+          ],
+          "eliteMissionIds": [
+            "TG-F04-E-C04-M13",
+            "TG-F04-E-C04-M14",
+            "TG-F04-E-C04-M15",
+            "TG-F04-E-C04-M16"
+          ],
+          "defaultMissionId": "TG-F04-C04-M13",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F04-C04-M13",
+            "battleRoute": "battle/TG-F04-C04-M13",
+            "mapId": "TG-MAP-010",
+            "mapName": "Mirror Lake Sanctum"
+          }
+        },
+        {
+          "chapterId": "TG-F04-CH05",
+          "chapterNumber": 5,
+          "title": "Chapter 5: Mirror Tempest Gate",
+          "status": "Architecture Ready",
+          "summary": "Mirror Tempest Gate advances Kami Mirror Tempest through tempest mirror gate where false lanes split from sacred ground while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F04-C05-M17",
+            "TG-F04-C05-M18",
+            "TG-F04-C05-M19",
+            "TG-F04-C05-M20"
+          ],
+          "eliteMissionIds": [
+            "TG-F04-E-C05-M17",
+            "TG-F04-E-C05-M18",
+            "TG-F04-E-C05-M19",
+            "TG-F04-E-C05-M20"
+          ],
+          "defaultMissionId": "TG-F04-C05-M17",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F04-C05-M17",
+            "battleRoute": "battle/TG-F04-C05-M17",
+            "mapId": "TG-MAP-009",
+            "mapName": "Foxfire Torii Road"
+          }
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-005",
+      "factionName": "Tuatha",
+      "routeSlug": "campaign/TG-FACTION-005/chapters",
+      "defaultMode": "Normal",
+      "chapterCount": 5,
+      "normalMissionCount": 20,
+      "eliteMissionCount": 20,
+      "recommendedPowerRange": [
+        485,
+        953
+      ],
+      "chapterRoutes": [
+        {
+          "chapterId": "TG-F05-CH01",
+          "chapterNumber": 1,
+          "title": "Chapter 1: Roots Remember Footsteps",
+          "status": "Architecture Ready",
+          "summary": "Roots Remember Footsteps advances Roots Below the Gate through moon-grove rootlabyrinth with braided root walls and soft moss cover while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F05-C01-M01",
+            "TG-F05-C01-M02",
+            "TG-F05-C01-M03",
+            "TG-F05-C01-M04"
+          ],
+          "eliteMissionIds": [
+            "TG-F05-E-C01-M01",
+            "TG-F05-E-C01-M02",
+            "TG-F05-E-C01-M03",
+            "TG-F05-E-C01-M04"
+          ],
+          "defaultMissionId": "TG-F05-C01-M01",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F05-C01-M01",
+            "battleRoute": "battle/TG-F05-C01-M01",
+            "mapId": "TG-MAP-005",
+            "mapName": "Moon-Grove Rootlabyrinth"
+          }
+        },
+        {
+          "chapterId": "TG-F05-CH02",
+          "chapterNumber": 2,
+          "title": "Chapter 2: Fae Roads Refuse Fire",
+          "status": "Architecture Ready",
+          "summary": "Fae Roads Refuse Fire advances Roots Below the Gate through fae crossing where mirrored dew paths repeat careless movement while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F05-C02-M05",
+            "TG-F05-C02-M06",
+            "TG-F05-C02-M07",
+            "TG-F05-C02-M08"
+          ],
+          "eliteMissionIds": [
+            "TG-F05-E-C02-M05",
+            "TG-F05-E-C02-M06",
+            "TG-F05-E-C02-M07",
+            "TG-F05-E-C02-M08"
+          ],
+          "defaultMissionId": "TG-F05-C02-M05",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F05-C02-M05",
+            "battleRoute": "battle/TG-F05-C02-M05",
+            "mapId": "TG-MAP-005",
+            "mapName": "Moon-Grove Rootlabyrinth"
+          }
+        },
+        {
+          "chapterId": "TG-F05-CH03",
+          "chapterNumber": 3,
+          "title": "Chapter 3: The Elder Grove Bleeds",
+          "status": "Architecture Ready",
+          "summary": "The Elder Grove Bleeds advances Roots Below the Gate through elder grove wound with blackened bark and regrowing cover while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F05-C03-M09",
+            "TG-F05-C03-M10",
+            "TG-F05-C03-M11",
+            "TG-F05-C03-M12"
+          ],
+          "eliteMissionIds": [
+            "TG-F05-E-C03-M09",
+            "TG-F05-E-C03-M10",
+            "TG-F05-E-C03-M11",
+            "TG-F05-E-C03-M12"
+          ],
+          "defaultMissionId": "TG-F05-C03-M09",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F05-C03-M09",
+            "battleRoute": "battle/TG-F05-C03-M09",
+            "mapId": "TG-MAP-005",
+            "mapName": "Moon-Grove Rootlabyrinth"
+          }
+        },
+        {
+          "chapterId": "TG-F05-CH04",
+          "chapterNumber": 4,
+          "title": "Chapter 4: Moon-Stone Restoration",
+          "status": "Architecture Ready",
+          "summary": "Moon-Stone Restoration advances Roots Below the Gate through moon-stone ring where living terrain changes after every objective while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F05-C04-M13",
+            "TG-F05-C04-M14",
+            "TG-F05-C04-M15",
+            "TG-F05-C04-M16"
+          ],
+          "eliteMissionIds": [
+            "TG-F05-E-C04-M13",
+            "TG-F05-E-C04-M14",
+            "TG-F05-E-C04-M15",
+            "TG-F05-E-C04-M16"
+          ],
+          "defaultMissionId": "TG-F05-C04-M13",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F05-C04-M13",
+            "battleRoute": "battle/TG-F05-C04-M13",
+            "mapId": "TG-MAP-005",
+            "mapName": "Moon-Grove Rootlabyrinth"
+          }
+        },
+        {
+          "chapterId": "TG-F05-CH05",
+          "chapterNumber": 5,
+          "title": "Chapter 5: The Root-Crowned Gate",
+          "status": "Architecture Ready",
+          "summary": "The Root-Crowned Gate advances Roots Below the Gate through root-crowned gate hollowed beneath silver branches while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F05-C05-M17",
+            "TG-F05-C05-M18",
+            "TG-F05-C05-M19",
+            "TG-F05-C05-M20"
+          ],
+          "eliteMissionIds": [
+            "TG-F05-E-C05-M17",
+            "TG-F05-E-C05-M18",
+            "TG-F05-E-C05-M19",
+            "TG-F05-E-C05-M20"
+          ],
+          "defaultMissionId": "TG-F05-C05-M17",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F05-C05-M17",
+            "battleRoute": "battle/TG-F05-C05-M17",
+            "mapId": "TG-MAP-005",
+            "mapName": "Moon-Grove Rootlabyrinth"
+          }
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-006",
+      "factionName": "Empyrean",
+      "routeSlug": "campaign/TG-FACTION-006/chapters",
+      "defaultMode": "Normal",
+      "chapterCount": 5,
+      "normalMissionCount": 20,
+      "eliteMissionCount": 20,
+      "recommendedPowerRange": [
+        510,
+        978
+      ],
+      "chapterRoutes": [
+        {
+          "chapterId": "TG-F06-CH01",
+          "chapterNumber": 1,
+          "title": "Chapter 1: First Choir Lock",
+          "status": "Architecture Ready",
+          "summary": "First Choir Lock advances Empyrean Choir Vault through choir vault ascent with bone-white arches, bells, and sanctified stairs while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F06-C01-M01",
+            "TG-F06-C01-M02",
+            "TG-F06-C01-M03",
+            "TG-F06-C01-M04"
+          ],
+          "eliteMissionIds": [
+            "TG-F06-E-C01-M01",
+            "TG-F06-E-C01-M02",
+            "TG-F06-E-C01-M03",
+            "TG-F06-E-C01-M04"
+          ],
+          "defaultMissionId": "TG-F06-C01-M01",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F06-C01-M01",
+            "battleRoute": "battle/TG-F06-C01-M01",
+            "mapId": "TG-MAP-011",
+            "mapName": "Choir Vault Ascent"
+          }
+        },
+        {
+          "chapterId": "TG-F06-CH02",
+          "chapterNumber": 2,
+          "title": "Chapter 2: Beacon Stairs Above Silence",
+          "status": "Architecture Ready",
+          "summary": "Beacon Stairs Above Silence advances Empyrean Choir Vault through floating beacon stairways with glass bridges and radiant lock sigils while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F06-C02-M05",
+            "TG-F06-C02-M06",
+            "TG-F06-C02-M07",
+            "TG-F06-C02-M08"
+          ],
+          "eliteMissionIds": [
+            "TG-F06-E-C02-M05",
+            "TG-F06-E-C02-M06",
+            "TG-F06-E-C02-M07",
+            "TG-F06-E-C02-M08"
+          ],
+          "defaultMissionId": "TG-F06-C02-M05",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F06-C02-M05",
+            "battleRoute": "battle/TG-F06-C02-M05",
+            "mapId": "TG-MAP-012",
+            "mapName": "Broken Heaven Engine"
+          }
+        },
+        {
+          "chapterId": "TG-F06-CH03",
+          "chapterNumber": 3,
+          "title": "Chapter 3: Dissonance Trial",
+          "status": "Architecture Ready",
+          "summary": "Dissonance Trial advances Empyrean Choir Vault through dissonance gallery where false harmonies break formation timing while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F06-C03-M09",
+            "TG-F06-C03-M10",
+            "TG-F06-C03-M11",
+            "TG-F06-C03-M12"
+          ],
+          "eliteMissionIds": [
+            "TG-F06-E-C03-M09",
+            "TG-F06-E-C03-M10",
+            "TG-F06-E-C03-M11",
+            "TG-F06-E-C03-M12"
+          ],
+          "defaultMissionId": "TG-F06-C03-M09",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F06-C03-M09",
+            "battleRoute": "battle/TG-F06-C03-M09",
+            "mapId": "TG-MAP-011",
+            "mapName": "Choir Vault Ascent"
+          }
+        },
+        {
+          "chapterId": "TG-F06-CH04",
+          "chapterNumber": 4,
+          "title": "Chapter 4: The Engine Sings Wrong",
+          "status": "Architecture Ready",
+          "summary": "The Engine Sings Wrong advances Empyrean Choir Vault through broken heaven-engine platforms with rotating halo mechanisms while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F06-C04-M13",
+            "TG-F06-C04-M14",
+            "TG-F06-C04-M15",
+            "TG-F06-C04-M16"
+          ],
+          "eliteMissionIds": [
+            "TG-F06-E-C04-M13",
+            "TG-F06-E-C04-M14",
+            "TG-F06-E-C04-M15",
+            "TG-F06-E-C04-M16"
+          ],
+          "defaultMissionId": "TG-F06-C04-M13",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F06-C04-M13",
+            "battleRoute": "battle/TG-F06-C04-M13",
+            "mapId": "TG-MAP-012",
+            "mapName": "Broken Heaven Engine"
+          }
+        },
+        {
+          "chapterId": "TG-F06-CH05",
+          "chapterNumber": 5,
+          "title": "Chapter 5: Choir Vault Ascension",
+          "status": "Architecture Ready",
+          "summary": "Choir Vault Ascension advances Empyrean Choir Vault through upper choir gate where song, law, and Hollow silence collide while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F06-C05-M17",
+            "TG-F06-C05-M18",
+            "TG-F06-C05-M19",
+            "TG-F06-C05-M20"
+          ],
+          "eliteMissionIds": [
+            "TG-F06-E-C05-M17",
+            "TG-F06-E-C05-M18",
+            "TG-F06-E-C05-M19",
+            "TG-F06-E-C05-M20"
+          ],
+          "defaultMissionId": "TG-F06-C05-M17",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F06-C05-M17",
+            "battleRoute": "battle/TG-F06-C05-M17",
+            "mapId": "TG-MAP-011",
+            "mapName": "Choir Vault Ascent"
+          }
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-007",
+      "factionName": "Infernal Dominion",
+      "routeSlug": "campaign/TG-FACTION-007/chapters",
+      "defaultMode": "Normal",
+      "chapterCount": 5,
+      "normalMissionCount": 20,
+      "eliteMissionCount": 20,
+      "recommendedPowerRange": [
+        535,
+        1003
+      ],
+      "chapterRoutes": [
+        {
+          "chapterId": "TG-F07-CH01",
+          "chapterNumber": 1,
+          "title": "Chapter 1: The Bargain Opens",
+          "status": "Architecture Ready",
+          "summary": "The Bargain Opens advances Cinders of Dominion through black iron court with volcanic glass aisles and ember chain channels while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F07-C01-M01",
+            "TG-F07-C01-M02",
+            "TG-F07-C01-M03",
+            "TG-F07-C01-M04"
+          ],
+          "eliteMissionIds": [
+            "TG-F07-E-C01-M01",
+            "TG-F07-E-C01-M02",
+            "TG-F07-E-C01-M03",
+            "TG-F07-E-C01-M04"
+          ],
+          "defaultMissionId": "TG-F07-C01-M01",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F07-C01-M01",
+            "battleRoute": "battle/TG-F07-C01-M01",
+            "mapId": "TG-MAP-006",
+            "mapName": "Black Iron Court"
+          }
+        },
+        {
+          "chapterId": "TG-F07-CH02",
+          "chapterNumber": 2,
+          "title": "Chapter 2: Chains Under Verdict",
+          "status": "Architecture Ready",
+          "summary": "Chains Under Verdict advances Cinders of Dominion through contract pit where hellfire chains pull careless Titans into verdict lanes while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F07-C02-M05",
+            "TG-F07-C02-M06",
+            "TG-F07-C02-M07",
+            "TG-F07-C02-M08"
+          ],
+          "eliteMissionIds": [
+            "TG-F07-E-C02-M05",
+            "TG-F07-E-C02-M06",
+            "TG-F07-E-C02-M07",
+            "TG-F07-E-C02-M08"
+          ],
+          "defaultMissionId": "TG-F07-C02-M05",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F07-C02-M05",
+            "battleRoute": "battle/TG-F07-C02-M05",
+            "mapId": "TG-MAP-006",
+            "mapName": "Black Iron Court"
+          }
+        },
+        {
+          "chapterId": "TG-F07-CH03",
+          "chapterNumber": 3,
+          "title": "Chapter 3: Ash-Court Betrayal",
+          "status": "Architecture Ready",
+          "summary": "Ash-Court Betrayal advances Cinders of Dominion through ash-court gallery where bargain traps split risk from reward while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F07-C03-M09",
+            "TG-F07-C03-M10",
+            "TG-F07-C03-M11",
+            "TG-F07-C03-M12"
+          ],
+          "eliteMissionIds": [
+            "TG-F07-E-C03-M09",
+            "TG-F07-E-C03-M10",
+            "TG-F07-E-C03-M11",
+            "TG-F07-E-C03-M12"
+          ],
+          "defaultMissionId": "TG-F07-C03-M09",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F07-C03-M09",
+            "battleRoute": "battle/TG-F07-C03-M09",
+            "mapId": "TG-MAP-006",
+            "mapName": "Black Iron Court"
+          }
+        },
+        {
+          "chapterId": "TG-F07-CH04",
+          "chapterNumber": 4,
+          "title": "Chapter 4: Execution Sigil War",
+          "status": "Architecture Ready",
+          "summary": "Execution Sigil War advances Cinders of Dominion through execution sigil district with blood-dark stones and throne-shadow sightlines while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F07-C04-M13",
+            "TG-F07-C04-M14",
+            "TG-F07-C04-M15",
+            "TG-F07-C04-M16"
+          ],
+          "eliteMissionIds": [
+            "TG-F07-E-C04-M13",
+            "TG-F07-E-C04-M14",
+            "TG-F07-E-C04-M15",
+            "TG-F07-E-C04-M16"
+          ],
+          "defaultMissionId": "TG-F07-C04-M13",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F07-C04-M13",
+            "battleRoute": "battle/TG-F07-C04-M13",
+            "mapId": "TG-MAP-006",
+            "mapName": "Black Iron Court"
+          }
+        },
+        {
+          "chapterId": "TG-F07-CH05",
+          "chapterNumber": 5,
+          "title": "Chapter 5: Crown of Cinders",
+          "status": "Architecture Ready",
+          "summary": "Crown of Cinders advances Cinders of Dominion through cinder crown gate under obsidian arches and royal flame while preserving faction separation and the 5-Titan standard.",
+          "normalMissionIds": [
+            "TG-F07-C05-M17",
+            "TG-F07-C05-M18",
+            "TG-F07-C05-M19",
+            "TG-F07-C05-M20"
+          ],
+          "eliteMissionIds": [
+            "TG-F07-E-C05-M17",
+            "TG-F07-E-C05-M18",
+            "TG-F07-E-C05-M19",
+            "TG-F07-E-C05-M20"
+          ],
+          "defaultMissionId": "TG-F07-C05-M17",
+          "handoff": {
+            "missionDetailRoute": "mission/TG-F07-C05-M17",
+            "battleRoute": "battle/TG-F07-C05-M17",
+            "mapId": "TG-MAP-006",
+            "mapName": "Black Iron Court"
+          }
+        }
+      ]
+    }
+  ],
+  "implementation": {
+    "playableHtml": "game/index.html",
+    "stateObject": "S",
+    "routeSetter": "setRoute",
+    "campaignRenderer": "campaignCards",
+    "chapterRenderer": "chapterBrowser",
+    "missionRenderer": "missionDetail",
+    "battleRenderer": "battleView",
+    "launchFunction": "launchMission"
+  },
+  "telemetryEvents": [
+    "CAMPAIGN_SELECT_OPENED",
+    "CHAPTER_SELECTED",
+    "MISSION_DETAIL_OPENED",
+    "MISSION_LAUNCHED",
+    "MISSION_RESULT_RECORDED"
+  ],
+  "nextHardeningTargets": [
+    "Persist campaign progress locally until backend player profile exists.",
+    "Expose star history per mission without fabricated account progress.",
+    "Connect chapter select to battlefield vertical slice for eligible missions."
+  ]
+}

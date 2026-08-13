@@ -1,7 +1,56 @@
 {
   "id": "TG-CHANGE-HISTORY-001",
-  "updated": "2026-08-12T16:44:00Z",
+  "updated": "2026-08-12T22:45:00Z",
   "entries": [
+    {
+      "version": "1.5.0-async-arena-snapshots",
+      "date": "2026-08-12T22:45:00Z",
+      "title": "Asynchronous Titan Challenge Snapshot Model",
+      "summary": "Converted async arena into a one-active-defender-Titan snapshot contract with checksumed snapshots, deterministic AI profiles, solo stance/reaction loadouts, visible dashboard readiness, and release tests.",
+      "status": "LOCAL_READY_FOR_VALIDATION",
+      "artifacts": [
+        "TG-ASYNC-ARENA-001",
+        "TG-TASK-SOLO-004",
+        "scripts/test-async-arena-snapshots.mjs"
+      ],
+      "checks": [
+        "Async arena snapshot test pending",
+        "Precommit verification pending"
+      ]
+    },
+    {
+      "version": "1.4.0-campaign-playflow",
+      "date": "2026-08-12T21:24:00Z",
+      "title": "Campaign Chapter Playflow Bridge",
+      "summary": "Added production campaign playflow contract and route coverage for seven-faction campaign select, five-chapter browsing, Normal/Elite mission selection, mission detail inspection, and playable battle handoff.",
+      "status": "LOCAL_READY_FOR_VALIDATION",
+      "artifacts": [
+        "TG-CAMPAIGN-PLAYFLOW-CONTRACT-001",
+        "TG-DEV-006",
+        "TG-DEV-010",
+        "scripts/test-campaign-playflow.mjs"
+      ],
+      "checks": [
+        "Campaign playflow test pending",
+        "Precommit verification pending"
+      ]
+    },
+    {
+      "version": "1.3.0-battlefield-telemetry",
+      "date": "2026-08-12T17:12:00Z",
+      "title": "Battlefield Telemetry Hooks",
+      "summary": "Added deterministic battlefield telemetry contract, runtime hooks, summary signals, boss phase fail-point tracking, balance analytics thresholds, and validation coverage for one-active-Titan tuning.",
+      "status": "LOCAL_READY_FOR_VALIDATION",
+      "artifacts": [
+        "TG-BATTLEFIELD-TELEMETRY-CONTRACT-001",
+        "TG-DEV-031",
+        "scripts/test-battlefield-telemetry.mjs"
+      ],
+      "checks": [
+        "Battlefield telemetry test pending",
+        "Precommit verification pending"
+      ]
+    },
     {
       "version": "1.2.0-solo-vertical-slice",
       "date": "2026-08-12T16:44:00Z",

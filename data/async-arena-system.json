@@ -15,22 +15,26 @@
       "Victory conditions",
       "Battle state model"
     ],
-    "currentControl": "Attacker player vs saved defender squad controlled by AI",
-    "futureControl": "Player vs Player networking layer only; combat engine remains shared."
+    "currentControl": "Attacker player Titan vs saved defender Titan snapshot controlled by deterministic AI",
+    "futureControl": "Player vs Player networking layer only; combat engine remains shared; no live PvP is implemented now."
   },
   "defenseSnapshotFields": [
-    "titanId",
+    "snapshotId",
+    "sourceTitanId",
+    "sourceTitanName",
+    "sourceFaction",
     "level",
-    "equipment",
-    "abilities",
-    "stanceLoadout",
-    "reactions",
-    "uniqueMechanicState",
-    "battlefieldSelection",
-    "aiBehaviorProfile",
-    "relevantProgressionState",
     "power",
-    "savedAt"
+    "soloArchetypes",
+    "uniqueMechanic",
+    "stanceLoadout",
+    "reactionLoadout",
+    "aiBehaviorProfile",
+    "battlefieldSelection",
+    "progressionState",
+    "ratingSeed",
+    "savedAt",
+    "checksum"
   ],
   "matchmaking": [
     "arenaRating",
@@ -71,7 +75,7 @@
       "attacker",
       "result",
       "date",
-      "opposingSquad",
+      "opposingTitanSnapshot",
       "ratingChange",
       "battleStats"
     ]
@@ -153,5 +157,293 @@
     }
   ],
   "name": "Asynchronous Titan Challenge",
-  "currentControl": "Attacker player Titan vs saved defender Titan build controlled by AI"
+  "currentControl": "Attacker player Titan vs saved defender Titan build controlled by deterministic AI",
+  "status": "IMPLEMENTED",
+  "version": "1.0.0-solo-snapshot",
+  "squadTerminologyDeprecated": true,
+  "snapshotLifecycle": [
+    "player_saves_defense_titan",
+    "server_freezes_public_snapshot",
+    "matchmaker_reads_rating_band",
+    "attacker_fights_snapshot_ai",
+    "result_updates_rating_and_logs",
+    "defender_snapshot_can_be_refreshed_after_cooldown"
+  ],
+  "snapshotRules": {
+    "oneActiveDefenderTitan": true,
+    "livePvpImplemented": false,
+    "noFabricatedProgression": true,
+    "checksumRequired": true,
+    "savedSnapshotImmutableDuringAttack": true,
+    "defenderAiUsesSoloCombatArchetype": true,
+    "cosmeticsNeverModifyPower": true
+  },
+  "ratingModel": {
+    "startingRating": 1000,
+    "kFactor": 24,
+    "tierBands": {
+      "Bronze": [
+        0,
+        999
+      ],
+      "Silver": [
+        1000,
+        1199
+      ],
+      "Gold": [
+        1200,
+        1399
+      ],
+      "Titan": [
+        1400,
+        1599
+      ],
+      "Ascendant": [
+        1600,
+        9999
+      ]
+    },
+    "usesVisiblePlayerSaveOnly": true,
+    "devPlatformSampleState": {}
+  },
+  "challengeFlow": [
+    "choose_attacking_titan",
+    "inspect_opponent_snapshot",
+    "confirm_no_live_pvp",
+    "launch_solo_battle_ruleset",
+    "resolve_result",
+    "write_attack_log",
+    "queue_defense_log_for_snapshot_owner"
+  ],
+  "snapshotQualityGates": [
+    "Every sample opponent has exactly one defensive Titan snapshot.",
+    "Every snapshot references an existing Titan and solo roster redesign record.",
+    "Every snapshot includes checksum, stance loadout, reaction loadout, AI behavior profile, battlefield selection, and progression state.",
+    "Arena dashboard must not show fabricated player rank, rating, floor, or live PvP state.",
+    "Visual smoke blocks release if async arena snapshot language disappears."
+  ],
+  "defenseSnapshots": [
+    {
+      "snapshotId": "TG-ASYNC-SNAPSHOT-001",
+      "sourceOpponentId": "TG-ARENA-OPP-001",
+      "sourceTitanId": "TG-TITAN-010",
+      "sourceTitanName": "The Allfather Stormvein",
+      "sourceFaction": "Asgardian",
+      "level": 18,
+      "power": 1201,
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "uniqueMechanic": "The's Storm Oath: a solo pursuit lock that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "stanceLoadout": [
+        "Assault",
+        "Guard",
+        "Ascendant"
+      ],
+      "reactionLoadout": [
+        "The Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+        "Skip reaction / conserve Momentum"
+      ],
+      "aiBehaviorProfile": "BALANCED_DUELIST",
+      "battlefieldSelection": "movement through storm lanes",
+      "progressionState": {
+        "unlockedNodes": [
+          "unlock stance variant",
+          "improve unique mechanic control",
+          "add reaction mastery node"
+        ],
+        "cosmeticOnly": false,
+        "payToWinBonus": false
+      },
+      "ratingSeed": 1075,
+      "savedAt": "2026-08-12T22:40:00Z",
+      "checksum": "sha256:2f2712425623471542819b2b922e43a1d8a02c28576219b1887d73bf4f3ea738"
+    },
+    {
+      "snapshotId": "TG-ASYNC-SNAPSHOT-002",
+      "sourceOpponentId": "TG-ARENA-OPP-002",
+      "sourceTitanId": "TG-TITAN-019",
+      "sourceTitanName": "Aurelion Heaven-Marrow",
+      "sourceFaction": "Olympian",
+      "level": 22,
+      "power": 1304,
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "uniqueMechanic": "Aurelion's Laurel Glory: a solo charge meter that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "stanceLoadout": [
+        "Assault",
+        "Guard",
+        "Ascendant"
+      ],
+      "reactionLoadout": [
+        "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+        "Skip reaction / conserve Momentum"
+      ],
+      "aiBehaviorProfile": "OBJECTIVE_WARDEN",
+      "battlefieldSelection": "high ground and duel circles",
+      "progressionState": {
+        "unlockedNodes": [
+          "unlock stance variant",
+          "improve unique mechanic control",
+          "add reaction mastery node"
+        ],
+        "cosmeticOnly": false,
+        "payToWinBonus": false
+      },
+      "ratingSeed": 1150,
+      "savedAt": "2026-08-12T22:41:00Z",
+      "checksum": "sha256:a0e270ad9f5dcea87661920f07c02b31161226aab9d0425ea9e61957d206b3c5"
+    },
+    {
+      "snapshotId": "TG-ASYNC-SNAPSHOT-003",
+      "sourceOpponentId": "TG-ARENA-OPP-003",
+      "sourceTitanId": "TG-TITAN-028",
+      "sourceTitanName": "Amaterion Spirit-Sun",
+      "sourceFaction": "Kami",
+      "level": 26,
+      "power": 1407,
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "uniqueMechanic": "Amaterion's Spirit Balance: a solo pursuit lock that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "stanceLoadout": [
+        "Assault",
+        "Guard",
+        "Ascendant"
+      ],
+      "reactionLoadout": [
+        "Pursue Weakness: when an enemy retreats or becomes vulnerable, move and threaten Execute.",
+        "Skip reaction / conserve Momentum"
+      ],
+      "aiBehaviorProfile": "REACTION_BAITER",
+      "battlefieldSelection": "shrines, mist, and mirror paths",
+      "progressionState": {
+        "unlockedNodes": [
+          "unlock stance variant",
+          "improve unique mechanic control",
+          "add reaction mastery node"
+        ],
+        "cosmeticOnly": false,
+        "payToWinBonus": false
+      },
+      "ratingSeed": 1225,
+      "savedAt": "2026-08-12T22:42:00Z",
+      "checksum": "sha256:8ab72af79f6d86d162e1eec6e4a194dfeea91f4d4a02bcf8bcbf5bf3341490e7"
+    },
+    {
+      "snapshotId": "TG-ASYNC-SNAPSHOT-004",
+      "sourceOpponentId": "TG-ARENA-OPP-004",
+      "sourceTitanId": "TG-TITAN-037",
+      "sourceTitanName": "Dagoran Root-Crown",
+      "sourceFaction": "Tuatha",
+      "level": 30,
+      "power": 1510,
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "uniqueMechanic": "Dagoran's Living Grove: a solo charge meter that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "stanceLoadout": [
+        "Assault",
+        "Guard",
+        "Ascendant"
+      ],
+      "reactionLoadout": [
+        "Brace and Break: when charged, reduce impact then counter into nearby terrain.",
+        "Skip reaction / conserve Momentum"
+      ],
+      "aiBehaviorProfile": "TERRAIN_CONTROLLER",
+      "battlefieldSelection": "roots, moonlit growth, and fae paths",
+      "progressionState": {
+        "unlockedNodes": [
+          "unlock stance variant",
+          "improve unique mechanic control",
+          "add reaction mastery node"
+        ],
+        "cosmeticOnly": false,
+        "payToWinBonus": false
+      },
+      "ratingSeed": 1300,
+      "savedAt": "2026-08-12T22:43:00Z",
+      "checksum": "sha256:e8a096e1955a6b067c3bec00160302a6ab4f7e7ba53fe891242c031dbce6dbe9"
+    },
+    {
+      "snapshotId": "TG-ASYNC-SNAPSHOT-005",
+      "sourceOpponentId": "TG-ARENA-OPP-005",
+      "sourceTitanId": "TG-TITAN-046",
+      "sourceTitanName": "Seraphel, the Throne Eternal",
+      "sourceFaction": "Empyrean",
+      "level": 34,
+      "power": 1613,
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "uniqueMechanic": "Seraphel's Radiant Edict: a solo pursuit lock that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "stanceLoadout": [
+        "Assault",
+        "Guard",
+        "Ascendant"
+      ],
+      "reactionLoadout": [
+        "Seraphel Response: on enemy attack, choose dodge/parry/counter based on stance; perfect result refunds Momentum.",
+        "Skip reaction / conserve Momentum"
+      ],
+      "aiBehaviorProfile": "BURST_EXECUTIONER",
+      "battlefieldSelection": "ordered sigil zones",
+      "progressionState": {
+        "unlockedNodes": [
+          "unlock stance variant",
+          "improve unique mechanic control",
+          "add reaction mastery node"
+        ],
+        "cosmeticOnly": false,
+        "payToWinBonus": false
+      },
+      "ratingSeed": 1375,
+      "savedAt": "2026-08-12T22:44:00Z",
+      "checksum": "sha256:b9eed4d4656129d5dc6edfb3be12f21c56cb1b00eb9c3605284bcc5e27004f72"
+    },
+    {
+      "snapshotId": "TG-ASYNC-SNAPSHOT-006",
+      "sourceOpponentId": "TG-ARENA-OPP-006",
+      "sourceTitanId": "TG-TITAN-055",
+      "sourceTitanName": "Mordrath, the Infernal King",
+      "sourceFaction": "Infernal Dominion",
+      "level": 38,
+      "power": 1716,
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "uniqueMechanic": "Mordrath's Dominion Flame: a solo charge meter that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "stanceLoadout": [
+        "Assault",
+        "Guard",
+        "Ascendant"
+      ],
+      "reactionLoadout": [
+        "Interrupt the Omen: when a caster or boss prepares a major action, spend Momentum to stagger it.",
+        "Skip reaction / conserve Momentum"
+      ],
+      "aiBehaviorProfile": "ASCENSION_PRESSURE",
+      "battlefieldSelection": "chains, fire, and cursed ground",
+      "progressionState": {
+        "unlockedNodes": [
+          "unlock stance variant",
+          "improve unique mechanic control",
+          "add reaction mastery node"
+        ],
+        "cosmeticOnly": false,
+        "payToWinBonus": false
+      },
+      "ratingSeed": 1450,
+      "savedAt": "2026-08-12T22:45:00Z",
+      "checksum": "sha256:df3798c39af3f9ac11e2704d3e73e6fb03098ce99073a99c8f4f8193a3277560"
+    }
+  ]
 }

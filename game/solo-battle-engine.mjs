@@ -20,8 +20,30 @@ const clone = value => JSON.parse(JSON.stringify(value));
 const key = pos => `${pos.x},${pos.y}`;
 const distance = (a, b) => Math.abs(a.x - b.x) + Math.abs(a.y - b.y);
 
+function telemetryFamily(type) {
+  if (type.startsWith('RESOURCE_')) return 'resource';
+  if (type.startsWith('REACTION_')) return 'reaction';
+  if (type.startsWith('OBJECTIVE_')) return 'objective';
+  if (type.startsWith('TERRAIN_')) return 'terrain';
+  if (type.startsWith('BOSS_PHASE_')) return 'boss';
+  return 'replay';
+}
 function log(state, type, detail = {}) {
-  state.eventLog.push({ round: state.round, phase: state.phase, type, ...detail });
+  state.telemetry.sequence = (state.telemetry.sequence || 0) + 1;
+  state.eventLog.push({
+    seq: state.telemetry.sequence,
+    runId: state.telemetry.runId,
+    round: state.round,
+    phase: state.phase,
+    family: telemetryFamily(type),
+    type,
+    ...detail
+  });
+}
+export function recordTelemetryHook(inputState, type, detail = {}) {
+  const state = clone(inputState);
+  log(state, type, detail);
+  return state;
 }
 function gain(state, resource, amount, source) {
   const before = state.resources[resource] ?? 0;
@@ -108,7 +130,18 @@ export function createInitialSoloBattleState({ battleId, missionId, titan, enemi
       hazardDamage: 0,
       enemyTelegraphs: 0,
       resourceGain: { momentum: 0, divinity: 0, solarCharge: 0 },
-      resourceSpend: { momentum: 0, divinity: 0, solarCharge: 0 }
+      resourceSpend: { momentum: 0, divinity: 0, solarCharge: 0 },
+      sequence: 0,
+      runId: `${battleId || missionId || 'SOLO'}-${seed}`,
+      reactionSuccesses: 0,
+      reactionDeclines: 0,
+      objectiveCompletions: 0,
+      bossPhaseReached: {},
+      bossPhaseCleared: {},
+      bossPhaseFailed: {},
+      actionTypeCounts: {},
+      terrainTouches: {},
+      routeSpacesVisited: []
     }
   };
   log(state, 'BATTLE_START', { battleId, missionId, titan: titan.id, enemies: state.enemies.map(e => e.instanceId) });
@@ -126,6 +159,8 @@ export function applyTitanAction(inputState, action) {
     state.titan.position = clone(action.to);
     const illuminated = Boolean(space.illuminated);
     if (illuminated) gain(state, 'momentum', 8, 'illuminated_movement');
+    state.telemetry.routeSpacesVisited.push(key(action.to));
+    state.telemetry.terrainTouches[space.type] = (state.telemetry.terrainTouches[space.type] || 0) + 1;
     log(state, 'TITAN_MOVE', { to: action.to, terrain: space.type, illuminated });
   } else if (action.type === 'BASIC_ATTACK') {
     const enemy = findEnemy(state, action.targetId);
@@ -187,6 +222,7 @@ export function applyTitanAction(inputState, action) {
   }
   if (!livingEnemies(state).length) state.phase = PHASES.OBJECTIVE;
   state.titan.actionsTakenThisRound.push(action.type);
+  state.telemetry.actionTypeCounts[action.type] = (state.telemetry.actionTypeCounts[action.type] || 0) + 1;
   return state;
 }
 
@@ -246,6 +282,7 @@ export function applyReaction(inputState, choice = 'RESOLVE') {
     if (type === 'DODGE') {
       gain(state, 'momentum', 12, 'successful_dodge');
       gain(state, 'divinity', 6, 'successful_dodge');
+      state.telemetry.reactionSuccesses += 1;
       log(state, 'REACTION_SUCCESS', { type, enemy: enemy.instanceId, prevented: enemy.damage });
     } else if (type === 'PARRY' || type === 'COUNTER_CHARGE') {
       const counterDamage = Math.max(1, Math.round(state.titan.attack * 0.9) - Math.floor(enemy.armor / 6));
@@ -254,6 +291,7 @@ export function applyReaction(inputState, choice = 'RESOLVE') {
       state.telemetry.damageDealt += counterDamage;
       gain(state, 'momentum', 14, 'successful_counter_reaction');
       gain(state, 'divinity', 8, 'successful_counter_reaction');
+      state.telemetry.reactionSuccesses += 1;
       log(state, 'REACTION_SUCCESS', { type, enemy: enemy.instanceId, counterDamage, enemyHp: enemy.hp });
     }
   } else {
@@ -261,6 +299,7 @@ export function applyReaction(inputState, choice = 'RESOLVE') {
     const damage = Math.max(1, enemy.damage - mitigation);
     state.titan.hp = Math.max(0, state.titan.hp - damage);
     state.telemetry.damageTaken += damage;
+    state.telemetry.reactionDeclines += 1;
     log(state, 'REACTION_DECLINED', { enemy: enemy.instanceId, damage, titanHp: state.titan.hp });
   }
   enemy.intent = null;
@@ -279,6 +318,7 @@ export function applyTerrainTick(inputState) {
     state.titan.hp = Math.max(0, state.titan.hp - damage);
     state.telemetry.damageTaken += damage;
     state.telemetry.hazardDamage += damage;
+    state.telemetry.terrainTouches[space.type] = (state.telemetry.terrainTouches[space.type] || 0) + 1;
     gain(state, 'solarCharge', 8, 'solar_judgment_lane');
     log(state, 'TERRAIN_HAZARD', { hazard: space.hazard, damage, titanHp: state.titan.hp });
   }
@@ -294,8 +334,10 @@ export function evaluateObjectives(inputState, objectiveEvent = null) {
     objective.progress = Math.min(objective.requiredProgress, (objective.progress || 0) + (objectiveEvent.progress || 1));
     if (objective.progress >= objective.requiredProgress) {
       objective.status = 'COMPLETE';
+      state.telemetry.objectiveCompletions += 1;
       gain(state, 'momentum', objectiveEvent.momentum || 12, 'objective_complete');
       gain(state, 'divinity', objectiveEvent.divinity || 10, 'objective_complete');
+      log(state, 'OBJECTIVE_COMPLETE', { objective: objective.id, progress: objective.progress, status: objective.status });
     }
     state.telemetry.objectiveProgress += objectiveEvent.progress || 1;
     log(state, 'OBJECTIVE_PROGRESS', { objective: objective.id, progress: objective.progress, status: objective.status });
@@ -312,6 +354,62 @@ export function evaluateObjectives(inputState, objectiveEvent = null) {
   return state;
 }
 
+
+
+export function recordBossPhaseTelemetry(inputState, { bossId, phaseIndex, status, reason = '' }) {
+  const state = clone(inputState);
+  const keyName = `phase_${phaseIndex}`;
+  const normalized = String(status || 'reached').toUpperCase();
+  if (normalized === 'CLEARED') state.telemetry.bossPhaseCleared[keyName] = (state.telemetry.bossPhaseCleared[keyName] || 0) + 1;
+  else if (normalized === 'FAILED') state.telemetry.bossPhaseFailed[keyName] = (state.telemetry.bossPhaseFailed[keyName] || 0) + 1;
+  else state.telemetry.bossPhaseReached[keyName] = (state.telemetry.bossPhaseReached[keyName] || 0) + 1;
+  log(state, `BOSS_PHASE_${normalized}`, { bossId, phaseIndex, reason });
+  return state;
+}
+
+export function summarizeBattlefieldTelemetry(state) {
+  const telemetry = clone(state.telemetry || {});
+  const objectives = state.objectives || [];
+  const uniqueRoutes = new Set(telemetry.routeSpacesVisited || []).size;
+  const actionTypes = Object.keys(telemetry.actionTypeCounts || {}).length;
+  const resourceSpendTotal = Object.values(telemetry.resourceSpend || {}).reduce((sum, value) => sum + Number(value || 0), 0);
+  const reactionSuccessRate = telemetry.reactionsOpened ? Number(((telemetry.reactionSuccesses || 0) / telemetry.reactionsOpened).toFixed(3)) : 0;
+  const objectiveCompletionRate = objectives.length ? Number(((telemetry.objectiveCompletions || objectives.filter(o => o.status === 'COMPLETE').length) / objectives.length).toFixed(3)) : 0;
+  const momentumSpend = Math.max(1, Number((telemetry.resourceSpend || {}).momentum || 0));
+  const divinitySpend = Math.max(1, Number((telemetry.resourceSpend || {}).divinity || 0));
+  const momentumEfficiency = Number((((telemetry.damageDealt || 0) + (telemetry.objectiveProgress || 0) * 10) / momentumSpend).toFixed(3));
+  const divinityEfficiency = Number((((telemetry.bossPhaseCleared && Object.values(telemetry.bossPhaseCleared).reduce((a, b) => a + b, 0)) || 0) * 25 / divinitySpend).toFixed(3));
+  const hazardDamageShare = telemetry.damageTaken ? Number(((telemetry.hazardDamage || 0) / telemetry.damageTaken).toFixed(3)) : 0;
+  const bossPhaseFailPoints = Object.entries(telemetry.bossPhaseFailed || {}).map(([phase, count]) => ({ phase, count })).sort((a, b) => b.count - a.count);
+  const replayabilityScore = Math.max(0, Math.min(100, Math.round(uniqueRoutes * 8 + actionTypes * 10 + Math.min(30, resourceSpendTotal / 3) + Math.min(20, (telemetry.reactionsResolved || 0) * 5))));
+  const watch = [];
+  if (reactionSuccessRate && reactionSuccessRate < 0.35) watch.push('LOW_REACTION_SUCCESS');
+  if (reactionSuccessRate > 0.9 && telemetry.reactionsOpened >= 3) watch.push('REACTIONS_TOO_EASY');
+  if (hazardDamageShare > 0.4) watch.push('HAZARD_DAMAGE_SPIKE');
+  if (objectiveCompletionRate < 0.65) watch.push('OBJECTIVE_COMPLETION_RISK');
+  if (replayabilityScore < 60) watch.push('LOW_REPLAYABILITY');
+  if (bossPhaseFailPoints.some(p => p.count > 0)) watch.push('BOSS_FAIL_POINT_REVIEW');
+  return {
+    runId: telemetry.runId,
+    battleId: state.battleId,
+    missionId: state.missionId,
+    finalPhase: state.phase,
+    turns: telemetry.turns || state.round,
+    damageDealt: telemetry.damageDealt || 0,
+    damageTaken: telemetry.damageTaken || 0,
+    reactionSuccessRate,
+    objectiveCompletionRate,
+    momentumEfficiency,
+    divinityEfficiency,
+    hazardDamageShare,
+    bossPhaseFailPoints,
+    replayabilityScore,
+    routeDiversity: uniqueRoutes,
+    actionTypeDiversity: actionTypes,
+    watch
+  };
+}
+
 export function runReducerScript(initialState, actions) {
   return actions.reduce((state, action) => {
     if (action.reducer === 'applyTitanAction') return applyTitanAction(state, action.action);
@@ -320,6 +418,9 @@ export function runReducerScript(initialState, actions) {
     if (action.reducer === 'applyReaction') return applyReaction(state, action.choice);
     if (action.reducer === 'applyTerrainTick') return applyTerrainTick(state);
     if (action.reducer === 'evaluateObjectives') return evaluateObjectives(state, action.objectiveEvent);
+    if (action.reducer === 'recordBossPhaseTelemetry') return recordBossPhaseTelemetry(state, action.bossPhase);
+    if (action.reducer === 'recordTelemetryHook') return recordTelemetryHook(state, action.type, action.detail);
     throw new Error(`Unknown reducer ${action.reducer}`);
   }, initialState);
 }
+

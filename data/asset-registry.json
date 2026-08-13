@@ -1,0 +1,330 @@
+{
+  "id": "TG-ASSET-REGISTRY-001",
+  "version": "1.0.0",
+  "generated": "2026-08-12T23:10:00Z",
+  "status": "IMPLEMENTED",
+  "rootFolders": [
+    "assets/art/ui",
+    "assets/art/titans",
+    "assets/art/factions",
+    "assets/art/realms",
+    "assets/art/gates",
+    "assets/art/environments",
+    "assets/art/effects",
+    "assets/art/icons",
+    "assets/art/backgrounds",
+    "assets/audio/ui",
+    "assets/audio/ambient"
+  ],
+  "assetStatuses": [
+    "PLACEHOLDER",
+    "CONCEPT",
+    "PROTOTYPE",
+    "FINAL",
+    "DEPRECATED",
+    "REPLACEMENT"
+  ],
+  "fallbackPolicy": "Every Command Hub asset must have fallback; missing final art cannot break runtime.",
+  "assets": [
+    {
+      "assetId": "TG-ASSET-HUB-BG-TG-FACTION-001",
+      "entityId": "TG-FACTION-001",
+      "assetType": "COMMAND_HUB_BACKGROUND",
+      "path": "assets/art/environments/aten-ra/command-hub-background.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/backgrounds/generic-gate-hub.placeholder.webp",
+      "requirements": "white-gold solar discs, obsidian-blue shadows, colossal pylons, papyrus circuitry, radiant court armor"
+    },
+    {
+      "assetId": "TG-ASSET-GATE-TG-FACTION-001",
+      "entityId": "TG-REALM-001",
+      "assetType": "GATE",
+      "path": "assets/art/gates/aten-ra/realm-gate.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/gates/generic-massive-gate.placeholder.webp",
+      "requirements": "The Sun-Scale Gate"
+    },
+    {
+      "assetId": "TG-ASSET-ICON-TG-FACTION-001",
+      "entityId": "TG-FACTION-001",
+      "assetType": "FACTION_ICON",
+      "path": "assets/art/icons/factions/aten-ra.placeholder.svg",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/icons/factions/generic.placeholder.svg",
+      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms."
+    },
+    {
+      "assetId": "TG-ASSET-HUB-BG-TG-FACTION-002",
+      "entityId": "TG-FACTION-002",
+      "assetType": "COMMAND_HUB_BACKGROUND",
+      "path": "assets/art/environments/asgardian/command-hub-background.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/backgrounds/generic-gate-hub.placeholder.webp",
+      "requirements": "stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs"
+    },
+    {
+      "assetId": "TG-ASSET-GATE-TG-FACTION-002",
+      "entityId": "TG-REALM-002",
+      "assetType": "GATE",
+      "path": "assets/art/gates/asgardian/realm-gate.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/gates/generic-massive-gate.placeholder.webp",
+      "requirements": "The Thunder-Oath Gate"
+    },
+    {
+      "assetId": "TG-ASSET-ICON-TG-FACTION-002",
+      "entityId": "TG-FACTION-002",
+      "assetType": "FACTION_ICON",
+      "path": "assets/art/icons/factions/asgardian.placeholder.svg",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/icons/factions/generic.placeholder.svg",
+      "requirements": "Steel, iron, rune markings, storm energy, mountain-forged mass, frost scars, thunder wounds."
+    },
+    {
+      "assetId": "TG-ASSET-HUB-BG-TG-FACTION-003",
+      "entityId": "TG-FACTION-003",
+      "assetType": "COMMAND_HUB_BACKGROUND",
+      "path": "assets/art/environments/olympian/command-hub-background.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/backgrounds/generic-gate-hub.placeholder.webp",
+      "requirements": "white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds"
+    },
+    {
+      "assetId": "TG-ASSET-GATE-TG-FACTION-003",
+      "entityId": "TG-REALM-003",
+      "assetType": "GATE",
+      "path": "assets/art/gates/olympian/realm-gate.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/gates/generic-massive-gate.placeholder.webp",
+      "requirements": "The Laurel-Star Gate"
+    },
+    {
+      "assetId": "TG-ASSET-ICON-TG-FACTION-003",
+      "entityId": "TG-FACTION-003",
+      "assetType": "FACTION_ICON",
+      "path": "assets/art/icons/factions/olympian.placeholder.svg",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/icons/factions/generic.placeholder.svg",
+      "requirements": "Bronze, gold, marble, celestial light, living statue anatomy, ichor-lit cracks, sculptural bodies."
+    },
+    {
+      "assetId": "TG-ASSET-HUB-BG-TG-FACTION-004",
+      "entityId": "TG-FACTION-004",
+      "assetType": "COMMAND_HUB_BACKGROUND",
+      "path": "assets/art/environments/kami/command-hub-background.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/backgrounds/generic-gate-hub.placeholder.webp",
+      "requirements": "torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms"
+    },
+    {
+      "assetId": "TG-ASSET-GATE-TG-FACTION-004",
+      "entityId": "TG-REALM-004",
+      "assetType": "GATE",
+      "path": "assets/art/gates/kami/realm-gate.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/gates/generic-massive-gate.placeholder.webp",
+      "requirements": "The Spirit-Moon Gate"
+    },
+    {
+      "assetId": "TG-ASSET-ICON-TG-FACTION-004",
+      "entityId": "TG-FACTION-004",
+      "assetType": "FACTION_ICON",
+      "path": "assets/art/icons/factions/kami.placeholder.svg",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/icons/factions/generic.placeholder.svg",
+      "requirements": "Lacquered armor, steel, sacred markings, masks, shrine-light, ink, mist, spirit ribbons."
+    },
+    {
+      "assetId": "TG-ASSET-HUB-BG-TG-FACTION-005",
+      "entityId": "TG-FACTION-005",
+      "assetType": "COMMAND_HUB_BACKGROUND",
+      "path": "assets/art/environments/tuatha/command-hub-background.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/backgrounds/generic-gate-hub.placeholder.webp",
+      "requirements": "emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist"
+    },
+    {
+      "assetId": "TG-ASSET-GATE-TG-FACTION-005",
+      "entityId": "TG-REALM-005",
+      "assetType": "GATE",
+      "path": "assets/art/gates/tuatha/realm-gate.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/gates/generic-massive-gate.placeholder.webp",
+      "requirements": "The Thorn-Memory Gate"
+    },
+    {
+      "assetId": "TG-ASSET-ICON-TG-FACTION-005",
+      "entityId": "TG-FACTION-005",
+      "assetType": "FACTION_ICON",
+      "path": "assets/art/icons/factions/tuatha.placeholder.svg",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/icons/factions/generic.placeholder.svg",
+      "requirements": "Emerald, silver, living wood, ancient stones, roots, bark-bronze skin, antler crowns, moonlit grove power."
+    },
+    {
+      "assetId": "TG-ASSET-HUB-BG-TG-FACTION-006",
+      "entityId": "TG-FACTION-006",
+      "assetType": "COMMAND_HUB_BACKGROUND",
+      "path": "assets/art/environments/empyrean/command-hub-background.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/backgrounds/generic-gate-hub.placeholder.webp",
+      "requirements": "white-gold citadels, halo geometry, luminous wings, cathedral engines, glass floors over starless voids"
+    },
+    {
+      "assetId": "TG-ASSET-GATE-TG-FACTION-006",
+      "entityId": "TG-REALM-006",
+      "assetType": "GATE",
+      "path": "assets/art/gates/empyrean/realm-gate.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/gates/generic-massive-gate.placeholder.webp",
+      "requirements": "The Choir-Axiom Gate"
+    },
+    {
+      "assetId": "TG-ASSET-ICON-TG-FACTION-006",
+      "entityId": "TG-FACTION-006",
+      "assetType": "FACTION_ICON",
+      "path": "assets/art/icons/factions/empyrean.placeholder.svg",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/icons/factions/generic.placeholder.svg",
+      "requirements": "Gold-white metals, celestial light, ordered winglike silhouettes, law sigils, halo-spine geometry, throne-like bodies."
+    },
+    {
+      "assetId": "TG-ASSET-HUB-BG-TG-FACTION-007",
+      "entityId": "TG-FACTION-007",
+      "assetType": "COMMAND_HUB_BACKGROUND",
+      "path": "assets/art/environments/infernal-dominion/command-hub-background.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/backgrounds/generic-gate-hub.placeholder.webp",
+      "requirements": "black iron, ember red, volcanic courts, chain halos, horned silhouettes, ash banners, molten sigils"
+    },
+    {
+      "assetId": "TG-ASSET-GATE-TG-FACTION-007",
+      "entityId": "TG-REALM-007",
+      "assetType": "GATE",
+      "path": "assets/art/gates/infernal-dominion/realm-gate.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/gates/generic-massive-gate.placeholder.webp",
+      "requirements": "The Cinder-Wound Gate"
+    },
+    {
+      "assetId": "TG-ASSET-ICON-TG-FACTION-007",
+      "entityId": "TG-FACTION-007",
+      "assetType": "FACTION_ICON",
+      "path": "assets/art/icons/factions/infernal-dominion.placeholder.svg",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/icons/factions/generic.placeholder.svg",
+      "requirements": "Obsidian, hellfire, dark iron, chains, burning sigils, horn-lineage anatomy, ash-fire skin, volcanic cracks."
+    },
+    {
+      "assetId": "TG-ASSET-TITAN-PRESENTATION-TG-TITAN-001",
+      "entityId": "TG-TITAN-001",
+      "assetType": "TITAN_PRESENTATION",
+      "path": "assets/art/titans/aten-ra-solar-law-monolith/command-hub.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/titans/generic-colossal-titan.placeholder.webp",
+      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra."
+    },
+    {
+      "assetId": "TG-ASSET-TITAN-PRESENTATION-TG-TITAN-002",
+      "entityId": "TG-TITAN-002",
+      "assetType": "TITAN_PRESENTATION",
+      "path": "assets/art/titans/khemet-suncrown/command-hub.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/titans/generic-colossal-titan.placeholder.webp",
+      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra."
+    },
+    {
+      "assetId": "TG-ASSET-TITAN-PRESENTATION-TG-TITAN-003",
+      "entityId": "TG-TITAN-003",
+      "assetType": "TITAN_PRESENTATION",
+      "path": "assets/art/titans/nefra-obsidian-dawn/command-hub.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/titans/generic-colossal-titan.placeholder.webp",
+      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra."
+    },
+    {
+      "assetId": "TG-ASSET-TITAN-PRESENTATION-TG-TITAN-004",
+      "entityId": "TG-TITAN-004",
+      "assetType": "TITAN_PRESENTATION",
+      "path": "assets/art/titans/orru-prism-verdict/command-hub.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/titans/generic-colossal-titan.placeholder.webp",
+      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra."
+    },
+    {
+      "assetId": "TG-ASSET-TITAN-PRESENTATION-TG-TITAN-005",
+      "entityId": "TG-TITAN-005",
+      "assetType": "TITAN_PRESENTATION",
+      "path": "assets/art/titans/sutekh-dune-eclipse/command-hub.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/titans/generic-colossal-titan.placeholder.webp",
+      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra."
+    },
+    {
+      "assetId": "TG-ASSET-TITAN-PRESENTATION-TG-TITAN-006",
+      "entityId": "TG-TITAN-006",
+      "assetType": "TITAN_PRESENTATION",
+      "path": "assets/art/titans/iset-riverlight-throne/command-hub.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/titans/generic-colossal-titan.placeholder.webp",
+      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra."
+    },
+    {
+      "assetId": "TG-ASSET-TITAN-PRESENTATION-TG-TITAN-007",
+      "entityId": "TG-TITAN-007",
+      "assetType": "TITAN_PRESENTATION",
+      "path": "assets/art/titans/karnu-glass-horizon/command-hub.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/titans/generic-colossal-titan.placeholder.webp",
+      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra."
+    },
+    {
+      "assetId": "TG-ASSET-TITAN-PRESENTATION-TG-TITAN-008",
+      "entityId": "TG-TITAN-008",
+      "assetType": "TITAN_PRESENTATION",
+      "path": "assets/art/titans/maahes-noon-bastion/command-hub.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/titans/generic-colossal-titan.placeholder.webp",
+      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra."
+    },
+    {
+      "assetId": "TG-ASSET-TITAN-PRESENTATION-TG-TITAN-009",
+      "entityId": "TG-TITAN-009",
+      "assetType": "TITAN_PRESENTATION",
+      "path": "assets/art/titans/amunet-hidden-sun/command-hub.placeholder.webp",
+      "version": 1,
+      "status": "PLACEHOLDER",
+      "fallback": "assets/art/titans/generic-colossal-titan.placeholder.webp",
+      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra."
+    }
+  ]
+}

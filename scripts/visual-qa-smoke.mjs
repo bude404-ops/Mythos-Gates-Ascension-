@@ -29,10 +29,54 @@ const endgameArchitecture = JSON.parse(readFileSync('data/endgame-architecture.j
 const squadSystem = JSON.parse(readFileSync('data/squad-system.json', 'utf8'));
 const asyncArenaSystem = JSON.parse(readFileSync('data/async-arena-system.json', 'utf8'));
 const endgameDashboard = JSON.parse(readFileSync('data/endgame-dashboard.json', 'utf8'));
+const campaignPlayflow = JSON.parse(readFileSync('data/campaign-playflow-contract.json', 'utf8'));
+const miniAppHtml = readFileSync('mini-app/galaxy-reapers-ascension.html', 'utf8');
 
-if (endgameArchitecture.standardSquadSize !== 5 || endgameArchitecture.livePvpImplemented !== false || asyncArenaSystem.mode !== 'ASYNCHRONOUS' || asyncArenaSystem.livePvpImplemented !== false) {
+
+if (campaignPlayflow.status !== 'IMPLEMENTED' || campaignPlayflow.flow.length !== 7 || !campaignPlayflow.routeStates.includes('battle')) {
+  console.error(JSON.stringify({ ok: false, campaignPlayflowInvalid: true }, null, 2));
+  process.exit(1);
+}
+if (!campaignPlayflow.flow.every(f => f.chapterCount === 5 && f.normalMissionCount === 20 && f.eliteMissionCount === 20 && f.chapterRoutes.every(c => c.normalMissionIds.length === 4 && c.eliteMissionIds.length === 4))) {
+  console.error(JSON.stringify({ ok: false, campaignPlayflowCoverageInvalid: true }, null, 2));
+  process.exit(1);
+}
+const gameHtmlForPlayflow = readFileSync('game/index.html', 'utf8');
+
+const commandHub = JSON.parse(readFileSync('data/command-hub-contract.json', 'utf8'));
+const assetRegistry = JSON.parse(readFileSync('data/asset-registry.json', 'utf8'));
+const commandHubRuntime = readFileSync('game/command-hub-runtime.mjs', 'utf8');
+if (commandHub.status !== 'IMPLEMENTED' || !commandHub.canonFirst || commandHub.navigationTabs?.length !== 5 || assetRegistry.assets?.length < 21) {
+  console.error(JSON.stringify({ ok: false, commandHubContractInvalid: true }, null, 2));
+  process.exit(1);
+}
+for (const token of ['I Command Titans', 'Command Hub', 'CONTINUE CAMPAIGN', 'Titan Roster', 'Realm Network', 'Lore Registry', 'Playable Solo Battle']) {
+  if (!commandHubRuntime.includes(token) && !gameHtmlForPlayflow.includes(token)) {
+    console.error(JSON.stringify({ ok: false, commandHubUiMissing: token }, null, 2));
+    process.exit(1);
+  }
+}
+
+for (const token of ['createCommandHubRuntime','function getNextRecommendedAction','function campaigns','function missionScreen','launchBattle(){','function battleScreen', "route:'battle'", 'ENTER BATTLE']) {
+  if (!commandHubRuntime.includes(token)) {
+    console.error(JSON.stringify({ ok: false, commandHubPlayflowMissing: token }, null, 2));
+    process.exit(1);
+  }
+}
+
+if (endgameArchitecture.standardSquadSize !== 5 || endgameArchitecture.livePvpImplemented !== false || asyncArenaSystem.mode !== 'ASYNCHRONOUS' || asyncArenaSystem.livePvpImplemented !== false || asyncArenaSystem.standardSquadSize !== 1 || asyncArenaSystem.status !== 'IMPLEMENTED') {
   console.error(JSON.stringify({ ok: false, endgameBoundaryInvalid: true }, null, 2));
   process.exit(1);
+}
+if (!asyncArenaSystem.snapshotRules?.oneActiveDefenderTitan || !asyncArenaSystem.snapshotRules?.checksumRequired || asyncArenaSystem.defenseSnapshots?.length !== asyncArenaSystem.sampleOpponents?.length) {
+  console.error(JSON.stringify({ ok: false, asyncArenaSnapshotsInvalid: true }, null, 2));
+  process.exit(1);
+}
+for (const token of ['Asynchronous Titan Challenge', 'Snapshot Model Ready', 'one-active defender Titan', 'No live PvP']) {
+  if (!miniAppHtml.includes(token)) {
+    console.error(JSON.stringify({ ok: false, asyncArenaDashboardMissing: token }, null, 2));
+    process.exit(1);
+  }
 }
 if (!squadSystem.samplePresets.every(p => p.squadSize === 5 && p.titanIds.length === 5)) {
   console.error(JSON.stringify({ ok: false, squadPresetInvalid: true }, null, 2));
@@ -111,3 +155,4 @@ for (const token of ['__TG_TACTICAL_MAP_READY__', 'GRID_W = 10', 'GRID_H = 10', 
   }
 }
 console.log(JSON.stringify({ ok: true, visualQaSmoke: 'PASS', screens: requiredScreens }, null, 2));
+

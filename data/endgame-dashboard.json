@@ -10,14 +10,16 @@
     "Reaper Recommendation"
   ],
   "sampleState": {},
-  "recommendationPolicy": "Recommendations must use actual player progression data. No player save is loaded in the Dev Platform, so Reaper shows system-readiness guidance instead of fabricated progress.",
+  "recommendationPolicy": "Recommendations must use actual player progression data. No player save is loaded in the Dev Platform, so arena readiness is shown as system contracts and snapshot coverage only.",
   "systemReadiness": {
     "squadSystem": "Ready",
     "ascension": "Framework Ready",
-    "asyncArena": "Framework Ready",
+    "asyncArena": "Snapshot Model Ready",
     "weeklyTrials": "Framework Ready",
     "raids": "Framework Ready",
     "seasons": "Framework Ready",
-    "playerSaveLoaded": "No live player save loaded"
+    "playerSaveLoaded": "No live player save loaded",
+    "livePvp": "Not Implemented",
+    "arenaPlayerRank": "Requires live player save"
   }
 }

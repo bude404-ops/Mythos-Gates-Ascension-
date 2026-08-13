@@ -1,0 +1,274 @@
+{
+  "id": "TG-COMMAND-HUB-001",
+  "version": "1.0.0",
+  "generated": "2026-08-12T23:10:00Z",
+  "status": "IMPLEMENTED",
+  "purpose": "Mobile-first Main Menu / Command Hub runtime foundation that consumes canonical Titan Gates data, PlayerState, campaign playflow, Gate/realm codex, asset registry, audio hooks, notifications, and unlock rules.",
+  "canonFirst": true,
+  "forbiddenContent": [
+    "spaceships",
+    "guns",
+    "conventional sci-fi military UI",
+    "deprecated faction names",
+    "hardcoded old factions",
+    "fake player progression badges"
+  ],
+  "canonSources": [
+    "data/factions.json",
+    "data/titans.json",
+    "data/realm-codex.json",
+    "data/campaign-playflow-contract.json",
+    "data/mission-registry.json",
+    "data/solo-battle-state-schema.json",
+    "data/asset-registry.json",
+    "game/index.html"
+  ],
+  "startupPipeline": [
+    "BOOT",
+    "INITIALIZATION",
+    "ASSET_PRELOAD",
+    "SAVE_DATA_LOAD",
+    "SAVE_VALIDATION",
+    "PLAYER_STATE_LOAD",
+    "CANON_DATA_LOAD",
+    "CONTENT_VALIDATION",
+    "TITLE_GATE_PRESENTATION",
+    "MAIN_COMMAND_HUB"
+  ],
+  "startupModes": {
+    "firstLaunch": [
+      "dark_environment",
+      "massive_gate_reveal",
+      "subtle_divine_energy",
+      "logo_reveal",
+      "tap_to_enter",
+      "introductory_sequence",
+      "starting_progression",
+      "command_hub"
+    ],
+    "returningPlayer": [
+      "logo",
+      "quick_gate_animation",
+      "load_player_state",
+      "surface_unfinished_action",
+      "command_hub"
+    ]
+  },
+  "playerStateSchema": {
+    "playerId": "string",
+    "playerName": "string",
+    "level": "number",
+    "experience": "object",
+    "resources": "array",
+    "selectedTitans": "array<titanId>",
+    "unlockedContent": "object",
+    "campaignProgress": "object",
+    "quests": "array",
+    "notifications": "array",
+    "settings": "object"
+  },
+  "defaultPlayerState": {
+    "playerId": "TG-PLAYER-LOCAL-001",
+    "playerName": "Gate Commander",
+    "level": 1,
+    "experience": {
+      "current": 0,
+      "next": 100
+    },
+    "resources": [
+      {
+        "id": "TG-RES-GATE-SHARDS",
+        "name": "Gate Shards",
+        "amount": 0
+      },
+      {
+        "id": "TG-RES-ASCENSION-EMBER",
+        "name": "Ascension Ember",
+        "amount": 0
+      },
+      {
+        "id": "TG-RES-TITAN-RELICS",
+        "name": "Titan Relics",
+        "amount": 0
+      }
+    ],
+    "selectedTitans": [
+      "TG-TITAN-001"
+    ],
+    "unlockedContent": {
+      "campaign": true,
+      "titans": true,
+      "gates": true,
+      "codex": true,
+      "elite": false,
+      "arena": false,
+      "pvp": false,
+      "developerTools": true
+    },
+    "campaignProgress": {
+      "currentFactionId": "TG-FACTION-001",
+      "currentChapterId": "TG-F01-CH01",
+      "currentMissionId": "TG-F01-C01-M01",
+      "completedMissionIds": [],
+      "claimedRewards": [],
+      "eliteUnlocked": false
+    },
+    "quests": [
+      {
+        "id": "TG-QUEST-FIRST-GATE",
+        "title": "Open the First Gate",
+        "objective": "Launch the first campaign mission.",
+        "status": "ACTIVE",
+        "progress": 0,
+        "target": 1
+      }
+    ],
+    "notifications": [],
+    "settings": {
+      "reducedMotion": false,
+      "audioEnabled": true
+    }
+  },
+  "navigationTabs": [
+    {
+      "id": "battle",
+      "label": "BATTLE",
+      "routes": [
+        "hub",
+        "campaigns",
+        "chapters",
+        "mission",
+        "battle",
+        "arena"
+      ]
+    },
+    {
+      "id": "titans",
+      "label": "TITANS",
+      "routes": [
+        "titans",
+        "titan-detail",
+        "gear",
+        "abilities",
+        "ascension"
+      ]
+    },
+    {
+      "id": "gates",
+      "label": "GATES",
+      "routes": [
+        "gates",
+        "realm",
+        "campaign-destination"
+      ]
+    },
+    {
+      "id": "codex",
+      "label": "CODEX",
+      "routes": [
+        "codex",
+        "codex-entry"
+      ]
+    },
+    {
+      "id": "command",
+      "label": "COMMAND",
+      "routes": [
+        "quests",
+        "achievements",
+        "rewards",
+        "inventory",
+        "profile",
+        "settings",
+        "developer"
+      ]
+    }
+  ],
+  "componentContracts": [
+    "TitanCard(entityId, titanState)",
+    "ResourceBar(playerState.resources)",
+    "PrimaryActionButton(getNextRecommendedAction(playerState, canon))",
+    "NavigationButton(tab)",
+    "CampaignCard(campaignFlowItem)",
+    "GateCard(realmId)",
+    "CodexEntryCard(entityId)",
+    "QuestCard(questId)",
+    "RewardCard(rewardId)",
+    "NotificationBadge(notificationId)",
+    "ProfilePanel(playerState)",
+    "Modal",
+    "LoadingOverlay",
+    "ConfirmationDialog",
+    "LockedContentPanel"
+  ],
+  "recommendationService": {
+    "name": "getNextRecommendedAction",
+    "rules": [
+      "recover corrupt save before gameplay",
+      "claim pending reward before next mission",
+      "select a valid Titan if selectedTitanIds are missing",
+      "continue unfinished mission if present",
+      "start current campaign mission",
+      "enter elite only when campaign unlock rule is true",
+      "show locked reason for future PvP"
+    ]
+  },
+  "unlockLogic": {
+    "elite": "Unlocked after all Normal missions for current faction are completed.",
+    "arena": "Unlocked after first chapter is cleared and async arena snapshot contract is implemented.",
+    "futurePvp": "Locked: future networking layer; never presented as implemented.",
+    "developerTools": "Visible only when developer mode is true."
+  },
+  "artDirection": {
+    "style": "premium mythological tactical RPG, mobile-first, dark, monumental Gates, enormous Titans, atmospheric fog, particles, cel-shaded influence where appropriate",
+    "realmDriven": true,
+    "fallbackPolicy": "Use canon-safe placeholder if canonical visual data is missing; never invent lore."
+  },
+  "audioHooks": [
+    "menu_open",
+    "button_press",
+    "button_confirm",
+    "button_back",
+    "tab_change",
+    "campaign_start",
+    "reward_received",
+    "titan_selected",
+    "gate_open",
+    "notification",
+    "error"
+  ],
+  "performanceRules": [
+    "lazy load non-visible systems",
+    "preload only boot/title/hub/current realm/current selected Titan assets",
+    "respect reduced-motion",
+    "avoid full menu re-render for resource-only updates",
+    "mobile touch targets >=44px"
+  ],
+  "errorHandling": [
+    "missing_art_fallback",
+    "missing_titan_safe_slot",
+    "invalid_entity_id_log_and_recover",
+    "corrupt_save_backup_and_safe_default",
+    "missing_campaign_mission_locked_panel",
+    "network_failure_retry_state",
+    "missing_optional_content_placeholder"
+  ],
+  "qualityGates": [
+    "Command Hub route is the first rendered game route after title/startup.",
+    "No hardcoded faction names in hub render logic; faction UI maps canonical faction registry.",
+    "Selected Titan display resolves from PlayerState selectedTitans plus canonical Titan registry.",
+    "Resource bar maps PlayerState resources only.",
+    "Every bottom nav button routes to a real implemented screen or LockedContentPanel.",
+    "getNextRecommendedAction resolves a real mission handoff.",
+    "Startup save validation never silently overwrites corrupt data.",
+    "Command Hub smoke completes BOOT -> LOAD -> HUB -> TITANS -> BACK -> BATTLE -> RETURN -> HUB."
+  ],
+  "counts": {
+    "factions": 7,
+    "titans": 63,
+    "realms": 7,
+    "campaignFlows": 7,
+    "selectedTitansDefault": 1
+  },
+  "readyForFutureContent": true
+}

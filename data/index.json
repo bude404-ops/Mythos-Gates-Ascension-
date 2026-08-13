@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-12",
+  "generated": "2026-08-13",
   "counts": {
     "project": 1,
     "factions": 7,
@@ -10,7 +10,7 @@
     "artPrompts": 110,
     "artworks": 0,
     "artImportPipeline": 1,
-    "developmentTasks": 25,
+    "developmentTasks": 44,
     "loreEntries": 35,
     "npcs": 8,
     "creatures": 18,
@@ -73,6 +73,10 @@
     "titanEnemyBalancePass": 1,
     "soloBattleStateSchema": 1,
     "soloVerticalSlice": 1,
+    "battlefieldTelemetryContract": 1,
+    "campaignPlayflowContract": 1,
+    "commandHubContract": 1,
+    "assetRegistry": 1,
     "hollowCreatures": 16,
     "artMapPrompts": 12,
     "artCampaignPrompts": 7
@@ -149,7 +153,11 @@
     "tactical-blueprint-placements.json": "data/tactical-blueprint-placements.json",
     "titan-enemy-balance-pass.json": "data/titan-enemy-balance-pass.json",
     "solo-battle-state-schema.json": "data/solo-battle-state-schema.json",
-    "solo-vertical-slice.json": "data/solo-vertical-slice.json"
+    "solo-vertical-slice.json": "data/solo-vertical-slice.json",
+    "battlefield-telemetry-contract.json": "data/battlefield-telemetry-contract.json",
+    "campaign-playflow-contract.json": "data/campaign-playflow-contract.json",
+    "command-hub-contract.json": "data/command-hub-contract.json",
+    "asset-registry.json": "data/asset-registry.json"
   },
   "sourceFileFingerprints": {
     "project.json": {
@@ -199,8 +207,8 @@
     },
     "development-tasks.json": {
       "path": "data/development-tasks.json",
-      "bytes": 13862,
-      "sha256": "5557192f3601eab13b5ce30884c83cf694124bee9ad33ce0f12d54c55130b809"
+      "bytes": 21436,
+      "sha256": "da80c236346f26b6e2ede6263c7e32e4330d7424950094fabd758175c51ba67d"
     },
     "lore-index.json": {
       "path": "data/lore-index.json",
@@ -289,8 +297,8 @@
     },
     "change-history.json": {
       "path": "data/change-history.json",
-      "bytes": 21168,
-      "sha256": "e7a7b990acee78329d6635f4e700eae974f63087b66dc819bb596f8b2e715369"
+      "bytes": 23217,
+      "sha256": "b3998a220b96ddfd0fb84e91e4f5e71c225cabc1b3cee08cbf086a395d0704ef"
     },
     "campaign-architecture.json": {
       "path": "data/campaign-architecture.json",
@@ -364,8 +372,8 @@
     },
     "async-arena-system.json": {
       "path": "data/async-arena-system.json",
-      "bytes": 3469,
-      "sha256": "d37a37a285681669ec107d274f6f2151f4d58f862dc78e57f9a3d8755e45903b"
+      "bytes": 13477,
+      "sha256": "bec91f440a600ab336009734ebe7007436ba52236d6493807d8f8dbd21546afd"
     },
     "weekly-trials.json": {
       "path": "data/weekly-trials.json",
@@ -394,18 +402,18 @@
     },
     "balance-analytics.json": {
       "path": "data/balance-analytics.json",
-      "bytes": 1190,
-      "sha256": "ac4df12613ad19f57a0be9efc82994d5d18f07ad7516ba6162cdc8571384ea3d"
+      "bytes": 1923,
+      "sha256": "06b7314c741099ecb2c0c6eb2224163348ecc275bb4b4d8e258e52cded6851ca"
     },
     "continuity-balance-audit.json": {
       "path": "data/continuity-balance-audit.json",
       "bytes": 2652,
-      "sha256": "33f2e1ba451316364204863be3e597675eeff0ad738940f7ccf3a5060748edcc"
+      "sha256": "fe05becf0e129d3c10885fad136d7fdd6075739ff23c0480b6876f6c64c70fac"
     },
     "endgame-dashboard.json": {
       "path": "data/endgame-dashboard.json",
-      "bytes": 688,
-      "sha256": "43b17dc355a1258e6a0e6ff958f3bee1ee2b304627659433339dfe77d1b20e3a"
+      "bytes": 781,
+      "sha256": "777eb2b8acea20fdf0a7c687806bf14ac351bc99118314bdc3c74d41b0035740"
     },
     "monetization-policy.json": {
       "path": "data/monetization-policy.json",
@@ -474,8 +482,8 @@
     },
     "battlefield-runtime-architecture.json": {
       "path": "data/battlefield-runtime-architecture.json",
-      "bytes": 1305,
-      "sha256": "7cc3f54a82953c427b6b9e92a5f43e71c61e975d54bc7b6e75b1a6f2d72cc70f"
+      "bytes": 2186,
+      "sha256": "6477564a65a45d189813b0099738c8f0fc2bda8f7cf8265342f5aad0331bf97f"
     },
     "battlefield-quality-gate.json": {
       "path": "data/battlefield-quality-gate.json",
@@ -511,6 +519,26 @@
       "path": "data/solo-vertical-slice.json",
       "bytes": 11042,
       "sha256": "e6dd3ced925c8a1b9eed3b763f9ff06f837b3fe722e5740570bad9a64f722808"
+    },
+    "battlefield-telemetry-contract.json": {
+      "path": "data/battlefield-telemetry-contract.json",
+      "bytes": 4552,
+      "sha256": "65aaf16a433f597e113a59ee6ed21904767328911fc46023c1ffb2574640ff44"
+    },
+    "campaign-playflow-contract.json": {
+      "path": "data/campaign-playflow-contract.json",
+      "bytes": 39866,
+      "sha256": "c04b8439cc34b286380b434e98631be123734cca4ddece26dedaf995609777ef"
+    },
+    "command-hub-contract.json": {
+      "path": "data/command-hub-contract.json",
+      "bytes": 7479,
+      "sha256": "31b5ec3b160c060160edff5a8973e187bd7ec3df26c08394cd25597ff5b5722f"
+    },
+    "asset-registry.json": {
+      "path": "data/asset-registry.json",
+      "bytes": 15056,
+      "sha256": "1b9782e020abe185609f16303bf776d8f78394d82d56b2b9249e9fa3fda881c4"
     }
   },
   "artPromptCategories": {

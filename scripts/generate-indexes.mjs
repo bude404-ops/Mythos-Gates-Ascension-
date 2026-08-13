@@ -79,7 +79,11 @@ const files = {
   'tactical-blueprint-placements.json': 'tacticalBlueprintPlacements',
   'titan-enemy-balance-pass.json': 'titanEnemyBalancePass',
   'solo-battle-state-schema.json': 'soloBattleStateSchema',
-  'solo-vertical-slice.json': 'soloVerticalSlice'
+  'solo-vertical-slice.json': 'soloVerticalSlice',
+  'battlefield-telemetry-contract.json': 'battlefieldTelemetryContract',
+  'campaign-playflow-contract.json': 'campaignPlayflowContract',
+  'command-hub-contract.json': 'commandHubContract',
+  'asset-registry.json': 'assetRegistry'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {
@@ -116,3 +120,5 @@ counts.artCampaignPrompts = artPrompts.filter(prompt => prompt.category === 'Cam
 const index = { generated, counts, files: sourceFiles, sourceFileFingerprints, artPromptCategories, artMapPrompts };
 write('data/index.json', index);
 console.log(JSON.stringify(index, null, 2));
+
+

@@ -1,0 +1,169 @@
+{
+  "id": "TG-BATTLEFIELD-TELEMETRY-CONTRACT-001",
+  "version": "1.0.0",
+  "generated": "2026-08-12T17:12:00Z",
+  "status": "IMPLEMENTED",
+  "purpose": "Structured telemetry hooks for production one-active-Titan battlefield tuning, replayability analysis, difficulty gates, and boss fail-point diagnosis.",
+  "canonSources": [
+    "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001",
+    "TG-SOLO-BATTLE-STATE-SCHEMA-001",
+    "TG-SOLO-VERTICAL-SLICE-ATEN-RA-001",
+    "TG-BALANCE-ANALYTICS-001"
+  ],
+  "eventFamilies": [
+    {
+      "family": "resource",
+      "events": [
+        "RESOURCE_GAIN",
+        "RESOURCE_SPEND"
+      ],
+      "requiredFields": [
+        "resource",
+        "amount",
+        "source",
+        "round",
+        "phase"
+      ]
+    },
+    {
+      "family": "reaction",
+      "events": [
+        "REACTION_OPENED",
+        "REACTION_SUCCESS",
+        "REACTION_DECLINED"
+      ],
+      "requiredFields": [
+        "enemy",
+        "type",
+        "round",
+        "phase"
+      ]
+    },
+    {
+      "family": "objective",
+      "events": [
+        "OBJECTIVE_PROGRESS",
+        "OBJECTIVE_COMPLETE"
+      ],
+      "requiredFields": [
+        "objective",
+        "progress",
+        "status",
+        "round"
+      ]
+    },
+    {
+      "family": "terrain",
+      "events": [
+        "TERRAIN_HAZARD",
+        "TERRAIN_RESOURCE"
+      ],
+      "requiredFields": [
+        "hazard",
+        "damage",
+        "round",
+        "phase"
+      ]
+    },
+    {
+      "family": "boss",
+      "events": [
+        "BOSS_PHASE_REACHED",
+        "BOSS_PHASE_FAILED",
+        "BOSS_PHASE_CLEARED"
+      ],
+      "requiredFields": [
+        "bossId",
+        "phaseIndex",
+        "reason",
+        "round"
+      ]
+    },
+    {
+      "family": "replay",
+      "events": [
+        "BATTLE_START",
+        "TITAN_MOVE",
+        "BASIC_ATTACK",
+        "TECHNIQUE",
+        "SIGNATURE",
+        "EXECUTION",
+        "ROUND_ADVANCE"
+      ],
+      "requiredFields": [
+        "round",
+        "phase",
+        "type"
+      ]
+    }
+  ],
+  "counters": {
+    "turns": "Round count reached before victory, defeat, or quit.",
+    "damageDealt": "Total Titan damage output.",
+    "damageTaken": "Total incoming and hazard damage applied to active Titan.",
+    "reactionSuccessRate": "Resolved successful reactions divided by opened reaction windows.",
+    "objectiveCompletionRate": "Completed objectives divided by objective count.",
+    "momentumEfficiency": "Damage plus objective progress per Momentum spent.",
+    "divinityEfficiency": "Boss phase clears plus signature value per Divinity spent.",
+    "hazardDamageShare": "Hazard damage divided by all damage taken.",
+    "bossPhaseFailPoints": "Count of failed boss phase telemetry keys by phase.",
+    "replayabilityScore": "Weighted mix of route diversity, objective timing variance, reaction choices, and resource spend diversity."
+  },
+  "qualityGates": [
+    "Every battle start creates a telemetry run id.",
+    "Every reducer that changes battle state emits at least one event log row.",
+    "Every resource gain and spend is countered by resource and source.",
+    "Every reaction window records opened, resolved, success, and decline counts.",
+    "Every objective completion records objective id, progress, and reward source.",
+    "Every boss phase emits reached and cleared or failed telemetry.",
+    "Telemetry summaries must be deterministic for identical reducer scripts."
+  ],
+  "dashboardSlices": [
+    {
+      "id": "replayability",
+      "label": "Replayability",
+      "metrics": [
+        "routeDiversity",
+        "reactionChoiceSpread",
+        "resourceSpendDiversity",
+        "objectiveTimingVariance"
+      ]
+    },
+    {
+      "id": "difficulty",
+      "label": "Difficulty",
+      "metrics": [
+        "damageTaken",
+        "turns",
+        "reactionSuccessRate",
+        "objectiveCompletionRate"
+      ]
+    },
+    {
+      "id": "resources",
+      "label": "Momentum / Divinity",
+      "metrics": [
+        "momentumEfficiency",
+        "divinityEfficiency",
+        "solarChargeSources"
+      ]
+    },
+    {
+      "id": "boss",
+      "label": "Boss Fail Points",
+      "metrics": [
+        "bossPhaseReached",
+        "bossPhaseCleared",
+        "bossPhaseFailPoints"
+      ]
+    }
+  ],
+  "sampleThresholds": {
+    "watchReactionSuccessRateBelow": 0.35,
+    "watchReactionSuccessRateAbove": 0.9,
+    "watchHazardDamageShareAbove": 0.4,
+    "watchObjectiveCompletionRateBelow": 0.65,
+    "watchReplayabilityScoreBelow": 60,
+    "watchBossPhaseFailSpikeAbove": 0.28
+  }
+}

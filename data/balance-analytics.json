@@ -13,7 +13,14 @@
     "Enemy threat weight",
     "Gear effect pick rate",
     "Ability cooldown use",
-    "Level-band clear rate"
+    "Level-band clear rate",
+    "Reaction success rate",
+    "Momentum efficiency",
+    "Divinity spend efficiency",
+    "Objective completion timing",
+    "Hazard damage share",
+    "Boss phase fail points",
+    "Replayability route diversity"
   ],
   "flags": [
     "Overpowered Titans",
@@ -25,15 +32,25 @@
     "Titan gear loop exploit",
     "Enemy hp sponge risk",
     "Elite remix overtuning",
-    "Ascension recovery bypass"
+    "Ascension recovery bypass",
+    "Reaction window confusion",
+    "Momentum starvation",
+    "Divinity hoarding",
+    "Boss phase fail spike",
+    "Low replayability route diversity"
   ],
   "policy": "Gameplay Director reviews balance problems; no automatic balance changes without validation.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "latestBalancePassId": "TG-TITAN-ENEMY-BALANCE-PASS-001",
   "manualReviewThresholds": {
     "titanWinRateWatch": "<45% or >57% over comparable mission bands",
     "gearUsageWatch": ">40% pick rate with >3% win lift",
     "enemyThreatWatch": "Mission failure spike above +12% after elite remix",
-    "combatPowerSpreadWatch": "Role average spread above 18 effective power"
-  }
+    "combatPowerSpreadWatch": "Role average spread above 18 effective power",
+    "reactionSuccessWatch": "<35% or >90% after first-session tutorials",
+    "hazardDamageShareWatch": ">40% of total damage taken",
+    "bossPhaseFailWatch": ">28% fail concentration on a single boss phase",
+    "replayabilityWatch": "Replayability score below 60 after route unlocks"
+  },
+  "latestTelemetryContractId": "TG-BATTLEFIELD-TELEMETRY-CONTRACT-001"
 }

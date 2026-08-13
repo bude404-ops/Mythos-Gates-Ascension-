@@ -96,20 +96,19 @@
   },
   {
     "id": "TG-DEV-006",
-    "description": "Create campaign chapter-select UI using TG-CAMPAIGN and TG-CHAPTER data.",
+    "description": "Created production campaign/chapter selection bridge with seven-faction campaign selection, five-chapter browsing, Normal/Elite mission lists, and mission launch handoff.",
     "director": "Development Director",
     "priority": "High",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "dependencies": [
       "data/campaigns.json",
       "data/chapters.json"
     ],
     "relatedEntity": "TG-CAMPAIGN-001",
     "relatedFiles": [
-      "index.html",
       "game/index.html",
-      "data/campaigns.json",
-      "data/chapters.json"
+      "data/campaign-playflow-contract.json",
+      "scripts/test-campaign-playflow.mjs"
     ]
   },
   {
@@ -163,10 +162,10 @@
   },
   {
     "id": "TG-DEV-010",
-    "description": "Connect campaign select and chapter select in the playable game using campaign/map/creature data.",
+    "description": "Connected campaign select, chapter browser, mission detail, and playable battle handoff using canonical faction, chapter, map, creature, mission, dialogue, and art-package data.",
     "director": "Gameplay Director",
     "priority": "High",
-    "status": "ACTIVE",
+    "status": "COMPLETED",
     "dependencies": [
       "data/campaigns.json",
       "data/chapters.json",
@@ -176,8 +175,10 @@
     "relatedEntity": "TG-CAMPAIGN-001",
     "relatedFiles": [
       "game/index.html",
-      "data/campaigns.json",
-      "data/chapters.json"
+      "data/campaign-playflow-contract.json",
+      "data/campaign-chapter-registry.json",
+      "data/mission-registry.json",
+      "scripts/test-campaign-playflow.mjs"
     ]
   },
   {
@@ -261,9 +262,9 @@
     "id": "TG-TASK-SOLO-004",
     "title": "Convert async arena to Asynchronous Titan Challenge snapshot model",
     "owner": "Development Director",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "priority": "High",
-    "description": "Convert async arena to Asynchronous Titan Challenge snapshot model",
+    "description": "Converted async arena into the Asynchronous Titan Challenge snapshot model with one defensive Titan snapshot per sample opponent, immutable checksums, deterministic AI profiles, solo loadouts, and no live PvP/player-rank fabrication.",
     "director": "Development Director",
     "dependencies": [
       "TG-TASK-SOLO-001"
@@ -272,9 +273,9 @@
     "deliverable": "Convert async arena to Asynchronous Titan Challenge snapshot model",
     "relatedEntity": "TG-TASK-SOLO-001",
     "relatedFiles": [
-      "data/solo-combat-design-document.json",
-      "data/solo-titan-roster-redesign.json",
-      "data/solo-titan-migration-report.json"
+      "data/async-arena-system.json",
+      "data/endgame-dashboard.json",
+      "scripts/test-async-arena-snapshots.mjs"
     ]
   },
   {
@@ -409,16 +410,302 @@
   },
   {
     "id": "TG-DEV-031",
-    "description": "Add battlefield telemetry hooks for replayability, difficulty tuning, Momentum/Divinity usage, reaction success, objective timing, and boss phase fail points.",
+    "description": "Implemented battlefield telemetry hooks for replayability, difficulty tuning, Momentum/Divinity usage, reaction success, objective timing, and boss phase fail points.",
     "director": "Development Director",
     "priority": "High",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "dependencies": [
       "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001"
     ],
     "relatedEntity": "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001",
     "relatedFiles": [
-      "data/battlefield-runtime-architecture.json"
+      "data/battlefield-runtime-architecture.json",
+      "data/battlefield-telemetry-contract.json",
+      "game/solo-battle-engine.mjs",
+      "scripts/test-battlefield-telemetry.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-001",
+    "description": "Command Hub: Boot system",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-002",
+    "description": "Command Hub: Loading system",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "Boot system"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-003",
+    "description": "Command Hub: Main Menu",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "Loading system"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-004",
+    "description": "Command Hub: Responsive UI",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "Main Menu"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-005",
+    "description": "Command Hub: Titan presentation",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "PlayerState + Titan registry"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-006",
+    "description": "Command Hub: Resource system",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "PlayerState"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-007",
+    "description": "Command Hub: Campaign integration",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "Campaign playflow"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-008",
+    "description": "Command Hub: Gate system",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "Realm codex"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-009",
+    "description": "Command Hub: Codex integration",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "Lore registry"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-010",
+    "description": "Command Hub: Command systems",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "PlayerState"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-011",
+    "description": "Command Hub: Asset registry",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "Canon/Lore data"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-012",
+    "description": "Command Hub: Art pipeline",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "Asset registry"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-013",
+    "description": "Command Hub: Audio hooks",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "Audio Manager"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-014",
+    "description": "Command Hub: Notifications",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "PlayerState"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-015",
+    "description": "Command Hub: Save/load",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "PlayerState"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-016",
+    "description": "Command Hub: Error handling",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "Save/load"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-017",
+    "description": "Command Hub: Testing",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "COMPLETED",
+    "dependencies": [
+      "All Command Hub modules"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-018",
+    "description": "Command Hub: Performance",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "NEXT",
+    "dependencies": [
+      "Responsive UI"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
+    ]
+  },
+  {
+    "id": "TG-TASK-COMMAND-HUB-019",
+    "description": "Command Hub: Final art integration",
+    "director": "Development Director",
+    "priority": "HIGH",
+    "status": "NEXT",
+    "dependencies": [
+      "Asset registry"
+    ],
+    "relatedFiles": [
+      "data/command-hub-contract.json",
+      "game/index.html",
+      "scripts/test-command-hub.mjs"
     ]
   }
 ]

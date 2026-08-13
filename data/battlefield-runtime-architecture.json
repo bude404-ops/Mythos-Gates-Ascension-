@@ -1,6 +1,6 @@
 {
   "id": "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "created": "2026-08-11T21:06:00Z",
   "pipeline": [
     "battlefield data",
@@ -11,7 +11,9 @@
     "event system",
     "boss system",
     "reward system",
-    "progression writer"
+    "progression writer",
+    "telemetry summarizer",
+    "tuning dashboard export"
   ],
   "dataDefinitions": [
     "layout",
@@ -38,7 +40,9 @@
     "No battlefield hardcoded as a one-off after this slice.",
     "Every map has tactical spaces, terrain semantics, enemy intent, objective state, event triggers, boss state, reward payload, and scale validation.",
     "Mobile UI shows only contextually relevant information.",
-    "Camera returns to tactical mode after action/cinematic beats."
+    "Camera returns to tactical mode after action/cinematic beats.",
+    "Every reducer emits deterministic telemetry for replay, difficulty, resource, objective, and boss tuning.",
+    "Balance changes must cite telemetry summary signals instead of gut-feel difficulty guesses."
   ],
   "futureWorkflow": [
     "Lore approval",
@@ -54,5 +58,20 @@
     "Performance",
     "Playtest",
     "Validation"
+  ],
+  "telemetryContract": "TG-BATTLEFIELD-TELEMETRY-CONTRACT-001",
+  "telemetryHooks": [
+    {
+      "hook": "recordTelemetryHook",
+      "purpose": "Append normalized event rows with round, phase, family, source, and deterministic sequence id."
+    },
+    {
+      "hook": "summarizeBattlefieldTelemetry",
+      "purpose": "Convert event log and counters into reaction, objective, resource, hazard, replayability, and boss tuning signals."
+    },
+    {
+      "hook": "recordBossPhaseTelemetry",
+      "purpose": "Track boss phase reached/cleared/failed signals for vertical slice fail-point analysis."
+    }
   ]
 }
