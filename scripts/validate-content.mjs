@@ -120,6 +120,18 @@ const requiredScaleSheetTypes = new Set(['normal_enemy','elite_enemy','player_ti
 if(data.factions.length !== 7) fail(`Expected 7 playable factions, found ${data.factions.length}`);
 if(data.hollowThreatFaction.playable !== false || data.hollowThreatFaction.classification !== 'Hostile Threat Faction') fail('Hollow must remain a non-playable threat faction');
 if(data.titans.length !== 63) fail(`Expected 63 Titans, found ${data.titans.length}`);
+if(data.characters.length < data.npcs.length) fail(`Character registry must mirror campaign NPC canon: ${data.characters.length}/${data.npcs.length}`);
+const characterSourceNpcIds = new Set(data.characters.map(c => c.sourceNpcId));
+for (const npc of data.npcs) if(!characterSourceNpcIds.has(npc.id)) fail(`${npc.id}: missing promoted non-playable character record`);
+for (const character of data.characters) {
+  if(character.playable !== false || character.recruitable !== false || character.combatUnit !== false) fail(`${character.id}: character registry must preserve non-playable canon locks`);
+  if(character.heroCanonLock !== 'NO_PLAYABLE_HERO_CANON') fail(`${character.id}: missing no-playable-Hero canon lock`);
+  if(!npcIds.has(character.sourceNpcId)) fail(`${character.id}: invalid sourceNpcId ${character.sourceNpcId}`);
+  if(character.factionId && !factionIds.has(character.factionId)) fail(`${character.id}: invalid factionId ${character.factionId}`);
+  if(character.artPromptId && !promptIds.has(character.artPromptId)) fail(`${character.id}: invalid artPromptId ${character.artPromptId}`);
+  if(character.backstoryId && !backstoryIds.has(character.backstoryId)) fail(`${character.id}: invalid backstoryId ${character.backstoryId}`);
+  for (const field of ['name','characterKind','status','director','role','lore','gameplayFunction']) if(!character[field]) fail(`${character.id}: missing ${field}`);
+}
 
 for (const titan of data.titans) {
   if(!factionIds.has(titan.factionId)) fail(`${titan.id}: invalid factionId ${titan.factionId}`);

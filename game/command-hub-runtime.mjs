@@ -6,6 +6,7 @@ const esc = x => String(x ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt
 export function createCommandHubRuntime(DATA, mount){
   const CONTRACT = DATA.commandHubContract || DATA['command-hub-contract'] || {};
   const ASSETS = DATA.assetRegistry || DATA['asset-registry'] || { assets: [] };
+  if (typeof window !== 'undefined') window.__TG_COMMAND_HUB_DATA__ = DATA;
   const state = { route:'boot', bootIndex:0, startupMode:'firstLaunch', player:null, selectedTab:'battle', focusTitanId:null, battle:null, logs:[], lastError:null, perf:{ renderCount:0, partialResourceUpdates:0, routeRenderCount:{}, lastRenderMs:0, maxRenderMs:0, lastRoute:null, budgetMs:32, resourceOnlyBudgetMs:8, assetPreloadCount:0 } };
   const factions = () => DATA.factions || [];
   const titans = () => DATA.titans || [];
