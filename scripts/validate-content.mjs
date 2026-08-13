@@ -58,6 +58,7 @@ const data = {
   raidSystem: read('data/raid-system.json'),
   titanTrialSystem: read('data/titan-trial-system.json'),
   missionTacticalProfileSystem: read('data/mission-tactical-profile-system.json'),
+  enemyArchetypeRegistry: read('data/enemy-archetype-registry.json'),
   endgameDashboard: read('data/endgame-dashboard.json'),
   commandHubContract: read('data/command-hub-contract.json'),
   assetRegistry: read('data/asset-registry.json'),
@@ -76,6 +77,7 @@ register('weeklyTrials', data.weeklyTrials, 'data/weekly-trials.json');
 register('raidSystem', data.raidSystem, 'data/raid-system.json');
 register('titanTrialSystem', data.titanTrialSystem, 'data/titan-trial-system.json');
 register('missionTacticalProfileSystem', data.missionTacticalProfileSystem, 'data/mission-tactical-profile-system.json');
+register('enemyArchetypeRegistry', data.enemyArchetypeRegistry, 'data/enemy-archetype-registry.json');
 register('endgameDashboard', data.endgameDashboard, 'data/endgame-dashboard.json');
 register('commandHubContract', data.commandHubContract, 'data/command-hub-contract.json');
 register('assetRegistry', data.assetRegistry, 'data/asset-registry.json');
@@ -105,6 +107,8 @@ const allowedMissionProblemTags = new Set(['large_enemy_groups','heavily_armored
 const allowedTitanRoles = new Set(data.titans.map(t => t.role));
 const missionTagCounts = new Map();
 const missionRoleCounts = new Map();
+const enemyArchetypeKeys = new Set((data.enemyArchetypeRegistry.archetypes || []).map(a => a.key));
+const difficultyBudgetTiers = new Set((data.enemyArchetypeRegistry.difficultyBudgets || []).map(b => b.tier));
 
 if(data.factions.length !== 7) fail(`Expected 7 playable factions, found ${data.factions.length}`);
 if(data.hollowThreatFaction.playable !== false || data.hollowThreatFaction.classification !== 'Hostile Threat Faction') fail('Hollow must remain a non-playable threat faction');
@@ -142,6 +146,10 @@ for (const creature of data.creatures) {
   if(creature.threatFactionId && creature.threatFactionId !== data.hollowThreatFaction.id) fail(`${creature.id}: invalid threatFactionId ${creature.threatFactionId}`);
   if(!promptIds.has(creature.artPromptId)) fail(`${creature.id}: missing prompt ${creature.artPromptId}`);
   if(!creature.backstoryId || !backstoryIds.has(creature.backstoryId) || !backstoryEntityIds.has(creature.id)) fail(`${creature.id}: missing linked backstory ${creature.backstoryId}`);
+  if(!creature.combatRole || !enemyArchetypeKeys.has(creature.combatRole)) fail(`${creature.id}: invalid combatRole ${creature.combatRole}`);
+  if(!creature.aiProfile || creature.aiProfile.archetype !== creature.combatRole) fail(`${creature.id}: aiProfile must match combatRole`);
+  if(!Array.isArray(creature.aiProfile.priority) || creature.aiProfile.priority.length < 3) fail(`${creature.id}: aiProfile priority too thin`);
+  if(!creature.aiProfile.counterplayWindow) fail(`${creature.id}: missing AI counterplay window`);
   if(!exists(`creatures/${creature.id}.json`)) fail(`${creature.id}: missing individual creature file`);
 }
 
@@ -376,6 +384,24 @@ for (const rule of ['Mission tactical profiles may recommend roles and Titans, b
 if(hub.missionTacticalProfiles?.status !== 'IMPLEMENTED' || hub.missionTacticalProfiles?.taskId !== 'TG-DEV-028') fail('Command Hub mission tactical profile summary must implement TG-DEV-028');
 if(hub.missionTacticalProfiles?.ownershipLock !== false || hub.missionTacticalProfiles?.favoredNotRequired !== true) fail('Command Hub mission profile ownership rule mismatch');
 if(!hub.qualityGates?.some(g => g.includes('TG-DEV-028 all 280 campaign missions'))) fail('Command Hub quality gate missing TG-DEV-028');
+const enemyRegistry = data.enemyArchetypeRegistry;
+if(enemyRegistry.status !== 'IMPLEMENTED' || enemyRegistry.taskId !== 'TG-DEV-023') fail('Enemy archetype registry must complete TG-DEV-023');
+if(enemyRegistry.coverage?.creatures !== data.creatures.length || enemyRegistry.coverage?.missingCreatureAi?.length !== 0) fail('TG-DEV-023 creature AI coverage mismatch');
+if((enemyRegistry.archetypes || []).length < 10) fail('TG-DEV-023 must cover all design archetypes');
+for (const archetype of enemyRegistry.archetypes || []) {
+  if(!archetype.key || !archetype.purpose || !archetype.counterplay) fail('TG-DEV-023 archetype missing purpose/counterplay');
+  if(!archetype.aiProfile || !Array.isArray(archetype.aiProfile.decisionLoop) || archetype.aiProfile.decisionLoop.length < 3) fail(`${archetype.key}: missing AI decision loop`);
+  if(!Array.isArray(archetype.aiProfile.targetPriority) || archetype.aiProfile.targetPriority.length < 2) fail(`${archetype.key}: missing target priorities`);
+  if(!archetype.aiProfile.telegraph || !archetype.aiProfile.counterplay) fail(`${archetype.key}: missing telegraph/counterplay`);
+}
+for (const tier of ['NORMAL','HARD','ELITE','ASCENDED','MYTHIC']) if(!difficultyBudgetTiers.has(tier)) fail(`TG-DEV-023 missing difficulty budget ${tier}`);
+for (const budget of enemyRegistry.difficultyBudgets || []) {
+  if(!budget.statMultiplier || !budget.compositionBudget || !budget.hazardBudget || !budget.reactionFrequency) fail(`${budget.tier}: incomplete tactical budget`);
+  if(budget.maxDynamicPowerFlexPct > 10) fail(`${budget.tier}: dynamic power flex exceeds cap`);
+}
+if(!enemyRegistry.runtimeRules?.some(rule => String(rule).includes('behavior, composition, hazards, and phases before raw health inflation'))) fail('TG-DEV-023 anti-stat-inflation rule missing');
+if(hub.enemyArchetypeRegistry?.status !== 'IMPLEMENTED' || hub.enemyArchetypeRegistry?.taskId !== 'TG-DEV-023') fail('Command Hub enemy archetype summary must implement TG-DEV-023');
+if(!hub.qualityGates?.some(g => g.includes('TG-DEV-023 every creature'))) fail('Command Hub quality gate missing TG-DEV-023');
 if(!hub.defaultPlayerState?.selectedTitans?.every(id => titanIds.has(id))) fail('Command Hub default PlayerState references invalid Titan');
 if(!missionIds.has(hub.defaultPlayerState?.campaignProgress?.currentMissionId)) fail('Command Hub default PlayerState references invalid mission');
 if((hub.navigationTabs || []).length !== 5) fail('Command Hub must expose five bottom navigation sections');

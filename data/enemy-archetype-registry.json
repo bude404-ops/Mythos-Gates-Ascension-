@@ -1,0 +1,439 @@
+{
+  "id": "TG-ENEMY-ARCHETYPE-REGISTRY-001",
+  "version": "1.0.0",
+  "generated": "2026-08-13T00:00:00Z",
+  "taskId": "TG-DEV-023",
+  "status": "IMPLEMENTED",
+  "directive": "Production enemy archetype registry, tactical scaling budgets, and AI profile coverage for solo-Titan missions.",
+  "sources": [
+    "data/creatures.json",
+    "data/enemy-scaling-design-document.json",
+    "data/titan-enemy-balance-pass.json",
+    "game/solo-battle-engine.mjs"
+  ],
+  "coverage": {
+    "creatures": 18,
+    "runtimeCovered": 18,
+    "archetypes": 10,
+    "missingCreatureAi": []
+  },
+  "archetypes": [
+    {
+      "key": "SWARMER",
+      "purpose": "Create positional pressure and execution chains.",
+      "counterplay": "Area control, hazard baiting, cleave, execution routing.",
+      "runtimeCreatureIds": [
+        "TG-CREATURE-001",
+        "TG-CREATURE-007",
+        "TG-CREATURE-012"
+      ],
+      "scalesBy": [
+        "count",
+        "flank discipline",
+        "on-death effects",
+        "formation spacing"
+      ],
+      "aiProfile": {
+        "decisionLoop": [
+          "seek isolated Titan",
+          "prefer flank lane",
+          "force reaction spend",
+          "chain execution bait"
+        ],
+        "targetPriority": [
+          "isolated Titan",
+          "low armor Titan",
+          "objective-adjacent Titan"
+        ],
+        "telegraph": "Pack howl and converging lane markers before surround pressure.",
+        "counterplay": "Cleave, hazard bait, and movement reactions break the pack."
+      }
+    },
+    {
+      "key": "BRUTE",
+      "purpose": "Force stance discipline and terrain planning.",
+      "counterplay": "Dodge charge lanes, parry windows, armor break, displacement.",
+      "runtimeCreatureIds": [
+        "TG-CREATURE-002",
+        "TG-CREATURE-008",
+        "TG-CREATURE-010",
+        "TG-CREATURE-013",
+        "TG-CREATURE-014",
+        "TG-CREATURE-017"
+      ],
+      "scalesBy": [
+        "armor",
+        "telegraph complexity",
+        "knockback",
+        "guard break"
+      ],
+      "aiProfile": {
+        "decisionLoop": [
+          "claim center lane",
+          "telegraph crush",
+          "attack objective cover",
+          "guard-break Titan"
+        ],
+        "targetPriority": [
+          "objective holder",
+          "guard stance Titan",
+          "nearest Titan"
+        ],
+        "telegraph": "Raised gate-stone shoulder and cracked lane before charge.",
+        "counterplay": "Dodge charge lanes, parry windows, armor break, displacement."
+      }
+    },
+    {
+      "key": "HUNTER",
+      "purpose": "Threaten from range and punish exposed paths.",
+      "counterplay": "Line-of-sight breaks, pursuit reactions, high-ground denial.",
+      "runtimeCreatureIds": [],
+      "scalesBy": [
+        "range",
+        "overwatch frequency",
+        "focus fire logic",
+        "status arrows"
+      ],
+      "aiProfile": {
+        "decisionLoop": [
+          "hold range",
+          "seek line of sight",
+          "mark exposed Titan",
+          "withdraw from melee"
+        ],
+        "targetPriority": [
+          "exposed Titan",
+          "low evasion Titan",
+          "Titan near objective"
+        ],
+        "telegraph": "Drawn spectral sightline one turn before focus fire.",
+        "counterplay": "Break line of sight, pursue, deny high ground."
+      }
+    },
+    {
+      "key": "CONTROLLER",
+      "purpose": "Restrict movement and disrupt clean objective routes.",
+      "counterplay": "Cleanse zones, destroy anchors, shift stance, terrain immunity builds.",
+      "runtimeCreatureIds": [
+        "TG-CREATURE-016"
+      ],
+      "scalesBy": [
+        "zone size",
+        "root duration",
+        "hazard layering",
+        "objective denial"
+      ],
+      "aiProfile": {
+        "decisionLoop": [
+          "seed denial zone",
+          "root escape route",
+          "protect caster lane",
+          "pressure objective clock"
+        ],
+        "targetPriority": [
+          "fast Titan",
+          "objective runner",
+          "clustered Titan"
+        ],
+        "telegraph": "Ground sigil blooms before root or hazard lock.",
+        "counterplay": "Shift stance, cleanse zones, destroy anchors."
+      }
+    },
+    {
+      "key": "DISRUPTOR",
+      "purpose": "Attack Momentum, Divinity, cooldowns, and reactions.",
+      "counterplay": "Prioritize, interrupt casts, execute before drain resolves.",
+      "runtimeCreatureIds": [
+        "TG-CREATURE-006"
+      ],
+      "scalesBy": [
+        "drain amount",
+        "cast protection",
+        "reaction baiting",
+        "resource lockouts"
+      ],
+      "aiProfile": {
+        "decisionLoop": [
+          "scan resource meter",
+          "cast drain",
+          "bait reaction",
+          "retreat behind guard"
+        ],
+        "targetPriority": [
+          "high Momentum Titan",
+          "high Divinity Titan",
+          "cooldown-ready Titan"
+        ],
+        "telegraph": "Ritual hand-sign and meter glow before resource denial.",
+        "counterplay": "Interrupt casts, prioritize, execute before drain resolves."
+      }
+    },
+    {
+      "key": "GUARDIAN",
+      "purpose": "Protect bosses, rituals, exits, and high-value threats.",
+      "counterplay": "Displacement, terrain collapse, guard-break abilities.",
+      "runtimeCreatureIds": [
+        "TG-CREATURE-004"
+      ],
+      "scalesBy": [
+        "shield strength",
+        "intercept rules",
+        "aura radius",
+        "objective binding"
+      ],
+      "aiProfile": {
+        "decisionLoop": [
+          "intercept threat",
+          "shield elite",
+          "body-block route",
+          "retaliate after guard break"
+        ],
+        "targetPriority": [
+          "Titan targeting boss",
+          "breaker role Titan",
+          "objective attacker"
+        ],
+        "telegraph": "Shield plant and aura pulse before intercept.",
+        "counterplay": "Displace, collapse terrain, guard-break."
+      }
+    },
+    {
+      "key": "EXECUTIONER",
+      "purpose": "Make low-health Titan states dangerous without cheap instant death.",
+      "counterplay": "Guard stance, preemptive kill, concealment, Divine Ascension reset.",
+      "runtimeCreatureIds": [
+        "TG-CREATURE-003"
+      ],
+      "scalesBy": [
+        "wound threshold",
+        "pursuit movement",
+        "anti-heal",
+        "finisher telegraph speed"
+      ],
+      "aiProfile": {
+        "decisionLoop": [
+          "wait for wounded state",
+          "telegraph finisher",
+          "pursue weakened Titan",
+          "avoid overkill ambush"
+        ],
+        "targetPriority": [
+          "wounded Titan",
+          "anti-heal target",
+          "isolated Titan"
+        ],
+        "telegraph": "Execution mark appears before finisher path.",
+        "counterplay": "Guard stance, conceal, preemptive kill, Ascension reset."
+      }
+    },
+    {
+      "key": "ELITE",
+      "purpose": "Single mechanic-focused enemy that changes how the room is solved.",
+      "counterplay": "Learn mechanic, exploit weakness, deny setup.",
+      "runtimeCreatureIds": [
+        "TG-CREATURE-009",
+        "TG-CREATURE-011",
+        "TG-CREATURE-015"
+      ],
+      "scalesBy": [
+        "mechanic layers",
+        "reaction behavior",
+        "resistance spread",
+        "terrain synergy"
+      ],
+      "aiProfile": {
+        "decisionLoop": [
+          "introduce named mechanic",
+          "test learned counter",
+          "shift after damage gate",
+          "protect weakness until window"
+        ],
+        "targetPriority": [
+          "mechanic breaker",
+          "objective holder",
+          "highest damage Titan"
+        ],
+        "telegraph": "Named mechanic banner and visual windup before action.",
+        "counterplay": "Learn mechanic, exploit weakness, deny setup."
+      }
+    },
+    {
+      "key": "CHAMPION",
+      "purpose": "Mini-boss duel embedded inside a larger battlefield.",
+      "counterplay": "Read phases, conserve Momentum, use terrain windows.",
+      "runtimeCreatureIds": [
+        "TG-CREATURE-005",
+        "TG-CREATURE-018"
+      ],
+      "scalesBy": [
+        "phase count",
+        "adds",
+        "arena rules",
+        "enrage condition"
+      ],
+      "aiProfile": {
+        "decisionLoop": [
+          "duel Titan",
+          "summon support at phase gate",
+          "conserve enrage",
+          "punish repeated stance"
+        ],
+        "targetPriority": [
+          "active Titan",
+          "resource-rich Titan",
+          "Titan near phase objective"
+        ],
+        "telegraph": "Phase roar and stance change before champion strike.",
+        "counterplay": "Read phases, conserve Momentum, use terrain windows."
+      }
+    },
+    {
+      "key": "ENEMY_TITAN",
+      "purpose": "Major boss mirror: another mythic being with its own meter and stance rules.",
+      "counterplay": "Deny their resource loop, punish stance shift, survive Ascension.",
+      "runtimeCreatureIds": [],
+      "scalesBy": [
+        "unique mechanic depth",
+        "Divine phase",
+        "AI prediction",
+        "signature gear effects"
+      ],
+      "aiProfile": {
+        "decisionLoop": [
+          "build own meter",
+          "mirror stance",
+          "deny player loop",
+          "enter Divine phase"
+        ],
+        "targetPriority": [
+          "active Titan",
+          "counter-role Titan",
+          "highest resource Titan"
+        ],
+        "telegraph": "Enemy Titan meter and stance preview shown before signature.",
+        "counterplay": "Deny their resource loop, punish stance shift, survive Ascension."
+      }
+    }
+  ],
+  "difficultyBudgets": [
+    {
+      "tier": "NORMAL",
+      "statMultiplier": {
+        "hp": 1,
+        "damage": 1
+      },
+      "mechanicAdditions": [
+        "baseline mechanics"
+      ],
+      "ai": "teaching behavior",
+      "rewardScalar": 1,
+      "compositionBudget": 4,
+      "hazardBudget": 1,
+      "eliteSlots": 0,
+      "maxDynamicPowerFlexPct": 10,
+      "reactionFrequency": "LOW"
+    },
+    {
+      "tier": "HARD",
+      "statMultiplier": {
+        "hp": 1.15,
+        "damage": 1.12
+      },
+      "mechanicAdditions": [
+        "one modifier",
+        "smarter target selection"
+      ],
+      "ai": "uses flanks and retreats",
+      "rewardScalar": 1.2,
+      "compositionBudget": 6,
+      "hazardBudget": 2,
+      "eliteSlots": 1,
+      "maxDynamicPowerFlexPct": 10,
+      "reactionFrequency": "MEDIUM"
+    },
+    {
+      "tier": "ELITE",
+      "statMultiplier": {
+        "hp": 1.3,
+        "damage": 1.25
+      },
+      "mechanicAdditions": [
+        "elite affix",
+        "extra reaction behavior",
+        "hazard layer"
+      ],
+      "ai": "protects disruptors and objectives",
+      "rewardScalar": 1.55,
+      "compositionBudget": 8,
+      "hazardBudget": 3,
+      "eliteSlots": 2,
+      "maxDynamicPowerFlexPct": 10,
+      "reactionFrequency": "MEDIUM_HIGH"
+    },
+    {
+      "tier": "ASCENDED",
+      "statMultiplier": {
+        "hp": 1.45,
+        "damage": 1.4
+      },
+      "mechanicAdditions": [
+        "boss/elite phase additions",
+        "Divinity denial",
+        "compound modifiers"
+      ],
+      "ai": "build-aware and stance-aware",
+      "rewardScalar": 2.1,
+      "compositionBudget": 10,
+      "hazardBudget": 4,
+      "eliteSlots": 3,
+      "maxDynamicPowerFlexPct": 10,
+      "reactionFrequency": "HIGH"
+    },
+    {
+      "tier": "MYTHIC",
+      "statMultiplier": {
+        "hp": 1.65,
+        "damage": 1.55
+      },
+      "mechanicAdditions": [
+        "maximum mechanical complexity",
+        "strict enrage or scoring",
+        "unique rewards"
+      ],
+      "ai": "optimized but telegraphed",
+      "rewardScalar": 3,
+      "compositionBudget": 12,
+      "hazardBudget": 5,
+      "eliteSlots": 4,
+      "maxDynamicPowerFlexPct": 10,
+      "reactionFrequency": "HIGH_TELEGRAPHED"
+    }
+  ],
+  "missionLevelTemplate": {
+    "recommendedTitanLevel": "declared per mission",
+    "enemyLevel": "recommended -1 to +2",
+    "eliteLevel": "recommended +3",
+    "bossLevel": "recommended +5",
+    "dynamicAllowance": "repeatable variants may flex within +/-10% power, never beyond tier caps"
+  },
+  "antiPatterns": [
+    "Enemy HP x10 as difficulty",
+    "unlimited auto-scaling everywhere",
+    "mandatory healer checks",
+    "unreadable one-shot ambushes",
+    "resource denial with no counterplay"
+  ],
+  "runtimeRules": [
+    "Every creature must declare combatRole and aiProfile.archetype.",
+    "Every creature combatRole must resolve to a production archetype.",
+    "Scaling adds behavior, composition, hazards, and phases before raw health inflation.",
+    "Campaign missions keep fixed bands so old victories remain proof of growth.",
+    "Endgame dynamic scaling is capped and must stay telegraphed."
+  ],
+  "acceptanceEvidence": [
+    "All 18 creatures carry combatRole and aiProfile coverage.",
+    "All 10 design archetypes have AI decision loops, target priorities, telegraphs, and counterplay.",
+    "All difficulty tiers expose explicit composition/hazard/reaction budgets.",
+    "Release validation rejects missing creature AI profiles, unknown archetypes, and missing budget tiers."
+  ]
+}

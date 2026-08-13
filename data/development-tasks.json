@@ -280,19 +280,31 @@
   },
   {
     "id": "TG-DEV-023",
-    "description": "Implement enemy archetype registry, tactical scaling budgets, and AI profiles for solo-Titan missions.",
+    "description": "Implemented enemy archetype registry, tactical scaling budgets, and AI profile coverage for solo-Titan missions.",
     "director": "Gameplay Director",
     "priority": "High",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "dependencies": [
       "TG-ENEMY-SCALING-DESIGN-DOCUMENT-001",
       "game/index.html"
     ],
     "relatedEntity": "TG-ENEMY-SCALING-DESIGN-DOCUMENT-001",
     "relatedFiles": [
+      "data/enemy-archetype-registry.json",
+      "data/creatures.json",
       "data/enemy-scaling-design-document.json",
-      "data/mission-registry.json",
-      "game/index.html"
+      "data/titan-enemy-balance-pass.json",
+      "game/solo-battle-engine.mjs",
+      "scripts/validate-content.mjs"
+    ],
+    "completedAt": "2026-08-13",
+    "completedIn": "TG-DEV-023-enemy-archetype-registry",
+    "completionSummary": "Sealed all creature combat roles into a production enemy archetype registry with AI decision loops, target priorities, telegraphs, counterplay windows, and explicit tactical scaling budgets.",
+    "acceptanceEvidence": [
+      "All 18 creatures carry combatRole and aiProfile coverage.",
+      "All 10 design archetypes have AI decision loops, target priorities, telegraphs, and counterplay.",
+      "All difficulty tiers expose explicit composition/hazard/reaction budgets.",
+      "Release validation rejects missing creature AI profiles, unknown archetypes, and missing budget tiers."
     ]
   },
   {

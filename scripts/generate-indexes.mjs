@@ -65,6 +65,7 @@ const files = {
   'solo-combat-design-document.json': 'soloCombatDesignDocument',
   'solo-titan-roster-redesign.json': 'soloTitanRosterRedesign',
   'enemy-scaling-design-document.json': 'enemyScalingDesignDocument',
+  'enemy-archetype-registry.json': 'enemyArchetypeRegistry',
   'raid-design-document.json': 'raidDesignDocument',
   'canon-faction-matrix.json': 'canonFactionMatrix',
   'titan-role-matrix.json': 'titanRoleMatrix',
