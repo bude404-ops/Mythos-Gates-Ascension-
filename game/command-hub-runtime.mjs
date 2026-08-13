@@ -25,6 +25,20 @@ export function createCommandHubRuntime(DATA, mount){
   const creatureById = id => creatures().find(c => c.id === id);
   const chapterById = id => chapters().find(c => c.id === id) || (playflow().flow||[]).flatMap(f=>f.chapterRoutes||[]).find(c=>c.chapterId===id);
   const log = (type, message, data={}) => state.logs.unshift({ type, message, data, at:new Date().toISOString() });
+  const STARTER_TITAN_IDS = ['TG-TITAN-001','TG-TITAN-003','TG-TITAN-004'];
+  const AWAKENING_BEATS = [
+    { step:1, lesson:'Awaken first Titan', missionBeat:'The Gate opens; the Titan crosses alone.' },
+    { step:2, lesson:'Movement and basic attacks', missionBeat:'Claim safe lanes before the Hollow reaches the seal.' },
+    { step:3, lesson:'Momentum and reactions', missionBeat:'First telegraph teaches dodge, parry, or counter timing.' }
+  ];
+  function starterTitans(){ const rows=STARTER_TITAN_IDS.map(titanById).filter(Boolean); return rows.length?rows:(titans()[0]?[titans()[0]]:[]); }
+  function ensureOnboarding(player){
+    player.onboarding ||= { status:'AWAKENING', starterTitanId:null, milestones:[], awakeningMissionId:null };
+    player.onboarding.milestones ||= [];
+    player.onboarding.status ||= player.onboarding.starterTitanId?'COMPLETE':'AWAKENING';
+    player.onboarding.awakeningMissionId ||= player.campaignProgress?.currentMissionId || missions()[0]?.id;
+    return player.onboarding;
+  }
 
   const AudioManager = { play(hook){ if(state.player?.settings?.audioEnabled !== false) log('audio', hook); } };
   const AssetManager = {
@@ -51,6 +65,7 @@ export function createCommandHubRuntime(DATA, mount){
     base.campaignProgress.completedMissionIds ||= [];
     base.campaignProgress.claimedRewards ||= [];
     base.quests ||= [{ id:'TG-QUEST-FIRST-GATE', title:'Open the First Gate', objective:'Launch the first campaign mission.', status:'ACTIVE', progress:0, target:1 }];
+    base.onboarding ||= { status:'AWAKENING', starterTitanId:null, milestones:['GATE_SIGNAL_DETECTED'], awakeningMissionId:firstMission };
     base.notifications ||= [];
     base.settings ||= { reducedMotion:false, audioEnabled:true };
     return base;
@@ -82,6 +97,7 @@ export function createCommandHubRuntime(DATA, mount){
     ensureResource(player,'TG-RES-RAID-TOKENS','Raid Tokens',0);
     ensureResource(player,'TG-RES-SIGNATURE-ALLOY','Signature Alloy',0);
     ensureResource(player,'TG-RES-MASTERY-SEALS','Mastery Seals',0);
+    ensureOnboarding(player);
     player.experience ||= { current:0, next:100 };
     player.experience.current = Number(player.experience.current||0);
     player.experience.next = Number(player.experience.next||100);
@@ -274,6 +290,11 @@ export function createCommandHubRuntime(DATA, mount){
     const first=state.startupMode==='firstLaunch';
     return `<main class="min-h-screen overflow-hidden bg-neutral-950 text-neutral-50"><section class="relative flex min-h-screen flex-col items-center justify-end p-5 pb-14 text-center"><div class="absolute inset-0 bg-gradient-to-b from-neutral-950 via-primary/10 to-neutral-950"></div><div class="absolute top-24 h-72 w-48 rounded-t-full border-4 border-primary/40 bg-neutral-900/60 shadow-dark-outline"></div><div class="absolute top-8 h-96 w-96 rounded-full bg-primary/10 blur-3xl"></div><div class="relative z-10 mb-12"><p class="text-xs font-black uppercase tracking-[.32em] text-primary">${first?'The Gate Awakens':'Gate Link Restored'}</p><h1 class="mt-2 text-5xl font-black leading-none">Titan Gates:<br/>Ascension</h1><p class="mx-auto mt-4 max-w-sm text-neutral-300">${first?'A massive Gate opens in the dark. Divine energy stirs. Your first Titan answers.':'Returning player state detected. The Command Hub is ready.'}</p><button onclick="TGHub.enterHub()" class="mt-8 rounded-3xl bg-primary px-8 py-5 text-xl font-black text-white">TAP TO ENTER</button></div></section></main>`;
   }
+  function awakeningScreen(){
+    const player=ensurePlayerState(); const onboarding=ensureOnboarding(player); const selected=onboarding.starterTitanId; const cards=starterTitans().map(t=>`<button onclick="TGHub.chooseStarter('${esc(t.id)}')" class="rounded-3xl border ${selected===t.id?'border-primary bg-primary/15':'border-neutral-800 bg-neutral-900'} p-4 text-left active:scale-[.99]"><p class="text-xs font-black uppercase tracking-[.22em] text-primary">Starter Titan · ${esc(t.role)}</p><h3 class="mt-1 text-2xl font-black">${esc(t.name)}</h3><p class="mt-2 text-sm text-neutral-300">${esc(t.role==='Defender'?'Long survival, objective holding, hazard endurance.':t.role==='Controller'?'Fast enemies, terrain-heavy battles, caster denial.':'Heavily armored enemies, shield windows, boss armor phases.')}</p><p class="mt-3 rounded-2xl bg-neutral-950 p-3 text-xs text-neutral-500">Canon-safe starter set only. Full roster remains hidden until Command unlock.</p></button>`).join('');
+    const beats=AWAKENING_BEATS.map(b=>`<li class="rounded-2xl bg-neutral-950 p-3"><b class="text-primary">${esc(b.step)} · ${esc(b.lesson)}</b><p class="text-sm text-neutral-400">${esc(b.missionBeat)}</p></li>`).join('');
+    return `<main class="min-h-screen overflow-auto bg-neutral-950 p-4 text-neutral-50"><section class="mx-auto max-w-5xl space-y-4"><header class="rounded-[2rem] border border-primary/40 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.3em] text-primary">Awakening Protocol</p><h1 class="mt-2 text-5xl font-black leading-none">Choose the Titan that answers first.</h1><p class="mt-3 max-w-2xl text-neutral-300">Aten Ra opens the first safe Gate. You choose one active Titan for the Awakening path — no full roster flood, no forced purchase pressure.</p>${selected?badge('Starter bound','ok'):badge('Awaiting choice','bad')}</header><section class="grid gap-3 md:grid-cols-3">${cards}</section><section class="grid gap-3 md:grid-cols-[.8fr_1.2fr]"><article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4"><h2 class="text-2xl font-black">Awakening Beats</h2><ul class="mt-3 space-y-2">${beats}</ul></article><article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4"><h2 class="text-2xl font-black">First Gate Handoff</h2><p class="mt-2 text-neutral-300">After binding, the Command Hub opens directly into the first solo mission. Movement, attacks, and reaction discipline are taught through the playable battle loop.</p><button ${selected?'':'disabled'} onclick="TGHub.finishAwakening()" class="mt-5 w-full rounded-3xl ${selected?'bg-primary text-white':'bg-neutral-800 text-neutral-500'} px-5 py-5 text-xl font-black">BEGIN AWAKENING MISSION</button></article></section></section></main>`;
+  }
   function boot(){
     const stage=BOOT_STAGES[state.bootIndex] || 'MAIN_COMMAND_HUB';
     return `<main class="flex min-h-screen items-center justify-center bg-neutral-950 p-6 text-neutral-50"><section class="w-full max-w-sm rounded-3xl border border-primary/30 bg-neutral-900 p-5 text-center"><p class="text-xs font-black uppercase tracking-[.32em] text-primary">Startup Pipeline</p><h1 class="mt-2 text-3xl font-black">${esc(stage)}</h1><div class="mt-4 h-2 rounded-full bg-neutral-800"><div class="h-full rounded-full bg-primary" style="width:${Math.round(((state.bootIndex+1)/BOOT_STAGES.length)*100)}%"></div></div><p class="mt-3 text-sm text-neutral-400">Boot · asset preload · save validation · canon load · title Gate.</p></section></main>`;
@@ -347,7 +368,7 @@ export function createCommandHubRuntime(DATA, mount){
   }
 
   function render(){
-    const views={ boot, title, hub, campaigns, mission:missionScreen, titans:titansScreen, gates:gatesScreen, raid:raidScreen, codex:codexScreen, command:commandScreen, battle:battleScreen };
+    const views={ boot, title, awakening:awakeningScreen, hub, campaigns, mission:missionScreen, titans:titansScreen, gates:gatesScreen, raid:raidScreen, codex:codexScreen, command:commandScreen, battle:battleScreen };
     mount.innerHTML=(views[state.route]||hub)();
   }
   function advanceBoot(){
@@ -360,9 +381,18 @@ export function createCommandHubRuntime(DATA, mount){
   const api={
     state, getNextRecommendedAction, validatePlayerState, AssetManager, AudioManager,
     start(){ render(); setTimeout(advanceBoot, 80); },
-    enterHub(){ ensurePlayerState(); AssetManager.preloadVisible(); AudioManager.play('gate_open'); setRoute('hub'); },
+    enterHub(){ const p=ensurePlayerState(); AssetManager.preloadVisible(); AudioManager.play('gate_open'); setRoute(p.onboarding?.status==='COMPLETE'?'hub':'awakening'); },
     go(route){ setRoute(route); },
     openTab(tab){ state.selectedTab=tab; const map={battle:'hub',titans:'titans',raid:'raid',gates:'gates',codex:'codex',command:'command'}; setRoute(map[tab]||'hub'); },
+    chooseStarter(id){
+      const p=ensurePlayerState(); const starters=new Set(starterTitans().map(t=>t.id));
+      if(!starters.has(id)){ log('onboarding-error','Rejected non-starter Titan',{id}); render(); return; }
+      p.selectedTitans=[id]; const ob=ensureOnboarding(p); ob.starterTitanId=id; if(!ob.milestones.includes('STARTER_TITAN_BOUND')) ob.milestones.push('STARTER_TITAN_BOUND'); p.notifications=deriveNotifications(p); savePlayerState(); AudioManager.play('titan_selected'); render();
+    },
+    finishAwakening(){
+      const p=ensurePlayerState(); const ob=ensureOnboarding(p); if(!ob.starterTitanId){ log('onboarding-error','Starter required before Awakening mission'); render(); return; }
+      ob.status='COMPLETE'; if(!ob.milestones.includes('AWAKENING_MISSION_UNLOCKED')) ob.milestones.push('AWAKENING_MISSION_UNLOCKED'); p.campaignProgress.currentFactionId='TG-FACTION-001'; p.campaignProgress.currentMissionId=ob.awakeningMissionId || p.campaignProgress.currentMissionId; p.notifications=deriveNotifications(p); savePlayerState(); state.selectedTab='battle'; AudioManager.play('campaign_start'); setRoute('mission');
+    },
     primary(){ const a=getNextRecommendedAction(); setRoute(a.route,{ missionId:a.missionId }); },
     openCampaign(factionId){ const player=ensurePlayerState(); const flow=(playflow().flow||[]).find(f=>f.factionId===factionId); const ch=flow?.chapterRoutes?.[0]; player.campaignProgress.currentFactionId=factionId; player.campaignProgress.currentChapterId=ch?.chapterId; player.campaignProgress.currentMissionId=ch?.defaultMissionId || ch?.normalMissionIds?.[0] || player.campaignProgress.currentMissionId; savePlayerState(); setRoute('mission'); },
     focusTitan(id){ state.focusTitanId=id; setRoute('titans'); },
