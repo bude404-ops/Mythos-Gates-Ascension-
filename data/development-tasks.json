@@ -321,17 +321,20 @@
     "description": "Tune rewards, gear materials, mastery credit, and non-pay-to-win raid economy for solo-Titan endgame.",
     "director": "Progression Director",
     "priority": "Medium",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "dependencies": [
       "data/reward-system.json",
       "data/progression-system.json"
     ],
     "relatedEntity": "TG-RAID-DESIGN-DOCUMENT-001",
     "relatedFiles": [
-      "data/raid-design-document.json",
-      "data/reward-system.json",
-      "data/progression-system.json"
-    ]
+      "data/raid-system.json",
+      "game/command-hub-runtime.mjs",
+      "scripts/validate-content.mjs",
+      "scripts/test-command-hub.mjs"
+    ],
+    "completedIn": "3d49359+raid-economy-tuning",
+    "completionSummary": "Implemented tuned non-pay-to-win solo-Titan raid economy: first-clear bonuses, replay decay, weekly tier caps, signature alloy bands, active-Titan mastery credit, and validation/smoke coverage."
   },
   {
     "id": "TG-DEV-026",

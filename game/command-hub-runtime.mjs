@@ -257,20 +257,30 @@ export function createCommandHubRuntime(DATA, mount){
   function resolveRaidEconomy(player, attempt){
     normalizeProgression(player);
     const score=Math.max(0,Number(attempt.finalScore||attempt.score||0));
-    const quality=score>=560?'S':score>=500?'A':score>=430?'B':'C';
+    const tuning=raidRules().economyTuning || {};
+    const bands=tuning.qualityBands || raidRules().scoreFormula?.qualityBands || {S:560,A:500,B:430,C:0};
+    const quality=score>=Number(bands.S||560)?'S':score>=Number(bands.A||500)?'A':score>=Number(bands.B||430)?'B':'C';
     const firstClear=!(player.raidProgress.completions||[]).some(c=>c.raidId===attempt.raidId && c.tier===attempt.tier);
-    const replayScalar=firstClear?1:0.42;
+    const firstRules=tuning.firstClear || { tokenBonus:8, ascensionEmber:1, titanRelics:2, masterySeals:1, payoutScalar:1 };
+    const replayRules=tuning.replay || { payoutScalar:0.42, minReplayTokens:2, weeklyDecayPerClear:1, sReplayMasterySeals:1, nonSReplayMasterySeals:0 };
+    const replayScalar=firstClear?Number(firstRules.payoutScalar||1):Number(replayRules.payoutScalar||0.42);
     const weeklyKey=`${attempt.raidId}:${attempt.tier}`;
     const weeklyCount=Number(player.raidProgress.weeklyTokens[weeklyKey]||0);
-    const tokenBase={S:16,A:13,B:10,C:7}[quality]||7;
-    const materialBase={S:5,A:4,B:3,C:2}[quality]||2;
-    const tier=raidRules().tierCaps[attempt.tier]||{rewardMultiplier:1,maxReplayTokens:6}; const cap=Number(tier.maxReplayTokens||6); const rewardMultiplier=Number(tier.rewardMultiplier||1);
-    const cappedReplayTokens=firstClear?tokenBase:Math.max(2,Math.min(cap,tokenBase-weeklyCount));
-    const raidTokens=Math.round((firstClear?tokenBase+8:cappedReplayTokens)*replayScalar*rewardMultiplier);
-    const signatureAlloy=Math.max(1,Math.round(materialBase*replayScalar*rewardMultiplier));
-    const masterySeals=firstClear?1:(quality==='S'?1:0);
-    const masteryXp=Math.round((score/18)*(firstClear?1:0.45));
-    return { quality, firstClear, replayScalar, weeklyKey, weeklyCount, grants:{ gateShards:Math.round(score/14*replayScalar), ascensionEmber:firstClear?1:0, titanRelics:firstClear?2:1, raidTokens, signatureAlloy, masterySeals, xp:Math.round(score/4*replayScalar), masteryXp } };
+    const table=tuning.qualityRewardTable || {S:{tokenBase:16,signatureAlloy:5,masteryXpScalar:1},A:{tokenBase:13,signatureAlloy:4,masteryXpScalar:.86},B:{tokenBase:10,signatureAlloy:3,masteryXpScalar:.72},C:{tokenBase:7,signatureAlloy:2,masteryXpScalar:.58}};
+    const row=table[quality] || table.C;
+    const tier=raidRules().tierCaps[attempt.tier]||{rewardMultiplier:1,maxReplayTokens:6};
+    const rewardMultiplier=Number((tuning.tierRewardMultipliers||{})[attempt.tier] || tier.rewardMultiplier || 1);
+    const cap=Number((tuning.weeklyReplayTokenCaps||{})[attempt.tier] || tier.maxReplayTokens || 6);
+    const weeklyDecay=Number(replayRules.weeklyDecayPerClear||1);
+    const tokenBase=Number(row.tokenBase||7);
+    const replayBase=Math.max(Number(replayRules.minReplayTokens||2), Math.min(cap, tokenBase - (weeklyCount*weeklyDecay)));
+    const raidTokens=Math.round((firstClear ? tokenBase + Number(firstRules.tokenBonus||8) : replayBase) * replayScalar * rewardMultiplier);
+    const signatureAlloy=Math.max(Number(tuning.materialCaps?.signatureAlloyMinimum||1), Math.round(Number(row.signatureAlloy||2)*replayScalar*rewardMultiplier));
+    const masterySeals=firstClear?Number(firstRules.masterySeals||1):(quality==='S'?Number(replayRules.sReplayMasterySeals||1):Number(replayRules.nonSReplayMasterySeals||0));
+    const masteryRules=tuning.masteryCredit || { firstClearDivisor:18, replayDivisor:40 };
+    const divisor=firstClear?Number(masteryRules.firstClearDivisor||18):Number(masteryRules.replayDivisor||40);
+    const masteryXp=Math.round((score/divisor)*Number(row.masteryXpScalar||1));
+    return { quality, firstClear, replayScalar, weeklyKey, weeklyCount, caps:{ weeklyReplayTokenCap:cap, rewardMultiplier, replayBase, gearMaterialBand:row.gearMaterialBand||'stable' }, grants:{ gateShards:Math.round(score/14*replayScalar), ascensionEmber:firstClear?Number(firstRules.ascensionEmber||1):0, titanRelics:firstClear?Number(firstRules.titanRelics||2):1, raidTokens, signatureAlloy, masterySeals, xp:Math.round(score/4*replayScalar), masteryXp } };
   }
   function applyRaidMastery(player, attempt, economy){
     normalizeProgression(player); const titanId=attempt.activeTitanId||player.selectedTitans?.[0]||'UNKNOWN_TITAN';

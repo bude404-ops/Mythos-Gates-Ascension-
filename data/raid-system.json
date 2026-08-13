@@ -1,8 +1,8 @@
 {
   "id": "TG-RAID-SYSTEM-001",
-  "version": "1.0.0-deterministic-raid-framework",
+  "version": "1.1.0-raid-economy-tuning",
   "status": "IMPLEMENTED",
-  "taskId": "TG-DEV-024",
+  "taskId": "TG-DEV-025",
   "activeTitanRule": "One active player Titan only. Reserve support is deferred architecture, not initial gameplay.",
   "frameworkPrinciples": [
     "Every raid attempt is deterministic from stage profile, approach, tier, and one active Titan state.",
@@ -26,25 +26,77 @@
     "RAID_MYTHIC"
   ],
   "tierCaps": {
-    "RAID_NORMAL": { "scoreMultiplier": 1, "damageMultiplier": 1, "rewardMultiplier": 1, "maxReplayTokens": 6 },
-    "RAID_HARD": { "scoreMultiplier": 1.08, "damageMultiplier": 1.18, "rewardMultiplier": 1.18, "maxReplayTokens": 7 },
-    "RAID_ELITE": { "scoreMultiplier": 1.16, "damageMultiplier": 1.36, "rewardMultiplier": 1.34, "maxReplayTokens": 8 },
-    "RAID_ASCENDED": { "scoreMultiplier": 1.25, "damageMultiplier": 1.55, "rewardMultiplier": 1.55, "maxReplayTokens": 9 },
-    "RAID_MYTHIC": { "scoreMultiplier": 1.36, "damageMultiplier": 1.82, "rewardMultiplier": 1.8, "maxReplayTokens": 10 }
+    "RAID_NORMAL": {
+      "scoreMultiplier": 1,
+      "damageMultiplier": 1,
+      "rewardMultiplier": 1,
+      "maxReplayTokens": 6
+    },
+    "RAID_HARD": {
+      "scoreMultiplier": 1.08,
+      "damageMultiplier": 1.18,
+      "rewardMultiplier": 1.18,
+      "maxReplayTokens": 7
+    },
+    "RAID_ELITE": {
+      "scoreMultiplier": 1.16,
+      "damageMultiplier": 1.36,
+      "rewardMultiplier": 1.34,
+      "maxReplayTokens": 8
+    },
+    "RAID_ASCENDED": {
+      "scoreMultiplier": 1.25,
+      "damageMultiplier": 1.55,
+      "rewardMultiplier": 1.55,
+      "maxReplayTokens": 9
+    },
+    "RAID_MYTHIC": {
+      "scoreMultiplier": 1.36,
+      "damageMultiplier": 1.82,
+      "rewardMultiplier": 1.8,
+      "maxReplayTokens": 10
+    }
   },
   "approachRules": {
-    "BALANCED": { "scoreBonus": 12, "damageTaken": 3, "turns": 2, "read": "Best default route; strong score without overexposing the active Titan." },
-    "GUARDED": { "scoreBonus": 8, "damageTaken": 1, "turns": 3, "read": "Lower damage and safer carries; costs tempo and top-score ceiling." },
-    "AGGRESSIVE": { "scoreBonus": 3, "damageTaken": 5, "turns": 1, "read": "Fastest clear; risks damage penalties and asks for confident reaction timing." }
+    "BALANCED": {
+      "scoreBonus": 12,
+      "damageTaken": 3,
+      "turns": 2,
+      "read": "Best default route; strong score without overexposing the active Titan."
+    },
+    "GUARDED": {
+      "scoreBonus": 8,
+      "damageTaken": 1,
+      "turns": 3,
+      "read": "Lower damage and safer carries; costs tempo and top-score ceiling."
+    },
+    "AGGRESSIVE": {
+      "scoreBonus": 3,
+      "damageTaken": 5,
+      "turns": 1,
+      "read": "Fastest clear; risks damage penalties and asks for confident reaction timing."
+    }
   },
   "stageProfiles": [
     {
       "stage": 1,
       "name": "Sealfield Approach",
       "goal": "Break the outer seal pillars before rupture lanes compress the approach.",
-      "problemTags": ["SEAL_OBJECTIVE", "LANE_PRESSURE", "OPENING_TEMPO"],
-      "checks": ["sealPillars", "safeLaneRead", "momentumEntry"],
-      "preferredCounters": ["Mobile Titans", "objective burst", "GUARDED if damage carry matters"],
+      "problemTags": [
+        "SEAL_OBJECTIVE",
+        "LANE_PRESSURE",
+        "OPENING_TEMPO"
+      ],
+      "checks": [
+        "sealPillars",
+        "safeLaneRead",
+        "momentumEntry"
+      ],
+      "preferredCounters": [
+        "Mobile Titans",
+        "objective burst",
+        "GUARDED if damage carry matters"
+      ],
       "target": 2,
       "baseScore": 140,
       "carryRisk": "Low damage, high tempo value. Poor clears reduce later score ceiling."
@@ -53,9 +105,21 @@
       "stage": 2,
       "name": "Guardian Interdiction",
       "goal": "Survive the Gate Warden's guard constructs while holding center access.",
-      "problemTags": ["AD_CONTROL", "REACTION_DISCIPLINE", "POSITION_HOLD"],
-      "checks": ["guardBreak", "reactionWindow", "centerControl"],
-      "preferredCounters": ["Defender stance", "reaction success", "BALANCED for score"],
+      "problemTags": [
+        "AD_CONTROL",
+        "REACTION_DISCIPLINE",
+        "POSITION_HOLD"
+      ],
+      "checks": [
+        "guardBreak",
+        "reactionWindow",
+        "centerControl"
+      ],
+      "preferredCounters": [
+        "Defender stance",
+        "reaction success",
+        "BALANCED for score"
+      ],
       "target": 2,
       "baseScore": 132,
       "carryRisk": "Medium damage. Failed reaction discipline raises mastery cost."
@@ -64,9 +128,21 @@
       "stage": 3,
       "name": "Weakness Window",
       "goal": "Expose the Warden's core by forcing terrain interaction at the right beat.",
-      "problemTags": ["WEAKNESS_WINDOW", "TERRAIN_TRIGGER", "BURST_TIMING"],
-      "checks": ["terrainTrigger", "weaknessExpose", "burstTurn"],
-      "preferredCounters": ["Controller Titans", "burst after exposure", "AGGRESSIVE only if healthy"],
+      "problemTags": [
+        "WEAKNESS_WINDOW",
+        "TERRAIN_TRIGGER",
+        "BURST_TIMING"
+      ],
+      "checks": [
+        "terrainTrigger",
+        "weaknessExpose",
+        "burstTurn"
+      ],
+      "preferredCounters": [
+        "Controller Titans",
+        "burst after exposure",
+        "AGGRESSIVE only if healthy"
+      ],
       "target": 1,
       "baseScore": 124,
       "carryRisk": "Low turn count but high misplay penalty. Drives S-rank eligibility."
@@ -75,9 +151,21 @@
       "stage": 4,
       "name": "Gate Destabilization",
       "goal": "Stabilize collapsing Gate lanes while the boss punishes predictable routes.",
-      "problemTags": ["LANE_COLLAPSE", "OBJECTIVE_DENIAL", "ROUTE_VARIETY"],
-      "checks": ["laneSwap", "objectiveHold", "routeDiversity"],
-      "preferredCounters": ["Flexible movement", "Divinity reserve", "GUARDED if carrying damage"],
+      "problemTags": [
+        "LANE_COLLAPSE",
+        "OBJECTIVE_DENIAL",
+        "ROUTE_VARIETY"
+      ],
+      "checks": [
+        "laneSwap",
+        "objectiveHold",
+        "routeDiversity"
+      ],
+      "preferredCounters": [
+        "Flexible movement",
+        "Divinity reserve",
+        "GUARDED if carrying damage"
+      ],
       "target": 2,
       "baseScore": 116,
       "carryRisk": "High damage carry. The safest place to spend defensive tempo."
@@ -86,9 +174,21 @@
       "stage": 5,
       "name": "Divine Enrage",
       "goal": "Finish the Warden during Divine pressure before the Gate fully reopens.",
-      "problemTags": ["BOSS_ENRAGE", "FINAL_REACTION", "EXECUTION_WINDOW"],
-      "checks": ["enrageRead", "finalReaction", "executionWindow"],
-      "preferredCounters": ["Saved Momentum", "Divinity burst", "BALANCED for stable victory"],
+      "problemTags": [
+        "BOSS_ENRAGE",
+        "FINAL_REACTION",
+        "EXECUTION_WINDOW"
+      ],
+      "checks": [
+        "enrageRead",
+        "finalReaction",
+        "executionWindow"
+      ],
+      "preferredCounters": [
+        "Saved Momentum",
+        "Divinity burst",
+        "BALANCED for stable victory"
+      ],
       "target": 1,
       "baseScore": 108,
       "carryRisk": "Final damage and turn penalties decide reward quality."
@@ -98,14 +198,20 @@
     "stageScore": "max(40, round((stage.baseScore + approach.scoreBonus) * tier.scoreMultiplier))",
     "damageTaken": "round(approach.damageTaken * tier.damageMultiplier)",
     "finalScore": "max(0, totalStageScore - totalDamageTaken * 6 - totalTurns * 2)",
-    "qualityBands": { "S": 560, "A": 500, "B": 430, "C": 0 }
+    "qualityBands": {
+      "S": 560,
+      "A": 500,
+      "B": 430,
+      "C": 0
+    }
   },
   "economyCaps": {
     "firstClearBonusTokens": 8,
     "replayScalar": 0.42,
-    "weeklyReplayTokenCapByTier": "tierCaps[tier].maxReplayTokens",
-    "signatureAlloy": "quality material band scaled by tier reward multiplier",
-    "masteryXp": "score quality plus stage completion count; no purchasable power shortcut"
+    "weeklyReplayTokenCapByTier": "economyTuning.weeklyReplayTokenCaps[tier]",
+    "signatureAlloy": "qualityRewardTable material band scaled by tier reward multiplier and replay scalar",
+    "masteryXp": "active Titan only; score divided by firstClearDivisor or replayDivisor, then quality scalar",
+    "masterySeals": "first clear always 1; S-grade replay at most 1; all other replays 0"
   },
   "bosses": [
     {
@@ -143,10 +249,11 @@
     }
   ],
   "acceptanceGates": [
-    "Raid system record exposes status IMPLEMENTED, five stageProfiles, tierCaps, approachRules, scoreFormula, and economyCaps.",
+    "Raid system record exposes status IMPLEMENTED, five stageProfiles, tierCaps, approachRules, scoreFormula, economyCaps, and economyTuning.",
     "Command Hub runtime reads stageProfiles/baseScore and displays problem tags, preferred counters, and carry risk per stage.",
     "Browser smoke clears all five stages deterministically with one active Titan and verifies raid economy output.",
-    "Validation fails if paid power, live PvP, hidden random rolls, or squad fanout appear in the initial raid framework."
+    "Validation fails if paid power, live PvP, hidden random rolls, or squad fanout appear in the initial raid framework.",
+    "TG-DEV-025 raid economy tuning is IMPLEMENTED and validates first-clear bonuses, replay caps, mastery credit, and anti-pay-to-win policy."
   ],
   "forbiddenInitialScope": [
     "livePvP",
@@ -154,5 +261,94 @@
     "hiddenRandomRolls",
     "multiTitanSquadControl",
     "uncappedReplayRewards"
-  ]
+  ],
+  "economyTuning": {
+    "status": "IMPLEMENTED",
+    "designGoal": "Reward clean solo-Titan raid execution without selling power, uncapped repeat currency, or mandatory ownership shortcuts.",
+    "qualityBands": {
+      "S": 560,
+      "A": 500,
+      "B": 430,
+      "C": 0
+    },
+    "qualityRewardTable": {
+      "S": {
+        "tokenBase": 16,
+        "signatureAlloy": 5,
+        "masteryXpScalar": 1.0,
+        "gearMaterialBand": "flawless"
+      },
+      "A": {
+        "tokenBase": 13,
+        "signatureAlloy": 4,
+        "masteryXpScalar": 0.86,
+        "gearMaterialBand": "refined"
+      },
+      "B": {
+        "tokenBase": 10,
+        "signatureAlloy": 3,
+        "masteryXpScalar": 0.72,
+        "gearMaterialBand": "stable"
+      },
+      "C": {
+        "tokenBase": 7,
+        "signatureAlloy": 2,
+        "masteryXpScalar": 0.58,
+        "gearMaterialBand": "salvaged"
+      }
+    },
+    "firstClear": {
+      "tokenBonus": 8,
+      "ascensionEmber": 1,
+      "titanRelics": 2,
+      "masterySeals": 1,
+      "payoutScalar": 1.0
+    },
+    "replay": {
+      "payoutScalar": 0.42,
+      "minReplayTokens": 2,
+      "weeklyDecayPerClear": 1,
+      "nonSReplayMasterySeals": 0,
+      "sReplayMasterySeals": 1
+    },
+    "tierRewardMultipliers": {
+      "RAID_NORMAL": 1.0,
+      "RAID_HARD": 1.18,
+      "RAID_ELITE": 1.34,
+      "RAID_ASCENDED": 1.55,
+      "RAID_MYTHIC": 1.8
+    },
+    "weeklyReplayTokenCaps": {
+      "RAID_NORMAL": 6,
+      "RAID_HARD": 7,
+      "RAID_ELITE": 8,
+      "RAID_ASCENDED": 9,
+      "RAID_MYTHIC": 10
+    },
+    "masteryCredit": {
+      "firstClearDivisor": 18,
+      "replayDivisor": 40,
+      "qualityScalarApplied": true,
+      "appliesToActiveTitanOnly": true
+    },
+    "materialCaps": {
+      "signatureAlloyMinimum": 1,
+      "masterySealReplayCap": 1,
+      "materialHistoryRows": 12
+    },
+    "antiPayToWinRules": [
+      "Raid rewards are earned from deterministic clears only.",
+      "Paid power shortcuts are forbidden.",
+      "Replay payout is capped and decays by weekly clear count.",
+      "Mastery credit applies only to the one active Titan used in the clear.",
+      "First-clear rewards are granted once per raid and tier."
+    ],
+    "acceptanceGates": [
+      "Runtime reads economyTuning.qualityRewardTable and weeklyReplayTokenCaps.",
+      "First clear receives token bonus, Ember, Relics, and one Mastery Seal.",
+      "Replay clear receives reduced scalar payout and cannot exceed tier weekly token cap.",
+      "S replay can earn at most one Mastery Seal; non-S replays earn none.",
+      "Validation fails on paidPowerShortcut, uncappedReplayRewards, or purchasable raid power."
+    ]
+  }
 }

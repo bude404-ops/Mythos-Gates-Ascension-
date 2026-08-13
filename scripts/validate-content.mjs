@@ -308,7 +308,7 @@ if(hub.status !== 'IMPLEMENTED' || hub.canonFirst !== true) fail('Command Hub co
 if(!Array.isArray(hub.startupPipeline) || hub.startupPipeline.length < 9 || hub.startupPipeline[0] !== 'BOOT' || !hub.startupPipeline.includes('MAIN_COMMAND_HUB')) fail('Command Hub startup pipeline incomplete');
 
 const raidSystem = data.raidSystem;
-if(!raidSystem || raidSystem.status !== 'IMPLEMENTED' || raidSystem.taskId !== 'TG-DEV-024') fail('Raid system framework must be implemented for TG-DEV-024');
+if(!raidSystem || raidSystem.status !== 'IMPLEMENTED' || !['TG-DEV-024','TG-DEV-025'].includes(raidSystem.taskId)) fail('Raid system framework/economy must be implemented for TG-DEV-024/TG-DEV-025');
 if(!Array.isArray(raidSystem.stageProfiles) || raidSystem.stageProfiles.length !== 5) fail('Raid framework must expose five deterministic stage profiles');
 for (const s of raidSystem.stageProfiles) {
   if(!Array.isArray(s.problemTags) || s.problemTags.length < 2) fail(`Raid stage ${s.stage} missing tactical problem tags`);
@@ -318,6 +318,16 @@ for (const s of raidSystem.stageProfiles) {
 for (const token of ['RAID_NORMAL','RAID_HARD','RAID_ELITE','RAID_ASCENDED','RAID_MYTHIC']) if(!raidSystem.tierCaps?.[token]) fail(`Raid tier cap missing ${token}`);
 for (const token of ['BALANCED','GUARDED','AGGRESSIVE']) if(!raidSystem.approachRules?.[token]) fail(`Raid approach rule missing ${token}`);
 for (const forbidden of ['livePvP','paidPowerShortcut','hiddenRandomRolls','multiTitanSquadControl','uncappedReplayRewards']) if(!raidSystem.forbiddenInitialScope?.includes(forbidden)) fail(`Raid forbidden scope missing ${forbidden}`);
+if(raidSystem.economyTuning?.status !== 'IMPLEMENTED') fail('Raid economy tuning must be IMPLEMENTED');
+for (const q of ['S','A','B','C']) {
+  const row = raidSystem.economyTuning?.qualityRewardTable?.[q];
+  if(!row || !row.tokenBase || !row.signatureAlloy || !row.masteryXpScalar || !row.gearMaterialBand) fail(`Raid economy quality table missing ${q}`);
+}
+if(raidSystem.economyTuning.firstClear?.tokenBonus !== 8 || raidSystem.economyTuning.firstClear?.masterySeals !== 1) fail('Raid first-clear economy tuning invalid');
+if(raidSystem.economyTuning.replay?.payoutScalar >= 0.5 || raidSystem.economyTuning.replay?.minReplayTokens < 1) fail('Raid replay scalar/cap tuning invalid');
+for (const tier of ['RAID_NORMAL','RAID_HARD','RAID_ELITE','RAID_ASCENDED','RAID_MYTHIC']) if(!raidSystem.economyTuning.weeklyReplayTokenCaps?.[tier]) fail(`Raid economy weekly cap missing ${tier}`);
+for (const rule of ['Paid power shortcuts are forbidden.','Replay payout is capped and decays by weekly clear count.','Mastery credit applies only to the one active Titan used in the clear.']) if(!raidSystem.economyTuning.antiPayToWinRules?.includes(rule)) fail(`Raid anti-pay-to-win rule missing: ${rule}`);
+if(!raidSystem.acceptanceGates?.some(g => g.includes('TG-DEV-025 raid economy tuning is IMPLEMENTED'))) fail('Raid economy acceptance gate missing TG-DEV-025');
 if(!hub.defaultPlayerState?.selectedTitans?.every(id => titanIds.has(id))) fail('Command Hub default PlayerState references invalid Titan');
 if(!missionIds.has(hub.defaultPlayerState?.campaignProgress?.currentMissionId)) fail('Command Hub default PlayerState references invalid mission');
 if((hub.navigationTabs || []).length !== 5) fail('Command Hub must expose five bottom navigation sections');
