@@ -11,6 +11,7 @@ import {
   evaluateObjectives,
   runReducerScript
 } from '../game/solo-battle-engine.mjs';
+import { resolveMissionScaling, scaleEnemyForMission, createBattleState as createBrowserBattleState } from '../game/browser-battle-engine.mjs';
 
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const titans = read('data/titans.json');
@@ -92,4 +93,18 @@ const scriptedAgain = runReducerScript(createInitialSoloBattleState({ battleId: 
 ]);
 assert.deepEqual(scripted, scriptedAgain, 'reducer script must be deterministic');
 assert.ok(scripted.resources.momentum <= 100 && scripted.resources.divinity <= 100);
-console.log(JSON.stringify({ ok: true, soloBattleReducers: 'PASS', events: state.eventLog.length + scripted.eventLog.length, finalPhase: state.phase, telemetry: state.telemetry }, null, 2));
+const normalScaling = resolveMissionScaling({ mission:{ id:'TG-SCALE-NORMAL', recommendedPower:135, campaignType:'Normal' } });
+const eliteScaling = resolveMissionScaling({ mission:{ id:'TG-SCALE-ELITE', recommendedPower:1020, campaignType:'Elite' } });
+assert.equal(normalScaling.tier, 'NORMAL');
+assert.equal(eliteScaling.tier, 'ELITE');
+assert.ok(normalScaling.powerScalar <= 1.12, 'normal campaign scaling must stay capped');
+assert.ok(eliteScaling.powerScalar <= 1.22, 'elite campaign scaling must stay capped');
+const scaledSwarm = scaleEnemyForMission(enemyRoster[0], normalScaling, 0);
+const scaledBrute = scaleEnemyForMission(enemyRoster.find(e=>e.combatRole==='BRUTE') || enemyRoster[2], normalScaling, 2);
+assert.equal(scaledSwarm.scalingProfile.tier, 'NORMAL');
+assert.ok(scaledBrute.scalingProfile.threatBudget >= scaledSwarm.scalingProfile.threatBudget, 'brute should carry higher threat budget than swarmer');
+const browserBattle = createBrowserBattleState({ battleId:'SCALING-SMOKE', missionId:'TG-SCALE-NORMAL', titan, enemies:enemyRoster, terrain, objectives, scaling:normalScaling });
+assert.equal(browserBattle.telemetry.enemyScaling.tier, 'NORMAL');
+assert.ok(browserBattle.telemetry.enemyScaling.threatBudget > 0);
+assert.ok(browserBattle.enemies.every(e=>e.scalingProfile?.powerScalar === normalScaling.powerScalar));
+console.log(JSON.stringify({ ok: true, soloBattleReducers: 'PASS', events: state.eventLog.length + scripted.eventLog.length, finalPhase: state.phase, telemetry: state.telemetry, enemyScaling: browserBattle.telemetry.enemyScaling }, null, 2));

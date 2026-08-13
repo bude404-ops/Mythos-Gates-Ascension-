@@ -2,10 +2,56 @@ export const PHASES = Object.freeze({ PLAYER:'PLAYER_PHASE', ENEMY_INTENT:'ENEMY
 export const STANCES = Object.freeze({ GUARDIAN:'GUARDIAN', ASSAULT:'ASSAULT', ASCENDANT:'ASCENDANT' });
 const clone = value => JSON.parse(JSON.stringify(value));
 const clamp = (value,min=0,max=100)=>Math.max(min,Math.min(max,Math.round(value)));
+const budgetClamp = (value,min,max)=>Math.max(min,Math.min(max,Number(value.toFixed ? value.toFixed(3) : value)));
 const key = pos => `${pos.x},${pos.y}`;
 const distance = (a,b)=>Math.abs(a.x-b.x)+Math.abs(a.y-b.y);
 const living = s => s.enemies.filter(e=>e.hp>0);
 const currentSpace = s => s.terrain.spaces.find(sp=>key(sp.position)===key(s.titan.position));
+const ARCHETYPE_BUDGETS = Object.freeze({
+  SWARMER:{ hp:0.82, damage:0.82, armor:0.75, resistance:0.75, threat:1, countPressure:1.15, mechanics:['formation spacing','execution routing'] },
+  BRUTE:{ hp:1.25, damage:1.18, armor:1.28, resistance:1.0, threat:2.1, countPressure:0.9, mechanics:['guard break','objective denial'] },
+  HUNTER:{ hp:0.92, damage:1.05, armor:0.8, resistance:1.0, threat:1.4, countPressure:1.0, mechanics:['range pressure','line of sight'] },
+  CONTROLLER:{ hp:1.0, damage:0.86, armor:0.95, resistance:1.18, threat:1.7, countPressure:0.9, mechanics:['zone denial','objective routing'] },
+  DISRUPTOR:{ hp:0.95, damage:0.9, armor:0.86, resistance:1.22, threat:1.8, countPressure:0.85, mechanics:['resource drain','reaction bait'] },
+  GUARDIAN:{ hp:1.35, damage:0.78, armor:1.45, resistance:1.2, threat:1.6, countPressure:0.75, mechanics:['intercept','shield aura'] },
+  EXECUTIONER:{ hp:1.05, damage:1.28, armor:0.9, resistance:0.9, threat:2.0, countPressure:0.8, mechanics:['wound threshold','pursuit'] },
+  ELITE:{ hp:1.22, damage:1.12, armor:1.1, resistance:1.1, threat:2.4, countPressure:0.65, mechanics:['extra mechanic layer','reaction behavior'] },
+  CHAMPION:{ hp:1.55, damage:1.28, armor:1.25, resistance:1.25, threat:3.5, countPressure:0.45, mechanics:['phase count','arena rules'] },
+  ENEMY_TITAN:{ hp:1.8, damage:1.38, armor:1.35, resistance:1.35, threat:4.6, countPressure:0.35, mechanics:['stance mirror','divine phase'] },
+  PRESSURE:{ hp:1.0, damage:1.0, armor:1.0, resistance:1.0, threat:1.2, countPressure:1.0, mechanics:['baseline pressure'] }
+});
+export function resolveMissionScaling({ mission={}, difficulty=null, dynamic=false }={}){
+  const power=Number(mission.recommendedPower||mission.power||135);
+  const campaignType=String(difficulty||mission.campaignType||mission.type||'Normal').toUpperCase();
+  const tier=campaignType.includes('ELITE')?'ELITE':campaignType.includes('HARD')?'HARD':campaignType.includes('RAID')?'RAID':'NORMAL';
+  const missionIndex=Math.max(1, Math.round((power-100)/35)+1);
+  const band=missionIndex<=20?'early':missionIndex<=60?'mid':'late';
+  const tierScalar=tier==='ELITE'?1.12:tier==='HARD'?1.08:tier==='RAID'?1.18:1;
+  const dynamicScalar=dynamic?1.1:1;
+  const cap=tier==='RAID'?1.28:tier==='ELITE'?1.22:1.12;
+  const powerScalar=budgetClamp((0.82 + power/650) * tierScalar * dynamicScalar, 0.85, cap);
+  return { id:`SCALING-${mission.id||'ADHOC'}`, missionId:mission.id||null, tier, band, recommendedPower:power, missionIndex, enemyLevelDelta:tier==='ELITE'?3:tier==='RAID'?5:1, powerScalar, dynamicCap:dynamic?'+10% capped':'fixed campaign band', philosophy:'tactical problems before raw statistics' };
+}
+export function scaleEnemyForMission(enemy, scaling, index=0){
+  const role=String(enemy?.combatRole||enemy?.aiProfile?.archetype||'PRESSURE').toUpperCase();
+  const budget=ARCHETYPE_BUDGETS[role] || ARCHETYPE_BUDGETS.PRESSURE;
+  const stats=enemy?.stats||{};
+  const countPenalty=budgetClamp(1 - (index * 0.035 * (budget.countPressure||1)), 0.82, 1);
+  const scalar=scaling?.powerScalar||1;
+  const scaled=clone(enemy);
+  scaled.scalingProfile={ archetype:role, tier:scaling?.tier||'NORMAL', band:scaling?.band||'early', powerScalar:scalar, countPenalty, threatBudget:budget.threat, mechanics:budget.mechanics, dynamicCap:scaling?.dynamicCap||'fixed campaign band' };
+  scaled.stats={...stats,
+    hp:Math.max(6, Math.round((stats.hp||18) * scalar * budget.hp * countPenalty)),
+    damage:Math.max(1, Math.round((stats.damage||6) * scalar * budget.damage)),
+    armor:Math.max(0, Math.round((stats.armor||4) * scalar * budget.armor)),
+    resistance:Math.max(0, Math.round((stats.resistance||3) * scalar * budget.resistance)),
+    range:stats.range||1,
+    movement:stats.movement||1,
+    threatWeight:budget.threat
+  };
+  return scaled;
+}
+
 const profileFor = e => {
   const role = String(e.archetype || e.aiProfile?.archetype || '').toUpperCase();
   if(role === 'SWARMER') return { id:'HOLLOW_SWARMER', label:'Swarm Pressure', reactionType:'DODGE', preferredRange:1, movementBias:'close', telegraph:'Rushes isolated Titans and forces reaction spending.' };
@@ -49,12 +95,15 @@ export function buildStarterTerrain(){
   for(let y=1;y<=5;y++) for(let x=1;x<=5;x++) spaces.push({ position:{x,y}, type:y>=4?'SOLAR_SEAL_COURT':x>=4&&y>=3?'GATE_MOUTH':x<=2&&y<=2?'SUNKEN_SUNLIT_STONE':'BROKEN_THRESHOLD', illuminated:(x<=2&&y<=2)||(y===4&&x<=3), hazard:(x===4&&y===3)||(x===5&&y===3)?'SOLAR_JUDGMENT':null });
   return { grid:{width:5,height:5}, spaces };
 }
-export function createBattleState({ battleId='TG-BATTLE-FIRST-GATE-001', missionId='TG-F01-C01-M01', titan, enemies, terrain=buildStarterTerrain(), objectives, seed=777 }){
+export function createBattleState({ battleId='TG-BATTLE-FIRST-GATE-001', missionId='TG-F01-C01-M01', titan, enemies, terrain=buildStarterTerrain(), objectives, seed=777, scaling=null }){
   if(!titan?.id) throw new Error('Battle requires one active Titan.');
   if(!Array.isArray(enemies)||!enemies.length) throw new Error('Battle requires enemies.');
   const tStats=titan.stats||{};
-  const state={ battleId, missionId, seed, round:1, phase:PHASES.PLAYER, titan:{ id:titan.id, name:titan.name, role:titan.role, hp:tStats.hp||42, maxHp:tStats.hp||42, attack:tStats.attack||11, armor:tStats.armor||8, resistance:tStats.resistance||6, accuracy:tStats.accuracy||85, range:tStats.range||1, speed:tStats.speed||2, position:{x:1,y:1}, stance:STANCES.GUARDIAN, status:[], cooldowns:{}, ascended:false, actionsTakenThisRound:[] }, resources:{momentum:0,divinity:0,solarCharge:0}, enemies:enemies.map((e,i)=>{ const role=e.combatRole||e.aiProfile?.archetype||'PRESSURE'; const base={ id:e.id, instanceId:`${e.id}-${i+1}`, name:e.name, archetype:role, abilities:e.abilities||[], aiPriority:e.aiProfile?.priority||[], mapBehavior:e.mapBehavior||'', hp:e.stats?.hp||18, maxHp:e.stats?.hp||18, damage:e.stats?.damage||6, armor:e.stats?.armor||4, resistance:e.stats?.resistance||3, range:e.stats?.range||1, movement:e.stats?.movement||1, threatWeight:e.stats?.threatWeight||1, position:{x:4+(i%2),y:3+Math.floor(i/2)}, intent:null, vulnerable:false, status:[] }; return { ...base, aiProfile:profileFor(base) }; }), terrain:clone(terrain), objectives:clone(objectives||[{id:'stabilize_solar_seal_a',label:'Stabilize Solar Seal',progress:0,requiredProgress:2,status:'ACTIVE'},{id:'destroy_hollow_anchor',label:'Destroy Hollow Anchor',progress:0,requiredProgress:1,status:'ACTIVE'}]), reactionWindow:null, eventLog:[], telemetry:{turns:1,damageDealt:0,damageTaken:0,reactionsOpened:0,reactionsResolved:0,executions:0,objectiveProgress:0,hazardDamage:0,enemyTelegraphs:0,enemyIntentCounts:{},resourceGain:{momentum:0,divinity:0,solarCharge:0},resourceSpend:{momentum:0,divinity:0,solarCharge:0},sequence:0,reactionSuccesses:0,reactionDeclines:0,objectiveCompletions:0,actionTypeCounts:{},terrainTouches:{},routeSpacesVisited:[]} };
-  log(state,'BATTLE_START',{battleId,missionId,titan:titan.id,enemies:state.enemies.map(e=>e.instanceId)});
+  const appliedScaling=scaling || resolveMissionScaling({ mission:{id:missionId,recommendedPower:135,campaignType:'Normal'} });
+  const scaledEnemies=enemies.map((e,i)=>e?.scalingProfile?e:scaleEnemyForMission(e,appliedScaling,i));
+  const state={ battleId, missionId, seed, round:1, phase:PHASES.PLAYER, titan:{ id:titan.id, name:titan.name, role:titan.role, hp:tStats.hp||42, maxHp:tStats.hp||42, attack:tStats.attack||11, armor:tStats.armor||8, resistance:tStats.resistance||6, accuracy:tStats.accuracy||85, range:tStats.range||1, speed:tStats.speed||2, position:{x:1,y:1}, stance:STANCES.GUARDIAN, status:[], cooldowns:{}, ascended:false, actionsTakenThisRound:[] }, resources:{momentum:0,divinity:0,solarCharge:0}, scaling:appliedScaling, enemies:scaledEnemies.map((e,i)=>{ const role=e.combatRole||e.aiProfile?.archetype||e.scalingProfile?.archetype||'PRESSURE'; const base={ id:e.id, instanceId:`${e.id}-${i+1}`, name:e.name, archetype:role, abilities:e.abilities||[], aiPriority:e.aiProfile?.priority||[], mapBehavior:e.mapBehavior||'', hp:e.stats?.hp||18, maxHp:e.stats?.hp||18, damage:e.stats?.damage||6, armor:e.stats?.armor||4, resistance:e.stats?.resistance||3, range:e.stats?.range||1, movement:e.stats?.movement||1, threatWeight:e.stats?.threatWeight||e.scalingProfile?.threatBudget||1, scalingProfile:e.scalingProfile||null, position:{x:4+(i%2),y:3+Math.floor(i/2)}, intent:null, vulnerable:false, status:[] }; return { ...base, aiProfile:profileFor(base) }; }), terrain:clone(terrain), objectives:clone(objectives||[{id:'stabilize_solar_seal_a',label:'Stabilize Solar Seal',progress:0,requiredProgress:2,status:'ACTIVE'},{id:'destroy_hollow_anchor',label:'Destroy Hollow Anchor',progress:0,requiredProgress:1,status:'ACTIVE'}]), reactionWindow:null, eventLog:[], telemetry:{turns:1,damageDealt:0,damageTaken:0,reactionsOpened:0,reactionsResolved:0,executions:0,objectiveProgress:0,hazardDamage:0,enemyTelegraphs:0,enemyIntentCounts:{},enemyScaling:{tier:appliedScaling.tier,band:appliedScaling.band,powerScalar:appliedScaling.powerScalar,threatBudget:Number(scaledEnemies.reduce((sum,e)=>sum+(e.scalingProfile?.threatBudget||1),0).toFixed(2)),archetypes:{}},resourceGain:{momentum:0,divinity:0,solarCharge:0},resourceSpend:{momentum:0,divinity:0,solarCharge:0},sequence:0,reactionSuccesses:0,reactionDeclines:0,objectiveCompletions:0,actionTypeCounts:{},terrainTouches:{},routeSpacesVisited:[]} };
+  for(const e of state.enemies){ const a=e.scalingProfile?.archetype||e.archetype||'PRESSURE'; state.telemetry.enemyScaling.archetypes[a]=(state.telemetry.enemyScaling.archetypes[a]||0)+1; }
+  log(state,'BATTLE_START',{battleId,missionId,titan:titan.id,enemies:state.enemies.map(e=>e.instanceId),scaling:state.telemetry.enemyScaling});
   return state;
 }
 export function applyTitanAction(input,action){
