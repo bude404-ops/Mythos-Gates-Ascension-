@@ -10,7 +10,7 @@
     "build": "npm run index && npm run validate && node scripts/build-pages.mjs",
     "test": "npm run build",
     "sync:github": "node scripts/sync-github.mjs",
-    "precommit:verify": "npm run audit:continuity && npm run build && npm run index:check && node scripts/visual-qa-smoke.mjs && node scripts/validate-3d-blueprints.mjs && npm run test:solo-battle && npm run test:solo-vertical-slice && npm run test:battlefield-telemetry && npm run test:battlefield-runtime && npm run test:campaign-playflow && npm run test:async-arena && npm run test:command-hub && npm run test:creature-behavior && npm run test:playable-battle-ui && node scripts/secret-scan.mjs",
+    "precommit:verify": "npm run audit:continuity && npm run build && npm run assets:verify && npm run index:check && node scripts/visual-qa-smoke.mjs && node scripts/validate-3d-blueprints.mjs && npm run test:solo-battle && npm run test:solo-vertical-slice && npm run test:battlefield-telemetry && npm run test:battlefield-runtime && npm run test:campaign-playflow && npm run test:async-arena && npm run test:command-hub && npm run test:creature-behavior && npm run test:playable-battle-ui && node scripts/secret-scan.mjs",
     "index:check": "node scripts/check-index-fresh.mjs",
     "audit:continuity": "node scripts/audit-continuity-balance.mjs",
     "test:solo-battle": "node scripts/test-solo-battle-reducers.mjs",
@@ -24,7 +24,9 @@
     "test:battlefield-runtime": "node scripts/test-battlefield-runtime.mjs",
     "assets:detect": "node scripts/detect-github-assets.mjs",
     "assets:validate": "node scripts/validate-github-assets.mjs",
-    "assets:sync": "npm run assets:detect && npm run assets:validate"
+    "assets:sync": "npm run assets:detect && npm run assets:validate",
+    "assets:test-intake": "node scripts/test-github-asset-intake.mjs",
+    "assets:verify": "npm run assets:sync && npm run assets:test-intake"
   },
   "engines": {
     "node": ">=20"
