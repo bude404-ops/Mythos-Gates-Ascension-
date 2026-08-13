@@ -6,6 +6,7 @@ Titans Gate is a seven-Realm, Titan-only mythological tactical RPG.
 
 The current canon is built around:
 
+- 8 storyline faction layers: 7 playable mythological Realms plus 1 non-playable campaign threat layer
 - 7 playable mythological Realms
 - 9 Titans per playable Realm
 - 5-Titan strike forces
@@ -29,7 +30,7 @@ Earth myths are human interpretations of real extradimensional beings.
 
 ## Gameplay Canon Lock
 
-Each playable Realm has 9 Titans.
+Each playable Realm has 9 Titans. The eighth storyline layer is the campaign threat layer and does not add a normal playable roster.
 
 Players build 5-Titan strike forces from a Realm's Titan collection or from approved campaign strike-force rules.
 
