@@ -446,7 +446,17 @@ if(assetRegistry.status !== 'IMPLEMENTED' || !Array.isArray(assetRegistry.assets
 for (const asset of assetRegistry.assets) {
   if(!asset.assetId || !asset.entityId || !asset.assetType || !asset.path || !asset.status || !asset.fallback) fail(`Invalid asset registry row ${asset.assetId || 'unknown'}`);
   if(!assetRegistry.assetStatuses.includes(asset.status)) fail(`${asset.assetId}: invalid asset status`);
+  if(asset.status === 'FINAL' && (!asset.finalPath || !asset.approvedForRuntime || !asset.provenance)) fail(`${asset.assetId}: FINAL asset missing integration provenance`);
 }
+const finalArt = assetRegistry.finalArtIntegration;
+if(finalArt?.status !== 'IMPLEMENTED') fail('Command Hub final art integration manifest missing');
+const finalBg = assetRegistry.assets.filter(a => a.assetType === 'COMMAND_HUB_BACKGROUND' && a.status === 'FINAL').length;
+const finalGates = assetRegistry.assets.filter(a => a.assetType === 'GATE' && a.status === 'FINAL').length;
+const finalStarterTitans = assetRegistry.assets.filter(a => a.assetType === 'TITAN_PRESENTATION' && a.status === 'FINAL' && ['TG-TITAN-001','TG-TITAN-003','TG-TITAN-004'].includes(a.entityId)).length;
+if(finalBg < data.factions.length) fail('Command Hub final art integration missing faction backgrounds');
+if(finalGates < data.realmCodex.length) fail('Command Hub final art integration missing realm gates');
+if(finalStarterTitans !== 3) fail('Command Hub final art integration missing starter Titan slots');
+if(!hub.commandHubFinalArtIntegration || hub.commandHubFinalArtIntegration.status !== 'IMPLEMENTED') fail('Command Hub contract missing final art integration block');
 const tactical = fs.readFileSync(path.join(root,'game/tactical-map-prototype.html'),'utf8');
 for (const token of ['__TG_TACTICAL_MAP_READY__','const REALMS','const TITANS','function getMovableTiles','function enemyTurn','toggleCamera','realm-selector']) if(!tactical.includes(token)) fail(`Tactical prototype missing ${token}`);
 if(!data.visualScreens.some(s => s.id === 'TG-SCREEN-TACTICAL-MAP-PROTOTYPE' && s.slug === 'tactical-map-prototype')) fail('Visual QA missing tactical map prototype screen');

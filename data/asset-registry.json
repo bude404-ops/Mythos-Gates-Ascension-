@@ -1,7 +1,7 @@
 {
   "id": "TG-ASSET-REGISTRY-001",
-  "version": "1.0.0",
-  "generated": "2026-08-12T23:10:00Z",
+  "version": "1.1.0",
+  "generated": "2026-08-13T00:00:00Z",
   "status": "IMPLEMENTED",
   "rootFolders": [
     "assets/art/ui",
@@ -31,20 +31,28 @@
       "entityId": "TG-FACTION-001",
       "assetType": "COMMAND_HUB_BACKGROUND",
       "path": "assets/art/environments/aten-ra/command-hub-background.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/backgrounds/generic-gate-hub.placeholder.webp",
-      "requirements": "white-gold solar discs, obsidian-blue shadows, colossal pylons, papyrus circuitry, radiant court armor"
+      "requirements": "white-gold solar discs, obsidian-blue shadows, colossal pylons, papyrus circuitry, radiant court armor",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/environments/aten-ra/command-hub-background.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-GATE-TG-FACTION-001",
       "entityId": "TG-REALM-001",
       "assetType": "GATE",
       "path": "assets/art/gates/aten-ra/realm-gate.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/gates/generic-massive-gate.placeholder.webp",
-      "requirements": "The Sun-Scale Gate"
+      "requirements": "The Sun-Scale Gate",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/gates/aten-ra/realm-gate.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-ICON-TG-FACTION-001",
@@ -61,20 +69,28 @@
       "entityId": "TG-FACTION-002",
       "assetType": "COMMAND_HUB_BACKGROUND",
       "path": "assets/art/environments/asgardian/command-hub-background.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/backgrounds/generic-gate-hub.placeholder.webp",
-      "requirements": "stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs"
+      "requirements": "stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/environments/asgardian/command-hub-background.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-GATE-TG-FACTION-002",
       "entityId": "TG-REALM-002",
       "assetType": "GATE",
       "path": "assets/art/gates/asgardian/realm-gate.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/gates/generic-massive-gate.placeholder.webp",
-      "requirements": "The Thunder-Oath Gate"
+      "requirements": "The Thunder-Oath Gate",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/gates/asgardian/realm-gate.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-ICON-TG-FACTION-002",
@@ -91,20 +107,28 @@
       "entityId": "TG-FACTION-003",
       "assetType": "COMMAND_HUB_BACKGROUND",
       "path": "assets/art/environments/olympian/command-hub-background.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/backgrounds/generic-gate-hub.placeholder.webp",
-      "requirements": "white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds"
+      "requirements": "white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/environments/olympian/command-hub-background.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-GATE-TG-FACTION-003",
       "entityId": "TG-REALM-003",
       "assetType": "GATE",
       "path": "assets/art/gates/olympian/realm-gate.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/gates/generic-massive-gate.placeholder.webp",
-      "requirements": "The Laurel-Star Gate"
+      "requirements": "The Laurel-Star Gate",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/gates/olympian/realm-gate.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-ICON-TG-FACTION-003",
@@ -121,20 +145,28 @@
       "entityId": "TG-FACTION-004",
       "assetType": "COMMAND_HUB_BACKGROUND",
       "path": "assets/art/environments/kami/command-hub-background.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/backgrounds/generic-gate-hub.placeholder.webp",
-      "requirements": "torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms"
+      "requirements": "torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/environments/kami/command-hub-background.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-GATE-TG-FACTION-004",
       "entityId": "TG-REALM-004",
       "assetType": "GATE",
       "path": "assets/art/gates/kami/realm-gate.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/gates/generic-massive-gate.placeholder.webp",
-      "requirements": "The Spirit-Moon Gate"
+      "requirements": "The Spirit-Moon Gate",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/gates/kami/realm-gate.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-ICON-TG-FACTION-004",
@@ -151,20 +183,28 @@
       "entityId": "TG-FACTION-005",
       "assetType": "COMMAND_HUB_BACKGROUND",
       "path": "assets/art/environments/tuatha/command-hub-background.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/backgrounds/generic-gate-hub.placeholder.webp",
-      "requirements": "emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist"
+      "requirements": "emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/environments/tuatha/command-hub-background.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-GATE-TG-FACTION-005",
       "entityId": "TG-REALM-005",
       "assetType": "GATE",
       "path": "assets/art/gates/tuatha/realm-gate.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/gates/generic-massive-gate.placeholder.webp",
-      "requirements": "The Thorn-Memory Gate"
+      "requirements": "The Thorn-Memory Gate",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/gates/tuatha/realm-gate.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-ICON-TG-FACTION-005",
@@ -181,20 +221,28 @@
       "entityId": "TG-FACTION-006",
       "assetType": "COMMAND_HUB_BACKGROUND",
       "path": "assets/art/environments/empyrean/command-hub-background.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/backgrounds/generic-gate-hub.placeholder.webp",
-      "requirements": "white-gold citadels, halo geometry, luminous wings, cathedral engines, glass floors over starless voids"
+      "requirements": "white-gold citadels, halo geometry, luminous wings, cathedral engines, glass floors over starless voids",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/environments/empyrean/command-hub-background.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-GATE-TG-FACTION-006",
       "entityId": "TG-REALM-006",
       "assetType": "GATE",
       "path": "assets/art/gates/empyrean/realm-gate.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/gates/generic-massive-gate.placeholder.webp",
-      "requirements": "The Choir-Axiom Gate"
+      "requirements": "The Choir-Axiom Gate",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/gates/empyrean/realm-gate.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-ICON-TG-FACTION-006",
@@ -211,20 +259,28 @@
       "entityId": "TG-FACTION-007",
       "assetType": "COMMAND_HUB_BACKGROUND",
       "path": "assets/art/environments/infernal-dominion/command-hub-background.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/backgrounds/generic-gate-hub.placeholder.webp",
-      "requirements": "black iron, ember red, volcanic courts, chain halos, horned silhouettes, ash banners, molten sigils"
+      "requirements": "black iron, ember red, volcanic courts, chain halos, horned silhouettes, ash banners, molten sigils",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/environments/infernal-dominion/command-hub-background.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-GATE-TG-FACTION-007",
       "entityId": "TG-REALM-007",
       "assetType": "GATE",
       "path": "assets/art/gates/infernal-dominion/realm-gate.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/gates/generic-massive-gate.placeholder.webp",
-      "requirements": "The Cinder-Wound Gate"
+      "requirements": "The Cinder-Wound Gate",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/gates/infernal-dominion/realm-gate.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-ICON-TG-FACTION-007",
@@ -241,10 +297,14 @@
       "entityId": "TG-TITAN-001",
       "assetType": "TITAN_PRESENTATION",
       "path": "assets/art/titans/aten-ra-solar-law-monolith/command-hub.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/titans/generic-colossal-titan.placeholder.webp",
-      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra."
+      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra.",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/titans/aten-ra-solar-law-monolith/command-hub.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-TITAN-PRESENTATION-TG-TITAN-002",
@@ -261,20 +321,28 @@
       "entityId": "TG-TITAN-003",
       "assetType": "TITAN_PRESENTATION",
       "path": "assets/art/titans/nefra-obsidian-dawn/command-hub.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/titans/generic-colossal-titan.placeholder.webp",
-      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra."
+      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra.",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/titans/nefra-obsidian-dawn/command-hub.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-TITAN-PRESENTATION-TG-TITAN-004",
       "entityId": "TG-TITAN-004",
       "assetType": "TITAN_PRESENTATION",
       "path": "assets/art/titans/orru-prism-verdict/command-hub.placeholder.webp",
-      "version": 1,
-      "status": "PLACEHOLDER",
+      "version": 2,
+      "status": "FINAL",
       "fallback": "assets/art/titans/generic-colossal-titan.placeholder.webp",
-      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra."
+      "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra.",
+      "approvedForRuntime": true,
+      "integration": "COMMAND_HUB_FINAL_ART",
+      "finalPath": "assets/art/titans/orru-prism-verdict/command-hub.final.webp",
+      "provenance": "TG-TASK-COMMAND-HUB-019 final-art integration manifest; fallback retained until imported files exist."
     },
     {
       "assetId": "TG-ASSET-TITAN-PRESENTATION-TG-TITAN-005",
@@ -326,5 +394,22 @@
       "fallback": "assets/art/titans/generic-colossal-titan.placeholder.webp",
       "requirements": "Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Aten Ra."
     }
-  ]
+  ],
+  "integrationPolicy": "Command Hub renders canonical final-art slots first, falls back safely, and exposes provenance for review.",
+  "finalArtIntegration": {
+    "taskId": "TG-TASK-COMMAND-HUB-019",
+    "status": "IMPLEMENTED",
+    "runtime": "game/command-hub-runtime.mjs",
+    "coverage": {
+      "requiredStarterTitans": 3,
+      "requiredFactionBackgrounds": 7,
+      "requiredGates": 7
+    },
+    "rules": [
+      "Approved FINAL assets render ahead of placeholders.",
+      "Fallback art remains mandatory for every visible art slot.",
+      "Runtime exposes art status, source path, and fallback provenance for QA.",
+      "Missing or placeholder art cannot break Command Hub route rendering."
+    ]
+  }
 }
