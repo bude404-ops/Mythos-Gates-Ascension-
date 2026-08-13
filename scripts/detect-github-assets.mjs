@@ -13,8 +13,8 @@ const SUPPORTED = new Map([
   ['.wav', 'audio_future'], ['.ogg', 'audio_future'], ['.vfx', 'vfx_future']
 ]);
 
-const ASSET_ROOTS = ['assets', 'manifests/assets'];
-const IGNORED = new Set(['.gitkeep', 'ASSET_MANIFEST_TEMPLATE.json']);
+const ASSET_ROOTS = ['assets'];
+const IGNORED = new Set(['.gitkeep', 'ASSET_MANIFEST_TEMPLATE.json', 'RESERVED_ASSET_IDS.json', 'manifest.json']);
 
 function readJson(file) { return JSON.parse(fs.readFileSync(file, 'utf8')); }
 function writeJson(file, value) { fs.mkdirSync(path.dirname(file), { recursive: true }); fs.writeFileSync(file, JSON.stringify(value, null, 2) + '\n'); }
@@ -91,8 +91,7 @@ for (const rootName of ASSET_ROOTS) {
     if (IGNORED.has(name)) continue;
     const relativePath = rel(file);
     const ext = path.extname(file).toLowerCase();
-    if (!SUPPORTED.has(ext) && !relativePath.endsWith('.json')) continue;
-    if (relativePath.endsWith('.json') && !relativePath.startsWith('manifests/assets/')) continue;
+    if (!SUPPORTED.has(ext)) continue;
     const assetId = parseAssetId(relativePath);
     const assetType = inferAssetType(relativePath, assetId);
     const bytes = fs.statSync(file).size;

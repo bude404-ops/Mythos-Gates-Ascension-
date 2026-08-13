@@ -1,0 +1,57 @@
+{
+  "schema": "TG_ASSET_MANIFEST_V1",
+  "asset_id": "BATTLEFIELD_006",
+  "asset_type": "battlefield",
+  "canonical_name": "Black Iron Court",
+  "slug": "black-iron-court",
+  "source": "awaiting_external_source",
+  "status": "AWAITING_SOURCE_ASSET",
+  "version": "v000",
+  "versions": {
+    "current": "v000",
+    "previous": [],
+    "archived": []
+  },
+  "source_file": null,
+  "source_slots": {},
+  "game_ready": null,
+  "preview": null,
+  "blueprint": "3D_Blueprints/Battlefields/BATTLEFIELD_006_black-iron-court/metadata.json",
+  "model": null,
+  "material": null,
+  "rig": null,
+  "animations": null,
+  "vfx": null,
+  "battlefield_references": [
+    "BATTLEFIELD_006"
+  ],
+  "dependencies": [],
+  "dependent_assets": [],
+  "lore_reference": "TG-MAP-006",
+  "faction_reference": null,
+  "scale_reference": "MASTER_SCALE",
+  "requirements": {
+    "lod_required": true,
+    "collision_required": true,
+    "rig_required": false,
+    "animation_required": false,
+    "master_scale_required": true
+  },
+  "validation": {
+    "status": "NEEDS_SOURCE_ASSET",
+    "lod_status": "REQUIRED_UNKNOWN",
+    "collision_status": "REQUIRED_UNKNOWN"
+  },
+  "storage_policy": {
+    "original_source_preserved": true,
+    "source_vs_game_ready": "Original source assets are preserved under source/ or external_uri. Optimized runtime outputs belong under game_ready/. Previews belong under preview/ or assets/previews/. Never overwrite source merely to optimize it.",
+    "large_binary_strategy": "Use Git LFS or external_uri for large files; manifests and metadata remain normal Git."
+  },
+  "canon_protection": {
+    "authority": "Existing Canon/Lore system",
+    "unmatched_status": "NEEDS_CANON_REVIEW",
+    "no_lore_invention": true
+  },
+  "created_date": "2026-08-13",
+  "updated_date": "2026-08-13"
+}

@@ -6,6 +6,20 @@ const root = process.cwd();
 const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
 const write = (file, data) => fs.writeFileSync(path.join(root, file), JSON.stringify(data, null, 2) + '\n');
 const hashFile = file => createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex');
+const countFiles = (dir, filename) => {
+  const base = path.join(root, dir);
+  if (!fs.existsSync(base)) return 0;
+  let total = 0;
+  const walk = current => {
+    for (const item of fs.readdirSync(current, { withFileTypes: true })) {
+      const full = path.join(current, item.name);
+      if (item.isDirectory()) walk(full);
+      else if (!filename || item.name === filename) total += 1;
+    }
+  };
+  walk(base);
+  return total;
+};
 const generated = new Date().toISOString().slice(0,10);
 const files = {
   'project.json': 'project',
@@ -141,9 +155,11 @@ counts.artApprovalBatches = artApprovalManifest.approvalBatches.length;
 counts.artApprovedPromptPackages = artApprovalManifest.approvalBatches.reduce((sum, batch) => sum + (batch.promptIds || []).length, 0);
 counts.githubAssetRegistryEntries = githubAssetRegistry.entries.length;
 counts.githubAssetDependencyNodes = githubAssetDependencyGraph.nodes.length;
+counts.githubAssetManifests = countFiles('manifests/assets', 'manifest.json');
+counts.githubReservedAssetIds = read('manifests/assets/RESERVED_ASSET_IDS.json').count || 0;
 const githubAssetStatusCounts = githubAssetRegistry.entries.reduce((acc, asset) => { acc[asset.status] = (acc[asset.status] || 0) + 1; return acc; }, {});
 const githubAssetTypeCounts = githubAssetRegistry.entries.reduce((acc, asset) => { acc[asset.asset_type] = (acc[asset.asset_type] || 0) + 1; return acc; }, {});
-const index = { generated, counts, files: sourceFiles, sourceFileFingerprints, artPromptCategories, artMapPrompts, githubAssetStatusCounts, githubAssetTypeCounts, artApprovalManifest: { status: artApprovalManifest.status, approvalStatus: artApprovalManifest.approvalStatus, gatesClosed: artApprovalManifest.gatesClosed, stillBlocked: artApprovalManifest.stillBlocked, approvedPromptPackages: counts.artApprovedPromptPackages }, blueprint3dSystem: { status: blueprint3dSystem.status, director: blueprint3dSystem.director, registryTotal: blueprint3dRegistry.assets.length, registry: blueprint3dSystem.registry, productionQueue: 'data/3d-production-queue.json', firstHandoffBatch: blueprint3dProductionQueue.firstHandoffBatch.map(item => item.assetId) }, githubAssetRepository: { status: read('data/github-asset-repository.json').status, sourceOfTruth: read('data/github-asset-repository.json').sourceOfTruth, flow: read('data/github-asset-repository.json').flow, supportedTypes: read('data/github-asset-repository.json').supportedTypes }, githubAssetRegistry: { status: githubAssetRegistry.status, entries: githubAssetRegistry.entries.length, awaitingSource: githubAssetStatusCounts.AWAITING_SOURCE_ASSET || 0, sourceDiscovered: githubAssetStatusCounts.SOURCE_DISCOVERED || 0 }, githubAssetDependencyGraph: { status: githubAssetDependencyGraph.status, nodes: githubAssetDependencyGraph.nodes.length } };
+const index = { generated, counts, files: sourceFiles, sourceFileFingerprints, artPromptCategories, artMapPrompts, githubAssetStatusCounts, githubAssetTypeCounts, artApprovalManifest: { status: artApprovalManifest.status, approvalStatus: artApprovalManifest.approvalStatus, gatesClosed: artApprovalManifest.gatesClosed, stillBlocked: artApprovalManifest.stillBlocked, approvedPromptPackages: counts.artApprovedPromptPackages }, blueprint3dSystem: { status: blueprint3dSystem.status, director: blueprint3dSystem.director, registryTotal: blueprint3dRegistry.assets.length, registry: blueprint3dSystem.registry, productionQueue: 'data/3d-production-queue.json', firstHandoffBatch: blueprint3dProductionQueue.firstHandoffBatch.map(item => item.assetId) }, githubAssetRepository: { status: read('data/github-asset-repository.json').status, sourceOfTruth: read('data/github-asset-repository.json').sourceOfTruth, flow: read('data/github-asset-repository.json').flow, supportedTypes: read('data/github-asset-repository.json').supportedTypes }, githubAssetRegistry: { status: githubAssetRegistry.status, entries: githubAssetRegistry.entries.length, awaitingSource: githubAssetStatusCounts.AWAITING_SOURCE_ASSET || 0, sourceDiscovered: githubAssetStatusCounts.SOURCE_DISCOVERED || 0 }, githubAssetManifests: { status: 'IMPLEMENTED', count: counts.githubAssetManifests, reservedIds: counts.githubReservedAssetIds }, githubAssetDependencyGraph: { status: githubAssetDependencyGraph.status, nodes: githubAssetDependencyGraph.nodes.length } };
 write('data/index.json', index);
 console.log(JSON.stringify(index, null, 2));
 

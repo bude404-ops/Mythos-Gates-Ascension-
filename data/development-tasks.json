@@ -219,6 +219,28 @@
     "completionNotes": "Reversible fixture proves externally added assets are detected, linked to stable permanent IDs, validated, and removed before commit so no fake final art enters canon."
   },
   {
+    "id": "TG-DEV-013",
+    "description": "Generate one machine-readable asset manifest per permanent GitHub asset ID and reserve all canonical IDs before final source assets exist.",
+    "director": "Development Director",
+    "priority": "High",
+    "status": "COMPLETED",
+    "dependencies": [
+      "TG-GITHUB-ASSET-REPOSITORY-001",
+      "asset_registry/github-asset-registry.json",
+      "asset_registry/asset-dependency-graph.json"
+    ],
+    "relatedEntity": "TG-GITHUB-ASSET-MANIFEST-REPORT-001",
+    "relatedFiles": [
+      "scripts/generate-asset-manifests.mjs",
+      "manifests/assets/",
+      "manifests/assets/RESERVED_ASSET_IDS.json",
+      "validation/reports/github-asset-manifest-report.json",
+      "scripts/validate-github-assets.mjs"
+    ],
+    "completed": "2026-08-13",
+    "completionNotes": "129 per-asset manifests and reserved ID contracts generated from existing canon. Detection now ignores generated metadata so manifests do not masquerade as source assets."
+  },
+  {
     "id": "TG-DEV-011",
     "description": "Connected screenshot-capable visual smoke automation into the deployment workflow template so UI regressions block publication once workflow activation is permitted.",
     "director": "Development Director",
