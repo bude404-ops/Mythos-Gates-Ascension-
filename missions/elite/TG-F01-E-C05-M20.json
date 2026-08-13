@@ -117,5 +117,44 @@
     "altered map lane/hazard emphasis",
     "boss or commander mechanic added"
   ],
-  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly.",
+  "tacticalProfile": {
+    "problemTags": [
+      "large_enemy_groups",
+      "fast_enemies",
+      "ranged_enemies",
+      "long_survival"
+    ],
+    "advantageRoles": [
+      "Artillery",
+      "Controller",
+      "Assassin",
+      "Defender"
+    ],
+    "recommendedTitanIds": [
+      "TG-TITAN-007",
+      "TG-TITAN-003",
+      "TG-TITAN-009"
+    ],
+    "recommendedTitans": [
+      {
+        "id": "TG-TITAN-007",
+        "name": "Karnu Glass Horizon",
+        "reason": "Artillery advantage for large enemy groups"
+      },
+      {
+        "id": "TG-TITAN-003",
+        "name": "Nefra Obsidian Dawn",
+        "reason": "Controller advantage for large enemy groups"
+      },
+      {
+        "id": "TG-TITAN-009",
+        "name": "Amunet Hidden Sun",
+        "reason": "Assassin advantage for large enemy groups"
+      }
+    ],
+    "favoredNotRequired": true,
+    "ownershipLock": false,
+    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
+  }
 }

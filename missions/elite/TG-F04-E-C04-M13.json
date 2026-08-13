@@ -102,5 +102,44 @@
     "Enemy support pressure persists longer",
     "Objective timing is stricter",
     "Boss or elite wave uses altered entry timing"
-  ]
+  ],
+  "tacticalProfile": {
+    "problemTags": [
+      "ranged_enemies",
+      "long_survival",
+      "boss_duel",
+      "terrain_heavy"
+    ],
+    "advantageRoles": [
+      "Defender",
+      "Artillery",
+      "Sustain",
+      "Guardian"
+    ],
+    "recommendedTitanIds": [
+      "TG-TITAN-028",
+      "TG-TITAN-034",
+      "TG-TITAN-033"
+    ],
+    "recommendedTitans": [
+      {
+        "id": "TG-TITAN-028",
+        "name": "Amaterion Spirit-Sun",
+        "reason": "Defender advantage for ranged enemies"
+      },
+      {
+        "id": "TG-TITAN-034",
+        "name": "Onimaru Red Seal",
+        "reason": "Artillery advantage for ranged enemies"
+      },
+      {
+        "id": "TG-TITAN-033",
+        "name": "Hanae Blossom Ward",
+        "reason": "Sustain advantage for ranged enemies"
+      }
+    ],
+    "favoredNotRequired": true,
+    "ownershipLock": false,
+    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
+  }
 }

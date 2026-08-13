@@ -102,5 +102,44 @@
     "Enemy support pressure persists longer",
     "Objective timing is stricter",
     "Boss or elite wave uses altered entry timing"
-  ]
+  ],
+  "tacticalProfile": {
+    "problemTags": [
+      "heavily_armored_enemies",
+      "long_survival",
+      "boss_duel",
+      "terrain_heavy"
+    ],
+    "advantageRoles": [
+      "Breaker",
+      "Guardian",
+      "Defender",
+      "Sustain"
+    ],
+    "recommendedTitanIds": [
+      "TG-TITAN-049",
+      "TG-TITAN-053",
+      "TG-TITAN-046"
+    ],
+    "recommendedTitans": [
+      {
+        "id": "TG-TITAN-049",
+        "name": "Malachor Law Warden",
+        "reason": "Breaker advantage for heavily armored enemies"
+      },
+      {
+        "id": "TG-TITAN-053",
+        "name": "Axiom Gate Choir",
+        "reason": "Guardian advantage for heavily armored enemies"
+      },
+      {
+        "id": "TG-TITAN-046",
+        "name": "Seraphel, the Throne Eternal",
+        "reason": "Defender advantage for heavily armored enemies"
+      }
+    ],
+    "favoredNotRequired": true,
+    "ownershipLock": false,
+    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
+  }
 }

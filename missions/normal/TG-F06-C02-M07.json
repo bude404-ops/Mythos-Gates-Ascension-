@@ -93,5 +93,44 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly.",
+  "tacticalProfile": {
+    "problemTags": [
+      "heavily_armored_enemies",
+      "fast_enemies",
+      "boss_duel",
+      "terrain_heavy"
+    ],
+    "advantageRoles": [
+      "Breaker",
+      "Guardian",
+      "Controller",
+      "Assassin"
+    ],
+    "recommendedTitanIds": [
+      "TG-TITAN-049",
+      "TG-TITAN-053",
+      "TG-TITAN-048"
+    ],
+    "recommendedTitans": [
+      {
+        "id": "TG-TITAN-049",
+        "name": "Malachor Law Warden",
+        "reason": "Breaker advantage for heavily armored enemies"
+      },
+      {
+        "id": "TG-TITAN-053",
+        "name": "Axiom Gate Choir",
+        "reason": "Guardian advantage for heavily armored enemies"
+      },
+      {
+        "id": "TG-TITAN-048",
+        "name": "Aurelia Radiant Spear",
+        "reason": "Controller advantage for heavily armored enemies"
+      }
+    ],
+    "favoredNotRequired": true,
+    "ownershipLock": false,
+    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
+  }
 }

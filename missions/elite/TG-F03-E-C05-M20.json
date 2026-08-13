@@ -107,5 +107,44 @@
     "Enemy support pressure persists longer",
     "Objective timing is stricter",
     "Boss or elite wave uses altered entry timing"
-  ]
+  ],
+  "tacticalProfile": {
+    "problemTags": [
+      "long_survival",
+      "boss_duel",
+      "terrain_heavy",
+      "environmental_hazard"
+    ],
+    "advantageRoles": [
+      "Defender",
+      "Sustain",
+      "Guardian",
+      "Breaker"
+    ],
+    "recommendedTitanIds": [
+      "TG-TITAN-019",
+      "TG-TITAN-024",
+      "TG-TITAN-026"
+    ],
+    "recommendedTitans": [
+      {
+        "id": "TG-TITAN-019",
+        "name": "Aurelion Heaven-Marrow",
+        "reason": "Defender advantage for long survival"
+      },
+      {
+        "id": "TG-TITAN-024",
+        "name": "Dione Victory Mirror",
+        "reason": "Sustain advantage for long survival"
+      },
+      {
+        "id": "TG-TITAN-026",
+        "name": "Pallas Oath-Spear",
+        "reason": "Guardian advantage for long survival"
+      }
+    ],
+    "favoredNotRequired": true,
+    "ownershipLock": false,
+    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
+  }
 }

@@ -6,6 +6,7 @@ const contract = read('data/campaign-playflow-contract.json');
 const factions = read('data/factions.json');
 const campaignChapters = read('data/campaign-chapter-registry.json');
 const missions = read('data/mission-registry.json');
+const titans = read('data/titans.json');
 const maps = read('data/maps.json');
 const dialogue = read('data/mission-dialogue.json');
 const artPackages = read('data/mission-art-packages.json');
@@ -41,13 +42,18 @@ for (const route of contract.flow) {
       assert.ok(mission.objectives?.primary, `${id} missing primary objective`);
       assert.ok(Array.isArray(mission.objectives?.optional) && mission.objectives.optional.length >= 2, `${id} missing optional objectives`);
       assert.ok(mission.rewards, `${id} missing rewards`);
+      assert.ok(mission.tacticalProfile?.favoredNotRequired === true, `${id} missing favored tactical profile`);
+      assert.equal(mission.tacticalProfile?.ownershipLock, false, `${id} tactical profile must not lock ownership`);
+      assert.ok(mission.tacticalProfile?.problemTags?.length >= 3, `${id} missing problem tags`);
+      assert.ok(mission.tacticalProfile?.advantageRoles?.length >= 2, `${id} missing advantage roles`);
+      assert.ok(mission.tacticalProfile?.recommendedTitanIds?.every(tid => titans.some(t => t.id === tid)), `${id} invalid recommended Titan`);
     }
     assert.equal(chapter.handoff.defaultMissionId || chapter.defaultMissionId, chapter.normalMissionIds[0]);
     assert.ok(chapter.handoff.battleRoute.includes(chapter.normalMissionIds[0]));
   }
 }
 
-for (const token of ['createCommandHubRuntime','function campaigns','function missionScreen','function battleScreen','openCampaign(factionId)','launchBattle(){','ENTER BATTLE','Campaign Gates']) {
+for (const token of ['createCommandHubRuntime','function campaigns','function missionScreen','function battleScreen','openCampaign(factionId)','launchBattle(){','ENTER BATTLE','Campaign Gates','missionTacticalBrief','tacticalProfileForMission','Tactical Read','Favored Not Required','Ownership Lock']) {
   assert.ok(hubRuntime.includes(token), `hub runtime missing ${token}`);
 }
 for (const token of ['command-hub-runtime.mjs','Command Hub','OPEN THE TITAN GATE']) {

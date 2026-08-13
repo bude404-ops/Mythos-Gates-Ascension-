@@ -102,5 +102,44 @@
     "Enemy support pressure persists longer",
     "Objective timing is stricter",
     "Boss or elite wave uses altered entry timing"
-  ]
+  ],
+  "tacticalProfile": {
+    "problemTags": [
+      "large_enemy_groups",
+      "long_survival",
+      "boss_duel",
+      "terrain_heavy"
+    ],
+    "advantageRoles": [
+      "Artillery",
+      "Controller",
+      "Defender",
+      "Sustain"
+    ],
+    "recommendedTitanIds": [
+      "TG-TITAN-025",
+      "TG-TITAN-021",
+      "TG-TITAN-019"
+    ],
+    "recommendedTitans": [
+      {
+        "id": "TG-TITAN-025",
+        "name": "Helior Bronze Summit",
+        "reason": "Artillery advantage for large enemy groups"
+      },
+      {
+        "id": "TG-TITAN-021",
+        "name": "Thyressa Golden Aegis",
+        "reason": "Controller advantage for large enemy groups"
+      },
+      {
+        "id": "TG-TITAN-019",
+        "name": "Aurelion Heaven-Marrow",
+        "reason": "Defender advantage for large enemy groups"
+      }
+    ],
+    "favoredNotRequired": true,
+    "ownershipLock": false,
+    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
+  }
 }

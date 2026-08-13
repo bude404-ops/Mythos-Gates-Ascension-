@@ -107,5 +107,44 @@
     "Enemy support pressure persists longer",
     "Objective timing is stricter",
     "Boss or elite wave uses altered entry timing"
-  ]
+  ],
+  "tacticalProfile": {
+    "problemTags": [
+      "ranged_enemies",
+      "long_survival",
+      "boss_duel",
+      "terrain_heavy"
+    ],
+    "advantageRoles": [
+      "Defender",
+      "Artillery",
+      "Sustain",
+      "Guardian"
+    ],
+    "recommendedTitanIds": [
+      "TG-TITAN-019",
+      "TG-TITAN-025",
+      "TG-TITAN-024"
+    ],
+    "recommendedTitans": [
+      {
+        "id": "TG-TITAN-019",
+        "name": "Aurelion Heaven-Marrow",
+        "reason": "Defender advantage for ranged enemies"
+      },
+      {
+        "id": "TG-TITAN-025",
+        "name": "Helior Bronze Summit",
+        "reason": "Artillery advantage for ranged enemies"
+      },
+      {
+        "id": "TG-TITAN-024",
+        "name": "Dione Victory Mirror",
+        "reason": "Sustain advantage for ranged enemies"
+      }
+    ],
+    "favoredNotRequired": true,
+    "ownershipLock": false,
+    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
+  }
 }

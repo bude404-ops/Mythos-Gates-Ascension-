@@ -93,5 +93,44 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly.",
+  "tacticalProfile": {
+    "problemTags": [
+      "fast_enemies",
+      "ranged_enemies",
+      "long_survival",
+      "boss_duel"
+    ],
+    "advantageRoles": [
+      "Controller",
+      "Assassin",
+      "Defender",
+      "Artillery"
+    ],
+    "recommendedTitanIds": [
+      "TG-TITAN-030",
+      "TG-TITAN-036",
+      "TG-TITAN-028"
+    ],
+    "recommendedTitans": [
+      {
+        "id": "TG-TITAN-030",
+        "name": "Raidenko Storm Script",
+        "reason": "Controller advantage for fast enemies"
+      },
+      {
+        "id": "TG-TITAN-036",
+        "name": "Yamabito Stone Prayer",
+        "reason": "Assassin advantage for fast enemies"
+      },
+      {
+        "id": "TG-TITAN-028",
+        "name": "Amaterion Spirit-Sun",
+        "reason": "Defender advantage for fast enemies"
+      }
+    ],
+    "favoredNotRequired": true,
+    "ownershipLock": false,
+    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
+  }
 }

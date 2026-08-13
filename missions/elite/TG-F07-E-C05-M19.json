@@ -102,5 +102,44 @@
     "Enemy support pressure persists longer",
     "Objective timing is stricter",
     "Boss or elite wave uses altered entry timing"
-  ]
+  ],
+  "tacticalProfile": {
+    "problemTags": [
+      "heavily_armored_enemies",
+      "long_survival",
+      "boss_duel",
+      "terrain_heavy"
+    ],
+    "advantageRoles": [
+      "Breaker",
+      "Guardian",
+      "Defender",
+      "Sustain"
+    ],
+    "recommendedTitanIds": [
+      "TG-TITAN-058",
+      "TG-TITAN-062",
+      "TG-TITAN-055"
+    ],
+    "recommendedTitans": [
+      {
+        "id": "TG-TITAN-058",
+        "name": "Azrakar Chainwarden",
+        "reason": "Breaker advantage for heavily armored enemies"
+      },
+      {
+        "id": "TG-TITAN-062",
+        "name": "Sablex Cinder Duke",
+        "reason": "Guardian advantage for heavily armored enemies"
+      },
+      {
+        "id": "TG-TITAN-055",
+        "name": "Mordrath, the Infernal King",
+        "reason": "Defender advantage for heavily armored enemies"
+      }
+    ],
+    "favoredNotRequired": true,
+    "ownershipLock": false,
+    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
+  }
 }

@@ -93,5 +93,44 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly.",
+  "tacticalProfile": {
+    "problemTags": [
+      "large_enemy_groups",
+      "fast_enemies",
+      "long_survival",
+      "boss_duel"
+    ],
+    "advantageRoles": [
+      "Artillery",
+      "Controller",
+      "Assassin",
+      "Defender"
+    ],
+    "recommendedTitanIds": [
+      "TG-TITAN-025",
+      "TG-TITAN-021",
+      "TG-TITAN-027"
+    ],
+    "recommendedTitans": [
+      {
+        "id": "TG-TITAN-025",
+        "name": "Helior Bronze Summit",
+        "reason": "Artillery advantage for large enemy groups"
+      },
+      {
+        "id": "TG-TITAN-021",
+        "name": "Thyressa Golden Aegis",
+        "reason": "Controller advantage for large enemy groups"
+      },
+      {
+        "id": "TG-TITAN-027",
+        "name": "Eiren Crowned Horizon",
+        "reason": "Assassin advantage for large enemy groups"
+      }
+    ],
+    "favoredNotRequired": true,
+    "ownershipLock": false,
+    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
+  }
 }

@@ -89,6 +89,8 @@ const missionDialogueIds = new Set(data.missionDialogue.map(d => d.id));
 const missionArtPackageIds = new Set(data.missionArtPackages.map(a => a.id));
 const campaignChapterIds = new Set(data.campaignChapters.map(c => c.id));
 const storylineArcIds = new Set(data.storylineArcs.map(s => s.id));
+const allowedMissionProblemTags = new Set(['large_enemy_groups','heavily_armored_enemies','fast_enemies','ranged_enemies','enemy_casters','long_survival','boss_duel','terrain_heavy','environmental_hazard','swarm_battle','execution_chain','objective_pressure']);
+const allowedTitanRoles = new Set(data.titans.map(t => t.role));
 
 if(data.factions.length !== 7) fail(`Expected 7 playable factions, found ${data.factions.length}`);
 if(data.hollowThreatFaction.playable !== false || data.hollowThreatFaction.classification !== 'Hostile Threat Faction') fail('Hollow must remain a non-playable threat faction');
@@ -169,6 +171,16 @@ for (const mission of data.missions) {
   if(mission.boss && !creatureIds.has(mission.boss.enemyId)) fail(`${mission.id}: invalid boss ${mission.boss.enemyId}`);
   if(!missionDialogueIds.has(mission.dialogueId)) fail(`${mission.id}: missing dialogue ${mission.dialogueId}`);
   if(!missionArtPackageIds.has(mission.artPackageId)) fail(`${mission.id}: missing art package ${mission.artPackageId}`);
+  const tactical = mission.tacticalProfile;
+  if(!tactical) fail(`${mission.id}: missing tacticalProfile`);
+  if(!Array.isArray(tactical.problemTags) || tactical.problemTags.length < 3) fail(`${mission.id}: tacticalProfile needs at least three problemTags`);
+  for (const tag of tactical.problemTags) if(!allowedMissionProblemTags.has(tag)) fail(`${mission.id}: invalid tactical problem tag ${tag}`);
+  if(!Array.isArray(tactical.advantageRoles) || tactical.advantageRoles.length < 2) fail(`${mission.id}: tacticalProfile needs advantageRoles`);
+  for (const role of tactical.advantageRoles) if(!allowedTitanRoles.has(role)) fail(`${mission.id}: invalid advantage role ${role}`);
+  if(!Array.isArray(tactical.recommendedTitanIds) || tactical.recommendedTitanIds.length < 1) fail(`${mission.id}: tacticalProfile needs recommendedTitanIds`);
+  for (const id of tactical.recommendedTitanIds) if(!titanIds.has(id)) fail(`${mission.id}: invalid recommended Titan ${id}`);
+  if(tactical.ownershipLock !== false || tactical.favoredNotRequired !== true) fail(`${mission.id}: tacticalProfile must stay favored-not-required with no ownership lock`);
+  if(!String(tactical.rule||'').includes('any valid active Titan')) fail(`${mission.id}: tactical rule must explain no hard requirement`);
   if(!exists(`missions/${mission.campaignType === 'Elite' ? 'elite' : 'normal'}/${mission.id}.json`)) fail(`${mission.id}: missing individual mission file`);
   if(mission.campaignType === 'Elite') {
     if(!mission.eliteRemixOf || !missionIds.has(mission.eliteRemixOf)) fail(`${mission.id}: missing valid eliteRemixOf`);

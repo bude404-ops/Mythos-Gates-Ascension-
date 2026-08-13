@@ -176,6 +176,21 @@ export function createCommandHubRuntime(DATA, mount){
     const ordered=missions().filter(x=>x.factionId===m.factionId && (x.type||x.campaignType||'Normal')===(m.type||m.campaignType||'Normal')).sort((a,b)=>(a.n||0)-(b.n||0));
     return ordered[ordered.findIndex(x=>x.id===missionId)+1] || null;
   }
+  function tacticalProfileForMission(mission){
+    const p=mission?.tacticalProfile || {};
+    const problemTags=Array.isArray(p.problemTags)?p.problemTags:[];
+    const advantageRoles=Array.isArray(p.advantageRoles)?p.advantageRoles:[];
+    const recommendedTitans=Array.isArray(p.recommendedTitans)?p.recommendedTitans:[];
+    return { problemTags, advantageRoles, recommendedTitans, favoredNotRequired:p.favoredNotRequired!==false, ownershipLock:p.ownershipLock===true, rule:p.rule||'Recommended advantages only — any valid active Titan can attempt the mission.' };
+  }
+  function missionTacticalBrief(mission){
+    const p=tacticalProfileForMission(mission);
+    try { window.__TG_LAST_TACTICAL_PROFILE__ = p; } catch(_) {}
+    const tagBadges=p.problemTags.length?p.problemTags.map(t=>badge(t.replaceAll('_',' '))).join(''):'<span class="text-sm text-neutral-500">No tactical tags assigned.</span>';
+    const roleBadges=p.advantageRoles.length?p.advantageRoles.map(r=>badge(r,'ok')).join(''):'<span class="text-sm text-neutral-500">No role advantage listed.</span>';
+    const recRows=p.recommendedTitans.length?p.recommendedTitans.map(t=>`<p class="rounded-2xl bg-neutral-950 p-3 text-sm"><b class="text-primary">${esc(t.name||t.id)}</b><br/><span class="text-neutral-400">${esc(t.reason||'Specialist advantage, not required.')}</span></p>`).join(''):'<p class="rounded-2xl bg-neutral-950 p-3 text-sm text-neutral-400">Any selected Titan may attempt this mission.</p>';
+    return `<section class="rounded-3xl border border-neutral-800 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.28em] text-primary">Tactical Read · Favored Not Required</p><h2 class="mt-1 text-2xl font-black">Mission Problem Profile</h2><p class="mt-2 text-sm text-neutral-300">${esc(p.rule)}</p><div class="mt-4 grid gap-3 md:grid-cols-3"><article class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs font-black uppercase tracking-[.18em] text-neutral-500">Problem Tags</p><div class="mt-2 flex flex-wrap gap-2">${tagBadges}</div></article><article class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs font-black uppercase tracking-[.18em] text-neutral-500">Advantage Roles</p><div class="mt-2 flex flex-wrap gap-2">${roleBadges}</div></article><article class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs font-black uppercase tracking-[.18em] text-neutral-500">Ownership Lock</p><b class="text-bull-400">${p.ownershipLock?'Blocked':'None'}</b></article></div><div class="mt-3 grid gap-2 md:grid-cols-3">${recRows}</div></section>`;
+  }
   function createRewardCache(player, mission, battle){
     normalizeProgression(player);
     const firstClear = !(player.campaignProgress.completedMissionIds||[]).includes(mission.id);
@@ -359,7 +374,7 @@ export function createCommandHubRuntime(DATA, mount){
   function missionScreen(){
     const player=ensurePlayerState(); const m=missionById(player.campaignProgress.currentMissionId) || missions()[0]; const f=factionById(m?.factionId)||{};
     if(!m) return shell(`${profileHeader(player)}<main class="p-3 pb-28">${lockedPanel('Missing campaign mission','The current mission id did not resolve. Safe fallback prevented a blank screen.')}</main>`);
-    return shell(`${profileHeader(player)}<main class="mx-auto max-w-4xl space-y-4 px-3 pb-28 pt-3"><button onclick="TGHub.go('hub')" class="rounded-2xl bg-neutral-800 px-4 py-3 font-black">← Command Hub</button><section class="rounded-3xl border border-primary/40 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.28em] text-primary">${esc(f.name)} · Mission</p><h1 class="mt-1 text-4xl font-black">${esc(m.title)}</h1><p class="mt-2 text-neutral-300">${esc(m.description||m.lore||m.objectives?.primary)}</p><div class="mt-4 grid gap-2 sm:grid-cols-3"><div class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs text-neutral-500">Power</p><b>${esc(m.recommendedPower||m.power||'—')}</b></div><div class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs text-neutral-500">Map</p><b>${esc(m.mapName||m.mapId||'Canon map')}</b></div><div class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs text-neutral-500">Type</p><b>${esc(m.campaignType||m.type||'Normal')}</b></div></div><button onclick="TGHub.launchBattle()" class="mt-5 w-full rounded-3xl bg-primary px-5 py-5 text-2xl font-black text-white">ENTER BATTLE</button></section></main>`);
+    return shell(`${profileHeader(player)}<main class="mx-auto max-w-4xl space-y-4 px-3 pb-28 pt-3"><button onclick="TGHub.go('hub')" class="rounded-2xl bg-neutral-800 px-4 py-3 font-black">← Command Hub</button><section class="rounded-3xl border border-primary/40 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.28em] text-primary">${esc(f.name)} · Mission</p><h1 class="mt-1 text-4xl font-black">${esc(m.title)}</h1><p class="mt-2 text-neutral-300">${esc(m.description||m.lore||m.objectives?.primary)}</p><div class="mt-4 grid gap-2 sm:grid-cols-3"><div class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs text-neutral-500">Power</p><b>${esc(m.recommendedPower||m.power||'—')}</b></div><div class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs text-neutral-500">Map</p><b>${esc(m.mapName||m.mapId||'Canon map')}</b></div><div class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs text-neutral-500">Type</p><b>${esc(m.campaignType||m.type||'Normal')}</b></div></div><button onclick="TGHub.launchBattle()" class="mt-5 w-full rounded-3xl bg-primary px-5 py-5 text-2xl font-black text-white">ENTER BATTLE</button></section>${missionTacticalBrief(m)}</main>`);
   }
   function titansScreen(){
     const player=ensurePlayerState(); const selected=new Set(player.selectedTitans||[]);

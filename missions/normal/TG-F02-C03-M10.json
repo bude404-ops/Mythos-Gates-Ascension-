@@ -93,5 +93,44 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly."
+  "squadDesignNotes": "Balanced for the standard 5-Titan squad; special future modes may override team size explicitly.",
+  "tacticalProfile": {
+    "problemTags": [
+      "heavily_armored_enemies",
+      "fast_enemies",
+      "ranged_enemies",
+      "long_survival"
+    ],
+    "advantageRoles": [
+      "Breaker",
+      "Guardian",
+      "Controller",
+      "Assassin"
+    ],
+    "recommendedTitanIds": [
+      "TG-TITAN-013",
+      "TG-TITAN-017",
+      "TG-TITAN-012"
+    ],
+    "recommendedTitans": [
+      {
+        "id": "TG-TITAN-013",
+        "name": "Eirwyn Valkstorm",
+        "reason": "Breaker advantage for heavily armored enemies"
+      },
+      {
+        "id": "TG-TITAN-017",
+        "name": "Ullr Snow-Crown",
+        "reason": "Guardian advantage for heavily armored enemies"
+      },
+      {
+        "id": "TG-TITAN-012",
+        "name": "Skeld Iron Tempest",
+        "reason": "Controller advantage for heavily armored enemies"
+      }
+    ],
+    "favoredNotRequired": true,
+    "ownershipLock": false,
+    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
+  }
 }
