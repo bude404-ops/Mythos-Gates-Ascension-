@@ -5,7 +5,7 @@ This document expands Titan Gates: Ascension beyond the Titan roster without bre
 ## Director Ruling
 
 - The Lore Director authorizes NPCs as narrative, briefing, Codex, antagonist, or campaign support figures only.
-- NPCs are not playable Heroes.
+- NPCs are not playable non-Titan entries.
 - Creatures are enemies, hazards, or world boss threats. They are not Titans and do not belong to playable strike forces.
 - Maps are tactical or campaign locations tied to Gates, Realms, hazards, and objectives.
 - Campaigns organize chapters, maps, NPCs, and creatures without allowing unrestricted faction mixing.
@@ -37,7 +37,7 @@ Campaigns connect chapters into Director-approved progression arcs.
 
 ## Safety Rule
 
-No entry in this system may resurrect removed lore, introduce sci-fi, add aliens, add spaceships, or convert NPCs into playable Heroes without explicit Creator approval.
+No entry in this system may resurrect removed lore, introduce sci-fi, add extradimensional beings, add futuristic craft, or convert NPCs into playable non-Titan entries without explicit Creator approval.
 
 ## Expanded Campaign Lore Coverage
 

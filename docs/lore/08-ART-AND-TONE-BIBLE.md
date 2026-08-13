@@ -29,8 +29,8 @@ Every character should read as an extradimensional being powerful enough to beco
 - Cartoon-only designs
 - Excessive anime styling
 - Sci-fi aesthetics
-- Aliens
-- Spaceships
+- Extradimensional beings
+- Futuristic craft
 - Futuristic armor
 - Guns
 - Modern weapons

@@ -2,7 +2,7 @@
 
 ## Realm Rule
 
-A Realm is not a planet. A Realm is an extradimensional civilization-domain shaped by mythic law, history, materials, symbols, and power.
+A Realm is not a realm. A Realm is an extradimensional civilization-domain shaped by mythic law, history, materials, symbols, and power.
 
 Each playable Realm must feel like its own ancient civilization, not a costume pack.
 

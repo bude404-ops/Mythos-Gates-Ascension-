@@ -75,4 +75,4 @@ The The White Citadel Above Law is defined by angelic order, impossible architec
 - **Visual Context:** Frame Theon Still Horizon against white-gold citadels, halo geometry, luminous wings, cathedral engines, glass floors over starless voids while preserving their individual silhouette and role readability.
 
 ## Director Ruling
-This chapter expands faction, Realm, and Titan presentation only. It does not create playable Heroes, normal units, alien factions, spaceships, or cross-faction strike-force rules.
+This chapter expands faction, Realm, and Titan presentation only. It does not create playable non-Titan entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.

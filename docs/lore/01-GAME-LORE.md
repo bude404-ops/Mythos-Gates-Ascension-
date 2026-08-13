@@ -2,7 +2,7 @@
 
 Titans Gate is an extradimensional mythological fantasy universe where ancient Earth myths were not simple stories, but human interpretations of real beings, civilizations, wars, and powers from beyond normal reality.
 
-Long before the current era, powerful mythological civilizations existed across separate dimensions called Realms. These Realms were not planets, galaxies, alien worlds, or places in outer space. They were ancient extradimensional domains shaped by divine law, storm oaths, celestial glory, sacred spirits, living nature, radiant order, infernal power, forgotten memory, primordial beasts, and unstable gateways.
+Long before the current era, powerful mythological civilizations existed across separate dimensions called Realms. These Realms were not realms, galaxies, extradimensional worlds, or places in outer space. They were ancient extradimensional domains shaped by divine law, storm oaths, celestial glory, sacred spirits, living nature, radiant order, infernal power, forgotten memory, primordial beasts, and unstable gateways.
 
 The bridge between these Realms was the Titan Gates.
 
@@ -28,7 +28,7 @@ After the Collapse, the surviving Realms no longer trust one another. Each civil
 
 The Titans are the supreme warforms of these Realms.
 
-They are not humans in armor. They are not aliens. They are not machines. They are not gods in the simple human sense.
+They are not humans in armor. They are not extradimensional beings. They are not machines. They are not gods in the simple human sense.
 
 Titans are colossal extradimensional beings shaped by the laws, memories, symbols, materials, wounds, and sacred powers of their home Realms. Each Titan is a living expression of its civilization's deepest truth.
 

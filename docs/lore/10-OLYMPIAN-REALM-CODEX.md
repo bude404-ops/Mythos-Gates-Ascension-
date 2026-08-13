@@ -75,4 +75,4 @@ The The Marble Sky of Olympus is defined by radiant rivalry, heroic politics, ma
 - **Visual Context:** Frame Eiren Crowned Horizon against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
 
 ## Director Ruling
-This chapter expands faction, Realm, and Titan presentation only. It does not create playable Heroes, normal units, alien factions, spaceships, or cross-faction strike-force rules.
+This chapter expands faction, Realm, and Titan presentation only. It does not create playable non-Titan entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.

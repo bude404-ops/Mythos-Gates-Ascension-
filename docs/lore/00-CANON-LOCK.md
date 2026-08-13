@@ -10,19 +10,19 @@ The current canon is built around:
 - 7 playable mythological Realms
 - 9 Titans per playable Realm
 - 5-Titan strike forces
-- No playable Heroes in the current format
-- No normal unit formations in the current format
+- No playable non-Titan entries in the current format
+- No non-Titan battle formations in the current format
 - No sci-fi
-- No aliens
-- No spaceships
-- No galaxy or planet origin framing
+- No extradimensional beings
+- No futuristic craft
+- No realm or realm origin framing
 - No futuristic technology
 - No guns
 - No Mycocide or fungal civilization content
 
 ## Core Rule
 
-The beings within Titans Gate are alternate-dimensional civilizations and entities that existed beyond Earth's normal reality. They are not aliens, not extraterrestrials, and do not come from planets, galaxies, or outer space.
+The beings within Titans Gate are extradimensional civilizations and entities that existed beyond Earth's normal reality. They are not aliens, not extraterrestrials, and do not come from planets, galaxies, or outer space.
 
 Ancient humans encountered traces, manifestations, gateways, visions, and interactions with these extradimensional beings. Those encounters became the foundation of Earth mythology.
 
@@ -38,8 +38,8 @@ The player commands only Titans in the current format.
 
 There are:
 
-- 0 playable Heroes per faction
-- 0 normal unit formations per faction
+- 0 playable non-Titan entries per faction
+- 0 non-Titan battle formations per faction
 - 9 collectible Titans per faction
 - 5 active Titan slots in a strike force
 
@@ -49,7 +49,7 @@ There should be no universal best team.
 
 ## Reapers — Current Position
 
-Reapers are legacy lore residue from the older Galaxy Reapers / Ascension format.
+Reapers are legacy lore residue from the older Titan Gates / Ascension format.
 
 If kept, they should not be the main identity of the game.
 

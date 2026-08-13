@@ -34,8 +34,8 @@ Enemy forces:
 - Titan-only playable format
 - Seven mythological Realm direction
 - No sci-fi framing
-- No alien framing
-- No gun / spaceship / futuristic technology framing
+- No extradimensional framing
+- No gun / futuristic craft / futuristic technology framing
 
 ### Next build targets
 

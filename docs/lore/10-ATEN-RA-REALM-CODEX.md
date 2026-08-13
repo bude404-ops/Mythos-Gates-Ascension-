@@ -75,4 +75,4 @@ The The Solar Dominion of Khepra is defined by sacred law, geometric light, dese
 - **Visual Context:** Frame Amunet Hidden Sun against white-gold solar discs, obsidian-blue shadows, colossal pylons, papyrus circuitry, radiant court armor while preserving their individual silhouette and role readability.
 
 ## Director Ruling
-This chapter expands faction, Realm, and Titan presentation only. It does not create playable Heroes, normal units, alien factions, spaceships, or cross-faction strike-force rules.
+This chapter expands faction, Realm, and Titan presentation only. It does not create playable non-Titan entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.

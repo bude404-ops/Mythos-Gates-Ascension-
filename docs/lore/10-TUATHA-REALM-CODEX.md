@@ -75,4 +75,4 @@ The The Root-Crowned Green Below is defined by ancient roots, living songs, moon
 - **Visual Context:** Frame Tara Dawn Barrow against emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist while preserving their individual silhouette and role readability.
 
 ## Director Ruling
-This chapter expands faction, Realm, and Titan presentation only. It does not create playable Heroes, normal units, alien factions, spaceships, or cross-faction strike-force rules.
+This chapter expands faction, Realm, and Titan presentation only. It does not create playable non-Titan entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.

@@ -20,7 +20,7 @@ This repository is now the source of truth for both:
 art/                 Artwork pipeline folders and prompt files
 art/prompts/         Versioned prompt records, one JSON file per entity prompt
 data/                Source-of-truth JSON data for the Pages dashboard
-characters/          Future character records; current canon has no playable Heroes
+characters/          Future character records; current canon has no playable non-Titan entries
 npcs/                Non-playable campaign character records
 creatures/           Enemy creatures, Gateborn threats, and world boss records
 maps/                Tactical and campaign map records
@@ -83,12 +83,12 @@ Current canon is locked around:
 - Seven playable mythological Realms
 - Nine Titans per Realm
 - Five-Titan strike forces
-- No playable Heroes in the current format
+- No playable non-Titan entries in the current format
 - No normal units in the current format
 - No sci-fi
-- No aliens
-- No spaceships
-- No Mycocide / fungal civilization content
+- No extradimensional beings
+- No futuristic craft
+- No void rot / fungal civilization content
 
 GitHub is the source of truth. GitHub Pages is the visual command center. The Codex is the canonical knowledge base. The Art Studio is the visual production pipeline. The Directors are the governance system.
 

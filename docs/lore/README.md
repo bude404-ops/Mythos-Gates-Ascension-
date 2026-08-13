@@ -22,11 +22,11 @@ Titans Gate is mythology as evidence of real extradimensional power.
 
 Every Realm must feel like its own ancient civilization. Every Titan must feel born from that civilization's laws, symbols, powers, and wounds. Every gameplay role must come from lore. Every visual design must reject sci-fi, generic fantasy, and ordinary human cosplay. Every Titan Gate must feel ancient, dangerous, sacred, and capable of breaking reality.
 
-- [NPCs, Creatures, Maps, and Campaigns](09-NPCS-CREATURES-MAPS-CAMPAIGNS.md) — Director-approved campaign expansion without playable Heroes.
+- [NPCs, Creatures, Maps, and Campaigns](09-NPCS-CREATURES-MAPS-CAMPAIGNS.md) — Director-approved campaign expansion without playable non-Titan entries.
 
 ## Faction Realm Codex
 
-The following chapters expand every faction, Realm, Gate, and Titan role without adding playable Heroes or normal units:
+The following chapters expand every faction, Realm, Gate, and Titan role without adding playable non-Titan entries or normal units:
 
 - [Aten Ra: The Solar Dominion of Khepra](10-ATEN-RA-REALM-CODEX.md)
 - [Asgardian: The Storm-Rooted Aesir Holds](10-ASGARDIAN-REALM-CODEX.md)

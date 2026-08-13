@@ -4,7 +4,7 @@
 
 Titans are the supreme warforms of the Realms.
 
-They are not humans in armor. They are not aliens. They are not machines. They are not ordinary fantasy units.
+They are not humans in armor. They are not extradimensional beings. They are not machines. They are not ordinary fantasy units.
 
 Titans are colossal extradimensional beings shaped by the laws, myths, symbols, materials, and powers of their home Realms.
 
@@ -24,7 +24,7 @@ Current format:
 
 - 9 Titans per playable Realm
 - 5 active Titan slots in a strike force
-- No playable Heroes
+- No playable non-Titan entries
 - No normal units
 
 The design goal is encounter-specific team building. There should be no universal best team.

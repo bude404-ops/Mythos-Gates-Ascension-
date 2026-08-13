@@ -30,7 +30,7 @@ const squadSystem = JSON.parse(readFileSync('data/squad-system.json', 'utf8'));
 const asyncArenaSystem = JSON.parse(readFileSync('data/async-arena-system.json', 'utf8'));
 const endgameDashboard = JSON.parse(readFileSync('data/endgame-dashboard.json', 'utf8'));
 const campaignPlayflow = JSON.parse(readFileSync('data/campaign-playflow-contract.json', 'utf8'));
-const miniAppHtml = readFileSync('mini-app/galaxy-reapers-ascension.html', 'utf8');
+const miniAppHtml = readFileSync('mini-app/titan-gates-ascension.html', 'utf8');
 const visualBaselines = JSON.parse(readFileSync('data/visual-baselines.json', 'utf8'));
 const visualReview = JSON.parse(readFileSync('visual/reviews/TG-VISUAL-QA-BASELINE-APPROVAL-001.json', 'utf8'));
 

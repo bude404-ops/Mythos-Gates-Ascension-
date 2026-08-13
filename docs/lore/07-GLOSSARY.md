@@ -18,7 +18,7 @@ A radiant extradimensional civilization that inspired human legends of Heaven, a
 
 ## Extradimensional
 
-Existing beyond normal Earth reality. Extradimensional beings are not aliens and do not come from planets, galaxies, or outer space.
+Existing beyond normal Earth reality. Extradimensional beings are not extradimensional beings and do not come from realms, galaxies, or outer space.
 
 ## Forgotten
 
@@ -42,11 +42,11 @@ The process by which human cultures encountered fragments of extradimensional re
 
 ## Realm
 
-An extradimensional civilization-domain shaped by mythic law, history, symbols, materials, and power. A Realm is not a planet.
+An extradimensional civilization-domain shaped by mythic law, history, symbols, materials, and power. A Realm is not a realm.
 
 ## Reapers
 
-Legacy lore residue from the older Galaxy Reapers / Ascension format. If retained, Reapers should be rare post-Collapse oath remnants, not the game's core identity or a playable faction.
+Legacy lore residue from the older Titan Gates / Ascension format. If retained, Reapers should be rare post-Collapse oath remnants, not the game's core identity or a playable faction.
 
 ## Titan
 

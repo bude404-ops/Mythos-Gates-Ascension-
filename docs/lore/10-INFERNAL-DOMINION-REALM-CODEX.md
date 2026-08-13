@@ -75,4 +75,4 @@ The The Black Iron Court of Dominion is defined by infernal contracts, black iro
 - **Visual Context:** Frame Zerath Wound Gate against black iron, ember red, volcanic courts, chain halos, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
 
 ## Director Ruling
-This chapter expands faction, Realm, and Titan presentation only. It does not create playable Heroes, normal units, alien factions, spaceships, or cross-faction strike-force rules.
+This chapter expands faction, Realm, and Titan presentation only. It does not create playable non-Titan entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.
