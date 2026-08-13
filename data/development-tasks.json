@@ -362,19 +362,27 @@
   },
   {
     "id": "TG-DEV-027",
-    "description": "Implement Titan Trial and Faction Trial data model with temporary loadouts, sample gear, Divine Ascension showcase, and conversion path.",
+    "description": "Implemented Titan Trial and Faction Trial data model with temporary loadouts, sample gear, Divine Ascension showcase, conversion-safe Trial Favor rewards, Command Hub trial loop, and validation/browser smoke coverage.",
     "director": "Progression Director",
     "priority": "High",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "dependencies": [
       "TG-TITAN-ROLE-MATRIX-001",
       "data/progression-system.json"
     ],
     "relatedEntity": "TG-TITAN-ROLE-MATRIX-001",
     "relatedFiles": [
+      "data/titan-trial-system.json",
       "data/titan-role-matrix.json",
-      "data/progression-system.json"
-    ]
+      "data/progression-system.json",
+      "data/command-hub-contract.json",
+      "game/command-hub-runtime.mjs",
+      "scripts/test-command-hub.mjs",
+      "scripts/validate-content.mjs"
+    ],
+    "completedAt": "2026-08-13",
+    "completedIn": "TG-DEV-027-titan-faction-trials",
+    "completionSummary": "Added production trial contract plus save-backed Command Hub trial loop: temporary loadouts expire, Titan and Faction Trial histories persist, Trial Favor rewards are capped, and ownership is recommended-but-not-required."
   },
   {
     "id": "TG-DEV-028",

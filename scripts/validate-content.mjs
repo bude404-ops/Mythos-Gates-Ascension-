@@ -56,6 +56,7 @@ const data = {
   asyncArenaSystem: read('data/async-arena-system.json'),
   weeklyTrials: read('data/weekly-trials.json'),
   raidSystem: read('data/raid-system.json'),
+  titanTrialSystem: read('data/titan-trial-system.json'),
   endgameDashboard: read('data/endgame-dashboard.json'),
   commandHubContract: read('data/command-hub-contract.json'),
   assetRegistry: read('data/asset-registry.json'),
@@ -72,6 +73,7 @@ register('soloVerticalSlice', data.soloVerticalSlice, 'data/solo-vertical-slice.
 register('asyncArenaSystem', data.asyncArenaSystem, 'data/async-arena-system.json');
 register('weeklyTrials', data.weeklyTrials, 'data/weekly-trials.json');
 register('raidSystem', data.raidSystem, 'data/raid-system.json');
+register('titanTrialSystem', data.titanTrialSystem, 'data/titan-trial-system.json');
 register('endgameDashboard', data.endgameDashboard, 'data/endgame-dashboard.json');
 register('commandHubContract', data.commandHubContract, 'data/command-hub-contract.json');
 register('assetRegistry', data.assetRegistry, 'data/asset-registry.json');
@@ -344,6 +346,18 @@ for (const id of hub.onboardingFlow.starterTitanIds) if(!titanIds.has(id)) fail(
 if(hub.onboardingFlow.beatCount !== 12 || hub.onboardingFlow.fullRosterHiddenUntilComplete !== true) fail('TG-DEV-026 onboarding beat/roster guardrail invalid');
 for (const rule of ['Starter choice is canon-safe and limited to three roles.','Full roster is hidden during onboarding to prevent roster flood.','Second Titan desire is created through trials and story, not mandatory purchase pressure.']) if(!hub.onboardingFlow.antiPayToWinRules?.includes(rule)) fail(`TG-DEV-026 onboarding rule missing: ${rule}`);
 if(!hub.qualityGates?.some(g => g.includes('TG-DEV-026 Awakening onboarding'))) fail('Command Hub quality gate missing TG-DEV-026');
+const trialSystem = data.titanTrialSystem;
+if(trialSystem.status !== 'IMPLEMENTED' || trialSystem.taskId !== 'TG-DEV-027') fail('Titan Trial system must complete TG-DEV-027');
+if(!Array.isArray(trialSystem.trialTitanIds) || trialSystem.trialTitanIds.length < 3) fail('TG-DEV-027 requires at least three showcase Titans');
+for (const id of trialSystem.trialTitanIds) if(!titanIds.has(id)) fail(`TG-DEV-027 invalid trial Titan ${id}`);
+if(!Array.isArray(trialSystem.trialModes) || trialSystem.trialModes.length !== 3) fail('TG-DEV-027 must define three trial modes');
+for (const mode of trialSystem.trialModes) if(!mode.id || !mode.label || !mode.rule || !Array.isArray(mode.scoreFocus) || mode.scoreFocus.length < 2) fail(`TG-DEV-027 trial mode incomplete: ${mode.id || 'unknown'}`);
+if(!String(trialSystem.activeTitanRule || '').includes('one temporary Titan')) fail('TG-DEV-027 one temporary Titan rule missing');
+if(!trialSystem.temporaryLoadoutRules?.some(rule => String(rule).includes('expires=END_OF_TRIAL'))) fail('TG-DEV-027 temporary loadout expiry missing');
+if(!trialSystem.rewardGuardrails?.some(rule => String(rule).includes('borrowed gear does not'))) fail('TG-DEV-027 borrowed gear guardrail missing');
+if(hub.trialSystem?.status !== 'IMPLEMENTED' || hub.trialSystem?.taskId !== 'TG-DEV-027') fail('Command Hub trial system must implement TG-DEV-027');
+if(hub.trialSystem?.temporaryLoadoutExpires !== 'END_OF_TRIAL') fail('Command Hub trial loadout expiry mismatch');
+if(!hub.qualityGates?.some(g => g.includes('TG-DEV-027'))) fail('Command Hub quality gate missing TG-DEV-027');
 if(!hub.defaultPlayerState?.selectedTitans?.every(id => titanIds.has(id))) fail('Command Hub default PlayerState references invalid Titan');
 if(!missionIds.has(hub.defaultPlayerState?.campaignProgress?.currentMissionId)) fail('Command Hub default PlayerState references invalid mission');
 if((hub.navigationTabs || []).length !== 5) fail('Command Hub must expose five bottom navigation sections');

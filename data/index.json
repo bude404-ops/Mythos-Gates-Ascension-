@@ -46,6 +46,7 @@
     "asyncArenaSystem": 1,
     "weeklyTrials": 1,
     "raidSystem": 1,
+    "titanTrialSystem": 1,
     "factionMastery": 1,
     "seasonSystem": 1,
     "achievementSystem": 1,
@@ -127,6 +128,7 @@
     "async-arena-system.json": "data/async-arena-system.json",
     "weekly-trials.json": "data/weekly-trials.json",
     "raid-system.json": "data/raid-system.json",
+    "titan-trial-system.json": "data/titan-trial-system.json",
     "faction-mastery.json": "data/faction-mastery.json",
     "season-system.json": "data/season-system.json",
     "achievement-system.json": "data/achievement-system.json",
@@ -207,8 +209,8 @@
     },
     "development-tasks.json": {
       "path": "data/development-tasks.json",
-      "bytes": 23253,
-      "sha256": "e9b6da200d32d82a26d2e1c71ab614eebf4cb546aeb31b5e9a60aa8ebb3ce225"
+      "bytes": 23868,
+      "sha256": "c1fba5ffbd9c44aa1aab3d0496fda6df3bed268725d987f8761854cd142022ca"
     },
     "lore-index.json": {
       "path": "data/lore-index.json",
@@ -385,6 +387,11 @@
       "bytes": 11133,
       "sha256": "a692b74968227772f8200100d6790212a00513a2b694c91f299074e40dcc866d"
     },
+    "titan-trial-system.json": {
+      "path": "data/titan-trial-system.json",
+      "bytes": 3782,
+      "sha256": "0217f69e0316e2737eab785144a9aab04009feec85463f005af34f833303e4b8"
+    },
     "faction-mastery.json": {
       "path": "data/faction-mastery.json",
       "bytes": 3863,
@@ -408,7 +415,7 @@
     "continuity-balance-audit.json": {
       "path": "data/continuity-balance-audit.json",
       "bytes": 2652,
-      "sha256": "5aee090e34a631855d44eccf4f6805b223f95bad26d8f39f04fb096e5dad98db"
+      "sha256": "9a9c850f842c08a0e65632d0c06e95c57b26a59d3d62aac6f6164d037eab7128"
     },
     "endgame-dashboard.json": {
       "path": "data/endgame-dashboard.json",
@@ -532,8 +539,8 @@
     },
     "command-hub-contract.json": {
       "path": "data/command-hub-contract.json",
-      "bytes": 8940,
-      "sha256": "df4290ec1471db23a751c762cae6a426cc7771c3e5fd534b15651d6063314231"
+      "bytes": 10014,
+      "sha256": "6507302bd43ffbf8d4f9ae62a03bd51b8cfef6e2d3e7f850a5244c370094bcae"
     },
     "asset-registry.json": {
       "path": "data/asset-registry.json",

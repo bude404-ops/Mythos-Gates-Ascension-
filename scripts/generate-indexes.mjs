@@ -53,6 +53,7 @@ const files = {
   'async-arena-system.json': 'asyncArenaSystem',
   'weekly-trials.json': 'weeklyTrials',
   'raid-system.json': 'raidSystem',
+  'titan-trial-system.json': 'titanTrialSystem',
   'faction-mastery.json': 'factionMastery',
   'season-system.json': 'seasonSystem',
   'achievement-system.json': 'achievementSystem',

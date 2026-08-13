@@ -1,0 +1,101 @@
+{
+  "id": "TG-TITAN-TRIAL-SYSTEM-001",
+  "version": "1.0.0",
+  "status": "IMPLEMENTED",
+  "taskId": "TG-DEV-027",
+  "activeTitanRule": "Trials showcase exactly one temporary Titan at a time; borrowed loadouts never become permanent combat power.",
+  "purpose": "Production Titan Trial and Faction Trial model for onboarding handoff, roster discovery, temporary specialist loadouts, Divine Ascension previews, and conversion-safe rewards.",
+  "sourceContracts": [
+    "data/titan-role-matrix.json",
+    "data/progression-system.json",
+    "game/command-hub-runtime.mjs"
+  ],
+  "trialTitanIds": [
+    "TG-TITAN-002",
+    "TG-TITAN-005",
+    "TG-TITAN-010"
+  ],
+  "trialModes": [
+    {
+      "id": "TEMP_LOADOUT",
+      "label": "Temporary Loadout",
+      "rule": "Borrowed relics vanish after the showcase; only Trial Favor persists.",
+      "scoreFocus": [
+        "role fit",
+        "safe experimentation",
+        "no permanent gear grant"
+      ]
+    },
+    {
+      "id": "FACTION_TRIAL",
+      "label": "Faction Trial",
+      "rule": "Aten Ra tactical pressure teaches roster difference without requiring ownership.",
+      "scoreFocus": [
+        "faction identity",
+        "battlefield fit",
+        "collection reason"
+      ]
+    },
+    {
+      "id": "ASCENSION_SHOWCASE",
+      "label": "Divine Ascension Preview",
+      "rule": "Signature burst is demonstrated at capped power; no ranked or shop currency rewards.",
+      "scoreFocus": [
+        "Divinity timing",
+        "signature preview",
+        "anti-pay-to-win cap"
+      ]
+    }
+  ],
+  "temporaryLoadoutRules": [
+    "Each trial attempt creates a tempLoadout with relic, gearScore, and expires=END_OF_TRIAL.",
+    "Temporary gear cannot be claimed, sold, fused, ranked, or used in raid economy.",
+    "Trial completion may grant Trial Favor, starter shards, XP, and at most first-showcase relic discovery credit.",
+    "Repeated showcases decay rewards and preserve only best score history."
+  ],
+  "factionTrialRules": [
+    "Every completion writes factionTrials.bestScores by factionId.",
+    "Faction trial history records factionId, titanId, score, quality, and timestamp.",
+    "Trials teach faction combat philosophy without locking missions behind ownership.",
+    "Conversion path is recommendation and favor economy only, never mandatory purchase pressure."
+  ],
+  "qualityBands": {
+    "S": 340,
+    "A": 310,
+    "B": 270,
+    "C": 120
+  },
+  "approachRules": {
+    "STUDIED": {
+      "scoreBonus": 42,
+      "damageTaken": 1,
+      "turns": 4,
+      "read": "Safest learning route; best for preserving Favor efficiency."
+    },
+    "BALANCED": {
+      "scoreBonus": 34,
+      "damageTaken": 3,
+      "turns": 3,
+      "read": "Default showcase route; balanced score and risk."
+    },
+    "AGGRESSIVE": {
+      "scoreBonus": 20,
+      "damageTaken": 5,
+      "turns": 2,
+      "read": "Fast clear; lower learning bonus and higher damage."
+    }
+  },
+  "rewardGuardrails": [
+    "Trial Favor persists; borrowed gear does not.",
+    "No shop currency, PvP rating, raid tokens, or uncapped materials from trials.",
+    "First-showcase rewards are stronger than repeats to avoid farming loops.",
+    "Best scores inform recommendations, not hard locks."
+  ],
+  "acceptanceCriteria": [
+    "Command Hub exposes a Trials tab with trial options from canonical Titans.",
+    "A trial attempt creates ACTIVE state, tempLoadout, mode label, lessons, and save-backed attempt history.",
+    "Resolving a trial creates titanTrials completion, factionTrials completion, pending TITAN_TRIAL cache, and Trial Favor resource.",
+    "Borrowed tempLoadout expires at END_OF_TRIAL and no permanent gear item is granted.",
+    "TG-DEV-027 is marked COMPLETED only when validation and browser smoke cover the loop."
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "id": "TG-COMMAND-HUB-001",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "generated": "2026-08-12T23:10:00Z",
   "status": "IMPLEMENTED",
-  "purpose": "Mobile-first Main Menu / Command Hub runtime foundation with implemented first-launch Awakening onboarding, canon starter Titan binding, save validation, campaign handoff, trials, raid economy, and battlefield entry.",
+  "purpose": "Mobile-first Main Menu / Command Hub runtime foundation with implemented first-launch Awakening onboarding, canon starter Titan binding, save validation, campaign handoff, Titan/Faction Trials, raid economy, and battlefield entry.",
   "canonFirst": true,
   "forbiddenContent": [
     "spaceships",
@@ -22,7 +22,8 @@
     "data/solo-battle-state-schema.json",
     "data/asset-registry.json",
     "game/index.html",
-    "data/player-onboarding-roster-journey.json"
+    "data/player-onboarding-roster-journey.json",
+    "data/titan-trial-system.json"
   ],
   "startupPipeline": [
     "BOOT",
@@ -67,7 +68,9 @@
     "quests": "array",
     "notifications": "array",
     "settings": "object",
-    "onboarding": "object"
+    "onboarding": "object",
+    "titanTrials": "object",
+    "factionTrials": "object"
   },
   "defaultPlayerState": {
     "playerId": "TG-PLAYER-LOCAL-001",
@@ -278,7 +281,10 @@
     "Command Hub smoke completes BOOT -> LOAD -> HUB -> TITANS -> BACK -> BATTLE -> RETURN -> HUB.",
     "TG-DEV-026 Awakening onboarding exposes exactly three canon starter Titans.",
     "TG-DEV-026 Awakening path tracks 12 roster-journey beats from starter choice to faction trial handoff.",
-    "Full roster remains hidden until Awakening completion and no starter selection requires payment."
+    "Full roster remains hidden until Awakening completion and no starter selection requires payment.",
+    "TG-DEV-027 Trials tab creates save-backed Titan Trial attempts with temporary loadouts.",
+    "TG-DEV-027 Trial completion writes titanTrials, factionTrials, pending TITAN_TRIAL rewards, and Trial Favor.",
+    "TG-DEV-027 Borrowed loadouts expire at END_OF_TRIAL and never grant permanent paid power."
   ],
   "counts": {
     "factions": 7,
@@ -309,6 +315,25 @@
       "Starter choice is canon-safe and limited to three roles.",
       "Full roster is hidden during onboarding to prevent roster flood.",
       "Second Titan desire is created through trials and story, not mandatory purchase pressure."
+    ]
+  },
+  "trialSystem": {
+    "taskId": "TG-DEV-027",
+    "status": "IMPLEMENTED",
+    "source": "data/titan-trial-system.json",
+    "trialTitanIds": [
+      "TG-TITAN-002",
+      "TG-TITAN-005",
+      "TG-TITAN-010"
+    ],
+    "modeCount": 3,
+    "temporaryLoadoutExpires": "END_OF_TRIAL",
+    "persistentResourceId": "TG-RES-TRIAL-FAVOR",
+    "antiPayToWinRules": [
+      "Trial Favor persists; borrowed gear does not.",
+      "No shop currency, PvP rating, raid tokens, or uncapped materials from trials.",
+      "First-showcase rewards are stronger than repeats to avoid farming loops.",
+      "Best scores inform recommendations, not hard locks."
     ]
   }
 }
