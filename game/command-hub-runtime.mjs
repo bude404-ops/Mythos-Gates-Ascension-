@@ -39,6 +39,26 @@ export function createCommandHubRuntime(DATA, mount){
     player.onboarding.awakeningMissionId ||= player.campaignProgress?.currentMissionId || missions()[0]?.id;
     return player.onboarding;
   }
+  const TRIAL_TITAN_IDS = ['TG-TITAN-002','TG-TITAN-005','TG-TITAN-010'];
+  const TRIAL_MODES = [
+    { id:'TEMP_LOADOUT', label:'Temporary Loadout', rule:'Borrowed relics vanish after the showcase; only Trial Favor persists.' },
+    { id:'FACTION_TRIAL', label:'Faction Trial', rule:'Aten Ra tactical pressure teaches roster difference without requiring ownership.' },
+    { id:'ASCENSION_SHOWCASE', label:'Divine Ascension Preview', rule:'Signature burst is demonstrated at capped power; no ranked or shop currency rewards.' }
+  ];
+  function trialTitans(){ const rows=TRIAL_TITAN_IDS.map(titanById).filter(Boolean); return rows.length?rows:titans().slice(1,4); }
+  function ensureTrials(player){
+    player.titanTrials ||= { attempts:[], completions:[], bestScores:{}, trialFavor:0, showcasedTitanIds:[], conversions:[] };
+    player.titanTrials.attempts ||= [];
+    player.titanTrials.completions ||= [];
+    player.titanTrials.bestScores ||= {};
+    player.titanTrials.showcasedTitanIds ||= [];
+    player.titanTrials.conversions ||= [];
+    player.titanTrials.trialFavor = Number(player.titanTrials.trialFavor||0);
+    player.factionTrials ||= { completions:[], bestScores:{} };
+    player.factionTrials.completions ||= [];
+    player.factionTrials.bestScores ||= {};
+    return player.titanTrials;
+  }
 
   const AudioManager = { play(hook){ if(state.player?.settings?.audioEnabled !== false) log('audio', hook); } };
   const AssetManager = {
@@ -97,7 +117,9 @@ export function createCommandHubRuntime(DATA, mount){
     ensureResource(player,'TG-RES-RAID-TOKENS','Raid Tokens',0);
     ensureResource(player,'TG-RES-SIGNATURE-ALLOY','Signature Alloy',0);
     ensureResource(player,'TG-RES-MASTERY-SEALS','Mastery Seals',0);
+    ensureResource(player,'TG-RES-TRIAL-FAVOR','Trial Favor',0);
     ensureOnboarding(player);
+    ensureTrials(player);
     player.experience ||= { current:0, next:100 };
     player.experience.current = Number(player.experience.current||0);
     player.experience.next = Number(player.experience.next||100);
@@ -179,6 +201,7 @@ export function createCommandHubRuntime(DATA, mount){
     ensureResource(player,'TG-RES-RAID-TOKENS','Raid Tokens').amount += cache.grants.raidTokens||0;
     ensureResource(player,'TG-RES-SIGNATURE-ALLOY','Signature Alloy').amount += cache.grants.signatureAlloy||0;
     ensureResource(player,'TG-RES-MASTERY-SEALS','Mastery Seals').amount += cache.grants.masterySeals||0;
+    ensureResource(player,'TG-RES-TRIAL-FAVOR','Trial Favor').amount += cache.grants.trialFavor||0;
     player.experience.current += cache.grants.xp||0;
     while(player.experience.current >= player.experience.next){ player.experience.current -= player.experience.next; player.level += 1; player.experience.next = Math.round(player.experience.next * 1.18); }
     cache.status='CLAIMED'; cache.claimedAt=new Date().toISOString();
@@ -251,10 +274,34 @@ export function createCommandHubRuntime(DATA, mount){
     player.campaignProgress.pendingRewards.push(cache); player.notifications=deriveNotifications(player); savePlayerState(); state.raid=null; log('raid','Raid completed',{raidId:attempt.raidId,score:attempt.finalScore,quality:economy.quality,rewardId:cache.id}); return cache;
   }
 
+  function createTrialAttempt(player, titanId=trialTitans()[0]?.id){
+    normalizeProgression(player); const titan=titanById(titanId)||trialTitans()[0]||titanById(player.selectedTitans?.[0]);
+    const mode=TRIAL_MODES[(player.titanTrials.attempts.length||0)%TRIAL_MODES.length];
+    const attempt={ id:`TG-TRIAL-ATTEMPT-${Date.now()}`, trialId:'TG-TRIAL-001', titanId:titan?.id, titanName:titan?.name||'Trial Titan', factionId:titan?.factionId||'TG-FACTION-001', mode:mode.id, modeLabel:mode.label, tempLoadout:{ relic:'Borrowed Solar Reliquary', gearScore:72, expires:'END_OF_TRIAL' }, status:'ACTIVE', score:0, turns:0, damageTaken:0, lessons:['Read battlefield fit','Test unique mechanic','Compare collection reason'], startedAt:new Date().toISOString() };
+    state.trial=attempt; player.titanTrials.attempts.unshift({ id:attempt.id, titanId:attempt.titanId, mode:attempt.mode, status:'ACTIVE', startedAt:attempt.startedAt }); player.titanTrials.attempts=player.titanTrials.attempts.slice(0,8); savePlayerState(); log('trial','Trial attempt started',{titanId:attempt.titanId,mode:attempt.mode}); return attempt;
+  }
+  function resolveTrialAttempt(player, attempt, approach='BALANCED'){
+    normalizeProgression(player); if(!attempt || attempt.status!=='ACTIVE') return null;
+    const titan=titanById(attempt.titanId)||{}; const aggressive=approach==='AGGRESSIVE', studied=approach==='STUDIED';
+    const roleScore=String(titan.role||titan.previousRole||'').length*3; const archetypeScore=(titan.soloArchetypes||[]).length*18;
+    const score=Math.max(120, 250 + roleScore + archetypeScore + (studied?42:aggressive?20:34));
+    const damageTaken=studied?1:aggressive?5:3; const turns=studied?4:aggressive?2:3; const quality=score>=340?'S':score>=310?'A':score>=270?'B':'C';
+    attempt.status='COMPLETE'; attempt.score=score; attempt.damageTaken=damageTaken; attempt.turns=turns; attempt.quality=quality; attempt.completedAt=new Date().toISOString();
+    const firstShowcase=!player.titanTrials.showcasedTitanIds.includes(attempt.titanId); if(firstShowcase) player.titanTrials.showcasedTitanIds.push(attempt.titanId);
+    const favor=Math.round(({S:18,A:14,B:10,C:7}[quality])*(firstShowcase?1.35:0.55)); const xp=Math.round(score/7); const shardGrant=firstShowcase?Math.round(score/26):Math.round(score/80);
+    player.titanTrials.trialFavor += favor; ensureResource(player,'TG-RES-TRIAL-FAVOR','Trial Favor').amount += favor;
+    player.titanTrials.bestScores[attempt.titanId]=Math.max(player.titanTrials.bestScores[attempt.titanId]||0, score);
+    const completion={ id:attempt.id, trialId:attempt.trialId, titanId:attempt.titanId, titanName:attempt.titanName, mode:attempt.mode, quality, score, firstShowcase, favor, completedAt:attempt.completedAt };
+    player.titanTrials.completions.unshift(completion); player.titanTrials.completions=player.titanTrials.completions.slice(0,12);
+    player.factionTrials.bestScores[attempt.factionId]=Math.max(player.factionTrials.bestScores[attempt.factionId]||0, score); player.factionTrials.completions.unshift({ factionId:attempt.factionId, titanId:attempt.titanId, score, quality, at:attempt.completedAt }); player.factionTrials.completions=player.factionTrials.completions.slice(0,12);
+    const cache={ id:`TG-REWARD-${attempt.trialId}-${attempt.titanId}-${Date.now()}`, missionId:attempt.trialId, title:`${attempt.titanName} Trial Cache`, firstClear:firstShowcase, missionType:'TITAN_TRIAL', status:'PENDING', summary:`${quality}-grade temporary loadout showcase. Trial Favor persists; borrowed gear does not.`, grants:{ gateShards:shardGrant, ascensionEmber:0, titanRelics:firstShowcase?1:0, raidTokens:0, signatureAlloy:0, masterySeals:0, trialFavor:favor, xp }, trialSummary:completion, createdAt:new Date().toISOString() };
+    player.campaignProgress.pendingRewards.push(cache); player.notifications=deriveNotifications(player); state.trial=null; savePlayerState(); log('trial','Trial completed',{titanId:attempt.titanId,quality,score,rewardId:cache.id}); return cache;
+  }
+
   function setRoute(route, payload={}){ Object.assign(state, payload, { route }); AudioManager.play(route==='hub'?'menu_open':'tab_change'); render(); }
   function bottomNav(){
-    const tabs = [{id:'battle',label:'BATTLE'},{id:'titans',label:'TITANS'},{id:'raid',label:'RAID'},{id:'codex',label:'CODEX'},{id:'command',label:'COMMAND'}];
-    const routeMap={battle:'hub',titans:'titans',raid:'raid',codex:'codex',command:'command'};
+    const tabs = [{id:'battle',label:'BATTLE'},{id:'titans',label:'TITANS'},{id:'trials',label:'TRIALS'},{id:'raid',label:'RAID'},{id:'command',label:'COMMAND'}];
+    const routeMap={battle:'hub',titans:'titans',trials:'trials',raid:'raid',command:'command'};
     return `<nav class="fixed inset-x-0 bottom-0 z-40 border-t border-neutral-800 bg-neutral-950/95 px-2 pb-[max(env(safe-area-inset-bottom),8px)] pt-2 backdrop-blur"><div class="mx-auto grid max-w-3xl grid-cols-5 gap-1">${tabs.slice(0,5).map(t=>`<button data-nav="${esc(t.id)}" class="min-h-[52px] rounded-2xl ${state.selectedTab===t.id?'bg-primary text-white':'bg-neutral-900 text-neutral-300'} px-2 text-xs font-black tracking-[.12em]" onclick="TGHub.openTab('${esc(t.id)}')">${esc(t.label||t.id)}</button>`).join('')}</div></nav>`;
   }
   function shell(content){ return `${content}${bottomNav()}`; }
@@ -324,6 +371,12 @@ export function createCommandHubRuntime(DATA, mount){
     const rows=realms().map(r=>`<button onclick="TGHub.setRealm('${esc(r.factionId)}')" class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4 text-left"><p class="text-xs font-black uppercase tracking-[.22em] text-primary">${esc(r.gate)}</p><h3 class="mt-1 text-2xl font-black">${esc(r.realm)}</h3><p class="mt-2 line-clamp-3 text-sm text-neutral-300">${esc(r.coreTone||r.visualLanguage)}</p><p class="mt-2 text-xs text-neutral-500">${esc((r.landmarks||[]).slice(0,3).join(' · '))}</p></button>`).join('');
     return shell(`${profileHeader(player)}<main class="mx-auto max-w-5xl space-y-4 px-3 pb-28 pt-3"><button onclick="TGHub.go('hub')" class="rounded-2xl bg-neutral-800 px-4 py-3 font-black">← Command Hub</button><header class="rounded-3xl border border-primary/40 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.28em] text-primary">Gates</p><h1 class="text-4xl font-black">Realm Network</h1><p class="mt-2 text-neutral-300">Gate presentation is realm-driven from the codex and asset registry.</p></header><div class="grid gap-3 md:grid-cols-2">${rows}</div></main>`);
   }
+  function trialsScreen(){
+    const player=ensurePlayerState(); normalizeProgression(player); const trials=ensureTrials(player); const active=state.trial?.status==='ACTIVE'; const options=trialTitans().map(t=>`<article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4"><p class="text-xs font-black uppercase tracking-[.22em] text-primary">${esc(t.faction)} · ${esc(t.rarity)} Trial</p><h3 class="mt-1 text-2xl font-black">${esc(t.name)}</h3><p class="mt-2 text-sm text-neutral-300">${esc(t.preferredBattlefield||t.collectionReason||t.role)}</p><p class="mt-2 rounded-2xl bg-neutral-950 p-3 text-xs text-neutral-500">${esc(t.notMandatoryRule||'Recommended advantage, never an ownership lock.')}</p><button onclick="TGHub.startTrial('${esc(t.id)}')" class="mt-4 w-full rounded-2xl bg-primary px-4 py-3 font-black text-white">START TEMP TRIAL</button></article>`).join('');
+    const modeRows=TRIAL_MODES.map(m=>`<p class="rounded-2xl bg-neutral-950 p-3 text-sm"><b class="text-primary">${esc(m.label)}</b> · ${esc(m.rule)}</p>`).join('');
+    const history=trials.completions.slice(0,4).map(c=>`<p class="rounded-2xl bg-neutral-950 p-3 text-sm"><b class="text-primary">${esc(c.quality)} Grade</b> · ${esc(c.titanName)} · +${esc(c.favor)} Favor · Score ${esc(c.score)}</p>`).join('') || '<p class="text-neutral-400">No trial completions yet.</p>';
+    return shell(`${profileHeader(player)}<main class="mx-auto max-w-5xl space-y-4 px-3 pb-28 pt-3"><button onclick="TGHub.go('hub')" class="rounded-2xl bg-neutral-800 px-4 py-3 font-black">← Command Hub</button><section class="rounded-3xl border border-primary/40 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.28em] text-primary">Titan Trials · Conversion Safe</p><h1 class="text-4xl font-black">Borrow power. Keep insight.</h1><p class="mt-2 text-neutral-300">Try specialist Titans with temporary loadouts, sample role gear, and Divine Ascension previews. Trial Favor persists; borrowed power does not.</p><div class="mt-4 grid gap-2 sm:grid-cols-4"><div class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs text-neutral-500">Trial Favor</p><b>${esc(trials.trialFavor)}</b></div><div class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs text-neutral-500">Showcased</p><b>${esc(trials.showcasedTitanIds.length)}</b></div><div class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs text-neutral-500">Completions</p><b>${esc(trials.completions.length)}</b></div><div class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs text-neutral-500">Policy</p><b>No Lock</b></div></div>${active?`<div class="mt-4 rounded-3xl border border-bull-500/40 bg-bull-950/20 p-4"><p class="text-xs font-black uppercase tracking-[.22em] text-bull-400">Active Temporary Loadout</p><h2 class="text-2xl font-black">${esc(state.trial.titanName)}</h2><p class="mt-1 text-neutral-300">${esc(state.trial.modeLabel)} · ${esc(state.trial.tempLoadout.relic)} · expires ${esc(state.trial.tempLoadout.expires)}</p><div class="mt-3 grid gap-2 sm:grid-cols-3"><button onclick="TGHub.finishTrial('STUDIED')" class="rounded-2xl bg-primary px-4 py-4 font-black text-white">STUDIED CLEAR</button><button onclick="TGHub.finishTrial('BALANCED')" class="rounded-2xl bg-neutral-800 px-4 py-4 font-black">BALANCED CLEAR</button><button onclick="TGHub.finishTrial('AGGRESSIVE')" class="rounded-2xl bg-bear-950 px-4 py-4 font-black text-bear-400">AGGRESSIVE CLEAR</button></div></div>`:''}</section><section class="grid gap-3 md:grid-cols-3">${options}</section><section class="grid gap-3 md:grid-cols-2"><article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4"><h2 class="text-2xl font-black">Trial Modes</h2><div class="mt-3 space-y-2">${modeRows}</div></article><article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4"><h2 class="text-2xl font-black">Completion Ledger</h2><div class="mt-3 space-y-2">${history}</div></article></section></main>`);
+  }
   function raidScreen(){
     const player=ensurePlayerState(); normalizeProgression(player); const attempt=state.raid; const boss=raidBoss(); const stages=raidStages(); const active=attempt?.status==='ACTIVE'; const victorious=attempt?.status==='VICTORY'; const current=active?attempt.stages[attempt.stageIndex]:null; const best=player.raidProgress.bestScores?.['TG-RAID-001:RAID_NORMAL']||0; const mastery=Object.values(player.raidProgress.masteryByTitanId||{}).sort((a,b)=>(b.bestScore||0)-(a.bestScore||0))[0];
     const stageCards=(active||victorious?attempt.stages:stages).map((s,i)=>{ const done=(active||victorious) && (i<attempt.stageIndex || victorious); const live=active && i===attempt.stageIndex; return `<article class="rounded-3xl border ${live?'border-primary bg-primary/10':done?'border-bull-500/40 bg-bull-950/20':'border-neutral-800 bg-neutral-900'} p-4"><p class="text-xs font-black uppercase tracking-[.2em] ${done?'text-bull-400':live?'text-primary':'text-neutral-500'}">Stage ${esc(s.stage)} ${done?'· Cleared':live?'· Active':''}</p><h3 class="mt-1 text-2xl font-black">${esc(s.name)}</h3><p class="mt-2 text-sm text-neutral-300">${esc(s.goal)}</p><div class="mt-3 flex flex-wrap gap-2">${(s.checks||[]).map(c=>badge(c)).join('')}</div></article>`; }).join('');
@@ -340,7 +393,7 @@ export function createCommandHubRuntime(DATA, mount){
     const player=ensurePlayerState(); normalizeProgression(player);
     const pending=(player.campaignProgress.pendingRewards||[]);
     const history=(player.campaignProgress.rewardHistory||[]).slice(0,6);
-    const rewardCards=pending.length?pending.map(r=>`<article class="rounded-3xl border border-primary/40 bg-primary/10 p-4"><p class="text-xs font-black uppercase tracking-[.22em] text-primary">${esc(r.firstClear?'First Clear':'Replay Cache')} · ${esc(r.missionType)} ${r.economy?.quality?`· ${esc(r.economy.quality)} Grade`:''}</p><h3 class="mt-1 text-2xl font-black">${esc(r.title)}</h3><p class="mt-1 text-sm text-neutral-300">${esc(r.summary)}</p><div class="mt-3 grid grid-cols-4 gap-2 text-center text-xs"><span class="rounded-2xl bg-neutral-950 p-2">Shards<br><b>${esc(r.grants.gateShards||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">Ember<br><b>${esc(r.grants.ascensionEmber||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">Relics<br><b>${esc(r.grants.titanRelics||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">XP<br><b>${esc(r.grants.xp||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">Raid<br><b>${esc(r.grants.raidTokens||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">Alloy<br><b>${esc(r.grants.signatureAlloy||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">Seals<br><b>${esc(r.grants.masterySeals||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">Mastery<br><b>${esc(r.grants.masteryXp||0)}</b></span></div><button onclick="TGHub.claimReward('${esc(r.id)}')" class="mt-4 w-full rounded-2xl bg-primary px-4 py-3 font-black text-white">CLAIM CACHE</button></article>`).join(''):'<article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4"><h3 class="text-2xl font-black">Reward Ledger</h3><p class="mt-2 text-neutral-400">No pending reward caches. Clear a mission to generate one.</p></article>';
+    const rewardCards=pending.length?pending.map(r=>`<article class="rounded-3xl border border-primary/40 bg-primary/10 p-4"><p class="text-xs font-black uppercase tracking-[.22em] text-primary">${esc(r.firstClear?'First Clear':'Replay Cache')} · ${esc(r.missionType)} ${r.economy?.quality?`· ${esc(r.economy.quality)} Grade`:''}</p><h3 class="mt-1 text-2xl font-black">${esc(r.title)}</h3><p class="mt-1 text-sm text-neutral-300">${esc(r.summary)}</p><div class="mt-3 grid grid-cols-4 gap-2 text-center text-xs"><span class="rounded-2xl bg-neutral-950 p-2">Shards<br><b>${esc(r.grants.gateShards||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">Ember<br><b>${esc(r.grants.ascensionEmber||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">Relics<br><b>${esc(r.grants.titanRelics||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">XP<br><b>${esc(r.grants.xp||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">Raid<br><b>${esc(r.grants.raidTokens||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">Alloy<br><b>${esc(r.grants.signatureAlloy||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">Seals<br><b>${esc(r.grants.masterySeals||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">Mastery<br><b>${esc(r.grants.masteryXp||0)}</b></span><span class="rounded-2xl bg-neutral-950 p-2">Favor<br><b>${esc(r.grants.trialFavor||0)}</b></span></div><button onclick="TGHub.claimReward('${esc(r.id)}')" class="mt-4 w-full rounded-2xl bg-primary px-4 py-3 font-black text-white">CLAIM CACHE</button></article>`).join(''):'<article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4"><h3 class="text-2xl font-black">Reward Ledger</h3><p class="mt-2 text-neutral-400">No pending reward caches. Clear a mission to generate one.</p></article>';
     const historyRows=history.length?history.map(r=>`<p class="mt-2 rounded-2xl bg-neutral-950 p-3 text-sm"><b class="text-primary">${esc(r.firstClear?'FIRST':'REPLAY')}</b> · ${esc(r.title)} · +${esc(r.grants.gateShards||0)} shards · +${esc(r.grants.xp||0)} XP</p>`).join(''):'<p class="mt-2 text-neutral-400">No claimed caches yet.</p>';
     return shell(`${profileHeader(player)}<main class="mx-auto max-w-5xl space-y-4 px-3 pb-28 pt-3"><button onclick="TGHub.go('hub')" class="rounded-2xl bg-neutral-800 px-4 py-3 font-black">← Command Hub</button><section class="rounded-3xl border border-primary/40 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.28em] text-primary">Command</p><h1 class="text-4xl font-black">Profile, Rewards, Settings</h1><p class="mt-2 text-neutral-300">Mission clears now create save-backed reward caches with first-clear protection and replay limits.</p></section><div class="grid gap-3 md:grid-cols-2"><article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4"><h3 class="text-2xl font-black">Notifications</h3>${player.notifications.length?player.notifications.map(n=>`<p class="mt-2 rounded-2xl bg-neutral-950 p-3 text-sm">${esc(n.label)}</p>`).join(''):'<p class="mt-2 text-neutral-400">No fake badges. Nothing pending.</p>'}</article><article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4"><h3 class="text-2xl font-black">Settings</h3><button onclick="TGHub.toggleMotion()" class="mt-3 rounded-2xl bg-neutral-800 px-4 py-3 font-black">Reduced Motion: ${player.settings.reducedMotion?'ON':'OFF'}</button><button onclick="TGHub.resetSave()" class="mt-3 block rounded-2xl bg-bear-950 px-4 py-3 font-black text-bear-400">Reset Local Save</button></article><section class="md:col-span-2 grid gap-3 md:grid-cols-2">${rewardCards}</section><article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4 md:col-span-2"><h3 class="text-2xl font-black">Claimed Reward History</h3>${historyRows}</article><article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4 md:col-span-2"><h3 class="text-2xl font-black">Diagnostics</h3><div class="mt-2 max-h-60 overflow-auto rounded-2xl bg-neutral-950 p-3 text-xs text-neutral-400">${state.logs.map(l=>`<p>${esc(l.at)} · ${esc(l.type)} · ${esc(l.message)}</p>`).join('')}</div></article></div></main>`);
   }
@@ -368,7 +421,7 @@ export function createCommandHubRuntime(DATA, mount){
   }
 
   function render(){
-    const views={ boot, title, awakening:awakeningScreen, hub, campaigns, mission:missionScreen, titans:titansScreen, gates:gatesScreen, raid:raidScreen, codex:codexScreen, command:commandScreen, battle:battleScreen };
+    const views={ boot, title, awakening:awakeningScreen, hub, campaigns, mission:missionScreen, titans:titansScreen, gates:gatesScreen, trials:trialsScreen, raid:raidScreen, codex:codexScreen, command:commandScreen, battle:battleScreen };
     mount.innerHTML=(views[state.route]||hub)();
   }
   function advanceBoot(){
@@ -383,7 +436,7 @@ export function createCommandHubRuntime(DATA, mount){
     start(){ render(); setTimeout(advanceBoot, 80); },
     enterHub(){ const p=ensurePlayerState(); AssetManager.preloadVisible(); AudioManager.play('gate_open'); setRoute(p.onboarding?.status==='COMPLETE'?'hub':'awakening'); },
     go(route){ setRoute(route); },
-    openTab(tab){ state.selectedTab=tab; const map={battle:'hub',titans:'titans',raid:'raid',gates:'gates',codex:'codex',command:'command'}; setRoute(map[tab]||'hub'); },
+    openTab(tab){ state.selectedTab=tab; const map={battle:'hub',titans:'titans',trials:'trials',raid:'raid',gates:'gates',codex:'codex',command:'command'}; setRoute(map[tab]||'hub'); },
     chooseStarter(id){
       const p=ensurePlayerState(); const starters=new Set(starterTitans().map(t=>t.id));
       if(!starters.has(id)){ log('onboarding-error','Rejected non-starter Titan',{id}); render(); return; }
@@ -425,6 +478,8 @@ export function createCommandHubRuntime(DATA, mount){
       const [cache]=p.campaignProgress.pendingRewards.splice(idx,1);
       applyRewardCache(p,cache); p.notifications=deriveNotifications(p); savePlayerState(); log('reward','Reward cache claimed',{id,grants:cache.grants}); render();
     },
+    startTrial(titanId){ const p=ensurePlayerState(); createTrialAttempt(p,titanId); state.selectedTab='trials'; setRoute('trials'); },
+    finishTrial(approach){ const p=ensurePlayerState(); const cache=resolveTrialAttempt(p,state.trial,approach); if(cache){ state.selectedTab='command'; setRoute('command'); } else render(); },
     startRaid(){ const p=ensurePlayerState(); createRaidAttempt(p,'RAID_NORMAL'); state.selectedTab='raid'; setRoute('raid'); },
     raidResolve(approach){ const attempt=ensureRaid(); resolveRaidStage(attempt,approach); savePlayerState(); render(); },
     raidClaim(){ const p=ensurePlayerState(); const cache=completeRaidAttempt(p,state.raid); if(cache){ state.selectedTab='command'; setRoute('command'); } else render(); },
