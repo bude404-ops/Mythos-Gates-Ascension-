@@ -59,6 +59,7 @@ const data = {
   titanTrialSystem: read('data/titan-trial-system.json'),
   missionTacticalProfileSystem: read('data/mission-tactical-profile-system.json'),
   enemyArchetypeRegistry: read('data/enemy-archetype-registry.json'),
+  creatureBehaviorRuntime: read('data/creature-behavior-runtime-contract.json'),
   endgameDashboard: read('data/endgame-dashboard.json'),
   commandHubContract: read('data/command-hub-contract.json'),
   assetRegistry: read('data/asset-registry.json'),
@@ -80,6 +81,7 @@ register('raidSystem', data.raidSystem, 'data/raid-system.json');
 register('titanTrialSystem', data.titanTrialSystem, 'data/titan-trial-system.json');
 register('missionTacticalProfileSystem', data.missionTacticalProfileSystem, 'data/mission-tactical-profile-system.json');
 register('enemyArchetypeRegistry', data.enemyArchetypeRegistry, 'data/enemy-archetype-registry.json');
+register('creatureBehaviorRuntime', data.creatureBehaviorRuntime, 'data/creature-behavior-runtime-contract.json');
 register('endgameDashboard', data.endgameDashboard, 'data/endgame-dashboard.json');
 register('commandHubContract', data.commandHubContract, 'data/command-hub-contract.json');
 register('assetRegistry', data.assetRegistry, 'data/asset-registry.json');
@@ -407,6 +409,19 @@ for (const budget of enemyRegistry.difficultyBudgets || []) {
 if(!enemyRegistry.runtimeRules?.some(rule => String(rule).includes('behavior, composition, hazards, and phases before raw health inflation'))) fail('TG-DEV-023 anti-stat-inflation rule missing');
 if(hub.enemyArchetypeRegistry?.status !== 'IMPLEMENTED' || hub.enemyArchetypeRegistry?.taskId !== 'TG-DEV-023') fail('Command Hub enemy archetype summary must implement TG-DEV-023');
 if(!hub.qualityGates?.some(g => g.includes('TG-DEV-023 every creature'))) fail('Command Hub quality gate missing TG-DEV-023');
+const creatureBehaviorRuntime = data.creatureBehaviorRuntime;
+if(creatureBehaviorRuntime.status !== 'IMPLEMENTED' || creatureBehaviorRuntime.taskId !== 'TG-DEV-008') fail('Creature behavior runtime contract must complete TG-DEV-008');
+for (const id of ['TG-CREATURE-001','TG-CREATURE-002']) if(!creatureBehaviorRuntime.implementedCreatures?.some(c => c.creatureId === id)) fail(`TG-DEV-008 missing behavior contract for ${id}`);
+for (const runtimeId of ['HOLLOW_SWARMER','GATEBORN_BRUTE']) if(!creatureBehaviorRuntime.implementedCreatures?.some(c => c.runtimeProfileId === runtimeId)) fail(`TG-DEV-008 missing runtime profile ${runtimeId}`);
+for (const intent of ['SWARM_RAKE','SWARM_SURROUND','GATE_STOMP','FRACTURE_ROAR','OBJECTIVE_CRUSH']) if(!creatureBehaviorRuntime.implementedCreatures?.some(c => (c.requiredIntents || []).includes(intent))) fail(`TG-DEV-008 missing required intent ${intent}`);
+for (const tag of ['MEMORY_SCRATCH','ISOLATION_PUNISH','ANCHOR_STOMP','MOMENTUM_BREAK','OBJECTIVE_DENIAL']) if(!creatureBehaviorRuntime.implementedCreatures?.some(c => (c.requiredBehaviorTags || []).includes(tag))) fail(`TG-DEV-008 missing behavior tag ${tag}`);
+for (const token of ['enemyIntentCounts','enemyBehaviorTags','enemyCounterplay','objectiveProgress']) if(!creatureBehaviorRuntime.implementedCreatures?.some(c => (c.telemetry || []).includes(token)) && !creatureBehaviorRuntime.implementedCreatures?.flatMap(c => c.telemetry || []).includes(token)) fail(`TG-DEV-008 missing telemetry ${token}`);
+if(!creatureBehaviorRuntime.runtimeRules?.some(rule => String(rule).includes('role / AI archetype'))) fail('TG-DEV-008 role-driven AI rule missing');
+if(!creatureBehaviorRuntime.uiRequirements?.some(rule => String(rule).includes('counterplay copy'))) fail('TG-DEV-008 UI counterplay requirement missing');
+if(hub.creatureBehaviorRuntime?.status !== 'IMPLEMENTED' || hub.creatureBehaviorRuntime?.taskId !== 'TG-DEV-008') fail('Command Hub creature behavior summary must implement TG-DEV-008');
+for (const intent of creatureBehaviorRuntime.implementedCreatures.flatMap(c => c.requiredIntents || [])) if(!browserBattle.includes(intent)) fail(`Browser battle engine missing TG-DEV-008 intent ${intent}`);
+for (const profile of creatureBehaviorRuntime.implementedCreatures.map(c => c.runtimeProfileId)) if(!browserBattle.includes(profile) && !hubRuntime.includes(profile)) fail(`Runtime missing TG-DEV-008 profile ${profile}`);
+if(!hub.qualityGates?.some(g => g.includes('TG-DEV-008 Hollow Wretch'))) fail('Command Hub quality gate missing TG-DEV-008 behavior records');
 const scaleSheets = data.artDirectorScaleSheets;
 if(scaleSheets.status !== 'IMPLEMENTED' || scaleSheets.taskId !== 'TG-DEV-030') fail('Art Director scale sheets must complete TG-DEV-030');
 if(scaleSheets.coverage?.implemented !== 8 || scaleSheets.coverage?.missing?.length !== 0) fail('TG-DEV-030 scale sheet coverage mismatch');

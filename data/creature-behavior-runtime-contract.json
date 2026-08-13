@@ -1,0 +1,86 @@
+{
+  "id": "TG-CREATURE-BEHAVIOR-RUNTIME-CONTRACT-001",
+  "taskId": "TG-DEV-008",
+  "version": "1.0.0",
+  "status": "IMPLEMENTED",
+  "purpose": "Playable battle loop contract for Hollow Wretch and Gateborn Colossus behavior records, AI intent selection, telegraphed counterplay, reaction windows, objective pressure, and telemetry.",
+  "sourceFiles": [
+    "data/creatures.json",
+    "game/browser-battle-engine.mjs",
+    "game/command-hub-runtime.mjs",
+    "scripts/test-creature-behavior-runtime.mjs"
+  ],
+  "implementedCreatures": [
+    {
+      "creatureId": "TG-CREATURE-001",
+      "name": "Hollow Wretch",
+      "combatRole": "SWARMER",
+      "runtimeProfileId": "HOLLOW_SWARMER",
+      "requiredIntents": [
+        "SWARM_RAKE",
+        "SWARM_SURROUND"
+      ],
+      "requiredBehaviorTags": [
+        "MEMORY_SCRATCH",
+        "ISOLATION_PUNISH"
+      ],
+      "counterplay": [
+        "DODGE",
+        "Guardian stance softens failed reactions",
+        "movement before pack pressure"
+      ],
+      "telemetry": [
+        "enemyIntentCounts",
+        "enemyBehaviorTags",
+        "enemyCounterplay"
+      ]
+    },
+    {
+      "creatureId": "TG-CREATURE-002",
+      "name": "Gateborn Colossus",
+      "combatRole": "BRUTE",
+      "runtimeProfileId": "GATEBORN_BRUTE",
+      "requiredIntents": [
+        "GATE_STOMP",
+        "FRACTURE_ROAR",
+        "OBJECTIVE_CRUSH"
+      ],
+      "requiredBehaviorTags": [
+        "ANCHOR_STOMP",
+        "MOMENTUM_BREAK",
+        "OBJECTIVE_DENIAL"
+      ],
+      "counterplay": [
+        "PARRY",
+        "DODGE",
+        "objective timing around Colossus turns"
+      ],
+      "telemetry": [
+        "enemyIntentCounts",
+        "enemyBehaviorTags",
+        "enemyCounterplay",
+        "objectiveProgress"
+      ]
+    }
+  ],
+  "runtimeRules": [
+    "Enemy actions must be selected from creature role / AI archetype and combatRole, not a generic strike table.",
+    "Every major Wretch and Colossus behavior must expose readable telegraph copy before damage or objective denial resolves.",
+    "Reaction windows must present DODGE, PARRY, or COUNTER_CHARGE counterplay with Momentum costs before consequences land.",
+    "Gateborn Colossus can pressure objectives through OBJECTIVE_CRUSH, but progress loss is capped and logged.",
+    "Hollow Wretch pack pressure must become more dangerous with multiple living Wretches, but remains counterable through movement, Dodge, and Guardian mitigation.",
+    "Mission scaling uses capped tactical budgets; difficulty comes from behavior, threat budget, and counterplay before raw stat inflation."
+  ],
+  "uiRequirements": [
+    "Battle cards show creature profile labels such as HOLLOW_SWARMER and GATEBORN_BRUTE.",
+    "Battle cards show intent labels, behavior tags, reaction type, threat budget, and counterplay copy when an intent is active.",
+    "Battle log records ENEMY_INTENT, REACTION_OPENED, OBJECTIVE_CRUSH, FRACTURE_ROAR, and reaction resolution events."
+  ],
+  "qualityGates": [
+    "TG-DEV-008 Hollow Wretch produces SWARM_RAKE and SWARM_SURROUND intents under deterministic setup.",
+    "TG-DEV-008 Gateborn Colossus produces GATE_STOMP, FRACTURE_ROAR, and OBJECTIVE_CRUSH intents under deterministic setup.",
+    "TG-DEV-008 reaction windows open with readable counterplay and Momentum costs.",
+    "TG-DEV-008 playable battle UI exposes behavior tags, threat budgets, and counterplay text.",
+    "TG-DEV-008 runtime telemetry records enemyIntentCounts, enemyBehaviorTags, enemyCounterplay, and objective denial effects."
+  ]
+}

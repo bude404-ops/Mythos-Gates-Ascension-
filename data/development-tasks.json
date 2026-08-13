@@ -129,18 +129,22 @@
   },
   {
     "id": "TG-DEV-008",
-    "description": "Prototype creature behavior records for Hollow Wretch and Gateborn Colossus in the playable battle loop.",
+    "description": "Implemented Hollow Wretch and Gateborn Colossus behavior records in the playable battle loop with role-driven intents, telegraphed counterplay, reaction windows, objective denial, UI labels, and runtime telemetry.",
     "director": "Gameplay Director",
     "priority": "Medium",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "dependencies": [
       "data/creatures.json",
-      "game/index.html"
+      "game/index.html",
+      "game/browser-battle-engine.mjs"
     ],
     "relatedEntity": "TG-CREATURE-001",
     "relatedFiles": [
       "data/creatures.json",
-      "game/index.html"
+      "data/creature-behavior-runtime-contract.json",
+      "game/browser-battle-engine.mjs",
+      "game/command-hub-runtime.mjs",
+      "scripts/test-creature-behavior-runtime.mjs"
     ]
   },
   {

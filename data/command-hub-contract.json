@@ -24,7 +24,8 @@
     "game/index.html",
     "data/player-onboarding-roster-journey.json",
     "data/titan-trial-system.json",
-    "data/mission-tactical-profile-system.json"
+    "data/mission-tactical-profile-system.json",
+    "data/creature-behavior-runtime-contract.json"
   ],
   "startupPipeline": [
     "BOOT",
@@ -290,6 +291,8 @@
     "TG-DEV-028 recommended Titans are valid, favored-not-required, and never ownership locks.",
     "TG-DEV-023 every creature resolves to a production enemy archetype and AI profile.",
     "TG-DEV-023 difficulty tiers expose explicit tactical scaling budgets before stat inflation.",
+    "TG-DEV-008 Hollow Wretch and Gateborn Colossus behavior records drive playable battle intents.",
+    "TG-DEV-008 battle UI exposes telegraphs, reaction counterplay, behavior tags, and threat budgets.",
     "TG-DEV-030 all 8 Art Director scale sheet types are implemented.",
     "TG-DEV-030 scale sheets preserve Titan/Gate mass, mobile crop readability, and non-sci-fi terrain language."
   ],
@@ -359,8 +362,36 @@
     "rule": "Mission recommendations surface tactical advantages only; any valid active Titan can attempt the mission."
   },
   "sourceFiles": [
-    "data/enemy-archetype-registry.json"
+    "data/enemy-archetype-registry.json",
+    "data/creature-behavior-runtime-contract.json"
   ],
+  "creatureBehaviorRuntime": {
+    "taskId": "TG-DEV-008",
+    "status": "IMPLEMENTED",
+    "source": "data/creature-behavior-runtime-contract.json",
+    "creatureIds": [
+      "TG-CREATURE-001",
+      "TG-CREATURE-002"
+    ],
+    "runtimeProfiles": [
+      "HOLLOW_SWARMER",
+      "GATEBORN_BRUTE"
+    ],
+    "intentCoverage": [
+      "SWARM_RAKE",
+      "SWARM_SURROUND",
+      "GATE_STOMP",
+      "FRACTURE_ROAR",
+      "OBJECTIVE_CRUSH"
+    ],
+    "telemetry": [
+      "enemyIntentCounts",
+      "enemyBehaviorTags",
+      "enemyCounterplay",
+      "objectiveProgress"
+    ],
+    "rule": "Creature difficulty must be readable through telegraphed behavior and counterplay before damage or objective denial resolves."
+  },
   "enemyArchetypeRegistry": {
     "taskId": "TG-DEV-023",
     "status": "IMPLEMENTED",

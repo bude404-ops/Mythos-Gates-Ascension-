@@ -10,7 +10,7 @@
     "build": "npm run index && npm run validate && node scripts/build-pages.mjs",
     "test": "npm run build",
     "sync:github": "node scripts/sync-github.mjs",
-    "precommit:verify": "npm run audit:continuity && npm run build && npm run index:check && node scripts/visual-qa-smoke.mjs && npm run test:solo-battle && npm run test:solo-vertical-slice && npm run test:battlefield-telemetry && npm run test:battlefield-runtime && npm run test:campaign-playflow && npm run test:async-arena && npm run test:command-hub && npm run test:playable-battle-ui && node scripts/secret-scan.mjs",
+    "precommit:verify": "npm run audit:continuity && npm run build && npm run index:check && node scripts/visual-qa-smoke.mjs && npm run test:solo-battle && npm run test:solo-vertical-slice && npm run test:battlefield-telemetry && npm run test:battlefield-runtime && npm run test:campaign-playflow && npm run test:async-arena && npm run test:command-hub && npm run test:creature-behavior && npm run test:playable-battle-ui && node scripts/secret-scan.mjs",
     "index:check": "node scripts/check-index-fresh.mjs",
     "audit:continuity": "node scripts/audit-continuity-balance.mjs",
     "test:solo-battle": "node scripts/test-solo-battle-reducers.mjs",
@@ -20,6 +20,7 @@
     "test:async-arena": "node scripts/test-async-arena-snapshots.mjs",
     "test:command-hub": "node scripts/test-command-hub.mjs",
     "test:playable-battle-ui": "node scripts/test-playable-battle-ui.mjs",
+    "test:creature-behavior": "node scripts/test-creature-behavior-runtime.mjs",
     "test:battlefield-runtime": "node scripts/test-battlefield-runtime.mjs"
   },
   "engines": {
