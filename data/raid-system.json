@@ -1,13 +1,22 @@
 {
   "id": "TG-RAID-SYSTEM-001",
-  "version": "0.9.1",
+  "version": "1.0.0-deterministic-raid-framework",
+  "status": "IMPLEMENTED",
+  "taskId": "TG-DEV-024",
   "activeTitanRule": "One active player Titan only. Reserve support is deferred architecture, not initial gameplay.",
+  "frameworkPrinciples": [
+    "Every raid attempt is deterministic from stage profile, approach, tier, and one active Titan state.",
+    "Each stage has a readable tactical problem, preferred-but-not-required counterplay, and explicit carry-forward damage pressure.",
+    "Victory rewards are non-pay-to-win: first-clear bonuses, replay caps, mastery credit, and cosmetic/material outputs only.",
+    "Live PvP, squad fanout, paid power shortcuts, and hidden random rolls are forbidden in the initial framework."
+  ],
   "raidLoop": [
-    "Select one Titan and loadout",
-    "Preview raid stages, boss, modifiers, rewards",
-    "Enter stage chain",
-    "Resolve stage rewards and damage carry rules",
-    "Lock victory and assign raid rewards"
+    "Select one active Titan and loadout",
+    "Preview five Gate Warden stages, tier modifiers, score rules, and non-pay-to-win rewards",
+    "Enter deterministic stage chain",
+    "Resolve each stage through BALANCED, GUARDED, or AGGRESSIVE approach",
+    "Carry score, turn count, damage taken, stage tags, and reaction pressure forward",
+    "Lock victory and assign capped raid rewards plus Titan mastery credit"
   ],
   "difficulties": [
     "RAID_NORMAL",
@@ -16,6 +25,88 @@
     "RAID_ASCENDED",
     "RAID_MYTHIC"
   ],
+  "tierCaps": {
+    "RAID_NORMAL": { "scoreMultiplier": 1, "damageMultiplier": 1, "rewardMultiplier": 1, "maxReplayTokens": 6 },
+    "RAID_HARD": { "scoreMultiplier": 1.08, "damageMultiplier": 1.18, "rewardMultiplier": 1.18, "maxReplayTokens": 7 },
+    "RAID_ELITE": { "scoreMultiplier": 1.16, "damageMultiplier": 1.36, "rewardMultiplier": 1.34, "maxReplayTokens": 8 },
+    "RAID_ASCENDED": { "scoreMultiplier": 1.25, "damageMultiplier": 1.55, "rewardMultiplier": 1.55, "maxReplayTokens": 9 },
+    "RAID_MYTHIC": { "scoreMultiplier": 1.36, "damageMultiplier": 1.82, "rewardMultiplier": 1.8, "maxReplayTokens": 10 }
+  },
+  "approachRules": {
+    "BALANCED": { "scoreBonus": 12, "damageTaken": 3, "turns": 2, "read": "Best default route; strong score without overexposing the active Titan." },
+    "GUARDED": { "scoreBonus": 8, "damageTaken": 1, "turns": 3, "read": "Lower damage and safer carries; costs tempo and top-score ceiling." },
+    "AGGRESSIVE": { "scoreBonus": 3, "damageTaken": 5, "turns": 1, "read": "Fastest clear; risks damage penalties and asks for confident reaction timing." }
+  },
+  "stageProfiles": [
+    {
+      "stage": 1,
+      "name": "Sealfield Approach",
+      "goal": "Break the outer seal pillars before rupture lanes compress the approach.",
+      "problemTags": ["SEAL_OBJECTIVE", "LANE_PRESSURE", "OPENING_TEMPO"],
+      "checks": ["sealPillars", "safeLaneRead", "momentumEntry"],
+      "preferredCounters": ["Mobile Titans", "objective burst", "GUARDED if damage carry matters"],
+      "target": 2,
+      "baseScore": 140,
+      "carryRisk": "Low damage, high tempo value. Poor clears reduce later score ceiling."
+    },
+    {
+      "stage": 2,
+      "name": "Guardian Interdiction",
+      "goal": "Survive the Gate Warden's guard constructs while holding center access.",
+      "problemTags": ["AD_CONTROL", "REACTION_DISCIPLINE", "POSITION_HOLD"],
+      "checks": ["guardBreak", "reactionWindow", "centerControl"],
+      "preferredCounters": ["Defender stance", "reaction success", "BALANCED for score"],
+      "target": 2,
+      "baseScore": 132,
+      "carryRisk": "Medium damage. Failed reaction discipline raises mastery cost."
+    },
+    {
+      "stage": 3,
+      "name": "Weakness Window",
+      "goal": "Expose the Warden's core by forcing terrain interaction at the right beat.",
+      "problemTags": ["WEAKNESS_WINDOW", "TERRAIN_TRIGGER", "BURST_TIMING"],
+      "checks": ["terrainTrigger", "weaknessExpose", "burstTurn"],
+      "preferredCounters": ["Controller Titans", "burst after exposure", "AGGRESSIVE only if healthy"],
+      "target": 1,
+      "baseScore": 124,
+      "carryRisk": "Low turn count but high misplay penalty. Drives S-rank eligibility."
+    },
+    {
+      "stage": 4,
+      "name": "Gate Destabilization",
+      "goal": "Stabilize collapsing Gate lanes while the boss punishes predictable routes.",
+      "problemTags": ["LANE_COLLAPSE", "OBJECTIVE_DENIAL", "ROUTE_VARIETY"],
+      "checks": ["laneSwap", "objectiveHold", "routeDiversity"],
+      "preferredCounters": ["Flexible movement", "Divinity reserve", "GUARDED if carrying damage"],
+      "target": 2,
+      "baseScore": 116,
+      "carryRisk": "High damage carry. The safest place to spend defensive tempo."
+    },
+    {
+      "stage": 5,
+      "name": "Divine Enrage",
+      "goal": "Finish the Warden during Divine pressure before the Gate fully reopens.",
+      "problemTags": ["BOSS_ENRAGE", "FINAL_REACTION", "EXECUTION_WINDOW"],
+      "checks": ["enrageRead", "finalReaction", "executionWindow"],
+      "preferredCounters": ["Saved Momentum", "Divinity burst", "BALANCED for stable victory"],
+      "target": 1,
+      "baseScore": 108,
+      "carryRisk": "Final damage and turn penalties decide reward quality."
+    }
+  ],
+  "scoreFormula": {
+    "stageScore": "max(40, round((stage.baseScore + approach.scoreBonus) * tier.scoreMultiplier))",
+    "damageTaken": "round(approach.damageTaken * tier.damageMultiplier)",
+    "finalScore": "max(0, totalStageScore - totalDamageTaken * 6 - totalTurns * 2)",
+    "qualityBands": { "S": 560, "A": 500, "B": 430, "C": 0 }
+  },
+  "economyCaps": {
+    "firstClearBonusTokens": 8,
+    "replayScalar": 0.42,
+    "weeklyReplayTokenCapByTier": "tierCaps[tier].maxReplayTokens",
+    "signatureAlloy": "quality material band scaled by tier reward multiplier",
+    "masteryXp": "score quality plus stage completion count; no purchasable power shortcut"
+  },
   "bosses": [
     {
       "id": "TG-RAID-BOSS-001",
@@ -50,5 +141,18 @@
         "Divine confrontation camera beats"
       ]
     }
+  ],
+  "acceptanceGates": [
+    "Raid system record exposes status IMPLEMENTED, five stageProfiles, tierCaps, approachRules, scoreFormula, and economyCaps.",
+    "Command Hub runtime reads stageProfiles/baseScore and displays problem tags, preferred counters, and carry risk per stage.",
+    "Browser smoke clears all five stages deterministically with one active Titan and verifies raid economy output.",
+    "Validation fails if paid power, live PvP, hidden random rolls, or squad fanout appear in the initial raid framework."
+  ],
+  "forbiddenInitialScope": [
+    "livePvP",
+    "paidPowerShortcut",
+    "hiddenRandomRolls",
+    "multiTitanSquadControl",
+    "uncappedReplayRewards"
   ]
 }

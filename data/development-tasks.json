@@ -297,10 +297,10 @@
   },
   {
     "id": "TG-DEV-024",
-    "description": "Replace raid system prototype with deterministic one-active-Titan multi-stage raid framework.",
+    "description": "Replaced raid system prototype with deterministic one-active-Titan multi-stage raid framework, canonical stage profiles, tier caps, approach rules, score formula, economy caps, Command Hub stage intel, and validation coverage.",
     "director": "Development Director",
     "priority": "High",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "dependencies": [
       "TG-RAID-DESIGN-DOCUMENT-001",
       "data/raid-system.json"
@@ -309,8 +309,12 @@
     "relatedFiles": [
       "data/raid-design-document.json",
       "data/raid-system.json",
-      "game/index.html"
-    ]
+      "game/command-hub-runtime.mjs",
+      "game/index.html",
+      "scripts/test-command-hub.mjs",
+      "scripts/validate-content.mjs"
+    ],
+    "completedAt": "2026-08-13"
   },
   {
     "id": "TG-DEV-025",

@@ -54,6 +54,8 @@ const data = {
   soloBattleStateSchema: read('data/solo-battle-state-schema.json'),
   soloVerticalSlice: read('data/solo-vertical-slice.json'),
   asyncArenaSystem: read('data/async-arena-system.json'),
+  weeklyTrials: read('data/weekly-trials.json'),
+  raidSystem: read('data/raid-system.json'),
   endgameDashboard: read('data/endgame-dashboard.json'),
   commandHubContract: read('data/command-hub-contract.json'),
   assetRegistry: read('data/asset-registry.json')
@@ -66,6 +68,8 @@ register('project', data.project, 'data/project.json');
 register('soloBattleStateSchema', data.soloBattleStateSchema, 'data/solo-battle-state-schema.json');
 register('soloVerticalSlice', data.soloVerticalSlice, 'data/solo-vertical-slice.json');
 register('asyncArenaSystem', data.asyncArenaSystem, 'data/async-arena-system.json');
+register('weeklyTrials', data.weeklyTrials, 'data/weekly-trials.json');
+register('raidSystem', data.raidSystem, 'data/raid-system.json');
 register('endgameDashboard', data.endgameDashboard, 'data/endgame-dashboard.json');
 register('commandHubContract', data.commandHubContract, 'data/command-hub-contract.json');
 register('assetRegistry', data.assetRegistry, 'data/asset-registry.json');
@@ -296,12 +300,24 @@ for (const file of ['index.html','game/index.html','game/tactical-map-prototype.
 const game = fs.readFileSync(path.join(root,'game/index.html'),'utf8');
 const hubRuntime = fs.readFileSync(path.join(root,'game/command-hub-runtime.mjs'),'utf8');
 if(!game.includes('OPEN THE TITAN GATE') || !game.includes('createCommandHubRuntime') || !game.includes('Command Hub')) fail('Playable Command Hub integrity check failed');
-for (const token of ['BOOT_STAGES','validatePlayerState','getNextRecommendedAction','AssetManager','AudioManager','deriveNotifications','bottomNav','Titan Roster','Realm Network','Lore Registry','Playable Solo Battle','battleBasic','battleObjective','normalizeProgression','createRewardCache','claimReward','pendingRewards','rewardHistory','STARTER_TITAN_IDS','AWAKENING_BEATS','starterTitans','ensureOnboarding','Awakening Protocol','chooseStarter','finishAwakening','TRIAL_TITAN_IDS','TRIAL_MODES','trialTitans','ensureTrials','createTrialAttempt','resolveTrialAttempt','trialsScreen','startTrial','finishTrial','Trial Favor','Temporary Loadout','borrowed gear does not','raidProgress','createRaidAttempt','resolveRaidStage','completeRaidAttempt','resolveRaidEconomy','applyRaidMastery','Raid Tokens','Signature Alloy','Mastery Seals','raidScreen','startRaid','raidResolve','raidClaim','The Gate Warden']) if(!hubRuntime.includes(token)) fail(`Command Hub runtime missing ${token}`);
+for (const token of ['BOOT_STAGES','validatePlayerState','getNextRecommendedAction','AssetManager','AudioManager','deriveNotifications','bottomNav','Titan Roster','Realm Network','Lore Registry','Playable Solo Battle','battleBasic','battleObjective','normalizeProgression','createRewardCache','claimReward','pendingRewards','rewardHistory','STARTER_TITAN_IDS','AWAKENING_BEATS','starterTitans','ensureOnboarding','Awakening Protocol','chooseStarter','finishAwakening','TRIAL_TITAN_IDS','TRIAL_MODES','trialTitans','ensureTrials','createTrialAttempt','resolveTrialAttempt','trialsScreen','startTrial','finishTrial','Trial Favor','Temporary Loadout','borrowed gear does not','raidProgress','raidRules','stageProfiles','problemTags','preferredCounters','carryRisk','tierCaps','approachRules','createRaidAttempt','resolveRaidStage','completeRaidAttempt','resolveRaidEconomy','applyRaidMastery','Raid Tokens','Signature Alloy','Mastery Seals','raidScreen','startRaid','raidResolve','raidClaim','The Gate Warden']) if(!hubRuntime.includes(token)) fail(`Command Hub runtime missing ${token}`);
 const browserBattle = fs.readFileSync(path.join(root,'game/browser-battle-engine.mjs'),'utf8');
 for (const token of ['createBattleState','applyTitanAction','applyReaction','autoAdvanceEnemyTurn','summarizeBattle','chooseEnemyIntent','HOLLOW_SWARMER','GATEBORN_BRUTE','OBJECTIVE_CRUSH','enemyIntentCounts','enemyBehaviorTags','enemyCounterplay','behaviorTag','counterplay','ISOLATION_PUNISH','OBJECTIVE_DENIAL','ARCHETYPE_BUDGETS','resolveMissionScaling','scaleEnemyForMission','enemyScaling','threatBudget']) if(!browserBattle.includes(token)) fail(`Browser battle engine missing ${token}`);
 const hub = data.commandHubContract;
 if(hub.status !== 'IMPLEMENTED' || hub.canonFirst !== true) fail('Command Hub contract must be IMPLEMENTED and canon-first');
 if(!Array.isArray(hub.startupPipeline) || hub.startupPipeline.length < 9 || hub.startupPipeline[0] !== 'BOOT' || !hub.startupPipeline.includes('MAIN_COMMAND_HUB')) fail('Command Hub startup pipeline incomplete');
+
+const raidSystem = data.raidSystem;
+if(!raidSystem || raidSystem.status !== 'IMPLEMENTED' || raidSystem.taskId !== 'TG-DEV-024') fail('Raid system framework must be implemented for TG-DEV-024');
+if(!Array.isArray(raidSystem.stageProfiles) || raidSystem.stageProfiles.length !== 5) fail('Raid framework must expose five deterministic stage profiles');
+for (const s of raidSystem.stageProfiles) {
+  if(!Array.isArray(s.problemTags) || s.problemTags.length < 2) fail(`Raid stage ${s.stage} missing tactical problem tags`);
+  if(!Array.isArray(s.preferredCounters) || s.preferredCounters.length < 2) fail(`Raid stage ${s.stage} missing preferred counters`);
+  if(!s.carryRisk || !s.baseScore) fail(`Raid stage ${s.stage} missing carry risk/base score`);
+}
+for (const token of ['RAID_NORMAL','RAID_HARD','RAID_ELITE','RAID_ASCENDED','RAID_MYTHIC']) if(!raidSystem.tierCaps?.[token]) fail(`Raid tier cap missing ${token}`);
+for (const token of ['BALANCED','GUARDED','AGGRESSIVE']) if(!raidSystem.approachRules?.[token]) fail(`Raid approach rule missing ${token}`);
+for (const forbidden of ['livePvP','paidPowerShortcut','hiddenRandomRolls','multiTitanSquadControl','uncappedReplayRewards']) if(!raidSystem.forbiddenInitialScope?.includes(forbidden)) fail(`Raid forbidden scope missing ${forbidden}`);
 if(!hub.defaultPlayerState?.selectedTitans?.every(id => titanIds.has(id))) fail('Command Hub default PlayerState references invalid Titan');
 if(!missionIds.has(hub.defaultPlayerState?.campaignProgress?.currentMissionId)) fail('Command Hub default PlayerState references invalid mission');
 if((hub.navigationTabs || []).length !== 5) fail('Command Hub must expose five bottom navigation sections');
