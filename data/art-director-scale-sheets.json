@@ -1,0 +1,241 @@
+{
+  "id": "TG-ART-DIRECTOR-SCALE-SHEETS-001",
+  "taskId": "TG-DEV-030",
+  "version": "1.0.0",
+  "generated": "2026-08-13",
+  "status": "IMPLEMENTED",
+  "source": "data/world-scale-reference.json",
+  "directive": "Mobile-first does not mean tiny. Tactical grid spaces are logical; visual scale must make Titans, Gates, and bosses feel immense.",
+  "unitSystem": "relativeScaleUnits from world-scale-reference; playerTitan=5.2 reference units",
+  "requiredSheetTypes": [
+    "normal_enemy",
+    "elite_enemy",
+    "player_titan",
+    "titan_scale_enemy",
+    "colossal_boss",
+    "titan_gate",
+    "architecture",
+    "battlefield_object"
+  ],
+  "mobileScaleChecks": [
+    "360x640 tactical zoom",
+    "390x844 normal zoom",
+    "430x932 boss zoom",
+    "landscape action camera",
+    "bottom action bar obstruction test"
+  ],
+  "globalRules": [
+    "Scale sheets must use shared baseline, contact shadows, and at least one mobile crop.",
+    "Never shrink Titans to solve composition; enlarge Gates, architecture, and battlefield space instead.",
+    "Terrain and hazards must be physical art features, never neon board-game overlays.",
+    "Every production prompt must preserve dark mythological fantasy and reject sci-fi scale cues."
+  ],
+  "sheets": [
+    {
+      "id": "TG-SCALE-SHEET-001",
+      "type": "normal_enemy",
+      "title": "Normal Enemy vs Titan",
+      "primarySubject": "standardEnemy",
+      "compareAgainst": [
+        "normalHumanoid",
+        "playerTitan",
+        "standardWall"
+      ],
+      "ratioToTitan": 0.22,
+      "composition": "Front 3/4 lineup: normal humanoid, standard Hollow enemy, player Titan ankle/knee anchor, one standard wall behind.",
+      "camera": "Low tactical camera, enemy readable at mobile zoom without stealing Titan mass.",
+      "promptOverlay": [
+        "enemy head below Titan knee line",
+        "small shadow footprint",
+        "clear silhouette weapon/limb profile"
+      ],
+      "qaChecks": [
+        "Normal enemy never reaches Titan waist.",
+        "Silhouette stays readable at 360px width.",
+        "Wall height remains below Titan torso."
+      ]
+    },
+    {
+      "id": "TG-SCALE-SHEET-002",
+      "type": "elite_enemy",
+      "title": "Elite Enemy vs Titan",
+      "primarySubject": "eliteEnemy",
+      "compareAgainst": [
+        "standardEnemy",
+        "playerTitan",
+        "largeEnemy"
+      ],
+      "ratioToTitan": 0.36,
+      "composition": "Escalation lineup showing standard enemy, elite enemy, and Titan with shared ground plane and contact shadows.",
+      "camera": "Slightly lower heroic angle; elite feels threatening but still clearly under Titan scale.",
+      "promptOverlay": [
+        "elite reaches below Titan hip",
+        "armor mass larger than standard enemy",
+        "do not make elite Titan-sized"
+      ],
+      "qaChecks": [
+        "Elite enemy reads as a squad captain, not a boss.",
+        "Titan remains the dominant vertical mass.",
+        "Armor volume is larger, not just brighter."
+      ]
+    },
+    {
+      "id": "TG-SCALE-SHEET-003",
+      "type": "player_titan",
+      "title": "Player Titan Hero Scale",
+      "primarySubject": "playerTitan",
+      "compareAgainst": [
+        "smallAgileTitan",
+        "heavyTitan",
+        "titanGateArch"
+      ],
+      "ratioToTitan": 1,
+      "composition": "Three Titan body classes on one baseline: agile, standard, heavy, with Gate arch ghosted behind.",
+      "camera": "Orthographic-friendly side/front comparison plus one action inset for attack arc size.",
+      "promptOverlay": [
+        "agile narrower and faster silhouette",
+        "heavy wider stance",
+        "Gate arch must tower above all Titans"
+      ],
+      "qaChecks": [
+        "All Titans feel playable at tactical grid scale.",
+        "Heavy Titan does not become colossal boss scale.",
+        "Attack arc extends beyond body silhouette."
+      ]
+    },
+    {
+      "id": "TG-SCALE-SHEET-004",
+      "type": "titan_scale_enemy",
+      "title": "Titan-Scale Enemy Duel Reference",
+      "primarySubject": "titanScaleEnemy",
+      "compareAgainst": [
+        "playerTitan",
+        "heavyTitan",
+        "titanGateArch"
+      ],
+      "ratioToTitan": 1.12,
+      "composition": "Duel staging: player Titan and Titan-scale enemy shoulder-to-shoulder, Gate arch and terrain object in background.",
+      "camera": "Boss-preview camera, both silhouettes equally readable with enemy slightly taller or longer-limbed.",
+      "promptOverlay": [
+        "enemy can match Titan height",
+        "distinct Hollow body language",
+        "not a colossal boss"
+      ],
+      "qaChecks": [
+        "Enemy is close enough to duel physically.",
+        "Readable counterplay weak points remain visible.",
+        "Gate arch still frames both figures above them."
+      ]
+    },
+    {
+      "id": "TG-SCALE-SHEET-005",
+      "type": "colossal_boss",
+      "title": "Colossal Boss vs Titan",
+      "primarySubject": "colossalBoss",
+      "compareAgainst": [
+        "playerTitan",
+        "titanScaleEnemy",
+        "titanGateArch"
+      ],
+      "ratioToTitan": 1.83,
+      "composition": "Player Titan foreground at foot/torso line of colossal boss; separate inset shows full boss silhouette against Gate arch.",
+      "camera": "Two-panel reference: readable gameplay crop and full majesty silhouette crop.",
+      "promptOverlay": [
+        "Titan reaches lower torso at most",
+        "boss limbs create terrain-like hazards",
+        "full body must not be cropped in reference inset"
+      ],
+      "qaChecks": [
+        "Boss feels like a battlefield event, not a large elite.",
+        "Gameplay crop keeps attack telegraphs readable.",
+        "Mobile boss zoom preserves objective UI space."
+      ]
+    },
+    {
+      "id": "TG-SCALE-SHEET-006",
+      "type": "titan_gate",
+      "title": "Titan Gate Landmark Scale",
+      "primarySubject": "titanGateArch",
+      "compareAgainst": [
+        "gateInteriorOpening",
+        "playerTitan",
+        "colossalBoss"
+      ],
+      "ratioToTitan": 2.69,
+      "composition": "Gate arch, inner opening, Titan, and colossal boss silhouettes aligned on the same threshold stones.",
+      "camera": "Wide landmark camera with clear inner passage and readable threshold material detail.",
+      "promptOverlay": [
+        "Gate must dwarf Titans",
+        "opening accepts Titan travel",
+        "threshold stones are battlefield-sized"
+      ],
+      "qaChecks": [
+        "Gate is visible as a landmark from battlefield camera.",
+        "Inner opening exceeds Titan height.",
+        "Architecture avoids sci-fi portal framing."
+      ]
+    },
+    {
+      "id": "TG-SCALE-SHEET-007",
+      "type": "architecture",
+      "title": "Architecture and Cover Scale",
+      "primarySubject": "templePylon",
+      "compareAgainst": [
+        "standardWall",
+        "statue",
+        "bridgeWidth",
+        "playerTitan"
+      ],
+      "ratioToTitan": 2.12,
+      "composition": "Temple pylon, wall, statue, bridge width markers, and Titan placed on shared tactical floor tiles.",
+      "camera": "Isometric tactical camera with lane/cover readability and no artificial grid glow.",
+      "promptOverlay": [
+        "cover can hide enemies but not Titans",
+        "statues are Titan-era monuments",
+        "bridge width supports Titan traversal"
+      ],
+      "qaChecks": [
+        "Architecture makes Titans feel immense without clipping them.",
+        "Cover is readable as gameplay terrain.",
+        "No modern/sci-fi scale cues appear."
+      ]
+    },
+    {
+      "id": "TG-SCALE-SHEET-008",
+      "type": "battlefield_object",
+      "title": "Interactive Battlefield Object Scale",
+      "primarySubject": "standardWall",
+      "compareAgainst": [
+        "normalHumanoid",
+        "standardEnemy",
+        "playerTitan",
+        "gateInteriorOpening"
+      ],
+      "ratioToTitan": 0.65,
+      "composition": "Solar seal pylon, fallen gate rib, breakable wall, and objective pedestal beside Titan feet and normal enemies.",
+      "camera": "Mobile combat zoom focused on tap targets, obstruction, and silhouette separation.",
+      "promptOverlay": [
+        "objects large enough to tap",
+        "hazards physical not UI markers",
+        "objective pedestal below Titan knee but above normal enemy waist"
+      ],
+      "qaChecks": [
+        "Tap target is visible at 360x640.",
+        "Object silhouette is separate from enemy silhouettes.",
+        "Terrain effects are embedded in art, not neon overlays."
+      ]
+    }
+  ],
+  "coverage": {
+    "required": 8,
+    "implemented": 8,
+    "missing": []
+  },
+  "exportChecklist": [
+    "Full reference lineup PNG",
+    "Mobile crop at 390x760",
+    "Silhouette-only pass",
+    "Prompt overlay annotation pass",
+    "Art Director approval note"
+  ]
+}

@@ -448,16 +448,28 @@
   },
   {
     "id": "TG-DEV-030",
-    "description": "Create Art Director scale reference sheets for normal enemy, elite, Titan, Titan-scale enemy, colossal boss, Gate, architecture, and battlefield objects.",
+    "description": "Implemented Art Director scale reference sheets for normal enemy, elite, Titan, Titan-scale enemy, colossal boss, Gate, architecture, and battlefield objects.",
     "director": "Art Director",
     "priority": "High",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "dependencies": [
       "TG-WORLD-SCALE-REFERENCE-001"
     ],
     "relatedEntity": "TG-WORLD-SCALE-REFERENCE-001",
     "relatedFiles": [
-      "data/world-scale-reference.json"
+      "data/world-scale-reference.json",
+      "data/art-director-scale-sheets.json",
+      "data/index.json",
+      "scripts/validate-content.mjs"
+    ],
+    "completedAt": "2026-08-13",
+    "completedIn": "TG-DEV-030-art-director-scale-sheets",
+    "completionSummary": "Created eight production scale reference sheet contracts with shared ratios, mobile crops, prompt overlays, camera notes, and QA checks bound to the world scale reference.",
+    "acceptanceEvidence": [
+      "All 8 required sheet types are implemented.",
+      "Every sheet includes compareAgainst references, ratioToTitan, composition, camera, prompt overlay, and QA checks.",
+      "Scale sheets preserve mobile readability and forbid shrinking Titans to solve composition.",
+      "Release validation rejects missing sheet types, missing QA checks, and invalid ratios."
     ]
   },
   {

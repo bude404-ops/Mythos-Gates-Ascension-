@@ -74,6 +74,7 @@ const files = {
   'player-onboarding-roster-journey.json': 'playerOnboardingRosterJourney',
   'battlefield-director.json': 'battlefieldDirector',
   'world-scale-reference.json': 'worldScaleReference',
+  'art-director-scale-sheets.json': 'artDirectorScaleSheets',
   'battlefield-vertical-slice.json': 'battlefieldVerticalSlice',
   'battlefield-runtime-architecture.json': 'battlefieldRuntimeArchitecture',
   'battlefield-quality-gate.json': 'battlefieldQualityGate',

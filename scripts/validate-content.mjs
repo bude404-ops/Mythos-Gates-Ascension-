@@ -62,6 +62,8 @@ const data = {
   endgameDashboard: read('data/endgame-dashboard.json'),
   commandHubContract: read('data/command-hub-contract.json'),
   assetRegistry: read('data/asset-registry.json'),
+  worldScaleReference: read('data/world-scale-reference.json'),
+  artDirectorScaleSheets: read('data/art-director-scale-sheets.json'),
   battlefieldRuntimeArchitecture: read('data/battlefield-runtime-architecture.json'),
   battlefieldVerticalSlice: read('data/battlefield-vertical-slice.json')
 };
@@ -81,6 +83,8 @@ register('enemyArchetypeRegistry', data.enemyArchetypeRegistry, 'data/enemy-arch
 register('endgameDashboard', data.endgameDashboard, 'data/endgame-dashboard.json');
 register('commandHubContract', data.commandHubContract, 'data/command-hub-contract.json');
 register('assetRegistry', data.assetRegistry, 'data/asset-registry.json');
+register('worldScaleReference', data.worldScaleReference, 'data/world-scale-reference.json');
+register('artDirectorScaleSheets', data.artDirectorScaleSheets, 'data/art-director-scale-sheets.json');
 register('battlefieldRuntimeArchitecture', data.battlefieldRuntimeArchitecture, 'data/battlefield-runtime-architecture.json');
 register('battlefieldVerticalSlice', data.battlefieldVerticalSlice, 'data/battlefield-vertical-slice.json');
 
@@ -109,6 +113,7 @@ const missionTagCounts = new Map();
 const missionRoleCounts = new Map();
 const enemyArchetypeKeys = new Set((data.enemyArchetypeRegistry.archetypes || []).map(a => a.key));
 const difficultyBudgetTiers = new Set((data.enemyArchetypeRegistry.difficultyBudgets || []).map(b => b.tier));
+const requiredScaleSheetTypes = new Set(['normal_enemy','elite_enemy','player_titan','titan_scale_enemy','colossal_boss','titan_gate','architecture','battlefield_object']);
 
 if(data.factions.length !== 7) fail(`Expected 7 playable factions, found ${data.factions.length}`);
 if(data.hollowThreatFaction.playable !== false || data.hollowThreatFaction.classification !== 'Hostile Threat Faction') fail('Hollow must remain a non-playable threat faction');
@@ -402,6 +407,21 @@ for (const budget of enemyRegistry.difficultyBudgets || []) {
 if(!enemyRegistry.runtimeRules?.some(rule => String(rule).includes('behavior, composition, hazards, and phases before raw health inflation'))) fail('TG-DEV-023 anti-stat-inflation rule missing');
 if(hub.enemyArchetypeRegistry?.status !== 'IMPLEMENTED' || hub.enemyArchetypeRegistry?.taskId !== 'TG-DEV-023') fail('Command Hub enemy archetype summary must implement TG-DEV-023');
 if(!hub.qualityGates?.some(g => g.includes('TG-DEV-023 every creature'))) fail('Command Hub quality gate missing TG-DEV-023');
+const scaleSheets = data.artDirectorScaleSheets;
+if(scaleSheets.status !== 'IMPLEMENTED' || scaleSheets.taskId !== 'TG-DEV-030') fail('Art Director scale sheets must complete TG-DEV-030');
+if(scaleSheets.coverage?.implemented !== 8 || scaleSheets.coverage?.missing?.length !== 0) fail('TG-DEV-030 scale sheet coverage mismatch');
+const implementedScaleSheetTypes = new Set((scaleSheets.sheets || []).map(sheet => sheet.type));
+for (const type of requiredScaleSheetTypes) if(!implementedScaleSheetTypes.has(type)) fail(`TG-DEV-030 missing scale sheet type ${type}`);
+for (const sheet of scaleSheets.sheets || []) {
+  if(!sheet.id || !sheet.title || !sheet.primarySubject || !sheet.composition || !sheet.camera) fail(`TG-DEV-030 incomplete scale sheet ${sheet.id || 'unknown'}`);
+  if(typeof sheet.ratioToTitan !== 'number' || sheet.ratioToTitan <= 0) fail(`${sheet.id}: invalid ratioToTitan`);
+  if(!Array.isArray(sheet.compareAgainst) || sheet.compareAgainst.length < 3) fail(`${sheet.id}: compareAgainst too thin`);
+  if(!Array.isArray(sheet.promptOverlay) || sheet.promptOverlay.length < 3) fail(`${sheet.id}: prompt overlay too thin`);
+  if(!Array.isArray(sheet.qaChecks) || sheet.qaChecks.length < 3) fail(`${sheet.id}: QA checks too thin`);
+}
+for (const rule of ['Never shrink Titans to solve composition; enlarge Gates, architecture, and battlefield space instead.','Terrain and hazards must be physical art features, never neon board-game overlays.']) if(!scaleSheets.globalRules?.includes(rule)) fail(`TG-DEV-030 global rule missing: ${rule}`);
+if(hub.artDirectorScaleSheets?.status !== 'IMPLEMENTED' || hub.artDirectorScaleSheets?.taskId !== 'TG-DEV-030') fail('Command Hub art scale summary must implement TG-DEV-030');
+if(!hub.qualityGates?.some(g => g.includes('TG-DEV-030 all 8 Art Director scale sheet types'))) fail('Command Hub quality gate missing TG-DEV-030');
 if(!hub.defaultPlayerState?.selectedTitans?.every(id => titanIds.has(id))) fail('Command Hub default PlayerState references invalid Titan');
 if(!missionIds.has(hub.defaultPlayerState?.campaignProgress?.currentMissionId)) fail('Command Hub default PlayerState references invalid mission');
 if((hub.navigationTabs || []).length !== 5) fail('Command Hub must expose five bottom navigation sections');

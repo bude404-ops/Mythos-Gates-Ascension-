@@ -1,9 +1,9 @@
 {
   "id": "TG-COMMAND-HUB-001",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "generated": "2026-08-12T23:10:00Z",
   "status": "IMPLEMENTED",
-  "purpose": "Mobile-first Main Menu / Command Hub runtime foundation with implemented first-launch Awakening onboarding, canon starter Titan binding, save validation, campaign handoff, enemy archetype registry, mission tactical profiles, Titan/Faction Trials, raid economy, and battlefield entry.",
+  "purpose": "Mobile-first Main Menu / Command Hub runtime foundation with implemented first-launch Awakening onboarding, canon starter Titan binding, save validation, campaign handoff, art scale references, enemy archetype registry, mission tactical profiles, Titan/Faction Trials, raid economy, and battlefield entry.",
   "canonFirst": true,
   "forbiddenContent": [
     "spaceships",
@@ -289,7 +289,9 @@
     "TG-DEV-028 all 280 campaign missions expose tactical problem tags and advantage roles.",
     "TG-DEV-028 recommended Titans are valid, favored-not-required, and never ownership locks.",
     "TG-DEV-023 every creature resolves to a production enemy archetype and AI profile.",
-    "TG-DEV-023 difficulty tiers expose explicit tactical scaling budgets before stat inflation."
+    "TG-DEV-023 difficulty tiers expose explicit tactical scaling budgets before stat inflation.",
+    "TG-DEV-030 all 8 Art Director scale sheet types are implemented.",
+    "TG-DEV-030 scale sheets preserve Titan/Gate mass, mobile crop readability, and non-sci-fi terrain language."
   ],
   "counts": {
     "factions": 7,
@@ -367,5 +369,14 @@
     "archetypes": 10,
     "missingCreatureAi": 0,
     "rule": "Enemy difficulty comes from readable AI, composition, hazards, and phases before raw stat inflation."
+  },
+  "artDirectorScaleSheets": {
+    "taskId": "TG-DEV-030",
+    "status": "IMPLEMENTED",
+    "source": "data/art-director-scale-sheets.json",
+    "requiredSheets": 8,
+    "implementedSheets": 8,
+    "mobileCrops": true,
+    "rule": "Scale references enlarge Gates, architecture, and battlefield space instead of shrinking Titans."
   }
 }
