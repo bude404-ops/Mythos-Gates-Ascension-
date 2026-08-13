@@ -31,6 +31,8 @@ const asyncArenaSystem = JSON.parse(readFileSync('data/async-arena-system.json',
 const endgameDashboard = JSON.parse(readFileSync('data/endgame-dashboard.json', 'utf8'));
 const campaignPlayflow = JSON.parse(readFileSync('data/campaign-playflow-contract.json', 'utf8'));
 const miniAppHtml = readFileSync('mini-app/galaxy-reapers-ascension.html', 'utf8');
+const visualBaselines = JSON.parse(readFileSync('data/visual-baselines.json', 'utf8'));
+const visualReview = JSON.parse(readFileSync('visual/reviews/TG-VISUAL-QA-BASELINE-APPROVAL-001.json', 'utf8'));
 
 
 if (campaignPlayflow.status !== 'IMPLEMENTED' || campaignPlayflow.flow.length !== 7 || !campaignPlayflow.routeStates.includes('battle')) {
@@ -42,6 +44,15 @@ if (!campaignPlayflow.flow.every(f => f.chapterCount === 5 && f.normalMissionCou
   process.exit(1);
 }
 const gameHtmlForPlayflow = readFileSync('game/index.html', 'utf8');
+
+if (!visualBaselines.length || visualBaselines.some(b => !['APPROVED'].includes(b.status))) {
+  console.error(JSON.stringify({ ok: false, visualBaselinesNotApproved: visualBaselines.filter(b => b.status !== 'APPROVED').map(b => b.id) }, null, 2));
+  process.exit(1);
+}
+if (visualReview.status !== 'APPROVED' || visualReview.taskId !== 'TG-DEV-009' || visualReview.screens.length !== visualBaselines.length || !visualReview.requiredSmokeScreens.every(s => requiredScreens.includes(s))) {
+  console.error(JSON.stringify({ ok: false, visualReviewArtifactInvalid: true }, null, 2));
+  process.exit(1);
+}
 
 const commandHub = JSON.parse(readFileSync('data/command-hub-contract.json', 'utf8'));
 const assetRegistry = JSON.parse(readFileSync('data/asset-registry.json', 'utf8'));

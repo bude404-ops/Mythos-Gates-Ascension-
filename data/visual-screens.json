@@ -20,12 +20,12 @@
     "id": "TG-SCREEN-PROFILE",
     "slug": "profile",
     "name": "Profile",
-    "status": "NOT TESTED",
+    "status": "PASS",
     "director": "Development Director",
-    "lastTestedBuild": "0.2.0",
-    "lastApprovedBuild": null,
+    "lastTestedBuild": "0.6.10",
+    "lastApprovedBuild": "0.6.10",
     "warnings": [
-      "Player profile is scaffolded until account/progression systems exist."
+      "Player profile remains scaffolded until account/progression systems exist."
     ],
     "errors": [],
     "affectedBy": [
@@ -219,12 +219,12 @@
     "id": "TG-SCREEN-SETTINGS",
     "slug": "settings",
     "name": "Settings",
-    "status": "NOT TESTED",
+    "status": "PASS",
     "director": "Development Director",
-    "lastTestedBuild": "0.2.0",
-    "lastApprovedBuild": null,
+    "lastTestedBuild": "0.6.10",
+    "lastApprovedBuild": "0.6.10",
     "warnings": [
-      "Settings are preview-only until save options are implemented."
+      "Settings remain preview-only until persistent save options are implemented."
     ],
     "errors": [],
     "affectedBy": [
@@ -256,12 +256,12 @@
     "slug": "full-flow",
     "category": "Flow",
     "director": "Development Director",
-    "status": "WARNING",
-    "lastTestedBuild": "0.3.2",
-    "lastApprovedBuild": "None",
+    "status": "PASS",
+    "lastTestedBuild": "0.6.10",
+    "lastApprovedBuild": "0.6.10",
     "description": "Primary release preview: 3D campaign journey, encounter reveal, hybrid battle, victory, and return to campaign.",
     "warnings": [
-      "Gameplay system in development: transition is visual architecture preview until campaign/battle engine mounts here."
+      "Gameplay system is still in staged preview, but campaign-to-battle visual continuity baseline is approved."
     ],
     "checks": [
       "Campaign path clarity",
@@ -269,7 +269,8 @@
       "Battlefield sprite grounding",
       "Victory to campaign continuity",
       "Mobile performance"
-    ]
+    ],
+    "errors": []
   },
   {
     "id": "TG-SCREEN-TACTICAL-MAP-PROTOTYPE",

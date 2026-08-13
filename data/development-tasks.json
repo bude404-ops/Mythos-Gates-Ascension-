@@ -154,7 +154,7 @@
     "description": "Approve initial Visual QA baselines after Creator reviews preview screens.",
     "director": "Development Director",
     "priority": "High",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "dependencies": [
       "data/visual-screens.json",
       "game/preview.html"
@@ -163,8 +163,11 @@
     "relatedFiles": [
       "game/preview.html",
       "data/visual-baselines.json",
-      "visual/README.md"
-    ]
+      "data/visual-screens.json",
+      "visual/reviews/TG-VISUAL-QA-BASELINE-APPROVAL-001.json"
+    ],
+    "completed": "2026-08-13",
+    "completionNotes": "Initial Visual QA baselines approved with reproducible review artifact and smoke validation coverage."
   },
   {
     "id": "TG-DEV-010",

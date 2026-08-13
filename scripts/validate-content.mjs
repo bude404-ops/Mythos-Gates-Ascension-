@@ -34,6 +34,7 @@ const data = {
   visualScreens: read('data/visual-screens.json'),
   visualChangeRules: read('data/visual-change-rules.json'),
   visualBaselines: read('data/visual-baselines.json'),
+  visualQaBaselineApproval: read('visual/reviews/TG-VISUAL-QA-BASELINE-APPROVAL-001.json'),
   realmCodex: read('data/realm-codex.json'),
   hybridVisualArchitecture: read('data/hybrid-visual-architecture.json'),
   assetPipeline: read('data/asset-pipeline.json'),
@@ -88,6 +89,7 @@ register('assetRegistry', data.assetRegistry, 'data/asset-registry.json');
 register('worldScaleReference', data.worldScaleReference, 'data/world-scale-reference.json');
 register('artDirectorScaleSheets', data.artDirectorScaleSheets, 'data/art-director-scale-sheets.json');
 register('battlefieldRuntimeArchitecture', data.battlefieldRuntimeArchitecture, 'data/battlefield-runtime-architecture.json');
+register('visualQaBaselineApproval', data.visualQaBaselineApproval, 'visual/reviews/TG-VISUAL-QA-BASELINE-APPROVAL-001.json');
 register('battlefieldVerticalSlice', data.battlefieldVerticalSlice, 'data/battlefield-vertical-slice.json');
 
 const factionIds = new Set(data.factions.map(f => f.id));
@@ -121,6 +123,12 @@ if(data.factions.length !== 7) fail(`Expected 7 playable factions, found ${data.
 if(data.hollowThreatFaction.playable !== false || data.hollowThreatFaction.classification !== 'Hostile Threat Faction') fail('Hollow must remain a non-playable threat faction');
 if(data.titans.length !== 63) fail(`Expected 63 Titans, found ${data.titans.length}`);
 if(data.characters.length < data.npcs.length) fail(`Character registry must mirror campaign NPC canon: ${data.characters.length}/${data.npcs.length}`);
+if (!data.visualBaselines.length || data.visualBaselines.some(b => b.status !== 'APPROVED')) fail('Visual baselines must all be APPROVED after TG-DEV-009');
+if (data.visualQaBaselineApproval.status !== 'APPROVED' || data.visualQaBaselineApproval.taskId !== 'TG-DEV-009' || data.visualQaBaselineApproval.screens.length !== data.visualBaselines.length) fail('Visual QA baseline approval artifact invalid');
+for (const b of data.visualBaselines) {
+  if (!visualScreenIds.has(b.screenId)) fail(`${b.id}: invalid visual baseline screenId ${b.screenId}`);
+  if (b.reviewArtifact !== 'visual/reviews/TG-VISUAL-QA-BASELINE-APPROVAL-001.json') fail(`${b.id}: missing Visual QA approval artifact`);
+}
 const characterSourceNpcIds = new Set(data.characters.map(c => c.sourceNpcId));
 for (const npc of data.npcs) if(!characterSourceNpcIds.has(npc.id)) fail(`${npc.id}: missing promoted non-playable character record`);
 for (const character of data.characters) {
