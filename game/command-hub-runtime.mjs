@@ -69,6 +69,10 @@ export function createCommandHubRuntime(DATA, mount){
     player.campaignProgress.claimedRewards ||= [];
     player.campaignProgress.pendingRewards ||= [];
     player.campaignProgress.rewardHistory ||= [];
+    player.raidProgress ||= { attempts:[], completions:[], bestScores:{} };
+    player.raidProgress.attempts ||= [];
+    player.raidProgress.completions ||= [];
+    player.raidProgress.bestScores ||= {};
     ensureResource(player,'TG-RES-GATE-SHARDS','Gate Shards',0);
     ensureResource(player,'TG-RES-ASCENSION-EMBER','Ascension Ember',0);
     ensureResource(player,'TG-RES-TITAN-RELICS','Titan Relics',0);
@@ -159,10 +163,45 @@ export function createCommandHubRuntime(DATA, mount){
     return cache;
   }
 
+  function raidSystem(){ return DATA.raidSystem || DATA['raid-system'] || {}; }
+  function raidDesign(){ return DATA.raidDesignDocument || DATA['raid-design-document'] || {}; }
+  function raidBoss(){ return (raidSystem().bosses||[])[0] || { id:'TG-RAID-BOSS-001', name:'The Gate Warden', phases:['Sealfield Approach','Guardian Interdiction','Weakness Window','Gate Destabilization','Divine Enrage'], mechanics:['Seal pillar objectives','Telegraphed hazard lanes','Reaction windows','Weakness exposure','Final Divine confrontation'], rewards:['raidCurrency','signatureGearMaterial'] }; }
+  const FALLBACK_RAID_STAGES = [
+    { stage:1, name:'Gatefield Trial', goal:'Solve battlefield hazard/objective under pressure.', checks:['movement','terrain interaction','Momentum routing'] },
+    { stage:2, name:'Elite Interdiction', goal:'Defeat protected elites or break ritual guards.', checks:['priority targeting','reaction discipline','build counterplay'] },
+    { stage:3, name:'Boss Revelation', goal:'Fight first boss phase and learn core mechanic.', checks:['weakness exposure','stance timing','telegraphed survival'] },
+    { stage:4, name:'Realm Collapse', goal:'Battlefield changes; hazards, routes, and objectives mutate.', checks:['adaptation','terrain destruction','resource conservation'] },
+    { stage:5, name:'Divine Confrontation', goal:'Final boss phase / enemy Titan Ascension duel.', checks:['Divinity timing','execution routing','perfect reactions'] }
+  ];
+  function raidStages(){ const rows=(raidDesign().standardStructure&&raidDesign().standardStructure.length?raidDesign().standardStructure:FALLBACK_RAID_STAGES); return rows.map((s,i)=>({ stage:s.stage||i+1, name:s.name||raidBoss().phases?.[i]||`Stage ${i+1}`, goal:s.goal||raidBoss().mechanics?.[i]||'Resolve raid mechanic.', checks:s.checks||[], target: i===0?2:i===1?2:i===2?1:i===3?2:1, score: 140-(i*8) })); }
+  function createRaidAttempt(player,tier='RAID_NORMAL'){
+    normalizeProgression(player); const boss=raidBoss(); const stages=raidStages();
+    const attempt={ id:`TG-RAID-ATTEMPT-${Date.now()}`, raidId:'TG-RAID-001', bossId:boss.id, name:boss.name, tier, activeTitanId:player.selectedTitans?.[0], stageIndex:0, status:'ACTIVE', score:0, damageTaken:0, turns:0, resolvedStages:[], modifiers:['Ruptured Gate Lanes','Reaction Discipline'], startedAt:new Date().toISOString(), stages };
+    state.raid=attempt; player.raidProgress.attempts.unshift({ id:attempt.id, raidId:attempt.raidId, tier, status:'ACTIVE', startedAt:attempt.startedAt }); player.raidProgress.attempts=player.raidProgress.attempts.slice(0,8); savePlayerState(); log('raid','Raid attempt started',{raidId:attempt.raidId,tier}); return attempt;
+  }
+  function ensureRaid(){ const p=ensurePlayerState(); if(!state.raid || state.raid.status!=='ACTIVE') return createRaidAttempt(p,'RAID_NORMAL'); return state.raid; }
+  function resolveRaidStage(attempt, approach='BALANCED'){
+    const s=attempt.stages[attempt.stageIndex]; if(!s || attempt.status!=='ACTIVE') return attempt;
+    const aggressive=approach==='AGGRESSIVE', guarded=approach==='GUARDED'; const stageScore=Math.max(40, s.score + (guarded?8:aggressive?3:12)); const damage=guarded?1:aggressive?5:3; const turns=guarded?3:aggressive?1:2;
+    attempt.score += stageScore; attempt.damageTaken += damage; attempt.turns += turns;
+    attempt.resolvedStages.push({ stage:s.stage, name:s.name, approach, score:stageScore, damageTaken:damage, turns, checks:s.checks, resolvedAt:new Date().toISOString() });
+    attempt.stageIndex += 1;
+    if(attempt.stageIndex >= attempt.stages.length){ attempt.status='VICTORY'; attempt.completedAt=new Date().toISOString(); attempt.finalScore=Math.max(0,attempt.score - attempt.damageTaken*6 - attempt.turns*2); }
+    return attempt;
+  }
+  function completeRaidAttempt(player, attempt){
+    normalizeProgression(player); if(!attempt || attempt.status!=='VICTORY') return null;
+    const key=`${attempt.raidId}:${attempt.tier}`; player.raidProgress.bestScores[key]=Math.max(player.raidProgress.bestScores[key]||0, attempt.finalScore||attempt.score||0);
+    const completion={ id:attempt.id, raidId:attempt.raidId, name:attempt.name, tier:attempt.tier, score:attempt.finalScore, damageTaken:attempt.damageTaken, turns:attempt.turns, completedAt:attempt.completedAt, stages:attempt.resolvedStages.length };
+    player.raidProgress.completions.unshift(completion); player.raidProgress.completions=player.raidProgress.completions.slice(0,12);
+    const cache={ id:`TG-REWARD-${attempt.raidId}-${attempt.tier}-${Date.now()}`, missionId:attempt.raidId, title:`${attempt.name} Raid Cache`, firstClear:!player.campaignProgress.claimedRewards.some(id=>String(id).includes(attempt.raidId)), missionType:attempt.tier, status:'PENDING', summary:'Raid victory cache secured through deterministic solo mastery scoring.', grants:{ gateShards:Math.round((attempt.finalScore||100)/12), ascensionEmber:1, titanRelics:attempt.tier==='RAID_NORMAL'?1:2, xp:Math.round((attempt.finalScore||100)/4) }, raidSummary:completion, createdAt:new Date().toISOString() };
+    player.campaignProgress.pendingRewards.push(cache); player.notifications=deriveNotifications(player); savePlayerState(); state.raid=null; log('raid','Raid completed',{raidId:attempt.raidId,score:attempt.finalScore,rewardId:cache.id}); return cache;
+  }
+
   function setRoute(route, payload={}){ Object.assign(state, payload, { route }); AudioManager.play(route==='hub'?'menu_open':'tab_change'); render(); }
   function bottomNav(){
-    const tabs = CONTRACT.navigationTabs || [{id:'battle',label:'BATTLE'},{id:'titans',label:'TITANS'},{id:'gates',label:'GATES'},{id:'codex',label:'CODEX'},{id:'command',label:'COMMAND'}];
-    const routeMap={battle:'hub',titans:'titans',gates:'gates',codex:'codex',command:'command'};
+    const tabs = [{id:'battle',label:'BATTLE'},{id:'titans',label:'TITANS'},{id:'raid',label:'RAID'},{id:'codex',label:'CODEX'},{id:'command',label:'COMMAND'}];
+    const routeMap={battle:'hub',titans:'titans',raid:'raid',codex:'codex',command:'command'};
     return `<nav class="fixed inset-x-0 bottom-0 z-40 border-t border-neutral-800 bg-neutral-950/95 px-2 pb-[max(env(safe-area-inset-bottom),8px)] pt-2 backdrop-blur"><div class="mx-auto grid max-w-3xl grid-cols-5 gap-1">${tabs.slice(0,5).map(t=>`<button data-nav="${esc(t.id)}" class="min-h-[52px] rounded-2xl ${state.selectedTab===t.id?'bg-primary text-white':'bg-neutral-900 text-neutral-300'} px-2 text-xs font-black tracking-[.12em]" onclick="TGHub.openTab('${esc(t.id)}')">${esc(t.label||t.id)}</button>`).join('')}</div></nav>`;
   }
   function shell(content){ return `${content}${bottomNav()}`; }
@@ -227,6 +266,13 @@ export function createCommandHubRuntime(DATA, mount){
     const rows=realms().map(r=>`<button onclick="TGHub.setRealm('${esc(r.factionId)}')" class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4 text-left"><p class="text-xs font-black uppercase tracking-[.22em] text-primary">${esc(r.gate)}</p><h3 class="mt-1 text-2xl font-black">${esc(r.realm)}</h3><p class="mt-2 line-clamp-3 text-sm text-neutral-300">${esc(r.coreTone||r.visualLanguage)}</p><p class="mt-2 text-xs text-neutral-500">${esc((r.landmarks||[]).slice(0,3).join(' · '))}</p></button>`).join('');
     return shell(`${profileHeader(player)}<main class="mx-auto max-w-5xl space-y-4 px-3 pb-28 pt-3"><button onclick="TGHub.go('hub')" class="rounded-2xl bg-neutral-800 px-4 py-3 font-black">← Command Hub</button><header class="rounded-3xl border border-primary/40 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.28em] text-primary">Gates</p><h1 class="text-4xl font-black">Realm Network</h1><p class="mt-2 text-neutral-300">Gate presentation is realm-driven from the codex and asset registry.</p></header><div class="grid gap-3 md:grid-cols-2">${rows}</div></main>`);
   }
+  function raidScreen(){
+    const player=ensurePlayerState(); normalizeProgression(player); const attempt=state.raid; const boss=raidBoss(); const stages=raidStages(); const active=attempt?.status==='ACTIVE'; const victorious=attempt?.status==='VICTORY'; const current=active?attempt.stages[attempt.stageIndex]:null; const best=player.raidProgress.bestScores?.['TG-RAID-001:RAID_NORMAL']||0;
+    const stageCards=(active||victorious?attempt.stages:stages).map((s,i)=>{ const done=(active||victorious) && (i<attempt.stageIndex || victorious); const live=active && i===attempt.stageIndex; return `<article class="rounded-3xl border ${live?'border-primary bg-primary/10':done?'border-bull-500/40 bg-bull-950/20':'border-neutral-800 bg-neutral-900'} p-4"><p class="text-xs font-black uppercase tracking-[.2em] ${done?'text-bull-400':live?'text-primary':'text-neutral-500'}">Stage ${esc(s.stage)} ${done?'· Cleared':live?'· Active':''}</p><h3 class="mt-1 text-2xl font-black">${esc(s.name)}</h3><p class="mt-2 text-sm text-neutral-300">${esc(s.goal)}</p><div class="mt-3 flex flex-wrap gap-2">${(s.checks||[]).map(c=>badge(c)).join('')}</div></article>`; }).join('');
+    const resolved=attempt?.resolvedStages?.length?attempt.resolvedStages.map(s=>`<p class="rounded-2xl bg-neutral-950 p-3 text-sm"><b class="text-primary">Stage ${esc(s.stage)}</b> · ${esc(s.approach)} · +${esc(s.score)} score · ${esc(s.damageTaken)} damage</p>`).join(''):'<p class="text-neutral-400">No raid stages resolved yet.</p>';
+    const completions=(player.raidProgress.completions||[]).slice(0,4).map(c=>`<p class="rounded-2xl bg-neutral-950 p-3 text-sm"><b class="text-primary">${esc(c.tier)}</b> · ${esc(c.name)} · Score ${esc(c.score)}</p>`).join('') || '<p class="text-neutral-400">No raid clears recorded.</p>';
+    return shell(`${profileHeader(player)}<main class="mx-auto max-w-5xl space-y-4 px-3 pb-28 pt-3"><button onclick="TGHub.go('hub')" class="rounded-2xl bg-neutral-800 px-4 py-3 font-black">← Command Hub</button><section class="rounded-3xl border border-primary/40 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.28em] text-primary">Solo Titan Raid · Deterministic</p><h1 class="text-4xl font-black">${esc(boss.name||'The Gate Warden')}</h1><p class="mt-2 text-neutral-300">One active Titan crosses a five-stage Gate gauntlet. No live PvP, no fabricated ranks — only local mastery scoring.</p><div class="mt-4 grid gap-2 sm:grid-cols-4"><div class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs text-neutral-500">Tier</p><b>${esc(attempt?.tier||'RAID_NORMAL')}</b></div><div class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs text-neutral-500">Stage</p><b>${esc(active?attempt.stageIndex+1:1)}/5</b></div><div class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs text-neutral-500">Score</p><b>${esc(attempt?.score||0)}</b></div><div class="rounded-2xl bg-neutral-950 p-3"><p class="text-xs text-neutral-500">Best</p><b>${esc(best)}</b></div></div>${victorious?`<div class="mt-4 rounded-3xl border border-bull-500/40 bg-bull-950/20 p-4"><p class="text-xs font-black uppercase tracking-[.22em] text-bull-400">Raid Victory Ready</p><h2 class="text-2xl font-black">Score ${esc(attempt.finalScore||attempt.score)}</h2><p class="mt-1 text-neutral-300">Lock the clear to write raid history and create a reward cache.</p><button onclick="TGHub.raidClaim()" class="mt-3 w-full rounded-3xl bg-primary px-5 py-4 font-black text-white">LOCK RAID VICTORY</button></div>`:active?`<div class="mt-4 rounded-3xl border border-neutral-800 bg-neutral-950 p-4"><p class="text-xs font-black uppercase tracking-[.22em] text-primary">Active Stage</p><h2 class="text-2xl font-black">${esc(current?.name)}</h2><p class="mt-1 text-neutral-300">${esc(current?.goal)}</p><div class="mt-3 grid grid-cols-3 gap-2"><button onclick="TGHub.raidResolve('BALANCED')" class="rounded-2xl bg-primary px-3 py-4 font-black text-white">BALANCED</button><button onclick="TGHub.raidResolve('GUARDED')" class="rounded-2xl bg-neutral-800 px-3 py-4 font-black">GUARDED</button><button onclick="TGHub.raidResolve('AGGRESSIVE')" class="rounded-2xl bg-bear-950 px-3 py-4 font-black text-bear-400">AGGRESSIVE</button></div></div>`:`<button onclick="TGHub.startRaid()" class="mt-5 w-full rounded-3xl bg-primary px-5 py-5 text-2xl font-black text-white">START GATE WARDEN RAID</button>`}</section><section class="grid gap-3 md:grid-cols-2">${stageCards}</section><section class="grid gap-3 md:grid-cols-2"><article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4"><h2 class="text-2xl font-black">Stage Ledger</h2><div class="mt-3 space-y-2">${resolved}</div>${attempt?.status==='VICTORY'?`<button onclick="TGHub.raidClaim()" class="mt-4 w-full rounded-3xl bg-primary px-5 py-4 font-black text-white">LOCK RAID VICTORY</button>`:''}</article><article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4"><h2 class="text-2xl font-black">Clears</h2><div class="mt-3 space-y-2">${completions}</div></article></section></main>`);
+  }
   function codexScreen(){
     const player=ensurePlayerState();
     const rows=[...factions().map(f=>({type:'Faction',id:f.id,title:f.name,body:f.culture||f.philosophy})),...realms().map(r=>({type:'Realm',id:r.id,title:r.realm,body:r.thesis||r.coreTone})),...titans().slice(0,12).map(t=>({type:'Titan',id:t.id,title:t.name,body:t.lore}))].map(e=>`<article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4"><p class="text-xs font-black uppercase tracking-[.2em] text-primary">${esc(e.type)} · ${esc(e.id)}</p><h3 class="mt-1 text-xl font-black">${esc(e.title)}</h3><p class="mt-2 line-clamp-4 text-sm text-neutral-300">${esc(e.body)}</p></article>`).join('');
@@ -264,7 +310,7 @@ export function createCommandHubRuntime(DATA, mount){
   }
 
   function render(){
-    const views={ boot, title, hub, campaigns, mission:missionScreen, titans:titansScreen, gates:gatesScreen, codex:codexScreen, command:commandScreen, battle:battleScreen };
+    const views={ boot, title, hub, campaigns, mission:missionScreen, titans:titansScreen, gates:gatesScreen, raid:raidScreen, codex:codexScreen, command:commandScreen, battle:battleScreen };
     mount.innerHTML=(views[state.route]||hub)();
   }
   function advanceBoot(){
@@ -279,7 +325,7 @@ export function createCommandHubRuntime(DATA, mount){
     start(){ render(); setTimeout(advanceBoot, 80); },
     enterHub(){ ensurePlayerState(); AssetManager.preloadVisible(); AudioManager.play('gate_open'); setRoute('hub'); },
     go(route){ setRoute(route); },
-    openTab(tab){ state.selectedTab=tab; const map={battle:'hub',titans:'titans',gates:'gates',codex:'codex',command:'command'}; setRoute(map[tab]||'hub'); },
+    openTab(tab){ state.selectedTab=tab; const map={battle:'hub',titans:'titans',raid:'raid',gates:'gates',codex:'codex',command:'command'}; setRoute(map[tab]||'hub'); },
     primary(){ const a=getNextRecommendedAction(); setRoute(a.route,{ missionId:a.missionId }); },
     openCampaign(factionId){ const player=ensurePlayerState(); const flow=(playflow().flow||[]).find(f=>f.factionId===factionId); const ch=flow?.chapterRoutes?.[0]; player.campaignProgress.currentFactionId=factionId; player.campaignProgress.currentChapterId=ch?.chapterId; player.campaignProgress.currentMissionId=ch?.defaultMissionId || ch?.normalMissionIds?.[0] || player.campaignProgress.currentMissionId; savePlayerState(); setRoute('mission'); },
     focusTitan(id){ state.focusTitanId=id; setRoute('titans'); },
@@ -312,6 +358,9 @@ export function createCommandHubRuntime(DATA, mount){
       const [cache]=p.campaignProgress.pendingRewards.splice(idx,1);
       applyRewardCache(p,cache); p.notifications=deriveNotifications(p); savePlayerState(); log('reward','Reward cache claimed',{id,grants:cache.grants}); render();
     },
+    startRaid(){ const p=ensurePlayerState(); createRaidAttempt(p,'RAID_NORMAL'); state.selectedTab='raid'; setRoute('raid'); },
+    raidResolve(approach){ const attempt=ensureRaid(); resolveRaidStage(attempt,approach); savePlayerState(); render(); },
+    raidClaim(){ const p=ensurePlayerState(); const cache=completeRaidAttempt(p,state.raid); if(cache){ state.selectedTab='command'; setRoute('command'); } else render(); },
     toggleMotion(){ const p=ensurePlayerState(); p.settings.reducedMotion=!p.settings.reducedMotion; savePlayerState(); render(); },
     resetSave(){ try{localStorage.removeItem(STORAGE_KEY);}catch(e){} state.player=canonicalDefaultPlayer(); state.startupMode='firstLaunch'; savePlayerState(); render(); }
   };
