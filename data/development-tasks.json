@@ -341,7 +341,7 @@
     "description": "Implement starter Titan choice, Awakening mission beats, and first solo onboarding sequence from canonical Aten Ra data.",
     "director": "Development Director",
     "priority": "High",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "dependencies": [
       "TG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001",
       "TG-CANON-FACTION-MATRIX-001"
@@ -351,6 +351,13 @@
       "data/player-onboarding-roster-journey.json",
       "data/canon-faction-matrix.json",
       "game/index.html"
+    ],
+    "completedAt": "2026-08-13T00:00:00Z",
+    "implementation": "Implemented playable first-launch Awakening onboarding in Command Hub runtime: three canon starter Titans, 12 roster-journey beats, save-backed onboarding state, full-roster hidden guardrail, and mission handoff.",
+    "acceptanceEvidence": [
+      "game/command-hub-runtime.mjs exposes AWAKENING_BEATS, awakeningProgress, chooseStarter, advanceAwakeningBeat, finishAwakening",
+      "data/command-hub-contract.json onboardingFlow.status=IMPLEMENTED",
+      "scripts/test-command-hub.mjs browser smoke validates starter choice, 12 beats, full roster unlock after Awakening"
     ]
   },
   {

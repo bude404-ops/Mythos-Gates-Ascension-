@@ -1,9 +1,9 @@
 {
   "id": "TG-COMMAND-HUB-001",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "generated": "2026-08-12T23:10:00Z",
   "status": "IMPLEMENTED",
-  "purpose": "Mobile-first Main Menu / Command Hub runtime foundation that consumes canonical Titan Gates data, PlayerState, campaign playflow, Gate/realm codex, asset registry, audio hooks, notifications, and unlock rules.",
+  "purpose": "Mobile-first Main Menu / Command Hub runtime foundation with implemented first-launch Awakening onboarding, canon starter Titan binding, save validation, campaign handoff, trials, raid economy, and battlefield entry.",
   "canonFirst": true,
   "forbiddenContent": [
     "spaceships",
@@ -21,7 +21,8 @@
     "data/mission-registry.json",
     "data/solo-battle-state-schema.json",
     "data/asset-registry.json",
-    "game/index.html"
+    "game/index.html",
+    "data/player-onboarding-roster-journey.json"
   ],
   "startupPipeline": [
     "BOOT",
@@ -65,7 +66,8 @@
     "campaignProgress": "object",
     "quests": "array",
     "notifications": "array",
-    "settings": "object"
+    "settings": "object",
+    "onboarding": "object"
   },
   "defaultPlayerState": {
     "playerId": "TG-PLAYER-LOCAL-001",
@@ -127,6 +129,18 @@
     "settings": {
       "reducedMotion": false,
       "audioEnabled": true
+    },
+    "onboarding": {
+      "status": "AWAKENING",
+      "starterTitanId": null,
+      "milestones": [
+        "GATE_SIGNAL_DETECTED"
+      ],
+      "awakeningMissionId": "TG-F01-C01-M01",
+      "currentBeat": 1,
+      "completedBeatIds": [],
+      "starterChoiceReason": null,
+      "fullRosterHidden": true
     }
   },
   "navigationTabs": [
@@ -261,7 +275,10 @@
     "Every bottom nav button routes to a real implemented screen or LockedContentPanel.",
     "getNextRecommendedAction resolves a real mission handoff.",
     "Startup save validation never silently overwrites corrupt data.",
-    "Command Hub smoke completes BOOT -> LOAD -> HUB -> TITANS -> BACK -> BATTLE -> RETURN -> HUB."
+    "Command Hub smoke completes BOOT -> LOAD -> HUB -> TITANS -> BACK -> BATTLE -> RETURN -> HUB.",
+    "TG-DEV-026 Awakening onboarding exposes exactly three canon starter Titans.",
+    "TG-DEV-026 Awakening path tracks 12 roster-journey beats from starter choice to faction trial handoff.",
+    "Full roster remains hidden until Awakening completion and no starter selection requires payment."
   ],
   "counts": {
     "factions": 7,
@@ -270,5 +287,28 @@
     "campaignFlows": 7,
     "selectedTitansDefault": 1
   },
-  "readyForFutureContent": true
+  "readyForFutureContent": true,
+  "onboardingFlow": {
+    "taskId": "TG-DEV-026",
+    "status": "IMPLEMENTED",
+    "source": "data/player-onboarding-roster-journey.json",
+    "starterTitanIds": [
+      "TG-TITAN-001",
+      "TG-TITAN-003",
+      "TG-TITAN-004"
+    ],
+    "starterFactionId": "TG-FACTION-001",
+    "beatCount": 12,
+    "fullRosterHiddenUntilComplete": true,
+    "completionMilestones": [
+      "STARTER_TITAN_BOUND",
+      "AWAKENING_MISSION_UNLOCKED",
+      "FULL_ROSTER_UNLOCKED_AFTER_AWAKENING"
+    ],
+    "antiPayToWinRules": [
+      "Starter choice is canon-safe and limited to three roles.",
+      "Full roster is hidden during onboarding to prevent roster flood.",
+      "Second Titan desire is created through trials and story, not mandatory purchase pressure."
+    ]
+  }
 }
