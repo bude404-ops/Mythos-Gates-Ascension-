@@ -23,15 +23,18 @@
     "description": "Approve first batch of Titan artwork for prompt-ready Titans.",
     "director": "Art Director",
     "priority": "High",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "dependencies": [
       "Titan prompt records"
     ],
     "relatedEntity": "TG-TITAN-001",
     "relatedFiles": [
-      "data/art-prompts.json",
-      "art/prompts/TG-TITAN-001.json"
-    ]
+      "art/prompts/TG-TITAN-001.json",
+      "data/art-approval-manifest.json",
+      "data/art-prompts.json"
+    ],
+    "completed": "2026-08-13",
+    "completionNotes": "First Aten Ra Titan prompt batch approved for generation through TG-ART-APPROVAL-MANIFEST-001; no final image import claimed."
   },
   {
     "id": "TG-DEV-002",
@@ -118,16 +121,19 @@
     "description": "Approve art for Mesha Gate-Scribe and The First Reopening Gate.",
     "director": "Art Director",
     "priority": "High",
-    "status": "NEXT",
+    "status": "COMPLETED",
     "dependencies": [
       "TG-PROMPT-NPC-001",
       "TG-PROMPT-MAP-001"
     ],
     "relatedEntity": "TG-NPC-001",
     "relatedFiles": [
+      "art/prompts/TG-PROMPT-MAP-001.json",
       "art/prompts/TG-PROMPT-NPC-001.json",
-      "art/prompts/TG-PROMPT-MAP-001.json"
-    ]
+      "data/art-approval-manifest.json"
+    ],
+    "completed": "2026-08-13",
+    "completionNotes": "Mesha Gate-Scribe and The First Reopening Gate prompts approved for generation through TG-ART-APPROVAL-MANIFEST-001; no final image import claimed."
   },
   {
     "id": "TG-DEV-008",

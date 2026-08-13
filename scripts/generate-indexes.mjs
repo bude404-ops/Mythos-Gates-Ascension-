@@ -17,6 +17,7 @@ const files = {
   'art-prompts.json': 'artPrompts',
   'artworks.json': 'artworks',
   'art-import-pipeline.json': 'artImportPipeline',
+  'art-approval-manifest.json': 'artApprovalManifest',
   'development-tasks.json': 'developmentTasks',
   'lore-index.json': 'loreEntries',
   'npcs.json': 'npcs',
@@ -106,6 +107,7 @@ const hollowEncounterSystem = read('data/hollow-encounter-system.json');
 const blueprint3dSystem = read('data/3d-blueprint-system.json');
 const blueprint3dRegistry = read('3D_Blueprints/Registry/blueprint-registry.json');
 const blueprint3dProductionQueue = read('data/3d-production-queue.json');
+const artApprovalManifest = read('data/art-approval-manifest.json');
 counts.hollowCreatures = (hollowEncounterSystem.roster || []).length;
 const artPrompts = read('data/art-prompts.json');
 const artPromptCategories = artPrompts.reduce((acc, prompt) => {
@@ -132,7 +134,9 @@ counts.blueprint3dBattlefields = blueprint3dRegistry.assets.filter(asset => asse
 counts.blueprint3dGates = blueprint3dRegistry.assets.filter(asset => asset.assetType === 'GATE').length;
 counts.blueprint3dProductionQueue = blueprint3dProductionQueue.queue.length;
 counts.blueprint3dFirstHandoffBatch = blueprint3dProductionQueue.firstHandoffBatch.length;
-const index = { generated, counts, files: sourceFiles, sourceFileFingerprints, artPromptCategories, artMapPrompts, blueprint3dSystem: { status: blueprint3dSystem.status, director: blueprint3dSystem.director, registryTotal: blueprint3dRegistry.assets.length, registry: blueprint3dSystem.registry, productionQueue: 'data/3d-production-queue.json', firstHandoffBatch: blueprint3dProductionQueue.firstHandoffBatch.map(item => item.assetId) } };
+counts.artApprovalBatches = artApprovalManifest.approvalBatches.length;
+counts.artApprovedPromptPackages = artApprovalManifest.approvalBatches.reduce((sum, batch) => sum + (batch.promptIds || []).length, 0);
+const index = { generated, counts, files: sourceFiles, sourceFileFingerprints, artPromptCategories, artMapPrompts, artApprovalManifest: { status: artApprovalManifest.status, approvalStatus: artApprovalManifest.approvalStatus, gatesClosed: artApprovalManifest.gatesClosed, stillBlocked: artApprovalManifest.stillBlocked, approvedPromptPackages: counts.artApprovedPromptPackages }, blueprint3dSystem: { status: blueprint3dSystem.status, director: blueprint3dSystem.director, registryTotal: blueprint3dRegistry.assets.length, registry: blueprint3dSystem.registry, productionQueue: 'data/3d-production-queue.json', firstHandoffBatch: blueprint3dProductionQueue.firstHandoffBatch.map(item => item.assetId) } };
 write('data/index.json', index);
 console.log(JSON.stringify(index, null, 2));
 

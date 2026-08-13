@@ -1,0 +1,87 @@
+{
+  "id": "TG-ART-APPROVAL-MANIFEST-001",
+  "name": "Titan Gates First Art Approval Manifest",
+  "version": "1.0.0",
+  "status": "IMPLEMENTED",
+  "approvalStatus": "APPROVED_FOR_GENERATION",
+  "created": "2026-08-13",
+  "director": "Art Director",
+  "scope": "Approves prompt packages for the first Titan art batch plus Mesha Gate-Scribe and The First Reopening Gate; this does not claim final image assets have been generated or imported.",
+  "canonRule": "Approval may refine composition and quality gates only; it may not invent lore, alter faction identity, or mark generated images as imported.",
+  "gatesClosed": [
+    "TG-DEV-001",
+    "TG-DEV-007"
+  ],
+  "stillBlocked": [
+    "TG-DEV-004"
+  ],
+  "approvalBatches": [
+    {
+      "id": "TG-ART-BATCH-TITAN-ATENRA-001",
+      "taskId": "TG-DEV-001",
+      "name": "Aten Ra First Titan Artwork Approval Batch",
+      "status": "APPROVED_FOR_GENERATION",
+      "count": 9,
+      "promptIds": [
+        "TG-PROMPT-001",
+        "TG-PROMPT-002",
+        "TG-PROMPT-003",
+        "TG-PROMPT-004",
+        "TG-PROMPT-005",
+        "TG-PROMPT-006",
+        "TG-PROMPT-007",
+        "TG-PROMPT-008",
+        "TG-PROMPT-009"
+      ],
+      "entityIds": [
+        "TG-TITAN-001",
+        "TG-TITAN-002",
+        "TG-TITAN-003",
+        "TG-TITAN-004",
+        "TG-TITAN-005",
+        "TG-TITAN-006",
+        "TG-TITAN-007",
+        "TG-TITAN-008",
+        "TG-TITAN-009"
+      ],
+      "approvalNotes": "Aten Ra Titan prompts are approved as the first coherent faction batch because shared gold/bronze/sacred-geometry identity improves style consistency, starter presentation, scale validation, and 3D silhouette reference cohesion."
+    },
+    {
+      "id": "TG-ART-BATCH-NPC-MAP-001",
+      "taskId": "TG-DEV-007",
+      "name": "Mesha Gate-Scribe and First Reopening Gate Approval Batch",
+      "status": "APPROVED_FOR_GENERATION",
+      "count": 2,
+      "promptIds": [
+        "TG-PROMPT-NPC-001",
+        "TG-PROMPT-MAP-001"
+      ],
+      "entityIds": [
+        "TG-NPC-001",
+        "TG-MAP-001"
+      ],
+      "approvalNotes": "Mesha and the first Gate battlefield are approved together because onboarding needs a readable guide figure and matching environment anchor before final art import."
+    }
+  ],
+  "qualityGates": [
+    "Mobile-readable silhouette at card and battlefield preview scale.",
+    "No sci-fi, firearms, spaceships, aliens, modern corporate UI, or generic superhero styling.",
+    "Faction identity must remain unmistakable: Aten Ra gold/bronze/sacred geometry/solar law for Titan batch.",
+    "Generated image may not be marked imported until a real asset file exists in the artwork pipeline.",
+    "Mesha remains non-playable campaign support; art may not imply a playable Hero class.",
+    "The First Reopening Gate must read as physical broken Gatefield terrain, not a neon board-game tile set."
+  ],
+  "rejectionTriggers": [
+    "Human-sized Titan silhouette.",
+    "Readable text/watermark/logo in the image.",
+    "Photorealistic celebrity/human face drift.",
+    "Sci-fi armor or weapon drift.",
+    "Loss of mobile readability in 360px vertical crop.",
+    "Visual contradiction of prompt negativePrompt constraints."
+  ],
+  "handoff": {
+    "nextTask": "TG-DEV-004",
+    "nextAction": "Generate or receive real approved image assets, then import them through art/imported and art/approved without fabricating filenames.",
+    "blockedReason": "External generated image asset still required."
+  }
+}

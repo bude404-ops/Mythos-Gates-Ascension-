@@ -38,6 +38,7 @@ const data = {
   realmCodex: read('data/realm-codex.json'),
   hybridVisualArchitecture: read('data/hybrid-visual-architecture.json'),
   assetPipeline: read('data/asset-pipeline.json'),
+  artApprovalManifest: read('data/art-approval-manifest.json'),
   githubSyncPolicy: read('data/github-sync-policy.json'),
   githubSyncStatus: read('data/github-sync-status.json'),
   changeHistory: read('data/change-history.json'),
@@ -96,6 +97,7 @@ register('worldScaleReference', data.worldScaleReference, 'data/world-scale-refe
 register('artDirectorScaleSheets', data.artDirectorScaleSheets, 'data/art-director-scale-sheets.json');
 register('battlefieldRuntimeArchitecture', data.battlefieldRuntimeArchitecture, 'data/battlefield-runtime-architecture.json');
 register('visualQaBaselineApproval', data.visualQaBaselineApproval, 'visual/reviews/TG-VISUAL-QA-BASELINE-APPROVAL-001.json');
+register('artApprovalManifest', data.artApprovalManifest, 'data/art-approval-manifest.json');
 register('battlefieldVerticalSlice', data.battlefieldVerticalSlice, 'data/battlefield-vertical-slice.json');
 
 const factionIds = new Set(data.factions.map(f => f.id));
@@ -128,6 +130,28 @@ const requiredScaleSheetTypes = new Set(['normal_enemy','elite_enemy','player_ti
 if(data.factions.length !== 7) fail(`Expected 7 playable factions, found ${data.factions.length}`);
 if(data.hollowThreatFaction.playable !== false || data.hollowThreatFaction.classification !== 'Hostile Threat Faction') fail('Hollow must remain a non-playable threat faction');
 if(data.titans.length !== 63) fail(`Expected 63 Titans, found ${data.titans.length}`);
+if(data.artApprovalManifest.status !== 'IMPLEMENTED' || data.artApprovalManifest.approvalStatus !== 'APPROVED_FOR_GENERATION') fail('Art approval manifest must be approved for generation');
+for (const taskId of ['TG-DEV-001','TG-DEV-007']) {
+  if(!(data.artApprovalManifest.gatesClosed || []).includes(taskId)) fail(`Art approval manifest must close ${taskId}`);
+  if(!data.tasks.some(t => t.id === taskId && t.status === 'COMPLETED' && (t.relatedFiles || []).includes('data/art-approval-manifest.json'))) fail(`${taskId}: completion must reference art approval manifest`);
+}
+if(!(data.artApprovalManifest.stillBlocked || []).includes('TG-DEV-004')) fail('Art approval manifest must keep final image import blocked until real generated assets exist');
+if(!Array.isArray(data.artApprovalManifest.approvalBatches) || data.artApprovalManifest.approvalBatches.length < 2) fail('Art approval manifest must include Titan and NPC/map approval batches');
+const approvedPromptIds = new Set();
+for (const batch of data.artApprovalManifest.approvalBatches) {
+  if(batch.status !== 'APPROVED_FOR_GENERATION') fail(`${batch.id}: batch must be approved for generation`);
+  if(!batch.taskId || !(data.artApprovalManifest.gatesClosed || []).includes(batch.taskId)) fail(`${batch.id}: batch taskId must be a closed approval gate`);
+  if(!Array.isArray(batch.promptIds) || batch.promptIds.length !== batch.count) fail(`${batch.id}: prompt count mismatch`);
+  for (const promptId of batch.promptIds) {
+    if(!promptIds.has(promptId)) fail(`${batch.id}: unknown approved prompt ${promptId}`);
+    approvedPromptIds.add(promptId);
+  }
+  if(!batch.approvalNotes) fail(`${batch.id}: missing approvalNotes`);
+}
+for (const required of ['TG-PROMPT-001','TG-PROMPT-NPC-001','TG-PROMPT-MAP-001']) if(!approvedPromptIds.has(required)) fail(`Art approval manifest missing required prompt ${required}`);
+if(!Array.isArray(data.artApprovalManifest.qualityGates) || data.artApprovalManifest.qualityGates.length < 6) fail('Art approval manifest quality gates too thin');
+if(!Array.isArray(data.artApprovalManifest.rejectionTriggers) || data.artApprovalManifest.rejectionTriggers.length < 6) fail('Art approval manifest rejection triggers too thin');
+if(data.artworks.length !== 0 && !data.artApprovalManifest.handoff?.nextAction?.includes('real approved image assets')) fail('Art approval manifest cannot bypass real image import gate');
 if(data.characters.length < data.npcs.length) fail(`Character registry must mirror campaign NPC canon: ${data.characters.length}/${data.npcs.length}`);
 if(!data.directors.some(d => d.id === 'TG-DIR-006' && d.name === '3D Asset Director')) fail('Missing 3D Asset Director');
 if(data.blueprint3dSystem.status !== 'IMPLEMENTED') fail('3D Blueprint System must be IMPLEMENTED');

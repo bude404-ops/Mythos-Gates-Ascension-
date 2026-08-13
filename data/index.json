@@ -10,6 +10,7 @@
     "artPrompts": 110,
     "artworks": 0,
     "artImportPipeline": 1,
+    "artApprovalManifest": 1,
     "developmentTasks": 45,
     "loreEntries": 35,
     "npcs": 8,
@@ -90,7 +91,9 @@
     "blueprint3dTitans": 63,
     "blueprint3dBattlefields": 12,
     "blueprint3dGates": 7,
-    "blueprint3dFirstHandoffBatch": 12
+    "blueprint3dFirstHandoffBatch": 12,
+    "artApprovalBatches": 2,
+    "artApprovedPromptPackages": 11
   },
   "files": {
     "project.json": "data/project.json",
@@ -102,6 +105,7 @@
     "art-prompts.json": "data/art-prompts.json",
     "artworks.json": "data/artworks.json",
     "art-import-pipeline.json": "data/art-import-pipeline.json",
+    "art-approval-manifest.json": "data/art-approval-manifest.json",
     "development-tasks.json": "data/development-tasks.json",
     "lore-index.json": "data/lore-index.json",
     "npcs.json": "data/npcs.json",
@@ -222,10 +226,15 @@
       "bytes": 1294,
       "sha256": "955d2f67cdfca19a430445a01de586cf487d238d3c0b68023a1f78800ab60d5e"
     },
+    "art-approval-manifest.json": {
+      "path": "data/art-approval-manifest.json",
+      "bytes": 3484,
+      "sha256": "435c88ed40e99ab28d5f54e7011aabc8c6983e2470a97090622bf015d67e5185"
+    },
     "development-tasks.json": {
       "path": "data/development-tasks.json",
-      "bytes": 28608,
-      "sha256": "ed5a3616ae67e395ab90affd2484ea0e5140293839c48db9fc837074c652ee17"
+      "bytes": 29088,
+      "sha256": "35a7c42bdfed257b19a2fc48de89d0443ca2f7db9750b0a3dd76e15f191025df"
     },
     "lore-index.json": {
       "path": "data/lore-index.json",
@@ -706,6 +715,18 @@
       "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares"
     }
   ],
+  "artApprovalManifest": {
+    "status": "IMPLEMENTED",
+    "approvalStatus": "APPROVED_FOR_GENERATION",
+    "gatesClosed": [
+      "TG-DEV-001",
+      "TG-DEV-007"
+    ],
+    "stillBlocked": [
+      "TG-DEV-004"
+    ],
+    "approvedPromptPackages": 11
+  },
   "blueprint3dSystem": {
     "status": "IMPLEMENTED",
     "director": "3D Asset Director",
