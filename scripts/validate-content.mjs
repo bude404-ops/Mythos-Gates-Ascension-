@@ -64,6 +64,8 @@ const data = {
   endgameDashboard: read('data/endgame-dashboard.json'),
   commandHubContract: read('data/command-hub-contract.json'),
   assetRegistry: read('data/asset-registry.json'),
+  blueprint3dSystem: read('data/3d-blueprint-system.json'),
+  blueprint3dRegistry: read('3D_Blueprints/Registry/blueprint-registry.json'),
   worldScaleReference: read('data/world-scale-reference.json'),
   artDirectorScaleSheets: read('data/art-director-scale-sheets.json'),
   battlefieldRuntimeArchitecture: read('data/battlefield-runtime-architecture.json'),
@@ -86,6 +88,8 @@ register('creatureBehaviorRuntime', data.creatureBehaviorRuntime, 'data/creature
 register('endgameDashboard', data.endgameDashboard, 'data/endgame-dashboard.json');
 register('commandHubContract', data.commandHubContract, 'data/command-hub-contract.json');
 register('assetRegistry', data.assetRegistry, 'data/asset-registry.json');
+register('blueprint3dSystem', data.blueprint3dSystem, 'data/3d-blueprint-system.json');
+register('blueprint3dRegistry', data.blueprint3dRegistry, '3D_Blueprints/Registry/blueprint-registry.json');
 register('worldScaleReference', data.worldScaleReference, 'data/world-scale-reference.json');
 register('artDirectorScaleSheets', data.artDirectorScaleSheets, 'data/art-director-scale-sheets.json');
 register('battlefieldRuntimeArchitecture', data.battlefieldRuntimeArchitecture, 'data/battlefield-runtime-architecture.json');
@@ -123,6 +127,14 @@ if(data.factions.length !== 7) fail(`Expected 7 playable factions, found ${data.
 if(data.hollowThreatFaction.playable !== false || data.hollowThreatFaction.classification !== 'Hostile Threat Faction') fail('Hollow must remain a non-playable threat faction');
 if(data.titans.length !== 63) fail(`Expected 63 Titans, found ${data.titans.length}`);
 if(data.characters.length < data.npcs.length) fail(`Character registry must mirror campaign NPC canon: ${data.characters.length}/${data.npcs.length}`);
+if(!data.directors.some(d => d.id === 'TG-DIR-006' && d.name === '3D Asset Director')) fail('Missing 3D Asset Director');
+if(data.blueprint3dSystem.status !== 'IMPLEMENTED') fail('3D Blueprint System must be IMPLEMENTED');
+if(data.blueprint3dSystem.assetCounts.registryTotal !== data.blueprint3dRegistry.assets.length) fail('3D Blueprint registry count mismatch');
+if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'TITAN').length !== data.titans.length) fail('3D Titan blueprint count must match canon Titans');
+if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'CHARACTER').length !== data.characters.length) fail('3D Character blueprint count must match canon Characters');
+if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'CREATURE').length !== data.creatures.length) fail('3D Creature blueprint count must match canon Creatures');
+if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'BATTLEFIELD').length !== data.maps.length) fail('3D Battlefield blueprint count must match canon Maps');
+if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'GATE').length !== data.realmCodex.length) fail('3D Gate blueprint count must match canon Realm Gates');
 if (!data.visualBaselines.length || data.visualBaselines.some(b => b.status !== 'APPROVED')) fail('Visual baselines must all be APPROVED after TG-DEV-009');
 if (data.visualQaBaselineApproval.status !== 'APPROVED' || data.visualQaBaselineApproval.taskId !== 'TG-DEV-009' || data.visualQaBaselineApproval.screens.length !== data.visualBaselines.length) fail('Visual QA baseline approval artifact invalid');
 for (const b of data.visualBaselines) {
@@ -483,4 +495,4 @@ if(!data.visualScreens.some(s => s.id === 'TG-SCREEN-TACTICAL-MAP-PROTOTYPE' && 
 const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','Game Preview','Visual QA','Tactical Map Prototype','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
 
-console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status, soloBattleSchema:data.soloBattleStateSchema.status, soloVerticalSlice:data.soloVerticalSlice.status, asyncArena:data.asyncArenaSystem.status, commandHub:data.commandHubContract.status, battlefieldRuntime:data.battlefieldRuntimeArchitecture.status}, null, 2));
+console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status, soloBattleSchema:data.soloBattleStateSchema.status, soloVerticalSlice:data.soloVerticalSlice.status, asyncArena:data.asyncArenaSystem.status, commandHub:data.commandHubContract.status, battlefieldRuntime:data.battlefieldRuntimeArchitecture.status, blueprint3d:data.blueprint3dSystem.status, blueprint3dAssets:data.blueprint3dRegistry.assets.length}, null, 2));

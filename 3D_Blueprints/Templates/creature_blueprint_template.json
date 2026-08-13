@@ -1,0 +1,199 @@
+{
+  "templateId": "TG-3D-TEMPLATE-CREATURE",
+  "assetType": "CREATURE",
+  "version": "1.0.0",
+  "status": "ACTIVE",
+  "requiredMetadataFields": [
+    "assetId",
+    "assetType",
+    "canonicalName",
+    "faction",
+    "loreReference",
+    "scale",
+    "height",
+    "width",
+    "length",
+    "materials",
+    "weapons",
+    "attachments",
+    "animationRequirements",
+    "battlefieldClearance",
+    "lodRequirements",
+    "mobilePerformanceTarget",
+    "sourceReferences",
+    "version",
+    "status",
+    "dependencies"
+  ],
+  "allowedStatuses": [
+    "CONCEPT",
+    "BLUEPRINT_IN_PROGRESS",
+    "BLUEPRINT_COMPLETE",
+    "VALIDATED",
+    "READY_FOR_3D",
+    "MODEL_IN_PROGRESS",
+    "GAME_READY",
+    "NEEDS_CANON_DATA"
+  ],
+  "requiredViews": [
+    {
+      "viewId": "FRONT_ORTHOGRAPHIC",
+      "name": "Front Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "BACK_ORTHOGRAPHIC",
+      "name": "Back Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "LEFT_ORTHOGRAPHIC",
+      "name": "Left Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "RIGHT_ORTHOGRAPHIC",
+      "name": "Right Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TOP_VIEW",
+      "name": "Top View",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "THREE_QUARTER_FRONT",
+      "name": "Three Quarter Front",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "THREE_QUARTER_REAR",
+      "name": "Three Quarter Rear",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "NEUTRAL_POSE",
+      "name": "Neutral Pose",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "MOVEMENT_POSE",
+      "name": "Movement Pose",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ATTACK_POSE",
+      "name": "Attack Pose",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ANATOMY_SHEET",
+      "name": "Anatomy Sheet",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "HEAD_MOUTH_TEETH_DETAILS",
+      "name": "Head Mouth Teeth Details",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "CLAW_HAND_DETAILS",
+      "name": "Claw Hand Details",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "FEET_LEG_DETAILS",
+      "name": "Feet Leg Details",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TAIL_WING_APPENDAGE_DETAILS",
+      "name": "Tail Wing Appendage Details",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ARMOR_BODY_PLATING_DETAILS",
+      "name": "Armor Body Plating Details",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SKELETON_JOINT_REFERENCE",
+      "name": "Skeleton Joint Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "HEIGHT_BODY_LENGTH_MEASUREMENTS",
+      "name": "Height Body Length Measurements",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SCALE_COMPARISON",
+      "name": "Scale Comparison",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "MATERIAL_REFERENCE",
+      "name": "Material Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ANIMATION_LIMITATIONS",
+      "name": "Animation Limitations",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    }
+  ],
+  "productionReadiness": [
+    "Blender model",
+    "GLB/GLTF",
+    "FBX",
+    "OBJ",
+    "game-ready mesh",
+    "collision mesh",
+    "LOD meshes",
+    "rig spec",
+    "animation rig"
+  ],
+  "canonRule": "If canon data is missing, set NEEDS_CANON_DATA and create a development task; do not invent lore."
+}

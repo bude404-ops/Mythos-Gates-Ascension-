@@ -1,0 +1,61 @@
+{
+  "id": "TG-3D-BLUEPRINT-SYSTEM-001",
+  "name": "Titan Gates 3D Blueprint Asset System",
+  "version": "1.0.0",
+  "status": "IMPLEMENTED",
+  "root": "3D_Blueprints",
+  "director": "3D Asset Director",
+  "canonAuthority": "Lore Director and current canonical game data remain authoritative.",
+  "directoryContract": [
+    "Characters/Titans",
+    "Characters/Creatures",
+    "Characters/Enemies",
+    "Characters/NPCs",
+    "Battlefields",
+    "Gates",
+    "Weapons",
+    "Armor",
+    "Structures",
+    "Props",
+    "Terrain",
+    "Environment",
+    "Global_References",
+    "Schemas",
+    "Templates",
+    "Registry",
+    "Validation"
+  ],
+  "assetStatusFlow": [
+    "CONCEPT",
+    "BLUEPRINT_IN_PROGRESS",
+    "BLUEPRINT_COMPLETE",
+    "VALIDATED",
+    "READY_FOR_3D",
+    "MODEL_IN_PROGRESS",
+    "GAME_READY"
+  ],
+  "needsCanonDataStatus": "NEEDS_CANON_DATA",
+  "assetCounts": {
+    "globalReferences": 3,
+    "titans": 63,
+    "characters": 8,
+    "creatures": 18,
+    "enemies": 18,
+    "battlefields": 12,
+    "gates": 7,
+    "registryTotal": 129
+  },
+  "validationScript": "scripts/validate-3d-blueprints.mjs",
+  "registry": "3D_Blueprints/Registry/blueprint-registry.json",
+  "schemas": "3D_Blueprints/Schemas",
+  "templates": "3D_Blueprints/Templates",
+  "integrationPoints": [
+    "data/directors.json",
+    "data/development-tasks.json",
+    "data/index.json",
+    "scripts/generate-indexes.mjs",
+    "scripts/validate-content.mjs",
+    "scripts/validate-3d-blueprints.mjs",
+    "scripts/build-pages.mjs"
+  ]
+}

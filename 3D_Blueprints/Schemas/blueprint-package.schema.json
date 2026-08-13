@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "TG-3D-BLUEPRINT-PACKAGE-SCHEMA",
+  "title": "Titan Gates 3D Blueprint Package",
+  "type": "object",
+  "required": [
+    "assetId",
+    "assetType",
+    "canonicalName",
+    "scale",
+    "materials",
+    "requiredViews",
+    "version",
+    "status",
+    "dependencies"
+  ],
+  "properties": {
+    "assetId": {
+      "type": "string"
+    },
+    "assetType": {
+      "enum": [
+        "TITAN",
+        "CHARACTER",
+        "CREATURE",
+        "ENEMY",
+        "BATTLEFIELD",
+        "GATE",
+        "WEAPON",
+        "ARMOR",
+        "STRUCTURE",
+        "PROP",
+        "TERRAIN",
+        "ENVIRONMENT",
+        "GLOBAL_REFERENCE"
+      ]
+    },
+    "status": {
+      "enum": [
+        "CONCEPT",
+        "BLUEPRINT_IN_PROGRESS",
+        "BLUEPRINT_COMPLETE",
+        "VALIDATED",
+        "READY_FOR_3D",
+        "MODEL_IN_PROGRESS",
+        "GAME_READY",
+        "NEEDS_CANON_DATA"
+      ]
+    },
+    "requiredViews": {
+      "type": "array",
+      "minItems": 1
+    },
+    "sourceReferences": {
+      "type": "array"
+    }
+  }
+}

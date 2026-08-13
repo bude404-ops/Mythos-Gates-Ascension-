@@ -1,0 +1,115 @@
+{
+  "templateId": "TG-3D-TEMPLATE-STRUCTURE",
+  "assetType": "STRUCTURE",
+  "version": "1.0.0",
+  "status": "ACTIVE",
+  "requiredMetadataFields": [
+    "assetId",
+    "assetType",
+    "canonicalName",
+    "faction",
+    "loreReference",
+    "scale",
+    "height",
+    "width",
+    "length",
+    "materials",
+    "weapons",
+    "attachments",
+    "animationRequirements",
+    "battlefieldClearance",
+    "lodRequirements",
+    "mobilePerformanceTarget",
+    "sourceReferences",
+    "version",
+    "status",
+    "dependencies"
+  ],
+  "allowedStatuses": [
+    "CONCEPT",
+    "BLUEPRINT_IN_PROGRESS",
+    "BLUEPRINT_COMPLETE",
+    "VALIDATED",
+    "READY_FOR_3D",
+    "MODEL_IN_PROGRESS",
+    "GAME_READY",
+    "NEEDS_CANON_DATA"
+  ],
+  "requiredViews": [
+    {
+      "viewId": "FRONT",
+      "name": "Front",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "BACK",
+      "name": "Back",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SIDE",
+      "name": "Side",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TOP",
+      "name": "Top",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "THREE_QUARTER",
+      "name": "Three Quarter",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SCALE_REFERENCE",
+      "name": "Scale Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "MATERIAL_MAP",
+      "name": "Material Map",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "COLLISION_REFERENCE",
+      "name": "Collision Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "WALKABLE_BLOCKING_REFERENCE",
+      "name": "Walkable Blocking Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    }
+  ],
+  "productionReadiness": [
+    "Blender model",
+    "GLB/GLTF",
+    "FBX",
+    "OBJ",
+    "game-ready mesh",
+    "collision mesh",
+    "LOD meshes",
+    "rig spec",
+    "animation rig"
+  ],
+  "canonRule": "If canon data is missing, set NEEDS_CANON_DATA and create a development task; do not invent lore."
+}

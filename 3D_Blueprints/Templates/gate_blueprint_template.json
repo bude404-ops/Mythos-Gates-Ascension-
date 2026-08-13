@@ -1,0 +1,136 @@
+{
+  "templateId": "TG-3D-TEMPLATE-GATE",
+  "assetType": "GATE",
+  "version": "1.0.0",
+  "status": "ACTIVE",
+  "requiredMetadataFields": [
+    "assetId",
+    "assetType",
+    "canonicalName",
+    "faction",
+    "loreReference",
+    "scale",
+    "height",
+    "width",
+    "length",
+    "materials",
+    "weapons",
+    "attachments",
+    "animationRequirements",
+    "battlefieldClearance",
+    "lodRequirements",
+    "mobilePerformanceTarget",
+    "sourceReferences",
+    "version",
+    "status",
+    "dependencies"
+  ],
+  "allowedStatuses": [
+    "CONCEPT",
+    "BLUEPRINT_IN_PROGRESS",
+    "BLUEPRINT_COMPLETE",
+    "VALIDATED",
+    "READY_FOR_3D",
+    "MODEL_IN_PROGRESS",
+    "GAME_READY",
+    "NEEDS_CANON_DATA"
+  ],
+  "requiredViews": [
+    {
+      "viewId": "FRONT_ORTHOGRAPHIC",
+      "name": "Front Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "BACK_ORTHOGRAPHIC",
+      "name": "Back Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SIDE_ELEVATION",
+      "name": "Side Elevation",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TOP_VIEW",
+      "name": "Top View",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "THREE_QUARTER_PERSPECTIVE",
+      "name": "Three Quarter Perspective",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ARCHITECTURAL_DETAILS",
+      "name": "Architectural Details",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SURFACE_MATERIAL_DETAILS",
+      "name": "Surface Material Details",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "DOOR_OPENING_DIMENSIONS",
+      "name": "Door Opening Dimensions",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "CHARACTER_CLEARANCE",
+      "name": "Character Clearance",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TITAN_CLEARANCE",
+      "name": "Titan Clearance",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ENVIRONMENTAL_SCALE_REFERENCE",
+      "name": "Environmental Scale Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "LIGHTING_REFERENCE",
+      "name": "Lighting Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    }
+  ],
+  "productionReadiness": [
+    "Blender model",
+    "GLB/GLTF",
+    "FBX",
+    "OBJ",
+    "game-ready mesh",
+    "collision mesh",
+    "LOD meshes",
+    "rig spec",
+    "animation rig"
+  ],
+  "canonRule": "If canon data is missing, set NEEDS_CANON_DATA and create a development task; do not invent lore."
+}

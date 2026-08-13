@@ -1,0 +1,206 @@
+{
+  "templateId": "TG-3D-TEMPLATE-TITAN",
+  "assetType": "TITAN",
+  "version": "1.0.0",
+  "status": "ACTIVE",
+  "requiredMetadataFields": [
+    "assetId",
+    "assetType",
+    "canonicalName",
+    "faction",
+    "loreReference",
+    "scale",
+    "height",
+    "width",
+    "length",
+    "materials",
+    "weapons",
+    "attachments",
+    "animationRequirements",
+    "battlefieldClearance",
+    "lodRequirements",
+    "mobilePerformanceTarget",
+    "sourceReferences",
+    "version",
+    "status",
+    "dependencies"
+  ],
+  "allowedStatuses": [
+    "CONCEPT",
+    "BLUEPRINT_IN_PROGRESS",
+    "BLUEPRINT_COMPLETE",
+    "VALIDATED",
+    "READY_FOR_3D",
+    "MODEL_IN_PROGRESS",
+    "GAME_READY",
+    "NEEDS_CANON_DATA"
+  ],
+  "requiredViews": [
+    {
+      "viewId": "FRONT_ORTHOGRAPHIC",
+      "name": "Front Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "BACK_ORTHOGRAPHIC",
+      "name": "Back Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "LEFT_ORTHOGRAPHIC",
+      "name": "Left Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "RIGHT_ORTHOGRAPHIC",
+      "name": "Right Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TOP_VIEW",
+      "name": "Top View",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "THREE_QUARTER_FRONT",
+      "name": "Three Quarter Front",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "THREE_QUARTER_REAR",
+      "name": "Three Quarter Rear",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "NEUTRAL_A_POSE_OR_T_POSE",
+      "name": "Neutral A Pose Or T Pose",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SILHOUETTE_REFERENCE",
+      "name": "Silhouette Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "FULL_BODY_SCALE_REFERENCE",
+      "name": "Full Body Scale Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "HEAD_FACE_DETAIL_SHEET",
+      "name": "Head Face Detail Sheet",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ARMOR_CLOTHING_DETAIL_SHEET",
+      "name": "Armor Clothing Detail Sheet",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "WEAPON_DETAIL_SHEET",
+      "name": "Weapon Detail Sheet",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "HANDS_FEET_DETAIL_SHEET",
+      "name": "Hands Feet Detail Sheet",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SPECIAL_ANATOMY_DETAIL",
+      "name": "Special Anatomy Detail",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "MATERIAL_REFERENCE",
+      "name": "Material Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "COLOR_MATERIAL_ZONES",
+      "name": "Color Material Zones",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "EMBLEM_SYMBOL_PLACEMENT",
+      "name": "Emblem Symbol Placement",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ANIMATION_POSE_REFERENCES",
+      "name": "Animation Pose References",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "HEIGHT_PROPORTION_MEASUREMENTS",
+      "name": "Height Proportion Measurements",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "GAME_SCALE_REFERENCE",
+      "name": "Game Scale Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SCALE_COMPARISON_SHEET",
+      "name": "Scale Comparison Sheet",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    }
+  ],
+  "productionReadiness": [
+    "Blender model",
+    "GLB/GLTF",
+    "FBX",
+    "OBJ",
+    "game-ready mesh",
+    "collision mesh",
+    "LOD meshes",
+    "rig spec",
+    "animation rig"
+  ],
+  "canonRule": "If canon data is missing, set NEEDS_CANON_DATA and create a development task; do not invent lore."
+}

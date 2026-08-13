@@ -72,5 +72,32 @@
     ],
     "status": "Active",
     "currentFocus": "Establish the first production-quality mobile battlefield vertical slice for one active Titan combat."
+  },
+  {
+    "id": "TG-DIR-006",
+    "name": "3D Asset Director",
+    "version": "1.0.0",
+    "status": "Active",
+    "authority": [
+      "3D blueprint packages",
+      "model production specifications",
+      "scale conformance",
+      "LOD/collision/rig requirements",
+      "Blender/GLB/FBX/OBJ readiness",
+      "mobile 3D optimization"
+    ],
+    "hardLimitations": [
+      "May not override Lore Director.",
+      "May not invent missing canon assets.",
+      "May not change faction, Titan, creature, weapon, location, or Gate lore."
+    ],
+    "communications": [
+      "Lore Director validates canonical identity and lore references.",
+      "Art Director validates visual language and materials.",
+      "Gameplay Director validates battlefield clearance and tactical readability.",
+      "Development Director validates schemas, build integration, and dependency checks."
+    ],
+    "currentFocus": "Convert canonical Titan Gates entities into standardized 3D production-ready blueprint packages.",
+    "qualityGate": "scripts/validate-3d-blueprints.mjs"
   }
 ]

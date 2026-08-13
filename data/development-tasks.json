@@ -171,24 +171,26 @@
   },
   {
     "id": "TG-DEV-010",
-    "description": "Connected campaign select, chapter browser, mission detail, and playable battle handoff using canonical faction, chapter, map, creature, mission, dialogue, and art-package data.",
-    "director": "Gameplay Director",
+    "description": "Build the Titan Gates 3D Blueprint Asset System with canonical packages, permanent IDs, schemas, templates, global scale/material standards, validator, and build integration.",
+    "director": "3D Asset Director",
     "priority": "High",
     "status": "COMPLETED",
     "dependencies": [
-      "data/campaigns.json",
-      "data/chapters.json",
+      "data/world-scale-reference.json",
+      "data/titans.json",
+      "data/characters.json",
+      "data/creatures.json",
       "data/maps.json",
-      "data/creatures.json"
+      "data/realm-codex.json"
     ],
-    "relatedEntity": "TG-CAMPAIGN-001",
+    "relatedEntity": "TG-3D-BLUEPRINT-SYSTEM-001",
     "relatedFiles": [
-      "game/index.html",
-      "data/campaign-playflow-contract.json",
-      "data/campaign-chapter-registry.json",
-      "data/mission-registry.json",
-      "scripts/test-campaign-playflow.mjs"
-    ]
+      "3D_Blueprints/",
+      "data/3d-blueprint-system.json",
+      "scripts/validate-3d-blueprints.mjs"
+    ],
+    "completed": "2026-08-13",
+    "completionNotes": "Canonical 3D Blueprint directory, metadata packages, global references, templates, registry, and validator implemented without inventing new lore."
   },
   {
     "id": "TG-DEV-011",

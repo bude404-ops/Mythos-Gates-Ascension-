@@ -1,0 +1,103 @@
+{
+  "id": "TG-3D-MASTER-SCALE-REFERENCE",
+  "assetId": "GLOBAL_REF_001",
+  "name": "Master Scale Reference",
+  "version": "1.0.0",
+  "status": "READY_FOR_3D",
+  "source": "data/world-scale-reference.json",
+  "authority": "Universal 3D production scale authority for Titan Gates: Ascension.",
+  "scaleChain": [
+    "Titan",
+    "Creature",
+    "Character",
+    "Gate",
+    "Building",
+    "Prop",
+    "Terrain",
+    "Battlefield"
+  ],
+  "relativeScaleUnits": {
+    "normalHumanoid": 1.0,
+    "smallSwarm": 0.55,
+    "standardEnemy": 1.15,
+    "eliteEnemy": 1.85,
+    "largeEnemy": 2.8,
+    "playerTitan": 5.2,
+    "smallAgileTitan": 4.4,
+    "heavyTitan": 6.1,
+    "titanScaleEnemy": 5.8,
+    "colossalBoss": 9.5,
+    "standardWall": 3.4,
+    "titanGateArch": 14.0,
+    "gateInteriorOpening": 8.0,
+    "statue": 7.5,
+    "bridgeWidth": 6.5,
+    "templePylon": 11.0
+  },
+  "rules": [
+    "Normal enemies must occupy visibly less physical volume than the Titan.",
+    "Do not shrink Titans to fit the map; enlarge architecture and Gate landmarks.",
+    "Titan attacks use larger arcs, shockwaves, dust, terrain reaction, and camera weight.",
+    "The tactical grid expresses decisions, not literal human-sized squares.",
+    "Gates are landmarks visible from major battlefield zones and large enough to justify Titan travel.",
+    "Every 3D blueprint must reference this master scale system.",
+    "No asset creator or AI system may invent independent scale.",
+    "Titans must read as enormous in gameplay, not only promotional artwork."
+  ],
+  "comparisonSheets": [
+    "normal enemy + Titan",
+    "elite + Titan",
+    "Titan + Titan-scale enemy",
+    "Titan + colossal boss",
+    "Titan + Gate",
+    "Titan + architecture",
+    "Titan + interactive terrain object"
+  ],
+  "mobileScaleChecks": [
+    "360x640 tactical zoom",
+    "390x844 normal zoom",
+    "430x932 boss zoom",
+    "landscape action camera",
+    "bottom action bar obstruction test"
+  ],
+  "assetType": "GLOBAL_REFERENCE",
+  "canonicalEntityId": "TG-3D-MASTER-SCALE-REFERENCE",
+  "canonicalName": "Master Scale Reference",
+  "scale": {
+    "scaleKey": "global",
+    "relativeScaleUnits": null,
+    "source": "data/world-scale-reference.json",
+    "rule": "Global reference anchors all 3D asset scale/material/style contracts."
+  },
+  "materials": [
+    "global_reference"
+  ],
+  "dependencies": [],
+  "requiredViews": [
+    {
+      "viewId": "GLOBAL_REFERENCE",
+      "name": "Master Scale Reference",
+      "required": true,
+      "status": "REFERENCE_DEFINED",
+      "file": "3D_Blueprints/Global_References/Master_Scale_Reference/metadata.json"
+    }
+  ],
+  "sourceReferences": [
+    "data/world-scale-reference.json",
+    "data/factions.json",
+    "data/realm-codex.json"
+  ],
+  "lodRequirements": [
+    "LOD0_CLOSE",
+    "LOD1_GAMEPLAY",
+    "LOD2_DISTANCE",
+    "COLLISION_MESH"
+  ],
+  "mobilePerformanceTarget": "Global reference for mobile tactical 3D production.",
+  "battlefieldClearance": {
+    "global": true
+  },
+  "technicalNotes": {
+    "collisionRequirements": "Global reference only; asset packages define collision meshes."
+  }
+}

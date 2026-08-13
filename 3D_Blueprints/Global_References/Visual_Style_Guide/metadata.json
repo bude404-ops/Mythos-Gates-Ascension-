@@ -1,0 +1,69 @@
+{
+  "id": "TG-3D-VISUAL-STYLE-GUIDE",
+  "assetId": "GLOBAL_REF_003",
+  "name": "Visual Style Guide",
+  "version": "1.0.0",
+  "status": "READY_FOR_3D",
+  "visualIdentity": "Established Titan Gates mythological tactical presentation with cel-shaded/game-readable 3D environments and enormous Titans.",
+  "presentationRules": [
+    "Elongated 3D battlefield presentation with tactical readability.",
+    "Titans remain visually enormous through scale sheets, shadows, camera, clearance, and gate/structure proportions.",
+    "Terrain hazards are physical environment features, not board-game overlays.",
+    "Use canonical faction visual identity only."
+  ],
+  "forbidden": [
+    "generic sci-fi",
+    "spaceships",
+    "firearms",
+    "aliens",
+    "unrelated mythology",
+    "lore-invented factions or Titans"
+  ],
+  "directors": [
+    "Lore Director controls canon.",
+    "Art Director controls visual readability.",
+    "Gameplay Director controls battlefield function.",
+    "Development Director controls validation/build.",
+    "3D Asset Director translates canonical assets into 3D production specs without overriding Lore Director."
+  ],
+  "assetType": "GLOBAL_REFERENCE",
+  "canonicalEntityId": "TG-3D-VISUAL-STYLE-GUIDE",
+  "canonicalName": "Visual Style Guide",
+  "scale": {
+    "scaleKey": "global",
+    "relativeScaleUnits": null,
+    "source": "data/world-scale-reference.json",
+    "rule": "Global reference anchors all 3D asset scale/material/style contracts."
+  },
+  "materials": [
+    "global_reference"
+  ],
+  "dependencies": [],
+  "requiredViews": [
+    {
+      "viewId": "GLOBAL_REFERENCE",
+      "name": "Visual Style Guide",
+      "required": true,
+      "status": "REFERENCE_DEFINED",
+      "file": "3D_Blueprints/Global_References/Visual_Style_Guide/metadata.json"
+    }
+  ],
+  "sourceReferences": [
+    "data/world-scale-reference.json",
+    "data/factions.json",
+    "data/realm-codex.json"
+  ],
+  "lodRequirements": [
+    "LOD0_CLOSE",
+    "LOD1_GAMEPLAY",
+    "LOD2_DISTANCE",
+    "COLLISION_MESH"
+  ],
+  "mobilePerformanceTarget": "Global reference for mobile tactical 3D production.",
+  "battlefieldClearance": {
+    "global": true
+  },
+  "technicalNotes": {
+    "collisionRequirements": "Global reference only; asset packages define collision meshes."
+  }
+}

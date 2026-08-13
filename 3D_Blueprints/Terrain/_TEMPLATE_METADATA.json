@@ -1,0 +1,70 @@
+{
+  "assetId": "TERRAIN_TEMPLATE_001",
+  "assetType": "TERRAIN",
+  "canonicalEntityId": null,
+  "canonicalName": "TEMPLATE_ONLY_CANON_REQUIRED",
+  "status": "NEEDS_CANON_DATA",
+  "canonRule": "No asset instance created until canonical entity exists in project data.",
+  "requiredViews": [
+    {
+      "viewId": "TOP_DOWN",
+      "name": "Top Down",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SIDE_ELEVATION",
+      "name": "Side Elevation",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "HEIGHT_PROFILE",
+      "name": "Height Profile",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "MATERIAL_MAP",
+      "name": "Material Map",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "WALKABLE_REFERENCE",
+      "name": "Walkable Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "HAZARD_REFERENCE",
+      "name": "Hazard Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "LOD_REFERENCE",
+      "name": "Lod Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    }
+  ],
+  "missingCanonData": [
+    "canonical entity record",
+    "lore reference",
+    "scale classification",
+    "materials",
+    "gameplay dimensions"
+  ],
+  "sourceReferences": [
+    "3D_Blueprints/Templates"
+  ],
+  "version": "1.0.0"
+}

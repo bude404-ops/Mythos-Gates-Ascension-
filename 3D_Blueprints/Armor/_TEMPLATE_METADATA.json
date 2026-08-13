@@ -1,0 +1,84 @@
+{
+  "assetId": "ARMOR_TEMPLATE_001",
+  "assetType": "ARMOR",
+  "canonicalEntityId": null,
+  "canonicalName": "TEMPLATE_ONLY_CANON_REQUIRED",
+  "status": "NEEDS_CANON_DATA",
+  "canonRule": "No asset instance created until canonical entity exists in project data.",
+  "requiredViews": [
+    {
+      "viewId": "FRONT",
+      "name": "Front",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "BACK",
+      "name": "Back",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SIDE",
+      "name": "Side",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TOP",
+      "name": "Top",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "MATERIAL_ZONES",
+      "name": "Material Zones",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ATTACHMENT_POINTS",
+      "name": "Attachment Points",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "RIG_CLEARANCE",
+      "name": "Rig Clearance",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "DAMAGE_STATES",
+      "name": "Damage States",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "LOD_REFERENCE",
+      "name": "Lod Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    }
+  ],
+  "missingCanonData": [
+    "canonical entity record",
+    "lore reference",
+    "scale classification",
+    "materials",
+    "gameplay dimensions"
+  ],
+  "sourceReferences": [
+    "3D_Blueprints/Templates"
+  ],
+  "version": "1.0.0"
+}

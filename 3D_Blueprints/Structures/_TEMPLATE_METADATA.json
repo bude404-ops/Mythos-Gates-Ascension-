@@ -1,0 +1,84 @@
+{
+  "assetId": "STRUCTURE_TEMPLATE_001",
+  "assetType": "STRUCTURE",
+  "canonicalEntityId": null,
+  "canonicalName": "TEMPLATE_ONLY_CANON_REQUIRED",
+  "status": "NEEDS_CANON_DATA",
+  "canonRule": "No asset instance created until canonical entity exists in project data.",
+  "requiredViews": [
+    {
+      "viewId": "FRONT",
+      "name": "Front",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "BACK",
+      "name": "Back",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SIDE",
+      "name": "Side",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TOP",
+      "name": "Top",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "THREE_QUARTER",
+      "name": "Three Quarter",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SCALE_REFERENCE",
+      "name": "Scale Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "MATERIAL_MAP",
+      "name": "Material Map",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "COLLISION_REFERENCE",
+      "name": "Collision Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "WALKABLE_BLOCKING_REFERENCE",
+      "name": "Walkable Blocking Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    }
+  ],
+  "missingCanonData": [
+    "canonical entity record",
+    "lore reference",
+    "scale classification",
+    "materials",
+    "gameplay dimensions"
+  ],
+  "sourceReferences": [
+    "3D_Blueprints/Templates"
+  ],
+  "version": "1.0.0"
+}

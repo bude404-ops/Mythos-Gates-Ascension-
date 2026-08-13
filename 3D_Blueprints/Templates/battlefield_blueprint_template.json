@@ -1,0 +1,192 @@
+{
+  "templateId": "TG-3D-TEMPLATE-BATTLEFIELD",
+  "assetType": "BATTLEFIELD",
+  "version": "1.0.0",
+  "status": "ACTIVE",
+  "requiredMetadataFields": [
+    "assetId",
+    "assetType",
+    "canonicalName",
+    "faction",
+    "loreReference",
+    "scale",
+    "height",
+    "width",
+    "length",
+    "materials",
+    "weapons",
+    "attachments",
+    "animationRequirements",
+    "battlefieldClearance",
+    "lodRequirements",
+    "mobilePerformanceTarget",
+    "sourceReferences",
+    "version",
+    "status",
+    "dependencies"
+  ],
+  "allowedStatuses": [
+    "CONCEPT",
+    "BLUEPRINT_IN_PROGRESS",
+    "BLUEPRINT_COMPLETE",
+    "VALIDATED",
+    "READY_FOR_3D",
+    "MODEL_IN_PROGRESS",
+    "GAME_READY",
+    "NEEDS_CANON_DATA"
+  ],
+  "requiredViews": [
+    {
+      "viewId": "FULL_BATTLEFIELD_TOP_DOWN_BLUEPRINT",
+      "name": "Full Battlefield Top Down Blueprint",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "THREE_D_PERSPECTIVE_REFERENCE",
+      "name": "Three D Perspective Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SIDE_ELEVATION",
+      "name": "Side Elevation",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "FRONT_ELEVATION",
+      "name": "Front Elevation",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TERRAIN_HEIGHT_MAP",
+      "name": "Terrain Height Map",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "GRID_REFERENCE",
+      "name": "Grid Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "WALKABLE_AREA_MAP",
+      "name": "Walkable Area Map",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "NON_WALKABLE_AREA_MAP",
+      "name": "Non Walkable Area Map",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SPAWN_ZONES",
+      "name": "Spawn Zones",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "OBJECTIVE_ZONES",
+      "name": "Objective Zones",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "COVER_ZONES",
+      "name": "Cover Zones",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "INTERACTIVE_AREAS",
+      "name": "Interactive Areas",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "CAMERA_BOUNDARIES",
+      "name": "Camera Boundaries",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TERRAIN_MATERIAL_MAP",
+      "name": "Terrain Material Map",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ENVIRONMENTAL_PROP_LAYOUT",
+      "name": "Environmental Prop Layout",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "STRUCTURE_LAYOUT",
+      "name": "Structure Layout",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "GATE_PLACEMENT",
+      "name": "Gate Placement",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TITAN_CLEARANCE_ZONES",
+      "name": "Titan Clearance Zones",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ENEMY_CLEARANCE_ZONES",
+      "name": "Enemy Clearance Zones",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "GAMEPLAY_SCALE_REFERENCE",
+      "name": "Gameplay Scale Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    }
+  ],
+  "productionReadiness": [
+    "Blender model",
+    "GLB/GLTF",
+    "FBX",
+    "OBJ",
+    "game-ready mesh",
+    "collision mesh",
+    "LOD meshes",
+    "rig spec",
+    "animation rig"
+  ],
+  "canonRule": "If canon data is missing, set NEEDS_CANON_DATA and create a development task; do not invent lore."
+}

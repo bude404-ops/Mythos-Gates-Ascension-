@@ -1,0 +1,63 @@
+{
+  "assetId": "ENVIRONMENT_TEMPLATE_001",
+  "assetType": "ENVIRONMENT",
+  "canonicalEntityId": null,
+  "canonicalName": "TEMPLATE_ONLY_CANON_REQUIRED",
+  "status": "NEEDS_CANON_DATA",
+  "canonRule": "No asset instance created until canonical entity exists in project data.",
+  "requiredViews": [
+    {
+      "viewId": "WIDE_PERSPECTIVE",
+      "name": "Wide Perspective",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TOP_DOWN_LAYOUT",
+      "name": "Top Down Layout",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "LIGHTING_REFERENCE",
+      "name": "Lighting Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "WEATHERING_REFERENCE",
+      "name": "Weathering Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "MATERIAL_PALETTE",
+      "name": "Material Palette",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SCALE_REFERENCE",
+      "name": "Scale Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    }
+  ],
+  "missingCanonData": [
+    "canonical entity record",
+    "lore reference",
+    "scale classification",
+    "materials",
+    "gameplay dimensions"
+  ],
+  "sourceReferences": [
+    "3D_Blueprints/Templates"
+  ],
+  "version": "1.0.0"
+}

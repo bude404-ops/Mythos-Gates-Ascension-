@@ -1,0 +1,217 @@
+{
+  "assetId": "BATTLEFIELD_012",
+  "assetType": "BATTLEFIELD",
+  "canonicalEntityId": "TG-MAP-012",
+  "canonicalName": "Broken Heaven Engine",
+  "faction": null,
+  "loreReference": "A tiered tactical arena of glass stairs, floating beacon platforms, aurora bridges, and a massive radiant gate-machine suspended over clouds.",
+  "canonAuthority": "Current Titan Gates canon/lore data layer. 3D Asset Director may translate scale and production needs but may not override Lore Director.",
+  "scale": {
+    "scaleKey": "bridgeWidth",
+    "relativeScaleUnits": 6.5,
+    "source": "data/world-scale-reference.json",
+    "rule": "All dimensions reference Master_Scale_Reference; individual creators may not invent scale."
+  },
+  "height": "DERIVED_FROM_MASTER_SCALE",
+  "width": "DERIVED_FROM_MASTER_SCALE",
+  "length": "DERIVED_FROM_MASTER_SCALE",
+  "materials": [
+    "glass"
+  ],
+  "weapons": [],
+  "attachments": [],
+  "animationRequirements": [
+    "neutral pose",
+    "readable idle",
+    "movement silhouette",
+    "attack/interaction poses",
+    "hit reaction",
+    "scale-preserving camera readability"
+  ],
+  "battlefieldClearance": {
+    "titanClearanceRequired": false,
+    "gridReadability": "Must remain readable in elongated 3D tactical battlefield presentation.",
+    "clearanceSource": "3D_Blueprints/Global_References/Master_Scale_Reference/metadata.json"
+  },
+  "lodRequirements": [
+    "LOD0_CLOSE",
+    "LOD1_GAMEPLAY",
+    "LOD2_DISTANCE",
+    "COLLISION_MESH"
+  ],
+  "mobilePerformanceTarget": "60fps target on mobile tactical view; silhouette readable at 360x640.",
+  "sourceReferences": [
+    "canonical:TG-MAP-012",
+    "data/art-prompts.json#TG-PROMPT-MAP-012"
+  ],
+  "version": "1.0.0",
+  "status": "BLUEPRINT_IN_PROGRESS",
+  "dependencies": [
+    "TG-3D-MASTER-SCALE-REFERENCE",
+    "TG-3D-MATERIAL-LIBRARY",
+    "TG-3D-VISUAL-STYLE-GUIDE"
+  ],
+  "requiredViews": [
+    {
+      "viewId": "FULL_BATTLEFIELD_TOP_DOWN_BLUEPRINT",
+      "name": "Full Battlefield Top Down Blueprint",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "THREE_D_PERSPECTIVE_REFERENCE",
+      "name": "Three D Perspective Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SIDE_ELEVATION",
+      "name": "Side Elevation",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "FRONT_ELEVATION",
+      "name": "Front Elevation",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TERRAIN_HEIGHT_MAP",
+      "name": "Terrain Height Map",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "GRID_REFERENCE",
+      "name": "Grid Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "WALKABLE_AREA_MAP",
+      "name": "Walkable Area Map",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "NON_WALKABLE_AREA_MAP",
+      "name": "Non Walkable Area Map",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SPAWN_ZONES",
+      "name": "Spawn Zones",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "OBJECTIVE_ZONES",
+      "name": "Objective Zones",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "COVER_ZONES",
+      "name": "Cover Zones",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "INTERACTIVE_AREAS",
+      "name": "Interactive Areas",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "CAMERA_BOUNDARIES",
+      "name": "Camera Boundaries",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TERRAIN_MATERIAL_MAP",
+      "name": "Terrain Material Map",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ENVIRONMENTAL_PROP_LAYOUT",
+      "name": "Environmental Prop Layout",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "STRUCTURE_LAYOUT",
+      "name": "Structure Layout",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "GATE_PLACEMENT",
+      "name": "Gate Placement",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TITAN_CLEARANCE_ZONES",
+      "name": "Titan Clearance Zones",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ENEMY_CLEARANCE_ZONES",
+      "name": "Enemy Clearance Zones",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "GAMEPLAY_SCALE_REFERENCE",
+      "name": "Gameplay Scale Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    }
+  ],
+  "technicalNotes": {
+    "polygonBudget": "Mobile-first production target: LOD0 budget assigned by asset type during model pass; validators require LOD0/LOD1/LOD2/CollisionMesh entries before GAME_READY.",
+    "textureResolution": "1024-2048 for heroes/Titans and Gates; 512-1024 for common creatures/props; atlas-friendly mobile materials.",
+    "lodLevels": [
+      "LOD0_CLOSE",
+      "LOD1_GAMEPLAY",
+      "LOD2_DISTANCE",
+      "COLLISION_MESH"
+    ],
+    "collisionRequirements": "Separate simplified collision mesh; never derive gameplay collision from high-detail art mesh.",
+    "rigRequirements": "Rig spec required before MODEL_IN_PROGRESS; Titans and creatures need named root, pelvis/chest/head, limb, weapon, and VFX sockets where canon supports them.",
+    "animationRequirements": "Idle, movement, attack/interaction, hit reaction, death/disable, and any canon ability poses when source data defines them.",
+    "mobileOptimization": "Preserve silhouette and scale at 360px width; use baked lighting/material zones and aggressive LOD swaps.",
+    "target": "mobile tactical battlefield"
+  },
+  "missingCanonData": [],
+  "validation": {
+    "lastValidated": null,
+    "validator": "scripts/validate-3d-blueprints.mjs",
+    "readyCriteria": "All required views linked, scale/material/gameplay dimensions defined, dependencies valid, and status at least VALIDATED."
+  }
+}

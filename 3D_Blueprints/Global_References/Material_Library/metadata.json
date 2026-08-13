@@ -1,0 +1,66 @@
+{
+  "id": "TG-3D-MATERIAL-LIBRARY",
+  "assetId": "GLOBAL_REF_002",
+  "name": "Material Library",
+  "version": "1.0.0",
+  "status": "READY_FOR_3D",
+  "forbidden": [
+    "generic sci-fi",
+    "spaceships",
+    "firearms",
+    "aliens",
+    "unrelated modern military visuals"
+  ],
+  "materials": [
+    "global_reference"
+  ],
+  "surfaceProperties": [
+    "cel-shaded tactical readability",
+    "painterly material separation",
+    "mobile-safe contrast",
+    "no UI-like neon floor markers"
+  ],
+  "lightingExpectations": [
+    "dark mythological fantasy",
+    "strong silhouette rim light",
+    "realm-specific environmental lighting",
+    "readable tactical value separation"
+  ],
+  "assetType": "GLOBAL_REFERENCE",
+  "canonicalEntityId": "TG-3D-MATERIAL-LIBRARY",
+  "canonicalName": "Material Library",
+  "scale": {
+    "scaleKey": "global",
+    "relativeScaleUnits": null,
+    "source": "data/world-scale-reference.json",
+    "rule": "Global reference anchors all 3D asset scale/material/style contracts."
+  },
+  "dependencies": [],
+  "requiredViews": [
+    {
+      "viewId": "GLOBAL_REFERENCE",
+      "name": "Material Library",
+      "required": true,
+      "status": "REFERENCE_DEFINED",
+      "file": "3D_Blueprints/Global_References/Material_Library/metadata.json"
+    }
+  ],
+  "sourceReferences": [
+    "data/world-scale-reference.json",
+    "data/factions.json",
+    "data/realm-codex.json"
+  ],
+  "lodRequirements": [
+    "LOD0_CLOSE",
+    "LOD1_GAMEPLAY",
+    "LOD2_DISTANCE",
+    "COLLISION_MESH"
+  ],
+  "mobilePerformanceTarget": "Global reference for mobile tactical 3D production.",
+  "battlefieldClearance": {
+    "global": true
+  },
+  "technicalNotes": {
+    "collisionRequirements": "Global reference only; asset packages define collision meshes."
+  }
+}

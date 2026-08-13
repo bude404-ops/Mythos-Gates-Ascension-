@@ -81,9 +81,14 @@
     "campaignPlayflowContract": 1,
     "commandHubContract": 1,
     "assetRegistry": 1,
+    "blueprint3dSystem": 1,
     "hollowCreatures": 16,
     "artMapPrompts": 12,
-    "artCampaignPrompts": 7
+    "artCampaignPrompts": 7,
+    "blueprint3dAssets": 129,
+    "blueprint3dTitans": 63,
+    "blueprint3dBattlefields": 12,
+    "blueprint3dGates": 7
   },
   "files": {
     "project.json": "data/project.json",
@@ -165,7 +170,8 @@
     "battlefield-telemetry-contract.json": "data/battlefield-telemetry-contract.json",
     "campaign-playflow-contract.json": "data/campaign-playflow-contract.json",
     "command-hub-contract.json": "data/command-hub-contract.json",
-    "asset-registry.json": "data/asset-registry.json"
+    "asset-registry.json": "data/asset-registry.json",
+    "3d-blueprint-system.json": "data/3d-blueprint-system.json"
   },
   "sourceFileFingerprints": {
     "project.json": {
@@ -215,8 +221,8 @@
     },
     "development-tasks.json": {
       "path": "data/development-tasks.json",
-      "bytes": 27520,
-      "sha256": "82c3fbdf61fd65fbd37c8c2601878d4a67b72545346b3495e80c8d9bc9fbef97"
+      "bytes": 27714,
+      "sha256": "52281b3016dae768a8f610e88e151b54ceae937834d25cc525e6559b8d279ef2"
     },
     "lore-index.json": {
       "path": "data/lore-index.json",
@@ -421,7 +427,7 @@
     "continuity-balance-audit.json": {
       "path": "data/continuity-balance-audit.json",
       "bytes": 2652,
-      "sha256": "a57520e89c10c65cce2e0f033d8747381e338d13039c42fd952bbac14340820b"
+      "sha256": "4fb30e13b321c4ba3cbce39eec94e7c8edf37622aa69e4b5822a6b317d1c3590"
     },
     "endgame-dashboard.json": {
       "path": "data/endgame-dashboard.json",
@@ -567,6 +573,11 @@
       "path": "data/asset-registry.json",
       "bytes": 20527,
       "sha256": "058cfd493ceca4a4387bd31186d8d2bbd03e749db5313eb8f86b095e77046b57"
+    },
+    "3d-blueprint-system.json": {
+      "path": "data/3d-blueprint-system.json",
+      "bytes": 1523,
+      "sha256": "d93136c88bca1c610ababceb171706fcf14250e882436357888163c09e9f89e2"
     }
   },
   "artPromptCategories": {
@@ -686,5 +697,11 @@
       "prompt": "Titan Gates tactical battleground environment concept: Obsidian River Crossing. A dangerous crossing through a mythic black-glass riverbed, basalt banks, bone markers, and half-submerged relic bridges. Terrain effects are physical: slick obsidian shallows, steam vents, broken stepping stones, jagged basalt cover, ash-mud edges, and old ferry chains shaping movement. The river’s curse is shown through scorched offerings, cracked black reflections, and naturally hazardous footing through believable physical footing and river hazards. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects rooted in river-crossing lore, no sci-fi.",
       "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares"
     }
-  ]
+  ],
+  "blueprint3dSystem": {
+    "status": "IMPLEMENTED",
+    "director": "3D Asset Director",
+    "registryTotal": 129,
+    "registry": "3D_Blueprints/Registry/blueprint-registry.json"
+  }
 }

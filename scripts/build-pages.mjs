@@ -16,6 +16,7 @@ const include = [
   'art',
   'dev',
   'visual',
+  '3D_Blueprints',
   'README.md'
 ];
 
@@ -36,7 +37,7 @@ for(const rel of include){
 }
 
 fs.writeFileSync(path.join(dist,'.nojekyll'), '');
-const required=['index.html','game/index.html','game/preview.html','game/shared-preview.js','game/tactical-map-prototype.html','mini-app/galaxy-reapers-ascension.html','data/index.json','data/titans.json','data/dialogue-scripts.json','data/visual-screens.json','data/realm-codex.json','data/hybrid-visual-architecture.json','data/asset-pipeline.json','data/github-sync-policy.json','data/github-sync-status.json','data/change-history.json','data/continuity-balance-audit.json','data/solo-battle-state-schema.json','data/solo-vertical-slice.json','data/battlefield-telemetry-contract.json','data/campaign-playflow-contract.json','data/async-arena-system.json','data/titan-trial-system.json','data/mission-tactical-profile-system.json','data/enemy-archetype-registry.json','data/art-director-scale-sheets.json','data/command-hub-contract.json','data/asset-registry.json','game/solo-battle-engine.mjs','docs/lore/README.md'];
+const required=['index.html','game/index.html','game/preview.html','game/shared-preview.js','game/tactical-map-prototype.html','mini-app/galaxy-reapers-ascension.html','data/index.json','data/titans.json','data/dialogue-scripts.json','data/visual-screens.json','data/realm-codex.json','data/hybrid-visual-architecture.json','data/asset-pipeline.json','data/github-sync-policy.json','data/github-sync-status.json','data/change-history.json','data/continuity-balance-audit.json','data/solo-battle-state-schema.json','data/solo-vertical-slice.json','data/battlefield-telemetry-contract.json','data/campaign-playflow-contract.json','data/async-arena-system.json','data/titan-trial-system.json','data/mission-tactical-profile-system.json','data/enemy-archetype-registry.json','data/art-director-scale-sheets.json','data/command-hub-contract.json','data/asset-registry.json','data/3d-blueprint-system.json','3D_Blueprints/Registry/blueprint-registry.json','3D_Blueprints/Global_References/Master_Scale_Reference/metadata.json','game/solo-battle-engine.mjs','docs/lore/README.md'];
 for(const rel of required){
   if(!fs.existsSync(path.join(dist, rel))) throw new Error(`Build missing ${rel}`);
 }
