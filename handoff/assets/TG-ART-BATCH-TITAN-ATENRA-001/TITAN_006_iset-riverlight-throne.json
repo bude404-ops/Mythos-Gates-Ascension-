@@ -1,0 +1,52 @@
+{
+  "schema": "TG_CREATOR_HANDOFF_PACKET_V1",
+  "asset_id": "TITAN_006",
+  "asset_type": "TITAN",
+  "canonical_name": "Iset Riverlight Throne",
+  "source_batch": "TG-ART-BATCH-TITAN-ATENRA-001",
+  "source_reason": "Aten Ra Titan prompts are approved as the first coherent faction batch because shared gold/bronze/sacred-geometry identity improves style consistency, starter presentation, scale validation, and 3D silhouette reference cohesion.",
+  "priority": "HIGH",
+  "status": "READY_FOR_EXTERNAL_CREATION",
+  "output_contract": {
+    "upload_target": {},
+    "manifest": "manifests/assets/titan/TITAN_006/manifest.json",
+    "preserve_original_source": true,
+    "do_not_rename_asset_id": true,
+    "do_not_mark_imported_without_real_file": true
+  },
+  "canon_locks": {
+    "no_new_lore": true,
+    "no_new_faction_identity": true,
+    "no_playable_hero_drift": false,
+    "no_sci_fi_drift": true
+  },
+  "prompt_reference": null,
+  "blueprint_reference": {
+    "registry_path": "3D_Blueprints/Characters/Titans/TITAN_006_iset-riverlight-throne/metadata.json",
+    "blueprint_status": "BLUEPRINT_IN_PROGRESS",
+    "faction": "Aten Ra",
+    "queue_status": "BLUEPRINT_IN_PROGRESS",
+    "package_path": "3D_Blueprints/Characters/Titans/TITAN_006_iset-riverlight-throne/metadata.json"
+  },
+  "quality_gates": [
+    "Mobile-readable silhouette at card and battlefield preview scale.",
+    "No sci-fi, firearms, spaceships, aliens, modern corporate UI, or generic superhero styling.",
+    "Faction identity must remain unmistakable: Aten Ra gold/bronze/sacred geometry/solar law for Titan batch.",
+    "Generated image may not be marked imported until a real asset file exists in the artwork pipeline.",
+    "Mesha remains non-playable campaign support; art may not imply a playable Hero class.",
+    "The First Reopening Gate must read as physical broken Gatefield terrain, not a neon board-game tile set."
+  ],
+  "rejection_triggers": [
+    "Human-sized Titan silhouette.",
+    "Readable text/watermark/logo in the image.",
+    "Photorealistic celebrity/human face drift.",
+    "Sci-fi armor or weapon drift.",
+    "Loss of mobile readability in 360px vertical crop.",
+    "Visual contradiction of prompt negativePrompt constraints."
+  ],
+  "required_return_files": [
+    "Original source file in the correct GitHub source slot.",
+    "Preview render or concept preview when available.",
+    "Notes listing tool, version, scale assumptions, and unresolved blockers."
+  ]
+}

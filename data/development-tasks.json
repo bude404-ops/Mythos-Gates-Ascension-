@@ -241,6 +241,28 @@
     "completionNotes": "129 per-asset manifests and reserved ID contracts generated from existing canon. Detection now ignores generated metadata so manifests do not masquerade as source assets."
   },
   {
+    "id": "TG-DEV-014",
+    "description": "Generate creator handoff packets for approved art prompt batches and first 3D battlefield production batch so external creators know exact GitHub targets and canon locks.",
+    "director": "Development Director",
+    "priority": "High",
+    "status": "COMPLETED",
+    "dependencies": [
+      "TG-DEV-001",
+      "TG-DEV-007",
+      "TG-DEV-013",
+      "data/3d-production-queue.json"
+    ],
+    "relatedEntity": "TG-CREATOR-HANDOFF-REPORT-001",
+    "relatedFiles": [
+      "scripts/generate-creator-handoff.mjs",
+      "handoff/assets/",
+      "validation/reports/creator-handoff-report.json",
+      "package.json"
+    ],
+    "completed": "2026-08-13",
+    "completionNotes": "23 production handoff packets generated: 11 approved art prompt packets and 12 first-batch 3D battlefield packets. Prompt-only NPC art stays outside the 3D asset registry until a real source file exists."
+  },
+  {
     "id": "TG-DEV-011",
     "description": "Connected screenshot-capable visual smoke automation into the deployment workflow template so UI regressions block publication once workflow activation is permitted.",
     "director": "Development Director",

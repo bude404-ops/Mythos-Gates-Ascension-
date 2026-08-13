@@ -26,8 +26,9 @@
     "assets:validate": "node scripts/validate-github-assets.mjs",
     "assets:sync": "npm run assets:detect && npm run assets:validate",
     "assets:test-intake": "node scripts/test-github-asset-intake.mjs",
-    "assets:verify": "npm run assets:sync && npm run assets:manifests && npm run assets:test-intake",
-    "assets:manifests": "node scripts/generate-asset-manifests.mjs"
+    "assets:verify": "npm run assets:sync && npm run assets:manifests && npm run assets:handoff && npm run assets:test-intake",
+    "assets:manifests": "node scripts/generate-asset-manifests.mjs",
+    "assets:handoff": "node scripts/generate-creator-handoff.mjs"
   },
   "engines": {
     "node": ">=20"

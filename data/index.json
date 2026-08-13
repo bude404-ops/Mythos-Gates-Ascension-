@@ -11,7 +11,7 @@
     "artworks": 0,
     "artImportPipeline": 1,
     "artApprovalManifest": 1,
-    "developmentTasks": 47,
+    "developmentTasks": 48,
     "loreEntries": 35,
     "npcs": 8,
     "creatures": 18,
@@ -98,7 +98,9 @@
     "githubAssetRegistryEntries": 129,
     "githubAssetDependencyNodes": 129,
     "githubAssetManifests": 129,
-    "githubReservedAssetIds": 129
+    "githubReservedAssetIds": 129,
+    "creatorHandoffPackets": 23,
+    "creatorHandoffBatches": 3
   },
   "files": {
     "project.json": "data/project.json",
@@ -239,8 +241,8 @@
     },
     "development-tasks.json": {
       "path": "data/development-tasks.json",
-      "bytes": 30999,
-      "sha256": "51ba03e1aebe58b44ad65bfc80bc7e540851f75df561dac26ef160174666b198"
+      "bytes": 31934,
+      "sha256": "c5e35bc85754471727c983a33e832e89379cbc76d2b2cb44575b524db23d10b3"
     },
     "lore-index.json": {
       "path": "data/lore-index.json",
@@ -825,6 +827,32 @@
     "status": "IMPLEMENTED",
     "count": 129,
     "reservedIds": 129
+  },
+  "creatorHandoff": {
+    "status": "VALID",
+    "packets": 23,
+    "approvedArtPackets": 11,
+    "battlefield3dPackets": 12,
+    "batches": [
+      {
+        "id": "TG-ART-BATCH-TITAN-ATENRA-001",
+        "name": "Aten Ra First Titan Artwork Approval Batch",
+        "type": "APPROVED_ART_PROMPT_BATCH",
+        "packetCount": 9
+      },
+      {
+        "id": "TG-ART-BATCH-NPC-MAP-001",
+        "name": "Mesha Gate-Scribe and First Reopening Gate Approval Batch",
+        "type": "APPROVED_ART_PROMPT_BATCH",
+        "packetCount": 2
+      },
+      {
+        "id": "TG-3D-FIRST-HANDOFF-BATTLEFIELDS-001",
+        "name": "First 3D Battlefield Handoff Batch",
+        "type": "3D_BLUEPRINT_HANDOFF_BATCH",
+        "packetCount": 12
+      }
+    ]
   },
   "githubAssetDependencyGraph": {
     "status": "IMPLEMENTED",

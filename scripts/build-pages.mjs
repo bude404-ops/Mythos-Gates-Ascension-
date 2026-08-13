@@ -20,6 +20,7 @@ const include = [
   'asset_registry',
   'blueprints',
   'manifests',
+  'handoff',
   'validation',
   'tools',
   'scripts',
