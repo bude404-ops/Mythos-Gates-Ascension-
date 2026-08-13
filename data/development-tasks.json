@@ -86,7 +86,7 @@
     "description": "Prepared GitHub Pages deployment workflow template with continuity audit, static build, index freshness, visual smoke, secret scan, artifact upload, and Pages deploy gates; activation is blocked until a GitHub credential with workflow scope can write .github/workflows/pages.yml.",
     "director": "Development Director",
     "priority": "High",
-    "status": "BLOCKED",
+    "status": "COMPLETED",
     "dependencies": [
       "GitHub PAT or App credential with workflow scope"
     ],
@@ -96,8 +96,11 @@
       "package.json",
       "scripts/visual-qa-smoke.mjs",
       "scripts/secret-scan.mjs",
-      "data/github-sync-status.json"
-    ]
+      "data/github-sync-status.json",
+      ".github/workflows/pages.yml"
+    ],
+    "completed": "2026-08-13",
+    "completionNotes": "GitHub Pages workflow activated on main with continuity audit, build, index freshness, visual smoke, secret scan, artifact upload, and Pages deployment gates."
   },
   {
     "id": "TG-DEV-006",
