@@ -32,6 +32,7 @@ for (const [type, file] of Object.entries(sourceFiles)) {
   canonicalIds.set(type, new Set(data.map(item => item.id)));
 }
 const registry = read('3D_Blueprints/Registry/blueprint-registry.json');
+const githubAssetRegistry = read('asset_registry/github-asset-registry.json');
 const system = read('data/3d-blueprint-system.json');
 const productionQueue = read('data/3d-production-queue.json');
 const master = read('3D_Blueprints/Global_References/Master_Scale_Reference/metadata.json');
@@ -109,6 +110,10 @@ function checkPackage(entry) {
 }
 
 for (const entry of registry.assets) checkPackage(entry);
+const githubLinkedAssetIds = new Set((githubAssetRegistry.entries || []).map(asset => asset.asset_id));
+for (const entry of registry.assets) {
+  if (!githubLinkedAssetIds.has(entry.assetId)) fail(`${entry.assetId}: missing GitHub asset registry link`);
+}
 const requiredCounts = {
   TITAN: read('data/titans.json').length,
   CHARACTER: read('data/characters.json').length,

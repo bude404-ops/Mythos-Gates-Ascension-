@@ -65,6 +65,9 @@ const data = {
   endgameDashboard: read('data/endgame-dashboard.json'),
   commandHubContract: read('data/command-hub-contract.json'),
   assetRegistry: read('data/asset-registry.json'),
+  githubAssetRepository: read('data/github-asset-repository.json'),
+  githubAssetRegistry: read('asset_registry/github-asset-registry.json'),
+  githubAssetDependencyGraph: read('asset_registry/asset-dependency-graph.json'),
   blueprint3dSystem: read('data/3d-blueprint-system.json'),
   blueprint3dProductionQueue: read('data/3d-production-queue.json'),
   blueprint3dRegistry: read('3D_Blueprints/Registry/blueprint-registry.json'),
@@ -90,6 +93,9 @@ register('creatureBehaviorRuntime', data.creatureBehaviorRuntime, 'data/creature
 register('endgameDashboard', data.endgameDashboard, 'data/endgame-dashboard.json');
 register('commandHubContract', data.commandHubContract, 'data/command-hub-contract.json');
 register('assetRegistry', data.assetRegistry, 'data/asset-registry.json');
+register('githubAssetRepository', data.githubAssetRepository, 'data/github-asset-repository.json');
+register('githubAssetRegistry', data.githubAssetRegistry, 'asset_registry/github-asset-registry.json');
+register('githubAssetDependencyGraph', data.githubAssetDependencyGraph, 'asset_registry/asset-dependency-graph.json');
 register('blueprint3dSystem', data.blueprint3dSystem, 'data/3d-blueprint-system.json');
 register('blueprint3dProductionQueue', data.blueprint3dProductionQueue, 'data/3d-production-queue.json');
 register('blueprint3dRegistry', data.blueprint3dRegistry, '3D_Blueprints/Registry/blueprint-registry.json');
@@ -547,3 +553,17 @@ const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','Game Preview','Visual QA','Tactical Map Prototype','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
 
 console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, titans:data.titans.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status, soloBattleSchema:data.soloBattleStateSchema.status, soloVerticalSlice:data.soloVerticalSlice.status, asyncArena:data.asyncArenaSystem.status, commandHub:data.commandHubContract.status, battlefieldRuntime:data.battlefieldRuntimeArchitecture.status, blueprint3d:data.blueprint3dSystem.status, blueprint3dAssets:data.blueprint3dRegistry.assets.length, blueprint3dProductionQueue:data.blueprint3dProductionQueue.queue.length}, null, 2));
+
+
+// GitHub-centered asset repository validation
+if (!data.githubAssetRepository || data.githubAssetRepository.status !== 'IMPLEMENTED') fail('GitHub asset repository contract must be implemented');
+if (!data.githubAssetRegistry || !Array.isArray(data.githubAssetRegistry.entries)) fail('GitHub asset registry entries missing');
+if (!data.githubAssetDependencyGraph || !Array.isArray(data.githubAssetDependencyGraph.nodes)) fail('GitHub asset dependency graph missing');
+if (data.githubAssetRegistry.entries.length < 129) fail('GitHub asset registry must cover the 129 canonical 3D blueprint assets');
+const githubAssetIds = new Set(data.githubAssetRegistry.entries.map(a => a.asset_id));
+if (githubAssetIds.size !== data.githubAssetRegistry.entries.length) fail('GitHub asset registry contains duplicate permanent IDs');
+for (const asset of data.githubAssetRegistry.entries) {
+  if (!asset.asset_id || !asset.asset_type || !asset.canonical_name) fail(`GitHub asset registry incomplete row: ${asset.asset_id || 'unknown'}`);
+  if (asset.asset_type !== 'GLOBAL_REFERENCE' && asset.scale_reference !== 'MASTER_SCALE') fail(`${asset.asset_id}: 3D asset missing MASTER_SCALE link`);
+  if (!asset.versions || !('current' in asset.versions)) fail(`${asset.asset_id}: version contract missing`);
+}

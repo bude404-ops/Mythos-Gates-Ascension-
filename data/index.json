@@ -82,6 +82,7 @@
     "campaignPlayflowContract": 1,
     "commandHubContract": 1,
     "assetRegistry": 1,
+    "githubAssetRepository": 1,
     "blueprint3dSystem": 1,
     "blueprint3dProductionQueue": 129,
     "hollowCreatures": 16,
@@ -93,7 +94,9 @@
     "blueprint3dGates": 7,
     "blueprint3dFirstHandoffBatch": 12,
     "artApprovalBatches": 2,
-    "artApprovedPromptPackages": 11
+    "artApprovedPromptPackages": 11,
+    "githubAssetRegistryEntries": 129,
+    "githubAssetDependencyNodes": 129
   },
   "files": {
     "project.json": "data/project.json",
@@ -177,6 +180,7 @@
     "campaign-playflow-contract.json": "data/campaign-playflow-contract.json",
     "command-hub-contract.json": "data/command-hub-contract.json",
     "asset-registry.json": "data/asset-registry.json",
+    "github-asset-repository.json": "data/github-asset-repository.json",
     "3d-blueprint-system.json": "data/3d-blueprint-system.json",
     "3d-production-queue.json": "data/3d-production-queue.json"
   },
@@ -586,6 +590,11 @@
       "bytes": 20527,
       "sha256": "058cfd493ceca4a4387bd31186d8d2bbd03e749db5313eb8f86b095e77046b57"
     },
+    "github-asset-repository.json": {
+      "path": "data/github-asset-repository.json",
+      "bytes": 5363,
+      "sha256": "54a0fd7e9d760307eead995351e2e7476ceb64f44e33bf1f7efe792d2bb570dd"
+    },
     "3d-blueprint-system.json": {
       "path": "data/3d-blueprint-system.json",
       "bytes": 1523,
@@ -715,6 +724,18 @@
       "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares"
     }
   ],
+  "githubAssetStatusCounts": {
+    "AWAITING_SOURCE_ASSET": 129
+  },
+  "githubAssetTypeCounts": {
+    "BATTLEFIELD": 12,
+    "CHARACTER": 8,
+    "CREATURE": 18,
+    "ENEMY": 18,
+    "GATE": 7,
+    "GLOBAL_REFERENCE": 3,
+    "TITAN": 63
+  },
   "artApprovalManifest": {
     "status": "IMPLEMENTED",
     "approvalStatus": "APPROVED_FOR_GENERATION",
@@ -747,5 +768,59 @@
       "BATTLEFIELD_011",
       "BATTLEFIELD_012"
     ]
+  },
+  "githubAssetRepository": {
+    "status": "IMPLEMENTED",
+    "sourceOfTruth": "GitHub repository files and manifests are the central asset source; Reaper is a management layer, not the required importer.",
+    "flow": [
+      "External Art/3D Tool",
+      "GitHub",
+      "Asset Registry",
+      "Reaper/Development Tools",
+      "Game"
+    ],
+    "supportedTypes": {
+      "model3d": [
+        ".glb",
+        ".gltf",
+        ".fbx",
+        ".obj",
+        ".blend"
+      ],
+      "artwork": [
+        ".png",
+        ".jpg",
+        ".jpeg",
+        ".webp",
+        ".psd",
+        ".tga"
+      ],
+      "textures": [
+        ".png",
+        ".tga",
+        ".webp",
+        ".jpg"
+      ],
+      "animation": [
+        ".fbx",
+        ".glb",
+        ".gltf"
+      ],
+      "future": [
+        ".wav",
+        ".ogg",
+        ".vfx"
+      ]
+    }
+  },
+  "githubAssetRegistry": {
+    "status": "IMPLEMENTED",
+    "entries": 129,
+    "awaitingSource": 129,
+    "sourceDiscovered": 0
+  },
+  "githubAssetDependencyGraph": {
+    "status": "IMPLEMENTED",
+    "nodes": 129
   }
 }

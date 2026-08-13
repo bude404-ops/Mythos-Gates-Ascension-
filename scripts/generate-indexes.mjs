@@ -89,6 +89,7 @@ const files = {
   'campaign-playflow-contract.json': 'campaignPlayflowContract',
   'command-hub-contract.json': 'commandHubContract',
   'asset-registry.json': 'assetRegistry',
+  'github-asset-repository.json': 'githubAssetRepository',
   '3d-blueprint-system.json': 'blueprint3dSystem',
   '3d-production-queue.json': 'blueprint3dProductionQueue'
 };
@@ -108,6 +109,8 @@ const blueprint3dSystem = read('data/3d-blueprint-system.json');
 const blueprint3dRegistry = read('3D_Blueprints/Registry/blueprint-registry.json');
 const blueprint3dProductionQueue = read('data/3d-production-queue.json');
 const artApprovalManifest = read('data/art-approval-manifest.json');
+const githubAssetRegistry = read('asset_registry/github-asset-registry.json');
+const githubAssetDependencyGraph = read('asset_registry/asset-dependency-graph.json');
 counts.hollowCreatures = (hollowEncounterSystem.roster || []).length;
 const artPrompts = read('data/art-prompts.json');
 const artPromptCategories = artPrompts.reduce((acc, prompt) => {
@@ -136,7 +139,11 @@ counts.blueprint3dProductionQueue = blueprint3dProductionQueue.queue.length;
 counts.blueprint3dFirstHandoffBatch = blueprint3dProductionQueue.firstHandoffBatch.length;
 counts.artApprovalBatches = artApprovalManifest.approvalBatches.length;
 counts.artApprovedPromptPackages = artApprovalManifest.approvalBatches.reduce((sum, batch) => sum + (batch.promptIds || []).length, 0);
-const index = { generated, counts, files: sourceFiles, sourceFileFingerprints, artPromptCategories, artMapPrompts, artApprovalManifest: { status: artApprovalManifest.status, approvalStatus: artApprovalManifest.approvalStatus, gatesClosed: artApprovalManifest.gatesClosed, stillBlocked: artApprovalManifest.stillBlocked, approvedPromptPackages: counts.artApprovedPromptPackages }, blueprint3dSystem: { status: blueprint3dSystem.status, director: blueprint3dSystem.director, registryTotal: blueprint3dRegistry.assets.length, registry: blueprint3dSystem.registry, productionQueue: 'data/3d-production-queue.json', firstHandoffBatch: blueprint3dProductionQueue.firstHandoffBatch.map(item => item.assetId) } };
+counts.githubAssetRegistryEntries = githubAssetRegistry.entries.length;
+counts.githubAssetDependencyNodes = githubAssetDependencyGraph.nodes.length;
+const githubAssetStatusCounts = githubAssetRegistry.entries.reduce((acc, asset) => { acc[asset.status] = (acc[asset.status] || 0) + 1; return acc; }, {});
+const githubAssetTypeCounts = githubAssetRegistry.entries.reduce((acc, asset) => { acc[asset.asset_type] = (acc[asset.asset_type] || 0) + 1; return acc; }, {});
+const index = { generated, counts, files: sourceFiles, sourceFileFingerprints, artPromptCategories, artMapPrompts, githubAssetStatusCounts, githubAssetTypeCounts, artApprovalManifest: { status: artApprovalManifest.status, approvalStatus: artApprovalManifest.approvalStatus, gatesClosed: artApprovalManifest.gatesClosed, stillBlocked: artApprovalManifest.stillBlocked, approvedPromptPackages: counts.artApprovedPromptPackages }, blueprint3dSystem: { status: blueprint3dSystem.status, director: blueprint3dSystem.director, registryTotal: blueprint3dRegistry.assets.length, registry: blueprint3dSystem.registry, productionQueue: 'data/3d-production-queue.json', firstHandoffBatch: blueprint3dProductionQueue.firstHandoffBatch.map(item => item.assetId) }, githubAssetRepository: { status: read('data/github-asset-repository.json').status, sourceOfTruth: read('data/github-asset-repository.json').sourceOfTruth, flow: read('data/github-asset-repository.json').flow, supportedTypes: read('data/github-asset-repository.json').supportedTypes }, githubAssetRegistry: { status: githubAssetRegistry.status, entries: githubAssetRegistry.entries.length, awaitingSource: githubAssetStatusCounts.AWAITING_SOURCE_ASSET || 0, sourceDiscovered: githubAssetStatusCounts.SOURCE_DISCOVERED || 0 }, githubAssetDependencyGraph: { status: githubAssetDependencyGraph.status, nodes: githubAssetDependencyGraph.nodes.length } };
 write('data/index.json', index);
 console.log(JSON.stringify(index, null, 2));
 

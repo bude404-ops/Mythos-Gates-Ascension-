@@ -1,0 +1,3492 @@
+{
+  "id": "TG-GITHUB-ASSET-DEPENDENCY-GRAPH-001",
+  "version": "1.0.0",
+  "status": "IMPLEMENTED",
+  "updated": "2026-08-13",
+  "rule": "Changing a source model, material, texture, rig, animation, VFX, LOD, or collision file marks dependents for revalidation but never overwrites them.",
+  "nodes": [
+    {
+      "asset_id": "BATTLEFIELD_001",
+      "asset_type": "BATTLEFIELD",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Battlefields/BATTLEFIELD_001_the-first-reopening-gate/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "BATTLEFIELD_002",
+      "asset_type": "BATTLEFIELD",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Battlefields/BATTLEFIELD_002_solar-pylon-observatory/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "BATTLEFIELD_003",
+      "asset_type": "BATTLEFIELD",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Battlefields/BATTLEFIELD_003_storm-oath-bridge/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "BATTLEFIELD_004",
+      "asset_type": "BATTLEFIELD",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Battlefields/BATTLEFIELD_004_marble-sky-arena/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "BATTLEFIELD_005",
+      "asset_type": "BATTLEFIELD",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Battlefields/BATTLEFIELD_005_moon-grove-rootlabyrinth/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "BATTLEFIELD_006",
+      "asset_type": "BATTLEFIELD",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Battlefields/BATTLEFIELD_006_black-iron-court/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "BATTLEFIELD_007",
+      "asset_type": "BATTLEFIELD",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Battlefields/BATTLEFIELD_007_sacred-sun-temple-road/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "BATTLEFIELD_008",
+      "asset_type": "BATTLEFIELD",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Battlefields/BATTLEFIELD_008_titan-gate-sun-throne/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "BATTLEFIELD_009",
+      "asset_type": "BATTLEFIELD",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Battlefields/BATTLEFIELD_009_foxfire-torii-road/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "BATTLEFIELD_010",
+      "asset_type": "BATTLEFIELD",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Battlefields/BATTLEFIELD_010_mirror-lake-sanctum/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "BATTLEFIELD_011",
+      "asset_type": "BATTLEFIELD",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Battlefields/BATTLEFIELD_011_choir-vault-ascent/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "BATTLEFIELD_012",
+      "asset_type": "BATTLEFIELD",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Battlefields/BATTLEFIELD_012_broken-heaven-engine/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CHARACTER_001",
+      "asset_type": "CHARACTER",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/NPCs/CHARACTER_001_mesha-gate-scribe/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CHARACTER_002",
+      "asset_type": "CHARACTER",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/NPCs/CHARACTER_002_hrodda-oath-witness/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CHARACTER_003",
+      "asset_type": "CHARACTER",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/NPCs/CHARACTER_003_lyrion-laurel-envoy/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CHARACTER_004",
+      "asset_type": "CHARACTER",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/NPCs/CHARACTER_004_sayo-shrine-cartographer/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CHARACTER_005",
+      "asset_type": "CHARACTER",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/NPCs/CHARACTER_005_maeve-root-memory/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CHARACTER_006",
+      "asset_type": "CHARACTER",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/NPCs/CHARACTER_006_oriel-edict-keeper/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CHARACTER_007",
+      "asset_type": "CHARACTER",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/NPCs/CHARACTER_007_vasha-cinder-broker/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CHARACTER_008",
+      "asset_type": "CHARACTER",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/NPCs/CHARACTER_008_the-unnamed-hollow-mouth/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_001",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_001_hollow-wretch/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_002",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_002_gateborn-colossus/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_003",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_003_beast-realm-maneater/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_004",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_004_forgotten-standard-bearer/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_005",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_005_ancient-world-boss-leviathan-of-the-first-flood/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_006",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_006_hollow-choirling/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_007",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_007_hollow-knell-archer/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_008",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_008_hollow-oath-eater/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_009",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_009_hollow-sunless-magistrate/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_010",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_010_hollow-banner-maw/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_011",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_011_hollow-mirror-saint/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_012",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_012_hollow-root-parasite/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_013",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_013_hollow-shrine-mask/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_014",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_014_hollow-laurel-butcher/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_015",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_015_hollow-chain-auditor/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_016",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_016_hollow-gate-anchor/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_017",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_017_hollow-memory-thief/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_018",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_018_hollow-world-wound-behemoth/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_001",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_001_hollow-wretch/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_002",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_002_gateborn-colossus/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_003",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_003_beast-realm-maneater/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_004",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_004_forgotten-standard-bearer/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_005",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_005_ancient-world-boss-leviathan-of-the-first-flood/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_006",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_006_hollow-choirling/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_007",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_007_hollow-knell-archer/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_008",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_008_hollow-oath-eater/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_009",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_009_hollow-sunless-magistrate/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_010",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_010_hollow-banner-maw/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_011",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_011_hollow-mirror-saint/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_012",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_012_hollow-root-parasite/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_013",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_013_hollow-shrine-mask/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_014",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_014_hollow-laurel-butcher/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_015",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_015_hollow-chain-auditor/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_016",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_016_hollow-gate-anchor/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_017",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_017_hollow-memory-thief/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_018",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_018_hollow-world-wound-behemoth/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "GATE_001",
+      "asset_type": "GATE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Gates/GATE_001_the-sun-scale-gate/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "GATE_002",
+      "asset_type": "GATE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Gates/GATE_002_the-thunder-oath-gate/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "GATE_003",
+      "asset_type": "GATE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Gates/GATE_003_the-laurel-star-gate/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "GATE_004",
+      "asset_type": "GATE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Gates/GATE_004_the-spirit-moon-gate/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "GATE_005",
+      "asset_type": "GATE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Gates/GATE_005_the-thorn-memory-gate/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "GATE_006",
+      "asset_type": "GATE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Gates/GATE_006_the-choir-axiom-gate/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "GATE_007",
+      "asset_type": "GATE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Gates/GATE_007_the-cinder-wound-gate/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "GLOBAL_REF_001",
+      "asset_type": "GLOBAL_REFERENCE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Global_References/Master_Scale_Reference/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE_AUTHORITY",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "GLOBAL_REF_002",
+      "asset_type": "GLOBAL_REFERENCE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Global_References/Material_Library/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE_AUTHORITY",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "GLOBAL_REF_003",
+      "asset_type": "GLOBAL_REFERENCE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Global_References/Visual_Style_Guide/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE_AUTHORITY",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_001",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_001_aten-ra-solar-law-monolith/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_002",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_002_khemet-suncrown/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_003",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_003_nefra-obsidian-dawn/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_004",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_004_orru-prism-verdict/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_005",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_005_sutekh-dune-eclipse/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_006",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_006_iset-riverlight-throne/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_007",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_007_karnu-glass-horizon/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_008",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_008_maahes-noon-bastion/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_009",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_009_amunet-hidden-sun/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_010",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_010_the-allfather-stormvein/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_011",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_011_hrothar-rune-mountain/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_012",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_012_skeld-iron-tempest/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_013",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_013_eirwyn-valkstorm/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_014",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_014_mordun-frost-anvil/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_015",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_015_veyra-thunderloom/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_016",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_016_ragnor-skybreaker/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_017",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_017_ullr-snow-crown/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_018",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_018_sigrun-oathflare/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_019",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_019_aurelion-heaven-marrow/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_020",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_020_kallix-marble-thunder/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_021",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_021_thyressa-golden-aegis/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_022",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_022_ilyon-laurel-flame/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_023",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_023_nikos-star-lance/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_024",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_024_dione-victory-mirror/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_025",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_025_helior-bronze-summit/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_026",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_026_pallas-oath-spear/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_027",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_027_eiren-crowned-horizon/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_028",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_028_amaterion-spirit-sun/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_029",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_029_tsukiro-moon-veil/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_030",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_030_raidenko-storm-script/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_031",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_031_mizuka-shrine-tide/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_032",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_032_kageyori-shadow-gate/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_033",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_033_hanae-blossom-ward/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_034",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_034_onimaru-red-seal/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_035",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_035_korin-mist-path/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_036",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_036_yamabito-stone-prayer/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_037",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_037_dagoran-root-crown/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_038",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_038_eryndor-emerald-oath/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_039",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_039_melian-moon-grove/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_040",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_040_bran-granite-bough/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_041",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_041_nimue-silver-pool/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_042",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_042_cernan-wild-vale/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_043",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_043_ailbhe-thorn-song/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_044",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_044_oghma-stone-script/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_045",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_045_tara-dawn-barrow/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_046",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_046_seraphel-the-throne-eternal/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_047",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_047_caelion-dawnborn-axis/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_048",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_048_aurelia-radiant-spear/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_049",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_049_malachor-law-warden/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_050",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_050_elyndra-choir-crown/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_051",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_051_orison-white-citadel/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_052",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_052_vespera-mercy-blade/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_053",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_053_axiom-gate-choir/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_054",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_054_theon-still-horizon/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_055",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_055_mordrath-the-infernal-king/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_056",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_056_varkul-bloodforged-crown/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_057",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_057_nyxara-flameborn-court/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_058",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_058_azrakar-chainwarden/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_059",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_059_orryx-ash-dominion/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_060",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_060_malvera-ember-throne/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_061",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_061_kharon-black-iron/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_062",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_062_sablex-cinder-duke/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_063",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Titans/TITAN_063_zerath-wound-gate/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    }
+  ]
+}

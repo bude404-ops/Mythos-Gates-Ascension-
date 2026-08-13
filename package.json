@@ -21,7 +21,10 @@
     "test:command-hub": "node scripts/test-command-hub.mjs",
     "test:playable-battle-ui": "node scripts/test-playable-battle-ui.mjs",
     "test:creature-behavior": "node scripts/test-creature-behavior-runtime.mjs",
-    "test:battlefield-runtime": "node scripts/test-battlefield-runtime.mjs"
+    "test:battlefield-runtime": "node scripts/test-battlefield-runtime.mjs",
+    "assets:detect": "node scripts/detect-github-assets.mjs",
+    "assets:validate": "node scripts/validate-github-assets.mjs",
+    "assets:sync": "npm run assets:detect && npm run assets:validate"
   },
   "engines": {
     "node": ">=20"
