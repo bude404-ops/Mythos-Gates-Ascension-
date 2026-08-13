@@ -6,7 +6,7 @@ const esc = x => String(x ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt
 export function createCommandHubRuntime(DATA, mount){
   const CONTRACT = DATA.commandHubContract || DATA['command-hub-contract'] || {};
   const ASSETS = DATA.assetRegistry || DATA['asset-registry'] || { assets: [] };
-  const state = { route:'boot', bootIndex:0, startupMode:'firstLaunch', player:null, selectedTab:'battle', focusTitanId:null, battle:null, logs:[], lastError:null };
+  const state = { route:'boot', bootIndex:0, startupMode:'firstLaunch', player:null, selectedTab:'battle', focusTitanId:null, battle:null, logs:[], lastError:null, perf:{ renderCount:0, partialResourceUpdates:0, routeRenderCount:{}, lastRenderMs:0, maxRenderMs:0, lastRoute:null, budgetMs:32, resourceOnlyBudgetMs:8, assetPreloadCount:0 } };
   const factions = () => DATA.factions || [];
   const titans = () => DATA.titans || [];
   const realms = () => DATA.realmCodex || DATA['realm-codex'] || [];
@@ -82,8 +82,15 @@ export function createCommandHubRuntime(DATA, mount){
 
   const AudioManager = { play(hook){ if(state.player?.settings?.audioEnabled !== false) log('audio', hook); } };
   const AssetManager = {
-    forEntity(entityId, type){ return (ASSETS.assets||[]).find(a=>a.entityId===entityId && (!type || a.assetType===type)) || { status:'PLACEHOLDER', fallback:'canon-safe-placeholder', requirements:'Canon-safe placeholder' }; },
-    preloadVisible(){ const p=ensurePlayerState(); return [...p.selectedTitans.map(id=>this.forEntity(id,'TITAN_PRESENTATION')), this.forEntity(p.campaignProgress.currentFactionId,'COMMAND_HUB_BACKGROUND'), this.forEntity(p.campaignProgress.currentFactionId,'GATE')]; }
+    cache:new Map(),
+    forEntity(entityId, type){
+      const key=`${entityId||'unknown'}:${type||'any'}`;
+      if(this.cache.has(key)) return this.cache.get(key);
+      const asset=(ASSETS.assets||[]).find(a=>a.entityId===entityId && (!type || a.assetType===type)) || { status:'PLACEHOLDER', fallback:'canon-safe-placeholder', requirements:'Canon-safe placeholder' };
+      this.cache.set(key, asset);
+      return asset;
+    },
+    preloadVisible(){ const p=ensurePlayerState(); const preload=[...p.selectedTitans.map(id=>this.forEntity(id,'TITAN_PRESENTATION')), this.forEntity(p.campaignProgress.currentFactionId,'COMMAND_HUB_BACKGROUND'), this.forEntity(p.campaignProgress.currentFactionId,'GATE')]; state.perf.assetPreloadCount+=preload.length; return preload; }
   };
 
   function canonicalDefaultPlayer(){
@@ -357,7 +364,17 @@ export function createCommandHubRuntime(DATA, mount){
 
 
   function resourceBar(player){
-    return `<div class="flex gap-2 overflow-x-auto pb-1">${(player.resources||[]).map(r=>`<div class="min-w-[112px] rounded-2xl border border-neutral-800 bg-neutral-950/80 px-3 py-2"><p class="text-[10px] uppercase tracking-[.18em] text-neutral-500">${esc(r.name)}</p><b class="text-lg text-primary-light">${esc(r.amount)}</b></div>`).join('')}</div>`;
+    return `<div data-resource-bar class="flex gap-2 overflow-x-auto pb-1">${(player.resources||[]).map(r=>`<div data-resource-id="${esc(r.id)}" class="min-w-[112px] rounded-2xl border border-neutral-800 bg-neutral-950/80 px-3 py-2"><p class="text-[10px] uppercase tracking-[.18em] text-neutral-500">${esc(r.name)}</p><b data-resource-amount class="text-lg text-primary-light">${esc(r.amount)}</b></div>`).join('')}</div>`;
+  }
+  function refreshResourceBar(player=ensurePlayerState()){
+    const started=performance.now();
+    const rows=mount.querySelectorAll('[data-resource-id]');
+    if(!rows.length) return false;
+    const byId=new Map((player.resources||[]).map(r=>[r.id,r]));
+    rows.forEach(row=>{ const r=byId.get(row.dataset.resourceId); const amount=row.querySelector('[data-resource-amount]'); if(r && amount && amount.textContent!==String(r.amount)) amount.textContent=String(r.amount); });
+    state.perf.partialResourceUpdates++;
+    state.perf.lastResourceUpdateMs=Number((performance.now()-started).toFixed(3));
+    return true;
   }
   function profileHeader(player){
     const xp = Math.max(0, Math.min(100, Math.round(((player.experience?.current||0)/(player.experience?.next||100))*100)));
@@ -469,8 +486,16 @@ export function createCommandHubRuntime(DATA, mount){
   }
 
   function render(){
+    const started=performance.now();
     const views={ boot, title, awakening:awakeningScreen, hub, campaigns, mission:missionScreen, titans:titansScreen, gates:gatesScreen, trials:trialsScreen, raid:raidScreen, codex:codexScreen, command:commandScreen, battle:battleScreen };
     mount.innerHTML=(views[state.route]||hub)();
+    const elapsed=performance.now()-started;
+    state.perf.renderCount++;
+    state.perf.lastRenderMs=Number(elapsed.toFixed(3));
+    state.perf.maxRenderMs=Number(Math.max(state.perf.maxRenderMs||0, elapsed).toFixed(3));
+    state.perf.lastRoute=state.route;
+    state.perf.routeRenderCount[state.route]=(state.perf.routeRenderCount[state.route]||0)+1;
+    if(elapsed > state.perf.budgetMs) log('performance','Render exceeded budget',{route:state.route, elapsedMs:state.perf.lastRenderMs, budgetMs:state.perf.budgetMs});
   }
   function advanceBoot(){
     if(state.route!=='boot') return;
@@ -480,7 +505,7 @@ export function createCommandHubRuntime(DATA, mount){
     state.bootIndex++; render(); setTimeout(advanceBoot, state.player?.settings?.reducedMotion ? 20 : 90);
   }
   const api={
-    state, getNextRecommendedAction, validatePlayerState, AssetManager, AudioManager, awakeningProgress,
+    state, getNextRecommendedAction, validatePlayerState, AssetManager, AudioManager, awakeningProgress, refreshResourceBar,
     start(){ render(); setTimeout(advanceBoot, 80); },
     enterHub(){ const p=ensurePlayerState(); AssetManager.preloadVisible(); AudioManager.play('gate_open'); setRoute(p.onboarding?.status==='COMPLETE'?'hub':'awakening'); },
     go(route){ setRoute(route); },
@@ -526,7 +551,7 @@ export function createCommandHubRuntime(DATA, mount){
       const idx=p.campaignProgress.pendingRewards.findIndex(r=>r.id===id);
       if(idx<0){ log('reward-error','Reward cache missing',{id}); render(); return; }
       const [cache]=p.campaignProgress.pendingRewards.splice(idx,1);
-      applyRewardCache(p,cache); p.notifications=deriveNotifications(p); savePlayerState(); log('reward','Reward cache claimed',{id,grants:cache.grants}); render();
+      applyRewardCache(p,cache); p.notifications=deriveNotifications(p); savePlayerState(); log('reward','Reward cache claimed',{id,grants:cache.grants}); if(!refreshResourceBar(p)) render();
     },
     startTrial(titanId){ const p=ensurePlayerState(); createTrialAttempt(p,titanId); state.selectedTab='trials'; setRoute('trials'); },
     finishTrial(approach){ const p=ensurePlayerState(); const cache=resolveTrialAttempt(p,state.trial,approach); if(cache){ state.selectedTab='command'; setRoute('command'); } else render(); },

@@ -1,7 +1,7 @@
 {
   "id": "TG-COMMAND-HUB-001",
-  "version": "1.5.0",
-  "generated": "2026-08-12T23:10:00Z",
+  "version": "1.6.0",
+  "generated": "2026-08-13T00:00:00Z",
   "status": "IMPLEMENTED",
   "purpose": "Mobile-first Main Menu / Command Hub runtime foundation with implemented first-launch Awakening onboarding, canon starter Titan binding, save validation, campaign handoff, art scale references, enemy archetype registry, mission tactical profiles, Titan/Faction Trials, raid economy, and battlefield entry.",
   "canonFirst": true,
@@ -294,7 +294,10 @@
     "TG-DEV-008 Hollow Wretch and Gateborn Colossus behavior records drive playable battle intents.",
     "TG-DEV-008 battle UI exposes telegraphs, reaction counterplay, behavior tags, and threat budgets.",
     "TG-DEV-030 all 8 Art Director scale sheet types are implemented.",
-    "TG-DEV-030 scale sheets preserve Titan/Gate mass, mobile crop readability, and non-sci-fi terrain language."
+    "TG-DEV-030 scale sheets preserve Titan/Gate mass, mobile crop readability, and non-sci-fi terrain language.",
+    "TG-TASK-COMMAND-HUB-018 render telemetry tracks route render counts, max render time, and budget overruns.",
+    "TG-TASK-COMMAND-HUB-018 reward claims support partial resource-bar refresh without mandatory full route re-render.",
+    "TG-TASK-COMMAND-HUB-018 visible asset preloads use cached lookups and count boot/title/hub assets only."
   ],
   "counts": {
     "factions": 7,
@@ -409,5 +412,23 @@
     "implementedSheets": 8,
     "mobileCrops": true,
     "rule": "Scale references enlarge Gates, architecture, and battlefield space instead of shrinking Titans."
+  },
+  "commandHubPerformance": {
+    "taskId": "TG-TASK-COMMAND-HUB-018",
+    "status": "IMPLEMENTED",
+    "source": "game/command-hub-runtime.mjs",
+    "renderBudgetMs": 32,
+    "resourceOnlyBudgetMs": 8,
+    "implementedOptimizations": [
+      "AssetManager lookup cache",
+      "render performance telemetry",
+      "route render counters",
+      "partial resource-bar refresh for reward claims"
+    ],
+    "rules": [
+      "Full route renders are measured and logged when they exceed budget.",
+      "Resource-only reward claims update visible resource amounts without forcing a full menu rebuild.",
+      "Visible asset preloads are counted and use cached asset lookups."
+    ]
   }
 }
