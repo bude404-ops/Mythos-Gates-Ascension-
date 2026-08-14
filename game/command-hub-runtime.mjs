@@ -1,4 +1,5 @@
 import { PHASES, STANCES, createBattleState, applyTitanAction, revealEnemyIntents, resolveEnemyPhase, applyReaction, applyTerrainTick, evaluateObjectives, autoAdvanceEnemyTurn, summarizeBattle, resolveMissionScaling, scaleEnemyForMission } from './browser-battle-engine.mjs';
+import { renderBattlefieldOverviewView } from './views/battlefield-overview-view.mjs';
 const STORAGE_KEY = 'tg.commandHub.playerState.v1';
 const BOOT_STAGES = ['BOOT','INITIALIZATION','ASSET_PRELOAD','SAVE_DATA_LOAD','SAVE_VALIDATION','PLAYER_STATE_LOAD','CANON_DATA_LOAD','CONTENT_VALIDATION','TITLE_GATE_PRESENTATION','MAIN_COMMAND_HUB'];
 const esc = x => String(x ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
@@ -12,6 +13,7 @@ export function createCommandHubRuntime(DATA, mount){
   const titans = () => DATA.titans || [];
   const realms = () => DATA.realmCodex || DATA['realm-codex'] || [];
   const missions = () => DATA.missions || [];
+  const battlefieldRegistry = () => DATA.battlefieldCanonRegistry || DATA['battlefield-canon-registry'] || {};
   const chapters = () => DATA.campaignChapters || DATA['campaign-chapter-registry'] || DATA.chapters || [];
   const playflow = () => DATA.campaignPlayflowContract || DATA['campaign-playflow-contract'] || {};
   const titanById = id => titans().find(t => t.id === id);
@@ -364,8 +366,8 @@ export function createCommandHubRuntime(DATA, mount){
 
   function setRoute(route, payload={}){ Object.assign(state, payload, { route }); AudioManager.play(route==='hub'?'menu_open':'tab_change'); render(); }
   function bottomNav(){
-    const tabs = [{id:'battle',label:'BATTLE'},{id:'titans',label:'TITANS'},{id:'trials',label:'TRIALS'},{id:'raid',label:'RAID'},{id:'command',label:'COMMAND'}];
-    const routeMap={battle:'hub',titans:'titans',trials:'trials',raid:'raid',command:'command'};
+    const tabs = [{id:'battle',label:'BATTLE'},{id:'battlefields',label:'FIELDS'},{id:'titans',label:'TITANS'},{id:'trials',label:'TRIALS'},{id:'command',label:'COMMAND'}];
+    const routeMap={battle:'hub',battlefields:'battlefields',titans:'titans',trials:'trials',raid:'raid',command:'command'};
     return `<nav class="fixed inset-x-0 bottom-0 z-40 border-t border-neutral-800 bg-neutral-950/95 px-2 pb-[max(env(safe-area-inset-bottom),8px)] pt-2 backdrop-blur"><div class="mx-auto grid max-w-3xl grid-cols-5 gap-1">${tabs.slice(0,5).map(t=>`<button data-nav="${esc(t.id)}" class="min-h-[52px] rounded-2xl ${state.selectedTab===t.id?'bg-primary text-white':'bg-neutral-900 text-neutral-300'} px-2 text-xs font-black tracking-[.12em]" onclick="TGHub.openTab('${esc(t.id)}')">${esc(t.label||t.id)}</button>`).join('')}</div></nav>`;
   }
   function shell(content){ return `${content}${bottomNav()}`; }
@@ -468,6 +470,11 @@ export function createCommandHubRuntime(DATA, mount){
     const rows=[...factions().map(f=>({type:'Faction',id:f.id,title:f.name,body:f.culture||f.philosophy})),...realms().map(r=>({type:'Realm',id:r.id,title:r.realm,body:r.thesis||r.coreTone})),...titans().slice(0,12).map(t=>({type:'Titan',id:t.id,title:t.name,body:t.lore}))].map(e=>`<article class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4"><p class="text-xs font-black uppercase tracking-[.2em] text-primary">${esc(e.type)} · ${esc(e.id)}</p><h3 class="mt-1 text-xl font-black">${esc(e.title)}</h3><p class="mt-2 line-clamp-4 text-sm text-neutral-300">${esc(e.body)}</p></article>`).join('');
     return shell(`${profileHeader(player)}<main class="mx-auto max-w-5xl space-y-4 px-3 pb-28 pt-3"><button onclick="TGHub.go('hub')" class="rounded-2xl bg-neutral-800 px-4 py-3 font-black">← Command Hub</button><header class="rounded-3xl border border-primary/40 bg-neutral-900 p-5"><p class="text-xs font-black uppercase tracking-[.28em] text-primary">Codex</p><h1 class="text-4xl font-black">Lore Registry</h1><p class="mt-2 text-neutral-300">The Command Hub displays lore; it does not create or modify canon.</p></header><div class="grid gap-3 md:grid-cols-2">${rows}</div></main>`);
   }
+  function battlefieldsScreen(){
+    const player=ensurePlayerState();
+    state.selectedTab='battlefields';
+    return renderBattlefieldOverviewView({ registry:battlefieldRegistry(), playerHeader:profileHeader(player), shell });
+  }
   function commandScreen(){
     const player=ensurePlayerState(); normalizeProgression(player);
     const pending=(player.campaignProgress.pendingRewards||[]);
@@ -501,7 +508,7 @@ export function createCommandHubRuntime(DATA, mount){
 
   function render(){
     const started=performance.now();
-    const views={ boot, title, awakening:awakeningScreen, hub, campaigns, mission:missionScreen, titans:titansScreen, gates:gatesScreen, trials:trialsScreen, raid:raidScreen, codex:codexScreen, command:commandScreen, battle:battleScreen };
+    const views={ boot, title, awakening:awakeningScreen, hub, campaigns, mission:missionScreen, titans:titansScreen, gates:gatesScreen, battlefields:battlefieldsScreen, trials:trialsScreen, raid:raidScreen, codex:codexScreen, command:commandScreen, battle:battleScreen };
     mount.innerHTML=(views[state.route]||hub)();
     const elapsed=performance.now()-started;
     state.perf.renderCount++;
@@ -523,7 +530,7 @@ export function createCommandHubRuntime(DATA, mount){
     start(){ render(); setTimeout(advanceBoot, 80); },
     enterHub(){ const p=ensurePlayerState(); AssetManager.preloadVisible(); AudioManager.play('gate_open'); setRoute(p.onboarding?.status==='COMPLETE'?'hub':'awakening'); },
     go(route){ setRoute(route); },
-    openTab(tab){ state.selectedTab=tab; const map={battle:'hub',titans:'titans',trials:'trials',raid:'raid',gates:'gates',codex:'codex',command:'command'}; setRoute(map[tab]||'hub'); },
+    openTab(tab){ state.selectedTab=tab; const map={battle:'hub',battlefields:'battlefields',titans:'titans',trials:'trials',raid:'raid',gates:'gates',codex:'codex',command:'command'}; setRoute(map[tab]||'hub'); },
     chooseStarter(id){
       const p=ensurePlayerState(); const starters=new Set(starterTitans().map(t=>t.id));
       if(!starters.has(id)){ log('onboarding-error','Rejected non-starter Titan',{id}); render(); return; }
