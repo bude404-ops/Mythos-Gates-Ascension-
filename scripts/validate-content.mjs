@@ -74,7 +74,8 @@ const data = {
   worldScaleReference: read('data/world-scale-reference.json'),
   artDirectorScaleSheets: read('data/art-director-scale-sheets.json'),
   battlefieldRuntimeArchitecture: read('data/battlefield-runtime-architecture.json'),
-  battlefieldVerticalSlice: read('data/battlefield-vertical-slice.json')
+  battlefieldVerticalSlice: read('data/battlefield-vertical-slice.json'),
+  battlefieldCanonRegistry: read('data/battlefield-canon-registry.json')
 };
 
 for (const [name, arr] of Object.entries(data)) {
@@ -102,6 +103,7 @@ register('blueprint3dRegistry', data.blueprint3dRegistry, '3D_Blueprints/Registr
 register('worldScaleReference', data.worldScaleReference, 'data/world-scale-reference.json');
 register('artDirectorScaleSheets', data.artDirectorScaleSheets, 'data/art-director-scale-sheets.json');
 register('battlefieldRuntimeArchitecture', data.battlefieldRuntimeArchitecture, 'data/battlefield-runtime-architecture.json');
+register('battlefieldCanonRegistry', data.battlefieldCanonRegistry, 'data/battlefield-canon-registry.json');
 register('visualQaBaselineApproval', data.visualQaBaselineApproval, 'visual/reviews/TG-VISUAL-QA-BASELINE-APPROVAL-001.json');
 register('artApprovalManifest', data.artApprovalManifest, 'data/art-approval-manifest.json');
 register('battlefieldVerticalSlice', data.battlefieldVerticalSlice, 'data/battlefield-vertical-slice.json');
@@ -253,6 +255,26 @@ for (const map of data.maps) {
   if(!campaignIds.has(map.campaignId)) fail(`${map.id}: invalid campaignId ${map.campaignId}`);
   if(!promptIds.has(map.artPromptId)) fail(`${map.id}: missing prompt ${map.artPromptId}`);
   if(!exists(`maps/${map.id}.json`)) fail(`${map.id}: missing individual map file`);
+}
+
+const playableFactionNames = new Set(data.factions.map(f => f.name));
+if(data.battlefieldCanonRegistry.status !== 'IMPLEMENTED') fail('Battlefield canon registry must be IMPLEMENTED');
+if(data.battlefieldCanonRegistry.canonBoundary?.playableFactionCount !== 7) fail('Battlefield canon registry must lock exactly seven playable factions');
+for (const faction of data.battlefieldCanonRegistry.canonBoundary?.playableFactionIds || []) if(!factionIds.has(faction)) fail(`Battlefield canon registry invalid playable faction ${faction}`);
+if(data.battlefieldCanonRegistry.canonBoundary?.existentialThreat?.id !== data.hollowThreatFaction.id || data.battlefieldCanonRegistry.canonBoundary?.existentialThreat?.playable !== false) fail('Battlefield canon registry must preserve The Hollow as non-playable existential threat');
+if(data.battlefieldCanonRegistry.battlefieldCount !== (data.battlefieldCanonRegistry.battlefields || []).length) fail('Battlefield canon registry count mismatch');
+if((data.battlefieldCanonRegistry.battlefields || []).length < 7) fail('Battlefield canon registry must cover at least one battlefield route per playable faction');
+for (const battlefield of data.battlefieldCanonRegistry.battlefields || []) {
+  if(!mapIds.has(battlefield.mapId)) fail(`${battlefield.id}: invalid mapId ${battlefield.mapId}`);
+  if(battlefield.primaryFactionId && !factionIds.has(battlefield.primaryFactionId)) fail(`${battlefield.id}: invalid primaryFactionId ${battlefield.primaryFactionId}`);
+  if(battlefield.primaryFactionName && !playableFactionNames.has(battlefield.primaryFactionName) && battlefield.primaryFactionName !== 'Contested by all seven playable factions') fail(`${battlefield.id}: invalid primaryFactionName ${battlefield.primaryFactionName}`);
+  if(battlefield.hollowIncursionRules?.threatFactionId !== data.hollowThreatFaction.id || battlefield.hollowIncursionRules?.playable !== false) fail(`${battlefield.id}: Hollow rules must keep threat non-playable`);
+  for (const field of ['name','dominantResonance','canonDescription','tacticalIdentity','hollowCorruptionLevel']) if(!battlefield[field]) fail(`${battlefield.id}: missing ${field}`);
+  for (const list of ['objectives','terrainHazards','factionAffinity','canonLocks']) if(!Array.isArray(battlefield[list]) || battlefield[list].length < 1) fail(`${battlefield.id}: ${list} cannot be empty`);
+  for (const view of ['overviewView','tacticalGridView','encounterView','loreView','blueprintView']) if(battlefield.viewReadiness?.[view] !== 'READY_FOR_VIEW_FILE') fail(`${battlefield.id}: ${view} must be ready for view file`);
+}
+for (const requiredName of playableFactionNames) {
+  if(!data.battlefieldCanonRegistry.battlefields.some(b => b.primaryFactionName === requiredName)) fail(`Battlefield canon registry missing primary battlefield for ${requiredName}`);
 }
 
 for (const campaign of data.campaigns) {

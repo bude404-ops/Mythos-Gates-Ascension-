@@ -88,6 +88,7 @@ const files = {
   'mission-tactical-profile-system.json': 'missionTacticalProfileSystem',
   'player-onboarding-roster-journey.json': 'playerOnboardingRosterJourney',
   'battlefield-director.json': 'battlefieldDirector',
+  'battlefield-canon-registry.json': 'battlefieldCanonRegistry',
   'world-scale-reference.json': 'worldScaleReference',
   'art-director-scale-sheets.json': 'artDirectorScaleSheets',
   'battlefield-vertical-slice.json': 'battlefieldVerticalSlice',
