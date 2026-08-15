@@ -102,3 +102,51 @@ Validation never rewrites source assets.
 ## Current visual direction
 
 Titan Gates uses 3D characters, 3D Titans, 3D creatures, 3D battlefields, 3D gates, 3D props, materials, animations, VFX, and lighting. Old 2D battlefield sprite systems are deprecated for active character/enemy gameplay.
+
+## Big Bot auto-import
+
+Big Bot can upload finished artwork or model exports directly into the GitHub dropbox and let the repository import them automatically.
+
+### Upload target
+
+Use the repository dropbox folder:
+
+```text
+artwork_import/dropbox/
+```
+
+### Required filename rule
+
+Every uploaded file must include the permanent asset ID in the filename or folder path.
+
+Good examples:
+
+```text
+TITAN_001__aten-ra-solar-law-monolith__source-file.png
+CHARACTER_001__mesha-gate-scribe__source-file.webp
+BATTLEFIELD_001__the-first-reopening-gate__source-file.glb
+```
+
+Supported source extensions: `.glb`, `.gltf`, `.fbx`, `.obj`, `.blend`, `.png`, `.jpg`, `.jpeg`, `.webp`, `.psd`, `.tga`.
+
+### What happens after upload
+
+When Big Bot pushes to `main` under `artwork_import/dropbox/`, GitHub runs the artwork auto-import workflow. The workflow:
+
+1. Runs `npm run artwork:auto-import`.
+2. Moves valid source files into the correct permanent `assets/.../source/<ASSET_ID>/v###/` folder.
+3. Refreshes the GitHub asset registry, manifests, handoff packets, import report, build output, and index freshness checks.
+4. Commits the imported artwork and generated registry updates back to `main`.
+
+The importer never overwrites an existing source version and never invents canon. Files with unknown IDs or unsupported extensions fail the workflow for review.
+
+### Big Bot minimum payload
+
+Big Bot only needs three things:
+
+- The finished file bytes.
+- A reserved Titan Gates asset ID from `artwork_import/ARTWORK_BUILD_QUEUE.json`.
+- A filename containing that ID.
+
+No manual registry editing is required.
+
