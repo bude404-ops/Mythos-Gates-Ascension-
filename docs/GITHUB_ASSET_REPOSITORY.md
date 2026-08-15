@@ -22,6 +22,53 @@ Never reuse an asset ID. The ID survives filename changes, folder moves, redesig
 
 Do not overwrite the source file to optimize it.
 
+
+## Easiest import path
+
+Use this path when building toward the finished product. No one needs to hand-edit registry JSON.
+
+```bash
+npm run artwork:queue
+```
+
+That creates/refreshes:
+
+- `artwork_import/ARTWORK_BUILD_QUEUE.md` — human-readable next assets to build.
+- `artwork_import/ARTWORK_BUILD_QUEUE.json` — machine-readable queue.
+- `artwork_import/dropbox/` — safe drop zone for finished source art/models.
+
+Then build/export the asset from Blender, an AI art tool, an AI 3D tool, or a human artist package. Name the file with the permanent ID:
+
+```text
+TITAN_001__solara-sunforge__source-file.png
+BATTLEFIELD_001__first-reopening-gate__source-file.glb
+CHARACTER_001__mesha-gate-scribe__source-file.webp
+```
+
+Drop it into `artwork_import/dropbox/`, then run:
+
+```bash
+npm run artwork:import
+```
+
+The importer will:
+
+1. Read the permanent ID from the file/folder name.
+2. Move the source file into the correct canonical folder under `assets/.../source/<ASSET_ID>/v###/`.
+3. Preserve the original source file; it never overwrites an existing source.
+4. Run detection and validation.
+5. Regenerate manifests and creator handoff packets.
+6. Refresh the artwork build queue so the next missing assets rise to the top.
+7. Write `validation/reports/artwork-import-report.json`.
+
+For a full finished-product asset pass after files are in the dropbox:
+
+```bash
+npm run artwork:finish
+```
+
+If a file has no permanent ID, or the ID is not reserved, it is skipped for canon review. Do not invent lore or rename assets to force a match.
+
 ## Adding an asset from any tool
 
 1. Choose the canon asset ID from `asset_registry/github-asset-registry.json`.

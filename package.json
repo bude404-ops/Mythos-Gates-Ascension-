@@ -28,7 +28,10 @@
     "assets:test-intake": "node scripts/test-github-asset-intake.mjs",
     "assets:verify": "npm run assets:sync && npm run assets:manifests && npm run assets:handoff && npm run assets:test-intake",
     "assets:manifests": "node scripts/generate-asset-manifests.mjs",
-    "assets:handoff": "node scripts/generate-creator-handoff.mjs"
+    "assets:handoff": "node scripts/generate-creator-handoff.mjs",
+    "artwork:queue": "node scripts/generate-artwork-build-queue.mjs",
+    "artwork:import": "node scripts/import-artwork-dropbox.mjs",
+    "artwork:finish": "npm run artwork:queue && npm run artwork:import && npm run assets:verify"
   },
   "engines": {
     "node": ">=20"

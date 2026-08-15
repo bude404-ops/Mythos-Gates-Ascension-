@@ -3,7 +3,7 @@
   "name": "Titan Gates GitHub-Centered Asset Repository",
   "version": "1.0.0",
   "status": "IMPLEMENTED",
-  "updated": "2026-08-13",
+  "updated": "2026-08-15",
   "sourceOfTruth": "GitHub repository files and manifests are the central asset source; Reaper is a management layer, not the required importer.",
   "flow": [
     "External Art/3D Tool",
@@ -94,7 +94,9 @@
     "manifests/assets",
     "asset_registry",
     "validation/reports",
-    "tools/assets"
+    "tools/assets",
+    "artwork_import",
+    "artwork_import/dropbox"
   ],
   "stableIdPolicy": {
     "rule": "Never reuse asset IDs. IDs remain stable through filename, folder, version, model, and design changes.",
@@ -176,6 +178,19 @@
     "scripts/validate-github-assets.mjs",
     "scripts/generate-indexes.mjs",
     "scripts/validate-content.mjs",
-    "scripts/build-pages.mjs"
-  ]
+    "scripts/build-pages.mjs",
+    "scripts/generate-artwork-build-queue.mjs",
+    "scripts/import-artwork-dropbox.mjs",
+    "artwork_import/ARTWORK_BUILD_QUEUE.md",
+    "artwork_import/dropbox"
+  ],
+  "importWorkflow": {
+    "status": "IMPLEMENTED",
+    "queueCommand": "npm run artwork:queue",
+    "dropbox": "artwork_import/dropbox/",
+    "importCommand": "npm run artwork:import",
+    "finishCommand": "npm run artwork:finish",
+    "filenameRule": "Include the permanent asset ID in every file name or parent folder, e.g. TITAN_001__solara-sunforge__source-file.png.",
+    "behavior": "Importer moves files into canonical assets/.../source/<ASSET_ID>/v### folders, detects registry links, validates assets, regenerates manifests/handoff, and writes reports without overwriting source assets."
+  }
 }
