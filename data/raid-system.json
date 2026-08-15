@@ -8,7 +8,7 @@
     "Every raid attempt is deterministic from stage profile, approach, tier, and one active Titan state.",
     "Each stage has a readable tactical problem, preferred-but-not-required counterplay, and explicit carry-forward damage pressure.",
     "Victory rewards are non-pay-to-win: first-clear bonuses, replay caps, mastery credit, and cosmetic/material outputs only.",
-    "Live PvP, squad fanout, paid power shortcuts, and hidden random rolls are forbidden in the initial framework."
+    "Live PvP, Titan fanout, paid power shortcuts, and hidden random rolls are forbidden in the initial framework."
   ],
   "raidLoop": [
     "Select one active Titan and loadout",
@@ -252,14 +252,14 @@
     "Raid system record exposes status IMPLEMENTED, five stageProfiles, tierCaps, approachRules, scoreFormula, economyCaps, and economyTuning.",
     "Command Hub runtime reads stageProfiles/baseScore and displays problem tags, preferred counters, and carry risk per stage.",
     "Browser smoke clears all five stages deterministically with one active Titan and verifies raid economy output.",
-    "Validation fails if paid power, live PvP, hidden random rolls, or squad fanout appear in the initial raid framework.",
+    "Validation fails if paid power, live PvP, hidden random rolls, or Titan fanout appear in the initial raid framework.",
     "TG-DEV-025 raid economy tuning is IMPLEMENTED and validates first-clear bonuses, replay caps, mastery credit, and anti-pay-to-win policy."
   ],
   "forbiddenInitialScope": [
     "livePvP",
     "paidPowerShortcut",
     "hiddenRandomRolls",
-    "multiTitanSquadControl",
+    "multiTitanControl",
     "uncappedReplayRewards"
   ],
   "economyTuning": {

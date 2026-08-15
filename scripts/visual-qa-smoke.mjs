@@ -26,7 +26,7 @@ const missions = JSON.parse(readFileSync('data/mission-registry.json', 'utf8'));
 const missionDialogue = JSON.parse(readFileSync('data/mission-dialogue.json', 'utf8'));
 const missionArtPackages = JSON.parse(readFileSync('data/mission-art-packages.json', 'utf8'));
 const endgameArchitecture = JSON.parse(readFileSync('data/endgame-architecture.json', 'utf8'));
-const squadSystem = JSON.parse(readFileSync('data/squad-system.json', 'utf8'));
+const soloCombatDesign = JSON.parse(readFileSync('data/solo-combat-design-document.json', 'utf8'));
 const asyncArenaSystem = JSON.parse(readFileSync('data/async-arena-system.json', 'utf8'));
 const endgameDashboard = JSON.parse(readFileSync('data/endgame-dashboard.json', 'utf8'));
 const campaignPlayflow = JSON.parse(readFileSync('data/campaign-playflow-contract.json', 'utf8'));
@@ -89,7 +89,7 @@ for (const token of ['Asynchronous Titan Challenge', 'Snapshot Model Ready', 'on
     process.exit(1);
   }
 }
-if (!squadSystem.samplePresets.every(p => p.squadSize === 5 && p.titanIds.length === 5)) {
+if (!soloCombatDesign.samplePresets.every(p => p.squadSize === 5 && p.titanIds.length === 5)) {
   console.error(JSON.stringify({ ok: false, squadPresetInvalid: true }, null, 2));
   process.exit(1);
 }

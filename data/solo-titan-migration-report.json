@@ -19,7 +19,7 @@
     },
     {
       "system": "Movement validation, damage pipeline, cooldowns, status effects",
-      "reason": "Core primitives remain valid after replacing squad targets with solo Titan state."
+      "reason": "Core primitives remain valid after replacing Titan targets with solo Titan state."
     },
     {
       "system": "Campaign shell and mobile navigation",
@@ -49,11 +49,11 @@
     },
     {
       "system": "Progression system",
-      "change": "Replace squadPower recommendations with activeTitanPower, mastery, stance unlocks, relic builds, and solo readiness."
+      "change": "Replace TitanPower recommendations with activeTitanPower, mastery, stance unlocks, relic builds, and solo readiness."
     },
     {
       "system": "Async arena",
-      "change": "Replace saved defense squads with one defensive Titan build, equipment, AI behavior profile, and battlefield choice."
+      "change": "Replace saved defense Titans with one defensive Titan build, equipment, AI behavior profile, and battlefield choice."
     },
     {
       "system": "UI",
@@ -74,7 +74,7 @@
       "replacement": "Solo sustain verbs: regeneration, lifesteal, shields, parry, dodge, execution recovery, debuffs, terrain denial."
     },
     {
-      "system": "Squad synergy rules",
+      "system": "Titan synergy rules",
       "replacement": "Titan mastery, terrain affinity, relic loadout, stance discipline, and mission counter-pick logic."
     },
     {
@@ -133,11 +133,11 @@
     "Boss phase banner and Divine Ascension cinematic trigger."
   ],
   "requiredDataModelChanges": [
-    "battle.activeTitanId replaces battle.playerSquadIds in normal modes.",
+    "battle.activeTitanId replaces battle.playerTitanIds in normal modes.",
     "titan.soloArchetypes, titan.uniqueMechanic, titan.stances, titan.reactions, titan.execution, titan.divineAscension.",
     "mission.type, mission.soloTacticalPurpose, mission.idealTitanArchetypes, mission.enemyBehaviorPlan, mission.terrainPlan, mission.bossPhases.",
-    "arena.defensiveTitanSnapshot replaces arenaDefenseSquad.",
-    "save.masteryByTitanId and activeTitanLoadouts replace squad preset priority for normal modes."
+    "arena.defensiveTitanSnapshot replaces arenaDefenseTitan.",
+    "save.masteryByTitanId and activeTitanLoadouts replace Titan preset priority for normal modes."
   ],
   "requiredContentChanges": [
     "Rewrite Titan abilities away from shared Strike/Signature/Gate Command shells.",

@@ -460,7 +460,7 @@ for (const s of raidSystem.stageProfiles) {
 }
 for (const token of ['RAID_NORMAL','RAID_HARD','RAID_ELITE','RAID_ASCENDED','RAID_MYTHIC']) if(!raidSystem.tierCaps?.[token]) fail(`Raid tier cap missing ${token}`);
 for (const token of ['BALANCED','GUARDED','AGGRESSIVE']) if(!raidSystem.approachRules?.[token]) fail(`Raid approach rule missing ${token}`);
-for (const forbidden of ['livePvP','paidPowerShortcut','hiddenRandomRolls','multiTitanSquadControl','uncappedReplayRewards']) if(!raidSystem.forbiddenInitialScope?.includes(forbidden)) fail(`Raid forbidden scope missing ${forbidden}`);
+for (const forbidden of ['livePvP','paidPowerShortcut','hiddenRandomRolls','multiTitanControl','uncappedReplayRewards']) if(!raidSystem.forbiddenInitialScope?.includes(forbidden)) fail(`Raid forbidden scope missing ${forbidden}`);
 if(raidSystem.economyTuning?.status !== 'IMPLEMENTED') fail('Raid economy tuning must be IMPLEMENTED');
 for (const q of ['S','A','B','C']) {
   const row = raidSystem.economyTuning?.qualityRewardTable?.[q];

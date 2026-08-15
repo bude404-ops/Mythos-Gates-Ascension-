@@ -62,7 +62,6 @@ const files = {
   'storyline-arc-registry.json': 'storylineArcs',
   'campaign-consequence-registry.json': 'campaignConsequences',
   'endgame-architecture.json': 'endgameArchitecture',
-  'squad-system.json': 'squadSystem',
   'progression-system.json': 'progressionSystem',
   'ascension-system.json': 'ascensionSystem',
   'async-arena-system.json': 'asyncArenaSystem',
