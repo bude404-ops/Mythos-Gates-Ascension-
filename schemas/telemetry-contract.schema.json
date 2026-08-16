@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://titan-gates.local/schemas/titan-gates-telemetry-contract.schema.json",
+  "title": "Titan Gates Telemetry Contract",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "status",
+    "eventFamilies"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^TG-BATTLEFIELD-TELEMETRY-CONTRACT-[0-9]{3}$"
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "eventFamilies": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "canonSources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "additionalProperties": true
+}

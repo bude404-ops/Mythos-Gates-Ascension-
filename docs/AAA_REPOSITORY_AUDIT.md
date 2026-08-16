@@ -19,7 +19,7 @@ Readiness grade after the engine-adapter pass: B/B+ for AAA preproduction reposi
 - Collaboration governance exists: contribution rules, PR template, issue templates, ownership map, release checklist.
 - AAA migration lanes now exist for schemas, source-module extraction, and grouped tests.
 - First production source modules now exist for gameplay, economy, data loading, schema contracts, UI state presentation, and gate manifesting.
-- Schema validation now checks Titans, all missions, and real asset manifests before deploy.
+- Schema validation now checks Titans, factions, maps, mission dialogue, economy, telemetry, external AI packets, all missions, and real asset manifests before deploy.
 - Engine integration scaffolding now exists for shared exports plus Unity and Unreal adapter manifests.
 - Large source asset policy is present through Git LFS attributes.
 
@@ -145,7 +145,7 @@ The current repo does not need to move everything immediately. The highest-value
 
 ### Next production pass
 
-1. Expand schemas beyond Titans, missions, and asset manifests into factions, dialogue, maps, economy, telemetry, and external AI packets.
+1. Tighten nested schema depth for abilities, mission objectives, economy products, telemetry events, and external AI generation stages.
 2. Add a data migration/versioning policy.
 3. Continue extracting prototype code into deeper modules under `src/gameplay`, `src/ui`, and `src/data-loaders`.
 4. Move browser smoke tests into grouped suites under `tests/ui` and `tests/integration`.
@@ -166,7 +166,7 @@ The current repo does not need to move everything immediately. The highest-value
 - JSON files after structural cleanup: 1,583.
 - Invalid JSON files found: 0.
 - Major generated/canonical counts: 63 Titans, 280 missions, 129 3D blueprint assets, 23 creator handoff packets.
-- AAA structure audit passed: required directories, governance files, schema scaffolds, source/test migration lanes, and full-gate Pages workflow are present.
+- AAA structure audit passed: required directories, governance files, expanded schema scaffolds, source/test migration lanes, engine adapter lane, and full-gate Pages workflow are present.
 - Secret scan passed.
 - Current-canon audit passed.
 - Full precommit gate passed.

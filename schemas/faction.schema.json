@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://titan-gates.local/schemas/titan-gates-faction-record.schema.json",
+  "title": "Titan Gates Faction Record",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "realm",
+    "sourceCultureRule"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^TG-FACTION-[0-9]{3}$"
+    },
+    "slug": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "realm": {
+      "type": "string",
+      "minLength": 1
+    },
+    "inspiration": {
+      "type": "string",
+      "minLength": 1
+    },
+    "philosophy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "culture": {
+      "type": "string",
+      "minLength": 1
+    },
+    "visualIdentity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "combatPhilosophy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceCultureRule": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artStatus": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": true
+}

@@ -5,6 +5,12 @@ import { validateContract } from '../src/data-loaders/schema-contracts.mjs';
 
 const contracts = [
   { name: 'titan', schemaPath: 'schemas/titan.schema.json', records: JSON.parse(fs.readFileSync('data/titans.json', 'utf8')) },
+  { name: 'faction', schemaPath: 'schemas/faction.schema.json', records: JSON.parse(fs.readFileSync('data/factions.json', 'utf8')) },
+  { name: 'map', schemaPath: 'schemas/map.schema.json', records: JSON.parse(fs.readFileSync('data/maps.json', 'utf8')) },
+  { name: 'mission-dialogue', schemaPath: 'schemas/mission-dialogue.schema.json', records: JSON.parse(fs.readFileSync('data/mission-dialogue.json', 'utf8')) },
+  { name: 'economy', schemaPath: 'schemas/economy.schema.json', records: [JSON.parse(fs.readFileSync('data/free-to-play-economy.json', 'utf8'))] },
+  { name: 'telemetry-contract', schemaPath: 'schemas/telemetry-contract.schema.json', records: [JSON.parse(fs.readFileSync('data/battlefield-telemetry-contract.json', 'utf8'))] },
+  { name: 'external-ai-packet', schemaPath: 'schemas/external-ai-packet.schema.json', records: listJsonRecords(path.join('handoff', 'external_ai')).filter(file => file.endsWith('.external-ai-packet.json')).map(file => JSON.parse(fs.readFileSync(file, 'utf8'))) },
   { name: 'mission', schemaPath: 'schemas/mission.schema.json', records: [...listJsonRecords('missions/normal'), ...listJsonRecords('missions/elite')].map(file => JSON.parse(fs.readFileSync(file, 'utf8'))) },
   {
     name: 'asset-manifest',

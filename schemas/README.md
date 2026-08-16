@@ -1,5 +1,7 @@
 # Schemas
 
+Active coverage now includes Titans, factions, maps, missions, mission dialogue, asset manifests, economy, battlefield telemetry, and external AI production packets.
+
 This folder is the contract layer for Titan Gates production data.
 
 ## Intent

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://titan-gates.local/schemas/titan-gates-economy-contract.schema.json",
+  "title": "Titan Gates Economy Contract",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "status",
+    "philosophy",
+    "environment",
+    "coreCurrencies",
+    "energy"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^TG-F2P-ECONOMY$"
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "philosophy": {
+      "type": "object"
+    },
+    "environment": {
+      "type": "object"
+    },
+    "coreCurrencies": {
+      "type": "object"
+    },
+    "retainedProgressionResources": {
+      "type": "object"
+    },
+    "energy": {
+      "type": "object"
+    },
+    "purchaseArchitecture": {
+      "type": "object"
+    },
+    "battlePass": {
+      "type": "object"
+    },
+    "dailyRewards": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

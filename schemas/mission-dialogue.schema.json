@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://titan-gates.local/schemas/titan-gates-mission-dialogue-record.schema.json",
+  "title": "Titan Gates Mission Dialogue Record",
+  "type": "object",
+  "required": [
+    "id",
+    "missionId",
+    "factionId",
+    "campaignType",
+    "status",
+    "lines"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^TG-F[0-9]{2}-(ELITE-)?DLG-C[0-9]{2}-M[0-9]{2}$"
+    },
+    "missionId": {
+      "type": "string",
+      "pattern": "^TG-F[0-9]{2}-(E-)?C[0-9]{2}-M[0-9]{2}$"
+    },
+    "factionId": {
+      "type": "string",
+      "pattern": "^TG-FACTION-[0-9]{3}$"
+    },
+    "campaignType": {
+      "type": "string",
+      "enum": [
+        "Normal",
+        "Elite"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tone": {
+      "type": "string",
+      "minLength": 1
+    },
+    "briefing": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lines": {
+      "type": "object"
+    },
+    "soloTitanPolicy": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": true
+}

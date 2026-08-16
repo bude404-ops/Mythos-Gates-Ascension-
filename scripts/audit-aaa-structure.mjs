@@ -16,8 +16,14 @@ const requiredFiles = [
   'docs/art/ASSET_IMPORT_STANDARDS.md',
   'schemas/README.md',
   'schemas/titan.schema.json',
+  'schemas/faction.schema.json',
+  'schemas/map.schema.json',
   'schemas/mission.schema.json',
+  'schemas/mission-dialogue.schema.json',
   'schemas/asset-manifest.schema.json',
+  'schemas/economy.schema.json',
+  'schemas/telemetry-contract.schema.json',
+  'schemas/external-ai-packet.schema.json',
   'src/README.md',
   'src/gameplay/index.mjs',
   'src/gameplay/solo-battle/index.mjs',
@@ -99,7 +105,17 @@ for (const token of ['schemas/', 'src/', 'tests/', 'AAA repository audit', 'one 
   if (!readme.includes(token)) issues.push(`README missing production structure token: ${token}`);
 }
 
-const schemas = ['schemas/titan.schema.json', 'schemas/mission.schema.json', 'schemas/asset-manifest.schema.json'];
+const schemas = [
+  'schemas/titan.schema.json',
+  'schemas/faction.schema.json',
+  'schemas/map.schema.json',
+  'schemas/mission.schema.json',
+  'schemas/mission-dialogue.schema.json',
+  'schemas/asset-manifest.schema.json',
+  'schemas/economy.schema.json',
+  'schemas/telemetry-contract.schema.json',
+  'schemas/external-ai-packet.schema.json'
+];
 for (const schema of schemas) {
   const parsed = JSON.parse(fs.readFileSync(schema, 'utf8'));
   if (!parsed.$schema || !parsed.title || parsed.type !== 'object') issues.push(`Invalid schema scaffold: ${schema}`);
