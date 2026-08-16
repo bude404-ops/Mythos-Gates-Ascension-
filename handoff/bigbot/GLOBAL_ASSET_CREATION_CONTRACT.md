@@ -98,6 +98,21 @@ Every battlefield must include or clearly support:
 
 Battlefields must remain readable in mobile tactical view and must not become cluttered dioramas.
 
+
+## Titan visual identity law
+Titans are not robots, mechs, androids, cyborgs, powered armor suits, or normal humans in ornate armor. Every Titan must read as a living extradimensional power being whose body is fused with Realm matter, divine law, mythic anatomy, and faction symbolism. Hard surfaces are allowed only when they feel grown, forged by myth, carved from living stone, sacred metal, infernal bone, storm-iron hide, or celestial law — never mechanical plating on a robot chassis.
+
+Every Titan prompt must pull from:
+
+- Titan lore and personality.
+- Faction culture and visual identity.
+- Realm codex visual language.
+- Gameplay role silhouette.
+- Ability names and equipment.
+- Master Scale Reference.
+
+Big Bot must reject any Titan that reads first as machine, superhero, normal humanoid, or generic monster before it reads as a faction-specific extradimensional Titan. Big Bot must also reject any Titan that reads as a blocky building, tower, fortress, stacked geometric shape, terrain chunk pile, or abstract architecture creature instead of a living character.
+
 ## Character, Titan, creature, enemy, and boss model requirements
 Every living model must include or clearly support:
 

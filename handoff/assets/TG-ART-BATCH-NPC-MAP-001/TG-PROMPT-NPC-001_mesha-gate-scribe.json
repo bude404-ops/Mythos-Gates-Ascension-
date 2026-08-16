@@ -32,17 +32,21 @@
   "blueprint_reference": null,
   "quality_gates": [
     "Mobile-readable silhouette at card and battlefield preview scale.",
-    "No sci-fi, firearms, futuristic craft, extradimensional beings, modern corporate UI, or generic superhero styling.",
-    "Faction identity must remain unmistakable: Aten Ra gold/bronze/sacred geometry/solar law for Titan batch.",
+    "Titans must read as living extradimensional mythic beings, not robots, mechs, androids, or humans in powered armor.",
+    "Titans must keep readable living anatomy and character silhouette; reject blocky buildings, tower bodies, fortress torsos, stacked geometric shapes, or architecture piles masquerading as Titans.",
+    "No sci-fi firearms, futuristic craft, modern corporate UI, generic superhero styling, watermarks, or readable generated text.",
+    "Faction identity must remain unmistakable: material language, realm symbols, culture, and role silhouette must agree with canon.",
     "Generated image may not be marked imported until a real asset file exists in the artwork pipeline.",
     "Mesha remains non-playable campaign support; art may not imply a playable Hero class.",
     "The First Reopening Gate must read as physical broken Gatefield terrain, not a neon board-game tile set."
   ],
   "rejection_triggers": [
     "Human-sized Titan silhouette.",
+    "Robot, mecha, android, cyborg, transformer, or powered-suit read.",
+    "Blocky building, tower, fortress, cube-stack, abstract geometry pile, or literal architecture-body read.",
     "Readable text/watermark/logo in the image.",
     "Photorealistic celebrity/human face drift.",
-    "Sci-fi armor or weapon drift.",
+    "Sci-fi armor, firearms, vehicle parts, visible pistons, hydraulic joints, or spaceship aesthetic.",
     "Loss of mobile readability in 360px vertical crop.",
     "Visual contradiction of prompt negativePrompt constraints."
   ],
