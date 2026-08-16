@@ -3,18 +3,90 @@
   "$id": "https://titan-gates.local/schemas/asset-manifest.schema.json",
   "title": "Titan Gates Asset Manifest",
   "type": "object",
-  "required": ["assetId"],
+  "required": [
+    "schema",
+    "asset_id",
+    "asset_type",
+    "canonical_name",
+    "status",
+    "version",
+    "storage_policy",
+    "canon_protection"
+  ],
   "properties": {
-    "assetId": { "type": "string", "minLength": 1 },
-    "canonicalEntityId": { "type": "string" },
-    "canonicalName": { "type": "string" },
-    "assetType": { "type": "string" },
-    "status": { "type": "string" },
-    "sourceFiles": { "type": ["array", "object"] },
-    "previewFiles": { "type": ["array", "object"] },
-    "gameReadyFiles": { "type": ["array", "object"] },
-    "dependencies": { "type": ["array", "object"] },
-    "validation": { "type": ["object", "array"] }
+    "assetId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonicalEntityId": {
+      "type": "string"
+    },
+    "canonicalName": {
+      "type": "string"
+    },
+    "assetType": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceFiles": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "previewFiles": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "gameReadyFiles": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "dependencies": {
+      "type": [
+        "array",
+        "object"
+      ]
+    },
+    "validation": {
+      "type": [
+        "object",
+        "array"
+      ]
+    },
+    "schema": {
+      "type": "string",
+      "pattern": "^TG_ASSET_MANIFEST_V[0-9]+$"
+    },
+    "asset_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "asset_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "storage_policy": {
+      "type": "object"
+    },
+    "canon_protection": {
+      "type": "object"
+    }
   },
   "additionalProperties": true
 }

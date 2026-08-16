@@ -31,9 +31,9 @@ campaigns/            Campaign and chapter source records
 data/                 Aggregated source-of-truth JSON used by dashboards and runtime checks
 dialogue/             Mission dialogue source records
 docs/                 Production documentation, lore bible, audits, build notes, handoff policy
-schemas/              Future JSON Schema contract layer for canonical data shapes
-src/                  Future engine-ready module extraction lane
-tests/                Future grouped test suite lane as modules migrate
+schemas/              JSON Schema contract layer for canonical data shapes
+src/                  Engine-ready module extraction lane for gameplay, data loaders, UI presenters, tools
+tests/                Production module contracts and future grouped test suites
 game/                 Playable browser prototype and tactical runtimes
 handoff/              Creator, Big Bot, and external AI asset handoff packets
 manifests/            Per-asset manifest records

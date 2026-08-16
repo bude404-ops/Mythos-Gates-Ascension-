@@ -2,7 +2,7 @@
 
 This folder is reserved for grouped production test suites as the prototype matures into engine-ready modules.
 
-Current executable gates live in `scripts/` and are wired through package commands. As runtime logic migrates into `src/`, move tests into:
+The first executable production-module contract lives at `tests/production-module-contract.test.mjs` and is wired into `npm run precommit:verify`. As runtime logic migrates further into `src/`, group tests into:
 
 ```text
 tests/content/      schema and canon fixtures

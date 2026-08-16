@@ -10,7 +10,7 @@
     "build": "npm run index && npm run validate && node scripts/build-pages.mjs",
     "test": "npm run build",
     "sync:github": "node scripts/sync-github.mjs",
-    "precommit:verify": "npm run audit:continuity && npm run audit:aaa-structure && npm run build && npm run assets:verify && npm run index:check && npm run test:command-hub && npm run test:playable-battle-ui && node scripts/visual-qa-smoke.mjs && node scripts/validate-3d-blueprints.mjs && npm run test:solo-battle && npm run test:solo-vertical-slice && npm run test:battlefield-telemetry && npm run test:battlefield-runtime && npm run test:campaign-playflow && npm run test:async-arena && npm run test:creature-behavior && npm run validate:external-ai-packets && node scripts/secret-scan.mjs",
+    "precommit:verify": "npm run audit:continuity && npm run audit:aaa-structure && npm run validate:schemas && npm run test:production-modules && npm run build && npm run assets:verify && npm run index:check && npm run test:command-hub && npm run test:playable-battle-ui && node scripts/visual-qa-smoke.mjs && node scripts/validate-3d-blueprints.mjs && npm run test:solo-battle && npm run test:solo-vertical-slice && npm run test:battlefield-telemetry && npm run test:battlefield-runtime && npm run test:campaign-playflow && npm run test:async-arena && npm run test:creature-behavior && npm run validate:external-ai-packets && node scripts/secret-scan.mjs",
     "index:check": "node scripts/check-index-fresh.mjs",
     "audit:continuity": "node scripts/audit-continuity-balance.mjs",
     "audit:aaa-structure": "node scripts/audit-aaa-structure.mjs",
@@ -38,7 +38,9 @@
     "audit:combat-first": "node scripts/audit-combat-first.mjs",
     "audit:f2p-economy": "node scripts/audit-f2p-economy.mjs",
     "test:f2p-economy": "node scripts/test-f2p-economy.mjs",
-    "validate:external-ai-packets": "node scripts/validate-external-ai-packets.mjs"
+    "validate:external-ai-packets": "node scripts/validate-external-ai-packets.mjs",
+    "validate:schemas": "node scripts/validate-schema-contracts.mjs",
+    "test:production-modules": "node tests/production-module-contract.test.mjs"
   },
   "engines": {
     "node": ">=20"

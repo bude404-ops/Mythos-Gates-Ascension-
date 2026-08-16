@@ -19,7 +19,18 @@ const requiredFiles = [
   'schemas/mission.schema.json',
   'schemas/asset-manifest.schema.json',
   'src/README.md',
-  'tests/README.md'
+  'src/gameplay/index.mjs',
+  'src/gameplay/solo-battle/index.mjs',
+  'src/gameplay/economy/index.mjs',
+  'src/data-loaders/index.mjs',
+  'src/data-loaders/content-loader.mjs',
+  'src/data-loaders/schema-contracts.mjs',
+  'src/ui/index.mjs',
+  'src/ui/state-presenters.mjs',
+  'src/tools/production-gate-manifest.mjs',
+  'tests/README.md',
+  'tests/production-module-contract.test.mjs',
+  'scripts/validate-schema-contracts.mjs'
 ];
 
 const requiredDirs = [
@@ -83,6 +94,13 @@ for (const schema of schemas) {
   const parsed = JSON.parse(fs.readFileSync(schema, 'utf8'));
   if (!parsed.$schema || !parsed.title || parsed.type !== 'object') issues.push(`Invalid schema scaffold: ${schema}`);
 }
+
+const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+for (const script of ['validate:schemas', 'test:production-modules']) {
+  if (!packageJson.scripts?.[script]) issues.push(`Missing production script: ${script}`);
+}
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:schemas')) issues.push('precommit:verify must enforce schema contract validation.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:production-modules')) issues.push('precommit:verify must enforce production module contracts.');
 
 const result = {
   ok: issues.length === 0,
