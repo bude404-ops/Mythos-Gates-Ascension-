@@ -98,6 +98,7 @@ const files = {
   'tactical-blueprint-layouts.json': 'tacticalBlueprintLayouts',
   'tactical-blueprint-placements.json': 'tacticalBlueprintPlacements',
   'titan-enemy-balance-pass.json': 'titanEnemyBalancePass',
+  'gameplay-balance-framework.json': 'gameplayBalanceFramework',
   'solo-battle-state-schema.json': 'soloBattleStateSchema',
   'solo-vertical-slice.json': 'soloVerticalSlice',
   'battlefield-telemetry-contract.json': 'battlefieldTelemetryContract',

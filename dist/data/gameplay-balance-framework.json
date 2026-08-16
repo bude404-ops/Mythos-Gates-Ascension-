@@ -1,0 +1,382 @@
+{
+  "id": "TG-GAMEPLAY-BALANCE-FRAMEWORK-001",
+  "version": "1.0.0",
+  "generated": "2026-08-16T18:20:00Z",
+  "status": "IMPLEMENTED",
+  "directive": "Keep Titan Gates fun, balanced, challenging, and scalable across campaign missions, raids, weekly trials, ascension floors, async arena snapshots, and future modes without invalidating one-word Titan mechanics.",
+  "designPillars": [
+    "Every Titan must feel individually powerful without becoming mandatory.",
+    "Challenge comes from readable decisions, resource tension, positioning, and counterplay — not hidden math or raw sponge enemies.",
+    "Momentum/Divinity and each faction mechanic must work in campaign, raid, and repeatable modes through the same stack/spend vocabulary.",
+    "Difficulty scales by encounter verbs, phase density, objectives, hazards, and AI intent clarity before stats increase.",
+    "Mobile sessions must resolve meaningful turns quickly, with tactical depth carried by setup windows and objective pressure."
+  ],
+  "currentCoverage": {
+    "titans": 63,
+    "roles": 9,
+    "factions": 7,
+    "missionCount": 280,
+    "enemyArchetypes": 10,
+    "titanPower": {
+      "min": 203,
+      "max": 242,
+      "avg": 224
+    },
+    "modeCoverage": {
+      "campaignMissions": {
+        "count": 280,
+        "minPower": 135,
+        "maxPower": 1283,
+        "avgPower": 811,
+        "chapters": 35,
+        "factions": 7
+      },
+      "soloVerticalSlice": {
+        "missionTypes": 5,
+        "bossPhases": 0,
+        "telemetry": 10
+      },
+      "raids": {
+        "stageProfiles": 5,
+        "bosses": 1,
+        "difficulties": 5
+      },
+      "futureModes": {
+        "weeklyTrials": true,
+        "asyncArena": true,
+        "ascension": true
+      }
+    }
+  },
+  "roleContracts": {
+    "Defender": {
+      "fun": "turn enemy intent into visible protection decisions",
+      "challenge": "split pressure, displacement, anti-anchor hazards",
+      "scalesBy": "more simultaneous objective threats, not raw HP walls",
+      "campaign": "hold lanes, escort, survive ritual turns",
+      "raid": "main objective anchor during boss phase tells"
+    },
+    "Battery": {
+      "fun": "bank tempo and choose when to spike economy",
+      "challenge": "interrupts, drains, forced early spends",
+      "scalesBy": "tighter resource windows and harder drain enemies",
+      "campaign": "long missions, cooldown/resource droughts",
+      "raid": "phase transfer battery and burst-cycle planner"
+    },
+    "Controller": {
+      "fun": "make terrain and pathing feel like a weapon",
+      "challenge": "mobile enemies, cleanse lanes, blocked line of sight",
+      "scalesBy": "lane complexity and enemy movement rules",
+      "campaign": "routing, hazard timing, crowd objectives",
+      "raid": "phase arena rewrites and add control"
+    },
+    "Breaker": {
+      "fun": "crack defenses through setup then release",
+      "challenge": "armor spikes, counter-guards, recovery punishment",
+      "scalesBy": "layered shields and stagger windows",
+      "campaign": "elite armor, gates, ritual objects",
+      "raid": "boss shield phases and break-check moments"
+    },
+    "Disruptor": {
+      "fun": "bait, fake, and steal enemy tempo",
+      "challenge": "patient AI, cleanses, anti-bait patterns",
+      "scalesBy": "smarter intent variance, not random chaos",
+      "campaign": "caster denial, wave tempo, trap rooms",
+      "raid": "interrupt windows and add-wave timing"
+    },
+    "Sustain": {
+      "fun": "outlast danger through mastery, not passive healing",
+      "challenge": "anti-heal, hazards, exhaustion, attrition stacks",
+      "scalesBy": "attrition length and recovery denial",
+      "campaign": "survival, endurance, hazard maps",
+      "raid": "stability during phase transitions"
+    },
+    "Artillery": {
+      "fun": "earn devastating lines through positioning",
+      "challenge": "cover, forced movement, engagement, sight denial",
+      "scalesBy": "map geometry and threat flanks",
+      "campaign": "siege, lane burn, objective pressure",
+      "raid": "safe-line windows and burst lanes"
+    },
+    "Guardian": {
+      "fun": "choose what matters most and intercept it",
+      "challenge": "feints, multi-timing, false targets",
+      "scalesBy": "more declared threats and priority ambiguity",
+      "campaign": "protect civilians/relics, convoy, ritual defense",
+      "raid": "protect raid objects during boss tells"
+    },
+    "Assassin": {
+      "fun": "set the omen, risk the dive, cash execution",
+      "challenge": "reveal, armor spikes, missed windows",
+      "scalesBy": "target priority and punish windows",
+      "campaign": "priority kills, mage hunts, boss adds",
+      "raid": "delete phase adds and exploit boss vulnerability"
+    }
+  },
+  "difficultyBands": [
+    {
+      "band": "Story",
+      "powerDelta": "+35 to +90 player advantage",
+      "targetWinRate": "85-95%",
+      "turnPressure": "soft",
+      "failMode": "teaches mechanic without blocking progress"
+    },
+    {
+      "band": "Normal",
+      "powerDelta": "-10 to +35",
+      "targetWinRate": "60-80%",
+      "turnPressure": "moderate",
+      "failMode": "recoverable mistakes, clear counterplay"
+    },
+    {
+      "band": "Hard",
+      "powerDelta": "-55 to -10",
+      "targetWinRate": "40-60%",
+      "turnPressure": "high",
+      "failMode": "requires role mechanic mastery"
+    },
+    {
+      "band": "Elite",
+      "powerDelta": "-95 to -55",
+      "targetWinRate": "25-45%",
+      "turnPressure": "severe",
+      "failMode": "clean execution and counter-pick knowledge"
+    },
+    {
+      "band": "Raid",
+      "powerDelta": "phase budget, not flat delta",
+      "targetWinRate": "35-55% per weekly target",
+      "turnPressure": "phase-timed",
+      "failMode": "mechanic checks, not damage sponges"
+    },
+    {
+      "band": "Endless",
+      "powerDelta": "progressive pressure curve",
+      "targetWinRate": "declines by floor band",
+      "turnPressure": "scaling",
+      "failMode": "telegraphed burnout and leaderboard ceiling"
+    }
+  ],
+  "modeContracts": {
+    "campaignMission": {
+      "purpose": "teach and test one mechanic at a time, then combine mechanics by chapter",
+      "requiredHooks": [
+        "recommendedPower",
+        "encouragedTitanRoles",
+        "tacticalProfile",
+        "objectives",
+        "enemyWaves",
+        "turnLimit",
+        "specialRules"
+      ],
+      "balanceRule": "Normal missions target one primary Titan role and one soft alternative; hard missions add one counter-tag and one objective tension."
+    },
+    "chapterBoss": {
+      "purpose": "force mastery of a faction mechanic without requiring a specific Titan",
+      "requiredHooks": [
+        "phase telegraphs",
+        "boss vulnerability window",
+        "counterplay objective",
+        "comeback window"
+      ],
+      "balanceRule": "Boss phases must include one role-favored answer, one neutral answer, and one dangerous greedy answer."
+    },
+    "raid": {
+      "purpose": "scale mastery for weekly/repeatable play while preserving solo active-Titan clarity",
+      "requiredHooks": [
+        "stageProfiles",
+        "bosses",
+        "difficulties",
+        "scoreFormula",
+        "economyCaps"
+      ],
+      "balanceRule": "Raid difficulty uses phase modifiers, add density, and recovery windows before increasing boss HP/damage."
+    },
+    "weeklyTrial": {
+      "purpose": "rotate constraints to make unused Titans valuable",
+      "requiredHooks": [
+        "featured terrain",
+        "role bonus",
+        "banned cheese loop",
+        "leaderboard telemetry"
+      ],
+      "balanceRule": "Reward problem solving; never make a trial require an owned Legendary."
+    },
+    "ascension": {
+      "purpose": "infinite scaling with transparent burnout",
+      "requiredHooks": [
+        "floor band",
+        "modifier stack",
+        "recovery tax",
+        "score normalization"
+      ],
+      "balanceRule": "Every 5 floors introduces a new verb; every 10 floors increases numerical pressure."
+    },
+    "asyncArena": {
+      "purpose": "test snapshots without live-pvp chaos",
+      "requiredHooks": [
+        "defense snapshot",
+        "rating band",
+        "anti-stall cap",
+        "replay log"
+      ],
+      "balanceRule": "Snapshot AI must preserve counterplay tells and cap sustain loops."
+    },
+    "futureModes": {
+      "purpose": "reuse the same contracts for co-op, events, or challenge dungeons",
+      "requiredHooks": [
+        "mode budget",
+        "role contract",
+        "resource contract",
+        "telemetry contract"
+      ],
+      "balanceRule": "New modes cannot introduce bespoke hidden currencies that bypass Momentum/Divinity/faction meters."
+    }
+  },
+  "tuningControls": {
+    "statLevers": [
+      "recommendedPower",
+      "enemy health budget",
+      "enemy damage budget",
+      "boss phase armor",
+      "turn limit",
+      "objective durability"
+    ],
+    "funLevers": [
+      "telegraph clarity",
+      "comeback window size",
+      "terrain opportunity density",
+      "role-favored objective count",
+      "reward pacing"
+    ],
+    "challengeLevers": [
+      "enemy intent variance",
+      "resource drain frequency",
+      "hazard uptime",
+      "forced movement frequency",
+      "add-wave timing",
+      "counterplay window length"
+    ],
+    "scalabilityLevers": [
+      "modifier budget",
+      "phase count",
+      "objective concurrency",
+      "AI priority rules",
+      "floor-band pressure",
+      "raid difficulty tier"
+    ]
+  },
+  "antiPatterns": [
+    "mandatory single Titan gates",
+    "unreadable one-shot failures",
+    "raw HP sponge scaling",
+    "passive sustain loops that ignore objectives",
+    "hidden counters with no visual tell",
+    "resource denial stacked with no comeback window",
+    "raid mechanics that bypass solo active-Titan clarity"
+  ],
+  "telemetry": {
+    "requiredEvents": [
+      "battle_start",
+      "turn_end",
+      "mechanic_stack_gained",
+      "mechanic_stack_spent",
+      "signature_upgraded",
+      "objective_progress",
+      "enemy_intent_revealed",
+      "counterplay_window_used",
+      "battle_end"
+    ],
+    "healthMetrics": [
+      "win_rate_by_role",
+      "turns_to_win",
+      "damage_taken_by_band",
+      "resource_starvation_rate",
+      "signature_use_rate",
+      "objective_fail_reason",
+      "raid_phase_fail_rate",
+      "repeat_attempt_rate"
+    ],
+    "rebalanceTriggers": [
+      "role win rate below 42% or above 68% in Normal band",
+      "resource starvation above 30% outside Hard/Elite",
+      "raid phase fail rate above 70% after tell exposure",
+      "mission average turns 35% above target",
+      "single Titan pick rate above 22% for a mode"
+    ]
+  },
+  "acceptanceGates": [
+    "All 9 roles have mode contracts and counterplay.",
+    "All 7 faction mechanic families map to Momentum/Divinity and terrain.",
+    "Campaign, raid, weekly, ascension, arena, and future modes have scaling contracts.",
+    "No tuning rule requires a specific Titan or paid rarity.",
+    "Balance audit can run from repository data without external services."
+  ],
+  "rolePowerSummary": {
+    "Artillery": {
+      "count": 7,
+      "min": 230,
+      "max": 234,
+      "avg": 232
+    },
+    "Assassin": {
+      "count": 7,
+      "min": 236,
+      "max": 240,
+      "avg": 238
+    },
+    "Battery": {
+      "count": 7,
+      "min": 226,
+      "max": 232,
+      "avg": 229
+    },
+    "Breaker": {
+      "count": 7,
+      "min": 210,
+      "max": 218,
+      "avg": 213
+    },
+    "Controller": {
+      "count": 7,
+      "min": 224,
+      "max": 234,
+      "avg": 227
+    },
+    "Defender": {
+      "count": 7,
+      "min": 234,
+      "max": 242,
+      "avg": 237
+    },
+    "Disruptor": {
+      "count": 7,
+      "min": 225,
+      "max": 231,
+      "avg": 228
+    },
+    "Guardian": {
+      "count": 7,
+      "min": 210,
+      "max": 214,
+      "avg": 212
+    },
+    "Sustain": {
+      "count": 7,
+      "min": 203,
+      "max": 207,
+      "avg": 205
+    }
+  },
+  "sourceDocuments": [
+    "solo-combat-design-document",
+    "enemy-scaling-design-document",
+    "enemy-archetype-registry",
+    "raid-system",
+    "raid-design-document",
+    "mission-registry",
+    "mission-tactical-profile-system",
+    "titan-role-matrix",
+    "titan-enemy-balance-pass"
+  ]
+}
