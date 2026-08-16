@@ -7,10 +7,10 @@
   "rarity": "Epic",
   "role": "Battery",
   "abilities": [
-    "Eryndor Generator Strike",
-    "Moonwell Resonance Engine",
-    "Eryndor Emerald Oath: Overflow Mandate",
-    "Divine Ascension \u2014 Moonwell Verdant Unbound"
+    "Eryndor Emerald Oath \u2014 Silver-Branch Cut Kindle",
+    "Geas Thorn Technique \u2014 Reservoir",
+    "Eryndor Emerald Oath: S\u00eddhe Court Covenant Overchannel",
+    "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
   ],
   "stats": {
     "hp": 40,
@@ -27,12 +27,12 @@
     "combatPower": 228
   },
   "equipment": [
-    "Tuatha Moonwell Implement",
-    "Eryndor Emerald Oath Realmplate",
-    "Eryndor Grove Pulse Core"
+    "Eryndor Emerald Oath Generator Lugh Silver-Spear Thornblade",
+    "Eryndor Emerald Oath Moon-Oak S\u00eddhe Mantle",
+    "Eryndor Emerald Oath Dagda Cauldron Memory Core"
   ],
   "passives": [
-    "Living Grove \u2014 Eryndor's Mastery: Eryndor's Living Grove: a solo mark cycle that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
+    "Root-Memory Sovereignty: Eryndor Emerald Oath gains Geas Memory when its battery choices express Avalora source-culture law through silver-root fae ground; Earth myth is only the later echo."
   ],
   "lore": "Eryndor Emerald Oath is a colossal Tuatha battery from Avalora. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Titan is the older source: Tuatha battery office: renewal engine, resource hearth, stored sacred force; Aos S\u00ed/S\u00eddhe: mound gates, hidden courts, fae ancestry.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -40,11 +40,11 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-038",
   "artworkId": null,
-  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
   "backstoryId": "TG-BACKSTORY-TITAN-038",
   "abilityDetails": [
     {
-      "name": "Eryndor Generator Strike",
+      "name": "Eryndor Emerald Oath \u2014 Silver-Branch Cut Kindle",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -52,28 +52,31 @@
       "tags": [
         "generator",
         "battery",
-        "verdant"
+        "tuatha",
+        "source-culture"
       ],
-      "effect": "Deal Verdant damage at range 3; gain 8 Momentum, or 12 if used from living terrain or into the Titan's marked target.",
-      "scaling": "100% attack; +15% vs vulnerable enemies",
-      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+      "effect": "Deal Tuatha source-culture damage at range 3; generate Momentum and a small Geas Memory gain when used from silver-root fae ground or against the marked target. The hit reads visually as silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
     },
     {
-      "name": "Moonwell Resonance Engine",
+      "name": "Geas Thorn Technique \u2014 Reservoir",
       "slot": "Technique",
       "unlockLevel": 4,
       "cost": "20 Momentum",
       "cooldown": 2,
       "tags": [
         "role-technique",
-        "battery"
+        "battery",
+        "tuatha",
+        "source-culture"
       ],
-      "effect": "Apply resource acceleration, refund, controlled overcharge; also builds 10 Grove Pulse when it changes enemy intent or breaks an objective action.",
-      "scaling": "70% attack plus role utility scaling from energy",
-      "counterplay": "Interrupt before resolution, spread enemy ranks, or bait the cooldown."
+      "effect": "Spend Momentum to stores faction resource, refunds Momentum on smart setup, and converts terrain mastery into burst economy. Builds Geas Memory only when the player uses silver-root fae ground intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
     },
     {
-      "name": "Eryndor Emerald Oath: Overflow Mandate",
+      "name": "Eryndor Emerald Oath: S\u00eddhe Court Covenant Overchannel",
       "slot": "Signature",
       "unlockLevel": 12,
       "cost": "45 Momentum + 25 Divinity",
@@ -81,51 +84,54 @@
       "tags": [
         "signature",
         "battery",
-        "tuatha"
+        "tuatha",
+        "source-culture"
       ],
-      "effect": "Spend stored Grove Pulse to create a two-round battlefield rule around living terrain; enemies receive a readable counter-window before the strongest effect lands.",
-      "scaling": "140% attack; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+      "effect": "Spend stored Geas Memory to impose a two-round rule from Avalora: stores faction resource, refunds Momentum on smart setup, and converts terrain mastery into burst economy. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
     },
     {
-      "name": "Divine Ascension \u2014 Moonwell Verdant Unbound",
+      "name": "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form",
       "slot": "Ascension",
       "unlockLevel": 30,
       "cost": "100 Divinity",
       "cooldown": "once per battle",
       "tags": [
         "ultimate",
-        "ascendant"
+        "ascendant",
+        "tuatha",
+        "source-culture"
       ],
-      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Grove Pulse, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Geas Memory, transform nearby terrain into silver-root fae ground, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
       "scaling": "Does not stack with external ultimate buffs",
-      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
     }
   ],
   "equipmentDetails": [
     {
-      "name": "Tuatha Moonwell Implement",
+      "name": "Eryndor Emerald Oath Generator Lugh Silver-Spear Thornblade",
       "slot": "Relic Weapon",
       "rarityFloor": "Epic",
       "primaryStat": "attack",
-      "effect": "+3 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
-      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through silver-root fae ground. Visual: silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
     },
     {
-      "name": "Eryndor Emerald Oath Realmplate",
+      "name": "Eryndor Emerald Oath Moon-Oak S\u00eddhe Mantle",
       "slot": "Armor Body",
       "rarityFloor": "Epic",
-      "primaryStat": "armor/resistance",
-      "effect": "+1 armor and +2 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
-      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+      "primaryStat": "resistance",
+      "effect": "Improves survivability and makes the Titan read as Avalora source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
-      "name": "Eryndor Grove Pulse Core",
+      "name": "Eryndor Emerald Oath Dagda Cauldron Memory Core",
       "slot": "Resonance Core",
       "rarityFloor": "Epic",
       "primaryStat": "energy",
-      "effect": "Grove Pulse cap +20. At 80+ Grove Pulse, the next Technique gains a role-specific rider, then drains 30 Grove Pulse.",
-      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+      "effect": "Stores Geas Memory and unlocks a mastery branch for S\u00eddhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
     }
   ],
   "leveling": {
@@ -169,5 +175,15 @@
     "green-gold light"
   ],
   "armorCanon": "Armor must use silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.; construction proves source culture humans later copied as Celtic and Irish fae myth; no generic elf, wood block giant, treehouse body, cute fairy wings.",
-  "updated": "2026-08-16"
+  "updated": "2026-08-16",
+  "weaponCanon": "Eryndor Emerald Oath Generator Lugh Silver-Spear Thornblade",
+  "gearCanon": {
+    "weapon": "Eryndor Emerald Oath Generator Lugh Silver-Spear Thornblade",
+    "armor": "Eryndor Emerald Oath Moon-Oak S\u00eddhe Mantle",
+    "core": "Eryndor Emerald Oath Dagda Cauldron Memory Core",
+    "movementRelic": "S\u00eddhe Mound Slip",
+    "reactionRelic": "Fae Glamour Reversal",
+    "executionRelic": "Collect the Geas Debt",
+    "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
+  }
 }

@@ -7,10 +7,10 @@
   "rarity": "Rare",
   "role": "Sustain",
   "abilities": [
-    "Iset Restoring Strike",
-    "Sunseal Renewal Circuit",
-    "Iset Riverlight Throne: Survival Covenant",
-    "Divine Ascension \u2014 Sunseal Radiant Unbound"
+    "Iset Riverlight Throne \u2014 Ma\u2019at-Weighted Strike Restore",
+    "Pylon Edict Technique \u2014 Covenant",
+    "Iset Riverlight Throne: Sun-Scale Decree Renewal Rite",
+    "Divine Ascension \u2014 Aten-Ra Source Radiance"
   ],
   "stats": {
     "hp": 44,
@@ -27,12 +27,12 @@
     "combatPower": 205
   },
   "equipment": [
-    "Aten Sunseal Implement",
-    "Iset Riverlight Throne Realmplate",
-    "Iset Solar Charge Core"
+    "Iset Riverlight Throne Restorer Ma\u2019at Was-Sceptre Blade",
+    "Iset Riverlight Throne Electrum Wesekh Source-Plate",
+    "Iset Riverlight Throne Khepri Solar Scarab Core"
   ],
   "passives": [
-    "Solar Law \u2014 Iset's Mastery: Iset's Solar Power: a solo zone conversion that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
+    "Ma\u2019at Source Law: Iset Riverlight Throne gains Solar Charge when its sustain choices express Solar Dominion of Khepra source-culture law through Aten-lit judgment ground; Earth myth is only the later echo."
   ],
   "lore": "Iset Riverlight Throne is the restoration office humans later called Isis: throne, mother-protector, healer, and guide through death\u2019s river. Her magic does not merely heal flesh; it re-seats a being in its rightful place in Ma\u2019at.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -40,11 +40,11 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-006",
   "artworkId": null,
-  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
   "backstoryId": "TG-BACKSTORY-TITAN-006",
   "abilityDetails": [
     {
-      "name": "Iset Restoring Strike",
+      "name": "Iset Riverlight Throne \u2014 Ma\u2019at-Weighted Strike Restore",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -52,28 +52,31 @@
       "tags": [
         "generator",
         "sustain",
-        "radiant"
+        "aten-ra",
+        "source-culture"
       ],
-      "effect": "Deal Radiant damage at range 2; gain 8 Momentum, or 12 if used from illuminated terrain or into the Titan's marked target.",
-      "scaling": "100% attack; +15% vs vulnerable enemies",
-      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+      "effect": "Deal Aten Ra source-culture damage at range 2; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
     },
     {
-      "name": "Sunseal Renewal Circuit",
+      "name": "Pylon Edict Technique \u2014 Covenant",
       "slot": "Technique",
       "unlockLevel": 4,
       "cost": "20 Momentum",
       "cooldown": 2,
       "tags": [
         "role-technique",
-        "sustain"
+        "sustain",
+        "aten-ra",
+        "source-culture"
       ],
-      "effect": "Apply cleanse, heal-over-time, attrition defense; also builds 10 Solar Charge when it changes enemy intent or breaks an objective action.",
-      "scaling": "70% attack plus role utility scaling from energy",
-      "counterplay": "Interrupt before resolution, spread enemy ranks, or bait the cooldown."
+      "effect": "Spend Momentum to restores through faction ritual, cleanses pressure, and rewards holding sacred ground without becoming a passive healer. Builds Solar Charge only when the player uses Aten-lit judgment ground intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
     },
     {
-      "name": "Iset Riverlight Throne: Survival Covenant",
+      "name": "Iset Riverlight Throne: Sun-Scale Decree Renewal Rite",
       "slot": "Signature",
       "unlockLevel": 12,
       "cost": "45 Momentum + 25 Divinity",
@@ -81,51 +84,54 @@
       "tags": [
         "signature",
         "sustain",
-        "aten-ra"
+        "aten-ra",
+        "source-culture"
       ],
-      "effect": "Spend stored Solar Charge to create a two-round battlefield rule around illuminated terrain; enemies receive a readable counter-window before the strongest effect lands.",
-      "scaling": "140% attack; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+      "effect": "Spend stored Solar Charge to impose a two-round rule from Solar Dominion of Khepra: restores through faction ritual, cleanses pressure, and rewards holding sacred ground without becoming a passive healer. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
     },
     {
-      "name": "Divine Ascension \u2014 Sunseal Radiant Unbound",
+      "name": "Divine Ascension \u2014 Aten-Ra Source Radiance",
       "slot": "Ascension",
       "unlockLevel": 30,
       "cost": "100 Divinity",
       "cooldown": "once per battle",
       "tags": [
         "ultimate",
-        "ascendant"
+        "ascendant",
+        "aten-ra",
+        "source-culture"
       ],
-      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Solar Charge, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Solar Charge, transform nearby terrain into Aten-lit judgment ground, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
       "scaling": "Does not stack with external ultimate buffs",
-      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
     }
   ],
   "equipmentDetails": [
     {
-      "name": "Aten Sunseal Implement",
+      "name": "Iset Riverlight Throne Restorer Ma\u2019at Was-Sceptre Blade",
       "slot": "Relic Weapon",
       "rarityFloor": "Rare",
       "primaryStat": "attack",
-      "effect": "+2 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
-      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through Aten-lit judgment ground. Visual: Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
     },
     {
-      "name": "Iset Riverlight Throne Realmplate",
+      "name": "Iset Riverlight Throne Electrum Wesekh Source-Plate",
       "slot": "Armor Body",
       "rarityFloor": "Rare",
-      "primaryStat": "armor/resistance",
-      "effect": "+2 armor and +3 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
-      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+      "primaryStat": "resistance",
+      "effect": "Improves survivability and makes the Titan read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
-      "name": "Iset Solar Charge Core",
+      "name": "Iset Riverlight Throne Khepri Solar Scarab Core",
       "slot": "Resonance Core",
       "rarityFloor": "Rare",
       "primaryStat": "energy",
-      "effect": "Solar Charge cap +20. At 80+ Solar Charge, the next Technique gains a role-specific rider, then drains 30 Solar Charge.",
-      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+      "effect": "Stores Solar Charge and unlocks a mastery branch for Aten Hand-Ray Gate Step, Uraeus Counter-Edict, and Weigh the Name. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
     }
   ],
   "leveling": {
@@ -168,5 +174,15 @@
     "afterlife passage guide"
   ],
   "armorCanon": "throne-shaped crown silhouette, lotus-papyrus mantle, river-glass healing channels, cow-horn/sun-disc echo used subtly, blue faience restoration plates",
-  "updated": "2026-08-16"
+  "updated": "2026-08-16",
+  "weaponCanon": "Iset Riverlight Throne Restorer Ma\u2019at Was-Sceptre Blade",
+  "gearCanon": {
+    "weapon": "Iset Riverlight Throne Restorer Ma\u2019at Was-Sceptre Blade",
+    "armor": "Iset Riverlight Throne Electrum Wesekh Source-Plate",
+    "core": "Iset Riverlight Throne Khepri Solar Scarab Core",
+    "movementRelic": "Aten Hand-Ray Gate Step",
+    "reactionRelic": "Uraeus Counter-Edict",
+    "executionRelic": "Weigh the Name",
+    "visualRule": "Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
+  }
 }

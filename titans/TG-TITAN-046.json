@@ -7,10 +7,10 @@
   "rarity": "Legendary",
   "role": "Defender",
   "abilities": [
-    "Seraphel Anchor Strike",
-    "Choir Bastion Protocol",
-    "Seraphel, the Throne Eternal: Law of Holding",
-    "Divine Ascension \u2014 Choir Celestial Unbound"
+    "Seraphel \u2014 Seraph Edict Lash Anchor",
+    "Choir Seal Technique \u2014 Bastion",
+    "Seraphel: Ophanim Throne Judgment Holdfast",
+    "Divine Ascension \u2014 Seraphic Choir Unbound"
   ],
   "stats": {
     "hp": 50,
@@ -27,12 +27,12 @@
     "combatPower": 236
   },
   "equipment": [
-    "Empyrean Choir Implement",
-    "Seraphel Realmplate",
-    "Seraphel Edict Charge Core"
+    "Seraphel Bulwark Seraph Bell-Edict Blade",
+    "Seraphel Opal-Glass Cherubim Aegis",
+    "Seraphel Ophanim Many-Eye Choir Core"
   ],
   "passives": [
-    "Radiant Edict \u2014 Seraphel's Mastery: Seraphel's Radiant Edict: a solo pursuit lock that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
+    "Hierarchy of Living Edict: Seraphel, the Throne Eternal gains Choir Resonance when its defender choices express Radiant Hierarchies source-culture law through edict-sung holy geometry; Earth myth is only the later echo."
   ],
   "lore": "Seraphel, the Throne Eternal is a colossal Empyrean defender from The Radiant Hierarchies. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Titan is the older source: Empyrean defender office: sovereign protector, gate-holder, law shield; Dominions/Virtues/Powers: hierarchy, governance, miracle force, defense against chaos.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -40,11 +40,11 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-046",
   "artworkId": null,
-  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
   "backstoryId": "TG-BACKSTORY-TITAN-046",
   "abilityDetails": [
     {
-      "name": "Seraphel Anchor Strike",
+      "name": "Seraphel \u2014 Seraph Edict Lash Anchor",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -52,28 +52,31 @@
       "tags": [
         "generator",
         "defender",
-        "celestial"
+        "empyrean",
+        "source-culture"
       ],
-      "effect": "Deal Celestial damage at range 2; gain 8 Momentum, or 12 if used from ordered terrain or into the Titan's marked target.",
-      "scaling": "100% attack; +15% vs vulnerable enemies",
-      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+      "effect": "Deal Empyrean source-culture damage at range 2; generate Momentum and a small Choir Resonance gain when used from edict-sung holy geometry or against the marked target. The hit reads visually as white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
     },
     {
-      "name": "Choir Bastion Protocol",
+      "name": "Choir Seal Technique \u2014 Bastion",
       "slot": "Technique",
       "unlockLevel": 4,
       "cost": "20 Momentum",
       "cooldown": 2,
       "tags": [
         "role-technique",
-        "defender"
+        "defender",
+        "empyrean",
+        "source-culture"
       ],
-      "effect": "Apply hold-zone shield, taunt, counterstance; also builds 10 Edict Charge when it changes enemy intent or breaks an objective action.",
-      "scaling": "70% attack plus role utility scaling from energy",
-      "counterplay": "Interrupt before resolution, spread enemy ranks, or bait the cooldown."
+      "effect": "Spend Momentum to protects a control zone, redirects enemy intent, and turns correct positioning into mitigation. Builds Choir Resonance only when the player uses edict-sung holy geometry intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
     },
     {
-      "name": "Seraphel, the Throne Eternal: Law of Holding",
+      "name": "Seraphel: Ophanim Throne Judgment Holdfast",
       "slot": "Signature",
       "unlockLevel": 12,
       "cost": "45 Momentum + 25 Divinity",
@@ -81,51 +84,54 @@
       "tags": [
         "signature",
         "defender",
-        "empyrean"
+        "empyrean",
+        "source-culture"
       ],
-      "effect": "Spend stored Edict Charge to create a two-round battlefield rule around ordered terrain; enemies receive a readable counter-window before the strongest effect lands.",
-      "scaling": "140% attack; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+      "effect": "Spend stored Choir Resonance to impose a two-round rule from Radiant Hierarchies: protects a control zone, redirects enemy intent, and turns correct positioning into mitigation. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
     },
     {
-      "name": "Divine Ascension \u2014 Choir Celestial Unbound",
+      "name": "Divine Ascension \u2014 Seraphic Choir Unbound",
       "slot": "Ascension",
       "unlockLevel": 30,
       "cost": "100 Divinity",
       "cooldown": "once per battle",
       "tags": [
         "ultimate",
-        "ascendant"
+        "ascendant",
+        "empyrean",
+        "source-culture"
       ],
-      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Edict Charge, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Choir Resonance, transform nearby terrain into edict-sung holy geometry, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
       "scaling": "Does not stack with external ultimate buffs",
-      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
     }
   ],
   "equipmentDetails": [
     {
-      "name": "Empyrean Choir Implement",
+      "name": "Seraphel Bulwark Seraph Bell-Edict Blade",
       "slot": "Relic Weapon",
       "rarityFloor": "Legendary",
       "primaryStat": "attack",
-      "effect": "+3 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
-      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through edict-sung holy geometry. Visual: white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
     },
     {
-      "name": "Seraphel Realmplate",
+      "name": "Seraphel Opal-Glass Cherubim Aegis",
       "slot": "Armor Body",
       "rarityFloor": "Legendary",
-      "primaryStat": "armor/resistance",
-      "effect": "+3 armor and +2 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
-      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+      "primaryStat": "armor",
+      "effect": "Improves survivability and makes the Titan read as Radiant Hierarchies source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
-      "name": "Seraphel Edict Charge Core",
+      "name": "Seraphel Ophanim Many-Eye Choir Core",
       "slot": "Resonance Core",
       "rarityFloor": "Legendary",
       "primaryStat": "energy",
-      "effect": "Edict Charge cap +20. At 80+ Edict Charge, the next Technique gains a role-specific rider, then drains 30 Edict Charge.",
-      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+      "effect": "Stores Choir Resonance and unlocks a mastery branch for Archangel Herald Ascent, Ophanim Wheel Intercept, and Seal the Discord. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
     }
   ],
   "leveling": {
@@ -169,5 +175,15 @@
     "ivory scroll vellum"
   ],
   "armorCanon": "Armor must use white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.; construction proves source culture humans later copied as angelic and heavenly lore; no robot angel, spaceship armor, generic church costume, literal cathedral body.",
-  "updated": "2026-08-16"
+  "updated": "2026-08-16",
+  "weaponCanon": "Seraphel Bulwark Seraph Bell-Edict Blade",
+  "gearCanon": {
+    "weapon": "Seraphel Bulwark Seraph Bell-Edict Blade",
+    "armor": "Seraphel Opal-Glass Cherubim Aegis",
+    "core": "Seraphel Ophanim Many-Eye Choir Core",
+    "movementRelic": "Archangel Herald Ascent",
+    "reactionRelic": "Ophanim Wheel Intercept",
+    "executionRelic": "Seal the Discord",
+    "visualRule": "white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire"
+  }
 }

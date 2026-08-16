@@ -7,10 +7,10 @@
   "rarity": "Rare",
   "role": "Breaker",
   "abilities": [
-    "Azrakar Sundering Strike",
-    "Cinder Armor Rupture",
-    "Azrakar Chainwarden: Gatebreaker Decree",
-    "Divine Ascension \u2014 Cinder Infernal Unbound"
+    "Azrakar Chainwarden \u2014 Black-Iron Clause Cut Rend",
+    "Blood-Wax Contract Technique \u2014 Rupture",
+    "Azrakar Chainwarden: Abyssal Debt Verdict Sundering Trial",
+    "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
   ],
   "stats": {
     "hp": 44,
@@ -27,12 +27,12 @@
     "combatPower": 214
   },
   "equipment": [
-    "Dominion Cinder Implement",
-    "Azrakar Chainwarden Realmplate",
-    "Azrakar Dominion Heat Core"
+    "Azrakar Chainwarden Sunderer Goetic Chain-Crown Blade",
+    "Azrakar Chainwarden Volcanic Glass Debtor Plate",
+    "Azrakar Chainwarden Blood-Wax Infernal Ledger Core"
   ],
   "passives": [
-    "Dominion Flame \u2014 Azrakar's Mastery: Azrakar's Dominion Flame: a solo parry ladder that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
+    "Debt With Teeth: Azrakar Chainwarden gains Contract Debt when its breaker choices express Infernal Dominion source-culture law through black-iron contract ground; Earth myth is only the later echo."
   ],
   "lore": "Azrakar Chainwarden is a colossal Infernal Dominion breaker from The Infernal Dominion. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Titan is the older source: Infernal Dominion breaker office: judgement rupture, armor sundering, trial by force; Devils/demon kings: hierarchy, temptation, rulership, court violence.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -40,11 +40,11 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-058",
   "artworkId": null,
-  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
   "backstoryId": "TG-BACKSTORY-TITAN-058",
   "abilityDetails": [
     {
-      "name": "Azrakar Sundering Strike",
+      "name": "Azrakar Chainwarden \u2014 Black-Iron Clause Cut Rend",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -52,28 +52,31 @@
       "tags": [
         "generator",
         "breaker",
-        "infernal"
+        "infernal-dominion",
+        "source-culture"
       ],
-      "effect": "Deal Infernal damage at range 2; gain 8 Momentum, or 12 if used from burning terrain or into the Titan's marked target.",
-      "scaling": "100% attack; +15% vs vulnerable enemies",
-      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+      "effect": "Deal Infernal Dominion source-culture damage at range 2; generate Momentum and a small Contract Debt gain when used from black-iron contract ground or against the marked target. The hit reads visually as black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchy, ash velvet, hellfire clauses.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
     },
     {
-      "name": "Cinder Armor Rupture",
+      "name": "Blood-Wax Contract Technique \u2014 Rupture",
       "slot": "Technique",
       "unlockLevel": 4,
       "cost": "20 Momentum",
       "cooldown": 2,
       "tags": [
         "role-technique",
-        "breaker"
+        "breaker",
+        "infernal-dominion",
+        "source-culture"
       ],
-      "effect": "Apply armor break, shield collapse, boss phase pressure; also builds 10 Dominion Heat when it changes enemy intent or breaks an objective action.",
-      "scaling": "70% attack plus role utility scaling from energy",
-      "counterplay": "Interrupt before resolution, spread enemy ranks, or bait the cooldown."
+      "effect": "Spend Momentum to breaks guard, exposes vulnerability, and punishes armor or shield reliance. Builds Contract Debt only when the player uses black-iron contract ground intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
     },
     {
-      "name": "Azrakar Chainwarden: Gatebreaker Decree",
+      "name": "Azrakar Chainwarden: Abyssal Debt Verdict Sundering Trial",
       "slot": "Signature",
       "unlockLevel": 12,
       "cost": "45 Momentum + 25 Divinity",
@@ -81,51 +84,54 @@
       "tags": [
         "signature",
         "breaker",
-        "infernal-dominion"
+        "infernal-dominion",
+        "source-culture"
       ],
-      "effect": "Spend stored Dominion Heat to create a two-round battlefield rule around burning terrain; enemies receive a readable counter-window before the strongest effect lands.",
-      "scaling": "140% attack; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+      "effect": "Spend stored Contract Debt to impose a two-round rule from Infernal Dominion: breaks guard, exposes vulnerability, and punishes armor or shield reliance. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
     },
     {
-      "name": "Divine Ascension \u2014 Cinder Infernal Unbound",
+      "name": "Divine Ascension \u2014 Hell-Crown Dominion Unbound",
       "slot": "Ascension",
       "unlockLevel": 30,
       "cost": "100 Divinity",
       "cooldown": "once per battle",
       "tags": [
         "ultimate",
-        "ascendant"
+        "ascendant",
+        "infernal-dominion",
+        "source-culture"
       ],
-      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Dominion Heat, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Contract Debt, transform nearby terrain into black-iron contract ground, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
       "scaling": "Does not stack with external ultimate buffs",
-      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
     }
   ],
   "equipmentDetails": [
     {
-      "name": "Dominion Cinder Implement",
+      "name": "Azrakar Chainwarden Sunderer Goetic Chain-Crown Blade",
       "slot": "Relic Weapon",
       "rarityFloor": "Rare",
       "primaryStat": "attack",
-      "effect": "+4 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
-      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through black-iron contract ground. Visual: black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchy, ash velvet, hellfire clauses.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
     },
     {
-      "name": "Azrakar Chainwarden Realmplate",
+      "name": "Azrakar Chainwarden Volcanic Glass Debtor Plate",
       "slot": "Armor Body",
       "rarityFloor": "Rare",
-      "primaryStat": "armor/resistance",
-      "effect": "+2 armor and +1 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
-      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+      "primaryStat": "armor",
+      "effect": "Improves survivability and makes the Titan read as Infernal Dominion source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
-      "name": "Azrakar Dominion Heat Core",
+      "name": "Azrakar Chainwarden Blood-Wax Infernal Ledger Core",
       "slot": "Resonance Core",
       "rarityFloor": "Rare",
       "primaryStat": "energy",
-      "effect": "Dominion Heat cap +20. At 80+ Dominion Heat, the next Technique gains a role-specific rider, then drains 30 Dominion Heat.",
-      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+      "effect": "Stores Contract Debt and unlocks a mastery branch for Abyssal Clause Step, Chain-Lien Reversal, and Collect the Soul Clause. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
     }
   ],
   "leveling": {
@@ -169,5 +175,15 @@
     "obsidian"
   ],
   "armorCanon": "Armor must use black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture.; construction proves source culture humans later copied as hell, demonology, and infernal contract lore; no red robot demon, generic Halloween devil, sci-fi cables, literal castle armor.",
-  "updated": "2026-08-16"
+  "updated": "2026-08-16",
+  "weaponCanon": "Azrakar Chainwarden Sunderer Goetic Chain-Crown Blade",
+  "gearCanon": {
+    "weapon": "Azrakar Chainwarden Sunderer Goetic Chain-Crown Blade",
+    "armor": "Azrakar Chainwarden Volcanic Glass Debtor Plate",
+    "core": "Azrakar Chainwarden Blood-Wax Infernal Ledger Core",
+    "movementRelic": "Abyssal Clause Step",
+    "reactionRelic": "Chain-Lien Reversal",
+    "executionRelic": "Collect the Soul Clause",
+    "visualRule": "black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchy, ash velvet, hellfire clauses"
+  }
 }

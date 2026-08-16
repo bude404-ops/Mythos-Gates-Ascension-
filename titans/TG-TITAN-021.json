@@ -7,10 +7,10 @@
   "rarity": "Epic",
   "role": "Controller",
   "abilities": [
-    "Thyressa Vector Strike",
-    "Laurel Field Rewrite",
-    "Thyressa Golden Aegis: Terrain Edict",
-    "Divine Ascension \u2014 Laurel Ichor Unbound"
+    "Thyressa Golden Aegis \u2014 Aegis Spear Thrust Vector",
+    "Laurel Trial Technique \u2014 Field Rewrite",
+    "Thyressa Golden Aegis: Olympian Verdict Contest Dominion Grid",
+    "Divine Ascension \u2014 Nike Crowned Ascension"
   ],
   "stats": {
     "hp": 36,
@@ -27,12 +27,12 @@
     "combatPower": 224
   },
   "equipment": [
-    "Olympian Laurel Implement",
-    "Thyressa Golden Aegis Realmplate",
-    "Thyressa Laurel Glory Core"
+    "Thyressa Golden Aegis Compass Aegis Laurel Spear",
+    "Thyressa Golden Aegis Living Marble Bronze Cuirass",
+    "Thyressa Golden Aegis Oracle Ambrosia Core"
   ],
   "passives": [
-    "Laurel Supremacy \u2014 Thyressa's Mastery: Thyressa's Laurel Glory: a solo terrain imprint that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
+    "Agon of the Sky Court: Thyressa Golden Aegis gains Laurel Favor when its controller choices express Celestial Heights of Olympus source-culture law through trial-marked arena ground; Earth myth is only the later echo."
   ],
   "lore": "Thyressa Golden Aegis is a colossal Olympian controller from The Celestial Heights of Olympus. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Titan is the older source: Olympian controller office: terrain law, threshold command, battlefield geometry; Apollo: prophecy, sun clarity, music, plague/purification.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -40,11 +40,11 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-021",
   "artworkId": null,
-  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
   "backstoryId": "TG-BACKSTORY-TITAN-021",
   "abilityDetails": [
     {
-      "name": "Thyressa Vector Strike",
+      "name": "Thyressa Golden Aegis \u2014 Aegis Spear Thrust Vector",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -52,28 +52,31 @@
       "tags": [
         "generator",
         "controller",
-        "ichor"
+        "olympian",
+        "source-culture"
       ],
-      "effect": "Deal Ichor damage at range 4; gain 8 Momentum, or 12 if used from honor-marked terrain or into the Titan's marked target.",
-      "scaling": "100% attack; +15% vs vulnerable enemies",
-      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+      "effect": "Deal Olympian source-culture damage at range 4; generate Momentum and a small Laurel Favor gain when used from trial-marked arena ground or against the marked target. The hit reads visually as living marble-light, bronze cuirass, laurel circuits, aegis scales, oracle smoke, thunder tribunal halos, hoplite shield geometry.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
     },
     {
-      "name": "Laurel Field Rewrite",
+      "name": "Laurel Trial Technique \u2014 Field Rewrite",
       "slot": "Technique",
       "unlockLevel": 4,
       "cost": "20 Momentum",
       "cooldown": 2,
       "tags": [
-        "control",
-        "controller"
+        "role-technique",
+        "controller",
+        "olympian",
+        "source-culture"
       ],
-      "effect": "Apply root, pull, slow, lane denial; also builds 10 Laurel Glory when it changes enemy intent or breaks an objective action.",
-      "scaling": "70% attack plus role utility scaling from energy",
-      "counterplay": "Interrupt before resolution, spread enemy ranks, or bait the cooldown."
+      "effect": "Spend Momentum to moves enemies, rewrites terrain pressure, and delays high-threat actions through source-culture law. Builds Laurel Favor only when the player uses trial-marked arena ground intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
     },
     {
-      "name": "Thyressa Golden Aegis: Terrain Edict",
+      "name": "Thyressa Golden Aegis: Olympian Verdict Contest Dominion Grid",
       "slot": "Signature",
       "unlockLevel": 12,
       "cost": "45 Momentum + 25 Divinity",
@@ -81,51 +84,54 @@
       "tags": [
         "signature",
         "controller",
-        "olympian"
+        "olympian",
+        "source-culture"
       ],
-      "effect": "Spend stored Laurel Glory to create a two-round battlefield rule around honor-marked terrain; enemies receive a readable counter-window before the strongest effect lands.",
-      "scaling": "140% attack; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+      "effect": "Spend stored Laurel Favor to impose a two-round rule from Celestial Heights of Olympus: moves enemies, rewrites terrain pressure, and delays high-threat actions through source-culture law. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
     },
     {
-      "name": "Divine Ascension \u2014 Laurel Ichor Unbound",
+      "name": "Divine Ascension \u2014 Nike Crowned Ascension",
       "slot": "Ascension",
       "unlockLevel": 30,
       "cost": "100 Divinity",
       "cooldown": "once per battle",
       "tags": [
         "ultimate",
-        "ascendant"
+        "ascendant",
+        "olympian",
+        "source-culture"
       ],
-      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Laurel Glory, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Laurel Favor, transform nearby terrain into trial-marked arena ground, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
       "scaling": "Does not stack with external ultimate buffs",
-      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
     }
   ],
   "equipmentDetails": [
     {
-      "name": "Olympian Laurel Implement",
+      "name": "Thyressa Golden Aegis Compass Aegis Laurel Spear",
       "slot": "Relic Weapon",
       "rarityFloor": "Epic",
       "primaryStat": "attack",
-      "effect": "+3 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
-      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through trial-marked arena ground. Visual: living marble-light, bronze cuirass, laurel circuits, aegis scales, oracle smoke, thunder tribunal halos, hoplite shield geometry.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
     },
     {
-      "name": "Thyressa Golden Aegis Realmplate",
+      "name": "Thyressa Golden Aegis Living Marble Bronze Cuirass",
       "slot": "Armor Body",
       "rarityFloor": "Epic",
-      "primaryStat": "armor/resistance",
-      "effect": "+1 armor and +2 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
-      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+      "primaryStat": "resistance",
+      "effect": "Improves survivability and makes the Titan read as Celestial Heights of Olympus source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
-      "name": "Thyressa Laurel Glory Core",
+      "name": "Thyressa Golden Aegis Oracle Ambrosia Core",
       "slot": "Resonance Core",
       "rarityFloor": "Epic",
       "primaryStat": "energy",
-      "effect": "Laurel Glory cap +20. At 80+ Laurel Glory, the next Technique gains a role-specific rider, then drains 30 Laurel Glory.",
-      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+      "effect": "Stores Laurel Favor and unlocks a mastery branch for Hermes Crossing Step, Athena Countermeasure, and Claim the Laurel. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
     }
   ],
   "leveling": {
@@ -169,5 +175,15 @@
     "living white marble"
   ],
   "armorCanon": "Armor must use living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal halos, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands.; construction proves source culture humans later copied as Greek myth; no generic toga costume, Roman gladiator confusion, marble statue stiffness, robot bronze automaton.",
-  "updated": "2026-08-16"
+  "updated": "2026-08-16",
+  "weaponCanon": "Thyressa Golden Aegis Compass Aegis Laurel Spear",
+  "gearCanon": {
+    "weapon": "Thyressa Golden Aegis Compass Aegis Laurel Spear",
+    "armor": "Thyressa Golden Aegis Living Marble Bronze Cuirass",
+    "core": "Thyressa Golden Aegis Oracle Ambrosia Core",
+    "movementRelic": "Hermes Crossing Step",
+    "reactionRelic": "Athena Countermeasure",
+    "executionRelic": "Claim the Laurel",
+    "visualRule": "living marble-light, bronze cuirass, laurel circuits, aegis scales, oracle smoke, thunder tribunal halos, hoplite shield geometry"
+  }
 }

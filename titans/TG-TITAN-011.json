@@ -7,10 +7,10 @@
   "rarity": "Epic",
   "role": "Battery",
   "abilities": [
-    "Hrothar Generator Strike",
-    "Anvil Resonance Engine",
-    "Hrothar Rune-Mountain: Overflow Mandate",
-    "Divine Ascension \u2014 Anvil Storm Unbound"
+    "Hrothar Rune-Mountain \u2014 Oath-Ring Cleave Kindle",
+    "Rune-Thunder Technique \u2014 Reservoir",
+    "Hrothar Rune-Mountain: Yggdrasil Root Oath Overchannel",
+    "Divine Ascension \u2014 Ragnarok Storm Unbound"
   ],
   "stats": {
     "hp": 40,
@@ -27,12 +27,12 @@
     "combatPower": 228
   },
   "equipment": [
-    "Runebound Anvil Implement",
-    "Hrothar Rune-Mountain Realmplate",
-    "Hrothar Oathstorm Core"
+    "Hrothar Rune-Mountain Generator Rune-Iron Oath Axe",
+    "Hrothar Rune-Mountain Stormsteel Wolf-Cloak Mail",
+    "Hrothar Rune-Mountain Yggdrasil Thunder-Root Core"
   ],
   "passives": [
-    "Oathbound \u2014 Hrothar's Mastery: Hrothar's Storm Oath: a solo shield fracture that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies. Counterplay remains: deny favored terrain, force reaction bait, drain Momentum or Divinity."
+    "Saga-Oath Blood: Hrothar Rune-Mountain gains Oathstorm when its battery choices express Storm-Rooted Aesir Holds source-culture law through rune-storm ground; Earth myth is only the later echo."
   ],
   "lore": "Hrothar Rune-Mountain is a colossal Asgardian battery from The Storm-Rooted Aesir Holds. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Titan is the older source: Asgardian battery office: renewal engine, resource hearth, stored sacred force; Freyja/Valkyries: choosing the slain, battle fate, swan/raven/boar omens.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -40,11 +40,11 @@
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-011",
   "artworkId": null,
-  "developmentStatus": "Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.",
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
   "backstoryId": "TG-BACKSTORY-TITAN-011",
   "abilityDetails": [
     {
-      "name": "Hrothar Generator Strike",
+      "name": "Hrothar Rune-Mountain \u2014 Oath-Ring Cleave Kindle",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -52,28 +52,31 @@
       "tags": [
         "generator",
         "battery",
-        "storm"
+        "asgardian",
+        "source-culture"
       ],
-      "effect": "Deal Storm damage at range 3; gain 8 Momentum, or 12 if used from storm-marked terrain or into the Titan's marked target.",
-      "scaling": "100% attack; +15% vs vulnerable enemies",
-      "counterplay": "Line-of-sight denial, evasion, armor, or forcing low-value targets."
+      "effect": "Deal Asgardian source-culture damage at range 3; generate Momentum and a small Oathstorm gain when used from rune-storm ground or against the marked target. The hit reads visually as rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
     },
     {
-      "name": "Anvil Resonance Engine",
+      "name": "Rune-Thunder Technique \u2014 Reservoir",
       "slot": "Technique",
       "unlockLevel": 4,
       "cost": "20 Momentum",
       "cooldown": 2,
       "tags": [
         "role-technique",
-        "battery"
+        "battery",
+        "asgardian",
+        "source-culture"
       ],
-      "effect": "Apply resource acceleration, refund, controlled overcharge; also builds 10 Oathstorm when it changes enemy intent or breaks an objective action.",
-      "scaling": "70% attack plus role utility scaling from energy",
-      "counterplay": "Interrupt before resolution, spread enemy ranks, or bait the cooldown."
+      "effect": "Spend Momentum to stores faction resource, refunds Momentum on smart setup, and converts terrain mastery into burst economy. Builds Oathstorm only when the player uses rune-storm ground intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
     },
     {
-      "name": "Hrothar Rune-Mountain: Overflow Mandate",
+      "name": "Hrothar Rune-Mountain: Yggdrasil Root Oath Overchannel",
       "slot": "Signature",
       "unlockLevel": 12,
       "cost": "45 Momentum + 25 Divinity",
@@ -81,51 +84,54 @@
       "tags": [
         "signature",
         "battery",
-        "asgardian"
+        "asgardian",
+        "source-culture"
       ],
-      "effect": "Spend stored Oathstorm to create a two-round battlefield rule around storm-marked terrain; enemies receive a readable counter-window before the strongest effect lands.",
-      "scaling": "140% attack; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn."
+      "effect": "Spend stored Oathstorm to impose a two-round rule from Storm-Rooted Aesir Holds: stores faction resource, refunds Momentum on smart setup, and converts terrain mastery into burst economy. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
     },
     {
-      "name": "Divine Ascension \u2014 Anvil Storm Unbound",
+      "name": "Divine Ascension \u2014 Ragnarok Storm Unbound",
       "slot": "Ascension",
       "unlockLevel": 30,
       "cost": "100 Divinity",
       "cooldown": "once per battle",
       "tags": [
         "ultimate",
-        "ascendant"
+        "ascendant",
+        "asgardian",
+        "source-culture"
       ],
-      "effect": "Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered Oathstorm, and one mythic reaction override. Ends with a one-round recovery risk.",
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Oathstorm, transform nearby terrain into rune-storm ground, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
       "scaling": "Does not stack with external ultimate buffs",
-      "counterplay": "Survive the window, deny objectives during recovery, or force defensive reaction spending."
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
     }
   ],
   "equipmentDetails": [
     {
-      "name": "Runebound Anvil Implement",
+      "name": "Hrothar Rune-Mountain Generator Rune-Iron Oath Axe",
       "slot": "Relic Weapon",
       "rarityFloor": "Epic",
       "primaryStat": "attack",
-      "effect": "+3 attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.",
-      "balanceGuardrail": "No extra action generation; damage bonus capped against bosses."
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through rune-storm ground. Visual: rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
     },
     {
-      "name": "Hrothar Rune-Mountain Realmplate",
+      "name": "Hrothar Rune-Mountain Stormsteel Wolf-Cloak Mail",
       "slot": "Armor Body",
       "rarityFloor": "Epic",
-      "primaryStat": "armor/resistance",
-      "effect": "+1 armor and +2 resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.",
-      "balanceGuardrail": "Hazard reduction does not prevent scripted boss mechanics."
+      "primaryStat": "resistance",
+      "effect": "Improves survivability and makes the Titan read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
-      "name": "Hrothar Oathstorm Core",
+      "name": "Hrothar Rune-Mountain Yggdrasil Thunder-Root Core",
       "slot": "Resonance Core",
       "rarityFloor": "Epic",
       "primaryStat": "energy",
-      "effect": "Oathstorm cap +20. At 80+ Oathstorm, the next Technique gains a role-specific rider, then drains 30 Oathstorm.",
-      "balanceGuardrail": "One empowered Technique per two rounds; cannot chain with Ascension opener."
+      "effect": "Stores Oathstorm and unlocks a mastery branch for Bifrost Stormstride, Valkyrie Witness Counter, and Carve the Fallen Name. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
     }
   ],
   "leveling": {
@@ -169,5 +175,15 @@
     "dark rune iron"
   ],
   "armorCanon": "Armor must use storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.; construction proves source culture humans later copied as Norse myth; no cartoon Viking, generic horned helmet cosplay, clean chrome, sci-fi power armor.",
-  "updated": "2026-08-16"
+  "updated": "2026-08-16",
+  "weaponCanon": "Hrothar Rune-Mountain Generator Rune-Iron Oath Axe",
+  "gearCanon": {
+    "weapon": "Hrothar Rune-Mountain Generator Rune-Iron Oath Axe",
+    "armor": "Hrothar Rune-Mountain Stormsteel Wolf-Cloak Mail",
+    "core": "Hrothar Rune-Mountain Yggdrasil Thunder-Root Core",
+    "movementRelic": "Bifrost Stormstride",
+    "reactionRelic": "Valkyrie Witness Counter",
+    "executionRelic": "Carve the Fallen Name",
+    "visualRule": "rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars"
+  }
 }

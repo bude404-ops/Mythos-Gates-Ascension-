@@ -259,3 +259,6 @@ For Aten Ra assets, do not design "Egyptian-inspired costumes." Treat the Solar 
 
 ### Cross-Faction Source-Culture Rule
 For every Titan Gates faction, do not design themed costumes based on Earth mythology. Each Realm is the older extradimensional source culture that human civilizations later copied through Gate dreams, ruins, survivor memory, and distorted religious/mythic echoes. Every asset must show the specific source function behind its traits, armor, realm, posture, materials, and hazards.
+
+### Source-Culture Weapons, Gear, and Ability Rule
+Every weapon, armor body, resonance core, basic attack, technique, signature, reaction, execution, passive, and Divine Ascension must match the owning faction's source mythology. Reject generic names or visuals such as plain Implement, Realmplate, Charge Core, Blow, generic magic blast, robot weapon, or costume prop unless the faction canon explicitly transforms them into a source-culture artifact.
