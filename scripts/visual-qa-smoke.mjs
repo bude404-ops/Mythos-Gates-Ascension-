@@ -75,7 +75,7 @@ for (const token of ['createCommandHubRuntime','function getNextRecommendedActio
   }
 }
 
-if (endgameArchitecture.standardSquadSize !== 5 || endgameArchitecture.livePvpImplemented !== false || asyncArenaSystem.mode !== 'ASYNCHRONOUS' || asyncArenaSystem.livePvpImplemented !== false || asyncArenaSystem.standardSquadSize !== 1 || asyncArenaSystem.status !== 'IMPLEMENTED') {
+if (endgameArchitecture.livePvpImplemented !== false || asyncArenaSystem.mode !== 'ASYNCHRONOUS' || asyncArenaSystem.livePvpImplemented !== false || asyncArenaSystem.standardSquadSize !== 1 || asyncArenaSystem.status !== 'IMPLEMENTED') {
   console.error(JSON.stringify({ ok: false, endgameBoundaryInvalid: true }, null, 2));
   process.exit(1);
 }
@@ -83,17 +83,17 @@ if (!asyncArenaSystem.snapshotRules?.oneActiveDefenderTitan || !asyncArenaSystem
   console.error(JSON.stringify({ ok: false, asyncArenaSnapshotsInvalid: true }, null, 2));
   process.exit(1);
 }
-for (const token of ['Asynchronous Titan Challenge', 'Snapshot Model Ready', 'one-active defender Titan', 'No live PvP']) {
+for (const token of ['Lore Continuity Sweep', 'one-active-Titan canon', 'One active Titan in standard combat', 'The Hollow is a non-playable campaign threat']) {
   if (!miniAppHtml.includes(token)) {
-    console.error(JSON.stringify({ ok: false, asyncArenaDashboardMissing: token }, null, 2));
+    console.error(JSON.stringify({ ok: false, loreSweepDashboardMissing: token }, null, 2));
     process.exit(1);
   }
 }
-if (!soloCombatDesign.samplePresets.every(p => p.squadSize === 5 && p.titanIds.length === 5)) {
-  console.error(JSON.stringify({ ok: false, squadPresetInvalid: true }, null, 2));
+if (!soloCombatDesign.samplePresets.every(p => p.activeTitanCount === 1 || p.squadSize === 1)) {
+  console.error(JSON.stringify({ ok: false, activeTitanPresetInvalid: true }, null, 2));
   process.exit(1);
 }
-if (!indexHtml.includes('function endgameDashboard') || !indexHtml.includes('#/endgame') || !indexHtml.includes('#/arena') || !indexHtml.includes('#/squads')) {
+if (!indexHtml.includes('function endgameDashboard') || !indexHtml.includes('#/endgame') || !indexHtml.includes('#/arena')) {
   console.error(JSON.stringify({ ok: false, endgameRoutesMissing: true }, null, 2));
   process.exit(1);
 }

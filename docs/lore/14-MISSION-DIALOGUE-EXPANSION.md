@@ -15,7 +15,7 @@ Each chapter now has:
 
 ## Tone Standard
 
-Dialogue remains restrained, mythic, tactical, and lore-bound. NPCs interpret and pressure the story; Titans remain the strike force. Threats speak with dread or law, not jokes.
+Dialogue remains restrained, mythic, tactical, and lore-bound. NPCs interpret and pressure the story; Titans remain the chosen Titan. Threats speak with dread or law, not jokes.
 
 ## Coverage
 

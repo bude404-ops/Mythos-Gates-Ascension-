@@ -38,12 +38,12 @@ walk(repo);
 
 const mini = fs.readFileSync(path.join(repo, 'dist/mini-app/titan-gates-ascension.html'), 'utf8');
 const checks = [
-  ['seven playable canon id', mini.includes('whole_game_seven_faction_hollow_threat_canon_v2')],
-  ['seven realm heading', mini.includes('Seven-Realm Storyline Spine')],
+  ['live lore sweep app', mini.includes('Lore Continuity Sweep')],
+  ['current one-active-Titan heading', mini.includes('one-active-Titan canon')],
   ['hollow threat layer', mini.includes('The Hollow')],
   ['current realm set', ['Aten Ra','Asgardian','Olympian','Kami','Tuatha','Empyrean','Infernal Dominion'].every(x => mini.includes(x))],
-  ['no squad gameplay copy', !/Squad Builder|SAVE THE BATTLE LINE|Choose one field Titan and five formations|Recommended line/.test(mini)],
-  ['no embedded formation roster payload', !/"entityKind":"FORMATION"|"ownedUnits":\[".*unit-|"type":"formation"/.test(mini)]
+  ['no active Titan gameplay copy', !/Titan Selection|SEAL THE GATE LINE|Choose one field Titan and five battle patterns|Recommended line/.test(mini)],
+  ['no embedded battle pattern roster payload', !/"entityKind":"FORMATION"|"ownedUnits":\[".*unit-|"type":"battle pattern"/.test(mini)]
 ];
 
 for (const [name, ok] of checks) {

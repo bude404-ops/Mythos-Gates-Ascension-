@@ -19,4 +19,4 @@ The current build includes the packaged Release-Candidate Change Ledger:
 - Enemy stats locked
 - Rewards locked
 - Mission gates locked
-- Squad power locked
+- Active Titan power locked

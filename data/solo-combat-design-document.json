@@ -363,18 +363,15 @@
   "status": "APPROVED_FOR_VERTICAL_SLICE_IMPLEMENTATION",
   "samplePresets": [
     {
-      "id": "TG-SOLO-LEGACY-SQUAD-PRESET-001",
-      "name": "Legacy Five-Titan Squad Baseline",
-      "purpose": "QA reference only: confirms the old squad baseline is documented while active solo combat uses one selected Titan.",
-      "squadSize": 5,
+      "id": "TG-SOLO-ACTIVE-TITAN-PRESET-001",
+      "name": "One-active-Titan Combat Baseline",
+      "purpose": "QA reference: standard combat resolves around one selected active Titan.",
+      "squadSize": 1,
       "titanIds": [
-        "TG-TITAN-001",
-        "TG-TITAN-002",
-        "TG-TITAN-003",
-        "TG-TITAN-004",
-        "TG-TITAN-005"
+        "TG-TITAN-001"
       ],
-      "activeSoloRule": "Only one Titan is active in solo combat."
+      "activeSoloRule": "Only one Titan is active in standard solo combat.",
+      "activeTitanCount": 1
     }
   ],
   "sourceCultureAbilityRule": "All basics, techniques, signatures, movement, reactions, executions, weapons, armor, and cores must express the selected Titan\u2019s Realm as the older source behind Earth mythology."

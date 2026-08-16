@@ -8,10 +8,10 @@
   "missionNumber": 2,
   "missionInChapter": 2,
   "title": "First Choir Lock: First Pressure",
-  "description": "First Choir Lock unfolds across choir vault ascent with bone-white arches, bells, and sanctified stairs, pushing a 5-Titan Empyrean Titan to prove protection, order-locks, shields, anti-chaos control, battle lineless aura play. without violating established Realm canon.",
+  "description": "First Choir Lock unfolds across choir vault ascent with bone-white arches, bells, and sanctified stairs, pushing a one active Empyrean Titan to prove protection, order-locks, shields, anti-chaos control, battle lineless aura play. without violating established Realm canon.",
   "lore": "First Choir Lock: First Pressure advances Empyrean Choir Vault: The Radiant Hierarchies ascend a broken heaven-engine where order can stabilize worlds or erase dissonant survivors. It directly tests the faction tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.",
   "recommendedPower": 534,
-  "teamSize": 5,
+  "activeTitanCount": 1,
   "encouragedTitanRoles": [
     "radiant protector",
     "edict controller",
@@ -25,7 +25,7 @@
     "primary": "Hold two Empyrean objective markers while the Empyrean Choir Vault conflict escalates.",
     "optional": [
       "Complete before turn 10",
-      "Keep at least four Titans standing",
+      "Keep your active Titan above 40% integrity",
       "Trigger at least two Empyrean faction mechanics"
     ]
   },
@@ -52,7 +52,7 @@
   "specialRules": [
     "Choir Lock: beacon timing shields battle line if objectives resolve in order.",
     "Radiant Edict: structured actions reduce chaos effects and protect allies.",
-    "5-Titan standard Titan"
+    "one active standard Titan"
   ],
   "victoryConditions": [
     "Hold two Empyrean objective markers while the Empyrean Choir Vault conflict escalates."
@@ -77,7 +77,7 @@
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
-      "one": "Primary completed under severe casualty or turn pressure"
+      "one": "Primary completed under severe integrity or turn pressure"
     }
   },
   "codexUnlocks": [
@@ -93,7 +93,7 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "squadDesignNotes": "Balanced for the standard 5-Titan Titan; special future modes may override team size explicitly.",
+  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
   "tacticalProfile": {
     "problemTags": [
       "heavily_armored_enemies",
@@ -131,6 +131,12 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
-  }
+    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+  },
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  },
+  "teamSize": 1
 }

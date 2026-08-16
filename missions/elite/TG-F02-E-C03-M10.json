@@ -8,10 +8,10 @@
   "missionNumber": 10,
   "missionInChapter": 2,
   "title": "Elite: Laurel Over Iron",
-  "description": "Marble Law, Iron Oath: Laurel Over Iron unfolds across floating marble arena edge connected to storm bridge anchors, with broken terraces and bronze judgment rails, pushing the 5-Titan Asgardian Titan to convert endurance into decisive counterpressure.",
+  "description": "Marble Law, Iron Oath: Laurel Over Iron unfolds across floating marble arena edge connected to storm bridge anchors, with broken terraces and bronze judgment rails, pushing the one active Asgardian Titan to convert endurance into decisive counterpressure.",
   "lore": "Laurel Over Iron advances the Storm-Oath Covenant arc: the Gate tries to harvest Asgardian vows, while Valhalla law insists courage must remain chosen responsibility.",
   "recommendedPower": 960,
-  "teamSize": 5,
+  "activeTitanCount": 1,
   "encouragedTitanRoles": [
     "frontline oath guardian",
     "storm counterstriker",
@@ -52,7 +52,7 @@
   "specialRules": [
     "Trial Terms: optional objectives change rewards but never overwrite faction identity.",
     "Oathbound: surviving damage strengthens the next committed strike.",
-    "5-Titan standard Titan",
+    "one active standard Titan",
     "Elite Storm: lightning collapse advances one turn earlier.",
     "Elite Banner Law: enemy buffs persist until objective action breaks the source."
   ],
@@ -79,7 +79,7 @@
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
-      "one": "Primary completed under severe casualty or turn pressure"
+      "one": "Primary completed under severe integrity or turn pressure"
     }
   },
   "codexUnlocks": [
@@ -95,7 +95,7 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "squadDesignNotes": "Balanced for the standard 5-Titan Titan; special future modes may override team size explicitly.",
+  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
   "eliteRemixOf": "TG-F02-C03-M10",
   "meaningfulDifferences": [
     "Secondary storm condition active",
@@ -140,6 +140,12 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
-  }
+    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+  },
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  },
+  "teamSize": 1
 }

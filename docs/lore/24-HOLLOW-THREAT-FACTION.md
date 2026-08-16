@@ -12,7 +12,7 @@ Erasure is not death; erasure is ownership without memory.
 
 ## Campaign Function
 
-The Hollow gives designers a universal enemy pressure layer. It can invade Aten Ra judgment zones, Asgardian oath bridges, Olympian trial courts, Kami shrine paths, Tuatha groves, Empyrean edict halls, and Infernal contract grounds without rewriting those factions as mixed strike forces.
+The Hollow gives designers a universal enemy pressure layer. It can invade Aten Ra judgment zones, Asgardian oath bridges, Olympian trial courts, Kami shrine paths, Tuatha groves, Empyrean edict halls, and Infernal contract grounds without rewriting those factions as mixed chosen Titan deployments.
 
 ## Encounter Identity
 

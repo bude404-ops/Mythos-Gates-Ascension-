@@ -6,7 +6,7 @@ This document expands Titan Gates: Ascension beyond the Titan roster without bre
 
 - The Lore Director authorizes NPCs as narrative, briefing, Codex, antagonist, or campaign support figures only.
 - NPCs are not playable non-Titan entries.
-- Creatures are enemies, hazards, or world boss threats. They are not Titans and do not belong to playable strike forces.
+- Creatures are enemies, hazards, or world boss threats. They are not Titans and do not belong to playable chosen Titan deployments.
 - Maps are tactical or campaign locations tied to Gates, Realms, hazards, and objectives.
 - Campaigns organize chapters, maps, NPCs, and creatures without allowing unrestricted faction mixing.
 
@@ -14,7 +14,7 @@ This document expands Titan Gates: Ascension beyond the Titan roster without bre
 
 ### Non-Playable Characters
 
-NPCs support story, tutorials, Codex unlocks, faction identity, and antagonist pressure. They do not enter the five-Titan strike force.
+NPCs support story, tutorials, Codex unlocks, faction identity, and antagonist pressure. They do not enter the one-active-Titan chosen Titan.
 
 ### Creatures
 

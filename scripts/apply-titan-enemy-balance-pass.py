@@ -54,7 +54,7 @@ role_moves = {
     'Defender': ('Anchor Strike','Bastion Protocol','Law of Holding','hold-zone shield, taunt, counterstance'),
     'Battery': ('Generator Strike','Resonance Engine','Overflow Mandate','resource acceleration, refund, controlled overcharge'),
     'Controller': ('Vector Strike','Field Rewrite','Terrain Edict','root, pull, slow, lane denial'),
-    'Breaker': ('Sundering Strike','Armor Rupture','Gatebreaker Decree','armor break, shield collapse, boss phase pressure'),
+    'Breaker': ('Sundering Strike','Armor Rupture','Gate-Sundering Decree','armor break, shield collapse, boss phase pressure'),
     'Disruptor': ('Null Strike','Rite Severance','Interdiction Decree','cast interrupt, meter drain, reaction lockout'),
     'Sustain': ('Restoring Strike','Renewal Circuit','Survival Covenant','cleanse, heal-over-time, attrition defense'),
     'Artillery': ('Longshot Strike','Zone Bombardment','Horizon Cataclysm','ranged area damage and objective-zone denial'),
@@ -95,7 +95,7 @@ for i,t in enumerate(titans, start=1):
     t['abilities'] = [attack_name, technique_name, signature_name, ascension_name]
     t['abilityDetails'] = [
         dict(name=attack_name, slot='Basic', unlockLevel=1, cost='Action', cooldown=0, tags=['generator', role.lower(), terms['dmg'].lower()], effect=f"Deal {terms['dmg']} damage at range {rng}; gain 8 Momentum, or 12 if used from {terms['terrain']} or into the Titan's marked target.", scaling='100% attack; +15% vs vulnerable enemies', counterplay='Line-of-sight denial, evasion, armor, or forcing low-value targets.'),
-        dict(name=technique_name, slot='Technique', unlockLevel=4, cost='20 Momentum', cooldown=2, tags=['control' if role=='Controller' else 'role-technique', role.lower()], effect=f"Apply {effect_theme}; also builds 10 {personal_resource} when it changes enemy intent or breaks an objective action.", scaling='70% attack plus role utility scaling from energy', counterplay='Interrupt before resolution, spread formations, or bait the cooldown.'),
+        dict(name=technique_name, slot='Technique', unlockLevel=4, cost='20 Momentum', cooldown=2, tags=['control' if role=='Controller' else 'role-technique', role.lower()], effect=f"Apply {effect_theme}; also builds 10 {personal_resource} when it changes enemy intent or breaks an objective action.", scaling='70% attack plus role utility scaling from energy', counterplay='Interrupt before resolution, spread battle patterns, or bait the cooldown.'),
         dict(name=signature_name, slot='Signature', unlockLevel=12, cost='45 Momentum + 25 Divinity', cooldown=4, tags=['signature', role.lower(), faction.lower().replace(' ','-')], effect=f"Spend stored {personal_resource} to create a two-round battlefield rule around {terms['terrain']}; enemies receive a readable counter-window before the strongest effect lands.", scaling='140% attack; utility duration +1 at mastery tier 4', counterplay='Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn.'),
         dict(name=ascension_name, slot='Ascension', unlockLevel=30, cost='100 Divinity', cooldown='once per battle', tags=['ultimate','ascendant'], effect=f"Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered {personal_resource}, and one mythic reaction override. Ends with a one-round recovery risk.", scaling='Does not stack with external ultimate buffs', counterplay='Survive the window, deny objectives during recovery, or force defensive reaction spending.')
     ]

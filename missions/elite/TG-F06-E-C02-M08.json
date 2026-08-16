@@ -8,10 +8,10 @@
   "missionNumber": 8,
   "missionInChapter": 4,
   "title": "Elite: Beacon Stairs Above Silence: Broken Witness",
-  "description": "Beacon Stairs Above Silence unfolds across floating beacon stairways with glass bridges and radiant lock sigils, pushing a 5-Titan Empyrean Titan to prove protection, order-locks, shields, anti-chaos control, battle lineless aura play. without violating established Realm canon.",
+  "description": "Beacon Stairs Above Silence unfolds across floating beacon stairways with glass bridges and radiant lock sigils, pushing a one active Empyrean Titan to prove protection, order-locks, shields, anti-chaos control, battle lineless aura play. without violating established Realm canon.",
   "lore": "Beacon Stairs Above Silence: Broken Witness advances Empyrean Choir Vault: The Radiant Hierarchies ascend a broken heaven-engine where order can stabilize worlds or erase dissonant survivors. It directly tests the faction tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.",
   "recommendedPower": 970,
-  "teamSize": 5,
+  "activeTitanCount": 1,
   "encouragedTitanRoles": [
     "radiant protector",
     "edict controller",
@@ -57,7 +57,7 @@
   "specialRules": [
     "Choir Lock: beacon timing shields battle line if objectives resolve in order.",
     "Radiant Edict: structured actions reduce chaos effects and protect allies.",
-    "5-Titan standard Titan",
+    "one active standard Titan",
     "Elite Hazard: secondary realm pressure starts active.",
     "Elite Command: enemy support persists until objective action breaks the source."
   ],
@@ -84,7 +84,7 @@
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
-      "one": "Primary completed under severe casualty or turn pressure"
+      "one": "Primary completed under severe integrity or turn pressure"
     }
   },
   "codexUnlocks": [
@@ -100,7 +100,7 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "squadDesignNotes": "Balanced for the standard 5-Titan Titan; special future modes may override team size explicitly.",
+  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
   "eliteRemixOf": "TG-F06-C02-M08",
   "meaningfulDifferences": [
     "Secondary realm hazard active from opening turn",
@@ -145,6 +145,12 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
-  }
+    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+  },
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  },
+  "teamSize": 1
 }

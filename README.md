@@ -82,7 +82,7 @@ Current canon is locked around:
 
 - Seven playable mythological Realms
 - Nine Titans per Realm
-- Five-Titan strike forces
+- One-active-Titan chosen Titan deployments
 - No playable non-Titan entries in the current format
 - No normal units in the current format
 - No sci-fi

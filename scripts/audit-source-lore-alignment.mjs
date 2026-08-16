@@ -5,7 +5,7 @@ const asText = (v) => JSON.stringify(v);
 const includesAny = (s, arr) => arr.some((x) => s.toLowerCase().includes(x.toLowerCase()));
 const missingTerms = (s, arr) => arr.filter((x) => !s.toLowerCase().includes(x.toLowerCase()));
 const sourcePattern = /source culture|source-culture|source cultures|humans later copied|Earth legend is (only )?the echo|Earth mythology is (only )?the later echo|Realm culture is the source|original source/i;
-const oldScalePattern = /\b(5-Titan|five Titans?|three-Titan|three Titans?)\b/i;
+const oldScalePattern = /\b(one-active-Titan|one active Titan?|three-Titan|three Titans?)\b/i;
 const staleGenericPattern = /Low-tier gear component|not rewriting established Canon|distant pyramids|color language|museum version|generic RPG set dressing without faction/i;
 
 const factionCanon = {

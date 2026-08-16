@@ -8,10 +8,10 @@
   "missionNumber": 7,
   "missionInChapter": 3,
   "title": "Chains Under Verdict: Hidden Law",
-  "description": "Chains Under Verdict unfolds across contract pit where hellfire chains pull careless Titans into verdict lanes, pushing a 5-Titan Infernal Dominion Titan to prove aggression, debuffs, pulls, execution, burn pressure, power through risk. without violating established Realm canon.",
+  "description": "Chains Under Verdict unfolds across contract pit where hellfire chains pull careless Titans into verdict lanes, pushing a one active Infernal Dominion Titan to prove aggression, debuffs, pulls, execution, burn pressure, power through risk. without violating established Realm canon.",
   "lore": "Chains Under Verdict: Hidden Law advances Cinders of Dominion: The Black Iron Court turns Gate wounds into bargains, proving ambition can defend a Realm only when power accepts consequence. It directly tests the faction tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.",
   "recommendedPower": 679,
-  "teamSize": 5,
+  "activeTitanCount": 1,
   "encouragedTitanRoles": [
     "obsidian executioner",
     "chain pull controller",
@@ -25,7 +25,7 @@
     "primary": "Cleanse the Gate wound without breaking Infernal Dominion realm law.",
     "optional": [
       "Complete before turn 11",
-      "Keep at least four Titans standing",
+      "Keep your active Titan above 40% integrity",
       "Trigger at least two Infernal Dominion faction mechanics"
     ]
   },
@@ -52,7 +52,7 @@
   "specialRules": [
     "Bargain Mark: accepting risk creates stronger rewards but harsher enemy turns.",
     "Dominion Flame: decisive aggression turns enemy weakness into momentum.",
-    "5-Titan standard Titan"
+    "one active standard Titan"
   ],
   "victoryConditions": [
     "Cleanse the Gate wound without breaking Infernal Dominion realm law."
@@ -77,7 +77,7 @@
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
-      "one": "Primary completed under severe casualty or turn pressure"
+      "one": "Primary completed under severe integrity or turn pressure"
     }
   },
   "codexUnlocks": [
@@ -93,7 +93,7 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "squadDesignNotes": "Balanced for the standard 5-Titan Titan; special future modes may override team size explicitly.",
+  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
   "tacticalProfile": {
     "problemTags": [
       "heavily_armored_enemies",
@@ -131,6 +131,12 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
-  }
+    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+  },
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  },
+  "teamSize": 1
 }

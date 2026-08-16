@@ -8,7 +8,7 @@ const distance = (a,b)=>Math.abs(a.x-b.x)+Math.abs(a.y-b.y);
 const living = s => s.enemies.filter(e=>e.hp>0);
 const currentSpace = s => s.terrain.spaces.find(sp=>key(sp.position)===key(s.titan.position));
 const ARCHETYPE_BUDGETS = Object.freeze({
-  SWARMER:{ hp:0.82, damage:0.82, armor:0.75, resistance:0.75, threat:1, countPressure:1.15, mechanics:['formation spacing','execution routing'] },
+  SWARMER:{ hp:0.82, damage:0.82, armor:0.75, resistance:0.75, threat:1, countPressure:1.15, mechanics:['battle pattern spacing','execution routing'] },
   BRUTE:{ hp:1.25, damage:1.18, armor:1.28, resistance:1.0, threat:2.1, countPressure:0.9, mechanics:['guard break','objective denial'] },
   HUNTER:{ hp:0.92, damage:1.05, armor:0.8, resistance:1.0, threat:1.4, countPressure:1.0, mechanics:['range pressure','line of sight'] },
   CONTROLLER:{ hp:1.0, damage:0.86, armor:0.95, resistance:1.18, threat:1.7, countPressure:0.9, mechanics:['zone denial','objective routing'] },

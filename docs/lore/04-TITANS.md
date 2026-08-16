@@ -18,12 +18,12 @@ Battlefield role defines stat budget and counterplay.
 
 No Titan should exist only because it looks cool. Every Titan needs a civilization role, mythological archetype, battlefield purpose, and visual identity.
 
-## Strike Force Rule
+## Chosen Titan Rule
 
 Current format:
 
 - 9 Titans per playable Realm
-- 5 active Titan slots in a strike force
+- 5 active Titan slots in a chosen Titan
 - No playable non-Titan entries
 - No normal units
 

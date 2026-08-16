@@ -8,10 +8,10 @@
   "missionNumber": 16,
   "missionInChapter": 4,
   "title": "Elite: Shrine Law Under Teeth: War Memory",
-  "description": "Shrine Law Under Teeth unfolds across inner shrine court where spirit contracts become tactical boundaries, pushing a 5-Titan Kami Titan to prove precise control, repositioning, evasion, spirit terrain, disciplined burst. without violating established Realm canon.",
+  "description": "Shrine Law Under Teeth unfolds across inner shrine court where spirit contracts become tactical boundaries, pushing a one active Kami Titan to prove precise control, repositioning, evasion, spirit terrain, disciplined burst. without violating established Realm canon.",
   "lore": "Shrine Law Under Teeth: War Memory advances Kami Mirror Tempest: The Sacred Kingdoms test whether the Creator can cleanse Gate reflections without breaking shrine law or spirit contracts. It directly tests the faction tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.",
   "recommendedPower": 1107,
-  "teamSize": 5,
+  "activeTitanCount": 1,
   "encouragedTitanRoles": [
     "masked defender",
     "spirit repositioner",
@@ -57,7 +57,7 @@
   "specialRules": [
     "Spirit Contract: objectives must be cleansed without desecrating shrine markers.",
     "Sacred Balance: careful positioning unlocks spirit precision effects.",
-    "5-Titan standard Titan",
+    "one active standard Titan",
     "Elite Hazard: secondary realm pressure starts active.",
     "Elite Command: enemy support persists until objective action breaks the source."
   ],
@@ -84,7 +84,7 @@
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
-      "one": "Primary completed under severe casualty or turn pressure"
+      "one": "Primary completed under severe integrity or turn pressure"
     }
   },
   "codexUnlocks": [
@@ -100,7 +100,7 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "squadDesignNotes": "Balanced for the standard 5-Titan Titan; special future modes may override team size explicitly.",
+  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
   "eliteRemixOf": "TG-F04-C04-M16",
   "meaningfulDifferences": [
     "Secondary realm hazard active from opening turn",
@@ -145,6 +145,12 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
-  }
+    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+  },
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  },
+  "teamSize": 1
 }

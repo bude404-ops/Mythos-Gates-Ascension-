@@ -69,7 +69,7 @@ Every Titan weapon, armor body, resonance core, basic, technique, signature, rea
 - Weapon pattern: Goetic Chain-Crown Blade
 - Armor pattern: Volcanic Glass Debtor Plate
 - Core pattern: Blood-Wax Infernal Ledger Core
-- Movement: Abyssal Clause Step
+- Movement: Infernal Clause Step
 - Reaction: Chain-Lien Reversal
 - Execution: Collect the Soul Clause
 - Visual rule: black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchy, ash velvet, hellfire clauses

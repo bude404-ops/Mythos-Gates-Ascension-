@@ -452,7 +452,7 @@ if(data.endgameDashboard.sampleState && JSON.stringify(data.endgameDashboard.sam
 
 
 
-for (const file of ['index.html','game/index.html','game/tactical-map-prototype.html','titan-gates-dev-platform.html']) if(!exists(file)) fail(`Missing required HTML file ${file}`);
+for (const file of ['index.html','game/index.html','game/tactical-map-prototype.html','mini-app/titan-gates-ascension.html']) if(!exists(file)) fail(`Missing required HTML file ${file}`);
 const game = fs.readFileSync(path.join(root,'game/index.html'),'utf8');
 const hubRuntime = fs.readFileSync(path.join(root,'game/command-hub-runtime.mjs'),'utf8');
 if(!game.includes('OPEN THE TITAN GATE') || !game.includes('createCommandHubRuntime') || !game.includes('Command Hub')) fail('Playable Command Hub integrity check failed');

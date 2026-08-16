@@ -8,10 +8,10 @@
   "missionNumber": 9,
   "missionInChapter": 1,
   "title": "The Elder Grove Bleeds: Threshold Sign",
-  "description": "The Elder Grove Bleeds unfolds across elder grove wound with blackened bark and regrowing cover, pushing a 5-Titan Tuatha Titan to prove adaptation, healing, roots, terrain control, endurance through life systems. without violating established Realm canon.",
+  "description": "The Elder Grove Bleeds unfolds across elder grove wound with blackened bark and regrowing cover, pushing a one active Tuatha Titan to prove adaptation, healing, roots, terrain control, endurance through life systems. without violating established Realm canon.",
   "lore": "The Elder Grove Bleeds: Threshold Sign advances Roots Below the Gate: Avalora reveals that Gate wounds can be healed only if living terrain is treated as ally, witness, and battlefield at once. It directly tests the faction tension: Their memory is power, but it can become vengeance when old wounds refuse to compost.",
   "recommendedPower": 677,
-  "teamSize": 5,
+  "activeTitanCount": 1,
   "encouragedTitanRoles": [
     "living-wood defender",
     "root controller",
@@ -25,7 +25,7 @@
     "primary": "Secure the The Thorn-Memory Gate approach before Hollow pressure rewrites the field.",
     "optional": [
       "Complete before turn 12",
-      "Keep at least four Titans standing",
+      "Keep your active Titan above 40% integrity",
       "Trigger at least two Tuatha faction mechanics"
     ]
   },
@@ -52,7 +52,7 @@
   "specialRules": [
     "Root Memory: repeated routes awaken roots that protect allies or trap enemies.",
     "Living Grove: terrain and sustain effects grow stronger over time.",
-    "5-Titan standard Titan"
+    "one active standard Titan"
   ],
   "victoryConditions": [
     "Secure the The Thorn-Memory Gate approach before Hollow pressure rewrites the field."
@@ -77,7 +77,7 @@
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
-      "one": "Primary completed under severe casualty or turn pressure"
+      "one": "Primary completed under severe integrity or turn pressure"
     }
   },
   "codexUnlocks": [
@@ -93,7 +93,7 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "squadDesignNotes": "Balanced for the standard 5-Titan Titan; special future modes may override team size explicitly.",
+  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
   "tacticalProfile": {
     "problemTags": [
       "fast_enemies",
@@ -131,6 +131,12 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
-  }
+    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+  },
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  },
+  "teamSize": 1
 }

@@ -11,7 +11,7 @@
   "description": "Aten Ra advances through floodplain mirrors, collapsing bridges, and corrupted river channels while the Gate tests whether solar law can hold under pressure.",
   "lore": "This mission shows the Sun Realm refusing panic: law, river, and battle line answer the Gate wound without rewriting established Canon.",
   "recommendedPower": 450,
-  "teamSize": 5,
+  "activeTitanCount": 1,
   "encouragedTitanRoles": [
     "support guardian",
     "mobile striker",
@@ -23,7 +23,7 @@
     "primary": "Clear the field while maintaining battle line near river-light cover.",
     "optional": [
       "Complete before turn 9",
-      "Keep all five Titans standing",
+      "Keep all one active Titan standing",
       "Trigger at least two faction synergy actions"
     ]
   },
@@ -51,7 +51,7 @@
   "specialRules": [
     "Mirror Orders: enemies copy the last objective interaction unless interrupted.",
     "Anchor Corruption: structures worsen hazards every two turns.",
-    "5-Titan standard Titan"
+    "one active standard Titan"
   ],
   "victoryConditions": [
     "Clear the field while maintaining battle line near river-light cover."
@@ -76,7 +76,7 @@
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
-      "one": "Primary completed with one Titan standing or severe turn pressure"
+      "one": "Primary completed with the active Titan standing under severe turn pressure"
     }
   },
   "codexUnlocks": [],
@@ -89,7 +89,7 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "squadDesignNotes": "Balanced for the standard 5-Titan Titan; special future modes may override team size explicitly.",
+  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
   "tacticalProfile": {
     "problemTags": [
       "fast_enemies",
@@ -127,6 +127,12 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
-  }
+    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+  },
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  },
+  "teamSize": 1
 }

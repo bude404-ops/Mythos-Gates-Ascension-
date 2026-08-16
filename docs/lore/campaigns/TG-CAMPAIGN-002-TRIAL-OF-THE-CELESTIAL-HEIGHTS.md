@@ -12,7 +12,7 @@ A Gate path forms across high air, marble platforms, storm-root bridges, and old
 
 Neither side is lying. Both remember a different wound.
 
-The Creator's strike force enters a trial already poisoned by a Forgotten banner — a remnant from a pre-Collapse war that both Realms deny starting. The danger is not merely combat. The danger is that pride and oath may be pushed into reenacting an old catastrophe.
+The Creator's chosen Titan enters a trial already poisoned by a Forgotten banner — a remnant from a pre-Collapse war that both Realms deny starting. The danger is not merely combat. The danger is that pride and oath may be pushed into reenacting an old catastrophe.
 
 ## Campaign Threat Fit
 

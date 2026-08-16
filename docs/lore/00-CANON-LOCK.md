@@ -9,9 +9,9 @@ The current canon is built around:
 - 8 storyline faction layers: 7 playable mythological Realms plus 1 non-playable campaign threat layer
 - 7 playable mythological Realms
 - 9 Titans per playable Realm
-- 5-Titan strike forces
+- one-active-Titan chosen Titan deployments
 - No playable non-Titan entries in the current format
-- No non-Titan battle formations in the current format
+- No non-Titan battle battle patterns in the current format
 - No sci-fi
 - No extradimensional beings
 - No futuristic craft
@@ -32,16 +32,16 @@ Earth myths are human interpretations of real extradimensional beings.
 
 Each playable Realm has 9 Titans. The eighth storyline layer is the campaign threat layer and does not add a normal playable roster.
 
-Players build 5-Titan strike forces from a Realm's Titan collection or from approved campaign strike-force rules.
+Players build one-active-Titan chosen Titan deployments from a Realm's Titan collection or from approved campaign strike-force rules.
 
 The player commands only Titans in the current format.
 
 There are:
 
 - 0 playable non-Titan entries per faction
-- 0 non-Titan battle formations per faction
+- 0 non-Titan battle battle patterns per faction
 - 9 collectible Titans per faction
-- 5 active Titan slots in a strike force
+- 5 active Titan slots in a chosen Titan
 
 The design goal is encounter-specific team building.
 

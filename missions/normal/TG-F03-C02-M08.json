@@ -8,10 +8,10 @@
   "missionNumber": 8,
   "missionInChapter": 4,
   "title": "Statues of Jealous Victory: Broken Witness",
-  "description": "Statues of Jealous Victory unfolds across mirror-victory hall with living statue lanes and polished judgment floors, pushing a 5-Titan Olympian Titan to prove elite balanced pressure, precision, dueling, morale momentum. without violating established Realm canon.",
+  "description": "Statues of Jealous Victory unfolds across mirror-victory hall with living statue lanes and polished judgment floors, pushing a one active Olympian Titan to prove elite balanced pressure, precision, dueling, morale momentum. without violating established Realm canon.",
   "lore": "Statues of Jealous Victory: Broken Witness advances Laurel Senate Trials: Olympus turns the reopened Gate into public trial law, forcing glory to become defense instead of vanity. It directly tests the faction tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.",
   "recommendedPower": 650,
-  "teamSize": 5,
+  "activeTitanCount": 1,
   "encouragedTitanRoles": [
     "frontline champion",
     "precision duelist",
@@ -25,7 +25,7 @@
     "primary": "Defeat the chapter threat and preserve the faction doctrine under pressure.",
     "optional": [
       "Complete before turn 11",
-      "Keep at least four Titans standing",
+      "Keep your active Titan above 40% integrity",
       "Trigger at least two Olympian faction mechanics"
     ]
   },
@@ -57,7 +57,7 @@
   "specialRules": [
     "Olympian Trial: public belief empowers clean victories but punishes reckless overreach.",
     "Laurel Supremacy: clean objective execution chains morale and precision bonuses.",
-    "5-Titan standard Titan"
+    "one active standard Titan"
   ],
   "victoryConditions": [
     "Defeat the chapter threat and preserve the faction doctrine under pressure."
@@ -82,7 +82,7 @@
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
-      "one": "Primary completed under severe casualty or turn pressure"
+      "one": "Primary completed under severe integrity or turn pressure"
     }
   },
   "codexUnlocks": [
@@ -98,7 +98,7 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "squadDesignNotes": "Balanced for the standard 5-Titan Titan; special future modes may override team size explicitly.",
+  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
   "tacticalProfile": {
     "problemTags": [
       "fast_enemies",
@@ -136,6 +136,12 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
-  }
+    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+  },
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  },
+  "teamSize": 1
 }

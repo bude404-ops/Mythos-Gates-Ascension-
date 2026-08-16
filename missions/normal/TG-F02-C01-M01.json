@@ -8,10 +8,10 @@
   "missionNumber": 1,
   "missionInChapter": 1,
   "title": "The First Oath Sparks",
-  "description": "Oath Under Thunder: The First Oath Sparks unfolds across storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span, pushing the 5-Titan Asgardian Titan to convert endurance into decisive counterpressure.",
+  "description": "Oath Under Thunder: The First Oath Sparks unfolds across storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span, pushing the one active Asgardian Titan to convert endurance into decisive counterpressure.",
   "lore": "The First Oath Sparks advances the Storm-Oath Covenant arc: the Gate tries to harvest Asgardian vows, while Valhalla law insists courage must remain chosen responsibility.",
   "recommendedPower": 428,
-  "teamSize": 1,
+  "activeTitanCount": 1,
   "encouragedTitanRoles": [
     "storm-oath breaker",
     "survivable objective holder",
@@ -23,7 +23,7 @@
     "primary": "Complete The First Oath Sparks with one active Titan while reading storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span and preserving faction doctrine.",
     "optional": [
       "Complete before turn 10",
-      "Keep at least four Titan standing",
+      "Keep your active Titan above 40% integrity",
       "Trigger at least two Oathbound counterattacks",
       "Trigger at least one Momentum or Divinity decision before victory"
     ]
@@ -50,7 +50,7 @@
   "turnLimit": 11,
   "specialRules": [
     "Storm Oath: Momentum surges after decisive movement through exposed lightning lanes.",
-    "Oathbound Guard: Titan that survive damage near oath-stones empower their next committed strike.",
+    "Oathbound Guard: Titans that survive damage near oath-stones empower their next committed strike.",
     "Oathbound: surviving damage strengthens the next committed strike.",
     "Solo Titanic Scale: one active Titan occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
   ],
@@ -79,7 +79,7 @@
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
-      "one": "Primary completed under severe casualty or turn pressure"
+      "one": "Primary completed under severe integrity or turn pressure"
     }
   },
   "codexUnlocks": [
@@ -95,12 +95,12 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "squadDesignNotes": "Balanced for the standard 5-Titan Titan; special future modes may override team size explicitly.",
+  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
   "chapterId": "TG-F02-CH01",
   "difficulty": "Normal",
   "activeTitanPolicy": {
     "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
-    "squadCombat": "FORBIDDEN_FOR_STANDARD_MISSIONS",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
     "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
   },
   "tacticalProfile": {
@@ -148,6 +148,7 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only — any valid active Titan can attempt the mission."
-  }
+    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+  },
+  "teamSize": 1
 }

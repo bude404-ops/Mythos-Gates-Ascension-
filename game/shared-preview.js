@@ -124,7 +124,7 @@ export function renderGameScreen(data, state = {}) {
     body = fullFlowPreview(data, {...state, devMode: dev});
   } else if (screen === 'victory' || screen === 'defeat') {
     title = screen === 'victory' ? 'Victory' : 'Defeat';
-    body = `<div class="result-card ${screen}"><h3>${screen === 'victory' ? 'Gate Sealed' : 'Strike Force Broken'}</h3><p>${screen === 'victory' ? 'Rewards, Codex unlocks, and campaign progress preview.' : 'Retry, inspect lineup, and adjust Titan selection.'}</p><button>${screen === 'victory' ? 'Continue' : 'Retry'}</button></div>`;
+    body = `<div class="result-card ${screen}"><h3>${screen === 'victory' ? 'Gate Sealed' : 'Chosen Titan Broken'}</h3><p>${screen === 'victory' ? 'Rewards, Codex unlocks, and campaign progress preview.' : 'Retry, inspect lineup, and adjust Titan selection.'}</p><button>${screen === 'victory' ? 'Continue' : 'Retry'}</button></div>`;
   } else if (screen === 'codex') {
     title = 'Codex';
     body = `<div class="campaign-list">${data['lore-index'].map(l => `<article class="game-card"><p class="micro">${esc(l.id)} · ${esc(l.category)}</p><h3>${esc(l.title)}</h3><p>${esc(l.summary)}</p></article>`).join('')}</div>`;
