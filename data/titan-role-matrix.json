@@ -1,8 +1,8 @@
 {
   "id": "TG-TITAN-ROLE-MATRIX-001",
-  "version": "0.9.2",
-  "generated": "2026-08-11T20:38:00Z",
-  "directive": "Every existing Titan receives a clear solo-combat collection reason while preserving existing canon fields and IDs.",
+  "version": "0.9.3",
+  "generated": "2026-08-16T17:45:00Z",
+  "directive": "One-word canon Titan names with updated unique mechanics tied to solo gameplay, role payoff, faction terrain, and counterplay.",
   "count": 63,
   "titans": [
     {
@@ -13,7 +13,7 @@
       "rarity": "Legendary",
       "previousRole": "Defender",
       "combatIdentity": "frontline solar/order anchor",
-      "uniqueMechanic": "AtenRa's Solar Power: a solo charge meter that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Atenra's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Juggernaut"
@@ -37,7 +37,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Aten Ra gear modifies Defender mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Defender Solar Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -45,7 +45,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings long survival, objective holding, hazard endurance without making the player's main Titan obsolete.",
+      "collectionReason": "Brings long survival, objective holding, hazard endurance through Atenra's Solar Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Aten-Ra — Ma’at-Weighted Strike Anchor",
@@ -67,7 +67,7 @@
       "rarity": "Epic",
       "previousRole": "Battery",
       "combatIdentity": "resource engine specialist",
-      "uniqueMechanic": "Khemet's Solar Power: a solo mark cycle that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Khemet's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Arcanist",
         "Reaver"
@@ -91,7 +91,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Aten Ra gear modifies Battery mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Battery Solar Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -99,7 +99,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions without making the player's main Titan obsolete.",
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions through Khemet's Solar Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Khemet — Ma’at-Weighted Strike Kindle",
@@ -121,7 +121,7 @@
       "rarity": "Epic",
       "previousRole": "Controller",
       "combatIdentity": "terrain and movement manipulator",
-      "uniqueMechanic": "Nefra's Solar Power: a solo terrain imprint that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Nefra's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Controller",
         "Arcanist"
@@ -145,7 +145,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Aten Ra gear modifies Controller mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Controller Solar Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -153,7 +153,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial without making the player's main Titan obsolete.",
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial through Nefra's Solar Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Nefra — Ma’at-Weighted Strike Vector",
@@ -175,7 +175,7 @@
       "rarity": "Rare",
       "previousRole": "Breaker",
       "combatIdentity": "armor and structure destroyer",
-      "uniqueMechanic": "Orru's Solar Power: a solo parry ladder that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Orru's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Titan exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Destroyer",
         "Duelist"
@@ -199,7 +199,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Aten Ra gear modifies Breaker mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Breaker Solar Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -207,7 +207,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases without making the player's main Titan obsolete.",
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases through Orru's Solar Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Orru — Ma’at-Weighted Strike Rend",
@@ -229,7 +229,7 @@
       "rarity": "Epic",
       "previousRole": "Disruptor",
       "combatIdentity": "enemy plan breaker",
-      "uniqueMechanic": "Sutekh's Solar Power: a solo execution chain that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Sutekh's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and disruptor decisions that place a false timing window that punishes enemy overcommitment. Payoff: break enemy cadence and steal tempo during reaction prompts. Counterplay: patient enemies, cleanses, and baited reactions waste the setup; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Trickster",
         "Reaver"
@@ -253,7 +253,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Aten Ra gear modifies Disruptor mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Disruptor Solar Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -261,7 +261,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial without making the player's main Titan obsolete.",
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial through Sutekh's Solar Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Sutekh — Ma’at-Weighted Strike Sever",
@@ -283,7 +283,7 @@
       "rarity": "Rare",
       "previousRole": "Sustain",
       "combatIdentity": "self-recovery endurance specialist",
-      "uniqueMechanic": "Iset's Solar Power: a solo zone conversion that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Iset's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Arcanist"
@@ -307,7 +307,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Aten Ra gear modifies Sustain mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Sustain Solar Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -315,7 +315,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings attrition, survival, poison/burn fields without making the player's main Titan obsolete.",
+      "collectionReason": "Brings attrition, survival, poison/burn fields through Iset's Solar Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Iset — Ma’at-Weighted Strike Restore",
@@ -337,7 +337,7 @@
       "rarity": "Epic",
       "previousRole": "Artillery",
       "combatIdentity": "wide-area pressure specialist",
-      "uniqueMechanic": "Karnu's Solar Power: a solo curse ledger that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Karnu's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and artillery decisions that charge a sightline, lane, or ritual angle before releasing long-range pressure. Payoff: reward positioning with map-wide objective pressure. Counterplay: engagement, cover shifts, and forced movement shut down the line; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Arcanist",
         "Destroyer"
@@ -361,7 +361,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Aten Ra gear modifies Artillery mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Artillery Solar Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -369,7 +369,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones without making the player's main Titan obsolete.",
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones through Karnu's Solar Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Karnu — Ma’at-Weighted Strike Longshot",
@@ -391,7 +391,7 @@
       "rarity": "Rare",
       "previousRole": "Guardian",
       "combatIdentity": "reaction defense specialist",
-      "uniqueMechanic": "Maahes's Solar Power: a solo stance fuse that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Maahes's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and guardian decisions that intercept a declared threat and store the impact as later utility. Payoff: protect mission objects or civilians while still acting solo. Counterplay: multi-timing attacks and feints pull the guard out of position; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Reaver"
@@ -415,7 +415,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Aten Ra gear modifies Guardian mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Guardian Solar Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -423,7 +423,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings boss duels, counterattack, protection under pressure without making the player's main Titan obsolete.",
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure through Maahes's Solar Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Maahes — Ma’at-Weighted Strike Intercept",
@@ -445,7 +445,7 @@
       "rarity": "Legendary",
       "previousRole": "Assassin",
       "combatIdentity": "mobility execution specialist",
-      "uniqueMechanic": "Amunet's Solar Power: a solo hazard bloom that grows when the Titan uses illuminated terrain to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Amunet's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Assassin",
         "Arcanist"
@@ -469,7 +469,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Aten Ra gear modifies Assassin mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Aten Ra gear modifies Assassin Solar Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -477,7 +477,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations without making the player's main Titan obsolete.",
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations through Amunet's Solar Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Amunet — Ma’at-Weighted Strike Execution",
@@ -499,7 +499,7 @@
       "rarity": "Legendary",
       "previousRole": "Defender",
       "combatIdentity": "frontline solar/order anchor",
-      "uniqueMechanic": "The's Storm Oath: a solo pursuit lock that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Allfather's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Juggernaut"
@@ -523,7 +523,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Asgardian gear modifies Defender mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Asgardian gear modifies Defender Rune Oath decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -531,7 +531,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings long survival, objective holding, hazard endurance without making the player's main Titan obsolete.",
+      "collectionReason": "Brings long survival, objective holding, hazard endurance through Allfather's Rune Oath without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Allfather — Oath-Ring Cleave Anchor",
@@ -553,7 +553,7 @@
       "rarity": "Epic",
       "previousRole": "Battery",
       "combatIdentity": "resource engine specialist",
-      "uniqueMechanic": "Hrothar's Storm Oath: a solo shield fracture that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Hrothar's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Arcanist",
         "Reaver"
@@ -577,7 +577,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Asgardian gear modifies Battery mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Asgardian gear modifies Battery Rune Oath decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -585,7 +585,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions without making the player's main Titan obsolete.",
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions through Hrothar's Rune Oath without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Hrothar — Oath-Ring Cleave Kindle",
@@ -607,7 +607,7 @@
       "rarity": "Epic",
       "previousRole": "Controller",
       "combatIdentity": "terrain and movement manipulator",
-      "uniqueMechanic": "Skeld's Storm Oath: a solo echo clone that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Skeld's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Controller",
         "Arcanist"
@@ -631,7 +631,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Asgardian gear modifies Controller mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Asgardian gear modifies Controller Rune Oath decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -639,7 +639,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial without making the player's main Titan obsolete.",
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial through Skeld's Rune Oath without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Skeld — Oath-Ring Cleave Vector",
@@ -661,7 +661,7 @@
       "rarity": "Rare",
       "previousRole": "Breaker",
       "combatIdentity": "armor and structure destroyer",
-      "uniqueMechanic": "Eirwyn's Storm Oath: a solo range aperture that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Eirwyn's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Titan exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Destroyer",
         "Duelist"
@@ -685,7 +685,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Asgardian gear modifies Breaker mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Asgardian gear modifies Breaker Rune Oath decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -693,7 +693,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases without making the player's main Titan obsolete.",
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases through Eirwyn's Rune Oath without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Eirwyn — Oath-Ring Cleave Rend",
@@ -715,7 +715,7 @@
       "rarity": "Epic",
       "previousRole": "Disruptor",
       "combatIdentity": "enemy plan breaker",
-      "uniqueMechanic": "Mordun's Storm Oath: a solo soul counter that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Mordun's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and disruptor decisions that place a false timing window that punishes enemy overcommitment. Payoff: break enemy cadence and steal tempo during reaction prompts. Counterplay: patient enemies, cleanses, and baited reactions waste the setup; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Trickster",
         "Reaver"
@@ -739,7 +739,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Asgardian gear modifies Disruptor mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Asgardian gear modifies Disruptor Rune Oath decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -747,7 +747,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial without making the player's main Titan obsolete.",
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial through Mordun's Rune Oath without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Mordun — Oath-Ring Cleave Sever",
@@ -769,7 +769,7 @@
       "rarity": "Rare",
       "previousRole": "Sustain",
       "combatIdentity": "self-recovery endurance specialist",
-      "uniqueMechanic": "Veyra's Storm Oath: a solo glory stack that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Veyra's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Arcanist"
@@ -793,7 +793,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Asgardian gear modifies Sustain mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Asgardian gear modifies Sustain Rune Oath decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -801,7 +801,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings attrition, survival, poison/burn fields without making the player's main Titan obsolete.",
+      "collectionReason": "Brings attrition, survival, poison/burn fields through Veyra's Rune Oath without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Veyra — Oath-Ring Cleave Restore",
@@ -823,7 +823,7 @@
       "rarity": "Epic",
       "previousRole": "Artillery",
       "combatIdentity": "wide-area pressure specialist",
-      "uniqueMechanic": "Ragnor's Storm Oath: a solo vow scar that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Ragnor's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and artillery decisions that charge a sightline, lane, or ritual angle before releasing long-range pressure. Payoff: reward positioning with map-wide objective pressure. Counterplay: engagement, cover shifts, and forced movement shut down the line; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Arcanist",
         "Destroyer"
@@ -847,7 +847,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Asgardian gear modifies Artillery mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Asgardian gear modifies Artillery Rune Oath decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -855,7 +855,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones without making the player's main Titan obsolete.",
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones through Ragnor's Rune Oath without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Ragnor — Oath-Ring Cleave Longshot",
@@ -877,7 +877,7 @@
       "rarity": "Rare",
       "previousRole": "Guardian",
       "combatIdentity": "reaction defense specialist",
-      "uniqueMechanic": "Ullr's Storm Oath: a solo root memory that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Ullr's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and guardian decisions that intercept a declared threat and store the impact as later utility. Payoff: protect mission objects or civilians while still acting solo. Counterplay: multi-timing attacks and feints pull the guard out of position; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Reaver"
@@ -901,7 +901,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Asgardian gear modifies Guardian mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Asgardian gear modifies Guardian Rune Oath decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -909,7 +909,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings boss duels, counterattack, protection under pressure without making the player's main Titan obsolete.",
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure through Ullr's Rune Oath without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Ullr — Oath-Ring Cleave Intercept",
@@ -931,7 +931,7 @@
       "rarity": "Legendary",
       "previousRole": "Assassin",
       "combatIdentity": "mobility execution specialist",
-      "uniqueMechanic": "Sigrun's Storm Oath: a solo edict seal that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Sigrun's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Assassin",
         "Arcanist"
@@ -955,7 +955,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Asgardian gear modifies Assassin mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Asgardian gear modifies Assassin Rune Oath decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -963,7 +963,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations without making the player's main Titan obsolete.",
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations through Sigrun's Rune Oath without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Sigrun — Oath-Ring Cleave Execution",
@@ -985,7 +985,7 @@
       "rarity": "Legendary",
       "previousRole": "Defender",
       "combatIdentity": "frontline solar/order anchor",
-      "uniqueMechanic": "Aurelion's Laurel Glory: a solo charge meter that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Aurelion's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Juggernaut"
@@ -1009,7 +1009,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Olympian gear modifies Defender mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Olympian gear modifies Defender Aegis Favor decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1017,7 +1017,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings long survival, objective holding, hazard endurance without making the player's main Titan obsolete.",
+      "collectionReason": "Brings long survival, objective holding, hazard endurance through Aurelion's Aegis Favor without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Aurelion — Aegis Spear Thrust Anchor",
@@ -1039,7 +1039,7 @@
       "rarity": "Epic",
       "previousRole": "Battery",
       "combatIdentity": "resource engine specialist",
-      "uniqueMechanic": "Kallix's Laurel Glory: a solo mark cycle that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Kallix's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Arcanist",
         "Reaver"
@@ -1063,7 +1063,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Olympian gear modifies Battery mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Olympian gear modifies Battery Aegis Favor decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1071,7 +1071,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions without making the player's main Titan obsolete.",
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions through Kallix's Aegis Favor without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Kallix — Aegis Spear Thrust Kindle",
@@ -1093,7 +1093,7 @@
       "rarity": "Epic",
       "previousRole": "Controller",
       "combatIdentity": "terrain and movement manipulator",
-      "uniqueMechanic": "Thyressa's Laurel Glory: a solo terrain imprint that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Thyressa's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Controller",
         "Arcanist"
@@ -1117,7 +1117,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Olympian gear modifies Controller mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Olympian gear modifies Controller Aegis Favor decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1125,7 +1125,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial without making the player's main Titan obsolete.",
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial through Thyressa's Aegis Favor without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Thyressa — Aegis Spear Thrust Vector",
@@ -1147,7 +1147,7 @@
       "rarity": "Rare",
       "previousRole": "Breaker",
       "combatIdentity": "armor and structure destroyer",
-      "uniqueMechanic": "Ilyon's Laurel Glory: a solo parry ladder that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Ilyon's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Titan exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Destroyer",
         "Duelist"
@@ -1171,7 +1171,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Olympian gear modifies Breaker mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Olympian gear modifies Breaker Aegis Favor decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1179,7 +1179,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases without making the player's main Titan obsolete.",
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases through Ilyon's Aegis Favor without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Ilyon — Aegis Spear Thrust Rend",
@@ -1201,7 +1201,7 @@
       "rarity": "Epic",
       "previousRole": "Disruptor",
       "combatIdentity": "enemy plan breaker",
-      "uniqueMechanic": "Nikos's Laurel Glory: a solo execution chain that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Nikos's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and disruptor decisions that place a false timing window that punishes enemy overcommitment. Payoff: break enemy cadence and steal tempo during reaction prompts. Counterplay: patient enemies, cleanses, and baited reactions waste the setup; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Trickster",
         "Reaver"
@@ -1225,7 +1225,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Olympian gear modifies Disruptor mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Olympian gear modifies Disruptor Aegis Favor decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1233,7 +1233,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial without making the player's main Titan obsolete.",
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial through Nikos's Aegis Favor without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Nikos — Aegis Spear Thrust Sever",
@@ -1255,7 +1255,7 @@
       "rarity": "Rare",
       "previousRole": "Sustain",
       "combatIdentity": "self-recovery endurance specialist",
-      "uniqueMechanic": "Dione's Laurel Glory: a solo zone conversion that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Dione's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Arcanist"
@@ -1279,7 +1279,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Olympian gear modifies Sustain mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Olympian gear modifies Sustain Aegis Favor decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1287,7 +1287,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings attrition, survival, poison/burn fields without making the player's main Titan obsolete.",
+      "collectionReason": "Brings attrition, survival, poison/burn fields through Dione's Aegis Favor without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Dione — Aegis Spear Thrust Restore",
@@ -1309,7 +1309,7 @@
       "rarity": "Epic",
       "previousRole": "Artillery",
       "combatIdentity": "wide-area pressure specialist",
-      "uniqueMechanic": "Helior's Laurel Glory: a solo curse ledger that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Helior's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and artillery decisions that charge a sightline, lane, or ritual angle before releasing long-range pressure. Payoff: reward positioning with map-wide objective pressure. Counterplay: engagement, cover shifts, and forced movement shut down the line; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Arcanist",
         "Destroyer"
@@ -1333,7 +1333,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Olympian gear modifies Artillery mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Olympian gear modifies Artillery Aegis Favor decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1341,7 +1341,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones without making the player's main Titan obsolete.",
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones through Helior's Aegis Favor without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Helior — Aegis Spear Thrust Longshot",
@@ -1363,7 +1363,7 @@
       "rarity": "Rare",
       "previousRole": "Guardian",
       "combatIdentity": "reaction defense specialist",
-      "uniqueMechanic": "Pallas's Laurel Glory: a solo stance fuse that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Pallas's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and guardian decisions that intercept a declared threat and store the impact as later utility. Payoff: protect mission objects or civilians while still acting solo. Counterplay: multi-timing attacks and feints pull the guard out of position; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Reaver"
@@ -1387,7 +1387,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Olympian gear modifies Guardian mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Olympian gear modifies Guardian Aegis Favor decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1395,7 +1395,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings boss duels, counterattack, protection under pressure without making the player's main Titan obsolete.",
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure through Pallas's Aegis Favor without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Pallas — Aegis Spear Thrust Intercept",
@@ -1417,7 +1417,7 @@
       "rarity": "Legendary",
       "previousRole": "Assassin",
       "combatIdentity": "mobility execution specialist",
-      "uniqueMechanic": "Eiren's Laurel Glory: a solo hazard bloom that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Eiren's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Assassin",
         "Arcanist"
@@ -1441,7 +1441,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Olympian gear modifies Assassin mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Olympian gear modifies Assassin Aegis Favor decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1449,7 +1449,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations without making the player's main Titan obsolete.",
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations through Eiren's Aegis Favor without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Eiren — Aegis Spear Thrust Execution",
@@ -1471,7 +1471,7 @@
       "rarity": "Legendary",
       "previousRole": "Defender",
       "combatIdentity": "frontline solar/order anchor",
-      "uniqueMechanic": "Amaterion's Spirit Balance: a solo pursuit lock that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Amaterion's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Juggernaut"
@@ -1495,7 +1495,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Kami gear modifies Defender mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Kami gear modifies Defender Spirit Seal decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1503,7 +1503,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings long survival, objective holding, hazard endurance without making the player's main Titan obsolete.",
+      "collectionReason": "Brings long survival, objective holding, hazard endurance through Amaterion's Spirit Seal without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Amaterion — Kagura Spirit Cut Anchor",
@@ -1525,7 +1525,7 @@
       "rarity": "Epic",
       "previousRole": "Battery",
       "combatIdentity": "resource engine specialist",
-      "uniqueMechanic": "Tsukiro's Spirit Balance: a solo shield fracture that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Tsukiro's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Arcanist",
         "Reaver"
@@ -1549,7 +1549,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Kami gear modifies Battery mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Kami gear modifies Battery Spirit Seal decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1557,7 +1557,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions without making the player's main Titan obsolete.",
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions through Tsukiro's Spirit Seal without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Tsukiro — Kagura Spirit Cut Kindle",
@@ -1579,7 +1579,7 @@
       "rarity": "Epic",
       "previousRole": "Controller",
       "combatIdentity": "terrain and movement manipulator",
-      "uniqueMechanic": "Raidenko's Spirit Balance: a solo echo clone that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Raidenko's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Controller",
         "Arcanist"
@@ -1603,7 +1603,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Kami gear modifies Controller mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Kami gear modifies Controller Spirit Seal decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1611,7 +1611,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial without making the player's main Titan obsolete.",
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial through Raidenko's Spirit Seal without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Raidenko — Kagura Spirit Cut Vector",
@@ -1633,7 +1633,7 @@
       "rarity": "Rare",
       "previousRole": "Breaker",
       "combatIdentity": "armor and structure destroyer",
-      "uniqueMechanic": "Mizuka's Spirit Balance: a solo range aperture that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Mizuka's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Titan exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Destroyer",
         "Duelist"
@@ -1657,7 +1657,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Kami gear modifies Breaker mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Kami gear modifies Breaker Spirit Seal decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1665,7 +1665,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases without making the player's main Titan obsolete.",
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases through Mizuka's Spirit Seal without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Mizuka — Kagura Spirit Cut Rend",
@@ -1687,7 +1687,7 @@
       "rarity": "Epic",
       "previousRole": "Disruptor",
       "combatIdentity": "enemy plan breaker",
-      "uniqueMechanic": "Kageyori's Spirit Balance: a solo soul counter that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Kageyori's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and disruptor decisions that place a false timing window that punishes enemy overcommitment. Payoff: break enemy cadence and steal tempo during reaction prompts. Counterplay: patient enemies, cleanses, and baited reactions waste the setup; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Trickster",
         "Reaver"
@@ -1711,7 +1711,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Kami gear modifies Disruptor mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Kami gear modifies Disruptor Spirit Seal decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1719,7 +1719,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial without making the player's main Titan obsolete.",
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial through Kageyori's Spirit Seal without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Kageyori — Kagura Spirit Cut Sever",
@@ -1741,7 +1741,7 @@
       "rarity": "Rare",
       "previousRole": "Sustain",
       "combatIdentity": "self-recovery endurance specialist",
-      "uniqueMechanic": "Hanae's Spirit Balance: a solo glory stack that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Hanae's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Arcanist"
@@ -1765,7 +1765,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Kami gear modifies Sustain mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Kami gear modifies Sustain Spirit Seal decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1773,7 +1773,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings attrition, survival, poison/burn fields without making the player's main Titan obsolete.",
+      "collectionReason": "Brings attrition, survival, poison/burn fields through Hanae's Spirit Seal without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Hanae — Kagura Spirit Cut Restore",
@@ -1795,7 +1795,7 @@
       "rarity": "Epic",
       "previousRole": "Artillery",
       "combatIdentity": "wide-area pressure specialist",
-      "uniqueMechanic": "Onimaru's Spirit Balance: a solo vow scar that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Onimaru's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and artillery decisions that charge a sightline, lane, or ritual angle before releasing long-range pressure. Payoff: reward positioning with map-wide objective pressure. Counterplay: engagement, cover shifts, and forced movement shut down the line; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Arcanist",
         "Destroyer"
@@ -1819,7 +1819,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Kami gear modifies Artillery mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Kami gear modifies Artillery Spirit Seal decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1827,7 +1827,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones without making the player's main Titan obsolete.",
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones through Onimaru's Spirit Seal without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Onimaru — Kagura Spirit Cut Longshot",
@@ -1849,7 +1849,7 @@
       "rarity": "Rare",
       "previousRole": "Guardian",
       "combatIdentity": "reaction defense specialist",
-      "uniqueMechanic": "Korin's Spirit Balance: a solo root memory that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Korin's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and guardian decisions that intercept a declared threat and store the impact as later utility. Payoff: protect mission objects or civilians while still acting solo. Counterplay: multi-timing attacks and feints pull the guard out of position; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Reaver"
@@ -1873,7 +1873,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Kami gear modifies Guardian mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Kami gear modifies Guardian Spirit Seal decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1881,7 +1881,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings boss duels, counterattack, protection under pressure without making the player's main Titan obsolete.",
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure through Korin's Spirit Seal without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Korin — Kagura Spirit Cut Intercept",
@@ -1903,7 +1903,7 @@
       "rarity": "Legendary",
       "previousRole": "Assassin",
       "combatIdentity": "mobility execution specialist",
-      "uniqueMechanic": "Yamabito's Spirit Balance: a solo edict seal that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Yamabito's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Assassin",
         "Arcanist"
@@ -1927,7 +1927,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Kami gear modifies Assassin mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Kami gear modifies Assassin Spirit Seal decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1935,7 +1935,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations without making the player's main Titan obsolete.",
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations through Yamabito's Spirit Seal without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Yamabito — Kagura Spirit Cut Execution",
@@ -1957,7 +1957,7 @@
       "rarity": "Legendary",
       "previousRole": "Defender",
       "combatIdentity": "frontline solar/order anchor",
-      "uniqueMechanic": "Dagoran's Living Grove: a solo charge meter that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Dagoran's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Juggernaut"
@@ -1981,7 +1981,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Tuatha gear modifies Defender mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Tuatha gear modifies Defender Geas Bloom decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -1989,7 +1989,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings long survival, objective holding, hazard endurance without making the player's main Titan obsolete.",
+      "collectionReason": "Brings long survival, objective holding, hazard endurance through Dagoran's Geas Bloom without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Dagoran — Silver-Branch Cut Anchor",
@@ -2011,7 +2011,7 @@
       "rarity": "Epic",
       "previousRole": "Battery",
       "combatIdentity": "resource engine specialist",
-      "uniqueMechanic": "Eryndor's Living Grove: a solo mark cycle that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Eryndor's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Arcanist",
         "Reaver"
@@ -2035,7 +2035,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Tuatha gear modifies Battery mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Tuatha gear modifies Battery Geas Bloom decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2043,7 +2043,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions without making the player's main Titan obsolete.",
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions through Eryndor's Geas Bloom without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Eryndor — Silver-Branch Cut Kindle",
@@ -2065,7 +2065,7 @@
       "rarity": "Epic",
       "previousRole": "Controller",
       "combatIdentity": "terrain and movement manipulator",
-      "uniqueMechanic": "Melian's Living Grove: a solo terrain imprint that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Melian's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Controller",
         "Arcanist"
@@ -2089,7 +2089,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Tuatha gear modifies Controller mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Tuatha gear modifies Controller Geas Bloom decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2097,7 +2097,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial without making the player's main Titan obsolete.",
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial through Melian's Geas Bloom without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Melian — Silver-Branch Cut Vector",
@@ -2119,7 +2119,7 @@
       "rarity": "Rare",
       "previousRole": "Breaker",
       "combatIdentity": "armor and structure destroyer",
-      "uniqueMechanic": "Bran's Living Grove: a solo parry ladder that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Bran's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Titan exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Destroyer",
         "Duelist"
@@ -2143,7 +2143,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Tuatha gear modifies Breaker mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Tuatha gear modifies Breaker Geas Bloom decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2151,7 +2151,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases without making the player's main Titan obsolete.",
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases through Bran's Geas Bloom without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Bran — Silver-Branch Cut Rend",
@@ -2173,7 +2173,7 @@
       "rarity": "Epic",
       "previousRole": "Disruptor",
       "combatIdentity": "enemy plan breaker",
-      "uniqueMechanic": "Nimue's Living Grove: a solo execution chain that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Nimue's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and disruptor decisions that place a false timing window that punishes enemy overcommitment. Payoff: break enemy cadence and steal tempo during reaction prompts. Counterplay: patient enemies, cleanses, and baited reactions waste the setup; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Trickster",
         "Reaver"
@@ -2197,7 +2197,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Tuatha gear modifies Disruptor mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Tuatha gear modifies Disruptor Geas Bloom decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2205,7 +2205,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial without making the player's main Titan obsolete.",
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial through Nimue's Geas Bloom without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Nimue — Silver-Branch Cut Sever",
@@ -2227,7 +2227,7 @@
       "rarity": "Rare",
       "previousRole": "Sustain",
       "combatIdentity": "self-recovery endurance specialist",
-      "uniqueMechanic": "Cernan's Living Grove: a solo zone conversion that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Cernan's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Arcanist"
@@ -2251,7 +2251,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Tuatha gear modifies Sustain mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Tuatha gear modifies Sustain Geas Bloom decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2259,7 +2259,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings attrition, survival, poison/burn fields without making the player's main Titan obsolete.",
+      "collectionReason": "Brings attrition, survival, poison/burn fields through Cernan's Geas Bloom without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Cernan — Silver-Branch Cut Restore",
@@ -2281,7 +2281,7 @@
       "rarity": "Epic",
       "previousRole": "Artillery",
       "combatIdentity": "wide-area pressure specialist",
-      "uniqueMechanic": "Ailbhe's Living Grove: a solo curse ledger that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Ailbhe's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and artillery decisions that charge a sightline, lane, or ritual angle before releasing long-range pressure. Payoff: reward positioning with map-wide objective pressure. Counterplay: engagement, cover shifts, and forced movement shut down the line; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Arcanist",
         "Destroyer"
@@ -2305,7 +2305,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Tuatha gear modifies Artillery mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Tuatha gear modifies Artillery Geas Bloom decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2313,7 +2313,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones without making the player's main Titan obsolete.",
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones through Ailbhe's Geas Bloom without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Ailbhe — Silver-Branch Cut Longshot",
@@ -2335,7 +2335,7 @@
       "rarity": "Rare",
       "previousRole": "Guardian",
       "combatIdentity": "reaction defense specialist",
-      "uniqueMechanic": "Oghma's Living Grove: a solo stance fuse that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Oghma's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and guardian decisions that intercept a declared threat and store the impact as later utility. Payoff: protect mission objects or civilians while still acting solo. Counterplay: multi-timing attacks and feints pull the guard out of position; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Reaver"
@@ -2359,7 +2359,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Tuatha gear modifies Guardian mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Tuatha gear modifies Guardian Geas Bloom decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2367,7 +2367,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings boss duels, counterattack, protection under pressure without making the player's main Titan obsolete.",
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure through Oghma's Geas Bloom without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Oghma — Silver-Branch Cut Intercept",
@@ -2389,7 +2389,7 @@
       "rarity": "Legendary",
       "previousRole": "Assassin",
       "combatIdentity": "mobility execution specialist",
-      "uniqueMechanic": "Tara's Living Grove: a solo hazard bloom that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Tara's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Assassin",
         "Arcanist"
@@ -2413,7 +2413,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Tuatha gear modifies Assassin mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Tuatha gear modifies Assassin Geas Bloom decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2421,7 +2421,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations without making the player's main Titan obsolete.",
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations through Tara's Geas Bloom without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Tara — Silver-Branch Cut Execution",
@@ -2443,7 +2443,7 @@
       "rarity": "Legendary",
       "previousRole": "Defender",
       "combatIdentity": "frontline solar/order anchor",
-      "uniqueMechanic": "Seraphel's Radiant Edict: a solo pursuit lock that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Seraphel's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Juggernaut"
@@ -2467,7 +2467,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Empyrean gear modifies Defender mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Empyrean gear modifies Defender Choir Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2475,7 +2475,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings long survival, objective holding, hazard endurance without making the player's main Titan obsolete.",
+      "collectionReason": "Brings long survival, objective holding, hazard endurance through Seraphel's Choir Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Seraphel — Seraph Edict Lash Anchor",
@@ -2497,7 +2497,7 @@
       "rarity": "Epic",
       "previousRole": "Battery",
       "combatIdentity": "resource engine specialist",
-      "uniqueMechanic": "Caelion's Radiant Edict: a solo shield fracture that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Caelion's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Arcanist",
         "Reaver"
@@ -2521,7 +2521,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Empyrean gear modifies Battery mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Empyrean gear modifies Battery Choir Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2529,7 +2529,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions without making the player's main Titan obsolete.",
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions through Caelion's Choir Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Caelion — Seraph Edict Lash Kindle",
@@ -2551,7 +2551,7 @@
       "rarity": "Epic",
       "previousRole": "Controller",
       "combatIdentity": "terrain and movement manipulator",
-      "uniqueMechanic": "Aurelia's Radiant Edict: a solo echo clone that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Aurelia's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Controller",
         "Arcanist"
@@ -2575,7 +2575,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Empyrean gear modifies Controller mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Empyrean gear modifies Controller Choir Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2583,7 +2583,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial without making the player's main Titan obsolete.",
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial through Aurelia's Choir Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Aurelia — Seraph Edict Lash Vector",
@@ -2605,7 +2605,7 @@
       "rarity": "Rare",
       "previousRole": "Breaker",
       "combatIdentity": "armor and structure destroyer",
-      "uniqueMechanic": "Malachor's Radiant Edict: a solo range aperture that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Malachor's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Titan exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Destroyer",
         "Duelist"
@@ -2629,7 +2629,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Empyrean gear modifies Breaker mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Empyrean gear modifies Breaker Choir Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2637,7 +2637,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases without making the player's main Titan obsolete.",
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases through Malachor's Choir Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Malachor — Seraph Edict Lash Rend",
@@ -2659,7 +2659,7 @@
       "rarity": "Epic",
       "previousRole": "Disruptor",
       "combatIdentity": "enemy plan breaker",
-      "uniqueMechanic": "Elyndra's Radiant Edict: a solo soul counter that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Elyndra's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and disruptor decisions that place a false timing window that punishes enemy overcommitment. Payoff: break enemy cadence and steal tempo during reaction prompts. Counterplay: patient enemies, cleanses, and baited reactions waste the setup; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Trickster",
         "Reaver"
@@ -2683,7 +2683,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Empyrean gear modifies Disruptor mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Empyrean gear modifies Disruptor Choir Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2691,7 +2691,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial without making the player's main Titan obsolete.",
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial through Elyndra's Choir Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Elyndra — Seraph Edict Lash Sever",
@@ -2713,7 +2713,7 @@
       "rarity": "Rare",
       "previousRole": "Sustain",
       "combatIdentity": "self-recovery endurance specialist",
-      "uniqueMechanic": "Orison's Radiant Edict: a solo glory stack that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Orison's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Arcanist"
@@ -2737,7 +2737,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Empyrean gear modifies Sustain mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Empyrean gear modifies Sustain Choir Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2745,7 +2745,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings attrition, survival, poison/burn fields without making the player's main Titan obsolete.",
+      "collectionReason": "Brings attrition, survival, poison/burn fields through Orison's Choir Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Orison — Seraph Edict Lash Restore",
@@ -2767,7 +2767,7 @@
       "rarity": "Epic",
       "previousRole": "Artillery",
       "combatIdentity": "wide-area pressure specialist",
-      "uniqueMechanic": "Vespera's Radiant Edict: a solo vow scar that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Vespera's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and artillery decisions that charge a sightline, lane, or ritual angle before releasing long-range pressure. Payoff: reward positioning with map-wide objective pressure. Counterplay: engagement, cover shifts, and forced movement shut down the line; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Arcanist",
         "Destroyer"
@@ -2791,7 +2791,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Empyrean gear modifies Artillery mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Empyrean gear modifies Artillery Choir Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2799,7 +2799,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones without making the player's main Titan obsolete.",
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones through Vespera's Choir Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Vespera — Seraph Edict Lash Longshot",
@@ -2821,7 +2821,7 @@
       "rarity": "Rare",
       "previousRole": "Guardian",
       "combatIdentity": "reaction defense specialist",
-      "uniqueMechanic": "Axiom's Radiant Edict: a solo root memory that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Axiom's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and guardian decisions that intercept a declared threat and store the impact as later utility. Payoff: protect mission objects or civilians while still acting solo. Counterplay: multi-timing attacks and feints pull the guard out of position; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Reaver"
@@ -2845,7 +2845,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Empyrean gear modifies Guardian mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Empyrean gear modifies Guardian Choir Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2853,7 +2853,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings boss duels, counterattack, protection under pressure without making the player's main Titan obsolete.",
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure through Axiom's Choir Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Axiom — Seraph Edict Lash Intercept",
@@ -2875,7 +2875,7 @@
       "rarity": "Legendary",
       "previousRole": "Assassin",
       "combatIdentity": "mobility execution specialist",
-      "uniqueMechanic": "Theon's Radiant Edict: a solo edict seal that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Theon's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Assassin",
         "Arcanist"
@@ -2899,7 +2899,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Empyrean gear modifies Assassin mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Empyrean gear modifies Assassin Choir Edict decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2907,7 +2907,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations without making the player's main Titan obsolete.",
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations through Theon's Choir Edict without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Theon — Seraph Edict Lash Execution",
@@ -2929,7 +2929,7 @@
       "rarity": "Legendary",
       "previousRole": "Defender",
       "combatIdentity": "frontline solar/order anchor",
-      "uniqueMechanic": "Mordrath's Dominion Flame: a solo charge meter that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Mordrath's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Juggernaut"
@@ -2953,7 +2953,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Defender mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Defender Blood Contract decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -2961,7 +2961,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings long survival, objective holding, hazard endurance without making the player's main Titan obsolete.",
+      "collectionReason": "Brings long survival, objective holding, hazard endurance through Mordrath's Blood Contract without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Mordrath — Black-Iron Clause Cut Anchor",
@@ -2983,7 +2983,7 @@
       "rarity": "Epic",
       "previousRole": "Battery",
       "combatIdentity": "resource engine specialist",
-      "uniqueMechanic": "Varkul's Dominion Flame: a solo mark cycle that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Varkul's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Arcanist",
         "Reaver"
@@ -3007,7 +3007,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Battery mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Battery Blood Contract decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -3015,7 +3015,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions without making the player's main Titan obsolete.",
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions through Varkul's Blood Contract without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Varkul — Black-Iron Clause Cut Kindle",
@@ -3037,7 +3037,7 @@
       "rarity": "Epic",
       "previousRole": "Controller",
       "combatIdentity": "terrain and movement manipulator",
-      "uniqueMechanic": "Nyxara's Dominion Flame: a solo terrain imprint that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Nyxara's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Controller",
         "Arcanist"
@@ -3061,7 +3061,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Controller mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Controller Blood Contract decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -3069,7 +3069,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial without making the player's main Titan obsolete.",
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial through Nyxara's Blood Contract without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Nyxara — Black-Iron Clause Cut Vector",
@@ -3091,7 +3091,7 @@
       "rarity": "Rare",
       "previousRole": "Breaker",
       "combatIdentity": "armor and structure destroyer",
-      "uniqueMechanic": "Azrakar's Dominion Flame: a solo parry ladder that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Azrakar's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Titan exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Destroyer",
         "Duelist"
@@ -3115,7 +3115,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Breaker mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Breaker Blood Contract decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -3123,7 +3123,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases without making the player's main Titan obsolete.",
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases through Azrakar's Blood Contract without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Azrakar — Black-Iron Clause Cut Rend",
@@ -3145,7 +3145,7 @@
       "rarity": "Epic",
       "previousRole": "Disruptor",
       "combatIdentity": "enemy plan breaker",
-      "uniqueMechanic": "Orryx's Dominion Flame: a solo execution chain that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Orryx's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and disruptor decisions that place a false timing window that punishes enemy overcommitment. Payoff: break enemy cadence and steal tempo during reaction prompts. Counterplay: patient enemies, cleanses, and baited reactions waste the setup; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Trickster",
         "Reaver"
@@ -3169,7 +3169,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Disruptor mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Disruptor Blood Contract decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -3177,7 +3177,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial without making the player's main Titan obsolete.",
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial through Orryx's Blood Contract without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Orryx — Black-Iron Clause Cut Sever",
@@ -3199,7 +3199,7 @@
       "rarity": "Rare",
       "previousRole": "Sustain",
       "combatIdentity": "self-recovery endurance specialist",
-      "uniqueMechanic": "Malvera's Dominion Flame: a solo zone conversion that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Malvera's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Arcanist"
@@ -3223,7 +3223,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Sustain mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Sustain Blood Contract decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -3231,7 +3231,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings attrition, survival, poison/burn fields without making the player's main Titan obsolete.",
+      "collectionReason": "Brings attrition, survival, poison/burn fields through Malvera's Blood Contract without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Malvera — Black-Iron Clause Cut Restore",
@@ -3253,7 +3253,7 @@
       "rarity": "Epic",
       "previousRole": "Artillery",
       "combatIdentity": "wide-area pressure specialist",
-      "uniqueMechanic": "Kharon's Dominion Flame: a solo curse ledger that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Kharon's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and artillery decisions that charge a sightline, lane, or ritual angle before releasing long-range pressure. Payoff: reward positioning with map-wide objective pressure. Counterplay: engagement, cover shifts, and forced movement shut down the line; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Arcanist",
         "Destroyer"
@@ -3277,7 +3277,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Artillery mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Artillery Blood Contract decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -3285,7 +3285,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones without making the player's main Titan obsolete.",
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones through Kharon's Blood Contract without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Kharon — Black-Iron Clause Cut Longshot",
@@ -3307,7 +3307,7 @@
       "rarity": "Rare",
       "previousRole": "Guardian",
       "combatIdentity": "reaction defense specialist",
-      "uniqueMechanic": "Sablex's Dominion Flame: a solo stance fuse that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Sablex's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and guardian decisions that intercept a declared threat and store the impact as later utility. Payoff: protect mission objects or civilians while still acting solo. Counterplay: multi-timing attacks and feints pull the guard out of position; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Warden",
         "Reaver"
@@ -3331,7 +3331,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Guardian mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Guardian Blood Contract decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -3339,7 +3339,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings boss duels, counterattack, protection under pressure without making the player's main Titan obsolete.",
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure through Sablex's Blood Contract without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Sablex — Black-Iron Clause Cut Intercept",
@@ -3361,7 +3361,7 @@
       "rarity": "Legendary",
       "previousRole": "Assassin",
       "combatIdentity": "mobility execution specialist",
-      "uniqueMechanic": "Zerath's Dominion Flame: a solo hazard bloom that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Zerath's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
       "soloArchetypes": [
         "Assassin",
         "Arcanist"
@@ -3385,7 +3385,7 @@
         "drain Momentum or Divinity",
         "attack from multiple timings instead of one burst"
       ],
-      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Assassin mechanics rather than sharing generic stat sticks.",
+      "gearIdentity": "Titan-specific Infernal Dominion gear modifies Assassin Blood Contract decisions rather than sharing generic stat sticks.",
       "progressionIdentity": {
         "levelProgression": [],
         "talentTree": {},
@@ -3393,7 +3393,7 @@
         "personalQuest": {},
         "visualEvolution": []
       },
-      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations without making the player's main Titan obsolete.",
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations through Zerath's Blood Contract without making the player's main Titan obsolete.",
       "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
       "sourceCultureAbilities": [
         "Zerath — Black-Iron Clause Cut Execution",
