@@ -33,7 +33,8 @@
     "artwork:import": "node scripts/import-artwork-dropbox.mjs",
     "artwork:finish": "npm run artwork:queue && npm run artwork:import && npm run assets:verify",
     "artwork:auto-import": "npm run artwork:import && npm run build && npm run assets:verify && npm run index:check",
-    "audit:gameplay-balance": "node scripts/audit-gameplay-balance.mjs"
+    "audit:gameplay-balance": "node scripts/audit-gameplay-balance.mjs",
+    "audit:combat-first": "node scripts/audit-combat-first.mjs"
   },
   "engines": {
     "node": ">=20"

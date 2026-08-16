@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "generated": "2026-08-16T18:20:00Z",
   "status": "IMPLEMENTED",
-  "directive": "Keep Titan Gates fun, balanced, challenging, and scalable across campaign missions, raids, weekly trials, ascension floors, async arena snapshots, and future modes without invalidating one-word Titan mechanics.",
+  "directive": "Combat-first balance: the fighting is the hook, tactical mechanics create depth, and progression exists to send players back into Titan battles.",
   "designPillars": [
-    "Every Titan must feel individually powerful without becoming mandatory.",
-    "Challenge comes from readable decisions, resource tension, positioning, and counterplay — not hidden math or raw sponge enemies.",
-    "Momentum/Divinity and each faction mechanic must work in campaign, raid, and repeatable modes through the same stack/spend vocabulary.",
-    "Difficulty scales by encounter verbs, phase density, objectives, hazards, and AI intent clarity before stats increase.",
-    "Mobile sessions must resolve meaningful turns quickly, with tactical depth carried by setup windows and objective pressure."
+    "The battle is the primary screen, memory, and hook; management supports fighting but never replaces it.",
+    "Every Titan must feel individually powerful through animation, impact, enemy reaction, scale, and distinct ability identity.",
+    "Challenge comes from readable decisions, positioning, timing, objectives, enemy behavior, and battlefield interaction before stat inflation.",
+    "Momentum/Divinity and faction mechanics must create in-battle spend/save decisions across campaign, raid, repeatable, and future modes.",
+    "Progression should make the player want to immediately return to battle to see what changed.",
+    "Mobile sessions must resolve meaningful combat turns quickly while keeping tactical depth in setup windows and objective pressure."
   ],
   "currentCoverage": {
     "titans": 63,
@@ -264,6 +265,26 @@
       "AI priority rules",
       "floor-band pressure",
       "raid difficulty tier"
+    ],
+    "combatFeelLevers": [
+      "animation anticipation/release/recovery",
+      "hit stop and screen shake budget",
+      "enemy stagger/knockback reaction",
+      "camera emphasis tier",
+      "environmental reaction tier",
+      "impact VFX/audio layer",
+      "ultimate cinematic threshold",
+      "multi-target payoff clarity"
+    ],
+    "battlefieldDecisionLevers": [
+      "open lane count",
+      "chokepoint pressure",
+      "flank route risk",
+      "elevation advantage",
+      "objective concurrency",
+      "cover rhythm",
+      "hazard telegraph length",
+      "boss arena phase shape"
     ]
   },
   "antiPatterns": [
@@ -273,7 +294,13 @@
     "passive sustain loops that ignore objectives",
     "hidden counters with no visual tell",
     "resource denial stacked with no comeback window",
-    "raid mechanics that bypass solo active-Titan clarity"
+    "raid mechanics that bypass solo active-Titan clarity",
+    "Menu-heavy core loop where players manage stats longer than they fight.",
+    "Titan kits differentiated only by health and damage numbers.",
+    "Beautiful battlefield spaces with no tactical purpose.",
+    "Difficulty driven mainly by enormous enemy health pools.",
+    "Progression systems that feel like spreadsheets before play.",
+    "Basic combat actions hidden behind multiple menus."
   ],
   "telemetry": {
     "requiredEvents": [
@@ -369,6 +396,7 @@
     }
   },
   "sourceDocuments": [
+    "data/combat-first-gameplay-doctrine.json",
     "solo-combat-design-document",
     "enemy-scaling-design-document",
     "enemy-archetype-registry",
@@ -378,5 +406,78 @@
     "mission-tactical-profile-system",
     "titan-role-matrix",
     "titan-enemy-balance-pass"
+  ],
+  "combatFirstDoctrine": {
+    "id": "TG-COMBAT-FIRST-GAMEPLAY-DOCTRINE",
+    "corePrinciple": "The fighting is the hook. Tactical mechanics create depth. Progression creates long-term retention.",
+    "primaryExperience": "The primary screen and primary player memory must be the Titan battle, not menu management.",
+    "combatLoop": [
+      "Choose Titans",
+      "Read the battlefield",
+      "Position",
+      "Engage",
+      "Use abilities",
+      "Make tactical decisions",
+      "Create a big combat moment",
+      "Win/Lose",
+      "Reward",
+      "Upgrade/Unlock",
+      "Return to battle"
+    ],
+    "developmentPriority": [
+      "Combat feel",
+      "Titan identity",
+      "Battlefield interaction",
+      "Tactical decision-making",
+      "Enemy AI",
+      "Ability design",
+      "Progression",
+      "UI polish",
+      "Secondary systems"
+    ],
+    "systemServiceTest": "Every system must make the Titan battle more fun, more tactical, more satisfying, or more replayable. If it does not, reconsider whether it belongs in the core experience."
+  },
+  "combatFirstAcceptanceGates": [
+    {
+      "id": "COMBAT_SCREEN_PRIMARY",
+      "rule": "Playable Ops and future game views must present battle selection/simulation before management statistics.",
+      "severity": "blocker"
+    },
+    {
+      "id": "TITAN_IDENTITY_NOT_STATS_ONLY",
+      "rule": "Titan differentiation must include attack identity, ability behavior, range/mobility/role expression, or battlefield interaction.",
+      "severity": "blocker"
+    },
+    {
+      "id": "BATTLEFIELD_HAS_FUNCTION",
+      "rule": "Battlefield data and mission profiles must expose tactical purpose, objective pressure, or terrain function.",
+      "severity": "blocker"
+    },
+    {
+      "id": "PROGRESSION_SERVES_COMBAT",
+      "rule": "Progression framing must explicitly return the player to battle instead of menu management.",
+      "severity": "warning"
+    },
+    {
+      "id": "DIFFICULTY_NOT_HP_SPONGE",
+      "rule": "Difficulty guidance must prefer AI, positioning, objective, layout, timing, boss, and composition levers before stats.",
+      "severity": "blocker"
+    },
+    {
+      "id": "BIG_MOMENT_DESIGN",
+      "rule": "Combat design must target cinematic memorable events during battles.",
+      "severity": "warning"
+    }
+  ],
+  "playerExperienceQuestions": [
+    "Is the player spending most of their time doing something fun?",
+    "Does combat feel powerful?",
+    "Does positioning matter?",
+    "Do abilities feel different?",
+    "Do Titans feel enormous?",
+    "Does the battlefield matter?",
+    "Are there meaningful decisions?",
+    "Are battles producing memorable moments?",
+    "Would the player willingly play another battle immediately?"
   ]
 }

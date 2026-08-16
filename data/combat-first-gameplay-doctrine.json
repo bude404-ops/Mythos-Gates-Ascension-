@@ -1,0 +1,130 @@
+{
+  "id": "TG-COMBAT-FIRST-GAMEPLAY-DOCTRINE",
+  "version": "1.0.0",
+  "generated": "2026-08-16",
+  "status": "IMPLEMENTED",
+  "corePrinciple": "The fighting is the hook. Tactical mechanics create depth. Progression creates long-term retention.",
+  "primaryExperience": "The primary screen and primary player memory must be the Titan battle, not menu management.",
+  "combatLoop": [
+    "Choose Titans",
+    "Read the battlefield",
+    "Position",
+    "Engage",
+    "Use abilities",
+    "Make tactical decisions",
+    "Create a big combat moment",
+    "Win/Lose",
+    "Reward",
+    "Upgrade/Unlock",
+    "Return to battle"
+  ],
+  "developmentPriority": [
+    "Combat feel",
+    "Titan identity",
+    "Battlefield interaction",
+    "Tactical decision-making",
+    "Enemy AI",
+    "Ability design",
+    "Progression",
+    "UI polish",
+    "Secondary systems"
+  ],
+  "combatFeelRequirements": [
+    "Every attack must communicate physical contact through animation, VFX, hit stop, enemy reaction, and damage feedback.",
+    "Powerful Titan attacks must alter the camera, environment, enemy pose, or battlefield state before the player reads damage numbers.",
+    "Ability availability, cooldown, status effects, and target validity must be visible without hiding the battlefield.",
+    "Combat decisions must be made from the battlefield view whenever possible. Secondary panels explain; they do not replace fighting."
+  ],
+  "titanPowerRules": [
+    "Every Titan needs a recognizable combat silhouette and attack identity beyond damage and health.",
+    "Each Titan kit must express range, mobility, survivability, battlefield interaction, and signature moment potential.",
+    "Legendary scale is shown through enemy reactions, environmental response, large readable animations, and distinct impact cadence.",
+    "No Titan may be differentiated only by stat deltas."
+  ],
+  "tacticalDepthRules": [
+    "Add mechanics only when they create an interesting combat decision.",
+    "A good turn asks where to move, who to attack, whether to spend or save an ability, whether to defend, and how to manipulate enemy position.",
+    "Difficulty should rise through smarter positioning, enemy intent, objective pressure, battlefield layout, timing, and boss mechanics before raw stats.",
+    "Avoid one obvious optimal button by mixing target priority, range pressure, terrain opportunity, cooldown timing, and objective risk."
+  ],
+  "battlefieldRules": [
+    "Every battlefield section must have a gameplay purpose: open combat area, choke, flank, elevation, landmark, hazard, objective zone, or cover rhythm.",
+    "Beautiful environments without tactical function are rejected for core combat arenas.",
+    "3D layouts must preserve Titan scale with readable lanes, large landmarks, and cinematic camera anchors.",
+    "Battlefield interaction must support force movement, area attacks, protection plays, and comeback moments."
+  ],
+  "bigMomentTargets": [
+    "low-health survival",
+    "perfectly timed ability",
+    "devastating ultimate",
+    "multi-enemy hit",
+    "tactical repositioning play",
+    "comeback",
+    "defensive breakthrough",
+    "boss defeat",
+    "Titan protection save",
+    "terrain-triggered attack setup"
+  ],
+  "uiRules": [
+    "Battlefield visibility outranks every secondary menu.",
+    "Basic combat actions must not require multi-menu navigation.",
+    "Primary UI shows Titan, health, movement, targets, ability availability, cooldowns, statuses, and objectives.",
+    "Secondary statistics must be collapsible or contextual and never dominate the battlefield."
+  ],
+  "progressionRules": [
+    "Progression exists to make players excited to return to battle.",
+    "Unlocks, shards, gear, upgrades, faction bonuses, bosses, events, and async defense must each answer what new combat expression they create.",
+    "Reject spreadsheet-feeling progression that delays fighting without changing combat feel.",
+    "Upgrade prompts should make the player want to see what the Titan does in battle."
+  ],
+  "replayabilityRules": [
+    "Replayability must come from enjoyable fighting first, then difficulty, elite encounters, bosses, events, async defense, Titan mastery, team combinations, and battlefield variations.",
+    "Repeat modes must vary tactical problems rather than only increasing stats.",
+    "Campaign completion should open better fights, not just larger checklists."
+  ],
+  "playerExperienceQuestions": [
+    "Is the player spending most of their time doing something fun?",
+    "Does combat feel powerful?",
+    "Does positioning matter?",
+    "Do abilities feel different?",
+    "Do Titans feel enormous?",
+    "Does the battlefield matter?",
+    "Are there meaningful decisions?",
+    "Are battles producing memorable moments?",
+    "Would the player willingly play another battle immediately?"
+  ],
+  "systemServiceTest": "Every system must make the Titan battle more fun, more tactical, more satisfying, or more replayable. If it does not, reconsider whether it belongs in the core experience.",
+  "acceptanceGates": [
+    {
+      "id": "COMBAT_SCREEN_PRIMARY",
+      "rule": "Playable Ops and future game views must present battle selection/simulation before management statistics.",
+      "severity": "blocker"
+    },
+    {
+      "id": "TITAN_IDENTITY_NOT_STATS_ONLY",
+      "rule": "Titan differentiation must include attack identity, ability behavior, range/mobility/role expression, or battlefield interaction.",
+      "severity": "blocker"
+    },
+    {
+      "id": "BATTLEFIELD_HAS_FUNCTION",
+      "rule": "Battlefield data and mission profiles must expose tactical purpose, objective pressure, or terrain function.",
+      "severity": "blocker"
+    },
+    {
+      "id": "PROGRESSION_SERVES_COMBAT",
+      "rule": "Progression framing must explicitly return the player to battle instead of menu management.",
+      "severity": "warning"
+    },
+    {
+      "id": "DIFFICULTY_NOT_HP_SPONGE",
+      "rule": "Difficulty guidance must prefer AI, positioning, objective, layout, timing, boss, and composition levers before stats.",
+      "severity": "blocker"
+    },
+    {
+      "id": "BIG_MOMENT_DESIGN",
+      "rule": "Combat design must target cinematic memorable events during battles.",
+      "severity": "warning"
+    }
+  ],
+  "sourceDirective": "Holder combat-first gameplay design directive, August 16 2026"
+}
