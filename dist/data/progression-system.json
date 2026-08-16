@@ -27,7 +27,14 @@
     "factionTrials",
     "starterTitanChoice",
     "rosterDepthRecommendations",
-    "factionDiscoveryProgress"
+    "factionDiscoveryProgress",
+    "economy.wallets",
+    "economy.energy",
+    "economy.purchases",
+    "economy.transactionLog",
+    "economy.dailyRewards",
+    "economy.battlePass",
+    "economy.cosmetics"
   ],
   "securityRules": [
     "Reject duplicate rewards",
@@ -113,5 +120,15 @@
       "upgrades that change only hidden math",
       "reward loops that delay fighting without adding combat expression"
     ]
-  }
+  },
+  "centralEconomyRef": "data/free-to-play-economy.json",
+  "economyMigration": "Existing Gate Shards, Titan Relics, Ascension Ember, Trial Favor, Raid Tokens, and Signature Alloy are preserved; GOLD, PREMIUM_CURRENCY, ENERGY, and canonical SHARDS are normalized through the unified economy layer.",
+  "freeToPlayProgressionGuardrails": [
+    "cosmetics have no stats",
+    "async arena matchmaking uses earned visible save state",
+    "premium resources require authoritative ledger",
+    "battle pass grants never required for campaign",
+    "paid-exclusive Titans with combat advantage",
+    "permanent cash-only lock"
+  ]
 }

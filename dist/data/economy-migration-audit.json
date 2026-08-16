@@ -1,0 +1,86 @@
+{
+  "id": "TG-ECONOMY-MIGRATION-AUDIT",
+  "version": "1.0.0",
+  "generated": "2026-08-16",
+  "status": "COMPLETE",
+  "directive": "Audit first; consolidate existing economy systems; do not duplicate energy, currencies, rewards, shop, purchases, or battle pass.",
+  "findings": [
+    {
+      "area": "Energy",
+      "existing": "No standalone production energy system found; only generic energy terms in lore/art and one runtime mention. Add one authoritative energy wallet under central economy state.",
+      "action": "CREATE_AUTHORITATIVE_SYSTEM"
+    },
+    {
+      "area": "Gold",
+      "existing": "No authoritative GOLD resource found; existing runtime resources are Gate Shards, Ascension Ember, Titan Relics, Raid Tokens, Signature Alloy, Mastery Seals, Trial Favor.",
+      "action": "ADD_CORE_CURRENCY_AND_MIGRATE_RESOURCE_SCHEMA"
+    },
+    {
+      "area": "Premium currency",
+      "existing": "Existing monetization-policy mentions premium progression and command-hub has premium currency language, but no authoritative wallet/product ledger.",
+      "action": "ADD_LIMITED_EARNABLE_PREMIUM_CURRENCY_WITH_SECURE_PURCHASE_ABSTRACTION"
+    },
+    {
+      "area": "Shards",
+      "existing": "Gate Shards exist in command hub runtime and rewards. Titan unlock shard concept exists but was not centralized.",
+      "action": "CONSOLIDATE_GATE_SHARDS_AS_SHARDS_CORE_CURRENCY"
+    },
+    {
+      "area": "Titan unlocking",
+      "existing": "Progression/onboarding supports unlock concepts and Trial previews. Titans are not payment locked.",
+      "action": "KEEP_AND_BIND_TO_EARNABLE_SHARDS_CAMPAIGN_EVENTS_BOSSES"
+    },
+    {
+      "area": "Gear/upgrades",
+      "existing": "Titan Relics, Signature Alloy, mastery, trial gear, and upgrade philosophy exist.",
+      "action": "KEEP_AS_GAMEPLAY_EARNED_PROGRESS_RESOURCES; PAID_ONLY_ACCELERATES"
+    },
+    {
+      "area": "Campaign rewards",
+      "existing": "Reward cache and reward-system exist; command runtime grants shards/relics/xp.",
+      "action": "UPDATE_REWARD_CONTRACT_TO_USE_GRANT_REWARD_CENTRAL_FUNCTION"
+    },
+    {
+      "area": "Daily rewards",
+      "existing": "No standalone daily reward system found.",
+      "action": "CREATE_CONFIGURABLE_DAILY_REWARD_TRACK_UNDER_CENTRAL_ECONOMY"
+    },
+    {
+      "area": "Events",
+      "existing": "Season/event support exists in season-system and weekly trials.",
+      "action": "CONSOLIDATE_EVENT_REWARDS_IN_ECONOMY_CONFIG"
+    },
+    {
+      "area": "Shop/store",
+      "existing": "Async arena shop rotation and monetization policy references exist; no authoritative shop catalog.",
+      "action": "CREATE_SIMPLE_SHOP_CATALOG_WITH_LIMITS"
+    },
+    {
+      "area": "Ads",
+      "existing": "No ad provider configured; command contracts mention ads as possible rewards.",
+      "action": "CREATE_OPTIONAL_REWARDED_AD_ABSTRACTION_ONLY"
+    },
+    {
+      "area": "Purchases/IAP/payment",
+      "existing": "No payment provider configured; no real purchase integration.",
+      "action": "CREATE_SECURE_PURCHASE_ABSTRACTION_WITH_SERVER_VERIFICATION_REQUIRED"
+    },
+    {
+      "area": "Battle pass",
+      "existing": "season-system has season template with free/premium concepts but no full reward ladder.",
+      "action": "UPDATE_SEASON_SYSTEM_AND_ADD_CONFIGURABLE_PASS_TRACKS"
+    },
+    {
+      "area": "Timers/cooldowns/regeneration",
+      "existing": "Cooldowns exist for combat abilities; no economy regen config.",
+      "action": "ADD_CONFIGURABLE_ENERGY_REGEN_TIMERS_SEPARATE_FROM_COMBAT_COOLDOWNS"
+    }
+  ],
+  "migrationRules": [
+    "Preserve existing player resources and append missing core wallets instead of wiping saves.",
+    "Map TG-RES-GATE-SHARDS to SHARDS in economy views while preserving legacy id compatibility.",
+    "Do not expose development test purchases in production mode.",
+    "All premium purchases require server verification before grant.",
+    "Combat, campaign, Titan trials, raids, and async arena remain playable without purchase."
+  ]
+}

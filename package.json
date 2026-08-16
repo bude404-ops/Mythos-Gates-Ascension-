@@ -34,7 +34,9 @@
     "artwork:finish": "npm run artwork:queue && npm run artwork:import && npm run assets:verify",
     "artwork:auto-import": "npm run artwork:import && npm run build && npm run assets:verify && npm run index:check",
     "audit:gameplay-balance": "node scripts/audit-gameplay-balance.mjs",
-    "audit:combat-first": "node scripts/audit-combat-first.mjs"
+    "audit:combat-first": "node scripts/audit-combat-first.mjs",
+    "audit:f2p-economy": "node scripts/audit-f2p-economy.mjs",
+    "test:f2p-economy": "node scripts/test-f2p-economy.mjs"
   },
   "engines": {
     "node": ">=20"

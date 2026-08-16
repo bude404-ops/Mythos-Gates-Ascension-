@@ -100,6 +100,8 @@ const files = {
   'titan-enemy-balance-pass.json': 'titanEnemyBalancePass',
   'gameplay-balance-framework.json': 'gameplayBalanceFramework',
   'combat-first-gameplay-doctrine.json': 'combatFirstGameplayDoctrine',
+  'economy-migration-audit.json': 'economyMigrationAudit',
+  'free-to-play-economy.json': 'freeToPlayEconomy',
   'solo-battle-state-schema.json': 'soloBattleStateSchema',
   'solo-vertical-slice.json': 'soloVerticalSlice',
   'battlefield-telemetry-contract.json': 'battlefieldTelemetryContract',
