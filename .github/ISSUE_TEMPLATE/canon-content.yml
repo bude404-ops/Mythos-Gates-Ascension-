@@ -1,0 +1,42 @@
+name: Canon or content issue
+description: Report a lore, mission, dialogue, faction, Titan, or continuity problem.
+title: "Canon/content: "
+labels: [canon, content]
+body:
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domain
+      options:
+        - Titan
+        - Faction / Realm
+        - Mission
+        - Dialogue
+        - Map
+        - NPC / Creature
+        - Economy / Progression
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current problem
+      description: What is wrong or contradictory?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected canon-safe state
+      description: Include source IDs if known.
+    validations:
+      required: true
+  - type: checkboxes
+    id: canon-locks
+    attributes:
+      label: Canon locks checked
+      options:
+        - label: One active Titan remains standard combat canon.
+        - label: The Hollow remains non-playable.
+        - label: No legacy contradiction language is reintroduced.

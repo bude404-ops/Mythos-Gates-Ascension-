@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://titan-gates.local/schemas/titan.schema.json",
+  "title": "Titan Gates Titan Record",
+  "type": "object",
+  "required": ["id", "name", "faction", "role"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^TG-TITAN-[0-9]{3}$" },
+    "name": { "type": "string", "minLength": 1 },
+    "faction": { "type": "string", "minLength": 1 },
+    "realm": { "type": "string" },
+    "role": { "type": "string", "minLength": 1 },
+    "rarity": { "type": "string" },
+    "stats": { "type": "object" },
+    "abilities": { "type": ["array", "object"] },
+    "lore": { "type": ["string", "object", "array"] },
+    "canonStatus": { "type": "string" }
+  },
+  "additionalProperties": true
+}

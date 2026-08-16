@@ -15,12 +15,8 @@
 
 ## Validation
 
-- [ ] `npm run build`
-- [ ] `npm run assets:verify`
-- [ ] `npm run index:check`
+- [ ] `npm run precommit:verify`
 - [ ] `node scripts/audit-current-canon.mjs`
-- [ ] `node scripts/secret-scan.mjs`
-- [ ] Browser smoke tests, if UI changed
 
 ## Canon safety
 

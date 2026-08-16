@@ -56,10 +56,20 @@ const server = http.createServer((req, res) => {
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const port = server.address().port;
 
+async function closeServer(){
+  server.closeAllConnections?.();
+  server.closeIdleConnections?.();
+  await new Promise(resolve => server.close(() => resolve()));
+}
+
 async function runBrowserSmoke(){
   const browser = await chromium.launch({ executablePath: '/usr/bin/chromium-browser', args: ['--no-sandbox', '--disable-dev-shm-usage', '--disable-gpu', '--disable-extensions', '--disable-background-networking', '--disable-sync', '--no-first-run', '--no-default-browser-check'] });
   const page = await browser.newPage({ viewport: { width: 390, height: 760 } });
-  await page.route(/https:\/\/(fonts\.googleapis\.com|fonts\.gstatic\.com|cdn\.jsdelivr\.net|static\.print\.world)\//, route => route.abort());
+  await page.route('**/*', route => {
+    const url = route.request().url();
+    if (url.startsWith(`http://127.0.0.1:${port}/`)) return route.continue();
+    return route.fulfill({ status: 204, body: '' });
+  });
   await page.addInitScript(() => localStorage.clear());
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
@@ -137,9 +147,10 @@ let metrics;
 let lastError;
 for (let attempt = 1; attempt <= 3; attempt++) {
   try { metrics = await runBrowserSmoke(); break; }
-  catch (err) { lastError = err; if (!String(err?.message || err).includes('Page crashed') || attempt === 3) throw err; }
+  catch (err) { lastError = err; if (!String(err?.message || err).match(/Page crashed|Target page|browser has been closed|Timeout/i)) break; }
 }
-server.close();
+await closeServer();
+if (!metrics) throw lastError;
 assert.equal(metrics.route, 'command');
 assert.equal(metrics.selectedTitanId, 'TG-TITAN-003');
 assert.equal(metrics.onboarding?.status, 'COMPLETE');

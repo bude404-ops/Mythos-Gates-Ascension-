@@ -32,23 +32,11 @@ jobs:
       - name: Install dependencies
         run: npm ci --ignore-scripts
 
-      - name: Run continuity audit
-        run: npm run audit:continuity
+      - name: Run full production gate
+        run: npm run precommit:verify
 
       - name: Run current canon audit
         run: node scripts/audit-current-canon.mjs
-
-      - name: Build static site
-        run: npm run build
-
-      - name: Check generated index is fresh
-        run: npm run index:check
-
-      - name: Run visual smoke gate
-        run: node scripts/visual-qa-smoke.mjs
-
-      - name: Run secret scan
-        run: node scripts/secret-scan.mjs
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

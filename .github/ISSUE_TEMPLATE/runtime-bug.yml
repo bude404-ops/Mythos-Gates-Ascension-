@@ -1,0 +1,39 @@
+name: Runtime or prototype bug
+description: Report gameplay, UI, build, smoke test, or validation failures.
+title: "Runtime/build: "
+labels: [runtime, bug]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Browser prototype
+        - Mini App
+        - Battle runtime
+        - Campaign flow
+        - Economy / progression
+        - CI / build
+        - Validation script
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: What command or player flow triggered it?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior / logs
+    validations:
+      required: true

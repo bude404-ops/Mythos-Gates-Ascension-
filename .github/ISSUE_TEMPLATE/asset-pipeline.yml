@@ -1,0 +1,40 @@
+name: Asset pipeline issue
+description: Report a problem with 2D art, 3D blueprints, manifests, source files, or handoff packets.
+title: "Asset pipeline: "
+labels: [assets, production]
+body:
+  - type: input
+    id: asset-id
+    attributes:
+      label: Asset ID
+      placeholder: BATTLEFIELD_001, TG-TITAN-001, etc.
+  - type: dropdown
+    id: asset-type
+    attributes:
+      label: Asset type
+      options:
+        - 3D model
+        - Texture / material
+        - Concept art
+        - Animation
+        - VFX / audio
+        - Manifest / registry
+        - External AI packet
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Problem
+      description: Describe the broken reference, missing file, scale issue, material issue, or handoff mismatch.
+    validations:
+      required: true
+  - type: checkboxes
+    id: validation
+    attributes:
+      label: Validation expected
+      options:
+        - label: Asset IDs stay permanent.
+        - label: Registry and manifest are regenerated if needed.
+        - label: Source files stay in approved asset lanes.

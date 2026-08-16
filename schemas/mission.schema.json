@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://titan-gates.local/schemas/mission.schema.json",
+  "title": "Titan Gates Mission Record",
+  "type": "object",
+  "required": ["id", "name"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^TG-F[0-9]{2}-(E-)?C[0-9]{2}-M[0-9]{2}$" },
+    "name": { "type": "string", "minLength": 1 },
+    "faction": { "type": "string" },
+    "chapterId": { "type": "string" },
+    "tier": { "type": "string", "enum": ["NORMAL", "ELITE", "Normal", "Elite"] },
+    "objectives": { "type": ["array", "object"] },
+    "recommendedPower": { "type": ["number", "integer"] },
+    "enemyProfiles": { "type": "array", "items": { "type": "string" } },
+    "rewards": { "type": ["array", "object"] }
+  },
+  "additionalProperties": true
+}

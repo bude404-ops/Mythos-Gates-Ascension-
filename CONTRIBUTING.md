@@ -8,18 +8,11 @@ Run:
 
 ```bash
 npm install
-npm run build
-npm run assets:verify
-npm run index:check
-node scripts/audit-current-canon.mjs
-node scripts/secret-scan.mjs
-```
-
-If your environment has Chromium and Playwright available, also run:
-
-```bash
 npm run precommit:verify
+node scripts/audit-current-canon.mjs
 ```
+
+For focused local checks during development, run the smaller package command matching the files you changed.
 
 ## Source rules
 

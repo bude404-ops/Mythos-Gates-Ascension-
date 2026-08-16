@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://titan-gates.local/schemas/asset-manifest.schema.json",
+  "title": "Titan Gates Asset Manifest",
+  "type": "object",
+  "required": ["assetId"],
+  "properties": {
+    "assetId": { "type": "string", "minLength": 1 },
+    "canonicalEntityId": { "type": "string" },
+    "canonicalName": { "type": "string" },
+    "assetType": { "type": "string" },
+    "status": { "type": "string" },
+    "sourceFiles": { "type": ["array", "object"] },
+    "previewFiles": { "type": ["array", "object"] },
+    "gameReadyFiles": { "type": ["array", "object"] },
+    "dependencies": { "type": ["array", "object"] },
+    "validation": { "type": ["object", "array"] }
+  },
+  "additionalProperties": true
+}

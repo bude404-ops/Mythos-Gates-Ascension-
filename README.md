@@ -31,6 +31,9 @@ campaigns/            Campaign and chapter source records
 data/                 Aggregated source-of-truth JSON used by dashboards and runtime checks
 dialogue/             Mission dialogue source records
 docs/                 Production documentation, lore bible, audits, build notes, handoff policy
+schemas/              Future JSON Schema contract layer for canonical data shapes
+src/                  Future engine-ready module extraction lane
+tests/                Future grouped test suite lane as modules migrate
 game/                 Playable browser prototype and tactical runtimes
 handoff/              Creator, Big Bot, and external AI asset handoff packets
 manifests/            Per-asset manifest records
@@ -73,14 +76,14 @@ Generated `dist/` output is built by automation and is not a canonical source fo
 
 ```bash
 npm install
-npm run build
 npm run precommit:verify
 ```
 
-Important validation gates:
+Focused gates, when reviewing a smaller change:
 
 ```bash
 npm run audit:continuity
+npm run audit:aaa-structure
 node scripts/audit-current-canon.mjs
 npm run assets:verify
 npm run test:playable-battle-ui
