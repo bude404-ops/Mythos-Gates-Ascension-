@@ -25,6 +25,7 @@
     "visualChangeRules": 11,
     "visualBaselines": 15,
     "realmCodex": 7,
+    "factionVisualBible": 1,
     "hybridVisualArchitecture": 1,
     "assetPipeline": 1,
     "githubSyncPolicy": 1,
@@ -127,6 +128,7 @@
     "visual-change-rules.json": "data/visual-change-rules.json",
     "visual-baselines.json": "data/visual-baselines.json",
     "realm-codex.json": "data/realm-codex.json",
+    "faction-visual-bible.json": "data/faction-visual-bible.json",
     "hybrid-visual-architecture.json": "data/hybrid-visual-architecture.json",
     "asset-pipeline.json": "data/asset-pipeline.json",
     "github-sync-policy.json": "data/github-sync-policy.json",
@@ -221,8 +223,8 @@
     },
     "art-prompts.json": {
       "path": "data/art-prompts.json",
-      "bytes": 326819,
-      "sha256": "65d033dc479f17550c48ffa2f86407a2173b9feab0d14bd30afb3c6f5708e253"
+      "bytes": 353559,
+      "sha256": "85ccfcc3b8eaf218be9760d2cca5aa4241c3546220e6069c9f3bc57a66036928"
     },
     "artworks.json": {
       "path": "data/artworks.json",
@@ -236,8 +238,8 @@
     },
     "art-approval-manifest.json": {
       "path": "data/art-approval-manifest.json",
-      "bytes": 4146,
-      "sha256": "38d2e8dd66b53d672c7315a55ae83398bf0f4abf7d2eb94d6851a33927f7aed2"
+      "bytes": 4517,
+      "sha256": "873f198939755a95c9281481693e8dd37fce3a2a7fdfce383a2eb2eceb22c2f6"
     },
     "development-tasks.json": {
       "path": "data/development-tasks.json",
@@ -308,6 +310,11 @@
       "path": "data/realm-codex.json",
       "bytes": 53759,
       "sha256": "1319bcd077769ccaf4d58c008f4b259186a746470abb5086154c6f4bd8b42a31"
+    },
+    "faction-visual-bible.json": {
+      "path": "data/faction-visual-bible.json",
+      "bytes": 34374,
+      "sha256": "e48c657b60e9a9e13415ef68338a548abda3e8fcc179e441b6c77344f330af5b"
     },
     "hybrid-visual-architecture.json": {
       "path": "data/hybrid-visual-architecture.json",
@@ -643,8 +650,8 @@
       "entity": "Storm-Oath Bridge",
       "category": "Map",
       "status": "ready",
-      "prompt": "Titan Gates tactical battleground environment concept: Storm-Oath Bridge. A colossal rune-iron bridge suspended in Valhalla storm cloud, where sworn vows become visible under lightning. Lightning lanes are natural storm paths following wet metal seams, raised rune channels, charred railings, puddled iron plates, and cracked oath-stones. Rune collapse is shown as buckled bridge segments, missing spans, hanging chains, and wind-torn battle standards that shape tactical movement through storm-weathered iron and broken bridge structure. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into storm-weathered bridge lore, no sci-fi.",
-      "negativePrompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares"
+      "prompt": "Titan Gates tactical battleground environment concept: Storm-Oath Bridge. A colossal rune-iron bridge suspended in Valhalla storm cloud, where sworn vows become visible under lightning. Lightning lanes are natural storm paths following wet metal seams, raised rune channels, charred railings, puddled iron plates, and cracked oath-stones. Rune collapse is shown as buckled bridge segments, missing spans, hanging chains, and wind-torn battle standards that shape tactical movement through storm-weathered iron and broken bridge structure. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into storm-weathered bridge lore, no sci-fi. Faction Visual Bible: follow Asgardian material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-002; faction canon must be visible in silhouette, materials, and posture.",
+      "negativePrompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, sci-fi power armor, generic horned helmet cosplay, blocky metal torso, robot joints, clean chrome"
     },
     {
       "id": "TG-PROMPT-MAP-004",
@@ -652,7 +659,7 @@
       "entity": "Marble Sky Arena",
       "category": "Map",
       "status": "ready",
-      "prompt": "Titan Gates tactical battleground environment concept: Marble Sky Arena. A floating Olympus arena of marble, bronze, laurel, and starlight where victory itself changes the battlefield. Falling sky platforms are real fractured marble terraces drifting apart over clouds, with broken columns, exposed bronze braces, and shadowed gaps. Laurel judgment fields appear as woven sacred hedges, wreath-strewn statues, sunlit tribunal circles, and polished stone worn by divine trials through believable sacred staging and worn stone boundaries. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects embedded in Olympian arena architecture, no sci-fi.",
+      "prompt": "Titan Gates tactical battleground environment concept: Marble Sky Arena. A floating Olympus arena of marble, bronze, laurel, and starlight where victory itself changes the battlefield. Falling sky platforms are real fractured marble terraces drifting apart over clouds, with broken columns, exposed bronze braces, and shadowed gaps. Laurel judgment fields appear as woven sacred hedges, wreath-strewn statues, sunlit tribunal circles, and polished stone worn by divine trials through believable sacred staging and worn stone boundaries. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects embedded in Olympian arena architecture, no sci-fi. Faction Visual Bible: follow Olympian material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-003; faction canon must be visible in silhouette, materials, and posture.",
       "negativePrompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares"
     },
     {
@@ -661,8 +668,8 @@
       "entity": "Moon-Grove Rootlabyrinth",
       "category": "Map",
       "status": "ready",
-      "prompt": "Titan Gates tactical battleground environment concept: Moon-Grove Rootlabyrinth. A living Avalora forest labyrinth whose roots remember every step and punish careless burning. Moving root walls are natural braided trunks, mossy root arches, thorny hedgerows, and fresh soil upheavals that redirect lanes. Fae misdirection is suggested through moonlit mist, mirrored dew pools, crooked flower paths, and subtly repeated trees. Living terrain backlash appears as charred bark regrowing over old scorch marks, not game-highlight tiles. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects grown directly from forest lore, no sci-fi.",
-      "negativePrompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares"
+      "prompt": "Titan Gates tactical battleground environment concept: Moon-Grove Rootlabyrinth. A living Avalora forest labyrinth whose roots remember every step and punish careless burning. Moving root walls are natural braided trunks, mossy root arches, thorny hedgerows, and fresh soil upheavals that redirect lanes. Fae misdirection is suggested through moonlit mist, mirrored dew pools, crooked flower paths, and subtly repeated trees. Living terrain backlash appears as charred bark regrowing over old scorch marks, not game-highlight tiles. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects grown directly from forest lore, no sci-fi. Faction Visual Bible: follow Tuatha material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-005; faction canon must be visible in silhouette, materials, and posture.",
+      "negativePrompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, generic elf, treehouse body, wood block giant, terrain chunks, literal forest on shoulders"
     },
     {
       "id": "TG-PROMPT-MAP-006",
@@ -670,8 +677,8 @@
       "entity": "Black Iron Court",
       "category": "Map",
       "status": "ready",
-      "prompt": "Titan Gates tactical battleground environment concept: Black Iron Court. An Infernal Dominion throne district of chains, volcanic glass, black iron, and royal violence where bargains become battlefield hazards. Hellfire chains are built into the court as suspended restraints, floor-groove winches, hooked pillars, and ember-lit chain channels. Dominion execution marks appear as old blood-dark verdict stones, cracked obsidian dais steps, ash pits, and throne-shadow sightlines, all physically part of the courtroom terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into infernal architecture, no sci-fi.",
-      "negativePrompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares"
+      "prompt": "Titan Gates tactical battleground environment concept: Black Iron Court. An Infernal Dominion throne district of chains, volcanic glass, black iron, and royal violence where bargains become battlefield hazards. Hellfire chains are built into the court as suspended restraints, floor-groove winches, hooked pillars, and ember-lit chain channels. Dominion execution marks appear as old blood-dark verdict stones, cracked obsidian dais steps, ash pits, and throne-shadow sightlines, all physically part of the courtroom terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into infernal architecture, no sci-fi. Faction Visual Bible: follow Infernal Dominion material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-007; faction canon must be visible in silhouette, materials, and posture.",
+      "negativePrompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, red robot demon, generic devil, block fortress body, literal castle armor, sci-fi cables"
     },
     {
       "id": "TG-PROMPT-MAP-007",
@@ -679,8 +686,8 @@
       "entity": "Sacred Sun Temple Road",
       "category": "Map",
       "status": "ready",
-      "prompt": "Titan Gates tactical battleground environment concept: Sacred Sun Temple Road. A processional Aten Ra temple road of gold stone, lion statues, incense braziers, and sun-baked steps leading toward a holy gate. Terrain danger is natural: blinding white stone plazas, heat-shimmering causeways, cracked altar channels, sand drift choke points, and statue shadows that create readable lanes. Sacred judgment is implied through scorched offering bowls, broken sun disks, and relief-carved warning paths through believable carved warnings and desert-worn stone boundaries. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects rooted in temple lore and desert light, no sci-fi.",
-      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares"
+      "prompt": "Titan Gates tactical battleground environment concept: Sacred Sun Temple Road. A processional Aten Ra temple road of gold stone, lion statues, incense braziers, and sun-baked steps leading toward a holy gate. Terrain danger is natural: blinding white stone plazas, heat-shimmering causeways, cracked altar channels, sand drift choke points, and statue shadows that create readable lanes. Sacred judgment is implied through scorched offering bowls, broken sun disks, and relief-carved warning paths through believable carved warnings and desert-worn stone boundaries. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects rooted in temple lore and desert light, no sci-fi. Faction Visual Bible: follow Aten Ra material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-001; faction canon must be visible in silhouette, materials, and posture.",
+      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, robot armor, cube bodies, literal pyramid body, building windows, neon sci-fi"
     },
     {
       "id": "TG-PROMPT-MAP-008",
@@ -688,8 +695,8 @@
       "entity": "Titan Gate Sun Throne",
       "category": "Map",
       "status": "ready",
-      "prompt": "Titan Gates tactical battleground environment concept: Titan Gate Sun Throne. A monumental sun throne chamber where divine authority and Gate power meet. The battlefield is shaped by real architecture: high throne steps, collapsed gold-inlaid slabs, molten sunlight leaking through ceiling apertures, cracked ceremonial channels, fallen jackal and falcon statues, and heat-blackened judgment platforms. Hazard zones feel like sacred damage to the room itself, with physical sacred damage and readable architectural boundaries. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into throne-room lore, no sci-fi.",
-      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares"
+      "prompt": "Titan Gates tactical battleground environment concept: Titan Gate Sun Throne. A monumental sun throne chamber where divine authority and Gate power meet. The battlefield is shaped by real architecture: high throne steps, collapsed gold-inlaid slabs, molten sunlight leaking through ceiling apertures, cracked ceremonial channels, fallen jackal and falcon statues, and heat-blackened judgment platforms. Hazard zones feel like sacred damage to the room itself, with physical sacred damage and readable architectural boundaries. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into throne-room lore, no sci-fi. Faction Visual Bible: follow Aten Ra material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-001; faction canon must be visible in silhouette, materials, and posture.",
+      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, robot armor, cube bodies, literal pyramid body, building windows, neon sci-fi"
     },
     {
       "id": "TG-PROMPT-MAP-009",
@@ -697,8 +704,8 @@
       "entity": "Foxfire Torii Road",
       "category": "Map",
       "status": "ready",
-      "prompt": "Titan Gates tactical battleground environment concept: Foxfire Torii Road. A mythic road of red torii gates, old shrine stones, cedar roots, and foxfire lanterns winding through sacred dusk. Terrain effects appear as natural folklore: lantern smoke obscuring bends, moss-slick shrine steps, fallen torii beams as cover, fox tracks in ash, and blue-white foxfire gathered inside hanging lanterns and old spirit braziers through lantern placement, smoke, and shrine architecture. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects woven into shrine-road lore, no sci-fi.",
-      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares"
+      "prompt": "Titan Gates tactical battleground environment concept: Foxfire Torii Road. A mythic road of red torii gates, old shrine stones, cedar roots, and foxfire lanterns winding through sacred dusk. Terrain effects appear as natural folklore: lantern smoke obscuring bends, moss-slick shrine steps, fallen torii beams as cover, fox tracks in ash, and blue-white foxfire gathered inside hanging lanterns and old spirit braziers through lantern placement, smoke, and shrine architecture. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects woven into shrine-road lore, no sci-fi. Faction Visual Bible: follow Kami material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-004; faction canon must be visible in silhouette, materials, and posture.",
+      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, mecha samurai, anime robot, literal shrine body, block torii stack, generic ninja"
     },
     {
       "id": "TG-PROMPT-MAP-010",
@@ -706,8 +713,8 @@
       "entity": "Mirror Lake Sanctum",
       "category": "Map",
       "status": "ready",
-      "prompt": "Titan Gates tactical battleground environment concept: Mirror Lake Sanctum. A quiet sanctum of black water, marble stepping stones, reeds, moon bridges, and mirrored shrine walls where reflection becomes danger. Terrain effects are natural: shallow reflective water that distorts footing, cracked stepping stones, reed beds forming soft cover, submerged statues, and moonlit reflections that imply false paths without artificial glow. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects born from water, reflection, and sanctum lore, no sci-fi.",
-      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares"
+      "prompt": "Titan Gates tactical battleground environment concept: Mirror Lake Sanctum. A quiet sanctum of black water, marble stepping stones, reeds, moon bridges, and mirrored shrine walls where reflection becomes danger. Terrain effects are natural: shallow reflective water that distorts footing, cracked stepping stones, reed beds forming soft cover, submerged statues, and moonlit reflections that imply false paths without artificial glow. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects born from water, reflection, and sanctum lore, no sci-fi. Faction Visual Bible: follow Kami material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-004; faction canon must be visible in silhouette, materials, and posture.",
+      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, mecha samurai, anime robot, literal shrine body, block torii stack, generic ninja"
     },
     {
       "id": "TG-PROMPT-MAP-011",
@@ -715,8 +722,8 @@
       "entity": "Choir Vault Ascent",
       "category": "Map",
       "status": "ready",
-      "prompt": "Titan Gates tactical battleground environment concept: Choir Vault Ascent. A cathedral-like ascent of bone-white arches, suspended bells, carved choir galleries, and steep sanctified stairs. Terrain pressure appears through real sacred architecture: resonant bell platforms, cracked hymn-inscribed steps, fallen choir screens, echoing vault shadows, and wind from high apertures carrying dust through safe and dangerous lanes. Sonic danger is implied by shattered stone, trembling candles, and broken glass mosaics, through physical stone damage and lore-readable architecture. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into vault lore, no sci-fi.",
-      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares"
+      "prompt": "Titan Gates tactical battleground environment concept: Choir Vault Ascent. A cathedral-like ascent of bone-white arches, suspended bells, carved choir galleries, and steep sanctified stairs. Terrain pressure appears through real sacred architecture: resonant bell platforms, cracked hymn-inscribed steps, fallen choir screens, echoing vault shadows, and wind from high apertures carrying dust through safe and dangerous lanes. Sonic danger is implied by shattered stone, trembling candles, and broken glass mosaics, through physical stone damage and lore-readable architecture. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into vault lore, no sci-fi. Faction Visual Bible: follow Empyrean material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-006; faction canon must be visible in silhouette, materials, and posture.",
+      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, robot angel, spaceship armor, literal cathedral body, block tower silhouette, neon sci-fi halo"
     },
     {
       "id": "TG-PROMPT-MAP-012",
@@ -724,8 +731,8 @@
       "entity": "Broken Heaven Engine",
       "category": "Map",
       "status": "ready",
-      "prompt": "Titan Gates tactical battleground environment concept: Obsidian River Crossing. A dangerous crossing through a mythic black-glass riverbed, basalt banks, bone markers, and half-submerged relic bridges. Terrain effects are physical: slick obsidian shallows, steam vents, broken stepping stones, jagged basalt cover, ash-mud edges, and old ferry chains shaping movement. The river’s curse is shown through scorched offerings, cracked black reflections, and naturally hazardous footing through believable physical footing and river hazards. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects rooted in river-crossing lore, no sci-fi.",
-      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares"
+      "prompt": "Titan Gates tactical battleground environment concept: Obsidian River Crossing. A dangerous crossing through a mythic black-glass riverbed, basalt banks, bone markers, and half-submerged relic bridges. Terrain effects are physical: slick obsidian shallows, steam vents, broken stepping stones, jagged basalt cover, ash-mud edges, and old ferry chains shaping movement. The river’s curse is shown through scorched offerings, cracked black reflections, and naturally hazardous footing through believable physical footing and river hazards. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects rooted in river-crossing lore, no sci-fi. Faction Visual Bible: follow Empyrean material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-006; faction canon must be visible in silhouette, materials, and posture.",
+      "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, robot angel, spaceship armor, literal cathedral body, block tower silhouette, neon sci-fi halo"
     }
   ],
   "githubAssetStatusCounts": {

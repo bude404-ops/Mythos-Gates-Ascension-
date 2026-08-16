@@ -36,6 +36,7 @@ const data = {
   visualBaselines: read('data/visual-baselines.json'),
   visualQaBaselineApproval: read('visual/reviews/TG-VISUAL-QA-BASELINE-APPROVAL-001.json'),
   realmCodex: read('data/realm-codex.json'),
+  factionVisualBible: read('data/faction-visual-bible.json'),
   hybridVisualArchitecture: read('data/hybrid-visual-architecture.json'),
   assetPipeline: read('data/asset-pipeline.json'),
   artApprovalManifest: read('data/art-approval-manifest.json'),
@@ -106,6 +107,7 @@ register('battlefieldRuntimeArchitecture', data.battlefieldRuntimeArchitecture, 
 register('battlefieldCanonRegistry', data.battlefieldCanonRegistry, 'data/battlefield-canon-registry.json');
 register('visualQaBaselineApproval', data.visualQaBaselineApproval, 'visual/reviews/TG-VISUAL-QA-BASELINE-APPROVAL-001.json');
 register('artApprovalManifest', data.artApprovalManifest, 'data/art-approval-manifest.json');
+register('factionVisualBible', data.factionVisualBible, 'data/faction-visual-bible.json');
 register('battlefieldVerticalSlice', data.battlefieldVerticalSlice, 'data/battlefield-vertical-slice.json');
 
 const factionIds = new Set(data.factions.map(f => f.id));
@@ -139,6 +141,21 @@ if(data.factions.length !== 7) fail(`Expected 7 playable factions, found ${data.
 if(data.hollowThreatFaction.playable !== false || data.hollowThreatFaction.classification !== 'Hostile Threat Faction') fail('Hollow must remain a non-playable threat faction');
 if(data.titans.length !== 63) fail(`Expected 63 Titans, found ${data.titans.length}`);
 if(data.artApprovalManifest.status !== 'IMPLEMENTED' || data.artApprovalManifest.approvalStatus !== 'APPROVED_FOR_GENERATION') fail('Art approval manifest must be approved for generation');
+
+if(data.factionVisualBible.status !== 'IMPLEMENTED') fail('Faction visual bible must be IMPLEMENTED');
+if(!Array.isArray(data.factionVisualBible.entries) || data.factionVisualBible.entries.length !== data.factions.length) fail('Faction visual bible must cover every playable faction');
+const factionVisualBibleByFactionId = new Map(data.factionVisualBible.entries.map(e => [e.factionId, e]));
+const requiredVisualBibleLists = ['bodyAnatomyRules','armorShapeLanguage','materialHierarchy','textureLanguage','colorPalette','sacredSymbols','armorConstructionRules','titanRules','npcRules','creatureRules','environmentRules','avoid'];
+for (const faction of data.factions) {
+  const entry = factionVisualBibleByFactionId.get(faction.id);
+  if(!entry) fail(`Faction visual bible missing ${faction.id}`);
+  if(entry.faction !== faction.name) fail(`${entry.id}: faction name mismatch`);
+  if(!entry.visualThesis || entry.visualThesis.length < 120) fail(`${entry.id}: visual thesis too thin`);
+  for (const list of requiredVisualBibleLists) {
+    if(!Array.isArray(entry[list]) || entry[list].length < 3) fail(`${entry.id}: ${list} too thin`);
+  }
+  for (const applies of ['Titans','NPCs','Creatures','Battlefields','Artwork prompts']) if(!(entry.appliesTo || []).includes(applies)) fail(`${entry.id}: missing appliesTo ${applies}`);
+}
 for (const taskId of ['TG-DEV-001','TG-DEV-007']) {
   if(!(data.artApprovalManifest.gatesClosed || []).includes(taskId)) fail(`Art approval manifest must close ${taskId}`);
   if(!data.tasks.some(t => t.id === taskId && t.status === 'COMPLETED' && (t.relatedFiles || []).includes('data/art-approval-manifest.json'))) fail(`${taskId}: completion must reference art approval manifest`);
@@ -229,6 +246,7 @@ for (const prompt of data.prompts) {
   const per = read(`art/prompts/${prompt.id}.json`);
   if(per.id !== prompt.id || per.version < 1) fail(`${prompt.id}: invalid prompt file content`);
   if(!prompt.prompt || !prompt.negativePrompt) fail(`${prompt.id}: prompt text missing`);
+  if((prompt.category === 'Titan' || prompt.category === 'NPC' || prompt.category === 'FactionScreen') && prompt.factionVisualBibleId && !data.factionVisualBible.entries.some(e => e.id === prompt.factionVisualBibleId)) fail(`${prompt.id}: invalid factionVisualBibleId ${prompt.factionVisualBibleId}`);
 }
 
 for (const npc of data.npcs) {

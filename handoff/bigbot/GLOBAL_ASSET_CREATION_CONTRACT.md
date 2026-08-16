@@ -250,3 +250,6 @@ The first proof target remains:
 - Mission: `TG-F01-C01-M01 — First Light Under Dead Stone`
 
 This first battlefield is the test of the complete pipeline. Once it passes, the same contract applies to every following battlefield and model.
+
+## Faction Visual Bible Requirement
+Before generating any faction-linked Titan, NPC, creature, battlefield, faction screen, or 3D asset, Big Bot must apply `data/faction-visual-bible.json` and `handoff/bigbot/FACTION_VISUAL_BIBLE.md`. The asset must show that faction through silhouette, armor construction, materials, texture, symbols, posture, and avoid-list compliance. Reject faction drift even if the image is otherwise high quality.

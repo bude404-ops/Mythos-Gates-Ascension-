@@ -46,6 +46,7 @@ const files = {
   'visual-change-rules.json': 'visualChangeRules',
   'visual-baselines.json': 'visualBaselines',
   'realm-codex.json': 'realmCodex',
+  'faction-visual-bible.json': 'factionVisualBible',
   'hybrid-visual-architecture.json': 'hybridVisualArchitecture',
   'asset-pipeline.json': 'assetPipeline',
   'github-sync-policy.json': 'githubSyncPolicy',
@@ -128,6 +129,7 @@ const githubAssetDependencyGraph = read('asset_registry/asset-dependency-graph.j
 const creatorHandoffReport = read('validation/reports/creator-handoff-report.json');
 counts.hollowCreatures = (hollowEncounterSystem.roster || []).length;
 const artPrompts = read('data/art-prompts.json');
+const factionVisualBible = read('data/faction-visual-bible.json');
 const artPromptCategories = artPrompts.reduce((acc, prompt) => {
   const key = prompt.category || 'Uncategorized';
   acc[key] = (acc[key] || 0) + 1;

@@ -26,12 +26,13 @@
   "prompt_reference": {
     "prompt_id": "TG-PROMPT-NPC-001",
     "status": "ready",
-    "prompt": "Titan Gates non-playable campaign character concept art: Mesha Gate-Scribe. Tall ceremonial scribe silhouette in gold-lacquered linen armor, obsidian stylus, sun-disc visor, amber-glowing tablet. Faction/culture: Aten Ra. Visual identity: Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms.. Role: Lore witness and Codex keeper. Dark tactical mythological fantasy, mobile game character card, painterly detail, full body, strong silhouette, no sci-fi.",
-    "negative_prompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo"
+    "prompt": "Titan Gates non-playable campaign character concept art: Mesha Gate-Scribe. Tall ceremonial scribe silhouette in gold-lacquered linen armor, obsidian stylus, sun-disc visor, amber-glowing tablet. Faction/culture: Aten Ra. Visual identity: Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms.. Role: Lore witness and Codex keeper. Dark tactical mythological fantasy, mobile game character card, painterly detail, full body, strong silhouette, no sci-fi. Faction Visual Bible: follow Aten Ra material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-001; faction canon must be visible in silhouette, materials, and posture.",
+    "negative_prompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, robot armor, cube bodies, literal pyramid body, building windows, neon sci-fi"
   },
   "blueprint_reference": null,
   "quality_gates": [
     "Mobile-readable silhouette at card and battlefield preview scale.",
+    "Every faction asset must visibly follow data/faction-visual-bible.json for silhouette, armor construction, material hierarchy, symbols, textures, and faction-specific avoid rules.",
     "Titans must read as living extradimensional mythic beings, not robots, mechs, androids, or humans in powered armor.",
     "Titans must keep readable living anatomy and character silhouette; reject blocky buildings, tower bodies, fortress torsos, stacked geometric shapes, or architecture piles masquerading as Titans.",
     "No sci-fi firearms, futuristic craft, modern corporate UI, generic superhero styling, watermarks, or readable generated text.",
@@ -42,6 +43,7 @@
   ],
   "rejection_triggers": [
     "Human-sized Titan silhouette.",
+    "Faction drift: asset lacks the faction visual bible material/symbol/silhouette language or uses an avoid-listed trope.",
     "Robot, mecha, android, cyborg, transformer, or powered-suit read.",
     "Blocky building, tower, fortress, cube-stack, abstract geometry pile, or literal architecture-body read.",
     "Readable text/watermark/logo in the image.",

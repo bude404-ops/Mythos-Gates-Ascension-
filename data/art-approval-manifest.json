@@ -65,6 +65,7 @@
   ],
   "qualityGates": [
     "Mobile-readable silhouette at card and battlefield preview scale.",
+    "Every faction asset must visibly follow data/faction-visual-bible.json for silhouette, armor construction, material hierarchy, symbols, textures, and faction-specific avoid rules.",
     "Titans must read as living extradimensional mythic beings, not robots, mechs, androids, or humans in powered armor.",
     "Titans must keep readable living anatomy and character silhouette; reject blocky buildings, tower bodies, fortress torsos, stacked geometric shapes, or architecture piles masquerading as Titans.",
     "No sci-fi firearms, futuristic craft, modern corporate UI, generic superhero styling, watermarks, or readable generated text.",
@@ -75,6 +76,7 @@
   ],
   "rejectionTriggers": [
     "Human-sized Titan silhouette.",
+    "Faction drift: asset lacks the faction visual bible material/symbol/silhouette language or uses an avoid-listed trope.",
     "Robot, mecha, android, cyborg, transformer, or powered-suit read.",
     "Blocky building, tower, fortress, cube-stack, abstract geometry pile, or literal architecture-body read.",
     "Readable text/watermark/logo in the image.",
@@ -88,5 +90,6 @@
     "nextAction": "Generate or receive real approved image assets, then import them through art/imported and art/approved without fabricating filenames.",
     "blockedReason": "External generated image asset still required."
   },
-  "updated": "2026-08-16"
+  "updated": "2026-08-16",
+  "factionVisualBible": "data/faction-visual-bible.json"
 }
