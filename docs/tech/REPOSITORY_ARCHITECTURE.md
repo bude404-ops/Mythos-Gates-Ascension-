@@ -10,6 +10,7 @@ Titan Gates is organized as a source-of-truth preproduction repository: canon re
 | Aggregated data | Generated JSON indexes used by dashboards, validation, and prototype surfaces. |
 | Prototype runtime | Browser-playable tactical and campaign flows used for vertical-slice proof. |
 | Production source modules | Importable gameplay, data-loader, UI presenter, and production-gate modules under `src/`. |
+| Engine adapter lane | Engine-neutral export contract plus Unity and Unreal adapter manifests. |
 | Mini App surface | Holder-facing command center and canon dashboard. |
 | Asset production | Blueprint folders, manifests, registry, dependency graph, handoff packets, and source/preview/game-ready lanes. |
 | Validation | Build, content, canon, schema contracts, asset, economy, runtime, UI, and secret-scan gates. |
@@ -49,7 +50,10 @@ src/gameplay/economy/       economy runtime exports
 src/data-loaders/           recursive JSON loading, source dataset lookup, schema contract validation
 src/ui/                     presentation-safe state summaries for browser/Mini App layers
 src/tools/                  production gate manifest
-tests/                      production module contract smoke tests
+tests/                      production and engine adapter contract smoke tests
+engine/shared/              engine-neutral export contract and mapping helpers
+engine/unreal/              Unreal adapter manifest and import notes
+engine/unity/               Unity adapter manifest and import notes
 ```
 
 `npm run validate:schemas` checks Titans, all 280 missions, and 129 asset manifests against the active schemas. `npm run test:production-modules` proves the browser runtime can be consumed through the new `src/` seams. Both are now enforced by `npm run precommit:verify`.

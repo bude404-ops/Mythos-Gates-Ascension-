@@ -30,7 +30,16 @@ const requiredFiles = [
   'src/tools/production-gate-manifest.mjs',
   'tests/README.md',
   'tests/production-module-contract.test.mjs',
-  'scripts/validate-schema-contracts.mjs'
+  'scripts/validate-schema-contracts.mjs',
+  'engine/README.md',
+  'engine/shared/engine-export-contract.json',
+  'engine/shared/engine-exporter.mjs',
+  'engine/unreal/README.md',
+  'engine/unreal/adapter-manifest.json',
+  'engine/unity/README.md',
+  'engine/unity/adapter-manifest.json',
+  'scripts/validate-engine-adapters.mjs',
+  'tests/engine-adapter-contract.test.mjs'
 ];
 
 const requiredDirs = [
@@ -55,6 +64,7 @@ const requiredDirs = [
   'scripts',
   'src',
   'tests',
+  'engine',
   'titans',
   'validation',
   'visual'
@@ -96,11 +106,13 @@ for (const schema of schemas) {
 }
 
 const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-for (const script of ['validate:schemas', 'test:production-modules']) {
+for (const script of ['validate:schemas', 'test:production-modules', 'validate:engine-adapters', 'test:engine-adapters']) {
   if (!packageJson.scripts?.[script]) issues.push(`Missing production script: ${script}`);
 }
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:schemas')) issues.push('precommit:verify must enforce schema contract validation.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:production-modules')) issues.push('precommit:verify must enforce production module contracts.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:engine-adapters')) issues.push('precommit:verify must enforce engine adapter validation.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:engine-adapters')) issues.push('precommit:verify must enforce engine adapter contracts.');
 
 const result = {
   ok: issues.length === 0,

@@ -6,7 +6,7 @@ Status: production-foundation audit completed after GitHub canon cleanup.
 
 Titan Gates: Ascension is structurally strong as a game bible, vertical-slice prototype, Mini App source, and asset-production command center. It is not yet a final AAA game-engine repository. The repo can guide a AAA build, but the next phase must separate prototype presentation from production runtime code and enforce schemas/contracts around every content pipeline.
 
-Readiness grade after the source-module pass: B for AAA preproduction repository, C+/B- for direct AAA implementation repository.
+Readiness grade after the engine-adapter pass: B/B+ for AAA preproduction repository, B- for direct AAA implementation repository.
 
 ## What is already strong
 
@@ -20,6 +20,7 @@ Readiness grade after the source-module pass: B for AAA preproduction repository
 - AAA migration lanes now exist for schemas, source-module extraction, and grouped tests.
 - First production source modules now exist for gameplay, economy, data loading, schema contracts, UI state presentation, and gate manifesting.
 - Schema validation now checks Titans, all missions, and real asset manifests before deploy.
+- Engine integration scaffolding now exists for shared exports plus Unity and Unreal adapter manifests.
 - Large source asset policy is present through Git LFS attributes.
 
 ## Structural risks blocking AAA-scale production
@@ -148,11 +149,11 @@ The current repo does not need to move everything immediately. The highest-value
 2. Add a data migration/versioning policy.
 3. Continue extracting prototype code into deeper modules under `src/gameplay`, `src/ui`, and `src/data-loaders`.
 4. Move browser smoke tests into grouped suites under `tests/ui` and `tests/integration`.
-5. Add engine adapter stubs for Unity/Unreal integration.
+5. Expand engine adapter stubs into real import tooling once an engine target is chosen.
 
 ### AAA handoff pass
 
-1. Add engine folder for Unity/Unreal integration.
+1. Convert Unity/Unreal adapter manifests into working importers or commandlets.
 2. Add source asset validation for real `.glb`, `.fbx`, textures, animations, and VFX.
 3. Add performance budgets for mobile and desktop.
 4. Add automated screenshots/video captures for key flows.

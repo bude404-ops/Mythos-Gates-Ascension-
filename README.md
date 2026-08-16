@@ -31,6 +31,7 @@ campaigns/            Campaign and chapter source records
 data/                 Aggregated source-of-truth JSON used by dashboards and runtime checks
 dialogue/             Mission dialogue source records
 docs/                 Production documentation, lore bible, audits, build notes, handoff policy
+engine/               Unity/Unreal adapter scaffolding and engine-neutral export contracts
 schemas/              JSON Schema contract layer for canonical data shapes
 src/                  Engine-ready module extraction lane for gameplay, data loaders, UI presenters, tools
 tests/                Production module contracts and future grouped test suites
@@ -85,6 +86,7 @@ Focused gates, when reviewing a smaller change:
 npm run audit:continuity
 npm run audit:aaa-structure
 node scripts/audit-current-canon.mjs
+npm run validate:engine-adapters
 npm run assets:verify
 npm run test:playable-battle-ui
 npm run validate:external-ai-packets

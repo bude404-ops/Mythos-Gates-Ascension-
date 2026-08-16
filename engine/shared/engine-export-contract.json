@@ -1,0 +1,45 @@
+{
+  "schema": "TG_ENGINE_EXPORT_CONTRACT_V1",
+  "status": "ACTIVE",
+  "sourceOfTruth": "canonical JSON records plus schema-validated manifests",
+  "canonicalIds": {
+    "titan": "TG-TITAN-###",
+    "mission": "TG-F##-C##-M## / TG-F##-E-C##-M##",
+    "asset": "TITAN_### / BATTLEFIELD_### / GATE_### / CREATURE_###"
+  },
+  "exports": [
+    {
+      "name": "TitanCombatData",
+      "source": "data/titans.json",
+      "schema": "schemas/titan.schema.json",
+      "engineTargets": [
+        "Unreal DataAsset",
+        "Unity ScriptableObject"
+      ]
+    },
+    {
+      "name": "MissionDefinition",
+      "source": "missions/**",
+      "schema": "schemas/mission.schema.json",
+      "engineTargets": [
+        "Unreal PrimaryDataAsset",
+        "Unity ScriptableObject"
+      ]
+    },
+    {
+      "name": "AssetImportManifest",
+      "source": "manifests/assets/**/manifest.json",
+      "schema": "schemas/asset-manifest.schema.json",
+      "engineTargets": [
+        "Unreal AssetImportData",
+        "Unity AssetPostprocessor metadata"
+      ]
+    }
+  ],
+  "guardrails": [
+    "one active Titan standard combat remains canonical",
+    "Hollow remains non-playable threat layer",
+    "engine adapters are consumers, not canon authors",
+    "source and game-ready assets remain separate"
+  ]
+}
