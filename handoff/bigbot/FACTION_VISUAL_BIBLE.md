@@ -12,59 +12,102 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 - Architecture can influence clothing, regalia, halos, weapons, and environment — never replace living anatomy for character assets.
 - No readable real-world text or logos; glyphs and marks must be abstract lore texture.
 
-## Aten Ra — The Golden Dominion of Aten
+## Aten Ra — The Solar Dominion of Khepra
 
-**Visual thesis:** Aten Ra beings look like living verdicts of sun-law: luminous anatomy wrapped in sacred solar regalia, never statues, robots, or pyramids with limbs. Their power should feel ancient, judicial, mathematical, and too bright to fully belong to Earth.
+**Visual thesis:** Aten Ra is the source behind human Egyptian solar myth: living Ma’at, Ra’s noon authority, Aten’s sun-disc radiance, Khepri’s renewal, Iset’s throne-magic, Sutekh’s necessary desert violence, Maahes’ lion protection, and Amunet’s hidden power. Designs must feel like ancient humans copied these beings later — not like Titans copied Egypt.
+
+### Mythic source anchors
+- Ra/Re: noon sun, kingship, sky, earth, underworld, first-pharaoh authority
+- Aten: visible sun-disc, radiating hand-rays, direct life-giving solar presence
+- Ma’at: truth, balance, law, justice, cosmic order opposed by Isfet chaos
+- Khepri: scarab dawn, creation, renewal, sun rebirth
+- Set/Sutekh: Red Land desert, storms, disorder harnessed to defend Ra from chaos
+- Isis/Iset: throne symbol, restoration, healing, afterlife passage, protective magic
+- Maahes: lion war/protection, knives, lotuses, devouring captives
+- Amun/Amunet: hidden breath, unseen divine authority, concealed solar power
 
 ### Body anatomy
-- Bodies use strong readable anatomy with elongated divine proportions, monumental shoulders, ceremonial stillness, and slow solar gravity.
-- Skin, energy, and regalia may fuse into one sacred organism, but head, torso, limbs, gesture, and expression stay legible.
-- Animal hints may appear as falcon, jackal, cobra, scarab, or lion motifs only as masks, crests, aura shapes, or subtle anatomy; never random hybrid clutter.
+- Bodies use strong readable anatomy with elongated divine proportions, royal stillness, ceremonial hand language, and gravity like the noon sun holding the world in place.
+- Skin, energy, linen wrap, collar, crown, and pectoral can fuse into one living office of divine law, but head, torso, limbs, gesture, expression, and faction role must stay legible.
+- Animal divinity must come from Egyptian source functions: falcon-solar sight, cobra protection, jackal threshold guidance, scarab renewal, lion war-guardianship, ibis/scribe precision, or crocodile/river menace — never random hybrid clutter.
+- Use Nile/Red Land dual anatomy: black fertile stone or river-glass surfaces balanced against desert-red scars, storm-sand erosion, and white-gold solar seams.
+
+### Armor shape language
+- solar-disc crown or halo with subtle hand-ray geometry inspired by Aten, not sci-fi rings
+- broad wesekh-style divine collar and pectoral plates fused to chest anatomy
+- nemes-like energy mantle or linen head/shoulder flow for ruler silhouettes
+- pylon harnesses and temple-gate shoulder frames that wrap the body instead of replacing it
+- scarab carapace plates for renewal/battery forms
+- was-sceptre, crook, flail, khopesh, or weighing-scale weapon silhouettes abstracted into Titan gear
+- cobra uraeus brow crests, falcon eye visors, jackal threshold masks, lion mane armor, or lotus/papyrus river crests when lore-appropriate
+- Ma’at feather balance lines across armor seams, never readable text
 
 ### Materials
-- primary: hammered divine gold, sun-warmed bronze, white-gold radiance
-- secondary: obsidian-blue enamel, amber light seams, carved ivory stone
-- accent: papyrus-like luminous lines, red-orange judgement sparks, black glass shadow insets
+- primary: hammered electrum-gold, sun-warmed bronze, white-gold living radiance, and royal linen hardened by solar law
+- secondary: lapis/obsidian blue-black shadow, turquoise/faience blue-green inlay, ivory limestone, black Nile silt glass, red desert jasper
+- accent: scarab emerald, lotus pink, papyrus green, blood-red Set storm marks, amber Aten hand-rays, black solar-eclipse enamel
 
-### Armor and silhouette
-- pyramid-inspired shoulder arcs
-- sun-disc halos and crown plates
-- pylon-like collar regalia shaped around living anatomy
-- broad shield-form forearms
-- clean symmetrical verdict geometry
-- layered ceremonial chest bands
-- Armor is sacred regalia fused to a living solar body, not mechanical plates.
-- Pylon and temple forms must wrap as collars, crowns, shields, or halos, never become a building-shaped torso.
-- Sharp geometry should be broken by living light, gesture, and anatomy.
+### Textures
+- hand-hammered electrum and bronze with ritual dents, edge wear, and sand-softened corners
+- faience-like blue-green glaze, lapis chips, obsidian enamel cracks lit from within
+- linen fibers stiffened into divine armor folds, sun-bleached at the edges
+- carved relief bands showing abstract stars, river ripples, feathers, barque arcs, and balance geometry without readable text
+- heat shimmer, desert abrasion, Nile polish, and incense smoke staining around sacred seams
+- scarab-shell iridescence or lion-fur shadow only when the Titan’s myth anchor calls for it
 
-### Symbols and textures
-- solar disc
-- weighing scales implied by balance geometry
-- ankh-like negative space without readable symbols
-- papyrus seams
-- falcon/jackal/cobra crown hints
-- judgement rays
-- polished but ancient metal with hand-forged irregularities
-- sand-softened edges
-- engraved solar law glyphs without readable text
-- heat shimmer around bright seams
-- obsidian enamel cracked by inner light
+### Colors
+- white-gold noon light
+- electrum gold
+- burnished bronze
+- lapis/obsidian blue-black
+- faience turquoise
+- Nile silt black
+- desert red jasper
+- papyrus green
+- lotus pink
+- ivory limestone
 
-### Titan / NPC / creature rules
-- Titans read as colossal solar laws incarnate: serene, immovable, radiant, and terrifyingly alive.
-- Use massive guardian silhouettes, solar halos, and ceremonial asymmetry only when it supports personality.
-- No city-on-body, no temple-on-legs, no block pyramids, no robot sarcophagus chassis.
-- NPCs wear practical priest-scribe or court regalia with linen, bronze seals, ink tools, sun veils, and obsidian tablets.
-- Faces should carry fatigue, duty, scholarship, or judgment — not superhero confidence.
-- Use sun-baked fabric folds, bronze writing tools, and duty-worn ceremonial seals to show lived service.
-- Aten-aligned hostile creatures, if any, should appear as law-scorched beasts or solar constructs grown from divine punishment, not robots.
-- Punishment anatomy should include scorched masks, radiant scars, or judgment brands tied to Aten law.
-- Aten Ra creatureRules must remain specific to The Golden Dominion of Aten and visibly different from the other six factions.
+### Symbols
+- Aten sun-disc with life-giving hand-rays
+- Ma’at feather and balance geometry
+- solar barque arcs crossing sky/underworld motifs
+- scarab/Khepri renewal shell
+- uraeus cobra brow protection
+- falcon eye solar sight
+- jackal threshold mask
+- lion mane and knife marks for Maahes protection
+- lotus and papyrus for Nile fertility/order
+- throne glyph silhouette for Iset without readable text
+
+### Armor construction
+- Armor is divine office made physical: crown, collar, pectoral, linen, scale, pylon harness, and sacred weapon geometry bonded to living extradimensional anatomy.
+- Human Egyptian crowns, ankhs, pylons, collars, and temple forms are in-world human copies of these Aten Ra originals; the Titan version should feel older, stranger, and more functional.
+- Pylons, obelisks, shrines, and solar courts can influence silhouettes as shoulder frames, halos, gates, collars, shields, or weapons — never as building torsos or city-on-body decoration.
+- Every armor choice must reveal myth function: Ma’at law, Ra kingship, Aten radiance, Khepri renewal, Sutekh storm-disruption, Iset restoration, Maahes guarding, or Amunet concealment.
+
+### Titan rules
+- Titans read as colossal offices of cosmic law: Ra’s sovereign noon, Aten’s direct radiance, Khepri’s rebirth engine, Ma’at’s balance, Sutekh’s dangerous defense, Iset’s restoration, Maahes’ lion guard, or Amunet’s hidden execution.
+- Silhouettes should use divine regalia more than generic plate: collars, crowns, nemes-flow, pectorals, scarabs, scale forms, barque arcs, threshold masks, and pylon harnesses.
+- No city-on-body, no temple-on-legs, no block pyramids, no robot sarcophagus chassis, no tourist-costume pharaoh helmet.
+- Each Titan should imply which human deity or symbol humans later remembered incorrectly.
+
+### NPC rules
+- NPCs wear lived-in priest-scribe, gate-judge, embalmer-architect, river astronomer, court official, or solar engineer regalia with linen folds, wax seals, faience beads, bronze tools, ink palettes, and obsidian tablets.
+- Faces should carry duty, fatigue, scholarship, fear of judgment, or devotion to Ma’at — not superhero confidence.
+- Use sun-baked fabric folds, worn sandals, ritual collars, reed pens, palettes, measuring cords, star charts, and duty-worn ceremonial seals to show service inside the Realm.
+- NPC clothing must look like the practical source of later human priestly/royal costume, not a replica of museum clothing.
+
+### Creature rules
+- Aten creatures should look like divine law turned predatory: solar brands, judgement masks, desert-scorched hide, obsidian enamel wounds, and punishment anatomy that could only come from the Solar Dominion of Khepra.
+- Punishment anatomy should include scorched Ma’at-feather brands, radiant scars, jackal/cobra/lion threshold masks, or scarab renewal growths tied to a specific Aten rite.
+- Set-aligned beasts may be storm-red desert guardians rather than pure villains, while Isfet-corrupted variants twist order into violence and broken symmetry.
+- Creatures must remain mythic animals/law-spirits/punishment constructs grown from divine force, not robots or generic undead mummies.
 
 ### Environment rules
-- Architecture uses monumental courts, pylons, sun roads, cracked gold stone, obsidian shadow pools, and white-hot light bands.
-- Environments may be architectural; characters must not become architecture.
-- Lighting should create readable sacred hierarchy: throne, judgment path, archive, seal, then battlefield danger.
+- The realm is built around Nile/Red Land duality: black fertile river-memory channels, lotus/papyrus courts, sun-white limestone terraces, and red desert storm bastions held together by Ma’at geometry.
+- Architecture uses pylons, open sun courts, obelisks, barque canals, necropolis horizons, measuring halls, throne sanctums, faience pools, and shadow archives — but characters must not become architecture.
+- Lighting should create readable sacred hierarchy: horizon, sun-disc, throne, judgment scale, river channel, archive seal, battlefield danger.
+- Humans later copied these forms as temples, crowns, tombs, and funerary art; the realm version should be larger, stranger, alive, and directly functional.
 
 ### Avoid
 - robot armor
@@ -76,413 +119,623 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 - flat gold statue
 - sarcophagus robot
 - readable text glyphs
+- tourist pharaoh costume
+- mummy wrap monster unless explicitly Hollow-corrupted
+- random animal mashup without myth function
+- modern jewelry fashion
+- clean plastic gold
 
-## Asgardian — Valhalla Stormholds
+## Asgardian — The Storm-Rooted Aesir Holds
 
-**Visual thesis:** Asgardians look oath-forged: storm, iron, rune, scar, and saga made flesh. Their designs should feel like living war weather bound by vows, not bulky robots or generic Vikings.
+**Visual thesis:** Asgardians are the source behind human Norse saga: oath, storm, world-root, raven wisdom, Valkyrie death-law, and Ragnarok pressure made living. They must feel older than Viking imagery; human longhalls, runes, shields, funeral rites, and storm gods are echoes of this realm.
+
+### Mythic source anchors
+- Odin: ravens, sacrifice, runes, hidden wisdom, war kingship
+- Thor: thunder, hammer impact, protection, giant-breaking storms
+- Freyja/Valkyries: choosing the slain, battle fate, swan/raven/boar omens
+- Yggdrasil: world-tree roots, nine-world crossings, wyrd memory
+- Valhalla/einherjar: honored dead, feast before final war
+- Ragnarok: doom pressure, wolf, serpent, fire, winter, necessary endings
+- Aesir/Vanir: oath politics, fertility/wisdom exchange, divine hostage memory
+- Jotnar: frost, mountain scale, primal opposition
 
 ### Body anatomy
-- Anatomy is rugged, wind-carved, muscular or giantlike, with visible weight and battle history.
-- Energy should surge like storm blood through scars, eyes, braids, weapons, and rune burns.
-- Nonhuman Titan anatomy can include antlered storm crowns, giant proportions, raven/shield motifs, or root-like world-tree veins while staying character-readable.
+- Bodies must feel like living offices of Asgardian myth-source power, not humans in costume.
+- Keep head, torso, limbs, gesture, expression, and role readability clear even when spirit, armor, or realm force fuses with anatomy.
+- Animal, monster, wing, horn, mask, root, wheel, or omen traits must serve a named myth function, never random decoration.
+- The silhouette must make the The Storm-Rooted Aesir Holds visible before color or labels are read.
+
+### Armor shape language
+- source-culture regalia humans later copied: source culture humans later copied as Norse myth
+- storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.
+- rank/function shown through armor construction, posture, tools, and materials rather than costume clichés
+- weapons and armor must reveal battlefield role and myth anchor
 
 ### Materials
-- primary: dark rune iron, storm steel, worn leather, wolf fur
-- secondary: blue-white lightning, ash wood, old bone, blackened chain
-- accent: ice frost, red oath wax, silver rune sparks
+- primary: dark rune iron, storm steel, ash wood, wolf fur
+- secondary: raven feather shadow, oath red wax, bone white, blackwinter frost
+- accent: funeral ember, world-root bark
 
-### Armor and silhouette
-- rune-iron plates
-- storm-battered mail
-- oath-ring collars
-- fur and cloak mass
-- wing/raven shoulder hints
-- hammered shield curves
-- knotwork bracers
-- Armor feels hand-forged, heavy, and oath-bound, never clean sci-fi plating.
-- Runes sit carved or burned into material, not glowing UI strips.
-- Fur and cloth can break the silhouette so it does not become a blocky metal mass.
+### Textures
+- handmade sacred wear, weathering, ritual damage, and age older than human civilization
+- surfaces show lived law: scars, seals, roots, feathers, chains, bells, runes, or reliefs as physical material
+- energy emerges from wounds, joints, breath, eyes, tools, and terrain rather than UI strips
+- never use readable real-world text; marks are abstract, ancient, and functional
 
-### Symbols and textures
-- runes as abstract carved marks
-- ravens
-- world-tree roots
-- oath rings
-- storm spirals
-- broken shields
-- wolf teeth
-- hammer marks
-- battle dents
-- burned rune grooves
-- wet storm sheen
-- frayed cloak fibers
-- old blood and soot in seams
+### Colors
+- dark rune iron
+- storm steel
+- ash wood
+- wolf fur
+- raven feather shadow
+- oath red wax
+- bone white
+- blackwinter frost
+- funeral ember
+- world-root bark
 
-### Titan / NPC / creature rules
-- Titans should read as saga-scale storm beings with living lightning, giant anatomy, and oath posture.
-- Avoid square hammer-mech proportions; use organic mass, scars, hair, cloaks, and storm motion.
-- Asgardian titanRules must remain specific to Valhalla Stormholds and visibly different from the other six factions.
-- NPCs should look like oath witnesses, skalds, shield-priests, ravenscouts, or storm wardens with lived-in gear.
-- Costumes should show rank through oath rings, cloak weight, rune tokens, and weapon wear rather than polished royal costume.
-- Asgardian npcRules must remain specific to Valhalla Stormholds and visibly different from the other six factions.
-- Creatures draw from wolves, ravens, frost dead, giants, and storm-warped beasts; keep them mythic rather than alien.
-- Creature surfaces should carry storm scars, frost breath, broken oath chains, or world-tree infection when lore supports it.
-- Asgardian creatureRules must remain specific to Valhalla Stormholds and visibly different from the other six factions.
+### Symbols
+- Odin: ravens, sacrifice, runes, hidden wisdom, war kingship
+- Thor: thunder, hammer impact, protection, giant-breaking storms
+- Freyja/Valkyries: choosing the slain, battle fate, swan/raven/boar omens
+- Yggdrasil: world-tree roots, nine-world crossings, wyrd memory
+- Valhalla/einherjar: honored dead, feast before final war
+- Ragnarok: doom pressure, wolf, serpent, fire, winter, necessary endings
+- Aesir/Vanir: oath politics, fertility/wisdom exchange, divine hostage memory
+- Jotnar: frost, mountain scale, primal opposition
+
+### Armor construction
+- Every armor choice must prove the source-culture premise: source culture humans later copied as Norse myth.
+- Avoid museum cosplay; the Realm version is older, stranger, alive, and operational.
+- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or halos, but characters must not become buildings.
+- Role clarity beats ornament.
+
+### Titan rules
+- Titans read as colossal myth offices of The Storm-Rooted Aesir Holds, with anatomy and armor fused by function.
+- Each Titan should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
+- Avoid robot, mech, statue, mascot, and costume readings.
+- Preserve mobile-readable role silhouette.
+
+### NPC rules
+- NPCs should look like people who maintain The Storm-Rooted Aesir Holds as living civilization: witnesses, envoys, scribes, priests, judges, brokers, scouts, cartographers, or keepers.
+- Their clothing and tools are practical source-culture artifacts later copied by humans.
+- Faces carry duty, fear, pride, devotion, fatigue, or cunning — not generic hero posing.
+- Use worn regalia and task tools to show social role.
+
+### Creature rules
+- Creatures are realm law made animal, punishment, omen, guardian, or corruption, specific to Asgardian.
+- Monster anatomy must reference a myth function from the anchors.
+- Hollow-corrupted variants twist that faction’s order into broken asymmetry.
+- Avoid generic alien beasts.
 
 ### Environment rules
-- Use suspended bridges, long halls, rune iron, storm clouds, charred oath stones, hanging chains, and broken battle standards.
-- Weather must shape the scene physically through soaked iron, snapped banners, lightning scars, and wind-carved snow or ash.
-- Asgardian environmentRules must remain specific to Valhalla Stormholds and visibly different from the other six factions.
+- Environments must show The Storm-Rooted Aesir Holds as the source behind human mythic spaces, not a themed set.
+- Landmarks, weather, hazards, and sacred architecture physically shape movement.
+- Terrain danger must be embedded in culture and myth: no game-board glow or arbitrary colored tiles.
+- Humans later copied these places as temples, halls, shrines, courts, stories, and monster geographies.
 
 ### Avoid
-- sci-fi power armor
-- generic horned helmet cosplay
-- blocky metal torso
-- robot joints
-- clean chrome
-- spaceship panels
-- glowing UI runes
 - cartoon Viking
+- generic horned helmet cosplay
+- clean chrome
+- sci-fi power armor
+- glowing UI runes
+- blocky hammer mech
+- modern biker leather
+- random Celtic knotwork
+- plastic fur
+- spaceship panels
 
-## Olympian — The Marble Sky Courts
+## Olympian — The Celestial Heights of Olympus
 
-**Visual thesis:** Olympians are victory, beauty, trial, and divine politics made visible. They should look like living marble-light champions and judges with impossible grace, never marble buildings or superhero statues.
+**Visual thesis:** Olympians are the source behind human Greek myth: contest, polis, prophecy, marble, bronze, sky law, divine politics, and victory made bodily. They should feel like the original court of gods that humans later carved into temples and epics.
 
-### Body anatomy
-- Anatomy is idealized but not human-normal: elongated heroic proportions, divine poise, flowing movement, and controlled theatrical expression.
-- Marble, bronze, laurel, and starlight may fuse into skin or armor, but the body remains alive and expressive.
-- Silhouettes favor open readable poses, sweeping capes, halos, wings, wreath forms, and tribunal geometry.
-
-### Materials
-- primary: white marble flesh/armor, polished bronze, sunlit gold
-- secondary: laurel green, star enamel, cloud-white cloth
-- accent: violet dusk shadow, red victory ribbons, pale blue sky light
-
-### Armor and silhouette
-- bronze cuirass curves
-- laurel crowns
-- marble mask accents
-- open heroic shoulder plates
-- flowing divine cloth
-- star-lit hems
-- tribunal halo arcs
-- Armor is ceremonial but battle-ready; avoid modern superhero suit logic.
-- Marble details should be skin-like or plate-like, not columns, stairs, or building fragments attached to anatomy.
-- Use fabric and laurel to soften hard symmetry.
-
-### Symbols and textures
-- laurel wreath
-- thunderbolt abstraction
-- wing arcs
-- sun spear rays
-- victory ribbons
-- trial circles
-- constellation marks
-- smooth marble veining over living surfaces
-- worn bronze edges
-- embroidered divine cloth
-- laurel leaves with metallic veins
-- soft cloud glow
-
-### Titan / NPC / creature rules
-- Titans should feel like divine archetypes of victory, punishment, beauty, and law, with impossible elegance and scale.
-- Never make them literal arenas, statues, column people, or marble block giants.
-- Olympian titanRules must remain specific to The Marble Sky Courts and visibly different from the other six factions.
-- NPCs use envoy, oracle, champion, judge, or laurel courier designs with readable emotion and court politics in their costume.
-- Political status should appear through laurel quality, bronze polish, robe drape, and court insignia.
-- Olympian npcRules must remain specific to The Marble Sky Courts and visibly different from the other six factions.
-- Creatures can echo bronze bulls, harpies, oath lions, sky serpents, or trial-born monsters with divine polish and menace.
-- Monsters should look trial-bred or curse-born, with beauty and menace in the same silhouette.
-- Olympian creatureRules must remain specific to The Marble Sky Courts and visibly different from the other six factions.
-
-### Environment rules
-- Use floating marble arenas, bronze braces, clouds, broken columns, tribunal circles, laurel gardens, and star balconies.
-- Composition should frame conflict like a divine public trial: audience spaces, podiums, victory paths, and exposed sky.
-- Olympian environmentRules must remain specific to The Marble Sky Courts and visibly different from the other six factions.
-
-### Avoid
-- superhero costume
-- literal statue
-- column limbs
-- building torso
-- block marble giant
-- generic toga cosplay
-- clean sci-fi armor
-- plastic gold
-
-## Kami — The Thousand Shrine Roads
-
-**Visual thesis:** Kami designs should feel like spirit, shrine, ink, foxfire, and sacred weather crossing into living form. They are elegant, haunted, and ritualized — not anime robots, block shrines, or generic samurai armor.
+### Mythic source anchors
+- Zeus: sky authority, thunder verdict, kingship
+- Athena: strategy, aegis, owl sight, spear and shield order
+- Apollo: prophecy, sun clarity, music, plague/purification
+- Artemis: wild thresholds, moon hunt, bow discipline
+- Ares/Nike: war fury and victory personified
+- Hephaestus: divine forge, bronze automata avoided unless sacred craft not robot
+- Hermes: crossings, heralds, speed, trick boundaries
+- Poseidon: sea-quake, horse surge, deep foundations
+- Oracle/agon/polis: contest, prophecy, civic politics, witnessed excellence
 
 ### Body anatomy
-- Anatomy can be spiritlike, masked, many-tailed, sleeve-flowing, or partially translucent, but the character remains readable.
-- Movement should feel like calligraphy, smoke, foxfire, rain, paper, or shrine bells.
-- Faces may be hidden by masks or veils, but expression must survive through posture, eyes, aura, and hand gesture.
+- Bodies must feel like living offices of Olympian myth-source power, not humans in costume.
+- Keep head, torso, limbs, gesture, expression, and role readability clear even when spirit, armor, or realm force fuses with anatomy.
+- Animal, monster, wing, horn, mask, root, wheel, or omen traits must serve a named myth function, never random decoration.
+- The silhouette must make the The Celestial Heights of Olympus visible before color or labels are read.
+
+### Armor shape language
+- source-culture regalia humans later copied: source culture humans later copied as Greek myth
+- living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal halos, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands.
+- rank/function shown through armor construction, posture, tools, and materials rather than costume clichés
+- weapons and armor must reveal battlefield role and myth anchor
 
 ### Materials
-- primary: red lacquer, black ink, shrine wood, white paper, moonlit silk
-- secondary: foxfire blue, weathered stone, gold cord, mist glass
-- accent: vermilion, soot black, pale moon silver, cedar green
+- primary: living white marble, warm bronze, laurel green, aegis scale gold
+- secondary: storm blue, oracle violet smoke, ambrosial ivory, sunlit gold
+- accent: sea-deep teal, polished black amphora ceramic
 
-### Armor and silhouette
-- lacquered spirit plates
-- folded paper mantle forms
-- torii-inspired halo arcs
-- wide shrine sleeves
-- mask crests
-- cord and bell ties
-- moonlit blade silhouettes
-- Armor should feel ritual-lacquered and spirit-bound, not mechanical samurai plating.
-- Torii and shrine forms appear as halo, crest, staff, sleeve architecture, or aura — not literal buildings on the body.
-- Use cloth, smoke, cords, and paper to prevent block silhouettes.
+### Textures
+- handmade sacred wear, weathering, ritual damage, and age older than human civilization
+- surfaces show lived law: scars, seals, roots, feathers, chains, bells, runes, or reliefs as physical material
+- energy emerges from wounds, joints, breath, eyes, tools, and terrain rather than UI strips
+- never use readable real-world text; marks are abstract, ancient, and functional
 
-### Symbols and textures
-- torii gates as halo language
-- ofuda paper strips without readable text
-- foxfire lanterns
-- mirror discs
-- shrine ropes
-- bells
-- moon arcs
-- brush strokes
-- brush ink bleeding into cloth
-- aged lacquer cracks
-- paper fiber edges
-- mist-soft transparency
-- shrine rope braids
-- wet stone shine
+### Colors
+- living white marble
+- warm bronze
+- laurel green
+- aegis scale gold
+- storm blue
+- oracle violet smoke
+- ambrosial ivory
+- sunlit gold
+- sea-deep teal
+- polished black amphora ceramic
 
-### Titan / NPC / creature rules
-- Titans should read as colossal kami phenomena with living spirit anatomy, ritual grace, and haunted scale.
-- Avoid gundam/mecha shapes, block shrine torsos, giant torii backpacks that dominate anatomy, and generic oni without faction language.
-- Kami titanRules must remain specific to The Thousand Shrine Roads and visibly different from the other six factions.
-- NPCs should show shrine duties: cartographers, mediums, wardens, foxfire guides, mask bearers, spirit scribes.
-- Personal role should appear through map scrolls, ward cords, lanterns, mask type, brush cases, or shrine tokens.
-- Kami npcRules must remain specific to The Thousand Shrine Roads and visibly different from the other six factions.
-- Creatures can be yōkai-like but must stay specific: lantern mouths, paper ghosts, foxfire beasts, shrine-bound revenants, mirror-water spirits.
-- Spirit creatures should show a ritual anchor such as lantern, ofuda, bell, mirror, rope, or torii shadow.
-- Kami creatureRules must remain specific to The Thousand Shrine Roads and visibly different from the other six factions.
+### Symbols
+- Zeus: sky authority, thunder verdict, kingship
+- Athena: strategy, aegis, owl sight, spear and shield order
+- Apollo: prophecy, sun clarity, music, plague/purification
+- Artemis: wild thresholds, moon hunt, bow discipline
+- Ares/Nike: war fury and victory personified
+- Hephaestus: divine forge, bronze automata avoided unless sacred craft not robot
+- Hermes: crossings, heralds, speed, trick boundaries
+- Poseidon: sea-quake, horse surge, deep foundations
+- Oracle/agon/polis: contest, prophecy, civic politics, witnessed excellence
+
+### Armor construction
+- Every armor choice must prove the source-culture premise: source culture humans later copied as Greek myth.
+- Avoid museum cosplay; the Realm version is older, stranger, alive, and operational.
+- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or halos, but characters must not become buildings.
+- Role clarity beats ornament.
+
+### Titan rules
+- Titans read as colossal myth offices of The Celestial Heights of Olympus, with anatomy and armor fused by function.
+- Each Titan should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
+- Avoid robot, mech, statue, mascot, and costume readings.
+- Preserve mobile-readable role silhouette.
+
+### NPC rules
+- NPCs should look like people who maintain The Celestial Heights of Olympus as living civilization: witnesses, envoys, scribes, priests, judges, brokers, scouts, cartographers, or keepers.
+- Their clothing and tools are practical source-culture artifacts later copied by humans.
+- Faces carry duty, fear, pride, devotion, fatigue, or cunning — not generic hero posing.
+- Use worn regalia and task tools to show social role.
+
+### Creature rules
+- Creatures are realm law made animal, punishment, omen, guardian, or corruption, specific to Olympian.
+- Monster anatomy must reference a myth function from the anchors.
+- Hollow-corrupted variants twist that faction’s order into broken asymmetry.
+- Avoid generic alien beasts.
 
 ### Environment rules
-- Use torii roads, cedar roots, moss stone, lantern smoke, mirror lakes, paper wards, moonlit rain, and sacred dusk.
-- Atmosphere should rely on mist, lantern smoke, wet stone, cedar shadow, and moon reflection rather than neon effects.
-- Kami environmentRules must remain specific to The Thousand Shrine Roads and visibly different from the other six factions.
+- Environments must show The Celestial Heights of Olympus as the source behind human mythic spaces, not a themed set.
+- Landmarks, weather, hazards, and sacred architecture physically shape movement.
+- Terrain danger must be embedded in culture and myth: no game-board glow or arbitrary colored tiles.
+- Humans later copied these places as temples, halls, shrines, courts, stories, and monster geographies.
 
 ### Avoid
-- mecha samurai
-- anime robot
-- literal shrine body
-- block torii stack
+- generic toga costume
+- Roman gladiator confusion
+- marble statue stiffness
+- robot bronze automaton
+- sci-fi halo
+- neon arena grid
+- tourist Greek temple body
+- plastic gold laurel
+- readable Greek text
+- superhero cape
+
+## Kami — The Sacred Kingdoms
+
+**Visual thesis:** Kami are the source behind human Japanese spirit lore: shrine threshold, nature divinity, masks, foxfire, purification, dragon rain, and twilight yōkai law made living. Designs must feel sacred and uncanny, not anime samurai costumes.
+
+### Mythic source anchors
+- Kami: spirits, nature forces, ancestors, sacred qualities
+- Shinto shrine practice: torii thresholds, purification, offerings, shimenawa, shide
+- Kitsune/Inari echoes: foxfire, shapeshift, messengers, rice/abundance
+- Tengu: mountain wind, discipline, masks, feathers
+- Oni: punishment, iron clubs, gate violence, taboo breach
+- Ryujin/dragons: rain, sea palace, water sovereignty
+- Three regalia echoes: mirror truth, sword storm, jewel spirit
+- Onmyodo/yin-yang: divination, balance, talisman geometry
+- Yokai liminality: twilight, masks, haunted objects, boundary ambiguity
+
+### Body anatomy
+- Bodies must feel like living offices of Kami myth-source power, not humans in costume.
+- Keep head, torso, limbs, gesture, expression, and role readability clear even when spirit, armor, or realm force fuses with anatomy.
+- Animal, monster, wing, horn, mask, root, wheel, or omen traits must serve a named myth function, never random decoration.
+- The silhouette must make the The Sacred Kingdoms visible before color or labels are read.
+
+### Armor shape language
+- source-culture regalia humans later copied: source culture humans later copied as Japanese myth and Shinto shrine lore
+- torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash.
+- rank/function shown through armor construction, posture, tools, and materials rather than costume clichés
+- weapons and armor must reveal battlefield role and myth anchor
+
+### Materials
+- primary: lacquered shrine red, aged cedar, white paper shide, braided straw rope
+- secondary: moonlit silk, black ink smoke, foxfire blue, mirror silver
+- accent: rain jade, oni iron, vermilion ash
+
+### Textures
+- handmade sacred wear, weathering, ritual damage, and age older than human civilization
+- surfaces show lived law: scars, seals, roots, feathers, chains, bells, runes, or reliefs as physical material
+- energy emerges from wounds, joints, breath, eyes, tools, and terrain rather than UI strips
+- never use readable real-world text; marks are abstract, ancient, and functional
+
+### Colors
+- lacquered shrine red
+- aged cedar
+- white paper shide
+- braided straw rope
+- moonlit silk
+- black ink smoke
+- foxfire blue
+- mirror silver
+- rain jade
+- oni iron
+- vermilion ash
+
+### Symbols
+- Kami: spirits, nature forces, ancestors, sacred qualities
+- Shinto shrine practice: torii thresholds, purification, offerings, shimenawa, shide
+- Kitsune/Inari echoes: foxfire, shapeshift, messengers, rice/abundance
+- Tengu: mountain wind, discipline, masks, feathers
+- Oni: punishment, iron clubs, gate violence, taboo breach
+- Ryujin/dragons: rain, sea palace, water sovereignty
+- Three regalia echoes: mirror truth, sword storm, jewel spirit
+- Onmyodo/yin-yang: divination, balance, talisman geometry
+- Yokai liminality: twilight, masks, haunted objects, boundary ambiguity
+
+### Armor construction
+- Every armor choice must prove the source-culture premise: source culture humans later copied as Japanese myth and Shinto shrine lore.
+- Avoid museum cosplay; the Realm version is older, stranger, alive, and operational.
+- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or halos, but characters must not become buildings.
+- Role clarity beats ornament.
+
+### Titan rules
+- Titans read as colossal myth offices of The Sacred Kingdoms, with anatomy and armor fused by function.
+- Each Titan should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
+- Avoid robot, mech, statue, mascot, and costume readings.
+- Preserve mobile-readable role silhouette.
+
+### NPC rules
+- NPCs should look like people who maintain The Sacred Kingdoms as living civilization: witnesses, envoys, scribes, priests, judges, brokers, scouts, cartographers, or keepers.
+- Their clothing and tools are practical source-culture artifacts later copied by humans.
+- Faces carry duty, fear, pride, devotion, fatigue, or cunning — not generic hero posing.
+- Use worn regalia and task tools to show social role.
+
+### Creature rules
+- Creatures are realm law made animal, punishment, omen, guardian, or corruption, specific to Kami.
+- Monster anatomy must reference a myth function from the anchors.
+- Hollow-corrupted variants twist that faction’s order into broken asymmetry.
+- Avoid generic alien beasts.
+
+### Environment rules
+- Environments must show The Sacred Kingdoms as the source behind human mythic spaces, not a themed set.
+- Landmarks, weather, hazards, and sacred architecture physically shape movement.
+- Terrain danger must be embedded in culture and myth: no game-board glow or arbitrary colored tiles.
+- Humans later copied these places as temples, halls, shrines, courts, stories, and monster geographies.
+
+### Avoid
+- anime mecha samurai
 - generic ninja
-- modern streetwear
+- literal shrine body
+- plastic kimono costume
+- random kanji text
 - neon cyberpunk
-- readable Japanese text
+- cute mascot fox
+- oversized manga weapon
+- sci-fi armor
+- flat mask with no spirit function
 
-## Tuatha — Avalora Moon-Groves
+## Tuatha — Avalora
 
-**Visual thesis:** Tuatha visuals are moonlit fae sovereignty, living forest memory, silver oathcraft, and dangerous beauty. They should feel grown, enchanted, and ancient — not leafy humans, wooden block giants, or generic elves.
+**Visual thesis:** Tuatha are the source behind human Celtic fae and divine lore: otherworld sovereignty, sídhe gates, geasa, memory forests, crow prophecy, poetic flame, silver oathcraft, and dangerous beauty made physical.
+
+### Mythic source anchors
+- Tuatha Dé Danann: divine tribes, craft, sovereignty, otherworld descent
+- Aos Sí/Sídhe: mound gates, hidden courts, fae ancestry
+- Tír na nÓg: youth, impossible time, otherworld beauty
+- Morrígan: battle crow, fate, war prophecy
+- Brigid: flame, poetry, smithcraft, healing inspiration
+- Lugh: many-skilled radiance, spear, mastery
+- Dagda/Cauldron: abundance, life, feast, restoration
+- Geasa: sacred taboos and binding conditions
+- Druid/standing stones: prophecy, memory, ritual landscape
 
 ### Body anatomy
-- Anatomy is graceful, uncanny, root-veined, antlered, thorn-crowned, or moonlit, with living motion and predatory calm.
-- Plant material may grow from body and armor but must follow anatomy, muscle lines, hair, horns, or aura rather than forming chunks.
-- Fae asymmetry is welcome: one branch arm, half-moon antlers, bark scars, moth-wing veils, or mossed shoulders if readable.
+- Bodies must feel like living offices of Tuatha myth-source power, not humans in costume.
+- Keep head, torso, limbs, gesture, expression, and role readability clear even when spirit, armor, or realm force fuses with anatomy.
+- Animal, monster, wing, horn, mask, root, wheel, or omen traits must serve a named myth function, never random decoration.
+- The silhouette must make the Avalora visible before color or labels are read.
+
+### Armor shape language
+- source-culture regalia humans later copied: source culture humans later copied as Celtic and Irish fae myth
+- silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.
+- rank/function shown through armor construction, posture, tools, and materials rather than costume clichés
+- weapons and armor must reveal battlefield role and myth anchor
 
 ### Materials
-- primary: moon silver, living wood, moss, thorn, root, pale stone
-- secondary: bronze relics, dew glass, moth wing membrane, black soil
-- accent: soft green light, red berry/blood hints, blue moon glow
+- primary: moon silver, living oak bark, thorn vine, moss velvet
+- secondary: green-gold light, fae glass, crow black feather, standing-stone gray
+- accent: cauldron bronze, Brigid ember, mist pearl
 
-### Armor and silhouette
-- silver filigree armor
-- thorn collars
-- moonstone plates
-- bark-fused bracers
-- moss cloaks
-- antler crowns
-- root lace greaves
-- petal-like scale layers
-- Armor is grown and oath-forged from forest memory, never strapped-on fantasy plate alone.
-- Roots and branches must not become cubic terrain chunks or tree houses on the body.
-- Keep limb flow visible through bark, moss, and silver.
+### Textures
+- handmade sacred wear, weathering, ritual damage, and age older than human civilization
+- surfaces show lived law: scars, seals, roots, feathers, chains, bells, runes, or reliefs as physical material
+- energy emerges from wounds, joints, breath, eyes, tools, and terrain rather than UI strips
+- never use readable real-world text; marks are abstract, ancient, and functional
 
-### Symbols and textures
-- moon crescents
-- antlers
-- standing stones
-- spiral knots
-- thorns
-- roots
-- moth wings
-- sacred wells
-- seed crowns
-- bark grain following anatomy
-- dew on moss
-- woven root lace
-- tarnished silver
-- petal translucency
-- thorn scratches
-- soft fae glow under skin
+### Colors
+- moon silver
+- living oak bark
+- thorn vine
+- moss velvet
+- green-gold light
+- fae glass
+- crow black feather
+- standing-stone gray
+- cauldron bronze
+- Brigid ember
+- mist pearl
 
-### Titan / NPC / creature rules
-- Titans feel like ancient grove sovereigns or moon-beasts: alive, rooted in realm memory, beautiful and dangerous.
-- Avoid giant walking trees unless anatomy, face, gesture, and faction regalia are unmistakable.
-- Tuatha titanRules must remain specific to Avalora Moon-Groves and visibly different from the other six factions.
-- NPCs use druid, root-memory keeper, fae knight, moon envoy, hunter, or well oracle visual logic with intimate handcrafted details.
-- Costume status should appear through handmade silver knots, seed charms, mossed cloaks, well tokens, and thorn vows.
-- Tuatha npcRules must remain specific to Avalora Moon-Groves and visibly different from the other six factions.
-- Creatures can be thorn hounds, moon stags, root revenants, bog fae, flower parasites, or memory beasts.
-- Fae creatures should feel beautiful enough to lure and dangerous enough to punish, with natural camouflage or memory marks.
-- Tuatha creatureRules must remain specific to Avalora Moon-Groves and visibly different from the other six factions.
+### Symbols
+- Tuatha Dé Danann: divine tribes, craft, sovereignty, otherworld descent
+- Aos Sí/Sídhe: mound gates, hidden courts, fae ancestry
+- Tír na nÓg: youth, impossible time, otherworld beauty
+- Morrígan: battle crow, fate, war prophecy
+- Brigid: flame, poetry, smithcraft, healing inspiration
+- Lugh: many-skilled radiance, spear, mastery
+- Dagda/Cauldron: abundance, life, feast, restoration
+- Geasa: sacred taboos and binding conditions
+- Druid/standing stones: prophecy, memory, ritual landscape
+
+### Armor construction
+- Every armor choice must prove the source-culture premise: source culture humans later copied as Celtic and Irish fae myth.
+- Avoid museum cosplay; the Realm version is older, stranger, alive, and operational.
+- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or halos, but characters must not become buildings.
+- Role clarity beats ornament.
+
+### Titan rules
+- Titans read as colossal myth offices of Avalora, with anatomy and armor fused by function.
+- Each Titan should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
+- Avoid robot, mech, statue, mascot, and costume readings.
+- Preserve mobile-readable role silhouette.
+
+### NPC rules
+- NPCs should look like people who maintain Avalora as living civilization: witnesses, envoys, scribes, priests, judges, brokers, scouts, cartographers, or keepers.
+- Their clothing and tools are practical source-culture artifacts later copied by humans.
+- Faces carry duty, fear, pride, devotion, fatigue, or cunning — not generic hero posing.
+- Use worn regalia and task tools to show social role.
+
+### Creature rules
+- Creatures are realm law made animal, punishment, omen, guardian, or corruption, specific to Tuatha.
+- Monster anatomy must reference a myth function from the anchors.
+- Hollow-corrupted variants twist that faction’s order into broken asymmetry.
+- Avoid generic alien beasts.
 
 ### Environment rules
-- Use living labyrinth roots, moon groves, moss stones, sacred wells, dew mirrors, bent flowers, and forest paths that remember footsteps.
-- Paths should feel alive and aware, with roots and moonlight guiding the eye instead of artificial markers.
-- Tuatha environmentRules must remain specific to Avalora Moon-Groves and visibly different from the other six factions.
+- Environments must show Avalora as the source behind human mythic spaces, not a themed set.
+- Landmarks, weather, hazards, and sacred architecture physically shape movement.
+- Terrain danger must be embedded in culture and myth: no game-board glow or arbitrary colored tiles.
+- Humans later copied these places as temples, halls, shrines, courts, stories, and monster geographies.
 
 ### Avoid
 - generic elf
-- treehouse body
 - wood block giant
-- terrain chunks
-- literal forest on shoulders
-- cute fairy
+- treehouse body
+- cute fairy wings
+- random Celtic clipart knots
+- Renaissance costume
+- sci-fi nature armor
+- terrain chunks on shoulders
 - plastic leaves
-- square bark limbs
+- readable runes
 
-## Empyrean — The Choir Vaults
+## Empyrean — The Radiant Hierarchies
 
-**Visual thesis:** Empyreans are authority sung into form: white-gold light, glass, wings, bells, edicts, and celestial geometry. They must look like living angelic law from outside reality, not robots, spaceships, or cathedral buildings.
+**Visual thesis:** Empyreans are the source behind human angelic and heavenly lore: hierarchy, choir, messenger, burning wheel, throne, guardian, edict, and radiant city made alive. They should feel divine and alien in holiness, not church costume or robot angel.
+
+### Mythic source anchors
+- Seraphim: burning praise, purification flame, six-wing intensity
+- Cherubim: guardianship, threshold keeping, many-faced awe
+- Ophanim: wheels within wheels, eyes, impossible motion
+- Thrones: living judgement seats, authority embodied
+- Archangels/messengers: heraldry, command, warnings, intervention
+- Dominions/Virtues/Powers: hierarchy, governance, miracle force, defense against chaos
+- Heavenly city/ladder: ascent, gates, vaults, radiant order
+- Choirs/bells/edicts: sung law, resonance, sacred bureaucracy
 
 ### Body anatomy
-- Anatomy can be winged, many-eyed, haloed, faceless, or choir-like, but it remains an expressive living being.
-- Light should behave like voice and command: rings, waves, feathers, glass resonance, and luminous scars.
-- Use impossible sacred proportions without losing head/torso/limb or intentional mythic anatomy clarity.
+- Bodies must feel like living offices of Empyrean myth-source power, not humans in costume.
+- Keep head, torso, limbs, gesture, expression, and role readability clear even when spirit, armor, or realm force fuses with anatomy.
+- Animal, monster, wing, horn, mask, root, wheel, or omen traits must serve a named myth function, never random decoration.
+- The silhouette must make the The Radiant Hierarchies visible before color or labels are read.
+
+### Armor shape language
+- source-culture regalia humans later copied: source culture humans later copied as angelic and heavenly lore
+- white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.
+- rank/function shown through armor construction, posture, tools, and materials rather than costume clichés
+- weapons and armor must reveal battlefield role and myth anchor
 
 ### Materials
-- primary: white-gold light, celestial glass, pearl enamel, sanctified bone-white stone
-- secondary: star metal, pale cloth, luminous feathers, choir bell bronze
-- accent: blue-white resonance, red seal wax, black void shadow in cracks
+- primary: white gold, opal glass, bell bronze, pearl bone
+- secondary: blue-white holy fire, ivory scroll vellum, silver feather, transparent crystal
+- accent: sunlit marble, black silence cracks
 
-### Armor and silhouette
-- white-gold breast arcs
-- feathered plate layers
-- choir collar halos
-- glass wing facets
-- bell-shaped shoulder forms
-- edict scroll ribbons
-- radiant mask crowns
-- Armor is celestial regalia and resonant shell, not spaceship plating.
-- Cathedral references must appear as halo, collar, wing rhythm, or robe geometry, not literal towers or vaults as body parts.
-- Balance hard glass with feathers, cloth, and living light.
+### Textures
+- handmade sacred wear, weathering, ritual damage, and age older than human civilization
+- surfaces show lived law: scars, seals, roots, feathers, chains, bells, runes, or reliefs as physical material
+- energy emerges from wounds, joints, breath, eyes, tools, and terrain rather than UI strips
+- never use readable real-world text; marks are abstract, ancient, and functional
 
-### Symbols and textures
-- halos
-- wings
-- choir rings
-- bells
-- edict seals
-- star maps
-- many eyes
-- vertical light spears
-- etched glass feathers
-- pearl enamel glow
-- bell bronze patina
-- soft cloth with light seams
-- radiant cracks
-- choir-wave distortion
+### Colors
+- white gold
+- opal glass
+- bell bronze
+- pearl bone
+- blue-white holy fire
+- ivory scroll vellum
+- silver feather
+- transparent crystal
+- sunlit marble
+- black silence cracks
 
-### Titan / NPC / creature rules
-- Titans should feel like impossible angelic institutions made alive: overwhelming, serene, punitive, and luminous.
-- Avoid cathedral torso, block white tower, robot angel, or sci-fi energy suit.
-- Empyrean titanRules must remain specific to The Choir Vaults and visibly different from the other six factions.
-- NPCs should look like edict keepers, choir messengers, bell wardens, glass scribes, or fallen-light witnesses.
-- Rank should appear through halo complexity, bell tokens, glass-script tools, robe brightness, and edict seals.
-- Empyrean npcRules must remain specific to The Choir Vaults and visibly different from the other six factions.
-- Creatures can be broken choirs, glass-wing seraph beasts, bell revenants, edict wraiths, or light-blind predators.
-- Broken choir creatures should preserve sacred beauty while showing fracture, silence, or command corruption.
-- Empyrean creatureRules must remain specific to The Choir Vaults and visibly different from the other six factions.
+### Symbols
+- Seraphim: burning praise, purification flame, six-wing intensity
+- Cherubim: guardianship, threshold keeping, many-faced awe
+- Ophanim: wheels within wheels, eyes, impossible motion
+- Thrones: living judgement seats, authority embodied
+- Archangels/messengers: heraldry, command, warnings, intervention
+- Dominions/Virtues/Powers: hierarchy, governance, miracle force, defense against chaos
+- Heavenly city/ladder: ascent, gates, vaults, radiant order
+- Choirs/bells/edicts: sung law, resonance, sacred bureaucracy
+
+### Armor construction
+- Every armor choice must prove the source-culture premise: source culture humans later copied as angelic and heavenly lore.
+- Avoid museum cosplay; the Realm version is older, stranger, alive, and operational.
+- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or halos, but characters must not become buildings.
+- Role clarity beats ornament.
+
+### Titan rules
+- Titans read as colossal myth offices of The Radiant Hierarchies, with anatomy and armor fused by function.
+- Each Titan should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
+- Avoid robot, mech, statue, mascot, and costume readings.
+- Preserve mobile-readable role silhouette.
+
+### NPC rules
+- NPCs should look like people who maintain The Radiant Hierarchies as living civilization: witnesses, envoys, scribes, priests, judges, brokers, scouts, cartographers, or keepers.
+- Their clothing and tools are practical source-culture artifacts later copied by humans.
+- Faces carry duty, fear, pride, devotion, fatigue, or cunning — not generic hero posing.
+- Use worn regalia and task tools to show social role.
+
+### Creature rules
+- Creatures are realm law made animal, punishment, omen, guardian, or corruption, specific to Empyrean.
+- Monster anatomy must reference a myth function from the anchors.
+- Hollow-corrupted variants twist that faction’s order into broken asymmetry.
+- Avoid generic alien beasts.
 
 ### Environment rules
-- Use bone-white arches, suspended bells, choir galleries, sanctified stairs, glass mosaics, high apertures, and resonant dust.
-- Spaces should feel acoustically sacred: echoes, suspended bells, high shafts of light, and resonant dust.
-- Empyrean environmentRules must remain specific to The Choir Vaults and visibly different from the other six factions.
+- Environments must show The Radiant Hierarchies as the source behind human mythic spaces, not a themed set.
+- Landmarks, weather, hazards, and sacred architecture physically shape movement.
+- Terrain danger must be embedded in culture and myth: no game-board glow or arbitrary colored tiles.
+- Humans later copied these places as temples, halls, shrines, courts, stories, and monster geographies.
 
 ### Avoid
 - robot angel
 - spaceship armor
+- generic church costume
 - literal cathedral body
 - block tower silhouette
 - neon sci-fi halo
-- generic angel cosplay
-- chrome wings
-- UI rings
+- cute cherub baby
+- flat white statue
+- readable Bible text
+- mechanical drone wings
 
-## Infernal Dominion — The Black Iron Court
+## Infernal Dominion — The Infernal Dominion
 
-**Visual thesis:** The Infernal Dominion is royal violence, contract law, chains, ash, blood, black iron, and volcanic authority. Its beings should look like living bargains and tyrants from a hell court, not red robots, block fortresses, or generic demons.
+**Visual thesis:** The Infernal Dominion is the source behind human hell, demonology, and devil-contract lore: royal violence, debt, chain law, punishment fire, grimoire seals, horned hierarchy, and abyssal courts made real.
+
+### Mythic source anchors
+- Hell/underworld: punishment dimension, abyss, descent, prison geography
+- Devils/demon kings: hierarchy, temptation, rulership, court violence
+- Contracts/Faustian bargains: debt, signatures, clauses, payment
+- Goetia/grimoires: seals, names, summoning law, constrained powers
+- Chains: bondage, ownership, legal restraint, prison architecture
+- Hellfire/volcano/ash: punishment flame, industrial torment, molten authority
+- Horns/wings/claws: rank, predation, nobility, monstrous majesty
+- Judges/executioners: sentencing, sin weights, punishments made visible
 
 ### Body anatomy
-- Anatomy is predatory, regal, scarred, horned, chained, ember-veined, or ash-skinned, with readable face and posture.
-- Body language should imply contracts, dominance, punishment, seduction, execution, or aristocratic cruelty.
-- Horns, wings, tails, chains, and shadow limbs must serve silhouette and personality rather than clutter.
+- Bodies must feel like living offices of Infernal Dominion myth-source power, not humans in costume.
+- Keep head, torso, limbs, gesture, expression, and role readability clear even when spirit, armor, or realm force fuses with anatomy.
+- Animal, monster, wing, horn, mask, root, wheel, or omen traits must serve a named myth function, never random decoration.
+- The silhouette must make the The Infernal Dominion visible before color or labels are read.
+
+### Armor shape language
+- source-culture regalia humans later copied: source culture humans later copied as hell, demonology, and infernal contract lore
+- black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture.
+- rank/function shown through armor construction, posture, tools, and materials rather than costume clichés
+- weapons and armor must reveal battlefield role and myth anchor
 
 ### Materials
-- primary: black iron, obsidian, ash, blood-dark enamel, ember fire
-- secondary: volcanic glass, bone, smoked leather, brass verdict seals
-- accent: molten orange, crimson contract marks, sulfur yellow, deep shadow
+- primary: black iron, volcanic glass, obsidian, blood wax
+- secondary: ash velvet, molten gold, charred parchment, bone ivory
+- accent: cinder red, sulfur yellow, chain shadow
 
-### Armor and silhouette
-- black iron court plate
-- chain mantles
-- obsidian crowns
-- volcanic glass blades
-- executioner collars
-- contract-scroll sashes
-- thorned throne halos
-- hooked gauntlets
-- Armor feels forged in punishment and bonded to flesh, not modular sci-fi plating.
-- Throne/court motifs appear as posture, collar, crown, shadow, or halo — never literal furniture or fortress body.
-- Chains should wrap, suspend, bind, or gesture; they must not become random cables.
+### Textures
+- handmade sacred wear, weathering, ritual damage, and age older than human civilization
+- surfaces show lived law: scars, seals, roots, feathers, chains, bells, runes, or reliefs as physical material
+- energy emerges from wounds, joints, breath, eyes, tools, and terrain rather than UI strips
+- never use readable real-world text; marks are abstract, ancient, and functional
 
-### Symbols and textures
-- chains
-- contract seals
-- throne shadows
-- execution marks
-- horn crowns
-- hook sigils
-- black suns
-- ash roses
-- charred metal
-- hot cracks under skin
-- ash dust on cloth
-- blood-dark lacquer
-- chain wear marks
-- obsidian chips
-- burned parchment edges
+### Colors
+- black iron
+- volcanic glass
+- obsidian
+- blood wax
+- ash velvet
+- molten gold
+- charred parchment
+- bone ivory
+- cinder red
+- sulfur yellow
+- chain shadow
 
-### Titan / NPC / creature rules
-- Titans are living infernal decrees: court sovereigns, execution engines of law, or bargain-devourers with regal terror.
-- Avoid red mecha demon, block fortress torso, literal castle armor, or generic horned brute.
-- Infernal Dominion titanRules must remain specific to The Black Iron Court and visibly different from the other six factions.
-- NPCs show broker, executioner, contract noble, cinder priest, chain bailiff, or exile courtier logic.
-- Status should appear through contract seals, chain ownership, ash-stained luxury, execution tools, and court posture.
-- Infernal Dominion npcRules must remain specific to The Black Iron Court and visibly different from the other six factions.
-- Creatures can be chain hounds, ash bailiffs, contract leeches, volcanic glass beasts, cinder revenants, or punishment-born colossi.
-- Monsters should feel legally condemned or contract-bound, not merely savage; chains, brands, and verdict scars matter.
-- Infernal Dominion creatureRules must remain specific to The Black Iron Court and visibly different from the other six factions.
+### Symbols
+- Hell/underworld: punishment dimension, abyss, descent, prison geography
+- Devils/demon kings: hierarchy, temptation, rulership, court violence
+- Contracts/Faustian bargains: debt, signatures, clauses, payment
+- Goetia/grimoires: seals, names, summoning law, constrained powers
+- Chains: bondage, ownership, legal restraint, prison architecture
+- Hellfire/volcano/ash: punishment flame, industrial torment, molten authority
+- Horns/wings/claws: rank, predation, nobility, monstrous majesty
+- Judges/executioners: sentencing, sin weights, punishments made visible
+
+### Armor construction
+- Every armor choice must prove the source-culture premise: source culture humans later copied as hell, demonology, and infernal contract lore.
+- Avoid museum cosplay; the Realm version is older, stranger, alive, and operational.
+- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or halos, but characters must not become buildings.
+- Role clarity beats ornament.
+
+### Titan rules
+- Titans read as colossal myth offices of The Infernal Dominion, with anatomy and armor fused by function.
+- Each Titan should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
+- Avoid robot, mech, statue, mascot, and costume readings.
+- Preserve mobile-readable role silhouette.
+
+### NPC rules
+- NPCs should look like people who maintain The Infernal Dominion as living civilization: witnesses, envoys, scribes, priests, judges, brokers, scouts, cartographers, or keepers.
+- Their clothing and tools are practical source-culture artifacts later copied by humans.
+- Faces carry duty, fear, pride, devotion, fatigue, or cunning — not generic hero posing.
+- Use worn regalia and task tools to show social role.
+
+### Creature rules
+- Creatures are realm law made animal, punishment, omen, guardian, or corruption, specific to Infernal Dominion.
+- Monster anatomy must reference a myth function from the anchors.
+- Hollow-corrupted variants twist that faction’s order into broken asymmetry.
+- Avoid generic alien beasts.
 
 ### Environment rules
-- Use black iron courts, volcanic glass, throne shadows, ash pits, verdict stones, hooked pillars, suspended restraints, and ember channels.
-- Court spaces should imply surveillance, punishment, bargaining, and violence through sightlines and restraint architecture.
-- Infernal Dominion environmentRules must remain specific to The Black Iron Court and visibly different from the other six factions.
+- Environments must show The Infernal Dominion as the source behind human mythic spaces, not a themed set.
+- Landmarks, weather, hazards, and sacred architecture physically shape movement.
+- Terrain danger must be embedded in culture and myth: no game-board glow or arbitrary colored tiles.
+- Humans later copied these places as temples, halls, shrines, courts, stories, and monster geographies.
 
 ### Avoid
 - red robot demon
-- generic devil
-- block fortress body
-- literal castle armor
+- generic Halloween devil
 - sci-fi cables
-- random spikes everywhere
-- clean plastic armor
-- superhero villain suit
+- literal castle armor
+- block fortress body
+- cartoon pitchfork
+- rubber horns
+- random pentagram spam
+- neon cyber hell
+- flat lava monster

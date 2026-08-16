@@ -253,3 +253,9 @@ This first battlefield is the test of the complete pipeline. Once it passes, the
 
 ## Faction Visual Bible Requirement
 Before generating any faction-linked Titan, NPC, creature, battlefield, faction screen, or 3D asset, Big Bot must apply `data/faction-visual-bible.json` and `handoff/bigbot/FACTION_VISUAL_BIBLE.md`. The asset must show that faction through silhouette, armor construction, materials, texture, symbols, posture, and avoid-list compliance. Reject faction drift even if the image is otherwise high quality.
+
+### Aten Ra Source-Culture Rule
+For Aten Ra assets, do not design "Egyptian-inspired costumes." Treat the Solar Dominion of Khepra as the older source culture that human Egyptian religion, crowns, pylons, solar discs, scarabs, ankhs, funerary art, and animal-divinity later copied imperfectly. Each Aten Ra asset must show the specific myth function behind its design: Ra/Aten solar authority, Ma’at balance, Khepri renewal, Sutekh desert defense, Iset restoration, Maahes lion protection, or Amunet hidden power.
+
+### Cross-Faction Source-Culture Rule
+For every Titan Gates faction, do not design themed costumes based on Earth mythology. Each Realm is the older extradimensional source culture that human civilizations later copied through Gate dreams, ruins, survivor memory, and distorted religious/mythic echoes. Every asset must show the specific source function behind its traits, armor, realm, posture, materials, and hazards.
