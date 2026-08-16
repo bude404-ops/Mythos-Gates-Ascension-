@@ -35,6 +35,9 @@ jobs:
       - name: Run continuity audit
         run: npm run audit:continuity
 
+      - name: Run current canon audit
+        run: node scripts/audit-current-canon.mjs
+
       - name: Build static site
         run: npm run build
 

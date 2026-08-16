@@ -1,80 +1,108 @@
 # Titan Gates: Ascension
 
-Titan Gates: Ascension is a Titan-only mythological tactical RPG built around extradimensional Realms, Titan Gates, the Ascension Collapse, and colossal Titans shaped by their civilizations.
+Titan Gates: Ascension is a Titan-only mythological tactical RPG built around seven source-culture Realms, Titan Gates, the Ascension Collapse, and colossal Titans shaped by their civilizations.
 
-This repository is now the source of truth for both:
+This repository is the source of truth for:
 
-1. The playable browser game
-2. The GitHub Pages Development Platform
+1. The playable browser prototype
+2. The Mini App source for `Titan Gates: Ascension`
+3. Canon, campaign, combat, economy, asset, and 3D production data
+4. GitHub Pages build/deploy automation
 
 ## Open the Project
 
-- Development Platform: `index.html`
+- Development command center: `index.html`
 - Playable game: `game/index.html`
-- Legacy exported dev platform: `titan-gates-dev-platform.html`
+- Tactical map prototype: `game/tactical-map-prototype.html`
+- Mini App source: `mini-app/titan-gates-ascension.html`
 - Lore Codex: `docs/lore/README.md`
+- AAA repository audit: `docs/AAA_REPOSITORY_AUDIT.md`
 
 ## Repository Structure
 
 ```text
-art/                 Artwork pipeline folders and prompt files
-art/prompts/         Versioned prompt records, one JSON file per entity prompt
-data/                Source-of-truth JSON data for the Pages dashboard
-characters/          Future character records; current canon has no playable non-Titan entries
-npcs/                Non-playable campaign character records
-creatures/           Enemy creatures, Gateborn threats, and world boss records
-maps/                Tactical and campaign map records
-campaigns/           Campaign and chapter records
-codex/               Reserved codex expansion area
-dev/                 Development Platform entry copy
-development/         Reserved development records
-directors/           Reserved Director expansion area
-docs/lore/           Canon lore codex
-game/                Playable Titan Gates game
-scripts/             Index generation, validation, Pages build scripts
-.github/workflows/   GitHub Pages build/validate/deploy workflow
+3D_Blueprints/        3D asset blueprints, registry, validation notes, production queue handoff
+art/                  Artwork prompt records and mission art package data
+artwork_import/       Artwork dropbox/intake queue and generation runthroughs
+asset_registry/       GitHub asset registry and dependency graph
+assets/               Reserved source/preview/game-ready asset lanes tracked with placeholders
+backstories/          Titan, NPC, and creature backstory records
+campaigns/            Campaign and chapter source records
+data/                 Aggregated source-of-truth JSON used by dashboards and runtime checks
+dialogue/             Mission dialogue source records
+docs/                 Production documentation, lore bible, audits, build notes, handoff policy
+game/                 Playable browser prototype and tactical runtimes
+handoff/              Creator, Big Bot, and external AI asset handoff packets
+manifests/            Per-asset manifest records
+maps/                 Tactical and campaign map records
+mini-app/             Print World Mini App source
+missions/             Normal and elite mission source records
+npcs/                 Non-playable campaign character records
+creatures/            Enemy creature and Gateborn threat records
+scripts/              Build, validation, audit, asset, and smoke-test automation
+validation/           Validation report records
+visual/               Visual QA notes and baseline review scaffolding
+.github/workflows/    GitHub Actions build/deploy and artwork intake automation
 ```
+
+Generated `dist/` output is built by automation and is not a canonical source folder.
 
 ## Current Build
 
-- Version: `0.2.0`
-- Phase: GitHub Pages Development Platform
-- Factions: 7
+- Version: `0.6.9`
+- Phase: GitHub Pages development platform + playable browser vertical slice + Mini App source
+- Playable Realms/Factions: 7
 - Titans: 63
-- Non-playable characters: 8
-- Creatures/threats: 5
-- Maps: 6
-- Campaigns: 4
-- Chapters: 10
-- Characters: 0 playable characters by canon lock
-- Art prompts: 82 total prompts
-- Game loop: first playable Gate encounter
+- Non-playable campaign characters: 8
+- Creatures/threats: 18
+- Hollow threat creatures: 16
+- Maps: 12
+- Campaigns: 8
+- Campaign chapters: 35
+- Missions: 280 total — 140 Normal / 140 Elite
+- Mission dialogue packages: 280
+- Mission art packages: 280
+- Art prompts: 110
+- 3D blueprint assets: 129
+- Creator handoff packets: 23
+- External AI production packet: 1 active benchmark battlefield packet
+- Core combat rule: one active Titan in standard combat
+- Current source asset status: 129 reserved asset IDs awaiting final source assets
 
 ## Commands
 
 ```bash
 npm install
-npm run index
-npm run validate
 npm run build
+npm run precommit:verify
 ```
 
-`npm run build` generates indexes, validates references, and creates the `dist/` folder used by GitHub Pages.
+Important validation gates:
+
+```bash
+npm run audit:continuity
+node scripts/audit-current-canon.mjs
+npm run assets:verify
+npm run test:playable-battle-ui
+npm run validate:external-ai-packets
+```
 
 ## GitHub Pages
 
-The workflow at `.github/workflows/pages.yml` builds and deploys the static platform without exposing personal tokens.
+The Pages workflow builds the static platform from source data and deploys the generated site without requiring committed `dist/` output.
 
 It validates:
 
-- JSON syntax
-- Duplicate IDs
+- Canon continuity and forbidden legacy terms
+- JSON syntax and duplicate IDs
 - Missing Titan/faction/prompt references
 - Missing lore files
 - Unsafe artwork paths
 - Invalid image extensions
-- Playable game integrity
+- Asset registry integrity
+- Playable game smoke coverage
 - Dashboard integrity
+- Secret leakage prevention
 
 ## Canon Direction
 
@@ -82,25 +110,18 @@ Current canon is locked around:
 
 - Seven playable mythological Realms
 - Nine Titans per Realm
-- One-active-Titan chosen Titan deployments
+- One-active-Titan standard combat deployments
+- The Hollow as a non-playable campaign threat layer
 - No playable non-Titan entries in the current format
 - No normal units in the current format
 - No sci-fi
-- No extradimensional beings
 - No futuristic craft
-- No void rot / fungal civilization content
+- No old void rot / fungal civilization direction
 
-GitHub is the source of truth. GitHub Pages is the visual command center. The Codex is the canonical knowledge base. The Art Studio is the visual production pipeline. The Directors are the governance system.
+GitHub is the source of truth. GitHub Pages is the visual command center. The Codex is the canonical knowledge base. The asset registry and manifests are the production handoff layer.
 
-## Visual Development Platform
+## AAA Production Readiness
 
-The platform now includes a Visual Game Preview Environment:
+This repo is strong as a canon, prototype, and asset-production command center. It is not yet structured like a final AAA engine repository. Before full production, the next structural leap should split the current prototype into engine-ready modules, add schema/type enforcement, expand CI to run the complete gate, and connect the asset manifest system to real DCC/game-engine import paths.
 
-- `game/preview.html` — development preview using current repository JSON data.
-- `game/shared-preview.js` — shared visual renderer for preview screens.
-- `data/visual-screens.json` — Visual QA screen status records.
-- `data/visual-change-rules.json` — affected-screen rules by change type.
-- `data/visual-baselines.json` — initial baseline records.
-- `visual/` — visual review/baseline notes, separate from production artwork.
-
-The preview supports mobile-first device presets, Dev View, Player View, affected-screen review, capture metadata, and before/after comparison scaffolding.
+See `docs/AAA_REPOSITORY_AUDIT.md` for the current readiness verdict and priority cleanup path.
