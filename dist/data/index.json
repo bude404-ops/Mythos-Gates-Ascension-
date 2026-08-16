@@ -105,7 +105,8 @@
     "githubAssetManifests": 129,
     "githubReservedAssetIds": 129,
     "creatorHandoffPackets": 23,
-    "creatorHandoffBatches": 3
+    "creatorHandoffBatches": 3,
+    "externalAiProductionPackets": 1
   },
   "files": {
     "project.json": "data/project.json",
@@ -457,7 +458,7 @@
     "continuity-balance-audit.json": {
       "path": "data/continuity-balance-audit.json",
       "bytes": 2652,
-      "sha256": "e5c7f77e5faa15422e4675ba6763ceecd72b60b32459d3847946ba01bc64622c"
+      "sha256": "a7d88edc010d9ade54d31325d34e167c51c60a0fcb0c5193eaf89323f6460a61"
     },
     "endgame-dashboard.json": {
       "path": "data/endgame-dashboard.json",
@@ -892,5 +893,20 @@
   "githubAssetDependencyGraph": {
     "status": "IMPLEMENTED",
     "nodes": 129
+  },
+  "externalAiProduction": {
+    "status": "ACTIVE_SOURCE_OF_TRUTH",
+    "target": {
+      "assetId": "BATTLEFIELD_001",
+      "canonicalEntityId": "TG-MAP-001",
+      "canonicalName": "The First Reopening Gate",
+      "faction": "Aten Ra",
+      "realm": "The Solar Dominion of Khepra",
+      "priority": "MASTER_QUALITY_BENCHMARK"
+    },
+    "packet": "handoff/external_ai/BATTLEFIELD_001_the-first-reopening-gate.external-ai-packet.json",
+    "markdown": "handoff/external_ai/BATTLEFIELD_001_the-first-reopening-gate.external-ai-packet.md",
+    "stages": 22,
+    "mayStartNextBattlefield": false
   }
 }

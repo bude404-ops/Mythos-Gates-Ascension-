@@ -1,0 +1,350 @@
+{
+  "id": "TG-EXTERNAL-AI-BATTLEFIELD-001-PACKET",
+  "version": "1.0.0",
+  "status": "ACTIVE_SOURCE_OF_TRUTH",
+  "purpose": "External AI and artist generation packet for the first Titan Gates battlefield. Use this file as the canonical brief before generating artwork, terrain meshes, modular 3D assets, textures, lighting studies, or final models.",
+  "absoluteRule": "Generate and refine ONLY BATTLEFIELD_001 / The First Reopening Gate until it is approved. Do not generate Battlefield 002+ from this packet.",
+  "targetAsset": {
+    "assetId": "BATTLEFIELD_001",
+    "canonicalEntityId": "TG-MAP-001",
+    "canonicalName": "The First Reopening Gate",
+    "faction": "Aten Ra",
+    "realm": "The Solar Dominion of Khepra",
+    "priority": "MASTER_QUALITY_BENCHMARK"
+  },
+  "firstBattlefieldSource": {
+    "faction": "Aten Ra",
+    "realm": "The Solar Dominion of Khepra",
+    "map": "The First Reopening Gate",
+    "starterTitan": "Aten-Ra, Solar Law Monolith",
+    "rationale": "Current onboarding starts with Aten Ra and the first Titan. The battlefield teaches Gate law, solar judgment terrain, one-Titan combat, and the massive-Gate fantasy without inventing a new faction or replacing lore."
+  },
+  "tacticalLayout": {
+    "logicalGrid": "7x7",
+    "meaningfulTacticalSpaces": 49,
+    "zones": [
+      {
+        "id": "entry",
+        "name": "Broken Threshold",
+        "purpose": "Gate arrival cinematic and movement tutorial",
+        "spaces": [
+          "A1",
+          "A2",
+          "B1",
+          "B2"
+        ],
+        "story": "The first Titan emerges through a fractured Earth-side Gate courtyard."
+      },
+      {
+        "id": "open",
+        "name": "Sun-Cracked Causeway",
+        "purpose": "Open mobility route with ranged exposure",
+        "spaces": [
+          "C1",
+          "C2",
+          "D1",
+          "D2",
+          "E1",
+          "E2"
+        ]
+      },
+      {
+        "id": "choke",
+        "name": "Fallen Pylon Choke",
+        "purpose": "Direct route, enemy blocking, pillar destruction",
+        "spaces": [
+          "B3",
+          "C3",
+          "D3"
+        ]
+      },
+      {
+        "id": "terrain",
+        "name": "Judgment Ray Lanes",
+        "purpose": "Solar terrain grants Momentum but telegraphs danger",
+        "spaces": [
+          "E3",
+          "F3",
+          "E4",
+          "F4"
+        ]
+      },
+      {
+        "id": "objective",
+        "name": "Solar Seal Court",
+        "purpose": "Primary objective: stabilize three solar seals",
+        "spaces": [
+          "B4",
+          "C4",
+          "D4"
+        ]
+      },
+      {
+        "id": "elite",
+        "name": "Anchor Scar",
+        "purpose": "Elite encounter and reinforcements",
+        "spaces": [
+          "A5",
+          "B5",
+          "C5"
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "Gate Mouth Arena",
+        "purpose": "Colossal boss phase fight beside the massive Gate",
+        "spaces": [
+          "D5",
+          "E5",
+          "F5",
+          "G5",
+          "D6",
+          "E6",
+          "F6",
+          "G6",
+          "D7",
+          "E7",
+          "F7",
+          "G7"
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "type": "direct",
+        "description": "Push through Fallen Pylon Choke; fastest path but eats ranged pressure and elite overwatch."
+      },
+      {
+        "type": "safe",
+        "description": "Circle through Broken Threshold ruins; slower, more cover, lower Momentum income."
+      },
+      {
+        "type": "tactical",
+        "description": "Enter Judgment Ray Lanes, use Aten-Ra solar law to gain Momentum and trigger terrain punishment on enemies."
+      },
+      {
+        "type": "optional",
+        "description": "Break the memory obelisk for micro-lore and mastery XP before boss escalation."
+      }
+    ],
+    "terrainRules": [
+      {
+        "id": "sunlit_stone",
+        "name": "Sunlit Stone",
+        "effect": "Standing here at turn start grants +1 Momentum to Aten Ra Titans; enemies are exposed."
+      },
+      {
+        "id": "judgment_ray",
+        "name": "Judgment Ray",
+        "effect": "Telegraphed lane. At pulse, deals radiant damage to units inside; Aten-Ra can convert a perfect reaction into Divinity."
+      },
+      {
+        "id": "fractured_cover",
+        "name": "Fractured Cover",
+        "effect": "Reduces ranged damage; heavy Titan attacks can destroy it and open shortcuts."
+      },
+      {
+        "id": "gate_pressure",
+        "name": "Gate Pressure",
+        "effect": "Boss arena hazard; grows during boss phases unless Solar Seals remain stable."
+      },
+      {
+        "id": "memory_obelisk",
+        "name": "Memory Obelisk",
+        "effect": "Optional interactable: unlocks micro-Codex and Titan mastery XP."
+      }
+    ],
+    "interactables": [
+      {
+        "id": "pylon_wall",
+        "name": "Fallen Pylon Wall",
+        "interaction": "Titan Strike",
+        "result": "Destroys cover, opens direct route, triggers one Hollow reinforcement."
+      },
+      {
+        "id": "solar_seal_a",
+        "name": "Solar Seal A",
+        "interaction": "Stabilize",
+        "result": "Primary objective progress and reduces boss Gate Pressure."
+      },
+      {
+        "id": "solar_seal_b",
+        "name": "Solar Seal B",
+        "interaction": "Stabilize",
+        "result": "Primary objective progress and grants Divinity spark."
+      },
+      {
+        "id": "solar_seal_c",
+        "name": "Solar Seal C",
+        "interaction": "Stabilize",
+        "result": "Primary objective progress and weakens boss phase 2."
+      },
+      {
+        "id": "memory_obelisk",
+        "name": "Memory Obelisk",
+        "interaction": "Read",
+        "result": "Micro-lore, mastery XP, optional reward."
+      }
+    ],
+    "camera": {},
+    "qualityTargets": [
+      "one active Titan",
+      "49 meaningful spaces",
+      "multiple routes",
+      "interactive terrain",
+      "intelligent enemies",
+      "objective + optional objective",
+      "boss phases",
+      "mobile bottom action bar",
+      "camera modes",
+      "scale hierarchy",
+      "progression rewards",
+      "replay modifiers"
+    ]
+  },
+  "productionStages": [
+    "BATTLEFIELD_BLUEPRINT",
+    "COMBAT_LAYOUT",
+    "GRAYBOX",
+    "TERRAIN_FOUNDATION",
+    "VERTICALITY",
+    "COMBAT_SURFACES",
+    "CONNECTIONS",
+    "BOUNDARIES",
+    "TITAN_SCALE",
+    "REAL_3D_GEOMETRY",
+    "MODULAR_ENVIRONMENT_ASSETS",
+    "ARCHITECTURE",
+    "HERO_LANDMARK",
+    "LORE_INTEGRATION",
+    "MATERIALS",
+    "LIGHTING",
+    "ENVIRONMENTAL_DRESSING",
+    "ATMOSPHERE",
+    "GAMEPLAY_CAMERA",
+    "MOBILE_OPTIMIZATION",
+    "FINAL_QUALITY_REVIEW",
+    "APPROVAL_GATE"
+  ],
+  "requiredDeliverables": {
+    "graybox": [
+      "playable 7x7 combat-space blockout",
+      "named lanes/routes/chokepoints",
+      "objective markers",
+      "Titan scale proxy",
+      "mobile gameplay camera capture"
+    ],
+    "terrain": [
+      "non-cubic sculpted terrain foundation",
+      "height variation",
+      "ramps/stairs/bridges that physically connect zones",
+      "readable tactical surfaces"
+    ],
+    "modularAssets": [
+      "terrain slabs/transitions",
+      "Aten Ra walls/corners/columns/pylons",
+      "broken Gate fragments",
+      "solar seal props",
+      "memory obelisk",
+      "cover fragments",
+      "boss arena boundary pieces"
+    ],
+    "heroLandmark": [
+      "massive broken Titan Gate landmark",
+      "Aten Ra source-culture material language",
+      "scale readable beside Titan proxy",
+      "does not block tactical readability"
+    ],
+    "finalReview": [
+      "combat readability from mobile camera",
+      "Titan scale reads enormous",
+      "lore belongs to Titan Gates",
+      "major forms are real 3D geometry",
+      "no blocky final geometry",
+      "mobile optimization plan included"
+    ]
+  },
+  "artPrompt": {
+    "positive": "Titan Gates tactical battleground environment concept: The First Reopening Gate. A shattered Earth-side gateway courtyard where the first playable encounter unfolds, built for a 5x5 tactical onboarding composition that can expand later. The unstable Gate pulse is visible as pressure fractures through old stone, wind-torn banners, dust columns, and cracked objective ground that feels physically broken rather than marked. Broken Earth-side Gatefield lore: ancient threshold masonry, collapsed relief statues, scorched grass, loose flagstones, and natural cover formed by fallen gate ribs. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into the location itself, no sci-fi. Canon premise: this contested battlefield shows the seven Realm source cultures colliding through the Gate; Earth mythology is only the later echo, so props must look like original Realm relics rather than museum costumes. Battlefield cosmetics rule: objective props, banners, ruins, reward caches, hazard markers, and cover pieces must inherit the owning faction source-culture materials and relic silhouettes; no generic RPG props, plain weapons, plain armor, or mismatched faction symbols.",
+    "negative": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, generic RPG props, plain weapon cache, plain armor cache, mismatched faction symbols, museum cosplay set dressing, historical reenactment scenery"
+  },
+  "factionVisualLocks": {
+    "visualThesis": "Aten Ra is the source behind human Egyptian solar myth: living Ma\u2019at, Ra\u2019s noon authority, Aten\u2019s sun-disc radiance, Khepri\u2019s renewal, Iset\u2019s throne-magic, Sutekh\u2019s necessary desert violence, Maahes\u2019 lion protection, and Amunet\u2019s hidden power. Designs must feel like ancient humans copied these beings later \u2014 not like Titans copied Egypt.",
+    "bodyAnatomyRules": [
+      "Bodies use strong readable anatomy with elongated divine proportions, royal stillness, ceremonial hand language, and gravity like the noon sun holding the world in place.",
+      "Skin, energy, linen wrap, collar, crown, and pectoral can fuse into one living office of divine law, but head, torso, limbs, gesture, expression, and faction role must stay legible.",
+      "Animal divinity must come from Egyptian source functions: falcon-solar sight, cobra protection, jackal threshold guidance, scarab renewal, lion war-guardianship, ibis/scribe precision, or crocodile/river menace \u2014 never random hybrid clutter.",
+      "Use Nile/Red Land dual anatomy: black fertile stone or river-glass surfaces balanced against desert-red scars, storm-sand erosion, and white-gold solar seams."
+    ],
+    "armorShapeLanguage": [
+      "solar-disc crown or halo with subtle hand-ray geometry inspired by Aten, not sci-fi rings",
+      "broad wesekh-style divine collar and pectoral plates fused to chest anatomy",
+      "nemes-like energy mantle or linen head/shoulder flow for ruler silhouettes",
+      "pylon harnesses and temple-gate shoulder frames that wrap the body instead of replacing it",
+      "scarab carapace plates for renewal/battery forms",
+      "was-sceptre, crook, flail, khopesh, or weighing-scale weapon silhouettes abstracted into Titan gear",
+      "cobra uraeus brow crests, falcon eye visors, jackal threshold masks, lion mane armor, or lotus/papyrus river crests when lore-appropriate",
+      "Ma\u2019at feather balance lines across armor seams, never readable text"
+    ],
+    "materialHierarchy": [
+      "primary: hammered electrum-gold, sun-warmed bronze, white-gold living radiance, and royal linen hardened by solar law",
+      "secondary: lapis/obsidian blue-black shadow, turquoise/faience blue-green inlay, ivory limestone, black Nile silt glass, red desert jasper",
+      "accent: scarab emerald, lotus pink, papyrus green, blood-red Set storm marks, amber Aten hand-rays, black solar-eclipse enamel"
+    ],
+    "textureLanguage": [
+      "hand-hammered electrum and bronze with ritual dents, edge wear, and sand-softened corners",
+      "faience-like blue-green glaze, lapis chips, obsidian enamel cracks lit from within",
+      "linen fibers stiffened into divine armor folds, sun-bleached at the edges",
+      "carved relief bands showing abstract stars, river ripples, feathers, barque arcs, and balance geometry without readable text",
+      "heat shimmer, desert abrasion, Nile polish, and incense smoke staining around sacred seams",
+      "scarab-shell iridescence or lion-fur shadow only when the Titan\u2019s myth anchor calls for it"
+    ],
+    "colorPalette": [
+      "white-gold noon light",
+      "electrum gold",
+      "burnished bronze",
+      "lapis/obsidian blue-black",
+      "faience turquoise",
+      "Nile silt black",
+      "desert red jasper",
+      "papyrus green",
+      "lotus pink",
+      "ivory limestone"
+    ],
+    "symbolsAndMotifs": [],
+    "avoidRules": []
+  },
+  "geometryRules": [
+    "Primitive cubes are permitted only for temporary graybox/blockout.",
+    "Final terrain must use real modeled forms: sculpted surfaces, bevels, secondary geometry, irregular edges, and structural transitions.",
+    "Textures may enhance geometry but may not hide poor modeling.",
+    "Hero landmark and major architecture require thickness, depth, believable support, and strong silhouette.",
+    "Do not create neon board-game tiles, sci-fi panels, robot/mecha surfaces, or human-scale architecture."
+  ],
+  "mobilePerformanceRules": [
+    "Design for vertical mobile tactical camera first.",
+    "Use reusable modular assets and instancing where possible.",
+    "Prepare LOD0 presentation, LOD1 gameplay, LOD2 distance, plus simplified collision.",
+    "Preserve detail on Titan silhouettes, Gate landmark, objective props, and foreground architecture."
+  ],
+  "externalGenerationInstructions": [
+    "Read this packet first.",
+    "Generate only the requested Battlefield 001 component or stage.",
+    "Return files with the asset ID prefix BATTLEFIELD_001.",
+    "Include preview renders from the gameplay camera and at least one scale shot with a Titan proxy.",
+    "Include a manifest listing generated files, tool/model used, dimensions, polygon estimates, texture sizes, and known limitations.",
+    "If any requirement conflicts with this packet, stop and report the conflict instead of inventing lore."
+  ],
+  "importTargets": {
+    "sourceAssets": "assets/source/BATTLEFIELD_001/",
+    "gameReadyModels": "assets/game_ready/BATTLEFIELD_001/",
+    "previews": "assets/previews/BATTLEFIELD_001/",
+    "manifest": "manifests/assets/BATTLEFIELD_001/manifest.json"
+  },
+  "approvalGate": {
+    "currentStatus": "BLUEPRINT_PACKET_READY",
+    "mayStartNextBattlefield": false,
+    "approvalRequiredFrom": "holder",
+    "stopRule": "After Battlefield 001 final review, stop and wait for explicit approval before creating Battlefield 002."
+  }
+}
