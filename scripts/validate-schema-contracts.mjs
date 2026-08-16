@@ -18,6 +18,11 @@ const contracts = [
     records: listJsonRecords(path.join('manifests', 'assets'))
       .filter(file => path.basename(file) === 'manifest.json')
       .map(file => JSON.parse(fs.readFileSync(file, 'utf8')))
+  },
+  {
+    name: 'canon-version-manifest',
+    schemaPath: 'schemas/canon-version-manifest.schema.json',
+    records: [JSON.parse(fs.readFileSync('data/canon-version-manifest.json', 'utf8'))]
   }
 ];
 

@@ -1,0 +1,137 @@
+{
+  "id": "TG-CANON-VERSION-MANIFEST-001",
+  "schema": "TG_CANON_VERSION_MANIFEST_V1",
+  "status": "ACTIVE",
+  "currentCanonVersion": "1.8.1-canon-versioning-policy",
+  "updated": "2026-08-16T22:30:00Z",
+  "policyRef": "docs/production/DATA_MIGRATION_VERSIONING.md",
+  "sourceOfTruth": "Git commit history plus this manifest. Runtime adapters consume migrated canonical data; they do not invent canon.",
+  "rules": {
+    "versionFormat": "MAJOR.MINOR.PATCH-slug",
+    "major": "Breaking canonical data shape or engine export contract changes.",
+    "minor": "Backward-compatible canonical content, schema, runtime, or adapter additions.",
+    "patch": "Fixes that preserve existing canonical shape and semantics.",
+    "migrationRequiredWhen": [
+      "A schema required field is added, renamed, moved, or removed.",
+      "A canonical ID format or cross-reference rule changes.",
+      "Runtime or engine adapters require a different data projection.",
+      "Generated index semantics change.",
+      "Economy, telemetry, mission objective, or reward meaning changes."
+    ],
+    "migrationNotRequiredWhen": [
+      "Documentation copy changes with no data contract change.",
+      "Generated output is rebuilt without source changes.",
+      "A browser smoke test or CI stability wrapper changes without canonical semantics."
+    ],
+    "requiredMigrationFields": [
+      "id",
+      "fromVersion",
+      "toVersion",
+      "type",
+      "status",
+      "owner",
+      "summary",
+      "affectedData",
+      "validation"
+    ],
+    "allowedStatuses": [
+      "PLANNED",
+      "READY",
+      "APPLIED",
+      "SUPERSEDED"
+    ],
+    "allowedTypes": [
+      "SCHEMA_EXPANSION",
+      "CONTENT_BACKFILL",
+      "RUNTIME_PROJECTION",
+      "ENGINE_EXPORT",
+      "VALIDATION_GATE",
+      "CANON_FIX",
+      "DOC_POLICY"
+    ],
+    "immutability": "Applied migrations are append-only. Supersede with a later migration; do not rewrite history except to correct obvious typos before release."
+  },
+  "migrations": [
+    {
+      "id": "TG-MIG-001",
+      "fromVersion": "1.5.0-async-arena-snapshots",
+      "toVersion": "1.6.0-production-module-contracts",
+      "type": "RUNTIME_PROJECTION",
+      "status": "APPLIED",
+      "owner": "Gameplay Director",
+      "summary": "Created source module seams for gameplay, economy, validated data loading, UI state presenters, and production gate manifesting.",
+      "affectedData": [
+        "data/titans.json",
+        "data/mission-registry.json",
+        "data/free-to-play-economy.json"
+      ],
+      "validation": [
+        "npm run validate:schemas",
+        "npm run test:production-modules",
+        "npm run audit:aaa-structure"
+      ]
+    },
+    {
+      "id": "TG-MIG-002",
+      "fromVersion": "1.6.0-production-module-contracts",
+      "toVersion": "1.7.0-engine-adapter-scaffolding",
+      "type": "ENGINE_EXPORT",
+      "status": "APPLIED",
+      "owner": "Technical Director",
+      "summary": "Added engine-neutral export mapper plus Unity and Unreal adapter manifests while preserving canon as engine-independent source.",
+      "affectedData": [
+        "data/titans.json",
+        "data/creatures.json",
+        "data/campaigns.json",
+        "data/maps.json",
+        "data/mission-registry.json"
+      ],
+      "validation": [
+        "npm run validate:engine-adapters",
+        "npm run test:engine-adapters",
+        "npm run audit:aaa-structure"
+      ]
+    },
+    {
+      "id": "TG-MIG-003",
+      "fromVersion": "1.7.0-engine-adapter-scaffolding",
+      "toVersion": "1.8.0-production-schema-contracts",
+      "type": "SCHEMA_EXPANSION",
+      "status": "APPLIED",
+      "owner": "Data Director",
+      "summary": "Expanded schema contract coverage to factions, maps, mission dialogue, economy, telemetry, and external AI packets.",
+      "affectedData": [
+        "data/factions.json",
+        "data/maps.json",
+        "data/mission-dialogue.json",
+        "data/free-to-play-economy.json",
+        "data/battlefield-telemetry-contract.json",
+        "handoff/external_ai/BATTLEFIELD_001_the-first-reopening-gate.external-ai-packet.json"
+      ],
+      "validation": [
+        "npm run validate:schemas",
+        "npm run audit:aaa-structure",
+        "npm run precommit:verify"
+      ]
+    },
+    {
+      "id": "TG-MIG-004",
+      "fromVersion": "1.8.0-production-schema-contracts",
+      "toVersion": "1.8.1-canon-versioning-policy",
+      "type": "VALIDATION_GATE",
+      "status": "APPLIED",
+      "owner": "Release Director",
+      "summary": "Added migration/versioning policy, manifest validation, and release gate enforcement for future canonical data changes.",
+      "affectedData": [
+        "data/canon-version-manifest.json",
+        "docs/production/DATA_MIGRATION_VERSIONING.md",
+        "scripts/validate-data-migrations.mjs"
+      ],
+      "validation": [
+        "npm run validate:migrations",
+        "npm run test:migration-contracts",
+        "npm run precommit:verify"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Titan Gates Canon Version Manifest",
+  "type": "object",
+  "required": [
+    "id",
+    "schema",
+    "status",
+    "currentCanonVersion",
+    "policyRef",
+    "rules",
+    "migrations"
+  ],
+  "properties": {
+    "id": {
+      "const": "TG-CANON-VERSION-MANIFEST-001"
+    },
+    "schema": {
+      "const": "TG_CANON_VERSION_MANIFEST_V1"
+    },
+    "status": {
+      "const": "ACTIVE"
+    },
+    "currentCanonVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+-[a-z0-9-]+$"
+    },
+    "updated": {
+      "type": "string"
+    },
+    "policyRef": {
+      "const": "docs/production/DATA_MIGRATION_VERSIONING.md"
+    },
+    "sourceOfTruth": {
+      "type": "string",
+      "minLength": 20
+    },
+    "rules": {
+      "type": "object"
+    },
+    "migrations": {
+      "type": "array",
+      "minItems": 1
+    }
+  },
+  "additionalProperties": true
+}

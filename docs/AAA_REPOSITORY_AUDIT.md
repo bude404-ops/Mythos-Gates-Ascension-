@@ -19,8 +19,9 @@ Readiness grade after the engine-adapter pass: B/B+ for AAA preproduction reposi
 - Collaboration governance exists: contribution rules, PR template, issue templates, ownership map, release checklist.
 - AAA migration lanes now exist for schemas, source-module extraction, and grouped tests.
 - First production source modules now exist for gameplay, economy, data loading, schema contracts, UI state presentation, and gate manifesting.
-- Schema validation now checks Titans, factions, maps, mission dialogue, economy, telemetry, external AI packets, all missions, and real asset manifests before deploy.
+- Schema validation now checks Titans, factions, maps, mission dialogue, economy, telemetry, external AI packets, canon version manifests, all missions, and real asset manifests before deploy.
 - Engine integration scaffolding now exists for shared exports plus Unity and Unreal adapter manifests.
+- Canon migration/versioning policy now exists with append-only migration records and release-gate validation.
 - Large source asset policy is present through Git LFS attributes.
 
 ## Structural risks blocking AAA-scale production
@@ -146,7 +147,7 @@ The current repo does not need to move everything immediately. The highest-value
 ### Next production pass
 
 1. Tighten nested schema depth for abilities, mission objectives, economy products, telemetry events, and external AI generation stages.
-2. Add a data migration/versioning policy.
+2. Deepen migration automation with generated migration templates and changelog-to-manifest drift detection.
 3. Continue extracting prototype code into deeper modules under `src/gameplay`, `src/ui`, and `src/data-loaders`.
 4. Move browser smoke tests into grouped suites under `tests/ui` and `tests/integration`.
 5. Expand engine adapter stubs into real import tooling once an engine target is chosen.

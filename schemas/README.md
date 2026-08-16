@@ -1,6 +1,6 @@
 # Schemas
 
-Active coverage now includes Titans, factions, maps, missions, mission dialogue, asset manifests, economy, battlefield telemetry, and external AI production packets.
+Active coverage now includes Titans, factions, maps, missions, mission dialogue, asset manifests, economy, battlefield telemetry, external AI production packets, and canon version manifests.
 
 This folder is the contract layer for Titan Gates production data.
 
@@ -20,6 +20,7 @@ Every major canonical JSON record should eventually have a machine-enforced sche
 8. External AI packet
 9. Economy / progression
 10. Telemetry event
+11. Canon version manifest
 
 ## Migration rule
 

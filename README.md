@@ -66,7 +66,7 @@ Generated `dist/` output is built by automation and is not a canonical source fo
 - Missions: 280 total — 140 Normal / 140 Elite
 - Mission dialogue packages: 280
 - Mission art packages: 280
-- Schema contracts: 9 active coverage families
+- Schema contracts: 10 active coverage families, including canon migration/version control
 - Art prompts: 110
 - 3D blueprint assets: 129
 - Creator handoff packets: 23
