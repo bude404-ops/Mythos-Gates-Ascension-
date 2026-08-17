@@ -4,12 +4,12 @@
   "campaignId": "TG-F04-CAMPAIGN-ELITE",
   "campaignType": "Elite",
   "chapter": 4,
-  "chapterTitle": "Shrine Law Under Teeth",
+  "chapterTitle": "Torii-Moon Mirror Road — Elite Lock",
   "missionNumber": 15,
   "missionInChapter": 3,
-  "title": "Elite: Shrine Law Under Teeth: Hidden Law",
-  "description": "Shrine Law Under Teeth unfolds across inner shrine court where spirit contracts become tactical boundaries, pushing a one active deity Kami deity to prove precise control, repositioning, evasion, spirit terrain, disciplined burst. without violating established Realm canon. Appearance rule: Sacred Kingdoms is the source culture humans later copied as Japanese kami and shrine myth; mission terrain and cosmetics must show torii silhouettes, shrine lacquer red, white shide seals, shimenawa cords, mirror silver, foxfire blue, cedar bark, moonlit silk, oni iron.",
-  "lore": "This mission treats Sacred Kingdoms as the origin behind Japanese kami and shrine myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use torii silhouettes, shrine lacquer red, white shide seals, shimenawa cords, mirror silver, foxfire blue, cedar bark, moonlit silk, oni iron instead of generic historical or RPG dressing.",
+  "title": "Elite: Reroute the Tengu Storm-Cedar Peak: Boss Threshold",
+  "description": "Elite: Reroute the Tengu Storm-Cedar Peak: Boss Threshold is a rebuilt Mythos Gates mission beat for Torii-Moon Mirror Road through The Torii-Moon Gate (Distortion Gate with ritual rerouting). One selected deity from Amaterasu, Tsukuyomi, Susanoo, Izanami enters; this beat spotlights Susanoo as the reference silhouette while preserving player choice. The mission is the pre boss step at Tengu Storm-Cedar Peak, using shrine-road labyrinth and mirror sanctum pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Sacred Kingdoms is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash..",
+  "lore": "Ascension canon route rewrite: Torii-Moon Mirror Road is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Tengu Storm-Cedar Peak and reveals: A shrine tablet implying some Gates choose which names may pass. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 1071,
   "encouragedTitanRoles": [
     "spirit-road tactician",
@@ -17,14 +17,14 @@
     "burst or control specialist"
   ],
   "mapId": "TG-MAP-010",
-  "terrain": "inner shrine court where spirit contracts become tactical boundaries; source-culture appearance layer: torii threshold roads, shrine-stone lanes, foxfire lantern smoke, mirror-water sanctums, cedar root cover, purification basins; cosmetic/relic silhouettes: mirror-talisman spirit blades, lacquered shimenawa spirit-guards, foxfire magatama cores, kitsune misdirection counters",
+  "terrain": "Tengu Storm-Cedar Peak configured as a pre boss space inside shrine-road labyrinth and mirror sanctum; source-culture appearance layer: torii threshold roads, shrine-stone lanes, foxfire lantern smoke, mirror-water sanctums, cedar root cover, purification basins; cosmetic/relic silhouettes: mirror-talisman spirit blades, lacquered shimenawa spirit-guards, foxfire magatama cores, kitsune misdirection counters",
   "objectives": {
-    "primary": "Complete Elite: Shrine Law Under Teeth: Hidden Law with one active deity while reading inner shrine court where spirit contracts become tactical boundaries and preserving faction doctrine.",
+    "primary": "With one selected deity, survive the boss approach in the elite-tuned Tengu Storm-Cedar Peak, secure the last seal, and enter the chamber with the route law understood.",
     "optional": [
-      "Win with no Titan defeated",
-      "Resolve at least three Kami doctrine actions",
-      "Hold every objective for one full enemy turn",
-      "Trigger at least one Momentum or Divinity decision before victory"
+      "Clear the Tengu Storm-Cedar Peak without the active deity falling below 35% integrity",
+      "Exploit or avoid the route rule: oni taboo zones that punish broken shrine law",
+      "Resolve at least three purification rites, mirror-reading, foxfire deception, taboo-aware movement decisions before victory",
+      "Finish with the boss, elite, shrine, treasure, or hazard node clearly readable for mobile tactical play"
     ]
   },
   "enemyWaves": [
@@ -48,15 +48,12 @@
   "boss": null,
   "turnLimit": 16,
   "specialRules": [
-    "Foxfire Reading: reactions strengthen after using misdirection terrain or shrine cover.",
-    "Spirit Contract: objectives must be cleansed without desecrating shrine markers.",
-    "Sacred Balance: careful positioning unlocks spirit precision effects.",
-    "Elite Hazard: secondary realm pressure starts active.",
-    "Elite Command: enemy support persists until objective action breaks the source.",
-    "Solo Deityic Scale: one active deity occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
+    "Route Law — Torii-Moon Mirror Road: Distortion Gate with ritual rerouting changes how movement, hazards, and enemy pressure are read.",
+    "Room Rule — Tengu Storm-Cedar Peak: play this beat as a pre boss node, not a generic arena.",
+    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
-    "Complete Elite: Shrine Law Under Teeth: Hidden Law with one active deity while reading inner shrine court where spirit contracts become tactical boundaries and preserving faction doctrine."
+    "With one selected deity, survive the boss approach in the elite-tuned Tengu Storm-Cedar Peak, secure the last seal, and enter the chamber with the route law understood."
   ],
   "defeatConditions": [
     "Your active deity falls",
@@ -69,13 +66,15 @@
       "High-tier Kami relic material",
       "Kami faction shard cache",
       "Kami doctrine upgrade dust",
-      "TG-F04-E-C04-M15 codex shard"
+      "TG-F04-E-C04-M15 codex shard",
+      "Torii-Moon Mirror Road pre boss codex shard"
     ],
     "replay": [
       "divine mastery XP",
       "Kami relic material",
       "Kami doctrine upgrade dust",
-      "Kami source-culture cosmetic/relic component"
+      "Kami source-culture cosmetic/relic component",
+      "Torii-Moon Mirror Road route material cache"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
@@ -162,11 +161,7 @@
   "activeTitanCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "engineTarget": "Unreal Engine 5",
-    "platformBaseline": [
-      "Android",
-      "iOS"
-    ],
+    "playerControlledTitans": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -176,16 +171,14 @@
       "Upgrade Titan",
       "Explore Further"
     ],
-    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
-    "playerControlledTitans": 1,
-    "mobileFirst": true,
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled deities",
+      "multiple player-controlled Titans",
       "ally positioning",
       "team turns"
-    ]
+    ],
+    "readableRule": "Legacy schema label says Titan, current fiction label says Deity: exactly one playable god or goddess is controlled in standard battle."
   },
   "crossFactionRunIns": {
     "enabled": true,
@@ -225,5 +218,45 @@
       "generic monster filler",
       "lore rewrites"
     ]
+  },
+  "encouragedDeityRoles": [
+    "spirit-road tactician",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mythosGatesMissionRecreation": {
+    "status": "PASS_1_ROUTE_ALIGNED",
+    "brand": "Mythos Gates",
+    "currentArc": "Ascension",
+    "routeId": "MG-DUNGEON-ROUTE-004",
+    "routeName": "Torii-Moon Mirror Road",
+    "entryGate": "The Torii-Moon Gate",
+    "gateState": "Distortion Gate with ritual rerouting",
+    "activePlayableDeitiesPerRun": 1,
+    "playableDeityRoster": [
+      "Amaterasu",
+      "Izanami",
+      "Susanoo",
+      "Tsukuyomi"
+    ],
+    "dungeonCrawlerIntent": "mission should read as one god or goddess entering a Mythos Gate route node against many enemies, hazards, shrine pressure, treasure temptation, and a route boss chain",
+    "canonRule": "Use source-Realm mythological material, faction-specific hazards, and unresolved Mythos Gate mystery; avoid mortal-ascension, generic giants, simple portals, planets, sci-fi, armies, squads, and simultaneous party play."
+  },
+  "name": "Elite: Reroute the Tengu Storm-Cedar Peak: Boss Threshold",
+  "routeId": "MG-DUNGEON-ROUTE-004",
+  "routeName": "Torii-Moon Mirror Road",
+  "routeSlug": "torii-moon-mirror-road",
+  "entryGate": "The Torii-Moon Gate",
+  "gateState": "Distortion Gate with ritual rerouting",
+  "routeRoomId": "MG-DUNGEON-ROUTE-004-ROOM-06",
+  "routeRoomName": "Tengu Storm-Cedar Peak",
+  "routeNodeType": "pre_boss",
+  "routeMissionArc": {
+    "chapterArc": "Relic Detour",
+    "depthBand": "pre_boss",
+    "room": "Tengu Storm-Cedar Peak",
+    "routeBeat": "Mission 15 of 20 advances Tengu Storm-Cedar Peak inside Torii-Moon Mirror Road.",
+    "referencePlayableDeity": "Susanoo",
+    "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
   }
 }

@@ -4,12 +4,12 @@
   "campaignId": "TG-F07-CAMPAIGN-NORMAL",
   "campaignType": "Normal",
   "chapter": 5,
-  "chapterTitle": "Crown of Cinders",
+  "chapterTitle": "Black-Iron Debt Descent — Boss Seal",
   "missionNumber": 17,
   "missionInChapter": 1,
-  "title": "Crown of Cinders: Threshold Sign",
-  "description": "Crown of Cinders unfolds across cinder crown gate under obsidian arches and royal flame, pushing a one active deity Infernal Dominion deity to prove aggression, debuffs, pulls, execution, burn pressure, power through risk. without violating established Realm canon. Appearance rule: Infernal Dominion is the source culture humans later copied as hell, demonology, and infernal contract myth; mission terrain and cosmetics must show black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchies, ash velvet, hellfire clauses.",
-  "lore": "This mission treats Infernal Dominion as the origin behind hell, demonology, and infernal contract myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchies, ash velvet, hellfire clauses instead of generic historical or RPG dressing.",
+  "title": "Bargain the Debt Furnace Treasury: Antechamber Seal",
+  "description": "Bargain the Debt Furnace Treasury: Antechamber Seal is a rebuilt Mythos Gates mission beat for Black-Iron Debt Descent through The Black-Iron Gate (Distortion Gate bound by contract clauses). One selected deity from Lucifer, Lilith, Asmodeus, Naamah enters; this beat spotlights Lucifer as the reference silhouette while preserving player choice. The mission is the pre boss step at Debt Furnace Treasury, using infernal court, bargain market, and chain causeway pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Infernal Dominion is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture..",
+  "lore": "Ascension canon route rewrite: Black-Iron Debt Descent is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Debt Furnace Treasury and reveals: How repeated mistakes become chains. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 919,
   "encouragedTitanRoles": [
     "infernal execution monarch",
@@ -17,14 +17,13 @@
     "burst or control specialist"
   ],
   "mapId": "TG-MAP-006",
-  "terrain": "cinder crown gate under obsidian arches and royal flame; source-culture appearance layer: black iron courts, volcanic glass aisles, ember chain channels, debtor seal floors, contract dais, obsidian throne shadows; cosmetic/relic silhouettes: Goetic chain-crown blades, volcanic glass debtor plates, blood-wax infernal ledger cores, chain-lien reversals",
+  "terrain": "Debt Furnace Treasury configured as a pre boss space inside infernal court, bargain market, and chain causeway; source-culture appearance layer: black iron courts, volcanic glass aisles, ember chain channels, debtor seal floors, contract dais, obsidian throne shadows; cosmetic/relic silhouettes: Goetic chain-crown blades, volcanic glass debtor plates, blood-wax infernal ledger cores, chain-lien reversals",
   "objectives": {
-    "primary": "Complete Crown of Cinders: Threshold Sign with one active deity while reading cinder crown gate under obsidian arches and royal flame and preserving faction doctrine.",
+    "primary": "With one selected deity, survive the boss approach in the Debt Furnace Treasury, secure the boss approach, and enter the chamber with the route law understood.",
     "optional": [
-      "Complete before turn 14",
-      "Keep at least four Titan standing",
-      "Trigger at least two Infernal Dominion faction mechanics",
-      "Trigger at least one Momentum or Divinity decision before victory"
+      "Clear the Debt Furnace Treasury before the route pressure reaches its final warning",
+      "Exploit or avoid the route rule: chains that attach to repeated mistakes",
+      "Resolve at least two contract clauses, debt positioning, chain control, execution through risk decisions before victory"
     ]
   },
   "enemyWaves": [
@@ -48,13 +47,12 @@
   "boss": null,
   "turnLimit": 16,
   "specialRules": [
-    "Dominion Claim: executions refund Momentum when the Titan controls chain-marked ground.",
-    "Bargain Mark: accepting risk creates stronger rewards but harsher enemy turns.",
-    "Dominion Flame: decisive aggression turns enemy weakness into momentum.",
-    "Solo Deityic Scale: one active deity occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
+    "Route Law — Black-Iron Debt Descent: Distortion Gate bound by contract clauses changes how movement, hazards, and enemy pressure are read.",
+    "Room Rule — Debt Furnace Treasury: play this beat as a pre boss node, not a generic arena.",
+    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
-    "Complete Crown of Cinders: Threshold Sign with one active deity while reading cinder crown gate under obsidian arches and royal flame and preserving faction doctrine."
+    "With one selected deity, survive the boss approach in the Debt Furnace Treasury, secure the boss approach, and enter the chamber with the route law understood."
   ],
   "defeatConditions": [
     "Your active deity falls",
@@ -67,13 +65,15 @@
       "Mid-tier Infernal Dominion relic material",
       "Infernal Dominion faction shard cache",
       "Infernal Dominion doctrine upgrade dust",
-      "TG-F07-C05-M17 codex shard"
+      "TG-F07-C05-M17 codex shard",
+      "Black-Iron Debt Descent pre boss codex shard"
     ],
     "replay": [
       "divine mastery XP",
       "Infernal Dominion relic material",
       "Infernal Dominion doctrine upgrade dust",
-      "Infernal Dominion source-culture cosmetic/relic component"
+      "Infernal Dominion source-culture cosmetic/relic component",
+      "Black-Iron Debt Descent route material cache"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
@@ -153,11 +153,7 @@
   "activeTitanCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "engineTarget": "Unreal Engine 5",
-    "platformBaseline": [
-      "Android",
-      "iOS"
-    ],
+    "playerControlledTitans": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -167,16 +163,14 @@
       "Upgrade Titan",
       "Explore Further"
     ],
-    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
-    "playerControlledTitans": 1,
-    "mobileFirst": true,
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled deities",
+      "multiple player-controlled Titans",
       "ally positioning",
       "team turns"
-    ]
+    ],
+    "readableRule": "Legacy schema label says Titan, current fiction label says Deity: exactly one playable god or goddess is controlled in standard battle."
   },
   "crossFactionRunIns": {
     "enabled": true,
@@ -216,5 +210,45 @@
       "generic monster filler",
       "lore rewrites"
     ]
+  },
+  "encouragedDeityRoles": [
+    "infernal execution monarch",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mythosGatesMissionRecreation": {
+    "status": "PASS_1_ROUTE_ALIGNED",
+    "brand": "Mythos Gates",
+    "currentArc": "Ascension",
+    "routeId": "MG-DUNGEON-ROUTE-007",
+    "routeName": "Black-Iron Debt Descent",
+    "entryGate": "The Black-Iron Gate",
+    "gateState": "Distortion Gate bound by contract clauses",
+    "activePlayableDeitiesPerRun": 1,
+    "playableDeityRoster": [
+      "Lilith",
+      "Naamah",
+      "Asmodeus",
+      "Lucifer"
+    ],
+    "dungeonCrawlerIntent": "mission should read as one god or goddess entering a Mythos Gate route node against many enemies, hazards, shrine pressure, treasure temptation, and a route boss chain",
+    "canonRule": "Use source-Realm mythological material, faction-specific hazards, and unresolved Mythos Gate mystery; avoid mortal-ascension, generic giants, simple portals, planets, sci-fi, armies, squads, and simultaneous party play."
+  },
+  "name": "Bargain the Debt Furnace Treasury: Antechamber Seal",
+  "routeId": "MG-DUNGEON-ROUTE-007",
+  "routeName": "Black-Iron Debt Descent",
+  "routeSlug": "black-iron-debt-descent",
+  "entryGate": "The Black-Iron Gate",
+  "gateState": "Distortion Gate bound by contract clauses",
+  "routeRoomId": "MG-DUNGEON-ROUTE-007-ROOM-06",
+  "routeRoomName": "Debt Furnace Treasury",
+  "routeNodeType": "pre_boss",
+  "routeMissionArc": {
+    "chapterArc": "Ascension Verdict",
+    "depthBand": "pre_boss",
+    "room": "Debt Furnace Treasury",
+    "routeBeat": "Mission 17 of 20 advances Debt Furnace Treasury inside Black-Iron Debt Descent.",
+    "referencePlayableDeity": "Lucifer",
+    "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
   }
 }

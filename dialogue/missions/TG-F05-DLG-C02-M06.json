@@ -3,45 +3,60 @@
   "missionId": "TG-F05-C02-M06",
   "factionId": "TG-FACTION-005",
   "campaignType": "Normal",
-  "status": "Draft Ready",
+  "status": "Production Ready",
   "tone": "restrained mythic tactical",
-  "briefing": "Fae Roads Refuse Fire: First Pressure. Tuatha advances through fae crossing where mirrored dew paths repeat careless movement while the Gate tests whether the living world adapts and endures.",
+  "briefing": "Mythos Gates briefing: Remember the Geas Thorn Corridor: Trial Mechanism. Enter Geas Thorn Corridor on Silver-Root Geas Labyrinth through The Silver-Root Gate while the Gate remains Sealed Gate with fae time bleed. Reference deity voice is Morrígan, but the player still chooses one deity from the faction roster. Objective: With one selected deity, solve the hazard layer in the Geas Thorn Corridor, secure the branching trap, and reach the safe marker without feeding the Gate.",
   "lines": {
     "missionIntro": [
       {
-        "speaker": "Tuatha Divine Voice",
-        "text": "The field asks for proof. One active deity enters, and The Thorn-Memory Gate will remember how we answer."
+        "speaker": "Morrígan Divine Voice",
+        "text": "A geas is a road that remembers the foot that broke it. The Geas Thorn Corridor will know whether one deity is enough."
       }
     ],
     "enemyIntroduction": [
       {
         "speaker": "Lore Director",
-        "text": "Threats emerge to test Roots Below the Gate: pressure first, revelation only when the field is held."
+        "text": "Enemies are not filler here; they are the hazard pressure of Silver-Root Geas Labyrinth made hostile."
       }
     ],
     "midBattle": [
       {
         "speaker": "Gameplay Director",
-        "text": "Hold the lane, read the hazard, and spend movement as if it were blood."
+        "text": "Read the room law first: Exploit or avoid the route rule: geas thorns that punish forbidden actions"
       }
     ],
     "victory": [
       {
-        "speaker": "Tuatha Divine Voice",
-        "text": "The Gate has not yielded. It has recorded that we did not break."
+        "speaker": "Morrígan Divine Voice",
+        "text": "The root remembers obedience and opens one more ring."
       }
     ],
     "defeat": [
       {
-        "speaker": "Tuatha Divine Voice",
-        "text": "Fall back before the wound learns our full shape."
+        "speaker": "Morrígan Divine Voice",
+        "text": "Withdraw. The The Silver-Root Gate has learned too much from this attempt."
       }
     ],
     "codex": [
       {
         "speaker": "Lore Director",
-        "text": "This mission keeps Tuatha doctrine intact: Their memory is power, but it can become vengeance when old wounds refuse to compost."
+        "text": "Avalora is the source Realm; mortal myth is only the later echo. This beat documents Geas Thorn Corridor as part of Silver-Root Geas Labyrinth."
       }
     ]
-  }
+  },
+  "soloTitanPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "visualDirection": "Frame Geas Thorn Corridor as a hazard node in Silver-Root Geas Labyrinth; silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.",
+  "updated": "2026-08-16",
+  "mythosGatesDialogueRecreation": {
+    "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-005",
+    "routeName": "Silver-Root Geas Labyrinth",
+    "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable Titan language.",
+    "soloRule": "Dialogue supports one active god or goddess in the field."
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Titan language is excluded from player-facing copy except legacy IDs.",
+  "routeId": "MG-DUNGEON-ROUTE-005",
+  "routeName": "Silver-Root Geas Labyrinth",
+  "routeRoomName": "Geas Thorn Corridor",
+  "entryGate": "The Silver-Root Gate"
 }

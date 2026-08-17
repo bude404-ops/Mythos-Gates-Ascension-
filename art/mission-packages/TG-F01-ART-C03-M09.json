@@ -4,11 +4,11 @@
   "factionId": "TG-FACTION-001",
   "campaignType": "Normal",
   "status": "Prompt Ready",
-  "mapEnvironmentPrompt": "Elongated 3D tactical map for Law Beneath the River Mirror, floodplain mirrors, collapsing bridges, and corrupted river channels, readable mobile lanes, single-deity tactical scale, faction-specific Aten Ra gold, sandstone, turquoise river-light, and solemn Gate pressure.",
-  "backgroundPrompt": "Mythic Sun Realm background for Realm Conflict, distant pyramids, solar obelisks, ancient river channels, no modern elements, no comedy tone.",
+  "mapEnvironmentPrompt": "Mythos Gates mission art rewrite for Weigh the Ma’at Scale Hall: Key Verdict: Sun-Scale Verdict Descent / The Sun-Scale Gate / Stable Gate under Ma’at strain. Depict Ma’at Scale Hall as a readable mobile tactical elite node in sacred judgment temple-road descent; one active god or goddess from Aten Ra, Sutekh, Iset, Amunet; no armies, no squads, no simultaneous party. Primary objective visual: With one selected deity, defeat the elite lock against Lion-Gate Oathbreaker Captain inside the Ma’at Scale Hall and prove the active deity can endure the trial alone. Source-Realm visual language: Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light. Show route readability for shrine, treasure, hazard, elite, or boss intent where relevant. Avoid sci-fi portal treatment, generic fantasy castle, planetary/alien framing, reskinned copy dungeon, UI grid tiles as world objects.",
+  "backgroundPrompt": "Background plate for Weigh the Ma’at Scale Hall: Key Verdict in Ma’at Scale Hall, part of Sun-Scale Verdict Descent. The environment must communicate The Solar Dominion of Khepra as the source culture behind mortal myth echoes, using Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light.",
   "enemyPlacementGuidance": "Place enemies to create lane decisions, objective tension, and flanking pressure without hiding readable silhouettes.",
   "bossArtworkRequirements": "No boss art required; use threat pack silhouettes and objective props.",
-  "objectiveArtworkRequirements": "Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.",
+  "objectiveArtworkRequirements": "Objective props must use Aten Ra source-culture cosmetics: Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes as relic-cache silhouettes, seal anchors, lane markers, or altar mechanisms. Readable on mobile; no generic chest, plain sword, plain armor, or mismatched faction relic.",
   "vfxRequirements": [
     "sunflare tile warning",
     "river-light pulse",
@@ -21,6 +21,22 @@
     "normal campaign badge",
     "star goals visible before launch"
   ],
-  "missionThumbnail": "Law Beneath the River Mirror thumbnail: three deity silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.",
-  "chapterArtwork": "Realm Conflict chapter banner with Aten Ra color language and Gate escalation."
+  "missionThumbnail": "Law Beneath the River Mirror thumbnail: one active deity silhouette advancing through Solar Dominion of Khepra source-culture terrain; visible cues include Aten hand-rays, Ma’at scale geometry, electrum, royal linen-light, faience turquoise, lapis, obsidian, Nile-black silt glass, Red Land jasper and optional Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes.",
+  "chapterArtwork": "Chapter banner uses Aten Ra source-culture appearance canon: Aten hand-rays, Ma’at scale geometry, electrum, royal linen-light, faience turquoise, lapis, obsidian, Nile-black silt glass, Red Land jasper; cosmetic props and reward silhouettes echo Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes; Earth myth is the echo, Realm culture is the source.",
+  "sourceCultureAppearanceRule": "Must match Solar Dominion of Khepra source-culture canon; avoid tourist pharaoh costume, literal pyramid body, sarcophagus robot, readable glyph text, generic desert temple, plain gold statues and generic cosmetics.",
+  "updated": "2026-08-16",
+  "mythosGatesArtRecreation": {
+    "status": "PASS_1_ROUTE_VISUAL_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-001",
+    "routeName": "Sun-Scale Verdict Descent",
+    "entryGate": "The Sun-Scale Gate",
+    "gateState": "Stable Gate under Ma’at strain",
+    "visualRule": "Show one-active-deity scale, source-Realm mythology, physical hazards, shrine/treasure/boss route language, and no sci-fi/simple-portal treatment."
+  },
+  "routeId": "MG-DUNGEON-ROUTE-001",
+  "routeName": "Sun-Scale Verdict Descent",
+  "routeRoomName": "Ma’at Scale Hall",
+  "entryGate": "The Sun-Scale Gate",
+  "encounterPrompt": "Encounter composition for Weigh the Ma’at Scale Hall: Key Verdict: one selected playable deity silhouette versus multiple Hollow scale-thieves in Ma’at Scale Hall. If this is elite or boss content, foreshadow Lion-Gate Oathbreaker Captain and The Misweighed Dawn Judge without adding allied squads.",
+  "negativePrompt": "sci-fi portal treatment, generic fantasy castle, planetary/alien framing, reskinned copy dungeon, UI grid tiles as world objects, armies, squads, party lineup, generic portal, mortal ascension scene"
 }

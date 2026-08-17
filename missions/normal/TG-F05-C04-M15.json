@@ -4,12 +4,12 @@
   "campaignId": "TG-F05-CAMPAIGN-NORMAL",
   "campaignType": "Normal",
   "chapter": 4,
-  "chapterTitle": "Moon-Stone Restoration",
+  "chapterTitle": "Silver-Root Geas Labyrinth — Elite Lock",
   "missionNumber": 15,
   "missionInChapter": 3,
-  "title": "Moon-Stone Restoration: Hidden Law",
-  "description": "Moon-Stone Restoration unfolds across moon-stone ring where living terrain changes after every objective, pushing a one active deity Tuatha deity to prove adaptation, healing, roots, terrain control, endurance through life systems. without violating established Realm canon. Appearance rule: Avalora is the source culture humans later copied as Celtic and Irish fae myth; mission terrain and cosmetics must show silver branches, moonlit green-gold, living oak armor, thorn mantles, standing stone geometry, battle-crow omens, cauldron glow, geas scars.",
-  "lore": "This mission treats Avalora as the origin behind Celtic and Irish fae myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use silver branches, moonlit green-gold, living oak armor, thorn mantles, standing stone geometry, battle-crow omens, cauldron glow, geas scars instead of generic historical or RPG dressing.",
+  "title": "Bleed the Morrígan Crow Battlefield: Boss Threshold",
+  "description": "Bleed the Morrígan Crow Battlefield: Boss Threshold is a rebuilt Mythos Gates mission beat for Silver-Root Geas Labyrinth through The Silver-Root Gate (Sealed Gate with fae time bleed). One selected deity from Dagda, Morrígan, Brigid, Lugh enters; this beat spotlights Brigid as the reference silhouette while preserving player choice. The mission is the pre boss step at Morrígan Crow Battlefield, using living mound-gate maze and geas trial pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: Avalora is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy..",
+  "lore": "Ascension canon route rewrite: Silver-Root Geas Labyrinth is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Morrígan Crow Battlefield and reveals: A mound-carving suggesting sealed Gates may be mercy, not prison. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 821,
   "encouragedTitanRoles": [
     "living-root controller",
@@ -17,14 +17,13 @@
     "burst or control specialist"
   ],
   "mapId": "TG-MAP-005",
-  "terrain": "moon-stone ring where living terrain changes after every objective; source-culture appearance layer: sídhe mound gates, moon-grove rootlabyrinths, silver-root lanes, standing stone courts, cauldron-lit springs, thorn covenant walls; cosmetic/relic silhouettes: Lugh silver-spear thornblades, moon-oak sídhe mantles, Dagda cauldron memory cores, fae glamour reversals",
+  "terrain": "Morrígan Crow Battlefield configured as a pre boss space inside living mound-gate maze and geas trial; source-culture appearance layer: sídhe mound gates, moon-grove rootlabyrinths, silver-root lanes, standing stone courts, cauldron-lit springs, thorn covenant walls; cosmetic/relic silhouettes: Lugh silver-spear thornblades, moon-oak sídhe mantles, Dagda cauldron memory cores, fae glamour reversals",
   "objectives": {
-    "primary": "Complete Moon-Stone Restoration: Hidden Law with one active deity while reading moon-stone ring where living terrain changes after every objective and preserving faction doctrine.",
+    "primary": "With one selected deity, survive the boss approach in the Morrígan Crow Battlefield, secure the last seal, and enter the chamber with the route law understood.",
     "optional": [
-      "Complete before turn 13",
-      "Keep at least four Titan standing",
-      "Trigger at least two Tuatha faction mechanics",
-      "Trigger at least one Momentum or Divinity decision before victory"
+      "Clear the Morrígan Crow Battlefield before the route pressure reaches its final warning",
+      "Exploit or avoid the route rule: cauldron wells that heal whoever pays the right memory",
+      "Resolve at least two geas obedience, fae time reads, crow omen priority, silver-root route memory decisions before victory"
     ]
   },
   "enemyWaves": [
@@ -48,13 +47,12 @@
   "boss": null,
   "turnLimit": 15,
   "specialRules": [
-    "Root Memory: terrain interactions reshape safe lanes for the lone deity.",
-    "Root Memory: repeated routes awaken roots that protect allies or trap enemies.",
-    "Living Grove: terrain and sustain effects grow stronger over time.",
-    "Solo Deityic Scale: one active deity occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
+    "Route Law — Silver-Root Geas Labyrinth: Sealed Gate with fae time bleed changes how movement, hazards, and enemy pressure are read.",
+    "Room Rule — Morrígan Crow Battlefield: play this beat as a pre boss node, not a generic arena.",
+    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
-    "Complete Moon-Stone Restoration: Hidden Law with one active deity while reading moon-stone ring where living terrain changes after every objective and preserving faction doctrine."
+    "With one selected deity, survive the boss approach in the Morrígan Crow Battlefield, secure the last seal, and enter the chamber with the route law understood."
   ],
   "defeatConditions": [
     "Your active deity falls",
@@ -67,13 +65,15 @@
       "Mid-tier Tuatha relic material",
       "Tuatha faction shard cache",
       "Tuatha doctrine upgrade dust",
-      "TG-F05-C04-M15 codex shard"
+      "TG-F05-C04-M15 codex shard",
+      "Silver-Root Geas Labyrinth pre boss codex shard"
     ],
     "replay": [
       "divine mastery XP",
       "Tuatha relic material",
       "Tuatha doctrine upgrade dust",
-      "Tuatha source-culture cosmetic/relic component"
+      "Tuatha source-culture cosmetic/relic component",
+      "Silver-Root Geas Labyrinth route material cache"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
@@ -153,11 +153,7 @@
   "activeTitanCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "engineTarget": "Unreal Engine 5",
-    "platformBaseline": [
-      "Android",
-      "iOS"
-    ],
+    "playerControlledTitans": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -167,16 +163,14 @@
       "Upgrade Titan",
       "Explore Further"
     ],
-    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
-    "playerControlledTitans": 1,
-    "mobileFirst": true,
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled deities",
+      "multiple player-controlled Titans",
       "ally positioning",
       "team turns"
-    ]
+    ],
+    "readableRule": "Legacy schema label says Titan, current fiction label says Deity: exactly one playable god or goddess is controlled in standard battle."
   },
   "crossFactionRunIns": {
     "enabled": true,
@@ -216,5 +210,45 @@
       "generic monster filler",
       "lore rewrites"
     ]
+  },
+  "encouragedDeityRoles": [
+    "living-root controller",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mythosGatesMissionRecreation": {
+    "status": "PASS_1_ROUTE_ALIGNED",
+    "brand": "Mythos Gates",
+    "currentArc": "Ascension",
+    "routeId": "MG-DUNGEON-ROUTE-005",
+    "routeName": "Silver-Root Geas Labyrinth",
+    "entryGate": "The Silver-Root Gate",
+    "gateState": "Sealed Gate with fae time bleed",
+    "activePlayableDeitiesPerRun": 1,
+    "playableDeityRoster": [
+      "Brigid",
+      "Morrígan",
+      "Dagda",
+      "Lugh"
+    ],
+    "dungeonCrawlerIntent": "mission should read as one god or goddess entering a Mythos Gate route node against many enemies, hazards, shrine pressure, treasure temptation, and a route boss chain",
+    "canonRule": "Use source-Realm mythological material, faction-specific hazards, and unresolved Mythos Gate mystery; avoid mortal-ascension, generic giants, simple portals, planets, sci-fi, armies, squads, and simultaneous party play."
+  },
+  "name": "Bleed the Morrígan Crow Battlefield: Boss Threshold",
+  "routeId": "MG-DUNGEON-ROUTE-005",
+  "routeName": "Silver-Root Geas Labyrinth",
+  "routeSlug": "silver-root-geas-labyrinth",
+  "entryGate": "The Silver-Root Gate",
+  "gateState": "Sealed Gate with fae time bleed",
+  "routeRoomId": "MG-DUNGEON-ROUTE-005-ROOM-06",
+  "routeRoomName": "Morrígan Crow Battlefield",
+  "routeNodeType": "pre_boss",
+  "routeMissionArc": {
+    "chapterArc": "Relic Detour",
+    "depthBand": "pre_boss",
+    "room": "Morrígan Crow Battlefield",
+    "routeBeat": "Mission 15 of 20 advances Morrígan Crow Battlefield inside Silver-Root Geas Labyrinth.",
+    "referencePlayableDeity": "Brigid",
+    "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
   }
 }

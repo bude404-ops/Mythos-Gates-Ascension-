@@ -4,12 +4,12 @@
   "campaignId": "TG-F01-CAMPAIGN-ELITE",
   "campaignType": "Elite",
   "chapter": 4,
-  "chapterTitle": "War of Deities",
+  "chapterTitle": "Sun-Scale Verdict Descent — Elite Lock",
   "missionNumber": 14,
   "missionInChapter": 2,
-  "title": "Elite: The Black Sun Caravan",
-  "description": "Elite remix of The Black Sun Caravan: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat. Appearance rule: Solar Dominion of Khepra is the source culture humans later copied as Egyptian solar myth; mission terrain and cosmetics must show Aten hand-rays, Ma’at scale geometry, electrum, royal linen-light, faience turquoise, lapis, obsidian, Nile-black silt glass, Red Land jasper.",
-  "lore": "This mission treats Solar Dominion of Khepra as the origin behind Egyptian solar myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use Aten hand-rays, Ma’at scale geometry, electrum, royal linen-light, faience turquoise, lapis, obsidian, Nile-black silt glass, Red Land jasper instead of generic historical or RPG dressing.",
+  "title": "Elite: Burn the Lion Gate Kill Zone: Hidden Cache",
+  "description": "Elite: Burn the Lion Gate Kill Zone: Hidden Cache is a rebuilt Mythos Gates mission beat for Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma’at strain). One selected deity from Aten Ra, Sutekh, Iset, Amunet enters; this beat spotlights Sutekh as the reference silhouette while preserving player choice. The mission is the treasure or lore step at Lion Gate Kill Zone, using sacred judgment temple-road descent pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Solar Dominion of Khepra is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light..",
+  "lore": "Ascension canon route rewrite: Sun-Scale Verdict Descent is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Lion Gate Kill Zone and reveals: How Khepri dawn loops restore both allies and enemies. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 810,
   "encouragedTitanRoles": [
     "solar judgment anchor",
@@ -17,14 +17,14 @@
     "burst or control specialist"
   ],
   "mapId": "TG-MAP-008",
-  "terrain": "tiered sun platforms with simultaneous anchor points and overcharge hazards; source-culture appearance layer: sun-scale courts, pylon shadow lanes, river-light channels, Khepri dawn engines, Ma’at seal platforms, desert storm edges; cosmetic/relic silhouettes: Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes",
+  "terrain": "Lion Gate Kill Zone configured as a treasure or lore space inside sacred judgment temple-road descent; source-culture appearance layer: sun-scale courts, pylon shadow lanes, river-light channels, Khepri dawn engines, Ma’at seal platforms, desert storm edges; cosmetic/relic silhouettes: Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes",
   "objectives": {
-    "primary": "Complete Elite: The Black Sun Caravan with one active deity while reading tiered sun platforms with simultaneous anchor points and overcharge hazards and preserving faction doctrine.",
+    "primary": "With one selected deity, open the relic detour in the elite-tuned Lion Gate Kill Zone, secure the lore cache, and take the reward without awakening the wrong memory.",
     "optional": [
-      "Win with no Titan defeated",
-      "Win before turn 11",
-      "Stop every reinforcement trigger or defeat the reinforcement commander first",
-      "Trigger at least one Momentum or Divinity decision before victory"
+      "Clear the Lion Gate Kill Zone without the active deity falling below 35% integrity",
+      "Exploit or avoid the route rule: Sutekh red storms that disrupt both allies and Hollow invaders",
+      "Resolve at least three solar judgment, Ma’at balance, river-light positioning, verdict pressure decisions before victory",
+      "Finish with the boss, elite, shrine, treasure, or hazard node clearly readable for mobile tactical play"
     ]
   },
   "enemyWaves": [
@@ -62,15 +62,12 @@
   },
   "turnLimit": 12,
   "specialRules": [
-    "Solar Law: Momentum grows when the lone deity holds marked light lanes without retreating.",
-    "Overcharge Law: standing on empowered tiles grants attack reach but increases incoming pressure.",
-    "Split Threat: two objectives resolve on opposite sides of the field.",
-    "Elite Remix: enemy AI prioritizes objectives and exposed support Titan.",
-    "Restricted Recovery: healing or recovery tiles deactivate after use.",
-    "Solo Deityic Scale: one active deity occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
+    "Route Law — Sun-Scale Verdict Descent: Stable Gate under Ma’at strain changes how movement, hazards, and enemy pressure are read.",
+    "Room Rule — Lion Gate Kill Zone: play this beat as a treasure or lore node, not a generic arena.",
+    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
-    "Complete Elite: The Black Sun Caravan with one active deity while reading tiered sun platforms with simultaneous anchor points and overcharge hazards and preserving faction doctrine."
+    "With one selected deity, open the relic detour in the elite-tuned Lion Gate Kill Zone, secure the lore cache, and take the reward without awakening the wrong memory."
   ],
   "defeatConditions": [
     "Your active deity falls",
@@ -84,13 +81,14 @@
       "Elite faction shard",
       "High-tier gear pattern",
       "Prestige sigil",
-      "Elite Aten Ra mission 14 codex shard"
+      "Sun-Scale Verdict Descent treasure or lore codex shard"
     ],
     "replay": [
       "divine mastery XP",
       "Refined solar alloy",
       "Elite faction shard",
-      "High-tier gear pattern"
+      "High-tier gear pattern",
+      "Sun-Scale Verdict Descent route material cache"
     ],
     "stars": {
       "three": "Primary, secondary, and all optional objectives completed",
@@ -176,11 +174,7 @@
   "activeTitanCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "engineTarget": "Unreal Engine 5",
-    "platformBaseline": [
-      "Android",
-      "iOS"
-    ],
+    "playerControlledTitans": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -190,16 +184,14 @@
       "Upgrade Titan",
       "Explore Further"
     ],
-    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
-    "playerControlledTitans": 1,
-    "mobileFirst": true,
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled deities",
+      "multiple player-controlled Titans",
       "ally positioning",
       "team turns"
-    ]
+    ],
+    "readableRule": "Legacy schema label says Titan, current fiction label says Deity: exactly one playable god or goddess is controlled in standard battle."
   },
   "crossFactionRunIns": {
     "enabled": true,
@@ -239,5 +231,45 @@
       "generic monster filler",
       "lore rewrites"
     ]
+  },
+  "encouragedDeityRoles": [
+    "solar judgment anchor",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mythosGatesMissionRecreation": {
+    "status": "PASS_1_ROUTE_ALIGNED",
+    "brand": "Mythos Gates",
+    "currentArc": "Ascension",
+    "routeId": "MG-DUNGEON-ROUTE-001",
+    "routeName": "Sun-Scale Verdict Descent",
+    "entryGate": "The Sun-Scale Gate",
+    "gateState": "Stable Gate under Ma’at strain",
+    "activePlayableDeitiesPerRun": 1,
+    "playableDeityRoster": [
+      "Amunet",
+      "Iset",
+      "Aten Ra",
+      "Sutekh"
+    ],
+    "dungeonCrawlerIntent": "mission should read as one god or goddess entering a Mythos Gate route node against many enemies, hazards, shrine pressure, treasure temptation, and a route boss chain",
+    "canonRule": "Use source-Realm mythological material, faction-specific hazards, and unresolved Mythos Gate mystery; avoid mortal-ascension, generic giants, simple portals, planets, sci-fi, armies, squads, and simultaneous party play."
+  },
+  "name": "Elite: Burn the Lion Gate Kill Zone: Hidden Cache",
+  "routeId": "MG-DUNGEON-ROUTE-001",
+  "routeName": "Sun-Scale Verdict Descent",
+  "routeSlug": "sun-scale-verdict-descent",
+  "entryGate": "The Sun-Scale Gate",
+  "gateState": "Stable Gate under Ma’at strain",
+  "routeRoomId": "MG-DUNGEON-ROUTE-001-ROOM-05",
+  "routeRoomName": "Lion Gate Kill Zone",
+  "routeNodeType": "treasure_or_lore",
+  "routeMissionArc": {
+    "chapterArc": "Relic Detour",
+    "depthBand": "treasure_or_lore",
+    "room": "Lion Gate Kill Zone",
+    "routeBeat": "Mission 14 of 20 advances Lion Gate Kill Zone inside Sun-Scale Verdict Descent.",
+    "referencePlayableDeity": "Sutekh",
+    "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
   }
 }

@@ -4,12 +4,12 @@
   "campaignId": "TG-F05-CAMPAIGN-ELITE",
   "campaignType": "Elite",
   "chapter": 5,
-  "chapterTitle": "The Root-Crowned Gate",
+  "chapterTitle": "Silver-Root Geas Labyrinth — Boss Seal",
   "missionNumber": 19,
   "missionInChapter": 3,
-  "title": "Elite: The Root-Crowned Gate: Hidden Law",
-  "description": "The Root-Crowned Gate unfolds across root-crowned gate hollowed beneath silver branches, pushing a one active deity Tuatha deity to prove adaptation, healing, roots, terrain control, endurance through life systems. without violating established Realm canon. Appearance rule: Avalora is the source culture humans later copied as Celtic and Irish fae myth; mission terrain and cosmetics must show silver branches, moonlit green-gold, living oak armor, thorn mantles, standing stone geometry, battle-crow omens, cauldron glow, geas scars.",
-  "lore": "This mission treats Avalora as the origin behind Celtic and Irish fae myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use silver branches, moonlit green-gold, living oak armor, thorn mantles, standing stone geometry, battle-crow omens, cauldron glow, geas scars instead of generic historical or RPG dressing.",
+  "title": "Elite: Bleed the Crow-Crowned Boss Mound: Boss Chamber",
+  "description": "Elite: Bleed the Crow-Crowned Boss Mound: Boss Chamber is a rebuilt Mythos Gates mission beat for Silver-Root Geas Labyrinth through The Silver-Root Gate (Sealed Gate with fae time bleed). One selected deity from Dagda, Morrígan, Brigid, Lugh enters; this beat spotlights Brigid as the reference silhouette while preserving player choice. The mission is the boss step at Crow-Crowned Boss Mound, using living mound-gate maze and geas trial pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: Avalora is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy..",
+  "lore": "Ascension canon route rewrite: Silver-Root Geas Labyrinth is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Crow-Crowned Boss Mound and reveals: Why forbidden actions trigger living thorns. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 1197,
   "encouragedTitanRoles": [
     "living-root controller",
@@ -17,14 +17,14 @@
     "burst or control specialist"
   ],
   "mapId": "TG-MAP-005",
-  "terrain": "root-crowned gate hollowed beneath silver branches; source-culture appearance layer: sídhe mound gates, moon-grove rootlabyrinths, silver-root lanes, standing stone courts, cauldron-lit springs, thorn covenant walls; cosmetic/relic silhouettes: Lugh silver-spear thornblades, moon-oak sídhe mantles, Dagda cauldron memory cores, fae glamour reversals",
+  "terrain": "Crow-Crowned Boss Mound configured as a boss space inside living mound-gate maze and geas trial; source-culture appearance layer: sídhe mound gates, moon-grove rootlabyrinths, silver-root lanes, standing stone courts, cauldron-lit springs, thorn covenant walls; cosmetic/relic silhouettes: Lugh silver-spear thornblades, moon-oak sídhe mantles, Dagda cauldron memory cores, fae glamour reversals",
   "objectives": {
-    "primary": "Complete Elite: The Root-Crowned Gate: Hidden Law with one active deity while reading root-crowned gate hollowed beneath silver branches and preserving faction doctrine.",
+    "primary": "With one selected deity, defeat the boss encounter against The Crow-Crowned Geas Breaker inside the elite-tuned Crow-Crowned Boss Mound and complete the Ascension route without breaking canon.",
     "optional": [
-      "Win with no Titan defeated",
-      "Resolve at least three Tuatha doctrine actions",
-      "Hold every objective for one full enemy turn",
-      "Trigger at least one Momentum or Divinity decision before victory"
+      "Clear the Crow-Crowned Boss Mound without the active deity falling below 35% integrity",
+      "Exploit or avoid the route rule: silver-root snares that remember previous steps",
+      "Resolve at least three geas obedience, fae time reads, crow omen priority, silver-root route memory decisions before victory",
+      "Finish with the boss, elite, shrine, treasure, or hazard node clearly readable for mobile tactical play"
     ]
   },
   "enemyWaves": [
@@ -48,19 +48,19 @@
       "crossFaction": true
     }
   ],
-  "boss": null,
+  "boss": {
+    "enemyId": "TG-CREATURE-036",
+    "phaseCount": 2,
+    "mechanic": "The Crow-Crowned Geas Breaker manifests as the named route encounter; pressure changes around Crow-Crowned Boss Mound and the one active deity rule."
+  },
   "turnLimit": 17,
   "specialRules": [
-    "Root Memory: terrain interactions reshape safe lanes for the lone deity.",
-    "Root Memory: repeated routes awaken roots that protect allies or trap enemies.",
-    "Living Grove: terrain and sustain effects grow stronger over time.",
-    "Elite Hazard: secondary realm pressure starts active.",
-    "Elite Command: enemy support persists until objective action breaks the source.",
-    "Solo Deityic Scale: one active deity occupies the tactical focus; enemies, elites, and bosses scale around that single presence.",
-    "Cross-Faction Threat: Empyrean enemies join the Hollow in this elite encounter."
+    "Route Law — Silver-Root Geas Labyrinth: Sealed Gate with fae time bleed changes how movement, hazards, and enemy pressure are read.",
+    "Room Rule — Crow-Crowned Boss Mound: play this beat as a boss node, not a generic arena.",
+    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
-    "Complete Elite: The Root-Crowned Gate: Hidden Law with one active deity while reading root-crowned gate hollowed beneath silver branches and preserving faction doctrine."
+    "With one selected deity, defeat the boss encounter against The Crow-Crowned Geas Breaker inside the elite-tuned Crow-Crowned Boss Mound and complete the Ascension route without breaking canon."
   ],
   "defeatConditions": [
     "Your active deity falls",
@@ -73,13 +73,15 @@
       "High-tier Tuatha relic material",
       "Tuatha faction shard cache",
       "Tuatha doctrine upgrade dust",
-      "TG-F05-E-C05-M19 codex shard"
+      "TG-F05-E-C05-M19 codex shard",
+      "Silver-Root Geas Labyrinth boss codex shard"
     ],
     "replay": [
       "divine mastery XP",
       "Tuatha relic material",
       "Tuatha doctrine upgrade dust",
-      "Tuatha source-culture cosmetic/relic component"
+      "Tuatha source-culture cosmetic/relic component",
+      "Silver-Root Geas Labyrinth route material cache"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
@@ -166,11 +168,7 @@
   "activeTitanCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "engineTarget": "Unreal Engine 5",
-    "platformBaseline": [
-      "Android",
-      "iOS"
-    ],
+    "playerControlledTitans": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -180,16 +178,14 @@
       "Upgrade Titan",
       "Explore Further"
     ],
-    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
-    "playerControlledTitans": 1,
-    "mobileFirst": true,
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled deities",
+      "multiple player-controlled Titans",
       "ally positioning",
       "team turns"
-    ]
+    ],
+    "readableRule": "Legacy schema label says Titan, current fiction label says Deity: exactly one playable god or goddess is controlled in standard battle."
   },
   "crossFactionRunIns": {
     "enabled": true,
@@ -229,5 +225,45 @@
       "generic monster filler",
       "lore rewrites"
     ]
+  },
+  "encouragedDeityRoles": [
+    "living-root controller",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mythosGatesMissionRecreation": {
+    "status": "PASS_1_ROUTE_ALIGNED",
+    "brand": "Mythos Gates",
+    "currentArc": "Ascension",
+    "routeId": "MG-DUNGEON-ROUTE-005",
+    "routeName": "Silver-Root Geas Labyrinth",
+    "entryGate": "The Silver-Root Gate",
+    "gateState": "Sealed Gate with fae time bleed",
+    "activePlayableDeitiesPerRun": 1,
+    "playableDeityRoster": [
+      "Brigid",
+      "Morrígan",
+      "Dagda",
+      "Lugh"
+    ],
+    "dungeonCrawlerIntent": "mission should read as one god or goddess entering a Mythos Gate route node against many enemies, hazards, shrine pressure, treasure temptation, and a route boss chain",
+    "canonRule": "Use source-Realm mythological material, faction-specific hazards, and unresolved Mythos Gate mystery; avoid mortal-ascension, generic giants, simple portals, planets, sci-fi, armies, squads, and simultaneous party play."
+  },
+  "name": "Elite: Bleed the Crow-Crowned Boss Mound: Boss Chamber",
+  "routeId": "MG-DUNGEON-ROUTE-005",
+  "routeName": "Silver-Root Geas Labyrinth",
+  "routeSlug": "silver-root-geas-labyrinth",
+  "entryGate": "The Silver-Root Gate",
+  "gateState": "Sealed Gate with fae time bleed",
+  "routeRoomId": "MG-DUNGEON-ROUTE-005-ROOM-07",
+  "routeRoomName": "Crow-Crowned Boss Mound",
+  "routeNodeType": "boss",
+  "routeMissionArc": {
+    "chapterArc": "Ascension Verdict",
+    "depthBand": "boss",
+    "room": "Crow-Crowned Boss Mound",
+    "routeBeat": "Mission 19 of 20 advances Crow-Crowned Boss Mound inside Silver-Root Geas Labyrinth.",
+    "referencePlayableDeity": "Brigid",
+    "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
   }
 }

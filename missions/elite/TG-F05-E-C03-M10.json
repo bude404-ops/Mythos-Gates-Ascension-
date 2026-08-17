@@ -4,12 +4,12 @@
   "campaignId": "TG-F05-CAMPAIGN-ELITE",
   "campaignType": "Elite",
   "chapter": 3,
-  "chapterTitle": "The Elder Grove Bleeds",
+  "chapterTitle": "Silver-Root Geas Labyrinth — Hazard Layer",
   "missionNumber": 10,
   "missionInChapter": 2,
-  "title": "Elite: The Elder Grove Bleeds: First Pressure",
-  "description": "The Elder Grove Bleeds unfolds across elder grove wound with blackened bark and regrowing cover, pushing a one active deity Tuatha deity to prove adaptation, healing, roots, terrain control, endurance through life systems. without violating established Realm canon. Appearance rule: Avalora is the source culture humans later copied as Celtic and Irish fae myth; mission terrain and cosmetics must show silver branches, moonlit green-gold, living oak armor, thorn mantles, standing stone geometry, battle-crow omens, cauldron glow, geas scars.",
-  "lore": "This mission treats Avalora as the origin behind Celtic and Irish fae myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use silver branches, moonlit green-gold, living oak armor, thorn mantles, standing stone geometry, battle-crow omens, cauldron glow, geas scars instead of generic historical or RPG dressing.",
+  "title": "Elite: Remember the Tír na nÓg Mirror Meadow: Elite Lock",
+  "description": "Elite: Remember the Tír na nÓg Mirror Meadow: Elite Lock is a rebuilt Mythos Gates mission beat for Silver-Root Geas Labyrinth through The Silver-Root Gate (Sealed Gate with fae time bleed). One selected deity from Dagda, Morrígan, Brigid, Lugh enters; this beat spotlights Morrígan as the reference silhouette while preserving player choice. The mission is the elite step at Tír na nÓg Mirror Meadow, using living mound-gate maze and geas trial pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: Avalora is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy..",
+  "lore": "Ascension canon route rewrite: Silver-Root Geas Labyrinth is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Tír na nÓg Mirror Meadow and reveals: Why forbidden actions trigger living thorns. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 981,
   "encouragedTitanRoles": [
     "living-root controller",
@@ -17,14 +17,14 @@
     "burst or control specialist"
   ],
   "mapId": "TG-MAP-005",
-  "terrain": "elder grove wound with blackened bark and regrowing cover; source-culture appearance layer: sídhe mound gates, moon-grove rootlabyrinths, silver-root lanes, standing stone courts, cauldron-lit springs, thorn covenant walls; cosmetic/relic silhouettes: Lugh silver-spear thornblades, moon-oak sídhe mantles, Dagda cauldron memory cores, fae glamour reversals",
+  "terrain": "Tír na nÓg Mirror Meadow configured as a elite space inside living mound-gate maze and geas trial; source-culture appearance layer: sídhe mound gates, moon-grove rootlabyrinths, silver-root lanes, standing stone courts, cauldron-lit springs, thorn covenant walls; cosmetic/relic silhouettes: Lugh silver-spear thornblades, moon-oak sídhe mantles, Dagda cauldron memory cores, fae glamour reversals",
   "objectives": {
-    "primary": "Complete Elite: The Elder Grove Bleeds: First Pressure with one active deity while reading elder grove wound with blackened bark and regrowing cover and preserving faction doctrine.",
+    "primary": "With one selected deity, defeat the elite lock against Sídhe Thorn Knight inside the elite-tuned Tír na nÓg Mirror Meadow and prove the active deity can endure the trial alone.",
     "optional": [
-      "Win with no Titan defeated",
-      "Resolve at least three Tuatha doctrine actions",
-      "Hold every objective for one full enemy turn",
-      "Trigger at least one Momentum or Divinity decision before victory"
+      "Clear the Tír na nÓg Mirror Meadow without the active deity falling below 35% integrity",
+      "Exploit or avoid the route rule: cauldron wells that heal whoever pays the right memory",
+      "Resolve at least three geas obedience, fae time reads, crow omen priority, silver-root route memory decisions before victory",
+      "Finish with the boss, elite, shrine, treasure, or hazard node clearly readable for mobile tactical play"
     ]
   },
   "enemyWaves": [
@@ -45,18 +45,19 @@
       "trigger": "turn 3 or first objective claimed"
     }
   ],
-  "boss": null,
+  "boss": {
+    "enemyId": "TG-CREATURE-003",
+    "phaseCount": 2,
+    "mechanic": "Sídhe Thorn Knight manifests as the named route encounter; pressure changes around Tír na nÓg Mirror Meadow and the one active deity rule."
+  },
   "turnLimit": 15,
   "specialRules": [
-    "Root Memory: terrain interactions reshape safe lanes for the lone deity.",
-    "Root Memory: repeated routes awaken roots that protect allies or trap enemies.",
-    "Living Grove: terrain and sustain effects grow stronger over time.",
-    "Elite Hazard: secondary realm pressure starts active.",
-    "Elite Command: enemy support persists until objective action breaks the source.",
-    "Solo Deityic Scale: one active deity occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
+    "Route Law — Silver-Root Geas Labyrinth: Sealed Gate with fae time bleed changes how movement, hazards, and enemy pressure are read.",
+    "Room Rule — Tír na nÓg Mirror Meadow: play this beat as a elite node, not a generic arena.",
+    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
-    "Complete Elite: The Elder Grove Bleeds: First Pressure with one active deity while reading elder grove wound with blackened bark and regrowing cover and preserving faction doctrine."
+    "With one selected deity, defeat the elite lock against Sídhe Thorn Knight inside the elite-tuned Tír na nÓg Mirror Meadow and prove the active deity can endure the trial alone."
   ],
   "defeatConditions": [
     "Your active deity falls",
@@ -69,13 +70,15 @@
       "High-tier Tuatha relic material",
       "Tuatha faction shard cache",
       "Tuatha doctrine upgrade dust",
-      "TG-F05-E-C03-M10 codex shard"
+      "TG-F05-E-C03-M10 codex shard",
+      "Silver-Root Geas Labyrinth elite codex shard"
     ],
     "replay": [
       "divine mastery XP",
       "Tuatha relic material",
       "Tuatha doctrine upgrade dust",
-      "Tuatha source-culture cosmetic/relic component"
+      "Tuatha source-culture cosmetic/relic component",
+      "Silver-Root Geas Labyrinth route material cache"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
@@ -162,11 +165,7 @@
   "activeTitanCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "engineTarget": "Unreal Engine 5",
-    "platformBaseline": [
-      "Android",
-      "iOS"
-    ],
+    "playerControlledTitans": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -176,16 +175,14 @@
       "Upgrade Titan",
       "Explore Further"
     ],
-    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
-    "playerControlledTitans": 1,
-    "mobileFirst": true,
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled deities",
+      "multiple player-controlled Titans",
       "ally positioning",
       "team turns"
-    ]
+    ],
+    "readableRule": "Legacy schema label says Titan, current fiction label says Deity: exactly one playable god or goddess is controlled in standard battle."
   },
   "crossFactionRunIns": {
     "enabled": true,
@@ -225,5 +222,45 @@
       "generic monster filler",
       "lore rewrites"
     ]
+  },
+  "encouragedDeityRoles": [
+    "living-root controller",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mythosGatesMissionRecreation": {
+    "status": "PASS_1_ROUTE_ALIGNED",
+    "brand": "Mythos Gates",
+    "currentArc": "Ascension",
+    "routeId": "MG-DUNGEON-ROUTE-005",
+    "routeName": "Silver-Root Geas Labyrinth",
+    "entryGate": "The Silver-Root Gate",
+    "gateState": "Sealed Gate with fae time bleed",
+    "activePlayableDeitiesPerRun": 1,
+    "playableDeityRoster": [
+      "Brigid",
+      "Morrígan",
+      "Dagda",
+      "Lugh"
+    ],
+    "dungeonCrawlerIntent": "mission should read as one god or goddess entering a Mythos Gate route node against many enemies, hazards, shrine pressure, treasure temptation, and a route boss chain",
+    "canonRule": "Use source-Realm mythological material, faction-specific hazards, and unresolved Mythos Gate mystery; avoid mortal-ascension, generic giants, simple portals, planets, sci-fi, armies, squads, and simultaneous party play."
+  },
+  "name": "Elite: Remember the Tír na nÓg Mirror Meadow: Elite Lock",
+  "routeId": "MG-DUNGEON-ROUTE-005",
+  "routeName": "Silver-Root Geas Labyrinth",
+  "routeSlug": "silver-root-geas-labyrinth",
+  "entryGate": "The Silver-Root Gate",
+  "gateState": "Sealed Gate with fae time bleed",
+  "routeRoomId": "MG-DUNGEON-ROUTE-005-ROOM-04",
+  "routeRoomName": "Tír na nÓg Mirror Meadow",
+  "routeNodeType": "elite",
+  "routeMissionArc": {
+    "chapterArc": "Dungeon Law",
+    "depthBand": "elite",
+    "room": "Tír na nÓg Mirror Meadow",
+    "routeBeat": "Mission 10 of 20 advances Tír na nÓg Mirror Meadow inside Silver-Root Geas Labyrinth.",
+    "referencePlayableDeity": "Morrígan",
+    "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
   }
 }

@@ -4,12 +4,12 @@
   "campaignId": "TG-F04-CAMPAIGN-NORMAL",
   "campaignType": "Normal",
   "chapter": 3,
-  "chapterTitle": "The Lake Answers Twice",
+  "chapterTitle": "Torii-Moon Mirror Road — Hazard Layer",
   "missionNumber": 12,
   "missionInChapter": 4,
-  "title": "The Lake Answers Twice: Realm Answer",
-  "description": "The Lake Answers Twice unfolds across mirror lake sanctum with moon bridges and black-water reflection hazards, pushing a one active deity Kami deity to prove precise control, repositioning, evasion, spirit terrain, disciplined burst. without violating established Realm canon. Appearance rule: Sacred Kingdoms is the source culture humans later copied as Japanese kami and shrine myth; mission terrain and cosmetics must show torii silhouettes, shrine lacquer red, white shide seals, shimenawa cords, mirror silver, foxfire blue, cedar bark, moonlit silk, oni iron.",
-  "lore": "This mission treats Sacred Kingdoms as the origin behind Japanese kami and shrine myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use torii silhouettes, shrine lacquer red, white shide seals, shimenawa cords, mirror silver, foxfire blue, cedar bark, moonlit silk, oni iron instead of generic historical or RPG dressing.",
+  "title": "Unmask the Inari Rice Court Storehouse: Lore Price",
+  "description": "Unmask the Inari Rice Court Storehouse: Lore Price is a rebuilt Mythos Gates mission beat for Torii-Moon Mirror Road through The Torii-Moon Gate (Distortion Gate with ritual rerouting). One selected deity from Amaterasu, Tsukuyomi, Susanoo, Izanami enters; this beat spotlights Izanami as the reference silhouette while preserving player choice. The mission is the treasure or lore step at Inari Rice Court Storehouse, using shrine-road labyrinth and mirror sanctum pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Sacred Kingdoms is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash..",
+  "lore": "Ascension canon route rewrite: Torii-Moon Mirror Road is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Inari Rice Court Storehouse and reveals: A shrine tablet implying some Gates choose which names may pass. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 731,
   "encouragedTitanRoles": [
     "spirit-road tactician",
@@ -17,14 +17,13 @@
     "burst or control specialist"
   ],
   "mapId": "TG-MAP-010",
-  "terrain": "mirror lake sanctum with moon bridges and black-water reflection hazards; source-culture appearance layer: torii threshold roads, shrine-stone lanes, foxfire lantern smoke, mirror-water sanctums, cedar root cover, purification basins; cosmetic/relic silhouettes: mirror-talisman spirit blades, lacquered shimenawa spirit-guards, foxfire magatama cores, kitsune misdirection counters",
+  "terrain": "Inari Rice Court Storehouse configured as a treasure or lore space inside shrine-road labyrinth and mirror sanctum; source-culture appearance layer: torii threshold roads, shrine-stone lanes, foxfire lantern smoke, mirror-water sanctums, cedar root cover, purification basins; cosmetic/relic silhouettes: mirror-talisman spirit blades, lacquered shimenawa spirit-guards, foxfire magatama cores, kitsune misdirection counters",
   "objectives": {
-    "primary": "Complete The Lake Answers Twice: Realm Answer with one active deity while reading mirror lake sanctum with moon bridges and black-water reflection hazards and preserving faction doctrine.",
+    "primary": "With one selected deity, open the relic detour in the Inari Rice Court Storehouse, secure the hidden memory, and take the reward without awakening the wrong memory.",
     "optional": [
-      "Complete before turn 12",
-      "Keep at least four Titan standing",
-      "Trigger at least two Kami faction mechanics",
-      "Trigger at least one Momentum or Divinity decision before victory"
+      "Clear the Inari Rice Court Storehouse before the route pressure reaches its final warning",
+      "Exploit or avoid the route rule: purification streams that burn corruption and lies",
+      "Resolve at least two purification rites, mirror-reading, foxfire deception, taboo-aware movement decisions before victory"
     ]
   },
   "enemyWaves": [
@@ -53,13 +52,12 @@
   },
   "turnLimit": 14,
   "specialRules": [
-    "Foxfire Reading: reactions strengthen after using misdirection terrain or shrine cover.",
-    "Spirit Contract: objectives must be cleansed without desecrating shrine markers.",
-    "Sacred Balance: careful positioning unlocks spirit precision effects.",
-    "Solo Deityic Scale: one active deity occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
+    "Route Law — Torii-Moon Mirror Road: Distortion Gate with ritual rerouting changes how movement, hazards, and enemy pressure are read.",
+    "Room Rule — Inari Rice Court Storehouse: play this beat as a treasure or lore node, not a generic arena.",
+    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
-    "Complete The Lake Answers Twice: Realm Answer with one active deity while reading mirror lake sanctum with moon bridges and black-water reflection hazards and preserving faction doctrine."
+    "With one selected deity, open the relic detour in the Inari Rice Court Storehouse, secure the hidden memory, and take the reward without awakening the wrong memory."
   ],
   "defeatConditions": [
     "Your active deity falls",
@@ -72,13 +70,15 @@
       "Mid-tier Kami relic material",
       "Kami faction shard cache",
       "Kami doctrine upgrade dust",
-      "TG-F04-C03-M12 codex shard"
+      "TG-F04-C03-M12 codex shard",
+      "Torii-Moon Mirror Road treasure or lore codex shard"
     ],
     "replay": [
       "divine mastery XP",
       "Kami relic material",
       "Kami doctrine upgrade dust",
-      "Kami source-culture cosmetic/relic component"
+      "Kami source-culture cosmetic/relic component",
+      "Torii-Moon Mirror Road route material cache"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
@@ -158,11 +158,7 @@
   "activeTitanCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "engineTarget": "Unreal Engine 5",
-    "platformBaseline": [
-      "Android",
-      "iOS"
-    ],
+    "playerControlledTitans": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -172,16 +168,14 @@
       "Upgrade Titan",
       "Explore Further"
     ],
-    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
-    "playerControlledTitans": 1,
-    "mobileFirst": true,
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled deities",
+      "multiple player-controlled Titans",
       "ally positioning",
       "team turns"
-    ]
+    ],
+    "readableRule": "Legacy schema label says Titan, current fiction label says Deity: exactly one playable god or goddess is controlled in standard battle."
   },
   "crossFactionRunIns": {
     "enabled": true,
@@ -221,5 +215,45 @@
       "generic monster filler",
       "lore rewrites"
     ]
+  },
+  "encouragedDeityRoles": [
+    "spirit-road tactician",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mythosGatesMissionRecreation": {
+    "status": "PASS_1_ROUTE_ALIGNED",
+    "brand": "Mythos Gates",
+    "currentArc": "Ascension",
+    "routeId": "MG-DUNGEON-ROUTE-004",
+    "routeName": "Torii-Moon Mirror Road",
+    "entryGate": "The Torii-Moon Gate",
+    "gateState": "Distortion Gate with ritual rerouting",
+    "activePlayableDeitiesPerRun": 1,
+    "playableDeityRoster": [
+      "Amaterasu",
+      "Izanami",
+      "Susanoo",
+      "Tsukuyomi"
+    ],
+    "dungeonCrawlerIntent": "mission should read as one god or goddess entering a Mythos Gate route node against many enemies, hazards, shrine pressure, treasure temptation, and a route boss chain",
+    "canonRule": "Use source-Realm mythological material, faction-specific hazards, and unresolved Mythos Gate mystery; avoid mortal-ascension, generic giants, simple portals, planets, sci-fi, armies, squads, and simultaneous party play."
+  },
+  "name": "Unmask the Inari Rice Court Storehouse: Lore Price",
+  "routeId": "MG-DUNGEON-ROUTE-004",
+  "routeName": "Torii-Moon Mirror Road",
+  "routeSlug": "torii-moon-mirror-road",
+  "entryGate": "The Torii-Moon Gate",
+  "gateState": "Distortion Gate with ritual rerouting",
+  "routeRoomId": "MG-DUNGEON-ROUTE-004-ROOM-05",
+  "routeRoomName": "Inari Rice Court Storehouse",
+  "routeNodeType": "treasure_or_lore",
+  "routeMissionArc": {
+    "chapterArc": "Dungeon Law",
+    "depthBand": "treasure_or_lore",
+    "room": "Inari Rice Court Storehouse",
+    "routeBeat": "Mission 12 of 20 advances Inari Rice Court Storehouse inside Torii-Moon Mirror Road.",
+    "referencePlayableDeity": "Izanami",
+    "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
   }
 }

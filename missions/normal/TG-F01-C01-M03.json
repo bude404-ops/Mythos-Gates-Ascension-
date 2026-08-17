@@ -4,12 +4,12 @@
   "campaignId": "TG-F01-CAMPAIGN-NORMAL",
   "campaignType": "Normal",
   "chapter": 1,
-  "chapterTitle": "Awakening",
+  "chapterTitle": "Sun-Scale Verdict Descent — Threshold",
   "missionNumber": 3,
   "missionInChapter": 3,
-  "title": "The Obelisk That Would Not Cast Shadow",
-  "description": "Aten Ra advances through sacred temple approach with shallow river-light lanes and low sandstone cover while the Gate tests whether solar law can hold under pressure. Appearance rule: Solar Dominion of Khepra is the source culture humans later copied as Egyptian solar myth; mission terrain and cosmetics must show Aten hand-rays, Ma’at scale geometry, electrum, royal linen-light, faience turquoise, lapis, obsidian, Nile-black silt glass, Red Land jasper.",
-  "lore": "This mission treats Solar Dominion of Khepra as the origin behind Egyptian solar myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use Aten hand-rays, Ma’at scale geometry, electrum, royal linen-light, faience turquoise, lapis, obsidian, Nile-black silt glass, Red Land jasper instead of generic historical or RPG dressing.",
+  "title": "Restore the Black-Land Silt Crossing: Forward Claim",
+  "description": "Restore the Black-Land Silt Crossing: Forward Claim is a rebuilt Mythos Gates mission beat for Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma’at strain). One selected deity from Aten Ra, Sutekh, Iset, Amunet enters; this beat spotlights Iset as the reference silhouette while preserving player choice. The mission is the combat step at Black-Land Silt Crossing, using sacred judgment temple-road descent pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Solar Dominion of Khepra is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light..",
+  "lore": "Ascension canon route rewrite: Sun-Scale Verdict Descent is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Black-Land Silt Crossing and reveals: A hidden Amunet record implying the Gates predate mortal pharaoh-echoes. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 205,
   "encouragedTitanRoles": [
     "solar judgment anchor",
@@ -17,13 +17,13 @@
     "burst or control specialist"
   ],
   "mapId": "TG-MAP-007",
-  "terrain": "sacred temple approach with shallow river-light lanes and low sandstone cover; source-culture appearance layer: sun-scale courts, pylon shadow lanes, river-light channels, Khepri dawn engines, Ma’at seal platforms, desert storm edges; cosmetic/relic silhouettes: Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes",
+  "terrain": "Black-Land Silt Crossing configured as a combat space inside sacred judgment temple-road descent; source-culture appearance layer: sun-scale courts, pylon shadow lanes, river-light channels, Khepri dawn engines, Ma’at seal platforms, desert storm edges; cosmetic/relic silhouettes: Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes",
   "objectives": {
-    "primary": "Complete The Obelisk That Would Not Cast Shadow with one active deity while reading sacred temple approach with shallow river-light lanes and low sandstone cover and preserving faction doctrine.",
+    "primary": "With one selected deity, break the first enemy pressure line in the Black-Land Silt Crossing, secure the outer defense, and deny the Hollow a foothold in the outer dungeon.",
     "optional": [
-      "Complete before turn 9",
-      "Keep your active deity above 40% integrity",
-      "Trigger at least two Momentum, Divinity, or terrain reactions"
+      "Clear the Black-Land Silt Crossing before the route pressure reaches its final warning",
+      "Exploit or avoid the route rule: Khepri dawn loops that rewind wounds and revive enemies if misread",
+      "Resolve at least two solar judgment, Ma’at balance, river-light positioning, verdict pressure decisions before victory"
     ]
   },
   "enemyWaves": [
@@ -47,12 +47,12 @@
   "boss": null,
   "turnLimit": 11,
   "specialRules": [
-    "Solar Law: Momentum grows when the lone deity holds marked light lanes without retreating.",
-    "Hollow Drift: enemies punish exposed deity positioning and reckless routes.",
-    "Solo Deityic Scale: one active deity occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
+    "Route Law — Sun-Scale Verdict Descent: Stable Gate under Ma’at strain changes how movement, hazards, and enemy pressure are read.",
+    "Room Rule — Black-Land Silt Crossing: play this beat as a combat node, not a generic arena.",
+    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
-    "Complete The Obelisk That Would Not Cast Shadow with one active deity while reading sacred temple approach with shallow river-light lanes and low sandstone cover and preserving faction doctrine."
+    "With one selected deity, break the first enemy pressure line in the Black-Land Silt Crossing, secure the outer defense, and deny the Hollow a foothold in the outer dungeon."
   ],
   "defeatConditions": [
     "Your active deity falls",
@@ -65,13 +65,14 @@
       "Solar upgrade dust",
       "Faction shard cache",
       "Aten Ra source-culture cosmetic/relic component",
-      "Aten Ra mission 3 codex shard"
+      "Sun-Scale Verdict Descent combat codex shard"
     ],
     "replay": [
       "divine mastery XP",
       "Solar upgrade dust",
       "Faction shard cache",
-      "Aten Ra source-culture cosmetic/relic component"
+      "Aten Ra source-culture cosmetic/relic component",
+      "Sun-Scale Verdict Descent route material cache"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
@@ -148,11 +149,7 @@
   "activeTitanCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "engineTarget": "Unreal Engine 5",
-    "platformBaseline": [
-      "Android",
-      "iOS"
-    ],
+    "playerControlledTitans": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -162,16 +159,14 @@
       "Upgrade Titan",
       "Explore Further"
     ],
-    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
-    "playerControlledTitans": 1,
-    "mobileFirst": true,
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled deities",
+      "multiple player-controlled Titans",
       "ally positioning",
       "team turns"
-    ]
+    ],
+    "readableRule": "Legacy schema label says Titan, current fiction label says Deity: exactly one playable god or goddess is controlled in standard battle."
   },
   "crossFactionRunIns": {
     "enabled": true,
@@ -211,5 +206,45 @@
       "generic monster filler",
       "lore rewrites"
     ]
+  },
+  "encouragedDeityRoles": [
+    "solar judgment anchor",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mythosGatesMissionRecreation": {
+    "status": "PASS_1_ROUTE_ALIGNED",
+    "brand": "Mythos Gates",
+    "currentArc": "Ascension",
+    "routeId": "MG-DUNGEON-ROUTE-001",
+    "routeName": "Sun-Scale Verdict Descent",
+    "entryGate": "The Sun-Scale Gate",
+    "gateState": "Stable Gate under Ma’at strain",
+    "activePlayableDeitiesPerRun": 1,
+    "playableDeityRoster": [
+      "Amunet",
+      "Iset",
+      "Aten Ra",
+      "Sutekh"
+    ],
+    "dungeonCrawlerIntent": "mission should read as one god or goddess entering a Mythos Gate route node against many enemies, hazards, shrine pressure, treasure temptation, and a route boss chain",
+    "canonRule": "Use source-Realm mythological material, faction-specific hazards, and unresolved Mythos Gate mystery; avoid mortal-ascension, generic giants, simple portals, planets, sci-fi, armies, squads, and simultaneous party play."
+  },
+  "name": "Restore the Black-Land Silt Crossing: Forward Claim",
+  "routeId": "MG-DUNGEON-ROUTE-001",
+  "routeName": "Sun-Scale Verdict Descent",
+  "routeSlug": "sun-scale-verdict-descent",
+  "entryGate": "The Sun-Scale Gate",
+  "gateState": "Stable Gate under Ma’at strain",
+  "routeRoomId": "MG-DUNGEON-ROUTE-001-ROOM-02",
+  "routeRoomName": "Black-Land Silt Crossing",
+  "routeNodeType": "combat",
+  "routeMissionArc": {
+    "chapterArc": "Entry Law",
+    "depthBand": "combat",
+    "room": "Black-Land Silt Crossing",
+    "routeBeat": "Mission 3 of 20 advances Black-Land Silt Crossing inside Sun-Scale Verdict Descent.",
+    "referencePlayableDeity": "Iset",
+    "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
   }
 }

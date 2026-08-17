@@ -4,12 +4,12 @@
   "campaignId": "TG-F02-CAMPAIGN-ELITE",
   "campaignType": "Elite",
   "chapter": 1,
-  "chapterTitle": "Oath Under Thunder",
+  "chapterTitle": "Thunder-Oath Root Gauntlet — Threshold",
   "missionNumber": 1,
   "missionInChapter": 1,
-  "title": "Elite: The First Oath Sparks",
-  "description": "Oath Under Thunder: The First Oath Sparks unfolds across storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span, pushing the one active deity Asgardian deity to convert endurance into decisive counterpressure. Appearance rule: Storm-Rooted Aesir Holds is the source culture humans later copied as Norse saga myth; mission terrain and cosmetics must show rune iron, stormsteel, oath rings, raven omens, wolf teeth, Yggdrasil roots, frost-bitten leather, blackwinter scars.",
-  "lore": "This mission treats Storm-Rooted Aesir Holds as the origin behind Norse saga myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use rune iron, stormsteel, oath rings, raven omens, wolf teeth, Yggdrasil roots, frost-bitten leather, blackwinter scars instead of generic historical or RPG dressing.",
+  "title": "Elite: Swear the Broken Rune Arrival Span: First Crossing",
+  "description": "Elite: Swear the Broken Rune Arrival Span: First Crossing is a rebuilt Mythos Gates mission beat for Thunder-Oath Root Gauntlet through The Thunder-Oath Gate (Ruin Gate with active oath memory). One selected deity from Odin, Freyja, Frigg, Thor enters; this beat spotlights Odin as the reference silhouette while preserving player choice. The mission is the entry step at Broken Rune Arrival Span, using storm bridge and world-root trial pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Storm-Rooted Aesir Holds is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow..",
+  "lore": "Ascension canon route rewrite: Thunder-Oath Root Gauntlet is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Broken Rune Arrival Span and reveals: How oaths become physical law near the Gate. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 708,
   "encouragedTitanRoles": [
     "storm-oath breaker",
@@ -17,14 +17,14 @@
     "burst or control specialist"
   ],
   "mapId": "TG-MAP-003",
-  "terrain": "storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span; source-culture appearance layer: rune-storm bridges, oath-stone courts, Bifrost storm fractures, Yggdrasil root ramps, Valhalla shieldwall ruins; cosmetic/relic silhouettes: rune-iron oath axes, stormsteel wolf-cloak mail, Yggdrasil thunder-root cores, Valkyrie witness counters",
+  "terrain": "Broken Rune Arrival Span configured as a entry space inside storm bridge and world-root trial; source-culture appearance layer: rune-storm bridges, oath-stone courts, Bifrost storm fractures, Yggdrasil root ramps, Valhalla shieldwall ruins; cosmetic/relic silhouettes: rune-iron oath axes, stormsteel wolf-cloak mail, Yggdrasil thunder-root cores, Valkyrie witness counters",
   "objectives": {
-    "primary": "Complete Elite: The First Oath Sparks with one active deity while reading storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span and preserving faction doctrine.",
+    "primary": "With one selected deity, cross the threshold in the elite-tuned Broken Rune Arrival Span, secure the threshold grammar, and mark the Gate law before the Hollow can read the name.",
     "optional": [
-      "Win with no Titan defeated",
-      "Trigger at least three Oathbound counterattacks",
-      "Hold every objective for one full enemy turn",
-      "Trigger at least one Momentum or Divinity decision before victory"
+      "Clear the Broken Rune Arrival Span without the active deity falling below 35% integrity",
+      "Exploit or avoid the route rule: runes that bind promises into flesh",
+      "Resolve at least three oath law, storm timing, world-root control, courage under blackwinter pressure decisions before victory",
+      "Finish with the boss, elite, shrine, treasure, or hazard node clearly readable for mobile tactical play"
     ]
   },
   "enemyWaves": [
@@ -48,15 +48,12 @@
   "boss": null,
   "turnLimit": 12,
   "specialRules": [
-    "Storm Oath: Momentum surges after decisive movement through exposed lightning lanes.",
-    "Oathbound Guard: Titan that survive damage near oath-stones empower their next committed strike.",
-    "Oathbound: surviving damage strengthens the next committed strike.",
-    "Elite Storm: lightning collapse advances one turn earlier.",
-    "Elite Banner Law: enemy buffs persist until objective action breaks the source.",
-    "Solo Deityic Scale: one active deity occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
+    "Route Law — Thunder-Oath Root Gauntlet: Ruin Gate with active oath memory changes how movement, hazards, and enemy pressure are read.",
+    "Room Rule — Broken Rune Arrival Span: play this beat as a entry node, not a generic arena.",
+    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
-    "Complete Elite: The First Oath Sparks with one active deity while reading storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span and preserving faction doctrine."
+    "With one selected deity, cross the threshold in the elite-tuned Broken Rune Arrival Span, secure the threshold grammar, and mark the Gate law before the Hollow can read the name."
   ],
   "defeatConditions": [
     "Your active deity falls",
@@ -69,13 +66,15 @@
       "High-tier oath iron",
       "Asgardian faction shard cache",
       "Storm rune upgrade dust",
-      "TG-F02-E-C01-M01 codex shard"
+      "TG-F02-E-C01-M01 codex shard",
+      "Thunder-Oath Root Gauntlet entry codex shard"
     ],
     "replay": [
       "divine mastery XP",
       "Oath iron",
       "Storm rune upgrade dust",
-      "Asgardian source-culture cosmetic/relic component"
+      "Asgardian source-culture cosmetic/relic component",
+      "Thunder-Oath Root Gauntlet route material cache"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
@@ -162,11 +161,7 @@
   "activeTitanCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "engineTarget": "Unreal Engine 5",
-    "platformBaseline": [
-      "Android",
-      "iOS"
-    ],
+    "playerControlledTitans": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -176,16 +171,14 @@
       "Upgrade Titan",
       "Explore Further"
     ],
-    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
-    "playerControlledTitans": 1,
-    "mobileFirst": true,
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled deities",
+      "multiple player-controlled Titans",
       "ally positioning",
       "team turns"
-    ]
+    ],
+    "readableRule": "Legacy schema label says Titan, current fiction label says Deity: exactly one playable god or goddess is controlled in standard battle."
   },
   "crossFactionRunIns": {
     "enabled": true,
@@ -225,5 +218,45 @@
       "generic monster filler",
       "lore rewrites"
     ]
+  },
+  "encouragedDeityRoles": [
+    "storm-oath breaker",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mythosGatesMissionRecreation": {
+    "status": "PASS_1_ROUTE_ALIGNED",
+    "brand": "Mythos Gates",
+    "currentArc": "Ascension",
+    "routeId": "MG-DUNGEON-ROUTE-002",
+    "routeName": "Thunder-Oath Root Gauntlet",
+    "entryGate": "The Thunder-Oath Gate",
+    "gateState": "Ruin Gate with active oath memory",
+    "activePlayableDeitiesPerRun": 1,
+    "playableDeityRoster": [
+      "Freyja",
+      "Frigg",
+      "Odin",
+      "Thor"
+    ],
+    "dungeonCrawlerIntent": "mission should read as one god or goddess entering a Mythos Gate route node against many enemies, hazards, shrine pressure, treasure temptation, and a route boss chain",
+    "canonRule": "Use source-Realm mythological material, faction-specific hazards, and unresolved Mythos Gate mystery; avoid mortal-ascension, generic giants, simple portals, planets, sci-fi, armies, squads, and simultaneous party play."
+  },
+  "name": "Elite: Swear the Broken Rune Arrival Span: First Crossing",
+  "routeId": "MG-DUNGEON-ROUTE-002",
+  "routeName": "Thunder-Oath Root Gauntlet",
+  "routeSlug": "thunder-oath-root-gauntlet",
+  "entryGate": "The Thunder-Oath Gate",
+  "gateState": "Ruin Gate with active oath memory",
+  "routeRoomId": "MG-DUNGEON-ROUTE-002-ROOM-01",
+  "routeRoomName": "Broken Rune Arrival Span",
+  "routeNodeType": "entry",
+  "routeMissionArc": {
+    "chapterArc": "Entry Law",
+    "depthBand": "entry",
+    "room": "Broken Rune Arrival Span",
+    "routeBeat": "Mission 1 of 20 advances Broken Rune Arrival Span inside Thunder-Oath Root Gauntlet.",
+    "referencePlayableDeity": "Odin",
+    "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
   }
 }

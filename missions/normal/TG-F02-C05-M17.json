@@ -4,12 +4,12 @@
   "campaignId": "TG-F02-CAMPAIGN-NORMAL",
   "campaignType": "Normal",
   "chapter": 5,
-  "chapterTitle": "Thunder Gate Covenant",
+  "chapterTitle": "Thunder-Oath Root Gauntlet — Boss Seal",
   "missionNumber": 17,
   "missionInChapter": 1,
-  "title": "Gate-Rib Advance",
-  "description": "Thunder Gate Covenant: Gate-Rib Advance unfolds across high storm gate dais of rune-iron ribs, cracked oath monoliths, hanging war chains, and cloudlit abyss edges, pushing the one active deity Asgardian deity to convert endurance into decisive counterpressure. Appearance rule: Storm-Rooted Aesir Holds is the source culture humans later copied as Norse saga myth; mission terrain and cosmetics must show rune iron, stormsteel, oath rings, raven omens, wolf teeth, Yggdrasil roots, frost-bitten leather, blackwinter scars.",
-  "lore": "This mission treats Storm-Rooted Aesir Holds as the origin behind Norse saga myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use rune iron, stormsteel, oath rings, raven omens, wolf teeth, Yggdrasil roots, frost-bitten leather, blackwinter scars instead of generic historical or RPG dressing.",
+  "title": "Swear the Betrayal Memory Hollow: Antechamber Seal",
+  "description": "Swear the Betrayal Memory Hollow: Antechamber Seal is a rebuilt Mythos Gates mission beat for Thunder-Oath Root Gauntlet through The Thunder-Oath Gate (Ruin Gate with active oath memory). One selected deity from Odin, Freyja, Frigg, Thor enters; this beat spotlights Odin as the reference silhouette while preserving player choice. The mission is the pre boss step at Betrayal Memory Hollow, using storm bridge and world-root trial pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Storm-Rooted Aesir Holds is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow..",
+  "lore": "Ascension canon route rewrite: Thunder-Oath Root Gauntlet is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Betrayal Memory Hollow and reveals: Why world-roots remember betrayals. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 716,
   "encouragedTitanRoles": [
     "storm-oath breaker",
@@ -17,14 +17,13 @@
     "burst or control specialist"
   ],
   "mapId": "TG-MAP-003",
-  "terrain": "high storm gate dais of rune-iron ribs, cracked oath monoliths, hanging war chains, and cloudlit abyss edges; source-culture appearance layer: rune-storm bridges, oath-stone courts, Bifrost storm fractures, Yggdrasil root ramps, Valhalla shieldwall ruins; cosmetic/relic silhouettes: rune-iron oath axes, stormsteel wolf-cloak mail, Yggdrasil thunder-root cores, Valkyrie witness counters",
+  "terrain": "Betrayal Memory Hollow configured as a pre boss space inside storm bridge and world-root trial; source-culture appearance layer: rune-storm bridges, oath-stone courts, Bifrost storm fractures, Yggdrasil root ramps, Valhalla shieldwall ruins; cosmetic/relic silhouettes: rune-iron oath axes, stormsteel wolf-cloak mail, Yggdrasil thunder-root cores, Valkyrie witness counters",
   "objectives": {
-    "primary": "Complete Gate-Rib Advance with one active deity while reading high storm gate dais of rune-iron ribs, cracked oath monoliths, hanging war chains, and cloudlit abyss edges and preserving faction doctrine.",
+    "primary": "With one selected deity, survive the boss approach in the Betrayal Memory Hollow, secure the boss approach, and enter the chamber with the route law understood.",
     "optional": [
-      "Complete before turn 10",
-      "Keep at least four Titan standing",
-      "Trigger at least two Oathbound counterattacks",
-      "Trigger at least one Momentum or Divinity decision before victory"
+      "Clear the Betrayal Memory Hollow before the route pressure reaches its final warning",
+      "Exploit or avoid the route rule: lightning that strikes cowardice before armor",
+      "Resolve at least two oath law, storm timing, world-root control, courage under blackwinter pressure decisions before victory"
     ]
   },
   "enemyWaves": [
@@ -52,12 +51,12 @@
   },
   "turnLimit": 15,
   "specialRules": [
-    "Storm Oath: Momentum surges after decisive movement through exposed lightning lanes.",
-    "Oathbound: surviving damage strengthens the next committed strike.",
-    "Solo Deityic Scale: one active deity occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
+    "Route Law — Thunder-Oath Root Gauntlet: Ruin Gate with active oath memory changes how movement, hazards, and enemy pressure are read.",
+    "Room Rule — Betrayal Memory Hollow: play this beat as a pre boss node, not a generic arena.",
+    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
-    "Complete Gate-Rib Advance with one active deity while reading high storm gate dais of rune-iron ribs, cracked oath monoliths, hanging war chains, and cloudlit abyss edges and preserving faction doctrine."
+    "With one selected deity, survive the boss approach in the Betrayal Memory Hollow, secure the boss approach, and enter the chamber with the route law understood."
   ],
   "defeatConditions": [
     "Your active deity falls",
@@ -70,13 +69,15 @@
       "Mid-tier oath iron",
       "Asgardian faction shard cache",
       "Storm rune upgrade dust",
-      "TG-F02-C05-M17 codex shard"
+      "TG-F02-C05-M17 codex shard",
+      "Thunder-Oath Root Gauntlet pre boss codex shard"
     ],
     "replay": [
       "divine mastery XP",
       "Oath iron",
       "Storm rune upgrade dust",
-      "Asgardian source-culture cosmetic/relic component"
+      "Asgardian source-culture cosmetic/relic component",
+      "Thunder-Oath Root Gauntlet route material cache"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
@@ -156,11 +157,7 @@
   "activeTitanCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "engineTarget": "Unreal Engine 5",
-    "platformBaseline": [
-      "Android",
-      "iOS"
-    ],
+    "playerControlledTitans": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -170,16 +167,14 @@
       "Upgrade Titan",
       "Explore Further"
     ],
-    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
-    "playerControlledTitans": 1,
-    "mobileFirst": true,
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled deities",
+      "multiple player-controlled Titans",
       "ally positioning",
       "team turns"
-    ]
+    ],
+    "readableRule": "Legacy schema label says Titan, current fiction label says Deity: exactly one playable god or goddess is controlled in standard battle."
   },
   "crossFactionRunIns": {
     "enabled": true,
@@ -219,5 +214,45 @@
       "generic monster filler",
       "lore rewrites"
     ]
+  },
+  "encouragedDeityRoles": [
+    "storm-oath breaker",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mythosGatesMissionRecreation": {
+    "status": "PASS_1_ROUTE_ALIGNED",
+    "brand": "Mythos Gates",
+    "currentArc": "Ascension",
+    "routeId": "MG-DUNGEON-ROUTE-002",
+    "routeName": "Thunder-Oath Root Gauntlet",
+    "entryGate": "The Thunder-Oath Gate",
+    "gateState": "Ruin Gate with active oath memory",
+    "activePlayableDeitiesPerRun": 1,
+    "playableDeityRoster": [
+      "Freyja",
+      "Frigg",
+      "Odin",
+      "Thor"
+    ],
+    "dungeonCrawlerIntent": "mission should read as one god or goddess entering a Mythos Gate route node against many enemies, hazards, shrine pressure, treasure temptation, and a route boss chain",
+    "canonRule": "Use source-Realm mythological material, faction-specific hazards, and unresolved Mythos Gate mystery; avoid mortal-ascension, generic giants, simple portals, planets, sci-fi, armies, squads, and simultaneous party play."
+  },
+  "name": "Swear the Betrayal Memory Hollow: Antechamber Seal",
+  "routeId": "MG-DUNGEON-ROUTE-002",
+  "routeName": "Thunder-Oath Root Gauntlet",
+  "routeSlug": "thunder-oath-root-gauntlet",
+  "entryGate": "The Thunder-Oath Gate",
+  "gateState": "Ruin Gate with active oath memory",
+  "routeRoomId": "MG-DUNGEON-ROUTE-002-ROOM-06",
+  "routeRoomName": "Betrayal Memory Hollow",
+  "routeNodeType": "pre_boss",
+  "routeMissionArc": {
+    "chapterArc": "Ascension Verdict",
+    "depthBand": "pre_boss",
+    "room": "Betrayal Memory Hollow",
+    "routeBeat": "Mission 17 of 20 advances Betrayal Memory Hollow inside Thunder-Oath Root Gauntlet.",
+    "referencePlayableDeity": "Odin",
+    "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
   }
 }

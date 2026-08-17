@@ -3,45 +3,60 @@
   "missionId": "TG-F04-C01-M01",
   "factionId": "TG-FACTION-004",
   "campaignType": "Normal",
-  "status": "Draft Ready",
+  "status": "Production Ready",
   "tone": "restrained mythic tactical",
-  "briefing": "Foxfire Contracts: Threshold Sign. Kami advances through foxfire torii road with cedar roots, shrine stones, and lantern smoke lanes while the Gate tests whether balance is defended by precision.",
+  "briefing": "Mythos Gates briefing: Purify the Purification Stream Threshold: First Crossing. Enter Purification Stream Threshold on Torii-Moon Mirror Road through The Torii-Moon Gate while the Gate remains Distortion Gate with ritual rerouting. Reference deity voice is Amaterasu, but the player still chooses one deity from the faction roster. Objective: With one selected deity, cross the threshold in the Purification Stream Threshold, secure the threshold grammar, and mark the Gate law before the Hollow can read the name.",
   "lines": {
     "missionIntro": [
       {
-        "speaker": "Kami Divine Voice",
-        "text": "The field asks for proof. One active deity enters, and The Spirit-Moon Gate will remember how we answer."
+        "speaker": "Amaterasu Divine Voice",
+        "text": "A clean crossing leaves no false reflection behind. The Purification Stream Threshold will know whether one deity is enough."
       }
     ],
     "enemyIntroduction": [
       {
         "speaker": "Lore Director",
-        "text": "Threats emerge to test Kami Mirror Tempest: pressure first, revelation only when the field is held."
+        "text": "Enemies are not filler here; they are the entry pressure of Torii-Moon Mirror Road made hostile."
       }
     ],
     "midBattle": [
       {
         "speaker": "Gameplay Director",
-        "text": "Hold the lane, read the hazard, and spend movement as if it were blood."
+        "text": "Read the room law first: Exploit or avoid the route rule: torii gates that reroute space when crossed without rite"
       }
     ],
     "victory": [
       {
-        "speaker": "Kami Divine Voice",
-        "text": "The Gate has not yielded. It has recorded that we did not break."
+        "speaker": "Amaterasu Divine Voice",
+        "text": "The mirror clears; what remains is permitted to pass."
       }
     ],
     "defeat": [
       {
-        "speaker": "Kami Divine Voice",
-        "text": "Fall back before the wound learns our full shape."
+        "speaker": "Amaterasu Divine Voice",
+        "text": "Withdraw. The The Torii-Moon Gate has learned too much from this attempt."
       }
     ],
     "codex": [
       {
         "speaker": "Lore Director",
-        "text": "This mission keeps Kami doctrine intact: Their secrecy protects sacred balance but makes allies fear what they cannot see."
+        "text": "The Sacred Kingdoms is the source Realm; mortal myth is only the later echo. This beat documents Purification Stream Threshold as part of Torii-Moon Mirror Road."
       }
     ]
-  }
+  },
+  "soloTitanPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "visualDirection": "Frame Purification Stream Threshold as a entry node in Torii-Moon Mirror Road; torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash.",
+  "updated": "2026-08-16",
+  "mythosGatesDialogueRecreation": {
+    "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-004",
+    "routeName": "Torii-Moon Mirror Road",
+    "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable Titan language.",
+    "soloRule": "Dialogue supports one active god or goddess in the field."
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Titan language is excluded from player-facing copy except legacy IDs.",
+  "routeId": "MG-DUNGEON-ROUTE-004",
+  "routeName": "Torii-Moon Mirror Road",
+  "routeRoomName": "Purification Stream Threshold",
+  "entryGate": "The Torii-Moon Gate"
 }

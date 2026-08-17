@@ -4,12 +4,12 @@
   "campaignId": "TG-F06-CAMPAIGN-NORMAL",
   "campaignType": "Normal",
   "chapter": 3,
-  "chapterTitle": "Dissonance Trial",
+  "chapterTitle": "Choir-Vault Discord Ascent — Hazard Layer",
   "missionNumber": 10,
   "missionInChapter": 2,
-  "title": "Dissonance Trial: First Pressure",
-  "description": "Dissonance Trial unfolds across dissonance gallery where false harmonies break battle line timing, pushing a one active deity Empyrean deity to prove protection, order-locks, shields, anti-chaos control, battle lineless aura play. without violating established Realm canon. Appearance rule: Radiant Hierarchies is the source culture humans later copied as angelic hierarchy and heavenly myth; mission terrain and cosmetics must show white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometry, scroll seals, ophanim wheels, seraph fire.",
-  "lore": "This mission treats Radiant Hierarchies as the origin behind angelic hierarchy and heavenly myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometry, scroll seals, ophanim wheels, seraph fire instead of generic historical or RPG dressing.",
+  "title": "Ascend the Ophanim Wheel Court: Elite Lock",
+  "description": "Ascend the Ophanim Wheel Court: Elite Lock is a rebuilt Mythos Gates mission beat for Choir-Vault Discord Ascent through The Choir-Vault Gate (Wound Gate leaking memory-burning radiance). One selected deity from Michael, Sophia, Shekinah, Gabriel enters; this beat spotlights Sophia as the reference silhouette while preserving player choice. The mission is the elite step at Ophanim Wheel Court, using vertical cathedral ascent and judgment machinery pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Radiant Hierarchies is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks..",
+  "lore": "Ascension canon route rewrite: Choir-Vault Discord Ascent is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Ophanim Wheel Court and reveals: Why discord becomes immobilizing force. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 726,
   "encouragedTitanRoles": [
     "choir-vault ascendant",
@@ -17,14 +17,13 @@
     "burst or control specialist"
   ],
   "mapId": "TG-MAP-012",
-  "terrain": "dissonance gallery where false harmonies break battle line timing; source-culture appearance layer: choir vault ascents, bell platforms, ophanim wheel lanes, throne-judgment stairs, living scroll seal floors, glass-light bridges; cosmetic/relic silhouettes: seraph bell-edict blades, opal-glass cherubim aegis, ophanim many-eye choir cores, wheel intercept silhouettes",
+  "terrain": "Ophanim Wheel Court configured as a elite space inside vertical cathedral ascent and judgment machinery; source-culture appearance layer: choir vault ascents, bell platforms, ophanim wheel lanes, throne-judgment stairs, living scroll seal floors, glass-light bridges; cosmetic/relic silhouettes: seraph bell-edict blades, opal-glass cherubim aegis, ophanim many-eye choir cores, wheel intercept silhouettes",
   "objectives": {
-    "primary": "Complete Dissonance Trial: First Pressure with one active deity while reading dissonance gallery where false harmonies break battle line timing and preserving faction doctrine.",
+    "primary": "With one selected deity, defeat the elite lock against Ophanim Shear-Wheel inside the Ophanim Wheel Court and prove the active deity can endure the trial alone.",
     "optional": [
-      "Complete before turn 12",
-      "Keep at least four Titan standing",
-      "Trigger at least two Empyrean faction mechanics",
-      "Trigger at least one Momentum or Divinity decision before victory"
+      "Clear the Ophanim Wheel Court before the route pressure reaches its final warning",
+      "Exploit or avoid the route rule: bell shockwaves that reorder initiative",
+      "Resolve at least two choir resonance, edict answers, memory-burn risk, vertical judgment pressure decisions before victory"
     ]
   },
   "enemyWaves": [
@@ -48,13 +47,12 @@
   "boss": null,
   "turnLimit": 14,
   "specialRules": [
-    "Hymn Resonance: Divinity builds when the Titan chains ability timing with sacred echoes.",
-    "Choir Lock: beacon timing shields battle line if objectives resolve in order.",
-    "Radiant Edict: structured actions reduce chaos effects and protect allies.",
-    "Solo Deityic Scale: one active deity occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
+    "Route Law — Choir-Vault Discord Ascent: Wound Gate leaking memory-burning radiance changes how movement, hazards, and enemy pressure are read.",
+    "Room Rule — Ophanim Wheel Court: play this beat as a elite node, not a generic arena.",
+    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
-    "Complete Dissonance Trial: First Pressure with one active deity while reading dissonance gallery where false harmonies break battle line timing and preserving faction doctrine."
+    "With one selected deity, defeat the elite lock against Ophanim Shear-Wheel inside the Ophanim Wheel Court and prove the active deity can endure the trial alone."
   ],
   "defeatConditions": [
     "Your active deity falls",
@@ -67,13 +65,15 @@
       "Mid-tier Empyrean relic material",
       "Empyrean faction shard cache",
       "Empyrean doctrine upgrade dust",
-      "TG-F06-C03-M10 codex shard"
+      "TG-F06-C03-M10 codex shard",
+      "Choir-Vault Discord Ascent elite codex shard"
     ],
     "replay": [
       "divine mastery XP",
       "Empyrean relic material",
       "Empyrean doctrine upgrade dust",
-      "Empyrean source-culture cosmetic/relic component"
+      "Empyrean source-culture cosmetic/relic component",
+      "Choir-Vault Discord Ascent route material cache"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
@@ -153,11 +153,7 @@
   "activeTitanCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "engineTarget": "Unreal Engine 5",
-    "platformBaseline": [
-      "Android",
-      "iOS"
-    ],
+    "playerControlledTitans": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -167,16 +163,14 @@
       "Upgrade Titan",
       "Explore Further"
     ],
-    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
-    "playerControlledTitans": 1,
-    "mobileFirst": true,
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled deities",
+      "multiple player-controlled Titans",
       "ally positioning",
       "team turns"
-    ]
+    ],
+    "readableRule": "Legacy schema label says Titan, current fiction label says Deity: exactly one playable god or goddess is controlled in standard battle."
   },
   "crossFactionRunIns": {
     "enabled": true,
@@ -216,5 +210,45 @@
       "generic monster filler",
       "lore rewrites"
     ]
+  },
+  "encouragedDeityRoles": [
+    "choir-vault ascendant",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mythosGatesMissionRecreation": {
+    "status": "PASS_1_ROUTE_ALIGNED",
+    "brand": "Mythos Gates",
+    "currentArc": "Ascension",
+    "routeId": "MG-DUNGEON-ROUTE-006",
+    "routeName": "Choir-Vault Discord Ascent",
+    "entryGate": "The Choir-Vault Gate",
+    "gateState": "Wound Gate leaking memory-burning radiance",
+    "activePlayableDeitiesPerRun": 1,
+    "playableDeityRoster": [
+      "Shekinah",
+      "Sophia",
+      "Gabriel",
+      "Michael"
+    ],
+    "dungeonCrawlerIntent": "mission should read as one god or goddess entering a Mythos Gate route node against many enemies, hazards, shrine pressure, treasure temptation, and a route boss chain",
+    "canonRule": "Use source-Realm mythological material, faction-specific hazards, and unresolved Mythos Gate mystery; avoid mortal-ascension, generic giants, simple portals, planets, sci-fi, armies, squads, and simultaneous party play."
+  },
+  "name": "Ascend the Ophanim Wheel Court: Elite Lock",
+  "routeId": "MG-DUNGEON-ROUTE-006",
+  "routeName": "Choir-Vault Discord Ascent",
+  "routeSlug": "choir-vault-discord-ascent",
+  "entryGate": "The Choir-Vault Gate",
+  "gateState": "Wound Gate leaking memory-burning radiance",
+  "routeRoomId": "MG-DUNGEON-ROUTE-006-ROOM-04",
+  "routeRoomName": "Ophanim Wheel Court",
+  "routeNodeType": "elite",
+  "routeMissionArc": {
+    "chapterArc": "Dungeon Law",
+    "depthBand": "elite",
+    "room": "Ophanim Wheel Court",
+    "routeBeat": "Mission 10 of 20 advances Ophanim Wheel Court inside Choir-Vault Discord Ascent.",
+    "referencePlayableDeity": "Sophia",
+    "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
   }
 }

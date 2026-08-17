@@ -3,45 +3,60 @@
   "missionId": "TG-F06-C02-M05",
   "factionId": "TG-FACTION-006",
   "campaignType": "Normal",
-  "status": "Draft Ready",
+  "status": "Production Ready",
   "tone": "restrained mythic tactical",
-  "briefing": "Beacon Stairs Above Silence: Threshold Sign. Empyrean advances through floating beacon stairways with glass bridges and radiant lock sigils while the Gate tests whether existence survives through order.",
+  "briefing": "Mythos Gates briefing: Answer the Bell-Metal Resonance Steps: Pressure Break. Enter Bell-Metal Resonance Steps on Choir-Vault Discord Ascent through The Choir-Vault Gate while the Gate remains Wound Gate leaking memory-burning radiance. Reference deity voice is Michael, but the player still chooses one deity from the faction roster. Objective: With one selected deity, break the first enemy pressure line in the Bell-Metal Resonance Steps, secure the enemy line, and deny the Hollow a foothold in the outer dungeon.",
   "lines": {
     "missionIntro": [
       {
-        "speaker": "Empyrean Divine Voice",
-        "text": "The field asks for proof. One active deity enters, and The Choir-Axiom Gate will remember how we answer."
+        "speaker": "Michael Divine Voice",
+        "text": "The choir does not forgive discord; it measures it. The Bell-Metal Resonance Steps will know whether one deity is enough."
       }
     ],
     "enemyIntroduction": [
       {
         "speaker": "Lore Director",
-        "text": "Threats emerge to test Empyrean Choir Vault: pressure first, revelation only when the field is held."
+        "text": "Enemies are not filler here; they are the combat pressure of Choir-Vault Discord Ascent made hostile."
       }
     ],
     "midBattle": [
       {
         "speaker": "Gameplay Director",
-        "text": "Hold the lane, read the hazard, and spend movement as if it were blood."
+        "text": "Read the room law first: Exploit or avoid the route rule: bell shockwaves that reorder initiative"
       }
     ],
     "victory": [
       {
-        "speaker": "Empyrean Divine Voice",
-        "text": "The Gate has not yielded. It has recorded that we did not break."
+        "speaker": "Michael Divine Voice",
+        "text": "The discord thins; the ascent keeps its shape."
       }
     ],
     "defeat": [
       {
-        "speaker": "Empyrean Divine Voice",
-        "text": "Fall back before the wound learns our full shape."
+        "speaker": "Michael Divine Voice",
+        "text": "Withdraw. The The Choir-Vault Gate has learned too much from this attempt."
       }
     ],
     "codex": [
       {
         "speaker": "Lore Director",
-        "text": "This mission keeps Empyrean doctrine intact: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial."
+        "text": "The Radiant Hierarchies is the source Realm; mortal myth is only the later echo. This beat documents Bell-Metal Resonance Steps as part of Choir-Vault Discord Ascent."
       }
     ]
-  }
+  },
+  "soloTitanPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "visualDirection": "Frame Bell-Metal Resonance Steps as a combat node in Choir-Vault Discord Ascent; white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.",
+  "updated": "2026-08-16",
+  "mythosGatesDialogueRecreation": {
+    "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-006",
+    "routeName": "Choir-Vault Discord Ascent",
+    "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable Titan language.",
+    "soloRule": "Dialogue supports one active god or goddess in the field."
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Titan language is excluded from player-facing copy except legacy IDs.",
+  "routeId": "MG-DUNGEON-ROUTE-006",
+  "routeName": "Choir-Vault Discord Ascent",
+  "routeRoomName": "Bell-Metal Resonance Steps",
+  "entryGate": "The Choir-Vault Gate"
 }

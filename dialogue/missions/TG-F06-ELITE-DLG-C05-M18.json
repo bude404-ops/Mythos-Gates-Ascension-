@@ -3,45 +3,60 @@
   "missionId": "TG-F06-E-C05-M18",
   "factionId": "TG-FACTION-006",
   "campaignType": "Elite",
-  "status": "Draft Ready",
+  "status": "Production Ready",
   "tone": "restrained mythic tactical",
-  "briefing": "Elite: Choir Vault Ascension: First Pressure. Empyrean advances through upper choir gate where song, law, and Hollow silence collide while the Gate tests whether existence survives through order.",
+  "briefing": "Mythos Gates briefing: Elite: Ascend the Silent Seraph Apex: Ascension Seal. Enter Silent Seraph Apex on Choir-Vault Discord Ascent through The Choir-Vault Gate while the Gate remains Wound Gate leaking memory-burning radiance. Reference deity voice is Sophia, but the player still chooses one deity from the faction roster. Objective: With one selected deity, defeat the boss encounter against The Silent Seraph of Broken Praise inside the elite-tuned Silent Seraph Apex and complete the Ascension route without breaking canon.",
   "lines": {
     "missionIntro": [
       {
-        "speaker": "Empyrean Divine Voice",
-        "text": "The field asks for proof. One active deity enters, and The Choir-Axiom Gate will remember how we answer."
+        "speaker": "Sophia Divine Voice",
+        "text": "The choir does not forgive discord; it measures it. The Silent Seraph Apex will know whether one deity is enough."
       }
     ],
     "enemyIntroduction": [
       {
         "speaker": "Lore Director",
-        "text": "Threats emerge to test Empyrean Choir Vault: pressure first, revelation only when the field is held."
+        "text": "Enemies are not filler here; they are the boss pressure of Choir-Vault Discord Ascent made hostile."
       }
     ],
     "midBattle": [
       {
         "speaker": "Gameplay Director",
-        "text": "Hold the lane, read the hazard, and spend movement as if it were blood."
+        "text": "Read the room law first: Exploit or avoid the route rule: ophanim wheels that shear space with eye-lined motion"
       }
     ],
     "victory": [
       {
-        "speaker": "Empyrean Divine Voice",
-        "text": "The Gate has not yielded. It has recorded that we did not break."
+        "speaker": "Sophia Divine Voice",
+        "text": "The discord thins; the ascent keeps its shape."
       }
     ],
     "defeat": [
       {
-        "speaker": "Empyrean Divine Voice",
-        "text": "Fall back before the wound learns our full shape."
+        "speaker": "Sophia Divine Voice",
+        "text": "Withdraw. The The Choir-Vault Gate has learned too much from this attempt."
       }
     ],
     "codex": [
       {
         "speaker": "Lore Director",
-        "text": "This mission keeps Empyrean doctrine intact: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial."
+        "text": "The Radiant Hierarchies is the source Realm; mortal myth is only the later echo. This beat documents Silent Seraph Apex as part of Choir-Vault Discord Ascent."
       }
     ]
-  }
+  },
+  "soloTitanPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "visualDirection": "Frame Silent Seraph Apex as a boss node in Choir-Vault Discord Ascent; white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.",
+  "updated": "2026-08-16",
+  "mythosGatesDialogueRecreation": {
+    "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-006",
+    "routeName": "Choir-Vault Discord Ascent",
+    "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable Titan language.",
+    "soloRule": "Dialogue supports one active god or goddess in the field."
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Titan language is excluded from player-facing copy except legacy IDs.",
+  "routeId": "MG-DUNGEON-ROUTE-006",
+  "routeName": "Choir-Vault Discord Ascent",
+  "routeRoomName": "Silent Seraph Apex",
+  "entryGate": "The Choir-Vault Gate"
 }

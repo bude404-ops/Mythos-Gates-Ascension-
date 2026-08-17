@@ -3,45 +3,60 @@
   "missionId": "TG-F02-E-C02-M06",
   "factionId": "TG-FACTION-002",
   "campaignType": "Elite",
-  "status": "Draft Ready",
+  "status": "Production Ready",
   "tone": "storm mythic tactical",
-  "briefing": "Elite: Standard Socket Siege. The Forgotten Banner: Banner Pressure: enemy banners grant defense until physically broken by objective actions.",
+  "briefing": "Mythos Gates briefing: Elite: Strike the Valkyrie Weatherfield: Trial Mechanism. Enter Valkyrie Weatherfield on Thunder-Oath Root Gauntlet through The Thunder-Oath Gate while the Gate remains Ruin Gate with active oath memory. Reference deity voice is Freyja, but the player still chooses one deity from the faction roster. Objective: With one selected deity, solve the hazard layer in the elite-tuned Valkyrie Weatherfield, secure the branching trap, and reach the safe marker without feeding the Gate.",
   "lines": {
     "missionIntro": [
       {
-        "speaker": "Asgardian Divine Voice",
-        "text": "The oath is not decoration under elite pressure. It is the weight we choose to carry."
+        "speaker": "Freyja Divine Voice",
+        "text": "The oath hears footsteps before thunder. The Valkyrie Weatherfield will know whether one deity is enough."
       }
     ],
     "enemyIntroduction": [
       {
         "speaker": "Lore Director",
-        "text": "The field answers courage with pressure; every vow spoken here leaves a mark in iron."
+        "text": "Enemies are not filler here; they are the hazard pressure of Thunder-Oath Root Gauntlet made hostile."
       }
     ],
     "midBattle": [
       {
         "speaker": "Gameplay Director",
-        "text": "Take the hit only if the counterstroke matters. Valhalla rewards committed timing, not noise."
+        "text": "Read the room law first: Exploit or avoid the route rule: runes that bind promises into flesh"
       }
     ],
     "victory": [
       {
-        "speaker": "Asgardian Divine Voice",
-        "text": "The bridge remembers we stood. Let the Gate choke on that memory."
+        "speaker": "Freyja Divine Voice",
+        "text": "The storm has heard the oath and left it standing."
       }
     ],
     "defeat": [
       {
-        "speaker": "Asgardian Divine Voice",
-        "text": "Fall back. An oath wasted is a weapon handed to the wound."
+        "speaker": "Freyja Divine Voice",
+        "text": "Withdraw. The The Thunder-Oath Gate has learned too much from this attempt."
       }
     ],
     "codex": [
       {
         "speaker": "Lore Director",
-        "text": "The Forgotten Banner records how Asgardian law treats courage as responsibility, not fuel for the Gate."
+        "text": "The Storm-Rooted Aesir Holds is the source Realm; mortal myth is only the later echo. This beat documents Valkyrie Weatherfield as part of Thunder-Oath Root Gauntlet."
       }
     ]
-  }
+  },
+  "soloTitanPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "visualDirection": "Frame Valkyrie Weatherfield as a hazard node in Thunder-Oath Root Gauntlet; storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.",
+  "updated": "2026-08-16",
+  "mythosGatesDialogueRecreation": {
+    "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-002",
+    "routeName": "Thunder-Oath Root Gauntlet",
+    "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable Titan language.",
+    "soloRule": "Dialogue supports one active god or goddess in the field."
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Titan language is excluded from player-facing copy except legacy IDs.",
+  "routeId": "MG-DUNGEON-ROUTE-002",
+  "routeName": "Thunder-Oath Root Gauntlet",
+  "routeRoomName": "Valkyrie Weatherfield",
+  "entryGate": "The Thunder-Oath Gate"
 }

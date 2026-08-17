@@ -4,11 +4,11 @@
   "factionId": "TG-FACTION-006",
   "campaignType": "Normal",
   "status": "Prompt Ready",
-  "mapEnvironmentPrompt": "Elongated 3D tactical map for First Choir Lock: Threshold Sign, choir vault ascent with bone-white arches, bells, and sanctified stairs, readable mobile lanes, one-active-deity tactical scale, faction-specific Gold-white metals, celestial light, ordered winglike silhouettes, law sigils, halo-spine geometry, throne-like bodies., solemn Gate pressure, no sci-fi.",
-  "backgroundPrompt": "Mythic The White Citadel Above Law background for First Choir Lock, white-gold citadels, halo geometry, luminous wings, cathedral engines, glass floors over starless voids, no modern elements, no comedy tone.",
+  "mapEnvironmentPrompt": "Mythos Gates mission art rewrite for Answer the Choir Vault Threshold: First Crossing: Choir-Vault Discord Ascent / The Choir-Vault Gate / Wound Gate leaking memory-burning radiance. Depict Choir Vault Threshold as a readable mobile tactical entry node in vertical cathedral ascent and judgment machinery; one active god or goddess from Michael, Sophia, Shekinah, Gabriel; no armies, no squads, no simultaneous party. Primary objective visual: With one selected deity, cross the threshold in the Choir Vault Threshold, secure the threshold grammar, and mark the Gate law before the Hollow can read the name. Source-Realm visual language: white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks. Show route readability for shrine, treasure, hazard, elite, or boss intent where relevant. Avoid sci-fi portal treatment, generic fantasy castle, planetary/alien framing, reskinned copy dungeon, UI grid tiles as world objects.",
+  "backgroundPrompt": "Background plate for Answer the Choir Vault Threshold: First Crossing in Choir Vault Threshold, part of Choir-Vault Discord Ascent. The environment must communicate The Radiant Hierarchies as the source culture behind mortal myth echoes, using white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.",
   "enemyPlacementGuidance": "Place enemies to create lane decisions, objective tension, and flanking pressure without hiding readable silhouettes.",
   "bossArtworkRequirements": "No boss art required; use threat pack silhouettes and objective props.",
-  "objectiveArtworkRequirements": "Empyrean doctrine marker, Gate pressure node, and realm hazard prop with clear mobile visibility.",
+  "objectiveArtworkRequirements": "Objective props must use Empyrean source-culture cosmetics: seraph bell-edict blades, opal-glass cherubim aegis, ophanim many-eye choir cores, wheel intercept silhouettes as relic-cache silhouettes, seal anchors, lane markers, or altar mechanisms. Readable on mobile; no generic chest, plain sword, plain armor, or mismatched faction relic.",
   "vfxRequirements": [
     "choir resonance ring",
     "beacon countdown flare",
@@ -21,6 +21,22 @@
     "normal campaign badge",
     "star goals visible before launch"
   ],
-  "missionThumbnail": "First Choir Lock: Threshold Sign thumbnail: five deity silhouettes advancing through choir vault ascent with bone-white arches, bells, and sanctified stairs.",
-  "chapterArtwork": "First Choir Lock chapter banner with Empyrean color language and Gate escalation."
+  "missionThumbnail": "First Choir Lock: Threshold Sign thumbnail: one active deity silhouette advancing through Radiant Hierarchies source-culture terrain; visible cues include white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometry, scroll seals, ophanim wheels, seraph fire and optional seraph bell-edict blades, opal-glass cherubim aegis, ophanim many-eye choir cores, wheel intercept silhouettes.",
+  "chapterArtwork": "Chapter banner uses Empyrean source-culture appearance canon: white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometry, scroll seals, ophanim wheels, seraph fire; cosmetic props and reward silhouettes echo seraph bell-edict blades, opal-glass cherubim aegis, ophanim many-eye choir cores, wheel intercept silhouettes; Earth myth is the echo, Realm culture is the source.",
+  "sourceCultureAppearanceRule": "Must match Radiant Hierarchies source-culture canon; avoid robot angel, spaceship armor, cute cherub baby, generic church costume, literal cathedral body, neon sci-fi halo and generic cosmetics.",
+  "updated": "2026-08-16",
+  "mythosGatesArtRecreation": {
+    "status": "PASS_1_ROUTE_VISUAL_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-006",
+    "routeName": "Choir-Vault Discord Ascent",
+    "entryGate": "The Choir-Vault Gate",
+    "gateState": "Wound Gate leaking memory-burning radiance",
+    "visualRule": "Show one-active-deity scale, source-Realm mythology, physical hazards, shrine/treasure/boss route language, and no sci-fi/simple-portal treatment."
+  },
+  "routeId": "MG-DUNGEON-ROUTE-006",
+  "routeName": "Choir-Vault Discord Ascent",
+  "routeRoomName": "Choir Vault Threshold",
+  "entryGate": "The Choir-Vault Gate",
+  "encounterPrompt": "Encounter composition for Answer the Choir Vault Threshold: First Crossing: one selected playable deity silhouette versus multiple discordant choir husks in Choir Vault Threshold. If this is elite or boss content, foreshadow Ophanim Shear-Wheel and The Silent Seraph of Broken Praise without adding allied squads.",
+  "negativePrompt": "sci-fi portal treatment, generic fantasy castle, planetary/alien framing, reskinned copy dungeon, UI grid tiles as world objects, armies, squads, party lineup, generic portal, mortal ascension scene"
 }

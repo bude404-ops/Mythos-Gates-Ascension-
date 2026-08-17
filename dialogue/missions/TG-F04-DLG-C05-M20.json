@@ -3,45 +3,60 @@
   "missionId": "TG-F04-C05-M20",
   "factionId": "TG-FACTION-004",
   "campaignType": "Normal",
-  "status": "Draft Ready",
+  "status": "Production Ready",
   "tone": "restrained mythic tactical",
-  "briefing": "Mirror Tempest Gate: Ascension Seal. Kami advances through tempest mirror gate where false lanes split from sacred ground while the Gate tests whether balance is defended by precision.",
+  "briefing": "Mythos Gates briefing: Unmask the Moon-Mirror Boss Shrine: Gate Verdict. Enter Moon-Mirror Boss Shrine on Torii-Moon Mirror Road through The Torii-Moon Gate while the Gate remains Distortion Gate with ritual rerouting. Reference deity voice is Izanami, but the player still chooses one deity from the faction roster. Objective: With one selected deity, defeat the boss encounter against The False Reflection Kami inside the Moon-Mirror Boss Shrine and complete the Ascension route without breaking canon.",
   "lines": {
     "missionIntro": [
       {
-        "speaker": "Kami Divine Voice",
-        "text": "The field asks for proof. One active deity enters, and The Spirit-Moon Gate will remember how we answer."
+        "speaker": "Izanami Divine Voice",
+        "text": "A clean crossing leaves no false reflection behind. The Moon-Mirror Boss Shrine will know whether one deity is enough."
       }
     ],
     "enemyIntroduction": [
       {
         "speaker": "Lore Director",
-        "text": "Threats emerge to test Kami Mirror Tempest: pressure first, revelation only when the field is held."
+        "text": "Enemies are not filler here; they are the boss pressure of Torii-Moon Mirror Road made hostile."
       }
     ],
     "midBattle": [
       {
         "speaker": "Gameplay Director",
-        "text": "Hold the lane, read the hazard, and spend movement as if it were blood."
+        "text": "Read the room law first: Exploit or avoid the route rule: oni taboo zones that punish broken shrine law"
       }
     ],
     "victory": [
       {
-        "speaker": "Kami Divine Voice",
-        "text": "The Gate has not yielded. It has recorded that we did not break."
+        "speaker": "Izanami Divine Voice",
+        "text": "The mirror clears; what remains is permitted to pass."
       }
     ],
     "defeat": [
       {
-        "speaker": "Kami Divine Voice",
-        "text": "Fall back before the wound learns our full shape."
+        "speaker": "Izanami Divine Voice",
+        "text": "Withdraw. The The Torii-Moon Gate has learned too much from this attempt."
       }
     ],
     "codex": [
       {
         "speaker": "Lore Director",
-        "text": "This mission keeps Kami doctrine intact: Their secrecy protects sacred balance but makes allies fear what they cannot see."
+        "text": "The Sacred Kingdoms is the source Realm; mortal myth is only the later echo. This beat documents Moon-Mirror Boss Shrine as part of Torii-Moon Mirror Road."
       }
     ]
-  }
+  },
+  "soloTitanPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "visualDirection": "Frame Moon-Mirror Boss Shrine as a boss node in Torii-Moon Mirror Road; torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash.",
+  "updated": "2026-08-16",
+  "mythosGatesDialogueRecreation": {
+    "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-004",
+    "routeName": "Torii-Moon Mirror Road",
+    "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable Titan language.",
+    "soloRule": "Dialogue supports one active god or goddess in the field."
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Titan language is excluded from player-facing copy except legacy IDs.",
+  "routeId": "MG-DUNGEON-ROUTE-004",
+  "routeName": "Torii-Moon Mirror Road",
+  "routeRoomName": "Moon-Mirror Boss Shrine",
+  "entryGate": "The Torii-Moon Gate"
 }

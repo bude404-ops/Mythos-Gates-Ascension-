@@ -3,45 +3,60 @@
   "missionId": "TG-F02-C01-M01",
   "factionId": "TG-FACTION-002",
   "campaignType": "Normal",
-  "status": "Draft Ready",
+  "status": "Production Ready",
   "tone": "storm mythic tactical",
-  "briefing": "The First Oath Sparks. Oath Under Thunder: Oathbound Guard: deities that survive damage near oath-stones empower their next committed strike.",
+  "briefing": "Mythos Gates briefing: Swear the Broken Rune Arrival Span: First Crossing. Enter Broken Rune Arrival Span on Thunder-Oath Root Gauntlet through The Thunder-Oath Gate while the Gate remains Ruin Gate with active oath memory. Reference deity voice is Odin, but the player still chooses one deity from the faction roster. Objective: With one selected deity, cross the threshold in the Broken Rune Arrival Span, secure the threshold grammar, and mark the Gate law before the Hollow can read the name.",
   "lines": {
     "missionIntro": [
       {
-        "speaker": "Asgardian Divine Voice",
-        "text": "The oath is not decoration. It is the weight we choose to carry."
+        "speaker": "Odin Divine Voice",
+        "text": "The oath hears footsteps before thunder. The Broken Rune Arrival Span will know whether one deity is enough."
       }
     ],
     "enemyIntroduction": [
       {
         "speaker": "Lore Director",
-        "text": "The field answers courage with pressure; every vow spoken here leaves a mark in iron."
+        "text": "Enemies are not filler here; they are the entry pressure of Thunder-Oath Root Gauntlet made hostile."
       }
     ],
     "midBattle": [
       {
         "speaker": "Gameplay Director",
-        "text": "Take the hit only if the counterstroke matters. Valhalla rewards committed timing, not noise."
+        "text": "Read the room law first: Exploit or avoid the route rule: runes that bind promises into flesh"
       }
     ],
     "victory": [
       {
-        "speaker": "Asgardian Divine Voice",
-        "text": "The bridge remembers we stood. Let the Gate choke on that memory."
+        "speaker": "Odin Divine Voice",
+        "text": "The storm has heard the oath and left it standing."
       }
     ],
     "defeat": [
       {
-        "speaker": "Asgardian Divine Voice",
-        "text": "Fall back. An oath wasted is a weapon handed to the wound."
+        "speaker": "Odin Divine Voice",
+        "text": "Withdraw. The The Thunder-Oath Gate has learned too much from this attempt."
       }
     ],
     "codex": [
       {
         "speaker": "Lore Director",
-        "text": "Oath Under Thunder records how Asgardian law treats courage as responsibility, not fuel for the Gate."
+        "text": "The Storm-Rooted Aesir Holds is the source Realm; mortal myth is only the later echo. This beat documents Broken Rune Arrival Span as part of Thunder-Oath Root Gauntlet."
       }
     ]
-  }
+  },
+  "soloTitanPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "visualDirection": "Frame Broken Rune Arrival Span as a entry node in Thunder-Oath Root Gauntlet; storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.",
+  "updated": "2026-08-16",
+  "mythosGatesDialogueRecreation": {
+    "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-002",
+    "routeName": "Thunder-Oath Root Gauntlet",
+    "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable Titan language.",
+    "soloRule": "Dialogue supports one active god or goddess in the field."
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Titan language is excluded from player-facing copy except legacy IDs.",
+  "routeId": "MG-DUNGEON-ROUTE-002",
+  "routeName": "Thunder-Oath Root Gauntlet",
+  "routeRoomName": "Broken Rune Arrival Span",
+  "entryGate": "The Thunder-Oath Gate"
 }

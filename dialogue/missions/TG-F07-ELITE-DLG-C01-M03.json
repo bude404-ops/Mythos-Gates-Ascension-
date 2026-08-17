@@ -3,45 +3,60 @@
   "missionId": "TG-F07-E-C01-M03",
   "factionId": "TG-FACTION-007",
   "campaignType": "Elite",
-  "status": "Draft Ready",
+  "status": "Production Ready",
   "tone": "restrained mythic tactical",
-  "briefing": "Elite: The Bargain Opens: Hidden Law. Infernal Dominion advances through black iron court with volcanic glass aisles and ember chain channels while the Gate tests whether power belongs to those capable of wielding it.",
+  "briefing": "Mythos Gates briefing: Elite: Bind the Ash-Velvet Bargain Market: Forward Claim. Enter Ash-Velvet Bargain Market on Black-Iron Debt Descent through The Black-Iron Gate while the Gate remains Distortion Gate bound by contract clauses. Reference deity voice is Asmodeus, but the player still chooses one deity from the faction roster. Objective: With one selected deity, break the first enemy pressure line in the elite-tuned Ash-Velvet Bargain Market, secure the outer defense, and deny the Hollow a foothold in the outer dungeon.",
   "lines": {
     "missionIntro": [
       {
-        "speaker": "Infernal Dominion Divine Voice",
-        "text": "The field asks for proof. One active deity enters, and The Cinder-Wound Gate will remember how we answer."
+        "speaker": "Asmodeus Divine Voice",
+        "text": "Every step is a clause, and every clause has teeth. The Ash-Velvet Bargain Market will know whether one deity is enough."
       }
     ],
     "enemyIntroduction": [
       {
         "speaker": "Lore Director",
-        "text": "Threats emerge to test Cinders of Dominion: pressure first, revelation only when the field is held."
+        "text": "Enemies are not filler here; they are the combat pressure of Black-Iron Debt Descent made hostile."
       }
     ],
     "midBattle": [
       {
         "speaker": "Gameplay Director",
-        "text": "Hold the lane, read the hazard, and spend movement as if it were blood."
+        "text": "Read the room law first: Exploit or avoid the route rule: hellfire clauses that burn unpaid debts"
       }
     ],
     "victory": [
       {
-        "speaker": "Infernal Dominion Divine Voice",
-        "text": "The Gate has not yielded. It has recorded that we did not break."
+        "speaker": "Asmodeus Divine Voice",
+        "text": "The debt is not erased. It is owned."
       }
     ],
     "defeat": [
       {
-        "speaker": "Infernal Dominion Divine Voice",
-        "text": "Fall back before the wound learns our full shape."
+        "speaker": "Asmodeus Divine Voice",
+        "text": "Withdraw. The The Black-Iron Gate has learned too much from this attempt."
       }
     ],
     "codex": [
       {
         "speaker": "Lore Director",
-        "text": "This mission keeps Infernal Dominion doctrine intact: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward."
+        "text": "The Infernal Dominion is the source Realm; mortal myth is only the later echo. This beat documents Ash-Velvet Bargain Market as part of Black-Iron Debt Descent."
       }
     ]
-  }
+  },
+  "soloTitanPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "visualDirection": "Frame Ash-Velvet Bargain Market as a combat node in Black-Iron Debt Descent; black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture.",
+  "updated": "2026-08-16",
+  "mythosGatesDialogueRecreation": {
+    "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-007",
+    "routeName": "Black-Iron Debt Descent",
+    "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable Titan language.",
+    "soloRule": "Dialogue supports one active god or goddess in the field."
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Titan language is excluded from player-facing copy except legacy IDs.",
+  "routeId": "MG-DUNGEON-ROUTE-007",
+  "routeName": "Black-Iron Debt Descent",
+  "routeRoomName": "Ash-Velvet Bargain Market",
+  "entryGate": "The Black-Iron Gate"
 }
