@@ -30,8 +30,8 @@ assert.deepEqual(hub.creatureBehaviorRuntime?.creatureIds, ['TG-CREATURE-001', '
 
 const wretch = creatures.find(c => c.id === 'TG-CREATURE-001');
 const colossus = creatures.find(c => c.id === 'TG-CREATURE-002');
-const titan = titans.find(t => t.id === 'TG-TITAN-001');
-assert.ok(wretch && colossus && titan, 'canonical Wretch, Colossus, and starter Titan required');
+const deity = titans.find(t => t.id === 'TG-TITAN-001');
+assert.ok(wretch && colossus && deity, 'canonical Wretch, Colossus, and starter Deity required');
 assert.equal(wretch.combatRole, 'SWARMER');
 assert.equal(colossus.combatRole, 'BRUTE');
 
@@ -58,7 +58,7 @@ const enemies = [wretch, wretch, colossus].map((enemy, index) => scaleEnemyForMi
 let state = createBattleState({
   battleId: 'TG-DEV-008-BEHAVIOR-SMOKE',
   missionId: mission.id,
-  titan,
+  deity,
   enemies,
   objectives: [
     { id: 'stabilize_solar_seal_a', label: 'Stabilize Solar Seal', progress: 1, requiredProgress: 2, status: 'ACTIVE' },
@@ -67,8 +67,8 @@ let state = createBattleState({
   scaling
 });
 
-state.titan.position = { x: 3, y: 3 };
-state.titan.stance = STANCES.GUARDIAN;
+state.deity.position = { x: 3, y: 3 };
+state.deity.stance = STANCES.GUARDIAN;
 state.enemies[0].position = { x: 3, y: 4 };
 state.enemies[1].position = { x: 4, y: 3 };
 state.enemies[2].position = { x: 2, y: 3 };
@@ -99,8 +99,8 @@ while ((reacted.phase === PHASES.ENEMY || reacted.phase === PHASES.REACTION) && 
 assert.ok(reacted.telemetry.objectiveProgress <= 0, 'objective denial should reduce progress telemetry when OBJECTIVE_CRUSH resolves');
 assert.ok(reacted.eventLog.some(row => row.type === 'OBJECTIVE_CRUSH'), 'OBJECTIVE_CRUSH event not logged');
 
-let roarState = createBattleState({ battleId: 'TG-DEV-008-ROAR', missionId: mission.id, titan, enemies: [scaleEnemyForMission(colossus, scaling, 0)], scaling });
-roarState.titan.position = { x: 3, y: 3 };
+let roarState = createBattleState({ battleId: 'TG-DEV-008-ROAR', missionId: mission.id, deity, enemies: [scaleEnemyForMission(colossus, scaling, 0)], scaling });
+roarState.deity.position = { x: 3, y: 3 };
 roarState.enemies[0].position = { x: 3, y: 4 };
 roarState.round = 3;
 roarState.resources.momentum = 30;
@@ -111,8 +111,8 @@ assert.ok(roarState.eventLog.some(row => row.type === 'FRACTURE_ROAR'), 'FRACTUR
 assert.ok(roarState.resources.momentum < 30, 'FRACTURE_ROAR should drain Momentum');
 assert.equal(roarState.phase, PHASES.REACTION);
 
-let stompState = createBattleState({ battleId: 'TG-DEV-008-STOMP', missionId: mission.id, titan, enemies: [scaleEnemyForMission(colossus, scaling, 0)], scaling });
-stompState.titan.position = { x: 3, y: 3 };
+let stompState = createBattleState({ battleId: 'TG-DEV-008-STOMP', missionId: mission.id, deity, enemies: [scaleEnemyForMission(colossus, scaling, 0)], scaling });
+stompState.deity.position = { x: 3, y: 3 };
 stompState.enemies[0].position = { x: 3, y: 4 };
 stompState.round = 1;
 stompState = revealEnemyIntents(stompState);
