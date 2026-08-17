@@ -5,7 +5,7 @@ export const productionGateManifest = Object.freeze({
     'src/platform/platform-core.mjs',
     'src/platform/backend-boundary.mjs',
     'src/platform/runtime-persistence.mjs',
-    'src/combat/one-titan-vs-many.mjs',
+    'src/combat/one-deity-vs-many.mjs',
     'src/lore/cross-faction-run-ins.mjs',
     'src/platform/runtime-persistence.sql',
     'src/data-loaders/content-loader.mjs',
@@ -18,7 +18,7 @@ export const productionGateManifest = Object.freeze({
     'tests/production-module-contract.test.mjs'
   ],
   protectedRuntimePrinciples: [
-    'one active titan standard combat',
+    'one active deity standard combat',
     'browser shell remains presentation only',
     'canonical JSON contracts validate before deploy',
     'generated dist output is not canonical source'
