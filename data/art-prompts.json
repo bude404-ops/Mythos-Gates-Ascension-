@@ -1496,13 +1496,40 @@
     "category": "Campaign",
     "faction": "Act I",
     "status": "ready",
-    "prompt": "Mythos Gates: Ascension campaign key art for The First Reopening. Ancient threshold ruins, dead stone Gate, Hollow shadow leaking from carved seals, five deity silhouettes entering torchlit dust, sober mythic key art, dramatic vertical composition, bronze and ember palette, canon fantasy realm atmosphere. Include clear campaign identity, readable fantasy mobile game composition, no text except optional carved symbolic UI plaques, strong foreground-middle-background separation. Narrative cues: The first modern Mythos Gate opens under impossible pressure. The Creator learns how Titans, Gates, Hollow leakage, and Director governance function.. Suggested map landmarks: The First Reopening Gate, Solar Pylon Observatory, The First Reopening Gate. Clipboard-ready production prompt, 2D painterly concept art, high contrast, cinematic lighting, canon Mythos Gates tone.",
+    "prompt": "Mythos Gates: Ascension campaign key art for The First Reopening. Ancient threshold ruins, dead stone Gate, Hollow shadow leaking from carved seals, one selected deity silhouette entering torchlit dust alone, sober mythic key art, dramatic vertical composition, bronze and ember palette, canon fantasy realm atmosphere. Include clear campaign identity, readable fantasy mobile game composition, no text except optional carved symbolic UI plaques, strong foreground-middle-background separation. Narrative cues: The first modern Mythos Gate opens under impossible pressure. The Creator learns how Titans, Gates, Hollow leakage, and Director governance function.. Suggested map landmarks: The First Reopening Gate, Solar Pylon Observatory, The First Reopening Gate. Ascension route canon overlay: depict Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma’at strain), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through Hollow scale-thieves, Isfet-branded jackal guardians; make route hazards visible as Aten hand-rays that burn lies into visible brands, Ma’at scale fields that immobilize anything out of balance. Include shrine/relic mood from Aten Ra restoration shrine, The Sun-Scale Gate resonance shrine; treasure-room cues may include Ma’at Feather Shard, Faience Sun-Thread, Black Silt Memory Jar. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Clipboard-ready production prompt, 2D painterly concept art, high contrast, cinematic lighting, canon Mythos Gates tone.",
     "negativePrompt": "low resolution, blurry, unreadable UI, modern city, photorealistic screenshot, watermark, logo, malformed text, cropped composition, cluttered typography, parody tone, electric modern cityscape",
     "style": "First Gate key art style",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-10",
-    "history": []
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-001"
+      ],
+      "routeNames": [
+        "Sun-Scale Verdict Descent"
+      ],
+      "entryGates": [
+        "The Sun-Scale Gate"
+      ],
+      "gateStates": [
+        "Stable Gate under Ma’at strain"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-CAMPAIGN-002",
@@ -1511,13 +1538,44 @@
     "category": "Campaign",
     "faction": "Act II",
     "status": "ready",
-    "prompt": "Mythos Gates: Ascension campaign key art for Trial of the Celestial Heights. storm bridge under celestial marble heights, oath lightning, laurel arena far above clouds, Asgardian and Olympian visual tension without comedy, five deity silhouettes crossing judged terrain, mythic campaign poster composition, silver-blue thunder and warm marble gold. Include clear campaign identity, readable fantasy mobile game composition, no text except optional carved symbolic UI plaques, strong foreground-middle-background separation. Narrative cues: Olympian and Asgardian laws collide over whether the reopened Gates should be treated as contests, oaths, or threats.. Suggested map landmarks: Storm-Oath Bridge, Marble Sky Arena, Storm-Oath Bridge. Clipboard-ready production prompt, 2D painterly concept art, high contrast, cinematic lighting, canon Mythos Gates tone.",
+    "prompt": "Mythos Gates: Ascension campaign key art for Trial of the Celestial Heights. storm bridge under celestial marble heights, oath lightning, laurel arena far above clouds, Asgardian and Olympian visual tension without comedy, one selected deity silhouette crossing judged terrain alone, mythic campaign poster composition, silver-blue thunder and warm marble gold. Include clear campaign identity, readable fantasy mobile game composition, no text except optional carved symbolic UI plaques, strong foreground-middle-background separation. Narrative cues: Olympian and Asgardian laws collide over whether the reopened Gates should be treated as contests, oaths, or threats.. Suggested map landmarks: Storm-Oath Bridge, Marble Sky Arena, Storm-Oath Bridge. Ascension route canon overlay: this image bridges Thunder-Oath Root Gauntlet via The Thunder-Oath Gate (Ruin Gate with active oath memory) and Laurel-Sky Hubris Trial via The Laurel-Sky Gate (Stable Gate with oracle vapor leakage). Frame the campaign as one selected deity entering a route alone against multiple enemies, with Hollow pressure visible through Hollow oath-eaters, Hollow victory parasites. Show each route's Gate law shaping architecture and terrain hazards physically, not as UI markers or sci-fi portals. Clipboard-ready production prompt, 2D painterly concept art, high contrast, cinematic lighting, canon Mythos Gates tone.",
     "negativePrompt": "low resolution, blurry, unreadable UI, modern city, photorealistic screenshot, watermark, logo, malformed text, cropped composition, cluttered typography, parody tone, electric modern cityscape",
     "style": "Oath trial campaign key art",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-10",
-    "history": []
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-002",
+        "MG-DUNGEON-ROUTE-003"
+      ],
+      "routeNames": [
+        "Thunder-Oath Root Gauntlet",
+        "Laurel-Sky Hubris Trial"
+      ],
+      "entryGates": [
+        "The Thunder-Oath Gate",
+        "The Laurel-Sky Gate"
+      ],
+      "gateStates": [
+        "Ruin Gate with active oath memory",
+        "Stable Gate with oracle vapor leakage"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-CAMPAIGN-003",
@@ -1526,13 +1584,40 @@
     "category": "Campaign",
     "faction": "Act III",
     "status": "ready",
-    "prompt": "Mythos Gates: Ascension campaign key art for Roots Below the Gate. living root caverns below a Mythos Gate, ancient trees coiling around stone seals, Beast Realm predators suggested in shadow, green-gold Tuatha magic, five deity silhouettes moving carefully through listening terrain, painterly mobile campaign banner. Include clear campaign identity, readable fantasy mobile game composition, no text except optional carved symbolic UI plaques, strong foreground-middle-background separation. Narrative cues: Avalora reveals that Gates wound living terrain. The campaign shifts from simple sealing to restoration under pressure.. Suggested map landmarks: Moon-Grove Rootlabyrinth, Moon-Grove Rootlabyrinth. Clipboard-ready production prompt, 2D painterly concept art, high contrast, cinematic lighting, canon Mythos Gates tone.",
+    "prompt": "Mythos Gates: Ascension campaign key art for Roots Below the Gate. living root caverns below a Mythos Gate, ancient trees coiling around stone seals, Beast Realm predators suggested in shadow, green-gold Tuatha magic, one selected deity silhouette moving carefully alone through listening terrain, painterly mobile campaign banner. Include clear campaign identity, readable fantasy mobile game composition, no text except optional carved symbolic UI plaques, strong foreground-middle-background separation. Narrative cues: Avalora reveals that Gates wound living terrain. The campaign shifts from simple sealing to restoration under pressure.. Suggested map landmarks: Moon-Grove Rootlabyrinth, Moon-Grove Rootlabyrinth. Ascension route canon overlay: depict Silver-Root Geas Labyrinth through The Silver-Root Gate (Sealed Gate with fae time bleed), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through fae time-thieves, thornbound oathbreakers; make route hazards visible as geas thorns that punish forbidden actions, fae time pools that age or reverse cooldowns. Include shrine/relic mood from Tuatha restoration shrine, The Silver-Root Gate resonance shrine; treasure-room cues may include Geas Thorn Pin, Silver Branch Token, Mirror-Meadow Dew. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Clipboard-ready production prompt, 2D painterly concept art, high contrast, cinematic lighting, canon Mythos Gates tone.",
     "negativePrompt": "low resolution, blurry, unreadable UI, modern city, photorealistic screenshot, watermark, logo, malformed text, cropped composition, cluttered typography, parody tone, electric modern cityscape",
     "style": "Root memory campaign key art",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-10",
-    "history": []
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-005"
+      ],
+      "routeNames": [
+        "Silver-Root Geas Labyrinth"
+      ],
+      "entryGates": [
+        "The Silver-Root Gate"
+      ],
+      "gateStates": [
+        "Sealed Gate with fae time bleed"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-CAMPAIGN-004",
@@ -1541,13 +1626,40 @@
     "category": "Campaign",
     "faction": "Act IV",
     "status": "ready",
-    "prompt": "Mythos Gates: Ascension campaign key art for Cinders of Dominion. black iron court under volcanic cinders, chain law sigils, infernal legal architecture, fire reflected in flood channels, imposing bargain table and battlefield silhouettes, restrained dark fantasy campaign art, red iron and riverlight palette. Include clear campaign identity, readable fantasy mobile game composition, no text except optional carved symbolic UI plaques, strong foreground-middle-background separation. Narrative cues: The Infernal Dominion treats Gate wounds as opportunity. The Creator must navigate bargains, execution sigils, and power without confusing ambition for corruption.. Suggested map landmarks: Black Iron Court, Black Iron Court. Clipboard-ready production prompt, 2D painterly concept art, high contrast, cinematic lighting, canon Mythos Gates tone.",
+    "prompt": "Mythos Gates: Ascension campaign key art for Cinders of Dominion. black iron court under volcanic cinders, chain law sigils, infernal legal architecture, fire reflected in flood channels, imposing bargain table and battlefield silhouettes, restrained dark fantasy campaign art, red iron and riverlight palette. Include clear campaign identity, readable fantasy mobile game composition, no text except optional carved symbolic UI plaques, strong foreground-middle-background separation. Narrative cues: The Infernal Dominion treats Gate wounds as opportunity. The Creator must navigate bargains, execution sigils, and power without confusing ambition for corruption.. Suggested map landmarks: Black Iron Court, Black Iron Court. Ascension route canon overlay: depict Black-Iron Debt Descent through The Black-Iron Gate (Distortion Gate bound by contract clauses), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through contract devils, debt-marked prisoners; make route hazards visible as contract circles that tax every action, chains that attach to repeated mistakes. Include shrine/relic mood from Infernal Dominion restoration shrine, The Black-Iron Gate resonance shrine; treasure-room cues may include Blood-Wax Seal, Obsidian Debt Coin, Chain Clause Link. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Clipboard-ready production prompt, 2D painterly concept art, high contrast, cinematic lighting, canon Mythos Gates tone.",
     "negativePrompt": "low resolution, blurry, unreadable UI, modern city, photorealistic screenshot, watermark, logo, malformed text, cropped composition, cluttered typography, parody tone, electric modern cityscape",
     "style": "Dominion campaign key art",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-10",
-    "history": []
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-007"
+      ],
+      "routeNames": [
+        "Black-Iron Debt Descent"
+      ],
+      "entryGates": [
+        "The Black-Iron Gate"
+      ],
+      "gateStates": [
+        "Distortion Gate bound by contract clauses"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-CAMPAIGN-005",
@@ -1556,13 +1668,40 @@
     "category": "Campaign",
     "faction": "Act II",
     "status": "ready",
-    "prompt": "Mythos Gates: Ascension campaign key art for Helio-Kemet Sun Realm. Helio-Kemet Sun Realm campaign map overview, golden desert pyramids, turquoise river channels, solar obelisks, boss Gate silhouette above a sun throne, S-shaped five-node mission route, ornate mobile banner composition, ancient Egyptian-inspired fantasy without modern elements. Include clear campaign identity, readable fantasy mobile game composition, no text except optional carved symbolic UI plaques, strong foreground-middle-background separation. Narrative cues: Aten Ra forces climb an S-shaped river-of-light campaign road from Sacred Sun Temple to the Mythos Gate boss portal, establishing the campaign-map language for faction chapters.. Suggested map landmarks: Sacred Sun Temple Road, Mythos Gate Sun Throne, Mythos Gate Sun Throne. Clipboard-ready production prompt, 2D painterly concept art, high contrast, cinematic lighting, canon Mythos Gates tone.",
+    "prompt": "Mythos Gates: Ascension campaign key art for Helio-Kemet Sun Realm. Helio-Kemet Sun Realm campaign map overview, golden desert pyramids, turquoise river channels, solar obelisks, boss Gate silhouette above a sun throne, S-shaped five-node mission route, ornate mobile banner composition, ancient Egyptian-inspired fantasy without modern elements. Include clear campaign identity, readable fantasy mobile game composition, no text except optional carved symbolic UI plaques, strong foreground-middle-background separation. Narrative cues: Aten Ra forces climb an S-shaped river-of-light campaign road from Sacred Sun Temple to the Mythos Gate boss portal, establishing the campaign-map language for faction chapters.. Suggested map landmarks: Sacred Sun Temple Road, Mythos Gate Sun Throne, Mythos Gate Sun Throne. Ascension route canon overlay: depict Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma’at strain), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through Hollow scale-thieves, Isfet-branded jackal guardians; make route hazards visible as Aten hand-rays that burn lies into visible brands, Ma’at scale fields that immobilize anything out of balance. Include shrine/relic mood from Aten Ra restoration shrine, The Sun-Scale Gate resonance shrine; treasure-room cues may include Ma’at Feather Shard, Faience Sun-Thread, Black Silt Memory Jar. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Clipboard-ready production prompt, 2D painterly concept art, high contrast, cinematic lighting, canon Mythos Gates tone.",
     "negativePrompt": "low resolution, blurry, unreadable UI, modern city, photorealistic screenshot, watermark, logo, malformed text, cropped composition, cluttered typography, parody tone, electric modern cityscape",
     "style": "Helio-Kemet campaign key art",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-10",
-    "history": []
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-001"
+      ],
+      "routeNames": [
+        "Sun-Scale Verdict Descent"
+      ],
+      "entryGates": [
+        "The Sun-Scale Gate"
+      ],
+      "gateStates": [
+        "Stable Gate under Ma’at strain"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-CAMPAIGN-006",
@@ -1571,13 +1710,40 @@
     "category": "Campaign",
     "faction": "Act II",
     "status": "ready",
-    "prompt": "Mythos Gates: Ascension campaign key art for Kami Mirror Tempest. Kami shrine archipelago under mirror storm, foxfire torii roads, reflective lake sanctum, paper lantern paths, broken oath spirits suggested by wind, elegant vertical campaign poster, indigo night, vermilion gates, pale mirror light. Include clear campaign identity, readable fantasy mobile game composition, no text except optional carved symbolic UI plaques, strong foreground-middle-background separation. Narrative cues: The Kami campaign travels through storm shrines, mirror lakes, and foxfire gates where every reflection can become a hostile tactical lane.. Suggested map landmarks: Foxfire Torii Road, Mirror Lake Sanctum, Mirror Lake Sanctum. Clipboard-ready production prompt, 2D painterly concept art, high contrast, cinematic lighting, canon Mythos Gates tone.",
+    "prompt": "Mythos Gates: Ascension campaign key art for Kami Mirror Tempest. Kami shrine archipelago under mirror storm, foxfire torii roads, reflective lake sanctum, paper lantern paths, broken oath spirits suggested by wind, elegant vertical campaign poster, indigo night, vermilion gates, pale mirror light. Include clear campaign identity, readable fantasy mobile game composition, no text except optional carved symbolic UI plaques, strong foreground-middle-background separation. Narrative cues: The Kami campaign travels through storm shrines, mirror lakes, and foxfire gates where every reflection can become a hostile tactical lane.. Suggested map landmarks: Foxfire Torii Road, Mirror Lake Sanctum, Mirror Lake Sanctum. Ascension route canon overlay: depict Torii-Moon Mirror Road through The Torii-Moon Gate (Distortion Gate with ritual rerouting), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through foxfire doubles, impure shrine shades; make route hazards visible as torii gates that reroute space when crossed without rite, purification streams that burn corruption and lies. Include shrine/relic mood from Kami restoration shrine, The Torii-Moon Gate resonance shrine; treasure-room cues may include Shimenawa Knot Seal, Foxfire Lantern Core, Moon-Mirror Shard. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Clipboard-ready production prompt, 2D painterly concept art, high contrast, cinematic lighting, canon Mythos Gates tone.",
     "negativePrompt": "low resolution, blurry, unreadable UI, modern city, photorealistic screenshot, watermark, logo, malformed text, cropped composition, cluttered typography, parody tone, electric modern cityscape",
     "style": "Kami mirror tempest key art",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-10",
-    "history": []
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-004"
+      ],
+      "routeNames": [
+        "Torii-Moon Mirror Road"
+      ],
+      "entryGates": [
+        "The Torii-Moon Gate"
+      ],
+      "gateStates": [
+        "Distortion Gate with ritual rerouting"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-CAMPAIGN-007",
@@ -1586,13 +1752,40 @@
     "category": "Campaign",
     "faction": "Act II",
     "status": "ready",
-    "prompt": "Mythos Gates: Ascension campaign key art for Empyrean Choir Vault. Empyrean Choir Vault above clouds, ivory-gold citadel, glass stairs, broken heaven engine, harmonic beacons, silent choir architecture, five deity silhouettes against overwhelming holy machinery, restrained celestial campaign key art. Include clear campaign identity, readable fantasy mobile game composition, no text except optional carved symbolic UI plaques, strong foreground-middle-background separation. Narrative cues: The Empyrean campaign ascends luminous choir platforms orbiting a broken heaven-engine where harmonic gates rewrite battlefield elevation.. Suggested map landmarks: Choir Vault Ascent, Broken Heaven Engine, Broken Heaven Engine. Clipboard-ready production prompt, 2D painterly concept art, high contrast, cinematic lighting, canon Mythos Gates tone.",
+    "prompt": "Mythos Gates: Ascension campaign key art for Empyrean Choir Vault. Empyrean Choir Vault above clouds, ivory-gold citadel, glass stairs, broken heaven engine, harmonic beacons, silent choir architecture, one selected deity silhouette against overwhelming holy machinery, restrained celestial campaign key art. Include clear campaign identity, readable fantasy mobile game composition, no text except optional carved symbolic UI plaques, strong foreground-middle-background separation. Narrative cues: The Empyrean campaign ascends luminous choir platforms orbiting a broken heaven-engine where harmonic gates rewrite battlefield elevation.. Suggested map landmarks: Choir Vault Ascent, Broken Heaven Engine, Broken Heaven Engine. Ascension route canon overlay: depict Choir-Vault Discord Ascent through The Choir-Vault Gate (Wound Gate leaking memory-burning radiance), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through discordant choir husks, memory-burned cherub guardians; make route hazards visible as choir notes that immobilize discordant beings, seraph flame that burns corruption and memory alike. Include shrine/relic mood from Empyrean restoration shrine, The Choir-Vault Gate resonance shrine; treasure-room cues may include Bell-Metal Aura Link, Seraph Ash Seal, Ophanim Eye Shard. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Clipboard-ready production prompt, 2D painterly concept art, high contrast, cinematic lighting, canon Mythos Gates tone.",
     "negativePrompt": "low resolution, blurry, unreadable UI, modern city, photorealistic screenshot, watermark, logo, malformed text, cropped composition, cluttered typography, parody tone, electric modern cityscape",
     "style": "Empyrean vault campaign key art",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-10",
-    "history": []
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-006"
+      ],
+      "routeNames": [
+        "Choir-Vault Discord Ascent"
+      ],
+      "entryGates": [
+        "The Choir-Vault Gate"
+      ],
+      "gateStates": [
+        "Wound Gate leaking memory-burning radiance"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-CREATURE-001",
@@ -1607,7 +1800,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "id": "TG-PROMPT-CREATURE-002",
@@ -1682,7 +1880,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "id": "TG-PROMPT-CREATURE-007",
@@ -1697,7 +1900,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "id": "TG-PROMPT-CREATURE-008",
@@ -1712,7 +1920,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "id": "TG-PROMPT-CREATURE-009",
@@ -1727,7 +1940,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "id": "TG-PROMPT-CREATURE-010",
@@ -1742,7 +1960,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "id": "TG-PROMPT-CREATURE-011",
@@ -1757,7 +1980,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "id": "TG-PROMPT-CREATURE-012",
@@ -1772,7 +2000,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "id": "TG-PROMPT-CREATURE-013",
@@ -1787,7 +2020,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "id": "TG-PROMPT-CREATURE-014",
@@ -1802,7 +2040,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "id": "TG-PROMPT-CREATURE-015",
@@ -1817,7 +2060,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "id": "TG-PROMPT-CREATURE-016",
@@ -1832,7 +2080,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "id": "TG-PROMPT-CREATURE-017",
@@ -1847,7 +2100,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "id": "TG-PROMPT-CREATURE-018",
@@ -1862,7 +2120,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "id": "TG-PROMPT-MAP-001",
@@ -1871,14 +2134,41 @@
     "category": "Map",
     "faction": "Contested Earth Threshold",
     "status": "ready",
-    "prompt": "Mythos Gates tactical battleground environment concept: The First Reopening Gate. A shattered Earth-side gateway courtyard where the first playable encounter unfolds, built for a 5x5 tactical onboarding composition that can expand later. The unstable Gate pulse is visible as pressure fractures through old stone, wind-torn banners, dust columns, and cracked objective ground that feels physically broken rather than marked. Broken Earth-side Gatefield lore: ancient threshold masonry, collapsed relief statues, scorched grass, loose flagstones, and natural cover formed by fallen gate ribs. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into the location itself, no sci-fi.",
+    "prompt": "Mythos Gates tactical battleground environment concept: The First Reopening Gate. A shattered Earth-side gateway courtyard where the first playable encounter unfolds, built for a 5x5 tactical onboarding composition that can expand later. The unstable Gate pulse is visible as pressure fractures through old stone, wind-torn banners, dust columns, and cracked objective ground that feels physically broken rather than marked. Broken Earth-side Gatefield lore: ancient threshold masonry, collapsed relief statues, scorched grass, loose flagstones, and natural cover formed by fallen gate ribs. Ascension route canon overlay: depict Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma’at strain), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through Hollow scale-thieves, Isfet-branded jackal guardians; make route hazards visible as Aten hand-rays that burn lies into visible brands, Ma’at scale fields that immobilize anything out of balance. Include shrine/relic mood from Aten Ra restoration shrine, The Sun-Scale Gate resonance shrine; treasure-room cues may include Ma’at Feather Shard, Faience Sun-Thread, Black Silt Memory Jar. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into the location itself, no sci-fi.",
     "negativePrompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares",
     "style": "Mythos Gates visual style",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-10",
-    "history": [],
-    "terrainIntegration": "Terrain effects must be physical, lore-native battlefield features embedded in the map location, never glowing tactical tiles or UI overlays."
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
+    "terrainIntegration": "Terrain effects must be physical, lore-native battlefield features embedded in the map location, never glowing tactical tiles or UI overlays.",
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-001"
+      ],
+      "routeNames": [
+        "Sun-Scale Verdict Descent"
+      ],
+      "entryGates": [
+        "The Sun-Scale Gate"
+      ],
+      "gateStates": [
+        "Stable Gate under Ma’at strain"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-MAP-002",
@@ -1887,14 +2177,41 @@
     "category": "Map",
     "faction": "The Golden Dominion of Aten",
     "status": "ready",
-    "prompt": "Mythos Gates tactical battleground environment concept: Solar Pylon Observatory. A bronze-and-obsidian Aten Ra border archive wrapped around a dormant solar pylon where Mesha records Gate behavior. Solar overcharge appears naturally through heat-warped air, sun-cracked stone, molten bronze seams, scorched instrument rings, and misaligned mirrors casting dangerous bands of hard sunlight across real walkways. Judgment beam misfires are implied by burnt pillar scars and fractured lens shadows through believable light, heat, and architecture. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into architecture and lore, no sci-fi.",
+    "prompt": "Mythos Gates tactical battleground environment concept: Solar Pylon Observatory. A bronze-and-obsidian Aten Ra border archive wrapped around a dormant solar pylon where Mesha records Gate behavior. Solar overcharge appears naturally through heat-warped air, sun-cracked stone, molten bronze seams, scorched instrument rings, and misaligned mirrors casting dangerous bands of hard sunlight across real walkways. Judgment beam misfires are implied by burnt pillar scars and fractured lens shadows through believable light, heat, and architecture. Ascension route canon overlay: depict Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma’at strain), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through Hollow scale-thieves, Isfet-branded jackal guardians; make route hazards visible as Aten hand-rays that burn lies into visible brands, Ma’at scale fields that immobilize anything out of balance. Include shrine/relic mood from Aten Ra restoration shrine, The Sun-Scale Gate resonance shrine; treasure-room cues may include Ma’at Feather Shard, Faience Sun-Thread, Black Silt Memory Jar. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into architecture and lore, no sci-fi.",
     "negativePrompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares",
     "style": "Mythos Gates visual style",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-10",
-    "history": [],
-    "terrainIntegration": "Terrain effects must be physical, lore-native battlefield features embedded in the map location, never glowing tactical tiles or UI overlays."
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
+    "terrainIntegration": "Terrain effects must be physical, lore-native battlefield features embedded in the map location, never glowing tactical tiles or UI overlays.",
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-001"
+      ],
+      "routeNames": [
+        "Sun-Scale Verdict Descent"
+      ],
+      "entryGates": [
+        "The Sun-Scale Gate"
+      ],
+      "gateStates": [
+        "Stable Gate under Ma’at strain"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-MAP-003",
@@ -1903,15 +2220,42 @@
     "category": "Map",
     "faction": "Asgardian",
     "status": "ready",
-    "prompt": "Mythos Gates tactical battleground environment concept: Storm-Oath Bridge. A colossal rune-iron bridge suspended in Valhalla storm cloud, where sworn vows become visible under lightning. Lightning lanes are natural storm paths following wet metal seams, raised rune channels, charred railings, puddled iron plates, and cracked oath-stones. Rune collapse is shown as buckled bridge segments, missing spans, hanging chains, and wind-torn battle standards that shape tactical movement through storm-weathered iron and broken bridge structure. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into storm-weathered bridge lore, no sci-fi. Faction Visual Bible: follow Asgardian material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-002; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as Norse myth; Earth legend is the echo and The Storm-Rooted Aesir Holds is the original. Show storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.. Myth anchors include Odin: ravens, sacrifice, runes, hidden wisdom, war kingship, Thor: thunder, hammer impact, protection, giant-breaking storms, Freyja/Valkyries: choosing the slain, battle fate, swan/raven/boar omens, Yggdrasil: world-tree roots, nine-world crossings, wyrd memory. Avoid cartoon Viking, generic horned helmet cosplay, clean chrome, sci-fi power armor, glowing UI runes, blocky hammer mech.",
+    "prompt": "Mythos Gates tactical battleground environment concept: Storm-Oath Bridge. A colossal rune-iron bridge suspended in Valhalla storm cloud, where sworn vows become visible under lightning. Lightning lanes are natural storm paths following wet metal seams, raised rune channels, charred railings, puddled iron plates, and cracked oath-stones. Rune collapse is shown as buckled bridge segments, missing spans, hanging chains, and wind-torn battle standards that shape tactical movement through storm-weathered iron and broken bridge structure. Ascension route canon overlay: depict Thunder-Oath Root Gauntlet through The Thunder-Oath Gate (Ruin Gate with active oath memory), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through oathless draugr, rune-bound wolves; make route hazards visible as runes that bind promises into flesh, lightning that strikes cowardice before armor. Include shrine/relic mood from Asgardian restoration shrine, The Thunder-Oath Gate resonance shrine; treasure-room cues may include Oath-Iron Nail, World-Root Splinter, Valkyrie Storm Pin. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into storm-weathered bridge lore, no sci-fi. Faction Visual Bible: follow Asgardian material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-002; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as Norse myth; Earth legend is the echo and The Storm-Rooted Aesir Holds is the original. Show storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.. Myth anchors include Odin: ravens, sacrifice, runes, hidden wisdom, war kingship, Thor: thunder, hammer impact, protection, giant-breaking storms, Freyja/Valkyries: choosing the slain, battle fate, swan/raven/boar omens, Yggdrasil: world-tree roots, nine-world crossings, wyrd memory. Avoid cartoon Viking, generic horned helmet cosplay, clean chrome, sci-fi power armor, glowing UI runes, blocky hammer mech.",
     "negativePrompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, sci-fi power armor, generic horned helmet cosplay, blocky metal torso, robot joints, clean chrome, cartoon Viking, generic horned helmet cosplay, clean chrome, sci-fi power armor, glowing UI runes, blocky hammer mech, modern biker leather, random Celtic knotwork, plastic fur, spaceship panels",
     "style": "Mythos Gates visual style",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-16",
-    "history": [],
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
     "terrainIntegration": "Terrain effects must be physical, lore-native battlefield features embedded in the map location, never glowing tactical tiles or UI overlays.",
-    "factionVisualBibleId": "TG-FVB-002"
+    "factionVisualBibleId": "TG-FVB-002",
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-002"
+      ],
+      "routeNames": [
+        "Thunder-Oath Root Gauntlet"
+      ],
+      "entryGates": [
+        "The Thunder-Oath Gate"
+      ],
+      "gateStates": [
+        "Ruin Gate with active oath memory"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-MAP-004",
@@ -1920,15 +2264,42 @@
     "category": "Map",
     "faction": "Olympian",
     "status": "ready",
-    "prompt": "Mythos Gates tactical battleground environment concept: Marble Sky Arena. A floating Olympus arena of marble, bronze, laurel, and starlight where victory itself changes the battlefield. Falling sky platforms are real fractured marble terraces drifting apart over clouds, with broken columns, exposed bronze braces, and shadowed gaps. Laurel judgment fields appear as woven sacred hedges, wreath-strewn statues, sunlit tribunal circles, and polished stone worn by divine trials through believable sacred staging and worn stone boundaries. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects embedded in Olympian arena architecture, no sci-fi. Faction Visual Bible: follow Olympian material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-003; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as Greek myth; Earth legend is the echo and The Celestial Heights of Olympus is the original. Show living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal auras, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands.. Myth anchors include Zeus: sky authority, thunder verdict, kingship, Athena: strategy, aegis, owl sight, spear and shield order, Apollo: prophecy, sun clarity, music, plague/purification, Artemis: wild thresholds, moon hunt, bow discipline. Avoid generic toga costume, Roman gladiator confusion, marble statue stiffness, robot bronze automaton, sci-fi aura, neon arena grid.",
+    "prompt": "Mythos Gates tactical battleground environment concept: Marble Sky Arena. A floating Olympus arena of marble, bronze, laurel, and starlight where victory itself changes the battlefield. Falling sky platforms are real fractured marble terraces drifting apart over clouds, with broken columns, exposed bronze braces, and shadowed gaps. Laurel judgment fields appear as woven sacred hedges, wreath-strewn statues, sunlit tribunal circles, and polished stone worn by divine trials through believable sacred staging and worn stone boundaries. Ascension route canon overlay: depict Laurel-Sky Hubris Trial through The Laurel-Sky Gate (Stable Gate with oracle vapor leakage), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through laurel-bound champions, oracle-maddened shades; make route hazards visible as laurel verdict rings that punish cowardice and hubris, oracle vapors that reveal possible futures as traps. Include shrine/relic mood from Olympian restoration shrine, The Laurel-Sky Gate resonance shrine; treasure-room cues may include Laurel Verdict Wreath, Aegis Scale Fragment, Oracle Smoke Phial. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects embedded in Olympian arena architecture, no sci-fi. Faction Visual Bible: follow Olympian material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-003; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as Greek myth; Earth legend is the echo and The Celestial Heights of Olympus is the original. Show living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal auras, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands.. Myth anchors include Zeus: sky authority, thunder verdict, kingship, Athena: strategy, aegis, owl sight, spear and shield order, Apollo: prophecy, sun clarity, music, plague/purification, Artemis: wild thresholds, moon hunt, bow discipline. Avoid generic toga costume, Roman gladiator confusion, marble statue stiffness, robot bronze automaton, sci-fi aura, neon arena grid.",
     "negativePrompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, generic toga costume, Roman gladiator confusion, marble statue stiffness, robot bronze automaton, sci-fi aura, neon arena grid, tourist Greek temple body, plastic gold laurel, readable Greek text, superhero cape",
     "style": "Mythos Gates visual style",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-16",
-    "history": [],
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
     "terrainIntegration": "Terrain effects must be physical, lore-native battlefield features embedded in the map location, never glowing tactical tiles or UI overlays.",
-    "factionVisualBibleId": "TG-FVB-003"
+    "factionVisualBibleId": "TG-FVB-003",
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-003"
+      ],
+      "routeNames": [
+        "Laurel-Sky Hubris Trial"
+      ],
+      "entryGates": [
+        "The Laurel-Sky Gate"
+      ],
+      "gateStates": [
+        "Stable Gate with oracle vapor leakage"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-MAP-005",
@@ -1937,15 +2308,42 @@
     "category": "Map",
     "faction": "Tuatha",
     "status": "ready",
-    "prompt": "Mythos Gates tactical battleground environment concept: Moon-Grove Rootlabyrinth. A living Avalora forest labyrinth whose roots remember every step and punish careless burning. Moving root walls are natural braided trunks, mossy root arches, thorny hedgerows, and fresh soil upheavals that redirect lanes. Fae misdirection is suggested through moonlit mist, mirrored dew pools, crooked flower paths, and subtly repeated trees. Living terrain backlash appears as charred bark regrowing over old scorch marks, not game-highlight tiles. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects grown directly from forest lore, no sci-fi. Faction Visual Bible: follow Tuatha material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-005; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as Celtic and Irish fae myth; Earth legend is the echo and Avalora is the original. Show silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.. Myth anchors include Tuatha Dé Danann: divine tribes, craft, sovereignty, otherworld descent, Aos Sí/Sídhe: mound gates, hidden courts, fae ancestry, Tír na nÓg: youth, impossible time, otherworld beauty, Morrígan: battle crow, fate, war prophecy. Avoid generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume.",
+    "prompt": "Mythos Gates tactical battleground environment concept: Moon-Grove Rootlabyrinth. A living Avalora forest labyrinth whose roots remember every step and punish careless burning. Moving root walls are natural braided trunks, mossy root arches, thorny hedgerows, and fresh soil upheavals that redirect lanes. Fae misdirection is suggested through moonlit mist, mirrored dew pools, crooked flower paths, and subtly repeated trees. Living terrain backlash appears as charred bark regrowing over old scorch marks, not game-highlight tiles. Ascension route canon overlay: depict Silver-Root Geas Labyrinth through The Silver-Root Gate (Sealed Gate with fae time bleed), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through fae time-thieves, thornbound oathbreakers; make route hazards visible as geas thorns that punish forbidden actions, fae time pools that age or reverse cooldowns. Include shrine/relic mood from Tuatha restoration shrine, The Silver-Root Gate resonance shrine; treasure-room cues may include Geas Thorn Pin, Silver Branch Token, Mirror-Meadow Dew. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects grown directly from forest lore, no sci-fi. Faction Visual Bible: follow Tuatha material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-005; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as Celtic and Irish fae myth; Earth legend is the echo and Avalora is the original. Show silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.. Myth anchors include Tuatha Dé Danann: divine tribes, craft, sovereignty, otherworld descent, Aos Sí/Sídhe: mound gates, hidden courts, fae ancestry, Tír na nÓg: youth, impossible time, otherworld beauty, Morrígan: battle crow, fate, war prophecy. Avoid generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume.",
     "negativePrompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, generic elf, treehouse body, wood block giant, terrain chunks, literal forest on shoulders, generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume, sci-fi nature armor, terrain chunks on shoulders, plastic leaves, readable runes",
     "style": "Mythos Gates visual style",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-16",
-    "history": [],
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
     "terrainIntegration": "Terrain effects must be physical, lore-native battlefield features embedded in the map location, never glowing tactical tiles or UI overlays.",
-    "factionVisualBibleId": "TG-FVB-005"
+    "factionVisualBibleId": "TG-FVB-005",
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-005"
+      ],
+      "routeNames": [
+        "Silver-Root Geas Labyrinth"
+      ],
+      "entryGates": [
+        "The Silver-Root Gate"
+      ],
+      "gateStates": [
+        "Sealed Gate with fae time bleed"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-MAP-006",
@@ -1954,15 +2352,42 @@
     "category": "Map",
     "faction": "Infernal Dominion",
     "status": "ready",
-    "prompt": "Mythos Gates tactical battleground environment concept: Black Iron Court. An Infernal Dominion throne district of chains, volcanic glass, black iron, and royal violence where bargains become battlefield hazards. Hellfire chains are built into the court as suspended restraints, floor-groove winches, hooked pillars, and ember-lit chain channels. Dominion execution marks appear as old blood-dark verdict stones, cracked obsidian dais steps, ash pits, and throne-shadow sightlines, all physically part of the courtroom terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into infernal architecture, no sci-fi. Faction Visual Bible: follow Infernal Dominion material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-007; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as hell, demonology, and infernal contract lore; Earth legend is the echo and The Infernal Dominion is the original. Show black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture.. Myth anchors include Hell/underworld: punishment dimension, abyss, descent, prison geography, Devils/demon kings: hierarchy, temptation, rulership, court violence, Contracts/Faustian bargains: debt, signatures, clauses, payment, Goetia/grimoires: seals, names, summoning law, constrained powers. Avoid red robot demon, generic Halloween devil, sci-fi cables, literal castle armor, block fortress body, cartoon pitchfork.",
+    "prompt": "Mythos Gates tactical battleground environment concept: Black Iron Court. An Infernal Dominion throne district of chains, volcanic glass, black iron, and royal violence where bargains become battlefield hazards. Hellfire chains are built into the court as suspended restraints, floor-groove winches, hooked pillars, and ember-lit chain channels. Dominion execution marks appear as old blood-dark verdict stones, cracked obsidian dais steps, ash pits, and throne-shadow sightlines, all physically part of the courtroom terrain. Ascension route canon overlay: depict Black-Iron Debt Descent through The Black-Iron Gate (Distortion Gate bound by contract clauses), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through contract devils, debt-marked prisoners; make route hazards visible as contract circles that tax every action, chains that attach to repeated mistakes. Include shrine/relic mood from Infernal Dominion restoration shrine, The Black-Iron Gate resonance shrine; treasure-room cues may include Blood-Wax Seal, Obsidian Debt Coin, Chain Clause Link. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into infernal architecture, no sci-fi. Faction Visual Bible: follow Infernal Dominion material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-007; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as hell, demonology, and infernal contract lore; Earth legend is the echo and The Infernal Dominion is the original. Show black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture.. Myth anchors include Hell/underworld: punishment dimension, abyss, descent, prison geography, Devils/demon kings: hierarchy, temptation, rulership, court violence, Contracts/Faustian bargains: debt, signatures, clauses, payment, Goetia/grimoires: seals, names, summoning law, constrained powers. Avoid red robot demon, generic Halloween devil, sci-fi cables, literal castle armor, block fortress body, cartoon pitchfork.",
     "negativePrompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, red robot demon, generic devil, block fortress body, literal castle armor, sci-fi cables, red robot demon, generic Halloween devil, sci-fi cables, literal castle armor, block fortress body, cartoon pitchfork, rubber horns, random pentagram spam, neon cyber hell, flat lava monster",
     "style": "Mythos Gates visual style",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-16",
-    "history": [],
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
     "terrainIntegration": "Terrain effects must be physical, lore-native battlefield features embedded in the map location, never glowing tactical tiles or UI overlays.",
-    "factionVisualBibleId": "TG-FVB-007"
+    "factionVisualBibleId": "TG-FVB-007",
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-007"
+      ],
+      "routeNames": [
+        "Black-Iron Debt Descent"
+      ],
+      "entryGates": [
+        "The Black-Iron Gate"
+      ],
+      "gateStates": [
+        "Distortion Gate bound by contract clauses"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-MAP-007",
@@ -1971,15 +2396,42 @@
     "category": "Map",
     "faction": "Aten Ra",
     "status": "ready",
-    "prompt": "Mythos Gates tactical battleground environment concept: Sacred Sun Temple Road. A processional Aten Ra temple road of gold stone, lion statues, incense braziers, and sun-baked steps leading toward a holy gate. Terrain danger is natural: blinding white stone plazas, heat-shimmering causeways, cracked altar channels, sand drift choke points, and statue shadows that create readable lanes. Sacred judgment is implied through scorched offering bowls, broken sun disks, and relief-carved warning paths through believable carved warnings and desert-worn stone boundaries. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects rooted in temple lore and desert light, no sci-fi. Faction Visual Bible: follow Aten Ra material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-001; faction canon must be visible in silhouette, materials, and posture. Canon premise: this place/character comes from the Solar Dominion of Khepra, the source culture humans later copied as Egyptian solar myth. Show Aten hand-rays, Ma’at geometry, Nile/Red Land duality, electrum, linen-light, faience, lapis, obsidian, scarab/lotus/papyrus/falcon/cobra/lion symbols only where mythically appropriate. Canon premise: this is the source culture humans later copied as Egyptian solar myth; Earth legend is the echo and the Solar Dominion of Khepra is the original.",
+    "prompt": "Mythos Gates tactical battleground environment concept: Sacred Sun Temple Road. A processional Aten Ra temple road of gold stone, lion statues, incense braziers, and sun-baked steps leading toward a holy gate. Terrain danger is natural: blinding white stone plazas, heat-shimmering causeways, cracked altar channels, sand drift choke points, and statue shadows that create readable lanes. Sacred judgment is implied through scorched offering bowls, broken sun disks, and relief-carved warning paths through believable carved warnings and desert-worn stone boundaries. Ascension route canon overlay: depict Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma’at strain), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through Hollow scale-thieves, Isfet-branded jackal guardians; make route hazards visible as Aten hand-rays that burn lies into visible brands, Ma’at scale fields that immobilize anything out of balance. Include shrine/relic mood from Aten Ra restoration shrine, The Sun-Scale Gate resonance shrine; treasure-room cues may include Ma’at Feather Shard, Faience Sun-Thread, Black Silt Memory Jar. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects rooted in temple lore and desert light, no sci-fi. Faction Visual Bible: follow Aten Ra material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-001; faction canon must be visible in silhouette, materials, and posture. Canon premise: this place/character comes from the Solar Dominion of Khepra, the source culture humans later copied as Egyptian solar myth. Show Aten hand-rays, Ma’at geometry, Nile/Red Land duality, electrum, linen-light, faience, lapis, obsidian, scarab/lotus/papyrus/falcon/cobra/lion symbols only where mythically appropriate. Canon premise: this is the source culture humans later copied as Egyptian solar myth; Earth legend is the echo and the Solar Dominion of Khepra is the original.",
     "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, robot armor, cube bodies, literal pyramid body, building windows, neon sci-fi, tourist pharaoh costume, generic Egyptian cosplay, readable glyph text, robot armor, sarcophagus robot",
     "style": "Mythos Gates mobile map style",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-16",
-    "history": [],
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
     "terrainIntegration": "Terrain effects must be physical, lore-native battlefield features embedded in the map location, never glowing tactical tiles or UI overlays.",
-    "factionVisualBibleId": "TG-FVB-001"
+    "factionVisualBibleId": "TG-FVB-001",
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-001"
+      ],
+      "routeNames": [
+        "Sun-Scale Verdict Descent"
+      ],
+      "entryGates": [
+        "The Sun-Scale Gate"
+      ],
+      "gateStates": [
+        "Stable Gate under Ma’at strain"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-MAP-008",
@@ -1988,15 +2440,42 @@
     "category": "Map",
     "faction": "Aten Ra",
     "status": "ready",
-    "prompt": "Mythos Gates tactical battleground environment concept: Mythos Gate Sun Throne. A monumental sun throne chamber where divine authority and Gate power meet. The battlefield is shaped by real architecture: high throne steps, collapsed gold-inlaid slabs, molten sunlight leaking through ceiling apertures, cracked ceremonial channels, fallen jackal and falcon statues, and heat-blackened judgment platforms. Hazard zones feel like sacred damage to the room itself, with physical sacred damage and readable architectural boundaries. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into throne-room lore, no sci-fi. Faction Visual Bible: follow Aten Ra material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-001; faction canon must be visible in silhouette, materials, and posture. Canon premise: this place/character comes from the Solar Dominion of Khepra, the source culture humans later copied as Egyptian solar myth. Show Aten hand-rays, Ma’at geometry, Nile/Red Land duality, electrum, linen-light, faience, lapis, obsidian, scarab/lotus/papyrus/falcon/cobra/lion symbols only where mythically appropriate. Canon premise: this is the source culture humans later copied as Egyptian solar myth; Earth legend is the echo and the Solar Dominion of Khepra is the original.",
+    "prompt": "Mythos Gates tactical battleground environment concept: Mythos Gate Sun Throne. A monumental sun throne chamber where divine authority and Gate power meet. The battlefield is shaped by real architecture: high throne steps, collapsed gold-inlaid slabs, molten sunlight leaking through ceiling apertures, cracked ceremonial channels, fallen jackal and falcon statues, and heat-blackened judgment platforms. Hazard zones feel like sacred damage to the room itself, with physical sacred damage and readable architectural boundaries. Ascension route canon overlay: depict Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma’at strain), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through Hollow scale-thieves, Isfet-branded jackal guardians; make route hazards visible as Aten hand-rays that burn lies into visible brands, Ma’at scale fields that immobilize anything out of balance. Include shrine/relic mood from Aten Ra restoration shrine, The Sun-Scale Gate resonance shrine; treasure-room cues may include Ma’at Feather Shard, Faience Sun-Thread, Black Silt Memory Jar. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into throne-room lore, no sci-fi. Faction Visual Bible: follow Aten Ra material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-001; faction canon must be visible in silhouette, materials, and posture. Canon premise: this place/character comes from the Solar Dominion of Khepra, the source culture humans later copied as Egyptian solar myth. Show Aten hand-rays, Ma’at geometry, Nile/Red Land duality, electrum, linen-light, faience, lapis, obsidian, scarab/lotus/papyrus/falcon/cobra/lion symbols only where mythically appropriate. Canon premise: this is the source culture humans later copied as Egyptian solar myth; Earth legend is the echo and the Solar Dominion of Khepra is the original.",
     "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, robot armor, cube bodies, literal pyramid body, building windows, neon sci-fi, tourist pharaoh costume, generic Egyptian cosplay, readable glyph text, robot armor, sarcophagus robot",
     "style": "Mythos Gates mobile map style",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-16",
-    "history": [],
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
     "terrainIntegration": "Terrain effects must be physical, lore-native battlefield features embedded in the map location, never glowing tactical tiles or UI overlays.",
-    "factionVisualBibleId": "TG-FVB-001"
+    "factionVisualBibleId": "TG-FVB-001",
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-001"
+      ],
+      "routeNames": [
+        "Sun-Scale Verdict Descent"
+      ],
+      "entryGates": [
+        "The Sun-Scale Gate"
+      ],
+      "gateStates": [
+        "Stable Gate under Ma’at strain"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-MAP-009",
@@ -2005,15 +2484,42 @@
     "category": "Map",
     "faction": "Kami",
     "status": "ready",
-    "prompt": "Mythos Gates tactical battleground environment concept: Foxfire Torii Road. A mythic road of red torii gates, old shrine stones, cedar roots, and foxfire lanterns winding through sacred dusk. Terrain effects appear as natural folklore: lantern smoke obscuring bends, moss-slick shrine steps, fallen torii beams as cover, fox tracks in ash, and blue-white foxfire gathered inside hanging lanterns and old spirit braziers through lantern placement, smoke, and shrine architecture. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects woven into shrine-road lore, no sci-fi. Faction Visual Bible: follow Kami material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-004; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as Japanese myth and Shinto shrine lore; Earth legend is the echo and The Sacred Kingdoms is the original. Show torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash.. Myth anchors include Kami: spirits, nature forces, ancestors, sacred qualities, Shinto shrine practice: torii thresholds, purification, offerings, shimenawa, shide, Kitsune/Inari echoes: foxfire, shapeshift, messengers, rice/abundance, Tengu: mountain wind, discipline, masks, feathers. Avoid anime mecha samurai, generic ninja, literal shrine body, plastic kimono costume, random kanji text, neon cyberpunk.",
+    "prompt": "Mythos Gates tactical battleground environment concept: Foxfire Torii Road. A mythic road of red torii gates, old shrine stones, cedar roots, and foxfire lanterns winding through sacred dusk. Terrain effects appear as natural folklore: lantern smoke obscuring bends, moss-slick shrine steps, fallen torii beams as cover, fox tracks in ash, and blue-white foxfire gathered inside hanging lanterns and old spirit braziers through lantern placement, smoke, and shrine architecture. Ascension route canon overlay: depict Torii-Moon Mirror Road through The Torii-Moon Gate (Distortion Gate with ritual rerouting), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through foxfire doubles, impure shrine shades; make route hazards visible as torii gates that reroute space when crossed without rite, purification streams that burn corruption and lies. Include shrine/relic mood from Kami restoration shrine, The Torii-Moon Gate resonance shrine; treasure-room cues may include Shimenawa Knot Seal, Foxfire Lantern Core, Moon-Mirror Shard. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects woven into shrine-road lore, no sci-fi. Faction Visual Bible: follow Kami material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-004; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as Japanese myth and Shinto shrine lore; Earth legend is the echo and The Sacred Kingdoms is the original. Show torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash.. Myth anchors include Kami: spirits, nature forces, ancestors, sacred qualities, Shinto shrine practice: torii thresholds, purification, offerings, shimenawa, shide, Kitsune/Inari echoes: foxfire, shapeshift, messengers, rice/abundance, Tengu: mountain wind, discipline, masks, feathers. Avoid anime mecha samurai, generic ninja, literal shrine body, plastic kimono costume, random kanji text, neon cyberpunk.",
     "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, mecha samurai, anime robot, literal shrine body, block torii stack, generic ninja, anime mecha samurai, generic ninja, literal shrine body, plastic kimono costume, random kanji text, neon cyberpunk, cute mascot fox, oversized manga weapon, sci-fi armor, flat mask with no spirit function",
     "style": "Mythos Gates mobile map style",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-16",
-    "history": [],
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
     "terrainIntegration": "Terrain effects must be physical, lore-native battlefield features embedded in the map location, never glowing tactical tiles or UI overlays.",
-    "factionVisualBibleId": "TG-FVB-004"
+    "factionVisualBibleId": "TG-FVB-004",
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-004"
+      ],
+      "routeNames": [
+        "Torii-Moon Mirror Road"
+      ],
+      "entryGates": [
+        "The Torii-Moon Gate"
+      ],
+      "gateStates": [
+        "Distortion Gate with ritual rerouting"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-MAP-010",
@@ -2022,15 +2528,42 @@
     "category": "Map",
     "faction": "Kami",
     "status": "ready",
-    "prompt": "Mythos Gates tactical battleground environment concept: Mirror Lake Sanctum. A quiet sanctum of black water, marble stepping stones, reeds, moon bridges, and mirrored shrine walls where reflection becomes danger. Terrain effects are natural: shallow reflective water that distorts footing, cracked stepping stones, reed beds forming soft cover, submerged statues, and moonlit reflections that imply false paths without artificial glow. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects born from water, reflection, and sanctum lore, no sci-fi. Faction Visual Bible: follow Kami material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-004; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as Japanese myth and Shinto shrine lore; Earth legend is the echo and The Sacred Kingdoms is the original. Show torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash.. Myth anchors include Kami: spirits, nature forces, ancestors, sacred qualities, Shinto shrine practice: torii thresholds, purification, offerings, shimenawa, shide, Kitsune/Inari echoes: foxfire, shapeshift, messengers, rice/abundance, Tengu: mountain wind, discipline, masks, feathers. Avoid anime mecha samurai, generic ninja, literal shrine body, plastic kimono costume, random kanji text, neon cyberpunk.",
+    "prompt": "Mythos Gates tactical battleground environment concept: Mirror Lake Sanctum. A quiet sanctum of black water, marble stepping stones, reeds, moon bridges, and mirrored shrine walls where reflection becomes danger. Terrain effects are natural: shallow reflective water that distorts footing, cracked stepping stones, reed beds forming soft cover, submerged statues, and moonlit reflections that imply false paths without artificial glow. Ascension route canon overlay: depict Torii-Moon Mirror Road through The Torii-Moon Gate (Distortion Gate with ritual rerouting), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through foxfire doubles, impure shrine shades; make route hazards visible as torii gates that reroute space when crossed without rite, purification streams that burn corruption and lies. Include shrine/relic mood from Kami restoration shrine, The Torii-Moon Gate resonance shrine; treasure-room cues may include Shimenawa Knot Seal, Foxfire Lantern Core, Moon-Mirror Shard. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects born from water, reflection, and sanctum lore, no sci-fi. Faction Visual Bible: follow Kami material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-004; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as Japanese myth and Shinto shrine lore; Earth legend is the echo and The Sacred Kingdoms is the original. Show torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash.. Myth anchors include Kami: spirits, nature forces, ancestors, sacred qualities, Shinto shrine practice: torii thresholds, purification, offerings, shimenawa, shide, Kitsune/Inari echoes: foxfire, shapeshift, messengers, rice/abundance, Tengu: mountain wind, discipline, masks, feathers. Avoid anime mecha samurai, generic ninja, literal shrine body, plastic kimono costume, random kanji text, neon cyberpunk.",
     "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, mecha samurai, anime robot, literal shrine body, block torii stack, generic ninja, anime mecha samurai, generic ninja, literal shrine body, plastic kimono costume, random kanji text, neon cyberpunk, cute mascot fox, oversized manga weapon, sci-fi armor, flat mask with no spirit function",
     "style": "Mythos Gates mobile map style",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-16",
-    "history": [],
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
     "terrainIntegration": "Terrain effects must be physical, lore-native battlefield features embedded in the map location, never glowing tactical tiles or UI overlays.",
-    "factionVisualBibleId": "TG-FVB-004"
+    "factionVisualBibleId": "TG-FVB-004",
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-004"
+      ],
+      "routeNames": [
+        "Torii-Moon Mirror Road"
+      ],
+      "entryGates": [
+        "The Torii-Moon Gate"
+      ],
+      "gateStates": [
+        "Distortion Gate with ritual rerouting"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-MAP-011",
@@ -2039,15 +2572,42 @@
     "category": "Map",
     "faction": "Empyrean",
     "status": "ready",
-    "prompt": "Mythos Gates tactical battleground environment concept: Choir Vault Ascent. A cathedral-like ascent of bone-white arches, suspended bells, carved choir galleries, and steep sanctified stairs. Terrain pressure appears through real sacred architecture: resonant bell platforms, cracked hymn-inscribed steps, fallen choir screens, echoing vault shadows, and wind from high apertures carrying dust through safe and dangerous lanes. Sonic danger is implied by shattered stone, trembling candles, and broken glass mosaics, through physical stone damage and lore-readable architecture. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into vault lore, no sci-fi. Faction Visual Bible: follow Empyrean material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-006; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as angelic and heavenly lore; Earth legend is the echo and The Radiant Hierarchies is the original. Show white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.. Myth anchors include Seraphim: burning praise, purification flame, six-wing intensity, Cherubim: guardianship, threshold keeping, many-faced awe, Ophanim: wheels within wheels, eyes, impossible motion, Thrones: living judgement seats, authority embodied. Avoid robot angel, spaceship armor, generic church costume, literal cathedral body, block tower silhouette, neon sci-fi aura.",
+    "prompt": "Mythos Gates tactical battleground environment concept: Choir Vault Ascent. A cathedral-like ascent of bone-white arches, suspended bells, carved choir galleries, and steep sanctified stairs. Terrain pressure appears through real sacred architecture: resonant bell platforms, cracked hymn-inscribed steps, fallen choir screens, echoing vault shadows, and wind from high apertures carrying dust through safe and dangerous lanes. Sonic danger is implied by shattered stone, trembling candles, and broken glass mosaics, through physical stone damage and lore-readable architecture. Ascension route canon overlay: depict Choir-Vault Discord Ascent through The Choir-Vault Gate (Wound Gate leaking memory-burning radiance), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through discordant choir husks, memory-burned cherub guardians; make route hazards visible as choir notes that immobilize discordant beings, seraph flame that burns corruption and memory alike. Include shrine/relic mood from Empyrean restoration shrine, The Choir-Vault Gate resonance shrine; treasure-room cues may include Bell-Metal Aura Link, Seraph Ash Seal, Ophanim Eye Shard. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into vault lore, no sci-fi. Faction Visual Bible: follow Empyrean material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-006; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as angelic and heavenly lore; Earth legend is the echo and The Radiant Hierarchies is the original. Show white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.. Myth anchors include Seraphim: burning praise, purification flame, six-wing intensity, Cherubim: guardianship, threshold keeping, many-faced awe, Ophanim: wheels within wheels, eyes, impossible motion, Thrones: living judgement seats, authority embodied. Avoid robot angel, spaceship armor, generic church costume, literal cathedral body, block tower silhouette, neon sci-fi aura.",
     "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, robot angel, spaceship armor, literal cathedral body, block tower silhouette, neon sci-fi aura, robot angel, spaceship armor, generic church costume, literal cathedral body, block tower silhouette, neon sci-fi aura, cute cherub baby, flat white statue, readable Bible text, mechanical drone wings",
     "style": "Mythos Gates mobile map style",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-16",
-    "history": [],
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
     "terrainIntegration": "Terrain effects must be physical, lore-native battlefield features embedded in the map location, never glowing tactical tiles or UI overlays.",
-    "factionVisualBibleId": "TG-FVB-006"
+    "factionVisualBibleId": "TG-FVB-006",
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-006"
+      ],
+      "routeNames": [
+        "Choir-Vault Discord Ascent"
+      ],
+      "entryGates": [
+        "The Choir-Vault Gate"
+      ],
+      "gateStates": [
+        "Wound Gate leaking memory-burning radiance"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-MAP-012",
@@ -2056,15 +2616,42 @@
     "category": "Map",
     "faction": "Empyrean",
     "status": "ready",
-    "prompt": "Mythos Gates tactical battleground environment concept: Obsidian River Crossing. A dangerous crossing through a mythic black-glass riverbed, basalt banks, bone markers, and half-submerged relic bridges. Terrain effects are physical: slick obsidian shallows, steam vents, broken stepping stones, jagged basalt cover, ash-mud edges, and old ferry chains shaping movement. The river’s curse is shown through scorched offerings, cracked black reflections, and naturally hazardous footing through believable physical footing and river hazards. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects rooted in river-crossing lore, no sci-fi. Faction Visual Bible: follow Empyrean material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-006; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as angelic and heavenly lore; Earth legend is the echo and The Radiant Hierarchies is the original. Show white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.. Myth anchors include Seraphim: burning praise, purification flame, six-wing intensity, Cherubim: guardianship, threshold keeping, many-faced awe, Ophanim: wheels within wheels, eyes, impossible motion, Thrones: living judgement seats, authority embodied. Avoid robot angel, spaceship armor, generic church costume, literal cathedral body, block tower silhouette, neon sci-fi aura.",
+    "prompt": "Mythos Gates tactical battleground environment concept: Obsidian River Crossing. A dangerous crossing through a mythic black-glass riverbed, basalt banks, bone markers, and half-submerged relic bridges. Terrain effects are physical: slick obsidian shallows, steam vents, broken stepping stones, jagged basalt cover, ash-mud edges, and old ferry chains shaping movement. The river’s curse is shown through scorched offerings, cracked black reflections, and naturally hazardous footing through believable physical footing and river hazards. Ascension route canon overlay: depict Choir-Vault Discord Ascent through The Choir-Vault Gate (Wound Gate leaking memory-burning radiance), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through discordant choir husks, memory-burned cherub guardians; make route hazards visible as choir notes that immobilize discordant beings, seraph flame that burns corruption and memory alike. Include shrine/relic mood from Empyrean restoration shrine, The Choir-Vault Gate resonance shrine; treasure-room cues may include Bell-Metal Aura Link, Seraph Ash Seal, Ophanim Eye Shard. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects rooted in river-crossing lore, no sci-fi. Faction Visual Bible: follow Empyrean material hierarchy, armor shape language, symbols, texture rules, and avoid list from TG-FVB-006; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as angelic and heavenly lore; Earth legend is the echo and The Radiant Hierarchies is the original. Show white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.. Myth anchors include Seraphim: burning praise, purification flame, six-wing intensity, Cherubim: guardianship, threshold keeping, many-faced awe, Ophanim: wheels within wheels, eyes, impossible motion, Thrones: living judgement seats, authority embodied. Avoid robot angel, spaceship armor, generic church costume, literal cathedral body, block tower silhouette, neon sci-fi aura.",
     "negativePrompt": "low resolution, blurry, unreadable UI, broken perspective, flat terrain, sci-fi guns, modern city, watermark, logo, malformed text, cropped HUD, cluttered composition, photorealistic screenshot, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, robot angel, spaceship armor, literal cathedral body, block tower silhouette, neon sci-fi aura, robot angel, spaceship armor, generic church costume, literal cathedral body, block tower silhouette, neon sci-fi aura, cute cherub baby, flat white statue, readable Bible text, mechanical drone wings",
     "style": "Mythos Gates mobile map style",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-16",
-    "history": [],
+    "updated": "2026-08-17",
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ],
     "terrainIntegration": "Terrain effects must be physical, lore-native battlefield features embedded in the map location, never glowing tactical tiles or UI overlays.",
-    "factionVisualBibleId": "TG-FVB-006"
+    "factionVisualBibleId": "TG-FVB-006",
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-006"
+      ],
+      "routeNames": [
+        "Choir-Vault Discord Ascent"
+      ],
+      "entryGates": [
+        "The Choir-Vault Gate"
+      ],
+      "gateStates": [
+        "Wound Gate leaking memory-burning radiance"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    }
   },
   {
     "id": "TG-PROMPT-NPC-001",
@@ -2191,7 +2778,12 @@
     "version": 1,
     "created": "2026-08-10",
     "updated": "2026-08-16",
-    "history": []
+    "history": [],
+    "ascensionRouteArtCanon": {
+      "status": "COMPATIBLE_WITH_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "note": "Hollow/corruption language remains compatible with route pressure; no route-specific rewrite required."
+    }
   },
   {
     "category": "FactionScreen",
@@ -2199,13 +2791,13 @@
     "status": "PROMPT_READY",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-10",
+    "updated": "2026-08-17",
     "style": "Polished 2D/2.5D mobile fantasy strategy game digital painting, high contrast, dramatic gold sunlight, readable mobile UI, sharp silhouettes, premium gacha RPG presentation.",
     "negativePrompt": "low resolution, blurry, bad anatomy, unreadable text, broken UI, extra currencies, misplaced HUD, cropped mission bar, inconsistent perspective, flat terrain, photorealism, sci-fi weapons, modern buildings, watermark, logo, duplicated portraits, malformed hands, cluttered button labels",
     "id": "TG-PROMPT-SCREEN-ATENRA-CAMPAIGN-MAP",
     "name": "Aten Ra Campaign Map Overview — Helio-Kemet Sun Realm",
     "screenType": "Campaign Map Overview",
-    "prompt": "Vertical mobile game campaign map overview for Mythos Gates: Ascension, faction Aten Ra / Helio-Kemet Sun Realm. Preserve the exact layout and UI structure of the supplied Campaign Map Overview reference: ornate chapter banner fixed top-left with small text CHAPTER TITLE and large title HELIO-KEMET SUN REALM, top-right currency bar showing 1.5M gold, 2340 blue gems, 89/90 lightning energy, and player avatar button, far-left vertical MISSION PROGRESS BAR 4/5 filled to the same height. Environment is an S-shaped winding path of glowing dotted milestone nodes ascending multi-tier desert temple platforms. The biome is golden solar desert, white-hot sun, Egyptian-inspired pyramids, sandstone terraces, turquoise oasis pools, black obsidian corruption veins, radiant hieroglyphic monuments, and a massive Aten Ra deity Gate at the mountain peak. Place five detailed mission thumbnails along the path: Mission 1 Sacred Sun Temple at bottom with green checkmark and three star slots, Mission 2 Corrupted Desert Ruins on lower-middle ruins with three star slots, Mission 3 River of Light Stronghold beside luminous river bridge with two filled stars, Mission 4 Ascent of the Gate on mid-upper obsidian stairs with dark silhouette figure and one filled star, Mission 5 The Mythos Gate near peak boss portal with dark boss silhouette, BOSS badge, CHAS badge, three star slots, and Challenge button. Use deep gold, turquoise, sand, ivory, and violet-shadow corruption palette. High readability, strong mobile composition, cinematic light rays, crisp fantasy UI bevels, no extra screens.",
+    "prompt": "Vertical mobile game campaign map overview for Mythos Gates: Ascension, faction Aten Ra / Helio-Kemet Sun Realm. Preserve the exact layout and UI structure of the supplied Campaign Map Overview reference: ornate chapter banner fixed top-left with small text CHAPTER TITLE and large title HELIO-KEMET SUN REALM, top-right currency bar showing 1.5M gold, 2340 blue gems, 89/90 lightning energy, and player avatar button, far-left vertical MISSION PROGRESS BAR 4/5 filled to the same height. Environment is an S-shaped winding path of glowing dotted milestone nodes ascending multi-tier desert temple platforms. The biome is golden solar desert, white-hot sun, Egyptian-inspired pyramids, sandstone terraces, turquoise oasis pools, black obsidian corruption veins, radiant hieroglyphic monuments, and a massive Aten Ra deity Gate at the mountain peak. Place five detailed mission thumbnails along the path: Mission 1 Sacred Sun Temple at bottom with green checkmark and three star slots, Mission 2 Corrupted Desert Ruins on lower-middle ruins with three star slots, Mission 3 River of Light Stronghold beside luminous river bridge with two filled stars, Mission 4 Ascent of the Gate on mid-upper obsidian stairs with dark silhouette figure and one filled star, Mission 5 The Mythos Gate near peak boss portal with dark boss silhouette, BOSS badge, CHAS badge, three star slots, and Challenge button. Use deep gold, turquoise, sand, ivory, and violet-shadow corruption palette. High readability, strong mobile composition, cinematic light rays, crisp fantasy UI bevels, no extra screens. Ascension route canon overlay: depict Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma’at strain), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through Hollow scale-thieves, Isfet-branded jackal guardians; make route hazards visible as Aten hand-rays that burn lies into visible brands, Ma’at scale fields that immobilize anything out of balance. Include shrine/relic mood from Aten Ra restoration shrine, The Sun-Scale Gate resonance shrine; treasure-room cues may include Ma’at Feather Shard, Faience Sun-Thread, Black Silt Memory Jar. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain.",
     "uiLockedElements": [
       "Top-left ornate chapter banner",
       "Top-right currency and avatar bar",
@@ -2215,7 +2807,35 @@
       "Dark silhouettes on Nodes 4 and 5",
       "Three star slots beneath each node"
     ],
-    "layoutReference": "image_0.png Campaign Map Overview"
+    "layoutReference": "image_0.png Campaign Map Overview",
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-001"
+      ],
+      "routeNames": [
+        "Sun-Scale Verdict Descent"
+      ],
+      "entryGates": [
+        "The Sun-Scale Gate"
+      ],
+      "gateStates": [
+        "Stable Gate under Ma’at strain"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    },
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
+    ]
   },
   {
     "category": "FactionScreen",
@@ -2223,13 +2843,13 @@
     "status": "PROMPT_READY",
     "version": 1,
     "created": "2026-08-10",
-    "updated": "2026-08-10",
+    "updated": "2026-08-17",
     "style": "Polished 2D/2.5D mobile fantasy strategy game digital painting, high contrast, dramatic gold sunlight, readable mobile UI, sharp silhouettes, premium gacha RPG presentation.",
     "negativePrompt": "low resolution, blurry, bad anatomy, unreadable text, broken UI, extra currencies, misplaced HUD, cropped mission bar, inconsistent perspective, flat terrain, photorealism, sci-fi weapons, modern buildings, watermark, logo, duplicated portraits, malformed hands, cluttered button labels",
     "id": "TG-PROMPT-SCREEN-ATENRA-TACTICAL-BATTLE",
     "name": "Aten Ra Tactical Battle Map — The Mythos Gate",
     "screenType": "Tactical Battle Map",
-    "prompt": "Vertical mobile game tactical battle screen for Mythos Gates: Ascension, faction Aten Ra / Helio-Kemet Sun Realm. Preserve the exact perspective, multi-tier S-shaped elevation grid, UI positions, and tactical readability of the supplied Tactical Battle Map reference. Environment is an isometric 3D/2.5D battlefield of stacked sandstone temple platforms connected by stairs, glowing turquoise river channels, golden sun tiles, broken obelisks, black obsidian corruption cracks, and a massive solar Mythos Gate portal at the top peak. Foreground bottom-left/bottom-center: two distinct hero units standing on glowing grid tiles in the same pose relationship as the reference: Aten-Ra the Solar Law Monolith, armored golden pharaoh deity with sun disk spear and shield; River-Queen Meret-Nile, blue-and-gold priestess hero with flowing water veil and ankh staff. Mid-ground and upper tiers: Aten Ra corrupted desert enemies, jackal sentries, scarab drones, obsidian cultists, and winged solar guardian enemies positioned along stairs/platforms. Boss Gate at the peak contains a dark faction-specific boss silhouette inside a radiant gold-violet portal. UI overlays strictly preserve positions: top-left portrait stack and health bars labeled Aten-Ra LV 14 HP 1850/1850 and River-Queen LV 14 HP 1520/1520, top-middle turn counter TURN 8 / PLAYER PHASE, top-right mini-map tracking the S-shaped layout, bottom-center action bar with four buttons Attack, Defend, Sunflare, River's Blessing, bottom-left settings gear, bottom-right menu and profile icons. Use polished 2D/2.5D digital painting, dramatic storm clouds behind blazing sun gate, crisp grid highlights, readable tactical silhouettes, high-contrast gold/turquoise/violet palette.",
+    "prompt": "Vertical mobile game tactical battle screen for Mythos Gates: Ascension, faction Aten Ra / Helio-Kemet Sun Realm. Preserve the exact perspective, multi-tier S-shaped elevation grid, UI positions, and tactical readability of the supplied Tactical Battle Map reference. Environment is an isometric 3D/2.5D battlefield of stacked sandstone temple platforms connected by stairs, glowing turquoise river channels, golden sun tiles, broken obelisks, black obsidian corruption cracks, and a massive solar Mythos Gate portal at the top peak. Foreground bottom-left/bottom-center: one selected deity unit standing on glowing grid tiles in the same pose relationship as the reference: Aten Ra, the selected Solar Law King, armored in electrum sun authority with sun-disk spear and shield. Mid-ground and upper tiers: Aten Ra corrupted desert enemies, jackal sentries, scarab drones, obsidian cultists, and winged solar guardian enemies positioned along stairs/platforms. Boss Gate at the peak contains a dark faction-specific boss silhouette inside a radiant gold-violet portal. UI overlays strictly preserve positions: top-left portrait stack and health bars labeled Aten-Ra LV 14 HP 1850/1850 and River-Queen LV 14 HP 1520/1520, top-middle turn counter TURN 8 / PLAYER PHASE, top-right mini-map tracking the S-shaped layout, bottom-center action bar with four buttons Attack, Defend, Sunflare, River's Blessing, bottom-left settings gear, bottom-right menu and profile icons. Use polished 2D/2.5D digital painting, dramatic storm clouds behind blazing sun gate, crisp grid highlights, readable tactical silhouettes, high-contrast gold/turquoise/violet palette. Ascension route canon overlay: depict Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma’at strain), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through Hollow scale-thieves, Isfet-branded jackal guardians; make route hazards visible as Aten hand-rays that burn lies into visible brands, Ma’at scale fields that immobilize anything out of balance. Include shrine/relic mood from Aten Ra restoration shrine, The Sun-Scale Gate resonance shrine; treasure-room cues may include Ma’at Feather Shard, Faience Sun-Thread, Black Silt Memory Jar. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain.",
     "uiLockedElements": [
       "Top-left hero portraits and HP bars",
       "Top-middle TURN 8 / PLAYER PHASE",
@@ -2247,6 +2867,34 @@
     "abilities": [
       "Sunflare",
       "River's Blessing"
+    ],
+    "ascensionRouteArtCanon": {
+      "status": "MATCHES_ASCENSION_ROUTE_CANON",
+      "updated": "2026-08-17",
+      "routeIds": [
+        "MG-DUNGEON-ROUTE-001"
+      ],
+      "routeNames": [
+        "Sun-Scale Verdict Descent"
+      ],
+      "entryGates": [
+        "The Sun-Scale Gate"
+      ],
+      "gateStates": [
+        "Stable Gate under Ma’at strain"
+      ],
+      "activePlayableDeities": 1,
+      "runFraming": "one selected deity enters the route alone against multiple enemies",
+      "requiresHollowPressure": true,
+      "requiresPhysicalGateLaw": true,
+      "noOldMultiUnitFraming": true,
+      "noSciFiOrUiGridTerrain": true
+    },
+    "history": [
+      {
+        "date": "2026-08-17",
+        "note": "Aligned prompt to Ascension dungeon route canon."
+      }
     ]
   },
   {
