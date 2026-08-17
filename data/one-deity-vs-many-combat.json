@@ -1,0 +1,95 @@
+{
+  "id": "TG-COMBAT-CONTRACT-001",
+  "version": "1.0.0",
+  "primaryRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+  "combatLoop": [
+    "1 Titan vs. Multiple Enemies",
+    "Exploration → Encounter → Tactical Combat → Reward → Next Zone"
+  ],
+  "forbiddenSystems": [
+    "squad combat",
+    "team formations",
+    "multiple player-controlled Titans",
+    "ally positioning",
+    "team turns"
+  ],
+  "enemyGroupDesign": {
+    "roles": [
+      "melee attackers",
+      "ranged attackers",
+      "fast enemies",
+      "support enemies",
+      "elite enemies",
+      "bosses"
+    ],
+    "antiPattern": "No inflated health-pool difficulty — enemies should threaten via positioning, abilities, and numbers, not bloated HP",
+    "creatureRoleMapping": {
+      "SWARMER": "fast enemies",
+      "BRUTE": "melee attackers",
+      "HUNTER": "ranged attackers",
+      "CONTROLLER": "support enemies",
+      "DISRUPTOR": "support enemies",
+      "GUARDIAN": "melee attackers",
+      "ELITE": "elite enemies",
+      "CHAMPION": "elite enemies",
+      "EXECUTIONER": "bosses"
+    }
+  },
+  "scalingBands": [
+    {
+      "band": "EARLY",
+      "enemyCountRange": [4, 6],
+      "eliteChance": 0.0,
+      "bossChance": 0.0
+    },
+    {
+      "band": "MID",
+      "enemyCountRange": [5, 8],
+      "eliteChance": 0.15,
+      "bossChance": 0.0
+    },
+    {
+      "band": "LATE",
+      "enemyCountRange": [6, 10],
+      "eliteChance": 0.25,
+      "bossChance": 0.1
+    },
+    {
+      "band": "BOSS",
+      "enemyCountRange": [1, 3],
+      "eliteChance": 0.0,
+      "bossChance": 1.0
+    }
+  ],
+  "firstPrototype": {
+    "sourceMissionId": "TG-F01-C01-M01",
+    "requiredDemonstration": [
+      "Exploration",
+      "Encounter trigger",
+      "Combat transition",
+      "Multiple enemies",
+      "Titan AoE attacks",
+      "Tactical movement",
+      "Enemy AI",
+      "Divine Abilities",
+      "Victory",
+      "Rewards",
+      "Divine Ascension",
+      "Gear improvement",
+      "Return to exploration"
+    ]
+  },
+  "powerProgression": {
+    "visibleGameplayOutcomes": [
+      "larger AoE coverage",
+      "shorter cooldowns",
+      "group clear speed improves"
+    ]
+  },
+  "dungeonCrawlerIntegration": {
+    "zoneTransition": "Combat resolves → rewards → return to exploration → next zone",
+    "roomModel": "Each mission is a dungeon room/zone with its own encounter table",
+    "encounterTrigger": "Enemies spawn when deity enters zone trigger area",
+    "explorationPhase": "Between encounters, deity moves through zone terrain without combat active"
+  }
+}
