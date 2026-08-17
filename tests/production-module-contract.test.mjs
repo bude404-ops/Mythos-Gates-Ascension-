@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { soloBattle, economy } from '../src/gameplay/index.mjs';
+import { soloBattle, economy, platform } from '../src/gameplay/index.mjs';
 import { loadSourceDataset, buildContentLookup, validateContract } from '../src/data-loaders/index.mjs';
 import { summarizeBattleState, summarizeEconomyState } from '../src/ui/index.mjs';
 import { productionGateManifest } from '../src/tools/production-gate-manifest.mjs';
@@ -16,6 +16,11 @@ economy.migratePlayerEconomy(player);
 const energy = economy.consumeEnergy(player, 'campaign');
 assert.equal(energy.ok, true);
 assert.ok(summarizeEconomyState(player).energy.amount < summarizeEconomyState(player).energy.max);
+
+let platformState = platform.createPlatformProfile({ playerId: 'TG-QA-PLAYER', starterTitanId: 'TG-TITAN-003' });
+platformState = platform.completeMission(platformState, 'TG-F01-C01-M01', { accountXp: 20, currencies: { sunshards: 10 } });
+assert.equal(platform.validatePlatformState(platformState).ok, true);
+assert.equal(platform.platformSummary(platformState).completedMissions, 1);
 
 const dataset = loadSourceDataset({ includeMissions: false });
 const lookup = buildContentLookup(dataset);

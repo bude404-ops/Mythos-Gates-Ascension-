@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Titan Gates Platform Core Contract",
+  "type": "object",
+  "required": [
+    "id",
+    "schema",
+    "status",
+    "version",
+    "purpose",
+    "rules",
+    "defaultPlayer",
+    "requiredPlatformEvents",
+    "validation"
+  ],
+  "properties": {
+    "id": {
+      "const": "TG-PLATFORM-CORE-V1"
+    },
+    "schema": {
+      "const": "TG_PLATFORM_CORE_CONTRACT_V1"
+    },
+    "status": {
+      "enum": [
+        "IMPLEMENTED",
+        "PLANNED"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+-[a-z0-9-]+$"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 30
+    },
+    "rules": {
+      "type": "object"
+    },
+    "defaultPlayer": {
+      "type": "object",
+      "required": [
+        "playerId",
+        "displayName",
+        "starterTitanId",
+        "startingCurrencies"
+      ],
+      "properties": {
+        "playerId": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "starterTitanId": {
+          "type": "string"
+        },
+        "startingCurrencies": {
+          "type": "object"
+        }
+      }
+    },
+    "requiredPlatformEvents": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "validation": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

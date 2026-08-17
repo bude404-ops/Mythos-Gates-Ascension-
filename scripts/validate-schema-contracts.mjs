@@ -23,6 +23,11 @@ const contracts = [
     name: 'canon-version-manifest',
     schemaPath: 'schemas/canon-version-manifest.schema.json',
     records: [JSON.parse(fs.readFileSync('data/canon-version-manifest.json', 'utf8'))]
+  },
+  {
+    name: 'platform-core',
+    schemaPath: 'schemas/platform-core.schema.json',
+    records: [JSON.parse(fs.readFileSync('data/platform-core-contract.json', 'utf8'))]
   }
 ];
 

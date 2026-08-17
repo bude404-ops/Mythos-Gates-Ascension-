@@ -2,8 +2,8 @@
   "id": "TG-CANON-VERSION-MANIFEST-001",
   "schema": "TG_CANON_VERSION_MANIFEST_V1",
   "status": "ACTIVE",
-  "currentCanonVersion": "1.8.1-canon-versioning-policy",
-  "updated": "2026-08-16T22:30:00Z",
+  "currentCanonVersion": "1.9.0-platform-core-v1",
+  "updated": "2026-08-16T23:10:00Z",
   "policyRef": "docs/production/DATA_MIGRATION_VERSIONING.md",
   "sourceOfTruth": "Git commit history plus this manifest. Runtime adapters consume migrated canonical data; they do not invent canon.",
   "rules": {
@@ -130,6 +130,26 @@
       "validation": [
         "npm run validate:migrations",
         "npm run test:migration-contracts",
+        "npm run precommit:verify"
+      ]
+    },
+    {
+      "id": "TG-MIG-005",
+      "fromVersion": "1.8.1-canon-versioning-policy",
+      "toVersion": "1.9.0-platform-core-v1",
+      "type": "RUNTIME_PROJECTION",
+      "status": "APPLIED",
+      "owner": "Platform Director",
+      "summary": "Added Platform Core v1 for player profiles, save continuity, roster ownership, progression, inventory, currency ledger, and local deterministic platform service.",
+      "affectedData": [
+        "data/platform-core-contract.json",
+        "src/platform/platform-core.mjs",
+        "scripts/validate-platform-core.mjs",
+        "tests/platform-core-contract.test.mjs"
+      ],
+      "validation": [
+        "npm run validate:platform-core",
+        "npm run test:platform-core",
         "npm run precommit:verify"
       ]
     }

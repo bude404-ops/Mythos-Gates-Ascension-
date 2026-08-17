@@ -10,7 +10,7 @@
     "build": "npm run index && npm run validate && node scripts/build-pages.mjs",
     "test": "npm run build",
     "sync:github": "node scripts/sync-github.mjs",
-    "precommit:verify": "npm run audit:continuity && npm run audit:aaa-structure && npm run validate:schemas && npm run test:production-modules && npm run validate:engine-adapters && npm run test:engine-adapters && npm run validate:migrations && npm run test:migration-contracts && npm run build && npm run index:check && npm run test:command-hub:stable && npm run test:playable-battle-ui && node scripts/visual-qa-smoke.mjs && npm run assets:verify && node scripts/validate-3d-blueprints.mjs && npm run test:solo-battle && npm run test:solo-vertical-slice && npm run test:battlefield-telemetry && npm run test:battlefield-runtime && npm run test:campaign-playflow && npm run test:async-arena && npm run test:creature-behavior && npm run validate:external-ai-packets && node scripts/secret-scan.mjs",
+    "precommit:verify": "npm run audit:continuity && npm run audit:aaa-structure && npm run validate:schemas && npm run test:production-modules && npm run validate:engine-adapters && npm run test:engine-adapters && npm run validate:migrations && npm run test:migration-contracts && npm run validate:platform-core && npm run test:platform-core && npm run test:command-hub:stable && npm run build && npm run index:check && npm run test:playable-battle-ui && node scripts/visual-qa-smoke.mjs && npm run assets:verify && node scripts/validate-3d-blueprints.mjs && npm run test:solo-battle && npm run test:solo-vertical-slice && npm run test:battlefield-telemetry && npm run test:battlefield-runtime && npm run test:campaign-playflow && npm run test:async-arena && npm run test:creature-behavior && npm run validate:external-ai-packets && node scripts/secret-scan.mjs",
     "index:check": "node scripts/check-index-fresh.mjs",
     "audit:continuity": "node scripts/audit-continuity-balance.mjs",
     "audit:aaa-structure": "node scripts/audit-aaa-structure.mjs",
@@ -20,7 +20,7 @@
     "test:campaign-playflow": "node scripts/test-campaign-playflow.mjs",
     "test:async-arena": "node scripts/test-async-arena-snapshots.mjs",
     "test:command-hub": "node scripts/test-command-hub.mjs",
-    "test:command-hub:stable": "npm run test:command-hub || npm run test:command-hub",
+    "test:command-hub:stable": "node scripts/run-stable-command-hub.mjs",
     "test:playable-battle-ui": "node scripts/test-playable-battle-ui.mjs",
     "test:creature-behavior": "node scripts/test-creature-behavior-runtime.mjs",
     "test:battlefield-runtime": "node scripts/test-battlefield-runtime.mjs",
@@ -45,7 +45,9 @@
     "validate:engine-adapters": "node scripts/validate-engine-adapters.mjs",
     "test:engine-adapters": "node tests/engine-adapter-contract.test.mjs",
     "validate:migrations": "node scripts/validate-data-migrations.mjs",
-    "test:migration-contracts": "node tests/data-migration-contract.test.mjs"
+    "test:migration-contracts": "node tests/data-migration-contract.test.mjs",
+    "validate:platform-core": "node scripts/validate-platform-core.mjs",
+    "test:platform-core": "node tests/platform-core-contract.test.mjs"
   },
   "engines": {
     "node": ">=20"

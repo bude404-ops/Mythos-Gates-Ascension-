@@ -29,10 +29,17 @@ const requiredFiles = [
   'docs/production/DATA_MIGRATION_VERSIONING.md',
   'scripts/validate-data-migrations.mjs',
   'tests/data-migration-contract.test.mjs',
+  'data/platform-core-contract.json',
+  'schemas/platform-core.schema.json',
+  'scripts/validate-platform-core.mjs',
+  'scripts/run-stable-command-hub.mjs',
+  'tests/platform-core-contract.test.mjs',
   'src/README.md',
   'src/gameplay/index.mjs',
   'src/gameplay/solo-battle/index.mjs',
   'src/gameplay/economy/index.mjs',
+  'src/platform/index.mjs',
+  'src/platform/platform-core.mjs',
   'src/data-loaders/index.mjs',
   'src/data-loaders/content-loader.mjs',
   'src/data-loaders/schema-contracts.mjs',
@@ -120,7 +127,8 @@ const schemas = [
   'schemas/economy.schema.json',
   'schemas/telemetry-contract.schema.json',
   'schemas/external-ai-packet.schema.json',
-  'schemas/canon-version-manifest.schema.json'
+  'schemas/canon-version-manifest.schema.json',
+  'schemas/platform-core.schema.json'
 ];
 for (const schema of schemas) {
   const parsed = JSON.parse(fs.readFileSync(schema, 'utf8'));
@@ -128,7 +136,7 @@ for (const schema of schemas) {
 }
 
 const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-for (const script of ['validate:schemas', 'test:production-modules', 'validate:engine-adapters', 'test:engine-adapters', 'validate:migrations', 'test:migration-contracts']) {
+for (const script of ['validate:schemas', 'test:production-modules', 'validate:engine-adapters', 'test:engine-adapters', 'validate:migrations', 'test:migration-contracts', 'validate:platform-core', 'test:platform-core']) {
   if (!packageJson.scripts?.[script]) issues.push(`Missing production script: ${script}`);
 }
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:schemas')) issues.push('precommit:verify must enforce schema contract validation.');
@@ -137,6 +145,8 @@ if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:engin
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:engine-adapters')) issues.push('precommit:verify must enforce engine adapter contracts.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:migrations')) issues.push('precommit:verify must enforce migration validation.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:migration-contracts')) issues.push('precommit:verify must enforce migration contract tests.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:platform-core')) issues.push('precommit:verify must enforce platform core validation.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:platform-core')) issues.push('precommit:verify must enforce platform core contracts.');
 
 const result = {
   ok: issues.length === 0,

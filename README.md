@@ -33,7 +33,7 @@ dialogue/             Mission dialogue source records
 docs/                 Production documentation, lore bible, audits, build notes, handoff policy
 engine/               Unity/Unreal adapter scaffolding and engine-neutral export contracts
 schemas/              JSON Schema contract layer for canonical data shapes
-src/                  Engine-ready module extraction lane for gameplay, data loaders, UI presenters, tools
+src/                  Engine-ready module extraction lane for gameplay, platform core, data loaders, UI presenters, tools
 tests/                Production module contracts and future grouped test suites
 game/                 Playable browser prototype and tactical runtimes
 handoff/              Creator, Big Bot, and external AI asset handoff packets
@@ -66,12 +66,13 @@ Generated `dist/` output is built by automation and is not a canonical source fo
 - Missions: 280 total — 140 Normal / 140 Elite
 - Mission dialogue packages: 280
 - Mission art packages: 280
-- Schema contracts: 10 active coverage families, including canon migration/version control
+- Schema contracts: 11 active coverage families, including canon migration/version control and platform core
 - Art prompts: 110
 - 3D blueprint assets: 129
 - Creator handoff packets: 23
 - External AI production packet: 1 active benchmark battlefield packet
 - Core combat rule: one active Titan in standard combat
+- Platform core: v1 implemented for profile, save continuity, roster ownership, progression, inventory, and currency ledger
 - Current source asset status: 129 reserved asset IDs awaiting final source assets
 
 ## Commands
@@ -88,6 +89,7 @@ npm run audit:continuity
 npm run audit:aaa-structure
 node scripts/audit-current-canon.mjs
 npm run validate:engine-adapters
+npm run validate:platform-core
 npm run assets:verify
 npm run test:playable-battle-ui
 npm run validate:external-ai-packets

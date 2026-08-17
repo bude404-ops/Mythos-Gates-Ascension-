@@ -1,0 +1,40 @@
+{
+  "id": "TG-PLATFORM-CORE-V1",
+  "schema": "TG_PLATFORM_CORE_CONTRACT_V1",
+  "status": "IMPLEMENTED",
+  "version": "1.9.0-platform-core-v1",
+  "purpose": "First real game-platform foundation for player profiles, save continuity, roster ownership, progression, inventory, economy ledger, and telemetry-ready platform events.",
+  "rules": {
+    "identity": "One player profile owns one canonical save state in the mock platform service.",
+    "persistence": "Every platform mutation returns a complete serializable state snapshot that can be stored and reloaded without loss.",
+    "economy": "Currency mutations must be represented as ledger entries; balances are derived from the ledger plus initial grants.",
+    "roster": "Titan ownership and active Titan selection live in platform state, not browser-only UI state.",
+    "progression": "Mission completion, account XP, level, and unlocks must survive reload.",
+    "serverPath": "This mock service is local and deterministic. A future backend must preserve the same contract before replacing it."
+  },
+  "defaultPlayer": {
+    "playerId": "TG-PLAYER-LOCAL-001",
+    "displayName": "First Gatebreaker",
+    "starterTitanId": "TG-TITAN-003",
+    "startingCurrencies": {
+      "sunshards": 120,
+      "gateKeys": 1,
+      "signatureAlloy": 0
+    }
+  },
+  "requiredPlatformEvents": [
+    "PROFILE_CREATED",
+    "TITAN_GRANTED",
+    "ACTIVE_TITAN_SET",
+    "MISSION_COMPLETED",
+    "CURRENCY_CREDITED",
+    "CURRENCY_DEBITED",
+    "SAVE_EXPORTED",
+    "SAVE_IMPORTED"
+  ],
+  "validation": [
+    "npm run validate:platform-core",
+    "npm run test:platform-core",
+    "npm run precommit:verify"
+  ]
+}
