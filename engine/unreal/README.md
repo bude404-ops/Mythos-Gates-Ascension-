@@ -27,6 +27,7 @@ Titan Gates: Ascension is an Unreal Engine 5-first, mobile-baseline Titan-scale 
 
 - `dungeon-crawler-framework.json` defines the UE5 Titan-scale dungeon-crawler architecture.
 - `mobile-first-architecture.json` defines Android/iOS baseline budgets, quality tiers, Titan optimization, negative rules, and first-zone approval gates.
+- `data/one-titan-vs-many-combat.json` defines the core combat rule: one player-controlled Titan per battle against multiple coordinated enemies.
 - `first-mission-zone-template.json` converts `TG-F01-C01-M01` into the first reusable mobile master prototype.
 - `ue5-dungeon-framework.mjs` and `mobile-first-architecture.mjs` validate framework continuity.
 
@@ -40,4 +41,5 @@ Titan Gates: Ascension is an Unreal Engine 5-first, mobile-baseline Titan-scale 
 - Mobile-compatible lighting is the default target; high-end Lumen is optional.
 - World Partition is allowed only where it reduces loading or memory cost for larger regions.
 - AI generation assembles approved modules in ordered stages; it does not generate whole campaigns at once.
-- Build the first zone completely and validate scale, controls, loading, memory, FPS, streaming, combat, camera, and lore before expanding.
+- Build the first zone completely and validate scale, controls, loading, memory, FPS, streaming, combat, camera, lore, one-Titan combat, visible progression, gear improvement, and return-to-exploration before expanding.
+- Never add squad combat, team formations, ally positioning, multiple player-controlled Titans, or team turns.

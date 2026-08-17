@@ -43,7 +43,32 @@
       "hidden lore discovery"
     ],
     "enemyPlacement": "Data Table rows keyed from existing enemyWave enemyIds; no hardcoded spawns.",
-    "transition": "Exploration encounter volume opens tactical arena generated from local modules."
+    "transition": "Exploration encounter volume opens tactical arena generated from local modules.",
+    "combatPrototype": {
+      "loop": [
+        "Explore",
+        "Encounter trigger",
+        "Combat transition",
+        "1 Titan vs. Multiple Enemies",
+        "Victory",
+        "Rewards",
+        "Upgrade Titan",
+        "Return to exploration"
+      ],
+      "enemyGroup": {
+        "earlyCountRange": [
+          4,
+          6
+        ],
+        "roles": [
+          "melee attackers",
+          "ranged attackers",
+          "fast enemies",
+          "support enemies"
+        ],
+        "rule": "tactical pressure from combinations, positioning, terrain, objectives, and status effects; not inflated health pools"
+      }
+    }
   },
   "tacticalArena": {
     "id": "UE5-ARENA-FIRST-LIGHT-SEAL-001",
@@ -69,7 +94,37 @@
       "objectives",
       "victory conditions",
       "turn limit 11"
-    ]
+    ],
+    "oneTitanVsMany": {
+      "playerControlledTitans": 1,
+      "enemyCountTarget": [
+        4,
+        6
+      ],
+      "requiredTitanTools": [
+        "cleaving attacks",
+        "area-of-effect abilities",
+        "knockbacks",
+        "stuns",
+        "defensive abilities",
+        "high-damage single-target attacks"
+      ],
+      "positioningDecisions": [
+        "enemy grouping",
+        "AoE opportunities",
+        "ranged threats",
+        "elevation",
+        "terrain",
+        "chokepoints",
+        "ability cooldowns",
+        "objectives"
+      ],
+      "progressionDemonstration": [
+        "New Titan survives small groups with careful play",
+        "Developed Titan clears the same group faster with upgraded AoE and gear",
+        "Highly Developed Titan destroys weak groups efficiently without fake weakening"
+      ]
+    }
   },
   "bossArena": {
     "id": "UE5-BOSS-ARENA-FIRST-REOPENING-GATE-001",
@@ -179,6 +234,25 @@
       "Level Instance modules stream by zone",
       "DataAssets loaded by mission scope",
       "high-end assets optional"
+    ],
+    "oneTitanVsMany": [
+      "exactly one player-controlled Titan",
+      "multiple enemies active",
+      "no squads or team turns",
+      "AoE preview and threat indicators readable",
+      "enemy roles create tactical pressure without inflated HP"
+    ],
+    "progressionFeel": [
+      "new Titan baseline measured",
+      "developed Titan improvement visible",
+      "highly developed Titan group-clear improvement visible",
+      "gear upgrade changes combat behavior"
+    ],
+    "returnToExploration": [
+      "victory grants rewards",
+      "Titan upgrade applied",
+      "gear improvement applied",
+      "player returns to exploration zone"
     ]
   },
   "aiGenerationWorkflow": [
@@ -209,7 +283,11 @@
       "Asset streaming",
       "Visual quality",
       "Mobile performance",
-      "Lore consistency"
+      "Lore consistency",
+      "One Titan vs many enemies",
+      "Visible power growth",
+      "Gear improvement",
+      "Return to exploration"
     ]
   },
   "mobileBudgets": {
@@ -231,5 +309,17 @@
     "exploration": "virtual stick plus contextual interact; short traversal loops",
     "combat": "tap tactical tiles, ability bar, drag rotate, pinch zoom",
     "rule": "mobile readability outranks spectacle"
+  },
+  "combatIdentity": {
+    "contract": "data/one-titan-vs-many-combat.json",
+    "rule": "ONE TITAN VS. MANY",
+    "playerControlledTitans": 1,
+    "forbidden": [
+      "squad combat",
+      "team formations",
+      "ally positioning",
+      "team turns"
+    ],
+    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards"
   }
 }

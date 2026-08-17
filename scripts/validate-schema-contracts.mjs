@@ -53,6 +53,11 @@ const contracts = [
     name: 'ue5-mobile-first-architecture',
     schemaPath: 'schemas/ue5-mobile-first-architecture.schema.json',
     records: [JSON.parse(fs.readFileSync('engine/unreal/mobile-first-architecture.json', 'utf8'))]
+  },
+  {
+    name: 'one-titan-vs-many-combat',
+    schemaPath: 'schemas/one-titan-vs-many-combat.schema.json',
+    records: [JSON.parse(fs.readFileSync('data/one-titan-vs-many-combat.json', 'utf8'))]
   }
 ];
 

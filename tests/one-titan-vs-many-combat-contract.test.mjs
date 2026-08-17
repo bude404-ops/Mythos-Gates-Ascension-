@@ -1,0 +1,26 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { loadOneTitanVsManyCombat, validateOneTitanVsManyCombat, summarizeOneTitanVsMany, PRIMARY_ONE_TITAN_RULE, REQUIRED_PROTOTYPE_BEATS } from '../src/combat/one-titan-vs-many.mjs';
+
+const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
+const contract = loadOneTitanVsManyCombat();
+const mission = read('data/mission-registry.json').find(row => row.id === contract.firstPrototype.sourceMissionId);
+const mobileArchitecture = read('engine/unreal/mobile-first-architecture.json');
+const firstTemplate = read('engine/unreal/first-mission-zone-template.json');
+const validation = validateOneTitanVsManyCombat(contract, mission, mobileArchitecture, firstTemplate);
+assert.equal(validation.ok, true, validation.issues.join('; '));
+assert.equal(contract.primaryRule, PRIMARY_ONE_TITAN_RULE);
+assert.equal(mission.activeTitanCount, 1);
+assert.equal(mission.teamSize, 1);
+assert.equal(firstTemplate.combatIdentity.playerControlledTitans, 1);
+assert.ok(contract.forbiddenSystems.includes('squad combat'));
+assert.ok(contract.forbiddenSystems.includes('team turns'));
+assert.ok(contract.enemyGroupDesign.antiPattern.includes('health pools'));
+for (const beat of REQUIRED_PROTOTYPE_BEATS) assert.ok(contract.firstPrototype.requiredDemonstration.includes(beat));
+assert.deepEqual(contract.firstPrototype.progressionFeelTest, ['New Titan', 'Developed Titan', 'Highly Developed Titan']);
+const early = contract.scalingBands.find(band => band.band === 'EARLY');
+assert.deepEqual(early.enemyCountRange, [4, 6]);
+const summary = summarizeOneTitanVsMany(contract, firstTemplate);
+assert.equal(summary.rule, PRIMARY_ONE_TITAN_RULE);
+assert.equal(summary.firstMission, 'TG-F01-C01-M01');
+console.log(JSON.stringify({ ok: true, oneTitanVsManyCombatContract: 'PASS', summary }, null, 2));

@@ -2,7 +2,7 @@
   "id": "TG-UE5-MOBILE-FIRST-ARCHITECTURE-V1",
   "schema": "TG_UE5_MOBILE_FIRST_ARCHITECTURE_V1",
   "status": "BASELINE_TARGET",
-  "version": "1.13.0-mobile-first-ue5-zone-prototype",
+  "version": "1.14.0-one-titan-vs-many-combat",
   "primaryTarget": {
     "engine": "Unreal Engine 5",
     "platforms": [
@@ -37,7 +37,9 @@
     "Do not turn zones into generic corridor dungeons.",
     "Do not create unnecessary seamless open world traversal.",
     "Do not generate whole campaigns at once.",
-    "Do not rewrite established lore, factions, Titans, progression, or combat."
+    "Do not rewrite established lore, factions, Titans, progression, or combat.",
+    "Do not create squad combat, team formations, ally positioning, or team turns.",
+    "Do not add difficulty by inflating health pools instead of tactical pressure."
   ],
   "mobilePerformanceBudgets": {
     "baselineDeviceClass": "mid-range mobile",
@@ -196,5 +198,11 @@
     "Lighting",
     "Optimization",
     "Final Polish"
-  ]
+  ],
+  "combatRule": {
+    "contract": "data/one-titan-vs-many-combat.json",
+    "primaryRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+    "fantasy": "one legendary Titan against coordinated enemy groups",
+    "forbidSquads": true
+  }
 }
