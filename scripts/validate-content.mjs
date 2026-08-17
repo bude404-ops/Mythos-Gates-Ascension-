@@ -362,14 +362,14 @@ for (const art of data.missionArtPackages) {
 }
 
 for (const backstory of data.backstories) {
-  if(!['Titan','NPC','Creature'].includes(backstory.entityType)) fail(`${backstory.id}: invalid entityType ${backstory.entityType}`);
-  const validEntity = backstory.entityType === 'Titan' ? titanIds.has(backstory.entityId) : backstory.entityType === 'NPC' ? npcIds.has(backstory.entityId) : creatureIds.has(backstory.entityId);
+  if(!['Titan','Deity','NPC','Creature'].includes(backstory.entityType)) fail(`${backstory.id}: invalid entityType ${backstory.entityType}`);
+  const validEntity = (backstory.entityType === 'Titan' || backstory.entityType === 'Deity') ? titanIds.has(backstory.entityId) : backstory.entityType === 'NPC' ? npcIds.has(backstory.entityId) : creatureIds.has(backstory.entityId);
   if(!validEntity) fail(`${backstory.id}: invalid entityId ${backstory.entityId}`);
   if(!backstory.shortBackstory || !Array.isArray(backstory.chapters) || backstory.chapters.length < 5) fail(`${backstory.id}: incomplete readable backstory`);
   if(!Array.isArray(backstory.storyArcIds) || !backstory.storyArcIds.length) fail(`${backstory.id}: missing story arc tie`);
   for (const arcId of backstory.storyArcIds) if(!storylineArcIds.has(arcId)) fail(`${backstory.id}: invalid story arc ${arcId}`);
   if(!Array.isArray(backstory.loreTies) || backstory.loreTies.length < 2) fail(`${backstory.id}: missing lore ties`);
-  const folder = backstory.entityType === 'Titan' ? 'titans' : backstory.entityType === 'NPC' ? 'npcs' : 'creatures';
+  const folder = (backstory.entityType === 'Titan' || backstory.entityType === 'Deity') ? 'titans' : backstory.entityType === 'NPC' ? 'npcs' : 'creatures';
   if(!exists(`backstories/${folder}/${backstory.id}.json`)) fail(`${backstory.id}: missing individual backstory file`);
 }
 if(data.backstories.length !== data.titans.length + data.npcs.length + data.creatures.length) fail(`Backstory coverage mismatch: ${data.backstories.length}`);
