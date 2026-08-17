@@ -8,25 +8,23 @@
   "missionNumber": 2,
   "missionInChapter": 2,
   "title": "Iron Rain Battle line",
-  "description": "Oath Under Thunder: Iron Rain Battle line unfolds across storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span, pushing the one active Asgardian Titan to convert endurance into decisive counterpressure.",
-  "lore": "Iron Rain Battle line advances the Storm-Oath Covenant arc: the Gate tries to harvest Asgardian vows, while Valhalla law insists courage must remain chosen responsibility.",
+  "description": "Oath Under Thunder: Iron Rain Battle line unfolds across storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span, pushing the one active Titan Asgardian Titan to convert endurance into decisive counterpressure. Appearance rule: Storm-Rooted Aesir Holds is the source culture humans later copied as Norse saga myth; mission terrain and cosmetics must show rune iron, stormsteel, oath rings, raven omens, wolf teeth, Yggdrasil roots, frost-bitten leather, blackwinter scars.",
+  "lore": "This mission treats Storm-Rooted Aesir Holds as the origin behind Norse saga myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use rune iron, stormsteel, oath rings, raven omens, wolf teeth, Yggdrasil roots, frost-bitten leather, blackwinter scars instead of generic historical or RPG dressing.",
   "recommendedPower": 446,
-  "activeTitanCount": 1,
   "encouragedTitanRoles": [
-    "frontline oath guardian",
-    "storm counterstriker",
-    "objective anchor",
-    "mobile rescuer",
-    "rune support"
+    "storm-oath breaker",
+    "survivable objective holder",
+    "burst or control specialist"
   ],
   "mapId": "TG-MAP-003",
-  "terrain": "storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span",
+  "terrain": "storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span; source-culture appearance layer: rune-storm bridges, oath-stone courts, Bifrost storm fractures, Yggdrasil root ramps, Valhalla shieldwall ruins; cosmetic/relic silhouettes: rune-iron oath axes, stormsteel wolf-cloak mail, Yggdrasil thunder-root cores, Valkyrie witness counters",
   "objectives": {
-    "primary": "Claim two oath-stones before the storm breaks battle line.",
+    "primary": "Complete Iron Rain Battle line with one active Titan while reading storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span and preserving faction doctrine.",
     "optional": [
       "Complete before turn 10",
-      "Keep your active Titan above 40% integrity",
-      "Trigger at least two Oathbound counterattacks"
+      "Keep at least four Titan standing",
+      "Trigger at least two Oathbound counterattacks",
+      "Trigger at least one Momentum or Divinity decision before victory"
     ]
   },
   "enemyWaves": [
@@ -50,34 +48,37 @@
   "boss": null,
   "turnLimit": 11,
   "specialRules": [
-    "Oathbound Guard: Titans that survive damage near oath-stones empower their next committed strike.",
+    "Storm Oath: Momentum surges after decisive movement through exposed lightning lanes.",
+    "Oathbound Guard: Titan that survive damage near oath-stones empower their next committed strike.",
     "Oathbound: surviving damage strengthens the next committed strike.",
-    "one active standard Titan"
+    "Solo Titanic Scale: one active Titan occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
   ],
   "victoryConditions": [
-    "Claim two oath-stones before the storm breaks battle line."
+    "Complete Iron Rain Battle line with one active Titan while reading storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span and preserving faction doctrine."
   ],
   "defeatConditions": [
-    "All Titans fall",
+    "Your active Titan falls",
     "Primary objective fails",
     "Turn limit expires"
   ],
   "rewards": {
     "firstClear": [
+      "Solo Titan mastery XP",
       "Mid-tier oath iron",
       "Asgardian faction shard cache",
       "Storm rune upgrade dust",
       "TG-F02-C01-M02 codex shard"
     ],
     "replay": [
+      "Titan mastery XP",
       "Oath iron",
       "Storm rune upgrade dust",
-      "Gear component"
+      "Asgardian source-culture cosmetic/relic component"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
-      "one": "Primary completed under severe integrity or turn pressure"
+      "one": "Primary completed under severe casualty or turn pressure"
     }
   },
   "codexUnlocks": [
@@ -93,7 +94,16 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
+  "activeTitanDesignNotes": "Balanced for one active Titan; roster depth changes pre-launch selection, not on-field body count.",
+  "chapterId": "TG-F02-CH01",
+  "difficulty": "Normal",
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose one Titan before launch; no ally positioning or team formations in battle.",
+    "squadCombat": "FORBIDDEN",
+    "teamTurns": "FORBIDDEN"
+  },
   "tacticalProfile": {
     "problemTags": [
       "heavily_armored_enemies",
@@ -108,35 +118,103 @@
       "Assassin"
     ],
     "recommendedTitanIds": [
-      "TG-TITAN-013",
-      "TG-TITAN-017",
-      "TG-TITAN-012"
+      "TG-TITAN-018",
+      "TG-TITAN-010"
     ],
     "recommendedTitans": [
       {
-        "id": "TG-TITAN-013",
+        "id": "TG-TITAN-018",
         "name": "Eirwyn Valkstorm",
         "reason": "Breaker advantage for heavily armored enemies"
       },
       {
-        "id": "TG-TITAN-017",
+        "id": "TG-TITAN-018",
         "name": "Ullr Snow-Crown",
         "reason": "Guardian advantage for heavily armored enemies"
       },
       {
-        "id": "TG-TITAN-012",
+        "id": "TG-TITAN-015",
         "name": "Skeld Iron Tempest",
         "reason": "Controller advantage for heavily armored enemies"
       }
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+    "rule": "Favored-not-required: any valid active Titan may clear the mission; recommended god-Titans are tactical hints only."
   },
-  "activeTitanPolicy": {
-    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
-    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
-    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  "sourceCultureAppearanceRule": {
+    "realm": "Storm-Rooted Aesir Holds",
+    "materials": "rune iron, stormsteel, oath rings, raven omens, wolf teeth, Yggdrasil roots, frost-bitten leather, blackwinter scars",
+    "terrain": "rune-storm bridges, oath-stone courts, Bifrost storm fractures, Yggdrasil root ramps, Valhalla shieldwall ruins",
+    "cosmeticRelicSilhouettes": "rune-iron oath axes, stormsteel wolf-cloak mail, Yggdrasil thunder-root cores, Valkyrie witness counters",
+    "avoid": "cartoon Viking, horned helmet cosplay, clean chrome, sci-fi power armor, glowing UI runes, modern biker leather"
   },
-  "teamSize": 1
+  "updated": "2026-08-16",
+  "activeTitanCount": 1,
+  "teamSize": 1,
+  "combatArchitecture": {
+    "engineTarget": "Unreal Engine 5",
+    "platformBaseline": [
+      "Android",
+      "iOS"
+    ],
+    "loop": [
+      "Explore",
+      "Encounter",
+      "1 Titan vs. Multiple Enemies",
+      "Victory",
+      "Rewards",
+      "Upgrade Titan",
+      "Explore Further"
+    ],
+    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
+    "playerControlledTitans": 1,
+    "mobileFirst": true,
+    "forbidden": [
+      "squad combat",
+      "team formations",
+      "multiple player-controlled Titans",
+      "ally positioning",
+      "team turns"
+    ]
+  },
+  "crossFactionRunIns": {
+    "enabled": true,
+    "homeFactionId": "TG-FACTION-002",
+    "homeFactionName": "Asgardian",
+    "eligiblePoolIds": [
+      "TG-CROSS-RUN-IN-001",
+      "TG-CROSS-RUN-IN-003",
+      "TG-CROSS-RUN-IN-004",
+      "TG-CROSS-RUN-IN-005",
+      "TG-CROSS-RUN-IN-006",
+      "TG-CROSS-RUN-IN-007"
+    ],
+    "recommendedPoolIds": [
+      "TG-CROSS-RUN-IN-005",
+      "TG-CROSS-RUN-IN-006"
+    ],
+    "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
+    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone Titan without creating ally units or squad play."
+  },
+  "loreContinuityGuard": {
+    "sourceFactionId": "TG-FACTION-002",
+    "sourceFactionName": "Asgardian",
+    "sourceRealm": "The Storm-Rooted Aesir Holds",
+    "sourceCultureRule": "source culture humans later copied as Norse myth",
+    "preserve": [
+      "established faction identity",
+      "Titan Gates mythology",
+      "Gates and Codex systems",
+      "one player-controlled Titan combat",
+      "mobile UE5 zone structure"
+    ],
+    "forbid": [
+      "replacement factions",
+      "generic corridor dungeon conversion",
+      "PC-first combat assumptions",
+      "generic monster filler",
+      "lore rewrites"
+    ]
+  }
 }

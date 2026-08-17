@@ -139,7 +139,10 @@ const requiredScaleSheetTypes = new Set(['normal_enemy','elite_enemy','player_ti
 
 if(data.factions.length !== 7) fail(`Expected 7 playable factions, found ${data.factions.length}`);
 if(data.hollowThreatFaction.playable !== false || data.hollowThreatFaction.classification !== 'Hostile Threat Faction') fail('Hollow must remain a non-playable threat faction');
-if(data.titans.length !== 63) fail(`Expected 63 Titans, found ${data.titans.length}`);
+if(data.titans.length !== 28) fail(`Expected 28 playable god-Titans, found ${data.titans.length}`);
+const factionGodCounts = new Map();
+for (const titan of data.titans) factionGodCounts.set(titan.factionId, (factionGodCounts.get(titan.factionId) || 0) + 1);
+for (const faction of data.factions) if ((factionGodCounts.get(faction.id) || 0) !== 4) fail(`${faction.name}: expected 4 playable god-Titans`);
 if(data.artApprovalManifest.status !== 'IMPLEMENTED' || data.artApprovalManifest.approvalStatus !== 'APPROVED_FOR_GENERATION') fail('Art approval manifest must be approved for generation');
 
 if(data.factionVisualBible.status !== 'IMPLEMENTED') fail('Faction visual bible must be IMPLEMENTED');
@@ -581,7 +584,7 @@ const finalArt = assetRegistry.finalArtIntegration;
 if(finalArt?.status !== 'IMPLEMENTED') fail('Command Hub final art integration manifest missing');
 const finalBg = assetRegistry.assets.filter(a => a.assetType === 'COMMAND_HUB_BACKGROUND' && a.status === 'FINAL').length;
 const finalGates = assetRegistry.assets.filter(a => a.assetType === 'GATE' && a.status === 'FINAL').length;
-const finalStarterTitans = assetRegistry.assets.filter(a => a.assetType === 'TITAN_PRESENTATION' && a.status === 'FINAL' && ['TG-TITAN-001','TG-TITAN-003','TG-TITAN-004'].includes(a.entityId)).length;
+const finalStarterTitans = assetRegistry.assets.filter(a => a.assetType === 'TITAN_PRESENTATION' && a.status === 'FINAL' && ['TG-TITAN-001','TG-TITAN-006','TG-TITAN-009'].includes(a.entityId)).length;
 if(finalBg < data.factions.length) fail('Command Hub final art integration missing faction backgrounds');
 if(finalGates < data.realmCodex.length) fail('Command Hub final art integration missing realm gates');
 if(finalStarterTitans !== 3) fail('Command Hub final art integration missing starter Titan slots');

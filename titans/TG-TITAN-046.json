@@ -1,16 +1,16 @@
 {
   "id": "TG-TITAN-046",
-  "slug": "seraphel-the-throne-eternal",
-  "name": "Seraphel, the Throne Eternal",
+  "slug": "michael",
+  "name": "Michael",
   "factionId": "TG-FACTION-006",
   "faction": "Empyrean",
-  "rarity": "Legendary",
+  "rarity": "Mythic God",
   "role": "Defender",
   "abilities": [
-    "Seraphel \u2014 Seraph Edict Lash Anchor",
-    "Choir Seal Technique \u2014 Bastion",
+    "Seraphel — Seraph Edict Lash Anchor",
+    "Choir Seal Technique — Bastion",
     "Seraphel: Ophanim Throne Judgment Holdfast",
-    "Divine Ascension \u2014 Seraphic Choir Unbound"
+    "Divine Ascension — Seraphic Choir Unbound"
   ],
   "stats": {
     "hp": 50,
@@ -32,19 +32,19 @@
     "Seraphel Ophanim Many-Eye Choir Core"
   ],
   "passives": [
-    "Hierarchy of Living Edict: Seraphel, the Throne Eternal gains Choir Resonance when its defender choices express Radiant Hierarchies source-culture law through edict-sung holy geometry; Earth myth is only the later echo."
+    "Choir Edict: Seraphel gains Choir Resonance when defender play anchors a control zone and converts enemy commitment into mitigation on ordered sigil zones. At 3 stacks, the next Technique or Reaction adds a radiant hierarchy judgment rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Radiant Hierarchies."
   ],
-  "lore": "Seraphel, the Throne Eternal is a colossal Empyrean defender from The Radiant Hierarchies. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Titan is the older source: Empyrean defender office: sovereign protector, gate-holder, law shield; Dominions/Virtues/Powers: hierarchy, governance, miracle force, defense against chaos.",
-  "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
-  "visualDescription": "Full-body living myth-source Titan, not a costume: Seraphel, the Throne Eternal shows white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.. Role silhouette must read as Defender. Materials include white gold, opal glass, bell bronze, pearl bone, blue-white holy fire, ivory scroll vellum, silver feather. The design must feel older than human mythology and avoid robot angel, spaceship armor, generic church costume, literal cathedral body, block tower silhouette, neon sci-fi halo.",
-  "artStatus": "Prompt Ready",
+  "lore": "Michael, Sword of the Highest Gate, is now canonized as one of the four playable god-Titans of Empyrean. The Titan is the source-realm divinity behind the mythology rather than a generic champion: heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology god whose behavior expresses heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon; confident, sovereign, readable in combat, loyal to the unchanged Empyrean canon.",
+  "visualDescription": "Michael manifests as heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon from Empyrean: stern beautiful masculine angelic face, strong jaw, luminous eyes, no softness, commander calm; tall athletic masculine warrior build, broad shoulders, narrow waist, immaculate upright stance; signature silhouette: two vast wings, sword vertical, shield halo, commander-triangle outline. Weapon: flaming judgement sword and choir shield. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
+  "artStatus": "READY_FOR_GENERATION",
   "artPromptId": "TG-PROMPT-046",
   "artworkId": null,
   "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
   "backstoryId": "TG-BACKSTORY-TITAN-046",
   "abilityDetails": [
     {
-      "name": "Seraphel \u2014 Seraph Edict Lash Anchor",
+      "name": "Seraphel — Seraph Edict Lash Anchor",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -60,7 +60,7 @@
       "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
     },
     {
-      "name": "Choir Seal Technique \u2014 Bastion",
+      "name": "Choir Seal Technique — Bastion",
       "slot": "Technique",
       "unlockLevel": 4,
       "cost": "20 Momentum",
@@ -92,7 +92,7 @@
       "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
     },
     {
-      "name": "Divine Ascension \u2014 Seraphic Choir Unbound",
+      "name": "Divine Ascension — Seraphic Choir Unbound",
       "slot": "Ascension",
       "unlockLevel": 30,
       "cost": "100 Divinity",
@@ -164,26 +164,41 @@
       "resource denial enemies",
       "bad terrain matchups",
       "mistimed reactions"
-    ]
+    ],
+    "uniqueMechanic": "Seraphel's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+    "counterplayRule": "spread attackers, displacement, or terrain denial break the anchor"
   },
-  "mythicSource": "Empyrean defender office: sovereign protector, gate-holder, law shield; Dominions/Virtues/Powers: hierarchy, governance, miracle force, defense against chaos",
-  "visualTraits": [
-    "sovereign protector",
-    "gate-holder",
-    "law shield",
-    "source culture humans later copied as angelic and heavenly lore",
-    "ivory scroll vellum"
-  ],
-  "armorCanon": "Armor must use white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.; construction proves source culture humans later copied as angelic and heavenly lore; no robot angel, spaceship armor, generic church costume, literal cathedral body.",
-  "updated": "2026-08-16",
-  "weaponCanon": "Seraphel Bulwark Seraph Bell-Edict Blade",
+  "mythicSource": "Archangel Michael — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+  "visualTraits": {
+    "face": "stern beautiful masculine angelic face, strong jaw, luminous eyes, no softness, commander calm",
+    "bodyProportions": "tall athletic masculine warrior build, broad shoulders, narrow waist, immaculate upright stance",
+    "silhouette": "two vast wings, sword vertical, shield halo, commander-triangle outline",
+    "weapon": "flaming judgement sword and choir shield",
+    "sexIdentity": "Male"
+  },
+  "armorCanon": {
+    "identityRule": "Armor must reveal male divine anatomy and Empyrean civilization logic; no generic armor template.",
+    "silhouette": "two vast wings, sword vertical, shield halo, commander-triangle outline"
+  },
+  "updated": "2026-08-17",
+  "weaponCanon": {
+    "signatureWeapon": "flaming judgement sword and choir shield",
+    "loreReason": "Chosen because Michael embodies heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon in combat."
+  },
   "gearCanon": {
-    "weapon": "Seraphel Bulwark Seraph Bell-Edict Blade",
-    "armor": "Seraphel Opal-Glass Cherubim Aegis",
-    "core": "Seraphel Ophanim Many-Eye Choir Core",
-    "movementRelic": "Archangel Herald Ascent",
-    "reactionRelic": "Ophanim Wheel Intercept",
-    "executionRelic": "Seal the Discord",
-    "visualRule": "white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire"
-  }
+    "maskHelmetCrown": "Crown/helmet/mask must support stern beautiful masculine angelic face, strong jaw, luminous eyes, no softness, commander calm and two vast wings, sword vertical, shield halo, commander-triangle outline; never hide sex identity or make the god interchangeable."
+  },
+  "sex": "Male",
+  "titanArtDna": {
+    "rosterCanon": "FOUR_GODS_PER_FACTION_PLAYABLE_ROSTER",
+    "mythologyGod": "Archangel Michael",
+    "sex": "Male",
+    "archetype": "heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon",
+    "signatureWeapon": "flaming judgement sword and choir shield",
+    "faceLock": "stern beautiful masculine angelic face, strong jaw, luminous eyes, no softness, commander calm",
+    "bodyLock": "tall athletic masculine warrior build, broad shoulders, narrow waist, immaculate upright stance",
+    "silhouetteLock": "two vast wings, sword vertical, shield halo, commander-triangle outline",
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved."
+  },
+  "title": "Sword of the Highest Gate"
 }

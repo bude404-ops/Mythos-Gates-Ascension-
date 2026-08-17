@@ -10,7 +10,7 @@
   "canonAuthority": "Lore Director and current canonical game data remain authoritative; queue rows may not invent or alter lore.",
   "productionRule": "Environment and Gate blockouts advance before character polish so playable space scale is protected.",
   "coverage": {
-    "total": 171,
+    "total": 136,
     "byStatus": {
       "READY_FOR_3D": 3,
       "BLUEPRINT_IN_PROGRESS": 168
@@ -25,7 +25,8 @@
       "GATE": 7
     },
     "readyReferences": 3,
-    "queuedForBlueprintCompletion": 168
+    "queuedForBlueprintCompletion": 168,
+    "titans": 28
   },
   "lanes": [
     {
@@ -859,7 +860,7 @@
       "assetId": "TITAN_010",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-010",
-      "canonicalName": "The Allfather Stormvein",
+      "canonicalName": "Odin, Allfather Stormvein",
       "faction": "Asgardian",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -883,7 +884,7 @@
       "assetId": "TITAN_011",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-011",
-      "canonicalName": "Hrothar Rune-Mountain",
+      "canonicalName": "Freyja, Vanir Valkyrie Queen",
       "faction": "Asgardian",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -904,82 +905,10 @@
       ]
     },
     {
-      "assetId": "TITAN_012",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-012",
-      "canonicalName": "Skeld Iron Tempest",
-      "faction": "Asgardian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_012_skeld-iron-tempest/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_013",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-013",
-      "canonicalName": "Eirwyn Valkstorm",
-      "faction": "Asgardian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_013_eirwyn-valkstorm/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_014",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-014",
-      "canonicalName": "Mordun Frost-Anvil",
-      "faction": "Asgardian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_014_mordun-frost-anvil/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_015",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-015",
-      "canonicalName": "Veyra Thunderloom",
+      "canonicalName": "Frigg, Wyrd Hearth Queen",
       "faction": "Asgardian",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1000,58 +929,10 @@
       ]
     },
     {
-      "assetId": "TITAN_016",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-016",
-      "canonicalName": "Ragnor Skybreaker",
-      "faction": "Asgardian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_016_ragnor-skybreaker/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_017",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-017",
-      "canonicalName": "Ullr Snow-Crown",
-      "faction": "Asgardian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_017_ullr-snow-crown/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_018",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-018",
-      "canonicalName": "Sigrun Oathflare",
+      "canonicalName": "Thor, Thunder Guardian",
       "faction": "Asgardian",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1075,7 +956,7 @@
       "assetId": "TITAN_001",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-001",
-      "canonicalName": "Aten-Ra, Solar Law Monolith",
+      "canonicalName": "Aten Ra, Solar Law King",
       "faction": "Aten Ra",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "High",
@@ -1096,82 +977,10 @@
       ]
     },
     {
-      "assetId": "TITAN_002",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-002",
-      "canonicalName": "Khemet Suncrown",
-      "faction": "Aten Ra",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "High",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_002_khemet-suncrown/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_003",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-003",
-      "canonicalName": "Nefra Obsidian Dawn",
-      "faction": "Aten Ra",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "High",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_003_nefra-obsidian-dawn/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_004",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-004",
-      "canonicalName": "Orru Prism Verdict",
-      "faction": "Aten Ra",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "High",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_004_orru-prism-verdict/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_005",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-005",
-      "canonicalName": "Sutekh Dune Eclipse",
+      "canonicalName": "Sutekh, Red Land Storm God",
       "faction": "Aten Ra",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "High",
@@ -1195,7 +1004,7 @@
       "assetId": "TITAN_006",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-006",
-      "canonicalName": "Iset Riverlight Throne",
+      "canonicalName": "Iset, Throne-Magic Mother",
       "faction": "Aten Ra",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "High",
@@ -1216,58 +1025,10 @@
       ]
     },
     {
-      "assetId": "TITAN_007",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-007",
-      "canonicalName": "Karnu Glass Horizon",
-      "faction": "Aten Ra",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "High",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_007_karnu-glass-horizon/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_008",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-008",
-      "canonicalName": "Maahes Noon Bastion",
-      "faction": "Aten Ra",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "High",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_008_maahes-noon-bastion/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_009",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-009",
-      "canonicalName": "Amunet Hidden Sun",
+      "canonicalName": "Amunet, Hidden Breath Goddess",
       "faction": "Aten Ra",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "High",
@@ -1291,7 +1052,7 @@
       "assetId": "TITAN_046",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-046",
-      "canonicalName": "Seraphel, the Throne Eternal",
+      "canonicalName": "Michael, Sword of the Highest Gate",
       "faction": "Empyrean",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1312,34 +1073,10 @@
       ]
     },
     {
-      "assetId": "TITAN_047",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-047",
-      "canonicalName": "Caelion Dawnborn Axis",
-      "faction": "Empyrean",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_047_caelion-dawnborn-axis/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_048",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-048",
-      "canonicalName": "Aurelia Radiant Spear",
+      "canonicalName": "Sophia, Wisdom of the Living Choir",
       "faction": "Empyrean",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1360,34 +1097,10 @@
       ]
     },
     {
-      "assetId": "TITAN_049",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-049",
-      "canonicalName": "Malachor Law Warden",
-      "faction": "Empyrean",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_049_malachor-law-warden/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_050",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-050",
-      "canonicalName": "Elyndra Choir Crown",
+      "canonicalName": "Shekinah, Radiant Presence",
       "faction": "Empyrean",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1408,58 +1121,10 @@
       ]
     },
     {
-      "assetId": "TITAN_051",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-051",
-      "canonicalName": "Orison White Citadel",
-      "faction": "Empyrean",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_051_orison-white-citadel/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_052",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-052",
-      "canonicalName": "Vespera Mercy Blade",
-      "faction": "Empyrean",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_052_vespera-mercy-blade/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_053",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-053",
-      "canonicalName": "Axiom Gate Choir",
+      "canonicalName": "Gabriel, Herald of the Final Bell",
       "faction": "Empyrean",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1480,34 +1145,10 @@
       ]
     },
     {
-      "assetId": "TITAN_054",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-054",
-      "canonicalName": "Theon Still Horizon",
-      "faction": "Empyrean",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_054_theon-still-horizon/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_055",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-055",
-      "canonicalName": "Mordrath, the Infernal King",
+      "canonicalName": "Lucifer, Morningstar Thronebreaker",
       "faction": "Infernal Dominion",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1528,34 +1169,10 @@
       ]
     },
     {
-      "assetId": "TITAN_056",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-056",
-      "canonicalName": "Varkul Bloodforged Crown",
-      "faction": "Infernal Dominion",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_056_varkul-bloodforged-crown/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_057",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-057",
-      "canonicalName": "Nyxara Flameborn Court",
+      "canonicalName": "Lilith, Night Sovereign",
       "faction": "Infernal Dominion",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1579,7 +1196,7 @@
       "assetId": "TITAN_058",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-058",
-      "canonicalName": "Azrakar Chainwarden",
+      "canonicalName": "Asmodeus, Prince of Burning Desire",
       "faction": "Infernal Dominion",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1600,34 +1217,10 @@
       ]
     },
     {
-      "assetId": "TITAN_059",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-059",
-      "canonicalName": "Orryx Ash Dominion",
-      "faction": "Infernal Dominion",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_059_orryx-ash-dominion/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_060",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-060",
-      "canonicalName": "Malvera Ember Throne",
+      "canonicalName": "Naamah, Velvet Ash Enchantress",
       "faction": "Infernal Dominion",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1648,82 +1241,10 @@
       ]
     },
     {
-      "assetId": "TITAN_061",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-061",
-      "canonicalName": "Kharon Black Iron",
-      "faction": "Infernal Dominion",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_061_kharon-black-iron/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_062",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-062",
-      "canonicalName": "Sablex Cinder Duke",
-      "faction": "Infernal Dominion",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_062_sablex-cinder-duke/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_063",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-063",
-      "canonicalName": "Zerath Wound Gate",
-      "faction": "Infernal Dominion",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_063_zerath-wound-gate/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_028",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-028",
-      "canonicalName": "Amaterion Spirit-Sun",
+      "canonicalName": "Amaterasu, Sun Mirror Empress",
       "faction": "Kami",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1747,7 +1268,7 @@
       "assetId": "TITAN_029",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-029",
-      "canonicalName": "Tsukiro Moon-Veil",
+      "canonicalName": "Tsukuyomi, Moon Order Lord",
       "faction": "Kami",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1768,58 +1289,10 @@
       ]
     },
     {
-      "assetId": "TITAN_030",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-030",
-      "canonicalName": "Raidenko Storm Script",
-      "faction": "Kami",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_030_raidenko-storm-script/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_031",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-031",
-      "canonicalName": "Mizuka Shrine Tide",
-      "faction": "Kami",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_031_mizuka-shrine-tide/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_032",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-032",
-      "canonicalName": "Kageyori Shadow Gate",
+      "canonicalName": "Susanoo, Storm-Sea Exile",
       "faction": "Kami",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1843,7 +1316,7 @@
       "assetId": "TITAN_033",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-033",
-      "canonicalName": "Hanae Blossom Ward",
+      "canonicalName": "Izanami, Yomi Mother",
       "faction": "Kami",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1864,82 +1337,10 @@
       ]
     },
     {
-      "assetId": "TITAN_034",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-034",
-      "canonicalName": "Onimaru Red Seal",
-      "faction": "Kami",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_034_onimaru-red-seal/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_035",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-035",
-      "canonicalName": "Korin Mist Path",
-      "faction": "Kami",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_035_korin-mist-path/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_036",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-036",
-      "canonicalName": "Yamabito Stone Prayer",
-      "faction": "Kami",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_036_yamabito-stone-prayer/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_019",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-019",
-      "canonicalName": "Aurelion Heaven-Marrow",
+      "canonicalName": "Zeus, Thunder Verdict King",
       "faction": "Olympian",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1960,58 +1361,10 @@
       ]
     },
     {
-      "assetId": "TITAN_020",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-020",
-      "canonicalName": "Kallix Marble Thunder",
-      "faction": "Olympian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_020_kallix-marble-thunder/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_021",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-021",
-      "canonicalName": "Thyressa Golden Aegis",
-      "faction": "Olympian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_021_thyressa-golden-aegis/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_022",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-022",
-      "canonicalName": "Ilyon Laurel Flame",
+      "canonicalName": "Artemis, Moon Huntress",
       "faction": "Olympian",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -2035,7 +1388,7 @@
       "assetId": "TITAN_023",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-023",
-      "canonicalName": "Nikos Star-Lance",
+      "canonicalName": "Ares, Bronze War Fury",
       "faction": "Olympian",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -2056,58 +1409,10 @@
       ]
     },
     {
-      "assetId": "TITAN_024",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-024",
-      "canonicalName": "Dione Victory Mirror",
-      "faction": "Olympian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_024_dione-victory-mirror/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_025",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-025",
-      "canonicalName": "Helior Bronze Summit",
-      "faction": "Olympian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_025_helior-bronze-summit/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_026",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-026",
-      "canonicalName": "Pallas Oath-Spear",
+      "canonicalName": "Athena, Aegis Strategist",
       "faction": "Olympian",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -2128,34 +1433,10 @@
       ]
     },
     {
-      "assetId": "TITAN_027",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-027",
-      "canonicalName": "Eiren Crowned Horizon",
-      "faction": "Olympian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_027_eiren-crowned-horizon/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_037",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-037",
-      "canonicalName": "Dagoran Root-Crown",
+      "canonicalName": "Dagda, Good God Cauldron-King",
       "faction": "Tuatha",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -2176,58 +1457,10 @@
       ]
     },
     {
-      "assetId": "TITAN_038",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-038",
-      "canonicalName": "Eryndor Emerald Oath",
-      "faction": "Tuatha",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_038_eryndor-emerald-oath/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_039",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-039",
-      "canonicalName": "Melian Moon-Grove",
-      "faction": "Tuatha",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_039_melian-moon-grove/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
       "assetId": "TITAN_040",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-040",
-      "canonicalName": "Bran Granite Bough",
+      "canonicalName": "Morrígan, Battle-Crow Fate Queen",
       "faction": "Tuatha",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -2251,7 +1484,7 @@
       "assetId": "TITAN_041",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-041",
-      "canonicalName": "Nimue Silver Pool",
+      "canonicalName": "Brigid, Triple Flame Muse",
       "faction": "Tuatha",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -2275,7 +1508,7 @@
       "assetId": "TITAN_042",
       "assetType": "TITAN",
       "canonicalEntityId": "TG-TITAN-042",
-      "canonicalName": "Cernan Wild Vale",
+      "canonicalName": "Lugh, Many-Skilled Radiance",
       "faction": "Tuatha",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -2288,78 +1521,6 @@
         "GLOBAL_REF_003"
       ],
       "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_042_cernan-wild-vale/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_043",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-043",
-      "canonicalName": "Ailbhe Thorn-Song",
-      "faction": "Tuatha",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_043_ailbhe-thorn-song/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_044",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-044",
-      "canonicalName": "Oghma Stone Script",
-      "faction": "Tuatha",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_044_oghma-stone-script/metadata.json",
-      "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
-      "acceptanceCriteria": [
-        "Primary/side/back/action views exist before modeling.",
-        "Faction anatomy lock and anti-human silhouette checks pass.",
-        "Battlefield footprint and mobile readability are preserved."
-      ]
-    },
-    {
-      "assetId": "TITAN_045",
-      "assetType": "TITAN",
-      "canonicalEntityId": "TG-TITAN-045",
-      "canonicalName": "Tara Dawn Barrow",
-      "faction": "Tuatha",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "TITAN_SILHOUETTE_PASS",
-      "phase": "Titan Silhouette Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Titans/TITAN_045_tara-dawn-barrow/metadata.json",
       "handoffInstruction": "Convert required views into mobile-readable sculpt and rig brief.",
       "acceptanceCriteria": [
         "Primary/side/back/action views exist before modeling.",

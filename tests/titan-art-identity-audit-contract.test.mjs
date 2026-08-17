@@ -17,8 +17,18 @@ assert.equal(audit.summary.totalTitans, titans.length);
 assert.equal(audit.summary.pass, titans.length, 'resolution pass should leave every Titan production-ready');
 assert.equal(audit.summary.refine, 0, 'no borderline designs should remain after resolution pass');
 assert.equal(audit.summary.redesign, 0, 'no failed generic identities should remain after resolution pass');
-assert.ok(audit.summary.female >= 21, 'female identity coverage too low');
-assert.ok(audit.summary.male >= 35, 'male identity coverage too low');
+assert.equal(titans.length, 28, 'god-Titan playable roster must be 28 total');
+assert.equal(audit.summary.female, 14, 'female god-Titan coverage must be 14');
+assert.equal(audit.summary.male, 14, 'male god-Titan coverage must be 14');
+const factionSexCounts = new Map();
+for (const titan of titans) {
+  const key = `${titan.factionId}:${titan.sex}`;
+  factionSexCounts.set(key, (factionSexCounts.get(key) || 0) + 1);
+}
+for (const factionId of new Set(titans.map(titan => titan.factionId))) {
+  assert.equal(factionSexCounts.get(`${factionId}:Male`), 2, `${factionId}: must have 2 male god-Titans`);
+  assert.equal(factionSexCounts.get(`${factionId}:Female`), 2, `${factionId}: must have 2 female god-Titans`);
+}
 
 for (const entry of audit.entries) {
   const titan = byTitan.get(entry.titanId);

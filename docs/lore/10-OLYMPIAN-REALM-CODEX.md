@@ -33,12 +33,12 @@ The The Marble Sky of Olympus is defined by radiant rivalry, heroic politics, ma
 - **Lore Function:** Aurelion Heaven-Marrow embodies the Olympian answer to the Ascension Collapse: defender shaped into Realm doctrine.
 - **Chapter Hook:** When Aurelion Heaven-Marrow enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Aurelion Heaven-Marrow against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Kallix Marble Thunder (TG-TITAN-020)
+### Kallix Marble Thunder (TG-TITAN-022)
 - **Role:** Battery
 - **Lore Function:** Kallix Marble Thunder embodies the Olympian answer to the Ascension Collapse: battery shaped into Realm doctrine.
 - **Chapter Hook:** When Kallix Marble Thunder enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Kallix Marble Thunder against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Thyressa Golden Aegis (TG-TITAN-021)
+### Thyressa Golden Aegis (TG-TITAN-023)
 - **Role:** Controller
 - **Lore Function:** Thyressa Golden Aegis embodies the Olympian answer to the Ascension Collapse: controller shaped into Realm doctrine.
 - **Chapter Hook:** When Thyressa Golden Aegis enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
@@ -53,12 +53,12 @@ The The Marble Sky of Olympus is defined by radiant rivalry, heroic politics, ma
 - **Lore Function:** Nikos Star-Lance embodies the Olympian answer to the Ascension Collapse: disruptor shaped into Realm doctrine.
 - **Chapter Hook:** When Nikos Star-Lance enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Nikos Star-Lance against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Dione Victory Mirror (TG-TITAN-024)
+### Dione Victory Mirror (TG-TITAN-022)
 - **Role:** Sustain
 - **Lore Function:** Dione Victory Mirror embodies the Olympian answer to the Ascension Collapse: sustain shaped into Realm doctrine.
 - **Chapter Hook:** When Dione Victory Mirror enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Dione Victory Mirror against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Helior Bronze Summit (TG-TITAN-025)
+### Helior Bronze Summit (TG-TITAN-023)
 - **Role:** Artillery
 - **Lore Function:** Helior Bronze Summit embodies the Olympian answer to the Ascension Collapse: artillery shaped into Realm doctrine.
 - **Chapter Hook:** When Helior Bronze Summit enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
@@ -68,7 +68,7 @@ The The Marble Sky of Olympus is defined by radiant rivalry, heroic politics, ma
 - **Lore Function:** Pallas Oath-Spear embodies the Olympian answer to the Ascension Collapse: guardian shaped into Realm doctrine.
 - **Chapter Hook:** When Pallas Oath-Spear enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Pallas Oath-Spear against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Eiren Crowned Horizon (TG-TITAN-027)
+### Eiren Crowned Horizon (TG-TITAN-019)
 - **Role:** Assassin
 - **Lore Function:** Eiren Crowned Horizon embodies the Olympian answer to the Ascension Collapse: assassin shaped into Realm doctrine.
 - **Chapter Hook:** When Eiren Crowned Horizon enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.

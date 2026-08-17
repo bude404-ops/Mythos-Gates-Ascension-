@@ -38,17 +38,17 @@ The The Storm-Rooted Aesir Holds is defined by iron oaths, rune storms, mountain
 - **Lore Function:** Hrothar Rune-Mountain embodies the Asgardian answer to the Ascension Collapse: battery shaped into Realm doctrine.
 - **Chapter Hook:** When Hrothar Rune-Mountain enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
 - **Visual Context:** Frame Hrothar Rune-Mountain against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
-### Skeld Iron Tempest (TG-TITAN-012)
+### Skeld Iron Tempest (TG-TITAN-015)
 - **Role:** Controller
 - **Lore Function:** Skeld Iron Tempest embodies the Asgardian answer to the Ascension Collapse: controller shaped into Realm doctrine.
 - **Chapter Hook:** When Skeld Iron Tempest enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
 - **Visual Context:** Frame Skeld Iron Tempest against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
-### Eirwyn Valkstorm (TG-TITAN-013)
+### Eirwyn Valkstorm (TG-TITAN-018)
 - **Role:** Breaker
 - **Lore Function:** Eirwyn Valkstorm embodies the Asgardian answer to the Ascension Collapse: breaker shaped into Realm doctrine.
 - **Chapter Hook:** When Eirwyn Valkstorm enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
 - **Visual Context:** Frame Eirwyn Valkstorm against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
-### Mordun Frost-Anvil (TG-TITAN-014)
+### Mordun Frost-Anvil (TG-TITAN-010)
 - **Role:** Disruptor
 - **Lore Function:** Mordun Frost-Anvil embodies the Asgardian answer to the Ascension Collapse: disruptor shaped into Realm doctrine.
 - **Chapter Hook:** When Mordun Frost-Anvil enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
@@ -58,12 +58,12 @@ The The Storm-Rooted Aesir Holds is defined by iron oaths, rune storms, mountain
 - **Lore Function:** Veyra Thunderloom embodies the Asgardian answer to the Ascension Collapse: sustain shaped into Realm doctrine.
 - **Chapter Hook:** When Veyra Thunderloom enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
 - **Visual Context:** Frame Veyra Thunderloom against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
-### Ragnor Skybreaker (TG-TITAN-016)
+### Ragnor Skybreaker (TG-TITAN-015)
 - **Role:** Artillery
 - **Lore Function:** Ragnor Skybreaker embodies the Asgardian answer to the Ascension Collapse: artillery shaped into Realm doctrine.
 - **Chapter Hook:** When Ragnor Skybreaker enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
 - **Visual Context:** Frame Ragnor Skybreaker against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
-### Ullr Snow-Crown (TG-TITAN-017)
+### Ullr Snow-Crown (TG-TITAN-018)
 - **Role:** Guardian
 - **Lore Function:** Ullr Snow-Crown embodies the Asgardian answer to the Ascension Collapse: guardian shaped into Realm doctrine.
 - **Chapter Hook:** When Ullr Snow-Crown enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.

@@ -38,12 +38,12 @@ The The Shrine-Path Archipelago is defined by ritual precision, sacred fog, moon
 - **Lore Function:** Tsukiro Moon-Veil embodies the Kami answer to the Ascension Collapse: battery shaped into Realm doctrine.
 - **Chapter Hook:** When Tsukiro Moon-Veil enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Tsukiro Moon-Veil against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Raidenko Storm Script (TG-TITAN-030)
+### Raidenko Storm Script (TG-TITAN-032)
 - **Role:** Controller
 - **Lore Function:** Raidenko Storm Script embodies the Kami answer to the Ascension Collapse: controller shaped into Realm doctrine.
 - **Chapter Hook:** When Raidenko Storm Script enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Raidenko Storm Script against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Mizuka Shrine Tide (TG-TITAN-031)
+### Mizuka Shrine Tide (TG-TITAN-033)
 - **Role:** Breaker
 - **Lore Function:** Mizuka Shrine Tide embodies the Kami answer to the Ascension Collapse: breaker shaped into Realm doctrine.
 - **Chapter Hook:** When Mizuka Shrine Tide enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
@@ -58,17 +58,17 @@ The The Shrine-Path Archipelago is defined by ritual precision, sacred fog, moon
 - **Lore Function:** Hanae Blossom Ward embodies the Kami answer to the Ascension Collapse: sustain shaped into Realm doctrine.
 - **Chapter Hook:** When Hanae Blossom Ward enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Hanae Blossom Ward against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Onimaru Red Seal (TG-TITAN-034)
+### Onimaru Red Seal (TG-TITAN-032)
 - **Role:** Artillery
 - **Lore Function:** Onimaru Red Seal embodies the Kami answer to the Ascension Collapse: artillery shaped into Realm doctrine.
 - **Chapter Hook:** When Onimaru Red Seal enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Onimaru Red Seal against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Korin Mist Path (TG-TITAN-035)
+### Korin Mist Path (TG-TITAN-033)
 - **Role:** Guardian
 - **Lore Function:** Korin Mist Path embodies the Kami answer to the Ascension Collapse: guardian shaped into Realm doctrine.
 - **Chapter Hook:** When Korin Mist Path enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Korin Mist Path against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Yamabito Stone Prayer (TG-TITAN-036)
+### Yamabito Stone Prayer (TG-TITAN-028)
 - **Role:** Assassin
 - **Lore Function:** Yamabito Stone Prayer embodies the Kami answer to the Ascension Collapse: assassin shaped into Realm doctrine.
 - **Chapter Hook:** When Yamabito Stone Prayer enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.

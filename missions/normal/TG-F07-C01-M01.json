@@ -8,25 +8,23 @@
   "missionNumber": 1,
   "missionInChapter": 1,
   "title": "The Bargain Opens: Threshold Sign",
-  "description": "The Bargain Opens unfolds across black iron court with volcanic glass aisles and ember chain channels, pushing a one active Infernal Dominion Titan to prove aggression, debuffs, pulls, execution, burn pressure, power through risk. without violating established Realm canon.",
-  "lore": "The Bargain Opens: Threshold Sign advances Cinders of Dominion: The Black Iron Court turns Gate wounds into bargains, proving ambition can defend a Realm only when power accepts consequence. It directly tests the faction tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.",
+  "description": "The Bargain Opens unfolds across black iron court with volcanic glass aisles and ember chain channels, pushing a one active Titan Infernal Dominion Titan to prove aggression, debuffs, pulls, execution, burn pressure, power through risk. without violating established Realm canon. Appearance rule: Infernal Dominion is the source culture humans later copied as hell, demonology, and infernal contract myth; mission terrain and cosmetics must show black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchies, ash velvet, hellfire clauses.",
+  "lore": "This mission treats Infernal Dominion as the origin behind hell, demonology, and infernal contract myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchies, ash velvet, hellfire clauses instead of generic historical or RPG dressing.",
   "recommendedPower": 535,
-  "activeTitanCount": 1,
   "encouragedTitanRoles": [
-    "obsidian executioner",
-    "chain pull controller",
-    "hellfire breaker",
-    "court debuffer",
-    "cinder sustain"
+    "infernal execution monarch",
+    "survivable objective holder",
+    "burst or control specialist"
   ],
   "mapId": "TG-MAP-006",
-  "terrain": "black iron court with volcanic glass aisles and ember chain channels",
+  "terrain": "black iron court with volcanic glass aisles and ember chain channels; source-culture appearance layer: black iron courts, volcanic glass aisles, ember chain channels, debtor seal floors, contract dais, obsidian throne shadows; cosmetic/relic silhouettes: Goetic chain-crown blades, volcanic glass debtor plates, blood-wax infernal ledger cores, chain-lien reversals",
   "objectives": {
-    "primary": "Secure the The Cinder-Wound Gate approach before Hollow pressure rewrites the field.",
+    "primary": "Complete The Bargain Opens: Threshold Sign with one active Titan while reading black iron court with volcanic glass aisles and ember chain channels and preserving faction doctrine.",
     "optional": [
       "Complete before turn 10",
-      "Keep your active Titan above 40% integrity",
-      "Trigger at least two Infernal Dominion faction mechanics"
+      "Keep at least four Titan standing",
+      "Trigger at least two Infernal Dominion faction mechanics",
+      "Trigger at least one Momentum or Divinity decision before victory"
     ]
   },
   "enemyWaves": [
@@ -50,34 +48,37 @@
   "boss": null,
   "turnLimit": 12,
   "specialRules": [
+    "Dominion Claim: executions refund Momentum when the Titan controls chain-marked ground.",
     "Bargain Mark: accepting risk creates stronger rewards but harsher enemy turns.",
     "Dominion Flame: decisive aggression turns enemy weakness into momentum.",
-    "one active standard Titan"
+    "Solo Titanic Scale: one active Titan occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
   ],
   "victoryConditions": [
-    "Secure the The Cinder-Wound Gate approach before Hollow pressure rewrites the field."
+    "Complete The Bargain Opens: Threshold Sign with one active Titan while reading black iron court with volcanic glass aisles and ember chain channels and preserving faction doctrine."
   ],
   "defeatConditions": [
-    "All Titans fall",
+    "Your active Titan falls",
     "Primary objective fails",
     "Turn limit expires"
   ],
   "rewards": {
     "firstClear": [
+      "Solo Titan mastery XP",
       "Mid-tier Infernal Dominion relic material",
       "Infernal Dominion faction shard cache",
       "Infernal Dominion doctrine upgrade dust",
       "TG-F07-C01-M01 codex shard"
     ],
     "replay": [
+      "Titan mastery XP",
       "Infernal Dominion relic material",
       "Infernal Dominion doctrine upgrade dust",
-      "Gear component"
+      "Infernal Dominion source-culture cosmetic/relic component"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
-      "one": "Primary completed under severe integrity or turn pressure"
+      "one": "Primary completed under severe casualty or turn pressure"
     }
   },
   "codexUnlocks": [
@@ -93,7 +94,16 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
+  "activeTitanDesignNotes": "Balanced for one active Titan; roster depth changes pre-launch selection, not on-field body count.",
+  "chapterId": "TG-F07-CH01",
+  "difficulty": "Normal",
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose one Titan before launch; no ally positioning or team formations in battle.",
+    "squadCombat": "FORBIDDEN",
+    "teamTurns": "FORBIDDEN"
+  },
   "tacticalProfile": {
     "problemTags": [
       "heavily_armored_enemies",
@@ -109,8 +119,7 @@
     ],
     "recommendedTitanIds": [
       "TG-TITAN-058",
-      "TG-TITAN-062",
-      "TG-TITAN-057"
+      "TG-TITAN-055"
     ],
     "recommendedTitans": [
       {
@@ -119,7 +128,7 @@
         "reason": "Breaker advantage for heavily armored enemies"
       },
       {
-        "id": "TG-TITAN-062",
+        "id": "TG-TITAN-060",
         "name": "Sablex Cinder Duke",
         "reason": "Guardian advantage for heavily armored enemies"
       },
@@ -131,12 +140,81 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+    "rule": "Favored-not-required: any valid active Titan may clear the mission; recommended god-Titans are tactical hints only."
   },
-  "activeTitanPolicy": {
-    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
-    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
-    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  "sourceCultureAppearanceRule": {
+    "realm": "Infernal Dominion",
+    "materials": "black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchies, ash velvet, hellfire clauses",
+    "terrain": "black iron courts, volcanic glass aisles, ember chain channels, debtor seal floors, contract dais, obsidian throne shadows",
+    "cosmeticRelicSilhouettes": "Goetic chain-crown blades, volcanic glass debtor plates, blood-wax infernal ledger cores, chain-lien reversals",
+    "avoid": "generic Halloween devil, red robot demon, cartoon pitchfork, rubber horns, random pentagram spam, neon cyber hell"
   },
-  "teamSize": 1
+  "updated": "2026-08-16",
+  "activeTitanCount": 1,
+  "teamSize": 1,
+  "combatArchitecture": {
+    "engineTarget": "Unreal Engine 5",
+    "platformBaseline": [
+      "Android",
+      "iOS"
+    ],
+    "loop": [
+      "Explore",
+      "Encounter",
+      "1 Titan vs. Multiple Enemies",
+      "Victory",
+      "Rewards",
+      "Upgrade Titan",
+      "Explore Further"
+    ],
+    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
+    "playerControlledTitans": 1,
+    "mobileFirst": true,
+    "forbidden": [
+      "squad combat",
+      "team formations",
+      "multiple player-controlled Titans",
+      "ally positioning",
+      "team turns"
+    ]
+  },
+  "crossFactionRunIns": {
+    "enabled": true,
+    "homeFactionId": "TG-FACTION-007",
+    "homeFactionName": "Infernal Dominion",
+    "eligiblePoolIds": [
+      "TG-CROSS-RUN-IN-001",
+      "TG-CROSS-RUN-IN-002",
+      "TG-CROSS-RUN-IN-003",
+      "TG-CROSS-RUN-IN-004",
+      "TG-CROSS-RUN-IN-005",
+      "TG-CROSS-RUN-IN-006"
+    ],
+    "recommendedPoolIds": [
+      "TG-CROSS-RUN-IN-003",
+      "TG-CROSS-RUN-IN-004"
+    ],
+    "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
+    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone Titan without creating ally units or squad play."
+  },
+  "loreContinuityGuard": {
+    "sourceFactionId": "TG-FACTION-007",
+    "sourceFactionName": "Infernal Dominion",
+    "sourceRealm": "The Infernal Dominion",
+    "sourceCultureRule": "source culture humans later copied as hell, demonology, and infernal contract lore",
+    "preserve": [
+      "established faction identity",
+      "Titan Gates mythology",
+      "Gates and Codex systems",
+      "one player-controlled Titan combat",
+      "mobile UE5 zone structure"
+    ],
+    "forbid": [
+      "replacement factions",
+      "generic corridor dungeon conversion",
+      "PC-first combat assumptions",
+      "generic monster filler",
+      "lore rewrites"
+    ]
+  }
 }

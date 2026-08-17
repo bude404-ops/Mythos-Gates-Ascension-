@@ -8,25 +8,23 @@
   "missionNumber": 11,
   "missionInChapter": 3,
   "title": "Elite: Dissonance Trial: Hidden Law",
-  "description": "Dissonance Trial unfolds across dissonance gallery where false harmonies break battle line timing, pushing a one active Empyrean Titan to prove protection, order-locks, shields, anti-chaos control, battle lineless aura play. without violating established Realm canon.",
-  "lore": "Dissonance Trial: Hidden Law advances Empyrean Choir Vault: The Radiant Hierarchies ascend a broken heaven-engine where order can stabilize worlds or erase dissonant survivors. It directly tests the faction tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.",
+  "description": "Dissonance Trial unfolds across dissonance gallery where false harmonies break battle line timing, pushing a one active Titan Empyrean Titan to prove protection, order-locks, shields, anti-chaos control, battle lineless aura play. without violating established Realm canon. Appearance rule: Radiant Hierarchies is the source culture humans later copied as angelic hierarchy and heavenly myth; mission terrain and cosmetics must show white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometry, scroll seals, ophanim wheels, seraph fire.",
+  "lore": "This mission treats Radiant Hierarchies as the origin behind angelic hierarchy and heavenly myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometry, scroll seals, ophanim wheels, seraph fire instead of generic historical or RPG dressing.",
   "recommendedPower": 1030,
-  "activeTitanCount": 1,
   "encouragedTitanRoles": [
-    "radiant protector",
-    "edict controller",
-    "resonance shieldbearer",
-    "halo artillery",
-    "choir sustain"
+    "choir-vault ascendant",
+    "survivable objective holder",
+    "burst or control specialist"
   ],
   "mapId": "TG-MAP-011",
-  "terrain": "dissonance gallery where false harmonies break battle line timing",
+  "terrain": "dissonance gallery where false harmonies break battle line timing; source-culture appearance layer: choir vault ascents, bell platforms, ophanim wheel lanes, throne-judgment stairs, living scroll seal floors, glass-light bridges; cosmetic/relic silhouettes: seraph bell-edict blades, opal-glass cherubim aegis, ophanim many-eye choir cores, wheel intercept silhouettes",
   "objectives": {
-    "primary": "Cleanse the Gate wound without breaking Empyrean realm law. Elite remix: complete it while the secondary hazard condition is active.",
+    "primary": "Complete Elite: Dissonance Trial: Hidden Law with one active Titan while reading dissonance gallery where false harmonies break battle line timing and preserving faction doctrine.",
     "optional": [
       "Win with no Titan defeated",
       "Resolve at least three Empyrean doctrine actions",
-      "Hold every objective for one full enemy turn"
+      "Hold every objective for one full enemy turn",
+      "Trigger at least one Momentum or Divinity decision before victory"
     ]
   },
   "enemyWaves": [
@@ -50,36 +48,39 @@
   "boss": null,
   "turnLimit": 15,
   "specialRules": [
+    "Hymn Resonance: Divinity builds when the Titan chains ability timing with sacred echoes.",
     "Choir Lock: beacon timing shields battle line if objectives resolve in order.",
     "Radiant Edict: structured actions reduce chaos effects and protect allies.",
-    "one active standard Titan",
     "Elite Hazard: secondary realm pressure starts active.",
-    "Elite Command: enemy support persists until objective action breaks the source."
+    "Elite Command: enemy support persists until objective action breaks the source.",
+    "Solo Titanic Scale: one active Titan occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
   ],
   "victoryConditions": [
-    "Cleanse the Gate wound without breaking Empyrean realm law. Elite remix: complete it while the secondary hazard condition is active."
+    "Complete Elite: Dissonance Trial: Hidden Law with one active Titan while reading dissonance gallery where false harmonies break battle line timing and preserving faction doctrine."
   ],
   "defeatConditions": [
-    "All Titans fall",
+    "Your active Titan falls",
     "Primary objective fails",
     "Turn limit expires"
   ],
   "rewards": {
     "firstClear": [
+      "Solo Titan mastery XP",
       "High-tier Empyrean relic material",
       "Empyrean faction shard cache",
       "Empyrean doctrine upgrade dust",
       "TG-F06-E-C03-M11 codex shard"
     ],
     "replay": [
+      "Titan mastery XP",
       "Empyrean relic material",
       "Empyrean doctrine upgrade dust",
-      "Gear component"
+      "Empyrean source-culture cosmetic/relic component"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
-      "one": "Primary completed under severe integrity or turn pressure"
+      "one": "Primary completed under severe casualty or turn pressure"
     }
   },
   "codexUnlocks": [
@@ -95,7 +96,7 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
+  "activeTitanDesignNotes": "Balanced for one active Titan; roster depth changes pre-launch selection, not on-field body count.",
   "eliteRemixOf": "TG-F06-C03-M11",
   "meaningfulDifferences": [
     "Secondary realm hazard active from opening turn",
@@ -103,6 +104,15 @@
     "Objective timing is stricter",
     "Boss or elite wave uses altered entry timing"
   ],
+  "chapterId": "TG-F06-CH03",
+  "difficulty": "Elite",
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose one Titan before launch; no ally positioning or team formations in battle.",
+    "squadCombat": "FORBIDDEN",
+    "teamTurns": "FORBIDDEN"
+  },
   "tacticalProfile": {
     "problemTags": [
       "heavily_armored_enemies",
@@ -117,13 +127,12 @@
       "Sustain"
     ],
     "recommendedTitanIds": [
-      "TG-TITAN-049",
-      "TG-TITAN-053",
-      "TG-TITAN-046"
+      "TG-TITAN-050",
+      "TG-TITAN-053"
     ],
     "recommendedTitans": [
       {
-        "id": "TG-TITAN-049",
+        "id": "TG-TITAN-053",
         "name": "Malachor Law Warden",
         "reason": "Breaker advantage for heavily armored enemies"
       },
@@ -140,12 +149,81 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+    "rule": "Favored-not-required: any valid active Titan may clear the mission; recommended god-Titans are tactical hints only."
   },
-  "activeTitanPolicy": {
-    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
-    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
-    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  "sourceCultureAppearanceRule": {
+    "realm": "Radiant Hierarchies",
+    "materials": "white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometry, scroll seals, ophanim wheels, seraph fire",
+    "terrain": "choir vault ascents, bell platforms, ophanim wheel lanes, throne-judgment stairs, living scroll seal floors, glass-light bridges",
+    "cosmeticRelicSilhouettes": "seraph bell-edict blades, opal-glass cherubim aegis, ophanim many-eye choir cores, wheel intercept silhouettes",
+    "avoid": "robot angel, spaceship armor, cute cherub baby, generic church costume, literal cathedral body, neon sci-fi halo"
   },
-  "teamSize": 1
+  "updated": "2026-08-16",
+  "activeTitanCount": 1,
+  "teamSize": 1,
+  "combatArchitecture": {
+    "engineTarget": "Unreal Engine 5",
+    "platformBaseline": [
+      "Android",
+      "iOS"
+    ],
+    "loop": [
+      "Explore",
+      "Encounter",
+      "1 Titan vs. Multiple Enemies",
+      "Victory",
+      "Rewards",
+      "Upgrade Titan",
+      "Explore Further"
+    ],
+    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
+    "playerControlledTitans": 1,
+    "mobileFirst": true,
+    "forbidden": [
+      "squad combat",
+      "team formations",
+      "multiple player-controlled Titans",
+      "ally positioning",
+      "team turns"
+    ]
+  },
+  "crossFactionRunIns": {
+    "enabled": true,
+    "homeFactionId": "TG-FACTION-006",
+    "homeFactionName": "Empyrean",
+    "eligiblePoolIds": [
+      "TG-CROSS-RUN-IN-001",
+      "TG-CROSS-RUN-IN-002",
+      "TG-CROSS-RUN-IN-003",
+      "TG-CROSS-RUN-IN-004",
+      "TG-CROSS-RUN-IN-005",
+      "TG-CROSS-RUN-IN-007"
+    ],
+    "recommendedPoolIds": [
+      "TG-CROSS-RUN-IN-003",
+      "TG-CROSS-RUN-IN-004"
+    ],
+    "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
+    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone Titan without creating ally units or squad play."
+  },
+  "loreContinuityGuard": {
+    "sourceFactionId": "TG-FACTION-006",
+    "sourceFactionName": "Empyrean",
+    "sourceRealm": "The Radiant Hierarchies",
+    "sourceCultureRule": "source culture humans later copied as angelic and heavenly lore",
+    "preserve": [
+      "established faction identity",
+      "Titan Gates mythology",
+      "Gates and Codex systems",
+      "one player-controlled Titan combat",
+      "mobile UE5 zone structure"
+    ],
+    "forbid": [
+      "replacement factions",
+      "generic corridor dungeon conversion",
+      "PC-first combat assumptions",
+      "generic monster filler",
+      "lore rewrites"
+    ]
+  }
 }

@@ -8,25 +8,23 @@
   "missionNumber": 18,
   "missionInChapter": 2,
   "title": "Elite: The Laurel-Star Gate: First Pressure",
-  "description": "The Laurel-Star Gate unfolds across Laurel-Star Gate summit above the arena with cracked champion plinths, pushing a one active Olympian Titan to prove elite balanced pressure, precision, dueling, morale momentum. without violating established Realm canon.",
-  "lore": "The Laurel-Star Gate: First Pressure advances Laurel Senate Trials: Olympus turns the reopened Gate into public trial law, forcing glory to become defense instead of vanity. It directly tests the faction tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.",
+  "description": "The Laurel-Star Gate unfolds across Laurel-Star Gate summit above the arena with cracked champion plinths, pushing a one active Titan Olympian Titan to prove elite balanced pressure, precision, dueling, morale momentum. without violating established Realm canon. Appearance rule: Celestial Heights of Olympus is the source culture humans later copied as Greek divine court myth; mission terrain and cosmetics must show living marble-light, bronze cuirasses, laurel circuits, aegis scales, oracle smoke, thunder tribunal halos, gold-blue skyfire.",
+  "lore": "This mission treats Celestial Heights of Olympus as the origin behind Greek divine court myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use living marble-light, bronze cuirasses, laurel circuits, aegis scales, oracle smoke, thunder tribunal halos, gold-blue skyfire instead of generic historical or RPG dressing.",
   "recommendedPower": 1158,
-  "activeTitanCount": 1,
   "encouragedTitanRoles": [
-    "frontline champion",
-    "precision duelist",
-    "morale breaker",
-    "objective laureate",
-    "statue-control support"
+    "heroic arena duelist",
+    "survivable objective holder",
+    "burst or control specialist"
   ],
   "mapId": "TG-MAP-004",
-  "terrain": "Laurel-Star Gate summit above the arena with cracked champion plinths",
+  "terrain": "Laurel-Star Gate summit above the arena with cracked champion plinths; source-culture appearance layer: laurel trial arenas, marble sky platforms, oracle smoke lanes, aegis tribunal shields, thunder verdict courts; cosmetic/relic silhouettes: aegis laurel spears, living marble bronze cuirasses, oracle ambrosia cores, Athena countermeasure silhouettes",
   "objectives": {
-    "primary": "Hold two Olympian objective markers while the Laurel Senate Trials conflict escalates. Elite remix: complete it while the secondary hazard condition is active.",
+    "primary": "Complete Elite: The Laurel-Star Gate: First Pressure with one active Titan while reading Laurel-Star Gate summit above the arena with cracked champion plinths and preserving faction doctrine.",
     "optional": [
       "Win with no Titan defeated",
       "Resolve at least three Olympian doctrine actions",
-      "Hold every objective for one full enemy turn"
+      "Hold every objective for one full enemy turn",
+      "Trigger at least one Momentum or Divinity decision before victory"
     ]
   },
   "enemyWaves": [
@@ -41,45 +39,51 @@
     {
       "wave": 2,
       "enemyIds": [
-        "TG-CREATURE-010"
+        "TG-CREATURE-028",
+        "TG-CREATURE-029"
       ],
-      "entry": "reinforcement from the Gate wound flank",
-      "trigger": "turn 3 or first objective claimed"
+      "entry": "cross-faction Kami reinforcement",
+      "trigger": "turn 3 or first objective claimed",
+      "crossFaction": true
     }
   ],
   "boss": null,
   "turnLimit": 17,
   "specialRules": [
+    "Laurel Trial: Divinity rises when the Titan defeats priority enemies in clean sequence.",
     "Olympian Trial: public belief empowers clean victories but punishes reckless overreach.",
     "Laurel Supremacy: clean objective execution chains morale and precision bonuses.",
-    "one active standard Titan",
     "Elite Hazard: secondary realm pressure starts active.",
-    "Elite Command: enemy support persists until objective action breaks the source."
+    "Elite Command: enemy support persists until objective action breaks the source.",
+    "Solo Titanic Scale: one active Titan occupies the tactical focus; enemies, elites, and bosses scale around that single presence.",
+    "Cross-Faction Threat: Kami enemies join the Hollow in this elite encounter."
   ],
   "victoryConditions": [
-    "Hold two Olympian objective markers while the Laurel Senate Trials conflict escalates. Elite remix: complete it while the secondary hazard condition is active."
+    "Complete Elite: The Laurel-Star Gate: First Pressure with one active Titan while reading Laurel-Star Gate summit above the arena with cracked champion plinths and preserving faction doctrine."
   ],
   "defeatConditions": [
-    "All Titans fall",
+    "Your active Titan falls",
     "Primary objective fails",
     "Turn limit expires"
   ],
   "rewards": {
     "firstClear": [
+      "Solo Titan mastery XP",
       "High-tier Olympian relic material",
       "Olympian faction shard cache",
       "Olympian doctrine upgrade dust",
       "TG-F03-E-C05-M18 codex shard"
     ],
     "replay": [
+      "Titan mastery XP",
       "Olympian relic material",
       "Olympian doctrine upgrade dust",
-      "Gear component"
+      "Olympian source-culture cosmetic/relic component"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
-      "one": "Primary completed under severe integrity or turn pressure"
+      "one": "Primary completed under severe casualty or turn pressure"
     }
   },
   "codexUnlocks": [
@@ -95,7 +99,7 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
+  "activeTitanDesignNotes": "Balanced for one active Titan; roster depth changes pre-launch selection, not on-field body count.",
   "eliteRemixOf": "TG-F03-C05-M18",
   "meaningfulDifferences": [
     "Secondary realm hazard active from opening turn",
@@ -103,6 +107,15 @@
     "Objective timing is stricter",
     "Boss or elite wave uses altered entry timing"
   ],
+  "chapterId": "TG-F03-CH05",
+  "difficulty": "Elite",
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose one Titan before launch; no ally positioning or team formations in battle.",
+    "squadCombat": "FORBIDDEN",
+    "teamTurns": "FORBIDDEN"
+  },
   "tacticalProfile": {
     "problemTags": [
       "long_survival",
@@ -118,8 +131,7 @@
     ],
     "recommendedTitanIds": [
       "TG-TITAN-019",
-      "TG-TITAN-024",
-      "TG-TITAN-026"
+      "TG-TITAN-022"
     ],
     "recommendedTitans": [
       {
@@ -128,7 +140,7 @@
         "reason": "Defender advantage for long survival"
       },
       {
-        "id": "TG-TITAN-024",
+        "id": "TG-TITAN-022",
         "name": "Dione Victory Mirror",
         "reason": "Sustain advantage for long survival"
       },
@@ -140,12 +152,81 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+    "rule": "Favored-not-required: any valid active Titan may clear the mission; recommended god-Titans are tactical hints only."
   },
-  "activeTitanPolicy": {
-    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
-    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
-    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  "sourceCultureAppearanceRule": {
+    "realm": "Celestial Heights of Olympus",
+    "materials": "living marble-light, bronze cuirasses, laurel circuits, aegis scales, oracle smoke, thunder tribunal halos, gold-blue skyfire",
+    "terrain": "laurel trial arenas, marble sky platforms, oracle smoke lanes, aegis tribunal shields, thunder verdict courts",
+    "cosmeticRelicSilhouettes": "aegis laurel spears, living marble bronze cuirasses, oracle ambrosia cores, Athena countermeasure silhouettes",
+    "avoid": "generic toga costume, Roman gladiator confusion, marble statue stiffness, robot bronze automaton, sci-fi halo, plastic laurel"
   },
-  "teamSize": 1
+  "updated": "2026-08-16",
+  "activeTitanCount": 1,
+  "teamSize": 1,
+  "combatArchitecture": {
+    "engineTarget": "Unreal Engine 5",
+    "platformBaseline": [
+      "Android",
+      "iOS"
+    ],
+    "loop": [
+      "Explore",
+      "Encounter",
+      "1 Titan vs. Multiple Enemies",
+      "Victory",
+      "Rewards",
+      "Upgrade Titan",
+      "Explore Further"
+    ],
+    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
+    "playerControlledTitans": 1,
+    "mobileFirst": true,
+    "forbidden": [
+      "squad combat",
+      "team formations",
+      "multiple player-controlled Titans",
+      "ally positioning",
+      "team turns"
+    ]
+  },
+  "crossFactionRunIns": {
+    "enabled": true,
+    "homeFactionId": "TG-FACTION-003",
+    "homeFactionName": "Olympian",
+    "eligiblePoolIds": [
+      "TG-CROSS-RUN-IN-001",
+      "TG-CROSS-RUN-IN-002",
+      "TG-CROSS-RUN-IN-004",
+      "TG-CROSS-RUN-IN-005",
+      "TG-CROSS-RUN-IN-006",
+      "TG-CROSS-RUN-IN-007"
+    ],
+    "recommendedPoolIds": [
+      "TG-CROSS-RUN-IN-007",
+      "TG-CROSS-RUN-IN-001"
+    ],
+    "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
+    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone Titan without creating ally units or squad play."
+  },
+  "loreContinuityGuard": {
+    "sourceFactionId": "TG-FACTION-003",
+    "sourceFactionName": "Olympian",
+    "sourceRealm": "The Celestial Heights of Olympus",
+    "sourceCultureRule": "source culture humans later copied as Greek myth",
+    "preserve": [
+      "established faction identity",
+      "Titan Gates mythology",
+      "Gates and Codex systems",
+      "one player-controlled Titan combat",
+      "mobile UE5 zone structure"
+    ],
+    "forbid": [
+      "replacement factions",
+      "generic corridor dungeon conversion",
+      "PC-first combat assumptions",
+      "generic monster filler",
+      "lore rewrites"
+    ]
+  }
 }

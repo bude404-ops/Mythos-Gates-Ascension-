@@ -1,16 +1,16 @@
 {
   "id": "TG-TITAN-055",
-  "slug": "mordrath-the-infernal-king",
-  "name": "Mordrath, the Infernal King",
+  "slug": "lucifer",
+  "name": "Lucifer",
   "factionId": "TG-FACTION-007",
   "faction": "Infernal Dominion",
-  "rarity": "Legendary",
+  "rarity": "Mythic God",
   "role": "Defender",
   "abilities": [
-    "Mordrath \u2014 Black-Iron Clause Cut Anchor",
-    "Blood-Wax Contract Technique \u2014 Bastion",
+    "Mordrath — Black-Iron Clause Cut Anchor",
+    "Blood-Wax Contract Technique — Bastion",
     "Mordrath: Infernal Debt Verdict Holdfast",
-    "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
+    "Divine Ascension — Hell-Crown Dominion Unbound"
   ],
   "stats": {
     "hp": 52,
@@ -32,19 +32,19 @@
     "Mordrath Blood-Wax Infernal Ledger Core"
   ],
   "passives": [
-    "Debt With Teeth: Mordrath, the Infernal King gains Contract Debt when its defender choices express Infernal Dominion source-culture law through black-iron contract ground; Earth myth is only the later echo."
+    "Blood Contract: Mordrath gains Debtfire when defender play anchors a control zone and converts enemy commitment into mitigation on contract-scorched court ground. At 3 stacks, the next Technique or Reaction adds a debt, clause, and dominion law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Infernal Dominion."
   ],
-  "lore": "Mordrath, the Infernal King is a colossal Infernal Dominion defender from The Infernal Dominion. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Titan is the older source: Infernal Dominion defender office: sovereign protector, gate-holder, law shield; Horns/wings/claws: rank, predation, nobility, monstrous majesty.",
-  "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
-  "visualDescription": "Full-body living myth-source Titan, not a costume: Mordrath, the Infernal King shows black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture.. Role silhouette must read as Defender. Materials include black iron, volcanic glass, obsidian, blood wax, ash velvet, molten gold, charred parchment. The design must feel older than human mythology and avoid red robot demon, generic Halloween devil, sci-fi cables, literal castle armor, block fortress body, cartoon pitchfork.",
-  "artStatus": "Prompt Ready",
+  "lore": "Lucifer, Morningstar Thronebreaker, is now canonized as one of the four playable god-Titans of Infernal Dominion. The Titan is the source-realm divinity behind the mythology rather than a generic champion: fallen morningstar prince, infernal sovereignty, beautiful rebellion and throne defense. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology god whose behavior expresses fallen morningstar prince, infernal sovereignty, beautiful rebellion and throne defense; confident, sovereign, readable in combat, loyal to the unchanged Infernal Dominion canon.",
+  "visualDescription": "Lucifer manifests as fallen morningstar prince, infernal sovereignty, beautiful rebellion and throne defense from Infernal Dominion: beautiful aristocratic masculine devil face, sharp cheekbones, pale fire eyes, elegant cruel mouth; tall lithe masculine prince build, broad tailored shoulders, narrow waist, predatory upright grace; signature silhouette: high horns, torn royal wings, star-sword, black crown outline. Weapon: black star longsword and obsidian contract shield. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
+  "artStatus": "READY_FOR_GENERATION",
   "artPromptId": "TG-PROMPT-055",
   "artworkId": null,
   "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
   "backstoryId": "TG-BACKSTORY-TITAN-055",
   "abilityDetails": [
     {
-      "name": "Mordrath \u2014 Black-Iron Clause Cut Anchor",
+      "name": "Mordrath — Black-Iron Clause Cut Anchor",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -60,7 +60,7 @@
       "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
     },
     {
-      "name": "Blood-Wax Contract Technique \u2014 Bastion",
+      "name": "Blood-Wax Contract Technique — Bastion",
       "slot": "Technique",
       "unlockLevel": 4,
       "cost": "20 Momentum",
@@ -92,7 +92,7 @@
       "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
     },
     {
-      "name": "Divine Ascension \u2014 Hell-Crown Dominion Unbound",
+      "name": "Divine Ascension — Hell-Crown Dominion Unbound",
       "slot": "Ascension",
       "unlockLevel": 30,
       "cost": "100 Divinity",
@@ -164,26 +164,41 @@
       "resource denial enemies",
       "bad terrain matchups",
       "mistimed reactions"
-    ]
+    ],
+    "uniqueMechanic": "Mordrath's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+    "counterplayRule": "spread attackers, displacement, or terrain denial break the anchor"
   },
-  "mythicSource": "Infernal Dominion defender office: sovereign protector, gate-holder, law shield; Horns/wings/claws: rank, predation, nobility, monstrous majesty",
-  "visualTraits": [
-    "sovereign protector",
-    "gate-holder",
-    "law shield",
-    "source culture humans later copied as hell, demonology, and infernal contract lore",
-    "chain shadow"
-  ],
-  "armorCanon": "Armor must use black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture.; construction proves source culture humans later copied as hell, demonology, and infernal contract lore; no red robot demon, generic Halloween devil, sci-fi cables, literal castle armor.",
-  "updated": "2026-08-16",
-  "weaponCanon": "Mordrath Bulwark Goetic Chain-Crown Blade",
+  "mythicSource": "Lucifer — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+  "visualTraits": {
+    "face": "beautiful aristocratic masculine devil face, sharp cheekbones, pale fire eyes, elegant cruel mouth",
+    "bodyProportions": "tall lithe masculine prince build, broad tailored shoulders, narrow waist, predatory upright grace",
+    "silhouette": "high horns, torn royal wings, star-sword, black crown outline",
+    "weapon": "black star longsword and obsidian contract shield",
+    "sexIdentity": "Male"
+  },
+  "armorCanon": {
+    "identityRule": "Armor must reveal male divine anatomy and Infernal Dominion civilization logic; no generic armor template.",
+    "silhouette": "high horns, torn royal wings, star-sword, black crown outline"
+  },
+  "updated": "2026-08-17",
+  "weaponCanon": {
+    "signatureWeapon": "black star longsword and obsidian contract shield",
+    "loreReason": "Chosen because Lucifer embodies fallen morningstar prince, infernal sovereignty, beautiful rebellion and throne defense in combat."
+  },
   "gearCanon": {
-    "weapon": "Mordrath Bulwark Goetic Chain-Crown Blade",
-    "armor": "Mordrath Volcanic Glass Debtor Plate",
-    "core": "Mordrath Blood-Wax Infernal Ledger Core",
-    "movementRelic": "Infernal Clause Step",
-    "reactionRelic": "Chain-Lien Reversal",
-    "executionRelic": "Collect the Soul Clause",
-    "visualRule": "black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchy, ash velvet, hellfire clauses"
-  }
+    "maskHelmetCrown": "Crown/helmet/mask must support beautiful aristocratic masculine devil face, sharp cheekbones, pale fire eyes, elegant cruel mouth and high horns, torn royal wings, star-sword, black crown outline; never hide sex identity or make the god interchangeable."
+  },
+  "sex": "Male",
+  "titanArtDna": {
+    "rosterCanon": "FOUR_GODS_PER_FACTION_PLAYABLE_ROSTER",
+    "mythologyGod": "Lucifer",
+    "sex": "Male",
+    "archetype": "fallen morningstar prince, infernal sovereignty, beautiful rebellion and throne defense",
+    "signatureWeapon": "black star longsword and obsidian contract shield",
+    "faceLock": "beautiful aristocratic masculine devil face, sharp cheekbones, pale fire eyes, elegant cruel mouth",
+    "bodyLock": "tall lithe masculine prince build, broad tailored shoulders, narrow waist, predatory upright grace",
+    "silhouetteLock": "high horns, torn royal wings, star-sword, black crown outline",
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved."
+  },
+  "title": "Morningstar Thronebreaker"
 }

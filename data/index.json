@@ -4,10 +4,10 @@
     "project": 1,
     "factions": 7,
     "hollowThreatFaction": 1,
-    "titans": 63,
+    "titans": 28,
     "characters": 8,
     "units": 0,
-    "artPrompts": 131,
+    "artPrompts": 96,
     "artworks": 0,
     "artImportPipeline": 1,
     "artApprovalManifest": 1,
@@ -16,7 +16,7 @@
     "npcs": 8,
     "creatures": 39,
     "hollowEncounterSystem": 1,
-    "characterBackstories": 110,
+    "characterBackstories": 75,
     "maps": 12,
     "campaigns": 8,
     "chapters": 24,
@@ -90,21 +90,21 @@
     "assetRegistry": 1,
     "githubAssetRepository": 1,
     "blueprint3dSystem": 1,
-    "blueprint3dProductionQueue": 171,
+    "blueprint3dProductionQueue": 136,
     "hollowCreatures": 16,
     "artMapPrompts": 12,
     "artCampaignPrompts": 7,
-    "blueprint3dAssets": 171,
-    "blueprint3dTitans": 63,
+    "blueprint3dAssets": 136,
+    "blueprint3dTitans": 28,
     "blueprint3dBattlefields": 12,
     "blueprint3dGates": 7,
     "blueprint3dFirstHandoffBatch": 12,
     "artApprovalBatches": 2,
-    "artApprovedPromptPackages": 11,
-    "githubAssetRegistryEntries": 171,
-    "githubAssetDependencyNodes": 171,
+    "artApprovedPromptPackages": 6,
+    "githubAssetRegistryEntries": 136,
+    "githubAssetDependencyNodes": 136,
     "githubAssetManifests": 171,
-    "githubReservedAssetIds": 171,
+    "githubReservedAssetIds": 136,
     "creatorHandoffPackets": 23,
     "creatorHandoffBatches": 3,
     "externalAiProductionPackets": 1
@@ -219,8 +219,8 @@
     },
     "titans.json": {
       "path": "data/titans.json",
-      "bytes": 788118,
-      "sha256": "1f21b19f54d46510a7d64a0e41e7f694455cb0403259675a58a3cd300b0c74e9"
+      "bytes": 351351,
+      "sha256": "718e5af84a5818a07caaf6dffb9571b5ff2ca5423e08ac13371611942108f424"
     },
     "characters.json": {
       "path": "data/characters.json",
@@ -234,8 +234,8 @@
     },
     "art-prompts.json": {
       "path": "data/art-prompts.json",
-      "bytes": 633128,
-      "sha256": "bab2a0ce8cefb7892d1cb6b468425b8c5f3ba380e122adc14216a391530d0818"
+      "bytes": 283488,
+      "sha256": "9a3ca020208d52794ed6d8d0e221c535b2437c5e6e36a015eee70ab4468d7fdb"
     },
     "artworks.json": {
       "path": "data/artworks.json",
@@ -249,8 +249,8 @@
     },
     "art-approval-manifest.json": {
       "path": "data/art-approval-manifest.json",
-      "bytes": 4517,
-      "sha256": "873f198939755a95c9281481693e8dd37fce3a2a7fdfce383a2eb2eceb22c2f6"
+      "bytes": 4265,
+      "sha256": "c25794f61499744a0c3df8544918a3edda63ad7dcf2d14682463da0c08f4ab53"
     },
     "development-tasks.json": {
       "path": "data/development-tasks.json",
@@ -279,8 +279,8 @@
     },
     "character-backstories.json": {
       "path": "data/character-backstories.json",
-      "bytes": 402384,
-      "sha256": "f4b729534740f7ac752862d72ad697da9433100425bc30d85828aa0be7a2c114"
+      "bytes": 256860,
+      "sha256": "60133535e005f82d4b7bf2d0e74e5a39f64baa596d65114bdde1813d1e7cf109"
     },
     "maps.json": {
       "path": "data/maps.json",
@@ -320,7 +320,7 @@
     "realm-codex.json": {
       "path": "data/realm-codex.json",
       "bytes": 81173,
-      "sha256": "5b704906cda6729dcfc0d79f6843e0d101cbcedb378ee77898085368ff817255"
+      "sha256": "2e914464b2b54f63ae2955d208c35c82877153b83a79384ea7d96532bcecc5c8"
     },
     "faction-visual-bible.json": {
       "path": "data/faction-visual-bible.json",
@@ -364,8 +364,8 @@
     },
     "mission-registry.json": {
       "path": "data/mission-registry.json",
-      "bytes": 2607599,
-      "sha256": "7110ec1966f2f58c36b8280dbc6c3a489a5d042162e5a6a6e91fc0c567dcc6b9"
+      "bytes": 2610888,
+      "sha256": "f28c00dfdde07f28498723a8a353fca19858c555d2701a99e97d0441ace975ec"
     },
     "mission-dialogue.json": {
       "path": "data/mission-dialogue.json",
@@ -419,8 +419,8 @@
     },
     "async-arena-system.json": {
       "path": "data/async-arena-system.json",
-      "bytes": 13477,
-      "sha256": "d904b59839026640069da43d59f739b50ce58594c67b1e5f457b28b50d55e5a6"
+      "bytes": 13583,
+      "sha256": "aa3a68fc194ad097e5a9cc1de2a4d8370fd94d0a7428b0a0d02b449d55756030"
     },
     "weekly-trials.json": {
       "path": "data/weekly-trials.json",
@@ -435,7 +435,7 @@
     "titan-trial-system.json": {
       "path": "data/titan-trial-system.json",
       "bytes": 4004,
-      "sha256": "ea97dd22f2b7db171acc7b2f5dcccc2d6f24e6f6549b31dc5948b84a50270bb8"
+      "sha256": "9936e43499b06c2cb689a875d7caa85f99d3f011e195d46e784e1d60c1cd372b"
     },
     "faction-mastery.json": {
       "path": "data/faction-mastery.json",
@@ -484,8 +484,8 @@
     },
     "solo-titan-roster-redesign.json": {
       "path": "data/solo-titan-roster-redesign.json",
-      "bytes": 256586,
-      "sha256": "7c502f2d4bf15228080af2e9fd0dac65e8112faeae45e810420635979fabbe87"
+      "bytes": 257369,
+      "sha256": "5af4aae7a6eb90d06251ec5f0ca5d72326415556b3be60c30e90715393bc80f7"
     },
     "enemy-scaling-design-document.json": {
       "path": "data/enemy-scaling-design-document.json",
@@ -505,17 +505,17 @@
     "canon-faction-matrix.json": {
       "path": "data/canon-faction-matrix.json",
       "bytes": 33315,
-      "sha256": "79893aab95c0f4307c4a1fa17d6127c1efbaa69be4d7f99a3da24dde9661eab8"
+      "sha256": "4957929bb62de3474bd0e3017b53e4a500e1d87d383c82371c0ea4fd550a6dd8"
     },
     "titan-role-matrix.json": {
       "path": "data/titan-role-matrix.json",
-      "bytes": 151282,
-      "sha256": "4751c49a34eb7c131bd3753452f2f1928d730076d20a419030256708a9dfde1d"
+      "bytes": 5656,
+      "sha256": "b6530cdf5a2f64a2bbab6ba0fc5bc3175f7de21bc248c59406f49795bcad7a13"
     },
     "roster-depth-map.json": {
       "path": "data/roster-depth-map.json",
-      "bytes": 7780,
-      "sha256": "3a8c4d813425f75333169ce55a62b60dac46ba08a3ac146171c7eabfee793a05"
+      "bytes": 1287,
+      "sha256": "0774f96a90e0b2e18194c7d53fcbc6b96c447fc7e0298f6e53855a2714476853"
     },
     "mission-tactical-profile-system.json": {
       "path": "data/mission-tactical-profile-system.json",
@@ -525,7 +525,7 @@
     "player-onboarding-roster-journey.json": {
       "path": "data/player-onboarding-roster-journey.json",
       "bytes": 5597,
-      "sha256": "13b75be2db7252542fe90096f8fb361775abd3fc96e03e59fa3bf1156f3316de"
+      "sha256": "22f011444993fe8dfc465a0ccd0b38a9ff3b2c4dd9c448da193167b572ebb49e"
     },
     "battlefield-director.json": {
       "path": "data/battlefield-director.json",
@@ -580,12 +580,12 @@
     "titan-enemy-balance-pass.json": {
       "path": "data/titan-enemy-balance-pass.json",
       "bytes": 99346,
-      "sha256": "c1a15af39b2fa3d86fb284d1e2b8d5001ff839d1fc4a2721b71f882d6875b035"
+      "sha256": "67d8456d8b251b634231c71ec9d17a0c299c96309e35d1ce2cd993f67c7cae2d"
     },
     "titan-art-identity-audit.json": {
       "path": "data/titan-art-identity-audit.json",
-      "bytes": 468555,
-      "sha256": "1ddfef15419888555c796e8d93224bf1a217ff9ea87dc10388b581d2e83639db"
+      "bytes": 108099,
+      "sha256": "8481f7a061c526bb43f587729b21684edd9cdb64b7f729fef6e1b4e44d990794"
     },
     "gameplay-balance-framework.json": {
       "path": "data/gameplay-balance-framework.json",
@@ -630,12 +630,12 @@
     "command-hub-contract.json": {
       "path": "data/command-hub-contract.json",
       "bytes": 16306,
-      "sha256": "ff519bb722c9ac846085766af16cfc08be62fdadca9a8b360cf0225dd37258de"
+      "sha256": "56150fc16ffe59afb2a303ae082eb7a981d92ef1a355c0052f24ed24f03a2b76"
     },
     "asset-registry.json": {
       "path": "data/asset-registry.json",
       "bytes": 20527,
-      "sha256": "058cfd493ceca4a4387bd31186d8d2bbd03e749db5313eb8f86b095e77046b57"
+      "sha256": "b8f400736a5de566b8d935eea2a411509eae7c28424a99c1d97540f68664820d"
     },
     "github-asset-repository.json": {
       "path": "data/github-asset-repository.json",
@@ -645,21 +645,21 @@
     "3d-blueprint-system.json": {
       "path": "data/3d-blueprint-system.json",
       "bytes": 1523,
-      "sha256": "9a8680ca43c623a1d6f18b9f2182f8370e6a1000593a0bfba64c9b8be60e3659"
+      "sha256": "135f9c188750f3ab36ce437fadb02b34a4844059a63d9eecb13100e2002f2e27"
     },
     "3d-production-queue.json": {
       "path": "data/3d-production-queue.json",
-      "bytes": 172002,
-      "sha256": "95c9659770c22f6123affd2b53aac3b1f8cde29da4114441805fbae4e211be6b"
+      "bytes": 139599,
+      "sha256": "c57cf64de2cd2194fbaed8f15b5ce09aea3363f75d64d8bfcb7b63df20b56832"
     }
   },
   "artPromptCategories": {
-    "Titan": 63,
     "Campaign": 7,
     "Creature": 39,
     "Map": 12,
     "NPC": 8,
-    "FactionScreen": 2
+    "FactionScreen": 2,
+    "Titan": 28
   },
   "artMapPrompts": [
     {
@@ -772,7 +772,7 @@
     }
   ],
   "githubAssetStatusCounts": {
-    "AWAITING_SOURCE_ASSET": 171
+    "AWAITING_SOURCE_ASSET": 136
   },
   "githubAssetTypeCounts": {
     "BATTLEFIELD": 12,
@@ -781,7 +781,7 @@
     "ENEMY": 39,
     "GATE": 7,
     "GLOBAL_REFERENCE": 3,
-    "TITAN": 63
+    "TITAN": 28
   },
   "artApprovalManifest": {
     "status": "IMPLEMENTED",
@@ -793,12 +793,12 @@
     "stillBlocked": [
       "TG-DEV-004"
     ],
-    "approvedPromptPackages": 11
+    "approvedPromptPackages": 6
   },
   "blueprint3dSystem": {
     "status": "IMPLEMENTED",
     "director": "3D Asset Director",
-    "registryTotal": 171,
+    "registryTotal": 136,
     "registry": "3D_Blueprints/Registry/blueprint-registry.json",
     "productionQueue": "data/3d-production-queue.json",
     "firstHandoffBatch": [
@@ -862,14 +862,14 @@
   },
   "githubAssetRegistry": {
     "status": "IMPLEMENTED",
-    "entries": 171,
-    "awaitingSource": 171,
+    "entries": 136,
+    "awaitingSource": 136,
     "sourceDiscovered": 0
   },
   "githubAssetManifests": {
     "status": "IMPLEMENTED",
     "count": 171,
-    "reservedIds": 171
+    "reservedIds": 136
   },
   "creatorHandoff": {
     "status": "VALID",
@@ -899,7 +899,7 @@
   },
   "githubAssetDependencyGraph": {
     "status": "IMPLEMENTED",
-    "nodes": 171
+    "nodes": 136
   },
   "externalAiProduction": {
     "status": "ACTIVE_SOURCE_OF_TRUTH",

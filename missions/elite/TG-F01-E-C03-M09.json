@@ -8,23 +8,23 @@
   "missionNumber": 9,
   "missionInChapter": 1,
   "title": "Elite: Law Beneath the River Mirror",
-  "description": "Elite remix of Law Beneath the River Mirror: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat.",
-  "lore": "This mission shows the Sun Realm refusing panic: law, river, and battle line answer the Gate wound without rewriting established Canon.",
+  "description": "Elite remix of Law Beneath the River Mirror: the same story pressure becomes a sharper tactical problem, not a stat-inflated repeat. Appearance rule: Solar Dominion of Khepra is the source culture humans later copied as Egyptian solar myth; mission terrain and cosmetics must show Aten hand-rays, Ma’at scale geometry, electrum, royal linen-light, faience turquoise, lapis, obsidian, Nile-black silt glass, Red Land jasper.",
+  "lore": "This mission treats Solar Dominion of Khepra as the origin behind Egyptian solar myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use Aten hand-rays, Ma’at scale geometry, electrum, royal linen-light, faience turquoise, lapis, obsidian, Nile-black silt glass, Red Land jasper instead of generic historical or RPG dressing.",
   "recommendedPower": 635,
-  "activeTitanCount": 1,
   "encouragedTitanRoles": [
-    "frontline anchor",
-    "lane controller",
-    "ranged finisher"
+    "solar judgment anchor",
+    "survivable objective holder",
+    "burst or control specialist"
   ],
   "mapId": "TG-MAP-007",
-  "terrain": "floodplain mirrors, collapsing bridges, and corrupted river channels",
+  "terrain": "floodplain mirrors, collapsing bridges, and corrupted river channels; source-culture appearance layer: sun-scale courts, pylon shadow lanes, river-light channels, Khepri dawn engines, Ma’at seal platforms, desert storm edges; cosmetic/relic silhouettes: Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes",
   "objectives": {
-    "primary": "Move your single active Titan commitment to the marked solar seal before the Hollow closes around it. Elite remix: complete it while stabilizing a secondary solar seal.",
+    "primary": "Drive your active Titan to the marked solar seal before the Hollow closes around it. Elite remix: complete it while stabilizing a secondary solar seal.",
     "optional": [
       "Win with no Titan defeated",
       "Win before turn 11",
-      "Stop every reinforcement trigger or defeat the reinforcement commander first"
+      "Stop every reinforcement trigger or defeat the reinforcement commander first",
+      "Trigger at least one Momentum or Divinity decision before victory"
     ]
   },
   "enemyWaves": [
@@ -62,23 +62,24 @@
   },
   "turnLimit": 11,
   "specialRules": [
+    "Solar Law: Momentum grows when the lone Titan holds marked light lanes without retreating.",
     "Mirror Orders: enemies copy the last objective interaction unless interrupted.",
     "Anchor Corruption: structures worsen hazards every two turns.",
-    "Elite Remix: enemy AI prioritizes objectives and exposed support Titans.",
+    "Elite Remix: enemy AI prioritizes objectives and exposed support Titan.",
     "Restricted Recovery: healing or recovery tiles deactivate after use.",
-    "one active standard Titan"
+    "Solo Titanic Scale: one active Titan occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
   ],
   "victoryConditions": [
-    "Move your single active Titan commitment to the marked solar seal before the Hollow closes around it.",
-    "Secondary solar seal stabilized before extraction"
+    "Drive your active Titan to the marked solar seal before the Hollow closes around it. Elite remix: complete it while stabilizing a secondary solar seal."
   ],
   "defeatConditions": [
-    "All Titans fall",
-    "Secondary seal collapses",
-    "Elite turn limit expires"
+    "Your active Titan falls",
+    "Primary objective fails",
+    "Turn limit expires"
   ],
   "rewards": {
     "firstClear": [
+      "Solo Titan mastery XP",
       "Refined solar alloy",
       "Elite faction shard",
       "High-tier gear pattern",
@@ -86,6 +87,7 @@
       "Elite Aten Ra mission 9 codex shard"
     ],
     "replay": [
+      "Titan mastery XP",
       "Refined solar alloy",
       "Elite faction shard",
       "High-tier gear pattern"
@@ -115,7 +117,16 @@
     "altered map lane/hazard emphasis",
     "boss or commander mechanic added"
   ],
-  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
+  "activeTitanDesignNotes": "Balanced for one active Titan; roster depth changes pre-launch selection, not on-field body count.",
+  "chapterId": "TG-F01-CH03",
+  "difficulty": "Elite",
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose one Titan before launch; no ally positioning or team formations in battle.",
+    "squadCombat": "FORBIDDEN",
+    "teamTurns": "FORBIDDEN"
+  },
   "tacticalProfile": {
     "problemTags": [
       "large_enemy_groups",
@@ -130,18 +141,17 @@
       "Defender"
     ],
     "recommendedTitanIds": [
-      "TG-TITAN-007",
-      "TG-TITAN-003",
-      "TG-TITAN-009"
+      "TG-TITAN-001",
+      "TG-TITAN-005"
     ],
     "recommendedTitans": [
       {
-        "id": "TG-TITAN-007",
+        "id": "TG-TITAN-006",
         "name": "Karnu Glass Horizon",
         "reason": "Artillery advantage for large enemy groups"
       },
       {
-        "id": "TG-TITAN-003",
+        "id": "TG-TITAN-006",
         "name": "Nefra Obsidian Dawn",
         "reason": "Controller advantage for large enemy groups"
       },
@@ -153,12 +163,81 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+    "rule": "Favored-not-required: any valid active Titan may clear the mission; recommended god-Titans are tactical hints only."
   },
-  "activeTitanPolicy": {
-    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
-    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
-    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  "sourceCultureAppearanceRule": {
+    "realm": "Solar Dominion of Khepra",
+    "materials": "Aten hand-rays, Ma’at scale geometry, electrum, royal linen-light, faience turquoise, lapis, obsidian, Nile-black silt glass, Red Land jasper",
+    "terrain": "sun-scale courts, pylon shadow lanes, river-light channels, Khepri dawn engines, Ma’at seal platforms, desert storm edges",
+    "cosmeticRelicSilhouettes": "Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes",
+    "avoid": "tourist pharaoh costume, literal pyramid body, sarcophagus robot, readable glyph text, generic desert temple, plain gold statues"
   },
-  "teamSize": 1
+  "updated": "2026-08-16",
+  "activeTitanCount": 1,
+  "teamSize": 1,
+  "combatArchitecture": {
+    "engineTarget": "Unreal Engine 5",
+    "platformBaseline": [
+      "Android",
+      "iOS"
+    ],
+    "loop": [
+      "Explore",
+      "Encounter",
+      "1 Titan vs. Multiple Enemies",
+      "Victory",
+      "Rewards",
+      "Upgrade Titan",
+      "Explore Further"
+    ],
+    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
+    "playerControlledTitans": 1,
+    "mobileFirst": true,
+    "forbidden": [
+      "squad combat",
+      "team formations",
+      "multiple player-controlled Titans",
+      "ally positioning",
+      "team turns"
+    ]
+  },
+  "crossFactionRunIns": {
+    "enabled": true,
+    "homeFactionId": "TG-FACTION-001",
+    "homeFactionName": "Aten Ra",
+    "eligiblePoolIds": [
+      "TG-CROSS-RUN-IN-002",
+      "TG-CROSS-RUN-IN-003",
+      "TG-CROSS-RUN-IN-004",
+      "TG-CROSS-RUN-IN-005",
+      "TG-CROSS-RUN-IN-006",
+      "TG-CROSS-RUN-IN-007"
+    ],
+    "recommendedPoolIds": [
+      "TG-CROSS-RUN-IN-002",
+      "TG-CROSS-RUN-IN-003"
+    ],
+    "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
+    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone Titan without creating ally units or squad play."
+  },
+  "loreContinuityGuard": {
+    "sourceFactionId": "TG-FACTION-001",
+    "sourceFactionName": "Aten Ra",
+    "sourceRealm": "The Solar Dominion of Khepra",
+    "sourceCultureRule": "source culture humans later copied as Egyptian solar myth",
+    "preserve": [
+      "established faction identity",
+      "Titan Gates mythology",
+      "Gates and Codex systems",
+      "one player-controlled Titan combat",
+      "mobile UE5 zone structure"
+    ],
+    "forbid": [
+      "replacement factions",
+      "generic corridor dungeon conversion",
+      "PC-first combat assumptions",
+      "generic monster filler",
+      "lore rewrites"
+    ]
+  }
 }

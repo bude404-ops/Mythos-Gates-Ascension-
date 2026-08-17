@@ -33,7 +33,7 @@ The The Black Iron Court of Dominion is defined by infernal contracts, black iro
 - **Lore Function:** Mordrath, the Infernal King embodies the Infernal Dominion answer to the Ascension Collapse: defender shaped into Realm doctrine.
 - **Chapter Hook:** When Mordrath, the Infernal King enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 - **Visual Context:** Frame Mordrath, the Infernal King against black iron, ember red, volcanic courts, chain halos, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Varkul Bloodforged Crown (TG-TITAN-056)
+### Varkul Bloodforged Crown (TG-TITAN-057)
 - **Role:** Battery
 - **Lore Function:** Varkul Bloodforged Crown embodies the Infernal Dominion answer to the Ascension Collapse: battery shaped into Realm doctrine.
 - **Chapter Hook:** When Varkul Bloodforged Crown enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
@@ -48,7 +48,7 @@ The The Black Iron Court of Dominion is defined by infernal contracts, black iro
 - **Lore Function:** Azrakar Chainwarden embodies the Infernal Dominion answer to the Ascension Collapse: breaker shaped into Realm doctrine.
 - **Chapter Hook:** When Azrakar Chainwarden enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 - **Visual Context:** Frame Azrakar Chainwarden against black iron, ember red, volcanic courts, chain halos, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Orryx Ash Dominion (TG-TITAN-059)
+### Orryx Ash Dominion (TG-TITAN-055)
 - **Role:** Disruptor
 - **Lore Function:** Orryx Ash Dominion embodies the Infernal Dominion answer to the Ascension Collapse: disruptor shaped into Realm doctrine.
 - **Chapter Hook:** When Orryx Ash Dominion enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
@@ -58,17 +58,17 @@ The The Black Iron Court of Dominion is defined by infernal contracts, black iro
 - **Lore Function:** Malvera Ember Throne embodies the Infernal Dominion answer to the Ascension Collapse: sustain shaped into Realm doctrine.
 - **Chapter Hook:** When Malvera Ember Throne enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 - **Visual Context:** Frame Malvera Ember Throne against black iron, ember red, volcanic courts, chain halos, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Kharon Black Iron (TG-TITAN-061)
+### Kharon Black Iron (TG-TITAN-058)
 - **Role:** Artillery
 - **Lore Function:** Kharon Black Iron embodies the Infernal Dominion answer to the Ascension Collapse: artillery shaped into Realm doctrine.
 - **Chapter Hook:** When Kharon Black Iron enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 - **Visual Context:** Frame Kharon Black Iron against black iron, ember red, volcanic courts, chain halos, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Sablex Cinder Duke (TG-TITAN-062)
+### Sablex Cinder Duke (TG-TITAN-060)
 - **Role:** Guardian
 - **Lore Function:** Sablex Cinder Duke embodies the Infernal Dominion answer to the Ascension Collapse: guardian shaped into Realm doctrine.
 - **Chapter Hook:** When Sablex Cinder Duke enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 - **Visual Context:** Frame Sablex Cinder Duke against black iron, ember red, volcanic courts, chain halos, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Zerath Wound Gate (TG-TITAN-063)
+### Zerath Wound Gate (TG-TITAN-055)
 - **Role:** Assassin
 - **Lore Function:** Zerath Wound Gate embodies the Infernal Dominion answer to the Ascension Collapse: assassin shaped into Realm doctrine.
 - **Chapter Hook:** When Zerath Wound Gate enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.

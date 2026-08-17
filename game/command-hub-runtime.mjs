@@ -57,7 +57,7 @@ export function createCommandHubRuntime(DATA, mount){
   const creatureById = id => creatures().find(c => c.id === id);
   const chapterById = id => chapters().find(c => c.id === id) || (playflow().flow||[]).flatMap(f=>f.chapterRoutes||[]).find(c=>c.chapterId===id);
   const log = (type, message, data={}) => state.logs.unshift({ type, message, data, at:new Date().toISOString() });
-  const STARTER_TITAN_IDS = ['TG-TITAN-001','TG-TITAN-003','TG-TITAN-004'];
+  const STARTER_TITAN_IDS = ['TG-TITAN-001','TG-TITAN-006','TG-TITAN-009'];
   const AWAKENING_BEATS = [
     { step:1, id:'AWAKEN_FIRST_TITAN', lesson:'Awaken first Titan', missionBeat:'The Gate opens; the Titan crosses alone.', playableSystem:'starter binding', milestone:'AWAKENING_BEAT_01' },
     { step:2, id:'MOVEMENT_BASIC_ATTACKS', lesson:'Movement and basic attacks', missionBeat:'Claim safe lanes before the Hollow reaches the seal.', playableSystem:'movement + basic attack', milestone:'AWAKENING_BEAT_02' },
@@ -91,7 +91,7 @@ export function createCommandHubRuntime(DATA, mount){
     player.onboarding.awakeningMissionId ||= player.campaignProgress?.currentMissionId || missions()[0]?.id;
     return player.onboarding;
   }
-  const TRIAL_TITAN_IDS = ['TG-TITAN-002','TG-TITAN-005','TG-TITAN-010'];
+  const TRIAL_TITAN_IDS = ['TG-TITAN-005','TG-TITAN-005','TG-TITAN-010'];
   const TRIAL_MODES = [
     { id:'TEMP_LOADOUT', label:'Temporary Loadout', rule:'Borrowed relics vanish after the showcase; only Trial Favor persists.' },
     { id:'FACTION_TRIAL', label:'Faction Trial', rule:'Aten Ra tactical pressure teaches roster difference without requiring ownership.' },

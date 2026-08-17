@@ -1,16 +1,16 @@
 {
   "id": "TG-TITAN-015",
-  "slug": "veyra-thunderloom",
-  "name": "Veyra Thunderloom",
+  "slug": "frigg",
+  "name": "Frigg",
   "factionId": "TG-FACTION-002",
   "faction": "Asgardian",
-  "rarity": "Rare",
+  "rarity": "Mythic God",
   "role": "Sustain",
   "abilities": [
-    "Veyra Thunderloom \u2014 Oath-Ring Cleave Restore",
-    "Rune-Thunder Technique \u2014 Covenant",
-    "Veyra Thunderloom: Yggdrasil Root Oath Renewal Rite",
-    "Divine Ascension \u2014 Ragnarok Storm Unbound"
+    "Veyra — Oath-Ring Cleave Restore",
+    "Rune-Thunder Technique — Covenant",
+    "Veyra: Yggdrasil Root Oath Renewal Rite",
+    "Divine Ascension — Ragnarok Storm Unbound"
   ],
   "stats": {
     "hp": 46,
@@ -27,24 +27,24 @@
     "combatPower": 207
   },
   "equipment": [
-    "Veyra Thunderloom Restorer Rune-Iron Oath Axe",
-    "Veyra Thunderloom Stormsteel Wolf-Cloak Mail",
-    "Veyra Thunderloom Yggdrasil Thunder-Root Core"
+    "Veyra Restorer Rune-Iron Oath Axe",
+    "Veyra Stormsteel Wolf-Cloak Mail",
+    "Veyra Yggdrasil Thunder-Root Core"
   ],
   "passives": [
-    "Saga-Oath Blood: Veyra Thunderloom gains Oathstorm when its sustain choices express Storm-Rooted Aesir Holds source-culture law through rune-storm ground; Earth myth is only the later echo."
+    "Rune Oath: Veyra gains Oathfire when sustain play banks survival value through terrain mastery and converts it into recovery on storm-carved oathground. At 3 stacks, the next Technique or Reaction adds a rune-bound fate rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of World-Tree war halls."
   ],
-  "lore": "Veyra Thunderloom is a colossal Asgardian sustain from The Storm-Rooted Aesir Holds. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Titan is the older source: Asgardian sustain office: restoration rite, continuity keeper, mercy under law; Aesir/Vanir: oath politics, fertility/wisdom exchange, divine hostage memory.",
-  "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
-  "visualDescription": "Full-body living myth-source Titan, not a costume: Veyra Thunderloom shows storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.. Role silhouette must read as Sustain. Materials include dark rune iron, storm steel, ash wood, wolf fur, raven feather shadow, oath red wax, bone white. The design must feel older than human mythology and avoid cartoon Viking, generic horned helmet cosplay, clean chrome, sci-fi power armor, glowing UI runes, blocky hammer mech.",
-  "artStatus": "Prompt Ready",
+  "lore": "Frigg, Wyrd Hearth Queen, is now canonized as one of the four playable god-Titans of Asgardian. The Titan is the source-realm divinity behind the mythology rather than a generic champion: queen of foresight, oath household, motherhood, continuity, secret mercy under law. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology god whose behavior expresses queen of foresight, oath household, motherhood, continuity, secret mercy under law; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
+  "visualDescription": "Frigg manifests as queen of foresight, oath household, motherhood, continuity, secret mercy under law from Asgardian: mature beautiful feminine queen face, calm eyes that know fate, soft jaw, composed maternal authority; elegant feminine matriarch frame, stately posture, graceful waist and draped hips, contained strength; signature silhouette: woven mantle, distaff staff, crown-braids, protective hearth-cloak dome. Weapon: distaff staff weaving oath-thread and hearth-shield brooch. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
+  "artStatus": "READY_FOR_GENERATION",
   "artPromptId": "TG-PROMPT-015",
   "artworkId": null,
   "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
   "backstoryId": "TG-BACKSTORY-TITAN-015",
   "abilityDetails": [
     {
-      "name": "Veyra Thunderloom \u2014 Oath-Ring Cleave Restore",
+      "name": "Veyra — Oath-Ring Cleave Restore",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -60,7 +60,7 @@
       "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
     },
     {
-      "name": "Rune-Thunder Technique \u2014 Covenant",
+      "name": "Rune-Thunder Technique — Covenant",
       "slot": "Technique",
       "unlockLevel": 4,
       "cost": "20 Momentum",
@@ -76,7 +76,7 @@
       "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
     },
     {
-      "name": "Veyra Thunderloom: Yggdrasil Root Oath Renewal Rite",
+      "name": "Veyra: Yggdrasil Root Oath Renewal Rite",
       "slot": "Signature",
       "unlockLevel": 12,
       "cost": "45 Momentum + 25 Divinity",
@@ -92,7 +92,7 @@
       "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
     },
     {
-      "name": "Divine Ascension \u2014 Ragnarok Storm Unbound",
+      "name": "Divine Ascension — Ragnarok Storm Unbound",
       "slot": "Ascension",
       "unlockLevel": 30,
       "cost": "100 Divinity",
@@ -110,7 +110,7 @@
   ],
   "equipmentDetails": [
     {
-      "name": "Veyra Thunderloom Restorer Rune-Iron Oath Axe",
+      "name": "Veyra Restorer Rune-Iron Oath Axe",
       "slot": "Relic Weapon",
       "rarityFloor": "Rare",
       "primaryStat": "attack",
@@ -118,7 +118,7 @@
       "balanceGuardrail": "No extra action loops; empowered basics are once per round."
     },
     {
-      "name": "Veyra Thunderloom Stormsteel Wolf-Cloak Mail",
+      "name": "Veyra Stormsteel Wolf-Cloak Mail",
       "slot": "Armor Body",
       "rarityFloor": "Rare",
       "primaryStat": "resistance",
@@ -126,7 +126,7 @@
       "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
-      "name": "Veyra Thunderloom Yggdrasil Thunder-Root Core",
+      "name": "Veyra Yggdrasil Thunder-Root Core",
       "slot": "Resonance Core",
       "rarityFloor": "Rare",
       "primaryStat": "energy",
@@ -164,26 +164,41 @@
       "resource denial enemies",
       "bad terrain matchups",
       "mistimed reactions"
-    ]
+    ],
+    "uniqueMechanic": "Veyra's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+    "counterplayRule": "anti-heal pressure and hazard denial starve recovery"
   },
-  "mythicSource": "Asgardian sustain office: restoration rite, continuity keeper, mercy under law; Aesir/Vanir: oath politics, fertility/wisdom exchange, divine hostage memory",
-  "visualTraits": [
-    "restoration rite",
-    "continuity keeper",
-    "mercy under law",
-    "source culture humans later copied as Norse myth",
-    "raven feather shadow"
-  ],
-  "armorCanon": "Armor must use storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.; construction proves source culture humans later copied as Norse myth; no cartoon Viking, generic horned helmet cosplay, clean chrome, sci-fi power armor.",
-  "updated": "2026-08-16",
-  "weaponCanon": "Veyra Thunderloom Restorer Rune-Iron Oath Axe",
+  "mythicSource": "Frigg — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+  "visualTraits": {
+    "face": "mature beautiful feminine queen face, calm eyes that know fate, soft jaw, composed maternal authority",
+    "bodyProportions": "elegant feminine matriarch frame, stately posture, graceful waist and draped hips, contained strength",
+    "silhouette": "woven mantle, distaff staff, crown-braids, protective hearth-cloak dome",
+    "weapon": "distaff staff weaving oath-thread and hearth-shield brooch",
+    "sexIdentity": "Female"
+  },
+  "armorCanon": {
+    "identityRule": "Armor must reveal female divine anatomy and Asgardian civilization logic; no generic armor template.",
+    "silhouette": "woven mantle, distaff staff, crown-braids, protective hearth-cloak dome"
+  },
+  "updated": "2026-08-17",
+  "weaponCanon": {
+    "signatureWeapon": "distaff staff weaving oath-thread and hearth-shield brooch",
+    "loreReason": "Chosen because Frigg embodies queen of foresight, oath household, motherhood, continuity, secret mercy under law in combat."
+  },
   "gearCanon": {
-    "weapon": "Veyra Thunderloom Restorer Rune-Iron Oath Axe",
-    "armor": "Veyra Thunderloom Stormsteel Wolf-Cloak Mail",
-    "core": "Veyra Thunderloom Yggdrasil Thunder-Root Core",
-    "movementRelic": "Bifrost Stormstride",
-    "reactionRelic": "Valkyrie Witness Counter",
-    "executionRelic": "Carve the Fallen Name",
-    "visualRule": "rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars"
-  }
+    "maskHelmetCrown": "Crown/helmet/mask must support mature beautiful feminine queen face, calm eyes that know fate, soft jaw, composed maternal authority and woven mantle, distaff staff, crown-braids, protective hearth-cloak dome; never hide sex identity or make the god interchangeable."
+  },
+  "sex": "Female",
+  "titanArtDna": {
+    "rosterCanon": "FOUR_GODS_PER_FACTION_PLAYABLE_ROSTER",
+    "mythologyGod": "Frigg",
+    "sex": "Female",
+    "archetype": "queen of foresight, oath household, motherhood, continuity, secret mercy under law",
+    "signatureWeapon": "distaff staff weaving oath-thread and hearth-shield brooch",
+    "faceLock": "mature beautiful feminine queen face, calm eyes that know fate, soft jaw, composed maternal authority",
+    "bodyLock": "elegant feminine matriarch frame, stately posture, graceful waist and draped hips, contained strength",
+    "silhouetteLock": "woven mantle, distaff staff, crown-braids, protective hearth-cloak dome",
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved."
+  },
+  "title": "Wyrd Hearth Queen"
 }

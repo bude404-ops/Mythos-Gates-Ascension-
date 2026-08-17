@@ -96,8 +96,17 @@ for (const titan of titans) {
   if (body) seenBodies.set(body, (seenBodies.get(body) || 0) + 1);
   if (weapon) seenWeapons.set(weapon, (seenWeapons.get(weapon) || 0) + 1);
 }
-if (femaleCount < 21) fail(`Female Titan count too low for cross-faction distinction: ${femaleCount}`);
-if (maleCount < 35) fail(`Male Titan count too low for cross-faction distinction: ${maleCount}`);
+const factionSexCounts = new Map();
+for (const titan of titans) {
+  const key = `${titan.factionId}:${titan.sex}`;
+  factionSexCounts.set(key, (factionSexCounts.get(key) || 0) + 1);
+}
+for (const faction of factions) {
+  if ((factionSexCounts.get(`${faction.id}:Male`) || 0) !== 2) fail(`${faction.name}: must have exactly 2 male god-Titans`);
+  if ((factionSexCounts.get(`${faction.id}:Female`) || 0) !== 2) fail(`${faction.name}: must have exactly 2 female god-Titans`);
+}
+if (femaleCount !== 14) fail(`Female god-Titan count must be 14: ${femaleCount}`);
+if (maleCount !== 14) fail(`Male god-Titan count must be 14: ${maleCount}`);
 for (const [weapon, count] of seenWeapons.entries()) if (count > 1) fail(`Signature weapon reused: ${weapon}`);
 if ((audit.summary?.pass || 0) + (audit.summary?.refine || 0) + (audit.summary?.redesign || 0) !== titans.length) fail('Audit summary status counts do not cover all Titans');
 if (!audit.summary?.highestPriorityTitanId || !auditByTitan.has(audit.summary.highestPriorityTitanId)) fail('Highest-priority Titan recommendation missing or invalid');

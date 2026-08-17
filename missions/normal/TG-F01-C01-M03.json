@@ -8,23 +8,22 @@
   "missionNumber": 3,
   "missionInChapter": 3,
   "title": "The Obelisk That Would Not Cast Shadow",
-  "description": "Aten Ra advances through sacred temple approach with shallow river-light lanes and low sandstone cover while the Gate tests whether solar law can hold under pressure.",
-  "lore": "This mission shows the Sun Realm refusing panic: law, river, and battle line answer the Gate wound without rewriting established Canon.",
+  "description": "Aten Ra advances through sacred temple approach with shallow river-light lanes and low sandstone cover while the Gate tests whether solar law can hold under pressure. Appearance rule: Solar Dominion of Khepra is the source culture humans later copied as Egyptian solar myth; mission terrain and cosmetics must show Aten hand-rays, Ma’at scale geometry, electrum, royal linen-light, faience turquoise, lapis, obsidian, Nile-black silt glass, Red Land jasper.",
+  "lore": "This mission treats Solar Dominion of Khepra as the origin behind Egyptian solar myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use Aten hand-rays, Ma’at scale geometry, electrum, royal linen-light, faience turquoise, lapis, obsidian, Nile-black silt glass, Red Land jasper instead of generic historical or RPG dressing.",
   "recommendedPower": 205,
-  "activeTitanCount": 1,
   "encouragedTitanRoles": [
-    "frontline anchor",
-    "lane controller",
-    "ranged finisher"
+    "solar judgment anchor",
+    "survivable objective holder",
+    "burst or control specialist"
   ],
   "mapId": "TG-MAP-007",
-  "terrain": "sacred temple approach with shallow river-light lanes and low sandstone cover",
+  "terrain": "sacred temple approach with shallow river-light lanes and low sandstone cover; source-culture appearance layer: sun-scale courts, pylon shadow lanes, river-light channels, Khepri dawn engines, Ma’at seal platforms, desert storm edges; cosmetic/relic silhouettes: Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes",
   "objectives": {
-    "primary": "Hold two sun markers at the end of the same round.",
+    "primary": "Complete The Obelisk That Would Not Cast Shadow with one active Titan while reading sacred temple approach with shallow river-light lanes and low sandstone cover and preserving faction doctrine.",
     "optional": [
       "Complete before turn 9",
-      "Keep all one active Titan standing",
-      "Trigger at least two faction synergy actions"
+      "Keep your active Titan above 40% integrity",
+      "Trigger at least two Momentum, Divinity, or terrain reactions"
     ]
   },
   "enemyWaves": [
@@ -48,34 +47,36 @@
   "boss": null,
   "turnLimit": 11,
   "specialRules": [
-    "Battle line Light: adjacent Titans gain minor protection when ending near a solar tile.",
-    "Hollow Drift: basic enemies favor isolated Titans.",
-    "one active standard Titan"
+    "Solar Law: Momentum grows when the lone Titan holds marked light lanes without retreating.",
+    "Hollow Drift: enemies punish exposed Titan positioning and reckless routes.",
+    "Solo Titanic Scale: one active Titan occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
   ],
   "victoryConditions": [
-    "Hold two sun markers at the end of the same round."
+    "Complete The Obelisk That Would Not Cast Shadow with one active Titan while reading sacred temple approach with shallow river-light lanes and low sandstone cover and preserving faction doctrine."
   ],
   "defeatConditions": [
-    "All Titans fall",
+    "Your active Titan falls",
     "Primary objective fails",
-    "Protected objective is destroyed"
+    "Turn limit expires"
   ],
   "rewards": {
     "firstClear": [
+      "Solo Titan mastery XP",
       "Solar upgrade dust",
       "Faction shard cache",
-      "Low-tier gear component",
+      "Aten Ra source-culture cosmetic/relic component",
       "Aten Ra mission 3 codex shard"
     ],
     "replay": [
+      "Titan mastery XP",
       "Solar upgrade dust",
       "Faction shard cache",
-      "Low-tier gear component"
+      "Aten Ra source-culture cosmetic/relic component"
     ],
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
-      "one": "Primary completed with the active Titan standing under severe turn pressure"
+      "one": "Primary completed with one Titan standing or severe turn pressure"
     }
   },
   "codexUnlocks": [],
@@ -88,7 +89,16 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "activeTitanDesignNotes": "Balanced for the standard one active Titan; nonstandard modes require explicit Creator approval.",
+  "activeTitanDesignNotes": "Balanced for one active Titan; roster depth changes pre-launch selection, not on-field body count.",
+  "chapterId": "TG-F01-CH01",
+  "difficulty": "Normal",
+  "activeTitanPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose one Titan before launch; no ally positioning or team formations in battle.",
+    "squadCombat": "FORBIDDEN",
+    "teamTurns": "FORBIDDEN"
+  },
   "tacticalProfile": {
     "problemTags": [
       "fast_enemies",
@@ -103,13 +113,12 @@
       "Artillery"
     ],
     "recommendedTitanIds": [
-      "TG-TITAN-003",
-      "TG-TITAN-009",
-      "TG-TITAN-001"
+      "TG-TITAN-001",
+      "TG-TITAN-009"
     ],
     "recommendedTitans": [
       {
-        "id": "TG-TITAN-003",
+        "id": "TG-TITAN-006",
         "name": "Nefra Obsidian Dawn",
         "reason": "Controller advantage for fast enemies"
       },
@@ -126,12 +135,81 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Recommended advantages only \u2014 any valid active Titan can attempt the mission."
+    "rule": "Favored-not-required: any valid active Titan may clear the mission; recommended god-Titans are tactical hints only."
   },
-  "activeTitanPolicy": {
-    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
-    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
-    "rosterPurpose": "Choose the best single Titan before launch; roster depth changes approach, not on-field body count."
+  "sourceCultureAppearanceRule": {
+    "realm": "Solar Dominion of Khepra",
+    "materials": "Aten hand-rays, Ma’at scale geometry, electrum, royal linen-light, faience turquoise, lapis, obsidian, Nile-black silt glass, Red Land jasper",
+    "terrain": "sun-scale courts, pylon shadow lanes, river-light channels, Khepri dawn engines, Ma’at seal platforms, desert storm edges",
+    "cosmeticRelicSilhouettes": "Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes",
+    "avoid": "tourist pharaoh costume, literal pyramid body, sarcophagus robot, readable glyph text, generic desert temple, plain gold statues"
   },
-  "teamSize": 1
+  "updated": "2026-08-16",
+  "activeTitanCount": 1,
+  "teamSize": 1,
+  "combatArchitecture": {
+    "engineTarget": "Unreal Engine 5",
+    "platformBaseline": [
+      "Android",
+      "iOS"
+    ],
+    "loop": [
+      "Explore",
+      "Encounter",
+      "1 Titan vs. Multiple Enemies",
+      "Victory",
+      "Rewards",
+      "Upgrade Titan",
+      "Explore Further"
+    ],
+    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
+    "playerControlledTitans": 1,
+    "mobileFirst": true,
+    "forbidden": [
+      "squad combat",
+      "team formations",
+      "multiple player-controlled Titans",
+      "ally positioning",
+      "team turns"
+    ]
+  },
+  "crossFactionRunIns": {
+    "enabled": true,
+    "homeFactionId": "TG-FACTION-001",
+    "homeFactionName": "Aten Ra",
+    "eligiblePoolIds": [
+      "TG-CROSS-RUN-IN-002",
+      "TG-CROSS-RUN-IN-003",
+      "TG-CROSS-RUN-IN-004",
+      "TG-CROSS-RUN-IN-005",
+      "TG-CROSS-RUN-IN-006",
+      "TG-CROSS-RUN-IN-007"
+    ],
+    "recommendedPoolIds": [
+      "TG-CROSS-RUN-IN-006",
+      "TG-CROSS-RUN-IN-007"
+    ],
+    "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
+    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone Titan without creating ally units or squad play."
+  },
+  "loreContinuityGuard": {
+    "sourceFactionId": "TG-FACTION-001",
+    "sourceFactionName": "Aten Ra",
+    "sourceRealm": "The Solar Dominion of Khepra",
+    "sourceCultureRule": "source culture humans later copied as Egyptian solar myth",
+    "preserve": [
+      "established faction identity",
+      "Titan Gates mythology",
+      "Gates and Codex systems",
+      "one player-controlled Titan combat",
+      "mobile UE5 zone structure"
+    ],
+    "forbid": [
+      "replacement factions",
+      "generic corridor dungeon conversion",
+      "PC-first combat assumptions",
+      "generic monster filler",
+      "lore rewrites"
+    ]
+  }
 }
