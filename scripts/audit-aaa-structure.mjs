@@ -35,9 +35,13 @@ const requiredFiles = [
   'data/hosted-backend-boundary.json',
   'schemas/hosted-backend-boundary.schema.json',
   'scripts/validate-backend-boundary.mjs',
+  'data/runtime-persistence-boundary.json',
+  'schemas/runtime-persistence.schema.json',
+  'scripts/validate-runtime-persistence.mjs',
   'scripts/run-stable-command-hub.mjs',
   'tests/platform-core-contract.test.mjs',
   'tests/backend-boundary-contract.test.mjs',
+  'tests/runtime-persistence-contract.test.mjs',
   'src/README.md',
   'src/gameplay/index.mjs',
   'src/gameplay/solo-battle/index.mjs',
@@ -45,6 +49,8 @@ const requiredFiles = [
   'src/platform/index.mjs',
   'src/platform/platform-core.mjs',
   'src/platform/backend-boundary.mjs',
+  'src/platform/runtime-persistence.mjs',
+  'src/platform/runtime-persistence.sql',
   'src/data-loaders/index.mjs',
   'src/data-loaders/content-loader.mjs',
   'src/data-loaders/schema-contracts.mjs',
@@ -134,7 +140,8 @@ const schemas = [
   'schemas/external-ai-packet.schema.json',
   'schemas/canon-version-manifest.schema.json',
   'schemas/platform-core.schema.json',
-  'schemas/hosted-backend-boundary.schema.json'
+  'schemas/hosted-backend-boundary.schema.json',
+  'schemas/runtime-persistence.schema.json'
 ];
 for (const schema of schemas) {
   const parsed = JSON.parse(fs.readFileSync(schema, 'utf8'));
@@ -142,7 +149,7 @@ for (const schema of schemas) {
 }
 
 const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-for (const script of ['validate:schemas', 'test:production-modules', 'validate:engine-adapters', 'test:engine-adapters', 'validate:migrations', 'test:migration-contracts', 'validate:platform-core', 'test:platform-core', 'validate:backend-boundary', 'test:backend-boundary']) {
+for (const script of ['validate:schemas', 'test:production-modules', 'validate:engine-adapters', 'test:engine-adapters', 'validate:migrations', 'test:migration-contracts', 'validate:platform-core', 'test:platform-core', 'validate:backend-boundary', 'test:backend-boundary', 'validate:runtime-persistence', 'test:runtime-persistence']) {
   if (!packageJson.scripts?.[script]) issues.push(`Missing production script: ${script}`);
 }
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:schemas')) issues.push('precommit:verify must enforce schema contract validation.');
@@ -155,6 +162,8 @@ if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:platf
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:platform-core')) issues.push('precommit:verify must enforce platform core contracts.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:backend-boundary')) issues.push('precommit:verify must enforce hosted backend boundary validation.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:backend-boundary')) issues.push('precommit:verify must enforce hosted backend boundary contracts.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:runtime-persistence')) issues.push('precommit:verify must enforce runtime persistence validation.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:runtime-persistence')) issues.push('precommit:verify must enforce runtime persistence contracts.');
 
 const result = {
   ok: issues.length === 0,

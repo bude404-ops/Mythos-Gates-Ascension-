@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Titan Gates Runtime Persistence Boundary",
+  "type": "object",
+  "required": [
+    "id",
+    "schema",
+    "status",
+    "version",
+    "purpose",
+    "database",
+    "authBoundary",
+    "routeBindings",
+    "adminOperations",
+    "environments",
+    "observability",
+    "validation"
+  ],
+  "properties": {
+    "id": {
+      "const": "TG-RUNTIME-PERSISTENCE-V1"
+    },
+    "schema": {
+      "const": "TG_RUNTIME_PERSISTENCE_V1"
+    },
+    "status": {
+      "enum": [
+        "IMPLEMENTED_CONTRACT",
+        "PLANNED"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+-[a-z0-9-]+$"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 80
+    },
+    "database": {
+      "type": "object",
+      "required": [
+        "engine",
+        "migrationPolicy",
+        "tables"
+      ],
+      "properties": {
+        "engine": {
+          "type": "string"
+        },
+        "migrationPolicy": {
+          "const": "additive-idempotent"
+        },
+        "tables": {
+          "type": "array",
+          "minItems": 6,
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "primaryKey",
+              "columns"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "primaryKey": {
+                "type": "string"
+              },
+              "columns": {
+                "type": "array",
+                "minItems": 3,
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "authBoundary": {
+      "type": "object",
+      "required": [
+        "identityProvider",
+        "trustedClaims",
+        "requiredRoles",
+        "rules"
+      ]
+    },
+    "routeBindings": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "method",
+          "route",
+          "handler",
+          "auth"
+        ],
+        "properties": {
+          "method": {
+            "enum": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          },
+          "route": {
+            "type": "string"
+          },
+          "handler": {
+            "type": "string"
+          },
+          "auth": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "adminOperations": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "string"
+      }
+    },
+    "environments": {
+      "type": "array",
+      "minItems": 3
+    },
+    "observability": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "string"
+      }
+    },
+    "validation": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

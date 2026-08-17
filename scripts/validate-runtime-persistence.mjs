@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import { validateContract } from '../src/data-loaders/schema-contracts.mjs';
+import { loadRuntimePersistenceSql, validateRuntimePersistenceContract, runtimePersistenceSummary, authorizeRuntimeRequest } from '../src/platform/index.mjs';
+
+const contract = JSON.parse(fs.readFileSync('data/runtime-persistence-boundary.json', 'utf8'));
+const schema = JSON.parse(fs.readFileSync('schemas/runtime-persistence.schema.json', 'utf8'));
+const sql = loadRuntimePersistenceSql();
+const issues = [];
+issues.push(...validateContract(contract, schema, contract.id).issues);
+issues.push(...validateRuntimePersistenceContract(contract, sql).issues);
+const ownerRoute = contract.routeBindings.find(route => route.handler === 'commitSave');
+const adminRoute = contract.routeBindings.find(route => route.handler === 'getPlayerAuditTrail');
+const ledgerRoute = contract.routeBindings.find(route => route.handler === 'creditCurrency');
+if (!authorizeRuntimeRequest(ownerRoute, { subject: 'wallet:one', playerId: 'TG-RUNTIME-PLAYER-001', roles: ['PLAYER'] }, 'TG-RUNTIME-PLAYER-001').ok) issues.push('owner auth should allow own save commit');
+if (authorizeRuntimeRequest(ownerRoute, { subject: 'wallet:two', playerId: 'TG-RUNTIME-PLAYER-002', roles: ['PLAYER'] }, 'TG-RUNTIME-PLAYER-001').ok) issues.push('owner auth should reject another player save commit');
+if (!authorizeRuntimeRequest(adminRoute, { subject: 'admin:one', roles: ['ADMIN_READ'] }, 'TG-RUNTIME-PLAYER-001').ok) issues.push('admin read should allow audit route');
+if (!authorizeRuntimeRequest(ledgerRoute, { subject: 'svc:economy', roles: ['SERVICE'] }, 'TG-RUNTIME-PLAYER-001').ok) issues.push('service role should allow ledger mutation');
+const result = { ok: issues.length === 0, runtimePersistence: issues.length === 0 ? 'PASS' : 'FAIL', summary: runtimePersistenceSummary(contract), issues };
+console.log(JSON.stringify(result, null, 2));
+if (issues.length) process.exit(1);

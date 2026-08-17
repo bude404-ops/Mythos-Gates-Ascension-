@@ -1,0 +1,243 @@
+{
+  "id": "TG-RUNTIME-PERSISTENCE-V1",
+  "schema": "TG_RUNTIME_PERSISTENCE_V1",
+  "status": "IMPLEMENTED_CONTRACT",
+  "version": "1.11.0-runtime-persistence-boundary",
+  "purpose": "Defines the durable runtime implementation shape for Titan Gates backend services: tables, route binding, auth claims, admin operations, environment gates, and observability requirements.",
+  "database": {
+    "engine": "sqlite-compatible-contract",
+    "migrationPolicy": "additive-idempotent",
+    "tables": [
+      {
+        "name": "players",
+        "primaryKey": "player_id",
+        "columns": [
+          "player_id",
+          "display_name",
+          "created_at",
+          "last_seen_at",
+          "account_level",
+          "account_xp",
+          "auth_subject",
+          "created_by"
+        ]
+      },
+      {
+        "name": "player_saves",
+        "primaryKey": "player_id",
+        "columns": [
+          "player_id",
+          "save_version",
+          "checksum",
+          "state_json",
+          "updated_at"
+        ]
+      },
+      {
+        "name": "economy_ledger",
+        "primaryKey": "ledger_id",
+        "columns": [
+          "ledger_id",
+          "player_id",
+          "sequence",
+          "type",
+          "currency",
+          "amount",
+          "reason",
+          "metadata_json",
+          "idempotency_key",
+          "created_at"
+        ]
+      },
+      {
+        "name": "telemetry_events",
+        "primaryKey": "event_id",
+        "columns": [
+          "event_id",
+          "player_id",
+          "type",
+          "payload_json",
+          "session_id",
+          "created_at"
+        ]
+      },
+      {
+        "name": "idempotency_keys",
+        "primaryKey": "idempotency_key",
+        "columns": [
+          "idempotency_key",
+          "operation",
+          "player_id",
+          "response_json",
+          "created_at"
+        ]
+      },
+      {
+        "name": "admin_audit_log",
+        "primaryKey": "audit_id",
+        "columns": [
+          "audit_id",
+          "actor_subject",
+          "action",
+          "target_player_id",
+          "payload_json",
+          "created_at"
+        ]
+      }
+    ]
+  },
+  "authBoundary": {
+    "identityProvider": "broker-or-platform-auth",
+    "trustedClaims": [
+      "subject",
+      "wallet",
+      "roles"
+    ],
+    "requiredRoles": {
+      "playerWrite": "PLAYER",
+      "adminRead": "ADMIN_READ",
+      "adminWrite": "ADMIN_WRITE"
+    },
+    "rules": [
+      "Players may mutate only their own profile/save/economy requests.",
+      "Admin writes require audit log rows.",
+      "Service-to-service calls must carry signed internal subject and idempotency key."
+    ]
+  },
+  "routeBindings": [
+    {
+      "method": "POST",
+      "route": "/profiles",
+      "handler": "createProfile",
+      "auth": "PLAYER",
+      "writes": [
+        "players",
+        "player_saves",
+        "economy_ledger",
+        "telemetry_events",
+        "idempotency_keys"
+      ]
+    },
+    {
+      "method": "GET",
+      "route": "/profiles/{playerId}",
+      "handler": "getProfile",
+      "auth": "OWNER_OR_ADMIN_READ",
+      "reads": [
+        "players"
+      ]
+    },
+    {
+      "method": "GET",
+      "route": "/players/{playerId}/save",
+      "handler": "loadSave",
+      "auth": "OWNER_OR_ADMIN_READ",
+      "reads": [
+        "player_saves"
+      ]
+    },
+    {
+      "method": "PUT",
+      "route": "/players/{playerId}/save",
+      "handler": "commitSave",
+      "auth": "OWNER",
+      "reads": [
+        "player_saves"
+      ],
+      "writes": [
+        "player_saves",
+        "telemetry_events",
+        "idempotency_keys"
+      ]
+    },
+    {
+      "method": "POST",
+      "route": "/players/{playerId}/ledger/credit",
+      "handler": "creditCurrency",
+      "auth": "SERVICE_OR_ADMIN_WRITE",
+      "writes": [
+        "economy_ledger",
+        "player_saves",
+        "telemetry_events",
+        "idempotency_keys"
+      ]
+    },
+    {
+      "method": "POST",
+      "route": "/players/{playerId}/ledger/debit",
+      "handler": "debitCurrency",
+      "auth": "SERVICE_OR_ADMIN_WRITE",
+      "writes": [
+        "economy_ledger",
+        "player_saves",
+        "telemetry_events",
+        "idempotency_keys"
+      ]
+    },
+    {
+      "method": "POST",
+      "route": "/telemetry/events",
+      "handler": "ingestEventBatch",
+      "auth": "PLAYER_OR_SERVICE",
+      "writes": [
+        "telemetry_events",
+        "idempotency_keys"
+      ]
+    },
+    {
+      "method": "GET",
+      "route": "/admin/players/{playerId}/audit",
+      "handler": "getPlayerAuditTrail",
+      "auth": "ADMIN_READ",
+      "reads": [
+        "players",
+        "player_saves",
+        "economy_ledger",
+        "telemetry_events",
+        "admin_audit_log"
+      ]
+    }
+  ],
+  "adminOperations": [
+    "getPlayerAuditTrail",
+    "repairSaveChecksum",
+    "grantCurrencyAdjustment",
+    "lockPlayerEconomy",
+    "exportPlayerData"
+  ],
+  "environments": [
+    {
+      "name": "local",
+      "database": "file",
+      "seedData": true,
+      "writesAllowed": true
+    },
+    {
+      "name": "staging",
+      "database": "managed",
+      "seedData": true,
+      "writesAllowed": true
+    },
+    {
+      "name": "production",
+      "database": "managed",
+      "seedData": false,
+      "writesAllowed": true
+    }
+  ],
+  "observability": [
+    "request_id",
+    "player_id",
+    "route",
+    "latency_ms",
+    "status_code",
+    "idempotency_replay",
+    "save_version",
+    "ledger_sequence"
+  ],
+  "validation": [
+    "npm run validate:runtime-persistence",
+    "npm run test:runtime-persistence",
+    "npm run precommit:verify"
+  ]
+}

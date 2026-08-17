@@ -6,7 +6,7 @@ Status: production-foundation audit completed after GitHub canon cleanup.
 
 Titan Gates: Ascension is structurally strong as a game bible, vertical-slice prototype, Mini App source, and asset-production command center. It is not yet a final AAA game-engine repository. The repo can guide a AAA build, but the next phase must separate prototype presentation from production runtime code and enforce schemas/contracts around every content pipeline.
 
-Readiness grade after the hosted backend boundary pass: B+ for AAA preproduction repository, B for direct AAA implementation repository, C+/B- for live game-platform readiness.
+Readiness grade after the runtime persistence boundary pass: B+ for AAA preproduction repository, B for direct AAA implementation repository, B- for live game-platform readiness foundation.
 
 ## What is already strong
 
@@ -24,6 +24,7 @@ Readiness grade after the hosted backend boundary pass: B+ for AAA preproduction
 - Canon migration/versioning policy now exists with append-only migration records and release-gate validation.
 - Platform Core v1 now exists for player profile creation, save import/export, roster ownership, progression persistence, inventory balances, and currency ledger events.
 - Hosted backend boundary v1 now defines profile service, cloud save service, authoritative economy ledger service, and telemetry ingestion service with idempotency and version-conflict rules.
+- Runtime persistence boundary v1 now defines database tables, additive migration policy, route authorization, admin audit operations, environments, and observability fields.
 - Large source asset policy is present through Git LFS attributes.
 
 ## Structural risks blocking AAA-scale production
@@ -42,14 +43,14 @@ Required next state:
 
 ### 2. Platform core is local, not yet a live backend
 
-Platform Core v1 proves the save/progression/ledger contract locally, and the hosted backend boundary now defines the service seam. A real gaming platform still needs an actual deployed backend, database persistence, auth provider, admin tools, monitoring, and environment operations.
+Platform Core v1 proves the save/progression/ledger contract locally. The hosted backend boundary and runtime persistence boundary now define the service seam, database shape, route auth, admin audit lane, and observability contract. A real gaming platform still needs deployed infrastructure wired to these contracts.
 
 Required next state:
 
 - deployed backend profile service
 - deployed authoritative save service
-- persisted economy ledger database
-- live telemetry/event ingestion
+- actual managed database implementation of the runtime persistence schema
+- live telemetry/event ingestion and monitoring
 - admin/support tools
 - environment configuration for dev/stage/prod
 
@@ -161,7 +162,7 @@ The current repo does not need to move everything immediately. The highest-value
 
 ### Next production pass
 
-1. Implement the hosted backend boundary against a real server/database runtime.
+1. Implement the runtime persistence boundary in a real deployed service once infrastructure is available.
 2. Tighten nested schema depth for abilities, mission objectives, economy products, telemetry events, and external AI generation stages.
 2. Deepen migration automation with generated migration templates and changelog-to-manifest drift detection.
 3. Continue extracting prototype code into deeper modules under `src/gameplay`, `src/ui`, and `src/data-loaders`.

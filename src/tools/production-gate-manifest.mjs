@@ -4,6 +4,8 @@ export const productionGateManifest = Object.freeze({
     'src/gameplay/economy/index.mjs',
     'src/platform/platform-core.mjs',
     'src/platform/backend-boundary.mjs',
+    'src/platform/runtime-persistence.mjs',
+    'src/platform/runtime-persistence.sql',
     'src/data-loaders/content-loader.mjs',
     'src/data-loaders/schema-contracts.mjs',
     'src/ui/state-presenters.mjs'

@@ -33,6 +33,11 @@ const contracts = [
     name: 'hosted-backend-boundary',
     schemaPath: 'schemas/hosted-backend-boundary.schema.json',
     records: [JSON.parse(fs.readFileSync('data/hosted-backend-boundary.json', 'utf8'))]
+  },
+  {
+    name: 'runtime-persistence',
+    schemaPath: 'schemas/runtime-persistence.schema.json',
+    records: [JSON.parse(fs.readFileSync('data/runtime-persistence-boundary.json', 'utf8'))]
   }
 ];
 

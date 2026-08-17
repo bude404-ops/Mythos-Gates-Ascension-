@@ -2,8 +2,8 @@
   "id": "TG-CANON-VERSION-MANIFEST-001",
   "schema": "TG_CANON_VERSION_MANIFEST_V1",
   "status": "ACTIVE",
-  "currentCanonVersion": "1.10.0-hosted-backend-boundary",
-  "updated": "2026-08-16T23:20:00Z",
+  "currentCanonVersion": "1.11.0-runtime-persistence-boundary",
+  "updated": "2026-08-16T23:40:00Z",
   "policyRef": "docs/production/DATA_MIGRATION_VERSIONING.md",
   "sourceOfTruth": "Git commit history plus this manifest. Runtime adapters consume migrated canonical data; they do not invent canon.",
   "rules": {
@@ -170,6 +170,27 @@
       "validation": [
         "npm run validate:backend-boundary",
         "npm run test:backend-boundary",
+        "npm run precommit:verify"
+      ]
+    },
+    {
+      "id": "TG-MIG-007",
+      "fromVersion": "1.10.0-hosted-backend-boundary",
+      "toVersion": "1.11.0-runtime-persistence-boundary",
+      "type": "RUNTIME_PROJECTION",
+      "status": "APPLIED",
+      "owner": "Platform Director",
+      "summary": "Added durable runtime persistence boundary for database tables, route authorization, admin operations, environment gates, and observability fields.",
+      "affectedData": [
+        "data/runtime-persistence-boundary.json",
+        "src/platform/runtime-persistence.mjs",
+        "src/platform/runtime-persistence.sql",
+        "scripts/validate-runtime-persistence.mjs",
+        "tests/runtime-persistence-contract.test.mjs"
+      ],
+      "validation": [
+        "npm run validate:runtime-persistence",
+        "npm run test:runtime-persistence",
         "npm run precommit:verify"
       ]
     }
