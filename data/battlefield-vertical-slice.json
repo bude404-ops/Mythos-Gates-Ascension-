@@ -81,18 +81,8 @@
       ]
     },
     {
-      "id": "elite",
-      "name": "Anchor Scar",
-      "purpose": "Elite encounter and reinforcements",
-      "spaces": [
-        "A5",
-        "B5",
-        "C5"
-      ]
-    },
-    {
       "id": "boss",
-      "name": "Gate Mouth Arena",
+      "name": "Anchor Scar / Gate Mouth Arena",
       "purpose": "Colossal boss phase fight beside the massive Gate",
       "spaces": [
         "D5",
@@ -107,7 +97,17 @@
         "E7",
         "F7",
         "G7"
-      ]
+      ],
+      "subZone": {
+        "id": "elite",
+        "name": "Anchor Scar",
+        "purpose": "Elite encounter and reinforcements",
+        "spaces": [
+          "A5",
+          "B5",
+          "C5"
+        ]
+      }
     }
   ],
   "routes": [
@@ -349,5 +349,11 @@
     "scale hierarchy",
     "progression rewards",
     "replay modifiers"
-  ]
+  ],
+  "battlefieldId": "BATTLEFIELD_001",
+  "faction": "Aten Ra",
+  "gridSize": {
+    "width": 7,
+    "height": 7
+  }
 }

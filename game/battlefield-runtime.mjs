@@ -1,4 +1,7 @@
 import {
+// Combat Contract: ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE
+// See: data/one-deity-vs-many-combat.json
+// 7x7 grid, 6 tactical zones, 1 deity vs many enemies, 11-turn limit, 3 Solar Seals.
   PHASES,
   STANCES,
   createInitialSoloBattleState,
@@ -32,10 +35,14 @@ const ZONE_TYPES = Object.freeze({
 
 const DEFAULT_ENEMY_BINDINGS = Object.freeze([
   // M01 W1: Gateborn Colossus + Beast-Realm Maneater at opposing gate markers
-  { slot: 'gateborn_colossus', creatureId: 'TG-CREATURE-002', position: { x: 6, y: 6 }, encounter: 1, role: 'ELITE', wave: 1 },
-  { slot: 'beast_realm_maneater', creatureId: 'TG-CREATURE-003', position: { x: 4, y: 7 }, encounter: 1, role: 'ELITE', wave: 1 },
+  { slot: 'gateborn_colossus', creatureId: 'TG-CREATURE-002', position: { x: 6, y: 6 }, encounter: 1, role: 'BRUTE', wave: 1, boss: true },
+  { slot: 'beast_realm_maneater', creatureId: 'TG-CREATURE-003', position: { x: 4, y: 7 }, encounter: 1, role: 'EXECUTIONER', wave: 1 },
+  { slot: 'hollow_wretch_1', creatureId: 'TG-CREATURE-001', position: { x: 5, y: 5 }, encounter: 1, role: 'SWARMER', wave: 1 },
+  { slot: 'hollow_wretch_2', creatureId: 'TG-CREATURE-001', position: { x: 3, y: 6 }, encounter: 1, role: 'SWARMER', wave: 1 },
+  { slot: 'hollow_choirling', creatureId: 'TG-CREATURE-006', position: { x: 6, y: 4 }, encounter: 1, role: 'DISRUPTOR', wave: 1 },
   // M01 W2: Beast-Realm Maneater reinforcement from shadowed lane (trigger: turn 3 or objective touched)
-  { slot: 'maneater_reinforcement', creatureId: 'TG-CREATURE-003', position: { x: 2, y: 5 }, encounter: 2, role: 'ELITE', wave: 2, reinforcement: true }
+  { slot: 'maneater_reinforcement', creatureId: 'TG-CREATURE-003', position: { x: 2, y: 5 }, encounter: 2, role: 'EXECUTIONER', wave: 2, reinforcement: true },
+  { slot: 'standard_bearer', creatureId: 'TG-CREATURE-004', position: { x: 5, y: 7 }, encounter: 2, role: 'GUARDIAN', wave: 2, reinforcement: true }
 ]);
 
 export const BATTLEFIELD_ACTIONS = Object.freeze({
@@ -113,7 +120,7 @@ export function createBattlefieldObjectives(verticalSlice) {
       progress: 0,
       requiredProgress: 1,
       status: 'ACTIVE',
-      primary: false,
+      primary: true,
       optional: true
     },
     {
@@ -131,6 +138,15 @@ export function createBattlefieldObjectives(verticalSlice) {
       progress: 0,
       requiredProgress: 3,
       status: 'ACTIVE'
+    },
+    {
+      id: 'destroy_hollow_anchor',
+      label: 'Destroy the Hollow Anchor (Boss)',
+      progress: 0,
+      requiredProgress: 5,
+      status: 'ACTIVE',
+      boss: true,
+      required: true
     }
   ];
 }
@@ -171,7 +187,7 @@ function applyEnemyPositions(state, bindings = DEFAULT_ENEMY_BINDINGS) {
       position: clone(binding.position),
       encounter: binding.encounter,
       battlefieldSlot: binding.slot,
-      boss: false,
+      boss: binding.boss || false,
       phaseIndex: null,
     };
   });

@@ -188,5 +188,16 @@
     "rig spec",
     "animation rig"
   ],
-  "canonRule": "If canon data is missing, set NEEDS_CANON_DATA and create a development task; do not invent lore."
+  "canonRule": "If canon data is missing, set NEEDS_CANON_DATA and create a development task; do not invent lore.",
+  "instanceFields": {
+    "id": "string — unique battlefield ID (e.g., BATTLEFIELD_001)",
+    "name": "string — display name",
+    "faction": "string|null — owning faction or null for contested",
+    "gridSize": {
+      "width": 7,
+      "height": 7
+    },
+    "zones": "array of 6 zone objects",
+    "spawnPoints": "{deity: {x,y}, enemy: [{x,y}...]}"
+  }
 }

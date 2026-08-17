@@ -38,7 +38,7 @@ assert.equal(terrain.grid.width, 7);
 assert.equal(terrain.grid.height, 7);
 assert.equal(terrain.spaces.length, 49);
 assert.equal(new Set(terrain.spaces.map(s => s.id)).size, 49);
-for (const zoneId of ['entry','open','choke','terrain','objective','elite','boss']) {
+for (const zoneId of ['entry','open','choke','terrain','objective','boss']) {
   assert.ok(terrain.spaces.some(space => space.zoneId === zoneId), `missing zone ${zoneId}`);
 }
 assert.ok(terrain.spaces.some(space => space.hazard === 'SOLAR_JUDGMENT'));
@@ -52,13 +52,13 @@ assert.ok(objectives.some(o => o.boss && o.requiredProgress === 5));
 
 const roster = createBattlefieldEnemyRoster({ creatures });
 assert.equal(roster.length, 7);
-assert.ok(roster.some(enemy => enemy.name === 'The First Gate Colossus'));
+assert.ok(roster.some(enemy => enemy.name === 'Gateborn Colossus'));
 assert.ok(roster.every(enemy => enemy.stats.hp > 0 && enemy.stats.damage > 0));
 
-let state = createBattlefieldRuntimeState({ verticalSlice, titan, creatures, seed: 29029 });
-assert.equal(state.battlefield.activeTitanLimit, 1);
+let state = createBattlefieldRuntimeState({ verticalSlice, deity: titan, creatures, seed: 29029 });
+assert.equal(state.battlefield.activeDeityLimit, 1);
 assert.equal(state.terrain.spaces.length, 49);
-assert.equal(state.titan.id, 'TG-TITAN-001');
+assert.equal(state.deity.id, 'TG-TITAN-001');
 assert.equal(state.enemies.length, 7);
 assert.equal(state.battlefield.mobileBottomActionBar, true);
 assert.deepEqual(state.battlefield.routeTypes.sort(), ['direct','optional','safe','tactical'].sort());
@@ -92,11 +92,11 @@ assert.equal(state.phase, PHASES.PLAYER);
 assert.ok(state.round >= 2);
 
 const summary = summarizeBattlefieldRuntime(state);
-assert.equal(summary.activeTitanLimit, 1);
+assert.equal(summary.activeDeityLimit, 1);
 assert.equal(summary.spaces, 49);
 assert.equal(summary.routes, 4);
 assert.equal(summary.sealsStable, 3);
-assert.equal(summary.qualityTargetsMet.oneActiveTitan, true);
+assert.equal(summary.qualityTargetsMet.oneActiveDeity, true);
 assert.equal(summary.qualityTargetsMet.spaces49, true);
 assert.equal(summary.qualityTargetsMet.multipleRoutes, true);
 assert.equal(summary.qualityTargetsMet.interactiveTerrain, true);
@@ -117,8 +117,8 @@ const script = [
   { reducer: 'advanceBattlefieldBossPhase', reason: 'deterministic_script' },
   { reducer: 'endBattlefieldRound', reactionChoice: 'DECLINE' }
 ];
-const scriptedA = runBattlefieldScript(createBattlefieldRuntimeState({ verticalSlice, titan, creatures, seed: 77 }), script);
-const scriptedB = runBattlefieldScript(createBattlefieldRuntimeState({ verticalSlice, titan, creatures, seed: 77 }), script);
+const scriptedA = runBattlefieldScript(createBattlefieldRuntimeState({ verticalSlice, deity: titan, creatures, seed: 77 }), script);
+const scriptedB = runBattlefieldScript(createBattlefieldRuntimeState({ verticalSlice, deity: titan, creatures, seed: 77 }), script);
 assert.deepEqual(summarizeBattlefieldRuntime(scriptedA), summarizeBattlefieldRuntime(scriptedB));
 assert.equal(tasks.find(task => task.id === 'TG-DEV-029').status, 'COMPLETED');
 

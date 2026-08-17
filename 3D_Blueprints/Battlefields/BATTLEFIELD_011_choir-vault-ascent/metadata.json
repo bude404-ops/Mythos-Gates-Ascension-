@@ -3,7 +3,7 @@
   "assetType": "BATTLEFIELD",
   "canonicalEntityId": "TG-MAP-011",
   "canonicalName": "Choir Vault Ascent",
-  "faction": null,
+  "faction": "Empyrean",
   "loreReference": "A vertical campaign ascent of floating ivory-gold platforms, aura engines, and glowing mission nodes orbiting a shattered celestial vault.",
   "canonAuthority": "Current Mythos Gates canon/lore data layer. 3D Asset Director may translate scale and production needs but may not override Lore Director.",
   "scale": {
@@ -213,5 +213,85 @@
     "lastValidated": null,
     "validator": "scripts/validate-3d-blueprints.mjs",
     "readyCriteria": "All required views linked, scale/material/gameplay dimensions defined, dependencies valid, and status at least VALIDATED."
+  },
+  "gridSize": {
+    "width": 7,
+    "height": 7
+  },
+  "zones": [
+    {
+      "id": "zone-1",
+      "name": "Entry",
+      "type": "entry",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "zone-2",
+      "name": "Open Ground",
+      "type": "open",
+      "position": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "id": "zone-3",
+      "name": "Choke Point",
+      "type": "choke",
+      "position": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "id": "zone-4",
+      "name": "Terrain Feature",
+      "type": "terrain",
+      "position": {
+        "x": 4,
+        "y": 2
+      }
+    },
+    {
+      "id": "zone-5",
+      "name": "Objective",
+      "type": "objective",
+      "position": {
+        "x": 5,
+        "y": 4
+      }
+    },
+    {
+      "id": "zone-6",
+      "name": "Boss Arena",
+      "type": "boss",
+      "position": {
+        "x": 6,
+        "y": 6
+      }
+    }
+  ],
+  "spawnPoints": {
+    "deity": {
+      "x": 0,
+      "y": 0
+    },
+    "enemy": [
+      {
+        "x": 4,
+        "y": 3
+      },
+      {
+        "x": 5,
+        "y": 4
+      },
+      {
+        "x": 6,
+        "y": 3
+      }
+    ]
   }
 }

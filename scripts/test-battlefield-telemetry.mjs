@@ -46,7 +46,7 @@ const objectives = [
   { id: 'destroy_hollow_anchor', progress: 0, requiredProgress: 1, status: 'ACTIVE' }
 ];
 
-let state = createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-TEST-001', missionId: 'TG-BATTLEFIELD-VS-001', titan, enemies: enemyRoster, terrain, objectives, seed: 931 });
+let state = createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-TEST-001', missionId: 'TG-BATTLEFIELD-VS-001', deity: titan, enemies: enemyRoster, terrain, objectives, seed: 931 });
 state = applyTitanAction(state, { type: 'MOVE', to: { x: 2, y: 1 } });
 state = applyTitanAction(state, { type: 'FOCUS' });
 state = revealEnemyIntents(state);
@@ -75,13 +75,13 @@ assert.ok(summary.bossPhaseFailPoints.some(p => p.phase === 'phase_1'));
 assert.ok(state.eventLog.every(row => row.seq && row.family && row.runId));
 assert.ok(state.eventLog.some(row => row.type === 'OBJECTIVE_COMPLETE'));
 
-const scriptedA = runReducerScript(createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-DETERMINISM', missionId: 'TG-BATTLEFIELD-VS-001', titan, enemies: enemyRoster, terrain, objectives, seed: 11 }), [
+const scriptedA = runReducerScript(createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-DETERMINISM', missionId: 'TG-BATTLEFIELD-VS-001', deity: titan, enemies: enemyRoster, terrain, objectives, seed: 11 }), [
   { reducer: 'applyTitanAction', action: { type: 'MOVE', to: { x: 2, y: 1 } } },
   { reducer: 'applyTitanAction', action: { type: 'FOCUS' } },
   { reducer: 'recordBossPhaseTelemetry', bossPhase: { bossId: 'TG-CREATURE-008', phaseIndex: 2, status: 'CLEARED', reason: 'deterministic clear' } },
   { reducer: 'evaluateObjectives', objectiveEvent: { objectiveId: 'destroy_hollow_anchor', progress: 1 } }
 ]);
-const scriptedB = runReducerScript(createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-DETERMINISM', missionId: 'TG-BATTLEFIELD-VS-001', titan, enemies: enemyRoster, terrain, objectives, seed: 11 }), [
+const scriptedB = runReducerScript(createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-DETERMINISM', missionId: 'TG-BATTLEFIELD-VS-001', deity: titan, enemies: enemyRoster, terrain, objectives, seed: 11 }), [
   { reducer: 'applyTitanAction', action: { type: 'MOVE', to: { x: 2, y: 1 } } },
   { reducer: 'applyTitanAction', action: { type: 'FOCUS' } },
   { reducer: 'recordBossPhaseTelemetry', bossPhase: { bossId: 'TG-CREATURE-008', phaseIndex: 2, status: 'CLEARED', reason: 'deterministic clear' } },
