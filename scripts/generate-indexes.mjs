@@ -111,7 +111,8 @@ const files = {
   'asset-registry.json': 'assetRegistry',
   'github-asset-repository.json': 'githubAssetRepository',
   '3d-blueprint-system.json': 'blueprint3dSystem',
-  '3d-production-queue.json': 'blueprint3dProductionQueue'
+  '3d-production-queue.json': 'blueprint3dProductionQueue',
+  'mythos-gates-dungeon-route-registry.json': 'mythosGatesDungeonRoutes'
 };
 const counts = {};
 for (const [file, key] of Object.entries(files)) {
@@ -169,6 +170,9 @@ counts.creatorHandoffPackets = creatorHandoffReport.packets || 0;
 counts.creatorHandoffBatches = (creatorHandoffReport.batches || []).length;
 const externalAiPacket = read('handoff/external_ai/BATTLEFIELD_001_the-first-reopening-gate.external-ai-packet.json');
 counts.externalAiProductionPackets = 1;
+const mythosGatesDungeonRouteRegistry = read('data/mythos-gates-dungeon-route-registry.json');
+counts.mythosGatesDungeonRoutes = (mythosGatesDungeonRouteRegistry.routes || []).length;
+counts.mythosGatesDungeonRouteRealms = new Set((mythosGatesDungeonRouteRegistry.routes || []).map(route => route.sourceRealmId)).size;
 
 const githubAssetStatusCounts = githubAssetRegistry.entries.reduce((acc, asset) => { acc[asset.status] = (acc[asset.status] || 0) + 1; return acc; }, {});
 const githubAssetTypeCounts = githubAssetRegistry.entries.reduce((acc, asset) => { acc[asset.asset_type] = (acc[asset.asset_type] || 0) + 1; return acc; }, {});

@@ -1,0 +1,1237 @@
+{
+  "id": "MG-DUNGEON-ROUTE-REGISTRY-001",
+  "name": "Mythos Gates Dungeon Route Registry",
+  "status": "IMPLEMENTED",
+  "chapter": "Ascension",
+  "updated": "2026-08-17",
+  "director": "Systems and Lore Director",
+  "canonRule": "Routes must extend the current Lore Codex; do not invent replacement factions, replacement Realms, or contradictory Gate origins. New details are route-level canon extensions only.",
+  "summary": {
+    "routes": 7,
+    "realmsCovered": 7,
+    "factionsCovered": 7,
+    "activePlayableDeitiesPerRun": 1,
+    "brand": "Mythos Gates",
+    "currentChapter": "Ascension"
+  },
+  "routes": [
+    {
+      "id": "MG-DUNGEON-ROUTE-001",
+      "slug": "sun-scale-verdict-descent",
+      "name": "Sun-Scale Verdict Descent",
+      "status": "CANON_ROUTE_BLUEPRINT",
+      "chapter": "Ascension",
+      "universe": "Mythos Gates",
+      "sourceRealmId": "TG-REALM-001",
+      "factionId": "TG-FACTION-001",
+      "faction": "Aten Ra",
+      "realm": "The Solar Dominion of Khepra",
+      "entryGate": "The Sun-Scale Gate",
+      "gateState": "Stable Gate under Ma’at strain",
+      "dungeonType": "sacred judgment temple-road descent",
+      "canonSources": {
+        "realmCodexEntry": "TG-REALM-001",
+        "establishedGate": "The Sun-Scale Gate",
+        "landmarksUsed": [
+          "The Noon Court of Ra",
+          "The Aten Hand-Ray Causeway",
+          "The Khepri Dawn Engine",
+          "The Ma’at Scale Hall",
+          "The Black-Land River of Verdicts",
+          "The Red-Land Sutekh Storm Bastion"
+        ],
+        "hazardsUsed": [
+          "Aten hand-rays that burn lies into visible brands",
+          "Ma’at scale fields that immobilize anything out of balance",
+          "Khepri dawn loops that rewind wounds and revive enemies if misread",
+          "Sutekh red storms that disrupt both allies and Hollow invaders",
+          "black Nile silt channels that preserve memory and expose bloodline echoes"
+        ],
+        "campaignHooksUsed": [
+          "Recover a stolen Ma’at Feather before the Realm misjudges every allied faction",
+          "decide whether Sutekh’s storm bastion is treason or the only defense against Apep-like Hollow chaos",
+          "escort Iset priests through the Black-Land River so a shattered deity can be restored"
+        ]
+      },
+      "playerModel": {
+        "activePlayableDeities": 1,
+        "combatFantasy": "one god or goddess versus multiple enemies",
+        "partyRules": [
+          "no armies",
+          "no squads",
+          "no simultaneous multi-character party",
+          "one selected deity enters the route"
+        ]
+      },
+      "routeStructure": {
+        "depthBands": [
+          "threshold",
+          "outer dungeon",
+          "branching pressure layer",
+          "elite lock",
+          "treasure/lore detour",
+          "boss approach",
+          "boss chamber"
+        ],
+        "roomGraph": [
+          {
+            "order": 1,
+            "nodeId": "MG-DUNGEON-ROUTE-001-ROOM-01",
+            "name": "Aten Hand-Ray Vestibule",
+            "nodeType": "entry",
+            "branching": false
+          },
+          {
+            "order": 2,
+            "nodeId": "MG-DUNGEON-ROUTE-001-ROOM-02",
+            "name": "Black-Land Silt Crossing",
+            "nodeType": "combat",
+            "branching": false
+          },
+          {
+            "order": 3,
+            "nodeId": "MG-DUNGEON-ROUTE-001-ROOM-03",
+            "name": "Khepri Dawn Loop Chamber",
+            "nodeType": "hazard",
+            "branching": true
+          },
+          {
+            "order": 4,
+            "nodeId": "MG-DUNGEON-ROUTE-001-ROOM-04",
+            "name": "Ma’at Scale Hall",
+            "nodeType": "elite",
+            "branching": false
+          },
+          {
+            "order": 5,
+            "nodeId": "MG-DUNGEON-ROUTE-001-ROOM-05",
+            "name": "Lion Gate Kill Zone",
+            "nodeType": "treasure_or_lore",
+            "branching": true
+          },
+          {
+            "order": 6,
+            "nodeId": "MG-DUNGEON-ROUTE-001-ROOM-06",
+            "name": "Hidden-Sun Archive Antechamber",
+            "nodeType": "pre_boss",
+            "branching": false
+          },
+          {
+            "order": 7,
+            "nodeId": "MG-DUNGEON-ROUTE-001-ROOM-07",
+            "name": "Noon Court Boss Dais",
+            "nodeType": "boss",
+            "branching": false
+          }
+        ]
+      },
+      "encounters": {
+        "standardEnemies": [
+          "Hollow scale-thieves",
+          "Isfet-branded jackal guardians",
+          "revived verdict shades",
+          "sun-scorched oathbreakers"
+        ],
+        "eliteEncounter": "Lion-Gate Oathbreaker Captain",
+        "bossEncounter": "The Misweighed Dawn Judge",
+        "scalingPressure": [
+          "enemy numbers",
+          "enemy combinations",
+          "positioning",
+          "terrain law",
+          "Gate instability",
+          "status effects",
+          "elite mechanics",
+          "boss phase pressure"
+        ]
+      },
+      "hazards": [
+        "Aten hand-rays that burn lies into visible brands",
+        "Ma’at scale fields that immobilize anything out of balance",
+        "Khepri dawn loops that rewind wounds and revive enemies if misread",
+        "Sutekh red storms that disrupt both allies and Hollow invaders",
+        "black Nile silt channels that preserve memory and expose bloodline echoes"
+      ],
+      "shrines": [
+        "Aten Ra restoration shrine",
+        "The Sun-Scale Gate resonance shrine"
+      ],
+      "treasureRooms": [
+        {
+          "name": "Sun-Scale Verdict Descent Relic Cache",
+          "lootThemes": [
+            "Ma’at Feather Shard",
+            "Faience Sun-Thread",
+            "Black Silt Memory Jar",
+            "Electrum Verdict Ring"
+          ]
+        }
+      ],
+      "loreRevealChain": [
+        "Why the Sun-Scale Gate judges travelers before admitting them",
+        "How Khepri dawn loops restore both allies and enemies",
+        "A hidden Amunet record implying the Gates predate mortal pharaoh-echoes"
+      ],
+      "artDirection": {
+        "style": "premium stylized-realistic mythological mobile tactical RPG",
+        "dungeonVisualLanguage": "Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light.",
+        "avoid": [
+          "sci-fi portal treatment",
+          "generic fantasy castle",
+          "planetary/alien framing",
+          "reskinned copy dungeon",
+          "UI grid tiles as world objects"
+        ]
+      },
+      "expansionHooks": [
+        "Leaves the complete Mythos Gates origin unresolved",
+        "Can accept later Mythos Gates subtitles without renaming this route",
+        "Can add deeper sealed wings, enemy variants, relic chains, and future Realm connections"
+      ]
+    },
+    {
+      "id": "MG-DUNGEON-ROUTE-002",
+      "slug": "thunder-oath-root-gauntlet",
+      "name": "Thunder-Oath Root Gauntlet",
+      "status": "CANON_ROUTE_BLUEPRINT",
+      "chapter": "Ascension",
+      "universe": "Mythos Gates",
+      "sourceRealmId": "TG-REALM-002",
+      "factionId": "TG-FACTION-002",
+      "faction": "Asgardian",
+      "realm": "The Storm-Rooted Aesir Holds",
+      "entryGate": "The Thunder-Oath Gate",
+      "gateState": "Ruin Gate with active oath memory",
+      "dungeonType": "storm bridge and world-root trial",
+      "canonSources": {
+        "realmCodexEntry": "TG-REALM-002",
+        "establishedGate": "The Thunder-Oath Gate",
+        "landmarksUsed": [
+          "Storm-Oath Bridge",
+          "Rune-Mountain Halls",
+          "Valkyrie Weatherfields",
+          "Yggdrasil Root-Gate",
+          "Einherjar Feast Road",
+          "Frost-Anvil Deep"
+        ],
+        "hazardsUsed": [
+          "runes that bind promises into flesh",
+          "lightning that strikes cowardice before armor",
+          "world-root snare paths that remember old betrayals",
+          "blackwinter gusts that slow the oathless",
+          "raven omen swarms that reveal hidden names"
+        ],
+        "campaignHooksUsed": [
+          "prove whether The Storm-Rooted Aesir Holds should preserve its ancient law or adapt it before the Hollow exploits it",
+          "recover a source-culture relic humans later misunderstood in Earth myth",
+          "defend a landmark that keeps the Realm's myth-function alive"
+        ]
+      },
+      "playerModel": {
+        "activePlayableDeities": 1,
+        "combatFantasy": "one god or goddess versus multiple enemies",
+        "partyRules": [
+          "no armies",
+          "no squads",
+          "no simultaneous multi-character party",
+          "one selected deity enters the route"
+        ]
+      },
+      "routeStructure": {
+        "depthBands": [
+          "threshold",
+          "outer dungeon",
+          "branching pressure layer",
+          "elite lock",
+          "treasure/lore detour",
+          "boss approach",
+          "boss chamber"
+        ],
+        "roomGraph": [
+          {
+            "order": 1,
+            "nodeId": "MG-DUNGEON-ROUTE-002-ROOM-01",
+            "name": "Broken Rune Arrival Span",
+            "nodeType": "entry",
+            "branching": false
+          },
+          {
+            "order": 2,
+            "nodeId": "MG-DUNGEON-ROUTE-002-ROOM-02",
+            "name": "Storm-Oath Bridge",
+            "nodeType": "combat",
+            "branching": false
+          },
+          {
+            "order": 3,
+            "nodeId": "MG-DUNGEON-ROUTE-002-ROOM-03",
+            "name": "Valkyrie Weatherfield",
+            "nodeType": "hazard",
+            "branching": true
+          },
+          {
+            "order": 4,
+            "nodeId": "MG-DUNGEON-ROUTE-002-ROOM-04",
+            "name": "Rune-Mountain Hall",
+            "nodeType": "elite",
+            "branching": false
+          },
+          {
+            "order": 5,
+            "nodeId": "MG-DUNGEON-ROUTE-002-ROOM-05",
+            "name": "World-Root Snare Path",
+            "nodeType": "treasure_or_lore",
+            "branching": true
+          },
+          {
+            "order": 6,
+            "nodeId": "MG-DUNGEON-ROUTE-002-ROOM-06",
+            "name": "Betrayal Memory Hollow",
+            "nodeType": "pre_boss",
+            "branching": false
+          },
+          {
+            "order": 7,
+            "nodeId": "MG-DUNGEON-ROUTE-002-ROOM-07",
+            "name": "Standard Bearer Storm Keep",
+            "nodeType": "boss",
+            "branching": false
+          }
+        ]
+      },
+      "encounters": {
+        "standardEnemies": [
+          "oathless draugr",
+          "rune-bound wolves",
+          "storm revenants",
+          "Hollow oath-eaters"
+        ],
+        "eliteEncounter": "Valkyrie Weatherfield Exile",
+        "bossEncounter": "The Forgotten Standard Bearer",
+        "scalingPressure": [
+          "enemy numbers",
+          "enemy combinations",
+          "positioning",
+          "terrain law",
+          "Gate instability",
+          "status effects",
+          "elite mechanics",
+          "boss phase pressure"
+        ]
+      },
+      "hazards": [
+        "runes that bind promises into flesh",
+        "lightning that strikes cowardice before armor",
+        "world-root snare paths that remember old betrayals",
+        "blackwinter gusts that slow the oathless",
+        "raven omen swarms that reveal hidden names"
+      ],
+      "shrines": [
+        "Asgardian restoration shrine",
+        "The Thunder-Oath Gate resonance shrine"
+      ],
+      "treasureRooms": [
+        {
+          "name": "Thunder-Oath Root Gauntlet Relic Cache",
+          "lootThemes": [
+            "Oath-Iron Nail",
+            "World-Root Splinter",
+            "Valkyrie Storm Pin",
+            "Runed Promise Band"
+          ]
+        }
+      ],
+      "loreRevealChain": [
+        "How oaths become physical law near the Gate",
+        "Why world-roots remember betrayals",
+        "A damaged inscription showing the Gate can bind gods as well as monsters"
+      ],
+      "artDirection": {
+        "style": "premium stylized-realistic mythological mobile tactical RPG",
+        "dungeonVisualLanguage": "storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.",
+        "avoid": [
+          "sci-fi portal treatment",
+          "generic fantasy castle",
+          "planetary/alien framing",
+          "reskinned copy dungeon",
+          "UI grid tiles as world objects"
+        ]
+      },
+      "expansionHooks": [
+        "Leaves the complete Mythos Gates origin unresolved",
+        "Can accept later Mythos Gates subtitles without renaming this route",
+        "Can add deeper sealed wings, enemy variants, relic chains, and future Realm connections"
+      ]
+    },
+    {
+      "id": "MG-DUNGEON-ROUTE-003",
+      "slug": "laurel-sky-hubris-trial",
+      "name": "Laurel-Sky Hubris Trial",
+      "status": "CANON_ROUTE_BLUEPRINT",
+      "chapter": "Ascension",
+      "universe": "Mythos Gates",
+      "sourceRealmId": "TG-REALM-003",
+      "factionId": "TG-FACTION-003",
+      "faction": "Olympian",
+      "realm": "The Celestial Heights of Olympus",
+      "entryGate": "The Laurel-Sky Gate",
+      "gateState": "Stable Gate with oracle vapor leakage",
+      "dungeonType": "floating tribunal arena and oracle theater",
+      "canonSources": {
+        "realmCodexEntry": "TG-REALM-003",
+        "establishedGate": "The Laurel-Sky Gate",
+        "landmarksUsed": [
+          "Laurel Sky Arena",
+          "Thunder Tribunal Acropolis",
+          "Oracle Vapor Theater",
+          "Aegis Shield Court",
+          "Hephaestian Bronze Forge",
+          "Hermes Crossing Stair"
+        ],
+        "hazardsUsed": [
+          "laurel verdict rings that punish cowardice and hubris",
+          "oracle vapors that reveal possible futures as traps",
+          "thunder tribunals that strike illegal movement",
+          "marble terraces that fall when contests are dishonored",
+          "aegis glare that petrifies reckless attackers"
+        ],
+        "campaignHooksUsed": [
+          "prove whether The Celestial Heights of Olympus should preserve its ancient law or adapt it before the Hollow exploits it",
+          "recover a source-culture relic humans later misunderstood in Earth myth",
+          "defend a landmark that keeps the Realm's myth-function alive"
+        ]
+      },
+      "playerModel": {
+        "activePlayableDeities": 1,
+        "combatFantasy": "one god or goddess versus multiple enemies",
+        "partyRules": [
+          "no armies",
+          "no squads",
+          "no simultaneous multi-character party",
+          "one selected deity enters the route"
+        ]
+      },
+      "routeStructure": {
+        "depthBands": [
+          "threshold",
+          "outer dungeon",
+          "branching pressure layer",
+          "elite lock",
+          "treasure/lore detour",
+          "boss approach",
+          "boss chamber"
+        ],
+        "roomGraph": [
+          {
+            "order": 1,
+            "nodeId": "MG-DUNGEON-ROUTE-003-ROOM-01",
+            "name": "Sky-Marble Arrival Terrace",
+            "nodeType": "entry",
+            "branching": false
+          },
+          {
+            "order": 2,
+            "nodeId": "MG-DUNGEON-ROUTE-003-ROOM-02",
+            "name": "Laurel Verdict Ring",
+            "nodeType": "combat",
+            "branching": false
+          },
+          {
+            "order": 3,
+            "nodeId": "MG-DUNGEON-ROUTE-003-ROOM-03",
+            "name": "Oracle Vapor Theater",
+            "nodeType": "hazard",
+            "branching": true
+          },
+          {
+            "order": 4,
+            "nodeId": "MG-DUNGEON-ROUTE-003-ROOM-04",
+            "name": "Aegis Shield Court",
+            "nodeType": "elite",
+            "branching": false
+          },
+          {
+            "order": 5,
+            "nodeId": "MG-DUNGEON-ROUTE-003-ROOM-05",
+            "name": "Apollo Sun-Clarity Gallery",
+            "nodeType": "treasure_or_lore",
+            "branching": true
+          },
+          {
+            "order": 6,
+            "nodeId": "MG-DUNGEON-ROUTE-003-ROOM-06",
+            "name": "Artemis Wild Threshold",
+            "nodeType": "pre_boss",
+            "branching": false
+          },
+          {
+            "order": 7,
+            "nodeId": "MG-DUNGEON-ROUTE-003-ROOM-07",
+            "name": "Thunder Tribunal Acropolis",
+            "nodeType": "boss",
+            "branching": false
+          }
+        ]
+      },
+      "encounters": {
+        "standardEnemies": [
+          "laurel-bound champions",
+          "oracle-maddened shades",
+          "bronze shield automata shaped by myth not machinery",
+          "Hollow victory parasites"
+        ],
+        "eliteEncounter": "Aegis Court Duelist",
+        "bossEncounter": "The Thunder Tribunal Usurper",
+        "scalingPressure": [
+          "enemy numbers",
+          "enemy combinations",
+          "positioning",
+          "terrain law",
+          "Gate instability",
+          "status effects",
+          "elite mechanics",
+          "boss phase pressure"
+        ]
+      },
+      "hazards": [
+        "laurel verdict rings that punish cowardice and hubris",
+        "oracle vapors that reveal possible futures as traps",
+        "thunder tribunals that strike illegal movement",
+        "marble terraces that fall when contests are dishonored",
+        "aegis glare that petrifies reckless attackers"
+      ],
+      "shrines": [
+        "Olympian restoration shrine",
+        "The Laurel-Sky Gate resonance shrine"
+      ],
+      "treasureRooms": [
+        {
+          "name": "Laurel-Sky Hubris Trial Relic Cache",
+          "lootThemes": [
+            "Laurel Verdict Wreath",
+            "Aegis Scale Fragment",
+            "Oracle Smoke Phial",
+            "Bronze Thunder Pin"
+          ]
+        }
+      ],
+      "loreRevealChain": [
+        "How Olympus tests hubris through terrain law",
+        "Why oracle vapors show possible futures as traps",
+        "A partial verdict asking whether the Gates protect Olympus or expose it"
+      ],
+      "artDirection": {
+        "style": "premium stylized-realistic mythological mobile tactical RPG",
+        "dungeonVisualLanguage": "living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal halos, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands.",
+        "avoid": [
+          "sci-fi portal treatment",
+          "generic fantasy castle",
+          "planetary/alien framing",
+          "reskinned copy dungeon",
+          "UI grid tiles as world objects"
+        ]
+      },
+      "expansionHooks": [
+        "Leaves the complete Mythos Gates origin unresolved",
+        "Can accept later Mythos Gates subtitles without renaming this route",
+        "Can add deeper sealed wings, enemy variants, relic chains, and future Realm connections"
+      ]
+    },
+    {
+      "id": "MG-DUNGEON-ROUTE-004",
+      "slug": "torii-moon-mirror-road",
+      "name": "Torii-Moon Mirror Road",
+      "status": "CANON_ROUTE_BLUEPRINT",
+      "chapter": "Ascension",
+      "universe": "Mythos Gates",
+      "sourceRealmId": "TG-REALM-004",
+      "factionId": "TG-FACTION-004",
+      "faction": "Kami",
+      "realm": "The Sacred Kingdoms",
+      "entryGate": "The Torii-Moon Gate",
+      "gateState": "Distortion Gate with ritual rerouting",
+      "dungeonType": "shrine-road labyrinth and mirror sanctum",
+      "canonSources": {
+        "realmCodexEntry": "TG-REALM-004",
+        "establishedGate": "The Torii-Moon Gate",
+        "landmarksUsed": [
+          "Torii-Moon Road",
+          "Mirror Lake Sanctum",
+          "Foxfire Rice Court",
+          "Tengu Storm-Cedar Peak",
+          "Oni Iron Threshold",
+          "Dragon Rain Palace"
+        ],
+        "hazardsUsed": [
+          "torii gates that reroute space when crossed without rite",
+          "purification streams that burn corruption and lies",
+          "foxfire mirages that copy allied silhouettes",
+          "tengu wind lanes that throw the arrogant from high paths",
+          "oni taboo zones that punish broken shrine law"
+        ],
+        "campaignHooksUsed": [
+          "prove whether The Sacred Kingdoms should preserve its ancient law or adapt it before the Hollow exploits it",
+          "recover a source-culture relic humans later misunderstood in Earth myth",
+          "defend a landmark that keeps the Realm's myth-function alive"
+        ]
+      },
+      "playerModel": {
+        "activePlayableDeities": 1,
+        "combatFantasy": "one god or goddess versus multiple enemies",
+        "partyRules": [
+          "no armies",
+          "no squads",
+          "no simultaneous multi-character party",
+          "one selected deity enters the route"
+        ]
+      },
+      "routeStructure": {
+        "depthBands": [
+          "threshold",
+          "outer dungeon",
+          "branching pressure layer",
+          "elite lock",
+          "treasure/lore detour",
+          "boss approach",
+          "boss chamber"
+        ],
+        "roomGraph": [
+          {
+            "order": 1,
+            "nodeId": "MG-DUNGEON-ROUTE-004-ROOM-01",
+            "name": "Purification Stream Threshold",
+            "nodeType": "entry",
+            "branching": false
+          },
+          {
+            "order": 2,
+            "nodeId": "MG-DUNGEON-ROUTE-004-ROOM-02",
+            "name": "Foxfire Torii Road",
+            "nodeType": "combat",
+            "branching": false
+          },
+          {
+            "order": 3,
+            "nodeId": "MG-DUNGEON-ROUTE-004-ROOM-03",
+            "name": "Cedar Root Ambush Bend",
+            "nodeType": "hazard",
+            "branching": true
+          },
+          {
+            "order": 4,
+            "nodeId": "MG-DUNGEON-ROUTE-004-ROOM-04",
+            "name": "Mirror Lake Sanctum",
+            "nodeType": "elite",
+            "branching": false
+          },
+          {
+            "order": 5,
+            "nodeId": "MG-DUNGEON-ROUTE-004-ROOM-05",
+            "name": "Inari Rice Court Storehouse",
+            "nodeType": "treasure_or_lore",
+            "branching": true
+          },
+          {
+            "order": 6,
+            "nodeId": "MG-DUNGEON-ROUTE-004-ROOM-06",
+            "name": "Tengu Storm-Cedar Peak",
+            "nodeType": "pre_boss",
+            "branching": false
+          },
+          {
+            "order": 7,
+            "nodeId": "MG-DUNGEON-ROUTE-004-ROOM-07",
+            "name": "Moon-Mirror Boss Shrine",
+            "nodeType": "boss",
+            "branching": false
+          }
+        ]
+      },
+      "encounters": {
+        "standardEnemies": [
+          "foxfire doubles",
+          "impure shrine shades",
+          "oni iron trespassers",
+          "Hollow mask-wearers"
+        ],
+        "eliteEncounter": "Tengu Storm-Cedar Warden",
+        "bossEncounter": "The False Reflection Kami",
+        "scalingPressure": [
+          "enemy numbers",
+          "enemy combinations",
+          "positioning",
+          "terrain law",
+          "Gate instability",
+          "status effects",
+          "elite mechanics",
+          "boss phase pressure"
+        ]
+      },
+      "hazards": [
+        "torii gates that reroute space when crossed without rite",
+        "purification streams that burn corruption and lies",
+        "foxfire mirages that copy allied silhouettes",
+        "tengu wind lanes that throw the arrogant from high paths",
+        "oni taboo zones that punish broken shrine law"
+      ],
+      "shrines": [
+        "Kami restoration shrine",
+        "The Torii-Moon Gate resonance shrine"
+      ],
+      "treasureRooms": [
+        {
+          "name": "Torii-Moon Mirror Road Relic Cache",
+          "lootThemes": [
+            "Shimenawa Knot Seal",
+            "Foxfire Lantern Core",
+            "Moon-Mirror Shard",
+            "Cedar Wind Feather"
+          ]
+        }
+      ],
+      "loreRevealChain": [
+        "Why unpurified crossings reroute space",
+        "How foxfire copies allied silhouettes",
+        "A shrine tablet implying some Gates choose which names may pass"
+      ],
+      "artDirection": {
+        "style": "premium stylized-realistic mythological mobile tactical RPG",
+        "dungeonVisualLanguage": "torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash.",
+        "avoid": [
+          "sci-fi portal treatment",
+          "generic fantasy castle",
+          "planetary/alien framing",
+          "reskinned copy dungeon",
+          "UI grid tiles as world objects"
+        ]
+      },
+      "expansionHooks": [
+        "Leaves the complete Mythos Gates origin unresolved",
+        "Can accept later Mythos Gates subtitles without renaming this route",
+        "Can add deeper sealed wings, enemy variants, relic chains, and future Realm connections"
+      ]
+    },
+    {
+      "id": "MG-DUNGEON-ROUTE-005",
+      "slug": "silver-root-geas-labyrinth",
+      "name": "Silver-Root Geas Labyrinth",
+      "status": "CANON_ROUTE_BLUEPRINT",
+      "chapter": "Ascension",
+      "universe": "Mythos Gates",
+      "sourceRealmId": "TG-REALM-005",
+      "factionId": "TG-FACTION-005",
+      "faction": "Tuatha",
+      "realm": "Avalora",
+      "entryGate": "The Silver-Root Gate",
+      "gateState": "Sealed Gate with fae time bleed",
+      "dungeonType": "living mound-gate maze and geas trial",
+      "canonSources": {
+        "realmCodexEntry": "TG-REALM-005",
+        "establishedGate": "The Silver-Root Gate",
+        "landmarksUsed": [
+          "Silver-Root Court",
+          "Sídhe Mound Gate",
+          "Tír na nÓg Mirror Meadow",
+          "Morrígan Crow-Battlefield",
+          "Brigid Triple-Flame Forge",
+          "Lugh Spear-Sun Causeway"
+        ],
+        "hazardsUsed": [
+          "geas thorns that punish forbidden actions",
+          "fae time pools that age or reverse cooldowns",
+          "battle-crow omens that mark doomed targets",
+          "silver-root snares that remember previous steps",
+          "cauldron wells that heal whoever pays the right memory"
+        ],
+        "campaignHooksUsed": [
+          "prove whether Avalora should preserve its ancient law or adapt it before the Hollow exploits it",
+          "recover a source-culture relic humans later misunderstood in Earth myth",
+          "defend a landmark that keeps the Realm's myth-function alive"
+        ]
+      },
+      "playerModel": {
+        "activePlayableDeities": 1,
+        "combatFantasy": "one god or goddess versus multiple enemies",
+        "partyRules": [
+          "no armies",
+          "no squads",
+          "no simultaneous multi-character party",
+          "one selected deity enters the route"
+        ]
+      },
+      "routeStructure": {
+        "depthBands": [
+          "threshold",
+          "outer dungeon",
+          "branching pressure layer",
+          "elite lock",
+          "treasure/lore detour",
+          "boss approach",
+          "boss chamber"
+        ],
+        "roomGraph": [
+          {
+            "order": 1,
+            "nodeId": "MG-DUNGEON-ROUTE-005-ROOM-01",
+            "name": "Silver-Root Court",
+            "nodeType": "entry",
+            "branching": false
+          },
+          {
+            "order": 2,
+            "nodeId": "MG-DUNGEON-ROUTE-005-ROOM-02",
+            "name": "Sídhe Mound Descent",
+            "nodeType": "combat",
+            "branching": false
+          },
+          {
+            "order": 3,
+            "nodeId": "MG-DUNGEON-ROUTE-005-ROOM-03",
+            "name": "Geas Thorn Corridor",
+            "nodeType": "hazard",
+            "branching": true
+          },
+          {
+            "order": 4,
+            "nodeId": "MG-DUNGEON-ROUTE-005-ROOM-04",
+            "name": "Tír na nÓg Mirror Meadow",
+            "nodeType": "elite",
+            "branching": false
+          },
+          {
+            "order": 5,
+            "nodeId": "MG-DUNGEON-ROUTE-005-ROOM-05",
+            "name": "Cauldron Memory Grove",
+            "nodeType": "treasure_or_lore",
+            "branching": true
+          },
+          {
+            "order": 6,
+            "nodeId": "MG-DUNGEON-ROUTE-005-ROOM-06",
+            "name": "Morrígan Crow Battlefield",
+            "nodeType": "pre_boss",
+            "branching": false
+          },
+          {
+            "order": 7,
+            "nodeId": "MG-DUNGEON-ROUTE-005-ROOM-07",
+            "name": "Crow-Crowned Boss Mound",
+            "nodeType": "boss",
+            "branching": false
+          }
+        ]
+      },
+      "encounters": {
+        "standardEnemies": [
+          "fae time-thieves",
+          "thornbound oathbreakers",
+          "battle-crow doom markers",
+          "Hollow changelings"
+        ],
+        "eliteEncounter": "Sídhe Thorn Knight",
+        "bossEncounter": "The Crow-Crowned Geas Breaker",
+        "scalingPressure": [
+          "enemy numbers",
+          "enemy combinations",
+          "positioning",
+          "terrain law",
+          "Gate instability",
+          "status effects",
+          "elite mechanics",
+          "boss phase pressure"
+        ]
+      },
+      "hazards": [
+        "geas thorns that punish forbidden actions",
+        "fae time pools that age or reverse cooldowns",
+        "battle-crow omens that mark doomed targets",
+        "silver-root snares that remember previous steps",
+        "cauldron wells that heal whoever pays the right memory"
+      ],
+      "shrines": [
+        "Tuatha restoration shrine",
+        "The Silver-Root Gate resonance shrine"
+      ],
+      "treasureRooms": [
+        {
+          "name": "Silver-Root Geas Labyrinth Relic Cache",
+          "lootThemes": [
+            "Geas Thorn Pin",
+            "Silver Branch Token",
+            "Mirror-Meadow Dew",
+            "Crow Omen Cloak Clasp"
+          ]
+        }
+      ],
+      "loreRevealChain": [
+        "Why forbidden actions trigger living thorns",
+        "How fae time pools bend cooldowns and memory",
+        "A mound-carving suggesting sealed Gates may be mercy, not prison"
+      ],
+      "artDirection": {
+        "style": "premium stylized-realistic mythological mobile tactical RPG",
+        "dungeonVisualLanguage": "silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.",
+        "avoid": [
+          "sci-fi portal treatment",
+          "generic fantasy castle",
+          "planetary/alien framing",
+          "reskinned copy dungeon",
+          "UI grid tiles as world objects"
+        ]
+      },
+      "expansionHooks": [
+        "Leaves the complete Mythos Gates origin unresolved",
+        "Can accept later Mythos Gates subtitles without renaming this route",
+        "Can add deeper sealed wings, enemy variants, relic chains, and future Realm connections"
+      ]
+    },
+    {
+      "id": "MG-DUNGEON-ROUTE-006",
+      "slug": "choir-vault-discord-ascent",
+      "name": "Choir-Vault Discord Ascent",
+      "status": "CANON_ROUTE_BLUEPRINT",
+      "chapter": "Ascension",
+      "universe": "Mythos Gates",
+      "sourceRealmId": "TG-REALM-006",
+      "factionId": "TG-FACTION-006",
+      "faction": "Empyrean",
+      "realm": "The Radiant Hierarchies",
+      "entryGate": "The Choir-Vault Gate",
+      "gateState": "Wound Gate leaking memory-burning radiance",
+      "dungeonType": "vertical cathedral ascent and judgment machinery",
+      "canonSources": {
+        "realmCodexEntry": "TG-REALM-006",
+        "establishedGate": "The Choir-Vault Gate",
+        "landmarksUsed": [
+          "Choir Vault Ascent",
+          "Ophanim Wheel Court",
+          "Seraph Burn Archive",
+          "Cherub Threshold Bastion",
+          "Throne-Judgment Nave",
+          "Archangel Herald Stair"
+        ],
+        "hazardsUsed": [
+          "choir notes that immobilize discordant beings",
+          "seraph flame that burns corruption and memory alike",
+          "ophanim wheels that shear space with eye-lined motion",
+          "edict seals that forbid actions until answered",
+          "bell shockwaves that reorder initiative"
+        ],
+        "campaignHooksUsed": [
+          "prove whether The Radiant Hierarchies should preserve its ancient law or adapt it before the Hollow exploits it",
+          "recover a source-culture relic humans later misunderstood in Earth myth",
+          "defend a landmark that keeps the Realm's myth-function alive"
+        ]
+      },
+      "playerModel": {
+        "activePlayableDeities": 1,
+        "combatFantasy": "one god or goddess versus multiple enemies",
+        "partyRules": [
+          "no armies",
+          "no squads",
+          "no simultaneous multi-character party",
+          "one selected deity enters the route"
+        ]
+      },
+      "routeStructure": {
+        "depthBands": [
+          "threshold",
+          "outer dungeon",
+          "branching pressure layer",
+          "elite lock",
+          "treasure/lore detour",
+          "boss approach",
+          "boss chamber"
+        ],
+        "roomGraph": [
+          {
+            "order": 1,
+            "nodeId": "MG-DUNGEON-ROUTE-006-ROOM-01",
+            "name": "Choir Vault Threshold",
+            "nodeType": "entry",
+            "branching": false
+          },
+          {
+            "order": 2,
+            "nodeId": "MG-DUNGEON-ROUTE-006-ROOM-02",
+            "name": "Bell-Metal Resonance Steps",
+            "nodeType": "combat",
+            "branching": false
+          },
+          {
+            "order": 3,
+            "nodeId": "MG-DUNGEON-ROUTE-006-ROOM-03",
+            "name": "Cherub Threshold Bastion",
+            "nodeType": "hazard",
+            "branching": true
+          },
+          {
+            "order": 4,
+            "nodeId": "MG-DUNGEON-ROUTE-006-ROOM-04",
+            "name": "Ophanim Wheel Court",
+            "nodeType": "elite",
+            "branching": false
+          },
+          {
+            "order": 5,
+            "nodeId": "MG-DUNGEON-ROUTE-006-ROOM-05",
+            "name": "Seraph Burn Archive",
+            "nodeType": "treasure_or_lore",
+            "branching": true
+          },
+          {
+            "order": 6,
+            "nodeId": "MG-DUNGEON-ROUTE-006-ROOM-06",
+            "name": "Throne-Ladder of Judgment",
+            "nodeType": "pre_boss",
+            "branching": false
+          },
+          {
+            "order": 7,
+            "nodeId": "MG-DUNGEON-ROUTE-006-ROOM-07",
+            "name": "Silent Seraph Apex",
+            "nodeType": "boss",
+            "branching": false
+          }
+        ]
+      },
+      "encounters": {
+        "standardEnemies": [
+          "discordant choir husks",
+          "memory-burned cherub guardians",
+          "eye-wheel fragments",
+          "Hollow silence swarms"
+        ],
+        "eliteEncounter": "Ophanim Shear-Wheel",
+        "bossEncounter": "The Silent Seraph of Broken Praise",
+        "scalingPressure": [
+          "enemy numbers",
+          "enemy combinations",
+          "positioning",
+          "terrain law",
+          "Gate instability",
+          "status effects",
+          "elite mechanics",
+          "boss phase pressure"
+        ]
+      },
+      "hazards": [
+        "choir notes that immobilize discordant beings",
+        "seraph flame that burns corruption and memory alike",
+        "ophanim wheels that shear space with eye-lined motion",
+        "edict seals that forbid actions until answered",
+        "bell shockwaves that reorder initiative"
+      ],
+      "shrines": [
+        "Empyrean restoration shrine",
+        "The Choir-Vault Gate resonance shrine"
+      ],
+      "treasureRooms": [
+        {
+          "name": "Choir-Vault Discord Ascent Relic Cache",
+          "lootThemes": [
+            "Bell-Metal Halo Link",
+            "Seraph Ash Seal",
+            "Ophanim Eye Shard",
+            "Living Scroll Ribbon"
+          ]
+        }
+      ],
+      "loreRevealChain": [
+        "Why discord becomes immobilizing force",
+        "How seraph flame burns corruption and memory alike",
+        "A living scroll that refuses to name the Gates’ origin"
+      ],
+      "artDirection": {
+        "style": "premium stylized-realistic mythological mobile tactical RPG",
+        "dungeonVisualLanguage": "white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.",
+        "avoid": [
+          "sci-fi portal treatment",
+          "generic fantasy castle",
+          "planetary/alien framing",
+          "reskinned copy dungeon",
+          "UI grid tiles as world objects"
+        ]
+      },
+      "expansionHooks": [
+        "Leaves the complete Mythos Gates origin unresolved",
+        "Can accept later Mythos Gates subtitles without renaming this route",
+        "Can add deeper sealed wings, enemy variants, relic chains, and future Realm connections"
+      ]
+    },
+    {
+      "id": "MG-DUNGEON-ROUTE-007",
+      "slug": "black-iron-debt-descent",
+      "name": "Black-Iron Debt Descent",
+      "status": "CANON_ROUTE_BLUEPRINT",
+      "chapter": "Ascension",
+      "universe": "Mythos Gates",
+      "sourceRealmId": "TG-REALM-007",
+      "factionId": "TG-FACTION-007",
+      "faction": "Infernal Dominion",
+      "realm": "The Infernal Dominion",
+      "entryGate": "The Black-Iron Gate",
+      "gateState": "Distortion Gate bound by contract clauses",
+      "dungeonType": "infernal court, bargain market, and chain causeway",
+      "canonSources": {
+        "realmCodexEntry": "TG-REALM-007",
+        "establishedGate": "The Black-Iron Gate",
+        "landmarksUsed": [
+          "Black Iron Court",
+          "Ash-Velvet Bargain Market",
+          "Volcanic Glass Throne",
+          "Chain-Tithe Causeway",
+          "Grimoire Seal Archive",
+          "Hellfire Debtor Pits"
+        ],
+        "hazardsUsed": [
+          "contract circles that tax every action",
+          "chains that attach to repeated mistakes",
+          "hellfire clauses that burn unpaid debts",
+          "blood-wax seals that lock abilities",
+          "ash markets that offer cursed shortcuts"
+        ],
+        "campaignHooksUsed": [
+          "prove whether The Infernal Dominion should preserve its ancient law or adapt it before the Hollow exploits it",
+          "recover a source-culture relic humans later misunderstood in Earth myth",
+          "defend a landmark that keeps the Realm's myth-function alive"
+        ]
+      },
+      "playerModel": {
+        "activePlayableDeities": 1,
+        "combatFantasy": "one god or goddess versus multiple enemies",
+        "partyRules": [
+          "no armies",
+          "no squads",
+          "no simultaneous multi-character party",
+          "one selected deity enters the route"
+        ]
+      },
+      "routeStructure": {
+        "depthBands": [
+          "threshold",
+          "outer dungeon",
+          "branching pressure layer",
+          "elite lock",
+          "treasure/lore detour",
+          "boss approach",
+          "boss chamber"
+        ],
+        "roomGraph": [
+          {
+            "order": 1,
+            "nodeId": "MG-DUNGEON-ROUTE-007-ROOM-01",
+            "name": "Black-Iron Gate Dock",
+            "nodeType": "entry",
+            "branching": false
+          },
+          {
+            "order": 2,
+            "nodeId": "MG-DUNGEON-ROUTE-007-ROOM-02",
+            "name": "Ash-Velvet Bargain Market",
+            "nodeType": "combat",
+            "branching": false
+          },
+          {
+            "order": 3,
+            "nodeId": "MG-DUNGEON-ROUTE-007-ROOM-03",
+            "name": "Contract Circle Gallery",
+            "nodeType": "hazard",
+            "branching": true
+          },
+          {
+            "order": 4,
+            "nodeId": "MG-DUNGEON-ROUTE-007-ROOM-04",
+            "name": "Chain-Tithe Causeway",
+            "nodeType": "elite",
+            "branching": false
+          },
+          {
+            "order": 5,
+            "nodeId": "MG-DUNGEON-ROUTE-007-ROOM-05",
+            "name": "Volcanic Glass Throne Steps",
+            "nodeType": "treasure_or_lore",
+            "branching": true
+          },
+          {
+            "order": 6,
+            "nodeId": "MG-DUNGEON-ROUTE-007-ROOM-06",
+            "name": "Debt Furnace Treasury",
+            "nodeType": "pre_boss",
+            "branching": false
+          },
+          {
+            "order": 7,
+            "nodeId": "MG-DUNGEON-ROUTE-007-ROOM-07",
+            "name": "Magistrate Verdict Court",
+            "nodeType": "boss",
+            "branching": false
+          }
+        ]
+      },
+      "encounters": {
+        "standardEnemies": [
+          "contract devils",
+          "debt-marked prisoners",
+          "ash-velvet tempters",
+          "Hollow clause-eaters"
+        ],
+        "eliteEncounter": "Chain-Tithe Executor",
+        "bossEncounter": "The Volcanic Glass Magistrate",
+        "scalingPressure": [
+          "enemy numbers",
+          "enemy combinations",
+          "positioning",
+          "terrain law",
+          "Gate instability",
+          "status effects",
+          "elite mechanics",
+          "boss phase pressure"
+        ]
+      },
+      "hazards": [
+        "contract circles that tax every action",
+        "chains that attach to repeated mistakes",
+        "hellfire clauses that burn unpaid debts",
+        "blood-wax seals that lock abilities",
+        "ash markets that offer cursed shortcuts"
+      ],
+      "shrines": [
+        "Infernal Dominion restoration shrine",
+        "The Black-Iron Gate resonance shrine"
+      ],
+      "treasureRooms": [
+        {
+          "name": "Black-Iron Debt Descent Relic Cache",
+          "lootThemes": [
+            "Blood-Wax Seal",
+            "Obsidian Debt Coin",
+            "Chain Clause Link",
+            "Ash-Velvet Bargain Script"
+          ]
+        }
+      ],
+      "loreRevealChain": [
+        "Why every action can be taxed by contract circles",
+        "How repeated mistakes become chains",
+        "A redacted clause hinting that some Gates may be negotiated with, never owned"
+      ],
+      "artDirection": {
+        "style": "premium stylized-realistic mythological mobile tactical RPG",
+        "dungeonVisualLanguage": "black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture.",
+        "avoid": [
+          "sci-fi portal treatment",
+          "generic fantasy castle",
+          "planetary/alien framing",
+          "reskinned copy dungeon",
+          "UI grid tiles as world objects"
+        ]
+      },
+      "expansionHooks": [
+        "Leaves the complete Mythos Gates origin unresolved",
+        "Can accept later Mythos Gates subtitles without renaming this route",
+        "Can add deeper sealed wings, enemy variants, relic chains, and future Realm connections"
+      ]
+    }
+  ]
+}
