@@ -38,10 +38,12 @@ const requiredFiles = [
   'data/runtime-persistence-boundary.json',
   'schemas/runtime-persistence.schema.json',
   'scripts/validate-runtime-persistence.mjs',
+  'scripts/validate-ue5-dungeon-framework.mjs',
   'scripts/run-stable-command-hub.mjs',
   'tests/platform-core-contract.test.mjs',
   'tests/backend-boundary-contract.test.mjs',
   'tests/runtime-persistence-contract.test.mjs',
+  'tests/ue5-dungeon-framework-contract.test.mjs',
   'src/README.md',
   'src/gameplay/index.mjs',
   'src/gameplay/solo-battle/index.mjs',
@@ -65,6 +67,9 @@ const requiredFiles = [
   'engine/shared/engine-exporter.mjs',
   'engine/unreal/README.md',
   'engine/unreal/adapter-manifest.json',
+  'engine/unreal/dungeon-crawler-framework.json',
+  'engine/unreal/first-mission-zone-template.json',
+  'engine/unreal/ue5-dungeon-framework.mjs',
   'engine/unity/README.md',
   'engine/unity/adapter-manifest.json',
   'scripts/validate-engine-adapters.mjs',
@@ -141,7 +146,9 @@ const schemas = [
   'schemas/canon-version-manifest.schema.json',
   'schemas/platform-core.schema.json',
   'schemas/hosted-backend-boundary.schema.json',
-  'schemas/runtime-persistence.schema.json'
+  'schemas/runtime-persistence.schema.json',
+  'schemas/ue5-dungeon-framework.schema.json',
+  'schemas/ue5-first-mission-zone-template.schema.json'
 ];
 for (const schema of schemas) {
   const parsed = JSON.parse(fs.readFileSync(schema, 'utf8'));
@@ -149,7 +156,7 @@ for (const schema of schemas) {
 }
 
 const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-for (const script of ['validate:schemas', 'test:production-modules', 'validate:engine-adapters', 'test:engine-adapters', 'validate:migrations', 'test:migration-contracts', 'validate:platform-core', 'test:platform-core', 'validate:backend-boundary', 'test:backend-boundary', 'validate:runtime-persistence', 'test:runtime-persistence']) {
+for (const script of ['validate:schemas', 'test:production-modules', 'validate:engine-adapters', 'test:engine-adapters', 'validate:migrations', 'test:migration-contracts', 'validate:platform-core', 'test:platform-core', 'validate:backend-boundary', 'test:backend-boundary', 'validate:runtime-persistence', 'test:runtime-persistence', 'validate:ue5-dungeon-framework', 'test:ue5-dungeon-framework']) {
   if (!packageJson.scripts?.[script]) issues.push(`Missing production script: ${script}`);
 }
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:schemas')) issues.push('precommit:verify must enforce schema contract validation.');
@@ -164,6 +171,8 @@ if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:backe
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:backend-boundary')) issues.push('precommit:verify must enforce hosted backend boundary contracts.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:runtime-persistence')) issues.push('precommit:verify must enforce runtime persistence validation.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:runtime-persistence')) issues.push('precommit:verify must enforce runtime persistence contracts.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:ue5-dungeon-framework')) issues.push('precommit:verify must enforce UE5 dungeon framework validation.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:ue5-dungeon-framework')) issues.push('precommit:verify must enforce UE5 dungeon framework contracts.');
 
 const result = {
   ok: issues.length === 0,

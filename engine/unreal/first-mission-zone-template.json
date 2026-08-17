@@ -1,0 +1,166 @@
+{
+  "id": "TG-UE5-ZONE-TEMPLATE-F01-C01-M01",
+  "schema": "TG_UE5_FIRST_MISSION_ZONE_TEMPLATE_V1",
+  "status": "TEMPLATE_READY",
+  "sourceMissionId": "TG-F01-C01-M01",
+  "sourceMissionTitle": "First Light Under Dead Stone",
+  "sourceFactionId": "TG-FACTION-001",
+  "sourceMapId": "TG-MAP-001",
+  "unrealRegion": {
+    "id": "UE5-REGION-ATEN-RA-TEMPLE-COMPLEX-001",
+    "name": "Aten Ra Temple Complex",
+    "worldPartition": "optional-region-streaming",
+    "lighting": "mobile baked/static default, high-end Lumen variant allowed",
+    "theme": "Solar Dominion of Khepra source-culture temple complex, not generic Egyptian dressing"
+  },
+  "explorationZone": {
+    "id": "UE5-ZONE-SOLAR-SEAL-APPROACH-001",
+    "levelInstance": "LI_AtenRa_SolarSealApproach_001",
+    "playerMode": "third-person Titan exploration",
+    "objectives": [
+      "Move the active Titan through sun-scale courts",
+      "Discover the unstable Gate pressure line",
+      "Collect one Aten Ra codex shard",
+      "Reach the solar seal combat threshold"
+    ],
+    "mobileRules": [
+      "short sightline loops",
+      "limited simultaneous enemies",
+      "streamed prop clusters",
+      "no unnecessary open world traversal"
+    ],
+    "scaleLandmarks": [
+      "Titan-height pylon gates",
+      "Ma\u2019at scale colossi",
+      "Khepri dawn engine silhouette",
+      "river-light channels below Titan-sized bridges"
+    ]
+  },
+  "encounterLayer": {
+    "triggerTypes": [
+      "Gate pressure pulse",
+      "Hollow scout contact",
+      "hidden lore discovery"
+    ],
+    "enemyPlacement": "Data Table rows keyed from existing enemyWave enemyIds; no hardcoded spawns.",
+    "transition": "Exploration encounter volume opens tactical arena generated from local modules."
+  },
+  "tacticalArena": {
+    "id": "UE5-ARENA-FIRST-LIGHT-SEAL-001",
+    "arenaType": "standard tactical combat",
+    "sourceObjectives": [
+      "Drive your active Titan to the marked solar seal before the Hollow closes around it."
+    ],
+    "features": [
+      "elevation",
+      "low sandstone cover",
+      "shallow river-light lanes",
+      "objective seal platform",
+      "chokepoint pylon shadows",
+      "interactive terrain reactions"
+    ],
+    "combatRulesPreserved": [
+      "one active Titan",
+      "movement",
+      "abilities",
+      "status effects",
+      "cooldowns",
+      "terrain bonuses",
+      "objectives",
+      "victory conditions",
+      "turn limit 11"
+    ]
+  },
+  "bossArena": {
+    "id": "UE5-BOSS-ARENA-FIRST-REOPENING-GATE-001",
+    "arenaType": "cinematic Gate guardian arena",
+    "bossDesignNote": "The source mission has no canonical boss. This template creates the reusable boss-arena slot as an optional Gate Guardian validation encounter without rewriting the mission boss field.",
+    "features": [
+      "larger Gate court",
+      "multi-phase Gate pressure",
+      "vertical statue silhouettes",
+      "safe mobile draw-call budget",
+      "cinematic ability lanes"
+    ]
+  },
+  "unrealDataAssets": [
+    "DA_TG_Mission_F01_C01_M01",
+    "DA_TG_Region_AtenRaTempleComplex_001",
+    "DA_TG_Zone_SolarSealApproach_001",
+    "DA_TG_Arena_FirstLightSeal_001",
+    "DA_TG_BossArena_FirstReopeningGate_001"
+  ],
+  "blueprintActors": [
+    "BP_TG_TitanExplorerPawn",
+    "BP_TG_ZoneGateVolume",
+    "BP_TG_TacticalArenaVolume",
+    "BP_TG_TitanScaleLandmark",
+    "BP_TG_ModularEncounterSpawner",
+    "BP_TG_GateGuardianArena"
+  ],
+  "dataTables": [
+    "DT_Titans",
+    "DT_Enemies",
+    "DT_Encounters",
+    "DT_Abilities",
+    "DT_Rewards",
+    "DT_Progression",
+    "DT_ZoneModules"
+  ],
+  "validationChecklist": {
+    "titanScale": [
+      "landmarks visibly dwarf normal creatures",
+      "paths support massive Titan movement",
+      "camera frames architecture as god-scale"
+    ],
+    "combatFlow": [
+      "exploration enters tactical arena",
+      "source objectives preserved",
+      "wave triggers preserved",
+      "reward flow preserved"
+    ],
+    "exploration": [
+      "hidden lore route exists",
+      "resource pickup exists",
+      "Gate discovery exists"
+    ],
+    "camera": [
+      "third-person exploration camera",
+      "tactical zoom/rotation combat camera"
+    ],
+    "mobilePerformance": [
+      "module count budgeted",
+      "LOD/culling required",
+      "mobile lighting default"
+    ],
+    "assetLoading": [
+      "Content folder mapping defined",
+      "DataAsset names defined",
+      "module families assigned"
+    ],
+    "loreAccuracy": [
+      "Aten hand-rays",
+      "Ma\u2019at scale geometry",
+      "electrum",
+      "faience turquoise",
+      "lapis",
+      "obsidian",
+      "Nile-black silt glass",
+      "Red Land jasper",
+      "source-culture rule preserved"
+    ]
+  },
+  "aiGenerationWorkflow": [
+    "Region",
+    "Zone",
+    "Terrain",
+    "Structures",
+    "Props",
+    "Exploration paths",
+    "Combat arenas",
+    "Enemy placement",
+    "Lighting",
+    "Optimization",
+    "Final polish"
+  ]
+}

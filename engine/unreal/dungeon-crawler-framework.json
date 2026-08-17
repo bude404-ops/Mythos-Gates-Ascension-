@@ -1,0 +1,177 @@
+{
+  "id": "TG-UE5-DUNGEON-CRAWLER-FRAMEWORK-V1",
+  "schema": "TG_UE5_DUNGEON_CRAWLER_FRAMEWORK_V1",
+  "status": "ACTIVE_TARGET_ARCHITECTURE",
+  "version": "1.12.0-ue5-dungeon-crawler-framework",
+  "purpose": "Converts Titan Gates: Ascension into an Unreal Engine 5-first Titan-scale zone-based dungeon-crawler tactical RPG framework while preserving existing lore, Titans, factions, progression, combat, and mobile-first goals.",
+  "primaryEngine": "Unreal Engine 5",
+  "coreLoop": [
+    "Campaign",
+    "Region",
+    "Zone",
+    "Exploration",
+    "Encounter",
+    "Tactical Combat",
+    "Reward",
+    "Next Zone"
+  ],
+  "unrealSystems": [
+    "World Partition",
+    "Level Instances",
+    "Data Assets",
+    "Blueprint systems",
+    "Modular Actor Components",
+    "Niagara",
+    "Material Instances",
+    "Nanite gated by mobile target",
+    "Lumen high-end only",
+    "Mobile-compatible lighting",
+    "Data Tables",
+    "Gameplay Ability System optional",
+    "Reusable Blueprint actors"
+  ],
+  "dataDrivenRules": [
+    "No hardcoded campaign, Titan, encounter, reward, ability, enemy, or zone content.",
+    "Canon remains upstream source of truth.",
+    "Unreal assets consume stable Titan Gates IDs as Primary Asset IDs.",
+    "Exploration and combat are modular zone products, not open-world sprawl.",
+    "AI-assisted generation assembles approved modules one stage at a time."
+  ],
+  "titanScaleRules": {
+    "environmentLanguage": [
+      "giant gates",
+      "massive ruins",
+      "large statues",
+      "monumental architecture",
+      "vertical terrain",
+      "elevated platforms",
+      "bridges",
+      "cliffs",
+      "Titan-sized pathways"
+    ],
+    "standardCombatActiveTitans": 1,
+    "cameraMandate": "Exploration shows Titan scale; combat prioritizes tactical readability."
+  },
+  "zoneModel": {
+    "hierarchy": [
+      "campaign",
+      "region",
+      "zone",
+      "explorationLayer",
+      "encounterSet",
+      "tacticalArena",
+      "bossArena",
+      "rewardTable"
+    ],
+    "zoneExamples": [
+      "Aten Ra Temple Complex",
+      "Thalassari Coastal Ruins",
+      "Titan Graveyards",
+      "Ancient Gate Networks",
+      "Divine Forests",
+      "Sacred Mountains",
+      "Underworld Realms",
+      "Heaven Realms"
+    ]
+  },
+  "moduleFamilies": {
+    "terrain": [
+      "cliffs",
+      "hills",
+      "ramps",
+      "valleys",
+      "rivers"
+    ],
+    "structures": [
+      "temples",
+      "gates",
+      "towers",
+      "walls",
+      "bridges"
+    ],
+    "props": [
+      "trees",
+      "statues",
+      "debris",
+      "ruins",
+      "crystals"
+    ],
+    "combat": [
+      "objectives",
+      "spawn points",
+      "hazards",
+      "arena boundaries"
+    ]
+  },
+  "assetPipeline": {
+    "root": "Content/",
+    "folders": [
+      "Titans/",
+      "Characters/",
+      "Creatures/",
+      "Environments/",
+      "Gates/",
+      "Effects/",
+      "Materials/",
+      "UI/",
+      "Audio/"
+    ],
+    "formats": [
+      "FBX",
+      "glTF",
+      "Unreal-compatible textures",
+      "Materials",
+      "Collision meshes",
+      "LODs",
+      "Skeletons",
+      "Animations"
+    ],
+    "rules": [
+      "source assets and game-ready imports remain distinct",
+      "collision and LOD metadata are required before production import",
+      "mobile texture/shader budgets are mandatory"
+    ]
+  },
+  "camera": {
+    "exploration": [
+      "third-person cinematic Titan view",
+      "scale landmarks always visible where practical"
+    ],
+    "combat": [
+      "tactical camera",
+      "zoom",
+      "rotation",
+      "ability cinematics"
+    ],
+    "priority": "gameplay readability over spectacle"
+  },
+  "mobileOptimization": [
+    "LODs",
+    "culling",
+    "efficient shaders",
+    "modular environments",
+    "texture streaming",
+    "optimized Niagara effects",
+    "controlled draw calls",
+    "mobile-compatible lighting default"
+  ],
+  "aiGenerationStages": [
+    "Region",
+    "Zone",
+    "Terrain",
+    "Structures",
+    "Props",
+    "Exploration paths",
+    "Combat arenas",
+    "Enemy placement",
+    "Lighting",
+    "Optimization",
+    "Final polish"
+  ],
+  "firstTemplate": "engine/unreal/first-mission-zone-template.json",
+  "validation": [
+    "npm run validate:ue5-dungeon-framework",
+    "npm run test:ue5-dungeon-framework",
+    "npm run precommit:verify"
+  ]
+}

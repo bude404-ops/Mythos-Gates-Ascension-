@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UE5 First Mission Zone Template",
+  "type": "object",
+  "required": [
+    "id",
+    "schema",
+    "status",
+    "sourceMissionId",
+    "sourceMissionTitle",
+    "sourceFactionId",
+    "sourceMapId",
+    "unrealRegion",
+    "explorationZone",
+    "encounterLayer",
+    "tacticalArena",
+    "bossArena",
+    "unrealDataAssets",
+    "blueprintActors",
+    "dataTables",
+    "validationChecklist",
+    "aiGenerationWorkflow"
+  ],
+  "properties": {
+    "id": {
+      "const": "TG-UE5-ZONE-TEMPLATE-F01-C01-M01"
+    },
+    "schema": {
+      "const": "TG_UE5_FIRST_MISSION_ZONE_TEMPLATE_V1"
+    },
+    "status": {
+      "const": "TEMPLATE_READY"
+    },
+    "sourceMissionId": {
+      "const": "TG-F01-C01-M01"
+    },
+    "sourceMissionTitle": {
+      "type": "string"
+    },
+    "sourceFactionId": {
+      "const": "TG-FACTION-001"
+    },
+    "sourceMapId": {
+      "const": "TG-MAP-001"
+    },
+    "unrealRegion": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "worldPartition",
+        "lighting",
+        "theme"
+      ]
+    },
+    "explorationZone": {
+      "type": "object",
+      "required": [
+        "id",
+        "levelInstance",
+        "playerMode",
+        "objectives",
+        "mobileRules",
+        "scaleLandmarks"
+      ]
+    },
+    "encounterLayer": {
+      "type": "object",
+      "required": [
+        "triggerTypes",
+        "enemyPlacement",
+        "transition"
+      ]
+    },
+    "tacticalArena": {
+      "type": "object",
+      "required": [
+        "id",
+        "arenaType",
+        "sourceObjectives",
+        "features",
+        "combatRulesPreserved"
+      ]
+    },
+    "bossArena": {
+      "type": "object",
+      "required": [
+        "id",
+        "arenaType",
+        "bossDesignNote",
+        "features"
+      ]
+    },
+    "unrealDataAssets": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "string",
+        "pattern": "^DA_TG_"
+      }
+    },
+    "blueprintActors": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "string",
+        "pattern": "^BP_TG_"
+      }
+    },
+    "dataTables": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "type": "string",
+        "pattern": "^DT_"
+      }
+    },
+    "validationChecklist": {
+      "type": "object",
+      "required": [
+        "titanScale",
+        "combatFlow",
+        "exploration",
+        "camera",
+        "mobilePerformance",
+        "assetLoading",
+        "loreAccuracy"
+      ]
+    },
+    "aiGenerationWorkflow": {
+      "type": "array",
+      "minItems": 11,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

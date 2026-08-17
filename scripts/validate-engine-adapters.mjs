@@ -7,6 +7,9 @@ const requiredFiles = [
   'engine/shared/engine-exporter.mjs',
   'engine/unreal/README.md',
   'engine/unreal/adapter-manifest.json',
+  'engine/unreal/dungeon-crawler-framework.json',
+  'engine/unreal/first-mission-zone-template.json',
+  'engine/unreal/ue5-dungeon-framework.mjs',
   'engine/unity/README.md',
   'engine/unity/adapter-manifest.json'
 ];

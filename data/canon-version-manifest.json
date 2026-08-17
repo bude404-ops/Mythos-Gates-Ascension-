@@ -2,8 +2,8 @@
   "id": "TG-CANON-VERSION-MANIFEST-001",
   "schema": "TG_CANON_VERSION_MANIFEST_V1",
   "status": "ACTIVE",
-  "currentCanonVersion": "1.11.0-runtime-persistence-boundary",
-  "updated": "2026-08-16T23:40:00Z",
+  "currentCanonVersion": "1.12.0-ue5-dungeon-crawler-framework",
+  "updated": "2026-08-17T00:15:00Z",
   "policyRef": "docs/production/DATA_MIGRATION_VERSIONING.md",
   "sourceOfTruth": "Git commit history plus this manifest. Runtime adapters consume migrated canonical data; they do not invent canon.",
   "rules": {
@@ -191,6 +191,27 @@
       "validation": [
         "npm run validate:runtime-persistence",
         "npm run test:runtime-persistence",
+        "npm run precommit:verify"
+      ]
+    },
+    {
+      "id": "TG-MIG-008",
+      "fromVersion": "1.11.0-runtime-persistence-boundary",
+      "toVersion": "1.12.0-ue5-dungeon-crawler-framework",
+      "type": "ENGINE_EXPORT",
+      "status": "APPLIED",
+      "owner": "Technical Director",
+      "summary": "Converted Titan Gates target architecture to an Unreal Engine 5-first Titan-scale zone-based dungeon-crawler tactical RPG framework and mapped the first mission into a reusable region, exploration zone, tactical arena, and boss-arena template.",
+      "affectedData": [
+        "engine/unreal/dungeon-crawler-framework.json",
+        "engine/unreal/first-mission-zone-template.json",
+        "engine/unreal/ue5-dungeon-framework.mjs",
+        "scripts/validate-ue5-dungeon-framework.mjs",
+        "tests/ue5-dungeon-framework-contract.test.mjs"
+      ],
+      "validation": [
+        "npm run validate:ue5-dungeon-framework",
+        "npm run test:ue5-dungeon-framework",
         "npm run precommit:verify"
       ]
     }

@@ -1,18 +1,28 @@
 {
   "schema": "TG_ENGINE_ADAPTER_MANIFEST_V1",
   "engine": "Unreal",
-  "status": "SCAFFOLDED",
-  "targetVersion": "UE5.x",
+  "status": "UE5_DUNGEON_CRAWLER_TARGET",
+  "targetVersion": "UE5.4+",
   "canonicalInput": "engine/shared/engine-export-contract.json",
   "plannedTypes": [
     "UTG_TitanCombatData",
     "UTG_MissionDefinition",
+    "UTG_RegionDefinition",
+    "UTG_ZoneDefinition",
+    "UTG_EncounterTable",
+    "UTG_TacticalArenaData",
+    "UTG_BossArenaData",
     "UTG_AssetImportManifest",
     "UTG_BattlefieldMapData"
   ],
   "blockedUntil": [
-    "engine project created",
+    "UE5 project shell created",
     "source assets available",
-    "import plugin or commandlet selected"
-  ]
+    "DataAsset import plugin or commandlet selected",
+    "mobile performance profile selected"
+  ],
+  "primaryTarget": true,
+  "designTarget": "Titan-scale 3D dungeon-crawler tactical RPG",
+  "framework": "engine/unreal/dungeon-crawler-framework.json",
+  "firstMissionTemplate": "engine/unreal/first-mission-zone-template.json"
 }

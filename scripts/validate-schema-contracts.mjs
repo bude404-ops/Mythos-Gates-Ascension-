@@ -38,6 +38,16 @@ const contracts = [
     name: 'runtime-persistence',
     schemaPath: 'schemas/runtime-persistence.schema.json',
     records: [JSON.parse(fs.readFileSync('data/runtime-persistence-boundary.json', 'utf8'))]
+  },
+  {
+    name: 'ue5-dungeon-framework',
+    schemaPath: 'schemas/ue5-dungeon-framework.schema.json',
+    records: [JSON.parse(fs.readFileSync('engine/unreal/dungeon-crawler-framework.json', 'utf8'))]
+  },
+  {
+    name: 'ue5-first-mission-zone-template',
+    schemaPath: 'schemas/ue5-first-mission-zone-template.schema.json',
+    records: [JSON.parse(fs.readFileSync('engine/unreal/first-mission-zone-template.json', 'utf8'))]
   }
 ];
 
