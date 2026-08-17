@@ -48,6 +48,11 @@ const contracts = [
     name: 'ue5-first-mission-zone-template',
     schemaPath: 'schemas/ue5-first-mission-zone-template.schema.json',
     records: [JSON.parse(fs.readFileSync('engine/unreal/first-mission-zone-template.json', 'utf8'))]
+  },
+  {
+    name: 'ue5-mobile-first-architecture',
+    schemaPath: 'schemas/ue5-mobile-first-architecture.schema.json',
+    records: [JSON.parse(fs.readFileSync('engine/unreal/mobile-first-architecture.json', 'utf8'))]
   }
 ];
 

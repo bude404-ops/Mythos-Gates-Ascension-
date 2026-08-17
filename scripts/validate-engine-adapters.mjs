@@ -10,6 +10,8 @@ const requiredFiles = [
   'engine/unreal/dungeon-crawler-framework.json',
   'engine/unreal/first-mission-zone-template.json',
   'engine/unreal/ue5-dungeon-framework.mjs',
+  'engine/unreal/mobile-first-architecture.json',
+  'engine/unreal/mobile-first-architecture.mjs',
   'engine/unity/README.md',
   'engine/unity/adapter-manifest.json'
 ];

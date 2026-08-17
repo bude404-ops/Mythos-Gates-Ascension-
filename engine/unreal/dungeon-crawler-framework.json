@@ -2,7 +2,7 @@
   "id": "TG-UE5-DUNGEON-CRAWLER-FRAMEWORK-V1",
   "schema": "TG_UE5_DUNGEON_CRAWLER_FRAMEWORK_V1",
   "status": "ACTIVE_TARGET_ARCHITECTURE",
-  "version": "1.12.0-ue5-dungeon-crawler-framework",
+  "version": "1.13.0-mobile-first-ue5-zone-prototype",
   "purpose": "Converts Titan Gates: Ascension into an Unreal Engine 5-first Titan-scale zone-based dungeon-crawler tactical RPG framework while preserving existing lore, Titans, factions, progression, combat, and mobile-first goals.",
   "primaryEngine": "Unreal Engine 5",
   "coreLoop": [
@@ -16,7 +16,7 @@
     "Next Zone"
   ],
   "unrealSystems": [
-    "World Partition",
+    "World Partition when it provides real mobile loading benefit",
     "Level Instances",
     "Data Assets",
     "Blueprint systems",
@@ -148,11 +148,16 @@
   "mobileOptimization": [
     "LODs",
     "culling",
-    "efficient shaders",
-    "modular environments",
     "texture streaming",
-    "optimized Niagara effects",
+    "efficient materials",
     "controlled draw calls",
+    "optimized collision",
+    "efficient animations",
+    "optimized Niagara effects",
+    "asset streaming",
+    "controlled enemy counts",
+    "efficient lighting",
+    "scalable quality settings",
     "mobile-compatible lighting default"
   ],
   "aiGenerationStages": [
@@ -170,8 +175,17 @@
   ],
   "firstTemplate": "engine/unreal/first-mission-zone-template.json",
   "validation": [
+    "npm run validate:ue5-mobile-first",
     "npm run validate:ue5-dungeon-framework",
     "npm run test:ue5-dungeon-framework",
     "npm run precommit:verify"
-  ]
+  ],
+  "mobileFirstMandate": {
+    "baselinePlatforms": [
+      "Android",
+      "iOS"
+    ],
+    "rule": "Build mobile-first from the beginning; do not build high-end first and downscale later.",
+    "linkedContract": "engine/unreal/mobile-first-architecture.json"
+  }
 }

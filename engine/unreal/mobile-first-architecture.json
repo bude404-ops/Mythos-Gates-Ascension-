@@ -1,0 +1,200 @@
+{
+  "id": "TG-UE5-MOBILE-FIRST-ARCHITECTURE-V1",
+  "schema": "TG_UE5_MOBILE_FIRST_ARCHITECTURE_V1",
+  "status": "BASELINE_TARGET",
+  "version": "1.13.0-mobile-first-ue5-zone-prototype",
+  "primaryTarget": {
+    "engine": "Unreal Engine 5",
+    "platforms": [
+      "Android",
+      "iOS"
+    ],
+    "rule": "Mobile hardware is the baseline; high-end rendering is a scalable variant, never the source target."
+  },
+  "identityPreservation": [
+    "preserve Titan Gates: Ascension lore",
+    "preserve factions",
+    "preserve Titans",
+    "preserve mythology",
+    "preserve progression",
+    "preserve combat systems",
+    "preserve Gates",
+    "preserve Codex/lore systems",
+    "preserve approved one-active-Titan combat"
+  ],
+  "structure": [
+    "Campaign",
+    "Region",
+    "Zone",
+    "Exploration",
+    "Encounter",
+    "Tactical Combat",
+    "Reward",
+    "Next Zone"
+  ],
+  "negativeRules": [
+    "Do not build a PC/console version first and optimize later.",
+    "Do not turn zones into generic corridor dungeons.",
+    "Do not create unnecessary seamless open world traversal.",
+    "Do not generate whole campaigns at once.",
+    "Do not rewrite established lore, factions, Titans, progression, or combat."
+  ],
+  "mobilePerformanceBudgets": {
+    "baselineDeviceClass": "mid-range mobile",
+    "targetFps": 30,
+    "highEndTargetFps": 60,
+    "maxActiveCombatEnemiesStandard": 6,
+    "maxActiveCombatEnemiesBoss": 4,
+    "maxVisibleTitanScaleLandmarks": 5,
+    "maxSimultaneousNiagaraSystemsStandard": 6,
+    "maxSimultaneousNiagaraSystemsBoss": 8,
+    "maxUniqueMaterialsPerZone": 32,
+    "maxDynamicLightsMobile": 0,
+    "lightingDefault": "baked/static/mobile-compatible",
+    "texturePolicy": "streamed with mobile mips; high-end mips optional",
+    "collisionPolicy": "simple collision for environment modules; skeletal collision minimized",
+    "worldPartitionPolicy": "only for larger regions when it reduces loading/memory cost"
+  },
+  "scalableQualityTiers": [
+    {
+      "tier": "LOW",
+      "target": "older mobile",
+      "features": [
+        "baked lighting",
+        "low Niagara counts",
+        "aggressive LODs",
+        "reduced shadows",
+        "compressed textures"
+      ]
+    },
+    {
+      "tier": "STANDARD",
+      "target": "baseline Android/iOS",
+      "features": [
+        "mobile lighting",
+        "moderate VFX",
+        "standard texture streaming",
+        "controlled enemy counts",
+        "full tactical readability"
+      ]
+    },
+    {
+      "tier": "HIGH",
+      "target": "high-end mobile/tablet",
+      "features": [
+        "higher texture mips",
+        "extra environment detail",
+        "improved shadows",
+        "higher FPS target"
+      ]
+    },
+    {
+      "tier": "CINEMATIC",
+      "target": "PC/console/high-end showcase only",
+      "features": [
+        "optional Lumen variant",
+        "higher VFX density",
+        "Nanite where platform target allows"
+      ]
+    }
+  ],
+  "titanOptimization": {
+    "rules": [
+      "proper LOD chains",
+      "efficient skeletal meshes",
+      "optimized materials",
+      "texture atlasing where appropriate",
+      "animation optimization",
+      "culling when appropriate",
+      "efficient collision"
+    ],
+    "mandate": "Titans must look enormous through scene composition, not computational waste."
+  },
+  "cameraAndControls": {
+    "exploration": [
+      "third-person angled cinematic camera",
+      "smooth mobile controls",
+      "scale landmarks framed during traversal"
+    ],
+    "combat": [
+      "elevated tactical camera",
+      "zoom",
+      "rotation",
+      "clear battlefield visibility",
+      "cinematic moments only for major Titan abilities"
+    ],
+    "rule": "Never sacrifice tactical readability for visual effects."
+  },
+  "modularEnvironmentSystem": {
+    "terrain": [
+      "cliffs",
+      "hills",
+      "valleys",
+      "paths",
+      "ramps",
+      "rivers"
+    ],
+    "architecture": [
+      "temples",
+      "gates",
+      "towers",
+      "walls",
+      "bridges",
+      "ruins"
+    ],
+    "props": [
+      "statues",
+      "trees",
+      "debris",
+      "rocks",
+      "faction decorations",
+      "environmental objects"
+    ],
+    "combat": [
+      "spawn points",
+      "objectives",
+      "hazards",
+      "arena boundaries",
+      "tactical positions"
+    ],
+    "assemblyRule": "AI can assemble approved modules into new zones while preserving visual consistency and mobile budgets."
+  },
+  "firstImplementationGate": {
+    "sourceMissionId": "TG-F01-C01-M01",
+    "requiredScope": {
+      "regions": 1,
+      "explorationZones": 1,
+      "tacticalCombatArenas": 1,
+      "bossOrEliteArena": "if appropriate, optional when source canon has no boss"
+    },
+    "approvalTests": [
+      "Titan scale",
+      "Exploration",
+      "Combat",
+      "Camera",
+      "Controls",
+      "Loading",
+      "Memory",
+      "FPS",
+      "Asset streaming",
+      "Visual quality",
+      "Mobile performance",
+      "Lore consistency"
+    ],
+    "expansionRule": "Do not proceed to the next zone until the first zone is functional and approved."
+  },
+  "generationPipeline": [
+    "Region",
+    "Zone",
+    "Terrain",
+    "Structures",
+    "Props",
+    "Exploration Paths",
+    "Combat Arena",
+    "Enemies",
+    "Objectives",
+    "Lighting",
+    "Optimization",
+    "Final Polish"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "id": "TG-UE5-ZONE-TEMPLATE-F01-C01-M01",
   "schema": "TG_UE5_FIRST_MISSION_ZONE_TEMPLATE_V1",
-  "status": "TEMPLATE_READY",
+  "status": "MOBILE_MASTER_PROTOTYPE_READY",
   "sourceMissionId": "TG-F01-C01-M01",
   "sourceMissionTitle": "First Light Under Dead Stone",
   "sourceFactionId": "TG-FACTION-001",
@@ -73,7 +73,7 @@
   },
   "bossArena": {
     "id": "UE5-BOSS-ARENA-FIRST-REOPENING-GATE-001",
-    "arenaType": "cinematic Gate guardian arena",
+    "arenaType": "optional cinematic Gate guardian / elite validation arena",
     "bossDesignNote": "The source mission has no canonical boss. This template creates the reusable boss-arena slot as an optional Gate Guardian validation encounter without rewriting the mission boss field.",
     "features": [
       "larger Gate court",
@@ -81,6 +81,12 @@
       "vertical statue silhouettes",
       "safe mobile draw-call budget",
       "cinematic ability lanes"
+    ],
+    "mobileRules": [
+      "larger arena footprint without uncontrolled actor count",
+      "controlled visual effects",
+      "no dynamic lighting on baseline mobile",
+      "cinematic attacks use budgeted camera moments"
     ]
   },
   "unrealDataAssets": [
@@ -148,6 +154,31 @@
       "Nile-black silt glass",
       "Red Land jasper",
       "source-culture rule preserved"
+    ],
+    "controls": [
+      "smooth virtual movement",
+      "tap interaction volumes",
+      "tactical tap targets readable on phone screen"
+    ],
+    "loading": [
+      "region shell loads before detail modules",
+      "combat arena modules stream before encounter starts",
+      "no full-campaign loading"
+    ],
+    "memory": [
+      "texture mips budgeted",
+      "limited active skeletal meshes",
+      "prop clusters culled"
+    ],
+    "fps": [
+      "30 FPS baseline target",
+      "60 FPS high-end target",
+      "Niagara and enemy counts capped"
+    ],
+    "assetStreaming": [
+      "Level Instance modules stream by zone",
+      "DataAssets loaded by mission scope",
+      "high-end assets optional"
     ]
   },
   "aiGenerationWorkflow": [
@@ -162,5 +193,43 @@
     "Lighting",
     "Optimization",
     "Final polish"
-  ]
+  ],
+  "prototypeLock": {
+    "rule": "Build this first zone completely before expanding the game.",
+    "nextZoneAllowed": false,
+    "approvalRequired": [
+      "Titan scale",
+      "Exploration",
+      "Combat",
+      "Camera",
+      "Controls",
+      "Loading",
+      "Memory",
+      "FPS",
+      "Asset streaming",
+      "Visual quality",
+      "Mobile performance",
+      "Lore consistency"
+    ]
+  },
+  "mobileBudgets": {
+    "targetFps": 30,
+    "highEndTargetFps": 60,
+    "maxActiveCombatEnemiesStandard": 6,
+    "maxActiveCombatEnemiesBossOrElite": 4,
+    "maxDynamicLightsMobile": 0,
+    "lighting": "baked/static mobile baseline",
+    "streaming": "zone modules and prop clusters stream independently",
+    "qualityTiers": [
+      "LOW",
+      "STANDARD",
+      "HIGH",
+      "CINEMATIC"
+    ]
+  },
+  "controls": {
+    "exploration": "virtual stick plus contextual interact; short traversal loops",
+    "combat": "tap tactical tiles, ability bar, drag rotate, pinch zoom",
+    "rule": "mobile readability outranks spectacle"
+  }
 }

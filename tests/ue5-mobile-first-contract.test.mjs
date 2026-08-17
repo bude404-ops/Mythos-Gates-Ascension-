@@ -1,0 +1,23 @@
+import assert from 'node:assert/strict';
+import { loadUe5DungeonFramework, loadFirstMissionZoneTemplate } from '../engine/unreal/ue5-dungeon-framework.mjs';
+import { loadMobileFirstArchitecture, validateMobileFirstArchitecture, mobileFirstSummary, REQUIRED_APPROVAL_TESTS } from '../engine/unreal/mobile-first-architecture.mjs';
+
+const contract = loadMobileFirstArchitecture();
+const framework = loadUe5DungeonFramework();
+const firstTemplate = loadFirstMissionZoneTemplate();
+const validation = validateMobileFirstArchitecture(contract, framework, firstTemplate);
+assert.equal(validation.ok, true, validation.issues.join('; '));
+assert.deepEqual(contract.primaryTarget.platforms, ['Android', 'iOS']);
+assert.equal(contract.mobilePerformanceBudgets.maxDynamicLightsMobile, 0);
+assert.equal(contract.mobilePerformanceBudgets.targetFps, 30);
+assert.equal(firstTemplate.prototypeLock.nextZoneAllowed, false);
+assert.equal(firstTemplate.mobileBudgets.targetFps, 30);
+assert.equal(firstTemplate.mobileBudgets.highEndTargetFps, 60);
+for (const test of REQUIRED_APPROVAL_TESTS) assert.ok(firstTemplate.prototypeLock.approvalRequired.includes(test));
+assert.ok(contract.negativeRules.some(rule => rule.includes('generic corridor')));
+assert.ok(contract.identityPreservation.some(rule => rule.includes('preserve factions')));
+const summary = mobileFirstSummary(contract, firstTemplate);
+assert.equal(summary.engine, 'Unreal Engine 5');
+assert.equal(summary.firstMission, 'TG-F01-C01-M01');
+assert.equal(summary.expansionLocked, true);
+console.log(JSON.stringify({ ok: true, ue5MobileFirstContract: 'PASS', summary }, null, 2));

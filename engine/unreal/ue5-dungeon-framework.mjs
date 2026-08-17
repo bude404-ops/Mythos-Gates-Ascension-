@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 
-export const REQUIRED_UE5_SYSTEMS = Object.freeze(['World Partition', 'Level Instances', 'Data Assets', 'Blueprint systems', 'Modular Actor Components', 'Niagara', 'Material Instances', 'Data Tables']);
+export const REQUIRED_UE5_SYSTEMS = Object.freeze(['World Partition when it provides real mobile loading benefit', 'Level Instances', 'Data Assets', 'Blueprint systems', 'Modular Actor Components', 'Niagara', 'Material Instances', 'Data Tables']);
 export const REQUIRED_STAGE_ORDER = Object.freeze(['Region', 'Zone', 'Terrain', 'Structures', 'Props', 'Exploration paths', 'Combat arenas', 'Enemy placement', 'Lighting', 'Optimization', 'Final polish']);
 export const REQUIRED_CONTENT_FOLDERS = Object.freeze(['Titans/', 'Characters/', 'Creatures/', 'Environments/', 'Gates/', 'Effects/', 'Materials/', 'UI/', 'Audio/']);
 

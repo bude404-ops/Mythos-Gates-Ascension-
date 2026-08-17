@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UE5 Mobile First Architecture",
+  "type": "object",
+  "required": [
+    "id",
+    "schema",
+    "status",
+    "version",
+    "primaryTarget",
+    "identityPreservation",
+    "structure",
+    "negativeRules",
+    "mobilePerformanceBudgets",
+    "scalableQualityTiers",
+    "titanOptimization",
+    "cameraAndControls",
+    "modularEnvironmentSystem",
+    "firstImplementationGate",
+    "generationPipeline"
+  ],
+  "properties": {
+    "id": {
+      "const": "TG-UE5-MOBILE-FIRST-ARCHITECTURE-V1"
+    },
+    "schema": {
+      "const": "TG_UE5_MOBILE_FIRST_ARCHITECTURE_V1"
+    },
+    "status": {
+      "const": "BASELINE_TARGET"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+-[a-z0-9-]+$"
+    },
+    "primaryTarget": {
+      "type": "object",
+      "required": [
+        "engine",
+        "platforms",
+        "rule"
+      ]
+    },
+    "identityPreservation": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "string"
+      }
+    },
+    "structure": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "string"
+      }
+    },
+    "negativeRules": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "string"
+      }
+    },
+    "mobilePerformanceBudgets": {
+      "type": "object",
+      "required": [
+        "baselineDeviceClass",
+        "targetFps",
+        "highEndTargetFps",
+        "maxActiveCombatEnemiesStandard",
+        "maxActiveCombatEnemiesBoss",
+        "maxVisibleTitanScaleLandmarks",
+        "maxSimultaneousNiagaraSystemsStandard",
+        "maxSimultaneousNiagaraSystemsBoss",
+        "maxUniqueMaterialsPerZone",
+        "maxDynamicLightsMobile",
+        "lightingDefault",
+        "texturePolicy",
+        "collisionPolicy",
+        "worldPartitionPolicy"
+      ]
+    },
+    "scalableQualityTiers": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "tier",
+          "target",
+          "features"
+        ]
+      }
+    },
+    "titanOptimization": {
+      "type": "object",
+      "required": [
+        "rules",
+        "mandate"
+      ]
+    },
+    "cameraAndControls": {
+      "type": "object",
+      "required": [
+        "exploration",
+        "combat",
+        "rule"
+      ]
+    },
+    "modularEnvironmentSystem": {
+      "type": "object",
+      "required": [
+        "terrain",
+        "architecture",
+        "props",
+        "combat",
+        "assemblyRule"
+      ]
+    },
+    "firstImplementationGate": {
+      "type": "object",
+      "required": [
+        "sourceMissionId",
+        "requiredScope",
+        "approvalTests",
+        "expansionRule"
+      ]
+    },
+    "generationPipeline": {
+      "type": "array",
+      "minItems": 12,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

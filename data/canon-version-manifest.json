@@ -2,8 +2,8 @@
   "id": "TG-CANON-VERSION-MANIFEST-001",
   "schema": "TG_CANON_VERSION_MANIFEST_V1",
   "status": "ACTIVE",
-  "currentCanonVersion": "1.12.0-ue5-dungeon-crawler-framework",
-  "updated": "2026-08-17T00:15:00Z",
+  "currentCanonVersion": "1.13.0-mobile-first-ue5-zone-prototype",
+  "updated": "2026-08-17T00:30:00Z",
   "policyRef": "docs/production/DATA_MIGRATION_VERSIONING.md",
   "sourceOfTruth": "Git commit history plus this manifest. Runtime adapters consume migrated canonical data; they do not invent canon.",
   "rules": {
@@ -212,6 +212,28 @@
       "validation": [
         "npm run validate:ue5-dungeon-framework",
         "npm run test:ue5-dungeon-framework",
+        "npm run precommit:verify"
+      ]
+    },
+    {
+      "id": "TG-MIG-009",
+      "fromVersion": "1.12.0-ue5-dungeon-crawler-framework",
+      "toVersion": "1.13.0-mobile-first-ue5-zone-prototype",
+      "type": "ENGINE_EXPORT",
+      "status": "APPLIED",
+      "owner": "Technical Director",
+      "summary": "Locked Titan Gates to a mobile-first UE5 Android/iOS baseline, added performance budgets and scalable quality tiers, and gated all expansion behind completing the first mission as the master mobile zone prototype.",
+      "affectedData": [
+        "engine/unreal/mobile-first-architecture.json",
+        "engine/unreal/mobile-first-architecture.mjs",
+        "engine/unreal/dungeon-crawler-framework.json",
+        "engine/unreal/first-mission-zone-template.json",
+        "scripts/validate-ue5-mobile-first.mjs",
+        "tests/ue5-mobile-first-contract.test.mjs"
+      ],
+      "validation": [
+        "npm run validate:ue5-mobile-first",
+        "npm run test:ue5-mobile-first",
         "npm run precommit:verify"
       ]
     }

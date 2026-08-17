@@ -1,7 +1,7 @@
 {
   "schema": "TG_ENGINE_ADAPTER_MANIFEST_V1",
   "engine": "Unreal",
-  "status": "UE5_DUNGEON_CRAWLER_TARGET",
+  "status": "MOBILE_FIRST_UE5_DUNGEON_CRAWLER_TARGET",
   "targetVersion": "UE5.4+",
   "canonicalInput": "engine/shared/engine-export-contract.json",
   "plannedTypes": [
@@ -17,12 +17,19 @@
   ],
   "blockedUntil": [
     "UE5 project shell created",
-    "source assets available",
-    "DataAsset import plugin or commandlet selected",
-    "mobile performance profile selected"
+    "mobile device profile selected",
+    "DataAsset import commandlet selected",
+    "first zone performance harness created",
+    "source assets available"
   ],
   "primaryTarget": true,
   "designTarget": "Titan-scale 3D dungeon-crawler tactical RPG",
   "framework": "engine/unreal/dungeon-crawler-framework.json",
-  "firstMissionTemplate": "engine/unreal/first-mission-zone-template.json"
+  "firstMissionTemplate": "engine/unreal/first-mission-zone-template.json",
+  "mobileFirst": true,
+  "primaryPlatforms": [
+    "Android",
+    "iOS"
+  ],
+  "mobileFirstContract": "engine/unreal/mobile-first-architecture.json"
 }

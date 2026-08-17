@@ -1,6 +1,13 @@
-# Unreal Engine 5 Target Architecture
+# Unreal Engine 5 Mobile-First Target Architecture
 
-Titan Gates: Ascension is now an Unreal Engine 5-first Titan-scale dungeon-crawler tactical RPG target. Unreal consumes validated canon; it does not invent canon.
+Titan Gates: Ascension is an Unreal Engine 5-first, mobile-baseline Titan-scale dungeon-crawler tactical RPG target. Unreal consumes validated canon; it does not invent canon.
+
+## Primary target
+
+- Baseline platforms: Android and iOS.
+- Build mobile-first from the beginning. Do not build a PC/console version first and optimize later.
+- High-end PC/console rendering is a scalable variant, not the source target.
+- Preserve massive Titan scale through composition, landmarks, camera, and environment proportion — not through uncontrolled asset cost.
 
 ## Primary mappings
 
@@ -12,15 +19,16 @@ Titan Gates: Ascension is now an Unreal Engine 5-first Titan-scale dungeon-crawl
 | Zone | `UTG_ZoneDefinition` DataAsset + Level Instance |
 | Encounter set | `UTG_EncounterTable` Data Table |
 | Tactical arena | `UTG_TacticalArenaData` DataAsset |
-| Boss arena | `UTG_BossArenaData` DataAsset |
+| Boss / elite arena | `UTG_BossArenaData` DataAsset |
 | Asset manifest | `UTG_AssetImportManifest` import metadata |
 | Battlefield map | `UTG_BattlefieldMapData` DataAsset |
 
 ## Framework files
 
-- `dungeon-crawler-framework.json` defines the UE5-first architecture.
-- `first-mission-zone-template.json` converts `TG-F01-C01-M01` into the first reusable region/zone/arena template.
-- `ue5-dungeon-framework.mjs` validates framework continuity.
+- `dungeon-crawler-framework.json` defines the UE5 Titan-scale dungeon-crawler architecture.
+- `mobile-first-architecture.json` defines Android/iOS baseline budgets, quality tiers, Titan optimization, negative rules, and first-zone approval gates.
+- `first-mission-zone-template.json` converts `TG-F01-C01-M01` into the first reusable mobile master prototype.
+- `ue5-dungeon-framework.mjs` and `mobile-first-architecture.mjs` validate framework continuity.
 
 ## Import discipline
 
@@ -29,5 +37,7 @@ Titan Gates: Ascension is now an Unreal Engine 5-first Titan-scale dungeon-crawl
 - Use DataAssets, Data Tables, Blueprint Actor Components, and Level Instances.
 - Keep source assets and optimized runtime assets distinct.
 - Block import if upstream schema validation fails.
-- Treat mobile-compatible lighting as the default target; high-end Lumen is a variant, not the base.
+- Mobile-compatible lighting is the default target; high-end Lumen is optional.
+- World Partition is allowed only where it reduces loading or memory cost for larger regions.
 - AI generation assembles approved modules in ordered stages; it does not generate whole campaigns at once.
+- Build the first zone completely and validate scale, controls, loading, memory, FPS, streaming, combat, camera, and lore before expanding.

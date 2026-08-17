@@ -66,7 +66,7 @@ Generated `dist/` output is built by automation and is not a canonical source fo
 - Missions: 280 total — 140 Normal / 140 Elite
 - Mission dialogue packages: 280
 - Mission art packages: 280
-- Schema contracts: 15 active coverage families, including canon migration/version control, platform core, hosted backend boundary, runtime persistence, and UE5 dungeon-crawler templates
+- Schema contracts: 16 active coverage families, including canon migration/version control, platform core, hosted backend boundary, runtime persistence, and UE5 dungeon-crawler templates
 - Art prompts: 110
 - 3D blueprint assets: 129
 - Creator handoff packets: 23
@@ -76,6 +76,7 @@ Generated `dist/` output is built by automation and is not a canonical source fo
 - Hosted backend boundary: v1 contract for profile service, cloud saves, authoritative economy ledger, and telemetry ingestion
 - Runtime persistence boundary: database tables, route auth, admin operations, environments, and observability contract
 - Unreal Engine 5 dungeon-crawler framework: Titan-scale region/zone/exploration/tactical-arena template for the first mission
+- Mobile-first UE5 architecture: Android/iOS baseline, scalable quality tiers, Titan optimization, and first-zone approval gate
 - Current source asset status: 129 reserved asset IDs awaiting final source assets
 
 ## Commands
@@ -96,6 +97,7 @@ npm run validate:platform-core
 npm run validate:backend-boundary
 npm run validate:runtime-persistence
 npm run validate:ue5-dungeon-framework
+npm run validate:ue5-mobile-first
 npm run assets:verify
 npm run test:playable-battle-ui
 npm run validate:external-ai-packets
