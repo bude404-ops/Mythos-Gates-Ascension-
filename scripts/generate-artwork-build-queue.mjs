@@ -71,7 +71,7 @@ const entries = (registry.entries || [])
       generation_prompt: prompt?.prompt || null,
       negative_prompt: prompt?.negativePrompt || null,
       build_note: entry.asset_type === 'TITAN'
-        ? 'Create the finished Titan source art/model first; keep original source intact and put optimized runtime output in game_ready later.'
+        ? 'Create the finished Deity source art/model first; keep original source intact and put optimized runtime output in game_ready later.'
         : 'Create/import the source asset first; validation will link it to the permanent ID.'
     };
   })

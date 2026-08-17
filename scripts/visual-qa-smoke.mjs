@@ -61,7 +61,7 @@ if (commandHub.status !== 'IMPLEMENTED' || !commandHub.canonFirst || commandHub.
   console.error(JSON.stringify({ ok: false, commandHubContractInvalid: true }, null, 2));
   process.exit(1);
 }
-for (const token of ['I Command Titans', 'Command Hub', 'CONTINUE CAMPAIGN', 'Deity Roster', 'Realm Network', 'Lore Registry', 'Playable Solo Battle']) {
+for (const token of ['I Command Deities', 'Command Hub', 'CONTINUE CAMPAIGN', 'Deity Roster', 'Realm Network', 'Lore Registry', 'Playable Solo Battle']) {
   if (!commandHubRuntime.includes(token) && !gameHtmlForPlayflow.includes(token)) {
     console.error(JSON.stringify({ ok: false, commandHubUiMissing: token }, null, 2));
     process.exit(1);
@@ -79,7 +79,7 @@ if (endgameArchitecture.livePvpImplemented !== false || asyncArenaSystem.mode !=
   console.error(JSON.stringify({ ok: false, endgameBoundaryInvalid: true }, null, 2));
   process.exit(1);
 }
-if (!asyncArenaSystem.snapshotRules?.oneActiveDefenderTitan || !asyncArenaSystem.snapshotRules?.checksumRequired || asyncArenaSystem.defenseSnapshots?.length !== asyncArenaSystem.sampleOpponents?.length) {
+if (!asyncArenaSystem.snapshotRules?.oneActiveDefenderDeity || !asyncArenaSystem.snapshotRules?.checksumRequired || asyncArenaSystem.defenseSnapshots?.length !== asyncArenaSystem.sampleOpponents?.length) {
   console.error(JSON.stringify({ ok: false, asyncArenaSnapshotsInvalid: true }, null, 2));
   process.exit(1);
 }
@@ -90,7 +90,7 @@ for (const token of ['Lore Continuity Sweep', 'one-active-deity canon', 'One act
   }
 }
 if (!soloCombatDesign.samplePresets.every(p => p.activeDeityCount === 1 || p.squadSize === 1)) {
-  console.error(JSON.stringify({ ok: false, activeTitanPresetInvalid: true }, null, 2));
+  console.error(JSON.stringify({ ok: false, activeDeityPresetInvalid: true }, null, 2));
   process.exit(1);
 }
 if (!indexHtml.includes('function endgameDashboard') || !indexHtml.includes('#/endgame') || !indexHtml.includes('#/arena')) {

@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readJson, validateCrossFactionCreaturePools, summarizeCrossFactionRunIns, ONE_TITAN_RULE } from '../src/lore/cross-faction-run-ins.mjs';
+import { readJson, validateCrossFactionCreaturePools, summarizeCrossFactionRunIns, ONE_DEITY_RULE } from '../src/lore/cross-faction-run-ins.mjs';
 
 const data = {
   factions: readJson('data/factions.json'),
@@ -18,7 +18,7 @@ assert.equal(summary.missions, 280);
 assert.equal(summary.oneTitanMissions, 280);
 assert.equal(summary.mobileCampaigns, data.campaigns.length);
 for (const mission of data.missions) {
-  assert.equal(mission.activeTitanPolicy.standardCombat, ONE_TITAN_RULE);
+  assert.equal(mission.activeTitanPolicy.standardCombat, ONE_DEITY_RULE);
   assert.equal(mission.crossFactionRunIns.enabled, true);
   assert.ok(mission.crossFactionRunIns.recommendedPoolIds.length >= 2);
 }

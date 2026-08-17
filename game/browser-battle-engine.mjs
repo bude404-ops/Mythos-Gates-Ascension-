@@ -106,7 +106,7 @@ export function createBattleState({ battleId='TG-BATTLE-FIRST-GATE-001', mission
   log(state,'BATTLE_START',{battleId,missionId,deity:deity.id,enemies:state.enemies.map(e=>e.instanceId),scaling:state.telemetry.enemyScaling});
   return state;
 }
-export function applyTitanAction(input,action){
+export function applyDeityAction(input,action){
   const s=clone(input); if(s.phase!==PHASES.PLAYER) throw new Error(`Deity action blocked during ${s.phase}`);
   if(action.type==='MOVE'){ const dist=distance(s.deity.position,action.to); const sp=s.terrain.spaces.find(x=>key(x.position)===key(action.to)); if(!sp) throw new Error('Invalid move target'); if(dist>s.deity.speed) throw new Error('Move exceeds speed'); s.deity.position=clone(action.to); if(sp.illuminated) gain(s,'momentum',8,'illuminated_movement'); s.telemetry.routeSpacesVisited.push(key(action.to)); log(s,'TITAN_MOVE',{to:action.to,terrain:sp.type}); }
   else if(action.type==='BASIC_ATTACK'){ const e=enemy(s,action.targetId); if(distance(s.deity.position,e.position)>s.deity.range) throw new Error('Target out of range'); const dmg=Math.max(1,s.deity.attack+(s.deity.stance===STANCES.ASSAULT?3:0)-Math.floor(e.armor/4)); e.hp=Math.max(0,e.hp-dmg); e.vulnerable=e.hp>0&&e.hp<=Math.ceil(e.maxHp*.35); s.telemetry.damageDealt+=dmg; gain(s,'momentum',currentSpace(s)?.illuminated?12:8,'basic_attack'); if(e.vulnerable) gain(s,'divinity',5,'vulnerability_created'); log(s,'BASIC_ATTACK',{target:e.instanceId,damage:dmg,remainingHp:e.hp,vulnerable:e.vulnerable}); }

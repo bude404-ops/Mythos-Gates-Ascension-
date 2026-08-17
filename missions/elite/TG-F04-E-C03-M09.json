@@ -11,7 +11,7 @@
   "description": "Elite: Purify the Mirror Lake Sanctum: Key Verdict is a rebuilt Mythos Gates mission beat for Torii-Moon Mirror Road through The Torii-Moon Gate (Distortion Gate with ritual rerouting). One selected deity from Amaterasu, Tsukuyomi, Susanoo, Izanami enters; this beat spotlights Amaterasu as the reference silhouette while preserving player choice. The mission is the elite step at Mirror Lake Sanctum, using shrine-road labyrinth and mirror sanctum pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Sacred Kingdoms is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash..",
   "lore": "Ascension canon route rewrite: Torii-Moon Mirror Road is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Mirror Lake Sanctum and reveals: A shrine tablet implying some Gates choose which names may pass. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 927,
-  "encouragedTitanRoles": [
+  "encouragedDeityRoles": [
     "spirit-road tactician",
     "survivable objective holder",
     "burst or control specialist"
@@ -109,9 +109,9 @@
   ],
   "chapterId": "TG-F04-CH03",
   "difficulty": "Elite",
-  "activeTitanPolicy": {
-    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
-    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+  "activeDeityPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE",
+    "multiDeityCombat": "NOT_USED_IN_STANDARD_MISSIONS",
     "rosterPurpose": "Choose one deity before launch; no ally positioning or team formations in battle.",
     "squadCombat": "FORBIDDEN",
     "teamTurns": "FORBIDDEN"
@@ -129,7 +129,7 @@
       "Sustain",
       "Guardian"
     ],
-    "recommendedTitanIds": [
+    "recommendedDeityIds": [
       "TG-TITAN-028",
       "TG-TITAN-033"
     ],
@@ -162,10 +162,10 @@
     "avoid": "anime mecha samurai, generic ninja, plastic kimono costume, random kanji text, neon cyberpunk, cute mascot fox"
   },
   "updated": "2026-08-16",
-  "activeTitanCount": 1,
+  "activeDeityCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "playerControlledTitans": 1,
+    "playerControlledDeities": 1,
     "loop": [
       "Explore",
       "Encounter",

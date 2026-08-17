@@ -26,7 +26,7 @@
   ],
   "globalRules": [
     "Scale sheets must use shared baseline, contact shadows, and at least one mobile crop.",
-    "Never shrink Titans to solve composition; enlarge Gates, architecture, and battlefield space instead.",
+    "Never shrink deities to solve composition; enlarge Gates, architecture, and battlefield space instead.",
     "Terrain and hazards must be physical art features, never neon board-game overlays.",
     "Every production prompt must preserve dark mythological fantasy and reject sci-fi scale cues."
   ],
@@ -41,7 +41,7 @@
         "playerTitan",
         "standardWall"
       ],
-      "ratioToTitan": 0.22,
+      "ratioToDeity": 0.22,
       "composition": "Front 3/4 lineup: normal humanoid, standard Hollow enemy, player deity ankle/knee anchor, one standard wall behind.",
       "camera": "Low tactical camera, enemy readable at mobile zoom without stealing deity mass.",
       "promptOverlay": [
@@ -65,7 +65,7 @@
         "playerTitan",
         "largeEnemy"
       ],
-      "ratioToTitan": 0.36,
+      "ratioToDeity": 0.36,
       "composition": "Escalation lineup showing standard enemy, elite enemy, and deity with shared ground plane and contact shadows.",
       "camera": "Slightly lower heroic angle; elite feels threatening but still clearly under deity scale.",
       "promptOverlay": [
@@ -89,7 +89,7 @@
         "heavyTitan",
         "titanGateArch"
       ],
-      "ratioToTitan": 1,
+      "ratioToDeity": 1,
       "composition": "Three deity body classes on one baseline: agile, standard, heavy, with Gate arch ghosted behind.",
       "camera": "Orthographic-friendly side/front comparison plus one action inset for attack arc size.",
       "promptOverlay": [
@@ -113,7 +113,7 @@
         "heavyTitan",
         "titanGateArch"
       ],
-      "ratioToTitan": 1.12,
+      "ratioToDeity": 1.12,
       "composition": "Duel staging: player Titan and deity-scale enemy shoulder-to-shoulder, Gate arch and terrain object in background.",
       "camera": "Boss-preview camera, both silhouettes equally readable with enemy slightly taller or longer-limbed.",
       "promptOverlay": [
@@ -137,7 +137,7 @@
         "titanScaleEnemy",
         "titanGateArch"
       ],
-      "ratioToTitan": 1.83,
+      "ratioToDeity": 1.83,
       "composition": "Player deity foreground at foot/torso line of colossal boss; separate inset shows full boss silhouette against Gate arch.",
       "camera": "Two-panel reference: readable gameplay crop and full majesty silhouette crop.",
       "promptOverlay": [
@@ -161,7 +161,7 @@
         "playerTitan",
         "colossalBoss"
       ],
-      "ratioToTitan": 2.69,
+      "ratioToDeity": 2.69,
       "composition": "Gate arch, inner opening, Titan, and colossal boss silhouettes aligned on the same threshold stones.",
       "camera": "Wide landmark camera with clear inner passage and readable threshold material detail.",
       "promptOverlay": [
@@ -186,7 +186,7 @@
         "bridgeWidth",
         "playerTitan"
       ],
-      "ratioToTitan": 2.12,
+      "ratioToDeity": 2.12,
       "composition": "Temple pylon, wall, statue, bridge width markers, and deity placed on shared tactical floor tiles.",
       "camera": "Isometric tactical camera with lane/cover readability and no artificial grid glow.",
       "promptOverlay": [
@@ -211,7 +211,7 @@
         "playerTitan",
         "gateInteriorOpening"
       ],
-      "ratioToTitan": 0.65,
+      "ratioToDeity": 0.65,
       "composition": "Solar seal pylon, fallen gate rib, breakable wall, and objective pedestal beside deity feet and normal enemies.",
       "camera": "Mobile combat zoom focused on tap targets, obstruction, and silhouette separation.",
       "promptOverlay": [

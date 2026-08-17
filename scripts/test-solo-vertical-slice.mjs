@@ -12,10 +12,10 @@ const reducerNames = new Set(schema.reducers.map(r => r.name));
 assert.equal(slice.id, 'TG-SOLO-VERTICAL-SLICE-ATEN-RA-001');
 assert.equal(slice.status, 'IMPLEMENTED');
 assert.equal(slice.faction.id, 'TG-FACTION-001');
-assert.equal(slice.starterTitan.id, schema.verticalSliceDefault.starterTitanId);
+assert.equal(slice.starterDeity.id, schema.verticalSliceDefault.starterDeityId);
 assert.equal(slice.missionTypes.length, 5, 'slice must have exactly five pre-boss mission types');
 assert.equal(slice.bossEncounter.phasePlan.length, 5, 'boss must expose five readable phases');
-assert.ok(slice.qualityGates.includes('Exactly one active player Titan'));
+assert.ok(slice.qualityGates.includes('Exactly one active player deity'));
 assert.ok(slice.telemetryContract.includes('reactionSuccessRate'));
 assert.ok(slice.telemetryContract.includes('bossPhaseReached'));
 

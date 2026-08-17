@@ -20,7 +20,7 @@
   },
   "defenseSnapshotFields": [
     "snapshotId",
-    "sourceTitanId",
+    "sourceDeityId",
     "sourceTitanName",
     "sourceFaction",
     "level",
@@ -170,7 +170,7 @@
     "defender_snapshot_can_be_refreshed_after_cooldown"
   ],
   "snapshotRules": {
-    "oneActiveDefenderTitan": true,
+    "oneActiveDefenderDeity": true,
     "livePvpImplemented": false,
     "noFabricatedProgression": true,
     "checksumRequired": true,
@@ -226,7 +226,7 @@
     {
       "snapshotId": "TG-ASYNC-SNAPSHOT-001",
       "sourceOpponentId": "TG-ARENA-OPP-001",
-      "sourceTitanId": "TG-TITAN-010",
+      "sourceDeityId": "TG-TITAN-010",
       "sourceTitanName": "The Allfather Stormvein",
       "sourceFaction": "Asgardian",
       "level": 18,
@@ -263,7 +263,7 @@
     {
       "snapshotId": "TG-ASYNC-SNAPSHOT-002",
       "sourceOpponentId": "TG-ARENA-OPP-002",
-      "sourceTitanId": "TG-TITAN-019",
+      "sourceDeityId": "TG-TITAN-019",
       "sourceTitanName": "Aurelion Heaven-Marrow",
       "sourceFaction": "Olympian",
       "level": 22,
@@ -300,7 +300,7 @@
     {
       "snapshotId": "TG-ASYNC-SNAPSHOT-003",
       "sourceOpponentId": "TG-ARENA-OPP-003",
-      "sourceTitanId": "TG-TITAN-028",
+      "sourceDeityId": "TG-TITAN-028",
       "sourceTitanName": "Amaterion Spirit-Sun",
       "sourceFaction": "Kami",
       "level": 26,
@@ -337,7 +337,7 @@
     {
       "snapshotId": "TG-ASYNC-SNAPSHOT-004",
       "sourceOpponentId": "TG-ARENA-OPP-004",
-      "sourceTitanId": "TG-TITAN-037",
+      "sourceDeityId": "TG-TITAN-037",
       "sourceTitanName": "Dagoran Root-Crown",
       "sourceFaction": "Tuatha",
       "level": 30,
@@ -374,7 +374,7 @@
     {
       "snapshotId": "TG-ASYNC-SNAPSHOT-005",
       "sourceOpponentId": "TG-ARENA-OPP-005",
-      "sourceTitanId": "TG-TITAN-046",
+      "sourceDeityId": "TG-TITAN-046",
       "sourceTitanName": "Seraphel, the Throne Eternal",
       "sourceFaction": "Empyrean",
       "level": 34,
@@ -411,7 +411,7 @@
     {
       "snapshotId": "TG-ASYNC-SNAPSHOT-006",
       "sourceOpponentId": "TG-ARENA-OPP-006",
-      "sourceTitanId": "TG-TITAN-055",
+      "sourceDeityId": "TG-TITAN-055",
       "sourceTitanName": "Mordrath, the Infernal King",
       "sourceFaction": "Infernal Dominion",
       "level": 38,

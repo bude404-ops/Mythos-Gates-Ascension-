@@ -65,7 +65,7 @@ async function runSmoke(){
     await page.evaluate(()=>window.TGHub.battleObjective());
     await page.evaluate(()=>{
       const b=window.TGHub.state.battle;
-      b.titan.position={x:3,y:3};
+      b.deity.position={x:3,y:3};
       b.objectives[0].progress=1;
       const living=b.enemies.filter(e=>e.hp>0);
       if(living[0]) living[0].position={x:3,y:4};

@@ -11,7 +11,7 @@
   "description": "Execute the Volcanic Glass Throne Steps: Lore Price is a rebuilt Mythos Gates mission beat for Black-Iron Debt Descent through The Black-Iron Gate (Distortion Gate bound by contract clauses). One selected deity from Lucifer, Lilith, Asmodeus, Naamah enters; this beat spotlights Naamah as the reference silhouette while preserving player choice. The mission is the treasure or lore step at Volcanic Glass Throne Steps, using infernal court, bargain market, and chain causeway pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Infernal Dominion is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture..",
   "lore": "Ascension canon route rewrite: Black-Iron Debt Descent is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Volcanic Glass Throne Steps and reveals: A redacted clause hinting that some Gates may be negotiated with, never owned. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 811,
-  "encouragedTitanRoles": [
+  "encouragedDeityRoles": [
     "infernal execution monarch",
     "survivable objective holder",
     "burst or control specialist"
@@ -102,9 +102,9 @@
   "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "chapterId": "TG-F07-CH03",
   "difficulty": "Normal",
-  "activeTitanPolicy": {
-    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
-    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+  "activeDeityPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE",
+    "multiDeityCombat": "NOT_USED_IN_STANDARD_MISSIONS",
     "rosterPurpose": "Choose one deity before launch; no ally positioning or team formations in battle.",
     "squadCombat": "FORBIDDEN",
     "teamTurns": "FORBIDDEN"
@@ -122,7 +122,7 @@
       "Controller",
       "Assassin"
     ],
-    "recommendedTitanIds": [
+    "recommendedDeityIds": [
       "TG-TITAN-058",
       "TG-TITAN-060"
     ],
@@ -155,10 +155,10 @@
     "avoid": "generic Halloween devil, red robot demon, cartoon pitchfork, rubber horns, random pentagram spam, neon cyber hell"
   },
   "updated": "2026-08-16",
-  "activeTitanCount": 1,
+  "activeDeityCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "playerControlledTitans": 1,
+    "playerControlledDeities": 1,
     "loop": [
       "Explore",
       "Encounter",

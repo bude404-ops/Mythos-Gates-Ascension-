@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import {
   PHASES,
   createInitialSoloBattleState,
-  applyTitanAction,
+  applyDeityAction,
   revealEnemyIntents,
   resolveEnemyPhase,
   applyReaction,
@@ -17,7 +17,7 @@ const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const titans = read('data/titans.json');
 const creatures = read('data/creatures.json');
 const schema = read('data/solo-battle-state-schema.json');
-const titan = titans.find(t => t.id === schema.verticalSliceDefault.starterTitanId);
+const deity = titans.find(t => t.id === schema.verticalSliceDefault.starterDeityId);
 const enemyRoster = schema.verticalSliceDefault.starterEnemies.map(id => creatures.find(c => c.id === id));
 const terrain = {
   grid: { width: 7, height: 7 },
@@ -32,16 +32,16 @@ const objectives = [
   { id: 'destroy_hollow_anchor', progress: 0, requiredProgress: 1, status: 'ACTIVE' }
 ];
 
-let state = createInitialSoloBattleState({ battleId: schema.verticalSliceDefault.battleId, missionId: schema.verticalSliceDefault.missionId, deity: titan, enemies: enemyRoster, terrain, objectives, seed: 777 });
+let state = createInitialSoloBattleState({ battleId: schema.verticalSliceDefault.battleId, missionId: schema.verticalSliceDefault.missionId, deity: deity, enemies: enemyRoster, terrain, objectives, seed: 777 });
 assert.equal(state.phase, PHASES.PLAYER);
 assert.equal(state.deity.id, 'TG-TITAN-001');
 assert.equal(state.enemies.length, 3);
 assert.equal(state.resources.momentum, 0);
 
-state = applyTitanAction(state, { type: 'MOVE', to: { x: 2, y: 1 } });
+state = applyDeityAction(state, { type: 'MOVE', to: { x: 2, y: 1 } });
 assert.equal(state.resources.momentum, 8, 'illuminated movement should build Momentum');
-state = applyTitanAction(state, { type: 'FOCUS' });
-state = applyTitanAction(state, { type: 'FOCUS' });
+state = applyDeityAction(state, { type: 'FOCUS' });
+state = applyDeityAction(state, { type: 'FOCUS' });
 assert.equal(state.resources.divinity, 8, 'Focus should build Divinity without ending the turn');
 state = revealEnemyIntents(state);
 assert.equal(state.telemetry.enemyTelegraphs, 3);
@@ -56,8 +56,8 @@ assert.equal(state.phase, PHASES.TERRAIN, 'enemy phase closes after all telegrap
 state = applyTerrainTick(state);
 state = evaluateObjectives(state);
 assert.equal(state.phase, PHASES.PLAYER, 'terrain and objective evaluation advance the round');
-state = applyTitanAction(state, { type: 'MOVE', to: { x: 3, y: 1 } });
-state = applyTitanAction(state, { type: 'FOCUS' });
+state = applyDeityAction(state, { type: 'MOVE', to: { x: 3, y: 1 } });
+state = applyDeityAction(state, { type: 'FOCUS' });
 state = revealEnemyIntents(state);
 state = resolveEnemyPhase(state);
 assert.equal(state.phase, PHASES.REACTION, 'adjacent enemy opens reaction on the next intent reveal');
@@ -81,14 +81,14 @@ state = evaluateObjectives(state, { objectiveId: 'stabilize_solar_seals', progre
 assert.equal(state.objectives[0].status, 'COMPLETE');
 assert.equal(state.phase, PHASES.PLAYER);
 
-const scripted = runReducerScript(createInitialSoloBattleState({ battleId: 'DETERMINISM-A', missionId: 'TG-BATTLEFIELD-VS-001', deity: titan, enemies: enemyRoster, terrain, objectives, seed: 42 }), [
-  { reducer: 'applyTitanAction', action: { type: 'MOVE', to: { x: 2, y: 1 } } },
-  { reducer: 'applyTitanAction', action: { type: 'FOCUS' } },
+const scripted = runReducerScript(createInitialSoloBattleState({ battleId: 'DETERMINISM-A', missionId: 'TG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 42 }), [
+  { reducer: 'applyDeityAction', action: { type: 'MOVE', to: { x: 2, y: 1 } } },
+  { reducer: 'applyDeityAction', action: { type: 'FOCUS' } },
   { reducer: 'evaluateObjectives', objectiveEvent: { objectiveId: 'destroy_hollow_anchor', progress: 1 } }
 ]);
-const scriptedAgain = runReducerScript(createInitialSoloBattleState({ battleId: 'DETERMINISM-A', missionId: 'TG-BATTLEFIELD-VS-001', deity: titan, enemies: enemyRoster, terrain, objectives, seed: 42 }), [
-  { reducer: 'applyTitanAction', action: { type: 'MOVE', to: { x: 2, y: 1 } } },
-  { reducer: 'applyTitanAction', action: { type: 'FOCUS' } },
+const scriptedAgain = runReducerScript(createInitialSoloBattleState({ battleId: 'DETERMINISM-A', missionId: 'TG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 42 }), [
+  { reducer: 'applyDeityAction', action: { type: 'MOVE', to: { x: 2, y: 1 } } },
+  { reducer: 'applyDeityAction', action: { type: 'FOCUS' } },
   { reducer: 'evaluateObjectives', objectiveEvent: { objectiveId: 'destroy_hollow_anchor', progress: 1 } }
 ]);
 assert.deepEqual(scripted, scriptedAgain, 'reducer script must be deterministic');
@@ -103,7 +103,7 @@ const scaledSwarm = scaleEnemyForMission(enemyRoster[0], normalScaling, 0);
 const scaledBrute = scaleEnemyForMission(enemyRoster.find(e=>e.combatRole==='BRUTE') || enemyRoster[2], normalScaling, 2);
 assert.equal(scaledSwarm.scalingProfile.tier, 'NORMAL');
 assert.ok(scaledBrute.scalingProfile.threatBudget >= scaledSwarm.scalingProfile.threatBudget, 'brute should carry higher threat budget than swarmer');
-const browserBattle = createBrowserBattleState({ battleId:'SCALING-SMOKE', missionId:'TG-SCALE-NORMAL', deity: titan, enemies:enemyRoster, terrain, objectives, scaling:normalScaling });
+const browserBattle = createBrowserBattleState({ battleId:'SCALING-SMOKE', missionId:'TG-SCALE-NORMAL', deity: deity, enemies:enemyRoster, terrain, objectives, scaling:normalScaling });
 assert.equal(browserBattle.telemetry.enemyScaling.tier, 'NORMAL');
 assert.ok(browserBattle.telemetry.enemyScaling.threatBudget > 0);
 assert.ok(browserBattle.enemies.every(e=>e.scalingProfile?.powerScalar === normalScaling.powerScalar));

@@ -12,10 +12,10 @@ assert.equal(summary.counts.missions, 280);
 assert.equal(summary.canonicalRules.activeTitanCount, 1);
 
 const dataset = loadSourceDataset({ includeMissions: true });
-const titan = mapTitanForEngine(dataset.titans[0]);
+const deity = mapTitanForEngine(dataset.titans[0]);
 assert.equal(titan.id, 'TG-TITAN-001');
-assert.ok(titan.combatStats.hp > 0);
-assert.ok(Array.isArray(titan.abilityNames));
+assert.ok(deity.combatStats.hp > 0);
+assert.ok(Array.isArray(deity.abilityNames));
 
 const mission = mapMissionForEngine(dataset.missions.find(row => row.id === 'TG-F01-C01-M01'));
 const ue5Framework = loadUe5DungeonFramework();

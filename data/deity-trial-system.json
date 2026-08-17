@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "status": "IMPLEMENTED",
   "taskId": "TG-DEV-027",
-  "activeTitanRule": "Trials showcase exactly one temporary deity at a time; borrowed loadouts never become permanent combat power.",
+  "activeDeityRule": "Trials showcase exactly one temporary deity at a time; borrowed loadouts never become permanent combat power.",
   "purpose": "Production Divine Trial and Faction Trial model for onboarding handoff, roster discovery, temporary specialist loadouts, Divine Ascension previews, and conversion-safe rewards.",
   "sourceContracts": [
     "data/titan-role-matrix.json",
     "data/progression-system.json",
     "game/command-hub-runtime.mjs"
   ],
-  "trialTitanIds": [
+  "trialDeityIds": [
     "TG-TITAN-005",
     "TG-TITAN-005",
     "TG-TITAN-010"
@@ -94,7 +94,7 @@
   "acceptanceCriteria": [
     "Command Hub exposes a Trials tab with trial options from canonical Titans.",
     "A trial attempt creates ACTIVE state, tempLoadout, mode label, lessons, and save-backed attempt history.",
-    "Resolving a trial creates titanTrials completion, factionTrials completion, pending TITAN_TRIAL cache, and Trial Favor resource.",
+    "Resolving a trial creates deityTrials completion, factionTrials completion, pending TITAN_TRIAL cache, and Trial Favor resource.",
     "Borrowed tempLoadout expires at END_OF_TRIAL and no permanent gear item is granted.",
     "TG-DEV-027 is marked COMPLETED only when validation and browser smoke cover the loop."
   ],

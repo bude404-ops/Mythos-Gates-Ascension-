@@ -16,7 +16,7 @@
   "explorationZone": {
     "id": "UE5-ZONE-SOLAR-SEAL-APPROACH-001",
     "levelInstance": "LI_AtenRa_SolarSealApproach_001",
-    "playerMode": "third-person Titan exploration",
+    "playerMode": "third-person deity exploration",
     "objectives": [
       "Move the active deity through sun-scale courts",
       "Discover the unstable Gate pressure line",
@@ -30,10 +30,10 @@
       "no unnecessary open world traversal"
     ],
     "scaleLandmarks": [
-      "Titan-height pylon gates",
+      "Deity-height pylon gates",
       "Ma’at scale colossi",
       "Khepri dawn engine silhouette",
-      "river-light channels below Titan-sized bridges"
+      "river-light channels below Deity-sized bridges"
     ]
   },
   "encounterLayer": {
@@ -49,10 +49,10 @@
         "Explore",
         "Encounter trigger",
         "Combat transition",
-        "1 Titan vs. Multiple Enemies",
+        "1 Deity vs. Multiple Enemies",
         "Victory",
         "Rewards",
-        "Upgrade Titan",
+        "Upgrade Deity",
         "Return to exploration"
       ],
       "enemyGroup": {
@@ -95,13 +95,13 @@
       "victory conditions",
       "turn limit 11"
     ],
-    "oneTitanVsMany": {
-      "playerControlledTitans": 1,
+    "oneDeityVsMany": {
+      "playerControlledDeities": 1,
       "enemyCountTarget": [
         4,
         6
       ],
-      "requiredTitanTools": [
+      "requiredDeityTools": [
         "cleaving attacks",
         "area-of-effect abilities",
         "knockbacks",
@@ -155,7 +155,7 @@
     "BP_TG_TitanExplorerPawn",
     "BP_TG_ZoneGateVolume",
     "BP_TG_TacticalArenaVolume",
-    "BP_TG_TitanScaleLandmark",
+    "BP_TG_DeityScaleLandmark",
     "BP_TG_ModularEncounterSpawner",
     "BP_TG_GateGuardianArena"
   ],
@@ -169,9 +169,9 @@
     "DT_ZoneModules"
   ],
   "validationChecklist": {
-    "titanScale": [
+    "deityScale": [
       "landmarks visibly dwarf normal creatures",
-      "paths support massive Titan movement",
+      "paths support massive deity movement",
       "camera frames architecture as god-scale"
     ],
     "combatFlow": [
@@ -235,7 +235,7 @@
       "DataAssets loaded by mission scope",
       "high-end assets optional"
     ],
-    "oneTitanVsMany": [
+    "oneDeityVsMany": [
       "exactly one player-controlled deity",
       "multiple enemies active",
       "no squads or team turns",
@@ -243,14 +243,14 @@
       "enemy roles create tactical pressure without inflated HP"
     ],
     "progressionFeel": [
-      "new Titan baseline measured",
-      "developed Titan improvement visible",
-      "highly developed Titan group-clear improvement visible",
+      "new deity baseline measured",
+      "developed deity improvement visible",
+      "highly developed deity group-clear improvement visible",
       "gear upgrade changes combat behavior"
     ],
     "returnToExploration": [
       "victory grants rewards",
-      "Titan upgrade applied",
+      "Deity upgrade applied",
       "gear improvement applied",
       "player returns to exploration zone"
     ]
@@ -272,7 +272,7 @@
     "rule": "Build this first zone completely before expanding the game.",
     "nextZoneAllowed": false,
     "approvalRequired": [
-      "Titan scale",
+      "Deity scale",
       "Exploration",
       "Combat",
       "Camera",
@@ -313,13 +313,13 @@
   "combatIdentity": {
     "contract": "data/one-deity-vs-many-combat.json",
     "rule": "ONE DEITY VS. MANY",
-    "playerControlledTitans": 1,
+    "playerControlledDeities": 1,
     "forbidden": [
       "squad combat",
       "team formations",
       "ally positioning",
       "team turns"
     ],
-    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards"
+    "battleDefinition": "Deity + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards"
   }
 }

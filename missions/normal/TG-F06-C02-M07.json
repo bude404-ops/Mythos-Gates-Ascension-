@@ -11,7 +11,7 @@
   "description": "Resonate the Cherub Threshold Bastion: Hazard Reading is a rebuilt Mythos Gates mission beat for Choir-Vault Discord Ascent through The Choir-Vault Gate (Wound Gate leaking memory-burning radiance). One selected deity from Michael, Sophia, Shekinah, Gabriel enters; this beat spotlights Shekinah as the reference silhouette while preserving player choice. The mission is the hazard step at Cherub Threshold Bastion, using vertical cathedral ascent and judgment machinery pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Radiant Hierarchies is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks..",
   "lore": "Ascension canon route rewrite: Choir-Vault Discord Ascent is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Cherub Threshold Bastion and reveals: Why discord becomes immobilizing force. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 654,
-  "encouragedTitanRoles": [
+  "encouragedDeityRoles": [
     "choir-vault ascendant",
     "survivable objective holder",
     "burst or control specialist"
@@ -97,9 +97,9 @@
   "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "chapterId": "TG-F06-CH02",
   "difficulty": "Normal",
-  "activeTitanPolicy": {
-    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
-    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+  "activeDeityPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE",
+    "multiDeityCombat": "NOT_USED_IN_STANDARD_MISSIONS",
     "rosterPurpose": "Choose one deity before launch; no ally positioning or team formations in battle.",
     "squadCombat": "FORBIDDEN",
     "teamTurns": "FORBIDDEN"
@@ -117,7 +117,7 @@
       "Controller",
       "Assassin"
     ],
-    "recommendedTitanIds": [
+    "recommendedDeityIds": [
       "TG-TITAN-050",
       "TG-TITAN-053"
     ],
@@ -150,10 +150,10 @@
     "avoid": "robot angel, spaceship armor, cute cherub baby, generic church costume, literal cathedral body, neon sci-fi aura"
   },
   "updated": "2026-08-16",
-  "activeTitanCount": 1,
+  "activeDeityCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "playerControlledTitans": 1,
+    "playerControlledDeities": 1,
     "loop": [
       "Explore",
       "Encounter",

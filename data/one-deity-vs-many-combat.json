@@ -1,65 +1,219 @@
 {
-  "id": "TG-COMBAT-CONTRACT-001",
-  "version": "1.0.0",
-  "primaryRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
-  "combatLoop": [
-    "1 Titan vs. Multiple Enemies",
-    "Exploration → Encounter → Tactical Combat → Reward → Next Zone"
-  ],
+  "id": "TG-ONE-DEITY-VS-MANY-COMBAT-V1",
+  "schema": "TG_ONE_DEITY_VS_MANY_COMBAT_V1",
+  "status": "CORE_COMBAT_RULE",
+  "version": "1.14.0-one-deity-vs-many-combat",
+  "primaryRule": "ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE",
   "forbiddenSystems": [
     "squad combat",
     "team formations",
-    "multiple player-controlled Titans",
+    "multiple player-controlled deities",
+    "multiple player-controlled deities",
     "ally positioning",
-    "team turns"
+    "team turns",
+    "multi-deity battlefield control",
+    "hardcoded encounter-specific combat systems"
   ],
+  "combatFantasy": "One legendary god-like deity enterss enemy-controlled territory alone, fights through many coordinated enemies, grows visibly stronger, and eventually destroys forces that once seemed impossible.",
+  "combatLoop": [
+    "Explore",
+    "Encounter",
+    "1 Deity vs. Multiple Enemies",
+    "Victory",
+    "Rewards",
+    "Upgrade deity",
+    "Explore Further"
+  ],
+  "deityKit": {
+    "requiredActions": [
+      "movement",
+      "basic attacks",
+      "heavy attacks",
+      "area attacks",
+      "defensive abilities",
+      "offensive abilities",
+      "special abilities",
+      "cooldowns",
+      "status effects",
+      "terrain interactions",
+      "equipment bonuses",
+      "level-based progression"
+    ],
+    "powerExpression": [
+      "cleaving attacks",
+      "area-of-effect abilities",
+      "chain attacks",
+      "sweeping attacks",
+      "knockbacks",
+      "stuns",
+      "movement abilities",
+      "environmental attacks",
+      "high-damage single-target attacks",
+      "defensive abilities"
+    ],
+    "rule": "The deity handles groups through ability choice, cooldown timing, positioning, terrain use, equipment, and visible progression."
+  },
   "enemyGroupDesign": {
     "roles": [
       "melee attackers",
       "ranged attackers",
       "fast enemies",
+      "defensive enemies",
       "support enemies",
+      "debuff enemies",
       "elite enemies",
+      "large creatures",
+      "mini-bosses",
       "bosses"
     ],
-    "antiPattern": "No inflated health-pool difficulty — enemies should threaten via positioning, abilities, and numbers, not bloated HP",
-    "creatureRoleMapping": {
-      "SWARMER": "fast enemies",
-      "BRUTE": "melee attackers",
-      "HUNTER": "ranged attackers",
-      "CONTROLLER": "support enemies",
-      "DISRUPTOR": "support enemies",
-      "GUARDIAN": "melee attackers",
-      "ELITE": "elite enemies",
-      "CHAMPION": "elite enemies",
-      "EXECUTIONER": "bosses"
-    }
+    "pressureTools": [
+      "numbers",
+      "enemy combinations",
+      "specialized abilities",
+      "positioning",
+      "terrain",
+      "status effects",
+      "elite enemies",
+      "objectives",
+      "boss mechanics"
+    ],
+    "antiPattern": "Do not make enemies difficult simply by giving them enormous health pools.",
+    "exampleComposition": "Weak melee enemies surround the deity while ranged enemies attack from elevation and a support enemy buffs the group."
   },
   "scalingBands": [
     {
       "band": "EARLY",
-      "enemyCountRange": [4, 6],
-      "eliteChance": 0.0,
-      "bossChance": 0.0
+      "target": "1 Deity vs. small groups",
+      "enemyCountRange": [
+        4,
+        6
+      ],
+      "requiredThreats": [
+        "melee pressure",
+        "ranged or fast pressure"
+      ]
     },
     {
       "band": "MID",
-      "enemyCountRange": [5, 8],
-      "eliteChance": 0.15,
-      "bossChance": 0.0
+      "target": "1 Deity vs. larger groups plus elite enemies",
+      "enemyCountRange": [
+        8,
+        12
+      ],
+      "requiredThreats": [
+        "elite pressure",
+        "support or debuff pressure",
+        "positioning trap"
+      ]
     },
     {
       "band": "LATE",
-      "enemyCountRange": [6, 10],
-      "eliteChance": 0.25,
-      "bossChance": 0.1
+      "target": "1 Deity vs. large groups plus multiple elite threats",
+      "enemyCountRange": [
+        10,
+        16
+      ],
+      "requiredThreats": [
+        "multiple elites",
+        "hazards",
+        "demanding objectives"
+      ]
     },
     {
       "band": "BOSS",
-      "enemyCountRange": [1, 3],
-      "eliteChance": 0.0,
-      "bossChance": 1.0
+      "target": "1 Deity vs. boss plus support enemies and/or environmental mechanics",
+      "enemyCountRange": [
+        1,
+        8
+      ],
+      "requiredThreats": [
+        "boss phases",
+        "environmental hazards",
+        "support enemies or objectives"
+      ]
     }
+  ],
+  "powerProgression": {
+    "sources": [
+      "Level",
+      "Gear",
+      "Abilities",
+      "Upgrades",
+      "Titan-specific progression"
+    ],
+    "visibleGameplayOutcomes": [
+      "larger AoE coverage",
+      "shorter cooldowns",
+      "stronger knockbacks",
+      "better survivability",
+      "new movement angles",
+      "stronger single-target burst",
+      "group clear speed improves",
+      "old enemy groups become easier without fake scaling"
+    ],
+    "rule": "Progression must be visible in actual gameplay, not only hidden numeric growth."
+  },
+  "positioningDecisions": [
+    "enemy distance",
+    "enemy grouping",
+    "AoE opportunities",
+    "ranged threats",
+    "elevation",
+    "terrain",
+    "escape routes",
+    "chokepoints",
+    "ability cooldowns",
+    "enemy attack patterns",
+    "objectives"
+  ],
+  "bossBattleRules": [
+    "Bosses are not normal enemies with inflated health.",
+    "Boss fights can use one boss, boss plus supports, multiple phases, environmental hazards, large arenas, Gate mechanics, and special objectives.",
+    "Boss arenas must keep active objects and effects controlled for mobile performance."
+  ],
+  "dungeonCrawlerIntegration": [
+    "Exploration Zone",
+    "Enemy Encounter",
+    "Combat Arena",
+    "1 Deity vs. Multiple Enemies",
+    "Victory",
+    "Loot / Rewards",
+    "Titan Upgrade",
+    "Continue Exploration"
+  ],
+  "mobileTouchControls": [
+    "tap deity",
+    "tap movement destination",
+    "tap enemy target",
+    "tap ability",
+    "drag/gesture camera controls",
+    "clear attack ranges",
+    "clear AoE previews",
+    "clear enemy threat indicators"
+  ],
+  "ue5Implementation": {
+    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
+    "systems": [
+      "Blueprints",
+      "Data Assets",
+      "Data Tables",
+      "Actor Components",
+      "Animation systems",
+      "Niagara",
+      "Modular combat arenas",
+      "AI behavior systems",
+      "Efficient enemy spawning",
+      "Level/asset streaming"
+    ],
+    "dataDrivenRule": "Encounters are data-driven and reusable; no separate hardcoded combat system per encounter."
+  },
+  "mobilePerformanceRules": [
+    "enemy count scales by device tier",
+    "AI behavior must be optimized and batched where possible",
+    "VFX counts are capped",
+    "lighting remains mobile-compatible",
+    "enemy animation complexity is tiered",
+    "many enemies must not require expensive per-enemy processing"
   ],
   "firstPrototype": {
     "sourceMissionId": "TG-F01-C01-M01",
@@ -68,7 +222,7 @@
       "Encounter trigger",
       "Combat transition",
       "Multiple enemies",
-      "Titan AoE attacks",
+      "Deity AoE attacks",
       "Tactical movement",
       "Enemy AI",
       "Divine Abilities",
@@ -77,19 +231,12 @@
       "Divine Ascension",
       "Gear improvement",
       "Return to exploration"
-    ]
-  },
-  "powerProgression": {
-    "visibleGameplayOutcomes": [
-      "larger AoE coverage",
-      "shorter cooldowns",
-      "group clear speed improves"
-    ]
-  },
-  "dungeonCrawlerIntegration": {
-    "zoneTransition": "Combat resolves → rewards → return to exploration → next zone",
-    "roomModel": "Each mission is a dungeon room/zone with its own encounter table",
-    "encounterTrigger": "Enemies spawn when deity enters zone trigger area",
-    "explorationPhase": "Between encounters, deity moves through zone terrain without combat active"
+    ],
+    "progressionFeelTest": [
+      "New Deity",
+      "Developed Deity",
+      "Highly Developed Deity"
+    ],
+    "expansionRule": "Do not expand to additional missions, Titans, enemy types, or regions until this first combat loop is approved."
   }
 }

@@ -23,7 +23,7 @@
     "data/asset-registry.json",
     "game/index.html",
     "data/player-onboarding-roster-journey.json",
-    "data/titan-trial-system.json",
+    "data/deity-trial-system.json",
     "data/mission-tactical-profile-system.json",
     "data/creature-behavior-runtime-contract.json"
   ],
@@ -64,14 +64,14 @@
     "level": "number",
     "experience": "object",
     "resources": "array",
-    "selectedTitans": "array<titanId>",
+    "selectedDeities": "array<titanId>",
     "unlockedContent": "object",
     "campaignProgress": "object",
     "quests": "array",
     "notifications": "array",
     "settings": "object",
     "onboarding": "object",
-    "titanTrials": "object",
+    "deityTrials": "object",
     "factionTrials": "object"
   },
   "defaultPlayerState": {
@@ -99,7 +99,7 @@
         "amount": 0
       }
     ],
-    "selectedTitans": [
+    "selectedDeities": [
       "TG-TITAN-001"
     ],
     "unlockedContent": {
@@ -137,7 +137,7 @@
     },
     "onboarding": {
       "status": "AWAKENING",
-      "starterTitanId": null,
+      "starterDeityId": null,
       "milestones": [
         "GATE_SIGNAL_DETECTED"
       ],
@@ -257,7 +257,7 @@
     "rules": [
       "recover corrupt save before gameplay",
       "claim pending reward before next mission",
-      "select a valid deity if selectedTitanIds are missing",
+      "select a valid deity if selectedDeityIds are missing",
       "continue unfinished mission if present",
       "start current campaign mission",
       "enter elite only when campaign unlock rule is true",
@@ -307,7 +307,7 @@
   "qualityGates": [
     "Command Hub route is the first rendered game route after title/startup.",
     "No hardcoded faction names in hub render logic; faction UI maps canonical faction registry.",
-    "Selected deity display resolves from PlayerState selectedTitans plus canonical deity registry.",
+    "Selected deity display resolves from PlayerState selectedDeities plus canonical deity registry.",
     "Resource bar maps PlayerState resources only.",
     "Every bottom nav button routes to a real implemented screen or LockedContentPanel.",
     "getNextRecommendedAction resolves a real mission handoff.",
@@ -317,7 +317,7 @@
     "TG-DEV-026 Awakening path tracks 12 roster-journey beats from starter choice to faction trial handoff.",
     "Full roster remains hidden until Awakening completion and no starter selection requires payment.",
     "TG-DEV-027 Trials tab creates save-backed Divine Trial attempts with temporary loadouts.",
-    "TG-DEV-027 Trial completion writes titanTrials, factionTrials, pending TITAN_TRIAL rewards, and Trial Favor.",
+    "TG-DEV-027 Trial completion writes deityTrials, factionTrials, pending TITAN_TRIAL rewards, and Trial Favor.",
     "TG-DEV-027 Borrowed loadouts expire at END_OF_TRIAL and never grant permanent paid power.",
     "TG-DEV-028 all 280 campaign missions expose tactical problem tags and advantage roles.",
     "TG-DEV-028 recommended deities are valid, favored-not-required, and never ownership locks.",
@@ -343,14 +343,14 @@
     "titans": 63,
     "realms": 7,
     "campaignFlows": 7,
-    "selectedTitansDefault": 1
+    "selectedDeitiesDefault": 1
   },
   "readyForFutureContent": true,
   "onboardingFlow": {
     "taskId": "TG-DEV-026",
     "status": "IMPLEMENTED",
     "source": "data/player-onboarding-roster-journey.json",
-    "starterTitanIds": [
+    "starterDeityIds": [
       "TG-TITAN-001",
       "TG-TITAN-006",
       "TG-TITAN-009"
@@ -372,8 +372,8 @@
   "trialSystem": {
     "taskId": "TG-DEV-027",
     "status": "IMPLEMENTED",
-    "source": "data/titan-trial-system.json",
-    "trialTitanIds": [
+    "source": "data/deity-trial-system.json",
+    "trialDeityIds": [
       "TG-TITAN-005",
       "TG-TITAN-005",
       "TG-TITAN-010"
@@ -480,7 +480,7 @@
       "GATE",
       "TITAN_PRESENTATION"
     ],
-    "starterTitanIds": [
+    "starterDeityIds": [
       "TG-TITAN-001",
       "TG-TITAN-006",
       "TG-TITAN-009"

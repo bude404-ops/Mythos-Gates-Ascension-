@@ -15,7 +15,7 @@ const requiredFiles = [
   'docs/tech/REPOSITORY_ARCHITECTURE.md',
   'docs/art/ASSET_IMPORT_STANDARDS.md',
   'schemas/README.md',
-  'schemas/titan.schema.json',
+  'schemas/deity.schema.json',
   'schemas/faction.schema.json',
   'schemas/map.schema.json',
   'schemas/mission.schema.json',
@@ -146,7 +146,7 @@ for (const token of ['schemas/', 'src/', 'tests/', 'AAA repository audit', 'one 
 }
 
 const schemas = [
-  'schemas/titan.schema.json',
+  'schemas/deity.schema.json',
   'schemas/faction.schema.json',
   'schemas/map.schema.json',
   'schemas/mission.schema.json',

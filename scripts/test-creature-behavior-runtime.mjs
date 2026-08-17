@@ -4,7 +4,7 @@ import {
   PHASES,
   STANCES,
   createBattleState,
-  applyTitanAction,
+  applyDeityAction,
   revealEnemyIntents,
   resolveEnemyPhase,
   applyReaction,

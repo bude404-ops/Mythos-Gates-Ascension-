@@ -21,7 +21,7 @@
   "profileShape": {
     "problemTags": "array<missionProblemTag> min=3",
     "advantageRoles": "array<titanRole> min=2",
-    "recommendedTitanIds": "array<titanId> min=1",
+    "recommendedDeityIds": "array<titanId> min=1",
     "recommendedTitans": "array<{id,name,reason}>",
     "favoredNotRequired": "true",
     "ownershipLock": "false",
@@ -246,7 +246,7 @@
     "TG-F07-E-C05-M20"
   ],
   "antiPayToWinRules": [
-    "Mission tactical profiles may recommend roles and Titans, but never require ownership.",
+    "Mission tactical profiles may recommend roles and deities, but never require ownership.",
     "Every tagged mission must keep ownershipLock=false and favoredNotRequired=true.",
     "The rule text must state that any valid active deity can attempt the mission.",
     "Recommended deity advantage is guidance, not a gate, stat lock, or purchase prompt."

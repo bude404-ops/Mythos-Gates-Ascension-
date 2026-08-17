@@ -46,7 +46,7 @@ for (const route of contract.flow) {
       assert.equal(mission.tacticalProfile?.ownershipLock, false, `${id} tactical profile must not lock ownership`);
       assert.ok(mission.tacticalProfile?.problemTags?.length >= 3, `${id} missing problem tags`);
       assert.ok(mission.tacticalProfile?.advantageRoles?.length >= 2, `${id} missing advantage roles`);
-      assert.ok(mission.tacticalProfile?.recommendedTitanIds?.every(tid => titans.some(t => t.id === tid)), `${id} invalid recommended Titan`);
+      assert.ok(mission.tacticalProfile?.recommendedDeityIds?.every(tid => titans.some(t => t.id === tid)), `${id} invalid recommended Deity`);
     }
     assert.equal(chapter.handoff.defaultMissionId || chapter.defaultMissionId, chapter.normalMissionIds[0]);
     assert.ok(chapter.handoff.battleRoute.includes(chapter.normalMissionIds[0]));

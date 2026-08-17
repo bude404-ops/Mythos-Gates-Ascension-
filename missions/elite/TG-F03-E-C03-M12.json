@@ -11,7 +11,7 @@
   "description": "Elite: Crown the Apollo Sun-Clarity Gallery: Lore Price is a rebuilt Mythos Gates mission beat for Laurel-Sky Hubris Trial through The Laurel-Sky Gate (Stable Gate with oracle vapor leakage). One selected deity from Zeus, Artemis, Ares, Athena enters; this beat spotlights Athena as the reference silhouette while preserving player choice. The mission is the treasure or lore step at Apollo Sun-Clarity Gallery, using floating tribunal arena and oracle theater pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Celestial Heights of Olympus is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal auras, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands..",
   "lore": "Ascension canon route rewrite: Laurel-Sky Hubris Trial is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Apollo Sun-Clarity Gallery and reveals: A partial verdict asking whether the Gates protect Olympus or expose it. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 1026,
-  "encouragedTitanRoles": [
+  "encouragedDeityRoles": [
     "heroic arena duelist",
     "survivable objective holder",
     "burst or control specialist"
@@ -110,9 +110,9 @@
   ],
   "chapterId": "TG-F03-CH03",
   "difficulty": "Elite",
-  "activeTitanPolicy": {
-    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
-    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+  "activeDeityPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE",
+    "multiDeityCombat": "NOT_USED_IN_STANDARD_MISSIONS",
     "rosterPurpose": "Choose one deity before launch; no ally positioning or team formations in battle.",
     "squadCombat": "FORBIDDEN",
     "teamTurns": "FORBIDDEN"
@@ -130,7 +130,7 @@
       "Guardian",
       "Breaker"
     ],
-    "recommendedTitanIds": [
+    "recommendedDeityIds": [
       "TG-TITAN-019",
       "TG-TITAN-026"
     ],
@@ -163,10 +163,10 @@
     "avoid": "generic toga costume, Roman gladiator confusion, marble statue stiffness, robot bronze automaton, sci-fi aura, plastic laurel"
   },
   "updated": "2026-08-16",
-  "activeTitanCount": 1,
+  "activeDeityCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "playerControlledTitans": 1,
+    "playerControlledDeities": 1,
     "loop": [
       "Explore",
       "Encounter",

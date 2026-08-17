@@ -11,7 +11,7 @@
     "forbiddenSystems",
     "combatFantasy",
     "combatLoop",
-    "titanKit",
+    "deityKit",
     "enemyGroupDesign",
     "scalingBands",
     "powerProgression",
@@ -25,10 +25,10 @@
   ],
   "properties": {
     "id": {
-      "const": "TG-ONE-TITAN-VS-MANY-COMBAT-V1"
+      "const": "TG-ONE-DEITY-VS-MANY-COMBAT-V1"
     },
     "schema": {
-      "const": "TG_ONE_TITAN_VS_MANY_COMBAT_V1"
+      "const": "TG_ONE_DEITY_VS_MANY_COMBAT_V1"
     },
     "status": {
       "const": "CORE_COMBAT_RULE"
@@ -58,7 +58,7 @@
         "type": "string"
       }
     },
-    "titanKit": {
+    "deityKit": {
       "type": "object",
       "required": [
         "requiredActions",

@@ -4,8 +4,8 @@ const DEFAULT_CLOCK = () => '2026-08-16T23:00:00.000Z';
 const DEFAULT_CURRENCIES = Object.freeze({ sunshards: 120, gateKeys: 1, signatureAlloy: 0 });
 const REQUIRED_EVENT_TYPES = Object.freeze([
   'PROFILE_CREATED',
-  'TITAN_GRANTED',
-  'ACTIVE_TITAN_SET',
+  'DEITY_GRANTED',
+  'ACTIVE_DEITY_SET',
   'MISSION_COMPLETED',
   'CURRENCY_CREDITED',
   'CURRENCY_DEBITED',
@@ -16,7 +16,7 @@ const REQUIRED_EVENT_TYPES = Object.freeze([
 export function createPlatformProfile({
   playerId = 'TG-PLAYER-LOCAL-001',
   displayName = 'First Gatebreaker',
-  starterTitanId = 'TG-TITAN-003',
+  starterDeityId = 'TG-TITAN-003',
   now = DEFAULT_CLOCK
 } = {}) {
   const createdAt = now();
@@ -32,8 +32,8 @@ export function createPlatformProfile({
       accountXp: 0
     },
     roster: {
-      activeTitanId: starterTitanId,
-      ownedTitans: [{ titanId: starterTitanId, source: 'STARTER_GRANT', grantedAt: createdAt, level: 1, xp: 0 }]
+      activeDeityId: starterDeityId,
+      ownedDeities: [{ deityId: starterDeityId, source: 'STARTER_GRANT', grantedAt: createdAt, level: 1, xp: 0 }]
     },
     inventory: {
       currencies: { ...DEFAULT_CURRENCIES },
@@ -48,28 +48,28 @@ export function createPlatformProfile({
     platformEvents: []
   };
   appendEvent(state, 'PROFILE_CREATED', { playerId, displayName });
-  appendEvent(state, 'TITAN_GRANTED', { titanId: starterTitanId, source: 'STARTER_GRANT' });
-  appendEvent(state, 'ACTIVE_TITAN_SET', { titanId: starterTitanId });
+  appendEvent(state, 'DEITY_GRANTED', { deityId: starterDeityId, source: 'STARTER_GRANT' });
+  appendEvent(state, 'ACTIVE_DEITY_SET', { deityId: starterDeityId });
   for (const [currency, amount] of Object.entries(DEFAULT_CURRENCIES)) {
     if (amount > 0) appendLedger(state, 'CURRENCY_CREDITED', currency, amount, 'STARTER_BALANCE', { playerId });
   }
   return snapshot(state);
 }
 
-export function grantTitan(state, titanId, { source = 'MISSION_REWARD', now = DEFAULT_CLOCK } = {}) {
+export function grantDeity(state, deityId, { source = 'MISSION_REWARD', now = DEFAULT_CLOCK } = {}) {
   const next = snapshot(state);
-  if (!next.roster.ownedTitans.some(titan => titan.titanId === titanId)) {
-    next.roster.ownedTitans.push({ titanId, source, grantedAt: now(), level: 1, xp: 0 });
-    appendEvent(next, 'TITAN_GRANTED', { titanId, source });
+  if (!next.roster.ownedDeities.some(deity => deity.deityId === deityId)) {
+    next.roster.ownedDeities.push({ deityId, source, grantedAt: now(), level: 1, xp: 0 });
+    appendEvent(next, 'DEITY_GRANTED', { deityId, source });
   }
   return snapshot(next);
 }
 
-export function setActiveTitan(state, titanId) {
+export function setActiveDeity(state, deityId) {
   const next = snapshot(state);
-  if (!next.roster.ownedTitans.some(titan => titan.titanId === titanId)) throw new Error(`Cannot activate unowned Titan: ${titanId}`);
-  next.roster.activeTitanId = titanId;
-  appendEvent(next, 'ACTIVE_TITAN_SET', { titanId });
+  if (!next.roster.ownedDeities.some(deity => deity.deityId === deityId)) throw new Error(`Cannot activate unowned deity: ${deityId}`);
+  next.roster.activeDeityId = deityId;
+  appendEvent(next, 'ACTIVE_DEITY_SET', { deityId });
   return snapshot(next);
 }
 
@@ -80,8 +80,8 @@ export function completeMission(state, missionId, reward = {}) {
   next.player.accountXp += accountXp;
   next.player.accountLevel = 1 + Math.floor(next.player.accountXp / 100);
   for (const [currency, amount] of Object.entries(reward.currencies || {})) creditCurrencyInPlace(next, currency, amount, `MISSION:${missionId}`);
-  for (const titanId of reward.titans || []) {
-    if (!next.roster.ownedTitans.some(titan => titan.titanId === titanId)) next.roster.ownedTitans.push({ titanId, source: `MISSION:${missionId}`, grantedAt: DEFAULT_CLOCK(), level: 1, xp: 0 });
+  for (const deityId of reward.titans || []) {
+    if (!next.roster.ownedDeities.some(deity => deity.deityId === deityId)) next.roster.ownedDeities.push({ deityId, source: `MISSION:${missionId}`, grantedAt: DEFAULT_CLOCK(), level: 1, xp: 0 });
   }
   appendEvent(next, 'MISSION_COMPLETED', { missionId, accountXp, reward });
   return snapshot(next);
@@ -122,8 +122,8 @@ export function validatePlatformState(state) {
   const issues = [];
   if (state?.schema !== 'TG_PLATFORM_SAVE_STATE_V1') issues.push('schema must be TG_PLATFORM_SAVE_STATE_V1');
   if (!state?.player?.playerId) issues.push('player.playerId is required');
-  if (!state?.roster?.activeTitanId) issues.push('roster.activeTitanId is required');
-  if (!state?.roster?.ownedTitans?.some(titan => titan.titanId === state.roster.activeTitanId)) issues.push('active deity must be owned');
+  if (!state?.roster?.activeDeityId) issues.push('roster.activeDeityId is required');
+  if (!state?.roster?.ownedDeities?.some(deity => deity.deityId === state.roster.activeDeityId)) issues.push('active deity must be owned');
   if (!state?.inventory?.currencies || typeof state.inventory.currencies !== 'object') issues.push('inventory.currencies is required');
   if (!Array.isArray(state?.ledger)) issues.push('ledger must be an array');
   if (!Array.isArray(state?.platformEvents)) issues.push('platformEvents must be an array');
@@ -139,8 +139,8 @@ export function platformSummary(state) {
     playerId: state.player.playerId,
     level: state.player.accountLevel,
     xp: state.player.accountXp,
-    activeTitanId: state.roster.activeTitanId,
-    ownedTitans: state.roster.ownedTitans.length,
+    activeDeityId: state.roster.activeDeityId,
+    ownedDeities: state.roster.ownedDeities.length,
     completedMissions: state.progression.completedMissions.length,
     currencies: { ...state.inventory.currencies },
     ledgerEntries: state.ledger.length,

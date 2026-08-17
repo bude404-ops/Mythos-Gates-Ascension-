@@ -7,7 +7,7 @@ export {
   regenerateEnergy,
   consumeEnergy,
   grantReward,
-  unlockTitan,
+  unlockDeity,
   purchaseItem,
   claimDailyReward
 } from '../../../game/economy-runtime.mjs';

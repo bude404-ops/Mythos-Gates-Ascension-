@@ -3,7 +3,7 @@ export {
   STANCES,
   recordTelemetryHook,
   createInitialSoloBattleState,
-  applyTitanAction,
+  applyDeityAction,
   revealEnemyIntents,
   resolveEnemyPhase,
   applyReaction,
@@ -18,10 +18,10 @@ import { createInitialSoloBattleState } from '../../../game/solo-battle-engine.m
 const readJson = path => JSON.parse(fs.readFileSync(path, 'utf8'));
 
 export function createVerticalSliceBattleState({ seed = 777 } = {}) {
-  const titans = readJson('data/titans.json');
+  const deitys = readJson('data/deitys.json');
   const creatures = readJson('data/creatures.json');
   const schema = readJson('data/solo-battle-state-schema.json');
-  const titan = titans.find(t => t.id === schema.verticalSliceDefault.starterTitanId);
+  const deity = deitys.find(t => t.id === schema.verticalSliceDefault.starterDeityId);
   const enemies = schema.verticalSliceDefault.starterEnemies.map(id => creatures.find(c => c.id === id));
   const terrain = {
     grid: { width: 7, height: 7 },
@@ -38,7 +38,7 @@ export function createVerticalSliceBattleState({ seed = 777 } = {}) {
   return createInitialSoloBattleState({
     battleId: schema.verticalSliceDefault.battleId,
     missionId: schema.verticalSliceDefault.missionId,
-    titan,
+    deity,
     enemies,
     terrain,
     objectives,

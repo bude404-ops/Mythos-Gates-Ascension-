@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {
   createInitialSoloBattleState,
-  applyTitanAction,
+  applyDeityAction,
   revealEnemyIntents,
   resolveEnemyPhase,
   applyReaction,
@@ -31,7 +31,7 @@ for (const counter of ['reactionSuccessRate','objectiveCompletionRate','momentum
   assert.ok(contract.counters[counter], `missing counter ${counter}`);
 }
 
-const titan = titans.find(t => t.id === schema.verticalSliceDefault.starterTitanId);
+const deity = titans.find(t => t.id === schema.verticalSliceDefault.starterDeityId);
 const enemyRoster = schema.verticalSliceDefault.starterEnemies.map(id => creatures.find(c => c.id === id));
 const terrain = {
   grid: { width: 7, height: 7 },
@@ -46,9 +46,9 @@ const objectives = [
   { id: 'destroy_hollow_anchor', progress: 0, requiredProgress: 1, status: 'ACTIVE' }
 ];
 
-let state = createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-TEST-001', missionId: 'TG-BATTLEFIELD-VS-001', deity: titan, enemies: enemyRoster, terrain, objectives, seed: 931 });
-state = applyTitanAction(state, { type: 'MOVE', to: { x: 2, y: 1 } });
-state = applyTitanAction(state, { type: 'FOCUS' });
+let state = createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-TEST-001', missionId: 'TG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 931 });
+state = applyDeityAction(state, { type: 'MOVE', to: { x: 2, y: 1 } });
+state = applyDeityAction(state, { type: 'FOCUS' });
 state = revealEnemyIntents(state);
 state = resolveEnemyPhase(state);
 state = resolveEnemyPhase(state);
@@ -56,8 +56,8 @@ state = resolveEnemyPhase(state);
 state = resolveEnemyPhase(state);
 state = applyTerrainTick(state);
 state = evaluateObjectives(state);
-state = applyTitanAction(state, { type: 'MOVE', to: { x: 3, y: 1 } });
-state = applyTitanAction(state, { type: 'FOCUS' });
+state = applyDeityAction(state, { type: 'MOVE', to: { x: 3, y: 1 } });
+state = applyDeityAction(state, { type: 'FOCUS' });
 state = revealEnemyIntents(state);
 state = resolveEnemyPhase(state);
 if (state.phase === 'REACTION_WINDOW') state = applyReaction(state, 'RESOLVE');
@@ -75,15 +75,15 @@ assert.ok(summary.bossPhaseFailPoints.some(p => p.phase === 'phase_1'));
 assert.ok(state.eventLog.every(row => row.seq && row.family && row.runId));
 assert.ok(state.eventLog.some(row => row.type === 'OBJECTIVE_COMPLETE'));
 
-const scriptedA = runReducerScript(createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-DETERMINISM', missionId: 'TG-BATTLEFIELD-VS-001', deity: titan, enemies: enemyRoster, terrain, objectives, seed: 11 }), [
-  { reducer: 'applyTitanAction', action: { type: 'MOVE', to: { x: 2, y: 1 } } },
-  { reducer: 'applyTitanAction', action: { type: 'FOCUS' } },
+const scriptedA = runReducerScript(createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-DETERMINISM', missionId: 'TG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 11 }), [
+  { reducer: 'applyDeityAction', action: { type: 'MOVE', to: { x: 2, y: 1 } } },
+  { reducer: 'applyDeityAction', action: { type: 'FOCUS' } },
   { reducer: 'recordBossPhaseTelemetry', bossPhase: { bossId: 'TG-CREATURE-008', phaseIndex: 2, status: 'CLEARED', reason: 'deterministic clear' } },
   { reducer: 'evaluateObjectives', objectiveEvent: { objectiveId: 'destroy_hollow_anchor', progress: 1 } }
 ]);
-const scriptedB = runReducerScript(createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-DETERMINISM', missionId: 'TG-BATTLEFIELD-VS-001', deity: titan, enemies: enemyRoster, terrain, objectives, seed: 11 }), [
-  { reducer: 'applyTitanAction', action: { type: 'MOVE', to: { x: 2, y: 1 } } },
-  { reducer: 'applyTitanAction', action: { type: 'FOCUS' } },
+const scriptedB = runReducerScript(createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-DETERMINISM', missionId: 'TG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 11 }), [
+  { reducer: 'applyDeityAction', action: { type: 'MOVE', to: { x: 2, y: 1 } } },
+  { reducer: 'applyDeityAction', action: { type: 'FOCUS' } },
   { reducer: 'recordBossPhaseTelemetry', bossPhase: { bossId: 'TG-CREATURE-008', phaseIndex: 2, status: 'CLEARED', reason: 'deterministic clear' } },
   { reducer: 'evaluateObjectives', objectiveEvent: { objectiveId: 'destroy_hollow_anchor', progress: 1 } }
 ]);

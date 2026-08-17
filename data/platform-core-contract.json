@@ -15,7 +15,7 @@
   "defaultPlayer": {
     "playerId": "TG-PLAYER-LOCAL-001",
     "displayName": "First Gatebreaker",
-    "starterTitanId": "TG-TITAN-006",
+    "starterDeityId": "TG-TITAN-006",
     "startingCurrencies": {
       "sunshards": 120,
       "gateKeys": 1,
@@ -24,8 +24,8 @@
   },
   "requiredPlatformEvents": [
     "PROFILE_CREATED",
-    "TITAN_GRANTED",
-    "ACTIVE_TITAN_SET",
+    "DEITY_GRANTED",
+    "ACTIVE_DEITY_SET",
     "MISSION_COMPLETED",
     "CURRENCY_CREDITED",
     "CURRENCY_DEBITED",

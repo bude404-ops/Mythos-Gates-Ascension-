@@ -22,7 +22,7 @@ const sourceFiles = {
   TITAN: 'data/titans.json',
   CHARACTER: 'data/characters.json',
   CREATURE: 'data/creatures.json',
-  ENEMY: 'data/creatures.json',
+  CREATURE: 'data/creatures.json',
   BATTLEFIELD: 'data/maps.json',
   GATE: 'data/realm-codex.json'
 };
@@ -45,7 +45,7 @@ if (materialLibrary.status !== 'READY_FOR_3D') fail('Material Library must be RE
 if (styleGuide.status !== 'READY_FOR_3D') fail('Visual Style Guide must be READY_FOR_3D');
 
 const requiredDirs = [
-  'Characters/Titans', 'Characters/Creatures', 'Characters/Enemies', 'Characters/NPCs',
+  'Characters/Titans', 'Characters/Creatures', 'Characters/NPCs',
   'Battlefields', 'Gates', 'Weapons', 'Armor', 'Structures', 'Props', 'Terrain',
   'Environment', 'Global_References', 'Schemas', 'Templates', 'Registry', 'Validation'
 ];
@@ -58,7 +58,6 @@ const expectedRequiredViewCounts = {
   TITAN: 22,
   CHARACTER: 22,
   CREATURE: 21,
-  ENEMY: 21,
   BATTLEFIELD: 20,
   GATE: 12
 };
@@ -117,8 +116,6 @@ for (const entry of registry.assets) {
 const requiredCounts = {
   DEITY: read('data/titans.json').length,
   CHARACTER: read('data/characters.json').length,
-  CREATURE: read('data/creatures.json').length,
-  ENEMY: read('data/creatures.json').length,
   BATTLEFIELD: read('data/maps.json').length,
   GATE: read('data/realm-codex.json').length,
   GLOBAL_REFERENCE: 3

@@ -3,7 +3,7 @@
   "version": "1.1.0-raid-economy-tuning",
   "status": "IMPLEMENTED",
   "taskId": "TG-DEV-025",
-  "activeTitanRule": "One active player deity only. Reserve support is deferred architecture, not initial gameplay.",
+  "activeDeityRule": "One active player deity only. Reserve support is deferred architecture, not initial gameplay.",
   "frameworkPrinciples": [
     "Every raid attempt is deterministic from stage profile, approach, tier, and one active deity state.",
     "Each stage has a readable tactical problem, preferred-but-not-required counterplay, and explicit carry-forward damage pressure.",
@@ -259,7 +259,7 @@
     "livePvP",
     "paidPowerShortcut",
     "hiddenRandomRolls",
-    "multiTitanControl",
+    "multiDeityControl",
     "uncappedReplayRewards"
   ],
   "economyTuning": {

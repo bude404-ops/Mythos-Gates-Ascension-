@@ -20,7 +20,6 @@
       "TITAN": 63,
       "CHARACTER": 8,
       "CREATURE": 39,
-      "ENEMY": 39,
       "BATTLEFIELD": 12,
       "GATE": 7
     },
@@ -45,7 +44,7 @@
       "purpose": "Named deities receive model briefs only after scale and battlefield clearance are proven."
     },
     {
-      "id": "ENEMY_READABILITY_PASS",
+      "id": "CREATURE_READABILITY_PASS",
       "title": "Enemy Readability Pass",
       "purpose": "Threat creatures preserve telegraphs, counterplay, and tactical readability."
     },
@@ -1460,7 +1459,7 @@
       "assetId": "TITAN_040",
       "assetType": "DEITY",
       "canonicalEntityId": "TG-TITAN-040",
-      "canonicalName": "Morrígan, Battle-Crow Fate Queen",
+      "canonicalName": "Morr\u00edgan, Battle-Crow Fate Queen",
       "faction": "Tuatha",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
@@ -1529,420 +1528,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_003",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-003",
-      "canonicalName": "Beast Realm Maneater",
-      "faction": "Beast Realms",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_003_beast-realm-maneater/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_004",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-004",
-      "canonicalName": "Forgotten Standard Bearer",
-      "faction": "Forgotten",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_004_forgotten-standard-bearer/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_010",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-010",
-      "canonicalName": "Hollow Banner Maw",
-      "faction": "Forgotten / Hollow",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_010_hollow-banner-maw/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_001",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-001",
-      "canonicalName": "Hollow Wretch",
-      "faction": "Hollow",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_001_hollow-wretch/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_006",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-006",
-      "canonicalName": "Hollow Choirling",
-      "faction": "Hollow",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_006_hollow-choirling/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_007",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-007",
-      "canonicalName": "Hollow Knell Archer",
-      "faction": "Hollow",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_007_hollow-knell-archer/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_008",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-008",
-      "canonicalName": "Hollow Oath-Eater",
-      "faction": "Hollow",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_008_hollow-oath-eater/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_009",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-009",
-      "canonicalName": "Hollow Sunless Magistrate",
-      "faction": "Hollow",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_009_hollow-sunless-magistrate/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_011",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-011",
-      "canonicalName": "Hollow Mirror Saint",
-      "faction": "Hollow",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_011_hollow-mirror-saint/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_017",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-017",
-      "canonicalName": "Hollow Memory Thief",
-      "faction": "Hollow",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_017_hollow-memory-thief/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_012",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-012",
-      "canonicalName": "Hollow Root Parasite",
-      "faction": "Hollow / Avalora Scar",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_012_hollow-root-parasite/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_015",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-015",
-      "canonicalName": "Hollow Chain Auditor",
-      "faction": "Hollow / Infernal Scar",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_015_hollow-chain-auditor/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_014",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-014",
-      "canonicalName": "Hollow Laurel Butcher",
-      "faction": "Hollow / Olympian Scar",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_014_hollow-laurel-butcher/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_013",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-013",
-      "canonicalName": "Hollow Shrine-Mask",
-      "faction": "Hollow / Shrine Scar",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_013_hollow-shrine-mask/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_018",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-018",
-      "canonicalName": "Hollow World-Wound Behemoth",
-      "faction": "Hollow Breach",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_018_hollow-world-wound-behemoth/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_005",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-005",
-      "canonicalName": "Ancient World Boss: Leviathan of the First Flood",
-      "faction": "Pre-Gate Mythic Deep",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_005_ancient-world-boss-leviathan-of-the-first-flood/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_002",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-002",
-      "canonicalName": "Gateborn Colossus",
-      "faction": "Unstable Gate",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_002_gateborn-colossus/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
-      "assetId": "ENEMY_016",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-016",
-      "canonicalName": "Hollow Gate Anchor",
-      "faction": "Unstable Gate / Hollow",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Enemy Readability Model Brief",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_016_hollow-gate-anchor/metadata.json",
-      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
-      "acceptanceCriteria": [
-        "Threat silhouette, telegraph zones, and counterplay readability are named.",
-        "Runtime AI role remains tied to creature canon."
-      ]
-    },
-    {
       "assetId": "CREATURE_003",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-003",
@@ -1950,8 +1535,8 @@
       "faction": "Beast Realms",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -1961,8 +1546,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_003_beast-realm-maneater/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -1973,8 +1558,8 @@
       "faction": "Forgotten",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -1984,8 +1569,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_004_forgotten-standard-bearer/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -1996,8 +1581,8 @@
       "faction": "Forgotten / Hollow",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2007,8 +1592,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_010_hollow-banner-maw/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2019,8 +1604,8 @@
       "faction": "Hollow",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2030,8 +1615,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_001_hollow-wretch/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2042,8 +1627,8 @@
       "faction": "Hollow",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2053,8 +1638,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_006_hollow-choirling/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2065,8 +1650,8 @@
       "faction": "Hollow",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2076,8 +1661,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_007_hollow-knell-archer/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2088,8 +1673,8 @@
       "faction": "Hollow",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2099,8 +1684,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_008_hollow-oath-eater/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2111,8 +1696,8 @@
       "faction": "Hollow",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2122,8 +1707,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_009_hollow-sunless-magistrate/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2134,8 +1719,8 @@
       "faction": "Hollow",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2145,8 +1730,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_011_hollow-mirror-saint/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2157,8 +1742,8 @@
       "faction": "Hollow",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2168,8 +1753,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_017_hollow-memory-thief/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2180,8 +1765,8 @@
       "faction": "Hollow / Avalora Scar",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2191,8 +1776,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_012_hollow-root-parasite/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2203,8 +1788,8 @@
       "faction": "Hollow / Infernal Scar",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2214,8 +1799,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_015_hollow-chain-auditor/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2226,8 +1811,8 @@
       "faction": "Hollow / Olympian Scar",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2237,8 +1822,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_014_hollow-laurel-butcher/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2249,8 +1834,8 @@
       "faction": "Hollow / Shrine Scar",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2260,8 +1845,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_013_hollow-shrine-mask/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2272,8 +1857,8 @@
       "faction": "Hollow Breach",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2283,8 +1868,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_018_hollow-world-wound-behemoth/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2295,8 +1880,8 @@
       "faction": "Pre-Gate Mythic Deep",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2306,8 +1891,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_005_ancient-world-boss-leviathan-of-the-first-flood/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2318,8 +1903,8 @@
       "faction": "Unstable Gate",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2329,8 +1914,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_002_gateborn-colossus/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2341,8 +1926,8 @@
       "faction": "Unstable Gate / Hollow",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Creature Variant Model Brief",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
       "director": "3D Asset Director",
       "dependsOn": [
         "GLOBAL_REF_001",
@@ -2352,8 +1937,8 @@
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_016_hollow-gate-anchor/metadata.json",
       "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
       "acceptanceCriteria": [
-        "Creature body plan, threat scale, and material intent are clear.",
-        "Variant must not contradict Hollow threat faction rules."
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     },
     {
@@ -2548,7 +2133,7 @@
       "faction": "Aten Ra",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -2565,30 +2150,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_019",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-019",
-      "canonicalName": "Aten Ra Sun-Seal Vigilant",
-      "faction": "Aten Ra",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_019_sun-seal-vigilant/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_020",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-020",
@@ -2596,7 +2157,7 @@
       "faction": "Aten Ra",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -2613,30 +2174,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_020",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-020",
-      "canonicalName": "Khepri Scarab Dawn Engine",
-      "faction": "Aten Ra",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_020_scarab-dawn-engine/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_021",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-021",
@@ -2644,7 +2181,7 @@
       "faction": "Aten Ra",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -2661,30 +2198,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_021",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-021",
-      "canonicalName": "Uraeus Counter-Edict Serpent",
-      "faction": "Aten Ra",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_021_uraeus-counter-edict/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_022",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-022",
@@ -2692,7 +2205,7 @@
       "faction": "Asgardian",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -2709,30 +2222,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_022",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-022",
-      "canonicalName": "Storm-Oath Rime Raider",
-      "faction": "Asgardian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_022_rime-oath-raider/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_023",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-023",
@@ -2740,7 +2229,7 @@
       "faction": "Asgardian",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -2757,30 +2246,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_023",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-023",
-      "canonicalName": "Thunder-Bridge Jotun",
-      "faction": "Asgardian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_023_thunder-bridge-jotun/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_024",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-024",
@@ -2788,7 +2253,7 @@
       "faction": "Asgardian",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -2805,30 +2270,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_024",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-024",
-      "canonicalName": "Valkyr Storm-Caller",
-      "faction": "Asgardian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_024_valkyr-storm-caller/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_025",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-025",
@@ -2836,7 +2277,7 @@
       "faction": "Olympian",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -2853,30 +2294,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_025",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-025",
-      "canonicalName": "Olympian Laurel Hoplon Guard",
-      "faction": "Olympian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_025_laurel-hoplon-guard/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_026",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-026",
@@ -2884,7 +2301,7 @@
       "faction": "Olympian",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -2901,30 +2318,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_026",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-026",
-      "canonicalName": "Oracle Glass Archer",
-      "faction": "Olympian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_026_oracle-glass-archer/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_027",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-027",
@@ -2932,7 +2325,7 @@
       "faction": "Olympian",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -2949,30 +2342,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_027",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-027",
-      "canonicalName": "Bronze Chimera Trialbeast",
-      "faction": "Olympian",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_027_bronze-chimera-trialbeast/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_028",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-028",
@@ -2980,7 +2349,7 @@
       "faction": "Kami",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -2997,30 +2366,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_028",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-028",
-      "canonicalName": "Kami Torii Foxfire Runner",
-      "faction": "Kami",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_028_torii-foxfire-runner/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_029",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-029",
@@ -3028,7 +2373,7 @@
       "faction": "Kami",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -3045,30 +2390,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_029",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-029",
-      "canonicalName": "Mirror-Lake Onryo",
-      "faction": "Kami",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_029_mirror-lake-onryo/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_030",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-030",
@@ -3076,7 +2397,7 @@
       "faction": "Kami",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -3093,30 +2414,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_030",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-030",
-      "canonicalName": "Storm Komainu Guardian",
-      "faction": "Kami",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_030_kami-storm-komainu/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_031",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-031",
@@ -3124,7 +2421,7 @@
       "faction": "Tuatha",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -3141,30 +2438,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_031",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-031",
-      "canonicalName": "Avalora Moon-Grove Stagwarden",
-      "faction": "Tuatha",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_031_moon-grove-stagwarden/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_032",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-032",
@@ -3172,7 +2445,7 @@
       "faction": "Tuatha",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -3189,30 +2462,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_032",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-032",
-      "canonicalName": "Bog Sidhe Hexer",
-      "faction": "Tuatha",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_032_bog-sidhe-hexer/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_033",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-033",
@@ -3220,7 +2469,7 @@
       "faction": "Tuatha",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -3237,30 +2486,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_033",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-033",
-      "canonicalName": "Ancient Root Ogre",
-      "faction": "Tuatha",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_033_ancient-root-ogre/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_034",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-034",
@@ -3268,7 +2493,7 @@
       "faction": "Empyrean",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -3285,30 +2510,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_034",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-034",
-      "canonicalName": "Empyrean Radiant Censor",
-      "faction": "Empyrean",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_034_radiant-censor-cherub/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_035",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-035",
@@ -3316,7 +2517,7 @@
       "faction": "Empyrean",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -3333,30 +2534,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_035",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-035",
-      "canonicalName": "Throne-Spear Adjudicator",
-      "faction": "Empyrean",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_035_throne-spear-adjudicator/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_036",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-036",
@@ -3364,7 +2541,7 @@
       "faction": "Empyrean",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -3381,30 +2558,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_036",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-036",
-      "canonicalName": "Seraphic Bastion Servitor",
-      "faction": "Empyrean",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_036_seraphic-bastion-servitor/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_037",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-037",
@@ -3412,7 +2565,7 @@
       "faction": "Infernal Dominion",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -3429,30 +2582,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_037",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-037",
-      "canonicalName": "Infernal Cinder-Chain Bailiff",
-      "faction": "Infernal Dominion",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_037_cinder-chain-bailiff/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_038",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-038",
@@ -3460,7 +2589,7 @@
       "faction": "Infernal Dominion",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -3477,30 +2606,6 @@
       ]
     },
     {
-      "assetId": "ENEMY_038",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-038",
-      "canonicalName": "Brass Hellhound Packfiend",
-      "faction": "Infernal Dominion",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_038_brass-hellhound-packfiend/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
       "assetId": "CREATURE_039",
       "assetType": "CREATURE",
       "canonicalEntityId": "TG-CREATURE-039",
@@ -3508,7 +2613,7 @@
       "faction": "Infernal Dominion",
       "status": "BLUEPRINT_IN_PROGRESS",
       "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
+      "lane": "CREATURE_READABILITY_PASS",
       "phase": "Faction Run-In Blueprint",
       "director": "3D Asset Director",
       "dependsOn": [
@@ -3517,30 +2622,6 @@
         "GLOBAL_REF_003"
       ],
       "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_039_black-iron-executor/metadata.json",
-      "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
-      "acceptanceCriteria": [
-        "Silhouette reads at mobile tactical distance.",
-        "Faction source-culture materials are clear.",
-        "Telegraphs support one deity vs many combat."
-      ]
-    },
-    {
-      "assetId": "ENEMY_039",
-      "assetType": "ENEMY",
-      "canonicalEntityId": "TG-CREATURE-039",
-      "canonicalName": "Black Iron Executor",
-      "faction": "Infernal Dominion",
-      "status": "BLUEPRINT_IN_PROGRESS",
-      "priority": "Medium",
-      "lane": "ENEMY_READABILITY_PASS",
-      "phase": "Faction Run-In Blueprint",
-      "director": "3D Asset Director",
-      "dependsOn": [
-        "GLOBAL_REF_001",
-        "GLOBAL_REF_002",
-        "GLOBAL_REF_003"
-      ],
-      "sourcePackage": "3D_Blueprints/Characters/Enemies/ENEMY_039_black-iron-executor/metadata.json",
       "handoffInstruction": "Build a mobile-readable non-playable faction run-in creature/enemy package without rewriting lore or adding squad combat.",
       "acceptanceCriteria": [
         "Silhouette reads at mobile tactical distance.",

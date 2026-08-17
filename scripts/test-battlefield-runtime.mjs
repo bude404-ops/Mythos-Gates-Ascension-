@@ -30,7 +30,7 @@ assert.ok(verticalSlice.qualityTargets.includes('boss phases'));
 assert.ok(verticalSlice.qualityTargets.includes('mobile bottom action bar'));
 assert.ok(qualityGate.id === 'TG-BATTLEFIELD-QUALITY-GATE-001');
 
-const titan = titans.find(t => t.id === verticalSlice.canonDecision.starterTitan || t.id === 'TG-TITAN-001');
+const titan = titans.find(t => t.id === verticalSlice.canonDecision.starterDeity || t.id === 'TG-TITAN-001');
 assert.equal(titan.id, 'TG-TITAN-001');
 
 const terrain = buildBattlefieldTerrain(verticalSlice);

@@ -11,7 +11,7 @@
   "description": "Stand the Valkyrie Weatherfield: Branching Law is a rebuilt Mythos Gates mission beat for Thunder-Oath Root Gauntlet through The Thunder-Oath Gate (Ruin Gate with active oath memory). One selected deity from Odin, Freyja, Frigg, Thor enters; this beat spotlights Thor as the reference silhouette while preserving player choice. The mission is the hazard step at Valkyrie Weatherfield, using storm bridge and world-root trial pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Storm-Rooted Aesir Holds is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow..",
   "lore": "Ascension canon route rewrite: Thunder-Oath Root Gauntlet is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Valkyrie Weatherfield and reveals: Why world-roots remember betrayals. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 554,
-  "encouragedTitanRoles": [
+  "encouragedDeityRoles": [
     "storm-oath breaker",
     "survivable objective holder",
     "burst or control specialist"
@@ -101,9 +101,9 @@
   "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "chapterId": "TG-F02-CH02",
   "difficulty": "Normal",
-  "activeTitanPolicy": {
-    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
-    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+  "activeDeityPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE",
+    "multiDeityCombat": "NOT_USED_IN_STANDARD_MISSIONS",
     "rosterPurpose": "Choose one deity before launch; no ally positioning or team formations in battle.",
     "squadCombat": "FORBIDDEN",
     "teamTurns": "FORBIDDEN"
@@ -121,7 +121,7 @@
       "Defender",
       "Artillery"
     ],
-    "recommendedTitanIds": [
+    "recommendedDeityIds": [
       "TG-TITAN-018",
       "TG-TITAN-010"
     ],
@@ -154,10 +154,10 @@
     "avoid": "cartoon Viking, horned helmet cosplay, clean chrome, sci-fi power armor, glowing UI runes, modern biker leather"
   },
   "updated": "2026-08-16",
-  "activeTitanCount": 1,
+  "activeDeityCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "playerControlledTitans": 1,
+    "playerControlledDeities": 1,
     "loop": [
       "Explore",
       "Encounter",

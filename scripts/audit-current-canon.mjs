@@ -42,7 +42,7 @@ const checks = [
   ['current one-active-deity heading', mini.includes('one-active-deity canon')],
   ['hollow threat layer', mini.includes('The Hollow')],
   ['current realm set', ['Aten Ra','Asgardian','Olympian','Kami','Tuatha','Empyrean','Infernal Dominion'].every(x => mini.includes(x))],
-  ['no active deity gameplay copy', !/Titan Selection|SEAL THE GATE LINE|Choose one field Titan and five battle patterns|Recommended line/.test(mini)],
+  ['no active deity gameplay copy', !/Deity Selection|SEAL THE GATE LINE|Choose one field Deity and five battle patterns|Recommended line/.test(mini)],
   ['no embedded battle pattern roster payload', !/"entityKind":"FORMATION"|"ownedUnits":\[".*unit-|"type":"battle pattern"/.test(mini)]
 ];
 

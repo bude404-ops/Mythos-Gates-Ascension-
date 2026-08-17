@@ -11,7 +11,7 @@
   "description": "Judge the Hidden-Sun Archive Antechamber: Final Approach is a rebuilt Mythos Gates mission beat for Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma’at strain). One selected deity from Aten Ra, Sutekh, Iset, Amunet enters; this beat spotlights Amunet as the reference silhouette while preserving player choice. The mission is the pre boss step at Hidden-Sun Archive Antechamber, using sacred judgment temple-road descent pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Solar Dominion of Khepra is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light..",
   "lore": "Ascension canon route rewrite: Sun-Scale Verdict Descent is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Hidden-Sun Archive Antechamber and reveals: Why the Sun-Scale Gate judges travelers before admitting them. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 660,
-  "encouragedTitanRoles": [
+  "encouragedDeityRoles": [
     "solar judgment anchor",
     "survivable objective holder",
     "burst or control specialist"
@@ -100,9 +100,9 @@
   "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "chapterId": "TG-F01-CH04",
   "difficulty": "Normal",
-  "activeTitanPolicy": {
-    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
-    "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+  "activeDeityPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE",
+    "multiDeityCombat": "NOT_USED_IN_STANDARD_MISSIONS",
     "rosterPurpose": "Choose one deity before launch; no ally positioning or team formations in battle.",
     "squadCombat": "FORBIDDEN",
     "teamTurns": "FORBIDDEN"
@@ -120,7 +120,7 @@
       "Defender",
       "Artillery"
     ],
-    "recommendedTitanIds": [
+    "recommendedDeityIds": [
       "TG-TITAN-006",
       "TG-TITAN-009"
     ],
@@ -153,10 +153,10 @@
     "avoid": "tourist pharaoh costume, literal pyramid body, sarcophagus robot, readable glyph text, generic desert temple, plain gold statues"
   },
   "updated": "2026-08-16",
-  "activeTitanCount": 1,
+  "activeDeityCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "playerControlledTitans": 1,
+    "playerControlledDeities": 1,
     "loop": [
       "Explore",
       "Encounter",

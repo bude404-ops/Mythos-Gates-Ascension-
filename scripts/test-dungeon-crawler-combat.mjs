@@ -1,4 +1,4 @@
-import { createInitialSoloBattleState, enterExploration, triggerEncounter, applyTitanAction, 
+import { createInitialSoloBattleState, enterExploration, triggerEncounter, applyDeityAction, 
          revealEnemyIntents, resolveEnemyPhase, applyReaction, applyTerrainTick,
          evaluateObjectives, transitionToNextZone, PHASES, runReducerScript } from '../game/solo-battle-engine.mjs';
 import fs from 'node:fs';
@@ -11,11 +11,11 @@ let passed = 0, failed = 0;
 function assert(cond, msg) { if (cond) passed++; else { failed++; console.error(`FAIL: ${msg}`); } }
 
 // 1. EXPLORATION phase
-const titan = titans[0];
+const deity = titans[0];
 const mission = missions[0];
 let state = createInitialSoloBattleState({
   battleId: 'test-001', missionId: mission.id,
-  deity: { id: titan.id, name: titan.name, role: titan.role, stats: titan.stats },
+  deity: { id: deity.id, name: deity.name, role: deity.role, stats: deity.stats },
   enemies: [],
   terrain: { spaces: [{ position: {x:1,y:1}, type: 'FLOOR', illuminated: true }] },
   objectives: [{ id: 'obj1', type: 'CLEAR', status: 'PENDING' }],
@@ -33,11 +33,11 @@ assert(state.phase === PHASES.PLAYER, 'Should enter PLAYER phase after encounter
 assert(state.enemies.length === enemyData.length, 'Enemies populated');
 
 // 3. FOCUS action
-state = applyTitanAction(state, { type: 'FOCUS' });
+state = applyDeityAction(state, { type: 'FOCUS' });
 assert(state.resources.momentum > 0, 'FOCUS generates momentum');
 
 // 4. STANCE_SHIFT
-state = applyTitanAction(state, { type: 'STANCE_SHIFT', stance: 'ASSAULT' });
+state = applyDeityAction(state, { type: 'STANCE_SHIFT', stance: 'ASSAULT' });
 assert(state.deity.stance === 'ASSAULT', 'Stance shift to ASSAULT');
 
 // 5. Enemy phase
@@ -64,7 +64,7 @@ assert(state.round === 1, 'Round reset on zone transition');
 // 9. Full script execution
 const state2 = createInitialSoloBattleState({
   battleId: 'test-002', missionId: 'TG-F01-C01-M01',
-  deity: { id: titan.id, name: titan.name, role: titan.role, stats: titan.stats },
+  deity: { id: deity.id, name: deity.name, role: deity.role, stats: deity.stats },
   enemies: [],
   terrain: { spaces: [{ position: {x:1,y:1}, type: 'FLOOR', illuminated: true }] },
   objectives: [{ id: 'obj1', type: 'CLEAR', status: 'PENDING' }],
@@ -74,8 +74,8 @@ try {
   const finalState = runReducerScript(state2, [
     { reducer: 'enterExploration' },
     { reducer: 'triggerEncounter', encounter: { enemies: enemyData, zoneName: 'Test' } },
-    { reducer: 'applyTitanAction', action: { type: 'FOCUS' } },
-    { reducer: 'applyTitanAction', action: { type: 'STANCE_SHIFT', stance: 'ASSAULT' } },
+    { reducer: 'applyDeityAction', action: { type: 'FOCUS' } },
+    { reducer: 'applyDeityAction', action: { type: 'STANCE_SHIFT', stance: 'ASSAULT' } },
     { reducer: 'revealEnemyIntents' },
   ]);
   assert(true, 'Script execution succeeds');

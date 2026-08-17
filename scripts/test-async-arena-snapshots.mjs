@@ -16,7 +16,7 @@ assert.equal(arena.status, 'IMPLEMENTED');
 assert.equal(arena.mode, 'ASYNCHRONOUS');
 assert.equal(arena.livePvpImplemented, false);
 assert.equal(arena.standardSquadSize, 1);
-assert.equal(arena.snapshotRules.oneActiveDefenderTitan, true);
+assert.equal(arena.snapshotRules.oneActiveDefenderDeity, true);
 assert.equal(arena.snapshotRules.checksumRequired, true);
 assert.equal(arena.snapshotRules.noFabricatedProgression, true);
 assert.equal(arena.defenseSnapshots.length, arena.sampleOpponents.length);
@@ -26,8 +26,8 @@ assert.equal(dashboard.systemReadiness.livePvp, 'Not Implemented');
 
 for (const snap of arena.defenseSnapshots) {
   for (const field of arena.defenseSnapshotFields) assert.ok(snap[field] !== undefined && snap[field] !== null && snap[field] !== '', `${snap.snapshotId} missing ${field}`);
-  assert.ok(titanIds.has(snap.sourceTitanId), `${snap.snapshotId} invalid Titan`);
-  assert.ok(soloIds.has(snap.sourceTitanId), `${snap.snapshotId} missing solo redesign`);
+  assert.ok(titanIds.has(snap.sourceDeityId), `${snap.snapshotId} invalid Deity`);
+  assert.ok(soloIds.has(snap.sourceDeityId), `${snap.snapshotId} missing solo redesign`);
   assert.equal(snap.stanceLoadout.length, 3);
   assert.ok(snap.stanceLoadout.includes('Ascendant'));
   assert.ok(snap.reactionLoadout.length >= 2);

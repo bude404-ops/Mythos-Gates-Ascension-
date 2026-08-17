@@ -1,18 +1,18 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { loadOneTitanVsManyCombat, validateOneTitanVsManyCombat, summarizeOneTitanVsMany, PRIMARY_ONE_TITAN_RULE, REQUIRED_PROTOTYPE_BEATS } from '../src/combat/one-deity-vs-many.mjs';
+import { loadOneDeityVsManyCombat, validateOneDeityVsManyCombat, summarizeOneDeityVsMany, PRIMARY_ONE_DEITY_RULE, REQUIRED_PROTOTYPE_BEATS } from '../src/combat/one-deity-vs-many.mjs';
 
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
-const contract = loadOneTitanVsManyCombat();
+const contract = loadOneDeityVsManyCombat();
 const mission = read('data/mission-registry.json').find(row => row.id === contract.firstPrototype.sourceMissionId);
 const mobileArchitecture = read('engine/unreal/mobile-first-architecture.json');
 const firstTemplate = read('engine/unreal/first-mission-zone-template.json');
-const validation = validateOneTitanVsManyCombat(contract, mission, mobileArchitecture, firstTemplate);
+const validation = validateOneDeityVsManyCombat(contract, mission, mobileArchitecture, firstTemplate);
 assert.equal(validation.ok, true, validation.issues.join('; '));
-assert.equal(contract.primaryRule, PRIMARY_ONE_TITAN_RULE);
+assert.equal(contract.primaryRule, PRIMARY_ONE_DEITY_RULE);
 assert.equal(mission.activeTitanCount, 1);
 assert.equal(mission.teamSize, 1);
-assert.equal(firstTemplate.combatIdentity.playerControlledTitans, 1);
+assert.equal(firstTemplate.combatIdentity.playerControlledDeities, 1);
 assert.ok(contract.forbiddenSystems.includes('squad combat'));
 assert.ok(contract.forbiddenSystems.includes('team turns'));
 assert.ok(contract.enemyGroupDesign.antiPattern.includes('health pools'));
@@ -20,7 +20,7 @@ for (const beat of REQUIRED_PROTOTYPE_BEATS) assert.ok(contract.firstPrototype.r
 assert.deepEqual(contract.firstPrototype.progressionFeelTest, ['New Deity', 'Developed Deity', 'Highly Developed Deity']);
 const early = contract.scalingBands.find(band => band.band === 'EARLY');
 assert.deepEqual(early.enemyCountRange, [4, 6]);
-const summary = summarizeOneTitanVsMany(contract, firstTemplate);
-assert.equal(summary.rule, PRIMARY_ONE_TITAN_RULE);
+const summary = summarizeOneDeityVsMany(contract, firstTemplate);
+assert.equal(summary.rule, PRIMARY_ONE_DEITY_RULE);
 assert.equal(summary.firstMission, 'TG-F01-C01-M01');
-console.log(JSON.stringify({ ok: true, oneTitanVsManyCombatContract: 'PASS', summary }, null, 2));
+console.log(JSON.stringify({ ok: true, oneDeityVsManyCombatContract: 'PASS', summary }, null, 2));

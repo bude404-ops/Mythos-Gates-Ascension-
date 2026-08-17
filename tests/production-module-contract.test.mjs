@@ -17,7 +17,7 @@ const energy = economy.consumeEnergy(player, 'campaign');
 assert.equal(energy.ok, true);
 assert.ok(summarizeEconomyState(player).energy.amount < summarizeEconomyState(player).energy.max);
 
-let platformState = platform.createPlatformProfile({ playerId: 'TG-QA-PLAYER', starterTitanId: 'TG-TITAN-003' });
+let platformState = platform.createPlatformProfile({ playerId: 'TG-QA-PLAYER', starterDeityId: 'TG-TITAN-003' });
 platformState = platform.completeMission(platformState, 'TG-F01-C01-M01', { accountXp: 20, currencies: { sunshards: 10 } });
 assert.equal(platform.validatePlatformState(platformState).ok, true);
 assert.equal(platform.platformSummary(platformState).completedMissions, 1);
@@ -27,8 +27,8 @@ const lookup = buildContentLookup(dataset);
 assert.ok(lookup.titanById.has('TG-TITAN-001'));
 assert.ok(lookup.creatureById.size >= 1);
 
-const titanSchema = JSON.parse(fs.readFileSync('schemas/titan.schema.json', 'utf8'));
+const titanSchema = JSON.parse(fs.readFileSync('schemas/deity.schema.json', 'utf8'));
 assert.equal(validateContract(dataset.titans[0], titanSchema, 'firstTitan').ok, true);
 assert.ok(productionGateManifest.sourceModules.every(file => fs.existsSync(file)));
 
-console.log(JSON.stringify({ ok: true, productionModuleContract: 'PASS', modules: productionGateManifest.sourceModules.length, titan: summary.titan.id }, null, 2));
+console.log(JSON.stringify({ ok: true, productionModuleContract: 'PASS', modules: productionGateManifest.sourceModules.length, deity: summary.deity.id }, null, 2));

@@ -5,7 +5,7 @@ const asText = (v) => JSON.stringify(v);
 const includesAny = (s, arr) => arr.some((x) => s.toLowerCase().includes(x.toLowerCase()));
 const missingTerms = (s, arr) => arr.filter((x) => !s.toLowerCase().includes(x.toLowerCase()));
 const sourcePattern = /source culture|source-culture|source cultures|humans later copied|Earth legend is (only )?the echo|Earth mythology is (only )?the later echo|Realm culture is the source|original source/i;
-const oldScalePattern = /\b(one-active-deity|one active deity?|three-Titan|three Titans?)\b/i;
+const oldScalePattern = /\b(one-active-deity|one active deity?|three-Deity|three deities?)\b/i;
 const staleGenericPattern = /Low-tier gear component|not rewriting established Canon|distant pyramids|color language|museum version|generic RPG set dressing without faction/i;
 
 const factionCanon = {
@@ -120,14 +120,14 @@ for (const c of Object.values(factionCanon)) {
   requireTerms(`${c.name} visual bible`, visualBible, [...c.realm, ...c.anchors, ...c.gear], 5);
 }
 
-// Titans, prompts, solo roster, and balance.
+// Deities, prompts, solo roster, and balance.
 for (const t of titans) {
   const c = factionCanon[t.factionId];
   if (!c) { issues.push(`${t.id}: unknown faction ${t.factionId}`); continue; }
-  requireTerms(`${t.id} titan`, t, [...c.anchors, ...c.gear], 5);
-  requireSource(`${t.id} titan`, t);
-  forbid(`${t.id} titan`, t, staleGenericPattern, 'stale generic language');
-  forbid(`${t.id} titan`, t, oldScalePattern, 'old scale language');
+  requireTerms(`${t.id} deity`, t, [...c.anchors, ...c.gear], 5);
+  requireSource(`${t.id} deity`, t);
+  forbid(`${t.id} deity`, t, staleGenericPattern, 'stale generic language');
+  forbid(`${t.id} deity`, t, oldScalePattern, 'old scale language');
   const prompt = artPrompts.find((p) => p.entityId === t.id || p.id?.includes(t.id));
   if (!prompt) issues.push(`${t.id}: missing art prompt`);
   else {

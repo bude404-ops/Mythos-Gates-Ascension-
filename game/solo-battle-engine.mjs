@@ -212,7 +212,7 @@ export function createInitialSoloBattleState({ battleId, missionId, deity, enemi
   return state;
 }
 
-export function applyTitanAction(inputState, action) {
+export function applyDeityAction(inputState, action) {
   const state = clone(inputState);
   if (state.phase !== PHASES.PLAYER) throw new Error(`Deity action blocked during ${state.phase}`);
   if (action.type === 'MOVE') {
@@ -485,7 +485,7 @@ export function runReducerScript(initialState, actions) {
     if (action.reducer === 'enterExploration') return enterExploration(state);
     if (action.reducer === 'triggerEncounter') return triggerEncounter(state, action.encounter);
     if (action.reducer === 'transitionToNextZone') return transitionToNextZone(state, action.transition);
-    if (action.reducer === 'applyTitanAction') return applyTitanAction(state, action.action);
+    if (action.reducer === 'applyDeityAction') return applyDeityAction(state, action.action);
     if (action.reducer === 'revealEnemyIntents') return revealEnemyIntents(state);
     if (action.reducer === 'resolveEnemyPhase') return resolveEnemyPhase(state);
     if (action.reducer === 'applyReaction') return applyReaction(state, action.choice);
