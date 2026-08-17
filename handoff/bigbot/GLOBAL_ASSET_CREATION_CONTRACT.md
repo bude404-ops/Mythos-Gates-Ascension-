@@ -1,7 +1,7 @@
 # Big Bot Global Asset Creation Contract
 
 ## Purpose
-This contract governs every asset Big Bot creates for Titan Gates: Ascension. It applies to battlefields, artwork, Titans, character models, creatures, enemies, bosses, Gates, props, structures, VFX references, and mission thumbnails.
+This contract governs every asset Big Bot creates for Mythos Gates: Ascension. It applies to battlefields, artwork, Titans, character models, creatures, enemies, bosses, Gates, props, structures, VFX references, and mission thumbnails.
 
 Big Bot must create canon-locked, mission-aware, scale-correct assets. Big Bot must not create random cool assets that are disconnected from gameplay, mission specs, asset IDs, or the Master Scale Reference.
 
@@ -258,7 +258,7 @@ Before generating any faction-linked Deity, NPC, creature, battlefield, faction 
 For Aten Ra assets, do not design "Egyptian-inspired costumes." Treat the Solar Dominion of Khepra as the older source culture that human Egyptian religion, crowns, pylons, solar discs, scarabs, ankhs, funerary art, and animal-divinity later copied imperfectly. Each Aten Ra asset must show the specific myth function behind its design: Ra/Aten solar authority, Ma’at balance, Khepri renewal, Sutekh desert defense, Iset restoration, Maahes lion protection, or Amunet hidden power.
 
 ### Cross-Faction Source-Culture Rule
-For every Titan Gates faction, do not design themed costumes based on Earth mythology. Each Realm is the older extradimensional source culture that human civilizations later copied through Gate dreams, ruins, survivor memory, and distorted religious/mythic echoes. Every asset must show the specific source function behind its traits, armor, realm, posture, materials, and hazards.
+For every Mythos Gates faction, do not design themed costumes based on Earth mythology. Each Realm is the older extradimensional source culture that human civilizations later copied through Gate dreams, ruins, survivor memory, and distorted religious/mythic echoes. Every asset must show the specific source function behind its traits, armor, realm, posture, materials, and hazards.
 
 ### Source-Culture Weapons, Gear, and Ability Rule
 Every weapon, armor body, resonance core, basic attack, technique, signature, reaction, execution, passive, and Divine Ascension must match the owning faction's source mythology. Reject generic names or visuals such as plain Implement, Realmplate, Charge Core, Blow, generic magic blast, robot weapon, or costume prop unless the faction canon explicitly transforms them into a source-culture artifact.

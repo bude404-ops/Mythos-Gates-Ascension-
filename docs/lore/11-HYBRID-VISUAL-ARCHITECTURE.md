@@ -7,12 +7,12 @@
 
 ## Non-Negotiable Rule
 
-Titan Gates: Ascension is intentionally hybrid.
+Mythos Gates: Ascension is intentionally hybrid.
 
 - **2D sprites** are used for player Titans, player characters, enemy characters, enemy deities, battlefield units, and combatants.
 - **3D environments** are used for campaign maps, Realms, locations, exploration spaces, tactical battle environments where appropriate, campaign progression spaces, and major environmental scenes.
 - Battlefield characters must **not** become 3D models just because the environment is 3D.
-- Realm travel is handled through **Titan Gates / Stargates**, not futuristic craft or sci-fi spacecraft.
+- Realm travel is handled through **Mythos Gates / Stargates**, not futuristic craft or sci-fi spacecraft.
 
 ## Campaign Map Architecture
 

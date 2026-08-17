@@ -1,6 +1,6 @@
 # Unity Adapter Notes
 
-Unity should consume validated Titan Gates records as ScriptableObjects and import metadata.
+Unity should consume validated Mythos Gates records as ScriptableObjects and import metadata.
 
 ## First mappings
 

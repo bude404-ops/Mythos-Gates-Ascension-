@@ -2,7 +2,7 @@
 
 ## Ascension Collapse
 
-The catastrophic event that shattered the old dimensional order, broke ancient Gate roads, damaged Realm civilizations, destabilized Titan Gates, and awakened dormant forces.
+The catastrophic event that shattered the old dimensional order, broke ancient Gate roads, damaged Realm civilizations, destabilized Mythos Gates, and awakened dormant forces.
 
 ## Ancient World Boss
 
@@ -26,7 +26,7 @@ Ancient beings, broken gods, lost warriors, ruined civilizations, relic guardian
 
 ## Gateborn
 
-Entities created, transformed, or mutated by unstable Titan Gates.
+Entities created, transformed, or mutated by unstable Mythos Gates.
 
 ## Hollow
 
@@ -46,12 +46,12 @@ An extradimensional civilization-domain shaped by mythic law, history, symbols, 
 
 ## Reapers
 
-Legacy lore residue from the older Titan Gates / Ascension format. If retained, Reapers should be rare post-Collapse oath remnants, not the game's core identity or a playable faction.
+Legacy lore residue from the older Mythos Gates / Ascension format. If retained, Reapers should be rare post-Collapse oath remnants, not the game's core identity or a playable faction.
 
 ## Titan
 
 A colossal extradimensional warform shaped by the laws, memories, symbols, materials, wounds, and sacred powers of its home Realm.
 
-## Titan Gate
+## Mythos Gate
 
 An ancient dimensional gateway connecting Realms, ruins, sealed dimensions, battlefield anomalies, and campaign threats.

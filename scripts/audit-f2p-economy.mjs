@@ -9,7 +9,7 @@ const commandHub = read('data/command-hub-contract.json');
 const rewardSystem = read('data/reward-system.json');
 const season = read('data/season-system.json');
 const runtime = fs.readFileSync('game/economy-runtime.mjs', 'utf8');
-const panel = fs.readFileSync('mini-app/titan-gates-ascension.html', 'utf8');
+const panel = fs.readFileSync('mini-app/mythos-gates-ascension.html', 'utf8');
 const issues = [];
 const warnings = [];
 const push = (arr, code, detail) => arr.push({ code, detail });

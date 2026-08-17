@@ -1,6 +1,6 @@
 # Data Migration and Canon Versioning Policy
 
-Titan Gates canon is an engineered asset. It must move forward with explicit version intent, traceable migration records, and repeatable validation.
+Mythos Gates canon is an engineered asset. It must move forward with explicit version intent, traceable migration records, and repeatable validation.
 
 ## Canon version format
 

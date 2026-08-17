@@ -2,11 +2,11 @@
 
 ## Canon Function
 
-**The First Reopening** is the first modern breach in the old certainty. It teaches the player what the world is: not a future war, not caped heroes, but extradimensional mythological civilizations returning through damaged Titan Gates.
+**The First Reopening** is the first modern breach in the old certainty. It teaches the player what the world is: not a future war, not caped heroes, but extradimensional mythological civilizations returning through damaged Mythos Gates.
 
 This campaign exists to establish four laws:
 
-1. Titan Gates are sacred infrastructure, not machines.
+1. Mythos Gates are sacred infrastructure, not machines.
 2. Titans are the playable force; NPCs guide, warn, interpret, or oppose.
 3. The Hollow is frightening because it does not simply kill — it empties identity.
 4. Every Realm response to the Reopening is rational from that Realm's own survival philosophy.

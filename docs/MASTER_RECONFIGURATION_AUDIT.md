@@ -1,14 +1,14 @@
-# Titan Gates: Ascension — Master Reconfiguration Audit
+# Mythos Gates: Ascension — Master Reconfiguration Audit
 
 ## Scope
 
-Audit and canon-safe reconfiguration for the approved direction: mythological, extradimensional, single-character, dungeon-crawler, turn-based tactical RPG. The existing Titan Gates universe, Lore Codex, seven factions, Realms, campaign architecture, combat systems, and art style remain the source of truth.
+Audit and canon-safe reconfiguration for the approved direction: mythological, extradimensional, single-character, dungeon-crawler, turn-based tactical RPG. The existing Mythos Gates universe, Lore Codex, seven factions, Realms, campaign architecture, combat systems, and art style remain the source of truth.
 
 ## Gate Canon Read
 
 Established Gate canon preserved:
 
-- Titan Gates are ancient dimensional gateways connecting powerful Realms.
+- Mythos Gates are ancient dimensional gateways connecting powerful Realms.
 - They are not technology; they are ancient reality-structures: threshold, wound, sacred mechanism, and living law.
 - They connect Realms, sealed ruins, forgotten roads, relics, powers, memories, and wars.
 - The Ascension Collapse shattered the old dimensional order.
@@ -18,7 +18,7 @@ Established Gate canon preserved:
 
 NEW CANON EXTENSION:
 
-- Some Titan Gate routes now function as dungeon-crawler paths through established Gate roads, ruin gates, distortion gates, sealed gates, wound gates, sacred Realm locations, corrupted regions, monster territories, and boss arenas.
+- Some Mythos Gate routes now function as dungeon-crawler paths through established Gate roads, ruin gates, distortion gates, sealed gates, wound gates, sacred Realm locations, corrupted regions, monster territories, and boss arenas.
 - This extends existing Gate use; it does not replace Gate canon.
 
 ## 1. Existing Systems That Already Fit
@@ -27,7 +27,7 @@ NEW CANON EXTENSION:
 - Realm Codex already defines extradimensional mythological civilizations rather than planets or sci-fi cultures.
 - One-deity combat systems already support one active player-controlled divine character versus multiple enemies.
 - Enemy, creature, Hollow, boss, and campaign threat systems already support one-god-vs-many encounter pressure.
-- Titan Gates already serve as major mission sites, boss arenas, and inter-Realm conflict engines.
+- Mythos Gates already serve as major mission sites, boss arenas, and inter-Realm conflict engines.
 - Approved visual style already fits premium mobile tactical RPG, stylized realism, painterly material detail, dramatic lighting, and strong silhouettes.
 - UE5 dungeon-crawler framework already existed and validates.
 
@@ -43,7 +43,7 @@ NEW CANON EXTENSION:
 Changed:
 
 - Canon Lock now states playable characters are actual gods and goddesses, not Titans.
-- Titan Gates page now preserves established Gate canon and integrates dungeon-crawler routes as a NEW CANON EXTENSION.
+- Mythos Gates page now preserves established Gate canon and integrates dungeon-crawler routes as a NEW CANON EXTENSION.
 - Old playable roster lore page was reframed as Playable Deities while preserving the filename for compatibility.
 
 Still recommended:
@@ -57,7 +57,7 @@ Changed/aligned:
 
 - Core identity now points to single-deity tactical dungeon crawling.
 - Player controls one god or goddess at a time.
-- Dungeon routes are entered through Titan Gate systems.
+- Dungeon routes are entered through Mythos Gate systems.
 - One-deity-vs-many combat remains the center.
 
 Still recommended:
@@ -89,7 +89,7 @@ Still recommended:
 Changed:
 
 - UE5 dungeon-crawler framework purpose now states single-deity dungeon-crawler tactical RPG.
-- Dungeon routes are canonically tied to established Titan Gate roads and Gate states.
+- Dungeon routes are canonically tied to established Mythos Gate roads and Gate states.
 
 Still recommended:
 
@@ -135,7 +135,7 @@ Still recommended:
 Changed:
 
 - Player-facing UI uses Deities, Deity Profile, Deity Roster, Divine Collection, Divine Gear, Divine Stats, Divine Level, and Divine Ascension where applicable.
-- Titan remains preserved for Titan Gates/title/lore.
+- Titan remains preserved for Mythos Gates/title/lore.
 
 Still recommended:
 
@@ -145,7 +145,7 @@ Still recommended:
 
 No replacement Gate lore was introduced in this pass.
 
-One previous risk was corrected: an invented simple explanation for why the Gates are called Titan Gates was replaced with a source-of-truth protection rule. The Lore Codex still keeps the Gates mysterious and does not define one universal named creator.
+One previous risk was corrected: an invented simple explanation for why the Gates are called Mythos Gates was replaced with a source-of-truth protection rule. The Lore Codex still keeps the Gates mysterious and does not define one universal named creator.
 
 ## 12. Recommended Fixes
 
@@ -158,13 +158,13 @@ One previous risk was corrected: an invented simple explanation for why the Gate
 
 ## 13. Highest-Priority Next Task
 
-Create the production dungeon-route registry: one canon-safe dungeon template per Realm, each connected to an existing Titan Gate, Realm landmark, enemy ecology, hazard set, room graph, treasure logic, elite encounter, boss chamber, and lore reveal chain.
+Create the production dungeon-route registry: one canon-safe dungeon template per Realm, each connected to an existing Mythos Gate, Realm landmark, enemy ecology, hazard set, room graph, treasure logic, elite encounter, boss chamber, and lore reveal chain.
 
 ## Final Classification
 
 Automated classification recorded zero hits for the explicit banned playable-character phrases. Remaining Titan references are classified as:
 
-- Titan Gates/title/phenomenon
+- Mythos Gates/title/phenomenon
 - Ancient Titan concept lore/technical scale
 - Legacy internal IDs/schema/routes/API
 - Legacy internal validator/test naming

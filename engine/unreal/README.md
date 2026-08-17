@@ -1,6 +1,6 @@
 # Unreal Engine 5 Mobile-First Target Architecture
 
-Titan Gates: Ascension is an Unreal Engine 5-first, mobile-baseline Titan-scale dungeon-crawler tactical RPG target. Unreal consumes validated canon; it does not invent canon.
+Mythos Gates: Ascension is an Unreal Engine 5-first, mobile-baseline Titan-scale dungeon-crawler tactical RPG target. Unreal consumes validated canon; it does not invent canon.
 
 ## Primary target
 

@@ -1,7 +1,7 @@
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 
-const message = process.argv.slice(2).join(' ').trim() || process.env.TG_COMMIT_MESSAGE || 'chore: sync approved titan gates changes';
+const message = process.argv.slice(2).join(' ').trim() || process.env.TG_COMMIT_MESSAGE || 'chore: sync approved mythos gates changes';
 if (/^(update|stuff|changes|test)$/i.test(message)) {
   console.error('Refusing meaningless commit message. Use a specific message.');
   process.exit(1);

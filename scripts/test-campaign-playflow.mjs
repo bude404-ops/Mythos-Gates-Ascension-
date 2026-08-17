@@ -56,7 +56,7 @@ for (const route of contract.flow) {
 for (const token of ['createCommandHubRuntime','function campaigns','function missionScreen','function battleScreen','openCampaign(factionId)','launchBattle(){','ENTER BATTLE','Campaign Gates','missionTacticalBrief','tacticalProfileForMission','Tactical Read','Favored Not Required','Ownership Lock']) {
   assert.ok(hubRuntime.includes(token), `hub runtime missing ${token}`);
 }
-for (const token of ['command-hub-runtime.mjs','Command Hub','OPEN THE TITAN GATE']) {
+for (const token of ['command-hub-runtime.mjs','Command Hub','OPEN THE MYTHOS GATE']) {
   assert.ok(game.includes(token), `game missing ${token}`);
 }
 assert.equal(tasks.find(t => t.id === 'TG-DEV-006')?.status, 'COMPLETED');

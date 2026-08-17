@@ -6,7 +6,7 @@
 
 ## Source of Truth
 
-GitHub `main` is the authoritative persisted state for Titan Gates. Temporary browser, preview, runtime, or local development state is never enough.
+GitHub `main` is the authoritative persisted state for Mythos Gates. Temporary browser, preview, runtime, or local development state is never enough.
 
 ## Required Pipeline
 

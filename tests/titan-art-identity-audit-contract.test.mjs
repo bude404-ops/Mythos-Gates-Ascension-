@@ -40,9 +40,9 @@ for (const entry of audit.entries) {
   assert.equal(prompt.artIdentityAuditStatus, entry.status);
   assert.ok(prompt.prompt.startsWith(`Create a premium playable character depiction of ${titan.name},`), `${entry.titanId}: prompt missing required deity opening`);
   assert.ok(prompt.prompt.includes('actual'), `${entry.titanId}: prompt missing actual mythology identity`);
-  assert.ok(prompt.prompt.includes('Titan Gates universe'), `${entry.titanId}: prompt missing Titan Gates universe lock`);
-  assert.ok(prompt.prompt.includes('not an ancient Titan Gates giant'), `${entry.titanId}: prompt missing anti-Titan playable guard`);
-  assert.ok(prompt.prompt.includes('approved Titan Gates premium stylized tactical RPG aesthetic'), `${entry.titanId}: prompt missing approved style lock`);
+  assert.ok(prompt.prompt.includes('Mythos Gates universe'), `${entry.titanId}: prompt missing Mythos Gates universe lock`);
+  assert.ok(prompt.prompt.includes('not an ancient Mythos Gates giant'), `${entry.titanId}: prompt missing anti-Titan playable guard`);
+  assert.ok(prompt.prompt.includes('approved Mythos Gates premium stylized tactical RPG aesthetic'), `${entry.titanId}: prompt missing approved style lock`);
   assert.ok(prompt.negativePrompt.includes('same-face reuse'), `${entry.titanId}: negative prompt missing anti-clone guard`);
   assert.ok(prompt.negativePrompt.includes('generic faction armor'), `${entry.titanId}: negative prompt missing generic armor guard`);
   assert.ok(titan.titanArtDna?.signatureWeapon, `${entry.titanId}: missing art DNA weapon`);

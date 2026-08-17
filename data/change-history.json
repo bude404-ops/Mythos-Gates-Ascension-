@@ -89,7 +89,7 @@
       "version": "1.0.1-pages-workflow-template",
       "date": "2026-08-12T16:15:53Z",
       "title": "GitHub Pages Workflow Template Staged",
-      "summary": "Prepared a GitHub Actions Pages workflow template that validates, builds, checks index freshness, runs visual smoke, scans secrets, packages dist, and deploys Titan Gates static output; activation is blocked until a workflow-scoped GitHub credential is available.",
+      "summary": "Prepared a GitHub Actions Pages workflow template that validates, builds, checks index freshness, runs visual smoke, scans secrets, packages dist, and deploys Mythos Gates static output; activation is blocked until a workflow-scoped GitHub credential is available.",
       "status": "READY_BLOCKED_BY_WORKFLOW_SCOPE",
       "artifacts": [
         "dev/github-pages-workflow-template.yml",
@@ -201,7 +201,7 @@
     },
     {
       "version": "0.7.1",
-      "summary": "Surfaced the latest Titan Gates Mini App export in the GitHub index so the public page shows the playable campaign shell, faction copy-paste canon packs, Codex copy buttons, Art Needs, simulator, and validation tools.",
+      "summary": "Surfaced the latest Mythos Gates Mini App export in the GitHub index so the public page shows the playable campaign shell, faction copy-paste canon packs, Codex copy buttons, Art Needs, simulator, and validation tools.",
       "commit": "LOCAL_COMMIT",
       "time": "2026-08-11T03:00:00Z",
       "status": "LOCAL_READY",
@@ -562,7 +562,7 @@
       "title": "Battlefield and character visual pass",
       "summary": "Upgraded the playable Game tab with faction-toned battlefield boards, Titan portrait cards, enemy threat tokens, NPC visual cards, and mission art prompt staging.",
       "files": [
-        "mini-app/titan-gates-ascension.html",
+        "mini-app/mythos-gates-ascension.html",
         "data/visual-screens.json",
         "data/index.json"
       ],
@@ -571,10 +571,10 @@
     {
       "id": "TG-CHANGE-PLAYABLE-ALL-FILES-GAME-001",
       "date": "2026-08-11",
-      "title": "Playable all-files Titan Gates game layer",
+      "title": "Playable all-files Mythos Gates game layer",
       "summary": "Added a playable Game tab consuming the live data files for factions, Titans, missions, dialogue, art packages, maps, creatures, NPCs, realm codex, progression, rewards, and quality gates.",
       "files": [
-        "mini-app/titan-gates-ascension.html",
+        "mini-app/mythos-gates-ascension.html",
         "data/index.json"
       ],
       "status": "published"

@@ -36,7 +36,7 @@ function walk(dir) {
 
 walk(repo);
 
-const mini = fs.readFileSync(path.join(repo, 'dist/mini-app/titan-gates-ascension.html'), 'utf8');
+const mini = fs.readFileSync(path.join(repo, 'dist/mini-app/mythos-gates-ascension.html'), 'utf8');
 const checks = [
   ['live lore sweep app', mini.includes('Lore Continuity Sweep')],
   ['current one-active-deity heading', mini.includes('one-active-deity canon')],
@@ -47,7 +47,7 @@ const checks = [
 ];
 
 for (const [name, ok] of checks) {
-  if (!ok) findings.push({ file: 'dist/mini-app/titan-gates-ascension.html', term: `failed check: ${name}`, count: 1 });
+  if (!ok) findings.push({ file: 'dist/mini-app/mythos-gates-ascension.html', term: `failed check: ${name}`, count: 1 });
 }
 
 if (findings.length) {

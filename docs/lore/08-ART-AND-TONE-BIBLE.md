@@ -41,7 +41,7 @@ Every character should read as an extradimensional being powerful enough to beco
 
 ## Writing Tone
 
-Titans Gate should feel ancient, dangerous, sacred, and strategic.
+Mythos Gates should feel ancient, dangerous, sacred, and strategic.
 
 The tone should be:
 

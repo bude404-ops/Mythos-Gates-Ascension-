@@ -98,7 +98,7 @@ const queue = {
 fs.mkdirSync(path.join(OUT_DIR, 'dropbox'), { recursive: true });
 writeJson(QUEUE_JSON, queue);
 const md = [
-  '# Titan Gates Artwork Build Queue',
+  '# Mythos Gates Artwork Build Queue',
   '',
   `Generated: ${TODAY}`,
   `Needed source assets: ${entries.length}`,

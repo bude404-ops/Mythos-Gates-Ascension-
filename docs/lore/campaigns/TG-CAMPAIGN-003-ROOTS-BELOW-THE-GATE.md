@@ -4,7 +4,7 @@
 
 **Roots Below the Gate** gives the Tuatha worldview its campaign spine: survival through adaptation, memory carried by living terrain, and restoration that is never soft.
 
-The campaign should teach that nature in Titans Gate is not background scenery. It is an extradimensional intelligence with old injuries.
+The campaign should teach that nature in Mythos Gates is not background scenery. It is an extradimensional intelligence with old injuries.
 
 ## Narrative Premise
 

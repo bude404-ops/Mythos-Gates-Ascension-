@@ -38,7 +38,7 @@ assert.equal(raidSystem.stageProfiles.length, 5);
 assert.ok(raidSystem.stageProfiles.every(s => s.problemTags.length >= 2 && s.preferredCounters.length >= 2 && s.carryRisk && s.baseScore));
 assert.ok(['BALANCED','GUARDED','AGGRESSIVE'].every(k => raidSystem.approachRules[k]));
 for (const token of ['createCommandHubRuntime','validatePlayerState','getNextRecommendedAction','AssetManager','AudioManager','deriveNotifications','bottomNav']) assert.ok(runtime.includes(token), `runtime missing ${token}`);
-for (const token of ['Command Hub','OPEN THE TITAN GATE','command-hub-runtime.mjs']) assert.ok(game.includes(token), `game missing ${token}`);
+for (const token of ['Command Hub','OPEN THE MYTHOS GATE','command-hub-runtime.mjs']) assert.ok(game.includes(token), `game missing ${token}`);
 
 const server = http.createServer((req, res) => {
   const clean = decodeURIComponent((req.url || '/').split('?')[0]);

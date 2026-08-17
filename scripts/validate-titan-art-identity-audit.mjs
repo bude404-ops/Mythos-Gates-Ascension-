@@ -18,8 +18,8 @@ const allowedStatuses = new Set(['PASS', 'REFINE', 'REDESIGN']);
 const requiredPromptTokens = [
   'Create a premium playable character depiction of',
   'actual',
-  'Titan Gates universe',
-  'not an ancient Titan Gates giant',
+  'Mythos Gates universe',
+  'not an ancient Mythos Gates giant',
   'Art style:'
 ];
 const negativeTokens = [

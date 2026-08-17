@@ -77,7 +77,7 @@ Primordial wilderness.
 
 ## The Gateborn
 
-The Gateborn are entities created, transformed, or mutated by unstable Titan Gates. Their forms depend on the Gate that created them.
+The Gateborn are entities created, transformed, or mutated by unstable Mythos Gates. Their forms depend on the Gate that created them.
 
 Role:
 
@@ -116,7 +116,7 @@ Role:
 
 - Unique legendary encounters
 - Bosses
-- Titan Gate guardians
+- Mythos Gate guardians
 
 Tone:
 

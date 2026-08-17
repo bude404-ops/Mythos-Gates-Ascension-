@@ -8,7 +8,7 @@ This is not a whimsical spirit forest. It is a sacred jurisdiction under storm p
 
 ## Narrative Premise
 
-The Shrine-Path Archipelago has always allowed passage, but never possession. A Titan Gate reopening changes that balance. Reflections begin moving before their owners. Torii roads appear in the wrong order. Paper seals rewrite themselves after being read.
+The Shrine-Path Archipelago has always allowed passage, but never possession. A Mythos Gate reopening changes that balance. Reflections begin moving before their owners. Torii roads appear in the wrong order. Paper seals rewrite themselves after being read.
 
 Sayo Shrine-Cartographer maps the impossible routes by refusing to trust any path that flatters the traveler. She is calm because panic feeds bad spirits. She is severe because balance does not survive sentimental handling.
 

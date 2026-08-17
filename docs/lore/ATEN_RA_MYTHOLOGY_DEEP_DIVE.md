@@ -3,7 +3,7 @@
 Updated: 2026-08-16
 
 ## Core source logic
-Aten Ra is not "Egyptian-themed." In Titan Gates canon, Aten Ra is the extradimensional source culture whose contact, ruins, dreams, and Gate echoes were later copied by ancient humans into Egyptian religion, royal symbolism, temple architecture, and funerary art.
+Aten Ra is not "Egyptian-themed." In Mythos Gates canon, Aten Ra is the extradimensional source culture whose contact, ruins, dreams, and Gate echoes were later copied by ancient humans into Egyptian religion, royal symbolism, temple architecture, and funerary art.
 
 ## Mythic anchors
 - Ra/Re: noon sun, kingship, cosmic order, sky, earth, underworld; first pharaoh logic; solar barque journey.

@@ -1,4 +1,4 @@
-# Titan Gates Artwork Generation Run-Through
+# Mythos Gates Artwork Generation Run-Through
 
 This is the production order for Big Bot: generate assets in coherent bundles so battlefields, mission thumbnails, campaign characters, Titans, enemies, objectives, and VFX stay visually aligned.
 
@@ -26,7 +26,7 @@ Every output filename must include the permanent asset ID, then land in the artw
 - **BATTLEFIELD_005 — Moon-Grove Rootlabyrinth** (BATTLEFIELD) → `BATTLEFIELD_005__moon-grove-rootlabyrinth__source-file.ext`
 - **BATTLEFIELD_006 — Black Iron Court** (BATTLEFIELD) → `BATTLEFIELD_006__black-iron-court__source-file.ext`
 - **BATTLEFIELD_007 — Sacred Sun Temple Road** (BATTLEFIELD) → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
-- **BATTLEFIELD_008 — Titan Gate Sun Throne** (BATTLEFIELD) → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
+- **BATTLEFIELD_008 — Mythos Gate Sun Throne** (BATTLEFIELD) → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - **BATTLEFIELD_009 — Foxfire Torii Road** (BATTLEFIELD) → `BATTLEFIELD_009__foxfire-torii-road__source-file.ext`
 - **BATTLEFIELD_010 — Mirror Lake Sanctum** (BATTLEFIELD) → `BATTLEFIELD_010__mirror-lake-sanctum__source-file.ext`
 - **BATTLEFIELD_011 — Choir Vault Ascent** (BATTLEFIELD) → `BATTLEFIELD_011__choir-vault-ascent__source-file.ext`
@@ -37,7 +37,7 @@ Every output filename must include the permanent asset ID, then land in the artw
 
 ### Aten Ra
 Generate the faction kit as a coherent style family before deep mission variations.
-- Campaign environments: BATTLEFIELD_001 (The First Reopening Gate), BATTLEFIELD_002 (Solar Pylon Observatory), BATTLEFIELD_007 (Sacred Sun Temple Road), BATTLEFIELD_008 (Titan Gate Sun Throne)
+- Campaign environments: BATTLEFIELD_001 (The First Reopening Gate), BATTLEFIELD_002 (Solar Pylon Observatory), BATTLEFIELD_007 (Sacred Sun Temple Road), BATTLEFIELD_008 (Mythos Gate Sun Throne)
 - Core Titans: TITAN_001 (Aten-Ra, Solar Law Monolith), TITAN_002 (Khemet Suncrown), TITAN_003 (Nefra Obsidian Dawn), TITAN_004 (Orru Prism Verdict), TITAN_005 (Sutekh Dune Eclipse), TITAN_006 (Iset Riverlight Throne), TITAN_007 (Karnu Glass Horizon), TITAN_008 (Maahes Noon Bastion), TITAN_009 (Amunet Hidden Sun)
 - Campaign characters: CHARACTER_001 (Mesha Gate-Scribe)
 
@@ -108,7 +108,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 
 ### 004. TG-F01-C01-M04 — Jackal at the Broken Threshold
 - Lane: Normal | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
-- Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
+- Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_001, ENEMY_003
 - Thumbnail: Jackal at the Broken Threshold thumbnail: three deity silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
@@ -126,7 +126,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 
 ### 006. TG-F01-E-C01-M02 — Elite: River Step Battle line
 - Lane: Elite | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
-- Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
+- Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_003, ENEMY_002, ENEMY_005
 - Thumbnail: Elite: River Step Battle line thumbnail: three deity silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
@@ -180,7 +180,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 
 ### 012. TG-F01-C02-M08 — The Crocodile Crown
 - Lane: Normal | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
-- Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
+- Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_005, ENEMY_002
 - Thumbnail: The Crocodile Crown thumbnail: three deity silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
@@ -198,7 +198,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 
 ### 014. TG-F01-E-C02-M06 — Elite: Sun-Lane Crossing
 - Lane: Elite | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
-- Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
+- Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_004
 - Thumbnail: Elite: Sun-Lane Crossing thumbnail: three deity silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
@@ -252,7 +252,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 
 ### 020. TG-F01-C03-M12 — The Eclipse Scribe
 - Lane: Normal | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
-- Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
+- Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_004, ENEMY_005, ENEMY_001
 - Thumbnail: The Eclipse Scribe thumbnail: three deity silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
@@ -270,7 +270,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 
 ### 022. TG-F01-E-C03-M10 — Elite: Sandstorm of Witnesses
 - Lane: Elite | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
-- Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
+- Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_003
 - Thumbnail: Elite: Sandstorm of Witnesses thumbnail: three deity silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
@@ -324,7 +324,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 
 ### 028. TG-F01-C04-M16 — Deity Silhouette of the False Dawn
 - Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
-- Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
+- Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_003, ENEMY_004, ENEMY_005
 - Thumbnail: Deity Silhouette of the False Dawn thumbnail: three deity silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
@@ -342,7 +342,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 
 ### 030. TG-F01-E-C04-M14 — Elite: The Black Sun Caravan
 - Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
-- Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
+- Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_002
 - Thumbnail: Elite: The Black Sun Caravan thumbnail: three deity silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
@@ -396,7 +396,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 
 ### 036. TG-F01-C05-M20 — Ascension at the Watching Door
 - Lane: Normal | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
-- Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
+- Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_002, ENEMY_003, ENEMY_004
 - Thumbnail: Ascension at the Watching Door thumbnail: three deity silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
@@ -414,7 +414,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 
 ### 038. TG-F01-E-C05-M18 — Elite: Noon Made Hostile
 - Lane: Elite | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
-- Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
+- Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_003, ENEMY_001
 - Thumbnail: Elite: Noon Made Hostile thumbnail: three deity silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.

@@ -1,11 +1,11 @@
-# Titan Gates: Ascension
+# Mythos Gates: Ascension
 
-Titan Gates: Ascension is a mythological tactical RPG built around seven source-culture Realms, the actual gods and goddesseses of those mythologies, the mysterious Titan Gates, and the Ascension Collapse.
+Mythos Gates: Ascension is a mythological tactical RPG built around seven source-culture Realms, the actual gods and goddesses of those mythologies, the mysterious Mythos Gates, and the Ascension Collapse.
 
 This repository is the source of truth for:
 
 1. The playable browser prototype
-2. The Mini App source for `Titan Gates: Ascension`
+2. The Mini App source for `Mythos Gates: Ascension`
 3. Canon, campaign, combat, economy, asset, and 3D production data
 4. GitHub Pages build/deploy automation
 
@@ -14,7 +14,7 @@ This repository is the source of truth for:
 - Development command center: `index.html`
 - Playable game: `game/index.html`
 - Tactical map prototype: `game/tactical-map-prototype.html`
-- Mini App source: `mini-app/titan-gates-ascension.html`
+- Mini App source: `mini-app/mythos-gates-ascension.html`
 - Lore Codex: `docs/lore/README.md`
 - AAA repository audit: `docs/AAA_REPOSITORY_AUDIT.md`
 
@@ -75,7 +75,7 @@ Generated `dist/` output is built by automation and is not a canonical source fo
 - Platform core: v1 implemented for profile, save continuity, roster ownership, progression, inventory, and currency ledger
 - Hosted backend boundary: v1 contract for profile service, cloud saves, authoritative economy ledger, and telemetry ingestion
 - Runtime persistence boundary: database tables, route auth, admin operations, environments, and observability contract
-- Unreal Engine 5 dungeon-crawler framework: Titan Gates region/zone/exploration/tactical-arena template for the first mission
+- Unreal Engine 5 dungeon-crawler framework: Mythos Gates region/zone/exploration/tactical-arena template for the first mission
 - Mobile-first UE5 architecture: Android/iOS baseline, scalable quality tiers, Gate-safe optimization, and first-zone approval gate
 - One Deity vs. Many combat: one player-controlled god or goddess per battle, no armies, no squads, no team turns, visible progression, enemy role pressure
 - Mission/campaign lore run-ins: all 280 missions and 8 campaigns use the mobile UE5 one-deity loop and can draw lore-valid cross-faction creature pools
@@ -133,7 +133,7 @@ Current canon is locked around:
 - Two male gods and two female goddesses per Realm
 - One active god or goddess controlled at a time
 - One deity versus multiple enemies, bosses, monsters, and rival divine forces
-- The Titan Gates as the ancient Gate phenomenon, not a playable-character classification
+- The Mythos Gates as the ancient Gate phenomenon, not a playable-character classification
 - The Hollow as a non-playable campaign threat layer
 - No playable armies
 - No playable squads

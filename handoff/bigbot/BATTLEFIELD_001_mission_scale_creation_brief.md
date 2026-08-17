@@ -55,7 +55,7 @@ Relative scale units:
 - Player deity: 5.2
 - Heavy deity: 6.1
 - Titan-scale enemy: 5.8
-- Titan Gate arch: 14.0
+- Mythos Gate arch: 14.0
 - Gate interior opening: 8.0
 - Statue: 7.5
 - Bridge / major lane width: 6.5

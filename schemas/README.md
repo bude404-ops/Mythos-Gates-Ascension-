@@ -2,7 +2,7 @@
 
 Active coverage now includes Titans, factions, maps, missions, mission dialogue, asset manifests, economy, battlefield telemetry, external AI production packets, and canon version manifests.
 
-This folder is the contract layer for Titan Gates production data.
+This folder is the contract layer for Mythos Gates production data.
 
 ## Intent
 

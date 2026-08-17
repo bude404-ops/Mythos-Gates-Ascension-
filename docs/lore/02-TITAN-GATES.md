@@ -1,16 +1,16 @@
-# 02 — Titan Gates
+# 02 — Mythos Gates
 
 ## Definition
 
-Titan Gates are ancient dimensional gateways connecting powerful Realms.
+Mythos Gates are ancient dimensional gateways connecting powerful Realms.
 
-They are the primary method of inter-Realm travel. They allow civilizations, gods and goddesseses, powers, relics, memories, conflicts, and wars to cross between dimensions.
+They are the primary method of inter-Realm travel. They allow civilizations, gods and goddesses, powers, relics, memories, conflicts, and wars to cross between dimensions.
 
-A Titan Gate is not a portal made by technology. It is an ancient reality-structure: part threshold, part wound, part sacred mechanism, part living law.
+A Mythos Gate is not a portal made by technology. It is an ancient reality-structure: part threshold, part wound, part sacred mechanism, part living law.
 
 ## Function
 
-Titan Gates can:
+Mythos Gates can:
 
 - Connect one Realm to another
 - Open passage into sealed ruins
@@ -64,7 +64,7 @@ Wound Gates are damaged reality scars. They can generate Gateborn entities and m
 
 ## Campaign and Dungeon Use
 
-Every major campaign arc and major dungeon route should involve at least one Titan Gate with a clear identity:
+Every major campaign arc and major dungeon route should involve at least one Mythos Gate with a clear identity:
 
 - What Realm law shaped it?
 - What event damaged or awakened it?
@@ -76,4 +76,4 @@ Every major campaign arc and major dungeon route should involve at least one Tit
 
 ## Dungeon-Crawler Integration
 
-NEW CANON EXTENSION: The latest gameplay format treats some Titan Gate routes as dungeon corridors into dangerous Realm locations, sealed ruins, sacred domains, corrupted regions, monster territories, and boss arenas. This does not replace existing Gate lore. It is a tactical framing for exploring the already-established Gate roads, ruin gates, distortion gates, sealed gates, and wound gates.
+NEW CANON EXTENSION: The latest gameplay format treats some Mythos Gate routes as dungeon corridors into dangerous Realm locations, sealed ruins, sacred domains, corrupted regions, monster territories, and boss arenas. This does not replace existing Gate lore. It is a tactical framing for exploring the already-established Gate roads, ruin gates, distortion gates, sealed gates, and wound gates.

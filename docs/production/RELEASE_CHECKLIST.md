@@ -1,4 +1,4 @@
-# Release Checklist — Titan Gates: Ascension
+# Release Checklist — Mythos Gates: Ascension
 
 Use this for every public build, milestone handoff, and publisher-facing package.
 

@@ -1,6 +1,6 @@
-# Contributing to Titan Gates: Ascension
+# Contributing to Mythos Gates: Ascension
 
-Titan Gates is source-of-truth driven. Treat canon, data, and assets as production records, not scratch files.
+Mythos Gates is source-of-truth driven. Treat canon, data, and assets as production records, not scratch files.
 
 ## Before opening a pull request
 

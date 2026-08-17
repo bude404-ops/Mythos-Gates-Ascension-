@@ -4,7 +4,7 @@
 
 The Realms exist beyond Earth's normal reality. Their civilizations rise according to their own laws: solar judgment, storm oath, celestial glory, sacred balance, living nature, radiant hierarchy, infernal power, and older forces now forgotten.
 
-Titan Gates connect the Realms through sacred dimensional roads.
+Mythos Gates connect the Realms through sacred dimensional roads.
 
 ## Era 2 — The Mythic Bleed
 
@@ -16,7 +16,7 @@ The myths preserve fragments of truth, but not the full reality.
 
 ## Era 3 — The High Gate Age
 
-Realm civilizations use Titan Gates for diplomacy, conquest, worship, resource exchange, pilgrimage, and war.
+Realm civilizations use Mythos Gates for diplomacy, conquest, worship, resource exchange, pilgrimage, and war.
 
 Titans stand as supreme warforms and living embodiments of their civilizations.
 
@@ -26,7 +26,7 @@ Treaties form. Rivalries deepen. Some Gates are sealed because what lies beyond 
 
 The old dimensional order shatters.
 
-Realm roads break. Sealed dimensions crack. Relics lose connection to their source powers. Dormant forces awaken. Titan Gates become unstable.
+Realm roads break. Sealed dimensions crack. Relics lose connection to their source powers. Dormant forces awaken. Mythos Gates become unstable.
 
 Many civilizations fall, fragment, or become unreachable.
 
@@ -38,7 +38,7 @@ The Forgotten wander ruins. The Hollow feed on identity. Gateborn anomalies emer
 
 ## Era 6 — The Reopening
 
-Titan Gates begin opening again.
+Mythos Gates begin opening again.
 
 Some reveal lost routes. Some reveal traps. Some awaken Titans. Some expose ancient World Bosses. Some suggest that the Ascension Collapse may not have been an accident.
 
@@ -46,4 +46,4 @@ This is the current game era.
 
 ## Current Campaign Question
 
-If the Titan Gates are reopening now, who or what is calling them back to life?
+If the Mythos Gates are reopening now, who or what is calling them back to life?

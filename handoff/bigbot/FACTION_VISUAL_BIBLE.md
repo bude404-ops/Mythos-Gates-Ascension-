@@ -1,4 +1,4 @@
-# Titan Gates Faction Visual Bible
+# Mythos Gates Faction Visual Bible
 
 Updated: 2026-08-16
 

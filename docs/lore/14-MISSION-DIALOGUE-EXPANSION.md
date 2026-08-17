@@ -31,7 +31,7 @@ Dialogue remains restrained, mythic, tactical, and lore-bound. NPCs interpret an
 - **TG-CHAPTER-010 — The First Flood Below Fire**: 6 mission beats
 - **TG-CHAPTER-011 — Sacred Sun Temple**: 6 mission beats
 - **TG-CHAPTER-012 — River of Light Stronghold**: 6 mission beats
-- **TG-CHAPTER-013 — The Titan Gate**: 6 mission beats
+- **TG-CHAPTER-013 — The Mythos Gate**: 6 mission beats
 - **TG-CHAPTER-014 — Lanterns That Lie**: 6 mission beats
 - **TG-CHAPTER-015 — Mirror Lake Oath**: 6 mission beats
 - **TG-CHAPTER-016 — Storm Behind the Torii**: 6 mission beats

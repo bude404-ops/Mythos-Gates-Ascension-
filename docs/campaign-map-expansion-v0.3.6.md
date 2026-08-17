@@ -1,4 +1,4 @@
-# Titan Gates Campaign and Map Expansion — v0.3.6
+# Mythos Gates Campaign and Map Expansion — v0.3.6
 
 Date: 2026-08-10
 
@@ -13,7 +13,7 @@ This expansion adds three design-ready realm campaign arcs with linked campaign 
 ## Added Maps
 
 - TG-MAP-007 Sacred Sun Temple Road
-- TG-MAP-008 Titan Gate Sun Throne
+- TG-MAP-008 Mythos Gate Sun Throne
 - TG-MAP-009 Foxfire Torii Road
 - TG-MAP-010 Mirror Lake Sanctum
 - TG-MAP-011 Choir Vault Ascent

@@ -89,7 +89,7 @@ Visual identity: obsidian, hellfire, dark iron, chains, burning sigils, infernal
 **Faction Role:** Non-playable campaign antagonist layer
 **Domains:** Forgotten ruins, Hollow voids, Beast Realms, Gateborn anomaly zones, and Ancient World Boss sites
 **Identity:** The eighth storyline pressure layer is not a normal playable Realm. It is the combined force of everything the Ascension Collapse exposed, mutated, starved, or failed to keep sealed.
-**Philosophy:** The Collapse did not create one enemy; it revealed every unfinished wound beneath the Titan Gates.
+**Philosophy:** The Collapse did not create one enemy; it revealed every unfinished wound beneath the Mythos Gates.
 
 This layer exists so the full game can speak in eight faction-facing forces without inventing an eighth ordinary playable civilization. The seven playable Realms remain the collection and campaign backbone. The Campaign Threat Layer supplies enemies, bosses, events, anomaly missions, Hollow corruption, Forgotten memory-loss, Beast Realm hunts, Gateborn mutations, and Ancient World Boss guardians.
 

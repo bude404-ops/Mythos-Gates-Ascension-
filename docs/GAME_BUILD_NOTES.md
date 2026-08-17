@@ -2,7 +2,7 @@
 
 ## Build 0.1 — First Playable Gate Encounter
 
-This is the first playable browser game layer added on top of the Titan Gates repository.
+This is the first playable browser game layer added on top of the Mythos Gates repository.
 
 ### Added
 

@@ -1,4 +1,4 @@
-# Titan Gates Creator Handoff Bundles
+# Mythos Gates Creator Handoff Bundles
 
 These packets are production contracts for external artists, Blender work, AI image generation, or direct GitHub upload.
 

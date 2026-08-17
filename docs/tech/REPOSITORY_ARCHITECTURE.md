@@ -1,6 +1,6 @@
-# Repository Architecture — Titan Gates: Ascension
+# Repository Architecture — Mythos Gates: Ascension
 
-Titan Gates is organized as a source-of-truth preproduction repository: canon records, gameplay prototypes, asset manifests, handoff packets, and validation gates live together while final engine implementation is still ahead.
+Mythos Gates is organized as a source-of-truth preproduction repository: canon records, gameplay prototypes, asset manifests, handoff packets, and validation gates live together while final engine implementation is still ahead.
 
 ## Current layers
 

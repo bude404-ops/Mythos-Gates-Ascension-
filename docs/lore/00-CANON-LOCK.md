@@ -2,7 +2,7 @@
 
 ## Current Canon Status
 
-Titan Gates: Ascension is a seven-Realm mythological tactical RPG where the playable characters are the actual gods and goddesseses of their source mythologies.
+Mythos Gates: Ascension is a seven-Realm mythological tactical RPG where the playable characters are the actual gods and goddesses of their source mythologies.
 
 The current canon is built around:
 
@@ -27,25 +27,25 @@ The current canon is built around:
 
 ## Core Rule
 
-The playable characters are not inspired champions. They are the actual gods and goddesseses of their respective mythologies within the Titan Gates universe.
+The playable characters are not inspired champions. They are the actual gods and goddesses of their respective mythologies within the Mythos Gates universe.
 
 Their mythology, divine domain, personality, history, relationships, symbols, weapons, powers, cultural identity, Realm, and appearance come directly from established mythology and the existing Lore Codex.
 
-The gods and goddesseses exist within extradimensional mythological Realms. Their appearances are shaped by mythology, divine domain, Realm, civilization, and culture. They are supernatural and otherworldly, but never aliens, extraterrestrials, robots, or science-fiction characters.
+The gods and goddesses exist within extradimensional mythological Realms. Their appearances are shaped by mythology, divine domain, Realm, civilization, and culture. They are supernatural and otherworldly, but never aliens, extraterrestrials, robots, or science-fiction characters.
 
 Ancient humans encountered traces, manifestations, gateways, visions, and interactions with these extradimensional divine beings. Those encounters became the foundation of Earth mythology.
 
 Earth myths are human interpretations of real extradimensional divinity.
 
-## Titan Gates Canon Protection
+## Mythos Gates Canon Protection
 
 The word Titan does not classify the playable gods or goddesses.
 
-The current Titan Gates Lore Codex is the source of truth: Titan Gates are ancient dimensional gateways connecting powerful Realms. They are not technology; each Gate is an ancient reality-structure: part threshold, part wound, part sacred mechanism, part living law. The Ascension Collapse shattered the old dimensional order and left stable Gates, ruin Gates, distortion Gates, sealed Gates, and wound Gates as central campaign structures.
+The current Mythos Gates Lore Codex is the source of truth: Mythos Gates are ancient dimensional gateways connecting powerful Realms. They are not technology; each Gate is an ancient reality-structure: part threshold, part wound, part sacred mechanism, part living law. The Ascension Collapse shattered the old dimensional order and left stable Gates, ruin Gates, distortion Gates, sealed Gates, and wound Gates as central campaign structures.
 
-The established Lore Codex does not currently lock a single named creator or simple origin explanation for all Titan Gates. Do not invent one. Preserve their mystery, their relationship to Realms and the Ascension Collapse, and their role as inter-Realm roads, mission sites, dungeon entrances, and boss arenas.
+The established Lore Codex does not currently lock a single named creator or simple origin explanation for all Mythos Gates. Do not invent one. Preserve their mystery, their relationship to Realms and the Ascension Collapse, and their role as inter-Realm roads, mission sites, dungeon entrances, and boss arenas.
 
-NEW CANON EXTENSION: Some Titan Gate routes now function as dungeon-crawler paths into dangerous Realm locations, sealed ruins, sacred domains, corrupted regions, monster territories, and boss arenas. This extends existing Gate use; it does not replace or simplify Gate canon.
+NEW CANON EXTENSION: Some Mythos Gate routes now function as dungeon-crawler paths into dangerous Realm locations, sealed ruins, sacred domains, corrupted regions, monster territories, and boss arenas. This extends existing Gate use; it does not replace or simplify Gate canon.
 
 ## Gameplay Canon Lock
 
@@ -65,7 +65,7 @@ The design goal is encounter-specific single-deity mastery: the player becomes t
 
 ## Reapers — Current Position
 
-Reapers are legacy lore residue from the older Titan Gates / Ascension format.
+Reapers are legacy lore residue from the older Mythos Gates / Ascension format.
 
 If kept, they should not be the main identity of the game.
 
@@ -76,11 +76,11 @@ They should be reframed as hidden post-Collapse oath remnants:
 - Campaign-facing
 - Connected to forgotten pre-Collapse rites
 - Not a playable core faction
-- Not the identity of Titan Gates
+- Not the identity of Mythos Gates
 
 Clean current positioning:
 
-Titan Gates: Ascension is about extradimensional mythological Realms, the actual gods and goddesseses who rule and embody those Realms, the mysterious Titan Gates, the Ascension Collapse, and the ancient Titan-scale force bound to the Gates.
+Mythos Gates: Ascension is about extradimensional mythological Realms, the actual gods and goddesses who rule and embody those Realms, the mysterious Mythos Gates, the Ascension Collapse, and the ancient Titan-scale force bound to the Gates.
 
 ## Removed Canon
 

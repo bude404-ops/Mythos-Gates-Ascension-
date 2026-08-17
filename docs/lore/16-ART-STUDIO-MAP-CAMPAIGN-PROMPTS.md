@@ -8,4 +8,4 @@ Coverage after this pass:
 - Map art prompts: 12
 - Map + campaign production prompts: 19
 
-Prompt direction keeps the Canon tone: mythic, ancient, tactical, Titan Gates focused, no modern slang, no sci-fi framing, no cheesy poster energy.
+Prompt direction keeps the Canon tone: mythic, ancient, tactical, Mythos Gates focused, no modern slang, no sci-fi framing, no cheesy poster energy.

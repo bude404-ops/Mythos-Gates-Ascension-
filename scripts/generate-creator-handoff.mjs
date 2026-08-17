@@ -163,7 +163,7 @@ for (const item of firstHandoff) {
 }
 batches.push({ id: 'TG-3D-FIRST-HANDOFF-BATTLEFIELDS-001', name: 'First 3D Battlefield Handoff Batch', type: '3D_BLUEPRINT_HANDOFF_BATCH', packetCount: handoffPackets.length });
 
-const readme = `# Titan Gates Creator Handoff Bundles
+const readme = `# Mythos Gates Creator Handoff Bundles
 
 These packets are production contracts for external artists, Blender work, AI image generation, or direct GitHub upload.
 

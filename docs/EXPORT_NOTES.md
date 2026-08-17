@@ -1,6 +1,6 @@
 # Export Notes
 
-This repository contains the latest exported Titan Gates Dev Platform build.
+This repository contains the latest exported Mythos Gates Dev Platform build.
 
 ## Export contents
 

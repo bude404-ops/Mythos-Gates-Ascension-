@@ -1,4 +1,4 @@
-# Asset Import Standards — Titan Gates: Ascension
+# Asset Import Standards — Mythos Gates: Ascension
 
 These rules protect the asset pipeline before real AAA source assets begin landing.
 

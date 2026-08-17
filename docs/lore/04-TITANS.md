@@ -2,11 +2,11 @@
 
 ## Definition
 
-Playable characters are the actual gods and goddesseses of their source mythologies within the Titan Gates universe.
+Playable characters are the actual gods and goddesses of their source mythologies within the Mythos Gates universe.
 
 They are not Titans, mortal heroes, soldiers, normal units, machines, aliens, or generic fantasy champions with divine names. They are divine beings whose mythological domains, symbols, relationships, sacred objects, personalities, Realm cultures, and histories shape gameplay and art.
 
-The word Titan remains reserved for Titan Gates, Gate mythology, ancient Gate concepts, and stable internal IDs that still use legacy naming.
+The word Titan remains reserved for Mythos Gates, Gate mythology, ancient Gate concepts, and stable internal IDs that still use legacy naming.
 
 ## Lore-to-Gameplay Rule
 
@@ -29,7 +29,7 @@ Current format:
 - No five-character teams
 - No normal soldiers or mortal heroes as playable characters
 
-The design goal is encounter-specific single-deity mastery. The player becomes one god or goddess, enters dangerous Titan Gate-connected dungeon spaces, and fights multiple mythological enemies, elites, guardians, rival divine forces, mini-bosses, and bosses.
+The design goal is encounter-specific single-deity mastery. The player becomes one god or goddess, enters dangerous Mythos Gate-connected dungeon spaces, and fights multiple mythological enemies, elites, guardians, rival divine forces, mini-bosses, and bosses.
 
 ## Current Named Deity Roster
 

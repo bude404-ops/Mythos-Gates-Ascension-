@@ -1,12 +1,12 @@
 # 01 — Game Lore
 
-Titans Gate is an extradimensional mythological fantasy universe where ancient Earth myths were not simple stories, but human interpretations of real beings, civilizations, wars, and powers from beyond normal reality.
+Mythos Gates is an extradimensional mythological fantasy universe where ancient Earth myths were not simple stories, but human interpretations of real beings, civilizations, wars, and powers from beyond normal reality.
 
 Long before the current era, powerful mythological civilizations existed across separate dimensions called Realms. These Realms were not realms, galaxies, extradimensional worlds, or places in outer space. They were ancient extradimensional domains shaped by divine law, storm oaths, celestial glory, sacred spirits, living nature, radiant order, infernal power, forgotten memory, primordial beasts, and unstable gateways.
 
-The bridge between these Realms was the Titan Gates.
+The bridge between these Realms was the Mythos Gates.
 
-Titan Gates are ancient dimensional gateways capable of connecting entire Realms. Through them, civilizations crossed into one another's domains, wars spread between dimensions, powers were exchanged, alliances were forged, and ancient humans witnessed fragments of beings they could barely understand.
+Mythos Gates are ancient dimensional gateways capable of connecting entire Realms. Through them, civilizations crossed into one another's domains, wars spread between dimensions, powers were exchanged, alliances were forged, and ancient humans witnessed fragments of beings they could barely understand.
 
 Those encounters became mythology.
 
@@ -14,13 +14,13 @@ Humans remembered solar judges as sun gods. They remembered storm warlords as th
 
 But the myths were only shadows of the truth.
 
-The truth is that these beings were real — extradimensional civilizations whose power bled into human history through the Titan Gates.
+The truth is that these beings were real — extradimensional civilizations whose power bled into human history through the Mythos Gates.
 
 Then came the Ascension Collapse.
 
 The Ascension Collapse shattered the old dimensional order. Realm civilizations were broken. Ancient roads between dimensions vanished. Sacred weapons, relic blades, staves, shields, chains, and living resonance implements were severed from their original powers. Sealed Realms cracked open. Dormant forces buried beneath ancient dimensions began to awaken.
 
-The Titan Gates became unstable.
+The Mythos Gates became unstable.
 
 Some Gates still connect surviving Realms. Some Gates lead into ruins. Some Gates distort anything that passes through them. Some Gates create anomalies. Some Gates mutate life into Gateborn entities. Some Gates open onto places that should have remained sealed.
 
@@ -36,7 +36,7 @@ A solar Realm creates Titans of judgment, radiance, command, and sacred order. A
 
 Each Titan is powerful enough to become the source of an ancient myth.
 
-But Titans Gate is not a story of good versus evil.
+But Mythos Gates is not a story of good versus evil.
 
 It is a war between civilizations that all believe they are right.
 
@@ -50,4 +50,4 @@ The current age begins in the ruins of certainty.
 
 The old paths are broken. The Gates are reopening. The Realms are mobilizing. The Titans are awakening. Forgotten powers are stirring beneath sealed dimensions. And something buried before the Ascension Collapse is beginning to move again.
 
-Titans Gate is the story of mythological civilizations fighting over the broken machinery of reality — not with science, not with spaceships, not with alien technology, but with ancient power, sacred law, living myth, and colossal Titans born from the souls of their Realms.
+Mythos Gates is the story of mythological civilizations fighting over the broken machinery of reality — not with science, not with spaceships, not with alien technology, but with ancient power, sacred law, living myth, and colossal Titans born from the souls of their Realms.

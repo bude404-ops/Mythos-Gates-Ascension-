@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This file begins script dialogue for Titan Gates campaigns while protecting the canon tone.
+This file begins script dialogue for Mythos Gates campaigns while protecting the canon tone.
 
 Dialogue must sound like ancient civilizations handling sacred catastrophe. It should be readable on mobile, but never jokey, meta, superheroic, or cheesy.
 
@@ -109,7 +109,7 @@ Radiant, formal, restrained. Her compassion is structured; her fear is quiet.
 ### TG-CHAPTER-012 — River of Light Stronghold
 **Mesha:** "The river bends uphill. Record that before you correct it. Miracles and wounds often wear the same light."
 
-### TG-CHAPTER-013 — The Titan Gate
+### TG-CHAPTER-013 — The Mythos Gate
 **Gate Silhouette:** "Bring your measures. I have swallowed brighter laws."
 
 **Aten Ra deity Voice:** "Then choke on this one."

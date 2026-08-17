@@ -1,6 +1,6 @@
 # Engine Integration Lane
 
-This folder defines the first engine-facing adapter boundary for Titan Gates: Ascension.
+This folder defines the first engine-facing adapter boundary for Mythos Gates: Ascension.
 
 The browser prototype remains the playable proof. Engine folders are not a second canon source; they consume canonical JSON, schemas, manifests, and source modules.
 

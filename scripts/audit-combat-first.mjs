@@ -9,7 +9,7 @@ const missionProfiles = read('data/mission-tactical-profile-system.json');
 const raid = read('data/raid-system.json');
 const progression = read('data/progression-system.json');
 const titans = read('data/titans.json');
-const html = fs.readFileSync('mini-app/titan-gates-ascension.html', 'utf8');
+const html = fs.readFileSync('mini-app/mythos-gates-ascension.html', 'utf8');
 
 const issues = [];
 const warnings = [];

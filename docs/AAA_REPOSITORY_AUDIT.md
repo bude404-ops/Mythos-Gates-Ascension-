@@ -1,10 +1,10 @@
-# AAA Repository Audit — Titan Gates: Ascension
+# AAA Repository Audit — Mythos Gates: Ascension
 
 Status: production-foundation audit completed after GitHub canon cleanup.
 
 ## Verdict
 
-Titan Gates: Ascension is structurally strong as a game bible, vertical-slice prototype, Mini App source, and asset-production command center. It is not yet a final AAA game-engine repository. The repo can guide a AAA build, but the next phase must separate prototype presentation from production runtime code and enforce schemas/contracts around every content pipeline.
+Mythos Gates: Ascension is structurally strong as a game bible, vertical-slice prototype, Mini App source, and asset-production command center. It is not yet a final AAA game-engine repository. The repo can guide a AAA build, but the next phase must separate prototype presentation from production runtime code and enforce schemas/contracts around every content pipeline.
 
 Readiness grade after the mission/campaign lore run-in pass: A- for AAA preproduction repository, B+ for Unreal-target implementation repository, B- for live game-platform readiness foundation.
 

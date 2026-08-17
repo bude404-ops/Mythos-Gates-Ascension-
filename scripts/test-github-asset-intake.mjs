@@ -25,7 +25,7 @@ try {
   fs.writeFileSync(FIXTURE, JSON.stringify({
     asset_id: 'BATTLEFIELD_001',
     generator: 'external-intake-test',
-    asset: { version: '2.0', generator: 'Titan Gates intake smoke' },
+    asset: { version: '2.0', generator: 'Mythos Gates intake smoke' },
     scenes: [{ nodes: [] }],
     nodes: []
   }, null, 2) + '\n');

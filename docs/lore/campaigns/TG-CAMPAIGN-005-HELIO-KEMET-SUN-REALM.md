@@ -2,7 +2,7 @@
 
 ## Canon Function
 
-**Helio-Kemet Sun Realm** converts the campaign-map reference into canon: a five-node Aten Ra ascent where sacred solar order is under eclipse pressure. It links the mobile campaign overview to the tactical Titan Gate battle map.
+**Helio-Kemet Sun Realm** converts the campaign-map reference into canon: a five-node Aten Ra ascent where sacred solar order is under eclipse pressure. It links the mobile campaign overview to the tactical Mythos Gate battle map.
 
 The campaign exists to define how a Realm-specific chapter map should feel: not a menu pasted onto scenery, but a pilgrimage route through that Realm's law.
 
@@ -10,7 +10,7 @@ The campaign exists to define how a Realm-specific chapter map should feel: not 
 
 The Sun Realm does not fall into darkness all at once. It loses measurement first.
 
-Milestone nodes dim out of sequence. Star records disagree with the living sky. The river of light bends toward ruins it once refused to touch. At the peak, the Titan Gate burns gold around a black silhouette that should cast no shadow under the full sun.
+Milestone nodes dim out of sequence. Star records disagree with the living sky. The river of light bends toward ruins it once refused to touch. At the peak, the Mythos Gate burns gold around a black silhouette that should cast no shadow under the full sun.
 
 Mesha returns here not as tutorial voice but as a witness whose certainty is being tested. Aten Ra law claims that radiance reveals all things. The eclipse corruption proves that some things can stand in sunlight and remain unnamed.
 
@@ -18,7 +18,7 @@ Mesha returns here not as tutorial voice but as a witness whose certainty is bei
 
 - **Primary threat:** Hollow eclipse corruption eating records, names, and solar measurements.
 - **Secondary threat:** Gateborn sun-mirage distortions on tactical tiles.
-- **Boss pressure:** A silhouette inside the Titan Gate that may be a Forgotten solar judge or something wearing that outline.
+- **Boss pressure:** A silhouette inside the Mythos Gate that may be a Forgotten solar judge or something wearing that outline.
 
 ## Lore-Friendly Dialogue Seed
 

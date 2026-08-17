@@ -1,4 +1,4 @@
-# Titan Gates: Ascension — Endgame, Retention & Async Arena Directive
+# Mythos Gates: Ascension — Endgame, Retention & Async Arena Directive
 
 Version: 0.6.0
 Date: 2026-08-10

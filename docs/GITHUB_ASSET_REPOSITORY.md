@@ -1,4 +1,4 @@
-# Titan Gates: Ascension — GitHub Asset Repository
+# Mythos Gates: Ascension — GitHub Asset Repository
 
 GitHub is the central source of truth for artwork and 3D asset files. Reaper is the development and management layer, not the required importer.
 
@@ -101,7 +101,7 @@ Validation never rewrites source assets.
 
 ## Current visual direction
 
-Titan Gates uses 3D characters, 3D Titans, 3D creatures, 3D battlefields, 3D gates, 3D props, materials, animations, VFX, and lighting. Old 2D battlefield sprite systems are deprecated for active character/enemy gameplay.
+Mythos Gates uses 3D characters, 3D Titans, 3D creatures, 3D battlefields, 3D gates, 3D props, materials, animations, VFX, and lighting. Old 2D battlefield sprite systems are deprecated for active character/enemy gameplay.
 
 ## Big Bot auto-import
 
@@ -145,7 +145,7 @@ The importer never overwrites an existing source version and never invents canon
 Big Bot only needs three things:
 
 - The finished file bytes.
-- A reserved Titan Gates asset ID from `artwork_import/ARTWORK_BUILD_QUEUE.json`.
+- A reserved Mythos Gates asset ID from `artwork_import/ARTWORK_BUILD_QUEUE.json`.
 - A filename containing that ID.
 
 No manual registry editing is required.
