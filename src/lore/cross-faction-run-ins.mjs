@@ -34,7 +34,7 @@ export function validateCrossFactionCreaturePools({ factions, creatures, pools, 
       if (creature.playable !== false) issues.push(`${creature.id} must be non-playable run-in creature`);
       if (!creature.encounterTags?.includes('cross-faction-event')) issues.push(`${creature.id} missing cross-faction-event tag`);
       if (!creature.loreGuardrails?.sourceCultureRule) issues.push(`${creature.id} missing source-culture lore guardrail`);
-      if (!creature.balanceNotes?.includes('one titan vs many')) issues.push(`${creature.id} must be tuned for one titan vs many`);
+      if (!creature.balanceNotes?.includes('one deity vs many')) issues.push(`${creature.id} must be tuned for one deity vs many`);
       if (!creature.scaling?.eliteRemix?.includes('not raw health sponge')) issues.push(`${creature.id} scaling must reject raw health sponge tuning`);
     }
   }
