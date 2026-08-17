@@ -7,54 +7,87 @@
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style>
-    body{touch-action:manipulation}
-    .tile{aspect-ratio:1/1;min-width:42px;position:relative;overflow:visible}
-    .tile:after{content:attr(data-label);position:absolute;right:2px;bottom:1px;font-size:9px;opacity:.35}
-    .deity{filter:drop-shadow(0 14px 18px rgba(250,204,21,.25))}
+    body{touch-action:manipulation;font-family:'Rajdhani',sans-serif}
+    .tile{aspect-ratio:1/1;min-width:42px;position:relative;overflow:visible;transition:all .15s}
+    .tile:hover{filter:brightness(1.3)}
+    .deity-token{filter:drop-shadow(0 0 12px rgba(250,204,21,.6))}
     .shake{animation:shake .28s ease-in-out}
     .pulse{animation:pulseScale .85s ease-in-out infinite alternate}
     .seal-pulse{animation:sealPulse 1.2s ease-in-out infinite alternate}
+    .seal-done{animation:sealComplete .6s ease-out}
+    .enemy-pulse{animation:enemyPulse 1.5s ease-in-out infinite alternate}
+    .gate-glow{animation:gateGlow 3s ease-in-out infinite alternate}
+    .bar-fill{transition:width .3s ease}
     @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
-    @keyframes pulseScale{from{transform:scale(1)}to{transform:scale(1.04)}}
-    @keyframes sealPulse{from{opacity:.5}to{opacity:1}}
-    .zone-label{position:absolute;top:1px;left:50%;transform:translateX(-50%);font-size:7px;opacity:.25;letter-spacing:.5px;text-transform:uppercase;pointer-events:none}
+    @keyframes pulseScale{from{transform:scale(1)}to{transform:scale(1.06)}}
+    @keyframes sealPulse{from{opacity:.4}to{opacity:.9}}
+    @keyframes sealComplete{0%{transform:scale(0) rotate(0)}50%{transform:scale(1.3) rotate(180)}100%{transform:scale(1) rotate(360)}}
+    @keyframes enemyPulse{from{opacity:.7}to{opacity:1}}
+    @keyframes gateGlow{from{box-shadow:0 0 20px rgba(250,204,21,.2)}to{box-shadow:0 0 40px rgba(250,204,21,.5)}}
+    .zone-label{position:absolute;top:1px;left:50%;transform:translateX(-50%);font-size:7px;opacity:.3;letter-spacing:.5px;text-transform:uppercase;pointer-events:none;z-index:5}
     .star-done{color:#facc15}
     .star-locked{color:#444}
+    .hp-bar-bg{background:rgba(0,0,0,.5);border-radius:2px;overflow:hidden}
+    .hp-bar-fill{height:100%;border-radius:2px;transition:width .3s ease}
+    .overlay{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.85);backdrop-filter:blur(8px)}
+    .btn-action{transition:all .15s}
+    .btn-action:active{transform:scale(.95)}
+    .btn-action:disabled{opacity:.35;cursor:not-allowed}
+    .stance-active{box-shadow:0 0 12px rgba(250,204,21,.6)}
   </style>
 </head>
-<body class="font-rajdhani min-h-screen overflow-auto bg-neutral-950 text-neutral-50">
+<body class="min-h-screen overflow-auto bg-neutral-950 text-neutral-50">
   <div class="sticky top-0 z-40 border-b border-yellow-700/30 bg-neutral-950/95 p-3 backdrop-blur">
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-2">
       <div><p class="text-[10px] font-black uppercase tracking-[.28em] text-yellow-400">Mission M01 · Aten Ra</p><h1 class="text-xl font-black leading-none">First Light Under Dead Stone</h1></div>
-      <div class="text-right text-xs text-neutral-300"><b id="phaseLabel" class="text-primary">Player Phase</b><br/><span id="turnLabel">Round 1 / 11</span></div>
+      <div class="text-right text-xs text-neutral-300"><b id="phaseLabel" class="text-yellow-400">Player Phase</b><br/><span id="turnLabel">Round 1 / 11</span></div>
     </div>
   </div>
   <main class="mx-auto grid max-w-6xl gap-3 p-3 pb-28 lg:grid-cols-[1fr_340px]">
-    <section class="rounded-3xl border border-yellow-700/30 bg-neutral-900 p-3 shadow-dark-outline">
+    <section class="rounded-3xl border border-yellow-700/30 bg-neutral-900 p-3">
       <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
-        <div><p class="text-xs font-black uppercase tracking-[.2em] text-primary">One Deity vs Many</p><h2 class="text-2xl font-black">Aten-Ra, Solar Law Monolith</h2></div>
-        <button onclick="gateArrival()" class="rounded-2lg bg-yellow-500 px-4 py-2 text-sm font-black text-neutral-950">Gate Arrival</button>
+        <div><p class="text-xs font-black uppercase tracking-[.2em] text-yellow-400">One Deity vs Many</p><h2 class="text-2xl font-black">Aten-Ra, Solar Law Monolith</h2></div>
+        <button onclick="gateArrival()" class="btn-action rounded-xl bg-yellow-500 px-4 py-2 text-sm font-black text-neutral-950">Gate Arrival</button>
       </div>
       <div id="battlefield" class="relative mx-auto grid max-w-[620px] grid-cols-7 gap-1 rounded-3xl border border-neutral-800 bg-neutral-950 p-3"></div>
       <div class="mt-3 grid grid-cols-4 gap-2 text-center text-xs">
         <div class="rounded-xl bg-neutral-950 p-2"><b class="text-yellow-400">Deity Scale</b><br/>6.1x heavy</div>
-        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-primary">Gate</b><br/>14x arch</div>
-        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-bull-400">Grid</b><br/>7x7 · 49</div>
-        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-bear-400">Enemies</b><br/>Elite 1.85x</div>
+        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-yellow-400">Gate</b><br/>14x arch</div>
+        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-blue-400">Grid</b><br/>7x7 · 49</div>
+        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-red-400">Enemies</b><br/>Elite 1.85x</div>
       </div>
     </section>
     <aside class="space-y-3">
       <section class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4">
-        <p class="text-xs font-black uppercase tracking-[.24em] text-primary">Resources</p>
+        <p class="text-xs font-black uppercase tracking-[.24em] text-yellow-400">Resources</p>
         <div class="mt-3 grid grid-cols-2 gap-2 text-center">
-          <div class="rounded-2xl bg-neutral-950 p-3"><b id="hp" class="text-2xl text-bull-400">50</b><br/><span class="text-xs text-neutral-400">Deity Integrity</span></div>
+          <div class="rounded-2xl bg-neutral-950 p-3"><b id="hp" class="text-2xl text-green-400">52</b><br/><span class="text-xs text-neutral-400">Deity Integrity</span></div>
           <div class="rounded-2xl bg-neutral-950 p-3"><b id="mom" class="text-2xl text-yellow-400">1</b><br/><span class="text-xs text-neutral-400">Momentum</span></div>
-          <div class="rounded-2xl bg-neutral-950 p-3"><b id="div" class="text-2xl text-primary">0</b><br/><span class="text-xs text-neutral-400">Divinity</span></div>
+          <div class="rounded-2xl bg-neutral-950 p-3"><b id="div" class="text-2xl text-purple-400">0</b><br/><span class="text-xs text-neutral-400">Divinity</span></div>
           <div class="rounded-2xl bg-neutral-950 p-3"><b id="seal" class="text-2xl text-yellow-400">0/3</b><br/><span class="text-xs text-neutral-400">Solar Seals</span></div>
+        </div>
+        <div class="mt-2 rounded-2xl bg-neutral-950 p-3 text-center">
+          <b id="solarCharge" class="text-lg text-orange-400">0</b><br/><span class="text-xs text-neutral-400">Solar Charge</span>
+          <div class="mt-1 flex justify-center gap-1">
+            <span id="sc1" class="text-xs" style="opacity:.2">●</span>
+            <span id="sc2" class="text-xs" style="opacity:.2">●</span>
+            <span id="sc3" class="text-xs" style="opacity:.2">●</span>
+            <span id="sc4" class="text-xs" style="opacity:.2">●</span>
+            <span id="sc5" class="text-xs" style="opacity:.2">●</span>
+          </div>
         </div>
       </section>
       <section class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4">
-        <p class="text-xs font-black uppercase tracking-[.24em] text-primary">Mission Objectives</p>
+        <p class="text-xs font-black uppercase tracking-[.24em] text-yellow-400">Stance</p>
+        <div class="mt-2 grid grid-cols-3 gap-2 text-center text-xs font-bold">
+          <button id="stanceGuardian" onclick="setStance('GUARDIAN')" class="btn-action rounded-xl bg-yellow-600/30 border border-yellow-500 p-2 stance-active">Guardian</button>
+          <button id="stanceAssault" onclick="setStance('ASSAULT')" class="btn-action rounded-xl bg-red-600/20 border border-red-700 p-2">Assault</button>
+          <button id="stanceAscendant" onclick="setStance('ASCENDANT')" class="btn-action rounded-xl bg-purple-600/20 border border-purple-700 p-2">Ascendant</button>
+        </div>
+        <p id="stanceDesc" class="mt-2 text-xs text-neutral-400">Guardian: +2 armor, Solar Charge on defend.</p>
+      </section>
+      <section class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4">
+        <p class="text-xs font-black uppercase tracking-[.24em] text-yellow-400">Mission Objectives</p>
         <h3 class="mt-1 text-lg font-black">Stabilize Three Solar Seals</h3>
         <p class="mt-1 text-sm text-neutral-300">Drive your Deity to the Seal Court before the Hollow closes.</p>
         <div class="mt-3 space-y-1 text-xs text-neutral-400">
@@ -64,28 +97,39 @@
         </div>
       </section>
       <section class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4">
-        <p class="text-xs font-black uppercase tracking-[.24em] text-primary">Battle Log</p>
-        <div id="log" class="mt-2 max-h-56 space-y-2 overflow-auto text-sm text-neutral-300"></div>
+        <p class="text-xs font-black uppercase tracking-[.24em] text-yellow-400">Battle Log</p>
+        <div id="log" class="mt-2 max-h-56 space-y-1 overflow-auto text-sm text-neutral-300"></div>
       </section>
     </aside>
   </main>
   <nav class="fixed bottom-0 left-0 right-0 z-40 border-t border-yellow-700/30 bg-neutral-950/95 p-2 backdrop-blur">
-    <div class="mx-auto grid max-w-3xl grid-cols-5 gap-2 text-xs font-black">
-      <button onclick="setMode('move')" class="rounded-2lg bg-neutral-800 p-3 text-neutral-100">Move</button>
-      <button onclick="setMode('strike')" class="rounded-2xl bg-neutral-800 p-3 text-neutral-100">Strike</button>
-      <button onclick="solarVerdict()" class="rounded-2lg bg-yellow-500 p-3 text-neutral-950">Verdict</button>
-      <button onclick="reaction()" class="rounded-2lg bg-primary p-3 text-white">React</button>
-      <button onclick="endRound()" class="rounded-2lg bg-bear-500 p-3 text-white">End Turn</button>
+    <div class="mx-auto grid max-w-3xl grid-cols-6 gap-2 text-xs font-black">
+      <button onclick="setMode('move')" id="btnMove" class="btn-action rounded-xl bg-neutral-800 p-3 text-neutral-100">Move</button>
+      <button onclick="setMode('strike')" id="btnStrike" class="btn-action rounded-xl bg-neutral-800 p-3 text-neutral-100">Strike</button>
+      <button onclick="solarVerdict()" id="btnVerdict" class="btn-action rounded-xl bg-yellow-500 p-3 text-neutral-950">Verdict</button>
+      <button onclick="useTechnique()" id="btnTech" class="btn-action rounded-xl bg-orange-600 p-3 text-white">Bastion</button>
+      <button onclick="reaction()" id="btnReact" class="btn-action rounded-xl bg-purple-600 p-3 text-white">React</button>
+      <button onclick="endRound()" id="btnEnd" class="btn-action rounded-xl bg-red-700 p-3 text-white">End Turn</button>
     </div>
   </nav>
+  <div id="overlay" class="overlay hidden">
+    <div class="max-w-md rounded-3xl border border-yellow-700/40 bg-neutral-900 p-8 text-center">
+      <h2 id="overlayTitle" class="text-3xl font-black"></h2>
+      <p id="overlaySub" class="mt-2 text-neutral-400"></p>
+      <div id="overlayStars" class="mt-4 text-2xl"></div>
+      <div id="overlayStats" class="mt-4 space-y-1 text-sm text-neutral-300"></div>
+      <button onclick="restart()" class="btn-action mt-6 rounded-xl bg-yellow-500 px-8 py-3 text-lg font-black text-neutral-950">Play Again</button>
+    </div>
+  </div>
 <script>
-// M01: TG-F01-C01-M01 — First Light Under Dead Stone
-// One Deity vs Many · 7x7 grid · Turn limit 11 · Victory: 3 Solar Seals
-
 const TURN_LIMIT = 11;
-const MAX_HP = 50;
+const MAX_HP = 52;
 const HP_STAR = Math.ceil(MAX_HP * 0.4);
-
+const STANCES = {
+  GUARDIAN: { name: 'Guardian', desc: '+2 armor, Solar Charge on defend.' },
+  ASSAULT: { name: 'Assault', desc: '+3 damage on strikes, +1 Momentum per kill.' },
+  ASCENDANT: { name: 'Ascendant', desc: '+1 Divinity per turn in light lanes.' }
+};
 const terrain = {
   entry: ['A1','A2','B1','B2'],
   open: ['C1','D1','E1','C2','D2','E2'],
@@ -95,302 +139,275 @@ const terrain = {
   elite: ['A5','B5','C5'],
   boss: ['D5','E5','F5','G5','D6','E6','F6','G6','D7','E7','F7','G7']
 };
+const zNames = { entry:'Threshold', open:'Causeway', choke:'Choke', ray:'Ray Lanes', objective:'Seal Court', elite:'Anchor Scar', boss:'Gate Arena' };
+const SEAL_TILES = ['B4','C4','D4'];
+const SEAL_GLYPHS = ['☉','☀','✦'];
+let S, enemies, L = 'ABCDEFG'.split('');
+let techCooldown = 0, bastionActive = false, bastionTurns = 0;
+let ascended = false, ascensionTurns = 0;
 
-const zNames = {
-  entry: 'Threshold', open: 'Causeway', choke: 'Choke',
-  ray: 'Ray Lanes', objective: 'Seal Court', elite: 'Anchor Scar', boss: 'Gate Arena'
-};
-
-let S = {
-  round: 1, mode: 'move', deity: 'B1',
-  hp: MAX_HP, momentum: 1, divinity: 0, seals: 0,
-  reactions: 0, w2: false, over: false, win: false, cin: false,
-  log: ['The Sun-Scale Gate breathes. Aten-Ra enters alone into the Broken Threshold.']
-};
-
-// W1: Gateborn Colossus + Beast-Realm Maneater at opposing gate markers
-let enemies = {
-  F6: { name: 'Gateborn Colossus', hp: 22, maxHp: 22, type: 'elite', cid: 'TG-CREATURE-002', wave: 1 },
-  D7: { name: 'Beast-Realm Maneater', hp: 18, maxHp: 18, type: 'elite', cid: 'TG-CREATURE-003', wave: 1 }
-};
-
-const L = 'ABCDEFG'.split('');
-
-function zType(t) {
-  for (var k in terrain) { if (terrain[k].includes(t)) return k; }
-  return 'open';
-}
-
-function clsFor(t) {
-  const z = zType(t);
-  if (z === 'entry') return 'bg-stone-800';
-  if (z === 'open') return 'bg-yellow-950/30';
-  if (z === 'choke') return 'bg-neutral-700';
-  if (z === 'ray') return 'bg-yellow-500/25 border-yellow-500/80';
-  if (z === 'objective') return 'bg-primary/20 border-primary/80';
-  if (z === 'elite') return 'bg-bear-950/30 border-bear-700';
-  if (z === 'boss') return 'bg-purple-950/30 border-purple-700';
-  return 'bg-neutral-800';
-}
-
-function log(x) {
-  S.log.unshift(x);
-  S.log = S.log.slice(0, 12);
+function init() {
+  S = { round:1, mode:'move', stance:'GUARDIAN', deity:'B1', hp:MAX_HP, momentum:1, divinity:0, seals:0, solarCharge:0, reactions:0, w2:false, over:false, win:false, cin:false, hasMoved:false, hasStruck:false, log:['The Sun-Scale Gate breathes. Aten-Ra enters alone into the Broken Threshold.'] };
+  enemies = {
+    F6: { name:'Gateborn Colossus', hp:28, maxHp:28, type:'elite', icon:'▲', dmg:6, wave:1 },
+    D7: { name:'Beast-Realm Maneater', hp:22, maxHp:22, type:'elite', icon:'◈', dmg:7, wave:1 }
+  };
+  techCooldown = 0; bastionActive = false; bastionTurns = 0; ascended = false; ascensionTurns = 0;
+  document.getElementById('overlay').classList.add('hidden');
   render();
 }
 
-function icon(e) { return e.type === 'elite' ? '▲' : '●'; }
-function scaleC(e) { return e.type === 'elite' ? 'text-3xl' : 'text-xl'; }
+function zType(t) { for (var k in terrain) { if (terrain[k].includes(t)) return k; } return 'open'; }
 
-function stars() {
-  if (S.win && S.round <= 8) document.getElementById('star1').className = 'star-done';
-  if (S.win && S.hp >= HP_STAR) document.getElementById('star2').className = 'star-done';
-  if (S.reactions >= 2) document.getElementById('star3').className = 'star-done';
+function clsFor(t) {
+  const z = zType(t);
+  if (z==='entry') return 'bg-stone-800';
+  if (z==='open') return 'bg-yellow-950/30';
+  if (z==='choke') return 'bg-neutral-700';
+  if (z==='ray') return 'bg-yellow-500/15 border-yellow-500/60';
+  if (z==='objective') return 'bg-yellow-600/15 border-yellow-600/50';
+  if (z==='elite') return 'bg-red-950/30 border-red-800/40';
+  if (z==='boss') return 'bg-purple-950/30 border-purple-700/40';
+  return 'bg-neutral-800';
 }
 
-function render() {
-  const bf = document.getElementById('battlefield');
-  bf.innerHTML = '';
-  for (let y = 1; y <= 7; y++) {
-    for (const x of L) {
-      const id = x + y;
-      const tile = document.createElement('button');
-      tile.dataset.label = id;
-      tile.onclick = () => tap(id);
-      tile.className = 'tile rounded-xl border border-neutral-800 ' + clsFor(id) + ' active:scale-95';
-      let body = '';
+function addLog(x) { S.log.unshift(x); S.log = S.log.slice(0, 15); }
 
-      if (id === 'A1') body += '<div class="zone-label">Threshold</div>';
-      if (id === 'C1') body += '<div class="zone-label">Causeway</div>';
-      if (id === 'B3') body += '<div class="zone-label">Choke</div>';
-      if (id === 'E3') body += '<div class="zone-label">Ray Lanes</div>';
-      if (id === 'B4') body += '<div class="zone-label">Seals</div>';
-      if (id === 'A5') body += '<div class="zone-label">Anchor</div>';
-      if (id === 'D5') body += '<div class="zone-label">Gate Arena</div>';
-
-      if (id === 'G7') body += '<div class="absolute inset-[-22px_-6px_auto_auto h-28 w-20 rounded-t-full border-4 border-yellow-500/70 bg-yellow-500/10 text-[9px] font-black text-yellow-300">GATE</div>';
-
-      if (S.deity === id) body += '<div class="deity absolute -inset-x-3 -top-8 z-20 rounded-full border-4 border-yellow-400 bg-yellow-500/30 p-3 text-center text-6xl font-black text-yellow-300">♜</div>';
-
-      if (enemies[id]) {
-        const e = enemies[id];
-        body += '<div class="absolute inset-1 z-10 flex items-center justify-center rounded-full border border-red-600 bg-red-950/80 font-black text-red-300 ' + scaleC(e) + '">' + icon(e) + '<span class="absolute -bottom-4 text-[9px]">' + e.hp + '</span></div>';
-      }
-
-      const si = terrain.objective.indexOf(id);
-      if (si !== -1 && si >= S.seals) body += '<div class="absolute left-1 top-3 text-xs text-primary seal-pulse">✦</div>';
-
-      if (id === 'A4') body += '<div class="absolute left-1 top-1 text-xs text-neutral-300">📖</div>';
-
-      tile.innerHTML = body;
-      bf.appendChild(tile);
-    }
-  }
-  document.getElementById('hp').textContent = S.hp;
-  document.getElementById('mom').textContent = S.momentum;
-  document.getElementById('div').textContent = S.divinity;
-  document.getElementById('seal').textContent = S.seals + '/3';
-  document.getElementById('turnLabel').textContent = 'Round ' + S.round + ' / ' + TURN_LIMIT;
-  document.getElementById('phaseLabel').textContent = S.cin ? 'Cinematic' : 'Player Phase';
-  document.getElementById('log').innerHTML = S.log.map(x => '<p class="rounded-xl bg-neutral-950 p-2">' + x + '</p>').join('');
-  stars();
+function gainSC(n) {
+  S.solarCharge = Math.min(5, S.solarCharge + n);
+  if (S.solarCharge === 3) addLog('Solar Charge 3 — Ma\'at balance rider ready.');
+  if (S.solarCharge === 5) addLog('Solar Charge MAX — Verdict doubled!');
 }
 
-function setMode(m) {
-  S.mode = m;
-  log('Action: ' + m.toUpperCase());
-}
+function setStance(st) { if (S.over) return; S.stance = st; addLog('Stance: ' + STANCES[st].name + '.'); render(); }
 
-function adj(a, b) {
-  return Math.abs(L.indexOf(a[0]) - L.indexOf(b[0])) + Math.abs(+a[1] - +b[1]);
-}
+function setMode(m) { S.mode = m; addLog('Action: ' + m.toUpperCase()); render(); }
+
+function adj(a, b) { return Math.abs(L.indexOf(a[0]) - L.indexOf(b[0])) + Math.abs(+a[1] - +b[1]); }
 
 function w2trig() {
   if (S.w2) return;
   S.w2 = true;
   if (!enemies['B5']) {
-    enemies['B5'] = { name: 'Beast-Realm Maneater', hp: 16, maxHp: 16, type: 'elite', cid: 'TG-CREATURE-003', wave: 2 };
-    log('WAVE 2: A Maneater emerges from the shadowed lane. The Anchor Scar stirs.');
+    enemies['B5'] = { name:'Maneater Reinforcement', hp:18, maxHp:18, type:'elite', icon:'◈', dmg:6, wave:2 };
+    addLog('⚠ WAVE 2: A Maneater emerges from the shadowed lane at B5!');
   }
 }
 
-function checkWin() {
-  if (S.seals >= 3 && !S.over) {
-    S.over = true;
-    S.win = true;
-    log('VICTORY: Three Solar Seals stabilized. Solar Law endures. The Gate holds.');
-  }
-}
-
+function checkWin() { if (S.seals >= 3 && !S.over) { S.over=true; S.win=true; addLog('VICTORY: Three Solar Seals stabilized. Solar Law endures.'); showGameOver(); } }
 function checkLose() {
-  if (S.hp <= 0 && !S.over) {
-    S.over = true;
-    log('DEFEAT: The Hollow overwhelms Aten-Ra.');
-  }
-  if (S.round > TURN_LIMIT && !S.over) {
-    S.over = true;
-    log('DEFEAT: Turn limit expired. The Hollow closes the Seals.');
-  }
+  if (S.hp <= 0 && !S.over) { S.over=true; addLog('DEFEAT: The Hollow overwhelms Aten-Ra.'); showGameOver(); }
+  if (S.round > TURN_LIMIT && !S.over) { S.over=true; addLog('DEFEAT: Turn limit expired.'); showGameOver(); }
+}
+
+function getArmor() { let a=0; if (S.stance==='GUARDIAN') a+=2; if (bastionActive) a+=3; if (ascended) a+=1; return a; }
+
+function getStrikeDmg() {
+  let d = 8 + Math.floor(S.momentum * 0.5);
+  if (S.stance==='ASSAULT') d+=3;
+  if (ascended) d+=4;
+  if (S.solarCharge===5) d=Math.floor(d*1.5);
+  return d;
 }
 
 function tap(id) {
   if (S.over) return;
-
   if (S.mode === 'move') {
+    if (S.hasMoved) { addLog('Already moved this round.'); return; }
     if (adj(S.deity, id) <= 2 && !enemies[id]) {
-      S.deity = id;
+      S.deity = id; S.hasMoved = true;
       const z = zType(id);
-      if (z === 'ray' || z === 'open') {
-        S.momentum += 1;
-        log('Aten-Ra advances to ' + id + ' (' + zNames[z] + ') and absorbs solar Momentum.');
-      } else if (z === 'objective') {
-        log('Aten-Ra enters the Solar Seal Court at ' + id + '.');
-      } else {
-        log('Aten-Ra moves to ' + id + ' (' + zNames[z] + ').');
-      }
-      if (id === 'A4') {
-        log('Memory Obelisk: old stone remembers the first Gate rupture. Mastery XP.');
-        S.reactions++;
-      }
-      if (z === 'objective' && !S.w2) w2trig();
+      if (z==='ray'||z==='open') { S.momentum++; if(S.stance==='ASCENDANT') S.divinity++; addLog('Aten-Ra advances to '+id+' ('+zNames[z]+'). Solar Momentum.'); }
+      else if (z==='objective') addLog('Aten-Ra enters the Solar Seal Court at '+id+'.');
+      else addLog('Aten-Ra moves to '+id+' ('+zNames[z]+').');
+      if (id==='A4') { addLog('Memory Obelisk: old stone remembers. +Mastery XP.'); S.reactions++; S.divinity++; }
+      if (z==='ray') { gainSC(1); S.reactions++; }
+      if (z==='objective' && !S.w2) w2trig();
       render();
-    } else {
-      log('Movement: destination unsafe or too far.');
-    }
+    } else { addLog('Movement: unsafe or too far.'); }
     return;
   }
-
   if (S.mode === 'strike') {
+    if (S.hasStruck) { addLog('Already struck this round.'); return; }
     if (enemies[id] && adj(S.deity, id) <= 2) {
-      const dmg = 8 + Math.floor(S.momentum * 0.5);
-      enemies[id].hp -= dmg;
-      S.momentum++;
-      log('Deity strike crushes ' + enemies[id].name + ' for ' + dmg + '.');
-      if (enemies[id].hp <= 0) {
-        log(enemies[id].name + ' falls.');
-        delete enemies[id];
-      }
+      S.hasStruck = true;
+      const dmg = getStrikeDmg();
+      enemies[id].hp -= dmg; S.momentum++;
+      addLog('⚖ Ma\'at Strike hits '+enemies[id].name+' for '+dmg+'.');
+      if (zType(S.deity)==='ray') gainSC(1);
+      if (enemies[id].hp <= 0) { addLog(enemies[id].name+' falls.'); if(S.stance==='ASSAULT') S.momentum++; delete enemies[id]; }
       render();
     } else if (terrain.objective.includes(id) && adj(S.deity, id) <= 2) {
+      S.hasStruck = true;
       const si = terrain.objective.indexOf(id);
       if (si === S.seals) {
-        S.seals++;
-        S.divinity++;
-        S.reactions++;
-        log('Solar Seal ' + S.seals + '/3 stabilized. Divinity rises.');
-        if (S.seals === 1 && !S.w2) w2trig();
-        checkWin();
-        render();
-      } else if (si < S.seals) {
-        log('Already stabilized.');
-      } else {
-        log('Stabilize seals in order. Next seal at ' + terrain.objective[S.seals] + '.');
-      }
-    } else {
-      log('No valid target in range.');
-    }
+        S.seals++; S.divinity++; S.reactions++;
+        addLog('🔆 Solar Seal '+S.seals+'/3 stabilized. Divinity rises.');
+        if (S.solarCharge>=3) addLog('Ma\'at rider: Solar Charge empowers the seal.');
+        if (S.seals===1 && !S.w2) w2trig();
+        checkWin(); render();
+      } else if (si < S.seals) { addLog('Already stabilized.'); }
+      else { addLog('Stabilize in order. Next seal at '+terrain.objective[S.seals]+'.'); }
+    } else { addLog('No valid target in range.'); }
   }
 }
 
 function solarVerdict() {
   if (S.over) return;
-  if (S.momentum < 2) {
-    log('Solar Verdict needs 2 Momentum.');
-    return;
-  }
-  S.momentum -= 2;
-  S.divinity++;
-  S.reactions++;
-
-  let tgt = null, md = 99;
-  for (const p in enemies) {
-    const d = adj(S.deity, p);
-    if (d < md) { md = d; tgt = p; }
-  }
-
+  if (S.momentum < 2) { addLog('Solar Verdict needs 2 Momentum.'); return; }
+  S.momentum -= 2; S.divinity++; S.reactions++; S.hasStruck = true;
+  let dmg = 14;
+  if (S.solarCharge === 5) { dmg = 28; S.solarCharge = 0; addLog('MAX SOLAR CHARGE — Verdict DOUBLED!'); }
+  let tgt=null, md=99;
+  for (const p in enemies) { const d=adj(S.deity,p); if(d<md){md=d;tgt=p;} }
   if (tgt) {
-    enemies[tgt].hp -= 14;
-    log('SOLAR VERDICT: Burns ' + enemies[tgt].name + ' for 14.');
-    if (enemies[tgt].hp <= 0) {
-      log(enemies[tgt].name + ' collapses.');
-      delete enemies[tgt];
-    }
-  } else if (S.seals < 3 && adj(S.deity, terrain.objective[S.seals]) <= 3) {
-    S.seals++;
-    log('SOLAR VERDICT: Floods the Seal Court. Seal ' + S.seals + '/3 stabilized.');
-    checkWin();
-  } else {
-    log('Solar Verdict: no target in range.');
-  }
+    enemies[tgt].hp -= dmg;
+    addLog('☀ SOLAR VERDICT: Burns '+enemies[tgt].name+' for '+dmg+'.');
+    if (enemies[tgt].hp<=0) { addLog(enemies[tgt].name+' collapses.'); delete enemies[tgt]; }
+  } else if (S.seals<3 && adj(S.deity, terrain.objective[S.seals])<=3) {
+    S.seals++; addLog('☀ SOLAR VERDICT: Floods the Seal Court. Seal '+S.seals+'/3.'); checkWin();
+  } else { addLog('Solar Verdict: no target.'); S.momentum+=2; S.hasStruck=false; }
+  render();
+}
+
+function useTechnique() {
+  if (S.over) return;
+  if (techCooldown>0) { addLog('Bastion cooldown: '+techCooldown+' rounds.'); return; }
+  if (S.momentum<5) { addLog('Pylon Edict needs 5 Momentum.'); return; }
+  S.momentum -= 5; techCooldown = 2; bastionActive = true; bastionTurns = 2;
+  gainSC(1); S.reactions++;
+  addLog('🛡 PYLON EDICT — BASTION: +3 armor for 2 rounds.');
   render();
 }
 
 function reaction() {
   if (S.over) return;
-  if (S.divinity < 1) {
-    log('Reaction needs 1 Divinity.');
-    return;
-  }
-  S.divinity--;
-  S.momentum += 2;
-  S.reactions++;
-  if (zType(S.deity) === 'ray') {
-    S.hp = Math.min(MAX_HP, S.hp + 4);
-    log('Reaction: Judgment Ray pressure converts to Momentum. Heals 4.');
-  } else {
-    log('Reaction: Divinity channels into Momentum.');
-  }
+  if (S.divinity<1) { addLog('Reaction needs 1 Divinity.'); return; }
+  S.divinity--; S.momentum+=2; S.reactions++;
+  if (zType(S.deity)==='ray') { const h=ascended?8:4; S.hp=Math.min(MAX_HP,S.hp+h); addLog('⚡ Reaction: Ray converts to Momentum. Heals '+h+'.'); }
+  else if (bastionActive) { S.hp=Math.min(MAX_HP,S.hp+3); addLog('⚡ Reaction: Bastion absorbs. Heals 3.'); }
+  else { addLog('⚡ Reaction: Divinity to Momentum.'); }
+  if (S.stance==='GUARDIAN') gainSC(1);
   render();
 }
 
 function endRound() {
   if (S.over) return;
-  S.round++;
-  S.mode = 'move';
-
-  Object.entries(enemies).forEach(([pos, e]) => {
+  S.round++; S.mode='move'; S.hasMoved=false; S.hasStruck=false;
+  if (S.stance==='ASCENDANT') S.divinity++;
+  if (bastionTurns>0) { bastionTurns--; if(bastionTurns===0){bastionActive=false; addLog('Bastion fades.');} }
+  if (techCooldown>0) techCooldown--;
+  if (ascended) { ascensionTurns--; if(ascensionTurns<=0){ascended=false; S.momentum=Math.max(0,S.momentum-1); addLog('Ascension ends. Recovery.');} }
+  Object.entries(enemies).forEach(([pos,e]) => {
     const d = adj(pos, S.deity);
-    if (d <= 2) {
-      const dmg = e.type === 'elite' ? 6 : 4;
+    if (d<=2) {
+      let dmg = e.dmg - Math.floor(getArmor()/3);
+      dmg = Math.max(1, dmg);
       S.hp -= dmg;
-      if (zType(S.deity) === 'open' || zType(S.deity) === 'boss') {
-        S.hp -= 2;
-        log(e.name + ' attacks for ' + dmg + '. Hollow Drift: exposed +2.');
-      } else {
-        log(e.name + ' attacks for ' + dmg + '.');
-      }
-    } else if (d <= 4) {
-      log(e.name + ' advances.');
-    } else {
-      log(e.name + ' holds at ' + pos + '.');
-    }
+      if (zType(S.deity)==='open'||zType(S.deity)==='boss') { S.hp-=2; addLog(e.name+' strikes for '+dmg+'. Hollow Drift +2.'); }
+      else addLog(e.name+' strikes for '+dmg+'.');
+      if (S.stance==='GUARDIAN') gainSC(1);
+    } else if (d<=4) addLog(e.name+' advances.');
+    else addLog(e.name+' holds at '+pos+'.');
   });
-
-  if (S.round === 3 && !S.w2) w2trig();
-
-  if (zType(S.deity) === 'ray' || zType(S.deity) === 'open') {
-    S.momentum = Math.min(S.momentum + 1, 10);
-    log('Solar Law: holding light lanes builds Momentum.');
-  }
-
+  if (S.round===3 && !S.w2) w2trig();
+  if (zType(S.deity)==='ray'||zType(S.deity)==='open') S.momentum=Math.min(S.momentum+1,15);
   checkLose();
-  if (!S.over) log('Round ' + S.round + ' begins.');
+  if (!S.over) addLog('— Round '+S.round+' begins. —');
   render();
 }
 
 function gateArrival() {
-  S.cin = true;
-  render();
+  S.cin=true; render();
   document.body.classList.add('shake');
-  setTimeout(function() {
-    S.cin = false;
-    document.body.classList.remove('shake');
-    log('Gate arrival: the Sun-Scale Gate looms ahead.');
-    render();
-  }, 700);
+  setTimeout(function(){ S.cin=false; document.body.classList.remove('shake'); addLog('Gate arrival: the Sun-Scale Gate looms. Stone fractures with golden light.'); render(); }, 700);
 }
 
-render();
+function showGameOver() {
+  setTimeout(() => {
+    const ov = document.getElementById('overlay');
+    ov.classList.remove('hidden');
+    document.getElementById('overlayTitle').textContent = S.win?'VICTORY':'DEFEAT';
+    document.getElementById('overlayTitle').className = 'text-3xl font-black '+(S.win?'text-yellow-400':'text-red-500');
+    document.getElementById('overlaySub').textContent = S.win?'Solar Law endures. The Gate holds.':'The Hollow closes in.';
+    let stars = '';
+    stars += (S.win&&S.round<=8?'⭐':'☆')+' ';
+    stars += (S.win&&S.hp>=HP_STAR?'⭐':'☆')+' ';
+    stars += (S.reactions>=2?'⭐':'☆');
+    document.getElementById('overlayStars').textContent = stars;
+    let st = '<div>Seals: '+S.seals+'/3</div><div>Integrity: '+Math.max(0,S.hp)+'/'+MAX_HP+'</div><div>Turns: '+S.round+'/'+TURN_LIMIT+'</div><div>Reactions: '+S.reactions+'</div><div>Solar Charge: '+S.solarCharge+'/5</div><div>Enemies Left: '+Object.keys(enemies).length+'</div>';
+    document.getElementById('overlayStats').innerHTML = st;
+  }, 500);
+}
+
+function restart() { init(); }
+
+function render() {
+  const bf = document.getElementById('battlefield');
+  bf.innerHTML = '';
+  for (let y=1; y<=7; y++) {
+    for (const x of L) {
+      const id = x+y;
+      const tile = document.createElement('button');
+      tile.dataset.label = id;
+      tile.onclick = () => tap(id);
+      tile.className = 'tile rounded-xl border border-neutral-800 '+clsFor(id)+' active:scale-95';
+      let body = '';
+      if (id==='A1') body += '<div class="zone-label">Threshold</div>';
+      if (id==='C1') body += '<div class="zone-label">Causeway</div>';
+      if (id==='B3') body += '<div class="zone-label">Choke</div>';
+      if (id==='E3') body += '<div class="zone-label">Ray Lanes</div>';
+      if (id==='B4') body += '<div class="zone-label">Seals</div>';
+      if (id==='A5') body += '<div class="zone-label">Anchor</div>';
+      if (id==='D5') body += '<div class="zone-label">Gate Arena</div>';
+      if (id==='G7') body += '<div class="gate-glow absolute inset-0 rounded-xl border-2 border-yellow-500/50 flex items-center justify-center text-[8px] font-black text-yellow-300" style="background:linear-gradient(to bottom,rgba(250,204,21,.1),transparent)">GATE</div>';
+      if (SEAL_TILES.includes(id)) {
+        const si = SEAL_TILES.indexOf(id);
+        if (si < S.seals) body += '<div class="seal-done absolute inset-2 z-15 flex items-center justify-center rounded-full border-2 border-yellow-400 bg-yellow-500/30 text-2xl">'+SEAL_GLYPHS[si]+'</div>';
+        else { const nxt = si===S.seals; body += '<div class="seal-pulse absolute inset-2 z-15 flex items-center justify-center rounded-full border-2 '+(nxt?'border-yellow-400 bg-yellow-500/20':'border-neutral-600 bg-neutral-800/50')+' text-2xl '+(nxt?'text-yellow-300':'text-neutral-500')+'">'+SEAL_GLYPHS[si]+'</div>'; }
+      }
+      if (id==='A4') body += '<div class="absolute inset-2 z-5 flex items-center justify-center rounded-lg border border-blue-500/30 bg-blue-950/30 text-lg">🏛</div>';
+      if (S.deity===id) {
+        const aura = ascended?'border-purple-400 bg-purple-500/40':'border-yellow-400 bg-yellow-500/30';
+        body += '<div class="deity-token pulse absolute inset-x-0 -top-6 z-20 mx-auto flex h-12 w-12 items-center justify-center rounded-full border-4 '+aura+' text-2xl font-black">♜</div>';
+        if (bastionActive) body += '<div class="absolute inset-0 z-30 rounded-xl border-2 border-blue-400/60 bg-blue-500/10"></div>';
+      }
+      if (enemies[id]) {
+        const e = enemies[id];
+        const hpPct = Math.max(0, (e.hp/e.maxHp)*100);
+        const hpC = hpPct>50?'bg-green-500':hpPct>25?'bg-yellow-500':'bg-red-500';
+        body += '<div class="enemy-pulse absolute inset-1 z-10 flex flex-col items-center justify-center rounded-lg border border-red-600 bg-red-950/80">';
+        body += '<span class="text-2xl font-black text-red-300">'+e.icon+'</span>';
+        body += '<div class="hp-bar-bg mt-0.5 h-1 w-full px-0.5"><div class="hp-bar-fill '+hpC+'" style="width:'+hpPct+'%"></div></div>';
+        body += '<span class="text-[8px] text-red-200">'+e.hp+'</span></div>';
+      }
+      tile.innerHTML = body;
+      bf.appendChild(tile);
+    }
+  }
+  document.getElementById('hp').textContent = Math.max(0, S.hp);
+  document.getElementById('mom').textContent = S.momentum;
+  document.getElementById('div').textContent = S.divinity;
+  document.getElementById('seal').textContent = S.seal+'/3';
+  document.getElementById('solarCharge').textContent = S.solarCharge;
+  document.getElementById('turnLabel').textContent = 'Round '+S.round+' / '+TURN_LIMIT;
+  document.getElementById('phaseLabel').textContent = S.over?(S.win?'Victory':'Defeat'):'Player Phase';
+  for (let i=1;i<=5;i++){const p=document.getElementById('sc'+i);if(p)p.style.opacity=i<=S.solarCharge?'1':'0.2';}
+  const hpEl=document.getElementById('hp');
+  const hpPct=S.hp/MAX_HP;
+  hpEl.className='text-2xl '+(hpPct>0.6?'text-green-400':hpPct>0.3?'text-yellow-400':'text-red-400');
+  if (S.win&&S.round<=8) document.getElementById('star1').className='star-done';
+  if (S.win&&S.hp>=HP_STAR) document.getElementById('star2').className='star-done';
+  if (S.reactions>=2) document.getElementById('star3').className='star-done';
+  document.getElementById('log').innerHTML = S.log.map(l=>'<div>'+l+'</div>').join('');
+  ['Guardian','Assault','Ascendant'].forEach(s=>{const el=document.getElementById('stance'+s);if(el)el.classList.toggle('stance-active',S.stance===s.toUpperCase());});
+  document.getElementById('stanceDesc').textContent = STANCES[S.stance].desc;
+  document.getElementById('btnVerdict').disabled = S.momentum<2;
+  document.getElementById('btnTech').disabled = techCooldown>0||S.momentum<5;
+  document.getElementById('btnReact').disabled = S.divinity<1;
+}
+
+init();
 </script>
 </body>
 </html>

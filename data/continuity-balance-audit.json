@@ -1,20 +1,28 @@
 {
   "id": "TG-CONTINUITY-BALANCE-AUDIT-001",
-  "generated": "2026-08-17T05:29:27.677Z",
-  "status": "PASS",
-  "issues": [],
+  "generated": "2026-08-17T18:32:52.489Z",
+  "status": "FAIL",
+  "issues": [
+    "Aten Ra has 4 Titans, expected 9",
+    "Asgardian has 4 Titans, expected 9",
+    "Olympian has 4 Titans, expected 9",
+    "Kami has 4 Titans, expected 9",
+    "Tuatha has 4 Titans, expected 9",
+    "Empyrean has 4 Titans, expected 9",
+    "Infernal Dominion has 4 Titans, expected 9"
+  ],
   "warnings": [],
   "summary": {
     "factions": 7,
     "realmCodexEntries": 7,
-    "loreEntries": 35,
+    "loreEntries": 36,
     "campaigns": 8,
     "campaignChapters": 35,
     "missions": 280,
     "missionDialogue": 280,
     "missionArtPackages": 280,
-    "titans": 63,
-    "statBudgetSpread": 0.4
+    "titans": 28,
+    "statBudgetSpread": 5.2
   },
   "flow": {
     "implementedFactionCampaigns": [
@@ -101,29 +109,27 @@
   },
   "balance": {
     "factionBudgetAverages": {
-      "Aten Ra": 117.4,
-      "Asgardian": 117.4,
-      "Olympian": 117.8,
-      "Kami": 117.8,
-      "Tuatha": 117.8,
-      "Empyrean": 117.8,
-      "Infernal Dominion": 117.8
+      "Aten Ra": 117,
+      "Asgardian": 118.5,
+      "Olympian": 116.3,
+      "Kami": 116.5,
+      "Tuatha": 113.3,
+      "Empyrean": 117.3,
+      "Infernal Dominion": 115.5
     },
     "roleCounts": {
       "Defender": 7,
-      "Battery": 7,
-      "Controller": 7,
-      "Breaker": 7,
-      "Disruptor": 7,
-      "Sustain": 7,
-      "Artillery": 7,
-      "Guardian": 7,
-      "Assassin": 7
+      "Disruptor": 5,
+      "Sustain": 4,
+      "Assassin": 1,
+      "Battery": 2,
+      "Guardian": 3,
+      "Breaker": 3,
+      "Artillery": 1,
+      "Controller": 2
     },
     "rarityCounts": {
-      "Legendary": 14,
-      "Epic": 28,
-      "Rare": 21
+      "Mythic God": 28
     },
     "policy": "Gameplay Director reviews balance problems; no automatic balance changes without validation."
   }

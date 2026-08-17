@@ -2,7 +2,7 @@ import {
   PHASES,
   STANCES,
   createInitialSoloBattleState,
-  applyDeityAction,
+  applyTitanAction,
   revealEnemyIntents,
   resolveEnemyPhase,
   applyReaction,
@@ -325,7 +325,7 @@ export function applyBattlefieldAction(input, action) {
   const type = String(action?.type || '').toUpperCase();
   if (type === BATTLEFIELD_ACTIONS.INTERACT) return applyBattlefieldInteraction(state, action.interaction || action);
   if (type === BATTLEFIELD_ACTIONS.END_ROUND) return endBattlefieldRound(state);
-  state = applyDeityAction(state, action);
+  state = applyTitanAction(state, action);
   state = maybeProgressCombatObjectives(state, before);
   if (state.phase === PHASES.OBJECTIVE) state.phase = PHASES.PLAYER;
   return state;

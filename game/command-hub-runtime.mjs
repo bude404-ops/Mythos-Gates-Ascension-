@@ -1,4 +1,4 @@
-import { PHASES, STANCES, createBattleState, applyDeityAction, revealEnemyIntents, resolveEnemyPhase, applyReaction, applyTerrainTick, evaluateObjectives, autoAdvanceEnemyTurn, summarizeBattle, resolveMissionScaling, scaleEnemyForMission } from './browser-battle-engine.mjs';
+import { PHASES, STANCES, createBattleState, applyTitanAction, revealEnemyIntents, resolveEnemyPhase, applyReaction, applyTerrainTick, evaluateObjectives, autoAdvanceEnemyTurn, summarizeBattle, resolveMissionScaling, scaleEnemyForMission } from './browser-battle-engine.mjs';
 import { renderBattlefieldOverviewView } from './views/battlefield-overview-view.mjs';
 const STORAGE_KEY = 'tg.commandHub.playerState.v1';
 const BOOT_STAGES = ['BOOT','INITIALIZATION','ASSET_PRELOAD','SAVE_DATA_LOAD','SAVE_VALIDATION','PLAYER_STATE_LOAD','CANON_DATA_LOAD','CONTENT_VALIDATION','TITLE_GATE_PRESENTATION','MAIN_COMMAND_HUB'];
@@ -578,11 +578,11 @@ export function createCommandHubRuntime(DATA, mount){
     setRealm(fid){ const p=ensurePlayerState(); p.campaignProgress.currentFactionId=fid; const flow=(playflow().flow||[]).find(f=>f.factionId===fid); const ch=flow?.chapterRoutes?.[0]; if(ch){ p.campaignProgress.currentChapterId=ch.chapterId; p.campaignProgress.currentMissionId=ch.defaultMissionId || ch.normalMissionIds?.[0]; } savePlayerState(); setRoute('hub'); },
     launchBattle(){ AudioManager.play('campaign_start'); buildBattle(); setRoute('battle'); },
     battleTarget(id){ state.battleTargetId=id; render(); },
-    battleMove(x,y){ try{ const b=ensureBattle(); if(b.phase!==PHASES.PLAYER) return; state.battle=applyDeityAction(b,{type:'MOVE',to:{x,y}}); render(); }catch(e){ log('battle-error',String(e)); render(); } },
-    battleBasic(){ try{ const b=ensureBattle(); const targetId=state.battleTargetId || b.enemies.find(e=>e.hp>0)?.instanceId; state.battle=applyDeityAction(b,{type:'BASIC_ATTACK',targetId}); render(); }catch(e){ log('battle-error',String(e)); render(); } },
-    battleTechnique(){ try{ const b=ensureBattle(); const targetId=state.battleTargetId || b.enemies.find(e=>e.hp>0)?.instanceId; state.battle=applyDeityAction(b,{type:'TECHNIQUE',targetId}); render(); }catch(e){ log('battle-error',String(e)); render(); } },
-    battleFocus(){ try{ state.battle=applyDeityAction(ensureBattle(),{type:'FOCUS'}); render(); }catch(e){ log('battle-error',String(e)); render(); } },
-    battleStance(stance){ try{ state.battle=applyDeityAction(ensureBattle(),{type:'STANCE_SHIFT',stance}); render(); }catch(e){ log('battle-error',String(e)); render(); } },
+    battleMove(x,y){ try{ const b=ensureBattle(); if(b.phase!==PHASES.PLAYER) return; state.battle=applyTitanAction(b,{type:'MOVE',to:{x,y}}); render(); }catch(e){ log('battle-error',String(e)); render(); } },
+    battleBasic(){ try{ const b=ensureBattle(); const targetId=state.battleTargetId || b.enemies.find(e=>e.hp>0)?.instanceId; state.battle=applyTitanAction(b,{type:'BASIC_ATTACK',targetId}); render(); }catch(e){ log('battle-error',String(e)); render(); } },
+    battleTechnique(){ try{ const b=ensureBattle(); const targetId=state.battleTargetId || b.enemies.find(e=>e.hp>0)?.instanceId; state.battle=applyTitanAction(b,{type:'TECHNIQUE',targetId}); render(); }catch(e){ log('battle-error',String(e)); render(); } },
+    battleFocus(){ try{ state.battle=applyTitanAction(ensureBattle(),{type:'FOCUS'}); render(); }catch(e){ log('battle-error',String(e)); render(); } },
+    battleStance(stance){ try{ state.battle=applyTitanAction(ensureBattle(),{type:'STANCE_SHIFT',stance}); render(); }catch(e){ log('battle-error',String(e)); render(); } },
     battleObjective(){ try{ const b=ensureBattle(); const objective=b.objectives.find(o=>o.status!=='COMPLETE'); if(!objective) return; state.battle=evaluateObjectives(b,{objectiveId:objective.id,progress:1,momentum:12,divinity:10}); render(); }catch(e){ log('battle-error',String(e)); render(); } },
     battleEndTurn(){ try{ state.battle=autoAdvanceEnemyTurn(ensureBattle()); render(); }catch(e){ log('battle-error',String(e)); render(); } },
     battleReact(choice){ try{ let b=applyReaction(ensureBattle(),choice); state.battle=autoAdvanceEnemyTurn(b); render(); }catch(e){ log('battle-error',String(e)); render(); } },
