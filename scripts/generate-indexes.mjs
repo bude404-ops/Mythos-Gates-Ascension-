@@ -98,6 +98,7 @@ const files = {
   'tactical-blueprint-layouts.json': 'tacticalBlueprintLayouts',
   'tactical-blueprint-placements.json': 'tacticalBlueprintPlacements',
   'titan-enemy-balance-pass.json': 'titanEnemyBalancePass',
+  'titan-art-identity-audit.json': 'titanArtIdentityAudit',
   'gameplay-balance-framework.json': 'gameplayBalanceFramework',
   'combat-first-gameplay-doctrine.json': 'combatFirstGameplayDoctrine',
   'economy-migration-audit.json': 'economyMigrationAudit',
