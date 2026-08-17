@@ -60,7 +60,7 @@ Tuatha Dé Danann divine tribes, sídhe mound realms, Tír na nÓg youthlands, d
 - Druid/standing stones: prophecy, memory, ritual landscape
 
 ## Empyrean — The Radiant Hierarchies
-angelic messengers, seraphim burning praise, cherubim guardianship, ophanim wheels within wheels, thrones as living judgement, virtues/powers/dominions/principalities/archangels as orders of cosmic governance, celestial choirs, ladders to heaven, radiant cities, bells, edicts, halos, wings, eyes, glass, and sacred geometry — treated as Earth’s echo of the older Radiant Hierarchies.
+angelic messengers, seraphim burning praise, cherubim guardianship, ophanim wheels within wheels, thrones as living judgement, virtues/powers/dominions/principalities/archangels as orders of cosmic governance, celestial choirs, ladders to heaven, radiant cities, bells, edicts, auras, wings, eyes, glass, and sacred geometry — treated as Earth’s echo of the older Radiant Hierarchies.
 
 ### Source anchors
 - Seraphim: burning praise, purification flame, six-wing intensity

@@ -32,7 +32,7 @@ Every Titan weapon, armor body, resonance core, basic, technique, signature, rea
 - Movement: Hermes Crossing Step
 - Reaction: Athena Countermeasure
 - Execution: Claim the Laurel
-- Visual rule: living marble-light, bronze cuirass, laurel circuits, aegis scales, oracle smoke, thunder tribunal halos, hoplite shield geometry
+- Visual rule: living marble-light, bronze cuirass, laurel circuits, aegis scales, oracle smoke, thunder tribunal auras, hoplite shield geometry
 
 ## Kami
 - Resource: Shrine Resonance
@@ -62,7 +62,7 @@ Every Titan weapon, armor body, resonance core, basic, technique, signature, rea
 - Movement: Archangel Herald Ascent
 - Reaction: Ophanim Wheel Intercept
 - Execution: Seal the Discord
-- Visual rule: white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire
+- Visual rule: white-gold radiance, many-eye auras, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire
 
 ## Infernal Dominion
 - Resource: Contract Debt

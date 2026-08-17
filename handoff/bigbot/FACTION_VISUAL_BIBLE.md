@@ -9,7 +9,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 - Titans are living extradimensional beings, not buildings, robots, statues, block stacks, or abstract architecture piles.
 - NPCs are non-playable lore characters whose costume must show role, faction duty, and personal history.
 - Creatures can be monstrous but must stay rooted in faction or Hollow logic rather than generic alien design.
-- Architecture can influence clothing, regalia, halos, weapons, and environment — never replace living anatomy for character assets.
+- Architecture can influence clothing, regalia, auras, weapons, and environment — never replace living anatomy for character assets.
 - No readable real-world text or logos; glyphs and marks must be abstract lore texture.
 
 ## Aten Ra — The Solar Dominion of Khepra
@@ -33,7 +33,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 - Use Nile/Red Land dual anatomy: black fertile stone or river-glass surfaces balanced against desert-red scars, storm-sand erosion, and white-gold solar seams.
 
 ### Armor shape language
-- solar-disc crown or halo with subtle hand-ray geometry inspired by Aten, not sci-fi rings
+- solar-disc crown or aura with subtle hand-ray geometry inspired by Aten, not sci-fi rings
 - broad wesekh-style divine collar and pectoral plates fused to chest anatomy
 - nemes-like energy mantle or linen head/shoulder flow for ruler silhouettes
 - pylon harnesses and temple-gate shoulder frames that wrap the body instead of replacing it
@@ -82,7 +82,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 ### Armor construction
 - Armor is divine office made physical: crown, collar, pectoral, linen, scale, pylon harness, and sacred weapon geometry bonded to living extradimensional anatomy.
 - Human Egyptian crowns, ankhs, pylons, collars, and temple forms are in-world human copies of these Aten Ra originals; the deity version should feel older, stranger, and more functional.
-- Pylons, obelisks, shrines, and solar courts can influence silhouettes as shoulder frames, halos, gates, collars, shields, or weapons — never as building torsos or city-on-body decoration.
+- Pylons, obelisks, shrines, and solar courts can influence silhouettes as shoulder frames, auras, gates, collars, shields, or weapons — never as building torsos or city-on-body decoration.
 - Every armor choice must reveal myth function: Ma’at law, Ra kingship, Aten radiance, Khepri renewal, Sutekh storm-disruption, Iset restoration, Maahes guarding, or Amunet concealment.
 
 ### Titan rules
@@ -187,7 +187,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 ### Armor construction
 - Every armor choice must prove the source-culture premise: source culture humans later copied as Norse myth.
 - Avoid museum cosplay; the Realm version is older, stranger, alive, and operational.
-- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or halos, but characters must not become buildings.
+- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or auras, but characters must not become buildings.
 - Role clarity beats ornament.
 
 ### Titan rules
@@ -249,7 +249,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 
 ### Armor shape language
 - source-culture regalia humans later copied: source culture humans later copied as Greek myth
-- living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal halos, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands.
+- living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal auras, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands.
 - rank/function shown through armor construction, posture, tools, and materials rather than costume clichés
 - weapons and armor must reveal battlefield role and myth anchor
 
@@ -290,7 +290,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 ### Armor construction
 - Every armor choice must prove the source-culture premise: source culture humans later copied as Greek myth.
 - Avoid museum cosplay; the Realm version is older, stranger, alive, and operational.
-- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or halos, but characters must not become buildings.
+- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or auras, but characters must not become buildings.
 - Role clarity beats ornament.
 
 ### Titan rules
@@ -322,7 +322,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 - Roman gladiator confusion
 - marble statue stiffness
 - robot bronze automaton
-- sci-fi halo
+- sci-fi aura
 - neon arena grid
 - tourist Greek temple body
 - plastic gold laurel
@@ -394,7 +394,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 ### Armor construction
 - Every armor choice must prove the source-culture premise: source culture humans later copied as Japanese myth and Shinto shrine lore.
 - Avoid museum cosplay; the Realm version is older, stranger, alive, and operational.
-- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or halos, but characters must not become buildings.
+- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or auras, but characters must not become buildings.
 - Role clarity beats ornament.
 
 ### Titan rules
@@ -498,7 +498,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 ### Armor construction
 - Every armor choice must prove the source-culture premise: source culture humans later copied as Celtic and Irish fae myth.
 - Avoid museum cosplay; the Realm version is older, stranger, alive, and operational.
-- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or halos, but characters must not become buildings.
+- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or auras, but characters must not become buildings.
 - Role clarity beats ornament.
 
 ### Titan rules
@@ -559,7 +559,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 
 ### Armor shape language
 - source-culture regalia humans later copied: source culture humans later copied as angelic and heavenly lore
-- white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.
+- white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.
 - rank/function shown through armor construction, posture, tools, and materials rather than costume clichés
 - weapons and armor must reveal battlefield role and myth anchor
 
@@ -599,7 +599,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 ### Armor construction
 - Every armor choice must prove the source-culture premise: source culture humans later copied as angelic and heavenly lore.
 - Avoid museum cosplay; the Realm version is older, stranger, alive, and operational.
-- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or halos, but characters must not become buildings.
+- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or auras, but characters must not become buildings.
 - Role clarity beats ornament.
 
 ### Titan rules
@@ -632,7 +632,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 - generic church costume
 - literal cathedral body
 - block tower silhouette
-- neon sci-fi halo
+- neon sci-fi aura
 - cute cherub baby
 - flat white statue
 - readable Bible text
@@ -701,7 +701,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 ### Armor construction
 - Every armor choice must prove the source-culture premise: source culture humans later copied as hell, demonology, and infernal contract lore.
 - Avoid museum cosplay; the Realm version is older, stranger, alive, and operational.
-- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or halos, but characters must not become buildings.
+- Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or auras, but characters must not become buildings.
 - Role clarity beats ornament.
 
 ### Titan rules

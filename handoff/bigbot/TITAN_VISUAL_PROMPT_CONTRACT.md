@@ -15,10 +15,10 @@ For each deity, Big Bot must use:
 7. Master Scale Reference: playerTitan scale 5.2, with mobile readability.
 
 ## Body language rule
-A deity body may include armor-like forms, sacred metal, carved stone, living wood, infernal iron, stormsteel, marble, halos, masks, horns, or sigils. But those elements must feel grown into a living mythic body or forged by divine Realm law. They must never read as mechanical plates attached to a robot chassis.
+A deity body may include armor-like forms, sacred metal, carved stone, living wood, infernal iron, stormsteel, marble, auras, masks, horns, or sigils. But those elements must feel grown into a living mythic body or forged by divine Realm law. They must never read as mechanical plates attached to a robot chassis.
 
 ## Anti-block / anti-building rule
-A deity may carry sacred geometry, pylon influence, stone, metal, roots, halos, horns, masks, and divine ornament — but it must remain a character with readable living anatomy, motion, and presence. Do not generate Titans as walking buildings, blocky towers, cube stacks, fortress torsos, literal temples on legs, city chunks, terrain piles, or abstract geometric sculptures.
+A deity may carry sacred geometry, pylon influence, stone, metal, roots, auras, horns, masks, and divine ornament — but it must remain a character with readable living anatomy, motion, and presence. Do not generate Titans as walking buildings, blocky towers, cube stacks, fortress torsos, literal temples on legs, city chunks, terrain piles, or abstract geometric sculptures.
 
 ## Universal negative direction
 Reject: robot, mecha, android, cyborg chassis, transformer, powered suit, vehicle parts, pistons, hydraulic joints, circuit-board body, spaceship aesthetic, sci-fi firearms, futuristic craft, corporate UI, superhero costume, normal human cosplay, generic alien monster, blocky building body, tower body, fortress torso, stacked cubes, abstract geometric shape pile, terrain chunks attached to body, literal architecture body, readable text, watermark, logo.

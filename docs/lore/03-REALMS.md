@@ -38,7 +38,7 @@ Visual identity: storm-iron mail, oath-ring collars, raven and wolf omen shapes,
 **Philosophy:** Excellence is sacred only when witnessed. Olympian power is trial, beauty, rivalry, law, and victory turned into divine physics.  
 **Route Function:** One selected Olympian god or goddess enters Laurel-Sky Hubris Trial to test the Realm's law through source-culture hazards, Hollow pressure, elite locks, lore detours, and the boss chamber.
 
-Visual identity: living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal halos, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands.
+Visual identity: living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal auras, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands.
 
 ## 4. Kami
 
@@ -74,7 +74,7 @@ Visual identity: silver branch crowns, moonlit green-gold, living bark armor, wo
 **Philosophy:** Order must be sung into existence every moment. Silence is the first wound of the Hollow.  
 **Route Function:** One selected Empyrean god or goddess enters Choir-Vault Discord Ascent to test the Realm's law through source-culture hazards, Hollow pressure, elite locks, lore detours, and the boss chamber.
 
-Visual identity: white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.
+Visual identity: white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.
 
 ## 7. Infernal Dominion
 

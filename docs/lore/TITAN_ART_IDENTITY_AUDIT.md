@@ -117,7 +117,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Sex: Female
 - Faction: Kami
 - Lore connection: Amaterasu is the playable source-realm divinity for Kami; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
-- Individuality: mirror halo, long sleeve-armor panels, sun hair ornaments, shrine-empress profile
+- Individuality: mirror aura, long sleeve-armor panels, sun hair ornaments, shrine-empress profile
 - Sexual identity: Female identity is locked through face, body proportions, armor shaping, posture, and silhouette: elegant feminine empress frame, graceful neck, narrow waist, layered kimono-armor preserving feminine silhouette
 - Revised prompt: TG-PROMPT-028
 
@@ -189,7 +189,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Sex: Male
 - Faction: Empyrean
 - Lore connection: Michael is the playable source-realm divinity for Empyrean; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
-- Individuality: two vast wings, sword vertical, shield halo, commander-triangle outline
+- Individuality: two vast wings, sword vertical, shield aura, commander-triangle outline
 - Sexual identity: Male identity is locked through face, body proportions, armor shaping, posture, and silhouette: tall athletic masculine warrior build, broad shoulders, narrow waist, immaculate upright stance
 - Revised prompt: TG-PROMPT-046
 
@@ -198,7 +198,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Sex: Female
 - Faction: Empyrean
 - Lore connection: Sophia is the playable source-realm divinity for Empyrean; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
-- Individuality: scroll ribbons, many-eye halo veil, compass staff, cathedral-curve silhouette
+- Individuality: scroll ribbons, many-eye aura veil, compass staff, cathedral-curve silhouette
 - Sexual identity: Female identity is locked through face, body proportions, armor shaping, posture, and silhouette: graceful feminine oracle frame, long neck, narrow waist, flowing hips, still commanding posture
 - Revised prompt: TG-PROMPT-048
 
@@ -207,7 +207,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Sex: Female
 - Faction: Empyrean
 - Lore connection: Shekinah is the playable source-realm divinity for Empyrean; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
-- Individuality: veil-flame halo, censer chain arc, layered glass robes, luminous feminine outline
+- Individuality: veil-flame aura, censer chain arc, layered glass robes, luminous feminine outline
 - Sexual identity: Female identity is locked through face, body proportions, armor shaping, posture, and silhouette: elegant feminine flame-bearing frame, soft curves under glass armor, floating threshold posture
 - Revised prompt: TG-PROMPT-050
 
@@ -216,7 +216,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Sex: Male
 - Faction: Empyrean
 - Lore connection: Gabriel is the playable source-realm divinity for Empyrean; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
-- Individuality: trumpet spear, folded wings, messenger tabard, bell halo
+- Individuality: trumpet spear, folded wings, messenger tabard, bell aura
 - Sexual identity: Male identity is locked through face, body proportions, armor shaping, posture, and silhouette: slender athletic masculine messenger build, long limbs, lifted chest, fast intercept stance
 - Revised prompt: TG-PROMPT-053
 
