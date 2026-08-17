@@ -18,7 +18,7 @@ const clone = value => JSON.parse(JSON.stringify(value));
 const key = position => `${position.x},${position.y}`;
 const distance = (a, b) => Math.abs(a.x - b.x) + Math.abs(a.y - b.y);
 
-const M01_TURN_LIMIT = 11;
+const TURN_LIMIT = 11;
 
 const ZONE_TYPES = Object.freeze({
   entry: 'BROKEN_THRESHOLD',
@@ -138,10 +138,10 @@ export function createBattlefieldObjectives(verticalSlice) {
 function compactCreature(creature, binding) {
   if (!creature) throw new Error(`Missing creature binding ${binding.creatureId}`);
   const stats = clone(creature.stats || {});
-  const bossScalar = binding.boss ? 0.38 : binding.role === 'ELITE' ? 0.45 : 0.34;
+  const bossScalar = binding.role === 'CHAMPION' ? 0.42 : binding.role === 'ELITE' ? 0.45 : 0.34;
   return {
     id: creature.id,
-    name: binding.boss ? 'The First Gate Colossus' : creature.name,
+    name: creature.name,
     combatRole: binding.role || creature.combatRole || 'PRESSURE',
     stats: {
       hp: Math.max(10, Math.round((stats.hp || 40) * bossScalar)),
@@ -171,8 +171,8 @@ function applyEnemyPositions(state, bindings = DEFAULT_ENEMY_BINDINGS) {
       position: clone(binding.position),
       encounter: binding.encounter,
       battlefieldSlot: binding.slot,
-      boss: Boolean(binding.boss),
-      phaseIndex: binding.boss ? 1 : null
+      boss: false,
+      phaseIndex: null,
     };
   });
   return next;
@@ -195,6 +195,7 @@ export function createBattlefieldRuntimeState({ verticalSlice, titan, creatures,
   });
   state = applyEnemyPositions(state);
   state.titan.position = { x: 2, y: 2 };
+  state.turnLimit = TURN_LIMIT;
   state.battlefield = {
     title: verticalSlice.title,
     difficulty,
@@ -398,4 +399,4 @@ export function runBattlefieldScript(initialState, actions) {
   }, initialState);
 }
 
-export { PHASES, STANCES, DEFAULT_ENEMY_BINDINGS };
+export { PHASES, STANCES, DEFAULT_ENEMY_BINDINGS, TURN_LIMIT };

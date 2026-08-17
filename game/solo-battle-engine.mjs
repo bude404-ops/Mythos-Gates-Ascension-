@@ -348,8 +348,14 @@ export function evaluateObjectives(inputState, objectiveEvent = null) {
     state.round += 1;
     state.telemetry.turns = state.round;
     state.titan.actionsTakenThisRound = [];
-    state.phase = PHASES.PLAYER;
-    log(state, 'ROUND_ADVANCE', { round: state.round });
+    // M01 turn limit enforcement: defeat if turn limit exceeded
+    if (state.turnLimit && state.round > state.turnLimit) {
+      state.phase = PHASES.DEFEAT;
+      log(state, 'TURN_LIMIT_EXCEEDED', { round: state.round, limit: state.turnLimit });
+    } else {
+      state.phase = PHASES.PLAYER;
+      log(state, 'ROUND_ADVANCE', { round: state.round });
+    }
   }
   return state;
 }
