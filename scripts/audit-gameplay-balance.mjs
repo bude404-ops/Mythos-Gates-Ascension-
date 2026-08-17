@@ -5,7 +5,7 @@ const issues = [];
 const warnings = [];
 const framework = read('data/gameplay-balance-framework.json');
 const titans = read('data/titans.json');
-const roleMatrix = read('data/titan-role-matrix.json').titans;
+const roleMatrix = read('data/titan-role-matrix.json').factions.flatMap(f => f.titans || []);
 const missions = read('data/mission-registry.json');
 const enemies = read('data/enemy-archetype-registry.json');
 const raid = read('data/raid-system.json');
@@ -17,12 +17,12 @@ const mechanicFamilies = ['Solar Edict', 'Rune Oath', 'Aegis Favor', 'Spirit Sea
 for (const role of roles) {
   if (!framework.roleContracts?.[role]) issues.push(`Missing role contract: ${role}`);
   const count = titans.filter((t) => t.role === role).length;
-  if (count < factions.length) warnings.push(`Role ${role} has only ${count} Titans; expected at least one per faction.`);
+  if (count < factions.length) warnings.push(`Role ${role} has only ${count} deities; expected at least one per faction.`);
 }
 
 for (const family of mechanicFamilies) {
   const count = roleMatrix.filter((t) => t.uniqueMechanic?.includes(family)).length;
-  if (count !== 9) issues.push(`Mechanic family ${family} expected 9 Titans, found ${count}.`);
+  if (count !== 9) issues.push(`Mechanic family ${family} expected 9 deities, found ${count}.`);
 }
 
 for (const t of roleMatrix) {
@@ -39,8 +39,8 @@ for (const mode of requiredModes) {
   if (!contract?.balanceRule) issues.push(`Mode contract ${mode} missing balance rule.`);
 }
 
-const missionWithoutRoles = missions.filter((m) => !m.encouragedTitanRoles?.length);
-if (missionWithoutRoles.length) issues.push(`${missionWithoutRoles.length} missions missing encouragedTitanRoles.`);
+const missionWithoutRoles = missions.filter((m) => !m.encouragedDeityRoles?.length);
+if (missionWithoutRoles.length) issues.push(`${missionWithoutRoles.length} missions missing encouragedDeityRoles.`);
 const missionWithoutProfiles = missions.filter((m) => !m.tacticalProfile);
 if (missionWithoutProfiles.length) issues.push(`${missionWithoutProfiles.length} missions missing tacticalProfile.`);
 

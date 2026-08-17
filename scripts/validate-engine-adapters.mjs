@@ -30,7 +30,7 @@ for (const engine of ['unreal', 'unity']) {
 const summary = buildEngineExportSummary({ includeMissions: true });
 if (summary.counts.titans !== 63) issues.push(`Engine export expected 63 Titans, found ${summary.counts.titans}.`);
 if (summary.counts.missions !== 280) issues.push(`Engine export expected 280 missions, found ${summary.counts.missions}.`);
-if (summary.canonicalRules.activeTitanCount !== 1) issues.push('Engine export must preserve one-active-deity combat.');
+if (summary.canonicalRules.activeDeityCount !== 1) issues.push('Engine export must preserve one-active-deity combat.');
 
 const result = { ok: issues.length === 0, engineAdapters: issues.length === 0 ? 'PASS' : 'FAIL', summary, issues };
 console.log(JSON.stringify(result, null, 2));

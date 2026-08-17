@@ -89,7 +89,7 @@ for (const token of ['Lore Continuity Sweep', 'one-active-deity canon', 'One act
     process.exit(1);
   }
 }
-if (!soloCombatDesign.samplePresets.every(p => p.activeTitanCount === 1 || p.squadSize === 1)) {
+if (!soloCombatDesign.samplePresets.every(p => p.activeDeityCount === 1 || p.squadSize === 1)) {
   console.error(JSON.stringify({ ok: false, activeTitanPresetInvalid: true }, null, 2));
   process.exit(1);
 }
