@@ -14,9 +14,9 @@ assert.equal(audit.status, 'IMPLEMENTED');
 assert.equal(audit.entries.length, titans.length);
 assert.equal(prompts.length, titans.length);
 assert.equal(audit.summary.totalTitans, titans.length);
-assert.ok(audit.summary.pass >= 1, 'audit should preserve successful designs');
-assert.ok(audit.summary.refine >= 1, 'audit should refine borderline designs');
-assert.ok(audit.summary.redesign >= 1, 'audit should redesign failed generic identities');
+assert.equal(audit.summary.pass, titans.length, 'resolution pass should leave every Titan production-ready');
+assert.equal(audit.summary.refine, 0, 'no borderline designs should remain after resolution pass');
+assert.equal(audit.summary.redesign, 0, 'no failed generic identities should remain after resolution pass');
 assert.ok(audit.summary.female >= 21, 'female identity coverage too low');
 assert.ok(audit.summary.male >= 35, 'male identity coverage too low');
 
