@@ -1,0 +1,114 @@
+{
+  "id": "TG-HOSTED-BACKEND-BOUNDARY-V1",
+  "schema": "TG_HOSTED_BACKEND_BOUNDARY_V1",
+  "status": "IMPLEMENTED_CONTRACT",
+  "version": "1.10.0-hosted-backend-boundary",
+  "purpose": "Defines the backend service boundary required to promote Platform Core v1 from deterministic local service to hosted game-platform services without changing gameplay callers.",
+  "authoritativeServices": [
+    {
+      "id": "profile-service",
+      "name": "Profile Service",
+      "owns": [
+        "player identity",
+        "display name",
+        "account metadata"
+      ],
+      "requiredOperations": [
+        "createProfile",
+        "getProfile",
+        "touchProfile"
+      ]
+    },
+    {
+      "id": "cloud-save-service",
+      "name": "Cloud Save Service",
+      "owns": [
+        "canonical save snapshots",
+        "save version",
+        "save checksum"
+      ],
+      "requiredOperations": [
+        "loadSave",
+        "commitSave",
+        "exportSave"
+      ]
+    },
+    {
+      "id": "economy-ledger-service",
+      "name": "Economy Ledger Service",
+      "owns": [
+        "currency debits",
+        "currency credits",
+        "ledger entry sequence",
+        "balance projection"
+      ],
+      "requiredOperations": [
+        "creditCurrency",
+        "debitCurrency",
+        "projectBalances"
+      ]
+    },
+    {
+      "id": "telemetry-ingestion-service",
+      "name": "Telemetry Ingestion Service",
+      "owns": [
+        "platform events",
+        "session events",
+        "mission/economy telemetry"
+      ],
+      "requiredOperations": [
+        "ingestEventBatch",
+        "queryPlayerEventCount"
+      ]
+    }
+  ],
+  "serviceLevelRules": {
+    "idempotency": "Every mutating request carries an idempotency key and must be safe to retry.",
+    "authority": "Currency balances are derived from ledger entries; clients may display but not authoritatively set balances.",
+    "versioning": "Save writes must compare expected saveVersion before accepting mutation.",
+    "auditability": "Profile, save, ledger, and telemetry mutations must emit platform events.",
+    "offlineCompatibility": "The local Platform Core service remains a deterministic adapter used by tests and offline prototypes."
+  },
+  "requiredEndpoints": [
+    {
+      "method": "POST",
+      "route": "/profiles",
+      "operation": "createProfile"
+    },
+    {
+      "method": "GET",
+      "route": "/profiles/{playerId}",
+      "operation": "getProfile"
+    },
+    {
+      "method": "GET",
+      "route": "/players/{playerId}/save",
+      "operation": "loadSave"
+    },
+    {
+      "method": "PUT",
+      "route": "/players/{playerId}/save",
+      "operation": "commitSave"
+    },
+    {
+      "method": "POST",
+      "route": "/players/{playerId}/ledger/credit",
+      "operation": "creditCurrency"
+    },
+    {
+      "method": "POST",
+      "route": "/players/{playerId}/ledger/debit",
+      "operation": "debitCurrency"
+    },
+    {
+      "method": "POST",
+      "route": "/telemetry/events",
+      "operation": "ingestEventBatch"
+    }
+  ],
+  "validation": [
+    "npm run validate:backend-boundary",
+    "npm run test:backend-boundary",
+    "npm run precommit:verify"
+  ]
+}

@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import { validateContract } from '../src/data-loaders/schema-contracts.mjs';
+import { createLocalHostedBackendBoundary, validateBackendBoundaryContract } from '../src/platform/index.mjs';
+
+const contract = JSON.parse(fs.readFileSync('data/hosted-backend-boundary.json', 'utf8'));
+const schema = JSON.parse(fs.readFileSync('schemas/hosted-backend-boundary.schema.json', 'utf8'));
+const issues = [];
+issues.push(...validateContract(contract, schema, contract.id).issues);
+issues.push(...validateBackendBoundaryContract(contract).issues);
+const backend = createLocalHostedBackendBoundary();
+const created = backend.createProfile({ playerId: 'TG-BACKEND-VALIDATOR-001', displayName: 'Boundary Validator', starterTitanId: 'TG-TITAN-003' }, { idempotencyKey: 'validator-create' });
+const credited = backend.creditCurrency(created.profile.playerId, 'sunshards', 15, 'VALIDATOR_REWARD', { idempotencyKey: 'validator-credit' });
+const debited = backend.debitCurrency(created.profile.playerId, 'sunshards', 5, 'VALIDATOR_SPEND', { idempotencyKey: 'validator-debit' });
+const saved = backend.loadSave(created.profile.playerId);
+const committed = backend.commitSave(created.profile.playerId, saved.state, { expectedVersion: saved.saveVersion, idempotencyKey: 'validator-save' });
+const telemetry = backend.ingestEventBatch([{ playerId: created.profile.playerId, type: 'VALIDATOR_EVENT', payload: { ok: true } }], { idempotencyKey: 'validator-telemetry' });
+if (credited.saveVersion !== 2) issues.push('credit should advance save version to 2');
+if (debited.saveVersion !== 3) issues.push('debit should advance save version to 3');
+if (committed.saveVersion !== 4) issues.push('commit should advance save version to 4');
+if (telemetry.accepted !== 1) issues.push('telemetry batch should accept one event');
+const result = { ok: issues.length === 0, backendBoundary: issues.length === 0 ? 'PASS' : 'FAIL', services: contract.authoritativeServices.length, endpoints: contract.requiredEndpoints.length, finalSummary: committed.summary, issues };
+console.log(JSON.stringify(result, null, 2));
+if (issues.length) process.exit(1);

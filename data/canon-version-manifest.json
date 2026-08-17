@@ -2,8 +2,8 @@
   "id": "TG-CANON-VERSION-MANIFEST-001",
   "schema": "TG_CANON_VERSION_MANIFEST_V1",
   "status": "ACTIVE",
-  "currentCanonVersion": "1.9.0-platform-core-v1",
-  "updated": "2026-08-16T23:10:00Z",
+  "currentCanonVersion": "1.10.0-hosted-backend-boundary",
+  "updated": "2026-08-16T23:20:00Z",
   "policyRef": "docs/production/DATA_MIGRATION_VERSIONING.md",
   "sourceOfTruth": "Git commit history plus this manifest. Runtime adapters consume migrated canonical data; they do not invent canon.",
   "rules": {
@@ -150,6 +150,26 @@
       "validation": [
         "npm run validate:platform-core",
         "npm run test:platform-core",
+        "npm run precommit:verify"
+      ]
+    },
+    {
+      "id": "TG-MIG-006",
+      "fromVersion": "1.9.0-platform-core-v1",
+      "toVersion": "1.10.0-hosted-backend-boundary",
+      "type": "RUNTIME_PROJECTION",
+      "status": "APPLIED",
+      "owner": "Platform Director",
+      "summary": "Added hosted backend boundary contract and local adapter for profile service, cloud save service, authoritative economy ledger, and telemetry ingestion.",
+      "affectedData": [
+        "data/hosted-backend-boundary.json",
+        "src/platform/backend-boundary.mjs",
+        "scripts/validate-backend-boundary.mjs",
+        "tests/backend-boundary-contract.test.mjs"
+      ],
+      "validation": [
+        "npm run validate:backend-boundary",
+        "npm run test:backend-boundary",
         "npm run precommit:verify"
       ]
     }

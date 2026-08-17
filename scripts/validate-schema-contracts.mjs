@@ -28,6 +28,11 @@ const contracts = [
     name: 'platform-core',
     schemaPath: 'schemas/platform-core.schema.json',
     records: [JSON.parse(fs.readFileSync('data/platform-core-contract.json', 'utf8'))]
+  },
+  {
+    name: 'hosted-backend-boundary',
+    schemaPath: 'schemas/hosted-backend-boundary.schema.json',
+    records: [JSON.parse(fs.readFileSync('data/hosted-backend-boundary.json', 'utf8'))]
   }
 ];
 

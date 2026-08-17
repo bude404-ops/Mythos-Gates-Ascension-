@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Titan Gates Hosted Backend Boundary",
+  "type": "object",
+  "required": [
+    "id",
+    "schema",
+    "status",
+    "version",
+    "purpose",
+    "authoritativeServices",
+    "serviceLevelRules",
+    "requiredEndpoints",
+    "validation"
+  ],
+  "properties": {
+    "id": {
+      "const": "TG-HOSTED-BACKEND-BOUNDARY-V1"
+    },
+    "schema": {
+      "const": "TG_HOSTED_BACKEND_BOUNDARY_V1"
+    },
+    "status": {
+      "enum": [
+        "IMPLEMENTED_CONTRACT",
+        "PLANNED"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+-[a-z0-9-]+$"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 50
+    },
+    "authoritativeServices": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "owns",
+          "requiredOperations"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "owns": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "requiredOperations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "serviceLevelRules": {
+      "type": "object",
+      "required": [
+        "idempotency",
+        "authority",
+        "versioning",
+        "auditability",
+        "offlineCompatibility"
+      ]
+    },
+    "requiredEndpoints": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "type": "object",
+        "required": [
+          "method",
+          "route",
+          "operation"
+        ],
+        "properties": {
+          "method": {
+            "enum": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          },
+          "route": {
+            "type": "string"
+          },
+          "operation": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
