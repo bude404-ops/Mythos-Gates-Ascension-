@@ -34,15 +34,15 @@ export function validateCrossFactionCreaturePools({ factions, creatures, pools, 
       if (creature.playable !== false) issues.push(`${creature.id} must be non-playable run-in creature`);
       if (!creature.encounterTags?.includes('cross-faction-event')) issues.push(`${creature.id} missing cross-faction-event tag`);
       if (!creature.loreGuardrails?.sourceCultureRule) issues.push(`${creature.id} missing source-culture lore guardrail`);
-      if (!creature.balanceNotes?.includes('one deity vs many')) issues.push(`${creature.id} must be tuned for one deity vs many`);
+      if (!creature.balanceNotes?.includes('one titan vs many')) issues.push(`${creature.id} must be tuned for one titan vs many`);
       if (!creature.scaling?.eliteRemix?.includes('not raw health sponge')) issues.push(`${creature.id} scaling must reject raw health sponge tuning`);
     }
   }
 
   for (const mission of missions) {
-    if (mission.activeTitanCount !== 1 || mission.teamSize !== 1) issues.push(`${mission.id} must remain one active deity`);
+    if (mission.activeTitanCount !== 1 || mission.teamSize !== 1) issues.push(`${mission.id} must remain one active titan`);
     if (mission.activeTitanPolicy?.standardCombat !== ONE_TITAN_RULE) issues.push(`${mission.id} must use ${ONE_TITAN_RULE}`);
-    if (mission.combatArchitecture?.playerControlledTitans !== 1) issues.push(`${mission.id} missing one-deity combatArchitecture`);
+    if (mission.combatArchitecture?.playerControlledTitans !== 1) issues.push(`${mission.id} missing one-titan combatArchitecture`);
     for (const step of REQUIRED_MOBILE_LOOP) if (!mission.combatArchitecture?.loop?.includes(step)) issues.push(`${mission.id} combatArchitecture missing loop step ${step}`);
     for (const forbidden of FORBIDDEN_STANDARD_COMBAT) if (!mission.combatArchitecture?.forbidden?.includes(forbidden)) issues.push(`${mission.id} missing forbidden combat pattern ${forbidden}`);
     if (mission.crossFactionRunIns?.homeFactionId !== mission.factionId) issues.push(`${mission.id} crossFactionRunIns home faction mismatch`);
@@ -59,7 +59,7 @@ export function validateCrossFactionCreaturePools({ factions, creatures, pools, 
   }
 
   for (const campaign of campaigns) {
-    if (campaign.mobileUe5Architecture?.combatRule !== ONE_TITAN_RULE) issues.push(`${campaign.id} campaign must declare one-deity combat rule`);
+    if (campaign.mobileUe5Architecture?.combatRule !== ONE_TITAN_RULE) issues.push(`${campaign.id} campaign must declare one-titan combat rule`);
     if (campaign.oneTitanVsManyCombat?.playerControlledTitans !== 1) issues.push(`${campaign.id} campaign must enforce one player-controlled Titan`);
     for (const forbidden of FORBIDDEN_STANDARD_COMBAT) if (!campaign.oneTitanVsManyCombat?.forbidden?.includes(forbidden)) issues.push(`${campaign.id} campaign missing forbidden ${forbidden}`);
     if ((campaign.crossFactionRunIns?.poolIds || []).length !== factions.length) issues.push(`${campaign.id} campaign must expose all faction run-in pools for lore-valid events`);

@@ -178,28 +178,28 @@ function applyEnemyPositions(state, bindings = DEFAULT_ENEMY_BINDINGS) {
   return next;
 }
 
-export function createBattlefieldRuntimeState({ verticalSlice, deity, creatures, seed = 20260813, difficulty = 'Normal' }) {
+export function createBattlefieldRuntimeState({ verticalSlice, titan, creatures, seed = 20260813, difficulty = 'Normal' }) {
   if (!verticalSlice?.id) throw new Error('Battlefield runtime requires the vertical slice contract.');
-  if (!deity?.id) throw new Error('Battlefield runtime requires one active deity.');
+  if (!titan?.id) throw new Error('Battlefield runtime requires one active titan.');
   const terrain = buildBattlefieldTerrain(verticalSlice);
   const objectives = createBattlefieldObjectives(verticalSlice);
   const enemies = createBattlefieldEnemyRoster({ creatures });
   let state = createInitialSoloBattleState({
     battleId: verticalSlice.id,
     missionId: 'TG-BATTLEFIELD-FIRST-REOPENING-GATE',
-    deity,
+    titan,
     enemies,
     terrain,
     objectives,
     seed
   });
   state = applyEnemyPositions(state);
-  state.deity.position = { x: 2, y: 2 };
+  state.titan.position = { x: 2, y: 2 };
   state.turnLimit = TURN_LIMIT;
   state.battlefield = {
     title: verticalSlice.title,
     difficulty,
-    activeDeityLimit: 1,
+    activeTitanLimit: 1,
     routeTypes: (verticalSlice.routes || []).map(r => r.type),
     cameraMode: 'TACTICAL',
     gatePressure: 0,
@@ -213,7 +213,7 @@ export function createBattlefieldRuntimeState({ verticalSlice, deity, creatures,
   state.telemetry.battlefieldQuality = {
     spaces: terrain.spaces.length,
     routes: state.battlefield.routeTypes.length,
-    activeDeityLimit: 1,
+    activeTitanLimit: 1,
     contextualActions: ['Move', 'Strike', 'Verdict', 'React', 'Interact', 'End'],
     cameraModes: ['TACTICAL', 'CINEMATIC', 'BOSS_FOCUS']
   };
@@ -221,13 +221,13 @@ export function createBattlefieldRuntimeState({ verticalSlice, deity, creatures,
     title: verticalSlice.title,
     spaces: terrain.spaces.length,
     difficulty,
-    activeDeity: deity.id
+    activeTitan: titan.id
   });
   return state;
 }
 
 function nearbyObjectiveSpace(state) {
-  return state.terrain.spaces.find(space => space.zoneId === 'objective' && distance(space.position, state.deity.position) <= 2);
+  return state.terrain.spaces.find(space => space.zoneId === 'objective' && distance(space.position, state.titan.position) <= 2);
 }
 
 function getObjective(state, objectiveId) {
@@ -347,7 +347,7 @@ export function endBattlefieldRound(input, reactionChoice = 'DECLINE') {
     state.phase = PHASES.PLAYER;
     state.round += 1;
     state.telemetry.turns = state.round;
-    state.deity.actionsTakenThisRound = [];
+    state.titan.actionsTakenThisRound = [];
     state.battlefield.cameraMode = 'TACTICAL';
     state = recordTelemetryHook(state, 'BATTLEFIELD_ROUND_READY', { round: state.round, gatePressure: state.battlefield.gatePressure });
   }
@@ -360,7 +360,7 @@ export function summarizeBattlefieldRuntime(state) {
   return {
     ...summary,
     battlefieldTitle: state.battlefield?.title,
-    activeDeityLimit: state.battlefield?.activeDeityLimit,
+    activeTitanLimit: state.battlefield?.activeTitanLimit,
     spaces: state.terrain?.spaces?.length || 0,
     routes: state.battlefield?.routeTypes?.length || 0,
     sealsStable: state.battlefield?.sealsStable || 0,
@@ -370,7 +370,7 @@ export function summarizeBattlefieldRuntime(state) {
     bossPhase: bossEnemy(state)?.phaseIndex || 0,
     bossRemainingHp: bossEnemy(state)?.hp ?? 0,
     qualityTargetsMet: {
-      oneActiveDeity: state.battlefield?.activeDeityLimit === 1,
+      oneActiveTitan: state.battlefield?.activeTitanLimit === 1,
       spaces49: (state.terrain?.spaces || []).length === 49,
       multipleRoutes: (state.battlefield?.routeTypes || []).length >= 4,
       interactiveTerrain: Boolean(state.terrain?.spaces?.some(space => space.hazard || space.cover || space.illuminated)),
