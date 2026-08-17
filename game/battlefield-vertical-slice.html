@@ -3,44 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <title>Titan Gates — Battlefield Vertical Slice</title>
+  <title>Titan Gates — M01: First Light Under Dead Stone</title>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script src="https://static.print.world/reaper-cdn/print-lol-tokens.js"></script>
   <style>
-    body{touch-action:manipulation}.tile{aspect-ratio:1/1;min-width:42px;position:relative;overflow:visible}.tile:after{content:attr(data-label);position:absolute;right:2px;bottom:1px;font-size:9px;opacity:.35}.titan{filter:drop-shadow(0 14px 18px rgba(250,204,21,.25))}.shake{animation:shake .28s ease-in-out}.pulse{animation:pulseScale .85s ease-in-out infinite alternate}@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}@keyframes pulseScale{from{transform:scale(1)}to{transform:scale(1.04)}}
+    body{touch-action:manipulation}
+    .tile{aspect-ratio:1/1;min-width:42px;position:relative;overflow:visible}
+    .tile:after{content:attr(data-label);position:absolute;right:2px;bottom:1px;font-size:9px;opacity:.35}
+    .titan{filter:drop-shadow(0 14px 18px rgba(250,204,21,.25))}
+    .shake{animation:shake .28s ease-in-out}
+    .pulse{animation:pulseScale .85s ease-in-out infinite alternate}
+    .seal-pulse{animation:sealPulse 1.2s ease-in-out infinite alternate}
+    @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+    @keyframes pulseScale{from{transform:scale(1)}to{transform:scale(1.04)}}
+    @keyframes sealPulse{from{opacity:.5}to{opacity:1}}
+    .zone-label{position:absolute;top:1px;left:50%;transform:translateX(-50%);font-size:7px;opacity:.25;letter-spacing:.5px;text-transform:uppercase;pointer-events:none}
+    .star-done{color:#facc15}
+    .star-locked{color:#444}
   </style>
 </head>
 <body class="font-rajdhani min-h-screen overflow-auto bg-neutral-950 text-neutral-50">
   <div class="sticky top-0 z-40 border-b border-yellow-700/30 bg-neutral-950/95 p-3 backdrop-blur">
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-2">
-      <div><p class="text-[10px] font-black uppercase tracking-[.28em] text-yellow-400">Battlefield Vertical Slice</p><h1 class="text-xl font-black leading-none">The First Reopening Gate</h1></div>
-      <div class="text-right text-xs text-neutral-300"><b id="phaseLabel" class="text-primary">Tactical Camera</b><br/><span id="turnLabel">Round 1 · Player</span></div>
+      <div><p class="text-[10px] font-black uppercase tracking-[.28em] text-yellow-400">Mission M01 · Aten Ra</p><h1 class="text-xl font-black leading-none">First Light Under Dead Stone</h1></div>
+      <div class="text-right text-xs text-neutral-300"><b id="phaseLabel" class="text-primary">Player Phase</b><br/><span id="turnLabel">Round 1 / 11</span></div>
     </div>
   </div>
   <main class="mx-auto grid max-w-6xl gap-3 p-3 pb-28 lg:grid-cols-[1fr_340px]">
     <section class="rounded-3xl border border-yellow-700/30 bg-neutral-900 p-3 shadow-dark-outline">
       <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
-        <div><p class="text-xs font-black uppercase tracking-[.2em] text-primary">Aten Ra · One Active Titan</p><h2 class="text-2xl font-black">Aten-Ra, Solar Law Monolith</h2></div>
+        <div><p class="text-xs font-black uppercase tracking-[.2em] text-primary">One Titan vs Many</p><h2 class="text-2xl font-black">Aten-Ra, Solar Law Monolith</h2></div>
         <button onclick="gateArrival()" class="rounded-2lg bg-yellow-500 px-4 py-2 text-sm font-black text-neutral-950">Gate Arrival</button>
       </div>
       <div id="battlefield" class="relative mx-auto grid max-w-[620px] grid-cols-7 gap-1 rounded-3xl border border-neutral-800 bg-neutral-950 p-3"></div>
       <div class="mt-3 grid grid-cols-4 gap-2 text-center text-xs">
-        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-yellow-400">Titan Scale</b><br/>5.2x human</div>
+        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-yellow-400">Titan Scale</b><br/>6.1x heavy</div>
         <div class="rounded-xl bg-neutral-950 p-2"><b class="text-primary">Gate</b><br/>14x arch</div>
-        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-bull-400">Spaces</b><br/>49 dense</div>
-        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-bear-400">Boss</b><br/>9.5x colossal</div>
+        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-bull-400">Grid</b><br/>7x7 · 49</div>
+        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-bear-400">Enemies</b><br/>Elite 1.85x</div>
       </div>
     </section>
     <aside class="space-y-3">
       <section class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4">
         <p class="text-xs font-black uppercase tracking-[.24em] text-primary">Resources</p>
-        <div class="mt-3 grid grid-cols-2 gap-2 text-center"><div class="rounded-2xl bg-neutral-950 p-3"><b id="hp" class="text-2xl text-bull-400">42</b><br/><span class="text-xs text-neutral-400">Titan HP</span></div><div class="rounded-2xl bg-neutral-950 p-3"><b id="mom" class="text-2xl text-yellow-400">1</b><br/><span class="text-xs text-neutral-400">Momentum</span></div><div class="rounded-2xl bg-neutral-950 p-3"><b id="div" class="text-2xl text-primary">0</b><br/><span class="text-xs text-neutral-400">Divinity</span></div><div class="rounded-2xl bg-neutral-950 p-3"><b id="seal" class="text-2xl text-yellow-400">0/3</b><br/><span class="text-xs text-neutral-400">Solar Seals</span></div></div>
+        <div class="mt-3 grid grid-cols-2 gap-2 text-center">
+          <div class="rounded-2xl bg-neutral-950 p-3"><b id="hp" class="text-2xl text-bull-400">50</b><br/><span class="text-xs text-neutral-400">Titan Integrity</span></div>
+          <div class="rounded-2xl bg-neutral-950 p-3"><b id="mom" class="text-2xl text-yellow-400">1</b><br/><span class="text-xs text-neutral-400">Momentum</span></div>
+          <div class="rounded-2xl bg-neutral-950 p-3"><b id="div" class="text-2xl text-primary">0</b><br/><span class="text-xs text-neutral-400">Divinity</span></div>
+          <div class="rounded-2xl bg-neutral-950 p-3"><b id="seal" class="text-2xl text-yellow-400">0/3</b><br/><span class="text-xs text-neutral-400">Solar Seals</span></div>
+        </div>
       </section>
       <section class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4">
-        <p class="text-xs font-black uppercase tracking-[.24em] text-primary">Objective</p>
-        <h3 class="mt-1 text-xl font-black">Stabilize the Gate</h3>
-        <p id="objective" class="mt-2 text-sm text-neutral-300">Read the battlefield, stabilize three Solar Seals, defeat the Anchor Elite, then break the First Gate Colossus.</p>
+        <p class="text-xs font-black uppercase tracking-[.24em] text-primary">Mission Objectives</p>
+        <h3 class="mt-1 text-lg font-black">Stabilize Three Solar Seals</h3>
+        <p class="mt-1 text-sm text-neutral-300">Drive your Titan to the Seal Court before the Hollow closes.</p>
+        <div class="mt-3 space-y-1 text-xs text-neutral-400">
+          <p id="star1" class="star-locked">★ Complete before turn 8</p>
+          <p id="star2" class="star-locked">★ Keep Titan above 40% integrity</p>
+          <p id="star3" class="star-locked">★ Trigger 2+ terrain reactions</p>
+        </div>
       </section>
       <section class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4">
         <p class="text-xs font-black uppercase tracking-[.24em] text-primary">Battle Log</p>
@@ -51,29 +72,324 @@
   <nav class="fixed bottom-0 left-0 right-0 z-40 border-t border-yellow-700/30 bg-neutral-950/95 p-2 backdrop-blur">
     <div class="mx-auto grid max-w-3xl grid-cols-5 gap-2 text-xs font-black">
       <button onclick="setMode('move')" class="rounded-2lg bg-neutral-800 p-3 text-neutral-100">Move</button>
-      <button onclick="setMode('strike')" class="rounded-2lg bg-neutral-800 p-3 text-neutral-100">Strike</button>
+      <button onclick="setMode('strike')" class="rounded-2xl bg-neutral-800 p-3 text-neutral-100">Strike</button>
       <button onclick="solarVerdict()" class="rounded-2lg bg-yellow-500 p-3 text-neutral-950">Verdict</button>
       <button onclick="reaction()" class="rounded-2lg bg-primary p-3 text-white">React</button>
-      <button onclick="endRound()" class="rounded-2lg bg-bear-500 p-3 text-white">End</button>
+      <button onclick="endRound()" class="rounded-2lg bg-bear-500 p-3 text-white">End Turn</button>
     </div>
   </nav>
 <script>
-const terrain={entry:['A1','A2','B1','B2'],open:['C1','D1','E1','C2','D2','E2'],choke:['B3','C3','D3'],ray:['E3','F3','E4','F4'],objective:['B4','C4','D4'],elite:['A5','B5','C5'],boss:['D5','E5','F5','G5','D6','E6','F6','G6','D7','E7','F7','G7']};
-let S={round:1,mode:'move',titan:'B2',hp:42,momentum:1,divinity:0,seals:0,eliteAlive:true,bossHp:34,bossPhase:0,log:['The Gate breathes. Aten-Ra enters alone.'],cin:false};
-let enemies={D2:{name:'Hollow Wretch',hp:8,type:'small'},F2:{name:'Sun-Sick Archer',hp:10,type:'standard'},E4:{name:'Hollow Caster',hp:12,type:'standard'},B5:{name:'Gateborn Anchor-Knight',hp:18,type:'elite'},F6:{name:'First Gate Colossus',hp:34,type:'boss'}};
-const letters='ABCDEFG'.split('');
-const clsFor=t=> terrain.entry.includes(t)?'bg-stone-800':terrain.open.includes(t)?'bg-yellow-950/30':terrain.choke.includes(t)?'bg-neutral-700':terrain.ray.includes(t)?'bg-yellow-500/25 border-yellow-500/80':terrain.objective.includes(t)?'bg-primary/20 border-primary/80':terrain.elite.includes(t)?'bg-bear-950/30 border-bear-700':terrain.boss.includes(t)?'bg-purple-950/30 border-purple-700':'bg-neutral-800';
-function log(x){S.log.unshift(x);S.log=S.log.slice(0,10);render();}
-function icon(e){return e.type==='small'?'·':e.type==='elite'?'▲':e.type==='boss'?'◆':'●'}
-function scale(e){return e.type==='small'?'text-lg':e.type==='elite'?'text-3xl':e.type==='boss'?'text-5xl pulse':'text-xl'}
-function render(){const bf=document.getElementById('battlefield');bf.innerHTML='';for(let y=1;y<=7;y++){for(const x of letters){const id=x+y;const tile=document.createElement('button');tile.dataset.label=id;tile.onclick=()=>tap(id);tile.className=`tile rounded-xl border border-neutral-800 ${clsFor(id)} active:scale-95`;let body='';if(id==='G7')body='<div class="absolute inset-[-22px_-6px_auto_auto h-28 w-20 rounded-t-full border-4 border-yellow-500/70 bg-yellow-500/10 text-[9px] font-black text-yellow-300">GATE</div>';if(S.titan===id)body+=`<div class="titan absolute -inset-x-3 -top-8 z-20 rounded-full border-4 border-yellow-400 bg-yellow-500/30 p-3 text-center text-6xl font-black text-yellow-300">♜</div>`;if(enemies[id]){const e=enemies[id];body+=`<div class="absolute inset-1 z-10 flex items-center justify-center rounded-full border border-bear-500 bg-bear-950/80 font-black text-bear-300 ${scale(e)}">${icon(e)}<span class="absolute -bottom-4 text-[9px]">${e.hp}</span></div>`;}if(terrain.objective.includes(id)&&S.seals<3)body+='<div class="absolute left-1 top-1 text-xs text-primary">✦</div>';if(id==='A4')body+='<div class="absolute left-1 top-1 text-xs text-neutral-300">Codex</div>';tile.innerHTML=body;bf.appendChild(tile)}}document.getElementById('hp').textContent=S.hp;document.getElementById('mom').textContent=S.momentum;document.getElementById('div').textContent=S.divinity;document.getElementById('seal').textContent=S.seals+'/3';document.getElementById('turnLabel').textContent=`Round ${S.round} · ${S.mode.toUpperCase()}`;document.getElementById('phaseLabel').textContent=S.cin?'Cinematic Camera':'Tactical Camera';document.getElementById('log').innerHTML=S.log.map(x=>`<p class="rounded-xl bg-neutral-950 p-2">${x}</p>`).join('');}
-function setMode(m){S.mode=m;log('Action bar set to '+m+'. Context highlights change with intent.');}
-function adj(a,b){return Math.abs(letters.indexOf(a[0])-letters.indexOf(b[0]))+Math.abs(+a[1]-+b[1]);}
-function tap(id){if(S.mode==='move'){if(adj(S.titan,id)<=2&&!enemies[id]){S.titan=id;let gain=terrain.ray.includes(id)||terrain.open.includes(id)?1:0;S.momentum+=gain;log('Aten-Ra advances to '+id+(gain?' and absorbs solar Momentum.':'.'));if(id==='A4')log('Micro-Codex unlocked: old stone remembers the first Gate rupture.');render();}else log('Movement preview: destination unsafe or too far.');return;} if(S.mode==='strike'){if(enemies[id]&&adj(S.titan,id)<=2){enemies[id].hp-=8;S.momentum++;log('Titan strike crushes '+enemies[id].name+' for 8. Dust rolls across the courtyard.');if(enemies[id].hp<=0){if(enemies[id].type==='elite'){S.eliteAlive=false;log('Elite defeated. Reinforcements lose command logic.')} if(enemies[id].type==='boss'){log('VICTORY: the First Gate Colossus collapses beneath Solar Verdict. Rewards granted.')} delete enemies[id];}render();}else if(terrain.objective.includes(id)){S.seals=Math.min(3,S.seals+1);S.divinity++;log('Solar Seal stabilized. Gate Pressure weakens. Divinity rises.');}else log('Predictive combat: no valid target in range.');}}
-function solarVerdict(){if(S.momentum<2){log('Solar Verdict needs 2 Momentum. Save power or stand in solar terrain.');return;}S.momentum-=2;S.divinity++;let target=Object.keys(enemies).find(k=>enemies[k].type==='boss')||Object.keys(enemies)[0];if(target){enemies[target].hp-=12;log('SOLAR VERDICT: range strike burns '+enemies[target].name+' for 12 and shakes the Gate.');if(enemies[target].hp<=0){delete enemies[target];log('Boss/execution window complete. Battlefield clear condition advances.')}}render();}
-function reaction(){if(S.divinity<1){log('Reaction preview: needs 1 Divinity spark from seals or perfect terrain timing.');return;}S.divinity--;S.momentum+=2;log('Perfect Reaction: Aten-Ra converts Judgment Ray pressure into Momentum.');render();}
-function endRound(){S.round++;S.mode='move';Object.entries(enemies).forEach(([pos,e])=>{if(e.type==='boss'){S.hp-=4;S.bossPhase=Math.min(5,S.bossPhase+1);log('Boss phase '+S.bossPhase+': Gate Pressure floods the arena.')}else if(adj(pos,S.titan)<=2){S.hp-=e.type==='elite'?5:3;log(e.name+' attacks. Titan scale absorbs part of the blow.')}});if(S.round===3)log('Reinforcement event telegraphed: the Anchor Scar begins calling shapes.');if(S.round===4&&!enemies.A5)enemies.A5={name:'Hollow Reinforcement',hp:9,type:'small'};if(S.hp<=0)log('DEFEAT: Gate Pressure overwhelms the lone Titan.');render();}
-function gateArrival(){S.cin=true;render();document.body.classList.add('shake');setTimeout(()=>{S.cin=false;document.body.classList.remove('shake');log('Gate arrival complete: camera returns quickly to tactical view.');},700)}
+// M01: TG-F01-C01-M01 — First Light Under Dead Stone
+// One Titan vs Many · 7x7 grid · Turn limit 11 · Victory: 3 Solar Seals
+
+const TURN_LIMIT = 11;
+const MAX_HP = 50;
+const HP_STAR = Math.ceil(MAX_HP * 0.4);
+
+const terrain = {
+  entry: ['A1','A2','B1','B2'],
+  open: ['C1','D1','E1','C2','D2','E2'],
+  choke: ['B3','C3','D3'],
+  ray: ['E3','F3','E4','F4'],
+  objective: ['B4','C4','D4'],
+  elite: ['A5','B5','C5'],
+  boss: ['D5','E5','F5','G5','D6','E6','F6','G6','D7','E7','F7','G7']
+};
+
+const zNames = {
+  entry: 'Threshold', open: 'Causeway', choke: 'Choke',
+  ray: 'Ray Lanes', objective: 'Seal Court', elite: 'Anchor Scar', boss: 'Gate Arena'
+};
+
+let S = {
+  round: 1, mode: 'move', titan: 'B1',
+  hp: MAX_HP, momentum: 1, divinity: 0, seals: 0,
+  reactions: 0, w2: false, over: false, win: false, cin: false,
+  log: ['The Sun-Scale Gate breathes. Aten-Ra enters alone into the Broken Threshold.']
+};
+
+// W1: Gateborn Colossus + Beast-Realm Maneater at opposing gate markers
+let enemies = {
+  F6: { name: 'Gateborn Colossus', hp: 22, maxHp: 22, type: 'elite', cid: 'TG-CREATURE-002', wave: 1 },
+  D7: { name: 'Beast-Realm Maneater', hp: 18, maxHp: 18, type: 'elite', cid: 'TG-CREATURE-003', wave: 1 }
+};
+
+const L = 'ABCDEFG'.split('');
+
+function zType(t) {
+  for (var k in terrain) { if (terrain[k].includes(t)) return k; }
+  return 'open';
+}
+
+function clsFor(t) {
+  const z = zType(t);
+  if (z === 'entry') return 'bg-stone-800';
+  if (z === 'open') return 'bg-yellow-950/30';
+  if (z === 'choke') return 'bg-neutral-700';
+  if (z === 'ray') return 'bg-yellow-500/25 border-yellow-500/80';
+  if (z === 'objective') return 'bg-primary/20 border-primary/80';
+  if (z === 'elite') return 'bg-bear-950/30 border-bear-700';
+  if (z === 'boss') return 'bg-purple-950/30 border-purple-700';
+  return 'bg-neutral-800';
+}
+
+function log(x) {
+  S.log.unshift(x);
+  S.log = S.log.slice(0, 12);
+  render();
+}
+
+function icon(e) { return e.type === 'elite' ? '▲' : '●'; }
+function scaleC(e) { return e.type === 'elite' ? 'text-3xl' : 'text-xl'; }
+
+function stars() {
+  if (S.win && S.round <= 8) document.getElementById('star1').className = 'star-done';
+  if (S.win && S.hp >= HP_STAR) document.getElementById('star2').className = 'star-done';
+  if (S.reactions >= 2) document.getElementById('star3').className = 'star-done';
+}
+
+function render() {
+  const bf = document.getElementById('battlefield');
+  bf.innerHTML = '';
+  for (let y = 1; y <= 7; y++) {
+    for (const x of L) {
+      const id = x + y;
+      const tile = document.createElement('button');
+      tile.dataset.label = id;
+      tile.onclick = () => tap(id);
+      tile.className = 'tile rounded-xl border border-neutral-800 ' + clsFor(id) + ' active:scale-95';
+      let body = '';
+
+      if (id === 'A1') body += '<div class="zone-label">Threshold</div>';
+      if (id === 'C1') body += '<div class="zone-label">Causeway</div>';
+      if (id === 'B3') body += '<div class="zone-label">Choke</div>';
+      if (id === 'E3') body += '<div class="zone-label">Ray Lanes</div>';
+      if (id === 'B4') body += '<div class="zone-label">Seals</div>';
+      if (id === 'A5') body += '<div class="zone-label">Anchor</div>';
+      if (id === 'D5') body += '<div class="zone-label">Gate Arena</div>';
+
+      if (id === 'G7') body += '<div class="absolute inset-[-22px_-6px_auto_auto h-28 w-20 rounded-t-full border-4 border-yellow-500/70 bg-yellow-500/10 text-[9px] font-black text-yellow-300">GATE</div>';
+
+      if (S.titan === id) body += '<div class="titan absolute -inset-x-3 -top-8 z-20 rounded-full border-4 border-yellow-400 bg-yellow-500/30 p-3 text-center text-6xl font-black text-yellow-300">♜</div>';
+
+      if (enemies[id]) {
+        const e = enemies[id];
+        body += '<div class="absolute inset-1 z-10 flex items-center justify-center rounded-full border border-red-600 bg-red-950/80 font-black text-red-300 ' + scaleC(e) + '">' + icon(e) + '<span class="absolute -bottom-4 text-[9px]">' + e.hp + '</span></div>';
+      }
+
+      const si = terrain.objective.indexOf(id);
+      if (si !== -1 && si >= S.seals) body += '<div class="absolute left-1 top-3 text-xs text-primary seal-pulse">✦</div>';
+
+      if (id === 'A4') body += '<div class="absolute left-1 top-1 text-xs text-neutral-300">📖</div>';
+
+      tile.innerHTML = body;
+      bf.appendChild(tile);
+    }
+  }
+  document.getElementById('hp').textContent = S.hp;
+  document.getElementById('mom').textContent = S.momentum;
+  document.getElementById('div').textContent = S.divinity;
+  document.getElementById('seal').textContent = S.seals + '/3';
+  document.getElementById('turnLabel').textContent = 'Round ' + S.round + ' / ' + TURN_LIMIT;
+  document.getElementById('phaseLabel').textContent = S.cin ? 'Cinematic' : 'Player Phase';
+  document.getElementById('log').innerHTML = S.log.map(x => '<p class="rounded-xl bg-neutral-950 p-2">' + x + '</p>').join('');
+  stars();
+}
+
+function setMode(m) {
+  S.mode = m;
+  log('Action: ' + m.toUpperCase());
+}
+
+function adj(a, b) {
+  return Math.abs(L.indexOf(a[0]) - L.indexOf(b[0])) + Math.abs(+a[1] - +b[1]);
+}
+
+function w2trig() {
+  if (S.w2) return;
+  S.w2 = true;
+  if (!enemies['B5']) {
+    enemies['B5'] = { name: 'Beast-Realm Maneater', hp: 16, maxHp: 16, type: 'elite', cid: 'TG-CREATURE-003', wave: 2 };
+    log('WAVE 2: A Maneater emerges from the shadowed lane. The Anchor Scar stirs.');
+  }
+}
+
+function checkWin() {
+  if (S.seals >= 3 && !S.over) {
+    S.over = true;
+    S.win = true;
+    log('VICTORY: Three Solar Seals stabilized. Solar Law endures. The Gate holds.');
+  }
+}
+
+function checkLose() {
+  if (S.hp <= 0 && !S.over) {
+    S.over = true;
+    log('DEFEAT: The Hollow overwhelms Aten-Ra.');
+  }
+  if (S.round > TURN_LIMIT && !S.over) {
+    S.over = true;
+    log('DEFEAT: Turn limit expired. The Hollow closes the Seals.');
+  }
+}
+
+function tap(id) {
+  if (S.over) return;
+
+  if (S.mode === 'move') {
+    if (adj(S.titan, id) <= 2 && !enemies[id]) {
+      S.titan = id;
+      const z = zType(id);
+      if (z === 'ray' || z === 'open') {
+        S.momentum += 1;
+        log('Aten-Ra advances to ' + id + ' (' + zNames[z] + ') and absorbs solar Momentum.');
+      } else if (z === 'objective') {
+        log('Aten-Ra enters the Solar Seal Court at ' + id + '.');
+      } else {
+        log('Aten-Ra moves to ' + id + ' (' + zNames[z] + ').');
+      }
+      if (id === 'A4') {
+        log('Memory Obelisk: old stone remembers the first Gate rupture. Mastery XP.');
+        S.reactions++;
+      }
+      if (z === 'objective' && !S.w2) w2trig();
+      render();
+    } else {
+      log('Movement: destination unsafe or too far.');
+    }
+    return;
+  }
+
+  if (S.mode === 'strike') {
+    if (enemies[id] && adj(S.titan, id) <= 2) {
+      const dmg = 8 + Math.floor(S.momentum * 0.5);
+      enemies[id].hp -= dmg;
+      S.momentum++;
+      log('Titan strike crushes ' + enemies[id].name + ' for ' + dmg + '.');
+      if (enemies[id].hp <= 0) {
+        log(enemies[id].name + ' falls.');
+        delete enemies[id];
+      }
+      render();
+    } else if (terrain.objective.includes(id) && adj(S.titan, id) <= 2) {
+      const si = terrain.objective.indexOf(id);
+      if (si === S.seals) {
+        S.seals++;
+        S.divinity++;
+        S.reactions++;
+        log('Solar Seal ' + S.seals + '/3 stabilized. Divinity rises.');
+        if (S.seals === 1 && !S.w2) w2trig();
+        checkWin();
+        render();
+      } else if (si < S.seals) {
+        log('Already stabilized.');
+      } else {
+        log('Stabilize seals in order. Next seal at ' + terrain.objective[S.seals] + '.');
+      }
+    } else {
+      log('No valid target in range.');
+    }
+  }
+}
+
+function solarVerdict() {
+  if (S.over) return;
+  if (S.momentum < 2) {
+    log('Solar Verdict needs 2 Momentum.');
+    return;
+  }
+  S.momentum -= 2;
+  S.divinity++;
+  S.reactions++;
+
+  let tgt = null, md = 99;
+  for (const p in enemies) {
+    const d = adj(S.titan, p);
+    if (d < md) { md = d; tgt = p; }
+  }
+
+  if (tgt) {
+    enemies[tgt].hp -= 14;
+    log('SOLAR VERDICT: Burns ' + enemies[tgt].name + ' for 14.');
+    if (enemies[tgt].hp <= 0) {
+      log(enemies[tgt].name + ' collapses.');
+      delete enemies[tgt];
+    }
+  } else if (S.seals < 3 && adj(S.titan, terrain.objective[S.seals]) <= 3) {
+    S.seals++;
+    log('SOLAR VERDICT: Floods the Seal Court. Seal ' + S.seals + '/3 stabilized.');
+    checkWin();
+  } else {
+    log('Solar Verdict: no target in range.');
+  }
+  render();
+}
+
+function reaction() {
+  if (S.over) return;
+  if (S.divinity < 1) {
+    log('Reaction needs 1 Divinity.');
+    return;
+  }
+  S.divinity--;
+  S.momentum += 2;
+  S.reactions++;
+  if (zType(S.titan) === 'ray') {
+    S.hp = Math.min(MAX_HP, S.hp + 4);
+    log('Reaction: Judgment Ray pressure converts to Momentum. Heals 4.');
+  } else {
+    log('Reaction: Divinity channels into Momentum.');
+  }
+  render();
+}
+
+function endRound() {
+  if (S.over) return;
+  S.round++;
+  S.mode = 'move';
+
+  Object.entries(enemies).forEach(([pos, e]) => {
+    const d = adj(pos, S.titan);
+    if (d <= 2) {
+      const dmg = e.type === 'elite' ? 6 : 4;
+      S.hp -= dmg;
+      if (zType(S.titan) === 'open' || zType(S.titan) === 'boss') {
+        S.hp -= 2;
+        log(e.name + ' attacks for ' + dmg + '. Hollow Drift: exposed +2.');
+      } else {
+        log(e.name + ' attacks for ' + dmg + '.');
+      }
+    } else if (d <= 4) {
+      log(e.name + ' advances.');
+    } else {
+      log(e.name + ' holds at ' + pos + '.');
+    }
+  });
+
+  if (S.round === 3 && !S.w2) w2trig();
+
+  if (zType(S.titan) === 'ray' || zType(S.titan) === 'open') {
+    S.momentum = Math.min(S.momentum + 1, 10);
+    log('Solar Law: holding light lanes builds Momentum.');
+  }
+
+  checkLose();
+  if (!S.over) log('Round ' + S.round + ' begins.');
+  render();
+}
+
+function gateArrival() {
+  S.cin = true;
+  render();
+  document.body.classList.add('shake');
+  setTimeout(function() {
+    S.cin = false;
+    document.body.classList.remove('shake');
+    log('Gate arrival: the Sun-Scale Gate looms ahead.');
+    render();
+  }, 700);
+}
+
 render();
 </script>
 </body>

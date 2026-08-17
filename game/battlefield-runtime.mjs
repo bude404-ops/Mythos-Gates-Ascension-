@@ -18,6 +18,8 @@ const clone = value => JSON.parse(JSON.stringify(value));
 const key = position => `${position.x},${position.y}`;
 const distance = (a, b) => Math.abs(a.x - b.x) + Math.abs(a.y - b.y);
 
+const M01_TURN_LIMIT = 11;
+
 const ZONE_TYPES = Object.freeze({
   entry: 'BROKEN_THRESHOLD',
   open: 'SUN_CRACKED_CAUSEWAY',
@@ -29,13 +31,11 @@ const ZONE_TYPES = Object.freeze({
 });
 
 const DEFAULT_ENEMY_BINDINGS = Object.freeze([
-  { slot: 'wretch_a', creatureId: 'TG-CREATURE-001', position: { x: 4, y: 2 }, encounter: 1, role: 'SWARMER' },
-  { slot: 'wretch_b', creatureId: 'TG-CREATURE-012', position: { x: 5, y: 2 }, encounter: 1, role: 'SWARMER' },
-  { slot: 'archer', creatureId: 'TG-CREATURE-007', position: { x: 6, y: 2 }, encounter: 2, role: 'HUNTER' },
-  { slot: 'caster', creatureId: 'TG-CREATURE-006', position: { x: 5, y: 4 }, encounter: 3, role: 'DISRUPTOR' },
-  { slot: 'shield_wretch', creatureId: 'TG-CREATURE-008', position: { x: 3, y: 5 }, encounter: 3, role: 'BRUTE' },
-  { slot: 'anchor_elite', creatureId: 'TG-CREATURE-009', position: { x: 2, y: 5 }, encounter: 4, role: 'ELITE' },
-  { slot: 'first_gate_colossus', creatureId: 'TG-CREATURE-002', position: { x: 6, y: 6 }, encounter: 6, role: 'CHAMPION', boss: true }
+  // M01 W1: Gateborn Colossus + Beast-Realm Maneater at opposing gate markers
+  { slot: 'gateborn_colossus', creatureId: 'TG-CREATURE-002', position: { x: 6, y: 6 }, encounter: 1, role: 'ELITE', wave: 1 },
+  { slot: 'beast_realm_maneater', creatureId: 'TG-CREATURE-003', position: { x: 4, y: 7 }, encounter: 1, role: 'ELITE', wave: 1 },
+  // M01 W2: Beast-Realm Maneater reinforcement from shadowed lane (trigger: turn 3 or objective touched)
+  { slot: 'maneater_reinforcement', creatureId: 'TG-CREATURE-003', position: { x: 2, y: 5 }, encounter: 2, role: 'ELITE', wave: 2, reinforcement: true }
 ]);
 
 export const BATTLEFIELD_ACTIONS = Object.freeze({
@@ -108,12 +108,13 @@ export function createBattlefieldObjectives(verticalSlice) {
       primary: true
     },
     {
-      id: 'defeat_anchor_elite',
-      label: 'Defeat the Gateborn Anchor-Knight',
+      id: 'defeat_gateborn_colossus',
+      label: 'Defeat the Gateborn Colossus',
       progress: 0,
       requiredProgress: 1,
       status: 'ACTIVE',
-      primary: true
+      primary: false,
+      optional: true
     },
     {
       id: 'read_memory_obelisk',
@@ -123,13 +124,13 @@ export function createBattlefieldObjectives(verticalSlice) {
       status: 'ACTIVE',
       optional: true
     },
+    // M01 has no boss — victory is stabilizing 3 Solar Seals
     {
-      id: 'break_first_gate_colossus',
-      label: 'Break the First Gate Colossus',
+      id: 'survive_hollow_pressure',
+      label: 'Survive the Hollow Drift until all seals are stable',
       progress: 0,
-      requiredProgress: 5,
-      status: 'ACTIVE',
-      boss: true
+      requiredProgress: 3,
+      status: 'ACTIVE'
     }
   ];
 }
@@ -204,7 +205,7 @@ export function createBattlefieldRuntimeState({ verticalSlice, titan, creatures,
     sealsStable: 0,
     pylonWallDestroyed: false,
     memoryObeliskRead: false,
-    bossId: 'first_gate_colossus-TG-CREATURE-002',
+    bossId: null,
     qualityTargets: clone(verticalSlice.qualityTargets || []),
     mobileBottomActionBar: true
   };
