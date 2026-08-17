@@ -1,12 +1,12 @@
 # NPCs, Creatures, Maps, and Campaign Canon
 
-This document expands Titan Gates: Ascension beyond the Titan roster without breaking the Titan-only playable canon.
+This document expands Titan Gates: Ascension beyond the Deity Roster without breaking the Titan-only playable canon.
 
 ## Director Ruling
 
 - The Lore Director authorizes NPCs as narrative, briefing, Codex, antagonist, or campaign support figures only.
 - NPCs are not playable non-Titan entries.
-- Creatures are enemies, hazards, or world boss threats. They are not Titans and do not belong to playable chosen Titan deployments.
+- Creatures are enemies, hazards, or world boss threats. They are not Titans and do not belong to playable chosen deity deployments.
 - Maps are tactical or campaign locations tied to Gates, Realms, hazards, and objectives.
 - Campaigns organize chapters, maps, NPCs, and creatures without allowing unrestricted faction mixing.
 
@@ -14,7 +14,7 @@ This document expands Titan Gates: Ascension beyond the Titan roster without bre
 
 ### Non-Playable Characters
 
-NPCs support story, tutorials, Codex unlocks, faction identity, and antagonist pressure. They do not enter the one-active-Titan chosen Titan.
+NPCs support story, tutorials, Codex unlocks, faction identity, and antagonist pressure. They do not enter the one-active-deity chosen deity.
 
 ### Creatures
 

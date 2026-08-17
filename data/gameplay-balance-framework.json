@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "generated": "2026-08-16T18:20:00Z",
   "status": "IMPLEMENTED",
-  "directive": "Combat-first balance: the fighting is the hook, tactical mechanics create depth, and progression exists to send players back into Titan battles.",
+  "directive": "Combat-first balance: the fighting is the hook, tactical mechanics create depth, and progression exists to send players back into deity battles.",
   "designPillars": [
     "The battle is the primary screen, memory, and hook; management supports fighting but never replaces it.",
-    "Every Titan must feel individually powerful through animation, impact, enemy reaction, scale, and distinct ability identity.",
+    "Every deity must feel individually powerful through animation, impact, enemy reaction, scale, and distinct ability identity.",
     "Challenge comes from readable decisions, positioning, timing, objectives, enemy behavior, and battlefield interaction before stat inflation.",
     "Momentum/Divinity and faction mechanics must create in-battle spend/save decisions across campaign, raid, repeatable, and future modes.",
     "Progression should make the player want to immediately return to battle to see what changed.",
@@ -170,10 +170,10 @@
         "turnLimit",
         "specialRules"
       ],
-      "balanceRule": "Normal missions target one primary Titan role and one soft alternative; hard missions add one counter-tag and one objective tension."
+      "balanceRule": "Normal missions target one primary deity role and one soft alternative; hard missions add one counter-tag and one objective tension."
     },
     "chapterBoss": {
-      "purpose": "force mastery of a faction mechanic without requiring a specific Titan",
+      "purpose": "force mastery of a faction mechanic without requiring a specific deity",
       "requiredHooks": [
         "phase telegraphs",
         "boss vulnerability window",
@@ -288,7 +288,7 @@
     ]
   },
   "antiPatterns": [
-    "mandatory single Titan gates",
+    "mandatory single deity gates",
     "unreadable one-shot failures",
     "raw HP sponge scaling",
     "passive sustain loops that ignore objectives",
@@ -296,7 +296,7 @@
     "resource denial stacked with no comeback window",
     "raid mechanics that bypass solo active-Titan clarity",
     "Menu-heavy core loop where players manage stats longer than they fight.",
-    "Titan kits differentiated only by health and damage numbers.",
+    "deity kits differentiated only by health and damage numbers.",
     "Beautiful battlefield spaces with no tactical purpose.",
     "Difficulty driven mainly by enormous enemy health pools.",
     "Progression systems that feel like spreadsheets before play.",
@@ -329,14 +329,14 @@
       "resource starvation above 30% outside Hard/Elite",
       "raid phase fail rate above 70% after tell exposure",
       "mission average turns 35% above target",
-      "single Titan pick rate above 22% for a mode"
+      "single deity pick rate above 22% for a mode"
     ]
   },
   "acceptanceGates": [
     "All 9 roles have mode contracts and counterplay.",
     "All 7 faction mechanic families map to Momentum/Divinity and terrain.",
     "Campaign, raid, weekly, ascension, arena, and future modes have scaling contracts.",
-    "No tuning rule requires a specific Titan or paid rarity.",
+    "No tuning rule requires a specific deity or paid rarity.",
     "Balance audit can run from repository data without external services."
   ],
   "rolePowerSummary": {
@@ -404,13 +404,13 @@
     "raid-design-document",
     "mission-registry",
     "mission-tactical-profile-system",
-    "titan-role-matrix",
-    "titan-enemy-balance-pass"
+    "deity-role-matrix",
+    "deity-enemy-balance-pass"
   ],
   "combatFirstDoctrine": {
     "id": "TG-COMBAT-FIRST-GAMEPLAY-DOCTRINE",
     "corePrinciple": "The fighting is the hook. Tactical mechanics create depth. Progression creates long-term retention.",
-    "primaryExperience": "The primary screen and primary player memory must be the Titan battle, not menu management.",
+    "primaryExperience": "The primary screen and primary player memory must be the deity battle, not menu management.",
     "combatLoop": [
       "Choose Titans",
       "Read the battlefield",
@@ -426,7 +426,7 @@
     ],
     "developmentPriority": [
       "Combat feel",
-      "Titan identity",
+      "deity identity",
       "Battlefield interaction",
       "Tactical decision-making",
       "Enemy AI",
@@ -435,7 +435,7 @@
       "UI polish",
       "Secondary systems"
     ],
-    "systemServiceTest": "Every system must make the Titan battle more fun, more tactical, more satisfying, or more replayable. If it does not, reconsider whether it belongs in the core experience."
+    "systemServiceTest": "Every system must make the deity battle more fun, more tactical, more satisfying, or more replayable. If it does not, reconsider whether it belongs in the core experience."
   },
   "combatFirstAcceptanceGates": [
     {

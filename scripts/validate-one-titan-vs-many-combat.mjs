@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import { validateContract } from '../src/data-loaders/schema-contracts.mjs';
-import { loadOneTitanVsManyCombat, validateOneTitanVsManyCombat, summarizeOneTitanVsMany } from '../src/combat/one-titan-vs-many.mjs';
+import { loadOneTitanVsManyCombat, validateOneTitanVsManyCombat, summarizeOneTitanVsMany } from '../src/combat/one-deity-vs-many.mjs';
 
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const contract = loadOneTitanVsManyCombat();

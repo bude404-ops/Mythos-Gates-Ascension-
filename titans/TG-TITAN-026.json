@@ -34,8 +34,8 @@
   "passives": [
     "Aegis Favor: Pallas gains Favor when guardian play intercepts a declared threat and stores the impact as later utility on marble thunder line. At 3 stacks, the next Technique or Reaction adds a divine contest law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of High Olympian courts."
   ],
-  "lore": "Athena, Aegis Strategist, is now canonized as one of the four playable god-Titans of Olympian. The Titan is the source-realm divinity behind the mythology rather than a generic champion: wisdom-war goddess, aegis shield, owl sight, civic strategy and disciplined protection. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-  "personality": "A playable mythology god whose behavior expresses wisdom-war goddess, aegis shield, owl sight, civic strategy and disciplined protection; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
+  "lore": "Athena, Aegis Strategist, is now canonized as one of the four playable deities of Olympian. The deity is the source-realm divinity behind the mythology rather than a generic champion: wisdom-war goddess, aegis shield, owl sight, civic strategy and disciplined protection. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology deity whose behavior expresses wisdom-war goddess, aegis shield, owl sight, civic strategy and disciplined protection; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
   "visualDescription": "Athena manifests as wisdom-war goddess, aegis shield, owl sight, civic strategy and disciplined protection from Olympian: beautiful intelligent feminine face, grey owl-bright eyes, serene mouth, straight noble nose; tall athletic feminine strategist frame, poised shoulders, clear waist-to-hip line, still tactical stance; signature silhouette: owl-crested helm, aegis scale cloak, spear vertical, shield geometry. Weapon: aegis shield and long bronze spear. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
   "artStatus": "READY_FOR_GENERATION",
   "artPromptId": "TG-PROMPT-026",
@@ -155,7 +155,7 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
-    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
     "primaryRole": "counter bosses and protect survival windows",
     "budgetTarget": 105,
     "computedCombatPower": 214,
@@ -198,7 +198,21 @@
     "faceLock": "beautiful intelligent feminine face, grey owl-bright eyes, serene mouth, straight noble nose",
     "bodyLock": "tall athletic feminine strategist frame, poised shoulders, clear waist-to-hip line, still tactical stance",
     "silhouetteLock": "owl-crested helm, aegis scale cloak, spear vertical, shield geometry",
-    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved."
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved.",
+    "mythology": "Athena — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+    "realm": "The Celestial Heights of Olympus",
+    "civilization": "Olympian mythological extradimensional civilization",
+    "cultureRule": "God identity must come from mythology, realm, civilization, sacred materials, beauty standards, and ritual practice; never color swap alone.",
+    "beautyStandard": "Unmistakably feminine divine beauty with faction-specific elegance, allure, posture, and armor shaping.",
+    "realmAnatomy": "Realm-shaped mythological divinity, supernatural but not sci-fi alien.",
+    "identityFace": "beautiful intelligent feminine face, grey owl-bright eyes, serene mouth, straight noble nose",
+    "identityBody": "tall athletic feminine strategist frame, poised shoulders, clear waist-to-hip line, still tactical stance",
+    "roleSilhouette": "owl-crested helm, aegis scale cloak, spear vertical, shield geometry",
+    "auditStatus": "PASS"
   },
-  "title": "Aegis Strategist"
+  "title": "Aegis Strategist",
+  "playableClassification": "Goddess",
+  "species": "Deity",
+  "characterType": "Playable Deity",
+  "rosterClass": "Deity Roster"
 }

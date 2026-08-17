@@ -4,7 +4,7 @@
 
 Titan Gates are ancient dimensional gateways connecting powerful Realms.
 
-They are the primary method of inter-Realm travel. They allow civilizations, Titans, powers, armies, relics, memories, and wars to cross between dimensions.
+They are the primary method of inter-Realm travel. They allow civilizations, gods and goddesseses, powers, relics, memories, conflicts, and wars to cross between dimensions.
 
 A Titan Gate is not a portal made by technology. It is an ancient reality-structure: part threshold, part wound, part sacred mechanism, part living law.
 
@@ -16,10 +16,11 @@ Titan Gates can:
 - Open passage into sealed ruins
 - Expose forgotten dimensional roads
 - Distort distance, memory, weather, gravity, identity, and time
-- Awaken dormant Titans
+- Awaken dormant divine power
 - Create Gateborn entities
 - Pull relics or battlefield terrain from impossible locations
 - Serve as campaign mission sites
+- Serve as dungeon entrances
 - Serve as boss arenas
 
 ## The Ascension Collapse
@@ -47,7 +48,7 @@ Stable Gates still connect known Realms. They are valuable, dangerous, and polit
 
 ### Ruin Gates
 
-Ruin Gates open into dead cities, broken temples, abandoned Titan halls, and collapsed civilizations.
+Ruin Gates open into dead cities, broken temples, abandoned halls, and collapsed civilizations.
 
 ### Distortion Gates
 
@@ -61,13 +62,18 @@ Sealed Gates were closed for a reason. Their locks may hold campaign secrets, an
 
 Wound Gates are damaged reality scars. They can generate Gateborn entities and mutate battlefield rules mid-mission.
 
-## Campaign Use
+## Campaign and Dungeon Use
 
-Every major campaign arc should involve at least one Titan Gate with a clear identity:
+Every major campaign arc and major dungeon route should involve at least one Titan Gate with a clear identity:
 
 - What Realm law shaped it?
 - What event damaged or awakened it?
 - What does it want, if anything?
 - What does it distort?
 - What threat is emerging through it?
-- Which Titan's lore resonates with it?
+- Which god or goddess has lore resonance with it?
+- Which rooms, branches, shrines, traps, treasure spaces, elite encounters, and boss chambers logically belong beyond it?
+
+## Dungeon-Crawler Integration
+
+NEW CANON EXTENSION: The latest gameplay format treats some Titan Gate routes as dungeon corridors into dangerous Realm locations, sealed ruins, sacred domains, corrupted regions, monster territories, and boss arenas. This does not replace existing Gate lore. It is a tactical framing for exploring the already-established Gate roads, ruin gates, distortion gates, sealed gates, and wound gates.

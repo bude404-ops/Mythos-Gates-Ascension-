@@ -2,9 +2,9 @@
   "id": "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
   "version": "0.9.0",
   "generated": "2026-08-11T20:08:28Z",
-  "fantasy": "I am controlling a legendary Titan, alone, against an impossible battlefield.",
+  "fantasy": "I am controlling a legendary deity, alone, against an impossible battlefield.",
   "pillars": [
-    "One active player Titan",
+    "One active player deity",
     "Skillful Momentum",
     "Divine spectacle",
     "Reactive turn-based tactics",
@@ -13,14 +13,14 @@
     "Mobile-readable power fantasy"
   ],
   "completeCombatLoop": [
-    "Choose one Titan after reading mission type, terrain, enemies, boss, and modifiers.",
+    "Choose one deity after reading mission type, terrain, enemies, boss, and modifiers.",
     "Enter tactical battlefield with objective, enemy intents, terrain hazards, Momentum 0, Divinity 0, selected stance.",
     "Player turn: move, basic attack, technique, stance shift, environmental action, execution, or Divine Ascension if ready.",
     "Enemy turn: coordinated AI acts against one powerful target, telegraphing threats and creating reaction windows.",
     "Reaction windows interrupt enemy resolution without becoming real-time combat.",
     "Momentum rises through aggressive intelligent mastery and falls through poor positioning or passivity.",
     "Divinity rises through mythic performance and powers Ascendant stance/Divine Ascension.",
-    "Terrain and destructible objects alter movement, damage, enemy AI, and Titan-specific mechanics.",
+    "Terrain and destructible objects alter movement, damage, enemy AI, and deity-specific mechanics.",
     "Victory comes from objective completion, boss defeat, escape, ritual control, or survival state; not always enemy wipe."
   ],
   "turnStructure": {
@@ -40,7 +40,7 @@
     "noRealtimeRule": "Reaction choices are turn-based prompts with clear limits and costs."
   },
   "movement": {
-    "base": "Titan movement uses speed, size, terrain cost, engagement zones, and stance modifiers.",
+    "base": "deity movement uses speed, size, terrain cost, engagement zones, and stance modifiers.",
     "skillExpression": [
       "flank arcs",
       "line-of-sight denial",
@@ -50,16 +50,16 @@
       "retreat denial",
       "objective timing"
     ],
-    "soloDifference": "Movement is survival, offense, and resource generation at once; there is no allied backline to save the Titan."
+    "soloDifference": "Movement is survival, offense, and resource generation at once; there is no allied backline to save the deity."
   },
   "attacks": {
     "basic": "Reliable identity-specific generator; not a generic Strike clone.",
     "techniques": "Cooldown/resource abilities that express archetype and unique mechanic.",
-    "signatures": "High-impact Titan identity moment, usually spending Momentum and/or setup.",
+    "signatures": "High-impact deity identity moment, usually spending Momentum and/or setup.",
     "damagePipeline": "Attack roll/seed -> accuracy/evasion/parry -> terrain/stance/status modifiers -> shields/mitigation -> damage -> vulnerability/execution check -> event log."
   },
   "momentum": {
-    "definition": "The Titan gaining control of the battlefield.",
+    "definition": "The deity gaining control of the battlefield.",
     "range": "0-100",
     "earnedBy": [
       "successful attacks",
@@ -122,8 +122,8 @@
       "Brace boss impact",
       "Seize objective interruption"
     ],
-    "costs": "Usually Momentum, cooldown, stance condition, or Titan-specific resource.",
-    "limits": "One default reaction per enemy phase unless Titan mastery, Guard stance, or unique mechanic expands it.",
+    "costs": "Usually Momentum, cooldown, stance condition, or deity-specific resource.",
+    "limits": "One default reaction per enemy phase unless divine mastery, Guard stance, or unique mechanic expands it.",
     "clarity": "UI shows trigger, cost, likely outcome, and skip option."
   },
   "stances": {
@@ -143,7 +143,7 @@
   },
   "executions": {
     "vulnerability": "Enemies become vulnerable at health thresholds, stagger states, broken guard, terrain trap, or failed cast.",
-    "choice": "Executing may spend action economy but grants Titan-specific payoff.",
+    "choice": "Executing may spend action economy but grants deity-specific payoff.",
     "payoffs": {
       "Reaver": "heal/lifesteal surge",
       "Assassin": "Momentum refund/stealth reset",
@@ -183,7 +183,7 @@
       "Titan mechanic triggers",
       "enemy behavior choices"
     ],
-    "destruction": "Pillars, walls, gates, shrines, cover, bridges, chains, roots, and ritual anchors can be broken when mission and Titan rules allow."
+    "destruction": "Pillars, walls, gates, shrines, cover, bridges, chains, roots, and ritual anchors can be broken when mission and deity rules allow."
   },
   "enemyAI": {
     "principle": "Enemies know they are fighting one powerful opponent.",
@@ -211,7 +211,7 @@
       "Executioner",
       "Elite",
       "Champion",
-      "Enemy Titan"
+      "Enemy deity"
     ]
   },
   "titanArchetypes": [
@@ -250,7 +250,7 @@
       "win without critical damage",
       "complete mission using required stance discipline"
     ],
-    "reward": "Learning the Titan, not only increasing numbers."
+    "reward": "Learning the deity, not only increasing numbers."
   },
   "bossMechanics": {
     "phases": [
@@ -285,7 +285,7 @@
     "loreJustification": "Unstable Gates allow Titans to cross where armies would be destroyed, scattered, or turned by realm pressure."
   },
   "asynchronousPvp": {
-    "name": "Asynchronous Titan Challenge",
+    "name": "Asynchronous deity Challenge",
     "notRealTimePvp": true,
     "defenseSnapshot": [
       "defensiveTitan",
@@ -300,7 +300,7 @@
   },
   "futureReserveSystem": {
     "currentRule": "Do not implement reserves in normal build.",
-    "architecture": "Allow fields for 1 active Titan + optional future reserve list; only one Titan ever appears at a time."
+    "architecture": "Allow fields for 1 active deity + optional future reserve list; only one deity ever appears at a time."
   },
   "mobileUX": {
     "top": [
@@ -365,14 +365,14 @@
     {
       "id": "TG-SOLO-ACTIVE-TITAN-PRESET-001",
       "name": "One-active-Titan Combat Baseline",
-      "purpose": "QA reference: standard combat resolves around one selected active Titan.",
+      "purpose": "QA reference: standard combat resolves around one selected active deity.",
       "squadSize": 1,
       "titanIds": [
         "TG-TITAN-001"
       ],
-      "activeSoloRule": "Only one Titan is active in standard solo combat.",
+      "activeSoloRule": "Only one deity is active in standard solo combat.",
       "activeTitanCount": 1
     }
   ],
-  "sourceCultureAbilityRule": "All basics, techniques, signatures, movement, reactions, executions, weapons, armor, and cores must express the selected Titan\u2019s Realm as the older source behind Earth mythology."
+  "sourceCultureAbilityRule": "All basics, techniques, signatures, movement, reactions, executions, weapons, armor, and cores must express the selected deity’s Realm as the older source behind Earth mythology."
 }

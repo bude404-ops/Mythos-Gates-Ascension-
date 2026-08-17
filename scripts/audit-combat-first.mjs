@@ -45,7 +45,7 @@ const balanceIdx = html.indexOf('function renderBalanceLab');
 const titanIdx = html.indexOf('function renderTitanLab');
 if (playableIdx < 0) push(issues, 'PLAYABLE_OPS_MISSING', 'Panel must keep playable battle projection visible.');
 if (balanceIdx < 0) push(issues, 'BALANCE_LAB_MISSING', 'Panel must expose combat-first balance guidance.');
-if (titanIdx < 0) push(issues, 'TITAN_LAB_MISSING', 'Panel must expose Titan identity.');
+if (titanIdx < 0) push(issues, 'TITAN_LAB_MISSING', 'Panel must expose deity identity.');
 if (playableIdx > balanceIdx && balanceIdx > 0) push(warnings, 'COMBAT_VIEW_AFTER_BALANCE', 'Playable Ops appears after Balance Lab in markup; keep combat surfaces prominent in navigation.');
 for (const term of ['THE FIGHTING IS THE HOOK','Combat-First','Titan battle','Big Combat Moment']) {
   if (!html.toLowerCase().includes(term.toLowerCase())) push(issues, 'PANEL_MISSING_COMBAT_FIRST_COPY', `Panel missing combat-first signal: ${term}`);

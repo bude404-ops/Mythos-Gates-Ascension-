@@ -1,6 +1,6 @@
-# Titans Gate Lore Codex
+# Titan Gates Lore Codex
 
-This folder is the canon source for the Titans Gate game lore.
+This folder is the canon source for the Titan Gates game lore.
 
 ## Codex Files
 
@@ -8,7 +8,7 @@ This folder is the canon source for the Titans Gate game lore.
 2. [01 Game Lore](01-GAME-LORE.md) — core story premise
 3. [02 Titan Gates](02-TITAN-GATES.md) — dimensional gateways and the Ascension Collapse
 4. [03 Realms](03-REALMS.md) — seven playable mythological Realms
-5. [04 Titans](04-TITANS.md) — Titan-only playable roster rules and current named Titans
+5. [04 Playable Deities](04-TITANS.md) — god/goddess playable roster rules and current named deities
 6. [05 Campaign Threats](05-CAMPAIGN-THREATS.md) — Forgotten, Hollow, Beast Realms, Gateborn, World Bosses
 7. [06 Timeline](06-TIMELINE.md) — historical eras and current age
 8. [07 Glossary](07-GLOSSARY.md) — key terms
@@ -16,9 +16,9 @@ This folder is the canon source for the Titans Gate game lore.
 
 ## North Star
 
-Titans Gate is not mythology as costume.
+Titan Gates is not mythology as costume.
 
-Titans Gate is mythology as evidence of real extradimensional power.
+Titan Gates is mythology as evidence of real extradimensional power.
 
 Every Realm must feel like its own ancient civilization. Every Titan must feel born from that civilization's laws, symbols, powers, and wounds. Every gameplay role must come from lore. Every visual design must reject sci-fi, generic fantasy, and ordinary human cosplay. Every Titan Gate must feel ancient, dangerous, sacred, and capable of breaking reality.
 

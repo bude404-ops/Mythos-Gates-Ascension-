@@ -15,7 +15,7 @@
       "Victory conditions",
       "Battle state model"
     ],
-    "currentControl": "Attacker player Titan vs saved defender Titan snapshot controlled by deterministic AI",
+    "currentControl": "Attacker player deity vs saved defender deity snapshot controlled by deterministic AI",
     "futureControl": "Player vs Player networking layer only; combat engine remains shared; no live PvP is implemented now."
   },
   "defenseSnapshotFields": [
@@ -156,8 +156,8 @@
       "defensiveTitanId": "TG-TITAN-055"
     }
   ],
-  "name": "Asynchronous Titan Challenge",
-  "currentControl": "Attacker player Titan vs saved defender Titan build controlled by deterministic AI",
+  "name": "Asynchronous deity Challenge",
+  "currentControl": "Attacker player deity vs saved defender deity build controlled by deterministic AI",
   "status": "IMPLEMENTED",
   "version": "1.0.0-solo-snapshot",
   "squadTerminologyDeprecated": true,
@@ -216,8 +216,8 @@
     "queue_defense_log_for_snapshot_owner"
   ],
   "snapshotQualityGates": [
-    "Every sample opponent has exactly one defensive Titan snapshot.",
-    "Every snapshot references an existing Titan and solo roster redesign record.",
+    "Every sample opponent has exactly one defensive deity snapshot.",
+    "Every snapshot references an existing deity and solo roster redesign record.",
     "Every snapshot includes checksum, stance loadout, reaction loadout, AI behavior profile, battlefield selection, and progression state.",
     "Arena dashboard must not show fabricated player rank, rating, floor, or live PvP state.",
     "Visual smoke blocks release if async arena snapshot language disappears."
@@ -235,7 +235,7 @@
         "Warden",
         "Juggernaut"
       ],
-      "uniqueMechanic": "The's Storm Oath: a solo pursuit lock that grows when the Titan uses movement through storm lanes to control enemies instead of relying on allies.",
+      "uniqueMechanic": "The's Storm Oath: a solo pursuit lock that grows when the deity uses movement through storm lanes to control enemies instead of relying on allies.",
       "stanceLoadout": [
         "Assault",
         "Guard",
@@ -272,7 +272,7 @@
         "Warden",
         "Juggernaut"
       ],
-      "uniqueMechanic": "Aurelion's Laurel Glory: a solo charge meter that grows when the Titan uses high ground and duel circles to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Aurelion's Laurel Glory: a solo charge meter that grows when the deity uses high ground and duel circles to control enemies instead of relying on allies.",
       "stanceLoadout": [
         "Assault",
         "Guard",
@@ -309,7 +309,7 @@
         "Warden",
         "Juggernaut"
       ],
-      "uniqueMechanic": "Amaterion's Spirit Balance: a solo pursuit lock that grows when the Titan uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Amaterion's Spirit Balance: a solo pursuit lock that grows when the deity uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
       "stanceLoadout": [
         "Assault",
         "Guard",
@@ -346,7 +346,7 @@
         "Warden",
         "Juggernaut"
       ],
-      "uniqueMechanic": "Dagoran's Living Grove: a solo charge meter that grows when the Titan uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Dagoran's Living Grove: a solo charge meter that grows when the deity uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
       "stanceLoadout": [
         "Assault",
         "Guard",
@@ -383,7 +383,7 @@
         "Warden",
         "Juggernaut"
       ],
-      "uniqueMechanic": "Seraphel's Radiant Edict: a solo pursuit lock that grows when the Titan uses ordered sigil zones to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Seraphel's Radiant Edict: a solo pursuit lock that grows when the deity uses ordered sigil zones to control enemies instead of relying on allies.",
       "stanceLoadout": [
         "Assault",
         "Guard",
@@ -420,7 +420,7 @@
         "Warden",
         "Juggernaut"
       ],
-      "uniqueMechanic": "Mordrath's Dominion Flame: a solo charge meter that grows when the Titan uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+      "uniqueMechanic": "Mordrath's Dominion Flame: a solo charge meter that grows when the deity uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
       "stanceLoadout": [
         "Assault",
         "Guard",
@@ -446,5 +446,5 @@
       "checksum": "sha256:df3798c39af3f9ac11e2704d3e73e6fb03098ce99073a99c8f4f8193a3277560"
     }
   ],
-  "rosterRule": "Async arena snapshots now draw from 28 god-Titans: 4 per faction, 2 male and 2 female."
+  "rosterRule": "Async arena snapshots now draw from 28 deities: 4 per faction, 2 male and 2 female."
 }

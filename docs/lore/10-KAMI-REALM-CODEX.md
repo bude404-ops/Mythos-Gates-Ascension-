@@ -5,7 +5,7 @@
 **Gate:** The Spirit-Moon Gate  
 **Status:** Canon Expanded
 ## Realm Thesis
-Kami Titans do not conquer disorder; they purify it, name it, bind it, and let the world breathe again.
+Kami deities do not conquer disorder; they purify it, name it, bind it, and let the world breathe again.
 ## Central Conflict
 Their secrecy protects sacred balance but makes allies fear what they cannot see.
 ## Realm Atmosphere

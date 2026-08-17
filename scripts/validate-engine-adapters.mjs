@@ -21,7 +21,7 @@ for (const file of requiredFiles) if (!fs.existsSync(file)) issues.push(`Missing
 
 const contract = JSON.parse(fs.readFileSync('engine/shared/engine-export-contract.json', 'utf8'));
 if (contract.schema !== 'TG_ENGINE_EXPORT_CONTRACT_V1') issues.push('Invalid engine export contract schema marker.');
-if (!contract.guardrails?.includes('one active Titan standard combat remains canonical')) issues.push('Engine contract must preserve one active Titan canon.');
+if (!contract.guardrails?.includes('one active deity standard combat remains canonical')) issues.push('Engine contract must preserve one active deity canon.');
 for (const engine of ['unreal', 'unity']) {
   const manifest = JSON.parse(fs.readFileSync(`engine/${engine}/adapter-manifest.json`, 'utf8'));
   if (manifest.schema !== 'TG_ENGINE_ADAPTER_MANIFEST_V1') issues.push(`${engine} adapter manifest has invalid schema marker.`);
@@ -30,7 +30,7 @@ for (const engine of ['unreal', 'unity']) {
 const summary = buildEngineExportSummary({ includeMissions: true });
 if (summary.counts.titans !== 63) issues.push(`Engine export expected 63 Titans, found ${summary.counts.titans}.`);
 if (summary.counts.missions !== 280) issues.push(`Engine export expected 280 missions, found ${summary.counts.missions}.`);
-if (summary.canonicalRules.activeTitanCount !== 1) issues.push('Engine export must preserve one-active-Titan combat.');
+if (summary.canonicalRules.activeTitanCount !== 1) issues.push('Engine export must preserve one-active-deity combat.');
 
 const result = { ok: issues.length === 0, engineAdapters: issues.length === 0 ? 'PASS' : 'FAIL', summary, issues };
 console.log(JSON.stringify(result, null, 2));

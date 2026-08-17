@@ -2,25 +2,25 @@
   "id": "TG-ONE-TITAN-VS-MANY-COMBAT-V1",
   "schema": "TG_ONE_TITAN_VS_MANY_COMBAT_V1",
   "status": "CORE_COMBAT_RULE",
-  "version": "1.14.0-one-titan-vs-many-combat",
+  "version": "1.14.0-one-deity-vs-many-combat",
   "primaryRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
   "forbiddenSystems": [
     "squad combat",
     "team formations",
-    "multiple player-controlled Titans",
+    "multiple player-controlled deities",
     "ally positioning",
     "team turns",
-    "multi-Titan battlefield control",
+    "multi-deity battlefield control",
     "hardcoded encounter-specific combat systems"
   ],
-  "combatFantasy": "One legendary god-like Titan enters enemy-controlled territory alone, fights through many coordinated enemies, grows visibly stronger, and eventually destroys forces that once seemed impossible.",
+  "combatFantasy": "One legendary god-like deity enterss enemy-controlled territory alone, fights through many coordinated enemies, grows visibly stronger, and eventually destroys forces that once seemed impossible.",
   "combatLoop": [
     "Explore",
     "Encounter",
     "1 Titan vs. Multiple Enemies",
     "Victory",
     "Rewards",
-    "Upgrade Titan",
+    "Upgrade deity",
     "Explore Further"
   ],
   "titanKit": {
@@ -50,7 +50,7 @@
       "high-damage single-target attacks",
       "defensive abilities"
     ],
-    "rule": "The Titan handles groups through ability choice, cooldown timing, positioning, terrain use, equipment, and visible progression."
+    "rule": "The deity handles groups through ability choice, cooldown timing, positioning, terrain use, equipment, and visible progression."
   },
   "enemyGroupDesign": {
     "roles": [
@@ -77,7 +77,7 @@
       "boss mechanics"
     ],
     "antiPattern": "Do not make enemies difficult simply by giving them enormous health pools.",
-    "exampleComposition": "Weak melee enemies surround the Titan while ranged enemies attack from elevation and a support enemy buffs the group."
+    "exampleComposition": "Weak melee enemies surround the deity while ranged enemies attack from elevation and a support enemy buffs the group."
   },
   "scalingBands": [
     {
@@ -181,7 +181,7 @@
     "Continue Exploration"
   ],
   "mobileTouchControls": [
-    "tap Titan",
+    "tap deity",
     "tap movement destination",
     "tap enemy target",
     "tap ability",
@@ -224,17 +224,17 @@
       "Titan AoE attacks",
       "Tactical movement",
       "Enemy AI",
-      "Titan abilities",
+      "Divine Abilities",
       "Victory",
       "Rewards",
-      "Titan progression",
+      "Divine Ascension",
       "Gear improvement",
       "Return to exploration"
     ],
     "progressionFeelTest": [
-      "New Titan",
-      "Developed Titan",
-      "Highly Developed Titan"
+      "New Deity",
+      "Developed Deity",
+      "Highly Developed Deity"
     ],
     "expansionRule": "Do not expand to additional missions, Titans, enemy types, or regions until this first combat loop is approved."
   }

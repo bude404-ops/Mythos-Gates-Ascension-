@@ -201,7 +201,7 @@
       "type": "ENGINE_EXPORT",
       "status": "APPLIED",
       "owner": "Technical Director",
-      "summary": "Converted Titan Gates target architecture to an Unreal Engine 5-first Titan-scale zone-based dungeon-crawler tactical RPG framework and mapped the first mission into a reusable region, exploration zone, tactical arena, and boss-arena template.",
+      "summary": "Converted Titan Gates target architecture to an Unreal Engine 5-first deity-scale zone-based dungeon-crawler tactical RPG framework and mapped the first mission into a reusable region, exploration zone, tactical arena, and boss-arena template.",
       "affectedData": [
         "engine/unreal/dungeon-crawler-framework.json",
         "engine/unreal/first-mission-zone-template.json",
@@ -240,28 +240,28 @@
     {
       "id": "TG-MIG-010",
       "fromVersion": "1.13.0-mobile-first-ue5-zone-prototype",
-      "toVersion": "1.14.0-one-titan-vs-many-combat",
+      "toVersion": "1.14.0-one-deity-vs-many-combat",
       "type": "RUNTIME_PROJECTION",
       "status": "APPLIED",
       "owner": "Combat Director",
-      "summary": "Locked all standard combat around one player-controlled Titan versus multiple coordinated enemies, forbidding squads/team turns and requiring visible Titan power growth in the first mission prototype.",
+      "summary": "Locked all standard combat around one player-controlled deity versus multiple coordinated enemies, forbidding squads/team turns and requiring visible divine power growth in the first mission prototype.",
       "affectedData": [
         "data/one-titan-vs-many-combat.json",
-        "src/combat/one-titan-vs-many.mjs",
+        "src/combat/one-deity-vs-many.mjs",
         "engine/unreal/mobile-first-architecture.json",
         "engine/unreal/first-mission-zone-template.json",
-        "scripts/validate-one-titan-vs-many-combat.mjs",
-        "tests/one-titan-vs-many-combat-contract.test.mjs"
+        "scripts/validate-one-deity-vs-many-combat.mjs",
+        "tests/one-deity-vs-many-combat-contract.test.mjs"
       ],
       "validation": [
-        "npm run validate:one-titan-vs-many-combat",
-        "npm run test:one-titan-vs-many-combat",
+        "npm run validate:one-deity-vs-many-combat",
+        "npm run test:one-deity-vs-many-combat",
         "npm run precommit:verify"
       ]
     },
     {
       "id": "TG-MIG-011",
-      "fromVersion": "1.14.0-one-titan-vs-many-combat",
+      "fromVersion": "1.14.0-one-deity-vs-many-combat",
       "toVersion": "1.15.0-mission-campaign-lore-run-ins",
       "type": "RUNTIME_PROJECTION",
       "status": "APPLIED",

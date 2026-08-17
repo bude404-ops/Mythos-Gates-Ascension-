@@ -1,6 +1,6 @@
 # Character Backstory Codex
 
-Every Titan, NPC, and creature now has a readable canon backstory record. These records connect personal origin, faction philosophy, Gate wound, campaign role, and future story hooks.
+Every Deity, NPC, and creature now has a readable canon backstory record. These records connect personal origin, faction philosophy, Gate wound, campaign role, and future story hooks.
 
 ## Rules
 

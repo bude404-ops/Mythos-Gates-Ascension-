@@ -5,7 +5,7 @@ const asText = (v) => JSON.stringify(v);
 const includesAny = (s, arr) => arr.some((x) => s.toLowerCase().includes(x.toLowerCase()));
 const missingTerms = (s, arr) => arr.filter((x) => !s.toLowerCase().includes(x.toLowerCase()));
 const sourcePattern = /source culture|source-culture|source cultures|humans later copied|Earth legend is (only )?the echo|Earth mythology is (only )?the later echo|Realm culture is the source|original source/i;
-const oldScalePattern = /\b(one-active-Titan|one active Titan?|three-Titan|three Titans?)\b/i;
+const oldScalePattern = /\b(one-active-deity|one active deity?|three-Titan|three Titans?)\b/i;
 const staleGenericPattern = /Low-tier gear component|not rewriting established Canon|distant pyramids|color language|museum version|generic RPG set dressing without faction/i;
 
 const factionCanon = {
@@ -185,7 +185,7 @@ for (const p of missionArtPackages) {
   const mid = p.missionId || p.id?.replace('-ART-', '-');
   requireSource(`${p.id} mission art package`, p);
   requireTerms(`${p.id} mission art package`, p, [...c.realm, ...c.source, ...c.anchors, ...c.gear], 6);
-  if (!/one active Titan scale/i.test(asText(p))) issues.push(`${p.id} mission art package: missing one active Titan scale`);
+  if (!/one active deity scale/i.test(asText(p))) issues.push(`${p.id} mission art package: missing one active deity scale`);
   if (!/cosmetic|relic/i.test(asText(p))) issues.push(`${p.id} mission art package: missing cosmetic/relic language`);
   forbid(`${p.id} mission art package`, p, oldScalePattern, 'old scale language');
   forbid(`${p.id} mission art package`, p, staleGenericPattern, 'stale generic language');

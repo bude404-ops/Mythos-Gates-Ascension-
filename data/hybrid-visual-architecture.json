@@ -5,7 +5,7 @@
   "status": "Canon Locked",
   "updated": "2026-08-10",
   "nonNegotiables": [
-    "Player Titans, player characters, enemy characters, enemy Titans, units, and combatants are 2D sprites.",
+    "Player Titans, player characters, enemy characters, enemy deities, units, and combatants are 2D sprites.",
     "Campaign maps, Realms, exploration spaces, gates, major locations, and tactical environments are 3D environments.",
     "Do not convert battlefield characters into 3D models because the environment is 3D.",
     "Do not introduce futuristic craft or sci-fi spacecraft; Realm travel remains Gate-based.",
@@ -20,7 +20,7 @@
         "Player Titans",
         "Player characters",
         "Enemy characters",
-        "Enemy Titans",
+        "Enemy Deities",
         "Battlefield units",
         "Combatants"
       ],
@@ -43,7 +43,7 @@
         "Gate landmarks"
       ],
       "mustNotBeUsedFor": [
-        "Playable Titan sprite replacement",
+        "Playable Deity sprite replacement",
         "NPC portrait replacement",
         "Combatant identity art"
       ]
@@ -53,7 +53,7 @@
       "name": "2D Portraits",
       "purpose": "Profile identity, Codex presentation, emotional read, dialogue scenes",
       "usedFor": [
-        "Titan profiles",
+        "deity profiles",
         "NPC profiles",
         "Codex cards",
         "Dialogue panels"

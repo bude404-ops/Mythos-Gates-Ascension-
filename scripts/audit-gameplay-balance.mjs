@@ -47,7 +47,7 @@ if (missionWithoutProfiles.length) issues.push(`${missionWithoutProfiles.length}
 const powers = titans.map((t) => t.stats?.combatPower || 0);
 const minPower = Math.min(...powers);
 const maxPower = Math.max(...powers);
-if (maxPower - minPower > 60) warnings.push(`Titan combat power spread is ${maxPower - minPower}; watch roster dominance.`);
+if (maxPower - minPower > 60) warnings.push(`deity combat power spread is ${maxPower - minPower}; watch roster dominance.`);
 
 if (!Array.isArray(enemies.archetypes) || enemies.archetypes.length < 9) issues.push('Enemy archetype registry must cover at least 9 pressure types.');
 if (!raid.stageProfiles || raid.stageProfiles.length < 5) issues.push('Raid system needs at least 5 stage profiles for scalable challenge.');

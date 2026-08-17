@@ -3,7 +3,7 @@
   "schema": "TG_UE5_DUNGEON_CRAWLER_FRAMEWORK_V1",
   "status": "ACTIVE_TARGET_ARCHITECTURE",
   "version": "1.13.0-mobile-first-ue5-zone-prototype",
-  "purpose": "Converts Titan Gates: Ascension into an Unreal Engine 5-first Titan-scale zone-based dungeon-crawler tactical RPG framework while preserving existing lore, Titans, factions, progression, combat, and mobile-first goals.",
+  "purpose": "Converts Titan Gates: Ascension into an Unreal Engine 5-first single-deity, zone-based dungeon-crawler tactical RPG framework while preserving existing Lore Codex, Titan Gates, factions, realms, deities, progression, combat, and mobile-first goals.",
   "primaryEngine": "Unreal Engine 5",
   "coreLoop": [
     "Campaign",
@@ -31,7 +31,7 @@
     "Reusable Blueprint actors"
   ],
   "dataDrivenRules": [
-    "No hardcoded campaign, Titan, encounter, reward, ability, enemy, or zone content.",
+    "No hardcoded campaign, deity, encounter, reward, ability, enemy, or zone content.",
     "Canon remains upstream source of truth.",
     "Unreal assets consume stable Titan Gates IDs as Primary Asset IDs.",
     "Exploration and combat are modular zone products, not open-world sprawl.",
@@ -50,7 +50,7 @@
       "Titan-sized pathways"
     ],
     "standardCombatActiveTitans": 1,
-    "cameraMandate": "Exploration shows Titan scale; combat prioritizes tactical readability."
+    "cameraMandate": "Exploration shows deity scale; combat prioritizes tactical readability."
   },
   "zoneModel": {
     "hierarchy": [
@@ -66,7 +66,7 @@
     "zoneExamples": [
       "Aten Ra Temple Complex",
       "Thalassari Coastal Ruins",
-      "Titan Graveyards",
+      "deity Graveyards",
       "Ancient Gate Networks",
       "Divine Forests",
       "Sacred Mountains",
@@ -106,7 +106,7 @@
   "assetPipeline": {
     "root": "Content/",
     "folders": [
-      "Titans/",
+      "deities/",
       "Characters/",
       "Creatures/",
       "Environments/",
@@ -134,7 +134,7 @@
   },
   "camera": {
     "exploration": [
-      "third-person cinematic Titan view",
+      "third-person cinematic deity view",
       "scale landmarks always visible where practical"
     ],
     "combat": [
@@ -187,5 +187,9 @@
     ],
     "rule": "Build mobile-first from the beginning; do not build high-end first and downscale later.",
     "linkedContract": "engine/unreal/mobile-first-architecture.json"
-  }
+  },
+  "coreIdentity": "MYTHOLOGICAL_EXTRADIMENSIONAL_SINGLE_CHARACTER_DUNGEON_CRAWLER_TURN_BASED_TACTICAL_RPG",
+  "playerControlRule": "The player controls one god or goddess at a time; never armies, squads, soldiers, normal heroes, or multiple playable characters simultaneously.",
+  "titanGateCanonRule": "Titan Gates remain central and unchanged as established Lore Codex canon: ancient dimensional reality-structures, Gate states, Ascension Collapse scars, Realm roads, mission sites, dungeon entrances, and boss arenas.",
+  "dungeonCrawlerCanonExtension": "NEW CANON EXTENSION: zone routes are treated as dungeon-crawler paths through existing Titan Gate roads, ruin gates, distortion gates, sealed gates, and wound gates."
 }

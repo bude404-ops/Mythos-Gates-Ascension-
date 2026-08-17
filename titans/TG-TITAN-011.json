@@ -34,8 +34,8 @@
   "passives": [
     "Rune Oath: Hrothar gains Oathfire when battery play stores excess resource and refunds Momentum after precise setup on storm-carved oathground. At 3 stacks, the next Technique or Reaction adds a rune-bound fate rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of World-Tree war halls."
   ],
-  "lore": "Freyja, Vanir Valkyrie Queen, is now canonized as one of the four playable god-Titans of Asgardian. The Titan is the source-realm divinity behind the mythology rather than a generic champion: Vanir goddess of battle-fate, beauty, seiðr, desire, and chosen slain. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-  "personality": "A playable mythology god whose behavior expresses Vanir goddess of battle-fate, beauty, seiðr, desire, and chosen slain; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
+  "lore": "Freyja, Vanir Valkyrie Queen, is now canonized as one of the four playable deities of Asgardian. The deity is the source-realm divinity behind the mythology rather than a generic champion: Vanir goddess of battle-fate, beauty, seiðr, desire, and chosen slain. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology deity whose behavior expresses Vanir goddess of battle-fate, beauty, seiðr, desire, and chosen slain; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
   "visualDescription": "Freyja manifests as Vanir goddess of battle-fate, beauty, seiðr, desire, and chosen slain from Asgardian: radiant beautiful feminine Norse queen face, bright fierce eyes, full lips, high cheekbones, battle-fate confidence; powerful feminine valkyrie physique, narrow waist, strong hips and thighs, lifted commanding posture; signature silhouette: falcon feather cloak, jewel collar, long braided hair, wing-like cloak arcs. Weapon: brísingamen seiðr chain and falcon-feather blade. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
   "artStatus": "READY_FOR_GENERATION",
   "artPromptId": "TG-PROMPT-011",
@@ -155,7 +155,7 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
-    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
     "primaryRole": "generate Momentum and Divinity under pressure",
     "budgetTarget": 109,
     "computedCombatPower": 228,
@@ -198,7 +198,21 @@
     "faceLock": "radiant beautiful feminine Norse queen face, bright fierce eyes, full lips, high cheekbones, battle-fate confidence",
     "bodyLock": "powerful feminine valkyrie physique, narrow waist, strong hips and thighs, lifted commanding posture",
     "silhouetteLock": "falcon feather cloak, jewel collar, long braided hair, wing-like cloak arcs",
-    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved."
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved.",
+    "mythology": "Freyja — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+    "realm": "The Storm-Rooted Aesir Holds",
+    "civilization": "Asgardian mythological extradimensional civilization",
+    "cultureRule": "God identity must come from mythology, realm, civilization, sacred materials, beauty standards, and ritual practice; never color swap alone.",
+    "beautyStandard": "Unmistakably feminine divine beauty with faction-specific elegance, allure, posture, and armor shaping.",
+    "realmAnatomy": "Realm-shaped mythological divinity, supernatural but not sci-fi alien.",
+    "identityFace": "radiant beautiful feminine Norse queen face, bright fierce eyes, full lips, high cheekbones, battle-fate confidence",
+    "identityBody": "powerful feminine valkyrie physique, narrow waist, strong hips and thighs, lifted commanding posture",
+    "roleSilhouette": "falcon feather cloak, jewel collar, long braided hair, wing-like cloak arcs",
+    "auditStatus": "PASS"
   },
-  "title": "Vanir Valkyrie Queen"
+  "title": "Vanir Valkyrie Queen",
+  "playableClassification": "Goddess",
+  "species": "Deity",
+  "characterType": "Playable Deity",
+  "rosterClass": "Deity Roster"
 }

@@ -17,12 +17,12 @@ export function validateUe5DungeonFramework(framework, firstTemplate, sourceMiss
   if (framework.primaryEngine !== 'Unreal Engine 5') issues.push('framework must target Unreal Engine 5 as primary engine');
   for (const system of REQUIRED_UE5_SYSTEMS) if (!framework.unrealSystems?.includes(system)) issues.push(`missing required UE5 system: ${system}`);
   for (const folder of REQUIRED_CONTENT_FOLDERS) if (!framework.assetPipeline?.folders?.includes(folder)) issues.push(`missing Content folder mapping: ${folder}`);
-  if (framework.titanScaleRules?.standardCombatActiveTitans !== 1) issues.push('standard combat must preserve one active Titan');
+  if (framework.titanScaleRules?.standardCombatActiveTitans !== 1) issues.push('standard combat must preserve one active deity');
   if (JSON.stringify(framework.aiGenerationStages) !== JSON.stringify(REQUIRED_STAGE_ORDER)) issues.push('AI generation stages must remain ordered and piecewise');
   if (firstTemplate.sourceMissionId !== sourceMission?.id) issues.push('first template must point at the first existing mission');
   if (firstTemplate.sourceFactionId !== sourceMission?.factionId) issues.push('first template faction must match source mission');
   if (firstTemplate.sourceFactionId !== sourceFaction?.id) issues.push('first template faction must resolve to Aten Ra');
-  if (!firstTemplate.tacticalArena?.combatRulesPreserved?.includes('one active Titan')) issues.push('first tactical arena must preserve one-active-Titan combat');
+  if (!firstTemplate.tacticalArena?.combatRulesPreserved?.includes('one active deity')) issues.push('first tactical arena must preserve one-active-deity combat');
   if (!firstTemplate.explorationZone?.mobileRules?.some(rule => /no unnecessary open world/i.test(rule))) issues.push('first zone must preserve lightweight non-open-world mobile scope');
   for (const loreToken of ['Aten hand-rays', 'Ma’at scale geometry', 'electrum', 'faience turquoise', 'lapis', 'obsidian', 'Nile-black silt glass', 'Red Land jasper']) {
     if (!firstTemplate.validationChecklist?.loreAccuracy?.includes(loreToken)) issues.push(`first template missing lore token: ${loreToken}`);

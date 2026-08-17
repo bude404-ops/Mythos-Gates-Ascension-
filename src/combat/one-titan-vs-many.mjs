@@ -2,7 +2,7 @@ import fs from 'node:fs';
 
 export const PRIMARY_ONE_TITAN_RULE = 'ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE';
 export const FORBIDDEN_COMBAT_PATTERNS = Object.freeze(['squad combat', 'team formations', 'multiple player-controlled Titans', 'ally positioning', 'team turns']);
-export const REQUIRED_PROTOTYPE_BEATS = Object.freeze(['Exploration', 'Encounter trigger', 'Combat transition', 'Multiple enemies', 'Titan AoE attacks', 'Tactical movement', 'Enemy AI', 'Titan abilities', 'Victory', 'Rewards', 'Titan progression', 'Gear improvement', 'Return to exploration']);
+export const REQUIRED_PROTOTYPE_BEATS = Object.freeze(['Exploration', 'Encounter trigger', 'Combat transition', 'Multiple enemies', 'Titan AoE attacks', 'Tactical movement', 'Enemy AI', 'Divine Abilities', 'Victory', 'Rewards', 'Divine Ascension', 'Gear improvement', 'Return to exploration']);
 export const REQUIRED_VISIBLE_PROGRESSION = Object.freeze(['larger AoE coverage', 'shorter cooldowns', 'group clear speed improves']);
 export const REQUIRED_ENEMY_ROLES = Object.freeze(['melee attackers', 'ranged attackers', 'fast enemies', 'support enemies', 'elite enemies', 'bosses']);
 
@@ -19,10 +19,10 @@ export function validateOneTitanVsManyCombat(contract, mission, mobileArchitectu
   if (!/health pools/i.test(contract.enemyGroupDesign?.antiPattern || '')) issues.push('enemy design must forbid inflated health-pool difficulty');
   for (const beat of REQUIRED_PROTOTYPE_BEATS) if (!contract.firstPrototype?.requiredDemonstration?.includes(beat)) issues.push(`first prototype missing beat: ${beat}`);
   for (const visible of REQUIRED_VISIBLE_PROGRESSION) if (!contract.powerProgression?.visibleGameplayOutcomes?.includes(visible)) issues.push(`visible progression missing: ${visible}`);
-  if (mission.activeTitanCount !== 1 || mission.teamSize !== 1) issues.push('first mission must remain exactly one active Titan/team size 1');
+  if (mission.activeTitanCount !== 1 || mission.teamSize !== 1) issues.push('first mission must remain exactly one active deity/team size 1');
   if (mission.activeTitanPolicy?.standardCombat !== PRIMARY_ONE_TITAN_RULE) issues.push('first mission activeTitanPolicy must use one player-controlled Titan');
   if (!mission.specialRules?.some(rule => /one (active|player-controlled) Titan/i.test(rule))) issues.push('first mission must preserve one active/player-controlled Titan special rule');
-  if (mobileArchitecture.combatRule?.contract !== 'data/one-titan-vs-many-combat.json') issues.push('mobile architecture must link one-Titan combat contract');
+  if (mobileArchitecture.combatRule?.contract !== 'data/one-titan-vs-many-combat.json') issues.push('mobile architecture must link one-deity combat contract');
   if (mobileArchitecture.combatRule?.forbidSquads !== true) issues.push('mobile architecture must forbid squads');
   if (firstTemplate.combatIdentity?.playerControlledTitans !== 1) issues.push('first template must specify exactly one player-controlled Titan');
   if (!firstTemplate.validationChecklist?.oneTitanVsMany?.some(item => /no squads/i.test(item))) issues.push('first template must validate no squads or team turns');

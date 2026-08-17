@@ -1,4 +1,4 @@
-# Titan Gates — God-Titan Playable Roster Identity Pass
+# Titan Gates — Deity Playable Roster Identity Pass
 
 Updated: 2026-08-17
 

@@ -34,8 +34,8 @@
   "passives": [
     "Geas Bloom: Cernan gains Geas when sustain play banks survival value through terrain mastery and converts it into recovery on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
   ],
-  "lore": "Lugh, Many-Skilled Radiance, is now canonized as one of the four playable god-Titans of Tuatha. The Titan is the source-realm divinity behind the mythology rather than a generic champion: many-skilled god of mastery, radiance, spear, craft and precise victory from afar. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-  "personality": "A playable mythology god whose behavior expresses many-skilled god of mastery, radiance, spear, craft and precise victory from afar; confident, sovereign, readable in combat, loyal to the unchanged Tuatha canon.",
+  "lore": "Lugh, Many-Skilled Radiance, is now canonized as one of the four playable deities of Tuatha. The deity is the source-realm divinity behind the mythology rather than a generic champion: many-skilled god of mastery, radiance, spear, craft and precise victory from afar. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology deity whose behavior expresses many-skilled god of mastery, radiance, spear, craft and precise victory from afar; confident, sovereign, readable in combat, loyal to the unchanged Tuatha canon.",
   "visualDescription": "Lugh manifests as many-skilled god of mastery, radiance, spear, craft and precise victory from afar from Tuatha: handsome youthful masculine champion face, golden eyes, clean jaw, focused confident smile; lean athletic masculine duelist build, long arms, dancer balance, poised ranged-strike posture; signature silhouette: long radiant spear line, sun cloak, tool charms, spear-caster profile. Weapon: Spear of Assal-like radiant long spear and sling of light. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
   "artStatus": "READY_FOR_GENERATION",
   "artPromptId": "TG-PROMPT-042",
@@ -155,7 +155,7 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
-    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
     "primaryRole": "win attrition and cleanse hazard pressure",
     "budgetTarget": 104,
     "computedCombatPower": 207,
@@ -198,7 +198,21 @@
     "faceLock": "handsome youthful masculine champion face, golden eyes, clean jaw, focused confident smile",
     "bodyLock": "lean athletic masculine duelist build, long arms, dancer balance, poised ranged-strike posture",
     "silhouetteLock": "long radiant spear line, sun cloak, tool charms, spear-caster profile",
-    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved."
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved.",
+    "mythology": "Lugh — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+    "realm": "Avalora",
+    "civilization": "Tuatha mythological extradimensional civilization",
+    "cultureRule": "God identity must come from mythology, realm, civilization, sacred materials, beauty standards, and ritual practice; never color swap alone.",
+    "beautyStandard": "Unmistakably masculine divine presence with faction-specific strength, nobility, posture, and varied anatomy.",
+    "realmAnatomy": "Realm-shaped mythological divinity, supernatural but not sci-fi alien.",
+    "identityFace": "handsome youthful masculine champion face, golden eyes, clean jaw, focused confident smile",
+    "identityBody": "lean athletic masculine duelist build, long arms, dancer balance, poised ranged-strike posture",
+    "roleSilhouette": "long radiant spear line, sun cloak, tool charms, spear-caster profile",
+    "auditStatus": "PASS"
   },
-  "title": "Many-Skilled Radiance"
+  "title": "Many-Skilled Radiance",
+  "playableClassification": "God",
+  "species": "Deity",
+  "characterType": "Playable Deity",
+  "rosterClass": "Deity Roster"
 }

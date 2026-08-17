@@ -12,7 +12,7 @@ Above the broken roads, a choir vault continues singing old stabilization law. T
 
 Celiane White-Vault Witness does not apologize for Empyrean severity. She believes mercy without structure becomes another form of abandonment. Yet even she hears the wrongness in a vault that now tries to correct living survivors as if they were damaged notes.
 
-The Creator's chosen Titan ascends through floating platforms, resonance beacons, and glass stairways to reach a heaven-engine that has forgotten the difference between healing and erasure.
+The Creator's chosen deity ascends through floating platforms, resonance beacons, and glass stairways to reach a heaven-engine that has forgotten the difference between healing and erasure.
 
 ## Campaign Threat Fit
 

@@ -80,12 +80,12 @@ for (const faction of data.factions) {
   }
 }
 
-const obsoleteStandardCombatTerms = ['three-Titan', 'five-Titan', 'five Titan', 'five Titans', 'strike force', 'standard squad', 'adjacent Titans'];
+const obsoleteStandardCombatTerms = ['three-Titan', 'single-deity', 'five Titan', 'five Titans', 'strike force', 'standard squad', 'adjacent Titans'];
 for (const mission of data.missions) {
-  if (mission.teamSize !== 1) issues.push(`${mission.id} teamSize ${mission.teamSize} should be 1 for one active Titan combat`);
+  if (mission.teamSize !== 1) issues.push(`${mission.id} teamSize ${mission.teamSize} should be 1 for one active deity combat`);
   const missionText = JSON.stringify({ objectives: mission.objectives, specialRules: mission.specialRules, victoryConditions: mission.victoryConditions });
   for (const term of obsoleteStandardCombatTerms) if (missionText.includes(term)) issues.push(`${mission.id} uses obsolete standard-combat wording: ${term}`);
-  if (!['ONE_PLAYER_CONTROLLED_TITAN', 'ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE'].includes(mission.activeTitanPolicy?.standardCombat)) issues.push(`${mission.id} missing one active Titan policy`);
+  if (!['ONE_PLAYER_CONTROLLED_TITAN', 'ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE'].includes(mission.activeTitanPolicy?.standardCombat)) issues.push(`${mission.id} missing one active deity policy`);
   if (!mission.chapterId) issues.push(`${mission.id} missing chapterId link`);
   if (mission.turnLimit != null && !(mission.turnLimit >= 8 && mission.turnLimit <= 20)) warnings.push(`${mission.id} turnLimit ${mission.turnLimit} outside expected 8-20`);
   if (mission.campaignType === 'Normal' && mission.turnLimit == null) issues.push(`${mission.id} Normal mission missing turnLimit`);

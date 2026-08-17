@@ -5,7 +5,7 @@
 **Gate:** The Thorn-Memory Gate  
 **Status:** Canon Expanded
 ## Realm Thesis
-Tuatha Titans protect continuity. They know worlds die when stories lose roots, names, and obligations to the dead.
+Tuatha deities protect continuity. They know worlds die when stories lose roots, names, and obligations to the dead.
 ## Central Conflict
 Their memory is power, but it can become vengeance when old wounds refuse to compost.
 ## Realm Atmosphere

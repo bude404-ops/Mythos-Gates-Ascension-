@@ -123,7 +123,7 @@ export function validatePlatformState(state) {
   if (state?.schema !== 'TG_PLATFORM_SAVE_STATE_V1') issues.push('schema must be TG_PLATFORM_SAVE_STATE_V1');
   if (!state?.player?.playerId) issues.push('player.playerId is required');
   if (!state?.roster?.activeTitanId) issues.push('roster.activeTitanId is required');
-  if (!state?.roster?.ownedTitans?.some(titan => titan.titanId === state.roster.activeTitanId)) issues.push('active Titan must be owned');
+  if (!state?.roster?.ownedTitans?.some(titan => titan.titanId === state.roster.activeTitanId)) issues.push('active deity must be owned');
   if (!state?.inventory?.currencies || typeof state.inventory.currencies !== 'object') issues.push('inventory.currencies is required');
   if (!Array.isArray(state?.ledger)) issues.push('ledger must be an array');
   if (!Array.isArray(state?.platformEvents)) issues.push('platformEvents must be an array');

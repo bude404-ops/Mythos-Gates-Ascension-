@@ -3,7 +3,7 @@
   "version": "1.7.0",
   "generated": "2026-08-13T00:00:00Z",
   "status": "IMPLEMENTED",
-  "purpose": "Mobile-first Main Menu / Command Hub runtime foundation with implemented first-launch Awakening onboarding, canon starter Titan binding, save validation, campaign handoff, art scale references, enemy archetype registry, mission tactical profiles, Titan/Faction Trials, raid economy, and battlefield entry.",
+  "purpose": "Mobile-first Main Menu / Command Hub runtime foundation with implemented first-launch Awakening onboarding, canon starter deity binding, save validation, campaign handoff, art scale references, enemy archetype registry, mission tactical profiles, Titan/Faction Trials, raid economy, and battlefield entry.",
   "canonFirst": true,
   "forbiddenContent": [
     "futuristic craft",
@@ -257,7 +257,7 @@
     "rules": [
       "recover corrupt save before gameplay",
       "claim pending reward before next mission",
-      "select a valid Titan if selectedTitanIds are missing",
+      "select a valid deity if selectedTitanIds are missing",
       "continue unfinished mission if present",
       "start current campaign mission",
       "enter elite only when campaign unlock rule is true",
@@ -290,7 +290,7 @@
   ],
   "performanceRules": [
     "lazy load non-visible systems",
-    "preload only boot/title/hub/current realm/current selected Titan assets",
+    "preload only boot/title/hub/current realm/current selected deity assets",
     "respect reduced-motion",
     "avoid full menu re-render for resource-only updates",
     "mobile touch targets >=44px"
@@ -307,7 +307,7 @@
   "qualityGates": [
     "Command Hub route is the first rendered game route after title/startup.",
     "No hardcoded faction names in hub render logic; faction UI maps canonical faction registry.",
-    "Selected Titan display resolves from PlayerState selectedTitans plus canonical Titan registry.",
+    "Selected deity display resolves from PlayerState selectedTitans plus canonical deity registry.",
     "Resource bar maps PlayerState resources only.",
     "Every bottom nav button routes to a real implemented screen or LockedContentPanel.",
     "getNextRecommendedAction resolves a real mission handoff.",
@@ -316,23 +316,23 @@
     "TG-DEV-026 Awakening onboarding exposes exactly three canon starter Titans.",
     "TG-DEV-026 Awakening path tracks 12 roster-journey beats from starter choice to faction trial handoff.",
     "Full roster remains hidden until Awakening completion and no starter selection requires payment.",
-    "TG-DEV-027 Trials tab creates save-backed Titan Trial attempts with temporary loadouts.",
+    "TG-DEV-027 Trials tab creates save-backed Divine Trial attempts with temporary loadouts.",
     "TG-DEV-027 Trial completion writes titanTrials, factionTrials, pending TITAN_TRIAL rewards, and Trial Favor.",
     "TG-DEV-027 Borrowed loadouts expire at END_OF_TRIAL and never grant permanent paid power.",
     "TG-DEV-028 all 280 campaign missions expose tactical problem tags and advantage roles.",
-    "TG-DEV-028 recommended Titans are valid, favored-not-required, and never ownership locks.",
+    "TG-DEV-028 recommended deities are valid, favored-not-required, and never ownership locks.",
     "TG-DEV-023 every creature resolves to a production enemy archetype and AI profile.",
     "TG-DEV-023 difficulty tiers expose explicit tactical scaling budgets before stat inflation.",
     "TG-DEV-008 Hollow Wretch and Gateborn Colossus behavior records drive playable battle intents.",
     "TG-DEV-008 battle UI exposes telegraphs, reaction counterplay, behavior tags, and threat budgets.",
     "TG-DEV-030 all 8 Art Director scale sheet types are implemented.",
-    "TG-DEV-030 scale sheets preserve Titan/Gate mass, mobile crop readability, and non-sci-fi terrain language.",
+    "TG-DEV-030 scale sheets preserve deity/Gate mass, mobile crop readability, and non-sci-fi terrain language.",
     "TG-TASK-COMMAND-HUB-018 render telemetry tracks route render counts, max render time, and budget overruns.",
     "TG-TASK-COMMAND-HUB-018 reward claims support partial resource-bar refresh without mandatory full route re-render.",
     "TG-TASK-COMMAND-HUB-018 visible asset preloads use cached lookups and count boot/title/hub assets only.",
     "TG-TASK-COMMAND-HUB-019 final art integration resolves approved asset slots before placeholders.",
     "TG-TASK-COMMAND-HUB-019 Command Hub surfaces art provenance, fallback state, and runtime safety for QA.",
-    "TG-TASK-COMMAND-HUB-019 starter Titan, realm Gate, and faction background art slots are covered by manifest rules.",
+    "TG-TASK-COMMAND-HUB-019 starter deity, realm Gate, and faction background art slots are covered by manifest rules.",
     "F2P economy audit passes",
     "No duplicate energy/currency systems",
     "Core combat remains free and primary",
@@ -366,7 +366,7 @@
     "antiPayToWinRules": [
       "Starter choice is canon-safe and limited to three roles.",
       "Full roster is hidden during onboarding to prevent roster flood.",
-      "Second Titan desire is created through trials and story, not mandatory purchase pressure."
+      "Second deity desire is created through trials and story, not mandatory purchase pressure."
     ]
   },
   "trialSystem": {
@@ -401,7 +401,7 @@
     },
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Mission recommendations surface tactical advantages only; any valid active Titan can attempt the mission."
+    "rule": "Mission recommendations surface tactical advantages only; any valid active deity can attempt the mission."
   },
   "sourceFiles": [
     "data/enemy-archetype-registry.json",

@@ -8,7 +8,7 @@
   "missionNumber": 2,
   "missionInChapter": 2,
   "title": "Elite: Iron Rain Battle line",
-  "description": "Oath Under Thunder: Iron Rain Battle line unfolds across storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span, pushing the one active Titan Asgardian Titan to convert endurance into decisive counterpressure. Appearance rule: Storm-Rooted Aesir Holds is the source culture humans later copied as Norse saga myth; mission terrain and cosmetics must show rune iron, stormsteel, oath rings, raven omens, wolf teeth, Yggdrasil roots, frost-bitten leather, blackwinter scars.",
+  "description": "Oath Under Thunder: Iron Rain Battle line unfolds across storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span, pushing the one active deity Asgardian deity to convert endurance into decisive counterpressure. Appearance rule: Storm-Rooted Aesir Holds is the source culture humans later copied as Norse saga myth; mission terrain and cosmetics must show rune iron, stormsteel, oath rings, raven omens, wolf teeth, Yggdrasil roots, frost-bitten leather, blackwinter scars.",
   "lore": "This mission treats Storm-Rooted Aesir Holds as the origin behind Norse saga myth: battlefield architecture, reward cosmetics, relic props, and hazard silhouettes must use rune iron, stormsteel, oath rings, raven omens, wolf teeth, Yggdrasil roots, frost-bitten leather, blackwinter scars instead of generic historical or RPG dressing.",
   "recommendedPower": 736,
   "encouragedTitanRoles": [
@@ -19,7 +19,7 @@
   "mapId": "TG-MAP-003",
   "terrain": "storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span; source-culture appearance layer: rune-storm bridges, oath-stone courts, Bifrost storm fractures, Yggdrasil root ramps, Valhalla shieldwall ruins; cosmetic/relic silhouettes: rune-iron oath axes, stormsteel wolf-cloak mail, Yggdrasil thunder-root cores, Valkyrie witness counters",
   "objectives": {
-    "primary": "Complete Elite: Iron Rain Battle line with one active Titan while reading storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span and preserving faction doctrine.",
+    "primary": "Complete Elite: Iron Rain Battle line with one active deity while reading storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span and preserving faction doctrine.",
     "optional": [
       "Win with no Titan defeated",
       "Trigger at least three Oathbound counterattacks",
@@ -53,26 +53,26 @@
     "Oathbound: surviving damage strengthens the next committed strike.",
     "Elite Storm: lightning collapse advances one turn earlier.",
     "Elite Banner Law: enemy buffs persist until objective action breaks the source.",
-    "Solo Titanic Scale: one active Titan occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
+    "Solo Deityic Scale: one active deity occupies the tactical focus; enemies, elites, and bosses scale around that single presence."
   ],
   "victoryConditions": [
-    "Complete Elite: Iron Rain Battle line with one active Titan while reading storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span and preserving faction doctrine."
+    "Complete Elite: Iron Rain Battle line with one active deity while reading storm-slick rune-iron bridge with oath-stones, broken railings, and thunder channels built into the span and preserving faction doctrine."
   ],
   "defeatConditions": [
-    "Your active Titan falls",
+    "Your active deity falls",
     "Primary objective fails",
     "Turn limit expires"
   ],
   "rewards": {
     "firstClear": [
-      "Solo Titan mastery XP",
+      "Solo Deity mastery XP",
       "High-tier oath iron",
       "Asgardian faction shard cache",
       "Storm rune upgrade dust",
       "TG-F02-E-C01-M02 codex shard"
     ],
     "replay": [
-      "Titan mastery XP",
+      "divine mastery XP",
       "Oath iron",
       "Storm rune upgrade dust",
       "Asgardian source-culture cosmetic/relic component"
@@ -96,7 +96,7 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "activeTitanDesignNotes": "Balanced for one active Titan; roster depth changes pre-launch selection, not on-field body count.",
+  "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "eliteRemixOf": "TG-F02-C01-M02",
   "meaningfulDifferences": [
     "Secondary storm condition active",
@@ -109,7 +109,7 @@
   "activeTitanPolicy": {
     "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
     "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
-    "rosterPurpose": "Choose one Titan before launch; no ally positioning or team formations in battle.",
+    "rosterPurpose": "Choose one deity before launch; no ally positioning or team formations in battle.",
     "squadCombat": "FORBIDDEN",
     "teamTurns": "FORBIDDEN"
   },
@@ -149,7 +149,7 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Favored-not-required: any valid active Titan may clear the mission; recommended god-Titans are tactical hints only."
+    "rule": "Favored-not-required: any valid active deity may clear the mission; recommended deities are tactical hints only."
   },
   "sourceCultureAppearanceRule": {
     "realm": "Storm-Rooted Aesir Holds",
@@ -182,7 +182,7 @@
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled Titans",
+      "multiple player-controlled deities",
       "ally positioning",
       "team turns"
     ]
@@ -204,7 +204,7 @@
       "TG-CROSS-RUN-IN-006"
     ],
     "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
-    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone Titan without creating ally units or squad play."
+    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone deity without creating ally units or squad play."
   },
   "loreContinuityGuard": {
     "sourceFactionId": "TG-FACTION-002",
@@ -215,7 +215,7 @@
       "established faction identity",
       "Titan Gates mythology",
       "Gates and Codex systems",
-      "one player-controlled Titan combat",
+      "one player-controlled deity combat",
       "mobile UE5 zone structure"
     ],
     "forbid": [

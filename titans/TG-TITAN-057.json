@@ -34,8 +34,8 @@
   "passives": [
     "Blood Contract: Nyxara gains Debtfire when controller play rewrites movement lanes, delays elite intent, and imprints safe/unsafe tiles on contract-scorched court ground. At 3 stacks, the next Technique or Reaction adds a debt, clause, and dominion law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Infernal Dominion."
   ],
-  "lore": "Lilith, Night Sovereign, is now canonized as one of the four playable god-Titans of Infernal Dominion. The Titan is the source-realm divinity behind the mythology rather than a generic champion: night demon queen, sovereign refusal, seduction, storm of forbidden names and boundary law. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-  "personality": "A playable mythology god whose behavior expresses night demon queen, sovereign refusal, seduction, storm of forbidden names and boundary law; confident, sovereign, readable in combat, loyal to the unchanged Infernal Dominion canon.",
+  "lore": "Lilith, Night Sovereign, is now canonized as one of the four playable deities of Infernal Dominion. The deity is the source-realm divinity behind the mythology rather than a generic champion: night demon queen, sovereign refusal, seduction, storm of forbidden names and boundary law. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology deity whose behavior expresses night demon queen, sovereign refusal, seduction, storm of forbidden names and boundary law; confident, sovereign, readable in combat, loyal to the unchanged Infernal Dominion canon.",
   "visualDescription": "Lilith manifests as night demon queen, sovereign refusal, seduction, storm of forbidden names and boundary law from Infernal Dominion: alluring dangerous feminine queen face, dark almond eyes, full lips, arched brows, hypnotic confidence; sensual powerful feminine frame, narrow waist, pronounced hips, elegant predatory posture; signature silhouette: long horn crown, bat-silk hair mantle, whip crescent, queenly night outline. Weapon: thorned moon whip and obsidian mirror dagger. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
   "artStatus": "READY_FOR_GENERATION",
   "artPromptId": "TG-PROMPT-057",
@@ -155,7 +155,7 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
-    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
     "primaryRole": "reshape terrain and deny enemy plans",
     "budgetTarget": 109,
     "computedCombatPower": 226,
@@ -198,7 +198,21 @@
     "faceLock": "alluring dangerous feminine queen face, dark almond eyes, full lips, arched brows, hypnotic confidence",
     "bodyLock": "sensual powerful feminine frame, narrow waist, pronounced hips, elegant predatory posture",
     "silhouetteLock": "long horn crown, bat-silk hair mantle, whip crescent, queenly night outline",
-    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved."
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved.",
+    "mythology": "Lilith — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+    "realm": "The Infernal Dominion",
+    "civilization": "Infernal Dominion mythological extradimensional civilization",
+    "cultureRule": "God identity must come from mythology, realm, civilization, sacred materials, beauty standards, and ritual practice; never color swap alone.",
+    "beautyStandard": "Unmistakably feminine divine beauty with faction-specific elegance, allure, posture, and armor shaping.",
+    "realmAnatomy": "Realm-shaped mythological divinity, supernatural but not sci-fi alien.",
+    "identityFace": "alluring dangerous feminine queen face, dark almond eyes, full lips, arched brows, hypnotic confidence",
+    "identityBody": "sensual powerful feminine frame, narrow waist, pronounced hips, elegant predatory posture",
+    "roleSilhouette": "long horn crown, bat-silk hair mantle, whip crescent, queenly night outline",
+    "auditStatus": "PASS"
   },
-  "title": "Night Sovereign"
+  "title": "Night Sovereign",
+  "playableClassification": "Goddess",
+  "species": "Deity",
+  "characterType": "Playable Deity",
+  "rosterClass": "Deity Roster"
 }

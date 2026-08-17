@@ -83,7 +83,7 @@ const files = {
   'enemy-archetype-registry.json': 'enemyArchetypeRegistry',
   'raid-design-document.json': 'raidDesignDocument',
   'canon-faction-matrix.json': 'canonFactionMatrix',
-  'titan-role-matrix.json': 'titanRoleMatrix',
+  'titan-role-matrix.json': 'deityRoleMatrix',
   'roster-depth-map.json': 'rosterDepthMap',
   'mission-tactical-profile-system.json': 'missionTacticalProfileSystem',
   'player-onboarding-roster-journey.json': 'playerOnboardingRosterJourney',
@@ -97,8 +97,8 @@ const files = {
   'faction-mission-dialogue-completion-audit.json': 'factionMissionDialogueCompletionAudit',
   'tactical-blueprint-layouts.json': 'tacticalBlueprintLayouts',
   'tactical-blueprint-placements.json': 'tacticalBlueprintPlacements',
-  'titan-enemy-balance-pass.json': 'titanEnemyBalancePass',
-  'titan-art-identity-audit.json': 'titanArtIdentityAudit',
+  'titan-enemy-balance-pass.json': 'deityEnemyBalancePass',
+  'titan-art-identity-audit.json': 'deityArtIdentityAudit',
   'gameplay-balance-framework.json': 'gameplayBalanceFramework',
   'combat-first-gameplay-doctrine.json': 'combatFirstGameplayDoctrine',
   'economy-migration-audit.json': 'economyMigrationAudit',
@@ -154,7 +154,7 @@ const artMapPrompts = artPrompts
 counts.artMapPrompts = artMapPrompts.length;
 counts.artCampaignPrompts = artPrompts.filter(prompt => prompt.category === 'Campaign').length;
 counts.blueprint3dAssets = blueprint3dRegistry.assets.length;
-counts.blueprint3dTitans = blueprint3dRegistry.assets.filter(asset => asset.assetType === 'TITAN').length;
+counts.blueprint3dDeities = blueprint3dRegistry.assets.filter(asset => asset.assetType === 'DEITY').length;
 counts.blueprint3dBattlefields = blueprint3dRegistry.assets.filter(asset => asset.assetType === 'BATTLEFIELD').length;
 counts.blueprint3dGates = blueprint3dRegistry.assets.filter(asset => asset.assetType === 'GATE').length;
 counts.blueprint3dProductionQueue = blueprint3dProductionQueue.queue.length;

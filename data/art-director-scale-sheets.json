@@ -34,7 +34,7 @@
     {
       "id": "TG-SCALE-SHEET-001",
       "type": "normal_enemy",
-      "title": "Normal Enemy vs Titan",
+      "title": "Normal Enemy vs deity",
       "primarySubject": "standardEnemy",
       "compareAgainst": [
         "normalHumanoid",
@@ -42,23 +42,23 @@
         "standardWall"
       ],
       "ratioToTitan": 0.22,
-      "composition": "Front 3/4 lineup: normal humanoid, standard Hollow enemy, player Titan ankle/knee anchor, one standard wall behind.",
-      "camera": "Low tactical camera, enemy readable at mobile zoom without stealing Titan mass.",
+      "composition": "Front 3/4 lineup: normal humanoid, standard Hollow enemy, player deity ankle/knee anchor, one standard wall behind.",
+      "camera": "Low tactical camera, enemy readable at mobile zoom without stealing deity mass.",
       "promptOverlay": [
-        "enemy head below Titan knee line",
+        "enemy head below deity knee line",
         "small shadow footprint",
         "clear silhouette weapon/limb profile"
       ],
       "qaChecks": [
-        "Normal enemy never reaches Titan waist.",
+        "Normal enemy never reaches deity waist.",
         "Silhouette stays readable at 360px width.",
-        "Wall height remains below Titan torso."
+        "Wall height remains below deity torso."
       ]
     },
     {
       "id": "TG-SCALE-SHEET-002",
       "type": "elite_enemy",
-      "title": "Elite Enemy vs Titan",
+      "title": "Elite Enemy vs deity",
       "primarySubject": "eliteEnemy",
       "compareAgainst": [
         "standardEnemy",
@@ -66,15 +66,15 @@
         "largeEnemy"
       ],
       "ratioToTitan": 0.36,
-      "composition": "Escalation lineup showing standard enemy, elite enemy, and Titan with shared ground plane and contact shadows.",
-      "camera": "Slightly lower heroic angle; elite feels threatening but still clearly under Titan scale.",
+      "composition": "Escalation lineup showing standard enemy, elite enemy, and deity with shared ground plane and contact shadows.",
+      "camera": "Slightly lower heroic angle; elite feels threatening but still clearly under deity scale.",
       "promptOverlay": [
-        "elite reaches below Titan hip",
+        "elite reaches below deity hip",
         "armor mass larger than standard enemy",
-        "do not make elite Titan-sized"
+        "do not make elite deity-sized"
       ],
       "qaChecks": [
-        "Elite enemy reads as a Titan captain, not a boss.",
+        "Elite enemy reads as a deity captain, not a boss.",
         "Titan remains the dominant vertical mass.",
         "Armor volume is larger, not just brighter."
       ]
@@ -82,7 +82,7 @@
     {
       "id": "TG-SCALE-SHEET-003",
       "type": "player_titan",
-      "title": "Player Titan Hero Scale",
+      "title": "Player deity Hero Scale",
       "primarySubject": "playerTitan",
       "compareAgainst": [
         "smallAgileTitan",
@@ -90,7 +90,7 @@
         "titanGateArch"
       ],
       "ratioToTitan": 1,
-      "composition": "Three Titan body classes on one baseline: agile, standard, heavy, with Gate arch ghosted behind.",
+      "composition": "Three deity body classes on one baseline: agile, standard, heavy, with Gate arch ghosted behind.",
       "camera": "Orthographic-friendly side/front comparison plus one action inset for attack arc size.",
       "promptOverlay": [
         "agile narrower and faster silhouette",
@@ -99,7 +99,7 @@
       ],
       "qaChecks": [
         "All Titans feel playable at tactical grid scale.",
-        "Heavy Titan does not become colossal boss scale.",
+        "Heavy deity does not become colossal boss scale.",
         "Attack arc extends beyond body silhouette."
       ]
     },
@@ -114,10 +114,10 @@
         "titanGateArch"
       ],
       "ratioToTitan": 1.12,
-      "composition": "Duel staging: player Titan and Titan-scale enemy shoulder-to-shoulder, Gate arch and terrain object in background.",
+      "composition": "Duel staging: player Titan and deity-scale enemy shoulder-to-shoulder, Gate arch and terrain object in background.",
       "camera": "Boss-preview camera, both silhouettes equally readable with enemy slightly taller or longer-limbed.",
       "promptOverlay": [
-        "enemy can match Titan height",
+        "enemy can match deity height",
         "distinct Hollow body language",
         "not a colossal boss"
       ],
@@ -130,7 +130,7 @@
     {
       "id": "TG-SCALE-SHEET-005",
       "type": "colossal_boss",
-      "title": "Colossal Boss vs Titan",
+      "title": "Colossal Boss vs deity",
       "primarySubject": "colossalBoss",
       "compareAgainst": [
         "playerTitan",
@@ -138,7 +138,7 @@
         "titanGateArch"
       ],
       "ratioToTitan": 1.83,
-      "composition": "Player Titan foreground at foot/torso line of colossal boss; separate inset shows full boss silhouette against Gate arch.",
+      "composition": "Player deity foreground at foot/torso line of colossal boss; separate inset shows full boss silhouette against Gate arch.",
       "camera": "Two-panel reference: readable gameplay crop and full majesty silhouette crop.",
       "promptOverlay": [
         "Titan reaches lower torso at most",
@@ -166,12 +166,12 @@
       "camera": "Wide landmark camera with clear inner passage and readable threshold material detail.",
       "promptOverlay": [
         "Gate must dwarf Titans",
-        "opening accepts Titan travel",
+        "opening accepts deity travel",
         "threshold stones are battlefield-sized"
       ],
       "qaChecks": [
         "Gate is visible as a landmark from battlefield camera.",
-        "Inner opening exceeds Titan height.",
+        "Inner opening exceeds deity height.",
         "Architecture avoids sci-fi portal framing."
       ]
     },
@@ -187,12 +187,12 @@
         "playerTitan"
       ],
       "ratioToTitan": 2.12,
-      "composition": "Temple pylon, wall, statue, bridge width markers, and Titan placed on shared tactical floor tiles.",
+      "composition": "Temple pylon, wall, statue, bridge width markers, and deity placed on shared tactical floor tiles.",
       "camera": "Isometric tactical camera with lane/cover readability and no artificial grid glow.",
       "promptOverlay": [
         "cover can hide enemies but not Titans",
-        "statues are Titan-era monuments",
-        "bridge width supports Titan traversal"
+        "statues are deity-era monuments",
+        "bridge width supports deity traversal"
       ],
       "qaChecks": [
         "Architecture makes Titans feel immense without clipping them.",
@@ -212,12 +212,12 @@
         "gateInteriorOpening"
       ],
       "ratioToTitan": 0.65,
-      "composition": "Solar seal pylon, fallen gate rib, breakable wall, and objective pedestal beside Titan feet and normal enemies.",
+      "composition": "Solar seal pylon, fallen gate rib, breakable wall, and objective pedestal beside deity feet and normal enemies.",
       "camera": "Mobile combat zoom focused on tap targets, obstruction, and silhouette separation.",
       "promptOverlay": [
         "objects large enough to tap",
         "hazards physical not UI markers",
-        "objective pedestal below Titan knee but above normal enemy waist"
+        "objective pedestal below deity knee but above normal enemy waist"
       ],
       "qaChecks": [
         "Tap target is visible at 360x640.",

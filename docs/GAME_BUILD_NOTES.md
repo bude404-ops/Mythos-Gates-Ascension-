@@ -9,7 +9,7 @@ This is the first playable browser game layer added on top of the Titan Gates re
 - Root launcher page with Play and Dev Platform routes
 - `/game/index.html` playable build
 - Mobile-first tactical UI
-- One-active-Titan active Titan selection
+- One-active-Titan active deity selection
 - Tactical Gate battlefield
 - Player movement and attack actions
 - Signature abilities
@@ -21,7 +21,7 @@ This is the first playable browser game layer added on top of the Titan Gates re
 
 Mission: **ATEN RA Gate Awakening**
 
-Player objective: defeat the unstable Gate encounter using a selected one-active-Titan chosen Titan.
+Player objective: defeat the unstable Gate encounter using a selected one-active-deity chosen deity.
 
 Enemy forces:
 

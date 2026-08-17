@@ -8,7 +8,7 @@ const fail = issue => issues.push(issue);
 const issues = [];
 
 const titans = read('data/titans.json');
-const prompts = read('data/art-prompts.json').filter(prompt => prompt.category === 'Titan');
+const prompts = read('data/art-prompts.json').filter(prompt => prompt.category === 'Deity');
 const audit = read('data/titan-art-identity-audit.json');
 const factions = read('data/factions.json');
 const factionIds = new Set(factions.map(f => f.id));
@@ -16,25 +16,10 @@ const promptByEntity = new Map(prompts.map(prompt => [prompt.entityId, prompt]))
 const auditByTitan = new Map((audit.entries || []).map(entry => [entry.titanId, entry]));
 const allowedStatuses = new Set(['PASS', 'REFINE', 'REDESIGN']);
 const requiredPromptTokens = [
-  'Titan name:',
-  'Titan title:',
-  'Sex:',
-  'Faction:',
-  'Mythology:',
-  'Extradimensional realm:',
-  'Civilization:',
-  'Culture rule:',
-  'Titan DNA:',
-  'Realm-shaped species/anatomical traits:',
-  'Individual face:',
-  'Body proportions:',
-  'Civilization role:',
-  'Combat philosophy:',
-  'Signature weapon:',
-  'Armor identity:',
-  'Cultural symbols/materials:',
-  'Pose and expression:',
-  'Environment and lighting:',
+  'Create a premium playable character depiction of',
+  'actual',
+  'Titan Gates universe',
+  'not an ancient Titan Gates giant',
   'Art style:'
 ];
 const negativeTokens = [
@@ -49,7 +34,7 @@ const negativeTokens = [
   'mech'
 ];
 
-if (audit.status !== 'IMPLEMENTED') fail('Titan art identity audit must be IMPLEMENTED');
+if (audit.status !== 'IMPLEMENTED') fail('Deity art identity audit must be IMPLEMENTED');
 if (!Array.isArray(audit.entries) || audit.entries.length !== titans.length) fail(`Audit entry coverage mismatch: ${audit.entries?.length || 0}/${titans.length}`);
 if (prompts.length !== titans.length) fail(`Titan prompt coverage mismatch: ${prompts.length}/${titans.length}`);
 
@@ -102,11 +87,11 @@ for (const titan of titans) {
   factionSexCounts.set(key, (factionSexCounts.get(key) || 0) + 1);
 }
 for (const faction of factions) {
-  if ((factionSexCounts.get(`${faction.id}:Male`) || 0) !== 2) fail(`${faction.name}: must have exactly 2 male god-Titans`);
-  if ((factionSexCounts.get(`${faction.id}:Female`) || 0) !== 2) fail(`${faction.name}: must have exactly 2 female god-Titans`);
+  if ((factionSexCounts.get(`${faction.id}:Male`) || 0) !== 2) fail(`${faction.name}: must have exactly 2 male deities`);
+  if ((factionSexCounts.get(`${faction.id}:Female`) || 0) !== 2) fail(`${faction.name}: must have exactly 2 female deities`);
 }
-if (femaleCount !== 14) fail(`Female god-Titan count must be 14: ${femaleCount}`);
-if (maleCount !== 14) fail(`Male god-Titan count must be 14: ${maleCount}`);
+if (femaleCount !== 14) fail(`Female deity count must be 14: ${femaleCount}`);
+if (maleCount !== 14) fail(`Male deity count must be 14: ${maleCount}`);
 for (const [weapon, count] of seenWeapons.entries()) if (count > 1) fail(`Signature weapon reused: ${weapon}`);
 if ((audit.summary?.pass || 0) + (audit.summary?.refine || 0) + (audit.summary?.redesign || 0) !== titans.length) fail('Audit summary status counts do not cover all Titans');
 if (!audit.summary?.highestPriorityTitanId || !auditByTitan.has(audit.summary.highestPriorityTitanId)) fail('Highest-priority Titan recommendation missing or invalid');
@@ -114,7 +99,7 @@ if (!exists('docs/lore/TITAN_ART_IDENTITY_AUDIT.md')) fail('Missing Markdown art
 
 const result = {
   ok: issues.length === 0,
-  titanArtIdentityAudit: issues.length === 0 ? 'PASS' : 'FAIL',
+  deityArtIdentityAudit: issues.length === 0 ? 'PASS' : 'FAIL',
   summary: {
     titans: titans.length,
     prompts: prompts.length,

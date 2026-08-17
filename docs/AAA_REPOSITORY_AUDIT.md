@@ -10,7 +10,7 @@ Readiness grade after the mission/campaign lore run-in pass: A- for AAA preprodu
 
 ## What is already strong
 
-- Canon scope is coherent: 7 playable Realms, 63 Titans, one-active-Titan combat, The Hollow as a non-playable campaign threat.
+- Canon scope is coherent: 7 playable Realms, 63 Titans, one-active-deity combat, The Hollow as a non-playable campaign threat.
 - Content coverage is unusually deep for preproduction: 280 missions, 280 dialogue packages, 280 mission art packages, 35 campaign chapters, 110 art prompts.
 - Production handoff exists: 129 3D blueprint assets, 129 asset manifests, creator handoff packets, asset dependency graph, external AI battlefield packet.
 - Automation exists: build, continuity audit, content validation, asset validation, index freshness, playable battle smoke test, external AI packet validation, secret scan.
@@ -25,7 +25,7 @@ Readiness grade after the mission/campaign lore run-in pass: A- for AAA preprodu
 - Platform Core v1 now exists for player profile creation, save import/export, roster ownership, progression persistence, inventory balances, and currency ledger events.
 - Hosted backend boundary v1 now defines profile service, cloud save service, authoritative economy ledger service, and telemetry ingestion service with idempotency and version-conflict rules.
 - Runtime persistence boundary v1 now defines database tables, additive migration policy, route authorization, admin audit operations, environments, and observability fields.
-- The first existing mission is now mobile-locked as the master prototype, mapped, and bound to one-Titan-vs-many combat, and all missions/campaigns now carry mobile UE5 loop metadata plus cross-faction lore run-in rules into one UE5 region, one exploration zone, one tactical arena, and one optional boss-arena template without rewriting lore canon.
+- The first existing mission is now mobile-locked as the master prototype, mapped, and bound to one-Deity-vs-many combat, and all missions/campaigns now carry mobile UE5 loop metadata plus cross-faction lore run-in rules into one UE5 region, one exploration zone, one tactical arena, and one optional boss-arena template without rewriting lore canon.
 - Large source asset policy is present through Git LFS attributes.
 
 ## Structural risks blocking AAA-scale production
@@ -40,7 +40,7 @@ Required next state:
 - generated DataAssets/DataTables from canon
 - Blueprint Actor Components for exploration, encounters, and tactical arena entry
 - Level Instance template for `TG-F01-C01-M01`
-- Android/iOS device profiles, mobile lighting, LOD, culling, texture budgets, FPS/memory harness, one-Titan-vs-many combat loop, visible power progression checks, cross-faction creature encounter pools, mission/campaign lore guardrails, and first-zone approval gate
+- Android/iOS device profiles, mobile lighting, LOD, culling, texture budgets, FPS/memory harness, one-Deity-vs-many combat loop, visible power progression checks, cross-faction creature encounter pools, mission/campaign lore guardrails, and first-zone approval gate
 
 ### 2. Prototype code is too bundled
 

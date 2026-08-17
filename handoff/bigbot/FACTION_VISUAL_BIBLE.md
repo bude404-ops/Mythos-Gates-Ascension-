@@ -38,7 +38,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 - nemes-like energy mantle or linen head/shoulder flow for ruler silhouettes
 - pylon harnesses and temple-gate shoulder frames that wrap the body instead of replacing it
 - scarab carapace plates for renewal/battery forms
-- was-sceptre, crook, flail, khopesh, or weighing-scale weapon silhouettes abstracted into Titan gear
+- was-sceptre, crook, flail, khopesh, or weighing-scale weapon silhouettes abstracted into Divine Gear
 - cobra uraeus brow crests, falcon eye visors, jackal threshold masks, lion mane armor, or lotus/papyrus river crests when lore-appropriate
 - Ma’at feather balance lines across armor seams, never readable text
 
@@ -53,7 +53,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 - linen fibers stiffened into divine armor folds, sun-bleached at the edges
 - carved relief bands showing abstract stars, river ripples, feathers, barque arcs, and balance geometry without readable text
 - heat shimmer, desert abrasion, Nile polish, and incense smoke staining around sacred seams
-- scarab-shell iridescence or lion-fur shadow only when the Titan’s myth anchor calls for it
+- scarab-shell iridescence or lion-fur shadow only when the deity’s myth anchor calls for it
 
 ### Colors
 - white-gold noon light
@@ -81,7 +81,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 
 ### Armor construction
 - Armor is divine office made physical: crown, collar, pectoral, linen, scale, pylon harness, and sacred weapon geometry bonded to living extradimensional anatomy.
-- Human Egyptian crowns, ankhs, pylons, collars, and temple forms are in-world human copies of these Aten Ra originals; the Titan version should feel older, stranger, and more functional.
+- Human Egyptian crowns, ankhs, pylons, collars, and temple forms are in-world human copies of these Aten Ra originals; the deity version should feel older, stranger, and more functional.
 - Pylons, obelisks, shrines, and solar courts can influence silhouettes as shoulder frames, halos, gates, collars, shields, or weapons — never as building torsos or city-on-body decoration.
 - Every armor choice must reveal myth function: Ma’at law, Ra kingship, Aten radiance, Khepri renewal, Sutekh storm-disruption, Iset restoration, Maahes guarding, or Amunet concealment.
 
@@ -89,7 +89,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 - Titans read as colossal offices of cosmic law: Ra’s sovereign noon, Aten’s direct radiance, Khepri’s rebirth engine, Ma’at’s balance, Sutekh’s dangerous defense, Iset’s restoration, Maahes’ lion guard, or Amunet’s hidden execution.
 - Silhouettes should use divine regalia more than generic plate: collars, crowns, nemes-flow, pectorals, scarabs, scale forms, barque arcs, threshold masks, and pylon harnesses.
 - No city-on-body, no temple-on-legs, no block pyramids, no robot sarcophagus chassis, no tourist-costume pharaoh helmet.
-- Each Titan should imply which human deity or symbol humans later remembered incorrectly.
+- Each deity should imply which human deity or symbol humans later remembered incorrectly.
 
 ### NPC rules
 - NPCs wear lived-in priest-scribe, gate-judge, embalmer-architect, river astronomer, court official, or solar engineer regalia with linen folds, wax seals, faience beads, bronze tools, ink palettes, and obsidian tablets.
@@ -192,7 +192,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 
 ### Titan rules
 - Titans read as colossal myth offices of The Storm-Rooted Aesir Holds, with anatomy and armor fused by function.
-- Each Titan should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
+- Each deity should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
 - Avoid robot, mech, statue, mascot, and costume readings.
 - Preserve mobile-readable role silhouette.
 
@@ -295,7 +295,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 
 ### Titan rules
 - Titans read as colossal myth offices of The Celestial Heights of Olympus, with anatomy and armor fused by function.
-- Each Titan should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
+- Each deity should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
 - Avoid robot, mech, statue, mascot, and costume readings.
 - Preserve mobile-readable role silhouette.
 
@@ -399,7 +399,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 
 ### Titan rules
 - Titans read as colossal myth offices of The Sacred Kingdoms, with anatomy and armor fused by function.
-- Each Titan should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
+- Each deity should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
 - Avoid robot, mech, statue, mascot, and costume readings.
 - Preserve mobile-readable role silhouette.
 
@@ -503,7 +503,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 
 ### Titan rules
 - Titans read as colossal myth offices of Avalora, with anatomy and armor fused by function.
-- Each Titan should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
+- Each deity should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
 - Avoid robot, mech, statue, mascot, and costume readings.
 - Preserve mobile-readable role silhouette.
 
@@ -604,7 +604,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 
 ### Titan rules
 - Titans read as colossal myth offices of The Radiant Hierarchies, with anatomy and armor fused by function.
-- Each Titan should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
+- Each deity should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
 - Avoid robot, mech, statue, mascot, and costume readings.
 - Preserve mobile-readable role silhouette.
 
@@ -706,7 +706,7 @@ Canonical appearance, armor, material, symbol, and rejection guidance for all se
 
 ### Titan rules
 - Titans read as colossal myth offices of The Infernal Dominion, with anatomy and armor fused by function.
-- Each Titan should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
+- Each deity should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.
 - Avoid robot, mech, statue, mascot, and costume readings.
 - Preserve mobile-readable role silhouette.
 

@@ -34,8 +34,8 @@
   "passives": [
     "Aegis Favor: Nikos gains Favor when disruptor play places a false timing window that punishes enemy overcommitment on marble thunder line. At 3 stacks, the next Technique or Reaction adds a divine contest law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of High Olympian courts."
   ],
-  "lore": "Ares, Bronze War Fury, is now canonized as one of the four playable god-Titans of Olympian. The Titan is the source-realm divinity behind the mythology rather than a generic champion: war god of violent courage, battlefield rupture, and victory frenzy. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-  "personality": "A playable mythology god whose behavior expresses war god of violent courage, battlefield rupture, and victory frenzy; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
+  "lore": "Ares, Bronze War Fury, is now canonized as one of the four playable deities of Olympian. The deity is the source-realm divinity behind the mythology rather than a generic champion: war god of violent courage, battlefield rupture, and victory frenzy. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology deity whose behavior expresses war god of violent courage, battlefield rupture, and victory frenzy; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
   "visualDescription": "Ares manifests as war god of violent courage, battlefield rupture, and victory frenzy from Olympian: rugged masculine warrior face, broken nose, hard jaw, burning eyes, battle-scarred brow; explosive muscular masculine fighter build, thick neck, powerful shoulders, forward-leaning aggression; signature silhouette: crested helm, spear thrust line, torn red cloak, shield shards around waist. Weapon: bronze war spear and notched kopis. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
   "artStatus": "READY_FOR_GENERATION",
   "artPromptId": "TG-PROMPT-023",
@@ -155,7 +155,7 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
-    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
     "primaryRole": "interrupt resources, casts, reactions, and elite mechanics",
     "budgetTarget": 109,
     "computedCombatPower": 229,
@@ -198,7 +198,21 @@
     "faceLock": "rugged masculine warrior face, broken nose, hard jaw, burning eyes, battle-scarred brow",
     "bodyLock": "explosive muscular masculine fighter build, thick neck, powerful shoulders, forward-leaning aggression",
     "silhouetteLock": "crested helm, spear thrust line, torn red cloak, shield shards around waist",
-    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved."
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved.",
+    "mythology": "Ares — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+    "realm": "The Celestial Heights of Olympus",
+    "civilization": "Olympian mythological extradimensional civilization",
+    "cultureRule": "God identity must come from mythology, realm, civilization, sacred materials, beauty standards, and ritual practice; never color swap alone.",
+    "beautyStandard": "Unmistakably masculine divine presence with faction-specific strength, nobility, posture, and varied anatomy.",
+    "realmAnatomy": "Realm-shaped mythological divinity, supernatural but not sci-fi alien.",
+    "identityFace": "rugged masculine warrior face, broken nose, hard jaw, burning eyes, battle-scarred brow",
+    "identityBody": "explosive muscular masculine fighter build, thick neck, powerful shoulders, forward-leaning aggression",
+    "roleSilhouette": "crested helm, spear thrust line, torn red cloak, shield shards around waist",
+    "auditStatus": "PASS"
   },
-  "title": "Bronze War Fury"
+  "title": "Bronze War Fury",
+  "playableClassification": "God",
+  "species": "Deity",
+  "characterType": "Playable Deity",
+  "rosterClass": "Deity Roster"
 }

@@ -104,7 +104,7 @@
 
   <script type="module">
     import { DEVICE_PRESETS, loadGameData, renderGameScreen, runVisualChecks, previewStyles, getAffectedScreens } from './shared-preview.js';
-    const state = { screen: new URLSearchParams(location.search).get('screen') || 'home', device: '390', devMode: true, entityId: new URLSearchParams(location.search).get('entity') || '', changeType: 'titan-artwork' };
+    const state = { screen: new URLSearchParams(location.search).get('screen') || 'home', device: '390', devMode: true, entityId: new URLSearchParams(location.search).get('entity') || '', changeType: 'deity-artwork' };
     let DATA;
     const $ = id => document.getElementById(id);
     const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

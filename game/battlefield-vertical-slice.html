@@ -10,7 +10,7 @@
     body{touch-action:manipulation}
     .tile{aspect-ratio:1/1;min-width:42px;position:relative;overflow:visible}
     .tile:after{content:attr(data-label);position:absolute;right:2px;bottom:1px;font-size:9px;opacity:.35}
-    .titan{filter:drop-shadow(0 14px 18px rgba(250,204,21,.25))}
+    .deity{filter:drop-shadow(0 14px 18px rgba(250,204,21,.25))}
     .shake{animation:shake .28s ease-in-out}
     .pulse{animation:pulseScale .85s ease-in-out infinite alternate}
     .seal-pulse{animation:sealPulse 1.2s ease-in-out infinite alternate}
@@ -32,12 +32,12 @@
   <main class="mx-auto grid max-w-6xl gap-3 p-3 pb-28 lg:grid-cols-[1fr_340px]">
     <section class="rounded-3xl border border-yellow-700/30 bg-neutral-900 p-3 shadow-dark-outline">
       <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
-        <div><p class="text-xs font-black uppercase tracking-[.2em] text-primary">One Titan vs Many</p><h2 class="text-2xl font-black">Aten-Ra, Solar Law Monolith</h2></div>
+        <div><p class="text-xs font-black uppercase tracking-[.2em] text-primary">One Deity vs Many</p><h2 class="text-2xl font-black">Aten-Ra, Solar Law Monolith</h2></div>
         <button onclick="gateArrival()" class="rounded-2lg bg-yellow-500 px-4 py-2 text-sm font-black text-neutral-950">Gate Arrival</button>
       </div>
       <div id="battlefield" class="relative mx-auto grid max-w-[620px] grid-cols-7 gap-1 rounded-3xl border border-neutral-800 bg-neutral-950 p-3"></div>
       <div class="mt-3 grid grid-cols-4 gap-2 text-center text-xs">
-        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-yellow-400">Titan Scale</b><br/>6.1x heavy</div>
+        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-yellow-400">Deity Scale</b><br/>6.1x heavy</div>
         <div class="rounded-xl bg-neutral-950 p-2"><b class="text-primary">Gate</b><br/>14x arch</div>
         <div class="rounded-xl bg-neutral-950 p-2"><b class="text-bull-400">Grid</b><br/>7x7 · 49</div>
         <div class="rounded-xl bg-neutral-950 p-2"><b class="text-bear-400">Enemies</b><br/>Elite 1.85x</div>
@@ -47,7 +47,7 @@
       <section class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4">
         <p class="text-xs font-black uppercase tracking-[.24em] text-primary">Resources</p>
         <div class="mt-3 grid grid-cols-2 gap-2 text-center">
-          <div class="rounded-2xl bg-neutral-950 p-3"><b id="hp" class="text-2xl text-bull-400">50</b><br/><span class="text-xs text-neutral-400">Titan Integrity</span></div>
+          <div class="rounded-2xl bg-neutral-950 p-3"><b id="hp" class="text-2xl text-bull-400">50</b><br/><span class="text-xs text-neutral-400">Deity Integrity</span></div>
           <div class="rounded-2xl bg-neutral-950 p-3"><b id="mom" class="text-2xl text-yellow-400">1</b><br/><span class="text-xs text-neutral-400">Momentum</span></div>
           <div class="rounded-2xl bg-neutral-950 p-3"><b id="div" class="text-2xl text-primary">0</b><br/><span class="text-xs text-neutral-400">Divinity</span></div>
           <div class="rounded-2xl bg-neutral-950 p-3"><b id="seal" class="text-2xl text-yellow-400">0/3</b><br/><span class="text-xs text-neutral-400">Solar Seals</span></div>
@@ -56,10 +56,10 @@
       <section class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4">
         <p class="text-xs font-black uppercase tracking-[.24em] text-primary">Mission Objectives</p>
         <h3 class="mt-1 text-lg font-black">Stabilize Three Solar Seals</h3>
-        <p class="mt-1 text-sm text-neutral-300">Drive your Titan to the Seal Court before the Hollow closes.</p>
+        <p class="mt-1 text-sm text-neutral-300">Drive your Deity to the Seal Court before the Hollow closes.</p>
         <div class="mt-3 space-y-1 text-xs text-neutral-400">
           <p id="star1" class="star-locked">★ Complete before turn 8</p>
-          <p id="star2" class="star-locked">★ Keep Titan above 40% integrity</p>
+          <p id="star2" class="star-locked">★ Keep Deity above 40% integrity</p>
           <p id="star3" class="star-locked">★ Trigger 2+ terrain reactions</p>
         </div>
       </section>
@@ -80,7 +80,7 @@
   </nav>
 <script>
 // M01: TG-F01-C01-M01 — First Light Under Dead Stone
-// One Titan vs Many · 7x7 grid · Turn limit 11 · Victory: 3 Solar Seals
+// One Deity vs Many · 7x7 grid · Turn limit 11 · Victory: 3 Solar Seals
 
 const TURN_LIMIT = 11;
 const MAX_HP = 50;
@@ -102,7 +102,7 @@ const zNames = {
 };
 
 let S = {
-  round: 1, mode: 'move', titan: 'B1',
+  round: 1, mode: 'move', deity: 'B1',
   hp: MAX_HP, momentum: 1, divinity: 0, seals: 0,
   reactions: 0, w2: false, over: false, win: false, cin: false,
   log: ['The Sun-Scale Gate breathes. Aten-Ra enters alone into the Broken Threshold.']
@@ -170,7 +170,7 @@ function render() {
 
       if (id === 'G7') body += '<div class="absolute inset-[-22px_-6px_auto_auto h-28 w-20 rounded-t-full border-4 border-yellow-500/70 bg-yellow-500/10 text-[9px] font-black text-yellow-300">GATE</div>';
 
-      if (S.titan === id) body += '<div class="titan absolute -inset-x-3 -top-8 z-20 rounded-full border-4 border-yellow-400 bg-yellow-500/30 p-3 text-center text-6xl font-black text-yellow-300">♜</div>';
+      if (S.deity === id) body += '<div class="deity absolute -inset-x-3 -top-8 z-20 rounded-full border-4 border-yellow-400 bg-yellow-500/30 p-3 text-center text-6xl font-black text-yellow-300">♜</div>';
 
       if (enemies[id]) {
         const e = enemies[id];
@@ -237,8 +237,8 @@ function tap(id) {
   if (S.over) return;
 
   if (S.mode === 'move') {
-    if (adj(S.titan, id) <= 2 && !enemies[id]) {
-      S.titan = id;
+    if (adj(S.deity, id) <= 2 && !enemies[id]) {
+      S.deity = id;
       const z = zType(id);
       if (z === 'ray' || z === 'open') {
         S.momentum += 1;
@@ -261,17 +261,17 @@ function tap(id) {
   }
 
   if (S.mode === 'strike') {
-    if (enemies[id] && adj(S.titan, id) <= 2) {
+    if (enemies[id] && adj(S.deity, id) <= 2) {
       const dmg = 8 + Math.floor(S.momentum * 0.5);
       enemies[id].hp -= dmg;
       S.momentum++;
-      log('Titan strike crushes ' + enemies[id].name + ' for ' + dmg + '.');
+      log('Deity strike crushes ' + enemies[id].name + ' for ' + dmg + '.');
       if (enemies[id].hp <= 0) {
         log(enemies[id].name + ' falls.');
         delete enemies[id];
       }
       render();
-    } else if (terrain.objective.includes(id) && adj(S.titan, id) <= 2) {
+    } else if (terrain.objective.includes(id) && adj(S.deity, id) <= 2) {
       const si = terrain.objective.indexOf(id);
       if (si === S.seals) {
         S.seals++;
@@ -304,7 +304,7 @@ function solarVerdict() {
 
   let tgt = null, md = 99;
   for (const p in enemies) {
-    const d = adj(S.titan, p);
+    const d = adj(S.deity, p);
     if (d < md) { md = d; tgt = p; }
   }
 
@@ -315,7 +315,7 @@ function solarVerdict() {
       log(enemies[tgt].name + ' collapses.');
       delete enemies[tgt];
     }
-  } else if (S.seals < 3 && adj(S.titan, terrain.objective[S.seals]) <= 3) {
+  } else if (S.seals < 3 && adj(S.deity, terrain.objective[S.seals]) <= 3) {
     S.seals++;
     log('SOLAR VERDICT: Floods the Seal Court. Seal ' + S.seals + '/3 stabilized.');
     checkWin();
@@ -334,7 +334,7 @@ function reaction() {
   S.divinity--;
   S.momentum += 2;
   S.reactions++;
-  if (zType(S.titan) === 'ray') {
+  if (zType(S.deity) === 'ray') {
     S.hp = Math.min(MAX_HP, S.hp + 4);
     log('Reaction: Judgment Ray pressure converts to Momentum. Heals 4.');
   } else {
@@ -349,11 +349,11 @@ function endRound() {
   S.mode = 'move';
 
   Object.entries(enemies).forEach(([pos, e]) => {
-    const d = adj(pos, S.titan);
+    const d = adj(pos, S.deity);
     if (d <= 2) {
       const dmg = e.type === 'elite' ? 6 : 4;
       S.hp -= dmg;
-      if (zType(S.titan) === 'open' || zType(S.titan) === 'boss') {
+      if (zType(S.deity) === 'open' || zType(S.deity) === 'boss') {
         S.hp -= 2;
         log(e.name + ' attacks for ' + dmg + '. Hollow Drift: exposed +2.');
       } else {
@@ -368,7 +368,7 @@ function endRound() {
 
   if (S.round === 3 && !S.w2) w2trig();
 
-  if (zType(S.titan) === 'ray' || zType(S.titan) === 'open') {
+  if (zType(S.deity) === 'ray' || zType(S.deity) === 'open') {
     S.momentum = Math.min(S.momentum + 1, 10);
     log('Solar Law: holding light lanes builds Momentum.');
   }

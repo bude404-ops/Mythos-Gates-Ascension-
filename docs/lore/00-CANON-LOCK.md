@@ -2,50 +2,66 @@
 
 ## Current Canon Status
 
-Titans Gate is a seven-Realm, Titan-only mythological tactical RPG.
+Titan Gates: Ascension is a seven-Realm mythological tactical RPG where the playable characters are the actual gods and goddesseses of their source mythologies.
 
 The current canon is built around:
 
 - 8 storyline faction layers: 7 playable mythological Realms plus 1 non-playable campaign threat layer
 - 7 playable mythological Realms
-- 9 Titans per playable Realm
-- one-active-Titan chosen Titan deployments
-- No playable non-Titan entries in the current format
-- No non-Titan battle battle patterns in the current format
-- No sci-fi
-- No extradimensional beings
-- No futuristic craft
-- No realm or realm origin framing
-- No futuristic technology
-- No guns
-- No Mycocide or fungal civilization content
+- 4 playable deities per playable Realm
+- exactly 2 male gods and 2 female goddesses per playable Realm
+- 28 total playable deities
+- one active god or goddess controlled at a time
+- one deity versus multiple enemies, monsters, bosses, and rival divine forces
+- no playable armies
+- no playable squads
+- no five-character teams
+- no playable characters classified as Titans
+- no sci-fi
+- no alien species framing
+- no futuristic craft
+- no outer-space origin framing
+- no futuristic technology
+- no guns
+- no Mycocide or fungal civilization content
 
 ## Core Rule
 
-The beings within Titans Gate are extradimensional civilizations and entities that existed beyond Earth's normal reality. They are not aliens, not extraterrestrials, and do not come from planets, galaxies, or outer space.
+The playable characters are not inspired champions. They are the actual gods and goddesseses of their respective mythologies within the Titan Gates universe.
 
-Ancient humans encountered traces, manifestations, gateways, visions, and interactions with these extradimensional beings. Those encounters became the foundation of Earth mythology.
+Their mythology, divine domain, personality, history, relationships, symbols, weapons, powers, cultural identity, Realm, and appearance come directly from established mythology and the existing Lore Codex.
 
-Earth myths are human interpretations of real extradimensional beings.
+The gods and goddesseses exist within extradimensional mythological Realms. Their appearances are shaped by mythology, divine domain, Realm, civilization, and culture. They are supernatural and otherworldly, but never aliens, extraterrestrials, robots, or science-fiction characters.
+
+Ancient humans encountered traces, manifestations, gateways, visions, and interactions with these extradimensional divine beings. Those encounters became the foundation of Earth mythology.
+
+Earth myths are human interpretations of real extradimensional divinity.
+
+## Titan Gates Canon Protection
+
+The word Titan does not classify the playable gods or goddesses.
+
+The current Titan Gates Lore Codex is the source of truth: Titan Gates are ancient dimensional gateways connecting powerful Realms. They are not technology; each Gate is an ancient reality-structure: part threshold, part wound, part sacred mechanism, part living law. The Ascension Collapse shattered the old dimensional order and left stable Gates, ruin Gates, distortion Gates, sealed Gates, and wound Gates as central campaign structures.
+
+The established Lore Codex does not currently lock a single named creator or simple origin explanation for all Titan Gates. Do not invent one. Preserve their mystery, their relationship to Realms and the Ascension Collapse, and their role as inter-Realm roads, mission sites, dungeon entrances, and boss arenas.
+
+NEW CANON EXTENSION: Some Titan Gate routes now function as dungeon-crawler paths into dangerous Realm locations, sealed ruins, sacred domains, corrupted regions, monster territories, and boss arenas. This extends existing Gate use; it does not replace or simplify Gate canon.
 
 ## Gameplay Canon Lock
 
-Each playable Realm has 9 Titans. The eighth storyline layer is the campaign threat layer and does not add a normal playable roster.
+Each playable Realm has 4 playable deities: 2 male gods and 2 female goddesses. The eighth storyline layer is the campaign threat layer and does not add a normal playable roster.
 
-Players build one-active-Titan chosen Titan deployments from a Realm's Titan collection or from approved campaign strike-force rules.
-
-The player commands only Titans in the current format.
+Players control one god or goddess at a time from the Deity Roster or Divine Collection.
 
 There are:
 
-- 0 playable non-Titan entries per faction
-- 0 non-Titan battle battle patterns per faction
-- 9 collectible Titans per faction
-- 5 active Titan slots in a chosen Titan
+- 0 playable armies
+- 0 playable squads
+- 0 five-character teams
+- 4 collectible deities per playable faction
+- 1 active deity per battle
 
-The design goal is encounter-specific team building.
-
-There should be no universal best team.
+The design goal is encounter-specific single-deity mastery: the player becomes the deity and battles multiple enemies through Divine Abilities, Divine Stats, Divine Gear, Divine Level, and Divine Ascension.
 
 ## Reapers — Current Position
 
@@ -60,11 +76,11 @@ They should be reframed as hidden post-Collapse oath remnants:
 - Campaign-facing
 - Connected to forgotten pre-Collapse rites
 - Not a playable core faction
-- Not the identity of Titans Gate
+- Not the identity of Titan Gates
 
 Clean current positioning:
 
-Titans Gate is about extradimensional mythological Realms, Titan Gates, the Ascension Collapse, and colossal Titans shaped by their civilizations.
+Titan Gates: Ascension is about extradimensional mythological Realms, the actual gods and goddesseses who rule and embody those Realms, the mysterious Titan Gates, the Ascension Collapse, and the ancient Titan-scale force bound to the Gates.
 
 ## Removed Canon
 

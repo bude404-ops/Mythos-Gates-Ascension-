@@ -62,7 +62,7 @@
     "enemyArchetypeRegistry": 1,
     "raidDesignDocument": 1,
     "canonFactionMatrix": 1,
-    "titanRoleMatrix": 1,
+    "deityRoleMatrix": 1,
     "rosterDepthMap": 1,
     "missionTacticalProfileSystem": 1,
     "playerOnboardingRosterJourney": 1,
@@ -76,8 +76,8 @@
     "factionMissionDialogueCompletionAudit": 1,
     "tacticalBlueprintLayouts": 1,
     "tacticalBlueprintPlacements": 51,
-    "titanEnemyBalancePass": 1,
-    "titanArtIdentityAudit": 1,
+    "deityEnemyBalancePass": 1,
+    "deityArtIdentityAudit": 1,
     "gameplayBalanceFramework": 1,
     "combatFirstGameplayDoctrine": 1,
     "economyMigrationAudit": 1,
@@ -95,7 +95,7 @@
     "artMapPrompts": 12,
     "artCampaignPrompts": 7,
     "blueprint3dAssets": 136,
-    "blueprint3dTitans": 28,
+    "blueprint3dDeities": 28,
     "blueprint3dBattlefields": 12,
     "blueprint3dGates": 7,
     "blueprint3dFirstHandoffBatch": 12,
@@ -205,27 +205,27 @@
     "project.json": {
       "path": "data/project.json",
       "bytes": 4000,
-      "sha256": "692641d8acc902a43703ebc545ee197458684274001bc50aee659151c9e2a848"
+      "sha256": "7c0023384d5e49e7913d51e5632ab13a5b3f21e5353f13b4c35afe45088ea042"
     },
     "factions.json": {
       "path": "data/factions.json",
-      "bytes": 12137,
-      "sha256": "984d9e1abb0a9b2d20a13de427b40bed23701e30c8b15ec7117ef19bf18001d2"
+      "bytes": 12055,
+      "sha256": "ab2de9e76c0e8be990046a5106054d6cb71772068fbc91c00062ca9a551d42f0"
     },
     "hollow-faction.json": {
       "path": "data/hollow-faction.json",
       "bytes": 2103,
-      "sha256": "599c3a58634c5fd517ec80c84e8124db890dcd56fe5d986116de875dfd03f260"
+      "sha256": "b4f094e1ffa940ad7324ae5daaa361b86213f36b0509731baaaf2cc0ba61bfc4"
     },
     "titans.json": {
       "path": "data/titans.json",
-      "bytes": 351351,
-      "sha256": "718e5af84a5818a07caaf6dffb9571b5ff2ca5423e08ac13371611942108f424"
+      "bytes": 355159,
+      "sha256": "65451a67633b5cd8e3bc819eb661bb5861a38f881384947e2e4b28445978a361"
     },
     "characters.json": {
       "path": "data/characters.json",
-      "bytes": 18756,
-      "sha256": "e9107c39f744573ba25865566943c2f907a89ea658a56570d58d300aa55a5b8c"
+      "bytes": 18725,
+      "sha256": "01b39f8a8c9db63eca8ec8505b9dd85d37f1c1f4588cccfe7353d884729fbcb7"
     },
     "units.json": {
       "path": "data/units.json",
@@ -234,8 +234,8 @@
     },
     "art-prompts.json": {
       "path": "data/art-prompts.json",
-      "bytes": 283488,
-      "sha256": "9a3ca020208d52794ed6d8d0e221c535b2437c5e6e36a015eee70ab4468d7fdb"
+      "bytes": 300023,
+      "sha256": "49d684f0feed142b2fa76ec617a8d2e971f91ca0b8e616e5cf84139bbcfbe8ab"
     },
     "artworks.json": {
       "path": "data/artworks.json",
@@ -245,32 +245,32 @@
     "art-import-pipeline.json": {
       "path": "data/art-import-pipeline.json",
       "bytes": 1294,
-      "sha256": "955d2f67cdfca19a430445a01de586cf487d238d3c0b68023a1f78800ab60d5e"
+      "sha256": "e352592b567703a10ffcfa31e401f98710c3b74de9ca64344f4363d0f042ba98"
     },
     "art-approval-manifest.json": {
       "path": "data/art-approval-manifest.json",
-      "bytes": 4265,
-      "sha256": "c25794f61499744a0c3df8544918a3edda63ad7dcf2d14682463da0c08f4ab53"
+      "bytes": 4263,
+      "sha256": "91d98ae8169a6abc72cfc7a7c53a2d9a994e7197c752bd6b84f6068234b9a6dd"
     },
     "development-tasks.json": {
       "path": "data/development-tasks.json",
-      "bytes": 33026,
-      "sha256": "8eb6974a5cb468d6236ee575dfb4f14db4a2bcdee2693a5bbfd9e7a790a267d9"
+      "bytes": 33028,
+      "sha256": "f9a39c8ab85a358562c0ec26138b52b43dbc2c54ef8a83f0ba4286aee762d6e6"
     },
     "lore-index.json": {
       "path": "data/lore-index.json",
-      "bytes": 12069,
-      "sha256": "0e2b0c83a5c9fceb3e680e4cc952ebf7fdf9d0d4f26fb045ab28a752a1eebf49"
+      "bytes": 12099,
+      "sha256": "95230f8982cb56bbd0f0ee4a5da57860491b6ddd22744b6fea30a7edd8aa8e9f"
     },
     "npcs.json": {
       "path": "data/npcs.json",
-      "bytes": 15939,
-      "sha256": "6ba6391e7d18798488947288b66dcdbcc9212f58165fb8ad80fedc89b9fc2849"
+      "bytes": 15908,
+      "sha256": "9cc7b4f555487d368f14fc7371198bdf778fd833e735ae8a4f72fed522529dfe"
     },
     "creatures.json": {
       "path": "data/creatures.json",
-      "bytes": 103555,
-      "sha256": "cc8e6550bd10641405555bc2a789d1d5c90e27eec021a17a9769e399393b7073"
+      "bytes": 103583,
+      "sha256": "4749e107d6ca5a7a243652943f380b38a233d66aa5fa8c3a55f1eca0bb5ac3bd"
     },
     "hollow-encounter-system.json": {
       "path": "data/hollow-encounter-system.json",
@@ -279,58 +279,58 @@
     },
     "character-backstories.json": {
       "path": "data/character-backstories.json",
-      "bytes": 256860,
-      "sha256": "60133535e005f82d4b7bf2d0e74e5a39f64baa596d65114bdde1813d1e7cf109"
+      "bytes": 256797,
+      "sha256": "10b97ba4b9a6610e6ce5abc67969f26ca231fd3ac7d70cc46b37742764fa157d"
     },
     "maps.json": {
       "path": "data/maps.json",
       "bytes": 10371,
-      "sha256": "50ac9307c37afef2f0a4f0850a9d49aff72bce8f42087b219c771cfba523da0d"
+      "sha256": "5543e2c74fe0ecdc3d4fae75be3cd5c400e9462eaee61fa1f3917e35d490082c"
     },
     "campaigns.json": {
       "path": "data/campaigns.json",
-      "bytes": 28146,
-      "sha256": "212ba4563d93aa8b25970833ca46646139831912ab3b16c90a4fef557fb11c42"
+      "bytes": 27987,
+      "sha256": "473176df4e140bd516f53ba89227facdf63a400afa8a9fbac9a32fe7d467dd76"
     },
     "chapters.json": {
       "path": "data/chapters.json",
       "bytes": 10713,
-      "sha256": "f6cc6dd103f325f677d8cae4af5d96b3acda96316203ae0c14e6b394ece99fd1"
+      "sha256": "41b38835520d7aedc6ef94283ec8bc512580564d0ac6f12064e3191c646e015f"
     },
     "dialogue-scripts.json": {
       "path": "data/dialogue-scripts.json",
-      "bytes": 28509,
-      "sha256": "650a2ba711ee0aecdd69eeae3a60eba989b3b51484830d104b04a9fa9ad3f9eb"
+      "bytes": 28515,
+      "sha256": "fb89ac043425a9bde930a4dcd7cdd8760f52855c9218d9d663781dacd7be5e0c"
     },
     "visual-screens.json": {
       "path": "data/visual-screens.json",
       "bytes": 9215,
-      "sha256": "9b1d196a92bc2dc8d9737783fc8d585a2dd870002a4d9d168754a307113cacf1"
+      "sha256": "56ca2786ab6683b1f7538466bfb2ecc68f3fdde18575fb10a348d7612fb369c8"
     },
     "visual-change-rules.json": {
       "path": "data/visual-change-rules.json",
       "bytes": 3690,
-      "sha256": "83b0c401b1bff9a21b698ddcfe508663c3e50acc5649558ec3eb07c4dfd27c68"
+      "sha256": "b2f9af2d3c613669b73ce63cb37dbf008c64b362f0e9de9c75ba14d514c5d0ec"
     },
     "visual-baselines.json": {
       "path": "data/visual-baselines.json",
       "bytes": 7351,
-      "sha256": "46e4970cd70b55fc43f2f70034a1e76870a094bdef607c141aa036e8928c51ab"
+      "sha256": "4ec9cff9d170e0cad01b3c2dc86d090e659d8f2a056c6cf300dd3fb875c347be"
     },
     "realm-codex.json": {
       "path": "data/realm-codex.json",
       "bytes": 81173,
-      "sha256": "2e914464b2b54f63ae2955d208c35c82877153b83a79384ea7d96532bcecc5c8"
+      "sha256": "8cb5392969bd6c4b40776686f08ceeff8c28c997474ff97ccab57fd553427145"
     },
     "faction-visual-bible.json": {
       "path": "data/faction-visual-bible.json",
-      "bytes": 51997,
-      "sha256": "599fc1af7927f87a5ebc99b1f15ce463de10cc74a2df1a0be9fb60163c266403"
+      "bytes": 51790,
+      "sha256": "d00d2292520abc05655bb4106431b93d738e5985473b0f25a634d0b861e88b20"
     },
     "hybrid-visual-architecture.json": {
       "path": "data/hybrid-visual-architecture.json",
-      "bytes": 7655,
-      "sha256": "e63f4e71240fced1dcab41900cbed92bf6844a2fe7aa182112eddd0d0c7bbd55"
+      "bytes": 7657,
+      "sha256": "3e53676f8a6211380bdab02da267ce7e747e9c2cfb8cb39ff07fed881cc0ba24"
     },
     "asset-pipeline.json": {
       "path": "data/asset-pipeline.json",
@@ -349,38 +349,38 @@
     },
     "change-history.json": {
       "path": "data/change-history.json",
-      "bytes": 23229,
-      "sha256": "e4e17853f9be313ef49c65e97d9436c790cd26d1e7ef7ea9b28f595da47e3240"
+      "bytes": 23230,
+      "sha256": "c004e7dec1204ea4743545abc16b2f1367e02a3784def34115d4d44087d32ea0"
     },
     "campaign-architecture.json": {
       "path": "data/campaign-architecture.json",
       "bytes": 2471,
-      "sha256": "87abe64f0f193ee993c43e8a2b5dff3048a2c42626a094d38124691eb099bdce"
+      "sha256": "aadd7cf4e4b1d48de21b3fb8d29025d1698af3e4167d8eb9f7a77e4aceb06004"
     },
     "campaign-chapter-registry.json": {
       "path": "data/campaign-chapter-registry.json",
-      "bytes": 31775,
-      "sha256": "0854e0b2f7c06235659b91218ea1abf32601b38ec1d6d0dd9b8d80ff0584051f"
+      "bytes": 31780,
+      "sha256": "9a328935596d22905687392133f138c333bfa3386b73abff824d4a6ae82d3648"
     },
     "mission-registry.json": {
       "path": "data/mission-registry.json",
-      "bytes": 2610888,
-      "sha256": "f28c00dfdde07f28498723a8a353fca19858c555d2701a99e97d0441ace975ec"
+      "bytes": 2610648,
+      "sha256": "95840d2ccb56afdfab2e9daf2538515a2861ae9f79593a3147f1054ae6765cd6"
     },
     "mission-dialogue.json": {
       "path": "data/mission-dialogue.json",
-      "bytes": 674205,
-      "sha256": "f6790595c2de29931b948d2a9dd471289bf9efa24ee5bb6b618542dbf99c5a1f"
+      "bytes": 674669,
+      "sha256": "77cf0b6961b37520747c748a5c0ae6f3ed37f0b8d5cb56ad03965b932ded9ec9"
     },
     "mission-art-packages.json": {
       "path": "data/mission-art-packages.json",
-      "bytes": 1133499,
-      "sha256": "23627deb1e633fbaf6a8aafc1709463b3886be5a0615fd86507b7dc92f85c352"
+      "bytes": 1131347,
+      "sha256": "d37a2c6429a49372e4bd5af07f039e0db28b2fc91e2bfbd2b02b1bf637c440c3"
     },
     "objective-system.json": {
       "path": "data/objective-system.json",
       "bytes": 717,
-      "sha256": "1c66ecbc641f80513978403bf7d8d46e853182076bd0e160a0fa76a97548eb0c"
+      "sha256": "414b95d6870bb1146af711fa937be0d3a3cfe19a08c36c01f55cb3c709728cc0"
     },
     "reward-system.json": {
       "path": "data/reward-system.json",
@@ -400,17 +400,17 @@
     "campaign-consequence-registry.json": {
       "path": "data/campaign-consequence-registry.json",
       "bytes": 5025,
-      "sha256": "d2e4ed0f627f9316a55aaaa8470f3cac4f37733b0253f152d85afeb774c67c91"
+      "sha256": "eb168a81ff47db7c4df570d96b1811a26c0b37d69bffa3e23d6da3727ffa7174"
     },
     "endgame-architecture.json": {
       "path": "data/endgame-architecture.json",
-      "bytes": 2341,
-      "sha256": "631b24221070fee5ff92fd1c20d1d8e603b1c13ccfbbf4950801eae51c2b65f9"
+      "bytes": 2342,
+      "sha256": "03cf08cc465f4230e6919591b164bab462c76b1007b75b69021a4f375ab39444"
     },
     "progression-system.json": {
       "path": "data/progression-system.json",
-      "bytes": 5238,
-      "sha256": "6c089998d07391ca43e67e06329e7d78cff7393116a0eaaaf1dc842142c71127"
+      "bytes": 5242,
+      "sha256": "ef53aa8829b716609f74db5ff31419c374373d4b09f90baa1d8d1b1baf96e16a"
     },
     "ascension-system.json": {
       "path": "data/ascension-system.json",
@@ -419,23 +419,23 @@
     },
     "async-arena-system.json": {
       "path": "data/async-arena-system.json",
-      "bytes": 13583,
-      "sha256": "aa3a68fc194ad097e5a9cc1de2a4d8370fd94d0a7428b0a0d02b449d55756030"
+      "bytes": 13580,
+      "sha256": "db9f7bfdf9a353fd69b262a68749ba3853d361bee869a149d6dcce3cf1f110b4"
     },
     "weekly-trials.json": {
       "path": "data/weekly-trials.json",
       "bytes": 1156,
-      "sha256": "2b262f9e631f0f5946ba6a0ab4e038627575dc0393e97ca00d79b8c4b1d4d45b"
+      "sha256": "2e1cd7756837b7d5470a66466426ea59b0cee3a47d6e83841e807f596e112ff8"
     },
     "raid-system.json": {
       "path": "data/raid-system.json",
-      "bytes": 11321,
-      "sha256": "06afab8cb865a4a72451f0ad3aaf83411aa020c67001fbb976b9e10b300e0b67"
+      "bytes": 11323,
+      "sha256": "a63e9abf6fe6b855bd349da0368b79fdc789478c8ac8c94afa4887d3fcc27c6e"
     },
     "titan-trial-system.json": {
       "path": "data/titan-trial-system.json",
-      "bytes": 4004,
-      "sha256": "9936e43499b06c2cb689a875d7caa85f99d3f011e195d46e784e1d60c1cd372b"
+      "bytes": 4005,
+      "sha256": "bed6f93096adcc5ba4a4713316a5fcff3af5bcc03178b27a681d1e62340ec87c"
     },
     "faction-mastery.json": {
       "path": "data/faction-mastery.json",
@@ -445,7 +445,7 @@
     "season-system.json": {
       "path": "data/season-system.json",
       "bytes": 1685,
-      "sha256": "f5d9ee96be31c5b730a36e1146c52e57d13378698c85f7ded38912dde2a58ed7"
+      "sha256": "a282fbbad314bb1ed097b47d0c30e5d861be841904b00810c74ea3be0e1bcea7"
     },
     "achievement-system.json": {
       "path": "data/achievement-system.json",
@@ -454,8 +454,8 @@
     },
     "balance-analytics.json": {
       "path": "data/balance-analytics.json",
-      "bytes": 1923,
-      "sha256": "51d104ab422d3fcc0dbb704ccd7245cea029720989abd4ff870a4b9d9a6af73d"
+      "bytes": 1924,
+      "sha256": "0d37e1e4d4c2a530de70841cd5675446f66ebde479203e2bb2180d449667e101"
     },
     "continuity-balance-audit.json": {
       "path": "data/continuity-balance-audit.json",
@@ -474,83 +474,83 @@
     },
     "solo-titan-migration-report.json": {
       "path": "data/solo-titan-migration-report.json",
-      "bytes": 7722,
-      "sha256": "877cd7f318bd77816b29b8497c8d5587df430ebbda30c0821dbed80232dce652"
+      "bytes": 7715,
+      "sha256": "aea7f87f58e700aa9acb60fb8cf4528efb278f4a0593599af11b9be72b5f498b"
     },
     "solo-combat-design-document.json": {
       "path": "data/solo-combat-design-document.json",
-      "bytes": 12318,
-      "sha256": "90f41d6824dc40f70db4b007bfd84ba795e4d4d28ca724d8c1037897b87b7ea1"
+      "bytes": 12316,
+      "sha256": "a7ebabd68f17f2819834856d4dd42a2805ed0dc5896cecb6d95d3cf0d1c21480"
     },
     "solo-titan-roster-redesign.json": {
       "path": "data/solo-titan-roster-redesign.json",
-      "bytes": 257369,
-      "sha256": "5af4aae7a6eb90d06251ec5f0ca5d72326415556b3be60c30e90715393bc80f7"
+      "bytes": 257371,
+      "sha256": "c1f9304e8d0e36ae3b7c6576c647694a7024dc9a6793fc744ffb5de0e6c95d6a"
     },
     "enemy-scaling-design-document.json": {
       "path": "data/enemy-scaling-design-document.json",
-      "bytes": 9505,
-      "sha256": "bdb9b9ab73098f539247d8104f6e448fe167a1bf0313e92dc3ce50b6ad2ac9b5"
+      "bytes": 9507,
+      "sha256": "03d0ab5819ce5c13ad771bc1b972e2ec9d82534ecf8e132f4dca9253228e416c"
     },
     "enemy-archetype-registry.json": {
       "path": "data/enemy-archetype-registry.json",
       "bytes": 13721,
-      "sha256": "b7f6ed6a800a600ff24deff20d6b273f69cac0857a998e1b419e51256d115eb8"
+      "sha256": "71f1a6cc5c6f75c4c00d028dd8549d0140c45f0f503d9a3bd576b2e65b00fb2b"
     },
     "raid-design-document.json": {
       "path": "data/raid-design-document.json",
-      "bytes": 6239,
-      "sha256": "ef383a8c89f6b05e32d05bffef21ebc49a2d957cc4ca903c0e1a7ccf528b6781"
+      "bytes": 6241,
+      "sha256": "0a00440369e602b900b84fb860a2af3dda42f7dd1ce70d242d60330e198f7acb"
     },
     "canon-faction-matrix.json": {
       "path": "data/canon-faction-matrix.json",
-      "bytes": 33315,
-      "sha256": "4957929bb62de3474bd0e3017b53e4a500e1d87d383c82371c0ea4fd550a6dd8"
+      "bytes": 33324,
+      "sha256": "0d715f7c34f9bafb4963af81c39fa36fa31862e3a88b8466937147e909c9af80"
     },
     "titan-role-matrix.json": {
       "path": "data/titan-role-matrix.json",
-      "bytes": 5656,
-      "sha256": "b6530cdf5a2f64a2bbab6ba0fc5bc3175f7de21bc248c59406f49795bcad7a13"
+      "bytes": 5697,
+      "sha256": "047226d46049bf290266d7f19e7e60297e3059f5beae8df632fbdc788a054e11"
     },
     "roster-depth-map.json": {
       "path": "data/roster-depth-map.json",
-      "bytes": 1287,
-      "sha256": "0774f96a90e0b2e18194c7d53fcbc6b96c447fc7e0298f6e53855a2714476853"
+      "bytes": 1285,
+      "sha256": "187ddfe58e3e99f9c23f9295ce3c06dfa274a47ac85f5acec382ed436e9c4391"
     },
     "mission-tactical-profile-system.json": {
       "path": "data/mission-tactical-profile-system.json",
       "bytes": 6635,
-      "sha256": "2f5e5d772b5f9c1ae5b22a619edc8bbaf67dd2b60162908db34c61c3ee18394a"
+      "sha256": "a59144e1f82b4f1330f5b4a2654cbf1ca95a8049fbbbde297fbcef8e53d92c78"
     },
     "player-onboarding-roster-journey.json": {
       "path": "data/player-onboarding-roster-journey.json",
-      "bytes": 5597,
-      "sha256": "22f011444993fe8dfc465a0ccd0b38a9ff3b2c4dd9c448da193167b572ebb49e"
+      "bytes": 5598,
+      "sha256": "9e97139378c1bb8ec154c9c26be945d4d0be2e8473576bec812e52dfaea6f4f8"
     },
     "battlefield-director.json": {
       "path": "data/battlefield-director.json",
       "bytes": 1071,
-      "sha256": "4393d31b4bd8e3f3f270d81e1029efe632ee875571b8b277fd321a9bd0b6667c"
+      "sha256": "b7ae7316b6906e7bb4036b6285ee050a8ced3c65a5ab6eabcd876fae2eee490a"
     },
     "battlefield-canon-registry.json": {
       "path": "data/battlefield-canon-registry.json",
       "bytes": 19103,
-      "sha256": "ea98b94363d5255c80b7704dc5f0fd6c1416226106ed01b1f0a1efd6aca60745"
+      "sha256": "a5a793a3ebdf946c39bb97014de4da00860197b0cf261233de758d8bbc81b34a"
     },
     "world-scale-reference.json": {
       "path": "data/world-scale-reference.json",
       "bytes": 1561,
-      "sha256": "d7a3e6385b0ea0f05c34343787c589dc64985111fc48985759be1d242a3dbc2c"
+      "sha256": "25c5e98023efa2cf53a9854522acf57ba2164b70efe9d7fa1c077df0503f9e14"
     },
     "art-director-scale-sheets.json": {
       "path": "data/art-director-scale-sheets.json",
       "bytes": 8785,
-      "sha256": "ab289db401421b6ee3bf9e924357bd1386ffdf6d664e638b2a1fdd541a8b03ef"
+      "sha256": "1842b6b6d9ea46b7dfb4ad8d7852f83ab5e8f5831cf930dad192cc7e378e42b9"
     },
     "battlefield-vertical-slice.json": {
       "path": "data/battlefield-vertical-slice.json",
-      "bytes": 9910,
-      "sha256": "a7fa918cf860eb114e46d43813d97c68a836824a66e9683b777ba9aa6e83b48b"
+      "bytes": 9908,
+      "sha256": "440552b41915dddc5a8828a169ad4be336f03314c94ab1912191f5d424f3eef3"
     },
     "battlefield-runtime-architecture.json": {
       "path": "data/battlefield-runtime-architecture.json",
@@ -560,12 +560,12 @@
     "battlefield-quality-gate.json": {
       "path": "data/battlefield-quality-gate.json",
       "bytes": 1517,
-      "sha256": "22fc901f2f1a85729b3e2e25718ad75c221be9f7f1e3ae7dcd7869bdf6fea012"
+      "sha256": "505151df96cb1bc4d6b69bc613a37187d44eef577be13e6050ddaba4c61de743"
     },
     "faction-mission-dialogue-completion-audit.json": {
       "path": "data/faction-mission-dialogue-completion-audit.json",
       "bytes": 2386,
-      "sha256": "3de0a81e762da4872f8ea9e4e09b310ea7394454476df129067bf0441b788463"
+      "sha256": "13ca11d9fac85f9ed5c343224439121cc095018703c8a3cac2091161d8aa74b6"
     },
     "tactical-blueprint-layouts.json": {
       "path": "data/tactical-blueprint-layouts.json",
@@ -580,57 +580,57 @@
     "titan-enemy-balance-pass.json": {
       "path": "data/titan-enemy-balance-pass.json",
       "bytes": 99346,
-      "sha256": "67d8456d8b251b634231c71ec9d17a0c299c96309e35d1ce2cd993f67c7cae2d"
+      "sha256": "e0a13ab095893c89847be14b6f888338b4753280a5da16c0086b82159e0ecb40"
     },
     "titan-art-identity-audit.json": {
       "path": "data/titan-art-identity-audit.json",
-      "bytes": 108099,
-      "sha256": "8481f7a061c526bb43f587729b21684edd9cdb64b7f729fef6e1b4e44d990794"
+      "bytes": 107845,
+      "sha256": "483cbec6d3a8708f2d4e6abe4a75dfd44853a076978549bc69f5013bfc6600f1"
     },
     "gameplay-balance-framework.json": {
       "path": "data/gameplay-balance-framework.json",
       "bytes": 16205,
-      "sha256": "059f9aa9e4929079d984a0368c8b05302519a34ef6d563d6bf6a0f1848c490fb"
+      "sha256": "4d3d436f8e2b127dac0a19d3b06fc5b08275350baf7092dbdb4a5f4a6807997b"
     },
     "combat-first-gameplay-doctrine.json": {
       "path": "data/combat-first-gameplay-doctrine.json",
-      "bytes": 6365,
-      "sha256": "246c9feadf87e057cdeb7ca230ddfc2cac285f666850dc5642a748e7555a97bd"
+      "bytes": 6366,
+      "sha256": "dd1b4aa408bdb99be9fc73aaa5a216fd05cdf98d3e2a214f90f3e26d736e5338"
     },
     "economy-migration-audit.json": {
       "path": "data/economy-migration-audit.json",
-      "bytes": 4009,
-      "sha256": "b955fdfc12b5103cabcd84bb74aa16c8e754d690f61ec966d0a8083e7c2e8fb2"
+      "bytes": 4011,
+      "sha256": "6a25860fa9da142a095c561a96634bb5a964cce6294fe37de492315e18a5652d"
     },
     "free-to-play-economy.json": {
       "path": "data/free-to-play-economy.json",
-      "bytes": 13789,
-      "sha256": "8fb7ae3e908f52bdf9657a018c7f6810f02f56a014b0b9d8140370ddcdf3567d"
+      "bytes": 13791,
+      "sha256": "6412d321eafbd8995dbbd36e1ccfcea208204bd460f45557725bbe349434b72f"
     },
     "solo-battle-state-schema.json": {
       "path": "data/solo-battle-state-schema.json",
       "bytes": 4607,
-      "sha256": "0c2e609daca39f72daac59eb147bbeaf9df70c3741fc78ec4427d388dbd45569"
+      "sha256": "be5ef08b206d4dbbdbc5a4b360d58a0154c6afb8c59e39f42106ec16dcc73c86"
     },
     "solo-vertical-slice.json": {
       "path": "data/solo-vertical-slice.json",
       "bytes": 11042,
-      "sha256": "e6dd3ced925c8a1b9eed3b763f9ff06f837b3fe722e5740570bad9a64f722808"
+      "sha256": "3339fa434d77c05b06224f29910fd1bfc68b7831ae518b26dcf55a22177a8cf1"
     },
     "battlefield-telemetry-contract.json": {
       "path": "data/battlefield-telemetry-contract.json",
-      "bytes": 4552,
-      "sha256": "65aaf16a433f597e113a59ee6ed21904767328911fc46023c1ffb2574640ff44"
+      "bytes": 4553,
+      "sha256": "a9f17eaceacfc4966fe1a57f9b04eeaec3f90ac54857d95f7ce52c53f9bea670"
     },
     "campaign-playflow-contract.json": {
       "path": "data/campaign-playflow-contract.json",
-      "bytes": 40095,
-      "sha256": "cdd2cd1a74c520a0da8322493d2455896d7d173607bd0266aad652b0c7617863"
+      "bytes": 40100,
+      "sha256": "1f98861f3d0db262c7b13d8e93ce495acb042cc6d8d74908b51267c232ddd9c1"
     },
     "command-hub-contract.json": {
       "path": "data/command-hub-contract.json",
-      "bytes": 16306,
-      "sha256": "56150fc16ffe59afb2a303ae082eb7a981d92ef1a355c0052f24ed24f03a2b76"
+      "bytes": 16308,
+      "sha256": "0c461cd030a06065aeaf3e291bc9ce6923a8b8af0db21e665a8e836be67c9d34"
     },
     "asset-registry.json": {
       "path": "data/asset-registry.json",
@@ -640,7 +640,7 @@
     "github-asset-repository.json": {
       "path": "data/github-asset-repository.json",
       "bytes": 6182,
-      "sha256": "32a9befe09757499a09a6371cc3517d6cd14f903961a35b2840f097ab5efb32c"
+      "sha256": "fd7183969efd806a5ba99675df531fe7b53cdc2824acfab2318188a874470eaf"
     },
     "3d-blueprint-system.json": {
       "path": "data/3d-blueprint-system.json",
@@ -649,17 +649,17 @@
     },
     "3d-production-queue.json": {
       "path": "data/3d-production-queue.json",
-      "bytes": 139599,
-      "sha256": "c57cf64de2cd2194fbaed8f15b5ce09aea3363f75d64d8bfcb7b63df20b56832"
+      "bytes": 139600,
+      "sha256": "67eb32845fcb20effd91e393763c621c7b732b2cede6fefccb720184e2a9045f"
     }
   },
   "artPromptCategories": {
+    "Deity": 28,
     "Campaign": 7,
     "Creature": 39,
     "Map": 12,
     "NPC": 8,
-    "FactionScreen": 2,
-    "Titan": 28
+    "FactionScreen": 2
   },
   "artMapPrompts": [
     {
@@ -781,7 +781,7 @@
     "ENEMY": 39,
     "GATE": 7,
     "GLOBAL_REFERENCE": 3,
-    "TITAN": 28
+    "DEITY": 28
   },
   "artApprovalManifest": {
     "status": "IMPLEMENTED",
@@ -879,7 +879,7 @@
     "batches": [
       {
         "id": "TG-ART-BATCH-TITAN-ATENRA-001",
-        "name": "Aten Ra First Titan Artwork Approval Batch",
+        "name": "Aten Ra First Deity Artwork Approval Batch",
         "type": "APPROVED_ART_PROMPT_BATCH",
         "packetCount": 9
       },

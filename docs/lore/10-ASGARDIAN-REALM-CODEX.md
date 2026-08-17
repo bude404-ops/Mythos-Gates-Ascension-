@@ -5,7 +5,7 @@
 **Gate:** The Thunder-Oath Gate  
 **Status:** Canon Expanded
 ## Realm Thesis
-The Asgardian Realm survives by binding power to promises. To them, a Titan without an oath is already half Hollow.
+The Asgardian Realm survives by binding power to promises. To them, a deity without an oath is already half Hollow.
 ## Central Conflict
 Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
 ## Realm Atmosphere

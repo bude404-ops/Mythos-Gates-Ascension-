@@ -2,12 +2,12 @@
   "id": "TG-SOLO-TITAN-MIGRATION-REPORT-001",
   "version": "0.9.0",
   "generated": "2026-08-11T20:08:28Z",
-  "directive": "Only one player Titan may be active on the battlefield at a time. Existing party assumptions must be audited before production rewrites.",
-  "coreDecision": "Titan Gates: Ascension becomes a Solo Titan Tactical RPG: one legendary player Titan versus battlefield-scale enemy problems.",
+  "directive": "Only one player deity may be active on the battlefield at a time. Existing party assumptions must be audited before production rewrites.",
+  "coreDecision": "Titan Gates: Ascension becomes a Solo Deity Tactical RPG: one legendary player deity versus battlefield-scale enemy problems.",
   "compatibleSystems": [
     {
       "system": "Canon Bible / faction registry / realm codex",
-      "reason": "Faction identities remain authoritative and become stronger as Titan-specific solo mechanics."
+      "reason": "Faction identities remain authoritative and become stronger as deity-specific solo mechanics."
     },
     {
       "system": "Entity ID registry and runtime validation",
@@ -19,7 +19,7 @@
     },
     {
       "system": "Movement validation, damage pipeline, cooldowns, status effects",
-      "reason": "Core primitives remain valid after replacing Titan targets with solo Titan state."
+      "reason": "Core primitives remain valid after replacing deity targets with solo deity state."
     },
     {
       "system": "Campaign shell and mobile navigation",
@@ -27,7 +27,7 @@
     },
     {
       "system": "Art Import Vault and visual baseline process",
-      "reason": "Still governs high-quality Titan, map, VFX, and UI production."
+      "reason": "Still governs high-quality deity, map, VFX, and UI production."
     },
     {
       "system": "Save/load and content status tracker",
@@ -36,16 +36,16 @@
   ],
   "requiresModification": [
     {
-      "system": "Titan roster",
+      "system": "Deity Roster",
       "change": "Replace party roles with solo combat archetype blends, unique mechanics, sustain, reactions, stances, Divinity, and executions."
     },
     {
       "system": "Campaign architecture",
-      "change": "Change teamSize from 3/5 assumptions to one active Titan; redesign missions by tactical purpose."
+      "change": "Change teamSize from 3/5 assumptions to one active deity; redesign missions by tactical purpose."
     },
     {
       "system": "Mission registry",
-      "change": "Stop treating missions as multi-Titan objective pressure tests; assign mission types, solo hazards, boss phases, and Titan suitability tags."
+      "change": "Stop treating missions as multi-deity objective pressure tests; assign mission types, solo hazards, boss phases, and deity suitability tags."
     },
     {
       "system": "Progression system",
@@ -53,11 +53,11 @@
     },
     {
       "system": "Async arena",
-      "change": "Replace saved defense Titans with one defensive Titan build, equipment, AI behavior profile, and battlefield choice."
+      "change": "Replace saved defense Titans with one defensive deity build, equipment, AI behavior profile, and battlefield choice."
     },
     {
       "system": "UI",
-      "change": "Top enemy/objective state, center battlefield, bottom Titan controls for abilities, movement, stance, Momentum, Divinity, reactions."
+      "change": "Top enemy/objective state, center battlefield, bottom deity controls for abilities, movement, stance, Momentum, Divinity, reactions."
     },
     {
       "system": "Enemy AI",
@@ -75,22 +75,22 @@
     },
     {
       "system": "Titan synergy rules",
-      "replacement": "Titan mastery, terrain affinity, relic loadout, stance discipline, and mission counter-pick logic."
+      "replacement": "divine mastery, terrain affinity, relic loadout, stance discipline, and mission counter-pick logic."
     },
     {
-      "system": "one-active-Titan arena defense snapshots",
-      "replacement": "Asynchronous Titan Challenge defensive Titan snapshot."
+      "system": "one-active-deity isna defense snapshots",
+      "replacement": "Asynchronous deity Challenge defensive deity snapshot."
     }
   ],
   "shouldBeRemoved": [
-    "Any normal battle rule requiring multiple allied Titans on the field.",
+    "Any normal battle rule requiring multiple allied deities on the field.",
     "Adjacent-allied objective protection bonuses in standard combat.",
     "Role restrictions that require a healer/support slot.",
-    "Mission copy implying a chosen Titan of several player Titans unless explicitly future reserve/story exception."
+    "Mission copy implying a chosen deity of several player Titans unless explicitly future reserve/story exception."
   ],
   "shouldBeDeferred": [
-    "Reserve Titan swapping: architect fields only; do not implement normal battlefield reserves yet.",
-    "True live PvP: keep async Titan Challenge first.",
+    "Reserve deity swapping: architect fields only; do not implement normal battlefield reserves yet.",
+    "True live PvP: keep async deity Challenge first.",
     "Full procedural encounter generation: define hooks after handcrafted solo mission types are validated.",
     "Production rewrite of all 280 mission payloads: begin after solo data model and engine primitives land."
   ],
@@ -104,12 +104,12 @@
   ],
   "risks": [
     {
-      "risk": "One Titan may feel invincible or helpless.",
+      "risk": "One Deity may feel invincible or helpless.",
       "mitigation": "Use Momentum, reactions, terrain, sustain windows, and enemy coordination instead of raw HP inflation."
     },
     {
       "risk": "Roster homogenization.",
-      "mitigation": "Every Titan receives a unique mechanic and mission-counterplay profile."
+      "mitigation": "Every deity receives a unique mechanic and mission-counterplay profile."
     },
     {
       "risk": "Mobile UI overload.",
@@ -121,11 +121,11 @@
     },
     {
       "risk": "Async arena can masquerade as real PvP.",
-      "mitigation": "Label it only as Asynchronous Titan Challenge."
+      "mitigation": "Label it only as Asynchronous deity Challenge."
     }
   ],
   "requiredUiChanges": [
-    "Single Titan command rail: Move, Basic, Techniques, Reaction, Stance, Ascend.",
+    "Single deity command rail: Move, Basic, Techniques, Reaction, Stance, Ascend.",
     "Momentum and Divinity meters visible at bottom with spend previews.",
     "Reaction prompt overlay during enemy action windows.",
     "Enemy intent markers built for surrounding/flanking threats.",
@@ -137,12 +137,12 @@
     "titan.soloArchetypes, titan.uniqueMechanic, titan.stances, titan.reactions, titan.execution, titan.divineAscension.",
     "mission.type, mission.soloTacticalPurpose, mission.idealTitanArchetypes, mission.enemyBehaviorPlan, mission.terrainPlan, mission.bossPhases.",
     "arena.defensiveTitanSnapshot replaces arenaDefenseTitan.",
-    "save.masteryByTitanId and activeTitanLoadouts replace Titan preset priority for normal modes."
+    "save.masteryByTitanId and activeTitanLoadouts replace deity preset priority for normal modes."
   ],
   "requiredContentChanges": [
-    "Rewrite Titan abilities away from shared Strike/Signature/Gate Command shells.",
+    "Rewrite Divine Abilities away from shared Strike/Signature/Gate Command shells.",
     "Convert chapter missions into solo mission types instead of enemy-count scaling.",
-    "Add solo Gate lore: unstable Gates permit one Titan champion safely, not armies.",
+    "Add solo Gate lore: unstable Gates permit one deity safely, not armies.",
     "Add enemy categories and AI behaviors tuned to one powerful opponent.",
     "Add boss phase scripts and Divine Ascension story beats."
   ],

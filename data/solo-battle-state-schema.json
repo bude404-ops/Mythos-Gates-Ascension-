@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "generated": "2026-08-12T16:25:37Z",
   "status": "IMPLEMENTED",
-  "purpose": "Canonical runtime state contract for one-active-Titan battles: resources, stance, reactions, objectives, enemy intents, execution windows, terrain ticks, rewards, and telemetry.",
+  "purpose": "Canonical runtime state contract for one-active-deity battles: resources, stance, reactions, objectives, enemy intents, execution windows, terrain ticks, rewards, and telemetry.",
   "canonSources": [
     "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
     "TG-BATTLEFIELD-VS-001",
@@ -15,7 +15,7 @@
     "round": "integer starting at 1",
     "phase": "PLAYER_PHASE | ENEMY_INTENT | ENEMY_PHASE | REACTION_WINDOW | TERRAIN_TICK | OBJECTIVE_EVALUATION | VICTORY | DEFEAT",
     "seed": "deterministic integer seed for repeatable reducer tests",
-    "titan": "one active Titan object with stats, hp, position, stance, cooldowns, status, mastery, and resources",
+    "titan": "one active deity object with stats, hp, position, stance, cooldowns, status, mastery, and resources",
     "resources": {
       "momentum": "0-100",
       "divinity": "0-100",
@@ -31,7 +31,7 @@
   "reducers": [
     {
       "name": "createInitialSoloBattleState",
-      "responsibility": "Build deterministic vertical-slice state from Titan, enemy, terrain, and objective data."
+      "responsibility": "Build deterministic vertical-slice state from deity, enemy, terrain, and objective data."
     },
     {
       "name": "applyTitanAction",
@@ -43,7 +43,7 @@
     },
     {
       "name": "resolveEnemyPhase",
-      "responsibility": "Resolve AI intents against one active Titan, opening reaction windows for major actions."
+      "responsibility": "Resolve AI intents against one active deity, opening reaction windows for major actions."
     },
     {
       "name": "applyReaction",
@@ -92,7 +92,7 @@
     }
   },
   "qualityGates": [
-    "Only one player-controlled Titan may be active in battle state.",
+    "Only one player-controlled deity may be active in battle state.",
     "Every major enemy action must have a telegraph or logged exception.",
     "Reaction windows are turn-based prompts, never real-time inputs.",
     "Momentum and Divinity must clamp between 0 and 100.",

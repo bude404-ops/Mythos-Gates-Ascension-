@@ -19,7 +19,7 @@
   "mapId": "TG-MAP-002",
   "terrain": "sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones; source-culture appearance layer: sun-scale courts, pylon shadow lanes, river-light channels, Khepri dawn engines, Ma’at seal platforms, desert storm edges; cosmetic/relic silhouettes: Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes",
   "objectives": {
-    "primary": "Complete Elite: Ascension at the Watching Door with one active Titan while reading sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones and preserving faction doctrine.",
+    "primary": "Complete Elite: Ascension at the Watching Door with one active deity while reading sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones and preserving faction doctrine.",
     "optional": [
       "Win with no Titan defeated",
       "Win before turn 10",
@@ -65,25 +65,25 @@
   },
   "turnLimit": 9,
   "specialRules": [
-    "Solar Law: Momentum grows when the lone Titan holds marked light lanes without retreating.",
+    "Solar Law: Momentum grows when the lone deity holds marked light lanes without retreating.",
     "Eclipse Phase: the boss changes terrain rules at health or objective thresholds.",
     "Watching Gate: delay increases defeat pressure and locks some recovery tiles.",
     "Elite Remix: enemy AI prioritizes objectives and exposed support Titan.",
     "Restricted Recovery: healing or recovery tiles deactivate after use.",
-    "Solo Titanic Scale: one active Titan occupies the tactical focus; enemies, elites, and bosses scale around that single presence.",
+    "Solo Deityic Scale: one active deity occupies the tactical focus; enemies, elites, and bosses scale around that single presence.",
     "Cross-Faction Threat: Asgardian enemies join the Hollow in this elite encounter."
   ],
   "victoryConditions": [
-    "Complete Elite: Ascension at the Watching Door with one active Titan while reading sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones and preserving faction doctrine."
+    "Complete Elite: Ascension at the Watching Door with one active deity while reading sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones and preserving faction doctrine."
   ],
   "defeatConditions": [
-    "Your active Titan falls",
+    "Your active deity falls",
     "Primary objective fails",
     "Turn limit expires"
   ],
   "rewards": {
     "firstClear": [
-      "Solo Titan mastery XP",
+      "Solo Deity mastery XP",
       "Refined solar alloy",
       "Elite faction shard",
       "High-tier gear pattern",
@@ -91,7 +91,7 @@
       "Elite Aten Ra mission 20 codex shard"
     ],
     "replay": [
-      "Titan mastery XP",
+      "divine mastery XP",
       "Refined solar alloy",
       "Elite faction shard",
       "High-tier gear pattern"
@@ -123,13 +123,13 @@
     "altered map lane/hazard emphasis",
     "boss or commander mechanic added"
   ],
-  "activeTitanDesignNotes": "Balanced for one active Titan; roster depth changes pre-launch selection, not on-field body count.",
+  "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "chapterId": "TG-F01-CH05",
   "difficulty": "Elite",
   "activeTitanPolicy": {
     "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
     "multiTitanCombat": "NOT_USED_IN_STANDARD_MISSIONS",
-    "rosterPurpose": "Choose one Titan before launch; no ally positioning or team formations in battle.",
+    "rosterPurpose": "Choose one deity before launch; no ally positioning or team formations in battle.",
     "squadCombat": "FORBIDDEN",
     "teamTurns": "FORBIDDEN"
   },
@@ -169,7 +169,7 @@
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
-    "rule": "Favored-not-required: any valid active Titan may clear the mission; recommended god-Titans are tactical hints only."
+    "rule": "Favored-not-required: any valid active deity may clear the mission; recommended deities are tactical hints only."
   },
   "sourceCultureAppearanceRule": {
     "realm": "Solar Dominion of Khepra",
@@ -202,7 +202,7 @@
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled Titans",
+      "multiple player-controlled deities",
       "ally positioning",
       "team turns"
     ]
@@ -224,7 +224,7 @@
       "TG-CROSS-RUN-IN-004"
     ],
     "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
-    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone Titan without creating ally units or squad play."
+    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone deity without creating ally units or squad play."
   },
   "loreContinuityGuard": {
     "sourceFactionId": "TG-FACTION-001",
@@ -235,7 +235,7 @@
       "established faction identity",
       "Titan Gates mythology",
       "Gates and Codex systems",
-      "one player-controlled Titan combat",
+      "one player-controlled deity combat",
       "mobile UE5 zone structure"
     ],
     "forbid": [

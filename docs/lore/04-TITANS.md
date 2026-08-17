@@ -1,116 +1,83 @@
-# 04 — Titans
+# 04 — Playable Deities
 
 ## Definition
 
-Titans are the supreme warforms of the Realms.
+Playable characters are the actual gods and goddesseses of their source mythologies within the Titan Gates universe.
 
-They are not humans in armor. They are not extradimensional beings. They are not machines. They are not ordinary fantasy units.
+They are not Titans, mortal heroes, soldiers, normal units, machines, aliens, or generic fantasy champions with divine names. They are divine beings whose mythological domains, symbols, relationships, sacred objects, personalities, Realm cultures, and histories shape gameplay and art.
 
-Titans are colossal extradimensional beings shaped by the laws, myths, symbols, materials, and powers of their home Realms.
-
-Each Titan must feel powerful enough to become the source of an ancient god myth.
+The word Titan remains reserved for Titan Gates, Gate mythology, ancient Gate concepts, and stable internal IDs that still use legacy naming.
 
 ## Lore-to-Gameplay Rule
 
-Lore defines extradimensional power identity.  
-Extradimensional power identity defines battlefield role.  
-Battlefield role defines stat budget and counterplay.
+Mythology defines divine identity.  
+Divine identity defines combat role.  
+Combat role defines Divine Stats, Divine Abilities, Divine Gear, counterplay, and dungeon encounter fit.
 
-No Titan should exist only because it looks cool. Every Titan needs a civilization role, mythological archetype, battlefield purpose, and visual identity.
+No god or goddess should exist only because they look cool. Every playable deity needs a source mythology, civilization role, divine domain, battlefield purpose, dungeon-crawler function, and unique visual identity.
 
-## Chosen Titan Rule
+## Single-Deity Rule
 
 Current format:
 
-- 9 Titans per playable Realm
-- 5 active Titan slots in a chosen Titan
-- No playable non-Titan entries
-- No normal units
+- 4 deities per playable Realm
+- 2 male gods and 2 female goddesses per playable Realm
+- 28 total playable divine characters
+- 1 active god or goddess controlled at a time
+- No playable armies
+- No playable squads
+- No five-character teams
+- No normal soldiers or mortal heroes as playable characters
 
-The design goal is encounter-specific team building. There should be no universal best team.
+The design goal is encounter-specific single-deity mastery. The player becomes one god or goddess, enters dangerous Titan Gate-connected dungeon spaces, and fights multiple mythological enemies, elites, guardians, rival divine forces, mini-bosses, and bosses.
 
-## Current Named Titan Roster
+## Current Named Deity Roster
 
 ### Aten Ra
 
-- Aten-Ra, Solar Law Monolith — Defensive solar command Titan
-- Khemet Suncrown — Radiance battery Titan
-- Nefra Obsidian Dawn — Burn-control Titan
-- Orru Prism Verdict — Zone denial Titan
-- Sutekh Dune Eclipse — Disruption Titan
-- Iset Riverlight Throne — Sustain Titan
-- Karnu Glass Horizon — Ranged artillery Titan
-- Maahes Noon Bastion — Frontline guard Titan
-- Amunet Hidden Sun — Stealth-support Titan
+- Aten Ra — Solar creator-king and Ma’at throne-holder
+- Sutekh — Desert storm, disruption, necessary chaos
+- Iset — Throne-mending magic, mercy, restoration
+- Amunet — Hidden sun, secret names, unseen authority
 
 ### Asgardian
 
-- The Allfather Stormvein — Storm pressure Titan
-- Hrothar Rune-Mountain — Durable oath tank Titan
-- Skeld Iron Tempest — Counterattack Titan
-- Eirwyn Valkstorm — Mobile support Titan
-- Mordun Frost-Anvil — Control Titan
-- Veyra Thunderloom — Chain lightning Titan
-- Ragnor Skybreaker — Burst melee Titan
-- Ullr Snow-Crown — Ranged hunter Titan
-- Sigrun Oathflare — Objective commander Titan
+- Odin — Allfather, sacrifice, runes, war wisdom
+- Thor — Thunder, protection, giant-slaying force
+- Freyja — Beauty, battle, seiðr, desire, sovereignty
+- Frigg — Queenship, foresight, oath and household power
 
 ### Olympian
 
-- Aurelion Heaven-Marrow — Elite balanced Titan
-- Kallix Marble Thunder — Bruiser Titan
-- Thyressa Golden Aegis — Protection Titan
-- Ilyon Laurel Flame — Morale burst Titan
-- Nikos Star-Lance — Precision ranged Titan
-- Dione Victory Mirror — Buff-control Titan
-- Helior Bronze Summit — Area damage Titan
-- Pallas Oath-Spear — Duelist Titan
-- Eiren Crowned Horizon — Healing order Titan
+- Zeus — Sky authority, thunder verdict, kingship
+- Ares — War fury, blood courage, brutal momentum
+- Artemis — Hunt, moon, wilderness, sacred boundaries
+- Athena — Strategy, aegis, disciplined wisdom
 
 ### Kami
 
-- Amaterion Spirit-Sun — Spirit precision Titan
-- Tsukiro Moon-Veil — Evasion Titan
-- Raidenko Storm Script — Lightning control Titan
-- Mizuka Shrine Tide — Support Titan
-- Kageyori Shadow Gate — Stealth strike Titan
-- Hanae Blossom Ward — Healing terrain Titan
-- Onimaru Red Seal — Frontline breaker Titan
-- Korin Mist Path — Reposition Titan
-- Yamabito Stone Prayer — Durable anchor Titan
+- Amaterasu — Sun, imperial radiance, sacred order
+- Tsukuyomi — Moon, night order, cold judgment
+- Susanoo — Storm, sea, unruly heroic violence
+- Izanami — Death, creation-shadow, underworld sovereignty
 
 ### Tuatha
 
-- Dagoran Root-Crown — Nature adaptation Titan
-- Eryndor Emerald Oath — Healing Titan
-- Melian Moon-Grove — Control Titan
-- Bran Granite Bough — Tank Titan
-- Nimue Silver Pool — Illusion Titan
-- Cernan Wild Vale — Mobility Titan
-- Ailbhe Thorn-Song — Damage-over-time Titan
-- Oghma Stone Script — Buff commander Titan
-- Tara Dawn Barrow — Objective guardian Titan
+- Dagda — Good god, abundance, club, cauldron, earth strength
+- Lugh — Skill, light, spear, kingship, many arts
+- Morrígan — War prophecy, sovereignty, battle-crow fate
+- Brigid — Fire, poetry, healing, craft, sacred inspiration
 
 ### Empyrean
 
-- Seraphel, the Throne Eternal — Defensive control Titan
-- Caelion Dawnborn Axis — Frontline order Titan
-- Aurelia Radiant Spear — Ranged divine Titan
-- Malachor Law Warden — Zone lock Titan
-- Elyndra Choir Crown — Healing Titan
-- Orison White Citadel — Shield Titan
-- Vespera Mercy Blade — Counter-control Titan
-- Axiom Gate Choir — Formationless aura Titan
-- Theon Still Horizon — Anti-chaos Titan
+- Michael — Warrior archangel, command, judgment, protection
+- Gabriel — Herald, revelation, divine message, trumpet force
+- Sophia — Holy wisdom, luminous insight, sacred knowing
+- Shekinah — Indwelling divine presence, glory, sanctuary radiance
 
 ### Infernal Dominion
 
-- Mordrath, the Infernal King — Aggressive assault Titan
-- Varkul Bloodforged Crown — Melee bruiser Titan
-- Nyxara Flameborn Court — Burn mage Titan
-- Azrakar Chainwarden — Control tank Titan
-- Orryx Ash Dominion — Momentum Titan
-- Malvera Ember Throne — Debuff Titan
-- Kharon Black Iron — Pull-and-isolate Titan
-- Sablex Cinder Duke — Flanking Titan
-- Zerath Wound Gate — Execution Titan
+- Lucifer — Rebel light, pride, infernal sovereignty
+- Asmodeus — Desire, wrath, courtly corruption, domination
+- Lilith — Night, seduction, exile, fierce autonomy
+- Naamah — Enchantment, pleasure, infernal song, dangerous beauty

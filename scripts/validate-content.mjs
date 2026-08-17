@@ -139,10 +139,10 @@ const requiredScaleSheetTypes = new Set(['normal_enemy','elite_enemy','player_ti
 
 if(data.factions.length !== 7) fail(`Expected 7 playable factions, found ${data.factions.length}`);
 if(data.hollowThreatFaction.playable !== false || data.hollowThreatFaction.classification !== 'Hostile Threat Faction') fail('Hollow must remain a non-playable threat faction');
-if(data.titans.length !== 28) fail(`Expected 28 playable god-Titans, found ${data.titans.length}`);
+if(data.titans.length !== 28) fail(`Expected 28 playable deities, found ${data.titans.length}`);
 const factionGodCounts = new Map();
 for (const titan of data.titans) factionGodCounts.set(titan.factionId, (factionGodCounts.get(titan.factionId) || 0) + 1);
-for (const faction of data.factions) if ((factionGodCounts.get(faction.id) || 0) !== 4) fail(`${faction.name}: expected 4 playable god-Titans`);
+for (const faction of data.factions) if ((factionGodCounts.get(faction.id) || 0) !== 4) fail(`${faction.name}: expected 4 playable deities`);
 if(data.artApprovalManifest.status !== 'IMPLEMENTED' || data.artApprovalManifest.approvalStatus !== 'APPROVED_FOR_GENERATION') fail('Art approval manifest must be approved for generation');
 
 if(data.factionVisualBible.status !== 'IMPLEMENTED') fail('Faction visual bible must be IMPLEMENTED');
@@ -184,7 +184,7 @@ if(data.characters.length < data.npcs.length) fail(`Character registry must mirr
 if(!data.directors.some(d => d.id === 'TG-DIR-006' && d.name === '3D Asset Director')) fail('Missing 3D Asset Director');
 if(data.blueprint3dSystem.status !== 'IMPLEMENTED') fail('3D Blueprint System must be IMPLEMENTED');
 if(data.blueprint3dSystem.assetCounts.registryTotal !== data.blueprint3dRegistry.assets.length) fail('3D Blueprint registry count mismatch');
-if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'TITAN').length !== data.titans.length) fail('3D Titan blueprint count must match canon Titans');
+if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'DEITY').length !== data.titans.length) fail('3D deity blueprint count must match canon deities');
 if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'CHARACTER').length !== data.characters.length) fail('3D Character blueprint count must match canon Characters');
 if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'CREATURE').length !== data.creatures.length) fail('3D Creature blueprint count must match canon Creatures');
 if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'BATTLEFIELD').length !== data.maps.length) fail('3D Battlefield blueprint count must match canon Maps');
@@ -343,7 +343,7 @@ for (const mission of data.missions) {
   if(!Array.isArray(tactical.recommendedTitanIds) || tactical.recommendedTitanIds.length < 1) fail(`${mission.id}: tacticalProfile needs recommendedTitanIds`);
   for (const id of tactical.recommendedTitanIds) if(!titanIds.has(id)) fail(`${mission.id}: invalid recommended Titan ${id}`);
   if(tactical.ownershipLock !== false || tactical.favoredNotRequired !== true) fail(`${mission.id}: tacticalProfile must stay favored-not-required with no ownership lock`);
-  if(!String(tactical.rule||'').includes('any valid active Titan')) fail(`${mission.id}: tactical rule must explain no hard requirement`);
+  if(!String(tactical.rule||'').includes('any valid active deity')) fail(`${mission.id}: tactical rule must explain no hard requirement`);
   if(!exists(`missions/${mission.campaignType === 'Elite' ? 'elite' : 'normal'}/${mission.id}.json`)) fail(`${mission.id}: missing individual mission file`);
   if(mission.campaignType === 'Elite') {
     if(!mission.eliteRemixOf || !missionIds.has(mission.eliteRemixOf)) fail(`${mission.id}: missing valid eliteRemixOf`);
@@ -435,7 +435,7 @@ for (const mission of soloSlice.missionTypes) {
 }
 if(!creatureIds.has(soloSlice.bossEncounter.enemyId)) fail('Solo vertical slice boss references invalid creature');
 for (const objectiveId of soloSlice.bossEncounter.objectiveIds || []) if(!(soloSlice.objectiveStateDefaults || []).some(o => o.id === objectiveId)) fail(`Solo vertical slice boss objective missing ${objectiveId}`);
-for (const gate of ['Exactly one active player Titan','Exactly five pre-boss mission types','Exactly one boss encounter with five readable phases']) if(!(soloSlice.qualityGates || []).includes(gate)) fail(`Solo vertical slice missing quality gate ${gate}`);
+for (const gate of ['Exactly one active player deity','Exactly five pre-boss mission types','Exactly one boss encounter with five readable phases']) if(!(soloSlice.qualityGates || []).includes(gate)) fail(`Solo vertical slice missing quality gate ${gate}`);
 const soloEngine = fs.readFileSync(path.join(root,'game/solo-battle-engine.mjs'),'utf8');
 for (const token of ['createInitialSoloBattleState','applyTitanAction','revealEnemyIntents','resolveEnemyPhase','applyReaction','applyTerrainTick','evaluateObjectives','runReducerScript']) if(!soloEngine.includes(`export function ${token}`)) fail(`Solo battle engine missing ${token}`);
 
@@ -459,14 +459,14 @@ for (const file of ['index.html','game/index.html','game/tactical-map-prototype.
 const game = fs.readFileSync(path.join(root,'game/index.html'),'utf8');
 const hubRuntime = fs.readFileSync(path.join(root,'game/command-hub-runtime.mjs'),'utf8');
 if(!game.includes('OPEN THE TITAN GATE') || !game.includes('createCommandHubRuntime') || !game.includes('Command Hub')) fail('Playable Command Hub integrity check failed');
-for (const token of ['BOOT_STAGES','validatePlayerState','getNextRecommendedAction','AssetManager','AudioManager','deriveNotifications','bottomNav','Titan Roster','Realm Network','Lore Registry','Playable Solo Battle','battleBasic','battleObjective','normalizeProgression','createRewardCache','claimReward','pendingRewards','rewardHistory','STARTER_TITAN_IDS','AWAKENING_BEATS','completeAwakeningBeat','awakeningProgress','starterTitans','ensureOnboarding','Awakening Protocol','chooseStarter','advanceAwakeningBeat','finishAwakening','TRIAL_TITAN_IDS','TRIAL_MODES','trialTitans','ensureTrials','createTrialAttempt','resolveTrialAttempt','trialsScreen','startTrial','finishTrial','Trial Favor','Temporary Loadout','borrowed gear does not','raidProgress','raidRules','stageProfiles','problemTags','preferredCounters','carryRisk','tierCaps','approachRules','createRaidAttempt','resolveRaidStage','completeRaidAttempt','resolveRaidEconomy','applyRaidMastery','Raid Tokens','Signature Alloy','Mastery Seals','raidScreen','startRaid','raidResolve','raidClaim','The Gate Warden']) if(!hubRuntime.includes(token)) fail(`Command Hub runtime missing ${token}`);
+for (const token of ['BOOT_STAGES','validatePlayerState','getNextRecommendedAction','AssetManager','AudioManager','deriveNotifications','bottomNav','Deity Roster','Realm Network','Lore Registry','Playable Solo Battle','battleBasic','battleObjective','normalizeProgression','createRewardCache','claimReward','pendingRewards','rewardHistory','STARTER_TITAN_IDS','AWAKENING_BEATS','completeAwakeningBeat','awakeningProgress','starterTitans','ensureOnboarding','Awakening Protocol','chooseStarter','advanceAwakeningBeat','finishAwakening','TRIAL_TITAN_IDS','TRIAL_MODES','trialTitans','ensureTrials','createTrialAttempt','resolveTrialAttempt','trialsScreen','startTrial','finishTrial','Trial Favor','Temporary Loadout','borrowed gear does not','raidProgress','raidRules','stageProfiles','problemTags','preferredCounters','carryRisk','tierCaps','approachRules','createRaidAttempt','resolveRaidStage','completeRaidAttempt','resolveRaidEconomy','applyRaidMastery','Raid Tokens','Signature Alloy','Mastery Seals','raidScreen','startRaid','raidResolve','raidClaim','The Gate Warden']) if(!hubRuntime.includes(token)) fail(`Command Hub runtime missing ${token}`);
 const browserBattle = fs.readFileSync(path.join(root,'game/browser-battle-engine.mjs'),'utf8');
 for (const token of ['createBattleState','applyTitanAction','applyReaction','autoAdvanceEnemyTurn','summarizeBattle','chooseEnemyIntent','HOLLOW_SWARMER','GATEBORN_BRUTE','OBJECTIVE_CRUSH','enemyIntentCounts','enemyBehaviorTags','enemyCounterplay','behaviorTag','counterplay','ISOLATION_PUNISH','OBJECTIVE_DENIAL','ARCHETYPE_BUDGETS','resolveMissionScaling','scaleEnemyForMission','enemyScaling','threatBudget']) if(!browserBattle.includes(token)) fail(`Browser battle engine missing ${token}`);
 const battlefieldRuntime = fs.readFileSync(path.join(root,'game/battlefield-runtime.mjs'),'utf8');
 for (const token of ['createBattlefieldRuntimeState','buildBattlefieldTerrain','createBattlefieldObjectives','createBattlefieldEnemyRoster','applyBattlefieldAction','applyBattlefieldInteraction','endBattlefieldRound','advanceBattlefieldBossPhase','summarizeBattlefieldRuntime','runBattlefieldScript']) if(!battlefieldRuntime.includes(token)) fail(`Battlefield runtime missing ${token}`);
 if(data.battlefieldRuntimeArchitecture.status !== 'IMPLEMENTED' || data.battlefieldRuntimeArchitecture.taskId !== 'TG-DEV-029') fail('Battlefield runtime architecture must be implemented for TG-DEV-029');
 if(data.battlefieldRuntimeArchitecture.productionSlice !== data.battlefieldVerticalSlice.id) fail('Battlefield runtime architecture production slice mismatch');
-for (const target of ['one active Titan','49 meaningful spaces','interactive terrain','boss phases','mobile bottom action bar','camera modes']) if(!data.battlefieldVerticalSlice.qualityTargets.includes(target)) fail(`Battlefield vertical slice missing quality target ${target}`);
+for (const target of ['one active deity','49 meaningful spaces','interactive terrain','boss phases','mobile bottom action bar','camera modes']) if(!data.battlefieldVerticalSlice.qualityTargets.includes(target)) fail(`Battlefield vertical slice missing quality target ${target}`);
 const hub = data.commandHubContract;
 if(hub.status !== 'IMPLEMENTED' || hub.canonFirst !== true) fail('Command Hub contract must be IMPLEMENTED and canon-first');
 if(!Array.isArray(hub.startupPipeline) || hub.startupPipeline.length < 9 || hub.startupPipeline[0] !== 'BOOT' || !hub.startupPipeline.includes('MAIN_COMMAND_HUB')) fail('Command Hub startup pipeline incomplete');
@@ -490,22 +490,22 @@ for (const q of ['S','A','B','C']) {
 if(raidSystem.economyTuning.firstClear?.tokenBonus !== 8 || raidSystem.economyTuning.firstClear?.masterySeals !== 1) fail('Raid first-clear economy tuning invalid');
 if(raidSystem.economyTuning.replay?.payoutScalar >= 0.5 || raidSystem.economyTuning.replay?.minReplayTokens < 1) fail('Raid replay scalar/cap tuning invalid');
 for (const tier of ['RAID_NORMAL','RAID_HARD','RAID_ELITE','RAID_ASCENDED','RAID_MYTHIC']) if(!raidSystem.economyTuning.weeklyReplayTokenCaps?.[tier]) fail(`Raid economy weekly cap missing ${tier}`);
-for (const rule of ['Paid power shortcuts are forbidden.','Replay payout is capped and decays by weekly clear count.','Mastery credit applies only to the one active Titan used in the clear.']) if(!raidSystem.economyTuning.antiPayToWinRules?.includes(rule)) fail(`Raid anti-pay-to-win rule missing: ${rule}`);
+for (const rule of ['Paid power shortcuts are forbidden.','Replay payout is capped and decays by weekly clear count.','Mastery credit applies only to the one active deity used in the clear.']) if(!raidSystem.economyTuning.antiPayToWinRules?.includes(rule)) fail(`Raid anti-pay-to-win rule missing: ${rule}`);
 if(!raidSystem.acceptanceGates?.some(g => g.includes('TG-DEV-025 raid economy tuning is IMPLEMENTED'))) fail('Raid economy acceptance gate missing TG-DEV-025');
 
 if(hub.onboardingFlow?.status !== 'IMPLEMENTED' || hub.onboardingFlow?.taskId !== 'TG-DEV-026') fail('TG-DEV-026 onboarding flow must be implemented');
-if(!Array.isArray(hub.onboardingFlow.starterTitanIds) || hub.onboardingFlow.starterTitanIds.length !== 3) fail('TG-DEV-026 requires exactly three starter Titans');
-for (const id of hub.onboardingFlow.starterTitanIds) if(!titanIds.has(id)) fail(`TG-DEV-026 invalid starter Titan ${id}`);
+if(!Array.isArray(hub.onboardingFlow.starterTitanIds) || hub.onboardingFlow.starterTitanIds.length !== 3) fail('TG-DEV-026 requires exactly three starter deities');
+for (const id of hub.onboardingFlow.starterTitanIds) if(!titanIds.has(id)) fail(`TG-DEV-026 invalid starter deity ${id}`);
 if(hub.onboardingFlow.beatCount !== 12 || hub.onboardingFlow.fullRosterHiddenUntilComplete !== true) fail('TG-DEV-026 onboarding beat/roster guardrail invalid');
-for (const rule of ['Starter choice is canon-safe and limited to three roles.','Full roster is hidden during onboarding to prevent roster flood.','Second Titan desire is created through trials and story, not mandatory purchase pressure.']) if(!hub.onboardingFlow.antiPayToWinRules?.includes(rule)) fail(`TG-DEV-026 onboarding rule missing: ${rule}`);
+for (const rule of ['Starter choice is canon-safe and limited to three roles.','Full roster is hidden during onboarding to prevent roster flood.','Second deity desire is created through trials and story, not mandatory purchase pressure.']) if(!hub.onboardingFlow.antiPayToWinRules?.includes(rule)) fail(`TG-DEV-026 onboarding rule missing: ${rule}`);
 if(!hub.qualityGates?.some(g => g.includes('TG-DEV-026 Awakening onboarding'))) fail('Command Hub quality gate missing TG-DEV-026');
 const trialSystem = data.titanTrialSystem;
-if(trialSystem.status !== 'IMPLEMENTED' || trialSystem.taskId !== 'TG-DEV-027') fail('Titan Trial system must complete TG-DEV-027');
-if(!Array.isArray(trialSystem.trialTitanIds) || trialSystem.trialTitanIds.length < 3) fail('TG-DEV-027 requires at least three showcase Titans');
-for (const id of trialSystem.trialTitanIds) if(!titanIds.has(id)) fail(`TG-DEV-027 invalid trial Titan ${id}`);
+if(trialSystem.status !== 'IMPLEMENTED' || trialSystem.taskId !== 'TG-DEV-027') fail('Divine Trial system must complete TG-DEV-027');
+if(!Array.isArray(trialSystem.trialTitanIds) || trialSystem.trialTitanIds.length < 3) fail('TG-DEV-027 requires at least three showcase deities');
+for (const id of trialSystem.trialTitanIds) if(!titanIds.has(id)) fail(`TG-DEV-027 invalid trial deity ${id}`);
 if(!Array.isArray(trialSystem.trialModes) || trialSystem.trialModes.length !== 3) fail('TG-DEV-027 must define three trial modes');
 for (const mode of trialSystem.trialModes) if(!mode.id || !mode.label || !mode.rule || !Array.isArray(mode.scoreFocus) || mode.scoreFocus.length < 2) fail(`TG-DEV-027 trial mode incomplete: ${mode.id || 'unknown'}`);
-if(!String(trialSystem.activeTitanRule || '').includes('one temporary Titan')) fail('TG-DEV-027 one temporary Titan rule missing');
+if(!String(trialSystem.activeTitanRule || '').includes('one temporary deity')) fail('TG-DEV-027 one temporary deity rule missing');
 if(!trialSystem.temporaryLoadoutRules?.some(rule => String(rule).includes('expires=END_OF_TRIAL'))) fail('TG-DEV-027 temporary loadout expiry missing');
 if(!trialSystem.rewardGuardrails?.some(rule => String(rule).includes('borrowed gear does not'))) fail('TG-DEV-027 borrowed gear guardrail missing');
 if(hub.trialSystem?.status !== 'IMPLEMENTED' || hub.trialSystem?.taskId !== 'TG-DEV-027') fail('Command Hub trial system must implement TG-DEV-027');

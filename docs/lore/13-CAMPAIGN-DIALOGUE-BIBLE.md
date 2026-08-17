@@ -112,7 +112,7 @@ Radiant, formal, restrained. Her compassion is structured; her fear is quiet.
 ### TG-CHAPTER-013 — The Titan Gate
 **Gate Silhouette:** "Bring your measures. I have swallowed brighter laws."
 
-**Aten Ra Titan Voice:** "Then choke on this one."
+**Aten Ra deity Voice:** "Then choke on this one."
 
 ### TG-CHAPTER-014 — Lanterns That Lie
 **Sayo:** "Count the lanterns only after closing your eyes. The honest ones remain warm."

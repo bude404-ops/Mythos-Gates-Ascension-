@@ -31,7 +31,7 @@ The release cannot advance unless all commands pass.
 
 ## 4. Gameplay readiness
 
-- [ ] One active Titan remains the standard combat rule.
+- [ ] One active deity remains the standard combat rule.
 - [ ] Battle runtime tests pass.
 - [ ] Campaign playflow tests pass.
 - [ ] Playable battle UI smoke passes.

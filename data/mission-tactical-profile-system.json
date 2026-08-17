@@ -25,7 +25,7 @@
     "recommendedTitans": "array<{id,name,reason}>",
     "favoredNotRequired": "true",
     "ownershipLock": "false",
-    "rule": "Must state any valid active Titan can attempt the mission."
+    "rule": "Must state any valid active deity can attempt the mission."
   },
   "allowedProblemTags": [
     "large_enemy_groups",
@@ -248,13 +248,13 @@
   "antiPayToWinRules": [
     "Mission tactical profiles may recommend roles and Titans, but never require ownership.",
     "Every tagged mission must keep ownershipLock=false and favoredNotRequired=true.",
-    "The rule text must state that any valid active Titan can attempt the mission.",
-    "Recommended Titan advantage is guidance, not a gate, stat lock, or purchase prompt."
+    "The rule text must state that any valid active deity can attempt the mission.",
+    "Recommended deity advantage is guidance, not a gate, stat lock, or purchase prompt."
   ],
   "acceptanceGates": [
     "TG-DEV-028 every campaign mission has at least three tactical problem tags.",
-    "TG-DEV-028 every campaign mission has at least two advantage roles from the live Titan role list.",
-    "TG-DEV-028 every recommended Titan exists in data/titans.json.",
+    "TG-DEV-028 every campaign mission has at least two advantage roles from the live deity role list.",
+    "TG-DEV-028 every recommended deity exists in data/titans.json.",
     "TG-DEV-028 all mission tactical profiles are favored-not-required with no ownership lock.",
     "TG-DEV-028 mission tactical profile system is discoverable through data/index.json and release validation."
   ]

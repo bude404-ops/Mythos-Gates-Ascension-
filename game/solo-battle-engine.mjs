@@ -66,10 +66,10 @@ function findEnemy(state, enemyId) {
   return enemy;
 }
 function livingEnemies(state) { return state.enemies.filter(e => e.hp > 0); }
-function currentSpace(state) { return state.terrain.spaces.find(s => key(s.position) === key(state.titan.position)); }
+function currentSpace(state) { return state.terrain.spaces.find(s => key(s.position) === key(state.deity.position)); }
 
-export function createInitialSoloBattleState({ battleId, missionId, titan, enemies, terrain, objectives, seed = 1 }) {
-  if (!titan?.id) throw new Error('A solo battle requires one active Titan.');
+export function createInitialSoloBattleState({ battleId, missionId, deity, enemies, terrain, objectives, seed = 1 }) {
+  if (!deity?.id) throw new Error('A solo battle requires one active deity.');
   if (!Array.isArray(enemies) || enemies.length < 1) throw new Error('A solo battle requires at least one enemy.');
   const state = {
     battleId,
@@ -77,18 +77,18 @@ export function createInitialSoloBattleState({ battleId, missionId, titan, enemi
     seed,
     round: 1,
     phase: PHASES.PLAYER,
-    titan: {
-      id: titan.id,
-      name: titan.name,
-      role: titan.role,
-      hp: titan.stats.hp,
-      maxHp: titan.stats.hp,
-      attack: titan.stats.attack,
-      armor: titan.stats.armor,
-      resistance: titan.stats.resistance,
-      accuracy: titan.stats.accuracy,
-      range: titan.stats.range,
-      speed: titan.stats.speed,
+    deity: {
+      id: deity.id,
+      name: deity.name,
+      role: deity.role,
+      hp: deity.stats.hp,
+      maxHp: deity.stats.hp,
+      attack: deity.stats.attack,
+      armor: deity.stats.armor,
+      resistance: deity.stats.resistance,
+      accuracy: deity.stats.accuracy,
+      range: deity.stats.range,
+      speed: deity.stats.speed,
       position: { x: 1, y: 1 },
       stance: STANCES.GUARDIAN,
       status: [],
@@ -144,19 +144,19 @@ export function createInitialSoloBattleState({ battleId, missionId, titan, enemi
       routeSpacesVisited: []
     }
   };
-  log(state, 'BATTLE_START', { battleId, missionId, titan: titan.id, enemies: state.enemies.map(e => e.instanceId) });
+  log(state, 'BATTLE_START', { battleId, missionId, deity: deity.id, enemies: state.enemies.map(e => e.instanceId) });
   return state;
 }
 
 export function applyTitanAction(inputState, action) {
   const state = clone(inputState);
-  if (state.phase !== PHASES.PLAYER) throw new Error(`Titan action blocked during ${state.phase}`);
+  if (state.phase !== PHASES.PLAYER) throw new Error(`Deity action blocked during ${state.phase}`);
   if (action.type === 'MOVE') {
-    const dist = distance(state.titan.position, action.to);
+    const dist = distance(state.deity.position, action.to);
     const space = state.terrain.spaces.find(s => key(s.position) === key(action.to));
     if (!space) throw new Error(`Invalid move target ${key(action.to)}`);
-    if (dist > state.titan.speed) throw new Error(`Move exceeds speed: ${dist} > ${state.titan.speed}`);
-    state.titan.position = clone(action.to);
+    if (dist > state.deity.speed) throw new Error(`Move exceeds speed: ${dist} > ${state.deity.speed}`);
+    state.deity.position = clone(action.to);
     const illuminated = Boolean(space.illuminated);
     if (illuminated) gain(state, 'momentum', 8, 'illuminated_movement');
     state.telemetry.routeSpacesVisited.push(key(action.to));
@@ -164,8 +164,8 @@ export function applyTitanAction(inputState, action) {
     log(state, 'TITAN_MOVE', { to: action.to, terrain: space.type, illuminated });
   } else if (action.type === 'BASIC_ATTACK') {
     const enemy = findEnemy(state, action.targetId);
-    if (distance(state.titan.position, enemy.position) > state.titan.range) throw new Error('Target out of range');
-    const damage = Math.max(1, state.titan.attack + (state.titan.stance === STANCES.ASSAULT ? 3 : 0) - Math.floor(enemy.armor / 4));
+    if (distance(state.deity.position, enemy.position) > state.deity.range) throw new Error('Target out of range');
+    const damage = Math.max(1, state.deity.attack + (state.deity.stance === STANCES.ASSAULT ? 3 : 0) - Math.floor(enemy.armor / 4));
     enemy.hp = Math.max(0, enemy.hp - damage);
     enemy.vulnerable = enemy.hp > 0 && enemy.hp <= Math.ceil(enemy.maxHp * 0.35);
     state.telemetry.damageDealt += damage;
@@ -175,7 +175,7 @@ export function applyTitanAction(inputState, action) {
   } else if (action.type === 'TECHNIQUE') {
     if (!spend(state, 'momentum', 20, 'technique')) throw new Error('Technique requires 20 Momentum');
     const enemy = findEnemy(state, action.targetId);
-    const damage = Math.max(2, Math.round(state.titan.attack * 1.3) - Math.floor(enemy.armor / 5));
+    const damage = Math.max(2, Math.round(state.deity.attack * 1.3) - Math.floor(enemy.armor / 5));
     enemy.hp = Math.max(0, enemy.hp - damage);
     enemy.status.push('MARKED_BY_VERDICT');
     state.resources.solarCharge = clamp(state.resources.solarCharge + 10);
@@ -185,17 +185,17 @@ export function applyTitanAction(inputState, action) {
     if (!spend(state, 'momentum', 45, 'signature')) throw new Error('Signature requires 45 Momentum');
     if (!spend(state, 'divinity', 25, 'signature')) throw new Error('Signature requires 25 Divinity');
     for (const enemy of livingEnemies(state)) {
-      const damage = Math.max(3, Math.round(state.titan.attack * 1.4) - Math.floor(enemy.resistance / 5));
+      const damage = Math.max(3, Math.round(state.deity.attack * 1.4) - Math.floor(enemy.resistance / 5));
       enemy.hp = Math.max(0, enemy.hp - damage);
       enemy.vulnerable = enemy.hp > 0 && enemy.hp <= Math.ceil(enemy.maxHp * 0.35);
       state.telemetry.damageDealt += damage;
     }
-    state.titan.status.push('LAW_OF_HOLDING');
+    state.deity.status.push('LAW_OF_HOLDING');
     log(state, 'SIGNATURE', { name: 'Law of Holding', enemiesRemaining: livingEnemies(state).length });
   } else if (action.type === 'STANCE_SHIFT') {
     if (!Object.values(STANCES).includes(action.stance)) throw new Error(`Invalid stance ${action.stance}`);
-    if (action.stance === STANCES.ASCENDANT && !state.titan.ascended) throw new Error('Ascendant stance requires Divine Ascension');
-    state.titan.stance = action.stance;
+    if (action.stance === STANCES.ASCENDANT && !state.deity.ascended) throw new Error('Ascendant stance requires Divine Ascension');
+    state.deity.stance = action.stance;
     log(state, 'STANCE_SHIFT', { stance: action.stance });
   } else if (action.type === 'FOCUS') {
     gain(state, 'momentum', 6, 'focus');
@@ -213,15 +213,15 @@ export function applyTitanAction(inputState, action) {
     log(state, 'EXECUTION', { target: enemy.instanceId, damage });
   } else if (action.type === 'DIVINE_ASCENSION') {
     if (!spend(state, 'divinity', 100, 'divine_ascension')) throw new Error('Divine Ascension requires 100 Divinity');
-    state.titan.ascended = true;
-    state.titan.stance = STANCES.ASCENDANT;
-    state.titan.status.push('ASCENDANT_2_ROUNDS');
-    log(state, 'DIVINE_ASCENSION', { stance: state.titan.stance });
+    state.deity.ascended = true;
+    state.deity.stance = STANCES.ASCENDANT;
+    state.deity.status.push('ASCENDANT_2_ROUNDS');
+    log(state, 'DIVINE_ASCENSION', { stance: state.deity.stance });
   } else {
-    throw new Error(`Unknown Titan action ${action.type}`);
+    throw new Error(`Unknown Deity action ${action.type}`);
   }
   if (!livingEnemies(state).length) state.phase = PHASES.OBJECTIVE;
-  state.titan.actionsTakenThisRound.push(action.type);
+  state.deity.actionsTakenThisRound.push(action.type);
   state.telemetry.actionTypeCounts[action.type] = (state.telemetry.actionTypeCounts[action.type] || 0) + 1;
   return state;
 }
@@ -230,10 +230,10 @@ export function revealEnemyIntents(inputState) {
   const state = clone(inputState);
   state.phase = PHASES.ENEMY_INTENT;
   for (const enemy of livingEnemies(state)) {
-    const dist = distance(enemy.position, state.titan.position);
+    const dist = distance(enemy.position, state.deity.position);
     enemy.intent = dist <= enemy.range
-      ? { type: enemy.archetype === 'BRUTE' ? 'CRUSH' : 'STRIKE', target: state.titan.id, telegraphed: true, reactionType: enemy.archetype === 'BRUTE' ? 'PARRY' : 'DODGE' }
-      : { type: 'ADVANCE', target: state.titan.id, telegraphed: true, reactionType: 'COUNTER_CHARGE' };
+      ? { type: enemy.archetype === 'BRUTE' ? 'CRUSH' : 'STRIKE', target: state.deity.id, telegraphed: true, reactionType: enemy.archetype === 'BRUTE' ? 'PARRY' : 'DODGE' }
+      : { type: 'ADVANCE', target: state.deity.id, telegraphed: true, reactionType: 'COUNTER_CHARGE' };
     state.telemetry.enemyTelegraphs += 1;
     log(state, 'ENEMY_INTENT', { enemy: enemy.instanceId, intent: enemy.intent.type, reactionType: enemy.intent.reactionType });
   }
@@ -247,8 +247,8 @@ export function resolveEnemyPhase(inputState) {
   const acting = livingEnemies(state).find(e => e.intent);
   if (!acting) { state.phase = PHASES.TERRAIN; return state; }
   if (acting.intent.type === 'ADVANCE') {
-    acting.position.x += Math.sign(state.titan.position.x - acting.position.x);
-    acting.position.y += Math.sign(state.titan.position.y - acting.position.y);
+    acting.position.x += Math.sign(state.deity.position.x - acting.position.x);
+    acting.position.y += Math.sign(state.deity.position.y - acting.position.y);
     log(state, 'ENEMY_ADVANCE', { enemy: acting.instanceId, to: acting.position });
     acting.intent = null;
     return state;
@@ -285,7 +285,7 @@ export function applyReaction(inputState, choice = 'RESOLVE') {
       state.telemetry.reactionSuccesses += 1;
       log(state, 'REACTION_SUCCESS', { type, enemy: enemy.instanceId, prevented: enemy.damage });
     } else if (type === 'PARRY' || type === 'COUNTER_CHARGE') {
-      const counterDamage = Math.max(1, Math.round(state.titan.attack * 0.9) - Math.floor(enemy.armor / 6));
+      const counterDamage = Math.max(1, Math.round(state.deity.attack * 0.9) - Math.floor(enemy.armor / 6));
       enemy.hp = Math.max(0, enemy.hp - counterDamage);
       enemy.vulnerable = enemy.hp > 0 && enemy.hp <= Math.ceil(enemy.maxHp * 0.35);
       state.telemetry.damageDealt += counterDamage;
@@ -295,17 +295,17 @@ export function applyReaction(inputState, choice = 'RESOLVE') {
       log(state, 'REACTION_SUCCESS', { type, enemy: enemy.instanceId, counterDamage, enemyHp: enemy.hp });
     }
   } else {
-    const mitigation = state.titan.stance === STANCES.GUARDIAN ? Math.floor(state.titan.armor / 3) : Math.floor(state.titan.armor / 5);
+    const mitigation = state.deity.stance === STANCES.GUARDIAN ? Math.floor(state.deity.armor / 3) : Math.floor(state.deity.armor / 5);
     const damage = Math.max(1, enemy.damage - mitigation);
-    state.titan.hp = Math.max(0, state.titan.hp - damage);
+    state.deity.hp = Math.max(0, state.deity.hp - damage);
     state.telemetry.damageTaken += damage;
     state.telemetry.reactionDeclines += 1;
-    log(state, 'REACTION_DECLINED', { enemy: enemy.instanceId, damage, titanHp: state.titan.hp });
+    log(state, 'REACTION_DECLINED', { enemy: enemy.instanceId, damage, deityHp: state.deity.hp });
   }
   enemy.intent = null;
   state.reactionWindow = null;
   state.telemetry.reactionsResolved += 1;
-  state.phase = state.titan.hp <= 0 ? PHASES.DEFEAT : PHASES.ENEMY;
+  state.phase = state.deity.hp <= 0 ? PHASES.DEFEAT : PHASES.ENEMY;
   return state;
 }
 
@@ -314,13 +314,13 @@ export function applyTerrainTick(inputState) {
   state.phase = PHASES.TERRAIN;
   const space = currentSpace(state);
   if (space?.hazard === 'SOLAR_JUDGMENT') {
-    const damage = state.titan.stance === STANCES.GUARDIAN ? 1 : 4;
-    state.titan.hp = Math.max(0, state.titan.hp - damage);
+    const damage = state.deity.stance === STANCES.GUARDIAN ? 1 : 4;
+    state.deity.hp = Math.max(0, state.deity.hp - damage);
     state.telemetry.damageTaken += damage;
     state.telemetry.hazardDamage += damage;
     state.telemetry.terrainTouches[space.type] = (state.telemetry.terrainTouches[space.type] || 0) + 1;
     gain(state, 'solarCharge', 8, 'solar_judgment_lane');
-    log(state, 'TERRAIN_HAZARD', { hazard: space.hazard, damage, titanHp: state.titan.hp });
+    log(state, 'TERRAIN_HAZARD', { hazard: space.hazard, damage, deityHp: state.deity.hp });
   }
   return state;
 }
@@ -342,12 +342,12 @@ export function evaluateObjectives(inputState, objectiveEvent = null) {
     state.telemetry.objectiveProgress += objectiveEvent.progress || 1;
     log(state, 'OBJECTIVE_PROGRESS', { objective: objective.id, progress: objective.progress, status: objective.status });
   }
-  if (state.titan.hp <= 0) state.phase = PHASES.DEFEAT;
+  if (state.deity.hp <= 0) state.phase = PHASES.DEFEAT;
   else if (state.objectives.every(o => o.status === 'COMPLETE')) state.phase = PHASES.VICTORY;
   else {
     state.round += 1;
     state.telemetry.turns = state.round;
-    state.titan.actionsTakenThisRound = [];
+    state.deity.actionsTakenThisRound = [];
     // M01 turn limit enforcement: defeat if turn limit exceeded
     if (state.turnLimit && state.round > state.turnLimit) {
       state.phase = PHASES.DEFEAT;

@@ -115,7 +115,7 @@ for (const entry of registry.assets) {
   if (!githubLinkedAssetIds.has(entry.assetId)) fail(`${entry.assetId}: missing GitHub asset registry link`);
 }
 const requiredCounts = {
-  TITAN: read('data/titans.json').length,
+  DEITY: read('data/titans.json').length,
   CHARACTER: read('data/characters.json').length,
   CREATURE: read('data/creatures.json').length,
   ENEMY: read('data/creatures.json').length,

@@ -4,7 +4,7 @@
   "generated": "2026-08-16",
   "status": "IMPLEMENTED",
   "corePrinciple": "The fighting is the hook. Tactical mechanics create depth. Progression creates long-term retention.",
-  "primaryExperience": "The primary screen and primary player memory must be the Titan battle, not menu management.",
+  "primaryExperience": "The primary screen and primary player memory must be the deity battle, not menu management.",
   "combatLoop": [
     "Choose Titans",
     "Read the battlefield",
@@ -20,7 +20,7 @@
   ],
   "developmentPriority": [
     "Combat feel",
-    "Titan identity",
+    "deity identity",
     "Battlefield interaction",
     "Tactical decision-making",
     "Enemy AI",
@@ -31,15 +31,15 @@
   ],
   "combatFeelRequirements": [
     "Every attack must communicate physical contact through animation, VFX, hit stop, enemy reaction, and damage feedback.",
-    "Powerful Titan attacks must alter the camera, environment, enemy pose, or battlefield state before the player reads damage numbers.",
+    "Powerful deity attacks must alter the camera, environment, enemy pose, or battlefield state before the player reads damage numbers.",
     "Ability availability, cooldown, status effects, and target validity must be visible without hiding the battlefield.",
     "Combat decisions must be made from the battlefield view whenever possible. Secondary panels explain; they do not replace fighting."
   ],
   "titanPowerRules": [
-    "Every Titan needs a recognizable combat silhouette and attack identity beyond damage and health.",
-    "Each Titan kit must express range, mobility, survivability, battlefield interaction, and signature moment potential.",
+    "Every deity needs a recognizable combat silhouette and attack identity beyond damage and health.",
+    "Each deity kit must express range, mobility, survivability, battlefield interaction, and signature moment potential.",
     "Legendary scale is shown through enemy reactions, environmental response, large readable animations, and distinct impact cadence.",
-    "No Titan may be differentiated only by stat deltas."
+    "No deity may be differentiated only by stat deltas."
   ],
   "tacticalDepthRules": [
     "Add mechanics only when they create an interesting combat decision.",
@@ -50,7 +50,7 @@
   "battlefieldRules": [
     "Every battlefield section must have a gameplay purpose: open combat area, choke, flank, elevation, landmark, hazard, objective zone, or cover rhythm.",
     "Beautiful environments without tactical function are rejected for core combat arenas.",
-    "3D layouts must preserve Titan scale with readable lanes, large landmarks, and cinematic camera anchors.",
+    "3D layouts must preserve deity scale with readable lanes, large landmarks, and cinematic camera anchors.",
     "Battlefield interaction must support force movement, area attacks, protection plays, and comeback moments."
   ],
   "bigMomentTargets": [
@@ -68,17 +68,17 @@
   "uiRules": [
     "Battlefield visibility outranks every secondary menu.",
     "Basic combat actions must not require multi-menu navigation.",
-    "Primary UI shows Titan, health, movement, targets, ability availability, cooldowns, statuses, and objectives.",
+    "Primary UI shows deity, health, movement, targets, ability availability, cooldowns, statuses, and objectives.",
     "Secondary statistics must be collapsible or contextual and never dominate the battlefield."
   ],
   "progressionRules": [
     "Progression exists to make players excited to return to battle.",
     "Unlocks, shards, gear, upgrades, faction bonuses, bosses, events, and async defense must each answer what new combat expression they create.",
     "Reject spreadsheet-feeling progression that delays fighting without changing combat feel.",
-    "Upgrade prompts should make the player want to see what the Titan does in battle."
+    "Upgrade prompts should make the player want to see what the deity does in battle."
   ],
   "replayabilityRules": [
-    "Replayability must come from enjoyable fighting first, then difficulty, elite encounters, bosses, events, async defense, Titan mastery, team combinations, and battlefield variations.",
+    "Replayability must come from enjoyable fighting first, then difficulty, elite encounters, bosses, events, async defense, divine mastery, team combinations, and battlefield variations.",
     "Repeat modes must vary tactical problems rather than only increasing stats.",
     "Campaign completion should open better fights, not just larger checklists."
   ],
@@ -93,7 +93,7 @@
     "Are battles producing memorable moments?",
     "Would the player willingly play another battle immediately?"
   ],
-  "systemServiceTest": "Every system must make the Titan battle more fun, more tactical, more satisfying, or more replayable. If it does not, reconsider whether it belongs in the core experience.",
+  "systemServiceTest": "Every system must make the deity battle more fun, more tactical, more satisfying, or more replayable. If it does not, reconsider whether it belongs in the core experience.",
   "acceptanceGates": [
     {
       "id": "COMBAT_SCREEN_PRIMARY",

@@ -17,7 +17,7 @@
     "realm": "The Solar Dominion of Khepra",
     "map": "The First Reopening Gate",
     "starterTitan": "Aten-Ra, Solar Law Monolith",
-    "rationale": "Current onboarding starts with Aten Ra and the first Titan. The battlefield teaches Gate law, solar judgment terrain, one-Titan combat, and the massive-Gate fantasy without inventing a new faction or replacing lore."
+    "rationale": "Current onboarding starts with Aten Ra and the first deity. The battlefield teaches Gate law, solar judgment terrain, one-deity combat, and the massive-Gate fantasy without inventing a new faction or replacing lore."
   },
   "tacticalLayout": {
     "logicalGrid": "7x7",
@@ -33,7 +33,7 @@
           "B1",
           "B2"
         ],
-        "story": "The first Titan emerges through a fractured Earth-side Gate courtyard."
+        "story": "The first deity emerges through a fractured Earth-side Gate courtyard."
       },
       {
         "id": "open",
@@ -141,7 +141,7 @@
       {
         "id": "fractured_cover",
         "name": "Fractured Cover",
-        "effect": "Reduces ranged damage; heavy Titan attacks can destroy it and open shortcuts."
+        "effect": "Reduces ranged damage; heavy deity attacks can destroy it and open shortcuts."
       },
       {
         "id": "gate_pressure",
@@ -151,7 +151,7 @@
       {
         "id": "memory_obelisk",
         "name": "Memory Obelisk",
-        "effect": "Optional interactable: unlocks micro-Codex and Titan mastery XP."
+        "effect": "Optional interactable: unlocks micro-Codex and divine mastery XP."
       }
     ],
     "interactables": [
@@ -188,7 +188,7 @@
     ],
     "camera": {},
     "qualityTargets": [
-      "one active Titan",
+      "one active deity",
       "49 meaningful spaces",
       "multiple routes",
       "interactive terrain",
@@ -252,7 +252,7 @@
     "heroLandmark": [
       "massive broken Titan Gate landmark",
       "Aten Ra source-culture material language",
-      "scale readable beside Titan proxy",
+      "scale readable beside deity proxy",
       "does not block tactical readability"
     ],
     "finalReview": [
@@ -282,7 +282,7 @@
       "nemes-like energy mantle or linen head/shoulder flow for ruler silhouettes",
       "pylon harnesses and temple-gate shoulder frames that wrap the body instead of replacing it",
       "scarab carapace plates for renewal/battery forms",
-      "was-sceptre, crook, flail, khopesh, or weighing-scale weapon silhouettes abstracted into Titan gear",
+      "was-sceptre, crook, flail, khopesh, or weighing-scale weapon silhouettes abstracted into Divine Gear",
       "cobra uraeus brow crests, falcon eye visors, jackal threshold masks, lion mane armor, or lotus/papyrus river crests when lore-appropriate",
       "Ma\u2019at feather balance lines across armor seams, never readable text"
     ],
@@ -297,7 +297,7 @@
       "linen fibers stiffened into divine armor folds, sun-bleached at the edges",
       "carved relief bands showing abstract stars, river ripples, feathers, barque arcs, and balance geometry without readable text",
       "heat shimmer, desert abrasion, Nile polish, and incense smoke staining around sacred seams",
-      "scarab-shell iridescence or lion-fur shadow only when the Titan\u2019s myth anchor calls for it"
+      "scarab-shell iridescence or lion-fur shadow only when the deity\u2019s myth anchor calls for it"
     ],
     "colorPalette": [
       "white-gold noon light",
@@ -325,13 +325,13 @@
     "Design for vertical mobile tactical camera first.",
     "Use reusable modular assets and instancing where possible.",
     "Prepare LOD0 presentation, LOD1 gameplay, LOD2 distance, plus simplified collision.",
-    "Preserve detail on Titan silhouettes, Gate landmark, objective props, and foreground architecture."
+    "Preserve detail on deity silhouettes, Gate landmark, objective props, and foreground architecture."
   ],
   "externalGenerationInstructions": [
     "Read this packet first.",
     "Generate only the requested Battlefield 001 component or stage.",
     "Return files with the asset ID prefix BATTLEFIELD_001.",
-    "Include preview renders from the gameplay camera and at least one scale shot with a Titan proxy.",
+    "Include preview renders from the gameplay camera and at least one scale shot with a deity proxy.",
     "Include a manifest listing generated files, tool/model used, dimensions, polygon estimates, texture sizes, and known limitations.",
     "If any requirement conflicts with this packet, stop and report the conflict instead of inventing lore."
   ],

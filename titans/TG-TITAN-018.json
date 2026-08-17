@@ -34,8 +34,8 @@
   "passives": [
     "Rune Oath: Sigrun gains Oathfire when assassin play sets a vulnerability omen, then cashes it out through execution timing on storm-carved oathground. At 3 stacks, the next Technique or Reaction adds a rune-bound fate rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of World-Tree war halls."
   ],
-  "lore": "Thor, Thunder Guardian, is now canonized as one of the four playable god-Titans of Asgardian. The Titan is the source-realm divinity behind the mythology rather than a generic champion: thunder god, giant-breaker, protector of holds, hammer-oath guardian. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-  "personality": "A playable mythology god whose behavior expresses thunder god, giant-breaker, protector of holds, hammer-oath guardian; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
+  "lore": "Thor, Thunder Guardian, is now canonized as one of the four playable deities of Asgardian. The deity is the source-realm divinity behind the mythology rather than a generic champion: thunder god, giant-breaker, protector of holds, hammer-oath guardian. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology deity whose behavior expresses thunder god, giant-breaker, protector of holds, hammer-oath guardian; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
   "visualDescription": "Thor manifests as thunder god, giant-breaker, protector of holds, hammer-oath guardian from Asgardian: square masculine thunder face, red-gold beard, blunt nose, fierce blue storm eyes; compact heavily muscled masculine build, barrel chest, thick forearms, grounded brawler stance; signature silhouette: short hammer raised, heavy belt, thunder-braced shoulders, low immovable protector outline. Weapon: Mjölnir-inspired storm hammer with short haft and iron wrist loops. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
   "artStatus": "READY_FOR_GENERATION",
   "artPromptId": "TG-PROMPT-018",
@@ -155,7 +155,7 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
-    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
     "primaryRole": "execute priority targets and reposition through danger",
     "budgetTarget": 114,
     "computedCombatPower": 240,
@@ -198,7 +198,21 @@
     "faceLock": "square masculine thunder face, red-gold beard, blunt nose, fierce blue storm eyes",
     "bodyLock": "compact heavily muscled masculine build, barrel chest, thick forearms, grounded brawler stance",
     "silhouetteLock": "short hammer raised, heavy belt, thunder-braced shoulders, low immovable protector outline",
-    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved."
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved.",
+    "mythology": "Thor — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+    "realm": "The Storm-Rooted Aesir Holds",
+    "civilization": "Asgardian mythological extradimensional civilization",
+    "cultureRule": "God identity must come from mythology, realm, civilization, sacred materials, beauty standards, and ritual practice; never color swap alone.",
+    "beautyStandard": "Unmistakably masculine divine presence with faction-specific strength, nobility, posture, and varied anatomy.",
+    "realmAnatomy": "Realm-shaped mythological divinity, supernatural but not sci-fi alien.",
+    "identityFace": "square masculine thunder face, red-gold beard, blunt nose, fierce blue storm eyes",
+    "identityBody": "compact heavily muscled masculine build, barrel chest, thick forearms, grounded brawler stance",
+    "roleSilhouette": "short hammer raised, heavy belt, thunder-braced shoulders, low immovable protector outline",
+    "auditStatus": "PASS"
   },
-  "title": "Thunder Guardian"
+  "title": "Thunder Guardian",
+  "playableClassification": "God",
+  "species": "Deity",
+  "characterType": "Playable Deity",
+  "rosterClass": "Deity Roster"
 }

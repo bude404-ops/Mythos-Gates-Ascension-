@@ -42,6 +42,6 @@ Titan Gates: Ascension is an Unreal Engine 5-first, mobile-baseline Titan-scale 
 - Mobile-compatible lighting is the default target; high-end Lumen is optional.
 - World Partition is allowed only where it reduces loading or memory cost for larger regions.
 - AI generation assembles approved modules in ordered stages; it does not generate whole campaigns at once.
-- Build the first zone completely and validate scale, controls, loading, memory, FPS, streaming, combat, camera, lore, one-Titan combat, visible progression, gear improvement, and return-to-exploration before expanding.
+- Build the first zone completely and validate scale, controls, loading, memory, FPS, streaming, combat, camera, lore, one-deity combat, visible progression, gear improvement, and return-to-exploration before expanding.
 - Never add squad combat, team formations, ally positioning, multiple player-controlled Titans, or team turns.
 - Cross-faction enemies must come from approved run-in pools, preserve their home faction source-culture rules, and only appear when the mission/event provides a lore-valid reason.

@@ -24,7 +24,7 @@ const tasks = read('data/development-tasks.json');
 
 assert.equal(verticalSlice.id, 'TG-BATTLEFIELD-VS-001');
 assert.ok(architecture.runtimeRules.some(rule => rule.includes('No battlefield hardcoded as a one-off')));
-assert.ok(verticalSlice.qualityTargets.includes('one active Titan'));
+assert.ok(verticalSlice.qualityTargets.includes('one active deity'));
 assert.ok(verticalSlice.qualityTargets.includes('49 meaningful spaces'));
 assert.ok(verticalSlice.qualityTargets.includes('boss phases'));
 assert.ok(verticalSlice.qualityTargets.includes('mobile bottom action bar'));

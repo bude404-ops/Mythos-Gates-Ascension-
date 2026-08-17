@@ -35,8 +35,8 @@
     "passives": [
       "Solar Edict: Aten Ra gains Solar Charge when defender play anchors a control zone and converts enemy commitment into mitigation on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
     ],
-    "lore": "Aten Ra, Solar Law King, is now canonized as one of the four playable god-Titans of Aten Ra. The Titan is the source-realm divinity behind the mythology rather than a generic champion: solar creator-king and Ma’at throne-holder. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses solar creator-king and Ma’at throne-holder; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
+    "lore": "Aten Ra, Solar Law King, is now canonized as one of the four playable deities of Aten Ra. The deity is the source-realm divinity behind the mythology rather than a generic champion: solar creator-king and Ma’at throne-holder. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses solar creator-king and Ma’at throne-holder; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
     "visualDescription": "Aten Ra manifests as solar creator-king and Ma’at throne-holder from Aten Ra: regal falcon-eyed masculine face, high cheekbones, gold-lined eyes, calm judging mouth; tall kingly masculine frame, broad chest, narrow waist, sun-carved posture, composed protector mass; signature silhouette: towering sun disk crown, falcon mantle, shield-forward king silhouette. Weapon: sun-disc khopesh and radiant law shield. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-001",
@@ -58,7 +58,7 @@
         ],
         "effect": "Deal Aten Ra source-culture damage at range 2; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Pylon Edict Technique — Bastion",
@@ -90,7 +90,7 @@
         ],
         "effect": "Spend stored Solar Charge to impose a two-round rule from Solar Dominion of Khepra: protects a control zone, redirects enemy intent, and turns correct positioning into mitigation. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Aten-Ra Source Radiance",
@@ -123,7 +123,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Legendary",
         "primaryStat": "armor",
-        "effect": "Improves survivability and makes the Titan read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -156,7 +156,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "hold objectives and survive pressure",
       "budgetTarget": 112,
       "computedCombatPower": 238,
@@ -211,7 +211,11 @@
       "roleSilhouette": "towering sun disk crown, falcon mantle, shield-forward king silhouette",
       "auditStatus": "PASS"
     },
-    "title": "Solar Law King"
+    "title": "Solar Law King",
+    "playableClassification": "God",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-005",
@@ -249,8 +253,8 @@
     "passives": [
       "Solar Edict: Sutekh gains Solar Charge when disruptor play places a false timing window that punishes enemy overcommitment on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
     ],
-    "lore": "Sutekh, Red Land Storm God, is now canonized as one of the four playable god-Titans of Aten Ra. The Titan is the source-realm divinity behind the mythology rather than a generic champion: desert storm god, chaos-breaker who defends the sun barque against worse chaos. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses desert storm god, chaos-breaker who defends the sun barque against worse chaos; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
+    "lore": "Sutekh, Red Land Storm God, is now canonized as one of the four playable deities of Aten Ra. The deity is the source-realm divinity behind the mythology rather than a generic champion: desert storm god, chaos-breaker who defends the sun barque against worse chaos. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses desert storm god, chaos-breaker who defends the sun barque against worse chaos; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
     "visualDescription": "Sutekh manifests as desert storm god, chaos-breaker who defends the sun barque against worse chaos from Aten Ra: long sharp desert-noble masculine face, angular jaw, ember eyes, severe hooked nose; lean powerful masculine storm-runner build, wiry shoulders, long arms, sand-scarred muscles; signature silhouette: forked crown ears, wind-torn mantle, spear diagonal, jackal-storm outline. Weapon: forked storm-spear and hooked desert blade. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-005",
@@ -272,7 +276,7 @@
         ],
         "effect": "Deal Aten Ra source-culture damage at range 3; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Pylon Edict Technique — Interdiction",
@@ -304,7 +308,7 @@
         ],
         "effect": "Spend stored Solar Charge to impose a two-round rule from Solar Dominion of Khepra: cuts enemy resources, scrambles intent, and creates a counter-window instead of raw lockout. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Aten-Ra Source Radiance",
@@ -337,7 +341,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Epic",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -370,7 +374,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "interrupt resources, casts, reactions, and elite mechanics",
       "budgetTarget": 109,
       "computedCombatPower": 225,
@@ -425,7 +429,11 @@
       "roleSilhouette": "forked crown ears, wind-torn mantle, spear diagonal, jackal-storm outline",
       "auditStatus": "PASS"
     },
-    "title": "Red Land Storm God"
+    "title": "Red Land Storm God",
+    "playableClassification": "God",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-006",
@@ -463,8 +471,8 @@
     "passives": [
       "Solar Edict: Iset gains Solar Charge when sustain play banks survival value through terrain mastery and converts it into recovery on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
     ],
-    "lore": "Iset, Throne-Magic Mother, is now canonized as one of the four playable god-Titans of Aten Ra. The Titan is the source-realm divinity behind the mythology rather than a generic champion: restoration goddess, throne magic, river afterlife passage, sacred motherhood and sovereign healing. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses restoration goddess, throne magic, river afterlife passage, sacred motherhood and sovereign healing; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
+    "lore": "Iset, Throne-Magic Mother, is now canonized as one of the four playable deities of Aten Ra. The deity is the source-realm divinity behind the mythology rather than a generic champion: restoration goddess, throne magic, river afterlife passage, sacred motherhood and sovereign healing. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses restoration goddess, throne magic, river afterlife passage, sacred motherhood and sovereign healing; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
     "visualDescription": "Iset manifests as restoration goddess, throne magic, river afterlife passage, sacred motherhood and sovereign healing from Aten Ra: beautiful feminine Egyptian queen face, almond eyes, soft full mouth, compassionate but commanding gaze; graceful feminine hourglass frame, elegant waist-to-hip line, poised healer posture; signature silhouette: throne crown, flowing linen wings, curved scepter, protective mother-queen outline. Weapon: throne scepter and river-linen restoration fan. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-006",
@@ -486,7 +494,7 @@
         ],
         "effect": "Deal Aten Ra source-culture damage at range 2; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Pylon Edict Technique — Covenant",
@@ -518,7 +526,7 @@
         ],
         "effect": "Spend stored Solar Charge to impose a two-round rule from Solar Dominion of Khepra: restores through faction ritual, cleanses pressure, and rewards holding sacred ground without becoming a passive healer. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Aten-Ra Source Radiance",
@@ -551,7 +559,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Rare",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -584,7 +592,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "win attrition and cleanse hazard pressure",
       "budgetTarget": 104,
       "computedCombatPower": 205,
@@ -639,7 +647,11 @@
       "roleSilhouette": "throne crown, flowing linen wings, curved scepter, protective mother-queen outline",
       "auditStatus": "PASS"
     },
-    "title": "Throne-Magic Mother"
+    "title": "Throne-Magic Mother",
+    "playableClassification": "Goddess",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-009",
@@ -677,8 +689,8 @@
     "passives": [
       "Solar Edict: Amunet gains Solar Charge when assassin play sets a vulnerability omen, then cashes it out through execution timing on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
     ],
-    "lore": "Amunet, Hidden Breath Goddess, is now canonized as one of the four playable god-Titans of Aten Ra. The Titan is the source-realm divinity behind the mythology rather than a generic champion: hidden wind and unseen name goddess, concealed solar breath, secret execution. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses hidden wind and unseen name goddess, concealed solar breath, secret execution; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
+    "lore": "Amunet, Hidden Breath Goddess, is now canonized as one of the four playable deities of Aten Ra. The deity is the source-realm divinity behind the mythology rather than a generic champion: hidden wind and unseen name goddess, concealed solar breath, secret execution. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses hidden wind and unseen name goddess, concealed solar breath, secret execution; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
     "visualDescription": "Amunet manifests as hidden wind and unseen name goddess, concealed solar breath, secret execution from Aten Ra: alluring feminine hidden-sun face, narrow luminous eyes, delicate nose, knowing half-smile behind translucent veil; slender feminine dancer-assassin physique, narrow shoulders, lithe hips, silent coiled posture; signature silhouette: veiled crown, trailing ribbons, twin low blades, almost-vanishing profile. Weapon: paired obsidian name-knives carried in veiled hands. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-009",
@@ -700,7 +712,7 @@
         ],
         "effect": "Deal Aten Ra source-culture damage at range 1; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Pylon Edict Technique — Shadow Pursuit",
@@ -732,7 +744,7 @@
         ],
         "effect": "Spend stored Solar Charge to impose a two-round rule from Solar Dominion of Khepra: hunts marked targets, erases escape routes, and creates a precise execution window with recovery risk. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Aten-Ra Source Radiance",
@@ -765,7 +777,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Legendary",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -798,7 +810,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "execute priority targets and reposition through danger",
       "budgetTarget": 114,
       "computedCombatPower": 238,
@@ -853,7 +865,11 @@
       "roleSilhouette": "veiled crown, trailing ribbons, twin low blades, almost-vanishing profile",
       "auditStatus": "PASS"
     },
-    "title": "Hidden Breath Goddess"
+    "title": "Hidden Breath Goddess",
+    "playableClassification": "Goddess",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-010",
@@ -891,8 +907,8 @@
     "passives": [
       "Rune Oath: Allfather gains Oathfire when defender play anchors a control zone and converts enemy commitment into mitigation on storm-carved oathground. At 3 stacks, the next Technique or Reaction adds a rune-bound fate rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of World-Tree war halls."
     ],
-    "lore": "Odin, Allfather Stormvein, is now canonized as one of the four playable god-Titans of Asgardian. The Titan is the source-realm divinity behind the mythology rather than a generic champion: one-eyed war-king, rune-sacrifice sovereign, raven wisdom, oath shield of the Storm-Rooted Holds. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses one-eyed war-king, rune-sacrifice sovereign, raven wisdom, oath shield of the Storm-Rooted Holds; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
+    "lore": "Odin, Allfather Stormvein, is now canonized as one of the four playable deities of Asgardian. The deity is the source-realm divinity behind the mythology rather than a generic champion: one-eyed war-king, rune-sacrifice sovereign, raven wisdom, oath shield of the Storm-Rooted Holds. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses one-eyed war-king, rune-sacrifice sovereign, raven wisdom, oath shield of the Storm-Rooted Holds; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
     "visualDescription": "Odin manifests as one-eyed war-king, rune-sacrifice sovereign, raven wisdom, oath shield of the Storm-Rooted Holds from Asgardian: aged one-eyed masculine king face, long nose, deep cheek furrows, iron-grey beard, missing eye marked by rune scar; tall weathered masculine veteran frame, broad but not bulky, long limbs, ruler-warrior posture; signature silhouette: wide raven cloak, one high spear, wolf-pelt shoulder, asymmetrical missing-eye head shape. Weapon: Gungnir oath-spear and rune-battered shield-wall axe. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-010",
@@ -914,7 +930,7 @@
         ],
         "effect": "Deal Asgardian source-culture damage at range 2; generate Momentum and a small Oathstorm gain when used from rune-storm ground or against the marked target. The hit reads visually as rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Rune-Thunder Technique — Bastion",
@@ -946,7 +962,7 @@
         ],
         "effect": "Spend stored Oathstorm to impose a two-round rule from Storm-Rooted Aesir Holds: protects a control zone, redirects enemy intent, and turns correct positioning into mitigation. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Ragnarok Storm Unbound",
@@ -979,7 +995,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Legendary",
         "primaryStat": "armor",
-        "effect": "Improves survivability and makes the Titan read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -1012,7 +1028,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "hold objectives and survive pressure",
       "budgetTarget": 112,
       "computedCombatPower": 234,
@@ -1067,7 +1083,11 @@
       "roleSilhouette": "wide raven cloak, one high spear, wolf-pelt shoulder, asymmetrical missing-eye head shape",
       "auditStatus": "PASS"
     },
-    "title": "Allfather Stormvein"
+    "title": "Allfather Stormvein",
+    "playableClassification": "God",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-011",
@@ -1105,8 +1125,8 @@
     "passives": [
       "Rune Oath: Hrothar gains Oathfire when battery play stores excess resource and refunds Momentum after precise setup on storm-carved oathground. At 3 stacks, the next Technique or Reaction adds a rune-bound fate rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of World-Tree war halls."
     ],
-    "lore": "Freyja, Vanir Valkyrie Queen, is now canonized as one of the four playable god-Titans of Asgardian. The Titan is the source-realm divinity behind the mythology rather than a generic champion: Vanir goddess of battle-fate, beauty, seiðr, desire, and chosen slain. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses Vanir goddess of battle-fate, beauty, seiðr, desire, and chosen slain; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
+    "lore": "Freyja, Vanir Valkyrie Queen, is now canonized as one of the four playable deities of Asgardian. The deity is the source-realm divinity behind the mythology rather than a generic champion: Vanir goddess of battle-fate, beauty, seiðr, desire, and chosen slain. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses Vanir goddess of battle-fate, beauty, seiðr, desire, and chosen slain; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
     "visualDescription": "Freyja manifests as Vanir goddess of battle-fate, beauty, seiðr, desire, and chosen slain from Asgardian: radiant beautiful feminine Norse queen face, bright fierce eyes, full lips, high cheekbones, battle-fate confidence; powerful feminine valkyrie physique, narrow waist, strong hips and thighs, lifted commanding posture; signature silhouette: falcon feather cloak, jewel collar, long braided hair, wing-like cloak arcs. Weapon: brísingamen seiðr chain and falcon-feather blade. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-011",
@@ -1128,7 +1148,7 @@
         ],
         "effect": "Deal Asgardian source-culture damage at range 3; generate Momentum and a small Oathstorm gain when used from rune-storm ground or against the marked target. The hit reads visually as rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Rune-Thunder Technique — Reservoir",
@@ -1160,7 +1180,7 @@
         ],
         "effect": "Spend stored Oathstorm to impose a two-round rule from Storm-Rooted Aesir Holds: stores faction resource, refunds Momentum on smart setup, and converts terrain mastery into burst economy. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Ragnarok Storm Unbound",
@@ -1193,7 +1213,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Epic",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -1226,7 +1246,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "generate Momentum and Divinity under pressure",
       "budgetTarget": 109,
       "computedCombatPower": 228,
@@ -1281,7 +1301,11 @@
       "roleSilhouette": "falcon feather cloak, jewel collar, long braided hair, wing-like cloak arcs",
       "auditStatus": "PASS"
     },
-    "title": "Vanir Valkyrie Queen"
+    "title": "Vanir Valkyrie Queen",
+    "playableClassification": "Goddess",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-015",
@@ -1319,8 +1343,8 @@
     "passives": [
       "Rune Oath: Veyra gains Oathfire when sustain play banks survival value through terrain mastery and converts it into recovery on storm-carved oathground. At 3 stacks, the next Technique or Reaction adds a rune-bound fate rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of World-Tree war halls."
     ],
-    "lore": "Frigg, Wyrd Hearth Queen, is now canonized as one of the four playable god-Titans of Asgardian. The Titan is the source-realm divinity behind the mythology rather than a generic champion: queen of foresight, oath household, motherhood, continuity, secret mercy under law. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses queen of foresight, oath household, motherhood, continuity, secret mercy under law; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
+    "lore": "Frigg, Wyrd Hearth Queen, is now canonized as one of the four playable deities of Asgardian. The deity is the source-realm divinity behind the mythology rather than a generic champion: queen of foresight, oath household, motherhood, continuity, secret mercy under law. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses queen of foresight, oath household, motherhood, continuity, secret mercy under law; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
     "visualDescription": "Frigg manifests as queen of foresight, oath household, motherhood, continuity, secret mercy under law from Asgardian: mature beautiful feminine queen face, calm eyes that know fate, soft jaw, composed maternal authority; elegant feminine matriarch frame, stately posture, graceful waist and draped hips, contained strength; signature silhouette: woven mantle, distaff staff, crown-braids, protective hearth-cloak dome. Weapon: distaff staff weaving oath-thread and hearth-shield brooch. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-015",
@@ -1342,7 +1366,7 @@
         ],
         "effect": "Deal Asgardian source-culture damage at range 2; generate Momentum and a small Oathstorm gain when used from rune-storm ground or against the marked target. The hit reads visually as rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Rune-Thunder Technique — Covenant",
@@ -1374,7 +1398,7 @@
         ],
         "effect": "Spend stored Oathstorm to impose a two-round rule from Storm-Rooted Aesir Holds: restores through faction ritual, cleanses pressure, and rewards holding sacred ground without becoming a passive healer. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Ragnarok Storm Unbound",
@@ -1407,7 +1431,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Rare",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -1440,7 +1464,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "win attrition and cleanse hazard pressure",
       "budgetTarget": 104,
       "computedCombatPower": 207,
@@ -1495,7 +1519,11 @@
       "roleSilhouette": "woven mantle, distaff staff, crown-braids, protective hearth-cloak dome",
       "auditStatus": "PASS"
     },
-    "title": "Wyrd Hearth Queen"
+    "title": "Wyrd Hearth Queen",
+    "playableClassification": "Goddess",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-018",
@@ -1533,8 +1561,8 @@
     "passives": [
       "Rune Oath: Sigrun gains Oathfire when assassin play sets a vulnerability omen, then cashes it out through execution timing on storm-carved oathground. At 3 stacks, the next Technique or Reaction adds a rune-bound fate rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of World-Tree war halls."
     ],
-    "lore": "Thor, Thunder Guardian, is now canonized as one of the four playable god-Titans of Asgardian. The Titan is the source-realm divinity behind the mythology rather than a generic champion: thunder god, giant-breaker, protector of holds, hammer-oath guardian. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses thunder god, giant-breaker, protector of holds, hammer-oath guardian; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
+    "lore": "Thor, Thunder Guardian, is now canonized as one of the four playable deities of Asgardian. The deity is the source-realm divinity behind the mythology rather than a generic champion: thunder god, giant-breaker, protector of holds, hammer-oath guardian. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses thunder god, giant-breaker, protector of holds, hammer-oath guardian; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
     "visualDescription": "Thor manifests as thunder god, giant-breaker, protector of holds, hammer-oath guardian from Asgardian: square masculine thunder face, red-gold beard, blunt nose, fierce blue storm eyes; compact heavily muscled masculine build, barrel chest, thick forearms, grounded brawler stance; signature silhouette: short hammer raised, heavy belt, thunder-braced shoulders, low immovable protector outline. Weapon: Mjölnir-inspired storm hammer with short haft and iron wrist loops. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-018",
@@ -1556,7 +1584,7 @@
         ],
         "effect": "Deal Asgardian source-culture damage at range 1; generate Momentum and a small Oathstorm gain when used from rune-storm ground or against the marked target. The hit reads visually as rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Rune-Thunder Technique — Shadow Pursuit",
@@ -1588,7 +1616,7 @@
         ],
         "effect": "Spend stored Oathstorm to impose a two-round rule from Storm-Rooted Aesir Holds: hunts marked targets, erases escape routes, and creates a precise execution window with recovery risk. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Ragnarok Storm Unbound",
@@ -1621,7 +1649,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Legendary",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -1654,7 +1682,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "execute priority targets and reposition through danger",
       "budgetTarget": 114,
       "computedCombatPower": 240,
@@ -1709,7 +1737,11 @@
       "roleSilhouette": "short hammer raised, heavy belt, thunder-braced shoulders, low immovable protector outline",
       "auditStatus": "PASS"
     },
-    "title": "Thunder Guardian"
+    "title": "Thunder Guardian",
+    "playableClassification": "God",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-019",
@@ -1747,8 +1779,8 @@
     "passives": [
       "Aegis Favor: Aurelion gains Favor when defender play anchors a control zone and converts enemy commitment into mitigation on marble thunder line. At 3 stacks, the next Technique or Reaction adds a divine contest law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of High Olympian courts."
     ],
-    "lore": "Zeus, Thunder Verdict King, is now canonized as one of the four playable god-Titans of Olympian. The Titan is the source-realm divinity behind the mythology rather than a generic champion: sky father, thunder verdict, king of Olympus and law of victory. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses sky father, thunder verdict, king of Olympus and law of victory; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
+    "lore": "Zeus, Thunder Verdict King, is now canonized as one of the four playable deities of Olympian. The deity is the source-realm divinity behind the mythology rather than a generic champion: sky father, thunder verdict, king of Olympus and law of victory. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses sky father, thunder verdict, king of Olympus and law of victory; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
     "visualDescription": "Zeus manifests as sky father, thunder verdict, king of Olympus and law of victory from Olympian: regal masculine Olympian face, strong nose, storm brows, curled beard, imperious gaze; tall idealized masculine king build, broad shoulders, sculpted torso, upright tribunal posture; signature silhouette: eagle cloak, forked lightning staff, high laurel crown, marble-throne stance. Weapon: forked thunder-scepter and aegis-edged shield. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-019",
@@ -1770,7 +1802,7 @@
         ],
         "effect": "Deal Olympian source-culture damage at range 2; generate Momentum and a small Laurel Favor gain when used from trial-marked arena ground or against the marked target. The hit reads visually as living marble-light, bronze cuirass, laurel circuits, aegis scales, oracle smoke, thunder tribunal halos, hoplite shield geometry.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Laurel Trial Technique — Bastion",
@@ -1802,7 +1834,7 @@
         ],
         "effect": "Spend stored Laurel Favor to impose a two-round rule from Celestial Heights of Olympus: protects a control zone, redirects enemy intent, and turns correct positioning into mitigation. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Nike Crowned Ascension",
@@ -1835,7 +1867,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Legendary",
         "primaryStat": "armor",
-        "effect": "Improves survivability and makes the Titan read as Celestial Heights of Olympus source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Celestial Heights of Olympus source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -1868,7 +1900,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "hold objectives and survive pressure",
       "budgetTarget": 112,
       "computedCombatPower": 242,
@@ -1923,7 +1955,11 @@
       "roleSilhouette": "eagle cloak, forked lightning staff, high laurel crown, marble-throne stance",
       "auditStatus": "PASS"
     },
-    "title": "Thunder Verdict King"
+    "title": "Thunder Verdict King",
+    "playableClassification": "God",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-022",
@@ -1961,8 +1997,8 @@
     "passives": [
       "Aegis Favor: Ilyon gains Favor when breaker play marks armor, guard, or ritual structure for staged rupture on marble thunder line. At 3 stacks, the next Technique or Reaction adds a divine contest law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of High Olympian courts."
     ],
-    "lore": "Artemis, Moon Huntress, is now canonized as one of the four playable god-Titans of Olympian. The Titan is the source-realm divinity behind the mythology rather than a generic champion: moon hunt goddess, wild threshold guardian, bow discipline and sudden punishment. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses moon hunt goddess, wild threshold guardian, bow discipline and sudden punishment; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
+    "lore": "Artemis, Moon Huntress, is now canonized as one of the four playable deities of Olympian. The deity is the source-realm divinity behind the mythology rather than a generic champion: moon hunt goddess, wild threshold guardian, bow discipline and sudden punishment. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses moon hunt goddess, wild threshold guardian, bow discipline and sudden punishment; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
     "visualDescription": "Artemis manifests as moon hunt goddess, wild threshold guardian, bow discipline and sudden punishment from Olympian: beautiful young feminine hunter face, sharp clear eyes, straight nose, alert lips, untamed focus; athletic feminine archer frame, long legs, narrow waist, strong hips, poised running stance; signature silhouette: crescent bow arc, high hunt-braid, short chiton armor, stag-horn moon ornaments. Weapon: silver crescent bow and short hunting spear. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-022",
@@ -1984,7 +2020,7 @@
         ],
         "effect": "Deal Olympian source-culture damage at range 2; generate Momentum and a small Laurel Favor gain when used from trial-marked arena ground or against the marked target. The hit reads visually as living marble-light, bronze cuirass, laurel circuits, aegis scales, oracle smoke, thunder tribunal halos, hoplite shield geometry.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Laurel Trial Technique — Rupture",
@@ -2016,7 +2052,7 @@
         ],
         "effect": "Spend stored Laurel Favor to impose a two-round rule from Celestial Heights of Olympus: breaks guard, exposes vulnerability, and punishes armor or shield reliance. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Nike Crowned Ascension",
@@ -2049,7 +2085,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Rare",
         "primaryStat": "armor",
-        "effect": "Improves survivability and makes the Titan read as Celestial Heights of Olympus source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Celestial Heights of Olympus source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -2082,7 +2118,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "break armor, shields, and boss windows",
       "budgetTarget": 106,
       "computedCombatPower": 212,
@@ -2092,8 +2128,8 @@
         "bad terrain matchups",
         "mistimed reactions"
       ],
-      "uniqueMechanic": "Ilyon's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Titan exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
-      "counterplayRule": "mistimed burst leaves the Titan exposed during recovery"
+      "uniqueMechanic": "Ilyon's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the deity exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "counterplayRule": "mistimed burst leaves the deity exposed during recovery"
     },
     "mythicSource": "Artemis — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
     "visualTraits": {
@@ -2137,7 +2173,11 @@
       "roleSilhouette": "crescent bow arc, high hunt-braid, short chiton armor, stag-horn moon ornaments",
       "auditStatus": "PASS"
     },
-    "title": "Moon Huntress"
+    "title": "Moon Huntress",
+    "playableClassification": "Goddess",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-023",
@@ -2175,8 +2215,8 @@
     "passives": [
       "Aegis Favor: Nikos gains Favor when disruptor play places a false timing window that punishes enemy overcommitment on marble thunder line. At 3 stacks, the next Technique or Reaction adds a divine contest law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of High Olympian courts."
     ],
-    "lore": "Ares, Bronze War Fury, is now canonized as one of the four playable god-Titans of Olympian. The Titan is the source-realm divinity behind the mythology rather than a generic champion: war god of violent courage, battlefield rupture, and victory frenzy. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses war god of violent courage, battlefield rupture, and victory frenzy; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
+    "lore": "Ares, Bronze War Fury, is now canonized as one of the four playable deities of Olympian. The deity is the source-realm divinity behind the mythology rather than a generic champion: war god of violent courage, battlefield rupture, and victory frenzy. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses war god of violent courage, battlefield rupture, and victory frenzy; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
     "visualDescription": "Ares manifests as war god of violent courage, battlefield rupture, and victory frenzy from Olympian: rugged masculine warrior face, broken nose, hard jaw, burning eyes, battle-scarred brow; explosive muscular masculine fighter build, thick neck, powerful shoulders, forward-leaning aggression; signature silhouette: crested helm, spear thrust line, torn red cloak, shield shards around waist. Weapon: bronze war spear and notched kopis. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-023",
@@ -2198,7 +2238,7 @@
         ],
         "effect": "Deal Olympian source-culture damage at range 3; generate Momentum and a small Laurel Favor gain when used from trial-marked arena ground or against the marked target. The hit reads visually as living marble-light, bronze cuirass, laurel circuits, aegis scales, oracle smoke, thunder tribunal halos, hoplite shield geometry.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Laurel Trial Technique — Interdiction",
@@ -2230,7 +2270,7 @@
         ],
         "effect": "Spend stored Laurel Favor to impose a two-round rule from Celestial Heights of Olympus: cuts enemy resources, scrambles intent, and creates a counter-window instead of raw lockout. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Nike Crowned Ascension",
@@ -2263,7 +2303,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Epic",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Celestial Heights of Olympus source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Celestial Heights of Olympus source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -2296,7 +2336,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "interrupt resources, casts, reactions, and elite mechanics",
       "budgetTarget": 109,
       "computedCombatPower": 229,
@@ -2351,7 +2391,11 @@
       "roleSilhouette": "crested helm, spear thrust line, torn red cloak, shield shards around waist",
       "auditStatus": "PASS"
     },
-    "title": "Bronze War Fury"
+    "title": "Bronze War Fury",
+    "playableClassification": "God",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-026",
@@ -2389,8 +2433,8 @@
     "passives": [
       "Aegis Favor: Pallas gains Favor when guardian play intercepts a declared threat and stores the impact as later utility on marble thunder line. At 3 stacks, the next Technique or Reaction adds a divine contest law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of High Olympian courts."
     ],
-    "lore": "Athena, Aegis Strategist, is now canonized as one of the four playable god-Titans of Olympian. The Titan is the source-realm divinity behind the mythology rather than a generic champion: wisdom-war goddess, aegis shield, owl sight, civic strategy and disciplined protection. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses wisdom-war goddess, aegis shield, owl sight, civic strategy and disciplined protection; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
+    "lore": "Athena, Aegis Strategist, is now canonized as one of the four playable deities of Olympian. The deity is the source-realm divinity behind the mythology rather than a generic champion: wisdom-war goddess, aegis shield, owl sight, civic strategy and disciplined protection. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses wisdom-war goddess, aegis shield, owl sight, civic strategy and disciplined protection; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
     "visualDescription": "Athena manifests as wisdom-war goddess, aegis shield, owl sight, civic strategy and disciplined protection from Olympian: beautiful intelligent feminine face, grey owl-bright eyes, serene mouth, straight noble nose; tall athletic feminine strategist frame, poised shoulders, clear waist-to-hip line, still tactical stance; signature silhouette: owl-crested helm, aegis scale cloak, spear vertical, shield geometry. Weapon: aegis shield and long bronze spear. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-026",
@@ -2412,7 +2456,7 @@
         ],
         "effect": "Deal Olympian source-culture damage at range 1; generate Momentum and a small Laurel Favor gain when used from trial-marked arena ground or against the marked target. The hit reads visually as living marble-light, bronze cuirass, laurel circuits, aegis scales, oracle smoke, thunder tribunal halos, hoplite shield geometry.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Laurel Trial Technique — Punishing Guard",
@@ -2444,7 +2488,7 @@
         ],
         "effect": "Spend stored Laurel Favor to impose a two-round rule from Celestial Heights of Olympus: intercepts lethal paths, counters oathbreakers/trespassers, and turns defense into threat. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Nike Crowned Ascension",
@@ -2477,7 +2521,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Rare",
         "primaryStat": "armor",
-        "effect": "Improves survivability and makes the Titan read as Celestial Heights of Olympus source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Celestial Heights of Olympus source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -2510,7 +2554,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "counter bosses and protect survival windows",
       "budgetTarget": 105,
       "computedCombatPower": 214,
@@ -2565,7 +2609,11 @@
       "roleSilhouette": "owl-crested helm, aegis scale cloak, spear vertical, shield geometry",
       "auditStatus": "PASS"
     },
-    "title": "Aegis Strategist"
+    "title": "Aegis Strategist",
+    "playableClassification": "Goddess",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-028",
@@ -2603,8 +2651,8 @@
     "passives": [
       "Spirit Seal: Amaterion gains Sealfire when defender play anchors a control zone and converts enemy commitment into mitigation on shrine threshold ground. At 3 stacks, the next Technique or Reaction adds a purification and boundary law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Sacred Kingdoms."
     ],
-    "lore": "Amaterasu, Sun Mirror Empress, is now canonized as one of the four playable god-Titans of Kami. The Titan is the source-realm divinity behind the mythology rather than a generic champion: sun kami, imperial mirror, sacred light, sovereign shrine protection. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses sun kami, imperial mirror, sacred light, sovereign shrine protection; confident, sovereign, readable in combat, loyal to the unchanged Kami canon.",
+    "lore": "Amaterasu, Sun Mirror Empress, is now canonized as one of the four playable deities of Kami. The deity is the source-realm divinity behind the mythology rather than a generic champion: sun kami, imperial mirror, sacred light, sovereign shrine protection. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses sun kami, imperial mirror, sacred light, sovereign shrine protection; confident, sovereign, readable in combat, loyal to the unchanged Kami canon.",
     "visualDescription": "Amaterasu manifests as sun kami, imperial mirror, sacred light, sovereign shrine protection from Kami: beautiful feminine imperial Japanese face, luminous eyes, delicate nose, calm red-lacquered lips; elegant feminine empress frame, graceful neck, narrow waist, layered kimono-armor preserving feminine silhouette; signature silhouette: mirror halo, long sleeve-armor panels, sun hair ornaments, shrine-empress profile. Weapon: mirror-disc shield and radiant ceremonial blade. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-028",
@@ -2626,7 +2674,7 @@
         ],
         "effect": "Deal Kami source-culture damage at range 2; generate Momentum and a small Shrine Resonance gain when used from torii-marked sacred threshold or against the marked target. The hit reads visually as torii silhouettes, shimenawa cords, white shide seals, mirror silver, foxfire blue, cedar lacquer, tengu wind, oni iron, dragon rain.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Shide Seal Technique — Bastion",
@@ -2658,7 +2706,7 @@
         ],
         "effect": "Spend stored Shrine Resonance to impose a two-round rule from Sacred Kingdoms: protects a control zone, redirects enemy intent, and turns correct positioning into mitigation. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Amaterasu Moon-Gate Radiance",
@@ -2691,7 +2739,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Legendary",
         "primaryStat": "armor",
-        "effect": "Improves survivability and makes the Titan read as Sacred Kingdoms source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Sacred Kingdoms source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -2724,7 +2772,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "hold objectives and survive pressure",
       "budgetTarget": 112,
       "computedCombatPower": 238,
@@ -2779,7 +2827,11 @@
       "roleSilhouette": "mirror halo, long sleeve-armor panels, sun hair ornaments, shrine-empress profile",
       "auditStatus": "PASS"
     },
-    "title": "Sun Mirror Empress"
+    "title": "Sun Mirror Empress",
+    "playableClassification": "Goddess",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-029",
@@ -2817,8 +2869,8 @@
     "passives": [
       "Spirit Seal: Tsukiro gains Sealfire when battery play stores excess resource and refunds Momentum after precise setup on shrine threshold ground. At 3 stacks, the next Technique or Reaction adds a purification and boundary law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Sacred Kingdoms."
     ],
-    "lore": "Tsukuyomi, Moon Order Lord, is now canonized as one of the four playable god-Titans of Kami. The Titan is the source-realm divinity behind the mythology rather than a generic champion: moon god of cold order, ritual timing, night measure, stored lunar force. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses moon god of cold order, ritual timing, night measure, stored lunar force; confident, sovereign, readable in combat, loyal to the unchanged Kami canon.",
+    "lore": "Tsukuyomi, Moon Order Lord, is now canonized as one of the four playable deities of Kami. The deity is the source-realm divinity behind the mythology rather than a generic champion: moon god of cold order, ritual timing, night measure, stored lunar force. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses moon god of cold order, ritual timing, night measure, stored lunar force; confident, sovereign, readable in combat, loyal to the unchanged Kami canon.",
     "visualDescription": "Tsukuyomi manifests as moon god of cold order, ritual timing, night measure, stored lunar force from Kami: pale refined masculine court face, narrow eyes, immaculate jaw, restrained severe mouth; slender graceful masculine noble build, long limbs, straight posture, ritual precision; signature silhouette: crescent headpiece, long court sleeves, naginata curve, vertical moon-priest outline. Weapon: crescent naginata and moon-calendar talismans. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-029",
@@ -2840,7 +2892,7 @@
         ],
         "effect": "Deal Kami source-culture damage at range 3; generate Momentum and a small Shrine Resonance gain when used from torii-marked sacred threshold or against the marked target. The hit reads visually as torii silhouettes, shimenawa cords, white shide seals, mirror silver, foxfire blue, cedar lacquer, tengu wind, oni iron, dragon rain.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Shide Seal Technique — Reservoir",
@@ -2872,7 +2924,7 @@
         ],
         "effect": "Spend stored Shrine Resonance to impose a two-round rule from Sacred Kingdoms: stores faction resource, refunds Momentum on smart setup, and converts terrain mastery into burst economy. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Amaterasu Moon-Gate Radiance",
@@ -2905,7 +2957,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Epic",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Sacred Kingdoms source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Sacred Kingdoms source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -2938,7 +2990,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "generate Momentum and Divinity under pressure",
       "budgetTarget": 109,
       "computedCombatPower": 232,
@@ -2993,7 +3045,11 @@
       "roleSilhouette": "crescent headpiece, long court sleeves, naginata curve, vertical moon-priest outline",
       "auditStatus": "PASS"
     },
-    "title": "Moon Order Lord"
+    "title": "Moon Order Lord",
+    "playableClassification": "God",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-032",
@@ -3031,8 +3087,8 @@
     "passives": [
       "Spirit Seal: Kageyori gains Sealfire when disruptor play places a false timing window that punishes enemy overcommitment on shrine threshold ground. At 3 stacks, the next Technique or Reaction adds a purification and boundary law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Sacred Kingdoms."
     ],
-    "lore": "Susanoo, Storm-Sea Exile, is now canonized as one of the four playable god-Titans of Kami. The Titan is the source-realm divinity behind the mythology rather than a generic champion: storm and sea god, taboo breaker, serpent-slayer, exile-force that tears open stale order. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses storm and sea god, taboo breaker, serpent-slayer, exile-force that tears open stale order; confident, sovereign, readable in combat, loyal to the unchanged Kami canon.",
+    "lore": "Susanoo, Storm-Sea Exile, is now canonized as one of the four playable deities of Kami. The deity is the source-realm divinity behind the mythology rather than a generic champion: storm and sea god, taboo breaker, serpent-slayer, exile-force that tears open stale order. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses storm and sea god, taboo breaker, serpent-slayer, exile-force that tears open stale order; confident, sovereign, readable in combat, loyal to the unchanged Kami canon.",
     "visualDescription": "Susanoo manifests as storm and sea god, taboo breaker, serpent-slayer, exile-force that tears open stale order from Kami: wild masculine storm face, wind-torn hair, sharp grin, dark brows, rain-bright eyes; athletic rugged masculine build, broad shoulders, loose storm-swordsman stance; signature silhouette: wind-blown mantle, sea-rope cords, diagonal sword, ragged storm hair. Weapon: storm katana and rope-bound tempest gourd. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-032",
@@ -3054,7 +3110,7 @@
         ],
         "effect": "Deal Kami source-culture damage at range 3; generate Momentum and a small Shrine Resonance gain when used from torii-marked sacred threshold or against the marked target. The hit reads visually as torii silhouettes, shimenawa cords, white shide seals, mirror silver, foxfire blue, cedar lacquer, tengu wind, oni iron, dragon rain.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Shide Seal Technique — Interdiction",
@@ -3086,7 +3142,7 @@
         ],
         "effect": "Spend stored Shrine Resonance to impose a two-round rule from Sacred Kingdoms: cuts enemy resources, scrambles intent, and creates a counter-window instead of raw lockout. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Amaterasu Moon-Gate Radiance",
@@ -3119,7 +3175,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Epic",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Sacred Kingdoms source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Sacred Kingdoms source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -3152,7 +3208,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "interrupt resources, casts, reactions, and elite mechanics",
       "budgetTarget": 109,
       "computedCombatPower": 225,
@@ -3207,7 +3263,11 @@
       "roleSilhouette": "wind-blown mantle, sea-rope cords, diagonal sword, ragged storm hair",
       "auditStatus": "PASS"
     },
-    "title": "Storm-Sea Exile"
+    "title": "Storm-Sea Exile",
+    "playableClassification": "God",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-033",
@@ -3245,8 +3305,8 @@
     "passives": [
       "Spirit Seal: Hanae gains Sealfire when sustain play banks survival value through terrain mastery and converts it into recovery on shrine threshold ground. At 3 stacks, the next Technique or Reaction adds a purification and boundary law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Sacred Kingdoms."
     ],
-    "lore": "Izanami, Yomi Mother, is now canonized as one of the four playable god-Titans of Kami. The Titan is the source-realm divinity behind the mythology rather than a generic champion: creator mother and underworld queen, death-birth threshold, grave restoration. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses creator mother and underworld queen, death-birth threshold, grave restoration; confident, sovereign, readable in combat, loyal to the unchanged Kami canon.",
+    "lore": "Izanami, Yomi Mother, is now canonized as one of the four playable deities of Kami. The deity is the source-realm divinity behind the mythology rather than a generic champion: creator mother and underworld queen, death-birth threshold, grave restoration. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses creator mother and underworld queen, death-birth threshold, grave restoration; confident, sovereign, readable in combat, loyal to the unchanged Kami canon.",
     "visualDescription": "Izanami manifests as creator mother and underworld queen, death-birth threshold, grave restoration from Kami: beautiful haunting feminine mother-queen face, porcelain skin, dark compassionate eyes, sorrowful lips; stately feminine underworld frame, long torso, flowing hips, calm ritual stance; signature silhouette: black veil, grave-flower sleeves, trailing cords, mother-of-Yomi outline. Weapon: bone-white shrine fan and underworld cord blade. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-033",
@@ -3268,7 +3328,7 @@
         ],
         "effect": "Deal Kami source-culture damage at range 2; generate Momentum and a small Shrine Resonance gain when used from torii-marked sacred threshold or against the marked target. The hit reads visually as torii silhouettes, shimenawa cords, white shide seals, mirror silver, foxfire blue, cedar lacquer, tengu wind, oni iron, dragon rain.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Shide Seal Technique — Covenant",
@@ -3300,7 +3360,7 @@
         ],
         "effect": "Spend stored Shrine Resonance to impose a two-round rule from Sacred Kingdoms: restores through faction ritual, cleanses pressure, and rewards holding sacred ground without becoming a passive healer. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Amaterasu Moon-Gate Radiance",
@@ -3333,7 +3393,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Rare",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Sacred Kingdoms source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Sacred Kingdoms source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -3366,7 +3426,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "win attrition and cleanse hazard pressure",
       "budgetTarget": 104,
       "computedCombatPower": 205,
@@ -3421,7 +3481,11 @@
       "roleSilhouette": "black veil, grave-flower sleeves, trailing cords, mother-of-Yomi outline",
       "auditStatus": "PASS"
     },
-    "title": "Yomi Mother"
+    "title": "Yomi Mother",
+    "playableClassification": "Goddess",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-037",
@@ -3459,8 +3523,8 @@
     "passives": [
       "Geas Bloom: Dagoran gains Geas when defender play anchors a control zone and converts enemy commitment into mitigation on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
     ],
-    "lore": "Dagda, Good God Cauldron-King, is now canonized as one of the four playable god-Titans of Tuatha. The Titan is the source-realm divinity behind the mythology rather than a generic champion: Tuatha father god, abundance cauldron, oak club, sovereign feast and protection. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses Tuatha father god, abundance cauldron, oak club, sovereign feast and protection; confident, sovereign, readable in combat, loyal to the unchanged Tuatha canon.",
+    "lore": "Dagda, Good God Cauldron-King, is now canonized as one of the four playable deities of Tuatha. The deity is the source-realm divinity behind the mythology rather than a generic champion: Tuatha father god, abundance cauldron, oak club, sovereign feast and protection. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses Tuatha father god, abundance cauldron, oak club, sovereign feast and protection; confident, sovereign, readable in combat, loyal to the unchanged Tuatha canon.",
     "visualDescription": "Dagda manifests as Tuatha father god, abundance cauldron, oak club, sovereign feast and protection from Tuatha: broad warm masculine elder-king face, heavy brow, laughing eyes, thick beard, generous authority; large powerful masculine guardian build, heavy belly-and-chest strength, grounded feast-king posture; signature silhouette: huge club, cauldron shield, fur mantle, broad oak-root stance. Weapon: great life-death oak club and cauldron-lid shield. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-037",
@@ -3482,7 +3546,7 @@
         ],
         "effect": "Deal Tuatha source-culture damage at range 2; generate Momentum and a small Geas Memory gain when used from silver-root fae ground or against the marked target. The hit reads visually as silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Geas Thorn Technique — Bastion",
@@ -3514,7 +3578,7 @@
         ],
         "effect": "Spend stored Geas Memory to impose a two-round rule from Avalora: protects a control zone, redirects enemy intent, and turns correct positioning into mitigation. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Tír na nÓg Moon-Sovereign Form",
@@ -3547,7 +3611,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Legendary",
         "primaryStat": "armor",
-        "effect": "Improves survivability and makes the Titan read as Avalora source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Avalora source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -3580,7 +3644,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "hold objectives and survive pressure",
       "budgetTarget": 112,
       "computedCombatPower": 234,
@@ -3635,7 +3699,11 @@
       "roleSilhouette": "huge club, cauldron shield, fur mantle, broad oak-root stance",
       "auditStatus": "PASS"
     },
-    "title": "Good God Cauldron-King"
+    "title": "Good God Cauldron-King",
+    "playableClassification": "God",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-040",
@@ -3673,8 +3741,8 @@
     "passives": [
       "Geas Bloom: Bran gains Geas when breaker play marks armor, guard, or ritual structure for staged rupture on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
     ],
-    "lore": "Morrígan, Battle-Crow Fate Queen, is now canonized as one of the four playable god-Titans of Tuatha. The Titan is the source-realm divinity behind the mythology rather than a generic champion: war fate goddess, battle-crow prophecy, sovereignty terror and doom rupture. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses war fate goddess, battle-crow prophecy, sovereignty terror and doom rupture; confident, sovereign, readable in combat, loyal to the unchanged Tuatha canon.",
+    "lore": "Morrígan, Battle-Crow Fate Queen, is now canonized as one of the four playable deities of Tuatha. The deity is the source-realm divinity behind the mythology rather than a generic champion: war fate goddess, battle-crow prophecy, sovereignty terror and doom rupture. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses war fate goddess, battle-crow prophecy, sovereignty terror and doom rupture; confident, sovereign, readable in combat, loyal to the unchanged Tuatha canon.",
     "visualDescription": "Morrígan manifests as war fate goddess, battle-crow prophecy, sovereignty terror and doom rupture from Tuatha: striking dangerous feminine face, pale sharp cheekbones, black eyes, predatory lips, prophecy stare; tall fierce feminine warrior-seer physique, narrow waist, strong hips, long limbs, commanding predatory posture; signature silhouette: crow wing mantle, horned battle crown, long spear, feathered shadow outline. Weapon: black spear of fate and crow-feather sickle dagger. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-040",
@@ -3696,7 +3764,7 @@
         ],
         "effect": "Deal Tuatha source-culture damage at range 2; generate Momentum and a small Geas Memory gain when used from silver-root fae ground or against the marked target. The hit reads visually as silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Geas Thorn Technique — Rupture",
@@ -3728,7 +3796,7 @@
         ],
         "effect": "Spend stored Geas Memory to impose a two-round rule from Avalora: breaks guard, exposes vulnerability, and punishes armor or shield reliance. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Tír na nÓg Moon-Sovereign Form",
@@ -3761,7 +3829,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Rare",
         "primaryStat": "armor",
-        "effect": "Improves survivability and makes the Titan read as Avalora source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Avalora source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -3794,7 +3862,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "break armor, shields, and boss windows",
       "budgetTarget": 106,
       "computedCombatPower": 210,
@@ -3804,8 +3872,8 @@
         "bad terrain matchups",
         "mistimed reactions"
       ],
-      "uniqueMechanic": "Bran's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Titan exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
-      "counterplayRule": "mistimed burst leaves the Titan exposed during recovery"
+      "uniqueMechanic": "Bran's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the deity exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "counterplayRule": "mistimed burst leaves the deity exposed during recovery"
     },
     "mythicSource": "The Morrígan — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
     "visualTraits": {
@@ -3849,7 +3917,11 @@
       "roleSilhouette": "crow wing mantle, horned battle crown, long spear, feathered shadow outline",
       "auditStatus": "PASS"
     },
-    "title": "Battle-Crow Fate Queen"
+    "title": "Battle-Crow Fate Queen",
+    "playableClassification": "Goddess",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-041",
@@ -3887,8 +3959,8 @@
     "passives": [
       "Geas Bloom: Nimue gains Geas when disruptor play places a false timing window that punishes enemy overcommitment on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
     ],
-    "lore": "Brigid, Triple Flame Muse, is now canonized as one of the four playable god-Titans of Tuatha. The Titan is the source-realm divinity behind the mythology rather than a generic champion: goddess of flame, poetry, smithcraft, healing inspiration, triple sacred art. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses goddess of flame, poetry, smithcraft, healing inspiration, triple sacred art; confident, sovereign, readable in combat, loyal to the unchanged Tuatha canon.",
+    "lore": "Brigid, Triple Flame Muse, is now canonized as one of the four playable deities of Tuatha. The deity is the source-realm divinity behind the mythology rather than a generic champion: goddess of flame, poetry, smithcraft, healing inspiration, triple sacred art. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses goddess of flame, poetry, smithcraft, healing inspiration, triple sacred art; confident, sovereign, readable in combat, loyal to the unchanged Tuatha canon.",
     "visualDescription": "Brigid manifests as goddess of flame, poetry, smithcraft, healing inspiration, triple sacred art from Tuatha: beautiful bright feminine artisan face, copper hair, warm eyes, determined mouth, creative intensity; strong graceful feminine smith-muse build, toned arms, curved waist and hips, forward inspiring stance; signature silhouette: triple flame crown, smith apron-skirt, hammer glow, braided fire hair. Weapon: flame-forged smith hammer and poet’s fire sickle. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-041",
@@ -3910,7 +3982,7 @@
         ],
         "effect": "Deal Tuatha source-culture damage at range 3; generate Momentum and a small Geas Memory gain when used from silver-root fae ground or against the marked target. The hit reads visually as silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Geas Thorn Technique — Interdiction",
@@ -3942,7 +4014,7 @@
         ],
         "effect": "Spend stored Geas Memory to impose a two-round rule from Avalora: cuts enemy resources, scrambles intent, and creates a counter-window instead of raw lockout. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Tír na nÓg Moon-Sovereign Form",
@@ -3975,7 +4047,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Epic",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Avalora source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Avalora source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -4008,7 +4080,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "interrupt resources, casts, reactions, and elite mechanics",
       "budgetTarget": 109,
       "computedCombatPower": 227,
@@ -4063,7 +4135,11 @@
       "roleSilhouette": "triple flame crown, smith apron-skirt, hammer glow, braided fire hair",
       "auditStatus": "PASS"
     },
-    "title": "Triple Flame Muse"
+    "title": "Triple Flame Muse",
+    "playableClassification": "Goddess",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-042",
@@ -4101,8 +4177,8 @@
     "passives": [
       "Geas Bloom: Cernan gains Geas when sustain play banks survival value through terrain mastery and converts it into recovery on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
     ],
-    "lore": "Lugh, Many-Skilled Radiance, is now canonized as one of the four playable god-Titans of Tuatha. The Titan is the source-realm divinity behind the mythology rather than a generic champion: many-skilled god of mastery, radiance, spear, craft and precise victory from afar. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses many-skilled god of mastery, radiance, spear, craft and precise victory from afar; confident, sovereign, readable in combat, loyal to the unchanged Tuatha canon.",
+    "lore": "Lugh, Many-Skilled Radiance, is now canonized as one of the four playable deities of Tuatha. The deity is the source-realm divinity behind the mythology rather than a generic champion: many-skilled god of mastery, radiance, spear, craft and precise victory from afar. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses many-skilled god of mastery, radiance, spear, craft and precise victory from afar; confident, sovereign, readable in combat, loyal to the unchanged Tuatha canon.",
     "visualDescription": "Lugh manifests as many-skilled god of mastery, radiance, spear, craft and precise victory from afar from Tuatha: handsome youthful masculine champion face, golden eyes, clean jaw, focused confident smile; lean athletic masculine duelist build, long arms, dancer balance, poised ranged-strike posture; signature silhouette: long radiant spear line, sun cloak, tool charms, spear-caster profile. Weapon: Spear of Assal-like radiant long spear and sling of light. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-042",
@@ -4124,7 +4200,7 @@
         ],
         "effect": "Deal Tuatha source-culture damage at range 2; generate Momentum and a small Geas Memory gain when used from silver-root fae ground or against the marked target. The hit reads visually as silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Geas Thorn Technique — Covenant",
@@ -4156,7 +4232,7 @@
         ],
         "effect": "Spend stored Geas Memory to impose a two-round rule from Avalora: restores through faction ritual, cleanses pressure, and rewards holding sacred ground without becoming a passive healer. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Tír na nÓg Moon-Sovereign Form",
@@ -4189,7 +4265,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Rare",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Avalora source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Avalora source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -4222,7 +4298,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "win attrition and cleanse hazard pressure",
       "budgetTarget": 104,
       "computedCombatPower": 207,
@@ -4277,7 +4353,11 @@
       "roleSilhouette": "long radiant spear line, sun cloak, tool charms, spear-caster profile",
       "auditStatus": "PASS"
     },
-    "title": "Many-Skilled Radiance"
+    "title": "Many-Skilled Radiance",
+    "playableClassification": "God",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-046",
@@ -4315,8 +4395,8 @@
     "passives": [
       "Choir Edict: Seraphel gains Choir Resonance when defender play anchors a control zone and converts enemy commitment into mitigation on ordered sigil zones. At 3 stacks, the next Technique or Reaction adds a radiant hierarchy judgment rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Radiant Hierarchies."
     ],
-    "lore": "Michael, Sword of the Highest Gate, is now canonized as one of the four playable god-Titans of Empyrean. The Titan is the source-realm divinity behind the mythology rather than a generic champion: heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon; confident, sovereign, readable in combat, loyal to the unchanged Empyrean canon.",
+    "lore": "Michael, Sword of the Highest Gate, is now canonized as one of the four playable deities of Empyrean. The deity is the source-realm divinity behind the mythology rather than a generic champion: heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon; confident, sovereign, readable in combat, loyal to the unchanged Empyrean canon.",
     "visualDescription": "Michael manifests as heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon from Empyrean: stern beautiful masculine angelic face, strong jaw, luminous eyes, no softness, commander calm; tall athletic masculine warrior build, broad shoulders, narrow waist, immaculate upright stance; signature silhouette: two vast wings, sword vertical, shield halo, commander-triangle outline. Weapon: flaming judgement sword and choir shield. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-046",
@@ -4338,7 +4418,7 @@
         ],
         "effect": "Deal Empyrean source-culture damage at range 2; generate Momentum and a small Choir Resonance gain when used from edict-sung holy geometry or against the marked target. The hit reads visually as white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Choir Seal Technique — Bastion",
@@ -4370,7 +4450,7 @@
         ],
         "effect": "Spend stored Choir Resonance to impose a two-round rule from Radiant Hierarchies: protects a control zone, redirects enemy intent, and turns correct positioning into mitigation. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Seraphic Choir Unbound",
@@ -4403,7 +4483,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Legendary",
         "primaryStat": "armor",
-        "effect": "Improves survivability and makes the Titan read as Radiant Hierarchies source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Radiant Hierarchies source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -4436,7 +4516,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "hold objectives and survive pressure",
       "budgetTarget": 112,
       "computedCombatPower": 236,
@@ -4491,7 +4571,11 @@
       "roleSilhouette": "two vast wings, sword vertical, shield halo, commander-triangle outline",
       "auditStatus": "PASS"
     },
-    "title": "Sword of the Highest Gate"
+    "title": "Sword of the Highest Gate",
+    "playableClassification": "God",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-048",
@@ -4529,8 +4613,8 @@
     "passives": [
       "Choir Edict: Aurelia gains Choir Resonance when controller play rewrites movement lanes, delays elite intent, and imprints safe/unsafe tiles on ordered sigil zones. At 3 stacks, the next Technique or Reaction adds a radiant hierarchy judgment rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Radiant Hierarchies."
     ],
-    "lore": "Sophia, Wisdom of the Living Choir, is now canonized as one of the four playable god-Titans of Empyrean. The Titan is the source-realm divinity behind the mythology rather than a generic champion: feminine divine wisdom, living ordinance, holy geometry, terrain law made compassionate. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses feminine divine wisdom, living ordinance, holy geometry, terrain law made compassionate; confident, sovereign, readable in combat, loyal to the unchanged Empyrean canon.",
+    "lore": "Sophia, Wisdom of the Living Choir, is now canonized as one of the four playable deities of Empyrean. The deity is the source-realm divinity behind the mythology rather than a generic champion: feminine divine wisdom, living ordinance, holy geometry, terrain law made compassionate. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses feminine divine wisdom, living ordinance, holy geometry, terrain law made compassionate; confident, sovereign, readable in combat, loyal to the unchanged Empyrean canon.",
     "visualDescription": "Sophia manifests as feminine divine wisdom, living ordinance, holy geometry, terrain law made compassionate from Empyrean: beautiful serene feminine wisdom face, wide luminous eyes, soft lips, high brow, ancient calm; graceful feminine oracle frame, long neck, narrow waist, flowing hips, still commanding posture; signature silhouette: scroll ribbons, many-eye halo veil, compass staff, cathedral-curve silhouette. Weapon: glass compass staff and living scroll ribbons. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-048",
@@ -4552,7 +4636,7 @@
         ],
         "effect": "Deal Empyrean source-culture damage at range 4; generate Momentum and a small Choir Resonance gain when used from edict-sung holy geometry or against the marked target. The hit reads visually as white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Choir Seal Technique — Field Rewrite",
@@ -4584,7 +4668,7 @@
         ],
         "effect": "Spend stored Choir Resonance to impose a two-round rule from Radiant Hierarchies: moves enemies, rewrites terrain pressure, and delays high-threat actions through source-culture law. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Seraphic Choir Unbound",
@@ -4617,7 +4701,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Epic",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Radiant Hierarchies source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Radiant Hierarchies source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -4650,7 +4734,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "reshape terrain and deny enemy plans",
       "budgetTarget": 109,
       "computedCombatPower": 224,
@@ -4705,7 +4789,11 @@
       "roleSilhouette": "scroll ribbons, many-eye halo veil, compass staff, cathedral-curve silhouette",
       "auditStatus": "PASS"
     },
-    "title": "Wisdom of the Living Choir"
+    "title": "Wisdom of the Living Choir",
+    "playableClassification": "Goddess",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-050",
@@ -4743,8 +4831,8 @@
     "passives": [
       "Choir Edict: Elyndra gains Choir Resonance when disruptor play places a false timing window that punishes enemy overcommitment on ordered sigil zones. At 3 stacks, the next Technique or Reaction adds a radiant hierarchy judgment rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Radiant Hierarchies."
     ],
-    "lore": "Shekinah, Radiant Presence, is now canonized as one of the four playable god-Titans of Empyrean. The Titan is the source-realm divinity behind the mythology rather than a generic champion: feminine indwelling divine presence, holy fire, threshold awe, mercy that burns false order. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses feminine indwelling divine presence, holy fire, threshold awe, mercy that burns false order; confident, sovereign, readable in combat, loyal to the unchanged Empyrean canon.",
+    "lore": "Shekinah, Radiant Presence, is now canonized as one of the four playable deities of Empyrean. The deity is the source-realm divinity behind the mythology rather than a generic champion: feminine indwelling divine presence, holy fire, threshold awe, mercy that burns false order. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses feminine indwelling divine presence, holy fire, threshold awe, mercy that burns false order; confident, sovereign, readable in combat, loyal to the unchanged Empyrean canon.",
     "visualDescription": "Shekinah manifests as feminine indwelling divine presence, holy fire, threshold awe, mercy that burns false order from Empyrean: beautiful awe-filled feminine face, glowing eyes, delicate nose, compassionate severe mouth; elegant feminine flame-bearing frame, soft curves under glass armor, floating threshold posture; signature silhouette: veil-flame halo, censer chain arc, layered glass robes, luminous feminine outline. Weapon: radiance censer-chain and veil of living flame. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-050",
@@ -4766,7 +4854,7 @@
         ],
         "effect": "Deal Empyrean source-culture damage at range 3; generate Momentum and a small Choir Resonance gain when used from edict-sung holy geometry or against the marked target. The hit reads visually as white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Choir Seal Technique — Interdiction",
@@ -4798,7 +4886,7 @@
         ],
         "effect": "Spend stored Choir Resonance to impose a two-round rule from Radiant Hierarchies: cuts enemy resources, scrambles intent, and creates a counter-window instead of raw lockout. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Seraphic Choir Unbound",
@@ -4831,7 +4919,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Epic",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Radiant Hierarchies source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Radiant Hierarchies source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -4864,7 +4952,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "interrupt resources, casts, reactions, and elite mechanics",
       "budgetTarget": 109,
       "computedCombatPower": 229,
@@ -4919,7 +5007,11 @@
       "roleSilhouette": "veil-flame halo, censer chain arc, layered glass robes, luminous feminine outline",
       "auditStatus": "PASS"
     },
-    "title": "Radiant Presence"
+    "title": "Radiant Presence",
+    "playableClassification": "Goddess",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-053",
@@ -4957,8 +5049,8 @@
     "passives": [
       "Choir Edict: Axiom gains Choir Resonance when guardian play intercepts a declared threat and stores the impact as later utility on ordered sigil zones. At 3 stacks, the next Technique or Reaction adds a radiant hierarchy judgment rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Radiant Hierarchies."
     ],
-    "lore": "Gabriel, Herald of the Final Bell, is now canonized as one of the four playable god-Titans of Empyrean. The Titan is the source-realm divinity behind the mythology rather than a generic champion: divine messenger, warning trumpet, command intervention, guardian of announced fate. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses divine messenger, warning trumpet, command intervention, guardian of announced fate; confident, sovereign, readable in combat, loyal to the unchanged Empyrean canon.",
+    "lore": "Gabriel, Herald of the Final Bell, is now canonized as one of the four playable deities of Empyrean. The deity is the source-realm divinity behind the mythology rather than a generic champion: divine messenger, warning trumpet, command intervention, guardian of announced fate. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses divine messenger, warning trumpet, command intervention, guardian of announced fate; confident, sovereign, readable in combat, loyal to the unchanged Empyrean canon.",
     "visualDescription": "Gabriel manifests as divine messenger, warning trumpet, command intervention, guardian of announced fate from Empyrean: noble masculine herald face, clear eyes, straight nose, composed mouth, youthful authority; slender athletic masculine messenger build, long limbs, lifted chest, fast intercept stance; signature silhouette: trumpet spear, folded wings, messenger tabard, bell halo. Weapon: long silver trumpet-spear and bell-metal buckler. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-053",
@@ -4980,7 +5072,7 @@
         ],
         "effect": "Deal Empyrean source-culture damage at range 1; generate Momentum and a small Choir Resonance gain when used from edict-sung holy geometry or against the marked target. The hit reads visually as white-gold radiance, many-eye halos, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Choir Seal Technique — Punishing Guard",
@@ -5012,7 +5104,7 @@
         ],
         "effect": "Spend stored Choir Resonance to impose a two-round rule from Radiant Hierarchies: intercepts lethal paths, counters oathbreakers/trespassers, and turns defense into threat. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Seraphic Choir Unbound",
@@ -5045,7 +5137,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Rare",
         "primaryStat": "armor",
-        "effect": "Improves survivability and makes the Titan read as Radiant Hierarchies source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Radiant Hierarchies source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -5078,7 +5170,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "counter bosses and protect survival windows",
       "budgetTarget": 105,
       "computedCombatPower": 214,
@@ -5133,7 +5225,11 @@
       "roleSilhouette": "trumpet spear, folded wings, messenger tabard, bell halo",
       "auditStatus": "PASS"
     },
-    "title": "Herald of the Final Bell"
+    "title": "Herald of the Final Bell",
+    "playableClassification": "God",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-055",
@@ -5171,8 +5267,8 @@
     "passives": [
       "Blood Contract: Mordrath gains Debtfire when defender play anchors a control zone and converts enemy commitment into mitigation on contract-scorched court ground. At 3 stacks, the next Technique or Reaction adds a debt, clause, and dominion law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Infernal Dominion."
     ],
-    "lore": "Lucifer, Morningstar Thronebreaker, is now canonized as one of the four playable god-Titans of Infernal Dominion. The Titan is the source-realm divinity behind the mythology rather than a generic champion: fallen morningstar prince, infernal sovereignty, beautiful rebellion and throne defense. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses fallen morningstar prince, infernal sovereignty, beautiful rebellion and throne defense; confident, sovereign, readable in combat, loyal to the unchanged Infernal Dominion canon.",
+    "lore": "Lucifer, Morningstar Thronebreaker, is now canonized as one of the four playable deities of Infernal Dominion. The deity is the source-realm divinity behind the mythology rather than a generic champion: fallen morningstar prince, infernal sovereignty, beautiful rebellion and throne defense. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses fallen morningstar prince, infernal sovereignty, beautiful rebellion and throne defense; confident, sovereign, readable in combat, loyal to the unchanged Infernal Dominion canon.",
     "visualDescription": "Lucifer manifests as fallen morningstar prince, infernal sovereignty, beautiful rebellion and throne defense from Infernal Dominion: beautiful aristocratic masculine devil face, sharp cheekbones, pale fire eyes, elegant cruel mouth; tall lithe masculine prince build, broad tailored shoulders, narrow waist, predatory upright grace; signature silhouette: high horns, torn royal wings, star-sword, black crown outline. Weapon: black star longsword and obsidian contract shield. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-055",
@@ -5194,7 +5290,7 @@
         ],
         "effect": "Deal Infernal Dominion source-culture damage at range 2; generate Momentum and a small Contract Debt gain when used from black-iron contract ground or against the marked target. The hit reads visually as black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchy, ash velvet, hellfire clauses.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Blood-Wax Contract Technique — Bastion",
@@ -5226,7 +5322,7 @@
         ],
         "effect": "Spend stored Contract Debt to impose a two-round rule from Infernal Dominion: protects a control zone, redirects enemy intent, and turns correct positioning into mitigation. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Hell-Crown Dominion Unbound",
@@ -5259,7 +5355,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Legendary",
         "primaryStat": "armor",
-        "effect": "Improves survivability and makes the Titan read as Infernal Dominion source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Infernal Dominion source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -5292,7 +5388,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "hold objectives and survive pressure",
       "budgetTarget": 112,
       "computedCombatPower": 238,
@@ -5347,7 +5443,11 @@
       "roleSilhouette": "high horns, torn royal wings, star-sword, black crown outline",
       "auditStatus": "PASS"
     },
-    "title": "Morningstar Thronebreaker"
+    "title": "Morningstar Thronebreaker",
+    "playableClassification": "God",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-057",
@@ -5385,8 +5485,8 @@
     "passives": [
       "Blood Contract: Nyxara gains Debtfire when controller play rewrites movement lanes, delays elite intent, and imprints safe/unsafe tiles on contract-scorched court ground. At 3 stacks, the next Technique or Reaction adds a debt, clause, and dominion law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Infernal Dominion."
     ],
-    "lore": "Lilith, Night Sovereign, is now canonized as one of the four playable god-Titans of Infernal Dominion. The Titan is the source-realm divinity behind the mythology rather than a generic champion: night demon queen, sovereign refusal, seduction, storm of forbidden names and boundary law. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses night demon queen, sovereign refusal, seduction, storm of forbidden names and boundary law; confident, sovereign, readable in combat, loyal to the unchanged Infernal Dominion canon.",
+    "lore": "Lilith, Night Sovereign, is now canonized as one of the four playable deities of Infernal Dominion. The deity is the source-realm divinity behind the mythology rather than a generic champion: night demon queen, sovereign refusal, seduction, storm of forbidden names and boundary law. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses night demon queen, sovereign refusal, seduction, storm of forbidden names and boundary law; confident, sovereign, readable in combat, loyal to the unchanged Infernal Dominion canon.",
     "visualDescription": "Lilith manifests as night demon queen, sovereign refusal, seduction, storm of forbidden names and boundary law from Infernal Dominion: alluring dangerous feminine queen face, dark almond eyes, full lips, arched brows, hypnotic confidence; sensual powerful feminine frame, narrow waist, pronounced hips, elegant predatory posture; signature silhouette: long horn crown, bat-silk hair mantle, whip crescent, queenly night outline. Weapon: thorned moon whip and obsidian mirror dagger. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-057",
@@ -5408,7 +5508,7 @@
         ],
         "effect": "Deal Infernal Dominion source-culture damage at range 4; generate Momentum and a small Contract Debt gain when used from black-iron contract ground or against the marked target. The hit reads visually as black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchy, ash velvet, hellfire clauses.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Blood-Wax Contract Technique — Field Rewrite",
@@ -5440,7 +5540,7 @@
         ],
         "effect": "Spend stored Contract Debt to impose a two-round rule from Infernal Dominion: moves enemies, rewrites terrain pressure, and delays high-threat actions through source-culture law. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Hell-Crown Dominion Unbound",
@@ -5473,7 +5573,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Epic",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Infernal Dominion source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Infernal Dominion source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -5506,7 +5606,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "reshape terrain and deny enemy plans",
       "budgetTarget": 109,
       "computedCombatPower": 226,
@@ -5561,7 +5661,11 @@
       "roleSilhouette": "long horn crown, bat-silk hair mantle, whip crescent, queenly night outline",
       "auditStatus": "PASS"
     },
-    "title": "Night Sovereign"
+    "title": "Night Sovereign",
+    "playableClassification": "Goddess",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-058",
@@ -5599,8 +5703,8 @@
     "passives": [
       "Blood Contract: Azrakar gains Debtfire when breaker play marks armor, guard, or ritual structure for staged rupture on contract-scorched court ground. At 3 stacks, the next Technique or Reaction adds a debt, clause, and dominion law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Infernal Dominion."
     ],
-    "lore": "Asmodeus, Prince of Burning Desire, is now canonized as one of the four playable god-Titans of Infernal Dominion. The Titan is the source-realm divinity behind the mythology rather than a generic champion: infernal prince of wrath, desire, court violence, and armor-breaking temptation. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses infernal prince of wrath, desire, court violence, and armor-breaking temptation; confident, sovereign, readable in combat, loyal to the unchanged Infernal Dominion canon.",
+    "lore": "Asmodeus, Prince of Burning Desire, is now canonized as one of the four playable deities of Infernal Dominion. The deity is the source-realm divinity behind the mythology rather than a generic champion: infernal prince of wrath, desire, court violence, and armor-breaking temptation. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses infernal prince of wrath, desire, court violence, and armor-breaking temptation; confident, sovereign, readable in combat, loyal to the unchanged Infernal Dominion canon.",
     "visualDescription": "Asmodeus manifests as infernal prince of wrath, desire, court violence, and armor-breaking temptation from Infernal Dominion: handsome brutal masculine demon-prince face, heavy jaw, smoldering eyes, scarred smile; muscular masculine duelist-tyrant build, thick shoulders, tapered waist, aggressive court stance; signature silhouette: curved horns, hooked glaive, half-cloak of ash velvet, forward tyrant profile. Weapon: barbed execution glaive and ember contract hooks. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-058",
@@ -5622,7 +5726,7 @@
         ],
         "effect": "Deal Infernal Dominion source-culture damage at range 2; generate Momentum and a small Contract Debt gain when used from black-iron contract ground or against the marked target. The hit reads visually as black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchy, ash velvet, hellfire clauses.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Blood-Wax Contract Technique — Rupture",
@@ -5654,7 +5758,7 @@
         ],
         "effect": "Spend stored Contract Debt to impose a two-round rule from Infernal Dominion: breaks guard, exposes vulnerability, and punishes armor or shield reliance. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Hell-Crown Dominion Unbound",
@@ -5687,7 +5791,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Rare",
         "primaryStat": "armor",
-        "effect": "Improves survivability and makes the Titan read as Infernal Dominion source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Infernal Dominion source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -5720,7 +5824,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "break armor, shields, and boss windows",
       "budgetTarget": 106,
       "computedCombatPower": 214,
@@ -5730,8 +5834,8 @@
         "bad terrain matchups",
         "mistimed reactions"
       ],
-      "uniqueMechanic": "Azrakar's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Titan exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
-      "counterplayRule": "mistimed burst leaves the Titan exposed during recovery"
+      "uniqueMechanic": "Azrakar's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the deity exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "counterplayRule": "mistimed burst leaves the deity exposed during recovery"
     },
     "mythicSource": "Asmodeus — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
     "visualTraits": {
@@ -5775,7 +5879,11 @@
       "roleSilhouette": "curved horns, hooked glaive, half-cloak of ash velvet, forward tyrant profile",
       "auditStatus": "PASS"
     },
-    "title": "Prince of Burning Desire"
+    "title": "Prince of Burning Desire",
+    "playableClassification": "God",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   },
   {
     "id": "TG-TITAN-060",
@@ -5813,8 +5921,8 @@
     "passives": [
       "Blood Contract: Malvera gains Debtfire when sustain play banks survival value through terrain mastery and converts it into recovery on contract-scorched court ground. At 3 stacks, the next Technique or Reaction adds a debt, clause, and dominion law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Infernal Dominion."
     ],
-    "lore": "Naamah, Velvet Ash Enchantress, is now canonized as one of the four playable god-Titans of Infernal Dominion. The Titan is the source-realm divinity behind the mythology rather than a generic champion: infernal enchantress, forbidden song, ash-velvet bargain healing, pleasure turned binding contract. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-    "personality": "A playable mythology god whose behavior expresses infernal enchantress, forbidden song, ash-velvet bargain healing, pleasure turned binding contract; confident, sovereign, readable in combat, loyal to the unchanged Infernal Dominion canon.",
+    "lore": "Naamah, Velvet Ash Enchantress, is now canonized as one of the four playable deities of Infernal Dominion. The deity is the source-realm divinity behind the mythology rather than a generic champion: infernal enchantress, forbidden song, ash-velvet bargain healing, pleasure turned binding contract. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+    "personality": "A playable mythology deity whose behavior expresses infernal enchantress, forbidden song, ash-velvet bargain healing, pleasure turned binding contract; confident, sovereign, readable in combat, loyal to the unchanged Infernal Dominion canon.",
     "visualDescription": "Naamah manifests as infernal enchantress, forbidden song, ash-velvet bargain healing, pleasure turned binding contract from Infernal Dominion: beautiful seductive feminine face, soft eyes hiding knives, full mouth, delicate chin, courtly danger; curvy graceful feminine enchantress build, elegant shoulders, defined waist and hips, languid commanding posture; signature silhouette: harp-chain arc, velvet train, small horns, fan-and-seal court outline. Weapon: song-chain harp blade and blood-wax seal fan. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
     "artPromptId": "TG-PROMPT-060",
@@ -5836,7 +5944,7 @@
         ],
         "effect": "Deal Infernal Dominion source-culture damage at range 2; generate Momentum and a small Contract Debt gain when used from black-iron contract ground or against the marked target. The hit reads visually as black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchy, ash velvet, hellfire clauses.",
         "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+        "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the deity into low-value targets."
       },
       {
         "name": "Blood-Wax Contract Technique — Covenant",
@@ -5868,7 +5976,7 @@
         ],
         "effect": "Spend stored Contract Debt to impose a two-round rule from Infernal Dominion: restores through faction ritual, cleanses pressure, and rewards holding sacred ground without becoming a passive healer. Enemies receive a readable counter-window before the strongest effect lands.",
         "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+        "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the deity, or exploit the exposed recovery turn."
       },
       {
         "name": "Divine Ascension — Hell-Crown Dominion Unbound",
@@ -5901,7 +6009,7 @@
         "slot": "Armor Body",
         "rarityFloor": "Rare",
         "primaryStat": "resistance",
-        "effect": "Improves survivability and makes the Titan read as Infernal Dominion source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+        "effect": "Improves survivability and makes the deity read as Infernal Dominion source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
         "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
       },
       {
@@ -5934,7 +6042,7 @@
       "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
     },
     "balanceNotes": {
-      "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+      "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
       "primaryRole": "win attrition and cleanse hazard pressure",
       "budgetTarget": 104,
       "computedCombatPower": 205,
@@ -5989,6 +6097,10 @@
       "roleSilhouette": "harp-chain arc, velvet train, small horns, fan-and-seal court outline",
       "auditStatus": "PASS"
     },
-    "title": "Velvet Ash Enchantress"
+    "title": "Velvet Ash Enchantress",
+    "playableClassification": "Goddess",
+    "species": "Deity",
+    "characterType": "Playable Deity",
+    "rosterClass": "Deity Roster"
   }
 ]

@@ -24,7 +24,7 @@ Mesha returns here not as tutorial voice but as a witness whose certainty is bei
 
 **Mesha:** "The sun has not weakened. That is what frightens me. The light is whole, and still the shadow remains."
 
-**Aten Ra Titan Voice:** "Order is not comfort. Order is the weight that keeps power from devouring its bearer."
+**Aten Ra deity Voice:** "Order is not comfort. Order is the weight that keeps power from devouring its bearer."
 
 **Gate Silhouette:** "Measure me, scribe. Lose another name."
 

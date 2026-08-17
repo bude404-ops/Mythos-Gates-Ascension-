@@ -100,9 +100,9 @@ Battlefields must remain readable in mobile tactical view and must not become cl
 
 
 ## Titan visual identity law
-Titans are not robots, mechs, androids, cyborgs, powered armor suits, or normal humans in ornate armor. Every Titan must read as a living extradimensional power being whose body is fused with Realm matter, divine law, mythic anatomy, and faction symbolism. Hard surfaces are allowed only when they feel grown, forged by myth, carved from living stone, sacred metal, infernal bone, storm-iron hide, or celestial law — never mechanical plating on a robot chassis.
+Titans are not robots, mechs, androids, cyborgs, powered armor suits, or normal humans in ornate armor. Every deity must read as a living extradimensional power being whose body is fused with Realm matter, divine law, mythic anatomy, and faction symbolism. Hard surfaces are allowed only when they feel grown, forged by myth, carved from living stone, sacred metal, infernal bone, storm-iron hide, or celestial law — never mechanical plating on a robot chassis.
 
-Every Titan prompt must pull from:
+Every deity prompt must pull from:
 
 - Titan lore and personality.
 - Faction culture and visual identity.
@@ -111,7 +111,7 @@ Every Titan prompt must pull from:
 - Ability names and equipment.
 - Master Scale Reference.
 
-Big Bot must reject any Titan that reads first as machine, superhero, normal humanoid, or generic monster before it reads as a faction-specific extradimensional Titan. Big Bot must also reject any Titan that reads as a blocky building, tower, fortress, stacked geometric shape, terrain chunk pile, or abstract architecture creature instead of a living character.
+Big Bot must reject any deity that reads first as machine, superhero, normal humanoid, or generic monster before it reads as a faction-specific extradimensional deity. Big Bot must also reject any deity that reads as a blocky building, tower, fortress, stacked geometric shape, terrain chunk pile, or abstract architecture creature instead of a living character.
 
 ## Character, Titan, creature, enemy, and boss model requirements
 Every living model must include or clearly support:
@@ -252,7 +252,7 @@ The first proof target remains:
 This first battlefield is the test of the complete pipeline. Once it passes, the same contract applies to every following battlefield and model.
 
 ## Faction Visual Bible Requirement
-Before generating any faction-linked Titan, NPC, creature, battlefield, faction screen, or 3D asset, Big Bot must apply `data/faction-visual-bible.json` and `handoff/bigbot/FACTION_VISUAL_BIBLE.md`. The asset must show that faction through silhouette, armor construction, materials, texture, symbols, posture, and avoid-list compliance. Reject faction drift even if the image is otherwise high quality.
+Before generating any faction-linked Deity, NPC, creature, battlefield, faction screen, or 3D asset, Big Bot must apply `data/faction-visual-bible.json` and `handoff/bigbot/FACTION_VISUAL_BIBLE.md`. The asset must show that faction through silhouette, armor construction, materials, texture, symbols, posture, and avoid-list compliance. Reject faction drift even if the image is otherwise high quality.
 
 ### Aten Ra Source-Culture Rule
 For Aten Ra assets, do not design "Egyptian-inspired costumes." Treat the Solar Dominion of Khepra as the older source culture that human Egyptian religion, crowns, pylons, solar discs, scarabs, ankhs, funerary art, and animal-divinity later copied imperfectly. Each Aten Ra asset must show the specific myth function behind its design: Ra/Aten solar authority, Ma’at balance, Khepri renewal, Sutekh desert defense, Iset restoration, Maahes lion protection, or Amunet hidden power.

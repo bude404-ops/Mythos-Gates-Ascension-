@@ -34,8 +34,8 @@
   "passives": [
     "Spirit Seal: Tsukiro gains Sealfire when battery play stores excess resource and refunds Momentum after precise setup on shrine threshold ground. At 3 stacks, the next Technique or Reaction adds a purification and boundary law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Sacred Kingdoms."
   ],
-  "lore": "Tsukuyomi, Moon Order Lord, is now canonized as one of the four playable god-Titans of Kami. The Titan is the source-realm divinity behind the mythology rather than a generic champion: moon god of cold order, ritual timing, night measure, stored lunar force. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-  "personality": "A playable mythology god whose behavior expresses moon god of cold order, ritual timing, night measure, stored lunar force; confident, sovereign, readable in combat, loyal to the unchanged Kami canon.",
+  "lore": "Tsukuyomi, Moon Order Lord, is now canonized as one of the four playable deities of Kami. The deity is the source-realm divinity behind the mythology rather than a generic champion: moon god of cold order, ritual timing, night measure, stored lunar force. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology deity whose behavior expresses moon god of cold order, ritual timing, night measure, stored lunar force; confident, sovereign, readable in combat, loyal to the unchanged Kami canon.",
   "visualDescription": "Tsukuyomi manifests as moon god of cold order, ritual timing, night measure, stored lunar force from Kami: pale refined masculine court face, narrow eyes, immaculate jaw, restrained severe mouth; slender graceful masculine noble build, long limbs, straight posture, ritual precision; signature silhouette: crescent headpiece, long court sleeves, naginata curve, vertical moon-priest outline. Weapon: crescent naginata and moon-calendar talismans. Maintain the approved Titan Gates premium stylized tactical RPG aesthetic.",
   "artStatus": "READY_FOR_GENERATION",
   "artPromptId": "TG-PROMPT-029",
@@ -155,7 +155,7 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
-    "intendedDifficulty": "Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
     "primaryRole": "generate Momentum and Divinity under pressure",
     "budgetTarget": 109,
     "computedCombatPower": 232,
@@ -198,7 +198,21 @@
     "faceLock": "pale refined masculine court face, narrow eyes, immaculate jaw, restrained severe mouth",
     "bodyLock": "slender graceful masculine noble build, long limbs, straight posture, ritual precision",
     "silhouetteLock": "crescent headpiece, long court sleeves, naginata curve, vertical moon-priest outline",
-    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved."
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved.",
+    "mythology": "Tsukuyomi — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+    "realm": "The Sacred Kingdoms",
+    "civilization": "Kami mythological extradimensional civilization",
+    "cultureRule": "God identity must come from mythology, realm, civilization, sacred materials, beauty standards, and ritual practice; never color swap alone.",
+    "beautyStandard": "Unmistakably masculine divine presence with faction-specific strength, nobility, posture, and varied anatomy.",
+    "realmAnatomy": "Realm-shaped mythological divinity, supernatural but not sci-fi alien.",
+    "identityFace": "pale refined masculine court face, narrow eyes, immaculate jaw, restrained severe mouth",
+    "identityBody": "slender graceful masculine noble build, long limbs, straight posture, ritual precision",
+    "roleSilhouette": "crescent headpiece, long court sleeves, naginata curve, vertical moon-priest outline",
+    "auditStatus": "PASS"
   },
-  "title": "Moon Order Lord"
+  "title": "Moon Order Lord",
+  "playableClassification": "God",
+  "species": "Deity",
+  "characterType": "Playable Deity",
+  "rosterClass": "Deity Roster"
 }

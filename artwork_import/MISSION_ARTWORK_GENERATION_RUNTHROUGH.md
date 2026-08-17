@@ -83,7 +83,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_003
-- Thumbnail: First Light Under Dead Stone thumbnail: three Titan silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
+- Thumbnail: First Light Under Dead Stone thumbnail: three deity silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -92,7 +92,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_004
-- Thumbnail: River Step Battle line thumbnail: three Titan silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
+- Thumbnail: River Step Battle line thumbnail: three deity silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -101,7 +101,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_005
-- Thumbnail: The Obelisk That Would Not Cast Shadow thumbnail: three Titan silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
+- Thumbnail: The Obelisk That Would Not Cast Shadow thumbnail: three deity silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -110,7 +110,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_001, ENEMY_003
-- Thumbnail: Jackal at the Broken Threshold thumbnail: three Titan silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
+- Thumbnail: Jackal at the Broken Threshold thumbnail: three deity silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -119,7 +119,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_004
-- Thumbnail: Elite: First Light Under Dead Stone thumbnail: three Titan silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
+- Thumbnail: Elite: First Light Under Dead Stone thumbnail: three deity silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -128,7 +128,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_003, ENEMY_002, ENEMY_005
-- Thumbnail: Elite: River Step Battle line thumbnail: three Titan silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
+- Thumbnail: Elite: River Step Battle line thumbnail: three deity silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -137,7 +137,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_004, ENEMY_003, ENEMY_001
-- Thumbnail: Elite: The Obelisk That Would Not Cast Shadow thumbnail: three Titan silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
+- Thumbnail: Elite: The Obelisk That Would Not Cast Shadow thumbnail: three deity silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -146,7 +146,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_003
-- Thumbnail: Elite: Jackal at the Broken Threshold thumbnail: three Titan silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
+- Thumbnail: Elite: Jackal at the Broken Threshold thumbnail: three deity silhouettes advancing through sacred temple approach with shallow river-light lanes and low sandstone cover.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -155,7 +155,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_002
-- Thumbnail: Road of Measured Fire thumbnail: three Titan silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
+- Thumbnail: Road of Measured Fire thumbnail: three deity silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -164,7 +164,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_003
-- Thumbnail: Sun-Lane Crossing thumbnail: three Titan silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
+- Thumbnail: Sun-Lane Crossing thumbnail: three deity silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -173,7 +173,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_004
-- Thumbnail: Three Anchors in the Floodplain thumbnail: three Titan silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
+- Thumbnail: Three Anchors in the Floodplain thumbnail: three deity silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -182,7 +182,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_005, ENEMY_002
-- Thumbnail: The Crocodile Crown thumbnail: three Titan silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
+- Thumbnail: The Crocodile Crown thumbnail: three deity silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -191,7 +191,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_003
-- Thumbnail: Elite: Road of Measured Fire thumbnail: three Titan silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
+- Thumbnail: Elite: Road of Measured Fire thumbnail: three deity silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -200,7 +200,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_004
-- Thumbnail: Elite: Sun-Lane Crossing thumbnail: three Titan silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
+- Thumbnail: Elite: Sun-Lane Crossing thumbnail: three deity silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -209,7 +209,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_003, ENEMY_002, ENEMY_005
-- Thumbnail: Elite: Three Anchors in the Floodplain thumbnail: three Titan silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
+- Thumbnail: Elite: Three Anchors in the Floodplain thumbnail: three deity silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -218,7 +218,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_004, ENEMY_003, ENEMY_002
-- Thumbnail: Elite: The Crocodile Crown thumbnail: three Titan silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
+- Thumbnail: Elite: The Crocodile Crown thumbnail: three deity silhouettes advancing through open desert road, raised obelisks, and timed sunflare tiles.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -227,7 +227,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_001, ENEMY_002
-- Thumbnail: Law Beneath the River Mirror thumbnail: three Titan silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
+- Thumbnail: Law Beneath the River Mirror thumbnail: three deity silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -236,7 +236,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_002, ENEMY_003
-- Thumbnail: Sandstorm of Witnesses thumbnail: three Titan silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
+- Thumbnail: Sandstorm of Witnesses thumbnail: three deity silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -245,7 +245,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_003, ENEMY_004
-- Thumbnail: The Pylon Choir Falls Silent thumbnail: three Titan silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
+- Thumbnail: The Pylon Choir Falls Silent thumbnail: three deity silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -254,7 +254,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_004, ENEMY_005, ENEMY_001
-- Thumbnail: The Eclipse Scribe thumbnail: three Titan silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
+- Thumbnail: The Eclipse Scribe thumbnail: three deity silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -263,7 +263,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_002
-- Thumbnail: Elite: Law Beneath the River Mirror thumbnail: three Titan silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
+- Thumbnail: Elite: Law Beneath the River Mirror thumbnail: three deity silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -272,7 +272,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_003
-- Thumbnail: Elite: Sandstorm of Witnesses thumbnail: three Titan silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
+- Thumbnail: Elite: Sandstorm of Witnesses thumbnail: three deity silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -281,7 +281,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_004
-- Thumbnail: Elite: The Pylon Choir Falls Silent thumbnail: three Titan silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
+- Thumbnail: Elite: The Pylon Choir Falls Silent thumbnail: three deity silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -290,79 +290,79 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_004, ENEMY_003, ENEMY_002, ENEMY_001
-- Thumbnail: Elite: The Eclipse Scribe thumbnail: three Titan silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
+- Thumbnail: Elite: The Eclipse Scribe thumbnail: three deity silhouettes advancing through floodplain mirrors, collapsing bridges, and corrupted river channels.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
 ### 025. TG-F01-C04-M13 — Twin Gates of Overcharge
-- Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Titans
+- Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_005, ENEMY_001
-- Thumbnail: Twin Gates of Overcharge thumbnail: three Titan silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
+- Thumbnail: Twin Gates of Overcharge thumbnail: three deity silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
 ### 026. TG-F01-C04-M14 — The Black Sun Caravan
-- Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Titans
+- Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_001, ENEMY_002
-- Thumbnail: The Black Sun Caravan thumbnail: three Titan silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
+- Thumbnail: The Black Sun Caravan thumbnail: three deity silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
 ### 027. TG-F01-C04-M15 — Judgment Across Three Platforms
-- Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Titans
+- Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_002, ENEMY_003
-- Thumbnail: Judgment Across Three Platforms thumbnail: three Titan silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
+- Thumbnail: Judgment Across Three Platforms thumbnail: three deity silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 028. TG-F01-C04-M16 — Titan Silhouette of the False Dawn
-- Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Titans
+### 028. TG-F01-C04-M16 — Deity Silhouette of the False Dawn
+- Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_003, ENEMY_004, ENEMY_005
-- Thumbnail: Titan Silhouette of the False Dawn thumbnail: three Titan silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
+- Thumbnail: Deity Silhouette of the False Dawn thumbnail: three deity silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
 ### 029. TG-F01-E-C04-M13 — Elite: Twin Gates of Overcharge
-- Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Titans
+- Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_003, ENEMY_001
-- Thumbnail: Elite: Twin Gates of Overcharge thumbnail: three Titan silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
+- Thumbnail: Elite: Twin Gates of Overcharge thumbnail: three deity silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
 ### 030. TG-F01-E-C04-M14 — Elite: The Black Sun Caravan
-- Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Titans
+- Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_002
-- Thumbnail: Elite: The Black Sun Caravan thumbnail: three Titan silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
+- Thumbnail: Elite: The Black Sun Caravan thumbnail: three deity silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
 ### 031. TG-F01-E-C04-M15 — Elite: Judgment Across Three Platforms
-- Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Titans
+- Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_003
-- Thumbnail: Elite: Judgment Across Three Platforms thumbnail: three Titan silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
+- Thumbnail: Elite: Judgment Across Three Platforms thumbnail: three deity silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 032. TG-F01-E-C04-M16 — Elite: Titan Silhouette of the False Dawn
-- Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Titans
+### 032. TG-F01-E-C04-M16 — Elite: Deity Silhouette of the False Dawn
+- Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_005
-- Thumbnail: Elite: Titan Silhouette of the False Dawn thumbnail: three Titan silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
+- Thumbnail: Elite: Deity Silhouette of the False Dawn thumbnail: three deity silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -371,7 +371,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_004, ENEMY_005
-- Thumbnail: The Sun Throne Opens thumbnail: three Titan silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
+- Thumbnail: The Sun Throne Opens thumbnail: three deity silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -380,7 +380,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_005, ENEMY_001
-- Thumbnail: Noon Made Hostile thumbnail: three Titan silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
+- Thumbnail: Noon Made Hostile thumbnail: three deity silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -389,7 +389,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_001, ENEMY_002, ENEMY_003
-- Thumbnail: The Crown Before the Gate thumbnail: three Titan silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
+- Thumbnail: The Crown Before the Gate thumbnail: three deity silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -398,7 +398,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_002, ENEMY_003, ENEMY_004
-- Thumbnail: Ascension at the Watching Door thumbnail: three Titan silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
+- Thumbnail: Ascension at the Watching Door thumbnail: three deity silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -407,7 +407,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_004, ENEMY_003, ENEMY_002, ENEMY_005
-- Thumbnail: Elite: The Sun Throne Opens thumbnail: three Titan silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
+- Thumbnail: Elite: The Sun Throne Opens thumbnail: three deity silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -416,7 +416,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_008 — Titan Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_003, ENEMY_001
-- Thumbnail: Elite: Noon Made Hostile thumbnail: three Titan silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
+- Thumbnail: Elite: Noon Made Hostile thumbnail: three deity silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -425,7 +425,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_003
-- Thumbnail: Elite: The Crown Before the Gate thumbnail: three Titan silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
+- Thumbnail: Elite: The Crown Before the Gate thumbnail: three deity silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -434,7 +434,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_004
-- Thumbnail: Elite: Ascension at the Watching Door thumbnail: three Titan silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
+- Thumbnail: Elite: Ascension at the Watching Door thumbnail: three deity silhouettes advancing through sun throne ascent with boss gate, split lanes, and multi-phase eclipse zones.
 - Objective props: Solar seal, obelisk anchor, river-light marker, or Gate pressure node with clear mobile visibility.
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
@@ -443,7 +443,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004
-- Thumbnail: The First Oath Sparks thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: The First Oath Sparks thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -452,7 +452,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004
-- Thumbnail: Iron Rain Battle line thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: Iron Rain Battle line thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -461,7 +461,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004
-- Thumbnail: Bridge-Rib Breach thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: Bridge-Rib Breach thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -470,7 +470,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004, ENEMY_004
-- Thumbnail: Thunder Names the Brave thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: Thunder Names the Brave thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -479,7 +479,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004
-- Thumbnail: Elite: The First Oath Sparks thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: Elite: The First Oath Sparks thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -488,7 +488,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004
-- Thumbnail: Elite: Iron Rain Battle line thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: Elite: Iron Rain Battle line thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -497,7 +497,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004
-- Thumbnail: Elite: Bridge-Rib Breach thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: Elite: Bridge-Rib Breach thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -506,7 +506,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004, ENEMY_004
-- Thumbnail: Elite: Thunder Names the Brave thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: Elite: Thunder Names the Brave thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -515,7 +515,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001
-- Thumbnail: Banner in the Crosswind thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: Banner in the Crosswind thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -524,7 +524,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001
-- Thumbnail: Standard Socket Siege thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: Standard Socket Siege thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['Forgotten Standard Bearer banner silhouette']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -533,7 +533,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001
-- Thumbnail: Orders From No King thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: Orders From No King thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -542,7 +542,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Normal | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001, ENEMY_004
-- Thumbnail: The Forgotten Standard Falls thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: The Forgotten Standard Falls thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['Forgotten Standard Bearer banner silhouette']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -551,7 +551,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001
-- Thumbnail: Elite: Banner in the Crosswind thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: Elite: Banner in the Crosswind thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -560,7 +560,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001
-- Thumbnail: Elite: Standard Socket Siege thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: Elite: Standard Socket Siege thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['Forgotten Standard Bearer banner silhouette']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -569,7 +569,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001
-- Thumbnail: Elite: Orders From No King thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: Elite: Orders From No King thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
@@ -578,7 +578,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Lane: Elite | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001, ENEMY_004
-- Thumbnail: Elite: The Forgotten Standard Falls thumbnail: Asgardian Titan crossing storm bridge under oath pressure.
+- Thumbnail: Elite: The Forgotten Standard Falls thumbnail: Asgardian deity crossing storm bridge under oath pressure.
 - Objective props: ['Oath-stone interactables', 'Bridge anchor seals', 'Physically damaged safe lanes']
 - Boss requirements: ['Forgotten Standard Bearer banner silhouette']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles

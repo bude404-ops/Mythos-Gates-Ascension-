@@ -15,7 +15,7 @@ This campaign exists to establish four laws:
 
 A dead Gate begins breathing beneath broken threshold stone. Its first pulses do not open a road; they leak absence. Names vanish from tablets. Old battle marks become smooth. Survivors remember that someone stood beside them, but not who.
 
-Mesha Gate-Scribe arrives before the chosen Titan because the Aten Ra record-keepers still listen to abandoned solar pylons. She does not command Titans. She reads the damage and tells the Creator what the Gate is refusing to say.
+Mesha Gate-Scribe arrives before the chosen deity because the Aten Ra record-keepers still listen to abandoned solar pylons. She does not command Titans. She reads the damage and tells the Creator what the Gate is refusing to say.
 
 The campaign should feel like a ritual performed under pressure. The player is not saving a village for sentiment. The player is preventing the map of reality from forgetting where a Gate once led.
 

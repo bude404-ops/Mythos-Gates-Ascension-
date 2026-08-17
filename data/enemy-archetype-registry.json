@@ -35,15 +35,15 @@
       ],
       "aiProfile": {
         "decisionLoop": [
-          "seek isolated Titan",
+          "seek isolated deity",
           "prefer flank lane",
           "force reaction spend",
           "chain execution bait"
         ],
         "targetPriority": [
-          "isolated Titan",
-          "low armor Titan",
-          "objective-adjacent Titan"
+          "isolated deity",
+          "low armor deity",
+          "objective-adjacent deity"
         ],
         "telegraph": "Pack howl and converging lane markers before surround pressure.",
         "counterplay": "Cleave, hazard bait, and movement reactions break the pack."
@@ -77,12 +77,12 @@
           "claim center lane",
           "telegraph crush",
           "attack objective cover",
-          "guard-break Titan"
+          "guard-break deity"
         ],
         "targetPriority": [
           "objective holder",
-          "guard stance Titan",
-          "nearest Titan"
+          "guard stance deity",
+          "nearest deity"
         ],
         "telegraph": "Raised gate-stone shoulder and cracked lane before charge.",
         "counterplay": "Dodge charge lanes, parry windows, armor break, displacement."
@@ -106,12 +106,12 @@
         "decisionLoop": [
           "hold range",
           "seek line of sight",
-          "mark exposed Titan",
+          "mark exposed deity",
           "withdraw from melee"
         ],
         "targetPriority": [
-          "exposed Titan",
-          "low evasion Titan",
+          "exposed deity",
+          "low evasion deity",
           "Titan near objective"
         ],
         "telegraph": "Drawn spectral sightline one turn before focus fire.",
@@ -144,9 +144,9 @@
           "pressure objective clock"
         ],
         "targetPriority": [
-          "fast Titan",
+          "fast deity",
           "objective runner",
-          "clustered Titan"
+          "clustered deity"
         ],
         "telegraph": "Ground sigil blooms before root or hazard lock.",
         "counterplay": "Shift stance, cleanse zones, destroy anchors."
@@ -175,9 +175,9 @@
           "retreat behind guard"
         ],
         "targetPriority": [
-          "high Momentum Titan",
-          "high Divinity Titan",
-          "cooldown-ready Titan"
+          "high Momentum deity",
+          "high Divinity deity",
+          "cooldown-ready deity"
         ],
         "telegraph": "Ritual hand-sign and meter glow before resource denial.",
         "counterplay": "Interrupt casts, prioritize, execute before drain resolves."
@@ -210,7 +210,7 @@
         ],
         "targetPriority": [
           "Titan targeting boss",
-          "breaker role Titan",
+          "breaker role deity",
           "objective attacker"
         ],
         "telegraph": "Shield plant and aura pulse before intercept.",
@@ -219,7 +219,7 @@
     },
     {
       "key": "EXECUTIONER",
-      "purpose": "Make low-health Titan states dangerous without cheap instant death.",
+      "purpose": "Make low-health deity states dangerous without cheap instant death.",
       "counterplay": "Guard stance, preemptive kill, concealment, Divine Ascension reset.",
       "runtimeCreatureIds": [
         "TG-CREATURE-003"
@@ -234,13 +234,13 @@
         "decisionLoop": [
           "wait for wounded state",
           "telegraph finisher",
-          "pursue weakened Titan",
+          "pursue weakened deity",
           "avoid overkill ambush"
         ],
         "targetPriority": [
-          "wounded Titan",
+          "wounded deity",
           "anti-heal target",
-          "isolated Titan"
+          "isolated deity"
         ],
         "telegraph": "Execution mark appears before finisher path.",
         "counterplay": "Guard stance, conceal, preemptive kill, Ascension reset."
@@ -273,7 +273,7 @@
         "targetPriority": [
           "mechanic breaker",
           "objective holder",
-          "highest damage Titan"
+          "highest damage deity"
         ],
         "telegraph": "Named mechanic banner and visual windup before action.",
         "counterplay": "Learn mechanic, exploit weakness, deny setup."
@@ -295,14 +295,14 @@
       ],
       "aiProfile": {
         "decisionLoop": [
-          "duel Titan",
+          "duel deity",
           "summon support at phase gate",
           "conserve enrage",
           "punish repeated stance"
         ],
         "targetPriority": [
-          "active Titan",
-          "resource-rich Titan",
+          "active deity",
+          "resource-rich deity",
           "Titan near phase objective"
         ],
         "telegraph": "Phase roar and stance change before champion strike.",
@@ -328,11 +328,11 @@
           "enter Divine phase"
         ],
         "targetPriority": [
-          "active Titan",
-          "counter-role Titan",
-          "highest resource Titan"
+          "active deity",
+          "counter-role deity",
+          "highest resource deity"
         ],
-        "telegraph": "Enemy Titan meter and stance preview shown before signature.",
+        "telegraph": "Enemy deity meter and stance preview shown before signature.",
         "counterplay": "Deny their resource loop, punish stance shift, survive Ascension."
       }
     }

@@ -42,7 +42,7 @@ const requiredFiles = [
   'scripts/validate-runtime-persistence.mjs',
   'scripts/validate-ue5-dungeon-framework.mjs',
   'scripts/validate-ue5-mobile-first.mjs',
-  'scripts/validate-one-titan-vs-many-combat.mjs',
+  'scripts/validate-one-deity-vs-many-combat.mjs',
   'scripts/validate-mission-campaign-lore-run-ins.mjs',
   'scripts/run-stable-command-hub.mjs',
   'tests/platform-core-contract.test.mjs',
@@ -50,7 +50,7 @@ const requiredFiles = [
   'tests/runtime-persistence-contract.test.mjs',
   'tests/ue5-dungeon-framework-contract.test.mjs',
   'tests/ue5-mobile-first-contract.test.mjs',
-  'tests/one-titan-vs-many-combat-contract.test.mjs',
+  'tests/one-deity-vs-many-combat-contract.test.mjs',
   'tests/mission-campaign-lore-run-ins-contract.test.mjs',
   'src/README.md',
   'src/gameplay/index.mjs',
@@ -60,7 +60,7 @@ const requiredFiles = [
   'src/platform/platform-core.mjs',
   'src/platform/backend-boundary.mjs',
   'src/platform/runtime-persistence.mjs',
-  'src/combat/one-titan-vs-many.mjs',
+  'src/combat/one-deity-vs-many.mjs',
   'src/lore/cross-faction-run-ins.mjs',
   'src/platform/runtime-persistence.sql',
   'src/data-loaders/index.mjs',
@@ -141,7 +141,7 @@ if (!pages.includes('npm run precommit:verify')) issues.push('Pages workflow mus
 if (pages.includes('npm run build') && !pages.includes('npm run precommit:verify')) issues.push('Pages workflow is using build without full gate.');
 
 const readme = fs.readFileSync('README.md', 'utf8');
-for (const token of ['schemas/', 'src/', 'tests/', 'AAA repository audit', 'one active Titan']) {
+for (const token of ['schemas/', 'src/', 'tests/', 'AAA repository audit', 'one active deity']) {
   if (!readme.includes(token)) issues.push(`README missing production structure token: ${token}`);
 }
 
@@ -171,7 +171,7 @@ for (const schema of schemas) {
 }
 
 const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-for (const script of ['validate:schemas', 'test:production-modules', 'validate:engine-adapters', 'test:engine-adapters', 'validate:migrations', 'test:migration-contracts', 'validate:platform-core', 'test:platform-core', 'validate:backend-boundary', 'test:backend-boundary', 'validate:runtime-persistence', 'test:runtime-persistence', 'validate:ue5-dungeon-framework', 'test:ue5-dungeon-framework', 'validate:ue5-mobile-first', 'test:ue5-mobile-first', 'validate:one-titan-vs-many-combat', 'test:one-titan-vs-many-combat', 'validate:mission-campaign-lore-run-ins', 'test:mission-campaign-lore-run-ins']) {
+for (const script of ['validate:schemas', 'test:production-modules', 'validate:engine-adapters', 'test:engine-adapters', 'validate:migrations', 'test:migration-contracts', 'validate:platform-core', 'test:platform-core', 'validate:backend-boundary', 'test:backend-boundary', 'validate:runtime-persistence', 'test:runtime-persistence', 'validate:ue5-dungeon-framework', 'test:ue5-dungeon-framework', 'validate:ue5-mobile-first', 'test:ue5-mobile-first', 'validate:one-deity-vs-many-combat', 'test:one-deity-vs-many-combat', 'validate:mission-campaign-lore-run-ins', 'test:mission-campaign-lore-run-ins']) {
   if (!packageJson.scripts?.[script]) issues.push(`Missing production script: ${script}`);
 }
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:schemas')) issues.push('precommit:verify must enforce schema contract validation.');
@@ -190,8 +190,8 @@ if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:ue5-d
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:ue5-dungeon-framework')) issues.push('precommit:verify must enforce UE5 dungeon framework contracts.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:ue5-mobile-first')) issues.push('precommit:verify must enforce UE5 mobile-first validation.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:ue5-mobile-first')) issues.push('precommit:verify must enforce UE5 mobile-first contracts.');
-if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:one-titan-vs-many-combat')) issues.push('precommit:verify must enforce one-Titan-vs-many combat validation.');
-if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:one-titan-vs-many-combat')) issues.push('precommit:verify must enforce one-Titan-vs-many combat contracts.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:one-deity-vs-many-combat')) issues.push('precommit:verify must enforce one-Deity-vs-many combat validation.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:one-deity-vs-many-combat')) issues.push('precommit:verify must enforce one-Deity-vs-many combat contracts.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:mission-campaign-lore-run-ins')) issues.push('precommit:verify must enforce mission/campaign lore run-in validation.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:mission-campaign-lore-run-ins')) issues.push('precommit:verify must enforce mission/campaign lore run-in contracts.');
 

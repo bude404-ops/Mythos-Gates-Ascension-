@@ -24,7 +24,7 @@ For focused local checks during development, run the smaller package command mat
 
 ## Canon rules
 
-- Standard combat uses one active Titan.
+- Standard combat uses one active deity.
 - The Hollow is a non-playable campaign threat.
 - The seven playable mythological Realms remain the playable foundation.
 - Avoid old/contradictory directions: sci-fi, futuristic craft, void rot/fungal civilization canon, and legacy project names.

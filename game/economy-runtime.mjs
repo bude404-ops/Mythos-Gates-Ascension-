@@ -130,15 +130,15 @@ export function grantReward(player, reward, reason, claimId, config = loadEconom
   return { ok: true, player };
 }
 
-export function unlockTitan(player, titanId, shardCost, config = loadEconomyConfig()) {
+export function unlockDeity(player, deityId, shardCost, config = loadEconomyConfig()) {
   migratePlayerEconomy(player, config);
-  player.unlockedTitanIds ||= [];
-  if (player.unlockedTitanIds.includes(titanId)) return { ok: true, alreadyOwned: true };
-  const spend = spendCurrency(player, 'SHARDS', shardCost, `UNLOCK_TITAN:${titanId}`, config);
+  player.unlockedDeityIds ||= [];
+  if (player.unlockedDeityIds.includes(deityId)) return { ok: true, alreadyOwned: true };
+  const spend = spendCurrency(player, 'SHARDS', shardCost, `UNLOCK_DEITY:${deityId}`, config);
   if (!spend.ok) return spend;
-  player.unlockedTitanIds.push(titanId);
-  log(player.economy, 'UNLOCK_TITAN', { titanId, shardCost });
-  return { ok: true, titanId };
+  player.unlockedDeityIds.push(deityId);
+  log(player.economy, 'UNLOCK_DEITY', { deityId, shardCost });
+  return { ok: true, deityId };
 }
 
 export function purchaseItem(player, productId, receipt = null, config = loadEconomyConfig(), env = 'development') {

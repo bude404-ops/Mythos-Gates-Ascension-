@@ -3,7 +3,7 @@
     "id": "TG-TASK-FACTION-MISSION-DIALOGUE-FINISH-001",
     "status": "COMPLETED",
     "priority": "High",
-    "description": "Audit and finish the remaining faction mission/dialogue coverage so every faction campaign has complete one-active-Titan mission objectives, chapter linkage, production-ready dialogue, and validation coverage.",
+    "description": "Audit and finish the remaining faction mission/dialogue coverage so every faction campaign has complete one-active-deity mission objectives, chapter linkage, production-ready dialogue, and validation coverage.",
     "director": "Campaign Director",
     "dependencies": [
       "data/mission-registry.json",
@@ -20,12 +20,12 @@
   },
   {
     "id": "TG-DEV-001",
-    "description": "Approve first batch of Titan artwork for prompt-ready Titans.",
+    "description": "Approve first batch of deity artwork for prompt-ready Titans.",
     "director": "Art Director",
     "priority": "High",
     "status": "COMPLETED",
     "dependencies": [
-      "Titan prompt records"
+      "deity prompt records"
     ],
     "relatedEntity": "TG-TITAN-001",
     "relatedFiles": [
@@ -34,7 +34,7 @@
       "data/art-prompts.json"
     ],
     "completed": "2026-08-13",
-    "completionNotes": "First Aten Ra Titan prompt batch approved for generation through TG-ART-APPROVAL-MANIFEST-001; no final image import claimed."
+    "completionNotes": "First Aten Ra deity prompt batch approved for generation through TG-ART-APPROVAL-MANIFEST-001; no final image import claimed."
   },
   {
     "id": "TG-DEV-002",
@@ -68,7 +68,7 @@
   },
   {
     "id": "TG-DEV-004",
-    "description": "Import first approved Titan artwork into the repository artwork pipeline.",
+    "description": "Import first approved deity artwork into the repository artwork pipeline.",
     "director": "Art Director",
     "priority": "High",
     "status": "BLOCKED",
@@ -287,12 +287,12 @@
     "owner": "Development Director",
     "status": "COMPLETED",
     "priority": "Critical",
-    "description": "Implemented canonical solo battle state schema plus deterministic engine scaffold for one-active-Titan combat.",
+    "description": "Implemented canonical solo battle state schema plus deterministic engine scaffold for one-active-deity combat.",
     "director": "Development Director",
     "dependencies": [
       "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001"
     ],
-    "category": "Solo Titan Combat",
+    "category": "Solo Deity Combat",
     "deliverable": "Implement solo battle state schema",
     "relatedEntity": "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
     "relatedFiles": [
@@ -312,7 +312,7 @@
     "dependencies": [
       "TG-TASK-SOLO-001"
     ],
-    "category": "Solo Titan Combat",
+    "category": "Solo Deity Combat",
     "deliverable": "Build Momentum, Divinity, stance, reaction, and execution reducers",
     "relatedEntity": "TG-TASK-SOLO-001",
     "relatedFiles": [
@@ -331,7 +331,7 @@
     "dependencies": [
       "TG-TASK-SOLO-002"
     ],
-    "category": "Solo Titan Combat",
+    "category": "Solo Deity Combat",
     "deliverable": "Create one-faction solo vertical slice with five mission types and one boss",
     "relatedEntity": "TG-TASK-SOLO-002",
     "relatedFiles": [
@@ -344,17 +344,17 @@
   },
   {
     "id": "TG-TASK-SOLO-004",
-    "title": "Convert async arena to Asynchronous Titan Challenge snapshot model",
+    "title": "Convert async arena to Asynchronous deity Challenge snapshot model",
     "owner": "Development Director",
     "status": "COMPLETED",
     "priority": "High",
-    "description": "Converted async arena into the Asynchronous Titan Challenge snapshot model with one defensive Titan snapshot per sample opponent, immutable checksums, deterministic AI profiles, solo loadouts, and no live PvP/player-rank fabrication.",
+    "description": "Converted async arena into the Asynchronous deity Challenge snapshot model with one defensive deity snapshot per sample opponent, immutable checksums, deterministic AI profiles, solo loadouts, and no live PvP/player-rank fabrication.",
     "director": "Development Director",
     "dependencies": [
       "TG-TASK-SOLO-001"
     ],
-    "category": "Solo Titan Combat",
-    "deliverable": "Convert async arena to Asynchronous Titan Challenge snapshot model",
+    "category": "Solo Deity Combat",
+    "deliverable": "Convert async arena to Asynchronous deity Challenge snapshot model",
     "relatedEntity": "TG-TASK-SOLO-001",
     "relatedFiles": [
       "data/async-arena-system.json",
@@ -393,7 +393,7 @@
   },
   {
     "id": "TG-DEV-024",
-    "description": "Replaced raid system prototype with deterministic one-active-Titan multi-stage raid framework, canonical stage profiles, tier caps, approach rules, score formula, economy caps, Command Hub stage intel, and validation coverage.",
+    "description": "Replaced raid system prototype with deterministic one-active-deity multi-stage raid framework, canonical stage profiles, tier caps, approach rules, score formula, economy caps, Command Hub stage intel, and validation coverage.",
     "director": "Development Director",
     "priority": "High",
     "status": "COMPLETED",
@@ -430,11 +430,11 @@
       "scripts/test-command-hub.mjs"
     ],
     "completedIn": "3d49359+raid-economy-tuning",
-    "completionSummary": "Implemented tuned non-pay-to-win solo-Titan raid economy: first-clear bonuses, replay decay, weekly tier caps, signature alloy bands, active-Titan mastery credit, and validation/smoke coverage."
+    "completionSummary": "Implemented tuned non-pay-to-win solo-Titan raid economy: first-clear bonuses, replay decay, weekly tier caps, signature alloy bands, active-divine mastery credit, and validation/smoke coverage."
   },
   {
     "id": "TG-DEV-026",
-    "description": "Implement starter Titan choice, Awakening mission beats, and first solo onboarding sequence from canonical Aten Ra data.",
+    "description": "Implement starter deity choice, Awakening mission beats, and first solo onboarding sequence from canonical Aten Ra data.",
     "director": "Development Director",
     "priority": "High",
     "status": "COMPLETED",
@@ -458,7 +458,7 @@
   },
   {
     "id": "TG-DEV-027",
-    "description": "Implemented Titan Trial and Faction Trial data model with temporary loadouts, sample gear, Divine Ascension showcase, conversion-safe Trial Favor rewards, Command Hub trial loop, and validation/browser smoke coverage.",
+    "description": "Implemented Divine Trial and Faction Trial data model with temporary loadouts, sample gear, Divine Ascension showcase, conversion-safe Trial Favor rewards, Command Hub trial loop, and validation/browser smoke coverage.",
     "director": "Progression Director",
     "priority": "High",
     "status": "COMPLETED",
@@ -482,7 +482,7 @@
   },
   {
     "id": "TG-DEV-028",
-    "description": "Implemented campaign and endgame mission tactical problem categories with recommended-but-not-required Titan advantages across all 280 missions, plus release validation and system coverage audit.",
+    "description": "Implemented campaign and endgame mission tactical problem categories with recommended-but-not-required deity advantages across all 280 missions, plus release validation and system coverage audit.",
     "director": "Gameplay Director",
     "priority": "High",
     "status": "COMPLETED",
@@ -504,15 +504,15 @@
     "completionSummary": "Sealed mission tactical profiles as a production system: every Normal and Elite mission has problem tags, advantage roles, valid recommended Titans, and explicit no-ownership-lock rules.",
     "acceptanceEvidence": [
       "TG-DEV-028 every campaign mission has at least three tactical problem tags.",
-      "TG-DEV-028 every campaign mission has at least two advantage roles from the live Titan role list.",
-      "TG-DEV-028 every recommended Titan exists in data/titans.json.",
+      "TG-DEV-028 every campaign mission has at least two advantage roles from the live deity role list.",
+      "TG-DEV-028 every recommended deity exists in data/titans.json.",
       "TG-DEV-028 all mission tactical profiles are favored-not-required with no ownership lock.",
       "TG-DEV-028 mission tactical profile system is discoverable through data/index.json and release validation."
     ]
   },
   {
     "id": "TG-DEV-029",
-    "description": "Implemented production Battlefield Vertical Slice runtime around The First Reopening Gate with reusable terrain/objective/enemy bindings, one-active-Titan tactical actions, Solar Seal interactions, pylon and Codex events, boss phase telemetry, mobile action-bar quality gates, and deterministic replay coverage.",
+    "description": "Implemented production Battlefield Vertical Slice runtime around The First Reopening Gate with reusable terrain/objective/enemy bindings, one-active-deity tactical actions, Solar Seal interactions, pylon and Codex events, boss phase telemetry, mobile action-bar quality gates, and deterministic replay coverage.",
     "director": "Battlefield Director",
     "priority": "Critical",
     "status": "COMPLETED",

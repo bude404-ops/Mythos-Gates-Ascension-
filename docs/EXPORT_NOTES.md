@@ -15,8 +15,8 @@ The current build includes the packaged Release-Candidate Change Ledger:
 - Objective clarity copy approved
 - Pre-battle focus text approved
 - Mid-battle Gate reminder language approved
-- Titan stats locked
+- Divine Stats locked
 - Enemy stats locked
 - Rewards locked
 - Mission gates locked
-- Active Titan power locked
+- Active divine power locked

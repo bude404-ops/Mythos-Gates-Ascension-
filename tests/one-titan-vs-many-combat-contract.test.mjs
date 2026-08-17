@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { loadOneTitanVsManyCombat, validateOneTitanVsManyCombat, summarizeOneTitanVsMany, PRIMARY_ONE_TITAN_RULE, REQUIRED_PROTOTYPE_BEATS } from '../src/combat/one-titan-vs-many.mjs';
+import { loadOneTitanVsManyCombat, validateOneTitanVsManyCombat, summarizeOneTitanVsMany, PRIMARY_ONE_TITAN_RULE, REQUIRED_PROTOTYPE_BEATS } from '../src/combat/one-deity-vs-many.mjs';
 
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const contract = loadOneTitanVsManyCombat();
@@ -17,7 +17,7 @@ assert.ok(contract.forbiddenSystems.includes('squad combat'));
 assert.ok(contract.forbiddenSystems.includes('team turns'));
 assert.ok(contract.enemyGroupDesign.antiPattern.includes('health pools'));
 for (const beat of REQUIRED_PROTOTYPE_BEATS) assert.ok(contract.firstPrototype.requiredDemonstration.includes(beat));
-assert.deepEqual(contract.firstPrototype.progressionFeelTest, ['New Titan', 'Developed Titan', 'Highly Developed Titan']);
+assert.deepEqual(contract.firstPrototype.progressionFeelTest, ['New Deity', 'Developed Deity', 'Highly Developed Deity']);
 const early = contract.scalingBands.find(band => band.band === 'EARLY');
 assert.deepEqual(early.enemyCountRange, [4, 6]);
 const summary = summarizeOneTitanVsMany(contract, firstTemplate);

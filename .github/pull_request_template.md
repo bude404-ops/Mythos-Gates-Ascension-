@@ -20,7 +20,7 @@
 
 ## Canon safety
 
-- [ ] Maintains one-active-Titan standard combat
+- [ ] Maintains one-active-deity standard combat
 - [ ] Keeps The Hollow non-playable
 - [ ] Does not reintroduce legacy contradiction language
 - [ ] Updates docs and source data together

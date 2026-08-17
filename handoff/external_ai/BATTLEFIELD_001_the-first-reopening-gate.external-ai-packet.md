@@ -11,7 +11,7 @@ Build the first Titan Gates battlefield as the master quality benchmark. Generat
 - Faction: Aten Ra
 - Realm: The Solar Dominion of Khepra
 - Battlefield: The First Reopening Gate
-- Starter Titan scale reference: Aten-Ra, Solar Law Monolith
+- Starter deity scale reference: Aten-Ra, Solar Law Monolith
 - Tactical size: 7x7, 49 meaningful spaces
 
 ## Production Stages
@@ -62,7 +62,7 @@ sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero 
 ## Aten Ra Visual Locks
 - Thesis: Aten Ra is the source behind human Egyptian solar myth: living Ma’at, Ra’s noon authority, Aten’s sun-disc radiance, Khepri’s renewal, Iset’s throne-magic, Sutekh’s necessary desert violence, Maahes’ lion protection, and Amunet’s hidden power. Designs must feel like ancient humans copied these beings later — not like Titans copied Egypt.
 - Materials: primary: hammered electrum-gold, sun-warmed bronze, white-gold living radiance, and royal linen hardened by solar law, secondary: lapis/obsidian blue-black shadow, turquoise/faience blue-green inlay, ivory limestone, black Nile silt glass, red desert jasper, accent: scarab emerald, lotus pink, papyrus green, blood-red Set storm marks, amber Aten hand-rays, black solar-eclipse enamel
-- Texture language: hand-hammered electrum and bronze with ritual dents, edge wear, and sand-softened corners, faience-like blue-green glaze, lapis chips, obsidian enamel cracks lit from within, linen fibers stiffened into divine armor folds, sun-bleached at the edges, carved relief bands showing abstract stars, river ripples, feathers, barque arcs, and balance geometry without readable text, heat shimmer, desert abrasion, Nile polish, and incense smoke staining around sacred seams, scarab-shell iridescence or lion-fur shadow only when the Titan’s myth anchor calls for it
+- Texture language: hand-hammered electrum and bronze with ritual dents, edge wear, and sand-softened corners, faience-like blue-green glaze, lapis chips, obsidian enamel cracks lit from within, linen fibers stiffened into divine armor folds, sun-bleached at the edges, carved relief bands showing abstract stars, river ripples, feathers, barque arcs, and balance geometry without readable text, heat shimmer, desert abrasion, Nile polish, and incense smoke staining around sacred seams, scarab-shell iridescence or lion-fur shadow only when the deity’s myth anchor calls for it
 - Color palette: white-gold noon light, electrum gold, burnished bronze, lapis/obsidian blue-black, faience turquoise, Nile silt black, desert red jasper, papyrus green, lotus pink, ivory limestone
 
 ## Geometry Rules
