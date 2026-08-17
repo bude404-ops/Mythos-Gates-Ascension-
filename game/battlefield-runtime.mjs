@@ -309,19 +309,12 @@ export function advanceBattlefieldBossPhase(input, reason = 'runtime_tick') {
 function maybeProgressCombatObjectives(input, before) {
   let state = clone(input);
   const beforeEnemies = new Map((before.enemies || []).map(enemy => [enemy.instanceId, enemy]));
-  const anchor = state.enemies.find(enemy => enemy.battlefieldSlot === 'anchor_elite');
-  const oldAnchor = beforeEnemies.get(anchor?.instanceId);
-  if (anchor && anchor.hp <= 0 && oldAnchor?.hp > 0) {
-    state = completeObjectiveInPlayerPhase(state, 'defeat_anchor_elite', { progress: 1, momentum: 14, divinity: 8 });
-  }
-  const boss = bossEnemy(state);
-  const oldBoss = beforeEnemies.get(boss?.instanceId);
-  if (boss && oldBoss && boss.hp < oldBoss.hp) {
-    const phaseProgress = Math.max(1, Math.floor((oldBoss.hp - boss.hp) / Math.max(1, Math.ceil(boss.maxHp / 5))));
-    state = completeObjectiveInPlayerPhase(state, 'break_first_gate_colossus', { progress: phaseProgress, momentum: 8, divinity: 6 });
-  }
-  if (boss && boss.hp <= 0 && oldBoss?.hp > 0) {
-    state = recordBossPhaseTelemetry(state, { bossId: boss.instanceId, phaseIndex: 5, status: 'CLEARED', reason: 'boss_defeated' });
+  // M01: track Gateborn Colossus defeat as optional objective
+  const gateborn = state.enemies.find(enemy => enemy.battlefieldSlot === 'gateborn_colossus');
+  const oldGateborn = beforeEnemies.get(gateborn?.instanceId);
+  if (gateborn && gateborn.hp <= 0 && oldGateborn?.hp > 0) {
+    state = completeObjectiveInPlayerPhase(state, 'defeat_gateborn_colossus', { progress: 1, momentum: 14, divinity: 8 });
+    state = recordTelemetryHook(state, 'BATTLEFIELD_ELITE_DEFEATED', { enemy: gateborn.instanceId, slot: 'gateborn_colossus' });
   }
   return state;
 }
