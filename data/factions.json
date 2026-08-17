@@ -24,7 +24,14 @@
       "civilizationRule": "Aten Ra remains an established mythological civilization within The Solar Dominion of Khepra; it is not a planet, sci-fi species, or replacement faction.",
       "gateRule": "The Mythos Gates connect otherwise separate mythological Realms. Their complete origin remains a long-term mystery and is not resolved by this faction record.",
       "dungeonCrawlerFunction": "Aten Ra provides divine playable characters, creatures, sacred locations, hazards, artifacts, and meaningful dungeon routes for Mythos Gates: Ascension.",
-      "expansionRule": "Future Mythos Gates subtitles may reveal deeper Gate routes or new connections without rewriting this faction canon."
+      "expansionRule": "Future Mythos Gates subtitles may reveal deeper Gate routes or new connections without rewriting this faction canon.",
+      "ascensionRouteId": "MG-DUNGEON-ROUTE-001",
+      "ascensionRouteName": "Sun-Scale Verdict Descent",
+      "ascensionEntryGate": "The Sun-Scale Gate",
+      "ascensionGateState": "Stable Gate under Ma’at strain",
+      "ascensionDungeonType": "sacred judgment temple-road descent",
+      "activeChapterRule": "Ascension is a one selected god or goddess dungeon-crawler campaign, not a squad war campaign.",
+      "routeLoreFunction": "Aten Ra expresses its Realm law through Sun-Scale Verdict Descent, where one selected playable deity crosses The Sun-Scale Gate and confronts Hollow pressure, route-native hazards, elite locks, treasure/lore detours, and a boss chamber without resolving the complete origin of the Mythos Gates."
     },
     "playableDeityRoster": {
       "total": 4,
@@ -56,6 +63,75 @@
           "role": "Assassin"
         }
       ]
+    },
+    "canonStatus": "Core lore synchronized with Mythos Gates: Ascension route campaign structure.",
+    "ascensionRouteCodex": {
+      "routeId": "MG-DUNGEON-ROUTE-001",
+      "routeName": "Sun-Scale Verdict Descent",
+      "entryGate": "The Sun-Scale Gate",
+      "gateState": "Stable Gate under Ma’at strain",
+      "normalCampaignId": null,
+      "eliteCampaignId": null,
+      "missionCoverage": 40,
+      "chapterCount": 5,
+      "roomGraph": [
+        {
+          "order": 1,
+          "nodeId": "MG-DUNGEON-ROUTE-001-ROOM-01",
+          "name": "Aten Hand-Ray Vestibule",
+          "nodeType": "entry",
+          "branching": false
+        },
+        {
+          "order": 2,
+          "nodeId": "MG-DUNGEON-ROUTE-001-ROOM-02",
+          "name": "Black-Land Silt Crossing",
+          "nodeType": "combat",
+          "branching": false
+        },
+        {
+          "order": 3,
+          "nodeId": "MG-DUNGEON-ROUTE-001-ROOM-03",
+          "name": "Khepri Dawn Loop Chamber",
+          "nodeType": "hazard",
+          "branching": true
+        },
+        {
+          "order": 4,
+          "nodeId": "MG-DUNGEON-ROUTE-001-ROOM-04",
+          "name": "Ma’at Scale Hall",
+          "nodeType": "elite",
+          "branching": false
+        },
+        {
+          "order": 5,
+          "nodeId": "MG-DUNGEON-ROUTE-001-ROOM-05",
+          "name": "Lion Gate Kill Zone",
+          "nodeType": "treasure_or_lore",
+          "branching": true
+        },
+        {
+          "order": 6,
+          "nodeId": "MG-DUNGEON-ROUTE-001-ROOM-06",
+          "name": "Hidden-Sun Archive Antechamber",
+          "nodeType": "pre_boss",
+          "branching": false
+        },
+        {
+          "order": 7,
+          "nodeId": "MG-DUNGEON-ROUTE-001-ROOM-07",
+          "name": "Noon Court Boss Dais",
+          "nodeType": "boss",
+          "branching": false
+        }
+      ],
+      "loreRevealChain": [
+        "Why the Sun-Scale Gate judges travelers before admitting them",
+        "How Khepri dawn loops restore both allies and enemies",
+        "A hidden Amunet record implying the Gates predate mortal pharaoh-echoes"
+      ],
+      "bossEncounter": "The Misweighed Dawn Judge",
+      "eliteEncounter": "Lion-Gate Oathbreaker Captain"
     }
   },
   {
@@ -83,7 +159,14 @@
       "civilizationRule": "Asgardian remains an established mythological civilization within The Storm-Rooted Aesir Holds; it is not a planet, sci-fi species, or replacement faction.",
       "gateRule": "The Mythos Gates connect otherwise separate mythological Realms. Their complete origin remains a long-term mystery and is not resolved by this faction record.",
       "dungeonCrawlerFunction": "Asgardian provides divine playable characters, creatures, sacred locations, hazards, artifacts, and meaningful dungeon routes for Mythos Gates: Ascension.",
-      "expansionRule": "Future Mythos Gates subtitles may reveal deeper Gate routes or new connections without rewriting this faction canon."
+      "expansionRule": "Future Mythos Gates subtitles may reveal deeper Gate routes or new connections without rewriting this faction canon.",
+      "ascensionRouteId": "MG-DUNGEON-ROUTE-002",
+      "ascensionRouteName": "Thunder-Oath Root Gauntlet",
+      "ascensionEntryGate": "The Thunder-Oath Gate",
+      "ascensionGateState": "Ruin Gate with active oath memory",
+      "ascensionDungeonType": "storm bridge and world-root trial",
+      "activeChapterRule": "Ascension is a one selected god or goddess dungeon-crawler campaign, not a squad war campaign.",
+      "routeLoreFunction": "Asgardian expresses its Realm law through Thunder-Oath Root Gauntlet, where one selected playable deity crosses The Thunder-Oath Gate and confronts Hollow pressure, route-native hazards, elite locks, treasure/lore detours, and a boss chamber without resolving the complete origin of the Mythos Gates."
     },
     "playableDeityRoster": {
       "total": 4,
@@ -115,6 +198,75 @@
           "role": "Sustain"
         }
       ]
+    },
+    "canonStatus": "Core lore synchronized with Mythos Gates: Ascension route campaign structure.",
+    "ascensionRouteCodex": {
+      "routeId": "MG-DUNGEON-ROUTE-002",
+      "routeName": "Thunder-Oath Root Gauntlet",
+      "entryGate": "The Thunder-Oath Gate",
+      "gateState": "Ruin Gate with active oath memory",
+      "normalCampaignId": null,
+      "eliteCampaignId": null,
+      "missionCoverage": 40,
+      "chapterCount": 5,
+      "roomGraph": [
+        {
+          "order": 1,
+          "nodeId": "MG-DUNGEON-ROUTE-002-ROOM-01",
+          "name": "Broken Rune Arrival Span",
+          "nodeType": "entry",
+          "branching": false
+        },
+        {
+          "order": 2,
+          "nodeId": "MG-DUNGEON-ROUTE-002-ROOM-02",
+          "name": "Storm-Oath Bridge",
+          "nodeType": "combat",
+          "branching": false
+        },
+        {
+          "order": 3,
+          "nodeId": "MG-DUNGEON-ROUTE-002-ROOM-03",
+          "name": "Valkyrie Weatherfield",
+          "nodeType": "hazard",
+          "branching": true
+        },
+        {
+          "order": 4,
+          "nodeId": "MG-DUNGEON-ROUTE-002-ROOM-04",
+          "name": "Rune-Mountain Hall",
+          "nodeType": "elite",
+          "branching": false
+        },
+        {
+          "order": 5,
+          "nodeId": "MG-DUNGEON-ROUTE-002-ROOM-05",
+          "name": "World-Root Snare Path",
+          "nodeType": "treasure_or_lore",
+          "branching": true
+        },
+        {
+          "order": 6,
+          "nodeId": "MG-DUNGEON-ROUTE-002-ROOM-06",
+          "name": "Betrayal Memory Hollow",
+          "nodeType": "pre_boss",
+          "branching": false
+        },
+        {
+          "order": 7,
+          "nodeId": "MG-DUNGEON-ROUTE-002-ROOM-07",
+          "name": "Standard Bearer Storm Keep",
+          "nodeType": "boss",
+          "branching": false
+        }
+      ],
+      "loreRevealChain": [
+        "How oaths become physical law near the Gate",
+        "Why world-roots remember betrayals",
+        "A damaged inscription showing the Gate can bind gods as well as monsters"
+      ],
+      "bossEncounter": "The Forgotten Standard Bearer",
+      "eliteEncounter": "Valkyrie Weatherfield Exile"
     }
   },
   {
@@ -142,7 +294,14 @@
       "civilizationRule": "Olympian remains an established mythological civilization within The Celestial Heights of Olympus; it is not a planet, sci-fi species, or replacement faction.",
       "gateRule": "The Mythos Gates connect otherwise separate mythological Realms. Their complete origin remains a long-term mystery and is not resolved by this faction record.",
       "dungeonCrawlerFunction": "Olympian provides divine playable characters, creatures, sacred locations, hazards, artifacts, and meaningful dungeon routes for Mythos Gates: Ascension.",
-      "expansionRule": "Future Mythos Gates subtitles may reveal deeper Gate routes or new connections without rewriting this faction canon."
+      "expansionRule": "Future Mythos Gates subtitles may reveal deeper Gate routes or new connections without rewriting this faction canon.",
+      "ascensionRouteId": "MG-DUNGEON-ROUTE-003",
+      "ascensionRouteName": "Laurel-Sky Hubris Trial",
+      "ascensionEntryGate": "The Laurel-Sky Gate",
+      "ascensionGateState": "Stable Gate with oracle vapor leakage",
+      "ascensionDungeonType": "floating tribunal arena and oracle theater",
+      "activeChapterRule": "Ascension is a one selected god or goddess dungeon-crawler campaign, not a squad war campaign.",
+      "routeLoreFunction": "Olympian expresses its Realm law through Laurel-Sky Hubris Trial, where one selected playable deity crosses The Laurel-Sky Gate and confronts Hollow pressure, route-native hazards, elite locks, treasure/lore detours, and a boss chamber without resolving the complete origin of the Mythos Gates."
     },
     "playableDeityRoster": {
       "total": 4,
@@ -174,6 +333,75 @@
           "role": "Guardian"
         }
       ]
+    },
+    "canonStatus": "Core lore synchronized with Mythos Gates: Ascension route campaign structure.",
+    "ascensionRouteCodex": {
+      "routeId": "MG-DUNGEON-ROUTE-003",
+      "routeName": "Laurel-Sky Hubris Trial",
+      "entryGate": "The Laurel-Sky Gate",
+      "gateState": "Stable Gate with oracle vapor leakage",
+      "normalCampaignId": null,
+      "eliteCampaignId": null,
+      "missionCoverage": 40,
+      "chapterCount": 5,
+      "roomGraph": [
+        {
+          "order": 1,
+          "nodeId": "MG-DUNGEON-ROUTE-003-ROOM-01",
+          "name": "Sky-Marble Arrival Terrace",
+          "nodeType": "entry",
+          "branching": false
+        },
+        {
+          "order": 2,
+          "nodeId": "MG-DUNGEON-ROUTE-003-ROOM-02",
+          "name": "Laurel Verdict Ring",
+          "nodeType": "combat",
+          "branching": false
+        },
+        {
+          "order": 3,
+          "nodeId": "MG-DUNGEON-ROUTE-003-ROOM-03",
+          "name": "Oracle Vapor Theater",
+          "nodeType": "hazard",
+          "branching": true
+        },
+        {
+          "order": 4,
+          "nodeId": "MG-DUNGEON-ROUTE-003-ROOM-04",
+          "name": "Aegis Shield Court",
+          "nodeType": "elite",
+          "branching": false
+        },
+        {
+          "order": 5,
+          "nodeId": "MG-DUNGEON-ROUTE-003-ROOM-05",
+          "name": "Apollo Sun-Clarity Gallery",
+          "nodeType": "treasure_or_lore",
+          "branching": true
+        },
+        {
+          "order": 6,
+          "nodeId": "MG-DUNGEON-ROUTE-003-ROOM-06",
+          "name": "Artemis Wild Threshold",
+          "nodeType": "pre_boss",
+          "branching": false
+        },
+        {
+          "order": 7,
+          "nodeId": "MG-DUNGEON-ROUTE-003-ROOM-07",
+          "name": "Thunder Tribunal Acropolis",
+          "nodeType": "boss",
+          "branching": false
+        }
+      ],
+      "loreRevealChain": [
+        "How Olympus tests hubris through terrain law",
+        "Why oracle vapors show possible futures as traps",
+        "A partial verdict asking whether the Gates protect Olympus or expose it"
+      ],
+      "bossEncounter": "The Thunder Tribunal Usurper",
+      "eliteEncounter": "Aegis Court Duelist"
     }
   },
   {
@@ -201,7 +429,14 @@
       "civilizationRule": "Kami remains an established mythological civilization within The Sacred Kingdoms; it is not a planet, sci-fi species, or replacement faction.",
       "gateRule": "The Mythos Gates connect otherwise separate mythological Realms. Their complete origin remains a long-term mystery and is not resolved by this faction record.",
       "dungeonCrawlerFunction": "Kami provides divine playable characters, creatures, sacred locations, hazards, artifacts, and meaningful dungeon routes for Mythos Gates: Ascension.",
-      "expansionRule": "Future Mythos Gates subtitles may reveal deeper Gate routes or new connections without rewriting this faction canon."
+      "expansionRule": "Future Mythos Gates subtitles may reveal deeper Gate routes or new connections without rewriting this faction canon.",
+      "ascensionRouteId": "MG-DUNGEON-ROUTE-004",
+      "ascensionRouteName": "Torii-Moon Mirror Road",
+      "ascensionEntryGate": "The Torii-Moon Gate",
+      "ascensionGateState": "Distortion Gate with ritual rerouting",
+      "ascensionDungeonType": "shrine-road labyrinth and mirror sanctum",
+      "activeChapterRule": "Ascension is a one selected god or goddess dungeon-crawler campaign, not a squad war campaign.",
+      "routeLoreFunction": "Kami expresses its Realm law through Torii-Moon Mirror Road, where one selected playable deity crosses The Torii-Moon Gate and confronts Hollow pressure, route-native hazards, elite locks, treasure/lore detours, and a boss chamber without resolving the complete origin of the Mythos Gates."
     },
     "playableDeityRoster": {
       "total": 4,
@@ -233,6 +468,75 @@
           "role": "Sustain"
         }
       ]
+    },
+    "canonStatus": "Core lore synchronized with Mythos Gates: Ascension route campaign structure.",
+    "ascensionRouteCodex": {
+      "routeId": "MG-DUNGEON-ROUTE-004",
+      "routeName": "Torii-Moon Mirror Road",
+      "entryGate": "The Torii-Moon Gate",
+      "gateState": "Distortion Gate with ritual rerouting",
+      "normalCampaignId": null,
+      "eliteCampaignId": null,
+      "missionCoverage": 40,
+      "chapterCount": 5,
+      "roomGraph": [
+        {
+          "order": 1,
+          "nodeId": "MG-DUNGEON-ROUTE-004-ROOM-01",
+          "name": "Purification Stream Threshold",
+          "nodeType": "entry",
+          "branching": false
+        },
+        {
+          "order": 2,
+          "nodeId": "MG-DUNGEON-ROUTE-004-ROOM-02",
+          "name": "Foxfire Torii Road",
+          "nodeType": "combat",
+          "branching": false
+        },
+        {
+          "order": 3,
+          "nodeId": "MG-DUNGEON-ROUTE-004-ROOM-03",
+          "name": "Cedar Root Ambush Bend",
+          "nodeType": "hazard",
+          "branching": true
+        },
+        {
+          "order": 4,
+          "nodeId": "MG-DUNGEON-ROUTE-004-ROOM-04",
+          "name": "Mirror Lake Sanctum",
+          "nodeType": "elite",
+          "branching": false
+        },
+        {
+          "order": 5,
+          "nodeId": "MG-DUNGEON-ROUTE-004-ROOM-05",
+          "name": "Inari Rice Court Storehouse",
+          "nodeType": "treasure_or_lore",
+          "branching": true
+        },
+        {
+          "order": 6,
+          "nodeId": "MG-DUNGEON-ROUTE-004-ROOM-06",
+          "name": "Tengu Storm-Cedar Peak",
+          "nodeType": "pre_boss",
+          "branching": false
+        },
+        {
+          "order": 7,
+          "nodeId": "MG-DUNGEON-ROUTE-004-ROOM-07",
+          "name": "Moon-Mirror Boss Shrine",
+          "nodeType": "boss",
+          "branching": false
+        }
+      ],
+      "loreRevealChain": [
+        "Why unpurified crossings reroute space",
+        "How foxfire copies allied silhouettes",
+        "A shrine tablet implying some Gates choose which names may pass"
+      ],
+      "bossEncounter": "The False Reflection Kami",
+      "eliteEncounter": "Tengu Storm-Cedar Warden"
     }
   },
   {
@@ -260,7 +564,14 @@
       "civilizationRule": "Tuatha remains an established mythological civilization within Avalora; it is not a planet, sci-fi species, or replacement faction.",
       "gateRule": "The Mythos Gates connect otherwise separate mythological Realms. Their complete origin remains a long-term mystery and is not resolved by this faction record.",
       "dungeonCrawlerFunction": "Tuatha provides divine playable characters, creatures, sacred locations, hazards, artifacts, and meaningful dungeon routes for Mythos Gates: Ascension.",
-      "expansionRule": "Future Mythos Gates subtitles may reveal deeper Gate routes or new connections without rewriting this faction canon."
+      "expansionRule": "Future Mythos Gates subtitles may reveal deeper Gate routes or new connections without rewriting this faction canon.",
+      "ascensionRouteId": "MG-DUNGEON-ROUTE-005",
+      "ascensionRouteName": "Silver-Root Geas Labyrinth",
+      "ascensionEntryGate": "The Silver-Root Gate",
+      "ascensionGateState": "Sealed Gate with fae time bleed",
+      "ascensionDungeonType": "living mound-gate maze and geas trial",
+      "activeChapterRule": "Ascension is a one selected god or goddess dungeon-crawler campaign, not a squad war campaign.",
+      "routeLoreFunction": "Tuatha expresses its Realm law through Silver-Root Geas Labyrinth, where one selected playable deity crosses The Silver-Root Gate and confronts Hollow pressure, route-native hazards, elite locks, treasure/lore detours, and a boss chamber without resolving the complete origin of the Mythos Gates."
     },
     "playableDeityRoster": {
       "total": 4,
@@ -292,6 +603,75 @@
           "role": "Disruptor"
         }
       ]
+    },
+    "canonStatus": "Core lore synchronized with Mythos Gates: Ascension route campaign structure.",
+    "ascensionRouteCodex": {
+      "routeId": "MG-DUNGEON-ROUTE-005",
+      "routeName": "Silver-Root Geas Labyrinth",
+      "entryGate": "The Silver-Root Gate",
+      "gateState": "Sealed Gate with fae time bleed",
+      "normalCampaignId": null,
+      "eliteCampaignId": null,
+      "missionCoverage": 40,
+      "chapterCount": 5,
+      "roomGraph": [
+        {
+          "order": 1,
+          "nodeId": "MG-DUNGEON-ROUTE-005-ROOM-01",
+          "name": "Silver-Root Court",
+          "nodeType": "entry",
+          "branching": false
+        },
+        {
+          "order": 2,
+          "nodeId": "MG-DUNGEON-ROUTE-005-ROOM-02",
+          "name": "Sídhe Mound Descent",
+          "nodeType": "combat",
+          "branching": false
+        },
+        {
+          "order": 3,
+          "nodeId": "MG-DUNGEON-ROUTE-005-ROOM-03",
+          "name": "Geas Thorn Corridor",
+          "nodeType": "hazard",
+          "branching": true
+        },
+        {
+          "order": 4,
+          "nodeId": "MG-DUNGEON-ROUTE-005-ROOM-04",
+          "name": "Tír na nÓg Mirror Meadow",
+          "nodeType": "elite",
+          "branching": false
+        },
+        {
+          "order": 5,
+          "nodeId": "MG-DUNGEON-ROUTE-005-ROOM-05",
+          "name": "Cauldron Memory Grove",
+          "nodeType": "treasure_or_lore",
+          "branching": true
+        },
+        {
+          "order": 6,
+          "nodeId": "MG-DUNGEON-ROUTE-005-ROOM-06",
+          "name": "Morrígan Crow Battlefield",
+          "nodeType": "pre_boss",
+          "branching": false
+        },
+        {
+          "order": 7,
+          "nodeId": "MG-DUNGEON-ROUTE-005-ROOM-07",
+          "name": "Crow-Crowned Boss Mound",
+          "nodeType": "boss",
+          "branching": false
+        }
+      ],
+      "loreRevealChain": [
+        "Why forbidden actions trigger living thorns",
+        "How fae time pools bend cooldowns and memory",
+        "A mound-carving suggesting sealed Gates may be mercy, not prison"
+      ],
+      "bossEncounter": "The Crow-Crowned Geas Breaker",
+      "eliteEncounter": "Sídhe Thorn Knight"
     }
   },
   {
@@ -319,7 +699,14 @@
       "civilizationRule": "Empyrean remains an established mythological civilization within The Radiant Hierarchies; it is not a planet, sci-fi species, or replacement faction.",
       "gateRule": "The Mythos Gates connect otherwise separate mythological Realms. Their complete origin remains a long-term mystery and is not resolved by this faction record.",
       "dungeonCrawlerFunction": "Empyrean provides divine playable characters, creatures, sacred locations, hazards, artifacts, and meaningful dungeon routes for Mythos Gates: Ascension.",
-      "expansionRule": "Future Mythos Gates subtitles may reveal deeper Gate routes or new connections without rewriting this faction canon."
+      "expansionRule": "Future Mythos Gates subtitles may reveal deeper Gate routes or new connections without rewriting this faction canon.",
+      "ascensionRouteId": "MG-DUNGEON-ROUTE-006",
+      "ascensionRouteName": "Choir-Vault Discord Ascent",
+      "ascensionEntryGate": "The Choir-Vault Gate",
+      "ascensionGateState": "Wound Gate leaking memory-burning radiance",
+      "ascensionDungeonType": "vertical cathedral ascent and judgment machinery",
+      "activeChapterRule": "Ascension is a one selected god or goddess dungeon-crawler campaign, not a squad war campaign.",
+      "routeLoreFunction": "Empyrean expresses its Realm law through Choir-Vault Discord Ascent, where one selected playable deity crosses The Choir-Vault Gate and confronts Hollow pressure, route-native hazards, elite locks, treasure/lore detours, and a boss chamber without resolving the complete origin of the Mythos Gates."
     },
     "playableDeityRoster": {
       "total": 4,
@@ -351,6 +738,75 @@
           "role": "Disruptor"
         }
       ]
+    },
+    "canonStatus": "Core lore synchronized with Mythos Gates: Ascension route campaign structure.",
+    "ascensionRouteCodex": {
+      "routeId": "MG-DUNGEON-ROUTE-006",
+      "routeName": "Choir-Vault Discord Ascent",
+      "entryGate": "The Choir-Vault Gate",
+      "gateState": "Wound Gate leaking memory-burning radiance",
+      "normalCampaignId": null,
+      "eliteCampaignId": null,
+      "missionCoverage": 40,
+      "chapterCount": 5,
+      "roomGraph": [
+        {
+          "order": 1,
+          "nodeId": "MG-DUNGEON-ROUTE-006-ROOM-01",
+          "name": "Choir Vault Threshold",
+          "nodeType": "entry",
+          "branching": false
+        },
+        {
+          "order": 2,
+          "nodeId": "MG-DUNGEON-ROUTE-006-ROOM-02",
+          "name": "Bell-Metal Resonance Steps",
+          "nodeType": "combat",
+          "branching": false
+        },
+        {
+          "order": 3,
+          "nodeId": "MG-DUNGEON-ROUTE-006-ROOM-03",
+          "name": "Cherub Threshold Bastion",
+          "nodeType": "hazard",
+          "branching": true
+        },
+        {
+          "order": 4,
+          "nodeId": "MG-DUNGEON-ROUTE-006-ROOM-04",
+          "name": "Ophanim Wheel Court",
+          "nodeType": "elite",
+          "branching": false
+        },
+        {
+          "order": 5,
+          "nodeId": "MG-DUNGEON-ROUTE-006-ROOM-05",
+          "name": "Seraph Burn Archive",
+          "nodeType": "treasure_or_lore",
+          "branching": true
+        },
+        {
+          "order": 6,
+          "nodeId": "MG-DUNGEON-ROUTE-006-ROOM-06",
+          "name": "Throne-Ladder of Judgment",
+          "nodeType": "pre_boss",
+          "branching": false
+        },
+        {
+          "order": 7,
+          "nodeId": "MG-DUNGEON-ROUTE-006-ROOM-07",
+          "name": "Silent Seraph Apex",
+          "nodeType": "boss",
+          "branching": false
+        }
+      ],
+      "loreRevealChain": [
+        "Why discord becomes immobilizing force",
+        "How seraph flame burns corruption and memory alike",
+        "A living scroll that refuses to name the Gates’ origin"
+      ],
+      "bossEncounter": "The Silent Seraph of Broken Praise",
+      "eliteEncounter": "Ophanim Shear-Wheel"
     }
   },
   {
@@ -378,7 +834,14 @@
       "civilizationRule": "Infernal Dominion remains an established mythological civilization within The Infernal Dominion; it is not a planet, sci-fi species, or replacement faction.",
       "gateRule": "The Mythos Gates connect otherwise separate mythological Realms. Their complete origin remains a long-term mystery and is not resolved by this faction record.",
       "dungeonCrawlerFunction": "Infernal Dominion provides divine playable characters, creatures, sacred locations, hazards, artifacts, and meaningful dungeon routes for Mythos Gates: Ascension.",
-      "expansionRule": "Future Mythos Gates subtitles may reveal deeper Gate routes or new connections without rewriting this faction canon."
+      "expansionRule": "Future Mythos Gates subtitles may reveal deeper Gate routes or new connections without rewriting this faction canon.",
+      "ascensionRouteId": "MG-DUNGEON-ROUTE-007",
+      "ascensionRouteName": "Black-Iron Debt Descent",
+      "ascensionEntryGate": "The Black-Iron Gate",
+      "ascensionGateState": "Distortion Gate bound by contract clauses",
+      "ascensionDungeonType": "infernal court, bargain market, and chain causeway",
+      "activeChapterRule": "Ascension is a one selected god or goddess dungeon-crawler campaign, not a squad war campaign.",
+      "routeLoreFunction": "Infernal Dominion expresses its Realm law through Black-Iron Debt Descent, where one selected playable deity crosses The Black-Iron Gate and confronts Hollow pressure, route-native hazards, elite locks, treasure/lore detours, and a boss chamber without resolving the complete origin of the Mythos Gates."
     },
     "playableDeityRoster": {
       "total": 4,
@@ -410,6 +873,75 @@
           "role": "Sustain"
         }
       ]
+    },
+    "canonStatus": "Core lore synchronized with Mythos Gates: Ascension route campaign structure.",
+    "ascensionRouteCodex": {
+      "routeId": "MG-DUNGEON-ROUTE-007",
+      "routeName": "Black-Iron Debt Descent",
+      "entryGate": "The Black-Iron Gate",
+      "gateState": "Distortion Gate bound by contract clauses",
+      "normalCampaignId": null,
+      "eliteCampaignId": null,
+      "missionCoverage": 40,
+      "chapterCount": 5,
+      "roomGraph": [
+        {
+          "order": 1,
+          "nodeId": "MG-DUNGEON-ROUTE-007-ROOM-01",
+          "name": "Black-Iron Gate Dock",
+          "nodeType": "entry",
+          "branching": false
+        },
+        {
+          "order": 2,
+          "nodeId": "MG-DUNGEON-ROUTE-007-ROOM-02",
+          "name": "Ash-Velvet Bargain Market",
+          "nodeType": "combat",
+          "branching": false
+        },
+        {
+          "order": 3,
+          "nodeId": "MG-DUNGEON-ROUTE-007-ROOM-03",
+          "name": "Contract Circle Gallery",
+          "nodeType": "hazard",
+          "branching": true
+        },
+        {
+          "order": 4,
+          "nodeId": "MG-DUNGEON-ROUTE-007-ROOM-04",
+          "name": "Chain-Tithe Causeway",
+          "nodeType": "elite",
+          "branching": false
+        },
+        {
+          "order": 5,
+          "nodeId": "MG-DUNGEON-ROUTE-007-ROOM-05",
+          "name": "Volcanic Glass Throne Steps",
+          "nodeType": "treasure_or_lore",
+          "branching": true
+        },
+        {
+          "order": 6,
+          "nodeId": "MG-DUNGEON-ROUTE-007-ROOM-06",
+          "name": "Debt Furnace Treasury",
+          "nodeType": "pre_boss",
+          "branching": false
+        },
+        {
+          "order": 7,
+          "nodeId": "MG-DUNGEON-ROUTE-007-ROOM-07",
+          "name": "Magistrate Verdict Court",
+          "nodeType": "boss",
+          "branching": false
+        }
+      ],
+      "loreRevealChain": [
+        "Why every action can be taxed by contract circles",
+        "How repeated mistakes become chains",
+        "A redacted clause hinting that some Gates may be negotiated with, never owned"
+      ],
+      "bossEncounter": "The Volcanic Glass Magistrate",
+      "eliteEncounter": "Chain-Tithe Executor"
     }
   }
 ]

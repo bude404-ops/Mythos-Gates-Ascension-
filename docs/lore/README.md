@@ -52,3 +52,8 @@ The following chapters expand every faction, Realm, Gate, and Titan role without
 - [Campaign Architecture Directive Implementation — v0.5.0](17-CAMPAIGN-ARCHITECTURE-DIRECTIVE.md)
 - [Aten Ra Full Faction Campaign Lore — v0.5.0](18-ATEN-RA-40-MISSION-CAMPAIGN-LORE.md)
 - [Aten Ra Mission Dialogue Set — v0.5.0](19-ATEN-RA-MISSION-DIALOGUE-SET.md)
+
+
+## Ascension Route Canon
+
+- [Mythos Gates: Ascension Route Canon Synchronization](25-MYTHOS-GATES-ASCENSION-ROUTE-CANON.md) — core lore, Realm codex, faction identity, Hollow pressure, and all seven route campaigns synchronized after the 280-mission rebuild.

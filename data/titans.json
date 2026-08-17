@@ -35,7 +35,7 @@
     "passives": [
       "Solar Edict: Aten Ra gains Solar Charge when defender play anchors a control zone and converts enemy commitment into mitigation on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
     ],
-    "lore": "Aten Ra, Solar Law King, is one of the four playable gods/goddesses of Aten Ra in Mythos Gates: Ascension. Aten Ra is the actual source-realm deity behind the mythology — solar creator-kingship, Ma’at judgment, sacred throne law, and renewal radiance. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Aten Ra, Solar Law King, is one of the four playable gods/goddesses of Aten Ra in Mythos Gates: Ascension. Aten Ra is the actual source-realm deity behind the mythology — solar creator-kingship, Ma’at judgment, sacred throne law, and renewal radiance. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Sun-Scale Verdict Descent, where one selected god or goddess crosses The Sun-Scale Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by solar creator-kingship, Ma’at judgment, sacred throne law, and renewal radiance; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Aten Ra culture and The Solar Dominion of Khepra law before gameplay convenience.",
     "visualDescription": "Aten Ra manifests as solar creator-king and Ma’at throne-holder from Aten Ra: regal falcon-eyed masculine face, high cheekbones, gold-lined eyes, calm judging mouth; tall kingly masculine frame, broad chest, narrow waist, sun-carved posture, composed protector mass; signature silhouette: towering sun disk crown, falcon mantle, shield-forward king silhouette. Weapon: sun-disc khopesh and radiant law shield. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -228,6 +228,16 @@
       "entryGate": "The Sun-Scale Gate",
       "gateUse": "As a divine being intrinsically tied to The Solar Dominion of Khepra, Aten Ra can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-001",
+      "routeName": "Sun-Scale Verdict Descent",
+      "entryGate": "The Sun-Scale Gate",
+      "gateState": "Stable Gate under Ma’at strain",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Aten Ra can enter Sun-Scale Verdict Descent as the chosen Defender deity, reading each room through Aten Ra source-culture law rather than squad tactics.",
+      "bossContext": "The Misweighed Dawn Judge"
     }
   },
   {
@@ -266,7 +276,7 @@
     "passives": [
       "Solar Edict: Sutekh gains Solar Charge when disruptor play places a false timing window that punishes enemy overcommitment on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
     ],
-    "lore": "Sutekh, Red Land Storm God, is one of the four playable gods/goddesses of Aten Ra in Mythos Gates: Ascension. Sutekh is the actual source-realm deity behind the mythology — Red Land storm, desert violence, necessary disruption, and anti-chaos force. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Sutekh, Red Land Storm God, is one of the four playable gods/goddesses of Aten Ra in Mythos Gates: Ascension. Sutekh is the actual source-realm deity behind the mythology — Red Land storm, desert violence, necessary disruption, and anti-chaos force. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Sun-Scale Verdict Descent, where one selected god or goddess crosses The Sun-Scale Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by Red Land storm, desert violence, necessary disruption, and anti-chaos force; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Aten Ra culture and The Solar Dominion of Khepra law before gameplay convenience.",
     "visualDescription": "Sutekh manifests as desert storm god, chaos-breaker who defends the sun barque against worse chaos from Aten Ra: long sharp desert-noble masculine face, angular jaw, ember eyes, severe hooked nose; lean powerful masculine storm-runner build, wiry shoulders, long arms, sand-scarred muscles; signature silhouette: forked crown ears, wind-torn mantle, spear diagonal, jackal-storm outline. Weapon: forked storm-spear and hooked desert blade. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -459,6 +469,16 @@
       "entryGate": "The Sun-Scale Gate",
       "gateUse": "As a divine being intrinsically tied to The Solar Dominion of Khepra, Sutekh can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-001",
+      "routeName": "Sun-Scale Verdict Descent",
+      "entryGate": "The Sun-Scale Gate",
+      "gateState": "Stable Gate under Ma’at strain",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Sutekh can enter Sun-Scale Verdict Descent as the chosen Disruptor deity, reading each room through Aten Ra source-culture law rather than squad tactics.",
+      "bossContext": "The Misweighed Dawn Judge"
     }
   },
   {
@@ -497,7 +517,7 @@
     "passives": [
       "Solar Edict: Iset gains Solar Charge when sustain play banks survival value through terrain mastery and converts it into recovery on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
     ],
-    "lore": "Iset, Throne-Magic Mother, is one of the four playable gods/goddesses of Aten Ra in Mythos Gates: Ascension. Iset is the actual source-realm deity behind the mythology — throne magic, river restoration, protective motherhood, and sacred names. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Iset, Throne-Magic Mother, is one of the four playable gods/goddesses of Aten Ra in Mythos Gates: Ascension. Iset is the actual source-realm deity behind the mythology — throne magic, river restoration, protective motherhood, and sacred names. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Sun-Scale Verdict Descent, where one selected god or goddess crosses The Sun-Scale Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by throne magic, river restoration, protective motherhood, and sacred names; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Aten Ra culture and The Solar Dominion of Khepra law before gameplay convenience.",
     "visualDescription": "Iset manifests as restoration goddess, throne magic, river afterlife passage, sacred motherhood and sovereign healing from Aten Ra: beautiful feminine Egyptian queen face, almond eyes, soft full mouth, compassionate but commanding gaze; graceful feminine hourglass frame, elegant waist-to-hip line, poised healer posture; signature silhouette: throne crown, flowing linen wings, curved scepter, protective mother-queen outline. Weapon: throne scepter and river-linen restoration fan. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -690,6 +710,16 @@
       "entryGate": "The Sun-Scale Gate",
       "gateUse": "As a divine being intrinsically tied to The Solar Dominion of Khepra, Iset can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-001",
+      "routeName": "Sun-Scale Verdict Descent",
+      "entryGate": "The Sun-Scale Gate",
+      "gateState": "Stable Gate under Ma’at strain",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Iset can enter Sun-Scale Verdict Descent as the chosen Sustain deity, reading each room through Aten Ra source-culture law rather than squad tactics.",
+      "bossContext": "The Misweighed Dawn Judge"
     }
   },
   {
@@ -728,7 +758,7 @@
     "passives": [
       "Solar Edict: Amunet gains Solar Charge when assassin play sets a vulnerability omen, then cashes it out through execution timing on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
     ],
-    "lore": "Amunet, Hidden Breath Goddess, is one of the four playable gods/goddesses of Aten Ra in Mythos Gates: Ascension. Amunet is the actual source-realm deity behind the mythology — hidden breath, unseen sovereignty, veiled sun power, and secret paths. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Amunet, Hidden Breath Goddess, is one of the four playable gods/goddesses of Aten Ra in Mythos Gates: Ascension. Amunet is the actual source-realm deity behind the mythology — hidden breath, unseen sovereignty, veiled sun power, and secret paths. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Sun-Scale Verdict Descent, where one selected god or goddess crosses The Sun-Scale Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by hidden breath, unseen sovereignty, veiled sun power, and secret paths; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Aten Ra culture and The Solar Dominion of Khepra law before gameplay convenience.",
     "visualDescription": "Amunet manifests as hidden wind and unseen name goddess, concealed solar breath, secret execution from Aten Ra: alluring feminine hidden-sun face, narrow luminous eyes, delicate nose, knowing half-smile behind translucent veil; slender feminine dancer-assassin physique, narrow shoulders, lithe hips, silent coiled posture; signature silhouette: veiled crown, trailing ribbons, twin low blades, almost-vanishing profile. Weapon: paired obsidian name-knives carried in veiled hands. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -921,6 +951,16 @@
       "entryGate": "The Sun-Scale Gate",
       "gateUse": "As a divine being intrinsically tied to The Solar Dominion of Khepra, Amunet can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-001",
+      "routeName": "Sun-Scale Verdict Descent",
+      "entryGate": "The Sun-Scale Gate",
+      "gateState": "Stable Gate under Ma’at strain",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Amunet can enter Sun-Scale Verdict Descent as the chosen Assassin deity, reading each room through Aten Ra source-culture law rather than squad tactics.",
+      "bossContext": "The Misweighed Dawn Judge"
     }
   },
   {
@@ -959,7 +999,7 @@
     "passives": [
       "Rune Oath: Allfather gains Oathfire when defender play anchors a control zone and converts enemy commitment into mitigation on storm-carved oathground. At 3 stacks, the next Technique or Reaction adds a rune-bound fate rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of World-Tree war halls."
     ],
-    "lore": "Odin, Allfather Stormvein, is one of the four playable gods/goddesses of Asgardian in Mythos Gates: Ascension. Odin is the actual source-realm deity behind the mythology — wisdom, sacrifice, runes, ravens, kingship, and oath-bound doom knowledge. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Odin, Allfather Stormvein, is one of the four playable gods/goddesses of Asgardian in Mythos Gates: Ascension. Odin is the actual source-realm deity behind the mythology — wisdom, sacrifice, runes, ravens, kingship, and oath-bound doom knowledge. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Thunder-Oath Root Gauntlet, where one selected god or goddess crosses The Thunder-Oath Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by wisdom, sacrifice, runes, ravens, kingship, and oath-bound doom knowledge; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Asgardian culture and The Storm-Rooted Aesir Holds law before gameplay convenience.",
     "visualDescription": "Odin manifests as one-eyed war-king, rune-sacrifice sovereign, raven wisdom, oath shield of the Storm-Rooted Holds from Asgardian: aged one-eyed masculine king face, long nose, deep cheek furrows, iron-grey beard, missing eye marked by rune scar; tall weathered masculine veteran frame, broad but not bulky, long limbs, ruler-warrior posture; signature silhouette: wide raven cloak, one high spear, wolf-pelt shoulder, asymmetrical missing-eye head shape. Weapon: Gungnir oath-spear and rune-battered shield-wall axe. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -1152,6 +1192,16 @@
       "entryGate": "The Thunder-Oath Gate",
       "gateUse": "As a divine being intrinsically tied to The Storm-Rooted Aesir Holds, Odin can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-002",
+      "routeName": "Thunder-Oath Root Gauntlet",
+      "entryGate": "The Thunder-Oath Gate",
+      "gateState": "Ruin Gate with active oath memory",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Odin can enter Thunder-Oath Root Gauntlet as the chosen Defender deity, reading each room through Asgardian source-culture law rather than squad tactics.",
+      "bossContext": "The Forgotten Standard Bearer"
     }
   },
   {
@@ -1190,7 +1240,7 @@
     "passives": [
       "Rune Oath: Hrothar gains Oathfire when battery play stores excess resource and refunds Momentum after precise setup on storm-carved oathground. At 3 stacks, the next Technique or Reaction adds a rune-bound fate rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of World-Tree war halls."
     ],
-    "lore": "Freyja, Vanir Valkyrie Queen, is one of the four playable gods/goddesses of Asgardian in Mythos Gates: Ascension. Freyja is the actual source-realm deity behind the mythology — Vanir beauty, battle choice, seiðr magic, desire, gold, and Valkyrie sovereignty. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Freyja, Vanir Valkyrie Queen, is one of the four playable gods/goddesses of Asgardian in Mythos Gates: Ascension. Freyja is the actual source-realm deity behind the mythology — Vanir beauty, battle choice, seiðr magic, desire, gold, and Valkyrie sovereignty. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Thunder-Oath Root Gauntlet, where one selected god or goddess crosses The Thunder-Oath Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by Vanir beauty, battle choice, seiðr magic, desire, gold, and Valkyrie sovereignty; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Asgardian culture and The Storm-Rooted Aesir Holds law before gameplay convenience.",
     "visualDescription": "Freyja manifests as Vanir goddess of battle-fate, beauty, seiðr, desire, and chosen slain from Asgardian: radiant beautiful feminine Norse queen face, bright fierce eyes, full lips, high cheekbones, battle-fate confidence; powerful feminine valkyrie physique, narrow waist, strong hips and thighs, lifted commanding posture; signature silhouette: falcon feather cloak, jewel collar, long braided hair, wing-like cloak arcs. Weapon: brísingamen seiðr chain and falcon-feather blade. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -1383,6 +1433,16 @@
       "entryGate": "The Thunder-Oath Gate",
       "gateUse": "As a divine being intrinsically tied to The Storm-Rooted Aesir Holds, Freyja can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-002",
+      "routeName": "Thunder-Oath Root Gauntlet",
+      "entryGate": "The Thunder-Oath Gate",
+      "gateState": "Ruin Gate with active oath memory",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Freyja can enter Thunder-Oath Root Gauntlet as the chosen Battery deity, reading each room through Asgardian source-culture law rather than squad tactics.",
+      "bossContext": "The Forgotten Standard Bearer"
     }
   },
   {
@@ -1421,7 +1481,7 @@
     "passives": [
       "Rune Oath: Veyra gains Oathfire when sustain play banks survival value through terrain mastery and converts it into recovery on storm-carved oathground. At 3 stacks, the next Technique or Reaction adds a rune-bound fate rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of World-Tree war halls."
     ],
-    "lore": "Frigg, Wyrd Hearth Queen, is one of the four playable gods/goddesses of Asgardian in Mythos Gates: Ascension. Frigg is the actual source-realm deity behind the mythology — hearth sovereignty, wyrd foresight, protection, and queenly order. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Frigg, Wyrd Hearth Queen, is one of the four playable gods/goddesses of Asgardian in Mythos Gates: Ascension. Frigg is the actual source-realm deity behind the mythology — hearth sovereignty, wyrd foresight, protection, and queenly order. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Thunder-Oath Root Gauntlet, where one selected god or goddess crosses The Thunder-Oath Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by hearth sovereignty, wyrd foresight, protection, and queenly order; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Asgardian culture and The Storm-Rooted Aesir Holds law before gameplay convenience.",
     "visualDescription": "Frigg manifests as queen of foresight, oath household, motherhood, continuity, secret mercy under law from Asgardian: mature beautiful feminine queen face, calm eyes that know fate, soft jaw, composed maternal authority; elegant feminine matriarch frame, stately posture, graceful waist and draped hips, contained strength; signature silhouette: woven mantle, distaff staff, crown-braids, protective hearth-cloak dome. Weapon: distaff staff weaving oath-thread and hearth-shield brooch. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -1614,6 +1674,16 @@
       "entryGate": "The Thunder-Oath Gate",
       "gateUse": "As a divine being intrinsically tied to The Storm-Rooted Aesir Holds, Frigg can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-002",
+      "routeName": "Thunder-Oath Root Gauntlet",
+      "entryGate": "The Thunder-Oath Gate",
+      "gateState": "Ruin Gate with active oath memory",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Frigg can enter Thunder-Oath Root Gauntlet as the chosen Sustain deity, reading each room through Asgardian source-culture law rather than squad tactics.",
+      "bossContext": "The Forgotten Standard Bearer"
     }
   },
   {
@@ -1652,7 +1722,7 @@
     "passives": [
       "Rune Oath: Sigrun gains Oathfire when assassin play sets a vulnerability omen, then cashes it out through execution timing on storm-carved oathground. At 3 stacks, the next Technique or Reaction adds a rune-bound fate rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of World-Tree war halls."
     ],
-    "lore": "Thor, Thunder Guardian, is one of the four playable gods/goddesses of Asgardian in Mythos Gates: Ascension. Thor is the actual source-realm deity behind the mythology — thunder guardianship, strength, storm protection, and oath defense. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Thor, Thunder Guardian, is one of the four playable gods/goddesses of Asgardian in Mythos Gates: Ascension. Thor is the actual source-realm deity behind the mythology — thunder guardianship, strength, storm protection, and oath defense. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Thunder-Oath Root Gauntlet, where one selected god or goddess crosses The Thunder-Oath Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by thunder guardianship, strength, storm protection, and oath defense; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Asgardian culture and The Storm-Rooted Aesir Holds law before gameplay convenience.",
     "visualDescription": "Thor manifests as thunder god, giant-breaker, protector of holds, hammer-oath guardian from Asgardian: square masculine thunder face, red-gold beard, blunt nose, fierce blue storm eyes; compact heavily muscled masculine build, barrel chest, thick forearms, grounded brawler stance; signature silhouette: short hammer raised, heavy belt, thunder-braced shoulders, low immovable protector outline. Weapon: Mjölnir-inspired storm hammer with short haft and iron wrist loops. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -1845,6 +1915,16 @@
       "entryGate": "The Thunder-Oath Gate",
       "gateUse": "As a divine being intrinsically tied to The Storm-Rooted Aesir Holds, Thor can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-002",
+      "routeName": "Thunder-Oath Root Gauntlet",
+      "entryGate": "The Thunder-Oath Gate",
+      "gateState": "Ruin Gate with active oath memory",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Thor can enter Thunder-Oath Root Gauntlet as the chosen Guardian deity, reading each room through Asgardian source-culture law rather than squad tactics.",
+      "bossContext": "The Forgotten Standard Bearer"
     }
   },
   {
@@ -1883,7 +1963,7 @@
     "passives": [
       "Aegis Favor: Aurelion gains Favor when defender play anchors a control zone and converts enemy commitment into mitigation on marble thunder line. At 3 stacks, the next Technique or Reaction adds a divine contest law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of High Olympian courts."
     ],
-    "lore": "Zeus, Thunder Verdict King, is one of the four playable gods/goddesses of Olympian in Mythos Gates: Ascension. Zeus is the actual source-realm deity behind the mythology — sky law, thunder verdicts, kingship, and divine command. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Zeus, Thunder Verdict King, is one of the four playable gods/goddesses of Olympian in Mythos Gates: Ascension. Zeus is the actual source-realm deity behind the mythology — sky law, thunder verdicts, kingship, and divine command. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Laurel-Sky Hubris Trial, where one selected god or goddess crosses The Laurel-Sky Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by sky law, thunder verdicts, kingship, and divine command; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Olympian culture and The Celestial Heights of Olympus law before gameplay convenience.",
     "visualDescription": "Zeus manifests as sky father, thunder verdict, king of Olympus and law of victory from Olympian: regal masculine Olympian face, strong nose, storm brows, curled beard, imperious gaze; tall idealized masculine king build, broad shoulders, sculpted torso, upright tribunal posture; signature silhouette: eagle cloak, forked lightning staff, high laurel crown, marble-throne stance. Weapon: forked thunder-scepter and aegis-edged shield. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -2076,6 +2156,16 @@
       "entryGate": "The Laurel-Sky Gate",
       "gateUse": "As a divine being intrinsically tied to The Celestial Heights of Olympus, Zeus can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-003",
+      "routeName": "Laurel-Sky Hubris Trial",
+      "entryGate": "The Laurel-Sky Gate",
+      "gateState": "Stable Gate with oracle vapor leakage",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Zeus can enter Laurel-Sky Hubris Trial as the chosen Defender deity, reading each room through Olympian source-culture law rather than squad tactics.",
+      "bossContext": "The Thunder Tribunal Usurper"
     }
   },
   {
@@ -2114,7 +2204,7 @@
     "passives": [
       "Aegis Favor: Ilyon gains Favor when breaker play marks armor, guard, or ritual structure for staged rupture on marble thunder line. At 3 stacks, the next Technique or Reaction adds a divine contest law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of High Olympian courts."
     ],
-    "lore": "Artemis, Moon Huntress, is one of the four playable gods/goddesses of Olympian in Mythos Gates: Ascension. Artemis is the actual source-realm deity behind the mythology — moon hunt, wilderness thresholds, bow discipline, and untamed protection. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Artemis, Moon Huntress, is one of the four playable gods/goddesses of Olympian in Mythos Gates: Ascension. Artemis is the actual source-realm deity behind the mythology — moon hunt, wilderness thresholds, bow discipline, and untamed protection. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Laurel-Sky Hubris Trial, where one selected god or goddess crosses The Laurel-Sky Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by moon hunt, wilderness thresholds, bow discipline, and untamed protection; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Olympian culture and The Celestial Heights of Olympus law before gameplay convenience.",
     "visualDescription": "Artemis manifests as moon hunt goddess, wild threshold guardian, bow discipline and sudden punishment from Olympian: beautiful young feminine hunter face, sharp clear eyes, straight nose, alert lips, untamed focus; athletic feminine archer frame, long legs, narrow waist, strong hips, poised running stance; signature silhouette: crescent bow arc, high hunt-braid, short chiton armor, stag-horn moon ornaments. Weapon: silver crescent bow and short hunting spear. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -2307,6 +2397,16 @@
       "entryGate": "The Laurel-Sky Gate",
       "gateUse": "As a divine being intrinsically tied to The Celestial Heights of Olympus, Artemis can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-003",
+      "routeName": "Laurel-Sky Hubris Trial",
+      "entryGate": "The Laurel-Sky Gate",
+      "gateState": "Stable Gate with oracle vapor leakage",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Artemis can enter Laurel-Sky Hubris Trial as the chosen Breaker deity, reading each room through Olympian source-culture law rather than squad tactics.",
+      "bossContext": "The Thunder Tribunal Usurper"
     }
   },
   {
@@ -2345,7 +2445,7 @@
     "passives": [
       "Aegis Favor: Nikos gains Favor when disruptor play places a false timing window that punishes enemy overcommitment on marble thunder line. At 3 stacks, the next Technique or Reaction adds a divine contest law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of High Olympian courts."
     ],
-    "lore": "Ares, Bronze War Fury, is one of the four playable gods/goddesses of Olympian in Mythos Gates: Ascension. Ares is the actual source-realm deity behind the mythology — bronze war fury, blood courage, battlefield pressure, and direct violence. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Ares, Bronze War Fury, is one of the four playable gods/goddesses of Olympian in Mythos Gates: Ascension. Ares is the actual source-realm deity behind the mythology — bronze war fury, blood courage, battlefield pressure, and direct violence. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Laurel-Sky Hubris Trial, where one selected god or goddess crosses The Laurel-Sky Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by bronze war fury, blood courage, battlefield pressure, and direct violence; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Olympian culture and The Celestial Heights of Olympus law before gameplay convenience.",
     "visualDescription": "Ares manifests as war god of violent courage, battlefield rupture, and victory frenzy from Olympian: rugged masculine warrior face, broken nose, hard jaw, burning eyes, battle-scarred brow; explosive muscular masculine fighter build, thick neck, powerful shoulders, forward-leaning aggression; signature silhouette: crested helm, spear thrust line, torn red cloak, shield shards around waist. Weapon: bronze war spear and notched kopis. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -2538,6 +2638,16 @@
       "entryGate": "The Laurel-Sky Gate",
       "gateUse": "As a divine being intrinsically tied to The Celestial Heights of Olympus, Ares can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-003",
+      "routeName": "Laurel-Sky Hubris Trial",
+      "entryGate": "The Laurel-Sky Gate",
+      "gateState": "Stable Gate with oracle vapor leakage",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Ares can enter Laurel-Sky Hubris Trial as the chosen Disruptor deity, reading each room through Olympian source-culture law rather than squad tactics.",
+      "bossContext": "The Thunder Tribunal Usurper"
     }
   },
   {
@@ -2576,7 +2686,7 @@
     "passives": [
       "Aegis Favor: Pallas gains Favor when guardian play intercepts a declared threat and stores the impact as later utility on marble thunder line. At 3 stacks, the next Technique or Reaction adds a divine contest law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of High Olympian courts."
     ],
-    "lore": "Athena, Aegis Strategist, is one of the four playable gods/goddesses of Olympian in Mythos Gates: Ascension. Athena is the actual source-realm deity behind the mythology — strategy, aegis protection, disciplined warfare, craft, and clear judgment. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Athena, Aegis Strategist, is one of the four playable gods/goddesses of Olympian in Mythos Gates: Ascension. Athena is the actual source-realm deity behind the mythology — strategy, aegis protection, disciplined warfare, craft, and clear judgment. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Laurel-Sky Hubris Trial, where one selected god or goddess crosses The Laurel-Sky Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by strategy, aegis protection, disciplined warfare, craft, and clear judgment; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Olympian culture and The Celestial Heights of Olympus law before gameplay convenience.",
     "visualDescription": "Athena manifests as wisdom-war goddess, aegis shield, owl sight, civic strategy and disciplined protection from Olympian: beautiful intelligent feminine face, grey owl-bright eyes, serene mouth, straight noble nose; tall athletic feminine strategist frame, poised shoulders, clear waist-to-hip line, still tactical stance; signature silhouette: owl-crested helm, aegis scale cloak, spear vertical, shield geometry. Weapon: aegis shield and long bronze spear. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -2769,6 +2879,16 @@
       "entryGate": "The Laurel-Sky Gate",
       "gateUse": "As a divine being intrinsically tied to The Celestial Heights of Olympus, Athena can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-003",
+      "routeName": "Laurel-Sky Hubris Trial",
+      "entryGate": "The Laurel-Sky Gate",
+      "gateState": "Stable Gate with oracle vapor leakage",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Athena can enter Laurel-Sky Hubris Trial as the chosen Guardian deity, reading each room through Olympian source-culture law rather than squad tactics.",
+      "bossContext": "The Thunder Tribunal Usurper"
     }
   },
   {
@@ -2807,7 +2927,7 @@
     "passives": [
       "Spirit Seal: Amaterion gains Sealfire when defender play anchors a control zone and converts enemy commitment into mitigation on shrine threshold ground. At 3 stacks, the next Technique or Reaction adds a purification and boundary law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Sacred Kingdoms."
     ],
-    "lore": "Amaterasu, Sun Mirror Empress, is one of the four playable gods/goddesses of Kami in Mythos Gates: Ascension. Amaterasu is the actual source-realm deity behind the mythology — sun mirror sovereignty, imperial radiance, purification, and sacred order. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Amaterasu, Sun Mirror Empress, is one of the four playable gods/goddesses of Kami in Mythos Gates: Ascension. Amaterasu is the actual source-realm deity behind the mythology — sun mirror sovereignty, imperial radiance, purification, and sacred order. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Torii-Moon Mirror Road, where one selected god or goddess crosses The Torii-Moon Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by sun mirror sovereignty, imperial radiance, purification, and sacred order; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Kami culture and The Sacred Kingdoms law before gameplay convenience.",
     "visualDescription": "Amaterasu manifests as sun kami, imperial mirror, sacred light, sovereign shrine protection from Kami: beautiful feminine imperial Japanese face, luminous eyes, delicate nose, calm red-lacquered lips; elegant feminine empress frame, graceful neck, narrow waist, layered kimono-armor preserving feminine silhouette; signature silhouette: mirror halo, long sleeve-armor panels, sun hair ornaments, shrine-empress profile. Weapon: mirror-disc shield and radiant ceremonial blade. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -3000,6 +3120,16 @@
       "entryGate": "The Torii-Moon Gate",
       "gateUse": "As a divine being intrinsically tied to The Sacred Kingdoms, Amaterasu can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-004",
+      "routeName": "Torii-Moon Mirror Road",
+      "entryGate": "The Torii-Moon Gate",
+      "gateState": "Distortion Gate with ritual rerouting",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Amaterasu can enter Torii-Moon Mirror Road as the chosen Defender deity, reading each room through Kami source-culture law rather than squad tactics.",
+      "bossContext": "The False Reflection Kami"
     }
   },
   {
@@ -3038,7 +3168,7 @@
     "passives": [
       "Spirit Seal: Tsukiro gains Sealfire when battery play stores excess resource and refunds Momentum after precise setup on shrine threshold ground. At 3 stacks, the next Technique or Reaction adds a purification and boundary law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Sacred Kingdoms."
     ],
-    "lore": "Tsukuyomi, Moon Order Lord, is one of the four playable gods/goddesses of Kami in Mythos Gates: Ascension. Tsukuyomi is the actual source-realm deity behind the mythology — moon order, ritual distance, night law, and cold precision. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Tsukuyomi, Moon Order Lord, is one of the four playable gods/goddesses of Kami in Mythos Gates: Ascension. Tsukuyomi is the actual source-realm deity behind the mythology — moon order, ritual distance, night law, and cold precision. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Torii-Moon Mirror Road, where one selected god or goddess crosses The Torii-Moon Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by moon order, ritual distance, night law, and cold precision; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Kami culture and The Sacred Kingdoms law before gameplay convenience.",
     "visualDescription": "Tsukuyomi manifests as moon god of cold order, ritual timing, night measure, stored lunar force from Kami: pale refined masculine court face, narrow eyes, immaculate jaw, restrained severe mouth; slender graceful masculine noble build, long limbs, straight posture, ritual precision; signature silhouette: crescent headpiece, long court sleeves, naginata curve, vertical moon-priest outline. Weapon: crescent naginata and moon-calendar talismans. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -3231,6 +3361,16 @@
       "entryGate": "The Torii-Moon Gate",
       "gateUse": "As a divine being intrinsically tied to The Sacred Kingdoms, Tsukuyomi can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-004",
+      "routeName": "Torii-Moon Mirror Road",
+      "entryGate": "The Torii-Moon Gate",
+      "gateState": "Distortion Gate with ritual rerouting",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Tsukuyomi can enter Torii-Moon Mirror Road as the chosen Battery deity, reading each room through Kami source-culture law rather than squad tactics.",
+      "bossContext": "The False Reflection Kami"
     }
   },
   {
@@ -3269,7 +3409,7 @@
     "passives": [
       "Spirit Seal: Kageyori gains Sealfire when disruptor play places a false timing window that punishes enemy overcommitment on shrine threshold ground. At 3 stacks, the next Technique or Reaction adds a purification and boundary law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Sacred Kingdoms."
     ],
-    "lore": "Susanoo, Storm-Sea Exile, is one of the four playable gods/goddesses of Kami in Mythos Gates: Ascension. Susanoo is the actual source-realm deity behind the mythology — storm-sea exile, disruptive courage, ocean violence, and boundary-breaking force. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Susanoo, Storm-Sea Exile, is one of the four playable gods/goddesses of Kami in Mythos Gates: Ascension. Susanoo is the actual source-realm deity behind the mythology — storm-sea exile, disruptive courage, ocean violence, and boundary-breaking force. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Torii-Moon Mirror Road, where one selected god or goddess crosses The Torii-Moon Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by storm-sea exile, disruptive courage, ocean violence, and boundary-breaking force; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Kami culture and The Sacred Kingdoms law before gameplay convenience.",
     "visualDescription": "Susanoo manifests as storm and sea god, taboo breaker, serpent-slayer, exile-force that tears open stale order from Kami: wild masculine storm face, wind-torn hair, sharp grin, dark brows, rain-bright eyes; athletic rugged masculine build, broad shoulders, loose storm-swordsman stance; signature silhouette: wind-blown mantle, sea-rope cords, diagonal sword, ragged storm hair. Weapon: storm katana and rope-bound tempest gourd. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -3462,6 +3602,16 @@
       "entryGate": "The Torii-Moon Gate",
       "gateUse": "As a divine being intrinsically tied to The Sacred Kingdoms, Susanoo can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-004",
+      "routeName": "Torii-Moon Mirror Road",
+      "entryGate": "The Torii-Moon Gate",
+      "gateState": "Distortion Gate with ritual rerouting",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Susanoo can enter Torii-Moon Mirror Road as the chosen Disruptor deity, reading each room through Kami source-culture law rather than squad tactics.",
+      "bossContext": "The False Reflection Kami"
     }
   },
   {
@@ -3500,7 +3650,7 @@
     "passives": [
       "Spirit Seal: Hanae gains Sealfire when sustain play banks survival value through terrain mastery and converts it into recovery on shrine threshold ground. At 3 stacks, the next Technique or Reaction adds a purification and boundary law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Sacred Kingdoms."
     ],
-    "lore": "Izanami, Yomi Mother, is one of the four playable gods/goddesses of Kami in Mythos Gates: Ascension. Izanami is the actual source-realm deity behind the mythology — Yomi motherhood, death threshold, underworld grief, and creation through loss. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Izanami, Yomi Mother, is one of the four playable gods/goddesses of Kami in Mythos Gates: Ascension. Izanami is the actual source-realm deity behind the mythology — Yomi motherhood, death threshold, underworld grief, and creation through loss. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Torii-Moon Mirror Road, where one selected god or goddess crosses The Torii-Moon Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by Yomi motherhood, death threshold, underworld grief, and creation through loss; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Kami culture and The Sacred Kingdoms law before gameplay convenience.",
     "visualDescription": "Izanami manifests as creator mother and underworld queen, death-birth threshold, grave restoration from Kami: beautiful haunting feminine mother-queen face, porcelain skin, dark compassionate eyes, sorrowful lips; stately feminine underworld frame, long torso, flowing hips, calm ritual stance; signature silhouette: black veil, grave-flower sleeves, trailing cords, mother-of-Yomi outline. Weapon: bone-white shrine fan and underworld cord blade. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -3693,6 +3843,16 @@
       "entryGate": "The Torii-Moon Gate",
       "gateUse": "As a divine being intrinsically tied to The Sacred Kingdoms, Izanami can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-004",
+      "routeName": "Torii-Moon Mirror Road",
+      "entryGate": "The Torii-Moon Gate",
+      "gateState": "Distortion Gate with ritual rerouting",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Izanami can enter Torii-Moon Mirror Road as the chosen Sustain deity, reading each room through Kami source-culture law rather than squad tactics.",
+      "bossContext": "The False Reflection Kami"
     }
   },
   {
@@ -3731,7 +3891,7 @@
     "passives": [
       "Geas Bloom: Dagoran gains Geas when defender play anchors a control zone and converts enemy commitment into mitigation on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
     ],
-    "lore": "Dagda, Good God Cauldron-King, is one of the four playable gods/goddesses of Tuatha in Mythos Gates: Ascension. Dagda is the actual source-realm deity behind the mythology — abundance, cauldron kingship, earth strength, and generous sovereignty. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Dagda, Good God Cauldron-King, is one of the four playable gods/goddesses of Tuatha in Mythos Gates: Ascension. Dagda is the actual source-realm deity behind the mythology — abundance, cauldron kingship, earth strength, and generous sovereignty. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Silver-Root Geas Labyrinth, where one selected god or goddess crosses The Silver-Root Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by abundance, cauldron kingship, earth strength, and generous sovereignty; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Tuatha culture and Avalora law before gameplay convenience.",
     "visualDescription": "Dagda manifests as Tuatha father god, abundance cauldron, oak club, sovereign feast and protection from Tuatha: broad warm masculine elder-king face, heavy brow, laughing eyes, thick beard, generous authority; large powerful masculine guardian build, heavy belly-and-chest strength, grounded feast-king posture; signature silhouette: huge club, cauldron shield, fur mantle, broad oak-root stance. Weapon: great life-death oak club and cauldron-lid shield. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -3924,6 +4084,16 @@
       "entryGate": "The Silver-Root Gate",
       "gateUse": "As a divine being intrinsically tied to Avalora, Dagda can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-005",
+      "routeName": "Silver-Root Geas Labyrinth",
+      "entryGate": "The Silver-Root Gate",
+      "gateState": "Sealed Gate with fae time bleed",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Dagda can enter Silver-Root Geas Labyrinth as the chosen Defender deity, reading each room through Tuatha source-culture law rather than squad tactics.",
+      "bossContext": "The Crow-Crowned Geas Breaker"
     }
   },
   {
@@ -3962,7 +4132,7 @@
     "passives": [
       "Geas Bloom: Bran gains Geas when breaker play marks armor, guard, or ritual structure for staged rupture on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
     ],
-    "lore": "Morrígan, Battle-Crow Fate Queen, is one of the four playable gods/goddesses of Tuatha in Mythos Gates: Ascension. Morrígan is the actual source-realm deity behind the mythology — battle-crow fate, war prophecy, sovereignty, and doom omens. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Morrígan, Battle-Crow Fate Queen, is one of the four playable gods/goddesses of Tuatha in Mythos Gates: Ascension. Morrígan is the actual source-realm deity behind the mythology — battle-crow fate, war prophecy, sovereignty, and doom omens. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Silver-Root Geas Labyrinth, where one selected god or goddess crosses The Silver-Root Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by battle-crow fate, war prophecy, sovereignty, and doom omens; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Tuatha culture and Avalora law before gameplay convenience.",
     "visualDescription": "Morrígan manifests as war fate goddess, battle-crow prophecy, sovereignty terror and doom rupture from Tuatha: striking dangerous feminine face, pale sharp cheekbones, black eyes, predatory lips, prophecy stare; tall fierce feminine warrior-seer physique, narrow waist, strong hips, long limbs, commanding predatory posture; signature silhouette: crow wing mantle, horned battle crown, long spear, feathered shadow outline. Weapon: black spear of fate and crow-feather sickle dagger. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -4155,6 +4325,16 @@
       "entryGate": "The Silver-Root Gate",
       "gateUse": "As a divine being intrinsically tied to Avalora, Morrígan can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-005",
+      "routeName": "Silver-Root Geas Labyrinth",
+      "entryGate": "The Silver-Root Gate",
+      "gateState": "Sealed Gate with fae time bleed",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Morrígan can enter Silver-Root Geas Labyrinth as the chosen Breaker deity, reading each room through Tuatha source-culture law rather than squad tactics.",
+      "bossContext": "The Crow-Crowned Geas Breaker"
     }
   },
   {
@@ -4193,7 +4373,7 @@
     "passives": [
       "Geas Bloom: Nimue gains Geas when disruptor play places a false timing window that punishes enemy overcommitment on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
     ],
-    "lore": "Brigid, Triple Flame Muse, is one of the four playable gods/goddesses of Tuatha in Mythos Gates: Ascension. Brigid is the actual source-realm deity behind the mythology — triple flame, poetry, smithing, healing, and inspired craft. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Brigid, Triple Flame Muse, is one of the four playable gods/goddesses of Tuatha in Mythos Gates: Ascension. Brigid is the actual source-realm deity behind the mythology — triple flame, poetry, smithing, healing, and inspired craft. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Silver-Root Geas Labyrinth, where one selected god or goddess crosses The Silver-Root Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by triple flame, poetry, smithing, healing, and inspired craft; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Tuatha culture and Avalora law before gameplay convenience.",
     "visualDescription": "Brigid manifests as goddess of flame, poetry, smithcraft, healing inspiration, triple sacred art from Tuatha: beautiful bright feminine artisan face, copper hair, warm eyes, determined mouth, creative intensity; strong graceful feminine smith-muse build, toned arms, curved waist and hips, forward inspiring stance; signature silhouette: triple flame crown, smith apron-skirt, hammer glow, braided fire hair. Weapon: flame-forged smith hammer and poet’s fire sickle. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -4386,6 +4566,16 @@
       "entryGate": "The Silver-Root Gate",
       "gateUse": "As a divine being intrinsically tied to Avalora, Brigid can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-005",
+      "routeName": "Silver-Root Geas Labyrinth",
+      "entryGate": "The Silver-Root Gate",
+      "gateState": "Sealed Gate with fae time bleed",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Brigid can enter Silver-Root Geas Labyrinth as the chosen Disruptor deity, reading each room through Tuatha source-culture law rather than squad tactics.",
+      "bossContext": "The Crow-Crowned Geas Breaker"
     }
   },
   {
@@ -4424,7 +4614,7 @@
     "passives": [
       "Geas Bloom: Cernan gains Geas when sustain play banks survival value through terrain mastery and converts it into recovery on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
     ],
-    "lore": "Lugh, Many-Skilled Radiance, is one of the four playable gods/goddesses of Tuatha in Mythos Gates: Ascension. Lugh is the actual source-realm deity behind the mythology — many-skilled radiance, spear mastery, craft excellence, and heroic brilliance. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Lugh, Many-Skilled Radiance, is one of the four playable gods/goddesses of Tuatha in Mythos Gates: Ascension. Lugh is the actual source-realm deity behind the mythology — many-skilled radiance, spear mastery, craft excellence, and heroic brilliance. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Silver-Root Geas Labyrinth, where one selected god or goddess crosses The Silver-Root Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by many-skilled radiance, spear mastery, craft excellence, and heroic brilliance; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Tuatha culture and Avalora law before gameplay convenience.",
     "visualDescription": "Lugh manifests as many-skilled god of mastery, radiance, spear, craft and precise victory from afar from Tuatha: handsome youthful masculine champion face, golden eyes, clean jaw, focused confident smile; lean athletic masculine duelist build, long arms, dancer balance, poised ranged-strike posture; signature silhouette: long radiant spear line, sun cloak, tool charms, spear-caster profile. Weapon: Spear of Assal-like radiant long spear and sling of light. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -4617,6 +4807,16 @@
       "entryGate": "The Silver-Root Gate",
       "gateUse": "As a divine being intrinsically tied to Avalora, Lugh can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-005",
+      "routeName": "Silver-Root Geas Labyrinth",
+      "entryGate": "The Silver-Root Gate",
+      "gateState": "Sealed Gate with fae time bleed",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Lugh can enter Silver-Root Geas Labyrinth as the chosen Artillery deity, reading each room through Tuatha source-culture law rather than squad tactics.",
+      "bossContext": "The Crow-Crowned Geas Breaker"
     }
   },
   {
@@ -4655,7 +4855,7 @@
     "passives": [
       "Choir Edict: Seraphel gains Choir Resonance when defender play anchors a control zone and converts enemy commitment into mitigation on ordered sigil zones. At 3 stacks, the next Technique or Reaction adds a radiant hierarchy judgment rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Radiant Hierarchies."
     ],
-    "lore": "Michael, Sword of the Highest Gate, is one of the four playable gods/goddesses of Empyrean in Mythos Gates: Ascension. Michael is the actual source-realm deity behind the mythology — radiant guardianship, holy war, sword judgment, and threshold defense. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Michael, Sword of the Highest Gate, is one of the four playable gods/goddesses of Empyrean in Mythos Gates: Ascension. Michael is the actual source-realm deity behind the mythology — radiant guardianship, holy war, sword judgment, and threshold defense. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Choir-Vault Discord Ascent, where one selected god or goddess crosses The Choir-Vault Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by radiant guardianship, holy war, sword judgment, and threshold defense; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Empyrean culture and The Radiant Hierarchies law before gameplay convenience.",
     "visualDescription": "Michael manifests as heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon from Empyrean: stern beautiful masculine angelic face, strong jaw, luminous eyes, no softness, commander calm; tall athletic masculine warrior build, broad shoulders, narrow waist, immaculate upright stance; signature silhouette: two vast wings, sword vertical, shield halo, commander-triangle outline. Weapon: flaming judgement sword and choir shield. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -4848,6 +5048,16 @@
       "entryGate": "The Choir-Vault Gate",
       "gateUse": "As a divine being intrinsically tied to The Radiant Hierarchies, Michael can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-006",
+      "routeName": "Choir-Vault Discord Ascent",
+      "entryGate": "The Choir-Vault Gate",
+      "gateState": "Wound Gate leaking memory-burning radiance",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Michael can enter Choir-Vault Discord Ascent as the chosen Defender deity, reading each room through Empyrean source-culture law rather than squad tactics.",
+      "bossContext": "The Silent Seraph of Broken Praise"
     }
   },
   {
@@ -4886,7 +5096,7 @@
     "passives": [
       "Choir Edict: Aurelia gains Choir Resonance when controller play rewrites movement lanes, delays elite intent, and imprints safe/unsafe tiles on ordered sigil zones. At 3 stacks, the next Technique or Reaction adds a radiant hierarchy judgment rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Radiant Hierarchies."
     ],
-    "lore": "Sophia, Wisdom of the Living Choir, is one of the four playable gods/goddesses of Empyrean in Mythos Gates: Ascension. Sophia is the actual source-realm deity behind the mythology — living wisdom, choir logic, revelation, and sacred understanding. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Sophia, Wisdom of the Living Choir, is one of the four playable gods/goddesses of Empyrean in Mythos Gates: Ascension. Sophia is the actual source-realm deity behind the mythology — living wisdom, choir logic, revelation, and sacred understanding. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Choir-Vault Discord Ascent, where one selected god or goddess crosses The Choir-Vault Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by living wisdom, choir logic, revelation, and sacred understanding; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Empyrean culture and The Radiant Hierarchies law before gameplay convenience.",
     "visualDescription": "Sophia manifests as feminine divine wisdom, living ordinance, holy geometry, terrain law made compassionate from Empyrean: beautiful serene feminine wisdom face, wide luminous eyes, soft lips, high brow, ancient calm; graceful feminine oracle frame, long neck, narrow waist, flowing hips, still commanding posture; signature silhouette: scroll ribbons, many-eye halo veil, compass staff, cathedral-curve silhouette. Weapon: glass compass staff and living scroll ribbons. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -5079,6 +5289,16 @@
       "entryGate": "The Choir-Vault Gate",
       "gateUse": "As a divine being intrinsically tied to The Radiant Hierarchies, Sophia can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-006",
+      "routeName": "Choir-Vault Discord Ascent",
+      "entryGate": "The Choir-Vault Gate",
+      "gateState": "Wound Gate leaking memory-burning radiance",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Sophia can enter Choir-Vault Discord Ascent as the chosen Controller deity, reading each room through Empyrean source-culture law rather than squad tactics.",
+      "bossContext": "The Silent Seraph of Broken Praise"
     }
   },
   {
@@ -5117,7 +5337,7 @@
     "passives": [
       "Choir Edict: Elyndra gains Choir Resonance when disruptor play places a false timing window that punishes enemy overcommitment on ordered sigil zones. At 3 stacks, the next Technique or Reaction adds a radiant hierarchy judgment rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Radiant Hierarchies."
     ],
-    "lore": "Shekinah, Radiant Presence, is one of the four playable gods/goddesses of Empyrean in Mythos Gates: Ascension. Shekinah is the actual source-realm deity behind the mythology — radiant presence, indwelling holiness, glory, and disruptive manifestation. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Shekinah, Radiant Presence, is one of the four playable gods/goddesses of Empyrean in Mythos Gates: Ascension. Shekinah is the actual source-realm deity behind the mythology — radiant presence, indwelling holiness, glory, and disruptive manifestation. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Choir-Vault Discord Ascent, where one selected god or goddess crosses The Choir-Vault Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by radiant presence, indwelling holiness, glory, and disruptive manifestation; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Empyrean culture and The Radiant Hierarchies law before gameplay convenience.",
     "visualDescription": "Shekinah manifests as feminine indwelling divine presence, holy fire, threshold awe, mercy that burns false order from Empyrean: beautiful awe-filled feminine face, glowing eyes, delicate nose, compassionate severe mouth; elegant feminine flame-bearing frame, soft curves under glass armor, floating threshold posture; signature silhouette: veil-flame halo, censer chain arc, layered glass robes, luminous feminine outline. Weapon: radiance censer-chain and veil of living flame. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -5310,6 +5530,16 @@
       "entryGate": "The Choir-Vault Gate",
       "gateUse": "As a divine being intrinsically tied to The Radiant Hierarchies, Shekinah can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-006",
+      "routeName": "Choir-Vault Discord Ascent",
+      "entryGate": "The Choir-Vault Gate",
+      "gateState": "Wound Gate leaking memory-burning radiance",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Shekinah can enter Choir-Vault Discord Ascent as the chosen Disruptor deity, reading each room through Empyrean source-culture law rather than squad tactics.",
+      "bossContext": "The Silent Seraph of Broken Praise"
     }
   },
   {
@@ -5348,7 +5578,7 @@
     "passives": [
       "Choir Edict: Axiom gains Choir Resonance when guardian play intercepts a declared threat and stores the impact as later utility on ordered sigil zones. At 3 stacks, the next Technique or Reaction adds a radiant hierarchy judgment rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Radiant Hierarchies."
     ],
-    "lore": "Gabriel, Herald of the Final Bell, is one of the four playable gods/goddesses of Empyrean in Mythos Gates: Ascension. Gabriel is the actual source-realm deity behind the mythology — heraldic revelation, final bells, divine messages, and protective announcement. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Gabriel, Herald of the Final Bell, is one of the four playable gods/goddesses of Empyrean in Mythos Gates: Ascension. Gabriel is the actual source-realm deity behind the mythology — heraldic revelation, final bells, divine messages, and protective announcement. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Choir-Vault Discord Ascent, where one selected god or goddess crosses The Choir-Vault Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by heraldic revelation, final bells, divine messages, and protective announcement; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Empyrean culture and The Radiant Hierarchies law before gameplay convenience.",
     "visualDescription": "Gabriel manifests as divine messenger, warning trumpet, command intervention, guardian of announced fate from Empyrean: noble masculine herald face, clear eyes, straight nose, composed mouth, youthful authority; slender athletic masculine messenger build, long limbs, lifted chest, fast intercept stance; signature silhouette: trumpet spear, folded wings, messenger tabard, bell halo. Weapon: long silver trumpet-spear and bell-metal buckler. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -5541,6 +5771,16 @@
       "entryGate": "The Choir-Vault Gate",
       "gateUse": "As a divine being intrinsically tied to The Radiant Hierarchies, Gabriel can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-006",
+      "routeName": "Choir-Vault Discord Ascent",
+      "entryGate": "The Choir-Vault Gate",
+      "gateState": "Wound Gate leaking memory-burning radiance",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Gabriel can enter Choir-Vault Discord Ascent as the chosen Guardian deity, reading each room through Empyrean source-culture law rather than squad tactics.",
+      "bossContext": "The Silent Seraph of Broken Praise"
     }
   },
   {
@@ -5579,7 +5819,7 @@
     "passives": [
       "Blood Contract: Mordrath gains Debtfire when defender play anchors a control zone and converts enemy commitment into mitigation on contract-scorched court ground. At 3 stacks, the next Technique or Reaction adds a debt, clause, and dominion law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Infernal Dominion."
     ],
-    "lore": "Lucifer, Morningstar Thronebreaker, is one of the four playable gods/goddesses of Infernal Dominion in Mythos Gates: Ascension. Lucifer is the actual source-realm deity behind the mythology — morningstar pride, infernal sovereignty, rebellion, and throne-breaking ambition. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Lucifer, Morningstar Thronebreaker, is one of the four playable gods/goddesses of Infernal Dominion in Mythos Gates: Ascension. Lucifer is the actual source-realm deity behind the mythology — morningstar pride, infernal sovereignty, rebellion, and throne-breaking ambition. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Black-Iron Debt Descent, where one selected god or goddess crosses The Black-Iron Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by morningstar pride, infernal sovereignty, rebellion, and throne-breaking ambition; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Infernal Dominion culture and The Infernal Dominion law before gameplay convenience.",
     "visualDescription": "Lucifer manifests as fallen morningstar prince, infernal sovereignty, beautiful rebellion and throne defense from Infernal Dominion: beautiful aristocratic masculine devil face, sharp cheekbones, pale fire eyes, elegant cruel mouth; tall lithe masculine prince build, broad tailored shoulders, narrow waist, predatory upright grace; signature silhouette: high horns, torn royal wings, star-sword, black crown outline. Weapon: black star longsword and obsidian contract shield. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -5772,6 +6012,16 @@
       "entryGate": "The Black-Iron Gate",
       "gateUse": "As a divine being intrinsically tied to The Infernal Dominion, Lucifer can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-007",
+      "routeName": "Black-Iron Debt Descent",
+      "entryGate": "The Black-Iron Gate",
+      "gateState": "Distortion Gate bound by contract clauses",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Lucifer can enter Black-Iron Debt Descent as the chosen Defender deity, reading each room through Infernal Dominion source-culture law rather than squad tactics.",
+      "bossContext": "The Volcanic Glass Magistrate"
     }
   },
   {
@@ -5810,7 +6060,7 @@
     "passives": [
       "Blood Contract: Nyxara gains Debtfire when controller play rewrites movement lanes, delays elite intent, and imprints safe/unsafe tiles on contract-scorched court ground. At 3 stacks, the next Technique or Reaction adds a debt, clause, and dominion law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Infernal Dominion."
     ],
-    "lore": "Lilith, Night Sovereign, is one of the four playable gods/goddesses of Infernal Dominion in Mythos Gates: Ascension. Lilith is the actual source-realm deity behind the mythology — night sovereignty, forbidden desire, independence, and shadow command. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Lilith, Night Sovereign, is one of the four playable gods/goddesses of Infernal Dominion in Mythos Gates: Ascension. Lilith is the actual source-realm deity behind the mythology — night sovereignty, forbidden desire, independence, and shadow command. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Black-Iron Debt Descent, where one selected god or goddess crosses The Black-Iron Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by night sovereignty, forbidden desire, independence, and shadow command; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Infernal Dominion culture and The Infernal Dominion law before gameplay convenience.",
     "visualDescription": "Lilith manifests as night demon queen, sovereign refusal, seduction, storm of forbidden names and boundary law from Infernal Dominion: alluring dangerous feminine queen face, dark almond eyes, full lips, arched brows, hypnotic confidence; sensual powerful feminine frame, narrow waist, pronounced hips, elegant predatory posture; signature silhouette: long horn crown, bat-silk hair mantle, whip crescent, queenly night outline. Weapon: thorned moon whip and obsidian mirror dagger. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -6003,6 +6253,16 @@
       "entryGate": "The Black-Iron Gate",
       "gateUse": "As a divine being intrinsically tied to The Infernal Dominion, Lilith can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-007",
+      "routeName": "Black-Iron Debt Descent",
+      "entryGate": "The Black-Iron Gate",
+      "gateState": "Distortion Gate bound by contract clauses",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Lilith can enter Black-Iron Debt Descent as the chosen Controller deity, reading each room through Infernal Dominion source-culture law rather than squad tactics.",
+      "bossContext": "The Volcanic Glass Magistrate"
     }
   },
   {
@@ -6041,7 +6301,7 @@
     "passives": [
       "Blood Contract: Azrakar gains Debtfire when breaker play marks armor, guard, or ritual structure for staged rupture on contract-scorched court ground. At 3 stacks, the next Technique or Reaction adds a debt, clause, and dominion law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Infernal Dominion."
     ],
-    "lore": "Asmodeus, Prince of Burning Desire, is one of the four playable gods/goddesses of Infernal Dominion in Mythos Gates: Ascension. Asmodeus is the actual source-realm deity behind the mythology — burning desire, infernal appetite, temptation, and destructive passion. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Asmodeus, Prince of Burning Desire, is one of the four playable gods/goddesses of Infernal Dominion in Mythos Gates: Ascension. Asmodeus is the actual source-realm deity behind the mythology — burning desire, infernal appetite, temptation, and destructive passion. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Black-Iron Debt Descent, where one selected god or goddess crosses The Black-Iron Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by burning desire, infernal appetite, temptation, and destructive passion; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Infernal Dominion culture and The Infernal Dominion law before gameplay convenience.",
     "visualDescription": "Asmodeus manifests as infernal prince of wrath, desire, court violence, and armor-breaking temptation from Infernal Dominion: handsome brutal masculine demon-prince face, heavy jaw, smoldering eyes, scarred smile; muscular masculine duelist-tyrant build, thick shoulders, tapered waist, aggressive court stance; signature silhouette: curved horns, hooked glaive, half-cloak of ash velvet, forward tyrant profile. Weapon: barbed execution glaive and ember contract hooks. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -6234,6 +6494,16 @@
       "entryGate": "The Black-Iron Gate",
       "gateUse": "As a divine being intrinsically tied to The Infernal Dominion, Asmodeus can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-007",
+      "routeName": "Black-Iron Debt Descent",
+      "entryGate": "The Black-Iron Gate",
+      "gateState": "Distortion Gate bound by contract clauses",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Asmodeus can enter Black-Iron Debt Descent as the chosen Breaker deity, reading each room through Infernal Dominion source-culture law rather than squad tactics.",
+      "bossContext": "The Volcanic Glass Magistrate"
     }
   },
   {
@@ -6272,7 +6542,7 @@
     "passives": [
       "Blood Contract: Malvera gains Debtfire when sustain play banks survival value through terrain mastery and converts it into recovery on contract-scorched court ground. At 3 stacks, the next Technique or Reaction adds a debt, clause, and dominion law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Infernal Dominion."
     ],
-    "lore": "Naamah, Velvet Ash Enchantress, is one of the four playable gods/goddesses of Infernal Dominion in Mythos Gates: Ascension. Naamah is the actual source-realm deity behind the mythology — velvet ash seduction, infernal charm, survival, and restorative darkness. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension represents restored and expanding divine power during the current story arc.",
+    "lore": "Naamah, Velvet Ash Enchantress, is one of the four playable gods/goddesses of Infernal Dominion in Mythos Gates: Ascension. Naamah is the actual source-realm deity behind the mythology — velvet ash seduction, infernal charm, survival, and restorative darkness. Existing faction, Realm, Gate, campaign, and Lore Codex canon remains intact; Ascension now centers that restored divine power inside Black-Iron Debt Descent, where one selected god or goddess crosses The Black-Iron Gate against many enemies, route hazards, Hollow pressure, elite locks, and a boss chamber.",
     "personality": "A true mythological deity shaped by velvet ash seduction, infernal charm, survival, and restorative darkness; their choices, dialogue, silhouette, combat rhythm, and dungeon decisions must express Infernal Dominion culture and The Infernal Dominion law before gameplay convenience.",
     "visualDescription": "Naamah manifests as infernal enchantress, forbidden song, ash-velvet bargain healing, pleasure turned binding contract from Infernal Dominion: beautiful seductive feminine face, soft eyes hiding knives, full mouth, delicate chin, courtly danger; curvy graceful feminine enchantress build, elegant shoulders, defined waist and hips, languid commanding posture; signature silhouette: harp-chain arc, velvet train, small horns, fan-and-seal court outline. Weapon: song-chain harp blade and blood-wax seal fan. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
     "artStatus": "READY_FOR_GENERATION",
@@ -6465,6 +6735,16 @@
       "entryGate": "The Black-Iron Gate",
       "gateUse": "As a divine being intrinsically tied to The Infernal Dominion, Naamah can interact with Mythos Gates during the Ascension crisis, though the Gates' complete origin remains unresolved.",
       "dungeonCrawlerRole": "One selected god or goddess enters a Mythos Gate, explores a dungeon route, fights many enemies, recovers divine artifacts, and uncovers Gate mysteries."
+    },
+    "ascensionRouteRole": {
+      "routeId": "MG-DUNGEON-ROUTE-007",
+      "routeName": "Black-Iron Debt Descent",
+      "entryGate": "The Black-Iron Gate",
+      "gateState": "Distortion Gate bound by contract clauses",
+      "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+      "fictionRule": "The player controls one selected god or goddess at a time; legacy Titan wording remains only in stable IDs and engine-facing schema labels.",
+      "routeFit": "Naamah can enter Black-Iron Debt Descent as the chosen Sustain deity, reading each room through Infernal Dominion source-culture law rather than squad tactics.",
+      "bossContext": "The Volcanic Glass Magistrate"
     }
   }
 ]

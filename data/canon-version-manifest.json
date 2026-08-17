@@ -2,8 +2,8 @@
   "id": "TG-CANON-VERSION-MANIFEST-001",
   "schema": "TG_CANON_VERSION_MANIFEST_V1",
   "status": "ACTIVE",
-  "currentCanonVersion": "1.15.0-mission-campaign-lore-run-ins",
-  "updated": "2026-08-17T05:30:00Z",
+  "currentCanonVersion": "1.16.0-ascension-route-codex-sync",
+  "updated": "2026-08-17T12:00:00Z",
   "policyRef": "docs/production/DATA_MIGRATION_VERSIONING.md",
   "sourceOfTruth": "Git commit history plus this manifest. Runtime adapters consume migrated canonical data; they do not invent canon.",
   "rules": {
@@ -244,14 +244,14 @@
       "type": "RUNTIME_PROJECTION",
       "status": "APPLIED",
       "owner": "Combat Director",
-      "summary": "Locked all standard combat around one player-controlled deity versus multiple coordinated enemies, forbidding squads/team turns and requiring visible divine power growth in the first mission prototype.",
+      "summary": "Locked all standard combat around one selected playable deity versus multiple coordinated enemies, forbidding squads/team turns while preserving stable one-titan internal file names.",
       "affectedData": [
         "data/one-titan-vs-many-combat.json",
-        "src/combat/one-deity-vs-many.mjs",
+        "src/combat/one-titan-vs-many.mjs",
         "engine/unreal/mobile-first-architecture.json",
         "engine/unreal/first-mission-zone-template.json",
-        "scripts/validate-one-deity-vs-many-combat.mjs",
-        "tests/one-deity-vs-many-combat-contract.test.mjs"
+        "scripts/validate-one-titan-vs-many-combat.mjs",
+        "tests/one-titan-vs-many-combat-contract.test.mjs"
       ],
       "validation": [
         "npm run validate:one-deity-vs-many-combat",
@@ -280,6 +280,31 @@
         "npm run validate:mission-campaign-lore-run-ins",
         "npm run test:mission-campaign-lore-run-ins",
         "npm run precommit:verify"
+      ]
+    },
+    {
+      "id": "TG-MIG-012",
+      "fromVersion": "1.15.0-mission-campaign-lore-run-ins",
+      "toVersion": "1.16.0-ascension-route-codex-sync",
+      "type": "CONTENT_BACKFILL",
+      "status": "APPLIED",
+      "owner": "Lore Director",
+      "summary": "Synchronized the core lore codex, Realm entries, faction identity records, deity route roles, Hollow threat layer, story arcs, and campaign consequences with the completed Mythos Gates: Ascension route campaign structure.",
+      "affectedData": [
+        "data/lore-index.json",
+        "data/realm-codex.json",
+        "data/factions.json",
+        "data/titans.json",
+        "data/hollow-faction.json",
+        "data/storyline-arc-registry.json",
+        "data/campaign-consequence-registry.json",
+        "data/project.json"
+      ],
+      "validation": [
+        "npm run build",
+        "npm run validate:mythos-gates-dungeon-routes",
+        "npm run validate:mission-campaign-lore-run-ins",
+        "npm run index:check"
       ]
     }
   ]

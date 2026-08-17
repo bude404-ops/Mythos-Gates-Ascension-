@@ -2,7 +2,7 @@
 
 Mythos Gates is an extradimensional mythological fantasy universe where ancient Earth myths were not simple stories, but human interpretations of real beings, civilizations, wars, and powers from beyond normal reality.
 
-Long before the current era, powerful mythological civilizations existed across separate dimensions called Realms. These Realms were not realms, galaxies, extradimensional worlds, or places in outer space. They were ancient extradimensional domains shaped by divine law, storm oaths, celestial glory, sacred spirits, living nature, radiant order, infernal power, forgotten memory, primordial beasts, and unstable gateways.
+Long before the current era, powerful mythological civilizations existed across separate dimensions called Realms. These Realms are ancient civilization-domains shaped by divine law, storm oaths, celestial glory, sacred spirits, living nature, radiant order, infernal power, forgotten memory, primordial beasts, and unstable gateways.
 
 The bridge between these Realms was the Mythos Gates.
 
@@ -10,44 +10,42 @@ Mythos Gates are ancient dimensional gateways capable of connecting entire Realm
 
 Those encounters became mythology.
 
-Humans remembered solar judges as sun gods. They remembered storm warlords as thunder gods. They remembered radiant order-beings as angels. They remembered infernal dynasties as demons. They remembered nature sovereigns, spirit rulers, divine champions, monsters, guardians, and world-ending entities as legends.
+Humans remembered solar judges as sun gods. They remembered storm kings as thunder gods. They remembered radiant order-beings as angels. They remembered infernal dynasties as demons. They remembered nature sovereigns, spirit rulers, divine champions, monsters, guardians, and world-ending entities as legends.
 
 But the myths were only shadows of the truth.
 
-The truth is that these beings were real — extradimensional civilizations whose power bled into human history through the Mythos Gates.
+## The Ascension Collapse
 
-Then came the Ascension Collapse.
+The Ascension Collapse shattered the old dimensional order. Realm civilizations fractured, sacred roads disappeared, relics lost their original resonance, sealed chambers cracked, and dormant threats woke under the broken Gate network.
 
-The Ascension Collapse shattered the old dimensional order. Realm civilizations were broken. Ancient roads between dimensions vanished. Sacred weapons, relic blades, staves, shields, chains, and living resonance implements were severed from their original powers. Sealed Realms cracked open. Dormant forces buried beneath ancient dimensions began to awaken.
+The Mythos Gates became unstable. Some Gates still connect surviving Realms. Some open into ruins. Some distort identity, weather, memory, gravity, or time. Some create Gateborn entities. Some open onto places that should have remained sealed.
 
-The Mythos Gates became unstable.
+## Current Chapter: Ascension
 
-Some Gates still connect surviving Realms. Some Gates lead into ruins. Some Gates distort anything that passes through them. Some Gates create anomalies. Some Gates mutate life into Gateborn entities. Some Gates open onto places that should have remained sealed.
+Ascension begins after the old certainty has failed. The seven playable Realms no longer trust one another, yet every civilization needs the Gates to survive. Each faction protects its identity, reclaims lost power, and tests whether the Gate network can be crossed without becoming Hollowed, forgotten, judged, bound, mirrored, consumed, or ruled.
 
-After the Collapse, the surviving Realms no longer trust one another. Each civilization believes its own philosophy is necessary for survival. Each seeks to protect its identity, reclaim lost power, control the Gates, and prevent its enemies from shaping the future of reality.
+The current playable campaign is organized around seven route-native Mythos Gate descents:
 
-The Titans are the supreme warforms of these Realms.
+- **Sun-Scale Verdict Descent** — Aten Ra enters The Sun-Scale Gate under stable gate under ma’at strain.
+- **Thunder-Oath Root Gauntlet** — Asgardian enters The Thunder-Oath Gate under ruin gate with active oath memory.
+- **Laurel-Sky Hubris Trial** — Olympian enters The Laurel-Sky Gate under stable gate with oracle vapor leakage.
+- **Torii-Moon Mirror Road** — Kami enters The Torii-Moon Gate under distortion gate with ritual rerouting.
+- **Silver-Root Geas Labyrinth** — Tuatha enters The Silver-Root Gate under sealed gate with fae time bleed.
+- **Choir-Vault Discord Ascent** — Empyrean enters The Choir-Vault Gate under wound gate leaking memory-burning radiance.
+- **Black-Iron Debt Descent** — Infernal Dominion enters The Black-Iron Gate under distortion gate bound by contract clauses.
 
-They are not humans in armor. They are not extradimensional beings. They are not machines. They are not gods in the simple human sense.
+## Playable Character Canon
 
-Titans are colossal extradimensional beings shaped by the laws, memories, symbols, materials, wounds, and sacred powers of their home Realms. Each Titan is a living expression of its civilization's deepest truth.
+Playable characters are gods and goddesses from the seven source Realms. They are not mortal heroes, soldiers, machines, aliens, or generic fantasy champions. Stable internal IDs may retain legacy Titan wording, but fiction-facing canon says playable deity.
 
-A solar Realm creates Titans of judgment, radiance, command, and sacred order. A storm Realm creates Titans of oath, endurance, fury, and thunder. A celestial Realm creates Titans of glory, perfection, victory, and divine supremacy. A spirit Realm creates Titans of balance, precision, shrine-power, and ancestral force. A living nature Realm creates Titans of roots, stone, moonlit groves, healing, and adaptation. A radiant hierarchy creates Titans of order, preservation, law, protection, and anti-chaos. An infernal dominion creates Titans of ambition, conquest, fire, chains, survival, and power.
+Ascension uses a one-selected-deity model: the player chooses one god or goddess, enters a dangerous route, fights many enemies, solves hazards, withstands elite locks, claims lore or relic detours, and defeats a boss chamber that expresses the route's broken law.
 
-Each Titan is powerful enough to become the source of an ancient myth.
+## Conflict Rule
 
-But Mythos Gates is not a story of good versus evil.
+Mythos Gates is not a story of good versus evil. It is a war between civilizations that all believe they are right.
 
-It is a war between civilizations that all believe they are right.
+The Empyrean believe existence survives through order. The Infernal Dominion believe power belongs to those capable of wielding it. Aten Ra believes Ma’at must channel power. The Asgardian Realms believe oaths give war meaning. The Olympian Realms believe excellence proves divinity. The Kami Realms believe balance must be defended with precision. The Tuatha Realms believe the living world adapts and endures.
 
-The Empyrean believe existence can only survive through order. The Infernal Dominion believe power belongs to those capable of wielding it. The Aten Ra believe sacred order must channel power. The Asgardian Realms believe oaths give war meaning. The Olympian Realms believe excellence proves divinity. The Kami Realms believe balance must be defended with precision. The Tuatha Realms believe the living world adapts and endures.
+Beyond them moves the Hollow: not a playable Realm, but an anti-civilization that consumes identity, memory, and terrain law.
 
-None of them hold the full truth. None of them are innocent. None of them are purely monstrous. Each Realm carries beauty, violence, memory, pride, and fear.
-
-Beyond the surviving Realms are deeper threats: the Forgotten, the Hollow, the Beast Realms, the Gateborn, and Ancient World Bosses.
-
-The current age begins in the ruins of certainty.
-
-The old paths are broken. The Gates are reopening. The Realms are mobilizing. The Titans are awakening. Forgotten powers are stirring beneath sealed dimensions. And something buried before the Ascension Collapse is beginning to move again.
-
-Mythos Gates is the story of mythological civilizations fighting over the broken machinery of reality — not with science, not with spaceships, not with alien technology, but with ancient power, sacred law, living myth, and colossal Titans born from the souls of their Realms.
+Mythos Gates: Ascension is the story of gods and goddesses crossing the broken machinery of reality — not with science, not with spaceships, and not with alien technology, but with sacred law, living myth, source-culture power, and route-by-route choices that reveal what the Gates are doing to the Realms.

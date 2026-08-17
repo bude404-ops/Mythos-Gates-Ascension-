@@ -1,57 +1,39 @@
 # 07 — Glossary
 
-## Ascension Collapse
+## Mythos Gates
 
-The catastrophic event that shattered the old dimensional order, broke ancient Gate roads, damaged Realm civilizations, destabilized Mythos Gates, and awakened dormant forces.
-
-## Ancient World Boss
-
-A singular legendary being that does not belong to a conventional faction. Ancient World Bosses are threats, guardians, remnants, or living disasters.
-
-## Beast Realms
-
-Primordial extradimensional wilderness domains ruled by mythological creatures rather than organized civilizations.
-
-## Empyrean
-
-A radiant extradimensional civilization that inspired human legends of Heaven, angels, divine messengers, celestial kingdoms, and heavenly guardians. They represent order, hierarchy, preservation, and law.
-
-## Extradimensional
-
-Existing beyond normal Earth reality. Extradimensional beings are not extradimensional beings and do not come from realms, galaxies, or outer space.
-
-## Forgotten
-
-Ancient beings, broken gods, lost warriors, ruined civilizations, relic guardians, and memory fragments that lost identity after disconnection from their original Realm.
-
-## Gateborn
-
-Entities created, transformed, or mutated by unstable Mythos Gates.
-
-## Hollow
-
-Entities that consume life, magic, memory, and identity, leaving civilizations physically intact but spiritually empty.
-
-## Infernal Dominion
-
-A powerful extradimensional civilization that inspired human legends of Hell, demons, devils, infernal beasts, underworld rulers, fire, and darkness. They represent power, ambition, conquest, hierarchy, and survival.
-
-## Mythic Bleed
-
-The process by which human cultures encountered fragments of extradimensional reality and preserved them as mythology.
+Ancient reality-structures that connect, wound, judge, distort, reveal, or seal Realms. They are not technological portals.
 
 ## Realm
 
-An extradimensional civilization-domain shaped by mythic law, history, symbols, materials, and power. A Realm is not a realm.
+An extradimensional civilization-domain shaped by mythic law, history, symbols, materials, monsters, divine offices, and sacred power.
 
-## Reapers
+## Playable Deity
 
-Legacy lore residue from the older Mythos Gates / Ascension format. If retained, Reapers should be rare post-Collapse oath remnants, not the game's core identity or a playable faction.
+A god or goddess from one of the seven source Realms. The player controls one selected playable deity at a time in standard Ascension missions.
 
 ## Titan
 
-A colossal extradimensional warform shaped by the laws, memories, symbols, materials, wounds, and sacred powers of its home Realm.
+A legacy internal term that remains in stable IDs, schemas, and some engine-facing records. Fiction-facing canon now treats playable characters as gods and goddesses, not generic Titans.
 
-## Mythos Gate
+## Ascension Route
 
-An ancient dimensional gateway connecting Realms, ruins, sealed dimensions, battlefield anomalies, and campaign threats.
+A route-native dungeon campaign path through a Mythos Gate. Each route has an entry Gate, Gate state, room graph, hazards, standard enemies, elite encounter, lore/treasure detours, and boss chamber.
+
+## Hollow
+
+A non-playable anti-civilization threat that consumes identity, memory, magical energy, and terrain law. It pressures all seven routes but never becomes an ordinary playable Realm.
+
+## One Selected Deity Rule
+
+Standard missions use one player-controlled god or goddess against many enemies. No squads, armies, five-character parties, or simultaneous multi-deity teams.
+
+## Current Ascension Routes
+
+- **Sun-Scale Verdict Descent** — The Sun-Scale Gate; Stable Gate under Ma’at strain.
+- **Thunder-Oath Root Gauntlet** — The Thunder-Oath Gate; Ruin Gate with active oath memory.
+- **Laurel-Sky Hubris Trial** — The Laurel-Sky Gate; Stable Gate with oracle vapor leakage.
+- **Torii-Moon Mirror Road** — The Torii-Moon Gate; Distortion Gate with ritual rerouting.
+- **Silver-Root Geas Labyrinth** — The Silver-Root Gate; Sealed Gate with fae time bleed.
+- **Choir-Vault Discord Ascent** — The Choir-Vault Gate; Wound Gate leaking memory-burning radiance.
+- **Black-Iron Debt Descent** — The Black-Iron Gate; Distortion Gate bound by contract clauses.
