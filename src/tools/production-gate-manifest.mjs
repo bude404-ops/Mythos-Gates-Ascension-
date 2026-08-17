@@ -6,6 +6,7 @@ export const productionGateManifest = Object.freeze({
     'src/platform/backend-boundary.mjs',
     'src/platform/runtime-persistence.mjs',
     'src/combat/one-titan-vs-many.mjs',
+    'src/lore/cross-faction-run-ins.mjs',
     'src/platform/runtime-persistence.sql',
     'src/data-loaders/content-loader.mjs',
     'src/data-loaders/schema-contracts.mjs',

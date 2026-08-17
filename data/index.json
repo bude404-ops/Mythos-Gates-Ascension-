@@ -7,16 +7,16 @@
     "titans": 63,
     "characters": 8,
     "units": 0,
-    "artPrompts": 110,
+    "artPrompts": 131,
     "artworks": 0,
     "artImportPipeline": 1,
     "artApprovalManifest": 1,
     "developmentTasks": 49,
     "loreEntries": 35,
     "npcs": 8,
-    "creatures": 18,
+    "creatures": 39,
     "hollowEncounterSystem": 1,
-    "characterBackstories": 89,
+    "characterBackstories": 110,
     "maps": 12,
     "campaigns": 8,
     "chapters": 24,
@@ -89,21 +89,21 @@
     "assetRegistry": 1,
     "githubAssetRepository": 1,
     "blueprint3dSystem": 1,
-    "blueprint3dProductionQueue": 129,
+    "blueprint3dProductionQueue": 171,
     "hollowCreatures": 16,
     "artMapPrompts": 12,
     "artCampaignPrompts": 7,
-    "blueprint3dAssets": 129,
+    "blueprint3dAssets": 171,
     "blueprint3dTitans": 63,
     "blueprint3dBattlefields": 12,
     "blueprint3dGates": 7,
     "blueprint3dFirstHandoffBatch": 12,
     "artApprovalBatches": 2,
     "artApprovedPromptPackages": 11,
-    "githubAssetRegistryEntries": 129,
-    "githubAssetDependencyNodes": 129,
-    "githubAssetManifests": 129,
-    "githubReservedAssetIds": 129,
+    "githubAssetRegistryEntries": 171,
+    "githubAssetDependencyNodes": 171,
+    "githubAssetManifests": 171,
+    "githubReservedAssetIds": 171,
     "creatorHandoffPackets": 23,
     "creatorHandoffBatches": 3,
     "externalAiProductionPackets": 1
@@ -232,8 +232,8 @@
     },
     "art-prompts.json": {
       "path": "data/art-prompts.json",
-      "bytes": 481363,
-      "sha256": "38aa416e5b32e9848848b51326dda7f87a9e49c407cea83e59ecc0bc4a6feaca"
+      "bytes": 509829,
+      "sha256": "da6ee5d73816063922dcb3bc468e821cdbdf5e9258bd85b67119589b7f5db81a"
     },
     "artworks.json": {
       "path": "data/artworks.json",
@@ -267,8 +267,8 @@
     },
     "creatures.json": {
       "path": "data/creatures.json",
-      "bytes": 43748,
-      "sha256": "1efd62a657b1143578915f0e2e2ce455aefe47891e7dec1f2a870b8707c269e6"
+      "bytes": 103555,
+      "sha256": "cc8e6550bd10641405555bc2a789d1d5c90e27eec021a17a9769e399393b7073"
     },
     "hollow-encounter-system.json": {
       "path": "data/hollow-encounter-system.json",
@@ -277,8 +277,8 @@
     },
     "character-backstories.json": {
       "path": "data/character-backstories.json",
-      "bytes": 350095,
-      "sha256": "423b7c83b1988487a5f860703b42eb379a618f57312372ef7f020e8456c4a991"
+      "bytes": 402384,
+      "sha256": "f4b729534740f7ac752862d72ad697da9433100425bc30d85828aa0be7a2c114"
     },
     "maps.json": {
       "path": "data/maps.json",
@@ -287,8 +287,8 @@
     },
     "campaigns.json": {
       "path": "data/campaigns.json",
-      "bytes": 11674,
-      "sha256": "7354c151513e7d395ca3688b13377c0551f66342b9b317e42ae846830586fb86"
+      "bytes": 28146,
+      "sha256": "212ba4563d93aa8b25970833ca46646139831912ab3b16c90a4fef557fb11c42"
     },
     "chapters.json": {
       "path": "data/chapters.json",
@@ -362,8 +362,8 @@
     },
     "mission-registry.json": {
       "path": "data/mission-registry.json",
-      "bytes": 1990244,
-      "sha256": "80aa65435d8f76a65dfad1170a525d5c71fb5375096704a0f7d6529f951f4956"
+      "bytes": 2605553,
+      "sha256": "05248b9e9f922c9a30dc11d3c118d16e38ec54c825f3aa0d8adbcc047e4022a9"
     },
     "mission-dialogue.json": {
       "path": "data/mission-dialogue.json",
@@ -458,7 +458,7 @@
     "continuity-balance-audit.json": {
       "path": "data/continuity-balance-audit.json",
       "bytes": 2652,
-      "sha256": "cf7e363fc557f91571f589b9581d10df9d06da38c71a663961ba0f4198c48ff4"
+      "sha256": "e3fb585775150147fe107cd27d066ebab9291c5bafb92d8b32b132babeca7234"
     },
     "endgame-dashboard.json": {
       "path": "data/endgame-dashboard.json",
@@ -492,8 +492,8 @@
     },
     "enemy-archetype-registry.json": {
       "path": "data/enemy-archetype-registry.json",
-      "bytes": 13148,
-      "sha256": "77a3195afb1d94e931b505688c4bd016b59c4990a88f93e44a839aebc7d6effc"
+      "bytes": 13721,
+      "sha256": "b7f6ed6a800a600ff24deff20d6b273f69cac0857a998e1b419e51256d115eb8"
     },
     "raid-design-document.json": {
       "path": "data/raid-design-document.json",
@@ -638,18 +638,18 @@
     "3d-blueprint-system.json": {
       "path": "data/3d-blueprint-system.json",
       "bytes": 1523,
-      "sha256": "d93136c88bca1c610ababceb171706fcf14250e882436357888163c09e9f89e2"
+      "sha256": "9a8680ca43c623a1d6f18b9f2182f8370e6a1000593a0bfba64c9b8be60e3659"
     },
     "3d-production-queue.json": {
       "path": "data/3d-production-queue.json",
-      "bytes": 131615,
-      "sha256": "dd6fd90f59cd9dee8353753a5abb5695b3fc2b046120e6b6929ef6fa71a8b333"
+      "bytes": 172002,
+      "sha256": "95c9659770c22f6123affd2b53aac3b1f8cde29da4114441805fbae4e211be6b"
     }
   },
   "artPromptCategories": {
     "Titan": 63,
     "Campaign": 7,
-    "Creature": 18,
+    "Creature": 39,
     "Map": 12,
     "NPC": 8,
     "FactionScreen": 2
@@ -765,13 +765,13 @@
     }
   ],
   "githubAssetStatusCounts": {
-    "AWAITING_SOURCE_ASSET": 129
+    "AWAITING_SOURCE_ASSET": 171
   },
   "githubAssetTypeCounts": {
     "BATTLEFIELD": 12,
     "CHARACTER": 8,
-    "CREATURE": 18,
-    "ENEMY": 18,
+    "CREATURE": 39,
+    "ENEMY": 39,
     "GATE": 7,
     "GLOBAL_REFERENCE": 3,
     "TITAN": 63
@@ -791,7 +791,7 @@
   "blueprint3dSystem": {
     "status": "IMPLEMENTED",
     "director": "3D Asset Director",
-    "registryTotal": 129,
+    "registryTotal": 171,
     "registry": "3D_Blueprints/Registry/blueprint-registry.json",
     "productionQueue": "data/3d-production-queue.json",
     "firstHandoffBatch": [
@@ -855,14 +855,14 @@
   },
   "githubAssetRegistry": {
     "status": "IMPLEMENTED",
-    "entries": 129,
-    "awaitingSource": 129,
+    "entries": 171,
+    "awaitingSource": 171,
     "sourceDiscovered": 0
   },
   "githubAssetManifests": {
     "status": "IMPLEMENTED",
-    "count": 129,
-    "reservedIds": 129
+    "count": 171,
+    "reservedIds": 171
   },
   "creatorHandoff": {
     "status": "VALID",
@@ -892,7 +892,7 @@
   },
   "githubAssetDependencyGraph": {
     "status": "IMPLEMENTED",
-    "nodes": 129
+    "nodes": 171
   },
   "externalAiProduction": {
     "status": "ACTIVE_SOURCE_OF_TRUTH",

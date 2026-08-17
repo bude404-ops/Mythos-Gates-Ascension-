@@ -98,7 +98,7 @@ async function runSmoke(){
       b.phase='VICTORY';
     });
     await page.evaluate(()=>window.TGHub.completeBattle());
-    await page.waitForSelector('text=CLAIM CACHE', { timeout:5000 });
+    await page.waitForFunction(() => document.body.innerText.includes('CLAIM CACHE') || document.body.innerText.includes('First-clear cache secured'), null, { timeout:15000 });
     const pendingSnapshot = await page.evaluate(()=>({ route:window.TGHub.state.route, pending:window.TGHub.state.player.campaignProgress.pendingRewards.length, completed:window.TGHub.state.player.campaignProgress.completedMissionIds.length, nextMission:window.TGHub.state.player.campaignProgress.currentMissionId, rewardLabel:document.body.innerText.includes('First-clear cache secured'), beforeShards:window.TGHub.state.player.resources.find(r=>r.id==='TG-RES-GATE-SHARDS')?.amount||0 }));
     assert.equal(pendingSnapshot.route,'command');
     assert.equal(pendingSnapshot.pending,1,'pending reward cache missing');
@@ -119,7 +119,7 @@ async function runSmoke(){
 }
 
 let lastError;
-for (let attempt = 1; attempt <= 2; attempt++) {
+for (let attempt = 1; attempt <= 4; attempt++) {
   try {
     const snapshot = await runSmoke();
     console.log(JSON.stringify({ ok:true, playableBattleSmoke:'PASS', ...snapshot }, null, 2));

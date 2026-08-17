@@ -1,0 +1,55 @@
+{
+  "schema": "TG_ASSET_MANIFEST_V1",
+  "asset_id": "ENEMY_025",
+  "asset_type": "enemy",
+  "canonical_name": "Olympian Laurel Hoplon Guard",
+  "slug": "olympian-laurel-hoplon-guard",
+  "source": "awaiting_external_source",
+  "status": "AWAITING_SOURCE_ASSET",
+  "version": "v000",
+  "versions": {
+    "current": "v000",
+    "previous": [],
+    "archived": []
+  },
+  "source_file": null,
+  "source_slots": {},
+  "game_ready": null,
+  "preview": null,
+  "blueprint": "3D_Blueprints/Characters/Enemies/ENEMY_025_laurel-hoplon-guard/metadata.json",
+  "model": null,
+  "material": null,
+  "rig": null,
+  "animations": null,
+  "vfx": null,
+  "battlefield_references": [],
+  "dependencies": [],
+  "dependent_assets": [],
+  "lore_reference": "TG-CREATURE-025",
+  "faction_reference": "Olympian",
+  "scale_reference": "MASTER_SCALE",
+  "requirements": {
+    "lod_required": true,
+    "collision_required": true,
+    "rig_required": true,
+    "animation_required": true,
+    "master_scale_required": true
+  },
+  "validation": {
+    "status": "NEEDS_SOURCE_ASSET",
+    "lod_status": "REQUIRED_UNKNOWN",
+    "collision_status": "REQUIRED_UNKNOWN"
+  },
+  "storage_policy": {
+    "original_source_preserved": true,
+    "source_vs_game_ready": "Original source assets are preserved under source/ or external_uri. Optimized runtime outputs belong under game_ready/. Previews belong under preview/ or assets/previews/. Never overwrite source merely to optimize it.",
+    "large_binary_strategy": "Use Git LFS or external_uri for large files; manifests and metadata remain normal Git."
+  },
+  "canon_protection": {
+    "authority": "Existing Canon/Lore system",
+    "unmatched_status": "NEEDS_CANON_REVIEW",
+    "no_lore_invention": true
+  },
+  "created_date": "2026-08-17",
+  "updated_date": "2026-08-17"
+}

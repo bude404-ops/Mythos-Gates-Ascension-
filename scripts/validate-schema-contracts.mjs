@@ -58,6 +58,11 @@ const contracts = [
     name: 'one-titan-vs-many-combat',
     schemaPath: 'schemas/one-titan-vs-many-combat.schema.json',
     records: [JSON.parse(fs.readFileSync('data/one-titan-vs-many-combat.json', 'utf8'))]
+  },
+  {
+    name: 'cross-faction-encounter-pool',
+    schemaPath: 'schemas/cross-faction-encounter-pool.schema.json',
+    records: JSON.parse(fs.readFileSync('data/cross-faction-encounter-pools.json', 'utf8'))
   }
 ];
 

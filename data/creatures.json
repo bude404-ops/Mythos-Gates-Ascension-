@@ -611,7 +611,7 @@
     "status": "Gameplay Ready",
     "director": "Gameplay Director",
     "playable": false,
-    "lore": "A crawling banner-creature that grew from the Forgotten Standard Bearer’s shadow and devours unit identity.",
+    "lore": "A crawling banner-creature that grew from the Forgotten Standard Bearer\u2019s shadow and devours unit identity.",
     "visualDescription": "Low quadruped made of torn banners, bone pole ribs, mouth hidden under cloth, erased sigils crawling over hide.",
     "abilities": [
       "Devour Insignia",
@@ -1106,7 +1106,7 @@
     "status": "Gameplay Ready",
     "director": "Systems Director",
     "playable": false,
-    "lore": "A thin assassin that steals the memory of a Titan’s last tactic, forcing the Titan to adapt instead of repeat.",
+    "lore": "A thin assassin that steals the memory of a Titan\u2019s last tactic, forcing the Titan to adapt instead of repeat.",
     "visualDescription": "Slender black blade-limbed figure, empty face veil, stolen glyphs orbiting its fingers, quiet white eye-cracks.",
     "abilities": [
       "Steal Pattern",
@@ -1235,5 +1235,1643 @@
       "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
     },
     "balanceNotes": "Harder solo tuning: World Boss CHAMPION pressures one active Titan through behavior first, stats second; threatWeight 12.0 controls encounter budgets."
+  },
+  {
+    "id": "TG-CREATURE-019",
+    "slug": "sun-seal-vigilant",
+    "name": "Aten Ra Sun-Seal Vigilant",
+    "category": "Aten Ra Faction Run-In",
+    "realm": "The Solar Dominion of Khepra",
+    "sourceFactionId": "TG-FACTION-001",
+    "threatFactionId": null,
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A judgment construct sworn to Ma\u2019at balance, deployed when outsiders trespass sacred solar courts; it tests law through radiant lanes rather than cruelty.",
+    "visualDescription": "Electrum linen-light armor, Aten hand-ray halo plates, faience turquoise seals, lapis visor, obsidian counterweight blade.",
+    "abilities": [
+      "Aten Ray Lattice",
+      "Ma\u2019at Measure Bind",
+      "Solar Lane Verdict"
+    ],
+    "mapBehavior": "Locks lanes and punishes Titans who ignore objective geometry.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-019",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-019",
+    "encounterTags": [
+      "faction-run-in",
+      "aten-ra",
+      "control",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "CONTROLLER",
+    "stats": {
+      "levelBand": [
+        25,
+        100
+      ],
+      "hp": 126,
+      "damage": 22,
+      "range": 3,
+      "armor": 7,
+      "resistance": 8,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 3.0,
+      "xpValue": 46
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "CONTROLLER",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction CONTROL run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-001",
+      "homeFactionName": "Aten Ra",
+      "sourceCultureRule": "source culture humans later copied as Egyptian solar myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-020",
+    "slug": "scarab-dawn-engine",
+    "name": "Khepri Scarab Dawn Engine",
+    "category": "Aten Ra Faction Run-In",
+    "realm": "The Solar Dominion of Khepra",
+    "sourceFactionId": "TG-FACTION-001",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A mobile dawn-engine guardian from Khepra gateworks, not a robot copy of Egyptian myth but the source-culture machine humans later misunderstood as sacred scarab power.",
+    "visualDescription": "Titanic scarab-forge body of electrum, Nile-black silt glass legs, sun core under royal linen-light membranes.",
+    "abilities": [
+      "Dawn Roll",
+      "Wingflare Guard",
+      "Silt-Glass Crush"
+    ],
+    "mapBehavior": "Advances slowly, guards Gates, and forces AoE decisions around hard shell armor.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-020",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-020",
+    "encounterTags": [
+      "faction-run-in",
+      "aten-ra",
+      "brute",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 14,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction BRUTE run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-001",
+      "homeFactionName": "Aten Ra",
+      "sourceCultureRule": "source culture humans later copied as Egyptian solar myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-021",
+    "slug": "uraeus-counter-edict",
+    "name": "Uraeus Counter-Edict Serpent",
+    "category": "Aten Ra Faction Run-In",
+    "realm": "The Solar Dominion of Khepra",
+    "sourceFactionId": "TG-FACTION-001",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A living legal curse from Aten Ra sanctums that marks oathbreakers and enemy scouts during cross-faction run-ins.",
+    "visualDescription": "Solar cobra silhouette with Red Land jasper hood, hand-ray spine, and unreadable non-glyph light law.",
+    "abilities": [
+      "Counter-Edict Spit",
+      "Blinding Crown",
+      "Law Venom"
+    ],
+    "mapBehavior": "Applies accuracy and cooldown pressure while staying near landmarks.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-021",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-021",
+    "encounterTags": [
+      "faction-run-in",
+      "aten-ra",
+      "debuffer",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "DISRUPTOR",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 7,
+      "resistance": 8,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "DISRUPTOR",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction DEBUFFER run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-001",
+      "homeFactionName": "Aten Ra",
+      "sourceCultureRule": "source culture humans later copied as Egyptian solar myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-022",
+    "slug": "rime-oath-raider",
+    "name": "Storm-Oath Rime Raider",
+    "category": "Asgardian Faction Run-In",
+    "realm": "The Storm-Rooted Aesir Holds",
+    "sourceFactionId": "TG-FACTION-002",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A shield-sworn raider who treats every Gate incursion as an oath trial; hostile run-ins are ritual challenge, not banditry.",
+    "visualDescription": "Frost-iron mail, storm-root knots, raven-black cloak strips, bridge-rune shield marks that are symbolic rather than readable text.",
+    "abilities": [
+      "Rime Axe Hook",
+      "Bridge-Oath Charge",
+      "Shieldwall Break"
+    ],
+    "mapBehavior": "Closes distance and uses chokepoints to force Titan repositioning.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-022",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-022",
+    "encounterTags": [
+      "faction-run-in",
+      "asgardian",
+      "melee",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction MELEE run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-002",
+      "homeFactionName": "Asgardian",
+      "sourceCultureRule": "source culture humans later copied as Norse myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-023",
+    "slug": "thunder-bridge-jotun",
+    "name": "Thunder-Bridge Jotun",
+    "category": "Asgardian Faction Run-In",
+    "realm": "The Storm-Rooted Aesir Holds",
+    "sourceFactionId": "TG-FACTION-002",
+    "threatFactionId": null,
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A mountain-blood giant bound to Aesir border law; enormous, but still beneath Titan scale unless empowered by Gate storm.",
+    "visualDescription": "Basalt-blue giant with lightning scars, storm-root manacles, broken bridge stones strapped as armor.",
+    "abilities": [
+      "Storm Boulder",
+      "Oath Roar",
+      "Bridge Quake"
+    ],
+    "mapBehavior": "Controls elevation and pushes the Titan away from objectives.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-023",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-023",
+    "encounterTags": [
+      "faction-run-in",
+      "asgardian",
+      "brute",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        25,
+        100
+      ],
+      "hp": 126,
+      "damage": 22,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 14,
+      "threatWeight": 3.0,
+      "xpValue": 46
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction BRUTE run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-002",
+      "homeFactionName": "Asgardian",
+      "sourceCultureRule": "source culture humans later copied as Norse myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-024",
+    "slug": "valkyr-storm-caller",
+    "name": "Valkyr Storm-Caller",
+    "category": "Asgardian Faction Run-In",
+    "realm": "The Storm-Rooted Aesir Holds",
+    "sourceFactionId": "TG-FACTION-002",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A battlefield psychopomp who calls storm pressure over oathbreakers and strengthens sworn allies during faction clashes.",
+    "visualDescription": "Winged storm helm, rain-bright spear, dark feather mantle, aurora shield light.",
+    "abilities": [
+      "Gale Mark",
+      "Oath Mend",
+      "Raven Sight"
+    ],
+    "mapBehavior": "Buffs melee units and marks exposed Titan routes.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-024",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-024",
+    "encounterTags": [
+      "faction-run-in",
+      "asgardian",
+      "support",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "GUARDIAN",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 7,
+      "resistance": 8,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "GUARDIAN",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction SUPPORT run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-002",
+      "homeFactionName": "Asgardian",
+      "sourceCultureRule": "source culture humans later copied as Norse myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-025",
+    "slug": "laurel-hoplon-guard",
+    "name": "Olympian Laurel Hoplon Guard",
+    "category": "Olympian Faction Run-In",
+    "realm": "The Celestial Heights of Olympus",
+    "sourceFactionId": "TG-FACTION-003",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A city-state guardian of the Celestial Heights, trained to treat foreign Titans as trial defendants before the marble sky courts.",
+    "visualDescription": "Bronze-white hoplon armor, laurel flame crest, marble-cloud greaves, star-polished spear.",
+    "abilities": [
+      "Phalanx Pin",
+      "Laurel Guard",
+      "Trial Rebuke"
+    ],
+    "mapBehavior": "Creates defensive walls and protects ranged allies.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-025",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-025",
+    "encounterTags": [
+      "faction-run-in",
+      "olympian",
+      "defender",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "GUARDIAN",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "GUARDIAN",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction DEFENDER run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-003",
+      "homeFactionName": "Olympian",
+      "sourceCultureRule": "source culture humans later copied as Greek myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-026",
+    "slug": "oracle-glass-archer",
+    "name": "Oracle Glass Archer",
+    "category": "Olympian Faction Run-In",
+    "realm": "The Celestial Heights of Olympus",
+    "sourceFactionId": "TG-FACTION-003",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A sight-bound archer from Olympian oracle terraces who attacks through predicted angles instead of brute force.",
+    "visualDescription": "Translucent oracle glass bow, white marble mask, gold laurel optics, sky-blue cloak.",
+    "abilities": [
+      "Predicted Shot",
+      "Skyline Volley",
+      "Fate Thread Mark"
+    ],
+    "mapBehavior": "Fires from elevation and rewards the player for closing lanes.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-026",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-026",
+    "encounterTags": [
+      "faction-run-in",
+      "olympian",
+      "ranged",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "CONTROLLER",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 5,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "CONTROLLER",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction RANGED run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-003",
+      "homeFactionName": "Olympian",
+      "sourceCultureRule": "source culture humans later copied as Greek myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-027",
+    "slug": "bronze-chimera-trialbeast",
+    "name": "Bronze Chimera Trialbeast",
+    "category": "Olympian Faction Run-In",
+    "realm": "The Celestial Heights of Olympus",
+    "sourceFactionId": "TG-FACTION-003",
+    "threatFactionId": null,
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A sacred trial creature assembled by Olympian arena law; it proves worth through mixed threats, not random monstrosity.",
+    "visualDescription": "Bronze lion-goat-serpent form, marble joint rings, ember mane, laurel brand.",
+    "abilities": [
+      "Tri-Aspect Maul",
+      "Arena Flame",
+      "Serpent Feint"
+    ],
+    "mapBehavior": "Combines melee, hazard, and debuff pressure.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-027",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-027",
+    "encounterTags": [
+      "faction-run-in",
+      "olympian",
+      "elite",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "ELITE",
+    "stats": {
+      "levelBand": [
+        25,
+        100
+      ],
+      "hp": 126,
+      "damage": 22,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 14,
+      "threatWeight": 3.0,
+      "xpValue": 46
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "ELITE",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction ELITE run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-003",
+      "homeFactionName": "Olympian",
+      "sourceCultureRule": "source culture humans later copied as Greek myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-028",
+    "slug": "torii-foxfire-runner",
+    "name": "Kami Torii Foxfire Runner",
+    "category": "Kami Faction Run-In",
+    "realm": "The Sacred Kingdoms",
+    "sourceFactionId": "TG-FACTION-004",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A shrine-bound trickster spirit that defends contracts and boundaries; hostile only when a mission violates local spirit law.",
+    "visualDescription": "Vermilion mask, foxfire tails, lacquer-black footguards, paper seal streamers.",
+    "abilities": [
+      "Foxfire Dash",
+      "Mirror Feint",
+      "Seal Nip"
+    ],
+    "mapBehavior": "Flanks the Titan and baits wasted AoE.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-028",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-028",
+    "encounterTags": [
+      "faction-run-in",
+      "kami",
+      "fast",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "HUNTER",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 1,
+      "armor": 5,
+      "resistance": 5,
+      "movement": 5,
+      "initiative": 56,
+      "accuracy": 78,
+      "evasion": 13,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "HUNTER",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction FAST run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-004",
+      "homeFactionName": "Kami",
+      "sourceCultureRule": "source culture humans later copied as Japanese myth and Shinto shrine lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-029",
+    "slug": "mirror-lake-onryo",
+    "name": "Mirror-Lake Onryo",
+    "category": "Kami Faction Run-In",
+    "realm": "The Sacred Kingdoms",
+    "sourceFactionId": "TG-FACTION-004",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A grievance spirit reflected through Gate water, attacking broken promises with silence, drag, and cursed positioning.",
+    "visualDescription": "Pale mirror-water body, wet black hair veil, cracked moon reflection halo, shrine-rope wrists.",
+    "abilities": [
+      "Grudge Pull",
+      "Reflection Hex",
+      "Drowned Silence"
+    ],
+    "mapBehavior": "Pulls the Titan toward hazards and slows recovery.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-029",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-029",
+    "encounterTags": [
+      "faction-run-in",
+      "kami",
+      "debuffer",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "DISRUPTOR",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 7,
+      "resistance": 8,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "DISRUPTOR",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction DEBUFFER run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-004",
+      "homeFactionName": "Kami",
+      "sourceCultureRule": "source culture humans later copied as Japanese myth and Shinto shrine lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-030",
+    "slug": "kami-storm-komainu",
+    "name": "Storm Komainu Guardian",
+    "category": "Kami Faction Run-In",
+    "realm": "The Sacred Kingdoms",
+    "sourceFactionId": "TG-FACTION-004",
+    "threatFactionId": null,
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A shrine guardian lion-dog awakened by tempest vows to hold sacred thresholds against faction trespass.",
+    "visualDescription": "Stone-lacquer komainu with storm cloud mane, gold bell collar, vermilion ward plates.",
+    "abilities": [
+      "Threshold Guard",
+      "Thunder Bite",
+      "Ward Howl"
+    ],
+    "mapBehavior": "Guards objective gates and protects support spirits.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-030",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-030",
+    "encounterTags": [
+      "faction-run-in",
+      "kami",
+      "defender",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "GUARDIAN",
+    "stats": {
+      "levelBand": [
+        25,
+        100
+      ],
+      "hp": 126,
+      "damage": 22,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 3.0,
+      "xpValue": 46
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "GUARDIAN",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction DEFENDER run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-004",
+      "homeFactionName": "Kami",
+      "sourceCultureRule": "source culture humans later copied as Japanese myth and Shinto shrine lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-031",
+    "slug": "moon-grove-stagwarden",
+    "name": "Avalora Moon-Grove Stagwarden",
+    "category": "Tuatha Faction Run-In",
+    "realm": "Avalora",
+    "sourceFactionId": "TG-FACTION-005",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A living border guardian grown from Avalora memory groves, hostile when foreign forces wound terrain or steal moon-root relics.",
+    "visualDescription": "Silver antlered guardian, bark-and-moss armor, moonlit leaf mantle, root bow.",
+    "abilities": [
+      "Moonroot Shot",
+      "Grove Snare",
+      "Memory Antler"
+    ],
+    "mapBehavior": "Controls paths with roots and punishes straight-line movement.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-031",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-031",
+    "encounterTags": [
+      "faction-run-in",
+      "tuatha",
+      "ranged",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "CONTROLLER",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 5,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "CONTROLLER",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction RANGED run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-005",
+      "homeFactionName": "Tuatha",
+      "sourceCultureRule": "source culture humans later copied as Celtic and Irish fae myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-032",
+    "slug": "bog-sidhe-hexer",
+    "name": "Bog Sidhe Hexer",
+    "category": "Tuatha Faction Run-In",
+    "realm": "Avalora",
+    "sourceFactionId": "TG-FACTION-005",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A fae court saboteur who protects bargains, names, and hidden roads by twisting enemy advantages into debts.",
+    "visualDescription": "Peat-dark cloak, blue witchlight eyes, thorn crown, bone-charm staff.",
+    "abilities": [
+      "Name-Tax Hex",
+      "Mire Veil",
+      "Debt Ward"
+    ],
+    "mapBehavior": "Debuffs priority abilities and shields allies with bargain wards.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-032",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-032",
+    "encounterTags": [
+      "faction-run-in",
+      "tuatha",
+      "support",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "GUARDIAN",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 7,
+      "resistance": 8,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "GUARDIAN",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction SUPPORT run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-005",
+      "homeFactionName": "Tuatha",
+      "sourceCultureRule": "source culture humans later copied as Celtic and Irish fae myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-033",
+    "slug": "ancient-root-ogre",
+    "name": "Ancient Root Ogre",
+    "category": "Tuatha Faction Run-In",
+    "realm": "Avalora",
+    "sourceFactionId": "TG-FACTION-005",
+    "threatFactionId": null,
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A massive root-fed guardian of wounded woods; it is not evil, but it crushes intruders who ignore Avalora\u2019s living terrain.",
+    "visualDescription": "Huge moss-root body, stone teeth, moon fungus shoulders, braided vine muscles.",
+    "abilities": [
+      "Root Slam",
+      "Living Wall",
+      "Spore Stagger"
+    ],
+    "mapBehavior": "Blocks chokepoints and creates destructible terrain pressure.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-033",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-033",
+    "encounterTags": [
+      "faction-run-in",
+      "tuatha",
+      "brute",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        25,
+        100
+      ],
+      "hp": 126,
+      "damage": 22,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 14,
+      "threatWeight": 3.0,
+      "xpValue": 46
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction BRUTE run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-005",
+      "homeFactionName": "Tuatha",
+      "sourceCultureRule": "source culture humans later copied as Celtic and Irish fae myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-034",
+    "slug": "radiant-censor-cherub",
+    "name": "Empyrean Radiant Censor",
+    "category": "Empyrean Faction Run-In",
+    "realm": "The Radiant Hierarchies",
+    "sourceFactionId": "TG-FACTION-006",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A lower hierarchic enforcer that burns contradiction from trespassers; beautiful, severe, and terrifyingly procedural.",
+    "visualDescription": "Many-eyed gold-white censor form, small wing arrays, scriptless halos, incense-fire censer.",
+    "abilities": [
+      "Censure Beam",
+      "Halo Sight",
+      "Contradiction Brand"
+    ],
+    "mapBehavior": "Marks the Titan and supports disciplined ranged fire.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-034",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-034",
+    "encounterTags": [
+      "faction-run-in",
+      "empyrean",
+      "ranged",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "CONTROLLER",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 5,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "CONTROLLER",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction RANGED run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-006",
+      "homeFactionName": "Empyrean",
+      "sourceCultureRule": "source culture humans later copied as angelic and heavenly lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-035",
+    "slug": "throne-spear-adjudicator",
+    "name": "Throne-Spear Adjudicator",
+    "category": "Empyrean Faction Run-In",
+    "realm": "The Radiant Hierarchies",
+    "sourceFactionId": "TG-FACTION-006",
+    "threatFactionId": null,
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A martial officer of the Radiant Hierarchies who treats every cross-faction incursion as a case requiring forceful ruling.",
+    "visualDescription": "Tall ivory-gold armor, throne-wheel backpiece, long radiant spear, sapphire judgment core.",
+    "abilities": [
+      "Adjudicator Thrust",
+      "Radiant Interdict",
+      "Edict Step"
+    ],
+    "mapBehavior": "Uses reach and zone denial to pin Titan movement.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-035",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-035",
+    "encounterTags": [
+      "faction-run-in",
+      "empyrean",
+      "melee",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        25,
+        100
+      ],
+      "hp": 126,
+      "damage": 22,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 3.0,
+      "xpValue": 46
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction MELEE run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-006",
+      "homeFactionName": "Empyrean",
+      "sourceCultureRule": "source culture humans later copied as angelic and heavenly lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-036",
+    "slug": "seraphic-bastion-servitor",
+    "name": "Seraphic Bastion Servitor",
+    "category": "Empyrean Faction Run-In",
+    "realm": "The Radiant Hierarchies",
+    "sourceFactionId": "TG-FACTION-006",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A shield servant built around protection rites, deployed to preserve Empyrean order during Gate events.",
+    "visualDescription": "White-gold shield construct with folded wing plates, opal joints, low-burning halo engine.",
+    "abilities": [
+      "Bastion Wing",
+      "Sanction Shield",
+      "Order Pulse"
+    ],
+    "mapBehavior": "Protects ranged units and counters reckless cleaves.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-036",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-036",
+    "encounterTags": [
+      "faction-run-in",
+      "empyrean",
+      "defender",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "GUARDIAN",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "GUARDIAN",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction DEFENDER run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-006",
+      "homeFactionName": "Empyrean",
+      "sourceCultureRule": "source culture humans later copied as angelic and heavenly lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-037",
+    "slug": "cinder-chain-bailiff",
+    "name": "Infernal Cinder-Chain Bailiff",
+    "category": "Infernal Dominion Faction Run-In",
+    "realm": "The Infernal Dominion",
+    "sourceFactionId": "TG-FACTION-007",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A contract enforcer of the Infernal Dominion; it fights for debt, jurisdiction, and ambition, not cartoon evil.",
+    "visualDescription": "Black iron coat, ember chain ledgers, horned court mask, ash-red sigil cuffs.",
+    "abilities": [
+      "Chain Writ",
+      "Debt Drag",
+      "Cinder Lock"
+    ],
+    "mapBehavior": "Drags the Titan into bad positions and taxes movement.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-037",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-037",
+    "encounterTags": [
+      "faction-run-in",
+      "infernal-dominion",
+      "control",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "CONTROLLER",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 7,
+      "resistance": 8,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "CONTROLLER",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction CONTROL run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-007",
+      "homeFactionName": "Infernal Dominion",
+      "sourceCultureRule": "source culture humans later copied as hell, demonology, and infernal contract lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-038",
+    "slug": "brass-hellhound-packfiend",
+    "name": "Brass Hellhound Packfiend",
+    "category": "Infernal Dominion Faction Run-In",
+    "realm": "The Infernal Dominion",
+    "sourceFactionId": "TG-FACTION-007",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A court-bred pursuit beast used by Infernal houses to chase oathbreakers through Gate corridors and enemy lands.",
+    "visualDescription": "Lean brass-armored hellhound, coal eyes, ash mane, molten claw seams.",
+    "abilities": [
+      "Pack Lunge",
+      "Scent of Debt",
+      "Ash Snap"
+    ],
+    "mapBehavior": "Fast pressure unit that surrounds and exposes the Titan.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-038",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-038",
+    "encounterTags": [
+      "faction-run-in",
+      "infernal-dominion",
+      "fast",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "HUNTER",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 1,
+      "armor": 5,
+      "resistance": 5,
+      "movement": 5,
+      "initiative": 56,
+      "accuracy": 78,
+      "evasion": 13,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "HUNTER",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction FAST run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-007",
+      "homeFactionName": "Infernal Dominion",
+      "sourceCultureRule": "source culture humans later copied as hell, demonology, and infernal contract lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "TG-CREATURE-039",
+    "slug": "black-iron-executor",
+    "name": "Black Iron Executor",
+    "category": "Infernal Dominion Faction Run-In",
+    "realm": "The Infernal Dominion",
+    "sourceFactionId": "TG-FACTION-007",
+    "threatFactionId": null,
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A sanctioned executioner whose brutality is bureaucratic: once the contract permits violence, it becomes inevitable.",
+    "visualDescription": "Towering black iron knight, execution brand axe, furnace chest, crimson wax seals.",
+    "abilities": [
+      "Execution Arc",
+      "Sentence Mark",
+      "Furnace Guard"
+    ],
+    "mapBehavior": "Elite burst threat with telegraphed lethal windows.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "TG-PROMPT-TG-CREATURE-039",
+    "artworkId": null,
+    "backstoryId": "TG-BACKSTORY-TG-CREATURE-039",
+    "encounterTags": [
+      "faction-run-in",
+      "infernal-dominion",
+      "elite",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "ELITE",
+    "stats": {
+      "levelBand": [
+        25,
+        100
+      ],
+      "hp": 126,
+      "damage": 22,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 14,
+      "threatWeight": 3.0,
+      "xpValue": 46
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "ELITE",
+      "priority": [
+        "pressure the lone Titan from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction ELITE run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "TG-FACTION-007",
+      "homeFactionName": "Infernal Dominion",
+      "sourceCultureRule": "source culture humans later copied as hell, demonology, and infernal contract lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
   }
 ]

@@ -1,7 +1,7 @@
 {
   "id": "TG-ENEMY-ARCHETYPE-REGISTRY-001",
   "version": "1.0.0",
-  "generated": "2026-08-13T00:00:00Z",
+  "generated": "2026-08-17T00:00:00Z",
   "taskId": "TG-DEV-023",
   "status": "IMPLEMENTED",
   "directive": "Production enemy archetype registry, tactical scaling budgets, and AI profile coverage for solo-Titan missions.",
@@ -12,8 +12,8 @@
     "game/solo-battle-engine.mjs"
   ],
   "coverage": {
-    "creatures": 18,
-    "runtimeCovered": 18,
+    "creatures": 39,
+    "runtimeCovered": 39,
     "archetypes": 10,
     "missingCreatureAi": []
   },
@@ -59,7 +59,12 @@
         "TG-CREATURE-010",
         "TG-CREATURE-013",
         "TG-CREATURE-014",
-        "TG-CREATURE-017"
+        "TG-CREATURE-017",
+        "TG-CREATURE-020",
+        "TG-CREATURE-022",
+        "TG-CREATURE-023",
+        "TG-CREATURE-033",
+        "TG-CREATURE-035"
       ],
       "scalesBy": [
         "armor",
@@ -87,7 +92,10 @@
       "key": "HUNTER",
       "purpose": "Threaten from range and punish exposed paths.",
       "counterplay": "Line-of-sight breaks, pursuit reactions, high-ground denial.",
-      "runtimeCreatureIds": [],
+      "runtimeCreatureIds": [
+        "TG-CREATURE-028",
+        "TG-CREATURE-038"
+      ],
       "scalesBy": [
         "range",
         "overwatch frequency",
@@ -115,7 +123,12 @@
       "purpose": "Restrict movement and disrupt clean objective routes.",
       "counterplay": "Cleanse zones, destroy anchors, shift stance, terrain immunity builds.",
       "runtimeCreatureIds": [
-        "TG-CREATURE-016"
+        "TG-CREATURE-016",
+        "TG-CREATURE-019",
+        "TG-CREATURE-026",
+        "TG-CREATURE-031",
+        "TG-CREATURE-034",
+        "TG-CREATURE-037"
       ],
       "scalesBy": [
         "zone size",
@@ -144,7 +157,9 @@
       "purpose": "Attack Momentum, Divinity, cooldowns, and reactions.",
       "counterplay": "Prioritize, interrupt casts, execute before drain resolves.",
       "runtimeCreatureIds": [
-        "TG-CREATURE-006"
+        "TG-CREATURE-006",
+        "TG-CREATURE-021",
+        "TG-CREATURE-029"
       ],
       "scalesBy": [
         "drain amount",
@@ -173,7 +188,12 @@
       "purpose": "Protect bosses, rituals, exits, and high-value threats.",
       "counterplay": "Displacement, terrain collapse, guard-break abilities.",
       "runtimeCreatureIds": [
-        "TG-CREATURE-004"
+        "TG-CREATURE-004",
+        "TG-CREATURE-024",
+        "TG-CREATURE-025",
+        "TG-CREATURE-030",
+        "TG-CREATURE-032",
+        "TG-CREATURE-036"
       ],
       "scalesBy": [
         "shield strength",
@@ -233,7 +253,9 @@
       "runtimeCreatureIds": [
         "TG-CREATURE-009",
         "TG-CREATURE-011",
-        "TG-CREATURE-015"
+        "TG-CREATURE-015",
+        "TG-CREATURE-027",
+        "TG-CREATURE-039"
       ],
       "scalesBy": [
         "mechanic layers",

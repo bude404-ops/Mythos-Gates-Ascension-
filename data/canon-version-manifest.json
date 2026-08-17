@@ -2,8 +2,8 @@
   "id": "TG-CANON-VERSION-MANIFEST-001",
   "schema": "TG_CANON_VERSION_MANIFEST_V1",
   "status": "ACTIVE",
-  "currentCanonVersion": "1.14.0-one-titan-vs-many-combat",
-  "updated": "2026-08-17T01:00:00Z",
+  "currentCanonVersion": "1.15.0-mission-campaign-lore-run-ins",
+  "updated": "2026-08-17T05:30:00Z",
   "policyRef": "docs/production/DATA_MIGRATION_VERSIONING.md",
   "sourceOfTruth": "Git commit history plus this manifest. Runtime adapters consume migrated canonical data; they do not invent canon.",
   "rules": {
@@ -256,6 +256,29 @@
       "validation": [
         "npm run validate:one-titan-vs-many-combat",
         "npm run test:one-titan-vs-many-combat",
+        "npm run precommit:verify"
+      ]
+    },
+    {
+      "id": "TG-MIG-011",
+      "fromVersion": "1.14.0-one-titan-vs-many-combat",
+      "toVersion": "1.15.0-mission-campaign-lore-run-ins",
+      "type": "RUNTIME_PROJECTION",
+      "status": "APPLIED",
+      "owner": "Lore Director",
+      "summary": "Updated all missions and campaigns to carry the mobile UE5 one-Titan loop, lore continuity guardrails, and lore-valid cross-faction run-in pools; added faction-aligned non-playable creatures for mission/event clashes.",
+      "affectedData": [
+        "data/mission-registry.json",
+        "data/campaigns.json",
+        "data/creatures.json",
+        "data/cross-faction-encounter-pools.json",
+        "src/lore/cross-faction-run-ins.mjs",
+        "scripts/validate-mission-campaign-lore-run-ins.mjs",
+        "tests/mission-campaign-lore-run-ins-contract.test.mjs"
+      ],
+      "validation": [
+        "npm run validate:mission-campaign-lore-run-ins",
+        "npm run test:mission-campaign-lore-run-ins",
         "npm run precommit:verify"
       ]
     }

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cross Faction Encounter Pool",
+  "type": "object",
+  "required": [
+    "id",
+    "sourceFactionId",
+    "sourceFactionName",
+    "realm",
+    "creatureIds",
+    "allowedAgainstFactionIds",
+    "usage",
+    "loreRule",
+    "mobileCombatRule"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^TG-CROSS-RUN-IN-[0-9]{3}$"
+    },
+    "sourceFactionId": {
+      "type": "string",
+      "pattern": "^TG-FACTION-[0-9]{3}$"
+    },
+    "sourceFactionName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "realm": {
+      "type": "string",
+      "minLength": 1
+    },
+    "creatureIds": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string",
+        "pattern": "^TG-CREATURE-[0-9]{3}$"
+      }
+    },
+    "allowedAgainstFactionIds": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "string",
+        "pattern": "^TG-FACTION-[0-9]{3}$"
+      }
+    },
+    "usage": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string"
+      }
+    },
+    "loreRule": {
+      "type": "string",
+      "minLength": 40
+    },
+    "mobileCombatRule": {
+      "type": "string",
+      "minLength": 30
+    }
+  },
+  "additionalProperties": true
+}

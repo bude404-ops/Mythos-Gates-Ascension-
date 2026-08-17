@@ -37,11 +37,13 @@ const requiredFiles = [
   'scripts/validate-backend-boundary.mjs',
   'data/runtime-persistence-boundary.json',
   'data/one-titan-vs-many-combat.json',
+  'data/cross-faction-encounter-pools.json',
   'schemas/runtime-persistence.schema.json',
   'scripts/validate-runtime-persistence.mjs',
   'scripts/validate-ue5-dungeon-framework.mjs',
   'scripts/validate-ue5-mobile-first.mjs',
   'scripts/validate-one-titan-vs-many-combat.mjs',
+  'scripts/validate-mission-campaign-lore-run-ins.mjs',
   'scripts/run-stable-command-hub.mjs',
   'tests/platform-core-contract.test.mjs',
   'tests/backend-boundary-contract.test.mjs',
@@ -49,6 +51,7 @@ const requiredFiles = [
   'tests/ue5-dungeon-framework-contract.test.mjs',
   'tests/ue5-mobile-first-contract.test.mjs',
   'tests/one-titan-vs-many-combat-contract.test.mjs',
+  'tests/mission-campaign-lore-run-ins-contract.test.mjs',
   'src/README.md',
   'src/gameplay/index.mjs',
   'src/gameplay/solo-battle/index.mjs',
@@ -58,6 +61,7 @@ const requiredFiles = [
   'src/platform/backend-boundary.mjs',
   'src/platform/runtime-persistence.mjs',
   'src/combat/one-titan-vs-many.mjs',
+  'src/lore/cross-faction-run-ins.mjs',
   'src/platform/runtime-persistence.sql',
   'src/data-loaders/index.mjs',
   'src/data-loaders/content-loader.mjs',
@@ -158,7 +162,8 @@ const schemas = [
   'schemas/ue5-dungeon-framework.schema.json',
   'schemas/ue5-first-mission-zone-template.schema.json',
   'schemas/ue5-mobile-first-architecture.schema.json',
-  'schemas/one-titan-vs-many-combat.schema.json'
+  'schemas/one-titan-vs-many-combat.schema.json',
+  'schemas/cross-faction-encounter-pool.schema.json'
 ];
 for (const schema of schemas) {
   const parsed = JSON.parse(fs.readFileSync(schema, 'utf8'));
@@ -166,7 +171,7 @@ for (const schema of schemas) {
 }
 
 const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-for (const script of ['validate:schemas', 'test:production-modules', 'validate:engine-adapters', 'test:engine-adapters', 'validate:migrations', 'test:migration-contracts', 'validate:platform-core', 'test:platform-core', 'validate:backend-boundary', 'test:backend-boundary', 'validate:runtime-persistence', 'test:runtime-persistence', 'validate:ue5-dungeon-framework', 'test:ue5-dungeon-framework', 'validate:ue5-mobile-first', 'test:ue5-mobile-first', 'validate:one-titan-vs-many-combat', 'test:one-titan-vs-many-combat']) {
+for (const script of ['validate:schemas', 'test:production-modules', 'validate:engine-adapters', 'test:engine-adapters', 'validate:migrations', 'test:migration-contracts', 'validate:platform-core', 'test:platform-core', 'validate:backend-boundary', 'test:backend-boundary', 'validate:runtime-persistence', 'test:runtime-persistence', 'validate:ue5-dungeon-framework', 'test:ue5-dungeon-framework', 'validate:ue5-mobile-first', 'test:ue5-mobile-first', 'validate:one-titan-vs-many-combat', 'test:one-titan-vs-many-combat', 'validate:mission-campaign-lore-run-ins', 'test:mission-campaign-lore-run-ins']) {
   if (!packageJson.scripts?.[script]) issues.push(`Missing production script: ${script}`);
 }
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:schemas')) issues.push('precommit:verify must enforce schema contract validation.');
@@ -187,6 +192,8 @@ if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:ue5-m
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:ue5-mobile-first')) issues.push('precommit:verify must enforce UE5 mobile-first contracts.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:one-titan-vs-many-combat')) issues.push('precommit:verify must enforce one-Titan-vs-many combat validation.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:one-titan-vs-many-combat')) issues.push('precommit:verify must enforce one-Titan-vs-many combat contracts.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:mission-campaign-lore-run-ins')) issues.push('precommit:verify must enforce mission/campaign lore run-in validation.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:mission-campaign-lore-run-ins')) issues.push('precommit:verify must enforce mission/campaign lore run-in contracts.');
 
 const result = {
   ok: issues.length === 0,

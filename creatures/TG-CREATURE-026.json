@@ -1,0 +1,78 @@
+{
+  "id": "TG-CREATURE-026",
+  "slug": "oracle-glass-archer",
+  "name": "Oracle Glass Archer",
+  "category": "Olympian Faction Run-In",
+  "realm": "The Celestial Heights of Olympus",
+  "sourceFactionId": "TG-FACTION-003",
+  "threatFactionId": null,
+  "threatTier": "Major",
+  "status": "Lore Complete",
+  "director": "Lore Director",
+  "playable": false,
+  "lore": "A sight-bound archer from Olympian oracle terraces who attacks through predicted angles instead of brute force.",
+  "visualDescription": "Translucent oracle glass bow, white marble mask, gold laurel optics, sky-blue cloak.",
+  "abilities": [
+    "Predicted Shot",
+    "Skyline Volley",
+    "Fate Thread Mark"
+  ],
+  "mapBehavior": "Fires from elevation and rewards the player for closing lanes.",
+  "artStatus": "Prompt Ready",
+  "artPromptId": "TG-PROMPT-TG-CREATURE-026",
+  "artworkId": null,
+  "backstoryId": "TG-BACKSTORY-TG-CREATURE-026",
+  "encounterTags": [
+    "faction-run-in",
+    "olympian",
+    "ranged",
+    "cross-faction-event"
+  ],
+  "campaignUse": [
+    "Cross-faction run-in",
+    "Mission event encounter",
+    "Elite remix modifier",
+    "Faction border conflict"
+  ],
+  "combatRole": "CONTROLLER",
+  "stats": {
+    "levelBand": [
+      10,
+      85
+    ],
+    "hp": 88,
+    "damage": 16,
+    "range": 3,
+    "armor": 5,
+    "resistance": 5,
+    "movement": 4,
+    "initiative": 48,
+    "accuracy": 78,
+    "evasion": 8,
+    "guardBreak": 10,
+    "threatWeight": 2.0,
+    "xpValue": 30
+  },
+  "scaling": {
+    "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Titan level and gear rise.",
+    "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+    "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+    "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+  },
+  "aiProfile": {
+    "archetype": "CONTROLLER",
+    "priority": [
+      "pressure the lone Titan from its role",
+      "create AoE and positioning decisions",
+      "protect faction-lore objective when present"
+    ],
+    "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+  },
+  "balanceNotes": "Cross-faction RANGED run-in tuned for one Titan vs many; lore pressure and role synergy first, raw stats second.",
+  "loreGuardrails": {
+    "homeFactionId": "TG-FACTION-003",
+    "homeFactionName": "Olympian",
+    "sourceCultureRule": "source culture humans later copied as Greek myth",
+    "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "assetId": "ENEMY_033",
+  "assetType": "ENEMY",
+  "canonicalEntityId": "TG-CREATURE-033",
+  "canonicalName": "Ancient Root Ogre",
+  "faction": "Tuatha",
+  "loreReference": "A massive root-fed guardian of wounded woods; it is not evil, but it crushes intruders who ignore Avalora\u2019s living terrain.",
+  "canonAuthority": "Current Titan Gates canon/lore data layer. 3D Asset Director may translate scale and production needs but may not override Lore Director.",
+  "scale": {
+    "scaleKey": "standardEnemy",
+    "relativeScaleUnits": 1.15,
+    "source": "data/world-scale-reference.json",
+    "rule": "All dimensions reference Master_Scale_Reference; individual creators may not invent scale."
+  },
+  "height": "DERIVED_FROM_MASTER_SCALE",
+  "width": "DERIVED_FROM_MASTER_SCALE",
+  "length": "DERIVED_FROM_MASTER_SCALE",
+  "materials": [
+    "Tuatha",
+    "Avalora",
+    "mobile-readable tactical materials"
+  ],
+  "weapons": [],
+  "attachments": [],
+  "animationRequirements": [
+    "neutral pose",
+    "readable idle",
+    "movement silhouette",
+    "attack/interaction poses",
+    "hit reaction",
+    "scale-preserving camera readability"
+  ],
+  "battlefieldClearance": {
+    "titanClearanceRequired": false,
+    "gridReadability": "Must remain readable in mobile UE5 one-Titan-vs-many tactical arenas.",
+    "clearanceSource": "3D_Blueprints/Global_References/Master_Scale_Reference/metadata.json"
+  },
+  "lodRequirements": [
+    "LOD0_CLOSE",
+    "LOD1_GAMEPLAY",
+    "LOD2_DISTANCE",
+    "COLLISION_MESH"
+  ],
+  "mobilePerformanceTarget": "30fps baseline / 60fps high-end mobile tactical view; silhouette readable at phone scale.",
+  "sourceReferences": [
+    "canonical:TG-CREATURE-033",
+    "data/art-prompts.json#TG-PROMPT-TG-CREATURE-033",
+    "data/character-backstories.json#TG-BACKSTORY-TG-CREATURE-033"
+  ],
+  "version": "1.0.0",
+  "status": "BLUEPRINT_IN_PROGRESS",
+  "dependencies": [
+    "TG-3D-MASTER-SCALE-REFERENCE",
+    "TG-3D-MATERIAL-LIBRARY",
+    "TG-3D-VISUAL-STYLE-GUIDE"
+  ],
+  "requiredViews": [
+    {
+      "viewId": "FRONT_ORTHOGRAPHIC",
+      "name": "Front Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "BACK_ORTHOGRAPHIC",
+      "name": "Back Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "LEFT_ORTHOGRAPHIC",
+      "name": "Left Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "RIGHT_ORTHOGRAPHIC",
+      "name": "Right Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TOP_VIEW",
+      "name": "Top View",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "THREE_QUARTER_FRONT",
+      "name": "Three Quarter Front",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "THREE_QUARTER_REAR",
+      "name": "Three Quarter Rear",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "NEUTRAL_POSE",
+      "name": "Neutral Pose",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "MOVEMENT_POSE",
+      "name": "Movement Pose",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ATTACK_POSE",
+      "name": "Attack Pose",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ANATOMY_SHEET",
+      "name": "Anatomy Sheet",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "HEAD_MOUTH_TEETH_DETAILS",
+      "name": "Head Mouth Teeth Details",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "CLAW_HAND_DETAILS",
+      "name": "Claw Hand Details",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "FEET_LEG_DETAILS",
+      "name": "Feet Leg Details",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TAIL_WING_APPENDAGE_DETAILS",
+      "name": "Tail Wing Appendage Details",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ARMOR_BODY_PLATING_DETAILS",
+      "name": "Armor Body Plating Details",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SKELETON_JOINT_REFERENCE",
+      "name": "Skeleton Joint Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "HEIGHT_BODY_LENGTH_MEASUREMENTS",
+      "name": "Height Body Length Measurements",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SCALE_COMPARISON",
+      "name": "Scale Comparison",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "MATERIAL_REFERENCE",
+      "name": "Material Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ANIMATION_LIMITATIONS",
+      "name": "Animation Limitations",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    }
+  ],
+  "technicalNotes": {
+    "collisionRequirements": "Use simplified capsule/convex collision; no per-bone expensive collision on baseline mobile.",
+    "lodPolicy": "LOD chain required before runtime approval.",
+    "materialBudget": "Use efficient material instances and faction atlas where practical."
+  },
+  "productionNotes": [
+    "Preserve source-culture creature identity.",
+    "Do not make generic monster filler.",
+    "Telegraphs must remain readable for one Titan vs many combat."
+  ]
+}

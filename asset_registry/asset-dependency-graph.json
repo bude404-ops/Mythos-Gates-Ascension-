@@ -2,7 +2,7 @@
   "id": "TG-GITHUB-ASSET-DEPENDENCY-GRAPH-001",
   "version": "1.0.0",
   "status": "IMPLEMENTED",
-  "updated": "2026-08-13",
+  "updated": "2026-08-17",
   "rule": "Changing a source model, material, texture, rig, animation, VFX, LOD, or collision file marks dependents for revalidation but never overwrites them.",
   "nodes": [
     {
@@ -3468,6 +3468,1140 @@
         {
           "type": "blueprint",
           "ref": "3D_Blueprints/Characters/Titans/TITAN_063_zerath-wound-gate/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_019",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_019_sun-seal-vigilant/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_019",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_019_sun-seal-vigilant/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_020",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_020_scarab-dawn-engine/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_020",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_020_scarab-dawn-engine/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_021",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_021_uraeus-counter-edict/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_021",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_021_uraeus-counter-edict/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_022",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_022_rime-oath-raider/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_022",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_022_rime-oath-raider/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_023",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_023_thunder-bridge-jotun/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_023",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_023_thunder-bridge-jotun/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_024",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_024_valkyr-storm-caller/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_024",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_024_valkyr-storm-caller/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_025",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_025_laurel-hoplon-guard/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_025",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_025_laurel-hoplon-guard/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_026",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_026_oracle-glass-archer/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_026",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_026_oracle-glass-archer/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_027",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_027_bronze-chimera-trialbeast/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_027",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_027_bronze-chimera-trialbeast/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_028",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_028_torii-foxfire-runner/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_028",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_028_torii-foxfire-runner/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_029",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_029_mirror-lake-onryo/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_029",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_029_mirror-lake-onryo/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_030",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_030_kami-storm-komainu/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_030",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_030_kami-storm-komainu/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_031",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_031_moon-grove-stagwarden/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_031",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_031_moon-grove-stagwarden/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_032",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_032_bog-sidhe-hexer/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_032",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_032_bog-sidhe-hexer/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_033",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_033_ancient-root-ogre/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_033",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_033_ancient-root-ogre/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_034",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_034_radiant-censor-cherub/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_034",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_034_radiant-censor-cherub/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_035",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_035_throne-spear-adjudicator/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_035",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_035_throne-spear-adjudicator/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_036",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_036_seraphic-bastion-servitor/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_036",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_036_seraphic-bastion-servitor/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_037",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_037_cinder-chain-bailiff/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_037",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_037_cinder-chain-bailiff/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_038",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_038_brass-hellhound-packfiend/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_038",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_038_brass-hellhound-packfiend/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "CREATURE_039",
+      "asset_type": "CREATURE",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Creatures/CREATURE_039_black-iron-executor/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "ENEMY_039",
+      "asset_type": "ENEMY",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Enemies/ENEMY_039_black-iron-executor/metadata.json",
           "status": "LINKED"
         },
         {

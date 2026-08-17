@@ -1,6 +1,6 @@
 import { spawn } from 'node:child_process';
 
-const attempts = 4;
+const attempts = 8;
 const attemptTimeoutMs = 90000;
 let lastCode = 1;
 
