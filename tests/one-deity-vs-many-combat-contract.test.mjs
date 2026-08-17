@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { loadOneTitanVsManyCombat, validateOneTitanVsManyCombat, summarizeOneTitanVsMany, PRIMARY_ONE_TITAN_RULE, REQUIRED_PROTOTYPE_BEATS } from '../src/combat/one-titan-vs-many.mjs';
+import { loadOneTitanVsManyCombat, validateOneTitanVsManyCombat, summarizeOneTitanVsMany, PRIMARY_ONE_TITAN_RULE, REQUIRED_PROTOTYPE_BEATS } from '../src/combat/one-deity-vs-many.mjs';
 
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const contract = loadOneTitanVsManyCombat();

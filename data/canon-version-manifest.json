@@ -246,12 +246,12 @@
       "owner": "Combat Director",
       "summary": "Locked all standard combat around one selected playable deity versus multiple coordinated enemies, forbidding squads/team turns while preserving stable one-titan internal file names.",
       "affectedData": [
-        "data/one-titan-vs-many-combat.json",
-        "src/combat/one-titan-vs-many.mjs",
+        "data/one-deity-vs-many-combat.json",
+        "src/combat/one-deity-vs-many.mjs",
         "engine/unreal/mobile-first-architecture.json",
         "engine/unreal/first-mission-zone-template.json",
-        "scripts/validate-one-titan-vs-many-combat.mjs",
-        "tests/one-titan-vs-many-combat-contract.test.mjs"
+        "scripts/validate-one-deity-vs-many-combat.mjs",
+        "tests/one-deity-vs-many-combat-contract.test.mjs"
       ],
       "validation": [
         "npm run validate:one-deity-vs-many-combat",

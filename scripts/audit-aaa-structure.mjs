@@ -36,7 +36,7 @@ const requiredFiles = [
   'schemas/hosted-backend-boundary.schema.json',
   'scripts/validate-backend-boundary.mjs',
   'data/runtime-persistence-boundary.json',
-  'data/one-titan-vs-many-combat.json',
+  'data/one-deity-vs-many-combat.json',
   'data/cross-faction-encounter-pools.json',
   'schemas/runtime-persistence.schema.json',
   'scripts/validate-runtime-persistence.mjs',
@@ -162,7 +162,7 @@ const schemas = [
   'schemas/ue5-dungeon-framework.schema.json',
   'schemas/ue5-first-mission-zone-template.schema.json',
   'schemas/ue5-mobile-first-architecture.schema.json',
-  'schemas/one-titan-vs-many-combat.schema.json',
+  'schemas/one-deity-vs-many-combat.schema.json',
   'schemas/cross-faction-encounter-pool.schema.json'
 ];
 for (const schema of schemas) {
