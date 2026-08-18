@@ -1,10 +1,6 @@
 # Mythos Gates: Ascension
 
-<<<<<<< HEAD
-Mythos Gates: Ascension is a mythological tactical RPG built around seven source-culture Realms, the actual gods and goddesses of those mythologies, the mysterious Mythos Gates, and the Ascension Collapse.
-=======
 Mythos Gates: Ascension is a Titan-only mythological tactical RPG built around seven source-culture Realms, Mythos Gates, the Ascension Collapse, and colossal Titans shaped by their civilizations.
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 This repository is the source of truth for:
 
@@ -75,11 +71,7 @@ Generated `dist/` output is built by automation and is not a canonical source fo
 - 3D blueprint assets: 136
 - Creator handoff packets: 23
 - External AI production packet: 1 active benchmark battlefield packet
-<<<<<<< HEAD
-- Core combat rule: one active god or goddess in standard combat
-=======
 - Core combat rule: one active deity in standard combat
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 - Platform core: v1 implemented for profile, save continuity, roster ownership, progression, inventory, and currency ledger
 - Hosted backend boundary: v1 contract for profile service, cloud saves, authoritative economy ledger, and telemetry ingestion
 - Runtime persistence boundary: database tables, route auth, admin operations, environments, and observability contract
@@ -137,16 +129,8 @@ It validates:
 Current canon is locked around:
 
 - Seven playable mythological Realms
-<<<<<<< HEAD
-- Four playable deities per Realm
-- Two male gods and two female goddesses per Realm
-- One active god or goddess controlled at a time
-- One deity versus multiple enemies, bosses, monsters, and rival divine forces
-- The Mythos Gates as the ancient Gate phenomenon, not a playable-character classification
-=======
 - Four deities per Realm
 - One-active-Titan standard combat deployments
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 - The Hollow as a non-playable campaign threat layer
 - No playable armies
 - No playable squads

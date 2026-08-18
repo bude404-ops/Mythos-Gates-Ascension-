@@ -1,10 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-<<<<<<< HEAD:tests/one-deity-vs-many-combat-contract.test.mjs
 import { loadOneDeityVsManyCombat, validateOneDeityVsManyCombat, summarizeOneDeityVsMany, PRIMARY_ONE_DEITY_RULE, REQUIRED_PROTOTYPE_BEATS } from '../src/combat/one-deity-vs-many.mjs';
-=======
-import { loadOneTitanVsManyCombat, validateOneTitanVsManyCombat, summarizeOneTitanVsMany, PRIMARY_ONE_TITAN_RULE, REQUIRED_PROTOTYPE_BEATS } from '../src/combat/one-deity-vs-many.mjs';
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration):tests/one-titan-vs-many-combat-contract.test.mjs
 
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const contract = loadOneDeityVsManyCombat();
@@ -14,7 +10,7 @@ const firstTemplate = read('engine/unreal/first-mission-zone-template.json');
 const validation = validateOneDeityVsManyCombat(contract, mission, mobileArchitecture, firstTemplate);
 assert.equal(validation.ok, true, validation.issues.join('; '));
 assert.equal(contract.primaryRule, PRIMARY_ONE_DEITY_RULE);
-assert.equal(mission.activeTitanCount, 1);
+assert.equal(mission.activeDeityCount ?? mission.activeTitanCount, 1);
 assert.equal(mission.teamSize, 1);
 assert.equal(firstTemplate.combatIdentity.playerControlledDeities, 1);
 assert.ok(contract.forbiddenSystems.includes('squad combat'));

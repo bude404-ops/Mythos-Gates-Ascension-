@@ -30,11 +30,7 @@ for (const engine of ['unreal', 'unity']) {
 const summary = buildEngineExportSummary({ includeMissions: true });
 if (summary.counts.titans !== 63) issues.push(`Engine export expected 28 Deities, found ${summary.counts.titans}.`);
 if (summary.counts.missions !== 280) issues.push(`Engine export expected 280 missions, found ${summary.counts.missions}.`);
-<<<<<<< HEAD
-if (summary.canonicalRules.activeDeityCount !== 1) issues.push('Engine export must preserve one-active-deity combat.');
-=======
 if (summary.canonicalRules.activeTitanCount !== 1) issues.push('Engine export must preserve one-active-deity combat.');
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 const result = { ok: issues.length === 0, engineAdapters: issues.length === 0 ? 'PASS' : 'FAIL', summary, issues };
 console.log(JSON.stringify(result, null, 2));

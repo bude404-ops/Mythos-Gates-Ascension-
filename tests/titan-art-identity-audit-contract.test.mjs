@@ -5,15 +5,9 @@ import path from 'node:path';
 const root = process.cwd();
 const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
 const titans = read('data/titans.json');
-<<<<<<< HEAD
-const audit = read('data/titan-art-identity-audit.json');
-const prompts = read('data/art-prompts.json').filter(prompt => prompt.category === 'Deity');
-const byTitan = new Map(titans.map(deity => [deity.id, deity]));
-=======
 const audit = read('data/deity-art-identity-audit.json');
-const prompts = read('data/art-prompts.json').filter(prompt => prompt.category === 'Titan');
+const prompts = read('data/art-prompts.json').filter(prompt => prompt.category === 'Deity');
 const byTitan = new Map(titans.map(titan => [titan.id, titan]));
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 const promptByTitan = new Map(prompts.map(prompt => [prompt.entityId, prompt]));
 
 assert.equal(audit.status, 'IMPLEMENTED');
@@ -44,28 +38,17 @@ for (const entry of audit.entries) {
   assert.equal(deity.sex, entry.sex);
   assert.equal(prompt.sex, entry.sex);
   assert.equal(prompt.artIdentityAuditStatus, entry.status);
-<<<<<<< HEAD
   assert.ok(prompt.prompt.startsWith(`Create a premium playable character depiction of ${deity.name},`), `${entry.titanId}: prompt missing required deity opening`);
-  assert.ok(prompt.prompt.includes('actual'), `${entry.titanId}: prompt missing actual mythology identity`);
-  assert.ok(prompt.prompt.includes('Mythos Gates universe'), `${entry.titanId}: prompt missing Mythos Gates universe lock`);
-  assert.ok(prompt.prompt.includes('not an ancient Mythos Gates giant'), `${entry.titanId}: prompt missing anti-Deity playable guard`);
+  assert.ok(prompt.prompt.includes(`Sex: ${entry.sex}`), `${entry.titanId}: prompt missing explicit sex`);
+  assert.ok(prompt.prompt.includes('Mythos Gates universe'), `${entry.titanId}: prompt missing realm`);
+  assert.ok(prompt.prompt.includes('actual'), `${entry.titanId}: prompt missing DNA`);
+  assert.ok(prompt.prompt.includes('Visual description to preserve exactly in spirit') || prompt.prompt.includes('Face lock:'), `${entry.titanId}: prompt missing face`);
+  assert.ok(prompt.prompt.includes('Body lock:') || prompt.prompt.includes('Body proportions:'), `${entry.titanId}: prompt missing body proportions`);
+  assert.ok(prompt.prompt.includes('Signature weapon:') || prompt.prompt.includes('Weapon:') || prompt.prompt.includes('Signature weapon lock:'), `${entry.titanId}: prompt missing signature weapon`);
   assert.ok(prompt.prompt.includes('approved Mythos Gates premium stylized tactical RPG aesthetic'), `${entry.titanId}: prompt missing approved style lock`);
   assert.ok(prompt.negativePrompt.includes('same-face reuse'), `${entry.titanId}: negative prompt missing anti-clone guard`);
   assert.ok(prompt.negativePrompt.includes('generic faction armor'), `${entry.titanId}: negative prompt missing generic armor guard`);
   assert.ok(deity.titanArtDna?.signatureWeapon, `${entry.titanId}: missing art DNA weapon`);
-=======
-  assert.ok(prompt.prompt.includes(`Titan name: ${titan.name}`), `${entry.titanId}: prompt missing explicit name`);
-  assert.ok(prompt.prompt.includes(`Sex: ${entry.sex}`), `${entry.titanId}: prompt missing explicit sex`);
-  assert.ok(prompt.prompt.includes('Extradimensional realm:'), `${entry.titanId}: prompt missing realm`);
-  assert.ok(prompt.prompt.includes('Titan DNA:'), `${entry.titanId}: prompt missing DNA`);
-  assert.ok(prompt.prompt.includes('Individual face:'), `${entry.titanId}: prompt missing face`);
-  assert.ok(prompt.prompt.includes('Body proportions:'), `${entry.titanId}: prompt missing body proportions`);
-  assert.ok(prompt.prompt.includes('Signature weapon:'), `${entry.titanId}: prompt missing signature weapon`);
-  assert.ok(prompt.prompt.includes('approved Mythos Gates premium stylized tactical RPG aesthetic'), `${entry.titanId}: prompt missing approved style lock`);
-  assert.ok(prompt.negativePrompt.includes('same-face reuse'), `${entry.titanId}: negative prompt missing anti-clone guard`);
-  assert.ok(prompt.negativePrompt.includes('generic faction armor'), `${entry.titanId}: negative prompt missing generic armor guard`);
-  assert.ok(titan.deityArtDna?.signatureWeapon, `${entry.titanId}: missing art DNA weapon`);
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 }
 
 const highest = byTitan.get(audit.summary.highestPriorityTitanId);

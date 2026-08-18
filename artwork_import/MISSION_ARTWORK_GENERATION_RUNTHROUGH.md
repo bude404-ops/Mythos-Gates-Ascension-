@@ -38,11 +38,7 @@ Every output filename must include the permanent asset ID, then land in the artw
 ### Aten Ra
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_001 (The First Reopening Gate), BATTLEFIELD_002 (Solar Pylon Observatory), BATTLEFIELD_007 (Sacred Sun Temple Road), BATTLEFIELD_008 (Mythos Gate Sun Throne)
-<<<<<<< HEAD
-- Core Titans: TITAN_001 (Aten-Ra, Solar Law Monolith), TITAN_002 (Khemet Suncrown), TITAN_003 (Nefra Obsidian Dawn), TITAN_004 (Orru Prism Verdict), TITAN_005 (Sutekh Dune Eclipse), TITAN_006 (Iset Riverlight Throne), TITAN_007 (Karnu Glass Horizon), TITAN_008 (Maahes Noon Bastion), TITAN_009 (Amunet Hidden Sun)
-=======
 - Core Titans: TITAN_001 (Aten-Ra), TITAN_002 (Khemet), TITAN_003 (Nefra), TITAN_004 (Orru), TITAN_005 (Sutekh), TITAN_006 (Iset), TITAN_007 (Karnu), TITAN_008 (Maahes), TITAN_009 (Amunet)
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 - Campaign characters: CHARACTER_001 (Mesha Gate-Scribe)
 
 ### Asgardian
@@ -326,13 +322,8 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-<<<<<<< HEAD
-### 028. TG-F01-C04-M16 — Deity Silhouette of the False Dawn
-- Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
-=======
 ### 028. TG-F01-C04-M16 — Titan Silhouette of the False Dawn
 - Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Titans
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 - Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_003, ENEMY_004, ENEMY_005
 - Thumbnail: Deity Silhouette of the False Dawn thumbnail: three deity silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
@@ -350,11 +341,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
 ### 030. TG-F01-E-C04-M14 — Elite: The Black Sun Caravan
-<<<<<<< HEAD
-- Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
-=======
 - Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Titans
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 - Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_002
 - Thumbnail: Elite: The Black Sun Caravan thumbnail: three deity silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.

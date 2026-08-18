@@ -122,13 +122,8 @@ export function validatePlatformState(state) {
   const issues = [];
   if (state?.schema !== 'TG_PLATFORM_SAVE_STATE_V1') issues.push('schema must be TG_PLATFORM_SAVE_STATE_V1');
   if (!state?.player?.playerId) issues.push('player.playerId is required');
-<<<<<<< HEAD
-  if (!state?.roster?.activeDeityId) issues.push('roster.activeDeityId is required');
-  if (!state?.roster?.ownedDeities?.some(deity => deity.deityId === state.roster.activeDeityId)) issues.push('active deity must be owned');
-=======
   if (!state?.roster?.activeTitanId) issues.push('roster.activeTitanId is required');
   if (!state?.roster?.ownedTitans?.some(titan => titan.titanId === state.roster.activeTitanId)) issues.push('active deity must be owned');
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   if (!state?.inventory?.currencies || typeof state.inventory.currencies !== 'object') issues.push('inventory.currencies is required');
   if (!Array.isArray(state?.ledger)) issues.push('ledger must be an array');
   if (!Array.isArray(state?.platformEvents)) issues.push('platformEvents must be an array');

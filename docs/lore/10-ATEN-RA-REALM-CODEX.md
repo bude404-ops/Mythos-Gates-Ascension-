@@ -33,54 +33,6 @@ The Solar Dominion of Khepra is defined by sacred law, geometric light, desert j
 
 ## Campaign Hooks
 
-<<<<<<< HEAD
-## Titan Codex Hooks
-### Aten-Ra, Solar Law Monolith (TG-TITAN-001)
-- **Role:** Defender
-- **Lore Function:** Aten-Ra, Solar Law Monolith embodies the Aten Ra answer to the Ascension Collapse: defender shaped into Realm doctrine.
-- **Chapter Hook:** When Aten-Ra, Solar Law Monolith enters a chapter, the scene should test Aten Ra's core tension: Their law can heal chaos, but it can also harden into tyranny when other Realms refuse the Solar Measure.
-- **Visual Context:** Frame Aten-Ra, Solar Law Monolith against white-gold solar discs, obsidian-blue shadows, colossal pylons, papyrus circuitry, radiant court armor while preserving their individual silhouette and role readability.
-### Khemet Suncrown (TG-TITAN-005)
-- **Role:** Battery
-- **Lore Function:** Khemet Suncrown embodies the Aten Ra answer to the Ascension Collapse: battery shaped into Realm doctrine.
-- **Chapter Hook:** When Khemet Suncrown enters a chapter, the scene should test Aten Ra's core tension: Their law can heal chaos, but it can also harden into tyranny when other Realms refuse the Solar Measure.
-- **Visual Context:** Frame Khemet Suncrown against white-gold solar discs, obsidian-blue shadows, colossal pylons, papyrus circuitry, radiant court armor while preserving their individual silhouette and role readability.
-### Nefra Obsidian Dawn (TG-TITAN-006)
-- **Role:** Controller
-- **Lore Function:** Nefra Obsidian Dawn embodies the Aten Ra answer to the Ascension Collapse: controller shaped into Realm doctrine.
-- **Chapter Hook:** When Nefra Obsidian Dawn enters a chapter, the scene should test Aten Ra's core tension: Their law can heal chaos, but it can also harden into tyranny when other Realms refuse the Solar Measure.
-- **Visual Context:** Frame Nefra Obsidian Dawn against white-gold solar discs, obsidian-blue shadows, colossal pylons, papyrus circuitry, radiant court armor while preserving their individual silhouette and role readability.
-### Orru Prism Verdict (TG-TITAN-009)
-- **Role:** Breaker
-- **Lore Function:** Orru Prism Verdict embodies the Aten Ra answer to the Ascension Collapse: breaker shaped into Realm doctrine.
-- **Chapter Hook:** When Orru Prism Verdict enters a chapter, the scene should test Aten Ra's core tension: Their law can heal chaos, but it can also harden into tyranny when other Realms refuse the Solar Measure.
-- **Visual Context:** Frame Orru Prism Verdict against white-gold solar discs, obsidian-blue shadows, colossal pylons, papyrus circuitry, radiant court armor while preserving their individual silhouette and role readability.
-### Sutekh Dune Eclipse (TG-TITAN-005)
-- **Role:** Disruptor
-- **Lore Function:** Sutekh Dune Eclipse embodies the Aten Ra answer to the Ascension Collapse: disruptor shaped into Realm doctrine.
-- **Chapter Hook:** When Sutekh Dune Eclipse enters a chapter, the scene should test Aten Ra's core tension: Their law can heal chaos, but it can also harden into tyranny when other Realms refuse the Solar Measure.
-- **Visual Context:** Frame Sutekh Dune Eclipse against white-gold solar discs, obsidian-blue shadows, colossal pylons, papyrus circuitry, radiant court armor while preserving their individual silhouette and role readability.
-### Iset Riverlight Throne (TG-TITAN-006)
-- **Role:** Sustain
-- **Lore Function:** Iset Riverlight Throne embodies the Aten Ra answer to the Ascension Collapse: sustain shaped into Realm doctrine.
-- **Chapter Hook:** When Iset Riverlight Throne enters a chapter, the scene should test Aten Ra's core tension: Their law can heal chaos, but it can also harden into tyranny when other Realms refuse the Solar Measure.
-- **Visual Context:** Frame Iset Riverlight Throne against white-gold solar discs, obsidian-blue shadows, colossal pylons, papyrus circuitry, radiant court armor while preserving their individual silhouette and role readability.
-### Karnu Glass Horizon (TG-TITAN-006)
-- **Role:** Artillery
-- **Lore Function:** Karnu Glass Horizon embodies the Aten Ra answer to the Ascension Collapse: artillery shaped into Realm doctrine.
-- **Chapter Hook:** When Karnu Glass Horizon enters a chapter, the scene should test Aten Ra's core tension: Their law can heal chaos, but it can also harden into tyranny when other Realms refuse the Solar Measure.
-- **Visual Context:** Frame Karnu Glass Horizon against white-gold solar discs, obsidian-blue shadows, colossal pylons, papyrus circuitry, radiant court armor while preserving their individual silhouette and role readability.
-### Maahes Noon Bastion (TG-TITAN-009)
-- **Role:** Guardian
-- **Lore Function:** Maahes Noon Bastion embodies the Aten Ra answer to the Ascension Collapse: guardian shaped into Realm doctrine.
-- **Chapter Hook:** When Maahes Noon Bastion enters a chapter, the scene should test Aten Ra's core tension: Their law can heal chaos, but it can also harden into tyranny when other Realms refuse the Solar Measure.
-- **Visual Context:** Frame Maahes Noon Bastion against white-gold solar discs, obsidian-blue shadows, colossal pylons, papyrus circuitry, radiant court armor while preserving their individual silhouette and role readability.
-### Amunet Hidden Sun (TG-TITAN-009)
-- **Role:** Assassin
-- **Lore Function:** Amunet Hidden Sun embodies the Aten Ra answer to the Ascension Collapse: assassin shaped into Realm doctrine.
-- **Chapter Hook:** When Amunet Hidden Sun enters a chapter, the scene should test Aten Ra's core tension: Their law can heal chaos, but it can also harden into tyranny when other Realms refuse the Solar Measure.
-- **Visual Context:** Frame Amunet Hidden Sun against white-gold solar discs, obsidian-blue shadows, colossal pylons, papyrus circuitry, radiant court armor while preserving their individual silhouette and role readability.
-=======
 - Recover the broken Measure from Hollow-thieves.
 - Judge a Titan accused of opening a forbidden Gate.
 - Seal a Black-Sun eclipse before it crowns the wrong king.
@@ -140,7 +92,6 @@ The Solar Dominion of Khepra is defined by sacred law, geometric light, desert j
 **Lore:** Amunet is the concealed half of Aten authority: the breath, name, and shadow behind visible radiance. Humans remembered hidden gods as mystery; Khepra built entire courts around the terror of a name removed from existence. She does not kill in the open — she removes you from the record.
 **Chapter Hook:** When Amunet enters a chapter, the scene tests whether erasure is the ultimate power or the ultimate fear — and whether being forgotten is worse than being destroyed.
 **Visual Context:** Frame Amunet against shadow-veil architecture, black-gold linen concealment, hidden sun-disc, obsidian name-blades, starless lapis cloak.
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 ## Director Ruling
 

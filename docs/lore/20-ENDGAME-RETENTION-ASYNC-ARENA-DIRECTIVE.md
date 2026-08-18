@@ -9,11 +9,7 @@ The campaign is the foundation, not the finish line. The standard active deity i
 The Canon/Codex currently registers seven factions. No faction was removed. Six-faction totals remain a planning benchmark; seven-faction Canon expansion is supported.
 
 ## Live PvP Boundary
-<<<<<<< HEAD
-Real-time PvP is not implemented. The current Arena architecture is asynchronous: player attack active deity versus saved one-active-deity defense active deity controlled by AI. A future live PvP control layer can share the same battle state model.
-=======
 Real-time PvP is not implemented. The current Arena architecture is asynchronous: player attack active deity versus saved one-active-Titan defense active deity controlled by AI. A future live PvP control layer can share the same battle state model.
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 ## Director Decisions
 - Gameplay: all standard modes use one active deity.

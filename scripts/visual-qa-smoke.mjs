@@ -61,11 +61,7 @@ if (commandHub.status !== 'IMPLEMENTED' || !commandHub.canonFirst || commandHub.
   console.error(JSON.stringify({ ok: false, commandHubContractInvalid: true }, null, 2));
   process.exit(1);
 }
-<<<<<<< HEAD
-for (const token of ['I Command Deities', 'Command Hub', 'CONTINUE CAMPAIGN', 'Deity Roster', 'Realm Network', 'Lore Registry', 'Playable Solo Battle']) {
-=======
 for (const token of ['I Command Titans', 'Command Hub', 'CONTINUE CAMPAIGN', 'Deity Roster', 'Realm Network', 'Lore Registry', 'Playable Solo Battle']) {
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   if (!commandHubRuntime.includes(token) && !gameHtmlForPlayflow.includes(token)) {
     console.error(JSON.stringify({ ok: false, commandHubUiMissing: token }, null, 2));
     process.exit(1);
@@ -87,11 +83,7 @@ if (!asyncArenaSystem.snapshotRules?.oneActiveDefenderDeity || !asyncArenaSystem
   console.error(JSON.stringify({ ok: false, asyncArenaSnapshotsInvalid: true }, null, 2));
   process.exit(1);
 }
-<<<<<<< HEAD
-for (const token of ['Lore Continuity Sweep', 'one-active-deity canon', 'One active deity in standard combat', 'The Hollow is a non-playable campaign threat']) {
-=======
 for (const token of ['Lore Continuity Sweep', 'one-active-Titan canon', 'One active deity in standard combat', 'The Hollow is a non-playable campaign threat']) {
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   if (!miniAppHtml.includes(token)) {
     console.error(JSON.stringify({ ok: false, loreSweepDashboardMissing: token }, null, 2));
     process.exit(1);

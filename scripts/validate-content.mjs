@@ -139,14 +139,7 @@ const requiredScaleSheetTypes = new Set(['normal_enemy','elite_enemy','player_ti
 
 if(data.factions.length !== 7) fail(`Expected 7 playable factions, found ${data.factions.length}`);
 if(data.hollowThreatFaction.playable !== false || data.hollowThreatFaction.classification !== 'Hostile Threat Faction') fail('Hollow must remain a non-playable threat faction');
-<<<<<<< HEAD
-if(data.titans.length !== 28) fail(`Expected 28 playable deities, found ${data.titans.length}`);
-const factionGodCounts = new Map();
-for (const deity of data.titans) factionGodCounts.set(deity.factionId, (factionGodCounts.get(deity.factionId) || 0) + 1);
-for (const faction of data.factions) if ((factionGodCounts.get(faction.id) || 0) !== 4) fail(`${faction.name}: expected 4 playable deities`);
-=======
 if(data.titans.length !== 63) fail(`Expected 28 Deities, found ${data.titans.length}`);
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 if(data.artApprovalManifest.status !== 'IMPLEMENTED' || data.artApprovalManifest.approvalStatus !== 'APPROVED_FOR_GENERATION') fail('Art approval manifest must be approved for generation');
 
 if(data.factionVisualBible.status !== 'IMPLEMENTED') fail('Faction visual bible must be IMPLEMENTED');
@@ -462,13 +455,8 @@ if(data.endgameDashboard.sampleState && JSON.stringify(data.endgameDashboard.sam
 for (const file of ['index.html','game/index.html','game/tactical-map-prototype.html','mini-app/mythos-gates-ascension.html']) if(!exists(file)) fail(`Missing required HTML file ${file}`);
 const game = fs.readFileSync(path.join(root,'game/index.html'),'utf8');
 const hubRuntime = fs.readFileSync(path.join(root,'game/command-hub-runtime.mjs'),'utf8');
-<<<<<<< HEAD
-if(!game.includes('OPEN THE MYTHOS GATE') || !game.includes('createCommandHubRuntime') || !game.includes('Command Hub')) fail('Playable Command Hub integrity check failed');
-for (const token of ['BOOT_STAGES','validatePlayerState','getNextRecommendedAction','AssetManager','AudioManager','deriveNotifications','bottomNav','Deity Roster','Realm Network','Lore Registry','Playable Solo Battle','battleBasic','battleObjective','normalizeProgression','createRewardCache','claimReward','pendingRewards','rewardHistory','STARTER_DEITY_IDS','AWAKENING_BEATS','completeAwakeningBeat','awakeningProgress','starterDeitys','ensureOnboarding','Awakening Protocol','chooseStarter','advanceAwakeningBeat','finishAwakening','TRIAL_DEITY_IDS','TRIAL_MODES','trialDeities','ensureTrials','createTrialAttempt','resolveTrialAttempt','trialsScreen','startTrial','finishTrial','Trial Favor','Temporary Loadout','borrowed gear does not','raidProgress','raidRules','stageProfiles','problemTags','preferredCounters','carryRisk','tierCaps','approachRules','createRaidAttempt','resolveRaidStage','completeRaidAttempt','resolveRaidEconomy','applyRaidMastery','Raid Tokens','Signature Alloy','Mastery Seals','raidScreen','startRaid','raidResolve','raidClaim','The Gate Warden']) if(!hubRuntime.includes(token)) fail(`Command Hub runtime missing ${token}`);
-=======
 if(!game.includes('OPEN THE TITAN GATE') || !game.includes('createCommandHubRuntime') || !game.includes('Command Hub')) fail('Playable Command Hub integrity check failed');
 for (const token of ['BOOT_STAGES','validatePlayerState','getNextRecommendedAction','AssetManager','AudioManager','deriveNotifications','bottomNav','Deity Roster','Realm Network','Lore Registry','Playable Solo Battle','battleBasic','battleObjective','normalizeProgression','createRewardCache','claimReward','pendingRewards','rewardHistory','STARTER_TITAN_IDS','AWAKENING_BEATS','completeAwakeningBeat','awakeningProgress','starterTitans','ensureOnboarding','Awakening Protocol','chooseStarter','advanceAwakeningBeat','finishAwakening','TRIAL_TITAN_IDS','TRIAL_MODES','trialTitans','ensureTrials','createTrialAttempt','resolveTrialAttempt','trialsScreen','startTrial','finishTrial','Trial Favor','Temporary Loadout','borrowed gear does not','raidProgress','raidRules','stageProfiles','problemTags','preferredCounters','carryRisk','tierCaps','approachRules','createRaidAttempt','resolveRaidStage','completeRaidAttempt','resolveRaidEconomy','applyRaidMastery','Raid Tokens','Signature Alloy','Mastery Seals','raidScreen','startRaid','raidResolve','raidClaim','The Gate Warden']) if(!hubRuntime.includes(token)) fail(`Command Hub runtime missing ${token}`);
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 const browserBattle = fs.readFileSync(path.join(root,'game/browser-battle-engine.mjs'),'utf8');
 for (const token of ['createBattleState','applyDeityAction','applyReaction','autoAdvanceEnemyTurn','summarizeBattle','chooseEnemyIntent','HOLLOW_SWARMER','GATEBORN_BRUTE','OBJECTIVE_CRUSH','enemyIntentCounts','enemyBehaviorTags','enemyCounterplay','behaviorTag','counterplay','ISOLATION_PUNISH','OBJECTIVE_DENIAL','ARCHETYPE_BUDGETS','resolveMissionScaling','scaleEnemyForMission','enemyScaling','threatBudget']) if(!browserBattle.includes(token)) fail(`Browser battle engine missing ${token}`);
 const battlefieldRuntime = fs.readFileSync(path.join(root,'game/battlefield-runtime.mjs'),'utf8');
@@ -527,13 +515,8 @@ if(tacticalProfileSystem.missionCoverage?.normal !== 140 || tacticalProfileSyste
 for (const tag of tacticalProfileSystem.allowedProblemTags || []) if(!allowedMissionProblemTags.has(tag)) fail(`TG-DEV-028 invalid allowed tag ${tag}`);
 for (const role of tacticalProfileSystem.allowedDeityRoles || []) if(!allowedDeityRoles.has(role)) fail(`TG-DEV-028 invalid allowed role ${role}`);
 for (const tag of allowedMissionProblemTags) if((missionTagCounts.get(tag) || 0) < 1) fail(`TG-DEV-028 tag has no mission coverage: ${tag}`);
-<<<<<<< HEAD
-for (const role of allowedDeityRoles) if((missionRoleCounts.get(role) || 0) < 1) fail(`TG-DEV-028 Deity role has no mission recommendation coverage: ${role}`);
-for (const rule of ['Mission tactical profiles may recommend roles and deities, but never require ownership.','Every tagged mission must keep ownershipLock=false and favoredNotRequired=true.']) if(!tacticalProfileSystem.antiPayToWinRules?.includes(rule)) fail(`TG-DEV-028 rule missing: ${rule}`);
-=======
 for (const role of allowedTitanRoles) if((missionRoleCounts.get(role) || 0) < 1) fail(`TG-DEV-028 deity role has no mission recommendation coverage: ${role}`);
 for (const rule of ['Mission tactical profiles may recommend roles and Titans, but never require ownership.','Every tagged mission must keep ownershipLock=false and favoredNotRequired=true.']) if(!tacticalProfileSystem.antiPayToWinRules?.includes(rule)) fail(`TG-DEV-028 rule missing: ${rule}`);
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 if(hub.missionTacticalProfiles?.status !== 'IMPLEMENTED' || hub.missionTacticalProfiles?.taskId !== 'TG-DEV-028') fail('Command Hub mission tactical profile summary must implement TG-DEV-028');
 if(hub.missionTacticalProfiles?.ownershipLock !== false || hub.missionTacticalProfiles?.favoredNotRequired !== true) fail('Command Hub mission profile ownership rule mismatch');
 if(!hub.qualityGates?.some(g => g.includes('TG-DEV-028 all 280 campaign missions'))) fail('Command Hub quality gate missing TG-DEV-028');

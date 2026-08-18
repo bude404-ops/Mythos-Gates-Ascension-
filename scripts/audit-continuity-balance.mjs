@@ -34,11 +34,7 @@ for (const faction of data.factions) {
     for (const field of ['thesis', 'centralConflict', 'landmarks', 'realmHazards', 'campaignHooks', 'visualLanguage', 'titans']) {
       if (!codex[field] || (Array.isArray(codex[field]) && !codex[field].length)) issues.push(`${faction.name} codex missing ${field}`);
     }
-<<<<<<< HEAD
-    if ((codex.titans || []).length !== 9) issues.push(`${faction.name} codex must cover 9 deities`);
-=======
     if ((codex.titans || []).length !== 9) issues.push(`${faction.name} codex must cover 4 deities`);
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   }
   const loreHits = data.lore.filter(entry => JSON.stringify(entry).includes(faction.name) || JSON.stringify(entry).includes(faction.realm) || JSON.stringify(entry).includes(faction.id));
   if (!loreHits.length) issues.push(`${faction.name} missing lore-index coverage`);
@@ -89,11 +85,7 @@ for (const mission of data.missions) {
   if (mission.teamSize !== 1) issues.push(`${mission.id} teamSize ${mission.teamSize} should be 1 for one active deity combat`);
   const missionText = JSON.stringify({ objectives: mission.objectives, specialRules: mission.specialRules, victoryConditions: mission.victoryConditions });
   for (const term of obsoleteStandardCombatTerms) if (missionText.includes(term)) issues.push(`${mission.id} uses obsolete standard-combat wording: ${term}`);
-<<<<<<< HEAD
-  if (!['ONE_PLAYER_CONTROLLED_DEITY', 'ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE'].includes(mission.activeDeityPolicy?.standardCombat)) issues.push(`${mission.id} missing one active deity policy`);
-=======
   if (!['ONE_PLAYER_CONTROLLED_TITAN', 'ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE'].includes(mission.activeTitanPolicy?.standardCombat)) issues.push(`${mission.id} missing one active deity policy`);
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   if (!mission.chapterId) issues.push(`${mission.id} missing chapterId link`);
   if (mission.turnLimit != null && !(mission.turnLimit >= 8 && mission.turnLimit <= 20)) warnings.push(`${mission.id} turnLimit ${mission.turnLimit} outside expected 8-20`);
   if (mission.campaignType === 'Normal' && mission.turnLimit == null) issues.push(`${mission.id} Normal mission missing turnLimit`);

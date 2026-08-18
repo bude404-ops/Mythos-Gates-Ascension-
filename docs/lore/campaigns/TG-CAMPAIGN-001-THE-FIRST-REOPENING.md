@@ -2,11 +2,7 @@
 
 ## Canon Function
 
-<<<<<<< HEAD
-**The First Reopening** is the first modern breach in the old certainty. It teaches the player what the world is: not a future war, not caped heroes, but extradimensional mythological civilizations returning through damaged Mythos Gates.
-=======
 **The First Reopening** is the first modern breach in the old certainty. It teaches the player what the world is: not a future war, not caped heroes, not humans in costume, but extradimensional divine beings returning through damaged Mythos Gates, but extradimensional mythological civilizations returning through damaged Mythos Gates.
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 This campaign exists to establish four laws:
 
@@ -19,11 +15,7 @@ This campaign exists to establish four laws:
 
 A dead Mythos Gate begins breathing beneath broken threshold stone. Its first pulses do not open a road; they leak absence. Names vanish from tablets. Old battle marks become smooth. Survivors remember that someone stood beside them, but not who.
 
-<<<<<<< HEAD
-Mesha Gate-Scribe arrives before the chosen deity because the Aten Ra record-keepers still listen to abandoned solar pylons. She does not command Titans. She reads the damage and tells the Creator what the Gate is refusing to say.
-=======
 Mesha Gate-Scribe arrives before the Creator's chosen Titan because the Aten Ra record-keepers still listen to abandoned solar pylons. She does not command Titans. She reads the damage and tells the Creator what the Gate is refusing to say.
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 The campaign should feel like a ritual performed under pressure. The player is not saving a village for sentiment. The player is preventing the map of reality from forgetting where a Gate once led.
 

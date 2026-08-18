@@ -26,13 +26,6 @@ The Beast Realms are primordial mythological creature territories from extradime
 
 ## The Gateborn
 
-<<<<<<< HEAD
-The Gateborn are entities created, transformed, or mutated by unstable Mythos Gates. Their forms depend on the Gate that created them. They belong in anomaly missions, surprise encounters, terrain-distortion mechanics, and strange battlefield effects.
-
-## Ancient World Bosses
-
-Ancient World Bosses are singular legendary beings that do not belong to conventional factions and should not automatically become full factions. They are unique mythic threats: ancient dragons, forgotten giants, world serpents, primordial beasts, divine remnants, Gate guardians, or sealed route catastrophes.
-=======
 The Gateborn are entities created, transformed, or mutated by unstable Mythos Gates. Their forms depend on the Gate that created them.
 
 Role:
@@ -77,4 +70,3 @@ Role:
 Tone:
 
 Legendary singular threat.
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)

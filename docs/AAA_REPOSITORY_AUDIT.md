@@ -10,11 +10,7 @@ Readiness grade after the mission/campaign lore run-in pass: A- for AAA preprodu
 
 ## What is already strong
 
-<<<<<<< HEAD
-- Canon scope is coherent: 7 playable Realms, 63 Titans, one-active-deity combat, The Hollow as a non-playable campaign threat.
-=======
 - Canon scope is coherent: 7 playable Realms, 28 Deities, one-active-deity combat, The Hollow as a non-playable campaign threat.
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 - Content coverage is unusually deep for preproduction: 280 missions, 280 dialogue packages, 280 mission art packages, 35 campaign chapters, 110 art prompts.
 - Production handoff exists: 129 3D blueprint assets, 129 asset manifests, creator handoff packets, asset dependency graph, external AI battlefield packet.
 - Automation exists: build, continuity audit, content validation, asset validation, index freshness, playable battle smoke test, external AI packet validation, secret scan.

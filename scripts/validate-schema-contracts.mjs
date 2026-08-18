@@ -56,7 +56,7 @@ const contracts = [
   },
   {
     name: 'one-deity-vs-many-combat',
-    schemaPath: 'schemas/one-deity-vs-many-combat.schema.json',
+    schemaPath: 'schemas/one-titan-vs-many-combat.schema.json',
     records: [JSON.parse(fs.readFileSync('data/one-deity-vs-many-combat.json', 'utf8'))]
   },
   {

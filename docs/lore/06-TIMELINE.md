@@ -4,11 +4,7 @@
 
 The seven source Realms existed as ancient extradimensional civilizations before human myth remembered them. Their gods, goddesses, rites, materials, weapons, sacred offices, monsters, and laws bled into Earth cultures as fragmentary mythic echoes.
 
-<<<<<<< HEAD
-## The Gate Age
-=======
 Mythos Gates connect the Realms through sacred dimensional roads.
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 The Mythos Gates connected Realm roads, treaty routes, sacred thresholds, conquest paths, pilgrimage chambers, sealed locks, and hidden vaults. Civilizations crossed, warred, traded power, stole relics, sealed threats, and left Gate structures behind.
 
@@ -20,11 +16,7 @@ The Ascension Collapse shattered those roads. Gates became stable, sealed, ruine
 
 The current age begins when the routes reopen and every Realm realizes the Gates are not simply passages. They are tests, wounds, witnesses, and weapons.
 
-<<<<<<< HEAD
-## Ascension Route Era
-=======
 Realm civilizations use Mythos Gates for diplomacy, conquest, worship, resource exchange, pilgrimage, and war.
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 The active campaign era is now defined by these route events:
 
@@ -36,9 +28,6 @@ The active campaign era is now defined by these route events:
 - **Choir-Vault Discord Ascent:** The Choir-Vault Gate reopens as wound gate leaking memory-burning radiance, pulling Empyrean into a one-deity descent against many enemies.
 - **Black-Iron Debt Descent:** The Black-Iron Gate reopens as distortion gate bound by contract clauses, pulling Infernal Dominion into a one-deity descent against many enemies.
 
-<<<<<<< HEAD
-The complete origin of the Mythos Gates remains unresolved. Ascension reveals route consequences, not the final answer.
-=======
 ## Era 4 — The Ascension Collapse
 
 The old dimensional order shatters.
@@ -64,4 +53,3 @@ This is the current game era.
 ## Current Campaign Question
 
 If the Mythos Gates are reopening now, who or what is calling them back to life?
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)

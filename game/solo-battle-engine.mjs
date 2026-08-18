@@ -71,76 +71,9 @@ function findEnemy(state, enemyId) {
 function livingEnemies(state) { return state.enemies.filter(e => e.hp > 0); }
 function currentSpace(state) { return state.terrain.spaces.find(s => key(s.position) === key(state.deity.position)); }
 
-<<<<<<< HEAD
-
-// ─── Dungeon Crawler Phase Functions ───
-
-export function enterExploration(inputState) {
-  const state = clone(inputState);
-  state.phase = PHASES.EXPLORATION;
-  log(state, 'EXPLORATION_BEGIN', { zone: state.missionId });
-  return state;
-}
-
-export function triggerEncounter(inputState, { enemies, zoneName }) {
-  const state = clone(inputState);
-  state.phase = PHASES.ENCOUNTER;
-  if (enemies && enemies.length > 0) {
-    state.enemies = enemies.map((enemy, index) => ({
-      id: enemy.id,
-      instanceId: `${enemy.id}-${index + 1}`,
-      name: enemy.name,
-      archetype: enemy.combatRole || enemy.aiProfile?.archetype || 'PRESSURE',
-      hp: enemy.stats?.hp || enemy.hp || 30,
-      maxHp: enemy.stats?.hp || enemy.hp || 30,
-      damage: enemy.stats?.damage || enemy.damage || 5,
-      armor: enemy.stats?.armor || enemy.armor || 0,
-      resistance: enemy.stats?.resistance || enemy.resistance || 0,
-      range: enemy.stats?.range || enemy.range || 1,
-      movement: enemy.stats?.movement || enemy.movement || 3,
-      threatWeight: enemy.stats?.threatWeight || 1,
-      position: { x: 4 + (index % 3), y: 3 + Math.floor(index / 3) },
-      intent: null,
-      vulnerable: false,
-      status: []
-    }));
-  }
-  log(state, 'ENCOUNTER_TRIGGERED', { zone: zoneName || state.missionId, enemyCount: state.enemies.length });
-  state.phase = PHASES.PLAYER;
-  log(state, 'COMBAT_BEGIN', { enemies: state.enemies.map(e => e.instanceId) });
-  return state;
-}
-
-export function transitionToNextZone(inputState, { nextZoneId, rewards }) {
-  const state = clone(inputState);
-  state.phase = PHASES.ZONE_TRANSITION;
-  if (rewards) {
-    for (const [resource, amount] of Object.entries(rewards)) {
-      if (resource in state.resources) {
-        state.resources[resource] = clamp(state.resources[resource] + amount);
-      }
-    }
-  }
-  log(state, 'ZONE_TRANSITION', { from: state.missionId, to: nextZoneId, rewards: rewards || {} });
-  state.missionId = nextZoneId || state.missionId;
-  state.phase = PHASES.EXPLORATION;
-  state.round = 1;
-  state.deity.actionsTakenThisRound = [];
-  state.deity.status = [];
-  state.deity.cooldowns = {};
-  log(state, 'EXPLORATION_BEGIN', { zone: state.missionId });
-  return state;
-}
-
-export function createInitialSoloBattleState({ battleId, missionId, deity, enemies = [], terrain, objectives, seed = 1 }) {
-  if (!deity?.id) throw new Error('A solo battle requires one active deity.');
-  // Dungeon crawler mode: enemies may be empty (exploration phase). They get populated via triggerEncounter.
-  if (!Array.isArray(enemies)) throw new Error('Enemies must be an array (can be empty for exploration start).');
-=======
 export function createInitialSoloBattleState({ battleId, missionId, titan, enemies, terrain, objectives, seed = 1 }) {
   if (!titan?.id) throw new Error('A solo battle requires one active deity.');
   if (!Array.isArray(enemies) || enemies.length < 1) throw new Error('A solo battle requires at least one enemy.');
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   const state = {
     battleId,
     missionId,

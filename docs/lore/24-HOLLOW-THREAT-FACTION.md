@@ -25,8 +25,4 @@ The Hollow gives designers a universal enemy pressure layer. It can invade Aten 
 
 ## Visual Rule
 
-<<<<<<< HEAD
-Hollow enemies should never look like playable deities. They may imitate armor, banners, wings, crowns, or shrine forms, but every silhouette must remain incomplete, fractured, negative-space, maskless, or visibly Gate-corrupted.
-=======
 Hollow enemies should never look like playable deitys. They may imitate armor, banners, wings, crowns, or shrine forms, but every silhouette must remain incomplete, fractured, negative-space, maskless, or visibly Gate-corrupted.
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)

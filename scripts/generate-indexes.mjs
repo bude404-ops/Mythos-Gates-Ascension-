@@ -76,15 +76,9 @@ const files = {
   'continuity-balance-audit.json': 'continuityBalanceAudit',
   'endgame-dashboard.json': 'endgameDashboard',
   'monetization-policy.json': 'monetizationPolicy',
-<<<<<<< HEAD
-  'solo-deity-migration-report.json': 'soloDeityMigrationReport',
-  'solo-combat-design-document.json': 'soloCombatDesignDocument',
-  'solo-deity-roster-redesign.json': 'soloDeityRosterRedesign',
-=======
   'solo-deity-migration-report.json': 'soloTitanMigrationReport',
   'solo-combat-design-document.json': 'soloCombatDesignDocument',
   'solo-deity-roster-redesign.json': 'soloTitanRosterRedesign',
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   'enemy-scaling-design-document.json': 'enemyScalingDesignDocument',
   'enemy-archetype-registry.json': 'enemyArchetypeRegistry',
   'raid-design-document.json': 'raidDesignDocument',
@@ -103,13 +97,8 @@ const files = {
   'faction-mission-dialogue-completion-audit.json': 'factionMissionDialogueCompletionAudit',
   'tactical-blueprint-layouts.json': 'tacticalBlueprintLayouts',
   'tactical-blueprint-placements.json': 'tacticalBlueprintPlacements',
-<<<<<<< HEAD
-  'titan-enemy-balance-pass.json': 'deityEnemyBalancePass',
-  'titan-art-identity-audit.json': 'deityArtIdentityAudit',
-=======
   'titan-enemy-balance-pass.json': 'titanEnemyBalancePass',
   'deity-art-identity-audit.json': 'titanArtIdentityAudit',
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   'gameplay-balance-framework.json': 'gameplayBalanceFramework',
   'combat-first-gameplay-doctrine.json': 'combatFirstGameplayDoctrine',
   'economy-migration-audit.json': 'economyMigrationAudit',

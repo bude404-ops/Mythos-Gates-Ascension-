@@ -30,17 +30,10 @@ The The Black Iron Court of Dominion is defined by infernal contracts, black iro
 ## Titan Codex Hooks
 ### Mordrath (TG-TITAN-055)
 - **Role:** Defender
-<<<<<<< HEAD
-- **Lore Function:** Mordrath, the Infernal King embodies the Infernal Dominion answer to the Ascension Collapse: defender shaped into Realm doctrine.
-- **Chapter Hook:** When Mordrath, the Infernal King enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
-- **Visual Context:** Frame Mordrath, the Infernal King against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Varkul Bloodforged Crown (TG-TITAN-057)
-=======
 - **Lore Function:** Mordrath embodies the Infernal Dominion answer to the Ascension Collapse: defender shaped into Realm doctrine.
 - **Chapter Hook:** When Mordrath enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 - **Visual Context:** Frame Mordrath against black iron, ember red, volcanic courts, chain halos, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
 ### Varkul Bloodforged Crown (TG-TITAN-056)
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 - **Role:** Battery
 - **Lore Function:** Varkul Bloodforged Crown embodies the Infernal Dominion answer to the Ascension Collapse: battery shaped into Realm doctrine.
 - **Chapter Hook:** When Varkul Bloodforged Crown enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.

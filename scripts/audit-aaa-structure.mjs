@@ -162,7 +162,7 @@ const schemas = [
   'schemas/ue5-dungeon-framework.schema.json',
   'schemas/ue5-first-mission-zone-template.schema.json',
   'schemas/ue5-mobile-first-architecture.schema.json',
-  'schemas/one-deity-vs-many-combat.schema.json',
+  'schemas/one-titan-vs-many-combat.schema.json',
   'schemas/cross-faction-encounter-pool.schema.json'
 ];
 for (const schema of schemas) {
@@ -190,13 +190,8 @@ if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:ue5-d
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:ue5-dungeon-framework')) issues.push('precommit:verify must enforce UE5 dungeon framework contracts.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:ue5-mobile-first')) issues.push('precommit:verify must enforce UE5 mobile-first validation.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:ue5-mobile-first')) issues.push('precommit:verify must enforce UE5 mobile-first contracts.');
-<<<<<<< HEAD
-if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:one-deity-vs-many-combat')) issues.push('precommit:verify must enforce one-Deity-vs-many combat validation.');
-if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:one-deity-vs-many-combat')) issues.push('precommit:verify must enforce one-Deity-vs-many combat contracts.');
-=======
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:one-deity-vs-many-combat')) issues.push('precommit:verify must enforce one-Titan-vs-many combat validation.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:one-deity-vs-many-combat')) issues.push('precommit:verify must enforce one-Titan-vs-many combat contracts.');
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:mission-campaign-lore-run-ins')) issues.push('precommit:verify must enforce mission/campaign lore run-in validation.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:mission-campaign-lore-run-ins')) issues.push('precommit:verify must enforce mission/campaign lore run-in contracts.');
 

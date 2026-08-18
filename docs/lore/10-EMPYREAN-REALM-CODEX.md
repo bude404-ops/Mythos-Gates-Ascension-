@@ -30,17 +30,10 @@ The The White Citadel Above Law is defined by angelic order, impossible architec
 ## Titan Codex Hooks
 ### Seraphel (TG-TITAN-046)
 - **Role:** Defender
-<<<<<<< HEAD
-- **Lore Function:** Seraphel, the Throne Eternal embodies the Empyrean answer to the Ascension Collapse: defender shaped into Realm doctrine.
-- **Chapter Hook:** When Seraphel, the Throne Eternal enters a chapter, the scene should test Empyrean's core tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.
-- **Visual Context:** Frame Seraphel, the Throne Eternal against white-gold citadels, aura geometry, luminous wings, cathedral engines, glass floors over starless voids while preserving their individual silhouette and role readability.
-### Caelion Dawnborn Axis (TG-TITAN-048)
-=======
 - **Lore Function:** Seraphel embodies the Empyrean answer to the Ascension Collapse: defender shaped into Realm doctrine.
 - **Chapter Hook:** When Seraphel enters a chapter, the scene should test Empyrean's core tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.
 - **Visual Context:** Frame Seraphel against white-gold citadels, halo geometry, luminous wings, cathedral engines, glass floors over starless voids while preserving their individual silhouette and role readability.
 ### Caelion Dawnborn Axis (TG-TITAN-047)
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 - **Role:** Battery
 - **Lore Function:** Caelion Dawnborn Axis embodies the Empyrean answer to the Ascension Collapse: battery shaped into Realm doctrine.
 - **Chapter Hook:** When Caelion Dawnborn Axis enters a chapter, the scene should test Empyrean's core tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.
