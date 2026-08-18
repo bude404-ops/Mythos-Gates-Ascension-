@@ -61,6 +61,11 @@
       "version": "10",
       "updated": "2026-08-18",
       "note": "FULL OVERHAUL v10: unique weapon (an aegis shield of living marble with bronze gorgo...), unique armor, unique deity-specific ground effects, removed all game-mechanic jargon, wing references purged, cross-faction bans locked."
+    },
+    {
+      "version": "10.1",
+      "updated": "2026-08-18",
+      "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
     }
   ],
   "factionVisualBibleId": "TG-FVB-003",
@@ -79,5 +84,39 @@
     "noGenericGiantFraming": true,
     "noSciFiAlienFraming": true
   },
-  "mythicSource": "strategy, aegis protection, disciplined warfare, craft, and clear judgment"
+  "mythicSource": "strategy, aegis protection, disciplined warfare, craft, and clear judgment",
+  "visualIdentity": "Composed wise feminine Greek face, grey eyes, strategic calm, helmeted beauty. Disciplined warrior-queen frame, armored grace. Owl-crested helm of bronze and marble, aegis scale cloak of marble-bronze plates, civic cuirass with owl motif, olive-branch bronze inlay on shoulders. Weapon: aegis shield of living marble with bronze gorgon face, long bronze spear with marble inlay.",
+  "signatureWeapon": "Aegis shield and long bronze spear",
+  "uniqueMaterials": "living marble, bronze, olive-branch, owl shadow, civic stone, aegis scales",
+  "factionMaterials": [
+    "primary: living marble-light, bronze, laurel circuits",
+    "secondary: aegis scales, oracle smoke, gold-blue skyfire",
+    "accent: ambrosia gold, violet heavens, eagle shadow"
+  ],
+  "factionRejectionList": [
+    "solar discs, faience, amber (Aten Ra)",
+    "storm-iron, raven feathers, frost (Asgardian)",
+    "torii, shide, mirror (Kami)",
+    "bark-root, fae, moon-oak (Tuatha)",
+    "opal-glass, seraph-gold, cathedral (Empyrean)",
+    "contract chains, horns, brass (Infernal)",
+    "halo rings or circular discs behind head",
+    "readable text or glyph-like markings"
+  ],
+  "factionGroundAura": [
+    "marble cracks with bronze lightning",
+    "laurel-leaf patterns in ambrosia gold",
+    "eagle-shadow energy radiating outward",
+    "civic stone fracturing in thunder patterns",
+    "oracle smoke wisps rising from ground",
+    "gold-blue skyfire in ground fissures"
+  ],
+  "canonAudit": {
+    "has_weapon": true,
+    "has_visual_identity": true,
+    "has_ground_effects": true,
+    "has_cross_faction_ban": true,
+    "has_no_text_rule": true,
+    "has_non_human_rule": true
+  }
 }

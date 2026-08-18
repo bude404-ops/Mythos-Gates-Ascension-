@@ -28,26 +28,26 @@ The The Storm-Rooted Aesir Holds is defined by iron oaths, rune storms, mountain
 - choose whether an oath must be broken to save a Realm.
 
 ## Titan Codex Hooks
-### The Allfather Stormvein (TG-TITAN-010)
+### The Odin (TG-TITAN-010)
 - **Role:** Defender
-- **Lore Function:** The Allfather Stormvein embodies the Asgardian answer to the Ascension Collapse: defender shaped into Realm doctrine.
-- **Chapter Hook:** When The Allfather Stormvein enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
-- **Visual Context:** Frame The Allfather Stormvein against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
-### Hrothar Rune-Mountain (TG-TITAN-011)
+- **Lore Function:** The Odin embodies the Asgardian answer to the Ascension Collapse: defender shaped into Realm doctrine.
+- **Chapter Hook:** When The Odin enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
+- **Visual Context:** Frame The Odin against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
+### Freyja (TG-TITAN-011)
 - **Role:** Battery
-- **Lore Function:** Hrothar Rune-Mountain embodies the Asgardian answer to the Ascension Collapse: battery shaped into Realm doctrine.
-- **Chapter Hook:** When Hrothar Rune-Mountain enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
-- **Visual Context:** Frame Hrothar Rune-Mountain against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
-### Skeld Iron Tempest (TG-TITAN-015)
+- **Lore Function:** Freyja embodies the Asgardian answer to the Ascension Collapse: battery shaped into Realm doctrine.
+- **Chapter Hook:** When Freyja enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
+- **Visual Context:** Frame Freyja against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
+### Frigg (TG-TITAN-015)
 - **Role:** Controller
-- **Lore Function:** Skeld Iron Tempest embodies the Asgardian answer to the Ascension Collapse: controller shaped into Realm doctrine.
-- **Chapter Hook:** When Skeld Iron Tempest enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
-- **Visual Context:** Frame Skeld Iron Tempest against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
-### Eirwyn Valkstorm (TG-TITAN-018)
+- **Lore Function:** Frigg embodies the Asgardian answer to the Ascension Collapse: controller shaped into Realm doctrine.
+- **Chapter Hook:** When Frigg enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
+- **Visual Context:** Frame Frigg against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
+### Thor (TG-TITAN-018)
 - **Role:** Breaker
-- **Lore Function:** Eirwyn Valkstorm embodies the Asgardian answer to the Ascension Collapse: breaker shaped into Realm doctrine.
-- **Chapter Hook:** When Eirwyn Valkstorm enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
-- **Visual Context:** Frame Eirwyn Valkstorm against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
+- **Lore Function:** Thor embodies the Asgardian answer to the Ascension Collapse: breaker shaped into Realm doctrine.
+- **Chapter Hook:** When Thor enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
+- **Visual Context:** Frame Thor against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
 ### Mordun Frost-Anvil (TG-TITAN-010)
 - **Role:** Disruptor
 - **Lore Function:** Mordun Frost-Anvil embodies the Asgardian answer to the Ascension Collapse: disruptor shaped into Realm doctrine.

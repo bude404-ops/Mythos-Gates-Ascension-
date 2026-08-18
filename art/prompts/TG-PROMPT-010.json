@@ -61,6 +61,11 @@
       "version": "10",
       "updated": "2026-08-18",
       "note": "FULL OVERHAUL v10: unique weapon (Gungnir oath-spear of storm-iron with rune wounds ...), unique armor, unique deity-specific ground effects, removed all game-mechanic jargon, wing references purged, cross-faction bans locked."
+    },
+    {
+      "version": "10.1",
+      "updated": "2026-08-18",
+      "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
     }
   ],
   "factionVisualBibleId": "TG-FVB-002",
@@ -81,5 +86,40 @@
   },
   "mythicSource": "wisdom, sacrifice, runes, ravens, kingship, and oath-bound doom knowledge",
   "approvedImage": "art/approved/TG-TITAN-010_odin-allfather-stormvein.png",
-  "approvedVersion": "v9-render"
+  "approvedVersion": "v9-render",
+  "visualIdentity": "Weathered wise masculine Norse face, one scarred eye socket with rune wounds, sharp beard, storm-grey remaining eye. Tall kingly masculine frame, broad shoulders, composed posture. Wide raven-feather cloak, wolf-pelt shoulder pauldron, storm-iron mail grown into flesh, oath-ring collar, ash-wood spear with iron-wound runes. Weapon: Gungnir oath-spear of storm-iron, round rune-battered shield of ash wood with storm-iron rim.",
+  "signatureWeapon": "Gungnir oath-spear and rune-battered round shield",
+  "uniqueMaterials": "storm-iron, ash wood, raven-feather shadow, wolf fur, rune-wound scars, funeral ember",
+  "factionMaterials": [
+    "primary: dark rune iron, storm steel, ash wood, wolf fur",
+    "secondary: raven feather shadow, oath red wax, bone white, blackwinter frost",
+    "accent: funeral ember, world-root bark"
+  ],
+  "factionRejectionList": [
+    "solar discs, faience, amber beads, electrum (Aten Ra)",
+    "marble, laurel, civic columns (Olympian)",
+    "torii, shide, mirror shapes (Kami)",
+    "bark-root, fae, moon-oak (Tuatha)",
+    "opal-glass, seraph-gold, cathedral geometry (Empyrean)",
+    "contract chains, horns, brass (Infernal)",
+    "halo rings or circular discs behind head",
+    "anatomical wings \u2014 cloaks and mantles only",
+    "readable text, runes as writing, or glyph-like markings"
+  ],
+  "factionGroundAura": [
+    "storm-iron cracks with funeral ember glow",
+    "raven-feather shadow wisps spreading outward",
+    "blackwinter frost crystallizing at edges",
+    "oath-red wax pooling in ground cracks",
+    "ash-root veins spreading from deity's feet",
+    "lightning-frost cracks for Thor specifically"
+  ],
+  "canonAudit": {
+    "has_weapon": true,
+    "has_visual_identity": true,
+    "has_ground_effects": true,
+    "has_cross_faction_ban": true,
+    "has_no_text_rule": true,
+    "has_non_human_rule": true
+  }
 }

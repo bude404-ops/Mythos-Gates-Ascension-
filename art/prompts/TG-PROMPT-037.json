@@ -61,6 +61,11 @@
       "version": "10",
       "updated": "2026-08-18",
       "note": "FULL OVERHAUL v10: unique weapon (a great oak-club of moon-oak wood with iron bands ...), unique armor, unique deity-specific ground effects, removed all game-mechanic jargon, wing references purged, cross-faction bans locked."
+    },
+    {
+      "version": "10.1",
+      "updated": "2026-08-18",
+      "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
     }
   ],
   "factionVisualBibleId": "TG-FVB-005",
@@ -79,5 +84,39 @@
     "noGenericGiantFraming": true,
     "noSciFiAlienFraming": true
   },
-  "mythicSource": "abundance, cauldron kingship, earth strength, and generous sovereignty"
+  "mythicSource": "abundance, cauldron kingship, earth strength, and generous sovereignty",
+  "visualIdentity": "Broad powerful masculine Celtic face, weathered oak-bark skin, warm generous eyes, great beard. Massive king frame, oak-root stance. Moon-oak bark-iron armor grown into skin, fur mantle of wolf and stag, broad oak-root chest plate, cauldron-bronze shoulder guards, sidhe-green vine inlay. Weapon: great oak-club of moon-oak wood with iron bands and bronze cauldron-head, cauldron-lid shield of bronze with oak-root rim.",
+  "signatureWeapon": "Great life-death oak club and cauldron-lid shield",
+  "uniqueMaterials": "moon-oak silver, cauldron bronze, sidhe green, bark-iron, thorn vine, mist white",
+  "factionMaterials": [
+    "primary: silver, moon-oak, living bark armor",
+    "secondary: sidhe green, cauldron bronze, thorn vine, mist white",
+    "accent: fae glass, geas scars, root-lace, moonlit green-gold"
+  ],
+  "factionRejectionList": [
+    "solar discs, faice, amber (Aten Ra)",
+    "storm-iron, raven feathers, frost (Asgardian)",
+    "marble, laurel, bronze civic (Olympian)",
+    "torii, shide, mirror (Kami)",
+    "opal-glass, seraph-gold, cathedral (Empyrean)",
+    "contract chains, horns, brass (Infernal)",
+    "anatomical wings \u2014 cloaks and mantles only",
+    "readable text, ogham, or glyph-like markings"
+  ],
+  "factionGroundAura": [
+    "moon-oak root veins spreading in silver and green",
+    "cauldron-bronze energy bubbling up from ground",
+    "sidhe mist in white and green",
+    "thorn-vine cracks in bark-iron",
+    "fae glass reflections on ground",
+    "geas-scar patterns glowing"
+  ],
+  "canonAudit": {
+    "has_weapon": true,
+    "has_visual_identity": true,
+    "has_ground_effects": true,
+    "has_cross_faction_ban": true,
+    "has_no_text_rule": true,
+    "has_non_human_rule": true
+  }
 }

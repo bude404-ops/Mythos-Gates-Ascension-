@@ -61,6 +61,11 @@
       "version": "10",
       "updated": "2026-08-18",
       "note": "FULL OVERHAUL v10: unique weapon (a storm-iron longsword with rune-scarred blade and...), unique armor, unique deity-specific ground effects, removed all game-mechanic jargon, wing references purged, cross-faction bans locked."
+    },
+    {
+      "version": "10.1",
+      "updated": "2026-08-18",
+      "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
     }
   ],
   "factionVisualBibleId": "TG-FVB-002",
@@ -79,5 +84,40 @@
     "noGenericGiantFraming": true,
     "noSciFiAlienFraming": true
   },
-  "mythicSource": "Vanir beauty, battle choice, sei\u00f0r magic, desire, gold, and Valkyrie sovereignty"
+  "mythicSource": "Vanir beauty, battle choice, sei\u00f0r magic, desire, gold, and Valkyrie sovereignty",
+  "visualIdentity": "Radiant beautiful feminine Norse queen face, bright fierce eyes, full lips, high cheekbones, battle-fate confidence. Beautiful feminine valkyrie-queen frame, narrow waist, graceful hips, long elegant legs, commanding posture without muscular bulk. Falcon-feather cloak draped as fabric (NOT wings), oath-ring collar of heavy iron, jewel collar of bone and iron, long braided hair, storm-iron valkyrie plate with rune-wound scars, frost-cracked bracers, wolf-fur mantle. Weapon: storm-iron longsword with rune-scarred blade and wolf-fur grip, round raven-feather shield with bone-white rim.",
+  "signatureWeapon": "Storm-iron longsword and round raven-feather shield",
+  "uniqueMaterials": "storm-iron, raven-feather shadow, wolf fur, bone white, blackwinter frost, funeral ember, oath-red wax",
+  "factionMaterials": [
+    "primary: dark rune iron, storm steel, ash wood, wolf fur",
+    "secondary: raven feather shadow, oath red wax, bone white, blackwinter frost",
+    "accent: funeral ember, world-root bark"
+  ],
+  "factionRejectionList": [
+    "solar discs, faience, amber beads, electrum (Aten Ra)",
+    "marble, laurel, civic columns (Olympian)",
+    "torii, shide, mirror shapes (Kami)",
+    "bark-root, fae, moon-oak (Tuatha)",
+    "opal-glass, seraph-gold, cathedral geometry (Empyrean)",
+    "contract chains, horns, brass (Infernal)",
+    "halo rings or circular discs behind head",
+    "anatomical wings \u2014 cloaks and mantles only",
+    "readable text, runes as writing, or glyph-like markings"
+  ],
+  "factionGroundAura": [
+    "storm-iron cracks with funeral ember glow",
+    "raven-feather shadow wisps spreading outward",
+    "blackwinter frost crystallizing at edges",
+    "oath-red wax pooling in ground cracks",
+    "ash-root veins spreading from deity's feet",
+    "lightning-frost cracks for Thor specifically"
+  ],
+  "canonAudit": {
+    "has_weapon": true,
+    "has_visual_identity": true,
+    "has_ground_effects": true,
+    "has_cross_faction_ban": true,
+    "has_no_text_rule": true,
+    "has_non_human_rule": true
+  }
 }

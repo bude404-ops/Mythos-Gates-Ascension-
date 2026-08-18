@@ -61,6 +61,11 @@
       "version": "10",
       "updated": "2026-08-18",
       "note": "FULL OVERHAUL v10: unique weapon (an obsidian dagger with blood-wax hilt, and a bloo...), unique armor, unique deity-specific ground effects, removed all game-mechanic jargon, wing references purged, cross-faction bans locked."
+    },
+    {
+      "version": "10.1",
+      "updated": "2026-08-18",
+      "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
     }
   ],
   "factionVisualBibleId": "TG-FVB-007",
@@ -79,5 +84,39 @@
     "noGenericGiantFraming": true,
     "noSciFiAlienFraming": true
   },
-  "mythicSource": "velvet ash seduction, infernal charm, survival, and restorative darkness"
+  "mythicSource": "velvet ash seduction, infernal charm, survival, and restorative darkness",
+  "visualIdentity": "Beautiful dark feminine face, seductive eyes, night-bloom skin, alluring gaze. Slender seductress frame, enticing posture. Seductress regalia of obsidian and brass, blood-wax lace armor, ritual chalice pendant, thorned-rose inlay on skin, night-bloom patterns on chest plate. Weapon: obsidian dagger with blood-wax hilt, blood-wax ritual chalice shield of brass and obsidian.",
+  "signatureWeapon": "Obsidian dagger and blood-wax ritual chalice shield",
+  "uniqueMaterials": "obsidian, blood-wax red, brass, night-dark, thorned-rose",
+  "factionMaterials": [
+    "primary: black iron, volcanic glass, obsidian",
+    "secondary: blood-wax red, brass, hellfire",
+    "accent: contract parchment, ash velvet, chain mantles"
+  ],
+  "factionRejectionList": [
+    "solar discs, faience, amber (Aten Ra)",
+    "storm-iron, raven feathers, frost (Asgardian)",
+    "marble, laurel, bronze civic (Olympian)",
+    "torii, shide, mirror (Kami)",
+    "bark-root, fae, moon-oak (Tuatha)",
+    "opal-glass, seraph-gold, cathedral (Empyrean)",
+    "anatomical bat wings \u2014 cloaks and mantles only",
+    "readable text, contracts, or glyph-like markings"
+  ],
+  "factionGroundAura": [
+    "volcanic-glass cracks with hellfire",
+    "blood-wax pooling in ground fissures",
+    "obsidian shatter patterns",
+    "infernal heat distortion in black and red",
+    "black-iron star-patterns on ground",
+    "chain-link shadow patterns"
+  ],
+  "canonAudit": {
+    "has_weapon": true,
+    "has_visual_identity": true,
+    "has_ground_effects": true,
+    "has_cross_faction_ban": true,
+    "has_no_text_rule": true,
+    "has_non_human_rule": true
+  }
 }

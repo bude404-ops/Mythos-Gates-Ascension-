@@ -61,6 +61,11 @@
       "version": "10",
       "updated": "2026-08-18",
       "note": "FULL OVERHAUL v10: unique weapon (Mjolnir \u2014 a short-hafted storm hammer of storm-iro...), unique armor, unique deity-specific ground effects, removed all game-mechanic jargon, wing references purged, cross-faction bans locked."
+    },
+    {
+      "version": "10.1",
+      "updated": "2026-08-18",
+      "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
     }
   ],
   "factionVisualBibleId": "TG-FVB-002",
@@ -79,5 +84,40 @@
     "noGenericGiantFraming": true,
     "noSciFiAlienFraming": true
   },
-  "mythicSource": "thunder guardianship, strength, storm protection, and oath defense"
+  "mythicSource": "thunder guardianship, strength, storm protection, and oath defense",
+  "visualIdentity": "Powerful masculine Norse face, storm-blue eyes, braided red-gold beard, thunder-scarred cheeks. Heavy muscular protector frame, broad shoulders, immovable stance. Thunder-braced shoulder plates of storm-iron, heavy belt of ash-iron, thunder-scar patterns across exposed arms, short storm-iron mail, lightning-frost cracks on skin. Weapon: Mjolnir \u2014 short-hafted storm hammer of storm-iron with thunder-scarred head and iron wrist loops, small iron wrist guard shield.",
+  "signatureWeapon": "Mjolnir storm hammer and iron wrist guards",
+  "uniqueMaterials": "storm-iron, thunder-crack scars, lightning-blue frost, blackwinter frost, funeral ember, ash-iron",
+  "factionMaterials": [
+    "primary: dark rune iron, storm steel, ash wood, wolf fur",
+    "secondary: raven feather shadow, oath red wax, bone white, blackwinter frost",
+    "accent: funeral ember, world-root bark"
+  ],
+  "factionRejectionList": [
+    "solar discs, faience, amber beads, electrum (Aten Ra)",
+    "marble, laurel, civic columns (Olympian)",
+    "torii, shide, mirror shapes (Kami)",
+    "bark-root, fae, moon-oak (Tuatha)",
+    "opal-glass, seraph-gold, cathedral geometry (Empyrean)",
+    "contract chains, horns, brass (Infernal)",
+    "halo rings or circular discs behind head",
+    "anatomical wings \u2014 cloaks and mantles only",
+    "readable text, runes as writing, or glyph-like markings"
+  ],
+  "factionGroundAura": [
+    "storm-iron cracks with funeral ember glow",
+    "raven-feather shadow wisps spreading outward",
+    "blackwinter frost crystallizing at edges",
+    "oath-red wax pooling in ground cracks",
+    "ash-root veins spreading from deity's feet",
+    "lightning-frost cracks for Thor specifically"
+  ],
+  "canonAudit": {
+    "has_weapon": true,
+    "has_visual_identity": true,
+    "has_ground_effects": true,
+    "has_cross_faction_ban": true,
+    "has_no_text_rule": true,
+    "has_non_human_rule": true
+  }
 }

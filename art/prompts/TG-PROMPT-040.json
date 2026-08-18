@@ -61,6 +61,11 @@
       "version": "10",
       "updated": "2026-08-18",
       "note": "FULL OVERHAUL v10: unique weapon (a black spear of fate with crow-feather shaft and ...), unique armor, unique deity-specific ground effects, removed all game-mechanic jargon, wing references purged, cross-faction bans locked."
+    },
+    {
+      "version": "10.1",
+      "updated": "2026-08-18",
+      "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
     }
   ],
   "factionVisualBibleId": "TG-FVB-005",
@@ -79,5 +84,39 @@
     "noGenericGiantFraming": true,
     "noSciFiAlienFraming": true
   },
-  "mythicSource": "battle-crow fate, war prophecy, sovereignty, and doom omens"
+  "mythicSource": "battle-crow fate, war prophecy, sovereignty, and doom omens",
+  "visualIdentity": "Sharp fierce feminine Celtic face, dark crow-feather shadow eyes, war-paint, fate-scarred. Slender shadowed warrior frame, predatory stance. Crow-feather mantle draped as fabric (NOT wings), horned battle crown of black iron, raven-shadow armor plates, fate-scarred skin with sidhe-green veins, thorn-vine bracers. Weapon: black spear of fate with crow-feather shaft and iron blade, crow-feather sickle dagger of dark iron.",
+  "signatureWeapon": "Black spear of fate and crow-feather dagger",
+  "uniqueMaterials": "crow-feather shadow, black iron, thorn vine, sidhe green, mist white, fate-red",
+  "factionMaterials": [
+    "primary: silver, moon-oak, living bark armor",
+    "secondary: sidhe green, cauldron bronze, thorn vine, mist white",
+    "accent: fae glass, geas scars, root-lace, moonlit green-gold"
+  ],
+  "factionRejectionList": [
+    "solar discs, faice, amber (Aten Ra)",
+    "storm-iron, raven feathers, frost (Asgardian)",
+    "marble, laurel, bronze civic (Olympian)",
+    "torii, shide, mirror (Kami)",
+    "opal-glass, seraph-gold, cathedral (Empyrean)",
+    "contract chains, horns, brass (Infernal)",
+    "anatomical wings \u2014 cloaks and mantles only",
+    "readable text, ogham, or glyph-like markings"
+  ],
+  "factionGroundAura": [
+    "moon-oak root veins spreading in silver and green",
+    "cauldron-bronze energy bubbling up from ground",
+    "sidhe mist in white and green",
+    "thorn-vine cracks in bark-iron",
+    "fae glass reflections on ground",
+    "geas-scar patterns glowing"
+  ],
+  "canonAudit": {
+    "has_weapon": true,
+    "has_visual_identity": true,
+    "has_ground_effects": true,
+    "has_cross_faction_ban": true,
+    "has_no_text_rule": true,
+    "has_non_human_rule": true
+  }
 }

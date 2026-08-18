@@ -28,21 +28,21 @@ The The Marble Sky of Olympus is defined by radiant rivalry, heroic politics, ma
 - turn public spectacle into Realm defense.
 
 ## Titan Codex Hooks
-### Aurelion Heaven-Marrow (TG-TITAN-019)
+### Zeus (TG-TITAN-019)
 - **Role:** Defender
-- **Lore Function:** Aurelion Heaven-Marrow embodies the Olympian answer to the Ascension Collapse: defender shaped into Realm doctrine.
-- **Chapter Hook:** When Aurelion Heaven-Marrow enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
-- **Visual Context:** Frame Aurelion Heaven-Marrow against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Kallix Marble Thunder (TG-TITAN-022)
+- **Lore Function:** Zeus embodies the Olympian answer to the Ascension Collapse: defender shaped into Realm doctrine.
+- **Chapter Hook:** When Zeus enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
+- **Visual Context:** Frame Zeus against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
+### Artemis (TG-TITAN-022)
 - **Role:** Battery
-- **Lore Function:** Kallix Marble Thunder embodies the Olympian answer to the Ascension Collapse: battery shaped into Realm doctrine.
-- **Chapter Hook:** When Kallix Marble Thunder enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
-- **Visual Context:** Frame Kallix Marble Thunder against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Thyressa Golden Aegis (TG-TITAN-023)
+- **Lore Function:** Artemis embodies the Olympian answer to the Ascension Collapse: battery shaped into Realm doctrine.
+- **Chapter Hook:** When Artemis enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
+- **Visual Context:** Frame Artemis against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
+### Ares (TG-TITAN-023)
 - **Role:** Controller
-- **Lore Function:** Thyressa Golden Aegis embodies the Olympian answer to the Ascension Collapse: controller shaped into Realm doctrine.
-- **Chapter Hook:** When Thyressa Golden Aegis enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
-- **Visual Context:** Frame Thyressa Golden Aegis against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
+- **Lore Function:** Ares embodies the Olympian answer to the Ascension Collapse: controller shaped into Realm doctrine.
+- **Chapter Hook:** When Ares enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
+- **Visual Context:** Frame Ares against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
 ### Ilyon Laurel Flame (TG-TITAN-022)
 - **Role:** Breaker
 - **Lore Function:** Ilyon Laurel Flame embodies the Olympian answer to the Ascension Collapse: breaker shaped into Realm doctrine.

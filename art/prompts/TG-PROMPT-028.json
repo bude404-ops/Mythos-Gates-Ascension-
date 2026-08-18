@@ -61,6 +61,11 @@
       "version": "10",
       "updated": "2026-08-18",
       "note": "FULL OVERHAUL v10: unique weapon (a mirror-disc shield of polished silver with foxfi...), unique armor, unique deity-specific ground effects, removed all game-mechanic jargon, wing references purged, cross-faction bans locked."
+    },
+    {
+      "version": "10.1",
+      "updated": "2026-08-18",
+      "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
     }
   ],
   "factionVisualBibleId": "TG-FVB-004",
@@ -79,5 +84,38 @@
     "noGenericGiantFraming": true,
     "noSciFiAlienFraming": true
   },
-  "mythicSource": "sun mirror sovereignty, imperial radiance, purification, and sacred order"
+  "mythicSource": "sun mirror sovereignty, imperial radiance, purification, and sacred order",
+  "visualIdentity": "Radiant beautiful feminine Japanese face, golden eyes, imperial serenity. Graceful shrine-empress frame, regal posture. S\u014dru armor panels of lacquered black and red, sun-disc hair ornaments of silver, mirror-empress regalia, shimenawa sacred cord across chest, foxfire-blue glowing inlay. Weapon: mirror-disc shield of polished silver with foxfire-blue rim, radiant ceremonial sword of lacquered black with silver edge.",
+  "signatureWeapon": "Mirror-disc shield and ceremonial sword",
+  "uniqueMaterials": "torii red, lacquered black, foxfire blue, mirror silver, cherry blossom, shimenawa cord",
+  "factionMaterials": [
+    "primary: torii red lacquer, lacquered black, mirror silver",
+    "secondary: foxfire blue, white paper shide, shimenawa cord",
+    "accent: moon silver, cherry blossom, cedar bark, oni iron"
+  ],
+  "factionRejectionList": [
+    "solar discs, faience, amber (Aten Ra)",
+    "storm-iron, raven feathers, frost (Asgardian)",
+    "marble, laurel, bronze civic (Olympian)",
+    "bark-root, fae, moon-oak (Tuatha)",
+    "opal-glass, seraph-gold, cathedral (Empyrean)",
+    "contract chains, horns, brass (Infernal)",
+    "readable text, kanji, or glyph-like markings"
+  ],
+  "factionGroundAura": [
+    "torii-red light radiating outward",
+    "foxfire-blue pools and wisps",
+    "lacquered-black ground cracks",
+    "cherry blossom energy petals",
+    "moon-silver crescent patterns on ground",
+    "paper-white shadow patterns"
+  ],
+  "canonAudit": {
+    "has_weapon": true,
+    "has_visual_identity": true,
+    "has_ground_effects": true,
+    "has_cross_faction_ban": true,
+    "has_no_text_rule": true,
+    "has_non_human_rule": true
+  }
 }

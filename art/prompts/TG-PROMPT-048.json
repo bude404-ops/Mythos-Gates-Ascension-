@@ -61,6 +61,11 @@
       "version": "10",
       "updated": "2026-08-18",
       "note": "FULL OVERHAUL v10: unique weapon (a glass compass staff of opal-glass and seraph-gol...), unique armor, unique deity-specific ground effects, removed all game-mechanic jargon, wing references purged, cross-faction bans locked."
+    },
+    {
+      "version": "10.1",
+      "updated": "2026-08-18",
+      "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
     }
   ],
   "factionVisualBibleId": "TG-FVB-006",
@@ -79,5 +84,39 @@
     "noGenericGiantFraming": true,
     "noSciFiAlienFraming": true
   },
-  "mythicSource": "living wisdom, choir logic, revelation, and sacred understanding"
+  "mythicSource": "living wisdom, choir logic, revelation, and sacred understanding",
+  "visualIdentity": "Serene luminous feminine face, many-eye aura, opal-glass skin, wisdom-light. Graceful scholar frame, contemplative posture. Many-eye aura veil of opal-glass, cathedral-curve robes of white and gold, compass-orb at chest, scroll-ribbon armor panels, wisdom-light glowing throughout. Weapon: glass compass staff of opal-glass and seraph-gold, living scroll ribbons of white and gold.",
+  "signatureWeapon": "Glass compass staff and living scroll ribbons",
+  "uniqueMaterials": "opal glass, seraph gold, choir white, many-eye blue, scroll-ribbon",
+  "factionMaterials": [
+    "primary: seraph gold, opal glass, choir white",
+    "secondary: bell metal, many-eye blue, scroll-ribbon",
+    "accent: seraph fire, ophanim wheels, cathedral light"
+  ],
+  "factionRejectionList": [
+    "solar discs, faience, amber (Aten Ra)",
+    "storm-iron, raven feathers, frost (Asgardian)",
+    "marble, laurel, bronze civic (Olympian)",
+    "torii, shide, mirror (Kami)",
+    "bark-root, fae, moon-oak (Tuatha)",
+    "contract chains, horns, brass (Infernal)",
+    "anatomical wings \u2014 feathered cloaks and mantles only",
+    "readable text, scripture, or glyph-like markings"
+  ],
+  "factionGroundAura": [
+    "seraph-gold light radiating in cracks",
+    "opal-glass reflections on ground",
+    "choir-light patterns in gold and white",
+    "cathedral-stone fissures with many-eye blue glow",
+    "bell-metal resonance rings",
+    "seraph-fire energy pools"
+  ],
+  "canonAudit": {
+    "has_weapon": true,
+    "has_visual_identity": true,
+    "has_ground_effects": true,
+    "has_cross_faction_ban": true,
+    "has_no_text_rule": true,
+    "has_non_human_rule": true
+  }
 }

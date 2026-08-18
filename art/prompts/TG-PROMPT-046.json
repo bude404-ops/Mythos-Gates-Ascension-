@@ -61,6 +61,11 @@
       "version": "10",
       "updated": "2026-08-18",
       "note": "FULL OVERHAUL v10: unique weapon (a flaming judgement sword of seraph-gold with opal...), unique armor, unique deity-specific ground effects, removed all game-mechanic jargon, wing references purged, cross-faction bans locked."
+    },
+    {
+      "version": "10.1",
+      "updated": "2026-08-18",
+      "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
     }
   ],
   "factionVisualBibleId": "TG-FVB-006",
@@ -79,5 +84,39 @@
     "noGenericGiantFraming": true,
     "noSciFiAlienFraming": true
   },
-  "mythicSource": "radiant guardianship, holy war, sword judgment, and threshold defense"
+  "mythicSource": "radiant guardianship, holy war, sword judgment, and threshold defense",
+  "visualIdentity": "Radiant handsome masculine face, gold eyes, divine authority, composed warrior. Tall commander frame, commanding stance. Seraph-gold plate armor with opal-glass inlay, feathered cloak of light (NOT anatomical wings \u2014 a mantle of luminous feathers), commander's crest of gold and white, choir-light glowing in joints. Weapon: flaming judgement sword of seraph-gold with opal-glass blade, choir shield of opal-glass with seraph-wing engravings.",
+  "signatureWeapon": "Flaming judgement sword and choir shield",
+  "uniqueMaterials": "seraph gold, opal glass, choir white, bell metal, many-eye blue",
+  "factionMaterials": [
+    "primary: seraph gold, opal glass, choir white",
+    "secondary: bell metal, many-eye blue, scroll-ribbon",
+    "accent: seraph fire, ophanim wheels, cathedral light"
+  ],
+  "factionRejectionList": [
+    "solar discs, faience, amber (Aten Ra)",
+    "storm-iron, raven feathers, frost (Asgardian)",
+    "marble, laurel, bronze civic (Olympian)",
+    "torii, shide, mirror (Kami)",
+    "bark-root, fae, moon-oak (Tuatha)",
+    "contract chains, horns, brass (Infernal)",
+    "anatomical wings \u2014 feathered cloaks and mantles only",
+    "readable text, scripture, or glyph-like markings"
+  ],
+  "factionGroundAura": [
+    "seraph-gold light radiating in cracks",
+    "opal-glass reflections on ground",
+    "choir-light patterns in gold and white",
+    "cathedral-stone fissures with many-eye blue glow",
+    "bell-metal resonance rings",
+    "seraph-fire energy pools"
+  ],
+  "canonAudit": {
+    "has_weapon": true,
+    "has_visual_identity": true,
+    "has_ground_effects": true,
+    "has_cross_faction_ban": true,
+    "has_no_text_rule": true,
+    "has_non_human_rule": true
+  }
 }

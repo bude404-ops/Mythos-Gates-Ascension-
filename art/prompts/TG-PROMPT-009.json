@@ -61,6 +61,11 @@
       "version": "10",
       "updated": "2026-08-18",
       "note": "FULL OVERHAUL v10: unique weapon (paired obsidian name-knives with electrum-gold hil...), unique armor, unique deity-specific ground effects, removed all game-mechanic jargon, wing references purged, cross-faction bans locked."
+    },
+    {
+      "version": "10.1",
+      "updated": "2026-08-18",
+      "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
     }
   ],
   "factionVisualBibleId": "TG-FVB-001",
@@ -81,5 +86,39 @@
     "noSciFiAlienFraming": true
   },
   "approvedImage": "art/approved/TG-TITAN-009_amunet-hidden-breath-goddess.png",
-  "approvedVersion": "v9b-render"
+  "approvedVersion": "v9b-render",
+  "visualIdentity": "Veiled mysterious feminine face, almost-invisible features behind obsidian veil. Slender shadow-frame, vanishing profile. Obsidian face veil with electrum thread, hidden-power armor of black Nile silt glass plates, turquoise faience inlay on forearms, cloaking effect. Weapon: paired obsidian name-knives with electrum-gold hilts, carried in veiled hands.",
+  "signatureWeapon": "Paired obsidian name-knives",
+  "uniqueMaterials": "obsidian, black Nile silt glass, electrum-gold, turquoise faience, shadow-dark",
+  "factionMaterials": [
+    "primary: hammered electrum-gold, sun-warmed bronze, white-gold living radiance, royal linen hardened by solar law",
+    "secondary: lapis/obsidian blue-black shadow, turquoise/faience blue-green inlay, ivory limestone, black Nile silt glass, red desert jasper",
+    "accent: scarab emerald, lotus pink, papyrus green, blood-red Set storm marks, amber Aten hand-rays, black solar-eclipse enamel"
+  ],
+  "factionRejectionList": [
+    "storm-iron, raven feathers, wolf fur, frost (Asgardian)",
+    "marble, laurel, bronze civic armor (Olympian)",
+    "torii, shide, lacquer, mirror shapes (Kami)",
+    "bark-root, fae, moon-oak (Tuatha)",
+    "opal-glass, seraph-gold, cathedral geometry (Empyrean)",
+    "contract chains, horns, brass, blood-wax (Infernal)",
+    "halo rings or circular discs behind head",
+    "readable text, hieroglyphs, or glyph-like markings"
+  ],
+  "factionGroundAura": [
+    "electrum-gold light rays cracking outward from the deity's feet",
+    "lapis-lazuli geometric patterns glowing in the ground",
+    "desert sand particles rising in solar radiance",
+    "scarab-shaped energy patterns in turquoise",
+    "Nile-black and desert-red duality in ground cracks",
+    "Aten hand-rays as ground energy pattern"
+  ],
+  "canonAudit": {
+    "has_weapon": true,
+    "has_visual_identity": true,
+    "has_ground_effects": true,
+    "has_cross_faction_ban": true,
+    "has_no_text_rule": true,
+    "has_non_human_rule": true
+  }
 }

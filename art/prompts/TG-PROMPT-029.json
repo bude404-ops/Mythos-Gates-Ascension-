@@ -61,6 +61,11 @@
       "version": "10",
       "updated": "2026-08-18",
       "note": "FULL OVERHAUL v10: unique weapon (a crescent naginata of lacquered black with moon-s...), unique armor, unique deity-specific ground effects, removed all game-mechanic jargon, wing references purged, cross-faction bans locked."
+    },
+    {
+      "version": "10.1",
+      "updated": "2026-08-18",
+      "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
     }
   ],
   "factionVisualBibleId": "TG-FVB-004",
@@ -79,5 +84,38 @@
     "noGenericGiantFraming": true,
     "noSciFiAlienFraming": true
   },
-  "mythicSource": "moon order, ritual distance, night law, and cold precision"
+  "mythicSource": "moon order, ritual distance, night law, and cold precision",
+  "visualIdentity": "Composed handsome masculine Japanese face, silver moonlit eyes, cold precision. Tall moon-priest frame, vertical posture. Crescent moon headpiece of silver, long court sleeves of lacquered-black armor, moon-priest regalia with shide paper-streamer accents, obsidian chest plate. Weapon: crescent naginata of lacquered black with moon-silver blade, small moon-talisman buckler of silver with foxfire-blue inlay.",
+  "signatureWeapon": "Crescent naginata and moon-talisman buckler",
+  "uniqueMaterials": "moon silver, lacquered black, foxfire blue, paper white, obsidian",
+  "factionMaterials": [
+    "primary: torii red lacquer, lacquered black, mirror silver",
+    "secondary: foxfire blue, white paper shide, shimenawa cord",
+    "accent: moon silver, cherry blossom, cedar bark, oni iron"
+  ],
+  "factionRejectionList": [
+    "solar discs, faience, amber (Aten Ra)",
+    "storm-iron, raven feathers, frost (Asgardian)",
+    "marble, laurel, bronze civic (Olympian)",
+    "bark-root, fae, moon-oak (Tuatha)",
+    "opal-glass, seraph-gold, cathedral (Empyrean)",
+    "contract chains, horns, brass (Infernal)",
+    "readable text, kanji, or glyph-like markings"
+  ],
+  "factionGroundAura": [
+    "torii-red light radiating outward",
+    "foxfire-blue pools and wisps",
+    "lacquered-black ground cracks",
+    "cherry blossom energy petals",
+    "moon-silver crescent patterns on ground",
+    "paper-white shadow patterns"
+  ],
+  "canonAudit": {
+    "has_weapon": true,
+    "has_visual_identity": true,
+    "has_ground_effects": true,
+    "has_cross_faction_ban": true,
+    "has_no_text_rule": true,
+    "has_non_human_rule": true
+  }
 }
