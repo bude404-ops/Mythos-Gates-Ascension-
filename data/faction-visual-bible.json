@@ -3,7 +3,7 @@
   "name": "Mythos Gates Faction Visual Bible",
   "status": "IMPLEMENTED",
   "version": 1,
-  "updated": "2026-08-16",
+  "updated": "2026-08-18",
   "purpose": "Canonical appearance, armor, material, symbol, and rejection guidance for all seven playable factions so prompts and creator handoffs generate detailed, faction-specific art.",
   "sourceInputs": [
     "data/factions.json",
@@ -880,5 +880,6 @@
       "environmentRules",
       "avoid"
     ]
-  }
+  },
+  "combatModel": "one-deity-vs-many"
 }
