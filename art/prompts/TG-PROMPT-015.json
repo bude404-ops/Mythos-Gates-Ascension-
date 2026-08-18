@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-002",
@@ -118,6 +123,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Frigg stands in Fensalir, her hall of hearth and foreknowledge in the Asgardian Holds \u2014 a vast hall of storm-iron and ash-wood where threads of fate are woven into the walls themselves. Colossal loom-architecture fills the space \u2014 fate-threads of oath-red and frost-white pulse through the walls like living prophecy. The Rune-Mountain Halls are visible through enormous windows, their runes glowing with her foresight. The world-root system branches beneath her feet, feeding the loom with memories of what was and what will be. Birthing benches of iron and bone line the hall at her scale. The scene communicates: she sees all fates but speaks none \u2014 the hall is her power, and the threads are her domain.",
+  "scaleCue": "The fate-loom beside her would be a cathedral to humans but reaches only her waist. The hall's windows frame entire mountain ranges.",
+  "factionSkinLanguage": "Storm-iron skin with rune-wound scars burned directly into flesh \u2014 not painted, not tattooed, but carved by oath and lightning. Ash-root veins pulse beneath the surface like living world-root. Raven-feather shadow patches darken the skin like permanent storm stains. Blackwinter frost cracks trace across exposed areas. Wolf-pelt weather texture on forearms and shoulders \u2014 rough, wind-carved, surviving impossible cold.",
+  "factionTraitDetails": "Broad heavy divine frame \u2014 wider shoulders, thicker bone structure than any human. Runes glow faintly in their scars when oath-power is active. Storm-lightning flickers across the skin in moments of power. The body carries the weight of ancient promises \u2014 every scar is a vow kept or broken. Breath visible as frost-ember mist."
 }

@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-007",
@@ -117,6 +122,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Lucifer stands in the Obsidian Throne-Room of the Infernal Dominion \u2014 a colossal hall of black iron and volcanic glass where sovereignty is defined by debt. Enormous chain-architecture hangs from the vaulted ceiling, each chain a contract clause made visible. The Black-Iron Gate blazes behind the throne dais, its frame of obsidian and brass radiating hellfire. Volcanic-glass thrones line the hall at his scale, each one a seat of infernal authority. Star-crack patterns radiate across the obsidian floor from where he stands \u2014 the light-bringer still carries his fallen star. Ash-velvet banners hang from iron standards. The scene communicates: he IS the fallen king \u2014 the throne-room exists because power needs a seat, even in exile.",
+  "scaleCue": "The chain-architecture would be bridge-cables to humans but are necklace-thick to him. The volcanic-glass thrones are the size of buildings.",
+  "factionSkinLanguage": "Volcanic-glass divine skin with obsidian-black surface and hellfire-glow cracks beneath. Blood-wax veins pulse red beneath the dark surface like contract clauses made visible. Brass-scorched patterns mark where power has burned through. Ash-velvet texture on shoulders and neck. Chain-link scars are branded into the flesh as living debt-marks. The skin radiates infernal heat \u2014 standing near it feels like standing near a forge.",
+  "factionTraitDetails": "Dominant divine proportions \u2014 imposing, heavy, with the weight of sovereignty and debt. Horn growths from brow and shoulders are part of the skull, not worn. Star-crack patterns radiate from old wounds. The body smells of ash and brass and old contracts. Hellfire flickers in the cracks when power surges. Shadows pool unnaturally around the feet."
 }

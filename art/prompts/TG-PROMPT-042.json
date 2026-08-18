@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-005",
@@ -117,6 +122,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Lugh stands in the royal court of Avalora \u2014 a colossal hall of silver and oak where the Tuatha's many-skilled sovereignty is displayed. Enormous craft-tools of divine scale line the walls \u2014 smith hammers, harps, spear-racks, and artisan implements, each a monument to mastery. The Silver-Root Gate opens behind the throne dais, its silver-root geometry framing the gate's luminous threshold. Living oak columns grow from floor to ceiling, their surfaces inlaid with silver and sidhe-green. Lugh's spear is mounted in the center of the hall, its radiant glow illuminating the entire space. The scene communicates: he IS mastery of all arts \u2014 the court exists because excellence needs a throne.",
+  "scaleCue": "The craft-tools on the walls would be gallery installations to humans but are hand-tools to him. The hall could hold a small city.",
+  "factionSkinLanguage": "Living bark-silver skin with moonlit green-gold undertones. Thorn-vine patterns grow through the flesh like living tattoos. Fae glass fractures sparkle beneath the surface. Geas scars glow with silver-sidhe light. Mist-veil texture on the skin's surface \u2014 perpetually slightly out of focus, as if existing between mortal and fae. Root-lace patterns trace the nervous system in silver.",
+  "factionTraitDetails": "Fae divine proportions \u2014 impossibly elegant, slightly elongated, with an unsettling beauty. The body changes slightly in peripheral vision \u2014 shapes shift, sizes seem wrong. Silver branch antler patterns can grow from brow and shoulders. Mist emanates from the skin continuously. The body feels ancient despite youthful appearance \u2014 thousands of years of memory in living wood."
 }

@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-005",
@@ -117,6 +122,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Morr\u00edgan stands on a battlefield of the Silver-Root Geas Labyrinth in Avalora \u2014 a scarred plain of silver-root veins and broken standing stones. Colossal crow-feather totems rise from the ground, each taller than a tower, marked with fate-scarred prophecy. The labyrinth's thorn-walls are visible in the distance, their impossible geometry shifting like living thought. Battle-crow omens circle overhead in flocks that darken the sky. A cauldron of war-fate glows at the edge of the scene, its green-fire reflecting in her eyes. Mist veils drift across the battlefield, concealing and revealing the dead. The scene communicates: she IS the fate of warriors \u2014 the battlefield exists because she chooses who falls.",
+  "scaleCue": "The crow-feather totems would be obelisks to humans but reach her shoulders. The standing stones are scattered like fallen chess pieces.",
+  "factionSkinLanguage": "Living bark-silver skin with moonlit green-gold undertones. Thorn-vine patterns grow through the flesh like living tattoos. Fae glass fractures sparkle beneath the surface. Geas scars glow with silver-sidhe light. Mist-veil texture on the skin's surface \u2014 perpetually slightly out of focus, as if existing between mortal and fae. Root-lace patterns trace the nervous system in silver.",
+  "factionTraitDetails": "Fae divine proportions \u2014 impossibly elegant, slightly elongated, with an unsettling beauty. The body changes slightly in peripheral vision \u2014 shapes shift, sizes seem wrong. Silver branch antler patterns can grow from brow and shoulders. Mist emanates from the skin continuously. The body feels ancient despite youthful appearance \u2014 thousands of years of memory in living wood."
 }

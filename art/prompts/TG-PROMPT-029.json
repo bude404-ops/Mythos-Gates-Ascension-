@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-004",
@@ -116,6 +121,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Tsukuyomi stands on the Moon Bridge of the Sacred Kingdoms \u2014 a silver crescent bridge spanning a sea of night and ritual mist. Colossal torii gates of moon-silver line the bridge, their surfaces reflecting an enormous full moon that fills the sky. The shrine courts of the Kami realm are visible below, their lacquered roofs glowing faintly with foxfire-blue. A ritual river of silver light flows beneath the bridge. Cedar forests of impossible height line the distant shores. Paper shide streamers hang from the torii gates, each strip as wide as a road. The scene communicates: he IS the moon's authority \u2014 the bridge exists because night law needs a keeper.",
+  "scaleCue": "The moon-silver torii gates would be skyscrapers but frame him naturally. The sea below is vast enough to lose sight of shore.",
+  "factionSkinLanguage": "Lacquered divine skin with torii-red undertones and foxfire-blue pulse lines. Mirror-silver highlights catch light on cheekbones and shoulders like living polished metal. Shimenawa cord patterns are grown into the skin as sacred threshold marks. Cedar-bark texture on forearms. Cherry blossom energy blooms at wound sites. The skin shifts between solid and spirit \u2014 edges blur slightly like ink in water.",
+  "factionTraitDetails": "Graceful divine proportions \u2014 elongated, flowing, with supernatural balance. Mask-like quality to facial features \u2014 not rigid, but sacred. The body exists at a threshold between material and spirit \u2014 at will, parts become smoke, light, or petal. Foxfire-blue wisps trail from fingertips and hair. Seasonal energy radiates from the skin."
 }

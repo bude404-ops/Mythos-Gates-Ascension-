@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-001",
@@ -119,6 +124,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Iset stands on the River of Verdicts in the Solar Dominion \u2014 a flowing river of black Nile silt glass that winds through colossal temple architecture. The Pyramid Engines loom behind her, their impossible geometry pulsing with solar renewal energy. Giant lotus columns rise from the river, their capitals larger than houses. Sacred ibises fly through the scene, small as sparrows against her height. The river flows with throne-magic light \u2014 turquoise and lapis ripples. Protective wards of ivory limestone float in the air around her like a mother's embrace. The scene communicates: she IS the throne-magic that holds the realm together \u2014 the river flows because she wills it.",
+  "scaleCue": "The lotus columns beside her would be cathedral pillars to humans but reach only to her waist. The river at her feet is as wide as a highway.",
+  "factionSkinLanguage": "Electrum-white radiance skin with Nile-black glass shadow planes and red desert jasper fault lines. Faience turquoise and lapis inlays run through the skin like divine circuitry. White-gold solar seams glow at armor joints. The skin itself radiates faint solar warmth \u2014 not painted gold, but living solar law made flesh. Solar cracks of amber light where wounds have healed. Scarab-emerald pulse points at chest, forearms, and temples.",
+  "factionTraitDetails": "Elongated divine proportions \u2014 longer limbs, taller frame than any human. Royal stillness in every gesture. Ceremonial hand language frozen mid-ritual. Eyes glow with Aten hand-ray geometry. The body radiates a faint corona of solar law \u2014 not a halo, but heat-shimmer of divine authority."
 }

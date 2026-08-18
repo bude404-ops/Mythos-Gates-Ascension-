@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-007",
@@ -117,6 +122,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Lilith stands in the Night Garden of the Infernal Dominion \u2014 a colossal courtyard of obsidian and moon-silver where forbidden knowledge grows. Enormous thorned-rose trees of black iron and blood-wax bloom with impossible flowers, each petal the size of a shield. The Black-Iron Gate is visible through an archway of twisted horns and chains. A moon-pool of liquid obsidian reflects an impossible moon in the floor. Night-bloom vines of brass and blood-wax crawl up the obsidian walls. The garden exists at the threshold between contract-law and chaos \u2014 order and freedom. The scene communicates: she IS the exiled queen \u2014 the garden exists because freedom needs a place to grow, even in hell.",
+  "scaleCue": "The thorned-rose trees would be redwoods to humans but reach only her shoulders. The moon-pool is the size of a lake.",
+  "factionSkinLanguage": "Volcanic-glass divine skin with obsidian-black surface and hellfire-glow cracks beneath. Blood-wax veins pulse red beneath the dark surface like contract clauses made visible. Brass-scorched patterns mark where power has burned through. Ash-velvet texture on shoulders and neck. Chain-link scars are branded into the flesh as living debt-marks. The skin radiates infernal heat \u2014 standing near it feels like standing near a forge.",
+  "factionTraitDetails": "Dominant divine proportions \u2014 imposing, heavy, with the weight of sovereignty and debt. Horn growths from brow and shoulders are part of the skull, not worn. Star-crack patterns radiate from old wounds. The body smells of ash and brass and old contracts. Hellfire flickers in the cracks when power surges. Shadows pool unnaturally around the feet."
 }

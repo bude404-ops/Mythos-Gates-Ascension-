@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-002",
@@ -120,6 +125,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Odin stands on the Storm-Oath Bridge of the Asgardian Holds \u2014 a colossal bridge of storm-iron and world-root that spans an impossible chasm. The Rune-Mountain Halls rise behind him, their stone faces carved with rune-wounds that glow with oath-power. Behind them, the Valkyrie Weatherfields churn with perpetual storm \u2014 lightning, fog, and raven shadows. The Broken Feast Road stretches below, lined with mead halls the size of cities. Yggdrasil world-root veins pulse through the bridge beneath his feet, branching into the mountains. The Frost-Anvil Deep yawns below the chasm, its cold blue glow barely visible. The scene communicates: he is the Allfather \u2014 the bridge, the halls, and the storm all answer to his oath.",
+  "scaleCue": "The mead halls along the road below would hold thousands of humans but look like dollhouses from his height. The bridge is wide enough for him to walk comfortably.",
+  "factionSkinLanguage": "Storm-iron skin with rune-wound scars burned directly into flesh \u2014 not painted, not tattooed, but carved by oath and lightning. Ash-root veins pulse beneath the surface like living world-root. Raven-feather shadow patches darken the skin like permanent storm stains. Blackwinter frost cracks trace across exposed areas. Wolf-pelt weather texture on forearms and shoulders \u2014 rough, wind-carved, surviving impossible cold.",
+  "factionTraitDetails": "Broad heavy divine frame \u2014 wider shoulders, thicker bone structure than any human. Runes glow faintly in their scars when oath-power is active. Storm-lightning flickers across the skin in moments of power. The body carries the weight of ancient promises \u2014 every scar is a vow kept or broken. Breath visible as frost-ember mist."
 }

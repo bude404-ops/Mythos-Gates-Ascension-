@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-006",
@@ -117,6 +122,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Shekinah stands in the Throne-Room of the Radiant Hierarchies \u2014 a colossal hall of living light where the divine presence manifests. Enormous censer-chains of seraph-gold hang from the vault ceiling, each one swinging with eternal incense of living flame. The walls are opal-glass that refracts her radiance into infinite prismatic patterns. The Choir-Vault Gate blazes behind the throne dais, its light so intense it creates shadows within shadows. Throne-architecture of white-gold rises from the floor, sized for beings of her scale. Radiance-light fills every corner \u2014 there are no dark spaces here. The scene communicates: she IS the indwelling radiance \u2014 the throne-room exists because presence needs a seat.",
+  "scaleCue": "The censer-chains would be bridge-cables to humans but are necklace-thick to her. The throne behind her could hold a city block.",
+  "factionSkinLanguage": "Opal-glass divine skin that refracts light into many-eye auras. Seraph-gold veins pulse with choir-resonance beneath the surface. Bell-metal joints visible at wrists, elbows, and collarbones. The skin is semi-transparent \u2014 light passes through it, revealing choral vibration lines inside. Seraph-fire warmth radiates from within. Scroll-ribbon patterns trace across the skin as living scripture made flesh \u2014 not readable text, but sacred geometry.",
+  "factionTraitDetails": "Hierarchical divine proportions \u2014 symmetrical, geometrically perfect, built to a cosmic standard. Many-eye auras flicker across the skin \u2014 not physical eyes, but points of perception. The body sings at a sub-audible frequency \u2014 standing near it, you feel the vibration. Light bends around the body slightly. Feathers of light (not anatomical wings) drift from shoulders and crown."
 }

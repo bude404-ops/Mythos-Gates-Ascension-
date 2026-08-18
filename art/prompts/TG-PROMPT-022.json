@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-003",
@@ -117,6 +122,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Artemis stands in the wild thresholds of Olympus \u2014 a sacred forest of silver-barked trees and moonlit marble that stretches beyond the Marble Sky. The Mirror-Victory Hall gleams in the distance, its reflective surfaces catching moonlight. Colossal stag antlers grow from marble pillars marking the boundary between civilization and wilderness. A crescent moon fills the sky above, impossibly large, casting silver light across the scene. The forest floor is marble-light stone with laurel-green veins. Sacred deer move through the trees, their antlers as tall as towers. The scene communicates: she IS the threshold between wild and tame \u2014 the forest grows because she allows it.",
+  "scaleCue": "The silver-barked trees would be redwoods to humans but reach only her waist. The crescent moon in the sky is close enough to touch.",
+  "factionSkinLanguage": "Living marble-light skin \u2014 not stone, but luminous semi-translucent divine flesh that glows from within. Bronze circuitry veins trace beneath the surface like living laurel patterns. Oracle smoke wisps emanate from skin cracks. Gold-blue skyfire pulses at temples and sternum. The marble is warm, not cold \u2014 it breathes with ambrosia light. Eagle-shadow patterns shift across the skin in moments of power.",
+  "factionTraitDetails": "Athletic divine proportions \u2014 perfect symmetry, sculpted musculature that reads as carved by contest and trial. Laurels of bronze-light grow from the skin at brow and shoulders. The body radiates competitive energy \u2014 standing in their presence feels like being watched by a stadium. Victory aura of gold-blue light."
 }

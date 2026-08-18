@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-004",
@@ -116,6 +121,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Susanoo stands on the Storm-Sea coast of the Sacred Kingdoms \u2014 a coastline where eternal tempest meets sacred shore. Colossal wave-monuments of foxfire-blue and sea-foam crash against cliff faces of oni-iron. The shrine forests behind him bend in perpetual storm wind. A dragon-rain storm spirals overhead, its serpentine form the size of a mountain range. Oni iron boulders lie scattered at his feet, carved with non-readable guardian faces. The Moon Bridge is visible far above, barely visible through the storm. The sea itself seems to respond to his mood \u2014 waves rising and falling with his breathing. The scene communicates: he IS the storm-sea \u2014 the coast exists because his exile made it.",
+  "scaleCue": "The oni-iron boulders would be small mountains to humans but sit at his feet like stones. The dragon-rain storm covers half the sky.",
+  "factionSkinLanguage": "Lacquered divine skin with torii-red undertones and foxfire-blue pulse lines. Mirror-silver highlights catch light on cheekbones and shoulders like living polished metal. Shimenawa cord patterns are grown into the skin as sacred threshold marks. Cedar-bark texture on forearms. Cherry blossom energy blooms at wound sites. The skin shifts between solid and spirit \u2014 edges blur slightly like ink in water.",
+  "factionTraitDetails": "Graceful divine proportions \u2014 elongated, flowing, with supernatural balance. Mask-like quality to facial features \u2014 not rigid, but sacred. The body exists at a threshold between material and spirit \u2014 at will, parts become smoke, light, or petal. Foxfire-blue wisps trail from fingertips and hair. Seasonal energy radiates from the skin."
 }

@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-004",
@@ -116,6 +121,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Amaterasu stands within the Sacred Kingdoms' grand shrine \u2014 a colossal torii gate complex of impossible scale. Enormous vermillion torii gates nest within each other, stretching into the distance like a tunnel of sacred red. The shrine's main hall rises behind her, its lacquered-black and gold architecture glowing with sun-mirror light. A purification river of foxfire-blue flows through the shrine grounds at her feet. Sacred cherry blossom trees line the approach, their petals falling like snow at her scale. The sky above is a perfect sunrise \u2014 her radiance made visible. Mirror-disc ornaments the size of houses hang from the shrine eaves. The scene communicates: she IS the sun \u2014 the shrine exists to honor her radiance, not the reverse.",
+  "scaleCue": "The torii gates would be 15-story monuments to humans but frame her body like a normal doorway. Cherry blossom trees reach only her waist.",
+  "factionSkinLanguage": "Lacquered divine skin with torii-red undertones and foxfire-blue pulse lines. Mirror-silver highlights catch light on cheekbones and shoulders like living polished metal. Shimenawa cord patterns are grown into the skin as sacred threshold marks. Cedar-bark texture on forearms. Cherry blossom energy blooms at wound sites. The skin shifts between solid and spirit \u2014 edges blur slightly like ink in water.",
+  "factionTraitDetails": "Graceful divine proportions \u2014 elongated, flowing, with supernatural balance. Mask-like quality to facial features \u2014 not rigid, but sacred. The body exists at a threshold between material and spirit \u2014 at will, parts become smoke, light, or petal. Foxfire-blue wisps trail from fingertips and hair. Seasonal energy radiates from the skin."
 }

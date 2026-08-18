@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-001",
@@ -119,6 +124,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Amunet stands in the Black-Sun Archive of the Solar Dominion \u2014 a vast library of hidden knowledge carved into obsidian walls that stretch beyond sight. The walls are covered in non-readable divine glyphs that pulse with hidden power. Colossal archive shelves of black Nile silt glass tower around her, filled with secrets too dangerous for mortal eyes. The space is dark except for turquoise faience inlay light and the faint glow of her veiled form. Shadow itself bends around her \u2014 she IS the hidden power. Hidden passages and secret doors are visible in the walls, all sized for beings of her scale. The scene communicates: she is the power behind the throne that no one sees \u2014 the archive exists because she guards it.",
+  "scaleCue": "The archive shelves reach 30 stories high but she stands level with their upper registers. The obsidian walls curve away into permanent shadow.",
+  "factionSkinLanguage": "Electrum-white radiance skin with Nile-black glass shadow planes and red desert jasper fault lines. Faience turquoise and lapis inlays run through the skin like divine circuitry. White-gold solar seams glow at armor joints. The skin itself radiates faint solar warmth \u2014 not painted gold, but living solar law made flesh. Solar cracks of amber light where wounds have healed. Scarab-emerald pulse points at chest, forearms, and temples.",
+  "factionTraitDetails": "Elongated divine proportions \u2014 longer limbs, taller frame than any human. Royal stillness in every gesture. Ceremonial hand language frozen mid-ritual. Eyes glow with Aten hand-ray geometry. The body radiates a faint corona of solar law \u2014 not a halo, but heat-shimmer of divine authority."
 }

@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-006",
@@ -117,6 +122,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Sophia stands in the Scroll Library of the Radiant Hierarchies \u2014 a colossal archive of living scroll-ribbons that float through the air in organized hierarchies. Enormous compass-orbs of opal-glass orbit slowly through the space, each one a repository of divine wisdom. The architecture is cathedral-curved \u2014 arches of white-gold and opal-glass that frame infinite knowledge. The Choir-Vault Gate is visible through a wall of living scroll-seals. Many-eye auras pulse throughout the library, perceiving all that is written. The air itself is thick with choral vibration \u2014 knowledge made into sound. The scene communicates: she IS wisdom \u2014 the library exists because understanding needs a home.",
+  "scaleCue": "The floating scroll-ribbons would be highway-sized to humans but are ribbon-width to her. The compass-orbs are the size of small moons.",
+  "factionSkinLanguage": "Opal-glass divine skin that refracts light into many-eye auras. Seraph-gold veins pulse with choir-resonance beneath the surface. Bell-metal joints visible at wrists, elbows, and collarbones. The skin is semi-transparent \u2014 light passes through it, revealing choral vibration lines inside. Seraph-fire warmth radiates from within. Scroll-ribbon patterns trace across the skin as living scripture made flesh \u2014 not readable text, but sacred geometry.",
+  "factionTraitDetails": "Hierarchical divine proportions \u2014 symmetrical, geometrically perfect, built to a cosmic standard. Many-eye auras flicker across the skin \u2014 not physical eyes, but points of perception. The body sings at a sub-audible frequency \u2014 standing near it, you feel the vibration. Light bends around the body slightly. Feathers of light (not anatomical wings) drift from shoulders and crown."
 }

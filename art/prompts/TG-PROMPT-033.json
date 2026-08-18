@@ -10,7 +10,7 @@
   "style": "premium dark mythological tactical RPG character concept, full-body playable deity, source-culture canon accurate, mobile-readable silhouette, individual silhouette locked, faction-lore specific, no shared character template, non-human divine faction anatomy, distinct faction skin/material language",
   "version": "10",
   "created": "2026-08-10",
-  "updated": "2026-08-18",
+  "updated": "2026-08-18-v10.2",
   "history": [
     {
       "version": 1,
@@ -66,6 +66,11 @@
       "version": "10.1",
       "updated": "2026-08-18",
       "note": "Canon audit: synced with titans.json visual identity, faction visual bible materials/rejections/ground-aura, verified weapon match."
+    },
+    {
+      "version": "10.2",
+      "updated": "2026-08-18",
+      "note": "Enhancement: Added deity-specific background scene showing power/size/status, scale cues, faction skin language, and trait details."
     }
   ],
   "factionVisualBibleId": "TG-FVB-004",
@@ -116,6 +121,14 @@
     "has_ground_effects": true,
     "has_cross_faction_ban": true,
     "has_no_text_rule": true,
-    "has_non_human_rule": true
-  }
+    "has_non_human_rule": true,
+    "has_background": true,
+    "has_scale_cue": true,
+    "has_skin_language": true,
+    "has_trait_details": true
+  },
+  "backgroundScene": "Izanami stands in Yomi, the underworld threshold of the Sacred Kingdoms \u2014 a vast cavern of bone-white stone and lacquered-black shadow. Colossal grave-pillars line the path to the underworld court, their surfaces covered in non-readable memorial marks. A river of dimming foxfire-blue flows through the space, marking the boundary between life and death. The Sacred Kingdoms' surface is visible through a crack in the cavern ceiling, impossibly far above. Bone-white shrine gates mark the entrance to Yomi proper. Grave-flowers of white and silver grow from the stone floor at her feet. The scene communicates: she IS the threshold of death and creation \u2014 Yomi exists because she chose to stay.",
+  "scaleCue": "The grave-pillars would be city towers to humans but reach only her shoulders. The cavern ceiling is so far above it vanishes into shadow.",
+  "factionSkinLanguage": "Lacquered divine skin with torii-red undertones and foxfire-blue pulse lines. Mirror-silver highlights catch light on cheekbones and shoulders like living polished metal. Shimenawa cord patterns are grown into the skin as sacred threshold marks. Cedar-bark texture on forearms. Cherry blossom energy blooms at wound sites. The skin shifts between solid and spirit \u2014 edges blur slightly like ink in water.",
+  "factionTraitDetails": "Graceful divine proportions \u2014 elongated, flowing, with supernatural balance. Mask-like quality to facial features \u2014 not rigid, but sacred. The body exists at a threshold between material and spirit \u2014 at will, parts become smoke, light, or petal. Foxfire-blue wisps trail from fingertips and hair. Seasonal energy radiates from the skin."
 }
