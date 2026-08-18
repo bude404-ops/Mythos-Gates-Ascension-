@@ -1,0 +1,130 @@
+{
+  "id": "TG-ART-DIRECTION-MASTER",
+  "name": "Master Divine God, Realm & Titan Art Direction System",
+  "version": 1,
+  "status": "IMPLEMENTED",
+  "updated": "2026-08-17",
+  "purpose": "Master art-direction standard for every god/Titan in Mythos Gates: Ascension. Every Titan must visually communicate: GOD + MYTHOLOGY + PERSONALITY + FACTION + REALM + GATE LORE + DIVINE POWER + COMBAT IDENTITY.",
+  "coreCreativeStandard": {
+    "requirements": [
+      "Divine",
+      "Legendary",
+      "Powerful",
+      "Mythological",
+      "Unique",
+      "Culturally authentic to their realm",
+      "Connected to their faction",
+      "Connected to the Mythos Gates",
+      "Combat-ready",
+      "Premium",
+      "Suitable for a high-quality 3D game"
+    ],
+    "communication": "A legendary god has entered the battlefield \u2014 NOT a fantasy warrior wearing expensive armor",
+    "prohibition": "Do not create generic RPG characters"
+  },
+  "canonLore": {
+    "sourceOfTruth": "The current Mythos Gates: Ascension Codex is always the source of truth",
+    "rules": [
+      "Do not invent contradictory lore",
+      "Do not revive removed lore (e.g., Mycocide)",
+      "Do not introduce factions, realms, gods, relationships, weapons, powers, or history that conflicts with current canon",
+      "If information exists in the Codex, use it",
+      "If something is not established, create only what is necessary and ensure it does not contradict existing lore"
+    ],
+    "establishedFactions": [
+      "Aten Ra \u2014 The Solar Dominion of Khepra \u2014 The Sun-Scale Gate",
+      "Asgardian \u2014 The Storm-Rooted Aesir Holds \u2014 The Thunder-Oath Gate",
+      "Olympian \u2014 The Celestial Heights of Olympus \u2014 The Laurel-Sky Gate",
+      "Kami \u2014 The Sacred Kingdoms \u2014 The Torii-Moon Gate",
+      "Tuatha \u2014 Avalora \u2014 The Silver-Root Gate",
+      "Empyrean \u2014 The Radiant Hierarchies \u2014 The Choir-Vault Gate",
+      "Infernal Dominion \u2014 The Infernal Dominion \u2014 The Black-Iron Gate"
+    ]
+  },
+  "fiveLayerIdentity": {
+    "1_GOD": {
+      "description": "Who is this individual?",
+      "fields": [
+        "Name",
+        "Personality",
+        "Divine authority",
+        "History",
+        "Personality traits",
+        "Relationships",
+        "Strengths",
+        "Weaknesses",
+        "Combat identity"
+      ]
+    },
+    "2_MYTHOLOGY": {
+      "description": "What mythology or legendary tradition defines them?",
+      "rule": "Mythological foundation \u2192 Mythos Gates interpretation. Use authentic mythological symbolism. Do not blindly copy historical depictions."
+    },
+    "3_FACTION": {
+      "description": "What faction does the god belong to?",
+      "determines": [
+        "Cultural identity",
+        "Symbols",
+        "Design language",
+        "Materials",
+        "Armor/clothing philosophy",
+        "Divine traditions",
+        "Weapons",
+        "Colors",
+        "Visual motifs"
+      ],
+      "rule": "Established factions must remain distinct. Do not reintroduce removed lore."
+    },
+    "4_REALM": {
+      "description": "What realm shaped this god?",
+      "rule": "The realm must influence the actual character design \u2014 not merely the background. A player should see the character and understand which world they come from."
+    },
+    "5_MYTHOS_GATES": {
+      "description": "How is this god connected to the dimensional Gates?",
+      "influences": [
+        "Divine energy",
+        "Artifacts",
+        "Symbols",
+        "Powers",
+        "Visual effects",
+        "Lore",
+        "History",
+        "Relationship with other realms"
+      ]
+    }
+  },
+  "realmDNA": {
+    "description": "Internal visual DNA profile for every established realm",
+    "fields": [
+      "Environment",
+      "Architecture",
+      "Materials",
+      "Clothing",
+      "Weapons",
+      "Symbols",
+      "Magic",
+      "Lighting",
+      "Culture",
+      "Gate Relationship"
+    ],
+    "profilesFile": "data/realm-dna-profiles.json"
+  },
+  "globalRules": [
+    "Faction identity must be visible through materials, silhouette, symbols, texture, and posture before any generic fantasy trope.",
+    "deities are living extradimensional beings, not buildings, robots, statues, block stacks, or abstract architecture piles.",
+    "NPCs are non-playable lore characters whose costume must show role, faction duty, and personal history.",
+    "Creatures can be monstrous but must stay rooted in faction or Hollow logic rather than generic alien design.",
+    "Architecture can influence clothing, regalia, auras, weapons, and environment \u2014 never replace living anatomy for character assets.",
+    "No readable real-world text or logos; glyphs and marks must be abstract lore texture."
+  ],
+  "mandatoryVisualRules": {
+    "extradimensional": "CRITICAL: This is an extradimensional divine being, NOT a human in costume. Colossal in scale \u2014 towering, massive, dwarfing the environment.",
+    "bareHead": "Head must be BARE \u2014 no floating objects, discs, rings, halos, sun discs, crown discs, or geometric shapes above or behind the head.",
+    "capeLow": "Cape/mantle must drape LOW from shoulders, flowing downward \u2014 NOT rising behind the head or appearing as hair.",
+    "culturalAuthenticity": "Face and features must match the source culture of the faction.",
+    "styleBaseline": "Stylized but detailed \u2014 NOT photorealistic. Suitable for 3D model conversion. Premium dark mythological tactical RPG aesthetic.",
+    "composition": "Full-body playable deity concept, combat-ready stance, mobile-readable silhouette. No text, no logos, no UI overlay. One-deity-only composition."
+  },
+  "implementedIn": "art/prompts/TG-PROMPT-0*.json (all 28 deity prompts)",
+  "promptFileKey": "prompt (contains full 5-layer system), artDirectionSystem, fiveLayerIdentity"
+}
