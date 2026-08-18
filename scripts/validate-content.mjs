@@ -173,7 +173,7 @@ for (const batch of data.artApprovalManifest.approvalBatches) {
   }
   if(!batch.approvalNotes) fail(`${batch.id}: missing approvalNotes`);
 }
-for (const required of ['TG-PROMPT-001','TG-PROMPT-NPC-001','TG-PROMPT-MAP-001']) if(!approvedPromptIds.has(required)) fail(`Art approval manifest missing required prompt ${required}`);
+for (const required of ['MG-PROMPT-001','TG-PROMPT-NPC-001','TG-PROMPT-MAP-001']) if(!approvedPromptIds.has(required)) fail(`Art approval manifest missing required prompt ${required}`);
 if(!Array.isArray(data.artApprovalManifest.qualityGates) || data.artApprovalManifest.qualityGates.length < 6) fail('Art approval manifest quality gates too thin');
 if(!Array.isArray(data.artApprovalManifest.rejectionTriggers) || data.artApprovalManifest.rejectionTriggers.length < 6) fail('Art approval manifest rejection triggers too thin');
 if(data.artworks.length !== 0 && !data.artApprovalManifest.handoff?.nextAction?.includes('real approved image assets')) fail('Art approval manifest cannot bypass real image import gate');
