@@ -118,7 +118,7 @@
       ]
     },
     "enemies": {
-      "standard": "Creature and enemy design. Must stay rooted in faction or Hollow logic.",
+      "standard": "Creature and enemy design language. Must stay rooted in faction or Hollow logic.",
       "source": "data/enemy-archetype-registry.json + data/creatures.json",
       "rules": [
         "Creatures can be monstrous but must stay rooted in faction or Hollow logic rather than generic alien design.",
@@ -126,15 +126,15 @@
       ]
     },
     "battlefields": {
-      "standard": "Environmental design. GOD + REALM + FACTION + BATTLEFIELD + MAGIC + ARCHITECTURE + ENEMIES = one unified story.",
+      "standard": "Realm-specific environments. GOD + REALM + FACTION + BATTLEFIELD + MAGIC + ARCHITECTURE + ENEMIES = one unified story.",
       "source": "data/battlefield-canon-registry.json + data/maps.json"
     },
     "weapons": {
-      "standard": "Legendary artifact standards. Mythology + God + Realm + Faction + Combat Role + Divine Power.",
+      "standard": "Divine artifact standards. Mythology + God + Realm + Faction + Combat Role + Divine Power. Must feel legendary.",
       "source": "data/titans.json (weaponCanon, equipmentDetails)"
     },
     "gates": {
-      "standard": "Dimensional visual language. Gates are a fundamental force, NOT just portals behind characters. Gate influence is woven into the deity's existence.",
+      "standard": "Dimensional visual language. Gates are a fundamental force \u2014 NOT just portals behind characters. Woven into the deity's existence.",
       "source": "data/realm-codex.json (gate field)",
       "gates": [
         {
@@ -175,7 +175,7 @@
       ]
     },
     "ui": {
-      "standard": "World-consistent interface. No visual drift from game world. No readable real-world text or logos.",
+      "standard": "World-consistent interface aesthetics. No visual drift.",
       "rules": [
         "No readable real-world text or logos",
         "Glyphs and marks must be abstract lore texture",
@@ -188,5 +188,25 @@
   "promptFiles": "art/prompts/TG-PROMPT-0*.json (28 files, all v3)",
   "canonUpdate": "Playable characters are actual gods and goddesses, NOT Titans as separate species",
   "negativeRules": "NEVER: generic fantasy warriors, knights, superheroes, RPG heroes, mortals, aliens, sci-fi, guns, spaceships, modern military, futuristic, cyberpunk, steampunk, unrelated mythology, clones, recolored templates, identical armor, flat sprites, cheap mobile, generic anime, random effects, realm/faction-inappropriate designs.",
-  "worldFormula": "Gods + Mythology + Divine Powers + Melee + Magic + Legendary Artifacts + Extradimensional Mythos Gates"
+  "worldFormula": "Gods + Mythology + Divine Powers + Melee + Magic + Legendary Artifacts + Extradimensional Mythos Gates",
+  "oneGodAtATime": true,
+  "finalQualityTest": [
+    "GOD: Unmistakably the correct deity?",
+    "MYTHOLOGY: Mythological identity recognizable?",
+    "PERSONALITY: Personality felt from design?",
+    "FACTION: Faction identifiable?",
+    "REALM: Could belong to this realm?",
+    "DIVINITY: Genuinely supernatural?",
+    "POWER: Power reflects actual lore?",
+    "WEAPON: Weapon feels legendary?",
+    "GATE: Mythos Gates influence felt?",
+    "SILHOUETTE: Recognizable from distance?",
+    "3D: Can become complete premium 3D model?",
+    "COMBAT: Readable during gameplay?",
+    "STYLE: Matches Mythos Gates: Ascension visual identity?",
+    "ORIGINALITY: Unique deity, not generic RPG character?"
+  ],
+  "finalCreativeStandard": "Every playable character should make the player think: That's a GOD \u2192 I know which god \u2192 I know the realm \u2192 I know the faction \u2192 I can see how the Mythos Gates shaped them.",
+  "totalSections": 21,
+  "masterComplete": true
 }
