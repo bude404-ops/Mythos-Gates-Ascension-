@@ -1,0 +1,92 @@
+{
+  "id": "MG-COMBAT-SYSTEM-001",
+  "version": "2.0.0",
+  "name": "Mythos Gates: Ascension Combat System",
+  "model": "one-deity-vs-many-action-rpg",
+  "designPillar": "One-Deity Power Fantasy: The player controls one active champion who carves through many enemies with readable, spectacular combat.",
+  "corePrinciples": [
+    "Player controls ONE deity at a time in real-time combat",
+    "Face waves of enemies, elite foes, and boss encounters",
+    "Combat is weighty, divine, and spectacular but visually readable",
+    "Mobile-first controls: virtual joystick + ability buttons + dodge",
+    "Tactical clarity: strong silhouettes, readable telegraphs, clear AoE markers",
+    "Each deity has a distinct combat identity, element, and playstyle"
+  ],
+  "controls": {
+    "movement": "Virtual joystick — 360 degree movement",
+    "basicAttack": "Tap button — auto-targets nearest enemy, combo chain",
+    "ability1": "Tap button — short cooldown (5-8s), tactical use",
+    "ability2": "Tap button — medium cooldown (8-12s), stronger effect",
+    "signature": "Tap button — long cooldown (15-20s), big impact",
+    "ultimate": "Tap button — once per battle or long cooldown (60s+), cinematic",
+    "dodge": "Swipe/dash — i-frames, brief invincibility, directional dodge"
+  },
+  "resources": {
+    "divineEnergy": "Built from basic attacks and taking damage. Spent on abilities 1, 2, and Signature.",
+    "ascensionGauge": "Built throughout the battle from all combat actions. At 100%, Ultimate/Ascension is unlocked.",
+    "factionResource": "Each faction has a unique resource (Solar Charge, Oath Fury, Divine Glory, etc.) that powers the deity's passive ability."
+  },
+  "abilityKit": {
+    "basicAttack": "No cooldown. Spammable. Builds Divine Energy. Unique per deity. 3-4 hit combo chain with unique properties.",
+    "ability1": "Short cooldown (5-8s). Low Divine Energy cost (20-30). Tactical ability — mobility, CC, shield, or buff.",
+    "ability2": "Medium cooldown (8-12s). Medium Divine Energy cost (35-45). Stronger ability — AoE, heavy damage, or sustain.",
+    "signature": "Long cooldown (15-20s). High Divine Energy cost (65-75). Signature divine skill — the deity's mythic power unleashed.",
+    "ultimate": "Once per battle or 60s+ cooldown. Requires 100 Ascension Gauge. Transforms the deity or unleashes full divine power. Cinematic.",
+    "passive": "Always active. Builds faction resource from combat actions. At threshold, empowers next ability or attack."
+  },
+  "roles": {
+    "Tank": "Absorb punishment, control enemy positioning, protect objectives. High HP and armor.",
+    "Bruiser": "Sustained fighter that builds power over time. Balanced damage and durability.",
+    "Controller": "Area denial and crowd control. Dictate where enemies can move.",
+    "Breaker": "Burst damage specialist. Break through armor and execute weakened foes.",
+    "Assassin": "High mobility, burst damage, strike and fade.",
+    "Ranger": "Long-range damage dealer, keep distance, kite enemies.",
+    "Support": "Sustain allies and debuff enemies. Force multiplier.",
+    "Guardian": "Defensive interceptor. Protect area, block attacks, counter."
+  },
+  "elements": {
+    "Aten Ra": {
+      "element": "Solar",
+      "domain": "Judgment",
+      "resource": "Solar Charge"
+    },
+    "Asgardian": {
+      "element": "Storm",
+      "domain": "Oath",
+      "resource": "Oath Fury"
+    },
+    "Olympian": {
+      "element": "Thunder",
+      "domain": "Glory",
+      "resource": "Divine Glory"
+    },
+    "Kami": {
+      "element": "Spirit",
+      "domain": "Sacred",
+      "resource": "Kami Energy"
+    },
+    "Tuatha": {
+      "element": "Nature",
+      "domain": "Wild",
+      "resource": "Wild Growth"
+    },
+    "Empyrean": {
+      "element": "Holy",
+      "domain": "Order",
+      "resource": "Holy Light"
+    },
+    "Infernal Dominion": {
+      "element": "Shadow",
+      "domain": "Chains",
+      "resource": "Infernal Fury"
+    }
+  },
+  "enemyDesign": {
+    "waves": "Trash mobs — easily killed by basic attacks, come in groups of 5-15",
+    "elites": "Tougher enemies with special abilities — require ability usage, come in pairs or small groups",
+    "bosses": "Divine trials, gate guardians, corrupted gods — require full ability rotation and dodge timing",
+    "hollow": "Hollow-corrupted variants of realm enemies — twisted, dangerous, destabilized"
+  },
+  "combatFantasy": "One legendary god-like deity enters enemy-controlled territory alone, fights through many coordinated enemies, grows visibly stronger, and eventually destroys forces that once seemed impossible.",
+  "mobileReadability": "Strong silhouettes, clear telegraph lines for enemy attacks, obvious AoE markers on the ground, large touch targets for ability buttons, readable health bars and cooldown indicators."
+}
