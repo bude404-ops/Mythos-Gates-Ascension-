@@ -1,6 +1,10 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+<<<<<<< HEAD:tests/one-deity-vs-many-combat-contract.test.mjs
 import { loadOneDeityVsManyCombat, validateOneDeityVsManyCombat, summarizeOneDeityVsMany, PRIMARY_ONE_DEITY_RULE, REQUIRED_PROTOTYPE_BEATS } from '../src/combat/one-deity-vs-many.mjs';
+=======
+import { loadOneTitanVsManyCombat, validateOneTitanVsManyCombat, summarizeOneTitanVsMany, PRIMARY_ONE_TITAN_RULE, REQUIRED_PROTOTYPE_BEATS } from '../src/combat/one-deity-vs-many.mjs';
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration):tests/one-titan-vs-many-combat-contract.test.mjs
 
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const contract = loadOneDeityVsManyCombat();

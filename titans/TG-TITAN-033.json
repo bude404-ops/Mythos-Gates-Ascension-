@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "id": "TG-TITAN-033",
   "slug": "izanami",
   "name": "Izanami",
+=======
+  "id": "MG-DEITY-033",
+  "slug": "hanae-blossom-ward",
+  "name": "Hanae Blossom Ward",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "factionId": "TG-FACTION-004",
   "faction": "Kami",
   "rarity": "Mythic God",
@@ -34,10 +40,17 @@
   "passives": [
     "Spirit Seal: Hanae gains Sealfire when sustain play banks survival value through terrain mastery and converts it into recovery on shrine threshold ground. At 3 stacks, the next Technique or Reaction adds a purification and boundary law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Sacred Kingdoms."
   ],
+<<<<<<< HEAD
   "lore": "Izanami, Yomi Mother, is now canonized as one of the four playable deities of Kami. The deity is the source-realm divinity behind the mythology rather than a generic champion: creator mother and underworld queen, death-birth threshold, grave restoration. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses creator mother and underworld queen, death-birth threshold, grave restoration; confident, sovereign, readable in combat, loyal to the unchanged Kami canon.",
   "visualDescription": "Izanami manifests as creator mother and underworld queen, death-birth threshold, grave restoration from Kami: beautiful haunting feminine mother-queen face, porcelain skin, dark compassionate eyes, sorrowful lips; stately feminine underworld frame, long torso, flowing hips, calm ritual stance; signature silhouette: black veil, grave-flower sleeves, trailing cords, mother-of-Yomi outline. Weapon: bone-white shrine fan and underworld cord blade. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
   "artStatus": "READY_FOR_GENERATION",
+=======
+  "lore": "Hanae Blossom Ward is a colossal Kami sustain from The Sacred Kingdoms. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Kami sustain office: restoration rite, continuity keeper, mercy under law; Ryujin/dragons: rain, sea palace, water sovereignty.",
+  "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+  "visualDescription": "Full-body living myth-source Deity, not a costume: Hanae Blossom Ward shows torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash.. Role silhouette must read as Sustain. Materials include lacquered shrine red, aged cedar, white paper shide, braided straw rope, moonlit silk, black ink smoke, foxfire blue. The design must feel older than human mythology and avoid anime mecha samurai, generic ninja, literal shrine body, plastic kimono costume, random kanji text, neon cyberpunk.",
+  "artStatus": "Prompt Ready",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "artPromptId": "TG-PROMPT-033",
   "artworkId": null,
   "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
@@ -57,7 +70,7 @@
       ],
       "effect": "Deal Kami source-culture damage at range 2; generate Momentum and a small Shrine Resonance gain when used from torii-marked sacred threshold or against the marked target. The hit reads visually as torii silhouettes, shimenawa cords, white shide seals, mirror silver, foxfire blue, cedar lacquer, tengu wind, oni iron, dragon rain.",
       "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
       "name": "Shide Seal Technique — Covenant",
@@ -89,7 +102,7 @@
       ],
       "effect": "Spend stored Shrine Resonance to impose a two-round rule from Sacred Kingdoms: restores through faction ritual, cleanses pressure, and rewards holding sacred ground without becoming a passive healer. Enemies receive a readable counter-window before the strongest effect lands.",
       "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
       "name": "Divine Ascension — Amaterasu Moon-Gate Radiance",
@@ -122,7 +135,7 @@
       "slot": "Armor Body",
       "rarityFloor": "Rare",
       "primaryStat": "resistance",
-      "effect": "Improves survivability and makes the Titan read as Sacred Kingdoms source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "effect": "Improves survivability and makes the Deity read as Sacred Kingdoms source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
       "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
@@ -155,7 +168,11 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
+<<<<<<< HEAD
     "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+=======
+    "intendedDifficulty": "Tuned for harder solo encounters: every Deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "primaryRole": "win attrition and cleanse hazard pressure",
     "budgetTarget": 104,
     "computedCombatPower": 205,

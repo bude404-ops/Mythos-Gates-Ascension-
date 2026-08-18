@@ -5,7 +5,11 @@
   "status": "Canon Locked",
   "updated": "2026-08-10",
   "nonNegotiables": [
+<<<<<<< HEAD
     "Player Titans, player characters, enemy characters, enemy deities, units, and combatants are 2D sprites.",
+=======
+    "Player Deities, player characters, enemy characters, enemy Deities, units, and combatants are 2D sprites.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Campaign maps, Realms, exploration spaces, gates, major locations, and tactical environments are 3D environments.",
     "Do not convert battlefield characters into 3D models because the environment is 3D.",
     "Do not introduce futuristic craft or sci-fi spacecraft; Realm travel remains Gate-based.",
@@ -17,7 +21,7 @@
       "name": "2D Sprites",
       "purpose": "Character identity, tactical readability, faction recognition, combat clarity",
       "usedFor": [
-        "Player Titans",
+        "Player Deities",
         "Player characters",
         "Enemy characters",
         "Enemy Deities",
@@ -53,7 +57,11 @@
       "name": "2D Portraits",
       "purpose": "Profile identity, Codex presentation, emotional read, dialogue scenes",
       "usedFor": [
+<<<<<<< HEAD
         "deity profiles",
+=======
+        "Deity profiles",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "NPC profiles",
         "Codex cards",
         "Dialogue panels"
@@ -113,7 +121,7 @@
       "Sprites must align with tile/grid positioning and perspective.",
       "Selection circles and movement indicators must ground sprites in the 3D space.",
       "Terrain should not hide key sprites at mobile camera angles.",
-      "Titan scale may be larger than normal characters, but must remain consistent and intentional."
+      "Deity scale may be larger than normal characters, but must remain consistent and intentional."
     ],
     "transitionFlow": [
       "3D Campaign Map",
@@ -128,7 +136,7 @@
     ]
   },
   "assetDirectories": {
-    "spritesTitans": "art/sprites/titans/",
+    "spritesDeities": "art/sprites/deitys/",
     "spritesCharacters": "art/sprites/characters/",
     "spritesEnemies": "art/sprites/enemies/",
     "threeDRealms": "art/3d/realms/",
@@ -147,7 +155,7 @@
       "definition": "2D battlefield combatant image",
       "allowedContexts": [
         "Battle",
-        "Titan Selection miniature",
+        "Deity Selection miniature",
         "Combat preview"
       ],
       "blockedContexts": [
@@ -160,7 +168,7 @@
       "layer": "2D",
       "definition": "Profile and dialogue presentation art",
       "allowedContexts": [
-        "Titan Profile",
+        "Deity Profile",
         "NPC Profile",
         "Codex",
         "Dialogue"

@@ -6,7 +6,11 @@ export const REQUIRED_PROTOTYPE_BEATS = Object.freeze(['Exploration', 'Encounter
 export const REQUIRED_VISIBLE_PROGRESSION = Object.freeze(['larger AoE coverage', 'shorter cooldowns', 'group clear speed improves']);
 export const REQUIRED_ENEMY_ROLES = Object.freeze(['melee attackers', 'ranged attackers', 'fast enemies', 'support enemies', 'elite enemies', 'bosses']);
 
+<<<<<<< HEAD:src/combat/one-deity-vs-many.mjs
 export function loadOneDeityVsManyCombat() {
+=======
+export function loadOneTitanVsManyCombat() {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration):src/combat/one-titan-vs-many.mjs
   return JSON.parse(fs.readFileSync('data/one-deity-vs-many-combat.json', 'utf8'));
 }
 
@@ -19,9 +23,15 @@ export function validateOneDeityVsManyCombat(contract, mission, mobileArchitectu
   if (!/health pools/i.test(contract.enemyGroupDesign?.antiPattern || '')) issues.push('enemy design must forbid inflated health-pool difficulty');
   for (const beat of REQUIRED_PROTOTYPE_BEATS) if (!contract.firstPrototype?.requiredDemonstration?.includes(beat)) issues.push(`first prototype missing beat: ${beat}`);
   for (const visible of REQUIRED_VISIBLE_PROGRESSION) if (!contract.powerProgression?.visibleGameplayOutcomes?.includes(visible)) issues.push(`visible progression missing: ${visible}`);
+<<<<<<< HEAD:src/combat/one-deity-vs-many.mjs
   if (mission.activeDeityCount !== 1 || mission.teamSize !== 1) issues.push('first mission must remain exactly one active deity/team size 1');
   if (mission.activeDeityPolicy?.standardCombat !== PRIMARY_ONE_DEITY_RULE) issues.push('first mission activeDeityPolicy must use one player-controlled deity');
   if (!mission.specialRules?.some(rule => /one (active|player-controlled) deity/i.test(rule))) issues.push('first mission must preserve one active/player-controlled Deity special rule');
+=======
+  if (mission.activeTitanCount !== 1 || mission.teamSize !== 1) issues.push('first mission must remain exactly one active deity/team size 1');
+  if (mission.activeTitanPolicy?.standardCombat !== PRIMARY_ONE_TITAN_RULE) issues.push('first mission activeTitanPolicy must use one player-controlled Titan');
+  if (!mission.specialRules?.some(rule => /one (active|player-controlled) Titan/i.test(rule))) issues.push('first mission must preserve one active/player-controlled Titan special rule');
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration):src/combat/one-titan-vs-many.mjs
   if (mobileArchitecture.combatRule?.contract !== 'data/one-deity-vs-many-combat.json') issues.push('mobile architecture must link one-deity combat contract');
   if (mobileArchitecture.combatRule?.forbidSquads !== true) issues.push('mobile architecture must forbid squads');
   if (firstTemplate.combatIdentity?.playerControlledDeities !== 1) issues.push('first template must specify exactly one player-controlled deity');

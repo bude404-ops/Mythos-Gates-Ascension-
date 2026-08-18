@@ -1,0 +1,3657 @@
+{
+<<<<<<< HEAD:data/titan-role-matrix.json
+  "id": "TG-TITAN-ROLE-MATRIX-001",
+  "name": "Deity Role Matrix",
+  "version": 3,
+  "status": "IMPLEMENTED",
+  "updated": "2026-08-17",
+  "rosterRule": "Playable characters are the actual gods and goddesses of mythology: exactly four per faction, two male gods and two female goddesses; existing Lore Codex canon preserved.",
+  "factions": [
+    {
+      "factionId": "TG-FACTION-001",
+      "faction": "Aten Ra",
+      "titans": [
+        {
+          "id": "TG-TITAN-001",
+          "name": "Aten Ra",
+          "sex": "Male",
+          "role": "Defender",
+          "god": "Ra-Aten"
+        },
+        {
+          "id": "TG-TITAN-005",
+          "name": "Sutekh",
+          "sex": "Male",
+          "role": "Disruptor",
+          "god": "Set/Sutekh"
+        },
+        {
+          "id": "TG-TITAN-006",
+          "name": "Iset",
+          "sex": "Female",
+          "role": "Sustain",
+          "god": "Isis/Iset"
+        },
+        {
+          "id": "TG-TITAN-009",
+          "name": "Amunet",
+          "sex": "Female",
+          "role": "Assassin",
+          "god": "Amunet"
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-002",
+      "faction": "Asgardian",
+      "titans": [
+        {
+          "id": "TG-TITAN-010",
+          "name": "Odin",
+          "sex": "Male",
+          "role": "Defender",
+          "god": "Odin"
+        },
+        {
+          "id": "TG-TITAN-011",
+          "name": "Freyja",
+          "sex": "Female",
+          "role": "Battery",
+          "god": "Freyja"
+        },
+        {
+          "id": "TG-TITAN-015",
+          "name": "Frigg",
+          "sex": "Female",
+          "role": "Sustain",
+          "god": "Frigg"
+        },
+        {
+          "id": "TG-TITAN-018",
+          "name": "Thor",
+          "sex": "Male",
+          "role": "Guardian",
+          "god": "Thor"
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-003",
+      "faction": "Olympian",
+      "titans": [
+        {
+          "id": "TG-TITAN-019",
+          "name": "Zeus",
+          "sex": "Male",
+          "role": "Defender",
+          "god": "Zeus"
+        },
+        {
+          "id": "TG-TITAN-022",
+          "name": "Artemis",
+          "sex": "Female",
+          "role": "Breaker",
+          "god": "Artemis"
+        },
+        {
+          "id": "TG-TITAN-023",
+          "name": "Ares",
+          "sex": "Male",
+          "role": "Disruptor",
+          "god": "Ares"
+        },
+        {
+          "id": "TG-TITAN-026",
+          "name": "Athena",
+          "sex": "Female",
+          "role": "Guardian",
+          "god": "Athena"
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-004",
+      "faction": "Kami",
+      "titans": [
+        {
+          "id": "TG-TITAN-028",
+          "name": "Amaterasu",
+          "sex": "Female",
+          "role": "Defender",
+          "god": "Amaterasu"
+        },
+        {
+          "id": "TG-TITAN-029",
+          "name": "Tsukuyomi",
+          "sex": "Male",
+          "role": "Battery",
+          "god": "Tsukuyomi"
+        },
+        {
+          "id": "TG-TITAN-032",
+          "name": "Susanoo",
+          "sex": "Male",
+          "role": "Disruptor",
+          "god": "Susanoo"
+        },
+        {
+          "id": "TG-TITAN-033",
+          "name": "Izanami",
+          "sex": "Female",
+          "role": "Sustain",
+          "god": "Izanami"
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-005",
+      "faction": "Tuatha",
+      "titans": [
+        {
+          "id": "TG-TITAN-037",
+          "name": "Dagda",
+          "sex": "Male",
+          "role": "Defender",
+          "god": "The Dagda"
+        },
+        {
+          "id": "TG-TITAN-040",
+          "name": "Morrígan",
+          "sex": "Female",
+          "role": "Breaker",
+          "god": "The Morrígan"
+        },
+        {
+          "id": "TG-TITAN-041",
+          "name": "Brigid",
+          "sex": "Female",
+          "role": "Disruptor",
+          "god": "Brigid"
+        },
+        {
+          "id": "TG-TITAN-042",
+          "name": "Lugh",
+          "sex": "Male",
+          "role": "Artillery",
+          "god": "Lugh"
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-006",
+      "faction": "Empyrean",
+      "titans": [
+        {
+          "id": "TG-TITAN-046",
+          "name": "Michael",
+          "sex": "Male",
+          "role": "Defender",
+          "god": "Archangel Michael"
+        },
+        {
+          "id": "TG-TITAN-048",
+          "name": "Sophia",
+          "sex": "Female",
+          "role": "Controller",
+          "god": "Sophia"
+        },
+        {
+          "id": "TG-TITAN-050",
+          "name": "Shekinah",
+          "sex": "Female",
+          "role": "Disruptor",
+          "god": "Shekinah"
+        },
+        {
+          "id": "TG-TITAN-053",
+          "name": "Gabriel",
+          "sex": "Male",
+          "role": "Guardian",
+          "god": "Archangel Gabriel"
+        }
+      ]
+    },
+    {
+      "factionId": "TG-FACTION-007",
+      "faction": "Infernal Dominion",
+      "titans": [
+        {
+          "id": "TG-TITAN-055",
+          "name": "Lucifer",
+          "sex": "Male",
+          "role": "Defender",
+          "god": "Lucifer"
+        },
+        {
+          "id": "TG-TITAN-057",
+          "name": "Lilith",
+          "sex": "Female",
+          "role": "Controller",
+          "god": "Lilith"
+        },
+        {
+          "id": "TG-TITAN-058",
+          "name": "Asmodeus",
+          "sex": "Male",
+          "role": "Breaker",
+          "god": "Asmodeus"
+        },
+        {
+          "id": "TG-TITAN-060",
+          "name": "Naamah",
+          "sex": "Female",
+          "role": "Sustain",
+          "god": "Naamah"
+        }
+=======
+  "id": "MG-DEITY-ROLE-MATRIX-001",
+  "version": "0.9.3",
+  "generated": "2026-08-16T17:45:00Z",
+  "directive": "One-word canon Deity names with updated unique mechanics tied to solo gameplay, role payoff, faction terrain, and counterplay.",
+  "count": 63,
+  "deitys": [
+    {
+      "id": "MG-DEITY-001",
+      "name": "Aten Ra",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Legendary",
+      "previousRole": "Defender",
+      "combatIdentity": "frontline solar/order anchor",
+      "uniqueMechanic": "Aten Ra's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "long survival, objective holding, hazard endurance",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Aten Ra gear modifies Defender Solar Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings long survival, objective holding, hazard endurance through Aten Ra's Solar Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Aten-Ra — Ma’at-Weighted Strike Anchor",
+        "Pylon Edict Technique — Bastion",
+        "Aten-Ra: Sun-Scale Decree Holdfast",
+        "Divine Ascension — Aten-Ra Source Radiance"
+      ],
+      "sourceCultureGear": [
+        "Aten-Ra Bulwark Ma’at Was-Sceptre Blade",
+        "Aten-Ra Electrum Wesekh Realmplate",
+        "Aten-Ra Khepri Solar Scarab Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-002",
+      "name": "Khemet",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Epic",
+      "previousRole": "Battery",
+      "combatIdentity": "resource engine specialist",
+      "uniqueMechanic": "Khemet's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "resource pressure, Divinity/Momentum economy, long missions",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Aten Ra gear modifies Battery Solar Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions through Khemet's Solar Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Khemet — Ma’at-Weighted Strike Kindle",
+        "Pylon Edict Technique — Reservoir",
+        "Khemet: Sun-Scale Decree Overchannel",
+        "Divine Ascension — Aten-Ra Source Radiance"
+      ],
+      "sourceCultureGear": [
+        "Khemet Generator Ma’at Was-Sceptre Blade",
+        "Khemet Electrum Wesekh Realmplate",
+        "Khemet Khepri Solar Scarab Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-003",
+      "name": "Nefra",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Epic",
+      "previousRole": "Controller",
+      "combatIdentity": "terrain and movement manipulator",
+      "uniqueMechanic": "Nefra's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "fast enemies, terrain-heavy battles, caster denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Aten Ra gear modifies Controller Solar Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial through Nefra's Solar Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Nefra — Ma’at-Weighted Strike Vector",
+        "Pylon Edict Technique — Field Rewrite",
+        "Nefra: Sun-Scale Decree Dominion Grid",
+        "Divine Ascension — Aten-Ra Source Radiance"
+      ],
+      "sourceCultureGear": [
+        "Nefra Compass Ma’at Was-Sceptre Blade",
+        "Nefra Electrum Wesekh Realmplate",
+        "Nefra Khepri Solar Scarab Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-004",
+      "name": "Orru",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Rare",
+      "previousRole": "Breaker",
+      "combatIdentity": "armor and structure destroyer",
+      "uniqueMechanic": "Orru's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Deity exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "heavily armored enemies, shield windows, boss armor phases",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Aten Ra gear modifies Breaker Solar Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases through Orru's Solar Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Orru — Ma’at-Weighted Strike Rend",
+        "Pylon Edict Technique — Rupture",
+        "Orru: Sun-Scale Decree Sundering Trial",
+        "Divine Ascension — Aten-Ra Source Radiance"
+      ],
+      "sourceCultureGear": [
+        "Orru Sunderer Ma’at Was-Sceptre Blade",
+        "Orru Electrum Wesekh Realmplate",
+        "Orru Khepri Solar Scarab Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-005",
+      "name": "Sutekh",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Epic",
+      "previousRole": "Disruptor",
+      "combatIdentity": "enemy plan breaker",
+      "uniqueMechanic": "Sutekh's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and disruptor decisions that place a false timing window that punishes enemy overcommitment. Payoff: break enemy cadence and steal tempo during reaction prompts. Counterplay: patient enemies, cleanses, and baited reactions waste the setup; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Aten Ra gear modifies Disruptor Solar Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial through Sutekh's Solar Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Sutekh — Ma’at-Weighted Strike Sever",
+        "Pylon Edict Technique — Interdiction",
+        "Sutekh: Sun-Scale Decree Null Mandate",
+        "Divine Ascension — Aten-Ra Source Radiance"
+      ],
+      "sourceCultureGear": [
+        "Sutekh Interdictor Ma’at Was-Sceptre Blade",
+        "Sutekh Electrum Wesekh Realmplate",
+        "Sutekh Khepri Solar Scarab Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-006",
+      "name": "Iset",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Rare",
+      "previousRole": "Sustain",
+      "combatIdentity": "self-recovery endurance specialist",
+      "uniqueMechanic": "Iset's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "attrition, survival, poison/burn fields",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Aten Ra gear modifies Sustain Solar Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings attrition, survival, poison/burn fields through Iset's Solar Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Iset — Ma’at-Weighted Strike Restore",
+        "Pylon Edict Technique — Covenant",
+        "Iset: Sun-Scale Decree Renewal Rite",
+        "Divine Ascension — Aten-Ra Source Radiance"
+      ],
+      "sourceCultureGear": [
+        "Iset Restorer Ma’at Was-Sceptre Blade",
+        "Iset Electrum Wesekh Realmplate",
+        "Iset Khepri Solar Scarab Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-007",
+      "name": "Karnu",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Epic",
+      "previousRole": "Artillery",
+      "combatIdentity": "wide-area pressure specialist",
+      "uniqueMechanic": "Karnu's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and artillery decisions that charge a sightline, lane, or ritual angle before releasing long-range pressure. Payoff: reward positioning with map-wide objective pressure. Counterplay: engagement, cover shifts, and forced movement shut down the line; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "large enemy groups, ranged pressure, objective zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Aten Ra gear modifies Artillery Solar Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones through Karnu's Solar Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Karnu — Ma’at-Weighted Strike Longshot",
+        "Pylon Edict Technique — Horizon Lock",
+        "Karnu: Sun-Scale Decree Cataclysm Line",
+        "Divine Ascension — Aten-Ra Source Radiance"
+      ],
+      "sourceCultureGear": [
+        "Karnu Far-Sight Ma’at Was-Sceptre Blade",
+        "Karnu Electrum Wesekh Realmplate",
+        "Karnu Khepri Solar Scarab Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-008",
+      "name": "Maahes",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Rare",
+      "previousRole": "Guardian",
+      "combatIdentity": "reaction defense specialist",
+      "uniqueMechanic": "Maahes's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and guardian decisions that intercept a declared threat and store the impact as later utility. Payoff: protect mission objects or civilians while still acting solo. Counterplay: multi-timing attacks and feints pull the guard out of position; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "boss duels, counterattack, protection under pressure",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Aten Ra gear modifies Guardian Solar Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure through Maahes's Solar Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Maahes — Ma’at-Weighted Strike Intercept",
+        "Pylon Edict Technique — Punishing Guard",
+        "Maahes: Sun-Scale Decree Oath of Intercept",
+        "Divine Ascension — Aten-Ra Source Radiance"
+      ],
+      "sourceCultureGear": [
+        "Maahes Sentinel Ma’at Was-Sceptre Blade",
+        "Maahes Electrum Wesekh Realmplate",
+        "Maahes Khepri Solar Scarab Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-009",
+      "name": "Amunet",
+      "faction": "Aten Ra",
+      "factionId": "TG-FACTION-001",
+      "rarity": "Legendary",
+      "previousRole": "Assassin",
+      "combatIdentity": "mobility execution specialist",
+      "uniqueMechanic": "Amunet's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "illuminated terrain",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "execution-based encounters, priority targets, mobility assassinations",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Aten Ra gear modifies Assassin Solar Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations through Amunet's Solar Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Amunet — Ma’at-Weighted Strike Execution",
+        "Pylon Edict Technique — Shadow Pursuit",
+        "Amunet: Sun-Scale Decree Final Name Cut",
+        "Divine Ascension — Aten-Ra Source Radiance"
+      ],
+      "sourceCultureGear": [
+        "Amunet Name-Knife Ma’at Was-Sceptre Blade",
+        "Amunet Electrum Wesekh Realmplate",
+        "Amunet Khepri Solar Scarab Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-010",
+      "name": "Allfather",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Legendary",
+      "previousRole": "Defender",
+      "combatIdentity": "frontline solar/order anchor",
+      "uniqueMechanic": "Allfather's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "long survival, objective holding, hazard endurance",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Asgardian gear modifies Defender Rune Oath decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings long survival, objective holding, hazard endurance through Allfather's Rune Oath without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Allfather — Oath-Ring Cleave Anchor",
+        "Rune-Thunder Technique — Bastion",
+        "Allfather: Yggdrasil Root Oath Holdfast",
+        "Divine Ascension — Ragnarok Storm Unbound"
+      ],
+      "sourceCultureGear": [
+        "Allfather Bulwark Rune-Iron Oath Axe",
+        "Allfather Stormsteel Wolf-Cloak Mail",
+        "Allfather Yggdrasil Thunder-Root Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-011",
+      "name": "Hrothar",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Epic",
+      "previousRole": "Battery",
+      "combatIdentity": "resource engine specialist",
+      "uniqueMechanic": "Hrothar's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "resource pressure, Divinity/Momentum economy, long missions",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Asgardian gear modifies Battery Rune Oath decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions through Hrothar's Rune Oath without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Hrothar — Oath-Ring Cleave Kindle",
+        "Rune-Thunder Technique — Reservoir",
+        "Hrothar: Yggdrasil Root Oath Overchannel",
+        "Divine Ascension — Ragnarok Storm Unbound"
+      ],
+      "sourceCultureGear": [
+        "Hrothar Generator Rune-Iron Oath Axe",
+        "Hrothar Stormsteel Wolf-Cloak Mail",
+        "Hrothar Yggdrasil Thunder-Root Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-012",
+      "name": "Skeld",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Epic",
+      "previousRole": "Controller",
+      "combatIdentity": "terrain and movement manipulator",
+      "uniqueMechanic": "Skeld's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "fast enemies, terrain-heavy battles, caster denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Asgardian gear modifies Controller Rune Oath decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial through Skeld's Rune Oath without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Skeld — Oath-Ring Cleave Vector",
+        "Rune-Thunder Technique — Field Rewrite",
+        "Skeld: Yggdrasil Root Oath Dominion Grid",
+        "Divine Ascension — Ragnarok Storm Unbound"
+      ],
+      "sourceCultureGear": [
+        "Skeld Compass Rune-Iron Oath Axe",
+        "Skeld Stormsteel Wolf-Cloak Mail",
+        "Skeld Yggdrasil Thunder-Root Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-013",
+      "name": "Eirwyn",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Rare",
+      "previousRole": "Breaker",
+      "combatIdentity": "armor and structure destroyer",
+      "uniqueMechanic": "Eirwyn's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Deity exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "heavily armored enemies, shield windows, boss armor phases",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Asgardian gear modifies Breaker Rune Oath decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases through Eirwyn's Rune Oath without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Eirwyn — Oath-Ring Cleave Rend",
+        "Rune-Thunder Technique — Rupture",
+        "Eirwyn: Yggdrasil Root Oath Sundering Trial",
+        "Divine Ascension — Ragnarok Storm Unbound"
+      ],
+      "sourceCultureGear": [
+        "Eirwyn Sunderer Rune-Iron Oath Axe",
+        "Eirwyn Stormsteel Wolf-Cloak Mail",
+        "Eirwyn Yggdrasil Thunder-Root Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-014",
+      "name": "Mordun",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Epic",
+      "previousRole": "Disruptor",
+      "combatIdentity": "enemy plan breaker",
+      "uniqueMechanic": "Mordun's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and disruptor decisions that place a false timing window that punishes enemy overcommitment. Payoff: break enemy cadence and steal tempo during reaction prompts. Counterplay: patient enemies, cleanses, and baited reactions waste the setup; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Asgardian gear modifies Disruptor Rune Oath decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial through Mordun's Rune Oath without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Mordun — Oath-Ring Cleave Sever",
+        "Rune-Thunder Technique — Interdiction",
+        "Mordun: Yggdrasil Root Oath Null Mandate",
+        "Divine Ascension — Ragnarok Storm Unbound"
+      ],
+      "sourceCultureGear": [
+        "Mordun Interdictor Rune-Iron Oath Axe",
+        "Mordun Stormsteel Wolf-Cloak Mail",
+        "Mordun Yggdrasil Thunder-Root Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-015",
+      "name": "Veyra",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Rare",
+      "previousRole": "Sustain",
+      "combatIdentity": "self-recovery endurance specialist",
+      "uniqueMechanic": "Veyra's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "attrition, survival, poison/burn fields",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Asgardian gear modifies Sustain Rune Oath decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings attrition, survival, poison/burn fields through Veyra's Rune Oath without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Veyra — Oath-Ring Cleave Restore",
+        "Rune-Thunder Technique — Covenant",
+        "Veyra: Yggdrasil Root Oath Renewal Rite",
+        "Divine Ascension — Ragnarok Storm Unbound"
+      ],
+      "sourceCultureGear": [
+        "Veyra Restorer Rune-Iron Oath Axe",
+        "Veyra Stormsteel Wolf-Cloak Mail",
+        "Veyra Yggdrasil Thunder-Root Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-016",
+      "name": "Ragnor",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Epic",
+      "previousRole": "Artillery",
+      "combatIdentity": "wide-area pressure specialist",
+      "uniqueMechanic": "Ragnor's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and artillery decisions that charge a sightline, lane, or ritual angle before releasing long-range pressure. Payoff: reward positioning with map-wide objective pressure. Counterplay: engagement, cover shifts, and forced movement shut down the line; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "large enemy groups, ranged pressure, objective zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Asgardian gear modifies Artillery Rune Oath decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones through Ragnor's Rune Oath without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Ragnor — Oath-Ring Cleave Longshot",
+        "Rune-Thunder Technique — Horizon Lock",
+        "Ragnor: Yggdrasil Root Oath Cataclysm Line",
+        "Divine Ascension — Ragnarok Storm Unbound"
+      ],
+      "sourceCultureGear": [
+        "Ragnor Far-Sight Rune-Iron Oath Axe",
+        "Ragnor Stormsteel Wolf-Cloak Mail",
+        "Ragnor Yggdrasil Thunder-Root Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-017",
+      "name": "Ullr",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Rare",
+      "previousRole": "Guardian",
+      "combatIdentity": "reaction defense specialist",
+      "uniqueMechanic": "Ullr's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and guardian decisions that intercept a declared threat and store the impact as later utility. Payoff: protect mission objects or civilians while still acting solo. Counterplay: multi-timing attacks and feints pull the guard out of position; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "boss duels, counterattack, protection under pressure",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Asgardian gear modifies Guardian Rune Oath decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure through Ullr's Rune Oath without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Ullr — Oath-Ring Cleave Intercept",
+        "Rune-Thunder Technique — Punishing Guard",
+        "Ullr: Yggdrasil Root Oath Oath of Intercept",
+        "Divine Ascension — Ragnarok Storm Unbound"
+      ],
+      "sourceCultureGear": [
+        "Ullr Sentinel Rune-Iron Oath Axe",
+        "Ullr Stormsteel Wolf-Cloak Mail",
+        "Ullr Yggdrasil Thunder-Root Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-018",
+      "name": "Sigrun",
+      "faction": "Asgardian",
+      "factionId": "TG-FACTION-002",
+      "rarity": "Legendary",
+      "previousRole": "Assassin",
+      "combatIdentity": "mobility execution specialist",
+      "uniqueMechanic": "Sigrun's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "movement through storm lanes",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "execution-based encounters, priority targets, mobility assassinations",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Asgardian gear modifies Assassin Rune Oath decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations through Sigrun's Rune Oath without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Sigrun — Oath-Ring Cleave Execution",
+        "Rune-Thunder Technique — Shadow Pursuit",
+        "Sigrun: Yggdrasil Root Oath Final Name Cut",
+        "Divine Ascension — Ragnarok Storm Unbound"
+      ],
+      "sourceCultureGear": [
+        "Sigrun Name-Knife Rune-Iron Oath Axe",
+        "Sigrun Stormsteel Wolf-Cloak Mail",
+        "Sigrun Yggdrasil Thunder-Root Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-019",
+      "name": "Aurelion",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Legendary",
+      "previousRole": "Defender",
+      "combatIdentity": "frontline solar/order anchor",
+      "uniqueMechanic": "Aurelion's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "long survival, objective holding, hazard endurance",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Olympian gear modifies Defender Aegis Favor decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings long survival, objective holding, hazard endurance through Aurelion's Aegis Favor without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Aurelion — Aegis Spear Thrust Anchor",
+        "Laurel Trial Technique — Bastion",
+        "Aurelion: Olympian Verdict Contest Holdfast",
+        "Divine Ascension — Nike Crowned Ascension"
+      ],
+      "sourceCultureGear": [
+        "Aurelion Bulwark Aegis Laurel Spear",
+        "Aurelion Living Marble Bronze Cuirass",
+        "Aurelion Oracle Ambrosia Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-020",
+      "name": "Kallix",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Epic",
+      "previousRole": "Battery",
+      "combatIdentity": "resource engine specialist",
+      "uniqueMechanic": "Kallix's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "resource pressure, Divinity/Momentum economy, long missions",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Olympian gear modifies Battery Aegis Favor decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions through Kallix's Aegis Favor without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Kallix — Aegis Spear Thrust Kindle",
+        "Laurel Trial Technique — Reservoir",
+        "Kallix: Olympian Verdict Contest Overchannel",
+        "Divine Ascension — Nike Crowned Ascension"
+      ],
+      "sourceCultureGear": [
+        "Kallix Generator Aegis Laurel Spear",
+        "Kallix Living Marble Bronze Cuirass",
+        "Kallix Oracle Ambrosia Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-021",
+      "name": "Thyressa",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Epic",
+      "previousRole": "Controller",
+      "combatIdentity": "terrain and movement manipulator",
+      "uniqueMechanic": "Thyressa's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "fast enemies, terrain-heavy battles, caster denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Olympian gear modifies Controller Aegis Favor decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial through Thyressa's Aegis Favor without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Thyressa — Aegis Spear Thrust Vector",
+        "Laurel Trial Technique — Field Rewrite",
+        "Thyressa: Olympian Verdict Contest Dominion Grid",
+        "Divine Ascension — Nike Crowned Ascension"
+      ],
+      "sourceCultureGear": [
+        "Thyressa Compass Aegis Laurel Spear",
+        "Thyressa Living Marble Bronze Cuirass",
+        "Thyressa Oracle Ambrosia Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-022",
+      "name": "Ilyon",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Rare",
+      "previousRole": "Breaker",
+      "combatIdentity": "armor and structure destroyer",
+      "uniqueMechanic": "Ilyon's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Deity exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "heavily armored enemies, shield windows, boss armor phases",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Olympian gear modifies Breaker Aegis Favor decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases through Ilyon's Aegis Favor without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Ilyon — Aegis Spear Thrust Rend",
+        "Laurel Trial Technique — Rupture",
+        "Ilyon: Olympian Verdict Contest Sundering Trial",
+        "Divine Ascension — Nike Crowned Ascension"
+      ],
+      "sourceCultureGear": [
+        "Ilyon Sunderer Aegis Laurel Spear",
+        "Ilyon Living Marble Bronze Cuirass",
+        "Ilyon Oracle Ambrosia Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-023",
+      "name": "Nikos",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Epic",
+      "previousRole": "Disruptor",
+      "combatIdentity": "enemy plan breaker",
+      "uniqueMechanic": "Nikos's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and disruptor decisions that place a false timing window that punishes enemy overcommitment. Payoff: break enemy cadence and steal tempo during reaction prompts. Counterplay: patient enemies, cleanses, and baited reactions waste the setup; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Olympian gear modifies Disruptor Aegis Favor decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial through Nikos's Aegis Favor without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Nikos — Aegis Spear Thrust Sever",
+        "Laurel Trial Technique — Interdiction",
+        "Nikos: Olympian Verdict Contest Null Mandate",
+        "Divine Ascension — Nike Crowned Ascension"
+      ],
+      "sourceCultureGear": [
+        "Nikos Interdictor Aegis Laurel Spear",
+        "Nikos Living Marble Bronze Cuirass",
+        "Nikos Oracle Ambrosia Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-024",
+      "name": "Dione",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Rare",
+      "previousRole": "Sustain",
+      "combatIdentity": "self-recovery endurance specialist",
+      "uniqueMechanic": "Dione's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "attrition, survival, poison/burn fields",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Olympian gear modifies Sustain Aegis Favor decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings attrition, survival, poison/burn fields through Dione's Aegis Favor without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Dione — Aegis Spear Thrust Restore",
+        "Laurel Trial Technique — Covenant",
+        "Dione: Olympian Verdict Contest Renewal Rite",
+        "Divine Ascension — Nike Crowned Ascension"
+      ],
+      "sourceCultureGear": [
+        "Dione Restorer Aegis Laurel Spear",
+        "Dione Living Marble Bronze Cuirass",
+        "Dione Oracle Ambrosia Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-025",
+      "name": "Helior",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Epic",
+      "previousRole": "Artillery",
+      "combatIdentity": "wide-area pressure specialist",
+      "uniqueMechanic": "Helior's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and artillery decisions that charge a sightline, lane, or ritual angle before releasing long-range pressure. Payoff: reward positioning with map-wide objective pressure. Counterplay: engagement, cover shifts, and forced movement shut down the line; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "large enemy groups, ranged pressure, objective zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Olympian gear modifies Artillery Aegis Favor decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones through Helior's Aegis Favor without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Helior — Aegis Spear Thrust Longshot",
+        "Laurel Trial Technique — Horizon Lock",
+        "Helior: Olympian Verdict Contest Cataclysm Line",
+        "Divine Ascension — Nike Crowned Ascension"
+      ],
+      "sourceCultureGear": [
+        "Helior Far-Sight Aegis Laurel Spear",
+        "Helior Living Marble Bronze Cuirass",
+        "Helior Oracle Ambrosia Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-026",
+      "name": "Pallas",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Rare",
+      "previousRole": "Guardian",
+      "combatIdentity": "reaction defense specialist",
+      "uniqueMechanic": "Pallas's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and guardian decisions that intercept a declared threat and store the impact as later utility. Payoff: protect mission objects or civilians while still acting solo. Counterplay: multi-timing attacks and feints pull the guard out of position; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "boss duels, counterattack, protection under pressure",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Olympian gear modifies Guardian Aegis Favor decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure through Pallas's Aegis Favor without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Pallas — Aegis Spear Thrust Intercept",
+        "Laurel Trial Technique — Punishing Guard",
+        "Pallas: Olympian Verdict Contest Oath of Intercept",
+        "Divine Ascension — Nike Crowned Ascension"
+      ],
+      "sourceCultureGear": [
+        "Pallas Sentinel Aegis Laurel Spear",
+        "Pallas Living Marble Bronze Cuirass",
+        "Pallas Oracle Ambrosia Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-027",
+      "name": "Eiren",
+      "faction": "Olympian",
+      "factionId": "TG-FACTION-003",
+      "rarity": "Legendary",
+      "previousRole": "Assassin",
+      "combatIdentity": "mobility execution specialist",
+      "uniqueMechanic": "Eiren's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "high ground and duel circles",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "execution-based encounters, priority targets, mobility assassinations",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Olympian gear modifies Assassin Aegis Favor decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations through Eiren's Aegis Favor without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Eiren — Aegis Spear Thrust Execution",
+        "Laurel Trial Technique — Shadow Pursuit",
+        "Eiren: Olympian Verdict Contest Final Name Cut",
+        "Divine Ascension — Nike Crowned Ascension"
+      ],
+      "sourceCultureGear": [
+        "Eiren Name-Knife Aegis Laurel Spear",
+        "Eiren Living Marble Bronze Cuirass",
+        "Eiren Oracle Ambrosia Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-028",
+      "name": "Amaterion",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Legendary",
+      "previousRole": "Defender",
+      "combatIdentity": "frontline solar/order anchor",
+      "uniqueMechanic": "Amaterion's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "long survival, objective holding, hazard endurance",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Kami gear modifies Defender Spirit Seal decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings long survival, objective holding, hazard endurance through Amaterion's Spirit Seal without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Amaterion — Kagura Spirit Cut Anchor",
+        "Shide Seal Technique — Bastion",
+        "Amaterion: Torii Boundary Rewrite Holdfast",
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
+      ],
+      "sourceCultureGear": [
+        "Amaterion Bulwark Mirror-Talisman Spirit Blade",
+        "Amaterion Lacquered Shimenawa Spirit-Guard",
+        "Amaterion Kitsune Foxfire Magatama Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-029",
+      "name": "Tsukiro",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Epic",
+      "previousRole": "Battery",
+      "combatIdentity": "resource engine specialist",
+      "uniqueMechanic": "Tsukiro's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "resource pressure, Divinity/Momentum economy, long missions",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Kami gear modifies Battery Spirit Seal decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions through Tsukiro's Spirit Seal without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Tsukiro — Kagura Spirit Cut Kindle",
+        "Shide Seal Technique — Reservoir",
+        "Tsukiro: Torii Boundary Rewrite Overchannel",
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
+      ],
+      "sourceCultureGear": [
+        "Tsukiro Generator Mirror-Talisman Spirit Blade",
+        "Tsukiro Lacquered Shimenawa Spirit-Guard",
+        "Tsukiro Kitsune Foxfire Magatama Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-030",
+      "name": "Raidenko",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Epic",
+      "previousRole": "Controller",
+      "combatIdentity": "terrain and movement manipulator",
+      "uniqueMechanic": "Raidenko's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "fast enemies, terrain-heavy battles, caster denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Kami gear modifies Controller Spirit Seal decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial through Raidenko's Spirit Seal without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Raidenko — Kagura Spirit Cut Vector",
+        "Shide Seal Technique — Field Rewrite",
+        "Raidenko: Torii Boundary Rewrite Dominion Grid",
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
+      ],
+      "sourceCultureGear": [
+        "Raidenko Compass Mirror-Talisman Spirit Blade",
+        "Raidenko Lacquered Shimenawa Spirit-Guard",
+        "Raidenko Kitsune Foxfire Magatama Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-031",
+      "name": "Mizuka",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Rare",
+      "previousRole": "Breaker",
+      "combatIdentity": "armor and structure destroyer",
+      "uniqueMechanic": "Mizuka's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Deity exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "heavily armored enemies, shield windows, boss armor phases",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Kami gear modifies Breaker Spirit Seal decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases through Mizuka's Spirit Seal without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Mizuka — Kagura Spirit Cut Rend",
+        "Shide Seal Technique — Rupture",
+        "Mizuka: Torii Boundary Rewrite Sundering Trial",
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
+      ],
+      "sourceCultureGear": [
+        "Mizuka Sunderer Mirror-Talisman Spirit Blade",
+        "Mizuka Lacquered Shimenawa Spirit-Guard",
+        "Mizuka Kitsune Foxfire Magatama Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-032",
+      "name": "Kageyori",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Epic",
+      "previousRole": "Disruptor",
+      "combatIdentity": "enemy plan breaker",
+      "uniqueMechanic": "Kageyori's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and disruptor decisions that place a false timing window that punishes enemy overcommitment. Payoff: break enemy cadence and steal tempo during reaction prompts. Counterplay: patient enemies, cleanses, and baited reactions waste the setup; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Kami gear modifies Disruptor Spirit Seal decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial through Kageyori's Spirit Seal without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Kageyori — Kagura Spirit Cut Sever",
+        "Shide Seal Technique — Interdiction",
+        "Kageyori: Torii Boundary Rewrite Null Mandate",
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
+      ],
+      "sourceCultureGear": [
+        "Kageyori Interdictor Mirror-Talisman Spirit Blade",
+        "Kageyori Lacquered Shimenawa Spirit-Guard",
+        "Kageyori Kitsune Foxfire Magatama Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-033",
+      "name": "Hanae",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Rare",
+      "previousRole": "Sustain",
+      "combatIdentity": "self-recovery endurance specialist",
+      "uniqueMechanic": "Hanae's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "attrition, survival, poison/burn fields",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Kami gear modifies Sustain Spirit Seal decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings attrition, survival, poison/burn fields through Hanae's Spirit Seal without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Hanae — Kagura Spirit Cut Restore",
+        "Shide Seal Technique — Covenant",
+        "Hanae: Torii Boundary Rewrite Renewal Rite",
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
+      ],
+      "sourceCultureGear": [
+        "Hanae Restorer Mirror-Talisman Spirit Blade",
+        "Hanae Lacquered Shimenawa Spirit-Guard",
+        "Hanae Kitsune Foxfire Magatama Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-034",
+      "name": "Onimaru",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Epic",
+      "previousRole": "Artillery",
+      "combatIdentity": "wide-area pressure specialist",
+      "uniqueMechanic": "Onimaru's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and artillery decisions that charge a sightline, lane, or ritual angle before releasing long-range pressure. Payoff: reward positioning with map-wide objective pressure. Counterplay: engagement, cover shifts, and forced movement shut down the line; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "large enemy groups, ranged pressure, objective zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Kami gear modifies Artillery Spirit Seal decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones through Onimaru's Spirit Seal without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Onimaru — Kagura Spirit Cut Longshot",
+        "Shide Seal Technique — Horizon Lock",
+        "Onimaru: Torii Boundary Rewrite Cataclysm Line",
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
+      ],
+      "sourceCultureGear": [
+        "Onimaru Far-Sight Mirror-Talisman Spirit Blade",
+        "Onimaru Lacquered Shimenawa Spirit-Guard",
+        "Onimaru Kitsune Foxfire Magatama Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-035",
+      "name": "Korin",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Rare",
+      "previousRole": "Guardian",
+      "combatIdentity": "reaction defense specialist",
+      "uniqueMechanic": "Korin's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and guardian decisions that intercept a declared threat and store the impact as later utility. Payoff: protect mission objects or civilians while still acting solo. Counterplay: multi-timing attacks and feints pull the guard out of position; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "boss duels, counterattack, protection under pressure",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Kami gear modifies Guardian Spirit Seal decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure through Korin's Spirit Seal without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Korin — Kagura Spirit Cut Intercept",
+        "Shide Seal Technique — Punishing Guard",
+        "Korin: Torii Boundary Rewrite Oath of Intercept",
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
+      ],
+      "sourceCultureGear": [
+        "Korin Sentinel Mirror-Talisman Spirit Blade",
+        "Korin Lacquered Shimenawa Spirit-Guard",
+        "Korin Kitsune Foxfire Magatama Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-036",
+      "name": "Yamabito",
+      "faction": "Kami",
+      "factionId": "TG-FACTION-004",
+      "rarity": "Legendary",
+      "previousRole": "Assassin",
+      "combatIdentity": "mobility execution specialist",
+      "uniqueMechanic": "Yamabito's Spirit Seal: a solo mechanic where Sealfire grows through shrine threshold ground, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "shrines, mist, and mirror paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "execution-based encounters, priority targets, mobility assassinations",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Kami gear modifies Assassin Spirit Seal decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations through Yamabito's Spirit Seal without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Yamabito — Kagura Spirit Cut Execution",
+        "Shide Seal Technique — Shadow Pursuit",
+        "Yamabito: Torii Boundary Rewrite Final Name Cut",
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
+      ],
+      "sourceCultureGear": [
+        "Yamabito Name-Knife Mirror-Talisman Spirit Blade",
+        "Yamabito Lacquered Shimenawa Spirit-Guard",
+        "Yamabito Kitsune Foxfire Magatama Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-037",
+      "name": "Dagoran",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Legendary",
+      "previousRole": "Defender",
+      "combatIdentity": "frontline solar/order anchor",
+      "uniqueMechanic": "Dagoran's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "long survival, objective holding, hazard endurance",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Tuatha gear modifies Defender Geas Bloom decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings long survival, objective holding, hazard endurance through Dagoran's Geas Bloom without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Dagoran — Silver-Branch Cut Anchor",
+        "Geas Thorn Technique — Bastion",
+        "Dagoran: Sídhe Court Covenant Holdfast",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
+      ],
+      "sourceCultureGear": [
+        "Dagoran Bulwark Lugh Silver-Spear Thornblade",
+        "Dagoran Moon-Oak Sídhe Mantle",
+        "Dagoran Dagda Cauldron Memory Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-038",
+      "name": "Eryndor",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Epic",
+      "previousRole": "Battery",
+      "combatIdentity": "resource engine specialist",
+      "uniqueMechanic": "Eryndor's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "resource pressure, Divinity/Momentum economy, long missions",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Tuatha gear modifies Battery Geas Bloom decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions through Eryndor's Geas Bloom without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Eryndor — Silver-Branch Cut Kindle",
+        "Geas Thorn Technique — Reservoir",
+        "Eryndor: Sídhe Court Covenant Overchannel",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
+      ],
+      "sourceCultureGear": [
+        "Eryndor Generator Lugh Silver-Spear Thornblade",
+        "Eryndor Moon-Oak Sídhe Mantle",
+        "Eryndor Dagda Cauldron Memory Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-039",
+      "name": "Melian",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Epic",
+      "previousRole": "Controller",
+      "combatIdentity": "terrain and movement manipulator",
+      "uniqueMechanic": "Melian's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "fast enemies, terrain-heavy battles, caster denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Tuatha gear modifies Controller Geas Bloom decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial through Melian's Geas Bloom without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Melian — Silver-Branch Cut Vector",
+        "Geas Thorn Technique — Field Rewrite",
+        "Melian: Sídhe Court Covenant Dominion Grid",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
+      ],
+      "sourceCultureGear": [
+        "Melian Compass Lugh Silver-Spear Thornblade",
+        "Melian Moon-Oak Sídhe Mantle",
+        "Melian Dagda Cauldron Memory Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-040",
+      "name": "Bran",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Rare",
+      "previousRole": "Breaker",
+      "combatIdentity": "armor and structure destroyer",
+      "uniqueMechanic": "Bran's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Deity exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "heavily armored enemies, shield windows, boss armor phases",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Tuatha gear modifies Breaker Geas Bloom decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases through Bran's Geas Bloom without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Bran — Silver-Branch Cut Rend",
+        "Geas Thorn Technique — Rupture",
+        "Bran: Sídhe Court Covenant Sundering Trial",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
+      ],
+      "sourceCultureGear": [
+        "Bran Sunderer Lugh Silver-Spear Thornblade",
+        "Bran Moon-Oak Sídhe Mantle",
+        "Bran Dagda Cauldron Memory Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-041",
+      "name": "Nimue",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Epic",
+      "previousRole": "Disruptor",
+      "combatIdentity": "enemy plan breaker",
+      "uniqueMechanic": "Nimue's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and disruptor decisions that place a false timing window that punishes enemy overcommitment. Payoff: break enemy cadence and steal tempo during reaction prompts. Counterplay: patient enemies, cleanses, and baited reactions waste the setup; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Tuatha gear modifies Disruptor Geas Bloom decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial through Nimue's Geas Bloom without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Nimue — Silver-Branch Cut Sever",
+        "Geas Thorn Technique — Interdiction",
+        "Nimue: Sídhe Court Covenant Null Mandate",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
+      ],
+      "sourceCultureGear": [
+        "Nimue Interdictor Lugh Silver-Spear Thornblade",
+        "Nimue Moon-Oak Sídhe Mantle",
+        "Nimue Dagda Cauldron Memory Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-042",
+      "name": "Cernan",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Rare",
+      "previousRole": "Sustain",
+      "combatIdentity": "self-recovery endurance specialist",
+      "uniqueMechanic": "Cernan's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "attrition, survival, poison/burn fields",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Tuatha gear modifies Sustain Geas Bloom decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings attrition, survival, poison/burn fields through Cernan's Geas Bloom without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Cernan — Silver-Branch Cut Restore",
+        "Geas Thorn Technique — Covenant",
+        "Cernan: Sídhe Court Covenant Renewal Rite",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
+      ],
+      "sourceCultureGear": [
+        "Cernan Restorer Lugh Silver-Spear Thornblade",
+        "Cernan Moon-Oak Sídhe Mantle",
+        "Cernan Dagda Cauldron Memory Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-043",
+      "name": "Ailbhe",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Epic",
+      "previousRole": "Artillery",
+      "combatIdentity": "wide-area pressure specialist",
+      "uniqueMechanic": "Ailbhe's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and artillery decisions that charge a sightline, lane, or ritual angle before releasing long-range pressure. Payoff: reward positioning with map-wide objective pressure. Counterplay: engagement, cover shifts, and forced movement shut down the line; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "large enemy groups, ranged pressure, objective zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Tuatha gear modifies Artillery Geas Bloom decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones through Ailbhe's Geas Bloom without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Ailbhe — Silver-Branch Cut Longshot",
+        "Geas Thorn Technique — Horizon Lock",
+        "Ailbhe: Sídhe Court Covenant Cataclysm Line",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
+      ],
+      "sourceCultureGear": [
+        "Ailbhe Far-Sight Lugh Silver-Spear Thornblade",
+        "Ailbhe Moon-Oak Sídhe Mantle",
+        "Ailbhe Dagda Cauldron Memory Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-044",
+      "name": "Oghma",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Rare",
+      "previousRole": "Guardian",
+      "combatIdentity": "reaction defense specialist",
+      "uniqueMechanic": "Oghma's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and guardian decisions that intercept a declared threat and store the impact as later utility. Payoff: protect mission objects or civilians while still acting solo. Counterplay: multi-timing attacks and feints pull the guard out of position; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "boss duels, counterattack, protection under pressure",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Tuatha gear modifies Guardian Geas Bloom decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure through Oghma's Geas Bloom without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Oghma — Silver-Branch Cut Intercept",
+        "Geas Thorn Technique — Punishing Guard",
+        "Oghma: Sídhe Court Covenant Oath of Intercept",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
+      ],
+      "sourceCultureGear": [
+        "Oghma Sentinel Lugh Silver-Spear Thornblade",
+        "Oghma Moon-Oak Sídhe Mantle",
+        "Oghma Dagda Cauldron Memory Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-045",
+      "name": "Tara",
+      "faction": "Tuatha",
+      "factionId": "TG-FACTION-005",
+      "rarity": "Legendary",
+      "previousRole": "Assassin",
+      "combatIdentity": "mobility execution specialist",
+      "uniqueMechanic": "Tara's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "roots, moonlit growth, and fae paths",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "execution-based encounters, priority targets, mobility assassinations",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Tuatha gear modifies Assassin Geas Bloom decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations through Tara's Geas Bloom without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Tara — Silver-Branch Cut Execution",
+        "Geas Thorn Technique — Shadow Pursuit",
+        "Tara: Sídhe Court Covenant Final Name Cut",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
+      ],
+      "sourceCultureGear": [
+        "Tara Name-Knife Lugh Silver-Spear Thornblade",
+        "Tara Moon-Oak Sídhe Mantle",
+        "Tara Dagda Cauldron Memory Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-046",
+      "name": "Seraphel",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Legendary",
+      "previousRole": "Defender",
+      "combatIdentity": "frontline solar/order anchor",
+      "uniqueMechanic": "Seraphel's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "long survival, objective holding, hazard endurance",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Empyrean gear modifies Defender Choir Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings long survival, objective holding, hazard endurance through Seraphel's Choir Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Seraphel — Seraph Edict Lash Anchor",
+        "Choir Seal Technique — Bastion",
+        "Seraphel: Ophanim Throne Judgment Holdfast",
+        "Divine Ascension — Seraphic Choir Unbound"
+      ],
+      "sourceCultureGear": [
+        "Seraphel Bulwark Seraph Bell-Edict Blade",
+        "Seraphel Opal-Glass Cherubim Aegis",
+        "Seraphel Ophanim Many-Eye Choir Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-047",
+      "name": "Caelion",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Epic",
+      "previousRole": "Battery",
+      "combatIdentity": "resource engine specialist",
+      "uniqueMechanic": "Caelion's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "resource pressure, Divinity/Momentum economy, long missions",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Empyrean gear modifies Battery Choir Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions through Caelion's Choir Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Caelion — Seraph Edict Lash Kindle",
+        "Choir Seal Technique — Reservoir",
+        "Caelion: Ophanim Throne Judgment Overchannel",
+        "Divine Ascension — Seraphic Choir Unbound"
+      ],
+      "sourceCultureGear": [
+        "Caelion Generator Seraph Bell-Edict Blade",
+        "Caelion Opal-Glass Cherubim Aegis",
+        "Caelion Ophanim Many-Eye Choir Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-048",
+      "name": "Aurelia",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Epic",
+      "previousRole": "Controller",
+      "combatIdentity": "terrain and movement manipulator",
+      "uniqueMechanic": "Aurelia's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "fast enemies, terrain-heavy battles, caster denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Empyrean gear modifies Controller Choir Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial through Aurelia's Choir Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Aurelia — Seraph Edict Lash Vector",
+        "Choir Seal Technique — Field Rewrite",
+        "Aurelia: Ophanim Throne Judgment Dominion Grid",
+        "Divine Ascension — Seraphic Choir Unbound"
+      ],
+      "sourceCultureGear": [
+        "Aurelia Compass Seraph Bell-Edict Blade",
+        "Aurelia Opal-Glass Cherubim Aegis",
+        "Aurelia Ophanim Many-Eye Choir Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-049",
+      "name": "Malachor",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Rare",
+      "previousRole": "Breaker",
+      "combatIdentity": "armor and structure destroyer",
+      "uniqueMechanic": "Malachor's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Deity exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "heavily armored enemies, shield windows, boss armor phases",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Empyrean gear modifies Breaker Choir Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases through Malachor's Choir Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Malachor — Seraph Edict Lash Rend",
+        "Choir Seal Technique — Rupture",
+        "Malachor: Ophanim Throne Judgment Sundering Trial",
+        "Divine Ascension — Seraphic Choir Unbound"
+      ],
+      "sourceCultureGear": [
+        "Malachor Sunderer Seraph Bell-Edict Blade",
+        "Malachor Opal-Glass Cherubim Aegis",
+        "Malachor Ophanim Many-Eye Choir Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-050",
+      "name": "Elyndra",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Epic",
+      "previousRole": "Disruptor",
+      "combatIdentity": "enemy plan breaker",
+      "uniqueMechanic": "Elyndra's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and disruptor decisions that place a false timing window that punishes enemy overcommitment. Payoff: break enemy cadence and steal tempo during reaction prompts. Counterplay: patient enemies, cleanses, and baited reactions waste the setup; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Empyrean gear modifies Disruptor Choir Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial through Elyndra's Choir Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Elyndra — Seraph Edict Lash Sever",
+        "Choir Seal Technique — Interdiction",
+        "Elyndra: Ophanim Throne Judgment Null Mandate",
+        "Divine Ascension — Seraphic Choir Unbound"
+      ],
+      "sourceCultureGear": [
+        "Elyndra Interdictor Seraph Bell-Edict Blade",
+        "Elyndra Opal-Glass Cherubim Aegis",
+        "Elyndra Ophanim Many-Eye Choir Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-051",
+      "name": "Orison",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Rare",
+      "previousRole": "Sustain",
+      "combatIdentity": "self-recovery endurance specialist",
+      "uniqueMechanic": "Orison's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "attrition, survival, poison/burn fields",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Empyrean gear modifies Sustain Choir Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings attrition, survival, poison/burn fields through Orison's Choir Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Orison — Seraph Edict Lash Restore",
+        "Choir Seal Technique — Covenant",
+        "Orison: Ophanim Throne Judgment Renewal Rite",
+        "Divine Ascension — Seraphic Choir Unbound"
+      ],
+      "sourceCultureGear": [
+        "Orison Restorer Seraph Bell-Edict Blade",
+        "Orison Opal-Glass Cherubim Aegis",
+        "Orison Ophanim Many-Eye Choir Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-052",
+      "name": "Vespera",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Epic",
+      "previousRole": "Artillery",
+      "combatIdentity": "wide-area pressure specialist",
+      "uniqueMechanic": "Vespera's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and artillery decisions that charge a sightline, lane, or ritual angle before releasing long-range pressure. Payoff: reward positioning with map-wide objective pressure. Counterplay: engagement, cover shifts, and forced movement shut down the line; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "large enemy groups, ranged pressure, objective zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Empyrean gear modifies Artillery Choir Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones through Vespera's Choir Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Vespera — Seraph Edict Lash Longshot",
+        "Choir Seal Technique — Horizon Lock",
+        "Vespera: Ophanim Throne Judgment Cataclysm Line",
+        "Divine Ascension — Seraphic Choir Unbound"
+      ],
+      "sourceCultureGear": [
+        "Vespera Far-Sight Seraph Bell-Edict Blade",
+        "Vespera Opal-Glass Cherubim Aegis",
+        "Vespera Ophanim Many-Eye Choir Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-053",
+      "name": "Axiom",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Rare",
+      "previousRole": "Guardian",
+      "combatIdentity": "reaction defense specialist",
+      "uniqueMechanic": "Axiom's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and guardian decisions that intercept a declared threat and store the impact as later utility. Payoff: protect mission objects or civilians while still acting solo. Counterplay: multi-timing attacks and feints pull the guard out of position; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "boss duels, counterattack, protection under pressure",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Empyrean gear modifies Guardian Choir Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure through Axiom's Choir Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Axiom — Seraph Edict Lash Intercept",
+        "Choir Seal Technique — Punishing Guard",
+        "Axiom: Ophanim Throne Judgment Oath of Intercept",
+        "Divine Ascension — Seraphic Choir Unbound"
+      ],
+      "sourceCultureGear": [
+        "Axiom Sentinel Seraph Bell-Edict Blade",
+        "Axiom Opal-Glass Cherubim Aegis",
+        "Axiom Ophanim Many-Eye Choir Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-054",
+      "name": "Theon",
+      "faction": "Empyrean",
+      "factionId": "TG-FACTION-006",
+      "rarity": "Legendary",
+      "previousRole": "Assassin",
+      "combatIdentity": "mobility execution specialist",
+      "uniqueMechanic": "Theon's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "ordered sigil zones",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "execution-based encounters, priority targets, mobility assassinations",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Empyrean gear modifies Assassin Choir Edict decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations through Theon's Choir Edict without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Theon — Seraph Edict Lash Execution",
+        "Choir Seal Technique — Shadow Pursuit",
+        "Theon: Ophanim Throne Judgment Final Name Cut",
+        "Divine Ascension — Seraphic Choir Unbound"
+      ],
+      "sourceCultureGear": [
+        "Theon Name-Knife Seraph Bell-Edict Blade",
+        "Theon Opal-Glass Cherubim Aegis",
+        "Theon Ophanim Many-Eye Choir Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-055",
+      "name": "Mordrath",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Legendary",
+      "previousRole": "Defender",
+      "combatIdentity": "frontline solar/order anchor",
+      "uniqueMechanic": "Mordrath's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Juggernaut"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "long survival, objective holding, hazard endurance",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Infernal Dominion gear modifies Defender Blood Contract decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings long survival, objective holding, hazard endurance through Mordrath's Blood Contract without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Mordrath — Black-Iron Clause Cut Anchor",
+        "Blood-Wax Contract Technique — Bastion",
+        "Mordrath: Infernal Debt Verdict Holdfast",
+        "Divine Ascension — Hell-Crown Dominion Unbound"
+      ],
+      "sourceCultureGear": [
+        "Mordrath Bulwark Goetic Chain-Crown Blade",
+        "Mordrath Volcanic Glass Debtor Plate",
+        "Mordrath Blood-Wax Infernal Ledger Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-056",
+      "name": "Varkul",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Epic",
+      "previousRole": "Battery",
+      "combatIdentity": "resource engine specialist",
+      "uniqueMechanic": "Varkul's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Reaver"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "resource pressure, Divinity/Momentum economy, long missions",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Infernal Dominion gear modifies Battery Blood Contract decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings resource pressure, Divinity/Momentum economy, long missions through Varkul's Blood Contract without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Varkul — Black-Iron Clause Cut Kindle",
+        "Blood-Wax Contract Technique — Reservoir",
+        "Varkul: Infernal Debt Verdict Overchannel",
+        "Divine Ascension — Hell-Crown Dominion Unbound"
+      ],
+      "sourceCultureGear": [
+        "Varkul Generator Goetic Chain-Crown Blade",
+        "Varkul Volcanic Glass Debtor Plate",
+        "Varkul Blood-Wax Infernal Ledger Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-057",
+      "name": "Nyxara",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Epic",
+      "previousRole": "Controller",
+      "combatIdentity": "terrain and movement manipulator",
+      "uniqueMechanic": "Nyxara's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Controller",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Controller",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "fast enemies, terrain-heavy battles, caster denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Infernal Dominion gear modifies Controller Blood Contract decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings fast enemies, terrain-heavy battles, caster denial through Nyxara's Blood Contract without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Nyxara — Black-Iron Clause Cut Vector",
+        "Blood-Wax Contract Technique — Field Rewrite",
+        "Nyxara: Infernal Debt Verdict Dominion Grid",
+        "Divine Ascension — Hell-Crown Dominion Unbound"
+      ],
+      "sourceCultureGear": [
+        "Nyxara Compass Goetic Chain-Crown Blade",
+        "Nyxara Volcanic Glass Debtor Plate",
+        "Nyxara Blood-Wax Infernal Ledger Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-058",
+      "name": "Azrakar",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Rare",
+      "previousRole": "Breaker",
+      "combatIdentity": "armor and structure destroyer",
+      "uniqueMechanic": "Azrakar's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Deity exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Destroyer",
+        "Duelist"
+      ],
+      "strengths": [
+        "Destroyer",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "heavily armored enemies, shield windows, boss armor phases",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Infernal Dominion gear modifies Breaker Blood Contract decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings heavily armored enemies, shield windows, boss armor phases through Azrakar's Blood Contract without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Azrakar — Black-Iron Clause Cut Rend",
+        "Blood-Wax Contract Technique — Rupture",
+        "Azrakar: Infernal Debt Verdict Sundering Trial",
+        "Divine Ascension — Hell-Crown Dominion Unbound"
+      ],
+      "sourceCultureGear": [
+        "Azrakar Sunderer Goetic Chain-Crown Blade",
+        "Azrakar Volcanic Glass Debtor Plate",
+        "Azrakar Blood-Wax Infernal Ledger Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-059",
+      "name": "Orryx",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Epic",
+      "previousRole": "Disruptor",
+      "combatIdentity": "enemy plan breaker",
+      "uniqueMechanic": "Orryx's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and disruptor decisions that place a false timing window that punishes enemy overcommitment. Payoff: break enemy cadence and steal tempo during reaction prompts. Counterplay: patient enemies, cleanses, and baited reactions waste the setup; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Trickster",
+        "Reaver"
+      ],
+      "strengths": [
+        "Trickster",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Infernal Dominion gear modifies Disruptor Blood Contract decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings enemy casters, elite mechanics, Momentum/Divinity denial through Orryx's Blood Contract without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Orryx — Black-Iron Clause Cut Sever",
+        "Blood-Wax Contract Technique — Interdiction",
+        "Orryx: Infernal Debt Verdict Null Mandate",
+        "Divine Ascension — Hell-Crown Dominion Unbound"
+      ],
+      "sourceCultureGear": [
+        "Orryx Interdictor Goetic Chain-Crown Blade",
+        "Orryx Volcanic Glass Debtor Plate",
+        "Orryx Blood-Wax Infernal Ledger Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-060",
+      "name": "Malvera",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Rare",
+      "previousRole": "Sustain",
+      "combatIdentity": "self-recovery endurance specialist",
+      "uniqueMechanic": "Malvera's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "attrition, survival, poison/burn fields",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Infernal Dominion gear modifies Sustain Blood Contract decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings attrition, survival, poison/burn fields through Malvera's Blood Contract without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Malvera — Black-Iron Clause Cut Restore",
+        "Blood-Wax Contract Technique — Covenant",
+        "Malvera: Infernal Debt Verdict Renewal Rite",
+        "Divine Ascension — Hell-Crown Dominion Unbound"
+      ],
+      "sourceCultureGear": [
+        "Malvera Restorer Goetic Chain-Crown Blade",
+        "Malvera Volcanic Glass Debtor Plate",
+        "Malvera Blood-Wax Infernal Ledger Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-061",
+      "name": "Kharon",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Epic",
+      "previousRole": "Artillery",
+      "combatIdentity": "wide-area pressure specialist",
+      "uniqueMechanic": "Kharon's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and artillery decisions that charge a sightline, lane, or ritual angle before releasing long-range pressure. Payoff: reward positioning with map-wide objective pressure. Counterplay: engagement, cover shifts, and forced movement shut down the line; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Arcanist",
+        "Destroyer"
+      ],
+      "strengths": [
+        "Arcanist",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "large enemy groups, ranged pressure, objective zones",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Infernal Dominion gear modifies Artillery Blood Contract decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings large enemy groups, ranged pressure, objective zones through Kharon's Blood Contract without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Kharon — Black-Iron Clause Cut Longshot",
+        "Blood-Wax Contract Technique — Horizon Lock",
+        "Kharon: Infernal Debt Verdict Cataclysm Line",
+        "Divine Ascension — Hell-Crown Dominion Unbound"
+      ],
+      "sourceCultureGear": [
+        "Kharon Far-Sight Goetic Chain-Crown Blade",
+        "Kharon Volcanic Glass Debtor Plate",
+        "Kharon Blood-Wax Infernal Ledger Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-062",
+      "name": "Sablex",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Rare",
+      "previousRole": "Guardian",
+      "combatIdentity": "reaction defense specialist",
+      "uniqueMechanic": "Sablex's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and guardian decisions that intercept a declared threat and store the impact as later utility. Payoff: protect mission objects or civilians while still acting solo. Counterplay: multi-timing attacks and feints pull the guard out of position; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Warden",
+        "Reaver"
+      ],
+      "strengths": [
+        "Warden",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "boss duels, counterattack, protection under pressure",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Infernal Dominion gear modifies Guardian Blood Contract decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings boss duels, counterattack, protection under pressure through Sablex's Blood Contract without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Sablex — Black-Iron Clause Cut Intercept",
+        "Blood-Wax Contract Technique — Punishing Guard",
+        "Sablex: Infernal Debt Verdict Oath of Intercept",
+        "Divine Ascension — Hell-Crown Dominion Unbound"
+      ],
+      "sourceCultureGear": [
+        "Sablex Sentinel Goetic Chain-Crown Blade",
+        "Sablex Volcanic Glass Debtor Plate",
+        "Sablex Blood-Wax Infernal Ledger Core"
+      ]
+    },
+    {
+      "id": "MG-DEITY-063",
+      "name": "Zerath",
+      "faction": "Infernal Dominion",
+      "factionId": "TG-FACTION-007",
+      "rarity": "Legendary",
+      "previousRole": "Assassin",
+      "combatIdentity": "mobility execution specialist",
+      "uniqueMechanic": "Zerath's Blood Contract: a solo mechanic where Debtfire grows through contract-scorched court ground, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+      "soloArchetypes": [
+        "Assassin",
+        "Arcanist"
+      ],
+      "strengths": [
+        "Assassin",
+        "solo sustain",
+        "chains, fire, and cursed ground",
+        "objective pressure"
+      ],
+      "weaknesses": [
+        "poor play can starve Momentum",
+        "resource denial enemies",
+        "bad terrain matchups",
+        "mistimed reactions"
+      ],
+      "preferredBattlefield": "execution-based encounters, priority targets, mobility assassinations",
+      "counterplay": [
+        "deny favored terrain",
+        "force reaction bait",
+        "drain Momentum or Divinity",
+        "attack from multiple timings instead of one burst"
+      ],
+      "gearIdentity": "Deity-specific Infernal Dominion gear modifies Assassin Blood Contract decisions rather than sharing generic stat sticks.",
+      "progressionIdentity": {
+        "levelProgression": [],
+        "talentTree": {},
+        "mastery": [],
+        "personalQuest": {},
+        "visualEvolution": []
+      },
+      "collectionReason": "Brings execution-based encounters, priority targets, mobility assassinations through Zerath's Blood Contract without making the player's main Deity obsolete.",
+      "notMandatoryRule": "Recommended for certain problems, never required as an entry lock.",
+      "sourceCultureAbilities": [
+        "Zerath — Black-Iron Clause Cut Execution",
+        "Blood-Wax Contract Technique — Shadow Pursuit",
+        "Zerath: Infernal Debt Verdict Final Name Cut",
+        "Divine Ascension — Hell-Crown Dominion Unbound"
+      ],
+      "sourceCultureGear": [
+        "Zerath Name-Knife Goetic Chain-Crown Blade",
+        "Zerath Volcanic Glass Debtor Plate",
+        "Zerath Blood-Wax Infernal Ledger Core"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration):data/deity-role-matrix.json
+      ]
+    }
+  ]
+}

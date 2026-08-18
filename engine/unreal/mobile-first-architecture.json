@@ -14,7 +14,7 @@
   "identityPreservation": [
     "preserve Mythos Gates: Ascension lore",
     "preserve factions",
-    "preserve Titans",
+    "preserve Deities",
     "preserve mythology",
     "preserve progression",
     "preserve combat systems",
@@ -37,7 +37,7 @@
     "Do not turn zones into generic corridor dungeons.",
     "Do not create unnecessary seamless open world traversal.",
     "Do not generate whole campaigns at once.",
-    "Do not rewrite established lore, factions, Titans, progression, or combat.",
+    "Do not rewrite established lore, factions, Deities, progression, or combat.",
     "Do not create squad combat, team formations, ally positioning, or team turns.",
     "Do not add difficulty by inflating health pools instead of tactical pressure."
   ],
@@ -47,7 +47,7 @@
     "highEndTargetFps": 60,
     "maxActiveCombatEnemiesStandard": 6,
     "maxActiveCombatEnemiesBoss": 4,
-    "maxVisibleTitanScaleLandmarks": 5,
+    "maxVisibleDeityScaleLandmarks": 5,
     "maxSimultaneousNiagaraSystemsStandard": 6,
     "maxSimultaneousNiagaraSystemsBoss": 8,
     "maxUniqueMaterialsPerZone": 32,
@@ -100,7 +100,7 @@
       ]
     }
   ],
-  "titanOptimization": {
+  "deityOptimization": {
     "rules": [
       "proper LOD chains",
       "efficient skeletal meshes",
@@ -110,7 +110,7 @@
       "culling when appropriate",
       "efficient collision"
     ],
-    "mandate": "Titans must look enormous through scene composition, not computational waste."
+    "mandate": "Deities must look enormous through scene composition, not computational waste."
   },
   "cameraAndControls": {
     "exploration": [
@@ -123,7 +123,11 @@
       "zoom",
       "rotation",
       "clear battlefield visibility",
+<<<<<<< HEAD
       "cinematic moments only for major Divine Abilities"
+=======
+      "cinematic moments only for major Deity abilities"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ],
     "rule": "Never sacrifice tactical readability for visual effects."
   },
@@ -170,7 +174,7 @@
       "bossOrEliteArena": "if appropriate, optional when source canon has no boss"
     },
     "approvalTests": [
-      "Titan scale",
+      "Deity scale",
       "Exploration",
       "Combat",
       "Camera",
@@ -202,7 +206,7 @@
   "combatRule": {
     "contract": "data/one-deity-vs-many-combat.json",
     "primaryRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
-    "fantasy": "one legendary Titan against coordinated enemy groups",
+    "fantasy": "one legendary Deity against coordinated enemy groups",
     "forbidSquads": true
   }
 }

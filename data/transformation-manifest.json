@@ -1,0 +1,259 @@
+{
+  "id": "TG-TRANSFORMATION-001",
+  "version": "2.0.0",
+  "date": "2026-08-18",
+  "transformation": "Mythos Gates: Ascension -> Mythos Gates: Ascension",
+  "formerTitle": "Mythos Gates: Ascension",
+  "newTitle": "Mythos Gates: Ascension",
+  "formerRosterSize": 63,
+  "newRosterSize": 28,
+  "combatModel": "one-deity-vs-many",
+  "gameType": "Mythic realm-hopping action RPG",
+  "tone": "Epic, sacred, dangerous, cinematic",
+  "changes": [
+    "Title changed from Mythos Gates: Ascension to Mythos Gates: Ascension",
+    "Roster reduced from 28 deities to 28 deities (4 per faction)",
+    "Deity language reframed as Deity, Champion, Ascendant, Divine Avatar",
+    "Combat model: one active deity vs many enemies",
+    "Campaign structure: realm-based progression across multiple mythological realms",
+    "The Hollow remains as central threat",
+    "Player journey framed as ascension",
+    "28 playable deities from 7 mythic traditions",
+    "Mobile-first clarity with cinematic UE5 ambition"
+  ],
+  "selectedDeities": [
+    {
+      "id": "MG-DEITY-001",
+      "name": "Aten Ra",
+      "faction": "Aten Ra",
+      "role": "Defender",
+      "mythicSource": "Ra/Re + Aten + Ma’at"
+    },
+    {
+      "id": "MG-DEITY-002",
+      "name": "Khemet",
+      "faction": "Aten Ra",
+      "role": "Battery",
+      "mythicSource": "Khepri + Black Land fertility + solar renewal"
+    },
+    {
+      "id": "MG-DEITY-003",
+      "name": "Nefra",
+      "faction": "Aten Ra",
+      "role": "Controller",
+      "mythicSource": "Necropolis dawn + Duat horizon + obsidian judgement"
+    },
+    {
+      "id": "MG-DEITY-004",
+      "name": "Orru",
+      "faction": "Aten Ra",
+      "role": "Breaker",
+      "mythicSource": "Ma’at weighing + prism light + divine verdict"
+    },
+    {
+      "id": "MG-DEITY-010",
+      "name": "Allfather",
+      "faction": "Asgardian",
+      "role": "Defender",
+      "mythicSource": "Asgardian defender office: sovereign protector, gate-holder, law shield; Thor: t"
+    },
+    {
+      "id": "MG-DEITY-011",
+      "name": "Hrothar",
+      "faction": "Asgardian",
+      "role": "Battery",
+      "mythicSource": "Asgardian battery office: renewal engine, resource hearth, stored sacred force; "
+    },
+    {
+      "id": "MG-DEITY-012",
+      "name": "Skeld",
+      "faction": "Asgardian",
+      "role": "Controller",
+      "mythicSource": "Asgardian controller office: terrain law, threshold command, battlefield geometr"
+    },
+    {
+      "id": "MG-DEITY-013",
+      "name": "Eirwyn",
+      "faction": "Asgardian",
+      "role": "Breaker",
+      "mythicSource": "Asgardian breaker office: judgement rupture, armor sundering, trial by force; Va"
+    },
+    {
+      "id": "MG-DEITY-019",
+      "name": "Aurelion",
+      "faction": "Olympian",
+      "role": "Defender",
+      "mythicSource": "Olympian defender office: sovereign protector, gate-holder, law shield; Zeus: sk"
+    },
+    {
+      "id": "MG-DEITY-020",
+      "name": "Kallix",
+      "faction": "Olympian",
+      "role": "Battery",
+      "mythicSource": "Olympian battery office: renewal engine, resource hearth, stored sacred force; A"
+    },
+    {
+      "id": "MG-DEITY-021",
+      "name": "Thyressa",
+      "faction": "Olympian",
+      "role": "Controller",
+      "mythicSource": "Olympian controller office: terrain law, threshold command, battlefield geometry"
+    },
+    {
+      "id": "MG-DEITY-022",
+      "name": "Ilyon",
+      "faction": "Olympian",
+      "role": "Breaker",
+      "mythicSource": "Olympian breaker office: judgement rupture, armor sundering, trial by force; Art"
+    },
+    {
+      "id": "MG-DEITY-028",
+      "name": "Amaterion",
+      "faction": "Kami",
+      "role": "Defender",
+      "mythicSource": "Kami defender office: sovereign protector, gate-holder, law shield; Kami: spirit"
+    },
+    {
+      "id": "MG-DEITY-029",
+      "name": "Tsukiro",
+      "faction": "Kami",
+      "role": "Battery",
+      "mythicSource": "Kami battery office: renewal engine, resource hearth, stored sacred force; Shint"
+    },
+    {
+      "id": "MG-DEITY-030",
+      "name": "Raidenko",
+      "faction": "Kami",
+      "role": "Controller",
+      "mythicSource": "Kami controller office: terrain law, threshold command, battlefield geometry; Ki"
+    },
+    {
+      "id": "MG-DEITY-031",
+      "name": "Mizuka",
+      "faction": "Kami",
+      "role": "Breaker",
+      "mythicSource": "Kami breaker office: judgement rupture, armor sundering, trial by force; Tengu: "
+    },
+    {
+      "id": "MG-DEITY-037",
+      "name": "Dagoran",
+      "faction": "Tuatha",
+      "role": "Defender",
+      "mythicSource": "Tuatha defender office: sovereign protector, gate-holder, law shield; Tuatha Dé "
+    },
+    {
+      "id": "MG-DEITY-038",
+      "name": "Eryndor",
+      "faction": "Tuatha",
+      "role": "Battery",
+      "mythicSource": "Tuatha battery office: renewal engine, resource hearth, stored sacred force; Aos"
+    },
+    {
+      "id": "MG-DEITY-039",
+      "name": "Melian",
+      "faction": "Tuatha",
+      "role": "Controller",
+      "mythicSource": "Tuatha controller office: terrain law, threshold command, battlefield geometry; "
+    },
+    {
+      "id": "MG-DEITY-040",
+      "name": "Bran",
+      "faction": "Tuatha",
+      "role": "Breaker",
+      "mythicSource": "Tuatha breaker office: judgement rupture, armor sundering, trial by force; Morrí"
+    },
+    {
+      "id": "MG-DEITY-046",
+      "name": "Seraphel",
+      "faction": "Empyrean",
+      "role": "Defender",
+      "mythicSource": "Empyrean defender office: sovereign protector, gate-holder, law shield; Dominion"
+    },
+    {
+      "id": "MG-DEITY-047",
+      "name": "Caelion",
+      "faction": "Empyrean",
+      "role": "Battery",
+      "mythicSource": "Empyrean battery office: renewal engine, resource hearth, stored sacred force; H"
+    },
+    {
+      "id": "MG-DEITY-048",
+      "name": "Aurelia",
+      "faction": "Empyrean",
+      "role": "Controller",
+      "mythicSource": "Empyrean controller office: terrain law, threshold command, battlefield geometry"
+    },
+    {
+      "id": "MG-DEITY-049",
+      "name": "Malachor",
+      "faction": "Empyrean",
+      "role": "Breaker",
+      "mythicSource": "Empyrean breaker office: judgement rupture, armor sundering, trial by force; Ser"
+    },
+    {
+      "id": "MG-DEITY-055",
+      "name": "Mordrath",
+      "faction": "Infernal Dominion",
+      "role": "Defender",
+      "mythicSource": "Infernal Dominion defender office: sovereign protector, gate-holder, law shield;"
+    },
+    {
+      "id": "MG-DEITY-056",
+      "name": "Varkul",
+      "faction": "Infernal Dominion",
+      "role": "Battery",
+      "mythicSource": "Infernal Dominion battery office: renewal engine, resource hearth, stored sacred"
+    },
+    {
+      "id": "MG-DEITY-057",
+      "name": "Nyxara",
+      "faction": "Infernal Dominion",
+      "role": "Controller",
+      "mythicSource": "Infernal Dominion controller office: terrain law, threshold command, battlefield"
+    },
+    {
+      "id": "MG-DEITY-058",
+      "name": "Azrakar",
+      "faction": "Infernal Dominion",
+      "role": "Breaker",
+      "mythicSource": "Infernal Dominion breaker office: judgement rupture, armor sundering, trial by f"
+    }
+  ],
+  "droppedEntities": [
+    "MG-DEITY-005",
+    "MG-DEITY-006",
+    "MG-DEITY-007",
+    "MG-DEITY-008",
+    "MG-DEITY-009",
+    "MG-DEITY-014",
+    "MG-DEITY-015",
+    "MG-DEITY-016",
+    "MG-DEITY-017",
+    "MG-DEITY-018",
+    "MG-DEITY-023",
+    "MG-DEITY-024",
+    "MG-DEITY-025",
+    "MG-DEITY-026",
+    "MG-DEITY-027",
+    "MG-DEITY-032",
+    "MG-DEITY-033",
+    "MG-DEITY-034",
+    "MG-DEITY-035",
+    "MG-DEITY-036",
+    "MG-DEITY-041",
+    "MG-DEITY-042",
+    "MG-DEITY-043",
+    "MG-DEITY-044",
+    "MG-DEITY-045",
+    "MG-DEITY-050",
+    "MG-DEITY-051",
+    "MG-DEITY-052",
+    "MG-DEITY-053",
+    "MG-DEITY-054",
+    "MG-DEITY-059",
+    "MG-DEITY-060",
+    "MG-DEITY-061",
+    "MG-DEITY-062",
+    "MG-DEITY-063"
+  ]
+}

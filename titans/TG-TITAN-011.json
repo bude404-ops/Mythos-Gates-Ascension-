@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "id": "TG-TITAN-011",
   "slug": "freyja",
   "name": "Freyja",
+=======
+  "id": "MG-DEITY-011",
+  "slug": "hrothar-rune-mountain",
+  "name": "Hrothar Rune-Mountain",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "factionId": "TG-FACTION-002",
   "faction": "Asgardian",
   "rarity": "Mythic God",
@@ -34,10 +40,17 @@
   "passives": [
     "Rune Oath: Hrothar gains Oathfire when battery play stores excess resource and refunds Momentum after precise setup on storm-carved oathground. At 3 stacks, the next Technique or Reaction adds a rune-bound fate rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of World-Tree war halls."
   ],
+<<<<<<< HEAD
   "lore": "Freyja, Vanir Valkyrie Queen, is now canonized as one of the four playable deities of Asgardian. The deity is the source-realm divinity behind the mythology rather than a generic champion: Vanir goddess of battle-fate, beauty, seiðr, desire, and chosen slain. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses Vanir goddess of battle-fate, beauty, seiðr, desire, and chosen slain; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
   "visualDescription": "Freyja manifests as Vanir goddess of battle-fate, beauty, seiðr, desire, and chosen slain from Asgardian: radiant beautiful feminine Norse queen face, bright fierce eyes, full lips, high cheekbones, battle-fate confidence; powerful feminine valkyrie physique, narrow waist, strong hips and thighs, lifted commanding posture; signature silhouette: falcon feather cloak, jewel collar, long braided hair, wing-like cloak arcs. Weapon: brísingamen seiðr chain and falcon-feather blade. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
   "artStatus": "READY_FOR_GENERATION",
+=======
+  "lore": "Hrothar Rune-Mountain is a colossal Asgardian battery from The Storm-Rooted Aesir Holds. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Asgardian battery office: renewal engine, resource hearth, stored sacred force; Freyja/Valkyries: choosing the slain, battle fate, swan/raven/boar omens.",
+  "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+  "visualDescription": "Full-body living myth-source Deity, not a costume: Hrothar Rune-Mountain shows storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.. Role silhouette must read as Battery. Materials include dark rune iron, storm steel, ash wood, wolf fur, raven feather shadow, oath red wax, bone white. The design must feel older than human mythology and avoid cartoon Viking, generic horned helmet cosplay, clean chrome, sci-fi power armor, glowing UI runes, blocky hammer mech.",
+  "artStatus": "Prompt Ready",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "artPromptId": "TG-PROMPT-011",
   "artworkId": null,
   "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
@@ -57,7 +70,7 @@
       ],
       "effect": "Deal Asgardian source-culture damage at range 3; generate Momentum and a small Oathstorm gain when used from rune-storm ground or against the marked target. The hit reads visually as rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars.",
       "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
       "name": "Rune-Thunder Technique — Reservoir",
@@ -89,7 +102,7 @@
       ],
       "effect": "Spend stored Oathstorm to impose a two-round rule from Storm-Rooted Aesir Holds: stores faction resource, refunds Momentum on smart setup, and converts terrain mastery into burst economy. Enemies receive a readable counter-window before the strongest effect lands.",
       "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
       "name": "Divine Ascension — Ragnarok Storm Unbound",
@@ -122,7 +135,7 @@
       "slot": "Armor Body",
       "rarityFloor": "Epic",
       "primaryStat": "resistance",
-      "effect": "Improves survivability and makes the Titan read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "effect": "Improves survivability and makes the Deity read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
       "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
@@ -155,7 +168,11 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
+<<<<<<< HEAD
     "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+=======
+    "intendedDifficulty": "Tuned for harder solo encounters: every Deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "primaryRole": "generate Momentum and Divinity under pressure",
     "budgetTarget": 109,
     "computedCombatPower": 228,

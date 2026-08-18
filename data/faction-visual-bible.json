@@ -8,13 +8,17 @@
   "sourceInputs": [
     "data/factions.json",
     "data/realm-codex.json",
-    "data/titans.json",
+    "data/deitys.json",
     "data/character-backstories.json",
     "data/art-prompts.json"
   ],
   "globalRules": [
     "Faction identity must be visible through materials, silhouette, symbols, texture, and posture before any generic fantasy trope.",
+<<<<<<< HEAD
     "deities are living extradimensional beings, not buildings, robots, statues, block stacks, or abstract architecture piles.",
+=======
+    "Deities are living extradimensional beings, not buildings, robots, statues, block stacks, or abstract architecture piles.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "NPCs are non-playable lore characters whose costume must show role, faction duty, and personal history.",
     "Creatures can be monstrous but must stay rooted in faction or Hollow logic rather than generic alien design.",
     "Architecture can influence clothing, regalia, auras, weapons, and environment — never replace living anatomy for character assets.",
@@ -26,7 +30,11 @@
       "factionId": "TG-FACTION-001",
       "faction": "Aten Ra",
       "realm": "The Solar Dominion of Khepra",
+<<<<<<< HEAD
       "visualThesis": "Aten Ra is the source behind human Egyptian solar myth: living Ma’at, Ra’s noon authority, Aten’s sun-disc radiance, Khepri’s renewal, Iset’s throne-magic, Sutekh’s necessary desert violence, Maahes’ lion protection, and Amunet’s hidden power. Designs must feel like ancient humans copied these beings later — not like Titans copied Egypt.",
+=======
+      "visualThesis": "Aten Ra is the source behind human Egyptian solar myth: living Ma\u2019at, Ra\u2019s noon authority, Aten\u2019s sun-disc radiance, Khepri\u2019s renewal, Iset\u2019s throne-magic, Sutekh\u2019s necessary desert violence, Maahes\u2019 lion protection, and Amunet\u2019s hidden power. Designs must feel like ancient humans copied these beings later \u2014 not like Deities copied Egypt.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "bodyAnatomyRules": [
         "Bodies use strong readable anatomy with elongated divine proportions, royal stillness, ceremonial hand language, and gravity like the noon sun holding the world in place.",
         "Skin, energy, linen wrap, collar, crown, and pectoral can fuse into one living office of divine law, but head, torso, limbs, gesture, expression, and faction role must stay legible.",
@@ -39,7 +47,11 @@
         "nemes-like energy mantle or linen head/shoulder flow for ruler silhouettes",
         "pylon harnesses and temple-gate shoulder frames that wrap the body instead of replacing it",
         "scarab carapace plates for renewal/battery forms",
+<<<<<<< HEAD
         "was-sceptre, crook, flail, khopesh, or weighing-scale weapon silhouettes abstracted into Divine Gear",
+=======
+        "was-sceptre, crook, flail, khopesh, or weighing-scale weapon silhouettes abstracted into Deity gear",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "cobra uraeus brow crests, falcon eye visors, jackal threshold masks, lion mane armor, or lotus/papyrus river crests when lore-appropriate",
         "Ma’at feather balance lines across armor seams, never readable text"
       ],
@@ -54,7 +66,11 @@
         "linen fibers stiffened into divine armor folds, sun-bleached at the edges",
         "carved relief bands showing abstract stars, river ripples, feathers, barque arcs, and balance geometry without readable text",
         "heat shimmer, desert abrasion, Nile polish, and incense smoke staining around sacred seams",
+<<<<<<< HEAD
         "scarab-shell iridescence or lion-fur shadow only when the deity’s myth anchor calls for it"
+=======
+        "scarab-shell iridescence or lion-fur shadow only when the Deity\u2019s myth anchor calls for it"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "colorPalette": [
         "white-gold noon light",
@@ -82,12 +98,21 @@
       ],
       "armorConstructionRules": [
         "Armor is divine office made physical: crown, collar, pectoral, linen, scale, pylon harness, and sacred weapon geometry bonded to living extradimensional anatomy.",
+<<<<<<< HEAD
         "Human Egyptian crowns, ankhs, pylons, collars, and temple forms are in-world human copies of these Aten Ra originals; the deity version should feel older, stranger, and more functional.",
         "Pylons, obelisks, shrines, and solar courts can influence silhouettes as shoulder frames, auras, gates, collars, shields, or weapons — never as building torsos or city-on-body decoration.",
         "Every armor choice must reveal myth function: Ma’at law, Ra kingship, Aten radiance, Khepri renewal, Sutekh storm-disruption, Iset restoration, Maahes guarding, or Amunet concealment."
       ],
       "titanRules": [
         "Titans read as colossal offices of cosmic law: Ra’s sovereign noon, Aten’s direct radiance, Khepri’s rebirth engine, Ma’at’s balance, Sutekh’s dangerous defense, Iset’s restoration, Maahes’ lion guard, or Amunet’s hidden execution.",
+=======
+        "Human Egyptian crowns, ankhs, pylons, collars, and temple forms are in-world human copies of these Aten Ra originals; the Deity version should feel older, stranger, and more functional.",
+        "Pylons, obelisks, shrines, and solar courts can influence silhouettes as shoulder frames, halos, gates, collars, shields, or weapons \u2014 never as building torsos or city-on-body decoration.",
+        "Every armor choice must reveal myth function: Ma\u2019at law, Ra kingship, Aten radiance, Khepri renewal, Sutekh storm-disruption, Iset restoration, Maahes guarding, or Amunet concealment."
+      ],
+      "deityRules": [
+        "Deities read as colossal offices of cosmic law: Ra\u2019s sovereign noon, Aten\u2019s direct radiance, Khepri\u2019s rebirth engine, Ma\u2019at\u2019s balance, Sutekh\u2019s dangerous defense, Iset\u2019s restoration, Maahes\u2019 lion guard, or Amunet\u2019s hidden execution.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "Silhouettes should use divine regalia more than generic plate: collars, crowns, nemes-flow, pectorals, scarabs, scale forms, barque arcs, threshold masks, and pylon harnesses.",
         "No city-on-body, no temple-on-legs, no block pyramids, no robot sarcophagus chassis, no tourist-costume pharaoh helmet.",
         "Each deity should imply which human deity or symbol humans later remembered incorrectly."
@@ -130,7 +155,7 @@
       "status": "IMPLEMENTED",
       "updated": "2026-08-16",
       "appliesTo": [
-        "Titans",
+        "Deities",
         "NPCs",
         "Creatures",
         "Battlefields",
@@ -207,8 +232,13 @@
         "Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or auras, but characters must not become buildings.",
         "Role clarity beats ornament."
       ],
+<<<<<<< HEAD
       "titanRules": [
         "Titans read as colossal myth offices of The Storm-Rooted Aesir Holds, with anatomy and armor fused by function.",
+=======
+      "deityRules": [
+        "Deities read as colossal myth offices of The Storm-Rooted Aesir Holds, with anatomy and armor fused by function.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "Each deity should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.",
         "Avoid robot, mech, statue, mascot, and costume readings.",
         "Preserve mobile-readable role silhouette."
@@ -247,7 +277,7 @@
       "status": "IMPLEMENTED",
       "updated": "2026-08-16",
       "appliesTo": [
-        "Titans",
+        "Deities",
         "NPCs",
         "Creatures",
         "Battlefields",
@@ -325,8 +355,13 @@
         "Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or auras, but characters must not become buildings.",
         "Role clarity beats ornament."
       ],
+<<<<<<< HEAD
       "titanRules": [
         "Titans read as colossal myth offices of The Celestial Heights of Olympus, with anatomy and armor fused by function.",
+=======
+      "deityRules": [
+        "Deities read as colossal myth offices of The Celestial Heights of Olympus, with anatomy and armor fused by function.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "Each deity should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.",
         "Avoid robot, mech, statue, mascot, and costume readings.",
         "Preserve mobile-readable role silhouette."
@@ -365,7 +400,7 @@
       "status": "IMPLEMENTED",
       "updated": "2026-08-16",
       "appliesTo": [
-        "Titans",
+        "Deities",
         "NPCs",
         "Creatures",
         "Battlefields",
@@ -445,8 +480,13 @@
         "Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or auras, but characters must not become buildings.",
         "Role clarity beats ornament."
       ],
+<<<<<<< HEAD
       "titanRules": [
         "Titans read as colossal myth offices of The Sacred Kingdoms, with anatomy and armor fused by function.",
+=======
+      "deityRules": [
+        "Deities read as colossal myth offices of The Sacred Kingdoms, with anatomy and armor fused by function.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "Each deity should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.",
         "Avoid robot, mech, statue, mascot, and costume readings.",
         "Preserve mobile-readable role silhouette."
@@ -485,7 +525,7 @@
       "status": "IMPLEMENTED",
       "updated": "2026-08-16",
       "appliesTo": [
-        "Titans",
+        "Deities",
         "NPCs",
         "Creatures",
         "Battlefields",
@@ -565,8 +605,13 @@
         "Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or auras, but characters must not become buildings.",
         "Role clarity beats ornament."
       ],
+<<<<<<< HEAD
       "titanRules": [
         "Titans read as colossal myth offices of Avalora, with anatomy and armor fused by function.",
+=======
+      "deityRules": [
+        "Deities read as colossal myth offices of Avalora, with anatomy and armor fused by function.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "Each deity should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.",
         "Avoid robot, mech, statue, mascot, and costume readings.",
         "Preserve mobile-readable role silhouette."
@@ -605,7 +650,7 @@
       "status": "IMPLEMENTED",
       "updated": "2026-08-16",
       "appliesTo": [
-        "Titans",
+        "Deities",
         "NPCs",
         "Creatures",
         "Battlefields",
@@ -683,8 +728,13 @@
         "Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or auras, but characters must not become buildings.",
         "Role clarity beats ornament."
       ],
+<<<<<<< HEAD
       "titanRules": [
         "Titans read as colossal myth offices of The Radiant Hierarchies, with anatomy and armor fused by function.",
+=======
+      "deityRules": [
+        "Deities read as colossal myth offices of The Radiant Hierarchies, with anatomy and armor fused by function.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "Each deity should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.",
         "Avoid robot, mech, statue, mascot, and costume readings.",
         "Preserve mobile-readable role silhouette."
@@ -723,7 +773,7 @@
       "status": "IMPLEMENTED",
       "updated": "2026-08-16",
       "appliesTo": [
-        "Titans",
+        "Deities",
         "NPCs",
         "Creatures",
         "Battlefields",
@@ -801,8 +851,13 @@
         "Architecture may influence crowns, collars, shields, wings, gates, mantles, weapons, or auras, but characters must not become buildings.",
         "Role clarity beats ornament."
       ],
+<<<<<<< HEAD
       "titanRules": [
         "Titans read as colossal myth offices of The Infernal Dominion, with anatomy and armor fused by function.",
+=======
+      "deityRules": [
+        "Deities read as colossal myth offices of The Infernal Dominion, with anatomy and armor fused by function.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "Each deity should imply which human deity, spirit, monster, rite, or symbol humans later remembered incorrectly.",
         "Avoid robot, mech, statue, mascot, and costume readings.",
         "Preserve mobile-readable role silhouette."
@@ -841,7 +896,7 @@
       "status": "IMPLEMENTED",
       "updated": "2026-08-16",
       "appliesTo": [
-        "Titans",
+        "Deities",
         "NPCs",
         "Creatures",
         "Battlefields",
@@ -874,7 +929,7 @@
       "colorPalette",
       "sacredSymbols",
       "armorConstructionRules",
-      "titanRules",
+      "deityRules",
       "npcRules",
       "creatureRules",
       "environmentRules",

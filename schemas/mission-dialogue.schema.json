@@ -1,6 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+<<<<<<< HEAD
   "$id": "https://titan-gates.local/schemas/titan-gates-mission-dialogue-record.schema.json",
+=======
+  "$id": "https://mythos-gates.local/schemas/mythos-gates-mission-dialogue-record.schema.json",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "title": "Mythos Gates Mission Dialogue Record",
   "type": "object",
   "required": [
@@ -46,7 +50,7 @@
     "lines": {
       "type": "object"
     },
-    "soloTitanPolicy": {
+    "soloDeityPolicy": {
       "type": "string",
       "minLength": 1
     }

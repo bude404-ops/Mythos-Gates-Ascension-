@@ -11,19 +11,33 @@
   "description": "Restore the Noon Court Boss Dais: Boss Chamber is a rebuilt Mythos Gates mission beat for Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma’at strain). One selected deity from Aten Ra, Sutekh, Iset, Amunet enters; this beat spotlights Iset as the reference silhouette while preserving player choice. The mission is the boss step at Noon Court Boss Dais, using sacred judgment temple-road descent pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Solar Dominion of Khepra is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light..",
   "lore": "Ascension canon route rewrite: Sun-Scale Verdict Descent is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Noon Court Boss Dais and reveals: Why the Sun-Scale Gate judges travelers before admitting them. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 765,
+<<<<<<< HEAD
   "encouragedDeityRoles": [
     "solar judgment anchor",
     "survivable objective holder",
     "burst or control specialist"
+=======
+  "activeDeityCount": 1,
+  "encouragedDeityRoles": [
+    "support guardian",
+    "mobile striker",
+    "objective holder"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ],
   "mapId": "TG-MAP-007",
   "terrain": "Noon Court Boss Dais configured as a boss space inside sacred judgment temple-road descent; source-culture appearance layer: sun-scale courts, pylon shadow lanes, river-light channels, Khepri dawn engines, Ma’at seal platforms, desert storm edges; cosmetic/relic silhouettes: Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes",
   "objectives": {
     "primary": "With one selected deity, defeat the boss encounter against The Misweighed Dawn Judge inside the Noon Court Boss Dais and complete the Ascension route without breaking canon.",
     "optional": [
+<<<<<<< HEAD
       "Clear the Noon Court Boss Dais before the route pressure reaches its final warning",
       "Exploit or avoid the route rule: Sutekh red storms that disrupt both allies and Hollow invaders",
       "Resolve at least two solar judgment, Ma’at balance, river-light positioning, verdict pressure decisions before victory"
+=======
+      "Complete before turn 10",
+      "Keep all one active deity standing",
+      "Trigger at least two faction synergy actions"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ]
   },
   "enemyWaves": [
@@ -52,15 +66,25 @@
   },
   "turnLimit": 16,
   "specialRules": [
+<<<<<<< HEAD
     "Route Law — Sun-Scale Verdict Descent: Stable Gate under Ma’at strain changes how movement, hazards, and enemy pressure are read.",
     "Room Rule — Noon Court Boss Dais: play this beat as a boss node, not a generic arena.",
     "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
+=======
+    "Eclipse Phase: the boss changes terrain rules at health or objective thresholds.",
+    "Watching Gate: delay increases defeat pressure and locks some recovery tiles.",
+    "one active standard Deity"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ],
   "victoryConditions": [
     "With one selected deity, defeat the boss encounter against The Misweighed Dawn Judge inside the Noon Court Boss Dais and complete the Ascension route without breaking canon."
   ],
   "defeatConditions": [
+<<<<<<< HEAD
     "Your active deity falls",
+=======
+    "All deities fall",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Primary objective fails",
     "Turn limit expires"
   ],
@@ -82,7 +106,11 @@
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
+<<<<<<< HEAD
       "one": "Primary completed with one deity standing or severe turn pressure"
+=======
+      "one": "Primary completed with the active deity standing under severe turn pressure"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     }
   },
   "codexUnlocks": [],
@@ -95,6 +123,7 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
+<<<<<<< HEAD
   "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "chapterId": "TG-F01-CH05",
   "difficulty": "Normal",
@@ -105,6 +134,9 @@
     "squadCombat": "FORBIDDEN",
     "teamTurns": "FORBIDDEN"
   },
+=======
+  "activeDeityDesignNotes": "Balanced for the standard one active deity; nonstandard modes require explicit Creator approval.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "tacticalProfile": {
     "problemTags": [
       "fast_enemies",
@@ -119,28 +151,40 @@
       "Artillery"
     ],
     "recommendedDeityIds": [
+<<<<<<< HEAD
       "TG-TITAN-006",
       "TG-TITAN-009"
+=======
+      "MG-DEITY-003",
+      "MG-DEITY-009",
+      "MG-DEITY-001"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ],
-    "recommendedTitans": [
+    "recommendedDeities": [
       {
+<<<<<<< HEAD
         "id": "TG-TITAN-006",
         "name": "Nefra Obsidian Dawn",
+=======
+        "id": "MG-DEITY-003",
+        "name": "Nefra",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "reason": "Controller advantage for fast enemies"
       },
       {
-        "id": "TG-TITAN-009",
-        "name": "Amunet Hidden Sun",
+        "id": "MG-DEITY-009",
+        "name": "Amunet",
         "reason": "Assassin advantage for fast enemies"
       },
       {
-        "id": "TG-TITAN-001",
-        "name": "Aten-Ra, Solar Law Monolith",
+        "id": "MG-DEITY-001",
+        "name": "Aten-Ra",
         "reason": "Defender advantage for fast enemies"
       }
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
+<<<<<<< HEAD
     "rule": "Favored-not-required: any valid active deity may clear the mission; recommended deities are tactical hints only."
   },
   "sourceCultureAppearanceRule": {
@@ -149,6 +193,14 @@
     "terrain": "sun-scale courts, pylon shadow lanes, river-light channels, Khepri dawn engines, Ma’at seal platforms, desert storm edges",
     "cosmeticRelicSilhouettes": "Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes",
     "avoid": "tourist pharaoh costume, literal pyramid body, sarcophagus robot, readable glyph text, generic desert temple, plain gold statues"
+=======
+    "rule": "Recommended advantages only \u2014 any valid active deity can attempt the mission."
+  },
+  "activeDeityPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "multiDeityCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Deity before launch; roster depth changes approach, not on-field body count."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   "updated": "2026-08-16",
   "activeDeityCount": 1,

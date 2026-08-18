@@ -40,9 +40,15 @@ export function validateCrossFactionCreaturePools({ factions, creatures, pools, 
   }
 
   for (const mission of missions) {
+<<<<<<< HEAD
     if (mission.activeDeityCount !== 1 || mission.teamSize !== 1) issues.push(`${mission.id} must remain one active deity`);
     if (mission.activeDeityPolicy?.standardCombat !== ONE_DEITY_RULE) issues.push(`${mission.id} must use ${ONE_DEITY_RULE}`);
     if (mission.combatArchitecture?.playerControlledDeitys !== 1) issues.push(`${mission.id} missing one-deity combatArchitecture`);
+=======
+    if (mission.activeTitanCount !== 1 || mission.teamSize !== 1) issues.push(`${mission.id} must remain one active deity`);
+    if (mission.activeTitanPolicy?.standardCombat !== ONE_TITAN_RULE) issues.push(`${mission.id} must use ${ONE_TITAN_RULE}`);
+    if (mission.combatArchitecture?.playerControlledTitans !== 1) issues.push(`${mission.id} missing one-deity combatArchitecture`);
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     for (const step of REQUIRED_MOBILE_LOOP) if (!mission.combatArchitecture?.loop?.includes(step)) issues.push(`${mission.id} combatArchitecture missing loop step ${step}`);
     for (const forbidden of FORBIDDEN_STANDARD_COMBAT) if (!mission.combatArchitecture?.forbidden?.includes(forbidden)) issues.push(`${mission.id} missing forbidden combat pattern ${forbidden}`);
     if (mission.crossFactionRunIns?.homeFactionId !== mission.factionId) issues.push(`${mission.id} crossFactionRunIns home faction mismatch`);
@@ -59,9 +65,15 @@ export function validateCrossFactionCreaturePools({ factions, creatures, pools, 
   }
 
   for (const campaign of campaigns) {
+<<<<<<< HEAD
     if (campaign.mobileUe5Architecture?.combatRule !== ONE_DEITY_RULE) issues.push(`${campaign.id} campaign must declare one-deity combat rule`);
     if (campaign.oneDeityVsManyCombat?.playerControlledDeitys !== 1) issues.push(`${campaign.id} campaign must enforce one player-controlled Deity`);
     for (const forbidden of FORBIDDEN_STANDARD_COMBAT) if (!campaign.oneDeityVsManyCombat?.forbidden?.includes(forbidden)) issues.push(`${campaign.id} campaign missing forbidden ${forbidden}`);
+=======
+    if (campaign.mobileUe5Architecture?.combatRule !== ONE_TITAN_RULE) issues.push(`${campaign.id} campaign must declare one-deity combat rule`);
+    if (campaign.oneTitanVsManyCombat?.playerControlledTitans !== 1) issues.push(`${campaign.id} campaign must enforce one player-controlled Titan`);
+    for (const forbidden of FORBIDDEN_STANDARD_COMBAT) if (!campaign.oneTitanVsManyCombat?.forbidden?.includes(forbidden)) issues.push(`${campaign.id} campaign missing forbidden ${forbidden}`);
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     if ((campaign.crossFactionRunIns?.poolIds || []).length !== factions.length) issues.push(`${campaign.id} campaign must expose all faction run-in pools for lore-valid events`);
   }
 

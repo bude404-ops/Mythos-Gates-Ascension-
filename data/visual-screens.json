@@ -36,8 +36,8 @@
   },
   {
     "id": "TG-SCREEN-TITAN-SELECTION",
-    "slug": "titan-selection",
-    "name": "Titan Selection",
+    "slug": "deity-selection",
+    "name": "Deity Selection",
     "status": "PASS",
     "director": "Gameplay Director",
     "lastTestedBuild": "0.2.0",
@@ -45,18 +45,22 @@
     "warnings": [],
     "errors": [],
     "affectedBy": [
-      "titan",
+      "deity",
       "artwork",
       "faction",
       "ability",
       "ui"
     ],
+<<<<<<< HEAD
     "description": "One-active-Titan chosen deity selection using current deity records."
+=======
+    "description": "One-active-Deity chosen Deity selection using current Deity records."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   {
     "id": "TG-SCREEN-TITAN-PROFILE",
-    "slug": "titan-profile",
-    "name": "Titan Profile",
+    "slug": "deity-profile",
+    "name": "Deity Profile",
     "status": "PASS",
     "director": "Art Director",
     "lastTestedBuild": "0.94.0",
@@ -64,12 +68,16 @@
     "warnings": [],
     "errors": [],
     "affectedBy": [
-      "titan",
+      "deity",
       "artwork",
       "ability",
       "lore"
     ],
+<<<<<<< HEAD
     "description": "Detailed deity data with faction-toned prompt-driven portrait cards, stats, role, lore, and artwork context."
+=======
+    "description": "Detailed Deity data with faction-toned prompt-driven portrait cards, stats, role, lore, and artwork context."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   {
     "id": "TG-SCREEN-CHARACTER-PROFILE",
@@ -102,11 +110,11 @@
     "errors": [],
     "affectedBy": [
       "faction",
-      "titan",
+      "deity",
       "npc",
       "artwork"
     ],
-    "description": "Faction identity, culture, passive, visual rules, and associated Titans/NPCs."
+    "description": "Faction identity, culture, passive, visual rules, and associated Deities/NPCs."
   },
   {
     "id": "TG-SCREEN-CAMPAIGN",
@@ -209,7 +217,7 @@
     "affectedBy": [
       "lore",
       "faction",
-      "titan",
+      "deity",
       "npc",
       "campaign"
     ],
@@ -281,7 +289,11 @@
     "lastTestedBuild": "0.3.4",
     "lastApprovedBuild": "0.3.4",
     "warnings": [
+<<<<<<< HEAD
       "Prototype uses emoji placeholder sprites until approved deity sprites are imported.",
+=======
+      "Prototype uses emoji placeholder sprites until approved Deity sprites are imported.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "Terrain is procedural preview geometry until production 3D battlefield assets are authored."
     ],
     "errors": [],
@@ -293,7 +305,7 @@
       "mobile",
       "camera"
     ],
-    "description": "Playable isometric tactical battlefield prototype with Realm themes, elevated terrain, 2D Titan/enemy tokens, movement highlights, attack resolution, enemy phase, and mobile camera controls.",
+    "description": "Playable isometric tactical battlefield prototype with Realm themes, elevated terrain, 2D Deity/enemy tokens, movement highlights, attack resolution, enemy phase, and mobile camera controls.",
     "checks": [
       "2D combatants remain sprites/tokens",
       "3D/isometric battlefield terrain visible",

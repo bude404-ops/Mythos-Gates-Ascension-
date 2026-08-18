@@ -5,15 +5,15 @@
   "generated": "2026-08-13",
   "status": "IMPLEMENTED",
   "source": "data/world-scale-reference.json",
-  "directive": "Mobile-first does not mean tiny. Tactical grid spaces are logical; visual scale must make Titans, Gates, and bosses feel immense.",
-  "unitSystem": "relativeScaleUnits from world-scale-reference; playerTitan=5.2 reference units",
+  "directive": "Mobile-first does not mean tiny. Tactical grid spaces are logical; visual scale must make Deities, Gates, and bosses feel immense.",
+  "unitSystem": "relativeScaleUnits from world-scale-reference; playerDeity=5.2 reference units",
   "requiredSheetTypes": [
     "normal_enemy",
     "elite_enemy",
-    "player_titan",
-    "titan_scale_enemy",
+    "player_deity",
+    "deity_scale_enemy",
     "colossal_boss",
-    "titan_gate",
+    "deity_gate",
     "architecture",
     "battlefield_object"
   ],
@@ -26,7 +26,11 @@
   ],
   "globalRules": [
     "Scale sheets must use shared baseline, contact shadows, and at least one mobile crop.",
+<<<<<<< HEAD
     "Never shrink deities to solve composition; enlarge Gates, architecture, and battlefield space instead.",
+=======
+    "Never shrink Deities to solve composition; enlarge Gates, architecture, and battlefield space instead.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Terrain and hazards must be physical art features, never neon board-game overlays.",
     "Every production prompt must preserve dark mythological fantasy and reject sci-fi scale cues."
   ],
@@ -34,38 +38,60 @@
     {
       "id": "TG-SCALE-SHEET-001",
       "type": "normal_enemy",
+<<<<<<< HEAD
       "title": "Normal Enemy vs deity",
+=======
+      "title": "Normal Enemy vs Deity",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "primarySubject": "standardEnemy",
       "compareAgainst": [
         "normalHumanoid",
-        "playerTitan",
+        "playerDeity",
         "standardWall"
       ],
       "ratioToDeity": 0.22,
+<<<<<<< HEAD
       "composition": "Front 3/4 lineup: normal humanoid, standard Hollow enemy, player deity ankle/knee anchor, one standard wall behind.",
       "camera": "Low tactical camera, enemy readable at mobile zoom without stealing deity mass.",
       "promptOverlay": [
         "enemy head below deity knee line",
+=======
+      "composition": "Front 3/4 lineup: normal humanoid, standard Hollow enemy, player Deity ankle/knee anchor, one standard wall behind.",
+      "camera": "Low tactical camera, enemy readable at mobile zoom without stealing Deity mass.",
+      "promptOverlay": [
+        "enemy head below Deity knee line",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "small shadow footprint",
         "clear silhouette weapon/limb profile"
       ],
       "qaChecks": [
+<<<<<<< HEAD
         "Normal enemy never reaches deity waist.",
         "Silhouette stays readable at 360px width.",
         "Wall height remains below deity torso."
+=======
+        "Normal enemy never reaches Deity waist.",
+        "Silhouette stays readable at 360px width.",
+        "Wall height remains below Deity torso."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ]
     },
     {
       "id": "TG-SCALE-SHEET-002",
       "type": "elite_enemy",
+<<<<<<< HEAD
       "title": "Elite Enemy vs deity",
+=======
+      "title": "Elite Enemy vs Deity",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "primarySubject": "eliteEnemy",
       "compareAgainst": [
         "standardEnemy",
-        "playerTitan",
+        "playerDeity",
         "largeEnemy"
       ],
       "ratioToDeity": 0.36,
+<<<<<<< HEAD
       "composition": "Escalation lineup showing standard enemy, elite enemy, and deity with shared ground plane and contact shadows.",
       "camera": "Slightly lower heroic angle; elite feels threatening but still clearly under deity scale.",
       "promptOverlay": [
@@ -76,48 +102,82 @@
       "qaChecks": [
         "Elite enemy reads as a deity captain, not a boss.",
         "Titan remains the dominant vertical mass.",
+=======
+      "composition": "Escalation lineup showing standard enemy, elite enemy, and Deity with shared ground plane and contact shadows.",
+      "camera": "Slightly lower heroic angle; elite feels threatening but still clearly under Deity scale.",
+      "promptOverlay": [
+        "elite reaches below Deity hip",
+        "armor mass larger than standard enemy",
+        "do not make elite Deity-sized"
+      ],
+      "qaChecks": [
+        "Elite enemy reads as a Deity captain, not a boss.",
+        "Deity remains the dominant vertical mass.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "Armor volume is larger, not just brighter."
       ]
     },
     {
       "id": "TG-SCALE-SHEET-003",
+<<<<<<< HEAD
       "type": "player_titan",
       "title": "Player deity Hero Scale",
       "primarySubject": "playerTitan",
+=======
+      "type": "player_deity",
+      "title": "Player Deity Hero Scale",
+      "primarySubject": "playerDeity",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "compareAgainst": [
-        "smallAgileTitan",
-        "heavyTitan",
-        "titanGateArch"
+        "smallAgileDeity",
+        "heavyDeity",
+        "deityGateArch"
       ],
       "ratioToDeity": 1,
+<<<<<<< HEAD
       "composition": "Three deity body classes on one baseline: agile, standard, heavy, with Gate arch ghosted behind.",
+=======
+      "composition": "Three Deity body classes on one baseline: agile, standard, heavy, with Gate arch ghosted behind.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "camera": "Orthographic-friendly side/front comparison plus one action inset for attack arc size.",
       "promptOverlay": [
         "agile narrower and faster silhouette",
         "heavy wider stance",
-        "Gate arch must tower above all Titans"
+        "Gate arch must tower above all deities"
       ],
       "qaChecks": [
+<<<<<<< HEAD
         "All Titans feel playable at tactical grid scale.",
         "Heavy deity does not become colossal boss scale.",
+=======
+        "All deities feel playable at tactical grid scale.",
+        "Heavy Deity does not become colossal boss scale.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "Attack arc extends beyond body silhouette."
       ]
     },
     {
       "id": "TG-SCALE-SHEET-004",
-      "type": "titan_scale_enemy",
-      "title": "Titan-Scale Enemy Duel Reference",
-      "primarySubject": "titanScaleEnemy",
+      "type": "deity_scale_enemy",
+      "title": "Deity-Scale Enemy Duel Reference",
+      "primarySubject": "deityScaleEnemy",
       "compareAgainst": [
-        "playerTitan",
-        "heavyTitan",
-        "titanGateArch"
+        "playerDeity",
+        "heavyDeity",
+        "deityGateArch"
       ],
       "ratioToDeity": 1.12,
+<<<<<<< HEAD
       "composition": "Duel staging: player Titan and deity-scale enemy shoulder-to-shoulder, Gate arch and terrain object in background.",
       "camera": "Boss-preview camera, both silhouettes equally readable with enemy slightly taller or longer-limbed.",
       "promptOverlay": [
         "enemy can match deity height",
+=======
+      "composition": "Duel staging: player Deity and Deity-scale enemy shoulder-to-shoulder, Gate arch and terrain object in background.",
+      "camera": "Boss-preview camera, both silhouettes equally readable with enemy slightly taller or longer-limbed.",
+      "promptOverlay": [
+        "enemy can match Deity height",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "distinct Hollow body language",
         "not a colossal boss"
       ],
@@ -130,18 +190,26 @@
     {
       "id": "TG-SCALE-SHEET-005",
       "type": "colossal_boss",
+<<<<<<< HEAD
       "title": "Colossal Boss vs deity",
+=======
+      "title": "Colossal Boss vs Deity",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "primarySubject": "colossalBoss",
       "compareAgainst": [
-        "playerTitan",
-        "titanScaleEnemy",
-        "titanGateArch"
+        "playerDeity",
+        "deityScaleEnemy",
+        "deityGateArch"
       ],
       "ratioToDeity": 1.83,
+<<<<<<< HEAD
       "composition": "Player deity foreground at foot/torso line of colossal boss; separate inset shows full boss silhouette against Gate arch.",
+=======
+      "composition": "Player Deity foreground at foot/torso line of colossal boss; separate inset shows full boss silhouette against Gate arch.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "camera": "Two-panel reference: readable gameplay crop and full majesty silhouette crop.",
       "promptOverlay": [
-        "Titan reaches lower torso at most",
+        "Deity reaches lower torso at most",
         "boss limbs create terrain-like hazards",
         "full body must not be cropped in reference inset"
       ],
@@ -153,25 +221,43 @@
     },
     {
       "id": "TG-SCALE-SHEET-006",
+<<<<<<< HEAD
       "type": "titan_gate",
       "title": "Mythos Gate Landmark Scale",
       "primarySubject": "titanGateArch",
+=======
+      "type": "deity_gate",
+      "title": "Mythos Gate Landmark Scale",
+      "primarySubject": "deityGateArch",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "compareAgainst": [
         "gateInteriorOpening",
-        "playerTitan",
+        "playerDeity",
         "colossalBoss"
       ],
       "ratioToDeity": 2.69,
+<<<<<<< HEAD
       "composition": "Gate arch, inner opening, Titan, and colossal boss silhouettes aligned on the same threshold stones.",
       "camera": "Wide landmark camera with clear inner passage and readable threshold material detail.",
       "promptOverlay": [
         "Gate must dwarf Titans",
         "opening accepts deity travel",
+=======
+      "composition": "Gate arch, inner opening, Deity, and colossal boss silhouettes aligned on the same threshold stones.",
+      "camera": "Wide landmark camera with clear inner passage and readable threshold material detail.",
+      "promptOverlay": [
+        "Gate must dwarf Deities",
+        "opening accepts Deity travel",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "threshold stones are battlefield-sized"
       ],
       "qaChecks": [
         "Gate is visible as a landmark from battlefield camera.",
+<<<<<<< HEAD
         "Inner opening exceeds deity height.",
+=======
+        "Inner opening exceeds Deity height.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "Architecture avoids sci-fi portal framing."
       ]
     },
@@ -184,18 +270,27 @@
         "standardWall",
         "statue",
         "bridgeWidth",
-        "playerTitan"
+        "playerDeity"
       ],
       "ratioToDeity": 2.12,
+<<<<<<< HEAD
       "composition": "Temple pylon, wall, statue, bridge width markers, and deity placed on shared tactical floor tiles.",
       "camera": "Isometric tactical camera with lane/cover readability and no artificial grid glow.",
       "promptOverlay": [
         "cover can hide enemies but not Titans",
         "statues are deity-era monuments",
         "bridge width supports deity traversal"
+=======
+      "composition": "Temple pylon, wall, statue, bridge width markers, and Deity placed on shared tactical floor tiles.",
+      "camera": "Isometric tactical camera with lane/cover readability and no artificial grid glow.",
+      "promptOverlay": [
+        "cover can hide enemies but not Deities",
+        "statues are Deity-era monuments",
+        "bridge width supports Deity traversal"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "qaChecks": [
-        "Architecture makes Titans feel immense without clipping them.",
+        "Architecture makes Deities feel immense without clipping them.",
         "Cover is readable as gameplay terrain.",
         "No modern/sci-fi scale cues appear."
       ]
@@ -208,16 +303,24 @@
       "compareAgainst": [
         "normalHumanoid",
         "standardEnemy",
-        "playerTitan",
+        "playerDeity",
         "gateInteriorOpening"
       ],
       "ratioToDeity": 0.65,
+<<<<<<< HEAD
       "composition": "Solar seal pylon, fallen gate rib, breakable wall, and objective pedestal beside deity feet and normal enemies.",
+=======
+      "composition": "Solar seal pylon, fallen gate rib, breakable wall, and objective pedestal beside Deity feet and normal enemies.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "camera": "Mobile combat zoom focused on tap targets, obstruction, and silhouette separation.",
       "promptOverlay": [
         "objects large enough to tap",
         "hazards physical not UI markers",
+<<<<<<< HEAD
         "objective pedestal below deity knee but above normal enemy waist"
+=======
+        "objective pedestal below Deity knee but above normal enemy waist"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "qaChecks": [
         "Tap target is visible at 360x640.",

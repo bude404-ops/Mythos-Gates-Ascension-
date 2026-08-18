@@ -16,7 +16,11 @@
   "explorationZone": {
     "id": "UE5-ZONE-SOLAR-SEAL-APPROACH-001",
     "levelInstance": "LI_AtenRa_SolarSealApproach_001",
+<<<<<<< HEAD
     "playerMode": "third-person deity exploration",
+=======
+    "playerMode": "third-person Deity exploration",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "objectives": [
       "Move the active deity through sun-scale courts",
       "Discover the unstable Gate pressure line",
@@ -31,7 +35,11 @@
     ],
     "scaleLandmarks": [
       "Deity-height pylon gates",
+<<<<<<< HEAD
       "Ma’at scale colossi",
+=======
+      "Ma\u2019at scale colossi",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "Khepri dawn engine silhouette",
       "river-light channels below Deity-sized bridges"
     ]
@@ -152,7 +160,7 @@
     "DA_TG_BossArena_FirstReopeningGate_001"
   ],
   "blueprintActors": [
-    "BP_TG_TitanExplorerPawn",
+    "BP_TG_DeityExplorerPawn",
     "BP_TG_ZoneGateVolume",
     "BP_TG_TacticalArenaVolume",
     "BP_TG_DeityScaleLandmark",
@@ -160,7 +168,7 @@
     "BP_TG_GateGuardianArena"
   ],
   "dataTables": [
-    "DT_Titans",
+    "DT_Deities",
     "DT_Enemies",
     "DT_Encounters",
     "DT_Abilities",
@@ -171,7 +179,11 @@
   "validationChecklist": {
     "deityScale": [
       "landmarks visibly dwarf normal creatures",
+<<<<<<< HEAD
       "paths support massive deity movement",
+=======
+      "paths support massive Deity movement",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "camera frames architecture as god-scale"
     ],
     "combatFlow": [
@@ -236,16 +248,26 @@
       "high-end assets optional"
     ],
     "oneDeityVsMany": [
+<<<<<<< HEAD
       "exactly one player-controlled deity",
+=======
+      "exactly one player-controlled Deity",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "multiple enemies active",
       "no squads or team turns",
       "AoE preview and threat indicators readable",
       "enemy roles create tactical pressure without inflated HP"
     ],
     "progressionFeel": [
+<<<<<<< HEAD
       "new deity baseline measured",
       "developed deity improvement visible",
       "highly developed deity group-clear improvement visible",
+=======
+      "new Deity baseline measured",
+      "developed Deity improvement visible",
+      "highly developed Deity group-clear improvement visible",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "gear upgrade changes combat behavior"
     ],
     "returnToExploration": [
@@ -312,7 +334,11 @@
   },
   "combatIdentity": {
     "contract": "data/one-deity-vs-many-combat.json",
+<<<<<<< HEAD
     "rule": "ONE DEITY VS. MANY",
+=======
+    "rule": "ONE TITAN VS. MANY",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "playerControlledDeities": 1,
     "forbidden": [
       "squad combat",

@@ -1,16 +1,28 @@
 {
+<<<<<<< HEAD
   "id": "TG-TITAN-005",
   "slug": "sutekh",
+=======
+  "id": "MG-DEITY-005",
+  "slug": "sutekh-dune-eclipse",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "name": "Sutekh",
   "factionId": "TG-FACTION-001",
   "faction": "Aten Ra",
   "rarity": "Mythic God",
   "role": "Disruptor",
   "abilities": [
+<<<<<<< HEAD
     "Sutekh — Ma’at-Weighted Strike Sever",
     "Pylon Edict Technique — Interdiction",
     "Sutekh: Sun-Scale Decree Null Mandate",
     "Divine Ascension — Aten-Ra Source Radiance"
+=======
+    "Sutekh \u2014 Ma\u2019at-Weighted Strike Sever",
+    "Pylon Edict Technique \u2014 Interdiction",
+    "Sutekh: Sun-Scale Decree Null Mandate",
+    "Divine Ascension \u2014 Aten-Ra Source Radiance"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ],
   "stats": {
     "hp": 34,
@@ -27,24 +39,41 @@
     "combatPower": 225
   },
   "equipment": [
+<<<<<<< HEAD
     "Sutekh Interdictor Ma’at Was-Sceptre Blade",
+=======
+    "Sutekh Interdictor Ma\u2019at Was-Sceptre Blade",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Sutekh Electrum Wesekh Source-Plate",
     "Sutekh Khepri Solar Scarab Core"
   ],
   "passives": [
+<<<<<<< HEAD
     "Solar Edict: Sutekh gains Solar Charge when disruptor play places a false timing window that punishes enemy overcommitment on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
   ],
   "lore": "Sutekh, Red Land Storm God, is now canonized as one of the four playable deities of Aten Ra. The deity is the source-realm divinity behind the mythology rather than a generic champion: desert storm god, chaos-breaker who defends the sun barque against worse chaos. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses desert storm god, chaos-breaker who defends the sun barque against worse chaos; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
   "visualDescription": "Sutekh manifests as desert storm god, chaos-breaker who defends the sun barque against worse chaos from Aten Ra: long sharp desert-noble masculine face, angular jaw, ember eyes, severe hooked nose; lean powerful masculine storm-runner build, wiry shoulders, long arms, sand-scarred muscles; signature silhouette: forked crown ears, wind-torn mantle, spear diagonal, jackal-storm outline. Weapon: forked storm-spear and hooked desert blade. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
   "artStatus": "READY_FOR_GENERATION",
+=======
+    "Ma\u2019at Source Law: Sutekh gains Solar Charge when its disruptor choices express Solar Dominion of Khepra source-culture law through Aten-lit judgment ground; Earth myth is only the later echo."
+  ],
+  "lore": "Sutekh is not simple evil. He is the Red Land violence Aten Ra keeps on the scale because even Ra needed Set to strike chaos from the solar journey. Humans remembered him as desert disorder; Khepra remembers him as the weapon order is afraid to admit it needs.",
+  "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+  "visualDescription": "Disruptor Deity with red desert jasper armor, storm-sand erosion, eclipse-black solar disc behind a sharp Set-like threshold mask, hooked khopesh energy arcs, ragged gold linen, and violent asymmetry controlled by Ma\u2019at bands. Must look dangerous and necessary, not a generic demon or villain robot.",
+  "artStatus": "Prompt Ready",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "artPromptId": "TG-PROMPT-005",
   "artworkId": null,
   "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
   "backstoryId": "TG-BACKSTORY-TITAN-005",
   "abilityDetails": [
     {
+<<<<<<< HEAD
       "name": "Sutekh — Ma’at-Weighted Strike Sever",
+=======
+      "name": "Sutekh \u2014 Ma\u2019at-Weighted Strike Sever",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -57,7 +86,7 @@
       ],
       "effect": "Deal Aten Ra source-culture damage at range 3; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
       "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
       "name": "Pylon Edict Technique — Interdiction",
@@ -89,7 +118,7 @@
       ],
       "effect": "Spend stored Solar Charge to impose a two-round rule from Solar Dominion of Khepra: cuts enemy resources, scrambles intent, and creates a counter-window instead of raw lockout. Enemies receive a readable counter-window before the strongest effect lands.",
       "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
       "name": "Divine Ascension — Aten-Ra Source Radiance",
@@ -110,7 +139,11 @@
   ],
   "equipmentDetails": [
     {
+<<<<<<< HEAD
       "name": "Sutekh Interdictor Ma’at Was-Sceptre Blade",
+=======
+      "name": "Sutekh Interdictor Ma\u2019at Was-Sceptre Blade",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "slot": "Relic Weapon",
       "rarityFloor": "Epic",
       "primaryStat": "attack",
@@ -122,7 +155,7 @@
       "slot": "Armor Body",
       "rarityFloor": "Epic",
       "primaryStat": "resistance",
-      "effect": "Improves survivability and makes the Titan read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "effect": "Improves survivability and makes the Deity read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
       "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
@@ -155,7 +188,11 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
+<<<<<<< HEAD
     "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+=======
+    "intendedDifficulty": "Tuned for harder solo encounters: every Deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "primaryRole": "interrupt resources, casts, reactions, and elite mechanics",
     "budgetTarget": 109,
     "computedCombatPower": 225,
@@ -185,6 +222,7 @@
     "signatureWeapon": "forked storm-spear and hooked desert blade",
     "loreReason": "Chosen because Sutekh embodies desert storm god, chaos-breaker who defends the sun barque against worse chaos in combat."
   },
+<<<<<<< HEAD
   "gearCanon": {
     "maskHelmetCrown": "Crown/helmet/mask must support long sharp desert-noble masculine face, angular jaw, ember eyes, severe hooked nose and forked crown ears, wind-torn mantle, spear diagonal, jackal-storm outline; never hide sex identity or make the god interchangeable."
   },
@@ -215,4 +253,25 @@
   "species": "Deity",
   "characterType": "Playable Deity",
   "rosterClass": "Deity Roster"
+=======
+  "mythicSource": "Set/Sutekh + Red Land desert storms + defender against chaos",
+  "visualTraits": [
+    "desert storm disruption",
+    "necessary disorder",
+    "anti-chaos violence",
+    "Red Land counterweight"
+  ],
+  "armorCanon": "red jasper storm plates, black iron-sand scars, Set-animal mask silhouette without mascot literalism, hooked khopesh arcs, sand-torn gold linen",
+  "updated": "2026-08-16",
+  "weaponCanon": "Sutekh Interdictor Ma\u2019at Was-Sceptre Blade",
+  "gearCanon": {
+    "weapon": "Sutekh Interdictor Ma\u2019at Was-Sceptre Blade",
+    "armor": "Sutekh Electrum Wesekh Source-Plate",
+    "core": "Sutekh Khepri Solar Scarab Core",
+    "movementRelic": "Aten Hand-Ray Gate Step",
+    "reactionRelic": "Uraeus Counter-Edict",
+    "executionRelic": "Weigh the Name",
+    "visualRule": "Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
+  }
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 }

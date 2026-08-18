@@ -5,7 +5,11 @@
     "title": "Signal Under Dead Stone",
     "status": "Playable Target",
     "mapId": "TG-MAP-001",
+<<<<<<< HEAD
     "summary": "A silent Gate begins pulsing beneath a broken threshold. The first chosen deity enters.",
+=======
+    "summary": "A silent Mythos Gate begins pulsing beneath broken threshold stone in the Solar Dominion of Khepra. Its first pulses do not open a road — they leak absence. Names vanish from tablets. The Creator's chosen Deity enters as Aten-Ra anchors noon judgment against the Hollow's calm erasure.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "objectives": [
       "Choose one active deity",
       "Reach the center Gate",
@@ -14,7 +18,8 @@
     "unlocks": [
       "TG-LORE-001",
       "TG-NPC-001"
-    ]
+    ],
+    "factionId": "TG-FACTION-001"
   },
   {
     "id": "TG-CHAPTER-002",
@@ -22,7 +27,7 @@
     "title": "Mesha Opens the Solar Record",
     "status": "Lore Complete",
     "mapId": "TG-MAP-002",
-    "summary": "Mesha decodes the Gate pattern and reveals that the Reopening is not isolated.",
+    "summary": "Mesha Gate-Scribe decodes the Gate's solar pattern and reveals that the Reopening is not isolated — the Mythos Gate is watching, recording, and testing law. Aten-Ra's living sun-disc heart radiates hand-rays that expose what the Hollow has already emptied from the record.",
     "objectives": [
       "Protect Mesha",
       "Activate three archive pylons",
@@ -31,7 +36,8 @@
     "unlocks": [
       "TG-MAP-002",
       "TG-CREATURE-002"
-    ]
+    ],
+    "factionId": "TG-FACTION-001"
   },
   {
     "id": "TG-CHAPTER-003",
@@ -39,7 +45,7 @@
     "title": "The Mouth Without a Name",
     "status": "Lore Complete",
     "mapId": "TG-MAP-001",
-    "summary": "The Hollow Mouth speaks through a wound in the Gate and tests whether names can be erased.",
+    "summary": "The Hollow Mouth speaks through a wound in the Mythos Gate and tests whether names can be erased from existence. Amunet moves through the shadow threshold — the concealed half of Aten authority meets the Hollow's erasure. The question becomes: can a name be removed that was never written?",
     "objectives": [
       "Hold objective tiles",
       "Stop Hollow leakage",
@@ -47,7 +53,8 @@
     ],
     "unlocks": [
       "TG-NPC-008"
-    ]
+    ],
+    "factionId": "TG-FACTION-001"
   },
   {
     "id": "TG-CHAPTER-004",
@@ -55,14 +62,19 @@
     "title": "Oath Lightning",
     "status": "Planned",
     "mapId": "TG-MAP-003",
+<<<<<<< HEAD
     "summary": "Hrodda judges the chosen deity under storm law.",
+=======
+    "summary": "The Storm-Rooted Aesir Holds answer the reopened Mythos Gate with thunder. Hrodda Oath-Witness judges the chosen Deity under storm law — the bridge remembers every foot that crossed it in anger, and the Gate is counting oaths like currency.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "objectives": [
       "Hold the bridge",
       "Survive rune collapse"
     ],
     "unlocks": [
       "TG-NPC-002"
-    ]
+    ],
+    "factionId": "TG-FACTION-002"
   },
   {
     "id": "TG-CHAPTER-005",
@@ -70,14 +82,15 @@
     "title": "Laurel Trial",
     "status": "Planned",
     "mapId": "TG-MAP-004",
-    "summary": "Lyrion turns survival into a contest of divine excellence.",
+    "summary": "Lyrion Laurel-Envoy turns survival into a contest of divine excellence. Olympus believes a trial is mercy with its eyes open — power untested becomes a public disaster. The Olympian Realm sees the Gate reopening as proof that worth must be demonstrated before power is claimed.",
     "objectives": [
       "Win trial objectives",
       "Avoid falling platforms"
     ],
     "unlocks": [
       "TG-NPC-003"
-    ]
+    ],
+    "factionId": "TG-FACTION-002"
   },
   {
     "id": "TG-CHAPTER-006",
@@ -85,14 +98,15 @@
     "title": "The Banner That Should Not Exist",
     "status": "Planned",
     "mapId": "TG-MAP-003",
-    "summary": "A Forgotten Standard Bearer appears with a banner the Codex refuses to name.",
+    "summary": "A Forgotten Standard Bearer appears with a banner the Codex refuses to name — a remnant from a pre-Collapse war that both Olympian and Asgardian Realms deny starting. The danger is not combat; it is that pride and oath may be pushed into reenacting an old catastrophe.",
     "objectives": [
       "Destroy the banner",
       "Prevent Hollow reinforcement"
     ],
     "unlocks": [
       "TG-CREATURE-004"
-    ]
+    ],
+    "factionId": "TG-FACTION-002"
   },
   {
     "id": "TG-CHAPTER-007",
@@ -100,14 +114,15 @@
     "title": "Roots Remember Wounds",
     "status": "Planned",
     "mapId": "TG-MAP-005",
-    "summary": "Maeve teaches that terrain has memory and Gate scars must be cleansed, not merely conquered.",
+    "summary": "Maeve Root-Memory teaches that terrain in Mythos Gates is not scenery — it is an extradimensional divine intelligence with old injuries. Roots have grown around impossible pressure, holding ruins together. Gate scars must be cleansed, not merely conquered. The land has eaten armies and saved worlds by refusing to let dead roads die.",
     "objectives": [
       "Find Maeve",
       "Avoid elder root damage"
     ],
     "unlocks": [
       "TG-NPC-005"
-    ]
+    ],
+    "factionId": "TG-FACTION-005"
   },
   {
     "id": "TG-CHAPTER-008",
@@ -115,14 +130,15 @@
     "title": "The Predator Law",
     "status": "Planned",
     "mapId": "TG-MAP-005",
-    "summary": "A Beast Realm predator enters Avalora and forces Titans to respect living terrain.",
+    "summary": "A Beast Realm predator enters the Tuatha's Root-Crowned Green Below and forces Deities to respect living terrain. The Tuatha campaign asks: when a wounded Realm adapts to catastrophe, does healing mean undoing the scar or learning what the scar now protects?",
     "objectives": [
       "Protect wounded roots",
       "Defeat the Maneater"
     ],
     "unlocks": [
       "TG-CREATURE-003"
-    ]
+    ],
+    "factionId": "TG-FACTION-005"
   },
   {
     "id": "TG-CHAPTER-009",
@@ -130,14 +146,15 @@
     "title": "Bargain in Black Iron",
     "status": "Planned",
     "mapId": "TG-MAP-006",
-    "summary": "Vasha offers useful inbattle line at a cost the Creator must weigh carefully.",
+    "summary": "Varak Chain-Magistrate offers useful information at a cost the Creator must weigh carefully. The Infernal Dominion does not lie — it tells the truth in a shape that benefits Dominion law. Every tactical victory creates a record, every record creates leverage, and every leverage point can become a chain.",
     "objectives": [
       "Read the bargain",
       "Survive execution marks"
     ],
     "unlocks": [
       "TG-NPC-007"
-    ]
+    ],
+    "factionId": "TG-FACTION-007"
   },
   {
     "id": "TG-CHAPTER-010",
@@ -145,14 +162,15 @@
     "title": "The First Flood Below Fire",
     "status": "Planned",
     "mapId": "TG-MAP-006",
-    "summary": "Infernal ambition awakens a primordial world boss beneath sealed volcanic courts.",
+    "summary": "Infernal ambition awakens a primordial world boss beneath sealed volcanic courts of the Black Iron Court. The Cinders of Dominion prove that power can defend a Realm only when it accepts consequence. A free gift is only a debt whose owner has not stepped forward.",
     "objectives": [
       "Escape the court",
       "Survive Leviathan phase one"
     ],
     "unlocks": [
       "TG-CREATURE-005"
-    ]
+    ],
+    "factionId": "TG-FACTION-007"
   },
   {
     "id": "TG-CHAPTER-011",
@@ -160,7 +178,7 @@
     "title": "Sacred Sun Temple",
     "status": "Design Ready",
     "mapId": "TG-MAP-007",
-    "summary": "The Creator enters the Helio-Kemet road at a golden temple already marked by eclipse veins.",
+    "summary": "The Creator enters the Helio-Kemet pilgrimage road at a golden temple already marked by eclipse veins. The Solar Dominion of Khepra does not fall into darkness all at once — it loses measurement first. Star records disagree with the living sky. The river of light bends toward ruins it once refused to touch.",
     "objectives": [
       "Clear Mission Node 1",
       "Earn three-star temple completion",
@@ -169,7 +187,8 @@
     "unlocks": [
       "TG-MAP-007",
       "TG-PROMPT-SCREEN-ATENRA-CAMPAIGN-MAP"
-    ]
+    ],
+    "factionId": "TG-FACTION-001"
   },
   {
     "id": "TG-CHAPTER-012",
@@ -177,7 +196,7 @@
     "title": "River of Light Stronghold",
     "status": "Design Ready",
     "mapId": "TG-MAP-008",
-    "summary": "A luminous river cuts through corrupted stairs as Aten-Ra and River-Queen advance toward the gate.",
+    "summary": "A luminous river cuts through corrupted stairs as Aten-Ra and Iset advance toward the Mythos Gate. Iset's throne-restoration magic re-seats what the eclipse has displaced, while Aten-Ra forces the shadow to declare its weight under noon judgment.",
     "objectives": [
       "Control river channel tiles",
       "Destroy two obsidian anchors",
@@ -186,7 +205,8 @@
     "unlocks": [
       "TG-MAP-008",
       "TG-PROMPT-SCREEN-ATENRA-TACTICAL-BATTLE"
-    ]
+    ],
+    "factionId": "TG-FACTION-001"
   },
   {
     "id": "TG-CHAPTER-013",
@@ -194,7 +214,7 @@
     "title": "The Mythos Gate",
     "status": "Design Ready",
     "mapId": "TG-MAP-008",
-    "summary": "The upper portal opens around a boss silhouette, forcing a final push before eclipse law overwrites the Sun Realm.",
+    "summary": "The upper Mythos Gate portal opens around a boss silhouette that should cast no shadow under the full sun. The eclipse corruption proves that some things can stand in sunlight and remain unnamed. A final push before eclipse law overwrites the Sun Realm entirely.",
     "objectives": [
       "Break the boss gate shield",
       "Win before eclipse overflow",
@@ -202,7 +222,8 @@
     ],
     "unlocks": [
       "TG-CAMPAIGN-006"
-    ]
+    ],
+    "factionId": "TG-FACTION-001"
   },
   {
     "id": "TG-CHAPTER-014",
@@ -210,7 +231,7 @@
     "title": "Lanterns That Lie",
     "status": "Design Ready",
     "mapId": "TG-MAP-009",
-    "summary": "A shrine road splits into true and false foxfire nodes under a storm mirror moon.",
+    "summary": "A shrine road splits into true and false foxfire nodes under a storm mirror moon. The Kami Realm has always allowed passage but never possession — reflections begin moving before their sources, and the Creator must distinguish sacred path from Gate distortion.",
     "objectives": [
       "Identify the true path",
       "Avoid reflected ambush nodes",
@@ -218,7 +239,8 @@
     ],
     "unlocks": [
       "TG-MAP-009"
-    ]
+    ],
+    "factionId": "TG-FACTION-004"
   },
   {
     "id": "TG-CHAPTER-015",
@@ -226,7 +248,7 @@
     "title": "Mirror Lake Oath",
     "status": "Design Ready",
     "mapId": "TG-MAP-010",
-    "summary": "The battlefield copies every promise and punishes broken positioning with hostile reflections.",
+    "summary": "The mirror lake copies every promise and punishes broken positioning with hostile reflections. Balance must be defended through precision, not force. The Kami Realm tests whether the Creator can cleanse Mythos Gate reflections without breaking shrine law or spirit contracts.",
     "objectives": [
       "Cleanse mirror-water tiles",
       "Defeat reflection decoys",
@@ -234,7 +256,8 @@
     ],
     "unlocks": [
       "TG-MAP-010"
-    ]
+    ],
+    "factionId": "TG-FACTION-004"
   },
   {
     "id": "TG-CHAPTER-016",
@@ -242,7 +265,7 @@
     "title": "Storm Behind the Torii",
     "status": "Design Ready",
     "mapId": "TG-MAP-010",
-    "summary": "The final gate hides inside a moving wall of paper seals and foxfire wind.",
+    "summary": "The final Kami gate hides inside a moving wall of paper seals and foxfire wind. Storm mirrors and shrine contracts fracture under Gate pressure. The Creator must restore balance through precision — the Kami answer to chaos is not force but perfect alignment.",
     "objectives": [
       "Hold the vermilion stair",
       "Seal three storm papers",
@@ -250,7 +273,8 @@
     ],
     "unlocks": [
       "TG-CAMPAIGN-007"
-    ]
+    ],
+    "factionId": "TG-FACTION-004"
   },
   {
     "id": "TG-CHAPTER-017",
@@ -258,7 +282,7 @@
     "title": "First Harmonic Step",
     "status": "Design Ready",
     "mapId": "TG-MAP-011",
-    "summary": "The Empyrean ascent begins on floating platforms where every mission node is a note in a larger engine.",
+    "summary": "The Empyrean ascent begins on floating platforms where every mission node is a note in a larger broken heaven-engine. The White Citadel believes existence can only survive through enforced hierarchy — order is not comfort, it is the weight that keeps power from devouring its bearer.",
     "objectives": [
       "Restore two harmony nodes",
       "Avoid dissonance storms",
@@ -266,7 +290,8 @@
     ],
     "unlocks": [
       "TG-MAP-011"
-    ]
+    ],
+    "factionId": "TG-FACTION-006"
   },
   {
     "id": "TG-CHAPTER-018",
@@ -274,7 +299,11 @@
     "title": "Glass Stair War",
     "status": "Design Ready",
     "mapId": "TG-MAP-012",
+<<<<<<< HEAD
     "summary": "Timed bridges and beacon shields force the chosen deity to climb through hostile choir geometry.",
+=======
+    "summary": "Timed bridges and beacon shields force the chosen Deity to climb through hostile choir geometry. The Empyrean harmonic gates rewrite battlefield elevation — what appears as a staircase is actually a song, and dissonance is punished with erasure.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "objectives": [
       "Hold resonance beacons",
       "Cross collapsing glass stairs",
@@ -282,7 +311,8 @@
     ],
     "unlocks": [
       "TG-MAP-012"
-    ]
+    ],
+    "factionId": "TG-FACTION-006"
   },
   {
     "id": "TG-CHAPTER-019",
@@ -290,7 +320,7 @@
     "title": "Broken Heaven Engine",
     "status": "Design Ready",
     "mapId": "TG-MAP-012",
-    "summary": "At the summit, the choir engine sings a law that would erase every discordant survivor below.",
+    "summary": "At the summit, the choir engine sings a law that would erase every discordant survivor below. The Empyrean's answer to the Collapse is total order — but order that erases dissent is not preservation, it is annihilation wearing a halo's shape.",
     "objectives": [
       "Interrupt the heaven-engine",
       "Break the vault warden shield",
@@ -298,7 +328,8 @@
     ],
     "unlocks": [
       "TG-LORE-001"
-    ]
+    ],
+    "factionId": "TG-FACTION-006"
   },
   {
     "id": "TG-CHAPTER-020",
@@ -306,7 +337,7 @@
     "title": "The Crowd Names the Trial",
     "status": "Planned",
     "mapId": "TG-MAP-004",
-    "summary": "Olympian campaign chapter: The Crowd Names the Trial tests glory, public belief, and laurel judgment against Hollow Gate pressure.",
+    "summary": "The Olympian campaign opens with public trials where glory must defend the Realm instead of feeding jealous spectacle. The Crowd Names the Trial — and the Hollow watches from inside the trial records, testing whether glory can survive becoming law.",
     "objectives": [
       "Win trial objectives",
       "Protect the laurel witness",
@@ -314,7 +345,8 @@
     ],
     "unlocks": [
       "TG-MAP-004"
-    ]
+    ],
+    "factionId": "TG-FACTION-003"
   },
   {
     "id": "TG-CHAPTER-021",
@@ -322,7 +354,7 @@
     "title": "Statues of Jealous Victory",
     "status": "Planned",
     "mapId": "TG-MAP-004",
-    "summary": "Olympian campaign chapter: Statues of Jealous Victory tests glory, public belief, and laurel judgment against Hollow Gate pressure.",
+    "summary": "Statues of Jealous Victory test the Olympian principle: excellence proves divinity, but when glory becomes obsession, the statues judge the proud as harshly as the weak. The Marble Sky forces glory to become defense.",
     "objectives": [
       "Win trial objectives",
       "Protect the laurel witness",
@@ -330,7 +362,8 @@
     ],
     "unlocks": [
       "TG-MAP-004"
-    ]
+    ],
+    "factionId": "TG-FACTION-003"
   },
   {
     "id": "TG-CHAPTER-022",
@@ -338,7 +371,7 @@
     "title": "Senate Under Hollow Witness",
     "status": "Planned",
     "mapId": "TG-MAP-004",
-    "summary": "Olympian campaign chapter: Senate Under Hollow Witness tests glory, public belief, and laurel judgment against Hollow Gate pressure.",
+    "summary": "The Senate convenes under Hollow Witness — the trial records themselves have been touched by the Hollow, and the senators must prove their laws are not empty echoes. Olympian trial law meets the silence of things that were erased from the record.",
     "objectives": [
       "Win trial objectives",
       "Protect the laurel witness",
@@ -346,7 +379,8 @@
     ],
     "unlocks": [
       "TG-MAP-004"
-    ]
+    ],
+    "factionId": "TG-FACTION-003"
   },
   {
     "id": "TG-CHAPTER-023",
@@ -354,7 +388,7 @@
     "title": "Star-Lance Contest",
     "status": "Planned",
     "mapId": "TG-MAP-004",
-    "summary": "Olympian campaign chapter: Star-Lance Contest tests glory, public belief, and laurel judgment against Hollow Gate pressure.",
+    "summary": "The Star-Lance Contest pushes Olympian precision to its limit. Nikos Star-Lance embodies the pursuit of perfection — but the Gate reopens a question: is excellence a virtue or a weapon that turns inward when there is nothing left to prove?",
     "objectives": [
       "Win trial objectives",
       "Protect the laurel witness",
@@ -362,7 +396,8 @@
     ],
     "unlocks": [
       "TG-MAP-004"
-    ]
+    ],
+    "factionId": "TG-FACTION-003"
   },
   {
     "id": "TG-CHAPTER-024",
@@ -370,7 +405,7 @@
     "title": "The Laurel-Star Gate",
     "status": "Planned",
     "mapId": "TG-MAP-004",
-    "summary": "Olympian campaign chapter: The Laurel-Star Gate tests glory, public belief, and laurel judgment against Hollow Gate pressure.",
+    "summary": "The Laurel-Star Gate finale: Olympian glory meets Hollow pressure at the Mythos Gate itself. The Realm must prove that excellence can defend without becoming tyranny, that glory can serve law without consuming it. The laurel or the void.",
     "objectives": [
       "Win trial objectives",
       "Protect the laurel witness",
@@ -378,6 +413,7 @@
     ],
     "unlocks": [
       "TG-MAP-004"
-    ]
+    ],
+    "factionId": "TG-FACTION-003"
   }
 ]

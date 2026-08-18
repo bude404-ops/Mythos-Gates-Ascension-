@@ -1,5 +1,6 @@
 {
   "id": "TG-ROSTER-DEPTH-MAP-001",
+<<<<<<< HEAD
   "name": "Four Deities Per Faction Roster Depth Map",
   "version": 3,
   "status": "IMPLEMENTED",
@@ -7,6 +8,91 @@
   "rule": "Playable Deities are now mythology gods: exactly four per faction, two male and two female; existing Lore Codex canon preserved.",
   "totalPlayableTitans": 28,
   "factionDepth": [
+=======
+  "version": "0.9.2",
+  "generated": "2026-08-11T20:38:00Z",
+  "philosophy": "The roster is valuable because Deities solve different tactical problems, not because missions require specific ownership.",
+  "roleCoverage": {
+    "Defender": {
+      "count": 7,
+      "tacticalProblems": "long survival, objective holding, hazard endurance",
+      "deityIds": [
+        "MG-DEITY-001",
+        "MG-DEITY-010",
+        "MG-DEITY-019",
+        "MG-DEITY-028",
+        "MG-DEITY-037",
+        "MG-DEITY-046",
+        "MG-DEITY-055"
+      ]
+    },
+    "Battery": {
+      "count": 7,
+      "tacticalProblems": "resource pressure, Divinity/Momentum economy, long missions",
+      "deityIds": [
+        "MG-DEITY-002",
+        "MG-DEITY-011",
+        "MG-DEITY-020",
+        "MG-DEITY-029",
+        "MG-DEITY-038",
+        "MG-DEITY-047",
+        "MG-DEITY-056"
+      ]
+    },
+    "Controller": {
+      "count": 7,
+      "tacticalProblems": "fast enemies, terrain-heavy battles, caster denial",
+      "deityIds": [
+        "MG-DEITY-003",
+        "MG-DEITY-012",
+        "MG-DEITY-021",
+        "MG-DEITY-030",
+        "MG-DEITY-039",
+        "MG-DEITY-048",
+        "MG-DEITY-057"
+      ]
+    },
+    "Breaker": {
+      "count": 7,
+      "tacticalProblems": "heavily armored enemies, shield windows, boss armor phases",
+      "deityIds": [
+        "MG-DEITY-004",
+        "MG-DEITY-013",
+        "MG-DEITY-022",
+        "MG-DEITY-031",
+        "MG-DEITY-040",
+        "MG-DEITY-049",
+        "MG-DEITY-058"
+      ]
+    },
+    "Disruptor": {
+      "count": 0,
+      "tacticalProblems": "enemy casters, elite mechanics, Momentum/Divinity denial",
+      "deityIds": []
+    },
+    "Sustain": {
+      "count": 0,
+      "tacticalProblems": "attrition, survival, poison/burn fields",
+      "deityIds": []
+    },
+    "Artillery": {
+      "count": 0,
+      "tacticalProblems": "large enemy groups, ranged pressure, objective zones",
+      "deityIds": []
+    },
+    "Guardian": {
+      "count": 0,
+      "tacticalProblems": "boss duels, counterattack, protection under pressure",
+      "deityIds": []
+    },
+    "Assassin": {
+      "count": 0,
+      "tacticalProblems": "execution-based encounters, priority targets, mobility assassinations",
+      "deityIds": []
+    }
+  },
+  "overlapFindings": [
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     {
       "factionId": "TG-FACTION-001",
       "faction": "Aten Ra",
@@ -56,5 +142,86 @@
       "male": 2,
       "female": 2
     }
+<<<<<<< HEAD
   ]
 }
+=======
+  ],
+  "missingCombatRoles": [
+    {
+      "problem": "swarm clearing",
+      "coverage": "Covered by at least one current role family; must be validated per mission after playable vertical slice."
+    },
+    {
+      "problem": "boss dueling",
+      "coverage": "Covered by at least one current role family; must be validated per mission after playable vertical slice."
+    },
+    {
+      "problem": "armor break",
+      "coverage": "Covered by at least one current role family; must be validated per mission after playable vertical slice."
+    },
+    {
+      "problem": "caster interruption",
+      "coverage": "Covered by at least one current role family; must be validated per mission after playable vertical slice."
+    },
+    {
+      "problem": "long survival",
+      "coverage": "Covered by at least one current role family; must be validated per mission after playable vertical slice."
+    },
+    {
+      "problem": "mobility assassination",
+      "coverage": "Covered by at least one current role family; must be validated per mission after playable vertical slice."
+    },
+    {
+      "problem": "terrain control",
+      "coverage": "Covered by at least one current role family; must be validated per mission after playable vertical slice."
+    },
+    {
+      "problem": "resource denial",
+      "coverage": "Covered by at least one current role family; must be validated per mission after playable vertical slice."
+    },
+    {
+      "problem": "objective holding",
+      "coverage": "Covered by at least one current role family; must be validated per mission after playable vertical slice."
+    },
+    {
+      "problem": "hazard resistance",
+      "coverage": "Covered by at least one current role family; must be validated per mission after playable vertical slice."
+    },
+    {
+      "problem": "execution routing",
+      "coverage": "Covered by at least one current role family; must be validated per mission after playable vertical slice."
+    }
+  ],
+  "deitysNeedingDesignAttention": [
+    {
+      "criterion": "Any Deity whose live implementation still has generic basic/skill/ultimate only",
+      "action": "Convert to unique resource, reaction, stance, execution, gear, and Divine Ascension mechanics before content lock."
+    },
+    {
+      "criterion": "Any faction passive still written for coordinated Deities",
+      "action": "Rewrite mechanically for one active deity while preserving canon wording and identity."
+    },
+    {
+      "criterion": "Any mission copy implying Deity/multiple active deitys",
+      "action": "Patch to one active deity and faction/Deity suitability tags."
+    }
+  ],
+  "missionProblemTags": [
+    "large_enemy_groups",
+    "heavily_armored_enemies",
+    "fast_enemies",
+    "ranged_enemies",
+    "enemy_casters",
+    "long_survival",
+    "boss_duel",
+    "terrain_heavy",
+    "environmental_hazard",
+    "swarm_battle",
+    "execution_chain",
+    "objective_pressure"
+  ],
+  "favoredNotRequiredRule": "Missions may show advantages and recommended Deities/builds, but never ownership locks.",
+  "count": 28
+}
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)

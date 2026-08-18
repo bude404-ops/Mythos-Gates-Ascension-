@@ -3,6 +3,7 @@
   "schema": "TG_ONE_DEITY_VS_MANY_COMBAT_V1",
   "status": "CORE_COMBAT_RULE",
   "version": "1.14.0-one-deity-vs-many-combat",
+<<<<<<< HEAD
   "primaryRule": "ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE",
   "forbiddenSystems": [
     "squad combat",
@@ -15,13 +16,30 @@
     "hardcoded encounter-specific combat systems"
   ],
   "combatFantasy": "One legendary god-like deity enterss enemy-controlled territory alone, fights through many coordinated enemies, grows visibly stronger, and eventually destroys forces that once seemed impossible.",
+=======
+  "primaryRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+  "forbiddenSystems": [
+    "squad combat",
+    "team formations",
+    "multiple player-controlled Deities",
+    "ally positioning",
+    "team turns",
+    "multi-Deity battlefield control",
+    "hardcoded encounter-specific combat systems"
+  ],
+  "combatFantasy": "One legendary god-like Deity enters enemy-controlled territory alone, fights through many coordinated enemies, grows visibly stronger, and eventually destroys forces that once seemed impossible.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "combatLoop": [
     "Explore",
     "Encounter",
     "1 Deity vs. Multiple Enemies",
     "Victory",
     "Rewards",
+<<<<<<< HEAD
     "Upgrade deity",
+=======
+    "Upgrade Deity",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Explore Further"
   ],
   "deityKit": {
@@ -51,7 +69,11 @@
       "high-damage single-target attacks",
       "defensive abilities"
     ],
+<<<<<<< HEAD
     "rule": "The deity handles groups through ability choice, cooldown timing, positioning, terrain use, equipment, and visible progression."
+=======
+    "rule": "The Deity handles groups through ability choice, cooldown timing, positioning, terrain use, equipment, and visible progression."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   "enemyGroupDesign": {
     "roles": [
@@ -78,7 +100,11 @@
       "boss mechanics"
     ],
     "antiPattern": "Do not make enemies difficult simply by giving them enormous health pools.",
+<<<<<<< HEAD
     "exampleComposition": "Weak melee enemies surround the deity while ranged enemies attack from elevation and a support enemy buffs the group."
+=======
+    "exampleComposition": "Weak melee enemies surround the Deity while ranged enemies attack from elevation and a support enemy buffs the group."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   "scalingBands": [
     {
@@ -139,7 +165,7 @@
       "Gear",
       "Abilities",
       "Upgrades",
-      "Titan-specific progression"
+      "Deity-specific progression"
     ],
     "visibleGameplayOutcomes": [
       "larger AoE coverage",
@@ -178,11 +204,15 @@
     "1 Deity vs. Multiple Enemies",
     "Victory",
     "Loot / Rewards",
-    "Titan Upgrade",
+    "Deity Upgrade",
     "Continue Exploration"
   ],
   "mobileTouchControls": [
+<<<<<<< HEAD
     "tap deity",
+=======
+    "tap Deity",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "tap movement destination",
     "tap enemy target",
     "tap ability",
@@ -192,7 +222,7 @@
     "clear enemy threat indicators"
   ],
   "ue5Implementation": {
-    "battleDefinition": "Titan + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
+    "battleDefinition": "Deity + Enemy Group + Arena + Objectives + Terrain + Rules + Rewards",
     "systems": [
       "Blueprints",
       "Data Assets",
@@ -225,10 +255,17 @@
       "Deity AoE attacks",
       "Tactical movement",
       "Enemy AI",
+<<<<<<< HEAD
       "Divine Abilities",
       "Victory",
       "Rewards",
       "Divine Ascension",
+=======
+      "Deity abilities",
+      "Victory",
+      "Rewards",
+      "Deity progression",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "Gear improvement",
       "Return to exploration"
     ],
@@ -237,6 +274,6 @@
       "Developed Deity",
       "Highly Developed Deity"
     ],
-    "expansionRule": "Do not expand to additional missions, Titans, enemy types, or regions until this first combat loop is approved."
+    "expansionRule": "Do not expand to additional missions, Deities, enemy types, or regions until this first combat loop is approved."
   }
 }

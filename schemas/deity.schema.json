@@ -1,11 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+<<<<<<< HEAD:schemas/deity.schema.json
   "$id": "https://titan-gates.local/schemas/titan.schema.json",
+=======
+  "$id": "https://mythos-gates.local/schemas/deity.schema.json",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration):schemas/titan.schema.json
   "title": "Mythos Gates Deity Record",
   "type": "object",
   "required": ["id", "name", "faction", "role"],
   "properties": {
-    "id": { "type": "string", "pattern": "^TG-TITAN-[0-9]{3}$" },
+    "id": { "type": "string", "pattern": "^MG-DEITY-[0-9]{3}$" },
     "name": { "type": "string", "minLength": 1 },
     "faction": { "type": "string", "minLength": 1 },
     "realm": { "type": "string" },

@@ -1,9 +1,16 @@
 import fs from 'node:fs';
 import { validateContract } from '../src/data-loaders/schema-contracts.mjs';
+<<<<<<< HEAD:scripts/validate-one-deity-vs-many-combat.mjs
 import { loadOneDeityVsManyCombat, validateOneDeityVsManyCombat, summarizeOneDeityVsMany } from '../src/combat/one-deity-vs-many.mjs';
 
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const contract = loadOneDeityVsManyCombat();
+=======
+import { loadOneTitanVsManyCombat, validateOneTitanVsManyCombat, summarizeOneTitanVsMany } from '../src/combat/one-deity-vs-many.mjs';
+
+const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
+const contract = loadOneTitanVsManyCombat();
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration):scripts/validate-one-titan-vs-many-combat.mjs
 const schema = read('schemas/one-deity-vs-many-combat.schema.json');
 const missions = read('data/mission-registry.json');
 const mission = missions.find(row => row.id === contract.firstPrototype.sourceMissionId);

@@ -5,7 +5,7 @@ import crypto from 'node:crypto';
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const arena = read('data/async-arena-system.json');
 const titans = read('data/titans.json');
-const solo = read('data/solo-titan-roster-redesign.json');
+const solo = read('data/solo-deity-roster-redesign.json');
 const dashboard = read('data/endgame-dashboard.json');
 const tasks = read('data/development-tasks.json');
 const mini = fs.readFileSync('mini-app/mythos-gates-ascension.html', 'utf8');
@@ -37,6 +37,10 @@ for (const snap of arena.defenseSnapshots) {
   const expected = 'sha256:' + crypto.createHash('sha256').update(JSON.stringify(stable(withoutChecksum))).digest('hex');
   assert.equal(snap.checksum, expected);
 }
+<<<<<<< HEAD
 for (const token of ['Lore Continuity Sweep', 'one-active-deity canon', 'One active deity in standard combat', 'The Hollow is a non-playable campaign threat']) assert.ok(mini.includes(token), `mini missing ${token}`);
+=======
+for (const token of ['Lore Continuity Sweep', 'one-active-Titan canon', 'One active deity in standard combat', 'The Hollow is a non-playable campaign threat']) assert.ok(mini.includes(token), `mini missing ${token}`);
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 assert.equal(tasks.find(t => t.id === 'TG-TASK-SOLO-004')?.status, 'COMPLETED');
 console.log(JSON.stringify({ ok: true, asyncArenaSnapshots: 'PASS', snapshots: arena.defenseSnapshots.length, livePvpImplemented: arena.livePvpImplemented, standardSquadSize: arena.standardSquadSize }, null, 2));

@@ -2,7 +2,7 @@
   "id": "TG-FACTION-MISSION-DIALOGUE-COMPLETION-AUDIT-001",
   "status": "PASS",
   "updated": "2026-08-11",
-  "canonRule": "Existing faction, Titan, realm, campaign, and mission canon remains authoritative; this audit only confirms missing coverage and one-Titan mission/dialogue readiness.",
+  "canonRule": "Existing faction, Deity, realm, campaign, and mission canon remains authoritative; this audit only confirms missing coverage and one-Deity mission/dialogue readiness.",
   "coverage": [
     {
       "factionId": "TG-FACTION-001",
@@ -11,7 +11,7 @@
       "dialogues": 40,
       "normal": 20,
       "elite": 20,
-      "oneTitanMissions": 40,
+      "oneDeityMissions": 40,
       "chapterLinked": 40
     },
     {
@@ -21,7 +21,7 @@
       "dialogues": 40,
       "normal": 20,
       "elite": 20,
-      "oneTitanMissions": 40,
+      "oneDeityMissions": 40,
       "chapterLinked": 40
     },
     {
@@ -31,7 +31,7 @@
       "dialogues": 40,
       "normal": 20,
       "elite": 20,
-      "oneTitanMissions": 40,
+      "oneDeityMissions": 40,
       "chapterLinked": 40
     },
     {
@@ -41,7 +41,7 @@
       "dialogues": 40,
       "normal": 20,
       "elite": 20,
-      "oneTitanMissions": 40,
+      "oneDeityMissions": 40,
       "chapterLinked": 40
     },
     {
@@ -51,7 +51,7 @@
       "dialogues": 40,
       "normal": 20,
       "elite": 20,
-      "oneTitanMissions": 40,
+      "oneDeityMissions": 40,
       "chapterLinked": 40
     },
     {
@@ -61,7 +61,7 @@
       "dialogues": 40,
       "normal": 20,
       "elite": 20,
-      "oneTitanMissions": 40,
+      "oneDeityMissions": 40,
       "chapterLinked": 40
     },
     {
@@ -71,7 +71,7 @@
       "dialogues": 40,
       "normal": 20,
       "elite": 20,
-      "oneTitanMissions": 40,
+      "oneDeityMissions": 40,
       "chapterLinked": 40
     }
   ],
@@ -79,7 +79,7 @@
     "factions": 7,
     "missions": 280,
     "dialogues": 280,
-    "oneTitanMissions": 280,
+    "oneDeityMissions": 280,
     "chapterLinkedMissions": 280
   },
   "issues": [],
@@ -87,7 +87,12 @@
     "All seven factions have 40 missions: 20 Normal and 20 Elite.",
     "Every mission has a matching dialogue package.",
     "Every mission now carries a chapterId and one active deity policy.",
+<<<<<<< HEAD
     "Standard combat language has been corrected away from multi-deity deity phrasing.",
     "Dialogue status advanced to Production Ready with solo-Titan policy metadata."
+=======
+    "Standard combat language has been corrected away from multi-Deity Deity phrasing.",
+    "Dialogue status advanced to Production Ready with solo-Deity policy metadata."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ]
 }

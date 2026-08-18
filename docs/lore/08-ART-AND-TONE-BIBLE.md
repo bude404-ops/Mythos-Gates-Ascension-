@@ -41,7 +41,11 @@ Every character should read as an extradimensional being powerful enough to beco
 
 ## Writing Tone
 
+<<<<<<< HEAD
 Mythos Gates should feel ancient, dangerous, sacred, and strategic.
+=======
+Mythos Gates: Ascension should feel ancient, dangerous, sacred, and strategic.
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 The tone should be:
 

@@ -1,15 +1,15 @@
 {
-  "id": "TG-TITAN-007",
+  "id": "MG-DEITY-007",
   "slug": "karnu-glass-horizon",
-  "name": "Karnu Glass Horizon",
+  "name": "Karnu",
   "factionId": "TG-FACTION-001",
   "faction": "Aten Ra",
   "rarity": "Epic",
   "role": "Artillery",
   "abilities": [
-    "Karnu Glass Horizon \u2014 Ma\u2019at-Weighted Strike Longshot",
+    "Karnu \u2014 Ma\u2019at-Weighted Strike Longshot",
     "Pylon Edict Technique \u2014 Horizon Lock",
-    "Karnu Glass Horizon: Sun-Scale Decree Cataclysm Line",
+    "Karnu: Sun-Scale Decree Cataclysm Line",
     "Divine Ascension \u2014 Aten-Ra Source Radiance"
   ],
   "stats": {
@@ -27,16 +27,20 @@
     "combatPower": 234
   },
   "equipment": [
-    "Karnu Glass Horizon Far-Sight Ma\u2019at Was-Sceptre Blade",
-    "Karnu Glass Horizon Electrum Wesekh Source-Plate",
-    "Karnu Glass Horizon Khepri Solar Scarab Core"
+    "Karnu Far-Sight Ma\u2019at Was-Sceptre Blade",
+    "Karnu Electrum Wesekh Source-Plate",
+    "Karnu Khepri Solar Scarab Core"
   ],
   "passives": [
-    "Ma\u2019at Source Law: Karnu Glass Horizon gains Solar Charge when its artillery choices express Solar Dominion of Khepra source-culture law through Aten-lit judgment ground; Earth myth is only the later echo."
+    "Ma\u2019at Source Law: Karnu gains Solar Charge when its artillery choices express Solar Dominion of Khepra source-culture law through Aten-lit judgment ground; Earth myth is only the later echo."
   ],
-  "lore": "Karnu Glass Horizon is the long sight of the solar barque: he reads enemies where sky, river, and desert meet. Human obelisks and horizon sanctuaries are static imitations of his living range geometry.",
+  "lore": "Karnu is the long sight of the solar barque: he reads enemies where sky, river, and desert meet. Human obelisks and horizon sanctuaries are static imitations of his living range geometry.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+<<<<<<< HEAD
   "visualDescription": "Artillery deity with sweeping solar-barge shoulder arcs, desert-glass lens organs, falcon-eye targeting visor, bronze horizon vanes, lapis braces, and mirage-light cannon geometry grown from the body. Avoid sci-fi sniper/mech; every range element should feel like sacred astronomy made alive.",
+=======
+  "visualDescription": "Artillery Deity with sweeping solar-barge shoulder arcs, desert-glass lens organs, falcon-eye targeting visor, bronze horizon vanes, lapis braces, and mirage-light cannon geometry grown from the body. Avoid sci-fi sniper/mech; every range element should feel like sacred astronomy made alive.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-007",
   "artworkId": null,
@@ -44,7 +48,7 @@
   "backstoryId": "TG-BACKSTORY-TITAN-007",
   "abilityDetails": [
     {
-      "name": "Karnu Glass Horizon \u2014 Ma\u2019at-Weighted Strike Longshot",
+      "name": "Karnu \u2014 Ma\u2019at-Weighted Strike Longshot",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -57,7 +61,7 @@
       ],
       "effect": "Deal Aten Ra source-culture damage at range 5; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
       "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
       "name": "Pylon Edict Technique \u2014 Horizon Lock",
@@ -76,7 +80,7 @@
       "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
     },
     {
-      "name": "Karnu Glass Horizon: Sun-Scale Decree Cataclysm Line",
+      "name": "Karnu: Sun-Scale Decree Cataclysm Line",
       "slot": "Signature",
       "unlockLevel": 12,
       "cost": "45 Momentum + 25 Divinity",
@@ -89,7 +93,7 @@
       ],
       "effect": "Spend stored Solar Charge to impose a two-round rule from Solar Dominion of Khepra: marks distant lanes, punishes exposed routes, and demands line-of-sight counterplay. Enemies receive a readable counter-window before the strongest effect lands.",
       "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
       "name": "Divine Ascension \u2014 Aten-Ra Source Radiance",
@@ -110,7 +114,7 @@
   ],
   "equipmentDetails": [
     {
-      "name": "Karnu Glass Horizon Far-Sight Ma\u2019at Was-Sceptre Blade",
+      "name": "Karnu Far-Sight Ma\u2019at Was-Sceptre Blade",
       "slot": "Relic Weapon",
       "rarityFloor": "Epic",
       "primaryStat": "attack",
@@ -118,15 +122,15 @@
       "balanceGuardrail": "No extra action loops; empowered basics are once per round."
     },
     {
-      "name": "Karnu Glass Horizon Electrum Wesekh Source-Plate",
+      "name": "Karnu Electrum Wesekh Source-Plate",
       "slot": "Armor Body",
       "rarityFloor": "Epic",
       "primaryStat": "resistance",
-      "effect": "Improves survivability and makes the Titan read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "effect": "Improves survivability and makes the Deity read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
       "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
-      "name": "Karnu Glass Horizon Khepri Solar Scarab Core",
+      "name": "Karnu Khepri Solar Scarab Core",
       "slot": "Resonance Core",
       "rarityFloor": "Epic",
       "primaryStat": "energy",
@@ -155,7 +159,11 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
+<<<<<<< HEAD
     "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+=======
+    "intendedDifficulty": "Tuned for harder solo encounters: every Deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "primaryRole": "project damage into crowds and objective zones",
     "budgetTarget": 110,
     "computedCombatPower": 234,
@@ -175,11 +183,11 @@
   ],
   "armorCanon": "barque-arc shoulder rig, desert-glass lens array, falcon-eye sight lines, polished bronze range vanes, lapis shadow braces",
   "updated": "2026-08-16",
-  "weaponCanon": "Karnu Glass Horizon Far-Sight Ma\u2019at Was-Sceptre Blade",
+  "weaponCanon": "Karnu Far-Sight Ma\u2019at Was-Sceptre Blade",
   "gearCanon": {
-    "weapon": "Karnu Glass Horizon Far-Sight Ma\u2019at Was-Sceptre Blade",
-    "armor": "Karnu Glass Horizon Electrum Wesekh Source-Plate",
-    "core": "Karnu Glass Horizon Khepri Solar Scarab Core",
+    "weapon": "Karnu Far-Sight Ma\u2019at Was-Sceptre Blade",
+    "armor": "Karnu Electrum Wesekh Source-Plate",
+    "core": "Karnu Khepri Solar Scarab Core",
     "movementRelic": "Aten Hand-Ray Gate Step",
     "reactionRelic": "Uraeus Counter-Edict",
     "executionRelic": "Weigh the Name",

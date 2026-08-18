@@ -71,6 +71,7 @@ function findEnemy(state, enemyId) {
 function livingEnemies(state) { return state.enemies.filter(e => e.hp > 0); }
 function currentSpace(state) { return state.terrain.spaces.find(s => key(s.position) === key(state.deity.position)); }
 
+<<<<<<< HEAD
 
 // ─── Dungeon Crawler Phase Functions ───
 
@@ -135,6 +136,11 @@ export function createInitialSoloBattleState({ battleId, missionId, deity, enemi
   if (!deity?.id) throw new Error('A solo battle requires one active deity.');
   // Dungeon crawler mode: enemies may be empty (exploration phase). They get populated via triggerEncounter.
   if (!Array.isArray(enemies)) throw new Error('Enemies must be an array (can be empty for exploration start).');
+=======
+export function createInitialSoloBattleState({ battleId, missionId, titan, enemies, terrain, objectives, seed = 1 }) {
+  if (!titan?.id) throw new Error('A solo battle requires one active deity.');
+  if (!Array.isArray(enemies) || enemies.length < 1) throw new Error('A solo battle requires at least one enemy.');
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   const state = {
     battleId,
     missionId,

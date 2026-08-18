@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # Mythos Gates Lore Codex
 
 This folder is the canon source for the Mythos Gates game lore.
+=======
+# Mythos Gates: Ascension Lore Codex
+
+This folder is the canon source for the Mythos Gates: Ascension game lore.
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 ## Codex Files
 
@@ -16,9 +22,15 @@ This folder is the canon source for the Mythos Gates game lore.
 
 ## North Star
 
+<<<<<<< HEAD
 Mythos Gates is not mythology as costume.
 
 Mythos Gates is mythology as evidence of real extradimensional power.
+=======
+Mythos Gates: Ascension is not mythology as costume.
+
+Mythos Gates: Ascension is mythology as evidence of real extradimensional power.
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 Every Realm must feel like its own ancient civilization. Every Titan must feel born from that civilization's laws, symbols, powers, and wounds. Every gameplay role must come from lore. Every visual design must reject sci-fi, generic fantasy, and ordinary human cosplay. Every Mythos Gate must feel ancient, dangerous, sacred, and capable of breaking reality.
 
@@ -26,7 +38,7 @@ Every Realm must feel like its own ancient civilization. Every Titan must feel b
 
 ## Faction Realm Codex
 
-The following chapters expand every faction, Realm, Gate, and Titan role without adding playable non-Titan entries or normal units:
+The following chapters expand every faction, Realm, Gate, and deity role without adding playable non-Titan entries or normal units:
 
 - [Aten Ra: The Solar Dominion of Khepra](10-ATEN-RA-REALM-CODEX.md)
 - [Asgardian: The Storm-Rooted Aesir Holds](10-ASGARDIAN-REALM-CODEX.md)

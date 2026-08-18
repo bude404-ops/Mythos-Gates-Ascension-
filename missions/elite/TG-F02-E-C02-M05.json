@@ -7,6 +7,7 @@
   "chapterTitle": "Thunder-Oath Root Gauntlet — Outer Descent",
   "missionNumber": 5,
   "missionInChapter": 1,
+<<<<<<< HEAD
   "title": "Elite: Swear the Storm-Oath Bridge: Pressure Break",
   "description": "Elite: Swear the Storm-Oath Bridge: Pressure Break is a rebuilt Mythos Gates mission beat for Thunder-Oath Root Gauntlet through The Thunder-Oath Gate (Ruin Gate with active oath memory). One selected deity from Odin, Freyja, Frigg, Thor enters; this beat spotlights Odin as the reference silhouette while preserving player choice. The mission is the combat step at Storm-Oath Bridge, using storm bridge and world-root trial pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Storm-Rooted Aesir Holds is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow..",
   "lore": "Ascension canon route rewrite: Thunder-Oath Root Gauntlet is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Storm-Oath Bridge and reveals: Why world-roots remember betrayals. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
@@ -15,16 +16,35 @@
     "storm-oath breaker",
     "survivable objective holder",
     "burst or control specialist"
+=======
+  "title": "Elite: Banner in the Crosswind",
+  "description": "The Forgotten Banner: Banner in the Crosswind unfolds across wind-torn bridge causeway with shredded banners, rusted standard sockets, and buckled oath plates, pushing the one active Asgardian Deity to convert endurance into decisive counterpressure.",
+  "lore": "Banner in the Crosswind advances the Storm-Oath Covenant arc: the Gate tries to harvest Asgardian vows, while Valhalla law insists courage must remain chosen responsibility.",
+  "recommendedPower": 820,
+  "activeDeityCount": 1,
+  "encouragedDeityRoles": [
+    "frontline oath guardian",
+    "storm counterstriker",
+    "objective anchor",
+    "mobile rescuer",
+    "rune support"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ],
   "mapId": "TG-MAP-003",
   "terrain": "Storm-Oath Bridge configured as a combat space inside storm bridge and world-root trial; source-culture appearance layer: rune-storm bridges, oath-stone courts, Bifrost storm fractures, Yggdrasil root ramps, Valhalla shieldwall ruins; cosmetic/relic silhouettes: rune-iron oath axes, stormsteel wolf-cloak mail, Yggdrasil thunder-root cores, Valkyrie witness counters",
   "objectives": {
     "primary": "With one selected deity, break the first enemy pressure line in the elite-tuned Storm-Oath Bridge, secure the enemy line, and deny the Hollow a foothold in the outer dungeon.",
     "optional": [
+<<<<<<< HEAD
       "Clear the Storm-Oath Bridge without the active deity falling below 35% integrity",
       "Exploit or avoid the route rule: raven omen swarms that reveal hidden names",
       "Resolve at least three oath law, storm timing, world-root control, courage under blackwinter pressure decisions before victory",
       "Finish with the boss, elite, shrine, treasure, or hazard node clearly readable for mobile tactical play"
+=======
+      "Win with no Deity defeated",
+      "Trigger at least three Oathbound counterattacks",
+      "Hold every objective for one full enemy turn"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ]
   },
   "enemyWaves": [
@@ -48,15 +68,27 @@
   "boss": null,
   "turnLimit": 13,
   "specialRules": [
+<<<<<<< HEAD
     "Route Law — Thunder-Oath Root Gauntlet: Ruin Gate with active oath memory changes how movement, hazards, and enemy pressure are read.",
     "Room Rule — Storm-Oath Bridge: play this beat as a combat node, not a generic arena.",
     "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
+=======
+    "Banner Pressure: enemy banners grant defense until physically broken by objective actions.",
+    "Oathbound: surviving damage strengthens the next committed strike.",
+    "one active standard Deity",
+    "Elite Storm: lightning collapse advances one turn earlier.",
+    "Elite Banner Law: enemy buffs persist until objective action breaks the source."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ],
   "victoryConditions": [
     "With one selected deity, break the first enemy pressure line in the elite-tuned Storm-Oath Bridge, secure the enemy line, and deny the Hollow a foothold in the outer dungeon."
   ],
   "defeatConditions": [
+<<<<<<< HEAD
     "Your active deity falls",
+=======
+    "All deities fall",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Primary objective fails",
     "Turn limit expires"
   ],
@@ -95,7 +127,11 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
+<<<<<<< HEAD
   "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
+=======
+  "activeDeityDesignNotes": "Balanced for the standard one active deity; nonstandard modes require explicit Creator approval.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "eliteRemixOf": "TG-F02-C02-M05",
   "meaningfulDifferences": [
     "Secondary storm condition active",
@@ -126,28 +162,39 @@
       "Guardian"
     ],
     "recommendedDeityIds": [
+<<<<<<< HEAD
       "TG-TITAN-010",
       "TG-TITAN-015"
+=======
+      "MG-DEITY-010",
+      "MG-DEITY-016",
+      "MG-DEITY-015"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ],
-    "recommendedTitans": [
+    "recommendedDeities": [
       {
-        "id": "TG-TITAN-010",
+        "id": "MG-DEITY-010",
         "name": "The Allfather Stormvein",
         "reason": "Defender advantage for ranged enemies"
       },
       {
+<<<<<<< HEAD
         "id": "TG-TITAN-015",
+=======
+        "id": "MG-DEITY-016",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "name": "Ragnor Skybreaker",
         "reason": "Artillery advantage for ranged enemies"
       },
       {
-        "id": "TG-TITAN-015",
+        "id": "MG-DEITY-015",
         "name": "Veyra Thunderloom",
         "reason": "Sustain advantage for ranged enemies"
       }
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
+<<<<<<< HEAD
     "rule": "Favored-not-required: any valid active deity may clear the mission; recommended deities are tactical hints only."
   },
   "sourceCultureAppearanceRule": {
@@ -156,6 +203,14 @@
     "terrain": "rune-storm bridges, oath-stone courts, Bifrost storm fractures, Yggdrasil root ramps, Valhalla shieldwall ruins",
     "cosmeticRelicSilhouettes": "rune-iron oath axes, stormsteel wolf-cloak mail, Yggdrasil thunder-root cores, Valkyrie witness counters",
     "avoid": "cartoon Viking, horned helmet cosplay, clean chrome, sci-fi power armor, glowing UI runes, modern biker leather"
+=======
+    "rule": "Recommended advantages only \u2014 any valid active deity can attempt the mission."
+  },
+  "activeDeityPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "multiDeityCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Deity before launch; roster depth changes approach, not on-field body count."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   "updated": "2026-08-16",
   "activeDeityCount": 1,

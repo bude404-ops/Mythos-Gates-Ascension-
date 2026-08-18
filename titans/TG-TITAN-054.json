@@ -1,5 +1,5 @@
 {
-  "id": "TG-TITAN-054",
+  "id": "MG-DEITY-054",
   "slug": "theon-still-horizon",
   "name": "Theon Still Horizon",
   "factionId": "TG-FACTION-006",
@@ -34,9 +34,13 @@
   "passives": [
     "Hierarchy of Living Edict: Theon Still Horizon gains Choir Resonance when its assassin choices express Radiant Hierarchies source-culture law through edict-sung holy geometry; Earth myth is only the later echo."
   ],
-  "lore": "Theon Still Horizon is a colossal Empyrean assassin from The Radiant Hierarchies. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Titan is the older source: Empyrean assassin office: hidden name, silent verdict, secret execution; Dominions/Virtues/Powers: hierarchy, governance, miracle force, defense against chaos.",
+  "lore": "Theon Still Horizon is a colossal Empyrean assassin from The Radiant Hierarchies. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Empyrean assassin office: hidden name, silent verdict, secret execution; Dominions/Virtues/Powers: hierarchy, governance, miracle force, defense against chaos.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+<<<<<<< HEAD
   "visualDescription": "Full-body living myth-source deity, not a costume: Theon Still Horizon shows white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.. Role silhouette must read as Assassin. Materials include white gold, opal glass, bell bronze, pearl bone, blue-white holy fire, ivory scroll vellum, silver feather. The design must feel older than human mythology and avoid robot angel, spaceship armor, generic church costume, literal cathedral body, block tower silhouette, neon sci-fi aura.",
+=======
+  "visualDescription": "Full-body living myth-source Deity, not a costume: Theon Still Horizon shows white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.. Role silhouette must read as Assassin. Materials include white gold, opal glass, bell bronze, pearl bone, blue-white holy fire, ivory scroll vellum, silver feather. The design must feel older than human mythology and avoid robot angel, spaceship armor, generic church costume, literal cathedral body, block tower silhouette, neon sci-fi halo.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-054",
   "artworkId": null,
@@ -57,7 +61,7 @@
       ],
       "effect": "Deal Empyrean source-culture damage at range 1; generate Momentum and a small Choir Resonance gain when used from edict-sung holy geometry or against the marked target. The hit reads visually as white-gold radiance, many-eye auras, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire.",
       "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
       "name": "Choir Seal Technique \u2014 Shadow Pursuit",
@@ -89,7 +93,7 @@
       ],
       "effect": "Spend stored Choir Resonance to impose a two-round rule from Radiant Hierarchies: hunts marked targets, erases escape routes, and creates a precise execution window with recovery risk. Enemies receive a readable counter-window before the strongest effect lands.",
       "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
       "name": "Divine Ascension \u2014 Seraphic Choir Unbound",
@@ -122,7 +126,7 @@
       "slot": "Armor Body",
       "rarityFloor": "Legendary",
       "primaryStat": "resistance",
-      "effect": "Improves survivability and makes the Titan read as Radiant Hierarchies source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "effect": "Improves survivability and makes the Deity read as Radiant Hierarchies source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
       "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
@@ -155,7 +159,11 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
+<<<<<<< HEAD
     "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+=======
+    "intendedDifficulty": "Tuned for harder solo encounters: every Deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "primaryRole": "execute priority targets and reposition through danger",
     "budgetTarget": 114,
     "computedCombatPower": 236,

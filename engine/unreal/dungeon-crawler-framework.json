@@ -3,7 +3,11 @@
   "schema": "TG_UE5_DUNGEON_CRAWLER_FRAMEWORK_V1",
   "status": "ACTIVE_TARGET_ARCHITECTURE",
   "version": "1.13.0-mobile-first-ue5-zone-prototype",
+<<<<<<< HEAD
   "purpose": "Converts Mythos Gates: Ascension into an Unreal Engine 5-first single-deity, zone-based dungeon-crawler tactical RPG framework while preserving existing Lore Codex, Mythos Gates, factions, realms, deities, progression, combat, and mobile-first goals.",
+=======
+  "purpose": "Converts Mythos Gates: Ascension into an Unreal Engine 5-first Deity-scale zone-based dungeon-crawler tactical RPG framework while preserving existing lore, Deities, factions, progression, combat, and mobile-first goals.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "primaryEngine": "Unreal Engine 5",
   "coreLoop": [
     "Campaign",
@@ -31,13 +35,17 @@
     "Reusable Blueprint actors"
   ],
   "dataDrivenRules": [
+<<<<<<< HEAD
     "No hardcoded campaign, deity, encounter, reward, ability, enemy, or zone content.",
+=======
+    "No hardcoded campaign, Deity, encounter, reward, ability, enemy, or zone content.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Canon remains upstream source of truth.",
     "Unreal assets consume stable Mythos Gates IDs as Primary Asset IDs.",
     "Exploration and combat are modular zone products, not open-world sprawl.",
     "AI-assisted generation assembles approved modules one stage at a time."
   ],
-  "titanScaleRules": {
+  "deityScaleRules": {
     "environmentLanguage": [
       "giant gates",
       "massive ruins",
@@ -47,10 +55,15 @@
       "elevated platforms",
       "bridges",
       "cliffs",
-      "Titan-sized pathways"
+      "Deity-sized pathways"
     ],
+<<<<<<< HEAD
     "standardCombatActiveTitans": 1,
     "cameraMandate": "Exploration shows deity scale; combat prioritizes tactical readability."
+=======
+    "standardCombatActiveDeities": 1,
+    "cameraMandate": "Exploration shows Deity scale; combat prioritizes tactical readability."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   "zoneModel": {
     "hierarchy": [
@@ -66,7 +79,11 @@
     "zoneExamples": [
       "Aten Ra Temple Complex",
       "Thalassari Coastal Ruins",
+<<<<<<< HEAD
       "deity Graveyards",
+=======
+      "Deity Graveyards",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "Ancient Gate Networks",
       "Divine Forests",
       "Sacred Mountains",
@@ -106,7 +123,11 @@
   "assetPipeline": {
     "root": "Content/",
     "folders": [
+<<<<<<< HEAD
       "deities/",
+=======
+      "Deities/",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "Characters/",
       "Creatures/",
       "Environments/",
@@ -134,7 +155,11 @@
   },
   "camera": {
     "exploration": [
+<<<<<<< HEAD
       "third-person cinematic deity view",
+=======
+      "third-person cinematic Deity view",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "scale landmarks always visible where practical"
     ],
     "combat": [

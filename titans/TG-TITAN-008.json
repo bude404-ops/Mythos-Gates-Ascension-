@@ -1,15 +1,15 @@
 {
-  "id": "TG-TITAN-008",
+  "id": "MG-DEITY-008",
   "slug": "maahes-noon-bastion",
-  "name": "Maahes Noon Bastion",
+  "name": "Maahes",
   "factionId": "TG-FACTION-001",
   "faction": "Aten Ra",
   "rarity": "Rare",
   "role": "Guardian",
   "abilities": [
-    "Maahes Noon Bastion \u2014 Ma\u2019at-Weighted Strike Intercept",
+    "Maahes \u2014 Ma\u2019at-Weighted Strike Intercept",
     "Pylon Edict Technique \u2014 Punishing Guard",
-    "Maahes Noon Bastion: Sun-Scale Decree Oath of Intercept",
+    "Maahes: Sun-Scale Decree Oath of Intercept",
     "Divine Ascension \u2014 Aten-Ra Source Radiance"
   ],
   "stats": {
@@ -27,16 +27,20 @@
     "combatPower": 210
   },
   "equipment": [
-    "Maahes Noon Bastion Sentinel Ma\u2019at Was-Sceptre Blade",
-    "Maahes Noon Bastion Electrum Wesekh Source-Plate",
-    "Maahes Noon Bastion Khepri Solar Scarab Core"
+    "Maahes Sentinel Ma\u2019at Was-Sceptre Blade",
+    "Maahes Electrum Wesekh Source-Plate",
+    "Maahes Khepri Solar Scarab Core"
   ],
   "passives": [
-    "Ma\u2019at Source Law: Maahes Noon Bastion gains Solar Charge when its guardian choices express Solar Dominion of Khepra source-culture law through Aten-lit judgment ground; Earth myth is only the later echo."
+    "Ma\u2019at Source Law: Maahes gains Solar Charge when its guardian choices express Solar Dominion of Khepra source-culture law through Aten-lit judgment ground; Earth myth is only the later echo."
   ],
-  "lore": "Maahes Noon Bastion carries the lion war-protection humans later carved as Maahes and Sekhmet-adjacent temple guardians. He is the noon gate\u2019s living roar: mercy behind him, knives before him, captives judged in his shadow.",
+  "lore": "Maahes carries the lion war-protection humans later carved as Maahes and Sekhmet-adjacent temple guardians. He is the noon gate\u2019s living roar: mercy behind him, knives before him, captives judged in his shadow.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+<<<<<<< HEAD
   "visualDescription": "Guardian deity with lion-mane gold collar, leonine but readable humanoid-divine anatomy, knife-like bronze bracers, lotus crest, sun-red war markings, massive intercepting forearms, and heat-haze roar aura. Avoid furry beastman or generic lion monster; he is royal protective violence.",
+=======
+  "visualDescription": "Guardian Deity with lion-mane gold collar, leonine but readable humanoid-divine anatomy, knife-like bronze bracers, lotus crest, sun-red war markings, massive intercepting forearms, and heat-haze roar aura. Avoid furry beastman or generic lion monster; he is royal protective violence.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-008",
   "artworkId": null,
@@ -44,7 +48,7 @@
   "backstoryId": "TG-BACKSTORY-TITAN-008",
   "abilityDetails": [
     {
-      "name": "Maahes Noon Bastion \u2014 Ma\u2019at-Weighted Strike Intercept",
+      "name": "Maahes \u2014 Ma\u2019at-Weighted Strike Intercept",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -57,7 +61,7 @@
       ],
       "effect": "Deal Aten Ra source-culture damage at range 1; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
       "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
       "name": "Pylon Edict Technique \u2014 Punishing Guard",
@@ -76,7 +80,7 @@
       "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
     },
     {
-      "name": "Maahes Noon Bastion: Sun-Scale Decree Oath of Intercept",
+      "name": "Maahes: Sun-Scale Decree Oath of Intercept",
       "slot": "Signature",
       "unlockLevel": 12,
       "cost": "45 Momentum + 25 Divinity",
@@ -89,7 +93,7 @@
       ],
       "effect": "Spend stored Solar Charge to impose a two-round rule from Solar Dominion of Khepra: intercepts lethal paths, counters oathbreakers/trespassers, and turns defense into threat. Enemies receive a readable counter-window before the strongest effect lands.",
       "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
       "name": "Divine Ascension \u2014 Aten-Ra Source Radiance",
@@ -110,7 +114,7 @@
   ],
   "equipmentDetails": [
     {
-      "name": "Maahes Noon Bastion Sentinel Ma\u2019at Was-Sceptre Blade",
+      "name": "Maahes Sentinel Ma\u2019at Was-Sceptre Blade",
       "slot": "Relic Weapon",
       "rarityFloor": "Rare",
       "primaryStat": "attack",
@@ -118,15 +122,15 @@
       "balanceGuardrail": "No extra action loops; empowered basics are once per round."
     },
     {
-      "name": "Maahes Noon Bastion Electrum Wesekh Source-Plate",
+      "name": "Maahes Electrum Wesekh Source-Plate",
       "slot": "Armor Body",
       "rarityFloor": "Rare",
       "primaryStat": "armor",
-      "effect": "Improves survivability and makes the Titan read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "effect": "Improves survivability and makes the Deity read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
       "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
-      "name": "Maahes Noon Bastion Khepri Solar Scarab Core",
+      "name": "Maahes Khepri Solar Scarab Core",
       "slot": "Resonance Core",
       "rarityFloor": "Rare",
       "primaryStat": "energy",
@@ -155,7 +159,11 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
+<<<<<<< HEAD
     "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+=======
+    "intendedDifficulty": "Tuned for harder solo encounters: every Deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "primaryRole": "counter bosses and protect survival windows",
     "budgetTarget": 105,
     "computedCombatPower": 210,
@@ -175,11 +183,11 @@
   ],
   "armorCanon": "lion-mane solar collar, knife-fin bracers, lotus-and-bronze guard plates, sun-red war marks, heavy guardian forelimb armor",
   "updated": "2026-08-16",
-  "weaponCanon": "Maahes Noon Bastion Sentinel Ma\u2019at Was-Sceptre Blade",
+  "weaponCanon": "Maahes Sentinel Ma\u2019at Was-Sceptre Blade",
   "gearCanon": {
-    "weapon": "Maahes Noon Bastion Sentinel Ma\u2019at Was-Sceptre Blade",
-    "armor": "Maahes Noon Bastion Electrum Wesekh Source-Plate",
-    "core": "Maahes Noon Bastion Khepri Solar Scarab Core",
+    "weapon": "Maahes Sentinel Ma\u2019at Was-Sceptre Blade",
+    "armor": "Maahes Electrum Wesekh Source-Plate",
+    "core": "Maahes Khepri Solar Scarab Core",
     "movementRelic": "Aten Hand-Ray Gate Step",
     "reactionRelic": "Uraeus Counter-Edict",
     "executionRelic": "Weigh the Name",

@@ -3,15 +3,15 @@
   "status": "ACTIVE",
   "sourceOfTruth": "canonical JSON records plus schema-validated manifests",
   "canonicalIds": {
-    "titan": "TG-TITAN-###",
+    "deity": "MG-DEITY-###",
     "mission": "TG-F##-C##-M## / TG-F##-E-C##-M##",
     "asset": "TITAN_### / BATTLEFIELD_### / GATE_### / CREATURE_###"
   },
   "exports": [
     {
-      "name": "TitanCombatData",
-      "source": "data/titans.json",
-      "schema": "schemas/titan.schema.json",
+      "name": "DeityCombatData",
+      "source": "data/deitys.json",
+      "schema": "schemas/deity.schema.json",
       "engineTargets": [
         "Unreal DataAsset",
         "Unity ScriptableObject"

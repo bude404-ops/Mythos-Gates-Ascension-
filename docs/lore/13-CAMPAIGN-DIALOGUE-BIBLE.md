@@ -112,7 +112,11 @@ Radiant, formal, restrained. Her compassion is structured; her fear is quiet.
 ### TG-CHAPTER-013 — The Mythos Gate
 **Gate Silhouette:** "Bring your measures. I have swallowed brighter laws."
 
+<<<<<<< HEAD
 **Aten Ra deity Voice:** "Then choke on this one."
+=======
+**Aten Ra Deity Voice:** "Then choke on this one."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 ### TG-CHAPTER-014 — Lanterns That Lie
 **Sayo:** "Count the lanterns only after closing your eyes. The honest ones remain warm."

@@ -9,7 +9,7 @@
     "combatFirstRule": "Monetization sits around PLAY → BATTLE → EARN → UPGRADE → UNLOCK → TRY NEW TITAN → HARDER CONTENT → PLAY AGAIN. The shop never becomes the center of the game.",
     "freePlayerPromise": [
       "Campaign playable",
-      "Titans earnable",
+      "Deities earnable",
       "Upgrades earnable",
       "Gear earnable",
       "Events playable",
@@ -52,7 +52,7 @@
       "earnable": true,
       "purchasable": false,
       "spend": [
-        "Titan upgrades",
+        "Deity upgrades",
         "Gear upgrades",
         "Routine progression"
       ],
@@ -80,13 +80,13 @@
       "legacyIds": [
         "TG-RES-GATE-SHARDS"
       ],
-      "displayName": "Titan Shards",
+      "displayName": "Deity Shards",
       "type": "COLLECTION",
       "earnable": true,
       "purchasable": "ACCELERATION_ONLY",
       "spend": [
-        "Titan unlocks",
-        "Titan rank progression"
+        "Deity unlocks",
+        "Deity rank progression"
       ],
       "cap": null
     }
@@ -98,7 +98,11 @@
       ],
       "earnable": true,
       "paid": "bundle acceleration only",
+<<<<<<< HEAD
       "use": "High-tier deity ascension"
+=======
+      "use": "High-tier Deity ascension"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     },
     "TITAN_RELICS": {
       "legacyIds": [
@@ -130,7 +134,11 @@
       ],
       "earnable": true,
       "paid": false,
+<<<<<<< HEAD
       "use": "divine mastery"
+=======
+      "use": "Deity mastery"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     },
     "TRIAL_FAVOR": {
       "legacyIds": [
@@ -155,7 +163,7 @@
       "raid": 24,
       "weeklyTrial": 10,
       "asyncArenaAttack": 6,
-      "titanTrial": 0
+      "deityTrial": 0
     },
     "refill": {
       "premiumCurrencyCost": 50,
@@ -171,9 +179,13 @@
     },
     "guardrails": [
       "Energy gates pacing, never permanent access.",
+<<<<<<< HEAD
       "Divine Trials and onboarding remain free.",
+=======
+      "Deity Trials and onboarding remain free.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "Paid refill limits prevent unlimited spend from replacing combat mastery.",
-      "If energy is empty, players can still inspect Titans, trial starter showcases, manage upgrades, and play zero-energy tutorial/trial content."
+      "If energy is empty, players can still inspect Deities, trial starter showcases, manage upgrades, and play zero-energy tutorial/trial content."
     ]
   },
   "rewards": {
@@ -225,8 +237,8 @@
       "premiumAccelerationAllowed": true
     }
   },
-  "titanUnlocking": {
-    "allTitansGameplayObtainable": true,
+  "deityUnlocking": {
+    "allDeitiesGameplayObtainable": true,
     "methods": [
       "campaign shard rewards",
       "boss rewards",
@@ -241,11 +253,11 @@
       "event convenience packs"
     ],
     "forbidden": [
-      "paid-exclusive Titans with combat advantage",
+      "paid-exclusive Deities with combat advantage",
       "permanent cash-only lock"
     ]
   },
-  "titanPower": {
+  "deityPower": {
     "directPowerSales": false,
     "maxPaidAdvantageRule": "Paid acceleration can shorten time to an earnable state but cannot create a stronger combat ceiling than free play.",
     "competitiveFairness": [
@@ -258,7 +270,7 @@
   "cosmetics": {
     "noCombatStats": true,
     "categories": [
-      "Titan skins",
+      "Deity skins",
       "alternate armor appearances",
       "attack visual effects",
       "ability visual effects",
@@ -304,7 +316,7 @@
       "additional shards",
       "additional resources",
       "exclusive cosmetics",
-      "Titan skins",
+      "Deity skins",
       "premium currency",
       "special effects",
       "profile cosmetics"

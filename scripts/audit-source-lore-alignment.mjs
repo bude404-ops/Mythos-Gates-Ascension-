@@ -5,7 +5,11 @@ const asText = (v) => JSON.stringify(v);
 const includesAny = (s, arr) => arr.some((x) => s.toLowerCase().includes(x.toLowerCase()));
 const missingTerms = (s, arr) => arr.filter((x) => !s.toLowerCase().includes(x.toLowerCase()));
 const sourcePattern = /source culture|source-culture|source cultures|humans later copied|Earth legend is (only )?the echo|Earth mythology is (only )?the later echo|Realm culture is the source|original source/i;
+<<<<<<< HEAD
 const oldScalePattern = /\b(one-active-deity|one active deity?|three-Deity|three deities?)\b/i;
+=======
+const oldScalePattern = /\b(one-active-Titan|one active deity?|three-Titan|one active deity?)\b/i;
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 const staleGenericPattern = /Low-tier gear component|not rewriting established Canon|distant pyramids|color language|museum version|generic RPG set dressing without faction/i;
 
 const factionCanon = {
@@ -78,7 +82,7 @@ const missionDialogue = read('data/mission-dialogue.json');
 const missionArtPackages = read('data/mission-art-packages.json');
 const monetization = read('data/monetization-policy.json');
 const battlefieldCanon = read('data/battlefield-canon-registry.json');
-const soloRoster = read('data/solo-titan-roster-redesign.json').titans;
+const soloRoster = read('data/solo-deity-roster-redesign.json').titans;
 const balancePass = read('data/titan-enemy-balance-pass.json').titans;
 const index = read('data/index.json');
 
@@ -101,7 +105,7 @@ function requireSource(label, obj) {
 
 // Global generated and sync checks.
 if (index.counts?.factions !== 7) issues.push(`index: expected 7 factions, found ${index.counts?.factions}`);
-if (index.counts?.titans !== 63) issues.push(`index: expected 63 titans, found ${index.counts?.titans}`);
+if (index.counts?.titans !== 63) issues.push(`index: expected 28 deities, found ${index.counts?.titans}`);
 if (index.counts?.missions !== 280) issues.push(`index: expected 280 missions, found ${index.counts?.missions}`);
 if (index.counts?.missionDialogue !== 280) issues.push(`index: expected 280 mission dialogue, found ${index.counts?.missionDialogue}`);
 if (index.counts?.missionArtPackages !== 280) issues.push(`index: expected 280 mission art packages, found ${index.counts?.missionArtPackages}`);

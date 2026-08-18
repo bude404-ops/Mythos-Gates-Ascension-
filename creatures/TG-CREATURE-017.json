@@ -9,7 +9,7 @@
   "status": "Gameplay Ready",
   "director": "Systems Director",
   "playable": false,
-  "lore": "A thin assassin that steals the memory of a Titan’s last tactic, forcing the Titan to adapt instead of repeat.",
+  "lore": "A thin assassin that steals the memory of a Deity’s last tactic, forcing the Deity to adapt instead of repeat.",
   "visualDescription": "Slender black blade-limbed figure, empty face veil, stolen glyphs orbiting its fingers, quiet white eye-cracks.",
   "abilities": [
     "Steal Pattern",
@@ -53,7 +53,11 @@
     "xpValue": 28
   },
   "scaling": {
+<<<<<<< HEAD
     "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+=======
+    "campaign": "Fixed mission bands; old wins should become easier as Deity level and gear rise.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +2 tactical AI priority.",
     "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
     "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"

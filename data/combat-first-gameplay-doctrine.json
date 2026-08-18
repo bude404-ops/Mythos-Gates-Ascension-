@@ -4,7 +4,11 @@
   "generated": "2026-08-16",
   "status": "IMPLEMENTED",
   "corePrinciple": "The fighting is the hook. Tactical mechanics create depth. Progression creates long-term retention.",
+<<<<<<< HEAD
   "primaryExperience": "The primary screen and primary player memory must be the deity battle, not menu management.",
+=======
+  "primaryExperience": "The primary screen and primary player memory must be the Deity battle, not menu management.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "combatLoop": [
     "Choose Deities",
     "Read the battlefield",
@@ -31,6 +35,7 @@
   ],
   "combatFeelRequirements": [
     "Every attack must communicate physical contact through animation, VFX, hit stop, enemy reaction, and damage feedback.",
+<<<<<<< HEAD
     "Powerful deity attacks must alter the camera, environment, enemy pose, or battlefield state before the player reads damage numbers.",
     "Ability availability, cooldown, status effects, and target validity must be visible without hiding the battlefield.",
     "Combat decisions must be made from the battlefield view whenever possible. Secondary panels explain; they do not replace fighting."
@@ -40,6 +45,17 @@
     "Each deity kit must express range, mobility, survivability, battlefield interaction, and signature moment potential.",
     "Legendary scale is shown through enemy reactions, environmental response, large readable animations, and distinct impact cadence.",
     "No deity may be differentiated only by stat deltas."
+=======
+    "Powerful Deity attacks must alter the camera, environment, enemy pose, or battlefield state before the player reads damage numbers.",
+    "Ability availability, cooldown, status effects, and target validity must be visible without hiding the battlefield.",
+    "Combat decisions must be made from the battlefield view whenever possible. Secondary panels explain; they do not replace fighting."
+  ],
+  "deityPowerRules": [
+    "Every Deity needs a recognizable combat silhouette and attack identity beyond damage and health.",
+    "Each deity kit must express range, mobility, survivability, battlefield interaction, and signature moment potential.",
+    "Legendary scale is shown through enemy reactions, environmental response, large readable animations, and distinct impact cadence.",
+    "No Deity may be differentiated only by stat deltas."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ],
   "tacticalDepthRules": [
     "Add mechanics only when they create an interesting combat decision.",
@@ -50,7 +66,11 @@
   "battlefieldRules": [
     "Every battlefield section must have a gameplay purpose: open combat area, choke, flank, elevation, landmark, hazard, objective zone, or cover rhythm.",
     "Beautiful environments without tactical function are rejected for core combat arenas.",
+<<<<<<< HEAD
     "3D layouts must preserve deity scale with readable lanes, large landmarks, and cinematic camera anchors.",
+=======
+    "3D layouts must preserve Deity scale with readable lanes, large landmarks, and cinematic camera anchors.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Battlefield interaction must support force movement, area attacks, protection plays, and comeback moments."
   ],
   "bigMomentTargets": [
@@ -62,23 +82,34 @@
     "comeback",
     "defensive breakthrough",
     "boss defeat",
-    "Titan protection save",
+    "Deity protection save",
     "terrain-triggered attack setup"
   ],
   "uiRules": [
     "Battlefield visibility outranks every secondary menu.",
     "Basic combat actions must not require multi-menu navigation.",
+<<<<<<< HEAD
     "Primary UI shows deity, health, movement, targets, ability availability, cooldowns, statuses, and objectives.",
+=======
+    "Primary UI shows Deity, health, movement, targets, ability availability, cooldowns, statuses, and objectives.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Secondary statistics must be collapsible or contextual and never dominate the battlefield."
   ],
   "progressionRules": [
     "Progression exists to make players excited to return to battle.",
     "Unlocks, shards, gear, upgrades, faction bonuses, bosses, events, and async defense must each answer what new combat expression they create.",
     "Reject spreadsheet-feeling progression that delays fighting without changing combat feel.",
+<<<<<<< HEAD
     "Upgrade prompts should make the player want to see what the deity does in battle."
   ],
   "replayabilityRules": [
     "Replayability must come from enjoyable fighting first, then difficulty, elite encounters, bosses, events, async defense, divine mastery, team combinations, and battlefield variations.",
+=======
+    "Upgrade prompts should make the player want to see what the Deity does in battle."
+  ],
+  "replayabilityRules": [
+    "Replayability must come from enjoyable fighting first, then difficulty, elite encounters, bosses, events, async defense, Deity mastery, team combinations, and battlefield variations.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Repeat modes must vary tactical problems rather than only increasing stats.",
     "Campaign completion should open better fights, not just larger checklists."
   ],
@@ -87,13 +118,17 @@
     "Does combat feel powerful?",
     "Does positioning matter?",
     "Do abilities feel different?",
-    "Do Titans feel enormous?",
+    "Do Deities feel enormous?",
     "Does the battlefield matter?",
     "Are there meaningful decisions?",
     "Are battles producing memorable moments?",
     "Would the player willingly play another battle immediately?"
   ],
+<<<<<<< HEAD
   "systemServiceTest": "Every system must make the deity battle more fun, more tactical, more satisfying, or more replayable. If it does not, reconsider whether it belongs in the core experience.",
+=======
+  "systemServiceTest": "Every system must make the Deity battle more fun, more tactical, more satisfying, or more replayable. If it does not, reconsider whether it belongs in the core experience.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "acceptanceGates": [
     {
       "id": "COMBAT_SCREEN_PRIMARY",
@@ -102,7 +137,7 @@
     },
     {
       "id": "TITAN_IDENTITY_NOT_STATS_ONLY",
-      "rule": "Titan differentiation must include attack identity, ability behavior, range/mobility/role expression, or battlefield interaction.",
+      "rule": "Deity differentiation must include attack identity, ability behavior, range/mobility/role expression, or battlefield interaction.",
       "severity": "blocker"
     },
     {

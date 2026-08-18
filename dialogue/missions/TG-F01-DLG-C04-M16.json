@@ -5,18 +5,31 @@
   "campaignType": "Normal",
   "status": "Production Ready",
   "tone": "restrained mythic tactical",
+<<<<<<< HEAD
   "briefing": "Mythos Gates briefing: Judge the Hidden-Sun Archive Antechamber: Final Approach. Enter Hidden-Sun Archive Antechamber on Sun-Scale Verdict Descent through The Sun-Scale Gate while the Gate remains Stable Gate under Ma’at strain. Reference deity voice is Amunet, but the player still chooses one deity from the faction roster. Objective: With one selected deity, survive the boss approach in the Hidden-Sun Archive Antechamber, secure the pressure fracture, and enter the chamber with the route law understood.",
   "lines": {
     "missionIntro": [
       {
         "speaker": "Amunet Divine Voice",
         "text": "The scale waits for weight, not noise. The Hidden-Sun Archive Antechamber will know whether one deity is enough."
+=======
+  "briefing": "Deity Silhouette of the False Dawn. Aten Ra advances through tiered sun platforms with simultaneous anchor points and overcharge hazards while the Gate tests whether solar law can hold under pressure.",
+  "lines": {
+    "missionIntro": [
+      {
+        "speaker": "Aten Ra Deity Voice",
+        "text": "The path asks for order. One active deity enter; none may mistake brightness for safety."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       }
     ],
     "enemyIntroduction": [
       {
         "speaker": "Lore Director",
+<<<<<<< HEAD
         "text": "Enemies are not filler here; they are the pre boss pressure of Sun-Scale Verdict Descent made hostile."
+=======
+        "text": "Threats emerge as a test of War of Deities: pressure first, revelation only when the field is held."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       }
     ],
     "midBattle": [
@@ -27,14 +40,24 @@
     ],
     "victory": [
       {
+<<<<<<< HEAD
         "speaker": "Amunet Divine Voice",
         "text": "The verdict remains harsh, but it names us lawful."
+=======
+        "speaker": "Aten Ra Deity Voice",
+        "text": "The Gate has not yielded. It has recorded that we did not break."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       }
     ],
     "defeat": [
       {
+<<<<<<< HEAD
         "speaker": "Amunet Divine Voice",
         "text": "Withdraw. The The Sun-Scale Gate has learned too much from this attempt."
+=======
+        "speaker": "Aten Ra Deity Voice",
+        "text": "Fall back before the wound learns our full shape."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       }
     ],
     "codex": [
@@ -43,6 +66,7 @@
         "text": "The Solar Dominion of Khepra is the source Realm; mortal myth is only the later echo. This beat documents Hidden-Sun Archive Antechamber as part of Sun-Scale Verdict Descent."
       }
     ]
+<<<<<<< HEAD
   },
   "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
   "visualDirection": "Frame Hidden-Sun Archive Antechamber as a pre boss node in Sun-Scale Verdict Descent; Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light.",
@@ -60,3 +84,7 @@
   "routeRoomName": "Hidden-Sun Archive Antechamber",
   "entryGate": "The Sun-Scale Gate"
 }
+=======
+  }
+}
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)

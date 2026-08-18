@@ -1,5 +1,5 @@
 {
-  "id": "TG-TITAN-017",
+  "id": "MG-DEITY-017",
   "slug": "ullr-snow-crown",
   "name": "Ullr Snow-Crown",
   "factionId": "TG-FACTION-002",
@@ -34,9 +34,13 @@
   "passives": [
     "Saga-Oath Blood: Ullr Snow-Crown gains Oathstorm when its guardian choices express Storm-Rooted Aesir Holds source-culture law through rune-storm ground; Earth myth is only the later echo."
   ],
-  "lore": "Ullr Snow-Crown is a colossal Asgardian guardian from The Storm-Rooted Aesir Holds. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Titan is the older source: Asgardian guardian office: oath/bodyguard law, interception, sacred threshold defense; Odin: ravens, sacrifice, runes, hidden wisdom, war kingship.",
+  "lore": "Ullr Snow-Crown is a colossal Asgardian guardian from The Storm-Rooted Aesir Holds. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Asgardian guardian office: oath/bodyguard law, interception, sacred threshold defense; Odin: ravens, sacrifice, runes, hidden wisdom, war kingship.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+<<<<<<< HEAD
   "visualDescription": "Full-body living myth-source deity, not a costume: Ullr Snow-Crown shows storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.. Role silhouette must read as Guardian. Materials include dark rune iron, storm steel, ash wood, wolf fur, raven feather shadow, oath red wax, bone white. The design must feel older than human mythology and avoid cartoon Viking, generic horned helmet cosplay, clean chrome, sci-fi power armor, glowing UI runes, blocky hammer mech.",
+=======
+  "visualDescription": "Full-body living myth-source Deity, not a costume: Ullr Snow-Crown shows storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.. Role silhouette must read as Guardian. Materials include dark rune iron, storm steel, ash wood, wolf fur, raven feather shadow, oath red wax, bone white. The design must feel older than human mythology and avoid cartoon Viking, generic horned helmet cosplay, clean chrome, sci-fi power armor, glowing UI runes, blocky hammer mech.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-017",
   "artworkId": null,
@@ -57,7 +61,7 @@
       ],
       "effect": "Deal Asgardian source-culture damage at range 1; generate Momentum and a small Oathstorm gain when used from rune-storm ground or against the marked target. The hit reads visually as rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars.",
       "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
       "name": "Rune-Thunder Technique \u2014 Punishing Guard",
@@ -89,7 +93,7 @@
       ],
       "effect": "Spend stored Oathstorm to impose a two-round rule from Storm-Rooted Aesir Holds: intercepts lethal paths, counters oathbreakers/trespassers, and turns defense into threat. Enemies receive a readable counter-window before the strongest effect lands.",
       "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
       "name": "Divine Ascension \u2014 Ragnarok Storm Unbound",
@@ -122,7 +126,7 @@
       "slot": "Armor Body",
       "rarityFloor": "Rare",
       "primaryStat": "armor",
-      "effect": "Improves survivability and makes the Titan read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "effect": "Improves survivability and makes the Deity read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
       "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
@@ -155,7 +159,11 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
+<<<<<<< HEAD
     "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+=======
+    "intendedDifficulty": "Tuned for harder solo encounters: every Deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "primaryRole": "counter bosses and protect survival windows",
     "budgetTarget": 105,
     "computedCombatPower": 212,

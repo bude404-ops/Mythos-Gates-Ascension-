@@ -64,7 +64,11 @@ Wound Gates are damaged reality scars. They can generate Gateborn entities and m
 
 ## Campaign and Dungeon Use
 
+<<<<<<< HEAD
 Every major campaign arc and major dungeon route should involve at least one Mythos Gate with a clear identity:
+=======
+Every major campaign arc should involve at least one Mythos Gate with a clear identity:
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 - What Realm law shaped it?
 - What event damaged or awakened it?

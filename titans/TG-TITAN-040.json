@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "id": "TG-TITAN-040",
   "slug": "morr-gan",
   "name": "Morrígan",
+=======
+  "id": "MG-DEITY-040",
+  "slug": "bran-granite-bough",
+  "name": "Bran Granite Bough",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "factionId": "TG-FACTION-005",
   "faction": "Tuatha",
   "rarity": "Mythic God",
@@ -34,10 +40,17 @@
   "passives": [
     "Geas Bloom: Bran gains Geas when breaker play marks armor, guard, or ritual structure for staged rupture on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
   ],
+<<<<<<< HEAD
   "lore": "Morrígan, Battle-Crow Fate Queen, is now canonized as one of the four playable deities of Tuatha. The deity is the source-realm divinity behind the mythology rather than a generic champion: war fate goddess, battle-crow prophecy, sovereignty terror and doom rupture. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses war fate goddess, battle-crow prophecy, sovereignty terror and doom rupture; confident, sovereign, readable in combat, loyal to the unchanged Tuatha canon.",
   "visualDescription": "Morrígan manifests as war fate goddess, battle-crow prophecy, sovereignty terror and doom rupture from Tuatha: striking dangerous feminine face, pale sharp cheekbones, black eyes, predatory lips, prophecy stare; tall fierce feminine warrior-seer physique, narrow waist, strong hips, long limbs, commanding predatory posture; signature silhouette: crow wing mantle, horned battle crown, long spear, feathered shadow outline. Weapon: black spear of fate and crow-feather sickle dagger. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
   "artStatus": "READY_FOR_GENERATION",
+=======
+  "lore": "Bran Granite Bough is a colossal Tuatha breaker from Avalora. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Tuatha breaker office: judgement rupture, armor sundering, trial by force; Morr\u00edgan: battle crow, fate, war prophecy.",
+  "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+  "visualDescription": "Full-body living myth-source Deity, not a costume: Bran Granite Bough shows silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.. Role silhouette must read as Breaker. Materials include moon silver, living oak bark, thorn vine, moss velvet, green-gold light, fae glass, crow black feather. The design must feel older than human mythology and avoid generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume.",
+  "artStatus": "Prompt Ready",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "artPromptId": "TG-PROMPT-040",
   "artworkId": null,
   "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
@@ -57,7 +70,7 @@
       ],
       "effect": "Deal Tuatha source-culture damage at range 2; generate Momentum and a small Geas Memory gain when used from silver-root fae ground or against the marked target. The hit reads visually as silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars.",
       "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
       "name": "Geas Thorn Technique — Rupture",
@@ -89,7 +102,7 @@
       ],
       "effect": "Spend stored Geas Memory to impose a two-round rule from Avalora: breaks guard, exposes vulnerability, and punishes armor or shield reliance. Enemies receive a readable counter-window before the strongest effect lands.",
       "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
       "name": "Divine Ascension — Tír na nÓg Moon-Sovereign Form",
@@ -122,7 +135,7 @@
       "slot": "Armor Body",
       "rarityFloor": "Rare",
       "primaryStat": "armor",
-      "effect": "Improves survivability and makes the Titan read as Avalora source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "effect": "Improves survivability and makes the Deity read as Avalora source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
       "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
@@ -155,7 +168,11 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
+<<<<<<< HEAD
     "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+=======
+    "intendedDifficulty": "Tuned for harder solo encounters: every Deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "primaryRole": "break armor, shields, and boss windows",
     "budgetTarget": 106,
     "computedCombatPower": 210,

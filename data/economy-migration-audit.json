@@ -12,7 +12,7 @@
     },
     {
       "area": "Gold",
-      "existing": "No authoritative GOLD resource found; existing runtime resources are Gate Shards, Ascension Ember, Titan Relics, Raid Tokens, Signature Alloy, Mastery Seals, Trial Favor.",
+      "existing": "No authoritative GOLD resource found; existing runtime resources are Gate Shards, Ascension Ember, Deity Relics, Raid Tokens, Signature Alloy, Mastery Seals, Trial Favor.",
       "action": "ADD_CORE_CURRENCY_AND_MIGRATE_RESOURCE_SCHEMA"
     },
     {
@@ -22,17 +22,22 @@
     },
     {
       "area": "Shards",
-      "existing": "Gate Shards exist in command hub runtime and rewards. Titan unlock shard concept exists but was not centralized.",
+      "existing": "Gate Shards exist in command hub runtime and rewards. Deity unlock shard concept exists but was not centralized.",
       "action": "CONSOLIDATE_GATE_SHARDS_AS_SHARDS_CORE_CURRENCY"
     },
     {
+<<<<<<< HEAD
       "area": "Titan unlocking",
       "existing": "Progression/onboarding supports unlock concepts and Trial previews. deities are not payment locked.",
+=======
+      "area": "Deity unlocking",
+      "existing": "Progression/onboarding supports unlock concepts and Trial previews. Deities are not payment locked.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "action": "KEEP_AND_BIND_TO_EARNABLE_SHARDS_CAMPAIGN_EVENTS_BOSSES"
     },
     {
       "area": "Gear/upgrades",
-      "existing": "Titan Relics, Signature Alloy, mastery, trial gear, and upgrade philosophy exist.",
+      "existing": "Deity Relics, Signature Alloy, mastery, trial gear, and upgrade philosophy exist.",
       "action": "KEEP_AS_GAMEPLAY_EARNED_PROGRESS_RESOURCES; PAID_ONLY_ACCELERATES"
     },
     {
@@ -81,6 +86,10 @@
     "Map TG-RES-GATE-SHARDS to SHARDS in economy views while preserving legacy id compatibility.",
     "Do not expose development test purchases in production mode.",
     "All premium purchases require server verification before grant.",
+<<<<<<< HEAD
     "Combat, campaign, divine trials, raids, and async arena remain playable without purchase."
+=======
+    "Combat, campaign, Deity trials, raids, and async arena remain playable without purchase."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ]
 }

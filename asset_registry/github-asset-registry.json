@@ -290,7 +290,7 @@
       "source": "github_or_external_pending",
       "lore_reference": "TG-MAP-008",
       "faction_reference": null,
-      "blueprint_reference": "3D_Blueprints/Battlefields/BATTLEFIELD_008_titan-gate-sun-throne/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Battlefields/BATTLEFIELD_008_mythos-gate-sun-throne/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2474,16 +2474,21 @@
     },
     {
       "asset_id": "TITAN_001",
+<<<<<<< HEAD
       "asset_type": "DEITY",
       "canonical_name": "Aten Ra, Solar Law King",
+=======
+      "asset_type": "TITAN",
+      "canonical_name": "Aten-Ra",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "source_file": null,
       "file_type": null,
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-001",
+      "lore_reference": "MG-DEITY-001",
       "faction_reference": "Aten Ra",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_001_aten-ra-solar-law-monolith/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_001_aten-ra-solar-law-monolith/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2495,7 +2500,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -2503,7 +2511,119 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_002",
+      "asset_type": "TITAN",
+      "canonical_name": "Khemet",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-002",
+      "faction_reference": "Aten Ra",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_002_khemet-suncrown/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_003",
+      "asset_type": "TITAN",
+      "canonical_name": "Nefra",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-003",
+      "faction_reference": "Aten Ra",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_003_nefra-obsidian-dawn/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_004",
+      "asset_type": "TITAN",
+      "canonical_name": "Orru",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-004",
+      "faction_reference": "Aten Ra",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_004_orru-prism-verdict/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -2511,16 +2631,21 @@
     },
     {
       "asset_id": "TITAN_005",
+<<<<<<< HEAD
       "asset_type": "DEITY",
       "canonical_name": "Sutekh, Red Land Storm God",
+=======
+      "asset_type": "TITAN",
+      "canonical_name": "Sutekh",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "source_file": null,
       "file_type": null,
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-005",
+      "lore_reference": "MG-DEITY-005",
       "faction_reference": "Aten Ra",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_005_sutekh-dune-eclipse/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_005_sutekh-dune-eclipse/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2540,7 +2665,7 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -2548,16 +2673,21 @@
     },
     {
       "asset_id": "TITAN_006",
+<<<<<<< HEAD
       "asset_type": "DEITY",
       "canonical_name": "Iset, Throne-Magic Mother",
+=======
+      "asset_type": "TITAN",
+      "canonical_name": "Iset",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "source_file": null,
       "file_type": null,
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-006",
+      "lore_reference": "MG-DEITY-006",
       "faction_reference": "Aten Ra",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_006_iset-riverlight-throne/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_006_iset-riverlight-throne/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2569,7 +2699,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -2577,7 +2710,82 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_007",
+      "asset_type": "TITAN",
+      "canonical_name": "Karnu",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-007",
+      "faction_reference": "Aten Ra",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_007_karnu-glass-horizon/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_008",
+      "asset_type": "TITAN",
+      "canonical_name": "Maahes",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-008",
+      "faction_reference": "Aten Ra",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_008_maahes-noon-bastion/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -2585,16 +2793,21 @@
     },
     {
       "asset_id": "TITAN_009",
+<<<<<<< HEAD
       "asset_type": "DEITY",
       "canonical_name": "Amunet, Hidden Breath Goddess",
+=======
+      "asset_type": "TITAN",
+      "canonical_name": "Amunet",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "source_file": null,
       "file_type": null,
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-009",
+      "lore_reference": "MG-DEITY-009",
       "faction_reference": "Aten Ra",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_009_amunet-hidden-sun/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_009_amunet-hidden-sun/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2614,7 +2827,7 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -2629,9 +2842,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-010",
+      "lore_reference": "MG-DEITY-010",
       "faction_reference": "Asgardian",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_010_the-allfather-stormvein/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_010_the-allfather-stormvein/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2651,7 +2864,7 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -2666,9 +2879,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-011",
+      "lore_reference": "MG-DEITY-011",
       "faction_reference": "Asgardian",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_011_hrothar-rune-mountain/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_011_hrothar-rune-mountain/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2680,7 +2893,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -2688,7 +2904,119 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_012",
+      "asset_type": "TITAN",
+      "canonical_name": "Skeld Iron Tempest",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-012",
+      "faction_reference": "Asgardian",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_012_skeld-iron-tempest/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_013",
+      "asset_type": "TITAN",
+      "canonical_name": "Eirwyn Valkstorm",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-013",
+      "faction_reference": "Asgardian",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_013_eirwyn-valkstorm/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_014",
+      "asset_type": "TITAN",
+      "canonical_name": "Mordun Frost-Anvil",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-014",
+      "faction_reference": "Asgardian",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_014_mordun-frost-anvil/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -2703,9 +3031,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-015",
+      "lore_reference": "MG-DEITY-015",
       "faction_reference": "Asgardian",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_015_veyra-thunderloom/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_015_veyra-thunderloom/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2717,7 +3045,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -2725,7 +3056,82 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_016",
+      "asset_type": "TITAN",
+      "canonical_name": "Ragnor Skybreaker",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-016",
+      "faction_reference": "Asgardian",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_016_ragnor-skybreaker/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_017",
+      "asset_type": "TITAN",
+      "canonical_name": "Ullr Snow-Crown",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-017",
+      "faction_reference": "Asgardian",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_017_ullr-snow-crown/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -2740,9 +3146,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-018",
+      "lore_reference": "MG-DEITY-018",
       "faction_reference": "Asgardian",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_018_sigrun-oathflare/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_018_sigrun-oathflare/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2762,7 +3168,7 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -2777,9 +3183,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-019",
+      "lore_reference": "MG-DEITY-019",
       "faction_reference": "Olympian",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_019_aurelion-heaven-marrow/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_019_aurelion-heaven-marrow/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2791,7 +3197,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -2799,7 +3208,82 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_020",
+      "asset_type": "TITAN",
+      "canonical_name": "Kallix Marble Thunder",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-020",
+      "faction_reference": "Olympian",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_020_kallix-marble-thunder/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_021",
+      "asset_type": "TITAN",
+      "canonical_name": "Thyressa Golden Aegis",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-021",
+      "faction_reference": "Olympian",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_021_thyressa-golden-aegis/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -2814,9 +3298,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-022",
+      "lore_reference": "MG-DEITY-022",
       "faction_reference": "Olympian",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_022_ilyon-laurel-flame/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_022_ilyon-laurel-flame/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2836,7 +3320,7 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -2851,9 +3335,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-023",
+      "lore_reference": "MG-DEITY-023",
       "faction_reference": "Olympian",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_023_nikos-star-lance/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_023_nikos-star-lance/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2865,7 +3349,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -2873,7 +3360,82 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_024",
+      "asset_type": "TITAN",
+      "canonical_name": "Dione Victory Mirror",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-024",
+      "faction_reference": "Olympian",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_024_dione-victory-mirror/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_025",
+      "asset_type": "TITAN",
+      "canonical_name": "Helior Bronze Summit",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-025",
+      "faction_reference": "Olympian",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_025_helior-bronze-summit/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -2888,9 +3450,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-026",
+      "lore_reference": "MG-DEITY-026",
       "faction_reference": "Olympian",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_026_pallas-oath-spear/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_026_pallas-oath-spear/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2902,7 +3464,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -2910,7 +3475,45 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_027",
+      "asset_type": "TITAN",
+      "canonical_name": "Eiren Crowned Horizon",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-027",
+      "faction_reference": "Olympian",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_027_eiren-crowned-horizon/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -2925,9 +3528,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-028",
+      "lore_reference": "MG-DEITY-028",
       "faction_reference": "Kami",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_028_amaterion-spirit-sun/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_028_amaterion-spirit-sun/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2947,7 +3550,7 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -2962,9 +3565,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-029",
+      "lore_reference": "MG-DEITY-029",
       "faction_reference": "Kami",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_029_tsukiro-moon-veil/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_029_tsukiro-moon-veil/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -2976,7 +3579,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -2984,7 +3590,82 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_030",
+      "asset_type": "TITAN",
+      "canonical_name": "Raidenko Storm Script",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-030",
+      "faction_reference": "Kami",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_030_raidenko-storm-script/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_031",
+      "asset_type": "TITAN",
+      "canonical_name": "Mizuka Shrine Tide",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-031",
+      "faction_reference": "Kami",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_031_mizuka-shrine-tide/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -2999,9 +3680,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-032",
+      "lore_reference": "MG-DEITY-032",
       "faction_reference": "Kami",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_032_kageyori-shadow-gate/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_032_kageyori-shadow-gate/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -3021,7 +3702,7 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -3036,9 +3717,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-033",
+      "lore_reference": "MG-DEITY-033",
       "faction_reference": "Kami",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_033_hanae-blossom-ward/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_033_hanae-blossom-ward/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -3050,7 +3731,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -3058,7 +3742,119 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_034",
+      "asset_type": "TITAN",
+      "canonical_name": "Onimaru Red Seal",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-034",
+      "faction_reference": "Kami",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_034_onimaru-red-seal/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_035",
+      "asset_type": "TITAN",
+      "canonical_name": "Korin Mist Path",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-035",
+      "faction_reference": "Kami",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_035_korin-mist-path/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_036",
+      "asset_type": "TITAN",
+      "canonical_name": "Yamabito Stone Prayer",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-036",
+      "faction_reference": "Kami",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_036_yamabito-stone-prayer/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -3073,9 +3869,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-037",
+      "lore_reference": "MG-DEITY-037",
       "faction_reference": "Tuatha",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_037_dagoran-root-crown/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_037_dagoran-root-crown/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -3087,7 +3883,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -3095,7 +3894,82 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_038",
+      "asset_type": "TITAN",
+      "canonical_name": "Eryndor Emerald Oath",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-038",
+      "faction_reference": "Tuatha",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_038_eryndor-emerald-oath/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_039",
+      "asset_type": "TITAN",
+      "canonical_name": "Melian Moon-Grove",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-039",
+      "faction_reference": "Tuatha",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_039_melian-moon-grove/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -3110,9 +3984,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-040",
+      "lore_reference": "MG-DEITY-040",
       "faction_reference": "Tuatha",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_040_bran-granite-bough/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_040_bran-granite-bough/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -3132,7 +4006,7 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -3147,9 +4021,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-041",
+      "lore_reference": "MG-DEITY-041",
       "faction_reference": "Tuatha",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_041_nimue-silver-pool/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_041_nimue-silver-pool/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -3169,7 +4043,7 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -3184,9 +4058,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-042",
+      "lore_reference": "MG-DEITY-042",
       "faction_reference": "Tuatha",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_042_cernan-wild-vale/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_042_cernan-wild-vale/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -3198,7 +4072,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -3206,7 +4083,119 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_043",
+      "asset_type": "TITAN",
+      "canonical_name": "Ailbhe Thorn-Song",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-043",
+      "faction_reference": "Tuatha",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_043_ailbhe-thorn-song/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_044",
+      "asset_type": "TITAN",
+      "canonical_name": "Oghma Stone Script",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-044",
+      "faction_reference": "Tuatha",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_044_oghma-stone-script/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_045",
+      "asset_type": "TITAN",
+      "canonical_name": "Tara Dawn Barrow",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-045",
+      "faction_reference": "Tuatha",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_045_tara-dawn-barrow/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -3214,16 +4203,21 @@
     },
     {
       "asset_id": "TITAN_046",
+<<<<<<< HEAD
       "asset_type": "DEITY",
       "canonical_name": "Michael, Sword of the Highest Gate",
+=======
+      "asset_type": "TITAN",
+      "canonical_name": "Seraphel",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "source_file": null,
       "file_type": null,
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-046",
+      "lore_reference": "MG-DEITY-046",
       "faction_reference": "Empyrean",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_046_seraphel-the-throne-eternal/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_046_seraphel-the-throne-eternal/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -3235,7 +4229,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -3243,7 +4240,45 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_047",
+      "asset_type": "TITAN",
+      "canonical_name": "Caelion Dawnborn Axis",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-047",
+      "faction_reference": "Empyrean",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_047_caelion-dawnborn-axis/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -3258,9 +4293,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-048",
+      "lore_reference": "MG-DEITY-048",
       "faction_reference": "Empyrean",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_048_aurelia-radiant-spear/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_048_aurelia-radiant-spear/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -3272,7 +4307,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -3280,7 +4318,45 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_049",
+      "asset_type": "TITAN",
+      "canonical_name": "Malachor Law Warden",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-049",
+      "faction_reference": "Empyrean",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_049_malachor-law-warden/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -3295,9 +4371,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-050",
+      "lore_reference": "MG-DEITY-050",
       "faction_reference": "Empyrean",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_050_elyndra-choir-crown/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_050_elyndra-choir-crown/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -3309,7 +4385,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -3317,7 +4396,82 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_051",
+      "asset_type": "TITAN",
+      "canonical_name": "Orison White Citadel",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-051",
+      "faction_reference": "Empyrean",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_051_orison-white-citadel/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_052",
+      "asset_type": "TITAN",
+      "canonical_name": "Vespera Mercy Blade",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-052",
+      "faction_reference": "Empyrean",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_052_vespera-mercy-blade/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -3332,9 +4486,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-053",
+      "lore_reference": "MG-DEITY-053",
       "faction_reference": "Empyrean",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_053_axiom-gate-choir/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_053_axiom-gate-choir/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -3346,7 +4500,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -3354,7 +4511,45 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_054",
+      "asset_type": "TITAN",
+      "canonical_name": "Theon Still Horizon",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-054",
+      "faction_reference": "Empyrean",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_054_theon-still-horizon/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -3362,16 +4557,21 @@
     },
     {
       "asset_id": "TITAN_055",
+<<<<<<< HEAD
       "asset_type": "DEITY",
       "canonical_name": "Lucifer, Morningstar Thronebreaker",
+=======
+      "asset_type": "TITAN",
+      "canonical_name": "Mordrath",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "source_file": null,
       "file_type": null,
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-055",
+      "lore_reference": "MG-DEITY-055",
       "faction_reference": "Infernal Dominion",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_055_mordrath-the-infernal-king/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_055_mordrath-the-infernal-king/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -3383,7 +4583,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -3391,7 +4594,45 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_056",
+      "asset_type": "TITAN",
+      "canonical_name": "Varkul Bloodforged Crown",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-056",
+      "faction_reference": "Infernal Dominion",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_056_varkul-bloodforged-crown/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -3406,9 +4647,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-057",
+      "lore_reference": "MG-DEITY-057",
       "faction_reference": "Infernal Dominion",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_057_nyxara-flameborn-court/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_057_nyxara-flameborn-court/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -3428,7 +4669,7 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -3443,9 +4684,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-058",
+      "lore_reference": "MG-DEITY-058",
       "faction_reference": "Infernal Dominion",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_058_azrakar-chainwarden/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_058_azrakar-chainwarden/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -3457,7 +4698,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -3465,7 +4709,45 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_059",
+      "asset_type": "TITAN",
+      "canonical_name": "Orryx Ash Dominion",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-059",
+      "faction_reference": "Infernal Dominion",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_059_orryx-ash-dominion/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },
@@ -3480,9 +4762,9 @@
       "version": "v000",
       "status": "AWAITING_SOURCE_ASSET",
       "source": "github_or_external_pending",
-      "lore_reference": "TG-TITAN-060",
+      "lore_reference": "MG-DEITY-060",
       "faction_reference": "Infernal Dominion",
-      "blueprint_reference": "3D_Blueprints/Characters/Titans/TITAN_060_malvera-ember-throne/metadata.json",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_060_malvera-ember-throne/metadata.json",
       "model_reference": null,
       "material_reference": null,
       "rig_reference": null,
@@ -3494,7 +4776,10 @@
       "collision_status": "REQUIRED_UNKNOWN",
       "validation_status": "NEEDS_SOURCE_ASSET",
       "created_date": "2026-08-13",
+<<<<<<< HEAD
       "updated_date": "2026-08-17",
+=======
+      "updated_date": "2026-08-13",
       "versions": {
         "current": "v000",
         "previous": [],
@@ -3502,7 +4787,119 @@
       },
       "source_slots": {},
       "storage": {
-        "repository_path": "assets/3d/titans/",
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_061",
+      "asset_type": "TITAN",
+      "canonical_name": "Kharon Black Iron",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-061",
+      "faction_reference": "Infernal Dominion",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_061_kharon-black-iron/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_062",
+      "asset_type": "TITAN",
+      "canonical_name": "Sablex Cinder Duke",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-062",
+      "faction_reference": "Infernal Dominion",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_062_sablex-cinder-duke/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
+        "external_uri": null,
+        "lfs_recommended": true
+      },
+      "scale_reference": "MASTER_SCALE"
+    },
+    {
+      "asset_id": "TITAN_063",
+      "asset_type": "TITAN",
+      "canonical_name": "Zerath Wound Gate",
+      "source_file": null,
+      "file_type": null,
+      "version": "v000",
+      "status": "AWAITING_SOURCE_ASSET",
+      "source": "github_or_external_pending",
+      "lore_reference": "MG-DEITY-063",
+      "faction_reference": "Infernal Dominion",
+      "blueprint_reference": "3D_Blueprints/Characters/Deities/TITAN_063_zerath-wound-gate/metadata.json",
+      "model_reference": null,
+      "material_reference": null,
+      "rig_reference": null,
+      "animation_reference": null,
+      "vfx_reference": null,
+      "battlefield_references": [],
+      "dependencies": [],
+      "lod_status": "REQUIRED_UNKNOWN",
+      "collision_status": "REQUIRED_UNKNOWN",
+      "validation_status": "NEEDS_SOURCE_ASSET",
+      "created_date": "2026-08-13",
+      "updated_date": "2026-08-13",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
+      "versions": {
+        "current": "v000",
+        "previous": [],
+        "archived": []
+      },
+      "source_slots": {},
+      "storage": {
+        "repository_path": "assets/3d/deitys/",
         "external_uri": null,
         "lfs_recommended": true
       },

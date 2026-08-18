@@ -38,16 +38,22 @@
         "sand that remembers bloodlines"
       ],
       "combatPhilosophy": "Defensive command, radiant control, judgment zones, solar sustain.",
+<<<<<<< HEAD
       "factionPassive": "Solar Law: coordinated deities gain defensive clarity after holding objectives.",
       "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed chosen deity.",
       "titanDesignPhilosophy": "Every Aten Ra deity expresses Defensive command, radiant control, judgment zones, solar sustain. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+=======
+      "factionPassive": "Solar Law: coordinated Deities gain defensive clarity after holding objectives.",
+      "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed chosen Deity.",
+      "deityDesignPhilosophy": "Every Aten Ra Deity expresses Defensive command, radiant control, judgment zones, solar sustain. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "enemyDesignPhilosophy": "Enemies in Aten Ra content should test the faction conflict: Their law can heal chaos, but it can also harden into tyranny when other Realms refuse the Solar Measure.",
       "factionProgression": {
         "source": "Use factionMastery save data and campaign progression; preserve IDs.",
         "rewards": [
           "faction cosmetics",
           "relics",
-          "Titan shards",
+          "Deity shards",
           "Codex entries",
           "titles",
           "special missions",
@@ -61,22 +67,31 @@
         "discoveryRole": "Introduce this faction as a new world, not a reward track."
       },
       "factionChallenges": [
+<<<<<<< HEAD
         "divine trial",
+=======
+        "Deity trial",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "faction trial",
         "elite remix",
         "boss rematch",
         "raid modifier",
+<<<<<<< HEAD
         "asynchronous defensive deity snapshot"
+=======
+        "asynchronous defensive Deity snapshot"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "factionMastery": "Relationship deepening: Codex, cosmetics, relic identity, personal quests, and trial access before numerical power.",
-      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other Titans to win through mastery.",
-      "titans": [
+      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other deities to win through mastery.",
+      "deitys": [
         {
-          "id": "TG-TITAN-001",
-          "name": "Aten-Ra, Solar Law Monolith",
+          "id": "MG-DEITY-001",
+          "name": "Aten-Ra",
           "role": "Defender"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-005",
           "name": "Khemet Suncrown",
           "role": "Battery"
@@ -89,19 +104,34 @@
         {
           "id": "TG-TITAN-009",
           "name": "Orru Prism Verdict",
+=======
+          "id": "MG-DEITY-002",
+          "name": "Khemet",
+          "role": "Battery"
+        },
+        {
+          "id": "MG-DEITY-003",
+          "name": "Nefra",
+          "role": "Controller"
+        },
+        {
+          "id": "MG-DEITY-004",
+          "name": "Orru",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "role": "Breaker"
         },
         {
-          "id": "TG-TITAN-005",
-          "name": "Sutekh Dune Eclipse",
+          "id": "MG-DEITY-005",
+          "name": "Sutekh",
           "role": "Disruptor"
         },
         {
-          "id": "TG-TITAN-006",
-          "name": "Iset Riverlight Throne",
+          "id": "MG-DEITY-006",
+          "name": "Iset",
           "role": "Sustain"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-006",
           "name": "Karnu Glass Horizon",
           "role": "Artillery"
@@ -109,11 +139,20 @@
         {
           "id": "TG-TITAN-009",
           "name": "Maahes Noon Bastion",
+=======
+          "id": "MG-DEITY-007",
+          "name": "Karnu",
+          "role": "Artillery"
+        },
+        {
+          "id": "MG-DEITY-008",
+          "name": "Maahes",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "role": "Guardian"
         },
         {
-          "id": "TG-TITAN-009",
-          "name": "Amunet Hidden Sun",
+          "id": "MG-DEITY-009",
+          "name": "Amunet",
           "role": "Assassin"
         }
       ]
@@ -145,15 +184,20 @@
       ],
       "combatPhilosophy": "Durable assault, counterattack, storm pressure, oath-based endurance.",
       "factionPassive": "Oathbound: surviving damage strengthens the next committed strike.",
+<<<<<<< HEAD
       "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed chosen deity.",
       "titanDesignPhilosophy": "Every Asgardian deity expresses Durable assault, counterattack, storm pressure, oath-based endurance. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+=======
+      "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed chosen Deity.",
+      "deityDesignPhilosophy": "Every Asgardian Deity expresses Durable assault, counterattack, storm pressure, oath-based endurance. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "enemyDesignPhilosophy": "Enemies in Asgardian content should test the faction conflict: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.",
       "factionProgression": {
         "source": "Use factionMastery save data and campaign progression; preserve IDs.",
         "rewards": [
           "faction cosmetics",
           "relics",
-          "Titan shards",
+          "Deity shards",
           "Codex entries",
           "titles",
           "special missions",
@@ -167,58 +211,86 @@
         "discoveryRole": "Introduce this faction as a new world, not a reward track."
       },
       "factionChallenges": [
+<<<<<<< HEAD
         "divine trial",
+=======
+        "Deity trial",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "faction trial",
         "elite remix",
         "boss rematch",
         "raid modifier",
+<<<<<<< HEAD
         "asynchronous defensive deity snapshot"
+=======
+        "asynchronous defensive Deity snapshot"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "factionMastery": "Relationship deepening: Codex, cosmetics, relic identity, personal quests, and trial access before numerical power.",
-      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other Titans to win through mastery.",
-      "titans": [
+      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other deities to win through mastery.",
+      "deitys": [
         {
-          "id": "TG-TITAN-010",
+          "id": "MG-DEITY-010",
           "name": "The Allfather Stormvein",
           "role": "Defender"
         },
         {
-          "id": "TG-TITAN-011",
+          "id": "MG-DEITY-011",
           "name": "Hrothar Rune-Mountain",
           "role": "Battery"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-015",
+=======
+          "id": "MG-DEITY-012",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Skeld Iron Tempest",
           "role": "Controller"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-018",
+=======
+          "id": "MG-DEITY-013",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Eirwyn Valkstorm",
           "role": "Breaker"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-010",
+=======
+          "id": "MG-DEITY-014",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Mordun Frost-Anvil",
           "role": "Disruptor"
         },
         {
-          "id": "TG-TITAN-015",
+          "id": "MG-DEITY-015",
           "name": "Veyra Thunderloom",
           "role": "Sustain"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-015",
+=======
+          "id": "MG-DEITY-016",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Ragnor Skybreaker",
           "role": "Artillery"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-018",
+=======
+          "id": "MG-DEITY-017",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Ullr Snow-Crown",
           "role": "Guardian"
         },
         {
-          "id": "TG-TITAN-018",
+          "id": "MG-DEITY-018",
           "name": "Sigrun Oathflare",
           "role": "Assassin"
         }
@@ -251,15 +323,20 @@
       ],
       "combatPhilosophy": "Elite balanced pressure, precision, dueling, morale momentum.",
       "factionPassive": "Laurel Supremacy: excellence chains bonuses after clean tactical execution.",
+<<<<<<< HEAD
       "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed chosen deity.",
       "titanDesignPhilosophy": "Every Olympian deity expresses Elite balanced pressure, precision, dueling, morale momentum. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+=======
+      "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed chosen Deity.",
+      "deityDesignPhilosophy": "Every Olympian Deity expresses Elite balanced pressure, precision, dueling, morale momentum. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "enemyDesignPhilosophy": "Enemies in Olympian content should test the faction conflict: Glory unites them in public and divides them in private; every victory creates a jealous shadow.",
       "factionProgression": {
         "source": "Use factionMastery save data and campaign progression; preserve IDs.",
         "rewards": [
           "faction cosmetics",
           "relics",
-          "Titan shards",
+          "Deity shards",
           "Codex entries",
           "titles",
           "special missions",
@@ -273,58 +350,86 @@
         "discoveryRole": "Introduce this faction as a new world, not a reward track."
       },
       "factionChallenges": [
+<<<<<<< HEAD
         "divine trial",
+=======
+        "Deity trial",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "faction trial",
         "elite remix",
         "boss rematch",
         "raid modifier",
+<<<<<<< HEAD
         "asynchronous defensive deity snapshot"
+=======
+        "asynchronous defensive Deity snapshot"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "factionMastery": "Relationship deepening: Codex, cosmetics, relic identity, personal quests, and trial access before numerical power.",
-      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other Titans to win through mastery.",
-      "titans": [
+      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other deities to win through mastery.",
+      "deitys": [
         {
-          "id": "TG-TITAN-019",
+          "id": "MG-DEITY-019",
           "name": "Aurelion Heaven-Marrow",
           "role": "Defender"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-022",
+=======
+          "id": "MG-DEITY-020",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Kallix Marble Thunder",
           "role": "Battery"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-023",
+=======
+          "id": "MG-DEITY-021",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Thyressa Golden Aegis",
           "role": "Controller"
         },
         {
-          "id": "TG-TITAN-022",
+          "id": "MG-DEITY-022",
           "name": "Ilyon Laurel Flame",
           "role": "Breaker"
         },
         {
-          "id": "TG-TITAN-023",
+          "id": "MG-DEITY-023",
           "name": "Nikos Star-Lance",
           "role": "Disruptor"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-022",
+=======
+          "id": "MG-DEITY-024",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Dione Victory Mirror",
           "role": "Sustain"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-023",
+=======
+          "id": "MG-DEITY-025",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Helior Bronze Summit",
           "role": "Artillery"
         },
         {
-          "id": "TG-TITAN-026",
+          "id": "MG-DEITY-026",
           "name": "Pallas Oath-Spear",
           "role": "Guardian"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-019",
+=======
+          "id": "MG-DEITY-027",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Eiren Crowned Horizon",
           "role": "Assassin"
         }
@@ -357,15 +462,20 @@
       ],
       "combatPhilosophy": "Precise control, repositioning, evasion, spirit terrain, disciplined burst.",
       "factionPassive": "Sacred Balance: careful positioning unlocks spirit precision effects.",
+<<<<<<< HEAD
       "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed chosen deity.",
       "titanDesignPhilosophy": "Every Kami deity expresses Precise control, repositioning, evasion, spirit terrain, disciplined burst. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+=======
+      "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed chosen Deity.",
+      "deityDesignPhilosophy": "Every Kami Deity expresses Precise control, repositioning, evasion, spirit terrain, disciplined burst. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "enemyDesignPhilosophy": "Enemies in Kami content should test the faction conflict: Their secrecy protects sacred balance but makes allies fear what they cannot see.",
       "factionProgression": {
         "source": "Use factionMastery save data and campaign progression; preserve IDs.",
         "rewards": [
           "faction cosmetics",
           "relics",
-          "Titan shards",
+          "Deity shards",
           "Codex entries",
           "titles",
           "special missions",
@@ -379,58 +489,86 @@
         "discoveryRole": "Introduce this faction as a new world, not a reward track."
       },
       "factionChallenges": [
+<<<<<<< HEAD
         "divine trial",
+=======
+        "Deity trial",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "faction trial",
         "elite remix",
         "boss rematch",
         "raid modifier",
+<<<<<<< HEAD
         "asynchronous defensive deity snapshot"
+=======
+        "asynchronous defensive Deity snapshot"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "factionMastery": "Relationship deepening: Codex, cosmetics, relic identity, personal quests, and trial access before numerical power.",
-      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other Titans to win through mastery.",
-      "titans": [
+      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other deities to win through mastery.",
+      "deitys": [
         {
-          "id": "TG-TITAN-028",
+          "id": "MG-DEITY-028",
           "name": "Amaterion Spirit-Sun",
           "role": "Defender"
         },
         {
-          "id": "TG-TITAN-029",
+          "id": "MG-DEITY-029",
           "name": "Tsukiro Moon-Veil",
           "role": "Battery"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-032",
+=======
+          "id": "MG-DEITY-030",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Raidenko Storm Script",
           "role": "Controller"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-033",
+=======
+          "id": "MG-DEITY-031",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Mizuka Shrine Tide",
           "role": "Breaker"
         },
         {
-          "id": "TG-TITAN-032",
+          "id": "MG-DEITY-032",
           "name": "Kageyori Shadow Gate",
           "role": "Disruptor"
         },
         {
-          "id": "TG-TITAN-033",
+          "id": "MG-DEITY-033",
           "name": "Hanae Blossom Ward",
           "role": "Sustain"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-032",
+=======
+          "id": "MG-DEITY-034",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Onimaru Red Seal",
           "role": "Artillery"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-033",
+=======
+          "id": "MG-DEITY-035",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Korin Mist Path",
           "role": "Guardian"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-028",
+=======
+          "id": "MG-DEITY-036",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Yamabito Stone Prayer",
           "role": "Assassin"
         }
@@ -459,19 +597,28 @@
       "realmHazards": [
         "Roots that bind liars",
         "fae bargains hidden in birdsong",
+<<<<<<< HEAD
         "barrow lights that lure deities into old wars"
       ],
       "combatPhilosophy": "Adaptation, healing, roots, terrain control, endurance through life systems.",
       "factionPassive": "Living Grove: terrain and sustain effects grow stronger over time.",
       "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed chosen deity.",
       "titanDesignPhilosophy": "Every Tuatha deity expresses Adaptation, healing, roots, terrain control, endurance through life systems. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+=======
+        "barrow lights that lure Deities into old wars"
+      ],
+      "combatPhilosophy": "Adaptation, healing, roots, terrain control, endurance through life systems.",
+      "factionPassive": "Living Grove: terrain and sustain effects grow stronger over time.",
+      "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed chosen Deity.",
+      "deityDesignPhilosophy": "Every Tuatha Deity expresses Adaptation, healing, roots, terrain control, endurance through life systems. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "enemyDesignPhilosophy": "Enemies in Tuatha content should test the faction conflict: Their memory is power, but it can become vengeance when old wounds refuse to compost.",
       "factionProgression": {
         "source": "Use factionMastery save data and campaign progression; preserve IDs.",
         "rewards": [
           "faction cosmetics",
           "relics",
-          "Titan shards",
+          "Deity shards",
           "Codex entries",
           "titles",
           "special missions",
@@ -485,58 +632,86 @@
         "discoveryRole": "Introduce this faction as a new world, not a reward track."
       },
       "factionChallenges": [
+<<<<<<< HEAD
         "divine trial",
+=======
+        "Deity trial",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "faction trial",
         "elite remix",
         "boss rematch",
         "raid modifier",
+<<<<<<< HEAD
         "asynchronous defensive deity snapshot"
+=======
+        "asynchronous defensive Deity snapshot"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "factionMastery": "Relationship deepening: Codex, cosmetics, relic identity, personal quests, and trial access before numerical power.",
-      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other Titans to win through mastery.",
-      "titans": [
+      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other deities to win through mastery.",
+      "deitys": [
         {
-          "id": "TG-TITAN-037",
+          "id": "MG-DEITY-037",
           "name": "Dagoran Root-Crown",
           "role": "Defender"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-040",
+=======
+          "id": "MG-DEITY-038",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Eryndor Emerald Oath",
           "role": "Battery"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-041",
+=======
+          "id": "MG-DEITY-039",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Melian Moon-Grove",
           "role": "Controller"
         },
         {
-          "id": "TG-TITAN-040",
+          "id": "MG-DEITY-040",
           "name": "Bran Granite Bough",
           "role": "Breaker"
         },
         {
-          "id": "TG-TITAN-041",
+          "id": "MG-DEITY-041",
           "name": "Nimue Silver Pool",
           "role": "Disruptor"
         },
         {
-          "id": "TG-TITAN-042",
+          "id": "MG-DEITY-042",
           "name": "Cernan Wild Vale",
           "role": "Sustain"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-041",
+=======
+          "id": "MG-DEITY-043",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Ailbhe Thorn-Song",
           "role": "Artillery"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-042",
+=======
+          "id": "MG-DEITY-044",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Oghma Stone Script",
           "role": "Guardian"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-037",
+=======
+          "id": "MG-DEITY-045",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Tara Dawn Barrow",
           "role": "Assassin"
         }
@@ -569,15 +744,20 @@
       ],
       "combatPhilosophy": "Protection, order-locks, shields, anti-chaos control, battle lineless aura play.",
       "factionPassive": "Radiant Edict: structured actions reduce chaos effects and protect allies.",
+<<<<<<< HEAD
       "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed chosen deity.",
       "titanDesignPhilosophy": "Every Empyrean deity expresses Protection, order-locks, shields, anti-chaos control, battle lineless aura play. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+=======
+      "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed chosen Deity.",
+      "deityDesignPhilosophy": "Every Empyrean Deity expresses Protection, order-locks, shields, anti-chaos control, battle lineless aura play. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "enemyDesignPhilosophy": "Enemies in Empyrean content should test the faction conflict: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.",
       "factionProgression": {
         "source": "Use factionMastery save data and campaign progression; preserve IDs.",
         "rewards": [
           "faction cosmetics",
           "relics",
-          "Titan shards",
+          "Deity shards",
           "Codex entries",
           "titles",
           "special missions",
@@ -591,58 +771,86 @@
         "discoveryRole": "Introduce this faction as a new world, not a reward track."
       },
       "factionChallenges": [
+<<<<<<< HEAD
         "divine trial",
+=======
+        "Deity trial",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "faction trial",
         "elite remix",
         "boss rematch",
         "raid modifier",
+<<<<<<< HEAD
         "asynchronous defensive deity snapshot"
+=======
+        "asynchronous defensive Deity snapshot"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "factionMastery": "Relationship deepening: Codex, cosmetics, relic identity, personal quests, and trial access before numerical power.",
-      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other Titans to win through mastery.",
-      "titans": [
+      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other deities to win through mastery.",
+      "deitys": [
         {
-          "id": "TG-TITAN-046",
-          "name": "Seraphel, the Throne Eternal",
+          "id": "MG-DEITY-046",
+          "name": "Seraphel",
           "role": "Defender"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-048",
+=======
+          "id": "MG-DEITY-047",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Caelion Dawnborn Axis",
           "role": "Battery"
         },
         {
-          "id": "TG-TITAN-048",
+          "id": "MG-DEITY-048",
           "name": "Aurelia Radiant Spear",
           "role": "Controller"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-053",
+=======
+          "id": "MG-DEITY-049",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Malachor Law Warden",
           "role": "Breaker"
         },
         {
-          "id": "TG-TITAN-050",
+          "id": "MG-DEITY-050",
           "name": "Elyndra Choir Crown",
           "role": "Disruptor"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-048",
+=======
+          "id": "MG-DEITY-051",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Orison White Citadel",
           "role": "Sustain"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-050",
+=======
+          "id": "MG-DEITY-052",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Vespera Mercy Blade",
           "role": "Artillery"
         },
         {
-          "id": "TG-TITAN-053",
+          "id": "MG-DEITY-053",
           "name": "Axiom Gate Choir",
           "role": "Guardian"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-046",
+=======
+          "id": "MG-DEITY-054",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Theon Still Horizon",
           "role": "Assassin"
         }
@@ -675,15 +883,20 @@
       ],
       "combatPhilosophy": "Aggression, debuffs, pulls, execution, burn pressure, power through risk.",
       "factionPassive": "Dominion Flame: decisive aggression turns enemy weakness into momentum.",
+<<<<<<< HEAD
       "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed chosen deity.",
       "titanDesignPhilosophy": "Every Infernal Dominion deity expresses Aggression, debuffs, pulls, execution, burn pressure, power through risk. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+=======
+      "mixingRule": "Current canon keeps faction identity separated unless a campaign rule explicitly permits a mixed chosen Deity.",
+      "deityDesignPhilosophy": "Every Infernal Dominion Deity expresses Aggression, debuffs, pulls, execution, burn pressure, power through risk. through a solo resource, reaction, stance, execution, or terrain rule rather than a generic stat bonus.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "enemyDesignPhilosophy": "Enemies in Infernal Dominion content should test the faction conflict: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.",
       "factionProgression": {
         "source": "Use factionMastery save data and campaign progression; preserve IDs.",
         "rewards": [
           "faction cosmetics",
           "relics",
-          "Titan shards",
+          "Deity shards",
           "Codex entries",
           "titles",
           "special missions",
@@ -697,58 +910,86 @@
         "discoveryRole": "Introduce this faction as a new world, not a reward track."
       },
       "factionChallenges": [
+<<<<<<< HEAD
         "divine trial",
+=======
+        "Deity trial",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "faction trial",
         "elite remix",
         "boss rematch",
         "raid modifier",
+<<<<<<< HEAD
         "asynchronous defensive deity snapshot"
+=======
+        "asynchronous defensive Deity snapshot"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "factionMastery": "Relationship deepening: Codex, cosmetics, relic identity, personal quests, and trial access before numerical power.",
-      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other Titans to win through mastery.",
-      "titans": [
+      "factionEndgame": "Rotating challenges should naturally favor the faction strengths while allowing other deities to win through mastery.",
+      "deitys": [
         {
-          "id": "TG-TITAN-055",
-          "name": "Mordrath, the Infernal King",
+          "id": "MG-DEITY-055",
+          "name": "Mordrath",
           "role": "Defender"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-057",
+=======
+          "id": "MG-DEITY-056",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Varkul Bloodforged Crown",
           "role": "Battery"
         },
         {
-          "id": "TG-TITAN-057",
+          "id": "MG-DEITY-057",
           "name": "Nyxara Flameborn Court",
           "role": "Controller"
         },
         {
-          "id": "TG-TITAN-058",
+          "id": "MG-DEITY-058",
           "name": "Azrakar Chainwarden",
           "role": "Breaker"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-055",
+=======
+          "id": "MG-DEITY-059",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Orryx Ash Dominion",
           "role": "Disruptor"
         },
         {
-          "id": "TG-TITAN-060",
+          "id": "MG-DEITY-060",
           "name": "Malvera Ember Throne",
           "role": "Sustain"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-058",
+=======
+          "id": "MG-DEITY-061",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Kharon Black Iron",
           "role": "Artillery"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-060",
+=======
+          "id": "MG-DEITY-062",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Sablex Cinder Duke",
           "role": "Guardian"
         },
         {
+<<<<<<< HEAD
           "id": "TG-TITAN-055",
+=======
+          "id": "MG-DEITY-063",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
           "name": "Zerath Wound Gate",
           "role": "Assassin"
         }
@@ -759,7 +1000,7 @@
     {
       "field": "leader",
       "scope": "all factions",
-      "resolution": "Current data does not expose explicit faction leaders. Player onboarding may use faction voice, gate-scribes, Titans, or existing NPCs only where canon supports them."
+      "resolution": "Current data does not expose explicit faction leaders. Player onboarding may use faction voice, gate-scribes, Deities, or existing NPCs only where canon supports them."
     }
   ]
 }

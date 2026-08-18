@@ -4,8 +4,8 @@
   "saveData": [
     "campaignProgress",
     "eliteProgress",
-    "titanCollection",
-    "titanLevels",
+    "deityCollection",
+    "deityLevels",
     "equipment",
     "arenaRating",
     "arenaHistory",
@@ -19,13 +19,19 @@
     "currency",
     "purchases",
     "rewards",
+<<<<<<< HEAD
     "activeTitanLoadouts",
     "masteryByDeityId",
     "defensiveTitanSnapshots",
+=======
+    "activeDeityLoadouts",
+    "masteryByDeityId",
+    "defensiveDeitySnapshots",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "soloCombatSettings",
     "deityTrials",
     "factionTrials",
-    "starterTitanChoice",
+    "starterDeityChoice",
     "rosterDepthRecommendations",
     "factionDiscoveryProgress",
     "economy.wallets",
@@ -38,8 +44,13 @@
   ],
   "securityRules": [
     "Reject duplicate rewards",
+<<<<<<< HEAD
     "Reject impossible deity configurations",
     "Reject invalid Divine Stats",
+=======
+    "Reject impossible Deity configurations",
+    "Reject invalid Deity stats",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Reject invalid equipment",
     "Validate competitive/economy data server-side when available",
     "Do not grant rating or shop currency from unverified combat summaries"
@@ -53,22 +64,28 @@
     "raidProgress",
     "seasonLevel",
     "nearUnlockShards",
-    "activeTitanPower",
+    "activeDeityPower",
     "missionArchetypeFit",
     "terrainAffinity",
     "reactionReadiness",
     "momentumMastery",
     "divinityMastery",
-    "defensiveTitanWeakness"
+    "defensiveDeityWeakness"
   ],
   "rewardsPhilosophy": "Fun first, fair second, monetization third. Cosmetics preferred; progression purchases are speed and convenience, not mandatory power.",
+<<<<<<< HEAD
   "soloCombatUpdate": "Progression now centers individual divine mastery, one active divine loadouts, Momentum/Divinity unlocks, stances, reactions, executions, relics, and ascension upgrades.",
   "rosterCollectionUpdate": "Players build a main deity plus specialist roster. Missions recommend tactical advantages but never require ownership of a specific deity.",
   "onboardingUpdate": "Opening sequence awakens one main deity, teaches solo combat, introduces a radically different second deity through trial, then opens faction discovery.",
+=======
+  "soloCombatUpdate": "Progression now centers individual Deity mastery, one active deity loadouts, Momentum/Divinity unlocks, stances, reactions, executions, relics, and ascension upgrades.",
+  "rosterCollectionUpdate": "Players build a main Deity plus specialist roster. Missions recommend tactical advantages but never require ownership of a specific Deity.",
+  "onboardingUpdate": "Opening sequence awakens one main Deity, teaches solo combat, introduces a radically different second Deity through trial, then opens faction discovery.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "version": "0.9.7",
   "difficultyAndLevelingBalance": {
     "directive": "Increase difficulty by making enemies smarter and encounter budgets tighter while letting leveling and gear create visible mastery growth.",
-    "titanLevelBands": [
+    "deityLevelBands": [
       {
         "band": "Awakening",
         "levels": "1-10",
@@ -90,7 +107,11 @@
       {
         "band": "Ascendant",
         "levels": "46-60",
+<<<<<<< HEAD
         "enemyPressure": "multi-layer elites, enemy deities, capped endgame scaling",
+=======
+        "enemyPressure": "multi-layer elites, enemy Deities, capped endgame scaling",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "gear": "Legendary/Mythic signature gear"
       }
     ],
@@ -106,7 +127,11 @@
   },
   "sourceCultureEquipmentRule": "Equipment progression uses source relic weapons, source armor bodies, and source resonance cores per faction; gear widens tactical options without breaking counterplay.",
   "combatFirstProgressionDirective": {
+<<<<<<< HEAD
     "principle": "Progression exists to make the player excited to return to deity battle, not to manage spreadsheets.",
+=======
+    "principle": "Progression exists to make the player excited to return to Deity battle, not to manage spreadsheets.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "upgradePromise": "Every shard, gear piece, faction bonus, unlock, and mastery reward must answer: what new combat moment will this create in the next fight?",
     "returnToBattleLoop": [
       "Win or lose battle",
@@ -122,13 +147,13 @@
     ]
   },
   "centralEconomyRef": "data/free-to-play-economy.json",
-  "economyMigration": "Existing Gate Shards, Titan Relics, Ascension Ember, Trial Favor, Raid Tokens, and Signature Alloy are preserved; GOLD, PREMIUM_CURRENCY, ENERGY, and canonical SHARDS are normalized through the unified economy layer.",
+  "economyMigration": "Existing Gate Shards, Deity Relics, Ascension Ember, Trial Favor, Raid Tokens, and Signature Alloy are preserved; GOLD, PREMIUM_CURRENCY, ENERGY, and canonical SHARDS are normalized through the unified economy layer.",
   "freeToPlayProgressionGuardrails": [
     "cosmetics have no stats",
     "async arena matchmaking uses earned visible save state",
     "premium resources require authoritative ledger",
     "battle pass grants never required for campaign",
-    "paid-exclusive Titans with combat advantage",
+    "paid-exclusive Deities with combat advantage",
     "permanent cash-only lock"
   ]
 }

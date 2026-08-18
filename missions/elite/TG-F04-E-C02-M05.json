@@ -7,6 +7,7 @@
   "chapterTitle": "Torii-Moon Mirror Road — Outer Descent",
   "missionNumber": 5,
   "missionInChapter": 1,
+<<<<<<< HEAD
   "title": "Elite: Purify the Foxfire Torii Road: Pressure Break",
   "description": "Elite: Purify the Foxfire Torii Road: Pressure Break is a rebuilt Mythos Gates mission beat for Torii-Moon Mirror Road through The Torii-Moon Gate (Distortion Gate with ritual rerouting). One selected deity from Amaterasu, Tsukuyomi, Susanoo, Izanami enters; this beat spotlights Amaterasu as the reference silhouette while preserving player choice. The mission is the combat step at Foxfire Torii Road, using shrine-road labyrinth and mirror sanctum pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Sacred Kingdoms is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash..",
   "lore": "Ascension canon route rewrite: Torii-Moon Mirror Road is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Foxfire Torii Road and reveals: How foxfire copies allied silhouettes. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
@@ -15,16 +16,35 @@
     "spirit-road tactician",
     "survivable objective holder",
     "burst or control specialist"
+=======
+  "title": "Elite: Torii Lanes in Storm: Threshold Sign",
+  "description": "Torii Lanes in Storm unfolds across storm-bent shrine path where paper seals redirect hostile wind, pushing a one active Kami Deity to prove precise control, repositioning, evasion, spirit terrain, disciplined burst. without violating established Realm canon.",
+  "lore": "Torii Lanes in Storm: Threshold Sign advances Kami Mirror Tempest: The Sacred Kingdoms test whether the Creator can cleanse Gate reflections without breaking shrine law or spirit contracts. It directly tests the faction tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.",
+  "recommendedPower": 831,
+  "activeDeityCount": 1,
+  "encouragedDeityRoles": [
+    "masked defender",
+    "spirit repositioner",
+    "seal breaker",
+    "foxfire scout",
+    "cleanse support"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ],
   "mapId": "TG-MAP-010",
   "terrain": "Foxfire Torii Road configured as a combat space inside shrine-road labyrinth and mirror sanctum; source-culture appearance layer: torii threshold roads, shrine-stone lanes, foxfire lantern smoke, mirror-water sanctums, cedar root cover, purification basins; cosmetic/relic silhouettes: mirror-talisman spirit blades, lacquered shimenawa spirit-guards, foxfire magatama cores, kitsune misdirection counters",
   "objectives": {
     "primary": "With one selected deity, break the first enemy pressure line in the elite-tuned Foxfire Torii Road, secure the enemy line, and deny the Hollow a foothold in the outer dungeon.",
     "optional": [
+<<<<<<< HEAD
       "Clear the Foxfire Torii Road without the active deity falling below 35% integrity",
       "Exploit or avoid the route rule: oni taboo zones that punish broken shrine law",
       "Resolve at least three purification rites, mirror-reading, foxfire deception, taboo-aware movement decisions before victory",
       "Finish with the boss, elite, shrine, treasure, or hazard node clearly readable for mobile tactical play"
+=======
+      "Win with no Deity defeated",
+      "Resolve at least three Kami doctrine actions",
+      "Hold every objective for one full enemy turn"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ]
   },
   "enemyWaves": [
@@ -48,15 +68,27 @@
   "boss": null,
   "turnLimit": 14,
   "specialRules": [
+<<<<<<< HEAD
     "Route Law — Torii-Moon Mirror Road: Distortion Gate with ritual rerouting changes how movement, hazards, and enemy pressure are read.",
     "Room Rule — Foxfire Torii Road: play this beat as a combat node, not a generic arena.",
     "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
+=======
+    "Spirit Contract: objectives must be cleansed without desecrating shrine markers.",
+    "Sacred Balance: careful positioning unlocks spirit precision effects.",
+    "one active standard Deity",
+    "Elite Hazard: secondary realm pressure starts active.",
+    "Elite Command: enemy support persists until objective action breaks the source."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ],
   "victoryConditions": [
     "With one selected deity, break the first enemy pressure line in the elite-tuned Foxfire Torii Road, secure the enemy line, and deny the Hollow a foothold in the outer dungeon."
   ],
   "defeatConditions": [
+<<<<<<< HEAD
     "Your active deity falls",
+=======
+    "All deities fall",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Primary objective fails",
     "Turn limit expires"
   ],
@@ -95,7 +127,11 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
+<<<<<<< HEAD
   "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
+=======
+  "activeDeityDesignNotes": "Balanced for the standard one active deity; nonstandard modes require explicit Creator approval.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "eliteRemixOf": "TG-F04-C02-M05",
   "meaningfulDifferences": [
     "Secondary realm hazard active from opening turn",
@@ -126,28 +162,39 @@
       "Guardian"
     ],
     "recommendedDeityIds": [
+<<<<<<< HEAD
       "TG-TITAN-028",
       "TG-TITAN-033"
+=======
+      "MG-DEITY-028",
+      "MG-DEITY-034",
+      "MG-DEITY-033"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ],
-    "recommendedTitans": [
+    "recommendedDeities": [
       {
-        "id": "TG-TITAN-028",
+        "id": "MG-DEITY-028",
         "name": "Amaterion Spirit-Sun",
         "reason": "Defender advantage for ranged enemies"
       },
       {
+<<<<<<< HEAD
         "id": "TG-TITAN-032",
+=======
+        "id": "MG-DEITY-034",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "name": "Onimaru Red Seal",
         "reason": "Artillery advantage for ranged enemies"
       },
       {
-        "id": "TG-TITAN-033",
+        "id": "MG-DEITY-033",
         "name": "Hanae Blossom Ward",
         "reason": "Sustain advantage for ranged enemies"
       }
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
+<<<<<<< HEAD
     "rule": "Favored-not-required: any valid active deity may clear the mission; recommended deities are tactical hints only."
   },
   "sourceCultureAppearanceRule": {
@@ -156,6 +203,14 @@
     "terrain": "torii threshold roads, shrine-stone lanes, foxfire lantern smoke, mirror-water sanctums, cedar root cover, purification basins",
     "cosmeticRelicSilhouettes": "mirror-talisman spirit blades, lacquered shimenawa spirit-guards, foxfire magatama cores, kitsune misdirection counters",
     "avoid": "anime mecha samurai, generic ninja, plastic kimono costume, random kanji text, neon cyberpunk, cute mascot fox"
+=======
+    "rule": "Recommended advantages only \u2014 any valid active deity can attempt the mission."
+  },
+  "activeDeityPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "multiDeityCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Deity before launch; roster depth changes approach, not on-field body count."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   "updated": "2026-08-16",
   "activeDeityCount": 1,

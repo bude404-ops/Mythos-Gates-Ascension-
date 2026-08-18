@@ -1,13 +1,22 @@
 {
-  "id": "TG-SOLO-TITAN-MIGRATION-REPORT-001",
+  "id": "MG-SOLO-DEITY-MIGRATION-REPORT-001",
   "version": "0.9.0",
   "generated": "2026-08-11T20:08:28Z",
+<<<<<<< HEAD
   "directive": "Only one player deity may be active on the battlefield at a time. Existing party assumptions must be audited before production rewrites.",
   "coreDecision": "Mythos Gates: Ascension becomes a Solo Deity Tactical RPG: one legendary player deity versus battlefield-scale enemy problems.",
   "compatibleSystems": [
     {
       "system": "Canon Bible / faction registry / realm codex",
       "reason": "Faction identities remain authoritative and become stronger as deity-specific solo mechanics."
+=======
+  "directive": "Only one player Deity may be active on the battlefield at a time. Existing party assumptions must be audited before production rewrites.",
+  "coreDecision": "Mythos Gates: Ascension becomes a Solo Deity Tactical RPG: one legendary player Deity versus battlefield-scale enemy problems.",
+  "compatibleSystems": [
+    {
+      "system": "Canon Bible / faction registry / realm codex",
+      "reason": "Faction identities remain authoritative and become stronger as Deity-specific solo mechanics."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     },
     {
       "system": "Entity ID registry and runtime validation",
@@ -19,7 +28,11 @@
     },
     {
       "system": "Movement validation, damage pipeline, cooldowns, status effects",
+<<<<<<< HEAD
       "reason": "Core primitives remain valid after replacing deity targets with solo deity state."
+=======
+      "reason": "Core primitives remain valid after replacing Deity targets with solo Deity state."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     },
     {
       "system": "Campaign shell and mobile navigation",
@@ -27,7 +40,11 @@
     },
     {
       "system": "Art Import Vault and visual baseline process",
+<<<<<<< HEAD
       "reason": "Still governs high-quality deity, map, VFX, and UI production."
+=======
+      "reason": "Still governs high-quality Deity, map, VFX, and UI production."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     },
     {
       "system": "Save/load and content status tracker",
@@ -36,7 +53,11 @@
   ],
   "requiresModification": [
     {
+<<<<<<< HEAD
       "system": "Deity Roster",
+=======
+      "system": "deity roster",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "change": "Replace party roles with solo combat archetype blends, unique mechanics, sustain, reactions, stances, Divinity, and executions."
     },
     {
@@ -45,19 +66,31 @@
     },
     {
       "system": "Mission registry",
+<<<<<<< HEAD
       "change": "Stop treating missions as multi-deity objective pressure tests; assign mission types, solo hazards, boss phases, and deity suitability tags."
+=======
+      "change": "Stop treating missions as multi-Deity objective pressure tests; assign mission types, solo hazards, boss phases, and Deity suitability tags."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     },
     {
       "system": "Progression system",
-      "change": "Replace TitanPower recommendations with activeTitanPower, mastery, stance unlocks, relic builds, and solo readiness."
+      "change": "Replace DeityPower recommendations with activeDeityPower, mastery, stance unlocks, relic builds, and solo readiness."
     },
     {
       "system": "Async arena",
+<<<<<<< HEAD
       "change": "Replace saved defense Titans with one defensive deity build, equipment, AI behavior profile, and battlefield choice."
     },
     {
       "system": "UI",
       "change": "Top enemy/objective state, center battlefield, bottom deity controls for abilities, movement, stance, Momentum, Divinity, reactions."
+=======
+      "change": "Replace saved defense Deities with one defensive Deity build, equipment, AI behavior profile, and battlefield choice."
+    },
+    {
+      "system": "UI",
+      "change": "Top enemy/objective state, center battlefield, bottom Deity controls for abilities, movement, stance, Momentum, Divinity, reactions."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     },
     {
       "system": "Enemy AI",
@@ -74,6 +107,7 @@
       "replacement": "Solo sustain verbs: regeneration, lifesteal, shields, parry, dodge, execution recovery, debuffs, terrain denial."
     },
     {
+<<<<<<< HEAD
       "system": "Titan synergy rules",
       "replacement": "divine mastery, terrain affinity, relic loadout, stance discipline, and mission counter-pick logic."
     },
@@ -91,6 +125,25 @@
   "shouldBeDeferred": [
     "Reserve deity swapping: architect fields only; do not implement normal battlefield reserves yet.",
     "True live PvP: keep async deity Challenge first.",
+=======
+      "system": "Deity synergy rules",
+      "replacement": "Deity mastery, terrain affinity, relic loadout, stance discipline, and mission counter-pick logic."
+    },
+    {
+      "system": "one-active-Deity arena defense snapshots",
+      "replacement": "Asynchronous Deity Challenge defensive Deity snapshot."
+    }
+  ],
+  "shouldBeRemoved": [
+    "Any normal battle rule requiring multiple allied Deities on the field.",
+    "Adjacent-allied objective protection bonuses in standard combat.",
+    "Role restrictions that require a healer/support slot.",
+    "Mission copy implying a chosen Deity of several player Deities unless explicitly future reserve/story exception."
+  ],
+  "shouldBeDeferred": [
+    "Reserve Deity swapping: architect fields only; do not implement normal battlefield reserves yet.",
+    "True live PvP: keep async Deity Challenge first.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Full procedural encounter generation: define hooks after handcrafted solo mission types are validated.",
     "Production rewrite of all 280 mission payloads: begin after solo data model and engine primitives land."
   ],
@@ -109,7 +162,11 @@
     },
     {
       "risk": "Roster homogenization.",
+<<<<<<< HEAD
       "mitigation": "Every deity receives a unique mechanic and mission-counterplay profile."
+=======
+      "mitigation": "Every Deity receives a unique mechanic and mission-counterplay profile."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     },
     {
       "risk": "Mobile UI overload.",
@@ -121,11 +178,19 @@
     },
     {
       "risk": "Async arena can masquerade as real PvP.",
+<<<<<<< HEAD
       "mitigation": "Label it only as Asynchronous deity Challenge."
     }
   ],
   "requiredUiChanges": [
     "Single deity command rail: Move, Basic, Techniques, Reaction, Stance, Ascend.",
+=======
+      "mitigation": "Label it only as Asynchronous Deity Challenge."
+    }
+  ],
+  "requiredUiChanges": [
+    "Single Deity command rail: Move, Basic, Techniques, Reaction, Stance, Ascend.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Momentum and Divinity meters visible at bottom with spend previews.",
     "Reaction prompt overlay during enemy action windows.",
     "Enemy intent markers built for surrounding/flanking threats.",
@@ -133,6 +198,7 @@
     "Boss phase banner and Divine Ascension cinematic trigger."
   ],
   "requiredDataModelChanges": [
+<<<<<<< HEAD
     "battle.activeDeityId replaces battle.playerTitanIds in normal modes.",
     "titan.soloArchetypes, titan.uniqueMechanic, titan.stances, titan.reactions, titan.execution, titan.divineAscension.",
     "mission.type, mission.soloTacticalPurpose, mission.idealTitanArchetypes, mission.enemyBehaviorPlan, mission.terrainPlan, mission.bossPhases.",
@@ -143,6 +209,18 @@
     "Rewrite Divine Abilities away from shared Strike/Signature/Gate Command shells.",
     "Convert chapter missions into solo mission types instead of enemy-count scaling.",
     "Add solo Gate lore: unstable Gates permit one deity safely, not armies.",
+=======
+    "battle.activeDeityId replaces battle.playerDeityIds in normal modes.",
+    "deity.soloArchetypes, deity.uniqueMechanic, deity.stances, deity.reactions, deity.execution, deity.divineAscension.",
+    "mission.type, mission.soloTacticalPurpose, mission.idealDeityArchetypes, mission.enemyBehaviorPlan, mission.terrainPlan, mission.bossPhases.",
+    "arena.defensiveDeitySnapshot replaces arenaDefenseDeity.",
+    "save.masteryByDeityId and activeDeityLoadouts replace Deity preset priority for normal modes."
+  ],
+  "requiredContentChanges": [
+    "Rewrite Deity abilities away from shared Strike/Signature/Gate Command shells.",
+    "Convert chapter missions into solo mission types instead of enemy-count scaling.",
+    "Add solo Gate lore: unstable Gates permit one Deity champion safely, not armies.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Add enemy categories and AI behaviors tuned to one powerful opponent.",
     "Add boss phase scripts and Divine Ascension story beats."
   ],

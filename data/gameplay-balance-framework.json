@@ -3,22 +3,29 @@
   "version": "1.0.0",
   "generated": "2026-08-16T18:20:00Z",
   "status": "IMPLEMENTED",
+<<<<<<< HEAD
   "directive": "Combat-first balance: the fighting is the hook, tactical mechanics create depth, and progression exists to send players back into deity battles.",
   "designPillars": [
     "The battle is the primary screen, memory, and hook; management supports fighting but never replaces it.",
     "Every deity must feel individually powerful through animation, impact, enemy reaction, scale, and distinct ability identity.",
+=======
+  "directive": "Combat-first balance: the fighting is the hook, tactical mechanics create depth, and progression exists to send players back into Deity battles.",
+  "designPillars": [
+    "The battle is the primary screen, memory, and hook; management supports fighting but never replaces it.",
+    "Every Deity must feel individually powerful through animation, impact, enemy reaction, scale, and distinct ability identity.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Challenge comes from readable decisions, positioning, timing, objectives, enemy behavior, and battlefield interaction before stat inflation.",
     "Momentum/Divinity and faction mechanics must create in-battle spend/save decisions across campaign, raid, repeatable, and future modes.",
     "Progression should make the player want to immediately return to battle to see what changed.",
     "Mobile sessions must resolve meaningful combat turns quickly while keeping tactical depth in setup windows and objective pressure."
   ],
   "currentCoverage": {
-    "titans": 63,
+    "deitys": 63,
     "roles": 9,
     "factions": 7,
     "missionCount": 280,
     "enemyArchetypes": 10,
-    "titanPower": {
+    "deityPower": {
       "min": 203,
       "max": 242,
       "avg": 224
@@ -163,7 +170,7 @@
       "purpose": "teach and test one mechanic at a time, then combine mechanics by chapter",
       "requiredHooks": [
         "recommendedPower",
-        "encouragedTitanRoles",
+        "encouragedDeityRoles",
         "tacticalProfile",
         "objectives",
         "enemyWaves",
@@ -173,7 +180,11 @@
       "balanceRule": "Normal missions target one primary deity role and one soft alternative; hard missions add one counter-tag and one objective tension."
     },
     "chapterBoss": {
+<<<<<<< HEAD
       "purpose": "force mastery of a faction mechanic without requiring a specific deity",
+=======
+      "purpose": "force mastery of a faction mechanic without requiring a specific Deity",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "requiredHooks": [
         "phase telegraphs",
         "boss vulnerability window",
@@ -183,7 +194,7 @@
       "balanceRule": "Boss phases must include one role-favored answer, one neutral answer, and one dangerous greedy answer."
     },
     "raid": {
-      "purpose": "scale mastery for weekly/repeatable play while preserving solo active-Titan clarity",
+      "purpose": "scale mastery for weekly/repeatable play while preserving solo active-Deity clarity",
       "requiredHooks": [
         "stageProfiles",
         "bosses",
@@ -194,7 +205,7 @@
       "balanceRule": "Raid difficulty uses phase modifiers, add density, and recovery windows before increasing boss HP/damage."
     },
     "weeklyTrial": {
-      "purpose": "rotate constraints to make unused Titans valuable",
+      "purpose": "rotate constraints to make unused Deities valuable",
       "requiredHooks": [
         "featured terrain",
         "role bonus",
@@ -288,15 +299,23 @@
     ]
   },
   "antiPatterns": [
+<<<<<<< HEAD
     "mandatory single deity gates",
+=======
+    "mandatory single Deity gates",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "unreadable one-shot failures",
     "raw HP sponge scaling",
     "passive sustain loops that ignore objectives",
     "hidden counters with no visual tell",
     "resource denial stacked with no comeback window",
-    "raid mechanics that bypass solo active-Titan clarity",
+    "raid mechanics that bypass solo active-Deity clarity",
     "Menu-heavy core loop where players manage stats longer than they fight.",
+<<<<<<< HEAD
     "deity kits differentiated only by health and damage numbers.",
+=======
+    "Deity kits differentiated only by health and damage numbers.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Beautiful battlefield spaces with no tactical purpose.",
     "Difficulty driven mainly by enormous enemy health pools.",
     "Progression systems that feel like spreadsheets before play.",
@@ -329,14 +348,22 @@
       "resource starvation above 30% outside Hard/Elite",
       "raid phase fail rate above 70% after tell exposure",
       "mission average turns 35% above target",
+<<<<<<< HEAD
       "single deity pick rate above 22% for a mode"
+=======
+      "single Deity pick rate above 22% for a mode"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ]
   },
   "acceptanceGates": [
     "All 9 roles have mode contracts and counterplay.",
     "All 7 faction mechanic families map to Momentum/Divinity and terrain.",
     "Campaign, raid, weekly, ascension, arena, and future modes have scaling contracts.",
+<<<<<<< HEAD
     "No tuning rule requires a specific deity or paid rarity.",
+=======
+    "No tuning rule requires a specific Deity or paid rarity.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Balance audit can run from repository data without external services."
   ],
   "rolePowerSummary": {
@@ -410,7 +437,11 @@
   "combatFirstDoctrine": {
     "id": "TG-COMBAT-FIRST-GAMEPLAY-DOCTRINE",
     "corePrinciple": "The fighting is the hook. Tactical mechanics create depth. Progression creates long-term retention.",
+<<<<<<< HEAD
     "primaryExperience": "The primary screen and primary player memory must be the deity battle, not menu management.",
+=======
+    "primaryExperience": "The primary screen and primary player memory must be the Deity battle, not menu management.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "combatLoop": [
       "Choose Deities",
       "Read the battlefield",
@@ -435,7 +466,11 @@
       "UI polish",
       "Secondary systems"
     ],
+<<<<<<< HEAD
     "systemServiceTest": "Every system must make the deity battle more fun, more tactical, more satisfying, or more replayable. If it does not, reconsider whether it belongs in the core experience."
+=======
+    "systemServiceTest": "Every system must make the Deity battle more fun, more tactical, more satisfying, or more replayable. If it does not, reconsider whether it belongs in the core experience."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   "combatFirstAcceptanceGates": [
     {
@@ -445,7 +480,7 @@
     },
     {
       "id": "TITAN_IDENTITY_NOT_STATS_ONLY",
-      "rule": "Titan differentiation must include attack identity, ability behavior, range/mobility/role expression, or battlefield interaction.",
+      "rule": "Deity differentiation must include attack identity, ability behavior, range/mobility/role expression, or battlefield interaction.",
       "severity": "blocker"
     },
     {
@@ -474,7 +509,7 @@
     "Does combat feel powerful?",
     "Does positioning matter?",
     "Do abilities feel different?",
-    "Do Titans feel enormous?",
+    "Do Deities feel enormous?",
     "Does the battlefield matter?",
     "Are there meaningful decisions?",
     "Are battles producing memorable moments?",

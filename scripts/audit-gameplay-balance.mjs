@@ -22,7 +22,11 @@ for (const role of roles) {
 
 for (const family of mechanicFamilies) {
   const count = roleMatrix.filter((t) => t.uniqueMechanic?.includes(family)).length;
+<<<<<<< HEAD
   if (count !== 9) issues.push(`Mechanic family ${family} expected 9 deities, found ${count}.`);
+=======
+  if (count !== 9) issues.push(`Mechanic family ${family} expected 4 deities, found ${count}.`);
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 }
 
 for (const t of roleMatrix) {

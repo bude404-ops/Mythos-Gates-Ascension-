@@ -6,10 +6,17 @@
     "phase": "Act I",
     "status": "Route-Rebuilt Scaffold",
     "director": "Development Director",
+<<<<<<< HEAD
     "summary": "The first reopened Mythos Gate opens under impossible pressure. The Creator learns how Deities, Mythos Gates, Hollow leakage, and Director governance function. Full mission-arc recreation pass now rewrites all seven Mythos Gates routes with route-native chapter arcs, mission titles, objectives, dialogue hooks, and mission art prompts.",
     "loreDirectorNotes": "Introduces canon without adding playable non-Deity entries or ordinary units. Mesha and the Hollow Mouth are non-playable narrative anchors.",
     "gameplayDirectorNotes": "Designed as the onboarding campaign: single active deity selection, map objectives, enemy turns, and Gate sealing. Current pass targets dungeon-route pacing, one-deity readability, shrine/treasure/boss nodes, and faction-specific hazard language.",
     "artDirectorNotes": "Needs approved artwork for the First Reopening Gate, Mesha, Hollow Wretch, and TG-TITAN-001.",
+=======
+    "summary": "The first modern Mythos Gate opens under impossible pressure. The Creator learns how Deities, Gates, Hollow leakage, and Director governance function.",
+    "loreDirectorNotes": "Introduces canon without adding playable non-Deity entries or ordinary units. Mesha and the Hollow Mouth are non-playable narrative anchors.",
+    "gameplayDirectorNotes": "Designed as the onboarding campaign: single active deity selection, map objectives, enemy turns, and Gate sealing.",
+    "artDirectorNotes": "Needs approved artwork for the First Reopening Gate, Mesha, Hollow Wretch, and MG-DEITY-001.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "developmentDirectorNotes": "Campaign can be expanded from current game/index.html without replacing the playable loop.",
     "chapters": [
       "TG-CHAPTER-001",
@@ -42,15 +49,25 @@
       "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
       "prototypeGate": "Do not expand implementation ahead of approved first-zone loop."
     },
+<<<<<<< HEAD
     "oneTitanVsManyCombat": {
       "playerControlledDeities": 1,
       "rule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+=======
+    "oneDeityVsManyCombat": {
+      "playerControlledDeities": 1,
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "forbidden": [
         "squad combat",
         "team formations",
         "multiple player-controlled deities",
         "ally positioning",
+<<<<<<< HEAD
         "team turns"
+=======
+        "team turns",
+        "multiple player-controlled Deities"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "fictionLabel": "one selected playable deity against many enemies"
     },
@@ -83,6 +100,7 @@
         "Aten Ra",
         "Sutekh"
       ],
+<<<<<<< HEAD
       "combatRule": "one selected god or goddess enters each dungeon/combat route; no armies, no squads, no simultaneous party",
       "loreRule": "Ascension expands existing divine power during the Gate crisis; it never turns mortals into gods and never reduces Gates to simple portals."
     },
@@ -218,6 +236,37 @@
     "factionId": "TG-FACTION-001",
     "campaignType": "Normal",
     "aliasId": "TG-F01-CAMPAIGN-NORMAL"
+=======
+      "creatureIds": [
+        "TG-CREATURE-019",
+        "TG-CREATURE-020",
+        "TG-CREATURE-021",
+        "TG-CREATURE-022",
+        "TG-CREATURE-023",
+        "TG-CREATURE-024",
+        "TG-CREATURE-025",
+        "TG-CREATURE-026",
+        "TG-CREATURE-027",
+        "TG-CREATURE-028",
+        "TG-CREATURE-029",
+        "TG-CREATURE-030",
+        "TG-CREATURE-031",
+        "TG-CREATURE-032",
+        "TG-CREATURE-033",
+        "TG-CREATURE-034",
+        "TG-CREATURE-035",
+        "TG-CREATURE-036",
+        "TG-CREATURE-037",
+        "TG-CREATURE-038",
+        "TG-CREATURE-039"
+      ],
+      "rule": "Campaign events may draw from any opposing faction pool only when lore gives a reason; home faction identity and source-culture rules remain intact."
+    },
+    "factionId": "TG-FACTION-001",
+    "faction": "Aten Ra",
+    "description": "The first modern Mythos Gate opens under impossible pressure beneath dead threshold stone. The Creator learns how divine Deities, Mythos Gates, Hollow leakage, and sacred law function. Aten-Ra anchors the noon judgment as Mesha Gate-Scribe reads the damage the Gate refuses to say. The Hollow does not kill — it empties identity, erasing names from existence.",
+    "storyArcId": "TG-STORY-ARC-001"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   {
     "id": "TG-CAMPAIGN-002",
@@ -226,7 +275,11 @@
     "phase": "Act II",
     "status": "Route-Rebuilt Scaffold",
     "director": "Lore Director",
+<<<<<<< HEAD
     "summary": "The Storm-Oath Covenant campaign follows Asgardian deities across Valhalla bridge law, Forgotten banner pressure, and Olympian trial conflict as the Gate tries to harvest sworn courage. Full mission-arc recreation pass now rewrites all seven Mythos Gates routes with route-native chapter arcs, mission titles, objectives, dialogue hooks, and mission art prompts.",
+=======
+    "summary": "The Storm-Oath Covenant campaign follows Asgardian Deities across Valhalla bridge law, Forgotten banner pressure, and Olympian trial conflict as the Gate tries to harvest sworn courage.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "loreDirectorNotes": "Preserves faction separation by presenting allied objectives without implying free faction mixing.",
     "gameplayDirectorNotes": "Adds environmental tests: storm lanes, arena platforms, and elite enemies. Current pass targets dungeon-route pacing, one-deity readability, shrine/treasure/boss nodes, and faction-specific hazard language.",
     "artDirectorNotes": "Needs Storm-Oath Bridge, Marble Sky Arena, Hrodda, Lyrion, and Forgotten Standard Bearer art.",
@@ -271,15 +324,25 @@
       "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
       "prototypeGate": "Do not expand implementation ahead of approved first-zone loop."
     },
+<<<<<<< HEAD
     "oneTitanVsManyCombat": {
       "playerControlledDeities": 1,
       "rule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+=======
+    "oneDeityVsManyCombat": {
+      "playerControlledDeities": 1,
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "forbidden": [
         "squad combat",
         "team formations",
         "multiple player-controlled deities",
         "ally positioning",
+<<<<<<< HEAD
         "team turns"
+=======
+        "team turns",
+        "multiple player-controlled Deities"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "fictionLabel": "one selected playable deity against many enemies"
     },
@@ -312,6 +375,7 @@
         "Odin",
         "Thor"
       ],
+<<<<<<< HEAD
       "combatRule": "one selected god or goddess enters each dungeon/combat route; no armies, no squads, no simultaneous party",
       "loreRule": "Ascension expands existing divine power during the Gate crisis; it never turns mortals into gods and never reduces Gates to simple portals."
     },
@@ -447,6 +511,37 @@
     "factionId": "TG-FACTION-002",
     "campaignType": "Normal",
     "aliasId": "TG-F02-CAMPAIGN-NORMAL"
+=======
+      "creatureIds": [
+        "TG-CREATURE-019",
+        "TG-CREATURE-020",
+        "TG-CREATURE-021",
+        "TG-CREATURE-022",
+        "TG-CREATURE-023",
+        "TG-CREATURE-024",
+        "TG-CREATURE-025",
+        "TG-CREATURE-026",
+        "TG-CREATURE-027",
+        "TG-CREATURE-028",
+        "TG-CREATURE-029",
+        "TG-CREATURE-030",
+        "TG-CREATURE-031",
+        "TG-CREATURE-032",
+        "TG-CREATURE-033",
+        "TG-CREATURE-034",
+        "TG-CREATURE-035",
+        "TG-CREATURE-036",
+        "TG-CREATURE-037",
+        "TG-CREATURE-038",
+        "TG-CREATURE-039"
+      ],
+      "rule": "Campaign events may draw from any opposing faction pool only when lore gives a reason; home faction identity and source-culture rules remain intact."
+    },
+    "factionId": "TG-FACTION-002",
+    "faction": "Asgardian",
+    "description": "The Storm-Oath Covenant campaign follows Asgardian Deities across Valhalla bridge law, Forgotten banner pressure, and Olympian trial conflict as the Mythos Gate tries to harvest sworn courage. Oath is responsibility, not fuel — when the Gate attempts to turn courage into a resource, the Asgardian answer is covenant: shared risk, chosen endurance, and counterattack only when the strike matters.",
+    "storyArcId": "TG-STORY-ARC-002"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   {
     "id": "TG-CAMPAIGN-003",
@@ -496,15 +591,25 @@
       "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
       "prototypeGate": "Do not expand implementation ahead of approved first-zone loop."
     },
+<<<<<<< HEAD
     "oneTitanVsManyCombat": {
       "playerControlledDeities": 1,
       "rule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+=======
+    "oneDeityVsManyCombat": {
+      "playerControlledDeities": 1,
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "forbidden": [
         "squad combat",
         "team formations",
         "multiple player-controlled deities",
         "ally positioning",
+<<<<<<< HEAD
         "team turns"
+=======
+        "team turns",
+        "multiple player-controlled Deities"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "fictionLabel": "one selected playable deity against many enemies"
     },
@@ -537,6 +642,7 @@
         "Dagda",
         "Lugh"
       ],
+<<<<<<< HEAD
       "combatRule": "one selected god or goddess enters each dungeon/combat route; no armies, no squads, no simultaneous party",
       "loreRule": "Ascension expands existing divine power during the Gate crisis; it never turns mortals into gods and never reduces Gates to simple portals."
     },
@@ -672,6 +778,37 @@
     "factionId": "TG-FACTION-003",
     "campaignType": "Normal",
     "aliasId": "TG-F03-CAMPAIGN-NORMAL"
+=======
+      "creatureIds": [
+        "TG-CREATURE-019",
+        "TG-CREATURE-020",
+        "TG-CREATURE-021",
+        "TG-CREATURE-022",
+        "TG-CREATURE-023",
+        "TG-CREATURE-024",
+        "TG-CREATURE-025",
+        "TG-CREATURE-026",
+        "TG-CREATURE-027",
+        "TG-CREATURE-028",
+        "TG-CREATURE-029",
+        "TG-CREATURE-030",
+        "TG-CREATURE-031",
+        "TG-CREATURE-032",
+        "TG-CREATURE-033",
+        "TG-CREATURE-034",
+        "TG-CREATURE-035",
+        "TG-CREATURE-036",
+        "TG-CREATURE-037",
+        "TG-CREATURE-038",
+        "TG-CREATURE-039"
+      ],
+      "rule": "Campaign events may draw from any opposing faction pool only when lore gives a reason; home faction identity and source-culture rules remain intact."
+    },
+    "factionId": "TG-FACTION-005",
+    "faction": "Tuatha",
+    "description": "The Tuatha Realm reveals that Mythos Gates wound living terrain. The campaign shifts from simple sealing to restoration under pressure. Nature in Mythos Gates is not background scenery — it is an extradimensional divine intelligence with old injuries. Maeve Root-Memory teaches that terrain has memory and Gate scars must be cleansed, not merely conquered.",
+    "storyArcId": "TG-STORY-ARC-005"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   {
     "id": "TG-CAMPAIGN-004",
@@ -721,15 +858,25 @@
       "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
       "prototypeGate": "Do not expand implementation ahead of approved first-zone loop."
     },
+<<<<<<< HEAD
     "oneTitanVsManyCombat": {
       "playerControlledDeities": 1,
       "rule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+=======
+    "oneDeityVsManyCombat": {
+      "playerControlledDeities": 1,
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "forbidden": [
         "squad combat",
         "team formations",
         "multiple player-controlled deities",
         "ally positioning",
+<<<<<<< HEAD
         "team turns"
+=======
+        "team turns",
+        "multiple player-controlled Deities"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "fictionLabel": "one selected playable deity against many enemies"
     },
@@ -762,6 +909,7 @@
         "Asmodeus",
         "Lucifer"
       ],
+<<<<<<< HEAD
       "combatRule": "one selected god or goddess enters each dungeon/combat route; no armies, no squads, no simultaneous party",
       "loreRule": "Ascension expands existing divine power during the Gate crisis; it never turns mortals into gods and never reduces Gates to simple portals."
     },
@@ -897,6 +1045,37 @@
     "factionId": "TG-FACTION-004",
     "campaignType": "Normal",
     "aliasId": "TG-F04-CAMPAIGN-NORMAL"
+=======
+      "creatureIds": [
+        "TG-CREATURE-019",
+        "TG-CREATURE-020",
+        "TG-CREATURE-021",
+        "TG-CREATURE-022",
+        "TG-CREATURE-023",
+        "TG-CREATURE-024",
+        "TG-CREATURE-025",
+        "TG-CREATURE-026",
+        "TG-CREATURE-027",
+        "TG-CREATURE-028",
+        "TG-CREATURE-029",
+        "TG-CREATURE-030",
+        "TG-CREATURE-031",
+        "TG-CREATURE-032",
+        "TG-CREATURE-033",
+        "TG-CREATURE-034",
+        "TG-CREATURE-035",
+        "TG-CREATURE-036",
+        "TG-CREATURE-037",
+        "TG-CREATURE-038",
+        "TG-CREATURE-039"
+      ],
+      "rule": "Campaign events may draw from any opposing faction pool only when lore gives a reason; home faction identity and source-culture rules remain intact."
+    },
+    "factionId": "TG-FACTION-007",
+    "faction": "Infernal Dominion",
+    "description": "The Infernal Dominion treats Mythos Gate wounds as opportunity. The Creator must navigate bargains, execution sigils, and power without confusing ambition for corruption. The Black Iron Court argues that control is the only mercy left after the Ascension Collapse proved trust insufficient. Every tactical victory creates a record, every record creates leverage.",
+    "storyArcId": "TG-STORY-ARC-007"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   {
     "id": "TG-CAMPAIGN-005",
@@ -905,7 +1084,11 @@
     "phase": "Act II",
     "status": "Route-Rebuilt Scaffold",
     "director": "Art Director",
+<<<<<<< HEAD
     "summary": "Aten Ra forces climb an S-shaped river-of-light campaign road from Sacred Sun Temple to the Mythos Gate boss portal, establishing the campaign-map language for faction chapters. Full mission-arc recreation pass now rewrites all seven Mythos Gates routes with route-native chapter arcs, mission titles, objectives, dialogue hooks, and mission art prompts.",
+=======
+    "summary": "Aten Ra forces climb an S-shaped river-of-light campaign road from Sacred Sun Temple to the Mythos Gate boss portal, establishing the campaign-map language for faction chapters.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "loreDirectorNotes": "Frames Aten Ra as solar law under siege by obsidian eclipse corruption. The boss gate silhouette is not a playable hero; it is a campaign apex threat.",
     "gameplayDirectorNotes": "Five-node mobile campaign structure with mission progress, star ratings, challenge node, and tactical battle handoff into a tiered Sun Realm gate map. Current pass targets dungeon-route pacing, one-deity readability, shrine/treasure/boss nodes, and faction-specific hazard language.",
     "artDirectorNotes": "Uses the Helio-Kemet campaign and battle references as locked layout guides: top-left chapter banner, top-right currency bar, left progress bar, S-path nodes, and peak boss gate.",
@@ -940,15 +1123,25 @@
       "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
       "prototypeGate": "Do not expand implementation ahead of approved first-zone loop."
     },
+<<<<<<< HEAD
     "oneTitanVsManyCombat": {
       "playerControlledDeities": 1,
       "rule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+=======
+    "oneDeityVsManyCombat": {
+      "playerControlledDeities": 1,
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "forbidden": [
         "squad combat",
         "team formations",
         "multiple player-controlled deities",
         "ally positioning",
+<<<<<<< HEAD
         "team turns"
+=======
+        "team turns",
+        "multiple player-controlled Deities"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "fictionLabel": "one selected playable deity against many enemies"
     },
@@ -981,6 +1174,7 @@
         "Aten Ra",
         "Sutekh"
       ],
+<<<<<<< HEAD
       "combatRule": "one selected god or goddess enters each dungeon/combat route; no armies, no squads, no simultaneous party",
       "loreRule": "Ascension expands existing divine power during the Gate crisis; it never turns mortals into gods and never reduces Gates to simple portals."
     },
@@ -1116,6 +1310,37 @@
     "factionId": "TG-FACTION-005",
     "campaignType": "Normal",
     "aliasId": "TG-F05-CAMPAIGN-NORMAL"
+=======
+      "creatureIds": [
+        "TG-CREATURE-019",
+        "TG-CREATURE-020",
+        "TG-CREATURE-021",
+        "TG-CREATURE-022",
+        "TG-CREATURE-023",
+        "TG-CREATURE-024",
+        "TG-CREATURE-025",
+        "TG-CREATURE-026",
+        "TG-CREATURE-027",
+        "TG-CREATURE-028",
+        "TG-CREATURE-029",
+        "TG-CREATURE-030",
+        "TG-CREATURE-031",
+        "TG-CREATURE-032",
+        "TG-CREATURE-033",
+        "TG-CREATURE-034",
+        "TG-CREATURE-035",
+        "TG-CREATURE-036",
+        "TG-CREATURE-037",
+        "TG-CREATURE-038",
+        "TG-CREATURE-039"
+      ],
+      "rule": "Campaign events may draw from any opposing faction pool only when lore gives a reason; home faction identity and source-culture rules remain intact."
+    },
+    "factionId": "TG-FACTION-001",
+    "faction": "Aten Ra",
+    "description": "The Solar Dominion of Khepra's campaign-map ascent: a five-node Aten Ra pilgrimage where sacred solar order is under eclipse pressure. Aten-Ra and Iset advance from the Sacred Sun Temple up an S-shaped river-of-light road toward the Mythos Gate boss portal. The Sun Realm loses measurement first — milestone nodes dim, star records disagree, the eclipse corruption proves some things can stand in sunlight and remain unnamed.",
+    "storyArcId": "TG-STORY-ARC-001"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   {
     "id": "TG-CAMPAIGN-006",
@@ -1167,15 +1392,25 @@
       "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
       "prototypeGate": "Do not expand implementation ahead of approved first-zone loop."
     },
+<<<<<<< HEAD
     "oneTitanVsManyCombat": {
       "playerControlledDeities": 1,
       "rule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+=======
+    "oneDeityVsManyCombat": {
+      "playerControlledDeities": 1,
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "forbidden": [
         "squad combat",
         "team formations",
         "multiple player-controlled deities",
         "ally positioning",
+<<<<<<< HEAD
         "team turns"
+=======
+        "team turns",
+        "multiple player-controlled Deities"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "fictionLabel": "one selected playable deity against many enemies"
     },
@@ -1208,6 +1443,7 @@
         "Susanoo",
         "Tsukuyomi"
       ],
+<<<<<<< HEAD
       "combatRule": "one selected god or goddess enters each dungeon/combat route; no armies, no squads, no simultaneous party",
       "loreRule": "Ascension expands existing divine power during the Gate crisis; it never turns mortals into gods and never reduces Gates to simple portals."
     },
@@ -1343,6 +1579,37 @@
     "factionId": "TG-FACTION-006",
     "campaignType": "Normal",
     "aliasId": "TG-F06-CAMPAIGN-NORMAL"
+=======
+      "creatureIds": [
+        "TG-CREATURE-019",
+        "TG-CREATURE-020",
+        "TG-CREATURE-021",
+        "TG-CREATURE-022",
+        "TG-CREATURE-023",
+        "TG-CREATURE-024",
+        "TG-CREATURE-025",
+        "TG-CREATURE-026",
+        "TG-CREATURE-027",
+        "TG-CREATURE-028",
+        "TG-CREATURE-029",
+        "TG-CREATURE-030",
+        "TG-CREATURE-031",
+        "TG-CREATURE-032",
+        "TG-CREATURE-033",
+        "TG-CREATURE-034",
+        "TG-CREATURE-035",
+        "TG-CREATURE-036",
+        "TG-CREATURE-037",
+        "TG-CREATURE-038",
+        "TG-CREATURE-039"
+      ],
+      "rule": "Campaign events may draw from any opposing faction pool only when lore gives a reason; home faction identity and source-culture rules remain intact."
+    },
+    "factionId": "TG-FACTION-004",
+    "faction": "Kami",
+    "description": "The Kami campaign travels through storm shrines, mirror lakes, and foxfire gates where every reflection can become a hostile tactical lane. The Shrine-Path Archipelago has always allowed passage but never possession. Reflections begin moving before their sources, shrine contracts fracture, and the Creator must cleanse Gate distortions without breaking spirit law.",
+    "storyArcId": "TG-STORY-ARC-004"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   {
     "id": "TG-CAMPAIGN-007",
@@ -1394,15 +1661,25 @@
       "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
       "prototypeGate": "Do not expand implementation ahead of approved first-zone loop."
     },
+<<<<<<< HEAD
     "oneTitanVsManyCombat": {
       "playerControlledDeities": 1,
       "rule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+=======
+    "oneDeityVsManyCombat": {
+      "playerControlledDeities": 1,
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "forbidden": [
         "squad combat",
         "team formations",
         "multiple player-controlled deities",
         "ally positioning",
+<<<<<<< HEAD
         "team turns"
+=======
+        "team turns",
+        "multiple player-controlled Deities"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "fictionLabel": "one selected playable deity against many enemies"
     },
@@ -1435,6 +1712,7 @@
         "Gabriel",
         "Michael"
       ],
+<<<<<<< HEAD
       "combatRule": "one selected god or goddess enters each dungeon/combat route; no armies, no squads, no simultaneous party",
       "loreRule": "Ascension expands existing divine power during the Gate crisis; it never turns mortals into gods and never reduces Gates to simple portals."
     },
@@ -1570,6 +1848,37 @@
     "factionId": "TG-FACTION-007",
     "campaignType": "Normal",
     "aliasId": "TG-F07-CAMPAIGN-NORMAL"
+=======
+      "creatureIds": [
+        "TG-CREATURE-019",
+        "TG-CREATURE-020",
+        "TG-CREATURE-021",
+        "TG-CREATURE-022",
+        "TG-CREATURE-023",
+        "TG-CREATURE-024",
+        "TG-CREATURE-025",
+        "TG-CREATURE-026",
+        "TG-CREATURE-027",
+        "TG-CREATURE-028",
+        "TG-CREATURE-029",
+        "TG-CREATURE-030",
+        "TG-CREATURE-031",
+        "TG-CREATURE-032",
+        "TG-CREATURE-033",
+        "TG-CREATURE-034",
+        "TG-CREATURE-035",
+        "TG-CREATURE-036",
+        "TG-CREATURE-037",
+        "TG-CREATURE-038",
+        "TG-CREATURE-039"
+      ],
+      "rule": "Campaign events may draw from any opposing faction pool only when lore gives a reason; home faction identity and source-culture rules remain intact."
+    },
+    "factionId": "TG-FACTION-006",
+    "faction": "Empyrean",
+    "description": "The Empyrean campaign ascends luminous choir platforms orbiting a broken heaven-engine where harmonic gates rewrite battlefield elevation. The White Citadel believes existence can only survive through order — but at the summit, the choir engine sings a law that would erase every discordant survivor below. Order can stabilize worlds or erase them.",
+    "storyArcId": "TG-STORY-ARC-006"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   {
     "id": "TG-CAMPAIGN-008",
@@ -1622,15 +1931,25 @@
       "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
       "prototypeGate": "Do not expand implementation ahead of approved first-zone loop."
     },
+<<<<<<< HEAD
     "oneTitanVsManyCombat": {
       "playerControlledDeities": 1,
       "rule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+=======
+    "oneDeityVsManyCombat": {
+      "playerControlledDeities": 1,
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "forbidden": [
         "squad combat",
         "team formations",
         "multiple player-controlled deities",
         "ally positioning",
+<<<<<<< HEAD
         "team turns"
+=======
+        "team turns",
+        "multiple player-controlled Deities"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       ],
       "fictionLabel": "one selected playable deity against many enemies"
     },
@@ -1663,6 +1982,7 @@
         "Ares",
         "Zeus"
       ],
+<<<<<<< HEAD
       "combatRule": "one selected god or goddess enters each dungeon/combat route; no armies, no squads, no simultaneous party",
       "loreRule": "Ascension expands existing divine power during the Gate crisis; it never turns mortals into gods and never reduces Gates to simple portals."
     },
@@ -1798,5 +2118,36 @@
     "factionId": "TG-FACTION-001",
     "campaignType": "Normal",
     "aliasId": "TG-F01-CAMPAIGN-NORMAL-EXTRA"
+=======
+      "creatureIds": [
+        "TG-CREATURE-019",
+        "TG-CREATURE-020",
+        "TG-CREATURE-021",
+        "TG-CREATURE-022",
+        "TG-CREATURE-023",
+        "TG-CREATURE-024",
+        "TG-CREATURE-025",
+        "TG-CREATURE-026",
+        "TG-CREATURE-027",
+        "TG-CREATURE-028",
+        "TG-CREATURE-029",
+        "TG-CREATURE-030",
+        "TG-CREATURE-031",
+        "TG-CREATURE-032",
+        "TG-CREATURE-033",
+        "TG-CREATURE-034",
+        "TG-CREATURE-035",
+        "TG-CREATURE-036",
+        "TG-CREATURE-037",
+        "TG-CREATURE-038",
+        "TG-CREATURE-039"
+      ],
+      "rule": "Campaign events may draw from any opposing faction pool only when lore gives a reason; home faction identity and source-culture rules remain intact."
+    },
+    "factionId": "TG-FACTION-003",
+    "faction": "Olympian",
+    "description": "The Olympian campaign turns the reopened Mythos Gate into a sequence of public trials where glory must defend the Realm instead of feeding jealous spectacle. Olympus believes excellence proves divinity — but the Hollow watches from inside the trial records, testing whether glory can survive becoming law.",
+    "storyArcId": "TG-STORY-ARC-003"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   }
 ]

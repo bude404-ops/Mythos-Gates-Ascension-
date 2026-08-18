@@ -19,7 +19,11 @@
     {
       "id": "TG-ART-BATCH-TITAN-ATENRA-001",
       "taskId": "TG-DEV-001",
+<<<<<<< HEAD
       "name": "Aten Ra Deity Artwork Approval Batch",
+=======
+      "name": "Aten Ra First Deity Artwork Approval Batch",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "status": "APPROVED_FOR_GENERATION",
       "count": 4,
       "promptIds": [
@@ -29,6 +33,7 @@
         "TG-PROMPT-009"
       ],
       "entityIds": [
+<<<<<<< HEAD
         "TG-TITAN-001",
         "TG-TITAN-005",
         "TG-TITAN-006",
@@ -40,6 +45,19 @@
         "TG-TITAN-009"
       ],
       "approvalNotes": "Updated to the four-god playable roster; preserves approved style while removing retired deity prompts."
+=======
+        "MG-DEITY-001",
+        "MG-DEITY-002",
+        "MG-DEITY-003",
+        "MG-DEITY-004",
+        "MG-DEITY-005",
+        "MG-DEITY-006",
+        "MG-DEITY-007",
+        "MG-DEITY-008",
+        "MG-DEITY-009"
+      ],
+      "approvalNotes": "Aten Ra Deity prompts are approved as the first coherent faction batch because shared gold/bronze/sacred-geometry identity improves style consistency, starter presentation, scale validation, and 3D silhouette reference cohesion."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     },
     {
       "id": "TG-ART-BATCH-NPC-MAP-001",
@@ -61,8 +79,13 @@
   "qualityGates": [
     "Mobile-readable silhouette at card and battlefield preview scale.",
     "Every faction asset must visibly follow data/faction-visual-bible.json for silhouette, armor construction, material hierarchy, symbols, textures, and faction-specific avoid rules.",
+<<<<<<< HEAD
     "deities must read as living extradimensional mythic beings, not robots, mechs, androids, or humans in powered armor.",
     "deities must keep readable living anatomy and character silhouette; reject blocky buildings, tower bodies, fortress torsos, stacked geometric shapes, or architecture piles masquerading as Titans.",
+=======
+    "Deities must read as living extradimensional mythic beings, not robots, mechs, androids, or humans in powered armor.",
+    "Deities must keep readable living anatomy and character silhouette; reject blocky buildings, tower bodies, fortress torsos, stacked geometric shapes, or architecture piles masquerading as Deities.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "No sci-fi firearms, futuristic craft, modern corporate UI, generic superhero styling, watermarks, or readable generated text.",
     "Faction identity must remain unmistakable: material language, realm symbols, culture, and role silhouette must agree with canon.",
     "Generated image may not be marked imported until a real asset file exists in the artwork pipeline.",
@@ -70,7 +93,11 @@
     "The First Reopening Gate must read as physical broken Gatefield terrain, not a neon board-game tile set."
   ],
   "rejectionTriggers": [
+<<<<<<< HEAD
     "Human-sized deity silhouette.",
+=======
+    "Human-sized Deity silhouette.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Faction drift: asset lacks the faction visual bible material/symbol/silhouette language or uses an avoid-listed trope.",
     "Robot, mecha, android, cyborg, transformer, or powered-suit read.",
     "Blocky building, tower, fortress, cube-stack, abstract geometry pile, or literal architecture-body read.",

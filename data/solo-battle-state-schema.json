@@ -3,7 +3,11 @@
   "version": "1.1.0",
   "generated": "2026-08-12T16:25:37Z",
   "status": "IMPLEMENTED",
+<<<<<<< HEAD
   "purpose": "Canonical runtime state contract for one-active-deity battles: resources, stance, reactions, objectives, enemy intents, execution windows, terrain ticks, rewards, and telemetry.",
+=======
+  "purpose": "Canonical runtime state contract for one-active-Deity battles: resources, stance, reactions, objectives, enemy intents, execution windows, terrain ticks, rewards, and telemetry.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "canonSources": [
     "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
     "TG-BATTLEFIELD-VS-001",
@@ -15,11 +19,15 @@
     "round": "integer starting at 1",
     "phase": "PLAYER_PHASE | ENEMY_INTENT | ENEMY_PHASE | REACTION_WINDOW | TERRAIN_TICK | OBJECTIVE_EVALUATION | VICTORY | DEFEAT",
     "seed": "deterministic integer seed for repeatable reducer tests",
+<<<<<<< HEAD
     "titan": "one active deity object with stats, hp, position, stance, cooldowns, status, mastery, and resources",
+=======
+    "deity": "one active deity object with stats, hp, position, stance, cooldowns, status, mastery, and resources",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "resources": {
       "momentum": "0-100",
       "divinity": "0-100",
-      "solarCharge": "Titan-specific 0-100 meter for Aten Ra starter slice"
+      "solarCharge": "Deity-specific 0-100 meter for Aten Ra starter slice"
     },
     "enemies": "array of enemy combatants with archetype, hp, position, intent, vulnerable flag, threatWeight, and status",
     "terrain": "grid spaces with terrain type, hazard, illumination, cover, and objective tags",
@@ -31,10 +39,14 @@
   "reducers": [
     {
       "name": "createInitialSoloBattleState",
+<<<<<<< HEAD
       "responsibility": "Build deterministic vertical-slice state from deity, enemy, terrain, and objective data."
+=======
+      "responsibility": "Build deterministic vertical-slice state from Deity, enemy, terrain, and objective data."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     },
     {
-      "name": "applyTitanAction",
+      "name": "applyDeityAction",
       "responsibility": "Resolve basic attacks, techniques, signatures, stance shifts, focus, execution, and Divine Ascension."
     },
     {
@@ -87,12 +99,16 @@
     "solarCharge": {
       "min": 0,
       "max": 100,
-      "starterTitanOnly": true,
+      "starterDeityOnly": true,
       "spendOn": "Law of Holding and Ascendant reinforcement windows"
     }
   },
   "qualityGates": [
+<<<<<<< HEAD
     "Only one player-controlled deity may be active in battle state.",
+=======
+    "Only one player-controlled Deity may be active in battle state.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Every major enemy action must have a telegraph or logged exception.",
     "Reaction windows are turn-based prompts, never real-time inputs.",
     "Momentum and Divinity must clamp between 0 and 100.",
@@ -102,7 +118,11 @@
   "verticalSliceDefault": {
     "battleId": "TG-BATTLE-FIRST-GATE-001",
     "missionId": "TG-BATTLEFIELD-VS-001",
+<<<<<<< HEAD
     "starterDeityId": "TG-TITAN-001",
+=======
+    "starterDeityId": "MG-DEITY-001",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "starterEnemies": [
       "TG-CREATURE-001",
       "TG-CREATURE-001",

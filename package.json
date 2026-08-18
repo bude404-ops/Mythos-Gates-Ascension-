@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "mythos-gates-ascension",
+=======
+  "name": "mythos-gates-ascension-ascension",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "version": "0.6.9",
   "private": true,
   "type": "module",
@@ -10,7 +14,11 @@
     "build": "npm run index && npm run validate && node scripts/build-pages.mjs",
     "test": "npm run build",
     "sync:github": "node scripts/sync-github.mjs",
+<<<<<<< HEAD
     "precommit:verify": "npm run audit:continuity && npm run audit:aaa-structure && npm run validate:schemas && npm run test:production-modules && npm run validate:engine-adapters && npm run test:engine-adapters && npm run validate:migrations && npm run test:migration-contracts && npm run validate:platform-core && npm run test:platform-core && npm run validate:backend-boundary && npm run test:backend-boundary && npm run validate:runtime-persistence && npm run test:runtime-persistence && npm run validate:ue5-dungeon-framework && npm run test:ue5-dungeon-framework && npm run validate:ue5-mobile-first && npm run test:ue5-mobile-first && npm run validate:one-deity-vs-many-combat && npm run test:one-deity-vs-many-combat && npm run validate:mission-campaign-lore-run-ins && npm run test:mission-campaign-lore-run-ins && npm run validate:titan-art-identity-audit && npm run test:titan-art-identity-audit && npm run build && npm run index:check && npm run test:command-hub:stable && npm run test:playable-battle-ui && node scripts/visual-qa-smoke.mjs && npm run assets:verify && node scripts/validate-3d-blueprints.mjs && npm run test:solo-battle && npm run test:solo-vertical-slice && npm run test:battlefield-telemetry && npm run test:battlefield-runtime && npm run test:campaign-playflow && npm run test:async-arena && npm run test:creature-behavior && npm run validate:external-ai-packets && node scripts/secret-scan.mjs",
+=======
+    "precommit:verify": "npm run audit:continuity && npm run audit:aaa-structure && npm run validate:schemas && npm run test:production-modules && npm run validate:engine-adapters && npm run test:engine-adapters && npm run validate:migrations && npm run test:migration-contracts && npm run validate:platform-core && npm run test:platform-core && npm run validate:backend-boundary && npm run test:backend-boundary && npm run validate:runtime-persistence && npm run test:runtime-persistence && npm run validate:ue5-dungeon-framework && npm run test:ue5-dungeon-framework && npm run validate:ue5-mobile-first && npm run test:ue5-mobile-first && npm run validate:one-deity-vs-many-combat && npm run test:one-deity-vs-many-combat && npm run validate:mission-campaign-lore-run-ins && npm run test:mission-campaign-lore-run-ins && npm run validate:deity-art-identity-audit && npm run test:deity-art-identity-audit && npm run build && npm run index:check && npm run test:command-hub:stable && npm run test:playable-battle-ui && node scripts/visual-qa-smoke.mjs && npm run assets:verify && node scripts/validate-3d-blueprints.mjs && npm run test:solo-battle && npm run test:solo-vertical-slice && npm run test:battlefield-telemetry && npm run test:battlefield-runtime && npm run test:campaign-playflow && npm run test:async-arena && npm run test:creature-behavior && npm run validate:external-ai-packets && node scripts/secret-scan.mjs",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "index:check": "node scripts/check-index-fresh.mjs",
     "audit:continuity": "node scripts/audit-continuity-balance.mjs",
     "audit:aaa-structure": "node scripts/audit-aaa-structure.mjs",
@@ -60,9 +68,14 @@
     "test:one-deity-vs-many-combat": "node tests/one-deity-vs-many-combat-contract.test.mjs",
     "validate:mission-campaign-lore-run-ins": "node scripts/validate-mission-campaign-lore-run-ins.mjs",
     "test:mission-campaign-lore-run-ins": "node tests/mission-campaign-lore-run-ins-contract.test.mjs",
+<<<<<<< HEAD
     "validate:titan-art-identity-audit": "node scripts/validate-titan-art-identity-audit.mjs",
     "test:titan-art-identity-audit": "node tests/titan-art-identity-audit-contract.test.mjs",
     "validate:mythos-gates-dungeon-routes": "node scripts/validate-mythos-gates-dungeon-routes.mjs"
+=======
+    "validate:deity-art-identity-audit": "node scripts/validate-deity-art-identity-audit.mjs",
+    "test:deity-art-identity-audit": "node tests/deity-art-identity-audit-contract.test.mjs"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   "engines": {
     "node": ">=20"

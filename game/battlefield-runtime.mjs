@@ -196,7 +196,11 @@ function applyEnemyPositions(state, bindings = DEFAULT_ENEMY_BINDINGS) {
 
 export function createBattlefieldRuntimeState({ verticalSlice, deity, creatures, seed = 20260813, difficulty = 'Normal' }) {
   if (!verticalSlice?.id) throw new Error('Battlefield runtime requires the vertical slice contract.');
+<<<<<<< HEAD
   if (!deity?.id) throw new Error('Battlefield runtime requires one active deity.');
+=======
+  if (!titan?.id) throw new Error('Battlefield runtime requires one active deity.');
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   const terrain = buildBattlefieldTerrain(verticalSlice);
   const objectives = createBattlefieldObjectives(verticalSlice);
   const enemies = createBattlefieldEnemyRoster({ creatures });

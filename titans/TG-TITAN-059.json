@@ -1,5 +1,5 @@
 {
-  "id": "TG-TITAN-059",
+  "id": "MG-DEITY-059",
   "slug": "orryx-ash-dominion",
   "name": "Orryx Ash Dominion",
   "factionId": "TG-FACTION-007",
@@ -34,9 +34,13 @@
   "passives": [
     "Debt With Teeth: Orryx Ash Dominion gains Contract Debt when its disruptor choices express Infernal Dominion source-culture law through black-iron contract ground; Earth myth is only the later echo."
   ],
-  "lore": "Orryx Ash Dominion is a colossal Infernal Dominion disruptor from The Infernal Dominion. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Titan is the older source: Infernal Dominion disruptor office: necessary chaos, storm/curse interference, enemy order severance; Contracts/Faustian bargains: debt, signatures, clauses, payment.",
+  "lore": "Orryx Ash Dominion is a colossal Infernal Dominion disruptor from The Infernal Dominion. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Infernal Dominion disruptor office: necessary chaos, storm/curse interference, enemy order severance; Contracts/Faustian bargains: debt, signatures, clauses, payment.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+<<<<<<< HEAD
   "visualDescription": "Full-body living myth-source deity, not a costume: Orryx Ash Dominion shows black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture.. Role silhouette must read as Disruptor. Materials include black iron, volcanic glass, obsidian, blood wax, ash velvet, molten gold, charred parchment. The design must feel older than human mythology and avoid red robot demon, generic Halloween devil, sci-fi cables, literal castle armor, block fortress body, cartoon pitchfork.",
+=======
+  "visualDescription": "Full-body living myth-source Deity, not a costume: Orryx Ash Dominion shows black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture.. Role silhouette must read as Disruptor. Materials include black iron, volcanic glass, obsidian, blood wax, ash velvet, molten gold, charred parchment. The design must feel older than human mythology and avoid red robot demon, generic Halloween devil, sci-fi cables, literal castle armor, block fortress body, cartoon pitchfork.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-059",
   "artworkId": null,
@@ -57,7 +61,7 @@
       ],
       "effect": "Deal Infernal Dominion source-culture damage at range 3; generate Momentum and a small Contract Debt gain when used from black-iron contract ground or against the marked target. The hit reads visually as black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchy, ash velvet, hellfire clauses.",
       "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
       "name": "Blood-Wax Contract Technique \u2014 Interdiction",
@@ -89,7 +93,7 @@
       ],
       "effect": "Spend stored Contract Debt to impose a two-round rule from Infernal Dominion: cuts enemy resources, scrambles intent, and creates a counter-window instead of raw lockout. Enemies receive a readable counter-window before the strongest effect lands.",
       "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
       "name": "Divine Ascension \u2014 Hell-Crown Dominion Unbound",
@@ -122,7 +126,7 @@
       "slot": "Armor Body",
       "rarityFloor": "Epic",
       "primaryStat": "resistance",
-      "effect": "Improves survivability and makes the Titan read as Infernal Dominion source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "effect": "Improves survivability and makes the Deity read as Infernal Dominion source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
       "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
@@ -155,7 +159,11 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
+<<<<<<< HEAD
     "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+=======
+    "intendedDifficulty": "Tuned for harder solo encounters: every Deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "primaryRole": "interrupt resources, casts, reactions, and elite mechanics",
     "budgetTarget": 109,
     "computedCombatPower": 231,

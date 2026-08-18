@@ -200,7 +200,7 @@
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Battlefields/BATTLEFIELD_008_titan-gate-sun-throne/metadata.json",
+          "ref": "3D_Blueprints/Battlefields/BATTLEFIELD_008_mythos-gate-sun-throne/metadata.json",
           "status": "LINKED"
         },
         {
@@ -1793,7 +1793,7 @@
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_001_aten-ra-solar-law-monolith/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_001_aten-ra-solar-law-monolith/metadata.json",
           "status": "LINKED"
         },
         {
@@ -1815,12 +1815,96 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_002",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_002_khemet-suncrown/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_003",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_003_nefra-obsidian-dawn/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_004",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_004_orru-prism-verdict/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_005",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_005_sutekh-dune-eclipse/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_005_sutekh-dune-eclipse/metadata.json",
           "status": "LINKED"
         },
         {
@@ -1847,7 +1931,7 @@
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_006_iset-riverlight-throne/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_006_iset-riverlight-throne/metadata.json",
           "status": "LINKED"
         },
         {
@@ -1869,12 +1953,69 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_007",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_007_karnu-glass-horizon/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_008",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_008_maahes-noon-bastion/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_009",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_009_amunet-hidden-sun/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_009_amunet-hidden-sun/metadata.json",
           "status": "LINKED"
         },
         {
@@ -1901,7 +2042,7 @@
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_010_the-allfather-stormvein/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_010_the-allfather-stormvein/metadata.json",
           "status": "LINKED"
         },
         {
@@ -1928,7 +2069,7 @@
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_011_hrothar-rune-mountain/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_011_hrothar-rune-mountain/metadata.json",
           "status": "LINKED"
         },
         {
@@ -1950,12 +2091,96 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_012",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_012_skeld-iron-tempest/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_013",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_013_eirwyn-valkstorm/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_014",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_014_mordun-frost-anvil/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_015",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_015_veyra-thunderloom/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_015_veyra-thunderloom/metadata.json",
           "status": "LINKED"
         },
         {
@@ -1977,12 +2202,69 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_016",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_016_ragnor-skybreaker/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_017",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_017_ullr-snow-crown/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_018",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_018_sigrun-oathflare/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_018_sigrun-oathflare/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2009,7 +2291,7 @@
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_019_aurelion-heaven-marrow/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_019_aurelion-heaven-marrow/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2031,12 +2313,69 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_020",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_020_kallix-marble-thunder/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_021",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_021_thyressa-golden-aegis/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_022",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_022_ilyon-laurel-flame/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_022_ilyon-laurel-flame/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2063,7 +2402,7 @@
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_023_nikos-star-lance/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_023_nikos-star-lance/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2085,12 +2424,69 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_024",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_024_dione-victory-mirror/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_025",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_025_helior-bronze-summit/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_026",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_026_pallas-oath-spear/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_026_pallas-oath-spear/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2112,12 +2508,42 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_027",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_027_eiren-crowned-horizon/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_028",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_028_amaterion-spirit-sun/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_028_amaterion-spirit-sun/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2144,7 +2570,7 @@
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_029_tsukiro-moon-veil/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_029_tsukiro-moon-veil/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2166,12 +2592,69 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_030",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_030_raidenko-storm-script/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_031",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_031_mizuka-shrine-tide/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_032",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_032_kageyori-shadow-gate/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_032_kageyori-shadow-gate/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2198,7 +2681,7 @@
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_033_hanae-blossom-ward/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_033_hanae-blossom-ward/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2220,12 +2703,96 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_034",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_034_onimaru-red-seal/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_035",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_035_korin-mist-path/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_036",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_036_yamabito-stone-prayer/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_037",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_037_dagoran-root-crown/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_037_dagoran-root-crown/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2247,12 +2814,69 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_038",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_038_eryndor-emerald-oath/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_039",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_039_melian-moon-grove/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_040",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_040_bran-granite-bough/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_040_bran-granite-bough/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2279,7 +2903,7 @@
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_041_nimue-silver-pool/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_041_nimue-silver-pool/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2306,7 +2930,7 @@
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_042_cernan-wild-vale/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_042_cernan-wild-vale/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2328,12 +2952,96 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_043",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_043_ailbhe-thorn-song/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_044",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_044_oghma-stone-script/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_045",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_045_tara-dawn-barrow/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_046",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_046_seraphel-the-throne-eternal/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_046_seraphel-the-throne-eternal/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2355,12 +3063,42 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_047",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_047_caelion-dawnborn-axis/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_048",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_048_aurelia-radiant-spear/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_048_aurelia-radiant-spear/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2382,12 +3120,42 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_049",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_049_malachor-law-warden/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_050",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_050_elyndra-choir-crown/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_050_elyndra-choir-crown/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2409,12 +3177,69 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_051",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_051_orison-white-citadel/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_052",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_052_vespera-mercy-blade/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_053",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_053_axiom-gate-choir/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_053_axiom-gate-choir/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2436,12 +3261,42 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_054",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_054_theon-still-horizon/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_055",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_055_mordrath-the-infernal-king/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_055_mordrath-the-infernal-king/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2463,12 +3318,42 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_056",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_056_varkul-bloodforged-crown/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_057",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_057_nyxara-flameborn-court/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_057_nyxara-flameborn-court/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2495,7 +3380,7 @@
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_058_azrakar-chainwarden/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_058_azrakar-chainwarden/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2517,12 +3402,42 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_059",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_059_orryx-ash-dominion/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "TITAN_060",
       "asset_type": "DEITY",
       "depends_on": [
         {
           "type": "blueprint",
-          "ref": "3D_Blueprints/Characters/Titans/TITAN_060_malvera-ember-throne/metadata.json",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_060_malvera-ember-throne/metadata.json",
           "status": "LINKED"
         },
         {
@@ -2544,6 +3459,90 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "asset_id": "TITAN_061",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_061_kharon-black-iron/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_062",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_062_sablex-cinder-duke/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+      "asset_id": "TITAN_063",
+      "asset_type": "TITAN",
+      "depends_on": [
+        {
+          "type": "blueprint",
+          "ref": "3D_Blueprints/Characters/Deities/TITAN_063_zerath-wound-gate/metadata.json",
+          "status": "LINKED"
+        },
+        {
+          "type": "scale",
+          "ref": "MASTER_SCALE",
+          "status": "REQUIRED"
+        }
+      ],
+      "revalidates": [
+        "model",
+        "materials",
+        "textures",
+        "rig",
+        "animations",
+        "vfx",
+        "lod",
+        "collision",
+        "battlefield_fit"
+      ]
+    },
+    {
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "asset_id": "CREATURE_019",
       "asset_type": "CREATURE",
       "depends_on": [

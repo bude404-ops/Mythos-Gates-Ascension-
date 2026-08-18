@@ -16,7 +16,7 @@ const push = (arr, code, detail) => arr.push({ code, detail });
 
 if (economy.philosophy.businessModel !== 'FREE_TO_PLAY') push(issues, 'NOT_FREE_TO_PLAY', 'Business model must be free-to-play.');
 if (!economy.philosophy.freePlayerPromise?.includes('Campaign playable')) push(issues, 'FREE_CAMPAIGN_PROMISE_MISSING', 'Campaign must be playable for free.');
-if (economy.titanUnlocking?.allTitansGameplayObtainable !== true) push(issues, 'TITANS_NOT_EARNABLE', 'All Titans must remain gameplay obtainable.');
+if (economy.titanUnlocking?.allTitansGameplayObtainable !== true) push(issues, 'TITANS_NOT_EARNABLE', 'All deities must remain gameplay obtainable.');
 if (economy.titanPower?.directPowerSales !== false) push(issues, 'DIRECT_POWER_SALES', 'Direct combat power sales are forbidden.');
 if (economy.cosmetics?.noCombatStats !== true) push(issues, 'COSMETIC_STATS_FOUND', 'Cosmetics must not grant combat stats.');
 if (economy.rewardedAds?.forcedAds !== false) push(issues, 'FORCED_ADS', 'Ads must be optional only.');

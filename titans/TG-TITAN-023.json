@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "id": "TG-TITAN-023",
   "slug": "ares",
   "name": "Ares",
+=======
+  "id": "MG-DEITY-023",
+  "slug": "nikos-star-lance",
+  "name": "Nikos Star-Lance",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "factionId": "TG-FACTION-003",
   "faction": "Olympian",
   "rarity": "Mythic God",
@@ -34,10 +40,17 @@
   "passives": [
     "Aegis Favor: Nikos gains Favor when disruptor play places a false timing window that punishes enemy overcommitment on marble thunder line. At 3 stacks, the next Technique or Reaction adds a divine contest law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of High Olympian courts."
   ],
+<<<<<<< HEAD
   "lore": "Ares, Bronze War Fury, is now canonized as one of the four playable deities of Olympian. The deity is the source-realm divinity behind the mythology rather than a generic champion: war god of violent courage, battlefield rupture, and victory frenzy. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses war god of violent courage, battlefield rupture, and victory frenzy; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
   "visualDescription": "Ares manifests as war god of violent courage, battlefield rupture, and victory frenzy from Olympian: rugged masculine warrior face, broken nose, hard jaw, burning eyes, battle-scarred brow; explosive muscular masculine fighter build, thick neck, powerful shoulders, forward-leaning aggression; signature silhouette: crested helm, spear thrust line, torn red cloak, shield shards around waist. Weapon: bronze war spear and notched kopis. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
   "artStatus": "READY_FOR_GENERATION",
+=======
+  "lore": "Nikos Star-Lance is a colossal Olympian disruptor from The Celestial Heights of Olympus. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Olympian disruptor office: necessary chaos, storm/curse interference, enemy order severance; Ares/Nike: war fury and victory personified.",
+  "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+  "visualDescription": "Full-body living myth-source Deity, not a costume: Nikos Star-Lance shows living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal halos, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands.. Role silhouette must read as Disruptor. Materials include living white marble, warm bronze, laurel green, aegis scale gold, storm blue, oracle violet smoke, ambrosial ivory. The design must feel older than human mythology and avoid generic toga costume, Roman gladiator confusion, marble statue stiffness, robot bronze automaton, sci-fi halo, neon arena grid.",
+  "artStatus": "Prompt Ready",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "artPromptId": "TG-PROMPT-023",
   "artworkId": null,
   "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
@@ -57,7 +70,7 @@
       ],
       "effect": "Deal Olympian source-culture damage at range 3; generate Momentum and a small Laurel Favor gain when used from trial-marked arena ground or against the marked target. The hit reads visually as living marble-light, bronze cuirass, laurel circuits, aegis scales, oracle smoke, thunder tribunal auras, hoplite shield geometry.",
       "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
       "name": "Laurel Trial Technique — Interdiction",
@@ -89,7 +102,7 @@
       ],
       "effect": "Spend stored Laurel Favor to impose a two-round rule from Celestial Heights of Olympus: cuts enemy resources, scrambles intent, and creates a counter-window instead of raw lockout. Enemies receive a readable counter-window before the strongest effect lands.",
       "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
       "name": "Divine Ascension — Nike Crowned Ascension",
@@ -122,7 +135,7 @@
       "slot": "Armor Body",
       "rarityFloor": "Epic",
       "primaryStat": "resistance",
-      "effect": "Improves survivability and makes the Titan read as Celestial Heights of Olympus source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "effect": "Improves survivability and makes the Deity read as Celestial Heights of Olympus source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
       "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
@@ -155,7 +168,11 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
+<<<<<<< HEAD
     "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+=======
+    "intendedDifficulty": "Tuned for harder solo encounters: every Deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "primaryRole": "interrupt resources, casts, reactions, and elite mechanics",
     "budgetTarget": 109,
     "computedCombatPower": 229,

@@ -6,6 +6,7 @@ A Realm is an extradimensional civilization-domain shaped by mythic law, history
 
 ## 1. Aten Ra
 
+<<<<<<< HEAD
 **Realm:** The Solar Dominion of Khepra  
 **Ascension Route:** Sun-Scale Verdict Descent  
 **Entry Gate:** The Sun-Scale Gate  
@@ -13,6 +14,12 @@ A Realm is an extradimensional civilization-domain shaped by mythic law, history
 **Identity:** An extradimensional solar civilization whose crowns, pylons, collars, sun-discs, scarabs, throne-magic, river rites, lion guardians, and desert-storm wardens later appeared in human Egyptian myth as imperfect memories of the source Realm.  
 **Philosophy:** Ma’at is not morality to Aten Ra; it is physics. Solar authority, measured truth, and sacred kingship keep Isfet from unmaking reality.  
 **Route Function:** One selected Aten Ra god or goddess enters Sun-Scale Verdict Descent to test the Realm's law through source-culture hazards, Hollow pressure, elite locks, lore detours, and the boss chamber.
+=======
+**Realm:** The Solar Dominion of Khepra
+**Inspiration:** Ancient Egyptian mythology
+**Identity:** A divine solar civilization built around sacred order, divine kingship, solar power, ancient temples, celestial knowledge, and solar law.
+**Philosophy:** Sacred order channels solar power into civilization.
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 Visual identity: Solar-disc crowns with hand-like rays, pharaonic collars and pectorals, linen-and-gold regalia, faience blue-green inlays, lapis/obsidian shadows, scarab renewal marks, falcon/jackal/lion/cobra masks, lotus/papyrus river motifs, pylon harnesses, was-sceptre weapon geometry, Ma’at balance lines, Nile-black and desert-red duality.
 
@@ -90,7 +97,21 @@ Visual identity: black iron crowns, volcanic glass armor, contract parchment ski
 
 ## Campaign Threat Layer
 
+<<<<<<< HEAD
 The Hollow is not an eighth playable Realm. It is the cross-route anti-civilization pressure layer that attacks memory, identity, terrain law, and isolated deity decisions across every Ascension route.
+=======
+
+## 8. Campaign Threat Layer
+
+**Faction Role:** Non-playable campaign antagonist layer
+**Domains:** Forgotten ruins, Hollow voids, Beast Realms, Gateborn anomaly zones, and Ancient World Boss sites
+**Identity:** The eighth storyline pressure layer is not a normal playable Realm. It is the combined force of everything the Ascension Collapse exposed, mutated, starved, or failed to keep sealed.
+**Philosophy:** The Collapse did not create one enemy; it revealed every unfinished wound beneath the Mythos Gates.
+
+This layer exists so the full game can speak in eight faction-facing forces without inventing an eighth ordinary playable civilization. The seven playable Realms remain the collection and campaign backbone. The Campaign Threat Layer supplies enemies, bosses, events, anomaly missions, Hollow corruption, Forgotten memory-loss, Beast Realm hunts, Gateborn mutations, and Ancient World Boss guardians.
+
+Visual identity: broken gods, identity-drained cities, primordial monsters, distorted Gate geometry, memory voids, unstable anomaly terrain, and legendary singular threats.
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 
 ## Empire Conflict Rule
 

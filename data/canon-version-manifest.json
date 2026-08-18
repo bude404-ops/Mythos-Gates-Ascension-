@@ -61,7 +61,7 @@
       "owner": "Gameplay Director",
       "summary": "Created source module seams for gameplay, economy, validated data loading, UI state presenters, and production gate manifesting.",
       "affectedData": [
-        "data/titans.json",
+        "data/deitys.json",
         "data/mission-registry.json",
         "data/free-to-play-economy.json"
       ],
@@ -80,7 +80,7 @@
       "owner": "Technical Director",
       "summary": "Added engine-neutral export mapper plus Unity and Unreal adapter manifests while preserving canon as engine-independent source.",
       "affectedData": [
-        "data/titans.json",
+        "data/deitys.json",
         "data/creatures.json",
         "data/campaigns.json",
         "data/maps.json",
@@ -201,7 +201,11 @@
       "type": "ENGINE_EXPORT",
       "status": "APPLIED",
       "owner": "Technical Director",
+<<<<<<< HEAD
       "summary": "Converted Mythos Gates target architecture to an Unreal Engine 5-first deity-scale zone-based dungeon-crawler tactical RPG framework and mapped the first mission into a reusable region, exploration zone, tactical arena, and boss-arena template.",
+=======
+      "summary": "Converted Mythos Gates target architecture to an Unreal Engine 5-first Deity-scale zone-based dungeon-crawler tactical RPG framework and mapped the first mission into a reusable region, exploration zone, tactical arena, and boss-arena template.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "affectedData": [
         "engine/unreal/dungeon-crawler-framework.json",
         "engine/unreal/first-mission-zone-template.json",
@@ -244,7 +248,11 @@
       "type": "RUNTIME_PROJECTION",
       "status": "APPLIED",
       "owner": "Combat Director",
+<<<<<<< HEAD
       "summary": "Locked all standard combat around one selected playable deity versus multiple coordinated enemies, forbidding squads/team turns while preserving stable one-titan internal file names.",
+=======
+      "summary": "Locked all standard combat around one player-controlled Deity versus multiple coordinated enemies, forbidding squads/team turns and requiring visible Deity power growth in the first mission prototype.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "affectedData": [
         "data/one-deity-vs-many-combat.json",
         "src/combat/one-deity-vs-many.mjs",
@@ -266,7 +274,7 @@
       "type": "RUNTIME_PROJECTION",
       "status": "APPLIED",
       "owner": "Lore Director",
-      "summary": "Updated all missions and campaigns to carry the mobile UE5 one-Titan loop, lore continuity guardrails, and lore-valid cross-faction run-in pools; added faction-aligned non-playable creatures for mission/event clashes.",
+      "summary": "Updated all missions and campaigns to carry the mobile UE5 one-Deity loop, lore continuity guardrails, and lore-valid cross-faction run-in pools; added faction-aligned non-playable creatures for mission/event clashes.",
       "affectedData": [
         "data/mission-registry.json",
         "data/campaigns.json",

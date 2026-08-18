@@ -1,15 +1,15 @@
 {
-  "id": "TG-TITAN-003",
+  "id": "MG-DEITY-003",
   "slug": "nefra-obsidian-dawn",
-  "name": "Nefra Obsidian Dawn",
+  "name": "Nefra",
   "factionId": "TG-FACTION-001",
   "faction": "Aten Ra",
   "rarity": "Epic",
   "role": "Controller",
   "abilities": [
-    "Nefra Obsidian Dawn \u2014 Ma\u2019at-Weighted Strike Vector",
+    "Nefra \u2014 Ma\u2019at-Weighted Strike Vector",
     "Pylon Edict Technique \u2014 Field Rewrite",
-    "Nefra Obsidian Dawn: Sun-Scale Decree Dominion Grid",
+    "Nefra: Sun-Scale Decree Dominion Grid",
     "Divine Ascension \u2014 Aten-Ra Source Radiance"
   ],
   "stats": {
@@ -27,16 +27,16 @@
     "combatPower": 226
   },
   "equipment": [
-    "Nefra Obsidian Dawn Compass Ma\u2019at Was-Sceptre Blade",
-    "Nefra Obsidian Dawn Electrum Wesekh Source-Plate",
-    "Nefra Obsidian Dawn Khepri Solar Scarab Core"
+    "Nefra Compass Ma\u2019at Was-Sceptre Blade",
+    "Nefra Electrum Wesekh Source-Plate",
+    "Nefra Khepri Solar Scarab Core"
   ],
   "passives": [
-    "Ma\u2019at Source Law: Nefra Obsidian Dawn gains Solar Charge when its controller choices express Solar Dominion of Khepra source-culture law through Aten-lit judgment ground; Earth myth is only the later echo."
+    "Ma\u2019at Source Law: Nefra gains Solar Charge when its controller choices express Solar Dominion of Khepra source-culture law through Aten-lit judgment ground; Earth myth is only the later echo."
   ],
-  "lore": "Nefra Obsidian Dawn governs the border where the sun leaves the underworld and becomes visible again. Human funerary art copied fragments of her horizon masks and dawn reliefs. She controls terrain by deciding what may cross from shadow into light.",
+  "lore": "Nefra governs the border where the sun leaves the underworld and becomes visible again. Human funerary art copied fragments of her horizon masks and dawn reliefs. She controls terrain by deciding what may cross from shadow into light.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
-  "visualDescription": "Tall controller Titan of black sunrise: obsidian-blue enamel mask, thin amber dawn visor, horizon-ring collar, ivory limestone relief plates, black-gold scale armor, and angular light lanes emerging from underworld-shadow limbs. Must feel like living threshold law, not a mummy, statue, or necropolis building.",
+  "visualDescription": "Tall controller Deity of black sunrise: obsidian-blue enamel mask, thin amber dawn visor, horizon-ring collar, ivory limestone relief plates, black-gold scale armor, and angular light lanes emerging from underworld-shadow limbs. Must feel like living threshold law, not a mummy, statue, or necropolis building.",
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-003",
   "artworkId": null,
@@ -44,7 +44,7 @@
   "backstoryId": "TG-BACKSTORY-TITAN-003",
   "abilityDetails": [
     {
-      "name": "Nefra Obsidian Dawn \u2014 Ma\u2019at-Weighted Strike Vector",
+      "name": "Nefra \u2014 Ma\u2019at-Weighted Strike Vector",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -57,7 +57,7 @@
       ],
       "effect": "Deal Aten Ra source-culture damage at range 4; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
       "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
       "name": "Pylon Edict Technique \u2014 Field Rewrite",
@@ -76,7 +76,7 @@
       "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
     },
     {
-      "name": "Nefra Obsidian Dawn: Sun-Scale Decree Dominion Grid",
+      "name": "Nefra: Sun-Scale Decree Dominion Grid",
       "slot": "Signature",
       "unlockLevel": 12,
       "cost": "45 Momentum + 25 Divinity",
@@ -89,7 +89,7 @@
       ],
       "effect": "Spend stored Solar Charge to impose a two-round rule from Solar Dominion of Khepra: moves enemies, rewrites terrain pressure, and delays high-threat actions through source-culture law. Enemies receive a readable counter-window before the strongest effect lands.",
       "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
       "name": "Divine Ascension \u2014 Aten-Ra Source Radiance",
@@ -110,7 +110,7 @@
   ],
   "equipmentDetails": [
     {
-      "name": "Nefra Obsidian Dawn Compass Ma\u2019at Was-Sceptre Blade",
+      "name": "Nefra Compass Ma\u2019at Was-Sceptre Blade",
       "slot": "Relic Weapon",
       "rarityFloor": "Epic",
       "primaryStat": "attack",
@@ -118,15 +118,15 @@
       "balanceGuardrail": "No extra action loops; empowered basics are once per round."
     },
     {
-      "name": "Nefra Obsidian Dawn Electrum Wesekh Source-Plate",
+      "name": "Nefra Electrum Wesekh Source-Plate",
       "slot": "Armor Body",
       "rarityFloor": "Epic",
       "primaryStat": "resistance",
-      "effect": "Improves survivability and makes the Titan read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "effect": "Improves survivability and makes the Deity read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
       "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
-      "name": "Nefra Obsidian Dawn Khepri Solar Scarab Core",
+      "name": "Nefra Khepri Solar Scarab Core",
       "slot": "Resonance Core",
       "rarityFloor": "Epic",
       "primaryStat": "energy",
@@ -155,7 +155,11 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
+<<<<<<< HEAD
     "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+=======
+    "intendedDifficulty": "Tuned for harder solo encounters: every Deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "primaryRole": "reshape terrain and deny enemy plans",
     "budgetTarget": 109,
     "computedCombatPower": 226,
@@ -175,11 +179,11 @@
   ],
   "armorCanon": "obsidian necropolis mask, horizon-ring collar, black-gold scale skirt, dawn slit visor, limestone funerary relief plates",
   "updated": "2026-08-16",
-  "weaponCanon": "Nefra Obsidian Dawn Compass Ma\u2019at Was-Sceptre Blade",
+  "weaponCanon": "Nefra Compass Ma\u2019at Was-Sceptre Blade",
   "gearCanon": {
-    "weapon": "Nefra Obsidian Dawn Compass Ma\u2019at Was-Sceptre Blade",
-    "armor": "Nefra Obsidian Dawn Electrum Wesekh Source-Plate",
-    "core": "Nefra Obsidian Dawn Khepri Solar Scarab Core",
+    "weapon": "Nefra Compass Ma\u2019at Was-Sceptre Blade",
+    "armor": "Nefra Electrum Wesekh Source-Plate",
+    "core": "Nefra Khepri Solar Scarab Core",
     "movementRelic": "Aten Hand-Ray Gate Step",
     "reactionRelic": "Uraeus Counter-Edict",
     "executionRelic": "Weigh the Name",

@@ -2,9 +2,15 @@
   "id": "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
   "version": "0.9.0",
   "generated": "2026-08-11T20:08:28Z",
+<<<<<<< HEAD
   "fantasy": "I am controlling a legendary deity, alone, against an impossible battlefield.",
   "pillars": [
     "One active player deity",
+=======
+  "fantasy": "I am controlling a legendary Deity, alone, against an impossible battlefield.",
+  "pillars": [
+    "One active player Deity",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Skillful Momentum",
     "Divine spectacle",
     "Reactive turn-based tactics",
@@ -13,14 +19,22 @@
     "Mobile-readable power fantasy"
   ],
   "completeCombatLoop": [
+<<<<<<< HEAD
     "Choose one deity after reading mission type, terrain, enemies, boss, and modifiers.",
+=======
+    "Choose one Deity after reading mission type, terrain, enemies, boss, and modifiers.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Enter tactical battlefield with objective, enemy intents, terrain hazards, Momentum 0, Divinity 0, selected stance.",
     "Player turn: move, basic attack, technique, stance shift, environmental action, execution, or Divine Ascension if ready.",
     "Enemy turn: coordinated AI acts against one powerful target, telegraphing threats and creating reaction windows.",
     "Reaction windows interrupt enemy resolution without becoming real-time combat.",
     "Momentum rises through aggressive intelligent mastery and falls through poor positioning or passivity.",
     "Divinity rises through mythic performance and powers Ascendant stance/Divine Ascension.",
+<<<<<<< HEAD
     "Terrain and destructible objects alter movement, damage, enemy AI, and deity-specific mechanics.",
+=======
+    "Terrain and destructible objects alter movement, damage, enemy AI, and Deity-specific mechanics.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Victory comes from objective completion, boss defeat, escape, ritual control, or survival state; not always enemy wipe."
   ],
   "turnStructure": {
@@ -40,7 +54,11 @@
     "noRealtimeRule": "Reaction choices are turn-based prompts with clear limits and costs."
   },
   "movement": {
+<<<<<<< HEAD
     "base": "deity movement uses speed, size, terrain cost, engagement zones, and stance modifiers.",
+=======
+    "base": "Deity movement uses speed, size, terrain cost, engagement zones, and stance modifiers.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "skillExpression": [
       "flank arcs",
       "line-of-sight denial",
@@ -50,7 +68,11 @@
       "retreat denial",
       "objective timing"
     ],
+<<<<<<< HEAD
     "soloDifference": "Movement is survival, offense, and resource generation at once; there is no allied backline to save the deity."
+=======
+    "soloDifference": "Movement is survival, offense, and resource generation at once; there is no allied backline to save the Deity."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   "attacks": {
     "basic": "Reliable identity-specific generator; not a generic Strike clone.",
@@ -59,7 +81,11 @@
     "damagePipeline": "Attack roll/seed -> accuracy/evasion/parry -> terrain/stance/status modifiers -> shields/mitigation -> damage -> vulnerability/execution check -> event log."
   },
   "momentum": {
+<<<<<<< HEAD
     "definition": "The deity gaining control of the battlefield.",
+=======
+    "definition": "The Deity gaining control of the battlefield.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "range": "0-100",
     "earnedBy": [
       "successful attacks",
@@ -88,7 +114,7 @@
       "defensive reactions",
       "executions",
       "stance surges",
-      "Titan-specific mechanic triggers"
+      "Deity-specific mechanic triggers"
     ],
     "designGoal": "Reward aggressive intelligent play rather than passive waiting."
   },
@@ -101,7 +127,7 @@
       "signature ability use",
       "taking or dealing mythic-scale damage",
       "perfect reaction chains",
-      "Titan-specific sacred actions"
+      "Deity-specific sacred actions"
     ],
     "spentOn": [
       "Ascendant stance upkeep",
@@ -122,8 +148,13 @@
       "Brace boss impact",
       "Seize objective interruption"
     ],
+<<<<<<< HEAD
     "costs": "Usually Momentum, cooldown, stance condition, or deity-specific resource.",
     "limits": "One default reaction per enemy phase unless divine mastery, Guard stance, or unique mechanic expands it.",
+=======
+    "costs": "Usually Momentum, cooldown, stance condition, or Deity-specific resource.",
+    "limits": "One default reaction per enemy phase unless Deity mastery, Guard stance, or unique mechanic expands it.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "clarity": "UI shows trigger, cost, likely outcome, and skip option."
   },
   "stances": {
@@ -139,11 +170,15 @@
       "benefit": "divine techniques, mechanic amplification, battlefield impact",
       "tradeoff": "Divinity drain and post-Ascension vulnerability risk"
     },
-    "uniqueVariants": "Individual Titans may rename or twist stances while preserving readability."
+    "uniqueVariants": "Individual Deities may rename or twist stances while preserving readability."
   },
   "executions": {
     "vulnerability": "Enemies become vulnerable at health thresholds, stagger states, broken guard, terrain trap, or failed cast.",
+<<<<<<< HEAD
     "choice": "Executing may spend action economy but grants deity-specific payoff.",
+=======
+    "choice": "Executing may spend action economy but grants Deity-specific payoff.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "payoffs": {
       "Reaver": "heal/lifesteal surge",
       "Assassin": "Momentum refund/stealth reset",
@@ -180,10 +215,14 @@
       "ability targeting",
       "Momentum gain/loss",
       "Divinity gain",
-      "Titan mechanic triggers",
+      "Deity mechanic triggers",
       "enemy behavior choices"
     ],
+<<<<<<< HEAD
     "destruction": "Pillars, walls, gates, shrines, cover, bridges, chains, roots, and ritual anchors can be broken when mission and deity rules allow."
+=======
+    "destruction": "Pillars, walls, gates, shrines, cover, bridges, chains, roots, and ritual anchors can be broken when mission and Deity rules allow."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   "enemyAI": {
     "principle": "Enemies know they are fighting one powerful opponent.",
@@ -211,10 +250,14 @@
       "Executioner",
       "Elite",
       "Champion",
+<<<<<<< HEAD
       "Enemy deity"
+=======
+      "Enemy Deity"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ]
   },
-  "titanArchetypes": [
+  "deityArchetypes": [
     "Juggernaut",
     "Duelist",
     "Assassin",
@@ -226,7 +269,7 @@
     "Trickster"
   ],
   "progression": {
-    "perTitan": [
+    "perDeity": [
       "level",
       "stats",
       "abilities",
@@ -250,7 +293,11 @@
       "win without critical damage",
       "complete mission using required stance discipline"
     ],
+<<<<<<< HEAD
     "reward": "Learning the deity, not only increasing numbers."
+=======
+    "reward": "Learning the Deity, not only increasing numbers."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   "bossMechanics": {
     "phases": [
@@ -272,7 +319,7 @@
     "Ritual",
     "Escape",
     "Boss Battle",
-    "Titan Duel",
+    "Deity Duel",
     "Environmental Battle",
     "Gauntlet",
     "Ascension"
@@ -282,13 +329,17 @@
     "mission": "Individual tactical battle with explicit solo purpose",
     "boss": "Major narrative encounter",
     "chapterFinale": "Cinematic confrontation",
-    "loreJustification": "Unstable Gates allow Titans to cross where armies would be destroyed, scattered, or turned by realm pressure."
+    "loreJustification": "Unstable Gates allow Deities to cross where armies would be destroyed, scattered, or turned by realm pressure."
   },
   "asynchronousPvp": {
+<<<<<<< HEAD
     "name": "Asynchronous deity Challenge",
+=======
+    "name": "Asynchronous Deity Challenge",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "notRealTimePvp": true,
     "defenseSnapshot": [
-      "defensiveTitan",
+      "defensiveDeity",
       "equipment",
       "abilities",
       "battlefield",
@@ -300,7 +351,11 @@
   },
   "futureReserveSystem": {
     "currentRule": "Do not implement reserves in normal build.",
+<<<<<<< HEAD
     "architecture": "Allow fields for 1 active deity + optional future reserve list; only one deity ever appears at a time."
+=======
+    "architecture": "Allow fields for 1 active deity + optional future reserve list; only one Deity ever appears at a time."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   "mobileUX": {
     "top": [
@@ -319,7 +374,7 @@
       "Divinity",
       "reaction availability"
     ],
-    "principle": "Large touch targets, low clutter, Titan as visual focal point."
+    "principle": "Large touch targets, low clutter, Deity as visual focal point."
   },
   "camera": {
     "normal": "tactical readable battlefield view",
@@ -352,7 +407,7 @@
       "reactions",
       "stances",
       "executions",
-      "Titan-specific mechanics",
+      "Deity-specific mechanics",
       "destructible terrain",
       "environmental interactions",
       "solo sustain",
@@ -364,15 +419,27 @@
   "samplePresets": [
     {
       "id": "TG-SOLO-ACTIVE-TITAN-PRESET-001",
+<<<<<<< HEAD
       "name": "One-active-Titan Combat Baseline",
+=======
+      "name": "One-active-Deity Combat Baseline",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "purpose": "QA reference: standard combat resolves around one selected active deity.",
       "squadSize": 1,
-      "titanIds": [
-        "TG-TITAN-001"
+      "deityIds": [
+        "MG-DEITY-001"
       ],
+<<<<<<< HEAD
       "activeSoloRule": "Only one deity is active in standard solo combat.",
       "activeDeityCount": 1
     }
   ],
   "sourceCultureAbilityRule": "All basics, techniques, signatures, movement, reactions, executions, weapons, armor, and cores must express the selected deity’s Realm as the older source behind Earth mythology."
+=======
+      "activeSoloRule": "Only one Deity is active in standard solo combat.",
+      "activeDeityCount": 1
+    }
+  ],
+  "sourceCultureAbilityRule": "All basics, techniques, signatures, movement, reactions, executions, weapons, armor, and cores must express the selected Deity\u2019s Realm as the older source behind Earth mythology."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 }

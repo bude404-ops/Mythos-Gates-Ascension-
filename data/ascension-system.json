@@ -1,30 +1,35 @@
 {
-  "id": "TG-ASCENSION-001",
-  "status": "FOUNDATION_READY",
-  "standardSquadSize": 5,
-  "infiniteFloorSupport": true,
-  "bands": [
+  "id": "MG-ASCENSION-SYSTEM-001",
+  "version": "2.0.0",
+  "name": "Mythos Gates: Ascension Progression System",
+  "designPillar": "Mythic Ascension: The player climbs through divine trials and fractured realms toward greater power.",
+  "progressionStages": [
     {
-      "range": "1-10",
-      "tier": "Normal"
+      "stage": "Awakening",
+      "description": "The deity awakens through the first Mythos Gate, gaining base power and combat identity.",
+      "unlockRequirements": "Complete first realm campaign mission",
+      "rewards": "Base abilities, first weapon unlock"
     },
     {
-      "range": "11-20",
-      "tier": "Hard"
+      "stage": "Trials",
+      "description": "The deity proves worth through divine trials in each realm, mastering combat and mythic power.",
+      "unlockRequirements": "Complete realm campaign",
+      "rewards": "Ability upgrades, relic unlocks, ascension materials"
     },
     {
-      "range": "21-30",
-      "tier": "Brutal"
+      "stage": "Convergence",
+      "description": "The deity faces mythic convergence — multiple realm threats merging through the Gates.",
+      "unlockRequirements": "Complete 3 realm campaigns",
+      "rewards": "Signature divine skill, enhanced ultimate"
     },
     {
-      "range": "31-50",
-      "tier": "Ascendant"
-    },
-    {
-      "range": "51+",
-      "tier": "Endless"
+      "stage": "Ascension",
+      "description": "The deity achieves full ascension, unlocking ultimate power and the final gate threshold.",
+      "unlockRequirements": "Complete all 7 realm campaigns",
+      "rewards": "Full ascension form, ultimate divine skill, endgame content access"
     }
   ],
+<<<<<<< HEAD
   "rankingFields": [
     "highestFloor",
     "highestScore",
@@ -248,3 +253,33 @@
     }
   ]
 }
+=======
+  "deityProgression": {
+    "levels": "1-60 per deity",
+    "ascensionTiers": [
+      "Awakened",
+      "Trial-Bound",
+      "Convergence-Marked",
+      "Ascendant"
+    ],
+    "upgradePaths": [
+      "Combat abilities",
+      "Divine skills",
+      "Relics",
+      "Mythic power"
+    ],
+    "masterySystem": "Each deity has unique mastery breakpoints at levels 10, 20, 30, 40, 50, 60"
+  },
+  "gateSystem": {
+    "function": "Mythos Gates connect realms, serve as campaign entrances, fast travel, trials, boss locks, and ascension thresholds",
+    "gateTypes": [
+      "Realm Gate",
+      "Trial Gate",
+      "Boss Gate",
+      "Ascension Gate",
+      "Fast Travel Gate"
+    ],
+    "gateMechanics": "Gates unlock as the player progresses through realm campaigns and proves worth in divine trials"
+  }
+}
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)

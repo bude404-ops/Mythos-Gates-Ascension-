@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Mythos Gates — M01: First Light Under Dead Stone</title>
@@ -183,6 +184,85 @@ body{background:var(--neutral-950);color:var(--neutral-100);min-height:100vh;ove
 <button onclick="restart()" class="btn btn-gold" style="margin-top:24px;padding:12px 32px;font-size:18px">Play Again</button>
 </div>
 </div>
+=======
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Mythos Gates — M01: First Light Under Dead Stone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    body{touch-action:manipulation}
+    .tile{aspect-ratio:1/1;min-width:42px;position:relative;overflow:visible}
+    .tile:after{content:attr(data-label);position:absolute;right:2px;bottom:1px;font-size:9px;opacity:.35}
+    .titan{filter:drop-shadow(0 14px 18px rgba(250,204,21,.25))}
+    .shake{animation:shake .28s ease-in-out}
+    .pulse{animation:pulseScale .85s ease-in-out infinite alternate}
+    .seal-pulse{animation:sealPulse 1.2s ease-in-out infinite alternate}
+    @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+    @keyframes pulseScale{from{transform:scale(1)}to{transform:scale(1.04)}}
+    @keyframes sealPulse{from{opacity:.5}to{opacity:1}}
+    .zone-label{position:absolute;top:1px;left:50%;transform:translateX(-50%);font-size:7px;opacity:.25;letter-spacing:.5px;text-transform:uppercase;pointer-events:none}
+    .star-done{color:#facc15}
+    .star-locked{color:#444}
+  </style>
+</head>
+<body class="font-rajdhani min-h-screen overflow-auto bg-neutral-950 text-neutral-50">
+  <div class="sticky top-0 z-40 border-b border-yellow-700/30 bg-neutral-950/95 p-3 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-2">
+      <div><p class="text-[10px] font-black uppercase tracking-[.28em] text-yellow-400">Mission M01 · Aten Ra</p><h1 class="text-xl font-black leading-none">First Light Under Dead Stone</h1></div>
+      <div class="text-right text-xs text-neutral-300"><b id="phaseLabel" class="text-primary">Player Phase</b><br/><span id="turnLabel">Round 1 / 11</span></div>
+    </div>
+  </div>
+  <main class="mx-auto grid max-w-6xl gap-3 p-3 pb-28 lg:grid-cols-[1fr_340px]">
+    <section class="rounded-3xl border border-yellow-700/30 bg-neutral-900 p-3 shadow-dark-outline">
+      <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
+        <div><p class="text-xs font-black uppercase tracking-[.2em] text-primary">One Titan vs Many</p><h2 class="text-2xl font-black">Aten-Ra</h2></div>
+        <button onclick="gateArrival()" class="rounded-2lg bg-yellow-500 px-4 py-2 text-sm font-black text-neutral-950">Gate Arrival</button>
+      </div>
+      <div id="battlefield" class="relative mx-auto grid max-w-[620px] grid-cols-7 gap-1 rounded-3xl border border-neutral-800 bg-neutral-950 p-3"></div>
+      <div class="mt-3 grid grid-cols-4 gap-2 text-center text-xs">
+        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-yellow-400">Titan Scale</b><br/>6.1x heavy</div>
+        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-primary">Gate</b><br/>14x arch</div>
+        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-bull-400">Grid</b><br/>7x7 · 49</div>
+        <div class="rounded-xl bg-neutral-950 p-2"><b class="text-bear-400">Enemies</b><br/>Elite 1.85x</div>
+      </div>
+    </section>
+    <aside class="space-y-3">
+      <section class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4">
+        <p class="text-xs font-black uppercase tracking-[.24em] text-primary">Resources</p>
+        <div class="mt-3 grid grid-cols-2 gap-2 text-center">
+          <div class="rounded-2xl bg-neutral-950 p-3"><b id="hp" class="text-2xl text-bull-400">50</b><br/><span class="text-xs text-neutral-400">Titan Integrity</span></div>
+          <div class="rounded-2xl bg-neutral-950 p-3"><b id="mom" class="text-2xl text-yellow-400">1</b><br/><span class="text-xs text-neutral-400">Momentum</span></div>
+          <div class="rounded-2xl bg-neutral-950 p-3"><b id="div" class="text-2xl text-primary">0</b><br/><span class="text-xs text-neutral-400">Divinity</span></div>
+          <div class="rounded-2xl bg-neutral-950 p-3"><b id="seal" class="text-2xl text-yellow-400">0/3</b><br/><span class="text-xs text-neutral-400">Solar Seals</span></div>
+        </div>
+      </section>
+      <section class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4">
+        <p class="text-xs font-black uppercase tracking-[.24em] text-primary">Mission Objectives</p>
+        <h3 class="mt-1 text-lg font-black">Stabilize Three Solar Seals</h3>
+        <p class="mt-1 text-sm text-neutral-300">Drive your Titan to the Seal Court before the Hollow closes.</p>
+        <div class="mt-3 space-y-1 text-xs text-neutral-400">
+          <p id="star1" class="star-locked">★ Complete before turn 8</p>
+          <p id="star2" class="star-locked">★ Keep Titan above 40% integrity</p>
+          <p id="star3" class="star-locked">★ Trigger 2+ terrain reactions</p>
+        </div>
+      </section>
+      <section class="rounded-3xl border border-neutral-800 bg-neutral-900 p-4">
+        <p class="text-xs font-black uppercase tracking-[.24em] text-primary">Battle Log</p>
+        <div id="log" class="mt-2 max-h-56 space-y-2 overflow-auto text-sm text-neutral-300"></div>
+      </section>
+    </aside>
+  </main>
+  <nav class="fixed bottom-0 left-0 right-0 z-40 border-t border-yellow-700/30 bg-neutral-950/95 p-2 backdrop-blur">
+    <div class="mx-auto grid max-w-3xl grid-cols-5 gap-2 text-xs font-black">
+      <button onclick="setMode('move')" class="rounded-2lg bg-neutral-800 p-3 text-neutral-100">Move</button>
+      <button onclick="setMode('strike')" class="rounded-2xl bg-neutral-800 p-3 text-neutral-100">Strike</button>
+      <button onclick="solarVerdict()" class="rounded-2lg bg-yellow-500 p-3 text-neutral-950">Verdict</button>
+      <button onclick="reaction()" class="rounded-2lg bg-primary p-3 text-white">React</button>
+      <button onclick="endRound()" class="rounded-2lg bg-bear-500 p-3 text-white">End Turn</button>
+    </div>
+  </nav>
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 <script>
 var TURN_LIMIT=11,MAX_HP=52,HP_STAR=Math.ceil(MAX_HP*0.4);
 var STANCES={GUARDIAN:{name:'Guardian',desc:'+2 armor, Solar Charge on defend.'},ASSAULT:{name:'Assault',desc:'+3 damage on strikes, +1 Momentum per kill.'},ASCENDANT:{name:'Ascendant',desc:'+1 Divinity per turn in light lanes.'}};

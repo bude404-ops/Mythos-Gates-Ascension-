@@ -17,8 +17,13 @@
     "realm": "The Solar Dominion of Khepra"
   },
   "starterDeity": {
+<<<<<<< HEAD
     "id": "TG-TITAN-001",
     "name": "Aten-Ra, Solar Law Monolith",
+=======
+    "id": "MG-DEITY-001",
+    "name": "Aten-Ra",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "role": "Defender",
     "combatPromise": "Hold the Gate alone through law, positioning, Momentum, Divinity, and solar terrain mastery."
   },
@@ -63,7 +68,11 @@
           "C3",
           "D3"
         ],
+<<<<<<< HEAD
         "effect": "Cover/chokepoint object that can be destroyed by deity Strike to open a faster route and spawn one reinforcement."
+=======
+        "effect": "Cover/chokepoint object that can be destroyed by Deity Strike to open a faster route and spawn one reinforcement."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       },
       {
         "id": "solar_seal_court",
@@ -114,7 +123,7 @@
       ],
       "requiredReducers": [
         "createInitialSoloBattleState",
-        "applyTitanAction",
+        "applyDeityAction",
         "revealEnemyIntents",
         "resolveEnemyPhase",
         "applyTerrainTick",
@@ -172,7 +181,7 @@
       ],
       "requiredReducers": [
         "applyTerrainTick",
-        "applyTitanAction",
+        "applyDeityAction",
         "evaluateObjectives"
       ],
       "successMetric": {
@@ -202,7 +211,7 @@
       ],
       "requiredReducers": [
         "evaluateObjectives",
-        "applyTitanAction",
+        "applyDeityAction",
         "revealEnemyIntents"
       ],
       "successMetric": {
@@ -229,7 +238,7 @@
         "TG-CREATURE-001"
       ],
       "requiredReducers": [
-        "applyTitanAction",
+        "applyDeityAction",
         "applyReaction",
         "evaluateObjectives"
       ],
@@ -295,7 +304,7 @@
     "victoryConditions": [
       "Gate Colossus defeated or sealed through objective completion",
       "At least one River-Light Exit route remains open",
-      "Titan HP above 0"
+      "Deity HP above 0"
     ],
     "defeatConditions": [
       "Aten-Ra falls",
@@ -303,7 +312,7 @@
       "all River-Light Exit routes collapse"
     ],
     "rewards": [
-      "Titan XP",
+      "Deity XP",
       "Aten Ra faction mastery",
       "Aten-Ra mastery XP",
       "Solar gear material",
@@ -380,7 +389,11 @@
     "gatePressureAtVictory"
   ],
   "qualityGates": [
+<<<<<<< HEAD
     "Exactly one active player deity",
+=======
+    "Exactly one active player Deity",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Exactly five pre-boss mission types",
     "Exactly one boss encounter with five readable phases",
     "Every mission references valid creature ids",

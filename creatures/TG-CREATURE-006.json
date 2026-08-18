@@ -9,7 +9,7 @@
   "status": "Gameplay Ready",
   "director": "Lore Director",
   "playable": false,
-  "lore": "A small mouthless choir-husk that hums erased prayers until Titan battle line timing begins to slip.",
+  "lore": "A small mouthless choir-husk that hums erased prayers until Deity battle line timing begins to slip.",
   "visualDescription": "Small bent humanoid with a smooth unfinished face, throat full of white fracture lines, ash ribbons floating from its shoulders.",
   "abilities": [
     "Silence Hymn",
@@ -52,7 +52,11 @@
     "xpValue": 10
   },
   "scaling": {
+<<<<<<< HEAD
     "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+=======
+    "campaign": "Fixed mission bands; old wins should become easier as Deity level and gear rise.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
     "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
     "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
@@ -62,7 +66,7 @@
     "priority": [
       "deny Momentum",
       "contest objective",
-      "punish exposed Titan"
+      "punish exposed Deity"
     ],
     "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
   },

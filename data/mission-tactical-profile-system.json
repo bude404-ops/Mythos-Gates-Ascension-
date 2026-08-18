@@ -4,11 +4,11 @@
   "generated": "2026-08-13T00:00:00Z",
   "status": "IMPLEMENTED",
   "taskId": "TG-DEV-028",
-  "purpose": "Campaign and endgame mission tactical profiles that describe tactical problems and recommend helpful Titans without requiring ownership.",
+  "purpose": "Campaign and endgame mission tactical profiles that describe tactical problems and recommend helpful Deities without requiring ownership.",
   "sourceFiles": [
     "data/mission-registry.json",
     "data/roster-depth-map.json",
-    "data/titans.json",
+    "data/deitys.json",
     "data/campaign-playflow-contract.json"
   ],
   "missionCoverage": {
@@ -20,9 +20,15 @@
   },
   "profileShape": {
     "problemTags": "array<missionProblemTag> min=3",
+<<<<<<< HEAD
     "advantageRoles": "array<titanRole> min=2",
     "recommendedDeityIds": "array<titanId> min=1",
     "recommendedTitans": "array<{id,name,reason}>",
+=======
+    "advantageRoles": "array<deityRole> min=2",
+    "recommendedDeityIds": "array<deityId> min=1",
+    "recommendedDeities": "array<{id,name,reason}>",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "favoredNotRequired": "true",
     "ownershipLock": "false",
     "rule": "Must state any valid active deity can attempt the mission."
@@ -41,7 +47,7 @@
     "execution_chain",
     "objective_pressure"
   ],
-  "allowedTitanRoles": [
+  "allowedDeityRoles": [
     "Artillery",
     "Assassin",
     "Battery",
@@ -246,15 +252,26 @@
     "TG-F07-E-C05-M20"
   ],
   "antiPayToWinRules": [
+<<<<<<< HEAD
     "Mission tactical profiles may recommend roles and deities, but never require ownership.",
     "Every tagged mission must keep ownershipLock=false and favoredNotRequired=true.",
     "The rule text must state that any valid active deity can attempt the mission.",
     "Recommended deity advantage is guidance, not a gate, stat lock, or purchase prompt."
+=======
+    "Mission tactical profiles may recommend roles and Deities, but never require ownership.",
+    "Every tagged mission must keep ownershipLock=false and favoredNotRequired=true.",
+    "The rule text must state that any valid active deity can attempt the mission.",
+    "Recommended Deity advantage is guidance, not a gate, stat lock, or purchase prompt."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ],
   "acceptanceGates": [
     "TG-DEV-028 every campaign mission has at least three tactical problem tags.",
     "TG-DEV-028 every campaign mission has at least two advantage roles from the live deity role list.",
+<<<<<<< HEAD
     "TG-DEV-028 every recommended deity exists in data/titans.json.",
+=======
+    "TG-DEV-028 every recommended Deity exists in data/deitys.json.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "TG-DEV-028 all mission tactical profiles are favored-not-required with no ownership lock.",
     "TG-DEV-028 mission tactical profile system is discoverable through data/index.json and release validation."
   ]

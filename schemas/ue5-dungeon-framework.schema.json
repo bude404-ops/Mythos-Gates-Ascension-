@@ -12,7 +12,7 @@
     "coreLoop",
     "unrealSystems",
     "dataDrivenRules",
-    "titanScaleRules",
+    "deityScaleRules",
     "zoneModel",
     "moduleFamilies",
     "assetPipeline",
@@ -64,11 +64,11 @@
         "type": "string"
       }
     },
-    "titanScaleRules": {
+    "deityScaleRules": {
       "type": "object",
       "required": [
         "environmentLanguage",
-        "standardCombatActiveTitans",
+        "standardCombatActiveDeities",
         "cameraMandate"
       ]
     },

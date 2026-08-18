@@ -3,12 +3,16 @@
   "version": "1.1.0-raid-economy-tuning",
   "status": "IMPLEMENTED",
   "taskId": "TG-DEV-025",
+<<<<<<< HEAD
   "activeDeityRule": "One active player deity only. Reserve support is deferred architecture, not initial gameplay.",
+=======
+  "activeDeityRule": "One active player Deity only. Reserve support is deferred architecture, not initial gameplay.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "frameworkPrinciples": [
     "Every raid attempt is deterministic from stage profile, approach, tier, and one active deity state.",
     "Each stage has a readable tactical problem, preferred-but-not-required counterplay, and explicit carry-forward damage pressure.",
     "Victory rewards are non-pay-to-win: first-clear bonuses, replay caps, mastery credit, and cosmetic/material outputs only.",
-    "Live PvP, Titan fanout, paid power shortcuts, and hidden random rolls are forbidden in the initial framework."
+    "Live PvP, Deity fanout, paid power shortcuts, and hidden random rolls are forbidden in the initial framework."
   ],
   "raidLoop": [
     "Select one active deity and loadout",
@@ -16,7 +20,11 @@
     "Enter deterministic stage chain",
     "Resolve each stage through BALANCED, GUARDED, or AGGRESSIVE approach",
     "Carry score, turn count, damage taken, stage tags, and reaction pressure forward",
+<<<<<<< HEAD
     "Lock victory and assign capped raid rewards plus divine mastery credit"
+=======
+    "Lock victory and assign capped raid rewards plus Deity mastery credit"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ],
   "difficulties": [
     "RAID_NORMAL",
@@ -93,7 +101,7 @@
         "momentumEntry"
       ],
       "preferredCounters": [
-        "Mobile Titans",
+        "Mobile Deities",
         "objective burst",
         "GUARDED if damage carry matters"
       ],
@@ -139,7 +147,11 @@
         "burstTurn"
       ],
       "preferredCounters": [
+<<<<<<< HEAD
         "Controller deities",
+=======
+        "Controller Deities",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "burst after exposure",
         "AGGRESSIVE only if healthy"
       ],
@@ -235,7 +247,7 @@
       "scaling": "Fixed story bands; endgame rematches flex only within raid tier caps.",
       "rewards": [
         "raidCurrency",
-        "highTierTitanMaterials",
+        "highTierDeityMaterials",
         "bossCosmeticFragment",
         "signatureGearMaterial"
       ],
@@ -252,7 +264,11 @@
     "Raid system record exposes status IMPLEMENTED, five stageProfiles, tierCaps, approachRules, scoreFormula, economyCaps, and economyTuning.",
     "Command Hub runtime reads stageProfiles/baseScore and displays problem tags, preferred counters, and carry risk per stage.",
     "Browser smoke clears all five stages deterministically with one active deity and verifies raid economy output.",
+<<<<<<< HEAD
     "Validation fails if paid power, live PvP, hidden random rolls, or deity fanout appear in the initial raid framework.",
+=======
+    "Validation fails if paid power, live PvP, hidden random rolls, or Deity fanout appear in the initial raid framework.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "TG-DEV-025 raid economy tuning is IMPLEMENTED and validates first-clear bonuses, replay caps, mastery credit, and anti-pay-to-win policy."
   ],
   "forbiddenInitialScope": [
@@ -264,7 +280,7 @@
   ],
   "economyTuning": {
     "status": "IMPLEMENTED",
-    "designGoal": "Reward clean solo-Titan raid execution without selling power, uncapped repeat currency, or mandatory ownership shortcuts.",
+    "designGoal": "Reward clean solo-Deity raid execution without selling power, uncapped repeat currency, or mandatory ownership shortcuts.",
     "qualityBands": {
       "S": 560,
       "A": 500,
@@ -300,7 +316,7 @@
     "firstClear": {
       "tokenBonus": 8,
       "ascensionEmber": 1,
-      "titanRelics": 2,
+      "deityRelics": 2,
       "masterySeals": 1,
       "payoutScalar": 1.0
     },
@@ -329,7 +345,7 @@
       "firstClearDivisor": 18,
       "replayDivisor": 40,
       "qualityScalarApplied": true,
-      "appliesToActiveTitanOnly": true
+      "appliesToActiveDeityOnly": true
     },
     "materialCaps": {
       "signatureAlloyMinimum": 1,

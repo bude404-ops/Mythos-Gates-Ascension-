@@ -1,0 +1,58 @@
+{
+  "schema": "TG_CREATOR_HANDOFF_PACKET_V1",
+  "asset_id": "BATTLEFIELD_009",
+  "asset_type": "BATTLEFIELD",
+  "canonical_name": "Foxfire Torii Road",
+  "source_batch": "TG-3D-FIRST-HANDOFF-BATTLEFIELDS-001",
+  "source_reason": "First 3D battlefield handoff batch from production queue.",
+  "priority": "HIGH",
+  "status": "READY_FOR_EXTERNAL_CREATION",
+  "output_contract": {
+    "upload_target": {},
+    "manifest": "manifests/assets/battlefield/BATTLEFIELD_009/manifest.json",
+    "preserve_original_source": true,
+    "do_not_rename_asset_id": true,
+    "do_not_mark_imported_without_real_file": true
+  },
+  "canon_locks": {
+    "no_new_lore": true,
+    "no_new_faction_identity": true,
+    "no_playable_hero_drift": false,
+    "no_sci_fi_drift": true
+  },
+  "prompt_reference": null,
+  "blueprint_reference": {
+    "registry_path": "3D_Blueprints/Battlefields/BATTLEFIELD_009_foxfire-torii-road/metadata.json",
+    "blueprint_status": "BLUEPRINT_IN_PROGRESS",
+    "faction": null,
+    "queue_status": "BLUEPRINT_IN_PROGRESS",
+    "package_path": "3D_Blueprints/Battlefields/BATTLEFIELD_009_foxfire-torii-road/metadata.json"
+  },
+  "quality_gates": [
+    "Mobile-readable silhouette at card and battlefield preview scale.",
+    "Every faction asset must visibly follow data/faction-visual-bible.json for silhouette, armor construction, material hierarchy, symbols, textures, and faction-specific avoid rules.",
+    "Deities must read as living extradimensional mythic beings, not robots, mechs, androids, or humans in powered armor.",
+    "Deities must keep readable living anatomy and character silhouette; reject blocky buildings, tower bodies, fortress torsos, stacked geometric shapes, or architecture piles masquerading as Deities.",
+    "No sci-fi firearms, futuristic craft, modern corporate UI, generic superhero styling, watermarks, or readable generated text.",
+    "Faction identity must remain unmistakable: material language, realm symbols, culture, and role silhouette must agree with canon.",
+    "Generated image may not be marked imported until a real asset file exists in the artwork pipeline.",
+    "Mesha remains non-playable campaign support; art may not imply a playable Hero class.",
+    "The First Reopening Gate must read as physical broken Gatefield terrain, not a neon board-game tile set."
+  ],
+  "rejection_triggers": [
+    "Human-sized Deity silhouette.",
+    "Faction drift: asset lacks the faction visual bible material/symbol/silhouette language or uses an avoid-listed trope.",
+    "Robot, mecha, android, cyborg, transformer, or powered-suit read.",
+    "Blocky building, tower, fortress, cube-stack, abstract geometry pile, or literal architecture-body read.",
+    "Readable text/watermark/logo in the image.",
+    "Photorealistic celebrity/human face drift.",
+    "Sci-fi armor, firearms, vehicle parts, visible pistons, hydraulic joints, or spaceship aesthetic.",
+    "Loss of mobile readability in 360px vertical crop.",
+    "Visual contradiction of prompt negativePrompt constraints."
+  ],
+  "required_return_files": [
+    "Original source file in the correct GitHub source slot.",
+    "Preview render or concept preview when available.",
+    "Notes listing tool, version, scale assumptions, and unresolved blockers."
+  ]
+}

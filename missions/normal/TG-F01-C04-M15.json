@@ -4,26 +4,46 @@
   "campaignId": "TG-F01-CAMPAIGN-NORMAL",
   "campaignType": "Normal",
   "chapter": 4,
+<<<<<<< HEAD
   "chapterTitle": "Sun-Scale Verdict Descent — Elite Lock",
+=======
+  "chapterTitle": "War of Deities",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "missionNumber": 15,
   "missionInChapter": 3,
   "title": "Restore the Hidden-Sun Archive Antechamber: Boss Threshold",
   "description": "Restore the Hidden-Sun Archive Antechamber: Boss Threshold is a rebuilt Mythos Gates mission beat for Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma’at strain). One selected deity from Aten Ra, Sutekh, Iset, Amunet enters; this beat spotlights Iset as the reference silhouette while preserving player choice. The mission is the pre boss step at Hidden-Sun Archive Antechamber, using sacred judgment temple-road descent pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Solar Dominion of Khepra is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light..",
   "lore": "Ascension canon route rewrite: Sun-Scale Verdict Descent is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Hidden-Sun Archive Antechamber and reveals: A hidden Amunet record implying the Gates predate mortal pharaoh-echoes. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 625,
+<<<<<<< HEAD
   "encouragedDeityRoles": [
     "solar judgment anchor",
     "survivable objective holder",
     "burst or control specialist"
+=======
+  "activeDeityCount": 1,
+  "encouragedDeityRoles": [
+    "frontline anchor",
+    "lane controller",
+    "ranged finisher"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ],
   "mapId": "TG-MAP-007",
   "terrain": "Hidden-Sun Archive Antechamber configured as a pre boss space inside sacred judgment temple-road descent; source-culture appearance layer: sun-scale courts, pylon shadow lanes, river-light channels, Khepri dawn engines, Ma’at seal platforms, desert storm edges; cosmetic/relic silhouettes: Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes",
   "objectives": {
+<<<<<<< HEAD
     "primary": "With one selected deity, survive the boss approach in the Hidden-Sun Archive Antechamber, secure the last seal, and enter the chamber with the route law understood.",
     "optional": [
       "Clear the Hidden-Sun Archive Antechamber before the route pressure reaches its final warning",
       "Exploit or avoid the route rule: black Nile silt channels that preserve memory and expose bloodline echoes",
       "Resolve at least two solar judgment, Ma’at balance, river-light positioning, verdict pressure decisions before victory"
+=======
+    "primary": "Escort a non-playable witness-priest to the upper seal without losing a Deity.",
+    "optional": [
+      "Complete before turn 9",
+      "Keep all one active deity standing",
+      "Trigger at least two faction synergy actions"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ]
   },
   "enemyWaves": [
@@ -48,6 +68,7 @@
   "boss": null,
   "turnLimit": 14,
   "specialRules": [
+<<<<<<< HEAD
     "Route Law — Sun-Scale Verdict Descent: Stable Gate under Ma’at strain changes how movement, hazards, and enemy pressure are read.",
     "Room Rule — Hidden-Sun Archive Antechamber: play this beat as a pre boss node, not a generic arena.",
     "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
@@ -57,6 +78,17 @@
   ],
   "defeatConditions": [
     "Your active deity falls",
+=======
+    "Overcharge Law: standing on empowered tiles grants attack reach but increases incoming pressure.",
+    "Split Threat: two objectives resolve on opposite sides of the field.",
+    "one active standard Deity"
+  ],
+  "victoryConditions": [
+    "Escort a non-playable witness-priest to the upper seal without losing a Deity."
+  ],
+  "defeatConditions": [
+    "All deities fall",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Primary objective fails",
     "Turn limit expires"
   ],
@@ -78,7 +110,11 @@
     "stars": {
       "three": "Primary plus all optional objectives",
       "two": "Primary completed",
+<<<<<<< HEAD
       "one": "Primary completed with one deity standing or severe turn pressure"
+=======
+      "one": "Primary completed with the active deity standing under severe turn pressure"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     }
   },
   "codexUnlocks": [],
@@ -91,6 +127,7 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
+<<<<<<< HEAD
   "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "chapterId": "TG-F01-CH04",
   "difficulty": "Normal",
@@ -101,6 +138,9 @@
     "squadCombat": "FORBIDDEN",
     "teamTurns": "FORBIDDEN"
   },
+=======
+  "activeDeityDesignNotes": "Balanced for the standard one active deity; nonstandard modes require explicit Creator approval.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "tacticalProfile": {
     "problemTags": [
       "fast_enemies",
@@ -115,28 +155,40 @@
       "Artillery"
     ],
     "recommendedDeityIds": [
+<<<<<<< HEAD
       "TG-TITAN-005",
       "TG-TITAN-009"
+=======
+      "MG-DEITY-003",
+      "MG-DEITY-009",
+      "MG-DEITY-001"
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ],
-    "recommendedTitans": [
+    "recommendedDeities": [
       {
+<<<<<<< HEAD
         "id": "TG-TITAN-006",
         "name": "Nefra Obsidian Dawn",
+=======
+        "id": "MG-DEITY-003",
+        "name": "Nefra",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "reason": "Controller advantage for fast enemies"
       },
       {
-        "id": "TG-TITAN-009",
-        "name": "Amunet Hidden Sun",
+        "id": "MG-DEITY-009",
+        "name": "Amunet",
         "reason": "Assassin advantage for fast enemies"
       },
       {
-        "id": "TG-TITAN-001",
-        "name": "Aten-Ra, Solar Law Monolith",
+        "id": "MG-DEITY-001",
+        "name": "Aten-Ra",
         "reason": "Defender advantage for fast enemies"
       }
     ],
     "favoredNotRequired": true,
     "ownershipLock": false,
+<<<<<<< HEAD
     "rule": "Favored-not-required: any valid active deity may clear the mission; recommended deities are tactical hints only."
   },
   "sourceCultureAppearanceRule": {
@@ -145,6 +197,14 @@
     "terrain": "sun-scale courts, pylon shadow lanes, river-light channels, Khepri dawn engines, Ma’at seal platforms, desert storm edges",
     "cosmeticRelicSilhouettes": "Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes",
     "avoid": "tourist pharaoh costume, literal pyramid body, sarcophagus robot, readable glyph text, generic desert temple, plain gold statues"
+=======
+    "rule": "Recommended advantages only \u2014 any valid active deity can attempt the mission."
+  },
+  "activeDeityPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_TITAN",
+    "multiDeityCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose the best single Deity before launch; roster depth changes approach, not on-field body count."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   "updated": "2026-08-16",
   "activeDeityCount": 1,

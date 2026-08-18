@@ -6,7 +6,7 @@
   "standardSquadSize": 1,
   "battleInterface": {
     "shared": [
-      "Titan definitions",
+      "Deity definitions",
       "Abilities",
       "Movement",
       "Terrain",
@@ -15,13 +15,21 @@
       "Victory conditions",
       "Battle state model"
     ],
+<<<<<<< HEAD
     "currentControl": "Attacker player deity vs saved defender deity snapshot controlled by deterministic AI",
+=======
+    "currentControl": "Attacker player Deity vs saved defender Deity snapshot controlled by deterministic AI",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "futureControl": "Player vs Player networking layer only; combat engine remains shared; no live PvP is implemented now."
   },
   "defenseSnapshotFields": [
     "snapshotId",
     "sourceDeityId",
+<<<<<<< HEAD
     "sourceTitanName",
+=======
+    "sourceDeityName",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "sourceFaction",
     "level",
     "power",
@@ -39,7 +47,7 @@
   "matchmaking": [
     "arenaRating",
     "arenaTier",
-    "TitanStrength",
+    "DeityStrength",
     "playerProgression",
     "recentPerformance"
   ],
@@ -47,7 +55,7 @@
     "Bronze",
     "Silver",
     "Gold",
-    "Titan",
+    "Deity",
     "Ascendant"
   ],
   "ratingFields": [
@@ -75,7 +83,7 @@
       "attacker",
       "result",
       "date",
-      "opposingTitanSnapshot",
+      "opposingDeitySnapshot",
       "ratingChange",
       "battleStats"
     ]
@@ -93,7 +101,7 @@
         "upgradeMaterials",
         "seasonProgress"
       ],
-      "defensiveTitanId": "TG-TITAN-010"
+      "defensiveDeityId": "MG-DEITY-010"
     },
     {
       "id": "TG-ARENA-OPP-002",
@@ -105,7 +113,7 @@
         "upgradeMaterials",
         "seasonProgress"
       ],
-      "defensiveTitanId": "TG-TITAN-019"
+      "defensiveDeityId": "MG-DEITY-019"
     },
     {
       "id": "TG-ARENA-OPP-003",
@@ -117,7 +125,7 @@
         "upgradeMaterials",
         "seasonProgress"
       ],
-      "defensiveTitanId": "TG-TITAN-028"
+      "defensiveDeityId": "MG-DEITY-028"
     },
     {
       "id": "TG-ARENA-OPP-004",
@@ -129,7 +137,7 @@
         "upgradeMaterials",
         "seasonProgress"
       ],
-      "defensiveTitanId": "TG-TITAN-037"
+      "defensiveDeityId": "MG-DEITY-037"
     },
     {
       "id": "TG-ARENA-OPP-005",
@@ -141,7 +149,7 @@
         "upgradeMaterials",
         "seasonProgress"
       ],
-      "defensiveTitanId": "TG-TITAN-046"
+      "defensiveDeityId": "MG-DEITY-046"
     },
     {
       "id": "TG-ARENA-OPP-006",
@@ -153,16 +161,21 @@
         "upgradeMaterials",
         "seasonProgress"
       ],
-      "defensiveTitanId": "TG-TITAN-055"
+      "defensiveDeityId": "MG-DEITY-055"
     }
   ],
+<<<<<<< HEAD
   "name": "Asynchronous deity Challenge",
   "currentControl": "Attacker player deity vs saved defender deity build controlled by deterministic AI",
+=======
+  "name": "Asynchronous Deity Challenge",
+  "currentControl": "Attacker player Deity vs saved defender Deity build controlled by deterministic AI",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "status": "IMPLEMENTED",
   "version": "1.0.0-solo-snapshot",
   "squadTerminologyDeprecated": true,
   "snapshotLifecycle": [
-    "player_saves_defense_titan",
+    "player_saves_defense_deity",
     "server_freezes_public_snapshot",
     "matchmaker_reads_rating_band",
     "attacker_fights_snapshot_ai",
@@ -194,7 +207,7 @@
         1200,
         1399
       ],
-      "Titan": [
+      "Deity": [
         1400,
         1599
       ],
@@ -207,7 +220,7 @@
     "devPlatformSampleState": {}
   },
   "challengeFlow": [
-    "choose_attacking_titan",
+    "choose_attacking_deity",
     "inspect_opponent_snapshot",
     "confirm_no_live_pvp",
     "launch_solo_battle_ruleset",
@@ -216,8 +229,13 @@
     "queue_defense_log_for_snapshot_owner"
   ],
   "snapshotQualityGates": [
+<<<<<<< HEAD
     "Every sample opponent has exactly one defensive deity snapshot.",
     "Every snapshot references an existing deity and solo roster redesign record.",
+=======
+    "Every sample opponent has exactly one defensive Deity snapshot.",
+    "Every snapshot references an existing Deity and solo roster redesign record.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Every snapshot includes checksum, stance loadout, reaction loadout, AI behavior profile, battlefield selection, and progression state.",
     "Arena dashboard must not show fabricated player rank, rating, floor, or live PvP state.",
     "Visual smoke blocks release if async arena snapshot language disappears."
@@ -226,8 +244,13 @@
     {
       "snapshotId": "TG-ASYNC-SNAPSHOT-001",
       "sourceOpponentId": "TG-ARENA-OPP-001",
+<<<<<<< HEAD
       "sourceDeityId": "TG-TITAN-010",
       "sourceTitanName": "The Allfather Stormvein",
+=======
+      "sourceDeityId": "MG-DEITY-010",
+      "sourceDeityName": "The Allfather Stormvein",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "sourceFaction": "Asgardian",
       "level": 18,
       "power": 1201,
@@ -235,7 +258,11 @@
         "Warden",
         "Juggernaut"
       ],
+<<<<<<< HEAD
       "uniqueMechanic": "The's Storm Oath: a solo pursuit lock that grows when the deity uses movement through storm lanes to control enemies instead of relying on allies.",
+=======
+      "uniqueMechanic": "The's Storm Oath: a solo pursuit lock that grows when the Deity uses movement through storm lanes to control enemies instead of relying on allies.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "stanceLoadout": [
         "Assault",
         "Guard",
@@ -263,8 +290,13 @@
     {
       "snapshotId": "TG-ASYNC-SNAPSHOT-002",
       "sourceOpponentId": "TG-ARENA-OPP-002",
+<<<<<<< HEAD
       "sourceDeityId": "TG-TITAN-019",
       "sourceTitanName": "Aurelion Heaven-Marrow",
+=======
+      "sourceDeityId": "MG-DEITY-019",
+      "sourceDeityName": "Aurelion Heaven-Marrow",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "sourceFaction": "Olympian",
       "level": 22,
       "power": 1304,
@@ -272,7 +304,11 @@
         "Warden",
         "Juggernaut"
       ],
+<<<<<<< HEAD
       "uniqueMechanic": "Aurelion's Laurel Glory: a solo charge meter that grows when the deity uses high ground and duel circles to control enemies instead of relying on allies.",
+=======
+      "uniqueMechanic": "Aurelion's Laurel Glory: a solo charge meter that grows when the Deity uses high ground and duel circles to control enemies instead of relying on allies.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "stanceLoadout": [
         "Assault",
         "Guard",
@@ -300,8 +336,13 @@
     {
       "snapshotId": "TG-ASYNC-SNAPSHOT-003",
       "sourceOpponentId": "TG-ARENA-OPP-003",
+<<<<<<< HEAD
       "sourceDeityId": "TG-TITAN-028",
       "sourceTitanName": "Amaterion Spirit-Sun",
+=======
+      "sourceDeityId": "MG-DEITY-028",
+      "sourceDeityName": "Amaterion Spirit-Sun",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "sourceFaction": "Kami",
       "level": 26,
       "power": 1407,
@@ -309,7 +350,11 @@
         "Warden",
         "Juggernaut"
       ],
+<<<<<<< HEAD
       "uniqueMechanic": "Amaterion's Spirit Balance: a solo pursuit lock that grows when the deity uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+=======
+      "uniqueMechanic": "Amaterion's Spirit Balance: a solo pursuit lock that grows when the Deity uses shrines, mist, and mirror paths to control enemies instead of relying on allies.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "stanceLoadout": [
         "Assault",
         "Guard",
@@ -337,8 +382,13 @@
     {
       "snapshotId": "TG-ASYNC-SNAPSHOT-004",
       "sourceOpponentId": "TG-ARENA-OPP-004",
+<<<<<<< HEAD
       "sourceDeityId": "TG-TITAN-037",
       "sourceTitanName": "Dagoran Root-Crown",
+=======
+      "sourceDeityId": "MG-DEITY-037",
+      "sourceDeityName": "Dagoran Root-Crown",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "sourceFaction": "Tuatha",
       "level": 30,
       "power": 1510,
@@ -346,7 +396,11 @@
         "Warden",
         "Juggernaut"
       ],
+<<<<<<< HEAD
       "uniqueMechanic": "Dagoran's Living Grove: a solo charge meter that grows when the deity uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+=======
+      "uniqueMechanic": "Dagoran's Living Grove: a solo charge meter that grows when the Deity uses roots, moonlit growth, and fae paths to control enemies instead of relying on allies.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "stanceLoadout": [
         "Assault",
         "Guard",
@@ -374,8 +428,13 @@
     {
       "snapshotId": "TG-ASYNC-SNAPSHOT-005",
       "sourceOpponentId": "TG-ARENA-OPP-005",
+<<<<<<< HEAD
       "sourceDeityId": "TG-TITAN-046",
       "sourceTitanName": "Seraphel, the Throne Eternal",
+=======
+      "sourceDeityId": "MG-DEITY-046",
+      "sourceDeityName": "Seraphel",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "sourceFaction": "Empyrean",
       "level": 34,
       "power": 1613,
@@ -383,7 +442,11 @@
         "Warden",
         "Juggernaut"
       ],
+<<<<<<< HEAD
       "uniqueMechanic": "Seraphel's Radiant Edict: a solo pursuit lock that grows when the deity uses ordered sigil zones to control enemies instead of relying on allies.",
+=======
+      "uniqueMechanic": "Seraphel's Radiant Edict: a solo pursuit lock that grows when the Deity uses ordered sigil zones to control enemies instead of relying on allies.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "stanceLoadout": [
         "Assault",
         "Guard",
@@ -411,8 +474,13 @@
     {
       "snapshotId": "TG-ASYNC-SNAPSHOT-006",
       "sourceOpponentId": "TG-ARENA-OPP-006",
+<<<<<<< HEAD
       "sourceDeityId": "TG-TITAN-055",
       "sourceTitanName": "Mordrath, the Infernal King",
+=======
+      "sourceDeityId": "MG-DEITY-055",
+      "sourceDeityName": "Mordrath",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "sourceFaction": "Infernal Dominion",
       "level": 38,
       "power": 1716,
@@ -420,7 +488,11 @@
         "Warden",
         "Juggernaut"
       ],
+<<<<<<< HEAD
       "uniqueMechanic": "Mordrath's Dominion Flame: a solo charge meter that grows when the deity uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+=======
+      "uniqueMechanic": "Mordrath's Dominion Flame: a solo charge meter that grows when the Deity uses chains, fire, and cursed ground to control enemies instead of relying on allies.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "stanceLoadout": [
         "Assault",
         "Guard",

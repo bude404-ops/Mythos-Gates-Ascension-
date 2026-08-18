@@ -1,15 +1,15 @@
 {
-  "id": "TG-TITAN-002",
+  "id": "MG-DEITY-002",
   "slug": "khemet-suncrown",
-  "name": "Khemet Suncrown",
+  "name": "Khemet",
   "factionId": "TG-FACTION-001",
   "faction": "Aten Ra",
   "rarity": "Epic",
   "role": "Battery",
   "abilities": [
-    "Khemet Suncrown \u2014 Ma\u2019at-Weighted Strike Kindle",
+    "Khemet \u2014 Ma\u2019at-Weighted Strike Kindle",
     "Pylon Edict Technique \u2014 Reservoir",
-    "Khemet Suncrown: Sun-Scale Decree Overchannel",
+    "Khemet: Sun-Scale Decree Overchannel",
     "Divine Ascension \u2014 Aten-Ra Source Radiance"
   ],
   "stats": {
@@ -27,16 +27,20 @@
     "combatPower": 226
   },
   "equipment": [
-    "Khemet Suncrown Generator Ma\u2019at Was-Sceptre Blade",
-    "Khemet Suncrown Electrum Wesekh Source-Plate",
-    "Khemet Suncrown Khepri Solar Scarab Core"
+    "Khemet Generator Ma\u2019at Was-Sceptre Blade",
+    "Khemet Electrum Wesekh Source-Plate",
+    "Khemet Khepri Solar Scarab Core"
   ],
   "passives": [
-    "Ma\u2019at Source Law: Khemet Suncrown gains Solar Charge when its battery choices express Solar Dominion of Khepra source-culture law through Aten-lit judgment ground; Earth myth is only the later echo."
+    "Ma\u2019at Source Law: Khemet gains Solar Charge when its battery choices express Solar Dominion of Khepra source-culture law through Aten-lit judgment ground; Earth myth is only the later echo."
   ],
-  "lore": "Khemet Suncrown is the Realm\u2019s Khepri engine: the force that rolls dead light into dawn and turns Nile-black memory into power. Human scarab amulets are miniature echoes of his living renewal shell. He feeds allies by converting wounds, offerings, and battlefield heat into measured solar return.",
+  "lore": "Khemet is the Realm\u2019s Khepri engine: the force that rolls dead light into dawn and turns Nile-black memory into power. Human scarab amulets are miniature echoes of his living renewal shell. He feeds allies by converting wounds, offerings, and battlefield heat into measured solar return.",
   "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+<<<<<<< HEAD
   "visualDescription": "Massive renewal-battery deity with scarab-inspired carapace plates, faience and lapis inlay reservoirs, papyrus-green conduit veins, black Nile-silt glass core, dawn-gold crown, and slow rotating solar arcs behind the shoulders. Avoid insect monster; he is a divine generator of rebirth with clear anatomy and ceremonial mass.",
+=======
+  "visualDescription": "Massive renewal-battery Deity with scarab-inspired carapace plates, faience and lapis inlay reservoirs, papyrus-green conduit veins, black Nile-silt glass core, dawn-gold crown, and slow rotating solar arcs behind the shoulders. Avoid insect monster; he is a divine generator of rebirth with clear anatomy and ceremonial mass.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "artStatus": "Prompt Ready",
   "artPromptId": "TG-PROMPT-002",
   "artworkId": null,
@@ -44,7 +48,7 @@
   "backstoryId": "TG-BACKSTORY-TITAN-002",
   "abilityDetails": [
     {
-      "name": "Khemet Suncrown \u2014 Ma\u2019at-Weighted Strike Kindle",
+      "name": "Khemet \u2014 Ma\u2019at-Weighted Strike Kindle",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -57,7 +61,7 @@
       ],
       "effect": "Deal Aten Ra source-culture damage at range 3; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
       "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
-      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Titan into low-value targets."
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
       "name": "Pylon Edict Technique \u2014 Reservoir",
@@ -76,7 +80,7 @@
       "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
     },
     {
-      "name": "Khemet Suncrown: Sun-Scale Decree Overchannel",
+      "name": "Khemet: Sun-Scale Decree Overchannel",
       "slot": "Signature",
       "unlockLevel": 12,
       "cost": "45 Momentum + 25 Divinity",
@@ -89,7 +93,7 @@
       ],
       "effect": "Spend stored Solar Charge to impose a two-round rule from Solar Dominion of Khepra: stores faction resource, refunds Momentum on smart setup, and converts terrain mastery into burst economy. Enemies receive a readable counter-window before the strongest effect lands.",
       "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
-      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Titan, or exploit the exposed recovery turn."
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
       "name": "Divine Ascension \u2014 Aten-Ra Source Radiance",
@@ -110,7 +114,7 @@
   ],
   "equipmentDetails": [
     {
-      "name": "Khemet Suncrown Generator Ma\u2019at Was-Sceptre Blade",
+      "name": "Khemet Generator Ma\u2019at Was-Sceptre Blade",
       "slot": "Relic Weapon",
       "rarityFloor": "Epic",
       "primaryStat": "attack",
@@ -118,15 +122,15 @@
       "balanceGuardrail": "No extra action loops; empowered basics are once per round."
     },
     {
-      "name": "Khemet Suncrown Electrum Wesekh Source-Plate",
+      "name": "Khemet Electrum Wesekh Source-Plate",
       "slot": "Armor Body",
       "rarityFloor": "Epic",
       "primaryStat": "resistance",
-      "effect": "Improves survivability and makes the Titan read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "effect": "Improves survivability and makes the Deity read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
       "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
     },
     {
-      "name": "Khemet Suncrown Khepri Solar Scarab Core",
+      "name": "Khemet Khepri Solar Scarab Core",
       "slot": "Resonance Core",
       "rarityFloor": "Epic",
       "primaryStat": "energy",
@@ -155,7 +159,11 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
+<<<<<<< HEAD
     "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+=======
+    "intendedDifficulty": "Tuned for harder solo encounters: every Deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "primaryRole": "generate Momentum and Divinity under pressure",
     "budgetTarget": 109,
     "computedCombatPower": 226,
@@ -175,11 +183,11 @@
   ],
   "armorCanon": "scarab-carapace back mantle, faience turquoise energy reservoirs, black Nile-silt glass abdominal plates, gold dawn crown, papyrus conduit bands",
   "updated": "2026-08-16",
-  "weaponCanon": "Khemet Suncrown Generator Ma\u2019at Was-Sceptre Blade",
+  "weaponCanon": "Khemet Generator Ma\u2019at Was-Sceptre Blade",
   "gearCanon": {
-    "weapon": "Khemet Suncrown Generator Ma\u2019at Was-Sceptre Blade",
-    "armor": "Khemet Suncrown Electrum Wesekh Source-Plate",
-    "core": "Khemet Suncrown Khepri Solar Scarab Core",
+    "weapon": "Khemet Generator Ma\u2019at Was-Sceptre Blade",
+    "armor": "Khemet Electrum Wesekh Source-Plate",
+    "core": "Khemet Khepri Solar Scarab Core",
     "movementRelic": "Aten Hand-Ray Gate Step",
     "reactionRelic": "Uraeus Counter-Edict",
     "executionRelic": "Weigh the Name",

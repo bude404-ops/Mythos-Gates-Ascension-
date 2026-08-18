@@ -2,35 +2,53 @@
   "id": "TG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001",
   "version": "0.9.2",
   "generated": "2026-08-11T20:38:00Z",
+<<<<<<< HEAD
   "directive": "Build attachment to a main deity, then create desire for specialists and faction exploration without mandatory deity locks.",
   "startingFactionDecision": {
     "factionId": "TG-FACTION-001",
     "name": "Aten Ra",
     "reason": "Existing campaign architecture currentImplemented points to Aten Ra; realm codex frames Gate law, judgment, and the first one-deity crossing cleanly. This preserves canon and avoids inventing a starter faction."
+=======
+  "directive": "Build attachment to a main Deity, then create desire for specialists and faction exploration without mandatory Deity locks.",
+  "startingFactionDecision": {
+    "factionId": "TG-FACTION-001",
+    "name": "Aten Ra",
+    "reason": "Existing campaign architecture currentImplemented points to Aten Ra; realm codex frames Gate law, judgment, and the first one-Deity crossing cleanly. This preserves canon and avoids inventing a starter faction."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
-  "firstTitanChoice": {
-    "mode": "small canon-safe starter choice if product wants choice; otherwise default to Aten-Ra, Solar Law Monolith",
-    "defaultTitan": {
-      "id": "TG-TITAN-001",
-      "name": "Aten-Ra, Solar Law Monolith",
+  "firstDeityChoice": {
+    "mode": "small canon-safe starter choice if product wants choice; otherwise default to Aten-Ra",
+    "defaultDeity": {
+      "id": "MG-DEITY-001",
+      "name": "Aten-Ra",
       "reason": "Durable, readable, objective-safe, and thematically tied to Gates, law, and survival."
     },
     "optionalStarterSet": [
       {
-        "id": "TG-TITAN-001",
-        "name": "Aten-Ra, Solar Law Monolith",
+        "id": "MG-DEITY-001",
+        "name": "Aten-Ra",
         "role": "Defender",
         "why": "long survival, objective holding, hazard endurance"
       },
       {
+<<<<<<< HEAD
         "id": "TG-TITAN-006",
         "name": "Nefra Obsidian Dawn",
+=======
+        "id": "MG-DEITY-003",
+        "name": "Nefra",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "role": "Controller",
         "why": "fast enemies, terrain-heavy battles, caster denial"
       },
       {
+<<<<<<< HEAD
         "id": "TG-TITAN-009",
         "name": "Orru Prism Verdict",
+=======
+        "id": "MG-DEITY-004",
+        "name": "Orru",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "role": "Breaker",
         "why": "heavily armored enemies, shield windows, boss armor phases"
       }
@@ -40,8 +58,13 @@
   "firstMissions": [
     {
       "step": 1,
+<<<<<<< HEAD
       "lesson": "Awaken first deity; movement and basic attacks",
       "missionBeat": "The Gate opens; the deity crosses alone."
+=======
+      "lesson": "Awaken first Deity; movement and basic attacks",
+      "missionBeat": "The Gate opens; the Deity crosses alone."
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     },
     {
       "step": 2,
@@ -75,6 +98,7 @@
     },
     {
       "step": 8,
+<<<<<<< HEAD
       "lesson": "Second deity encounter",
       "missionBeat": "Second deity appears through story/battlefield event, solves a problem differently."
     },
@@ -86,6 +110,19 @@
     {
       "step": 10,
       "lesson": "Unlock second deity",
+=======
+      "lesson": "Second Deity encounter",
+      "missionBeat": "Second Deity appears through story/battlefield event, solves a problem differently."
+    },
+    {
+      "step": 9,
+      "lesson": "Deity Trial",
+      "missionBeat": "Player temporarily pilots the second Deity with its mechanic, gear sample, and Divine Ascension."
+    },
+    {
+      "step": 10,
+      "lesson": "Unlock second Deity",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "missionBeat": "Unlock through progression/trial/personal quest path, not pure sales pressure."
     },
     {
@@ -99,31 +136,36 @@
       "missionBeat": "Temporary mission teaches faction environment, combat philosophy, Codex, and deity identity."
     }
   ],
-  "secondTitanRecommendation": {
+  "secondDeityRecommendation": {
     "principle": "Pick a radically different playstyle from the starter.",
     "candidates": [
       {
-        "id": "TG-TITAN-005",
-        "name": "Sutekh Dune Eclipse",
+        "id": "MG-DEITY-005",
+        "name": "Sutekh",
         "role": "Disruptor",
         "why": "enemy casters, elite mechanics, Momentum/Divinity denial"
       },
       {
+<<<<<<< HEAD
         "id": "TG-TITAN-006",
         "name": "Karnu Glass Horizon",
+=======
+        "id": "MG-DEITY-007",
+        "name": "Karnu",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "role": "Artillery",
         "why": "large enemy groups, ranged pressure, objective zones"
       },
       {
-        "id": "TG-TITAN-009",
-        "name": "Amunet Hidden Sun",
+        "id": "MG-DEITY-009",
+        "name": "Amunet",
         "role": "Assassin",
         "why": "execution-based encounters, priority targets, mobility assassinations"
       }
     ],
     "unlockMethod": "story encounter -> playable trial -> personal quest/shard completion -> permanent unlock"
   },
-  "titanTrialSystem": {
+  "deityTrialSystem": {
     "purpose": "Sell gameplay experience, not stats.",
     "trialContents": [
       "unique mechanic tutorial",
@@ -140,7 +182,11 @@
     "trialContents": [
       "faction lore intro",
       "realm environment",
+<<<<<<< HEAD
       "one faction deity",
+=======
+      "one faction Deity",
+>>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "faction passive demonstration",
       "faction gear sample",
       "Codex unlock",
@@ -158,5 +204,5 @@
     "USE",
     "DISCOVER_ANOTHER"
   ],
-  "freePlayerPolicy": "Titan acquisition must include campaign rewards, trials, personal quests, faction progression, shards, events, bosses, raids, achievements, and Codex discoveries. Premium may accelerate only if existing monetization permits; it must not be required."
+  "freePlayerPolicy": "Deity acquisition must include campaign rewards, trials, personal quests, faction progression, shards, events, bosses, raids, achievements, and Codex discoveries. Premium may accelerate only if existing monetization permits; it must not be required."
 }

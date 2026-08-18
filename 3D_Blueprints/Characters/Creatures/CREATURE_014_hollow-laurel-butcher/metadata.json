@@ -31,7 +31,7 @@
     "scale-preserving camera readability"
   ],
   "battlefieldClearance": {
-    "titanClearanceRequired": false,
+    "deityClearanceRequired": false,
     "gridReadability": "Must remain readable in elongated 3D tactical battlefield presentation.",
     "clearanceSource": "3D_Blueprints/Global_References/Master_Scale_Reference/metadata.json"
   },
@@ -205,7 +205,7 @@
   ],
   "technicalNotes": {
     "polygonBudget": "Mobile-first production target: LOD0 budget assigned by asset type during model pass; validators require LOD0/LOD1/LOD2/CollisionMesh entries before GAME_READY.",
-    "textureResolution": "1024-2048 for heroes/Titans and Gates; 512-1024 for common creatures/props; atlas-friendly mobile materials.",
+    "textureResolution": "1024-2048 for heroes/Deities and Gates; 512-1024 for common creatures/props; atlas-friendly mobile materials.",
     "lodLevels": [
       "LOD0_CLOSE",
       "LOD1_GAMEPLAY",
@@ -213,7 +213,7 @@
       "COLLISION_MESH"
     ],
     "collisionRequirements": "Separate simplified collision mesh; never derive gameplay collision from high-detail art mesh.",
-    "rigRequirements": "Rig spec required before MODEL_IN_PROGRESS; Titans and creatures need named root, pelvis/chest/head, limb, weapon, and VFX sockets where canon supports them.",
+    "rigRequirements": "Rig spec required before MODEL_IN_PROGRESS; Deities and creatures need named root, pelvis/chest/head, limb, weapon, and VFX sockets where canon supports them.",
     "animationRequirements": "Idle, movement, attack/interaction, hit reaction, death/disable, and any canon ability poses when source data defines them.",
     "mobileOptimization": "Preserve silhouette and scale at 360px width; use baked lighting/material zones and aggressive LOD swaps.",
     "target": "mobile tactical battlefield"
