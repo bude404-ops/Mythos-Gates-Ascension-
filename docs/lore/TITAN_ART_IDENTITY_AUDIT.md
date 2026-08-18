@@ -11,7 +11,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Lore connection: Aten Ra is the playable source-realm divinity for Aten Ra; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
 - Individuality: towering sun disk crown, falcon mantle, shield-forward king silhouette
 - Sexual identity: Male identity is locked through face, body proportions, armor shaping, posture, and silhouette: tall kingly masculine frame, broad chest, narrow waist, sun-carved posture, composed protector mass
-- Revised prompt: MG-PROMPT-001
+- Revised prompt: TG-PROMPT-001
 
 ## TG-TITAN-005 — Sutekh, Red Land Storm God
 - Status: PASS
@@ -47,7 +47,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Lore connection: Odin is the playable source-realm divinity for Asgardian; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
 - Individuality: wide raven cloak, one high spear, wolf-pelt shoulder, asymmetrical missing-eye head shape
 - Sexual identity: Male identity is locked through face, body proportions, armor shaping, posture, and silhouette: tall weathered masculine veteran frame, broad but not bulky, long limbs, ruler-warrior posture
-- Revised prompt: MG-PROMPT-010
+- Revised prompt: TG-PROMPT-010
 
 ## TG-TITAN-011 — Freyja, Vanir Valkyrie Queen
 - Status: PASS
@@ -56,7 +56,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Lore connection: Freyja is the playable source-realm divinity for Asgardian; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
 - Individuality: falcon feather cloak, jewel collar, long braided hair, wing-like cloak arcs
 - Sexual identity: Female identity is locked through face, body proportions, armor shaping, posture, and silhouette: powerful feminine valkyrie physique, narrow waist, strong hips and thighs, lifted commanding posture
-- Revised prompt: MG-PROMPT-011
+- Revised prompt: TG-PROMPT-011
 
 ## TG-TITAN-015 — Frigg, Wyrd Hearth Queen
 - Status: PASS
@@ -83,7 +83,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Lore connection: Zeus is the playable source-realm divinity for Olympian; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
 - Individuality: eagle cloak, forked lightning staff, high laurel crown, marble-throne stance
 - Sexual identity: Male identity is locked through face, body proportions, armor shaping, posture, and silhouette: tall idealized masculine king build, broad shoulders, sculpted torso, upright tribunal posture
-- Revised prompt: MG-PROMPT-019
+- Revised prompt: TG-PROMPT-019
 
 ## TG-TITAN-022 — Artemis, Moon Huntress
 - Status: PASS
@@ -92,7 +92,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Lore connection: Artemis is the playable source-realm divinity for Olympian; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
 - Individuality: crescent bow arc, high hunt-braid, short chiton armor, stag-horn moon ornaments
 - Sexual identity: Female identity is locked through face, body proportions, armor shaping, posture, and silhouette: athletic feminine archer frame, long legs, narrow waist, strong hips, poised running stance
-- Revised prompt: MG-PROMPT-022
+- Revised prompt: TG-PROMPT-022
 
 ## TG-TITAN-023 — Ares, Bronze War Fury
 - Status: PASS
@@ -119,7 +119,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Lore connection: Amaterasu is the playable source-realm divinity for Kami; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
 - Individuality: mirror aura, long sleeve-armor panels, sun hair ornaments, shrine-empress profile
 - Sexual identity: Female identity is locked through face, body proportions, armor shaping, posture, and silhouette: elegant feminine empress frame, graceful neck, narrow waist, layered kimono-armor preserving feminine silhouette
-- Revised prompt: MG-PROMPT-028
+- Revised prompt: TG-PROMPT-028
 
 ## TG-TITAN-029 — Tsukuyomi, Moon Order Lord
 - Status: PASS
@@ -128,7 +128,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Lore connection: Tsukuyomi is the playable source-realm divinity for Kami; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
 - Individuality: crescent headpiece, long court sleeves, naginata curve, vertical moon-priest outline
 - Sexual identity: Male identity is locked through face, body proportions, armor shaping, posture, and silhouette: slender graceful masculine noble build, long limbs, straight posture, ritual precision
-- Revised prompt: MG-PROMPT-029
+- Revised prompt: TG-PROMPT-029
 
 ## TG-TITAN-032 — Susanoo, Storm-Sea Exile
 - Status: PASS
@@ -155,7 +155,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Lore connection: Dagda is the playable source-realm divinity for Tuatha; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
 - Individuality: huge club, cauldron shield, fur mantle, broad oak-root stance
 - Sexual identity: Male identity is locked through face, body proportions, armor shaping, posture, and silhouette: large powerful masculine guardian build, heavy belly-and-chest strength, grounded feast-king posture
-- Revised prompt: MG-PROMPT-037
+- Revised prompt: TG-PROMPT-037
 
 ## TG-TITAN-040 — Morrígan, Battle-Crow Fate Queen
 - Status: PASS
@@ -164,7 +164,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Lore connection: Morrígan is the playable source-realm divinity for Tuatha; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
 - Individuality: crow wing mantle, horned battle crown, long spear, feathered shadow outline
 - Sexual identity: Female identity is locked through face, body proportions, armor shaping, posture, and silhouette: tall fierce feminine warrior-seer physique, narrow waist, strong hips, long limbs, commanding predatory posture
-- Revised prompt: MG-PROMPT-040
+- Revised prompt: TG-PROMPT-040
 
 ## TG-TITAN-041 — Brigid, Triple Flame Muse
 - Status: PASS
@@ -191,7 +191,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Lore connection: Michael is the playable source-realm divinity for Empyrean; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
 - Individuality: two vast wings, sword vertical, shield aura, commander-triangle outline
 - Sexual identity: Male identity is locked through face, body proportions, armor shaping, posture, and silhouette: tall athletic masculine warrior build, broad shoulders, narrow waist, immaculate upright stance
-- Revised prompt: MG-PROMPT-046
+- Revised prompt: TG-PROMPT-046
 
 ## TG-TITAN-048 — Sophia, Wisdom of the Living Choir
 - Status: PASS
@@ -200,7 +200,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Lore connection: Sophia is the playable source-realm divinity for Empyrean; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
 - Individuality: scroll ribbons, many-eye aura veil, compass staff, cathedral-curve silhouette
 - Sexual identity: Female identity is locked through face, body proportions, armor shaping, posture, and silhouette: graceful feminine oracle frame, long neck, narrow waist, flowing hips, still commanding posture
-- Revised prompt: MG-PROMPT-048
+- Revised prompt: TG-PROMPT-048
 
 ## TG-TITAN-050 — Shekinah, Radiant Presence
 - Status: PASS
@@ -227,7 +227,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Lore connection: Lucifer is the playable source-realm divinity for Infernal Dominion; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
 - Individuality: high horns, torn royal wings, star-sword, black crown outline
 - Sexual identity: Male identity is locked through face, body proportions, armor shaping, posture, and silhouette: tall lithe masculine prince build, broad tailored shoulders, narrow waist, predatory upright grace
-- Revised prompt: MG-PROMPT-055
+- Revised prompt: TG-PROMPT-055
 
 ## TG-TITAN-057 — Lilith, Night Sovereign
 - Status: PASS
@@ -236,7 +236,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Lore connection: Lilith is the playable source-realm divinity for Infernal Dominion; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
 - Individuality: long horn crown, bat-silk hair mantle, whip crescent, queenly night outline
 - Sexual identity: Female identity is locked through face, body proportions, armor shaping, posture, and silhouette: sensual powerful feminine frame, narrow waist, pronounced hips, elegant predatory posture
-- Revised prompt: MG-PROMPT-057
+- Revised prompt: TG-PROMPT-057
 
 ## TG-TITAN-058 — Asmodeus, Prince of Burning Desire
 - Status: PASS
@@ -245,7 +245,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Lore connection: Asmodeus is the playable source-realm divinity for Infernal Dominion; canon lore remains intact while roster scale changes to 2 male and 2 female gods.
 - Individuality: curved horns, hooked glaive, half-cloak of ash velvet, forward tyrant profile
 - Sexual identity: Male identity is locked through face, body proportions, armor shaping, posture, and silhouette: muscular masculine duelist-tyrant build, thick shoulders, tapered waist, aggressive court stance
-- Revised prompt: MG-PROMPT-058
+- Revised prompt: TG-PROMPT-058
 
 ## TG-TITAN-060 — Naamah, Velvet Ash Enchantress
 - Status: PASS
