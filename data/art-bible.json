@@ -1,0 +1,186 @@
+{
+  "id": "TG-ART-BIBLE-001",
+  "name": "Mythos Gates: Ascension Art Bible",
+  "version": 3,
+  "status": "IMPLEMENTED",
+  "updated": "2026-08-17",
+  "purpose": "Internal Art Bible built from current Codex. Maintains separate visual standards to prevent visual drift.",
+  "globalRules": [
+    "Faction identity must be visible through materials, silhouette, symbols, texture, and posture before any generic fantasy trope.",
+    "deities are living extradimensional beings, not buildings, robots, statues, block stacks, or abstract architecture piles.",
+    "NPCs are non-playable lore characters whose costume must show role, faction duty, and personal history.",
+    "Creatures can be monstrous but must stay rooted in faction or Hollow logic rather than generic alien design.",
+    "Architecture can influence clothing, regalia, auras, weapons, and environment \u2014 never replace living anatomy for character assets.",
+    "No readable real-world text or logos; glyphs and marks must be abstract lore texture."
+  ],
+  "sections": {
+    "gods_titans": {
+      "standard": "Character identity and divine design. Each Titan = a legend.",
+      "source": "data/titans.json + data/faction-visual-bible.json",
+      "rules": [
+        "Every Titan must pass the Divine Test (Section 19)",
+        "Unique divine signature per god \u2014 no same glow on everyone",
+        "God-specific design: no reskinned templates, no identical armor",
+        "One God at a time \u2014 approval required before next",
+        "Weapons must have lore \u2014 legendary artifacts, not RPG equipment"
+      ]
+    },
+    "realms": {
+      "standard": "Environment and cultural identity. Every realm = a world.",
+      "source": "data/realm-codex.json + data/realm-dna.json",
+      "realms": [
+        {
+          "faction": "Aten Ra",
+          "realm": "The Solar Dominion of Khepra",
+          "gate": "The Sun-Scale Gate",
+          "tone": "Ma\u2019at physics, visible Aten radiance, Ra kingship, Khepri renewal, Nile/Red Land duality, throne-mag"
+        },
+        {
+          "faction": "Asgardian",
+          "realm": "The Storm-Rooted Aesir Holds",
+          "gate": "The Thunder-Oath Gate",
+          "tone": "storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weat"
+        },
+        {
+          "faction": "Olympian",
+          "realm": "The Celestial Heights of Olympus",
+          "gate": "The Laurel-Sky Gate",
+          "tone": "living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal auras,"
+        },
+        {
+          "faction": "Kami",
+          "realm": "The Sacred Kingdoms",
+          "gate": "The Torii-Moon Gate",
+          "tone": "torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, fox"
+        },
+        {
+          "faction": "Tuatha",
+          "realm": "Avalora",
+          "gate": "The Silver-Root Gate",
+          "tone": "silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standi"
+        },
+        {
+          "faction": "Empyrean",
+          "realm": "The Radiant Hierarchies",
+          "gate": "The Choir-Vault Gate",
+          "tone": "white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-"
+        },
+        {
+          "faction": "Infernal Dominion",
+          "realm": "The Infernal Dominion",
+          "gate": "The Black-Iron Gate",
+          "tone": "black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, hor"
+        }
+      ]
+    },
+    "factions": {
+      "standard": "Faction visual language. Every faction = a civilization.",
+      "source": "data/faction-visual-bible.json",
+      "factions": [
+        {
+          "faction": "Aten Ra",
+          "thesis": "Aten Ra is the source behind human Egyptian solar myth: living Ma\u2019at, Ra\u2019s noon authority, Aten\u2019s sun-disc radiance, Khepri\u2019s renewal, Iset\u2019s throne-m",
+          "qualityGate": "Any generated asset for this faction must visibly follow this visual bible and must be rejected if i"
+        },
+        {
+          "faction": "Asgardian",
+          "thesis": "Asgardians are the source behind human Norse saga: oath, storm, world-root, raven wisdom, Valkyrie death-law, and Ragnarok pressure made living. They ",
+          "qualityGate": "Any generated asset for this faction must visibly follow this visual bible and must be rejected if i"
+        },
+        {
+          "faction": "Olympian",
+          "thesis": "Olympians are the source behind human Greek myth: contest, polis, prophecy, marble, bronze, sky law, divine politics, and victory made bodily. They sh",
+          "qualityGate": "Any generated asset for this faction must visibly follow this visual bible and must be rejected if i"
+        },
+        {
+          "faction": "Kami",
+          "thesis": "Kami are the source behind human Japanese spirit lore: shrine threshold, nature divinity, masks, foxfire, purification, dragon rain, and twilight y\u014dka",
+          "qualityGate": "Any generated asset for this faction must visibly follow this visual bible and must be rejected if i"
+        },
+        {
+          "faction": "Tuatha",
+          "thesis": "Tuatha are the source behind human Celtic fae and divine lore: otherworld sovereignty, s\u00eddhe gates, geasa, memory forests, crow prophecy, poetic flame",
+          "qualityGate": "Any generated asset for this faction must visibly follow this visual bible and must be rejected if i"
+        },
+        {
+          "faction": "Empyrean",
+          "thesis": "Empyreans are the source behind human angelic and heavenly lore: hierarchy, choir, messenger, burning wheel, throne, guardian, edict, and radiant city",
+          "qualityGate": "Any generated asset for this faction must visibly follow this visual bible and must be rejected if i"
+        },
+        {
+          "faction": "Infernal Dominion",
+          "thesis": "The Infernal Dominion is the source behind human hell, demonology, and devil-contract lore: royal violence, debt, chain law, punishment fire, grimoire",
+          "qualityGate": "Any generated asset for this faction must visibly follow this visual bible and must be rejected if i"
+        }
+      ]
+    },
+    "enemies": {
+      "standard": "Creature and enemy design language. Must stay rooted in faction or Hollow logic.",
+      "source": "data/enemy-archetype-registry.json + data/creatures.json",
+      "rules": [
+        "Creatures can be monstrous but must stay rooted in faction or Hollow logic rather than generic alien design.",
+        "Architecture can influence clothing, regalia, auras, weapons, and environment \u2014 never replace living anatomy for character assets."
+      ]
+    },
+    "battlefields": {
+      "standard": "Environmental design. Titan + Battlefield + Architecture + Magic + Environment + Enemies = One Unified World.",
+      "source": "data/battlefield-canon-registry.json + data/maps.json"
+    },
+    "weapons": {
+      "standard": "Legendary artifact standards. Mythology + God + Realm + Faction + Combat Role + Divine Power.",
+      "source": "data/titans.json (weaponCanon, equipmentDetails)"
+    },
+    "gates": {
+      "standard": "Dimensional visual language. Every Gate connects something far greater than the battlefield.",
+      "source": "data/realm-codex.json (gate field)",
+      "gates": [
+        {
+          "gate": "The Sun-Scale Gate",
+          "faction": "Aten Ra",
+          "realm": "The Solar Dominion of Khepra"
+        },
+        {
+          "gate": "The Thunder-Oath Gate",
+          "faction": "Asgardian",
+          "realm": "The Storm-Rooted Aesir Holds"
+        },
+        {
+          "gate": "The Laurel-Sky Gate",
+          "faction": "Olympian",
+          "realm": "The Celestial Heights of Olympus"
+        },
+        {
+          "gate": "The Torii-Moon Gate",
+          "faction": "Kami",
+          "realm": "The Sacred Kingdoms"
+        },
+        {
+          "gate": "The Silver-Root Gate",
+          "faction": "Tuatha",
+          "realm": "Avalora"
+        },
+        {
+          "gate": "The Choir-Vault Gate",
+          "faction": "Empyrean",
+          "realm": "The Radiant Hierarchies"
+        },
+        {
+          "gate": "The Black-Iron Gate",
+          "faction": "Infernal Dominion",
+          "realm": "The Infernal Dominion"
+        }
+      ]
+    },
+    "ui": {
+      "standard": "World-consistent interface aesthetics. No visual drift from game world.",
+      "rules": [
+        "No readable real-world text or logos",
+        "Glyphs and marks must be abstract lore texture",
+        "UI must feel connected to the Mythos Gates universe"
+      ]
+    }
+  },
+  "masterArtDirectionVersion": 3,
+  "sectionsImplemented": 23,
+  "promptFiles": "art/prompts/TG-PROMPT-0*.json (28 files, all v3)"
+}
