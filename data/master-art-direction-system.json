@@ -1,7 +1,7 @@
 {
   "id": "TG-ART-DIRECTION-MASTER",
   "name": "Master Divine God, Realm & Titan Art Direction System",
-  "version": 1,
+  "version": 4,
   "status": "IMPLEMENTED",
   "updated": "2026-08-17",
   "purpose": "Master art-direction standard for every god/Titan in Mythos Gates: Ascension. Every Titan must visually communicate: GOD + MYTHOLOGY + PERSONALITY + FACTION + REALM + GATE LORE + DIVINE POWER + COMBAT IDENTITY.",
@@ -126,5 +126,37 @@
     "composition": "Full-body playable deity concept, combat-ready stance, mobile-readable silhouette. No text, no logos, no UI overlay. One-deity-only composition."
   },
   "implementedIn": "art/prompts/TG-PROMPT-0*.json (all 28 deity prompts)",
-  "promptFileKey": "prompt (contains full 5-layer system), artDirectionSystem, fiveLayerIdentity"
+  "promptFileKey": "prompt (contains full 5-layer system), artDirectionSystem, fiveLayerIdentity",
+  "canonUpdate": "Playable characters are the actual gods and goddesses of the Mythos Gates universe. NOT Titans as a separate race, class, species, mortal champion, or type of character.",
+  "currentGameIdentity": {
+    "game": "Mythos Gates: Ascension",
+    "universe": "Mythos Gates",
+    "currentArc": "Ascension (leaves room for future expansions)",
+    "genre": "Mythology-driven extradimensional fantasy RPG",
+    "roster": "7 factions \u00d7 4 gods/goddesses = 28 playable divine characters",
+    "structure": "2 male gods + 2 female goddesses per faction",
+    "factions": [
+      "Aten Ra \u2014 The Solar Dominion of Khepra",
+      "Asgardian \u2014 The Storm-Rooted Aesir Holds",
+      "Olympian \u2014 The Celestial Heights of Olympus",
+      "Kami \u2014 The Sacred Kingdoms",
+      "Tuatha \u2014 Avalora",
+      "Empyrean \u2014 The Radiant Hierarchies",
+      "Infernal Dominion \u2014 The Infernal Dominion"
+    ]
+  },
+  "godsAreHeroes": {
+    "rule": "Every playable character is an actual god or goddess",
+    "not": [
+      "Mortal heroes",
+      "Soldiers",
+      "Humans who became gods",
+      "Generic fantasy champions",
+      "Titan creatures",
+      "Aliens",
+      "Sci-fi beings",
+      "Superheroes"
+    ],
+    "goal": "This is an actual god who has entered the battlefield \u2014 NOT a fantasy warrior designed to look powerful"
+  }
 }
