@@ -3,11 +3,7 @@
   "version": "1.7.0",
   "generated": "2026-08-13T00:00:00Z",
   "status": "IMPLEMENTED",
-<<<<<<< HEAD
   "purpose": "Mobile-first Main Menu / Command Hub runtime foundation with implemented first-launch Awakening onboarding, canon starter deity binding, save validation, campaign handoff, art scale references, enemy archetype registry, mission tactical profiles, Titan/Faction Trials, raid economy, and battlefield entry.",
-=======
-  "purpose": "Mobile-first Main Menu / Command Hub runtime foundation with implemented first-launch Awakening onboarding, canon starter Deity binding, save validation, campaign handoff, art scale references, enemy archetype registry, mission tactical profiles, Deity/Faction Trials, raid economy, and battlefield entry.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "canonFirst": true,
   "forbiddenContent": [
     "futuristic craft",
@@ -68,11 +64,7 @@
     "level": "number",
     "experience": "object",
     "resources": "array",
-<<<<<<< HEAD
     "selectedDeities": "array<titanId>",
-=======
-    "selectedDeities": "array<deityId>",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "unlockedContent": "object",
     "campaignProgress": "object",
     "quests": "array",
@@ -108,11 +100,7 @@
       }
     ],
     "selectedDeities": [
-<<<<<<< HEAD
       "TG-TITAN-001"
-=======
-      "MG-DEITY-001"
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ],
     "unlockedContent": {
       "campaign": true,
@@ -269,11 +257,7 @@
     "rules": [
       "recover corrupt save before gameplay",
       "claim pending reward before next mission",
-<<<<<<< HEAD
       "select a valid deity if selectedDeityIds are missing",
-=======
-      "select a valid Deity if selectedDeityIds are missing",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "continue unfinished mission if present",
       "start current campaign mission",
       "enter elite only when campaign unlock rule is true",
@@ -306,11 +290,7 @@
   ],
   "performanceRules": [
     "lazy load non-visible systems",
-<<<<<<< HEAD
     "preload only boot/title/hub/current realm/current selected deity assets",
-=======
-    "preload only boot/title/hub/current realm/current selected Deity assets",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "respect reduced-motion",
     "avoid full menu re-render for resource-only updates",
     "mobile touch targets >=44px"
@@ -327,11 +307,7 @@
   "qualityGates": [
     "Command Hub route is the first rendered game route after title/startup.",
     "No hardcoded faction names in hub render logic; faction UI maps canonical faction registry.",
-<<<<<<< HEAD
     "Selected deity display resolves from PlayerState selectedDeities plus canonical deity registry.",
-=======
-    "Selected Deity display resolves from PlayerState selectedDeities plus canonical Deity registry.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Resource bar maps PlayerState resources only.",
     "Every bottom nav button routes to a real implemented screen or LockedContentPanel.",
     "getNextRecommendedAction resolves a real mission handoff.",
@@ -340,39 +316,23 @@
     "TG-DEV-026 Awakening onboarding exposes exactly three canon starter Deities.",
     "TG-DEV-026 Awakening path tracks 12 roster-journey beats from starter choice to faction trial handoff.",
     "Full roster remains hidden until Awakening completion and no starter selection requires payment.",
-<<<<<<< HEAD
     "TG-DEV-027 Trials tab creates save-backed Divine Trial attempts with temporary loadouts.",
     "TG-DEV-027 Trial completion writes deityTrials, factionTrials, pending TITAN_TRIAL rewards, and Trial Favor.",
     "TG-DEV-027 Borrowed loadouts expire at END_OF_TRIAL and never grant permanent paid power.",
     "TG-DEV-028 all 280 campaign missions expose tactical problem tags and advantage roles.",
     "TG-DEV-028 recommended deities are valid, favored-not-required, and never ownership locks.",
-=======
-    "TG-DEV-027 Trials tab creates save-backed Deity Trial attempts with temporary loadouts.",
-    "TG-DEV-027 Trial completion writes deityTrials, factionTrials, pending TITAN_TRIAL rewards, and Trial Favor.",
-    "TG-DEV-027 Borrowed loadouts expire at END_OF_TRIAL and never grant permanent paid power.",
-    "TG-DEV-028 all 280 campaign missions expose tactical problem tags and advantage roles.",
-    "TG-DEV-028 recommended Deities are valid, favored-not-required, and never ownership locks.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "TG-DEV-023 every creature resolves to a production enemy archetype and AI profile.",
     "TG-DEV-023 difficulty tiers expose explicit tactical scaling budgets before stat inflation.",
     "TG-DEV-008 Hollow Wretch and Gateborn Colossus behavior records drive playable battle intents.",
     "TG-DEV-008 battle UI exposes telegraphs, reaction counterplay, behavior tags, and threat budgets.",
     "TG-DEV-030 all 8 Art Director scale sheet types are implemented.",
-<<<<<<< HEAD
     "TG-DEV-030 scale sheets preserve deity/Gate mass, mobile crop readability, and non-sci-fi terrain language.",
-=======
-    "TG-DEV-030 scale sheets preserve Deity/Gate mass, mobile crop readability, and non-sci-fi terrain language.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "TG-TASK-COMMAND-HUB-018 render telemetry tracks route render counts, max render time, and budget overruns.",
     "TG-TASK-COMMAND-HUB-018 reward claims support partial resource-bar refresh without mandatory full route re-render.",
     "TG-TASK-COMMAND-HUB-018 visible asset preloads use cached lookups and count boot/title/hub assets only.",
     "TG-TASK-COMMAND-HUB-019 final art integration resolves approved asset slots before placeholders.",
     "TG-TASK-COMMAND-HUB-019 Command Hub surfaces art provenance, fallback state, and runtime safety for QA.",
-<<<<<<< HEAD
     "TG-TASK-COMMAND-HUB-019 starter deity, realm Gate, and faction background art slots are covered by manifest rules.",
-=======
-    "TG-TASK-COMMAND-HUB-019 starter Deity, realm Gate, and faction background art slots are covered by manifest rules.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "F2P economy audit passes",
     "No duplicate energy/currency systems",
     "Core combat remains free and primary",
@@ -391,15 +351,9 @@
     "status": "IMPLEMENTED",
     "source": "data/player-onboarding-roster-journey.json",
     "starterDeityIds": [
-<<<<<<< HEAD
       "TG-TITAN-001",
       "TG-TITAN-006",
       "TG-TITAN-009"
-=======
-      "MG-DEITY-001",
-      "MG-DEITY-003",
-      "MG-DEITY-004"
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ],
     "starterFactionId": "TG-FACTION-001",
     "beatCount": 12,
@@ -412,11 +366,7 @@
     "antiPayToWinRules": [
       "Starter choice is canon-safe and limited to three roles.",
       "Full roster is hidden during onboarding to prevent roster flood.",
-<<<<<<< HEAD
       "Second deity desire is created through trials and story, not mandatory purchase pressure."
-=======
-      "Second Deity desire is created through trials and story, not mandatory purchase pressure."
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ]
   },
   "trialSystem": {
@@ -424,15 +374,9 @@
     "status": "IMPLEMENTED",
     "source": "data/deity-trial-system.json",
     "trialDeityIds": [
-<<<<<<< HEAD
       "TG-TITAN-005",
       "TG-TITAN-005",
       "TG-TITAN-010"
-=======
-      "MG-DEITY-002",
-      "MG-DEITY-005",
-      "MG-DEITY-010"
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ],
     "modeCount": 3,
     "temporaryLoadoutExpires": "END_OF_TRIAL",
@@ -537,15 +481,9 @@
       "TITAN_PRESENTATION"
     ],
     "starterDeityIds": [
-<<<<<<< HEAD
       "TG-TITAN-001",
       "TG-TITAN-006",
       "TG-TITAN-009"
-=======
-      "MG-DEITY-001",
-      "MG-DEITY-003",
-      "MG-DEITY-004"
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ],
     "rules": [
       "FINAL assets are selected through AssetManager.resolvedPath.",

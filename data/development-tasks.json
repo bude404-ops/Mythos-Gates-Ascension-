@@ -3,11 +3,7 @@
     "id": "TG-TASK-FACTION-MISSION-DIALOGUE-FINISH-001",
     "status": "COMPLETED",
     "priority": "High",
-<<<<<<< HEAD
     "description": "Audit and finish the remaining faction mission/dialogue coverage so every faction campaign has complete one-active-deity mission objectives, chapter linkage, production-ready dialogue, and validation coverage.",
-=======
-    "description": "Audit and finish the remaining faction mission/dialogue coverage so every faction campaign has complete one-active-Deity mission objectives, chapter linkage, production-ready dialogue, and validation coverage.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "director": "Campaign Director",
     "dependencies": [
       "data/mission-registry.json",
@@ -24,20 +20,12 @@
   },
   {
     "id": "TG-DEV-001",
-<<<<<<< HEAD
     "description": "Approve first batch of deity artwork for prompt-ready Titans.",
-=======
-    "description": "Approve first batch of deity artwork for prompt-ready Deities.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "director": "Art Director",
     "priority": "High",
     "status": "COMPLETED",
     "dependencies": [
-<<<<<<< HEAD
       "deity prompt records"
-=======
-      "Deity prompt records"
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     ],
     "relatedEntity": "MG-DEITY-001",
     "relatedFiles": [
@@ -46,11 +34,7 @@
       "data/art-prompts.json"
     ],
     "completed": "2026-08-13",
-<<<<<<< HEAD
     "completionNotes": "First Aten Ra deity prompt batch approved for generation through TG-ART-APPROVAL-MANIFEST-001; no final image import claimed."
-=======
-    "completionNotes": "First Aten Ra Deity prompt batch approved for generation through TG-ART-APPROVAL-MANIFEST-001; no final image import claimed."
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   },
   {
     "id": "TG-DEV-002",
@@ -353,40 +337,24 @@
     "relatedFiles": [
       "data/solo-combat-design-document.json",
       "data/solo-deity-migration-report.json",
-<<<<<<< HEAD
       "data/solo-titan-roster-redesign.json",
-=======
-      "data/solo-deity-roster-redesign.json",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "data/solo-vertical-slice.json",
       "scripts/test-solo-vertical-slice.mjs"
     ]
   },
   {
     "id": "TG-TASK-SOLO-004",
-<<<<<<< HEAD
     "title": "Convert async arena to Asynchronous deity Challenge snapshot model",
     "owner": "Development Director",
     "status": "COMPLETED",
     "priority": "High",
     "description": "Converted async arena into the Asynchronous deity Challenge snapshot model with one defensive deity snapshot per sample opponent, immutable checksums, deterministic AI profiles, solo loadouts, and no live PvP/player-rank fabrication.",
-=======
-    "title": "Convert async arena to Asynchronous Deity Challenge snapshot model",
-    "owner": "Development Director",
-    "status": "COMPLETED",
-    "priority": "High",
-    "description": "Converted async arena into the Asynchronous Deity Challenge snapshot model with one defensive Deity snapshot per sample opponent, immutable checksums, deterministic AI profiles, solo loadouts, and no live PvP/player-rank fabrication.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "director": "Development Director",
     "dependencies": [
       "TG-TASK-SOLO-001"
     ],
     "category": "Solo Deity Combat",
-<<<<<<< HEAD
     "deliverable": "Convert async arena to Asynchronous deity Challenge snapshot model",
-=======
-    "deliverable": "Convert async arena to Asynchronous Deity Challenge snapshot model",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "relatedEntity": "TG-TASK-SOLO-001",
     "relatedFiles": [
       "data/async-arena-system.json",
@@ -425,11 +393,7 @@
   },
   {
     "id": "TG-DEV-024",
-<<<<<<< HEAD
     "description": "Replaced raid system prototype with deterministic one-active-deity multi-stage raid framework, canonical stage profiles, tier caps, approach rules, score formula, economy caps, Command Hub stage intel, and validation coverage.",
-=======
-    "description": "Replaced raid system prototype with deterministic one-active-Deity multi-stage raid framework, canonical stage profiles, tier caps, approach rules, score formula, economy caps, Command Hub stage intel, and validation coverage.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "director": "Development Director",
     "priority": "High",
     "status": "COMPLETED",
@@ -466,19 +430,11 @@
       "scripts/test-command-hub.mjs"
     ],
     "completedIn": "3d49359+raid-economy-tuning",
-<<<<<<< HEAD
     "completionSummary": "Implemented tuned non-pay-to-win solo-Titan raid economy: first-clear bonuses, replay decay, weekly tier caps, signature alloy bands, active-divine mastery credit, and validation/smoke coverage."
   },
   {
     "id": "TG-DEV-026",
     "description": "Implement starter deity choice, Awakening mission beats, and first solo onboarding sequence from canonical Aten Ra data.",
-=======
-    "completionSummary": "Implemented tuned non-pay-to-win solo-Deity raid economy: first-clear bonuses, replay decay, weekly tier caps, signature alloy bands, active-Deity mastery credit, and validation/smoke coverage."
-  },
-  {
-    "id": "TG-DEV-026",
-    "description": "Implement starter Deity choice, Awakening mission beats, and first solo onboarding sequence from canonical Aten Ra data.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "director": "Development Director",
     "priority": "High",
     "status": "COMPLETED",
@@ -502,11 +458,7 @@
   },
   {
     "id": "TG-DEV-027",
-<<<<<<< HEAD
     "description": "Implemented Divine Trial and Faction Trial data model with temporary loadouts, sample gear, Divine Ascension showcase, conversion-safe Trial Favor rewards, Command Hub trial loop, and validation/browser smoke coverage.",
-=======
-    "description": "Implemented Deity Trial and Faction Trial data model with temporary loadouts, sample gear, Divine Ascension showcase, conversion-safe Trial Favor rewards, Command Hub trial loop, and validation/browser smoke coverage.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "director": "Progression Director",
     "priority": "High",
     "status": "COMPLETED",
@@ -517,11 +469,7 @@
     "relatedEntity": "MG-DEITY-ROLE-MATRIX-001",
     "relatedFiles": [
       "data/deity-trial-system.json",
-<<<<<<< HEAD
       "data/titan-role-matrix.json",
-=======
-      "data/deity-role-matrix.json",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "data/progression-system.json",
       "data/command-hub-contract.json",
       "game/command-hub-runtime.mjs",
@@ -534,11 +482,7 @@
   },
   {
     "id": "TG-DEV-028",
-<<<<<<< HEAD
     "description": "Implemented campaign and endgame mission tactical problem categories with recommended-but-not-required deity advantages across all 280 missions, plus release validation and system coverage audit.",
-=======
-    "description": "Implemented campaign and endgame mission tactical problem categories with recommended-but-not-required Deity advantages across all 280 missions, plus release validation and system coverage audit.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "director": "Gameplay Director",
     "priority": "High",
     "status": "COMPLETED",
@@ -561,22 +505,14 @@
     "acceptanceEvidence": [
       "TG-DEV-028 every campaign mission has at least three tactical problem tags.",
       "TG-DEV-028 every campaign mission has at least two advantage roles from the live deity role list.",
-<<<<<<< HEAD
       "TG-DEV-028 every recommended deity exists in data/titans.json.",
-=======
-      "TG-DEV-028 every recommended Deity exists in data/deitys.json.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "TG-DEV-028 all mission tactical profiles are favored-not-required with no ownership lock.",
       "TG-DEV-028 mission tactical profile system is discoverable through data/index.json and release validation."
     ]
   },
   {
     "id": "TG-DEV-029",
-<<<<<<< HEAD
     "description": "Implemented production Battlefield Vertical Slice runtime around The First Reopening Gate with reusable terrain/objective/enemy bindings, one-active-deity tactical actions, Solar Seal interactions, pylon and Codex events, boss phase telemetry, mobile action-bar quality gates, and deterministic replay coverage.",
-=======
-    "description": "Implemented production Battlefield Vertical Slice runtime around The First Reopening Gate with reusable terrain/objective/enemy bindings, one-active-Deity tactical actions, Solar Seal interactions, pylon and Codex events, boss phase telemetry, mobile action-bar quality gates, and deterministic replay coverage.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "director": "Battlefield Director",
     "priority": "Critical",
     "status": "COMPLETED",
@@ -616,11 +552,7 @@
     "acceptanceEvidence": [
       "All 8 required sheet types are implemented.",
       "Every sheet includes compareAgainst references, ratioToDeity, composition, camera, prompt overlay, and QA checks.",
-<<<<<<< HEAD
       "Scale sheets preserve mobile readability and forbid shrinking Titans to solve composition.",
-=======
-      "Scale sheets preserve mobile readability and forbid shrinking Deities to solve composition.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "Release validation rejects missing sheet types, missing QA checks, and invalid ratios."
     ]
   },

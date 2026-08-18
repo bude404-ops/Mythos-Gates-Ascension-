@@ -3,28 +3,17 @@
   "version": "1.0.0",
   "status": "IMPLEMENTED",
   "taskId": "TG-DEV-027",
-<<<<<<< HEAD
   "activeDeityRule": "Trials showcase exactly one temporary deity at a time; borrowed loadouts never become permanent combat power.",
   "purpose": "Production Divine Trial and Faction Trial model for onboarding handoff, roster discovery, temporary specialist loadouts, Divine Ascension previews, and conversion-safe rewards.",
-=======
-  "activeDeityRule": "Trials showcase exactly one temporary Deity at a time; borrowed loadouts never become permanent combat power.",
-  "purpose": "Production Deity Trial and Faction Trial model for onboarding handoff, roster discovery, temporary specialist loadouts, Divine Ascension previews, and conversion-safe rewards.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "sourceContracts": [
     "data/deity-role-matrix.json",
     "data/progression-system.json",
     "game/command-hub-runtime.mjs"
   ],
   "trialDeityIds": [
-<<<<<<< HEAD
     "TG-TITAN-005",
     "TG-TITAN-005",
     "TG-TITAN-010"
-=======
-    "MG-DEITY-002",
-    "MG-DEITY-005",
-    "MG-DEITY-010"
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ],
   "trialModes": [
     {
@@ -109,9 +98,5 @@
     "Borrowed tempLoadout expires at END_OF_TRIAL and no permanent gear item is granted.",
     "TG-DEV-027 is marked COMPLETED only when validation and browser smoke cover the loop."
   ],
-<<<<<<< HEAD
   "sourceCultureTemporaryLoadoutRule": "Temporary trial relics, gearScore, and lessons must use the deity source-culture weapon/armor/core names; borrowed gear never appears as generic relic, realmplate, or charge core."
-=======
-  "sourceCultureTemporaryLoadoutRule": "Temporary trial relics, gearScore, and lessons must use the Deity source-culture weapon/armor/core names; borrowed gear never appears as generic relic, realmplate, or charge core."
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 }

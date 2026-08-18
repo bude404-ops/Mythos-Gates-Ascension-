@@ -1,28 +1,16 @@
 {
-<<<<<<< HEAD
   "id": "TG-TITAN-006",
   "slug": "iset",
-=======
-  "id": "MG-DEITY-006",
-  "slug": "iset-riverlight-throne",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "name": "Iset",
   "factionId": "TG-FACTION-001",
   "faction": "Aten Ra",
   "rarity": "Mythic God",
   "role": "Sustain",
   "abilities": [
-<<<<<<< HEAD
     "Iset — Ma’at-Weighted Strike Restore",
     "Pylon Edict Technique — Covenant",
     "Iset: Sun-Scale Decree Renewal Rite",
     "Divine Ascension — Aten-Ra Source Radiance"
-=======
-    "Iset \u2014 Ma\u2019at-Weighted Strike Restore",
-    "Pylon Edict Technique \u2014 Covenant",
-    "Iset: Sun-Scale Decree Renewal Rite",
-    "Divine Ascension \u2014 Aten-Ra Source Radiance"
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ],
   "stats": {
     "hp": 44,
@@ -39,41 +27,24 @@
     "combatPower": 205
   },
   "equipment": [
-<<<<<<< HEAD
     "Iset Restorer Ma’at Was-Sceptre Blade",
-=======
-    "Iset Restorer Ma\u2019at Was-Sceptre Blade",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "Iset Electrum Wesekh Source-Plate",
     "Iset Khepri Solar Scarab Core"
   ],
   "passives": [
-<<<<<<< HEAD
     "Solar Edict: Iset gains Solar Charge when sustain play banks survival value through terrain mastery and converts it into recovery on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
   ],
   "lore": "Iset, Throne-Magic Mother, is now canonized as one of the four playable deities of Aten Ra. The deity is the source-realm divinity behind the mythology rather than a generic champion: restoration goddess, throne magic, river afterlife passage, sacred motherhood and sovereign healing. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses restoration goddess, throne magic, river afterlife passage, sacred motherhood and sovereign healing; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
   "visualDescription": "Iset manifests as restoration goddess, throne magic, river afterlife passage, sacred motherhood and sovereign healing from Aten Ra: beautiful feminine Egyptian queen face, almond eyes, soft full mouth, compassionate but commanding gaze; graceful feminine hourglass frame, elegant waist-to-hip line, poised healer posture; signature silhouette: throne crown, flowing linen wings, curved scepter, protective mother-queen outline. Weapon: throne scepter and river-linen restoration fan. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
   "artStatus": "READY_FOR_GENERATION",
-=======
-    "Ma\u2019at Source Law: Iset gains Solar Charge when its sustain choices express Solar Dominion of Khepra source-culture law through Aten-lit judgment ground; Earth myth is only the later echo."
-  ],
-  "lore": "Iset is the restoration office humans later called Isis: throne, mother-protector, healer, and guide through death\u2019s river. Her magic does not merely heal flesh; it re-seats a being in its rightful place in Ma\u2019at.",
-  "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
-  "visualDescription": "Sustain Deity with a throne-silhouette crown, lotus and papyrus river mantle, blue faience and river-glass channels, soft gold sun-disc between protective horn-like arcs, linen-light veils, and restorative hand-ray patterns. Must feel protective and sovereign, not a goddess cosplay or generic healer.",
-  "artStatus": "Prompt Ready",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "artPromptId": "TG-PROMPT-006",
   "artworkId": null,
   "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
   "backstoryId": "TG-BACKSTORY-TITAN-006",
   "abilityDetails": [
     {
-<<<<<<< HEAD
       "name": "Iset — Ma’at-Weighted Strike Restore",
-=======
-      "name": "Iset \u2014 Ma\u2019at-Weighted Strike Restore",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -139,11 +110,7 @@
   ],
   "equipmentDetails": [
     {
-<<<<<<< HEAD
       "name": "Iset Restorer Ma’at Was-Sceptre Blade",
-=======
-      "name": "Iset Restorer Ma\u2019at Was-Sceptre Blade",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "slot": "Relic Weapon",
       "rarityFloor": "Rare",
       "primaryStat": "attack",
@@ -188,11 +155,7 @@
     "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
   },
   "balanceNotes": {
-<<<<<<< HEAD
     "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
-=======
-    "intendedDifficulty": "Tuned for harder solo encounters: every Deity can win alone, but mistakes against counters starve Momentum/Divinity.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "primaryRole": "win attrition and cleanse hazard pressure",
     "budgetTarget": 104,
     "computedCombatPower": 205,
@@ -222,7 +185,6 @@
     "signatureWeapon": "throne scepter and river-linen restoration fan",
     "loreReason": "Chosen because Iset embodies restoration goddess, throne magic, river afterlife passage, sacred motherhood and sovereign healing in combat."
   },
-<<<<<<< HEAD
   "gearCanon": {
     "maskHelmetCrown": "Crown/helmet/mask must support beautiful feminine Egyptian queen face, almond eyes, soft full mouth, compassionate but commanding gaze and throne crown, flowing linen wings, curved scepter, protective mother-queen outline; never hide sex identity or make the god interchangeable."
   },
@@ -253,25 +215,4 @@
   "species": "Deity",
   "characterType": "Playable Deity",
   "rosterClass": "Deity Roster"
-=======
-  "mythicSource": "Isis/Iset + throne magic + restoration + river afterlife passage",
-  "visualTraits": [
-    "throne-mending magic",
-    "protective healing",
-    "riverlight restoration",
-    "afterlife passage guide"
-  ],
-  "armorCanon": "throne-shaped crown silhouette, lotus-papyrus mantle, river-glass healing channels, cow-horn/sun-disc echo used subtly, blue faience restoration plates",
-  "updated": "2026-08-16",
-  "weaponCanon": "Iset Restorer Ma\u2019at Was-Sceptre Blade",
-  "gearCanon": {
-    "weapon": "Iset Restorer Ma\u2019at Was-Sceptre Blade",
-    "armor": "Iset Electrum Wesekh Source-Plate",
-    "core": "Iset Khepri Solar Scarab Core",
-    "movementRelic": "Aten Hand-Ray Gate Step",
-    "reactionRelic": "Uraeus Counter-Edict",
-    "executionRelic": "Weigh the Name",
-    "visualRule": "Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
-  }
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
 }

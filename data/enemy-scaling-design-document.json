@@ -4,19 +4,11 @@
   "generated": "2026-08-11T20:26:00Z",
   "directive": "Enemies are designed to challenge one legendary active deity without relying on inflated health pools.",
   "corePhilosophy": [
-<<<<<<< HEAD
     "A single deity should feel powerful, pressured, and readable at all times.",
     "Scaling adds tactical problems before it adds raw statistics.",
     "Campaign progression uses mostly fixed bands so old victories become proof of growth.",
     "Repeatable and endgame content uses controlled dynamic scaling inside explicit caps.",
     "Enemy AI fights the deity as a mythic threat: surround, deny resources, exploit terrain, then survive the Divine swing."
-=======
-    "A single Deity should feel powerful, pressured, and readable at all times.",
-    "Scaling adds tactical problems before it adds raw statistics.",
-    "Campaign progression uses mostly fixed bands so old victories become proof of growth.",
-    "Repeatable and endgame content uses controlled dynamic scaling inside explicit caps.",
-    "Enemy AI fights the Deity as a mythic threat: surround, deny resources, exploit terrain, then survive the Divine swing."
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   ],
   "enemyArchetypes": [
     {
@@ -87,11 +79,7 @@
     },
     {
       "key": "EXECUTIONER",
-<<<<<<< HEAD
       "purpose": "Make low-health deity states dangerous without cheap instant death.",
-=======
-      "purpose": "Make low-health Deity states dangerous without cheap instant death.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
       "counterplay": "Guard stance, preemptive kill, concealment, Divine Ascension reset.",
       "scalesBy": [
         "wound threshold",
@@ -220,11 +208,7 @@
       "enemyLevelRule": "fixed boss bands and controlled mission modifiers",
       "focus": [
         "multi-phase bosses",
-<<<<<<< HEAD
         "enemy deities",
-=======
-        "enemy Deities",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
         "advanced disruptors",
         "compound objectives"
       ],
@@ -332,11 +316,7 @@
   "endgameScaling": {
     "eliteCampaigns": "fixed tier bands with optional challenge modifiers",
     "gauntlets": "escalating compositions and fatigue rules",
-<<<<<<< HEAD
     "asyncTitanChallenge": "defender Divine Level normalized within bracket, gear effects preserved with caps",
-=======
-    "asyncDeityChallenge": "defender Deity level normalized within bracket, gear effects preserved with caps",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
     "mythic": "controlled scaling plus leaderboard scoring, not endless stat inflation"
   },
   "directorTuningControls": [

@@ -166,13 +166,8 @@
   },
   "sourceVsRuntimePolicy": "Original source assets are preserved under source/ or external_uri. Optimized runtime outputs belong under game_ready/. Previews belong under preview/ or assets/previews/. Never overwrite source merely to optimize it.",
   "canonProtection": "Existing Canon/Lore data is authoritative. Unmatched assets become NEEDS_CANON_REVIEW; no missing lore is invented.",
-<<<<<<< HEAD
   "masterScale": "MASTER_SCALE is required for every 3D manifest and is validated against deity \u2192 Character \u2192 Creature \u2192 Enemy \u2192 Gate \u2192 Structure \u2192 Prop \u2192 Terrain scale expectations.",
   "activeVisualArchitecture": "3D Characters + 3D Titans + 3D Creatures + 3D Battlefields + 3D Gates + 3D Props + Materials + Animations + VFX + Lighting. Old 2D battlefield sprites are deprecated.",
-=======
-  "masterScale": "MASTER_SCALE is required for every 3D manifest and is validated against Deity \u2192 Character \u2192 Creature \u2192 Enemy \u2192 Gate \u2192 Structure \u2192 Prop \u2192 Terrain scale expectations.",
-  "activeVisualArchitecture": "3D Characters + 3D Deities + 3D Creatures + 3D Battlefields + 3D Gates + 3D Props + Materials + Animations + VFX + Lighting. Old 2D battlefield sprites are deprecated.",
->>>>>>> 919bdc51 (Mythos Gates: Ascension — Full repo migration)
   "integrationPoints": [
     "data/asset-registry.json",
     "data/3d-blueprint-system.json",
