@@ -1,4 +1,4 @@
-# Mythos Gates: Ascension — Official Brand & Lore Restructure Audit
+# Mythos Gates: Ascension — Official Lughd & Lore Restructure Audit
 
 ## Official Identity
 

@@ -81,7 +81,7 @@ MYTH_DEEP_DIVES = {
             }
         ]
     },
-    "Khemet": {
+    "Sutekh": {
         "sources": [
             {
                 "name": "KHEPRI — The Scarab God, Dawn Rolling, Renewal Through Dark Passage",
@@ -97,11 +97,11 @@ MYTH_DEEP_DIVES = {
             }
         ]
     },
-    "Nefra": {
+    "Iset": {
         "sources": [
             {
                 "name": "NEPHTHYS — Lady of the House, Keeper of the Hidden Duat",
-                "anatomy": "Ancient humans saw her obsidian-dark skin and copied it as a death goddess. Her skin is NOT dark pigment — it is TRANSLUCENT OBSIDIAN that absorbs light rather than reflecting it. She is the dark side of the solar cycle: where Aten-Ra radiates, Nefra RECEIVES. Her body is a LIVING THRESHOLD — the boundary between day and night made flesh."
+                "anatomy": "Ancient humans saw her obsidian-dark skin and copied it as a death goddess. Her skin is NOT dark pigment — it is TRANSLUCENT OBSIDIAN that absorbs light rather than reflecting it. She is the dark side of the solar cycle: where Aten-Ra radiates, Iset RECEIVES. Her body is a LIVING THRESHOLD — the boundary between day and night made flesh."
             },
             {
                 "name": "DUAT GATE — The Hidden Realm Between Death and Dawn",
@@ -113,7 +113,7 @@ MYTH_DEEP_DIVES = {
             }
         ]
     },
-    "Orru": {
+    "Amunet": {
         "sources": [
             {
                 "name": "MA'AT WEIGHING — The Punishment Side of the Balance",
@@ -125,7 +125,7 @@ MYTH_DEEP_DIVES = {
             },
             {
                 "name": "DIVINE VERDICT — The Execution of Judgment",
-                "anatomy": "His shoulders are formed from REFRACTED PRISM SHARDS — jagged crystalline formations that grow upward from his deltoids like shattered amber glass. The LEFT shoulder has a single massive facet that acts as a light-prism, while the RIGHT shoulder has smaller clustered shards. Each shard catches and splits light into rainbow verdict-colors. This design is completely unique to Orru — no other titan has prism-shard shoulders. His forearms carry CLEAR AMBER GLASS BLADES — execution instruments that grow from his arms like bones."
+                "anatomy": "His shoulders are formed from REFRACTED PRISM SHARDS — jagged crystalline formations that grow upward from his deltoids like shattered amber glass. The LEFT shoulder has a single massive facet that acts as a light-prism, while the RIGHT shoulder has smaller clustered shards. Each shard catches and splits light into rainbow verdict-colors. This design is completely unique to Amunet — no other titan has prism-shard shoulders. His forearms carry CLEAR AMBER GLASS BLADES — execution instruments that grow from his arms like bones."
             }
         ]
     },
@@ -137,7 +137,7 @@ MYTH_DEEP_DIVES = {
             },
             {
                 "name": "DESERT STORM — The Red Land's Necessary Violence",
-                "anatomy": "His arms are STORM PILLARS — massive, rectangular, pylon-like limbs that channel desert storm force. His shoulders carry STORM-STEEL SHARD PLATES — angular, aggressive plates that look like they were forged in a sandstorm, completely different from Orru's prism shards. His eyes are STORM EYES — red-gold irises that flicker like lightning within."
+                "anatomy": "His arms are STORM PILLARS — massive, rectangular, pylon-like limbs that channel desert storm force. His shoulders carry STORM-STEEL SHARD PLATES — angular, aggressive plates that look like they were forged in a sandstorm, completely different from Amunet's prism shards. His eyes are STORM EYES — red-gold irises that flicker like lightning within."
             },
             {
                 "name": "NECESSARY DEFENSE — The Storm That Guards Ra From Chaos",
@@ -211,7 +211,7 @@ MYTH_DEEP_DIVES = {
     },
     
     # === ASGARDIAN FACTION ===
-    "Allfather": {
+    "Odin": {
         "sources": [
             {
                 "name": "ODIN — The All-Father, Sovereign Who Traded an Eye for Wisdom",
@@ -227,7 +227,7 @@ MYTH_DEEP_DIVES = {
             }
         ]
     },
-    "Hrothar": {
+    "Thor": {
         "sources": [
             {
                 "name": "FREYJA/VALKYRIES — The Chooser of the Slain, Battle-Fate Weaver",
@@ -243,7 +243,7 @@ MYTH_DEEP_DIVES = {
             }
         ]
     },
-    "Skeld": {
+    "Frigg": {
         "sources": [
             {
                 "name": "YGGDRASIL — The World Tree, Root Architecture of the Nine Worlds",
@@ -259,7 +259,7 @@ MYTH_DEEP_DIVES = {
             }
         ]
     },
-    "Eirwyn": {
+    "Freyja": {
         "sources": [
             {
                 "name": "VALHALLA/ EINHERJAR — The Honored Dead, Death as Transformation",

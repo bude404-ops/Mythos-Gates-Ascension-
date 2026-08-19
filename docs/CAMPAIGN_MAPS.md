@@ -22,9 +22,9 @@ Each map consists of:
 
 ### Campaign Map Layout
 ```
-[Entry Gate] → [Room 1: Sun-Bleached Antechamber] → [Branch A / Branch B]
-  Branch A → [Room 2: Lotus Verdict Hall] → [Room 3: Solar Scale Chamber] → [Elite: Misweighed Judge] → [Room 5: Ma'at Shrine] → [Boss: The Sun-Scorched Oathbreaker]
-  Branch B → [Room 2: Nile Underground] → [Room 3: Forgotten Pharaoh's Tomb] → [Treasure Room] → [Room 4: Duat Threshold] → [Boss: The Sun-Scorched Oathbreaker]
+[Entry Gate] → [Room 1: Sun-Bleached Antechamber] → [Lughch A / Lughch B]
+  Lughch A → [Room 2: Lotus Verdict Hall] → [Room 3: Solar Scale Chamber] → [Elite: Misweighed Judge] → [Room 5: Ma'at Shrine] → [Boss: The Sun-Scorched Oathbreaker]
+  Lughch B → [Room 2: Nile Underground] → [Room 3: Forgotten Pharaoh's Tomb] → [Treasure Room] → [Room 4: Duat Threshold] → [Boss: The Sun-Scorched Oathbreaker]
 ```
 
 ### Tactical Room Definitions
@@ -56,9 +56,9 @@ Each map consists of:
 
 ### Campaign Map Layout
 ```
-[Entry Gate] → [Room 1: Broken Bridge Approach] → [Branch A / Branch B]
-  Branch A → [Room 2: Oath-Stone Hall] → [Room 3: Storm Riven Pass] → [Elite: Forgotten Standard Bearer] → [Room 5: Shield-Wall Shrine] → [Boss: The Forgotten Standard Bearer (Phase 2)]
-  Branch B → [Room 2: Frozen Root Tunnels] → [Room 3: Draugr Mound] → [Treasure Room] → [Room 4: Thunder Vault] → [Boss]
+[Entry Gate] → [Room 1: Broken Bridge Approach] → [Lughch A / Lughch B]
+  Lughch A → [Room 2: Oath-Stone Hall] → [Room 3: Storm Riven Pass] → [Elite: Forgotten Standard Bearer] → [Room 5: Shield-Wall Shrine] → [Boss: The Forgotten Standard Bearer (Phase 2)]
+  Lughch B → [Room 2: Frozen Root Tunnels] → [Room 3: Draugr Mound] → [Treasure Room] → [Room 4: Thunder Vault] → [Boss]
 ```
 
 ### Tactical Room Definitions
@@ -90,9 +90,9 @@ Each map consists of:
 
 ### Campaign Map Layout
 ```
-[Entry Gate] → [Room 1: Laurel Approach] → [Branch A / Branch B]
-  Branch A → [Room 2: Oracle Vapor Hall] → [Room 3: Trial Arena] → [Elite: Thunder Tribunal Usurper] → [Room 5: Victory Shrine] → [Boss: The Thunder Tribunal Usurper (Phase 2)]
-  Branch B → [Room 2: Bronze Forge Ruins] → [Room 3: Cloud Terrace] → [Treasure Room] → [Room 4: Laurel Garden] → [Boss]
+[Entry Gate] → [Room 1: Laurel Approach] → [Lughch A / Lughch B]
+  Lughch A → [Room 2: Oracle Vapor Hall] → [Room 3: Trial Arena] → [Elite: Thunder Tribunal Usurper] → [Room 5: Victory Shrine] → [Boss: The Thunder Tribunal Usurper (Phase 2)]
+  Lughch B → [Room 2: Bronze Forge Ruins] → [Room 3: Cloud Terrace] → [Treasure Room] → [Room 4: Laurel Garden] → [Boss]
 ```
 
 ### Tactical Room Definitions
@@ -124,9 +124,9 @@ Each map consists of:
 
 ### Campaign Map Layout
 ```
-[Entry Gate] → [Room 1: Lantern Path] → [Branch A / Branch B]
-  Branch A → [Room 2: Mirror Lake Crossing] → [Room 3: Foxfire Shrine] → [Elite: False Reflection Kami] → [Room 5: Moon Bridge Shrine] → [Boss: The False Reflection Kami (Phase 2)]
-  Branch B → [Room 2: Cedar Mist Path] → [Room 3: Seal Room] → [Treasure Room] → [Room 4: Torii Gate Array] → [Boss]
+[Entry Gate] → [Room 1: Lantern Path] → [Lughch A / Lughch B]
+  Lughch A → [Room 2: Mirror Lake Crossing] → [Room 3: Foxfire Shrine] → [Elite: False Reflection Kami] → [Room 5: Moon Bridge Shrine] → [Boss: The False Reflection Kami (Phase 2)]
+  Lughch B → [Room 2: Cedar Mist Path] → [Room 3: Seal Room] → [Treasure Room] → [Room 4: Torii Gate Array] → [Boss]
 ```
 
 ### Tactical Room Definitions
@@ -158,9 +158,9 @@ Each map consists of:
 
 ### Campaign Map Layout
 ```
-[Entry Gate] → [Room 1: Root Mouth Entrance] → [Branch A / Branch B]
-  Branch A → [Room 2: Geas Chamber] → [Room 3: Thorn Maze] → [Elite: Crow-Crowned Geas Breaker] → [Room 5: Cauldron Shrine] → [Boss: The Crow-Crowned Geas Breaker (Phase 2)]
-  Branch B → [Room 2: Moonlit Glade] → [Room 3: Standing Stone Circle] → [Treasure Room] → [Room 4: Fae Time Pocket] → [Boss]
+[Entry Gate] → [Room 1: Root Mouth Entrance] → [Lughch A / Lughch B]
+  Lughch A → [Room 2: Geas Chamber] → [Room 3: Thorn Maze] → [Elite: Crow-Crowned Geas Breaker] → [Room 5: Cauldron Shrine] → [Boss: The Crow-Crowned Geas Breaker (Phase 2)]
+  Lughch B → [Room 2: Moonlit Glade] → [Room 3: Standing Stone Circle] → [Treasure Room] → [Room 4: Fae Time Pocket] → [Boss]
 ```
 
 ### Tactical Room Definitions
@@ -171,7 +171,7 @@ Each map consists of:
 | Geas Chamber | Hazard | Geas zones (disable random ability for 3s when entered) | 1x Druidic Seer, 2x Thornbound Strangler | "The root remembers pressure better than praise." |
 | Thorn Maze | Elite | Thorns (40 ATK/s + Bleed on contact) | Elite: Ancient Root Ogre (7500 HP) | "Do not call the wound ugly. It kept the hill from splitting." |
 | Moonlit Glade | Combat | Time bleed (random 0.5x or 2x speed for 3s bursts) | 2x Thornbound Strangler, 1x Ancient Root Ogre | "Green things are not harmless. They are merely patient with their teeth." |
-| Standing Stone Circle | Treasure | None | 1x Ancient Root Ogre (guardian) | Relic: Silver Branch Crown (Epic) |
+| Standing Stone Circle | Treasure | None | 1x Ancient Root Ogre (guardian) | Relic: Silver Lughch Crown (Epic) |
 | Fae Time Pocket | Combat + Lore | Time distortion (cooldowns +50% for 4s) | 1x Druidic Seer, 2x Thornbound Strangler | "The root remembers pressure better than praise. It forgets nothing else." |
 | Cauldron Shrine | Shrine | None | None | Full HP heal + 30% REC buff for 60s |
 | Boss: The Crow-Crowned Geas Breaker | Boss | Thorn zones, geas zones, crow swarms | Boss: Crow-Crowned Geas Breaker (17000 HP) | "I was bound by a promise I never made. I broke it by becoming the one who made it." |
@@ -192,9 +192,9 @@ Each map consists of:
 
 ### Campaign Map Layout
 ```
-[Entry Gate] → [Room 1: Discord Antechamber] → [Branch A / Branch B]
-  Branch A → [Room 2: Choir Hall] → [Room 3: Glass Stair] → [Elite: Discord Warden] → [Room 5: Harmony Shrine] → [Boss: The Discord Warden (Phase 2)]
-  Branch B → [Room 2: Light Bridge Crossing] → [Room 3: Vault Archive] → [Treasure Room] → [Room 4: Bell Tower] → [Boss]
+[Entry Gate] → [Room 1: Discord Antechamber] → [Lughch A / Lughch B]
+  Lughch A → [Room 2: Choir Hall] → [Room 3: Glass Stair] → [Elite: Discord Warden] → [Room 5: Harmony Shrine] → [Boss: The Discord Warden (Phase 2)]
+  Lughch B → [Room 2: Light Bridge Crossing] → [Room 3: Vault Archive] → [Treasure Room] → [Room 4: Bell Tower] → [Boss]
 ```
 
 ### Tactical Room Definitions
@@ -226,9 +226,9 @@ Each map consists of:
 
 ### Campaign Map Layout
 ```
-[Entry Gate] → [Room 1: Ash Market Approach] → [Branch A / Branch B]
-  Branch A → [Room 2: Contract Court] → [Room 3: Chain Bridge] → [Elite: Chain Magistrate] → [Room 5: Ember Shrine] → [Boss: The Chain Magistrate (Phase 2)]
-  Branch B → [Room 2: Volcanic Passage] → [Room 3: Debt Archive] → [Treasure Room] → [Room 4: Execution Floor] → [Boss]
+[Entry Gate] → [Room 1: Ash Market Approach] → [Lughch A / Lughch B]
+  Lughch A → [Room 2: Contract Court] → [Room 3: Chain Bridge] → [Elite: Chain Magistrate] → [Room 5: Ember Shrine] → [Boss: The Chain Magistrate (Phase 2)]
+  Lughch B → [Room 2: Volcanic Passage] → [Room 3: Debt Archive] → [Treasure Room] → [Room 4: Execution Floor] → [Boss]
 ```
 
 ### Tactical Room Definitions

@@ -72,7 +72,7 @@ function fullFlowPreview(data, state) {
 
 function shell(title, body, data, state) {
   const dev = state.devMode;
-  return `<section class="game-shell ${dev ? 'dev-on' : ''}"><div class="preview-banner"><div><b>MYTHOS GATES — DEVELOPMENT PREVIEW</b><span>Build ${esc(data.project.version)} · Branch development · ${esc(data.project.lastUpdate)}</span></div><a href="../game/index.html" target="_blank" rel="noreferrer">Open Live Game</a></div><header class="game-hero"><p>Visual Game Preview</p><h1>${esc(title)}</h1><span>${dev ? 'DEV VIEW' : 'PLAYER VIEW'}</span></header>${body}${dev ? `<aside class="dev-overlay"><b>Dev Overlay</b><span>screen: ${esc(state.screen)}</span><span>entity: ${esc(state.entityId || 'auto')}</span><span>source: /data/*.json</span><span>component: shared-preview.js</span></aside>` : ''}</section>`;
+  return `<section class="game-shell ${dev ? 'dev-on' : ''}"><div class="preview-banner"><div><b>MYTHOS GATES — DEVELOPMENT PREVIEW</b><span>Build ${esc(data.project.version)} · Lughch development · ${esc(data.project.lastUpdate)}</span></div><a href="../game/index.html" target="_blank" rel="noreferrer">Open Live Game</a></div><header class="game-hero"><p>Visual Game Preview</p><h1>${esc(title)}</h1><span>${dev ? 'DEV VIEW' : 'PLAYER VIEW'}</span></header>${body}${dev ? `<aside class="dev-overlay"><b>Dev Overlay</b><span>screen: ${esc(state.screen)}</span><span>entity: ${esc(state.entityId || 'auto')}</span><span>source: /data/*.json</span><span>component: shared-preview.js</span></aside>` : ''}</section>`;
 }
 
 export function renderGameScreen(data, state = {}) {

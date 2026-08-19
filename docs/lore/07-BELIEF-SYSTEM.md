@@ -128,7 +128,7 @@ Every deity's faith path maps to one of these 9 mechanical triggers. The player 
 
 ### Asgardian — The Aesir Holds
 
-#### Odin — "Allfather's Sacrifice"
+#### Odin — "Odin's Sacrifice"
 **Trigger:** Conduit — Win after executing 3+ ability combo chains
 **Mechanic:** Odin sacrificed his eye for wisdom — each combo chain represents a sacrifice that unlocks greater power. The Avatar earns bonus Belief by chaining abilities as Odin chained his runes, each one building on the last.
 **Mythology:** Odin hung from Yggdrasil for nine nights, sacrificing himself to himself, to learn the runes. His power comes from sacrifice that compounds — each rune builds on the last. The combo chain is the rune-sequence, sacrifice upon sacrifice, power upon power.

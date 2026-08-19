@@ -10,8 +10,8 @@ The current canon is built around:
 - 7 playable mythological Realms
 - 4 deities per playable Realm
 - one-active-Avatar combat deployments (Avatar is projection of chosen Deity)
-- No playable non-Titan entries in the current format
-- No non-Titan battle patterns in the current format
+- No playable non-Deity entries in the current format
+- No non-Deity battle patterns in the current format
 - No sci-fi
 - No futuristic technology
 - No futuristic craft
@@ -36,10 +36,10 @@ Players control one god or goddess at a time from the Deity Roster or Divine Col
 
 There are:
 
-- 0 playable non-Titan entries per faction
-- 0 non-Titan battle patterns per faction
+- 0 playable non-Deity entries per faction
+- 0 non-Deity battle patterns per faction
 - 9 collectible Titans per faction
-- 5 active deity slots in a chosen Titan
+- 5 active Deity slots in a chosen Deity
 
 The design goal is encounter-specific single-Avatar mastery: the player projects an Avatar of their chosen Deity and battles multiple enemies through Divine Abilities, Divine Stats, Divine Gear, Divine Level, and Divine Ascension. The Deity remains safe in its home Realm.
 

@@ -291,5 +291,154 @@
       "cooldown": "Timer before new Avatar projection"
     },
     "scale_rule": "Option A \u2014 Avatars remain god-scale in all Realms. Power differences shown through aura intensity, ability charges, and cooldowns, not physical size."
-  }
+  },
+  "belief": {
+    "description": "Spiritual fuel that strengthens the Avatar's connection to its Deity",
+    "architecture": "Hybrid \u2014 Faction Base + Deity Faith",
+    "solo_only": true,
+    "earning_rates": {
+      "base": 100,
+      "faction_passive": "+10%",
+      "deity_faith": "+20% (lore-specific trigger)",
+      "fallback": "+5% (any victory)",
+      "optimal_per_win": 130,
+      "standard_per_win": 115
+    },
+    "level_milestones": {
+      "1-10": {
+        "cost": 500,
+        "stat_bonus": "+10%"
+      },
+      "11-20": {
+        "cost": 1000,
+        "stat_bonus": "+25%"
+      },
+      "21-30": {
+        "cost": 1500,
+        "stat_bonus": "+50%"
+      },
+      "31-40": {
+        "cost": 2500,
+        "stat_bonus": "+75%"
+      },
+      "41-50": {
+        "cost": 4000,
+        "stat_bonus": "+100%"
+      },
+      "ascension_1-10": {
+        "cost": 10000,
+        "stat_bonus": "+5% per tier"
+      }
+    },
+    "spending": {
+      "HP": {
+        "cost": 100,
+        "max": 2000
+      },
+      "DE": {
+        "cost": 100,
+        "max": 100
+      },
+      "ATK": {
+        "cost": 100,
+        "max": 200
+      },
+      "DEF": {
+        "cost": 100,
+        "max": 100
+      },
+      "SPD": {
+        "cost": 200,
+        "max": 3
+      }
+    },
+    "reference_doc": "docs/lore/07-BELIEF-SYSTEM.md",
+    "faction_config_doc": "docs/lore/08-FACTION-BELIEF-CONFIG.md"
+  },
+  "influence": {
+    "description": "Companion resource for ability upgrades and ascension",
+    "sources": {
+      "mission_completion": 50,
+      "boss_defeat": 100,
+      "daily_challenge": 75,
+      "realm_control": 50,
+      "rival_avatar_pvp": 150,
+      "enemy_realm_invasion": "+50%"
+    },
+    "spending": {
+      "ability_1_upgrade": 500,
+      "ability_2_upgrade": 750,
+      "ability_3_upgrade": 1000,
+      "ultimate_upgrade": 2500,
+      "ascension_tier_1": 5000,
+      "ascension_tier_2_to_10": "+5000 each",
+      "relic_enhancement": 250
+    }
+  },
+  "faction_belief_config": {
+    "reference_doc": "docs/lore/08-FACTION-BELIEF-CONFIG.md",
+    "reference_json": "data/faction-belief-config.json",
+    "layers": [
+      "passive",
+      "bonus_trigger",
+      "tiered_buffs",
+      "pantheon_resonance"
+    ],
+    "max_belief_per_win": 145
+  },
+  "belief_system": {
+    "doc_ref": "docs/lore/07-BELIEF-SYSTEM.md",
+    "data_ref": "data/belief-system.json",
+    "base_per_win": 100,
+    "faction_passive": "+10%",
+    "deity_faith_bonus": "+20% (lore-specific trigger)",
+    "fallback_bonus": "+5% (any victory)",
+    "optimal_per_win": 130,
+    "standard_per_win": 115,
+    "solo_only": true,
+    "level_milestones": {
+      "1-10": {
+        "cost_each": 500,
+        "stat_bonus": "+10%"
+      },
+      "11-20": {
+        "cost_each": 1000,
+        "stat_bonus": "+25%"
+      },
+      "21-30": {
+        "cost_each": 1500,
+        "stat_bonus": "+50%"
+      },
+      "31-40": {
+        "cost_each": 2500,
+        "stat_bonus": "+75%"
+      },
+      "41-50": {
+        "cost_each": 4000,
+        "stat_bonus": "+100%"
+      },
+      "ascension_1-10": {
+        "cost_each": 10000,
+        "stat_bonus": "+5% per tier"
+      }
+    }
+  },
+  "influence_system": {
+    "mission_completion": 50,
+    "boss_defeat": 100,
+    "daily_challenge": 75,
+    "realm_control": 50,
+    "rival_avatar_pvp": 150,
+    "enemy_realm_invasion": "+50%",
+    "spending": {
+      "ability_1_upgrade": 500,
+      "ability_2_upgrade": 750,
+      "ability_3_upgrade": 1000,
+      "ultimate_upgrade": 2500,
+      "ascension_tier_1": 5000,
+      "ascension_tier_2_to_10": "+5000 each",
+      "relic_enhancement": 250
+    }
+  },
+  "faction_belief_config_ref": "data/faction-belief-config.json"
 }

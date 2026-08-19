@@ -1,9 +1,9 @@
 {
   "id": "MG-CANON-VERSION-MANIFEST-001",
-  "schema": "TG_CANON_VERSION_MANIFEST_V1",
+  "schema": "MG_CANON_VERSION_MANIFEST_V1",
   "status": "ACTIVE",
-  "currentCanonVersion": "1.16.0-ascension-route-codex-sync",
-  "updated": "2026-08-17T12:00:00Z",
+  "currentCanonVersion": "1.17.0-belief-system-faith-triggers",
+  "updated": "2026-08-19T14:00:00Z",
   "policyRef": "docs/production/DATA_MIGRATION_VERSIONING.md",
   "sourceOfTruth": "Git commit history plus this manifest. Runtime adapters consume migrated canonical data; they do not invent canon.",
   "rules": {
@@ -319,5 +319,30 @@
     "earth_neutral": true,
     "death_mechanic": "respawn_at_deity_domain",
     "scale_rule": "Option A \u2014 god-scale everywhere"
-  }
+  },
+  "features": {
+    "belief_system": {
+      "version": "1.1",
+      "architecture": "Hybrid \u2014 Faction Base + Deity Faith",
+      "deity_faiths": 28,
+      "solo_triggers": 9,
+      "faction_beliefs": 7,
+      "pantheon_resonance": true
+    }
+  },
+  "changelog": [
+    {
+      "version": "1.17.0-belief-system-faith-triggers",
+      "date": "2026-08-19",
+      "changes": [
+        "Added Belief System with hybrid faction base + deity faith triggers",
+        "Replaced generic RPG roles with mythology-specific faith names for all 28 deities",
+        "All faith triggers are solo-only (no ally dependencies)",
+        "Added Faction Belief Configuration with tiered buffs and pantheon resonance",
+        "Updated deities.json with actual mythology names replacing placeholder names",
+        "Updated combat-system.json with 9 solo trigger mechanics",
+        "Added belief and influence systems to ascension-system.json"
+      ]
+    }
+  ]
 }

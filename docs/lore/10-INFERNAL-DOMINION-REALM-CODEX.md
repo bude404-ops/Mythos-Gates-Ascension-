@@ -28,26 +28,26 @@ The Black Iron Court of Dominion is defined by infernal contracts, black iron co
 - decide whether Dominion ambition is a weapon or the next Collapse.
 
 ## Deity Codex Hooks
-### Mordrath (MG-TITAN-055)
+### Lucifer (MG-TITAN-055)
 - **Role:** Defender
-- **Lore Function:** Mordrath embodies the Infernal Dominion answer to the Ascension Collapse: defender shaped into Realm doctrine.
-- **Chapter Hook:** When Mordrath enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
-- **Visual Context:** Frame Mordrath against black iron, ember red, volcanic courts, chain halos, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Varkul Bloodforged Crown (MG-TITAN-056)
+- **Lore Function:** Lucifer embodies the Infernal Dominion answer to the Ascension Collapse: defender shaped into Realm doctrine.
+- **Chapter Hook:** When Lucifer enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
+- **Visual Context:** Frame Lucifer against black iron, ember red, volcanic courts, chain halos, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
+### Asmodeus Bloodforged Crown (MG-TITAN-056)
 - **Role:** Battery
-- **Lore Function:** Varkul Bloodforged Crown embodies the Infernal Dominion answer to the Ascension Collapse: battery shaped into Realm doctrine.
-- **Chapter Hook:** When Varkul Bloodforged Crown enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
-- **Visual Context:** Frame Varkul Bloodforged Crown against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Nyxara Flameborn Court (MG-TITAN-057)
+- **Lore Function:** Asmodeus Bloodforged Crown embodies the Infernal Dominion answer to the Ascension Collapse: battery shaped into Realm doctrine.
+- **Chapter Hook:** When Asmodeus Bloodforged Crown enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
+- **Visual Context:** Frame Asmodeus Bloodforged Crown against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
+### Lilith Flameborn Court (MG-TITAN-057)
 - **Role:** Controller
-- **Lore Function:** Nyxara Flameborn Court embodies the Infernal Dominion answer to the Ascension Collapse: controller shaped into Realm doctrine.
-- **Chapter Hook:** When Nyxara Flameborn Court enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
-- **Visual Context:** Frame Nyxara Flameborn Court against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Azrakar Chainwarden (MG-TITAN-058)
+- **Lore Function:** Lilith Flameborn Court embodies the Infernal Dominion answer to the Ascension Collapse: controller shaped into Realm doctrine.
+- **Chapter Hook:** When Lilith Flameborn Court enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
+- **Visual Context:** Frame Lilith Flameborn Court against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
+### Naamah Chainwarden (MG-TITAN-058)
 - **Role:** Breaker
-- **Lore Function:** Azrakar Chainwarden embodies the Infernal Dominion answer to the Ascension Collapse: breaker shaped into Realm doctrine.
-- **Chapter Hook:** When Azrakar Chainwarden enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
-- **Visual Context:** Frame Azrakar Chainwarden against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
+- **Lore Function:** Naamah Chainwarden embodies the Infernal Dominion answer to the Ascension Collapse: breaker shaped into Realm doctrine.
+- **Chapter Hook:** When Naamah Chainwarden enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
+- **Visual Context:** Frame Naamah Chainwarden against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
 ### Orryx Ash Dominion (MG-TITAN-055)
 - **Role:** Disruptor
 - **Lore Function:** Orryx Ash Dominion embodies the Infernal Dominion answer to the Ascension Collapse: disruptor shaped into Realm doctrine.

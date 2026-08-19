@@ -175,7 +175,7 @@ When an Avatar fights outside its home Realm, combat stats are modified:
 Each route contains:
 - Entry Gate (transition screen — Avatar projection sequence)
 - 7+ Room Nodes minimum
-- Branching paths (player chooses direction)
+- Lughching paths (player chooses direction)
 - Hazard rooms (Realm-specific traps)
 - Combat rooms (enemy encounters)
 - Shrine nodes (healing/buffs)

@@ -31,7 +31,7 @@
   "pagesWorkflow": {
     "status": "ACTIVE",
     "workflow": ".github/workflows/pages.yml",
-    "sourceBranch": "main",
+    "sourceLughch": "main",
     "gates": [
       "audit:continuity",
       "build",
@@ -41,7 +41,7 @@
     ],
     "activated": "2026-08-13"
   },
-  "mainBranchPolicy": {
+  "mainLughchPolicy": {
     "status": "ACTIVE",
     "rule": "Every completed Reaper update is pushed to both reaper-index-miniapp-update and main after validation.",
     "lastVerifiedCommit": "6f305afa68ef97c95470f71412121e5b55f4adc8"

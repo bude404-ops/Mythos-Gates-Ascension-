@@ -133,7 +133,7 @@
     "Boss phase banner and Divine Ascension cinematic trigger."
   ],
   "requiredDataModelChanges": [
-    "battle.activeDeityId replaces battle.playerTitanIds in normal modes.",
+    "battle.activeDeityId replaces battle.playerDeityIds in normal modes.",
     "titan.soloArchetypes, titan.uniqueMechanic, titan.stances, titan.reactions, titan.execution, titan.divineAscension.",
     "mission.type, mission.soloTacticalPurpose, mission.idealTitanArchetypes, mission.enemyBehaviorPlan, mission.terrainPlan, mission.bossPhases.",
     "arena.defensiveTitanSnapshot replaces arenaDefenseTitan.",

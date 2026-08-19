@@ -52,7 +52,7 @@
 **Ability 3 — Noon Verdict:** Radiates Solar burst. 400 ATK AoE. Marks all hit enemies for +25% damage. 14s cooldown.  
 **Ultimate — Living Sun:** Transforms into solar form for 8s. All attacks become AoE Solar. +50% ATK. Immune to status effects.  
 
-### 002. Khemet — Battery
+### 002. Sutekh — Battery
 **Mythology:** Khepri — scarab dawn engine, renewal and rebirth  
 | Stat | Value |
 |------|-------|
@@ -74,7 +74,7 @@
 **Ability 3 — Dawn Burst:** Detonate stored solar energy. 350 ATK AoE. Scales with current DE. 12s cooldown.  
 **Ultimate — Rebirth:** Full HP heal + DE refill. Next 3 abilities have 0 cooldown for 6s.  
 
-### 003. Nefra — Controller
+### 003. Iset — Controller
 **Mythology:** Nephthys/Duat — necropolis dawn, horizon threshold judge  
 | Stat | Value |
 |------|-------|
@@ -94,9 +94,9 @@
 **Ability 1 — Duat Gate:** Place a necropolis zone. Enemies inside take 80 ATK/s Spirit damage. Lasts 6s. 5s cooldown.  
 **Ability 2 — Horizon Pull:** Pull all enemies toward a target point. 120 ATK. 7s cooldown.  
 **Ability 3 — Necropolis Verdict:** All enemies in zone take 300 ATK Spirit damage. If killed, zone expands. 11s cooldown.  
-**Ultimate — Between Worlds:** Freezes time for 3s. Only Nefra can act. All enemies Stunned.  
+**Ultimate — Between Worlds:** Freezes time for 3s. Only Iset can act. All enemies Stunned.  
 
-### 004. Orru — Breaker
+### 004. Amunet — Breaker
 **Mythology:** Ma'at weighing/punishment — prism of divine verdict  
 | Stat | Value |
 |------|-------|
@@ -125,8 +125,8 @@
 **Faction Skin:** Warm Gunmetal  
 **Faction Aura:** Blue-White Lightning  
 
-### 005. Allfather — Defender
-**Mythology:** Odin — Allfather, wisdom, war, sacrifice  
+### 005. Odin — Defender
+**Mythology:** Odin — Odin, wisdom, war, sacrifice  
 | Stat | Value |
 |------|-------|
 | HP | 18000 |
@@ -141,13 +141,13 @@
 | DMG TYPE | Storm |
 | ROLE | Defender |
 
-**Passive — Raven Wisdom:** Allfather sees enemy telegraphs 0.3s earlier. 10% chance to dodge any attack.  
+**Passive — Raven Wisdom:** Odin sees enemy telegraphs 0.3s earlier. 10% chance to dodge any attack.  
 **Ability 1 — Storm Spear:** Throw a lightning spear. 200 ATK Storm. Chains to 2 nearby enemies. 3s cooldown.  
 **Ability 2 — Oath Shield:** Raise shield. Block all frontal damage for 3s. Reflected as 150 ATK Storm. 8s cooldown.  
 **Ability 3 — Sacrifice Eye:** Lose 15% max HP. Gain +80% ATK for 5s. Cannot die during this window. 14s cooldown.  
-**Ultimate — Throne of Storms:** Summon a storm throne. All enemies within 8m take 60 ATK/s Storm damage. Allfather is immune to CC. Lasts 8s.  
+**Ultimate — Throne of Storms:** Summon a storm throne. All enemies within 8m take 60 ATK/s Storm damage. Odin is immune to CC. Lasts 8s.  
 
-### 006. Hrothar — Battery
+### 006. Thor — Battery
 **Mythology:** Thor — thunder, strength, protection  
 | Stat | Value |
 |------|-------|
@@ -167,9 +167,9 @@
 **Ability 1 — Hammer Throw:** Throw Mjolnir. 220 ATK Storm. Returns to hand. 3s cooldown.  
 **Ability 2 — Thunder Clap:** AoE Storm burst. 160 ATK + Stun 1.5s. Generates 50 DE. 5s cooldown.  
 **Ability 3 — Lightning Lance:** Long-range Storm beam. 380 ATK. Pierces all enemies in line. 12s cooldown.  
-**Ultimate — God of Thunder:** Hrothar channels lightning for 6s. All attacks become AoE Storm +30% ATK. Storm chain lightning on every hit.  
+**Ultimate — God of Thunder:** Thor channels lightning for 6s. All attacks become AoE Storm +30% ATK. Storm chain lightning on every hit.  
 
-### 007. Skeld — Controller
+### 007. Frigg — Controller
 **Mythology:** Heimdall — guardian, vigilance, the bridge  
 | Stat | Value |
 |------|-------|
@@ -185,13 +185,13 @@
 | DMG TYPE | Storm |
 | ROLE | Controller |
 
-**Passive — Bridge Watch:** Enemies that enter Skeld's range are Marked (+25% damage taken) for 4s.  
+**Passive — Bridge Watch:** Enemies that enter Frigg's range are Marked (+25% damage taken) for 4s.  
 **Ability 1 — Gjallar Horn:** Sound wave. 150 ATK. Pushes enemies back and Silences for 2s. 5s cooldown.  
-**Ability 2 — Rainbow Bridge:** Create a storm-bridge path. Skeld moves 50% faster on it. Enemies on it take 60 ATK/s. 7s cooldown.  
+**Ability 2 — Rainbow Bridge:** Create a storm-bridge path. Frigg moves 50% faster on it. Enemies on it take 60 ATK/s. 7s cooldown.  
 **Ability 3 — Vigilant Strike:** 320 ATK to Marked target. If target is Marked, consumes mark for +100% damage. 10s cooldown.  
 **Ultimate — Bifrost Shatter:** Shatters the ground in a massive line. 500 ATK Storm. All enemies in path are Stunned 3s.  
 
-### 008. Eirwyn — Breaker
+### 008. Freyja — Breaker
 **Mythology:** Freyja — Vanir goddess, seiðr magic, war/love  
 | Stat | Value |
 |------|-------|
@@ -209,9 +209,9 @@
 
 **Passive — Seiðr Fury:** Every 3rd consecutive hit on the same enemy applies Armor Break (-25% DEF, stacks 2x).  
 **Ability 1 — Seiðr Lash:** Forward whip-storm. 250 ATK. Applies Armor Break. 3s cooldown.  
-**Ability 2 — War Frenzy:** Eirwyn gains +40% ATK and +30% SPD for 5s. 8s cooldown.  
+**Ability 2 — War Frenzy:** Freyja gains +40% ATK and +30% SPD for 5s. 8s cooldown.  
 **Ability 3 — Falcon Dive:** Dash through enemies. 400 ATK to all passed through. Leaves a storm trail (60 ATK/s). 12s cooldown.  
-**Ultimate — Valhalla's Call:** Summons 3 Valkyrie spirits. Each deals 200 ATK Storm per hit. Lasts 8s. Eirwyn gains lifesteal.  
+**Ultimate — Valhalla's Call:** Summons 3 Valkyrie spirits. Each deals 200 ATK Storm per hit. Lasts 8s. Freyja gains lifesteal.  
 
 ---
 
@@ -220,7 +220,7 @@
 **Faction Skin:** Living Marble  
 **Faction Aura:** Gold-Blue Skyfire  
 
-### 009. Aurelion — Defender
+### 009. Zeus — Defender
 **Mythology:** Zeus — sky father, lightning, sovereignty  
 | Stat | Value |
 |------|-------|
@@ -236,13 +236,13 @@
 | DMG TYPE | Divine |
 | ROLE | Defender |
 
-**Passive — Sky Sovereignty:** Aurelion takes 20% less damage from enemies above 50% HP. Immune to knockback.  
+**Passive — Sky Sovereignty:** Zeus takes 20% less damage from enemies above 50% HP. Immune to knockback.  
 **Ability 1 — Thunderbolt:** Call down a bolt. 220 ATK Divine. 3s cooldown.  
 **Ability 2 — Aegis Shield:** Block all damage for 2s. Next attack deals +50% damage. 8s cooldown.  
-**Ability 3 — Sky Throne:** Create a zone. Aurelion is immune to CC inside. Enemies take 100 ATK/s Divine. 14s cooldown.  
-**Ultimate — Olympus Decree:** 700 ATK Divine AoE. All enemies are Stunned 2.5s. Aurelion is fully healed.  
+**Ability 3 — Sky Throne:** Create a zone. Zeus is immune to CC inside. Enemies take 100 ATK/s Divine. 14s cooldown.  
+**Ultimate — Olympus Decree:** 700 ATK Divine AoE. All enemies are Stunned 2.5s. Zeus is fully healed.  
 
-### 010. Kallix — Battery
+### 010. Athena — Battery
 **Mythology:** Apollo — light, prophecy, archery, music  
 | Stat | Value |
 |------|-------|
@@ -262,9 +262,9 @@
 **Ability 1 — Sun Arrow:** Long-range Divine arrow. 200 ATK. Pierces. 2s cooldown.  
 **Ability 2 — Prophetic Vision:** Mark all enemies in a large area. Marked enemies take +25% damage for 5s. 6s cooldown.  
 **Ability 3 — Chorus Strike:** 3 rapid arrows. 150 ATK each. Each applies Burn (30 ATK/s for 3s). 10s cooldown.  
-**Ultimate — Delphic Hymn:** AoE Divine wave. 500 ATK. All enemies are Marked + Burned. Kallix refills DE.  
+**Ultimate — Delphic Hymn:** AoE Divine wave. 500 ATK. All enemies are Marked + Burned. Athena refills DE.  
 
-### 011. Thyressa — Controller
+### 011. Artemis — Controller
 **Mythology:** Athena — wisdom, strategy, just war  
 | Stat | Value |
 |------|-------|
@@ -280,13 +280,13 @@
 | DMG TYPE | Divine |
 | ROLE | Controller |
 
-**Passive — Strategic Mind:** Thyressa gains +10% damage for each enemy within 8m (max 40%).  
+**Passive — Strategic Mind:** Artemis gains +10% damage for each enemy within 8m (max 40%).  
 **Ability 1 — Phalanx Wall:** Create a Divine barrier. Blocks enemy movement and projectiles. 5s cooldown.  
 **Ability 2 — Aegis Reflect:** Deflect next attack back at enemy for 200 ATK. 7s cooldown.  
 **Ability 3 — Spear of Wisdom:** 350 ATK line-pierce. Stuns first enemy hit for 2s. 11s cooldown.  
-**Ultimate — Strategos:** For 6s, all enemy telegraphs are visible. Thyressa gains +50% ATK and all abilities cost 50% DE.  
+**Ultimate — Strategos:** For 6s, all enemy telegraphs are visible. Artemis gains +50% ATK and all abilities cost 50% DE.  
 
-### 012. Ilyon — Breaker
+### 012. Ares — Breaker
 **Mythology:** Ares — war, violence, courage  
 | Stat | Value |
 |------|-------|
@@ -315,7 +315,7 @@
 **Faction Skin:** Living Lacquer  
 **Faction Aura:** Foxfire Blue  
 
-### 013. Amaterion — Defender
+### 013. Amaterasu — Defender
 **Mythology:** Amaterasu — sun goddess, the shining heaven  
 | Stat | Value |
 |------|-------|
@@ -331,13 +331,13 @@
 | DMG TYPE | Spirit |
 | ROLE | Defender |
 
-**Passive — Radiant Dawn:** Amaterion heals 2% max HP/s in combat. Enemies within 4m take -10% ATK.  
+**Passive — Radiant Dawn:** Amaterasu heals 2% max HP/s in combat. Enemies within 4m take -10% ATK.  
 **Ability 1 — Mirror Strike:** 220 ATK Spirit. Reflects 30% of damage taken next 2s back at attacker. 3s cooldown.  
 **Ability 2 — Sacred Mirror:** Place a mirror. Deflects enemy projectiles. 8s cooldown.  
 **Ability 3 — Sun Disc Throw:** 380 ATK AoE Spirit. Blinds enemies (50% miss chance) for 3s. 14s cooldown.  
-**Ultimate — Heaven's Light:** Massive Spirit burst. 650 ATK. Heals Amaterion for 25% max HP. Blinds all enemies 3s.  
+**Ultimate — Heaven's Light:** Massive Spirit burst. 650 ATK. Heals Amaterasu for 25% max HP. Blinds all enemies 3s.  
 
-### 014. Tsukiro — Battery
+### 014. Tsukuyomi — Battery
 **Mythology:** Tsukuyomi — moon god, night, order  
 | Stat | Value |
 |------|-------|
@@ -357,9 +357,9 @@
 **Ability 1 — Moonbeam Slash:** 200 ATK Spirit. During Waxing, +50% damage. 2s cooldown.  
 **Ability 2 — Lunar Veil:** Become invisible for 2s. Next attack deals +100% damage. 6s cooldown.  
 **Ability 3 — Eclipse:** 350 ATK AoE. During Waning, also Silences enemies for 2s. 12s cooldown.  
-**Ultimate — Tsukuyomi's Domain:** 6s. Night falls. All enemies lose 30% accuracy. Tsukiro gains +50% ATK and full DE refill.  
+**Ultimate — Tsukuyomi's Domain:** 6s. Night falls. All enemies lose 30% accuracy. Tsukuyomi gains +50% ATK and full DE refill.  
 
-### 015. Raidenko — Controller
+### 015. Susanoo — Controller
 **Mythology:** Raijin — thunder, storms, chaos  
 | Stat | Value |
 |------|-------|
@@ -381,7 +381,7 @@
 **Ability 3 — Raijin's Fury:** 340 ATK Storm to all enemies in a large cone. 11s cooldown.  
 **Ultimate — Tempest God:** 8s. Storm fills the room. All enemies take 100 ATK/s Storm. Random chain lightning every 2s.  
 
-### 016. Mizuka — Breaker
+### 016. Izanami — Breaker
 **Mythology:** Susanoo — storm god, the impetuous  
 | Stat | Value |
 |------|-------|
@@ -401,7 +401,7 @@
 **Ability 1 — Tsurugi Slash:** 260 ATK Storm. Applies 1 Storm Charge stack. 3s cooldown.  
 **Ability 2 — Whirlwind Cut:** Spin attack. 180 ATK to all around. Knocks back. 6s cooldown.  
 **Ability 3 — Dragon Slayer:** 450 ATK Storm. If target has 3 Storm Charges, deals +100% and Stuns. 13s cooldown.  
-**Ultimate — Eight-Headed Storm:** 800 ATK Storm AoE. Clears all enemies in a massive area. Mizuka is invincible during animation.  
+**Ultimate — Eight-Headed Storm:** 800 ATK Storm AoE. Clears all enemies in a massive area. Izanami is invincible during animation.  
 
 ---
 
@@ -410,7 +410,7 @@
 **Faction Skin:** Living Wood-Bark  
 **Faction Aura:** Silver-Green Mist  
 
-### 017. Dagoran — Defender
+### 017. Dagda — Defender
 **Mythology:** The Dagda — good god, abundance, life/death  
 | Stat | Value |
 |------|-------|
@@ -426,13 +426,13 @@
 | DMG TYPE | Nature |
 | ROLE | Defender |
 
-**Passive — The Dagda's Cauldron:** Dagoran regenerates 30 HP/s. Cannot drop below 1 HP from a single hit (survives at 1 HP once per 30s).  
-**Ability 1 — Club of Life:** 200 ATK Nature. Heals Dagoran for 5% max HP. 3s cooldown.  
-**Ability 2 — Harp of Seasons:** AoE that Slows enemies 40% and heals Dagoran 8% HP over 4s. 8s cooldown.  
+**Passive — The Dagda's Cauldron:** Dagda regenerates 30 HP/s. Cannot drop below 1 HP from a single hit (survives at 1 HP once per 30s).  
+**Ability 1 — Club of Life:** 200 ATK Nature. Heals Dagda for 5% max HP. 3s cooldown.  
+**Ability 2 — Harp of Seasons:** AoE that Slows enemies 40% and heals Dagda 8% HP over 4s. 8s cooldown.  
 **Ability 3 — Earth Pillar:** 380 ATK Nature. Spawns a stone pillar that blocks movement and projectiles. 14s cooldown.  
 **Ultimate — Cauldron of Rebirth:** Full heal. Next death within 10s triggers instant respawn at 50% HP.  
 
-### 018. Eryndor — Battery
+### 018. Brigid — Battery
 **Mythology:** Lugh — many-skilled, light, champion  
 | Stat | Value |
 |------|-------|
@@ -454,7 +454,7 @@
 **Ability 3 — Solas Burst:** 350 ATK Nature AoE. Generates 80 DE if it hits 3+ enemies. 11s cooldown.  
 **Ultimate — Lugh Samildánach:** 8s. All abilities cost 0 DE. Every ability cast grants +15% ATK (stacking).  
 
-### 019. Melian — Controller
+### 019. Morrígan — Controller
 **Mythology:** Brigid — flame, poetry, healing, forge  
 | Stat | Value |
 |------|-------|
@@ -470,13 +470,13 @@
 | DMG TYPE | Nature |
 | ROLE | Controller |
 
-**Passive — Sacred Flame:** Melian's attacks apply Burn (40 ATK/s for 3s, stacks 2x).  
+**Passive — Sacred Flame:** Morrígan's attacks apply Burn (40 ATK/s for 3s, stacks 2x).  
 **Ability 1 — Flame Lash:** 180 ATK Nature + Burn. Chains to 2 nearby enemies. 4s cooldown.  
 **Ability 2 — Forge Wall:** Create a fire wall. Enemies passing through take 100 ATK/s Burn. Blocks movement. 7s cooldown.  
 **Ability 3 — Poetic Fire:** 320 ATK AoE. All enemies with Burn take +50% damage from this ability. 11s cooldown.  
-**Ultimate — Brigid's Hearth:** 10s. Creates a sacred zone. Melian and allies heal 5% HP/s. Enemies take 150 ATK/s.  
+**Ultimate — Brigid's Hearth:** 10s. Creates a sacred zone. Morrígan and allies heal 5% HP/s. Enemies take 150 ATK/s.  
 
-### 020. Bran — Breaker
+### 020. Lugh — Breaker
 **Mythology:** Morrigan — phantom queen, war, fate, death  
 | Stat | Value |
 |------|-------|
@@ -492,11 +492,11 @@
 | DMG TYPE | Nature |
 | ROLE | Breaker |
 
-**Passive — Battle Crow:** Enemies below 25% HP are revealed. Bran deals +50% damage to enemies below 25% HP.  
+**Passive — Battle Crow:** Enemies below 25% HP are revealed. Lugh deals +50% damage to enemies below 25% HP.  
 **Ability 1 — Crow Slash:** 260 ATK Nature. Applies Marked (+25% damage taken) for 4s. 3s cooldown.  
 **Ability 2 — Phantom Shift:** Teleport behind target enemy. 120 ATK. 6s cooldown.  
-**Ability 3 — Death Omen:** 450 ATK. If target dies within 3s, Bran gains +50% ATK for 5s. 13s cooldown.  
-**Ultimate — The Morrigan's Cry:** 700 ATK Nature AoE. All enemies Feared for 2s. Bran gains lifesteal 25% for 6s.  
+**Ability 3 — Death Omen:** 450 ATK. If target dies within 3s, Lugh gains +50% ATK for 5s. 13s cooldown.  
+**Ultimate — The Morrigan's Cry:** 700 ATK Nature AoE. All enemies Feared for 2s. Lugh gains lifesteal 25% for 6s.  
 
 ---
 
@@ -505,7 +505,7 @@
 **Faction Skin:** Living Light  
 **Faction Aura:** White-Gold Radiance  
 
-### 021. Seraphel — Defender
+### 021. Michael — Defender
 **Mythology:** Michael — warrior archangel, divine protector  
 | Stat | Value |
 |------|-------|
@@ -521,13 +521,13 @@
 | DMG TYPE | Divine |
 | ROLE | Defender |
 
-**Passive — Containment:** Seraphel's armor contains his radiance. When below 30% HP, releases a radiant burst (300 ATK AoE) and heals 10% HP. 30s cooldown.  
+**Passive — Containment:** Michael's armor contains his radiance. When below 30% HP, releases a radiant burst (300 ATK AoE) and heals 10% HP. 30s cooldown.  
 **Ability 1 — Radiant Blade:** 220 ATK Divine. Pierces. 3s cooldown.  
 **Ability 2 — Shield of Light:** Absorb 3 hits. Reflect as 150 ATK Divine. 8s cooldown.  
 **Ability 3 — Judgement Cut:** 380 ATK Divine. Stuns target for 1.5s. 14s cooldown.  
-**Ultimate — Seraphic Wrath:** 650 ATK Divine AoE. All enemies Stunned 2s. Seraphel gains invulnerability for 3s.  
+**Ultimate — Seraphic Wrath:** 650 ATK Divine AoE. All enemies Stunned 2s. Michael gains invulnerability for 3s.  
 
-### 022. Caelion — Battery
+### 022. Gabriel — Battery
 **Mythology:** Gabriel — messenger, annunciation, divine voice  
 | Stat | Value |
 |------|-------|
@@ -547,9 +547,9 @@
 **Ability 1 — Herald Strike:** 200 ATK Divine. Marks target for +25% damage. 2s cooldown.  
 **Ability 2 — Trumpet of Heaven:** AoE Divine. 160 ATK. Silences all enemies for 2s. 5s cooldown.  
 **Ability 3 — Annunciation:** 350 ATK Divine to Marked targets. Refunds 50 DE if it hits Marked enemy. 10s cooldown.  
-**Ultimate — Gabriel's Proclamation:** 550 ATK Divine AoE. All enemies Marked + Silenced 3s. Caelion refills DE.  
+**Ultimate — Gabriel's Proclamation:** 550 ATK Divine AoE. All enemies Marked + Silenced 3s. Gabriel refills DE.  
 
-### 023. Aurelia — Controller
+### 023. Raphael — Controller
 **Mythology:** Raphael — healer, guide, divine medicine  
 | Stat | Value |
 |------|-------|
@@ -565,13 +565,13 @@
 | DMG TYPE | Divine |
 | ROLE | Controller |
 
-**Passive — Healing Light:** Aurelia heals 3% max HP every 5s. Abilities that hit enemies also heal Aurelia for 5% max HP.  
+**Passive — Healing Light:** Raphael heals 3% max HP every 5s. Abilities that hit enemies also heal Raphael for 5% max HP.  
 **Ability 1 — Light Bind:** 180 ATK Divine. Roots enemy in place for 2s. 4s cooldown.  
 **Ability 2 — Purifying Wave:** Cleanse all negative effects. Heal 10% HP. Push enemies back. 7s cooldown.  
 **Ability 3 — Guiding Light:** 320 ATK Divine line. All enemies hit are Blinded for 3s. 11s cooldown.  
-**Ultimate — Raphael's Sanctuary:** 8s zone. Aurelia is immune to damage. Heals 5% HP/s. Enemies inside take 100 ATK/s Divine.  
+**Ultimate — Raphael's Sanctuary:** 8s zone. Raphael is immune to damage. Heals 5% HP/s. Enemies inside take 100 ATK/s Divine.  
 
-### 024. Malachor — Breaker
+### 024. Uriel — Breaker
 **Mythology:** Uriel — fire of God, punishment, repentance  
 | Stat | Value |
 |------|-------|
@@ -591,7 +591,7 @@
 **Ability 1 — Flame Sword:** 260 ATK Divine + Burn. 3s cooldown.  
 **Ability 2 — Repentance:** Enemies take 200 ATK Divine. If they have Burn, Stuns for 2s and consumes Burn. 7s cooldown.  
 **Ability 3 — Divine Fire:** 450 ATK Divine AoE. Applies Burn to all hit. 13s cooldown.  
-**Ultimate — Uriel's Conflagration:** 800 ATK Divine in a massive cone. All enemies Burned for 5s. Malachor gains +40% ATK for 6s.  
+**Ultimate — Uriel's Conflagration:** 800 ATK Divine in a massive cone. All enemies Burned for 5s. Uriel gains +40% ATK for 6s.  
 
 ---
 
@@ -600,7 +600,7 @@
 **Faction Skin:** Living Ash  
 **Faction Aura:** Ember-Red Anti-Radiance  
 
-### 025. Mordrath — Defender
+### 025. Lucifer — Defender
 **Mythology:** Lucifer — morning star, fallen light, pride  
 | Stat | Value |
 |------|-------|
@@ -616,13 +616,13 @@
 | DMG TYPE | Infernal |
 | ROLE | Defender |
 
-**Passive — Morning Star:** Mordrath absorbs light around him. Enemies within 5m deal -15% damage (darkness debuff).  
+**Passive — Morning Star:** Lucifer absorbs light around him. Enemies within 5m deal -15% damage (darkness debuff).  
 **Ability 1 — Shadow Blade:** 220 ATK Infernal. Reduces enemy healing by 50% for 4s. 3s cooldown.  
 **Ability 2 — Dark Aegis:** Block all damage for 2s. Counter with 200 ATK Infernal. 8s cooldown.  
 **Ability 3 — Fallen Crown:** 380 ATK Infernal AoE. All enemies are Feared for 1.5s. 14s cooldown.  
-**Ultimate — Light Devourer:** 700 ATK Infernal. Absorbs all enemy buffs. Mordrath heals for each buff absorbed. 8s aura of darkness.  
+**Ultimate — Light Devourer:** 700 ATK Infernal. Absorbs all enemy buffs. Lucifer heals for each buff absorbed. 8s aura of darkness.  
 
-### 026. Varkul — Battery
+### 026. Asmodeus — Battery
 **Mythology:** Asmodeus — king of demons, desire, destruction  
 | Stat | Value |
 |------|-------|
@@ -640,11 +640,11 @@
 
 **Passive — Hellfire Engine:** Every ability generates 1 Hellfire charge. 3 charges = next ability deals +75% damage and costs 0 DE.  
 **Ability 1 — Spike Fist:** 220 ATK Infernal. Knockback. 2s cooldown.  
-**Ability 2 — Infernal Chains:** Pull 3 enemies to Mordrath. 120 ATK. Generates 60 DE. 5s cooldown.  
+**Ability 2 — Infernal Chains:** Pull 3 enemies to Lucifer. 120 ATK. Generates 60 DE. 5s cooldown.  
 **Ability 3 — Hellfire Nova:** 350 ATK Infernal AoE. Applies Burn. 12s cooldown.  
 **Ultimate — King of Demons:** 8s. All abilities cost 0 DE. Every ability cast spawns a hellfire nova (200 ATK AoE).  
 
-### 027. Nyxara — Controller
+### 027. Lilith — Controller
 **Mythology:** Lilith — night, seduction, independence  
 | Stat | Value |
 |------|-------|
@@ -660,13 +660,13 @@
 | DMG TYPE | Infernal |
 | ROLE | Controller |
 
-**Passive — Night Touched:** Enemies that hit Nyxara are Charming (walk toward her for 1.5s). 8s cooldown per enemy.  
-**Ability 1 — Shadow Veil:** 180 ATK Infernal. Nyxara becomes invisible for 2s. 4s cooldown.  
+**Passive — Night Touched:** Enemies that hit Lilith are Charming (walk toward her for 1.5s). 8s cooldown per enemy.  
+**Ability 1 — Shadow Veil:** 180 ATK Infernal. Lilith becomes invisible for 2s. 4s cooldown.  
 **Ability 2 — Dark Allure:** Create a shadow zone. Enemies inside are Slowed 50% and take 80 ATK/s Infernal. 7s cooldown.  
-**Ability 3 — Seduction:** 320 ATK Infernal to nearest enemy. Charms for 3s (fights for Nyxara). 11s cooldown.  
-**Ultimate — Lilith's Embrace:** 8s. Night falls. All enemies are Charming. Nyxara gains +50% ATK and lifesteal 25%.  
+**Ability 3 — Seduction:** 320 ATK Infernal to nearest enemy. Charms for 3s (fights for Lilith). 11s cooldown.  
+**Ultimate — Lilith's Embrace:** 8s. Night falls. All enemies are Charming. Lilith gains +50% ATK and lifesteal 25%.  
 
-### 028. Azrakar — Breaker
+### 028. Naamah — Breaker
 **Mythology:** Naamah — succubus, desire, corruption  
 | Stat | Value |
 |------|-------|
@@ -684,9 +684,9 @@
 
 **Passive — Velvet Corruption:** Every hit applies Corrupted (healing reversed) for 2s. Stacks 2x.  
 **Ability 1 — Shadow Claw:** 260 ATK Infernal. Applies Corrupted. 3s cooldown.  
-**Ability 2 — Desire Drain:** 200 ATK Infernal. Heals Azrakar for 100% of damage dealt. 6s cooldown.  
+**Ability 2 — Desire Drain:** 200 ATK Infernal. Heals Naamah for 100% of damage dealt. 6s cooldown.  
 **Ability 3 — Corrupt Blade:** 450 ATK Infernal. If target is Corrupted, deals +100% and spreads Corrupted to nearby enemies. 13s cooldown.  
-**Ultimate — Naamah's Hunger:** 800 ATK Infernal AoE. All enemies Corrupted for 5s. Azrakar gains lifesteal 40% for 6s.  
+**Ultimate — Naamah's Hunger:** 800 ATK Infernal AoE. All enemies Corrupted for 5s. Naamah gains lifesteal 40% for 6s.  
 
 ---
 

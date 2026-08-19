@@ -11,15 +11,15 @@ Every output filename must include the permanent asset ID, then land in the artw
 - **TITAN_001 — Aten-Ra** (TITAN) → `TITAN_001__aten-ra-solar-law-monolith__source-file.ext`
 - **CHARACTER_001 — Mesha Gate-Scribe** (CHARACTER) → `CHARACTER_001__mesha-gate-scribe__source-file.ext`
 - **BATTLEFIELD_001 — The First Reopening Gate** (BATTLEFIELD) → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
-- **TITAN_002 — Khemet** (TITAN) → `TITAN_002__khemet-suncrown__source-file.ext`
-- **TITAN_003 — Nefra** (TITAN) → `TITAN_003__nefra-obsidian-dawn__source-file.ext`
-- **TITAN_004 — Orru** (TITAN) → `TITAN_004__orru-prism-verdict__source-file.ext`
+- **TITAN_002 — Sutekh** (TITAN) → `TITAN_002__khemet-suncrown__source-file.ext`
+- **TITAN_003 — Iset** (TITAN) → `TITAN_003__nefra-obsidian-dawn__source-file.ext`
+- **TITAN_004 — Amunet** (TITAN) → `TITAN_004__orru-prism-verdict__source-file.ext`
 - **TITAN_005 — Sutekh** (TITAN) → `TITAN_005__sutekh-dune-eclipse__source-file.ext`
 - **TITAN_006 — Iset** (TITAN) → `TITAN_006__iset-riverlight-throne__source-file.ext`
 - **TITAN_007 — Karnu** (TITAN) → `TITAN_007__karnu-glass-horizon__source-file.ext`
 - **TITAN_008 — Maahes** (TITAN) → `TITAN_008__maahes-noon-bastion__source-file.ext`
 - **TITAN_009 — Amunet** (TITAN) → `TITAN_009__amunet-hidden-sun__source-file.ext`
-- **TITAN_010 — The Allfather Stormvein** (TITAN) → `TITAN_010__the-allfather-stormvein__source-file.ext`
+- **TITAN_010 — The Odin Stormvein** (TITAN) → `TITAN_010__the-allfather-stormvein__source-file.ext`
 - **BATTLEFIELD_002 — Solar Pylon Observatory** (BATTLEFIELD) → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - **BATTLEFIELD_003 — Storm-Oath Bridge** (BATTLEFIELD) → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - **BATTLEFIELD_004 — Marble Sky Arena** (BATTLEFIELD) → `BATTLEFIELD_004__marble-sky-arena__source-file.ext`
@@ -38,43 +38,43 @@ Every output filename must include the permanent asset ID, then land in the artw
 ### Aten Ra
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_001 (The First Reopening Gate), BATTLEFIELD_002 (Solar Pylon Observatory), BATTLEFIELD_007 (Sacred Sun Temple Road), BATTLEFIELD_008 (Mythos Gate Sun Throne)
-- Core Deities: TITAN_001 (Aten-Ra), TITAN_002 (Khemet), TITAN_003 (Nefra), TITAN_004 (Orru), TITAN_005 (Sutekh), TITAN_006 (Iset), TITAN_007 (Karnu), TITAN_008 (Maahes), TITAN_009 (Amunet)
+- Core Deities: TITAN_001 (Aten-Ra), TITAN_002 (Sutekh), TITAN_003 (Iset), TITAN_004 (Amunet), TITAN_005 (Sutekh), TITAN_006 (Iset), TITAN_007 (Karnu), TITAN_008 (Maahes), TITAN_009 (Amunet)
 - Campaign characters: CHARACTER_001 (Mesha Gate-Scribe)
 
 ### Asgardian
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_003 (Storm-Oath Bridge), BATTLEFIELD_004 (Marble Sky Arena)
-- Core Deities: TITAN_010 (The Allfather Stormvein), TITAN_011 (Hrothar Rune-Mountain), TITAN_012 (Skeld Iron Tempest), TITAN_013 (Eirwyn Valkstorm), TITAN_014 (Mordun Frost-Anvil), TITAN_015 (Veyra Thunderloom), TITAN_016 (Ragnor Skybreaker), TITAN_017 (Ullr Snow-Crown), TITAN_018 (Sigrun Oathflare)
+- Core Deities: TITAN_010 (The Odin Stormvein), TITAN_011 (Thor Rune-Mountain), TITAN_012 (Frigg Iron Tempest), TITAN_013 (Freyja Valkstorm), TITAN_014 (Mordun Frost-Anvil), TITAN_015 (Veyra Thunderloom), TITAN_016 (Ragnor Skybreaker), TITAN_017 (Ullr Snow-Crown), TITAN_018 (Sigrun Oathflare)
 - Campaign characters: CHARACTER_002 (Hrodda Oath-Witness)
 
 ### Olympian
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_004 (Marble Sky Arena)
-- Core Deities: TITAN_019 (Aurelion Heaven-Marrow), TITAN_020 (Kallix Marble Thunder), TITAN_021 (Thyressa Golden Aegis), TITAN_022 (Ilyon Laurel Flame), TITAN_023 (Nikos Star-Lance), TITAN_024 (Dione Victory Mirror), TITAN_025 (Helior Bronze Summit), TITAN_026 (Pallas Oath-Spear), TITAN_027 (Eiren Crowned Horizon)
+- Core Deities: TITAN_019 (Zeus Heaven-Marrow), TITAN_020 (Athena Marble Thunder), TITAN_021 (Artemis Golden Aegis), TITAN_022 (Ares Laurel Flame), TITAN_023 (Nikos Star-Lance), TITAN_024 (Dione Victory Mirror), TITAN_025 (Helior Bronze Summit), TITAN_026 (Pallas Oath-Spear), TITAN_027 (Eiren Crowned Horizon)
 - Campaign characters: CHARACTER_003 (Lyrion Laurel-Envoy)
 
 ### Kami
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_009 (Foxfire Torii Road), BATTLEFIELD_010 (Mirror Lake Sanctum)
-- Core Deities: TITAN_028 (Amaterion Spirit-Sun), TITAN_029 (Tsukiro Moon-Veil), TITAN_030 (Raidenko Storm Script), TITAN_031 (Mizuka Shrine Tide), TITAN_032 (Kageyori Shadow Gate), TITAN_033 (Hanae Blossom Ward), TITAN_034 (Onimaru Red Seal), TITAN_035 (Korin Mist Path), TITAN_036 (Yamabito Stone Prayer)
+- Core Deities: TITAN_028 (Amaterasu Spirit-Sun), TITAN_029 (Tsukuyomi Moon-Veil), TITAN_030 (Susanoo Storm Script), TITAN_031 (Izanami Shrine Tide), TITAN_032 (Kageyori Shadow Gate), TITAN_033 (Hanae Blossom Ward), TITAN_034 (Onimaru Red Seal), TITAN_035 (Korin Mist Path), TITAN_036 (Yamabito Stone Prayer)
 - Campaign characters: CHARACTER_004 (Sayo Shrine-Cartographer)
 
 ### Tuatha
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_005 (Moon-Grove Rootlabyrinth)
-- Core Deities: TITAN_037 (Dagoran Root-Crown), TITAN_038 (Eryndor Emerald Oath), TITAN_039 (Melian Moon-Grove), TITAN_040 (Bran Granite Bough), TITAN_041 (Nimue Silver Pool), TITAN_042 (Cernan Wild Vale), TITAN_043 (Ailbhe Thorn-Song), TITAN_044 (Oghma Stone Script), TITAN_045 (Tara Dawn Barrow)
+- Core Deities: TITAN_037 (Dagda Root-Crown), TITAN_038 (Brigid Emerald Oath), TITAN_039 (Morrígan Moon-Grove), TITAN_040 (Lugh Granite Bough), TITAN_041 (Nimue Silver Pool), TITAN_042 (Cernan Wild Vale), TITAN_043 (Ailbhe Thorn-Song), TITAN_044 (Oghma Stone Script), TITAN_045 (Tara Dawn Barrow)
 - Campaign characters: CHARACTER_005 (Maeve Root-Memory)
 
 ### Empyrean
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_011 (Choir Vault Ascent), BATTLEFIELD_012 (Broken Heaven Engine)
-- Core Deities: TITAN_046 (Seraphel), TITAN_047 (Caelion Dawnborn Axis), TITAN_048 (Aurelia Radiant Spear), TITAN_049 (Malachor Law Warden), TITAN_050 (Elyndra Choir Crown), TITAN_051 (Orison White Citadel), TITAN_052 (Vespera Mercy Blade), TITAN_053 (Axiom Gate Choir), TITAN_054 (Theon Still Horizon)
+- Core Deities: TITAN_046 (Michael), TITAN_047 (Gabriel Dawnborn Axis), TITAN_048 (Raphael Radiant Spear), TITAN_049 (Uriel Law Warden), TITAN_050 (Elyndra Choir Crown), TITAN_051 (Orison White Citadel), TITAN_052 (Vespera Mercy Blade), TITAN_053 (Axiom Gate Choir), TITAN_054 (Theon Still Horizon)
 - Campaign characters: CHARACTER_006 (Oriel Edict-Keeper)
 
 ### Infernal Dominion
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_006 (Black Iron Court)
-- Core Deities: TITAN_055 (Mordrath), TITAN_056 (Varkul Bloodforged Crown), TITAN_057 (Nyxara Flameborn Court), TITAN_058 (Azrakar Chainwarden), TITAN_059 (Orryx Ash Dominion), TITAN_060 (Malvera Ember Throne), TITAN_061 (Kharon Black Iron), TITAN_062 (Sablex Cinder Duke), TITAN_063 (Zerath Wound Gate)
+- Core Deities: TITAN_055 (Lucifer), TITAN_056 (Asmodeus Bloodforged Crown), TITAN_057 (Lilith Flameborn Court), TITAN_058 (Naamah Chainwarden), TITAN_059 (Orryx Ash Dominion), TITAN_060 (Malvera Ember Throne), TITAN_061 (Kharon Black Iron), TITAN_062 (Sablex Cinder Duke), TITAN_063 (Zerath Wound Gate)
 - Campaign characters: CHARACTER_007 (Vasha Cinder-Broker)
 
 ## First 56 mission bundles — first full faction normal + elite pass

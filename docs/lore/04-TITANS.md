@@ -124,22 +124,22 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 
 ### Aten Ra — The Solar Dominion of Khepra
 
-- **Aten-Ra** — Defender — Ra/Aten/Ma'at: the noon sun authority, living solar judgment
-- **Khemet** — Battery — Khepri: scarab dawn engine, renewal and rebirth
-- **Nefra** — Controller — Nephthys/Duat: necropolis dawn, horizon threshold judge
-- **Orru** — Breaker — Ma'at weighing/punishment: prism of divine verdict
-- **Sutekh** — Disruptor — Set/Sutekh: desert storm chaos harnessed to defend
-- **Iset** — Sustain — Isis: throne restoration, healing magic, river passage
-- **Karnu** — Artillery — Solar Barque/Ra sight: long-range divine bombardment
-- **Maahes** — Guardian — Maahes: lion war protection, knives, devouring judgment
-- **Amunet** — Assassin — Amunet: hidden power, concealed name, unseen strike
+- **Aten-Ra** — Endurance — Ra/Aten/Ma'at: the noon sun authority, living solar judgment
+- **Sutekh** — Fracture — Khepri: scarab dawn engine, renewal and rebirth
+- **Iset** — Conduit — Nephthys/Duat: necropolis dawn, horizon threshold judge
+- **Amunet** — Shadow — Ma'at weighing/punishment: prism of divine verdict
+- **Sutekh** — Disruption — Set/Sutekh: desert storm chaos harnessed to defend
+- **Iset** — Endurance — Isis: throne restoration, healing magic, river passage
+- **Karnu** — Range — Solar Barque/Ra sight: long-range divine bombardment
+- **Maahes** — Counter — Maahes: lion war protection, knives, devouring judgment
+- **Amunet** — Shadow — Amunet: hidden power, concealed name, unseen strike
 
 ### Asgardian — The Storm-Rooted Aesir Holds
 
-- Allfather — Defender
-- Hrothar — Battery
-- Skeld — Controller
-- Eirwyn — Breaker
+- Odin — Endurance (Odin's Sacrifice)
+- Thor — Dominion (Storm-Hammer Dominion)
+- Frigg — Counter (Weaver's Foreknowledge)
+- Freyja — Conduit (Seiðr War-Chant)
 - Mordun — Disruptor
 - Veyra — Sustain
 - Ragnor — Artillery
@@ -148,10 +148,10 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 
 ### Olympian — The Marble Sky of Olympus
 
-- Aurelion — Defender
-- Kallix — Battery
-- Thyressa — Controller
-- Ilyon — Breaker
+- Zeus — Dominion (Sky-Throne Dominion)
+- Athena — Counter (Strategist's Aegis)
+- Artemis — Range (Silver-Arrow Hunt)
+- Ares — Fracture (Blood-Fury Breaker)
 - Nikos — Disruptor
 - Dione — Sustain
 - Helior — Artillery
@@ -160,10 +160,10 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 
 ### Kami — The Shrine-Path Archipelago
 
-- Amaterion — Defender
-- Tsukiro — Battery
-- Raidenko — Controller
-- Mizuka — Breaker
+- Amaterasu — Bulwark (Sun-Goddess Radiance)
+- Tsukuyomi — Shadow (Moon-Shadow Judgment)
+- Susanoo — Disruption (Storm-Blade Disruption)
+- Izanami — Endurance (Death-Gate Endurance)
 - Kageyori — Disruptor
 - Hanae — Sustain
 - Onimaru — Artillery
@@ -172,10 +172,10 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 
 ### Tuatha — The Root-Crowned Green Below
 
-- Dagoran — Defender
-- Eryndor — Battery
-- Melian — Controller
-- Bran — Breaker
+- Dagda — Endurance (Cauldron of Endless Plenty)
+- Brigid — Conduit (Forge-Flame Conduit)
+- Morrígan — Shadow (Raven-Shadow Prophecy)
+- Lugh — Disruption (Many-Skilled Striker)
 - Nimue — Disruptor
 - Cernan — Sustain
 - Ailbhe — Artillery
@@ -184,10 +184,10 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 
 ### Empyrean — The White Citadel Above Law
 
-- Seraphel — Defender
-- Caelion — Battery
-- Aurelia — Controller
-- Malachor — Breaker
+- Michael — Counter (Aegis of the Choral Host)
+- Gabriel — Range (Annunciation Herald)
+- Raphael — Endurance (Sacred Ward Endurance)
+- Uriel — Dominion (Light-Fire Dominion)
 - Elyndra — Disruptor
 - Orison — Sustain
 - Vespera — Artillery
@@ -196,10 +196,10 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 
 ### Infernal Dominion — The Black Iron Court of Dominion
 
-- Mordrath — Defender
-- Varkul — Battery
-- Nyxara — Controller
-- Azrakar — Breaker
+- Lucifer — Dominion (Morningstar Dominion)
+- Asmodeus — Fracture (Hellfire Fracture)
+- Lilith — Shadow (Night-Whisper Shadow)
+- Naamah — Disruption (Velvet-Chains Disruption)
 - Orryx — Disruptor
 - Malvera — Sustain
 - Kharon — Artillery

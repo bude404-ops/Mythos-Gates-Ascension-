@@ -34,16 +34,6 @@
     "ultimate": "Once per battle or 60s+ cooldown. Requires 100 Ascension Gauge. Transforms the deity or unleashes full divine power. Cinematic.",
     "passive": "Always active. Builds faction resource from combat actions. At threshold, empowers next ability or attack."
   },
-  "roles": {
-    "Tank": "Absorb punishment, control enemy positioning, protect objectives. High HP and armor.",
-    "Bruiser": "Sustained fighter that builds power over time. Balanced damage and durability.",
-    "Controller": "Area denial and crowd control. Dictate where enemies can move.",
-    "Breaker": "Burst damage specialist. Break through armor and execute weakened foes.",
-    "Assassin": "High mobility, burst damage, strike and fade.",
-    "Ranger": "Long-range damage dealer, keep distance, kite enemies.",
-    "Support": "Sustain allies and debuff enemies. Force multiplier.",
-    "Guardian": "Defensive interceptor. Protect area, block attacks, counter."
-  },
   "elements": {
     "Aten Ra": {
       "element": "Solar",
@@ -116,5 +106,94 @@
       "penalty": "10-20% unspent Belief/Influence loss",
       "preserved": "Level, abilities, relics, progression"
     }
+  },
+  "belief_integration": {
+    "base_belief_per_win": 100,
+    "faction_passive": "+10%",
+    "deity_faith_trigger": "+20% (one of 9 solo triggers)",
+    "fallback_bonus": "+5% (any victory, if faith not triggered)",
+    "max_per_win": 130,
+    "with_faction_bonus_trigger": 135,
+    "with_pantheon_resonance": 145
+  },
+  "old_roles": {
+    "Endurance": "Win while staying above 50% HP the entire fight. Rewards sustained composure.",
+    "Conduit": "Win after executing 3+ ability combo chains in one encounter. Rewards ability mastery.",
+    "Dominion": "Win while controlling 60%+ of battlefield nodes. Rewards spatial control.",
+    "Fracture": "Win after breaking 3+ enemy armor/defense stacks. Rewards aggressive offense.",
+    "Disruption": "Win after interrupting 3+ enemy attacks. Rewards tactical awareness.",
+    "Range": "Win with 5+ ranged kills. Rewards precision from distance.",
+    "Counter": "Win after blocking/parrying 5+ enemy attacks. Rewards defensive mastery.",
+    "Shadow": "Win with 3+ stealth or timed-critical executions. Rewards precise timing.",
+    "Bulwark": "Win without taking a hit from the boss. Rewards perfect dodging."
+  },
+  "faith_triggers": {
+    "Endurance": {
+      "name": "Endurance \u2014 The Unbroken",
+      "trigger": "Win while staying above 50% HP the entire fight",
+      "bonus": "+20% Belief",
+      "description": "The Avatar's faith is rewarded when their body endures. Above the threshold, they are unbreakable."
+    },
+    "Conduit": {
+      "name": "Conduit \u2014 The Weaver",
+      "trigger": "Win after executing 3+ ability combo chains in one encounter",
+      "bonus": "+20% Belief",
+      "description": "The Avatar channels divine energy like a living conduit. Each chain is proof the divine flow is endless."
+    },
+    "Dominion": {
+      "name": "Dominion \u2014 The Sovereign",
+      "trigger": "Win while controlling 60%+ of battlefield nodes",
+      "bonus": "+20% Belief",
+      "description": "The Avatar bends the battlefield to their will. Every node claimed is territory marked by the divine."
+    },
+    "Fracture": {
+      "name": "Fracture \u2014 The Breaker",
+      "trigger": "Win after breaking 3+ enemy armor/defense stacks",
+      "bonus": "+20% Belief",
+      "description": "The Avatar shatters what cannot be shattered. Every shield destroyed is proof of divine power."
+    },
+    "Disruption": {
+      "name": "Disruption \u2014 The Storm",
+      "trigger": "Win after interrupting 3+ enemy attacks",
+      "bonus": "+20% Belief",
+      "description": "The Avatar breaks the enemy's rhythm. Every interrupted attack proves the enemy's will is meaningless."
+    },
+    "Range": {
+      "name": "Range \u2014 The Hunter",
+      "trigger": "Win with 5+ ranged kills",
+      "bonus": "+20% Belief",
+      "description": "The Avatar strikes from beyond reach. Every ranged kill proves distance is no defense."
+    },
+    "Counter": {
+      "name": "Counter \u2014 The Shield",
+      "trigger": "Win after blocking or parrying 5+ enemy attacks",
+      "bonus": "+20% Belief",
+      "description": "The Avatar stands unmovable. Every parry proves divine skill outmatches brute force."
+    },
+    "Shadow": {
+      "name": "Shadow \u2014 The Unseen",
+      "trigger": "Win with 3+ stealth or timed-critical executions",
+      "bonus": "+20% Belief",
+      "description": "The Avatar strikes from the unseen. Every critical strike proves death comes before the enemy knows it."
+    },
+    "Bulwark": {
+      "name": "Bulwark \u2014 The Untouchable",
+      "trigger": "Win without taking a hit from the boss",
+      "bonus": "+20% Belief",
+      "description": "The Avatar is beyond harm. A flawless victory proves the divine form is inviolable."
+    }
+  },
+  "solo_only": true,
+  "balance_note": "All 28 deities use the same 9 triggers. Optimal play = 130 Belief/win, standard = 115/win. ~13% gap.",
+  "roles": {
+    "Endurance": "Win while staying above 50% HP the entire fight. Rewards sustained composure.",
+    "Conduit": "Win after executing 3+ ability combo chains in one encounter. Rewards ability mastery.",
+    "Dominion": "Win while controlling 60%+ of battlefield nodes. Rewards spatial control.",
+    "Fracture": "Win after breaking 3+ enemy armor/defense stacks. Rewards aggressive offense.",
+    "Disruption": "Win after interrupting 3+ enemy attacks. Rewards tactical awareness.",
+    "Range": "Win with 5+ ranged kills. Rewards precision from distance.",
+    "Counter": "Win after blocking/parrying 5+ enemy attacks. Rewards defensive mastery.",
+    "Shadow": "Win with 3+ stealth or timed-critical executions. Rewards precise timing.",
+    "Bulwark": "Win without taking a hit from the boss. Rewards perfect dodging."
   }
 }

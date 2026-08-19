@@ -28,26 +28,26 @@ The Shrine-Path Archipelago is defined by ritual precision, sacred fog, moonlit 
 - hunt a Hollow hiding inside a sacred festival.
 
 ## Deity Codex Hooks
-### Amaterion Spirit-Sun (MG-TITAN-028)
+### Amaterasu Spirit-Sun (MG-TITAN-028)
 - **Role:** Defender
-- **Lore Function:** Amaterion Spirit-Sun embodies the Kami answer to the Ascension Collapse: defender shaped into Realm doctrine.
-- **Chapter Hook:** When Amaterion Spirit-Sun enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
-- **Visual Context:** Frame Amaterion Spirit-Sun against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Tsukiro Moon-Veil (MG-TITAN-029)
+- **Lore Function:** Amaterasu Spirit-Sun embodies the Kami answer to the Ascension Collapse: defender shaped into Realm doctrine.
+- **Chapter Hook:** When Amaterasu Spirit-Sun enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
+- **Visual Context:** Frame Amaterasu Spirit-Sun against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
+### Tsukuyomi Moon-Veil (MG-TITAN-029)
 - **Role:** Battery
-- **Lore Function:** Tsukiro Moon-Veil embodies the Kami answer to the Ascension Collapse: battery shaped into Realm doctrine.
-- **Chapter Hook:** When Tsukiro Moon-Veil enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
-- **Visual Context:** Frame Tsukiro Moon-Veil against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Raidenko Storm Script (MG-TITAN-032)
+- **Lore Function:** Tsukuyomi Moon-Veil embodies the Kami answer to the Ascension Collapse: battery shaped into Realm doctrine.
+- **Chapter Hook:** When Tsukuyomi Moon-Veil enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
+- **Visual Context:** Frame Tsukuyomi Moon-Veil against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
+### Susanoo Storm Script (MG-TITAN-032)
 - **Role:** Controller
-- **Lore Function:** Raidenko Storm Script embodies the Kami answer to the Ascension Collapse: controller shaped into Realm doctrine.
-- **Chapter Hook:** When Raidenko Storm Script enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
-- **Visual Context:** Frame Raidenko Storm Script against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Mizuka Shrine Tide (MG-TITAN-033)
+- **Lore Function:** Susanoo Storm Script embodies the Kami answer to the Ascension Collapse: controller shaped into Realm doctrine.
+- **Chapter Hook:** When Susanoo Storm Script enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
+- **Visual Context:** Frame Susanoo Storm Script against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
+### Izanami Shrine Tide (MG-TITAN-033)
 - **Role:** Breaker
-- **Lore Function:** Mizuka Shrine Tide embodies the Kami answer to the Ascension Collapse: breaker shaped into Realm doctrine.
-- **Chapter Hook:** When Mizuka Shrine Tide enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
-- **Visual Context:** Frame Mizuka Shrine Tide against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
+- **Lore Function:** Izanami Shrine Tide embodies the Kami answer to the Ascension Collapse: breaker shaped into Realm doctrine.
+- **Chapter Hook:** When Izanami Shrine Tide enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
+- **Visual Context:** Frame Izanami Shrine Tide against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
 ### Kageyori Shadow Gate (MG-TITAN-032)
 - **Role:** Disruptor
 - **Lore Function:** Kageyori Shadow Gate embodies the Kami answer to the Ascension Collapse: disruptor shaped into Realm doctrine.

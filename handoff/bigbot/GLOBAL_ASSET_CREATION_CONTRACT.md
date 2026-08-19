@@ -157,7 +157,7 @@ Core relative scale units:
 - standardEnemy: 1.15
 - eliteEnemy: 1.85
 - largeEnemy: 2.8
-- playerTitan: 5.2
+- playerDeity: 5.2
 - smallAgileTitan: 4.4
 - heavyTitan: 6.1
 - titanScaleEnemy: 5.8

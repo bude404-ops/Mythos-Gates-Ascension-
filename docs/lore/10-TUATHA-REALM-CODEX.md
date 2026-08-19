@@ -28,26 +28,26 @@ The Root-Crowned Green Below is defined by ancient roots, living songs, moon poo
 - stop root-memory from consuming a living city.
 
 ## Deity Codex Hooks
-### Dagoran Root-Crown (MG-TITAN-037)
+### Dagda Root-Crown (MG-TITAN-037)
 - **Role:** Defender
-- **Lore Function:** Dagoran Root-Crown embodies the Tuatha answer to the Ascension Collapse: defender shaped into Realm doctrine.
-- **Chapter Hook:** When Dagoran Root-Crown enters a chapter, the scene should test Tuatha's core tension: Their memory is power, but it can become vengeance when old wounds refuse to compost.
-- **Visual Context:** Frame Dagoran Root-Crown against emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist while preserving their individual silhouette and role readability.
-### Eryndor Emerald Oath (MG-TITAN-040)
+- **Lore Function:** Dagda Root-Crown embodies the Tuatha answer to the Ascension Collapse: defender shaped into Realm doctrine.
+- **Chapter Hook:** When Dagda Root-Crown enters a chapter, the scene should test Tuatha's core tension: Their memory is power, but it can become vengeance when old wounds refuse to compost.
+- **Visual Context:** Frame Dagda Root-Crown against emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist while preserving their individual silhouette and role readability.
+### Brigid Emerald Oath (MG-TITAN-040)
 - **Role:** Battery
-- **Lore Function:** Eryndor Emerald Oath embodies the Tuatha answer to the Ascension Collapse: battery shaped into Realm doctrine.
-- **Chapter Hook:** When Eryndor Emerald Oath enters a chapter, the scene should test Tuatha's core tension: Their memory is power, but it can become vengeance when old wounds refuse to compost.
-- **Visual Context:** Frame Eryndor Emerald Oath against emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist while preserving their individual silhouette and role readability.
-### Melian Moon-Grove (MG-TITAN-041)
+- **Lore Function:** Brigid Emerald Oath embodies the Tuatha answer to the Ascension Collapse: battery shaped into Realm doctrine.
+- **Chapter Hook:** When Brigid Emerald Oath enters a chapter, the scene should test Tuatha's core tension: Their memory is power, but it can become vengeance when old wounds refuse to compost.
+- **Visual Context:** Frame Brigid Emerald Oath against emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist while preserving their individual silhouette and role readability.
+### Morrígan Moon-Grove (MG-TITAN-041)
 - **Role:** Controller
-- **Lore Function:** Melian Moon-Grove embodies the Tuatha answer to the Ascension Collapse: controller shaped into Realm doctrine.
-- **Chapter Hook:** When Melian Moon-Grove enters a chapter, the scene should test Tuatha's core tension: Their memory is power, but it can become vengeance when old wounds refuse to compost.
-- **Visual Context:** Frame Melian Moon-Grove against emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist while preserving their individual silhouette and role readability.
-### Bran Granite Bough (MG-TITAN-040)
+- **Lore Function:** Morrígan Moon-Grove embodies the Tuatha answer to the Ascension Collapse: controller shaped into Realm doctrine.
+- **Chapter Hook:** When Morrígan Moon-Grove enters a chapter, the scene should test Tuatha's core tension: Their memory is power, but it can become vengeance when old wounds refuse to compost.
+- **Visual Context:** Frame Morrígan Moon-Grove against emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist while preserving their individual silhouette and role readability.
+### Lugh Granite Bough (MG-TITAN-040)
 - **Role:** Breaker
-- **Lore Function:** Bran Granite Bough embodies the Tuatha answer to the Ascension Collapse: breaker shaped into Realm doctrine.
-- **Chapter Hook:** When Bran Granite Bough enters a chapter, the scene should test Tuatha's core tension: Their memory is power, but it can become vengeance when old wounds refuse to compost.
-- **Visual Context:** Frame Bran Granite Bough against emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist while preserving their individual silhouette and role readability.
+- **Lore Function:** Lugh Granite Bough embodies the Tuatha answer to the Ascension Collapse: breaker shaped into Realm doctrine.
+- **Chapter Hook:** When Lugh Granite Bough enters a chapter, the scene should test Tuatha's core tension: Their memory is power, but it can become vengeance when old wounds refuse to compost.
+- **Visual Context:** Frame Lugh Granite Bough against emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist while preserving their individual silhouette and role readability.
 ### Nimue Silver Pool (MG-TITAN-041)
 - **Role:** Disruptor
 - **Lore Function:** Nimue Silver Pool embodies the Tuatha answer to the Ascension Collapse: disruptor shaped into Realm doctrine.

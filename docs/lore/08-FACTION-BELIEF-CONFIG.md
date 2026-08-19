@@ -52,7 +52,7 @@ Each faction's belief system has four configuration layers:
 |------|-------------|-----------|--------|------|
 | 1 | Avatar Level 10 | Iron Resolve | +5% DEF | The Avatar's armor is forged with oath-iron — it holds because the vow holds. |
 | 2 | Avatar Level 30 | Storm Forged | +5% ATK when at full HP | The storm-charged weapons crackle with the power of kept promises. |
-| 3 | Avatar Level 50 | Allfather's Eye | +5% to ALL stats | The Avatar sees every opening — the sacrificed eye grants perfect battlefield awareness. |
+| 3 | Avatar Level 50 | Odin's Eye | +5% to ALL stats | The Avatar sees every opening — the sacrificed eye grants perfect battlefield awareness. |
 
 **At full stack:** +10% DEF, +5% ATK (at full HP), +5% ALL stats
 

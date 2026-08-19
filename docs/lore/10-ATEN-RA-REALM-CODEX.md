@@ -45,23 +45,23 @@ The Solar Dominion of Khepra is defined by sacred law, geometric light, desert j
 **Chapter Hook:** When Aten-Ra enters a chapter, the scene tests whether absolute solar authority can coexist with the freedom of other Realms — or whether his judgment becomes the very tyranny he was built to prevent.
 **Visual Context:** Frame Aten-Ra against white-gold solar discs, obsidian-blue shadows, colossal pylons, papyrus circuitry, radiant divine armor while preserving his individual silhouette and role readability.
 
-### Khemet (MG-TITAN-002) — Battery
+### Sutekh (MG-TITAN-002) — Battery
 **Source Deity:** Khepri — scarab dawn, creation, renewal, sun rebirth
-**Lore:** Khemet is the Realm's Khepri engine: the force that rolls dead light into dawn and turns Nile-black memory into power. Human scarab amulets are miniature echoes of his living renewal shell. He feeds allies by converting wounds, offerings, and battlefield heat into measured solar return.
-**Chapter Hook:** When Khemet enters a chapter, the scene tests whether renewal can be given without cost — or whether his dawn always requires something to die first.
-**Visual Context:** Frame Khemet against dawn-lit basins, scarab carapace renewal plates, faience energy reservoirs, Nile-silt glass core, papyrus conduit veins.
+**Lore:** Sutekh is the Realm's Khepri engine: the force that rolls dead light into dawn and turns Nile-black memory into power. Human scarab amulets are miniature echoes of his living renewal shell. He feeds allies by converting wounds, offerings, and battlefield heat into measured solar return.
+**Chapter Hook:** When Sutekh enters a chapter, the scene tests whether renewal can be given without cost — or whether his dawn always requires something to die first.
+**Visual Context:** Frame Sutekh against dawn-lit basins, scarab carapace renewal plates, faience energy reservoirs, Nile-silt glass core, papyrus conduit veins.
 
-### Nefra (MG-TITAN-003) — Controller
+### Iset (MG-TITAN-003) — Controller
 **Source Deity:** Nephthys + Duat — necropolis, horizon threshold, funerary protection, night meeting dawn
-**Lore:** Nefra governs the border where the sun leaves the underworld and becomes visible again. Human funerary art copied fragments of her horizon masks and dawn reliefs. She controls terrain by deciding what may cross from shadow into light — nothing passes her threshold without her verdict.
-**Chapter Hook:** When Nefra enters a chapter, the scene tests whether the threshold between death and dawn is a mercy or a prison — and who gets to decide what stays in shadow.
-**Visual Context:** Frame Nefra against the Duat horizon gateway, obsidian necropolis mask, horizon-ring collar, limestone relief plates, angular light lanes from shadow limbs.
+**Lore:** Iset governs the border where the sun leaves the underworld and becomes visible again. Human funerary art copied fragments of her horizon masks and dawn reliefs. She controls terrain by deciding what may cross from shadow into light — nothing passes her threshold without her verdict.
+**Chapter Hook:** When Iset enters a chapter, the scene tests whether the threshold between death and dawn is a mercy or a prison — and who gets to decide what stays in shadow.
+**Visual Context:** Frame Iset against the Duat horizon gateway, obsidian necropolis mask, horizon-ring collar, limestone relief plates, angular light lanes from shadow limbs.
 
-### Orru (MG-TITAN-004) — Breaker
+### Amunet (MG-TITAN-004) — Breaker
 **Source Deity:** Ma'at weighing + Ammit — the punishment side of truth, divine verdict, heart vs feather
-**Lore:** Orru is the punishment side of Ma'at: when something refuses balance, he refracts its hidden weight until armor, lies, and false sanctity split open. Human scales of judgment are crude courtroom copies of his living prism verdict. He does not negotiate — he reveals.
-**Chapter Hook:** When Orru enters a chapter, the scene tests whether truth, once forced into the open, can ever be undone — or whether his refraction destroys what it illuminates.
-**Visual Context:** Frame Orru against crystalline solar-prism architecture, Ma'at feather linework, scale-beam shoulder arcs, clear amber glass blades, electrum verdict ribs.
+**Lore:** Amunet is the punishment side of Ma'at: when something refuses balance, he refracts its hidden weight until armor, lies, and false sanctity split open. Human scales of judgment are crude courtroom copies of his living prism verdict. He does not negotiate — he reveals.
+**Chapter Hook:** When Amunet enters a chapter, the scene tests whether truth, once forced into the open, can ever be undone — or whether his refraction destroys what it illuminates.
+**Visual Context:** Frame Amunet against crystalline solar-prism architecture, Ma'at feather linework, scale-beam shoulder arcs, clear amber glass blades, electrum verdict ribs.
 
 ### Sutekh (MG-TITAN-005) — Disruptor
 **Source Deity:** Set/Sutekh — desert storms, disorder harnessed for defense, Red Land violence, necessary chaos

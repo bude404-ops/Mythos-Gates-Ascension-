@@ -12,7 +12,7 @@ For each deity, Big Bot must use:
 4. Realm codex visual language.
 5. Gameplay role silhouette.
 6. Ability and equipment names as visual influence.
-7. Master Scale Reference: playerTitan scale 5.2, with mobile readability.
+7. Master Scale Reference: playerDeity scale 5.2, with mobile readability.
 
 ## Body language rule
 A Deity body may include armor-like forms, sacred metal, carved stone, living wood, infernal iron, stormsteel, marble, halos, masks, horns, or sigils. But those elements must feel grown into a living mythic body or forged by divine Realm law. They must never read as mechanical plates attached to a robot chassis.

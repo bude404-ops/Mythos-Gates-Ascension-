@@ -6,7 +6,7 @@
   "status": "IMPLEMENTED",
   "source": "data/world-scale-reference.json",
   "directive": "Mobile-first does not mean tiny. Tactical grid spaces are logical; visual scale must make Deities, Gates, and bosses feel immense.",
-  "unitSystem": "relativeScaleUnits from world-scale-reference; playerTitan=5.2 reference units",
+  "unitSystem": "relativeScaleUnits from world-scale-reference; playerDeity=5.2 reference units",
   "requiredSheetTypes": [
     "normal_enemy",
     "elite_enemy",
@@ -38,7 +38,7 @@
       "primarySubject": "standardEnemy",
       "compareAgainst": [
         "normalHumanoid",
-        "playerTitan",
+        "playerDeity",
         "standardWall"
       ],
       "ratioToDeity": 0.22,
@@ -62,7 +62,7 @@
       "primarySubject": "eliteEnemy",
       "compareAgainst": [
         "standardEnemy",
-        "playerTitan",
+        "playerDeity",
         "largeEnemy"
       ],
       "ratioToDeity": 0.36,
@@ -83,7 +83,7 @@
       "id": "MG-SCALE-SHEET-003",
       "type": "player_titan",
       "title": "Player deity Hero Scale",
-      "primarySubject": "playerTitan",
+      "primarySubject": "playerDeity",
       "compareAgainst": [
         "smallAgileDeity",
         "heavyDeity",
@@ -109,7 +109,7 @@
       "title": "Deity-Scale Enemy Duel Reference",
       "primarySubject": "deityScaleEnemy",
       "compareAgainst": [
-        "playerTitan",
+        "playerDeity",
         "heavyDeity",
         "deityGateArch"
       ],
@@ -133,7 +133,7 @@
       "title": "Colossal Boss vs deity",
       "primarySubject": "colossalBoss",
       "compareAgainst": [
-        "playerTitan",
+        "playerDeity",
         "deityScaleEnemy",
         "deityGateArch"
       ],
@@ -158,7 +158,7 @@
       "primarySubject": "titanGateArch",
       "compareAgainst": [
         "gateInteriorOpening",
-        "playerTitan",
+        "playerDeity",
         "colossalBoss"
       ],
       "ratioToDeity": 2.69,
@@ -184,7 +184,7 @@
         "standardWall",
         "statue",
         "bridgeWidth",
-        "playerTitan"
+        "playerDeity"
       ],
       "ratioToDeity": 2.12,
       "composition": "Temple pylon, wall, statue, bridge width markers, and deity placed on shared tactical floor tiles.",
@@ -208,7 +208,7 @@
       "compareAgainst": [
         "normalHumanoid",
         "standardEnemy",
-        "playerTitan",
+        "playerDeity",
         "gateInteriorOpening"
       ],
       "ratioToDeity": 0.65,

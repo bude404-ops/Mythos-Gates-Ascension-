@@ -17,7 +17,7 @@
 - One of the Ogdoad, invisibility, hidden power
 
 ## 2. ASGARDIAN FACTION (Norse Mythology)
-### Odin → Allfather
+### Odin → Odin
 - Tall, one-eyed, grey beard, pale blue eye, blue cloak, broad hat
 - Gungnir spear, ravens Huginn/Muninn, wolves Geri/Freki
 - Hung from Yggdrasil 9 nights, sacrificed eye to Mimis Well

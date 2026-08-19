@@ -35,7 +35,7 @@ The deities are the TRUE divine beings. Human cultures (Egyptians, Norse, Greeks
 ### Sources: Poetic Edda, Prose Edda (Snorri Sturluson), Sagas
 **Aura Color:** Blue-white lightning + warm gunmetal forge-heat
 
-### Odin (Allfather)
+### Odin (Odin)
 - Eddas: "Tall, one-eyed, grey-bearded." Eye is "pale blue." Blue/parti-colored cloak. Broad hat. Gungnir spear.
 - Companions: Ravens Huginn (Thought) & Muninn (Memory). Wolves Geri & Freki.
 - Sacrifices: Eye to Mimir's Well (wisdom). Hung from Yggdrasil 9 nights (runes).

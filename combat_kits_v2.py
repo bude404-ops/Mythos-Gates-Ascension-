@@ -61,7 +61,7 @@ COMBAT_KITS = {
         "ability1": {"name": "Raven Sight", "type": "Buff/Reveal", "cd": 8, "divineCost": 25, "effect": "Send Huginn and Muninn to reveal all enemies in a large radius for 5s. Revealed enemies take 30% bonus damage. Odin gains +50% crit chance against revealed targets."},
         "ability2": {"name": "Oath Shield", "type": "Shield", "cd": 10, "divineCost": 40, "effect": "Raise oath-stone shield absorbing damage for 4s. If broken, it explodes stunning nearby enemies and refunding divine energy."},
         "signature": {"name": "Storm Sovereignty", "type": "Zone Control", "cd": 18, "divineCost": 70, "effect": "Create a storm circle. Odin gains super armor, enemies struck by lightning every second, his attacks gain thunder damage. 6s."},
-        "ultimate": {"name": "Allfather Ascension", "type": "Ascension", "cd": 0, "ascensionCost": 100, "effect": "Open the rune-sealed eye for 8s: time slows for all enemies. Every attack leaves a rune-mark that detonates when ascension ends for accumulated damage. Odin sees all enemy positions."},
+        "ultimate": {"name": "Odin Ascension", "type": "Ascension", "cd": 0, "ascensionCost": 100, "effect": "Open the rune-sealed eye for 8s: time slows for all enemies. Every attack leaves a rune-mark that detonates when ascension ends for accumulated damage. Odin sees all enemy positions."},
         "passive": {"name": "Oath-Bound", "effect": "Gains Oath Fury when blocking or taking damage. At 5 stacks, next attack gains thunder damage and knocks back all hit."},
     },
     "Freyja": {

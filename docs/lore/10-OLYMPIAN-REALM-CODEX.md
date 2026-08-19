@@ -43,11 +43,11 @@ The Marble Sky of Olympus is defined by radiant rivalry, heroic politics, marble
 - **Lore Function:** Ares embodies the Olympian answer to the Ascension Collapse: controller shaped into Realm doctrine.
 - **Chapter Hook:** When Ares enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Ares against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Ilyon Laurel Flame (MG-TITAN-022)
+### Ares Laurel Flame (MG-TITAN-022)
 - **Role:** Breaker
-- **Lore Function:** Ilyon Laurel Flame embodies the Olympian answer to the Ascension Collapse: breaker shaped into Realm doctrine.
-- **Chapter Hook:** When Ilyon Laurel Flame enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
-- **Visual Context:** Frame Ilyon Laurel Flame against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
+- **Lore Function:** Ares Laurel Flame embodies the Olympian answer to the Ascension Collapse: breaker shaped into Realm doctrine.
+- **Chapter Hook:** When Ares Laurel Flame enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
+- **Visual Context:** Frame Ares Laurel Flame against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
 ### Nikos Star-Lance (MG-TITAN-023)
 - **Role:** Disruptor
 - **Lore Function:** Nikos Star-Lance embodies the Olympian answer to the Ascension Collapse: disruptor shaped into Realm doctrine.
