@@ -1,0 +1,271 @@
+{
+  "version": "1.0",
+  "date": "2026-08-19",
+  "description": "Faction belief configuration \u2014 passive, bonus triggers, tiered buffs, pantheon resonance",
+  "factions": {
+    "aten_ra": {
+      "belief_name": "Ma'at Devotion",
+      "passive": "+10% Belief from all victories",
+      "bonus_trigger": {
+        "name": "Balance Maintained",
+        "condition": "Win without dropping below 50% HP",
+        "bonus": "+5% Belief"
+      },
+      "tiered_buffs": [
+        {
+          "tier": 1,
+          "level": 10,
+          "name": "Solar Initiation",
+          "effect": "+5% DEF when above 50% HP"
+        },
+        {
+          "tier": 2,
+          "level": 30,
+          "name": "Solar Barque",
+          "effect": "+5% ATK when above 50% HP"
+        },
+        {
+          "tier": 3,
+          "level": 50,
+          "name": "Ma'at Incarnate",
+          "effect": "+5% ALL stats when above 50% HP"
+        }
+      ],
+      "pantheon_resonance": {
+        "name": "Khepra Eternal",
+        "activation": "All 4 Aten Ra deities reach Avatar Level 50",
+        "effect": "+10% Belief earned (stacks with passive = +20% total)",
+        "server_event": "Global solar event \u2014 Aten Ra banner glows gold for 24 hours"
+      }
+    },
+    "asgardian": {
+      "belief_name": "Oath Keeping",
+      "passive": "+10% Belief from all victories",
+      "bonus_trigger": {
+        "name": "Oath Honored",
+        "condition": "Win on first attempt (no retries)",
+        "bonus": "+5% Belief"
+      },
+      "tiered_buffs": [
+        {
+          "tier": 1,
+          "level": 10,
+          "name": "Iron Resolve",
+          "effect": "+5% DEF"
+        },
+        {
+          "tier": 2,
+          "level": 30,
+          "name": "Storm Forged",
+          "effect": "+5% ATK when at full HP"
+        },
+        {
+          "tier": 3,
+          "level": 50,
+          "name": "Allfather's Eye",
+          "effect": "+5% ALL stats"
+        }
+      ],
+      "pantheon_resonance": {
+        "name": "Ragnarok Bound",
+        "activation": "All 4 Asgardian deities reach Avatar Level 50",
+        "effect": "+10% Belief earned",
+        "server_event": "Global storm event \u2014 thunder across all realms for 24 hours"
+      }
+    },
+    "olympian": {
+      "belief_name": "Arete Excellence",
+      "passive": "+10% Belief from all victories",
+      "bonus_trigger": {
+        "name": "Glory Witnessed",
+        "condition": "Win against a boss",
+        "bonus": "+5% Belief"
+      },
+      "tiered_buffs": [
+        {
+          "tier": 1,
+          "level": 10,
+          "name": "Marble Form",
+          "effect": "+5% HP"
+        },
+        {
+          "tier": 2,
+          "level": 30,
+          "name": "Bronze Strike",
+          "effect": "+5% ATK"
+        },
+        {
+          "tier": 3,
+          "level": 50,
+          "name": "Arete Incarnate",
+          "effect": "+5% ALL stats"
+        }
+      ],
+      "pantheon_resonance": {
+        "name": "Olympus Ascendant",
+        "activation": "All 4 Olympian deities reach Avatar Level 50",
+        "effect": "+10% Belief earned",
+        "server_event": "Global celestial event \u2014 sky turns marble-gold for 24 hours"
+      }
+    },
+    "kami": {
+      "belief_name": "Wa Harmony",
+      "passive": "+10% Belief from all victories",
+      "bonus_trigger": {
+        "name": "Perfect Threshold",
+        "condition": "Win with a timed-critical hit as the final blow",
+        "bonus": "+5% Belief"
+      },
+      "tiered_buffs": [
+        {
+          "tier": 1,
+          "level": 10,
+          "name": "Spirit-Skin",
+          "effect": "+5% DE regeneration"
+        },
+        {
+          "tier": 2,
+          "level": 30,
+          "name": "Lacquer Hardening",
+          "effect": "+5% DEF"
+        },
+        {
+          "tier": 3,
+          "level": 50,
+          "name": "Wa Incarnate",
+          "effect": "+5% ALL stats"
+        }
+      ],
+      "pantheon_resonance": {
+        "name": "Torii Eternal",
+        "activation": "All 4 Kami deities reach Avatar Level 50",
+        "effect": "+10% Belief earned",
+        "server_event": "Global sakura event \u2014 spirit-petals across all realms for 24 hours"
+      }
+    },
+    "tuatha": {
+      "belief_name": "Sovereign Memory",
+      "passive": "+10% Belief from all victories",
+      "bonus_trigger": {
+        "name": "Rooted Legacy",
+        "condition": "Collect a lore pickup during the encounter",
+        "bonus": "+5% Belief"
+      },
+      "tiered_buffs": [
+        {
+          "tier": 1,
+          "level": 10,
+          "name": "Living Bark",
+          "effect": "+5% HP regeneration per encounter"
+        },
+        {
+          "tier": 2,
+          "level": 30,
+          "name": "Ancient Root",
+          "effect": "+5% DEF"
+        },
+        {
+          "tier": 3,
+          "level": 50,
+          "name": "Sovereign Incarnate",
+          "effect": "+5% ALL stats"
+        }
+      ],
+      "pantheon_resonance": {
+        "name": "Avalora Eternal",
+        "activation": "All 4 Tuatha deities reach Avatar Level 50",
+        "effect": "+10% Belief earned",
+        "server_event": "Global forest event \u2014 mist and roots across all realms for 24 hours"
+      }
+    },
+    "empyrean": {
+      "belief_name": "Choral Order",
+      "passive": "+10% Belief from all victories",
+      "bonus_trigger": {
+        "name": "Sacred Restraint",
+        "condition": "Win without using ultimate ability",
+        "bonus": "+5% Belief"
+      },
+      "tiered_buffs": [
+        {
+          "tier": 1,
+          "level": 10,
+          "name": "Contained Radiance",
+          "effect": "+5% DEF"
+        },
+        {
+          "tier": 2,
+          "level": 30,
+          "name": "Choral Amplification",
+          "effect": "+5% DE"
+        },
+        {
+          "tier": 3,
+          "level": 50,
+          "name": "Order Incarnate",
+          "effect": "+5% ALL stats"
+        }
+      ],
+      "pantheon_resonance": {
+        "name": "Choir Eternal",
+        "activation": "All 4 Empyrean deities reach Avatar Level 50",
+        "effect": "+10% Belief earned",
+        "server_event": "Global light event \u2014 divine radiance across all realms for 24 hours"
+      }
+    },
+    "infernal_dominion": {
+      "belief_name": "Debt of Power",
+      "passive": "+10% Belief from all victories",
+      "bonus_trigger": {
+        "name": "Debt Collected",
+        "condition": "Execute an enemy below 20% HP",
+        "bonus": "+5% Belief"
+      },
+      "tiered_buffs": [
+        {
+          "tier": 1,
+          "level": 10,
+          "name": "Iron Will",
+          "effect": "+5% ATK"
+        },
+        {
+          "tier": 2,
+          "level": 30,
+          "name": "Ashen Vigor",
+          "effect": "+5% ATK (stacks with Tier 1)"
+        },
+        {
+          "tier": 3,
+          "level": 50,
+          "name": "Dominion Incarnate",
+          "effect": "+5% ALL stats"
+        }
+      ],
+      "pantheon_resonance": {
+        "name": "Throne Eternal",
+        "activation": "All 4 Infernal Dominion deities reach Avatar Level 50",
+        "effect": "+10% Belief earned",
+        "server_event": "Global shadow event \u2014 anti-light across all realms for 24 hours"
+      }
+    }
+  },
+  "max_belief_per_win": {
+    "base": 100,
+    "faction_passive": 10,
+    "deity_faith": 20,
+    "faction_bonus_trigger": 5,
+    "pantheon_resonance": 10,
+    "total_max": 145,
+    "with_enemy_realm": 217.5,
+    "with_earth_neutral": 168.75
+  },
+  "balance_notes": [
+    "All factions have same total potential Belief earn rate (145 max per win with Pantheon Resonance)",
+    "Stat buffs total to same +15% across all stats at max tier for every faction",
+    "Infernal stacks ATK harder (+15%) but no defensive tier buffs \u2014 offensive trade-off",
+    "Empyrean stacks DEF harder (+10%) \u2014 defensive trade-off",
+    "Kami stacks DE regeneration \u2014 ability sustain trade-off",
+    "Tuatha stacks HP regeneration \u2014 survival sustain trade-off",
+    "All Pantheon Resonances give same +10% Belief \u2014 no faction advantage in belief farming"
+  ]
+}
