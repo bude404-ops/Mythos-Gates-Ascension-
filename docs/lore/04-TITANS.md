@@ -140,11 +140,11 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 - Thor — Dominion (Storm-Hammer Dominion)
 - Frigg — Counter (Weaver's Foreknowledge)
 - Freyja — Conduit (Seiðr War-Chant)
-- Mordun — Disruptor
-- Veyra — Sustain
-- Ragnor — Artillery
-- Ullr — Guardian
-- Sigrun — Assassin
+- Mordun — Disruption
+- Veyra — Endurance
+- Ragnor — Range
+- Ullr — Counter
+- Sigrun — Shadow
 
 ### Olympian — The Marble Sky of Olympus
 
@@ -152,11 +152,11 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 - Athena — Counter (Strategist's Aegis)
 - Artemis — Range (Silver-Arrow Hunt)
 - Ares — Fracture (Blood-Fury Breaker)
-- Nikos — Disruptor
-- Dione — Sustain
-- Helior — Artillery
-- Pallas — Guardian
-- Eiren — Assassin
+- Nikos — Disruption
+- Dione — Endurance
+- Helior — Range
+- Pallas — Counter
+- Eiren — Shadow
 
 ### Kami — The Shrine-Path Archipelago
 
@@ -164,11 +164,11 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 - Tsukuyomi — Shadow (Moon-Shadow Judgment)
 - Susanoo — Disruption (Storm-Blade Disruption)
 - Izanami — Endurance (Death-Gate Endurance)
-- Kageyori — Disruptor
-- Hanae — Sustain
-- Onimaru — Artillery
-- Korin — Guardian
-- Yamabito — Assassin
+- Kageyori — Disruption
+- Hanae — Endurance
+- Onimaru — Range
+- Korin — Counter
+- Yamabito — Shadow
 
 ### Tuatha — The Root-Crowned Green Below
 
@@ -176,11 +176,11 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 - Brigid — Conduit (Forge-Flame Conduit)
 - Morrígan — Shadow (Raven-Shadow Prophecy)
 - Lugh — Disruption (Many-Skilled Striker)
-- Nimue — Disruptor
-- Cernan — Sustain
-- Ailbhe — Artillery
-- Oghma — Guardian
-- Tara — Assassin
+- Nimue — Disruption
+- Cernan — Endurance
+- Ailbhe — Range
+- Oghma — Counter
+- Tara — Shadow
 
 ### Empyrean — The White Citadel Above Law
 
@@ -188,11 +188,11 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 - Gabriel — Range (Annunciation Herald)
 - Raphael — Endurance (Sacred Ward Endurance)
 - Uriel — Dominion (Light-Fire Dominion)
-- Elyndra — Disruptor
-- Orison — Sustain
-- Vespera — Artillery
-- Axiom — Guardian
-- Theon — Assassin
+- Elyndra — Disruption
+- Orison — Endurance
+- Vespera — Range
+- Axiom — Counter
+- Theon — Shadow
 
 ### Infernal Dominion — The Black Iron Court of Dominion
 
@@ -200,8 +200,8 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 - Asmodeus — Fracture (Hellfire Fracture)
 - Lilith — Shadow (Night-Whisper Shadow)
 - Naamah — Disruption (Velvet-Chains Disruption)
-- Orryx — Disruptor
-- Malvera — Sustain
-- Kharon — Artillery
-- Sablex — Guardian
-- Zerath — Assassin
+- Orryx — Disruption
+- Malvera — Endurance
+- Kharon — Range
+- Sablex — Counter
+- Zerath — Shadow

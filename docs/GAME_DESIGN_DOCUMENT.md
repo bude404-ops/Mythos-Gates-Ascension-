@@ -120,14 +120,25 @@ When an Avatar fights outside its home Realm, combat stats are modified:
 
 ### 3.2 Belief System
 - **Belief** is the spiritual fuel that powers the Avatar's connection to its Deity
-- Earned from: victories, followers gained through missions, realm control objectives, daily challenges
-- Spent on: Avatar level-ups (base stat increases)
-- More Belief = stronger Avatar projection = more of the Deity's power channeled
+- **Architecture:** Hybrid — Faction Base + Deity Faith (Mythology-Specific)
+- **All triggers are SOLO-ONLY** — no ally-dependent mechanics
+- **Earning rates:** 100 base + 10% faction + 20% deity faith (130 optimal) / 100 base + 10% + 5% fallback (115 standard) per win
+- **9 Solo Trigger Mechanics:** Endurance, Conduit, Dominion, Fracture, Disruption, Range, Counter, Shadow, Bulwark
+- **28 Deity Faiths:** Each deity has a unique mythology-specific faith name (e.g., Aten-Ra = "Sun-Scale Judgment", Sutekh = "Storm-Breaker's Vow")
+- **7 Faction Beliefs:** Each faction has a unique belief theme (e.g., Aten Ra = "Ma'at Devotion", Asgardian = "Oath Keeping")
+- **Faction Bonus Triggers:** +5% Belief from faction-specific conditions (e.g., Aten Ra = win above 50% HP, Infernal = execute below 20% HP)
+- **Tiered Faction Buffs:** 3 tiers unlocked at Avatar levels 10, 30, 50 — permanent stat buffs
+- **Pantheon Resonance:** Server-wide buff when all 4 deities in a faction reach Level 50
+- **Max Belief per win:** 145 (with all bonuses + Pantheon Resonance)
+- **Spent on:** Avatar level-ups (HP, DE, ATK, DEF, SPD — free allocation, no forced paths)
+- **Full config:** docs/lore/07-BELIEF-SYSTEM.md + docs/lore/08-FACTION-BELIEF-CONFIG.md
+- **Data files:** data/belief-system.json + data/faction-belief-config.json
 
 ### 3.3 Influence System
 - **Influence** is the territorial and political power the Avatar accumulates
 - Earned from: completing missions, winning battles, spreading the Deity's domain, defeating rival Avatars
 - Spent on: unlocking new abilities, upgrading existing abilities, relic enhancement, Ascension tier unlocks
+- **Full config:** data/ascension-system.json (influence_system section)
 
 ### 3.4 Relic System
 - Relics are route rewards — divine items tied to mythology
