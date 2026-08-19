@@ -22,6 +22,33 @@ Elite missions reinterpret these events as sharper precision trials. The Gate ha
 
 The finale leaves the Gate corrected but not closed. The Kami win the right to restore the boundary, not the right to seal it permanently.
 
+
+## CROSS-REALM CAMPAIGN STRUCTURE
+
+**Core Direction**: The first mission of each campaign takes place in the player's HOME REALM (The Sacred Kingdoms of Takamagahara). All subsequent missions have the avatar venturing OUT into OTHER REALMS, establishing cross-realm traversal as the core campaign experience. The trial dungeon (MAP-000) remains on Contested Earth as the universal entry point.
+
+### Realm Visit Order
+
+**Chapter 1 — Torii Threshold**: M01: Home realm (Takamagahara) — establishing avatar power. M02-M04: Avalora (The Living Wilds) — kindred nature realms
+
+**Chapter 2 — Spirit vs Light**: M05-M08: The Radiant Hierarchies — phasing vs radiance
+
+**Chapter 3 — Balance vs Corruption**: M09-M12: The Infernal Dominion — harmony vs chaos
+
+**Chapter 4 — Spirit vs Material**: M13-M16: The Celestial Heights of Olympus — foxfire vs marble
+
+**Chapter 5 — Sun and Storm**: M17-M18: The Solar Dominion of Khepra. M19-M20: The Storm-Rooted Aesir Holds — desert sun and storm iron
+
+### Realm Advantage System
+
+- **Home Realm**: Avatar fights with full power — no penalties
+- **Enemy Realms**: Avatar suffers power penalties — the realm's native deities hold advantage
+- **Earth (Neutral)**: No advantages or penalties — used only for the trial dungeon (MAP-000)
+
+### Lore Justification
+
+The Gate connects all realms. When a deity's avatar manifests through the Gate, the first step anchors them in their home realm's power. But the Hollow threat and the Gate's instability require avatars to venture beyond their borders — into the realms of rival deities, enemy factions, and hostile territory. Each realm visited tests the avatar's adaptability and earns Belief through surviving foreign divine power.
+
 ## Campaign Spine
 
 ### Chapter 1 — Torii-Moon Threshold
@@ -58,3 +85,25 @@ Elite missions reinterpret the campaign as a sharper precision trial. The Gate h
 - The False Reflection Kami gains the deity's Elite build and loadout
 
 The finale proves that precision was not accidental. The deity must win the boundary test twice — once against the Gate, once against the Gate's memory of their precision.
+
+
+## Cross-Realm Campaign Structure
+
+**New Direction**: The avatar ventures OUT of their home realm after the first mission. Only Mission 1 takes place in The Sacred Kingdoms of Takamagahara. All subsequent missions send the avatar into enemy realms.
+
+### Realm Journey:
+- **M01 (Chapter 1, Mission 1)**: HOME — The Sacred Kingdoms of Takamagahara (avatar establishes power, full strength, no realm penalty)
+- **M02-M04 (Chapter 1 remainder)**: Avalora — first venture into enemy territory
+- **M05-M08 (Chapter 2)**: The Celestial Heights of Olympus — deeper into foreign realms
+- **M09-M12 (Chapter 3)**: The Solar Dominion of Khepra — cross-realm escalation
+- **M13-M16 (Chapter 4)**: The Storm-Rooted Aesir Holds — advanced enemy territory
+- **M17-M18 (Chapter 5)**: The Radiant Hierarchies — penultimate realm
+- **M19-M20 (Chapter 5)**: The Infernal Dominion — final enemy realm, campaign climax
+
+### Realm Penalties:
+- **Home Realm (M01)**: Avatar fights at full power. No penalties. Belief generation is standard.
+- **Enemy Realms (M02-M20)**: Avatar suffers realm penalty — reduced power, hostile terrain, environmental hazards from the enemy faction's lore. Belief generation is increased (harder fights = more faith earned).
+- **Earth (Trial MAP-000)**: Neutral ground. No faction advantage or penalty. Used only for the initial trial when selecting a deity.
+
+### Narrative Logic:
+The Gate opens paths to all realms, not just the avatar's home. The Hollow threat destabilizes all seven realms simultaneously. The chosen deity sends their avatar out to secure alignment in foreign realms — each realm's Gate fragment must be defended or conquered. The avatar grows stronger through the Belief earned in these hostile campaigns, but fights at a disadvantage in enemy territory. Only the first mission is fought on home ground — everything after is the avatar proving their power in someone else's domain.

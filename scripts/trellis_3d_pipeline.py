@@ -240,7 +240,7 @@ def show_status():
             print(f"   Remaining: {remaining}")
     
     # Total
-total_art = sum(len(list(ART_DIR.glob(b["glob"]))) for b in BATCHES.values())
+    total_art = sum(len(list(ART_DIR.glob(b["glob"]))) for b in BATCHES.values())
     total_glb = 0
     for batch_name, batch in BATCHES.items():
         for art_file in ART_DIR.glob(batch["glob"]):

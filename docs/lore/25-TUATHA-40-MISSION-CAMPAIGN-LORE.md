@@ -22,6 +22,33 @@ Elite missions reinterpret these events as sharper adaptive trials. The wound ha
 
 The finale leaves the Gate integrated but not removed. The Tuatha win the right to let the scar become part of the forest, not the right to pretend it never happened.
 
+
+## CROSS-REALM CAMPAIGN STRUCTURE
+
+**Core Direction**: The first mission of each campaign takes place in the player's HOME REALM (Avalora (The Living Wilds)). All subsequent missions have the avatar venturing OUT into OTHER REALMS, establishing cross-realm traversal as the core campaign experience. The trial dungeon (MAP-000) remains on Contested Earth as the universal entry point.
+
+### Realm Visit Order
+
+**Chapter 1 — Rooted Threshold**: M01: Home realm (Avalora) — establishing avatar power. M02-M04: The Sacred Kingdoms of Takamagahara — kindred spirit-nature
+
+**Chapter 2 — Wild vs Civilized**: M05-M08: The Celestial Heights of Olympus — primal vs marble
+
+**Chapter 3 — Life vs Corruption**: M09-M12: The Infernal Dominion — living wood vs anti-light
+
+**Chapter 4 — Ancient vs Storm**: M13-M16: The Storm-Rooted Aesir Holds — old growth vs iron
+
+**Chapter 5 — Sun and Light**: M17-M18: The Solar Dominion of Khepra. M19-M20: The Radiant Hierarchies — desert and divine radiance
+
+### Realm Advantage System
+
+- **Home Realm**: Avatar fights with full power — no penalties
+- **Enemy Realms**: Avatar suffers power penalties — the realm's native deities hold advantage
+- **Earth (Neutral)**: No advantages or penalties — used only for the trial dungeon (MAP-000)
+
+### Lore Justification
+
+The Gate connects all realms. When a deity's avatar manifests through the Gate, the first step anchors them in their home realm's power. But the Hollow threat and the Gate's instability require avatars to venture beyond their borders — into the realms of rival deities, enemy factions, and hostile territory. Each realm visited tests the avatar's adaptability and earns Belief through surviving foreign divine power.
+
 ## Campaign Spine
 
 ### Chapter 1 — Silver-Root Threshold
@@ -58,3 +85,25 @@ Elite missions reinterpret the campaign as a sharper adaptive trial. The wound h
 - The Crow-Crowned Geas Breaker can now break promises the deity made in the Normal campaign
 
 The finale proves that adaptation was not accidental. The deity must heal the wound twice — once against the Gate, once against the Gate's memory of being healed.
+
+
+## Cross-Realm Campaign Structure
+
+**New Direction**: The avatar ventures OUT of their home realm after the first mission. Only Mission 1 takes place in Avalora. All subsequent missions send the avatar into enemy realms.
+
+### Realm Journey:
+- **M01 (Chapter 1, Mission 1)**: HOME — Avalora (avatar establishes power, full strength, no realm penalty)
+- **M02-M04 (Chapter 1 remainder)**: The Sacred Kingdoms of Takamagahara — first venture into enemy territory
+- **M05-M08 (Chapter 2)**: The Celestial Heights of Olympus — deeper into foreign realms
+- **M09-M12 (Chapter 3)**: The Storm-Rooted Aesir Holds — cross-realm escalation
+- **M13-M16 (Chapter 4)**: The Solar Dominion of Khepra — advanced enemy territory
+- **M17-M18 (Chapter 5)**: The Radiant Hierarchies — penultimate realm
+- **M19-M20 (Chapter 5)**: The Infernal Dominion — final enemy realm, campaign climax
+
+### Realm Penalties:
+- **Home Realm (M01)**: Avatar fights at full power. No penalties. Belief generation is standard.
+- **Enemy Realms (M02-M20)**: Avatar suffers realm penalty — reduced power, hostile terrain, environmental hazards from the enemy faction's lore. Belief generation is increased (harder fights = more faith earned).
+- **Earth (Trial MAP-000)**: Neutral ground. No faction advantage or penalty. Used only for the initial trial when selecting a deity.
+
+### Narrative Logic:
+The Gate opens paths to all realms, not just the avatar's home. The Hollow threat destabilizes all seven realms simultaneously. The chosen deity sends their avatar out to secure alignment in foreign realms — each realm's Gate fragment must be defended or conquered. The avatar grows stronger through the Belief earned in these hostile campaigns, but fights at a disadvantage in enemy territory. Only the first mission is fought on home ground — everything after is the avatar proving their power in someone else's domain.
