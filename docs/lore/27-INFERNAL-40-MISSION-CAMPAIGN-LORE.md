@@ -9,7 +9,7 @@ Players do not control the deities directly. Each player channels an **Avatar** 
 - **Death**: If an avatar falls, it respawns at the deity's domain. The deity is unharmed. Progression is preserved with a 10-20% Belief/Influence penalty.
 - **Scale**: Avatars maintain god-scale proportions in all realms — they tower over buildings, landscapes, and mortal structures.
 - **Solo Combat**: Each avatar fights alone. No allies, no healing companions. Faith triggers are self-only.
-- **Realm Advantage**: Avatars fight with full power in their deity's home realm. In enemy realms, they suffer penalties. Earth is neutral ground.
+- **Realm Advantage**: Avatars fight with full power in their deity's home realm. Earth is neutral ground — no faction holds advantage. Faction realms are reserved for special events.
 
 
 The Infernal Dominion campaign begins when the Black-Iron Gate reopens beneath a court of execution sigils. The Dominion does not treat the Gate as a threat to be defeated. It treats the Gate as an opportunity to be negotiated — and negotiation is the Dominion's native language.
@@ -23,31 +23,33 @@ Elite missions reinterpret these events as sharper contract trials. The Gate has
 The finale leaves the Gate bound but not broken. The Dominion win the right to renegotiate, not the right to own.
 
 
-## CROSS-REALM CAMPAIGN STRUCTURE
+## EARTH-CENTERED CAMPAIGN STRUCTURE
 
-**Core Direction**: The first mission of each campaign takes place in the player's HOME REALM (The Infernal Dominion). All subsequent missions have the avatar venturing OUT into OTHER REALMS, establishing cross-realm traversal as the core campaign experience. The trial dungeon (MAP-000) remains on Contested Earth as the universal entry point.
+**Core Direction**: ALL campaign missions take place on Earth. Earth is the primary game space — the Gate opened here, and the battles for control happen on human ground. Faction realms (Khepra, Asgard, Olympus, Takamagahara, Avalora, the Radiant Hierarchies, and the Infernal Dominion) are reserved for SPECIAL EVENTS outside the main campaign — limited-time raids, faction wars, seasonal content, and world boss encounters.
 
-### Realm Visit Order
+### Earth Environments by Chapter:
 
-**Chapter 1 — Black-Iron Threshold**: M01: Home realm (Infernal) — establishing avatar power. M02-M04: The Radiant Hierarchies — darkness vs light (the Fall)
+| Chapter | Earth Zone | Description |
+|---------|-----------|-------------|
+| Ch1 | Gate-Scarred Wasteland | Cracked earth with Gate-fracture lines, ruined urban outskirts, white energy bleeding from ground fissures |
+| Ch2 | Hollowed City Ruins | Shattered skyscrapers twisted by Gate energy, void-mist seeping through split streets, abandoned vehicles fused with stone |
+| Ch3 | Fractured Cathedral Grounds | Ancient structures cracked by Gate pressure, stained glass dissolved into light-shards, altar stones floating in anti-gravity zones |
+| Ch4 | Gate-Stone Battlefield | Open plains with Gate fragments protruding like black monoliths, scorched ground in faction-colored energy patterns, crater fields |
+| Ch5 | The Gate Threshold | Epicenter where all seven realm-Gates converge on Earth — reality warping with overlapping faction energies, the final battleground |
 
-**Chapter 2 — Chaos vs Order**: M05-M08: The Celestial Heights of Olympus — corruption vs civilization
+### Why Earth?
 
-**Chapter 3 — Corruption vs Nature**: M09-M12: Avalora (The Living Wilds) — anti-light vs living wood
+The Gate is a wound in reality that opened on Earth. The deities send their avatars to Earth because that is where the Gate's instability is concentrated. The faction realms are the deities' home domains — they are stable, protected, and NOT the front lines. Earth is the contested neutral ground where all factions meet, clash, and fight for control of the Gate fragments.
 
-**Chapter 4 — Anti-light vs Sun**: M13-M16: The Solar Dominion of Khepra — shadow vs solar fire
+### Realm Events (Outside Campaign)
 
-**Chapter 5 — Spirit and Storm**: M17-M18: The Sacred Kingdoms of Takamagahara. M19-M20: The Storm-Rooted Aesir Holds — foxfire and thunder
+Faction realms are accessible through special events:
+- **Realm Raids**: Limited-time incursions into a specific faction's realm for exclusive rewards
+- **Faction Wars**: Scheduled cross-realm PvP events where players fight in enemy faction territory
+- **Seasonal Content**: Holiday-themed events set in specific realms
+- **World Boss Arenas**: Boss encounters set in faction realm locations
 
-### Realm Advantage System
-
-- **Home Realm**: Avatar fights with full power — no penalties
-- **Enemy Realms**: Avatar suffers power penalties — the realm's native deities hold advantage
-- **Earth (Neutral)**: No advantages or penalties — used only for the trial dungeon (MAP-000)
-
-### Lore Justification
-
-The Gate connects all realms. When a deity's avatar manifests through the Gate, the first step anchors them in their home realm's power. But the Hollow threat and the Gate's instability require avatars to venture beyond their borders — into the realms of rival deities, enemy factions, and hostile territory. Each realm visited tests the avatar's adaptability and earns Belief through surviving foreign divine power.
+These events use the faction realm maps (MG-MAP-002 through MG-MAP-012) and offer rewards not available in the main campaign.
 
 ## Campaign Spine
 
@@ -87,23 +89,30 @@ Elite missions reinterpret the campaign as a sharper contract trial. The Gate ha
 The finale proves that the Dominion's law is not just for the weak. The deity must win the court twice — once against the Gate's charges, once against the Gate's memory of being outmaneuvered.
 
 
-## Cross-Realm Campaign Structure
+## EARTH-CENTERED CAMPAIGN STRUCTURE
 
-**New Direction**: The avatar ventures OUT of their home realm after the first mission. Only Mission 1 takes place in The Infernal Dominion. All subsequent missions send the avatar into enemy realms.
+**Core Direction**: ALL campaign missions take place on Earth. Earth is the primary game space — the Gate opened here, and the battles for control happen on human ground. Faction realms (Khepra, Asgard, Olympus, Takamagahara, Avalora, the Radiant Hierarchies, and the Infernal Dominion) are reserved for SPECIAL EVENTS outside the main campaign — limited-time raids, faction wars, seasonal content, and world boss encounters.
 
-### Realm Journey:
-- **M01 (Chapter 1, Mission 1)**: HOME — The Infernal Dominion (avatar establishes power, full strength, no realm penalty)
-- **M02-M04 (Chapter 1 remainder)**: The Radiant Hierarchies — first venture into enemy territory
-- **M05-M08 (Chapter 2)**: The Celestial Heights of Olympus — deeper into foreign realms
-- **M09-M12 (Chapter 3)**: Avalora — cross-realm escalation
-- **M13-M16 (Chapter 4)**: The Sacred Kingdoms of Takamagahara — advanced enemy territory
-- **M17-M18 (Chapter 5)**: The Solar Dominion of Khepra — penultimate realm
-- **M19-M20 (Chapter 5)**: The Storm-Rooted Aesir Holds — final enemy realm, campaign climax
+### Earth Environments by Chapter:
 
-### Realm Penalties:
-- **Home Realm (M01)**: Avatar fights at full power. No penalties. Belief generation is standard.
-- **Enemy Realms (M02-M20)**: Avatar suffers realm penalty — reduced power, hostile terrain, environmental hazards from the enemy faction's lore. Belief generation is increased (harder fights = more faith earned).
-- **Earth (Trial MAP-000)**: Neutral ground. No faction advantage or penalty. Used only for the initial trial when selecting a deity.
+| Chapter | Earth Zone | Description |
+|---------|-----------|-------------|
+| Ch1 | Gate-Scarred Wasteland | Cracked earth with Gate-fracture lines, ruined urban outskirts, white energy bleeding from ground fissures |
+| Ch2 | Hollowed City Ruins | Shattered skyscrapers twisted by Gate energy, void-mist seeping through split streets, abandoned vehicles fused with stone |
+| Ch3 | Fractured Cathedral Grounds | Ancient structures cracked by Gate pressure, stained glass dissolved into light-shards, altar stones floating in anti-gravity zones |
+| Ch4 | Gate-Stone Battlefield | Open plains with Gate fragments protruding like black monoliths, scorched ground in faction-colored energy patterns, crater fields |
+| Ch5 | The Gate Threshold | Epicenter where all seven realm-Gates converge on Earth — reality warping with overlapping faction energies, the final battleground |
 
-### Narrative Logic:
-The Gate opens paths to all realms, not just the avatar's home. The Hollow threat destabilizes all seven realms simultaneously. The chosen deity sends their avatar out to secure alignment in foreign realms — each realm's Gate fragment must be defended or conquered. The avatar grows stronger through the Belief earned in these hostile campaigns, but fights at a disadvantage in enemy territory. Only the first mission is fought on home ground — everything after is the avatar proving their power in someone else's domain.
+### Why Earth?
+
+The Gate is a wound in reality that opened on Earth. The deities send their avatars to Earth because that is where the Gate's instability is concentrated. The faction realms are the deities' home domains — they are stable, protected, and NOT the front lines. Earth is the contested neutral ground where all factions meet, clash, and fight for control of the Gate fragments.
+
+### Realm Events (Outside Campaign)
+
+Faction realms are accessible through special events:
+- **Realm Raids**: Limited-time incursions into a specific faction's realm for exclusive rewards
+- **Faction Wars**: Scheduled cross-realm PvP events where players fight in enemy faction territory
+- **Seasonal Content**: Holiday-themed events set in specific realms
+- **World Boss Arenas**: Boss encounters set in faction realm locations
+
+These events use the faction realm maps (MG-MAP-002 through MG-MAP-012) and offer rewards not available in the main campaign.

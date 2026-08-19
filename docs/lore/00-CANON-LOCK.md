@@ -71,16 +71,13 @@ The colossal divine beings are called Deities. Players channel Avatars — divin
 
 The extradimensional civilization-domains are called "Realms."
 
-## Cross-Realm Campaign Rule
+## Campaign Location Rule
 
-- **Trial (MAP-000)**: Earth — neutral ground, generic battle. Used when selecting a deity.
-- **Mission 1**: Avatar fights in their deity's HOME realm. Full power, no penalty.
-- **Missions 2-20**: Avatar ventures INTO OTHER REALMS. Each chapter targets a different enemy realm. Realm penalties apply.
-- The Gate opens paths to all seven realms — the Hollow threat is multi-realm, not local.
-- Avatars earn MORE Belief in enemy territory (harder fights = more faith).
-- Only the first mission is home defense. Everything after is the avatar proving power abroad.
-
-
+- **ALL campaign missions take place on Earth.** Earth is the main game space.
+- **Mission 1-20**: All on Earth (MAP-001), with varied terrain per chapter representing the Gate's corruption spreading across different Earth environments.
+- **Faction realms are EVENT-ONLY**: Khepra, Asgard, Olympus, Takamagahara, Avalora, Radiant Hierarchies, and the Infernal Dominion are used for special events (raids, faction wars, seasonal content, world bosses).
+- **Earth is neutral ground**: No faction advantage or penalty. The Gate opened here — this is the front line.
+- **The trial (MAP-000)**: Also on Earth — the entry point where mortals encounter the Gate and choose a deity.
 
 ## Avatar System (Core Mechanic)
 

@@ -138,12 +138,14 @@ Visual identity: broken gods, identity-drained cities, primordial monsters, dist
 
 Empyrean versus Infernal Dominion is not good versus evil. Empyrean represents ORDER. Infernal Dominion represents POWER. Both can produce honorable individuals. Both can commit terrible acts.
 
-## Cross-Realm Traversal
+## Realm Access
 
-Avatars do not stay in their home realm. After the initial home defense mission, the Gate opens corridors to other realms. Each realm has its own environmental hazards, enemy types, and tactical challenges:
+**Earth** is the primary campaign zone. All 20 missions per faction take place on Earth (MAP-001). Earth is neutral ground — no faction advantage or penalty.
 
-- **In enemy realms**: Avatars suffer realm penalties (reduced power, hostile terrain)
-- **In home realm**: Full power (only Mission 1)
-- **On Earth**: Neutral (trial dungeon only — MAP-000)
+**Faction Realms** (Khepra, Asgard, Olympus, Takamagahara, Avalora, Radiant Hierarchies, Infernal Dominion) are reserved for special events:
+- Realm Raids: Limited-time incursions for exclusive rewards
+- Faction Wars: Cross-realm PvP events
+- Seasonal Content: Holiday-themed events
+- World Boss Arenas: Boss encounters in realm-specific locations
 
-The campaign structure sends each avatar through 6 other realms across 5 chapters, building toward a climax in the most dangerous enemy territory.
+Faction realm maps (MG-MAP-002 through MG-MAP-012) are used ONLY for these events, not for the main campaign.

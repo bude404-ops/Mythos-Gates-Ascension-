@@ -93,12 +93,15 @@ The old paths are broken. The Gates are reopening. The Realms are mobilizing. Th
 
 Mythos Gates is the story of divine mythological civilizations fighting over the broken machinery of reality — not with science, not with spaceships, not with alien technology, but with ancient power, sacred law, living myth, and colossal divine Avatars projected through the Gates from the souls of their Realms.
 
-## Cross-Realm Campaign Design
+## Earth-Centered Campaign Design
 
-The Gate is not a single door — it is a wound that bleeds into every realm simultaneously. When a deity channels their avatar through the Gate, the first step lands in the deity's home domain. But the Hollow corruption does not wait at the threshold. It spreads across all seven realms.
+The Gate opened on Earth — and that is where the war is fought. All campaign missions take place on Earth. The faction realms are the deities' home domains, but they are not the front lines. Earth is the contested ground where the Gate's instability has reshaped the landscape into hostile, varied battlegrounds.
 
-After the initial home-realm defense (Mission 1), the avatar must venture OUT. The Gate opens corridors into enemy and allied realms alike. Each chapter of the campaign sends the avatar into a different realm — fighting through hostile terrain, facing the enemy faction's defenses, and securing the Gate fragment in that realm.
+The Gate has fractured Earth into distinct zones, each corrupted in different ways:
+- **Gate-Scarred Wasteland** (Ch1): The initial breach zone — cracked earth, bleeding energy
+- **Hollowed City Ruins** (Ch2): Urban areas twisted by Gate energy
+- **Fractured Cathedral Grounds** (Ch3): Sacred sites cracked open by divine pressure
+- **Gate-Stone Battlefield** (Ch4): Open plains where Gate fragments protrude as monoliths
+- **The Gate Threshold** (Ch5): The epicenter where all seven realm-Gates converge
 
-The avatar fights at a disadvantage in foreign realms — the local realm's laws resist the outsider. But the Belief earned in hostile territory is greater. The harder the fight, the stronger the faith.
-
-Only the trial (MAP-000) takes place on Earth. Earth is neutral ground — no faction holds advantage there. It is where mortals first witness the Gate and choose which deity to follow.
+Faction realms (Khepra, Asgard, Olympus, etc.) are stable and protected. They are accessible only through special events — limited-time raids, faction wars, and seasonal content. These events offer exclusive rewards and let players experience the deities' home domains directly.
