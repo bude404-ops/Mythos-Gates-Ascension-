@@ -4,7 +4,7 @@ The Asgardian campaign begins when the Thunder-Oath Gate reopens across the stor
 
 The campaign begins on the broken rune arrival span where the Bifrost once connected the Nine Realms. After the Ascension Collapse, the bridge shattered. The Gate's reopening does not repair the bridge — it reveals the fracture. The chosen deity must cross a span held together by oath-memory: every stone is a promise, every gap is a broken vow, and every step forward requires the walker to prove they still hold.
 
-Across five chapters, the campaign moves from oath reactivation through banner conflict, world-root decay, and a final confrontation where the Gate itself has become an oath that no one alive remembers making.
+Across five chapters, the campaign moves from oath reactivation through banner conflict, world-root decay, and a final confrontation where the Forgotten Standard Bearer — a Hollow entity wearing the armor of the first oath-keeper — stands at the end of the bridge, voiding every promise the deity has ever made.
 
 Elite missions reinterpret these events as sharper oath trials. The Gate has learned from the Normal campaign. It uses the deity's own promises as weapons, changes which oaths are still binding mid-mission, and forces the deity to win without swearing any new vows.
 
@@ -32,10 +32,10 @@ The storm-bridge opens into the blood-memory chamber — a place where the bridg
 
 **Mission Focus:** Blood-memory. The deity fights echoes of their own battles. Hollow rune-bound wolves use the deity's tactics against them. The bridge replays past wounds as terrain hazards.
 
-### Chapter 5 — The Thunder Tribunal Usurper
-The Gate's final chamber is the Thunder Tribunal — the court where broken oaths are judged. The Thunder Tribunal Usurper — a Hollow entity wearing the armor of the first Asgardian oath-keeper — presides. It has consumed enough oath-law to judge the deity by every promise they have ever made, including promises they did not know they were making. The Usurper's power is simple: it can declare any oath void. It begins voiding the deity's oath to their faction, to their people, to themselves. The deity must win not by making new oaths — which the Usurper can void — but by acting without oaths. By holding the bridge through action alone, not through words.
+### Chapter 5 — The Forgotten Standard Bearer
+The Gate's final chamber is the Standard Bearer Storm Keep — a storm-wrapped fortress at the end of the broken bridge where the first Asgardian oath-keeper once held the line. The Forgotten Standard Bearer waits there: a Hollow entity wearing the armor of that first oath-keeper, still holding the banner they died defending. It has consumed enough oath-law to declare any promise void. It begins voiding the deity's oath to their faction, to their people, to themselves. The deity cannot fight it with new oaths — the Standard Bearer can void any vow spoken in its presence. The deity must win not by making new oaths but by acting without words. By holding the bridge through action alone, by standing where the Standard Bearer once fell.
 
-**Mission Focus:** Final confrontation. Boss: The Thunder Tribunal Usurper. Victory condition: the deity must win by acting without swearing — proving that a promise kept in silence is still a promise kept. The bridge holds because the deity holds it, not because they said they would.
+**Mission Focus:** Final confrontation. Boss: The Forgotten Standard Bearer. Victory condition: the deity must win by acting without swearing — proving that a promise kept in silence is still a promise kept. The bridge holds because the deity holds it, not because they said they would.
 
 ## Elite Campaign
 
@@ -43,6 +43,6 @@ Elite missions reinterpret the campaign as a sharper oath trial. The Gate has le
 - Oath pressure now targets the deity's Normal campaign promises specifically
 - The Forgotten banner shows the deity's Normal campaign failures, not ancient ones
 - Jurisdiction changes faster in the cross-faction zones
-- The Thunder Tribunal Usurper can void the deity's Elite build and loadout, forcing victory with base abilities
+- The Forgotten Standard Bearer can void the deity's Elite build and loadout, forcing victory with base abilities
 
 The finale proves that holding was not accidental. The deity must hold the bridge twice — once against the oath, once against the oath's memory of being held.

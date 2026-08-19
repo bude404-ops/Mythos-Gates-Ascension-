@@ -4,8 +4,8 @@ Every Deity, NPC, and creature now has a readable canon backstory record. These 
 
 ## Rules
 
-- Titans remain faction-identified unless a mission explicitly permits otherwise.
+- Deities remain faction-identified unless a mission explicitly permits otherwise.
 - NPCs explain consequence and canon; they are not strike-force units.
-- Creatures are threats, remnants, predators, or catastrophes, never disguised Titans.
+- Creatures are threats, remnants, predators, or catastrophes, never disguised deities.
 - Backstories must tie into faction philosophy and at least one storyline arc.
 - Character pages should surface the short backstory first, then the chaptered profile.

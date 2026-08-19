@@ -8,6 +8,18 @@ They are the primary method of inter-Realm travel. They allow civilizations, god
 
 A Mythos Gate is not a portal made by technology. It is an ancient reality-structure: part threshold, part wound, part sacred mechanism, part living law.
 
+## Origin
+
+The Mythos Gate has no creator. No deity built it. No civilization forged it. It predates all 28 deities, all 7 Realms, and the Ascension Collapse itself.
+
+The Gate is a wound in reality that has always been there, breathing slowly — expanding and contracting as if alive. The 7 Realms were born FROM the Gate as fractures radiating outward from the original wound. The deities themselves emerged from the Gate in the age before memory.
+
+The deities do not own the Gate. The deities serve the Gate, whether they admit it or not. The Gate's Judgment trial — the universal trial dungeon that tests every mortal before they may walk a faction route — is the Gate's only voice. It does not speak in language. It tests through experience.
+
+The Ascension Collapse was not the Gate opening wider. It was the Gate beginning to CLOSE. As it constricts, the Realms it birthed are being crushed back into it. The deities fight to keep their Realms alive.
+
+The Gate cannot be destroyed. It cannot be fully opened. It cannot be fully closed. It can only be entered. What lies beyond remains unknowable — not even the gods know.
+
 ## Function
 
 Mythos Gates can:
@@ -25,7 +37,7 @@ Mythos Gates can:
 
 ## The Ascension Collapse
 
-The Ascension Collapse shattered the old dimensional order.
+The Ascension Collapse was the Gate beginning to close, crushing the Realms back toward the wound that birthed them.
 
 Before the Collapse, the Realms used ancient Gate roads. Some routes were sacred. Some were military. Some were sealed by treaty. Some were older than any surviving civilization.
 

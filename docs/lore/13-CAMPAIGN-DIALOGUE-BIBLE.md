@@ -12,7 +12,7 @@ Dialogue must sound like ancient civilizations handling sacred catastrophe. It s
 No modern slang. No contemporary hype phrasing, encounter jargon, or casual banter that breaks sacred pressure.
 3. **No chosen-one flattery.** The Creator is a commander/witness, not a prophesied savior unless later canon says so.
 4. **NPCs do not act playable.** They brief, warn, interpret, bargain, accuse, or bear witness.
-5. **Titans speak rarely.** When they do, their lines should carry Realm law, not personality gimmicks.
+5. **Deities speak rarely.** When they do, their lines should carry Realm law, not personality gimmicks.
 6. **Threats are not comedians.** Hollow, Forgotten, Gateborn, and world bosses should be unnerving through simplicity.
 7. **Every line should reveal worldview, objective, or danger.**
 
@@ -72,7 +72,7 @@ Radiant, formal, restrained. Her compassion is structured; her fear is quiet.
 ### TG-CHAPTER-001 — Signal Under Dead Stone
 **Mesha:** "The Gate has begun to breathe under dead stone. That is not reopening. That is distress."
 
-**Mesha:** "Send Titans, not hope. Hope leaves no footprint on a cracked seal."
+**Mesha:** "Send deities, not hope. Hope leaves no footprint on a cracked seal."
 
 ### TG-CHAPTER-002 — Mesha Opens the Solar Record
 **Mesha:** "This tablet held seven thousand gate-signs yesterday. Today it holds six thousand nine hundred and ninety-nine. The missing sign has not been erased. It has been eaten."

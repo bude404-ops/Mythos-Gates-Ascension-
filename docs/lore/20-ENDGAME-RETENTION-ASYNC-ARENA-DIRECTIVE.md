@@ -14,5 +14,5 @@ Real-time PvP is not implemented. The current Arena architecture is asynchronous
 ## Director Decisions
 - Gameplay: all standard modes use one active deity.
 - Lore: no Canon rewrite.
-- Art: 2D tactical Titans and elongated 3D tactical maps remain locked.
+- Art: 2D tactical deities and elongated 3D tactical maps remain locked.
 - Development: registries first, content second, validation always.

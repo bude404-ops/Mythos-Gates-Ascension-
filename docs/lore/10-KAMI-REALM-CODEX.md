@@ -27,7 +27,7 @@ The The Shrine-Path Archipelago is defined by ritual precision, sacred fog, moon
 - seal an Oni pact without breaking canon law.
 - hunt a Hollow hiding inside a sacred festival.
 
-## Titan Codex Hooks
+## Deity Codex Hooks
 ### Amaterion Spirit-Sun (TG-TITAN-028)
 - **Role:** Defender
 - **Lore Function:** Amaterion Spirit-Sun embodies the Kami answer to the Ascension Collapse: defender shaped into Realm doctrine.
@@ -75,4 +75,4 @@ The The Shrine-Path Archipelago is defined by ritual precision, sacred fog, moon
 - **Visual Context:** Frame Yamabito Stone Prayer against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
 
 ## Director Ruling
-This chapter expands faction, Realm, and Titan presentation only. It does not create playable non-Titan entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.
+This chapter expands faction, Realm, and deity presentation only. It does not create playable non-deity entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.

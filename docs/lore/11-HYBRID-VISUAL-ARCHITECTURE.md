@@ -9,7 +9,7 @@
 
 Mythos Gates: Ascension is intentionally hybrid.
 
-- **2D sprites** are used for player Titans, player characters, enemy characters, enemy deities, battlefield units, and combatants.
+- **2D sprites** are used for player deities, player characters, enemy characters, enemy deities, battlefield units, and combatants.
 - **3D environments** are used for campaign maps, Realms, locations, exploration spaces, tactical battle environments where appropriate, campaign progression spaces, and major environmental scenes.
 - Battlefield characters must **not** become 3D models just because the environment is 3D.
 - Realm travel is handled through **Mythos Gates / Stargates**, not futuristic craft or sci-fi spacecraft.
@@ -49,7 +49,7 @@ Sprites must feel grounded with:
 - Perspective-aware scale
 - Ability effects that connect to terrain
 
-Titans may be larger than normal characters, but scale must be intentional and consistent.
+Deities may be larger than normal characters, but scale must be intentional and consistent.
 
 ## Campaign to Battle Flow
 

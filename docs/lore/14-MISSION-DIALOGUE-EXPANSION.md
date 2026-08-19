@@ -15,7 +15,7 @@ Each chapter now has:
 
 ## Tone Standard
 
-Dialogue remains restrained, mythic, tactical, and lore-bound. NPCs interpret and pressure the story; Titans remain the chosen deity. Threats speak with dread or law, not jokes.
+Dialogue remains restrained, mythic, tactical, and lore-bound. NPCs interpret and pressure the story; deities remain the chosen divine. Threats speak with dread or law, not jokes.
 
 ## Coverage
 
@@ -41,4 +41,4 @@ Dialogue remains restrained, mythic, tactical, and lore-bound. NPCs interpret an
 
 ## Sample Direction
 
-Use these lines as production seeds, not final barks spammed every turn. They should appear at meaningful thresholds: mission start, objective reveal, battlefield pressure spike, Titan danger state, success, failure, and post-mission codex unlock.
+Use these lines as production seeds, not final barks spammed every turn. They should appear at meaningful thresholds: mission start, objective reveal, battlefield pressure spike, deity danger state, success, failure, and post-mission codex unlock.
