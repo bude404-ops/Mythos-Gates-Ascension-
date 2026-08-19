@@ -120,6 +120,13 @@ When an Avatar fights outside its home Realm, combat stats are modified:
 
 ### 3.2 Belief System
 - **Belief** is the spiritual fuel that powers the Avatar's connection to its Deity
+- **Architecture:** Hybrid — Faction Base (+10%) + Deity Faith (+20% lore-specific trigger) + Fallback (+5%)
+- **All triggers are SOLO-ONLY** — no ally-dependent mechanics
+- **9 Faith Triggers:** Endurance, Conduit, Dominion, Fracture, Disruption, Range, Counter, Shadow, Bulwark
+- **28 Deity Faiths:** Each deity has a unique faith name based on their actual mythology (e.g., Aten-Ra = "Sun-Scale Judgment", Sutekh = "Storm-Breaker's Vow")
+- **Faction Belief Config:** Each faction has passive bonus, unique trigger, 3 tiered buffs, and Pantheon Resonance
+- **Max Belief per win:** 145 (base + passive + faith + trigger + resonance)
+- **See:** docs/lore/07-BELIEF-SYSTEM.md (full deity faith list), docs/lore/08-FACTION-BELIEF-CONFIG.md (faction bonuses)
 - **Architecture:** Hybrid — Faction Base + Deity Faith (Mythology-Specific)
 - **All triggers are SOLO-ONLY** — no ally-dependent mechanics
 - **Earning rates:** 100 base + 10% faction + 20% deity faith (130 optimal) / 100 base + 10% + 5% fallback (115 standard) per win

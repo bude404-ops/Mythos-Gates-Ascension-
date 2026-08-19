@@ -146,12 +146,12 @@
     "choice": "Executing may spend action economy but grants deity-specific payoff.",
     "payoffs": {
       "Reaver": "heal/lifesteal surge",
-      "Assassin": "Momentum refund/stealth reset",
+      "Shadow": "Momentum refund/stealth reset",
       "Arcanist": "Divinity restoration",
       "Warden": "shield/counter guard",
       "Destroyer": "nearby AoE rupture",
       "Duelist": "follow-up movement or riposte",
-      "Controller": "terrain/status spread",
+      "Dominion": "terrain/status spread",
       "Trickster": "clone/teleport reset",
       "Juggernaut": "unstoppable stack"
     }
@@ -205,9 +205,9 @@
       "Swarmer",
       "Brute",
       "Hunter",
-      "Controller",
+      "Dominion",
       "Disruptor",
-      "Guardian",
+      "Counter",
       "Executioner",
       "Elite",
       "Champion",
@@ -217,9 +217,9 @@
   "deityArchetypes": [
     "Juggernaut",
     "Duelist",
-    "Assassin",
+    "Shadow",
     "Destroyer",
-    "Controller",
+    "Dominion",
     "Warden",
     "Reaver",
     "Arcanist",
@@ -374,5 +374,5 @@
       "activeDeityCount": 1
     }
   ],
-  "sourceCultureAbilityRule": "All basics, techniques, signatures, movement, reactions, executions, weapons, armor, and cores must express the selected deity’s Realm as the older source behind Earth mythology."
+  "sourceCultureAbilityRule": "All basics, techniques, signatures, movement, reactions, executions, weapons, armor, and cores must express the selected deity\u2019s Realm as the older source behind Earth mythology."
 }
