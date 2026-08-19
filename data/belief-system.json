@@ -1,120 +1,222 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "date": "2026-08-19",
-  "architecture": "Hybrid \u2014 Faction Base + Deity Specialty",
-  "balance_principle": "All 28 deities reach the same level milestones at the same pace if played to their specialty. Gap between optimal and casual play is ~13%.",
+  "architecture": "Hybrid \u2014 Faction Base + Deity Faith (Mythology-Specific)",
+  "solo_only": true,
+  "balance_principle": "All 28 deities reach the same level milestones at the same pace if played to their faith trigger. Gap between optimal and casual play is ~13%.",
   "earning_rates": {
     "base": 100,
     "faction_passive": "+10%",
-    "deity_specialty": "+20% (role-specific trigger)",
-    "fallback": "+5% (any victory, if specialty not triggered)",
+    "deity_faith": "+20% (lore-specific trigger)",
+    "fallback": "+5% (any victory, if faith not triggered)",
     "optimal_per_win": 130,
     "standard_per_win": 115,
     "enemy_realm_modifier": "+50%",
     "earth_neutral_modifier": "+25%"
   },
+  "trigger_mechanics": {
+    "Endurance": "Win while staying above 50% HP the entire fight",
+    "Conduit": "Win after executing 3+ ability combo chains in one encounter",
+    "Dominion": "Win while controlling 60%+ of battlefield nodes",
+    "Fracture": "Win after breaking 3+ enemy armor/defense stacks",
+    "Disruption": "Win after interrupting 3+ enemy attacks",
+    "Range": "Win with 5+ ranged kills",
+    "Counter": "Win after blocking/parrying 5+ enemy attacks",
+    "Shadow": "Win with 3+ stealth or timed-critical executions",
+    "Bulwark": "Win without taking a hit from the boss"
+  },
   "factions": [
     {
       "name": "Aten Ra",
       "belief_name": "Ma'at Devotion",
-      "theme": "Sacred order and cosmic balance",
-      "passive": "+10% Belief from all victories"
+      "theme": "Sacred order and cosmic balance"
     },
     {
       "name": "Asgardian",
       "belief_name": "Oath Keeping",
-      "theme": "Sacred vows and honor",
-      "passive": "+10% Belief from all victories"
+      "theme": "Sacred vows and honor"
     },
     {
       "name": "Olympian",
       "belief_name": "Arete Excellence",
-      "theme": "Mastery, victory, and witnessed glory",
-      "passive": "+10% Belief from all victories"
+      "theme": "Mastery, victory, and witnessed glory"
     },
     {
       "name": "Kami",
       "belief_name": "Wa Harmony",
-      "theme": "Balance, precision, and threshold respect",
-      "passive": "+10% Belief from all victories"
+      "theme": "Balance, precision, and threshold respect"
     },
     {
       "name": "Tuatha",
       "belief_name": "Sovereign Memory",
-      "theme": "Memory, heritage, and living tradition",
-      "passive": "+10% Belief from all victories"
+      "theme": "Memory, heritage, and living tradition"
     },
     {
       "name": "Empyrean",
       "belief_name": "Choral Order",
-      "theme": "Sacred order, unity, and law",
-      "passive": "+10% Belief from all victories"
+      "theme": "Sacred order, unity, and law"
     },
     {
       "name": "Infernal Dominion",
       "belief_name": "Debt of Power",
-      "theme": "Power, contracts, and dominion",
-      "passive": "+10% Belief from all victories"
+      "theme": "Power, contracts, and dominion"
     }
   ],
-  "specialty_triggers": {
-    "Defender": {
-      "name": "Bulwark Faith",
-      "trigger": "Win without objective taking damage",
-      "bonus": "+20% Belief"
-    },
-    "Battery": {
-      "name": "Conduit Faith",
-      "trigger": "Win after 3+ ability combo chains",
-      "bonus": "+20% Belief"
-    },
-    "Controller": {
-      "name": "Domain Faith",
-      "trigger": "Win while controlling 60%+ terrain",
-      "bonus": "+20% Belief"
-    },
-    "Breaker": {
-      "name": "Fracture Faith",
-      "trigger": "Win after breaking 3+ enemy armor stacks",
-      "bonus": "+20% Belief"
-    },
-    "Disruptor": {
-      "name": "Chaos Faith",
-      "trigger": "Win after interrupting 3+ enemy abilities",
-      "bonus": "+20% Belief"
-    },
-    "Sustain": {
-      "name": "Endurance Faith",
-      "trigger": "Win while keeping allies above 50% HP",
-      "bonus": "+20% Belief"
-    },
-    "Artillery": {
-      "name": "Range Faith",
-      "trigger": "Win with 5+ ranged kills",
-      "bonus": "+20% Belief"
-    },
-    "Guardian": {
-      "name": "Aegis Faith",
-      "trigger": "Win after blocking 5+ attacks on allies",
-      "bonus": "+20% Belief"
-    },
-    "Assassin": {
-      "name": "Shadow Faith",
-      "trigger": "Win with 3+ stealth executions",
-      "bonus": "+20% Belief"
-    }
-  },
-  "belief_sources": {
-    "standard_victory": 100,
-    "faction_passive": "+10%",
-    "deity_specialty": "+20%",
-    "fallback_bonus": "+5%",
-    "lore_pickup": 25,
-    "boss_defeat": 200,
-    "world_boss_participation": 500,
-    "daily_challenge": 150,
-    "realm_control_objective": 75,
-    "follower_recruitment": 10
+  "deity_faiths": {
+    "Aten Ra": [
+      {
+        "deity": "Aten-Ra",
+        "faith_name": "Sun-Scale Judgment",
+        "mechanic": "Endurance"
+      },
+      {
+        "deity": "Sutekh",
+        "faith_name": "Storm-Breaker's Vow",
+        "mechanic": "Fracture"
+      },
+      {
+        "deity": "Iset",
+        "faith_name": "Throne of Weaving",
+        "mechanic": "Conduit"
+      },
+      {
+        "deity": "Amunet",
+        "faith_name": "Hidden Word Devotion",
+        "mechanic": "Shadow"
+      }
+    ],
+    "Asgardian": [
+      {
+        "deity": "Odin",
+        "faith_name": "Allfather's Sacrifice",
+        "mechanic": "Endurance"
+      },
+      {
+        "deity": "Thor",
+        "faith_name": "Storm-Hammer Dominion",
+        "mechanic": "Dominion"
+      },
+      {
+        "deity": "Frigg",
+        "faith_name": "Weaver's Foreknowledge",
+        "mechanic": "Counter"
+      },
+      {
+        "deity": "Freyja",
+        "faith_name": "Sei\u00f0r War-Chant",
+        "mechanic": "Conduit"
+      }
+    ],
+    "Olympian": [
+      {
+        "deity": "Zeus",
+        "faith_name": "Sky-Throne Dominion",
+        "mechanic": "Dominion"
+      },
+      {
+        "deity": "Athena",
+        "faith_name": "Strategist's Aegis",
+        "mechanic": "Counter"
+      },
+      {
+        "deity": "Artemis",
+        "faith_name": "Silver-Arrow Hunt",
+        "mechanic": "Range"
+      },
+      {
+        "deity": "Ares",
+        "faith_name": "Blood-Fury Breaker",
+        "mechanic": "Fracture"
+      }
+    ],
+    "Kami": [
+      {
+        "deity": "Amaterasu",
+        "faith_name": "Sun-Goddess Radiance",
+        "mechanic": "Bulwark"
+      },
+      {
+        "deity": "Tsukuyomi",
+        "faith_name": "Moon-Shadow Judgment",
+        "mechanic": "Shadow"
+      },
+      {
+        "deity": "Susanoo",
+        "faith_name": "Storm-Blade Disruption",
+        "mechanic": "Disruption"
+      },
+      {
+        "deity": "Izanami",
+        "faith_name": "Death-Gate Endurance",
+        "mechanic": "Endurance"
+      }
+    ],
+    "Tuatha": [
+      {
+        "deity": "Dagda",
+        "faith_name": "Cauldron of Endless Plenty",
+        "mechanic": "Endurance"
+      },
+      {
+        "deity": "Morrigan",
+        "faith_name": "Raven-Shadow Prophecy",
+        "mechanic": "Shadow"
+      },
+      {
+        "deity": "Brigid",
+        "faith_name": "Forge-Flame Conduit",
+        "mechanic": "Conduit"
+      },
+      {
+        "deity": "Lugh",
+        "faith_name": "Many-Skilled Striker",
+        "mechanic": "Disruption"
+      }
+    ],
+    "Empyrean": [
+      {
+        "deity": "Michael",
+        "faith_name": "Aegis of the Choral Host",
+        "mechanic": "Counter"
+      },
+      {
+        "deity": "Gabriel",
+        "faith_name": "Annunciation Herald",
+        "mechanic": "Range"
+      },
+      {
+        "deity": "Raphael",
+        "faith_name": "Sacred Ward Endurance",
+        "mechanic": "Endurance"
+      },
+      {
+        "deity": "Uriel",
+        "faith_name": "Light-Fire Dominion",
+        "mechanic": "Dominion"
+      }
+    ],
+    "Infernal Dominion": [
+      {
+        "deity": "Lucifer",
+        "faith_name": "Morningstar Dominion",
+        "mechanic": "Dominion"
+      },
+      {
+        "deity": "Lilith",
+        "faith_name": "Night-Whisper Shadow",
+        "mechanic": "Shadow"
+      },
+      {
+        "deity": "Asmodeus",
+        "faith_name": "Hellfire Fracture",
+        "mechanic": "Fracture"
+      },
+      {
+        "deity": "Naamah",
+        "faith_name": "Velvet-Chains Disruption",
+        "mechanic": "Disruption"
+      }
+    ]
   },
   "level_milestones": {
     "1-10": {
