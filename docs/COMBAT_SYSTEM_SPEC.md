@@ -119,3 +119,70 @@ The player makes 4 strategic decisions every fight:
 
 ---
 **Status:** LOCKED — Official Combat System Specification
+
+---
+
+## Enemy AI System
+
+### Design Philosophy
+Hollow enemies are not punching bags — they are tactical opponents that understand the battlefield, the player's abilities, and the ground effect system. The AI creates emergent, chess-like encounters where the player must think 2-3 moves ahead.
+
+### 1. Terrain Awareness
+Enemies interact with ground effect zones strategically:
+- **Zone Exploitation:** Enemies seek out their own buff zones to power up before engaging
+- **Zone Denial:** Enemies occupy or block access to player buff zones
+- **Hazard Baiting:** Enemies use knockback abilities to push the player toward hazard zones
+- **Cover Usage:** Enemies retreat behind 3D terrain elements to break line of sight and reset
+- **Debuff Ambush:** Enemies wait in debuff zones where the player will be slowed/weakened if they approach
+
+### 2. Combat Mechanic Intelligence
+Enemies track and respond to the player's combat state:
+- **Cooldown Tracking:** Enemies recognize when player abilities are on cooldown and press the attack during vulnerable windows
+- **Belief Bar Awareness:** Enemies detect when the player's ultimate is charging and attempt to burst the player down before it activates
+- **Range Exploitation:** Melee enemies attempt to close distance; ranged enemies maintain distance and kite
+- **Stat Profiling:** Enemies identify player weaknesses — if player dodge is low, they swarm with fast attacks; if parry is low, they use heavy attacks
+- **Repositioning:** Enemies reposition when the player moves to a buff zone, forcing the player to choose between the buff and pursuing
+
+### 3. Enemy Archetypes
+
+| Archetype | AI Behavior | Role |
+|----------|-------------|------|
+| **Stalker** | Flanks the player, waits for engagement with another enemy, then strikes from behind | Assassin |
+| **Brute** | Charges through hazard zones (immune to terrain damage), uses ground slam to CREATE new hazard zones | Tank/Zone Controller |
+| **Caster** | Stands in buff zones at max range, casts from distance, repositions if player approaches | Ranged DPS |
+| **Swarmer** | Groups up in debuff zones to slow the player, overwhelms with numbers, weak individually | Crowd Control |
+| **Sentinel** | Guards key terrain positions, will not chase, forces the player to approach into unfavorable zones | Defender |
+
+### 4. Adaptive Difficulty Scaling
+Enemy AI sophistication scales across the campaign:
+
+| Campaign Stage | AI Behavior |
+|----------------|------------|
+| **Early Campaign (Ch 1-2)** | Enemies use terrain but telegraph attacks clearly. Basic positioning, predictable patterns. |
+| **Mid Campaign (Ch 3-4)** | Enemies start tracking cooldowns, using debuff zones strategically, flanking with Stalkers. |
+| **Late Campaign (Ch 5)** | Full tactical AI — combos, zone denial, ability timing, coordinated attacks between archetypes. |
+| **Boss Fights** | Unique AI patterns per boss. Bosses manipulate zones, summon adds, phase-shift tactics. |
+
+### 5. Zone Manipulation
+Advanced enemies can alter the battlefield:
+
+- **Zone Creation:** Brute-type enemies crack the floor, creating new void-mist hazard zones
+- **Zone Corruption:** Caster-type enemies can corrupt a player buff zone into a debuff zone (e.g., turn a solar buff zone into a void-mist slow zone)
+- **Zone Displacement:** Some enemies can push ground effect zones toward the player with abilities
+- **Zone Clearing:** Elite enemies can destroy hazard zones to open escape routes for themselves
+
+### 6. Coordinated Enemy Tactics
+In late-game encounters, enemies coordinate:
+- **Pincer:** Stalkers flank while Brutes push from the front
+- **Zone Trap:** Caster corrupts the player's buff zone while Swarmers herd the player toward a hazard
+- **Ultimate Denial:** Sentinels block escape routes while the team bursts the player before their Belief bar fills
+- **Divide and Conquer:** Enemies split the player's attention across multiple threat zones
+
+### Design Constraints
+- All AI behavior must be READABLE on the 2.5D plane — the player can see what enemies are doing and respond
+- AI does not cheat — it operates on the same stat system as the player (enemies have dodge, parry, accuracy, attack stats)
+- AI respects the same ground effect rules — enemies take damage from hazard zones (except Brutes, who are immune)
+- The flat plane ensures all tactical positioning is visible and fair — no off-screen surprises
+
+---
+**Status:** LOCKED — Enemy AI System Specification
