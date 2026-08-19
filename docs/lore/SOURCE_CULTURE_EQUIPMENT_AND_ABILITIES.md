@@ -1,5 +1,9 @@
 # Source-Culture Weapons, Gear, and Abilities Canon
 
+
+> **Avatar System**: Players channel Avatars of their chosen deity — divine projections that carry the deity's power into combat. The deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn at deity domain with 10-20% penalty. Solo combat only. God-scale in all realms.
+
+
 Updated: 2026-08-16
 
 Every Deity weapon, armor body, resonance core, basic, technique, signature, reaction, movement skill, execution, passive, and Divine Ascension must express the Realm as the source culture humans later copied. Generic names like Implement, Realmplate, Charge Core, Blow, or Judgment Light are rejection flags unless intentionally replaced by a faction-specific source term.

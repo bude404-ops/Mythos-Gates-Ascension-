@@ -1,5 +1,8 @@
 # Mythology Deep Dive — All 7 Factions
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 ## Game Concept
 The deities are the TRUE divine beings. Human cultures (Egyptians, Norse, Greeks, Japanese, Celts, etc.) copied their gods, architecture, clothing, and customs from DIMENSIONS of these real deities leaking through the Mythos Gates. The gods did not copy humans — humans copied gods.
 

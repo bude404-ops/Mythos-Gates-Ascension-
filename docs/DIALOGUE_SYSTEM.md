@@ -27,7 +27,7 @@ Every chapter has 6 dialogue beats:
 2. **No modern slang.** No contemporary hype phrasing, encounter jargon, or casual banter.
 3. **No chosen-one flattery.** The Creator is a commander/witness, not a prophesied savior.
 4. **NPCs do not act playable.** They brief, warn, interpret, bargain, accuse, or bear witness.
-5. **Titans speak rarely.** When they do, their lines carry Realm law, not personality gimmicks.
+5. **Deities speak rarely through their Avatars.** When they do, their lines carry Realm law, not personality gimmicks.
 6. **Threats are not comedians.** Hollow, Forgotten, Gateborn, and world bosses are unnerving through simplicity.
 7. **Every line reveals worldview, objective, or danger.**
 
@@ -115,7 +115,7 @@ Every chapter has 6 dialogue beats:
 
 **INTRO:**
 > **Mesha:** "The Gate has begun to breathe under dead stone. That is not reopening. That is distress."
-> **Mesha:** "Send Titans, not hope. Hope leaves no footprint on a cracked seal."
+> **Mesha:** "Send Avatars, not hope. Hope leaves no footprint on a cracked seal."
 > **Mesha:** "Enter the Sun-Scale Verdict Descent. Record what you find. Do not embellish it."
 
 **MID-BATTLE (50% cleared):**
@@ -130,7 +130,7 @@ Every chapter has 6 dialogue beats:
 > **Mesha:** "This was not a reopening. This was a warning."
 
 **DEFEAT:**
-> **Mesha:** "The record is closed. The Titan fell. The Gate does not mourn. Neither do I."
+> **Mesha:** "The record is closed. The Deity fell. The Gate does not mourn. Neither do I."
 > **Mesha:** "Return when you are what you were. The dead stone will still be here."
 
 **POST-MISSION:**

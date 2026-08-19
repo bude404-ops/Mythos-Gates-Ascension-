@@ -135,7 +135,7 @@ def update_art_prompts():
     with open(os.path.join(BASE, 'data', 'art-prompts.json')) as f:
         prompts = json.load(f)
     
-    with open(os.path.join(BASE, 'data', 'titans.json')) as f:
+    with open(os.path.join(BASE, 'data', 'deitys.json')) as f:
         deities = json.load(f)
     
     # Build deity lookup

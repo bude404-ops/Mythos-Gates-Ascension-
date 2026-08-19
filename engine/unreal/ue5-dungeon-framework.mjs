@@ -2,7 +2,7 @@ import fs from 'node:fs';
 
 export const REQUIRED_UE5_SYSTEMS = Object.freeze(['World Partition when it provides real mobile loading benefit', 'Level Instances', 'Data Assets', 'Blueprint systems', 'Modular Actor Components', 'Niagara', 'Material Instances', 'Data Tables']);
 export const REQUIRED_STAGE_ORDER = Object.freeze(['Region', 'Zone', 'Terrain', 'Structures', 'Props', 'Exploration paths', 'Combat arenas', 'Enemy placement', 'Lighting', 'Optimization', 'Final polish']);
-export const REQUIRED_CONTENT_FOLDERS = Object.freeze(['Titans/', 'Characters/', 'Creatures/', 'Environments/', 'Gates/', 'Effects/', 'Materials/', 'UI/', 'Audio/']);
+export const REQUIRED_CONTENT_FOLDERS = Object.freeze(['Deities/', 'Characters/', 'Creatures/', 'Environments/', 'Gates/', 'Effects/', 'Materials/', 'UI/', 'Audio/']);
 
 export function loadUe5DungeonFramework() {
   return JSON.parse(fs.readFileSync('engine/unreal/dungeon-crawler-framework.json', 'utf8'));
@@ -17,7 +17,7 @@ export function validateUe5DungeonFramework(framework, firstTemplate, sourceMiss
   if (framework.primaryEngine !== 'Unreal Engine 5') issues.push('framework must target Unreal Engine 5 as primary engine');
   for (const system of REQUIRED_UE5_SYSTEMS) if (!framework.unrealSystems?.includes(system)) issues.push(`missing required UE5 system: ${system}`);
   for (const folder of REQUIRED_CONTENT_FOLDERS) if (!framework.assetPipeline?.folders?.includes(folder)) issues.push(`missing Content folder mapping: ${folder}`);
-  if (framework.titanScaleRules?.standardCombatActiveTitans !== 1) issues.push('standard combat must preserve one active deity');
+  if (framework.deityScaleRules?.standardCombatActiveAvatars !== 1) issues.push('standard combat must preserve one active deity');
   if (JSON.stringify(framework.aiGenerationStages) !== JSON.stringify(REQUIRED_STAGE_ORDER)) issues.push('AI generation stages must remain ordered and piecewise');
   if (firstTemplate.sourceMissionId !== sourceMission?.id) issues.push('first template must point at the first existing mission');
   if (firstTemplate.sourceFactionId !== sourceMission?.factionId) issues.push('first template faction must match source mission');

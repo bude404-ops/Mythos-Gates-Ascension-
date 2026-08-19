@@ -8,7 +8,7 @@
   "summary": "The first reopened Mythos Gate opens under impossible pressure. The Creator learns how Deities, Mythos Gates, Hollow leakage, and Director governance function. Full mission-arc recreation pass now rewrites all seven Mythos Gates routes with route-native chapter arcs, mission titles, objectives, dialogue hooks, and mission art prompts.",
   "loreDirectorNotes": "Introduces canon without adding playable non-Deity entries or ordinary units. Mesha and the Hollow Mouth are non-playable narrative anchors.",
   "gameplayDirectorNotes": "Designed as the onboarding campaign: single active deity selection, map objectives, enemy turns, and Gate sealing. Current pass targets dungeon-route pacing, one-deity readability, shrine/treasure/boss nodes, and faction-specific hazard language.",
-  "artDirectorNotes": "Needs approved artwork for the First Reopening Gate, Mesha, Hollow Wretch, and MG-TITAN-001.",
+  "artDirectorNotes": "Needs approved artwork for the First Reopening Gate, Mesha, Hollow Wretch, and MG-DEITY-001.",
   "developmentDirectorNotes": "Campaign can be expanded from current game/index.html without replacing the playable loop.",
   "chapters": [
     "MG-CHAPTER-001",
@@ -38,16 +38,16 @@
     ],
     "structure": "Campaign → Region → Zone → Exploration → Encounter → Tactical Combat → Reward → Next Zone",
     "zoneStrategy": "large detailed modular zones, not seamless open world and not generic corridors",
-    "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+    "combatRule": "ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE",
     "prototypeGate": "Do not expand implementation ahead of approved first-zone loop."
   },
-  "oneTitanVsManyCombat": {
-    "playerControlledTitans": 1,
-    "rule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+  "oneAvatarVsManyCombat": {
+    "playerControlledAvatars": 1,
+    "rule": "ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE",
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled Titans",
+      "multiple player-controlled Deities",
       "ally positioning",
       "team turns"
     ],

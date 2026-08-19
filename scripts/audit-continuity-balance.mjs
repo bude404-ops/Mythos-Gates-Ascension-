@@ -12,7 +12,7 @@ const data = {
   missions: read('data/mission-registry.json'),
   dialogue: read('data/mission-dialogue.json'),
   arts: read('data/mission-art-packages.json'),
-  titans: read('data/titans.json'),
+  deitys: read('data/deitys.json'),
   creatures: read('data/creatures.json'),
   maps: read('data/maps.json'),
   arcs: read('data/storyline-arc-registry.json'),
@@ -31,10 +31,10 @@ for (const faction of data.factions) {
   const codex = data.codex.find(entry => entry.factionId === faction.id);
   if (!codex) issues.push(`${faction.id} missing Realm Codex entry`);
   else {
-    for (const field of ['thesis', 'centralConflict', 'landmarks', 'realmHazards', 'campaignHooks', 'visualLanguage', 'titans']) {
+    for (const field of ['thesis', 'centralConflict', 'landmarks', 'realmHazards', 'campaignHooks', 'visualLanguage', 'deitys']) {
       if (!codex[field] || (Array.isArray(codex[field]) && !codex[field].length)) issues.push(`${faction.name} codex missing ${field}`);
     }
-    if ((codex.titans || []).length !== 9) issues.push(`${faction.name} codex must cover 4 deities`);
+    if ((codex.deitys || []).length !== 9) issues.push(`${faction.name} codex must cover 4 deities`);
   }
   const loreHits = data.lore.filter(entry => JSON.stringify(entry).includes(faction.name) || JSON.stringify(entry).includes(faction.realm) || JSON.stringify(entry).includes(faction.id));
   if (!loreHits.length) issues.push(`${faction.name} missing lore-index coverage`);
@@ -85,7 +85,7 @@ for (const mission of data.missions) {
   if (mission.teamSize !== 1) issues.push(`${mission.id} teamSize ${mission.teamSize} should be 1 for one active deity combat`);
   const missionText = JSON.stringify({ objectives: mission.objectives, specialRules: mission.specialRules, victoryConditions: mission.victoryConditions });
   for (const term of obsoleteStandardCombatTerms) if (missionText.includes(term)) issues.push(`${mission.id} uses obsolete standard-combat wording: ${term}`);
-  if (!['ONE_PLAYER_CONTROLLED_TITAN', 'ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE'].includes(mission.activeTitanPolicy?.standardCombat)) issues.push(`${mission.id} missing one active deity policy`);
+  if (!['ONE_PLAYER_CONTROLLED_TITAN', 'ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE'].includes(mission.activeDeityPolicy?.standardCombat)) issues.push(`${mission.id} missing one active deity policy`);
   if (!mission.chapterId) issues.push(`${mission.id} missing chapterId link`);
   if (mission.turnLimit != null && !(mission.turnLimit >= 8 && mission.turnLimit <= 20)) warnings.push(`${mission.id} turnLimit ${mission.turnLimit} outside expected 8-20`);
   if (mission.campaignType === 'Normal' && mission.turnLimit == null) issues.push(`${mission.id} Normal mission missing turnLimit`);
@@ -100,10 +100,10 @@ for (const mission of data.missions) {
   if (!mapsById.has(mission.mapId)) issues.push(`${mission.id} missing map ${mission.mapId}`);
 }
 
-const titanBudgetsByFaction = {};
-const titanRoles = {};
-const titanRarities = {};
-for (const deity of data.titans) {
+const deityBudgetsByFaction = {};
+const deityRoles = {};
+const deityRarities = {};
+for (const deity of data.deitys) {
   const stats = deity.stats || {};
   const budget = (stats.hp || 0) + (stats.attack || 0) * 3 + (stats.range || 0) * 4 + (stats.energy || 0) * 5 + (stats.speed || 0) * 4;
   if (stats.hp < 20 || stats.hp > 55) issues.push(`${deity.id} hp out of band ${stats.hp}`);
@@ -111,13 +111,13 @@ for (const deity of data.titans) {
   if (stats.range < 1 || stats.range > 5) issues.push(`${deity.id} range out of band ${stats.range}`);
   if (stats.energy < 2 || stats.energy > 5) issues.push(`${deity.id} energy out of band ${stats.energy}`);
   if (stats.speed < 2 || stats.speed > 5) issues.push(`${deity.id} speed out of band ${stats.speed}`);
-  (titanBudgetsByFaction[deity.faction] ??= []).push(budget);
-  titanRoles[deity.role] = (titanRoles[deity.role] || 0) + 1;
-  titanRarities[deity.rarity] = (titanRarities[deity.rarity] || 0) + 1;
+  (deityBudgetsByFaction[deity.faction] ??= []).push(budget);
+  deityRoles[deity.role] = (deityRoles[deity.role] || 0) + 1;
+  deityRarities[deity.rarity] = (deityRarities[deity.rarity] || 0) + 1;
 }
 
 const factionBudgetAverages = {};
-for (const [faction, budgets] of Object.entries(titanBudgetsByFaction)) {
+for (const [faction, budgets] of Object.entries(deityBudgetsByFaction)) {
   factionBudgetAverages[faction] = Number((budgets.reduce((a, b) => a + b, 0) / budgets.length).toFixed(1));
   if (budgets.length !== 9) issues.push(`${faction} has ${budgets.length} deities, expected 9`);
 }
@@ -150,7 +150,7 @@ const report = {
     missions: data.missions.length,
     missionDialogue: data.dialogue.length,
     missionArtPackages: data.arts.length,
-    titans: data.titans.length,
+    deitys: data.deitys.length,
     statBudgetSpread: budgetSpread
   },
   flow: {
@@ -159,8 +159,8 @@ const report = {
   },
   balance: {
     factionBudgetAverages,
-    roleCounts: titanRoles,
-    rarityCounts: titanRarities,
+    roleCounts: deityRoles,
+    rarityCounts: deityRarities,
     policy: data.balance.policy
   }
 };

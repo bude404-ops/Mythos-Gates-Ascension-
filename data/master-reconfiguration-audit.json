@@ -1,6 +1,6 @@
 {
   "prohibited_hits": 0,
-  "total_titan_word_uses": 13405,
+  "total_deity_word_uses": 13405,
   "category_counts": {
     "Mythos Gates/title/phenomenon": 2125,
     "Legacy internal IDs/schema/routes/API": 7563,
@@ -34,23 +34,23 @@
     "Legacy internal IDs/schema/routes/API": [
       [
         "index.html",
-        "l bg-neutral-900 p-2\" href=\"#/game\">Game</a>       <a class=\"rounded-xl bg-neutral-900 p-2\" href=\"#/titans\">Deities</a>       <a class=\"rounded-xl bg-neutral-900 p-2\" href=\"#/art\">Art</a>       <a class=\"ro"
+        "l bg-neutral-900 p-2\" href=\"#/game\">Game</a>       <a class=\"rounded-xl bg-neutral-900 p-2\" href=\"#/deitys\">Deities</a>       <a class=\"rounded-xl bg-neutral-900 p-2\" href=\"#/art\">Art</a>       <a class=\"ro"
       ],
       [
         "index.html",
-        "onst DATA = {};     const files = ['project','factions','hollow-faction','hollow-encounter-system','titans','characters','units','art-prompts','artworks','art-import-pipeline','directors','development-tasks"
+        "onst DATA = {};     const files = ['project','factions','hollow-faction','hollow-encounter-system','deitys','characters','units','art-prompts','artworks','art-import-pipeline','directors','development-tasks"
       ],
       [
         "index.html",
-        "(p.lastUpdate)}</p>         <div class=\"mt-4 grid grid-cols-2 gap-2 md:grid-cols-6\">${[['Deities',c.titans],['Factions',c.factions],['NPCs',c.npcs||0],['Creatures',c.creatures||0],['Hollow Creatures',c.holl"
+        "(p.lastUpdate)}</p>         <div class=\"mt-4 grid grid-cols-2 gap-2 md:grid-cols-6\">${[['Deities',c.deitys],['Factions',c.factions],['NPCs',c.npcs||0],['Creatures',c.creatures||0],['Hollow Creatures',c.holl"
       ],
       [
         "index.html",
-        ", powers, and history.','#/lore','Canon'],['Deities','Browse all 28 deity profiles and prompts.','#/titans','Database'],['Characters','Browse non-playable campaign character records.','#/characters','NPCs']"
+        ", powers, and history.','#/lore','Canon'],['Deities','Browse all 28 deity profiles and prompts.','#/deitys','Database'],['Characters','Browse non-playable campaign character records.','#/characters','NPCs']"
       ],
       [
         "index.html",
-        "0\"><b>Combat:</b> ${esc(f.combatPhilosophy)}<br><b>Mixing:</b> ${esc(f.mixingRule)}</div><a href=\"#/titans?faction=${esc(f.slug)}\" class=\"mt-3 inline-block rounded-2lg bg-primary px-4 py-2 font-black text-w"
+        "0\"><b>Combat:</b> ${esc(f.combatPhilosophy)}<br><b>Mixing:</b> ${esc(f.mixingRule)}</div><a href=\"#/deitys?faction=${esc(f.slug)}\" class=\"mt-3 inline-block rounded-2lg bg-primary px-4 py-2 font-black text-w"
       ]
     ],
     "Ancient Deity concept lore/technical scale": [
@@ -68,7 +68,7 @@
       ],
       [
         "engine/unreal/README.md",
-        "gets, quality tiers, Deity optimization, negative rules, and first-zone approval gates. - `data/one-deity-vs-many-combat.json` defines the core combat rule: one player-controlled Deity per battle against m"
+        "gets, quality tiers, Deity optimization, negative rules, and first-zone approval gates. - `data/one-deity-vs-many-combat.json` defines the core combat rule: one player-controlled Avatar per battle against m"
       ],
       [
         "engine/unreal/first-mission-zone-template.json",
@@ -77,24 +77,24 @@
     ],
     "Legacy internal validator/test naming": [
       [
-        "tests/titan-art-identity-audit-contract.test.mjs",
-        "ocess.cwd(); const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8')); const titans = read('data/titans.json'); const audit = read('data/titan-art-identity-audit.json'); const prompts"
+        "tests/deity-art-identity-audit-contract.test.mjs",
+        "ocess.cwd(); const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8')); const deitys = read('data/deitys.json'); const audit = read('data/deity-art-identity-audit.json'); const prompts"
       ],
       [
-        "tests/titan-art-identity-audit-contract.test.mjs",
-        "ead = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8')); const titans = read('data/titans.json'); const audit = read('data/titan-art-identity-audit.json'); const prompts = read('data/art-pr"
+        "tests/deity-art-identity-audit-contract.test.mjs",
+        "ead = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8')); const deitys = read('data/deitys.json'); const audit = read('data/deity-art-identity-audit.json'); const prompts = read('data/art-pr"
       ],
       [
-        "tests/titan-art-identity-audit-contract.test.mjs",
-        "(path.join(root, file), 'utf8')); const titans = read('data/titans.json'); const audit = read('data/titan-art-identity-audit.json'); const prompts = read('data/art-prompts.json').filter(prompt => prompt.ca"
+        "tests/deity-art-identity-audit-contract.test.mjs",
+        "(path.join(root, file), 'utf8')); const deitys = read('data/deitys.json'); const audit = read('data/deity-art-identity-audit.json'); const prompts = read('data/art-prompts.json').filter(prompt => prompt.ca"
       ],
       [
-        "tests/titan-art-identity-audit-contract.test.mjs",
-        "ead('data/art-prompts.json').filter(prompt => prompt.category === 'Deity'); const byTitan = new Map(titans.map(titan => [titan.id, titan])); const promptByTitan = new Map(prompts.map(prompt => [prompt.entit"
+        "tests/deity-art-identity-audit-contract.test.mjs",
+        "ead('data/art-prompts.json').filter(prompt => prompt.category === 'Deity'); const byDeity = new Map(deitys.map(deity => [deity.id, deity])); const promptByDeity = new Map(prompts.map(prompt => [prompt.entit"
       ],
       [
-        "tests/titan-art-identity-audit-contract.test.mjs",
-        "rt-prompts.json').filter(prompt => prompt.category === 'Deity'); const byTitan = new Map(titans.map(titan => [titan.id, titan])); const promptByTitan = new Map(prompts.map(prompt => [prompt.entityId, promp"
+        "tests/deity-art-identity-audit-contract.test.mjs",
+        "rt-prompts.json').filter(prompt => prompt.category === 'Deity'); const byDeity = new Map(deitys.map(deity => [deity.id, deity])); const promptByDeity = new Map(prompts.map(prompt => [prompt.entityId, promp"
       ]
     ],
     "Visible review needed": [

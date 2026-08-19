@@ -8,7 +8,7 @@
   "missionNumber": 19,
   "missionInChapter": 3,
   "title": "Elite: Bleed the Crow-Crowned Boss Mound: Boss Chamber",
-  "description": "Elite: Bleed the Crow-Crowned Boss Mound: Boss Chamber is a rebuilt Mythos Gates mission beat for Silver-Root Geas Labyrinth through The Silver-Root Gate (Sealed Gate with fae time bleed). One selected deity from Dagda, Morr\u00edgan, Brigid, Lugh enters; this beat spotlights Brigid as the reference silhouette while preserving player choice. The mission is the boss step at Crow-Crowned Boss Mound, using living mound-gate maze and geas trial pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: Avalora is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy..",
+  "description": "Elite: Bleed the Crow-Crowned Boss Mound: Boss Chamber is a rebuilt Mythos Gates mission beat for Silver-Root Geas Labyrinth through The Silver-Root Gate (Sealed Gate with fae time bleed). Your avatar of one selected deity from Dagda, Morr\u00edgan, Brigid, Lugh enters; this beat spotlights Brigid as the reference silhouette while preserving Avatar choice. The mission is the boss step at Crow-Crowned Boss Mound, using living mound-gate maze and geas trial pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: Avalora is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy..",
   "lore": "Ascension canon route rewrite: Silver-Root Geas Labyrinth is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Crow-Crowned Boss Mound and reveals: Why forbidden actions trigger living thorns. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 1197,
   "encouragedDeityRoles": [
@@ -57,7 +57,7 @@
   "specialRules": [
     "Route Law \u2014 Silver-Root Geas Labyrinth: Sealed Gate with fae time bleed changes how movement, hazards, and enemy pressure are read.",
     "Room Rule \u2014 Crow-Crowned Boss Mound: play this beat as a boss node, not a generic arena.",
-    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
+    "Solo Divine Scale: one player-controlled Avatar occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
     "With one selected deity, defeat the boss encounter against The Crow-Crowned Geas Fracture inside the elite-tuned Crow-Crowned Boss Mound and complete the Ascension route without breaking canon."
@@ -102,7 +102,6 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "eliteRemixOf": "MG-F05-C05-M19",
   "meaningfulDifferences": [
     "Secondary realm hazard active from opening turn",
@@ -133,17 +132,17 @@
       "Artillery"
     ],
     "recommendedDeityIds": [
-      "MG-TITAN-037",
-      "MG-TITAN-040"
+      "MG-DEITY-037",
+      "MG-DEITY-040"
     ],
     "recommendedDeities": [
       {
-        "id": "MG-TITAN-041",
+        "id": "MG-DEITY-041",
         "name": "Morr\u00edgan Moon-Grove",
         "reason": "Dominion advantage for fast enemies"
       },
       {
-        "id": "MG-TITAN-037",
+        "id": "MG-DEITY-037",
         "name": "Tara Dawn Barrow",
         "reason": "Shadow advantage for fast enemies"
       },
@@ -168,7 +167,7 @@
   "activeDeityCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "playerControlledDeities": 1,
+    "playerControlledAvatars": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -181,7 +180,7 @@
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled Deities",
+      "multiple player-controlled Avatars",
       "ally positioning",
       "team turns"
     ],
@@ -204,7 +203,7 @@
       "MG-CROSS-RUN-IN-002"
     ],
     "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
-    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone deity without creating ally units or squad play."
+    "oneAvatarVsManyUse": "Run-ins add enemy role pressure around the lone Avatar without creating ally units or squad play."
   },
   "loreContinuityGuard": {
     "sourceFactionId": "MG-FACTION-005",
@@ -215,7 +214,7 @@
       "established faction identity",
       "Mythos Gates mythology",
       "Gates and Codex systems",
-      "one player-controlled deity combat",
+      "one player-controlled Avatar combat",
       "mobile UE5 zone structure"
     ],
     "forbid": [
@@ -260,5 +259,6 @@
     "routeBeat": "Mission 19 of 20 advances Crow-Crowned Boss Mound inside Silver-Root Geas Labyrinth.",
     "referencePlayableDeity": "Brigid",
     "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
-  }
+  },
+  "activeDeityDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count."
 }

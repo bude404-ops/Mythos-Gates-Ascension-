@@ -101,7 +101,7 @@
   "stableIdPolicy": {
     "rule": "Never reuse asset IDs. IDs remain stable through filename, folder, version, model, and design changes.",
     "examples": [
-      "TITAN_001",
+      "DEITY_001",
       "CHARACTER_001",
       "CREATURE_001",
       "BATTLEFIELD_001",
@@ -190,7 +190,7 @@
     "dropbox": "artwork_import/dropbox/",
     "importCommand": "npm run artwork:import",
     "finishCommand": "npm run artwork:finish",
-    "filenameRule": "Include the permanent asset ID in every file name or parent folder, e.g. TITAN_001__solara-sunforge__source-file.png.",
+    "filenameRule": "Include the permanent asset ID in every file name or parent folder, e.g. DEITY_001__solara-sunforge__source-file.png.",
     "behavior": "Importer moves files into canonical assets/.../source/<ASSET_ID>/v### folders, detects registry links, validates assets, regenerates manifests/handoff, and writes reports without overwriting source assets."
   }
 }

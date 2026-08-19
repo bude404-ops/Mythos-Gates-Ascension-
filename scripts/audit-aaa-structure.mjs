@@ -111,13 +111,13 @@ const requiredDirs = [
   'src',
   'tests',
   'engine',
-  'titans',
+  'deitys',
   'validation',
   'visual'
 ];
 
 const forbiddenRootFiles = [
-  'titan-gates-dev-platform.html',
+  'deity-gates-dev-platform.html',
   'galaxy-reapers-ascension.html'
 ];
 
@@ -162,7 +162,7 @@ const schemas = [
   'schemas/ue5-dungeon-framework.schema.json',
   'schemas/ue5-first-mission-zone-template.schema.json',
   'schemas/ue5-mobile-first-architecture.schema.json',
-  'schemas/one-titan-vs-many-combat.schema.json',
+  'schemas/one-deity-vs-many-combat.schema.json',
   'schemas/cross-faction-encounter-pool.schema.json'
 ];
 for (const schema of schemas) {

@@ -1,5 +1,9 @@
 # Campaign Architecture Directive Implementation — v0.5.0
 
+
+> **Avatar System Note**: Players control Avatars — divine projections of their chosen deity. Avatars carry the deity's power and faith triggers into combat. The deity itself remains protected in its domain. Progression is driven by Belief and Influence. See `docs/lore/04-DEITIES.md` for the full Avatar System specification.
+
+
 This implements Phase 1 of the faction campaign architecture and Phase 2 for the first complete faction campaign.
 
 ## Canon Conflict Detected

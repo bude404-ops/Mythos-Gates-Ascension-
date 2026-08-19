@@ -1,8 +1,20 @@
 # Empyrean Full Faction Campaign Lore — v0.5.0
 
+
+## Avatar System
+
+Players do not control the deities directly. Each player channels an **Avatar** — a divine projection of their chosen deity. The avatar carries the deity's power, faith triggers, and faction bonuses into combat, but the deity itself remains protected in its domain.
+
+- **Progression**: Avatars grow stronger through **Belief** (faction-core faith) and **Influence** (deity-specific faith path), earned by completing missions and conquering realms.
+- **Death**: If an avatar falls, it respawns at the deity's domain. The deity is unharmed. Progression is preserved with a 10-20% Belief/Influence penalty.
+- **Scale**: Avatars maintain god-scale proportions in all realms — they tower over buildings, landscapes, and mortal structures.
+- **Solo Combat**: Each avatar fights alone. No allies, no healing companions. Faith triggers are self-only.
+- **Realm Advantage**: Avatars fight with full power in their deity's home realm. In enemy realms, they suffer penalties. Earth is neutral ground.
+
+
 The Empyrean campaign begins when the Choir-Vault Gate reopens in the Radiant Hierarchies. The Empyrean do not treat the Gate as a challenge to be met. They treat it as a dissonance to be corrected.
 
-The campaign begins in the choir vault above the broken roads — a celestial structure that once sang reality into stability. After the Ascension Collapse, the song hardened into judgment. The vault now corrects living survivors as if they were damaged notes in a score that should be perfect. Celiane White-Vault Witness hears the wrongness but cannot stop it alone. The chosen deity must ascend through floating platforms, resonance beacons, and glass stairways to reach the heaven-engine at the vault's peak.
+The campaign begins in the choir vault above the broken roads — a celestial structure that once sang reality into stability. After the Ascension Collapse, the song hardened into judgment. The vault now corrects living survivors as if they were damaged notes in a score that should be perfect. Celiane White-Vault Witness hears the wrongness but cannot stop it alone. The Avatar channels the Empyrean's choral order through belief. The avatar must ascend through floating platforms, resonance beacons, and glass stairways to reach the heaven-engine at the vault's peak.
 
 Across five chapters, the campaign moves from dissonance detection through memory-burn, choir corruption, and a final confrontation where the heaven-engine has decided that the only way to fix reality is to silence everything that does not match its song.
 
@@ -23,7 +35,7 @@ The Gate's wound state leaks memory-burning radiance into the vault. This is not
 **Mission Focus:** Memory-burn. The deity loses abilities as the radiance erases their combat memory. Hollow exploits the gaps. The question: what remains when memory is stripped away — instinct, or emptiness?
 
 ### Chapter 3 — The Dissonant Choir
-Deep in the vault, the choir itself has fractured. The voices that once sang reality into order now sing competing songs. Some voices still try to preserve. Others have been consumed by the Hollow and sing silence. The chosen deity must navigate a vault where the choir itself is at war — and every voice that goes silent makes reality slightly less stable. The Broken Engine Leviathan — a Hollow entity made from fused Empyrean choir fragments — hunts through the discord, consuming any voice that tries to rejoin the original song.
+Deep in the vault, the choir itself has fractured. The voices that once sang reality into order now sing competing songs. Some voices still try to preserve. Others have been consumed by the Hollow and sing silence. The avatar must navigate a vault where the choir itself is at war — and every voice that goes silent makes reality slightly less stable. The Broken Engine Leviathan — a Hollow entity made from fused Empyrean choir fragments — hunts through the discord, consuming any voice that tries to rejoin the original song.
 
 **Mission Focus:** Choir fracture. The vault's own choir is split. Hollow choir husks and the Broken Engine Leviathan. The deity must protect the surviving voices while fighting the consumed ones.
 

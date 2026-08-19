@@ -1,12 +1,24 @@
 # Infernal Dominion Full Faction Campaign Lore — v0.5.0
 
+
+## Avatar System
+
+Players do not control the deities directly. Each player channels an **Avatar** — a divine projection of their chosen deity. The avatar carries the deity's power, faith triggers, and faction bonuses into combat, but the deity itself remains protected in its domain.
+
+- **Progression**: Avatars grow stronger through **Belief** (faction-core faith) and **Influence** (deity-specific faith path), earned by completing missions and conquering realms.
+- **Death**: If an avatar falls, it respawns at the deity's domain. The deity is unharmed. Progression is preserved with a 10-20% Belief/Influence penalty.
+- **Scale**: Avatars maintain god-scale proportions in all realms — they tower over buildings, landscapes, and mortal structures.
+- **Solo Combat**: Each avatar fights alone. No allies, no healing companions. Faith triggers are self-only.
+- **Realm Advantage**: Avatars fight with full power in their deity's home realm. In enemy realms, they suffer penalties. Earth is neutral ground.
+
+
 The Infernal Dominion campaign begins when the Black-Iron Gate reopens beneath a court of execution sigils. The Dominion does not treat the Gate as a threat to be defeated. It treats the Gate as an opportunity to be negotiated — and negotiation is the Dominion's native language.
 
-The campaign begins in the contract courts below the Black-Iron Gate where every tactical victory creates a record, every record creates leverage, and every leverage point can become a chain. Varak Chain-Magistrate offers information, passage, and power — never freely, never falsely. The danger is not that he lies. The danger is that he tells the truth in a shape that benefits Dominion law.
+The campaign begins in the contract courts below the Black-Iron Gate where every tactical victory creates a record, every record creates leverage, and every leverage point can become a chain. Varak Chain-Magistrate offers information to the Avatar, passage, and power — never freely, never falsely. The danger is not that he lies. The danger is that he tells the truth in a shape that benefits Dominion law.
 
 Across five chapters, the campaign moves from contract negotiation through debt collection, Gateborn flame distortion, Hollow clause-eaters, and a final confrontation where the Gate has become the ultimate creditor — and it has come to collect.
 
-Elite missions reinterpret these events as sharper contract trials. The Gate has learned from the Normal campaign. It uses the deity's own victories as leverage, rewrites contract terms mid-mission, and forces the deity to win without creating any new debts.
+Elite missions reinterpret these events as sharper contract trials. The Gate has learned from the Normal campaign. It uses the deity's own victories as leverage, rewrites contract terms mid-mission, and forces the avatar to win without creating any new debts.
 
 The finale leaves the Gate bound but not broken. The Dominion win the right to renegotiate, not the right to own.
 
@@ -33,7 +45,7 @@ The Gate's contract clauses have been rewritten by the Hollow clause-eaters. Eve
 **Mission Focus:** Law inversion. The deity's own faction law is weaponized against them. The Ash Court Usurper. The deity must rewrite contracts under fire.
 
 ### Chapter 5 — The Volcanic Glass Magistrate
-The Gate's final chamber is a courtroom made of volcanic glass. The Volcanic Glass Magistrate — a Hollow entity wearing the robes of the first Infernal judge — presides. It has no interest in truth; it has interest in collection. It presents the deity's total debt: every action taken during the campaign, every contract signed, every deal made in the Ash Market. The debt is calculated to be exactly more than the deity can pay. The only way to win is not to pay — but to prove that the Magistrate's own authority is itself a debt it cannot justify. The deity must turn the court's law against the court itself.
+The Gate's final chamber is a courtroom made of volcanic glass. The Volcanic Glass Magistrate — a Hollow entity wearing the robes of the first Infernal judge — presides. It has no interest in truth; it has interest in collection. It presents the deity's total debt: every action taken during the campaign, every contract signed, every deal made in the Ash Market. The debt is calculated to be exactly more than the avatar can pay. The only way to win is not to pay — but to prove that the Magistrate's own authority is itself a debt it cannot justify. The deity must turn the court's law against the court itself.
 
 **Mission Focus:** Final confrontation. Boss: The Volcanic Glass Magistrate. Victory condition: the deity must win by proving the court has no authority to collect — because the court itself was created by a contract that the Hollow has already eaten. The debt is void because the creditor no longer legally exists.
 

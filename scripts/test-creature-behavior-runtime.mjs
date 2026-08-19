@@ -16,7 +16,7 @@ import {
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const contract = read('data/creature-behavior-runtime-contract.json');
 const creatures = read('data/creatures.json');
-const titans = read('data/titans.json');
+const deitys = read('data/deitys.json');
 const tasks = read('data/development-tasks.json');
 const hub = read('data/command-hub-contract.json');
 const browserEngine = fs.readFileSync('game/browser-battle-engine.mjs', 'utf8');
@@ -30,7 +30,7 @@ assert.deepEqual(hub.creatureBehaviorRuntime?.creatureIds, ['TG-CREATURE-001', '
 
 const wretch = creatures.find(c => c.id === 'TG-CREATURE-001');
 const colossus = creatures.find(c => c.id === 'TG-CREATURE-002');
-const deity = titans.find(t => t.id === 'TG-TITAN-001');
+const deity = deitys.find(t => t.id === 'TG-TITAN-001');
 assert.ok(wretch && colossus && deity, 'canonical Wretch, Colossus, and starter Deity required');
 assert.equal(wretch.combatRole, 'SWARMER');
 assert.equal(colossus.combatRole, 'BRUTE');

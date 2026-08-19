@@ -17,6 +17,10 @@ The Shrine-Path Archipelago is defined by ritual precision, sacred fog, moonlit 
 - **The Shrine Tide Docks** — a campaign-facing location for Kami stories.
 - **The Storm-Script Tower** — a campaign-facing location for Kami stories.
 
+
+> **Avatar System**: Players channel Avatars of their chosen deity — divine projections that carry the deity's power into combat. The deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn at deity domain with 10-20% penalty. Solo combat only. God-scale in all realms.
+
+
 ## Realm Hazards
 - Possessed paper wards.
 - mist corridors that rearrange loyalty.
@@ -28,47 +32,47 @@ The Shrine-Path Archipelago is defined by ritual precision, sacred fog, moonlit 
 - hunt a Hollow hiding inside a sacred festival.
 
 ## Deity Codex Hooks
-### Amaterasu Spirit-Sun (MG-TITAN-028)
+### Amaterasu Spirit-Sun (MG-DEITY-028)
 - **Role:** Endurance
 - **Lore Function:** Amaterasu Spirit-Sun embodies the Kami answer to the Ascension Collapse: defender shaped into Realm doctrine.
 - **Chapter Hook:** When Amaterasu Spirit-Sun enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Amaterasu Spirit-Sun against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Tsukuyomi Moon-Veil (MG-TITAN-029)
+### Tsukuyomi Moon-Veil (MG-DEITY-029)
 - **Role:** Conduit
 - **Lore Function:** Tsukuyomi Moon-Veil embodies the Kami answer to the Ascension Collapse: battery shaped into Realm doctrine.
 - **Chapter Hook:** When Tsukuyomi Moon-Veil enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Tsukuyomi Moon-Veil against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Susanoo Storm Script (MG-TITAN-032)
+### Susanoo Storm Script (MG-DEITY-032)
 - **Role:** Dominion
 - **Lore Function:** Susanoo Storm Script embodies the Kami answer to the Ascension Collapse: controller shaped into Realm doctrine.
 - **Chapter Hook:** When Susanoo Storm Script enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Susanoo Storm Script against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Izanami Shrine Tide (MG-TITAN-033)
+### Izanami Shrine Tide (MG-DEITY-033)
 - **Role:** Fracture
 - **Lore Function:** Izanami Shrine Tide embodies the Kami answer to the Ascension Collapse: breaker shaped into Realm doctrine.
 - **Chapter Hook:** When Izanami Shrine Tide enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Izanami Shrine Tide against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Kageyori Shadow Gate (MG-TITAN-032)
+### Kageyori Shadow Gate (MG-DEITY-032)
 - **Role:** Disruptor
 - **Lore Function:** Kageyori Shadow Gate embodies the Kami answer to the Ascension Collapse: disruptor shaped into Realm doctrine.
 - **Chapter Hook:** When Kageyori Shadow Gate enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Kageyori Shadow Gate against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Hanae Blossom Ward (MG-TITAN-033)
+### Hanae Blossom Ward (MG-DEITY-033)
 - **Role:** Sustain
 - **Lore Function:** Hanae Blossom Ward embodies the Kami answer to the Ascension Collapse: sustain shaped into Realm doctrine.
 - **Chapter Hook:** When Hanae Blossom Ward enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Hanae Blossom Ward against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Onimaru Red Seal (MG-TITAN-032)
+### Onimaru Red Seal (MG-DEITY-032)
 - **Role:** Artillery
 - **Lore Function:** Onimaru Red Seal embodies the Kami answer to the Ascension Collapse: artillery shaped into Realm doctrine.
 - **Chapter Hook:** When Onimaru Red Seal enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Onimaru Red Seal against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Korin Mist Path (MG-TITAN-033)
+### Korin Mist Path (MG-DEITY-033)
 - **Role:** Counter
 - **Lore Function:** Korin Mist Path embodies the Kami answer to the Ascension Collapse: guardian shaped into Realm doctrine.
 - **Chapter Hook:** When Korin Mist Path enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Korin Mist Path against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
-### Yamabito Stone Prayer (MG-TITAN-028)
+### Yamabito Stone Prayer (MG-DEITY-028)
 - **Role:** Shadow
 - **Lore Function:** Yamabito Stone Prayer embodies the Kami answer to the Ascension Collapse: assassin shaped into Realm doctrine.
 - **Chapter Hook:** When Yamabito Stone Prayer enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.

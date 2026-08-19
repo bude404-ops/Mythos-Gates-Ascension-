@@ -8,7 +8,7 @@
   "missionNumber": 1,
   "missionInChapter": 1,
   "title": "Elite: Contest the Sky-Marble Arrival Terrace: First Crossing",
-  "description": "Elite: Contest the Sky-Marble Arrival Terrace: First Crossing is a rebuilt Mythos Gates mission beat for Laurel-Sky Hubris Trial through The Laurel-Sky Gate (Stable Gate with oracle vapor leakage). One selected deity from Zeus, Artemis, Ares, Athena enters; this beat spotlights Zeus as the reference silhouette while preserving player choice. The mission is the entry step at Sky-Marble Arrival Terrace, using floating tribunal arena and oracle theater pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Celestial Heights of Olympus is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal auras, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands..",
+  "description": "Elite: Contest the Sky-Marble Arrival Terrace: First Crossing is a rebuilt Mythos Gates mission beat for Laurel-Sky Hubris Trial through The Laurel-Sky Gate (Stable Gate with oracle vapor leakage). Your avatar of one selected deity from Zeus, Artemis, Ares, Athena enters; this beat spotlights Zeus as the reference silhouette while preserving Avatar choice. The mission is the entry step at Sky-Marble Arrival Terrace, using floating tribunal arena and oracle theater pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Celestial Heights of Olympus is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal auras, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands..",
   "lore": "Ascension canon route rewrite: Laurel-Sky Hubris Trial is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Sky-Marble Arrival Terrace and reveals: How Olympus tests hubris through terrain law. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 750,
   "encouragedDeityRoles": [
@@ -50,7 +50,7 @@
   "specialRules": [
     "Route Law \u2014 Laurel-Sky Hubris Trial: Stable Gate with oracle vapor leakage changes how movement, hazards, and enemy pressure are read.",
     "Room Rule \u2014 Sky-Marble Arrival Terrace: play this beat as a entry node, not a generic arena.",
-    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
+    "Solo Divine Scale: one player-controlled Avatar occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
     "With one selected deity, cross the threshold in the elite-tuned Sky-Marble Arrival Terrace, secure the threshold grammar, and mark the Gate law before the Hollow can read the name."
@@ -95,7 +95,6 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "eliteRemixOf": "MG-F03-C01-M01",
   "meaningfulDifferences": [
     "Secondary realm hazard active from opening turn",
@@ -126,17 +125,17 @@
       "Sustain"
     ],
     "recommendedDeityIds": [
-      "MG-TITAN-019",
-      "MG-TITAN-022"
+      "MG-DEITY-019",
+      "MG-DEITY-022"
     ],
     "recommendedDeities": [
       {
-        "id": "MG-TITAN-023",
+        "id": "MG-DEITY-023",
         "name": "Helior Bronze Summit",
         "reason": "Artillery advantage for large enemy groups"
       },
       {
-        "id": "MG-TITAN-023",
+        "id": "MG-DEITY-023",
         "name": "Artemis Golden Aegis",
         "reason": "Dominion advantage for large enemy groups"
       },
@@ -161,7 +160,7 @@
   "activeDeityCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "playerControlledDeities": 1,
+    "playerControlledAvatars": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -174,7 +173,7 @@
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled Deities",
+      "multiple player-controlled Avatars",
       "ally positioning",
       "team turns"
     ],
@@ -197,7 +196,7 @@
       "MG-CROSS-RUN-IN-005"
     ],
     "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
-    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone deity without creating ally units or squad play."
+    "oneAvatarVsManyUse": "Run-ins add enemy role pressure around the lone Avatar without creating ally units or squad play."
   },
   "loreContinuityGuard": {
     "sourceFactionId": "MG-FACTION-003",
@@ -208,7 +207,7 @@
       "established faction identity",
       "Mythos Gates mythology",
       "Gates and Codex systems",
-      "one player-controlled deity combat",
+      "one player-controlled Avatar combat",
       "mobile UE5 zone structure"
     ],
     "forbid": [
@@ -253,5 +252,6 @@
     "routeBeat": "Mission 1 of 20 advances Sky-Marble Arrival Terrace inside Laurel-Sky Hubris Trial.",
     "referencePlayableDeity": "Zeus",
     "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
-  }
+  },
+  "activeDeityDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count."
 }

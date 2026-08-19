@@ -1,5 +1,9 @@
 # NPCs, Creatures, Maps, and Campaign Canon
 
+
+> **Avatar System Note**: Players control Avatars — divine projections of their chosen deity. Avatars carry the deity's power and faith triggers into combat. The deity itself remains protected in its domain. Progression is driven by Belief and Influence. See `docs/lore/04-DEITIES.md` for the full Avatar System specification.
+
+
 This document expands Mythos Gates: Ascension beyond the deity roster without breaking the Deity-only playable canon.
 
 ## Director Ruling

@@ -158,12 +158,12 @@ Core relative scale units:
 - eliteEnemy: 1.85
 - largeEnemy: 2.8
 - playerDeity: 5.2
-- smallAgileTitan: 4.4
-- heavyTitan: 6.1
-- titanScaleEnemy: 5.8
+- smallAgileAvatar: 4.4
+- heavyAvatar: 6.1
+- deityScaleEnemy: 5.8
 - colossalBoss: 9.5
 - standardWall: 3.4
-- titanGateArch: 14.0
+- deityGateArch: 14.0
 - gateInteriorOpening: 8.0
 - statue: 7.5
 - bridgeWidth: 6.5

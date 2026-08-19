@@ -4,13 +4,13 @@ import crypto from 'node:crypto';
 
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const arena = read('data/async-arena-system.json');
-const titans = read('data/titans.json');
+const deitys = read('data/deitys.json');
 const solo = read('data/solo-deity-roster-redesign.json');
 const dashboard = read('data/endgame-dashboard.json');
 const tasks = read('data/development-tasks.json');
 const mini = fs.readFileSync('mini-app/mythos-gates-ascension.html', 'utf8');
-const titanIds = new Set(titans.map(t => t.id));
-const soloIds = new Set(solo.titans.map(t => t.id));
+const deityIds = new Set(deitys.map(t => t.id));
+const soloIds = new Set(solo.deitys.map(t => t.id));
 
 assert.equal(arena.status, 'IMPLEMENTED');
 assert.equal(arena.mode, 'ASYNCHRONOUS');
@@ -26,7 +26,7 @@ assert.equal(dashboard.systemReadiness.livePvp, 'Not Implemented');
 
 for (const snap of arena.defenseSnapshots) {
   for (const field of arena.defenseSnapshotFields) assert.ok(snap[field] !== undefined && snap[field] !== null && snap[field] !== '', `${snap.snapshotId} missing ${field}`);
-  assert.ok(titanIds.has(snap.sourceDeityId), `${snap.snapshotId} invalid Deity`);
+  assert.ok(deityIds.has(snap.sourceDeityId), `${snap.snapshotId} invalid Deity`);
   assert.ok(soloIds.has(snap.sourceDeityId), `${snap.snapshotId} missing solo redesign`);
   assert.equal(snap.stanceLoadout.length, 3);
   assert.ok(snap.stanceLoadout.includes('Ascendant'));

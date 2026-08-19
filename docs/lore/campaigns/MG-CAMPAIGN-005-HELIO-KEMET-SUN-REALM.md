@@ -1,5 +1,9 @@
 # Helio-Kemet Sun Realm — Campaign Lore
 
+
+> **Avatar System**: Players channel Avatars of their chosen deity — divine projections that carry the deity's power into combat. The deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn at deity domain with 10-20% penalty. Solo combat only. God-scale in all realms.
+
+
 ## Canon Function
 
 **Helio-Kemet Sun Realm** converts the campaign-map reference into canon: a five-node Aten Ra ascent where sacred solar order is under eclipse pressure. It links the mobile campaign overview to the tactical Mythos Gate battle map.

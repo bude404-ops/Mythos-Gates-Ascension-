@@ -4,19 +4,19 @@ const read = (path) => JSON.parse(fs.readFileSync(path, 'utf8'));
 const issues = [];
 const warnings = [];
 const framework = read('data/gameplay-balance-framework.json');
-const titans = read('data/titans.json');
-const roleMatrix = read('data/titan-role-matrix.json').factions.flatMap(f => f.titans || []);
+const deitys = read('data/deitys.json');
+const roleMatrix = read('data/deity-role-matrix.json').factions.flatMap(f => f.deitys || []);
 const missions = read('data/mission-registry.json');
 const enemies = read('data/enemy-archetype-registry.json');
 const raid = read('data/raid-system.json');
 
-const roles = [...new Set(titans.map((t) => t.role))].sort();
-const factions = [...new Set(titans.map((t) => t.faction))].sort();
+const roles = [...new Set(deitys.map((t) => t.role))].sort();
+const factions = [...new Set(deitys.map((t) => t.faction))].sort();
 const mechanicFamilies = ['Solar Edict', 'Rune Oath', 'Aegis Favor', 'Spirit Seal', 'Geas Bloom', 'Choir Edict', 'Blood Contract'];
 
 for (const role of roles) {
   if (!framework.roleContracts?.[role]) issues.push(`Missing role contract: ${role}`);
-  const count = titans.filter((t) => t.role === role).length;
+  const count = deitys.filter((t) => t.role === role).length;
   if (count < factions.length) warnings.push(`Role ${role} has only ${count} deities; expected at least one per faction.`);
 }
 
@@ -44,7 +44,7 @@ if (missionWithoutRoles.length) issues.push(`${missionWithoutRoles.length} missi
 const missionWithoutProfiles = missions.filter((m) => !m.tacticalProfile);
 if (missionWithoutProfiles.length) issues.push(`${missionWithoutProfiles.length} missions missing tacticalProfile.`);
 
-const powers = titans.map((t) => t.stats?.combatPower || 0);
+const powers = deitys.map((t) => t.stats?.combatPower || 0);
 const minPower = Math.min(...powers);
 const maxPower = Math.max(...powers);
 if (maxPower - minPower > 60) warnings.push(`deity combat power spread is ${maxPower - minPower}; watch roster dominance.`);
@@ -59,7 +59,7 @@ const report = {
   issueCount: issues.length,
   warningCount: warnings.length,
   checked: {
-    titans: titans.length,
+    deitys: deitys.length,
     roles: roles.length,
     factions: factions.length,
     mechanicFamilies: mechanicFamilies.length,

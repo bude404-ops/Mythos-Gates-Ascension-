@@ -46,16 +46,16 @@
     ],
     "structure": "Campaign → Region → Zone → Exploration → Encounter → Tactical Combat → Reward → Next Zone",
     "zoneStrategy": "large detailed modular zones, not seamless open world and not generic corridors",
-    "combatRule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+    "combatRule": "ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE",
     "prototypeGate": "Do not expand implementation ahead of approved first-zone loop."
   },
-  "oneTitanVsManyCombat": {
-    "playerControlledTitans": 1,
-    "rule": "ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE",
+  "oneAvatarVsManyCombat": {
+    "playerControlledAvatars": 1,
+    "rule": "ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE",
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled Titans",
+      "multiple player-controlled Deities",
       "ally positioning",
       "team turns"
     ],

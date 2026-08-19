@@ -364,7 +364,7 @@ DEITY_COMBAT_KITS = {
 
 def update_deity_combat():
     """Update all 28 deities with new combat kits."""
-    with open(os.path.join(BASE, 'data', 'titans.json')) as f:
+    with open(os.path.join(BASE, 'data', 'deitys.json')) as f:
         deities = json.load(f)
     
     for d in deities:
@@ -405,7 +405,7 @@ def update_deity_combat():
         stats['resource'] = resource
         d['stats'] = stats
     
-    with open(os.path.join(BASE, 'data', 'titans.json'), 'w') as f:
+    with open(os.path.join(BASE, 'data', 'deitys.json'), 'w') as f:
         json.dump(deities, f, indent=2, ensure_ascii=False)
     
     print(f"Updated combat kits for {len(deities)} deities")

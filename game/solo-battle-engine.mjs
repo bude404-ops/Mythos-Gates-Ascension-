@@ -71,8 +71,8 @@ function findEnemy(state, enemyId) {
 function livingEnemies(state) { return state.enemies.filter(e => e.hp > 0); }
 function currentSpace(state) { return state.terrain.spaces.find(s => key(s.position) === key(state.deity.position)); }
 
-export function createInitialSoloBattleState({ battleId, missionId, titan, enemies, terrain, objectives, seed = 1 }) {
-  if (!titan?.id) throw new Error('A solo battle requires one active deity.');
+export function createInitialSoloBattleState({ battleId, missionId, deity, enemies, terrain, objectives, seed = 1 }) {
+  if (!deity?.id) throw new Error('A solo battle requires one active deity.');
   if (!Array.isArray(enemies) || enemies.length < 1) throw new Error('A solo battle requires at least one enemy.');
   const state = {
     battleId,
@@ -164,7 +164,7 @@ export function applyDeityAction(inputState, action) {
     if (illuminated) gain(state, 'momentum', 8, 'illuminated_movement');
     state.telemetry.routeSpacesVisited.push(key(action.to));
     state.telemetry.terrainTouches[space.type] = (state.telemetry.terrainTouches[space.type] || 0) + 1;
-    log(state, 'TITAN_MOVE', { to: action.to, terrain: space.type, illuminated });
+    log(state, 'DEITY_MOVE', { to: action.to, terrain: space.type, illuminated });
   } else if (action.type === 'BASIC_ATTACK') {
     const enemy = findEnemy(state, action.targetId);
     if (distance(state.deity.position, enemy.position) > state.deity.range) throw new Error('Target out of range');

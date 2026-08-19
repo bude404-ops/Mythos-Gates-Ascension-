@@ -96,7 +96,7 @@
       "turn limit 11"
     ],
     "oneDeityVsMany": {
-      "playerControlledDeities": 1,
+      "playerControlledAvatars": 1,
       "enemyCountTarget": [
         4,
         6
@@ -236,7 +236,7 @@
       "high-end assets optional"
     ],
     "oneDeityVsMany": [
-      "exactly one player-controlled deity",
+      "exactly one player-controlled Avatar",
       "multiple enemies active",
       "no squads or team turns",
       "AoE preview and threat indicators readable",
@@ -313,7 +313,7 @@
   "combatIdentity": {
     "contract": "data/one-deity-vs-many-combat.json",
     "rule": "ONE DEITY VS. MANY",
-    "playerControlledDeities": 1,
+    "playerControlledAvatars": 1,
     "forbidden": [
       "squad combat",
       "team formations",

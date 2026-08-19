@@ -6,7 +6,7 @@ const contract = read('data/campaign-playflow-contract.json');
 const factions = read('data/factions.json');
 const campaignChapters = read('data/campaign-chapter-registry.json');
 const missions = read('data/mission-registry.json');
-const titans = read('data/titans.json');
+const deitys = read('data/deitys.json');
 const maps = read('data/maps.json');
 const dialogue = read('data/mission-dialogue.json');
 const artPackages = read('data/mission-art-packages.json');
@@ -46,7 +46,7 @@ for (const route of contract.flow) {
       assert.equal(mission.tacticalProfile?.ownershipLock, false, `${id} tactical profile must not lock ownership`);
       assert.ok(mission.tacticalProfile?.problemTags?.length >= 3, `${id} missing problem tags`);
       assert.ok(mission.tacticalProfile?.advantageRoles?.length >= 2, `${id} missing advantage roles`);
-      assert.ok(mission.tacticalProfile?.recommendedDeityIds?.every(tid => titans.some(t => t.id === tid)), `${id} invalid recommended Deity`);
+      assert.ok(mission.tacticalProfile?.recommendedDeityIds?.every(tid => deitys.some(t => t.id === tid)), `${id} invalid recommended Deity`);
     }
     assert.equal(chapter.handoff.defaultMissionId || chapter.defaultMissionId, chapter.normalMissionIds[0]);
     assert.ok(chapter.handoff.battleRoute.includes(chapter.normalMissionIds[0]));

@@ -4,13 +4,13 @@ export function summarizeBattleState(state) {
     missionId: state.missionId,
     round: state.round,
     phase: state.phase,
-    titan: {
-      id: state.titan.id,
-      name: state.titan.name,
-      hp: state.titan.hp,
-      maxHp: state.titan.maxHp,
-      stance: state.titan.stance,
-      ascended: Boolean(state.titan.ascended)
+    deity: {
+      id: state.deity.id,
+      name: state.deity.name,
+      hp: state.deity.hp,
+      maxHp: state.deity.maxHp,
+      stance: state.deity.stance,
+      ascended: Boolean(state.deity.ascended)
     },
     resources: { ...state.resources },
     enemiesRemaining: state.enemies.filter(enemy => enemy.hp > 0).length,

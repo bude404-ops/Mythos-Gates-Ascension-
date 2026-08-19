@@ -3,6 +3,9 @@
 **Date:** August 19, 2026  
 **Total Entries:** 28 Deities + 39 Creatures + 4 World Bosses = 71 Assets  
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 ---
 
 ## STAT LEGEND

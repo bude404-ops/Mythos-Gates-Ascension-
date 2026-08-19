@@ -70,7 +70,7 @@ const factionCanon = {
 const factions = read('data/factions.json');
 const realmCodex = read('data/realm-codex.json');
 const visualBible = read('data/faction-visual-bible.json');
-const titans = read('data/titans.json');
+const deitys = read('data/deitys.json');
 const artPrompts = read('data/art-prompts.json');
 const maps = read('data/maps.json');
 const missions = read('data/mission-registry.json');
@@ -78,8 +78,8 @@ const missionDialogue = read('data/mission-dialogue.json');
 const missionArtPackages = read('data/mission-art-packages.json');
 const monetization = read('data/monetization-policy.json');
 const battlefieldCanon = read('data/battlefield-canon-registry.json');
-const soloRoster = read('data/solo-deity-roster-redesign.json').titans;
-const balancePass = read('data/titan-enemy-balance-pass.json').titans;
+const soloRoster = read('data/solo-deity-roster-redesign.json').deitys;
+const balancePass = read('data/deity-enemy-balance-pass.json').deitys;
 const index = read('data/index.json');
 
 const issues = [];
@@ -101,7 +101,7 @@ function requireSource(label, obj) {
 
 // Global generated and sync checks.
 if (index.counts?.factions !== 7) issues.push(`index: expected 7 factions, found ${index.counts?.factions}`);
-if (index.counts?.titans !== 63) issues.push(`index: expected 28 deities, found ${index.counts?.titans}`);
+if (index.counts?.deitys !== 63) issues.push(`index: expected 28 deities, found ${index.counts?.deitys}`);
 if (index.counts?.missions !== 280) issues.push(`index: expected 280 missions, found ${index.counts?.missions}`);
 if (index.counts?.missionDialogue !== 280) issues.push(`index: expected 280 mission dialogue, found ${index.counts?.missionDialogue}`);
 if (index.counts?.missionArtPackages !== 280) issues.push(`index: expected 280 mission art packages, found ${index.counts?.missionArtPackages}`);
@@ -121,7 +121,7 @@ for (const c of Object.values(factionCanon)) {
 }
 
 // Deities, prompts, solo roster, and balance.
-for (const t of titans) {
+for (const t of deitys) {
   const c = factionCanon[t.factionId];
   if (!c) { issues.push(`${t.id}: unknown faction ${t.factionId}`); continue; }
   requireTerms(`${t.id} deity`, t, [...c.anchors, ...c.gear], 5);
@@ -135,10 +135,10 @@ for (const t of titans) {
     requireTerms(`${t.id} art prompt`, prompt, [...c.anchors, ...c.gear], 5);
     forbid(`${t.id} art prompt`, prompt, staleGenericPattern, 'stale generic language');
   }
-  const solo = soloRoster.find((r) => r.id === t.id || r.titanId === t.id);
+  const solo = soloRoster.find((r) => r.id === t.id || r.deityId === t.id);
   if (!solo) issues.push(`${t.id}: missing solo roster row`);
   else requireTerms(`${t.id} solo roster`, solo, c.gear, 2);
-  const bal = balancePass.find((r) => r.id === t.id || r.titanId === t.id);
+  const bal = balancePass.find((r) => r.id === t.id || r.deityId === t.id);
   if (!bal) issues.push(`${t.id}: missing balance row`);
   else requireTerms(`${t.id} balance pass`, bal, c.gear, 2);
 }
@@ -204,7 +204,7 @@ const summary = {
   warningCount: warn.length,
   checked: {
     factions: factions.length,
-    titans: titans.length,
+    deitys: deitys.length,
     artPrompts: artPrompts.length,
     maps: maps.length,
     missions: missions.length,

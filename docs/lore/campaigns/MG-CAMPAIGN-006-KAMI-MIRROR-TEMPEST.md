@@ -1,5 +1,9 @@
 # Kami Mirror Tempest — Campaign Lore
 
+
+> **Avatar System**: Players channel Avatars of their chosen deity — divine projections that carry the deity's power into combat. The deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn at deity domain with 10-20% penalty. Solo combat only. God-scale in all realms.
+
+
 ## Canon Function
 
 **Kami Mirror Tempest** defines the Kami campaign language: balance defended through precision, shrine law, reflection, and consequences for careless motion.

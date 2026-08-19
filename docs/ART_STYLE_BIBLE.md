@@ -1,5 +1,8 @@
 # Mythos Gates: Ascension — Art Style Bible v1.0
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 > **Locked:** August 18, 2026
 > **Approved by:** BudE404
 > **Baseline render:** Aten Ra v5 (full-body, gold solar radiance skin, white linen clothing, gold/blue/turquoise armor)

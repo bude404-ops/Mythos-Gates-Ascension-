@@ -13,7 +13,7 @@ Mythos Gates: Ascension is an Unreal Engine 5-first, mobile-baseline Deity-scale
 
 | Canon / framework record | Unreal target |
 | --- | --- |
-| Deity | `UTG_TitanCombatData` DataAsset |
+| Deity | `UTG_DeityCombatData` DataAsset |
 | Mission | `UTG_MissionDefinition` PrimaryDataAsset |
 | Region | `UTG_RegionDefinition` PrimaryDataAsset |
 | Zone | `UTG_ZoneDefinition` DataAsset + Level Instance |
@@ -27,7 +27,7 @@ Mythos Gates: Ascension is an Unreal Engine 5-first, mobile-baseline Deity-scale
 
 - `dungeon-crawler-framework.json` defines the UE5 Deity-scale dungeon-crawler architecture.
 - `mobile-first-architecture.json` defines Android/iOS baseline budgets, quality tiers, Deity optimization, negative rules, and first-zone approval gates.
-- `data/one-deity-vs-many-combat.json` defines the core combat rule: one player-controlled Deity per battle against multiple coordinated enemies.
+- `data/one-deity-vs-many-combat.json` defines the core combat rule: one player-controlled Avatar per battle against multiple coordinated enemies.
 - `data/cross-faction-encounter-pools.json` defines lore-faithful faction creature run-ins for mission events and faction clashes without rewriting established factions.
 - `first-mission-zone-template.json` converts `MG-F01-C01-M01` into the first reusable mobile master prototype.
 - `ue5-dungeon-framework.mjs` and `mobile-first-architecture.mjs` validate framework continuity.
@@ -43,5 +43,5 @@ Mythos Gates: Ascension is an Unreal Engine 5-first, mobile-baseline Deity-scale
 - World Partition is allowed only where it reduces loading or memory cost for larger regions.
 - AI generation assembles approved modules in ordered stages; it does not generate whole campaigns at once.
 - Build the first zone completely and validate scale, controls, loading, memory, FPS, streaming, combat, camera, lore, one-deity combat, visible progression, gear improvement, and return-to-exploration before expanding.
-- Never add squad combat, team formations, ally positioning, multiple player-controlled Deities, or team turns.
+- Never add squad combat, team formations, ally positioning, multiple player-controlled Avatars, or team turns.
 - Cross-faction enemies must come from approved run-in pools, preserve their home faction source-culture rules, and only appear when the mission/event provides a lore-valid reason.

@@ -8,7 +8,7 @@ import fs from 'node:fs';
 const state = soloBattle.createVerticalSliceBattleState({ seed: 2026 });
 assert.equal(state.phase, soloBattle.PHASES.PLAYER);
 const summary = summarizeBattleState(state);
-assert.equal(summary.titan.id, 'TG-TITAN-001');
+assert.equal(summary.deity.id, 'TG-TITAN-001');
 assert.equal(summary.enemiesRemaining, 3);
 
 const player = { id: 'TG-QA-PLAYER' };
@@ -24,11 +24,11 @@ assert.equal(platform.platformSummary(platformState).completedMissions, 1);
 
 const dataset = loadSourceDataset({ includeMissions: false });
 const lookup = buildContentLookup(dataset);
-assert.ok(lookup.titanById.has('TG-TITAN-001'));
+assert.ok(lookup.deityById.has('TG-TITAN-001'));
 assert.ok(lookup.creatureById.size >= 1);
 
-const titanSchema = JSON.parse(fs.readFileSync('schemas/deity.schema.json', 'utf8'));
-assert.equal(validateContract(dataset.titans[0], titanSchema, 'firstTitan').ok, true);
+const deitySchema = JSON.parse(fs.readFileSync('schemas/deity.schema.json', 'utf8'));
+assert.equal(validateContract(dataset.deitys[0], deitySchema, 'firstDeity').ok, true);
 assert.ok(productionGateManifest.sourceModules.every(file => fs.existsSync(file)));
 
 console.log(JSON.stringify({ ok: true, productionModuleContract: 'PASS', modules: productionGateManifest.sourceModules.length, deity: summary.deity.id }, null, 2));

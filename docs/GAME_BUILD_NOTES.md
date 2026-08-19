@@ -1,5 +1,8 @@
 # Game Build Notes
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 ## Build 0.1 — First Playable Gate Encounter
 
 This is the first playable browser game layer added on top of the Mythos Gates repository.

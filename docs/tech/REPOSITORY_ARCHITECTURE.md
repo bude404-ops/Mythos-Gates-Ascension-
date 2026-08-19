@@ -1,12 +1,15 @@
 # Repository Architecture — Mythos Gates: Ascension
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 Mythos Gates is organized as a source-of-truth preproduction repository: canon records, gameplay prototypes, asset manifests, handoff packets, and validation gates live together while final engine implementation is still ahead.
 
 ## Current layers
 
 | Layer | Purpose |
 | --- | --- |
-| Canon/content records | Factions, Titans, missions, maps, dialogue, NPCs, creatures, backstories, and lore documents. |
+| Canon/content records | Factions, Deities, missions, maps, dialogue, NPCs, creatures, backstories, and lore documents. |
 | Aggregated data | Generated JSON indexes used by dashboards, validation, and prototype surfaces. |
 | Prototype runtime | Browser-playable tactical and campaign flows used for vertical-slice proof. |
 | Production source modules | Importable gameplay, data-loader, UI presenter, and production-gate modules under `src/`. |
@@ -56,7 +59,7 @@ engine/unreal/              Unreal adapter manifest and import notes
 engine/unity/               Unity adapter manifest and import notes
 ```
 
-`npm run validate:schemas` checks Titans, all 280 missions, and 129 asset manifests against the active schemas. `npm run test:production-modules` proves the browser runtime can be consumed through the new `src/` seams. Both are now enforced by `npm run precommit:verify`.
+`npm run validate:schemas` checks Deities, all 280 missions, and 129 asset manifests against the active schemas. `npm run test:production-modules` proves the browser runtime can be consumed through the new `src/` seams. Both are now enforced by `npm run precommit:verify`.
 
 ## Rules
 

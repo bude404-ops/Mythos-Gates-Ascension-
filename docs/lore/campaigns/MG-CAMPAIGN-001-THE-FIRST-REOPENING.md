@@ -2,7 +2,7 @@
 
 ## Canon Function
 
-**The First Reopening** is the first modern breach in the old certainty. It teaches the player what the world is: not a future war, not caped heroes, not humans in costume, but extradimensional divine beings returning through damaged Mythos Gates, but extradimensional mythological civilizations returning through damaged Mythos Gates.
+**The First Reopening** is the first modern breach in the old certainty. It teaches the player — who controls a divine Avatar of their chosen Deity — what the world is: not a future war, not caped heroes, not humans in costume, but extradimensional divine beings returning through damaged Mythos Gates, but extradimensional mythological civilizations returning through damaged Mythos Gates.
 
 This campaign exists to establish four laws:
 
@@ -17,7 +17,7 @@ A dead Mythos Gate begins breathing beneath broken threshold stone. Its first pu
 
 Mesha Gate-Scribe arrives before the Creator's chosen Deity because the Aten Ra record-keepers still listen to abandoned solar pylons. She does not command Deities. She reads the damage and tells the Creator what the Gate is refusing to say.
 
-The campaign should feel like a ritual performed under pressure. The player is not saving a village for sentiment. The player is preventing the map of reality from forgetting where a Gate once led.
+The campaign should feel like a ritual performed under pressure. The player's Avatar is not saving a village for sentiment. The Avatar is preventing the map of reality from forgetting where a Gate once led.
 
 ## Campaign Threat Fit
 

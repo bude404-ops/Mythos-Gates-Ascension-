@@ -8,7 +8,7 @@
   "missionNumber": 17,
   "missionInChapter": 1,
   "title": "Elite: Contest the Artemis Wild Threshold: Antechamber Seal",
-  "description": "Elite: Contest the Artemis Wild Threshold: Antechamber Seal is a rebuilt Mythos Gates mission beat for Laurel-Sky Hubris Trial through The Laurel-Sky Gate (Stable Gate with oracle vapor leakage). One selected deity from Zeus, Artemis, Ares, Athena enters; this beat spotlights Zeus as the reference silhouette while preserving player choice. The mission is the pre boss step at Artemis Wild Threshold, using floating tribunal arena and oracle theater pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Celestial Heights of Olympus is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal auras, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands..",
+  "description": "Elite: Contest the Artemis Wild Threshold: Antechamber Seal is a rebuilt Mythos Gates mission beat for Laurel-Sky Hubris Trial through The Laurel-Sky Gate (Stable Gate with oracle vapor leakage). Your avatar of one selected deity from Zeus, Artemis, Ares, Athena enters; this beat spotlights Zeus as the reference silhouette while preserving Avatar choice. The mission is the pre boss step at Artemis Wild Threshold, using floating tribunal arena and oracle theater pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Celestial Heights of Olympus is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal auras, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands..",
   "lore": "Ascension canon route rewrite: Laurel-Sky Hubris Trial is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Artemis Wild Threshold and reveals: Why oracle vapors show possible futures as traps. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 1134,
   "encouragedDeityRoles": [
@@ -51,7 +51,7 @@
   "specialRules": [
     "Route Law \u2014 Laurel-Sky Hubris Trial: Stable Gate with oracle vapor leakage changes how movement, hazards, and enemy pressure are read.",
     "Room Rule \u2014 Artemis Wild Threshold: play this beat as a pre boss node, not a generic arena.",
-    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
+    "Solo Divine Scale: one player-controlled Avatar occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
     "With one selected deity, survive the boss approach in the elite-tuned Artemis Wild Threshold, secure the boss approach, and enter the chamber with the route law understood."
@@ -96,7 +96,6 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "eliteRemixOf": "MG-F03-C05-M17",
   "meaningfulDifferences": [
     "Secondary realm hazard active from opening turn",
@@ -127,8 +126,8 @@
       "Fracture"
     ],
     "recommendedDeityIds": [
-      "MG-TITAN-019",
-      "MG-TITAN-026"
+      "MG-DEITY-019",
+      "MG-DEITY-026"
     ],
     "recommendedDeities": [
       {
@@ -137,7 +136,7 @@
         "reason": "Endurance advantage for long survival"
       },
       {
-        "id": "MG-TITAN-022",
+        "id": "MG-DEITY-022",
         "name": "Dione Victory Mirror",
         "reason": "Sustain advantage for long survival"
       },
@@ -162,7 +161,7 @@
   "activeDeityCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "playerControlledDeities": 1,
+    "playerControlledAvatars": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -175,7 +174,7 @@
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled Deities",
+      "multiple player-controlled Avatars",
       "ally positioning",
       "team turns"
     ],
@@ -198,7 +197,7 @@
       "MG-CROSS-RUN-IN-007"
     ],
     "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
-    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone deity without creating ally units or squad play."
+    "oneAvatarVsManyUse": "Run-ins add enemy role pressure around the lone Avatar without creating ally units or squad play."
   },
   "loreContinuityGuard": {
     "sourceFactionId": "MG-FACTION-003",
@@ -209,7 +208,7 @@
       "established faction identity",
       "Mythos Gates mythology",
       "Gates and Codex systems",
-      "one player-controlled deity combat",
+      "one player-controlled Avatar combat",
       "mobile UE5 zone structure"
     ],
     "forbid": [
@@ -254,5 +253,6 @@
     "routeBeat": "Mission 17 of 20 advances Artemis Wild Threshold inside Laurel-Sky Hubris Trial.",
     "referencePlayableDeity": "Zeus",
     "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
-  }
+  },
+  "activeDeityDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count."
 }

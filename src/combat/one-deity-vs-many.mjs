@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 
 export const PRIMARY_ONE_DEITY_RULE = 'ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE';
-export const FORBIDDEN_COMBAT_PATTERNS = Object.freeze(['squad combat', 'team formations', 'multiple player-controlled deities', 'ally positioning', 'team turns']);
+export const FORBIDDEN_COMBAT_PATTERNS = Object.freeze(['squad combat', 'team formations', 'multiple player-controlled Avatars', 'ally positioning', 'team turns']);
 export const REQUIRED_PROTOTYPE_BEATS = Object.freeze(['Exploration', 'Encounter trigger', 'Combat transition', 'Multiple enemies', 'Deity AoE attacks', 'Tactical movement', 'Enemy AI', 'Divine Abilities', 'Victory', 'Rewards', 'Divine Ascension', 'Gear improvement', 'Return to exploration']);
 export const REQUIRED_VISIBLE_PROGRESSION = Object.freeze(['larger AoE coverage', 'shorter cooldowns', 'group clear speed improves']);
 export const REQUIRED_ENEMY_ROLES = Object.freeze(['melee attackers', 'ranged attackers', 'fast enemies', 'support enemies', 'elite enemies', 'bosses']);
@@ -12,21 +12,21 @@ export function loadOneDeityVsManyCombat() {
 
 export function validateOneDeityVsManyCombat(contract, mission, mobileArchitecture, firstTemplate) {
   const issues = [];
-  if (contract.primaryRule !== PRIMARY_ONE_DEITY_RULE) issues.push('primary combat rule must be one player-controlled deity per battle');
+  if (contract.primaryRule !== PRIMARY_ONE_DEITY_RULE) issues.push('primary combat rule must be one player-controlled Avatar per battle');
   for (const pattern of FORBIDDEN_COMBAT_PATTERNS) if (!contract.forbiddenSystems?.includes(pattern)) issues.push(`missing forbidden combat pattern: ${pattern}`);
   if (!contract.combatLoop?.includes('1 Deity vs. Multiple Enemies')) issues.push('combat loop must include 1 Deity vs. Multiple Enemies');
   for (const role of REQUIRED_ENEMY_ROLES) if (!contract.enemyGroupDesign?.roles?.includes(role)) issues.push(`missing enemy tactical role: ${role}`);
   if (!/health pools/i.test(contract.enemyGroupDesign?.antiPattern || '')) issues.push('enemy design must forbid inflated health-pool difficulty');
   for (const beat of REQUIRED_PROTOTYPE_BEATS) if (!contract.firstPrototype?.requiredDemonstration?.includes(beat)) issues.push(`first prototype missing beat: ${beat}`);
   for (const visible of REQUIRED_VISIBLE_PROGRESSION) if (!contract.powerProgression?.visibleGameplayOutcomes?.includes(visible)) issues.push(`visible progression missing: ${visible}`);
-  const activeCount = mission.activeDeityCount ?? mission.activeTitanCount;
-  const activePolicy = mission.activeDeityPolicy ?? mission.activeTitanPolicy;
+  const activeCount = mission.activeDeityCount ?? mission.activeDeityCount;
+  const activePolicy = mission.activeDeityPolicy ?? mission.activeDeityPolicy;
   if (activeCount !== 1 || mission.teamSize !== 1) issues.push('first mission must remain exactly one active deity/team size 1');
-  if (activePolicy?.standardCombat !== PRIMARY_ONE_DEITY_RULE) issues.push('first mission active policy must use one player-controlled deity');
-  if (!mission.specialRules?.some(rule => /one (active|player-controlled) (Deity|deity)/i.test(rule))) issues.push('first mission must preserve one active/player-controlled deity special rule');
+  if (activePolicy?.standardCombat !== PRIMARY_ONE_DEITY_RULE) issues.push('first mission active policy must use one player-controlled Avatar');
+  if (!mission.specialRules?.some(rule => /one (active|player-controlled) (Deity|deity)/i.test(rule))) issues.push('first mission must preserve one active/player-controlled Avatar special rule');
   if (mobileArchitecture.combatRule?.contract !== 'data/one-deity-vs-many-combat.json') issues.push('mobile architecture must link one-deity combat contract');
   if (mobileArchitecture.combatRule?.forbidSquads !== true) issues.push('mobile architecture must forbid squads');
-  if (firstTemplate.combatIdentity?.playerControlledDeities !== 1) issues.push('first template must specify exactly one player-controlled deity');
+  if (firstTemplate.combatIdentity?.playerControlledAvatars !== 1) issues.push('first template must specify exactly one player-controlled Avatar');
   if (!firstTemplate.validationChecklist?.oneDeityVsMany?.some(item => /no squads/i.test(item))) issues.push('first template must validate no squads or team turns');
   if (!firstTemplate.validationChecklist?.progressionFeel?.length) issues.push('first template must validate visible progression feel');
   const early = contract.scalingBands?.find(band => band.band === 'EARLY');
@@ -44,6 +44,6 @@ export function summarizeOneDeityVsMany(contract, firstTemplate) {
     earlyEnemyRange: early.enemyCountRange,
     prototypeBeats: contract.firstPrototype.requiredDemonstration.length,
     firstMission: contract.firstPrototype.sourceMissionId,
-    templatePlayerDeitys: firstTemplate.combatIdentity.playerControlledDeities
+    templatePlayerDeitys: firstTemplate.combatIdentity.playerControlledAvatars
   };
 }

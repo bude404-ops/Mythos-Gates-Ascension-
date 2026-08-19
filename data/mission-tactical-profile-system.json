@@ -20,9 +20,9 @@
   },
   "profileShape": {
     "problemTags": "array<missionProblemTag> min=3",
-    "advantageRoles": "array<titanRole> min=2",
-    "recommendedDeityIds": "array<titanId> min=1",
-    "recommendedTitans": "array<{id,name,reason}>",
+    "advantageRoles": "array<deityRole> min=2",
+    "recommendedDeityIds": "array<deityId> min=1",
+    "recommendedDeities": "array<{id,name,reason}>",
     "favoredNotRequired": "true",
     "ownershipLock": "false",
     "rule": "Must state any valid active deity can attempt the mission."
@@ -254,7 +254,7 @@
   "acceptanceGates": [
     "MG-DEV-028 every campaign mission has at least three tactical problem tags.",
     "MG-DEV-028 every campaign mission has at least two advantage roles from the live deity role list.",
-    "MG-DEV-028 every recommended deity exists in data/titans.json.",
+    "MG-DEV-028 every recommended deity exists in data/deitys.json.",
     "MG-DEV-028 all mission tactical profiles are favored-not-required with no ownership lock.",
     "MG-DEV-028 mission tactical profile system is discoverable through data/index.json and release validation."
   ]

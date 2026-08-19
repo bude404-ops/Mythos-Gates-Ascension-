@@ -64,7 +64,7 @@
     "level": "number",
     "experience": "object",
     "resources": "array",
-    "selectedDeities": "array<titanId>",
+    "selectedDeities": "array<deityId>",
     "unlockedContent": "object",
     "campaignProgress": "object",
     "quests": "array",
@@ -100,7 +100,7 @@
       }
     ],
     "selectedDeities": [
-      "MG-TITAN-001"
+      "MG-DEITY-001"
     ],
     "unlockedContent": {
       "campaign": true,
@@ -317,7 +317,7 @@
     "MG-DEV-026 Awakening path tracks 12 roster-journey beats from starter choice to faction trial handoff.",
     "Full roster remains hidden until Awakening completion and no starter selection requires payment.",
     "MG-DEV-027 Trials tab creates save-backed Divine Trial attempts with temporary loadouts.",
-    "MG-DEV-027 Trial completion writes deityTrials, factionTrials, pending TITAN_TRIAL rewards, and Trial Favor.",
+    "MG-DEV-027 Trial completion writes deityTrials, factionTrials, pending DEITY_TRIAL rewards, and Trial Favor.",
     "MG-DEV-027 Borrowed loadouts expire at END_OF_TRIAL and never grant permanent paid power.",
     "MG-DEV-028 all 280 campaign missions expose tactical problem tags and advantage roles.",
     "MG-DEV-028 recommended deities are valid, favored-not-required, and never ownership locks.",
@@ -351,15 +351,15 @@
     "status": "IMPLEMENTED",
     "source": "data/player-onboarding-roster-journey.json",
     "starterDeityIds": [
-      "MG-TITAN-001",
-      "MG-TITAN-006",
-      "MG-TITAN-009"
+      "MG-DEITY-001",
+      "MG-DEITY-006",
+      "MG-DEITY-009"
     ],
     "starterFactionId": "MG-FACTION-001",
     "beatCount": 12,
     "fullRosterHiddenUntilComplete": true,
     "completionMilestones": [
-      "STARTER_TITAN_BOUND",
+      "STARTER_DEITY_BOUND",
       "AWAKENING_MISSION_UNLOCKED",
       "FULL_ROSTER_UNLOCKED_AFTER_AWAKENING"
     ],
@@ -374,9 +374,9 @@
     "status": "IMPLEMENTED",
     "source": "data/deity-trial-system.json",
     "trialDeityIds": [
-      "MG-TITAN-005",
-      "MG-TITAN-005",
-      "MG-TITAN-010"
+      "MG-DEITY-005",
+      "MG-DEITY-005",
+      "MG-DEITY-010"
     ],
     "modeCount": 3,
     "temporaryLoadoutExpires": "END_OF_TRIAL",
@@ -478,12 +478,12 @@
     "requiredSlots": [
       "COMMAND_HUB_BACKGROUND",
       "GATE",
-      "TITAN_PRESENTATION"
+      "DEITY_PRESENTATION"
     ],
     "starterDeityIds": [
-      "MG-TITAN-001",
-      "MG-TITAN-006",
-      "MG-TITAN-009"
+      "MG-DEITY-001",
+      "MG-DEITY-006",
+      "MG-DEITY-009"
     ],
     "rules": [
       "FINAL assets are selected through AssetManager.resolvedPath.",

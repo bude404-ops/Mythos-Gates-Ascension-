@@ -16,8 +16,8 @@ const push = (arr, code, detail) => arr.push({ code, detail });
 
 if (economy.philosophy.businessModel !== 'FREE_TO_PLAY') push(issues, 'NOT_FREE_TO_PLAY', 'Business model must be free-to-play.');
 if (!economy.philosophy.freePlayerPromise?.includes('Campaign playable')) push(issues, 'FREE_CAMPAIGN_PROMISE_MISSING', 'Campaign must be playable for free.');
-if (economy.titanUnlocking?.allTitansGameplayObtainable !== true) push(issues, 'TITANS_NOT_EARNABLE', 'All deities must remain gameplay obtainable.');
-if (economy.titanPower?.directPowerSales !== false) push(issues, 'DIRECT_POWER_SALES', 'Direct combat power sales are forbidden.');
+if (economy.deityUnlocking?.allDeitiesGameplayObtainable !== true) push(issues, 'TITANS_NOT_EARNABLE', 'All deities must remain gameplay obtainable.');
+if (economy.deityPower?.directPowerSales !== false) push(issues, 'DIRECT_POWER_SALES', 'Direct combat power sales are forbidden.');
 if (economy.cosmetics?.noCombatStats !== true) push(issues, 'COSMETIC_STATS_FOUND', 'Cosmetics must not grant combat stats.');
 if (economy.rewardedAds?.forcedAds !== false) push(issues, 'FORCED_ADS', 'Ads must be optional only.');
 if (economy.environment?.productionPaymentsConnected !== false) push(warnings, 'PAYMENTS_MARKED_CONNECTED', 'Real payments should not be connected until provider exists.');
@@ -35,7 +35,7 @@ if (refs.some((r) => r !== 'data/free-to-play-economy.json')) push(issues, 'SYST
 if (!migration.findings || migration.findings.length < 10) push(issues, 'AUDIT_REPORT_TOO_SMALL', 'Migration audit must cover the requested economy systems.');
 if (!commandHub.defaultPlayerState?.economy?.wallets) push(issues, 'PLAYER_ECONOMY_STATE_MISSING', 'Command hub default player state must include economy wallets.');
 
-for (const fn of ['addCurrency','spendCurrency','grantReward','consumeEnergy','regenerateEnergy','unlockTitan','purchaseItem','claimDailyReward']) {
+for (const fn of ['addCurrency','spendCurrency','grantReward','consumeEnergy','regenerateEnergy','unlockDeity','purchaseItem','claimDailyReward']) {
   if (!runtime.includes(`function ${fn}`)) push(issues, 'RUNTIME_FUNCTION_MISSING', `${fn} missing from central economy runtime.`);
 }
 if (!runtime.includes('SERVER_VERIFICATION_REQUIRED')) push(issues, 'RUNTIME_VERIFY_MISSING', 'Runtime must block production purchases without verification.');

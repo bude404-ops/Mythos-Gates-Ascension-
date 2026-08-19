@@ -8,7 +8,7 @@
   "missionNumber": 15,
   "missionInChapter": 3,
   "title": "Elite: Restore the Hidden-Sun Archive Antechamber: Boss Threshold",
-  "description": "Elite: Restore the Hidden-Sun Archive Antechamber: Boss Threshold is a rebuilt Mythos Gates mission beat for Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma\u2019at strain). One selected deity from Aten Ra, Sutekh, Iset, Amunet enters; this beat spotlights Iset as the reference silhouette while preserving player choice. The mission is the pre boss step at Hidden-Sun Archive Antechamber, using sacred judgment temple-road descent pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Solar Dominion of Khepra is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma\u2019at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light..",
+  "description": "Elite: Restore the Hidden-Sun Archive Antechamber: Boss Threshold is a rebuilt Mythos Gates mission beat for Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma\u2019at strain). Your avatar of one selected deity from Aten Ra, Sutekh, Iset, Amunet enters; this beat spotlights Iset as the reference silhouette while preserving Avatar choice. The mission is the pre boss step at Hidden-Sun Archive Antechamber, using sacred judgment temple-road descent pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Solar Dominion of Khepra is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma\u2019at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light..",
   "lore": "Ascension canon route rewrite: Sun-Scale Verdict Descent is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Hidden-Sun Archive Antechamber and reveals: A hidden Amunet record implying the Gates predate mortal pharaoh-echoes. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 845,
   "encouragedDeityRoles": [
@@ -64,7 +64,7 @@
   "specialRules": [
     "Route Law \u2014 Sun-Scale Verdict Descent: Stable Gate under Ma\u2019at strain changes how movement, hazards, and enemy pressure are read.",
     "Room Rule \u2014 Hidden-Sun Archive Antechamber: play this beat as a pre boss node, not a generic arena.",
-    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
+    "Solo Divine Scale: one player-controlled Avatar occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
     "With one selected deity, survive the boss approach in the elite-tuned Hidden-Sun Archive Antechamber, secure the last seal, and enter the chamber with the route law understood."
@@ -115,7 +115,6 @@
     "altered map lane/hazard emphasis",
     "boss or commander mechanic added"
   ],
-  "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "chapterId": "MG-F01-CH04",
   "difficulty": "Elite",
   "activeDeityPolicy": {
@@ -139,17 +138,17 @@
       "Endurance"
     ],
     "recommendedDeityIds": [
-      "MG-TITAN-001",
-      "MG-TITAN-005"
+      "MG-DEITY-001",
+      "MG-DEITY-005"
     ],
     "recommendedDeities": [
       {
-        "id": "MG-TITAN-006",
+        "id": "MG-DEITY-006",
         "name": "Karnu Glass Horizon",
         "reason": "Artillery advantage for large enemy groups"
       },
       {
-        "id": "MG-TITAN-006",
+        "id": "MG-DEITY-006",
         "name": "Iset Obsidian Dawn",
         "reason": "Dominion advantage for large enemy groups"
       },
@@ -174,7 +173,7 @@
   "activeDeityCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "playerControlledDeities": 1,
+    "playerControlledAvatars": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -187,7 +186,7 @@
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled Deities",
+      "multiple player-controlled Avatars",
       "ally positioning",
       "team turns"
     ],
@@ -210,7 +209,7 @@
       "MG-CROSS-RUN-IN-004"
     ],
     "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
-    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone deity without creating ally units or squad play."
+    "oneAvatarVsManyUse": "Run-ins add enemy role pressure around the lone Avatar without creating ally units or squad play."
   },
   "loreContinuityGuard": {
     "sourceFactionId": "MG-FACTION-001",
@@ -221,7 +220,7 @@
       "established faction identity",
       "Mythos Gates mythology",
       "Gates and Codex systems",
-      "one player-controlled deity combat",
+      "one player-controlled Avatar combat",
       "mobile UE5 zone structure"
     ],
     "forbid": [
@@ -266,5 +265,6 @@
     "routeBeat": "Mission 15 of 20 advances Hidden-Sun Archive Antechamber inside Sun-Scale Verdict Descent.",
     "referencePlayableDeity": "Iset",
     "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
-  }
+  },
+  "activeDeityDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count."
 }

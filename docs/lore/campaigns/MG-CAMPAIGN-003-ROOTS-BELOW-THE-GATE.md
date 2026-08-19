@@ -18,7 +18,7 @@ The campaign begins as restoration and turns into a question: when a wounded Rea
 
 - **Primary threat:** Beast Realm predators nesting in wounded roots.
 - **Secondary threat:** Hollow rot where memory has been drained from living terrain.
-- **Environmental identity:** Terrain states that remember player actions.
+- **Environmental identity:** Terrain states that remember the Avatar's actions — the land bears the mark of divine passage.
 
 ## Lore-Friendly Dialogue Seed
 

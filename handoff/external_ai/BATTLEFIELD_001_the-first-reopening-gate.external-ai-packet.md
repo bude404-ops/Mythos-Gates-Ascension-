@@ -23,7 +23,7 @@ Build the first Mythos Gates battlefield as the master quality benchmark. Genera
 - COMBAT_SURFACES
 - CONNECTIONS
 - BOUNDARIES
-- TITAN_SCALE
+- DEITY_SCALE
 - REAL_3D_GEOMETRY
 - MODULAR_ENVIRONMENT_ASSETS
 - ARCHITECTURE

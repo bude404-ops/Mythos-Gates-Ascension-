@@ -12,7 +12,7 @@ function writeJson(file, value) { fs.mkdirSync(path.dirname(file), { recursive: 
 function slug(text) { return String(text || 'asset').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80) || 'asset'; }
 function assetKindPath(type) {
   const map = {
-    TITAN: 'assets/3d/titans/source',
+    TITAN: 'assets/3d/deities/source',
     CHARACTER: 'assets/3d/characters/source',
     CREATURE: 'assets/3d/creatures/source',
     ENEMY: 'assets/3d/enemies/source',
@@ -28,7 +28,7 @@ function assetKindPath(type) {
   return map[type] || 'assets/references/source';
 }
 function priorityFor(entry) {
-  if (entry.asset_id === 'TITAN_001') return 1;
+  if (entry.asset_id === 'DEITY_001') return 1;
   if (entry.asset_id === 'CHARACTER_001') return 2;
   if (entry.asset_id === 'BATTLEFIELD_001') return 3;
   if (entry.asset_type === 'TITAN') return 10;
@@ -86,7 +86,7 @@ const queue = {
   allNeeded: entries,
   simpleWorkflow: [
     'Run npm run artwork:queue to refresh this list.',
-    'Create or export an asset using the permanent ID in the filename, e.g. TITAN_001__solara-sunforge__source-file.png.',
+    'Create or export an asset using the permanent ID in the filename, e.g. DEITY_001__solara-sunforge__source-file.png.',
     'Drop the file into artwork_import/dropbox/.',
     'Run npm run artwork:import.',
     'Commit the moved asset, registry update, manifests, handoff, and validation reports.'
@@ -106,7 +106,7 @@ const md = [
   '## Fast workflow',
   '',
   '1. Build/export the next asset from the list below.',
-  '2. Name it with the permanent ID: `TITAN_001__asset-name__source-file.png` or `.glb`.',
+  '2. Name it with the permanent ID: `DEITY_001__asset-name__source-file.png` or `.glb`.',
   '3. Drop it in `artwork_import/dropbox/`.',
   '4. Run `npm run artwork:import`.',
   '5. Commit the moved asset and generated reports.',
@@ -142,8 +142,8 @@ fs.writeFileSync(path.join(OUT_DIR, 'dropbox', 'README.md'), [
   'npm run artwork:import',
   '```',
   '',
-  'File names must include a permanent asset ID such as `TITAN_001`, `BATTLEFIELD_001`, or `CHARACTER_001`.',
-  'Example: `TITAN_001__solara-sunforge__source-file.png`',
+  'File names must include a permanent asset ID such as `DEITY_001`, `BATTLEFIELD_001`, or `CHARACTER_001`.',
+  'Example: `DEITY_001__solara-sunforge__source-file.png`',
   '',
   'The importer moves files into the correct `assets/.../source/<ASSET_ID>/v###/` folder and refreshes validation reports.',
   ''

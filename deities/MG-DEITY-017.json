@@ -1,0 +1,189 @@
+{
+  "id": "MG-DEITY-017",
+  "slug": "ullr-snow-crown",
+  "name": "Ullr Snow-Crown",
+  "factionId": "MG-FACTION-002",
+  "faction": "Asgardian",
+  "rarity": "Rare",
+  "faithTrigger": "Counter",
+  "abilities": [
+    "Ullr Snow-Crown \u2014 Oath-Ring Cleave Intercept",
+    "Rune-Thunder Technique \u2014 Punishing Guard",
+    "Ullr Snow-Crown: Yggdrasil Root Oath Oath of Intercept",
+    "Divine Ascension \u2014 Ragnarok Storm Unbound"
+  ],
+  "stats": {
+    "hp": 48,
+    "attack": 9,
+    "range": 1,
+    "energy": 4,
+    "speed": 2,
+    "armor": 18,
+    "resistance": 12,
+    "critChance": 5,
+    "accuracy": 80,
+    "evasion": 3,
+    "guardBreak": 12,
+    "combatPower": 212
+  },
+  "equipment": [
+    "Ullr Snow-Crown Sentinel Rune-Iron Oath Axe",
+    "Ullr Snow-Crown Stormsteel Wolf-Cloak Mail",
+    "Ullr Snow-Crown Yggdrasil Thunder-Root Core"
+  ],
+  "passives": [
+    "Saga-Oath Blood: Ullr Snow-Crown gains Oathstorm when its guardian choices express Storm-Rooted Aesir Holds source-culture law through rune-storm ground; Earth myth is only the later echo."
+  ],
+  "lore": "Ullr Snow-Crown is a colossal Asgardian guardian from The Storm-Rooted Aesir Holds. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Asgardian guardian office: oath/bodyguard law, interception, sacred threshold defense; Odin: ravens, sacrifice, runes, hidden wisdom, war kingship.",
+  "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+  "visualDescription": "Full-body living myth-source deity, not a costume: Ullr Snow-Crown shows storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.. Role silhouette must read as Counter. Materials include dark rune iron, storm steel, ash wood, wolf fur, raven feather shadow, oath red wax, bone white. The design must feel older than human mythology and avoid cartoon Viking, generic horned helmet cosplay, clean chrome, sci-fi power armor, glowing UI runes, blocky hammer mech.",
+  "artStatus": "Prompt Ready",
+  "artPromptId": "MG-PROMPT-017",
+  "artworkId": null,
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "MG-BACKSTORY-TITAN-017",
+  "abilityDetails": [
+    {
+      "name": "Ullr Snow-Crown \u2014 Oath-Ring Cleave Intercept",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "guardian",
+        "asgardian",
+        "source-culture"
+      ],
+      "effect": "Deal Asgardian source-culture damage at range 1; generate Momentum and a small Oathstorm gain when used from rune-storm ground or against the marked target. The hit reads visually as rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
+    },
+    {
+      "name": "Rune-Thunder Technique \u2014 Punishing Guard",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "guardian",
+        "asgardian",
+        "source-culture"
+      ],
+      "effect": "Spend Momentum to intercepts lethal paths, counters oathbreakers/trespassers, and turns defense into threat. Builds Oathstorm only when the Avatar uses rune-storm ground intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
+    },
+    {
+      "name": "Ullr Snow-Crown: Yggdrasil Root Oath Oath of Intercept",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "guardian",
+        "asgardian",
+        "source-culture"
+      ],
+      "effect": "Spend stored Oathstorm to impose a two-round rule from Storm-Rooted Aesir Holds: intercepts lethal paths, counters oathbreakers/trespassers, and turns defense into threat. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension \u2014 Ragnarok Storm Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant",
+        "asgardian",
+        "source-culture"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Oathstorm, transform nearby terrain into rune-storm ground, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Ullr Snow-Crown Sentinel Rune-Iron Oath Axe",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Rare",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through rune-storm ground. Visual: rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
+    },
+    {
+      "name": "Ullr Snow-Crown Stormsteel Wolf-Cloak Mail",
+      "slot": "Armor Body",
+      "rarityFloor": "Rare",
+      "primaryStat": "armor",
+      "effect": "Improves survivability and makes the Deity read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the Avatar followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
+    },
+    {
+      "name": "Ullr Snow-Crown Yggdrasil Thunder-Root Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Rare",
+      "primaryStat": "energy",
+      "effect": "Stores Oathstorm and unlocks a mastery branch for Bifrost Stormstride, Valkyrie Witness Counter, and Carve the Fallen Name. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 50,
+    "statGrowthPer10Levels": {
+      "hp": 9,
+      "attack": 1,
+      "armor": 2,
+      "resistance": 1
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      50
+    ],
+    "gearTierCap": "Epic",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "counter bosses and protect survival windows",
+    "budgetTarget": 105,
+    "computedCombatPower": 212,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  },
+  "mythicSource": "Asgardian guardian office: oath/bodyguard law, interception, sacred threshold defense; Odin: ravens, sacrifice, runes, hidden wisdom, war kingship",
+  "visualTraits": [
+    "oath/bodyguard law",
+    "interception",
+    "sacred threshold defense",
+    "source culture humans later copied as Norse myth",
+    "bone white"
+  ],
+  "armorCanon": "Armor must use storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.; construction proves source culture humans later copied as Norse myth; no cartoon Viking, generic horned helmet cosplay, clean chrome, sci-fi power armor.",
+  "updated": "2026-08-16",
+  "weaponCanon": "Ullr Snow-Crown Sentinel Rune-Iron Oath Axe",
+  "gearCanon": {
+    "weapon": "Ullr Snow-Crown Sentinel Rune-Iron Oath Axe",
+    "armor": "Ullr Snow-Crown Stormsteel Wolf-Cloak Mail",
+    "core": "Ullr Snow-Crown Yggdrasil Thunder-Root Core",
+    "movementRelic": "Bifrost Stormstride",
+    "reactionRelic": "Valkyrie Witness Counter",
+    "executionRelic": "Carve the Fallen Name",
+    "visualRule": "rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars"
+  }
+}

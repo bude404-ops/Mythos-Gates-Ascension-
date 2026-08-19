@@ -33,7 +33,7 @@ function typeRoot(type, ext) {
   const image = ['.png', '.jpg', '.jpeg', '.webp', '.psd', '.tga'].includes(ext);
   if (image && !['BATTLEFIELD', 'GATE'].includes(type)) return 'assets/concept_art/source';
   const map = {
-    TITAN: 'assets/3d/titans/source',
+    TITAN: 'assets/3d/deities/source',
     CHARACTER: 'assets/3d/characters/source',
     CREATURE: 'assets/3d/creatures/source',
     ENEMY: 'assets/3d/enemies/source',

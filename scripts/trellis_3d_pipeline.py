@@ -14,7 +14,7 @@ Usage:
   python3 scripts/trellis_3d_pipeline.py --batch npcs         # Convert all 8 NPCs
   python3 scripts/trellis_3d_pipeline.py --batch maps         # Convert all 21 maps
   python3 scripts/trellis_3d_pipeline.py --batch all          # Convert everything
-  python3 scripts/trellis_3d_pipeline.py --single MG-TITAN-001_aten-ra  # Convert one asset
+  python3 scripts/trellis_3d_pipeline.py --single MG-DEITY-001_aten-ra  # Convert one asset
   python3 scripts/trellis_3d_pipeline.py --status             # Show conversion status
 """
 
@@ -36,7 +36,7 @@ TRELLIS_API_URL = "https://api-inference.huggingface.co/models/jasperai/TRELLIS-
 # Batch definitions
 BATCHES = {
     "deities": {
-        "glob": "MG-TITAN-*.png",
+        "glob": "MG-DEITY-*.png",
         "dir": "Characters/Deities",
         "total": 28,
     },
@@ -156,7 +156,7 @@ def process_batch(batch_name, token):
     failed = 0
     
     for i, art_file in enumerate(art_files, 1):
-        name = art_file.stem  # e.g. MG-TITAN-001_aten-ra
+        name = art_file.stem  # e.g. MG-DEITY-001_aten-ra
         output_dir = output_base / name
         output_dir.mkdir(parents=True, exist_ok=True)
         output_glb = output_dir / f"{name}.glb"

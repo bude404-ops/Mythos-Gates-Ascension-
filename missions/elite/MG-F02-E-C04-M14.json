@@ -8,7 +8,7 @@
   "missionNumber": 14,
   "missionInChapter": 2,
   "title": "Elite: Strike the World-Root Snare Path: Hidden Cache",
-  "description": "Elite: Strike the World-Root Snare Path: Hidden Cache is a rebuilt Mythos Gates mission beat for Thunder-Oath Root Gauntlet through The Thunder-Oath Gate (Ruin Gate with active oath memory). One selected deity from Odin, Freyja, Frigg, Thor enters; this beat spotlights Freyja as the reference silhouette while preserving player choice. The mission is the treasure or lore step at World-Root Snare Path, using storm bridge and world-root trial pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Storm-Rooted Aesir Holds is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow..",
+  "description": "Elite: Strike the World-Root Snare Path: Hidden Cache is a rebuilt Mythos Gates mission beat for Thunder-Oath Root Gauntlet through The Thunder-Oath Gate (Ruin Gate with active oath memory). Your avatar of one selected deity from Odin, Freyja, Frigg, Thor enters; this beat spotlights Freyja as the reference silhouette while preserving Avatar choice. The mission is the treasure or lore step at World-Root Snare Path, using storm bridge and world-root trial pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Storm-Rooted Aesir Holds is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow..",
   "lore": "Ascension canon route rewrite: Thunder-Oath Root Gauntlet is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances World-Root Snare Path and reveals: Why world-roots remember betrayals. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 1072,
   "encouragedDeityRoles": [
@@ -50,7 +50,7 @@
   "specialRules": [
     "Route Law \u2014 Thunder-Oath Root Gauntlet: Ruin Gate with active oath memory changes how movement, hazards, and enemy pressure are read.",
     "Room Rule \u2014 World-Root Snare Path: play this beat as a treasure or lore node, not a generic arena.",
-    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
+    "Solo Divine Scale: one player-controlled Avatar occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
     "With one selected deity, open the relic detour in the elite-tuned World-Root Snare Path, secure the lore cache, and take the reward without awakening the wrong memory."
@@ -95,7 +95,6 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "eliteRemixOf": "MG-F02-C04-M14",
   "meaningfulDifferences": [
     "Secondary storm condition active",
@@ -126,8 +125,8 @@
       "Counter"
     ],
     "recommendedDeityIds": [
-      "MG-TITAN-010",
-      "MG-TITAN-011"
+      "MG-DEITY-010",
+      "MG-DEITY-011"
     ],
     "recommendedDeities": [
       {
@@ -136,7 +135,7 @@
         "reason": "Endurance advantage for ranged enemies"
       },
       {
-        "id": "MG-TITAN-015",
+        "id": "MG-DEITY-015",
         "name": "Ragnor Skybreaker",
         "reason": "Artillery advantage for ranged enemies"
       },
@@ -161,7 +160,7 @@
   "activeDeityCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "playerControlledDeities": 1,
+    "playerControlledAvatars": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -174,7 +173,7 @@
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled Deities",
+      "multiple player-controlled Avatars",
       "ally positioning",
       "team turns"
     ],
@@ -197,7 +196,7 @@
       "MG-CROSS-RUN-IN-003"
     ],
     "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
-    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone deity without creating ally units or squad play."
+    "oneAvatarVsManyUse": "Run-ins add enemy role pressure around the lone Avatar without creating ally units or squad play."
   },
   "loreContinuityGuard": {
     "sourceFactionId": "MG-FACTION-002",
@@ -208,7 +207,7 @@
       "established faction identity",
       "Mythos Gates mythology",
       "Gates and Codex systems",
-      "one player-controlled deity combat",
+      "one player-controlled Avatar combat",
       "mobile UE5 zone structure"
     ],
     "forbid": [
@@ -253,5 +252,6 @@
     "routeBeat": "Mission 14 of 20 advances World-Root Snare Path inside Thunder-Oath Root Gauntlet.",
     "referencePlayableDeity": "Freyja",
     "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
-  }
+  },
+  "activeDeityDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count."
 }

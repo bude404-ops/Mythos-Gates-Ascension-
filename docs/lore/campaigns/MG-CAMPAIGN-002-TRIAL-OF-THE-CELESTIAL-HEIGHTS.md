@@ -1,5 +1,9 @@
 # Trial of the Celestial Heights — Campaign Lore
 
+
+> **Avatar System**: Players channel Avatars of their chosen deity — divine projections that carry the deity's power into combat. The deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn at deity domain with 10-20% penalty. Solo combat only. God-scale in all realms.
+
+
 ## Canon Function
 
 **Trial of the Celestial Heights** is the first campaign to show Realm conflict without reducing either side to villainy. Olympian excellence and Asgardian oath-law both have beauty. Both can become dangerous when the Gates reopen.

@@ -15,7 +15,7 @@ This battlefield must serve the mission, not just look impressive.
 - Terrain: sacred temple approach with shallow river-light lanes and low sandstone cover
 - Primary objective: Drive your active deity to the marked solar seal before the Hollow closes around it.
 - Turn limit: 11
-- Team size: one active player-controlled Deity.
+- Team size: one active player-controlled Avatar.
 - Active Deity policy: ONE_PLAYER_CONTROLLED_TITAN
 - Enemy wave 1: MG-CREATURE-002, MG-CREATURE-003; entry: deployed at opposing gate markers.
 - Enemy wave 2: MG-CREATURE-003; entry: reinforcement from shadowed lane; trigger: turn 3 or primary objective touched.

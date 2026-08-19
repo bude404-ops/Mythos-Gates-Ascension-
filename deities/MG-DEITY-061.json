@@ -1,0 +1,189 @@
+{
+  "id": "MG-DEITY-061",
+  "slug": "kharon-black-iron",
+  "name": "Kharon Black Iron",
+  "factionId": "MG-FACTION-007",
+  "faction": "Infernal Dominion",
+  "rarity": "Epic",
+  "faithTrigger": "Range",
+  "abilities": [
+    "Kharon Black Iron \u2014 Black-Iron Clause Cut Longshot",
+    "Blood-Wax Contract Technique \u2014 Horizon Lock",
+    "Kharon Black Iron: Infernal Debt Verdict Cataclysm Line",
+    "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
+  ],
+  "stats": {
+    "hp": 36,
+    "attack": 15,
+    "range": 5,
+    "energy": 4,
+    "speed": 2,
+    "armor": 5,
+    "resistance": 11,
+    "critChance": 11,
+    "accuracy": 88,
+    "evasion": 5,
+    "guardBreak": 11,
+    "combatPower": 234
+  },
+  "equipment": [
+    "Kharon Black Iron Far-Sight Goetic Chain-Crown Blade",
+    "Kharon Black Iron Volcanic Glass Debtor Plate",
+    "Kharon Black Iron Blood-Wax Infernal Ledger Core"
+  ],
+  "passives": [
+    "Debt With Teeth: Kharon Black Iron gains Contract Debt when its artillery choices express Infernal Dominion source-culture law through black-iron contract ground; Earth myth is only the later echo."
+  ],
+  "lore": "Kharon Black Iron is a colossal Infernal Dominion artillery from The Infernal Dominion. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Infernal Dominion artillery office: far-sight strike, horizon pressure, prophetic range; Chains: bondage, ownership, legal restraint, prison architecture.",
+  "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+  "visualDescription": "Full-body living myth-source deity, not a costume: Kharon Black Iron shows black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture.. Role silhouette must read as Artillery. Materials include black iron, volcanic glass, obsidian, blood wax, ash velvet, molten gold, charred parchment. The design must feel older than human mythology and avoid red robot demon, generic Halloween devil, sci-fi cables, literal castle armor, block fortress body, cartoon pitchfork.",
+  "artStatus": "Prompt Ready",
+  "artPromptId": "MG-PROMPT-061",
+  "artworkId": null,
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "MG-BACKSTORY-TITAN-061",
+  "abilityDetails": [
+    {
+      "name": "Kharon Black Iron \u2014 Black-Iron Clause Cut Longshot",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "artillery",
+        "infernal-dominion",
+        "source-culture"
+      ],
+      "effect": "Deal Infernal Dominion source-culture damage at range 5; generate Momentum and a small Contract Debt gain when used from black-iron contract ground or against the marked target. The hit reads visually as black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchy, ash velvet, hellfire clauses.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
+    },
+    {
+      "name": "Blood-Wax Contract Technique \u2014 Horizon Lock",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "artillery",
+        "infernal-dominion",
+        "source-culture"
+      ],
+      "effect": "Spend Momentum to marks distant lanes, punishes exposed routes, and demands line-of-sight counterplay. Builds Contract Debt only when the Avatar uses black-iron contract ground intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
+    },
+    {
+      "name": "Kharon Black Iron: Infernal Debt Verdict Cataclysm Line",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "artillery",
+        "infernal-dominion",
+        "source-culture"
+      ],
+      "effect": "Spend stored Contract Debt to impose a two-round rule from Infernal Dominion: marks distant lanes, punishes exposed routes, and demands line-of-sight counterplay. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension \u2014 Hell-Crown Dominion Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant",
+        "infernal-dominion",
+        "source-culture"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Contract Debt, transform nearby terrain into black-iron contract ground, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Kharon Black Iron Far-Sight Goetic Chain-Crown Blade",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Epic",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through black-iron contract ground. Visual: black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchy, ash velvet, hellfire clauses.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
+    },
+    {
+      "name": "Kharon Black Iron Volcanic Glass Debtor Plate",
+      "slot": "Armor Body",
+      "rarityFloor": "Epic",
+      "primaryStat": "resistance",
+      "effect": "Improves survivability and makes the Deity read as Infernal Dominion source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the Avatar followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
+    },
+    {
+      "name": "Kharon Black Iron Blood-Wax Infernal Ledger Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Epic",
+      "primaryStat": "energy",
+      "effect": "Stores Contract Debt and unlocks a mastery branch for Infernal Clause Step, Chain-Lien Reversal, and Collect the Soul Clause. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 55,
+    "statGrowthPer10Levels": {
+      "hp": 6,
+      "attack": 2,
+      "armor": 1,
+      "resistance": 1
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      55
+    ],
+    "gearTierCap": "Legendary",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "project damage into crowds and objective zones",
+    "budgetTarget": 110,
+    "computedCombatPower": 234,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  },
+  "mythicSource": "Infernal Dominion artillery office: far-sight strike, horizon pressure, prophetic range; Chains: bondage, ownership, legal restraint, prison architecture",
+  "visualTraits": [
+    "far-sight strike",
+    "horizon pressure",
+    "prophetic range",
+    "source culture humans later copied as hell, demonology, and infernal contract lore",
+    "molten gold"
+  ],
+  "armorCanon": "Armor must use black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture.; construction proves source culture humans later copied as hell, demonology, and infernal contract lore; no red robot demon, generic Halloween devil, sci-fi cables, literal castle armor.",
+  "updated": "2026-08-16",
+  "weaponCanon": "Kharon Black Iron Far-Sight Goetic Chain-Crown Blade",
+  "gearCanon": {
+    "weapon": "Kharon Black Iron Far-Sight Goetic Chain-Crown Blade",
+    "armor": "Kharon Black Iron Volcanic Glass Debtor Plate",
+    "core": "Kharon Black Iron Blood-Wax Infernal Ledger Core",
+    "movementRelic": "Infernal Clause Step",
+    "reactionRelic": "Chain-Lien Reversal",
+    "executionRelic": "Collect the Soul Clause",
+    "visualRule": "black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchy, ash velvet, hellfire clauses"
+  }
+}

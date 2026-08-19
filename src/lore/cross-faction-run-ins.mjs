@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 
-export const ONE_DEITY_RULE = 'ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE';
+export const ONE_DEITY_RULE = 'ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE';
 export const REQUIRED_MOBILE_LOOP = Object.freeze(['Explore', 'Encounter', '1 Deity vs. Multiple Enemies', 'Victory', 'Rewards', 'Upgrade Deity', 'Explore Further']);
-export const FORBIDDEN_STANDARD_COMBAT = Object.freeze(['squad combat', 'team formations', 'multiple player-controlled Deitys', 'ally positioning', 'team turns']);
+export const FORBIDDEN_STANDARD_COMBAT = Object.freeze(['squad combat', 'team formations', 'multiple player-controlled Avatars', 'ally positioning', 'team turns']);
 
 export function readJson(path) {
   return JSON.parse(fs.readFileSync(path, 'utf8'));
@@ -40,9 +40,9 @@ export function validateCrossFactionCreaturePools({ factions, creatures, pools, 
   }
 
   for (const mission of missions) {
-    if (mission.activeTitanCount !== 1 || mission.teamSize !== 1) issues.push(`${mission.id} must remain one active deity`);
-    if (mission.activeTitanPolicy?.standardCombat !== ONE_TITAN_RULE) issues.push(`${mission.id} must use ${ONE_TITAN_RULE}`);
-    if (mission.combatArchitecture?.playerControlledTitans !== 1) issues.push(`${mission.id} missing one-deity combatArchitecture`);
+    if (mission.activeDeityCount !== 1 || mission.teamSize !== 1) issues.push(`${mission.id} must remain one active deity`);
+    if (mission.activeDeityPolicy?.standardCombat !== ONE_DEITY_RULE) issues.push(`${mission.id} must use ${ONE_DEITY_RULE}`);
+    if (mission.combatArchitecture?.playerControlledAvatars !== 1) issues.push(`${mission.id} missing one-deity combatArchitecture`);
     for (const step of REQUIRED_MOBILE_LOOP) if (!mission.combatArchitecture?.loop?.includes(step)) issues.push(`${mission.id} combatArchitecture missing loop step ${step}`);
     for (const forbidden of FORBIDDEN_STANDARD_COMBAT) if (!mission.combatArchitecture?.forbidden?.includes(forbidden)) issues.push(`${mission.id} missing forbidden combat pattern ${forbidden}`);
     if (mission.crossFactionRunIns?.homeFactionId !== mission.factionId) issues.push(`${mission.id} crossFactionRunIns home faction mismatch`);
@@ -59,9 +59,9 @@ export function validateCrossFactionCreaturePools({ factions, creatures, pools, 
   }
 
   for (const campaign of campaigns) {
-    if (campaign.mobileUe5Architecture?.combatRule !== ONE_TITAN_RULE) issues.push(`${campaign.id} campaign must declare one-deity combat rule`);
-    if (campaign.oneTitanVsManyCombat?.playerControlledTitans !== 1) issues.push(`${campaign.id} campaign must enforce one player-controlled Deity`);
-    for (const forbidden of FORBIDDEN_STANDARD_COMBAT) if (!campaign.oneTitanVsManyCombat?.forbidden?.includes(forbidden)) issues.push(`${campaign.id} campaign missing forbidden ${forbidden}`);
+    if (campaign.mobileUe5Architecture?.combatRule !== ONE_DEITY_RULE) issues.push(`${campaign.id} campaign must declare one-deity combat rule`);
+    if (campaign.oneAvatarVsManyCombat?.playerControlledAvatars !== 1) issues.push(`${campaign.id} campaign must enforce one player-controlled Avatar`);
+    for (const forbidden of FORBIDDEN_STANDARD_COMBAT) if (!campaign.oneAvatarVsManyCombat?.forbidden?.includes(forbidden)) issues.push(`${campaign.id} campaign missing forbidden ${forbidden}`);
     if ((campaign.crossFactionRunIns?.poolIds || []).length !== factions.length) issues.push(`${campaign.id} campaign must expose all faction run-in pools for lore-valid events`);
   }
 

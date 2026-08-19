@@ -1,8 +1,20 @@
 # Storm-Oath Covenant Story Arc
 
+
+## Avatar System
+
+Players do not control the deities directly. Each player channels an **Avatar** — a divine projection of their chosen deity. The avatar carries the deity's power, faith triggers, and faction bonuses into combat, but the deity itself remains protected in its domain.
+
+- **Progression**: Avatars grow stronger through **Belief** (faction-core faith) and **Influence** (deity-specific faith path), earned by completing missions and conquering realms.
+- **Death**: If an avatar falls, it respawns at the deity's domain. The deity is unharmed. Progression is preserved with a 10-20% Belief/Influence penalty.
+- **Scale**: Avatars maintain god-scale proportions in all realms — they tower over buildings, landscapes, and mortal structures.
+- **Solo Combat**: Each avatar fights alone. No allies, no healing companions. Faith triggers are self-only.
+- **Realm Advantage**: Avatars fight with full power in their deity's home realm. In enemy realms, they suffer penalties. Earth is neutral ground.
+
+
 The Asgardian campaign begins when the Storm-Oath Bridge answers the reopened Gates with thunder instead of prayer. Valhalla does not treat courage as mood or spectacle. Courage is a vow, and a vow has weight.
 
-The Gate tries to harvest that weight. Every oath spoken near the bridge becomes measurable pressure: iron warms, lightning follows old names, and forgotten banners rise where broken promises once fell.
+The Gate tries to harvest that weight from the Avatar. Every oath spoken near the bridge becomes measurable pressure: iron warms, lightning follows old names, and forgotten banners rise where broken promises once fell.
 
 ## Core Rule
 

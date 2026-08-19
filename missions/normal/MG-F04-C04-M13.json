@@ -8,7 +8,7 @@
   "missionNumber": 13,
   "missionInChapter": 1,
   "title": "Purify the Inari Rice Court Storehouse: Relic Detour",
-  "description": "Purify the Inari Rice Court Storehouse: Relic Detour is a rebuilt Mythos Gates mission beat for Torii-Moon Mirror Road through The Torii-Moon Gate (Distortion Gate with ritual rerouting). One selected deity from Amaterasu, Tsukuyomi, Susanoo, Izanami enters; this beat spotlights Amaterasu as the reference silhouette while preserving player choice. The mission is the treasure or lore step at Inari Rice Court Storehouse, using shrine-road labyrinth and mirror sanctum pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Sacred Kingdoms is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash..",
+  "description": "Purify the Inari Rice Court Storehouse: Relic Detour is a rebuilt Mythos Gates mission beat for Torii-Moon Mirror Road through The Torii-Moon Gate (Distortion Gate with ritual rerouting). Your avatar of one selected deity from Amaterasu, Tsukuyomi, Susanoo, Izanami enters; this beat spotlights Amaterasu as the reference silhouette while preserving Avatar choice. The mission is the treasure or lore step at Inari Rice Court Storehouse, using shrine-road labyrinth and mirror sanctum pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Sacred Kingdoms is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash..",
   "lore": "Ascension canon route rewrite: Torii-Moon Mirror Road is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Inari Rice Court Storehouse and reveals: Why unpurified crossings reroute space. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 743,
   "encouragedDeityRoles": [
@@ -49,7 +49,7 @@
   "specialRules": [
     "Route Law \u2014 Torii-Moon Mirror Road: Distortion Gate with ritual rerouting changes how movement, hazards, and enemy pressure are read.",
     "Room Rule \u2014 Inari Rice Court Storehouse: play this beat as a treasure or lore node, not a generic arena.",
-    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
+    "Solo Divine Scale: one player-controlled Avatar occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
     "With one selected deity, open the relic detour in the Inari Rice Court Storehouse, secure the relic detour, and take the reward without awakening the wrong memory."
@@ -94,7 +94,6 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "chapterId": "MG-F04-CH04",
   "difficulty": "Normal",
   "activeDeityPolicy": {
@@ -118,17 +117,17 @@
       "Artillery"
     ],
     "recommendedDeityIds": [
-      "MG-TITAN-028",
-      "MG-TITAN-029"
+      "MG-DEITY-028",
+      "MG-DEITY-029"
     ],
     "recommendedDeities": [
       {
-        "id": "MG-TITAN-032",
+        "id": "MG-DEITY-032",
         "name": "Susanoo Storm Script",
         "reason": "Dominion advantage for fast enemies"
       },
       {
-        "id": "MG-TITAN-028",
+        "id": "MG-DEITY-028",
         "name": "Yamabito Stone Prayer",
         "reason": "Shadow advantage for fast enemies"
       },
@@ -153,7 +152,7 @@
   "activeDeityCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "playerControlledDeities": 1,
+    "playerControlledAvatars": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -166,7 +165,7 @@
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled Deities",
+      "multiple player-controlled Avatars",
       "ally positioning",
       "team turns"
     ],
@@ -189,7 +188,7 @@
       "MG-CROSS-RUN-IN-001"
     ],
     "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
-    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone deity without creating ally units or squad play."
+    "oneAvatarVsManyUse": "Run-ins add enemy role pressure around the lone Avatar without creating ally units or squad play."
   },
   "loreContinuityGuard": {
     "sourceFactionId": "MG-FACTION-004",
@@ -200,7 +199,7 @@
       "established faction identity",
       "Mythos Gates mythology",
       "Gates and Codex systems",
-      "one player-controlled deity combat",
+      "one player-controlled Avatar combat",
       "mobile UE5 zone structure"
     ],
     "forbid": [
@@ -245,5 +244,6 @@
     "routeBeat": "Mission 13 of 20 advances Inari Rice Court Storehouse inside Torii-Moon Mirror Road.",
     "referencePlayableDeity": "Amaterasu",
     "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
-  }
+  },
+  "activeDeityDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count."
 }

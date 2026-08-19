@@ -39,7 +39,7 @@ function parseAssetId(relativePath) {
 function inferAssetType(relativePath, assetId) {
   if (assetId) return assetId.replace(/_[0-9]{3}$/, '').replace('GLOBAL_REF', 'GLOBAL_REFERENCE');
   const p = relativePath.toLowerCase();
-  if (p.includes('/titans/')) return 'TITAN';
+  if (p.includes('/deities/')) return 'TITAN';
   if (p.includes('/characters/')) return 'CHARACTER';
   if (p.includes('/creatures/')) return 'CREATURE';
   if (p.includes('/enemies/')) return 'ENEMY';

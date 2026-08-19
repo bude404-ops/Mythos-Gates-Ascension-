@@ -14,9 +14,9 @@
     "No readable real-world text or logos; glyphs and marks must be abstract lore texture."
   ],
   "sections": {
-    "gods_titans": {
+    "gods_deitys": {
       "standard": "Divine character identity \u2014 actual gods and goddesses, NOT Deities as separate species",
-      "source": "data/titans.json + data/faction-visual-bible.json",
+      "source": "data/deitys.json + data/faction-visual-bible.json",
       "rules": [
         "Every playable character is an actual god or goddess \u2014 NOT mortal, NOT Deity creature, NOT alien",
         "Each god needs a unique Divine Signature \u2014 no same glow/aura on everyone",
@@ -131,7 +131,7 @@
     },
     "weapons": {
       "standard": "Divine artifact standards. Mythology + God + Realm + Faction + Combat Role + Divine Power. Must feel legendary.",
-      "source": "data/titans.json (weaponCanon, equipmentDetails)"
+      "source": "data/deitys.json (weaponCanon, equipmentDetails)"
     },
     "gates": {
       "standard": "Dimensional visual language. Gates are a fundamental force \u2014 NOT just portals behind characters. Woven into the deity's existence.",

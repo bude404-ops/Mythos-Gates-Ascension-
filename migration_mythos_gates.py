@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
 Mythos Gates: Ascension — Full Migration Script
-Transforms the entire repo from Titans Gate (63 titans) to Mythos Gates: Ascension (28 deities)
+Transforms the entire repo from Mythos Gates (63 deitys) to Mythos Gates: Ascension (28 deities)
 
 Changes:
-1. Title: Titans Gate → Mythos Gates: Ascension
-2. Roster: 63 titans → 28 deities (4 per faction × 7 factions)
-3. Language: Titan → Deity/Divine Champion/Ascendant
-4. Combat: one-titan-vs-many → one-deity-vs-many
+1. Title: Mythos Gates → Mythos Gates: Ascension
+2. Roster: 63 deitys → 28 deities (4 per faction × 7 factions)
+3. Language: Deity → Deity/Divine Champion/Ascendant
+4. Combat: one-deity-vs-many → one-deity-vs-many
 5. Campaign: 8 campaigns → 7 realm campaigns
 6. Tone: generic fantasy → mythological dark-fantasy / divine-cinematic
 7. Terminology: gates, realms, trials, Hollow, ascension, relics, pantheon
@@ -23,22 +23,22 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 # === 28 DEITY SELECTION (4 per faction) ===
 KEEP_IDS = [
     # Aten Ra
-    "MG-TITAN-001", "MG-TITAN-002", "MG-TITAN-003", "MG-TITAN-004",
+    "MG-DEITY-001", "MG-DEITY-002", "MG-DEITY-003", "MG-DEITY-004",
     # Asgardian
-    "MG-TITAN-010", "MG-TITAN-011", "MG-TITAN-012", "MG-TITAN-013",
+    "MG-DEITY-010", "MG-DEITY-011", "MG-DEITY-012", "MG-DEITY-013",
     # Olympian
-    "MG-TITAN-019", "MG-TITAN-020", "MG-TITAN-021", "MG-TITAN-022",
+    "MG-DEITY-019", "MG-DEITY-020", "MG-DEITY-021", "MG-DEITY-022",
     # Kami
-    "MG-TITAN-028", "MG-TITAN-029", "MG-TITAN-030", "MG-TITAN-031",
+    "MG-DEITY-028", "MG-DEITY-029", "MG-DEITY-030", "MG-DEITY-031",
     # Tuatha
-    "MG-TITAN-037", "MG-TITAN-038", "MG-TITAN-039", "MG-TITAN-040",
+    "MG-DEITY-037", "MG-DEITY-038", "MG-DEITY-039", "MG-DEITY-040",
     # Empyrean
-    "MG-TITAN-046", "MG-TITAN-047", "MG-TITAN-048", "MG-TITAN-049",
+    "MG-DEITY-046", "MG-DEITY-047", "MG-DEITY-048", "MG-DEITY-049",
     # Infernal Dominion
-    "MG-TITAN-055", "MG-TITAN-056", "MG-TITAN-057", "MG-TITAN-058",
+    "MG-DEITY-055", "MG-DEITY-056", "MG-DEITY-057", "MG-DEITY-058",
 ]
 
-# Map old titan IDs to new deity IDs
+# Map old deity IDs to new deity IDs
 ID_MAP = {}
 for old_id in KEEP_IDS:
     num = old_id.split('-')[-1]
@@ -50,93 +50,93 @@ for old_id in KEEP_IDS:
 # Order matters — longer patterns first
 REPLACEMENTS = [
     # Title
-    ("Titans Gate: Ascension", "Mythos Gates: Ascension"),
-    ("Titans Gate", "Mythos Gates: Ascension"),
-    ("TITANS GATE", "MYTHOS GATES: ASCENSION"),
-    ("titans gate", "mythos gates: ascension"),
+    ("Mythos Gates: Ascension", "Mythos Gates: Ascension"),
+    ("Mythos Gates", "Mythos Gates: Ascension"),
+    ("MYTHOS GATES", "MYTHOS GATES: ASCENSION"),
+    ("deitys gate", "mythos gates: ascension"),
     
     # Combat system
-    ("one-titan-vs-many", "one-deity-vs-many"),
-    ("One-Titan-vs-Many", "One-Deity-vs-Many"),
-    ("one titan vs many", "one deity vs many"),
-    ("One Titan vs Many", "One Deity vs Many"),
-    ("solo-titan", "solo-deity"),
-    ("Solo-Titan", "Solo-Deity"),
-    ("solo titan", "solo deity"),
-    ("Solo Titan", "Solo Deity"),
+    ("one-deity-vs-many", "one-deity-vs-many"),
+    ("One-Deity-vs-Many", "One-Deity-vs-Many"),
+    ("one deity vs many", "one deity vs many"),
+    ("One Deity vs Many", "One Deity vs Many"),
+    ("solo-deity", "solo-deity"),
+    ("Solo-Deity", "Solo-Deity"),
+    ("solo deity", "solo deity"),
+    ("Solo Deity", "Solo Deity"),
     
     # ID replacements
-    ("MG-TITAN-", "MG-DEITY-"),
+    ("MG-DEITY-", "MG-DEITY-"),
     ("MG-SOLO-TITAN-", "MG-SOLO-DEITY-"),
     
     # Plural forms first
-    ("active Titans", "active deities"),
-    ("active titans", "active deities"),
-    ("many Titans", "many deities"),
-    ("many titans", "many deities"),
-    ("all Titans", "all deities"),
-    ("all titans", "all deities"),
-    ("other Titans", "other deities"),
-    ("other titans", "other deities"),
-    ("63 Titans", "28 Deities"),
-    ("63 titans", "28 deities"),
-    ("nine Titans", "four Deities"),
-    ("Nine Titans", "Four Deities"),
-    ("Three Titans", "Active Deity"),
-    ("three Titans", "active deity"),
+    ("active Deities", "active deities"),
+    ("active deitys", "active deities"),
+    ("many Deities", "many deities"),
+    ("many deitys", "many deities"),
+    ("all Deities", "all deities"),
+    ("all deitys", "all deities"),
+    ("other Deities", "other deities"),
+    ("other deitys", "other deities"),
+    ("63 Deities", "28 Deities"),
+    ("63 deitys", "28 deities"),
+    ("nine Deities", "four Deities"),
+    ("Nine Deities", "Four Deities"),
+    ("Three Deities", "Active Deity"),
+    ("three Deities", "active deity"),
     
-    # Titan-specific compound terms
-    ("titan-art-identity", "deity-art-identity"),
-    ("Titan-Art-Identity", "Deity-Art-Identity"),
-    ("titan-role-matrix", "deity-role-matrix"),
-    ("Titan-Role-Matrix", "Deity-Role-Matrix"),
-    ("titan-trial-system", "deity-trial-system"),
-    ("Titan-Trial-System", "Deity-Trial-System"),
-    ("titan-enemy-balance", "deity-enemy-balance"),
-    ("titan-art-dna", "deity-art-dna"),
-    ("titanArtDna", "deityArtDna"),
-    ("TitanArtDna", "DeityArtDna"),
-    ("titan-gate", "mythos-gate"),
-    ("Titan-Gate", "Mythos-Gate"),
-    ("Titan Gate", "Mythos Gate"),
+    # Deity-specific compound terms
+    ("deity-art-identity", "deity-art-identity"),
+    ("Deity-Art-Identity", "Deity-Art-Identity"),
+    ("deity-role-matrix", "deity-role-matrix"),
+    ("Deity-Role-Matrix", "Deity-Role-Matrix"),
+    ("deity-trial-system", "deity-trial-system"),
+    ("Deity-Trial-System", "Deity-Trial-System"),
+    ("deity-enemy-balance", "deity-enemy-balance"),
+    ("deity-art-dna", "deity-art-dna"),
+    ("deityArtDna", "deityArtDna"),
+    ("DeityArtDna", "DeityArtDna"),
+    ("deity-gate", "mythos-gate"),
+    ("Deity-Gate", "Mythos-Gate"),
+    ("Deity Gate", "Mythos Gate"),
     
-    # Core Titan → Deity (playable character references)
-    ("Titan roster", "Deity roster"),
-    ("titan roster", "deity roster"),
-    ("Titan Roster", "Deity Roster"),
-    ("Titan slot", "Deity slot"),
-    ("titan slot", "deity slot"),
-    ("Titan Slot", "Deity Slot"),
-    ("Titan campaign", "Realm campaign"),
-    ("titan campaign", "realm campaign"),
-    ("Titan Campaign", "Realm Campaign"),
-    ("playable Titan", "playable Deity"),
-    ("playable titan", "playable deity"),
-    ("Playable Titan", "Playable Deity"),
-    ("unlock this Titan", "unlock this Deity"),
-    ("unlock this titan", "unlock this deity"),
-    ("command this Titan", "command this Deity"),
-    ("commanding Titans", "commanding Deities"),
-    ("commanding titans", "commanding deities"),
-    ("each Titan", "each Deity"),
-    ("Each Titan", "Each Deity"),
-    ("every Titan", "every Deity"),
-    ("Every Titan", "Every Deity"),
-    ("a Titan", "a Deity"),
-    ("a titan", "a deity"),
-    ("the Titan", "the Deity"),
-    ("The Titan", "The Deity"),
-    ("this Titan", "this Deity"),
-    ("This Titan", "This Deity"),
-    ("your Titan", "your Deity"),
-    ("Your Titan", "Your Deity"),
-    ("new Titan", "new Deity"),
-    ("New Titan", "New Deity"),
+    # Core Deity → Deity (playable character references)
+    ("Deity roster", "Deity roster"),
+    ("deity roster", "deity roster"),
+    ("Deity Roster", "Deity Roster"),
+    ("Deity slot", "Deity slot"),
+    ("deity slot", "deity slot"),
+    ("Deity Slot", "Deity Slot"),
+    ("Deity campaign", "Realm campaign"),
+    ("deity campaign", "realm campaign"),
+    ("Deity Campaign", "Realm Campaign"),
+    ("playable Deity", "playable Deity"),
+    ("playable deity", "playable deity"),
+    ("Playable Deity", "Playable Deity"),
+    ("unlock this Deity", "unlock this Deity"),
+    ("unlock this deity", "unlock this deity"),
+    ("command this Deity", "command this Deity"),
+    ("commanding Deities", "commanding Deities"),
+    ("commanding deitys", "commanding deities"),
+    ("each Deity", "each Deity"),
+    ("Each Deity", "Each Deity"),
+    ("every Deity", "every Deity"),
+    ("Every Deity", "Every Deity"),
+    ("a Deity", "a Deity"),
+    ("a deity", "a deity"),
+    ("the Deity", "the Deity"),
+    ("The Deity", "The Deity"),
+    ("this Deity", "this Deity"),
+    ("This Deity", "This Deity"),
+    ("your Deity", "your Deity"),
+    ("Your Deity", "Your Deity"),
+    ("new Deity", "new Deity"),
+    ("New Deity", "New Deity"),
     
     # Standalone capitalized (careful — only when clearly referring to the character type)
-    ("Titans", "Deities"),
-    ("titan", "deity"),
-    ("Titan", "Deity"),
+    ("Deities", "Deities"),
+    ("deity", "deity"),
+    ("Deity", "Deity"),
 ]
 
 def apply_replacements(text):
@@ -146,12 +146,12 @@ def apply_replacements(text):
     return text
 
 def process_json_file(filepath, dry_run=False):
-    """Process a JSON file: apply replacements and filter titan references."""
+    """Process a JSON file: apply replacements and filter deity references."""
     try:
         with open(filepath) as f:
             content = f.read()
         
-        # Check if file references any titan IDs that are being dropped
+        # Check if file references any deity IDs that are being dropped
         data = json.loads(content)
         
         # Apply text replacements to the raw content
@@ -167,12 +167,12 @@ def process_json_file(filepath, dry_run=False):
         print(f"  ERROR processing {filepath}: {e}")
         return False
 
-def filter_titans_json(filepath, dry_run=False):
-    """Filter titans.json to only keep the 28 selected deities."""
+def filter_deitys_json(filepath, dry_run=False):
+    """Filter deitys.json to only keep the 28 selected deities."""
     with open(filepath) as f:
-        titans = json.load(f)
+        deitys = json.load(f)
     
-    tlist = titans if isinstance(titans, list) else [titans]
+    tlist = deitys if isinstance(deitys, list) else [deitys]
     
     # Filter to 28 deities
     kept = [t for t in tlist if t.get('id') in KEEP_IDS]
@@ -183,19 +183,19 @@ def filter_titans_json(filepath, dry_run=False):
         if old_id in ID_MAP:
             t['id'] = ID_MAP[old_id]
         
-        # Update any titan-specific fields
-        if 'titanArtDna' in t:
-            t['deityArtDna'] = t.pop('titanArtDna')
+        # Update any deity-specific fields
+        if 'deityArtDna' in t:
+            t['deityArtDna'] = t.pop('deityArtDna')
         if 'artPromptId' in t:
             old_prompt = t['artPromptId']
-            t['artPromptId'] = old_prompt.replace('MG-PROMPT-', 'MG-PROMPT-').replace('MG-TITAN-', 'MG-DEITY-')
+            t['artPromptId'] = old_prompt.replace('MG-PROMPT-', 'MG-PROMPT-').replace('MG-DEITY-', 'MG-DEITY-')
         if 'backstoryId' in t:
             t['backstoryId'] = t['backstoryId'].replace('MG-BACKSTORY-TITAN-', 'MG-BACKSTORY-DEITY-')
-        if 'titanArtDna' in t:
-            t.pop('titanArtDna', None)
+        if 'deityArtDna' in t:
+            t.pop('deityArtDna', None)
     
     # Update count
-    if isinstance(titans, list):
+    if isinstance(deitys, list):
         result = kept
     else:
         result = kept[0] if kept else {}
@@ -204,48 +204,48 @@ def filter_titans_json(filepath, dry_run=False):
         with open(filepath, 'w') as f:
             json.dump(result, f, indent=2, ensure_ascii=False)
     
-    print(f"  Filtered titans.json: {len(tlist)} → {len(kept)} deities")
+    print(f"  Filtered deitys.json: {len(tlist)} → {len(kept)} deities")
     return kept
 
 def rename_directories(base_dir, dry_run=False):
-    """Rename directories containing 'Titan' or 'Titans' in their names."""
+    """Rename directories containing 'Deity' or 'Deities' in their names."""
     renames = []
     
-    # Rename 3D_Blueprints/Characters/Titans → Deities
-    old_titans_dir = os.path.join(base_dir, '3D_Blueprints', 'Characters', 'Titans')
+    # Rename 3D_Blueprints/Characters/Deities → Deities
+    old_deitys_dir = os.path.join(base_dir, '3D_Blueprints', 'Characters', 'Deities')
     new_deities_dir = os.path.join(base_dir, '3D_Blueprints', 'Characters', 'Deities')
-    if os.path.exists(old_titans_dir):
-        renames.append((old_titans_dir, new_deities_dir))
+    if os.path.exists(old_deitys_dir):
+        renames.append((old_deitys_dir, new_deities_dir))
     
-    # Rename individual TITAN_ directories to DEITY_ and filter to 28
-    if os.path.exists(old_titans_dir):
-        for item in os.listdir(old_titans_dir):
-            if item.startswith('TITAN_'):
+    # Rename individual DEITY_ directories to DEITY_ and filter to 28
+    if os.path.exists(old_deitys_dir):
+        for item in os.listdir(old_deitys_dir):
+            if item.startswith('DEITY_'):
                 # Extract the number
                 parts = item.split('_')
                 num = parts[1]  # e.g., "001"
-                titan_id = f"MG-TITAN-{num}"
+                deity_id = f"MG-DEITY-{num}"
                 
-                old_path = os.path.join(old_titans_dir, item)
+                old_path = os.path.join(old_deitys_dir, item)
                 
-                if titan_id in KEEP_IDS:
+                if deity_id in KEEP_IDS:
                     # Rename to DEITY_
-                    new_name = item.replace('TITAN_', 'DEITY_')
+                    new_name = item.replace('DEITY_', 'DEITY_')
                     new_path = os.path.join(new_deities_dir, new_name)
                     renames.append((old_path, new_path))
                 else:
-                    # Remove dropped titans
+                    # Remove dropped deitys
                     if not dry_run:
                         shutil.rmtree(old_path)
                     print(f"  Removed dropped: {item}")
     
-    # Rename battlefield with "titan-gate" in name
+    # Rename battlefield with "deity-gate" in name
     bf_dir = os.path.join(base_dir, '3D_Blueprints', 'Battlefields')
     if os.path.exists(bf_dir):
         for item in os.listdir(bf_dir):
-            if 'titan-gate' in item.lower() or 'titan' in item.lower():
+            if 'deity-gate' in item.lower() or 'deity' in item.lower():
                 old_path = os.path.join(bf_dir, item)
-                new_name = item.replace('titan-gate', 'mythos-gate').replace('titan', 'mythos').replace('Titan', 'Mythos')
+                new_name = item.replace('deity-gate', 'mythos-gate').replace('deity', 'mythos').replace('Deity', 'Mythos')
                 new_path = os.path.join(bf_dir, new_name)
                 if old_path != new_path:
                     renames.append((old_path, new_path))
@@ -266,7 +266,7 @@ def update_project_json(filepath, dry_run=False):
         d = json.load(f)
     
     d['name'] = 'Mythos Gates: Ascension'
-    d['formerTitle'] = 'Titans Gate'
+    d['formerTitle'] = 'Mythos Gates'
     d['deityCount'] = 28
     d['realmCampaignCount'] = 7
     d['missionCount'] = 280
@@ -292,7 +292,7 @@ def update_project_json(filepath, dry_run=False):
     }
     d['terminology'] = {
         "prefer": ["Mythos Gates", "Ascension", "deity", "divine champion", "ascendant", "realm", "gate", "trial", "Hollow", "divine skill", "mythic power", "relic", "pantheon", "mythic convergence"],
-        "avoid": ["Titans Gate as current title", "Titan-only framing", "many Titans active at once", "generic fantasy party language", "overly sci-fi framing"]
+        "avoid": ["Mythos Gates as current title", "Deity-only framing", "many Deities active at once", "generic fantasy party language", "overly sci-fi framing"]
     }
     
     if not dry_run:
@@ -303,17 +303,17 @@ def update_project_json(filepath, dry_run=False):
 def update_solo_combat_docs(base_dir, dry_run=False):
     """Update combat documentation to one-deity-vs-many language."""
     combat_files = [
-        'data/one-titan-vs-many-combat.json',
+        'data/one-deity-vs-many-combat.json',
         'data/solo-combat-design-document.json',
-        'data/solo-titan-migration-report.json',
-        'data/solo-titan-roster-redesign.json',
+        'data/solo-deity-migration-report.json',
+        'data/solo-deity-roster-redesign.json',
         'data/solo-vertical-slice.json',
         'data/solo-battle-state-schema.json',
         'data/combat-first-gameplay-doctrine.json',
-        'data/titan-enemy-balance-pass.json',
-        'data/titan-trial-system.json',
-        'data/titan-role-matrix.json',
-        'data/titan-art-identity-audit.json',
+        'data/deity-enemy-balance-pass.json',
+        'data/deity-trial-system.json',
+        'data/deity-role-matrix.json',
+        'data/deity-art-identity-audit.json',
     ]
     
     for f in combat_files:
@@ -323,13 +323,13 @@ def update_solo_combat_docs(base_dir, dry_run=False):
     
     # Rename files
     renames = [
-        ('data/one-titan-vs-many-combat.json', 'data/one-deity-vs-many-combat.json'),
-        ('data/solo-titan-migration-report.json', 'data/solo-deity-migration-report.json'),
-        ('data/solo-titan-roster-redesign.json', 'data/solo-deity-roster-redesign.json'),
-        ('data/titan-enemy-balance-pass.json', 'data/deity-enemy-balance-pass.json'),
-        ('data/titan-trial-system.json', 'data/deity-trial-system.json'),
-        ('data/titan-role-matrix.json', 'data/deity-role-matrix.json'),
-        ('data/titan-art-identity-audit.json', 'data/deity-art-identity-audit.json'),
+        ('data/one-deity-vs-many-combat.json', 'data/one-deity-vs-many-combat.json'),
+        ('data/solo-deity-migration-report.json', 'data/solo-deity-migration-report.json'),
+        ('data/solo-deity-roster-redesign.json', 'data/solo-deity-roster-redesign.json'),
+        ('data/deity-enemy-balance-pass.json', 'data/deity-enemy-balance-pass.json'),
+        ('data/deity-trial-system.json', 'data/deity-trial-system.json'),
+        ('data/deity-role-matrix.json', 'data/deity-role-matrix.json'),
+        ('data/deity-art-identity-audit.json', 'data/deity-art-identity-audit.json'),
     ]
     
     for old_rel, new_rel in renames:
@@ -355,22 +355,22 @@ def update_roster_depth_map(base_dir, dry_run=False):
     # Filter role coverage to only kept deities
     if 'roleCoverage' in d:
         for role, info in d['roleCoverage'].items():
-            if 'titanIds' in info:
+            if 'deityIds' in info:
                 # Map old IDs to new, filter to kept
-                new_ids = [ID_MAP.get(tid, tid) for tid in info['titanIds'] if tid in KEEP_IDS]
-                info['titanIds'] = new_ids
+                new_ids = [ID_MAP.get(tid, tid) for tid in info['deityIds'] if tid in KEEP_IDS]
+                info['deityIds'] = new_ids
                 info['count'] = len(new_ids)
                 # Rename key
-                if 'titanIds' in info:
-                    info['deityIds'] = info.pop('titanIds')
+                if 'deityIds' in info:
+                    info['deityIds'] = info.pop('deityIds')
     
     if not dry_run:
         with open(fpath, 'w') as f:
             json.dump(d, f, indent=2, ensure_ascii=False)
     print(f"  Updated roster-depth-map.json: 28 deities")
 
-def remove_dropped_titan_files(base_dir, dry_run=False):
-    """Remove art prompts, backstories, and 3D blueprints for dropped titans."""
+def remove_dropped_deity_files(base_dir, dry_run=False):
+    """Remove art prompts, backstories, and 3D blueprints for dropped deitys."""
     removed = 0
     
     # Art prompts
@@ -379,28 +379,28 @@ def remove_dropped_titan_files(base_dir, dry_run=False):
         for f in os.listdir(art_dir):
             if f.startswith('MG-PROMPT-') and f.endswith('.json'):
                 num = f.replace('MG-PROMPT-', '').replace('.json', '')
-                titan_id = f"MG-TITAN-{num}"
-                if titan_id not in KEEP_IDS:
+                deity_id = f"MG-DEITY-{num}"
+                if deity_id not in KEEP_IDS:
                     fpath = os.path.join(art_dir, f)
                     if not dry_run:
                         os.remove(fpath)
                     removed += 1
     
     # Backstories
-    bs_dir = os.path.join(base_dir, 'backstories', 'titans')
+    bs_dir = os.path.join(base_dir, 'backstories', 'deitys')
     if os.path.exists(bs_dir):
         for f in os.listdir(bs_dir):
             if f.startswith('MG-BACKSTORY-TITAN-') and f.endswith('.json'):
                 num = f.replace('MG-BACKSTORY-TITAN-', '').replace('.json', '')
-                titan_id = f"MG-TITAN-{num}"
-                if titan_id not in KEEP_IDS:
+                deity_id = f"MG-DEITY-{num}"
+                if deity_id not in KEEP_IDS:
                     fpath = os.path.join(bs_dir, f)
                     if not dry_run:
                         os.remove(fpath)
                     removed += 1
     
     # Rename kept backstory files
-    bs_dir = os.path.join(base_dir, 'backstories', 'titans')
+    bs_dir = os.path.join(base_dir, 'backstories', 'deitys')
     bs_new_dir = os.path.join(base_dir, 'backstories', 'deities')
     if os.path.exists(bs_dir):
         if not dry_run:
@@ -408,8 +408,8 @@ def remove_dropped_titan_files(base_dir, dry_run=False):
         for f in os.listdir(bs_dir):
             if f.startswith('MG-BACKSTORY-TITAN-') and f.endswith('.json'):
                 num = f.replace('MG-BACKSTORY-TITAN-', '').replace('.json', '')
-                titan_id = f"MG-TITAN-{num}"
-                if titan_id in KEEP_IDS:
+                deity_id = f"MG-DEITY-{num}"
+                if deity_id in KEEP_IDS:
                     old_path = os.path.join(bs_dir, f)
                     new_name = f.replace('MG-BACKSTORY-TITAN-', 'MG-BACKSTORY-DEITY-')
                     new_path = os.path.join(bs_new_dir, new_name)
@@ -422,15 +422,15 @@ def remove_dropped_titan_files(base_dir, dry_run=False):
         for f in list(os.listdir(art_dir)):
             if f.startswith('MG-PROMPT-') and f.endswith('.json'):
                 num = f.replace('MG-PROMPT-', '').replace('.json', '')
-                titan_id = f"MG-TITAN-{num}"
-                if titan_id in KEEP_IDS:
+                deity_id = f"MG-DEITY-{num}"
+                if deity_id in KEEP_IDS:
                     old_path = os.path.join(art_dir, f)
                     new_name = f.replace('MG-PROMPT-', 'MG-PROMPT-')
                     new_path = os.path.join(art_dir, new_name)
                     if not dry_run:
                         shutil.move(old_path, new_path)
     
-    print(f"  Removed {removed} dropped titan files, renamed kept files")
+    print(f"  Removed {removed} dropped deity files, renamed kept files")
     return removed
 
 def update_all_json_content(base_dir, dry_run=False):
@@ -553,9 +553,9 @@ def main():
     print("\n[1/8] Updating project.json...")
     update_project_json(os.path.join(BASE, 'data', 'project.json'))
     
-    # 2. Filter titans.json to 28 deities
-    print("\n[2/8] Filtering titans.json to 28 deities...")
-    filter_titans_json(os.path.join(BASE, 'data', 'titans.json'))
+    # 2. Filter deitys.json to 28 deities
+    print("\n[2/8] Filtering deitys.json to 28 deities...")
+    filter_deitys_json(os.path.join(BASE, 'data', 'deitys.json'))
     
     # 3. Update roster depth map
     print("\n[3/8] Updating roster depth map...")
@@ -565,9 +565,9 @@ def main():
     print("\n[4/8] Updating combat documentation...")
     update_solo_combat_docs(BASE)
     
-    # 5. Remove dropped titan files and rename kept ones
-    print("\n[5/8] Removing dropped titan files...")
-    remove_dropped_titan_files(BASE)
+    # 5. Remove dropped deity files and rename kept ones
+    print("\n[5/8] Removing dropped deity files...")
+    remove_dropped_deity_files(BASE)
     
     # 6. Rename 3D blueprint directories
     print("\n[6/8] Renaming 3D blueprint directories...")
@@ -590,12 +590,12 @@ def main():
     # Summary
     print(f"""
 SUMMARY:
-- Title: Titans Gate → Mythos Gates: Ascension
-- Roster: 63 titans → 28 deities (4 per faction)
-- Combat: one-titan-vs-many → one-deity-vs-many
+- Title: Mythos Gates → Mythos Gates: Ascension
+- Roster: 63 deitys → 28 deities (4 per faction)
+- Combat: one-deity-vs-many → one-deity-vs-many
 - Campaign: 7 realm campaigns, 280 missions
 - Tone: Mythological dark-fantasy / divine-cinematic
-- Language: Titan → Deity/Divine Champion throughout
+- Language: Deity → Deity/Divine Champion throughout
 - New systems: Ascension progression, realm campaign structure
 """)
 

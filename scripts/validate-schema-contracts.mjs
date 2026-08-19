@@ -4,7 +4,7 @@ import { listJsonRecords } from '../src/data-loaders/content-loader.mjs';
 import { validateContract } from '../src/data-loaders/schema-contracts.mjs';
 
 const contracts = [
-  { name: 'deity', schemaPath: 'schemas/deity.schema.json', records: JSON.parse(fs.readFileSync('data/titans.json', 'utf8')) },
+  { name: 'deity', schemaPath: 'schemas/deity.schema.json', records: JSON.parse(fs.readFileSync('data/deitys.json', 'utf8')) },
   { name: 'faction', schemaPath: 'schemas/faction.schema.json', records: JSON.parse(fs.readFileSync('data/factions.json', 'utf8')) },
   { name: 'map', schemaPath: 'schemas/map.schema.json', records: JSON.parse(fs.readFileSync('data/maps.json', 'utf8')) },
   { name: 'mission-dialogue', schemaPath: 'schemas/mission-dialogue.schema.json', records: JSON.parse(fs.readFileSync('data/mission-dialogue.json', 'utf8')) },
@@ -56,7 +56,7 @@ const contracts = [
   },
   {
     name: 'one-deity-vs-many-combat',
-    schemaPath: 'schemas/one-titan-vs-many-combat.schema.json',
+    schemaPath: 'schemas/one-deity-vs-many-combat.schema.json',
     records: [JSON.parse(fs.readFileSync('data/one-deity-vs-many-combat.json', 'utf8'))]
   },
   {

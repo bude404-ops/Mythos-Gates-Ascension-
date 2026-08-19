@@ -15,7 +15,7 @@
     "round": "integer starting at 1",
     "phase": "PLAYER_PHASE | ENEMY_INTENT | ENEMY_PHASE | REACTION_WINDOW | TERRAIN_TICK | OBJECTIVE_EVALUATION | VICTORY | DEFEAT",
     "seed": "deterministic integer seed for repeatable reducer tests",
-    "titan": "one active deity object with stats, hp, position, stance, cooldowns, status, mastery, and resources",
+    "deity": "one active deity object with stats, hp, position, stance, cooldowns, status, mastery, and resources",
     "resources": {
       "momentum": "0-100",
       "divinity": "0-100",
@@ -92,7 +92,7 @@
     }
   },
   "qualityGates": [
-    "Only one player-controlled deity may be active in battle state.",
+    "Only one player-controlled Avatar may be active in battle state.",
     "Every major enemy action must have a telegraph or logged exception.",
     "Reaction windows are turn-based prompts, never real-time inputs.",
     "Momentum and Divinity must clamp between 0 and 100.",
@@ -102,7 +102,7 @@
   "verticalSliceDefault": {
     "battleId": "MG-BATTLE-FIRST-GATE-001",
     "missionId": "MG-BATTLEFIELD-VS-001",
-    "starterDeityId": "MG-TITAN-001",
+    "starterDeityId": "MG-DEITY-001",
     "starterEnemies": [
       "MG-CREATURE-001",
       "MG-CREATURE-001",

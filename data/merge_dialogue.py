@@ -56,17 +56,17 @@ def apply_dialogue(data, faction_id, fd):
         
         entry['lines'] = lines
         
-        # Fix Titan references in meta fields
+        # Fix Deity references in meta fields
         rec = entry.get('mythosGatesDialogueRecreation', {})
         if 'speakerRule' in rec:
-            rec['speakerRule'] = rec['speakerRule'].replace('Titan', 'deity')
+            rec['speakerRule'] = rec['speakerRule'].replace('Deity', 'deity')
         if 'soloRule' in rec:
-            rec['soloRule'] = rec['soloRule'].replace('Titan', 'deity')
+            rec['soloRule'] = rec['soloRule'].replace('Deity', 'deity')
         
-        if 'soloTitanPolicy' in entry:
-            entry['soloTitanPolicy'] = entry['soloTitanPolicy'].replace('Titan', 'Deity')
         if 'soloDeityPolicy' in entry:
-            entry['soloDeityPolicy'] = entry['soloDeityPolicy'].replace('Titan', 'Deity')
+            entry['soloDeityPolicy'] = entry['soloDeityPolicy'].replace('Deity', 'Deity')
+        if 'soloDeityPolicy' in entry:
+            entry['soloDeityPolicy'] = entry['soloDeityPolicy'].replace('Deity', 'Deity')
         
         updated += 1
     

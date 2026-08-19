@@ -134,10 +134,10 @@
   ],
   "requiredDataModelChanges": [
     "battle.activeDeityId replaces battle.playerDeityIds in normal modes.",
-    "titan.soloArchetypes, titan.uniqueMechanic, titan.stances, titan.reactions, titan.execution, titan.divineAscension.",
-    "mission.type, mission.soloTacticalPurpose, mission.idealTitanArchetypes, mission.enemyBehaviorPlan, mission.terrainPlan, mission.bossPhases.",
-    "arena.defensiveTitanSnapshot replaces arenaDefenseTitan.",
-    "save.masteryByDeityId and activeTitanLoadouts replace deity preset priority for normal modes."
+    "deity.soloArchetypes, deity.uniqueMechanic, deity.stances, deity.reactions, deity.execution, deity.divineAscension.",
+    "mission.type, mission.soloTacticalPurpose, mission.idealDeityArchetypes, mission.enemyBehaviorPlan, mission.terrainPlan, mission.bossPhases.",
+    "arena.defensiveDeitySnapshot replaces arenaDefenseDeity.",
+    "save.masteryByDeityId and activeDeityLoadouts replace deity preset priority for normal modes."
   ],
   "requiredContentChanges": [
     "Rewrite Divine Abilities away from shared Strike/Signature/Gate Command shells.",

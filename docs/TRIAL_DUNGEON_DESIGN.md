@@ -1,5 +1,8 @@
 # MYTHOS GATES: ASCENSION — Universal Trial Dungeon
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 ## Concept
 After a player selects their deity and faction, they enter a **universal trial dungeon** — the same map/layout for all 7 factions. This trial serves as:
 

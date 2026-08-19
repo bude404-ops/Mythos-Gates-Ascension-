@@ -8,7 +8,7 @@
   "missionNumber": 13,
   "missionInChapter": 1,
   "title": "Weigh the Lion Gate Kill Zone: Relic Detour",
-  "description": "Weigh the Lion Gate Kill Zone: Relic Detour is a rebuilt Mythos Gates mission beat for Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma\u2019at strain). One selected deity from Aten Ra, Sutekh, Iset, Amunet enters; this beat spotlights Aten Ra as the reference silhouette while preserving player choice. The mission is the treasure or lore step at Lion Gate Kill Zone, using sacred judgment temple-road descent pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Solar Dominion of Khepra is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma\u2019at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light..",
+  "description": "Weigh the Lion Gate Kill Zone: Relic Detour is a rebuilt Mythos Gates mission beat for Sun-Scale Verdict Descent through The Sun-Scale Gate (Stable Gate under Ma\u2019at strain). Your avatar of one selected deity from Aten Ra, Sutekh, Iset, Amunet enters; this beat spotlights Aten Ra as the reference silhouette while preserving Avatar choice. The mission is the treasure or lore step at Lion Gate Kill Zone, using sacred judgment temple-road descent pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Solar Dominion of Khepra is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma\u2019at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light..",
   "lore": "Ascension canon route rewrite: Sun-Scale Verdict Descent is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Lion Gate Kill Zone and reveals: Why the Sun-Scale Gate judges travelers before admitting them. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 555,
   "encouragedDeityRoles": [
@@ -50,7 +50,7 @@
   "specialRules": [
     "Route Law \u2014 Sun-Scale Verdict Descent: Stable Gate under Ma\u2019at strain changes how movement, hazards, and enemy pressure are read.",
     "Room Rule \u2014 Lion Gate Kill Zone: play this beat as a treasure or lore node, not a generic arena.",
-    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
+    "Solo Divine Scale: one player-controlled Avatar occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
     "With one selected deity, open the relic detour in the Lion Gate Kill Zone, secure the relic detour, and take the reward without awakening the wrong memory."
@@ -91,7 +91,6 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "chapterId": "MG-F01-CH04",
   "difficulty": "Normal",
   "activeDeityPolicy": {
@@ -115,12 +114,12 @@
       "Artillery"
     ],
     "recommendedDeityIds": [
-      "MG-TITAN-009",
-      "MG-TITAN-001"
+      "MG-DEITY-009",
+      "MG-DEITY-001"
     ],
     "recommendedDeities": [
       {
-        "id": "MG-TITAN-006",
+        "id": "MG-DEITY-006",
         "name": "Iset Obsidian Dawn",
         "reason": "Dominion advantage for fast enemies"
       },
@@ -150,7 +149,7 @@
   "activeDeityCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "playerControlledDeities": 1,
+    "playerControlledAvatars": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -163,7 +162,7 @@
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled Deities",
+      "multiple player-controlled Avatars",
       "ally positioning",
       "team turns"
     ],
@@ -186,7 +185,7 @@
       "MG-CROSS-RUN-IN-002"
     ],
     "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
-    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone deity without creating ally units or squad play."
+    "oneAvatarVsManyUse": "Run-ins add enemy role pressure around the lone Avatar without creating ally units or squad play."
   },
   "loreContinuityGuard": {
     "sourceFactionId": "MG-FACTION-001",
@@ -197,7 +196,7 @@
       "established faction identity",
       "Mythos Gates mythology",
       "Gates and Codex systems",
-      "one player-controlled deity combat",
+      "one player-controlled Avatar combat",
       "mobile UE5 zone structure"
     ],
     "forbid": [
@@ -242,5 +241,6 @@
     "routeBeat": "Mission 13 of 20 advances Lion Gate Kill Zone inside Sun-Scale Verdict Descent.",
     "referencePlayableDeity": "Aten Ra",
     "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
-  }
+  },
+  "activeDeityDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count."
 }

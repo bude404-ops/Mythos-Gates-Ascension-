@@ -5,36 +5,36 @@ export function buildEngineExportSummary({ includeMissions = true } = {}) {
   return {
     schema: 'TG_ENGINE_EXPORT_SUMMARY_V1',
     counts: {
-      titans: dataset.titans.length,
+      deitys: dataset.deitys.length,
       creatures: dataset.creatures.length,
       campaigns: dataset.campaigns.length,
       maps: dataset.maps.length,
       missions: dataset.missions.length
     },
     canonicalRules: {
-      activeTitanCount: 1,
+      activeDeityCount: 1,
       playableThreatLayer: false,
       engineAdaptersAreCanonConsumers: true
     },
     sample: {
-      firstTitan: dataset.titans[0]?.id,
+      firstDeity: dataset.deitys[0]?.id,
       firstMission: dataset.missions[0]?.id,
       firstMap: dataset.maps[0]?.id
     }
   };
 }
 
-export function mapTitanForEngine(titan) {
+export function mapDeityForEngine(deity) {
   return {
-    id: titan.id,
-    displayName: titan.name,
-    factionId: titan.factionId,
-    faction: titan.faction,
-    role: titan.role,
-    rarity: titan.rarity,
-    combatStats: { ...titan.stats },
-    abilityNames: Array.isArray(titan.abilities) ? [...titan.abilities] : [],
-    canonicalAssetHint: titan.artPromptId || null
+    id: deity.id,
+    displayName: deity.name,
+    factionId: deity.factionId,
+    faction: deity.faction,
+    role: deity.role,
+    rarity: deity.rarity,
+    combatStats: { ...deity.stats },
+    abilityNames: Array.isArray(deity.abilities) ? [...deity.abilities] : [],
+    canonicalAssetHint: deity.artPromptId || null
   };
 }
 
@@ -45,7 +45,7 @@ export function mapMissionForEngine(mission) {
     campaignId: mission.campaignId,
     campaignType: mission.campaignType,
     recommendedPower: mission.recommendedPower,
-    activeTitanCount: mission.activeTitanCount,
+    activeDeityCount: mission.activeDeityCount,
     mapId: mission.mapId,
     enemyWaveCount: mission.enemyWaves?.length || 0,
     turnLimit: mission.turnLimit,

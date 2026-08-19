@@ -19,7 +19,7 @@ const allowedStatuses = new Set([
 ]);
 const readyStatuses = new Set(['READY_FOR_3D', 'MODEL_IN_PROGRESS', 'GAME_READY']);
 const sourceFiles = {
-  TITAN: 'data/titans.json',
+  TITAN: 'data/deitys.json',
   CHARACTER: 'data/characters.json',
   CREATURE: 'data/creatures.json',
   CREATURE: 'data/creatures.json',
@@ -45,7 +45,7 @@ if (materialLibrary.status !== 'READY_FOR_3D') fail('Material Library must be RE
 if (styleGuide.status !== 'READY_FOR_3D') fail('Visual Style Guide must be READY_FOR_3D');
 
 const requiredDirs = [
-  'Characters/Titans', 'Characters/Creatures', 'Characters/NPCs',
+  'Characters/Deities', 'Characters/Creatures', 'Characters/NPCs',
   'Battlefields', 'Gates', 'Weapons', 'Armor', 'Structures', 'Props', 'Terrain',
   'Environment', 'Global_References', 'Schemas', 'Templates', 'Registry', 'Validation'
 ];
@@ -114,7 +114,7 @@ for (const entry of registry.assets) {
   if (!githubLinkedAssetIds.has(entry.assetId)) fail(`${entry.assetId}: missing GitHub asset registry link`);
 }
 const requiredCounts = {
-  DEITY: read('data/titans.json').length,
+  DEITY: read('data/deitys.json').length,
   CHARACTER: read('data/characters.json').length,
   BATTLEFIELD: read('data/maps.json').length,
   GATE: read('data/realm-codex.json').length,
@@ -124,7 +124,7 @@ for (const [type, count] of Object.entries(requiredCounts)) {
   if ((stats.byType[type] || 0) !== count) fail(`3D registry ${type} count mismatch: ${stats.byType[type] || 0}/${count}`);
 }
 for (const template of [
-  'titan_blueprint_template.json', 'character_blueprint_template.json', 'creature_blueprint_template.json',
+  'deity_blueprint_template.json', 'character_blueprint_template.json', 'creature_blueprint_template.json',
   'enemy_blueprint_template.json', 'battlefield_blueprint_template.json', 'gate_blueprint_template.json',
   'weapon_blueprint_template.json', 'armor_blueprint_template.json', 'structure_blueprint_template.json',
   'prop_blueprint_template.json', 'terrain_blueprint_template.json', 'environment_blueprint_template.json'

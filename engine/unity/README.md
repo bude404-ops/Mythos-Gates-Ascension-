@@ -6,7 +6,7 @@ Unity should consume validated Mythos Gates records as ScriptableObjects and imp
 
 | Canon record | Unity target |
 | --- | --- |
-| Deity | `TitanCombatData` ScriptableObject |
+| Deity | `DeityCombatData` ScriptableObject |
 | Mission | `MissionDefinition` ScriptableObject |
 | Asset manifest | AssetPostprocessor metadata sidecar |
 | Battlefield map | `BattlefieldMapData` ScriptableObject |

@@ -1,5 +1,8 @@
 # Mythos Gates: Ascension — GitHub Asset Repository
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 GitHub is the central source of truth for artwork and 3D asset files. Reaper is the development and management layer, not the required importer.
 
 ## Flow
@@ -10,7 +13,7 @@ Assets may come from Blender, AI art tools, AI 3D generators, human artists, oth
 
 ## Permanent IDs
 
-Every asset uses a stable ID such as `TITAN_001`, `CHARACTER_001`, `CREATURE_001`, `BATTLEFIELD_001`, `GATE_001`, `WEAPON_001`, or `PROP_001`.
+Every asset uses a stable ID such as `DEITY_001`, `CHARACTER_001`, `CREATURE_001`, `BATTLEFIELD_001`, `GATE_001`, `WEAPON_001`, or `PROP_001`.
 
 Never reuse an asset ID. The ID survives filename changes, folder moves, redesigns, model replacements, and new versions.
 
@@ -40,7 +43,7 @@ That creates/refreshes:
 Then build/export the asset from Blender, an AI art tool, an AI 3D tool, or a human artist package. Name the file with the permanent ID:
 
 ```text
-TITAN_001__solara-sunforge__source-file.png
+DEITY_001__solara-sunforge__source-file.png
 BATTLEFIELD_001__first-reopening-gate__source-file.glb
 CHARACTER_001__mesha-gate-scribe__source-file.webp
 ```
@@ -73,7 +76,7 @@ If a file has no permanent ID, or the ID is not reserved, it is skipped for cano
 
 1. Choose the canon asset ID from `asset_registry/github-asset-registry.json`.
 2. Add the source file under the matching folder, ideally with the ID in the path or filename.
-   - Example: `assets/3d/titans/source/TITAN_001/v001/model.glb`
+   - Example: `assets/3d/deities/source/DEITY_001/v001/model.glb`
 3. Optionally add or update a manifest under `manifests/assets/` using `ASSET_MANIFEST_TEMPLATE.json`.
 4. Run detection and validation:
    - `npm run assets:detect`
@@ -122,7 +125,7 @@ Every uploaded file must include the permanent asset ID in the filename or folde
 Good examples:
 
 ```text
-TITAN_001__aten-ra-solar-law-monolith__source-file.png
+DEITY_001__aten-ra-solar-law-monolith__source-file.png
 CHARACTER_001__mesha-gate-scribe__source-file.webp
 BATTLEFIELD_001__the-first-reopening-gate__source-file.glb
 ```

@@ -1,5 +1,9 @@
 # Campaign Dialogue Bible — First Pass
 
+
+> **Avatar System Note**: Players control Avatars — divine projections of their chosen deity. Avatars carry the deity's power and faith triggers into combat. The deity itself remains protected in its domain. Progression is driven by Belief and Influence. See `docs/lore/04-DEITIES.md` for the full Avatar System specification.
+
+
 ## Purpose
 
 This file begins script dialogue for Mythos Gates campaigns while protecting the canon tone.

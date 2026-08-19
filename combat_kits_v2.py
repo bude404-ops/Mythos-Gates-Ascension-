@@ -261,7 +261,7 @@ COMBAT_KITS = {
 }
 
 def update_combat_kits():
-    with open(os.path.join(BASE, 'data', 'titans.json')) as f:
+    with open(os.path.join(BASE, 'data', 'deitys.json')) as f:
         deities = json.load(f)
     
     updated = 0
@@ -288,7 +288,7 @@ def update_combat_kits():
         else:
             print(f"  WARNING: No combat kit for {name}")
     
-    with open(os.path.join(BASE, 'data', 'titans.json'), 'w') as f:
+    with open(os.path.join(BASE, 'data', 'deitys.json'), 'w') as f:
         json.dump(deities, f, indent=2, ensure_ascii=False)
     
     print(f"Updated {updated}/{len(deities)} deity combat kits")
@@ -300,7 +300,7 @@ def main():
     update_combat_kits()
     
     # Verify
-    with open(os.path.join(BASE, 'data', 'titans.json')) as f:
+    with open(os.path.join(BASE, 'data', 'deitys.json')) as f:
         deities = json.load(f)
     
     print(f"\nVerification:")

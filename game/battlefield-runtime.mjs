@@ -1,5 +1,5 @@
 import {
-// Combat Contract: ONE_PLAYER_CONTROLLED_TITAN_PER_BATTLE
+// Combat Contract: ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE
 // See: data/one-deity-vs-many-combat.json
 // 7x7 grid, 6 tactical zones, 1 deity vs many enemies, 11-turn limit, 3 Solar Seals.
   PHASES,
@@ -96,7 +96,7 @@ export function buildBattlefieldTerrain(verticalSlice) {
         illuminated: sunlit,
         hazard: judgmentLane ? 'SOLAR_JUDGMENT' : zone.id === 'boss' ? 'GATE_PRESSURE' : null,
         cover: zone.id === 'entry' || zone.id === 'choke' ? 'FRACTURED_COVER' : null,
-        scaleClass: zone.id === 'boss' ? 'COLOSSAL_BOSS_ARENA' : 'TITAN_TACTICAL_SPACE'
+        scaleClass: zone.id === 'boss' ? 'COLOSSAL_BOSS_ARENA' : 'DEITY_TACTICAL_SPACE'
       });
     }
   }
@@ -196,7 +196,7 @@ function applyEnemyPositions(state, bindings = DEFAULT_ENEMY_BINDINGS) {
 
 export function createBattlefieldRuntimeState({ verticalSlice, deity, creatures, seed = 20260813, difficulty = 'Normal' }) {
   if (!verticalSlice?.id) throw new Error('Battlefield runtime requires the vertical slice contract.');
-  if (!titan?.id) throw new Error('Battlefield runtime requires one active deity.');
+  if (!deity?.id) throw new Error('Battlefield runtime requires one active deity.');
   const terrain = buildBattlefieldTerrain(verticalSlice);
   const objectives = createBattlefieldObjectives(verticalSlice);
   const enemies = createBattlefieldEnemyRoster({ creatures });

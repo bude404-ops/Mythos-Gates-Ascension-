@@ -1,5 +1,9 @@
 # Cinders of Dominion — Campaign Lore
 
+
+> **Avatar System**: Players channel Avatars of their chosen deity — divine projections that carry the deity's power into combat. The deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn at deity domain with 10-20% penalty. Solo combat only. God-scale in all realms.
+
+
 ## Canon Function
 
 **Cinders of Dominion** establishes the Infernal Dominion as more than evil imagery. Its civilization believes survival belongs to those willing to bear consequence openly. Chains, contracts, fire, and authority are cultural law, not decoration.

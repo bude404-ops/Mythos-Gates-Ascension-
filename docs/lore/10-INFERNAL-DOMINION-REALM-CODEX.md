@@ -17,6 +17,10 @@ The Black Iron Court of Dominion is defined by infernal contracts, black iron co
 - **The Ash Dominion Road** — a campaign-facing location for Infernal Dominion stories.
 - **The Wound Gate Pit** — a campaign-facing location for Infernal Dominion stories.
 
+
+> **Avatar System**: Players channel Avatars of their chosen deity — divine projections that carry the deity's power into combat. The deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn at deity domain with 10-20% penalty. Solo combat only. God-scale in all realms.
+
+
 ## Realm Hazards
 - Contracts that bind battlefield choices.
 - cinder storms that feed rage.
@@ -28,47 +32,47 @@ The Black Iron Court of Dominion is defined by infernal contracts, black iron co
 - decide whether Dominion ambition is a weapon or the next Collapse.
 
 ## Deity Codex Hooks
-### Lucifer (MG-TITAN-055)
+### Lucifer (MG-DEITY-055)
 - **Role:** Endurance
 - **Lore Function:** Lucifer embodies the Infernal Dominion answer to the Ascension Collapse: defender shaped into Realm doctrine.
 - **Chapter Hook:** When Lucifer enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 - **Visual Context:** Frame Lucifer against black iron, ember red, volcanic courts, chain halos, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Asmodeus Bloodforged Crown (MG-TITAN-056)
+### Asmodeus Bloodforged Crown (MG-DEITY-056)
 - **Role:** Conduit
 - **Lore Function:** Asmodeus Bloodforged Crown embodies the Infernal Dominion answer to the Ascension Collapse: battery shaped into Realm doctrine.
 - **Chapter Hook:** When Asmodeus Bloodforged Crown enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 - **Visual Context:** Frame Asmodeus Bloodforged Crown against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Lilith Flameborn Court (MG-TITAN-057)
+### Lilith Flameborn Court (MG-DEITY-057)
 - **Role:** Dominion
 - **Lore Function:** Lilith Flameborn Court embodies the Infernal Dominion answer to the Ascension Collapse: controller shaped into Realm doctrine.
 - **Chapter Hook:** When Lilith Flameborn Court enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 - **Visual Context:** Frame Lilith Flameborn Court against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Naamah Chainwarden (MG-TITAN-058)
+### Naamah Chainwarden (MG-DEITY-058)
 - **Role:** Fracture
 - **Lore Function:** Naamah Chainwarden embodies the Infernal Dominion answer to the Ascension Collapse: breaker shaped into Realm doctrine.
 - **Chapter Hook:** When Naamah Chainwarden enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 - **Visual Context:** Frame Naamah Chainwarden against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Orryx Ash Dominion (MG-TITAN-055)
+### Orryx Ash Dominion (MG-DEITY-055)
 - **Role:** Disruptor
 - **Lore Function:** Orryx Ash Dominion embodies the Infernal Dominion answer to the Ascension Collapse: disruptor shaped into Realm doctrine.
 - **Chapter Hook:** When Orryx Ash Dominion enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 - **Visual Context:** Frame Orryx Ash Dominion against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Malvera Ember Throne (MG-TITAN-060)
+### Malvera Ember Throne (MG-DEITY-060)
 - **Role:** Sustain
 - **Lore Function:** Malvera Ember Throne embodies the Infernal Dominion answer to the Ascension Collapse: sustain shaped into Realm doctrine.
 - **Chapter Hook:** When Malvera Ember Throne enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 - **Visual Context:** Frame Malvera Ember Throne against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Kharon Black Iron (MG-TITAN-058)
+### Kharon Black Iron (MG-DEITY-058)
 - **Role:** Artillery
 - **Lore Function:** Kharon Black Iron embodies the Infernal Dominion answer to the Ascension Collapse: artillery shaped into Realm doctrine.
 - **Chapter Hook:** When Kharon Black Iron enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 - **Visual Context:** Frame Kharon Black Iron against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Sablex Cinder Duke (MG-TITAN-060)
+### Sablex Cinder Duke (MG-DEITY-060)
 - **Role:** Counter
 - **Lore Function:** Sablex Cinder Duke embodies the Infernal Dominion answer to the Ascension Collapse: guardian shaped into Realm doctrine.
 - **Chapter Hook:** When Sablex Cinder Duke enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 - **Visual Context:** Frame Sablex Cinder Duke against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
-### Zerath Wound Gate (MG-TITAN-055)
+### Zerath Wound Gate (MG-DEITY-055)
 - **Role:** Shadow
 - **Lore Function:** Zerath Wound Gate embodies the Infernal Dominion answer to the Ascension Collapse: assassin shaped into Realm doctrine.
 - **Chapter Hook:** When Zerath Wound Gate enters a chapter, the scene should test Infernal Dominion's core tension: They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.

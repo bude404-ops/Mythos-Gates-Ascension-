@@ -1,5 +1,8 @@
 # AAA Repository Audit — Mythos Gates: Ascension
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 Status: production-foundation audit completed after GitHub canon cleanup.
 
 ## Verdict
@@ -132,7 +135,7 @@ assets/
   game_ready/
 content/
   factions/
-  titans/
+  deitys/
   missions/
   dialogue/
   maps/

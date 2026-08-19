@@ -6,19 +6,19 @@ Needed source assets: 129
 ## Fast workflow
 
 1. Build/export the next asset from the list below.
-2. Name it with the permanent ID: `TITAN_001__asset-name__source-file.png` or `.glb`.
+2. Name it with the permanent ID: `DEITY_001__asset-name__source-file.png` or `.glb`.
 3. Drop it in `artwork_import/dropbox/`.
 4. Run `npm run artwork:import`.
 5. Commit the moved asset and generated reports.
 
 ## First finished-product targets
 
-### 1. TITAN_001 — Aten-Ra
+### 1. DEITY_001 — Aten-Ra
 
 - Type: TITAN
-- Drop as: `artwork_import/dropbox/TITAN_001__aten-ra-solar-law-monolith__source-file.ext`
-- Final source folder: `assets/3d/titans/source/TITAN_001/v001`
-- Blueprint: `3D_Blueprints/Characters/Deities/TITAN_001_aten-ra-solar-law-monolith/metadata.json`
+- Drop as: `artwork_import/dropbox/DEITY_001__aten-ra-solar-law-monolith__source-file.ext`
+- Final source folder: `assets/3d/deities/source/DEITY_001/v001`
+- Blueprint: `3D_Blueprints/Characters/Deities/DEITY_001_aten-ra-solar-law-monolith/metadata.json`
 - Prompt: MG-PROMPT-001
 - Generation brief: Premium mobile tactical RPG full-body character concept art of Aten-Ra, a colossal extradimensional Aten Ra Deity from the Solar Dominion of Khepra. Canon premise: this is the source culture humans later copied as Egyptian solar myth; human Egyptian mythology later copied this Realm, so the design must feel like the original source of Ra/Re + Aten + Ma’at, not a costume based on Earth Egypt. Role silhouette: Defender. Mythic traits: sovereign solar law, noon-sun kingship, cosmic balance defender, Aten hand-ray authority. Lore anchor: Aten-Ra is the living office humans later remembered as Ra, Aten, and divine kingship fused together. He does not wear pharaoh imagery — pharaohs copied his Gate-born crown, collar, and solar hand-rays after dreaming of the Sun-Scale Gate. On the battlefield he anchors Ma’at itself, forcing chaos to declare its weight before it can pass. Armor and material canon: electrum-gold pylon collar, Ma’at feather scale bands, Aten sun-disc crown with life-giving hand-rays, broad judgment-shield forearms, royal linen-light mantle. Source-culture combat kit must be visible in the art: relic weapon Aten-Ra Bulwark Ma’at Was-Sceptre Blade; armor body Aten-Ra Electrum Wesekh Source-Plate; resonance core Aten-Ra Khepri Solar Scarab Core; movement relic Aten Hand-Ray Gate Step; reaction relic Uraeus Counter-Edict; execution relic Weigh the Name. Ability visual cues: basic Aten-Ra — Ma’at-Weighted Strike Anchor; technique Pylon Edict Technique — Bastion; signature Aten-Ra: Sun-Scale Decree Holdfast; ascension aura Divine Ascension — Aten-Ra Source Radiance. These are real source-culture artifacts integrated into anatomy and silhouette, not props, not generic RPG gear, and not cosplay weapons. Visual appearance: Colossal living solar judge with readable divine anatomy, an Aten sun-disc crown radiating subtle hand-like rays, electrum wesekh collar fused into chest armor, Ma’at feather balance seams, white-gold noon aura, black-lapis shadow insets, and pylon-shaped shield forearms. Must feel older than Egyptian royalty, not a statue, robot, sarcophagus, or pyramid body. Use Aten sun-disc hand-rays, Ma’at balance geometry, electrum gold, royal linen-light, faience turquoise, lapis/obsidian shadow, black Nile-silt glass, red desert jasper where appropriate, carved relief texture without readable text, and living divine anatomy. The character must be ancient, alive, divine, realm-born, and physically impossible — not a robot, not a mech, not a person wearing armor, not a statue, not a literal pyramid or temple body. Premium dark mythological fantasy, high-detail concept art, readable mobile silhouette, full body, dramatic sacred lighting, no UI. Faction Visual Bible: follow MG-FVB-001 completely; faction canon must be visible in silhouette, materials, posture, armor function, and myth-source identity. Canon premise: this is the source culture humans later copied as Egyptian solar myth; Earth legend is the echo and the Solar Dominion of Khepra is the original.
 - Negative prompt: robot, mech, sci-fi armor, cube body, literal pyramid body, temple torso, city on body, building windows, neon sci-fi, sarcophagus robot, mummy costume, tourist pharaoh costume, generic Egyptian cosplay, flat gold statue, readable glyph text, logo, watermark, blurry, low detail, malformed anatomy, generic RPG weapon, plain sword, plain axe, plain armor, generic magic staff, cosplay weapon, unrelated sci-fi gear, weapon not matching faction mythology, armor not matching source culture
@@ -43,92 +43,92 @@ Needed source assets: 129
 - Generation brief: Mythos Gates tactical battleground environment concept: The First Reopening Gate. A shattered Earth-side gateway courtyard where the first playable encounter unfolds, built for a 5x5 tactical onboarding composition that can expand later. The unstable Gate pulse is visible as pressure fractures through old stone, wind-torn banners, dust columns, and cracked objective ground that feels physically broken rather than marked. Broken Earth-side Gatefield lore: ancient threshold masonry, collapsed relief statues, scorched grass, loose flagstones, and natural cover formed by fallen gate ribs. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects integrated into the location itself, no sci-fi. Canon premise: this contested battlefield shows the seven Realm source cultures colliding through the Gate; Earth mythology is only the later echo, so props must look like original Realm relics rather than museum costumes. Battlefield cosmetics rule: objective props, banners, ruins, reward caches, hazard markers, and cover pieces must inherit the owning faction source-culture materials and relic silhouettes; no generic RPG props, plain weapons, plain armor, or mismatched faction symbols.
 - Negative prompt: sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, generic RPG props, plain weapon cache, plain armor cache, mismatched faction symbols, museum cosplay set dressing, historical reenactment scenery
 
-### 4. TITAN_002 — Sutekh
+### 4. DEITY_002 — Sutekh
 
 - Type: TITAN
-- Drop as: `artwork_import/dropbox/TITAN_002__khemet-suncrown__source-file.ext`
-- Final source folder: `assets/3d/titans/source/TITAN_002/v001`
-- Blueprint: `3D_Blueprints/Characters/Deities/TITAN_002_khemet-suncrown/metadata.json`
+- Drop as: `artwork_import/dropbox/DEITY_002__khemet-suncrown__source-file.ext`
+- Final source folder: `assets/3d/deities/source/DEITY_002/v001`
+- Blueprint: `3D_Blueprints/Characters/Deities/DEITY_002_khemet-suncrown/metadata.json`
 - Prompt: MG-PROMPT-002
 - Generation brief: Premium mobile tactical RPG full-body character concept art of Sutekh, a colossal extradimensional Aten Ra Deity from the Solar Dominion of Khepra. Canon premise: this is the source culture humans later copied as Egyptian solar myth; human Egyptian mythology later copied this Realm, so the design must feel like the original source of Khepri + Black Land fertility + solar renewal, not a costume based on Earth Egypt. Role silhouette: Battery. Mythic traits: scarab dawn renewal, battery of rebirth, Black Land fertile power, sun carried into morning. Lore anchor: Sutekh is the Realm’s Khepri engine: the force that rolls dead light into dawn and turns Nile-black memory into power. Human scarab amulets are miniature echoes of his living renewal shell. He feeds allies by converting wounds, offerings, and battlefield heat into measured solar return. Armor and material canon: scarab-carapace back mantle, faience turquoise energy reservoirs, black Nile-silt glass abdominal plates, gold dawn crown, papyrus conduit bands. Source-culture combat kit must be visible in the art: relic weapon Sutekh Generator Ma’at Was-Sceptre Blade; armor body Sutekh Electrum Wesekh Source-Plate; resonance core Sutekh Khepri Solar Scarab Core; movement relic Aten Hand-Ray Gate Step; reaction relic Uraeus Counter-Edict; execution relic Weigh the Name. Ability visual cues: basic Sutekh — Ma’at-Weighted Strike Kindle; technique Pylon Edict Technique — Reservoir; signature Sutekh: Sun-Scale Decree Overchannel; ascension aura Divine Ascension — Aten-Ra Source Radiance. These are real source-culture artifacts integrated into anatomy and silhouette, not props, not generic RPG gear, and not cosplay weapons. Visual appearance: Massive renewal-battery Deity with scarab-inspired carapace plates, faience and lapis inlay reservoirs, papyrus-green conduit veins, black Nile-silt glass core, dawn-gold crown, and slow rotating solar arcs behind the shoulders. Avoid insect monster; he is a divine generator of rebirth with clear anatomy and ceremonial mass. Use Aten sun-disc hand-rays, Ma’at balance geometry, electrum gold, royal linen-light, faience turquoise, lapis/obsidian shadow, black Nile-silt glass, red desert jasper where appropriate, carved relief texture without readable text, and living divine anatomy. The character must be ancient, alive, divine, realm-born, and physically impossible — not a robot, not a mech, not a person wearing armor, not a statue, not a literal pyramid or temple body. Premium dark mythological fantasy, high-detail concept art, readable mobile silhouette, full body, dramatic sacred lighting, no UI. Faction Visual Bible: follow MG-FVB-001 completely; faction canon must be visible in silhouette, materials, posture, armor function, and myth-source identity. Canon premise: this is the source culture humans later copied as Egyptian solar myth; Earth legend is the echo and the Solar Dominion of Khepra is the original.
 - Negative prompt: robot, mech, sci-fi armor, cube body, literal pyramid body, temple torso, city on body, building windows, neon sci-fi, sarcophagus robot, mummy costume, tourist pharaoh costume, generic Egyptian cosplay, flat gold statue, readable glyph text, logo, watermark, blurry, low detail, malformed anatomy, generic RPG weapon, plain sword, plain axe, plain armor, generic magic staff, cosplay weapon, unrelated sci-fi gear, weapon not matching faction mythology, armor not matching source culture
 
-### 5. TITAN_003 — Iset
+### 5. DEITY_003 — Iset
 
 - Type: TITAN
-- Drop as: `artwork_import/dropbox/TITAN_003__nefra-obsidian-dawn__source-file.ext`
-- Final source folder: `assets/3d/titans/source/TITAN_003/v001`
-- Blueprint: `3D_Blueprints/Characters/Deities/TITAN_003_nefra-obsidian-dawn/metadata.json`
+- Drop as: `artwork_import/dropbox/DEITY_003__nefra-obsidian-dawn__source-file.ext`
+- Final source folder: `assets/3d/deities/source/DEITY_003/v001`
+- Blueprint: `3D_Blueprints/Characters/Deities/DEITY_003_nefra-obsidian-dawn/metadata.json`
 - Prompt: MG-PROMPT-003
 - Generation brief: Premium mobile tactical RPG full-body character concept art of Iset, a colossal extradimensional Aten Ra Deity from the Solar Dominion of Khepra. Canon premise: this is the source culture humans later copied as Egyptian solar myth; human Egyptian mythology later copied this Realm, so the design must feel like the original source of Necropolis dawn + Duat horizon + obsidian judgement, not a costume based on Earth Egypt. Role silhouette: Controller. Mythic traits: underworld dawn control, horizon threshold judge, obsidian-shadow command, truth revealed at sunrise. Lore anchor: Iset governs the border where the sun leaves the underworld and becomes visible again. Human funerary art copied fragments of her horizon masks and dawn reliefs. She controls terrain by deciding what may cross from shadow into light. Armor and material canon: obsidian necropolis mask, horizon-ring collar, black-gold scale skirt, dawn slit visor, limestone funerary relief plates. Source-culture combat kit must be visible in the art: relic weapon Iset Compass Ma’at Was-Sceptre Blade; armor body Iset Electrum Wesekh Source-Plate; resonance core Iset Khepri Solar Scarab Core; movement relic Aten Hand-Ray Gate Step; reaction relic Uraeus Counter-Edict; execution relic Weigh the Name. Ability visual cues: basic Iset — Ma’at-Weighted Strike Vector; technique Pylon Edict Technique — Field Rewrite; signature Iset: Sun-Scale Decree Dominion Grid; ascension aura Divine Ascension — Aten-Ra Source Radiance. These are real source-culture artifacts integrated into anatomy and silhouette, not props, not generic RPG gear, and not cosplay weapons. Visual appearance: Tall controller Deity of black sunrise: obsidian-blue enamel mask, thin amber dawn visor, horizon-ring collar, ivory limestone relief plates, black-gold scale armor, and angular light lanes emerging from underworld-shadow limbs. Must feel like living threshold law, not a mummy, statue, or necropolis building. Use Aten sun-disc hand-rays, Ma’at balance geometry, electrum gold, royal linen-light, faience turquoise, lapis/obsidian shadow, black Nile-silt glass, red desert jasper where appropriate, carved relief texture without readable text, and living divine anatomy. The character must be ancient, alive, divine, realm-born, and physically impossible — not a robot, not a mech, not a person wearing armor, not a statue, not a literal pyramid or temple body. Premium dark mythological fantasy, high-detail concept art, readable mobile silhouette, full body, dramatic sacred lighting, no UI. Faction Visual Bible: follow MG-FVB-001 completely; faction canon must be visible in silhouette, materials, posture, armor function, and myth-source identity. Canon premise: this is the source culture humans later copied as Egyptian solar myth; Earth legend is the echo and the Solar Dominion of Khepra is the original.
 - Negative prompt: robot, mech, sci-fi armor, cube body, literal pyramid body, temple torso, city on body, building windows, neon sci-fi, sarcophagus robot, mummy costume, tourist pharaoh costume, generic Egyptian cosplay, flat gold statue, readable glyph text, logo, watermark, blurry, low detail, malformed anatomy, generic RPG weapon, plain sword, plain axe, plain armor, generic magic staff, cosplay weapon, unrelated sci-fi gear, weapon not matching faction mythology, armor not matching source culture
 
-### 6. TITAN_004 — Amunet
+### 6. DEITY_004 — Amunet
 
 - Type: TITAN
-- Drop as: `artwork_import/dropbox/TITAN_004__orru-prism-verdict__source-file.ext`
-- Final source folder: `assets/3d/titans/source/TITAN_004/v001`
-- Blueprint: `3D_Blueprints/Characters/Deities/TITAN_004_orru-prism-verdict/metadata.json`
+- Drop as: `artwork_import/dropbox/DEITY_004__orru-prism-verdict__source-file.ext`
+- Final source folder: `assets/3d/deities/source/DEITY_004/v001`
+- Blueprint: `3D_Blueprints/Characters/Deities/DEITY_004_orru-prism-verdict/metadata.json`
 - Prompt: MG-PROMPT-004
 - Generation brief: Premium mobile tactical RPG full-body character concept art of Amunet, a colossal extradimensional Aten Ra Deity from the Solar Dominion of Khepra. Canon premise: this is the source culture humans later copied as Egyptian solar myth; human Egyptian mythology later copied this Realm, so the design must feel like the original source of Ma’at weighing + prism light + divine verdict, not a costume based on Earth Egypt. Role silhouette: Breaker. Mythic traits: armor-breaking judgement, weighing-scale geometry, truth-prism refraction, verdict execution. Lore anchor: Amunet is the punishment side of Ma’at: when something refuses balance, he refracts its hidden weight until armor, lies, and false sanctity split open. Human scales of judgement are crude courtroom copies of his prism engine. Armor and material canon: split prism pectoral, scale-beam shoulder arcs, clear solar glass blades, electrum verdict ribs, feather-line engravings. Source-culture combat kit must be visible in the art: relic weapon Amunet Sunderer Ma’at Was-Sceptre Blade; armor body Amunet Electrum Wesekh Source-Plate; resonance core Amunet Khepri Solar Scarab Core; movement relic Aten Hand-Ray Gate Step; reaction relic Uraeus Counter-Edict; execution relic Weigh the Name. Ability visual cues: basic Amunet — Ma’at-Weighted Strike Rend; technique Pylon Edict Technique — Rupture; signature Amunet: Sun-Scale Decree Sundering Trial; ascension aura Divine Ascension — Aten-Ra Source Radiance. These are real source-culture artifacts integrated into anatomy and silhouette, not props, not generic RPG gear, and not cosplay weapons. Visual appearance: Breaker Deity with crystalline solar-prism chest, weighing-scale shoulder geometry, Ma’at feather linework, clear amber glass execution blades, electrum ribs, and fractured light exposing enemy weak points. Avoid generic crystal robot; the prism must feel sacred, judicial, and alive. Use Aten sun-disc hand-rays, Ma’at balance geometry, electrum gold, royal linen-light, faience turquoise, lapis/obsidian shadow, black Nile-silt glass, red desert jasper where appropriate, carved relief texture without readable text, and living divine anatomy. The character must be ancient, alive, divine, realm-born, and physically impossible — not a robot, not a mech, not a person wearing armor, not a statue, not a literal pyramid or temple body. Premium dark mythological fantasy, high-detail concept art, readable mobile silhouette, full body, dramatic sacred lighting, no UI. Faction Visual Bible: follow MG-FVB-001 completely; faction canon must be visible in silhouette, materials, posture, armor function, and myth-source identity. Canon premise: this is the source culture humans later copied as Egyptian solar myth; Earth legend is the echo and the Solar Dominion of Khepra is the original.
 - Negative prompt: robot, mech, sci-fi armor, cube body, literal pyramid body, temple torso, city on body, building windows, neon sci-fi, sarcophagus robot, mummy costume, tourist pharaoh costume, generic Egyptian cosplay, flat gold statue, readable glyph text, logo, watermark, blurry, low detail, malformed anatomy, generic RPG weapon, plain sword, plain axe, plain armor, generic magic staff, cosplay weapon, unrelated sci-fi gear, weapon not matching faction mythology, armor not matching source culture
 
-### 7. TITAN_005 — Sutekh
+### 7. DEITY_005 — Sutekh
 
 - Type: TITAN
-- Drop as: `artwork_import/dropbox/TITAN_005__sutekh-dune-eclipse__source-file.ext`
-- Final source folder: `assets/3d/titans/source/TITAN_005/v001`
-- Blueprint: `3D_Blueprints/Characters/Deities/TITAN_005_sutekh-dune-eclipse/metadata.json`
+- Drop as: `artwork_import/dropbox/DEITY_005__sutekh-dune-eclipse__source-file.ext`
+- Final source folder: `assets/3d/deities/source/DEITY_005/v001`
+- Blueprint: `3D_Blueprints/Characters/Deities/DEITY_005_sutekh-dune-eclipse/metadata.json`
 - Prompt: MG-PROMPT-005
 - Generation brief: Premium mobile tactical RPG full-body character concept art of Sutekh, a colossal extradimensional Aten Ra Deity from the Solar Dominion of Khepra. Canon premise: this is the source culture humans later copied as Egyptian solar myth; human Egyptian mythology later copied this Realm, so the design must feel like the original source of Set/Sutekh + Red Land desert storms + defender against chaos, not a costume based on Earth Egypt. Role silhouette: Disruptor. Mythic traits: desert storm disruption, necessary disorder, anti-chaos violence, Red Land counterweight. Lore anchor: Sutekh is not simple evil. He is the Red Land violence Aten Ra keeps on the scale because even Ra needed Set to strike chaos from the solar journey. Humans remembered him as desert disorder; Khepra remembers him as the weapon order is afraid to admit it needs. Armor and material canon: red jasper storm plates, black iron-sand scars, Set-animal mask silhouette without mascot literalism, hooked khopesh arcs, sand-torn gold linen. Source-culture combat kit must be visible in the art: relic weapon Sutekh Interdictor Ma’at Was-Sceptre Blade; armor body Sutekh Electrum Wesekh Source-Plate; resonance core Sutekh Khepri Solar Scarab Core; movement relic Aten Hand-Ray Gate Step; reaction relic Uraeus Counter-Edict; execution relic Weigh the Name. Ability visual cues: basic Sutekh — Ma’at-Weighted Strike Sever; technique Pylon Edict Technique — Interdiction; signature Sutekh: Sun-Scale Decree Null Mandate; ascension aura Divine Ascension — Aten-Ra Source Radiance. These are real source-culture artifacts integrated into anatomy and silhouette, not props, not generic RPG gear, and not cosplay weapons. Visual appearance: Disruptor Deity with red desert jasper armor, storm-sand erosion, eclipse-black solar disc behind a sharp Set-like threshold mask, hooked khopesh energy arcs, ragged gold linen, and violent asymmetry controlled by Ma’at bands. Must look dangerous and necessary, not a generic demon or villain robot. Use Aten sun-disc hand-rays, Ma’at balance geometry, electrum gold, royal linen-light, faience turquoise, lapis/obsidian shadow, black Nile-silt glass, red desert jasper where appropriate, carved relief texture without readable text, and living divine anatomy. The character must be ancient, alive, divine, realm-born, and physically impossible — not a robot, not a mech, not a person wearing armor, not a statue, not a literal pyramid or temple body. Premium dark mythological fantasy, high-detail concept art, readable mobile silhouette, full body, dramatic sacred lighting, no UI. Faction Visual Bible: follow MG-FVB-001 completely; faction canon must be visible in silhouette, materials, posture, armor function, and myth-source identity. Canon premise: this is the source culture humans later copied as Egyptian solar myth; Earth legend is the echo and the Solar Dominion of Khepra is the original.
 - Negative prompt: robot, mech, sci-fi armor, cube body, literal pyramid body, temple torso, city on body, building windows, neon sci-fi, sarcophagus robot, mummy costume, tourist pharaoh costume, generic Egyptian cosplay, flat gold statue, readable glyph text, logo, watermark, blurry, low detail, malformed anatomy, generic RPG weapon, plain sword, plain axe, plain armor, generic magic staff, cosplay weapon, unrelated sci-fi gear, weapon not matching faction mythology, armor not matching source culture
 
-### 8. TITAN_006 — Iset
+### 8. DEITY_006 — Iset
 
 - Type: TITAN
-- Drop as: `artwork_import/dropbox/TITAN_006__iset-riverlight-throne__source-file.ext`
-- Final source folder: `assets/3d/titans/source/TITAN_006/v001`
-- Blueprint: `3D_Blueprints/Characters/Deities/TITAN_006_iset-riverlight-throne/metadata.json`
+- Drop as: `artwork_import/dropbox/DEITY_006__iset-riverlight-throne__source-file.ext`
+- Final source folder: `assets/3d/deities/source/DEITY_006/v001`
+- Blueprint: `3D_Blueprints/Characters/Deities/DEITY_006_iset-riverlight-throne/metadata.json`
 - Prompt: MG-PROMPT-006
 - Generation brief: Premium mobile tactical RPG full-body character concept art of Iset, a colossal extradimensional Aten Ra Deity from the Solar Dominion of Khepra. Canon premise: this is the source culture humans later copied as Egyptian solar myth; human Egyptian mythology later copied this Realm, so the design must feel like the original source of Isis/Iset + throne magic + restoration + river afterlife passage, not a costume based on Earth Egypt. Role silhouette: Sustain. Mythic traits: throne-mending magic, protective healing, riverlight restoration, afterlife passage guide. Lore anchor: Iset is the restoration office humans later called Isis: throne, mother-protector, healer, and guide through death’s river. Her magic does not merely heal flesh; it re-seats a being in its rightful place in Ma’at. Armor and material canon: throne-shaped crown silhouette, lotus-papyrus mantle, river-glass healing channels, cow-horn/sun-disc echo used subtly, blue faience restoration plates. Source-culture combat kit must be visible in the art: relic weapon Iset Restorer Ma’at Was-Sceptre Blade; armor body Iset Electrum Wesekh Source-Plate; resonance core Iset Khepri Solar Scarab Core; movement relic Aten Hand-Ray Gate Step; reaction relic Uraeus Counter-Edict; execution relic Weigh the Name. Ability visual cues: basic Iset — Ma’at-Weighted Strike Restore; technique Pylon Edict Technique — Covenant; signature Iset: Sun-Scale Decree Renewal Rite; ascension aura Divine Ascension — Aten-Ra Source Radiance. These are real source-culture artifacts integrated into anatomy and silhouette, not props, not generic RPG gear, and not cosplay weapons. Visual appearance: Sustain Deity with a throne-silhouette crown, lotus and papyrus river mantle, blue faience and river-glass channels, soft gold sun-disc between protective horn-like arcs, linen-light veils, and restorative hand-ray patterns. Must feel protective and sovereign, not a goddess cosplay or generic healer. Use Aten sun-disc hand-rays, Ma’at balance geometry, electrum gold, royal linen-light, faience turquoise, lapis/obsidian shadow, black Nile-silt glass, red desert jasper where appropriate, carved relief texture without readable text, and living divine anatomy. The character must be ancient, alive, divine, realm-born, and physically impossible — not a robot, not a mech, not a person wearing armor, not a statue, not a literal pyramid or temple body. Premium dark mythological fantasy, high-detail concept art, readable mobile silhouette, full body, dramatic sacred lighting, no UI. Faction Visual Bible: follow MG-FVB-001 completely; faction canon must be visible in silhouette, materials, posture, armor function, and myth-source identity. Canon premise: this is the source culture humans later copied as Egyptian solar myth; Earth legend is the echo and the Solar Dominion of Khepra is the original.
 - Negative prompt: robot, mech, sci-fi armor, cube body, literal pyramid body, temple torso, city on body, building windows, neon sci-fi, sarcophagus robot, mummy costume, tourist pharaoh costume, generic Egyptian cosplay, flat gold statue, readable glyph text, logo, watermark, blurry, low detail, malformed anatomy, generic RPG weapon, plain sword, plain axe, plain armor, generic magic staff, cosplay weapon, unrelated sci-fi gear, weapon not matching faction mythology, armor not matching source culture
 
-### 9. TITAN_007 — Karnu
+### 9. DEITY_007 — Karnu
 
 - Type: TITAN
-- Drop as: `artwork_import/dropbox/TITAN_007__karnu-glass-horizon__source-file.ext`
-- Final source folder: `assets/3d/titans/source/TITAN_007/v001`
-- Blueprint: `3D_Blueprints/Characters/Deities/TITAN_007_karnu-glass-horizon/metadata.json`
+- Drop as: `artwork_import/dropbox/DEITY_007__karnu-glass-horizon__source-file.ext`
+- Final source folder: `assets/3d/deities/source/DEITY_007/v001`
+- Blueprint: `3D_Blueprints/Characters/Deities/DEITY_007_karnu-glass-horizon/metadata.json`
 - Prompt: MG-PROMPT-007
 - Generation brief: Premium mobile tactical RPG full-body character concept art of Karnu, a colossal extradimensional Aten Ra Deity from the Solar Dominion of Khepra. Canon premise: this is the source culture humans later copied as Egyptian solar myth; human Egyptian mythology later copied this Realm, so the design must feel like the original source of Solar barque horizon + desert glass + long-range Ra sight, not a costume based on Earth Egypt. Role silhouette: Artillery. Mythic traits: horizon artillery, solar barque targeting, glass-mirage refraction, far-sight judgement. Lore anchor: Karnu is the long sight of the solar barque: he reads enemies where sky, river, and desert meet. Human obelisks and horizon sanctuaries are static imitations of his living range geometry. Armor and material canon: barque-arc shoulder rig, desert-glass lens array, falcon-eye sight lines, polished bronze range vanes, lapis shadow braces. Source-culture combat kit must be visible in the art: relic weapon Karnu Far-Sight Ma’at Was-Sceptre Blade; armor body Karnu Electrum Wesekh Source-Plate; resonance core Karnu Khepri Solar Scarab Core; movement relic Aten Hand-Ray Gate Step; reaction relic Uraeus Counter-Edict; execution relic Weigh the Name. Ability visual cues: basic Karnu — Ma’at-Weighted Strike Longshot; technique Pylon Edict Technique — Horizon Lock; signature Karnu: Sun-Scale Decree Cataclysm Line; ascension aura Divine Ascension — Aten-Ra Source Radiance. These are real source-culture artifacts integrated into anatomy and silhouette, not props, not generic RPG gear, and not cosplay weapons. Visual appearance: Artillery Deity with sweeping solar-barge shoulder arcs, desert-glass lens organs, falcon-eye targeting visor, bronze horizon vanes, lapis braces, and mirage-light cannon geometry grown from the body. Avoid sci-fi sniper/mech; every range element should feel like sacred astronomy made alive. Use Aten sun-disc hand-rays, Ma’at balance geometry, electrum gold, royal linen-light, faience turquoise, lapis/obsidian shadow, black Nile-silt glass, red desert jasper where appropriate, carved relief texture without readable text, and living divine anatomy. The character must be ancient, alive, divine, realm-born, and physically impossible — not a robot, not a mech, not a person wearing armor, not a statue, not a literal pyramid or temple body. Premium dark mythological fantasy, high-detail concept art, readable mobile silhouette, full body, dramatic sacred lighting, no UI. Faction Visual Bible: follow MG-FVB-001 completely; faction canon must be visible in silhouette, materials, posture, armor function, and myth-source identity. Canon premise: this is the source culture humans later copied as Egyptian solar myth; Earth legend is the echo and the Solar Dominion of Khepra is the original.
 - Negative prompt: robot, mech, sci-fi armor, cube body, literal pyramid body, temple torso, city on body, building windows, neon sci-fi, sarcophagus robot, mummy costume, tourist pharaoh costume, generic Egyptian cosplay, flat gold statue, readable glyph text, logo, watermark, blurry, low detail, malformed anatomy, generic RPG weapon, plain sword, plain axe, plain armor, generic magic staff, cosplay weapon, unrelated sci-fi gear, weapon not matching faction mythology, armor not matching source culture
 
-### 10. TITAN_008 — Maahes
+### 10. DEITY_008 — Maahes
 
 - Type: TITAN
-- Drop as: `artwork_import/dropbox/TITAN_008__maahes-noon-bastion__source-file.ext`
-- Final source folder: `assets/3d/titans/source/TITAN_008/v001`
-- Blueprint: `3D_Blueprints/Characters/Deities/TITAN_008_maahes-noon-bastion/metadata.json`
+- Drop as: `artwork_import/dropbox/DEITY_008__maahes-noon-bastion__source-file.ext`
+- Final source folder: `assets/3d/deities/source/DEITY_008/v001`
+- Blueprint: `3D_Blueprints/Characters/Deities/DEITY_008_maahes-noon-bastion/metadata.json`
 - Prompt: MG-PROMPT-008
 - Generation brief: Premium mobile tactical RPG full-body character concept art of Maahes, a colossal extradimensional Aten Ra Deity from the Solar Dominion of Khepra. Canon premise: this is the source culture humans later copied as Egyptian solar myth; human Egyptian mythology later copied this Realm, so the design must feel like the original source of Maahes lion war-protection + knives + lotus + devouring captives, not a costume based on Earth Egypt. Role silhouette: Guardian. Mythic traits: lion gate guardianship, protective war fury, knife-law interception, lotus-crowned bastion. Lore anchor: Maahes carries the lion war-protection humans later carved as Maahes and Sekhmet-adjacent temple guardians. He is the noon gate’s living roar: mercy behind him, knives before him, captives judged in his shadow. Armor and material canon: lion-mane solar collar, knife-fin bracers, lotus-and-bronze guard plates, sun-red war marks, heavy guardian forelimb armor. Source-culture combat kit must be visible in the art: relic weapon Maahes Sentinel Ma’at Was-Sceptre Blade; armor body Maahes Electrum Wesekh Source-Plate; resonance core Maahes Khepri Solar Scarab Core; movement relic Aten Hand-Ray Gate Step; reaction relic Uraeus Counter-Edict; execution relic Weigh the Name. Ability visual cues: basic Maahes — Ma’at-Weighted Strike Intercept; technique Pylon Edict Technique — Punishing Guard; signature Maahes: Sun-Scale Decree Oath of Intercept; ascension aura Divine Ascension — Aten-Ra Source Radiance. These are real source-culture artifacts integrated into anatomy and silhouette, not props, not generic RPG gear, and not cosplay weapons. Visual appearance: Guardian Deity with lion-mane gold collar, leonine but readable humanoid-divine anatomy, knife-like bronze bracers, lotus crest, sun-red war markings, massive intercepting forearms, and heat-haze roar aura. Avoid furry beastman or generic lion monster; he is royal protective violence. Use Aten sun-disc hand-rays, Ma’at balance geometry, electrum gold, royal linen-light, faience turquoise, lapis/obsidian shadow, black Nile-silt glass, red desert jasper where appropriate, carved relief texture without readable text, and living divine anatomy. The character must be ancient, alive, divine, realm-born, and physically impossible — not a robot, not a mech, not a person wearing armor, not a statue, not a literal pyramid or temple body. Premium dark mythological fantasy, high-detail concept art, readable mobile silhouette, full body, dramatic sacred lighting, no UI. Faction Visual Bible: follow MG-FVB-001 completely; faction canon must be visible in silhouette, materials, posture, armor function, and myth-source identity. Canon premise: this is the source culture humans later copied as Egyptian solar myth; Earth legend is the echo and the Solar Dominion of Khepra is the original.
 - Negative prompt: robot, mech, sci-fi armor, cube body, literal pyramid body, temple torso, city on body, building windows, neon sci-fi, sarcophagus robot, mummy costume, tourist pharaoh costume, generic Egyptian cosplay, flat gold statue, readable glyph text, logo, watermark, blurry, low detail, malformed anatomy, generic RPG weapon, plain sword, plain axe, plain armor, generic magic staff, cosplay weapon, unrelated sci-fi gear, weapon not matching faction mythology, armor not matching source culture
 
-### 11. TITAN_009 — Amunet
+### 11. DEITY_009 — Amunet
 
 - Type: TITAN
-- Drop as: `artwork_import/dropbox/TITAN_009__amunet-hidden-sun__source-file.ext`
-- Final source folder: `assets/3d/titans/source/TITAN_009/v001`
-- Blueprint: `3D_Blueprints/Characters/Deities/TITAN_009_amunet-hidden-sun/metadata.json`
+- Drop as: `artwork_import/dropbox/DEITY_009__amunet-hidden-sun__source-file.ext`
+- Final source folder: `assets/3d/deities/source/DEITY_009/v001`
+- Blueprint: `3D_Blueprints/Characters/Deities/DEITY_009_amunet-hidden-sun/metadata.json`
 - Prompt: MG-PROMPT-009
 - Generation brief: Premium mobile tactical RPG full-body character concept art of Amunet, a colossal extradimensional Aten Ra Deity from the Solar Dominion of Khepra. Canon premise: this is the source culture humans later copied as Egyptian solar myth; human Egyptian mythology later copied this Realm, so the design must feel like the original source of Amunet + hidden sun + concealed names + unseen breath, not a costume based on Earth Egypt. Role silhouette: Assassin. Mythic traits: hidden solar authority, name-erasure assassination, shadow within light, unseen breath of the court. Lore anchor: Amunet is the concealed half of Aten authority: the breath, name, and shadow behind visible radiance. Humans remembered hidden gods as mystery; Khepra built entire courts around the terror of a name removed from the sun. Armor and material canon: veil-like black-gold linen, hidden sun-disc under hood/crown, obsidian name-blades, negative-space ankh forms, starless lapis cloak. Source-culture combat kit must be visible in the art: relic weapon Amunet Name-Knife Ma’at Was-Sceptre Blade; armor body Amunet Electrum Wesekh Source-Plate; resonance core Amunet Khepri Solar Scarab Core; movement relic Aten Hand-Ray Gate Step; reaction relic Uraeus Counter-Edict; execution relic Weigh the Name. Ability visual cues: basic Amunet — Ma’at-Weighted Strike Execution; technique Pylon Edict Technique — Shadow Pursuit; signature Amunet: Sun-Scale Decree Final Name Cut; ascension aura Divine Ascension — Aten-Ra Source Radiance. These are real source-culture artifacts integrated into anatomy and silhouette, not props, not generic RPG gear, and not cosplay weapons. Visual appearance: Assassin Deity wrapped in black-gold linen-light veils, concealed solar disc under a shadow crown, obsidian name-blades, lapis void cloak, negative-space sacred forms, and faint hand-rays visible only at edges. Must be elegant and mythic, not ninja, robot assassin, or generic shadow demon. Use Aten sun-disc hand-rays, Ma’at balance geometry, electrum gold, royal linen-light, faience turquoise, lapis/obsidian shadow, black Nile-silt glass, red desert jasper where appropriate, carved relief texture without readable text, and living divine anatomy. The character must be ancient, alive, divine, realm-born, and physically impossible — not a robot, not a mech, not a person wearing armor, not a statue, not a literal pyramid or temple body. Premium dark mythological fantasy, high-detail concept art, readable mobile silhouette, full body, dramatic sacred lighting, no UI. Faction Visual Bible: follow MG-FVB-001 completely; faction canon must be visible in silhouette, materials, posture, armor function, and myth-source identity. Canon premise: this is the source culture humans later copied as Egyptian solar myth; Earth legend is the echo and the Solar Dominion of Khepra is the original.
 - Negative prompt: robot, mech, sci-fi armor, cube body, literal pyramid body, temple torso, city on body, building windows, neon sci-fi, sarcophagus robot, mummy costume, tourist pharaoh costume, generic Egyptian cosplay, flat gold statue, readable glyph text, logo, watermark, blurry, low detail, malformed anatomy, generic RPG weapon, plain sword, plain axe, plain armor, generic magic staff, cosplay weapon, unrelated sci-fi gear, weapon not matching faction mythology, armor not matching source culture
 
-### 12. TITAN_010 — The Odin Stormvein
+### 12. DEITY_010 — The Odin Stormvein
 
 - Type: TITAN
-- Drop as: `artwork_import/dropbox/TITAN_010__the-allfather-stormvein__source-file.ext`
-- Final source folder: `assets/3d/titans/source/TITAN_010/v001`
-- Blueprint: `3D_Blueprints/Characters/Deities/TITAN_010_the-allfather-stormvein/metadata.json`
+- Drop as: `artwork_import/dropbox/DEITY_010__the-allfather-stormvein__source-file.ext`
+- Final source folder: `assets/3d/deities/source/DEITY_010/v001`
+- Blueprint: `3D_Blueprints/Characters/Deities/DEITY_010_the-allfather-stormvein/metadata.json`
 - Prompt: MG-PROMPT-010
 - Generation brief: Premium mobile tactical RPG full-body character concept art of The Odin Stormvein, a colossal extradimensional deity from Asgardian / Valhalla Beyond the Veil. It must read as an actual powerful extradimensional being: ancient, alive, divine, realm-born, and physically impossible — not a robot, not a mech, not a person wearing armor. Lore anchor: The Odin Stormvein is a colossal Asgardian deity shaped by oaths give war meaning; courage gives power form. It manifests the Realm's law through battlefield-scale mythic force. Faction and realm identity: A storm-oath warrior civilization where vows, endurance, and battle memory shape power. Visual language: Steel, iron, rune markings, storm energy, mountain-forged mass, frost scars, thunder wounds. The silhouette must be colossal, non-human, readable on mobile, and unmistakably Asgardian. Realm context: stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs. Body design: storm-born giant anatomy, rune-scarred living stone and iron hide, braided storm energy, frost wounds, oath-carved bones, mountain mass, thunder in the veins rather than powered armor. Armor or hard surfaces must look grown, forged by myth, or fused to a living cosmic body; never mechanical plating on an android frame. Role silhouette: Endurance — immovable guardian mass, shield-bearing posture, sanctuary geometry, wide protective stance, enormous shoulders and bastion-like arms. Name-specific motifs: storm-vein lightning and cloud mass. Ability/gear influence: echo The Anchor Strike, Rune Bastion Protocol, The Odin Stormvein: Law of Holding, Divine Ascension — Rune Storm Unbound; incorporate the feeling of Runebound Rune Implement, The Odin Stormvein Realmplate, The Oathstorm Core without making modern weapons or sci-fi hardware. Scale: playerDeity relative scale 5.2; colossal compared with normal humanoids, readable at 360x640 mobile crop, strong top-down tactical silhouette, clear front/side/3-4 read for future 3D modeling. Style: mythological dark fantasy, stylized realism, painterly high-detail materials, cinematic rim light, battlefield-scale presence, sacred aura, no sci-fi drift. Anatomy clarity: despite divine scale and sacred materials, the design must have a readable living head/torso/arms/legs or intentional mythic anatomy, with organic gesture, joints, musculature/energy flow, and character expression; do not turn the deity into a blocky building, tower, fortress, stacked geometric shapes, or a walking pile of architecture. Faction Visual Bible: follow Asgardian material hierarchy, armor shape language, symbols, texture rules, and avoid list from MG-FVB-002; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as Norse myth; Earth legend is the echo and The Storm-Rooted Aesir Holds is the original. Show storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.. Myth anchors include Odin: ravens, sacrifice, runes, hidden wisdom, war kingship, Thor: thunder, hammer impact, protection, giant-breaking storms, Freyja/Valkyries: choosing the slain, battle fate, swan/raven/boar omens, Yggdrasil: world-tree roots, nine-world crossings, wyrd memory. Avoid cartoon Viking, generic horned helmet cosplay, clean chrome, sci-fi power armor, glowing UI runes, blocky hammer mech.  Source-culture combat kit must be visible in the art: relic weapon The Odin Stormvein Bulwark Rune-Iron Oath Axe; armor body The Odin Stormvein Stormsteel Wolf-Cloak Mail; resonance core The Odin Stormvein Yggdrasil Thunder-Root Core; movement relic Bifrost Stormstride; reaction relic Valkyrie Witness Counter; execution relic Carve the Fallen Name. Ability visual cues: basic The Odin Stormvein — Oath-Ring Cleave Anchor; technique Rune-Thunder Technique — Bastion; signature The Odin Stormvein: Yggdrasil Root Oath Holdfast; ascension aura Divine Ascension — Ragnarok Storm Unbound. These are real source-culture artifacts integrated into anatomy and silhouette, not props, not generic RPG gear, and not cosplay weapons.
 - Negative prompt: mechanical robot, mecha, android, cyborg chassis, power armor suit, transformer, vehicle parts, visible pistons, hydraulic joints, circuit-board body, generic alien monster, spaceship aesthetic, sci-fi armor, guns, firearms, futuristic craft, modern clothing, corporate UI, superhero spandex, photorealistic normal human, celebrity likeness, comedy cartoon, blurry, low detail, bad anatomy, extra random limbs, unreadable silhouette, text, watermark, logo, blocky building body, walking building, city on shoulders, tower body, fortress body, castle armor, stacked cubes, rectangular block silhouette, abstract geometric shape stack, floating shape pile, terrain chunks attached to body, literal architecture for torso, building windows, doors, stairs, rooftops, miniature temples on body, Minecraft block style, cuboid limbs, sci-fi power armor, generic horned helmet cosplay, blocky metal torso, robot joints, clean chrome, cartoon Viking, generic horned helmet cosplay, clean chrome, sci-fi power armor, glowing UI runes, blocky hammer mech, modern biker leather, random Celtic knotwork, plastic fur, spaceship panels, generic RPG weapon, plain sword, plain axe, plain armor, generic magic staff, cosplay weapon, unrelated sci-fi gear, weapon not matching faction mythology, armor not matching source culture
@@ -137,78 +137,78 @@ Needed source assets: 129
 
 | Priority | Asset ID | Type | Name | Dropbox filename |
 |---:|---|---|---|---|
-| 1 | TITAN_001 | TITAN | Aten-Ra | `TITAN_001__aten-ra-solar-law-monolith__source-file.ext` |
+| 1 | DEITY_001 | TITAN | Aten-Ra | `DEITY_001__aten-ra-solar-law-monolith__source-file.ext` |
 | 2 | CHARACTER_001 | CHARACTER | Mesha Gate-Scribe | `CHARACTER_001__mesha-gate-scribe__source-file.ext` |
 | 3 | BATTLEFIELD_001 | BATTLEFIELD | The First Reopening Gate | `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext` |
-| 10 | TITAN_002 | TITAN | Sutekh | `TITAN_002__khemet-suncrown__source-file.ext` |
-| 10 | TITAN_003 | TITAN | Iset | `TITAN_003__nefra-obsidian-dawn__source-file.ext` |
-| 10 | TITAN_004 | TITAN | Amunet | `TITAN_004__orru-prism-verdict__source-file.ext` |
-| 10 | TITAN_005 | TITAN | Sutekh | `TITAN_005__sutekh-dune-eclipse__source-file.ext` |
-| 10 | TITAN_006 | TITAN | Iset | `TITAN_006__iset-riverlight-throne__source-file.ext` |
-| 10 | TITAN_007 | TITAN | Karnu | `TITAN_007__karnu-glass-horizon__source-file.ext` |
-| 10 | TITAN_008 | TITAN | Maahes | `TITAN_008__maahes-noon-bastion__source-file.ext` |
-| 10 | TITAN_009 | TITAN | Amunet | `TITAN_009__amunet-hidden-sun__source-file.ext` |
-| 10 | TITAN_010 | TITAN | The Odin Stormvein | `TITAN_010__the-allfather-stormvein__source-file.ext` |
-| 10 | TITAN_011 | TITAN | Thor Rune-Mountain | `TITAN_011__hrothar-rune-mountain__source-file.ext` |
-| 10 | TITAN_012 | TITAN | Frigg Iron Tempest | `TITAN_012__skeld-iron-tempest__source-file.ext` |
-| 10 | TITAN_013 | TITAN | Freyja Valkstorm | `TITAN_013__eirwyn-valkstorm__source-file.ext` |
-| 10 | TITAN_014 | TITAN | Mordun Frost-Anvil | `TITAN_014__mordun-frost-anvil__source-file.ext` |
-| 10 | TITAN_015 | TITAN | Veyra Thunderloom | `TITAN_015__veyra-thunderloom__source-file.ext` |
-| 10 | TITAN_016 | TITAN | Ragnor Skybreaker | `TITAN_016__ragnor-skybreaker__source-file.ext` |
-| 10 | TITAN_017 | TITAN | Ullr Snow-Crown | `TITAN_017__ullr-snow-crown__source-file.ext` |
-| 10 | TITAN_018 | TITAN | Sigrun Oathflare | `TITAN_018__sigrun-oathflare__source-file.ext` |
-| 10 | TITAN_019 | TITAN | Zeus Heaven-Marrow | `TITAN_019__aurelion-heaven-marrow__source-file.ext` |
-| 10 | TITAN_020 | TITAN | Athena Marble Thunder | `TITAN_020__kallix-marble-thunder__source-file.ext` |
-| 10 | TITAN_021 | TITAN | Artemis Golden Aegis | `TITAN_021__thyressa-golden-aegis__source-file.ext` |
-| 10 | TITAN_022 | TITAN | Ares Laurel Flame | `TITAN_022__ilyon-laurel-flame__source-file.ext` |
-| 10 | TITAN_023 | TITAN | Nikos Star-Lance | `TITAN_023__nikos-star-lance__source-file.ext` |
-| 10 | TITAN_024 | TITAN | Dione Victory Mirror | `TITAN_024__dione-victory-mirror__source-file.ext` |
-| 10 | TITAN_025 | TITAN | Helior Bronze Summit | `TITAN_025__helior-bronze-summit__source-file.ext` |
-| 10 | TITAN_026 | TITAN | Pallas Oath-Spear | `TITAN_026__pallas-oath-spear__source-file.ext` |
-| 10 | TITAN_027 | TITAN | Eiren Crowned Horizon | `TITAN_027__eiren-crowned-horizon__source-file.ext` |
-| 10 | TITAN_028 | TITAN | Amaterasu Spirit-Sun | `TITAN_028__amaterion-spirit-sun__source-file.ext` |
-| 10 | TITAN_029 | TITAN | Tsukuyomi Moon-Veil | `TITAN_029__tsukiro-moon-veil__source-file.ext` |
-| 10 | TITAN_030 | TITAN | Susanoo Storm Script | `TITAN_030__raidenko-storm-script__source-file.ext` |
-| 10 | TITAN_031 | TITAN | Izanami Shrine Tide | `TITAN_031__mizuka-shrine-tide__source-file.ext` |
-| 10 | TITAN_032 | TITAN | Kageyori Shadow Gate | `TITAN_032__kageyori-shadow-gate__source-file.ext` |
-| 10 | TITAN_033 | TITAN | Hanae Blossom Ward | `TITAN_033__hanae-blossom-ward__source-file.ext` |
-| 10 | TITAN_034 | TITAN | Onimaru Red Seal | `TITAN_034__onimaru-red-seal__source-file.ext` |
-| 10 | TITAN_035 | TITAN | Korin Mist Path | `TITAN_035__korin-mist-path__source-file.ext` |
-| 10 | TITAN_036 | TITAN | Yamabito Stone Prayer | `TITAN_036__yamabito-stone-prayer__source-file.ext` |
-| 10 | TITAN_037 | TITAN | Dagda Root-Crown | `TITAN_037__dagoran-root-crown__source-file.ext` |
-| 10 | TITAN_038 | TITAN | Brigid Emerald Oath | `TITAN_038__eryndor-emerald-oath__source-file.ext` |
-| 10 | TITAN_039 | TITAN | Morrígan Moon-Grove | `TITAN_039__melian-moon-grove__source-file.ext` |
-| 10 | TITAN_040 | TITAN | Lugh Granite Bough | `TITAN_040__bran-granite-bough__source-file.ext` |
-| 10 | TITAN_041 | TITAN | Nimue Silver Pool | `TITAN_041__nimue-silver-pool__source-file.ext` |
-| 10 | TITAN_042 | TITAN | Cernan Wild Vale | `TITAN_042__cernan-wild-vale__source-file.ext` |
-| 10 | TITAN_043 | TITAN | Ailbhe Thorn-Song | `TITAN_043__ailbhe-thorn-song__source-file.ext` |
-| 10 | TITAN_044 | TITAN | Oghma Stone Script | `TITAN_044__oghma-stone-script__source-file.ext` |
-| 10 | TITAN_045 | TITAN | Tara Dawn Barrow | `TITAN_045__tara-dawn-barrow__source-file.ext` |
-| 10 | TITAN_046 | TITAN | Michael | `TITAN_046__seraphel-the-throne-eternal__source-file.ext` |
-| 10 | TITAN_047 | TITAN | Gabriel Dawnborn Axis | `TITAN_047__caelion-dawnborn-axis__source-file.ext` |
-| 10 | TITAN_048 | TITAN | Raphael Radiant Spear | `TITAN_048__aurelia-radiant-spear__source-file.ext` |
-| 10 | TITAN_049 | TITAN | Uriel Law Warden | `TITAN_049__malachor-law-warden__source-file.ext` |
-| 10 | TITAN_050 | TITAN | Elyndra Choir Crown | `TITAN_050__elyndra-choir-crown__source-file.ext` |
-| 10 | TITAN_051 | TITAN | Orison White Citadel | `TITAN_051__orison-white-citadel__source-file.ext` |
-| 10 | TITAN_052 | TITAN | Vespera Mercy Blade | `TITAN_052__vespera-mercy-blade__source-file.ext` |
-| 10 | TITAN_053 | TITAN | Axiom Gate Choir | `TITAN_053__axiom-gate-choir__source-file.ext` |
-| 10 | TITAN_054 | TITAN | Theon Still Horizon | `TITAN_054__theon-still-horizon__source-file.ext` |
-| 10 | TITAN_055 | TITAN | Lucifer | `TITAN_055__mordrath-the-infernal-king__source-file.ext` |
-| 10 | TITAN_056 | TITAN | Asmodeus Bloodforged Crown | `TITAN_056__varkul-bloodforged-crown__source-file.ext` |
-| 10 | TITAN_057 | TITAN | Lilith Flameborn Court | `TITAN_057__nyxara-flameborn-court__source-file.ext` |
-| 10 | TITAN_058 | TITAN | Naamah Chainwarden | `TITAN_058__azrakar-chainwarden__source-file.ext` |
-| 10 | TITAN_059 | TITAN | Orryx Ash Dominion | `TITAN_059__orryx-ash-dominion__source-file.ext` |
-| 10 | TITAN_060 | TITAN | Malvera Ember Throne | `TITAN_060__malvera-ember-throne__source-file.ext` |
-| 10 | TITAN_061 | TITAN | Kharon Black Iron | `TITAN_061__kharon-black-iron__source-file.ext` |
-| 10 | TITAN_062 | TITAN | Sablex Cinder Duke | `TITAN_062__sablex-cinder-duke__source-file.ext` |
-| 10 | TITAN_063 | TITAN | Zerath Wound Gate | `TITAN_063__zerath-wound-gate__source-file.ext` |
+| 10 | DEITY_002 | TITAN | Sutekh | `DEITY_002__khemet-suncrown__source-file.ext` |
+| 10 | DEITY_003 | TITAN | Iset | `DEITY_003__nefra-obsidian-dawn__source-file.ext` |
+| 10 | DEITY_004 | TITAN | Amunet | `DEITY_004__orru-prism-verdict__source-file.ext` |
+| 10 | DEITY_005 | TITAN | Sutekh | `DEITY_005__sutekh-dune-eclipse__source-file.ext` |
+| 10 | DEITY_006 | TITAN | Iset | `DEITY_006__iset-riverlight-throne__source-file.ext` |
+| 10 | DEITY_007 | TITAN | Karnu | `DEITY_007__karnu-glass-horizon__source-file.ext` |
+| 10 | DEITY_008 | TITAN | Maahes | `DEITY_008__maahes-noon-bastion__source-file.ext` |
+| 10 | DEITY_009 | TITAN | Amunet | `DEITY_009__amunet-hidden-sun__source-file.ext` |
+| 10 | DEITY_010 | TITAN | The Odin Stormvein | `DEITY_010__the-allfather-stormvein__source-file.ext` |
+| 10 | DEITY_011 | TITAN | Thor Rune-Mountain | `DEITY_011__hrothar-rune-mountain__source-file.ext` |
+| 10 | DEITY_012 | TITAN | Frigg Iron Tempest | `DEITY_012__skeld-iron-tempest__source-file.ext` |
+| 10 | DEITY_013 | TITAN | Freyja Valkstorm | `DEITY_013__eirwyn-valkstorm__source-file.ext` |
+| 10 | DEITY_014 | TITAN | Mordun Frost-Anvil | `DEITY_014__mordun-frost-anvil__source-file.ext` |
+| 10 | DEITY_015 | TITAN | Veyra Thunderloom | `DEITY_015__veyra-thunderloom__source-file.ext` |
+| 10 | DEITY_016 | TITAN | Ragnor Skybreaker | `DEITY_016__ragnor-skybreaker__source-file.ext` |
+| 10 | DEITY_017 | TITAN | Ullr Snow-Crown | `DEITY_017__ullr-snow-crown__source-file.ext` |
+| 10 | DEITY_018 | TITAN | Sigrun Oathflare | `DEITY_018__sigrun-oathflare__source-file.ext` |
+| 10 | DEITY_019 | TITAN | Zeus Heaven-Marrow | `DEITY_019__aurelion-heaven-marrow__source-file.ext` |
+| 10 | DEITY_020 | TITAN | Athena Marble Thunder | `DEITY_020__kallix-marble-thunder__source-file.ext` |
+| 10 | DEITY_021 | TITAN | Artemis Golden Aegis | `DEITY_021__thyressa-golden-aegis__source-file.ext` |
+| 10 | DEITY_022 | TITAN | Ares Laurel Flame | `DEITY_022__ilyon-laurel-flame__source-file.ext` |
+| 10 | DEITY_023 | TITAN | Nikos Star-Lance | `DEITY_023__nikos-star-lance__source-file.ext` |
+| 10 | DEITY_024 | TITAN | Dione Victory Mirror | `DEITY_024__dione-victory-mirror__source-file.ext` |
+| 10 | DEITY_025 | TITAN | Helior Bronze Summit | `DEITY_025__helior-bronze-summit__source-file.ext` |
+| 10 | DEITY_026 | TITAN | Pallas Oath-Spear | `DEITY_026__pallas-oath-spear__source-file.ext` |
+| 10 | DEITY_027 | TITAN | Eiren Crowned Horizon | `DEITY_027__eiren-crowned-horizon__source-file.ext` |
+| 10 | DEITY_028 | TITAN | Amaterasu Spirit-Sun | `DEITY_028__amaterion-spirit-sun__source-file.ext` |
+| 10 | DEITY_029 | TITAN | Tsukuyomi Moon-Veil | `DEITY_029__tsukiro-moon-veil__source-file.ext` |
+| 10 | DEITY_030 | TITAN | Susanoo Storm Script | `DEITY_030__raidenko-storm-script__source-file.ext` |
+| 10 | DEITY_031 | TITAN | Izanami Shrine Tide | `DEITY_031__mizuka-shrine-tide__source-file.ext` |
+| 10 | DEITY_032 | TITAN | Kageyori Shadow Gate | `DEITY_032__kageyori-shadow-gate__source-file.ext` |
+| 10 | DEITY_033 | TITAN | Hanae Blossom Ward | `DEITY_033__hanae-blossom-ward__source-file.ext` |
+| 10 | DEITY_034 | TITAN | Onimaru Red Seal | `DEITY_034__onimaru-red-seal__source-file.ext` |
+| 10 | DEITY_035 | TITAN | Korin Mist Path | `DEITY_035__korin-mist-path__source-file.ext` |
+| 10 | DEITY_036 | TITAN | Yamabito Stone Prayer | `DEITY_036__yamabito-stone-prayer__source-file.ext` |
+| 10 | DEITY_037 | TITAN | Dagda Root-Crown | `DEITY_037__dagoran-root-crown__source-file.ext` |
+| 10 | DEITY_038 | TITAN | Brigid Emerald Oath | `DEITY_038__eryndor-emerald-oath__source-file.ext` |
+| 10 | DEITY_039 | TITAN | Morrígan Moon-Grove | `DEITY_039__melian-moon-grove__source-file.ext` |
+| 10 | DEITY_040 | TITAN | Lugh Granite Bough | `DEITY_040__bran-granite-bough__source-file.ext` |
+| 10 | DEITY_041 | TITAN | Nimue Silver Pool | `DEITY_041__nimue-silver-pool__source-file.ext` |
+| 10 | DEITY_042 | TITAN | Cernan Wild Vale | `DEITY_042__cernan-wild-vale__source-file.ext` |
+| 10 | DEITY_043 | TITAN | Ailbhe Thorn-Song | `DEITY_043__ailbhe-thorn-song__source-file.ext` |
+| 10 | DEITY_044 | TITAN | Oghma Stone Script | `DEITY_044__oghma-stone-script__source-file.ext` |
+| 10 | DEITY_045 | TITAN | Tara Dawn Barrow | `DEITY_045__tara-dawn-barrow__source-file.ext` |
+| 10 | DEITY_046 | TITAN | Michael | `DEITY_046__seraphel-the-throne-eternal__source-file.ext` |
+| 10 | DEITY_047 | TITAN | Gabriel Dawnborn Axis | `DEITY_047__caelion-dawnborn-axis__source-file.ext` |
+| 10 | DEITY_048 | TITAN | Raphael Radiant Spear | `DEITY_048__aurelia-radiant-spear__source-file.ext` |
+| 10 | DEITY_049 | TITAN | Uriel Law Warden | `DEITY_049__malachor-law-warden__source-file.ext` |
+| 10 | DEITY_050 | TITAN | Elyndra Choir Crown | `DEITY_050__elyndra-choir-crown__source-file.ext` |
+| 10 | DEITY_051 | TITAN | Orison White Citadel | `DEITY_051__orison-white-citadel__source-file.ext` |
+| 10 | DEITY_052 | TITAN | Vespera Mercy Blade | `DEITY_052__vespera-mercy-blade__source-file.ext` |
+| 10 | DEITY_053 | TITAN | Axiom Gate Choir | `DEITY_053__axiom-gate-choir__source-file.ext` |
+| 10 | DEITY_054 | TITAN | Theon Still Horizon | `DEITY_054__theon-still-horizon__source-file.ext` |
+| 10 | DEITY_055 | TITAN | Lucifer | `DEITY_055__mordrath-the-infernal-king__source-file.ext` |
+| 10 | DEITY_056 | TITAN | Asmodeus Bloodforged Crown | `DEITY_056__varkul-bloodforged-crown__source-file.ext` |
+| 10 | DEITY_057 | TITAN | Lilith Flameborn Court | `DEITY_057__nyxara-flameborn-court__source-file.ext` |
+| 10 | DEITY_058 | TITAN | Naamah Chainwarden | `DEITY_058__azrakar-chainwarden__source-file.ext` |
+| 10 | DEITY_059 | TITAN | Orryx Ash Dominion | `DEITY_059__orryx-ash-dominion__source-file.ext` |
+| 10 | DEITY_060 | TITAN | Malvera Ember Throne | `DEITY_060__malvera-ember-throne__source-file.ext` |
+| 10 | DEITY_061 | TITAN | Kharon Black Iron | `DEITY_061__kharon-black-iron__source-file.ext` |
+| 10 | DEITY_062 | TITAN | Sablex Cinder Duke | `DEITY_062__sablex-cinder-duke__source-file.ext` |
+| 10 | DEITY_063 | TITAN | Zerath Wound Gate | `DEITY_063__zerath-wound-gate__source-file.ext` |
 | 20 | BATTLEFIELD_002 | BATTLEFIELD | Solar Pylon Observatory | `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext` |
 | 20 | BATTLEFIELD_003 | BATTLEFIELD | Storm-Oath Bridge | `BATTLEFIELD_003__storm-oath-bridge__source-file.ext` |
 | 20 | BATTLEFIELD_004 | BATTLEFIELD | Marble Sky Arena | `BATTLEFIELD_004__marble-sky-arena__source-file.ext` |
 | 20 | BATTLEFIELD_005 | BATTLEFIELD | Moon-Grove Rootlabyrinth | `BATTLEFIELD_005__moon-grove-rootlabyrinth__source-file.ext` |
 | 20 | BATTLEFIELD_006 | BATTLEFIELD | Black Iron Court | `BATTLEFIELD_006__black-iron-court__source-file.ext` |
 | 20 | BATTLEFIELD_007 | BATTLEFIELD | Sacred Sun Temple Road | `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext` |
-| 20 | BATTLEFIELD_008 | BATTLEFIELD | Mythos Gate Sun Throne | `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext` |
+| 20 | BATTLEFIELD_008 | BATTLEFIELD | Mythos Gate Sun Throne | `BATTLEFIELD_008__deity-gate-sun-throne__source-file.ext` |
 | 20 | BATTLEFIELD_009 | BATTLEFIELD | Foxfire Torii Road | `BATTLEFIELD_009__foxfire-torii-road__source-file.ext` |
 | 20 | BATTLEFIELD_010 | BATTLEFIELD | Mirror Lake Sanctum | `BATTLEFIELD_010__mirror-lake-sanctum__source-file.ext` |
 | 20 | BATTLEFIELD_011 | BATTLEFIELD | Choir Vault Ascent | `BATTLEFIELD_011__choir-vault-ascent__source-file.ext` |

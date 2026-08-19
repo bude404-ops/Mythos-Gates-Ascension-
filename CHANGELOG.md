@@ -27,7 +27,7 @@ The playable character concept has been fundamentally redesigned. Players now co
 ### Previous Versions
 
 ## v0.6.9 — August 18, 2026
-- Full Mythos Gates rebrand from Titans Gate
+- Full Mythos Gates rebrand from Mythos Gates
 - 1,358 files renamed from MG- prefix to MG- prefix
 - All 28 deity art assets locked and committed
 - 39 faction creature assets locked

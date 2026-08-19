@@ -1,5 +1,8 @@
 # Asset Import Standards — Mythos Gates: Ascension
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 These rules protect the asset pipeline before real AAA source assets begin landing.
 
 ## Permanent IDs
@@ -22,8 +25,8 @@ Use lowercase kebab-case descriptors after the permanent ID:
 
 ```text
 BATTLEFIELD_001_the-first-reopening-gate.glb
-MG-TITAN-001_amun-atenra-source.blend
-MG-TITAN-001_amun-atenra-preview.webp
+MG-DEITY-001_amun-atenra-source.blend
+MG-DEITY-001_amun-atenra-preview.webp
 ```
 
 ## Scale and technical expectations

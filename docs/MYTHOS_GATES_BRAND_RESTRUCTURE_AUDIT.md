@@ -1,5 +1,8 @@
 # Mythos Gates: Ascension — Official Lughd & Lore Restructure Audit
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 ## Official Identity
 
 - Permanent core IP/world identity: **Mythos Gates**
@@ -100,7 +103,7 @@ Already fits:
 
 Required future work:
 
-- Finish any compatibility migration if internal legacy `titan` keys are ever renamed. Those keys remain validated compatibility architecture for now.
+- Finish any compatibility migration if internal legacy `deity` keys are ever renamed. Those keys remain validated compatibility architecture for now.
 
 ## 7. Combat Review
 
@@ -197,7 +200,7 @@ Automated audit results:
 - Old title/brand hits: **0**
 - Banned playable-character Deity phrase hits: **0**
 
-Remaining `titan` terminology, where present, is legacy technical architecture such as internal IDs, filenames, schema names, validation names, and compatibility data keys. Those should be migrated only with a dedicated internal migration plan, not by blind replacement.
+Remaining `deity` terminology, where present, is legacy technical architecture such as internal IDs, filenames, schema names, validation names, and compatibility data keys. Those should be migrated only with a dedicated internal migration plan, not by blind replacement.
 
 ## Highest-Priority Next Task
 

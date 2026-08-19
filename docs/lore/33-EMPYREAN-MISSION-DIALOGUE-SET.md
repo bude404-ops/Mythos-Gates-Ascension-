@@ -1,5 +1,9 @@
 # Empyrean Mission Dialogue Set — v1.0.0
 
+
+> **Avatar System**: Players channel Avatars of their chosen deity — divine projections that carry the deity's power into combat. The deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn at deity domain with 10-20% penalty. Solo combat only. God-scale in all realms.
+
+
 The dialogue set supports all 40 Empyrean missions with concise mobile-friendly beats.
 
 Each mission includes: Mission Intro, Enemy Introduction, Mid-Battle, Victory, Defeat, Codex.

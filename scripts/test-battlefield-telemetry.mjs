@@ -14,7 +14,7 @@ import {
 } from '../game/solo-battle-engine.mjs';
 
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
-const titans = read('data/titans.json');
+const deitys = read('data/deitys.json');
 const creatures = read('data/creatures.json');
 const schema = read('data/solo-battle-state-schema.json');
 const contract = read('data/battlefield-telemetry-contract.json');
@@ -31,7 +31,7 @@ for (const counter of ['reactionSuccessRate','objectiveCompletionRate','momentum
   assert.ok(contract.counters[counter], `missing counter ${counter}`);
 }
 
-const deity = titans.find(t => t.id === schema.verticalSliceDefault.starterDeityId);
+const deity = deitys.find(t => t.id === schema.verticalSliceDefault.starterDeityId);
 const enemyRoster = schema.verticalSliceDefault.starterEnemies.map(id => creatures.find(c => c.id === id));
 const terrain = {
   grid: { width: 7, height: 7 },

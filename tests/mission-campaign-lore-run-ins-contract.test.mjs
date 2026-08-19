@@ -15,10 +15,10 @@ assert.equal(summary.factions, 7);
 assert.equal(summary.runInPools, 7);
 assert.equal(summary.runInCreatures, 21);
 assert.equal(summary.missions, 280);
-assert.equal(summary.oneTitanMissions, 280);
+assert.equal(summary.oneDeityMissions, 280);
 assert.equal(summary.mobileCampaigns, data.campaigns.length);
 for (const mission of data.missions) {
-  assert.equal(mission.activeTitanPolicy.standardCombat, ONE_DEITY_RULE);
+  assert.equal(mission.activeDeityPolicy.standardCombat, ONE_DEITY_RULE);
   assert.equal(mission.crossFactionRunIns.enabled, true);
   assert.ok(mission.crossFactionRunIns.recommendedPoolIds.length >= 2);
 }

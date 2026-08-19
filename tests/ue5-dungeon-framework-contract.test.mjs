@@ -12,7 +12,7 @@ const validation = validateUe5DungeonFramework(framework, template, sourceMissio
 assert.equal(validation.ok, true, validation.issues.join('; '));
 assert.equal(framework.primaryEngine, 'Unreal Engine 5');
 assert.deepEqual(framework.aiGenerationStages, REQUIRED_STAGE_ORDER);
-assert.equal(framework.titanScaleRules.standardCombatActiveTitans, 1);
+assert.equal(framework.deityScaleRules.standardCombatActiveAvatars, 1);
 assert.equal(template.sourceMissionId, sourceMission.id);
 assert.equal(template.sourceMissionTitle, sourceMission.title);
 assert.equal(template.sourceMapId, sourceMission.mapId);

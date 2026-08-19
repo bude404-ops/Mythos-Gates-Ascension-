@@ -1,5 +1,8 @@
 # Mythos Gates Campaign and Map Expansion — v0.3.6
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 Date: 2026-08-10
 
 This expansion adds three design-ready realm campaign arcs with linked campaign maps, tactical maps, chapters, and map art prompts.

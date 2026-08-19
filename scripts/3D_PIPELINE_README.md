@@ -13,7 +13,7 @@ Converts approved 2D art assets to GLB 3D models using the TRELLIS.2 engine via 
 2. **Approved 2D Art**
    - Must be in `art/approved/` directory
    - PNG format
-   - Named: `MG-TITAN-###_name.png`, `MG-CREATURE-###_name.png`, `MG-NPC-###_name.png`, `MG-MAP-###.png`
+   - Named: `MG-DEITY-###_name.png`, `MG-CREATURE-###_name.png`, `MG-NPC-###_name.png`, `MG-MAP-###.png`
 
 3. **Python Dependencies**
    ```bash
@@ -54,7 +54,7 @@ python3 scripts/trellis_3d_pipeline.py --batch all
 
 ### Convert a single asset
 ```bash
-python3 scripts/trellis_3d_pipeline.py --single MG-TITAN-001_aten-ra
+python3 scripts/trellis_3d_pipeline.py --single MG-DEITY-001_aten-ra
 ```
 
 ### Check progress
@@ -76,7 +76,7 @@ python3 scripts/trellis_3d_pipeline.py --status
 ## Asset Inventory
 | Batch | Count | Source Dir | Output Dir |
 |-------|-------|------------|------------|
-| Deities | 28 | art/approved/MG-TITAN-*.png | 3D_Blueprints/Characters/Deities/ |
+| Deities | 28 | art/approved/MG-DEITY-*.png | 3D_Blueprints/Characters/Deities/ |
 | Creatures | 39 | art/approved/MG-CREATURE-*.png | 3D_Blueprints/Characters/Creatures/ |
 | NPCs | 8 | art/approved/MG-NPC-*.png | 3D_Blueprints/Characters/NPCs/ |
 | Maps | 21 | art/approved/MG-MAP-*.png | 3D_Blueprints/Battlefields/ |

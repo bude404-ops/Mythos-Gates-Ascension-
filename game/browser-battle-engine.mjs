@@ -76,7 +76,7 @@ function chooseEnemyIntent(state, e){
   if(profile.id==='HOLLOW_SWARMER'){
     const pack = living(state).filter(x=>profileFor(x).id==='HOLLOW_SWARMER').length;
     const type = pack > 1 && state.round % 2 === 0 ? 'SWARM_SURROUND' : 'SWARM_RAKE';
-    return { type, label:intentLabel(e,type), target:state.titan.id, telegraphed:true, reactionType:'DODGE', description:type==='SWARM_SURROUND'?'Pack pressure tries to pin the active deity; keep spacing or dodge the net.':'A forgetting scratch tests the guard and marks isolated Titans.', damage:e.damage + Math.max(0,pack-1)*2, pressure:pack, behaviorTag:type==='SWARM_SURROUND'?'ISOLATION_PUNISH':'MEMORY_SCRATCH', counterplay:type==='SWARM_SURROUND'?'Move before the pack closes; dodge to convert pressure into Momentum.':'Guardian stance softens the hit; dodge denies the mark.' };
+    return { type, label:intentLabel(e,type), target:state.deity.id, telegraphed:true, reactionType:'DODGE', description:type==='SWARM_SURROUND'?'Pack pressure tries to pin the active deity; keep spacing or dodge the net.':'A forgetting scratch tests the guard and marks isolated Deities.', damage:e.damage + Math.max(0,pack-1)*2, pressure:pack, behaviorTag:type==='SWARM_SURROUND'?'ISOLATION_PUNISH':'MEMORY_SCRATCH', counterplay:type==='SWARM_SURROUND'?'Move before the pack closes; dodge to convert pressure into Momentum.':'Guardian stance softens the hit; dodge denies the mark.' };
   }
   if(profile.id==='GATEBORN_BRUTE'){
     const type = state.objectives.some(o=>(o.progress||0)>0 && o.status!=='COMPLETE') ? 'OBJECTIVE_CRUSH' : (state.round % 3 === 0 ? 'FRACTURE_ROAR' : 'GATE_STOMP');
@@ -95,8 +95,8 @@ export function buildStarterTerrain(){
   for(let y=1;y<=5;y++) for(let x=1;x<=5;x++) spaces.push({ position:{x,y}, type:y>=4?'SOLAR_SEAL_COURT':x>=4&&y>=3?'GATE_MOUTH':x<=2&&y<=2?'SUNKEN_SUNLIT_STONE':'BROKEN_THRESHOLD', illuminated:(x<=2&&y<=2)||(y===4&&x<=3), hazard:(x===4&&y===3)||(x===5&&y===3)?'SOLAR_JUDGMENT':null });
   return { grid:{width:5,height:5}, spaces };
 }
-export function createBattleState({ battleId='TG-BATTLE-FIRST-GATE-001', missionId='TG-F01-C01-M01', titan, enemies, terrain=buildStarterTerrain(), objectives, seed=777, scaling=null }){
-  if(!titan?.id) throw new Error('Battle requires one active deity.');
+export function createBattleState({ battleId='TG-BATTLE-FIRST-GATE-001', missionId='TG-F01-C01-M01', deity, enemies, terrain=buildStarterTerrain(), objectives, seed=777, scaling=null }){
+  if(!deity?.id) throw new Error('Battle requires one active deity.');
   if(!Array.isArray(enemies)||!enemies.length) throw new Error('Battle requires enemies.');
   const tStats=deity.stats||{};
   const appliedScaling=scaling || resolveMissionScaling({ mission:{id:missionId,recommendedPower:135,campaignType:'Normal'} });
@@ -108,7 +108,7 @@ export function createBattleState({ battleId='TG-BATTLE-FIRST-GATE-001', mission
 }
 export function applyDeityAction(input,action){
   const s=clone(input); if(s.phase!==PHASES.PLAYER) throw new Error(`Deity action blocked during ${s.phase}`);
-  if(action.type==='MOVE'){ const dist=distance(s.deity.position,action.to); const sp=s.terrain.spaces.find(x=>key(x.position)===key(action.to)); if(!sp) throw new Error('Invalid move target'); if(dist>s.deity.speed) throw new Error('Move exceeds speed'); s.deity.position=clone(action.to); if(sp.illuminated) gain(s,'momentum',8,'illuminated_movement'); s.telemetry.routeSpacesVisited.push(key(action.to)); log(s,'TITAN_MOVE',{to:action.to,terrain:sp.type}); }
+  if(action.type==='MOVE'){ const dist=distance(s.deity.position,action.to); const sp=s.terrain.spaces.find(x=>key(x.position)===key(action.to)); if(!sp) throw new Error('Invalid move target'); if(dist>s.deity.speed) throw new Error('Move exceeds speed'); s.deity.position=clone(action.to); if(sp.illuminated) gain(s,'momentum',8,'illuminated_movement'); s.telemetry.routeSpacesVisited.push(key(action.to)); log(s,'DEITY_MOVE',{to:action.to,terrain:sp.type}); }
   else if(action.type==='BASIC_ATTACK'){ const e=enemy(s,action.targetId); if(distance(s.deity.position,e.position)>s.deity.range) throw new Error('Target out of range'); const dmg=Math.max(1,s.deity.attack+(s.deity.stance===STANCES.ASSAULT?3:0)-Math.floor(e.armor/4)); e.hp=Math.max(0,e.hp-dmg); e.vulnerable=e.hp>0&&e.hp<=Math.ceil(e.maxHp*.35); s.telemetry.damageDealt+=dmg; gain(s,'momentum',currentSpace(s)?.illuminated?12:8,'basic_attack'); if(e.vulnerable) gain(s,'divinity',5,'vulnerability_created'); log(s,'BASIC_ATTACK',{target:e.instanceId,damage:dmg,remainingHp:e.hp,vulnerable:e.vulnerable}); }
   else if(action.type==='TECHNIQUE'){ if(!spend(s,'momentum',20,'technique')) throw new Error('Technique requires 20 Momentum'); const e=enemy(s,action.targetId); const dmg=Math.max(2,Math.round(s.deity.attack*1.3)-Math.floor(e.armor/5)); e.hp=Math.max(0,e.hp-dmg); e.status.push('MARKED_BY_VERDICT'); s.resources.solarCharge=clamp(s.resources.solarCharge+10); s.telemetry.damageDealt+=dmg; log(s,'TECHNIQUE',{target:e.instanceId,damage:dmg}); }
   else if(action.type==='FOCUS'){ gain(s,'momentum',6,'focus'); gain(s,'divinity',4,'focus'); log(s,'FOCUS'); }

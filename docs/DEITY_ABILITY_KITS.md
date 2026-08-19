@@ -1,5 +1,8 @@
 # Mythos Gates: Ascension — Deity Ability Kits
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 ## Design Principle
 Every deity is a FULL SOLO combatant. The role changes HOW you fight through a dungeon, not whether you can clear it. Same dungeon = completely different playthrough per deity.
 

@@ -3,6 +3,9 @@
 **Date:** August 19, 2026  
 **Total Maps:** 7 Realm Routes + 3 Threat Layer Maps + 4 World Boss Arenas = 14 Maps  
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 ---
 
 ## MAP ARCHITECTURE

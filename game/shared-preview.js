@@ -10,7 +10,7 @@ export const DEVICE_PRESETS = [
 
 export async function loadGameData(cacheBust = true) {
   const q = cacheBust ? `?v=${Date.now()}` : '';
-  const files = ['project','factions','titans','npcs','creatures','maps','campaigns','chapters','lore-index','art-prompts','artworks','visual-screens','visual-change-rules','visual-baselines','development-tasks','hybrid-visual-architecture','asset-pipeline','realm-codex'];
+  const files = ['project','factions','deitys','npcs','creatures','maps','campaigns','chapters','lore-index','art-prompts','artworks','visual-screens','visual-change-rules','visual-baselines','development-tasks','hybrid-visual-architecture','asset-pipeline','realm-codex'];
   const entries = await Promise.all(files.map(async key => [key, await fetch(`../data/${key}.json${q}`).then(r => {
     if (!r.ok) throw new Error(`Failed to load ${key}`);
     return r.json();
@@ -22,7 +22,7 @@ const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp
 const first = value => Array.isArray(value) ? value[0] : value;
 
 export function getPreviewEntity(data, entityId) {
-  return [...data .titans, ...data.npcs, ...data.factions, ...data.creatures, ...data.maps, ...data.campaigns].find(item => item.id === entityId) || data .titans[0];
+  return [...data .deitys, ...data.npcs, ...data.factions, ...data.creatures, ...data.maps, ...data.campaigns].find(item => item.id === entityId) || data .deitys[0];
 }
 
 export function getAffectedScreens(data, changeType = 'deity-artwork') {
@@ -54,8 +54,8 @@ function campaignDiorama(data, state, mode='campaign') {
 }
 
 function battleHybrid(data, state) {
-  const playerDeities = data .titans.slice(0,5);
-  const enemies = [data.creatures[0], data.creatures[1], data .titans.find(t => t.faction === 'Infernal Dominion')].filter(Boolean);
+  const playerDeities = data .deitys.slice(0,5);
+  const enemies = [data.creatures[0], data.creatures[1], data .deitys.find(t => t.faction === 'Infernal Dominion')].filter(Boolean);
   const map = data.maps[0];
   const cells = Array.from({length:35},(_,i)=>{
     const playerIndex = [22,23,29,30,31].indexOf(i);
@@ -81,7 +81,7 @@ export function renderGameScreen(data, state = {}) {
   const entity = getPreviewEntity(data, state.entityId);
   const prompts = data['art-prompts'];
   const promptFor = id => prompts.find(p => p.entityId === id || p.id === id);
-  const deities = data .titans.slice(0, 8);
+  const deities = data .deitys.slice(0, 8);
   const factions = data.factions;
   const campaigns = data.campaigns;
   const maps = data.maps;
@@ -100,7 +100,7 @@ export function renderGameScreen(data, state = {}) {
     title = 'Deity Selection';
     body = `<div class="selection-grid">${deities.map(t => deityCard(t, promptFor(t.id), dev)).join('')}</div>`;
   } else if (screen === 'deity-profile') {
-    const deity = entity.id?.startsWith('MG-DEITY') ? entity : data .titans[0];
+    const deity = entity.id?.startsWith('MG-DEITY') ? entity : data .deitys[0];
     const prompt = promptFor(deity.id);
     title = deity.name;
     body = `<div class="profile-grid">${artPanel(deity, prompt)}<div class="game-card"><p class="micro">${esc(deity.id)} · ${esc(deity.faction)} · ${esc(deity.role)}</p><h3>${esc(deity.name)}</h3><p>${esc(deity.lore || deity.description || 'Lore connected through Codex.')}</p><div class="stat-row"><b>ATK ${esc(deity.stats?.attack ?? '—')}</b><b>DEF ${esc(deity.stats?.defense ?? '—')}</b><b>HP ${esc(deity.stats?.hp ?? '—')}</b></div><p class="ability">${esc(first(deity.abilities)?.name || 'Ability data ready')}</p></div></div>`;
@@ -111,7 +111,7 @@ export function renderGameScreen(data, state = {}) {
   } else if (screen === 'faction') {
     const faction = entity.id?.startsWith('MG-FACTION') ? entity : factions[0];
     title = faction.name;
-    const factionDeities = data .titans.filter(t => t.factionId === faction.id || t.faction === faction.name).slice(0, 6);
+    const factionDeities = data .deitys.filter(t => t.factionId === faction.id || t.faction === faction.name).slice(0, 6);
     body = `<div class="game-card faction-banner"><p class="micro">${esc(faction.id)}</p><h3>${esc(faction.name)}</h3><p>${esc(faction.description)}</p><p>${esc(faction.visualIdentity)}</p></div><div class="selection-grid small">${factionDeities.map(t => deityCard(t, promptFor(t.id), dev)).join('')}</div>`;
   } else if (screen === 'campaign') {
     title = '3D Campaign Journey';

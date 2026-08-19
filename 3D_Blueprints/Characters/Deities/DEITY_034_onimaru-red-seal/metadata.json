@@ -1,0 +1,237 @@
+{
+  "assetId": "DEITY_034",
+  "assetType": "DEITY",
+  "canonicalEntityId": "MG-DEITY-034",
+  "canonicalName": "Onimaru Red Seal",
+  "faction": "Kami",
+  "loreReference": "Onimaru Red Seal is a colossal Kami deity shaped by balance is defended by precision. It manifests the Realm's law through battlefield-scale mythic force.",
+  "canonAuthority": "Current Mythos Gates canon/lore data layer. 3D Asset Director may translate scale and production needs but may not override Lore Director.",
+  "scale": {
+    "scaleKey": "playerDeity",
+    "relativeScaleUnits": 5.2,
+    "source": "data/world-scale-reference.json",
+    "rule": "All dimensions reference Master_Scale_Reference; individual creators may not invent scale."
+  },
+  "height": "DERIVED_FROM_MASTER_SCALE",
+  "width": "DERIVED_FROM_MASTER_SCALE",
+  "length": "DERIVED_FROM_MASTER_SCALE",
+  "materials": [
+    "armor",
+    "steel"
+  ],
+  "weapons": [
+    "Kami Moonveil Implement",
+    "Onimaru Red Seal Realmplate",
+    "Onimaru Spirit Balance Core"
+  ],
+  "attachments": [],
+  "animationRequirements": [
+    "neutral pose",
+    "readable idle",
+    "movement silhouette",
+    "attack/interaction poses",
+    "hit reaction",
+    "scale-preserving camera readability"
+  ],
+  "battlefieldClearance": {
+    "deityClearanceRequired": true,
+    "gridReadability": "Must remain readable in elongated 3D tactical battlefield presentation.",
+    "clearanceSource": "3D_Blueprints/Global_References/Master_Scale_Reference/metadata.json"
+  },
+  "lodRequirements": [
+    "LOD0_CLOSE",
+    "LOD1_GAMEPLAY",
+    "LOD2_DISTANCE",
+    "COLLISION_MESH"
+  ],
+  "mobilePerformanceTarget": "60fps target on mobile tactical view; silhouette readable at 360x640.",
+  "sourceReferences": [
+    "canonical:MG-DEITY-034",
+    "data/art-prompts.json#MG-PROMPT-034",
+    "data/character-backstories.json#MG-BACKSTORY-TITAN-034"
+  ],
+  "version": "1.0.0",
+  "status": "BLUEPRINT_IN_PROGRESS",
+  "dependencies": [
+    "MG-3D-MASTER-SCALE-REFERENCE",
+    "MG-3D-MATERIAL-LIBRARY",
+    "MG-3D-VISUAL-STYLE-GUIDE"
+  ],
+  "requiredViews": [
+    {
+      "viewId": "FRONT_ORTHOGRAPHIC",
+      "name": "Front Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "BACK_ORTHOGRAPHIC",
+      "name": "Back Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "LEFT_ORTHOGRAPHIC",
+      "name": "Left Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "RIGHT_ORTHOGRAPHIC",
+      "name": "Right Orthographic",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "TOP_VIEW",
+      "name": "Top View",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "THREE_QUARTER_FRONT",
+      "name": "Three Quarter Front",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "THREE_QUARTER_REAR",
+      "name": "Three Quarter Rear",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "NEUTRAL_A_POSE_OR_T_POSE",
+      "name": "Neutral A Pose Or T Pose",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SILHOUETTE_REFERENCE",
+      "name": "Silhouette Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "FULL_BODY_SCALE_REFERENCE",
+      "name": "Full Body Scale Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "HEAD_FACE_DETAIL_SHEET",
+      "name": "Head Face Detail Sheet",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ARMOR_CLOTHING_DETAIL_SHEET",
+      "name": "Armor Clothing Detail Sheet",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "WEAPON_DETAIL_SHEET",
+      "name": "Weapon Detail Sheet",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "HANDS_FEET_DETAIL_SHEET",
+      "name": "Hands Feet Detail Sheet",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SPECIAL_ANATOMY_DETAIL",
+      "name": "Special Anatomy Detail",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "MATERIAL_REFERENCE",
+      "name": "Material Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "COLOR_MATERIAL_ZONES",
+      "name": "Color Material Zones",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "EMBLEM_SYMBOL_PLACEMENT",
+      "name": "Emblem Symbol Placement",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "ANIMATION_POSE_REFERENCES",
+      "name": "Animation Pose References",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "HEIGHT_PROPORTION_MEASUREMENTS",
+      "name": "Height Proportion Measurements",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "GAME_SCALE_REFERENCE",
+      "name": "Game Scale Reference",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    },
+    {
+      "viewId": "SCALE_COMPARISON_SHEET",
+      "name": "Scale Comparison Sheet",
+      "required": true,
+      "status": "TEMPLATE_DEFINED",
+      "file": null
+    }
+  ],
+  "technicalNotes": {
+    "polygonBudget": "Mobile-first production target: LOD0 budget assigned by asset type during model pass; validators require LOD0/LOD1/LOD2/CollisionMesh entries before GAME_READY.",
+    "textureResolution": "1024-2048 for heroes/Deities and Gates; 512-1024 for common creatures/props; atlas-friendly mobile materials.",
+    "lodLevels": [
+      "LOD0_CLOSE",
+      "LOD1_GAMEPLAY",
+      "LOD2_DISTANCE",
+      "COLLISION_MESH"
+    ],
+    "collisionRequirements": "Separate simplified collision mesh; never derive gameplay collision from high-detail art mesh.",
+    "rigRequirements": "Rig spec required before MODEL_IN_PROGRESS; Deities and creatures need named root, pelvis/chest/head, limb, weapon, and VFX sockets where canon supports them.",
+    "animationRequirements": "Idle, movement, attack/interaction, hit reaction, death/disable, and any canon ability poses when source data defines them.",
+    "mobileOptimization": "Preserve silhouette and scale at 360px width; use baked lighting/material zones and aggressive LOD swaps.",
+    "target": "mobile tactical battlefield"
+  },
+  "missingCanonData": [],
+  "validation": {
+    "lastValidated": null,
+    "validator": "scripts/validate-3d-blueprints.mjs",
+    "readyCriteria": "All required views linked, scale/material/gameplay dimensions defined, dependencies valid, and status at least VALIDATED."
+  }
+}

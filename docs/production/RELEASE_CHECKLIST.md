@@ -1,5 +1,8 @@
 # Release Checklist — Mythos Gates: Ascension
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 Use this for every public build, milestone handoff, and publisher-facing package.
 
 ## 1. Source integrity

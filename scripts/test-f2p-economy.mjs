@@ -8,7 +8,7 @@ import {
   consumeEnergy,
   regenerateEnergy,
   grantReward,
-  unlockTitan,
+  unlockDeity,
   purchaseItem,
   claimDailyReward
 } from '../game/economy-runtime.mjs';
@@ -31,9 +31,9 @@ const goldAfter = player.economy.wallets.GOLD;
 grantReward(player, { GOLD: 500 }, 'TEST_REWARD_DUP', 'CLAIM-1', config);
 assert.equal(player.economy.wallets.GOLD, goldAfter);
 
-let unlock = unlockTitan(player, 'TG-TITAN-TEST', 60, config);
+let unlock = unlockDeity(player, 'MG-DEITY-TEST', 60, config);
 assert.equal(unlock.ok, true);
-assert.ok(player.unlockedTitanIds.includes('TG-TITAN-TEST'));
+assert.ok(player.unlockedDeityIds.includes('MG-DEITY-TEST'));
 
 addCurrency(player, 'PREMIUM_CURRENCY', 1000, 'TEST_PREMIUM_GRANT', config);
 let purchase = purchaseItem(player, 'TG_ENERGY_REFILL_FULL', null, config, 'development');

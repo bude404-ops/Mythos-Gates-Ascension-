@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Mythos Gates — Premium Prompt Generator v2.0
-Generates v18-quality art prompts for all 63 titans using:
+Generates v18-quality art prompts for all 63 deitys using:
 - Deity data (mythology, gear, visual traits, DNA)
 - Faction visual bible (realm, materials, colors, environment)
 - Backstory (personality, function, conflict)
@@ -19,8 +19,8 @@ def load_json(path):
     with open(path) as f:
         return json.load(f)
 
-def load_titans():
-    data = load_json(os.path.join(BASE, 'data', 'titans.json'))
+def load_deitys():
+    data = load_json(os.path.join(BASE, 'data', 'deitys.json'))
     return data if isinstance(data, list) else [data]
 
 def load_faction_bibles():
@@ -32,10 +32,10 @@ def load_faction_bibles():
             bibles[e.get('factionId','')] = e
     return bibles
 
-def load_backstory(titan_id):
-    # Convert MG-TITAN-001 -> MG-BACKSTORY-TITAN-001
-    num = titan_id.split('-')[-1]
-    path = os.path.join(BASE, 'backstories', 'titans', f'MG-BACKSTORY-TITAN-{num}.json')
+def load_backstory(deity_id):
+    # Convert MG-DEITY-001 -> MG-BACKSTORY-TITAN-001
+    num = deity_id.split('-')[-1]
+    path = os.path.join(BASE, 'backstories', 'deitys', f'MG-BACKSTORY-TITAN-{num}.json')
     try:
         return load_json(path)
     except:
@@ -61,7 +61,7 @@ def get_realm_name(faction_id, bibles):
     return b.get('realm', 'Unknown Realm')
 
 # === MYTHOLOGY DEEP DIVE SECTION ===
-# Maps each titan to their mythological sources with anatomy integration
+# Maps each deity to their mythological sources with anatomy integration
 
 MYTH_DEEP_DIVES = {
     # === ATEN RA FACTION ===
@@ -125,7 +125,7 @@ MYTH_DEEP_DIVES = {
             },
             {
                 "name": "DIVINE VERDICT — The Execution of Judgment",
-                "anatomy": "His shoulders are formed from REFRACTED PRISM SHARDS — jagged crystalline formations that grow upward from his deltoids like shattered amber glass. The LEFT shoulder has a single massive facet that acts as a light-prism, while the RIGHT shoulder has smaller clustered shards. Each shard catches and splits light into rainbow verdict-colors. This design is completely unique to Amunet — no other titan has prism-shard shoulders. His forearms carry CLEAR AMBER GLASS BLADES — execution instruments that grow from his arms like bones."
+                "anatomy": "His shoulders are formed from REFRACTED PRISM SHARDS — jagged crystalline formations that grow upward from his deltoids like shattered amber glass. The LEFT shoulder has a single massive facet that acts as a light-prism, while the RIGHT shoulder has smaller clustered shards. Each shard catches and splits light into rainbow verdict-colors. This design is completely unique to Amunet — no other deity has prism-shard shoulders. His forearms carry CLEAR AMBER GLASS BLADES — execution instruments that grow from his arms like bones."
             }
         ]
     },
@@ -311,7 +311,7 @@ MYTH_DEEP_DIVES = {
         "sources": [
             {
                 "name": "JOTNAR — Frost Giants, Primal Mountain Opposition",
-                "anatomy": "Ancient humans saw his mountain-scale body and copied it as frost giants. His body IS the mountain — his skin is LIVING FROST-GRANITE, dark stone with blue-frost veins that pulse with Jotnar cold. His proportions are TOO LARGE for a human — he is built at a scale that makes other titans look small, his frame broad and mountain-heavy."
+                "anatomy": "Ancient humans saw his mountain-scale body and copied it as frost giants. His body IS the mountain — his skin is LIVING FROST-GRANITE, dark stone with blue-frost veins that pulse with Jotnar cold. His proportions are TOO LARGE for a human — he is built at a scale that makes other deitys look small, his frame broad and mountain-heavy."
             },
             {
                 "name": "FROST-SUMMIT STRIKE — The Artillery from the Peak",
@@ -357,12 +357,12 @@ MYTH_DEEP_DIVES = {
     },
 }
 
-# Placeholder for remaining factions — will be filled from titan data
-# For titans not in MYTH_DEEP_DIVES, generate from their data fields
+# Placeholder for remaining factions — will be filled from deity data
+# For deitys not in MYTH_DEEP_DIVES, generate from their data fields
 
-def generate_myth_section(titan, bibles):
-    """Generate the mythology deep-dive section for a titan."""
-    name = titan.get('name', '')
+def generate_myth_section(deity, bibles):
+    """Generate the mythology deep-dive section for a deity."""
+    name = deity.get('name', '')
     
     if name in MYTH_DEEP_DIVES:
         sources = MYTH_DEEP_DIVES[name]['sources']
@@ -372,10 +372,10 @@ def generate_myth_section(titan, bibles):
             lines.append(f"{i}. {src['name']}\n   - {src['anatomy']}")
         return '\n'.join(lines)
     
-    # Fallback: generate from titan data
-    myth_source = titan.get('mythicSource', '')
-    lore = titan.get('lore', '')
-    visual = titan.get('visualDescription', '')
+    # Fallback: generate from deity data
+    myth_source = deity.get('mythicSource', '')
+    lore = deity.get('lore', '')
+    visual = deity.get('visualDescription', '')
     
     return f"""MYTHOLOGICAL SOURCE — deeply integrated into anatomy, not worn as accessories:
 
@@ -383,16 +383,16 @@ def generate_myth_section(titan, bibles):
    - {lore} This is not a costume or decoration — it is LIVING DIVINE ANATOMY. His/her body IS the manifestation of this mythological function. Ancient humans saw this being through the Mythos Gate and copied what they saw as myth, but the Deity is the SOURCE, not the copy.
 
 2. REALM ANATOMY
-   - {titan.get('titanArtDna',{}).get('realmAnatomy','')} These are NOT biological features — they are DIVINE PHYSIOLOGY grown from the realm itself. The skin is not skin but living divine material. The veins are not veins but energy channels.
+   - {deity.get('deityArtDna',{}).get('realmAnatomy','')} These are NOT biological features — they are DIVINE PHYSIOLOGY grown from the realm itself. The skin is not skin but living divine material. The veins are not veins but energy channels.
 
 3. VISUAL IDENTITY
    - {visual} Every element must feel like it GREW from the divine body, not like it was PUT ON."""
 
-def generate_non_human_section(titan, bibles):
+def generate_non_human_section(deity, bibles):
     """Generate the non-human anatomy section."""
-    art_dna = titan.get('titanArtDna', {})
-    name = titan.get('name', '')
-    sex = titan.get('sex', 'Male')
+    art_dna = deity.get('deityArtDna', {})
+    name = deity.get('name', '')
+    sex = deity.get('sex', 'Male')
     
     face = art_dna.get('identityFace', '')
     body = art_dna.get('identityBody', '')
@@ -406,26 +406,26 @@ def generate_non_human_section(titan, bibles):
 - Bare head — NO halo rings, NO discs, NO circles behind or around the head. The head is completely bare.
 - Every element of the body must feel like it GREW from divine anatomy, not like it was PUT ON as costume."""
 
-def generate_weapon_section(titan):
+def generate_weapon_section(deity):
     """Generate the weapon section."""
-    weapon = titan.get('weaponCanon', '')
-    gear = titan.get('gearCanon', {})
+    weapon = deity.get('weaponCanon', '')
+    gear = deity.get('gearCanon', {})
     weapon_name = gear.get('weapon', '')
     
     return f"""WEAPON: {weapon}
-The weapon is made of the same divine material as the body — it looks like an EXTENSION of the titan, not a separate object. It is held with deliberate purpose, not generic combat posing. The weapon's silhouette must be unique to this titan and not shared by any other."""
+The weapon is made of the same divine material as the body — it looks like an EXTENSION of the deity, not a separate object. It is held with deliberate purpose, not generic combat posing. The weapon's silhouette must be unique to this deity and not shared by any other."""
 
-def generate_armor_section(titan):
+def generate_armor_section(deity):
     """Generate the armor section."""
-    armor = titan.get('armorCanon', '')
-    art_dna = titan.get('titanArtDna', {})
+    armor = deity.get('armorCanon', '')
+    art_dna = deity.get('deityArtDna', {})
     armor_identity = art_dna.get('armorIdentity', '')
     
     return f"""ARMOR (grown from divine body, not worn): {armor}
 {armor_identity}
 Everything is BIOLOGY, not costume. Every plate, inlay, and marking must have a mythological reason for existing. No generic plate armor, no interchangeable faction gear."""
 
-def generate_materials_section(titan, faction_id, bibles):
+def generate_materials_section(deity, faction_id, bibles):
     """Generate the materials section from faction visual bible."""
     fb = bibles.get(faction_id, {})
     materials = fb.get('materialHierarchy', [])
@@ -438,24 +438,24 @@ def generate_materials_section(titan, faction_id, bibles):
 COLOR PALETTE: {color_text}
 Everything is BIOLOGY, not costume. Materials pulse with living energy — this is divine anatomy, not metalworked armor."""
 
-def generate_pose_section(titan):
+def generate_pose_section(deity):
     """Generate the pose section."""
-    personality = titan.get('personality', '')
-    role = titan.get('role', '')
+    personality = deity.get('personality', '')
+    role = deity.get('role', '')
     
     return f"""POSE: Three-quarter hero stance, face clearly visible, weapon clearly visible. {personality} shown through expression and gesture. Premium playable character presentation saying "this is a GOD you can unlock and command." The pose expresses the {role} role through readable tactical intent, not generic action posing."""
 
-def generate_silhouette_section(titan):
+def generate_silhouette_section(deity):
     """Generate the silhouette section."""
-    art_dna = titan.get('titanArtDna', {})
+    art_dna = deity.get('deityArtDna', {})
     silhouette = art_dna.get('roleSilhouette', '')
-    visual_traits = titan.get('visualTraits', [])
+    visual_traits = deity.get('visualTraits', [])
     
     traits_text = ', '.join(visual_traits) if isinstance(visual_traits, list) else str(visual_traits)
     
     return f"""SILHOUETTE: {silhouette} The silhouette reads as a COLOSSAL DIVINE BEING, not a human warrior. Even in pure black silhouette, no one would mistake this for a human. Key silhouette markers: {traits_text}."""
 
-def generate_environment_section(titan, faction_id, bibles):
+def generate_environment_section(deity, faction_id, bibles):
     """Generate the environment section from faction visual bible."""
     fb = bibles.get(faction_id, {})
     realm = fb.get('realm', '')
@@ -471,15 +471,15 @@ ART STYLE: Premium stylized-realistic 3D mythological fantasy character. NOT ani
 
 AVOID: {avoid_text}."""
 
-def generate_prompt(titan, bibles):
-    """Generate a full v18-quality prompt for a single titan."""
-    name = titan.get('name', '')
-    faction = titan.get('faction', '')
-    faction_id = titan.get('factionId', '')
-    sex = titan.get('sex', 'Male')
-    role = titan.get('role', '')
+def generate_prompt(deity, bibles):
+    """Generate a full v18-quality prompt for a single deity."""
+    name = deity.get('name', '')
+    faction = deity.get('faction', '')
+    faction_id = deity.get('factionId', '')
+    sex = deity.get('sex', 'Male')
+    role = deity.get('role', '')
     realm = get_realm_name(faction_id, bibles)
-    backstory = load_backstory(titan.get('id', ''))
+    backstory = load_backstory(deity.get('id', ''))
     
     # Build the prompt
     sections = []
@@ -492,46 +492,46 @@ def generate_prompt(titan, bibles):
 GOD: {name}. {sex}. Faction: {faction}. Realm: {realm}. Role: {role}.""")
     
     # Mythology deep dive
-    sections.append(generate_myth_section(titan, bibles))
+    sections.append(generate_myth_section(deity, bibles))
     
     # Non-human anatomy
-    sections.append(generate_non_human_section(titan, bibles))
+    sections.append(generate_non_human_section(deity, bibles))
     
     # Weapon
-    sections.append(generate_weapon_section(titan))
+    sections.append(generate_weapon_section(deity))
     
     # Armor
-    sections.append(generate_armor_section(titan))
+    sections.append(generate_armor_section(deity))
     
     # Materials
-    sections.append(generate_materials_section(titan, faction_id, bibles))
+    sections.append(generate_materials_section(deity, faction_id, bibles))
     
     # Pose
-    sections.append(generate_pose_section(titan))
+    sections.append(generate_pose_section(deity))
     
     # Silhouette
-    sections.append(generate_silhouette_section(titan))
+    sections.append(generate_silhouette_section(deity))
     
     # Environment + Art Style
-    sections.append(generate_environment_section(titan, faction_id, bibles))
+    sections.append(generate_environment_section(deity, faction_id, bibles))
     
     return '\n\n'.join(sections)
 
 def main():
-    titans = load_titans()
+    deitys = load_deitys()
     bibles = load_faction_bibles()
     
-    print(f"Loaded {len(titans)} titans and {len(bibles)} faction bibles")
+    print(f"Loaded {len(deitys)} deitys and {len(bibles)} faction bibles")
     
     updated = 0
-    for titan in titans:
-        titan_id = titan.get('id', '')
-        name = titan.get('name', '')
+    for deity in deitys:
+        deity_id = deity.get('id', '')
+        name = deity.get('name', '')
         
-        prompt = generate_prompt(titan, bibles)
+        prompt = generate_prompt(deity, bibles)
         
         # Update the art prompt file
-        num = titan_id.split('-')[-1]
+        num = deity_id.split('-')[-1]
         prompt_path = os.path.join(BASE, 'art', 'prompts', f'MG-PROMPT-{num}.json')
         
         if os.path.exists(prompt_path):
@@ -549,7 +549,7 @@ def main():
         else:
             print(f"  {name}: PROMPT FILE MISSING")
     
-    print(f"\nUpdated {updated}/{len(titans)} titan prompts")
+    print(f"\nUpdated {updated}/{len(deitys)} deity prompts")
 
 if __name__ == '__main__':
     main()

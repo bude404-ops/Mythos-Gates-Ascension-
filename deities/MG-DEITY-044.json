@@ -1,0 +1,189 @@
+{
+  "id": "MG-DEITY-044",
+  "slug": "oghma-stone-script",
+  "name": "Oghma Stone Script",
+  "factionId": "MG-FACTION-005",
+  "faction": "Tuatha",
+  "rarity": "Rare",
+  "faithTrigger": "Counter",
+  "abilities": [
+    "Oghma Stone Script \u2014 Silver-Lughch Cut Intercept",
+    "Geas Thorn Technique \u2014 Punishing Guard",
+    "Oghma Stone Script: S\u00eddhe Court Covenant Oath of Intercept",
+    "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
+  ],
+  "stats": {
+    "hp": 48,
+    "attack": 9,
+    "range": 1,
+    "energy": 4,
+    "speed": 2,
+    "armor": 18,
+    "resistance": 12,
+    "critChance": 5,
+    "accuracy": 80,
+    "evasion": 3,
+    "guardBreak": 12,
+    "combatPower": 212
+  },
+  "equipment": [
+    "Oghma Stone Script Sentinel Lugh Silver-Spear Thornblade",
+    "Oghma Stone Script Moon-Oak S\u00eddhe Mantle",
+    "Oghma Stone Script Dagda Cauldron Memory Core"
+  ],
+  "passives": [
+    "Root-Memory Sovereignty: Oghma Stone Script gains Geas Memory when its guardian choices express Avalora source-culture law through silver-root fae ground; Earth myth is only the later echo."
+  ],
+  "lore": "Oghma Stone Script is a colossal Tuatha guardian from Avalora. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Tuatha guardian office: oath/bodyguard law, interception, sacred threshold defense; Geasa: sacred taboos and binding conditions.",
+  "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+  "visualDescription": "Full-body living myth-source deity, not a costume: Oghma Stone Script shows silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.. Role silhouette must read as Counter. Materials include moon silver, living oak bark, thorn vine, moss velvet, green-gold light, fae glass, crow black feather. The design must feel older than human mythology and avoid generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume.",
+  "artStatus": "Prompt Ready",
+  "artPromptId": "MG-PROMPT-044",
+  "artworkId": null,
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "MG-BACKSTORY-TITAN-044",
+  "abilityDetails": [
+    {
+      "name": "Oghma Stone Script \u2014 Silver-Lughch Cut Intercept",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "guardian",
+        "tuatha",
+        "source-culture"
+      ],
+      "effect": "Deal Tuatha source-culture damage at range 1; generate Momentum and a small Geas Memory gain when used from silver-root fae ground or against the marked target. The hit reads visually as silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
+    },
+    {
+      "name": "Geas Thorn Technique \u2014 Punishing Guard",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "guardian",
+        "tuatha",
+        "source-culture"
+      ],
+      "effect": "Spend Momentum to intercepts lethal paths, counters oathbreakers/trespassers, and turns defense into threat. Builds Geas Memory only when the Avatar uses silver-root fae ground intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
+    },
+    {
+      "name": "Oghma Stone Script: S\u00eddhe Court Covenant Oath of Intercept",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "guardian",
+        "tuatha",
+        "source-culture"
+      ],
+      "effect": "Spend stored Geas Memory to impose a two-round rule from Avalora: intercepts lethal paths, counters oathbreakers/trespassers, and turns defense into threat. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant",
+        "tuatha",
+        "source-culture"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Geas Memory, transform nearby terrain into silver-root fae ground, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Oghma Stone Script Sentinel Lugh Silver-Spear Thornblade",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Rare",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through silver-root fae ground. Visual: silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
+    },
+    {
+      "name": "Oghma Stone Script Moon-Oak S\u00eddhe Mantle",
+      "slot": "Armor Body",
+      "rarityFloor": "Rare",
+      "primaryStat": "armor",
+      "effect": "Improves survivability and makes the Deity read as Avalora source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the Avatar followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
+    },
+    {
+      "name": "Oghma Stone Script Dagda Cauldron Memory Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Rare",
+      "primaryStat": "energy",
+      "effect": "Stores Geas Memory and unlocks a mastery branch for S\u00eddhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 50,
+    "statGrowthPer10Levels": {
+      "hp": 9,
+      "attack": 1,
+      "armor": 2,
+      "resistance": 1
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      50
+    ],
+    "gearTierCap": "Epic",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "counter bosses and protect survival windows",
+    "budgetTarget": 105,
+    "computedCombatPower": 212,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  },
+  "mythicSource": "Tuatha guardian office: oath/bodyguard law, interception, sacred threshold defense; Geasa: sacred taboos and binding conditions",
+  "visualTraits": [
+    "oath/bodyguard law",
+    "interception",
+    "sacred threshold defense",
+    "source culture humans later copied as Celtic and Irish fae myth",
+    "mist pearl"
+  ],
+  "armorCanon": "Armor must use silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.; construction proves source culture humans later copied as Celtic and Irish fae myth; no generic elf, wood block giant, treehouse body, cute fairy wings.",
+  "updated": "2026-08-16",
+  "weaponCanon": "Oghma Stone Script Sentinel Lugh Silver-Spear Thornblade",
+  "gearCanon": {
+    "weapon": "Oghma Stone Script Sentinel Lugh Silver-Spear Thornblade",
+    "armor": "Oghma Stone Script Moon-Oak S\u00eddhe Mantle",
+    "core": "Oghma Stone Script Dagda Cauldron Memory Core",
+    "movementRelic": "S\u00eddhe Mound Slip",
+    "reactionRelic": "Fae Glamour Reversal",
+    "executionRelic": "Collect the Geas Debt",
+    "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
+  }
+}

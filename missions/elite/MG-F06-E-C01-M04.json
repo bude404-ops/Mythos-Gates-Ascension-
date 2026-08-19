@@ -8,7 +8,7 @@
   "missionNumber": 4,
   "missionInChapter": 4,
   "title": "Elite: Absolve the Bell-Metal Resonance Steps: Outer Line",
-  "description": "Elite: Absolve the Bell-Metal Resonance Steps: Outer Line is a rebuilt Mythos Gates mission beat for Choir-Vault Discord Ascent through The Choir-Vault Gate (Wound Gate leaking memory-burning radiance). One selected deity from Michael, Sophia, Shekinah, Gabriel enters; this beat spotlights Gabriel as the reference silhouette while preserving player choice. The mission is the combat step at Bell-Metal Resonance Steps, using vertical cathedral ascent and judgment machinery pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Radiant Hierarchies is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks..",
+  "description": "Elite: Absolve the Bell-Metal Resonance Steps: Outer Line is a rebuilt Mythos Gates mission beat for Choir-Vault Discord Ascent through The Choir-Vault Gate (Wound Gate leaking memory-burning radiance). Your avatar of one selected deity from Michael, Sophia, Shekinah, Gabriel enters; this beat spotlights Gabriel as the reference silhouette while preserving Avatar choice. The mission is the combat step at Bell-Metal Resonance Steps, using vertical cathedral ascent and judgment machinery pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Radiant Hierarchies is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks..",
   "lore": "Ascension canon route rewrite: Choir-Vault Discord Ascent is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Bell-Metal Resonance Steps and reveals: Why discord becomes immobilizing force. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
   "recommendedPower": 874,
   "encouragedDeityRoles": [
@@ -55,7 +55,7 @@
   "specialRules": [
     "Route Law \u2014 Choir-Vault Discord Ascent: Wound Gate leaking memory-burning radiance changes how movement, hazards, and enemy pressure are read.",
     "Room Rule \u2014 Bell-Metal Resonance Steps: play this beat as a combat node, not a generic arena.",
-    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
+    "Solo Divine Scale: one player-controlled Avatar occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
   ],
   "victoryConditions": [
     "With one selected deity, break the first enemy pressure line in the elite-tuned Bell-Metal Resonance Steps, secure the forward marker, and deny the Hollow a foothold in the outer dungeon."
@@ -100,7 +100,6 @@
   ],
   "completionState": "Not Started",
   "developmentStatus": "Designed",
-  "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
   "eliteRemixOf": "MG-F06-C01-M04",
   "meaningfulDifferences": [
     "Secondary realm hazard active from opening turn",
@@ -131,12 +130,12 @@
       "Sustain"
     ],
     "recommendedDeityIds": [
-      "MG-TITAN-053",
-      "MG-TITAN-046"
+      "MG-DEITY-053",
+      "MG-DEITY-046"
     ],
     "recommendedDeities": [
       {
-        "id": "MG-TITAN-053",
+        "id": "MG-DEITY-053",
         "name": "Uriel Law Warden",
         "reason": "Fracture advantage for heavily armored enemies"
       },
@@ -166,7 +165,7 @@
   "activeDeityCount": 1,
   "teamSize": 1,
   "combatArchitecture": {
-    "playerControlledDeities": 1,
+    "playerControlledAvatars": 1,
     "loop": [
       "Explore",
       "Encounter",
@@ -179,7 +178,7 @@
     "forbidden": [
       "squad combat",
       "team formations",
-      "multiple player-controlled Deities",
+      "multiple player-controlled Avatars",
       "ally positioning",
       "team turns"
     ],
@@ -202,7 +201,7 @@
       "MG-CROSS-RUN-IN-001"
     ],
     "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
-    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone deity without creating ally units or squad play."
+    "oneAvatarVsManyUse": "Run-ins add enemy role pressure around the lone Avatar without creating ally units or squad play."
   },
   "loreContinuityGuard": {
     "sourceFactionId": "MG-FACTION-006",
@@ -213,7 +212,7 @@
       "established faction identity",
       "Mythos Gates mythology",
       "Gates and Codex systems",
-      "one player-controlled deity combat",
+      "one player-controlled Avatar combat",
       "mobile UE5 zone structure"
     ],
     "forbid": [
@@ -258,5 +257,6 @@
     "routeBeat": "Mission 4 of 20 advances Bell-Metal Resonance Steps inside Choir-Vault Discord Ascent.",
     "referencePlayableDeity": "Gabriel",
     "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
-  }
+  },
+  "activeDeityDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count."
 }

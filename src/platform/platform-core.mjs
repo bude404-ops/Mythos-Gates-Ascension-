@@ -80,7 +80,7 @@ export function completeMission(state, missionId, reward = {}) {
   next.player.accountXp += accountXp;
   next.player.accountLevel = 1 + Math.floor(next.player.accountXp / 100);
   for (const [currency, amount] of Object.entries(reward.currencies || {})) creditCurrencyInPlace(next, currency, amount, `MISSION:${missionId}`);
-  for (const deityId of reward.titans || []) {
+  for (const deityId of reward.deitys || []) {
     if (!next.roster.ownedDeities.some(deity => deity.deityId === deityId)) next.roster.ownedDeities.push({ deityId, source: `MISSION:${missionId}`, grantedAt: DEFAULT_CLOCK(), level: 1, xp: 0 });
   }
   appendEvent(next, 'MISSION_COMPLETED', { missionId, accountXp, reward });
@@ -122,8 +122,8 @@ export function validatePlatformState(state) {
   const issues = [];
   if (state?.schema !== 'TG_PLATFORM_SAVE_STATE_V1') issues.push('schema must be TG_PLATFORM_SAVE_STATE_V1');
   if (!state?.player?.playerId) issues.push('player.playerId is required');
-  if (!state?.roster?.activeTitanId) issues.push('roster.activeTitanId is required');
-  if (!state?.roster?.ownedTitans?.some(titan => titan.titanId === state.roster.activeTitanId)) issues.push('active deity must be owned');
+  if (!state?.roster?.activeDeityId) issues.push('roster.activeDeityId is required');
+  if (!state?.roster?.ownedDeities?.some(deity => deity.deityId === state.roster.activeDeityId)) issues.push('active deity must be owned');
   if (!state?.inventory?.currencies || typeof state.inventory.currencies !== 'object') issues.push('inventory.currencies is required');
   if (!Array.isArray(state?.ledger)) issues.push('ledger must be an array');
   if (!Array.isArray(state?.platformEvents)) issues.push('platformEvents must be an array');

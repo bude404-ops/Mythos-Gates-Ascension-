@@ -8,7 +8,7 @@ const slice = read('data/solo-vertical-slice.json');
 const missionProfiles = read('data/mission-tactical-profile-system.json');
 const raid = read('data/raid-system.json');
 const progression = read('data/progression-system.json');
-const titans = read('data/titans.json');
+const deitys = read('data/deitys.json');
 const html = fs.readFileSync('mini-app/mythos-gates-ascension.html', 'utf8');
 
 const issues = [];
@@ -31,7 +31,7 @@ if (!hasText(raid, ['stageProfiles', 'bosses'])) push(issues, 'RAIDS_NOT_COMBAT_
 if (!hasText(progression, ['combat', 'roster', 'battle'])) push(warnings, 'PROGRESSION_LANGUAGE_WEAK', 'Progression should explicitly sell return-to-battle value.');
 
 let weakDeities = 0;
-for (const deity of titans) {
+for (const deity of deitys) {
   const text = JSON.stringify(deity).toLowerCase();
   const hasAbility = Array.isArray(deity.abilities) || text.includes('ability') || text.includes('passive');
   const hasRole = Boolean(deity.role || deity.archetype || text.includes('role'));
@@ -42,10 +42,10 @@ if (weakDeities > 0) push(issues, 'DEITY_IDENTITY_WEAK', `${weakDeities} Deities
 
 const playableIdx = html.indexOf('function renderPlayable');
 const balanceIdx = html.indexOf('function renderBalanceLab');
-const titanIdx = html.indexOf('function renderDeityLab');
+const deityIdx = html.indexOf('function renderDeityLab');
 if (playableIdx < 0) push(issues, 'PLAYABLE_OPS_MISSING', 'Panel must keep playable battle projection visible.');
 if (balanceIdx < 0) push(issues, 'BALANCE_LAB_MISSING', 'Panel must expose combat-first balance guidance.');
-if (titanIdx < 0) push(issues, 'TITAN_LAB_MISSING', 'Panel must expose deity identity.');
+if (deityIdx < 0) push(issues, 'DEITY_LAB_MISSING', 'Panel must expose deity identity.');
 if (playableIdx > balanceIdx && balanceIdx > 0) push(warnings, 'COMBAT_VIEW_AFTER_BALANCE', 'Playable Ops appears after Balance Lab in markup; keep combat surfaces prominent in navigation.');
 for (const term of ['THE FIGHTING IS THE HOOK','Combat-First','Deity battle','Big Combat Moment']) {
   if (!html.toLowerCase().includes(term.toLowerCase())) push(issues, 'PANEL_MISSING_COMBAT_FIRST_COPY', `Panel missing combat-first signal: ${term}`);
@@ -60,7 +60,7 @@ console.log(JSON.stringify({
     combatLoopSteps: doctrine.combatLoop?.length || 0,
     developmentPriorities: doctrine.developmentPriority?.length || 0,
     acceptanceGates: doctrine.acceptanceGates?.length || 0,
-    titans: titans.length,
+    deitys: deitys.length,
     bigMomentTargets: doctrine.bigMomentTargets?.length || 0
   },
   issues,

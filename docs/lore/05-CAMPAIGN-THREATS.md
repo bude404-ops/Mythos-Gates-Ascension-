@@ -1,5 +1,9 @@
 # 05 — Campaign Threats
 
+
+> **Avatar System Note**: Players control Avatars — divine projections of their chosen deity. Avatars carry the deity's power and faith triggers into combat. The deity itself remains protected in its domain. Progression is driven by Belief and Influence. See `docs/lore/04-DEITIES.md` for the full Avatar System specification.
+
+
 ## The Hollow
 
 The Hollow is the primary cross-route pressure layer in Mythos Gates: Ascension. It is not one of the seven playable Realm civilizations and it is not a hidden eighth normal faction. It is an anti-civilization that consumes memory, identity, magical energy, terrain law, and isolated deity decisions.

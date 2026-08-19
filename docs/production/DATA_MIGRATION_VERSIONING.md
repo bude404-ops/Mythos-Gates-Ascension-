@@ -1,5 +1,8 @@
 # Data Migration and Canon Versioning Policy
 
+> **Avatar System**: Players channel Avatars — divine projections of their chosen Deity. The Deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn. Solo combat. God-scale in all realms.
+
+
 Mythos Gates canon is an engineered asset. It must move forward with explicit version intent, traceable migration records, and repeatable validation.
 
 ## Canon version format

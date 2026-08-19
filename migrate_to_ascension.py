@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Mythos Gates: Ascension — Comprehensive Migration Script
-Transforms from "Titans Gate" (63 titans) to "Mythos Gates: Ascension" (28 deities)
+Transforms from "Mythos Gates" (63 deitys) to "Mythos Gates: Ascension" (28 deities)
 """
 
 import json
@@ -11,108 +11,108 @@ import re
 BASE = os.path.dirname(os.path.abspath(__file__))
 
 SELECTED_DEITY_IDS = [
-    "MG-TITAN-001", "MG-TITAN-002", "MG-TITAN-003", "MG-TITAN-004",
-    "MG-TITAN-010", "MG-TITAN-011", "MG-TITAN-012", "MG-TITAN-013",
-    "MG-TITAN-019", "MG-TITAN-020", "MG-TITAN-021", "MG-TITAN-022",
-    "MG-TITAN-028", "MG-TITAN-029", "MG-TITAN-030", "MG-TITAN-031",
-    "MG-TITAN-037", "MG-TITAN-038", "MG-TITAN-039", "MG-TITAN-040",
-    "MG-TITAN-046", "MG-TITAN-047", "MG-TITAN-048", "MG-TITAN-049",
-    "MG-TITAN-055", "MG-TITAN-056", "MG-TITAN-057", "MG-TITAN-058",
+    "MG-DEITY-001", "MG-DEITY-002", "MG-DEITY-003", "MG-DEITY-004",
+    "MG-DEITY-010", "MG-DEITY-011", "MG-DEITY-012", "MG-DEITY-013",
+    "MG-DEITY-019", "MG-DEITY-020", "MG-DEITY-021", "MG-DEITY-022",
+    "MG-DEITY-028", "MG-DEITY-029", "MG-DEITY-030", "MG-DEITY-031",
+    "MG-DEITY-037", "MG-DEITY-038", "MG-DEITY-039", "MG-DEITY-040",
+    "MG-DEITY-046", "MG-DEITY-047", "MG-DEITY-048", "MG-DEITY-049",
+    "MG-DEITY-055", "MG-DEITY-056", "MG-DEITY-057", "MG-DEITY-058",
 ]
 
 LANGUAGE_RULES = [
-    ("Titans Gate: Ascension", "Mythos Gates: Ascension"),
-    ("Titans Gate", "Mythos Gates: Ascension"),
-    ("Titans-Gate", "Mythos-Gates-Ascension"),
-    ("titans-gate", "mythos-gates-ascension"),
-    ("titans gate", "Mythos Gates: Ascension"),
-    ("TitansGate", "MythosGatesAscension"),
-    ("Titan Voice", "Deity Voice"),
-    ("Titan voice", "Deity voice"),
-    ("titan voice", "deity voice"),
-    ("Titan Gate", "Mythos Gate"),
-    ("titan gate", "mythos gate"),
-    ("Titan Gates", "Mythos Gates"),
-    ("titan gates", "mythos gates"),
-    ("Titan-centric", "deity-centric"),
-    ("Titan focused", "deity-focused"),
-    ("Titan-focused", "Deity-focused"),
-    ("solo-titan", "solo-deity"),
-    ("Solo Titan", "Solo Deity"),
-    ("SoloTitan", "SoloDeity"),
-    ("one-titan-vs-many", "one-deity-vs-many"),
-    ("One-Titan-Vs-Many", "One-Deity-Vs-Many"),
-    ("one active Titan", "one active deity"),
-    ("One active Titan", "One active deity"),
-    ("active Titan", "active deity"),
-    ("Three Titans", "One active deity"),
-    ("three Titans", "one active deity"),
-    ("three titans", "one active deity"),
-    ("many Titans", "multiple deities"),
-    ("Many Titans", "Multiple deities"),
-    ("playable Titan", "playable deity"),
-    ("Playable Titan", "Playable Deity"),
-    ("unlock and play this Titan", "unlock and play this deity"),
-    ("this Titan", "this deity"),
-    ("This Titan", "This deity"),
-    ("each Titan", "each deity"),
-    ("Each Titan", "Each deity"),
-    ("all Titans", "all deities"),
-    ("All Titans", "All deities"),
-    ("all titans", "all deities"),
-    ("other Titans", "other deities"),
-    ("Other Titans", "Other deities"),
-    ("other titans", "other deities"),
-    ("no other Titan", "no other deity"),
-    ("No other Titan", "No other deity"),
-    ("no other titan", "no other deity"),
-    ("63 titans", "28 deities"),
-    ("63 Titans", "28 Deities"),
-    ("63 Titan", "28 Deity"),
-    ("nine Titans", "four deities"),
-    ("Nine Titans", "Four deities"),
-    ("9 Titans", "4 deities"),
-    ("9 titans", "4 deities"),
-    ("Aten Ra Titan Voice", "Aten Ra Deity Voice"),
-    ("Asgardian Titan Voice", "Asgardian Deity Voice"),
-    ("Olympian Titan Voice", "Olympian Deity Voice"),
-    ("Kami Titan Voice", "Kami Deity Voice"),
-    ("Tuatha Titan Voice", "Tuatha Deity Voice"),
-    ("Empyrean Titan Voice", "Empyrean Deity Voice"),
-    ("Infernal Dominion Titan Voice", "Infernal Dominion Deity Voice"),
-    ("Titan roster", "deity roster"),
-    ("titan roster", "deity roster"),
-    ("Titan Roster", "Deity Roster"),
-    ("Titan combat", "deity combat"),
-    ("titan combat", "deity combat"),
-    ("Titan Combat", "Deity Combat"),
-    ("Titan role", "deity role"),
-    ("titan role", "deity role"),
-    ("Titan Role", "Deity Role"),
-    ("Titan identity", "deity identity"),
-    ("Titan Identity", "Deity Identity"),
-    ("titan identity", "deity identity"),
-    ("Titan concept art", "deity concept art"),
-    ("titan concept art", "deity concept art"),
-    ("Titan Concept Art", "Deity Concept Art"),
-    ("Titan art", "deity art"),
-    ("titan art", "deity art"),
-    ("titanArtDna", "deityArtDna"),
-    ("TitanArtDna", "DeityArtDna"),
-    ("titan-art", "deity-art"),
-    ("Titan-Art", "Deity-Art"),
-    ("Titan backstory", "deity backstory"),
-    ("titan backstory", "deity backstory"),
-    ("Titan Backstory", "Deity Backstory"),
-    ("titan-backstory", "deity-backstory"),
-    ("Titan-Backstory", "Deity-Backstory"),
-    ("Titan migration", "deity migration"),
-    ("titan migration", "deity migration"),
-    ("Titan Migration", "Deity Migration"),
-    ("Titan redesign", "deity redesign"),
-    ("titan redesign", "deity redesign"),
-    ("Titan Redesign", "Deity Redesign"),
-    ("titan-redesign", "deity-redesign"),
+    ("Mythos Gates: Ascension", "Mythos Gates: Ascension"),
+    ("Mythos Gates", "Mythos Gates: Ascension"),
+    ("Deities-Gate", "Mythos-Gates-Ascension"),
+    ("deitys-gate", "mythos-gates-ascension"),
+    ("deitys gate", "Mythos Gates: Ascension"),
+    ("MythosGates", "MythosGatesAscension"),
+    ("Deity Voice", "Deity Voice"),
+    ("Deity voice", "Deity voice"),
+    ("deity voice", "deity voice"),
+    ("Deity Gate", "Mythos Gate"),
+    ("deity gate", "mythos gate"),
+    ("Deity Gates", "Mythos Gates"),
+    ("deity gates", "mythos gates"),
+    ("Deity-centric", "deity-centric"),
+    ("Deity focused", "deity-focused"),
+    ("Deity-focused", "Deity-focused"),
+    ("solo-deity", "solo-deity"),
+    ("Solo Deity", "Solo Deity"),
+    ("SoloDeity", "SoloDeity"),
+    ("one-deity-vs-many", "one-deity-vs-many"),
+    ("One-Deity-Vs-Many", "One-Deity-Vs-Many"),
+    ("one active Deity", "one active deity"),
+    ("One active Deity", "One active deity"),
+    ("active Deity", "active deity"),
+    ("Three Deities", "One active deity"),
+    ("three Deities", "one active deity"),
+    ("three deitys", "one active deity"),
+    ("many Deities", "multiple deities"),
+    ("Many Deities", "Multiple deities"),
+    ("playable Deity", "playable deity"),
+    ("Playable Deity", "Playable Deity"),
+    ("unlock and play this Deity", "unlock and play this deity"),
+    ("this Deity", "this deity"),
+    ("This Deity", "This deity"),
+    ("each Deity", "each deity"),
+    ("Each Deity", "Each deity"),
+    ("all Deities", "all deities"),
+    ("All Deities", "All deities"),
+    ("all deitys", "all deities"),
+    ("other Deities", "other deities"),
+    ("Other Deities", "Other deities"),
+    ("other deitys", "other deities"),
+    ("no other Deity", "no other deity"),
+    ("No other Deity", "No other deity"),
+    ("no other deity", "no other deity"),
+    ("63 deitys", "28 deities"),
+    ("63 Deities", "28 Deities"),
+    ("63 Deity", "28 Deity"),
+    ("nine Deities", "four deities"),
+    ("Nine Deities", "Four deities"),
+    ("9 Deities", "4 deities"),
+    ("9 deitys", "4 deities"),
+    ("Aten Ra Deity Voice", "Aten Ra Deity Voice"),
+    ("Asgardian Deity Voice", "Asgardian Deity Voice"),
+    ("Olympian Deity Voice", "Olympian Deity Voice"),
+    ("Kami Deity Voice", "Kami Deity Voice"),
+    ("Tuatha Deity Voice", "Tuatha Deity Voice"),
+    ("Empyrean Deity Voice", "Empyrean Deity Voice"),
+    ("Infernal Dominion Deity Voice", "Infernal Dominion Deity Voice"),
+    ("Deity roster", "deity roster"),
+    ("deity roster", "deity roster"),
+    ("Deity Roster", "Deity Roster"),
+    ("Deity combat", "deity combat"),
+    ("deity combat", "deity combat"),
+    ("Deity Combat", "Deity Combat"),
+    ("Deity role", "deity role"),
+    ("deity role", "deity role"),
+    ("Deity Role", "Deity Role"),
+    ("Deity identity", "deity identity"),
+    ("Deity Identity", "Deity Identity"),
+    ("deity identity", "deity identity"),
+    ("Deity concept art", "deity concept art"),
+    ("deity concept art", "deity concept art"),
+    ("Deity Concept Art", "Deity Concept Art"),
+    ("Deity art", "deity art"),
+    ("deity art", "deity art"),
+    ("deityArtDna", "deityArtDna"),
+    ("DeityArtDna", "DeityArtDna"),
+    ("deity-art", "deity-art"),
+    ("Deity-Art", "Deity-Art"),
+    ("Deity backstory", "deity backstory"),
+    ("deity backstory", "deity backstory"),
+    ("Deity Backstory", "Deity Backstory"),
+    ("deity-backstory", "deity-backstory"),
+    ("Deity-Backstory", "Deity-Backstory"),
+    ("Deity migration", "deity migration"),
+    ("deity migration", "deity migration"),
+    ("Deity Migration", "Deity Migration"),
+    ("Deity redesign", "deity redesign"),
+    ("deity redesign", "deity redesign"),
+    ("Deity Redesign", "Deity Redesign"),
+    ("deity-redesign", "deity-redesign"),
 ]
 
 def apply_language_rules(text):
@@ -120,14 +120,14 @@ def apply_language_rules(text):
         text = text.replace(old, new)
     return text
 
-def update_titans_to_deities():
-    path = os.path.join(BASE, 'data', 'titans.json')
+def update_deitys_to_deities():
+    path = os.path.join(BASE, 'data', 'deitys.json')
     with open(path) as f:
-        titans = json.load(f)
-    selected = [t for t in titans if t.get('id') in SELECTED_DEITY_IDS]
+        deitys = json.load(f)
+    selected = [t for t in deitys if t.get('id') in SELECTED_DEITY_IDS]
     for d in selected:
         d['entityType'] = 'Deity'
-        d['formerTitanId'] = d.get('id', '')
+        d['formerDeityId'] = d.get('id', '')
         d['ascensionTier'] = 'Base'
         d['combatModel'] = 'one-deity-vs-many'
     with open(path, 'w') as f:
@@ -135,10 +135,10 @@ def update_titans_to_deities():
     deities_path = os.path.join(BASE, 'data', 'deities.json')
     with open(deities_path, 'w') as f:
         json.dump(selected, f, indent=2, ensure_ascii=False)
-    print(f"  titans.json: {len(titans)} -> {len(selected)} deities")
+    print(f"  deitys.json: {len(deitys)} -> {len(selected)} deities")
     print(f"  deities.json: created with {len(selected)} entries")
-    dropped = [t for t in titans if t.get('id') not in SELECTED_DEITY_IDS]
-    print(f"  Dropped {len(dropped)} titans:")
+    dropped = [t for t in deitys if t.get('id') not in SELECTED_DEITY_IDS]
+    print(f"  Dropped {len(dropped)} deitys:")
     for t in dropped:
         print(f"    {t['id']} {t['name']} ({t['faction']})")
     return selected
@@ -148,7 +148,7 @@ def update_project_json():
     with open(path) as f:
         d = json.load(f)
     d['name'] = 'Mythos Gates: Ascension'
-    d['formerName'] = 'Titans Gate'
+    d['formerName'] = 'Mythos Gates'
     d['gameType'] = 'Mythic realm-hopping action RPG'
     d['deityCount'] = 28
     d['factionCount'] = 7
@@ -156,8 +156,8 @@ def update_project_json():
     d['tone'] = 'Epic, sacred, dangerous, cinematic'
     d['vision'] = 'A mythic realm-hopping action RPG where the player controls divine champions battling through fractured mythological worlds connected by ancient gates.'
     d['lastUpdate'] = '2026-08-18'
-    d['phase'] = 'Transformation: Titans Gate -> Mythos Gates: Ascension'
-    d['buildStatus'] = 'In transformation - migrating from 63-titan roster to 28-deity roster'
+    d['phase'] = 'Transformation: Mythos Gates -> Mythos Gates: Ascension'
+    d['buildStatus'] = 'In transformation - migrating from 63-deity roster to 28-deity roster'
     with open(path, 'w') as f:
         json.dump(d, f, indent=2, ensure_ascii=False)
     print(f"  project.json: title -> Mythos Gates: Ascension, deityCount -> 28")
@@ -190,8 +190,8 @@ def create_transformation_manifest(selected_deities):
         "id": "MG-TRANSFORMATION-001",
         "version": "2.0.0",
         "date": "2026-08-18",
-        "transformation": "Titans Gate -> Mythos Gates: Ascension",
-        "formerTitle": "Titans Gate",
+        "transformation": "Mythos Gates -> Mythos Gates: Ascension",
+        "formerTitle": "Mythos Gates",
         "newTitle": "Mythos Gates: Ascension",
         "formerRosterSize": 63,
         "newRosterSize": 28,
@@ -199,9 +199,9 @@ def create_transformation_manifest(selected_deities):
         "gameType": "Mythic realm-hopping action RPG",
         "tone": "Epic, sacred, dangerous, cinematic",
         "changes": [
-            "Title changed from Titans Gate to Mythos Gates: Ascension",
-            "Roster reduced from 63 titans to 28 deities (4 per faction)",
-            "Titan language reframed as Deity, Champion, Ascendant, Divine Avatar",
+            "Title changed from Mythos Gates to Mythos Gates: Ascension",
+            "Roster reduced from 63 deitys to 28 deities (4 per faction)",
+            "Deity language reframed as Deity, Champion, Ascendant, Divine Avatar",
             "Combat model: one active deity vs many enemies",
             "Campaign structure: realm-based progression across multiple mythological realms",
             "The Hollow remains as central threat",
@@ -213,7 +213,7 @@ def create_transformation_manifest(selected_deities):
             {"id": d.get('id'), "name": d.get('name'), "faction": d.get('faction'), "role": d.get('role'), "mythicSource": d.get('mythicSource', '')[:80]}
             for d in selected_deities
         ],
-        "droppedEntities": [f"MG-TITAN-{i:03d}" for i in range(1, 64) if f"MG-TITAN-{i:03d}" not in SELECTED_DEITY_IDS],
+        "droppedEntities": [f"MG-DEITY-{i:03d}" for i in range(1, 64) if f"MG-DEITY-{i:03d}" not in SELECTED_DEITY_IDS],
     }
     path = os.path.join(BASE, 'data', 'transformation-manifest.json')
     with open(path, 'w') as f:
@@ -225,7 +225,7 @@ def main():
     print("MYTHOS GATES: ASCENSION - COMPREHENSIVE MIGRATION")
     print("=" * 60)
     print("\n1. UPDATING CORE DATA FILES")
-    selected = update_titans_to_deities()
+    selected = update_deitys_to_deities()
     update_project_json()
     print("\n2. GLOBAL LANGUAGE UPDATE")
     global_language_update()

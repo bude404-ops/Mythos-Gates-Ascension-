@@ -1,5 +1,9 @@
 # 07 — Glossary
 
+
+> **Avatar System**: Players channel Avatars of their chosen deity — divine projections that carry the deity's power into combat. The deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn at deity domain with 10-20% penalty. Solo combat only. God-scale in all realms.
+
+
 ## Mythos Gates
 
 The catastrophic event that shattered the old dimensional order, broke ancient Gate roads, damaged Realm civilizations, destabilized Mythos Gates, and awakened dormant forces.

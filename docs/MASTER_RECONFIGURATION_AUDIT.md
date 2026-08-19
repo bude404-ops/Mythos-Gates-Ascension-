@@ -33,10 +33,10 @@ NEW CANON EXTENSION:
 
 ## 2. Systems Requiring Changes
 
-- Legacy internal names still use `titan` in IDs, routes, test names, schemas, and engine adapter keys. These are compatibility names and should be renamed only in a dedicated migration.
+- Legacy internal names still use `deity` in IDs, routes, test names, schemas, and engine adapter keys. These are compatibility names and should be renamed only in a dedicated migration.
 - Visual baseline records still contain old historical screen names such as Deity Selection and Deity Profile.
 - Some art-production pipeline prose still uses Deity as a production shorthand; player-facing and prompt-facing language should be cleaned first.
-- Some exporter/Unity docs still expose `TitanCombatData` or `mapTitanForEngine`; these should become compatibility wrappers around Deity data.
+- Some exporter/Unity docs still expose `DeityCombatData` or `mapDeityForEngine`; these should become compatibility wrappers around Deity data.
 
 ## 3. Lore Requiring Changes
 

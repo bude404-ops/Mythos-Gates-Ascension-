@@ -1,12 +1,24 @@
 # Asgardian Full Faction Campaign Lore — v0.5.0
 
+
+## Avatar System
+
+Players do not control the deities directly. Each player channels an **Avatar** — a divine projection of their chosen deity. The avatar carries the deity's power, faith triggers, and faction bonuses into combat, but the deity itself remains protected in its domain.
+
+- **Progression**: Avatars grow stronger through **Belief** (faction-core faith) and **Influence** (deity-specific faith path), earned by completing missions and conquering realms.
+- **Death**: If an avatar falls, it respawns at the deity's domain. The deity is unharmed. Progression is preserved with a 10-20% Belief/Influence penalty.
+- **Scale**: Avatars maintain god-scale proportions in all realms — they tower over buildings, landscapes, and mortal structures.
+- **Solo Combat**: Each avatar fights alone. No allies, no healing companions. Faith triggers are self-only.
+- **Realm Advantage**: Avatars fight with full power in their deity's home realm. In enemy realms, they suffer penalties. Earth is neutral ground.
+
+
 The Asgardian campaign begins when the Thunder-Oath Gate reopens across the storm-bridge remnants of the old world. The Asgardian do not treat the Gate as a puzzle to be solved. They treat it as an oath-site — a place where a promise was broken, and broken promises have weight.
 
-The campaign begins on the broken rune arrival span where the Bifrost once connected the Nine Realms. After the Ascension Collapse, the bridge shattered. The Gate's reopening does not repair the bridge — it reveals the fracture. The chosen deity must cross a span held together by oath-memory: every stone is a promise, every gap is a broken vow, and every step forward requires the walker to prove they still hold.
+The campaign begins on the broken rune arrival span where the Bifrost once connected the Nine Realms. After the Ascension Collapse, the bridge shattered. The Gate's reopening does not repair the bridge — it reveals the fracture. The avatar must cross a span held together by oath-memory: every stone is a promise, every gap is a broken vow, and every step forward requires the Avatar to prove they still hold. Every oath fulfilled strengthens the belief connection between player and Deity.
 
 Across five chapters, the campaign moves from oath reactivation through banner conflict, world-root decay, and a final confrontation where the Forgotten Standard Bearer — a Hollow entity wearing the armor of the first oath-keeper — stands at the end of the bridge, voiding every promise the deity has ever made.
 
-Elite missions reinterpret these events as sharper oath trials. The Gate has learned from the Normal campaign. It uses the deity's own promises as weapons, changes which oaths are still binding mid-mission, and forces the deity to win without swearing any new vows.
+Elite missions reinterpret these events as sharper oath trials. The Gate has learned from the Normal campaign. It uses the deity's own promises as weapons, changes which oaths are still binding mid-mission, and forces the avatar to win without swearing any new vows.
 
 The finale leaves the Gate standing but not sealed. The Asgardian win the right to hold the oath, not the right to break it.
 

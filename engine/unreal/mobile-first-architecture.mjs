@@ -19,7 +19,7 @@ export function validateMobileFirstArchitecture(contract, framework, firstTempla
   if (contract.mobilePerformanceBudgets?.targetFps < 30) issues.push('baseline FPS target must be at least 30');
   if (contract.mobilePerformanceBudgets?.maxActiveCombatEnemiesStandard > 6) issues.push('standard active enemy count must stay controlled for mobile');
   if (!contract.scalableQualityTiers?.some(tier => tier.tier === 'STANDARD' && /baseline Android\/iOS/i.test(tier.target))) issues.push('STANDARD tier must target baseline Android/iOS');
-  if (!contract.titanOptimization?.mandate?.includes('not computational waste')) issues.push('Deity optimization mandate must preserve scale without waste');
+  if (!contract.deityOptimization?.mandate?.includes('not computational waste')) issues.push('Deity optimization mandate must preserve scale without waste');
   for (const step of MOBILE_FIRST_PIPELINE) if (!contract.generationPipeline?.includes(step)) issues.push(`missing generation step: ${step}`);
   for (const test of REQUIRED_APPROVAL_TESTS) if (!contract.firstImplementationGate?.approvalTests?.includes(test)) issues.push(`missing first-zone approval test: ${test}`);
   for (const item of REQUIRED_MOBILE_OPTIMIZATION) if (!framework.mobileOptimization?.includes(item)) issues.push(`framework missing mobile optimization: ${item}`);

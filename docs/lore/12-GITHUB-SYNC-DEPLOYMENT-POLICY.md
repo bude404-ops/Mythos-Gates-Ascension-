@@ -1,5 +1,9 @@
 # Automatic GitHub Sync and Deployment Policy
 
+
+> **Avatar System**: Players channel Avatars of their chosen deity — divine projections that carry the deity's power into combat. The deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn at deity domain with 10-20% penalty. Solo combat only. God-scale in all realms.
+
+
 **Codex ID:** MG-GITHUB-SYNC-POLICY-001  
 **Status:** Canon Locked  
 **Updated:** 2026-08-10

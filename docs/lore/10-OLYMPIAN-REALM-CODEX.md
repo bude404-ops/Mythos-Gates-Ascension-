@@ -17,6 +17,10 @@ The Marble Sky of Olympus is defined by radiant rivalry, heroic politics, marble
 - **The Mirror-Victory Hall** — a campaign-facing location for Olympian stories.
 - **The Star-Lance Colonnade** — a campaign-facing location for Olympian stories.
 
+
+> **Avatar System**: Players channel Avatars of their chosen deity — divine projections that carry the deity's power into combat. The deity remains protected in its domain. Progression via Belief and Influence. Avatar death = respawn at deity domain with 10-20% penalty. Solo combat only. God-scale in all realms.
+
+
 ## Realm Hazards
 - Crowds whose belief changes battlefield rules.
 - living statues of past champions.
@@ -28,47 +32,47 @@ The Marble Sky of Olympus is defined by radiant rivalry, heroic politics, marble
 - turn public spectacle into Realm defense.
 
 ## Deity Codex Hooks
-### Zeus (MG-TITAN-019)
+### Zeus (MG-DEITY-019)
 - **Role:** Endurance
 - **Lore Function:** Zeus embodies the Olympian answer to the Ascension Collapse: defender shaped into Realm doctrine.
 - **Chapter Hook:** When Zeus enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Zeus against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Artemis (MG-TITAN-022)
+### Artemis (MG-DEITY-022)
 - **Role:** Conduit
 - **Lore Function:** Artemis embodies the Olympian answer to the Ascension Collapse: battery shaped into Realm doctrine.
 - **Chapter Hook:** When Artemis enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Artemis against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Ares (MG-TITAN-023)
+### Ares (MG-DEITY-023)
 - **Role:** Dominion
 - **Lore Function:** Ares embodies the Olympian answer to the Ascension Collapse: controller shaped into Realm doctrine.
 - **Chapter Hook:** When Ares enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Ares against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Ares Laurel Flame (MG-TITAN-022)
+### Ares Laurel Flame (MG-DEITY-022)
 - **Role:** Fracture
 - **Lore Function:** Ares Laurel Flame embodies the Olympian answer to the Ascension Collapse: breaker shaped into Realm doctrine.
 - **Chapter Hook:** When Ares Laurel Flame enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Ares Laurel Flame against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Nikos Star-Lance (MG-TITAN-023)
+### Nikos Star-Lance (MG-DEITY-023)
 - **Role:** Disruptor
 - **Lore Function:** Nikos Star-Lance embodies the Olympian answer to the Ascension Collapse: disruptor shaped into Realm doctrine.
 - **Chapter Hook:** When Nikos Star-Lance enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Nikos Star-Lance against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Dione Victory Mirror (MG-TITAN-022)
+### Dione Victory Mirror (MG-DEITY-022)
 - **Role:** Sustain
 - **Lore Function:** Dione Victory Mirror embodies the Olympian answer to the Ascension Collapse: sustain shaped into Realm doctrine.
 - **Chapter Hook:** When Dione Victory Mirror enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Dione Victory Mirror against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Helior Bronze Summit (MG-TITAN-023)
+### Helior Bronze Summit (MG-DEITY-023)
 - **Role:** Artillery
 - **Lore Function:** Helior Bronze Summit embodies the Olympian answer to the Ascension Collapse: artillery shaped into Realm doctrine.
 - **Chapter Hook:** When Helior Bronze Summit enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Helior Bronze Summit against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Pallas Oath-Spear (MG-TITAN-026)
+### Pallas Oath-Spear (MG-DEITY-026)
 - **Role:** Counter
 - **Lore Function:** Pallas Oath-Spear embodies the Olympian answer to the Ascension Collapse: guardian shaped into Realm doctrine.
 - **Chapter Hook:** When Pallas Oath-Spear enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Pallas Oath-Spear against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
-### Eiren Crowned Horizon (MG-TITAN-019)
+### Eiren Crowned Horizon (MG-DEITY-019)
 - **Role:** Shadow
 - **Lore Function:** Eiren Crowned Horizon embodies the Olympian answer to the Ascension Collapse: assassin shaped into Realm doctrine.
 - **Chapter Hook:** When Eiren Crowned Horizon enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
