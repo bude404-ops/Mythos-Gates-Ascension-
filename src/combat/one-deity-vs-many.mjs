@@ -23,7 +23,7 @@ export function validateOneDeityVsManyCombat(contract, mission, mobileArchitectu
   const activePolicy = mission.activeDeityPolicy ?? mission.activeTitanPolicy;
   if (activeCount !== 1 || mission.teamSize !== 1) issues.push('first mission must remain exactly one active deity/team size 1');
   if (activePolicy?.standardCombat !== PRIMARY_ONE_DEITY_RULE) issues.push('first mission active policy must use one player-controlled deity');
-  if (!mission.specialRules?.some(rule => /one (active|player-controlled) (Titan|deity)/i.test(rule))) issues.push('first mission must preserve one active/player-controlled deity special rule');
+  if (!mission.specialRules?.some(rule => /one (active|player-controlled) (Deity|deity)/i.test(rule))) issues.push('first mission must preserve one active/player-controlled deity special rule');
   if (mobileArchitecture.combatRule?.contract !== 'data/one-deity-vs-many-combat.json') issues.push('mobile architecture must link one-deity combat contract');
   if (mobileArchitecture.combatRule?.forbidSquads !== true) issues.push('mobile architecture must forbid squads');
   if (firstTemplate.combatIdentity?.playerControlledDeities !== 1) issues.push('first template must specify exactly one player-controlled deity');

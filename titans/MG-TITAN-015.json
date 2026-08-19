@@ -1,0 +1,218 @@
+{
+  "id": "MG-TITAN-015",
+  "slug": "frigg",
+  "name": "Frigg",
+  "factionId": "MG-FACTION-002",
+  "faction": "Asgardian",
+  "rarity": "Mythic God",
+  "role": "Sustain",
+  "abilities": [
+    "Veyra — Oath-Ring Cleave Restore",
+    "Rune-Thunder Technique — Covenant",
+    "Veyra: Yggdrasil Root Oath Renewal Rite",
+    "Divine Ascension — Ragnarok Storm Unbound"
+  ],
+  "stats": {
+    "hp": 46,
+    "attack": 8,
+    "range": 2,
+    "energy": 4,
+    "speed": 2,
+    "armor": 11,
+    "resistance": 18,
+    "critChance": 5,
+    "accuracy": 82,
+    "evasion": 5,
+    "guardBreak": 7,
+    "combatPower": 207
+  },
+  "equipment": [
+    "Veyra Restorer Rune-Iron Oath Axe",
+    "Veyra Stormsteel Wolf-Cloak Mail",
+    "Veyra Yggdrasil Thunder-Root Core"
+  ],
+  "passives": [
+    "Rune Oath: Veyra gains Oathfire when sustain play banks survival value through terrain mastery and converts it into recovery on storm-carved oathground. At 3 stacks, the next Technique or Reaction adds a rune-bound fate rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of World-Tree war halls."
+  ],
+  "lore": "Frigg, Wyrd Hearth Queen, is now canonized as one of the four playable deities of Asgardian. The deity is the source-realm divinity behind the mythology rather than a generic champion: queen of foresight, oath household, motherhood, continuity, secret mercy under law. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology deity whose behavior expresses queen of foresight, oath household, motherhood, continuity, secret mercy under law; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
+  "visualDescription": "Frigg manifests as queen of foresight, oath household, motherhood, continuity, secret mercy under law from Asgardian: mature beautiful feminine queen face, calm eyes that know fate, soft jaw, composed maternal authority; elegant feminine matriarch frame, stately posture, graceful waist and draped hips, contained strength; signature silhouette: woven mantle, distaff staff, crown-braids, protective hearth-cloak dome. Weapon: distaff staff weaving oath-thread and hearth-shield brooch. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
+  "artStatus": "READY_FOR_GENERATION",
+  "artPromptId": "MG-PROMPT-015",
+  "artworkId": null,
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "MG-BACKSTORY-TITAN-015",
+  "abilityDetails": [
+    {
+      "name": "Veyra — Oath-Ring Cleave Restore",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "sustain",
+        "asgardian",
+        "source-culture"
+      ],
+      "effect": "Deal Asgardian source-culture damage at range 2; generate Momentum and a small Oathstorm gain when used from rune-storm ground or against the marked target. The hit reads visually as rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
+    },
+    {
+      "name": "Rune-Thunder Technique — Covenant",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "sustain",
+        "asgardian",
+        "source-culture"
+      ],
+      "effect": "Spend Momentum to restores through faction ritual, cleanses pressure, and rewards holding sacred ground without becoming a passive healer. Builds Oathstorm only when the player uses rune-storm ground intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
+    },
+    {
+      "name": "Veyra: Yggdrasil Root Oath Renewal Rite",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "sustain",
+        "asgardian",
+        "source-culture"
+      ],
+      "effect": "Spend stored Oathstorm to impose a two-round rule from Storm-Rooted Aesir Holds: restores through faction ritual, cleanses pressure, and rewards holding sacred ground without becoming a passive healer. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Ragnarok Storm Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant",
+        "asgardian",
+        "source-culture"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Oathstorm, transform nearby terrain into rune-storm ground, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Veyra Restorer Rune-Iron Oath Axe",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Rare",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through rune-storm ground. Visual: rune iron, oath rings, raven omens, wolf teeth, Yggdrasil roots, stormsteel mail, blackwinter scars.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
+    },
+    {
+      "name": "Veyra Stormsteel Wolf-Cloak Mail",
+      "slot": "Armor Body",
+      "rarityFloor": "Rare",
+      "primaryStat": "resistance",
+      "effect": "Improves survivability and makes the Deity read as Storm-Rooted Aesir Holds source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
+    },
+    {
+      "name": "Veyra Yggdrasil Thunder-Root Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Rare",
+      "primaryStat": "energy",
+      "effect": "Stores Oathstorm and unlocks a mastery branch for Bifrost Stormstride, Valkyrie Witness Counter, and Carve the Fallen Name. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 50,
+    "statGrowthPer10Levels": {
+      "hp": 8,
+      "attack": 1,
+      "armor": 1,
+      "resistance": 2
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      50
+    ],
+    "gearTierCap": "Epic",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "win attrition and cleanse hazard pressure",
+    "budgetTarget": 104,
+    "computedCombatPower": 207,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ],
+    "uniqueMechanic": "Veyra's Rune Oath: a solo mechanic where Oathfire grows through storm-carved oathground, reaction-window mastery, and sustain decisions that bank survival value through terrain mastery and convert it into recovery. Payoff: survive long missions without ally healing or generic lifesteal. Counterplay: anti-heal pressure and hazard denial starve recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+    "counterplayRule": "anti-heal pressure and hazard denial starve recovery"
+  },
+  "mythicSource": "Frigg — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+  "visualTraits": {
+    "face": "mature beautiful feminine queen face, calm eyes that know fate, soft jaw, composed maternal authority",
+    "bodyProportions": "elegant feminine matriarch frame, stately posture, graceful waist and draped hips, contained strength",
+    "silhouette": "woven mantle, distaff staff, crown-braids, protective hearth-cloak dome",
+    "weapon": "distaff staff weaving oath-thread and hearth-shield brooch",
+    "sexIdentity": "Female"
+  },
+  "armorCanon": {
+    "identityRule": "Armor must reveal female divine anatomy and Asgardian civilization logic; no generic armor template.",
+    "silhouette": "woven mantle, distaff staff, crown-braids, protective hearth-cloak dome"
+  },
+  "updated": "2026-08-17",
+  "weaponCanon": {
+    "signatureWeapon": "distaff staff weaving oath-thread and hearth-shield brooch",
+    "loreReason": "Chosen because Frigg embodies queen of foresight, oath household, motherhood, continuity, secret mercy under law in combat."
+  },
+  "gearCanon": {
+    "maskHelmetCrown": "Crown/helmet/mask must support mature beautiful feminine queen face, calm eyes that know fate, soft jaw, composed maternal authority and woven mantle, distaff staff, crown-braids, protective hearth-cloak dome; never hide sex identity or make the god interchangeable."
+  },
+  "sex": "Female",
+  "titanArtDna": {
+    "rosterCanon": "FOUR_GODS_PER_FACTION_PLAYABLE_ROSTER",
+    "mythologyGod": "Frigg",
+    "sex": "Female",
+    "archetype": "queen of foresight, oath household, motherhood, continuity, secret mercy under law",
+    "signatureWeapon": "distaff staff weaving oath-thread and hearth-shield brooch",
+    "faceLock": "mature beautiful feminine queen face, calm eyes that know fate, soft jaw, composed maternal authority",
+    "bodyLock": "elegant feminine matriarch frame, stately posture, graceful waist and draped hips, contained strength",
+    "silhouetteLock": "woven mantle, distaff staff, crown-braids, protective hearth-cloak dome",
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved.",
+    "mythology": "Frigg — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+    "realm": "The Storm-Rooted Aesir Holds",
+    "civilization": "Asgardian mythological extradimensional civilization",
+    "cultureRule": "God identity must come from mythology, realm, civilization, sacred materials, beauty standards, and ritual practice; never color swap alone.",
+    "beautyStandard": "Unmistakably feminine divine beauty with faction-specific elegance, allure, posture, and armor shaping.",
+    "realmAnatomy": "Realm-shaped mythological divinity, supernatural but not sci-fi alien.",
+    "identityFace": "mature beautiful feminine queen face, calm eyes that know fate, soft jaw, composed maternal authority",
+    "identityBody": "elegant feminine matriarch frame, stately posture, graceful waist and draped hips, contained strength",
+    "roleSilhouette": "woven mantle, distaff staff, crown-braids, protective hearth-cloak dome",
+    "auditStatus": "PASS"
+  },
+  "title": "Wyrd Hearth Queen",
+  "playableClassification": "Goddess",
+  "species": "Deity",
+  "characterType": "Playable Deity",
+  "rosterClass": "Deity Roster"
+}

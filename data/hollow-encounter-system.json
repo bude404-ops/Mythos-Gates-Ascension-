@@ -1,9 +1,9 @@
 {
-  "id": "TG-HOLLOW-ENCOUNTER-SYSTEM",
+  "id": "MG-HOLLOW-ENCOUNTER-SYSTEM",
   "name": "Hollow Encounter System",
   "version": "0.6.7",
   "status": "Campaign/Event Ready",
-  "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+  "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
   "usableIn": [
     "Campaign enemy waves",
     "Elite remixes",
@@ -19,52 +19,52 @@
     "Objective-corruptors should appear with cleanse or interrupt counterplay."
   ],
   "roster": [
-    "TG-CREATURE-001",
-    "TG-CREATURE-002",
-    "TG-CREATURE-004",
-    "TG-CREATURE-006",
-    "TG-CREATURE-007",
-    "TG-CREATURE-008",
-    "TG-CREATURE-009",
-    "TG-CREATURE-010",
-    "TG-CREATURE-011",
-    "TG-CREATURE-012",
-    "TG-CREATURE-013",
-    "TG-CREATURE-014",
-    "TG-CREATURE-015",
-    "TG-CREATURE-016",
-    "TG-CREATURE-017",
-    "TG-CREATURE-018"
+    "MG-CREATURE-001",
+    "MG-CREATURE-002",
+    "MG-CREATURE-004",
+    "MG-CREATURE-006",
+    "MG-CREATURE-007",
+    "MG-CREATURE-008",
+    "MG-CREATURE-009",
+    "MG-CREATURE-010",
+    "MG-CREATURE-011",
+    "MG-CREATURE-012",
+    "MG-CREATURE-013",
+    "MG-CREATURE-014",
+    "MG-CREATURE-015",
+    "MG-CREATURE-016",
+    "MG-CREATURE-017",
+    "MG-CREATURE-018"
   ],
   "pools": {
     "swarm": [
-      "TG-CREATURE-006",
-      "TG-CREATURE-012"
+      "MG-CREATURE-006",
+      "MG-CREATURE-012"
     ],
     "objectiveCorruption": [
-      "TG-CREATURE-009",
-      "TG-CREATURE-012",
-      "TG-CREATURE-016"
+      "MG-CREATURE-009",
+      "MG-CREATURE-012",
+      "MG-CREATURE-016"
     ],
     "elitePressure": [
-      "TG-CREATURE-004",
-      "TG-CREATURE-009",
-      "TG-CREATURE-011",
-      "TG-CREATURE-015",
-      "TG-CREATURE-016",
-      "TG-CREATURE-018"
+      "MG-CREATURE-004",
+      "MG-CREATURE-009",
+      "MG-CREATURE-011",
+      "MG-CREATURE-015",
+      "MG-CREATURE-016",
+      "MG-CREATURE-018"
     ],
     "realmScarSpecialists": [
-      "TG-CREATURE-008",
-      "TG-CREATURE-009",
-      "TG-CREATURE-011",
-      "TG-CREATURE-012",
-      "TG-CREATURE-013",
-      "TG-CREATURE-014",
-      "TG-CREATURE-015"
+      "MG-CREATURE-008",
+      "MG-CREATURE-009",
+      "MG-CREATURE-011",
+      "MG-CREATURE-012",
+      "MG-CREATURE-013",
+      "MG-CREATURE-014",
+      "MG-CREATURE-015"
     ],
     "eventBosses": [
-      "TG-CREATURE-018"
+      "MG-CREATURE-018"
     ]
   },
   "sampleMissionInjectors": [
@@ -74,9 +74,9 @@
         "Normal"
       ],
       "enemyIds": [
-        "TG-CREATURE-001",
-        "TG-CREATURE-006",
-        "TG-CREATURE-016"
+        "MG-CREATURE-001",
+        "MG-CREATURE-006",
+        "MG-CREATURE-016"
       ],
       "rule": "Adds a Gate Anchor and minor swarm to teach cleanse/interrupt priorities."
     },
@@ -86,9 +86,9 @@
         "Elite"
       ],
       "enemyIds": [
-        "TG-CREATURE-017",
-        "TG-CREATURE-009",
-        "TG-CREATURE-010"
+        "MG-CREATURE-017",
+        "MG-CREATURE-009",
+        "MG-CREATURE-010"
       ],
       "rule": "Punishes repeated tactics and objective turtling."
     },
@@ -99,11 +99,11 @@
         "Elite"
       ],
       "enemyIds": [
-        "TG-CREATURE-008",
-        "TG-CREATURE-012",
-        "TG-CREATURE-013",
-        "TG-CREATURE-014",
-        "TG-CREATURE-015"
+        "MG-CREATURE-008",
+        "MG-CREATURE-012",
+        "MG-CREATURE-013",
+        "MG-CREATURE-014",
+        "MG-CREATURE-015"
       ],
       "rule": "Pick one specialist matching the current Realm map."
     }

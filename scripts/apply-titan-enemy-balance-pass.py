@@ -94,7 +94,7 @@ for i,t in enumerate(titans, start=1):
     passive_name = f"{terms['passive']} — {first}'s Mastery"
     t['abilities'] = [attack_name, technique_name, signature_name, ascension_name]
     t['abilityDetails'] = [
-        dict(name=attack_name, slot='Basic', unlockLevel=1, cost='Action', cooldown=0, tags=['generator', role.lower(), terms['dmg'].lower()], effect=f"Deal {terms['dmg']} damage at range {rng}; gain 8 Momentum, or 12 if used from {terms['terrain']} or into the Titan's marked target.", scaling='100% attack; +15% vs vulnerable enemies', counterplay='Line-of-sight denial, evasion, armor, or forcing low-value targets.'),
+        dict(name=attack_name, slot='Basic', unlockLevel=1, cost='Action', cooldown=0, tags=['generator', role.lower(), terms['dmg'].lower()], effect=f"Deal {terms['dmg']} damage at range {rng}; gain 8 Momentum, or 12 if used from {terms['terrain']} or into the Deity's marked target.", scaling='100% attack; +15% vs vulnerable enemies', counterplay='Line-of-sight denial, evasion, armor, or forcing low-value targets.'),
         dict(name=technique_name, slot='Technique', unlockLevel=4, cost='20 Momentum', cooldown=2, tags=['control' if role=='Controller' else 'role-technique', role.lower()], effect=f"Apply {effect_theme}; also builds 10 {personal_resource} when it changes enemy intent or breaks an objective action.", scaling='70% attack plus role utility scaling from energy', counterplay='Interrupt before resolution, spread battle patterns, or bait the cooldown.'),
         dict(name=signature_name, slot='Signature', unlockLevel=12, cost='45 Momentum + 25 Divinity', cooldown=4, tags=['signature', role.lower(), faction.lower().replace(' ','-')], effect=f"Spend stored {personal_resource} to create a two-round battlefield rule around {terms['terrain']}; enemies receive a readable counter-window before the strongest effect lands.", scaling='140% attack; utility duration +1 at mastery tier 4', counterplay='Move out of the rule zone, drain Momentum, or trigger the exposed recovery turn.'),
         dict(name=ascension_name, slot='Ascension', unlockLevel=30, cost='100 Divinity', cooldown='once per battle', tags=['ultimate','ascendant'], effect=f"Enter Ascendant stance for 2 rounds: +15% damage, +12 mitigation, empowered {personal_resource}, and one mythic reaction override. Ends with a one-round recovery risk.", scaling='Does not stack with external ultimate buffs', counterplay='Survive the window, deny objectives during recovery, or force defensive reaction spending.')
@@ -106,12 +106,12 @@ for i,t in enumerate(titans, start=1):
     t['equipment'] = [weapon, armor_name, core]
     t['equipmentDetails'] = [
         dict(name=weapon, slot='Relic Weapon', rarityFloor=rarity, primaryStat='attack', effect=f"+{max(1, attack//3)} attack. Empowered basics against vulnerable enemies generate +4 Momentum but cannot trigger more than once per round.", balanceGuardrail='No extra action generation; damage bonus capped against bosses.'),
-        dict(name=armor_name, slot='Armor Body', rarityFloor=rarity, primaryStat='armor/resistance', effect=f"+{max(1, armor//5)} armor and +{max(1, resistance//6)} resistance. First preventable hazard hit each battle is reduced by 25% if the Titan used a reaction last round.", balanceGuardrail='Hazard reduction does not prevent scripted boss mechanics.'),
+        dict(name=armor_name, slot='Armor Body', rarityFloor=rarity, primaryStat='armor/resistance', effect=f"+{max(1, armor//5)} armor and +{max(1, resistance//6)} resistance. First preventable hazard hit each battle is reduced by 25% if the Deity used a reaction last round.", balanceGuardrail='Hazard reduction does not prevent scripted boss mechanics.'),
         dict(name=core, slot='Resonance Core', rarityFloor=rarity, primaryStat='energy', effect=f"{personal_resource} cap +20. At 80+ {personal_resource}, the next Technique gains a role-specific rider, then drains 30 {personal_resource}.", balanceGuardrail='One empowered Technique per two rounds; cannot chain with Ascension opener.')
     ]
     t['stats'] = dict(hp=hp, attack=attack, range=rng, energy=energy, speed=speed, armor=armor, resistance=resistance, critChance=crit, accuracy=accuracy, evasion=evasion, guardBreak=guardBreak, combatPower=combat_power)
     t['leveling'] = dict(baseLevel=1, maxLevel=mod['maxLevel'], statGrowthPer10Levels=dict(hp=round(hp*.18), attack=max(1, round(attack*.13)), armor=max(1, round(armor*.12)), resistance=max(1, round(resistance*.12))), masteryBreakpoints=[5,10,20,30,45,mod['maxLevel']], gearTierCap=mod['gearTierCap'], powerFormula='hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance')
-    t['balanceNotes'] = dict(intendedDifficulty='Tuned for harder solo encounters: every Titan can win alone, but mistakes against counters starve Momentum/Divinity.', primaryRole=role_profiles[role]['primary'], budgetTarget=base['roleBudget']+mod['budget'], computedCombatPower=combat_power, hardCounters=(kit.get('weaknesses') or matrix.get('weaknesses') or [])[:4])
+    t['balanceNotes'] = dict(intendedDifficulty='Tuned for harder solo encounters: every Deity can win alone, but mistakes against counters starve Momentum/Divinity.', primaryRole=role_profiles[role]['primary'], budgetTarget=base['roleBudget']+mod['budget'], computedCombatPower=combat_power, hardCounters=(kit.get('weaknesses') or matrix.get('weaknesses') or [])[:4])
     t['developmentStatus'] = 'Combat kit, named gear, leveling hooks, and balance pass complete; artwork pending.'
     balance_rows.append(dict(id=t['id'], name=name, faction=faction, role=role, rarity=rarity, combatPower=combat_power, stats=t['stats'], gear=[g['name'] for g in t['equipmentDetails']]))
 
@@ -142,9 +142,9 @@ for idx,c in enumerate(creatures, start=1):
     level_min, level_max = prof['levelBand']
     c['combatRole'] = archetype
     c['stats'] = dict(levelBand=prof['levelBand'], hp=prof['hp'] + idx*3, damage=prof['damage'] + idx%4, range=rangev, armor=prof['armor'], resistance=prof['resistance'], movement=prof['movement'], initiative=prof['initiative'], accuracy=prof['accuracy'], evasion=prof['evasion'], guardBreak=8 + int(prof['countWeight']*2), threatWeight=prof['countWeight'], xpValue=prof['xp'])
-    c['scaling'] = dict(campaign='Fixed mission bands; old wins should become easier as Titan level and gear rise.', eliteRemix=f"+12% hp, +10% damage, +1 mechanic layer, +{max(1, idx%3)} tactical AI priority.", endgame='Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.', levelFormula=f"hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget")
-    c['aiProfile'] = dict(archetype=archetype, priority=['deny Momentum','contest objective','punish exposed Titan'] if archetype in ['DISRUPTOR','CONTROLLER'] else ['survive Ascension window','force reaction spending','attack marked weakness'], counterplayWindow='Every major action has a telegraph or setup turn unless spawned as a minor swarmer.')
-    c['balanceNotes'] = f"Harder solo tuning: {tier} {archetype} pressures one active Titan through behavior first, stats second; threatWeight {prof['countWeight']} controls encounter budgets."
+    c['scaling'] = dict(campaign='Fixed mission bands; old wins should become easier as Deity level and gear rise.', eliteRemix=f"+12% hp, +10% damage, +1 mechanic layer, +{max(1, idx%3)} tactical AI priority.", endgame='Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.', levelFormula=f"hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget")
+    c['aiProfile'] = dict(archetype=archetype, priority=['deny Momentum','contest objective','punish exposed Deity'] if archetype in ['DISRUPTOR','CONTROLLER'] else ['survive Ascension window','force reaction spending','attack marked weakness'], counterplayWindow='Every major action has a telegraph or setup turn unless spawned as a minor swarmer.')
+    c['balanceNotes'] = f"Harder solo tuning: {tier} {archetype} pressures one active Deity through behavior first, stats second; threatWeight {prof['countWeight']} controls encounter budgets."
     creature_rows.append(dict(id=c['id'], name=c['name'], tier=tier, combatRole=archetype, stats=c['stats']))
 
 # write aggregate and individual files
@@ -164,7 +164,7 @@ progress['difficultyAndLevelingBalance'] = {
         {'band':'Awakening','levels':'1-10','enemyPressure':'teaches positioning and Momentum loss','gear':'Common/Rare starter relics'},
         {'band':'Trial','levels':'11-25','enemyPressure':'adds controllers, hunters, and first elite mechanics','gear':'Rare/Epic role gear'},
         {'band':'Dominion','levels':'26-45','enemyPressure':'resource denial, shield windows, and boss phase counters','gear':'Epic/Legendary faction gear'},
-        {'band':'Ascendant','levels':'46-60','enemyPressure':'multi-layer elites, enemy Titans, capped endgame scaling','gear':'Legendary/Mythic signature gear'}
+        {'band':'Ascendant','levels':'46-60','enemyPressure':'multi-layer elites, enemy Deities, capped endgame scaling','gear':'Legendary/Mythic signature gear'}
     ],
     'powerFormula': 'effectivePower = combatPower + level*12 + gearScore*0.85 + masteryTier*35',
     'gearScoreBands': {'starter':30,'rare':70,'epic':130,'legendary':210,'mythic':320},
@@ -173,10 +173,10 @@ progress['difficultyAndLevelingBalance'] = {
 write_json(os.path.join(DATA,'progression-system.json'), progress)
 
 balance_doc = {
-    'id':'TG-TITAN-ENEMY-BALANCE-PASS-001',
+    'id':'MG-TITAN-ENEMY-BALANCE-PASS-001',
     'version':'1.0.0',
     'generated': datetime.now(timezone.utc).isoformat(),
-    'directive':'Named all Titan combat kits and gear, added leveling hooks, gave every enemy stat/scaling/AI profiles, and increased difficulty without requiring inflated health pools.',
+    'directive':'Named all Deity combat kits and gear, added leveling hooks, gave every enemy stat/scaling/AI profiles, and increased difficulty without requiring inflated health pools.',
     'titanCount': len(titans),
     'enemyCount': len(creatures),
     'titanBudget': {
@@ -204,8 +204,8 @@ write_json(os.path.join(DATA,'titan-enemy-balance-pass.json'), balance_doc)
 analytics = read_json(os.path.join(DATA,'balance-analytics.json'))
 analytics['version'] = '1.0.0'
 analytics['latestBalancePassId'] = balance_doc['id']
-analytics['tracked'] = list(dict.fromkeys(analytics.get('tracked',[]) + ['Titan combat power spread','Enemy threat weight','Gear effect pick rate','Ability cooldown use','Level-band clear rate']))
-analytics['flags'] = list(dict.fromkeys(analytics.get('flags',[]) + ['Titan gear loop exploit','Enemy hp sponge risk','Elite remix overtuning','Ascension recovery bypass']))
+analytics['tracked'] = list(dict.fromkeys(analytics.get('tracked',[]) + ['Deity combat power spread','Enemy threat weight','Gear effect pick rate','Ability cooldown use','Level-band clear rate']))
+analytics['flags'] = list(dict.fromkeys(analytics.get('flags',[]) + ['Deity gear loop exploit','Enemy hp sponge risk','Elite remix overtuning','Ascension recovery bypass']))
 analytics['manualReviewThresholds'] = {
     'titanWinRateWatch': '<45% or >57% over comparable mission bands',
     'gearUsageWatch': '>40% pick rate with >3% win lift',
@@ -220,7 +220,7 @@ try:
     ch=read_json(ch_path)
 except Exception:
     ch=[]
-entry={'id':'TG-CHANGE-TITAN-ENEMY-BALANCE-001','date':datetime.now(timezone.utc).date().isoformat(),'type':'balance-content','summary':'Completed Titan names/abilities/gear pass and added enemy stat/scaling profiles for harder solo progression.','files':['data/titans.json','titans/*.json','data/creatures.json','creatures/*.json','data/titan-enemy-balance-pass.json','data/progression-system.json','data/balance-analytics.json']}
+entry={'id':'MG-CHANGE-TITAN-ENEMY-BALANCE-001','date':datetime.now(timezone.utc).date().isoformat(),'type':'balance-content','summary':'Completed Deity names/abilities/gear pass and added enemy stat/scaling profiles for harder solo progression.','files':['data/titans.json','titans/*.json','data/creatures.json','creatures/*.json','data/titan-enemy-balance-pass.json','data/progression-system.json','data/balance-analytics.json']}
 if isinstance(ch, list):
     if not any(e.get('id')==entry['id'] for e in ch if isinstance(e,dict)): ch.append(entry)
     write_json(ch_path,ch)

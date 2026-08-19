@@ -2,12 +2,12 @@
 """
 Mythos Gates — Premium Prompt Generator v2.0
 Generates v18-quality art prompts for all 63 titans using:
-- Titan data (mythology, gear, visual traits, DNA)
+- Deity data (mythology, gear, visual traits, DNA)
 - Faction visual bible (realm, materials, colors, environment)
 - Backstory (personality, function, conflict)
 - Aten-Ra v18 approved prompt structure as the template
 
-Output: Updated art/prompts/TG-PROMPT-XXX.json files with premium prompts
+Output: Updated art/prompts/MG-PROMPT-XXX.json files with premium prompts
 """
 
 import json
@@ -33,9 +33,9 @@ def load_faction_bibles():
     return bibles
 
 def load_backstory(titan_id):
-    # Convert TG-TITAN-001 -> TG-BACKSTORY-TITAN-001
+    # Convert MG-TITAN-001 -> MG-BACKSTORY-TITAN-001
     num = titan_id.split('-')[-1]
-    path = os.path.join(BASE, 'backstories', 'titans', f'TG-BACKSTORY-TITAN-{num}.json')
+    path = os.path.join(BASE, 'backstories', 'titans', f'MG-BACKSTORY-TITAN-{num}.json')
     try:
         return load_json(path)
     except:
@@ -46,13 +46,13 @@ def format_list(items, sep='; '):
 
 def get_faction_name(faction_id):
     names = {
-        'TG-FACTION-001': 'Aten Ra',
-        'TG-FACTION-002': 'Asgardian', 
-        'TG-FACTION-003': 'Olympian',
-        'TG-FACTION-004': 'Kami',
-        'TG-FACTION-005': 'Tuatha',
-        'TG-FACTION-006': 'Empyrean',
-        'TG-FACTION-007': 'Infernal Dominion'
+        'MG-FACTION-001': 'Aten Ra',
+        'MG-FACTION-002': 'Asgardian', 
+        'MG-FACTION-003': 'Olympian',
+        'MG-FACTION-004': 'Kami',
+        'MG-FACTION-005': 'Tuatha',
+        'MG-FACTION-006': 'Empyrean',
+        'MG-FACTION-007': 'Infernal Dominion'
     }
     return names.get(faction_id, 'Unknown')
 
@@ -380,7 +380,7 @@ def generate_myth_section(titan, bibles):
     return f"""MYTHOLOGICAL SOURCE — deeply integrated into anatomy, not worn as accessories:
 
 1. {myth_source}
-   - {lore} This is not a costume or decoration — it is LIVING DIVINE ANATOMY. His/her body IS the manifestation of this mythological function. Ancient humans saw this being through the Mythos Gate and copied what they saw as myth, but the Titan is the SOURCE, not the copy.
+   - {lore} This is not a costume or decoration — it is LIVING DIVINE ANATOMY. His/her body IS the manifestation of this mythological function. Ancient humans saw this being through the Mythos Gate and copied what they saw as myth, but the Deity is the SOURCE, not the copy.
 
 2. REALM ANATOMY
    - {titan.get('titanArtDna',{}).get('realmAnatomy','')} These are NOT biological features — they are DIVINE PHYSIOLOGY grown from the realm itself. The skin is not skin but living divine material. The veins are not veins but energy channels.
@@ -532,7 +532,7 @@ def main():
         
         # Update the art prompt file
         num = titan_id.split('-')[-1]
-        prompt_path = os.path.join(BASE, 'art', 'prompts', f'TG-PROMPT-{num}.json')
+        prompt_path = os.path.join(BASE, 'art', 'prompts', f'MG-PROMPT-{num}.json')
         
         if os.path.exists(prompt_path):
             with open(prompt_path) as f:

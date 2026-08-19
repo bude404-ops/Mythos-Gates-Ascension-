@@ -1,0 +1,78 @@
+{
+  "id": "MG-CREATURE-035",
+  "slug": "throne-spear-adjudicator",
+  "name": "Throne-Spear Adjudicator",
+  "category": "Empyrean Faction Run-In",
+  "realm": "The Radiant Hierarchies",
+  "sourceFactionId": "MG-FACTION-006",
+  "threatFactionId": null,
+  "threatTier": "Elite",
+  "status": "Lore Complete",
+  "director": "Lore Director",
+  "playable": false,
+  "lore": "A martial officer of the Radiant Hierarchies who treats every cross-faction incursion as a case requiring forceful ruling.",
+  "visualDescription": "Tall ivory-gold armor, throne-wheel backpiece, long radiant spear, sapphire judgment core.",
+  "abilities": [
+    "Adjudicator Thrust",
+    "Radiant Interdict",
+    "Edict Step"
+  ],
+  "mapBehavior": "Uses reach and zone denial to pin Deity movement.",
+  "artStatus": "Prompt Ready",
+  "artPromptId": "MG-PROMPT-MG-CREATURE-035",
+  "artworkId": null,
+  "backstoryId": "MG-BACKSTORY-MG-CREATURE-035",
+  "encounterTags": [
+    "faction-run-in",
+    "empyrean",
+    "melee",
+    "cross-faction-event"
+  ],
+  "campaignUse": [
+    "Cross-faction run-in",
+    "Mission event encounter",
+    "Elite remix modifier",
+    "Faction border conflict"
+  ],
+  "combatRole": "BRUTE",
+  "stats": {
+    "levelBand": [
+      25,
+      100
+    ],
+    "hp": 126,
+    "damage": 22,
+    "range": 1,
+    "armor": 7,
+    "resistance": 5,
+    "movement": 4,
+    "initiative": 48,
+    "accuracy": 78,
+    "evasion": 8,
+    "guardBreak": 10,
+    "threatWeight": 3.0,
+    "xpValue": 46
+  },
+  "scaling": {
+    "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+    "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+    "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+    "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+  },
+  "aiProfile": {
+    "archetype": "BRUTE",
+    "priority": [
+      "pressure the lone deity from its role",
+      "create AoE and positioning decisions",
+      "protect faction-lore objective when present"
+    ],
+    "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+  },
+  "balanceNotes": "Cross-faction MELEE run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+  "loreGuardrails": {
+    "homeFactionId": "MG-FACTION-006",
+    "homeFactionName": "Empyrean",
+    "sourceCultureRule": "source culture humans later copied as angelic and heavenly lore",
+    "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+  }
+}

@@ -58,7 +58,7 @@ for (const titan of titans) {
     if (prompt.sex !== titan.sex) fail(`${titan.id}: prompt sex mismatch`);
     if (!allowedStatuses.has(prompt.artIdentityAuditStatus)) fail(`${titan.id}: invalid prompt audit status`);
     for (const token of requiredPromptTokens) if (!prompt.prompt.includes(token)) fail(`${titan.id}: prompt missing token ${token}`);
-    if (!prompt.prompt.includes(titan.name)) fail(`${titan.id}: prompt missing Titan name`);
+    if (!prompt.prompt.includes(titan.name)) fail(`${titan.id}: prompt missing Deity name`);
     if (!prompt.prompt.includes(titan.faction)) fail(`${titan.id}: prompt missing faction`);
     if (!prompt.prompt.includes(titan.role)) fail(`${titan.id}: prompt missing role`);
     if (!prompt.prompt.includes(titan.titanArtDna.signatureWeapon)) fail(`${titan.id}: prompt missing signature weapon`);
@@ -94,7 +94,7 @@ if (femaleCount !== 14) fail(`Female deity count must be 14: ${femaleCount}`);
 if (maleCount !== 14) fail(`Male deity count must be 14: ${maleCount}`);
 for (const [weapon, count] of seenWeapons.entries()) if (count > 1) fail(`Signature weapon reused: ${weapon}`);
 if ((audit.summary?.pass || 0) + (audit.summary?.refine || 0) + (audit.summary?.redesign || 0) !== titans.length) fail('Audit summary status counts do not cover all deities');
-if (!audit.summary?.highestPriorityTitanId || !auditByTitan.has(audit.summary.highestPriorityTitanId)) fail('Highest-priority Titan recommendation missing or invalid');
+if (!audit.summary?.highestPriorityTitanId || !auditByTitan.has(audit.summary.highestPriorityTitanId)) fail('Highest-priority Deity recommendation missing or invalid');
 if (!exists('docs/lore/TITAN_ART_IDENTITY_AUDIT.md')) fail('Missing Markdown art identity audit document');
 
 const result = {

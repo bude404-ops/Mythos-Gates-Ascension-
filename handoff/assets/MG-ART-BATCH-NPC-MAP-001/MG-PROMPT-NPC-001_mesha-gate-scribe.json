@@ -1,0 +1,60 @@
+{
+  "schema": "TG_CREATOR_HANDOFF_PACKET_V1",
+  "packet_type": "APPROVED_PROMPT_ONLY_ART",
+  "prompt_id": "MG-PROMPT-NPC-001",
+  "asset_id": null,
+  "asset_type": "NPC",
+  "canonical_entity_id": "MG-NPC-001",
+  "canonical_name": "Mesha Gate-Scribe",
+  "source_batch": "MG-ART-BATCH-NPC-MAP-001",
+  "source_reason": "Mesha and the first Gate battlefield are approved together because onboarding needs a readable guide figure and matching environment anchor before final art import.",
+  "priority": "HIGH",
+  "status": "READY_FOR_EXTERNAL_CREATION",
+  "output_contract": {
+    "upload_target": "art/imported/MG-NPC-001/",
+    "approved_target": "art/approved/MG-NPC-001/",
+    "preserve_original_source": true,
+    "do_not_mark_imported_without_real_file": true,
+    "registry_note": "Prompt-only art handoff. Promote to GitHub asset registry only when a real source file is received."
+  },
+  "canon_locks": {
+    "no_new_lore": true,
+    "no_new_faction_identity": true,
+    "no_playable_hero_drift": true,
+    "no_sci_fi_drift": true
+  },
+  "prompt_reference": {
+    "prompt_id": "MG-PROMPT-NPC-001",
+    "status": "ready",
+    "prompt": "Mythos Gates non-playable campaign character concept art: Mesha Gate-Scribe. Tall ceremonial scribe silhouette in gold-lacquered linen armor, obsidian stylus, sun-disc visor, amber-glowing tablet. Faction/culture: Aten Ra. Visual identity: Gold, bronze, sacred geometry, solar light, obsidian enamel, amber Radiance, pyramid-pylon armor forms.. Role: Lore witness and Codex keeper. Dark tactical mythological fantasy, mobile game character card, painterly detail, full body, strong silhouette, no sci-fi. Faction Visual Bible: follow Aten Ra material hierarchy, armor shape language, symbols, texture rules, and avoid list from MG-FVB-001; faction canon must be visible in silhouette, materials, and posture. Canon premise: this place/character comes from the Solar Dominion of Khepra, the source culture humans later copied as Egyptian solar myth. Show Aten hand-rays, Ma’at geometry, Nile/Red Land duality, electrum, linen-light, faience, lapis, obsidian, scarab/lotus/papyrus/falcon/cobra/lion symbols only where mythically appropriate. Canon premise: this is the source culture humans later copied as Egyptian solar myth; Earth legend is the echo and the Solar Dominion of Khepra is the original.",
+    "negative_prompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, robot armor, cube bodies, literal pyramid body, building windows, neon sci-fi, tourist pharaoh costume, generic Egyptian cosplay, readable glyph text, robot armor, sarcophagus robot"
+  },
+  "blueprint_reference": null,
+  "quality_gates": [
+    "Mobile-readable silhouette at card and battlefield preview scale.",
+    "Every faction asset must visibly follow data/faction-visual-bible.json for silhouette, armor construction, material hierarchy, symbols, textures, and faction-specific avoid rules.",
+    "Deities must read as living extradimensional mythic beings, not robots, mechs, androids, or humans in powered armor.",
+    "Deities must keep readable living anatomy and character silhouette; reject blocky buildings, tower bodies, fortress torsos, stacked geometric shapes, or architecture piles masquerading as Deities.",
+    "No sci-fi firearms, futuristic craft, modern corporate UI, generic superhero styling, watermarks, or readable generated text.",
+    "Faction identity must remain unmistakable: material language, realm symbols, culture, and role silhouette must agree with canon.",
+    "Generated image may not be marked imported until a real asset file exists in the artwork pipeline.",
+    "Mesha remains non-playable campaign support; art may not imply a playable Hero class.",
+    "The First Reopening Gate must read as physical broken Gatefield terrain, not a neon board-game tile set."
+  ],
+  "rejection_triggers": [
+    "Human-sized Deity silhouette.",
+    "Faction drift: asset lacks the faction visual bible material/symbol/silhouette language or uses an avoid-listed trope.",
+    "Robot, mecha, android, cyborg, transformer, or powered-suit read.",
+    "Blocky building, tower, fortress, cube-stack, abstract geometry pile, or literal architecture-body read.",
+    "Readable text/watermark/logo in the image.",
+    "Photorealistic celebrity/human face drift.",
+    "Sci-fi armor, firearms, vehicle parts, visible pistons, hydraulic joints, or spaceship aesthetic.",
+    "Loss of mobile readability in 360px vertical crop.",
+    "Visual contradiction of prompt negativePrompt constraints."
+  ],
+  "required_return_files": [
+    "Generated source image or layered source file.",
+    "Preview image suitable for 360px mobile crop review.",
+    "Notes listing tool, model/version, seed/settings if applicable, and unresolved blockers."
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "MG-CREATURE-017",
+  "slug": "hollow-memory-thief",
+  "name": "Hollow Memory Thief",
+  "category": "Hollow Creature",
+  "realm": "Hollow",
+  "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+  "threatTier": "Major",
+  "status": "Gameplay Ready",
+  "director": "Systems Director",
+  "playable": false,
+  "lore": "A thin assassin that steals the memory of a Deity’s last tactic, forcing the Deity to adapt instead of repeat.",
+  "visualDescription": "Slender black blade-limbed figure, empty face veil, stolen glyphs orbiting its fingers, quiet white eye-cracks.",
+  "abilities": [
+    "Steal Pattern",
+    "Cooldown Forgetting",
+    "Backstab Silence"
+  ],
+  "mapBehavior": "Targets repeated player actions and disrupts cooldown rhythm.",
+  "encounterTags": [
+    "assassin",
+    "cooldown",
+    "adaptive",
+    "ascension"
+  ],
+  "campaignUse": [
+    "Campaign enemy wave",
+    "Elite remix modifier",
+    "Hollow Breach event",
+    "Ascension threat pool"
+  ],
+  "artStatus": "Prompt Ready",
+  "artPromptId": "MG-PROMPT-CREATURE-017",
+  "artworkId": null,
+  "backstoryId": "MG-BACKSTORY-CREATURE-017",
+  "combatRole": "BRUTE",
+  "stats": {
+    "levelBand": [
+      15,
+      55
+    ],
+    "hp": 176,
+    "damage": 16,
+    "range": 1,
+    "armor": 11,
+    "resistance": 5,
+    "movement": 3,
+    "initiative": 48,
+    "accuracy": 78,
+    "evasion": 6,
+    "guardBreak": 12,
+    "threatWeight": 2.0,
+    "xpValue": 28
+  },
+  "scaling": {
+    "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+    "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +2 tactical AI priority.",
+    "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+    "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+  },
+  "aiProfile": {
+    "archetype": "BRUTE",
+    "priority": [
+      "survive Ascension window",
+      "force reaction spending",
+      "attack marked weakness"
+    ],
+    "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+  },
+  "balanceNotes": "Harder solo tuning: Major BRUTE pressures one active deity through behavior first, stats second; threatWeight 2.0 controls encounter budgets."
+}

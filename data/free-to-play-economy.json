@@ -1,5 +1,5 @@
 {
-  "id": "TG-F2P-ECONOMY",
+  "id": "MG-F2P-ECONOMY",
   "version": "1.0.0",
   "generated": "2026-08-16",
   "status": "IMPLEMENTED",
@@ -45,7 +45,7 @@
     "GOLD": {
       "id": "GOLD",
       "legacyIds": [
-        "TG-RES-GOLD"
+        "MG-RES-GOLD"
       ],
       "displayName": "Gold",
       "type": "GAMEPLAY",
@@ -61,7 +61,7 @@
     "PREMIUM_CURRENCY": {
       "id": "PREMIUM_CURRENCY",
       "legacyIds": [
-        "TG-RES-SUNSTONE"
+        "MG-RES-SUNSTONE"
       ],
       "displayName": "Sunstone",
       "type": "PREMIUM",
@@ -78,7 +78,7 @@
     "SHARDS": {
       "id": "SHARDS",
       "legacyIds": [
-        "TG-RES-GATE-SHARDS"
+        "MG-RES-GATE-SHARDS"
       ],
       "displayName": "Deity Shards",
       "type": "COLLECTION",
@@ -94,7 +94,7 @@
   "retainedProgressionResources": {
     "ASCENSION_EMBER": {
       "legacyIds": [
-        "TG-RES-ASCENSION-EMBER"
+        "MG-RES-ASCENSION-EMBER"
       ],
       "earnable": true,
       "paid": "bundle acceleration only",
@@ -102,7 +102,7 @@
     },
     "TITAN_RELICS": {
       "legacyIds": [
-        "TG-RES-TITAN-RELICS"
+        "MG-RES-TITAN-RELICS"
       ],
       "earnable": true,
       "paid": "bundle acceleration only",
@@ -110,7 +110,7 @@
     },
     "RAID_TOKENS": {
       "legacyIds": [
-        "TG-RES-RAID-TOKENS"
+        "MG-RES-RAID-TOKENS"
       ],
       "earnable": true,
       "paid": false,
@@ -118,7 +118,7 @@
     },
     "SIGNATURE_ALLOY": {
       "legacyIds": [
-        "TG-RES-SIGNATURE-ALLOY"
+        "MG-RES-SIGNATURE-ALLOY"
       ],
       "earnable": true,
       "paid": "limited acceleration only",
@@ -126,7 +126,7 @@
     },
     "MASTERY_SEALS": {
       "legacyIds": [
-        "TG-RES-MASTERY-SEALS"
+        "MG-RES-MASTERY-SEALS"
       ],
       "earnable": true,
       "paid": false,
@@ -134,7 +134,7 @@
     },
     "TRIAL_FAVOR": {
       "legacyIds": [
-        "TG-RES-TRIAL-FAVOR"
+        "MG-RES-TRIAL-FAVOR"
       ],
       "earnable": true,
       "paid": false,
@@ -285,7 +285,7 @@
   },
   "battlePass": {
     "configurable": true,
-    "seasonId": "TG-SEASON-001",
+    "seasonId": "MG-SEASON-001",
     "totalLevels": 50,
     "xpRequiredPerLevel": 1000,
     "premiumPrice": {
@@ -482,7 +482,7 @@
         "PRICE": 950,
         "CURRENCY": "PREMIUM_CURRENCY",
         "REWARD": {
-          "premiumPass": "TG-SEASON-001"
+          "premiumPass": "MG-SEASON-001"
         },
         "ACTIVE": true,
         "PURCHASE_LIMIT": "1/season",
@@ -495,7 +495,7 @@
         "PRICE": 750,
         "CURRENCY": "PREMIUM_CURRENCY",
         "REWARD": {
-          "cosmeticId": "TG-COS-ATENRA-SOLAR-JUDGMENT"
+          "cosmeticId": "MG-COS-ATENRA-SOLAR-JUDGMENT"
         },
         "ACTIVE": true,
         "PURCHASE_LIMIT": "1/account",

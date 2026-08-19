@@ -1,0 +1,62 @@
+{
+  "id": "MG-F07-DLG-C04-M15",
+  "missionId": "MG-F07-C04-M15",
+  "factionId": "MG-FACTION-007",
+  "campaignType": "Normal",
+  "status": "Production Ready",
+  "tone": "restrained mythic tactical",
+  "briefing": "Mythos Gates briefing: Bind the Debt Furnace Treasury: Boss Threshold. Enter Debt Furnace Treasury on Black-Iron Debt Descent through The Black-Iron Gate while the Gate remains Distortion Gate bound by contract clauses. Reference deity voice is Asmodeus, but the player still chooses one deity from the faction roster. Objective: With one selected deity, survive the boss approach in the Debt Furnace Treasury, secure the last seal, and enter the chamber with the route law understood.",
+  "lines": {
+    "missionIntro": [
+      {
+        "speaker": "Asmodeus Divine Voice",
+        "text": "Every step is a clause, and every clause has teeth. The Debt Furnace Treasury will know whether one deity is enough."
+      }
+    ],
+    "enemyIntroduction": [
+      {
+        "speaker": "Lore Director",
+        "text": "Enemies are not filler here; they are the pre boss pressure of Black-Iron Debt Descent made hostile."
+      }
+    ],
+    "midBattle": [
+      {
+        "speaker": "Gameplay Director",
+        "text": "Read the room law first: Exploit or avoid the route rule: ash markets that offer cursed shortcuts"
+      }
+    ],
+    "victory": [
+      {
+        "speaker": "Asmodeus Divine Voice",
+        "text": "The debt is not erased. It is owned."
+      }
+    ],
+    "defeat": [
+      {
+        "speaker": "Asmodeus Divine Voice",
+        "text": "Withdraw. The Black-Iron Gate has learned too much from this attempt."
+      }
+    ],
+    "codex": [
+      {
+        "speaker": "Lore Director",
+        "text": "The Infernal Dominion is the source Realm; mortal myth is only the later echo. This beat documents Debt Furnace Treasury as part of Black-Iron Debt Descent."
+      }
+    ]
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "visualDirection": "Frame Debt Furnace Treasury as a pre boss node in Black-Iron Debt Descent; black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture.",
+  "updated": "2026-08-16",
+  "mythosGatesDialogueRecreation": {
+    "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-007",
+    "routeName": "Black-Iron Debt Descent",
+    "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable deity language.",
+    "soloRule": "Dialogue supports one active god or goddess in the field."
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
+  "routeId": "MG-DUNGEON-ROUTE-007",
+  "routeName": "Black-Iron Debt Descent",
+  "routeRoomName": "Debt Furnace Treasury",
+  "entryGate": "The Black-Iron Gate"
+}

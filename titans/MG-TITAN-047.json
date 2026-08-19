@@ -1,0 +1,189 @@
+{
+  "id": "MG-DEITY-047",
+  "slug": "caelion-dawnborn-axis",
+  "name": "Caelion Dawnborn Axis",
+  "factionId": "MG-FACTION-006",
+  "faction": "Empyrean",
+  "rarity": "Epic",
+  "role": "Battery",
+  "abilities": [
+    "Caelion Dawnborn Axis \u2014 Seraph Edict Lash Kindle",
+    "Choir Seal Technique \u2014 Reservoir",
+    "Caelion Dawnborn Axis: Ophanim Throne Judgment Overchannel",
+    "Divine Ascension \u2014 Seraphic Choir Unbound"
+  ],
+  "stats": {
+    "hp": 42,
+    "attack": 11,
+    "range": 3,
+    "energy": 5,
+    "speed": 3,
+    "armor": 9,
+    "resistance": 14,
+    "critChance": 8,
+    "accuracy": 84,
+    "evasion": 7,
+    "guardBreak": 6,
+    "combatPower": 230
+  },
+  "equipment": [
+    "Caelion Dawnborn Axis Generator Seraph Bell-Edict Blade",
+    "Caelion Dawnborn Axis Opal-Glass Cherubim Aegis",
+    "Caelion Dawnborn Axis Ophanim Many-Eye Choir Core"
+  ],
+  "passives": [
+    "Hierarchy of Living Edict: Caelion Dawnborn Axis gains Choir Resonance when its battery choices express Radiant Hierarchies source-culture law through edict-sung holy geometry; Earth myth is only the later echo."
+  ],
+  "lore": "Caelion Dawnborn Axis is a colossal Empyrean battery from The Radiant Hierarchies. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Empyrean battery office: renewal engine, resource hearth, stored sacred force; Heavenly city/ladder: ascent, gates, vaults, radiant order.",
+  "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+  "visualDescription": "Full-body living myth-source deity, not a costume: Caelion Dawnborn Axis shows white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.. Role silhouette must read as Battery. Materials include white gold, opal glass, bell bronze, pearl bone, blue-white holy fire, ivory scroll vellum, silver feather. The design must feel older than human mythology and avoid robot angel, spaceship armor, generic church costume, literal cathedral body, block tower silhouette, neon sci-fi aura.",
+  "artStatus": "Prompt Ready",
+  "artPromptId": "MG-PROMPT-047",
+  "artworkId": null,
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "MG-BACKSTORY-TITAN-047",
+  "abilityDetails": [
+    {
+      "name": "Caelion Dawnborn Axis \u2014 Seraph Edict Lash Kindle",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "battery",
+        "empyrean",
+        "source-culture"
+      ],
+      "effect": "Deal Empyrean source-culture damage at range 3; generate Momentum and a small Choir Resonance gain when used from edict-sung holy geometry or against the marked target. The hit reads visually as white-gold radiance, many-eye auras, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
+    },
+    {
+      "name": "Choir Seal Technique \u2014 Reservoir",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "battery",
+        "empyrean",
+        "source-culture"
+      ],
+      "effect": "Spend Momentum to stores faction resource, refunds Momentum on smart setup, and converts terrain mastery into burst economy. Builds Choir Resonance only when the player uses edict-sung holy geometry intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
+    },
+    {
+      "name": "Caelion Dawnborn Axis: Ophanim Throne Judgment Overchannel",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "battery",
+        "empyrean",
+        "source-culture"
+      ],
+      "effect": "Spend stored Choir Resonance to impose a two-round rule from Radiant Hierarchies: stores faction resource, refunds Momentum on smart setup, and converts terrain mastery into burst economy. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension \u2014 Seraphic Choir Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant",
+        "empyrean",
+        "source-culture"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Choir Resonance, transform nearby terrain into edict-sung holy geometry, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Caelion Dawnborn Axis Generator Seraph Bell-Edict Blade",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Epic",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through edict-sung holy geometry. Visual: white-gold radiance, many-eye auras, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
+    },
+    {
+      "name": "Caelion Dawnborn Axis Opal-Glass Cherubim Aegis",
+      "slot": "Armor Body",
+      "rarityFloor": "Epic",
+      "primaryStat": "resistance",
+      "effect": "Improves survivability and makes the Deity read as Radiant Hierarchies source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
+    },
+    {
+      "name": "Caelion Dawnborn Axis Ophanim Many-Eye Choir Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Epic",
+      "primaryStat": "energy",
+      "effect": "Stores Choir Resonance and unlocks a mastery branch for Archangel Herald Ascent, Ophanim Wheel Intercept, and Seal the Discord. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 55,
+    "statGrowthPer10Levels": {
+      "hp": 8,
+      "attack": 1,
+      "armor": 1,
+      "resistance": 2
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      55
+    ],
+    "gearTierCap": "Legendary",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "generate Momentum and Divinity under pressure",
+    "budgetTarget": 109,
+    "computedCombatPower": 230,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  },
+  "mythicSource": "Empyrean battery office: renewal engine, resource hearth, stored sacred force; Heavenly city/ladder: ascent, gates, vaults, radiant order",
+  "visualTraits": [
+    "renewal engine",
+    "resource hearth",
+    "stored sacred force",
+    "source culture humans later copied as angelic and heavenly lore",
+    "silver feather"
+  ],
+  "armorCanon": "Armor must use white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.; construction proves source culture humans later copied as angelic and heavenly lore; no robot angel, spaceship armor, generic church costume, literal cathedral body.",
+  "updated": "2026-08-16",
+  "weaponCanon": "Caelion Dawnborn Axis Generator Seraph Bell-Edict Blade",
+  "gearCanon": {
+    "weapon": "Caelion Dawnborn Axis Generator Seraph Bell-Edict Blade",
+    "armor": "Caelion Dawnborn Axis Opal-Glass Cherubim Aegis",
+    "core": "Caelion Dawnborn Axis Ophanim Many-Eye Choir Core",
+    "movementRelic": "Archangel Herald Ascent",
+    "reactionRelic": "Ophanim Wheel Intercept",
+    "executionRelic": "Seal the Discord",
+    "visualRule": "white-gold radiance, many-eye auras, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire"
+  }
+}

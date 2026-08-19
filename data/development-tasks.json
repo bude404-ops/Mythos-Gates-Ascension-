@@ -1,6 +1,6 @@
 [
   {
-    "id": "TG-TASK-FACTION-MISSION-DIALOGUE-FINISH-001",
+    "id": "MG-TASK-FACTION-MISSION-DIALOGUE-FINISH-001",
     "status": "COMPLETED",
     "priority": "High",
     "description": "Audit and finish the remaining faction mission/dialogue coverage so every faction campaign has complete one-active-deity mission objectives, chapter linkage, production-ready dialogue, and validation coverage.",
@@ -10,7 +10,7 @@
       "data/mission-dialogue.json",
       "data/campaign-chapter-registry.json"
     ],
-    "relatedEntity": "TG-CAMPAIGN-FACTION-MISSION-DIALOGUE-COVERAGE",
+    "relatedEntity": "MG-CAMPAIGN-FACTION-MISSION-DIALOGUE-COVERAGE",
     "relatedFiles": [
       "data/mission-registry.json",
       "data/mission-dialogue.json",
@@ -19,8 +19,8 @@
     ]
   },
   {
-    "id": "TG-DEV-001",
-    "description": "Approve first batch of deity artwork for prompt-ready Titans.",
+    "id": "MG-DEV-001",
+    "description": "Approve first batch of deity artwork for prompt-ready Deities.",
     "director": "Art Director",
     "priority": "High",
     "status": "COMPLETED",
@@ -34,10 +34,10 @@
       "data/art-prompts.json"
     ],
     "completed": "2026-08-13",
-    "completionNotes": "First Aten Ra deity prompt batch approved for generation through TG-ART-APPROVAL-MANIFEST-001; no final image import claimed."
+    "completionNotes": "First Aten Ra deity prompt batch approved for generation through MG-ART-APPROVAL-MANIFEST-001; no final image import claimed."
   },
   {
-    "id": "TG-DEV-002",
+    "id": "MG-DEV-002",
     "description": "Expanded first playable mission objectives beyond the Gate sealing encounter.",
     "director": "Gameplay Director",
     "priority": "High",
@@ -45,13 +45,13 @@
     "dependencies": [
       "game/index.html"
     ],
-    "relatedEntity": "TG-GAME-001",
+    "relatedEntity": "MG-GAME-001",
     "relatedFiles": [
       "game/index.html"
     ]
   },
   {
-    "id": "TG-DEV-003",
+    "id": "MG-DEV-003",
     "description": "Add non-playable campaign character records without violating no-playable-Hero canon.",
     "director": "Lore Director",
     "priority": "Medium",
@@ -67,7 +67,7 @@
     "completionNotes": "Non-playable campaign character registry created from approved NPC canon with explicit no-playable-Hero locks and validation coverage."
   },
   {
-    "id": "TG-DEV-004",
+    "id": "MG-DEV-004",
     "description": "Import first approved deity artwork into the repository artwork pipeline.",
     "director": "Art Director",
     "priority": "High",
@@ -82,7 +82,7 @@
     ]
   },
   {
-    "id": "TG-DEV-005",
+    "id": "MG-DEV-005",
     "description": "Prepared GitHub Pages deployment workflow template with continuity audit, static build, index freshness, visual smoke, secret scan, artifact upload, and Pages deploy gates; activation is blocked until a GitHub credential with workflow scope can write .github/workflows/pages.yml.",
     "director": "Development Director",
     "priority": "High",
@@ -90,7 +90,7 @@
     "dependencies": [
       "GitHub PAT or App credential with workflow scope"
     ],
-    "relatedEntity": "TG-DEPLOY-001",
+    "relatedEntity": "MG-DEPLOY-001",
     "relatedFiles": [
       "dev/github-pages-workflow-template.yml",
       "package.json",
@@ -103,7 +103,7 @@
     "completionNotes": "GitHub Pages workflow activated on main with continuity audit, build, index freshness, visual smoke, secret scan, artifact upload, and Pages deployment gates."
   },
   {
-    "id": "TG-DEV-006",
+    "id": "MG-DEV-006",
     "description": "Created production campaign/chapter selection bridge with seven-faction campaign selection, five-chapter browsing, Normal/Elite mission lists, and mission launch handoff.",
     "director": "Development Director",
     "priority": "High",
@@ -112,7 +112,7 @@
       "data/campaigns.json",
       "data/chapters.json"
     ],
-    "relatedEntity": "TG-CAMPAIGN-001",
+    "relatedEntity": "MG-CAMPAIGN-001",
     "relatedFiles": [
       "game/index.html",
       "data/campaign-playflow-contract.json",
@@ -120,26 +120,26 @@
     ]
   },
   {
-    "id": "TG-DEV-007",
+    "id": "MG-DEV-007",
     "description": "Approve art for Mesha Gate-Scribe and The First Reopening Gate.",
     "director": "Art Director",
     "priority": "High",
     "status": "COMPLETED",
     "dependencies": [
-      "TG-PROMPT-NPC-001",
-      "TG-PROMPT-MAP-001"
+      "MG-PROMPT-NPC-001",
+      "MG-PROMPT-MAP-001"
     ],
-    "relatedEntity": "TG-NPC-001",
+    "relatedEntity": "MG-NPC-001",
     "relatedFiles": [
-      "art/prompts/TG-PROMPT-MAP-001.json",
-      "art/prompts/TG-PROMPT-NPC-001.json",
+      "art/prompts/MG-PROMPT-MAP-001.json",
+      "art/prompts/MG-PROMPT-NPC-001.json",
       "data/art-approval-manifest.json"
     ],
     "completed": "2026-08-13",
-    "completionNotes": "Mesha Gate-Scribe and The First Reopening Gate prompts approved for generation through TG-ART-APPROVAL-MANIFEST-001; no final image import claimed."
+    "completionNotes": "Mesha Gate-Scribe and The First Reopening Gate prompts approved for generation through MG-ART-APPROVAL-MANIFEST-001; no final image import claimed."
   },
   {
-    "id": "TG-DEV-008",
+    "id": "MG-DEV-008",
     "description": "Implemented Hollow Wretch and Gateborn Colossus behavior records in the playable battle loop with role-driven intents, telegraphed counterplay, reaction windows, objective denial, UI labels, and runtime telemetry.",
     "director": "Gameplay Director",
     "priority": "Medium",
@@ -149,7 +149,7 @@
       "game/index.html",
       "game/browser-battle-engine.mjs"
     ],
-    "relatedEntity": "TG-CREATURE-001",
+    "relatedEntity": "MG-CREATURE-001",
     "relatedFiles": [
       "data/creatures.json",
       "data/creature-behavior-runtime-contract.json",
@@ -159,7 +159,7 @@
     ]
   },
   {
-    "id": "TG-DEV-009",
+    "id": "MG-DEV-009",
     "description": "Approve initial Visual QA baselines after Creator reviews preview screens.",
     "director": "Development Director",
     "priority": "High",
@@ -168,18 +168,18 @@
       "data/visual-screens.json",
       "game/preview.html"
     ],
-    "relatedEntity": "TG-SCREEN-HOME",
+    "relatedEntity": "MG-SCREEN-HOME",
     "relatedFiles": [
       "game/preview.html",
       "data/visual-baselines.json",
       "data/visual-screens.json",
-      "visual/reviews/TG-VISUAL-QA-BASELINE-APPROVAL-001.json"
+      "visual/reviews/MG-VISUAL-QA-BASELINE-APPROVAL-001.json"
     ],
     "completed": "2026-08-13",
     "completionNotes": "Initial Visual QA baselines approved with reproducible review artifact and smoke validation coverage."
   },
   {
-    "id": "TG-DEV-010",
+    "id": "MG-DEV-010",
     "description": "Build the Mythos Gates 3D Blueprint Asset System with canonical packages, permanent IDs, schemas, templates, global scale/material standards, validator, and build integration.",
     "director": "3D Asset Director",
     "priority": "High",
@@ -192,7 +192,7 @@
       "data/maps.json",
       "data/realm-codex.json"
     ],
-    "relatedEntity": "TG-3D-BLUEPRINT-SYSTEM-001",
+    "relatedEntity": "MG-3D-BLUEPRINT-SYSTEM-001",
     "relatedFiles": [
       "3D_Blueprints/",
       "data/3d-blueprint-system.json",
@@ -202,16 +202,16 @@
     "completionNotes": "Canonical 3D Blueprint directory, metadata packages, global references, templates, registry, and validator implemented without inventing new lore."
   },
   {
-    "id": "TG-DEV-012",
+    "id": "MG-DEV-012",
     "description": "Build and validate a reversible external GitHub asset intake smoke test so future Blender, AI, artist, or direct-upload assets can prove detection without requiring Reaper as importer.",
     "director": "Development Director",
     "priority": "High",
     "status": "COMPLETED",
     "dependencies": [
-      "TG-GITHUB-ASSET-REPOSITORY-001",
+      "MG-GITHUB-ASSET-REPOSITORY-001",
       "asset_registry/github-asset-registry.json"
     ],
-    "relatedEntity": "TG-GITHUB-ASSET-REPOSITORY-001",
+    "relatedEntity": "MG-GITHUB-ASSET-REPOSITORY-001",
     "relatedFiles": [
       "scripts/test-github-asset-intake.mjs",
       "scripts/detect-github-assets.mjs",
@@ -222,17 +222,17 @@
     "completionNotes": "Reversible fixture proves externally added assets are detected, linked to stable permanent IDs, validated, and removed before commit so no fake final art enters canon."
   },
   {
-    "id": "TG-DEV-013",
+    "id": "MG-DEV-013",
     "description": "Generate one machine-readable asset manifest per permanent GitHub asset ID and reserve all canonical IDs before final source assets exist.",
     "director": "Development Director",
     "priority": "High",
     "status": "COMPLETED",
     "dependencies": [
-      "TG-GITHUB-ASSET-REPOSITORY-001",
+      "MG-GITHUB-ASSET-REPOSITORY-001",
       "asset_registry/github-asset-registry.json",
       "asset_registry/asset-dependency-graph.json"
     ],
-    "relatedEntity": "TG-GITHUB-ASSET-MANIFEST-REPORT-001",
+    "relatedEntity": "MG-GITHUB-ASSET-MANIFEST-REPORT-001",
     "relatedFiles": [
       "scripts/generate-asset-manifests.mjs",
       "manifests/assets/",
@@ -244,18 +244,18 @@
     "completionNotes": "129 per-asset manifests and reserved ID contracts generated from existing canon. Detection now ignores generated metadata so manifests do not masquerade as source assets."
   },
   {
-    "id": "TG-DEV-014",
+    "id": "MG-DEV-014",
     "description": "Generate creator handoff packets for approved art prompt batches and first 3D battlefield production batch so external creators know exact GitHub targets and canon locks.",
     "director": "Development Director",
     "priority": "High",
     "status": "COMPLETED",
     "dependencies": [
-      "TG-DEV-001",
-      "TG-DEV-007",
-      "TG-DEV-013",
+      "MG-DEV-001",
+      "MG-DEV-007",
+      "MG-DEV-013",
       "data/3d-production-queue.json"
     ],
-    "relatedEntity": "TG-CREATOR-HANDOFF-REPORT-001",
+    "relatedEntity": "MG-CREATOR-HANDOFF-REPORT-001",
     "relatedFiles": [
       "scripts/generate-creator-handoff.mjs",
       "handoff/assets/",
@@ -266,7 +266,7 @@
     "completionNotes": "23 production handoff packets generated: 11 approved art prompt packets and 12 first-batch 3D battlefield packets. Prompt-only NPC art stays outside the 3D asset registry until a real source file exists."
   },
   {
-    "id": "TG-DEV-011",
+    "id": "MG-DEV-011",
     "description": "Connected screenshot-capable visual smoke automation into the deployment workflow template so UI regressions block publication once workflow activation is permitted.",
     "director": "Development Director",
     "priority": "Medium",
@@ -275,14 +275,14 @@
       "game/preview.html",
       "visual/README.md"
     ],
-    "relatedEntity": "TG-SCREEN-HOME",
+    "relatedEntity": "MG-SCREEN-HOME",
     "relatedFiles": [
       "scripts/validate-content.mjs",
       "visual/README.md"
     ]
   },
   {
-    "id": "TG-TASK-SOLO-001",
+    "id": "MG-TASK-SOLO-001",
     "title": "Implement solo battle state schema",
     "owner": "Development Director",
     "status": "COMPLETED",
@@ -290,11 +290,11 @@
     "description": "Implemented canonical solo battle state schema plus deterministic engine scaffold for one-active-deity combat.",
     "director": "Development Director",
     "dependencies": [
-      "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001"
+      "MG-SOLO-COMBAT-DESIGN-DOCUMENT-001"
     ],
     "category": "Solo Deity Combat",
     "deliverable": "Implement solo battle state schema",
-    "relatedEntity": "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
+    "relatedEntity": "MG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
     "relatedFiles": [
       "data/solo-battle-state-schema.json",
       "game/solo-battle-engine.mjs",
@@ -302,7 +302,7 @@
     ]
   },
   {
-    "id": "TG-TASK-SOLO-002",
+    "id": "MG-TASK-SOLO-002",
     "title": "Build Momentum, Divinity, stance, reaction, and execution reducers",
     "owner": "Gameplay Director",
     "status": "COMPLETED",
@@ -310,18 +310,18 @@
     "description": "Momentum, Divinity, stance, reaction, execution, enemy intent, terrain tick, and objective reducers are implemented and covered by deterministic tests.",
     "director": "Gameplay Director",
     "dependencies": [
-      "TG-TASK-SOLO-001"
+      "MG-TASK-SOLO-001"
     ],
     "category": "Solo Deity Combat",
     "deliverable": "Build Momentum, Divinity, stance, reaction, and execution reducers",
-    "relatedEntity": "TG-TASK-SOLO-001",
+    "relatedEntity": "MG-TASK-SOLO-001",
     "relatedFiles": [
       "game/solo-battle-engine.mjs",
       "scripts/test-solo-battle-reducers.mjs"
     ]
   },
   {
-    "id": "TG-TASK-SOLO-003",
+    "id": "MG-TASK-SOLO-003",
     "title": "Create one-faction solo vertical slice with five mission types and one boss",
     "owner": "Gameplay Director",
     "status": "COMPLETED",
@@ -329,11 +329,11 @@
     "description": "Created production Aten Ra solo vertical slice package with five mission types, one five-phase boss encounter, objectives, telemetry contract, quality gates, and validator coverage.",
     "director": "Gameplay Director",
     "dependencies": [
-      "TG-TASK-SOLO-002"
+      "MG-TASK-SOLO-002"
     ],
     "category": "Solo Deity Combat",
     "deliverable": "Create one-faction solo vertical slice with five mission types and one boss",
-    "relatedEntity": "TG-TASK-SOLO-002",
+    "relatedEntity": "MG-TASK-SOLO-002",
     "relatedFiles": [
       "data/solo-combat-design-document.json",
       "data/solo-deity-migration-report.json",
@@ -343,7 +343,7 @@
     ]
   },
   {
-    "id": "TG-TASK-SOLO-004",
+    "id": "MG-TASK-SOLO-004",
     "title": "Convert async arena to Asynchronous deity Challenge snapshot model",
     "owner": "Development Director",
     "status": "COMPLETED",
@@ -351,11 +351,11 @@
     "description": "Converted async arena into the Asynchronous deity Challenge snapshot model with one defensive deity snapshot per sample opponent, immutable checksums, deterministic AI profiles, solo loadouts, and no live PvP/player-rank fabrication.",
     "director": "Development Director",
     "dependencies": [
-      "TG-TASK-SOLO-001"
+      "MG-TASK-SOLO-001"
     ],
     "category": "Solo Deity Combat",
     "deliverable": "Convert async arena to Asynchronous deity Challenge snapshot model",
-    "relatedEntity": "TG-TASK-SOLO-001",
+    "relatedEntity": "MG-TASK-SOLO-001",
     "relatedFiles": [
       "data/async-arena-system.json",
       "data/endgame-dashboard.json",
@@ -363,16 +363,16 @@
     ]
   },
   {
-    "id": "TG-DEV-023",
+    "id": "MG-DEV-023",
     "description": "Implemented enemy archetype registry, tactical scaling budgets, and AI profile coverage for solo-Deity missions.",
     "director": "Gameplay Director",
     "priority": "High",
     "status": "COMPLETED",
     "dependencies": [
-      "TG-ENEMY-SCALING-DESIGN-DOCUMENT-001",
+      "MG-ENEMY-SCALING-DESIGN-DOCUMENT-001",
       "game/index.html"
     ],
-    "relatedEntity": "TG-ENEMY-SCALING-DESIGN-DOCUMENT-001",
+    "relatedEntity": "MG-ENEMY-SCALING-DESIGN-DOCUMENT-001",
     "relatedFiles": [
       "data/enemy-archetype-registry.json",
       "data/creatures.json",
@@ -382,7 +382,7 @@
       "scripts/validate-content.mjs"
     ],
     "completedAt": "2026-08-13",
-    "completedIn": "TG-DEV-023-enemy-archetype-registry",
+    "completedIn": "MG-DEV-023-enemy-archetype-registry",
     "completionSummary": "Sealed all creature combat roles into a production enemy archetype registry with AI decision loops, target priorities, telegraphs, counterplay windows, and explicit tactical scaling budgets.",
     "acceptanceEvidence": [
       "All 18 creatures carry combatRole and aiProfile coverage.",
@@ -392,16 +392,16 @@
     ]
   },
   {
-    "id": "TG-DEV-024",
+    "id": "MG-DEV-024",
     "description": "Replaced raid system prototype with deterministic one-active-deity multi-stage raid framework, canonical stage profiles, tier caps, approach rules, score formula, economy caps, Command Hub stage intel, and validation coverage.",
     "director": "Development Director",
     "priority": "High",
     "status": "COMPLETED",
     "dependencies": [
-      "TG-RAID-DESIGN-DOCUMENT-001",
+      "MG-RAID-DESIGN-DOCUMENT-001",
       "data/raid-system.json"
     ],
-    "relatedEntity": "TG-RAID-DESIGN-DOCUMENT-001",
+    "relatedEntity": "MG-RAID-DESIGN-DOCUMENT-001",
     "relatedFiles": [
       "data/raid-design-document.json",
       "data/raid-system.json",
@@ -413,7 +413,7 @@
     "completedAt": "2026-08-13"
   },
   {
-    "id": "TG-DEV-025",
+    "id": "MG-DEV-025",
     "description": "Tune rewards, gear materials, mastery credit, and non-pay-to-win raid economy for solo-Deity endgame.",
     "director": "Progression Director",
     "priority": "Medium",
@@ -422,7 +422,7 @@
       "data/reward-system.json",
       "data/progression-system.json"
     ],
-    "relatedEntity": "TG-RAID-DESIGN-DOCUMENT-001",
+    "relatedEntity": "MG-RAID-DESIGN-DOCUMENT-001",
     "relatedFiles": [
       "data/raid-system.json",
       "game/command-hub-runtime.mjs",
@@ -430,19 +430,19 @@
       "scripts/test-command-hub.mjs"
     ],
     "completedIn": "3d49359+raid-economy-tuning",
-    "completionSummary": "Implemented tuned non-pay-to-win solo-Titan raid economy: first-clear bonuses, replay decay, weekly tier caps, signature alloy bands, active-divine mastery credit, and validation/smoke coverage."
+    "completionSummary": "Implemented tuned non-pay-to-win solo-Deity raid economy: first-clear bonuses, replay decay, weekly tier caps, signature alloy bands, active-divine mastery credit, and validation/smoke coverage."
   },
   {
-    "id": "TG-DEV-026",
+    "id": "MG-DEV-026",
     "description": "Implement starter deity choice, Awakening mission beats, and first solo onboarding sequence from canonical Aten Ra data.",
     "director": "Development Director",
     "priority": "High",
     "status": "COMPLETED",
     "dependencies": [
-      "TG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001",
-      "TG-CANON-FACTION-MATRIX-001"
+      "MG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001",
+      "MG-CANON-FACTION-MATRIX-001"
     ],
-    "relatedEntity": "TG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001",
+    "relatedEntity": "MG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001",
     "relatedFiles": [
       "data/player-onboarding-roster-journey.json",
       "data/canon-faction-matrix.json",
@@ -457,7 +457,7 @@
     ]
   },
   {
-    "id": "TG-DEV-027",
+    "id": "MG-DEV-027",
     "description": "Implemented Divine Trial and Faction Trial data model with temporary loadouts, sample gear, Divine Ascension showcase, conversion-safe Trial Favor rewards, Command Hub trial loop, and validation/browser smoke coverage.",
     "director": "Progression Director",
     "priority": "High",
@@ -477,20 +477,20 @@
       "scripts/validate-content.mjs"
     ],
     "completedAt": "2026-08-13",
-    "completedIn": "TG-DEV-027-deity-faction-trials",
+    "completedIn": "MG-DEV-027-deity-faction-trials",
     "completionSummary": "Added production trial contract plus save-backed Command Hub trial loop: temporary loadouts expire, Deity and Faction Trial histories persist, Trial Favor rewards are capped, and ownership is recommended-but-not-required."
   },
   {
-    "id": "TG-DEV-028",
+    "id": "MG-DEV-028",
     "description": "Implemented campaign and endgame mission tactical problem categories with recommended-but-not-required deity advantages across all 280 missions, plus release validation and system coverage audit.",
     "director": "Gameplay Director",
     "priority": "High",
     "status": "COMPLETED",
     "dependencies": [
-      "TG-ROSTER-DEPTH-MAP-001",
+      "MG-ROSTER-DEPTH-MAP-001",
       "data/mission-registry.json"
     ],
-    "relatedEntity": "TG-ROSTER-DEPTH-MAP-001",
+    "relatedEntity": "MG-ROSTER-DEPTH-MAP-001",
     "relatedFiles": [
       "data/mission-tactical-profile-system.json",
       "data/roster-depth-map.json",
@@ -500,27 +500,27 @@
       "scripts/validate-content.mjs"
     ],
     "completedAt": "2026-08-13",
-    "completedIn": "TG-DEV-028-mission-tactical-profiles",
+    "completedIn": "MG-DEV-028-mission-tactical-profiles",
     "completionSummary": "Sealed mission tactical profiles as a production system: every Normal and Elite mission has problem tags, advantage roles, valid recommended Deities, and explicit no-ownership-lock rules.",
     "acceptanceEvidence": [
-      "TG-DEV-028 every campaign mission has at least three tactical problem tags.",
-      "TG-DEV-028 every campaign mission has at least two advantage roles from the live deity role list.",
-      "TG-DEV-028 every recommended deity exists in data/titans.json.",
-      "TG-DEV-028 all mission tactical profiles are favored-not-required with no ownership lock.",
-      "TG-DEV-028 mission tactical profile system is discoverable through data/index.json and release validation."
+      "MG-DEV-028 every campaign mission has at least three tactical problem tags.",
+      "MG-DEV-028 every campaign mission has at least two advantage roles from the live deity role list.",
+      "MG-DEV-028 every recommended deity exists in data/titans.json.",
+      "MG-DEV-028 all mission tactical profiles are favored-not-required with no ownership lock.",
+      "MG-DEV-028 mission tactical profile system is discoverable through data/index.json and release validation."
     ]
   },
   {
-    "id": "TG-DEV-029",
+    "id": "MG-DEV-029",
     "description": "Implemented production Battlefield Vertical Slice runtime around The First Reopening Gate with reusable terrain/objective/enemy bindings, one-active-deity tactical actions, Solar Seal interactions, pylon and Codex events, boss phase telemetry, mobile action-bar quality gates, and deterministic replay coverage.",
     "director": "Battlefield Director",
     "priority": "Critical",
     "status": "COMPLETED",
     "dependencies": [
-      "TG-BATTLEFIELD-VS-001",
-      "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001"
+      "MG-BATTLEFIELD-VS-001",
+      "MG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001"
     ],
-    "relatedEntity": "TG-BATTLEFIELD-VS-001",
+    "relatedEntity": "MG-BATTLEFIELD-VS-001",
     "relatedFiles": [
       "data/battlefield-vertical-slice.json",
       "game/battlefield-vertical-slice.html",
@@ -528,18 +528,18 @@
       "scripts/test-battlefield-runtime.mjs"
     ],
     "completedAt": "2026-08-13",
-    "completionSummary": "Added canonical reusable Battlefield runtime for TG-BATTLEFIELD-VS-001: 7x7 tactical terrain, real Aten-Ra + Hollow bindings, Solar Seal/Memory/Pylon interactions, Gate Pressure boss phase telemetry, runtime summary quality targets, deterministic smoke coverage, and release-gate integration."
+    "completionSummary": "Added canonical reusable Battlefield runtime for MG-BATTLEFIELD-VS-001: 7x7 tactical terrain, real Aten-Ra + Hollow bindings, Solar Seal/Memory/Pylon interactions, Gate Pressure boss phase telemetry, runtime summary quality targets, deterministic smoke coverage, and release-gate integration."
   },
   {
-    "id": "TG-DEV-030",
+    "id": "MG-DEV-030",
     "description": "Implemented Art Director scale reference sheets for normal enemy, elite, Deity, Deity-scale enemy, colossal boss, Gate, architecture, and battlefield objects.",
     "director": "Art Director",
     "priority": "High",
     "status": "COMPLETED",
     "dependencies": [
-      "TG-WORLD-SCALE-REFERENCE-001"
+      "MG-WORLD-SCALE-REFERENCE-001"
     ],
-    "relatedEntity": "TG-WORLD-SCALE-REFERENCE-001",
+    "relatedEntity": "MG-WORLD-SCALE-REFERENCE-001",
     "relatedFiles": [
       "data/world-scale-reference.json",
       "data/art-director-scale-sheets.json",
@@ -547,25 +547,25 @@
       "scripts/validate-content.mjs"
     ],
     "completedAt": "2026-08-13",
-    "completedIn": "TG-DEV-030-art-director-scale-sheets",
+    "completedIn": "MG-DEV-030-art-director-scale-sheets",
     "completionSummary": "Created eight production scale reference sheet contracts with shared ratios, mobile crops, prompt overlays, camera notes, and QA checks bound to the world scale reference.",
     "acceptanceEvidence": [
       "All 8 required sheet types are implemented.",
       "Every sheet includes compareAgainst references, ratioToDeity, composition, camera, prompt overlay, and QA checks.",
-      "Scale sheets preserve mobile readability and forbid shrinking Titans to solve composition.",
+      "Scale sheets preserve mobile readability and forbid shrinking Deities to solve composition.",
       "Release validation rejects missing sheet types, missing QA checks, and invalid ratios."
     ]
   },
   {
-    "id": "TG-DEV-031",
+    "id": "MG-DEV-031",
     "description": "Implemented battlefield telemetry hooks for replayability, difficulty tuning, Momentum/Divinity usage, reaction success, objective timing, and boss phase fail points.",
     "director": "Development Director",
     "priority": "High",
     "status": "COMPLETED",
     "dependencies": [
-      "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001"
+      "MG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001"
     ],
-    "relatedEntity": "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001",
+    "relatedEntity": "MG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001",
     "relatedFiles": [
       "data/battlefield-runtime-architecture.json",
       "data/battlefield-telemetry-contract.json",
@@ -574,7 +574,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-001",
+    "id": "MG-TASK-COMMAND-HUB-001",
     "description": "Command Hub: Boot system",
     "director": "Development Director",
     "priority": "HIGH",
@@ -587,7 +587,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-002",
+    "id": "MG-TASK-COMMAND-HUB-002",
     "description": "Command Hub: Loading system",
     "director": "Development Director",
     "priority": "HIGH",
@@ -602,7 +602,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-003",
+    "id": "MG-TASK-COMMAND-HUB-003",
     "description": "Command Hub: Main Menu",
     "director": "Development Director",
     "priority": "HIGH",
@@ -617,7 +617,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-004",
+    "id": "MG-TASK-COMMAND-HUB-004",
     "description": "Command Hub: Responsive UI",
     "director": "Development Director",
     "priority": "HIGH",
@@ -632,7 +632,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-005",
+    "id": "MG-TASK-COMMAND-HUB-005",
     "description": "Command Hub: Deity presentation",
     "director": "Development Director",
     "priority": "HIGH",
@@ -647,7 +647,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-006",
+    "id": "MG-TASK-COMMAND-HUB-006",
     "description": "Command Hub: Resource system",
     "director": "Development Director",
     "priority": "HIGH",
@@ -662,7 +662,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-007",
+    "id": "MG-TASK-COMMAND-HUB-007",
     "description": "Command Hub: Campaign integration",
     "director": "Development Director",
     "priority": "HIGH",
@@ -677,7 +677,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-008",
+    "id": "MG-TASK-COMMAND-HUB-008",
     "description": "Command Hub: Gate system",
     "director": "Development Director",
     "priority": "HIGH",
@@ -692,7 +692,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-009",
+    "id": "MG-TASK-COMMAND-HUB-009",
     "description": "Command Hub: Codex integration",
     "director": "Development Director",
     "priority": "HIGH",
@@ -707,7 +707,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-010",
+    "id": "MG-TASK-COMMAND-HUB-010",
     "description": "Command Hub: Command systems",
     "director": "Development Director",
     "priority": "HIGH",
@@ -722,7 +722,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-011",
+    "id": "MG-TASK-COMMAND-HUB-011",
     "description": "Command Hub: Asset registry",
     "director": "Development Director",
     "priority": "HIGH",
@@ -737,7 +737,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-012",
+    "id": "MG-TASK-COMMAND-HUB-012",
     "description": "Command Hub: Art pipeline",
     "director": "Development Director",
     "priority": "HIGH",
@@ -752,7 +752,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-013",
+    "id": "MG-TASK-COMMAND-HUB-013",
     "description": "Command Hub: Audio hooks",
     "director": "Development Director",
     "priority": "HIGH",
@@ -767,7 +767,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-014",
+    "id": "MG-TASK-COMMAND-HUB-014",
     "description": "Command Hub: Notifications",
     "director": "Development Director",
     "priority": "HIGH",
@@ -782,7 +782,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-015",
+    "id": "MG-TASK-COMMAND-HUB-015",
     "description": "Command Hub: Save/load",
     "director": "Development Director",
     "priority": "HIGH",
@@ -797,7 +797,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-016",
+    "id": "MG-TASK-COMMAND-HUB-016",
     "description": "Command Hub: Error handling",
     "director": "Development Director",
     "priority": "HIGH",
@@ -812,7 +812,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-017",
+    "id": "MG-TASK-COMMAND-HUB-017",
     "description": "Command Hub: Testing",
     "director": "Development Director",
     "priority": "HIGH",
@@ -827,7 +827,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-018",
+    "id": "MG-TASK-COMMAND-HUB-018",
     "description": "Command Hub: Performance",
     "director": "Development Director",
     "priority": "HIGH",
@@ -842,7 +842,7 @@
     ]
   },
   {
-    "id": "TG-TASK-COMMAND-HUB-019",
+    "id": "MG-TASK-COMMAND-HUB-019",
     "description": "Command Hub: Final art integration",
     "director": "Development Director",
     "priority": "HIGH",
@@ -859,17 +859,17 @@
     "completionSummary": "Final art integration manifest, runtime provenance badges, starter/Gate/background coverage, and smoke tests implemented."
   },
   {
-    "id": "TG-DEV-032",
+    "id": "MG-DEV-032",
     "description": "Create the 3D Blueprint Production Queue with prioritized lanes, first handoff batch, director acceptance criteria, and validation coverage tied to the canonical blueprint registry.",
     "director": "3D Asset Director",
     "priority": "High",
     "status": "COMPLETED",
     "dependencies": [
-      "TG-DEV-010",
+      "MG-DEV-010",
       "3D_Blueprints/Registry/blueprint-registry.json",
       "data/3d-blueprint-system.json"
     ],
-    "relatedEntity": "TG-3D-PRODUCTION-QUEUE-001",
+    "relatedEntity": "MG-3D-PRODUCTION-QUEUE-001",
     "relatedFiles": [
       "data/3d-production-queue.json",
       "scripts/validate-3d-blueprints.mjs",
@@ -880,7 +880,7 @@
     "completionNotes": "Production queue now converts the canonical 3D blueprint registry into prioritized model handoff lanes without inventing new lore."
   },
   {
-    "id": "TG-MILESTONE-NON-ART-COMPLETE-001",
+    "id": "MG-MILESTONE-NON-ART-COMPLETE-001",
     "description": "Seal Mythos Gates as complete for all non-art dependencies, leaving only externally generated final art import blocked.",
     "director": "Development Director",
     "priority": "Critical",
@@ -888,7 +888,7 @@
     "dependencies": [
       "All completed gameplay, campaign, Command Hub, battlefield, validation, GitHub sync, creator handoff, and release automation tasks"
     ],
-    "relatedEntity": "TG-PROJECT-001",
+    "relatedEntity": "MG-PROJECT-001",
     "relatedFiles": [
       "data/project.json",
       "data/github-sync-status.json",
@@ -896,6 +896,6 @@
       "mini-app/mythos-gates-ascension.html"
     ],
     "completed": "2026-08-13",
-    "completionNotes": "Non-art scope is complete. TG-DEV-004 remains blocked solely on externally generated final artwork assets."
+    "completionNotes": "Non-art scope is complete. MG-DEV-004 remains blocked solely on externally generated final artwork assets."
   }
 ]

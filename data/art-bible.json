@@ -1,5 +1,5 @@
 {
-  "id": "TG-ART-BIBLE-001",
+  "id": "MG-ART-BIBLE-001",
   "name": "Mythos Gates: Ascension Art Bible",
   "version": 4,
   "status": "IMPLEMENTED",
@@ -15,10 +15,10 @@
   ],
   "sections": {
     "gods_titans": {
-      "standard": "Divine character identity \u2014 actual gods and goddesses, NOT Titans as separate species",
+      "standard": "Divine character identity \u2014 actual gods and goddesses, NOT Deities as separate species",
       "source": "data/titans.json + data/faction-visual-bible.json",
       "rules": [
-        "Every playable character is an actual god or goddess \u2014 NOT mortal, NOT Titan creature, NOT alien",
+        "Every playable character is an actual god or goddess \u2014 NOT mortal, NOT Deity creature, NOT alien",
         "Each god needs a unique Divine Signature \u2014 no same glow/aura on everyone",
         "Mythology must remain recognizable (authentic + Mythos Gates interpretation)",
         "Signature weapons must have lore \u2014 legendary artifacts, not generic equipment",
@@ -185,8 +185,8 @@
   },
   "masterArtDirectionVersion": 3,
   "sectionsImplemented": 23,
-  "promptFiles": "art/prompts/TG-PROMPT-0*.json (28 files, all v4)",
-  "canonUpdate": "Playable characters are actual gods and goddesses, NOT Titans as separate species",
+  "promptFiles": "art/prompts/MG-PROMPT-0*.json (28 files, all v4)",
+  "canonUpdate": "Playable characters are actual gods and goddesses, NOT Deities as separate species",
   "negativeRules": "NEVER: generic fantasy warriors, knights, superheroes, RPG heroes, mortals, aliens, sci-fi, guns, spaceships, modern military, futuristic, cyberpunk, steampunk, unrelated mythology, clones, recolored templates, identical armor, flat sprites, cheap mobile, generic anime, random effects, realm/faction-inappropriate designs.",
   "worldFormula": "Gods + Mythology + Divine Powers + Melee + Magic + Legendary Artifacts + Extradimensional Mythos Gates",
   "oneGodAtATime": true,

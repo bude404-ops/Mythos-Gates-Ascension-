@@ -34,22 +34,22 @@ NEW CANON EXTENSION:
 ## 2. Systems Requiring Changes
 
 - Legacy internal names still use `titan` in IDs, routes, test names, schemas, and engine adapter keys. These are compatibility names and should be renamed only in a dedicated migration.
-- Visual baseline records still contain old historical screen names such as Titan Selection and Titan Profile.
-- Some art-production pipeline prose still uses Titan as a production shorthand; player-facing and prompt-facing language should be cleaned first.
+- Visual baseline records still contain old historical screen names such as Deity Selection and Deity Profile.
+- Some art-production pipeline prose still uses Deity as a production shorthand; player-facing and prompt-facing language should be cleaned first.
 - Some exporter/Unity docs still expose `TitanCombatData` or `mapTitanForEngine`; these should become compatibility wrappers around Deity data.
 
 ## 3. Lore Requiring Changes
 
 Changed:
 
-- Canon Lock now states playable characters are actual gods and goddesses, not Titans.
+- Canon Lock now states playable characters are actual gods and goddesses, not Deities.
 - Mythos Gates page now preserves established Gate canon and integrates dungeon-crawler routes as a NEW CANON EXTENSION.
 - Old playable roster lore page was reframed as Playable Deities while preserving the filename for compatibility.
 
 Still recommended:
 
 - Add a dedicated dungeon-route codex entry for each Realm using existing Realm landmarks and Gate states.
-- Update older historical references that call playable divine beings Titans only when they are not internal compatibility names.
+- Update older historical references that call playable divine beings Deities only when they are not internal compatibility names.
 
 ## 4. Gameplay Requiring Changes
 
@@ -104,7 +104,7 @@ Already fits:
 
 Still recommended:
 
-- Rename remaining player-facing save concepts from Titan collection/levels/loadouts to Divine Collection, Divine Level, Divine Loadouts, and deity mastery while preserving legacy storage keys until migration.
+- Rename remaining player-facing save concepts from Deity collection/levels/loadouts to Divine Collection, Divine Level, Divine Loadouts, and deity mastery while preserving legacy storage keys until migration.
 
 ## 8. Loot Changes
 
@@ -128,14 +128,14 @@ Already changed:
 Still recommended:
 
 - Add mandatory prompt fields for cultural beauty standards, sex-specific armor logic, mask identity, silhouette test, and cross-faction uniqueness notes.
-- Complete the remaining visible production-copy cleanup where Titan appears as shorthand for playable character art.
+- Complete the remaining visible production-copy cleanup where Deity appears as shorthand for playable character art.
 
 ## 10. UI / Terminology Changes
 
 Changed:
 
 - Player-facing UI uses Deities, Deity Profile, Deity Roster, Divine Collection, Divine Gear, Divine Stats, Divine Level, and Divine Ascension where applicable.
-- Titan remains preserved for Mythos Gates/title/lore.
+- Deity remains preserved for Mythos Gates/title/lore.
 
 Still recommended:
 
@@ -153,7 +153,7 @@ One previous risk was corrected: an invented simple explanation for why the Gate
 2. Add per-Realm dungeon archetypes and room graphs.
 3. Add mythological loot taxonomy and deity-specific artifact tables.
 4. Add cross-faction deity silhouette/beauty/armor/mask uniqueness audit.
-5. Migrate visible historical UI labels from Titan Selection/Profile to Deity Selection/Profile, or archive them as legacy QA records.
+5. Migrate visible historical UI labels from Deity Selection/Profile to Deity Selection/Profile, or archive them as legacy QA records.
 6. Plan a safe internal naming migration only after gameplay/content alignment is stable.
 
 ## 13. Highest-Priority Next Task
@@ -162,10 +162,10 @@ Create the production dungeon-route registry: one canon-safe dungeon template pe
 
 ## Final Classification
 
-Automated classification recorded zero hits for the explicit banned playable-character phrases. Remaining Titan references are classified as:
+Automated classification recorded zero hits for the explicit banned playable-character phrases. Remaining Deity references are classified as:
 
 - Mythos Gates/title/phenomenon
-- Ancient Titan concept lore/technical scale
+- Ancient Deity concept lore/technical scale
 - Legacy internal IDs/schema/routes/API
 - Legacy internal validator/test naming
 - Visible review queue for historical art/visual/exporter records

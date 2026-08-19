@@ -1,0 +1,42 @@
+{
+  "id": "MG-F01-ART-C04-M14",
+  "missionId": "MG-F01-C04-M14",
+  "factionId": "MG-FACTION-001",
+  "campaignType": "Normal",
+  "status": "Prompt Ready",
+  "mapEnvironmentPrompt": "Mythos Gates mission art rewrite for Burn the Lion Gate Kill Zone: Hidden Cache: Sun-Scale Verdict Descent / The Sun-Scale Gate / Stable Gate under Ma’at strain. Depict Lion Gate Kill Zone as a readable mobile tactical treasure or lore node in sacred judgment temple-road descent; one active god or goddess from Aten Ra, Sutekh, Iset, Amunet; no armies, no squads, no simultaneous party. Primary objective visual: With one selected deity, open the relic detour in the Lion Gate Kill Zone, secure the lore cache, and take the reward without awakening the wrong memory. Source-Realm visual language: Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light. Show route readability for shrine, treasure, hazard, elite, or boss intent where relevant. Avoid sci-fi portal treatment, generic fantasy castle, planetary/alien framing, reskinned copy dungeon, UI grid tiles as world objects.",
+  "backgroundPrompt": "Background plate for Burn the Lion Gate Kill Zone: Hidden Cache in Lion Gate Kill Zone, part of Sun-Scale Verdict Descent. The environment must communicate The Solar Dominion of Khepra as the source culture behind mortal myth echoes, using Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light.",
+  "enemyPlacementGuidance": "Place enemies to create lane decisions, objective tension, and flanking pressure without hiding readable silhouettes.",
+  "bossArtworkRequirements": "No boss art required; use threat pack silhouettes and objective props.",
+  "objectiveArtworkRequirements": "Objective props must use Aten Ra source-culture cosmetics: Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes as relic-cache silhouettes, seal anchors, lane markers, or altar mechanisms. Readable on mobile; no generic chest, plain sword, plain armor, or mismatched faction relic.",
+  "vfxRequirements": [
+    "sunflare tile warning",
+    "river-light pulse",
+    "Gate pressure distortion",
+    "Hollow shadow contact"
+  ],
+  "uiRequirements": [
+    "large touch mission node",
+    "primary objective badge",
+    "normal campaign badge",
+    "star goals visible before launch"
+  ],
+  "missionThumbnail": "The Black Sun Caravan thumbnail: one active deity silhouette advancing through Solar Dominion of Khepra source-culture terrain; visible cues include Aten hand-rays, Ma’at scale geometry, electrum, royal linen-light, faience turquoise, lapis, obsidian, Nile-black silt glass, Red Land jasper and optional Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes.",
+  "chapterArtwork": "Chapter banner uses Aten Ra source-culture appearance canon: Aten hand-rays, Ma’at scale geometry, electrum, royal linen-light, faience turquoise, lapis, obsidian, Nile-black silt glass, Red Land jasper; cosmetic props and reward silhouettes echo Ma’at was-sceptre blades, electrum wesekh source-plates, Khepri scarab cores, Uraeus counter-edict silhouettes; Earth myth is the echo, Realm culture is the source.",
+  "sourceCultureAppearanceRule": "Must match Solar Dominion of Khepra source-culture canon; avoid tourist pharaoh costume, literal pyramid body, sarcophagus robot, readable glyph text, generic desert temple, plain gold statues and generic cosmetics.",
+  "updated": "2026-08-16",
+  "mythosGatesArtRecreation": {
+    "status": "PASS_1_ROUTE_VISUAL_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-001",
+    "routeName": "Sun-Scale Verdict Descent",
+    "entryGate": "The Sun-Scale Gate",
+    "gateState": "Stable Gate under Ma’at strain",
+    "visualRule": "Show one-active-deity scale, source-Realm mythology, physical hazards, shrine/treasure/boss route language, and no sci-fi/simple-portal treatment."
+  },
+  "routeId": "MG-DUNGEON-ROUTE-001",
+  "routeName": "Sun-Scale Verdict Descent",
+  "routeRoomName": "Lion Gate Kill Zone",
+  "entryGate": "The Sun-Scale Gate",
+  "encounterPrompt": "Encounter composition for Burn the Lion Gate Kill Zone: Hidden Cache: one selected playable deity silhouette versus multiple Isfet-branded jackal guardians in Lion Gate Kill Zone. If this is elite or boss content, foreshadow Lion-Gate Oathbreaker Captain and The Misweighed Dawn Judge without adding allied squads.",
+  "negativePrompt": "sci-fi portal treatment, generic fantasy castle, planetary/alien framing, reskinned copy dungeon, UI grid tiles as world objects, armies, squads, party lineup, generic portal, mortal ascension scene"
+}

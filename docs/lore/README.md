@@ -20,13 +20,13 @@ Mythos Gates: Ascension is not mythology as costume.
 
 Mythos Gates: Ascension is mythology as evidence of real extradimensional power.
 
-Every Realm must feel like its own ancient civilization. Every Titan must feel born from that civilization's laws, symbols, powers, and wounds. Every gameplay role must come from lore. Every visual design must reject sci-fi, generic fantasy, and ordinary human cosplay. Every Mythos Gate must feel ancient, dangerous, sacred, and capable of breaking reality.
+Every Realm must feel like its own ancient civilization. Every Deity must feel born from that civilization's laws, symbols, powers, and wounds. Every gameplay role must come from lore. Every visual design must reject sci-fi, generic fantasy, and ordinary human cosplay. Every Mythos Gate must feel ancient, dangerous, sacred, and capable of breaking reality.
 
-- [NPCs, Creatures, Maps, and Campaigns](09-NPCS-CREATURES-MAPS-CAMPAIGNS.md) — Director-approved campaign expansion without playable non-Titan entries.
+- [NPCs, Creatures, Maps, and Campaigns](09-NPCS-CREATURES-MAPS-CAMPAIGNS.md) — Director-approved campaign expansion without playable non-Deity entries.
 
 ## Faction Realm Codex
 
-The following chapters expand every faction, Realm, Gate, and deity role without adding playable non-Titan entries or normal units:
+The following chapters expand every faction, Realm, Gate, and deity role without adding playable non-Deity entries or normal units:
 
 - [Aten Ra: The Solar Dominion of Khepra](10-ATEN-RA-REALM-CODEX.md)
 - [Asgardian: The Storm-Rooted Aesir Holds](10-ASGARDIAN-REALM-CODEX.md)

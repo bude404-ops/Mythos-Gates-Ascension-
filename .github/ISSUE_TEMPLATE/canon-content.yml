@@ -1,5 +1,5 @@
 name: Canon or content issue
-description: Report a lore, mission, dialogue, faction, Titan, or continuity problem.
+description: Report a lore, mission, dialogue, faction, Deity, or continuity problem.
 title: "Canon/content: "
 labels: [canon, content]
 body:
@@ -8,7 +8,7 @@ body:
     attributes:
       label: Domain
       options:
-        - Titan
+        - Deity
         - Faction / Realm
         - Mission
         - Dialogue
@@ -37,6 +37,6 @@ body:
     attributes:
       label: Canon locks checked
       options:
-        - label: One active Titan remains standard combat canon.
+        - label: One active Deity remains standard combat canon.
         - label: The Hollow remains non-playable.
         - label: No legacy contradiction language is reintroduced.

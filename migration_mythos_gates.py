@@ -23,19 +23,19 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 # === 28 DEITY SELECTION (4 per faction) ===
 KEEP_IDS = [
     # Aten Ra
-    "TG-TITAN-001", "TG-TITAN-002", "TG-TITAN-003", "TG-TITAN-004",
+    "MG-TITAN-001", "MG-TITAN-002", "MG-TITAN-003", "MG-TITAN-004",
     # Asgardian
-    "TG-TITAN-010", "TG-TITAN-011", "TG-TITAN-012", "TG-TITAN-013",
+    "MG-TITAN-010", "MG-TITAN-011", "MG-TITAN-012", "MG-TITAN-013",
     # Olympian
-    "TG-TITAN-019", "TG-TITAN-020", "TG-TITAN-021", "TG-TITAN-022",
+    "MG-TITAN-019", "MG-TITAN-020", "MG-TITAN-021", "MG-TITAN-022",
     # Kami
-    "TG-TITAN-028", "TG-TITAN-029", "TG-TITAN-030", "TG-TITAN-031",
+    "MG-TITAN-028", "MG-TITAN-029", "MG-TITAN-030", "MG-TITAN-031",
     # Tuatha
-    "TG-TITAN-037", "TG-TITAN-038", "TG-TITAN-039", "TG-TITAN-040",
+    "MG-TITAN-037", "MG-TITAN-038", "MG-TITAN-039", "MG-TITAN-040",
     # Empyrean
-    "TG-TITAN-046", "TG-TITAN-047", "TG-TITAN-048", "TG-TITAN-049",
+    "MG-TITAN-046", "MG-TITAN-047", "MG-TITAN-048", "MG-TITAN-049",
     # Infernal Dominion
-    "TG-TITAN-055", "TG-TITAN-056", "TG-TITAN-057", "TG-TITAN-058",
+    "MG-TITAN-055", "MG-TITAN-056", "MG-TITAN-057", "MG-TITAN-058",
 ]
 
 # Map old titan IDs to new deity IDs
@@ -66,8 +66,8 @@ REPLACEMENTS = [
     ("Solo Titan", "Solo Deity"),
     
     # ID replacements
-    ("TG-TITAN-", "MG-DEITY-"),
-    ("TG-SOLO-TITAN-", "MG-SOLO-DEITY-"),
+    ("MG-TITAN-", "MG-DEITY-"),
+    ("MG-SOLO-TITAN-", "MG-SOLO-DEITY-"),
     
     # Plural forms first
     ("active Titans", "active deities"),
@@ -188,9 +188,9 @@ def filter_titans_json(filepath, dry_run=False):
             t['deityArtDna'] = t.pop('titanArtDna')
         if 'artPromptId' in t:
             old_prompt = t['artPromptId']
-            t['artPromptId'] = old_prompt.replace('TG-PROMPT-', 'MG-PROMPT-').replace('TG-TITAN-', 'MG-DEITY-')
+            t['artPromptId'] = old_prompt.replace('MG-PROMPT-', 'MG-PROMPT-').replace('MG-TITAN-', 'MG-DEITY-')
         if 'backstoryId' in t:
-            t['backstoryId'] = t['backstoryId'].replace('TG-BACKSTORY-TITAN-', 'MG-BACKSTORY-DEITY-')
+            t['backstoryId'] = t['backstoryId'].replace('MG-BACKSTORY-TITAN-', 'MG-BACKSTORY-DEITY-')
         if 'titanArtDna' in t:
             t.pop('titanArtDna', None)
     
@@ -224,7 +224,7 @@ def rename_directories(base_dir, dry_run=False):
                 # Extract the number
                 parts = item.split('_')
                 num = parts[1]  # e.g., "001"
-                titan_id = f"TG-TITAN-{num}"
+                titan_id = f"MG-TITAN-{num}"
                 
                 old_path = os.path.join(old_titans_dir, item)
                 
@@ -377,9 +377,9 @@ def remove_dropped_titan_files(base_dir, dry_run=False):
     art_dir = os.path.join(base_dir, 'art', 'prompts')
     if os.path.exists(art_dir):
         for f in os.listdir(art_dir):
-            if f.startswith('TG-PROMPT-') and f.endswith('.json'):
-                num = f.replace('TG-PROMPT-', '').replace('.json', '')
-                titan_id = f"TG-TITAN-{num}"
+            if f.startswith('MG-PROMPT-') and f.endswith('.json'):
+                num = f.replace('MG-PROMPT-', '').replace('.json', '')
+                titan_id = f"MG-TITAN-{num}"
                 if titan_id not in KEEP_IDS:
                     fpath = os.path.join(art_dir, f)
                     if not dry_run:
@@ -390,9 +390,9 @@ def remove_dropped_titan_files(base_dir, dry_run=False):
     bs_dir = os.path.join(base_dir, 'backstories', 'titans')
     if os.path.exists(bs_dir):
         for f in os.listdir(bs_dir):
-            if f.startswith('TG-BACKSTORY-TITAN-') and f.endswith('.json'):
-                num = f.replace('TG-BACKSTORY-TITAN-', '').replace('.json', '')
-                titan_id = f"TG-TITAN-{num}"
+            if f.startswith('MG-BACKSTORY-TITAN-') and f.endswith('.json'):
+                num = f.replace('MG-BACKSTORY-TITAN-', '').replace('.json', '')
+                titan_id = f"MG-TITAN-{num}"
                 if titan_id not in KEEP_IDS:
                     fpath = os.path.join(bs_dir, f)
                     if not dry_run:
@@ -406,12 +406,12 @@ def remove_dropped_titan_files(base_dir, dry_run=False):
         if not dry_run:
             os.makedirs(bs_new_dir, exist_ok=True)
         for f in os.listdir(bs_dir):
-            if f.startswith('TG-BACKSTORY-TITAN-') and f.endswith('.json'):
-                num = f.replace('TG-BACKSTORY-TITAN-', '').replace('.json', '')
-                titan_id = f"TG-TITAN-{num}"
+            if f.startswith('MG-BACKSTORY-TITAN-') and f.endswith('.json'):
+                num = f.replace('MG-BACKSTORY-TITAN-', '').replace('.json', '')
+                titan_id = f"MG-TITAN-{num}"
                 if titan_id in KEEP_IDS:
                     old_path = os.path.join(bs_dir, f)
-                    new_name = f.replace('TG-BACKSTORY-TITAN-', 'MG-BACKSTORY-DEITY-')
+                    new_name = f.replace('MG-BACKSTORY-TITAN-', 'MG-BACKSTORY-DEITY-')
                     new_path = os.path.join(bs_new_dir, new_name)
                     if not dry_run:
                         shutil.move(old_path, new_path)
@@ -420,12 +420,12 @@ def remove_dropped_titan_files(base_dir, dry_run=False):
     art_dir = os.path.join(base_dir, 'art', 'prompts')
     if os.path.exists(art_dir):
         for f in list(os.listdir(art_dir)):
-            if f.startswith('TG-PROMPT-') and f.endswith('.json'):
-                num = f.replace('TG-PROMPT-', '').replace('.json', '')
-                titan_id = f"TG-TITAN-{num}"
+            if f.startswith('MG-PROMPT-') and f.endswith('.json'):
+                num = f.replace('MG-PROMPT-', '').replace('.json', '')
+                titan_id = f"MG-TITAN-{num}"
                 if titan_id in KEEP_IDS:
                     old_path = os.path.join(art_dir, f)
-                    new_name = f.replace('TG-PROMPT-', 'MG-PROMPT-')
+                    new_name = f.replace('MG-PROMPT-', 'MG-PROMPT-')
                     new_path = os.path.join(art_dir, new_name)
                     if not dry_run:
                         shutil.move(old_path, new_path)

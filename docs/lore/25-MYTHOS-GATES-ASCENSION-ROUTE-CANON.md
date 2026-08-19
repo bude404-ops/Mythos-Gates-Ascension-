@@ -4,7 +4,23 @@ Status: Canon synchronized 2026-08-17.
 
 This codex file binds the full core lore layer to the completed Ascension route campaign structure. The campaign is now a one-selected-deity dungeon crawler: the player chooses one god or goddess, enters a Mythos Gate route, fights many enemies, resolves hazards and elite locks, collects lore/treasure detours, and reaches a boss chamber.
 
-The older data schema may still use stable `Titan` identifiers internally. Fiction-facing canon now says **playable deities**: gods and goddesses from the seven source Realms.
+The older data schema may still use stable `Deity` identifiers internally. Fiction-facing canon now says **playable deities**: gods and goddesses from the seven source Realms.
+
+
+## Universal Trial — The Gate's Judgment
+
+Before any faction campaign begins, the player must complete The Gate's Judgment — a universal trial dungeon that tests whether a mortal is worthy of serving as a vessel for divine power.
+
+**Flow:**
+1. Player selects one of 28 deities
+2. Enters the Gate's Judgment arena (MAP-000)
+3. Survives three concentric rings:
+   - Outer Ring: tutorial combat vs Hollow Wretches
+   - Middle Ring: faction-specific ability puzzle
+   - Inner Ring: reduced-strength Hollow Wretch boss
+4. Upon completion, faction campaign unlocks
+
+The trial is the Gate's permission, not the deity's. The chosen deity watches from beyond the Gate. The arena geometry is identical for all factions — only the color tint and the ability puzzle change. One map asset, reused with shader tinting. Infinite retries.
 
 ## Route Matrix
 

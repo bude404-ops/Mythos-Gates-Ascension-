@@ -1,0 +1,188 @@
+{
+  "id": "MG-DEITY-003",
+  "slug": "nefra-obsidian-dawn",
+  "name": "Nefra",
+  "factionId": "MG-FACTION-001",
+  "faction": "Aten Ra",
+  "rarity": "Epic",
+  "role": "Controller",
+  "abilities": [
+    "Nefra \u2014 Ma\u2019at-Weighted Strike Vector",
+    "Pylon Edict Technique \u2014 Field Rewrite",
+    "Nefra: Sun-Scale Decree Dominion Grid",
+    "Divine Ascension \u2014 Aten-Ra Source Radiance"
+  ],
+  "stats": {
+    "hp": 38,
+    "attack": 10,
+    "range": 4,
+    "energy": 5,
+    "speed": 3,
+    "armor": 8,
+    "resistance": 16,
+    "critChance": 7,
+    "accuracy": 86,
+    "evasion": 8,
+    "guardBreak": 9,
+    "combatPower": 226
+  },
+  "equipment": [
+    "Nefra Compass Ma\u2019at Was-Sceptre Blade",
+    "Nefra Electrum Wesekh Source-Plate",
+    "Nefra Khepri Solar Scarab Core"
+  ],
+  "passives": [
+    "Ma\u2019at Source Law: Nefra gains Solar Charge when its controller choices express Solar Dominion of Khepra source-culture law through Aten-lit judgment ground; Earth myth is only the later echo."
+  ],
+  "lore": "Nefra governs the border where the sun leaves the underworld and becomes visible again. Human funerary art copied fragments of her horizon masks and dawn reliefs. She controls terrain by deciding what may cross from shadow into light.",
+  "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
+  "visualDescription": "Tall controller Deity of black sunrise: obsidian-blue enamel mask, thin amber dawn visor, horizon-ring collar, ivory limestone relief plates, black-gold scale armor, and angular light lanes emerging from underworld-shadow limbs. Must feel like living threshold law, not a mummy, statue, or necropolis building.",
+  "artStatus": "Prompt Ready",
+  "artPromptId": "MG-PROMPT-003",
+  "artworkId": null,
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "MG-BACKSTORY-TITAN-003",
+  "abilityDetails": [
+    {
+      "name": "Nefra \u2014 Ma\u2019at-Weighted Strike Vector",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "controller",
+        "aten-ra",
+        "source-culture"
+      ],
+      "effect": "Deal Aten Ra source-culture damage at range 4; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
+    },
+    {
+      "name": "Pylon Edict Technique \u2014 Field Rewrite",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "controller",
+        "aten-ra",
+        "source-culture"
+      ],
+      "effect": "Spend Momentum to moves enemies, rewrites terrain pressure, and delays high-threat actions through source-culture law. Builds Solar Charge only when the player uses Aten-lit judgment ground intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
+    },
+    {
+      "name": "Nefra: Sun-Scale Decree Dominion Grid",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "controller",
+        "aten-ra",
+        "source-culture"
+      ],
+      "effect": "Spend stored Solar Charge to impose a two-round rule from Solar Dominion of Khepra: moves enemies, rewrites terrain pressure, and delays high-threat actions through source-culture law. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension \u2014 Aten-Ra Source Radiance",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant",
+        "aten-ra",
+        "source-culture"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Solar Charge, transform nearby terrain into Aten-lit judgment ground, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Nefra Compass Ma\u2019at Was-Sceptre Blade",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Epic",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through Aten-lit judgment ground. Visual: Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
+    },
+    {
+      "name": "Nefra Electrum Wesekh Source-Plate",
+      "slot": "Armor Body",
+      "rarityFloor": "Epic",
+      "primaryStat": "resistance",
+      "effect": "Improves survivability and makes the Deity read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
+    },
+    {
+      "name": "Nefra Khepri Solar Scarab Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Epic",
+      "primaryStat": "energy",
+      "effect": "Stores Solar Charge and unlocks a mastery branch for Aten Hand-Ray Gate Step, Uraeus Counter-Edict, and Weigh the Name. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 55,
+    "statGrowthPer10Levels": {
+      "hp": 7,
+      "attack": 1,
+      "armor": 1,
+      "resistance": 2
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      55
+    ],
+    "gearTierCap": "Legendary",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "reshape terrain and deny enemy plans",
+    "budgetTarget": 109,
+    "computedCombatPower": 226,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ]
+  },
+  "mythicSource": "Necropolis dawn + Duat horizon + obsidian judgement",
+  "visualTraits": [
+    "underworld dawn control",
+    "horizon threshold judge",
+    "obsidian-shadow command",
+    "truth revealed at sunrise"
+  ],
+  "armorCanon": "obsidian necropolis mask, horizon-ring collar, black-gold scale skirt, dawn slit visor, limestone funerary relief plates",
+  "updated": "2026-08-16",
+  "weaponCanon": "Nefra Compass Ma\u2019at Was-Sceptre Blade",
+  "gearCanon": {
+    "weapon": "Nefra Compass Ma\u2019at Was-Sceptre Blade",
+    "armor": "Nefra Electrum Wesekh Source-Plate",
+    "core": "Nefra Khepri Solar Scarab Core",
+    "movementRelic": "Aten Hand-Ray Gate Step",
+    "reactionRelic": "Uraeus Counter-Edict",
+    "executionRelic": "Weigh the Name",
+    "visualRule": "Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
+  }
+}

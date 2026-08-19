@@ -1,5 +1,5 @@
 {
-  "id": "TG-PLATFORM-CORE-V1",
+  "id": "MG-PLATFORM-CORE-V1",
   "schema": "TG_PLATFORM_CORE_CONTRACT_V1",
   "status": "IMPLEMENTED",
   "version": "1.9.0-platform-core-v1",
@@ -8,14 +8,14 @@
     "identity": "One player profile owns one canonical save state in the mock platform service.",
     "persistence": "Every platform mutation returns a complete serializable state snapshot that can be stored and reloaded without loss.",
     "economy": "Currency mutations must be represented as ledger entries; balances are derived from the ledger plus initial grants.",
-    "roster": "Titan ownership and active deity selection live in platform state, not browser-only UI state.",
+    "roster": "Deity ownership and active deity selection live in platform state, not browser-only UI state.",
     "progression": "Mission completion, account XP, level, and unlocks must survive reload.",
     "serverPath": "This mock service is local and deterministic. A future backend must preserve the same contract before replacing it."
   },
   "defaultPlayer": {
-    "playerId": "TG-PLAYER-LOCAL-001",
+    "playerId": "MG-PLAYER-LOCAL-001",
     "displayName": "First Gatebreaker",
-    "starterDeityId": "TG-TITAN-006",
+    "starterDeityId": "MG-TITAN-006",
     "startingCurrencies": {
       "sunshards": 120,
       "gateKeys": 1,

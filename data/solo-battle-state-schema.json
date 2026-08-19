@@ -1,13 +1,13 @@
 {
-  "id": "TG-SOLO-BATTLE-STATE-SCHEMA-001",
+  "id": "MG-SOLO-BATTLE-STATE-SCHEMA-001",
   "version": "1.1.0",
   "generated": "2026-08-12T16:25:37Z",
   "status": "IMPLEMENTED",
   "purpose": "Canonical runtime state contract for one-active-deity battles: resources, stance, reactions, objectives, enemy intents, execution windows, terrain ticks, rewards, and telemetry.",
   "canonSources": [
-    "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
-    "TG-BATTLEFIELD-VS-001",
-    "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001"
+    "MG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
+    "MG-BATTLEFIELD-VS-001",
+    "MG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001"
   ],
   "stateShape": {
     "battleId": "stable unique encounter id",
@@ -100,13 +100,13 @@
     "Reducers must be deterministic under the same seed and action script."
   ],
   "verticalSliceDefault": {
-    "battleId": "TG-BATTLE-FIRST-GATE-001",
-    "missionId": "TG-BATTLEFIELD-VS-001",
-    "starterDeityId": "TG-TITAN-001",
+    "battleId": "MG-BATTLE-FIRST-GATE-001",
+    "missionId": "MG-BATTLEFIELD-VS-001",
+    "starterDeityId": "MG-TITAN-001",
     "starterEnemies": [
-      "TG-CREATURE-001",
-      "TG-CREATURE-001",
-      "TG-CREATURE-002"
+      "MG-CREATURE-001",
+      "MG-CREATURE-001",
+      "MG-CREATURE-002"
     ],
     "objectives": [
       "stabilize_solar_seals",

@@ -1,5 +1,5 @@
 {
-  "id": "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001",
+  "id": "MG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001",
   "version": "1.1.0",
   "created": "2026-08-11T21:06:00Z",
   "pipeline": [
@@ -59,7 +59,7 @@
     "Playtest",
     "Validation"
   ],
-  "telemetryContract": "TG-BATTLEFIELD-TELEMETRY-CONTRACT-001",
+  "telemetryContract": "MG-BATTLEFIELD-TELEMETRY-CONTRACT-001",
   "telemetryHooks": [
     {
       "hook": "recordTelemetryHook",
@@ -75,7 +75,7 @@
     }
   ],
   "status": "IMPLEMENTED",
-  "taskId": "TG-DEV-029",
+  "taskId": "MG-DEV-029",
   "implementedRuntimeExports": [
     "createBattlefieldRuntimeState",
     "buildBattlefieldTerrain",
@@ -84,5 +84,5 @@
     "endBattlefieldRound",
     "summarizeBattlefieldRuntime"
   ],
-  "productionSlice": "TG-BATTLEFIELD-VS-001"
+  "productionSlice": "MG-BATTLEFIELD-VS-001"
 }

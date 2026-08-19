@@ -1,6 +1,6 @@
 [
   {
-    "id": "TG-CAMPAIGN-001",
+    "id": "MG-CAMPAIGN-001",
     "slug": "the-first-reopening",
     "name": "The First Reopening",
     "phase": "Act I",
@@ -9,28 +9,28 @@
     "summary": "The first reopened Mythos Gate opens under impossible pressure. The Creator learns how Deities, Mythos Gates, Hollow leakage, and Director governance function. Full mission-arc recreation pass now rewrites all seven Mythos Gates routes with route-native chapter arcs, mission titles, objectives, dialogue hooks, and mission art prompts.",
     "loreDirectorNotes": "Introduces canon without adding playable non-Deity entries or ordinary units. Mesha and the Hollow Mouth are non-playable narrative anchors.",
     "gameplayDirectorNotes": "Designed as the onboarding campaign: single active deity selection, map objectives, enemy turns, and Gate sealing. Current pass targets dungeon-route pacing, one-deity readability, shrine/treasure/boss nodes, and faction-specific hazard language.",
-    "artDirectorNotes": "Needs approved artwork for the First Reopening Gate, Mesha, Hollow Wretch, and TG-TITAN-001.",
+    "artDirectorNotes": "Needs approved artwork for the First Reopening Gate, Mesha, Hollow Wretch, and MG-TITAN-001.",
     "developmentDirectorNotes": "Campaign can be expanded from current game/index.html without replacing the playable loop.",
     "chapters": [
-      "TG-CHAPTER-001",
-      "TG-CHAPTER-002",
-      "TG-CHAPTER-003"
+      "MG-CHAPTER-001",
+      "MG-CHAPTER-002",
+      "MG-CHAPTER-003"
     ],
     "maps": [
-      "TG-MAP-001",
-      "TG-MAP-002"
+      "MG-MAP-001",
+      "MG-MAP-002"
     ],
     "npcs": [
-      "TG-NPC-001",
-      "TG-NPC-008"
+      "MG-NPC-001",
+      "MG-NPC-008"
     ],
     "creatures": [
-      "TG-CREATURE-001",
-      "TG-CREATURE-002"
+      "MG-CREATURE-001",
+      "MG-CREATURE-002"
     ],
     "recommendedNextTask": "Tune individual boss mechanics and playable route UI now that every route has rewritten mission arcs.",
     "threatSystems": [
-      "TG-HOLLOW-ENCOUNTER-SYSTEM"
+      "MG-HOLLOW-ENCOUNTER-SYSTEM"
     ],
     "mobileUe5Architecture": {
       "baselinePlatforms": [
@@ -57,20 +57,20 @@
     "crossFactionRunIns": {
       "enabled": true,
       "poolIds": [
-        "TG-CROSS-RUN-IN-001",
-        "TG-CROSS-RUN-IN-002",
-        "TG-CROSS-RUN-IN-003",
-        "TG-CROSS-RUN-IN-004",
-        "TG-CROSS-RUN-IN-005",
-        "TG-CROSS-RUN-IN-006",
-        "TG-CROSS-RUN-IN-007"
+        "MG-CROSS-RUN-IN-001",
+        "MG-CROSS-RUN-IN-002",
+        "MG-CROSS-RUN-IN-003",
+        "MG-CROSS-RUN-IN-004",
+        "MG-CROSS-RUN-IN-005",
+        "MG-CROSS-RUN-IN-006",
+        "MG-CROSS-RUN-IN-007"
       ]
     },
     "mythosGatesCampaignRecreation": {
       "status": "PASS_1_ROUTE_AND_DEITY_ALIGNED",
       "brand": "Mythos Gates",
       "currentArc": "Ascension",
-      "factionId": "TG-FACTION-001",
+      "factionId": "MG-FACTION-001",
       "faction": "Aten Ra",
       "realm": "The Solar Dominion of Khepra",
       "routeId": "MG-DUNGEON-ROUTE-001",
@@ -91,12 +91,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-001",
         "routeName": "Sun-Scale Verdict Descent",
-        "factionId": "TG-FACTION-001",
+        "factionId": "MG-FACTION-001",
         "faction": "Aten Ra",
         "entryGate": "The Sun-Scale Gate",
         "gateState": "Stable Gate under Ma’at strain",
-        "normalCampaignId": "TG-F01-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F01-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F01-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F01-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Sun-Scale Verdict Descent — Threshold",
           "Chapter 2: Sun-Scale Verdict Descent — Outer Descent",
@@ -109,12 +109,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-002",
         "routeName": "Thunder-Oath Root Gauntlet",
-        "factionId": "TG-FACTION-002",
+        "factionId": "MG-FACTION-002",
         "faction": "Asgardian",
         "entryGate": "The Thunder-Oath Gate",
         "gateState": "Ruin Gate with active oath memory",
-        "normalCampaignId": "TG-F02-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F02-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F02-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F02-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Thunder-Oath Root Gauntlet — Threshold",
           "Chapter 2: Thunder-Oath Root Gauntlet — Outer Descent",
@@ -127,12 +127,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-003",
         "routeName": "Laurel-Sky Hubris Trial",
-        "factionId": "TG-FACTION-003",
+        "factionId": "MG-FACTION-003",
         "faction": "Olympian",
         "entryGate": "The Laurel-Sky Gate",
         "gateState": "Stable Gate with oracle vapor leakage",
-        "normalCampaignId": "TG-F03-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F03-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F03-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F03-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Laurel-Sky Hubris Trial — Threshold",
           "Chapter 2: Laurel-Sky Hubris Trial — Outer Descent",
@@ -145,12 +145,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-004",
         "routeName": "Torii-Moon Mirror Road",
-        "factionId": "TG-FACTION-004",
+        "factionId": "MG-FACTION-004",
         "faction": "Kami",
         "entryGate": "The Torii-Moon Gate",
         "gateState": "Distortion Gate with ritual rerouting",
-        "normalCampaignId": "TG-F04-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F04-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F04-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F04-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Torii-Moon Mirror Road — Threshold",
           "Chapter 2: Torii-Moon Mirror Road — Outer Descent",
@@ -163,12 +163,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-005",
         "routeName": "Silver-Root Geas Labyrinth",
-        "factionId": "TG-FACTION-005",
+        "factionId": "MG-FACTION-005",
         "faction": "Tuatha",
         "entryGate": "The Silver-Root Gate",
         "gateState": "Sealed Gate with fae time bleed",
-        "normalCampaignId": "TG-F05-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F05-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F05-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F05-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Silver-Root Geas Labyrinth — Threshold",
           "Chapter 2: Silver-Root Geas Labyrinth — Outer Descent",
@@ -181,12 +181,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-006",
         "routeName": "Choir-Vault Discord Ascent",
-        "factionId": "TG-FACTION-006",
+        "factionId": "MG-FACTION-006",
         "faction": "Empyrean",
         "entryGate": "The Choir-Vault Gate",
         "gateState": "Wound Gate leaking memory-burning radiance",
-        "normalCampaignId": "TG-F06-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F06-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F06-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F06-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Choir-Vault Discord Ascent — Threshold",
           "Chapter 2: Choir-Vault Discord Ascent — Outer Descent",
@@ -199,12 +199,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-007",
         "routeName": "Black-Iron Debt Descent",
-        "factionId": "TG-FACTION-007",
+        "factionId": "MG-FACTION-007",
         "faction": "Infernal Dominion",
         "entryGate": "The Black-Iron Gate",
         "gateState": "Distortion Gate bound by contract clauses",
-        "normalCampaignId": "TG-F07-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F07-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F07-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F07-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Black-Iron Debt Descent — Threshold",
           "Chapter 2: Black-Iron Debt Descent — Outer Descent",
@@ -215,12 +215,12 @@
         "missionTitlePattern": "20 normal route beats plus 20 elite route beats, all tied to roomGraph nodes and one active deity combat."
       }
     ],
-    "factionId": "TG-FACTION-001",
+    "factionId": "MG-FACTION-001",
     "campaignType": "Normal",
-    "aliasId": "TG-F01-CAMPAIGN-NORMAL"
+    "aliasId": "MG-F01-CAMPAIGN-NORMAL"
   },
   {
-    "id": "TG-CAMPAIGN-002",
+    "id": "MG-CAMPAIGN-002",
     "slug": "trial-of-the-celestial-heights",
     "name": "Trial of the Celestial Heights",
     "phase": "Act II",
@@ -232,34 +232,34 @@
     "artDirectorNotes": "Needs Storm-Oath Bridge, Marble Sky Arena, Hrodda, Lyrion, and Forgotten Standard Bearer art.",
     "developmentDirectorNotes": "Requires map modifier support before becoming playable.",
     "chapters": [
-      "TG-CHAPTER-004",
-      "TG-CHAPTER-005",
-      "TG-CHAPTER-006"
+      "MG-CHAPTER-004",
+      "MG-CHAPTER-005",
+      "MG-CHAPTER-006"
     ],
     "maps": [
-      "TG-MAP-003",
-      "TG-MAP-004"
+      "MG-MAP-003",
+      "MG-MAP-004"
     ],
     "npcs": [
-      "TG-NPC-002",
-      "TG-NPC-003",
-      "TG-NPC-006"
+      "MG-NPC-002",
+      "MG-NPC-003",
+      "MG-NPC-006"
     ],
     "creatures": [
-      "TG-CREATURE-004"
+      "MG-CREATURE-004"
     ],
     "recommendedNextTask": "Tune individual boss mechanics and playable route UI now that every route has rewritten mission arcs.",
     "missionChapterRegistry": [
-      "TG-F02-CH01",
-      "TG-F02-CH02",
-      "TG-F02-CH03",
-      "TG-F02-CH04",
-      "TG-F02-CH05"
+      "MG-F02-CH01",
+      "MG-F02-CH02",
+      "MG-F02-CH03",
+      "MG-F02-CH04",
+      "MG-F02-CH05"
     ],
     "normalMissionCount": 20,
     "eliteMissionCount": 20,
     "threatSystems": [
-      "TG-HOLLOW-ENCOUNTER-SYSTEM"
+      "MG-HOLLOW-ENCOUNTER-SYSTEM"
     ],
     "mobileUe5Architecture": {
       "baselinePlatforms": [
@@ -286,20 +286,20 @@
     "crossFactionRunIns": {
       "enabled": true,
       "poolIds": [
-        "TG-CROSS-RUN-IN-001",
-        "TG-CROSS-RUN-IN-002",
-        "TG-CROSS-RUN-IN-003",
-        "TG-CROSS-RUN-IN-004",
-        "TG-CROSS-RUN-IN-005",
-        "TG-CROSS-RUN-IN-006",
-        "TG-CROSS-RUN-IN-007"
+        "MG-CROSS-RUN-IN-001",
+        "MG-CROSS-RUN-IN-002",
+        "MG-CROSS-RUN-IN-003",
+        "MG-CROSS-RUN-IN-004",
+        "MG-CROSS-RUN-IN-005",
+        "MG-CROSS-RUN-IN-006",
+        "MG-CROSS-RUN-IN-007"
       ]
     },
     "mythosGatesCampaignRecreation": {
       "status": "PASS_1_ROUTE_AND_DEITY_ALIGNED",
       "brand": "Mythos Gates",
       "currentArc": "Ascension",
-      "factionId": "TG-FACTION-002",
+      "factionId": "MG-FACTION-002",
       "faction": "Asgardian",
       "realm": "The Storm-Rooted Aesir Holds",
       "routeId": "MG-DUNGEON-ROUTE-002",
@@ -320,12 +320,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-001",
         "routeName": "Sun-Scale Verdict Descent",
-        "factionId": "TG-FACTION-001",
+        "factionId": "MG-FACTION-001",
         "faction": "Aten Ra",
         "entryGate": "The Sun-Scale Gate",
         "gateState": "Stable Gate under Ma’at strain",
-        "normalCampaignId": "TG-F01-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F01-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F01-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F01-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Sun-Scale Verdict Descent — Threshold",
           "Chapter 2: Sun-Scale Verdict Descent — Outer Descent",
@@ -338,12 +338,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-002",
         "routeName": "Thunder-Oath Root Gauntlet",
-        "factionId": "TG-FACTION-002",
+        "factionId": "MG-FACTION-002",
         "faction": "Asgardian",
         "entryGate": "The Thunder-Oath Gate",
         "gateState": "Ruin Gate with active oath memory",
-        "normalCampaignId": "TG-F02-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F02-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F02-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F02-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Thunder-Oath Root Gauntlet — Threshold",
           "Chapter 2: Thunder-Oath Root Gauntlet — Outer Descent",
@@ -356,12 +356,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-003",
         "routeName": "Laurel-Sky Hubris Trial",
-        "factionId": "TG-FACTION-003",
+        "factionId": "MG-FACTION-003",
         "faction": "Olympian",
         "entryGate": "The Laurel-Sky Gate",
         "gateState": "Stable Gate with oracle vapor leakage",
-        "normalCampaignId": "TG-F03-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F03-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F03-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F03-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Laurel-Sky Hubris Trial — Threshold",
           "Chapter 2: Laurel-Sky Hubris Trial — Outer Descent",
@@ -374,12 +374,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-004",
         "routeName": "Torii-Moon Mirror Road",
-        "factionId": "TG-FACTION-004",
+        "factionId": "MG-FACTION-004",
         "faction": "Kami",
         "entryGate": "The Torii-Moon Gate",
         "gateState": "Distortion Gate with ritual rerouting",
-        "normalCampaignId": "TG-F04-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F04-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F04-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F04-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Torii-Moon Mirror Road — Threshold",
           "Chapter 2: Torii-Moon Mirror Road — Outer Descent",
@@ -392,12 +392,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-005",
         "routeName": "Silver-Root Geas Labyrinth",
-        "factionId": "TG-FACTION-005",
+        "factionId": "MG-FACTION-005",
         "faction": "Tuatha",
         "entryGate": "The Silver-Root Gate",
         "gateState": "Sealed Gate with fae time bleed",
-        "normalCampaignId": "TG-F05-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F05-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F05-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F05-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Silver-Root Geas Labyrinth — Threshold",
           "Chapter 2: Silver-Root Geas Labyrinth — Outer Descent",
@@ -410,12 +410,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-006",
         "routeName": "Choir-Vault Discord Ascent",
-        "factionId": "TG-FACTION-006",
+        "factionId": "MG-FACTION-006",
         "faction": "Empyrean",
         "entryGate": "The Choir-Vault Gate",
         "gateState": "Wound Gate leaking memory-burning radiance",
-        "normalCampaignId": "TG-F06-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F06-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F06-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F06-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Choir-Vault Discord Ascent — Threshold",
           "Chapter 2: Choir-Vault Discord Ascent — Outer Descent",
@@ -428,12 +428,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-007",
         "routeName": "Black-Iron Debt Descent",
-        "factionId": "TG-FACTION-007",
+        "factionId": "MG-FACTION-007",
         "faction": "Infernal Dominion",
         "entryGate": "The Black-Iron Gate",
         "gateState": "Distortion Gate bound by contract clauses",
-        "normalCampaignId": "TG-F07-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F07-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F07-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F07-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Black-Iron Debt Descent — Threshold",
           "Chapter 2: Black-Iron Debt Descent — Outer Descent",
@@ -444,12 +444,12 @@
         "missionTitlePattern": "20 normal route beats plus 20 elite route beats, all tied to roomGraph nodes and one active deity combat."
       }
     ],
-    "factionId": "TG-FACTION-002",
+    "factionId": "MG-FACTION-002",
     "campaignType": "Normal",
-    "aliasId": "TG-F02-CAMPAIGN-NORMAL"
+    "aliasId": "MG-F02-CAMPAIGN-NORMAL"
   },
   {
-    "id": "TG-CAMPAIGN-003",
+    "id": "MG-CAMPAIGN-003",
     "slug": "roots-below-the-gate",
     "name": "Roots Below the Gate",
     "phase": "Act III",
@@ -461,28 +461,28 @@
     "artDirectorNotes": "Needs Maeve Root-Memory and Moon-Grove Rootlabyrinth art.",
     "developmentDirectorNotes": "Requires dynamic tile-state support.",
     "chapters": [
-      "TG-CHAPTER-007",
-      "TG-CHAPTER-008"
+      "MG-CHAPTER-007",
+      "MG-CHAPTER-008"
     ],
     "maps": [
-      "TG-MAP-005"
+      "MG-MAP-005"
     ],
     "npcs": [
-      "TG-NPC-005"
+      "MG-NPC-005"
     ],
     "creatures": [
-      "TG-CREATURE-003"
+      "MG-CREATURE-003"
     ],
     "recommendedNextTask": "Tune individual boss mechanics and playable route UI now that every route has rewritten mission arcs.",
     "threatSystems": [
-      "TG-HOLLOW-ENCOUNTER-SYSTEM"
+      "MG-HOLLOW-ENCOUNTER-SYSTEM"
     ],
     "missionChapterRegistry": [
-      "TG-F05-CH01",
-      "TG-F05-CH02",
-      "TG-F05-CH03",
-      "TG-F05-CH04",
-      "TG-F05-CH05"
+      "MG-F05-CH01",
+      "MG-F05-CH02",
+      "MG-F05-CH03",
+      "MG-F05-CH04",
+      "MG-F05-CH05"
     ],
     "normalMissionCount": 20,
     "eliteMissionCount": 20,
@@ -511,20 +511,20 @@
     "crossFactionRunIns": {
       "enabled": true,
       "poolIds": [
-        "TG-CROSS-RUN-IN-001",
-        "TG-CROSS-RUN-IN-002",
-        "TG-CROSS-RUN-IN-003",
-        "TG-CROSS-RUN-IN-004",
-        "TG-CROSS-RUN-IN-005",
-        "TG-CROSS-RUN-IN-006",
-        "TG-CROSS-RUN-IN-007"
+        "MG-CROSS-RUN-IN-001",
+        "MG-CROSS-RUN-IN-002",
+        "MG-CROSS-RUN-IN-003",
+        "MG-CROSS-RUN-IN-004",
+        "MG-CROSS-RUN-IN-005",
+        "MG-CROSS-RUN-IN-006",
+        "MG-CROSS-RUN-IN-007"
       ]
     },
     "mythosGatesCampaignRecreation": {
       "status": "PASS_1_ROUTE_AND_DEITY_ALIGNED",
       "brand": "Mythos Gates",
       "currentArc": "Ascension",
-      "factionId": "TG-FACTION-005",
+      "factionId": "MG-FACTION-005",
       "faction": "Tuatha",
       "realm": "Avalora",
       "routeId": "MG-DUNGEON-ROUTE-005",
@@ -545,12 +545,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-001",
         "routeName": "Sun-Scale Verdict Descent",
-        "factionId": "TG-FACTION-001",
+        "factionId": "MG-FACTION-001",
         "faction": "Aten Ra",
         "entryGate": "The Sun-Scale Gate",
         "gateState": "Stable Gate under Ma’at strain",
-        "normalCampaignId": "TG-F01-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F01-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F01-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F01-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Sun-Scale Verdict Descent — Threshold",
           "Chapter 2: Sun-Scale Verdict Descent — Outer Descent",
@@ -563,12 +563,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-002",
         "routeName": "Thunder-Oath Root Gauntlet",
-        "factionId": "TG-FACTION-002",
+        "factionId": "MG-FACTION-002",
         "faction": "Asgardian",
         "entryGate": "The Thunder-Oath Gate",
         "gateState": "Ruin Gate with active oath memory",
-        "normalCampaignId": "TG-F02-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F02-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F02-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F02-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Thunder-Oath Root Gauntlet — Threshold",
           "Chapter 2: Thunder-Oath Root Gauntlet — Outer Descent",
@@ -581,12 +581,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-003",
         "routeName": "Laurel-Sky Hubris Trial",
-        "factionId": "TG-FACTION-003",
+        "factionId": "MG-FACTION-003",
         "faction": "Olympian",
         "entryGate": "The Laurel-Sky Gate",
         "gateState": "Stable Gate with oracle vapor leakage",
-        "normalCampaignId": "TG-F03-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F03-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F03-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F03-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Laurel-Sky Hubris Trial — Threshold",
           "Chapter 2: Laurel-Sky Hubris Trial — Outer Descent",
@@ -599,12 +599,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-004",
         "routeName": "Torii-Moon Mirror Road",
-        "factionId": "TG-FACTION-004",
+        "factionId": "MG-FACTION-004",
         "faction": "Kami",
         "entryGate": "The Torii-Moon Gate",
         "gateState": "Distortion Gate with ritual rerouting",
-        "normalCampaignId": "TG-F04-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F04-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F04-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F04-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Torii-Moon Mirror Road — Threshold",
           "Chapter 2: Torii-Moon Mirror Road — Outer Descent",
@@ -617,12 +617,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-005",
         "routeName": "Silver-Root Geas Labyrinth",
-        "factionId": "TG-FACTION-005",
+        "factionId": "MG-FACTION-005",
         "faction": "Tuatha",
         "entryGate": "The Silver-Root Gate",
         "gateState": "Sealed Gate with fae time bleed",
-        "normalCampaignId": "TG-F05-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F05-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F05-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F05-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Silver-Root Geas Labyrinth — Threshold",
           "Chapter 2: Silver-Root Geas Labyrinth — Outer Descent",
@@ -635,12 +635,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-006",
         "routeName": "Choir-Vault Discord Ascent",
-        "factionId": "TG-FACTION-006",
+        "factionId": "MG-FACTION-006",
         "faction": "Empyrean",
         "entryGate": "The Choir-Vault Gate",
         "gateState": "Wound Gate leaking memory-burning radiance",
-        "normalCampaignId": "TG-F06-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F06-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F06-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F06-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Choir-Vault Discord Ascent — Threshold",
           "Chapter 2: Choir-Vault Discord Ascent — Outer Descent",
@@ -653,12 +653,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-007",
         "routeName": "Black-Iron Debt Descent",
-        "factionId": "TG-FACTION-007",
+        "factionId": "MG-FACTION-007",
         "faction": "Infernal Dominion",
         "entryGate": "The Black-Iron Gate",
         "gateState": "Distortion Gate bound by contract clauses",
-        "normalCampaignId": "TG-F07-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F07-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F07-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F07-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Black-Iron Debt Descent — Threshold",
           "Chapter 2: Black-Iron Debt Descent — Outer Descent",
@@ -669,12 +669,12 @@
         "missionTitlePattern": "20 normal route beats plus 20 elite route beats, all tied to roomGraph nodes and one active deity combat."
       }
     ],
-    "factionId": "TG-FACTION-003",
+    "factionId": "MG-FACTION-003",
     "campaignType": "Normal",
-    "aliasId": "TG-F03-CAMPAIGN-NORMAL"
+    "aliasId": "MG-F03-CAMPAIGN-NORMAL"
   },
   {
-    "id": "TG-CAMPAIGN-004",
+    "id": "MG-CAMPAIGN-004",
     "slug": "cinders-of-dominion",
     "name": "Cinders of Dominion",
     "phase": "Act IV",
@@ -686,28 +686,28 @@
     "artDirectorNotes": "Needs Vasha Cinder-Broker, Black Iron Court, and Infernal court asset prompts.",
     "developmentDirectorNotes": "Requires campaign decision metadata.",
     "chapters": [
-      "TG-CHAPTER-009",
-      "TG-CHAPTER-010"
+      "MG-CHAPTER-009",
+      "MG-CHAPTER-010"
     ],
     "maps": [
-      "TG-MAP-006"
+      "MG-MAP-006"
     ],
     "npcs": [
-      "TG-NPC-007"
+      "MG-NPC-007"
     ],
     "creatures": [
-      "TG-CREATURE-005"
+      "MG-CREATURE-005"
     ],
     "recommendedNextTask": "Tune individual boss mechanics and playable route UI now that every route has rewritten mission arcs.",
     "threatSystems": [
-      "TG-HOLLOW-ENCOUNTER-SYSTEM"
+      "MG-HOLLOW-ENCOUNTER-SYSTEM"
     ],
     "missionChapterRegistry": [
-      "TG-F07-CH01",
-      "TG-F07-CH02",
-      "TG-F07-CH03",
-      "TG-F07-CH04",
-      "TG-F07-CH05"
+      "MG-F07-CH01",
+      "MG-F07-CH02",
+      "MG-F07-CH03",
+      "MG-F07-CH04",
+      "MG-F07-CH05"
     ],
     "normalMissionCount": 20,
     "eliteMissionCount": 20,
@@ -736,20 +736,20 @@
     "crossFactionRunIns": {
       "enabled": true,
       "poolIds": [
-        "TG-CROSS-RUN-IN-001",
-        "TG-CROSS-RUN-IN-002",
-        "TG-CROSS-RUN-IN-003",
-        "TG-CROSS-RUN-IN-004",
-        "TG-CROSS-RUN-IN-005",
-        "TG-CROSS-RUN-IN-006",
-        "TG-CROSS-RUN-IN-007"
+        "MG-CROSS-RUN-IN-001",
+        "MG-CROSS-RUN-IN-002",
+        "MG-CROSS-RUN-IN-003",
+        "MG-CROSS-RUN-IN-004",
+        "MG-CROSS-RUN-IN-005",
+        "MG-CROSS-RUN-IN-006",
+        "MG-CROSS-RUN-IN-007"
       ]
     },
     "mythosGatesCampaignRecreation": {
       "status": "PASS_1_ROUTE_AND_DEITY_ALIGNED",
       "brand": "Mythos Gates",
       "currentArc": "Ascension",
-      "factionId": "TG-FACTION-007",
+      "factionId": "MG-FACTION-007",
       "faction": "Infernal Dominion",
       "realm": "The Infernal Dominion",
       "routeId": "MG-DUNGEON-ROUTE-007",
@@ -770,12 +770,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-001",
         "routeName": "Sun-Scale Verdict Descent",
-        "factionId": "TG-FACTION-001",
+        "factionId": "MG-FACTION-001",
         "faction": "Aten Ra",
         "entryGate": "The Sun-Scale Gate",
         "gateState": "Stable Gate under Ma’at strain",
-        "normalCampaignId": "TG-F01-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F01-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F01-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F01-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Sun-Scale Verdict Descent — Threshold",
           "Chapter 2: Sun-Scale Verdict Descent — Outer Descent",
@@ -788,12 +788,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-002",
         "routeName": "Thunder-Oath Root Gauntlet",
-        "factionId": "TG-FACTION-002",
+        "factionId": "MG-FACTION-002",
         "faction": "Asgardian",
         "entryGate": "The Thunder-Oath Gate",
         "gateState": "Ruin Gate with active oath memory",
-        "normalCampaignId": "TG-F02-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F02-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F02-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F02-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Thunder-Oath Root Gauntlet — Threshold",
           "Chapter 2: Thunder-Oath Root Gauntlet — Outer Descent",
@@ -806,12 +806,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-003",
         "routeName": "Laurel-Sky Hubris Trial",
-        "factionId": "TG-FACTION-003",
+        "factionId": "MG-FACTION-003",
         "faction": "Olympian",
         "entryGate": "The Laurel-Sky Gate",
         "gateState": "Stable Gate with oracle vapor leakage",
-        "normalCampaignId": "TG-F03-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F03-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F03-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F03-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Laurel-Sky Hubris Trial — Threshold",
           "Chapter 2: Laurel-Sky Hubris Trial — Outer Descent",
@@ -824,12 +824,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-004",
         "routeName": "Torii-Moon Mirror Road",
-        "factionId": "TG-FACTION-004",
+        "factionId": "MG-FACTION-004",
         "faction": "Kami",
         "entryGate": "The Torii-Moon Gate",
         "gateState": "Distortion Gate with ritual rerouting",
-        "normalCampaignId": "TG-F04-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F04-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F04-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F04-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Torii-Moon Mirror Road — Threshold",
           "Chapter 2: Torii-Moon Mirror Road — Outer Descent",
@@ -842,12 +842,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-005",
         "routeName": "Silver-Root Geas Labyrinth",
-        "factionId": "TG-FACTION-005",
+        "factionId": "MG-FACTION-005",
         "faction": "Tuatha",
         "entryGate": "The Silver-Root Gate",
         "gateState": "Sealed Gate with fae time bleed",
-        "normalCampaignId": "TG-F05-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F05-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F05-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F05-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Silver-Root Geas Labyrinth — Threshold",
           "Chapter 2: Silver-Root Geas Labyrinth — Outer Descent",
@@ -860,12 +860,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-006",
         "routeName": "Choir-Vault Discord Ascent",
-        "factionId": "TG-FACTION-006",
+        "factionId": "MG-FACTION-006",
         "faction": "Empyrean",
         "entryGate": "The Choir-Vault Gate",
         "gateState": "Wound Gate leaking memory-burning radiance",
-        "normalCampaignId": "TG-F06-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F06-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F06-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F06-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Choir-Vault Discord Ascent — Threshold",
           "Chapter 2: Choir-Vault Discord Ascent — Outer Descent",
@@ -878,12 +878,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-007",
         "routeName": "Black-Iron Debt Descent",
-        "factionId": "TG-FACTION-007",
+        "factionId": "MG-FACTION-007",
         "faction": "Infernal Dominion",
         "entryGate": "The Black-Iron Gate",
         "gateState": "Distortion Gate bound by contract clauses",
-        "normalCampaignId": "TG-F07-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F07-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F07-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F07-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Black-Iron Debt Descent — Threshold",
           "Chapter 2: Black-Iron Debt Descent — Outer Descent",
@@ -894,12 +894,12 @@
         "missionTitlePattern": "20 normal route beats plus 20 elite route beats, all tied to roomGraph nodes and one active deity combat."
       }
     ],
-    "factionId": "TG-FACTION-004",
+    "factionId": "MG-FACTION-004",
     "campaignType": "Normal",
-    "aliasId": "TG-F04-CAMPAIGN-NORMAL"
+    "aliasId": "MG-F04-CAMPAIGN-NORMAL"
   },
   {
-    "id": "TG-CAMPAIGN-005",
+    "id": "MG-CAMPAIGN-005",
     "slug": "heliokemet-sun-realm",
     "name": "Helio-Kemet Sun Realm",
     "phase": "Act II",
@@ -911,24 +911,24 @@
     "artDirectorNotes": "Uses the Helio-Kemet campaign and battle references as locked layout guides: top-left chapter banner, top-right currency bar, left progress bar, S-path nodes, and peak boss gate.",
     "developmentDirectorNotes": "Use this campaign as the template for future faction campaign-map menus and tactical battle transitions.",
     "chapters": [
-      "TG-CHAPTER-011",
-      "TG-CHAPTER-012",
-      "TG-CHAPTER-013"
+      "MG-CHAPTER-011",
+      "MG-CHAPTER-012",
+      "MG-CHAPTER-013"
     ],
     "maps": [
-      "TG-MAP-007",
-      "TG-MAP-008"
+      "MG-MAP-007",
+      "MG-MAP-008"
     ],
     "npcs": [
-      "TG-NPC-001"
+      "MG-NPC-001"
     ],
     "creatures": [
-      "TG-CREATURE-001",
-      "TG-CREATURE-002"
+      "MG-CREATURE-001",
+      "MG-CREATURE-002"
     ],
     "recommendedNextTask": "Tune individual boss mechanics and playable route UI now that every route has rewritten mission arcs.",
     "threatSystems": [
-      "TG-HOLLOW-ENCOUNTER-SYSTEM"
+      "MG-HOLLOW-ENCOUNTER-SYSTEM"
     ],
     "mobileUe5Architecture": {
       "baselinePlatforms": [
@@ -955,20 +955,20 @@
     "crossFactionRunIns": {
       "enabled": true,
       "poolIds": [
-        "TG-CROSS-RUN-IN-001",
-        "TG-CROSS-RUN-IN-002",
-        "TG-CROSS-RUN-IN-003",
-        "TG-CROSS-RUN-IN-004",
-        "TG-CROSS-RUN-IN-005",
-        "TG-CROSS-RUN-IN-006",
-        "TG-CROSS-RUN-IN-007"
+        "MG-CROSS-RUN-IN-001",
+        "MG-CROSS-RUN-IN-002",
+        "MG-CROSS-RUN-IN-003",
+        "MG-CROSS-RUN-IN-004",
+        "MG-CROSS-RUN-IN-005",
+        "MG-CROSS-RUN-IN-006",
+        "MG-CROSS-RUN-IN-007"
       ]
     },
     "mythosGatesCampaignRecreation": {
       "status": "PASS_1_ROUTE_AND_DEITY_ALIGNED",
       "brand": "Mythos Gates",
       "currentArc": "Ascension",
-      "factionId": "TG-FACTION-001",
+      "factionId": "MG-FACTION-001",
       "faction": "Aten Ra",
       "realm": "The Solar Dominion of Khepra",
       "routeId": "MG-DUNGEON-ROUTE-001",
@@ -989,12 +989,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-001",
         "routeName": "Sun-Scale Verdict Descent",
-        "factionId": "TG-FACTION-001",
+        "factionId": "MG-FACTION-001",
         "faction": "Aten Ra",
         "entryGate": "The Sun-Scale Gate",
         "gateState": "Stable Gate under Ma’at strain",
-        "normalCampaignId": "TG-F01-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F01-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F01-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F01-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Sun-Scale Verdict Descent — Threshold",
           "Chapter 2: Sun-Scale Verdict Descent — Outer Descent",
@@ -1007,12 +1007,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-002",
         "routeName": "Thunder-Oath Root Gauntlet",
-        "factionId": "TG-FACTION-002",
+        "factionId": "MG-FACTION-002",
         "faction": "Asgardian",
         "entryGate": "The Thunder-Oath Gate",
         "gateState": "Ruin Gate with active oath memory",
-        "normalCampaignId": "TG-F02-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F02-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F02-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F02-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Thunder-Oath Root Gauntlet — Threshold",
           "Chapter 2: Thunder-Oath Root Gauntlet — Outer Descent",
@@ -1025,12 +1025,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-003",
         "routeName": "Laurel-Sky Hubris Trial",
-        "factionId": "TG-FACTION-003",
+        "factionId": "MG-FACTION-003",
         "faction": "Olympian",
         "entryGate": "The Laurel-Sky Gate",
         "gateState": "Stable Gate with oracle vapor leakage",
-        "normalCampaignId": "TG-F03-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F03-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F03-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F03-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Laurel-Sky Hubris Trial — Threshold",
           "Chapter 2: Laurel-Sky Hubris Trial — Outer Descent",
@@ -1043,12 +1043,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-004",
         "routeName": "Torii-Moon Mirror Road",
-        "factionId": "TG-FACTION-004",
+        "factionId": "MG-FACTION-004",
         "faction": "Kami",
         "entryGate": "The Torii-Moon Gate",
         "gateState": "Distortion Gate with ritual rerouting",
-        "normalCampaignId": "TG-F04-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F04-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F04-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F04-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Torii-Moon Mirror Road — Threshold",
           "Chapter 2: Torii-Moon Mirror Road — Outer Descent",
@@ -1061,12 +1061,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-005",
         "routeName": "Silver-Root Geas Labyrinth",
-        "factionId": "TG-FACTION-005",
+        "factionId": "MG-FACTION-005",
         "faction": "Tuatha",
         "entryGate": "The Silver-Root Gate",
         "gateState": "Sealed Gate with fae time bleed",
-        "normalCampaignId": "TG-F05-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F05-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F05-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F05-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Silver-Root Geas Labyrinth — Threshold",
           "Chapter 2: Silver-Root Geas Labyrinth — Outer Descent",
@@ -1079,12 +1079,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-006",
         "routeName": "Choir-Vault Discord Ascent",
-        "factionId": "TG-FACTION-006",
+        "factionId": "MG-FACTION-006",
         "faction": "Empyrean",
         "entryGate": "The Choir-Vault Gate",
         "gateState": "Wound Gate leaking memory-burning radiance",
-        "normalCampaignId": "TG-F06-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F06-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F06-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F06-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Choir-Vault Discord Ascent — Threshold",
           "Chapter 2: Choir-Vault Discord Ascent — Outer Descent",
@@ -1097,12 +1097,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-007",
         "routeName": "Black-Iron Debt Descent",
-        "factionId": "TG-FACTION-007",
+        "factionId": "MG-FACTION-007",
         "faction": "Infernal Dominion",
         "entryGate": "The Black-Iron Gate",
         "gateState": "Distortion Gate bound by contract clauses",
-        "normalCampaignId": "TG-F07-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F07-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F07-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F07-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Black-Iron Debt Descent — Threshold",
           "Chapter 2: Black-Iron Debt Descent — Outer Descent",
@@ -1113,12 +1113,12 @@
         "missionTitlePattern": "20 normal route beats plus 20 elite route beats, all tied to roomGraph nodes and one active deity combat."
       }
     ],
-    "factionId": "TG-FACTION-005",
+    "factionId": "MG-FACTION-005",
     "campaignType": "Normal",
-    "aliasId": "TG-F05-CAMPAIGN-NORMAL"
+    "aliasId": "MG-F05-CAMPAIGN-NORMAL"
   },
   {
-    "id": "TG-CAMPAIGN-006",
+    "id": "MG-CAMPAIGN-006",
     "slug": "kami-mirror-tempest",
     "name": "Kami Mirror Tempest",
     "phase": "Act II",
@@ -1130,30 +1130,30 @@
     "artDirectorNotes": "Vermilion torii gates, moonlit water, lacquer black shrine roofs, paper seals, foxfire blue, and mirror-surface battle grids.",
     "developmentDirectorNotes": "Ideal for testing terrain state changes and illusion markers after base tactical loop stabilizes.",
     "chapters": [
-      "TG-CHAPTER-014",
-      "TG-CHAPTER-015",
-      "TG-CHAPTER-016"
+      "MG-CHAPTER-014",
+      "MG-CHAPTER-015",
+      "MG-CHAPTER-016"
     ],
     "maps": [
-      "TG-MAP-009",
-      "TG-MAP-010"
+      "MG-MAP-009",
+      "MG-MAP-010"
     ],
     "npcs": [
-      "TG-NPC-003"
+      "MG-NPC-003"
     ],
     "creatures": [
-      "TG-CREATURE-003"
+      "MG-CREATURE-003"
     ],
     "recommendedNextTask": "Tune individual boss mechanics and playable route UI now that every route has rewritten mission arcs.",
     "threatSystems": [
-      "TG-HOLLOW-ENCOUNTER-SYSTEM"
+      "MG-HOLLOW-ENCOUNTER-SYSTEM"
     ],
     "missionChapterRegistry": [
-      "TG-F04-CH01",
-      "TG-F04-CH02",
-      "TG-F04-CH03",
-      "TG-F04-CH04",
-      "TG-F04-CH05"
+      "MG-F04-CH01",
+      "MG-F04-CH02",
+      "MG-F04-CH03",
+      "MG-F04-CH04",
+      "MG-F04-CH05"
     ],
     "normalMissionCount": 20,
     "eliteMissionCount": 20,
@@ -1182,20 +1182,20 @@
     "crossFactionRunIns": {
       "enabled": true,
       "poolIds": [
-        "TG-CROSS-RUN-IN-001",
-        "TG-CROSS-RUN-IN-002",
-        "TG-CROSS-RUN-IN-003",
-        "TG-CROSS-RUN-IN-004",
-        "TG-CROSS-RUN-IN-005",
-        "TG-CROSS-RUN-IN-006",
-        "TG-CROSS-RUN-IN-007"
+        "MG-CROSS-RUN-IN-001",
+        "MG-CROSS-RUN-IN-002",
+        "MG-CROSS-RUN-IN-003",
+        "MG-CROSS-RUN-IN-004",
+        "MG-CROSS-RUN-IN-005",
+        "MG-CROSS-RUN-IN-006",
+        "MG-CROSS-RUN-IN-007"
       ]
     },
     "mythosGatesCampaignRecreation": {
       "status": "PASS_1_ROUTE_AND_DEITY_ALIGNED",
       "brand": "Mythos Gates",
       "currentArc": "Ascension",
-      "factionId": "TG-FACTION-004",
+      "factionId": "MG-FACTION-004",
       "faction": "Kami",
       "realm": "The Sacred Kingdoms",
       "routeId": "MG-DUNGEON-ROUTE-004",
@@ -1216,12 +1216,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-001",
         "routeName": "Sun-Scale Verdict Descent",
-        "factionId": "TG-FACTION-001",
+        "factionId": "MG-FACTION-001",
         "faction": "Aten Ra",
         "entryGate": "The Sun-Scale Gate",
         "gateState": "Stable Gate under Ma’at strain",
-        "normalCampaignId": "TG-F01-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F01-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F01-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F01-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Sun-Scale Verdict Descent — Threshold",
           "Chapter 2: Sun-Scale Verdict Descent — Outer Descent",
@@ -1234,12 +1234,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-002",
         "routeName": "Thunder-Oath Root Gauntlet",
-        "factionId": "TG-FACTION-002",
+        "factionId": "MG-FACTION-002",
         "faction": "Asgardian",
         "entryGate": "The Thunder-Oath Gate",
         "gateState": "Ruin Gate with active oath memory",
-        "normalCampaignId": "TG-F02-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F02-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F02-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F02-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Thunder-Oath Root Gauntlet — Threshold",
           "Chapter 2: Thunder-Oath Root Gauntlet — Outer Descent",
@@ -1252,12 +1252,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-003",
         "routeName": "Laurel-Sky Hubris Trial",
-        "factionId": "TG-FACTION-003",
+        "factionId": "MG-FACTION-003",
         "faction": "Olympian",
         "entryGate": "The Laurel-Sky Gate",
         "gateState": "Stable Gate with oracle vapor leakage",
-        "normalCampaignId": "TG-F03-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F03-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F03-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F03-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Laurel-Sky Hubris Trial — Threshold",
           "Chapter 2: Laurel-Sky Hubris Trial — Outer Descent",
@@ -1270,12 +1270,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-004",
         "routeName": "Torii-Moon Mirror Road",
-        "factionId": "TG-FACTION-004",
+        "factionId": "MG-FACTION-004",
         "faction": "Kami",
         "entryGate": "The Torii-Moon Gate",
         "gateState": "Distortion Gate with ritual rerouting",
-        "normalCampaignId": "TG-F04-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F04-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F04-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F04-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Torii-Moon Mirror Road — Threshold",
           "Chapter 2: Torii-Moon Mirror Road — Outer Descent",
@@ -1288,12 +1288,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-005",
         "routeName": "Silver-Root Geas Labyrinth",
-        "factionId": "TG-FACTION-005",
+        "factionId": "MG-FACTION-005",
         "faction": "Tuatha",
         "entryGate": "The Silver-Root Gate",
         "gateState": "Sealed Gate with fae time bleed",
-        "normalCampaignId": "TG-F05-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F05-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F05-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F05-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Silver-Root Geas Labyrinth — Threshold",
           "Chapter 2: Silver-Root Geas Labyrinth — Outer Descent",
@@ -1306,12 +1306,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-006",
         "routeName": "Choir-Vault Discord Ascent",
-        "factionId": "TG-FACTION-006",
+        "factionId": "MG-FACTION-006",
         "faction": "Empyrean",
         "entryGate": "The Choir-Vault Gate",
         "gateState": "Wound Gate leaking memory-burning radiance",
-        "normalCampaignId": "TG-F06-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F06-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F06-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F06-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Choir-Vault Discord Ascent — Threshold",
           "Chapter 2: Choir-Vault Discord Ascent — Outer Descent",
@@ -1324,12 +1324,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-007",
         "routeName": "Black-Iron Debt Descent",
-        "factionId": "TG-FACTION-007",
+        "factionId": "MG-FACTION-007",
         "faction": "Infernal Dominion",
         "entryGate": "The Black-Iron Gate",
         "gateState": "Distortion Gate bound by contract clauses",
-        "normalCampaignId": "TG-F07-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F07-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F07-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F07-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Black-Iron Debt Descent — Threshold",
           "Chapter 2: Black-Iron Debt Descent — Outer Descent",
@@ -1340,12 +1340,12 @@
         "missionTitlePattern": "20 normal route beats plus 20 elite route beats, all tied to roomGraph nodes and one active deity combat."
       }
     ],
-    "factionId": "TG-FACTION-006",
+    "factionId": "MG-FACTION-006",
     "campaignType": "Normal",
-    "aliasId": "TG-F06-CAMPAIGN-NORMAL"
+    "aliasId": "MG-F06-CAMPAIGN-NORMAL"
   },
   {
-    "id": "TG-CAMPAIGN-007",
+    "id": "MG-CAMPAIGN-007",
     "slug": "empyrean-choir-vault",
     "name": "Empyrean Choir Vault",
     "phase": "Act II",
@@ -1357,30 +1357,30 @@
     "artDirectorNotes": "Ivory-gold celestial architecture, blue-white auroras, floating glass stairs, aura mechanisms, and radiant tactical grids.",
     "developmentDirectorNotes": "Best used for testing elevation bonuses, timed beacons, and multi-tier mini-map clarity.",
     "chapters": [
-      "TG-CHAPTER-017",
-      "TG-CHAPTER-018",
-      "TG-CHAPTER-019"
+      "MG-CHAPTER-017",
+      "MG-CHAPTER-018",
+      "MG-CHAPTER-019"
     ],
     "maps": [
-      "TG-MAP-011",
-      "TG-MAP-012"
+      "MG-MAP-011",
+      "MG-MAP-012"
     ],
     "npcs": [
-      "TG-NPC-006"
+      "MG-NPC-006"
     ],
     "creatures": [
-      "TG-CREATURE-005"
+      "MG-CREATURE-005"
     ],
     "recommendedNextTask": "Tune individual boss mechanics and playable route UI now that every route has rewritten mission arcs.",
     "threatSystems": [
-      "TG-HOLLOW-ENCOUNTER-SYSTEM"
+      "MG-HOLLOW-ENCOUNTER-SYSTEM"
     ],
     "missionChapterRegistry": [
-      "TG-F06-CH01",
-      "TG-F06-CH02",
-      "TG-F06-CH03",
-      "TG-F06-CH04",
-      "TG-F06-CH05"
+      "MG-F06-CH01",
+      "MG-F06-CH02",
+      "MG-F06-CH03",
+      "MG-F06-CH04",
+      "MG-F06-CH05"
     ],
     "normalMissionCount": 20,
     "eliteMissionCount": 20,
@@ -1409,20 +1409,20 @@
     "crossFactionRunIns": {
       "enabled": true,
       "poolIds": [
-        "TG-CROSS-RUN-IN-001",
-        "TG-CROSS-RUN-IN-002",
-        "TG-CROSS-RUN-IN-003",
-        "TG-CROSS-RUN-IN-004",
-        "TG-CROSS-RUN-IN-005",
-        "TG-CROSS-RUN-IN-006",
-        "TG-CROSS-RUN-IN-007"
+        "MG-CROSS-RUN-IN-001",
+        "MG-CROSS-RUN-IN-002",
+        "MG-CROSS-RUN-IN-003",
+        "MG-CROSS-RUN-IN-004",
+        "MG-CROSS-RUN-IN-005",
+        "MG-CROSS-RUN-IN-006",
+        "MG-CROSS-RUN-IN-007"
       ]
     },
     "mythosGatesCampaignRecreation": {
       "status": "PASS_1_ROUTE_AND_DEITY_ALIGNED",
       "brand": "Mythos Gates",
       "currentArc": "Ascension",
-      "factionId": "TG-FACTION-006",
+      "factionId": "MG-FACTION-006",
       "faction": "Empyrean",
       "realm": "The Radiant Hierarchies",
       "routeId": "MG-DUNGEON-ROUTE-006",
@@ -1443,12 +1443,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-001",
         "routeName": "Sun-Scale Verdict Descent",
-        "factionId": "TG-FACTION-001",
+        "factionId": "MG-FACTION-001",
         "faction": "Aten Ra",
         "entryGate": "The Sun-Scale Gate",
         "gateState": "Stable Gate under Ma’at strain",
-        "normalCampaignId": "TG-F01-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F01-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F01-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F01-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Sun-Scale Verdict Descent — Threshold",
           "Chapter 2: Sun-Scale Verdict Descent — Outer Descent",
@@ -1461,12 +1461,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-002",
         "routeName": "Thunder-Oath Root Gauntlet",
-        "factionId": "TG-FACTION-002",
+        "factionId": "MG-FACTION-002",
         "faction": "Asgardian",
         "entryGate": "The Thunder-Oath Gate",
         "gateState": "Ruin Gate with active oath memory",
-        "normalCampaignId": "TG-F02-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F02-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F02-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F02-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Thunder-Oath Root Gauntlet — Threshold",
           "Chapter 2: Thunder-Oath Root Gauntlet — Outer Descent",
@@ -1479,12 +1479,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-003",
         "routeName": "Laurel-Sky Hubris Trial",
-        "factionId": "TG-FACTION-003",
+        "factionId": "MG-FACTION-003",
         "faction": "Olympian",
         "entryGate": "The Laurel-Sky Gate",
         "gateState": "Stable Gate with oracle vapor leakage",
-        "normalCampaignId": "TG-F03-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F03-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F03-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F03-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Laurel-Sky Hubris Trial — Threshold",
           "Chapter 2: Laurel-Sky Hubris Trial — Outer Descent",
@@ -1497,12 +1497,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-004",
         "routeName": "Torii-Moon Mirror Road",
-        "factionId": "TG-FACTION-004",
+        "factionId": "MG-FACTION-004",
         "faction": "Kami",
         "entryGate": "The Torii-Moon Gate",
         "gateState": "Distortion Gate with ritual rerouting",
-        "normalCampaignId": "TG-F04-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F04-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F04-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F04-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Torii-Moon Mirror Road — Threshold",
           "Chapter 2: Torii-Moon Mirror Road — Outer Descent",
@@ -1515,12 +1515,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-005",
         "routeName": "Silver-Root Geas Labyrinth",
-        "factionId": "TG-FACTION-005",
+        "factionId": "MG-FACTION-005",
         "faction": "Tuatha",
         "entryGate": "The Silver-Root Gate",
         "gateState": "Sealed Gate with fae time bleed",
-        "normalCampaignId": "TG-F05-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F05-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F05-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F05-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Silver-Root Geas Labyrinth — Threshold",
           "Chapter 2: Silver-Root Geas Labyrinth — Outer Descent",
@@ -1533,12 +1533,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-006",
         "routeName": "Choir-Vault Discord Ascent",
-        "factionId": "TG-FACTION-006",
+        "factionId": "MG-FACTION-006",
         "faction": "Empyrean",
         "entryGate": "The Choir-Vault Gate",
         "gateState": "Wound Gate leaking memory-burning radiance",
-        "normalCampaignId": "TG-F06-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F06-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F06-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F06-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Choir-Vault Discord Ascent — Threshold",
           "Chapter 2: Choir-Vault Discord Ascent — Outer Descent",
@@ -1551,12 +1551,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-007",
         "routeName": "Black-Iron Debt Descent",
-        "factionId": "TG-FACTION-007",
+        "factionId": "MG-FACTION-007",
         "faction": "Infernal Dominion",
         "entryGate": "The Black-Iron Gate",
         "gateState": "Distortion Gate bound by contract clauses",
-        "normalCampaignId": "TG-F07-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F07-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F07-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F07-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Black-Iron Debt Descent — Threshold",
           "Chapter 2: Black-Iron Debt Descent — Outer Descent",
@@ -1567,12 +1567,12 @@
         "missionTitlePattern": "20 normal route beats plus 20 elite route beats, all tied to roomGraph nodes and one active deity combat."
       }
     ],
-    "factionId": "TG-FACTION-007",
+    "factionId": "MG-FACTION-007",
     "campaignType": "Normal",
-    "aliasId": "TG-F07-CAMPAIGN-NORMAL"
+    "aliasId": "MG-F07-CAMPAIGN-NORMAL"
   },
   {
-    "id": "TG-CAMPAIGN-008",
+    "id": "MG-CAMPAIGN-008",
     "slug": "laurel-senate-trials",
     "name": "Laurel Senate Trials",
     "phase": "Act II",
@@ -1584,31 +1584,31 @@
     "artDirectorNotes": "Needs Marble Sky Arena, Laurel Senate, living champion statues, bronze summit, and Laurel-Star Gate art passes.",
     "developmentDirectorNotes": "Uses the faction campaign architecture template with 20 Normal and 20 Elite missions.",
     "chapters": [
-      "TG-CHAPTER-020",
-      "TG-CHAPTER-021",
-      "TG-CHAPTER-022",
-      "TG-CHAPTER-023",
-      "TG-CHAPTER-024"
+      "MG-CHAPTER-020",
+      "MG-CHAPTER-021",
+      "MG-CHAPTER-022",
+      "MG-CHAPTER-023",
+      "MG-CHAPTER-024"
     ],
     "maps": [
-      "TG-MAP-004"
+      "MG-MAP-004"
     ],
     "npcs": [
-      "TG-NPC-003"
+      "MG-NPC-003"
     ],
     "creatures": [
-      "TG-CREATURE-004"
+      "MG-CREATURE-004"
     ],
     "recommendedNextTask": "Tune individual boss mechanics and playable route UI now that every route has rewritten mission arcs.",
     "threatSystems": [
-      "TG-HOLLOW-ENCOUNTER-SYSTEM"
+      "MG-HOLLOW-ENCOUNTER-SYSTEM"
     ],
     "missionChapterRegistry": [
-      "TG-F03-CH01",
-      "TG-F03-CH02",
-      "TG-F03-CH03",
-      "TG-F03-CH04",
-      "TG-F03-CH05"
+      "MG-F03-CH01",
+      "MG-F03-CH02",
+      "MG-F03-CH03",
+      "MG-F03-CH04",
+      "MG-F03-CH05"
     ],
     "normalMissionCount": 20,
     "eliteMissionCount": 20,
@@ -1637,20 +1637,20 @@
     "crossFactionRunIns": {
       "enabled": true,
       "poolIds": [
-        "TG-CROSS-RUN-IN-001",
-        "TG-CROSS-RUN-IN-002",
-        "TG-CROSS-RUN-IN-003",
-        "TG-CROSS-RUN-IN-004",
-        "TG-CROSS-RUN-IN-005",
-        "TG-CROSS-RUN-IN-006",
-        "TG-CROSS-RUN-IN-007"
+        "MG-CROSS-RUN-IN-001",
+        "MG-CROSS-RUN-IN-002",
+        "MG-CROSS-RUN-IN-003",
+        "MG-CROSS-RUN-IN-004",
+        "MG-CROSS-RUN-IN-005",
+        "MG-CROSS-RUN-IN-006",
+        "MG-CROSS-RUN-IN-007"
       ]
     },
     "mythosGatesCampaignRecreation": {
       "status": "PASS_1_ROUTE_AND_DEITY_ALIGNED",
       "brand": "Mythos Gates",
       "currentArc": "Ascension",
-      "factionId": "TG-FACTION-003",
+      "factionId": "MG-FACTION-003",
       "faction": "Olympian",
       "realm": "The Celestial Heights of Olympus",
       "routeId": "MG-DUNGEON-ROUTE-003",
@@ -1671,12 +1671,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-001",
         "routeName": "Sun-Scale Verdict Descent",
-        "factionId": "TG-FACTION-001",
+        "factionId": "MG-FACTION-001",
         "faction": "Aten Ra",
         "entryGate": "The Sun-Scale Gate",
         "gateState": "Stable Gate under Ma’at strain",
-        "normalCampaignId": "TG-F01-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F01-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F01-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F01-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Sun-Scale Verdict Descent — Threshold",
           "Chapter 2: Sun-Scale Verdict Descent — Outer Descent",
@@ -1689,12 +1689,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-002",
         "routeName": "Thunder-Oath Root Gauntlet",
-        "factionId": "TG-FACTION-002",
+        "factionId": "MG-FACTION-002",
         "faction": "Asgardian",
         "entryGate": "The Thunder-Oath Gate",
         "gateState": "Ruin Gate with active oath memory",
-        "normalCampaignId": "TG-F02-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F02-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F02-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F02-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Thunder-Oath Root Gauntlet — Threshold",
           "Chapter 2: Thunder-Oath Root Gauntlet — Outer Descent",
@@ -1707,12 +1707,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-003",
         "routeName": "Laurel-Sky Hubris Trial",
-        "factionId": "TG-FACTION-003",
+        "factionId": "MG-FACTION-003",
         "faction": "Olympian",
         "entryGate": "The Laurel-Sky Gate",
         "gateState": "Stable Gate with oracle vapor leakage",
-        "normalCampaignId": "TG-F03-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F03-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F03-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F03-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Laurel-Sky Hubris Trial — Threshold",
           "Chapter 2: Laurel-Sky Hubris Trial — Outer Descent",
@@ -1725,12 +1725,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-004",
         "routeName": "Torii-Moon Mirror Road",
-        "factionId": "TG-FACTION-004",
+        "factionId": "MG-FACTION-004",
         "faction": "Kami",
         "entryGate": "The Torii-Moon Gate",
         "gateState": "Distortion Gate with ritual rerouting",
-        "normalCampaignId": "TG-F04-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F04-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F04-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F04-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Torii-Moon Mirror Road — Threshold",
           "Chapter 2: Torii-Moon Mirror Road — Outer Descent",
@@ -1743,12 +1743,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-005",
         "routeName": "Silver-Root Geas Labyrinth",
-        "factionId": "TG-FACTION-005",
+        "factionId": "MG-FACTION-005",
         "faction": "Tuatha",
         "entryGate": "The Silver-Root Gate",
         "gateState": "Sealed Gate with fae time bleed",
-        "normalCampaignId": "TG-F05-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F05-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F05-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F05-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Silver-Root Geas Labyrinth — Threshold",
           "Chapter 2: Silver-Root Geas Labyrinth — Outer Descent",
@@ -1761,12 +1761,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-006",
         "routeName": "Choir-Vault Discord Ascent",
-        "factionId": "TG-FACTION-006",
+        "factionId": "MG-FACTION-006",
         "faction": "Empyrean",
         "entryGate": "The Choir-Vault Gate",
         "gateState": "Wound Gate leaking memory-burning radiance",
-        "normalCampaignId": "TG-F06-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F06-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F06-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F06-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Choir-Vault Discord Ascent — Threshold",
           "Chapter 2: Choir-Vault Discord Ascent — Outer Descent",
@@ -1779,12 +1779,12 @@
       {
         "routeId": "MG-DUNGEON-ROUTE-007",
         "routeName": "Black-Iron Debt Descent",
-        "factionId": "TG-FACTION-007",
+        "factionId": "MG-FACTION-007",
         "faction": "Infernal Dominion",
         "entryGate": "The Black-Iron Gate",
         "gateState": "Distortion Gate bound by contract clauses",
-        "normalCampaignId": "TG-F07-CAMPAIGN-NORMAL",
-        "eliteCampaignId": "TG-F07-CAMPAIGN-ELITE",
+        "normalCampaignId": "MG-F07-CAMPAIGN-NORMAL",
+        "eliteCampaignId": "MG-F07-CAMPAIGN-ELITE",
         "chapterArcTitles": [
           "Chapter 1: Black-Iron Debt Descent — Threshold",
           "Chapter 2: Black-Iron Debt Descent — Outer Descent",
@@ -1795,8 +1795,8 @@
         "missionTitlePattern": "20 normal route beats plus 20 elite route beats, all tied to roomGraph nodes and one active deity combat."
       }
     ],
-    "factionId": "TG-FACTION-001",
+    "factionId": "MG-FACTION-001",
     "campaignType": "Normal",
-    "aliasId": "TG-F01-CAMPAIGN-NORMAL-EXTRA"
+    "aliasId": "MG-F01-CAMPAIGN-NORMAL-EXTRA"
   }
 ]

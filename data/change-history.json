@@ -1,16 +1,16 @@
 {
-  "id": "TG-CHANGE-HISTORY-001",
+  "id": "MG-CHANGE-HISTORY-001",
   "updated": "2026-08-12T22:45:00Z",
   "entries": [
     {
       "version": "1.5.0-async-arena-snapshots",
       "date": "2026-08-12T22:45:00Z",
       "title": "Asynchronous deity Challenge Snapshot Model",
-      "summary": "Converted async arena into a one-active-defender-Titan snapshot contract with checksumed snapshots, deterministic AI profiles, solo stance/reaction loadouts, visible dashboard readiness, and release tests.",
+      "summary": "Converted async arena into a one-active-defender-Deity snapshot contract with checksumed snapshots, deterministic AI profiles, solo stance/reaction loadouts, visible dashboard readiness, and release tests.",
       "status": "LOCAL_READY_FOR_VALIDATION",
       "artifacts": [
-        "TG-ASYNC-ARENA-001",
-        "TG-TASK-SOLO-004",
+        "MG-ASYNC-ARENA-001",
+        "MG-TASK-SOLO-004",
         "scripts/test-async-arena-snapshots.mjs"
       ],
       "checks": [
@@ -25,9 +25,9 @@
       "summary": "Added production campaign playflow contract and route coverage for seven-faction campaign select, five-chapter browsing, Normal/Elite mission selection, mission detail inspection, and playable battle handoff.",
       "status": "LOCAL_READY_FOR_VALIDATION",
       "artifacts": [
-        "TG-CAMPAIGN-PLAYFLOW-CONTRACT-001",
-        "TG-DEV-006",
-        "TG-DEV-010",
+        "MG-CAMPAIGN-PLAYFLOW-CONTRACT-001",
+        "MG-DEV-006",
+        "MG-DEV-010",
         "scripts/test-campaign-playflow.mjs"
       ],
       "checks": [
@@ -42,8 +42,8 @@
       "summary": "Added deterministic battlefield telemetry contract, runtime hooks, summary signals, boss phase fail-point tracking, balance analytics thresholds, and validation coverage for one-active-deity tuning.",
       "status": "LOCAL_READY_FOR_VALIDATION",
       "artifacts": [
-        "TG-BATTLEFIELD-TELEMETRY-CONTRACT-001",
-        "TG-DEV-031",
+        "MG-BATTLEFIELD-TELEMETRY-CONTRACT-001",
+        "MG-DEV-031",
         "scripts/test-battlefield-telemetry.mjs"
       ],
       "checks": [
@@ -58,8 +58,8 @@
       "summary": "Added a production one-faction solo combat vertical slice with five pre-boss mission types, one five-phase Gate Colossus boss, objective defaults, telemetry contract, quality gates, and validation coverage.",
       "status": "LOCAL_READY_FOR_VALIDATION",
       "artifacts": [
-        "TG-SOLO-VERTICAL-SLICE-ATEN-RA-001",
-        "TG-TASK-SOLO-003",
+        "MG-SOLO-VERTICAL-SLICE-ATEN-RA-001",
+        "MG-TASK-SOLO-003",
         "scripts/test-solo-vertical-slice.mjs"
       ],
       "checks": [
@@ -74,11 +74,11 @@
       "summary": "Added canonical one-active-deity battle state schema plus deterministic reducer core for Momentum, Divinity, stance shifts, enemy intents, reaction windows, executions, terrain ticks, objectives, and telemetry.",
       "status": "LOCAL_READY_FOR_VALIDATION",
       "artifacts": [
-        "TG-SOLO-BATTLE-STATE-SCHEMA-001",
+        "MG-SOLO-BATTLE-STATE-SCHEMA-001",
         "game/solo-battle-engine.mjs",
         "scripts/test-solo-battle-reducers.mjs",
-        "TG-TASK-SOLO-001",
-        "TG-TASK-SOLO-002"
+        "MG-TASK-SOLO-001",
+        "MG-TASK-SOLO-002"
       ],
       "checks": [
         "Solo reducer test pending",
@@ -93,8 +93,8 @@
       "status": "READY_BLOCKED_BY_WORKFLOW_SCOPE",
       "artifacts": [
         "dev/github-pages-workflow-template.yml",
-        "TG-DEV-005",
-        "TG-DEV-011"
+        "MG-DEV-005",
+        "MG-DEV-011"
       ],
       "checks": [
         "Precommit verification pending"
@@ -107,11 +107,11 @@
       "summary": "Added Battlefield Director, world scale reference, first production battlefield vertical slice, battlefield runtime architecture, quality gate, and playable mobile battlefield shell.",
       "status": "LOCAL_READY_FOR_VALIDATION",
       "artifacts": [
-        "TG-DIR-005",
-        "TG-WORLD-SCALE-REFERENCE-001",
-        "TG-BATTLEFIELD-VS-001",
-        "TG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001",
-        "TG-BATTLEFIELD-QUALITY-GATE-001"
+        "MG-DIR-005",
+        "MG-WORLD-SCALE-REFERENCE-001",
+        "MG-BATTLEFIELD-VS-001",
+        "MG-BATTLEFIELD-RUNTIME-ARCHITECTURE-001",
+        "MG-BATTLEFIELD-QUALITY-GATE-001"
       ],
       "checks": []
     },
@@ -122,10 +122,10 @@
       "summary": "Added canon faction matrix, full deity role matrix, roster depth map, and player onboarding journey for the one-active-Divine Collection loop; updated progression and implementation queue.",
       "status": "LOCAL_READY_FOR_VALIDATION",
       "artifacts": [
-        "TG-CANON-FACTION-MATRIX-001",
+        "MG-CANON-FACTION-MATRIX-001",
         "MG-DEITY-ROLE-MATRIX-001",
-        "TG-ROSTER-DEPTH-MAP-001",
-        "TG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001"
+        "MG-ROSTER-DEPTH-MAP-001",
+        "MG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001"
       ],
       "checks": []
     },
@@ -136,9 +136,9 @@
       "summary": "Added the required Enemy & Scaling Design Document and Raid Design Document, converted the raid system to one-active-deity multi-stage structure, and queued implementation tasks for AI, scaling, raids, and rewards.",
       "status": "LOCAL_READY_FOR_VALIDATION",
       "artifacts": [
-        "TG-ENEMY-SCALING-DESIGN-DOCUMENT-001",
-        "TG-RAID-DESIGN-DOCUMENT-001",
-        "TG-RAID-SYSTEM-001"
+        "MG-ENEMY-SCALING-DESIGN-DOCUMENT-001",
+        "MG-RAID-DESIGN-DOCUMENT-001",
+        "MG-RAID-SYSTEM-001"
       ],
       "checks": []
     },
@@ -150,7 +150,7 @@
       "status": "LOCAL_READY_FOR_VALIDATION",
       "artifacts": [
         "MG-SOLO-DEITY-MIGRATION-REPORT-001",
-        "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
+        "MG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
         "MG-SOLO-DEITY-ROSTER-REDESIGN-001"
       ],
       "checks": []
@@ -533,14 +533,14 @@
       ]
     },
     {
-      "id": "TG-CHANGE-BATTLEFIELD-ART-GOAL-002",
+      "id": "MG-CHANGE-BATTLEFIELD-ART-GOAL-002",
       "timestamp": "2026-08-12T01:34:30Z",
       "type": "VISUAL_DIRECTION",
       "summary": "Tuned playable battlefields toward layered isometric temple-board art goal with HUD, minimap, portal summit, terraces, stairs, waterway, corruption, and blueprint notes.",
       "status": "PUBLISHED_PENDING_PUSH"
     },
     {
-      "id": "TG-CHANGE-TITAN-ENEMY-BALANCE-001",
+      "id": "MG-CHANGE-TITAN-ENEMY-BALANCE-001",
       "date": "2026-08-12",
       "type": "balance-content",
       "summary": "Completed deity names/abilities/gear pass and added enemy stat/scaling profiles for harder solo progression.",
@@ -557,7 +557,7 @@
   ],
   "changes": [
     {
-      "id": "TG-CHANGE-BATTLEFIELD-CHARACTER-VISUALS-001",
+      "id": "MG-CHANGE-BATTLEFIELD-CHARACTER-VISUALS-001",
       "date": "2026-08-11",
       "title": "Battlefield and character visual pass",
       "summary": "Upgraded the playable Game tab with faction-toned battlefield boards, Deity portrait cards, enemy threat tokens, NPC visual cards, and mission art prompt staging.",
@@ -569,10 +569,10 @@
       "status": "published"
     },
     {
-      "id": "TG-CHANGE-PLAYABLE-ALL-FILES-GAME-001",
+      "id": "MG-CHANGE-PLAYABLE-ALL-FILES-GAME-001",
       "date": "2026-08-11",
       "title": "Playable all-files Mythos Gates game layer",
-      "summary": "Added a playable Game tab consuming the live data files for factions, Titans, missions, dialogue, art packages, maps, creatures, NPCs, realm codex, progression, rewards, and quality gates.",
+      "summary": "Added a playable Game tab consuming the live data files for factions, Deities, missions, dialogue, art packages, maps, creatures, NPCs, realm codex, progression, rewards, and quality gates.",
       "files": [
         "mini-app/mythos-gates-ascension.html",
         "data/index.json"
@@ -580,7 +580,7 @@
       "status": "published"
     },
     {
-      "id": "TG-CHANGE-2026-08-11-FACTION-MISSION-DIALOGUE-FINISH",
+      "id": "MG-CHANGE-2026-08-11-FACTION-MISSION-DIALOGUE-FINISH",
       "date": "2026-08-11",
       "type": "Mission + Dialogue Completion",
       "summary": "Finished and hardened all faction mission/dialogue coverage for one active deity combat while preserving established faction, realm, storyline, and map canon.",
@@ -593,7 +593,7 @@
       ]
     },
     {
-      "id": "TG-CHANGE-BATTLEFIELD-ART-GOAL-002",
+      "id": "MG-CHANGE-BATTLEFIELD-ART-GOAL-002",
       "timestamp": "2026-08-12T01:34:30Z",
       "type": "VISUAL_DIRECTION",
       "summary": "Tuned playable battlefields toward layered isometric temple-board art goal with HUD, minimap, portal summit, terraces, stairs, waterway, corruption, and blueprint notes.",

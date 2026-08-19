@@ -10,4 +10,4 @@ Rules:
 - Preserve original source files; game-ready conversions are separate.
 
 Generated packets: 23
-Batches: TG-ART-BATCH-TITAN-ATENRA-001 (9), TG-ART-BATCH-NPC-MAP-001 (2), TG-3D-FIRST-HANDOFF-BATTLEFIELDS-001 (12)
+Batches: MG-ART-BATCH-TITAN-ATENRA-001 (9), MG-ART-BATCH-NPC-MAP-001 (2), MG-3D-FIRST-HANDOFF-BATTLEFIELDS-001 (12)

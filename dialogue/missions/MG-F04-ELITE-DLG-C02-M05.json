@@ -1,0 +1,62 @@
+{
+  "id": "MG-F04-ELITE-DLG-C02-M05",
+  "missionId": "MG-F04-E-C02-M05",
+  "factionId": "MG-FACTION-004",
+  "campaignType": "Elite",
+  "status": "Production Ready",
+  "tone": "restrained mythic tactical",
+  "briefing": "Mythos Gates briefing: Elite: Purify the Foxfire Torii Road: Pressure Break. Enter Foxfire Torii Road on Torii-Moon Mirror Road through The Torii-Moon Gate while the Gate remains Distortion Gate with ritual rerouting. Reference deity voice is Amaterasu, but the player still chooses one deity from the faction roster. Objective: With one selected deity, break the first enemy pressure line in the elite-tuned Foxfire Torii Road, secure the enemy line, and deny the Hollow a foothold in the outer dungeon.",
+  "lines": {
+    "missionIntro": [
+      {
+        "speaker": "Amaterasu Divine Voice",
+        "text": "A clean crossing leaves no false reflection behind. The Foxfire Torii Road will know whether one deity is enough."
+      }
+    ],
+    "enemyIntroduction": [
+      {
+        "speaker": "Lore Director",
+        "text": "Enemies are not filler here; they are the combat pressure of Torii-Moon Mirror Road made hostile."
+      }
+    ],
+    "midBattle": [
+      {
+        "speaker": "Gameplay Director",
+        "text": "Read the room law first: Exploit or avoid the route rule: oni taboo zones that punish broken shrine law"
+      }
+    ],
+    "victory": [
+      {
+        "speaker": "Amaterasu Divine Voice",
+        "text": "The mirror clears; what remains is permitted to pass."
+      }
+    ],
+    "defeat": [
+      {
+        "speaker": "Amaterasu Divine Voice",
+        "text": "Withdraw. The Torii-Moon Gate has learned too much from this attempt."
+      }
+    ],
+    "codex": [
+      {
+        "speaker": "Lore Director",
+        "text": "The Sacred Kingdoms is the source Realm; mortal myth is only the later echo. This beat documents Foxfire Torii Road as part of Torii-Moon Mirror Road."
+      }
+    ]
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "visualDirection": "Frame Foxfire Torii Road as a combat node in Torii-Moon Mirror Road; torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash.",
+  "updated": "2026-08-16",
+  "mythosGatesDialogueRecreation": {
+    "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-004",
+    "routeName": "Torii-Moon Mirror Road",
+    "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable deity language.",
+    "soloRule": "Dialogue supports one active god or goddess in the field."
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
+  "routeId": "MG-DUNGEON-ROUTE-004",
+  "routeName": "Torii-Moon Mirror Road",
+  "routeRoomName": "Foxfire Torii Road",
+  "entryGate": "The Torii-Moon Gate"
+}

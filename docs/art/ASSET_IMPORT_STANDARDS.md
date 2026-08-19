@@ -22,8 +22,8 @@ Use lowercase kebab-case descriptors after the permanent ID:
 
 ```text
 BATTLEFIELD_001_the-first-reopening-gate.glb
-TG-TITAN-001_amun-atenra-source.blend
-TG-TITAN-001_amun-atenra-preview.webp
+MG-TITAN-001_amun-atenra-source.blend
+MG-TITAN-001_amun-atenra-preview.webp
 ```
 
 ## Scale and technical expectations

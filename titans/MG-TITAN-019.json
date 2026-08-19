@@ -1,0 +1,218 @@
+{
+  "id": "MG-TITAN-019",
+  "slug": "zeus",
+  "name": "Zeus",
+  "factionId": "MG-FACTION-003",
+  "faction": "Olympian",
+  "rarity": "Mythic God",
+  "role": "Defender",
+  "abilities": [
+    "Aurelion — Aegis Spear Thrust Anchor",
+    "Laurel Trial Technique — Bastion",
+    "Aurelion: Olympian Verdict Contest Holdfast",
+    "Divine Ascension — Nike Crowned Ascension"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 11,
+    "range": 2,
+    "energy": 5,
+    "speed": 2,
+    "armor": 19,
+    "resistance": 12,
+    "critChance": 7,
+    "accuracy": 82,
+    "evasion": 4,
+    "guardBreak": 8,
+    "combatPower": 242
+  },
+  "equipment": [
+    "Aurelion Bulwark Aegis Laurel Spear",
+    "Aurelion Living Marble Bronze Cuirass",
+    "Aurelion Oracle Ambrosia Core"
+  ],
+  "passives": [
+    "Aegis Favor: Aurelion gains Favor when defender play anchors a control zone and converts enemy commitment into mitigation on marble thunder line. At 3 stacks, the next Technique or Reaction adds a divine contest law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of High Olympian courts."
+  ],
+  "lore": "Zeus, Thunder Verdict King, is now canonized as one of the four playable deities of Olympian. The deity is the source-realm divinity behind the mythology rather than a generic champion: sky father, thunder verdict, king of Olympus and law of victory. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology deity whose behavior expresses sky father, thunder verdict, king of Olympus and law of victory; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
+  "visualDescription": "Zeus manifests as sky father, thunder verdict, king of Olympus and law of victory from Olympian: regal masculine Olympian face, strong nose, storm brows, curled beard, imperious gaze; tall idealized masculine king build, broad shoulders, sculpted torso, upright tribunal posture; signature silhouette: eagle cloak, forked lightning staff, high laurel crown, marble-throne stance. Weapon: forked thunder-scepter and aegis-edged shield. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
+  "artStatus": "READY_FOR_GENERATION",
+  "artPromptId": "MG-PROMPT-019",
+  "artworkId": null,
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "MG-BACKSTORY-TITAN-019",
+  "abilityDetails": [
+    {
+      "name": "Aurelion — Aegis Spear Thrust Anchor",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "defender",
+        "olympian",
+        "source-culture"
+      ],
+      "effect": "Deal Olympian source-culture damage at range 2; generate Momentum and a small Laurel Favor gain when used from trial-marked arena ground or against the marked target. The hit reads visually as living marble-light, bronze cuirass, laurel circuits, aegis scales, oracle smoke, thunder tribunal auras, hoplite shield geometry.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
+    },
+    {
+      "name": "Laurel Trial Technique — Bastion",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "defender",
+        "olympian",
+        "source-culture"
+      ],
+      "effect": "Spend Momentum to protects a control zone, redirects enemy intent, and turns correct positioning into mitigation. Builds Laurel Favor only when the player uses trial-marked arena ground intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
+    },
+    {
+      "name": "Aurelion: Olympian Verdict Contest Holdfast",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "defender",
+        "olympian",
+        "source-culture"
+      ],
+      "effect": "Spend stored Laurel Favor to impose a two-round rule from Celestial Heights of Olympus: protects a control zone, redirects enemy intent, and turns correct positioning into mitigation. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Nike Crowned Ascension",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant",
+        "olympian",
+        "source-culture"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Laurel Favor, transform nearby terrain into trial-marked arena ground, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Aurelion Bulwark Aegis Laurel Spear",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Legendary",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through trial-marked arena ground. Visual: living marble-light, bronze cuirass, laurel circuits, aegis scales, oracle smoke, thunder tribunal auras, hoplite shield geometry.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
+    },
+    {
+      "name": "Aurelion Living Marble Bronze Cuirass",
+      "slot": "Armor Body",
+      "rarityFloor": "Legendary",
+      "primaryStat": "armor",
+      "effect": "Improves survivability and makes the Deity read as Celestial Heights of Olympus source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
+    },
+    {
+      "name": "Aurelion Oracle Ambrosia Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Legendary",
+      "primaryStat": "energy",
+      "effect": "Stores Laurel Favor and unlocks a mastery branch for Hermes Crossing Step, Athena Countermeasure, and Claim the Laurel. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 60,
+    "statGrowthPer10Levels": {
+      "hp": 9,
+      "attack": 1,
+      "armor": 2,
+      "resistance": 1
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      60
+    ],
+    "gearTierCap": "Mythic",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "hold objectives and survive pressure",
+    "budgetTarget": 112,
+    "computedCombatPower": 242,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ],
+    "uniqueMechanic": "Aurelion's Aegis Favor: a solo mechanic where Favor grows through marble thunder line, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+    "counterplayRule": "spread attackers, displacement, or terrain denial break the anchor"
+  },
+  "mythicSource": "Zeus — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+  "visualTraits": {
+    "face": "regal masculine Olympian face, strong nose, storm brows, curled beard, imperious gaze",
+    "bodyProportions": "tall idealized masculine king build, broad shoulders, sculpted torso, upright tribunal posture",
+    "silhouette": "eagle cloak, forked lightning staff, high laurel crown, marble-throne stance",
+    "weapon": "forked thunder-scepter and aegis-edged shield",
+    "sexIdentity": "Male"
+  },
+  "armorCanon": {
+    "identityRule": "Armor must reveal male divine anatomy and Olympian civilization logic; no generic armor template.",
+    "silhouette": "eagle cloak, forked lightning staff, high laurel crown, marble-throne stance"
+  },
+  "updated": "2026-08-17",
+  "weaponCanon": {
+    "signatureWeapon": "forked thunder-scepter and aegis-edged shield",
+    "loreReason": "Chosen because Zeus embodies sky father, thunder verdict, king of Olympus and law of victory in combat."
+  },
+  "gearCanon": {
+    "maskHelmetCrown": "Crown/helmet/mask must support regal masculine Olympian face, strong nose, storm brows, curled beard, imperious gaze and eagle cloak, forked lightning staff, high laurel crown, marble-throne stance; never hide sex identity or make the god interchangeable."
+  },
+  "sex": "Male",
+  "titanArtDna": {
+    "rosterCanon": "FOUR_GODS_PER_FACTION_PLAYABLE_ROSTER",
+    "mythologyGod": "Zeus",
+    "sex": "Male",
+    "archetype": "sky father, thunder verdict, king of Olympus and law of victory",
+    "signatureWeapon": "forked thunder-scepter and aegis-edged shield",
+    "faceLock": "regal masculine Olympian face, strong nose, storm brows, curled beard, imperious gaze",
+    "bodyLock": "tall idealized masculine king build, broad shoulders, sculpted torso, upright tribunal posture",
+    "silhouetteLock": "eagle cloak, forked lightning staff, high laurel crown, marble-throne stance",
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved.",
+    "mythology": "Zeus — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+    "realm": "The Celestial Heights of Olympus",
+    "civilization": "Olympian mythological extradimensional civilization",
+    "cultureRule": "God identity must come from mythology, realm, civilization, sacred materials, beauty standards, and ritual practice; never color swap alone.",
+    "beautyStandard": "Unmistakably masculine divine presence with faction-specific strength, nobility, posture, and varied anatomy.",
+    "realmAnatomy": "Realm-shaped mythological divinity, supernatural but not sci-fi alien.",
+    "identityFace": "regal masculine Olympian face, strong nose, storm brows, curled beard, imperious gaze",
+    "identityBody": "tall idealized masculine king build, broad shoulders, sculpted torso, upright tribunal posture",
+    "roleSilhouette": "eagle cloak, forked lightning staff, high laurel crown, marble-throne stance",
+    "auditStatus": "PASS"
+  },
+  "title": "Thunder Verdict King",
+  "playableClassification": "God",
+  "species": "Deity",
+  "characterType": "Playable Deity",
+  "rosterClass": "Deity Roster"
+}

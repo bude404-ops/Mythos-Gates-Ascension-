@@ -9,7 +9,7 @@ This is the first playable browser game layer added on top of the Mythos Gates r
 - Root launcher page with Play and Dev Platform routes
 - `/game/index.html` playable build
 - Mobile-first tactical UI
-- One-active-Titan active deity selection
+- One-active-Deity active deity selection
 - Tactical Gate battlefield
 - Player movement and attack actions
 - Signature abilities
@@ -31,7 +31,7 @@ Enemy forces:
 
 ### Protected canon locks
 
-- Titan-only playable format
+- Deity-only playable format
 - Seven mythological Realm direction
 - No sci-fi framing
 - No extradimensional framing

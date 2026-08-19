@@ -12,16 +12,16 @@ This expansion adds three design-ready realm campaign arcs with linked campaign 
 
 ## Added Maps
 
-- TG-MAP-007 Sacred Sun Temple Road
-- TG-MAP-008 Mythos Gate Sun Throne
-- TG-MAP-009 Foxfire Torii Road
-- TG-MAP-010 Mirror Lake Sanctum
-- TG-MAP-011 Choir Vault Ascent
-- TG-MAP-012 Broken Heaven Engine
+- MG-MAP-007 Sacred Sun Temple Road
+- MG-MAP-008 Mythos Gate Sun Throne
+- MG-MAP-009 Foxfire Torii Road
+- MG-MAP-010 Mirror Lake Sanctum
+- MG-MAP-011 Choir Vault Ascent
+- MG-MAP-012 Broken Heaven Engine
 
 ## Added Chapters
 
-- TG-CHAPTER-011 through TG-CHAPTER-019
+- MG-CHAPTER-011 through MG-CHAPTER-019
 
 ## Design Direction
 

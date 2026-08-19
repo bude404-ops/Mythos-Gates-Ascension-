@@ -1,0 +1,60 @@
+{
+  "id": "MG-BACKSTORY-CREATURE-012",
+  "entityId": "MG-CREATURE-012",
+  "entityType": "Creature",
+  "name": "Hollow Root Parasite",
+  "slug": "hollow-root-parasite",
+  "factionId": null,
+  "faction": "The Hollow",
+  "role": "Minor",
+  "rarity": "Hollow Infestation",
+  "status": "Canon Backstory Ready",
+  "storyArcIds": [
+    "MG-STORY-ARC-001",
+    "MG-STORY-ARC-002"
+  ],
+  "campaignHooks": [
+    "The First Reopening",
+    "Storm-Oath Covenant",
+    "Hollow Breach Events"
+  ],
+  "loreTies": [
+    "A rootlike Hollow larva that infects living terrain, making groves remember pain before growth.",
+    "Occupies natural terrain and makes sustain tiles hazardous until cleansed.",
+    "Erasure is not death; erasure is ownership without memory."
+  ],
+  "shortBackstory": "Hollow Root Parasite is a Hollow threat creature built for campaign and event encounters, turning erased memory into minor battlefield pressure.",
+  "chapters": [
+    {
+      "title": "Origin",
+      "text": "Hollow Root Parasite formed where the Hollow learned a specific weakness in remembered civilization. It is not a Deity, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+    },
+    {
+      "title": "Hollow Function",
+      "text": "Its role inside the Hollow threat faction is precise: Occupies natural terrain and makes sustain tiles hazardous until cleansed. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+    },
+    {
+      "title": "Lore Tie",
+      "text": "A rootlike Hollow larva that infects living terrain, making groves remember pain before growth."
+    },
+    {
+      "title": "Campaign Use",
+      "text": "Hollow Root Parasite can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+    },
+    {
+      "title": "Visual / Encounter Rule",
+      "text": "Art and gameplay must keep Hollow Root Parasite visibly non-playable. Its silhouette uses black root-serpent with pale sap cracks, thorn mouth, leafless tendrils, soil clinging upward. while its abilities \u2014 Blight Root, Terrain Leech \u2014 create battlefield pressure without confusing it for a faction Deity."
+    }
+  ],
+  "relationshipHooks": [
+    "Hollow threat pool",
+    "Event encounter library",
+    "Campaign enemy wave selection"
+  ],
+  "readableUnder": [
+    "Creatures",
+    "Character Backstories",
+    "Hollow Threat Faction"
+  ],
+  "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+}

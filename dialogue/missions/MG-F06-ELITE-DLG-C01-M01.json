@@ -1,0 +1,62 @@
+{
+  "id": "MG-F06-ELITE-DLG-C01-M01",
+  "missionId": "MG-F06-E-C01-M01",
+  "factionId": "MG-FACTION-006",
+  "campaignType": "Elite",
+  "status": "Production Ready",
+  "tone": "restrained mythic tactical",
+  "briefing": "Mythos Gates briefing: Elite: Answer the Choir Vault Threshold: First Crossing. Enter Choir Vault Threshold on Choir-Vault Discord Ascent through The Choir-Vault Gate while the Gate remains Wound Gate leaking memory-burning radiance. Reference deity voice is Michael, but the player still chooses one deity from the faction roster. Objective: With one selected deity, cross the threshold in the elite-tuned Choir Vault Threshold, secure the threshold grammar, and mark the Gate law before the Hollow can read the name.",
+  "lines": {
+    "missionIntro": [
+      {
+        "speaker": "Michael Divine Voice",
+        "text": "The choir does not forgive discord; it measures it. The Choir Vault Threshold will know whether one deity is enough."
+      }
+    ],
+    "enemyIntroduction": [
+      {
+        "speaker": "Lore Director",
+        "text": "Enemies are not filler here; they are the entry pressure of Choir-Vault Discord Ascent made hostile."
+      }
+    ],
+    "midBattle": [
+      {
+        "speaker": "Gameplay Director",
+        "text": "Read the room law first: Exploit or avoid the route rule: choir notes that immobilize discordant beings"
+      }
+    ],
+    "victory": [
+      {
+        "speaker": "Michael Divine Voice",
+        "text": "The discord thins; the ascent keeps its shape."
+      }
+    ],
+    "defeat": [
+      {
+        "speaker": "Michael Divine Voice",
+        "text": "Withdraw. The Choir-Vault Gate has learned too much from this attempt."
+      }
+    ],
+    "codex": [
+      {
+        "speaker": "Lore Director",
+        "text": "The Radiant Hierarchies is the source Realm; mortal myth is only the later echo. This beat documents Choir Vault Threshold as part of Choir-Vault Discord Ascent."
+      }
+    ]
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "visualDirection": "Frame Choir Vault Threshold as a entry node in Choir-Vault Discord Ascent; white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.",
+  "updated": "2026-08-16",
+  "mythosGatesDialogueRecreation": {
+    "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-006",
+    "routeName": "Choir-Vault Discord Ascent",
+    "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable deity language.",
+    "soloRule": "Dialogue supports one active god or goddess in the field."
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
+  "routeId": "MG-DUNGEON-ROUTE-006",
+  "routeName": "Choir-Vault Discord Ascent",
+  "routeRoomName": "Choir Vault Threshold",
+  "entryGate": "The Choir-Vault Gate"
+}

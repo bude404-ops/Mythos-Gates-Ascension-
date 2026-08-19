@@ -1,0 +1,267 @@
+{
+  "id": "MG-F04-E-C02-M08",
+  "factionId": "MG-FACTION-004",
+  "campaignId": "MG-F04-CAMPAIGN-ELITE",
+  "campaignType": "Elite",
+  "chapter": 2,
+  "chapterTitle": "Torii-Moon Mirror Road — Outer Descent",
+  "missionNumber": 8,
+  "missionInChapter": 4,
+  "title": "Elite: Unmask the Cedar Root Ambush Bend: Branching Law",
+  "description": "Elite: Unmask the Cedar Root Ambush Bend: Branching Law is a rebuilt Mythos Gates mission beat for Torii-Moon Mirror Road through The Torii-Moon Gate (Distortion Gate with ritual rerouting). One selected deity from Amaterasu, Tsukuyomi, Susanoo, Izanami enters; this beat spotlights Izanami as the reference silhouette while preserving player choice. The mission is the hazard step at Cedar Root Ambush Bend, using shrine-road labyrinth and mirror sanctum pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Sacred Kingdoms is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash..",
+  "lore": "Ascension canon route rewrite: Torii-Moon Mirror Road is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Cedar Root Ambush Bend and reveals: How foxfire copies allied silhouettes. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
+  "recommendedPower": 915,
+  "encouragedDeityRoles": [
+    "spirit-road tactician",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mapId": "MG-MAP-009",
+  "terrain": "Cedar Root Ambush Bend configured as a hazard space inside shrine-road labyrinth and mirror sanctum; source-culture appearance layer: torii threshold roads, shrine-stone lanes, foxfire lantern smoke, mirror-water sanctums, cedar root cover, purification basins; cosmetic/relic silhouettes: mirror-talisman spirit blades, lacquered shimenawa spirit-guards, foxfire magatama cores, kitsune misdirection counters",
+  "objectives": {
+    "primary": "With one selected deity, solve the hazard layer in the elite-tuned Cedar Root Ambush Bend, secure the safe crossing, and reach the safe marker without feeding the Gate.",
+    "optional": [
+      "Clear the Cedar Root Ambush Bend without the active deity falling below 35% integrity",
+      "Exploit or avoid the route rule: foxfire mirages that copy allied silhouettes",
+      "Resolve at least three purification rites, mirror-reading, foxfire deception, taboo-aware movement decisions before victory",
+      "Finish with the boss, elite, shrine, treasure, or hazard node clearly readable for mobile tactical play"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "MG-CREATURE-001",
+        "MG-CREATURE-006"
+      ],
+      "entry": "emerge through ritual precision pressure fractures"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "MG-CREATURE-004"
+      ],
+      "entry": "reinforcement from the Gate wound flank",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": {
+    "enemyId": "MG-CREATURE-007",
+    "name": "Gate-Sick Shrine Guardian",
+    "phaseCount": 2,
+    "mechanic": "changes faction hazard timing and objective pressure"
+  },
+  "turnLimit": 14,
+  "specialRules": [
+    "Route Law — Torii-Moon Mirror Road: Distortion Gate with ritual rerouting changes how movement, hazards, and enemy pressure are read.",
+    "Room Rule — Cedar Root Ambush Bend: play this beat as a hazard node, not a generic arena.",
+    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
+  ],
+  "victoryConditions": [
+    "With one selected deity, solve the hazard layer in the elite-tuned Cedar Root Ambush Bend, secure the safe crossing, and reach the safe marker without feeding the Gate."
+  ],
+  "defeatConditions": [
+    "Your active deity falls",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Solo Deity mastery XP",
+      "High-tier Kami relic material",
+      "Kami faction shard cache",
+      "Kami doctrine upgrade dust",
+      "MG-F04-E-C02-M08 codex shard",
+      "Torii-Moon Mirror Road hazard codex shard"
+    ],
+    "replay": [
+      "divine mastery XP",
+      "Kami relic material",
+      "Kami doctrine upgrade dust",
+      "Kami source-culture cosmetic/relic component",
+      "Torii-Moon Mirror Road route material cache"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "MG-F04-CODEX-02"
+  ],
+  "artPackageId": "MG-F04-ART-E-C02-M08",
+  "dialogueId": "MG-F04-ELITE-DLG-C02-M08",
+  "audioRequirements": [
+    "Kami realm ambience",
+    "mythic impact cue",
+    "faction doctrine resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
+  "eliteRemixOf": "MG-F04-C02-M08",
+  "meaningfulDifferences": [
+    "Secondary realm hazard active from opening turn",
+    "Enemy support pressure persists longer",
+    "Objective timing is stricter",
+    "Boss or elite wave uses altered entry timing"
+  ],
+  "chapterId": "MG-F04-CH02",
+  "difficulty": "Elite",
+  "activeDeityPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE",
+    "multiDeityCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose one deity before launch; no ally positioning or team formations in battle.",
+    "squadCombat": "FORBIDDEN",
+    "teamTurns": "FORBIDDEN"
+  },
+  "tacticalProfile": {
+    "problemTags": [
+      "ranged_enemies",
+      "long_survival",
+      "boss_duel",
+      "terrain_heavy"
+    ],
+    "advantageRoles": [
+      "Defender",
+      "Artillery",
+      "Sustain",
+      "Guardian"
+    ],
+    "recommendedDeityIds": [
+      "MG-TITAN-028",
+      "MG-TITAN-033"
+    ],
+    "recommendedDeities": [
+      {
+        "id": "MG-DEITY-028",
+        "name": "Amaterion Spirit-Sun",
+        "reason": "Defender advantage for ranged enemies"
+      },
+      {
+        "id": "MG-TITAN-032",
+        "name": "Onimaru Red Seal",
+        "reason": "Artillery advantage for ranged enemies"
+      },
+      {
+        "id": "MG-DEITY-033",
+        "name": "Hanae Blossom Ward",
+        "reason": "Sustain advantage for ranged enemies"
+      }
+    ],
+    "favoredNotRequired": true,
+    "ownershipLock": false,
+    "rule": "Favored-not-required: any valid active deity may clear the mission; recommended deities are tactical hints only."
+  },
+  "sourceCultureAppearanceRule": {
+    "realm": "Sacred Kingdoms",
+    "materials": "torii silhouettes, shrine lacquer red, white shide seals, shimenawa cords, mirror silver, foxfire blue, cedar bark, moonlit silk, oni iron",
+    "terrain": "torii threshold roads, shrine-stone lanes, foxfire lantern smoke, mirror-water sanctums, cedar root cover, purification basins",
+    "cosmeticRelicSilhouettes": "mirror-talisman spirit blades, lacquered shimenawa spirit-guards, foxfire magatama cores, kitsune misdirection counters",
+    "avoid": "anime mecha samurai, generic ninja, plastic kimono costume, random kanji text, neon cyberpunk, cute mascot fox"
+  },
+  "updated": "2026-08-16",
+  "activeDeityCount": 1,
+  "teamSize": 1,
+  "combatArchitecture": {
+    "playerControlledDeities": 1,
+    "loop": [
+      "Explore",
+      "Encounter",
+      "1 Deity vs. Multiple Enemies",
+      "Victory",
+      "Rewards",
+      "Upgrade Deity",
+      "Explore Further"
+    ],
+    "forbidden": [
+      "squad combat",
+      "team formations",
+      "multiple player-controlled Deities",
+      "ally positioning",
+      "team turns"
+    ],
+    "readableRule": "Legacy schema label says Deity, current fiction label says Deity: exactly one playable god or goddess is controlled in standard battle."
+  },
+  "crossFactionRunIns": {
+    "enabled": true,
+    "homeFactionId": "MG-FACTION-004",
+    "homeFactionName": "Kami",
+    "eligiblePoolIds": [
+      "MG-CROSS-RUN-IN-001",
+      "MG-CROSS-RUN-IN-002",
+      "MG-CROSS-RUN-IN-003",
+      "MG-CROSS-RUN-IN-005",
+      "MG-CROSS-RUN-IN-006",
+      "MG-CROSS-RUN-IN-007"
+    ],
+    "recommendedPoolIds": [
+      "MG-CROSS-RUN-IN-006",
+      "MG-CROSS-RUN-IN-007"
+    ],
+    "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
+    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone deity without creating ally units or squad play."
+  },
+  "loreContinuityGuard": {
+    "sourceFactionId": "MG-FACTION-004",
+    "sourceFactionName": "Kami",
+    "sourceRealm": "The Sacred Kingdoms",
+    "sourceCultureRule": "source culture humans later copied as Japanese myth and Shinto shrine lore",
+    "preserve": [
+      "established faction identity",
+      "Mythos Gates mythology",
+      "Gates and Codex systems",
+      "one player-controlled deity combat",
+      "mobile UE5 zone structure"
+    ],
+    "forbid": [
+      "replacement factions",
+      "generic corridor dungeon conversion",
+      "PC-first combat assumptions",
+      "generic monster filler",
+      "lore rewrites"
+    ]
+  },
+  "encouragedDeityRoles": [
+    "spirit-road tactician",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mythosGatesMissionRecreation": {
+    "status": "PASS_1_ROUTE_ALIGNED",
+    "brand": "Mythos Gates",
+    "currentArc": "Ascension",
+    "routeId": "MG-DUNGEON-ROUTE-004",
+    "routeName": "Torii-Moon Mirror Road",
+    "entryGate": "The Torii-Moon Gate",
+    "gateState": "Distortion Gate with ritual rerouting",
+    "activePlayableDeitiesPerRun": 1,
+    "playableDeityRoster": [
+      "Amaterasu",
+      "Izanami",
+      "Susanoo",
+      "Tsukuyomi"
+    ],
+    "dungeonCrawlerIntent": "mission should read as one god or goddess entering a Mythos Gate route node against many enemies, hazards, shrine pressure, treasure temptation, and a route boss chain",
+    "canonRule": "Use source-Realm mythological material, faction-specific hazards, and unresolved Mythos Gate mystery; avoid mortal-ascension, generic giants, simple portals, planets, sci-fi, armies, squads, and simultaneous party play."
+  },
+  "name": "Elite: Unmask the Cedar Root Ambush Bend: Branching Law",
+  "routeId": "MG-DUNGEON-ROUTE-004",
+  "routeName": "Torii-Moon Mirror Road",
+  "routeSlug": "torii-moon-mirror-road",
+  "entryGate": "The Torii-Moon Gate",
+  "gateState": "Distortion Gate with ritual rerouting",
+  "routeRoomId": "MG-DUNGEON-ROUTE-004-ROOM-03",
+  "routeRoomName": "Cedar Root Ambush Bend",
+  "routeNodeType": "hazard",
+  "routeMissionArc": {
+    "chapterArc": "Enemy Pressure",
+    "depthBand": "hazard",
+    "room": "Cedar Root Ambush Bend",
+    "routeBeat": "Mission 8 of 20 advances Cedar Root Ambush Bend inside Torii-Moon Mirror Road.",
+    "referencePlayableDeity": "Izanami",
+    "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
+  }
+}

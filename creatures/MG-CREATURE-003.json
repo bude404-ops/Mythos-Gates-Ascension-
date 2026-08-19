@@ -1,0 +1,58 @@
+{
+  "id": "MG-CREATURE-003",
+  "slug": "beast-realm-maneater",
+  "name": "Beast Realm Maneater",
+  "category": "Beast Realm Creature",
+  "realm": "Beast Realms",
+  "threatTier": "Major",
+  "status": "Lore Complete",
+  "director": "Lore Director",
+  "playable": false,
+  "lore": "A predator from a Beast Realm where instinct became law. It is not evil in a human sense; it is a living argument that survival has no court of appeal.",
+  "visualDescription": "Mythic lion-wolf-serpent predator, bone mane, ember eyes, ancient scars, earth-dark hide, non-sci-fi monster silhouette.",
+  "abilities": [
+    "Pounce",
+    "Blood-Scent Mark",
+    "Devour Weakness"
+  ],
+  "mapBehavior": "Tracks wounded Deities and escalates if ignored.",
+  "artStatus": "Prompt Ready",
+  "artPromptId": "MG-PROMPT-CREATURE-003",
+  "artworkId": null,
+  "backstoryId": "MG-BACKSTORY-CREATURE-003",
+  "combatRole": "EXECUTIONER",
+  "stats": {
+    "levelBand": [
+      15,
+      55
+    ],
+    "hp": 104,
+    "damage": 20,
+    "range": 1,
+    "armor": 7,
+    "resistance": 5,
+    "movement": 4,
+    "initiative": 48,
+    "accuracy": 78,
+    "evasion": 10,
+    "guardBreak": 12,
+    "threatWeight": 2.0,
+    "xpValue": 28
+  },
+  "scaling": {
+    "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+    "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
+    "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+    "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+  },
+  "aiProfile": {
+    "archetype": "EXECUTIONER",
+    "priority": [
+      "survive Ascension window",
+      "force reaction spending",
+      "attack marked weakness"
+    ],
+    "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+  },
+  "balanceNotes": "Harder solo tuning: Major EXECUTIONER pressures one active deity through behavior first, stats second; threatWeight 2.0 controls encounter budgets."
+}

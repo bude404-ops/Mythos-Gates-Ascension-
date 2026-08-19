@@ -1,0 +1,262 @@
+{
+  "id": "MG-F07-E-C02-M05",
+  "factionId": "MG-FACTION-007",
+  "campaignId": "MG-F07-CAMPAIGN-ELITE",
+  "campaignType": "Elite",
+  "chapter": 2,
+  "chapterTitle": "Black-Iron Debt Descent — Outer Descent",
+  "missionNumber": 5,
+  "missionInChapter": 1,
+  "title": "Elite: Bargain the Ash-Velvet Bargain Market: Pressure Break",
+  "description": "Elite: Bargain the Ash-Velvet Bargain Market: Pressure Break is a rebuilt Mythos Gates mission beat for Black-Iron Debt Descent through The Black-Iron Gate (Distortion Gate bound by contract clauses). One selected deity from Lucifer, Lilith, Asmodeus, Naamah enters; this beat spotlights Lucifer as the reference silhouette while preserving player choice. The mission is the combat step at Ash-Velvet Bargain Market, using infernal court, bargain market, and chain causeway pacing so shrine, treasure, hazard, elite, and boss reads are route-specific as a finished Mythos Gates campaign beat. Appearance rule: The Infernal Dominion is the source culture behind later mortal myth echoes; terrain, relics, enemy silhouettes, and rewards must use black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture..",
+  "lore": "Ascension canon route rewrite: Black-Iron Debt Descent is not a simple portal and not mortal apotheosis. It is a living Mythos Gate route where restored gods and goddesses answer Realm law under Hollow pressure. This mission advances Ash-Velvet Bargain Market and reveals: How repeated mistakes become chains. No armies, squads, or simultaneous party bodies enter standard combat; the route is balanced around one active deity versus many enemies.",
+  "recommendedPower": 911,
+  "encouragedDeityRoles": [
+    "infernal execution monarch",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mapId": "MG-MAP-006",
+  "terrain": "Ash-Velvet Bargain Market configured as a combat space inside infernal court, bargain market, and chain causeway; source-culture appearance layer: black iron courts, volcanic glass aisles, ember chain channels, debtor seal floors, contract dais, obsidian throne shadows; cosmetic/relic silhouettes: Goetic chain-crown blades, volcanic glass debtor plates, blood-wax infernal ledger cores, chain-lien reversals",
+  "objectives": {
+    "primary": "With one selected deity, break the first enemy pressure line in the elite-tuned Ash-Velvet Bargain Market, secure the enemy line, and deny the Hollow a foothold in the outer dungeon.",
+    "optional": [
+      "Clear the Ash-Velvet Bargain Market without the active deity falling below 35% integrity",
+      "Exploit or avoid the route rule: ash markets that offer cursed shortcuts",
+      "Resolve at least three contract clauses, debt positioning, chain control, execution through risk decisions before victory",
+      "Finish with the boss, elite, shrine, treasure, or hazard node clearly readable for mobile tactical play"
+    ]
+  },
+  "enemyWaves": [
+    {
+      "wave": 1,
+      "enemyIds": [
+        "MG-CREATURE-001",
+        "MG-CREATURE-006"
+      ],
+      "entry": "emerge through infernal contracts pressure fractures"
+    },
+    {
+      "wave": 2,
+      "enemyIds": [
+        "MG-CREATURE-001"
+      ],
+      "entry": "reinforcement from the Gate wound flank",
+      "trigger": "turn 3 or first objective claimed"
+    }
+  ],
+  "boss": null,
+  "turnLimit": 14,
+  "specialRules": [
+    "Route Law — Black-Iron Debt Descent: Distortion Gate bound by contract clauses changes how movement, hazards, and enemy pressure are read.",
+    "Room Rule — Ash-Velvet Bargain Market: play this beat as a combat node, not a generic arena.",
+    "Solo Divine Scale: one player-controlled deity occupies the tactical focus; enemy numbers and boss pressure scale around that single presence."
+  ],
+  "victoryConditions": [
+    "With one selected deity, break the first enemy pressure line in the elite-tuned Ash-Velvet Bargain Market, secure the enemy line, and deny the Hollow a foothold in the outer dungeon."
+  ],
+  "defeatConditions": [
+    "Your active deity falls",
+    "Primary objective fails",
+    "Turn limit expires"
+  ],
+  "rewards": {
+    "firstClear": [
+      "Solo Deity mastery XP",
+      "High-tier Infernal Dominion relic material",
+      "Infernal Dominion faction shard cache",
+      "Infernal Dominion doctrine upgrade dust",
+      "MG-F07-E-C02-M05 codex shard",
+      "Black-Iron Debt Descent combat codex shard"
+    ],
+    "replay": [
+      "divine mastery XP",
+      "Infernal Dominion relic material",
+      "Infernal Dominion doctrine upgrade dust",
+      "Infernal Dominion source-culture cosmetic/relic component",
+      "Black-Iron Debt Descent route material cache"
+    ],
+    "stars": {
+      "three": "Primary plus all optional objectives",
+      "two": "Primary completed",
+      "one": "Primary completed under severe casualty or turn pressure"
+    }
+  },
+  "codexUnlocks": [
+    "MG-F07-CODEX-02"
+  ],
+  "artPackageId": "MG-F07-ART-E-C02-M05",
+  "dialogueId": "MG-F07-ELITE-DLG-C02-M05",
+  "audioRequirements": [
+    "Infernal Dominion realm ambience",
+    "mythic impact cue",
+    "faction doctrine resonance",
+    "Gate pressure swell"
+  ],
+  "completionState": "Not Started",
+  "developmentStatus": "Designed",
+  "activeTitanDesignNotes": "Balanced for one active deity; roster depth changes pre-launch selection, not on-field body count.",
+  "eliteRemixOf": "MG-F07-C02-M05",
+  "meaningfulDifferences": [
+    "Secondary realm hazard active from opening turn",
+    "Enemy support pressure persists longer",
+    "Objective timing is stricter",
+    "Boss or elite wave uses altered entry timing"
+  ],
+  "chapterId": "MG-F07-CH02",
+  "difficulty": "Elite",
+  "activeDeityPolicy": {
+    "standardCombat": "ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE",
+    "multiDeityCombat": "NOT_USED_IN_STANDARD_MISSIONS",
+    "rosterPurpose": "Choose one deity before launch; no ally positioning or team formations in battle.",
+    "squadCombat": "FORBIDDEN",
+    "teamTurns": "FORBIDDEN"
+  },
+  "tacticalProfile": {
+    "problemTags": [
+      "heavily_armored_enemies",
+      "ranged_enemies",
+      "long_survival",
+      "boss_duel"
+    ],
+    "advantageRoles": [
+      "Breaker",
+      "Guardian",
+      "Defender",
+      "Artillery"
+    ],
+    "recommendedDeityIds": [
+      "MG-TITAN-058",
+      "MG-TITAN-055"
+    ],
+    "recommendedDeities": [
+      {
+        "id": "MG-DEITY-058",
+        "name": "Azrakar Chainwarden",
+        "reason": "Breaker advantage for heavily armored enemies"
+      },
+      {
+        "id": "MG-TITAN-060",
+        "name": "Sablex Cinder Duke",
+        "reason": "Guardian advantage for heavily armored enemies"
+      },
+      {
+        "id": "MG-DEITY-055",
+        "name": "Mordrath",
+        "reason": "Defender advantage for heavily armored enemies"
+      }
+    ],
+    "favoredNotRequired": true,
+    "ownershipLock": false,
+    "rule": "Favored-not-required: any valid active deity may clear the mission; recommended deities are tactical hints only."
+  },
+  "sourceCultureAppearanceRule": {
+    "realm": "Infernal Dominion",
+    "materials": "black iron crowns, volcanic glass, contract parchment, chain mantles, blood wax seals, horn hierarchies, ash velvet, hellfire clauses",
+    "terrain": "black iron courts, volcanic glass aisles, ember chain channels, debtor seal floors, contract dais, obsidian throne shadows",
+    "cosmeticRelicSilhouettes": "Goetic chain-crown blades, volcanic glass debtor plates, blood-wax infernal ledger cores, chain-lien reversals",
+    "avoid": "generic Halloween devil, red robot demon, cartoon pitchfork, rubber horns, random pentagram spam, neon cyber hell"
+  },
+  "updated": "2026-08-16",
+  "activeDeityCount": 1,
+  "teamSize": 1,
+  "combatArchitecture": {
+    "playerControlledDeities": 1,
+    "loop": [
+      "Explore",
+      "Encounter",
+      "1 Deity vs. Multiple Enemies",
+      "Victory",
+      "Rewards",
+      "Upgrade Deity",
+      "Explore Further"
+    ],
+    "forbidden": [
+      "squad combat",
+      "team formations",
+      "multiple player-controlled Deities",
+      "ally positioning",
+      "team turns"
+    ],
+    "readableRule": "Legacy schema label says Deity, current fiction label says Deity: exactly one playable god or goddess is controlled in standard battle."
+  },
+  "crossFactionRunIns": {
+    "enabled": true,
+    "homeFactionId": "MG-FACTION-007",
+    "homeFactionName": "Infernal Dominion",
+    "eligiblePoolIds": [
+      "MG-CROSS-RUN-IN-001",
+      "MG-CROSS-RUN-IN-002",
+      "MG-CROSS-RUN-IN-003",
+      "MG-CROSS-RUN-IN-004",
+      "MG-CROSS-RUN-IN-005",
+      "MG-CROSS-RUN-IN-006"
+    ],
+    "recommendedPoolIds": [
+      "MG-CROSS-RUN-IN-002",
+      "MG-CROSS-RUN-IN-003"
+    ],
+    "rule": "Run-ins must have a lore-valid reason: border conflict, Gate pressure, pursuit, oath, contract, trial, defense, corruption response, or event escalation. Never generic faction mixing.",
+    "oneTitanVsManyUse": "Run-ins add enemy role pressure around the lone deity without creating ally units or squad play."
+  },
+  "loreContinuityGuard": {
+    "sourceFactionId": "MG-FACTION-007",
+    "sourceFactionName": "Infernal Dominion",
+    "sourceRealm": "The Infernal Dominion",
+    "sourceCultureRule": "source culture humans later copied as hell, demonology, and infernal contract lore",
+    "preserve": [
+      "established faction identity",
+      "Mythos Gates mythology",
+      "Gates and Codex systems",
+      "one player-controlled deity combat",
+      "mobile UE5 zone structure"
+    ],
+    "forbid": [
+      "replacement factions",
+      "generic corridor dungeon conversion",
+      "PC-first combat assumptions",
+      "generic monster filler",
+      "lore rewrites"
+    ]
+  },
+  "encouragedDeityRoles": [
+    "infernal execution monarch",
+    "survivable objective holder",
+    "burst or control specialist"
+  ],
+  "mythosGatesMissionRecreation": {
+    "status": "PASS_1_ROUTE_ALIGNED",
+    "brand": "Mythos Gates",
+    "currentArc": "Ascension",
+    "routeId": "MG-DUNGEON-ROUTE-007",
+    "routeName": "Black-Iron Debt Descent",
+    "entryGate": "The Black-Iron Gate",
+    "gateState": "Distortion Gate bound by contract clauses",
+    "activePlayableDeitiesPerRun": 1,
+    "playableDeityRoster": [
+      "Lilith",
+      "Naamah",
+      "Asmodeus",
+      "Lucifer"
+    ],
+    "dungeonCrawlerIntent": "mission should read as one god or goddess entering a Mythos Gate route node against many enemies, hazards, shrine pressure, treasure temptation, and a route boss chain",
+    "canonRule": "Use source-Realm mythological material, faction-specific hazards, and unresolved Mythos Gate mystery; avoid mortal-ascension, generic giants, simple portals, planets, sci-fi, armies, squads, and simultaneous party play."
+  },
+  "name": "Elite: Bargain the Ash-Velvet Bargain Market: Pressure Break",
+  "routeId": "MG-DUNGEON-ROUTE-007",
+  "routeName": "Black-Iron Debt Descent",
+  "routeSlug": "black-iron-debt-descent",
+  "entryGate": "The Black-Iron Gate",
+  "gateState": "Distortion Gate bound by contract clauses",
+  "routeRoomId": "MG-DUNGEON-ROUTE-007-ROOM-02",
+  "routeRoomName": "Ash-Velvet Bargain Market",
+  "routeNodeType": "combat",
+  "routeMissionArc": {
+    "chapterArc": "Enemy Pressure",
+    "depthBand": "combat",
+    "room": "Ash-Velvet Bargain Market",
+    "routeBeat": "Mission 5 of 20 advances Ash-Velvet Bargain Market inside Black-Iron Debt Descent.",
+    "referencePlayableDeity": "Lucifer",
+    "singleDeityRule": "ONE_SELECTED_PLAYABLE_DEITY_PER_STANDARD_BATTLE"
+  }
+}

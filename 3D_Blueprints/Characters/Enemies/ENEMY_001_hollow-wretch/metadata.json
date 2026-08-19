@@ -1,7 +1,7 @@
 {
   "assetId": "ENEMY_001",
   "assetType": "ENEMY",
-  "canonicalEntityId": "TG-CREATURE-001",
+  "canonicalEntityId": "MG-CREATURE-001",
   "canonicalName": "Hollow Wretch",
   "faction": "Hollow",
   "loreReference": "A small Gateborn husk formed from erased memory. It attacks in groups and leaves cold silence behind when destroyed.",
@@ -41,15 +41,15 @@
   ],
   "mobilePerformanceTarget": "60fps target on mobile tactical view; silhouette readable at 360x640.",
   "sourceReferences": [
-    "canonical:TG-CREATURE-001",
-    "data/art-prompts.json#TG-PROMPT-CREATURE-001",
-    "data/character-backstories.json#TG-BACKSTORY-CREATURE-001"
+    "canonical:MG-CREATURE-001",
+    "data/art-prompts.json#MG-PROMPT-CREATURE-001",
+    "data/character-backstories.json#MG-BACKSTORY-CREATURE-001"
   ],
   "version": "1.0.0",
   "status": "BLUEPRINT_IN_PROGRESS",
   "dependencies": [
     "CREATURE_001",
-    "TG-3D-MASTER-SCALE-REFERENCE"
+    "MG-3D-MASTER-SCALE-REFERENCE"
   ],
   "requiredViews": [
     {

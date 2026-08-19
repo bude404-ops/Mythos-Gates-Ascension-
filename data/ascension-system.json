@@ -39,215 +39,215 @@
   ],
   "modifiers": [
     {
-      "id": "TG-ASC-MOD-REGEN",
+      "id": "MG-ASC-MOD-REGEN",
       "name": "Enemy Regeneration",
       "effect": "Enemies recover at round end unless controlled."
     },
     {
-      "id": "TG-ASC-MOD-LOWHEAL",
+      "id": "MG-ASC-MOD-LOWHEAL",
       "name": "Reduced Healing",
       "effect": "Healing effects are reduced, forcing prevention and positioning."
     },
     {
-      "id": "TG-ASC-MOD-EMBER",
+      "id": "MG-ASC-MOD-EMBER",
       "name": "Environmental Damage",
       "effect": "Hazard tiles pulse every second round."
     },
     {
-      "id": "TG-ASC-MOD-COOLDOWN",
+      "id": "MG-ASC-MOD-COOLDOWN",
       "name": "Cooldown Pressure",
       "effect": "Key abilities enter battle with +1 cooldown."
     },
     {
-      "id": "TG-ASC-MOD-FACTIONLOCK",
+      "id": "MG-ASC-MOD-FACTIONLOCK",
       "name": "Faction Restriction",
       "effect": "At least three deities from a rotating faction required."
     },
     {
-      "id": "TG-ASC-MOD-BOSSMUT",
+      "id": "MG-ASC-MOD-BOSSMUT",
       "name": "Boss Mutation",
       "effect": "Boss adds a new phase mechanic instead of simple stat inflation."
     }
   ],
   "sampleFloors": [
     {
-      "id": "TG-ASC-FLOOR-001",
+      "id": "MG-ASC-FLOOR-001",
       "floor": 1,
       "tier": "Normal",
       "recommendedPower": 325,
       "modifiers": [
-        "TG-ASC-MOD-REGEN"
+        "MG-ASC-MOD-REGEN"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     },
     {
-      "id": "TG-ASC-FLOOR-002",
+      "id": "MG-ASC-FLOOR-002",
       "floor": 2,
       "tier": "Normal",
       "recommendedPower": 350,
       "modifiers": [
-        "TG-ASC-MOD-EMBER"
+        "MG-ASC-MOD-EMBER"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     },
     {
-      "id": "TG-ASC-FLOOR-003",
+      "id": "MG-ASC-FLOOR-003",
       "floor": 3,
       "tier": "Normal",
       "recommendedPower": 375,
       "modifiers": [
-        "TG-ASC-MOD-REGEN"
+        "MG-ASC-MOD-REGEN"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     },
     {
-      "id": "TG-ASC-FLOOR-004",
+      "id": "MG-ASC-FLOOR-004",
       "floor": 4,
       "tier": "Normal",
       "recommendedPower": 400,
       "modifiers": [
-        "TG-ASC-MOD-EMBER"
+        "MG-ASC-MOD-EMBER"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     },
     {
-      "id": "TG-ASC-FLOOR-005",
+      "id": "MG-ASC-FLOOR-005",
       "floor": 5,
       "tier": "Normal",
       "recommendedPower": 425,
       "modifiers": [
-        "TG-ASC-MOD-REGEN"
+        "MG-ASC-MOD-REGEN"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     },
     {
-      "id": "TG-ASC-FLOOR-006",
+      "id": "MG-ASC-FLOOR-006",
       "floor": 6,
       "tier": "Normal",
       "recommendedPower": 450,
       "modifiers": [
-        "TG-ASC-MOD-EMBER"
+        "MG-ASC-MOD-EMBER"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     },
     {
-      "id": "TG-ASC-FLOOR-007",
+      "id": "MG-ASC-FLOOR-007",
       "floor": 7,
       "tier": "Normal",
       "recommendedPower": 475,
       "modifiers": [
-        "TG-ASC-MOD-REGEN"
+        "MG-ASC-MOD-REGEN"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     },
     {
-      "id": "TG-ASC-FLOOR-008",
+      "id": "MG-ASC-FLOOR-008",
       "floor": 8,
       "tier": "Normal",
       "recommendedPower": 500,
       "modifiers": [
-        "TG-ASC-MOD-EMBER"
+        "MG-ASC-MOD-EMBER"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     },
     {
-      "id": "TG-ASC-FLOOR-009",
+      "id": "MG-ASC-FLOOR-009",
       "floor": 9,
       "tier": "Normal",
       "recommendedPower": 525,
       "modifiers": [
-        "TG-ASC-MOD-REGEN"
+        "MG-ASC-MOD-REGEN"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     },
     {
-      "id": "TG-ASC-FLOOR-010",
+      "id": "MG-ASC-FLOOR-010",
       "floor": 10,
       "tier": "Normal",
       "recommendedPower": 550,
       "modifiers": [
-        "TG-ASC-MOD-EMBER"
+        "MG-ASC-MOD-EMBER"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     },
     {
-      "id": "TG-ASC-FLOOR-011",
+      "id": "MG-ASC-FLOOR-011",
       "floor": 11,
       "tier": "Hard",
       "recommendedPower": 575,
       "modifiers": [
-        "TG-ASC-MOD-REGEN"
+        "MG-ASC-MOD-REGEN"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     },
     {
-      "id": "TG-ASC-FLOOR-012",
+      "id": "MG-ASC-FLOOR-012",
       "floor": 12,
       "tier": "Hard",
       "recommendedPower": 600,
       "modifiers": [
-        "TG-ASC-MOD-EMBER"
+        "MG-ASC-MOD-EMBER"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     },
     {
-      "id": "TG-ASC-FLOOR-013",
+      "id": "MG-ASC-FLOOR-013",
       "floor": 13,
       "tier": "Hard",
       "recommendedPower": 625,
       "modifiers": [
-        "TG-ASC-MOD-REGEN"
+        "MG-ASC-MOD-REGEN"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     },
     {
-      "id": "TG-ASC-FLOOR-014",
+      "id": "MG-ASC-FLOOR-014",
       "floor": 14,
       "tier": "Hard",
       "recommendedPower": 650,
       "modifiers": [
-        "TG-ASC-MOD-EMBER"
+        "MG-ASC-MOD-EMBER"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     },
     {
-      "id": "TG-ASC-FLOOR-015",
+      "id": "MG-ASC-FLOOR-015",
       "floor": 15,
       "tier": "Hard",
       "recommendedPower": 675,
       "modifiers": [
-        "TG-ASC-MOD-REGEN"
+        "MG-ASC-MOD-REGEN"
       ],
       "objective": "Clear the floor while adapting to rotating tactical modifiers.",
-      "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
+      "rewardTable": "MG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     }
   ],

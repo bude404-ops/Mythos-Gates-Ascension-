@@ -19,7 +19,7 @@ Every character should read as an extradimensional being powerful enough to beco
 - Bold value contrast
 - Strong edge highlights
 - Rich color harmony
-- Collectible Titan presentation
+- Collectible deity presentation
 - Hand-painted finish
 
 ## Avoid
@@ -66,9 +66,9 @@ Each Realm must have:
 - Reasons to fear other Realms
 - Reasons other Realms fear it
 
-## Titan Writing Rule
+## Deity Writing Rule
 
-A Titan description should answer:
+A deity description should answer:
 
 1. Which Realm shaped this being?
 2. What civilization role does it embody?

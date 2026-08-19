@@ -100,16 +100,16 @@ export function renderGameScreen(data, state = {}) {
     title = 'Deity Selection';
     body = `<div class="selection-grid">${deities.map(t => deityCard(t, promptFor(t.id), dev)).join('')}</div>`;
   } else if (screen === 'deity-profile') {
-    const deity = entity.id?.startsWith('TG-DEITY') ? entity : data .titans[0];
+    const deity = entity.id?.startsWith('MG-DEITY') ? entity : data .titans[0];
     const prompt = promptFor(deity.id);
     title = deity.name;
     body = `<div class="profile-grid">${artPanel(deity, prompt)}<div class="game-card"><p class="micro">${esc(deity.id)} · ${esc(deity.faction)} · ${esc(deity.role)}</p><h3>${esc(deity.name)}</h3><p>${esc(deity.lore || deity.description || 'Lore connected through Codex.')}</p><div class="stat-row"><b>ATK ${esc(deity.stats?.attack ?? '—')}</b><b>DEF ${esc(deity.stats?.defense ?? '—')}</b><b>HP ${esc(deity.stats?.hp ?? '—')}</b></div><p class="ability">${esc(first(deity.abilities)?.name || 'Ability data ready')}</p></div></div>`;
   } else if (screen === 'character-profile') {
-    const npc = entity.id?.startsWith('TG-NPC') ? entity : npcs[0];
+    const npc = entity.id?.startsWith('MG-NPC') ? entity : npcs[0];
     title = npc.name;
     body = `<div class="profile-grid">${artPanel(npc, promptFor(npc.id))}<div class="game-card"><p class="micro">${esc(npc.id)} · Non-playable · ${esc(npc.faction)}</p><h3>${esc(npc.role)}</h3><p>${esc(npc.lore)}</p><p class="ability">${esc(npc.gameplayFunction)}</p></div></div>`;
   } else if (screen === 'faction') {
-    const faction = entity.id?.startsWith('TG-FACTION') ? entity : factions[0];
+    const faction = entity.id?.startsWith('MG-FACTION') ? entity : factions[0];
     title = faction.name;
     const factionDeities = data .titans.filter(t => t.factionId === faction.id || t.faction === faction.name).slice(0, 6);
     body = `<div class="game-card faction-banner"><p class="micro">${esc(faction.id)}</p><h3>${esc(faction.name)}</h3><p>${esc(faction.description)}</p><p>${esc(faction.visualIdentity)}</p></div><div class="selection-grid small">${factionDeities.map(t => deityCard(t, promptFor(t.id), dev)).join('')}</div>`;

@@ -18,5 +18,5 @@ Aten Ra is not "Egyptian-themed." In Mythos Gates canon, Aten Ra is the extradim
 ## Culture translation rules
 - Human Egyptian crowns, ankhs, djed pillars, was sceptres, lotus/papyrus imagery, pylons, obelisks, and solar discs are echoes of Aten Ra technology/regalia — the Realm came first.
 - Armor should not be generic gold plate. It should be divine office: crown, collar, pectoral, scale, linen wrap, pylon harness, solar-disc mantle, crook/was-like weapon geometry, and living light.
-- Characters must feel alive and mythic, not statues. Use human-like readability only as an echo; Titans are older than the human images.
+- Characters must feel alive and mythic, not statues. Use human-like readability only as an echo; deities are older than the human images.
 - Realms must express Nile/desert duality: Black Land fertility/river memory against Red Land desert/storm trial, held together by Ma'at and threatened by Isfet/Hollow chaos.

@@ -101,7 +101,7 @@ Validation never rewrites source assets.
 
 ## Current visual direction
 
-Mythos Gates uses 3D characters, 3D Titans, 3D creatures, 3D battlefields, 3D gates, 3D props, materials, animations, VFX, and lighting. Old 2D battlefield sprite systems are deprecated for active character/enemy gameplay.
+Mythos Gates uses 3D characters, 3D Deities, 3D creatures, 3D battlefields, 3D gates, 3D props, materials, animations, VFX, and lighting. Old 2D battlefield sprite systems are deprecated for active character/enemy gameplay.
 
 ## Big Bot auto-import
 

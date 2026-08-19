@@ -1,5 +1,5 @@
 {
-  "id": "TG-WORLD-SCALE-REFERENCE-001",
+  "id": "MG-WORLD-SCALE-REFERENCE-001",
   "version": "1.0.0",
   "created": "2026-08-11T21:06:00Z",
   "directive": "Mobile-first does not mean tiny. Tactical grid spaces are logical; visual scale must make Deities, Gates, and bosses feel immense.",
@@ -9,7 +9,7 @@
     "standardEnemy": 1.15,
     "eliteEnemy": 1.85,
     "largeEnemy": 2.8,
-    "playerDeity": 5.2,
+    "playerTitan": 5.2,
     "smallAgileDeity": 4.4,
     "heavyDeity": 6.1,
     "deityScaleEnemy": 5.8,
@@ -23,7 +23,7 @@
   },
   "visualRules": [
     "Normal enemies must occupy visibly less physical volume than the deity.",
-    "Do not shrink Titans to fit the map; enlarge architecture and Gate landmarks.",
+    "Do not shrink Deities to fit the map; enlarge architecture and Gate landmarks.",
     "deity attacks use larger arcs, shockwaves, dust, terrain reaction, and camera weight.",
     "The tactical grid expresses decisions, not literal human-sized squares.",
     "Gates are landmarks visible from major battlefield zones and large enough to justify deity travel."

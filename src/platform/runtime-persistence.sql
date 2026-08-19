@@ -1,4 +1,4 @@
--- Titan Gates runtime persistence contract v1. Idempotent/additive by policy.
+-- Deity Gates runtime persistence contract v1. Idempotent/additive by policy.
 CREATE TABLE IF NOT EXISTS players (
   player_id TEXT PRIMARY KEY,
   display_name TEXT NOT NULL,

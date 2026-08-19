@@ -1,9 +1,9 @@
 {
-  "id": "TG-COMMAND-HUB-001",
+  "id": "MG-COMMAND-HUB-001",
   "version": "1.7.0",
   "generated": "2026-08-13T00:00:00Z",
   "status": "IMPLEMENTED",
-  "purpose": "Mobile-first Main Menu / Command Hub runtime foundation with implemented first-launch Awakening onboarding, canon starter deity binding, save validation, campaign handoff, art scale references, enemy archetype registry, mission tactical profiles, Titan/Faction Trials, raid economy, and battlefield entry.",
+  "purpose": "Mobile-first Main Menu / Command Hub runtime foundation with implemented first-launch Awakening onboarding, canon starter deity binding, save validation, campaign handoff, art scale references, enemy archetype registry, mission tactical profiles, Deity/Faction Trials, raid economy, and battlefield entry.",
   "canonFirst": true,
   "forbiddenContent": [
     "futuristic craft",
@@ -75,7 +75,7 @@
     "factionTrials": "object"
   },
   "defaultPlayerState": {
-    "playerId": "TG-PLAYER-LOCAL-001",
+    "playerId": "MG-PLAYER-LOCAL-001",
     "playerName": "Gate Commander",
     "level": 1,
     "experience": {
@@ -84,23 +84,23 @@
     },
     "resources": [
       {
-        "id": "TG-RES-GATE-SHARDS",
+        "id": "MG-RES-GATE-SHARDS",
         "name": "Gate Shards",
         "amount": 0
       },
       {
-        "id": "TG-RES-ASCENSION-EMBER",
+        "id": "MG-RES-ASCENSION-EMBER",
         "name": "Ascension Ember",
         "amount": 0
       },
       {
-        "id": "TG-RES-TITAN-RELICS",
+        "id": "MG-RES-TITAN-RELICS",
         "name": "Deity Relics",
         "amount": 0
       }
     ],
     "selectedDeities": [
-      "TG-TITAN-001"
+      "MG-TITAN-001"
     ],
     "unlockedContent": {
       "campaign": true,
@@ -113,16 +113,16 @@
       "developerTools": true
     },
     "campaignProgress": {
-      "currentFactionId": "TG-FACTION-001",
-      "currentChapterId": "TG-F01-CH01",
-      "currentMissionId": "TG-F01-C01-M01",
+      "currentFactionId": "MG-FACTION-001",
+      "currentChapterId": "MG-F01-CH01",
+      "currentMissionId": "MG-F01-C01-M01",
       "completedMissionIds": [],
       "claimedRewards": [],
       "eliteUnlocked": false
     },
     "quests": [
       {
-        "id": "TG-QUEST-FIRST-GATE",
+        "id": "MG-QUEST-FIRST-GATE",
         "title": "Open the First Gate",
         "objective": "Launch the first campaign mission.",
         "status": "ACTIVE",
@@ -141,14 +141,14 @@
       "milestones": [
         "GATE_SIGNAL_DETECTED"
       ],
-      "awakeningMissionId": "TG-F01-C01-M01",
+      "awakeningMissionId": "MG-F01-C01-M01",
       "currentBeat": 1,
       "completedBeatIds": [],
       "starterChoiceReason": null,
       "fullRosterHidden": true
     },
     "economy": {
-      "schemaVersion": "TG-F2P-ECONOMY@1.0.0",
+      "schemaVersion": "MG-F2P-ECONOMY@1.0.0",
       "wallets": {
         "GOLD": 0,
         "PREMIUM_CURRENCY": 0,
@@ -167,7 +167,7 @@
         "claimedKeys": []
       },
       "battlePass": {
-        "seasonId": "TG-SEASON-001",
+        "seasonId": "MG-SEASON-001",
         "xp": 0,
         "level": 1,
         "premiumOwned": false,
@@ -313,26 +313,26 @@
     "getNextRecommendedAction resolves a real mission handoff.",
     "Startup save validation never silently overwrites corrupt data.",
     "Command Hub smoke completes BOOT -> LOAD -> HUB -> TITANS -> BACK -> BATTLE -> RETURN -> HUB.",
-    "TG-DEV-026 Awakening onboarding exposes exactly three canon starter Deities.",
-    "TG-DEV-026 Awakening path tracks 12 roster-journey beats from starter choice to faction trial handoff.",
+    "MG-DEV-026 Awakening onboarding exposes exactly three canon starter Deities.",
+    "MG-DEV-026 Awakening path tracks 12 roster-journey beats from starter choice to faction trial handoff.",
     "Full roster remains hidden until Awakening completion and no starter selection requires payment.",
-    "TG-DEV-027 Trials tab creates save-backed Divine Trial attempts with temporary loadouts.",
-    "TG-DEV-027 Trial completion writes deityTrials, factionTrials, pending TITAN_TRIAL rewards, and Trial Favor.",
-    "TG-DEV-027 Borrowed loadouts expire at END_OF_TRIAL and never grant permanent paid power.",
-    "TG-DEV-028 all 280 campaign missions expose tactical problem tags and advantage roles.",
-    "TG-DEV-028 recommended deities are valid, favored-not-required, and never ownership locks.",
-    "TG-DEV-023 every creature resolves to a production enemy archetype and AI profile.",
-    "TG-DEV-023 difficulty tiers expose explicit tactical scaling budgets before stat inflation.",
-    "TG-DEV-008 Hollow Wretch and Gateborn Colossus behavior records drive playable battle intents.",
-    "TG-DEV-008 battle UI exposes telegraphs, reaction counterplay, behavior tags, and threat budgets.",
-    "TG-DEV-030 all 8 Art Director scale sheet types are implemented.",
-    "TG-DEV-030 scale sheets preserve deity/Gate mass, mobile crop readability, and non-sci-fi terrain language.",
-    "TG-TASK-COMMAND-HUB-018 render telemetry tracks route render counts, max render time, and budget overruns.",
-    "TG-TASK-COMMAND-HUB-018 reward claims support partial resource-bar refresh without mandatory full route re-render.",
-    "TG-TASK-COMMAND-HUB-018 visible asset preloads use cached lookups and count boot/title/hub assets only.",
-    "TG-TASK-COMMAND-HUB-019 final art integration resolves approved asset slots before placeholders.",
-    "TG-TASK-COMMAND-HUB-019 Command Hub surfaces art provenance, fallback state, and runtime safety for QA.",
-    "TG-TASK-COMMAND-HUB-019 starter deity, realm Gate, and faction background art slots are covered by manifest rules.",
+    "MG-DEV-027 Trials tab creates save-backed Divine Trial attempts with temporary loadouts.",
+    "MG-DEV-027 Trial completion writes deityTrials, factionTrials, pending TITAN_TRIAL rewards, and Trial Favor.",
+    "MG-DEV-027 Borrowed loadouts expire at END_OF_TRIAL and never grant permanent paid power.",
+    "MG-DEV-028 all 280 campaign missions expose tactical problem tags and advantage roles.",
+    "MG-DEV-028 recommended deities are valid, favored-not-required, and never ownership locks.",
+    "MG-DEV-023 every creature resolves to a production enemy archetype and AI profile.",
+    "MG-DEV-023 difficulty tiers expose explicit tactical scaling budgets before stat inflation.",
+    "MG-DEV-008 Hollow Wretch and Gateborn Colossus behavior records drive playable battle intents.",
+    "MG-DEV-008 battle UI exposes telegraphs, reaction counterplay, behavior tags, and threat budgets.",
+    "MG-DEV-030 all 8 Art Director scale sheet types are implemented.",
+    "MG-DEV-030 scale sheets preserve deity/Gate mass, mobile crop readability, and non-sci-fi terrain language.",
+    "MG-TASK-COMMAND-HUB-018 render telemetry tracks route render counts, max render time, and budget overruns.",
+    "MG-TASK-COMMAND-HUB-018 reward claims support partial resource-bar refresh without mandatory full route re-render.",
+    "MG-TASK-COMMAND-HUB-018 visible asset preloads use cached lookups and count boot/title/hub assets only.",
+    "MG-TASK-COMMAND-HUB-019 final art integration resolves approved asset slots before placeholders.",
+    "MG-TASK-COMMAND-HUB-019 Command Hub surfaces art provenance, fallback state, and runtime safety for QA.",
+    "MG-TASK-COMMAND-HUB-019 starter deity, realm Gate, and faction background art slots are covered by manifest rules.",
     "F2P economy audit passes",
     "No duplicate energy/currency systems",
     "Core combat remains free and primary",
@@ -347,15 +347,15 @@
   },
   "readyForFutureContent": true,
   "onboardingFlow": {
-    "taskId": "TG-DEV-026",
+    "taskId": "MG-DEV-026",
     "status": "IMPLEMENTED",
     "source": "data/player-onboarding-roster-journey.json",
     "starterDeityIds": [
-      "TG-TITAN-001",
-      "TG-TITAN-006",
-      "TG-TITAN-009"
+      "MG-TITAN-001",
+      "MG-TITAN-006",
+      "MG-TITAN-009"
     ],
-    "starterFactionId": "TG-FACTION-001",
+    "starterFactionId": "MG-FACTION-001",
     "beatCount": 12,
     "fullRosterHiddenUntilComplete": true,
     "completionMilestones": [
@@ -370,17 +370,17 @@
     ]
   },
   "trialSystem": {
-    "taskId": "TG-DEV-027",
+    "taskId": "MG-DEV-027",
     "status": "IMPLEMENTED",
     "source": "data/deity-trial-system.json",
     "trialDeityIds": [
-      "TG-TITAN-005",
-      "TG-TITAN-005",
-      "TG-TITAN-010"
+      "MG-TITAN-005",
+      "MG-TITAN-005",
+      "MG-TITAN-010"
     ],
     "modeCount": 3,
     "temporaryLoadoutExpires": "END_OF_TRIAL",
-    "persistentResourceId": "TG-RES-TRIAL-FAVOR",
+    "persistentResourceId": "MG-RES-TRIAL-FAVOR",
     "antiPayToWinRules": [
       "Trial Favor persists; borrowed gear does not.",
       "No shop currency, PvP rating, raid tokens, or uncapped materials from trials.",
@@ -389,7 +389,7 @@
     ]
   },
   "missionTacticalProfiles": {
-    "taskId": "TG-DEV-028",
+    "taskId": "MG-DEV-028",
     "status": "IMPLEMENTED",
     "source": "data/mission-tactical-profile-system.json",
     "missionCoverage": {
@@ -408,12 +408,12 @@
     "data/creature-behavior-runtime-contract.json"
   ],
   "creatureBehaviorRuntime": {
-    "taskId": "TG-DEV-008",
+    "taskId": "MG-DEV-008",
     "status": "IMPLEMENTED",
     "source": "data/creature-behavior-runtime-contract.json",
     "creatureIds": [
-      "TG-CREATURE-001",
-      "TG-CREATURE-002"
+      "MG-CREATURE-001",
+      "MG-CREATURE-002"
     ],
     "runtimeProfiles": [
       "HOLLOW_SWARMER",
@@ -435,7 +435,7 @@
     "rule": "Creature difficulty must be readable through telegraphed behavior and counterplay before damage or objective denial resolves."
   },
   "enemyArchetypeRegistry": {
-    "taskId": "TG-DEV-023",
+    "taskId": "MG-DEV-023",
     "status": "IMPLEMENTED",
     "source": "data/enemy-archetype-registry.json",
     "creatures": 18,
@@ -444,7 +444,7 @@
     "rule": "Enemy difficulty comes from readable AI, composition, hazards, and phases before raw stat inflation."
   },
   "artDirectorScaleSheets": {
-    "taskId": "TG-DEV-030",
+    "taskId": "MG-DEV-030",
     "status": "IMPLEMENTED",
     "source": "data/art-director-scale-sheets.json",
     "requiredSheets": 8,
@@ -453,7 +453,7 @@
     "rule": "Scale references enlarge Gates, architecture, and battlefield space instead of shrinking Deities."
   },
   "commandHubPerformance": {
-    "taskId": "TG-TASK-COMMAND-HUB-018",
+    "taskId": "MG-TASK-COMMAND-HUB-018",
     "status": "IMPLEMENTED",
     "source": "game/command-hub-runtime.mjs",
     "renderBudgetMs": 32,
@@ -471,7 +471,7 @@
     ]
   },
   "commandHubFinalArtIntegration": {
-    "taskId": "TG-TASK-COMMAND-HUB-019",
+    "taskId": "MG-TASK-COMMAND-HUB-019",
     "status": "IMPLEMENTED",
     "source": "data/asset-registry.json",
     "runtime": "game/command-hub-runtime.mjs",
@@ -481,9 +481,9 @@
       "TITAN_PRESENTATION"
     ],
     "starterDeityIds": [
-      "TG-TITAN-001",
-      "TG-TITAN-006",
-      "TG-TITAN-009"
+      "MG-TITAN-001",
+      "MG-TITAN-006",
+      "MG-TITAN-009"
     ],
     "rules": [
       "FINAL assets are selected through AssetManager.resolvedPath.",

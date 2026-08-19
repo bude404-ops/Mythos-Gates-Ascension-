@@ -19,8 +19,8 @@ Readiness grade after the mission/campaign lore run-in pass: A- for AAA preprodu
 - Collaboration governance exists: contribution rules, PR template, issue templates, ownership map, release checklist.
 - AAA migration lanes now exist for schemas, source-module extraction, and grouped tests.
 - First production source modules now exist for gameplay, economy, data loading, schema contracts, UI state presentation, and gate manifesting.
-- Schema validation now checks Titans, factions, maps, mission dialogue, economy, telemetry, external AI packets, canon version manifests, all missions, and real asset manifests before deploy.
-- Engine integration scaffolding now exists for shared exports; Unreal Engine 5 is now the primary mobile-first target with a Titan-scale dungeon-crawler framework, zone template, DataAsset/DataTable mapping, and mobile-first constraints.
+- Schema validation now checks Deities, factions, maps, mission dialogue, economy, telemetry, external AI packets, canon version manifests, all missions, and real asset manifests before deploy.
+- Engine integration scaffolding now exists for shared exports; Unreal Engine 5 is now the primary mobile-first target with a Deity-scale dungeon-crawler framework, zone template, DataAsset/DataTable mapping, and mobile-first constraints.
 - Canon migration/versioning policy now exists with append-only migration records and release-gate validation.
 - Platform Core v1 now exists for player profile creation, save import/export, roster ownership, progression persistence, inventory balances, and currency ledger events.
 - Hosted backend boundary v1 now defines profile service, cloud save service, authoritative economy ledger service, and telemetry ingestion service with idempotency and version-conflict rules.
@@ -32,14 +32,14 @@ Readiness grade after the mission/campaign lore run-in pass: A- for AAA preprodu
 
 ### 1. Unreal Engine 5 target needs real project implementation
 
-The architecture now names Unreal Engine 5 as the primary target and maps the first mission into a reusable Titan-scale dungeon-crawler template. The next implementation risk is creating actual UE5 project files, DataAssets, Blueprints, Level Instances, import commandlets, and mobile render profiles.
+The architecture now names Unreal Engine 5 as the primary target and maps the first mission into a reusable Deity-scale dungeon-crawler template. The next implementation risk is creating actual UE5 project files, DataAssets, Blueprints, Level Instances, import commandlets, and mobile render profiles.
 
 Required next state:
 
 - UE5 mobile-first project shell with plugin/module layout
 - generated DataAssets/DataTables from canon
 - Blueprint Actor Components for exploration, encounters, and tactical arena entry
-- Level Instance template for `TG-F01-C01-M01`
+- Level Instance template for `MG-F01-C01-M01`
 - Android/iOS device profiles, mobile lighting, LOD, culling, texture budgets, FPS/memory harness, one-Deity-vs-many combat loop, visible power progression checks, cross-faction creature encounter pools, mission/campaign lore guardrails, and first-zone approval gate
 
 ### 2. Prototype code is too bundled
@@ -73,7 +73,7 @@ The repo validates references and IDs, but AAA production needs explicit JSON Sc
 
 Priority schemas:
 
-- Titan
+- Deity
 - Faction/Realm
 - Mission
 - Mission dialogue

@@ -415,7 +415,7 @@ for (const task of data.tasks) {
 const soloSchema = data.soloBattleStateSchema;
 if(soloSchema.status !== 'IMPLEMENTED') fail('Solo battle state schema must be IMPLEMENTED');
 for (const field of ['stateShape','reducers','resourceRules','qualityGates','verticalSliceDefault']) if(!soloSchema[field]) fail(`Solo battle state schema missing ${field}`);
-if(soloSchema.verticalSliceDefault.starterDeityId !== 'TG-TITAN-001') fail('Solo battle starter Titan must remain canonical Aten-Ra');
+if(soloSchema.verticalSliceDefault.starterDeityId !== 'TG-TITAN-001') fail('Solo battle starter Deity must remain canonical Aten-Ra');
 if(!titanIds.has(soloSchema.verticalSliceDefault.starterDeityId)) fail('Solo battle schema references invalid starter Deity');
 for (const enemyId of soloSchema.verticalSliceDefault.starterEnemies || []) if(!creatureIds.has(enemyId)) fail(`Solo battle schema invalid starter enemy ${enemyId}`);
 for (const reducer of ['createInitialSoloBattleState','applyDeityAction','revealEnemyIntents','resolveEnemyPhase','applyReaction','applyTerrainTick','evaluateObjectives']) if(!soloSchema.reducers.some(r => r.name === reducer)) fail(`Solo battle schema missing reducer ${reducer}`);
@@ -516,7 +516,7 @@ for (const tag of tacticalProfileSystem.allowedProblemTags || []) if(!allowedMis
 for (const role of tacticalProfileSystem.allowedDeityRoles || []) if(!allowedDeityRoles.has(role)) fail(`TG-DEV-028 invalid allowed role ${role}`);
 for (const tag of allowedMissionProblemTags) if((missionTagCounts.get(tag) || 0) < 1) fail(`TG-DEV-028 tag has no mission coverage: ${tag}`);
 for (const role of allowedTitanRoles) if((missionRoleCounts.get(role) || 0) < 1) fail(`TG-DEV-028 deity role has no mission recommendation coverage: ${role}`);
-for (const rule of ['Mission tactical profiles may recommend roles and Titans, but never require ownership.','Every tagged mission must keep ownershipLock=false and favoredNotRequired=true.']) if(!tacticalProfileSystem.antiPayToWinRules?.includes(rule)) fail(`TG-DEV-028 rule missing: ${rule}`);
+for (const rule of ['Mission tactical profiles may recommend roles and Deities, but never require ownership.','Every tagged mission must keep ownershipLock=false and favoredNotRequired=true.']) if(!tacticalProfileSystem.antiPayToWinRules?.includes(rule)) fail(`TG-DEV-028 rule missing: ${rule}`);
 if(hub.missionTacticalProfiles?.status !== 'IMPLEMENTED' || hub.missionTacticalProfiles?.taskId !== 'TG-DEV-028') fail('Command Hub mission tactical profile summary must implement TG-DEV-028');
 if(hub.missionTacticalProfiles?.ownershipLock !== false || hub.missionTacticalProfiles?.favoredNotRequired !== true) fail('Command Hub mission profile ownership rule mismatch');
 if(!hub.qualityGates?.some(g => g.includes('TG-DEV-028 all 280 campaign missions'))) fail('Command Hub quality gate missing TG-DEV-028');

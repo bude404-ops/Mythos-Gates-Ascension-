@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate lightweight blockout placement data from Titan Gates tactical blueprint JSON.
+"""Generate lightweight blockout placement data from Deity Gates tactical blueprint JSON.
 
 Outputs engine-neutral placement rows that can be imported by Unity, Godot, Unreal,
 Blender, or a custom grid runtime. No engine dependency required.
@@ -121,7 +121,7 @@ def write_csv(out: Path, rows: list[Placement]) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Generate scene blockout placements from a Titan Gates blueprint.")
+    parser = argparse.ArgumentParser(description="Generate scene blockout placements from a Deity Gates blueprint.")
     parser.add_argument("--input", default="data/tactical-blueprint-layouts.json", help="Blueprint JSON path")
     parser.add_argument("--id", default=None, help="Specific blueprint id")
     parser.add_argument("--out", default="dist/blueprint-scene-placements.json", help="Output file")

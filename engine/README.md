@@ -16,6 +16,6 @@ engine/unity/      Unity-oriented ScriptableObject handoff notes and adapter man
 
 1. Canon stays in JSON/data/lore records.
 2. Engine adapters consume `src/` modules and schema-validated content.
-3. No engine folder may invent Titan, faction, mission, or asset facts.
+3. No engine folder may invent Deity, faction, mission, or asset facts.
 4. Engine import work must preserve permanent IDs from manifests and source records.
 5. Generated engine output must be reproducible from source records.

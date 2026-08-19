@@ -46,7 +46,7 @@ The Forgotten wander ruins. The Hollow feed on identity. Gateborn anomalies emer
 
 Mythos Gates begin opening again.
 
-Some reveal lost routes. Some reveal traps. Some awaken Titans. Some expose ancient World Bosses. Some suggest that the Ascension Collapse may not have been an accident.
+Some reveal lost routes. Some reveal traps. Some awaken Deities. Some expose ancient World Bosses. Some suggest that the Ascension Collapse may not have been an accident.
 
 This is the current game era.
 

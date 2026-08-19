@@ -1,10 +1,10 @@
 {
   "assetId": "CREATURE_002",
   "assetType": "CREATURE",
-  "canonicalEntityId": "TG-CREATURE-002",
+  "canonicalEntityId": "MG-CREATURE-002",
   "canonicalName": "Gateborn Colossus",
   "faction": "Unstable Gate",
-  "loreReference": "A giant malformed guardian grown around unstable Gate stone. It is not a Titan and has no civilization; it is a defensive catastrophe.",
+  "loreReference": "A giant malformed guardian grown around unstable Gate stone. It is not a Deity and has no civilization; it is a defensive catastrophe.",
   "canonAuthority": "Current Mythos Gates canon/lore data layer. 3D Asset Director may translate scale and production needs but may not override Lore Director.",
   "scale": {
     "scaleKey": "eliteEnemy",
@@ -41,16 +41,16 @@
   ],
   "mobilePerformanceTarget": "60fps target on mobile tactical view; silhouette readable at 360x640.",
   "sourceReferences": [
-    "canonical:TG-CREATURE-002",
-    "data/art-prompts.json#TG-PROMPT-CREATURE-002",
-    "data/character-backstories.json#TG-BACKSTORY-CREATURE-002"
+    "canonical:MG-CREATURE-002",
+    "data/art-prompts.json#MG-PROMPT-CREATURE-002",
+    "data/character-backstories.json#MG-BACKSTORY-CREATURE-002"
   ],
   "version": "1.0.0",
   "status": "BLUEPRINT_IN_PROGRESS",
   "dependencies": [
-    "TG-3D-MASTER-SCALE-REFERENCE",
-    "TG-3D-MATERIAL-LIBRARY",
-    "TG-3D-VISUAL-STYLE-GUIDE"
+    "MG-3D-MASTER-SCALE-REFERENCE",
+    "MG-3D-MATERIAL-LIBRARY",
+    "MG-3D-VISUAL-STYLE-GUIDE"
   ],
   "requiredViews": [
     {
