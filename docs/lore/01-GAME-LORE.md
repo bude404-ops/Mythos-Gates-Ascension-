@@ -93,15 +93,20 @@ The old paths are broken. The Gates are reopening. The Realms are mobilizing. Th
 
 Mythos Gates is the story of divine mythological civilizations fighting over the broken machinery of reality — not with science, not with spaceships, not with alien technology, but with ancient power, sacred law, living myth, and colossal divine Avatars projected through the Gates from the souls of their Realms.
 
-## Earth-Centered Campaign Design
+## Mythological Earth Campaign Design
 
-The Gate opened on Earth — and that is where the war is fought. All campaign missions take place on Earth. The faction realms are the deities' home domains, but they are not the front lines. Earth is the contested ground where the Gate's instability has reshaped the landscape into hostile, varied battlegrounds.
+The Gate opened on Earth — but not in one place. It fractured the very lands where each mythology was born. Every faction's campaign takes place in their mythological homeland, set in the ancient era when that culture flourished:
 
-The Gate has fractured Earth into distinct zones, each corrupted in different ways:
-- **Gate-Scarred Wasteland** (Ch1): The initial breach zone — cracked earth, bleeding energy
-- **Hollowed City Ruins** (Ch2): Urban areas twisted by Gate energy
-- **Fractured Cathedral Grounds** (Ch3): Sacred sites cracked open by divine pressure
-- **Gate-Stone Battlefield** (Ch4): Open plains where Gate fragments protrude as monoliths
-- **The Gate Threshold** (Ch5): The epicenter where all seven realm-Gates converge
+- **Aten Ra** fights in Ancient Egypt — from the Nile Delta to the Great Pyramid
+- **Olympian** fights in Ancient Greece — from the Aegean coast to Mount Olympus
+- **Kami** fights in Ancient Japan — from coastal shrines to Mount Fuji
+- **Tuatha** fights in Ancient Ireland — from misted coastlines to the Giant's Causeway
+- **Empyrean** fights in Ancient Mesopotamia — from ziggurat steps to the Tower of Babel
+- **Infernal** fights in the Ancient Underworld (Kur) — from cursed ruins to the Abyss
+- **Asgardian** fights in Ancient Scandinavia — from frozen fjords to Yggdrasil's Root
 
-Faction realms (Khepra, Asgard, Olympus, etc.) are stable and protected. They are accessible only through special events — limited-time raids, faction wars, and seasonal content. These events offer exclusive rewards and let players experience the deities' home domains directly.
+**The enemy is the Hollow.** Factions do not fight each other in the campaign. The Hollow are void creatures that invade through the Gate — they are the antithesis of all divine creation. Each faction's avatar defends their mythological homeland against the Hollow invasion.
+
+The deities drew their power from the cultures that worshipped them. When the Gate fractured these ancient lands, the Hollow exploited the wounds. The avatars return to the birthplace of their mythology to push back the void and seal the Gate fractures.
+
+**Faction realms** (Khepra, Asgard, Olympus, etc.) are the deities' home domains — stable, protected, and accessible only through special events. The war is on Earth, in the ancient lands where belief was born.

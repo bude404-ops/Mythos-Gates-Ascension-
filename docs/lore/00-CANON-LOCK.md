@@ -73,11 +73,21 @@ The extradimensional civilization-domains are called "Realms."
 
 ## Campaign Location Rule
 
-- **ALL campaign missions take place on Earth.** Earth is the main game space.
-- **Mission 1-20**: All on Earth (MAP-001), with varied terrain per chapter representing the Gate's corruption spreading across different Earth environments.
-- **Faction realms are EVENT-ONLY**: Khepra, Asgard, Olympus, Takamagahara, Avalora, Radiant Hierarchies, and the Infernal Dominion are used for special events (raids, faction wars, seasonal content, world bosses).
-- **Earth is neutral ground**: No faction advantage or penalty. The Gate opened here — this is the front line.
-- **The trial (MAP-000)**: Also on Earth — the entry point where mortals encounter the Gate and choose a deity.
+- **ALL campaign missions take place on Earth** — in the geographic region where each faction's mythology originates, set in an ancient historical timeline.
+- **Each faction's Earth region**:
+  - Aten Ra → Ancient Egypt (Old Kingdom era, ~2500 BCE)
+  - Olympian → Ancient Greece (Classical era, ~500 BCE)
+  - Kami → Ancient Japan (Asuka/Nara period, ~700 CE)
+  - Tuatha → Ancient Ireland (Celtic Bronze Age, ~1000 BCE)
+  - Empyrean → Ancient Mesopotamia (Sumerian era, ~3000 BCE)
+  - Infernal → Ancient Mesopotamia Underworld / Kur (Sumerian era, ~3000 BCE)
+  - Asgardian → Ancient Scandinavia (Migration Age, ~500 CE)
+- **The enemy is the Hollow** — void creatures invading through the Gate. Factions are NOT fighting each other in campaigns.
+- **5 unique environments per chapter** — each reflecting the mythological region's progression toward the Gate nexus.
+- **Earth is neutral ground** — no faction advantage or penalty.
+- **Faction realms are EVENT-ONLY** — raids, faction wars, seasonal content, world bosses.
+- **The trial (MAP-000)**: Earth — entry point where mortals encounter the Gate and choose a deity.
+- **Lore justification**: The deities drew power from the cultures that worshipped them. The Gate opened in those exact ancient lands, fracturing the birthplace of each mythology. The Hollow exploit these ancient wounds.
 
 ## Avatar System (Core Mechanic)
 

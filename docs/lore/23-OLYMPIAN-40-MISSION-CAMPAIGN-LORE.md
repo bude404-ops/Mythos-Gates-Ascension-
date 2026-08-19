@@ -23,33 +23,35 @@ Elite missions reinterpret these events as sharper tactical trials. The trial ha
 The finale leaves the Gate contested but not claimed. Olympus wins the right to compete, not the right to declare victory.
 
 
-## EARTH-CENTERED CAMPAIGN STRUCTURE
+## MYTHOLOGICAL EARTH CAMPAIGN
 
-**Core Direction**: ALL campaign missions take place on Earth. Earth is the primary game space — the Gate opened here, and the battles for control happen on human ground. Faction realms (Khepra, Asgard, Olympus, Takamagahara, Avalora, the Radiant Hierarchies, and the Infernal Dominion) are reserved for SPECIAL EVENTS outside the main campaign — limited-time raids, faction wars, seasonal content, and world boss encounters.
+**Core Direction**: All campaign missions take place on Earth — specifically in Ancient Greece during the circa 500 BCE — Classical era. Each faction fights in the geographic region where their mythology originates, set in an ancient historical timeline. The enemy is the **Hollow** — void creatures invading through the Gate.
+
+### Why Ancient Greece?
+
+The deities drew their original power from the cultures that worshipped them. When the Gate opened on Earth, it fractured the very lands where these mythologies were born. The Hollow exploit these ancient Gate-wounds. Each deity sends their avatar to defend their mythological homeland — the place where human belief first gave them form.
 
 ### Earth Environments by Chapter:
 
-| Chapter | Earth Zone | Description |
-|---------|-----------|-------------|
-| Ch1 | Gate-Scarred Wasteland | Cracked earth with Gate-fracture lines, ruined urban outskirts, white energy bleeding from ground fissures |
-| Ch2 | Hollowed City Ruins | Shattered skyscrapers twisted by Gate energy, void-mist seeping through split streets, abandoned vehicles fused with stone |
-| Ch3 | Fractured Cathedral Grounds | Ancient structures cracked by Gate pressure, stained glass dissolved into light-shards, altar stones floating in anti-gravity zones |
-| Ch4 | Gate-Stone Battlefield | Open plains with Gate fragments protruding like black monoliths, scorched ground in faction-colored energy patterns, crater fields |
-| Ch5 | The Gate Threshold | Epicenter where all seven realm-Gates converge on Earth — reality warping with overlapping faction energies, the final battleground |
+| Chapter | Location | Visual Description |
+|---------|----------|-------------------|
+| Ch1 | Aegean Coast | white-stone cliffs above turquoise sea, ancient harbors with trireme wrecks, olive groves cracking under Gate-pressure, coastal temples split by void-fissures |
+| Ch2 | The Acropolis | marble temples with shattered columns, amphitheaters where void-mist fills the orchestra pit, Parthenon stones floating in anti-gravity zones |
+| Ch3 | Oracle's Mountain | misty mountain pass above Delphi, vaporous chasms where the Oracle once prophesied now bleed void-mist, Gate fragments embedded in the rock face |
+| Ch4 | Sacred Grove of Olympia | ancient athletic grounds overgrown with void-corrupted vegetation, fallen statues of champions, the Temple of Zeus split open by a Gate eruption |
+| Ch5 | Mount Olympus Base | the mythical mountain's lower slopes where storm-clouds and void-mist intermix, ancient shrines crumbling, the summit glowing with the Gate nexus |
 
-### Why Earth?
+### The Enemy: The Hollow
 
-The Gate is a wound in reality that opened on Earth. The deities send their avatars to Earth because that is where the Gate's instability is concentrated. The faction realms are the deities' home domains — they are stable, protected, and NOT the front lines. Earth is the contested neutral ground where all factions meet, clash, and fight for control of the Gate fragments.
+All campaign enemies are **Hollow** — void creatures that emerge through the Gate. They are not the faction deities or their armies. The Hollow are the antithesis of all divine creation — formless void-mist entities anchored by Gate stone fragments. They consume belief, dissolve divine energy, and seek to unmake the Gate itself.
 
-### Realm Events (Outside Campaign)
+### Earth is Neutral Ground
 
-Faction realms are accessible through special events:
-- **Realm Raids**: Limited-time incursions into a specific faction's realm for exclusive rewards
-- **Faction Wars**: Scheduled cross-realm PvP events where players fight in enemy faction territory
-- **Seasonal Content**: Holiday-themed events set in specific realms
-- **World Boss Arenas**: Boss encounters set in faction realm locations
+No faction advantage or penalty applies. The avatar fights with full power on Earth — but the Hollow are strongest at the Gate's breach points. The campaign difficulty scales with Hollow density, not faction opposition.
 
-These events use the faction realm maps (MG-MAP-002 through MG-MAP-012) and offer rewards not available in the main campaign.
+### Faction Realms (Events Only)
+
+The deity's actual realm (Ancient Greece) is accessible only through special events — realm raids, faction wars, seasonal content, and world boss encounters. The campaign stays on Earth.
 
 ## Campaign Spine
 
@@ -89,30 +91,32 @@ Elite missions reinterpret the entire campaign as a sharper trial. The Gate has 
 The finale proves that victory was not accidental. The deity must win the trial twice — once against the Gate, once against the Gate's memory of being beaten.
 
 
-## EARTH-CENTERED CAMPAIGN STRUCTURE
+## MYTHOLOGICAL EARTH CAMPAIGN
 
-**Core Direction**: ALL campaign missions take place on Earth. Earth is the primary game space — the Gate opened here, and the battles for control happen on human ground. Faction realms (Khepra, Asgard, Olympus, Takamagahara, Avalora, the Radiant Hierarchies, and the Infernal Dominion) are reserved for SPECIAL EVENTS outside the main campaign — limited-time raids, faction wars, seasonal content, and world boss encounters.
+**Core Direction**: All campaign missions take place on Earth — specifically in Ancient Greece during the circa 500 BCE — Classical era. Each faction fights in the geographic region where their mythology originates, set in an ancient historical timeline. The enemy is the **Hollow** — void creatures invading through the Gate.
+
+### Why Ancient Greece?
+
+The deities drew their original power from the cultures that worshipped them. When the Gate opened on Earth, it fractured the very lands where these mythologies were born. The Hollow exploit these ancient Gate-wounds. Each deity sends their avatar to defend their mythological homeland — the place where human belief first gave them form.
 
 ### Earth Environments by Chapter:
 
-| Chapter | Earth Zone | Description |
-|---------|-----------|-------------|
-| Ch1 | Gate-Scarred Wasteland | Cracked earth with Gate-fracture lines, ruined urban outskirts, white energy bleeding from ground fissures |
-| Ch2 | Hollowed City Ruins | Shattered skyscrapers twisted by Gate energy, void-mist seeping through split streets, abandoned vehicles fused with stone |
-| Ch3 | Fractured Cathedral Grounds | Ancient structures cracked by Gate pressure, stained glass dissolved into light-shards, altar stones floating in anti-gravity zones |
-| Ch4 | Gate-Stone Battlefield | Open plains with Gate fragments protruding like black monoliths, scorched ground in faction-colored energy patterns, crater fields |
-| Ch5 | The Gate Threshold | Epicenter where all seven realm-Gates converge on Earth — reality warping with overlapping faction energies, the final battleground |
+| Chapter | Location | Visual Description |
+|---------|----------|-------------------|
+| Ch1 | Aegean Coast | white-stone cliffs above turquoise sea, ancient harbors with trireme wrecks, olive groves cracking under Gate-pressure, coastal temples split by void-fissures |
+| Ch2 | The Acropolis | marble temples with shattered columns, amphitheaters where void-mist fills the orchestra pit, Parthenon stones floating in anti-gravity zones |
+| Ch3 | Oracle's Mountain | misty mountain pass above Delphi, vaporous chasms where the Oracle once prophesied now bleed void-mist, Gate fragments embedded in the rock face |
+| Ch4 | Sacred Grove of Olympia | ancient athletic grounds overgrown with void-corrupted vegetation, fallen statues of champions, the Temple of Zeus split open by a Gate eruption |
+| Ch5 | Mount Olympus Base | the mythical mountain's lower slopes where storm-clouds and void-mist intermix, ancient shrines crumbling, the summit glowing with the Gate nexus |
 
-### Why Earth?
+### The Enemy: The Hollow
 
-The Gate is a wound in reality that opened on Earth. The deities send their avatars to Earth because that is where the Gate's instability is concentrated. The faction realms are the deities' home domains — they are stable, protected, and NOT the front lines. Earth is the contested neutral ground where all factions meet, clash, and fight for control of the Gate fragments.
+All campaign enemies are **Hollow** — void creatures that emerge through the Gate. They are not the faction deities or their armies. The Hollow are the antithesis of all divine creation — formless void-mist entities anchored by Gate stone fragments. They consume belief, dissolve divine energy, and seek to unmake the Gate itself.
 
-### Realm Events (Outside Campaign)
+### Earth is Neutral Ground
 
-Faction realms are accessible through special events:
-- **Realm Raids**: Limited-time incursions into a specific faction's realm for exclusive rewards
-- **Faction Wars**: Scheduled cross-realm PvP events where players fight in enemy faction territory
-- **Seasonal Content**: Holiday-themed events set in specific realms
-- **World Boss Arenas**: Boss encounters set in faction realm locations
+No faction advantage or penalty applies. The avatar fights with full power on Earth — but the Hollow are strongest at the Gate's breach points. The campaign difficulty scales with Hollow density, not faction opposition.
 
-These events use the faction realm maps (MG-MAP-002 through MG-MAP-012) and offer rewards not available in the main campaign.
+### Faction Realms (Events Only)
+
+The deity's actual realm (Ancient Greece) is accessible only through special events — realm raids, faction wars, seasonal content, and world boss encounters. The campaign stays on Earth.

@@ -23,33 +23,35 @@ Elite missions reinterpret these events as sharper contract trials. The Gate has
 The finale leaves the Gate bound but not broken. The Dominion win the right to renegotiate, not the right to own.
 
 
-## EARTH-CENTERED CAMPAIGN STRUCTURE
+## MYTHOLOGICAL EARTH CAMPAIGN
 
-**Core Direction**: ALL campaign missions take place on Earth. Earth is the primary game space — the Gate opened here, and the battles for control happen on human ground. Faction realms (Khepra, Asgard, Olympus, Takamagahara, Avalora, the Radiant Hierarchies, and the Infernal Dominion) are reserved for SPECIAL EVENTS outside the main campaign — limited-time raids, faction wars, seasonal content, and world boss encounters.
+**Core Direction**: All campaign missions take place on Earth — specifically in Ancient Mesopotamia — The Underworld during the circa 3000 BCE — Sumerian underworld (Kur/Irkalla). Each faction fights in the geographic region where their mythology originates, set in an ancient historical timeline. The enemy is the **Hollow** — void creatures invading through the Gate.
+
+### Why Ancient Mesopotamia — The Underworld?
+
+The deities drew their original power from the cultures that worshipped them. When the Gate opened on Earth, it fractured the very lands where these mythologies were born. The Hollow exploit these ancient Gate-wounds. Each deity sends their avatar to defend their mythological homeland — the place where human belief first gave them form.
 
 ### Earth Environments by Chapter:
 
-| Chapter | Earth Zone | Description |
-|---------|-----------|-------------|
-| Ch1 | Gate-Scarred Wasteland | Cracked earth with Gate-fracture lines, ruined urban outskirts, white energy bleeding from ground fissures |
-| Ch2 | Hollowed City Ruins | Shattered skyscrapers twisted by Gate energy, void-mist seeping through split streets, abandoned vehicles fused with stone |
-| Ch3 | Fractured Cathedral Grounds | Ancient structures cracked by Gate pressure, stained glass dissolved into light-shards, altar stones floating in anti-gravity zones |
-| Ch4 | Gate-Stone Battlefield | Open plains with Gate fragments protruding like black monoliths, scorched ground in faction-colored energy patterns, crater fields |
-| Ch5 | The Gate Threshold | Epicenter where all seven realm-Gates converge on Earth — reality warping with overlapping faction energies, the final battleground |
+| Chapter | Location | Visual Description |
+|---------|----------|-------------------|
+| Ch1 | Cursed Ruins | burned city remains from the ancient world, cracked mudbrick walls weeping void-mist, sulfur vents breaking through flagstones, skeletal architecture under blood-red sky |
+| Ch2 | The Underworld Gates | descending stone passages into Kur, obsidian doors cracked by Gate pressure, flame-lit tunnels now flickering with anti-light, the river Hubur running black with void-taint |
+| Ch3 | Throne of Ash | destroyed palace of the ancient dead, broken statues of forgotten kings, ash-filled halls where Hollow presence thickens, the throne room split open by a Gate eruption |
+| Ch4 | The Lake of Fire | volcanic crater in the underworld depths, molten rock mixing with void-mist, obsidian spires rising from the flames |
+| Ch5 | The Abyss | the deepest point of the ancient underworld, total darkness pierced only by Gate-fractures, the Gate nexus pulsing in the absolute dark — the antithesis of creation |
 
-### Why Earth?
+### The Enemy: The Hollow
 
-The Gate is a wound in reality that opened on Earth. The deities send their avatars to Earth because that is where the Gate's instability is concentrated. The faction realms are the deities' home domains — they are stable, protected, and NOT the front lines. Earth is the contested neutral ground where all factions meet, clash, and fight for control of the Gate fragments.
+All campaign enemies are **Hollow** — void creatures that emerge through the Gate. They are not the faction deities or their armies. The Hollow are the antithesis of all divine creation — formless void-mist entities anchored by Gate stone fragments. They consume belief, dissolve divine energy, and seek to unmake the Gate itself.
 
-### Realm Events (Outside Campaign)
+### Earth is Neutral Ground
 
-Faction realms are accessible through special events:
-- **Realm Raids**: Limited-time incursions into a specific faction's realm for exclusive rewards
-- **Faction Wars**: Scheduled cross-realm PvP events where players fight in enemy faction territory
-- **Seasonal Content**: Holiday-themed events set in specific realms
-- **World Boss Arenas**: Boss encounters set in faction realm locations
+No faction advantage or penalty applies. The avatar fights with full power on Earth — but the Hollow are strongest at the Gate's breach points. The campaign difficulty scales with Hollow density, not faction opposition.
 
-These events use the faction realm maps (MG-MAP-002 through MG-MAP-012) and offer rewards not available in the main campaign.
+### Faction Realms (Events Only)
+
+The deity's actual realm (Ancient Mesopotamia — Underworld) is accessible only through special events — realm raids, faction wars, seasonal content, and world boss encounters. The campaign stays on Earth.
 
 ## Campaign Spine
 
@@ -89,30 +91,32 @@ Elite missions reinterpret the campaign as a sharper contract trial. The Gate ha
 The finale proves that the Dominion's law is not just for the weak. The deity must win the court twice — once against the Gate's charges, once against the Gate's memory of being outmaneuvered.
 
 
-## EARTH-CENTERED CAMPAIGN STRUCTURE
+## MYTHOLOGICAL EARTH CAMPAIGN
 
-**Core Direction**: ALL campaign missions take place on Earth. Earth is the primary game space — the Gate opened here, and the battles for control happen on human ground. Faction realms (Khepra, Asgard, Olympus, Takamagahara, Avalora, the Radiant Hierarchies, and the Infernal Dominion) are reserved for SPECIAL EVENTS outside the main campaign — limited-time raids, faction wars, seasonal content, and world boss encounters.
+**Core Direction**: All campaign missions take place on Earth — specifically in Ancient Mesopotamia — The Underworld during the circa 3000 BCE — Sumerian underworld (Kur/Irkalla). Each faction fights in the geographic region where their mythology originates, set in an ancient historical timeline. The enemy is the **Hollow** — void creatures invading through the Gate.
+
+### Why Ancient Mesopotamia — The Underworld?
+
+The deities drew their original power from the cultures that worshipped them. When the Gate opened on Earth, it fractured the very lands where these mythologies were born. The Hollow exploit these ancient Gate-wounds. Each deity sends their avatar to defend their mythological homeland — the place where human belief first gave them form.
 
 ### Earth Environments by Chapter:
 
-| Chapter | Earth Zone | Description |
-|---------|-----------|-------------|
-| Ch1 | Gate-Scarred Wasteland | Cracked earth with Gate-fracture lines, ruined urban outskirts, white energy bleeding from ground fissures |
-| Ch2 | Hollowed City Ruins | Shattered skyscrapers twisted by Gate energy, void-mist seeping through split streets, abandoned vehicles fused with stone |
-| Ch3 | Fractured Cathedral Grounds | Ancient structures cracked by Gate pressure, stained glass dissolved into light-shards, altar stones floating in anti-gravity zones |
-| Ch4 | Gate-Stone Battlefield | Open plains with Gate fragments protruding like black monoliths, scorched ground in faction-colored energy patterns, crater fields |
-| Ch5 | The Gate Threshold | Epicenter where all seven realm-Gates converge on Earth — reality warping with overlapping faction energies, the final battleground |
+| Chapter | Location | Visual Description |
+|---------|----------|-------------------|
+| Ch1 | Cursed Ruins | burned city remains from the ancient world, cracked mudbrick walls weeping void-mist, sulfur vents breaking through flagstones, skeletal architecture under blood-red sky |
+| Ch2 | The Underworld Gates | descending stone passages into Kur, obsidian doors cracked by Gate pressure, flame-lit tunnels now flickering with anti-light, the river Hubur running black with void-taint |
+| Ch3 | Throne of Ash | destroyed palace of the ancient dead, broken statues of forgotten kings, ash-filled halls where Hollow presence thickens, the throne room split open by a Gate eruption |
+| Ch4 | The Lake of Fire | volcanic crater in the underworld depths, molten rock mixing with void-mist, obsidian spires rising from the flames |
+| Ch5 | The Abyss | the deepest point of the ancient underworld, total darkness pierced only by Gate-fractures, the Gate nexus pulsing in the absolute dark — the antithesis of creation |
 
-### Why Earth?
+### The Enemy: The Hollow
 
-The Gate is a wound in reality that opened on Earth. The deities send their avatars to Earth because that is where the Gate's instability is concentrated. The faction realms are the deities' home domains — they are stable, protected, and NOT the front lines. Earth is the contested neutral ground where all factions meet, clash, and fight for control of the Gate fragments.
+All campaign enemies are **Hollow** — void creatures that emerge through the Gate. They are not the faction deities or their armies. The Hollow are the antithesis of all divine creation — formless void-mist entities anchored by Gate stone fragments. They consume belief, dissolve divine energy, and seek to unmake the Gate itself.
 
-### Realm Events (Outside Campaign)
+### Earth is Neutral Ground
 
-Faction realms are accessible through special events:
-- **Realm Raids**: Limited-time incursions into a specific faction's realm for exclusive rewards
-- **Faction Wars**: Scheduled cross-realm PvP events where players fight in enemy faction territory
-- **Seasonal Content**: Holiday-themed events set in specific realms
-- **World Boss Arenas**: Boss encounters set in faction realm locations
+No faction advantage or penalty applies. The avatar fights with full power on Earth — but the Hollow are strongest at the Gate's breach points. The campaign difficulty scales with Hollow density, not faction opposition.
 
-These events use the faction realm maps (MG-MAP-002 through MG-MAP-012) and offer rewards not available in the main campaign.
+### Faction Realms (Events Only)
+
+The deity's actual realm (Ancient Mesopotamia — Underworld) is accessible only through special events — realm raids, faction wars, seasonal content, and world boss encounters. The campaign stays on Earth.

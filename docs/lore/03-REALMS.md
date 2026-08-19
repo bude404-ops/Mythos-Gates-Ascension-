@@ -138,14 +138,20 @@ Visual identity: broken gods, identity-drained cities, primordial monsters, dist
 
 Empyrean versus Infernal Dominion is not good versus evil. Empyrean represents ORDER. Infernal Dominion represents POWER. Both can produce honorable individuals. Both can commit terrible acts.
 
-## Realm Access
+## Mythological Earth Access
 
-**Earth** is the primary campaign zone. All 20 missions per faction take place on Earth (MAP-001). Earth is neutral ground — no faction advantage or penalty.
+**Earth** is the primary campaign zone — but not modern Earth. Each faction's campaign takes place in their mythological homeland during an ancient era:
 
-**Faction Realms** (Khepra, Asgard, Olympus, Takamagahara, Avalora, Radiant Hierarchies, Infernal Dominion) are reserved for special events:
-- Realm Raids: Limited-time incursions for exclusive rewards
-- Faction Wars: Cross-realm PvP events
-- Seasonal Content: Holiday-themed events
-- World Boss Arenas: Boss encounters in realm-specific locations
+| Faction | Earth Region | Era |
+|---------|-------------|-----|
+| Aten Ra | Ancient Egypt | Old Kingdom (~2500 BCE) |
+| Olympian | Ancient Greece | Classical (~500 BCE) |
+| Kami | Ancient Japan | Asuka/Nara (~700 CE) |
+| Tuatha | Ancient Ireland | Celtic Bronze Age (~1000 BCE) |
+| Empyrean | Ancient Mesopotamia | Sumerian (~3000 BCE) |
+| Infernal | Ancient Mesopotamia Underworld | Sumerian (~3000 BCE) |
+| Asgardian | Ancient Scandinavia | Migration Age (~500 CE) |
 
-Faction realm maps (MG-MAP-002 through MG-MAP-012) are used ONLY for these events, not for the main campaign.
+The enemy in all campaigns is the **Hollow** — void creatures invading through the Gate.
+
+**Faction Realms** (the deity home domains) are event-only: realm raids, faction wars, seasonal content, and world boss arenas. Maps MG-MAP-002 through MG-MAP-012 are used exclusively for these events.
