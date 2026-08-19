@@ -1,0 +1,192 @@
+{
+  "version": "1.0",
+  "date": "2026-08-19",
+  "architecture": "Hybrid \u2014 Faction Base + Deity Specialty",
+  "balance_principle": "All 28 deities reach the same level milestones at the same pace if played to their specialty. Gap between optimal and casual play is ~13%.",
+  "earning_rates": {
+    "base": 100,
+    "faction_passive": "+10%",
+    "deity_specialty": "+20% (role-specific trigger)",
+    "fallback": "+5% (any victory, if specialty not triggered)",
+    "optimal_per_win": 130,
+    "standard_per_win": 115,
+    "enemy_realm_modifier": "+50%",
+    "earth_neutral_modifier": "+25%"
+  },
+  "factions": [
+    {
+      "name": "Aten Ra",
+      "belief_name": "Ma'at Devotion",
+      "theme": "Sacred order and cosmic balance",
+      "passive": "+10% Belief from all victories"
+    },
+    {
+      "name": "Asgardian",
+      "belief_name": "Oath Keeping",
+      "theme": "Sacred vows and honor",
+      "passive": "+10% Belief from all victories"
+    },
+    {
+      "name": "Olympian",
+      "belief_name": "Arete Excellence",
+      "theme": "Mastery, victory, and witnessed glory",
+      "passive": "+10% Belief from all victories"
+    },
+    {
+      "name": "Kami",
+      "belief_name": "Wa Harmony",
+      "theme": "Balance, precision, and threshold respect",
+      "passive": "+10% Belief from all victories"
+    },
+    {
+      "name": "Tuatha",
+      "belief_name": "Sovereign Memory",
+      "theme": "Memory, heritage, and living tradition",
+      "passive": "+10% Belief from all victories"
+    },
+    {
+      "name": "Empyrean",
+      "belief_name": "Choral Order",
+      "theme": "Sacred order, unity, and law",
+      "passive": "+10% Belief from all victories"
+    },
+    {
+      "name": "Infernal Dominion",
+      "belief_name": "Debt of Power",
+      "theme": "Power, contracts, and dominion",
+      "passive": "+10% Belief from all victories"
+    }
+  ],
+  "specialty_triggers": {
+    "Defender": {
+      "name": "Bulwark Faith",
+      "trigger": "Win without objective taking damage",
+      "bonus": "+20% Belief"
+    },
+    "Battery": {
+      "name": "Conduit Faith",
+      "trigger": "Win after 3+ ability combo chains",
+      "bonus": "+20% Belief"
+    },
+    "Controller": {
+      "name": "Domain Faith",
+      "trigger": "Win while controlling 60%+ terrain",
+      "bonus": "+20% Belief"
+    },
+    "Breaker": {
+      "name": "Fracture Faith",
+      "trigger": "Win after breaking 3+ enemy armor stacks",
+      "bonus": "+20% Belief"
+    },
+    "Disruptor": {
+      "name": "Chaos Faith",
+      "trigger": "Win after interrupting 3+ enemy abilities",
+      "bonus": "+20% Belief"
+    },
+    "Sustain": {
+      "name": "Endurance Faith",
+      "trigger": "Win while keeping allies above 50% HP",
+      "bonus": "+20% Belief"
+    },
+    "Artillery": {
+      "name": "Range Faith",
+      "trigger": "Win with 5+ ranged kills",
+      "bonus": "+20% Belief"
+    },
+    "Guardian": {
+      "name": "Aegis Faith",
+      "trigger": "Win after blocking 5+ attacks on allies",
+      "bonus": "+20% Belief"
+    },
+    "Assassin": {
+      "name": "Shadow Faith",
+      "trigger": "Win with 3+ stealth executions",
+      "bonus": "+20% Belief"
+    }
+  },
+  "belief_sources": {
+    "standard_victory": 100,
+    "faction_passive": "+10%",
+    "deity_specialty": "+20%",
+    "fallback_bonus": "+5%",
+    "lore_pickup": 25,
+    "boss_defeat": 200,
+    "world_boss_participation": 500,
+    "daily_challenge": 150,
+    "realm_control_objective": 75,
+    "follower_recruitment": 10
+  },
+  "level_milestones": {
+    "1-10": {
+      "cost_each": 500,
+      "cumulative": 5000,
+      "stat_bonus": "+10%"
+    },
+    "11-20": {
+      "cost_each": 1000,
+      "cumulative": 15000,
+      "stat_bonus": "+25%"
+    },
+    "21-30": {
+      "cost_each": 1500,
+      "cumulative": 30000,
+      "stat_bonus": "+50%"
+    },
+    "31-40": {
+      "cost_each": 2500,
+      "cumulative": 55000,
+      "stat_bonus": "+75%"
+    },
+    "41-50": {
+      "cost_each": 4000,
+      "cumulative": 95000,
+      "stat_bonus": "+100%"
+    },
+    "ascension_1-10": {
+      "cost_each": 10000,
+      "cumulative_max": 195000,
+      "stat_bonus": "+5% per tier"
+    }
+  },
+  "belief_spending": {
+    "HP": {
+      "cost_per_point": 100,
+      "max_bonus": 2000
+    },
+    "DE": {
+      "cost_per_point": 100,
+      "max_bonus": 100
+    },
+    "ATK": {
+      "cost_per_point": 100,
+      "max_bonus": 200
+    },
+    "DEF": {
+      "cost_per_point": 100,
+      "max_bonus": 100
+    },
+    "SPD": {
+      "cost_per_point": 200,
+      "max_bonus": 3
+    }
+  },
+  "influence_system": {
+    "sources": {
+      "mission_completion": 50,
+      "boss_defeat": 100,
+      "daily_challenge": 75,
+      "realm_control": 50,
+      "rival_avatar_pvp": 150,
+      "enemy_realm_invasion": "+50%"
+    },
+    "spending": {
+      "ability_1_upgrade": 500,
+      "ability_2_upgrade": 750,
+      "ability_3_upgrade": 1000,
+      "ultimate_upgrade": 2500,
+      "ascension_tier_1": 5000,
+      "ascension_tier_2_to_10": "+5000 each",
+      "relic_enhancement": 250
+    }
+  }
+}
