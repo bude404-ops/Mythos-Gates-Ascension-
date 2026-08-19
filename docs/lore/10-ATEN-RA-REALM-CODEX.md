@@ -63,31 +63,31 @@ The Solar Dominion of Khepra is defined by sacred law, geometric light, desert j
 **Chapter Hook:** When Amunet enters a chapter, the scene tests whether truth, once forced into the open, can ever be undone — or whether his refraction destroys what it illuminates.
 **Visual Context:** Frame Amunet against crystalline solar-prism architecture, Ma'at feather linework, scale-beam shoulder arcs, clear amber glass blades, electrum verdict ribs.
 
-### Sutekh (MG-TITAN-005) — Disruptor
+### Sutekh (MG-TITAN-005) — Disruption
 **Source Deity:** Set/Sutekh — desert storms, disorder harnessed for defense, Red Land violence, necessary chaos
 **Lore:** Sutekh is not simple evil. He is the Red Land violence Aten-Ra keeps on the scale because even Ra needed Set to strike chaos from the solar journey. Humans remembered him as desert disorder; Khepra retained him as the storm that guards the gate against what lies beyond. He is the chaos you need when order is not enough.
 **Chapter Hook:** When Sutekh enters a chapter, the scene tests whether controlled chaos can remain controlled — or whether the storm, once unleashed, answers to no one.
 **Visual Context:** Frame Sutekh against Red Land desert storm architecture, red jasper storm plates, Set-animal mask silhouette, hooked khopesh arcs, black iron-sand scars.
 
-### Iset (MG-TITAN-006) — Sustain
+### Iset (MG-TITAN-006) — Endurance
 **Source Deity:** Isis/Iset — throne, restoration, healing magic (hekau), mother-protector, afterlife passage
 **Lore:** Iset is the restoration office humans later called Isis: throne, mother-protector, healer, and guide through death's river. Her magic does not merely heal flesh; it re-seats a being in its rightful place. She does not just mend — she remembers what you were supposed to be and puts you back there.
 **Chapter Hook:** When Iset enters a chapter, the scene tests whether restoration is always a kindness — or whether being returned to what you were means losing what you became.
 **Visual Context:** Frame Iset against throne-silhouette architecture, lotus-papyrus mantle, river-glass healing channels, blue faience restoration plates, tyet knot inlays.
 
-### Karnu (MG-TITAN-007) — Artillery
+### Karnu (MG-TITAN-007) — Range
 **Source Deity:** Solar Barque (Mandjet) + Ra's long sight — solar voyage, falcon-eye targeting, horizon bombardment
 **Lore:** Karnu is the long sight of the solar barque: he reads enemies where sky, river, and desert meet. Human obelisks and horizon sanctuaries are static imitations of his living range geometry. He does not fight close — he sees you from the next horizon and judges you before you arrive.
 **Chapter Hook:** When Karnu enters a chapter, the scene tests whether being seen from a distance is a gift or a sentence — and whether his horizon-lance can distinguish threat from traveler.
 **Visual Context:** Frame Karnu against solar barque architecture, desert-glass lens array, falcon-eye sight lines, polished bronze range vanes, lapis shadow braces.
 
-### Maahes (MG-TITAN-008) — Guardian
+### Maahes (MG-TITAN-008) — Counter
 **Source Deity:** Maahes — lion war/protection, knives, lotus, devouring captives
 **Lore:** Maahes carries the lion war-protection humans later carved as Maahes and Sekhmet-adjacent temple guardians. He is the noon gate's living roar: mercy behind him, knives before him, captives judged in his shadow. He does not seek war — he makes sure war comes to him instead of those behind him.
 **Chapter Hook:** When Maahes enters a chapter, the scene tests whether the guardian can distinguish protection from possession — and whether his devouring maw judges the guilty or the merely weak.
 **Visual Context:** Frame Maahes against lion-gate architecture, lion-mane solar collar, knife-fin bracers, lotus-and-bronze guard plates, sun-red war marks.
 
-### Amunet (MG-TITAN-009) — Assassin
+### Amunet (MG-TITAN-009) — Shadow
 **Source Deity:** Amunet — hidden power, concealed name, unseen breath, the invisible half of divine authority
 **Lore:** Amunet is the concealed half of Aten authority: the breath, name, and shadow behind visible radiance. Humans remembered hidden gods as mystery; Khepra built entire courts around the terror of a name removed from existence. She does not kill in the open — she removes you from the record.
 **Chapter Hook:** When Amunet enters a chapter, the scene tests whether erasure is the ultimate power or the ultimate fear — and whether being forgotten is worse than being destroyed.
