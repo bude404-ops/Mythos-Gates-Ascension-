@@ -18,7 +18,7 @@
     },
     {
       "stage": "Convergence",
-      "description": "The deity faces mythic convergence — multiple realm threats merging through the Gates.",
+      "description": "The deity faces mythic convergence \u2014 multiple realm threats merging through the Gates.",
       "unlockRequirements": "Complete 3 realm campaigns",
       "rewards": "Signature divine skill, enhanced ultimate"
     },
@@ -250,5 +250,46 @@
       "rewardTable": "TG-REWARD-ENDGAME-STANDARD",
       "activeDeityCount": 1
     }
-  ]
+  ],
+  "avatar_system": {
+    "description": "Players control Avatars (divine projections of Deities) projected through the Mythos Gates",
+    "belief": {
+      "description": "Spiritual fuel earned from victories, followers, and realm control",
+      "use": "Avatar level-ups and base stat increases",
+      "source": "Victories, followers, realm control, daily challenges"
+    },
+    "influence": {
+      "description": "Territorial power earned from missions, battles, and domain expansion",
+      "use": "Ability unlocks and upgrades, relic enhancement, Ascension tier unlocks",
+      "source": "Missions, battles, territory control, rival Avatar defeats"
+    },
+    "realm_advantage": {
+      "home_realm": {
+        "atk": 0,
+        "def": 0,
+        "cooldown": 0,
+        "reward_modifier": 1.0
+      },
+      "enemy_realm": {
+        "atk": -0.2,
+        "def": -0.15,
+        "cooldown": 0.25,
+        "reward_modifier": 1.5
+      },
+      "earth_neutral": {
+        "atk": 0,
+        "def": 0,
+        "cooldown": 0,
+        "reward_modifier": 1.25
+      }
+    },
+    "death_mechanics": {
+      "avatar_death": "Avatar falls, Deity survives",
+      "respawn_location": "Deity home domain",
+      "penalty": "10-20% loss of unspent Belief and Influence",
+      "preserved": "Avatar level, abilities, relics, all progression",
+      "cooldown": "Timer before new Avatar projection"
+    },
+    "scale_rule": "Option A \u2014 Avatars remain god-scale in all Realms. Power differences shown through aura intensity, ability charges, and cooldowns, not physical size."
+  }
 }

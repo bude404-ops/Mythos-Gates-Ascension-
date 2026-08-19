@@ -1,6 +1,10 @@
 # Mythos Gates: Ascension
 
-Mythos Gates: Ascension is a Titan-only mythological tactical RPG built around seven source-culture Realms, Mythos Gates, the Ascension Collapse, and colossal Titans shaped by their civilizations.
+Mythos Gates: Ascension is a mythological tactical RPG built around seven source-culture Realms, the Avatar system, Mythos Gates, the Ascension Collapse, and colossal divine Avatars projected through the Gates.
+
+## Core Concept
+
+Players choose a Deity and control its **Avatar** — a divine projection sent through the Mythos Gates to fight, explore, and reclaim lost power. Avatars are powered by **Belief** (stats) and **Influence** (abilities). The Deity remains safe in its home Realm — if the Avatar dies, the Deity survives and the Avatar is rebuilt.
 
 This repository is the source of truth for:
 
@@ -53,10 +57,12 @@ Generated `dist/` output is built by automation and is not a canonical source fo
 
 ## Current Build
 
-- Version: `0.6.9`
+- Version: `0.7.0`
 - Phase: GitHub Pages development platform + playable browser vertical slice + Mini App source
-- Playable Realms/Factions: 7
+- Playable Realms/Factions: 7 + Earth (neutral territory)
 - Playable deities: 28 total — 4 per Realm, 2 male gods and 2 female goddesses per Realm
+- Playable character: Avatar (divine projection of chosen Deity)
+- Progression: Belief (stats) + Influence (abilities) + Ascension tiers
 - Non-playable campaign characters: 8
 - Creatures/threats: 39
 - Hollow threat creatures: 16
@@ -66,19 +72,21 @@ Generated `dist/` output is built by automation and is not a canonical source fo
 - Missions: 280 total — 140 Normal / 140 Elite
 - Mission dialogue packages: 280
 - Mission art packages: 280
-- Schema contracts: active coverage for canon migration/version control, platform core, hosted backend boundary, runtime persistence, one-deity-vs-many combat, and UE5 templates
+- Schema contracts: active coverage for canon migration/version control, platform core, hosted backend boundary, runtime persistence, avatar combat, and UE5 templates
 - Art prompts: 96
 - 3D blueprint assets: 136
 - Creator handoff packets: 23
 - External AI production packet: 1 active benchmark battlefield packet
-- Core combat rule: one active deity in standard combat
+- Core combat rule: one active Avatar in standard combat
 - Platform core: v1 implemented for profile, save continuity, roster ownership, progression, inventory, and currency ledger
 - Hosted backend boundary: v1 contract for profile service, cloud saves, authoritative economy ledger, and telemetry ingestion
 - Runtime persistence boundary: database tables, route auth, admin operations, environments, and observability contract
 - Unreal Engine 5 dungeon-crawler framework: Mythos Gates region/zone/exploration/tactical-arena template for the first mission
 - Mobile-first UE5 architecture: Android/iOS baseline, scalable quality tiers, Gate-safe optimization, and first-zone approval gate
-- One Deity vs. Many combat: one player-controlled god or goddess per battle, no armies, no squads, no team turns, visible progression, enemy role pressure
-- Mission/campaign lore run-ins: all 280 missions and 8 campaigns use the mobile UE5 one-deity loop and can draw lore-valid cross-faction creature pools
+- One Avatar vs. Many combat: one player-controlled Avatar per battle, no armies, no squads, no team turns, visible progression, enemy role pressure
+- Realm advantage system: Home = full power, Enemy = weakened (-20% ATK/-15% DEF) but +50% rewards, Earth = balanced
+- Avatar death: Respawn at Deity domain, lose 10-20% unspent Belief/Influence, progression preserved
+- Mission/campaign lore run-ins: all 280 missions and 8 campaigns use the mobile UE5 one-avatar loop and can draw lore-valid cross-faction creature pools
 - Current source asset status: 136 reserved asset IDs awaiting final source assets
 
 ## Commands
@@ -129,13 +137,18 @@ It validates:
 Current canon is locked around:
 
 - Seven playable mythological Realms
-- Four deities per Realm
-- One-active-Titan standard combat deployments
+- Earth as neutral territory (dungeons, PvP, Hollow invasions)
+- Four deities per Realm (28 total)
+- Players control Avatars (divine projections), not Deities directly
+- One-active-Avatar standard combat deployments
+- Belief and Influence as progression resources
+- Realm advantage system (home/enemy/neutral modifiers)
+- Avatar death does not kill the Deity (respawn at home Realm)
+- God-scale visuals maintained in all Realms (Option A)
 - The Hollow as a non-playable campaign threat layer
 - No playable armies
 - No playable squads
 - No five-character teams
-- No playable characters classified as Titans
 - No sci-fi
 - No futuristic craft
 - No old void rot / fungal civilization direction

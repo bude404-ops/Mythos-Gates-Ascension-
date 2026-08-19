@@ -13,13 +13,13 @@
     "Each deity has a distinct combat identity, element, and playstyle"
   ],
   "controls": {
-    "movement": "Virtual joystick — 360 degree movement",
-    "basicAttack": "Tap button — auto-targets nearest enemy, combo chain",
-    "ability1": "Tap button — short cooldown (5-8s), tactical use",
-    "ability2": "Tap button — medium cooldown (8-12s), stronger effect",
-    "signature": "Tap button — long cooldown (15-20s), big impact",
-    "ultimate": "Tap button — once per battle or long cooldown (60s+), cinematic",
-    "dodge": "Swipe/dash — i-frames, brief invincibility, directional dodge"
+    "movement": "Virtual joystick \u2014 360 degree movement",
+    "basicAttack": "Tap button \u2014 auto-targets nearest enemy, combo chain",
+    "ability1": "Tap button \u2014 short cooldown (5-8s), tactical use",
+    "ability2": "Tap button \u2014 medium cooldown (8-12s), stronger effect",
+    "signature": "Tap button \u2014 long cooldown (15-20s), big impact",
+    "ultimate": "Tap button \u2014 once per battle or long cooldown (60s+), cinematic",
+    "dodge": "Swipe/dash \u2014 i-frames, brief invincibility, directional dodge"
   },
   "resources": {
     "divineEnergy": "Built from basic attacks and taking damage. Spent on abilities 1, 2, and Signature.",
@@ -28,9 +28,9 @@
   },
   "abilityKit": {
     "basicAttack": "No cooldown. Spammable. Builds Divine Energy. Unique per deity. 3-4 hit combo chain with unique properties.",
-    "ability1": "Short cooldown (5-8s). Low Divine Energy cost (20-30). Tactical ability — mobility, CC, shield, or buff.",
-    "ability2": "Medium cooldown (8-12s). Medium Divine Energy cost (35-45). Stronger ability — AoE, heavy damage, or sustain.",
-    "signature": "Long cooldown (15-20s). High Divine Energy cost (65-75). Signature divine skill — the deity's mythic power unleashed.",
+    "ability1": "Short cooldown (5-8s). Low Divine Energy cost (20-30). Tactical ability \u2014 mobility, CC, shield, or buff.",
+    "ability2": "Medium cooldown (8-12s). Medium Divine Energy cost (35-45). Stronger ability \u2014 AoE, heavy damage, or sustain.",
+    "signature": "Long cooldown (15-20s). High Divine Energy cost (65-75). Signature divine skill \u2014 the deity's mythic power unleashed.",
     "ultimate": "Once per battle or 60s+ cooldown. Requires 100 Ascension Gauge. Transforms the deity or unleashes full divine power. Cinematic.",
     "passive": "Always active. Builds faction resource from combat actions. At threshold, empowers next ability or attack."
   },
@@ -82,11 +82,39 @@
     }
   },
   "enemyDesign": {
-    "waves": "Trash mobs — easily killed by basic attacks, come in groups of 5-15",
-    "elites": "Tougher enemies with special abilities — require ability usage, come in pairs or small groups",
-    "bosses": "Divine trials, gate guardians, corrupted gods — require full ability rotation and dodge timing",
-    "hollow": "Hollow-corrupted variants of realm enemies — twisted, dangerous, destabilized"
+    "waves": "Trash mobs \u2014 easily killed by basic attacks, come in groups of 5-15",
+    "elites": "Tougher enemies with special abilities \u2014 require ability usage, come in pairs or small groups",
+    "bosses": "Divine trials, gate guardians, corrupted gods \u2014 require full ability rotation and dodge timing",
+    "hollow": "Hollow-corrupted variants of realm enemies \u2014 twisted, dangerous, destabilized"
   },
   "combatFantasy": "One legendary god-like deity enters enemy-controlled territory alone, fights through many coordinated enemies, grows visibly stronger, and eventually destroys forces that once seemed impossible.",
-  "mobileReadability": "Strong silhouettes, clear telegraph lines for enemy attacks, obvious AoE markers on the ground, large touch targets for ability buttons, readable health bars and cooldown indicators."
+  "mobileReadability": "Strong silhouettes, clear telegraph lines for enemy attacks, obvious AoE markers on the ground, large touch targets for ability buttons, readable health bars and cooldown indicators.",
+  "avatar_system": {
+    "playable_character": "Avatar (divine projection of chosen Deity)",
+    "deity_status": "Safe in home Realm \u2014 never dies",
+    "scale": "God-scale everywhere (Option A)",
+    "realm_advantage_modifiers": {
+      "home_realm": {
+        "atk": 0,
+        "def": 0,
+        "cooldown": 0
+      },
+      "enemy_realm": {
+        "atk": -0.2,
+        "def": -0.15,
+        "cooldown": 0.25
+      },
+      "earth_neutral": {
+        "atk": 0,
+        "def": 0,
+        "cooldown": 0
+      }
+    },
+    "death": {
+      "avatar_dies_not_deity": true,
+      "respawn": "Deity home domain",
+      "penalty": "10-20% unspent Belief/Influence loss",
+      "preserved": "Level, abilities, relics, progression"
+    }
+  }
 }

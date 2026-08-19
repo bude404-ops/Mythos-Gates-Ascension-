@@ -20,13 +20,13 @@ Realm civilizations use Mythos Gates for diplomacy, conquest, worship, resource 
 
 The active campaign era is now defined by these route events:
 
-- **Sun-Scale Verdict Descent:** The Sun-Scale Gate reopens as stable gate under ma’at strain, pulling Aten Ra into a one-deity descent against many enemies.
-- **Thunder-Oath Root Gauntlet:** The Thunder-Oath Gate reopens as ruin gate with active oath memory, pulling Asgardian into a one-deity descent against many enemies.
-- **Laurel-Sky Hubris Trial:** The Laurel-Sky Gate reopens as stable gate with oracle vapor leakage, pulling Olympian into a one-deity descent against many enemies.
-- **Torii-Moon Mirror Road:** The Torii-Moon Gate reopens as distortion gate with ritual rerouting, pulling Kami into a one-deity descent against many enemies.
-- **Silver-Root Geas Labyrinth:** The Silver-Root Gate reopens as sealed gate with fae time bleed, pulling Tuatha into a one-deity descent against many enemies.
-- **Choir-Vault Discord Ascent:** The Choir-Vault Gate reopens as wound gate leaking memory-burning radiance, pulling Empyrean into a one-deity descent against many enemies.
-- **Black-Iron Debt Descent:** The Black-Iron Gate reopens as distortion gate bound by contract clauses, pulling Infernal Dominion into a one-deity descent against many enemies.
+- **Sun-Scale Verdict Descent:** The Sun-Scale Gate reopens as stable gate under ma’at strain, pulling Aten Ra into a one-Avatar descent against many enemies.
+- **Thunder-Oath Root Gauntlet:** The Thunder-Oath Gate reopens as ruin gate with active oath memory, pulling Asgardian into a one-Avatar descent against many enemies.
+- **Laurel-Sky Hubris Trial:** The Laurel-Sky Gate reopens as stable gate with oracle vapor leakage, pulling Olympian into a one-Avatar descent against many enemies.
+- **Torii-Moon Mirror Road:** The Torii-Moon Gate reopens as distortion gate with ritual rerouting, pulling Kami into a one-Avatar descent against many enemies.
+- **Silver-Root Geas Labyrinth:** The Silver-Root Gate reopens as sealed gate with fae time bleed, pulling Tuatha into a one-Avatar descent against many enemies.
+- **Choir-Vault Discord Ascent:** The Choir-Vault Gate reopens as wound gate leaking memory-burning radiance, pulling Empyrean into a one-Avatar descent against many enemies.
+- **Black-Iron Debt Descent:** The Black-Iron Gate reopens as distortion gate bound by contract clauses, pulling Infernal Dominion into a one-Avatar descent against many enemies.
 
 ## Era 4 — The Ascension Collapse
 

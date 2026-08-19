@@ -55,7 +55,7 @@ Still recommended:
 
 Changed/aligned:
 
-- Core identity now points to single-deity tactical dungeon crawling.
+- Core identity now points to single-Avatar tactical dungeon crawling.
 - Player controls one god or goddess at a time.
 - Dungeon routes are entered through Mythos Gate systems.
 - One-deity-vs-many combat remains the center.
@@ -88,7 +88,7 @@ Still recommended:
 
 Changed:
 
-- UE5 dungeon-crawler framework purpose now states single-deity dungeon-crawler tactical RPG.
+- UE5 dungeon-crawler framework purpose now states single-Avatar dungeon-crawler tactical RPG.
 - Dungeon routes are canonically tied to established Mythos Gate roads and Gate states.
 
 Still recommended:

@@ -13,7 +13,7 @@ Each dungeon route must:
 - belong to one existing Realm;
 - use one established Mythos Gate or established Gate state;
 - support one god/goddess entering at a time;
-- preserve one-deity-vs-many-enemies combat;
+- preserve one-avatar-vs-many-enemies combat;
 - use hazards, landmarks, and visual language already present in the Realm Codex;
 - reveal Gate mystery without fully resolving the origin of the Mythos Gates;
 - support future **Mythos Gates: [Subtitle]** expansions.

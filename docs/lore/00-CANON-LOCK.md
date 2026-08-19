@@ -9,7 +9,7 @@ The current canon is built around:
 - 8 storyline faction layers: 7 playable mythological Realms plus 1 non-playable campaign threat layer
 - 7 playable mythological Realms
 - 4 deities per playable Realm
-- one-active-Titan chosen Titan deployments
+- one-active-Avatar combat deployments (Avatar is projection of chosen Deity)
 - No playable non-Titan entries in the current format
 - No non-Titan battle patterns in the current format
 - No sci-fi
@@ -41,7 +41,7 @@ There are:
 - 9 collectible Titans per faction
 - 5 active deity slots in a chosen Titan
 
-The design goal is encounter-specific single-deity mastery: the player becomes the deity and battles multiple enemies through Divine Abilities, Divine Stats, Divine Gear, Divine Level, and Divine Ascension.
+The design goal is encounter-specific single-Avatar mastery: the player projects an Avatar of their chosen Deity and battles multiple enemies through Divine Abilities, Divine Stats, Divine Gear, Divine Level, and Divine Ascension. The Deity remains safe in its home Realm.
 
 ## Removed Canon
 

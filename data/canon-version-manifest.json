@@ -307,5 +307,17 @@
         "npm run index:check"
       ]
     }
-  ]
+  ],
+  "avatar_system": {
+    "enabled": true,
+    "playable_character": "Avatar",
+    "progression_resources": [
+      "Belief",
+      "Influence"
+    ],
+    "realm_advantage": true,
+    "earth_neutral": true,
+    "death_mechanic": "respawn_at_deity_domain",
+    "scale_rule": "Option A \u2014 god-scale everywhere"
+  }
 }
