@@ -31,7 +31,7 @@
     ],
     "scaleLandmarks": [
       "Deity-height pylon gates",
-      "Ma’at scale colossi",
+      "Ma\u2019at scale colossi",
       "Khepri dawn engine silhouette",
       "river-light channels below Deity-sized bridges"
     ]
@@ -129,7 +129,7 @@
   "bossArena": {
     "id": "UE5-BOSS-ARENA-FIRST-REOPENING-GATE-001",
     "arenaType": "optional cinematic Gate guardian / elite validation arena",
-    "bossDesignNote": "The source mission has no canonical boss. This template creates the reusable boss-arena slot as an optional Gate Guardian validation encounter without rewriting the mission boss field.",
+    "bossDesignNote": "The source mission has no canonical boss. This template creates the reusable boss-arena slot as an optional Gate Counter validation encounter without rewriting the mission boss field.",
     "features": [
       "larger Gate court",
       "multi-phase Gate pressure",
@@ -152,12 +152,12 @@
     "DA_TG_BossArena_FirstReopeningGate_001"
   ],
   "blueprintActors": [
-    "BP_TG_DeityExplorerPawn",
-    "BP_TG_ZoneGateVolume",
-    "BP_TG_TacticalArenaVolume",
-    "BP_TG_DeityScaleLandmark",
-    "BP_TG_ModularEncounterSpawner",
-    "BP_TG_GateGuardianArena"
+    "BP_MG_DeityExplorerPawn",
+    "BP_MG_ZoneGateVolume",
+    "BP_MG_TacticalArenaVolume",
+    "BP_MG_DeityScaleLandmark",
+    "BP_MG_ModularEncounterSpawner",
+    "BP_MG_GateGuardianArena"
   ],
   "dataTables": [
     "DT_Deities",
@@ -201,7 +201,7 @@
     ],
     "loreAccuracy": [
       "Aten hand-rays",
-      "Ma’at scale geometry",
+      "Ma\u2019at scale geometry",
       "electrum",
       "faience turquoise",
       "lapis",
