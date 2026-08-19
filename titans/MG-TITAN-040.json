@@ -1,0 +1,218 @@
+{
+  "id": "MG-TITAN-040",
+  "slug": "morr-gan",
+  "name": "Morrígan",
+  "factionId": "MG-FACTION-005",
+  "faction": "Tuatha",
+  "rarity": "Mythic God",
+  "role": "Breaker",
+  "abilities": [
+    "Bran — Silver-Branch Cut Rend",
+    "Geas Thorn Technique — Rupture",
+    "Bran: Sídhe Court Covenant Sundering Trial",
+    "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
+  ],
+  "stats": {
+    "hp": 40,
+    "attack": 13,
+    "range": 2,
+    "energy": 3,
+    "speed": 2,
+    "armor": 12,
+    "resistance": 8,
+    "critChance": 9,
+    "accuracy": 81,
+    "evasion": 4,
+    "guardBreak": 18,
+    "combatPower": 210
+  },
+  "equipment": [
+    "Bran Sunderer Lugh Silver-Spear Thornblade",
+    "Bran Moon-Oak Sídhe Mantle",
+    "Bran Dagda Cauldron Memory Core"
+  ],
+  "passives": [
+    "Geas Bloom: Bran gains Geas when breaker play marks armor, guard, or ritual structure for staged rupture on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
+  ],
+  "lore": "Morrígan, Battle-Crow Fate Queen, is now canonized as one of the four playable deities of Tuatha. The deity is the source-realm divinity behind the mythology rather than a generic champion: war fate goddess, battle-crow prophecy, sovereignty terror and doom rupture. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology deity whose behavior expresses war fate goddess, battle-crow prophecy, sovereignty terror and doom rupture; confident, sovereign, readable in combat, loyal to the unchanged Tuatha canon.",
+  "visualDescription": "Morrígan manifests as war fate goddess, battle-crow prophecy, sovereignty terror and doom rupture from Tuatha: striking dangerous feminine face, pale sharp cheekbones, black eyes, predatory lips, prophecy stare; tall fierce feminine warrior-seer physique, narrow waist, strong hips, long limbs, commanding predatory posture; signature silhouette: crow wing mantle, horned battle crown, long spear, feathered shadow outline. Weapon: black spear of fate and crow-feather sickle dagger. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
+  "artStatus": "READY_FOR_GENERATION",
+  "artPromptId": "MG-PROMPT-040",
+  "artworkId": null,
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "MG-BACKSTORY-TITAN-040",
+  "abilityDetails": [
+    {
+      "name": "Bran — Silver-Branch Cut Rend",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "breaker",
+        "tuatha",
+        "source-culture"
+      ],
+      "effect": "Deal Tuatha source-culture damage at range 2; generate Momentum and a small Geas Memory gain when used from silver-root fae ground or against the marked target. The hit reads visually as silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
+    },
+    {
+      "name": "Geas Thorn Technique — Rupture",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "breaker",
+        "tuatha",
+        "source-culture"
+      ],
+      "effect": "Spend Momentum to breaks guard, exposes vulnerability, and punishes armor or shield reliance. Builds Geas Memory only when the player uses silver-root fae ground intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
+    },
+    {
+      "name": "Bran: Sídhe Court Covenant Sundering Trial",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "breaker",
+        "tuatha",
+        "source-culture"
+      ],
+      "effect": "Spend stored Geas Memory to impose a two-round rule from Avalora: breaks guard, exposes vulnerability, and punishes armor or shield reliance. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Tír na nÓg Moon-Sovereign Form",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant",
+        "tuatha",
+        "source-culture"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Geas Memory, transform nearby terrain into silver-root fae ground, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Bran Sunderer Lugh Silver-Spear Thornblade",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Rare",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through silver-root fae ground. Visual: silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
+    },
+    {
+      "name": "Bran Moon-Oak Sídhe Mantle",
+      "slot": "Armor Body",
+      "rarityFloor": "Rare",
+      "primaryStat": "armor",
+      "effect": "Improves survivability and makes the Deity read as Avalora source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
+    },
+    {
+      "name": "Bran Dagda Cauldron Memory Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Rare",
+      "primaryStat": "energy",
+      "effect": "Stores Geas Memory and unlocks a mastery branch for Sídhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 50,
+    "statGrowthPer10Levels": {
+      "hp": 7,
+      "attack": 2,
+      "armor": 1,
+      "resistance": 1
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      50
+    ],
+    "gearTierCap": "Epic",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "break armor, shields, and boss windows",
+    "budgetTarget": 106,
+    "computedCombatPower": 210,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ],
+    "uniqueMechanic": "Bran's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Deity exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+    "counterplayRule": "mistimed burst leaves the Deity exposed during recovery"
+  },
+  "mythicSource": "The Morrígan — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+  "visualTraits": {
+    "face": "striking dangerous feminine face, pale sharp cheekbones, black eyes, predatory lips, prophecy stare",
+    "bodyProportions": "tall fierce feminine warrior-seer physique, narrow waist, strong hips, long limbs, commanding predatory posture",
+    "silhouette": "crow wing mantle, horned battle crown, long spear, feathered shadow outline",
+    "weapon": "black spear of fate and crow-feather sickle dagger",
+    "sexIdentity": "Female"
+  },
+  "armorCanon": {
+    "identityRule": "Armor must reveal female divine anatomy and Tuatha civilization logic; no generic armor template.",
+    "silhouette": "crow wing mantle, horned battle crown, long spear, feathered shadow outline"
+  },
+  "updated": "2026-08-17",
+  "weaponCanon": {
+    "signatureWeapon": "black spear of fate and crow-feather sickle dagger",
+    "loreReason": "Chosen because Morrígan embodies war fate goddess, battle-crow prophecy, sovereignty terror and doom rupture in combat."
+  },
+  "gearCanon": {
+    "maskHelmetCrown": "Crown/helmet/mask must support striking dangerous feminine face, pale sharp cheekbones, black eyes, predatory lips, prophecy stare and crow wing mantle, horned battle crown, long spear, feathered shadow outline; never hide sex identity or make the god interchangeable."
+  },
+  "sex": "Female",
+  "titanArtDna": {
+    "rosterCanon": "FOUR_GODS_PER_FACTION_PLAYABLE_ROSTER",
+    "mythologyGod": "The Morrígan",
+    "sex": "Female",
+    "archetype": "war fate goddess, battle-crow prophecy, sovereignty terror and doom rupture",
+    "signatureWeapon": "black spear of fate and crow-feather sickle dagger",
+    "faceLock": "striking dangerous feminine face, pale sharp cheekbones, black eyes, predatory lips, prophecy stare",
+    "bodyLock": "tall fierce feminine warrior-seer physique, narrow waist, strong hips, long limbs, commanding predatory posture",
+    "silhouetteLock": "crow wing mantle, horned battle crown, long spear, feathered shadow outline",
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved.",
+    "mythology": "The Morrígan — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+    "realm": "Avalora",
+    "civilization": "Tuatha mythological extradimensional civilization",
+    "cultureRule": "God identity must come from mythology, realm, civilization, sacred materials, beauty standards, and ritual practice; never color swap alone.",
+    "beautyStandard": "Unmistakably feminine divine beauty with faction-specific elegance, allure, posture, and armor shaping.",
+    "realmAnatomy": "Realm-shaped mythological divinity, supernatural but not sci-fi alien.",
+    "identityFace": "striking dangerous feminine face, pale sharp cheekbones, black eyes, predatory lips, prophecy stare",
+    "identityBody": "tall fierce feminine warrior-seer physique, narrow waist, strong hips, long limbs, commanding predatory posture",
+    "roleSilhouette": "crow wing mantle, horned battle crown, long spear, feathered shadow outline",
+    "auditStatus": "PASS"
+  },
+  "title": "Battle-Crow Fate Queen",
+  "playableClassification": "Goddess",
+  "species": "Deity",
+  "characterType": "Playable Deity",
+  "rosterClass": "Deity Roster"
+}

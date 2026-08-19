@@ -5,7 +5,7 @@ with open('mission-dialogue.json') as f:
 
 # Faction data: NPC witness, deity voice, gate name, chapter lore
 faction_data = {
-    'TG-FACTION-003': {
+    'MG-FACTION-003': {
         'name': 'Olympian',
         'npc': 'Lyrion Trial-Master',
         'deity': 'Zeus Divine Voice',
@@ -20,7 +20,7 @@ faction_data = {
             {'name': 'The Misjudged Athlete', 'focus': 'Boss: The Misjudged Athlete. Victory by earning glory through restraint, not force.'},
         ],
     },
-    'TG-FACTION-004': {
+    'MG-FACTION-004': {
         'name': 'Kami',
         'npc': 'Sayo Mirror-Keeper',
         'deity': 'Amaterasu Divine Voice',
@@ -35,7 +35,7 @@ faction_data = {
             {'name': 'The Broken Mirror Sage', 'focus': 'Boss: The Broken Mirror Sage. Victory by accepting the broken reflection as truth.'},
         ],
     },
-    'TG-FACTION-005': {
+    'MG-FACTION-005': {
         'name': 'Tuatha',
         'npc': 'Maeve Root-Speaker',
         'deity': 'Dagda Divine Voice',
@@ -50,7 +50,7 @@ faction_data = {
             {'name': 'The Forgotten Gardener', 'focus': 'Boss: The Forgotten Gardener. Victory by growing without controlling, proving life is not ownership.'},
         ],
     },
-    'TG-FACTION-006': {
+    'MG-FACTION-006': {
         'name': 'Empyrean',
         'npc': 'Varak Choir-Architect',
         'deity': 'Michael Divine Voice',
@@ -65,7 +65,7 @@ faction_data = {
             {'name': 'The Fallen Conductor', 'focus': 'Boss: The Fallen Conductor. Victory by conducting without commanding, proving harmony is not control.'},
         ],
     },
-    'TG-FACTION-007': {
+    'MG-FACTION-007': {
         'name': 'Infernal',
         'npc': 'Celiane Debt-Recordist',
         'deity': 'Lucifer Divine Voice',
@@ -111,10 +111,10 @@ for fid, fd in faction_data.items():
         eid = entry['id']
         camp = entry.get('campaignType', 'Normal')
         
-        # Parse chapter and mission from ID: TG-F0X-DLG-C0Y-M0Z
+        # Parse chapter and mission from ID: MG-F0X-DLG-C0Y-M0Z
         parts = eid.split('-')
-        # Normal: TG-F03-DLG-C01-M01 → 5 parts, chapter=parts[3], mission=parts[4]
-        # Elite: TG-F03-ELITE-DLG-C01-M01 → 6 parts, chapter=parts[4], mission=parts[5]
+        # Normal: MG-F03-DLG-C01-M01 → 5 parts, chapter=parts[3], mission=parts[4]
+        # Elite: MG-F03-ELITE-DLG-C01-M01 → 6 parts, chapter=parts[4], mission=parts[5]
         if 'ELITE' in parts:
             chapter_str = parts[4]
             mission_str = parts[5]

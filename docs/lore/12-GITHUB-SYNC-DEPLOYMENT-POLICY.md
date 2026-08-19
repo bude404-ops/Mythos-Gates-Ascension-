@@ -1,6 +1,6 @@
 # Automatic GitHub Sync and Deployment Policy
 
-**Codex ID:** TG-GITHUB-SYNC-POLICY-001  
+**Codex ID:** MG-GITHUB-SYNC-POLICY-001  
 **Status:** Canon Locked  
 **Updated:** 2026-08-10
 

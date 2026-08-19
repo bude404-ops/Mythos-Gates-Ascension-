@@ -173,7 +173,7 @@ progress['difficultyAndLevelingBalance'] = {
 write_json(os.path.join(DATA,'progression-system.json'), progress)
 
 balance_doc = {
-    'id':'TG-TITAN-ENEMY-BALANCE-PASS-001',
+    'id':'MG-TITAN-ENEMY-BALANCE-PASS-001',
     'version':'1.0.0',
     'generated': datetime.now(timezone.utc).isoformat(),
     'directive':'Named all Deity combat kits and gear, added leveling hooks, gave every enemy stat/scaling/AI profiles, and increased difficulty without requiring inflated health pools.',
@@ -220,7 +220,7 @@ try:
     ch=read_json(ch_path)
 except Exception:
     ch=[]
-entry={'id':'TG-CHANGE-TITAN-ENEMY-BALANCE-001','date':datetime.now(timezone.utc).date().isoformat(),'type':'balance-content','summary':'Completed Deity names/abilities/gear pass and added enemy stat/scaling profiles for harder solo progression.','files':['data/titans.json','titans/*.json','data/creatures.json','creatures/*.json','data/titan-enemy-balance-pass.json','data/progression-system.json','data/balance-analytics.json']}
+entry={'id':'MG-CHANGE-TITAN-ENEMY-BALANCE-001','date':datetime.now(timezone.utc).date().isoformat(),'type':'balance-content','summary':'Completed Deity names/abilities/gear pass and added enemy stat/scaling profiles for harder solo progression.','files':['data/titans.json','titans/*.json','data/creatures.json','creatures/*.json','data/titan-enemy-balance-pass.json','data/progression-system.json','data/balance-analytics.json']}
 if isinstance(ch, list):
     if not any(e.get('id')==entry['id'] for e in ch if isinstance(e,dict)): ch.append(entry)
     write_json(ch_path,ch)

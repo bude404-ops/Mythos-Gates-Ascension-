@@ -1,5 +1,5 @@
 {
-  "id": "TG-CANON-VERSION-MANIFEST-001",
+  "id": "MG-CANON-VERSION-MANIFEST-001",
   "schema": "TG_CANON_VERSION_MANIFEST_V1",
   "status": "ACTIVE",
   "currentCanonVersion": "1.16.0-ascension-route-codex-sync",
@@ -53,7 +53,7 @@
   },
   "migrations": [
     {
-      "id": "TG-MIG-001",
+      "id": "MG-MIG-001",
       "fromVersion": "1.5.0-async-arena-snapshots",
       "toVersion": "1.6.0-production-module-contracts",
       "type": "RUNTIME_PROJECTION",
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "id": "TG-MIG-002",
+      "id": "MG-MIG-002",
       "fromVersion": "1.6.0-production-module-contracts",
       "toVersion": "1.7.0-engine-adapter-scaffolding",
       "type": "ENGINE_EXPORT",
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "id": "TG-MIG-003",
+      "id": "MG-MIG-003",
       "fromVersion": "1.7.0-engine-adapter-scaffolding",
       "toVersion": "1.8.0-production-schema-contracts",
       "type": "SCHEMA_EXPANSION",
@@ -115,7 +115,7 @@
       ]
     },
     {
-      "id": "TG-MIG-004",
+      "id": "MG-MIG-004",
       "fromVersion": "1.8.0-production-schema-contracts",
       "toVersion": "1.8.1-canon-versioning-policy",
       "type": "VALIDATION_GATE",
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "id": "TG-MIG-005",
+      "id": "MG-MIG-005",
       "fromVersion": "1.8.1-canon-versioning-policy",
       "toVersion": "1.9.0-platform-core-v1",
       "type": "RUNTIME_PROJECTION",
@@ -154,7 +154,7 @@
       ]
     },
     {
-      "id": "TG-MIG-006",
+      "id": "MG-MIG-006",
       "fromVersion": "1.9.0-platform-core-v1",
       "toVersion": "1.10.0-hosted-backend-boundary",
       "type": "RUNTIME_PROJECTION",
@@ -174,7 +174,7 @@
       ]
     },
     {
-      "id": "TG-MIG-007",
+      "id": "MG-MIG-007",
       "fromVersion": "1.10.0-hosted-backend-boundary",
       "toVersion": "1.11.0-runtime-persistence-boundary",
       "type": "RUNTIME_PROJECTION",
@@ -195,7 +195,7 @@
       ]
     },
     {
-      "id": "TG-MIG-008",
+      "id": "MG-MIG-008",
       "fromVersion": "1.11.0-runtime-persistence-boundary",
       "toVersion": "1.12.0-ue5-dungeon-crawler-framework",
       "type": "ENGINE_EXPORT",
@@ -216,7 +216,7 @@
       ]
     },
     {
-      "id": "TG-MIG-009",
+      "id": "MG-MIG-009",
       "fromVersion": "1.12.0-ue5-dungeon-crawler-framework",
       "toVersion": "1.13.0-mobile-first-ue5-zone-prototype",
       "type": "ENGINE_EXPORT",
@@ -238,7 +238,7 @@
       ]
     },
     {
-      "id": "TG-MIG-010",
+      "id": "MG-MIG-010",
       "fromVersion": "1.13.0-mobile-first-ue5-zone-prototype",
       "toVersion": "1.14.0-one-deity-vs-many-combat",
       "type": "RUNTIME_PROJECTION",
@@ -260,7 +260,7 @@
       ]
     },
     {
-      "id": "TG-MIG-011",
+      "id": "MG-MIG-011",
       "fromVersion": "1.14.0-one-deity-vs-many-combat",
       "toVersion": "1.15.0-mission-campaign-lore-run-ins",
       "type": "RUNTIME_PROJECTION",
@@ -283,7 +283,7 @@
       ]
     },
     {
-      "id": "TG-MIG-012",
+      "id": "MG-MIG-012",
       "fromVersion": "1.15.0-mission-campaign-lore-run-ins",
       "toVersion": "1.16.0-ascension-route-codex-sync",
       "type": "CONTENT_BACKFILL",

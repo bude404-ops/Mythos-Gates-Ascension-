@@ -1,0 +1,218 @@
+{
+  "id": "MG-TITAN-046",
+  "slug": "michael",
+  "name": "Michael",
+  "factionId": "MG-FACTION-006",
+  "faction": "Empyrean",
+  "rarity": "Mythic God",
+  "role": "Defender",
+  "abilities": [
+    "Seraphel — Seraph Edict Lash Anchor",
+    "Choir Seal Technique — Bastion",
+    "Seraphel: Ophanim Throne Judgment Holdfast",
+    "Divine Ascension — Seraphic Choir Unbound"
+  ],
+  "stats": {
+    "hp": 50,
+    "attack": 10,
+    "range": 2,
+    "energy": 5,
+    "speed": 2,
+    "armor": 19,
+    "resistance": 12,
+    "critChance": 7,
+    "accuracy": 82,
+    "evasion": 4,
+    "guardBreak": 8,
+    "combatPower": 236
+  },
+  "equipment": [
+    "Seraphel Bulwark Seraph Bell-Edict Blade",
+    "Seraphel Opal-Glass Cherubim Aegis",
+    "Seraphel Ophanim Many-Eye Choir Core"
+  ],
+  "passives": [
+    "Choir Edict: Seraphel gains Choir Resonance when defender play anchors a control zone and converts enemy commitment into mitigation on ordered sigil zones. At 3 stacks, the next Technique or Reaction adds a radiant hierarchy judgment rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Radiant Hierarchies."
+  ],
+  "lore": "Michael, Sword of the Highest Gate, is now canonized as one of the four playable deities of Empyrean. The deity is the source-realm divinity behind the mythology rather than a generic champion: heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology deity whose behavior expresses heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon; confident, sovereign, readable in combat, loyal to the unchanged Empyrean canon.",
+  "visualDescription": "Michael manifests as heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon from Empyrean: stern beautiful masculine angelic face, strong jaw, luminous eyes, no softness, commander calm; tall athletic masculine warrior build, broad shoulders, narrow waist, immaculate upright stance; signature silhouette: two vast wings, sword vertical, shield aura, commander-triangle outline. Weapon: flaming judgement sword and choir shield. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
+  "artStatus": "READY_FOR_GENERATION",
+  "artPromptId": "MG-PROMPT-046",
+  "artworkId": null,
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "MG-BACKSTORY-TITAN-046",
+  "abilityDetails": [
+    {
+      "name": "Seraphel — Seraph Edict Lash Anchor",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "defender",
+        "empyrean",
+        "source-culture"
+      ],
+      "effect": "Deal Empyrean source-culture damage at range 2; generate Momentum and a small Choir Resonance gain when used from edict-sung holy geometry or against the marked target. The hit reads visually as white-gold radiance, many-eye auras, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
+    },
+    {
+      "name": "Choir Seal Technique — Bastion",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "defender",
+        "empyrean",
+        "source-culture"
+      ],
+      "effect": "Spend Momentum to protects a control zone, redirects enemy intent, and turns correct positioning into mitigation. Builds Choir Resonance only when the player uses edict-sung holy geometry intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
+    },
+    {
+      "name": "Seraphel: Ophanim Throne Judgment Holdfast",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "defender",
+        "empyrean",
+        "source-culture"
+      ],
+      "effect": "Spend stored Choir Resonance to impose a two-round rule from Radiant Hierarchies: protects a control zone, redirects enemy intent, and turns correct positioning into mitigation. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Seraphic Choir Unbound",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant",
+        "empyrean",
+        "source-culture"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Choir Resonance, transform nearby terrain into edict-sung holy geometry, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Seraphel Bulwark Seraph Bell-Edict Blade",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Legendary",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through edict-sung holy geometry. Visual: white-gold radiance, many-eye auras, opal glass, bell bronze, wing geometries, scroll seals, ophanim wheels, seraph fire.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
+    },
+    {
+      "name": "Seraphel Opal-Glass Cherubim Aegis",
+      "slot": "Armor Body",
+      "rarityFloor": "Legendary",
+      "primaryStat": "armor",
+      "effect": "Improves survivability and makes the Deity read as Radiant Hierarchies source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
+    },
+    {
+      "name": "Seraphel Ophanim Many-Eye Choir Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Legendary",
+      "primaryStat": "energy",
+      "effect": "Stores Choir Resonance and unlocks a mastery branch for Archangel Herald Ascent, Ophanim Wheel Intercept, and Seal the Discord. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 60,
+    "statGrowthPer10Levels": {
+      "hp": 9,
+      "attack": 1,
+      "armor": 2,
+      "resistance": 1
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      60
+    ],
+    "gearTierCap": "Mythic",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "hold objectives and survive pressure",
+    "budgetTarget": 112,
+    "computedCombatPower": 236,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ],
+    "uniqueMechanic": "Seraphel's Choir Edict: a solo mechanic where Choir Resonance grows through ordered sigil zones, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+    "counterplayRule": "spread attackers, displacement, or terrain denial break the anchor"
+  },
+  "mythicSource": "Archangel Michael — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+  "visualTraits": {
+    "face": "stern beautiful masculine angelic face, strong jaw, luminous eyes, no softness, commander calm",
+    "bodyProportions": "tall athletic masculine warrior build, broad shoulders, narrow waist, immaculate upright stance",
+    "silhouette": "two vast wings, sword vertical, shield aura, commander-triangle outline",
+    "weapon": "flaming judgement sword and choir shield",
+    "sexIdentity": "Male"
+  },
+  "armorCanon": {
+    "identityRule": "Armor must reveal male divine anatomy and Empyrean civilization logic; no generic armor template.",
+    "silhouette": "two vast wings, sword vertical, shield aura, commander-triangle outline"
+  },
+  "updated": "2026-08-17",
+  "weaponCanon": {
+    "signatureWeapon": "flaming judgement sword and choir shield",
+    "loreReason": "Chosen because Michael embodies heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon in combat."
+  },
+  "gearCanon": {
+    "maskHelmetCrown": "Crown/helmet/mask must support stern beautiful masculine angelic face, strong jaw, luminous eyes, no softness, commander calm and two vast wings, sword vertical, shield aura, commander-triangle outline; never hide sex identity or make the god interchangeable."
+  },
+  "sex": "Male",
+  "titanArtDna": {
+    "rosterCanon": "FOUR_GODS_PER_FACTION_PLAYABLE_ROSTER",
+    "mythologyGod": "Archangel Michael",
+    "sex": "Male",
+    "archetype": "heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon",
+    "signatureWeapon": "flaming judgement sword and choir shield",
+    "faceLock": "stern beautiful masculine angelic face, strong jaw, luminous eyes, no softness, commander calm",
+    "bodyLock": "tall athletic masculine warrior build, broad shoulders, narrow waist, immaculate upright stance",
+    "silhouetteLock": "two vast wings, sword vertical, shield aura, commander-triangle outline",
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved.",
+    "mythology": "Archangel Michael — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+    "realm": "The Radiant Hierarchies",
+    "civilization": "Empyrean mythological extradimensional civilization",
+    "cultureRule": "God identity must come from mythology, realm, civilization, sacred materials, beauty standards, and ritual practice; never color swap alone.",
+    "beautyStandard": "Unmistakably masculine divine presence with faction-specific strength, nobility, posture, and varied anatomy.",
+    "realmAnatomy": "Realm-shaped mythological divinity, supernatural but not sci-fi alien.",
+    "identityFace": "stern beautiful masculine angelic face, strong jaw, luminous eyes, no softness, commander calm",
+    "identityBody": "tall athletic masculine warrior build, broad shoulders, narrow waist, immaculate upright stance",
+    "roleSilhouette": "two vast wings, sword vertical, shield aura, commander-triangle outline",
+    "auditStatus": "PASS"
+  },
+  "title": "Sword of the Highest Gate",
+  "playableClassification": "God",
+  "species": "Deity",
+  "characterType": "Playable Deity",
+  "rosterClass": "Deity Roster"
+}

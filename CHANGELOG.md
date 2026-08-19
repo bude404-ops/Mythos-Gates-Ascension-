@@ -79,15 +79,15 @@
 ### Approved Concept Art
 | Deity | Status | Notes |
 |-------|--------|-------|
-| TG-TITAN-001 Aten-Ra Solar Law Monolith | Approved | Hair added (electrum-streaked braids) |
-| TG-TITAN-002 Khemet Suncrown | Approved | |
-| TG-TITAN-003 Nefra Obsidian Dawn | Approved | Feminine face, amber eyes, obsidian liner |
-| TG-TITAN-010 Allfather Stormvein | Approved | Style benchmark for all future titans |
+| MG-TITAN-001 Aten-Ra Solar Law Monolith | Approved | Hair added (electrum-streaked braids) |
+| MG-TITAN-002 Khemet Suncrown | Approved | |
+| MG-TITAN-003 Nefra Obsidian Dawn | Approved | Feminine face, amber eyes, obsidian liner |
+| MG-TITAN-010 Allfather Stormvein | Approved | Style benchmark for all future titans |
 
 ### Art Style Direction (Aug 17 2026)
 - Balance between **stylized and detailed** — NOT photorealistic
 - Must be suitable for 3D model conversion
-- Reference: Allfather Stormvein (TG-TITAN-010) is the approved benchmark
+- Reference: Allfather Stormvein (MG-TITAN-010) is the approved benchmark
 - All titan art must follow **verbatim repo prompts** — no improvisation
 
 ### Aten Ra Visual Identifier Fix

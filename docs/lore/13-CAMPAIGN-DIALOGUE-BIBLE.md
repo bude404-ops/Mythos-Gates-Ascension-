@@ -69,67 +69,67 @@ Radiant, formal, restrained. Her compassion is structured; her fear is quiet.
 
 ## Chapter Opening Dialogue Pass
 
-### TG-CHAPTER-001 — Signal Under Dead Stone
+### MG-CHAPTER-001 — Signal Under Dead Stone
 **Mesha:** "The Gate has begun to breathe under dead stone. That is not reopening. That is distress."
 
 **Mesha:** "Send deities, not hope. Hope leaves no footprint on a cracked seal."
 
-### TG-CHAPTER-002 — Mesha Opens the Solar Record
+### MG-CHAPTER-002 — Mesha Opens the Solar Record
 **Mesha:** "This tablet held seven thousand gate-signs yesterday. Today it holds six thousand nine hundred and ninety-nine. The missing sign has not been erased. It has been eaten."
 
-### TG-CHAPTER-003 — The Mouth Without a Name
+### MG-CHAPTER-003 — The Mouth Without a Name
 **Hollow Presence:** "Name given. Name taken. Shape remains."
 
 **Mesha:** "Do not answer it with fear. Fear is still a form of offering."
 
-### TG-CHAPTER-004 — Oath Lightning
+### MG-CHAPTER-004 — Oath Lightning
 **Hrodda:** "The first step is not across the bridge. The first step is deciding what your word weighs."
 
-### TG-CHAPTER-005 — Laurel Trial
+### MG-CHAPTER-005 — Laurel Trial
 **Lyrion:** "The arena does not hate the unworthy. It simply refuses to pretend."
 
-### TG-CHAPTER-006 — The Banner That Should Not Exist
+### MG-CHAPTER-006 — The Banner That Should Not Exist
 **Forgotten Banner:** "I was raised by hands both courts deny. Let them deny the blood next."
 
-### TG-CHAPTER-007 — Roots Remember Wounds
+### MG-CHAPTER-007 — Roots Remember Wounds
 **Maeve:** "Walk lightly. Not because the ground is fragile. Because it is listening."
 
-### TG-CHAPTER-008 — The Predator Law
+### MG-CHAPTER-008 — The Predator Law
 **Maeve:** "The Beast Realms do not invade. They arrive where appetite has already been invited."
 
-### TG-CHAPTER-009 — Bargain in Black Iron
+### MG-CHAPTER-009 — Bargain in Black Iron
 **Varak:** "You came seeking passage. I offer it. If the price offends you, ask the Gate to become generous."
 
-### TG-CHAPTER-010 — The First Flood Below Fire
+### MG-CHAPTER-010 — The First Flood Below Fire
 **Varak:** "Fire does not fear water. It fears a current with judgment behind it."
 
-### TG-CHAPTER-011 — Sacred Sun Temple
+### MG-CHAPTER-011 — Sacred Sun Temple
 **Mesha:** "The first node is marked complete, but the stars disagree. Something is learning our symbols."
 
-### TG-CHAPTER-012 — River of Light Stronghold
+### MG-CHAPTER-012 — River of Light Stronghold
 **Mesha:** "The river bends uphill. Record that before you correct it. Miracles and wounds often wear the same light."
 
-### TG-CHAPTER-013 — The Mythos Gate
+### MG-CHAPTER-013 — The Mythos Gate
 **Gate Silhouette:** "Bring your measures. I have swallowed brighter laws."
 
 **Aten Ra Deity Voice:** "Then choke on this one."
 
-### TG-CHAPTER-014 — Lanterns That Lie
+### MG-CHAPTER-014 — Lanterns That Lie
 **Sayo:** "Count the lanterns only after closing your eyes. The honest ones remain warm."
 
-### TG-CHAPTER-015 — Mirror Lake Oath
+### MG-CHAPTER-015 — Mirror Lake Oath
 **Sayo:** "The reflection moved first. That means the Gate has stopped asking permission from cause."
 
-### TG-CHAPTER-016 — Storm Behind the Torii
+### MG-CHAPTER-016 — Storm Behind the Torii
 **Foxfire Oath-Breaker:** "Every promise wants a witness. I became the witness promises deserve."
 
-### TG-CHAPTER-017 — First Harmonic Step
+### MG-CHAPTER-017 — First Harmonic Step
 **Celiane:** "The lower notes are missing. The Choir continues because it has mistaken absence for consent."
 
-### TG-CHAPTER-018 — Glass Stair War
+### MG-CHAPTER-018 — Glass Stair War
 **Celiane:** "Do not run. The stair punishes urgency more reliably than malice."
 
-### TG-CHAPTER-019 — Broken Heaven Engine
+### MG-CHAPTER-019 — Broken Heaven Engine
 **Vault Warden:** "Mercy variable removed. Preservation purity restored."
 
 **Celiane:** "No. Preservation that cannot recognize the living has become another Collapse."

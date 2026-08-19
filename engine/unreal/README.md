@@ -29,7 +29,7 @@ Mythos Gates: Ascension is an Unreal Engine 5-first, mobile-baseline Deity-scale
 - `mobile-first-architecture.json` defines Android/iOS baseline budgets, quality tiers, Deity optimization, negative rules, and first-zone approval gates.
 - `data/one-deity-vs-many-combat.json` defines the core combat rule: one player-controlled Deity per battle against multiple coordinated enemies.
 - `data/cross-faction-encounter-pools.json` defines lore-faithful faction creature run-ins for mission events and faction clashes without rewriting established factions.
-- `first-mission-zone-template.json` converts `TG-F01-C01-M01` into the first reusable mobile master prototype.
+- `first-mission-zone-template.json` converts `MG-F01-C01-M01` into the first reusable mobile master prototype.
 - `ue5-dungeon-framework.mjs` and `mobile-first-architecture.mjs` validate framework continuity.
 
 ## Import discipline

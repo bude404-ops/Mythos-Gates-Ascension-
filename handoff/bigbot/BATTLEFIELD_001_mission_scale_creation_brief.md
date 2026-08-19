@@ -3,8 +3,8 @@
 ## Asset lock
 - Asset ID: `BATTLEFIELD_001`
 - Canon name: `The First Reopening Gate`
-- Canon map: `TG-MAP-001`
-- First mission using it: `TG-F01-C01-M01 — First Light Under Dead Stone`
+- Canon map: `MG-MAP-001`
+- First mission using it: `MG-F01-C01-M01 — First Light Under Dead Stone`
 - Approval rule: create previews first; import source files only after holder approval.
 - Canon rule: do not add new lore, new faction identity, sci-fi drift, watermarks, readable logos, or non-canon symbols.
 
@@ -17,8 +17,8 @@ This battlefield must serve the mission, not just look impressive.
 - Turn limit: 11
 - Team size: one active player-controlled Deity.
 - Active Deity policy: ONE_PLAYER_CONTROLLED_TITAN
-- Enemy wave 1: TG-CREATURE-002, TG-CREATURE-003; entry: deployed at opposing gate markers.
-- Enemy wave 2: TG-CREATURE-003; entry: reinforcement from shadowed lane; trigger: turn 3 or primary objective touched.
+- Enemy wave 1: MG-CREATURE-002, MG-CREATURE-003; entry: deployed at opposing gate markers.
+- Enemy wave 2: MG-CREATURE-003; entry: reinforcement from shadowed lane; trigger: turn 3 or primary objective touched.
 
 ## Required tactical layout
 Create an elongated mobile-readable 3D tactical battlefield with:

@@ -1,8 +1,8 @@
 {
-  "id": "TG-RAID-SYSTEM-001",
+  "id": "MG-RAID-SYSTEM-001",
   "version": "1.1.0-raid-economy-tuning",
   "status": "IMPLEMENTED",
-  "taskId": "TG-DEV-025",
+  "taskId": "MG-DEV-025",
   "activeDeityRule": "One active player deity only. Reserve support is deferred architecture, not initial gameplay.",
   "frameworkPrinciples": [
     "Every raid attempt is deterministic from stage profile, approach, tier, and one active deity state.",
@@ -215,7 +215,7 @@
   },
   "bosses": [
     {
-      "id": "TG-RAID-BOSS-001",
+      "id": "MG-RAID-BOSS-001",
       "name": "The Gate Warden",
       "phaseCount": 5,
       "phases": [
@@ -253,7 +253,7 @@
     "Command Hub runtime reads stageProfiles/baseScore and displays problem tags, preferred counters, and carry risk per stage.",
     "Browser smoke clears all five stages deterministically with one active deity and verifies raid economy output.",
     "Validation fails if paid power, live PvP, hidden random rolls, or deity fanout appear in the initial raid framework.",
-    "TG-DEV-025 raid economy tuning is IMPLEMENTED and validates first-clear bonuses, replay caps, mastery credit, and anti-pay-to-win policy."
+    "MG-DEV-025 raid economy tuning is IMPLEMENTED and validates first-clear bonuses, replay caps, mastery credit, and anti-pay-to-win policy."
   ],
   "forbiddenInitialScope": [
     "livePvP",

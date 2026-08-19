@@ -11,13 +11,13 @@ import re
 BASE = os.path.dirname(os.path.abspath(__file__))
 
 SELECTED_DEITY_IDS = [
-    "TG-TITAN-001", "TG-TITAN-002", "TG-TITAN-003", "TG-TITAN-004",
-    "TG-TITAN-010", "TG-TITAN-011", "TG-TITAN-012", "TG-TITAN-013",
-    "TG-TITAN-019", "TG-TITAN-020", "TG-TITAN-021", "TG-TITAN-022",
-    "TG-TITAN-028", "TG-TITAN-029", "TG-TITAN-030", "TG-TITAN-031",
-    "TG-TITAN-037", "TG-TITAN-038", "TG-TITAN-039", "TG-TITAN-040",
-    "TG-TITAN-046", "TG-TITAN-047", "TG-TITAN-048", "TG-TITAN-049",
-    "TG-TITAN-055", "TG-TITAN-056", "TG-TITAN-057", "TG-TITAN-058",
+    "MG-TITAN-001", "MG-TITAN-002", "MG-TITAN-003", "MG-TITAN-004",
+    "MG-TITAN-010", "MG-TITAN-011", "MG-TITAN-012", "MG-TITAN-013",
+    "MG-TITAN-019", "MG-TITAN-020", "MG-TITAN-021", "MG-TITAN-022",
+    "MG-TITAN-028", "MG-TITAN-029", "MG-TITAN-030", "MG-TITAN-031",
+    "MG-TITAN-037", "MG-TITAN-038", "MG-TITAN-039", "MG-TITAN-040",
+    "MG-TITAN-046", "MG-TITAN-047", "MG-TITAN-048", "MG-TITAN-049",
+    "MG-TITAN-055", "MG-TITAN-056", "MG-TITAN-057", "MG-TITAN-058",
 ]
 
 LANGUAGE_RULES = [
@@ -187,7 +187,7 @@ def global_language_update():
 
 def create_transformation_manifest(selected_deities):
     manifest = {
-        "id": "TG-TRANSFORMATION-001",
+        "id": "MG-TRANSFORMATION-001",
         "version": "2.0.0",
         "date": "2026-08-18",
         "transformation": "Titans Gate -> Mythos Gates: Ascension",
@@ -213,7 +213,7 @@ def create_transformation_manifest(selected_deities):
             {"id": d.get('id'), "name": d.get('name'), "faction": d.get('faction'), "role": d.get('role'), "mythicSource": d.get('mythicSource', '')[:80]}
             for d in selected_deities
         ],
-        "droppedEntities": [f"TG-TITAN-{i:03d}" for i in range(1, 64) if f"TG-TITAN-{i:03d}" not in SELECTED_DEITY_IDS],
+        "droppedEntities": [f"MG-TITAN-{i:03d}" for i in range(1, 64) if f"MG-TITAN-{i:03d}" not in SELECTED_DEITY_IDS],
     }
     path = os.path.join(BASE, 'data', 'transformation-manifest.json')
     with open(path, 'w') as f:

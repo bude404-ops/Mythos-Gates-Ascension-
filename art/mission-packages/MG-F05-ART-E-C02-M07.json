@@ -1,0 +1,42 @@
+{
+  "id": "MG-F05-ART-E-C02-M07",
+  "missionId": "MG-F05-E-C02-M07",
+  "factionId": "MG-FACTION-005",
+  "campaignType": "Elite",
+  "status": "Prompt Ready",
+  "mapEnvironmentPrompt": "Mythos Gates mission art rewrite for Elite: Bleed the Geas Thorn Corridor: Hazard Reading: Silver-Root Geas Labyrinth / The Silver-Root Gate / Sealed Gate with fae time bleed. Depict Geas Thorn Corridor as a readable mobile tactical hazard node in living mound-gate maze and geas trial; one active god or goddess from Dagda, Morrígan, Brigid, Lugh; no armies, no squads, no simultaneous party. Primary objective visual: With one selected deity, solve the hazard layer in the elite-tuned Geas Thorn Corridor, secure the route machine, and reach the safe marker without feeding the Gate. Source-Realm visual language: silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy. Show route readability for shrine, treasure, hazard, elite, or boss intent where relevant. Avoid sci-fi portal treatment, generic fantasy castle, planetary/alien framing, reskinned copy dungeon, UI grid tiles as world objects.",
+  "backgroundPrompt": "Background plate for Elite: Bleed the Geas Thorn Corridor: Hazard Reading in Geas Thorn Corridor, part of Silver-Root Geas Labyrinth. The environment must communicate Avalora as the source culture behind mortal myth echoes, using silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.",
+  "enemyPlacementGuidance": "Place enemies to create lane decisions, objective tension, and flanking pressure without hiding readable silhouettes.",
+  "bossArtworkRequirements": "Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.",
+  "objectiveArtworkRequirements": "Objective props must use Tuatha source-culture cosmetics: Lugh silver-spear thornblades, moon-oak sídhe mantles, Dagda cauldron memory cores, fae glamour reversals as relic-cache silhouettes, seal anchors, lane markers, or altar mechanisms. Readable on mobile; no generic chest, plain sword, plain armor, or mismatched faction relic.",
+  "vfxRequirements": [
+    "root wall growth",
+    "moonlit pollen pulse",
+    "living terrain backlash",
+    "Gate rot cleanse"
+  ],
+  "uiRequirements": [
+    "large touch mission node",
+    "primary objective badge",
+    "elite remix badge",
+    "star goals visible before launch"
+  ],
+  "missionThumbnail": "Elite: Fae Roads Refuse Fire: Hidden Law thumbnail: one active deity silhouette advancing through Avalora source-culture terrain; visible cues include silver branches, moonlit green-gold, living oak armor, thorn mantles, standing stone geometry, battle-crow omens, cauldron glow, geas scars and optional Lugh silver-spear thornblades, moon-oak sídhe mantles, Dagda cauldron memory cores, fae glamour reversals.",
+  "chapterArtwork": "Chapter banner uses Tuatha source-culture appearance canon: silver branches, moonlit green-gold, living oak armor, thorn mantles, standing stone geometry, battle-crow omens, cauldron glow, geas scars; cosmetic props and reward silhouettes echo Lugh silver-spear thornblades, moon-oak sídhe mantles, Dagda cauldron memory cores, fae glamour reversals; Earth myth is the echo, Realm culture is the source.",
+  "sourceCultureAppearanceRule": "Must match Avalora source-culture canon; avoid generic elf, cute fairy wings, random Celtic clipart knots, Renaissance costume, treehouse body, plastic leaves and generic cosmetics.",
+  "updated": "2026-08-16",
+  "mythosGatesArtRecreation": {
+    "status": "PASS_1_ROUTE_VISUAL_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-005",
+    "routeName": "Silver-Root Geas Labyrinth",
+    "entryGate": "The Silver-Root Gate",
+    "gateState": "Sealed Gate with fae time bleed",
+    "visualRule": "Show one-active-deity scale, source-Realm mythology, physical hazards, shrine/treasure/boss route language, and no sci-fi/simple-portal treatment."
+  },
+  "routeId": "MG-DUNGEON-ROUTE-005",
+  "routeName": "Silver-Root Geas Labyrinth",
+  "routeRoomName": "Geas Thorn Corridor",
+  "entryGate": "The Silver-Root Gate",
+  "encounterPrompt": "Encounter composition for Elite: Bleed the Geas Thorn Corridor: Hazard Reading: one selected playable deity silhouette versus multiple battle-crow doom markers in Geas Thorn Corridor. If this is elite or boss content, foreshadow Sídhe Thorn Knight and The Crow-Crowned Geas Breaker without adding allied squads.",
+  "negativePrompt": "sci-fi portal treatment, generic fantasy castle, planetary/alien framing, reskinned copy dungeon, UI grid tiles as world objects, armies, squads, party lineup, generic portal, mortal ascension scene"
+}

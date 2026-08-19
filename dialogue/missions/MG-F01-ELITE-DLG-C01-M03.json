@@ -1,0 +1,62 @@
+{
+  "id": "MG-F01-ELITE-DLG-C01-M03",
+  "missionId": "MG-F01-E-C01-M03",
+  "factionId": "MG-FACTION-001",
+  "campaignType": "Elite",
+  "status": "Production Ready",
+  "tone": "restrained mythic tactical",
+  "briefing": "Mythos Gates briefing: Elite: Restore the Black-Land Silt Crossing: Forward Claim. Enter Black-Land Silt Crossing on Sun-Scale Verdict Descent through The Sun-Scale Gate while the Gate remains Stable Gate under Ma’at strain. Reference deity voice is Iset, but the player still chooses one deity from the faction roster. Objective: With one selected deity, break the first enemy pressure line in the elite-tuned Black-Land Silt Crossing, secure the outer defense, and deny the Hollow a foothold in the outer dungeon.",
+  "lines": {
+    "missionIntro": [
+      {
+        "speaker": "Iset Divine Voice",
+        "text": "The scale waits for weight, not noise. The Black-Land Silt Crossing will know whether one deity is enough."
+      }
+    ],
+    "enemyIntroduction": [
+      {
+        "speaker": "Lore Director",
+        "text": "Enemies are not filler here; they are the combat pressure of Sun-Scale Verdict Descent made hostile."
+      }
+    ],
+    "midBattle": [
+      {
+        "speaker": "Gameplay Director",
+        "text": "Read the room law first: Exploit or avoid the route rule: Khepri dawn loops that rewind wounds and revive enemies if misread"
+      }
+    ],
+    "victory": [
+      {
+        "speaker": "Iset Divine Voice",
+        "text": "The verdict remains harsh, but it names us lawful."
+      }
+    ],
+    "defeat": [
+      {
+        "speaker": "Iset Divine Voice",
+        "text": "Withdraw. The Sun-Scale Gate has learned too much from this attempt."
+      }
+    ],
+    "codex": [
+      {
+        "speaker": "Lore Director",
+        "text": "The Solar Dominion of Khepra is the source Realm; mortal myth is only the later echo. This beat documents Black-Land Silt Crossing as part of Sun-Scale Verdict Descent."
+      }
+    ]
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "visualDirection": "Frame Black-Land Silt Crossing as a combat node in Sun-Scale Verdict Descent; Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light.",
+  "updated": "2026-08-16",
+  "mythosGatesDialogueRecreation": {
+    "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-001",
+    "routeName": "Sun-Scale Verdict Descent",
+    "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable deity language.",
+    "soloRule": "Dialogue supports one active god or goddess in the field."
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
+  "routeId": "MG-DUNGEON-ROUTE-001",
+  "routeName": "Sun-Scale Verdict Descent",
+  "routeRoomName": "Black-Land Silt Crossing",
+  "entryGate": "The Sun-Scale Gate"
+}

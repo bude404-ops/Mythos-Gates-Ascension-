@@ -39,7 +39,7 @@ Required next state:
 - UE5 mobile-first project shell with plugin/module layout
 - generated DataAssets/DataTables from canon
 - Blueprint Actor Components for exploration, encounters, and tactical arena entry
-- Level Instance template for `TG-F01-C01-M01`
+- Level Instance template for `MG-F01-C01-M01`
 - Android/iOS device profiles, mobile lighting, LOD, culling, texture budgets, FPS/memory harness, one-Deity-vs-many combat loop, visible power progression checks, cross-faction creature encounter pools, mission/campaign lore guardrails, and first-zone approval gate
 
 ### 2. Prototype code is too bundled

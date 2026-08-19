@@ -1,29 +1,29 @@
 {
-  "id": "TG-SOLO-VERTICAL-SLICE-ATEN-RA-001",
+  "id": "MG-SOLO-VERTICAL-SLICE-ATEN-RA-001",
   "version": "1.0.0",
   "generated": "2026-08-12T16:44:00Z",
   "status": "IMPLEMENTED",
   "title": "Aten Ra Solo Vertical Slice \u2014 The First Reopening Gate",
   "purpose": "Production-ready one-faction solo combat slice that converts the solo battle reducers into five mission types and one multi-phase boss package.",
   "canonSources": [
-    "TG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
-    "TG-SOLO-BATTLE-STATE-SCHEMA-001",
-    "TG-BATTLEFIELD-VS-001",
-    "TG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001"
+    "MG-SOLO-COMBAT-DESIGN-DOCUMENT-001",
+    "MG-SOLO-BATTLE-STATE-SCHEMA-001",
+    "MG-BATTLEFIELD-VS-001",
+    "MG-PLAYER-ONBOARDING-ROSTER-JOURNEY-001"
   ],
   "faction": {
-    "id": "TG-FACTION-001",
+    "id": "MG-FACTION-001",
     "name": "Aten Ra",
     "realm": "The Solar Dominion of Khepra"
   },
   "starterDeity": {
-    "id": "TG-TITAN-001",
+    "id": "MG-TITAN-001",
     "name": "Aten-Ra, Solar Law Monolith",
     "role": "Defender",
     "combatPromise": "Hold the Gate alone through law, positioning, Momentum, Divinity, and solar terrain mastery."
   },
   "battlefield": {
-    "id": "TG-BATTLEFIELD-VS-001",
+    "id": "MG-BATTLEFIELD-VS-001",
     "grid": {
       "width": 7,
       "height": 7
@@ -96,7 +96,7 @@
   },
   "missionTypes": [
     {
-      "id": "TG-SOLO-MISSION-MOVE-001",
+      "id": "MG-SOLO-MISSION-MOVE-001",
       "type": "Movement Tutorial",
       "title": "Cross the Broken Threshold",
       "objectiveIds": [
@@ -109,8 +109,8 @@
         "Momentum from solar positioning"
       ],
       "enemyIds": [
-        "TG-CREATURE-001",
-        "TG-CREATURE-001"
+        "MG-CREATURE-001",
+        "MG-CREATURE-001"
       ],
       "requiredReducers": [
         "createInitialSoloBattleState",
@@ -126,7 +126,7 @@
       }
     },
     {
-      "id": "TG-SOLO-MISSION-REACTION-001",
+      "id": "MG-SOLO-MISSION-REACTION-001",
       "type": "Reaction Trial",
       "title": "Parry the Gateborn Rush",
       "objectiveIds": [
@@ -139,8 +139,8 @@
         "Dodge/Parry/Counter Charge choice clarity"
       ],
       "enemyIds": [
-        "TG-CREATURE-001",
-        "TG-CREATURE-002"
+        "MG-CREATURE-001",
+        "MG-CREATURE-002"
       ],
       "requiredReducers": [
         "revealEnemyIntents",
@@ -153,7 +153,7 @@
       }
     },
     {
-      "id": "TG-SOLO-MISSION-TERRAIN-001",
+      "id": "MG-SOLO-MISSION-TERRAIN-001",
       "type": "Terrain Weapon Trial",
       "title": "Turn Judgment Rays Into Law",
       "objectiveIds": [
@@ -167,8 +167,8 @@
         "Aten Ra solarCharge meter"
       ],
       "enemyIds": [
-        "TG-CREATURE-006",
-        "TG-CREATURE-007"
+        "MG-CREATURE-006",
+        "MG-CREATURE-007"
       ],
       "requiredReducers": [
         "applyTerrainTick",
@@ -181,7 +181,7 @@
       }
     },
     {
-      "id": "TG-SOLO-MISSION-OBJECTIVE-001",
+      "id": "MG-SOLO-MISSION-OBJECTIVE-001",
       "type": "Objective Control",
       "title": "Stabilize the Solar Seal Court",
       "objectiveIds": [
@@ -196,9 +196,9 @@
         "Divinity from objective completion"
       ],
       "enemyIds": [
-        "TG-CREATURE-001",
-        "TG-CREATURE-006",
-        "TG-CREATURE-007"
+        "MG-CREATURE-001",
+        "MG-CREATURE-006",
+        "MG-CREATURE-007"
       ],
       "requiredReducers": [
         "evaluateObjectives",
@@ -211,7 +211,7 @@
       }
     },
     {
-      "id": "TG-SOLO-MISSION-EXECUTION-001",
+      "id": "MG-SOLO-MISSION-EXECUTION-001",
       "type": "Execution Window",
       "title": "Break the Anchor Scar",
       "objectiveIds": [
@@ -224,9 +224,9 @@
         "execution payoff"
       ],
       "enemyIds": [
-        "TG-CREATURE-004",
-        "TG-CREATURE-001",
-        "TG-CREATURE-001"
+        "MG-CREATURE-004",
+        "MG-CREATURE-001",
+        "MG-CREATURE-001"
       ],
       "requiredReducers": [
         "applyDeityAction",
@@ -240,9 +240,9 @@
     }
   ],
   "bossEncounter": {
-    "id": "TG-BOSS-FIRST-GATE-COLOSSUS",
+    "id": "MG-BOSS-FIRST-GATE-COLOSSUS",
     "name": "The First Gate Colossus",
-    "enemyId": "TG-CREATURE-002",
+    "enemyId": "MG-CREATURE-002",
     "missionType": "Boss",
     "title": "Seal the First Reopening Gate",
     "entryRequirement": "Complete the five solo mission type lessons or replay them as one continuous gauntlet.",

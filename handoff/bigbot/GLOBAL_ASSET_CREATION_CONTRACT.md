@@ -247,7 +247,7 @@ Each batch must list:
 The first proof target remains:
 
 - `BATTLEFIELD_001 — The First Reopening Gate`
-- Mission: `TG-F01-C01-M01 — First Light Under Dead Stone`
+- Mission: `MG-F01-C01-M01 — First Light Under Dead Stone`
 
 This first battlefield is the test of the complete pipeline. Once it passes, the same contract applies to every following battlefield and model.
 

@@ -1,6 +1,6 @@
 # Hybrid 2D Sprite + 3D Campaign Visual Architecture
 
-**Codex ID:** TG-VISUAL-ARCH-001  
+**Codex ID:** MG-VISUAL-ARCH-001  
 **Director:** Development Director  
 **Status:** Canon Locked  
 **Updated:** 2026-08-10

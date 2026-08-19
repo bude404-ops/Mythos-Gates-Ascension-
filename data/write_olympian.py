@@ -1,6 +1,6 @@
 import json
 
-oly = {"factionId": "TG-FACTION-003", "npc": "Lyrion Laurel-Envoy", "deity_voice": "Zeus Divine Voice", "chapters": {}, "elite_chapters": {}}
+oly = {"factionId": "MG-FACTION-003", "npc": "Lyrion Laurel-Envoy", "deity_voice": "Zeus Divine Voice", "chapters": {}, "elite_chapters": {}}
 
 # Read the campaign lore to get chapter summaries
 chapters_data = {

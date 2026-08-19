@@ -1,0 +1,62 @@
+{
+  "id": "MG-F02-DLG-C03-M12",
+  "missionId": "MG-F02-C03-M12",
+  "factionId": "MG-FACTION-002",
+  "campaignType": "Normal",
+  "status": "Production Ready",
+  "tone": "storm mythic tactical",
+  "briefing": "Mythos Gates briefing: Stand the World-Root Snare Path: Lore Price. Enter World-Root Snare Path on Thunder-Oath Root Gauntlet through The Thunder-Oath Gate while the Gate remains Ruin Gate with active oath memory. Reference deity voice is Thor, but the player still chooses one deity from the faction roster. Objective: With one selected deity, open the relic detour in the World-Root Snare Path, secure the hidden memory, and take the reward without awakening the wrong memory.",
+  "lines": {
+    "missionIntro": [
+      {
+        "speaker": "Thor Divine Voice",
+        "text": "The oath hears footsteps before thunder. The World-Root Snare Path will know whether one deity is enough."
+      }
+    ],
+    "enemyIntroduction": [
+      {
+        "speaker": "Lore Director",
+        "text": "Enemies are not filler here; they are the treasure or lore pressure of Thunder-Oath Root Gauntlet made hostile."
+      }
+    ],
+    "midBattle": [
+      {
+        "speaker": "Gameplay Director",
+        "text": "Read the room law first: Exploit or avoid the route rule: lightning that strikes cowardice before armor"
+      }
+    ],
+    "victory": [
+      {
+        "speaker": "Thor Divine Voice",
+        "text": "The storm has heard the oath and left it standing."
+      }
+    ],
+    "defeat": [
+      {
+        "speaker": "Thor Divine Voice",
+        "text": "Withdraw. The Thunder-Oath Gate has learned too much from this attempt."
+      }
+    ],
+    "codex": [
+      {
+        "speaker": "Lore Director",
+        "text": "The Storm-Rooted Aesir Holds is the source Realm; mortal myth is only the later echo. This beat documents World-Root Snare Path as part of Thunder-Oath Root Gauntlet."
+      }
+    ]
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "visualDirection": "Frame World-Root Snare Path as a treasure or lore node in Thunder-Oath Root Gauntlet; storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.",
+  "updated": "2026-08-16",
+  "mythosGatesDialogueRecreation": {
+    "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-002",
+    "routeName": "Thunder-Oath Root Gauntlet",
+    "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable deity language.",
+    "soloRule": "Dialogue supports one active god or goddess in the field."
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
+  "routeId": "MG-DUNGEON-ROUTE-002",
+  "routeName": "Thunder-Oath Root Gauntlet",
+  "routeRoomName": "World-Root Snare Path",
+  "entryGate": "The Thunder-Oath Gate"
+}

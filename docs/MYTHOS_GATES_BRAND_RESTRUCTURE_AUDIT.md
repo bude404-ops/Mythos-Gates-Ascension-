@@ -188,7 +188,7 @@ Changed:
 
 Preserved:
 
-- Legacy internal IDs such as `TG-` remain for compatibility. They are now historical technical identifiers, not visible brand canon.
+- Legacy internal IDs such as `MG-` remain for compatibility. They are now historical technical identifiers, not visible brand canon.
 
 ## 15. Terminology Classification
 

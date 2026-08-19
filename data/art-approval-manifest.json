@@ -1,5 +1,5 @@
 {
-  "id": "TG-ART-APPROVAL-MANIFEST-001",
+  "id": "MG-ART-APPROVAL-MANIFEST-001",
   "name": "Mythos Gates First Art Approval Manifest",
   "version": "1.0.0",
   "status": "IMPLEMENTED",
@@ -9,51 +9,51 @@
   "scope": "Approves prompt packages for the first deity art batch plus Mesha Gate-Scribe and The First Reopening Gate; this does not claim final image assets have been generated or imported.",
   "canonRule": "Approval may refine composition and quality gates only; it may not invent lore, alter faction identity, or mark generated images as imported.",
   "gatesClosed": [
-    "TG-DEV-001",
-    "TG-DEV-007"
+    "MG-DEV-001",
+    "MG-DEV-007"
   ],
   "stillBlocked": [
-    "TG-DEV-004"
+    "MG-DEV-004"
   ],
   "approvalBatches": [
     {
-      "id": "TG-ART-BATCH-TITAN-ATENRA-001",
-      "taskId": "TG-DEV-001",
+      "id": "MG-ART-BATCH-TITAN-ATENRA-001",
+      "taskId": "MG-DEV-001",
       "name": "Aten Ra Deity Artwork Approval Batch",
       "status": "APPROVED_FOR_GENERATION",
       "count": 4,
       "promptIds": [
-        "TG-PROMPT-001",
-        "TG-PROMPT-005",
-        "TG-PROMPT-006",
-        "TG-PROMPT-009"
+        "MG-PROMPT-001",
+        "MG-PROMPT-005",
+        "MG-PROMPT-006",
+        "MG-PROMPT-009"
       ],
       "entityIds": [
-        "TG-TITAN-001",
-        "TG-TITAN-005",
-        "TG-TITAN-006",
-        "TG-TITAN-009",
-        "TG-TITAN-005",
-        "TG-TITAN-006",
-        "TG-TITAN-006",
-        "TG-TITAN-009",
-        "TG-TITAN-009"
+        "MG-TITAN-001",
+        "MG-TITAN-005",
+        "MG-TITAN-006",
+        "MG-TITAN-009",
+        "MG-TITAN-005",
+        "MG-TITAN-006",
+        "MG-TITAN-006",
+        "MG-TITAN-009",
+        "MG-TITAN-009"
       ],
       "approvalNotes": "Updated to the four-god playable roster; preserves approved style while removing retired deity prompts."
     },
     {
-      "id": "TG-ART-BATCH-NPC-MAP-001",
-      "taskId": "TG-DEV-007",
+      "id": "MG-ART-BATCH-NPC-MAP-001",
+      "taskId": "MG-DEV-007",
       "name": "Mesha Gate-Scribe and First Reopening Gate Approval Batch",
       "status": "APPROVED_FOR_GENERATION",
       "count": 2,
       "promptIds": [
-        "TG-PROMPT-NPC-001",
-        "TG-PROMPT-MAP-001"
+        "MG-PROMPT-NPC-001",
+        "MG-PROMPT-MAP-001"
       ],
       "entityIds": [
-        "TG-NPC-001",
-        "TG-MAP-001"
+        "MG-NPC-001",
+        "MG-MAP-001"
       ],
       "approvalNotes": "Mesha and the first Gate battlefield are approved together because onboarding needs a readable guide figure and matching environment anchor before final art import."
     }
@@ -81,7 +81,7 @@
     "Visual contradiction of prompt negativePrompt constraints."
   ],
   "handoff": {
-    "nextTask": "TG-DEV-004",
+    "nextTask": "MG-DEV-004",
     "nextAction": "Generate or receive real approved image assets, then import them through art/imported and art/approved without fabricating filenames.",
     "blockedReason": "External generated image asset still required."
   },

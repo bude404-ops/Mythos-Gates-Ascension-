@@ -1,5 +1,5 @@
 {
-  "id": "TG-VISUAL-ARCH-001",
+  "id": "MG-VISUAL-ARCH-001",
   "title": "Hybrid 2D Sprite + 3D Campaign Visual Architecture",
   "director": "Development Director",
   "status": "Canon Locked",
@@ -13,7 +13,7 @@
   ],
   "visualLayers": [
     {
-      "id": "TG-VIS-LAYER-2D-SPRITE",
+      "id": "MG-VIS-LAYER-2D-SPRITE",
       "name": "2D Sprites",
       "purpose": "Character identity, tactical readability, faction recognition, combat clarity",
       "usedFor": [
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "id": "TG-VIS-LAYER-3D-ENV",
+      "id": "MG-VIS-LAYER-3D-ENV",
       "name": "3D Environments",
       "purpose": "World scale, atmospheric depth, exploration, campaign progression, Realm identity",
       "usedFor": [
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "id": "TG-VIS-LAYER-PORTRAIT",
+      "id": "MG-VIS-LAYER-PORTRAIT",
       "name": "2D Portraits",
       "purpose": "Profile identity, Codex presentation, emotional read, dialogue scenes",
       "usedFor": [
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "id": "TG-VIS-LAYER-CINEMATIC",
+      "id": "MG-VIS-LAYER-CINEMATIC",
       "name": "Cinematic Art",
       "purpose": "Major story beats, chapter reveals, faction presentation moments",
       "usedFor": [
@@ -78,7 +78,7 @@
     }
   ],
   "campaignMap": {
-    "id": "TG-CAMPAIGN-MAP-ARCH-001",
+    "id": "MG-CAMPAIGN-MAP-ARCH-001",
     "format": "Elongated 3D journey environment",
     "camera": "Controlled mobile third-person / diorama camera",
     "pathModel": [
@@ -106,7 +106,7 @@
     ]
   },
   "battlefield": {
-    "id": "TG-BATTLEFIELD-HYBRID-001",
+    "id": "MG-BATTLEFIELD-HYBRID-001",
     "format": "3D tactical battlefield with 2D combatant sprites",
     "requirements": [
       "2D sprites must have ground/contact shadows.",

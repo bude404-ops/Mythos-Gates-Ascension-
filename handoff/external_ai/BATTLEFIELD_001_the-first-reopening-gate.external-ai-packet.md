@@ -1,7 +1,7 @@
 # External AI Production Packet — BATTLEFIELD_001: The First Reopening Gate
 
 Status: **ACTIVE SOURCE OF TRUTH**  
-Target: **BATTLEFIELD_001 / TG-MAP-001 / The First Reopening Gate**  
+Target: **BATTLEFIELD_001 / MG-MAP-001 / The First Reopening Gate**  
 Rule: **Do not generate Battlefield 002 or any later battlefield from this packet.**
 
 ## Mission

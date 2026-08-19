@@ -1,0 +1,218 @@
+{
+  "id": "MG-TITAN-009",
+  "slug": "amunet",
+  "name": "Amunet",
+  "factionId": "MG-FACTION-001",
+  "faction": "Aten Ra",
+  "rarity": "Mythic God",
+  "role": "Assassin",
+  "abilities": [
+    "Amunet — Ma’at-Weighted Strike Execution",
+    "Pylon Edict Technique — Shadow Pursuit",
+    "Amunet: Sun-Scale Decree Final Name Cut",
+    "Divine Ascension — Aten-Ra Source Radiance"
+  ],
+  "stats": {
+    "hp": 38,
+    "attack": 14,
+    "range": 1,
+    "energy": 5,
+    "speed": 4,
+    "armor": 7,
+    "resistance": 10,
+    "critChance": 18,
+    "accuracy": 89,
+    "evasion": 14,
+    "guardBreak": 9,
+    "combatPower": 238
+  },
+  "equipment": [
+    "Amunet Name-Knife Ma’at Was-Sceptre Blade",
+    "Amunet Electrum Wesekh Source-Plate",
+    "Amunet Khepri Solar Scarab Core"
+  ],
+  "passives": [
+    "Solar Edict: Amunet gains Solar Charge when assassin play sets a vulnerability omen, then cashes it out through execution timing on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
+  ],
+  "lore": "Amunet, Hidden Breath Goddess, is now canonized as one of the four playable deities of Aten Ra. The deity is the source-realm divinity behind the mythology rather than a generic champion: hidden wind and unseen name goddess, concealed solar breath, secret execution. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology deity whose behavior expresses hidden wind and unseen name goddess, concealed solar breath, secret execution; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
+  "visualDescription": "Amunet manifests as hidden wind and unseen name goddess, concealed solar breath, secret execution from Aten Ra: alluring feminine hidden-sun face, narrow luminous eyes, delicate nose, knowing half-smile behind translucent veil; slender feminine dancer-assassin physique, narrow shoulders, lithe hips, silent coiled posture; signature silhouette: veiled crown, trailing ribbons, twin low blades, almost-vanishing profile. Weapon: paired obsidian name-knives carried in veiled hands. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
+  "artStatus": "READY_FOR_GENERATION",
+  "artPromptId": "MG-PROMPT-009",
+  "artworkId": null,
+  "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass complete; artwork pending.",
+  "backstoryId": "MG-BACKSTORY-TITAN-009",
+  "abilityDetails": [
+    {
+      "name": "Amunet — Ma’at-Weighted Strike Execution",
+      "slot": "Basic",
+      "unlockLevel": 1,
+      "cost": "Action",
+      "cooldown": 0,
+      "tags": [
+        "generator",
+        "assassin",
+        "aten-ra",
+        "source-culture"
+      ],
+      "effect": "Deal Aten Ra source-culture damage at range 1; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+      "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
+      "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
+    },
+    {
+      "name": "Pylon Edict Technique — Shadow Pursuit",
+      "slot": "Technique",
+      "unlockLevel": 4,
+      "cost": "20 Momentum",
+      "cooldown": 2,
+      "tags": [
+        "role-technique",
+        "assassin",
+        "aten-ra",
+        "source-culture"
+      ],
+      "effect": "Spend Momentum to hunts marked targets, erases escape routes, and creates a precise execution window with recovery risk. Builds Solar Charge only when the player uses Aten-lit judgment ground intelligently; never a generic buff button.",
+      "scaling": "70% attack plus role utility scaling from energy and mastery tier",
+      "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
+    },
+    {
+      "name": "Amunet: Sun-Scale Decree Final Name Cut",
+      "slot": "Signature",
+      "unlockLevel": 12,
+      "cost": "45 Momentum + 25 Divinity",
+      "cooldown": 4,
+      "tags": [
+        "signature",
+        "assassin",
+        "aten-ra",
+        "source-culture"
+      ],
+      "effect": "Spend stored Solar Charge to impose a two-round rule from Solar Dominion of Khepra: hunts marked targets, erases escape routes, and creates a precise execution window with recovery risk. Enemies receive a readable counter-window before the strongest effect lands.",
+      "scaling": "140% attack where damage applies; utility duration +1 at mastery tier 4",
+      "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
+    },
+    {
+      "name": "Divine Ascension — Aten-Ra Source Radiance",
+      "slot": "Ascension",
+      "unlockLevel": 30,
+      "cost": "100 Divinity",
+      "cooldown": "once per battle",
+      "tags": [
+        "ultimate",
+        "ascendant",
+        "aten-ra",
+        "source-culture"
+      ],
+      "effect": "Enter Ascendant stance for 2 rounds: amplify Solar Charge, transform nearby terrain into Aten-lit judgment ground, empower one Signature, and reveal the Realm as the original source behind human myth. Ends with a one-round recovery risk.",
+      "scaling": "Does not stack with external ultimate buffs",
+      "counterplay": "Survive the window, disengage from transformed terrain, deny objectives during recovery, or force defensive reaction spending."
+    }
+  ],
+  "equipmentDetails": [
+    {
+      "name": "Amunet Name-Knife Ma’at Was-Sceptre Blade",
+      "slot": "Relic Weapon",
+      "rarityFloor": "Legendary",
+      "primaryStat": "attack",
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through Aten-lit judgment ground. Visual: Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+      "balanceGuardrail": "No extra action loops; empowered basics are once per round."
+    },
+    {
+      "name": "Amunet Electrum Wesekh Source-Plate",
+      "slot": "Armor Body",
+      "rarityFloor": "Legendary",
+      "primaryStat": "resistance",
+      "effect": "Improves survivability and makes the Deity read as Solar Dominion of Khepra source-culture gear, not costume armor. Reduces first terrain/hazard punishment each encounter if the player followed the faction mechanic.",
+      "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
+    },
+    {
+      "name": "Amunet Khepri Solar Scarab Core",
+      "slot": "Resonance Core",
+      "rarityFloor": "Legendary",
+      "primaryStat": "energy",
+      "effect": "Stores Solar Charge and unlocks a mastery branch for Aten Hand-Ray Gate Step, Uraeus Counter-Edict, and Weigh the Name. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
+    }
+  ],
+  "leveling": {
+    "baseLevel": 1,
+    "maxLevel": 60,
+    "statGrowthPer10Levels": {
+      "hp": 7,
+      "attack": 2,
+      "armor": 1,
+      "resistance": 1
+    },
+    "masteryBreakpoints": [
+      5,
+      10,
+      20,
+      30,
+      45,
+      60
+    ],
+    "gearTierCap": "Mythic",
+    "powerFormula": "hp + attack*6 + range*5 + energy*7 + speed*6 + armor*2 + resistance*2 + critChance"
+  },
+  "balanceNotes": {
+    "intendedDifficulty": "Tuned for harder solo encounters: every deity can win alone, but mistakes against counters starve Momentum/Divinity.",
+    "primaryRole": "execute priority targets and reposition through danger",
+    "budgetTarget": 114,
+    "computedCombatPower": 238,
+    "hardCounters": [
+      "poor play can starve Momentum",
+      "resource denial enemies",
+      "bad terrain matchups",
+      "mistimed reactions"
+    ],
+    "uniqueMechanic": "Amunet's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and assassin decisions that set a vulnerability omen, then cash it out through execution timing. Payoff: delete priority threats only after readable setup and risk. Counterplay: reveal effects, armor spikes, or missed execution windows punish greed; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+    "counterplayRule": "reveal effects, armor spikes, or missed execution windows punish greed"
+  },
+  "mythicSource": "Amunet — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+  "visualTraits": {
+    "face": "alluring feminine hidden-sun face, narrow luminous eyes, delicate nose, knowing half-smile behind translucent veil",
+    "bodyProportions": "slender feminine dancer-assassin physique, narrow shoulders, lithe hips, silent coiled posture",
+    "silhouette": "veiled crown, trailing ribbons, twin low blades, almost-vanishing profile",
+    "weapon": "paired obsidian name-knives carried in veiled hands",
+    "sexIdentity": "Female"
+  },
+  "armorCanon": {
+    "identityRule": "Armor must reveal female divine anatomy and Aten Ra civilization logic; no generic armor template.",
+    "silhouette": "veiled crown, trailing ribbons, twin low blades, almost-vanishing profile"
+  },
+  "updated": "2026-08-17",
+  "weaponCanon": {
+    "signatureWeapon": "paired obsidian name-knives carried in veiled hands",
+    "loreReason": "Chosen because Amunet embodies hidden wind and unseen name goddess, concealed solar breath, secret execution in combat."
+  },
+  "gearCanon": {
+    "maskHelmetCrown": "Crown/helmet/mask must support alluring feminine hidden-sun face, narrow luminous eyes, delicate nose, knowing half-smile behind translucent veil and veiled crown, trailing ribbons, twin low blades, almost-vanishing profile; never hide sex identity or make the god interchangeable."
+  },
+  "sex": "Female",
+  "titanArtDna": {
+    "rosterCanon": "FOUR_GODS_PER_FACTION_PLAYABLE_ROSTER",
+    "mythologyGod": "Amunet",
+    "sex": "Female",
+    "archetype": "hidden wind and unseen name goddess, concealed solar breath, secret execution",
+    "signatureWeapon": "paired obsidian name-knives carried in veiled hands",
+    "faceLock": "alluring feminine hidden-sun face, narrow luminous eyes, delicate nose, knowing half-smile behind translucent veil",
+    "bodyLock": "slender feminine dancer-assassin physique, narrow shoulders, lithe hips, silent coiled posture",
+    "silhouetteLock": "veiled crown, trailing ribbons, twin low blades, almost-vanishing profile",
+    "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved.",
+    "mythology": "Amunet — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+    "realm": "The Solar Dominion of Khepra",
+    "civilization": "Aten Ra mythological extradimensional civilization",
+    "cultureRule": "God identity must come from mythology, realm, civilization, sacred materials, beauty standards, and ritual practice; never color swap alone.",
+    "beautyStandard": "Unmistakably feminine divine beauty with faction-specific elegance, allure, posture, and armor shaping.",
+    "realmAnatomy": "Realm-shaped mythological divinity, supernatural but not sci-fi alien.",
+    "identityFace": "alluring feminine hidden-sun face, narrow luminous eyes, delicate nose, knowing half-smile behind translucent veil",
+    "identityBody": "slender feminine dancer-assassin physique, narrow shoulders, lithe hips, silent coiled posture",
+    "roleSilhouette": "veiled crown, trailing ribbons, twin low blades, almost-vanishing profile",
+    "auditStatus": "PASS"
+  },
+  "title": "Hidden Breath Goddess",
+  "playableClassification": "Goddess",
+  "species": "Deity",
+  "characterType": "Playable Deity",
+  "rosterClass": "Deity Roster"
+}

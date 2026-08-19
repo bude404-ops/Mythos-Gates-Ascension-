@@ -1,0 +1,60 @@
+{
+  "id": "MG-BACKSTORY-CREATURE-016",
+  "entityId": "MG-CREATURE-016",
+  "entityType": "Creature",
+  "name": "Hollow Gate Anchor",
+  "slug": "hollow-gate-anchor",
+  "factionId": null,
+  "faction": "The Hollow",
+  "role": "Elite",
+  "rarity": "Gateborn Hollow",
+  "status": "Canon Backstory Ready",
+  "storyArcIds": [
+    "MG-STORY-ARC-001",
+    "MG-STORY-ARC-002"
+  ],
+  "campaignHooks": [
+    "The First Reopening",
+    "Storm-Oath Covenant",
+    "Hollow Breach Events"
+  ],
+  "loreTies": [
+    "A stationary living keystone that lets Hollow waves keep returning until the active deity breaks the wound itself.",
+    "Acts as a priority objective; spawns minor Hollow until destroyed.",
+    "Erasure is not death; erasure is ownership without memory."
+  ],
+  "shortBackstory": "Hollow Gate Anchor is a Hollow threat creature built for campaign and event encounters, turning erased memory into elite battlefield pressure.",
+  "chapters": [
+    {
+      "title": "Origin",
+      "text": "Hollow Gate Anchor formed where the Hollow learned a specific weakness in remembered civilization. It is not a Deity, not a citizen, and not a recruitable unit; it is a symptom of the Gate giving absence a body."
+    },
+    {
+      "title": "Hollow Function",
+      "text": "Its role inside the Hollow threat faction is precise: Acts as a priority objective; spawns minor Hollow until destroyed. This lets mission designers select it by encounter tags instead of treating Hollow enemies as one shapeless swarm."
+    },
+    {
+      "title": "Lore Tie",
+      "text": "A stationary living keystone that lets Hollow waves keep returning until the active deity breaks the wound itself."
+    },
+    {
+      "title": "Campaign Use",
+      "text": "Hollow Gate Anchor can appear in Normal missions, Elite remixes, Hollow Breach events, Ascension floors, and raid add waves when its tags match the objective pressure. It must always reinforce Hollowing: isolation, corrupted memory, broken objectives, or stolen meaning."
+    },
+    {
+      "title": "Visual / Encounter Rule",
+      "text": "Art and gameplay must keep Hollow Gate Anchor visibly non-playable. Its silhouette uses obsidian gate-stone torso rooted into battlefield, incomplete arms, white fracture core, broken arch crown. while its abilities \u2014 Breach Pulse, Spawn Wretches, Anchor the Wound \u2014 create battlefield pressure without confusing it for a faction Deity."
+    }
+  ],
+  "relationshipHooks": [
+    "Hollow threat pool",
+    "Event encounter library",
+    "Campaign enemy wave selection"
+  ],
+  "readableUnder": [
+    "Creatures",
+    "Character Backstories",
+    "Hollow Threat Faction"
+  ],
+  "developmentStatus": "Readable Hollow creature profile integrated into campaign/event threat pages."
+}

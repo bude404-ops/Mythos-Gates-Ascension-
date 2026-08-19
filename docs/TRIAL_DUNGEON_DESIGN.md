@@ -45,7 +45,7 @@ Before the Collapse, the Mythos Gate required all who entered to prove their wor
 - **Victory banner**: Upon completion, the faction's banner rises in the arena
 
 ### Map File
-- Map ID: TG-MAP-000
+- Map ID: MG-MAP-000
 - Name: "The Gate's Judgment"
 - Realm: Universal (Gate Neutral Zone)
 - Type: Trial / Tutorial

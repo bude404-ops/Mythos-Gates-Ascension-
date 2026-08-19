@@ -1,0 +1,71 @@
+{
+  "id": "MG-CREATURE-013",
+  "slug": "hollow-shrine-mask",
+  "name": "Hollow Shrine-Mask",
+  "category": "Hollow Spirit",
+  "realm": "Hollow / Shrine Scar",
+  "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+  "threatTier": "Major",
+  "status": "Gameplay Ready",
+  "director": "Narrative Director",
+  "playable": false,
+  "lore": "A mask that learned enough shrine etiquette to lure Kami guardians into the wrong ritual path.",
+  "visualDescription": "Floating lacquer mask cracked open with smoke hands, torn paper wards, ink bleeding upward.",
+  "abilities": [
+    "False Rite",
+    "Spirit Misstep",
+    "Mask Blink"
+  ],
+  "mapBehavior": "Repositions around shrine terrain and causes missed timing windows.",
+  "encounterTags": [
+    "kami",
+    "reposition",
+    "spirit",
+    "event"
+  ],
+  "campaignUse": [
+    "Campaign enemy wave",
+    "Elite remix modifier",
+    "Hollow Breach event",
+    "Ascension threat pool"
+  ],
+  "artStatus": "Prompt Ready",
+  "artPromptId": "MG-PROMPT-CREATURE-013",
+  "artworkId": null,
+  "backstoryId": "MG-BACKSTORY-CREATURE-013",
+  "combatRole": "BRUTE",
+  "stats": {
+    "levelBand": [
+      15,
+      55
+    ],
+    "hp": 164,
+    "damage": 16,
+    "range": 1,
+    "armor": 11,
+    "resistance": 5,
+    "movement": 3,
+    "initiative": 48,
+    "accuracy": 78,
+    "evasion": 6,
+    "guardBreak": 12,
+    "threatWeight": 2.0,
+    "xpValue": 28
+  },
+  "scaling": {
+    "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+    "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
+    "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+    "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+  },
+  "aiProfile": {
+    "archetype": "BRUTE",
+    "priority": [
+      "survive Ascension window",
+      "force reaction spending",
+      "attack marked weakness"
+    ],
+    "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+  },
+  "balanceNotes": "Harder solo tuning: Major BRUTE pressures one active deity through behavior first, stats second; threatWeight 2.0 controls encounter budgets."
+}

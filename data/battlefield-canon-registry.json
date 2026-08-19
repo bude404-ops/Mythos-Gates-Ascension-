@@ -1,5 +1,5 @@
 {
-  "id": "TG-BATTLEFIELD-CANON-REGISTRY-001",
+  "id": "MG-BATTLEFIELD-CANON-REGISTRY-001",
   "version": "1.0.0",
   "created": "2026-08-14T00:00:00Z",
   "status": "IMPLEMENTED",
@@ -7,13 +7,13 @@
   "canonBoundary": {
     "playableFactionCount": 7,
     "playableFactionIds": [
-      "TG-FACTION-001",
-      "TG-FACTION-002",
-      "TG-FACTION-003",
-      "TG-FACTION-004",
-      "TG-FACTION-005",
-      "TG-FACTION-006",
-      "TG-FACTION-007"
+      "MG-FACTION-001",
+      "MG-FACTION-002",
+      "MG-FACTION-003",
+      "MG-FACTION-004",
+      "MG-FACTION-005",
+      "MG-FACTION-006",
+      "MG-FACTION-007"
     ],
     "playableFactionNames": [
       "Aten Ra",
@@ -25,7 +25,7 @@
       "Infernal Dominion"
     ],
     "existentialThreat": {
-      "id": "TG-THREAT-FACTION-HOLLOW",
+      "id": "MG-THREAT-FACTION-HOLLOW",
       "name": "The Hollow",
       "playable": false,
       "classification": "Hostile Threat Faction"
@@ -34,8 +34,8 @@
   "battlefieldCount": 8,
   "battlefields": [
     {
-      "id": "TG-BATTLEFIELD-CANON-001",
-      "mapId": "TG-MAP-001",
+      "id": "MG-BATTLEFIELD-CANON-001",
+      "mapId": "MG-MAP-001",
       "slug": "first-reopening-gate",
       "name": "The First Reopening Gate",
       "registryStatus": "CANON_READY",
@@ -63,7 +63,7 @@
       ],
       "hollowCorruptionLevel": "MEDIUM",
       "hollowIncursionRules": {
-        "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+        "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
         "playable": false,
         "allowedRole": "Existential antagonist only",
         "battlefieldExpression": [
@@ -123,8 +123,8 @@
       }
     },
     {
-      "id": "TG-BATTLEFIELD-CANON-002",
-      "mapId": "TG-MAP-002",
+      "id": "MG-BATTLEFIELD-CANON-002",
+      "mapId": "MG-MAP-002",
       "slug": "solar-pylon-observatory",
       "name": "Solar Pylon Observatory",
       "registryStatus": "CANON_READY",
@@ -132,7 +132,7 @@
       "battlefieldClass": "Campaign Map",
       "regionType": "aten-ra-border",
       "realm": "The Solar Dominion of Khepra",
-      "primaryFactionId": "TG-FACTION-001",
+      "primaryFactionId": "MG-FACTION-001",
       "primaryFactionName": "Aten Ra",
       "dominantResonance": "Solar Judgment",
       "canonDescription": "A bronze-and-obsidian pylon field where solar law tests whether order can resist corruption without becoming tyranny.",
@@ -153,7 +153,7 @@
       ],
       "hollowCorruptionLevel": "LOW",
       "hollowIncursionRules": {
-        "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+        "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
         "playable": false,
         "allowedRole": "Existential antagonist only",
         "battlefieldExpression": [
@@ -213,8 +213,8 @@
       }
     },
     {
-      "id": "TG-BATTLEFIELD-CANON-003",
-      "mapId": "TG-MAP-003",
+      "id": "MG-BATTLEFIELD-CANON-003",
+      "mapId": "MG-MAP-003",
       "slug": "storm-oath-bridge",
       "name": "Storm-Oath Bridge",
       "registryStatus": "CANON_READY",
@@ -222,7 +222,7 @@
       "battlefieldClass": "Campaign Map",
       "regionType": "asgardian-bridge",
       "realm": "Asgardian",
-      "primaryFactionId": "TG-FACTION-002",
+      "primaryFactionId": "MG-FACTION-002",
       "primaryFactionName": "Asgardian",
       "dominantResonance": "Storm Oath",
       "canonDescription": "A rune-iron bridge where vows become battlefield mass and cowardice breaks the ground beneath the warband.",
@@ -243,7 +243,7 @@
       ],
       "hollowCorruptionLevel": "MEDIUM",
       "hollowIncursionRules": {
-        "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+        "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
         "playable": false,
         "allowedRole": "Existential antagonist only",
         "battlefieldExpression": [
@@ -303,8 +303,8 @@
       }
     },
     {
-      "id": "TG-BATTLEFIELD-CANON-004",
-      "mapId": "TG-MAP-004",
+      "id": "MG-BATTLEFIELD-CANON-004",
+      "mapId": "MG-MAP-004",
       "slug": "marble-sky-arena",
       "name": "Marble Sky Arena",
       "registryStatus": "CANON_READY",
@@ -312,7 +312,7 @@
       "battlefieldClass": "Campaign Map",
       "regionType": "olympian-arena",
       "realm": "Olympian",
-      "primaryFactionId": "TG-FACTION-003",
+      "primaryFactionId": "MG-FACTION-003",
       "primaryFactionName": "Olympian",
       "dominantResonance": "Glory Trial",
       "canonDescription": "A floating arena where public victory reshapes terrain and every triumph throws a jealous shadow.",
@@ -333,7 +333,7 @@
       ],
       "hollowCorruptionLevel": "MEDIUM",
       "hollowIncursionRules": {
-        "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+        "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
         "playable": false,
         "allowedRole": "Existential antagonist only",
         "battlefieldExpression": [
@@ -393,8 +393,8 @@
       }
     },
     {
-      "id": "TG-BATTLEFIELD-CANON-005",
-      "mapId": "TG-MAP-005",
+      "id": "MG-BATTLEFIELD-CANON-005",
+      "mapId": "MG-MAP-005",
       "slug": "moon-grove-rootlabyrinth",
       "name": "Moon-Grove Rootlabyrinth",
       "registryStatus": "CANON_READY",
@@ -402,7 +402,7 @@
       "battlefieldClass": "Campaign Map",
       "regionType": "tuatha-rootlabyrinth",
       "realm": "Tuatha",
-      "primaryFactionId": "TG-FACTION-005",
+      "primaryFactionId": "MG-FACTION-005",
       "primaryFactionName": "Tuatha",
       "dominantResonance": "Living Memory",
       "canonDescription": "A moonlit grove labyrinth whose roots remember every wound and bargain with anyone desperate enough to listen.",
@@ -423,7 +423,7 @@
       ],
       "hollowCorruptionLevel": "MEDIUM",
       "hollowIncursionRules": {
-        "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+        "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
         "playable": false,
         "allowedRole": "Existential antagonist only",
         "battlefieldExpression": [
@@ -483,8 +483,8 @@
       }
     },
     {
-      "id": "TG-BATTLEFIELD-CANON-006",
-      "mapId": "TG-MAP-006",
+      "id": "MG-BATTLEFIELD-CANON-006",
+      "mapId": "MG-MAP-006",
       "slug": "black-iron-court",
       "name": "Black Iron Court",
       "registryStatus": "CANON_READY",
@@ -492,7 +492,7 @@
       "battlefieldClass": "Campaign Map",
       "regionType": "infernal-court",
       "realm": "Infernal Dominion",
-      "primaryFactionId": "TG-FACTION-007",
+      "primaryFactionId": "MG-FACTION-007",
       "primaryFactionName": "Infernal Dominion",
       "dominantResonance": "Dominion Trial",
       "canonDescription": "An infernal court where contracts turn into chains and ambition is judged by what it can survive.",
@@ -513,7 +513,7 @@
       ],
       "hollowCorruptionLevel": "HIGH",
       "hollowIncursionRules": {
-        "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+        "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
         "playable": false,
         "allowedRole": "Existential antagonist only",
         "battlefieldExpression": [
@@ -573,8 +573,8 @@
       }
     },
     {
-      "id": "TG-BATTLEFIELD-CANON-010",
-      "mapId": "TG-MAP-010",
+      "id": "MG-BATTLEFIELD-CANON-010",
+      "mapId": "MG-MAP-010",
       "slug": "mirror-lake-sanctum",
       "name": "Mirror Lake Sanctum",
       "registryStatus": "CANON_READY",
@@ -582,7 +582,7 @@
       "battlefieldClass": "Tactical Map",
       "regionType": "kami-sanctum",
       "realm": "Kami",
-      "primaryFactionId": "TG-FACTION-004",
+      "primaryFactionId": "MG-FACTION-004",
       "primaryFactionName": "Kami",
       "dominantResonance": "Spirit Mirror",
       "canonDescription": "A shrine-water battlefield where reflections punish impatience and sacred balance must be defended by precision.",
@@ -603,7 +603,7 @@
       ],
       "hollowCorruptionLevel": "MEDIUM",
       "hollowIncursionRules": {
-        "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+        "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
         "playable": false,
         "allowedRole": "Existential antagonist only",
         "battlefieldExpression": [
@@ -663,8 +663,8 @@
       }
     },
     {
-      "id": "TG-BATTLEFIELD-CANON-012",
-      "mapId": "TG-MAP-012",
+      "id": "MG-BATTLEFIELD-CANON-012",
+      "mapId": "MG-MAP-012",
       "slug": "broken-heaven-engine",
       "name": "Broken Heaven Engine",
       "registryStatus": "CANON_READY",
@@ -672,7 +672,7 @@
       "battlefieldClass": "Tactical Map",
       "regionType": "empyrean-engine",
       "realm": "Empyrean",
-      "primaryFactionId": "TG-FACTION-006",
+      "primaryFactionId": "MG-FACTION-006",
       "primaryFactionName": "Empyrean",
       "dominantResonance": "Radiant Containment",
       "canonDescription": "A broken heaven-engine suspended above cloud strata where order fights entropy through resonance control.",
@@ -693,7 +693,7 @@
       ],
       "hollowCorruptionLevel": "HIGH",
       "hollowIncursionRules": {
-        "threatFactionId": "TG-THREAT-FACTION-HOLLOW",
+        "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
         "playable": false,
         "allowedRole": "Existential antagonist only",
         "battlefieldExpression": [

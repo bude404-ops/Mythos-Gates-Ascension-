@@ -1,9 +1,9 @@
 {
-  "id": "TG-MISSION-TACTICAL-PROFILE-SYSTEM-001",
+  "id": "MG-MISSION-TACTICAL-PROFILE-SYSTEM-001",
   "version": "1.0.0",
   "generated": "2026-08-13T00:00:00Z",
   "status": "IMPLEMENTED",
-  "taskId": "TG-DEV-028",
+  "taskId": "MG-DEV-028",
   "purpose": "Campaign and endgame mission tactical profiles that describe tactical problems and recommend helpful Deities without requiring ownership.",
   "sourceFiles": [
     "data/mission-registry.json",
@@ -78,7 +78,7 @@
     "Sustain": 86
   },
   "factionCoverage": {
-    "TG-FACTION-001": {
+    "MG-FACTION-001": {
       "faction": "Aten Ra",
       "missions": 40,
       "normal": 20,
@@ -100,7 +100,7 @@
         "Battery": 1
       }
     },
-    "TG-FACTION-002": {
+    "MG-FACTION-002": {
       "faction": "Asgardian",
       "missions": 40,
       "normal": 20,
@@ -125,7 +125,7 @@
         "Sustain": 12
       }
     },
-    "TG-FACTION-003": {
+    "MG-FACTION-003": {
       "faction": "Olympian",
       "missions": 40,
       "normal": 20,
@@ -151,7 +151,7 @@
         "Breaker": 14
       }
     },
-    "TG-FACTION-004": {
+    "MG-FACTION-004": {
       "faction": "Kami",
       "missions": 40,
       "normal": 20,
@@ -174,7 +174,7 @@
         "Guardian": 20
       }
     },
-    "TG-FACTION-005": {
+    "MG-FACTION-005": {
       "faction": "Tuatha",
       "missions": 40,
       "normal": 20,
@@ -192,7 +192,7 @@
         "Artillery": 40
       }
     },
-    "TG-FACTION-006": {
+    "MG-FACTION-006": {
       "faction": "Empyrean",
       "missions": 40,
       "normal": 20,
@@ -214,7 +214,7 @@
         "Sustain": 20
       }
     },
-    "TG-FACTION-007": {
+    "MG-FACTION-007": {
       "faction": "Infernal Dominion",
       "missions": 40,
       "normal": 20,
@@ -239,11 +239,11 @@
     }
   },
   "sampleMissionIds": [
-    "TG-F01-C01-M01",
-    "TG-F01-C05-M20",
-    "TG-F01-E-C01-M01",
-    "TG-F04-C05-M20",
-    "TG-F07-E-C05-M20"
+    "MG-F01-C01-M01",
+    "MG-F01-C05-M20",
+    "MG-F01-E-C01-M01",
+    "MG-F04-C05-M20",
+    "MG-F07-E-C05-M20"
   ],
   "antiPayToWinRules": [
     "Mission tactical profiles may recommend roles and deities, but never require ownership.",
@@ -252,10 +252,10 @@
     "Recommended deity advantage is guidance, not a gate, stat lock, or purchase prompt."
   ],
   "acceptanceGates": [
-    "TG-DEV-028 every campaign mission has at least three tactical problem tags.",
-    "TG-DEV-028 every campaign mission has at least two advantage roles from the live deity role list.",
-    "TG-DEV-028 every recommended deity exists in data/titans.json.",
-    "TG-DEV-028 all mission tactical profiles are favored-not-required with no ownership lock.",
-    "TG-DEV-028 mission tactical profile system is discoverable through data/index.json and release validation."
+    "MG-DEV-028 every campaign mission has at least three tactical problem tags.",
+    "MG-DEV-028 every campaign mission has at least two advantage roles from the live deity role list.",
+    "MG-DEV-028 every recommended deity exists in data/titans.json.",
+    "MG-DEV-028 all mission tactical profiles are favored-not-required with no ownership lock.",
+    "MG-DEV-028 mission tactical profile system is discoverable through data/index.json and release validation."
   ]
 }

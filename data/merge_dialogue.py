@@ -90,10 +90,10 @@ for faction_file in ['aten_ra_dialogue.json', 'asgardian_dialogue.json',
     if not faction_id:
         # Derive from filename
         name_map = {
-            'aten_ra': 'TG-FACTION-001', 'asgardian': 'TG-FACTION-002',
-            'olympian': 'TG-FACTION-003', 'kami': 'TG-FACTION-004',
-            'tuatha': 'TG-FACTION-005', 'empyrean': 'TG-FACTION-006',
-            'infernal': 'TG-FACTION-007'
+            'aten_ra': 'MG-FACTION-001', 'asgardian': 'MG-FACTION-002',
+            'olympian': 'MG-FACTION-003', 'kami': 'MG-FACTION-004',
+            'tuatha': 'MG-FACTION-005', 'empyrean': 'MG-FACTION-006',
+            'infernal': 'MG-FACTION-007'
         }
         for key, fid in name_map.items():
             if key in faction_file:

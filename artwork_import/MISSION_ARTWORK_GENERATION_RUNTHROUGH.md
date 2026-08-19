@@ -79,7 +79,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 
 ## First 56 mission bundles — first full faction normal + elite pass
 
-### 001. TG-F01-C01-M01 — First Light Under Dead Stone
+### 001. MG-F01-C01-M01 — First Light Under Dead Stone
 - Lane: Normal | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_003
@@ -88,7 +88,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 002. TG-F01-C01-M02 — River Step Battle line
+### 002. MG-F01-C01-M02 — River Step Battle line
 - Lane: Normal | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_004
@@ -97,7 +97,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 003. TG-F01-C01-M03 — The Obelisk That Would Not Cast Shadow
+### 003. MG-F01-C01-M03 — The Obelisk That Would Not Cast Shadow
 - Lane: Normal | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_005
@@ -106,7 +106,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 004. TG-F01-C01-M04 — Jackal at the Broken Threshold
+### 004. MG-F01-C01-M04 — Jackal at the Broken Threshold
 - Lane: Normal | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_001, ENEMY_003
@@ -115,7 +115,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 005. TG-F01-E-C01-M01 — Elite: First Light Under Dead Stone
+### 005. MG-F01-E-C01-M01 — Elite: First Light Under Dead Stone
 - Lane: Elite | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_004
@@ -124,7 +124,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 006. TG-F01-E-C01-M02 — Elite: River Step Battle line
+### 006. MG-F01-E-C01-M02 — Elite: River Step Battle line
 - Lane: Elite | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_003, ENEMY_002, ENEMY_005
@@ -133,7 +133,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 007. TG-F01-E-C01-M03 — Elite: The Obelisk That Would Not Cast Shadow
+### 007. MG-F01-E-C01-M03 — Elite: The Obelisk That Would Not Cast Shadow
 - Lane: Elite | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_004, ENEMY_003, ENEMY_001
@@ -142,7 +142,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 008. TG-F01-E-C01-M04 — Elite: Jackal at the Broken Threshold
+### 008. MG-F01-E-C01-M04 — Elite: Jackal at the Broken Threshold
 - Lane: Elite | Campaign: Aten Ra / Chapter 1 — Chapter 1: Awakening
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_003
@@ -151,7 +151,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 009. TG-F01-C02-M05 — Road of Measured Fire
+### 009. MG-F01-C02-M05 — Road of Measured Fire
 - Lane: Normal | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_002
@@ -160,7 +160,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 010. TG-F01-C02-M06 — Sun-Lane Crossing
+### 010. MG-F01-C02-M06 — Sun-Lane Crossing
 - Lane: Normal | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_003
@@ -169,7 +169,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 011. TG-F01-C02-M07 — Three Anchors in the Floodplain
+### 011. MG-F01-C02-M07 — Three Anchors in the Floodplain
 - Lane: Normal | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_004
@@ -178,7 +178,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 012. TG-F01-C02-M08 — The Crocodile Crown
+### 012. MG-F01-C02-M08 — The Crocodile Crown
 - Lane: Normal | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_005, ENEMY_002
@@ -187,7 +187,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 013. TG-F01-E-C02-M05 — Elite: Road of Measured Fire
+### 013. MG-F01-E-C02-M05 — Elite: Road of Measured Fire
 - Lane: Elite | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_003
@@ -196,7 +196,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 014. TG-F01-E-C02-M06 — Elite: Sun-Lane Crossing
+### 014. MG-F01-E-C02-M06 — Elite: Sun-Lane Crossing
 - Lane: Elite | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_004
@@ -205,7 +205,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 015. TG-F01-E-C02-M07 — Elite: Three Anchors in the Floodplain
+### 015. MG-F01-E-C02-M07 — Elite: Three Anchors in the Floodplain
 - Lane: Elite | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_003, ENEMY_002, ENEMY_005
@@ -214,7 +214,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 016. TG-F01-E-C02-M08 — Elite: The Crocodile Crown
+### 016. MG-F01-E-C02-M08 — Elite: The Crocodile Crown
 - Lane: Elite | Campaign: Aten Ra / Chapter 2 — Chapter 2: The First Gate
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_004, ENEMY_003, ENEMY_002
@@ -223,7 +223,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 017. TG-F01-C03-M09 — Law Beneath the River Mirror
+### 017. MG-F01-C03-M09 — Law Beneath the River Mirror
 - Lane: Normal | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_001, ENEMY_002
@@ -232,7 +232,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 018. TG-F01-C03-M10 — Sandstorm of Witnesses
+### 018. MG-F01-C03-M10 — Sandstorm of Witnesses
 - Lane: Normal | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_002, ENEMY_003
@@ -241,7 +241,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 019. TG-F01-C03-M11 — The Pylon Choir Falls Silent
+### 019. MG-F01-C03-M11 — The Pylon Choir Falls Silent
 - Lane: Normal | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_003, ENEMY_004
@@ -250,7 +250,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 020. TG-F01-C03-M12 — The Eclipse Scribe
+### 020. MG-F01-C03-M12 — The Eclipse Scribe
 - Lane: Normal | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_004, ENEMY_005, ENEMY_001
@@ -259,7 +259,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 021. TG-F01-E-C03-M09 — Elite: Law Beneath the River Mirror
+### 021. MG-F01-E-C03-M09 — Elite: Law Beneath the River Mirror
 - Lane: Elite | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_002
@@ -268,7 +268,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 022. TG-F01-E-C03-M10 — Elite: Sandstorm of Witnesses
+### 022. MG-F01-E-C03-M10 — Elite: Sandstorm of Witnesses
 - Lane: Elite | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_003
@@ -277,7 +277,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 023. TG-F01-E-C03-M11 — Elite: The Pylon Choir Falls Silent
+### 023. MG-F01-E-C03-M11 — Elite: The Pylon Choir Falls Silent
 - Lane: Elite | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_004
@@ -286,7 +286,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 024. TG-F01-E-C03-M12 — Elite: The Eclipse Scribe
+### 024. MG-F01-E-C03-M12 — Elite: The Eclipse Scribe
 - Lane: Elite | Campaign: Aten Ra / Chapter 3 — Chapter 3: Realm Conflict
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_004, ENEMY_003, ENEMY_002, ENEMY_001
@@ -295,7 +295,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 025. TG-F01-C04-M13 — Twin Gates of Overcharge
+### 025. MG-F01-C04-M13 — Twin Gates of Overcharge
 - Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_005, ENEMY_001
@@ -304,7 +304,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 026. TG-F01-C04-M14 — The Black Sun Caravan
+### 026. MG-F01-C04-M14 — The Black Sun Caravan
 - Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_001, ENEMY_002
@@ -313,7 +313,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 027. TG-F01-C04-M15 — Judgment Across Three Platforms
+### 027. MG-F01-C04-M15 — Judgment Across Three Platforms
 - Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_002, ENEMY_003
@@ -322,7 +322,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 028. TG-F01-C04-M16 — Deity Silhouette of the False Dawn
+### 028. MG-F01-C04-M16 — Deity Silhouette of the False Dawn
 - Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_003, ENEMY_004, ENEMY_005
@@ -331,7 +331,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 029. TG-F01-E-C04-M13 — Elite: Twin Gates of Overcharge
+### 029. MG-F01-E-C04-M13 — Elite: Twin Gates of Overcharge
 - Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_003, ENEMY_001
@@ -340,7 +340,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 030. TG-F01-E-C04-M14 — Elite: The Black Sun Caravan
+### 030. MG-F01-E-C04-M14 — Elite: The Black Sun Caravan
 - Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_002
@@ -349,7 +349,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 031. TG-F01-E-C04-M15 — Elite: Judgment Across Three Platforms
+### 031. MG-F01-E-C04-M15 — Elite: Judgment Across Three Platforms
 - Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_003
@@ -358,7 +358,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 032. TG-F01-E-C04-M16 — Elite: Deity Silhouette of the False Dawn
+### 032. MG-F01-E-C04-M16 — Elite: Deity Silhouette of the False Dawn
 - Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_005
@@ -367,7 +367,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 033. TG-F01-C05-M17 — The Sun Throne Opens
+### 033. MG-F01-C05-M17 — The Sun Throne Opens
 - Lane: Normal | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_004, ENEMY_005
@@ -376,7 +376,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 034. TG-F01-C05-M18 — Noon Made Hostile
+### 034. MG-F01-C05-M18 — Noon Made Hostile
 - Lane: Normal | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_004, ENEMY_005, ENEMY_001
@@ -385,7 +385,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 035. TG-F01-C05-M19 — The Crown Before the Gate
+### 035. MG-F01-C05-M19 — The Crown Before the Gate
 - Lane: Normal | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_001, ENEMY_002, ENEMY_003
@@ -394,7 +394,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 036. TG-F01-C05-M20 — Ascension at the Watching Door
+### 036. MG-F01-C05-M20 — Ascension at the Watching Door
 - Lane: Normal | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_002, ENEMY_003, ENEMY_004
@@ -403,7 +403,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 037. TG-F01-E-C05-M17 — Elite: The Sun Throne Opens
+### 037. MG-F01-E-C05-M17 — Elite: The Sun Throne Opens
 - Lane: Elite | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_007 — Sacred Sun Temple Road → `BATTLEFIELD_007__sacred-sun-temple-road__source-file.ext`
 - Generate together: BATTLEFIELD_007, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_005, ENEMY_004, ENEMY_003, ENEMY_002, ENEMY_005
@@ -412,7 +412,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 038. TG-F01-E-C05-M18 — Elite: Noon Made Hostile
+### 038. MG-F01-E-C05-M18 — Elite: Noon Made Hostile
 - Lane: Elite | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_003, ENEMY_001
@@ -421,7 +421,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 039. TG-F01-E-C05-M19 — Elite: The Crown Before the Gate
+### 039. MG-F01-E-C05-M19 — Elite: The Crown Before the Gate
 - Lane: Elite | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_001 — The First Reopening Gate → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
 - Generate together: BATTLEFIELD_001, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_003
@@ -430,7 +430,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 040. TG-F01-E-C05-M20 — Elite: Ascension at the Watching Door
+### 040. MG-F01-E-C05-M20 — Elite: Ascension at the Watching Door
 - Lane: Elite | Campaign: Aten Ra / Chapter 5 — Chapter 5: The Ascension
 - Battlefield: BATTLEFIELD_002 — Solar Pylon Observatory → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - Generate together: BATTLEFIELD_002, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_003, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_004
@@ -439,7 +439,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: Boss silhouette or commander must read as Gate-corrupted threat with restrained mythic weight.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 041. TG-F02-C01-M01 — The First Oath Sparks
+### 041. MG-F02-C01-M01 — The First Oath Sparks
 - Lane: Normal | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004
@@ -448,7 +448,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 042. TG-F02-C01-M02 — Iron Rain Battle line
+### 042. MG-F02-C01-M02 — Iron Rain Battle line
 - Lane: Normal | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004
@@ -457,7 +457,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 043. TG-F02-C01-M03 — Bridge-Rib Breach
+### 043. MG-F02-C01-M03 — Bridge-Rib Breach
 - Lane: Normal | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004
@@ -466,7 +466,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 044. TG-F02-C01-M04 — Thunder Names the Brave
+### 044. MG-F02-C01-M04 — Thunder Names the Brave
 - Lane: Normal | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004, ENEMY_004
@@ -475,7 +475,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 045. TG-F02-E-C01-M01 — Elite: The First Oath Sparks
+### 045. MG-F02-E-C01-M01 — Elite: The First Oath Sparks
 - Lane: Elite | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004
@@ -484,7 +484,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 046. TG-F02-E-C01-M02 — Elite: Iron Rain Battle line
+### 046. MG-F02-E-C01-M02 — Elite: Iron Rain Battle line
 - Lane: Elite | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004
@@ -493,7 +493,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 047. TG-F02-E-C01-M03 — Elite: Bridge-Rib Breach
+### 047. MG-F02-E-C01-M03 — Elite: Bridge-Rib Breach
 - Lane: Elite | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004
@@ -502,7 +502,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 048. TG-F02-E-C01-M04 — Elite: Thunder Names the Brave
+### 048. MG-F02-E-C01-M04 — Elite: Thunder Names the Brave
 - Lane: Elite | Campaign: Asgardian / Chapter 1 — Chapter 1: Oath Under Thunder
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_001, ENEMY_004, ENEMY_004
@@ -511,7 +511,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 049. TG-F02-C02-M05 — Banner in the Crosswind
+### 049. MG-F02-C02-M05 — Banner in the Crosswind
 - Lane: Normal | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001
@@ -520,7 +520,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 050. TG-F02-C02-M06 — Standard Socket Siege
+### 050. MG-F02-C02-M06 — Standard Socket Siege
 - Lane: Normal | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001
@@ -529,7 +529,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['Forgotten Standard Bearer banner silhouette']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 051. TG-F02-C02-M07 — Orders From No King
+### 051. MG-F02-C02-M07 — Orders From No King
 - Lane: Normal | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001
@@ -538,7 +538,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 052. TG-F02-C02-M08 — The Forgotten Standard Falls
+### 052. MG-F02-C02-M08 — The Forgotten Standard Falls
 - Lane: Normal | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001, ENEMY_004
@@ -547,7 +547,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['Forgotten Standard Bearer banner silhouette']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 053. TG-F02-E-C02-M05 — Elite: Banner in the Crosswind
+### 053. MG-F02-E-C02-M05 — Elite: Banner in the Crosswind
 - Lane: Elite | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001
@@ -556,7 +556,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 054. TG-F02-E-C02-M06 — Elite: Standard Socket Siege
+### 054. MG-F02-E-C02-M06 — Elite: Standard Socket Siege
 - Lane: Elite | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001
@@ -565,7 +565,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['Forgotten Standard Bearer banner silhouette']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 055. TG-F02-E-C02-M07 — Elite: Orders From No King
+### 055. MG-F02-E-C02-M07 — Elite: Orders From No King
 - Lane: Elite | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001
@@ -574,7 +574,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: ['No unique boss art required']
 - VFX language: natural lightning flashes, rain spray, iron spark impacts, oath rune glow kept as engraved material, not UI tiles
 
-### 056. TG-F02-E-C02-M08 — Elite: The Forgotten Standard Falls
+### 056. MG-F02-E-C02-M08 — Elite: The Forgotten Standard Falls
 - Lane: Elite | Campaign: Asgardian / Chapter 2 — Chapter 2: The Banner That Forgot Its King
 - Battlefield: BATTLEFIELD_003 — Storm-Oath Bridge → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - Generate together: BATTLEFIELD_003, TITAN_010, TITAN_011, TITAN_012, CHARACTER_002, ENEMY_004, ENEMY_001, ENEMY_004

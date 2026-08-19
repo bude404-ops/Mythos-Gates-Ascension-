@@ -1,8 +1,8 @@
 {
-  "id": "TG-ENEMY-ARCHETYPE-REGISTRY-001",
+  "id": "MG-ENEMY-ARCHETYPE-REGISTRY-001",
   "version": "1.0.0",
   "generated": "2026-08-17T00:00:00Z",
-  "taskId": "TG-DEV-023",
+  "taskId": "MG-DEV-023",
   "status": "IMPLEMENTED",
   "directive": "Production enemy archetype registry, tactical scaling budgets, and AI profile coverage for solo-Deity missions.",
   "sources": [
@@ -23,9 +23,9 @@
       "purpose": "Create positional pressure and execution chains.",
       "counterplay": "Area control, hazard baiting, cleave, execution routing.",
       "runtimeCreatureIds": [
-        "TG-CREATURE-001",
-        "TG-CREATURE-007",
-        "TG-CREATURE-012"
+        "MG-CREATURE-001",
+        "MG-CREATURE-007",
+        "MG-CREATURE-012"
       ],
       "scalesBy": [
         "count",
@@ -54,17 +54,17 @@
       "purpose": "Force stance discipline and terrain planning.",
       "counterplay": "Dodge charge lanes, parry windows, armor break, displacement.",
       "runtimeCreatureIds": [
-        "TG-CREATURE-002",
-        "TG-CREATURE-008",
-        "TG-CREATURE-010",
-        "TG-CREATURE-013",
-        "TG-CREATURE-014",
-        "TG-CREATURE-017",
-        "TG-CREATURE-020",
-        "TG-CREATURE-022",
-        "TG-CREATURE-023",
-        "TG-CREATURE-033",
-        "TG-CREATURE-035"
+        "MG-CREATURE-002",
+        "MG-CREATURE-008",
+        "MG-CREATURE-010",
+        "MG-CREATURE-013",
+        "MG-CREATURE-014",
+        "MG-CREATURE-017",
+        "MG-CREATURE-020",
+        "MG-CREATURE-022",
+        "MG-CREATURE-023",
+        "MG-CREATURE-033",
+        "MG-CREATURE-035"
       ],
       "scalesBy": [
         "armor",
@@ -93,8 +93,8 @@
       "purpose": "Threaten from range and punish exposed paths.",
       "counterplay": "Line-of-sight breaks, pursuit reactions, high-ground denial.",
       "runtimeCreatureIds": [
-        "TG-CREATURE-028",
-        "TG-CREATURE-038"
+        "MG-CREATURE-028",
+        "MG-CREATURE-038"
       ],
       "scalesBy": [
         "range",
@@ -123,12 +123,12 @@
       "purpose": "Restrict movement and disrupt clean objective routes.",
       "counterplay": "Cleanse zones, destroy anchors, shift stance, terrain immunity builds.",
       "runtimeCreatureIds": [
-        "TG-CREATURE-016",
-        "TG-CREATURE-019",
-        "TG-CREATURE-026",
-        "TG-CREATURE-031",
-        "TG-CREATURE-034",
-        "TG-CREATURE-037"
+        "MG-CREATURE-016",
+        "MG-CREATURE-019",
+        "MG-CREATURE-026",
+        "MG-CREATURE-031",
+        "MG-CREATURE-034",
+        "MG-CREATURE-037"
       ],
       "scalesBy": [
         "zone size",
@@ -157,9 +157,9 @@
       "purpose": "Attack Momentum, Divinity, cooldowns, and reactions.",
       "counterplay": "Prioritize, interrupt casts, execute before drain resolves.",
       "runtimeCreatureIds": [
-        "TG-CREATURE-006",
-        "TG-CREATURE-021",
-        "TG-CREATURE-029"
+        "MG-CREATURE-006",
+        "MG-CREATURE-021",
+        "MG-CREATURE-029"
       ],
       "scalesBy": [
         "drain amount",
@@ -188,12 +188,12 @@
       "purpose": "Protect bosses, rituals, exits, and high-value threats.",
       "counterplay": "Displacement, terrain collapse, guard-break abilities.",
       "runtimeCreatureIds": [
-        "TG-CREATURE-004",
-        "TG-CREATURE-024",
-        "TG-CREATURE-025",
-        "TG-CREATURE-030",
-        "TG-CREATURE-032",
-        "TG-CREATURE-036"
+        "MG-CREATURE-004",
+        "MG-CREATURE-024",
+        "MG-CREATURE-025",
+        "MG-CREATURE-030",
+        "MG-CREATURE-032",
+        "MG-CREATURE-036"
       ],
       "scalesBy": [
         "shield strength",
@@ -222,7 +222,7 @@
       "purpose": "Make low-health deity states dangerous without cheap instant death.",
       "counterplay": "Guard stance, preemptive kill, concealment, Divine Ascension reset.",
       "runtimeCreatureIds": [
-        "TG-CREATURE-003"
+        "MG-CREATURE-003"
       ],
       "scalesBy": [
         "wound threshold",
@@ -251,11 +251,11 @@
       "purpose": "Single mechanic-focused enemy that changes how the room is solved.",
       "counterplay": "Learn mechanic, exploit weakness, deny setup.",
       "runtimeCreatureIds": [
-        "TG-CREATURE-009",
-        "TG-CREATURE-011",
-        "TG-CREATURE-015",
-        "TG-CREATURE-027",
-        "TG-CREATURE-039"
+        "MG-CREATURE-009",
+        "MG-CREATURE-011",
+        "MG-CREATURE-015",
+        "MG-CREATURE-027",
+        "MG-CREATURE-039"
       ],
       "scalesBy": [
         "mechanic layers",
@@ -284,8 +284,8 @@
       "purpose": "Mini-boss duel embedded inside a larger battlefield.",
       "counterplay": "Read phases, conserve Momentum, use terrain windows.",
       "runtimeCreatureIds": [
-        "TG-CREATURE-005",
-        "TG-CREATURE-018"
+        "MG-CREATURE-005",
+        "MG-CREATURE-018"
       ],
       "scalesBy": [
         "phase count",

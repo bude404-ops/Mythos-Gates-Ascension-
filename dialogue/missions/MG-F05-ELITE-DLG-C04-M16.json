@@ -1,0 +1,62 @@
+{
+  "id": "MG-F05-ELITE-DLG-C04-M16",
+  "missionId": "MG-F05-E-C04-M16",
+  "factionId": "MG-FACTION-005",
+  "campaignType": "Elite",
+  "status": "Production Ready",
+  "tone": "restrained mythic tactical",
+  "briefing": "Mythos Gates briefing: Elite: Claim the Morrígan Crow Battlefield: Final Approach. Enter Morrígan Crow Battlefield on Silver-Root Geas Labyrinth through The Silver-Root Gate while the Gate remains Sealed Gate with fae time bleed. Reference deity voice is Lugh, but the player still chooses one deity from the faction roster. Objective: With one selected deity, survive the boss approach in the elite-tuned Morrígan Crow Battlefield, secure the pressure fracture, and enter the chamber with the route law understood.",
+  "lines": {
+    "missionIntro": [
+      {
+        "speaker": "Lugh Divine Voice",
+        "text": "A geas is a road that remembers the foot that broke it. The Morrígan Crow Battlefield will know whether one deity is enough."
+      }
+    ],
+    "enemyIntroduction": [
+      {
+        "speaker": "Lore Director",
+        "text": "Enemies are not filler here; they are the pre boss pressure of Silver-Root Geas Labyrinth made hostile."
+      }
+    ],
+    "midBattle": [
+      {
+        "speaker": "Gameplay Director",
+        "text": "Read the room law first: Exploit or avoid the route rule: geas thorns that punish forbidden actions"
+      }
+    ],
+    "victory": [
+      {
+        "speaker": "Lugh Divine Voice",
+        "text": "The root remembers obedience and opens one more ring."
+      }
+    ],
+    "defeat": [
+      {
+        "speaker": "Lugh Divine Voice",
+        "text": "Withdraw. The Silver-Root Gate has learned too much from this attempt."
+      }
+    ],
+    "codex": [
+      {
+        "speaker": "Lore Director",
+        "text": "Avalora is the source Realm; mortal myth is only the later echo. This beat documents Morrígan Crow Battlefield as part of Silver-Root Geas Labyrinth."
+      }
+    ]
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "visualDirection": "Frame Morrígan Crow Battlefield as a pre boss node in Silver-Root Geas Labyrinth; silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.",
+  "updated": "2026-08-16",
+  "mythosGatesDialogueRecreation": {
+    "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
+    "routeId": "MG-DUNGEON-ROUTE-005",
+    "routeName": "Silver-Root Geas Labyrinth",
+    "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable deity language.",
+    "soloRule": "Dialogue supports one active god or goddess in the field."
+  },
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
+  "routeId": "MG-DUNGEON-ROUTE-005",
+  "routeName": "Silver-Root Geas Labyrinth",
+  "routeRoomName": "Morrígan Crow Battlefield",
+  "entryGate": "The Silver-Root Gate"
+}

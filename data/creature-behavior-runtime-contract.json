@@ -1,6 +1,6 @@
 {
-  "id": "TG-CREATURE-BEHAVIOR-RUNTIME-CONTRACT-001",
-  "taskId": "TG-DEV-008",
+  "id": "MG-CREATURE-BEHAVIOR-RUNTIME-CONTRACT-001",
+  "taskId": "MG-DEV-008",
   "version": "1.0.0",
   "status": "IMPLEMENTED",
   "purpose": "Playable battle loop contract for Hollow Wretch and Gateborn Colossus behavior records, AI intent selection, telegraphed counterplay, reaction windows, objective pressure, and telemetry.",
@@ -12,7 +12,7 @@
   ],
   "implementedCreatures": [
     {
-      "creatureId": "TG-CREATURE-001",
+      "creatureId": "MG-CREATURE-001",
       "name": "Hollow Wretch",
       "combatRole": "SWARMER",
       "runtimeProfileId": "HOLLOW_SWARMER",
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "creatureId": "TG-CREATURE-002",
+      "creatureId": "MG-CREATURE-002",
       "name": "Gateborn Colossus",
       "combatRole": "BRUTE",
       "runtimeProfileId": "GATEBORN_BRUTE",
@@ -77,10 +77,10 @@
     "Battle log records ENEMY_INTENT, REACTION_OPENED, OBJECTIVE_CRUSH, FRACTURE_ROAR, and reaction resolution events."
   ],
   "qualityGates": [
-    "TG-DEV-008 Hollow Wretch produces SWARM_RAKE and SWARM_SURROUND intents under deterministic setup.",
-    "TG-DEV-008 Gateborn Colossus produces GATE_STOMP, FRACTURE_ROAR, and OBJECTIVE_CRUSH intents under deterministic setup.",
-    "TG-DEV-008 reaction windows open with readable counterplay and Momentum costs.",
-    "TG-DEV-008 playable battle UI exposes behavior tags, threat budgets, and counterplay text.",
-    "TG-DEV-008 runtime telemetry records enemyIntentCounts, enemyBehaviorTags, enemyCounterplay, and objective denial effects."
+    "MG-DEV-008 Hollow Wretch produces SWARM_RAKE and SWARM_SURROUND intents under deterministic setup.",
+    "MG-DEV-008 Gateborn Colossus produces GATE_STOMP, FRACTURE_ROAR, and OBJECTIVE_CRUSH intents under deterministic setup.",
+    "MG-DEV-008 reaction windows open with readable counterplay and Momentum costs.",
+    "MG-DEV-008 playable battle UI exposes behavior tags, threat budgets, and counterplay text.",
+    "MG-DEV-008 runtime telemetry records enemyIntentCounts, enemyBehaviorTags, enemyCounterplay, and objective denial effects."
   ]
 }

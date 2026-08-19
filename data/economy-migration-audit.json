@@ -1,5 +1,5 @@
 {
-  "id": "TG-ECONOMY-MIGRATION-AUDIT",
+  "id": "MG-ECONOMY-MIGRATION-AUDIT",
   "version": "1.0.0",
   "generated": "2026-08-16",
   "status": "COMPLETE",
@@ -78,7 +78,7 @@
   ],
   "migrationRules": [
     "Preserve existing player resources and append missing core wallets instead of wiping saves.",
-    "Map TG-RES-GATE-SHARDS to SHARDS in economy views while preserving legacy id compatibility.",
+    "Map MG-RES-GATE-SHARDS to SHARDS in economy views while preserving legacy id compatibility.",
     "Do not expose development test purchases in production mode.",
     "All premium purchases require server verification before grant.",
     "Combat, campaign, divine trials, raids, and async arena remain playable without purchase."

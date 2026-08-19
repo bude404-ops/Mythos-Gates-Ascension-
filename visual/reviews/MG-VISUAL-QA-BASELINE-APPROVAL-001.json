@@ -1,0 +1,145 @@
+{
+  "id": "MG-VISUAL-QA-BASELINE-APPROVAL-001",
+  "taskId": "MG-DEV-009",
+  "status": "APPROVED",
+  "approvedBy": "Development Director",
+  "approved": "2026-08-13",
+  "build": "0.6.10",
+  "source": "Browser smoke + precommit visual QA gate",
+  "artifactPolicy": "Review captures are QA evidence only and never treated as production game art.",
+  "screens": [
+    {
+      "screenId": "MG-SCREEN-HOME",
+      "baselineId": "MG-BASELINE-HOME",
+      "screen": "Home",
+      "status": "APPROVED",
+      "approvedBuild": "0.2.0",
+      "notes": "Initial visual QA baseline record. Screenshot capture is registered separately under visual/reviews and never treated as game art."
+    },
+    {
+      "screenId": "MG-SCREEN-PROFILE",
+      "baselineId": "MG-BASELINE-PROFILE",
+      "screen": "Profile",
+      "status": "APPROVED",
+      "approvedBuild": "0.6.10",
+      "notes": "Approved after browser smoke confirms profile route remains scaffold-safe and does not imply playable Hero ownership."
+    },
+    {
+      "screenId": "MG-SCREEN-TITAN-SELECTION",
+      "baselineId": "MG-BASELINE-TITAN-SELECTION",
+      "screen": "Deity Selection",
+      "status": "APPROVED",
+      "approvedBuild": "0.2.0",
+      "notes": "Initial visual QA baseline record. Screenshot capture is registered separately under visual/reviews and never treated as game art."
+    },
+    {
+      "screenId": "MG-SCREEN-TITAN-PROFILE",
+      "baselineId": "MG-BASELINE-TITAN-PROFILE",
+      "screen": "Deity Profile",
+      "status": "APPROVED",
+      "approvedBuild": "0.6.10",
+      "notes": "Approved after prompt-driven Deity card QA confirms faction tone, stat readability, and artwork-context copy remain stable."
+    },
+    {
+      "screenId": "MG-SCREEN-CHARACTER-PROFILE",
+      "baselineId": "MG-BASELINE-CHARACTER-PROFILE",
+      "screen": "Character Profile",
+      "status": "APPROVED",
+      "approvedBuild": "0.2.0",
+      "notes": "Initial visual QA baseline record. Screenshot capture is registered separately under visual/reviews and never treated as game art."
+    },
+    {
+      "screenId": "MG-SCREEN-FACTION",
+      "baselineId": "MG-BASELINE-FACTION",
+      "screen": "Faction",
+      "status": "APPROVED",
+      "approvedBuild": "0.2.0",
+      "notes": "Initial visual QA baseline record. Screenshot capture is registered separately under visual/reviews and never treated as game art."
+    },
+    {
+      "screenId": "MG-SCREEN-CAMPAIGN",
+      "baselineId": "MG-BASELINE-CAMPAIGN",
+      "screen": "Campaign",
+      "status": "APPROVED",
+      "approvedBuild": "0.2.0",
+      "notes": "Initial visual QA baseline record. Screenshot capture is registered separately under visual/reviews and never treated as game art."
+    },
+    {
+      "screenId": "MG-SCREEN-BATTLE",
+      "baselineId": "MG-BASELINE-BATTLE",
+      "screen": "Battle",
+      "status": "APPROVED",
+      "approvedBuild": "0.6.10",
+      "notes": "Approved after hybrid battle smoke confirms mobile tactical camera, sprite grounding, intent text, scaling text, and counterplay visibility."
+    },
+    {
+      "screenId": "MG-SCREEN-VICTORY",
+      "baselineId": "MG-BASELINE-VICTORY",
+      "screen": "Victory",
+      "status": "APPROVED",
+      "approvedBuild": "0.2.0",
+      "notes": "Initial visual QA baseline record. Screenshot capture is registered separately under visual/reviews and never treated as game art."
+    },
+    {
+      "screenId": "MG-SCREEN-DEFEAT",
+      "baselineId": "MG-BASELINE-DEFEAT",
+      "screen": "Defeat",
+      "status": "APPROVED",
+      "approvedBuild": "0.2.0",
+      "notes": "Initial visual QA baseline record. Screenshot capture is registered separately under visual/reviews and never treated as game art."
+    },
+    {
+      "screenId": "MG-SCREEN-CODEX",
+      "baselineId": "MG-BASELINE-CODEX",
+      "screen": "Codex",
+      "status": "APPROVED",
+      "approvedBuild": "0.2.0",
+      "notes": "Initial visual QA baseline record. Screenshot capture is registered separately under visual/reviews and never treated as game art."
+    },
+    {
+      "screenId": "MG-SCREEN-SETTINGS",
+      "baselineId": "MG-BASELINE-SETTINGS",
+      "screen": "Settings",
+      "status": "APPROVED",
+      "approvedBuild": "0.6.10",
+      "notes": "Approved as preview-only settings baseline; warning retained until persistent account save options ship."
+    },
+    {
+      "screenId": "MG-SCREEN-LOADING",
+      "baselineId": "MG-BASELINE-LOADING",
+      "screen": "Loading",
+      "status": "APPROVED",
+      "approvedBuild": "0.2.0",
+      "notes": "Initial visual QA baseline record. Screenshot capture is registered separately under visual/reviews and never treated as game art."
+    },
+    {
+      "screenId": "MG-VIS-SCREEN-014",
+      "baselineId": "MG-VIS-BASELINE-014",
+      "screen": "Full Hybrid Flow",
+      "status": "APPROVED",
+      "approvedBuild": "0.6.10",
+      "notes": "Approved after full hybrid campaign-to-battle flow smoke confirms campaign path, battle transition, victory return, and mobile performance budget."
+    },
+    {
+      "screenId": "MG-SCREEN-TACTICAL-MAP-PROTOTYPE",
+      "baselineId": "MG-BASELINE-TACTICAL-MAP-PROTOTYPE",
+      "screen": "Tactical Map Prototype",
+      "status": "APPROVED",
+      "approvedBuild": "0.3.4",
+      "notes": "Baseline for playable isometric tactical prototype: 10x10 elevated terrain, Realm selector, 2D player/enemy tokens, movement and attack highlights, enemy turn, HUD, and mobile camera modes."
+    }
+  ],
+  "requiredSmokeScreens": [
+    "campaign",
+    "battle",
+    "full-flow",
+    "tactical-map-prototype"
+  ],
+  "checks": [
+    "All visual baseline records approved",
+    "No visual baseline uses NOT TESTED/PENDING",
+    "Required hybrid smoke screens exist",
+    "Visual QA pipeline includes VISUAL TEST and DEPLOY",
+    "QA artifacts segregated from production art"
+  ]
+}
