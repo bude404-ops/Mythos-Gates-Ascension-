@@ -59,7 +59,7 @@ Examples:
 - Primordial beasts
 - Ancient divine remnants
 - Gate guardians
-- Lost Titans
+- Lost Deities
 
 Role:
 

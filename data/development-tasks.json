@@ -20,7 +20,7 @@
   },
   {
     "id": "TG-DEV-001",
-    "description": "Approve first batch of deity artwork for prompt-ready Titans.",
+    "description": "Approve first batch of deity artwork for prompt-ready Deities.",
     "director": "Art Director",
     "priority": "High",
     "status": "COMPLETED",
@@ -430,7 +430,7 @@
       "scripts/test-command-hub.mjs"
     ],
     "completedIn": "3d49359+raid-economy-tuning",
-    "completionSummary": "Implemented tuned non-pay-to-win solo-Titan raid economy: first-clear bonuses, replay decay, weekly tier caps, signature alloy bands, active-divine mastery credit, and validation/smoke coverage."
+    "completionSummary": "Implemented tuned non-pay-to-win solo-Deity raid economy: first-clear bonuses, replay decay, weekly tier caps, signature alloy bands, active-divine mastery credit, and validation/smoke coverage."
   },
   {
     "id": "TG-DEV-026",
@@ -552,7 +552,7 @@
     "acceptanceEvidence": [
       "All 8 required sheet types are implemented.",
       "Every sheet includes compareAgainst references, ratioToDeity, composition, camera, prompt overlay, and QA checks.",
-      "Scale sheets preserve mobile readability and forbid shrinking Titans to solve composition.",
+      "Scale sheets preserve mobile readability and forbid shrinking Deities to solve composition.",
       "Release validation rejects missing sheet types, missing QA checks, and invalid ratios."
     ]
   },

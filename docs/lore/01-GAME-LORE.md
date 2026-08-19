@@ -14,7 +14,7 @@ Humans remembered solar judges as sun gods. They remembered storm kings as thund
 
 But the myths were only shadows of the truth.
 
-The truth is that these beings were real — extradimensional divine civilizations whose power bled into human history through the Mythos Gates. The Titans are the originals. Human gods are the echoes.
+The truth is that these beings were real — extradimensional divine civilizations whose power bled into human history through the Mythos Gates. The Deities are the originals. Human gods are the echoes.
 
 The Ascension Collapse shattered the old dimensional order. Realm civilizations fractured, sacred roads disappeared, relics lost their original resonance, sealed chambers cracked, and dormant threats woke under the broken Gate network.
 
@@ -26,9 +26,9 @@ Ascension begins after the old certainty has failed. The seven playable Realms n
 
 The current playable campaign is organized around seven route-native Mythos Gate descents:
 
-The Titans are the supreme divine warforms of these Realms.
+The Deities are the supreme divine warforms of these Realms.
 
-Titans are colossal extradimensional divine beings shaped by the laws, memories, symbols, materials, wounds, and sacred powers of their home Realms. Each deity is a living expression of its civilization's deepest truth — a divine being whose anatomy, presence, and power transcend mortal form.
+Deities are colossal extradimensional divine beings shaped by the laws, memories, symbols, materials, wounds, and sacred powers of their home Realms. Each deity is a living expression of its civilization's deepest truth — a divine being whose anatomy, presence, and power transcend mortal form.
 
 They are the originals that humans later worshipped as gods. They are NOT humans in armor. They are NOT humans in costume. They are NOT machines. They are divine beings whose forms integrate the laws and materials of their Realms directly into their living anatomy.
 
@@ -48,6 +48,6 @@ Beyond the surviving Realms are deeper threats: the Forgotten, the Hollow, the B
 
 The current age begins in the ruins of certainty.
 
-The old paths are broken. The Gates are reopening. The Realms are mobilizing. The Titans are awakening. Forgotten powers are stirring beneath sealed dimensions. And something buried before the Ascension Collapse is beginning to move again.
+The old paths are broken. The Gates are reopening. The Realms are mobilizing. The Deities are awakening. Forgotten powers are stirring beneath sealed dimensions. And something buried before the Ascension Collapse is beginning to move again.
 
-Mythos Gates is the story of divine mythological civilizations fighting over the broken machinery of reality — not with science, not with spaceships, not with alien technology, but with ancient power, sacred law, living myth, and colossal divine Titans born from the souls of their Realms.
+Mythos Gates is the story of divine mythological civilizations fighting over the broken machinery of reality — not with science, not with spaceships, not with alien technology, but with ancient power, sacred law, living myth, and colossal divine Deities born from the souls of their Realms.

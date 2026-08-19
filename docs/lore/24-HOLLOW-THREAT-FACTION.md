@@ -45,7 +45,7 @@ The Hollow should NEVER look like a playable deity. It may imitate armor, banner
 
 ## Combat Philosophy
 
-Pressure morale, isolate Titans, corrupt objectives, punish overextension, duplicate forgotten battlefield roles, and turn terrain memory into hostile rules.
+Pressure morale, isolate Deities, corrupt objectives, punish overextension, duplicate forgotten battlefield roles, and turn terrain memory into hostile rules.
 
 The Hollow fights by making the Realms forget their own laws. It corrupts objective markers, silences abilities, steals cooldowns, and turns the terrain against the player. It does not fight with skill — it fights by making the player's own skill meaningless.
 

@@ -1,6 +1,6 @@
 # Mythos Gates Artwork Generation Run-Through
 
-This is the production order for Big Bot: generate assets in coherent bundles so battlefields, mission thumbnails, campaign characters, Titans, enemies, objectives, and VFX stay visually aligned.
+This is the production order for Big Bot: generate assets in coherent bundles so battlefields, mission thumbnails, campaign characters, Deities, enemies, objectives, and VFX stay visually aligned.
 
 ## Rule for every generated file
 
@@ -38,43 +38,43 @@ Every output filename must include the permanent asset ID, then land in the artw
 ### Aten Ra
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_001 (The First Reopening Gate), BATTLEFIELD_002 (Solar Pylon Observatory), BATTLEFIELD_007 (Sacred Sun Temple Road), BATTLEFIELD_008 (Mythos Gate Sun Throne)
-- Core Titans: TITAN_001 (Aten-Ra), TITAN_002 (Khemet), TITAN_003 (Nefra), TITAN_004 (Orru), TITAN_005 (Sutekh), TITAN_006 (Iset), TITAN_007 (Karnu), TITAN_008 (Maahes), TITAN_009 (Amunet)
+- Core Deities: TITAN_001 (Aten-Ra), TITAN_002 (Khemet), TITAN_003 (Nefra), TITAN_004 (Orru), TITAN_005 (Sutekh), TITAN_006 (Iset), TITAN_007 (Karnu), TITAN_008 (Maahes), TITAN_009 (Amunet)
 - Campaign characters: CHARACTER_001 (Mesha Gate-Scribe)
 
 ### Asgardian
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_003 (Storm-Oath Bridge), BATTLEFIELD_004 (Marble Sky Arena)
-- Core Titans: TITAN_010 (The Allfather Stormvein), TITAN_011 (Hrothar Rune-Mountain), TITAN_012 (Skeld Iron Tempest), TITAN_013 (Eirwyn Valkstorm), TITAN_014 (Mordun Frost-Anvil), TITAN_015 (Veyra Thunderloom), TITAN_016 (Ragnor Skybreaker), TITAN_017 (Ullr Snow-Crown), TITAN_018 (Sigrun Oathflare)
+- Core Deities: TITAN_010 (The Allfather Stormvein), TITAN_011 (Hrothar Rune-Mountain), TITAN_012 (Skeld Iron Tempest), TITAN_013 (Eirwyn Valkstorm), TITAN_014 (Mordun Frost-Anvil), TITAN_015 (Veyra Thunderloom), TITAN_016 (Ragnor Skybreaker), TITAN_017 (Ullr Snow-Crown), TITAN_018 (Sigrun Oathflare)
 - Campaign characters: CHARACTER_002 (Hrodda Oath-Witness)
 
 ### Olympian
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_004 (Marble Sky Arena)
-- Core Titans: TITAN_019 (Aurelion Heaven-Marrow), TITAN_020 (Kallix Marble Thunder), TITAN_021 (Thyressa Golden Aegis), TITAN_022 (Ilyon Laurel Flame), TITAN_023 (Nikos Star-Lance), TITAN_024 (Dione Victory Mirror), TITAN_025 (Helior Bronze Summit), TITAN_026 (Pallas Oath-Spear), TITAN_027 (Eiren Crowned Horizon)
+- Core Deities: TITAN_019 (Aurelion Heaven-Marrow), TITAN_020 (Kallix Marble Thunder), TITAN_021 (Thyressa Golden Aegis), TITAN_022 (Ilyon Laurel Flame), TITAN_023 (Nikos Star-Lance), TITAN_024 (Dione Victory Mirror), TITAN_025 (Helior Bronze Summit), TITAN_026 (Pallas Oath-Spear), TITAN_027 (Eiren Crowned Horizon)
 - Campaign characters: CHARACTER_003 (Lyrion Laurel-Envoy)
 
 ### Kami
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_009 (Foxfire Torii Road), BATTLEFIELD_010 (Mirror Lake Sanctum)
-- Core Titans: TITAN_028 (Amaterion Spirit-Sun), TITAN_029 (Tsukiro Moon-Veil), TITAN_030 (Raidenko Storm Script), TITAN_031 (Mizuka Shrine Tide), TITAN_032 (Kageyori Shadow Gate), TITAN_033 (Hanae Blossom Ward), TITAN_034 (Onimaru Red Seal), TITAN_035 (Korin Mist Path), TITAN_036 (Yamabito Stone Prayer)
+- Core Deities: TITAN_028 (Amaterion Spirit-Sun), TITAN_029 (Tsukiro Moon-Veil), TITAN_030 (Raidenko Storm Script), TITAN_031 (Mizuka Shrine Tide), TITAN_032 (Kageyori Shadow Gate), TITAN_033 (Hanae Blossom Ward), TITAN_034 (Onimaru Red Seal), TITAN_035 (Korin Mist Path), TITAN_036 (Yamabito Stone Prayer)
 - Campaign characters: CHARACTER_004 (Sayo Shrine-Cartographer)
 
 ### Tuatha
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_005 (Moon-Grove Rootlabyrinth)
-- Core Titans: TITAN_037 (Dagoran Root-Crown), TITAN_038 (Eryndor Emerald Oath), TITAN_039 (Melian Moon-Grove), TITAN_040 (Bran Granite Bough), TITAN_041 (Nimue Silver Pool), TITAN_042 (Cernan Wild Vale), TITAN_043 (Ailbhe Thorn-Song), TITAN_044 (Oghma Stone Script), TITAN_045 (Tara Dawn Barrow)
+- Core Deities: TITAN_037 (Dagoran Root-Crown), TITAN_038 (Eryndor Emerald Oath), TITAN_039 (Melian Moon-Grove), TITAN_040 (Bran Granite Bough), TITAN_041 (Nimue Silver Pool), TITAN_042 (Cernan Wild Vale), TITAN_043 (Ailbhe Thorn-Song), TITAN_044 (Oghma Stone Script), TITAN_045 (Tara Dawn Barrow)
 - Campaign characters: CHARACTER_005 (Maeve Root-Memory)
 
 ### Empyrean
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_011 (Choir Vault Ascent), BATTLEFIELD_012 (Broken Heaven Engine)
-- Core Titans: TITAN_046 (Seraphel), TITAN_047 (Caelion Dawnborn Axis), TITAN_048 (Aurelia Radiant Spear), TITAN_049 (Malachor Law Warden), TITAN_050 (Elyndra Choir Crown), TITAN_051 (Orison White Citadel), TITAN_052 (Vespera Mercy Blade), TITAN_053 (Axiom Gate Choir), TITAN_054 (Theon Still Horizon)
+- Core Deities: TITAN_046 (Seraphel), TITAN_047 (Caelion Dawnborn Axis), TITAN_048 (Aurelia Radiant Spear), TITAN_049 (Malachor Law Warden), TITAN_050 (Elyndra Choir Crown), TITAN_051 (Orison White Citadel), TITAN_052 (Vespera Mercy Blade), TITAN_053 (Axiom Gate Choir), TITAN_054 (Theon Still Horizon)
 - Campaign characters: CHARACTER_006 (Oriel Edict-Keeper)
 
 ### Infernal Dominion
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_006 (Black Iron Court)
-- Core Titans: TITAN_055 (Mordrath), TITAN_056 (Varkul Bloodforged Crown), TITAN_057 (Nyxara Flameborn Court), TITAN_058 (Azrakar Chainwarden), TITAN_059 (Orryx Ash Dominion), TITAN_060 (Malvera Ember Throne), TITAN_061 (Kharon Black Iron), TITAN_062 (Sablex Cinder Duke), TITAN_063 (Zerath Wound Gate)
+- Core Deities: TITAN_055 (Mordrath), TITAN_056 (Varkul Bloodforged Crown), TITAN_057 (Nyxara Flameborn Court), TITAN_058 (Azrakar Chainwarden), TITAN_059 (Orryx Ash Dominion), TITAN_060 (Malvera Ember Throne), TITAN_061 (Kharon Black Iron), TITAN_062 (Sablex Cinder Duke), TITAN_063 (Zerath Wound Gate)
 - Campaign characters: CHARACTER_007 (Vasha Cinder-Broker)
 
 ## First 56 mission bundles — first full faction normal + elite pass
@@ -322,8 +322,8 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - Boss requirements: No boss art required; use threat pack silhouettes and objective props.
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
-### 028. TG-F01-C04-M16 — Titan Silhouette of the False Dawn
-- Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Titans
+### 028. TG-F01-C04-M16 — Deity Silhouette of the False Dawn
+- Lane: Normal | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_003, ENEMY_004, ENEMY_005
 - Thumbnail: Deity Silhouette of the False Dawn thumbnail: three deity silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.
@@ -341,7 +341,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 - VFX language: sunflare tile warning, river-light pulse, Gate pressure distortion, Hollow shadow contact
 
 ### 030. TG-F01-E-C04-M14 — Elite: The Black Sun Caravan
-- Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Titans
+- Lane: Elite | Campaign: Aten Ra / Chapter 4 — Chapter 4: War of Deities
 - Battlefield: BATTLEFIELD_008 — Mythos Gate Sun Throne → `BATTLEFIELD_008__titan-gate-sun-throne__source-file.ext`
 - Generate together: BATTLEFIELD_008, TITAN_001, TITAN_002, TITAN_003, CHARACTER_001, ENEMY_002, ENEMY_001, ENEMY_005, ENEMY_004, ENEMY_002
 - Thumbnail: Elite: The Black Sun Caravan thumbnail: three deity silhouettes advancing through tiered sun platforms with simultaneous anchor points and overcharge hazards.

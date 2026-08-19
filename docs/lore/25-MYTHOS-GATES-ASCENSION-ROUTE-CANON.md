@@ -4,7 +4,7 @@ Status: Canon synchronized 2026-08-17.
 
 This codex file binds the full core lore layer to the completed Ascension route campaign structure. The campaign is now a one-selected-deity dungeon crawler: the player chooses one god or goddess, enters a Mythos Gate route, fights many enemies, resolves hazards and elite locks, collects lore/treasure detours, and reaches a boss chamber.
 
-The older data schema may still use stable `Titan` identifiers internally. Fiction-facing canon now says **playable deities**: gods and goddesses from the seven source Realms.
+The older data schema may still use stable `Deity` identifiers internally. Fiction-facing canon now says **playable deities**: gods and goddesses from the seven source Realms.
 
 
 ## Universal Trial — The Gate's Judgment

@@ -9,21 +9,21 @@
 
 ## Lore Authority
 
-The existing Lore Codex remains the highest authority. This pass does not replace factions, Realms, gods, relationships, or established Gate function. The old Titan Gates identity has been reinterpreted into the **Mythos Gates** brand framework without inventing a contradictory origin.
+The existing Lore Codex remains the highest authority. This pass does not replace factions, Realms, gods, relationships, or established Gate function. The old Deity Gates identity has been reinterpreted into the **Mythos Gates** brand framework without inventing a contradictory origin.
 
 ## Preserved Canon
 
 - Seven current factions remain unchanged.
 - Seven extradimensional mythological Realms remain unchanged.
 - Twenty-eight playable gods/goddesses remain the roster target.
-- The playable characters remain actual gods and goddesses, not Titans and not mortal heroes.
+- The playable characters remain actual gods and goddesses, not Deities and not mortal heroes.
 - Gate states remain canon: Stable Gates, Ruin Gates, Distortion Gates, Sealed Gates, Wound Gates.
 - The Ascension Collapse remains the current campaign-era rupture in dimensional order.
 - The Gates remain ancient, mysterious, non-technological reality-structures tied to Realm travel, conflict, dungeons, artifacts, enemies, and boss arenas.
 
 ## NEW CANON EXTENSION
 
-The former Titan Gates are now officially the **Mythos Gates**: ancient threshold-points where boundaries between mythological Realms become traversable. Their complete origin remains unresolved, even to many gods, preserving long-term expansion mystery.
+The former Deity Gates are now officially the **Mythos Gates**: ancient threshold-points where boundaries between mythological Realms become traversable. Their complete origin remains unresolved, even to many gods, preserving long-term expansion mystery.
 
 This is an extension and reinterpretation of existing Gate canon, not a replacement origin.
 
@@ -38,7 +38,7 @@ Already fits:
 Changed:
 
 - Official game title changed to **Mythos Gates: Ascension**.
-- Gate terminology changed from Titan Gates to Mythos Gates across source content.
+- Gate terminology changed from Deity Gates to Mythos Gates across source content.
 - Ascension is now framed as the current story arc, not the permanent IP identity.
 - Gate mysteries are deliberately preserved for future eras.
 
@@ -195,7 +195,7 @@ Preserved:
 Automated audit results:
 
 - Old title/brand hits: **0**
-- Banned playable-character Titan phrase hits: **0**
+- Banned playable-character Deity phrase hits: **0**
 
 Remaining `titan` terminology, where present, is legacy technical architecture such as internal IDs, filenames, schema names, validation names, and compatibility data keys. Those should be migrated only with a dedicated internal migration plan, not by blind replacement.
 

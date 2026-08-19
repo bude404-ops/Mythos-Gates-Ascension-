@@ -1,6 +1,6 @@
 # Schemas
 
-Active coverage now includes Titans, factions, maps, missions, mission dialogue, asset manifests, economy, battlefield telemetry, external AI production packets, and canon version manifests.
+Active coverage now includes Deities, factions, maps, missions, mission dialogue, asset manifests, economy, battlefield telemetry, external AI production packets, and canon version manifests.
 
 This folder is the contract layer for Mythos Gates production data.
 
@@ -10,7 +10,7 @@ Every major canonical JSON record should eventually have a machine-enforced sche
 
 ## Priority order
 
-1. Titan
+1. Deity
 2. Faction / Realm
 3. Mission
 4. Mission dialogue

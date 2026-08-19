@@ -2,7 +2,7 @@
 
 Updated: 2026-08-16
 
-Every Titan weapon, armor body, resonance core, basic, technique, signature, reaction, movement skill, execution, passive, and Divine Ascension must express the Realm as the source culture humans later copied. Generic names like Implement, Realmplate, Charge Core, Blow, or Judgment Light are rejection flags unless intentionally replaced by a faction-specific source term.
+Every Deity weapon, armor body, resonance core, basic, technique, signature, reaction, movement skill, execution, passive, and Divine Ascension must express the Realm as the source culture humans later copied. Generic names like Implement, Realmplate, Charge Core, Blow, or Judgment Light are rejection flags unless intentionally replaced by a faction-specific source term.
 
 ## Aten Ra
 - Resource: Solar Charge

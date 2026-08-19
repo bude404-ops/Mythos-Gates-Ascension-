@@ -34,10 +34,10 @@ The Solar Dominion of Khepra is defined by sacred law, geometric light, desert j
 ## Campaign Hooks
 
 - Recover the broken Measure from Hollow-thieves.
-- Judge a Titan accused of opening a forbidden Gate.
+- Judge a Deity accused of opening a forbidden Gate.
 - Seal a Black-Sun eclipse before it crowns the wrong king.
 
-## Titan Codex
+## Deity Codex
 
 ### Aten-Ra (TG-TITAN-001) — Defender
 **Source Deity:** Ra + Aten + Ma'at — noon sun, kingship, truth, balance
@@ -95,4 +95,4 @@ The Solar Dominion of Khepra is defined by sacred law, geometric light, desert j
 
 ## Director Ruling
 
-This chapter expands faction, Realm, and Titan presentation only. It does not create playable non-Titan entries, normal units, or cross-faction strike-force rules.
+This chapter expands faction, Realm, and Deity presentation only. It does not create playable non-Deity entries, normal units, or cross-faction strike-force rules.

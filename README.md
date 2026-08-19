@@ -1,6 +1,6 @@
 # Mythos Gates: Ascension
 
-Mythos Gates: Ascension is a Titan-only mythological tactical RPG built around seven source-culture Realms, Mythos Gates, the Ascension Collapse, and colossal Titans shaped by their civilizations.
+Mythos Gates: Ascension is a Deity-only mythological tactical RPG built around seven source-culture Realms, Mythos Gates, the Ascension Collapse, and colossal Deities shaped by their civilizations.
 
 This repository is the source of truth for:
 
@@ -130,12 +130,12 @@ Current canon is locked around:
 
 - Seven playable mythological Realms
 - Four deities per Realm
-- One-active-Titan standard combat deployments
+- One-active-Deity standard combat deployments
 - The Hollow as a non-playable campaign threat layer
 - No playable armies
 - No playable squads
 - No five-character teams
-- No playable characters classified as Titans
+- No playable characters classified as Deities
 - No sci-fi
 - No futuristic craft
 - No old void rot / fungal civilization direction

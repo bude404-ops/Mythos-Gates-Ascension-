@@ -6,7 +6,7 @@
   "status": "IMPLEMENTED",
   "source": "data/world-scale-reference.json",
   "directive": "Mobile-first does not mean tiny. Tactical grid spaces are logical; visual scale must make Deities, Gates, and bosses feel immense.",
-  "unitSystem": "relativeScaleUnits from world-scale-reference; playerDeity=5.2 reference units",
+  "unitSystem": "relativeScaleUnits from world-scale-reference; playerTitan=5.2 reference units",
   "requiredSheetTypes": [
     "normal_enemy",
     "elite_enemy",
@@ -38,7 +38,7 @@
       "primarySubject": "standardEnemy",
       "compareAgainst": [
         "normalHumanoid",
-        "playerDeity",
+        "playerTitan",
         "standardWall"
       ],
       "ratioToDeity": 0.22,
@@ -62,7 +62,7 @@
       "primarySubject": "eliteEnemy",
       "compareAgainst": [
         "standardEnemy",
-        "playerDeity",
+        "playerTitan",
         "largeEnemy"
       ],
       "ratioToDeity": 0.36,
@@ -75,7 +75,7 @@
       ],
       "qaChecks": [
         "Elite enemy reads as a deity captain, not a boss.",
-        "Titan remains the dominant vertical mass.",
+        "Deity remains the dominant vertical mass.",
         "Armor volume is larger, not just brighter."
       ]
     },
@@ -98,7 +98,7 @@
         "Gate arch must tower above all deities"
       ],
       "qaChecks": [
-        "All Titans feel playable at tactical grid scale.",
+        "All Deities feel playable at tactical grid scale.",
         "Heavy deity does not become colossal boss scale.",
         "Attack arc extends beyond body silhouette."
       ]
@@ -109,12 +109,12 @@
       "title": "Deity-Scale Enemy Duel Reference",
       "primarySubject": "deityScaleEnemy",
       "compareAgainst": [
-        "playerDeity",
+        "playerTitan",
         "heavyDeity",
         "deityGateArch"
       ],
       "ratioToDeity": 1.12,
-      "composition": "Duel staging: player Titan and deity-scale enemy shoulder-to-shoulder, Gate arch and terrain object in background.",
+      "composition": "Duel staging: player Deity and deity-scale enemy shoulder-to-shoulder, Gate arch and terrain object in background.",
       "camera": "Boss-preview camera, both silhouettes equally readable with enemy slightly taller or longer-limbed.",
       "promptOverlay": [
         "enemy can match deity height",
@@ -133,7 +133,7 @@
       "title": "Colossal Boss vs deity",
       "primarySubject": "colossalBoss",
       "compareAgainst": [
-        "playerDeity",
+        "playerTitan",
         "deityScaleEnemy",
         "deityGateArch"
       ],
@@ -158,14 +158,14 @@
       "primarySubject": "titanGateArch",
       "compareAgainst": [
         "gateInteriorOpening",
-        "playerDeity",
+        "playerTitan",
         "colossalBoss"
       ],
       "ratioToDeity": 2.69,
-      "composition": "Gate arch, inner opening, Titan, and colossal boss silhouettes aligned on the same threshold stones.",
+      "composition": "Gate arch, inner opening, Deity, and colossal boss silhouettes aligned on the same threshold stones.",
       "camera": "Wide landmark camera with clear inner passage and readable threshold material detail.",
       "promptOverlay": [
-        "Gate must dwarf Titans",
+        "Gate must dwarf Deities",
         "opening accepts deity travel",
         "threshold stones are battlefield-sized"
       ],
@@ -184,13 +184,13 @@
         "standardWall",
         "statue",
         "bridgeWidth",
-        "playerDeity"
+        "playerTitan"
       ],
       "ratioToDeity": 2.12,
       "composition": "Temple pylon, wall, statue, bridge width markers, and deity placed on shared tactical floor tiles.",
       "camera": "Isometric tactical camera with lane/cover readability and no artificial grid glow.",
       "promptOverlay": [
-        "cover can hide enemies but not Titans",
+        "cover can hide enemies but not Deities",
         "statues are deity-era monuments",
         "bridge width supports deity traversal"
       ],
@@ -208,7 +208,7 @@
       "compareAgainst": [
         "normalHumanoid",
         "standardEnemy",
-        "playerDeity",
+        "playerTitan",
         "gateInteriorOpening"
       ],
       "ratioToDeity": 0.65,

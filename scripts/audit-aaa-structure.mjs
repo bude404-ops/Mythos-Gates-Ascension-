@@ -190,8 +190,8 @@ if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:ue5-d
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:ue5-dungeon-framework')) issues.push('precommit:verify must enforce UE5 dungeon framework contracts.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:ue5-mobile-first')) issues.push('precommit:verify must enforce UE5 mobile-first validation.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:ue5-mobile-first')) issues.push('precommit:verify must enforce UE5 mobile-first contracts.');
-if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:one-deity-vs-many-combat')) issues.push('precommit:verify must enforce one-Titan-vs-many combat validation.');
-if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:one-deity-vs-many-combat')) issues.push('precommit:verify must enforce one-Titan-vs-many combat contracts.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:one-deity-vs-many-combat')) issues.push('precommit:verify must enforce one-Deity-vs-many combat validation.');
+if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:one-deity-vs-many-combat')) issues.push('precommit:verify must enforce one-Deity-vs-many combat contracts.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run validate:mission-campaign-lore-run-ins')) issues.push('precommit:verify must enforce mission/campaign lore run-in validation.');
 if (!packageJson.scripts?.['precommit:verify']?.includes('npm run test:mission-campaign-lore-run-ins')) issues.push('precommit:verify must enforce mission/campaign lore run-in contracts.');
 

@@ -9,7 +9,7 @@
 
 | Metric | Count |
 |--------|-------|
-| Titans (Deities) | 28 |
+| Deities (Deities) | 28 |
 | Creatures | 39 |
 | Hollow Creatures | 16 |
 | Factions | 7 |
@@ -77,7 +77,7 @@
 - **Zero remaining halo references**
 
 ### Approved Concept Art
-| Titan | Status | Notes |
+| Deity | Status | Notes |
 |-------|--------|-------|
 | TG-TITAN-001 Aten-Ra Solar Law Monolith | Approved | Hair added (electrum-streaked braids) |
 | TG-TITAN-002 Khemet Suncrown | Approved | |
@@ -118,7 +118,7 @@
 - 7x7 grid combat
 - Six tactical zones using Aten-Ra materials
 - Three solar seals
-- One Titan (player's) — never show multiple titans
+- One Deity (player's) — never show multiple titans
 - M01 specs synced, stale boss/anchor code removed
 - Commit: `7893c1f`
 
@@ -182,4 +182,4 @@
 | `515b753` | Add Mythos Gates dungeon route registry |
 | `4e4408d` | Rename universe to Mythos Gates |
 | `8094197` | Reconfigure canon for single deity dungeon crawler |
-| `bafe971` | Restructure playable Titans into god roster |
+| `bafe971` | Restructure playable Deities into god roster |

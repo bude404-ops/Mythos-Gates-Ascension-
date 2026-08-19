@@ -60,7 +60,7 @@ export function validateCrossFactionCreaturePools({ factions, creatures, pools, 
 
   for (const campaign of campaigns) {
     if (campaign.mobileUe5Architecture?.combatRule !== ONE_TITAN_RULE) issues.push(`${campaign.id} campaign must declare one-deity combat rule`);
-    if (campaign.oneTitanVsManyCombat?.playerControlledTitans !== 1) issues.push(`${campaign.id} campaign must enforce one player-controlled Titan`);
+    if (campaign.oneTitanVsManyCombat?.playerControlledTitans !== 1) issues.push(`${campaign.id} campaign must enforce one player-controlled Deity`);
     for (const forbidden of FORBIDDEN_STANDARD_COMBAT) if (!campaign.oneTitanVsManyCombat?.forbidden?.includes(forbidden)) issues.push(`${campaign.id} campaign missing forbidden ${forbidden}`);
     if ((campaign.crossFactionRunIns?.poolIds || []).length !== factions.length) issues.push(`${campaign.id} campaign must expose all faction run-in pools for lore-valid events`);
   }

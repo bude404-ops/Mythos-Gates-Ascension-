@@ -9,7 +9,7 @@ Empyreans believe creation survives only when power kneels before a higher axiom
 ## Central Conflict
 Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.
 ## Realm Atmosphere
-The The White Citadel Above Law is defined by angelic order, impossible architecture, edicts of light, mercy blades, and the terrifying silence of perfect law. Its visual language is white-gold citadels, aura geometry, luminous wings, cathedral engines, glass floors over starless voids.
+The White Citadel Above Law is defined by angelic order, impossible architecture, edicts of light, mercy blades, and the terrifying silence of perfect law. Its visual language is white-gold citadels, aura geometry, luminous wings, cathedral engines, glass floors over starless voids.
 ## Major Landmarks
 - **The White Citadel** — a campaign-facing location for Empyrean stories.
 - **The Choir Axis** — a campaign-facing location for Empyrean stories.
@@ -27,7 +27,7 @@ The The White Citadel Above Law is defined by angelic order, impossible architec
 - decide whether to pardon an Infernal defector.
 - prevent an axiom from classifying free will as corruption.
 
-## Titan Codex Hooks
+## Deity Codex Hooks
 ### Seraphel (TG-TITAN-046)
 - **Role:** Defender
 - **Lore Function:** Seraphel embodies the Empyrean answer to the Ascension Collapse: defender shaped into Realm doctrine.
@@ -75,4 +75,4 @@ The The White Citadel Above Law is defined by angelic order, impossible architec
 - **Visual Context:** Frame Theon Still Horizon against white-gold citadels, aura geometry, luminous wings, cathedral engines, glass floors over starless voids while preserving their individual silhouette and role readability.
 
 ## Director Ruling
-This chapter expands faction, Realm, and Titan presentation only. It does not create playable non-Titan entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.
+This chapter expands faction, Realm, and Deity presentation only. It does not create playable non-Deity entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.

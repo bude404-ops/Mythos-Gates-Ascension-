@@ -8,7 +8,7 @@
     "identity": "One player profile owns one canonical save state in the mock platform service.",
     "persistence": "Every platform mutation returns a complete serializable state snapshot that can be stored and reloaded without loss.",
     "economy": "Currency mutations must be represented as ledger entries; balances are derived from the ledger plus initial grants.",
-    "roster": "Titan ownership and active deity selection live in platform state, not browser-only UI state.",
+    "roster": "Deity ownership and active deity selection live in platform state, not browser-only UI state.",
     "progression": "Mission completion, account XP, level, and unlocks must survive reload.",
     "serverPath": "This mock service is local and deterministic. A future backend must preserve the same contract before replacing it."
   },

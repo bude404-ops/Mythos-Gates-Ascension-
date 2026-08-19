@@ -27,7 +27,7 @@ No established faction was removed.
 
 Gameplay Director approved tactical variety through objective rotation, turn pressure, protection, control, destruction, escort, and multi-stage encounters.
 
-Lore Director keeps Aten Ra focused on law, sunlight, river-light, Gate wounds, Hollow pressure, and restrained Titan speech.
+Lore Director keeps Aten Ra focused on law, sunlight, river-light, Gate wounds, Hollow pressure, and restrained Deity speech.
 
 Art Director requires every mission to ship with map/environment, background, objective, VFX, boss, UI, and thumbnail guidance.
 

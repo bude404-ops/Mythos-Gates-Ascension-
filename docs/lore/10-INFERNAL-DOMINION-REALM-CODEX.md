@@ -5,11 +5,11 @@
 **Gate:** The Cinder-Wound Gate  
 **Status:** Canon Expanded
 ## Realm Thesis
-Infernal Titans believe survival belongs to those strong enough to command ruin rather than flee it.
+Infernal Deities believe survival belongs to those strong enough to command ruin rather than flee it.
 ## Central Conflict
 They can weaponize catastrophe better than any Realm, but every alliance with them asks who will hold the chain afterward.
 ## Realm Atmosphere
-The The Black Iron Court of Dominion is defined by infernal contracts, black iron courts, ash thrones, chain law, and ambition powerful enough to terrify oblivion. Its visual language is black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils.
+The Black Iron Court of Dominion is defined by infernal contracts, black iron courts, ash thrones, chain law, and ambition powerful enough to terrify oblivion. Its visual language is black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils.
 ## Major Landmarks
 - **The Black Iron Court** — a campaign-facing location for Infernal Dominion stories.
 - **The Ember Throne** — a campaign-facing location for Infernal Dominion stories.
@@ -27,7 +27,7 @@ The The Black Iron Court of Dominion is defined by infernal contracts, black iro
 - break a Hollow army using forbidden chain-law.
 - decide whether Dominion ambition is a weapon or the next Collapse.
 
-## Titan Codex Hooks
+## Deity Codex Hooks
 ### Mordrath (TG-TITAN-055)
 - **Role:** Defender
 - **Lore Function:** Mordrath embodies the Infernal Dominion answer to the Ascension Collapse: defender shaped into Realm doctrine.
@@ -75,4 +75,4 @@ The The Black Iron Court of Dominion is defined by infernal contracts, black iro
 - **Visual Context:** Frame Zerath Wound Gate against black iron, ember red, volcanic courts, chain auras, horned silhouettes, ash banners, molten sigils while preserving their individual silhouette and role readability.
 
 ## Director Ruling
-This chapter expands faction, Realm, and Titan presentation only. It does not create playable non-Titan entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.
+This chapter expands faction, Realm, and Deity presentation only. It does not create playable non-Deity entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.

@@ -2,7 +2,7 @@
 """
 Mythos Gates — Premium Prompt Generator v2.0
 Generates v18-quality art prompts for all 63 titans using:
-- Titan data (mythology, gear, visual traits, DNA)
+- Deity data (mythology, gear, visual traits, DNA)
 - Faction visual bible (realm, materials, colors, environment)
 - Backstory (personality, function, conflict)
 - Aten-Ra v18 approved prompt structure as the template
@@ -380,7 +380,7 @@ def generate_myth_section(titan, bibles):
     return f"""MYTHOLOGICAL SOURCE — deeply integrated into anatomy, not worn as accessories:
 
 1. {myth_source}
-   - {lore} This is not a costume or decoration — it is LIVING DIVINE ANATOMY. His/her body IS the manifestation of this mythological function. Ancient humans saw this being through the Mythos Gate and copied what they saw as myth, but the Titan is the SOURCE, not the copy.
+   - {lore} This is not a costume or decoration — it is LIVING DIVINE ANATOMY. His/her body IS the manifestation of this mythological function. Ancient humans saw this being through the Mythos Gate and copied what they saw as myth, but the Deity is the SOURCE, not the copy.
 
 2. REALM ANATOMY
    - {titan.get('titanArtDna',{}).get('realmAnatomy','')} These are NOT biological features — they are DIVINE PHYSIOLOGY grown from the realm itself. The skin is not skin but living divine material. The veins are not veins but energy channels.

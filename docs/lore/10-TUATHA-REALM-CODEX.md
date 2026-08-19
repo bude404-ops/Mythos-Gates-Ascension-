@@ -9,7 +9,7 @@ Tuatha deities protect continuity. They know worlds die when stories lose roots,
 ## Central Conflict
 Their memory is power, but it can become vengeance when old wounds refuse to compost.
 ## Realm Atmosphere
-The The Root-Crowned Green Below is defined by ancient roots, living songs, moon pools, stone scripts, barrow dawns, and nature remembering every betrayal. Its visual language is emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist.
+The Root-Crowned Green Below is defined by ancient roots, living songs, moon pools, stone scripts, barrow dawns, and nature remembering every betrayal. Its visual language is emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist.
 ## Major Landmarks
 - **The Moon-Grove Rootlabyrinth** — a campaign-facing location for Tuatha stories.
 - **The Silver Pool** — a campaign-facing location for Tuatha stories.

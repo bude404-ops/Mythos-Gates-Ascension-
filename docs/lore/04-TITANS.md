@@ -2,9 +2,9 @@
 
 ## Definition
 
-Titans are the supreme divine warforms of the Realms.
+Deities are the supreme divine warforms of the Realms.
 
-Titans are colossal extradimensional divine beings shaped by the laws, myths, symbols, materials, and powers of their home Realms. They are NOT humans in armor. They are NOT humans in costume. They are NOT machines. They are NOT ordinary fantasy units.
+Deities are colossal extradimensional divine beings shaped by the laws, myths, symbols, materials, and powers of their home Realms. They are NOT humans in armor. They are NOT humans in costume. They are NOT machines. They are NOT ordinary fantasy units.
 
 Each deity is a divine being whose anatomy integrates the laws and materials of its Realm directly into its living form. Their physiology transcends mortal design — they are the originals that ancient humans encountered and later worshipped as gods.
 
@@ -12,7 +12,7 @@ Each deity must feel powerful enough to have become the source of an ancient god
 
 ## Divine Anatomy Rule
 
-Titans are divine beings, not mortals in costume. Their visual design must communicate:
+Deities are divine beings, not mortals in costume. Their visual design must communicate:
 
 - Clearly non-human, extradimensional divine presence
 - Realm-integrated anatomy — the Realm's laws and materials are part of their living body, not worn as accessories
@@ -33,8 +33,8 @@ No god or goddess should exist only because they look cool. Every playable deity
 Current format:
 
 - 4 deities per playable Realm
-- 5 active deity slots in a chosen Titan
-- No playable non-Titan entries
+- 5 active deity slots in a chosen Deity
+- No playable non-Deity entries
 - No normal units
 
 The design goal is encounter-specific single-deity mastery. The player becomes one god or goddess, enters dangerous Mythos Gate-connected dungeon spaces, and fights multiple mythological enemies, elites, guardians, rival divine forces, mini-bosses, and bosses.

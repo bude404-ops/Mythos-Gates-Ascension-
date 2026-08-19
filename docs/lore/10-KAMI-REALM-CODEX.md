@@ -9,7 +9,7 @@ Kami deities do not conquer disorder; they purify it, name it, bind it, and let 
 ## Central Conflict
 Their secrecy protects sacred balance but makes allies fear what they cannot see.
 ## Realm Atmosphere
-The The Shrine-Path Archipelago is defined by ritual precision, sacred fog, moonlit shrines, storm calligraphy, and masks hiding divine intent. Its visual language is torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms.
+The Shrine-Path Archipelago is defined by ritual precision, sacred fog, moonlit shrines, storm calligraphy, and masks hiding divine intent. Its visual language is torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms.
 ## Major Landmarks
 - **The Mist Path Thousand Steps** — a campaign-facing location for Kami stories.
 - **The Moon-Veil Lake** — a campaign-facing location for Kami stories.

@@ -1,6 +1,6 @@
 # NPCs, Creatures, Maps, and Campaign Canon
 
-This document expands Mythos Gates: Ascension beyond the deity roster without breaking the Titan-only playable canon.
+This document expands Mythos Gates: Ascension beyond the deity roster without breaking the Deity-only playable canon.
 
 ## Director Ruling
 

@@ -9,7 +9,7 @@ The Asgardian Realm survives by binding power to promises. To them, a deity with
 ## Central Conflict
 Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
 ## Realm Atmosphere
-The The Storm-Rooted Aesir Holds is defined by iron oaths, rune storms, mountain fortresses, funeral fires, and honor under impossible weather. Its visual language is stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs.
+The Storm-Rooted Aesir Holds is defined by iron oaths, rune storms, mountain fortresses, funeral fires, and honor under impossible weather. Its visual language is stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs.
 ## Major Landmarks
 - **The Storm-Oath Bridge** — a campaign-facing location for Asgardian stories.
 - **The Rune-Mountain Halls** — a campaign-facing location for Asgardian stories.
@@ -24,10 +24,10 @@ The The Storm-Rooted Aesir Holds is defined by iron oaths, rune storms, mountain
 
 ## Campaign Hooks
 - Defend a storm bridge during a Gate surge.
-- recover a dead Titan oath from the Frost-Anvil.
+- recover a dead Deity oath from the Frost-Anvil.
 - choose whether an oath must be broken to save a Realm.
 
-## Titan Codex Hooks
+## Deity Codex Hooks
 ### The Odin (TG-TITAN-010)
 - **Role:** Defender
 - **Lore Function:** The Odin embodies the Asgardian answer to the Ascension Collapse: defender shaped into Realm doctrine.
@@ -75,4 +75,4 @@ The The Storm-Rooted Aesir Holds is defined by iron oaths, rune storms, mountain
 - **Visual Context:** Frame Sigrun Oathflare against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
 
 ## Director Ruling
-This chapter expands faction, Realm, and Titan presentation only. It does not create playable non-Titan entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.
+This chapter expands faction, Realm, and Deity presentation only. It does not create playable non-Deity entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.

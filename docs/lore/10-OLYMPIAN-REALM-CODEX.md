@@ -5,11 +5,11 @@
 **Gate:** The Laurel-Star Gate  
 **Status:** Canon Expanded
 ## Realm Thesis
-Olympians believe glory is the only force strong enough to resist oblivion. If the worlds must watch Titans fight, the fight must become legend.
+Olympians believe glory is the only force strong enough to resist oblivion. If the worlds must watch Deities fight, the fight must become legend.
 ## Central Conflict
 Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 ## Realm Atmosphere
-The The Marble Sky of Olympus is defined by radiant rivalry, heroic politics, marble arenas, divine pageantry, and beauty sharpened into war. Its visual language is white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds.
+The Marble Sky of Olympus is defined by radiant rivalry, heroic politics, marble arenas, divine pageantry, and beauty sharpened into war. Its visual language is white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds.
 ## Major Landmarks
 - **The Marble Sky Arena** — a campaign-facing location for Olympian stories.
 - **The Laurel Senate** — a campaign-facing location for Olympian stories.
@@ -27,7 +27,7 @@ The The Marble Sky of Olympus is defined by radiant rivalry, heroic politics, ma
 - survive a champion duel interrupted by Hollow spawn.
 - turn public spectacle into Realm defense.
 
-## Titan Codex Hooks
+## Deity Codex Hooks
 ### Zeus (TG-TITAN-019)
 - **Role:** Defender
 - **Lore Function:** Zeus embodies the Olympian answer to the Ascension Collapse: defender shaped into Realm doctrine.
@@ -75,4 +75,4 @@ The The Marble Sky of Olympus is defined by radiant rivalry, heroic politics, ma
 - **Visual Context:** Frame Eiren Crowned Horizon against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
 
 ## Director Ruling
-This chapter expands faction, Realm, and Titan presentation only. It does not create playable non-Titan entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.
+This chapter expands faction, Realm, and Deity presentation only. It does not create playable non-Deity entries, normal units, extradimensional factions, futuristic craft, or cross-faction strike-force rules.

@@ -1,7 +1,7 @@
 # Big Bot Global Asset Creation Contract
 
 ## Purpose
-This contract governs every asset Big Bot creates for Mythos Gates: Ascension. It applies to battlefields, artwork, Titans, character models, creatures, enemies, bosses, Gates, props, structures, VFX references, and mission thumbnails.
+This contract governs every asset Big Bot creates for Mythos Gates: Ascension. It applies to battlefields, artwork, Deities, character models, creatures, enemies, bosses, Gates, props, structures, VFX references, and mission thumbnails.
 
 Big Bot must create canon-locked, mission-aware, scale-correct assets. Big Bot must not create random cool assets that are disconnected from gameplay, mission specs, asset IDs, or the Master Scale Reference.
 
@@ -35,10 +35,10 @@ Big Bot must not:
 - Rename permanent asset IDs.
 - Invent new lore.
 - Invent new faction identity.
-- Change a character, Titan, enemy, map, or Gate role without approval.
+- Change a character, Deity, enemy, map, or Gate role without approval.
 - Add sci-fi drift where the faction does not support it.
 - Add firearms, modern corporate UI, readable generated text, watermarks, logos, or celebrity likeness drift.
-- Shrink Titans to make a scene fit.
+- Shrink Deities to make a scene fit.
 - Hide mission-critical silhouettes behind decoration.
 - Treat concept art as final source without approval.
 
@@ -90,7 +90,7 @@ Every battlefield must include or clearly support:
 - Gate placement if the map references a Gate.
 - Camera boundaries.
 - Top-down tactical readability.
-- Titan clearance zones.
+- Deity clearance zones.
 - Enemy clearance zones.
 - Gameplay scale reference.
 - Separate simplified collision mesh.
@@ -99,21 +99,21 @@ Every battlefield must include or clearly support:
 Battlefields must remain readable in mobile tactical view and must not become cluttered dioramas.
 
 
-## Titan visual identity law
-Titans are not robots, mechs, androids, cyborgs, powered armor suits, or normal humans in ornate armor. Every Titan must read as a living extradimensional power being whose body is fused with Realm matter, divine law, mythic anatomy, and faction symbolism. Hard surfaces are allowed only when they feel grown, forged by myth, carved from living stone, sacred metal, infernal bone, storm-iron hide, or celestial law — never mechanical plating on a robot chassis.
+## Deity visual identity law
+Deities are not robots, mechs, androids, cyborgs, powered armor suits, or normal humans in ornate armor. Every Deity must read as a living extradimensional power being whose body is fused with Realm matter, divine law, mythic anatomy, and faction symbolism. Hard surfaces are allowed only when they feel grown, forged by myth, carved from living stone, sacred metal, infernal bone, storm-iron hide, or celestial law — never mechanical plating on a robot chassis.
 
-Every Titan prompt must pull from:
+Every Deity prompt must pull from:
 
-- Titan lore and personality.
+- Deity lore and personality.
 - Faction culture and visual identity.
 - Realm codex visual language.
 - Gameplay role silhouette.
 - Ability names and equipment.
 - Master Scale Reference.
 
-Big Bot must reject any Titan that reads first as machine, superhero, normal humanoid, or generic monster before it reads as a faction-specific extradimensional Titan. Big Bot must also reject any Titan that reads as a blocky building, tower, fortress, stacked geometric shape, terrain chunk pile, or abstract architecture creature instead of a living character.
+Big Bot must reject any Deity that reads first as machine, superhero, normal humanoid, or generic monster before it reads as a faction-specific extradimensional Deity. Big Bot must also reject any Deity that reads as a blocky building, tower, fortress, stacked geometric shape, terrain chunk pile, or abstract architecture creature instead of a living character.
 
-## Character, Titan, creature, enemy, and boss model requirements
+## Character, Deity, creature, enemy, and boss model requirements
 Every living model must include or clearly support:
 
 - Permanent asset ID.
@@ -132,7 +132,7 @@ Every living model must include or clearly support:
 - LOD plan.
 - Collision or hit-volume notes.
 
-Titans must feel enormous in gameplay, not only in promotional renders. Normal enemies must occupy visibly less physical volume than Titans. Bosses must obey their own scale class and should not be resized casually for composition.
+Deities must feel enormous in gameplay, not only in promotional renders. Normal enemies must occupy visibly less physical volume than Deities. Bosses must obey their own scale class and should not be resized casually for composition.
 
 ## Artwork requirements
 Every artwork asset must state:
@@ -171,11 +171,11 @@ Core relative scale units:
 
 Scale rules:
 
-- Do not shrink Titans to fit the map.
-- Enlarge architecture and Gate landmarks around Titan scale.
+- Do not shrink Deities to fit the map.
+- Enlarge architecture and Gate landmarks around Deity scale.
 - Gates must be visible landmarks from major battlefield zones.
 - Tactical grid spaces represent decisions, not literal human-sized squares.
-- Titan attacks need enough space for arcs, shockwaves, dust, terrain reaction, and camera weight.
+- Deity attacks need enough space for arcs, shockwaves, dust, terrain reaction, and camera weight.
 - Scale must be checked at gameplay camera distance and mobile resolution.
 
 ## Mobile readability gates
@@ -223,7 +223,7 @@ Reject and revise if:
 
 - Asset does not match its mission or canon source.
 - Asset has no permanent ID.
-- Titan/character/enemy scale is wrong.
+- Deity/character/enemy scale is wrong.
 - Battlefield cannot support the mission objective.
 - Mobile readability fails.
 - Cover or decoration hides silhouettes.
@@ -252,7 +252,7 @@ The first proof target remains:
 This first battlefield is the test of the complete pipeline. Once it passes, the same contract applies to every following battlefield and model.
 
 ## Faction Visual Bible Requirement
-Before generating any faction-linked Titan, NPC, creature, battlefield, faction screen, or 3D asset, Big Bot must apply `data/faction-visual-bible.json` and `handoff/bigbot/FACTION_VISUAL_BIBLE.md`. The asset must show that faction through silhouette, armor construction, materials, texture, symbols, posture, and avoid-list compliance. Reject faction drift even if the image is otherwise high quality.
+Before generating any faction-linked Deity, NPC, creature, battlefield, faction screen, or 3D asset, Big Bot must apply `data/faction-visual-bible.json` and `handoff/bigbot/FACTION_VISUAL_BIBLE.md`. The asset must show that faction through silhouette, armor construction, materials, texture, symbols, posture, and avoid-list compliance. Reject faction drift even if the image is otherwise high quality.
 
 ### Aten Ra Source-Culture Rule
 For Aten Ra assets, do not design "Egyptian-inspired costumes." Treat the Solar Dominion of Khepra as the older source culture that human Egyptian religion, crowns, pylons, solar discs, scarabs, ankhs, funerary art, and animal-divinity later copied imperfectly. Each Aten Ra asset must show the specific myth function behind its design: Ra/Aten solar authority, Ma’at balance, Khepri renewal, Sutekh desert defense, Iset restoration, Maahes lion protection, or Amunet hidden power.

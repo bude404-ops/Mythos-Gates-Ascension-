@@ -52,10 +52,10 @@ An ancient dimensional gateway connecting Realms, ruins, sealed dimensions, batt
 
 An extradimensional divine civilization-domain shaped by mythic law, history, symbols, materials, and power. Each Realm is a dimension beyond Earth's normal reality, not a planet, galaxy, or place in outer space.
 
-## Titan
+## Deity
 
-A colossal extradimensional divine warform shaped by the laws, memories, symbols, materials, wounds, and sacred powers of its home Realm. Titans are the supreme divine beings of their civilizations — the originals that humans later worshipped as gods.
+A colossal extradimensional divine warform shaped by the laws, memories, symbols, materials, wounds, and sacred powers of its home Realm. Deities are the supreme divine beings of their civilizations — the originals that humans later worshipped as gods.
 
 ## Source Culture
 
-The real-world mythological tradition that each Realm and Titan draws from. Aten Ra draws from Egyptian mythology, Asgardian from Norse, Olympian from Greek, Kami from Japanese/Shinto, Tuatha from Celtic, Empyrean from Abrahamic/angelic, Infernal Dominion from infernal/demonic mythologies. Titans are the originals; human myths are the echoes.
+The real-world mythological tradition that each Realm and Deity draws from. Aten Ra draws from Egyptian mythology, Asgardian from Norse, Olympian from Greek, Kami from Japanese/Shinto, Tuatha from Celtic, Empyrean from Abrahamic/angelic, Infernal Dominion from infernal/demonic mythologies. Deities are the originals; human myths are the echoes.

@@ -7,7 +7,7 @@
 This campaign exists to establish four laws:
 
 1. Mythos Gates are sacred infrastructure, not machines.
-2. Titans are the playable force; NPCs guide, warn, interpret, or oppose.
+2. Deities are the playable force; NPCs guide, warn, interpret, or oppose.
 3. The Hollow is frightening because it does not simply kill — it empties identity.
 4. Every Realm response to the Reopening is rational from that Realm's own survival philosophy.
 
@@ -15,7 +15,7 @@ This campaign exists to establish four laws:
 
 A dead Mythos Gate begins breathing beneath broken threshold stone. Its first pulses do not open a road; they leak absence. Names vanish from tablets. Old battle marks become smooth. Survivors remember that someone stood beside them, but not who.
 
-Mesha Gate-Scribe arrives before the Creator's chosen Titan because the Aten Ra record-keepers still listen to abandoned solar pylons. She does not command Titans. She reads the damage and tells the Creator what the Gate is refusing to say.
+Mesha Gate-Scribe arrives before the Creator's chosen Deity because the Aten Ra record-keepers still listen to abandoned solar pylons. She does not command Deities. She reads the damage and tells the Creator what the Gate is refusing to say.
 
 The campaign should feel like a ritual performed under pressure. The player is not saving a village for sentiment. The player is preventing the map of reality from forgetting where a Gate once led.
 
