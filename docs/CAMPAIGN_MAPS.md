@@ -176,7 +176,7 @@ Each map consists of:
 | Cauldron Shrine | Shrine | None | None | Full HP heal + 30% REC buff for 60s |
 | Boss: The Crow-Crowned Geas Breaker | Boss | Thorn zones, geas zones, crow swarms | Boss: Crow-Crowned Geas Breaker (17000 HP) | "I was bound by a promise I never made. I broke it by becoming the one who made it." |
 
-### Boss: The Crow-Crowned Geas Breaker
+### Boss: The Crow-Crowned Geas Fracture
 | Phase | HP Range | Mechanics |
 |-------|---------|-----------|
 | 1 | 100-66% | Thorn lash (250 ATK, Bleed). Crow swarm (150 ATK, Blind 2s). Geas zone (disable random ability 3s). Summons 2x Thornbound Strangler. |
@@ -322,7 +322,7 @@ Each map consists of:
 ---
 
 ## WB ARENA 3: The Broken Gate
-**World Boss:** The Gate Guardian  
+**World Boss:** The Gate Counter  
 **Visual:** Colossal broken Mythos Gate, ancient stone plaza, petrified forest, amber-gold dust, dead mountains  
 
 | Feature | Detail |

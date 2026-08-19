@@ -193,7 +193,7 @@ Kami does not become a generic dungeon skin here. Torii-Moon Mirror Road is the 
 - **Dungeon Type:** living mound-gate maze and geas trial
 - **Mission Coverage:** 40 missions across Normal and Elite play
 - **Elite Encounter:** Sídhe Thorn Knight
-- **Boss Encounter:** The Crow-Crowned Geas Breaker
+- **Boss Encounter:** The Crow-Crowned Geas Fracture
 
 ### Room Chain
 - 1. **Silver-Root Court** — entry

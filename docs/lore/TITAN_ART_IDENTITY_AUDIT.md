@@ -67,7 +67,7 @@ Playable roster is now **28 Titans total**: **4 per faction**, **2 male gods and
 - Sexual identity: Female identity is locked through face, body proportions, armor shaping, posture, and silhouette: elegant feminine matriarch frame, stately posture, graceful waist and draped hips, contained strength
 - Revised prompt: MG-PROMPT-015
 
-## MG-TITAN-018 — Thor, Thunder Guardian
+## MG-TITAN-018 — Thor, Thunder Counter
 - Status: PASS
 - Sex: Male
 - Faction: Asgardian

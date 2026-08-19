@@ -29,22 +29,22 @@ The Shrine-Path Archipelago is defined by ritual precision, sacred fog, moonlit 
 
 ## Deity Codex Hooks
 ### Amaterasu Spirit-Sun (MG-TITAN-028)
-- **Role:** Defender
+- **Role:** Endurance
 - **Lore Function:** Amaterasu Spirit-Sun embodies the Kami answer to the Ascension Collapse: defender shaped into Realm doctrine.
 - **Chapter Hook:** When Amaterasu Spirit-Sun enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Amaterasu Spirit-Sun against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
 ### Tsukuyomi Moon-Veil (MG-TITAN-029)
-- **Role:** Battery
+- **Role:** Conduit
 - **Lore Function:** Tsukuyomi Moon-Veil embodies the Kami answer to the Ascension Collapse: battery shaped into Realm doctrine.
 - **Chapter Hook:** When Tsukuyomi Moon-Veil enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Tsukuyomi Moon-Veil against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
 ### Susanoo Storm Script (MG-TITAN-032)
-- **Role:** Controller
+- **Role:** Dominion
 - **Lore Function:** Susanoo Storm Script embodies the Kami answer to the Ascension Collapse: controller shaped into Realm doctrine.
 - **Chapter Hook:** When Susanoo Storm Script enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Susanoo Storm Script against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
 ### Izanami Shrine Tide (MG-TITAN-033)
-- **Role:** Breaker
+- **Role:** Fracture
 - **Lore Function:** Izanami Shrine Tide embodies the Kami answer to the Ascension Collapse: breaker shaped into Realm doctrine.
 - **Chapter Hook:** When Izanami Shrine Tide enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Izanami Shrine Tide against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
@@ -64,12 +64,12 @@ The Shrine-Path Archipelago is defined by ritual precision, sacred fog, moonlit 
 - **Chapter Hook:** When Onimaru Red Seal enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Onimaru Red Seal against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
 ### Korin Mist Path (MG-TITAN-033)
-- **Role:** Guardian
+- **Role:** Counter
 - **Lore Function:** Korin Mist Path embodies the Kami answer to the Ascension Collapse: guardian shaped into Realm doctrine.
 - **Chapter Hook:** When Korin Mist Path enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Korin Mist Path against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.
 ### Yamabito Stone Prayer (MG-TITAN-028)
-- **Role:** Assassin
+- **Role:** Shadow
 - **Lore Function:** Yamabito Stone Prayer embodies the Kami answer to the Ascension Collapse: assassin shaped into Realm doctrine.
 - **Chapter Hook:** When Yamabito Stone Prayer enters a chapter, the scene should test Kami's core tension: Their secrecy protects sacred balance but makes allies fear what they cannot see.
 - **Visual Context:** Frame Yamabito Stone Prayer against torii gates, lacquer red seals, moonwater, ink lightning, shrine armor, ghostly blossom storms while preserving their individual silhouette and role readability.

@@ -26,7 +26,7 @@ Player objective: defeat the unstable Gate encounter using a selected one-active
 Enemy forces:
 
 - Hollow Memory-Eater
-- Gateborn Rift-Bruiser
+- Gateborn Rift-Fracture
 - Forgotten Oath Remnant
 
 ### Protected canon locks

@@ -32,7 +32,7 @@ The root network opens into the oldest part of Avalora — a scar from the origi
 
 **Mission Focus:** Scar memory. Ghost copies of lost deities. The terrain itself is grieving. The deity must fight through the forest's trauma without becoming part of it.
 
-### Chapter 5 — The Crow-Crowned Geas Breaker
+### Chapter 5 — The Crow-Crowned Geas Fracture
 The Gate's final room is inside the deepest root — the heartwood of Avalora. The Crow-Crowned Geas Breaker waits there: a Hollow entity that has consumed enough Tuatha geas law to break any promise the deity makes. It does not attack directly; it breaks the deity's oaths, turning every promise of protection, restoration, and healing into a weapon used against the one who made it. The deity must win without making any promises — or win by making a promise so old and so deep that the Geas Breaker cannot find its roots to break it.
 
 **Mission Focus:** Final confrontation. Boss: The Crow-Crowned Geas Breaker. Victory condition: the deity must win by relying on the terrain itself rather than their own power. The forest chooses to hold the Gate. The deity does not command it — they ask.

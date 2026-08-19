@@ -30,7 +30,7 @@
 **Faction Skin:** Electrum-Gold  
 **Faction Aura:** Amber-Gold  
 
-### 001. Aten-Ra — Defender
+### 001. Aten-Ra — Endurance
 **Mythology:** Ra/Aten/Ma'at — the noon sun authority, living solar judgment  
 | Stat | Value |
 |------|-------|
@@ -52,7 +52,7 @@
 **Ability 3 — Noon Verdict:** Radiates Solar burst. 400 ATK AoE. Marks all hit enemies for +25% damage. 14s cooldown.  
 **Ultimate — Living Sun:** Transforms into solar form for 8s. All attacks become AoE Solar. +50% ATK. Immune to status effects.  
 
-### 002. Sutekh — Battery
+### 002. Sutekh — Conduit
 **Mythology:** Khepri — scarab dawn engine, renewal and rebirth  
 | Stat | Value |
 |------|-------|
@@ -74,7 +74,7 @@
 **Ability 3 — Dawn Burst:** Detonate stored solar energy. 350 ATK AoE. Scales with current DE. 12s cooldown.  
 **Ultimate — Rebirth:** Full HP heal + DE refill. Next 3 abilities have 0 cooldown for 6s.  
 
-### 003. Iset — Controller
+### 003. Iset — Dominion
 **Mythology:** Nephthys/Duat — necropolis dawn, horizon threshold judge  
 | Stat | Value |
 |------|-------|
@@ -96,7 +96,7 @@
 **Ability 3 — Necropolis Verdict:** All enemies in zone take 300 ATK Spirit damage. If killed, zone expands. 11s cooldown.  
 **Ultimate — Between Worlds:** Freezes time for 3s. Only Iset can act. All enemies Stunned.  
 
-### 004. Amunet — Breaker
+### 004. Amunet — Fracture
 **Mythology:** Ma'at weighing/punishment — prism of divine verdict  
 | Stat | Value |
 |------|-------|
@@ -125,7 +125,7 @@
 **Faction Skin:** Warm Gunmetal  
 **Faction Aura:** Blue-White Lightning  
 
-### 005. Odin — Defender
+### 005. Odin — Endurance
 **Mythology:** Odin — Odin, wisdom, war, sacrifice  
 | Stat | Value |
 |------|-------|
@@ -147,7 +147,7 @@
 **Ability 3 — Sacrifice Eye:** Lose 15% max HP. Gain +80% ATK for 5s. Cannot die during this window. 14s cooldown.  
 **Ultimate — Throne of Storms:** Summon a storm throne. All enemies within 8m take 60 ATK/s Storm damage. Odin is immune to CC. Lasts 8s.  
 
-### 006. Thor — Battery
+### 006. Thor — Conduit
 **Mythology:** Thor — thunder, strength, protection  
 | Stat | Value |
 |------|-------|
@@ -169,7 +169,7 @@
 **Ability 3 — Lightning Lance:** Long-range Storm beam. 380 ATK. Pierces all enemies in line. 12s cooldown.  
 **Ultimate — God of Thunder:** Thor channels lightning for 6s. All attacks become AoE Storm +30% ATK. Storm chain lightning on every hit.  
 
-### 007. Frigg — Controller
+### 007. Frigg — Dominion
 **Mythology:** Heimdall — guardian, vigilance, the bridge  
 | Stat | Value |
 |------|-------|
@@ -191,7 +191,7 @@
 **Ability 3 — Vigilant Strike:** 320 ATK to Marked target. If target is Marked, consumes mark for +100% damage. 10s cooldown.  
 **Ultimate — Bifrost Shatter:** Shatters the ground in a massive line. 500 ATK Storm. All enemies in path are Stunned 3s.  
 
-### 008. Freyja — Breaker
+### 008. Freyja — Fracture
 **Mythology:** Freyja — Vanir goddess, seiðr magic, war/love  
 | Stat | Value |
 |------|-------|
@@ -220,7 +220,7 @@
 **Faction Skin:** Living Marble  
 **Faction Aura:** Gold-Blue Skyfire  
 
-### 009. Zeus — Defender
+### 009. Zeus — Endurance
 **Mythology:** Zeus — sky father, lightning, sovereignty  
 | Stat | Value |
 |------|-------|
@@ -242,7 +242,7 @@
 **Ability 3 — Sky Throne:** Create a zone. Zeus is immune to CC inside. Enemies take 100 ATK/s Divine. 14s cooldown.  
 **Ultimate — Olympus Decree:** 700 ATK Divine AoE. All enemies are Stunned 2.5s. Zeus is fully healed.  
 
-### 010. Athena — Battery
+### 010. Athena — Conduit
 **Mythology:** Apollo — light, prophecy, archery, music  
 | Stat | Value |
 |------|-------|
@@ -264,7 +264,7 @@
 **Ability 3 — Chorus Strike:** 3 rapid arrows. 150 ATK each. Each applies Burn (30 ATK/s for 3s). 10s cooldown.  
 **Ultimate — Delphic Hymn:** AoE Divine wave. 500 ATK. All enemies are Marked + Burned. Athena refills DE.  
 
-### 011. Artemis — Controller
+### 011. Artemis — Dominion
 **Mythology:** Athena — wisdom, strategy, just war  
 | Stat | Value |
 |------|-------|
@@ -286,7 +286,7 @@
 **Ability 3 — Spear of Wisdom:** 350 ATK line-pierce. Stuns first enemy hit for 2s. 11s cooldown.  
 **Ultimate — Strategos:** For 6s, all enemy telegraphs are visible. Artemis gains +50% ATK and all abilities cost 50% DE.  
 
-### 012. Ares — Breaker
+### 012. Ares — Fracture
 **Mythology:** Ares — war, violence, courage  
 | Stat | Value |
 |------|-------|
@@ -315,7 +315,7 @@
 **Faction Skin:** Living Lacquer  
 **Faction Aura:** Foxfire Blue  
 
-### 013. Amaterasu — Defender
+### 013. Amaterasu — Endurance
 **Mythology:** Amaterasu — sun goddess, the shining heaven  
 | Stat | Value |
 |------|-------|
@@ -337,7 +337,7 @@
 **Ability 3 — Sun Disc Throw:** 380 ATK AoE Spirit. Blinds enemies (50% miss chance) for 3s. 14s cooldown.  
 **Ultimate — Heaven's Light:** Massive Spirit burst. 650 ATK. Heals Amaterasu for 25% max HP. Blinds all enemies 3s.  
 
-### 014. Tsukuyomi — Battery
+### 014. Tsukuyomi — Conduit
 **Mythology:** Tsukuyomi — moon god, night, order  
 | Stat | Value |
 |------|-------|
@@ -359,7 +359,7 @@
 **Ability 3 — Eclipse:** 350 ATK AoE. During Waning, also Silences enemies for 2s. 12s cooldown.  
 **Ultimate — Tsukuyomi's Domain:** 6s. Night falls. All enemies lose 30% accuracy. Tsukuyomi gains +50% ATK and full DE refill.  
 
-### 015. Susanoo — Controller
+### 015. Susanoo — Dominion
 **Mythology:** Raijin — thunder, storms, chaos  
 | Stat | Value |
 |------|-------|
@@ -381,7 +381,7 @@
 **Ability 3 — Raijin's Fury:** 340 ATK Storm to all enemies in a large cone. 11s cooldown.  
 **Ultimate — Tempest God:** 8s. Storm fills the room. All enemies take 100 ATK/s Storm. Random chain lightning every 2s.  
 
-### 016. Izanami — Breaker
+### 016. Izanami — Fracture
 **Mythology:** Susanoo — storm god, the impetuous  
 | Stat | Value |
 |------|-------|
@@ -410,7 +410,7 @@
 **Faction Skin:** Living Wood-Bark  
 **Faction Aura:** Silver-Green Mist  
 
-### 017. Dagda — Defender
+### 017. Dagda — Endurance
 **Mythology:** The Dagda — good god, abundance, life/death  
 | Stat | Value |
 |------|-------|
@@ -432,7 +432,7 @@
 **Ability 3 — Earth Pillar:** 380 ATK Nature. Spawns a stone pillar that blocks movement and projectiles. 14s cooldown.  
 **Ultimate — Cauldron of Rebirth:** Full heal. Next death within 10s triggers instant respawn at 50% HP.  
 
-### 018. Brigid — Battery
+### 018. Brigid — Conduit
 **Mythology:** Lugh — many-skilled, light, champion  
 | Stat | Value |
 |------|-------|
@@ -454,7 +454,7 @@
 **Ability 3 — Solas Burst:** 350 ATK Nature AoE. Generates 80 DE if it hits 3+ enemies. 11s cooldown.  
 **Ultimate — Lugh Samildánach:** 8s. All abilities cost 0 DE. Every ability cast grants +15% ATK (stacking).  
 
-### 019. Morrígan — Controller
+### 019. Morrígan — Dominion
 **Mythology:** Brigid — flame, poetry, healing, forge  
 | Stat | Value |
 |------|-------|
@@ -476,7 +476,7 @@
 **Ability 3 — Poetic Fire:** 320 ATK AoE. All enemies with Burn take +50% damage from this ability. 11s cooldown.  
 **Ultimate — Brigid's Hearth:** 10s. Creates a sacred zone. Morrígan and allies heal 5% HP/s. Enemies take 150 ATK/s.  
 
-### 020. Lugh — Breaker
+### 020. Lugh — Fracture
 **Mythology:** Morrigan — phantom queen, war, fate, death  
 | Stat | Value |
 |------|-------|
@@ -505,7 +505,7 @@
 **Faction Skin:** Living Light  
 **Faction Aura:** White-Gold Radiance  
 
-### 021. Michael — Defender
+### 021. Michael — Endurance
 **Mythology:** Michael — warrior archangel, divine protector  
 | Stat | Value |
 |------|-------|
@@ -527,7 +527,7 @@
 **Ability 3 — Judgement Cut:** 380 ATK Divine. Stuns target for 1.5s. 14s cooldown.  
 **Ultimate — Seraphic Wrath:** 650 ATK Divine AoE. All enemies Stunned 2s. Michael gains invulnerability for 3s.  
 
-### 022. Gabriel — Battery
+### 022. Gabriel — Conduit
 **Mythology:** Gabriel — messenger, annunciation, divine voice  
 | Stat | Value |
 |------|-------|
@@ -549,7 +549,7 @@
 **Ability 3 — Annunciation:** 350 ATK Divine to Marked targets. Refunds 50 DE if it hits Marked enemy. 10s cooldown.  
 **Ultimate — Gabriel's Proclamation:** 550 ATK Divine AoE. All enemies Marked + Silenced 3s. Gabriel refills DE.  
 
-### 023. Raphael — Controller
+### 023. Raphael — Dominion
 **Mythology:** Raphael — healer, guide, divine medicine  
 | Stat | Value |
 |------|-------|
@@ -571,7 +571,7 @@
 **Ability 3 — Guiding Light:** 320 ATK Divine line. All enemies hit are Blinded for 3s. 11s cooldown.  
 **Ultimate — Raphael's Sanctuary:** 8s zone. Raphael is immune to damage. Heals 5% HP/s. Enemies inside take 100 ATK/s Divine.  
 
-### 024. Uriel — Breaker
+### 024. Uriel — Fracture
 **Mythology:** Uriel — fire of God, punishment, repentance  
 | Stat | Value |
 |------|-------|
@@ -600,7 +600,7 @@
 **Faction Skin:** Living Ash  
 **Faction Aura:** Ember-Red Anti-Radiance  
 
-### 025. Lucifer — Defender
+### 025. Lucifer — Endurance
 **Mythology:** Lucifer — morning star, fallen light, pride  
 | Stat | Value |
 |------|-------|
@@ -622,7 +622,7 @@
 **Ability 3 — Fallen Crown:** 380 ATK Infernal AoE. All enemies are Feared for 1.5s. 14s cooldown.  
 **Ultimate — Light Devourer:** 700 ATK Infernal. Absorbs all enemy buffs. Lucifer heals for each buff absorbed. 8s aura of darkness.  
 
-### 026. Asmodeus — Battery
+### 026. Asmodeus — Conduit
 **Mythology:** Asmodeus — king of demons, desire, destruction  
 | Stat | Value |
 |------|-------|
@@ -644,7 +644,7 @@
 **Ability 3 — Hellfire Nova:** 350 ATK Infernal AoE. Applies Burn. 12s cooldown.  
 **Ultimate — King of Demons:** 8s. All abilities cost 0 DE. Every ability cast spawns a hellfire nova (200 ATK AoE).  
 
-### 027. Lilith — Controller
+### 027. Lilith — Dominion
 **Mythology:** Lilith — night, seduction, independence  
 | Stat | Value |
 |------|-------|
@@ -666,7 +666,7 @@
 **Ability 3 — Seduction:** 320 ATK Infernal to nearest enemy. Charms for 3s (fights for Lilith). 11s cooldown.  
 **Ultimate — Lilith's Embrace:** 8s. Night falls. All enemies are Charming. Lilith gains +50% ATK and lifesteal 25%.  
 
-### 028. Naamah — Breaker
+### 028. Naamah — Fracture
 **Mythology:** Naamah — succubus, desire, corruption  
 | Stat | Value |
 |------|-------|
@@ -848,7 +848,7 @@
 **Ability — Shatter Mirror:** 240 ATK. If it copies an ability, next attack deals +100%.  
 **Behavior:** Unpredictable. Mirrors deity's own kit back at them.  
 
-### 014. Hollow Root-Breaker — Elite
+### 014. Hollow Root-Fracture — Elite
 | Stat | Value |
 |------|-------|
 | HP | 7000 |
@@ -1055,7 +1055,7 @@
 **Ability — Purification Seal**: Disables one random ability for 3s.  
 **Behavior:** Controller. Binds and seals abilities. Sets up for other troops.  
 
-### 030. Kami Oni Iron-Breaker — Elite
+### 030. Kami Oni Iron-Fracture — Elite
 | Stat | Value |
 |------|-------|
 | HP | 7000 |
@@ -1263,7 +1263,7 @@
 
 ---
 
-### WB-3. The Gate Guardian
+### WB-3. The Gate Counter
 **Faction:** Pre-Gate (Unaligned)  
 **Threat Tier:** World Boss  
 **Combat Role:** WORLD BOSS  

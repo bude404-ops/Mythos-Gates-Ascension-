@@ -681,7 +681,7 @@ Every chapter has 6 dialogue beats:
 **VICTORY:**
 > "The Behemoth is still. The void pauses. The wound does not heal. The wound waits."
 
-### World Boss 3: The Gate Guardian
+### World Boss 3: The Gate Counter
 **NPC:** Gate Guardian (rare speech)  
 
 **INTRO:**

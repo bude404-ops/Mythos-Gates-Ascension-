@@ -29,22 +29,22 @@ The White Citadel Above Law is defined by angelic order, impossible architecture
 
 ## Deity Codex Hooks
 ### Michael (MG-TITAN-046)
-- **Role:** Defender
+- **Role:** Endurance
 - **Lore Function:** Michael embodies the Empyrean answer to the Ascension Collapse: defender shaped into Realm doctrine.
 - **Chapter Hook:** When Michael enters a chapter, the scene should test Empyrean's core tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.
 - **Visual Context:** Frame Michael against white-gold citadels, halo geometry, luminous wings, cathedral engines, glass floors over starless voids while preserving their individual silhouette and role readability.
 ### Gabriel Dawnborn Axis (MG-TITAN-047)
-- **Role:** Battery
+- **Role:** Conduit
 - **Lore Function:** Gabriel Dawnborn Axis embodies the Empyrean answer to the Ascension Collapse: battery shaped into Realm doctrine.
 - **Chapter Hook:** When Gabriel Dawnborn Axis enters a chapter, the scene should test Empyrean's core tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.
 - **Visual Context:** Frame Gabriel Dawnborn Axis against white-gold citadels, aura geometry, luminous wings, cathedral engines, glass floors over starless voids while preserving their individual silhouette and role readability.
 ### Raphael Radiant Spear (MG-TITAN-048)
-- **Role:** Controller
+- **Role:** Dominion
 - **Lore Function:** Raphael Radiant Spear embodies the Empyrean answer to the Ascension Collapse: controller shaped into Realm doctrine.
 - **Chapter Hook:** When Raphael Radiant Spear enters a chapter, the scene should test Empyrean's core tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.
 - **Visual Context:** Frame Raphael Radiant Spear against white-gold citadels, aura geometry, luminous wings, cathedral engines, glass floors over starless voids while preserving their individual silhouette and role readability.
 ### Uriel Law Warden (MG-TITAN-053)
-- **Role:** Breaker
+- **Role:** Fracture
 - **Lore Function:** Uriel Law Warden embodies the Empyrean answer to the Ascension Collapse: breaker shaped into Realm doctrine.
 - **Chapter Hook:** When Uriel Law Warden enters a chapter, the scene should test Empyrean's core tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.
 - **Visual Context:** Frame Uriel Law Warden against white-gold citadels, aura geometry, luminous wings, cathedral engines, glass floors over starless voids while preserving their individual silhouette and role readability.
@@ -64,12 +64,12 @@ The White Citadel Above Law is defined by angelic order, impossible architecture
 - **Chapter Hook:** When Vespera Mercy Blade enters a chapter, the scene should test Empyrean's core tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.
 - **Visual Context:** Frame Vespera Mercy Blade against white-gold citadels, aura geometry, luminous wings, cathedral engines, glass floors over starless voids while preserving their individual silhouette and role readability.
 ### Axiom Gate Choir (MG-TITAN-053)
-- **Role:** Guardian
+- **Role:** Counter
 - **Lore Function:** Axiom Gate Choir embodies the Empyrean answer to the Ascension Collapse: guardian shaped into Realm doctrine.
 - **Chapter Hook:** When Axiom Gate Choir enters a chapter, the scene should test Empyrean's core tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.
 - **Visual Context:** Frame Axiom Gate Choir against white-gold citadels, aura geometry, luminous wings, cathedral engines, glass floors over starless voids while preserving their individual silhouette and role readability.
 ### Theon Still Horizon (MG-TITAN-046)
-- **Role:** Assassin
+- **Role:** Shadow
 - **Lore Function:** Theon Still Horizon embodies the Empyrean answer to the Ascension Collapse: assassin shaped into Realm doctrine.
 - **Chapter Hook:** When Theon Still Horizon enters a chapter, the scene should test Empyrean's core tension: Their mercy is real, but so is their judgment. Allies fear becoming evidence in an Empyrean trial.
 - **Visual Context:** Frame Theon Still Horizon against white-gold citadels, aura geometry, luminous wings, cathedral engines, glass floors over starless voids while preserving their individual silhouette and role readability.

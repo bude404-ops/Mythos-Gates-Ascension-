@@ -29,22 +29,22 @@ The Marble Sky of Olympus is defined by radiant rivalry, heroic politics, marble
 
 ## Deity Codex Hooks
 ### Zeus (MG-TITAN-019)
-- **Role:** Defender
+- **Role:** Endurance
 - **Lore Function:** Zeus embodies the Olympian answer to the Ascension Collapse: defender shaped into Realm doctrine.
 - **Chapter Hook:** When Zeus enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Zeus against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
 ### Artemis (MG-TITAN-022)
-- **Role:** Battery
+- **Role:** Conduit
 - **Lore Function:** Artemis embodies the Olympian answer to the Ascension Collapse: battery shaped into Realm doctrine.
 - **Chapter Hook:** When Artemis enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Artemis against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
 ### Ares (MG-TITAN-023)
-- **Role:** Controller
+- **Role:** Dominion
 - **Lore Function:** Ares embodies the Olympian answer to the Ascension Collapse: controller shaped into Realm doctrine.
 - **Chapter Hook:** When Ares enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Ares against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
 ### Ares Laurel Flame (MG-TITAN-022)
-- **Role:** Breaker
+- **Role:** Fracture
 - **Lore Function:** Ares Laurel Flame embodies the Olympian answer to the Ascension Collapse: breaker shaped into Realm doctrine.
 - **Chapter Hook:** When Ares Laurel Flame enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Ares Laurel Flame against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
@@ -64,12 +64,12 @@ The Marble Sky of Olympus is defined by radiant rivalry, heroic politics, marble
 - **Chapter Hook:** When Helior Bronze Summit enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Helior Bronze Summit against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
 ### Pallas Oath-Spear (MG-TITAN-026)
-- **Role:** Guardian
+- **Role:** Counter
 - **Lore Function:** Pallas Oath-Spear embodies the Olympian answer to the Ascension Collapse: guardian shaped into Realm doctrine.
 - **Chapter Hook:** When Pallas Oath-Spear enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Pallas Oath-Spear against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
 ### Eiren Crowned Horizon (MG-TITAN-019)
-- **Role:** Assassin
+- **Role:** Shadow
 - **Lore Function:** Eiren Crowned Horizon embodies the Olympian answer to the Ascension Collapse: assassin shaped into Realm doctrine.
 - **Chapter Hook:** When Eiren Crowned Horizon enters a chapter, the scene should test Olympian's core tension: Glory unites them in public and divides them in private; every victory creates a jealous shadow.
 - **Visual Context:** Frame Eiren Crowned Horizon against white marble, gold laurel, bronze weapons, violet heavens, amphitheaters suspended above clouds while preserving their individual silhouette and role readability.
