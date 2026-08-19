@@ -9,7 +9,7 @@ Players do not control the deities directly. Each player channels an **Avatar** 
 - **Death**: If an avatar falls, it respawns at the deity's domain. The deity is unharmed. Progression is preserved with a 10-20% Belief/Influence penalty.
 - **Scale**: Avatars maintain god-scale proportions in all realms — they tower over buildings, landscapes, and mortal structures.
 - **Solo Combat**: Each avatar fights alone. No allies, no healing companions. Faith triggers are self-only.
-- **Realm Advantage**: Avatars fight with full power in their deity's home realm. In enemy realms, they suffer penalties. Earth is neutral ground.
+- **Earth Campaigns**: All missions take place in the deity's mythological homeland on ancient Earth. Earth is neutral ground — no faction advantage or penalty.
 
 
 The Asgardian campaign begins when the Storm-Oath Bridge answers the reopened Gates with thunder instead of prayer. Valhalla does not treat courage as mood or spectacle. Courage is a vow, and a vow has weight.

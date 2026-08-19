@@ -20,7 +20,7 @@ An Avatar is not the Deity. An Avatar is a fraction of the Deity's will, identit
 
 - **Progression makes sense** — You level up the Avatar, not the god. Belief and Influence are the resources that strengthen the Avatar's connection to its Deity.
 - **Death is meaningful but not final** — If the Avatar falls, the Deity survives. The player respawns at their Deity's domain with a penalty.
-- **Realm advantage creates strategy** — Avatars are strongest in their home Realm, weaker in enemy Realms, and balanced on Earth.
+- **Earth is neutral ground** — all campaign missions take place in each faction's mythological homeland on ancient Earth. No faction advantage or penalty.
 - **Scale is maintained** — Avatars are still colossal (god-scale), even though they are not the full Deity. The power difference is shown through aura intensity, ability charges, and cooldowns, not physical size.
 
 ## Divine Anatomy Rule
@@ -32,15 +32,15 @@ Avatars project the divine anatomy of their source Deity. The visual design must
 - Colossal scale that makes ancient architecture look small
 - Individual mythological identity tied to their source deity
 - No halos, no text, no readable symbols — pure divine form
-- Aura intensity varies by Realm (brightest at home, dimmer in enemy territory, medium on Earth)
+- Aura intensity is full on Earth — the Gate's energy amplifies divine power equally for all factions
 
 ## Avatar Scale Rule (Option A)
 
 Avatars remain **GOD-SCALE** everywhere regardless of Realm. The power difference between Realms is shown through:
 
-- **Aura intensity** — Full radiance at home, dimmer in enemy territory, medium on Earth
+- **Aura intensity** — Full radiance on Earth; the Gate amplifies all divine energy equally
 - **Ability charges** — More charges available in home Realm, fewer in enemy Realm
-- **Cooldowns** — Shorter at home, longer in enemy territory
+- **Cooldowns** — Standard on Earth; no realm modifiers in campaign
 - **NOT physical size** — The Avatar is always colossal
 
 ### Scale by Realm
@@ -77,28 +77,7 @@ When an Avatar dies:
 
 Death is a setback, not an ending. The Deity endures. The Avatar is rebuilt.
 
-## Realm Advantage System
 
-The Avatar's power is modified by which Realm it fights in:
-
-### Home Realm Advantage
-- Avatar at maximum power
-- Full aura, full ability charges, shortest cooldowns
-- Home faction enemies are YOUR allies — you are the apex
-- This is where you farm, level, and prepare
-
-### Enemy Realm Disadvantage
-- Avatar is weakened — dimmer aura, fewer charges, longer cooldowns
-- Home faction enemies are stronger (their turf, their advantage)
-- Higher risk but greater rewards (more Belief and Influence for invading)
-- Invading enemy territory is the high-stakes play
-
-### Earth (Neutral)
-- No faction has home advantage
-- All Avatars manifest at balanced power
-- PvP and PvE on even ground
-- Hollow invasions create dungeons here
-- This is the proving ground and the crossroads
 
 ## Lore-to-Gameplay Rule
 

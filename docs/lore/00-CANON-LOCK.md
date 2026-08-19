@@ -98,4 +98,4 @@ The extradimensional civilization-domains are called "Realms."
 - God-scale visuals maintained in all realms (Option A) — Avatars tower over city-scale structures.
 - Combat is **solo-only**. No ally or healing triggers.
 - Each faction has a Faction Base belief bonus + Deity-specific faith path triggers.
-- Earth is neutral territory for dungeons and cross-realm combat.
+- Earth is neutral territory for all campaign missions. Faction realms are event-only.

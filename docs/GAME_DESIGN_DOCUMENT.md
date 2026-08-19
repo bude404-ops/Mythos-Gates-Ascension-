@@ -20,7 +20,7 @@ Select Deity → Project Avatar → Enter Dungeon Route (home, enemy, or Earth) 
 1. **One Avatar, One Deity** — Single-avatar mastery. You command the Avatar of a god. No squad mechanics. The Deity is safe; the Avatar fights.
 2. **Mythological Authenticity** — Every deity, creature, and Realm is drawn from real mythology, refracted through grim-dark divine lens.
 3. **Route Variety** — Same dungeon plays completely differently per deity. 28 deities = 28 playthroughs per route.
-4. **Realm Advantage** — Home turf = full power. Enemy turf = weakened but greater rewards. Earth = neutral, balanced ground.
+4. **Earth Campaigns** — All missions take place in each faction's mythological homeland on ancient Earth. Neutral ground, no faction advantage. Faction realms are event-only.
 5. **Sacred Stakes** — No jokes. No meta. Ancient civilizations handling sacred catastrophe.
 6. **Progressive Depth** — Easy to pick up, deep to master. Combat is readable on mobile but rewards skill.
 
@@ -99,17 +99,7 @@ Every Avatar has:
 | Boss | Multi-phase, room mechanics, lore-driven encounters |
 | World Boss | Server-event scale, unique mechanics, legendary |
 
-### 2.8 Realm Advantage Modifiers
 
-When an Avatar fights outside its home Realm, combat stats are modified:
-
-| Territory | ATK Modifier | DEF Modifier | Cooldown Modifier | Reward Modifier |
-|-----------|-------------|-------------|-------------------|-----------------|
-| Home Realm | +0% | +0% | +0% | Standard |
-| Enemy Realm | -20% | -15% | +25% | +50% Belief/Influence |
-| Earth (Neutral) | +0% | +0% | +0% | +25% Belief/Influence |
-
----
 
 ## 3. PROGRESSION SYSTEM
 
@@ -213,7 +203,7 @@ Each route contains:
 | Lore Detour | Optional side-path with story rewards, minimal combat |
 | Elite Lock | Room that requires specific role/ability to progress |
 | Earth Dungeon | Neutral-territory Hollow invasion — balanced, no faction advantage |
-| Cross-Realm Raid | Avatar invades enemy Realm territory — high risk, high reward |
+| Realm Raid | Limited-time event in a faction realm — high risk, high reward |
 
 ### 4.4 Difficulty Tiers
 | Tier | Name | Modifier |
@@ -283,13 +273,7 @@ Total stat budget per Avatar = 1000 points (base). Role determines distribution:
 - Battery: DE/Recovery heavy
 - (etc. per role)
 
-### 6.3 Realm Advantage Modifiers (Stat Impact)
-When fighting outside home Realm, Avatar base stats are modified:
-- **Home Realm:** Full stats, no penalty
-- **Enemy Realm:** -20% ATK, -15% DEF, +25% cooldowns (but +50% Belief/Influence rewards)
-- **Earth (Neutral):** Full stats, no penalty, +25% Belief/Influence rewards
 
----
 
 ## 7. VISUAL SCALE
 
@@ -307,10 +291,10 @@ Scale cues to communicate god-scale:
 
 ### 7.2 Power Visual Indicators (Not Size)
 Power differences between Realms are shown through:
-- **Aura intensity:** Full radiance at home, dimmer in enemy territory, medium on Earth
-- **Ability charge availability:** More charges at home, fewer in enemy territory
-- **Cooldown length:** Shorter at home, longer in enemy territory
-- **Particle effects:** More intense at home, reduced in enemy territory
+- **Aura intensity:** Full radiance on Earth — Gate energy amplifies all divine power equally
+- **Ability charge availability:** Standard on Earth — no realm modifiers
+- **Cooldown length:** Standard on Earth — no realm modifiers
+- **Particle effects:** Full intensity on Earth — Gate amplifies all VFX equally
 - **NOT physical size** — the Avatar is always colossal
 
 ---

@@ -1,5 +1,23 @@
 # Changelog
 
+## [2026-08-19] — Mythological Earth Campaigns + Full Audit
+
+- **Campaign restructure**: ALL 280 missions now take place in each faction's mythological homeland on ancient Earth
+  - Aten Ra → Ancient Egypt (~2500 BCE): Nile Delta → Desert Necropolis → Temple Complex → Sacred Desert → Great Pyramid
+  - Olympian → Ancient Greece (~500 BCE): Aegean Coast → Acropolis → Oracle's Mountain → Olympia → Mount Olympus Base
+  - Kami → Ancient Japan (~700 CE): Coastal Shrine → Bamboo Temple → Mountain Pass → Imperial Shrine → Mount Fuji
+  - Tuatha → Ancient Ireland (~1000 BCE): Misted Coastline → Sacred Grove → Hill Fort → Passage Tombs → Giant's Causeway
+  - Empyrean → Ancient Mesopotamia (~3000 BCE): Ziggurat Steps → Hanging Gardens → Tablet Archive → Desert Temple → Tower of Babel
+  - Infernal → Ancient Underworld/Kur (~3000 BCE): Cursed Ruins → Underworld Gates → Throne of Ash → Lake of Fire → The Abyss
+  - Asgardian → Ancient Scandinavia (~500 CE): Frozen Fjord → Burial Mounds → Thingvellir → Great Forest → Yggdrasil Root
+- **Enemy**: The Hollow (void creatures) — factions do NOT fight each other in campaign
+- **Faction realms**: Event-only (raids, PvP, seasonal, world bosses)
+- **Removed**: Realm Advantage System, cross-realm campaign structure, enemy territory penalties
+- **Rewrote**: 280 mission briefings to reference Earth locations + Hollow enemy
+- **Cleaned**: All stale cross-realm references from docs, GDD, and lore files
+- **Pending**: 3D model production (TRELLIS.2) awaiting Hugging Face GPU token
+
+
 ## v0.7.0 — August 19, 2026 — The Avatar Update
 
 ### MAJOR: Avatar System Pivot

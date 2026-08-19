@@ -4,19 +4,6 @@
 
 A Realm is an extradimensional civilization-domain shaped by mythic law, history, materials, symbols, and power. Each playable Realm must feel like its own ancient civilization, not a costume pack.
 
-## Realm Advantage System
-
-When Avatars cross through the Mythos Gates, their power is affected by which Realm they fight in:
-
-| Territory | Avatar Power | Aura | Ability Charges | Cooldowns | Risk | Reward |
-|-----------|-------------|------|-----------------|-----------|------|--------|
-| Home Realm | Maximum | Full radiance | Full charges | Shortest | Low | Standard |
-| Enemy Realm | Reduced | Dimmed | Reduced | Longer | High | Greater Belief/Influence |
-| Earth (Neutral) | Balanced | Medium | Balanced | Normal | Medium | Balanced |
-
-- **Home Realm:** The Avatar channels maximum divine power. Home faction enemies are allies. This is where you farm, level, and prepare.
-- **Enemy Realm:** Crossing through the Gate into hostile territory weakens the Avatar. The home faction has the advantage. Invading is risky but offers greater Belief and Influence rewards.
-- **Earth:** No faction has home advantage. All Avatars are balanced. Hollow invasions create dungeons. This is the proving ground for cross-faction PvP and PvE.
 
 ## Earth — Neutral Territory
 

@@ -84,7 +84,7 @@ Generated `dist/` output is built by automation and is not a canonical source fo
 - Unreal Engine 5 dungeon-crawler framework: Mythos Gates region/zone/exploration/tactical-arena template for the first mission
 - Mobile-first UE5 architecture: Android/iOS baseline, scalable quality tiers, Gate-safe optimization, and first-zone approval gate
 - One Avatar vs. Many combat: one player-controlled Avatar per battle, no armies, no squads, no team turns, visible progression, enemy role pressure
-- Realm advantage system: Home = full power, Enemy = weakened (-20% ATK/-15% DEF) but +50% rewards, Earth = balanced
+- Earth campaign system: All missions in faction mythological homelands, neutral ground, no faction advantage
 - Avatar death: Respawn at Deity domain, lose 10-20% unspent Belief/Influence, progression preserved
 - Mission/campaign lore run-ins: all 280 missions and 8 campaigns use the mobile UE5 one-avatar loop and can draw lore-valid cross-faction creature pools
 - Current source asset status: 136 reserved asset IDs awaiting final source assets
@@ -142,7 +142,7 @@ Current canon is locked around:
 - Players control Avatars (divine projections), not Deities directly
 - One-active-Avatar standard combat deployments
 - Belief and Influence as progression resources
-- Realm advantage system (home/enemy/neutral modifiers)
+- Earth campaign system (all missions on ancient Earth, Hollow as enemy)
 - Avatar death does not kill the Deity (respawn at home Realm)
 - God-scale visuals maintained in all Realms (Option A)
 - The Hollow as a non-playable campaign threat layer
