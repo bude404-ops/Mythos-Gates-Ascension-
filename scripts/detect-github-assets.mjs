@@ -33,13 +33,13 @@ function rel(file) { return path.relative(ROOT, file).replaceAll(path.sep, '/');
 function parseAssetId(relativePath) {
   const parts = relativePath.split('/');
   const text = parts.join(' ');
-  const match = text.match(/(?:^|[^A-Z0-9])(TITAN|CHARACTER|CREATURE|ENEMY|BATTLEFIELD|GATE|WEAPON|ARMOR|STRUCTURE|PROP|ENVIRONMENT|GLOBAL_REF)_[0-9]{3}(?=$|[^A-Z0-9])/i);
-  return match ? match[0].match(/(TITAN|CHARACTER|CREATURE|ENEMY|BATTLEFIELD|GATE|WEAPON|ARMOR|STRUCTURE|PROP|ENVIRONMENT|GLOBAL_REF)_[0-9]{3}/i)[0].toUpperCase() : null;
+  const match = text.match(/(?:^|[^A-Z0-9])(DEITY|CHARACTER|CREATURE|ENEMY|BATTLEFIELD|GATE|WEAPON|ARMOR|STRUCTURE|PROP|ENVIRONMENT|GLOBAL_REF)_[0-9]{3}(?=$|[^A-Z0-9])/i);
+  return match ? match[0].match(/(DEITY|CHARACTER|CREATURE|ENEMY|BATTLEFIELD|GATE|WEAPON|ARMOR|STRUCTURE|PROP|ENVIRONMENT|GLOBAL_REF)_[0-9]{3}/i)[0].toUpperCase() : null;
 }
 function inferAssetType(relativePath, assetId) {
   if (assetId) return assetId.replace(/_[0-9]{3}$/, '').replace('GLOBAL_REF', 'GLOBAL_REFERENCE');
   const p = relativePath.toLowerCase();
-  if (p.includes('/deities/')) return 'TITAN';
+  if (p.includes('/deities/')) return 'DEITY';
   if (p.includes('/characters/')) return 'CHARACTER';
   if (p.includes('/creatures/')) return 'CREATURE';
   if (p.includes('/enemies/')) return 'ENEMY';

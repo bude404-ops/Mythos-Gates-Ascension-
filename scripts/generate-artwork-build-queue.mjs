@@ -12,7 +12,7 @@ function writeJson(file, value) { fs.mkdirSync(path.dirname(file), { recursive: 
 function slug(text) { return String(text || 'asset').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80) || 'asset'; }
 function assetKindPath(type) {
   const map = {
-    TITAN: 'assets/3d/deities/source',
+    DEITY: 'assets/3d/deities/source',
     CHARACTER: 'assets/3d/characters/source',
     CREATURE: 'assets/3d/creatures/source',
     ENEMY: 'assets/3d/enemies/source',
@@ -31,7 +31,7 @@ function priorityFor(entry) {
   if (entry.asset_id === 'DEITY_001') return 1;
   if (entry.asset_id === 'CHARACTER_001') return 2;
   if (entry.asset_id === 'BATTLEFIELD_001') return 3;
-  if (entry.asset_type === 'TITAN') return 10;
+  if (entry.asset_type === 'DEITY') return 10;
   if (entry.asset_type === 'BATTLEFIELD') return 20;
   if (entry.asset_type === 'GATE') return 30;
   if (entry.asset_type === 'CHARACTER') return 40;
@@ -70,7 +70,7 @@ const entries = (registry.entries || [])
       generation_prompt_id: prompt?.id || null,
       generation_prompt: prompt?.prompt || null,
       negative_prompt: prompt?.negativePrompt || null,
-      build_note: entry.asset_type === 'TITAN'
+      build_note: entry.asset_type === 'DEITY'
         ? 'Create the finished Deity source art/model first; keep original source intact and put optimized runtime output in game_ready later.'
         : 'Create/import the source asset first; validation will link it to the permanent ID.'
     };

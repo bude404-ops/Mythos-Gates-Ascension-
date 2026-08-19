@@ -8,18 +8,18 @@ Every output filename must include the permanent asset ID, then land in the artw
 
 ## First generation wave
 
-- **DEITY_001 — Aten-Ra** (TITAN) → `DEITY_001__aten-ra-solar-law-monolith__source-file.ext`
+- **DEITY_001 — Aten-Ra** (DEITY) → `DEITY_001__aten-ra-solar-law-monolith__source-file.ext`
 - **CHARACTER_001 — Mesha Gate-Scribe** (CHARACTER) → `CHARACTER_001__mesha-gate-scribe__source-file.ext`
 - **BATTLEFIELD_001 — The First Reopening Gate** (BATTLEFIELD) → `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext`
-- **DEITY_002 — Sutekh** (TITAN) → `DEITY_002__khemet-suncrown__source-file.ext`
-- **DEITY_003 — Iset** (TITAN) → `DEITY_003__nefra-obsidian-dawn__source-file.ext`
-- **DEITY_004 — Amunet** (TITAN) → `DEITY_004__orru-prism-verdict__source-file.ext`
-- **DEITY_005 — Sutekh** (TITAN) → `DEITY_005__sutekh-dune-eclipse__source-file.ext`
-- **DEITY_006 — Iset** (TITAN) → `DEITY_006__iset-riverlight-throne__source-file.ext`
-- **DEITY_007 — Karnu** (TITAN) → `DEITY_007__karnu-glass-horizon__source-file.ext`
-- **DEITY_008 — Maahes** (TITAN) → `DEITY_008__maahes-noon-bastion__source-file.ext`
-- **DEITY_009 — Amunet** (TITAN) → `DEITY_009__amunet-hidden-sun__source-file.ext`
-- **DEITY_010 — The Odin Stormvein** (TITAN) → `DEITY_010__the-allfather-stormvein__source-file.ext`
+- **DEITY_002 — Sutekh** (DEITY) → `DEITY_002__khemet-suncrown__source-file.ext`
+- **DEITY_003 — Iset** (DEITY) → `DEITY_003__nefra-obsidian-dawn__source-file.ext`
+- **DEITY_004 — Amunet** (DEITY) → `DEITY_004__orru-prism-verdict__source-file.ext`
+- **DEITY_005 — Sutekh** (DEITY) → `DEITY_005__sutekh-dune-eclipse__source-file.ext`
+- **DEITY_006 — Iset** (DEITY) → `DEITY_006__iset-riverlight-throne__source-file.ext`
+- **DEITY_007 — Karnu** (DEITY) → `DEITY_007__karnu-glass-horizon__source-file.ext`
+- **DEITY_008 — Maahes** (DEITY) → `DEITY_008__maahes-noon-bastion__source-file.ext`
+- **DEITY_009 — Amunet** (DEITY) → `DEITY_009__amunet-hidden-sun__source-file.ext`
+- **DEITY_010 — The Odin Stormvein** (DEITY) → `DEITY_010__the-allfather-stormvein__source-file.ext`
 - **BATTLEFIELD_002 — Solar Pylon Observatory** (BATTLEFIELD) → `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext`
 - **BATTLEFIELD_003 — Storm-Oath Bridge** (BATTLEFIELD) → `BATTLEFIELD_003__storm-oath-bridge__source-file.ext`
 - **BATTLEFIELD_004 — Marble Sky Arena** (BATTLEFIELD) → `BATTLEFIELD_004__marble-sky-arena__source-file.ext`

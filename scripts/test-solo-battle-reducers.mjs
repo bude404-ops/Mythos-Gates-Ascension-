@@ -34,7 +34,7 @@ const objectives = [
 
 let state = createInitialSoloBattleState({ battleId: schema.verticalSliceDefault.battleId, missionId: schema.verticalSliceDefault.missionId, deity: deity, enemies: enemyRoster, terrain, objectives, seed: 777 });
 assert.equal(state.phase, PHASES.PLAYER);
-assert.equal(state.deity.id, 'TG-TITAN-001');
+assert.equal(state.deity.id, 'TG-DEITY-001');
 assert.equal(state.enemies.length, 3);
 assert.equal(state.resources.momentum, 0);
 

@@ -61,8 +61,8 @@ for (const entry of registry.entries || []) {
     requirements: {
       lod_required: entry.lod_required ?? true,
       collision_required: entry.collision_required ?? true,
-      rig_required: entry.rig_required ?? ['TITAN','CHARACTER','CREATURE','ENEMY'].includes(entry.asset_type),
-      animation_required: entry.animation_required ?? ['TITAN','CHARACTER','CREATURE','ENEMY','GATE'].includes(entry.asset_type),
+      rig_required: entry.rig_required ?? ['DEITY','CHARACTER','CREATURE','ENEMY'].includes(entry.asset_type),
+      animation_required: entry.animation_required ?? ['DEITY','CHARACTER','CREATURE','ENEMY','GATE'].includes(entry.asset_type),
       master_scale_required: entry.asset_type !== 'GLOBAL_REFERENCE'
     },
     validation: {

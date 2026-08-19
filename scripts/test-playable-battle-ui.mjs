@@ -53,7 +53,7 @@ async function runSmoke(){
     await page.evaluate(()=>window.TGHub.enterHub());
     await page.evaluate(()=>{
       if (window.TGHub.state.route === 'awakening') {
-        window.TGHub.chooseStarter('TG-TITAN-003');
+        window.TGHub.chooseStarter('TG-DEITY-003');
         window.TGHub.finishAwakening();
       }
     });

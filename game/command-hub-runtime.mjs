@@ -57,7 +57,7 @@ export function createCommandHubRuntime(DATA, mount){
   const creatureById = id => creatures().find(c => c.id === id);
   const chapterById = id => chapters().find(c => c.id === id) || (playflow().flow||[]).flatMap(f=>f.chapterRoutes||[]).find(c=>c.chapterId===id);
   const log = (type, message, data={}) => state.logs.unshift({ type, message, data, at:new Date().toISOString() });
-  const STARTER_DEITY_IDS = ['TG-TITAN-001','TG-TITAN-006','TG-TITAN-009'];
+  const STARTER_DEITY_IDS = ['TG-DEITY-001','TG-DEITY-006','TG-DEITY-009'];
   const AWAKENING_BEATS = [
     { step:1, id:'AWAKEN_FIRST_DEITY', lesson:'Awaken first Deity', missionBeat:'The Gate opens; the Deity crosses alone.', playableSystem:'starter binding', milestone:'AWAKENING_BEAT_01' },
     { step:2, id:'MOVEMENT_BASIC_ATTACKS', lesson:'Movement and basic attacks', missionBeat:'Claim safe lanes before the Hollow reaches the seal.', playableSystem:'movement + basic attack', milestone:'AWAKENING_BEAT_02' },
@@ -91,7 +91,7 @@ export function createCommandHubRuntime(DATA, mount){
     player.onboarding.awakeningMissionId ||= player.campaignProgress?.currentMissionId || missions()[0]?.id;
     return player.onboarding;
   }
-  const TRIAL_DEITY_IDS = ['TG-TITAN-005','TG-TITAN-005','TG-TITAN-010'];
+  const TRIAL_DEITY_IDS = ['TG-DEITY-005','TG-DEITY-005','TG-DEITY-010'];
   const TRIAL_MODES = [
     { id:'TEMP_LOADOUT', label:'Temporary Loadout', rule:'Borrowed relics vanish after the showcase; only Trial Favor persists.' },
     { id:'FACTION_TRIAL', label:'Faction Trial', rule:'Aten Ra tactical pressure teaches roster difference without requiring ownership.' },

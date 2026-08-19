@@ -8,7 +8,7 @@ const issues = [];
 issues.push(...validateContract(contract, schema, contract.id).issues);
 issues.push(...validateBackendBoundaryContract(contract).issues);
 const backend = createLocalHostedBackendBoundary();
-const created = backend.createProfile({ playerId: 'TG-BACKEND-VALIDATOR-001', displayName: 'Boundary Validator', starterDeityId: 'TG-TITAN-003' }, { idempotencyKey: 'validator-create' });
+const created = backend.createProfile({ playerId: 'TG-BACKEND-VALIDATOR-001', displayName: 'Boundary Validator', starterDeityId: 'TG-DEITY-003' }, { idempotencyKey: 'validator-create' });
 const credited = backend.creditCurrency(created.profile.playerId, 'sunshards', 15, 'VALIDATOR_REWARD', { idempotencyKey: 'validator-credit' });
 const debited = backend.debitCurrency(created.profile.playerId, 'sunshards', 5, 'VALIDATOR_SPEND', { idempotencyKey: 'validator-debit' });
 const saved = backend.loadSave(created.profile.playerId);

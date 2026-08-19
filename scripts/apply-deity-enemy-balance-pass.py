@@ -220,7 +220,7 @@ try:
     ch=read_json(ch_path)
 except Exception:
     ch=[]
-entry={'id':'MG-CHANGE-TITAN-ENEMY-BALANCE-001','date':datetime.now(timezone.utc).date().isoformat(),'type':'balance-content','summary':'Completed Deity names/abilities/gear pass and added enemy stat/scaling profiles for harder solo progression.','files':['data/deitys.json','deitys/*.json','data/creatures.json','creatures/*.json','data/deity-enemy-balance-pass.json','data/progression-system.json','data/balance-analytics.json']}
+entry={'id':'MG-CHANGE-DEITY-ENEMY-BALANCE-001','date':datetime.now(timezone.utc).date().isoformat(),'type':'balance-content','summary':'Completed Deity names/abilities/gear pass and added enemy stat/scaling profiles for harder solo progression.','files':['data/deitys.json','deitys/*.json','data/creatures.json','creatures/*.json','data/deity-enemy-balance-pass.json','data/progression-system.json','data/balance-analytics.json']}
 if isinstance(ch, list):
     if not any(e.get('id')==entry['id'] for e in ch if isinstance(e,dict)): ch.append(entry)
     write_json(ch_path,ch)

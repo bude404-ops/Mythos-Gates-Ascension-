@@ -25,15 +25,15 @@ function walk(dir) {
   return out;
 }
 function parseAssetId(text) {
-  const match = String(text).match(/(?:^|[^A-Z0-9])(TITAN|CHARACTER|CREATURE|ENEMY|BATTLEFIELD|GATE|WEAPON|ARMOR|STRUCTURE|PROP|ENVIRONMENT|GLOBAL_REF)_[0-9]{3}(?=$|[^A-Z0-9])/i);
-  return match ? match[0].match(/(TITAN|CHARACTER|CREATURE|ENEMY|BATTLEFIELD|GATE|WEAPON|ARMOR|STRUCTURE|PROP|ENVIRONMENT|GLOBAL_REF)_[0-9]{3}/i)[0].toUpperCase() : null;
+  const match = String(text).match(/(?:^|[^A-Z0-9])(DEITY|CHARACTER|CREATURE|ENEMY|BATTLEFIELD|GATE|WEAPON|ARMOR|STRUCTURE|PROP|ENVIRONMENT|GLOBAL_REF)_[0-9]{3}(?=$|[^A-Z0-9])/i);
+  return match ? match[0].match(/(DEITY|CHARACTER|CREATURE|ENEMY|BATTLEFIELD|GATE|WEAPON|ARMOR|STRUCTURE|PROP|ENVIRONMENT|GLOBAL_REF)_[0-9]{3}/i)[0].toUpperCase() : null;
 }
 function slug(text) { return String(text || 'asset').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80) || 'asset'; }
 function typeRoot(type, ext) {
   const image = ['.png', '.jpg', '.jpeg', '.webp', '.psd', '.tga'].includes(ext);
   if (image && !['BATTLEFIELD', 'GATE'].includes(type)) return 'assets/concept_art/source';
   const map = {
-    TITAN: 'assets/3d/deities/source',
+    DEITY: 'assets/3d/deities/source',
     CHARACTER: 'assets/3d/characters/source',
     CREATURE: 'assets/3d/creatures/source',
     ENEMY: 'assets/3d/enemies/source',

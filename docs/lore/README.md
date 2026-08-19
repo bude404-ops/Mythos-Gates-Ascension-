@@ -10,9 +10,9 @@ This folder is the canon source for the Mythos Gates: Ascension game lore.
 
 1. [00 Canon Lock](00-CANON-LOCK.md) — hard rules and removed canon
 2. [01 Game Lore](01-GAME-LORE.md) — core story premise
-3. [02 Mythos Gates](02-TITAN-GATES.md) — dimensional gateways and the Ascension Collapse
+3. [02 Mythos Gates](02-DEITY-GATES.md) — dimensional gateways and the Ascension Collapse
 4. [03 Realms](03-REALMS.md) — seven playable mythological Realms
-5. [04 Playable Deities](04-TITANS.md) — god/goddess playable roster rules and current named deities
+5. [04 Playable Deities](04-DEITIES.md) — god/goddess playable roster rules and current named deities
 6. [05 Campaign Threats](05-CAMPAIGN-THREATS.md) — Forgotten, Hollow, Beast Realms, Gateborn, World Bosses
 7. [06 Timeline](06-TIMELINE.md) — historical eras and current age
 8. [07 Glossary](07-GLOSSARY.md) — key terms

@@ -16,7 +16,7 @@ const REQUIRED_EVENT_TYPES = Object.freeze([
 export function createPlatformProfile({
   playerId = 'TG-PLAYER-LOCAL-001',
   displayName = 'First Gatebreaker',
-  starterDeityId = 'TG-TITAN-003',
+  starterDeityId = 'TG-DEITY-003',
   now = DEFAULT_CLOCK
 } = {}) {
   const createdAt = now();

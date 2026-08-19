@@ -18,9 +18,9 @@ The playable character concept has been fundamentally redesigned. Players now co
 #### Files Updated
 
 - `docs/lore/01-GAME-LORE.md` — Added Avatar System, Earth as neutral territory, Belief/Influence, death mechanics
-- `docs/lore/02-TITAN-GATES.md` — Added Gate as Avatar projection mechanism, realm modifiers
+- `docs/lore/02-DEITY-GATES.md` — Added Gate as Avatar projection mechanism, realm modifiers
 - `docs/lore/03-REALMS.md` — Added Realm Advantage System, Earth as neutral realm, per-faction avatar advantages
-- `docs/lore/04-TITANS.md` — Changed from Single-Deity Rule to Avatar System, added Belief/Influence progression, death/respawn, scale rules
+- `docs/lore/04-DEITIES.md` — Changed from Single-Deity Rule to Avatar System, added Belief/Influence progression, death/respawn, scale rules
 - `docs/GAME_DESIGN_DOCUMENT.md` — Full v2.0 rewrite with Avatar system, progression, economy, death mechanics, realm modifiers, visual scale
 - `README.md` — Updated to reflect Avatar system, new progression, Earth territory, version bump
 

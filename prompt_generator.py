@@ -33,9 +33,9 @@ def load_faction_bibles():
     return bibles
 
 def load_backstory(deity_id):
-    # Convert MG-DEITY-001 -> MG-BACKSTORY-TITAN-001
+    # Convert MG-DEITY-001 -> MG-BACKSTORY-DEITY-001
     num = deity_id.split('-')[-1]
-    path = os.path.join(BASE, 'backstories', 'deitys', f'MG-BACKSTORY-TITAN-{num}.json')
+    path = os.path.join(BASE, 'backstories', 'deitys', f'MG-BACKSTORY-DEITY-{num}.json')
     try:
         return load_json(path)
     except:

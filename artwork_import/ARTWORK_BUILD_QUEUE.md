@@ -15,7 +15,7 @@ Needed source assets: 129
 
 ### 1. DEITY_001 — Aten-Ra
 
-- Type: TITAN
+- Type: DEITY
 - Drop as: `artwork_import/dropbox/DEITY_001__aten-ra-solar-law-monolith__source-file.ext`
 - Final source folder: `assets/3d/deities/source/DEITY_001/v001`
 - Blueprint: `3D_Blueprints/Characters/Deities/DEITY_001_aten-ra-solar-law-monolith/metadata.json`
@@ -45,7 +45,7 @@ Needed source assets: 129
 
 ### 4. DEITY_002 — Sutekh
 
-- Type: TITAN
+- Type: DEITY
 - Drop as: `artwork_import/dropbox/DEITY_002__khemet-suncrown__source-file.ext`
 - Final source folder: `assets/3d/deities/source/DEITY_002/v001`
 - Blueprint: `3D_Blueprints/Characters/Deities/DEITY_002_khemet-suncrown/metadata.json`
@@ -55,7 +55,7 @@ Needed source assets: 129
 
 ### 5. DEITY_003 — Iset
 
-- Type: TITAN
+- Type: DEITY
 - Drop as: `artwork_import/dropbox/DEITY_003__nefra-obsidian-dawn__source-file.ext`
 - Final source folder: `assets/3d/deities/source/DEITY_003/v001`
 - Blueprint: `3D_Blueprints/Characters/Deities/DEITY_003_nefra-obsidian-dawn/metadata.json`
@@ -65,7 +65,7 @@ Needed source assets: 129
 
 ### 6. DEITY_004 — Amunet
 
-- Type: TITAN
+- Type: DEITY
 - Drop as: `artwork_import/dropbox/DEITY_004__orru-prism-verdict__source-file.ext`
 - Final source folder: `assets/3d/deities/source/DEITY_004/v001`
 - Blueprint: `3D_Blueprints/Characters/Deities/DEITY_004_orru-prism-verdict/metadata.json`
@@ -75,7 +75,7 @@ Needed source assets: 129
 
 ### 7. DEITY_005 — Sutekh
 
-- Type: TITAN
+- Type: DEITY
 - Drop as: `artwork_import/dropbox/DEITY_005__sutekh-dune-eclipse__source-file.ext`
 - Final source folder: `assets/3d/deities/source/DEITY_005/v001`
 - Blueprint: `3D_Blueprints/Characters/Deities/DEITY_005_sutekh-dune-eclipse/metadata.json`
@@ -85,7 +85,7 @@ Needed source assets: 129
 
 ### 8. DEITY_006 — Iset
 
-- Type: TITAN
+- Type: DEITY
 - Drop as: `artwork_import/dropbox/DEITY_006__iset-riverlight-throne__source-file.ext`
 - Final source folder: `assets/3d/deities/source/DEITY_006/v001`
 - Blueprint: `3D_Blueprints/Characters/Deities/DEITY_006_iset-riverlight-throne/metadata.json`
@@ -95,7 +95,7 @@ Needed source assets: 129
 
 ### 9. DEITY_007 — Karnu
 
-- Type: TITAN
+- Type: DEITY
 - Drop as: `artwork_import/dropbox/DEITY_007__karnu-glass-horizon__source-file.ext`
 - Final source folder: `assets/3d/deities/source/DEITY_007/v001`
 - Blueprint: `3D_Blueprints/Characters/Deities/DEITY_007_karnu-glass-horizon/metadata.json`
@@ -105,7 +105,7 @@ Needed source assets: 129
 
 ### 10. DEITY_008 — Maahes
 
-- Type: TITAN
+- Type: DEITY
 - Drop as: `artwork_import/dropbox/DEITY_008__maahes-noon-bastion__source-file.ext`
 - Final source folder: `assets/3d/deities/source/DEITY_008/v001`
 - Blueprint: `3D_Blueprints/Characters/Deities/DEITY_008_maahes-noon-bastion/metadata.json`
@@ -115,7 +115,7 @@ Needed source assets: 129
 
 ### 11. DEITY_009 — Amunet
 
-- Type: TITAN
+- Type: DEITY
 - Drop as: `artwork_import/dropbox/DEITY_009__amunet-hidden-sun__source-file.ext`
 - Final source folder: `assets/3d/deities/source/DEITY_009/v001`
 - Blueprint: `3D_Blueprints/Characters/Deities/DEITY_009_amunet-hidden-sun/metadata.json`
@@ -125,7 +125,7 @@ Needed source assets: 129
 
 ### 12. DEITY_010 — The Odin Stormvein
 
-- Type: TITAN
+- Type: DEITY
 - Drop as: `artwork_import/dropbox/DEITY_010__the-allfather-stormvein__source-file.ext`
 - Final source folder: `assets/3d/deities/source/DEITY_010/v001`
 - Blueprint: `3D_Blueprints/Characters/Deities/DEITY_010_the-allfather-stormvein/metadata.json`
@@ -137,71 +137,71 @@ Needed source assets: 129
 
 | Priority | Asset ID | Type | Name | Dropbox filename |
 |---:|---|---|---|---|
-| 1 | DEITY_001 | TITAN | Aten-Ra | `DEITY_001__aten-ra-solar-law-monolith__source-file.ext` |
+| 1 | DEITY_001 | DEITY | Aten-Ra | `DEITY_001__aten-ra-solar-law-monolith__source-file.ext` |
 | 2 | CHARACTER_001 | CHARACTER | Mesha Gate-Scribe | `CHARACTER_001__mesha-gate-scribe__source-file.ext` |
 | 3 | BATTLEFIELD_001 | BATTLEFIELD | The First Reopening Gate | `BATTLEFIELD_001__the-first-reopening-gate__source-file.ext` |
-| 10 | DEITY_002 | TITAN | Sutekh | `DEITY_002__khemet-suncrown__source-file.ext` |
-| 10 | DEITY_003 | TITAN | Iset | `DEITY_003__nefra-obsidian-dawn__source-file.ext` |
-| 10 | DEITY_004 | TITAN | Amunet | `DEITY_004__orru-prism-verdict__source-file.ext` |
-| 10 | DEITY_005 | TITAN | Sutekh | `DEITY_005__sutekh-dune-eclipse__source-file.ext` |
-| 10 | DEITY_006 | TITAN | Iset | `DEITY_006__iset-riverlight-throne__source-file.ext` |
-| 10 | DEITY_007 | TITAN | Karnu | `DEITY_007__karnu-glass-horizon__source-file.ext` |
-| 10 | DEITY_008 | TITAN | Maahes | `DEITY_008__maahes-noon-bastion__source-file.ext` |
-| 10 | DEITY_009 | TITAN | Amunet | `DEITY_009__amunet-hidden-sun__source-file.ext` |
-| 10 | DEITY_010 | TITAN | The Odin Stormvein | `DEITY_010__the-allfather-stormvein__source-file.ext` |
-| 10 | DEITY_011 | TITAN | Thor Rune-Mountain | `DEITY_011__hrothar-rune-mountain__source-file.ext` |
-| 10 | DEITY_012 | TITAN | Frigg Iron Tempest | `DEITY_012__skeld-iron-tempest__source-file.ext` |
-| 10 | DEITY_013 | TITAN | Freyja Valkstorm | `DEITY_013__eirwyn-valkstorm__source-file.ext` |
-| 10 | DEITY_014 | TITAN | Mordun Frost-Anvil | `DEITY_014__mordun-frost-anvil__source-file.ext` |
-| 10 | DEITY_015 | TITAN | Veyra Thunderloom | `DEITY_015__veyra-thunderloom__source-file.ext` |
-| 10 | DEITY_016 | TITAN | Ragnor Skybreaker | `DEITY_016__ragnor-skybreaker__source-file.ext` |
-| 10 | DEITY_017 | TITAN | Ullr Snow-Crown | `DEITY_017__ullr-snow-crown__source-file.ext` |
-| 10 | DEITY_018 | TITAN | Sigrun Oathflare | `DEITY_018__sigrun-oathflare__source-file.ext` |
-| 10 | DEITY_019 | TITAN | Zeus Heaven-Marrow | `DEITY_019__aurelion-heaven-marrow__source-file.ext` |
-| 10 | DEITY_020 | TITAN | Athena Marble Thunder | `DEITY_020__kallix-marble-thunder__source-file.ext` |
-| 10 | DEITY_021 | TITAN | Artemis Golden Aegis | `DEITY_021__thyressa-golden-aegis__source-file.ext` |
-| 10 | DEITY_022 | TITAN | Ares Laurel Flame | `DEITY_022__ilyon-laurel-flame__source-file.ext` |
-| 10 | DEITY_023 | TITAN | Nikos Star-Lance | `DEITY_023__nikos-star-lance__source-file.ext` |
-| 10 | DEITY_024 | TITAN | Dione Victory Mirror | `DEITY_024__dione-victory-mirror__source-file.ext` |
-| 10 | DEITY_025 | TITAN | Helior Bronze Summit | `DEITY_025__helior-bronze-summit__source-file.ext` |
-| 10 | DEITY_026 | TITAN | Pallas Oath-Spear | `DEITY_026__pallas-oath-spear__source-file.ext` |
-| 10 | DEITY_027 | TITAN | Eiren Crowned Horizon | `DEITY_027__eiren-crowned-horizon__source-file.ext` |
-| 10 | DEITY_028 | TITAN | Amaterasu Spirit-Sun | `DEITY_028__amaterion-spirit-sun__source-file.ext` |
-| 10 | DEITY_029 | TITAN | Tsukuyomi Moon-Veil | `DEITY_029__tsukiro-moon-veil__source-file.ext` |
-| 10 | DEITY_030 | TITAN | Susanoo Storm Script | `DEITY_030__raidenko-storm-script__source-file.ext` |
-| 10 | DEITY_031 | TITAN | Izanami Shrine Tide | `DEITY_031__mizuka-shrine-tide__source-file.ext` |
-| 10 | DEITY_032 | TITAN | Kageyori Shadow Gate | `DEITY_032__kageyori-shadow-gate__source-file.ext` |
-| 10 | DEITY_033 | TITAN | Hanae Blossom Ward | `DEITY_033__hanae-blossom-ward__source-file.ext` |
-| 10 | DEITY_034 | TITAN | Onimaru Red Seal | `DEITY_034__onimaru-red-seal__source-file.ext` |
-| 10 | DEITY_035 | TITAN | Korin Mist Path | `DEITY_035__korin-mist-path__source-file.ext` |
-| 10 | DEITY_036 | TITAN | Yamabito Stone Prayer | `DEITY_036__yamabito-stone-prayer__source-file.ext` |
-| 10 | DEITY_037 | TITAN | Dagda Root-Crown | `DEITY_037__dagoran-root-crown__source-file.ext` |
-| 10 | DEITY_038 | TITAN | Brigid Emerald Oath | `DEITY_038__eryndor-emerald-oath__source-file.ext` |
-| 10 | DEITY_039 | TITAN | Morrígan Moon-Grove | `DEITY_039__melian-moon-grove__source-file.ext` |
-| 10 | DEITY_040 | TITAN | Lugh Granite Bough | `DEITY_040__bran-granite-bough__source-file.ext` |
-| 10 | DEITY_041 | TITAN | Nimue Silver Pool | `DEITY_041__nimue-silver-pool__source-file.ext` |
-| 10 | DEITY_042 | TITAN | Cernan Wild Vale | `DEITY_042__cernan-wild-vale__source-file.ext` |
-| 10 | DEITY_043 | TITAN | Ailbhe Thorn-Song | `DEITY_043__ailbhe-thorn-song__source-file.ext` |
-| 10 | DEITY_044 | TITAN | Oghma Stone Script | `DEITY_044__oghma-stone-script__source-file.ext` |
-| 10 | DEITY_045 | TITAN | Tara Dawn Barrow | `DEITY_045__tara-dawn-barrow__source-file.ext` |
-| 10 | DEITY_046 | TITAN | Michael | `DEITY_046__seraphel-the-throne-eternal__source-file.ext` |
-| 10 | DEITY_047 | TITAN | Gabriel Dawnborn Axis | `DEITY_047__caelion-dawnborn-axis__source-file.ext` |
-| 10 | DEITY_048 | TITAN | Raphael Radiant Spear | `DEITY_048__aurelia-radiant-spear__source-file.ext` |
-| 10 | DEITY_049 | TITAN | Uriel Law Warden | `DEITY_049__malachor-law-warden__source-file.ext` |
-| 10 | DEITY_050 | TITAN | Elyndra Choir Crown | `DEITY_050__elyndra-choir-crown__source-file.ext` |
-| 10 | DEITY_051 | TITAN | Orison White Citadel | `DEITY_051__orison-white-citadel__source-file.ext` |
-| 10 | DEITY_052 | TITAN | Vespera Mercy Blade | `DEITY_052__vespera-mercy-blade__source-file.ext` |
-| 10 | DEITY_053 | TITAN | Axiom Gate Choir | `DEITY_053__axiom-gate-choir__source-file.ext` |
-| 10 | DEITY_054 | TITAN | Theon Still Horizon | `DEITY_054__theon-still-horizon__source-file.ext` |
-| 10 | DEITY_055 | TITAN | Lucifer | `DEITY_055__mordrath-the-infernal-king__source-file.ext` |
-| 10 | DEITY_056 | TITAN | Asmodeus Bloodforged Crown | `DEITY_056__varkul-bloodforged-crown__source-file.ext` |
-| 10 | DEITY_057 | TITAN | Lilith Flameborn Court | `DEITY_057__nyxara-flameborn-court__source-file.ext` |
-| 10 | DEITY_058 | TITAN | Naamah Chainwarden | `DEITY_058__azrakar-chainwarden__source-file.ext` |
-| 10 | DEITY_059 | TITAN | Orryx Ash Dominion | `DEITY_059__orryx-ash-dominion__source-file.ext` |
-| 10 | DEITY_060 | TITAN | Malvera Ember Throne | `DEITY_060__malvera-ember-throne__source-file.ext` |
-| 10 | DEITY_061 | TITAN | Kharon Black Iron | `DEITY_061__kharon-black-iron__source-file.ext` |
-| 10 | DEITY_062 | TITAN | Sablex Cinder Duke | `DEITY_062__sablex-cinder-duke__source-file.ext` |
-| 10 | DEITY_063 | TITAN | Zerath Wound Gate | `DEITY_063__zerath-wound-gate__source-file.ext` |
+| 10 | DEITY_002 | DEITY | Sutekh | `DEITY_002__khemet-suncrown__source-file.ext` |
+| 10 | DEITY_003 | DEITY | Iset | `DEITY_003__nefra-obsidian-dawn__source-file.ext` |
+| 10 | DEITY_004 | DEITY | Amunet | `DEITY_004__orru-prism-verdict__source-file.ext` |
+| 10 | DEITY_005 | DEITY | Sutekh | `DEITY_005__sutekh-dune-eclipse__source-file.ext` |
+| 10 | DEITY_006 | DEITY | Iset | `DEITY_006__iset-riverlight-throne__source-file.ext` |
+| 10 | DEITY_007 | DEITY | Karnu | `DEITY_007__karnu-glass-horizon__source-file.ext` |
+| 10 | DEITY_008 | DEITY | Maahes | `DEITY_008__maahes-noon-bastion__source-file.ext` |
+| 10 | DEITY_009 | DEITY | Amunet | `DEITY_009__amunet-hidden-sun__source-file.ext` |
+| 10 | DEITY_010 | DEITY | The Odin Stormvein | `DEITY_010__the-allfather-stormvein__source-file.ext` |
+| 10 | DEITY_011 | DEITY | Thor Rune-Mountain | `DEITY_011__hrothar-rune-mountain__source-file.ext` |
+| 10 | DEITY_012 | DEITY | Frigg Iron Tempest | `DEITY_012__skeld-iron-tempest__source-file.ext` |
+| 10 | DEITY_013 | DEITY | Freyja Valkstorm | `DEITY_013__eirwyn-valkstorm__source-file.ext` |
+| 10 | DEITY_014 | DEITY | Mordun Frost-Anvil | `DEITY_014__mordun-frost-anvil__source-file.ext` |
+| 10 | DEITY_015 | DEITY | Veyra Thunderloom | `DEITY_015__veyra-thunderloom__source-file.ext` |
+| 10 | DEITY_016 | DEITY | Ragnor Skybreaker | `DEITY_016__ragnor-skybreaker__source-file.ext` |
+| 10 | DEITY_017 | DEITY | Ullr Snow-Crown | `DEITY_017__ullr-snow-crown__source-file.ext` |
+| 10 | DEITY_018 | DEITY | Sigrun Oathflare | `DEITY_018__sigrun-oathflare__source-file.ext` |
+| 10 | DEITY_019 | DEITY | Zeus Heaven-Marrow | `DEITY_019__aurelion-heaven-marrow__source-file.ext` |
+| 10 | DEITY_020 | DEITY | Athena Marble Thunder | `DEITY_020__kallix-marble-thunder__source-file.ext` |
+| 10 | DEITY_021 | DEITY | Artemis Golden Aegis | `DEITY_021__thyressa-golden-aegis__source-file.ext` |
+| 10 | DEITY_022 | DEITY | Ares Laurel Flame | `DEITY_022__ilyon-laurel-flame__source-file.ext` |
+| 10 | DEITY_023 | DEITY | Nikos Star-Lance | `DEITY_023__nikos-star-lance__source-file.ext` |
+| 10 | DEITY_024 | DEITY | Dione Victory Mirror | `DEITY_024__dione-victory-mirror__source-file.ext` |
+| 10 | DEITY_025 | DEITY | Helior Bronze Summit | `DEITY_025__helior-bronze-summit__source-file.ext` |
+| 10 | DEITY_026 | DEITY | Pallas Oath-Spear | `DEITY_026__pallas-oath-spear__source-file.ext` |
+| 10 | DEITY_027 | DEITY | Eiren Crowned Horizon | `DEITY_027__eiren-crowned-horizon__source-file.ext` |
+| 10 | DEITY_028 | DEITY | Amaterasu Spirit-Sun | `DEITY_028__amaterion-spirit-sun__source-file.ext` |
+| 10 | DEITY_029 | DEITY | Tsukuyomi Moon-Veil | `DEITY_029__tsukiro-moon-veil__source-file.ext` |
+| 10 | DEITY_030 | DEITY | Susanoo Storm Script | `DEITY_030__raidenko-storm-script__source-file.ext` |
+| 10 | DEITY_031 | DEITY | Izanami Shrine Tide | `DEITY_031__mizuka-shrine-tide__source-file.ext` |
+| 10 | DEITY_032 | DEITY | Kageyori Shadow Gate | `DEITY_032__kageyori-shadow-gate__source-file.ext` |
+| 10 | DEITY_033 | DEITY | Hanae Blossom Ward | `DEITY_033__hanae-blossom-ward__source-file.ext` |
+| 10 | DEITY_034 | DEITY | Onimaru Red Seal | `DEITY_034__onimaru-red-seal__source-file.ext` |
+| 10 | DEITY_035 | DEITY | Korin Mist Path | `DEITY_035__korin-mist-path__source-file.ext` |
+| 10 | DEITY_036 | DEITY | Yamabito Stone Prayer | `DEITY_036__yamabito-stone-prayer__source-file.ext` |
+| 10 | DEITY_037 | DEITY | Dagda Root-Crown | `DEITY_037__dagoran-root-crown__source-file.ext` |
+| 10 | DEITY_038 | DEITY | Brigid Emerald Oath | `DEITY_038__eryndor-emerald-oath__source-file.ext` |
+| 10 | DEITY_039 | DEITY | Morrígan Moon-Grove | `DEITY_039__melian-moon-grove__source-file.ext` |
+| 10 | DEITY_040 | DEITY | Lugh Granite Bough | `DEITY_040__bran-granite-bough__source-file.ext` |
+| 10 | DEITY_041 | DEITY | Nimue Silver Pool | `DEITY_041__nimue-silver-pool__source-file.ext` |
+| 10 | DEITY_042 | DEITY | Cernan Wild Vale | `DEITY_042__cernan-wild-vale__source-file.ext` |
+| 10 | DEITY_043 | DEITY | Ailbhe Thorn-Song | `DEITY_043__ailbhe-thorn-song__source-file.ext` |
+| 10 | DEITY_044 | DEITY | Oghma Stone Script | `DEITY_044__oghma-stone-script__source-file.ext` |
+| 10 | DEITY_045 | DEITY | Tara Dawn Barrow | `DEITY_045__tara-dawn-barrow__source-file.ext` |
+| 10 | DEITY_046 | DEITY | Michael | `DEITY_046__seraphel-the-throne-eternal__source-file.ext` |
+| 10 | DEITY_047 | DEITY | Gabriel Dawnborn Axis | `DEITY_047__caelion-dawnborn-axis__source-file.ext` |
+| 10 | DEITY_048 | DEITY | Raphael Radiant Spear | `DEITY_048__aurelia-radiant-spear__source-file.ext` |
+| 10 | DEITY_049 | DEITY | Uriel Law Warden | `DEITY_049__malachor-law-warden__source-file.ext` |
+| 10 | DEITY_050 | DEITY | Elyndra Choir Crown | `DEITY_050__elyndra-choir-crown__source-file.ext` |
+| 10 | DEITY_051 | DEITY | Orison White Citadel | `DEITY_051__orison-white-citadel__source-file.ext` |
+| 10 | DEITY_052 | DEITY | Vespera Mercy Blade | `DEITY_052__vespera-mercy-blade__source-file.ext` |
+| 10 | DEITY_053 | DEITY | Axiom Gate Choir | `DEITY_053__axiom-gate-choir__source-file.ext` |
+| 10 | DEITY_054 | DEITY | Theon Still Horizon | `DEITY_054__theon-still-horizon__source-file.ext` |
+| 10 | DEITY_055 | DEITY | Lucifer | `DEITY_055__mordrath-the-infernal-king__source-file.ext` |
+| 10 | DEITY_056 | DEITY | Asmodeus Bloodforged Crown | `DEITY_056__varkul-bloodforged-crown__source-file.ext` |
+| 10 | DEITY_057 | DEITY | Lilith Flameborn Court | `DEITY_057__nyxara-flameborn-court__source-file.ext` |
+| 10 | DEITY_058 | DEITY | Naamah Chainwarden | `DEITY_058__azrakar-chainwarden__source-file.ext` |
+| 10 | DEITY_059 | DEITY | Orryx Ash Dominion | `DEITY_059__orryx-ash-dominion__source-file.ext` |
+| 10 | DEITY_060 | DEITY | Malvera Ember Throne | `DEITY_060__malvera-ember-throne__source-file.ext` |
+| 10 | DEITY_061 | DEITY | Kharon Black Iron | `DEITY_061__kharon-black-iron__source-file.ext` |
+| 10 | DEITY_062 | DEITY | Sablex Cinder Duke | `DEITY_062__sablex-cinder-duke__source-file.ext` |
+| 10 | DEITY_063 | DEITY | Zerath Wound Gate | `DEITY_063__zerath-wound-gate__source-file.ext` |
 | 20 | BATTLEFIELD_002 | BATTLEFIELD | Solar Pylon Observatory | `BATTLEFIELD_002__solar-pylon-observatory__source-file.ext` |
 | 20 | BATTLEFIELD_003 | BATTLEFIELD | Storm-Oath Bridge | `BATTLEFIELD_003__storm-oath-bridge__source-file.ext` |
 | 20 | BATTLEFIELD_004 | BATTLEFIELD | Marble Sky Arena | `BATTLEFIELD_004__marble-sky-arena__source-file.ext` |

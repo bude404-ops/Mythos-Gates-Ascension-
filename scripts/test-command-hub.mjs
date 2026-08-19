@@ -79,8 +79,8 @@ async function runBrowserSmoke(){
     await page.waitForFunction(() => Boolean(window.TGHub?.enterHub), null, { timeout: 30000 });
     await page.evaluate(() => window.TGHub.enterHub());
     assert.equal(await page.evaluate(() => window.TGHub.state.route), 'awakening');
-    await page.evaluate(() => window.TGHub.chooseStarter('TG-TITAN-003'));
-    assert.equal(await page.evaluate(() => window.TGHub.state.player.onboarding.starterDeityId), 'TG-TITAN-003');
+    await page.evaluate(() => window.TGHub.chooseStarter('TG-DEITY-003'));
+    assert.equal(await page.evaluate(() => window.TGHub.state.player.onboarding.starterDeityId), 'TG-DEITY-003');
     assert.equal(await page.evaluate(() => window.TGHub.awakeningProgress().total), 12);
     assert.equal(await page.evaluate(() => window.TGHub.state.player.onboarding.fullRosterHidden), true);
     await page.evaluate(() => window.TGHub.finishAwakening());
@@ -152,9 +152,9 @@ for (let attempt = 1; attempt <= 3; attempt++) {
 await closeServer();
 if (!metrics) throw lastError;
 assert.equal(metrics.route, 'command');
-assert.equal(metrics.selectedDeityId, 'TG-TITAN-003');
+assert.equal(metrics.selectedDeityId, 'TG-DEITY-003');
 assert.equal(metrics.onboarding?.status, 'COMPLETE');
-assert.equal(metrics.onboarding?.starterDeityId, 'TG-TITAN-003');
+assert.equal(metrics.onboarding?.starterDeityId, 'TG-DEITY-003');
 assert.ok(metrics.onboarding?.milestones?.includes('STARTER_DEITY_BOUND'));
 assert.ok(metrics.onboarding?.milestones?.includes('AWAKENING_MISSION_UNLOCKED'));
 assert.ok(metrics.onboarding?.milestones?.includes('FULL_ROSTER_UNLOCKED_AFTER_AWAKENING'));

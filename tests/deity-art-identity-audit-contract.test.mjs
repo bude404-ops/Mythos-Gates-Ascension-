@@ -53,7 +53,7 @@ for (const entry of audit.entries) {
 
 const highest = byDeity.get(audit.summary.highestPriorityDeityId);
 assert.ok(highest, 'highest-priority deity must reference a real deity');
-assert.equal(audit.summary.highestPriorityDeityId, 'TG-TITAN-010');
+assert.equal(audit.summary.highestPriorityDeityId, 'TG-DEITY-010');
 
 console.log(JSON.stringify({
   ok: true,

@@ -6,7 +6,7 @@
   "philosophy": {
     "businessModel": "FREE_TO_PLAY",
     "principle": "Players pay for MORE, FASTER, OPTIONAL, OR COSMETIC \u2014 never for access to core combat.",
-    "combatFirstRule": "Monetization sits around PLAY \u2192 BATTLE \u2192 EARN \u2192 UPGRADE \u2192 UNLOCK \u2192 TRY NEW TITAN \u2192 HARDER CONTENT \u2192 PLAY AGAIN. The shop never becomes the center of the game.",
+    "combatFirstRule": "Monetization sits around PLAY \u2192 BATTLE \u2192 EARN \u2192 UPGRADE \u2192 UNLOCK \u2192 TRY NEW DEITY \u2192 HARDER CONTENT \u2192 PLAY AGAIN. The shop never becomes the center of the game.",
     "freePlayerPromise": [
       "Campaign playable",
       "Deities earnable",
@@ -102,7 +102,7 @@
     },
     "DEITY_RELICS": {
       "legacyIds": [
-        "MG-RES-TITAN-RELICS"
+        "MG-RES-DEITY-RELICS"
       ],
       "earnable": true,
       "paid": "bundle acceleration only",
@@ -511,7 +511,7 @@
     "GRANT_REWARD",
     "CONSUME_ENERGY",
     "REGENERATE_ENERGY",
-    "UNLOCK_TITAN",
+    "UNLOCK_DEITY",
     "PURCHASE_ITEM",
     "CLAIM_DAILY_REWARD",
     "VERIFY_PURCHASE_RECEIPT",
@@ -534,7 +534,7 @@
   "uiPriority": {
     "primary": [
       "PLAY",
-      "TITANS",
+      "DEITIES",
       "BATTLE",
       "CAMPAIGN",
       "EVENTS"

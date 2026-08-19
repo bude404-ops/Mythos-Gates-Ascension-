@@ -67,7 +67,7 @@ REPLACEMENTS = [
     
     # ID replacements
     ("MG-DEITY-", "MG-DEITY-"),
-    ("MG-SOLO-TITAN-", "MG-SOLO-DEITY-"),
+    ("MG-SOLO-DEITY-", "MG-SOLO-DEITY-"),
     
     # Plural forms first
     ("active Deities", "active deities"),
@@ -190,7 +190,7 @@ def filter_deitys_json(filepath, dry_run=False):
             old_prompt = t['artPromptId']
             t['artPromptId'] = old_prompt.replace('MG-PROMPT-', 'MG-PROMPT-').replace('MG-DEITY-', 'MG-DEITY-')
         if 'backstoryId' in t:
-            t['backstoryId'] = t['backstoryId'].replace('MG-BACKSTORY-TITAN-', 'MG-BACKSTORY-DEITY-')
+            t['backstoryId'] = t['backstoryId'].replace('MG-BACKSTORY-DEITY-', 'MG-BACKSTORY-DEITY-')
         if 'deityArtDna' in t:
             t.pop('deityArtDna', None)
     
@@ -390,8 +390,8 @@ def remove_dropped_deity_files(base_dir, dry_run=False):
     bs_dir = os.path.join(base_dir, 'backstories', 'deitys')
     if os.path.exists(bs_dir):
         for f in os.listdir(bs_dir):
-            if f.startswith('MG-BACKSTORY-TITAN-') and f.endswith('.json'):
-                num = f.replace('MG-BACKSTORY-TITAN-', '').replace('.json', '')
+            if f.startswith('MG-BACKSTORY-DEITY-') and f.endswith('.json'):
+                num = f.replace('MG-BACKSTORY-DEITY-', '').replace('.json', '')
                 deity_id = f"MG-DEITY-{num}"
                 if deity_id not in KEEP_IDS:
                     fpath = os.path.join(bs_dir, f)
@@ -406,12 +406,12 @@ def remove_dropped_deity_files(base_dir, dry_run=False):
         if not dry_run:
             os.makedirs(bs_new_dir, exist_ok=True)
         for f in os.listdir(bs_dir):
-            if f.startswith('MG-BACKSTORY-TITAN-') and f.endswith('.json'):
-                num = f.replace('MG-BACKSTORY-TITAN-', '').replace('.json', '')
+            if f.startswith('MG-BACKSTORY-DEITY-') and f.endswith('.json'):
+                num = f.replace('MG-BACKSTORY-DEITY-', '').replace('.json', '')
                 deity_id = f"MG-DEITY-{num}"
                 if deity_id in KEEP_IDS:
                     old_path = os.path.join(bs_dir, f)
-                    new_name = f.replace('MG-BACKSTORY-TITAN-', 'MG-BACKSTORY-DEITY-')
+                    new_name = f.replace('MG-BACKSTORY-DEITY-', 'MG-BACKSTORY-DEITY-')
                     new_path = os.path.join(bs_new_dir, new_name)
                     if not dry_run:
                         shutil.move(old_path, new_path)

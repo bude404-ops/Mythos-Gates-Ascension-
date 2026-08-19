@@ -33,7 +33,7 @@ for (const entry of registry.entries || []) {
   if (ids.has(entry.asset_id)) push(issues, 'ERROR', entry.asset_id, 'asset_id', 'duplicate permanent asset ID');
   ids.add(entry.asset_id);
   for (const field of requiredFields) if (!(field in entry)) push(issues, 'ERROR', entry.asset_id, field, 'missing registry field');
-  if (!/^(TITAN|CHARACTER|CREATURE|ENEMY|BATTLEFIELD|GATE|WEAPON|ARMOR|STRUCTURE|PROP|ENVIRONMENT|GLOBAL_REF)_[0-9]{3}$/.test(entry.asset_id)) {
+  if (!/^(DEITY|CHARACTER|CREATURE|ENEMY|BATTLEFIELD|GATE|WEAPON|ARMOR|STRUCTURE|PROP|ENVIRONMENT|GLOBAL_REF)_[0-9]{3}$/.test(entry.asset_id)) {
     push(issues, 'ERROR', entry.asset_id, 'asset_id', 'asset ID does not match stable ID contract');
   }
   if (entry.file_type && !allowedExtensions.has(entry.file_type)) push(warnings, 'WARNING', entry.asset_id, 'file_type', `file type ${entry.file_type} is not in supported type policy`);

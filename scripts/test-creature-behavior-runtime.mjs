@@ -30,7 +30,7 @@ assert.deepEqual(hub.creatureBehaviorRuntime?.creatureIds, ['TG-CREATURE-001', '
 
 const wretch = creatures.find(c => c.id === 'TG-CREATURE-001');
 const colossus = creatures.find(c => c.id === 'TG-CREATURE-002');
-const deity = deitys.find(t => t.id === 'TG-TITAN-001');
+const deity = deitys.find(t => t.id === 'TG-DEITY-001');
 assert.ok(wretch && colossus && deity, 'canonical Wretch, Colossus, and starter Deity required');
 assert.equal(wretch.combatRole, 'SWARMER');
 assert.equal(colossus.combatRole, 'BRUTE');

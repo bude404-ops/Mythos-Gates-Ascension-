@@ -192,7 +192,7 @@ def process_single(asset_name, token):
         return False
     
     # Determine output dir
-    if "TITAN" in asset_name:
+    if "DEITY" in asset_name:
         out_dir = OUTPUT_DIR / "Characters/Deities" / asset_name
     elif "CREATURE" in asset_name:
         out_dir = OUTPUT_DIR / "Characters/Creatures" / asset_name

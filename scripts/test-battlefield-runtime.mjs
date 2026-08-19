@@ -30,8 +30,8 @@ assert.ok(verticalSlice.qualityTargets.includes('boss phases'));
 assert.ok(verticalSlice.qualityTargets.includes('mobile bottom action bar'));
 assert.ok(qualityGate.id === 'TG-BATTLEFIELD-QUALITY-GATE-001');
 
-const deity = deitys.find(t => t.id === verticalSlice.canonDecision.starterDeity || t.id === 'TG-TITAN-001');
-assert.equal(deity.id, 'TG-TITAN-001');
+const deity = deitys.find(t => t.id === verticalSlice.canonDecision.starterDeity || t.id === 'TG-DEITY-001');
+assert.equal(deity.id, 'TG-DEITY-001');
 
 const terrain = buildBattlefieldTerrain(verticalSlice);
 assert.equal(terrain.grid.width, 7);
@@ -58,7 +58,7 @@ assert.ok(roster.every(enemy => enemy.stats.hp > 0 && enemy.stats.damage > 0));
 let state = createBattlefieldRuntimeState({ verticalSlice, deity: deity, creatures, seed: 29029 });
 assert.equal(state.battlefield.activeDeityLimit, 1);
 assert.equal(state.terrain.spaces.length, 49);
-assert.equal(state.deity.id, 'TG-TITAN-001');
+assert.equal(state.deity.id, 'TG-DEITY-001');
 assert.equal(state.enemies.length, 7);
 assert.equal(state.battlefield.mobileBottomActionBar, true);
 assert.deepEqual(state.battlefield.routeTypes.sort(), ['direct','optional','safe','tactical'].sort());

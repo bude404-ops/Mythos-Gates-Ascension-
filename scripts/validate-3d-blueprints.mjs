@@ -19,7 +19,7 @@ const allowedStatuses = new Set([
 ]);
 const readyStatuses = new Set(['READY_FOR_3D', 'MODEL_IN_PROGRESS', 'GAME_READY']);
 const sourceFiles = {
-  TITAN: 'data/deitys.json',
+  DEITY: 'data/deitys.json',
   CHARACTER: 'data/characters.json',
   CREATURE: 'data/creatures.json',
   CREATURE: 'data/creatures.json',
@@ -55,7 +55,7 @@ for (const dir of requiredDirs) {
 
 const ids = new Map();
 const expectedRequiredViewCounts = {
-  TITAN: 22,
+  DEITY: 22,
   CHARACTER: 22,
   CREATURE: 21,
   BATTLEFIELD: 20,

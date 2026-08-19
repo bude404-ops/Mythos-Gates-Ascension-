@@ -6,8 +6,8 @@ const contract = JSON.parse(fs.readFileSync('data/hosted-backend-boundary.json',
 assert.equal(validateBackendBoundaryContract(contract).ok, true);
 
 const backend = createLocalHostedBackendBoundary();
-const createdA = backend.createProfile({ playerId: 'TG-BACKEND-PLAYER-001', displayName: 'Cloud Gatebreaker', starterDeityId: 'TG-TITAN-003' }, { idempotencyKey: 'create-player' });
-const createdB = backend.createProfile({ playerId: 'TG-BACKEND-PLAYER-001', displayName: 'Cloud Gatebreaker', starterDeityId: 'TG-TITAN-003' }, { idempotencyKey: 'create-player' });
+const createdA = backend.createProfile({ playerId: 'TG-BACKEND-PLAYER-001', displayName: 'Cloud Gatebreaker', starterDeityId: 'TG-DEITY-003' }, { idempotencyKey: 'create-player' });
+const createdB = backend.createProfile({ playerId: 'TG-BACKEND-PLAYER-001', displayName: 'Cloud Gatebreaker', starterDeityId: 'TG-DEITY-003' }, { idempotencyKey: 'create-player' });
 assert.deepEqual(createdA, createdB, 'profile creation must be idempotent');
 assert.equal(createdA.saveVersion, 1);
 

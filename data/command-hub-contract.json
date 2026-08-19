@@ -94,7 +94,7 @@
         "amount": 0
       },
       {
-        "id": "MG-RES-TITAN-RELICS",
+        "id": "MG-RES-DEITY-RELICS",
         "name": "Deity Relics",
         "amount": 0
       }
@@ -195,7 +195,7 @@
     },
     {
       "id": "deitys",
-      "label": "TITANS",
+      "label": "DEITIES",
       "routes": [
         "deitys",
         "deity-detail",
@@ -312,7 +312,7 @@
     "Every bottom nav button routes to a real implemented screen or LockedContentPanel.",
     "getNextRecommendedAction resolves a real mission handoff.",
     "Startup save validation never silently overwrites corrupt data.",
-    "Command Hub smoke completes BOOT -> LOAD -> HUB -> TITANS -> BACK -> BATTLE -> RETURN -> HUB.",
+    "Command Hub smoke completes BOOT -> LOAD -> HUB -> DEITIES -> BACK -> BATTLE -> RETURN -> HUB.",
     "MG-DEV-026 Awakening onboarding exposes exactly three canon starter Deities.",
     "MG-DEV-026 Awakening path tracks 12 roster-journey beats from starter choice to faction trial handoff.",
     "Full roster remains hidden until Awakening completion and no starter selection requires payment.",
@@ -495,7 +495,7 @@
   "economyUiPriority": {
     "primary": [
       "PLAY",
-      "TITANS",
+      "DEITIES",
       "BATTLE",
       "CAMPAIGN",
       "EVENTS"

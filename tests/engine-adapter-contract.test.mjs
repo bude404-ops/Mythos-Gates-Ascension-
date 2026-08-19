@@ -13,7 +13,7 @@ assert.equal(summary.canonicalRules.activeDeityCount, 1);
 
 const dataset = loadSourceDataset({ includeMissions: true });
 const deity = mapDeityForEngine(dataset.deitys[0]);
-assert.equal(deity.id, 'TG-TITAN-001');
+assert.equal(deity.id, 'TG-DEITY-001');
 assert.ok(deity.combatStats.hp > 0);
 assert.ok(Array.isArray(deity.abilityNames));
 

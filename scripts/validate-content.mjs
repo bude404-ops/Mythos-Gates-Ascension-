@@ -415,7 +415,7 @@ for (const task of data.tasks) {
 const soloSchema = data.soloBattleStateSchema;
 if(soloSchema.status !== 'IMPLEMENTED') fail('Solo battle state schema must be IMPLEMENTED');
 for (const field of ['stateShape','reducers','resourceRules','qualityGates','verticalSliceDefault']) if(!soloSchema[field]) fail(`Solo battle state schema missing ${field}`);
-if(soloSchema.verticalSliceDefault.starterDeityId !== 'TG-TITAN-001') fail('Solo battle starter Deity must remain canonical Aten-Ra');
+if(soloSchema.verticalSliceDefault.starterDeityId !== 'TG-DEITY-001') fail('Solo battle starter Deity must remain canonical Aten-Ra');
 if(!deityIds.has(soloSchema.verticalSliceDefault.starterDeityId)) fail('Solo battle schema references invalid starter Deity');
 for (const enemyId of soloSchema.verticalSliceDefault.starterEnemies || []) if(!creatureIds.has(enemyId)) fail(`Solo battle schema invalid starter enemy ${enemyId}`);
 for (const reducer of ['createInitialSoloBattleState','applyDeityAction','revealEnemyIntents','resolveEnemyPhase','applyReaction','applyTerrainTick','evaluateObjectives']) if(!soloSchema.reducers.some(r => r.name === reducer)) fail(`Solo battle schema missing reducer ${reducer}`);
@@ -455,7 +455,7 @@ if(data.endgameDashboard.sampleState && JSON.stringify(data.endgameDashboard.sam
 for (const file of ['index.html','game/index.html','game/tactical-map-prototype.html','mini-app/mythos-gates-ascension.html']) if(!exists(file)) fail(`Missing required HTML file ${file}`);
 const game = fs.readFileSync(path.join(root,'game/index.html'),'utf8');
 const hubRuntime = fs.readFileSync(path.join(root,'game/command-hub-runtime.mjs'),'utf8');
-if(!game.includes('OPEN THE TITAN GATE') || !game.includes('createCommandHubRuntime') || !game.includes('Command Hub')) fail('Playable Command Hub integrity check failed');
+if(!game.includes('OPEN THE DEITY GATE') || !game.includes('createCommandHubRuntime') || !game.includes('Command Hub')) fail('Playable Command Hub integrity check failed');
 for (const token of ['BOOT_STAGES','validatePlayerState','getNextRecommendedAction','AssetManager','AudioManager','deriveNotifications','bottomNav','Deity Roster','Realm Network','Lore Registry','Playable Solo Battle','battleBasic','battleObjective','normalizeProgression','createRewardCache','claimReward','pendingRewards','rewardHistory','STARTER_DEITY_IDS','AWAKENING_BEATS','completeAwakeningBeat','awakeningProgress','starterDeities','ensureOnboarding','Awakening Protocol','chooseStarter','advanceAwakeningBeat','finishAwakening','TRIAL_DEITY_IDS','TRIAL_MODES','trialDeities','ensureTrials','createTrialAttempt','resolveTrialAttempt','trialsScreen','startTrial','finishTrial','Trial Favor','Temporary Loadout','borrowed gear does not','raidProgress','raidRules','stageProfiles','problemTags','preferredCounters','carryRisk','tierCaps','approachRules','createRaidAttempt','resolveRaidStage','completeRaidAttempt','resolveRaidEconomy','applyRaidMastery','Raid Tokens','Signature Alloy','Mastery Seals','raidScreen','startRaid','raidResolve','raidClaim','The Gate Warden']) if(!hubRuntime.includes(token)) fail(`Command Hub runtime missing ${token}`);
 const browserBattle = fs.readFileSync(path.join(root,'game/browser-battle-engine.mjs'),'utf8');
 for (const token of ['createBattleState','applyDeityAction','applyReaction','autoAdvanceEnemyTurn','summarizeBattle','chooseEnemyIntent','HOLLOW_SWARMER','GATEBORN_BRUTE','OBJECTIVE_CRUSH','enemyIntentCounts','enemyBehaviorTags','enemyCounterplay','behaviorTag','counterplay','ISOLATION_PUNISH','OBJECTIVE_DENIAL','ARCHETYPE_BUDGETS','resolveMissionScaling','scaleEnemyForMission','enemyScaling','threatBudget']) if(!browserBattle.includes(token)) fail(`Browser battle engine missing ${token}`);
@@ -569,7 +569,7 @@ if(!hub.qualityGates?.some(g => g.includes('TG-DEV-030 all 8 Art Director scale 
 if(!hub.defaultPlayerState?.selectedDeities?.every(id => deityIds.has(id))) fail('Command Hub default PlayerState references invalid Deity');
 if(!missionIds.has(hub.defaultPlayerState?.campaignProgress?.currentMissionId)) fail('Command Hub default PlayerState references invalid mission');
 if((hub.navigationTabs || []).length !== 5) fail('Command Hub must expose five bottom navigation sections');
-if(!hub.qualityGates?.some(g => g.includes('BOOT -> LOAD -> HUB -> TITANS -> BACK -> BATTLE -> RETURN -> HUB'))) fail('Command Hub smoke quality gate missing');
+if(!hub.qualityGates?.some(g => g.includes('BOOT -> LOAD -> HUB -> DEITIES -> BACK -> BATTLE -> RETURN -> HUB'))) fail('Command Hub smoke quality gate missing');
 const assetRegistry = data.assetRegistry;
 if(assetRegistry.status !== 'IMPLEMENTED' || !Array.isArray(assetRegistry.assets) || assetRegistry.assets.length < data.factions.length * 3) fail('Command Hub asset registry incomplete');
 for (const asset of assetRegistry.assets) {
@@ -581,13 +581,13 @@ const finalArt = assetRegistry.finalArtIntegration;
 if(finalArt?.status !== 'IMPLEMENTED') fail('Command Hub final art integration manifest missing');
 const finalBg = assetRegistry.assets.filter(a => a.assetType === 'COMMAND_HUB_BACKGROUND' && a.status === 'FINAL').length;
 const finalGates = assetRegistry.assets.filter(a => a.assetType === 'GATE' && a.status === 'FINAL').length;
-const finalStarterDeities = assetRegistry.assets.filter(a => a.assetType === 'DEITY_PRESENTATION' && a.status === 'FINAL' && ['TG-TITAN-001','TG-TITAN-006','TG-TITAN-009'].includes(a.entityId)).length;
+const finalStarterDeities = assetRegistry.assets.filter(a => a.assetType === 'DEITY_PRESENTATION' && a.status === 'FINAL' && ['TG-DEITY-001','TG-DEITY-006','TG-DEITY-009'].includes(a.entityId)).length;
 if(finalBg < data.factions.length) fail('Command Hub final art integration missing faction backgrounds');
 if(finalGates < data.realmCodex.length) fail('Command Hub final art integration missing realm gates');
 if(finalStarterDeities !== 3) fail('Command Hub final art integration missing starter Deity slots');
 if(!hub.commandHubFinalArtIntegration || hub.commandHubFinalArtIntegration.status !== 'IMPLEMENTED') fail('Command Hub contract missing final art integration block');
 const tactical = fs.readFileSync(path.join(root,'game/tactical-map-prototype.html'),'utf8');
-for (const token of ['__TG_TACTICAL_MAP_READY__','const REALMS','const TITANS','function getMovableTiles','function enemyTurn','toggleCamera','realm-selector']) if(!tactical.includes(token)) fail(`Tactical prototype missing ${token}`);
+for (const token of ['__TG_TACTICAL_MAP_READY__','const REALMS','const DEITIES','function getMovableTiles','function enemyTurn','toggleCamera','realm-selector']) if(!tactical.includes(token)) fail(`Tactical prototype missing ${token}`);
 if(!data.visualScreens.some(s => s.id === 'TG-SCREEN-TACTICAL-MAP-PROTOTYPE' && s.slug === 'tactical-map-prototype')) fail('Visual QA missing tactical map prototype screen');
 const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','Game Preview','Visual QA','Tactical Map Prototype','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
