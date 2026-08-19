@@ -70,3 +70,25 @@ The dimensional gateways are called "Mythos Gates."
 The colossal divine beings are called Deities. Players channel Avatars — divine projections — of their chosen Deity.
 
 The extradimensional civilization-domains are called "Realms."
+
+## Cross-Realm Campaign Rule
+
+- **Trial (MAP-000)**: Earth — neutral ground, generic battle. Used when selecting a deity.
+- **Mission 1**: Avatar fights in their deity's HOME realm. Full power, no penalty.
+- **Missions 2-20**: Avatar ventures INTO OTHER REALMS. Each chapter targets a different enemy realm. Realm penalties apply.
+- The Gate opens paths to all seven realms — the Hollow threat is multi-realm, not local.
+- Avatars earn MORE Belief in enemy territory (harder fights = more faith).
+- Only the first mission is home defense. Everything after is the avatar proving power abroad.
+
+
+
+## Avatar System (Core Mechanic)
+
+- Players manifest **Avatars** of the Deities — not the Deities themselves.
+- The Deity is real, powerful, and beyond direct mortal control. The Avatar is the player's conduit.
+- **Avatar death = respawn at deity domain.** The Deity is never harmed.
+- Progression is driven by **Belief** and **Influence** — not direct divine power scaling.
+- God-scale visuals maintained in all realms (Option A) — Avatars tower over city-scale structures.
+- Combat is **solo-only**. No ally or healing triggers.
+- Each faction has a Faction Base belief bonus + Deity-specific faith path triggers.
+- Earth is neutral territory for dungeons and cross-realm combat.

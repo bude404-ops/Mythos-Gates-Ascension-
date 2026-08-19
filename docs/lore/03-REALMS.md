@@ -137,3 +137,13 @@ Visual identity: broken gods, identity-drained cities, primordial monsters, dist
 ## Empire Conflict Rule
 
 Empyrean versus Infernal Dominion is not good versus evil. Empyrean represents ORDER. Infernal Dominion represents POWER. Both can produce honorable individuals. Both can commit terrible acts.
+
+## Cross-Realm Traversal
+
+Avatars do not stay in their home realm. After the initial home defense mission, the Gate opens corridors to other realms. Each realm has its own environmental hazards, enemy types, and tactical challenges:
+
+- **In enemy realms**: Avatars suffer realm penalties (reduced power, hostile terrain)
+- **In home realm**: Full power (only Mission 1)
+- **On Earth**: Neutral (trial dungeon only — MAP-000)
+
+The campaign structure sends each avatar through 6 other realms across 5 chapters, building toward a climax in the most dangerous enemy territory.
