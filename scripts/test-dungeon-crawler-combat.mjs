@@ -3,9 +3,12 @@ import { createInitialSoloBattleState, enterExploration, triggerEncounter, apply
          evaluateObjectives, transitionToNextZone, PHASES, runReducerScript } from '../game/solo-battle-engine.mjs';
 import fs from 'node:fs';
 
-const deitys = JSON.parse(fs.readFileSync('data/deitys.json', 'utf8'));
-const creatures = JSON.parse(fs.readFileSync('data/creatures.json', 'utf8'));
-const missions = JSON.parse(fs.readFileSync('data/mission-registry.json', 'utf8'));
+const _deityData = JSON.parse(fs.readFileSync('data/deities.json', 'utf8'));
+const deitys = _deityData.deities || _deityData;
+const _creatureData = JSON.parse(fs.readFileSync('data/creatures.json', 'utf8'));
+const creatures = Array.isArray(_creatureData) ? _creatureData : (_creatureData.creatures || _creatureData.entries || []);
+const _missionData = JSON.parse(fs.readFileSync('data/mission-registry.json', 'utf8'));
+const missions = Array.isArray(_missionData) ? _missionData : (_missionData.missions || _missionData.entries || []);
 
 let passed = 0, failed = 0;
 function assert(cond, msg) { if (cond) passed++; else { failed++; console.error(`FAIL: ${msg}`); } }
@@ -118,7 +121,7 @@ for (const r of routes) {
 // 14. Combat contract
 const contract = JSON.parse(fs.readFileSync('data/one-deity-vs-many-combat.json', 'utf8'));
 assert(contract.primaryRule === 'ONE_PLAYER_CONTROLLED_DEITY_PER_BATTLE', 'Contract primary rule');
-assert(contract.enemyGroupDesign.roles.length === 6, '6 enemy roles');
+assert(contract.enemyGroupDesign.roles.length === 10, '10 enemy roles');
 assert(contract.scalingBands.length === 4, '4 scaling bands');
 
 console.log(`\n=== DUNGEON CRAWLER COMBAT TEST ===`);

@@ -73,7 +73,7 @@ function currentSpace(state) { return state.terrain.spaces.find(s => key(s.posit
 
 export function createInitialSoloBattleState({ battleId, missionId, deity, enemies, terrain, objectives, seed = 1 }) {
   if (!deity?.id) throw new Error('A solo battle requires one active deity.');
-  if (!Array.isArray(enemies) || enemies.length < 1) throw new Error('A solo battle requires at least one enemy.');
+  if (!Array.isArray(enemies)) throw new Error('Enemies must be an array.');
   const state = {
     battleId,
     missionId,
@@ -436,3 +436,55 @@ export function runReducerScript(initialState, actions) {
   }, initialState);
 }
 
+
+export function enterExploration(state) {
+  return { ...state, phase: PHASES.EXPLORATION, round: state.round || 1 };
+}
+
+export function triggerEncounter(state, encounter = {}) {
+  const enemies = encounter.enemies || [];
+  const mapped = enemies.map((e, i) => {
+    const stats = e.stats || {};
+    const hp = stats.hp ?? e.hp ?? 100;
+    return {
+      id: e.id || `enemy-${i}`,
+      instanceId: `${e.id || 'enemy'}-${i + 1}`,
+      name: e.name || 'Enemy',
+      archetype: e.combatRole || e.aiProfile?.archetype || 'GRUNT',
+      hp,
+      maxHp: hp,
+      damage: stats.damage ?? stats.atk ?? e.damage ?? 10,
+      armor: stats.armor ?? stats.def ?? e.armor ?? 0,
+      resistance: stats.resistance ?? e.resistance ?? 0,
+      range: stats.range ?? e.range ?? 1,
+      movement: stats.movement ?? e.movement ?? 2,
+      threatWeight: stats.threatWeight ?? 1,
+      position: { x: e.position?.x ?? (4 + (i % 3)), y: e.position?.y ?? (3 + Math.floor(i / 3)) },
+      intent: null,
+      vulnerable: false,
+      status: []
+    };
+  });
+  return {
+    ...state,
+    phase: PHASES.PLAYER,
+    enemies: mapped,
+    zoneName: encounter.zoneName || state.zoneName || 'Unknown',
+    round: 1
+  };
+}
+
+export function transitionToNextZone(state, transition = {}) {
+  return {
+    ...state,
+    phase: PHASES.EXPLORATION,
+    missionId: transition.nextZoneId || state.missionId,
+    round: 1,
+    resources: {
+      ...state.resources,
+      momentum: (state.resources?.momentum || 0) + (transition.rewards?.momentum || 0),
+      divinity: (state.resources?.divinity || 0) + (transition.rewards?.divinity || 0),
+      solarCharge: (state.resources?.solarCharge || 0) + (transition.rewards?.solarCharge || 0)
+    }
+  };
+}

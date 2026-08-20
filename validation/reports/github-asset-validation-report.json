@@ -1,0 +1,25 @@
+{
+  "id": "MG-GITHUB-ASSET-VALIDATION-REPORT-001",
+  "status": "VALID",
+  "generated": "2026-08-20",
+  "registryEntries": 136,
+  "graphNodes": 136,
+  "issues": [],
+  "warnings": [],
+  "checks": [
+    "file_exists",
+    "valid_file_type",
+    "correct_asset_id",
+    "correct_location",
+    "stable_id_unique",
+    "source_preserved",
+    "version_shape",
+    "dependency_graph",
+    "blueprint_link",
+    "MASTER_SCALE_link",
+    "asset_manifest",
+    "reserved_id_ledger",
+    "canon_review_flag"
+  ],
+  "rule": "Validation reports VALID, WARNING, ERROR, or NEEDS_REVIEW. It never rewrites source assets."
+}

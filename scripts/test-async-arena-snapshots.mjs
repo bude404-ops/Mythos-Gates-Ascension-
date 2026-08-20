@@ -10,7 +10,7 @@ const dashboard = read('data/endgame-dashboard.json');
 const tasks = read('data/development-tasks.json');
 const mini = fs.readFileSync('mini-app/mythos-gates-ascension.html', 'utf8');
 const deityIds = new Set(deitys.map(t => t.id));
-const soloIds = new Set(solo.deities.map(t => t.id));
+const soloIds = new Set(solo.deitys.map(t => t.id));
 
 assert.equal(arena.status, 'IMPLEMENTED');
 assert.equal(arena.mode, 'ASYNCHRONOUS');
