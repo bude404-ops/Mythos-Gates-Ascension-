@@ -5,7 +5,7 @@
   "factionId": "MG-FACTION-007",
   "faction": "Infernal Dominion",
   "rarity": "Mythic God",
-  "role": "Warrior",
+  "role": "Caster",
   "abilities": [
     "Lucifer \u2014 Black-Iron Clause Cut Anchor",
     "Blood-Wax Contract Technique \u2014 Bastion",
@@ -13,18 +13,17 @@
     "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
   ],
   "stats": {
-    "hp": 52,
-    "attack": 10,
-    "range": 2,
-    "energy": 5,
-    "speed": 2,
-    "armor": 19,
-    "resistance": 12,
-    "critChance": 7,
-    "accuracy": 82,
-    "evasion": 4,
-    "guardBreak": 8,
-    "combatPower": 238
+    "hp": 44,
+    "attack": 13,
+    "range": 3,
+    "speed": 3,
+    "armor": 9,
+    "resistance": 14,
+    "critChance": 9,
+    "accuracy": 84,
+    "evasion": 7,
+    "guardBreak": 6,
+    "combatPower": 236
   },
   "equipment": [
     "Lucifer Bulwark Goetic Chain-Crown Blade",
@@ -214,5 +213,7 @@
   "playableClassification": "God",
   "species": "Deity",
   "characterType": "Playable Deity",
-  "rosterClass": "Deity Roster"
+  "rosterClass": "Deity Roster",
+  "faith_trigger": "Caster",
+  "combatRole": "Caster"
 }
