@@ -5,11 +5,11 @@
   "campaignType": "Elite",
   "status": "Production Ready",
   "tone": "restrained mythic tactical",
-  "briefing": "Mythos Gates briefing: Elite: Resonate the Bell-Metal Resonance Steps: Forward Claim. Enter Bell-Metal Resonance Steps on Choir-Vault Discord Ascent through The Choir-Vault Gate while the Gate remains Wound Gate leaking memory-burning radiance. Reference deity voice is Shekinah, but the player still chooses one deity from the faction roster. Objective: With one selected deity, break the first enemy pressure line in the elite-tuned Bell-Metal Resonance Steps, secure the outer defense, and deny the Hollow a foothold in the outer dungeon.",
+  "briefing": "Mythos Gates briefing: Elite: Resonate the Bell-Metal Resonance Steps: Forward Claim. Enter Bell-Metal Resonance Steps on Choir-Vault Discord Ascent through The Choir-Vault Gate while the Gate remains Wound Gate leaking memory-burning radiance. Reference deity voice is Jophiel, but the player still chooses one deity from the faction roster. Objective: With one selected deity, break the first enemy pressure line in the elite-tuned Bell-Metal Resonance Steps, secure the outer defense, and deny the Hollow a foothold in the outer dungeon.",
   "lines": {
     "missionIntro": [
       {
-        "speaker": "Shekinah Divine Voice",
+        "speaker": "Jophiel Divine Voice",
         "text": "The choir does not forgive discord; it measures it. The Bell-Metal Resonance Steps will know whether one deity is enough."
       }
     ],
@@ -27,13 +27,13 @@
     ],
     "victory": [
       {
-        "speaker": "Shekinah Divine Voice",
+        "speaker": "Jophiel Divine Voice",
         "text": "The discord thins; the ascent keeps its shape."
       }
     ],
     "defeat": [
       {
-        "speaker": "Shekinah Divine Voice",
+        "speaker": "Jophiel Divine Voice",
         "text": "Withdraw. The Choir-Vault Gate has learned too much from this attempt."
       }
     ],
@@ -44,7 +44,7 @@
       }
     ]
   },
-  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
   "visualDirection": "Frame Bell-Metal Resonance Steps as a combat node in Choir-Vault Discord Ascent; white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.",
   "updated": "2026-08-16",
   "mythosGatesDialogueRecreation": {
@@ -54,9 +54,9 @@
     "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable deity language.",
     "soloRule": "Dialogue supports one active god or goddess in the field."
   },
-  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
   "routeId": "MG-DUNGEON-ROUTE-006",
   "routeName": "Choir-Vault Discord Ascent",
   "routeRoomName": "Bell-Metal Resonance Steps",
-  "entryGate": "The Choir-Vault Gate"
+  "entryGate": "The Choir-Vault Gate",
+  "npcWitness": "Oriel Edict-Keeper"
 }

@@ -78,7 +78,7 @@ const entries = (registry.entries || [])
   .sort((a, b) => a.priority - b.priority || a.asset_id.localeCompare(b.asset_id));
 
 const queue = {
-  id: 'TG-ARTWORK-BUILD-QUEUE-001',
+  id: 'MG-ARTWORK-BUILD-QUEUE-001',
   status: entries.length ? 'READY_FOR_SOURCE_ASSETS' : 'SOURCE_ASSETS_COMPLETE',
   generated: TODAY,
   totalNeeded: entries.length,

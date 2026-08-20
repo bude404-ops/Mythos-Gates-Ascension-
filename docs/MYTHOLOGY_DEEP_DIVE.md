@@ -50,7 +50,7 @@ The deities are the TRUE divine beings. Human cultures (Egyptians, Norse, Greeks
 - Weeps tears of GOLD. Seidr magic. Chooses who dies in battle. Takes half the dead.
 - Physical: Tall, beautiful, powerful warrior-queen.
 
-### Frigg (Allmother)
+### Skadi (Allmother)
 - Blue or white robes. Falcon-cloak. Keys at waist. Spinning wheel, distaff.
 - Knows ALL fates but tells NO ONE. Made everything swear not to harm Baldur (except mistletoe).
 - Hall: Fensalir (Marsh Hall). Weaves the clouds. Silent seer. Regal, composed, woven aesthetic.
@@ -148,11 +148,11 @@ The deities are the TRUE divine beings. Human cultures (Egyptians, Norse, Greeks
 - Daniel: "Body like topaz, face like lightning, eyes like flaming torches, arms and legs like burnished bronze."
 - Herald. Trumpet, scroll, lily. Announces births, revelations, judgments. Lightning-white + bronze aura.
 
-### Sophia (Divine Wisdom)
+### Raphael (Divine Wisdom)
 - Gnostic: Feminine divine principle. Wisdom personified. "The thought of God."
 - Radiant, serene, knowing. Soft white-gold + sapphire-blue aura.
 
-### Shekinah (Divine Presence)
+### Jophiel (Divine Presence)
 - Kabbalistic: Indwelling presence of God. Radiant glory. Cloud of glory, pillar of fire.
 - Blinding radiance. Pure light. Blinding white-gold + fire aura.
 

@@ -98,7 +98,7 @@ writeJson(path.join(MANIFEST_ROOT, 'RESERVED_ASSET_IDS.json'), {
 });
 
 writeJson(REPORT_PATH, {
-  id: 'TG-GITHUB-ASSET-MANIFEST-REPORT-001',
+  id: 'MG-GITHUB-ASSET-MANIFEST-REPORT-001',
   status: needsCanonReview.length ? 'NEEDS_REVIEW' : 'VALID',
   generated: TODAY,
   manifestsGenerated: written.length,

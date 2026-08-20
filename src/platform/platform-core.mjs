@@ -14,9 +14,9 @@ const REQUIRED_EVENT_TYPES = Object.freeze([
 ]);
 
 export function createPlatformProfile({
-  playerId = 'TG-PLAYER-LOCAL-001',
+  playerId = 'MG-PLAYER-LOCAL-001',
   displayName = 'First Gatebreaker',
-  starterDeityId = 'TG-DEITY-003',
+  starterDeityId = 'MG-DEITY-003',
   now = DEFAULT_CLOCK
 } = {}) {
   const createdAt = now();
@@ -41,7 +41,7 @@ export function createPlatformProfile({
     },
     progression: {
       completedMissions: [],
-      unlockedCampaigns: ['TG-CAMPAIGN-ATEN-RA-001'],
+      unlockedCampaigns: ['MG-CAMPAIGN-ATEN-RA-001'],
       unlockedFeatures: ['COMMAND_HUB', 'SOLO_BATTLE', 'CAMPAIGN_SELECT']
     },
     ledger: [],

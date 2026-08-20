@@ -34,7 +34,7 @@ const objectives = [
 
 let state = createInitialSoloBattleState({ battleId: schema.verticalSliceDefault.battleId, missionId: schema.verticalSliceDefault.missionId, deity: deity, enemies: enemyRoster, terrain, objectives, seed: 777 });
 assert.equal(state.phase, PHASES.PLAYER);
-assert.equal(state.deity.id, 'TG-DEITY-001');
+assert.equal(state.deity.id, 'MG-DEITY-001');
 assert.equal(state.enemies.length, 3);
 assert.equal(state.resources.momentum, 0);
 
@@ -81,20 +81,20 @@ state = evaluateObjectives(state, { objectiveId: 'stabilize_solar_seals', progre
 assert.equal(state.objectives[0].status, 'COMPLETE');
 assert.equal(state.phase, PHASES.PLAYER);
 
-const scripted = runReducerScript(createInitialSoloBattleState({ battleId: 'DETERMINISM-A', missionId: 'TG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 42 }), [
+const scripted = runReducerScript(createInitialSoloBattleState({ battleId: 'DETERMINISM-A', missionId: 'MG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 42 }), [
   { reducer: 'applyDeityAction', action: { type: 'MOVE', to: { x: 2, y: 1 } } },
   { reducer: 'applyDeityAction', action: { type: 'FOCUS' } },
   { reducer: 'evaluateObjectives', objectiveEvent: { objectiveId: 'destroy_hollow_anchor', progress: 1 } }
 ]);
-const scriptedAgain = runReducerScript(createInitialSoloBattleState({ battleId: 'DETERMINISM-A', missionId: 'TG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 42 }), [
+const scriptedAgain = runReducerScript(createInitialSoloBattleState({ battleId: 'DETERMINISM-A', missionId: 'MG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 42 }), [
   { reducer: 'applyDeityAction', action: { type: 'MOVE', to: { x: 2, y: 1 } } },
   { reducer: 'applyDeityAction', action: { type: 'FOCUS' } },
   { reducer: 'evaluateObjectives', objectiveEvent: { objectiveId: 'destroy_hollow_anchor', progress: 1 } }
 ]);
 assert.deepEqual(scripted, scriptedAgain, 'reducer script must be deterministic');
 assert.ok(scripted.resources.momentum <= 100 && scripted.resources.divinity <= 100);
-const normalScaling = resolveMissionScaling({ mission:{ id:'TG-SCALE-NORMAL', recommendedPower:135, campaignType:'Normal' } });
-const eliteScaling = resolveMissionScaling({ mission:{ id:'TG-SCALE-ELITE', recommendedPower:1020, campaignType:'Elite' } });
+const normalScaling = resolveMissionScaling({ mission:{ id:'MG-SCALE-NORMAL', recommendedPower:135, campaignType:'Normal' } });
+const eliteScaling = resolveMissionScaling({ mission:{ id:'MG-SCALE-ELITE', recommendedPower:1020, campaignType:'Elite' } });
 assert.equal(normalScaling.tier, 'NORMAL');
 assert.equal(eliteScaling.tier, 'ELITE');
 assert.ok(normalScaling.powerScalar <= 1.12, 'normal campaign scaling must stay capped');
@@ -103,7 +103,7 @@ const scaledSwarm = scaleEnemyForMission(enemyRoster[0], normalScaling, 0);
 const scaledBrute = scaleEnemyForMission(enemyRoster.find(e=>e.combatRole==='BRUTE') || enemyRoster[2], normalScaling, 2);
 assert.equal(scaledSwarm.scalingProfile.tier, 'NORMAL');
 assert.ok(scaledBrute.scalingProfile.threatBudget >= scaledSwarm.scalingProfile.threatBudget, 'brute should carry higher threat budget than swarmer');
-const browserBattle = createBrowserBattleState({ battleId:'SCALING-SMOKE', missionId:'TG-SCALE-NORMAL', deity: deity, enemies:enemyRoster, terrain, objectives, scaling:normalScaling });
+const browserBattle = createBrowserBattleState({ battleId:'SCALING-SMOKE', missionId:'MG-SCALE-NORMAL', deity: deity, enemies:enemyRoster, terrain, objectives, scaling:normalScaling });
 assert.equal(browserBattle.telemetry.enemyScaling.tier, 'NORMAL');
 assert.ok(browserBattle.telemetry.enemyScaling.threatBudget > 0);
 assert.ok(browserBattle.enemies.every(e=>e.scalingProfile?.powerScalar === normalScaling.powerScalar));

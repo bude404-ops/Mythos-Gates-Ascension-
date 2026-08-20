@@ -136,7 +136,7 @@ for (const faction of data.factions) {
 }
 
 const report = {
-  id: 'TG-CONTINUITY-BALANCE-AUDIT-001',
+  id: 'MG-CONTINUITY-BALANCE-AUDIT-001',
   generated: new Date().toISOString(),
   status: issues.length ? 'FAIL' : warnings.length ? 'PASS_WITH_WARNINGS' : 'PASS',
   issues,

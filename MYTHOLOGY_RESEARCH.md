@@ -25,7 +25,7 @@
 - Most beautiful, golden hair, blue eyes, Brisingamen necklace
 - Falcon-feather cloak, chariot pulled by cats, seiðr magic
 - Tears of gold, takes half the battle-dead to Sessrumnir
-### Frigg → Queen of the Aesir
+### Skadi → Queen of the Aesir
 - White/blue robes, spinning wheel, distaff, loom, Fensalir (Marsh Hall)
 - Falcon-cloak, keys at waist, knows all fates but silent
 ### Thor → Thunder God
@@ -82,10 +82,10 @@
 ### Gabriel → Messenger of God
 - Wings, trumpet, white lily, scroll, scepter, annunciation
 - Radiant, "standing in the presence of God"
-### Sophia → Divine Wisdom
+### Raphael → Divine Wisdom
 - Gnostic aeon, radiant feminine, intense blue light, Pleroma
 - "More beautiful than the sun," highest aeon
-### Shekinah → Divine Presence
+### Jophiel → Divine Presence
 - Pillar of Fire/Cloud, feminine aspect of God, radiant light
 - Indwelling presence, protective, nurturing
 

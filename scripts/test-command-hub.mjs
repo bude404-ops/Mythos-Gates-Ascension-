@@ -79,8 +79,8 @@ async function runBrowserSmoke(){
     await page.waitForFunction(() => Boolean(window.TGHub?.enterHub), null, { timeout: 30000 });
     await page.evaluate(() => window.TGHub.enterHub());
     assert.equal(await page.evaluate(() => window.TGHub.state.route), 'awakening');
-    await page.evaluate(() => window.TGHub.chooseStarter('TG-DEITY-003'));
-    assert.equal(await page.evaluate(() => window.TGHub.state.player.onboarding.starterDeityId), 'TG-DEITY-003');
+    await page.evaluate(() => window.TGHub.chooseStarter('MG-DEITY-003'));
+    assert.equal(await page.evaluate(() => window.TGHub.state.player.onboarding.starterDeityId), 'MG-DEITY-003');
     assert.equal(await page.evaluate(() => window.TGHub.awakeningProgress().total), 12);
     assert.equal(await page.evaluate(() => window.TGHub.state.player.onboarding.fullRosterHidden), true);
     await page.evaluate(() => window.TGHub.finishAwakening());
@@ -113,12 +113,12 @@ async function runBrowserSmoke(){
     const metrics = await page.evaluate(({ missionTactical, raidPreviewStages }) => {
       window.TGHub.raidClaim();
       const p = window.TGHub.state.player;
-      const firstRaidCache = (p.campaignProgress.pendingRewards||[]).find(r=>r.missionId==='TG-RAID-001') || null;
+      const firstRaidCache = (p.campaignProgress.pendingRewards||[]).find(r=>r.missionId==='MG-RAID-001') || null;
       window.TGHub.openTab('raid');
       window.TGHub.startRaid();
       for (const approach of ['BALANCED','GUARDED','AGGRESSIVE','BALANCED','GUARDED']) window.TGHub.raidResolve(approach);
       window.TGHub.raidClaim();
-      const raidCaches = (p.campaignProgress.pendingRewards||[]).filter(r=>r.missionId==='TG-RAID-001');
+      const raidCaches = (p.campaignProgress.pendingRewards||[]).filter(r=>r.missionId==='MG-RAID-001');
       const replayRaidCache = raidCaches.find(r=>r !== firstRaidCache && r.economy?.firstClear === false) || null;
       const masteryRows = Object.values(p.raidProgress.masteryByDeityId||{});
       const renderBeforeClaim = window.TGHub.state.perf.renderCount;
@@ -133,7 +133,7 @@ async function runBrowserSmoke(){
       const nonPlayableCharacters = (window.__TG_COMMAND_HUB_DATA__.characters||[]).filter(c => c.playable === false && c.heroCanonLock === 'NO_PLAYABLE_HERO_CANON').length;
       const artPanel = document.querySelector('[data-art-provenance]');
       const artStatuses = [...document.querySelectorAll('[data-art-status]')].map(n=>n.dataset.artStatus);
-      return { route: window.TGHub.state.route, selected: p.selectedDeities.length, selectedDeityId: p.selectedDeities[0], onboarding: p.onboarding, awakeningProgress: window.TGHub.awakeningProgress(p), currentMissionTactical: missionTactical, tacticalVisible: Boolean(missionTactical), notifications: p.notifications.length, pendingRewards: p.campaignProgress.pendingRewards.length || 0, trialCompletions: p.deityTrials.completions.length || 0, trialFavor: p.deityTrials.trialFavor || 0, trialCache: (p.campaignProgress.pendingRewards||[]).find(r=>r.missionType==='DEITY_TRIAL') || null, trialVisible: true, raidClears: p.raidProgress.completions.length || 0, raidBest: p.raidProgress.bestScores?.['TG-RAID-001:RAID_NORMAL'] || 0, raidMastery: masteryRows[0] || null, raidCache: firstRaidCache, replayRaidCache, weeklyTokens: p.raidProgress.weeklyTokens?.['TG-RAID-001:RAID_NORMAL'] || 0, raidResolvedStages: raidPreviewStages, economyVisible: true, perf, renderBeforeClaim, renderAfterClaim, partialBeforeClaim, partialAfterClaim, characterCount, nonPlayableCharacters, artReport, artPanelVisible: Boolean(artPanel), artStatuses };
+      return { route: window.TGHub.state.route, selected: p.selectedDeities.length, selectedDeityId: p.selectedDeities[0], onboarding: p.onboarding, awakeningProgress: window.TGHub.awakeningProgress(p), currentMissionTactical: missionTactical, tacticalVisible: Boolean(missionTactical), notifications: p.notifications.length, pendingRewards: p.campaignProgress.pendingRewards.length || 0, trialCompletions: p.deityTrials.completions.length || 0, trialFavor: p.deityTrials.trialFavor || 0, trialCache: (p.campaignProgress.pendingRewards||[]).find(r=>r.missionType==='DEITY_TRIAL') || null, trialVisible: true, raidClears: p.raidProgress.completions.length || 0, raidBest: p.raidProgress.bestScores?.['MG-RAID-001:RAID_NORMAL'] || 0, raidMastery: masteryRows[0] || null, raidCache: firstRaidCache, replayRaidCache, weeklyTokens: p.raidProgress.weeklyTokens?.['MG-RAID-001:RAID_NORMAL'] || 0, raidResolvedStages: raidPreviewStages, economyVisible: true, perf, renderBeforeClaim, renderAfterClaim, partialBeforeClaim, partialAfterClaim, characterCount, nonPlayableCharacters, artReport, artPanelVisible: Boolean(artPanel), artStatuses };
     }, { missionTactical, raidPreviewStages });
     assert.ok(metrics.raidClears >= 1);
     assert.equal(errors.length, 0, errors.join('\n'));
@@ -152,9 +152,9 @@ for (let attempt = 1; attempt <= 3; attempt++) {
 await closeServer();
 if (!metrics) throw lastError;
 assert.equal(metrics.route, 'command');
-assert.equal(metrics.selectedDeityId, 'TG-DEITY-003');
+assert.equal(metrics.selectedDeityId, 'MG-DEITY-003');
 assert.equal(metrics.onboarding?.status, 'COMPLETE');
-assert.equal(metrics.onboarding?.starterDeityId, 'TG-DEITY-003');
+assert.equal(metrics.onboarding?.starterDeityId, 'MG-DEITY-003');
 assert.ok(metrics.onboarding?.milestones?.includes('STARTER_DEITY_BOUND'));
 assert.ok(metrics.onboarding?.milestones?.includes('AWAKENING_MISSION_UNLOCKED'));
 assert.ok(metrics.onboarding?.milestones?.includes('FULL_ROSTER_UNLOCKED_AFTER_AWAKENING'));

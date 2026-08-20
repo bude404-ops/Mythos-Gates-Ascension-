@@ -42,11 +42,11 @@ The Storm-Rooted Aesir Holds is defined by iron oaths, rune storms, mountain for
 - **Lore Function:** Freyja embodies the Asgardian answer to the Ascension Collapse: battery shaped into Realm doctrine.
 - **Chapter Hook:** When Freyja enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
 - **Visual Context:** Frame Freyja against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
-### Frigg (MG-DEITY-015)
+### Skadi (MG-DEITY-015)
 - **Role:** Dominion
-- **Lore Function:** Frigg embodies the Asgardian answer to the Ascension Collapse: controller shaped into Realm doctrine.
-- **Chapter Hook:** When Frigg enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
-- **Visual Context:** Frame Frigg against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
+- **Lore Function:** Skadi embodies the Asgardian answer to the Ascension Collapse: controller shaped into Realm doctrine.
+- **Chapter Hook:** When Skadi enters a chapter, the scene should test Asgardian's core tension: Their oaths make them unbreakable, but every vow becomes a chain when the war changes faster than tradition allows.
+- **Visual Context:** Frame Skadi against stormsteel, carved runes, blue-white lightning, wolf banners, giant mead halls, snow-black cliffs while preserving their individual silhouette and role readability.
 ### Thor (MG-DEITY-018)
 - **Role:** Fracture
 - **Lore Function:** Thor embodies the Asgardian answer to the Ascension Collapse: breaker shaped into Realm doctrine.

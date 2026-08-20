@@ -5,7 +5,7 @@
   "campaignType": "Normal",
   "status": "Production Ready",
   "tone": "restrained mythic tactical",
-  "briefing": "Mythos Gates briefing: Burn the Aten Hand-Ray Vestibule: Name at the Gate. Enter Aten Hand-Ray Vestibule on Sun-Scale Verdict Descent through The Sun-Scale Gate while the Gate remains Stable Gate under Ma’at strain. Reference deity voice is Sutekh, but the player still chooses one deity from the faction roster. Objective: With one selected deity, cross the threshold in the Aten Hand-Ray Vestibule, secure the first route marker, and mark the Gate law before the Hollow can read the name.",
+  "briefing": "Mythos Gates briefing: Burn the Aten Hand-Ray Vestibule: Name at the Gate. Enter Aten Hand-Ray Vestibule on Sun-Scale Verdict Descent through The Sun-Scale Gate while the Gate remains Stable Gate under Ma\u2019at strain. Reference deity voice is Sutekh, but the player still chooses one deity from the faction roster. Objective: With one selected deity, cross the threshold in the Aten Hand-Ray Vestibule, secure the first route marker, and mark the Gate law before the Hollow can read the name.",
   "lines": {
     "missionIntro": [
       {
@@ -22,7 +22,7 @@
     "midBattle": [
       {
         "speaker": "Gameplay Director",
-        "text": "Read the room law first: Exploit or avoid the route rule: Ma’at scale fields that immobilize anything out of balance"
+        "text": "Read the room law first: Exploit or avoid the route rule: Ma\u2019at scale fields that immobilize anything out of balance"
       }
     ],
     "victory": [
@@ -44,8 +44,8 @@
       }
     ]
   },
-  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
-  "visualDirection": "Frame Aten Hand-Ray Vestibule as a entry node in Sun-Scale Verdict Descent; Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light.",
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
+  "visualDirection": "Frame Aten Hand-Ray Vestibule as a entry node in Sun-Scale Verdict Descent; Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma\u2019at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light.",
   "updated": "2026-08-16",
   "mythosGatesDialogueRecreation": {
     "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
@@ -54,9 +54,9 @@
     "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable deity language.",
     "soloRule": "Dialogue supports one active god or goddess in the field."
   },
-  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
   "routeId": "MG-DUNGEON-ROUTE-001",
   "routeName": "Sun-Scale Verdict Descent",
   "routeRoomName": "Aten Hand-Ray Vestibule",
-  "entryGate": "The Sun-Scale Gate"
+  "entryGate": "The Sun-Scale Gate",
+  "npcWitness": "Mesha Gate-Scribe"
 }

@@ -5,7 +5,7 @@
   "campaignType": "Elite",
   "status": "Production Ready",
   "tone": "restrained mythic tactical",
-  "briefing": "Mythos Gates briefing: Elite: Burn the Lion Gate Kill Zone: Hidden Cache. Enter Lion Gate Kill Zone on Sun-Scale Verdict Descent through The Sun-Scale Gate while the Gate remains Stable Gate under Ma’at strain. Reference deity voice is Sutekh, but the player still chooses one deity from the faction roster. Objective: With one selected deity, open the relic detour in the elite-tuned Lion Gate Kill Zone, secure the lore cache, and take the reward without awakening the wrong memory.",
+  "briefing": "Mythos Gates briefing: Elite: Burn the Lion Gate Kill Zone: Hidden Cache. Enter Lion Gate Kill Zone on Sun-Scale Verdict Descent through The Sun-Scale Gate while the Gate remains Stable Gate under Ma\u2019at strain. Reference deity voice is Sutekh, but the player still chooses one deity from the faction roster. Objective: With one selected deity, open the relic detour in the elite-tuned Lion Gate Kill Zone, secure the lore cache, and take the reward without awakening the wrong memory.",
   "lines": {
     "missionIntro": [
       {
@@ -44,8 +44,8 @@
       }
     ]
   },
-  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
-  "visualDirection": "Frame Lion Gate Kill Zone as a treasure or lore node in Sun-Scale Verdict Descent; Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light.",
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
+  "visualDirection": "Frame Lion Gate Kill Zone as a treasure or lore node in Sun-Scale Verdict Descent; Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma\u2019at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light.",
   "updated": "2026-08-16",
   "mythosGatesDialogueRecreation": {
     "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
@@ -54,9 +54,9 @@
     "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable deity language.",
     "soloRule": "Dialogue supports one active god or goddess in the field."
   },
-  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
   "routeId": "MG-DUNGEON-ROUTE-001",
   "routeName": "Sun-Scale Verdict Descent",
   "routeRoomName": "Lion Gate Kill Zone",
-  "entryGate": "The Sun-Scale Gate"
+  "entryGate": "The Sun-Scale Gate",
+  "npcWitness": "Mesha Gate-Scribe"
 }

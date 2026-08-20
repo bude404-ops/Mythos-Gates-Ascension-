@@ -5,11 +5,11 @@
   "campaignType": "Elite",
   "status": "Production Ready",
   "tone": "restrained mythic tactical",
-  "briefing": "Mythos Gates briefing: Elite: Remember the Cauldron Memory Grove: Hidden Cache. Enter Cauldron Memory Grove on Silver-Root Geas Labyrinth through The Silver-Root Gate while the Gate remains Sealed Gate with fae time bleed. Reference deity voice is Morrígan, but the player still chooses one deity from the faction roster. Objective: With one selected deity, open the relic detour in the elite-tuned Cauldron Memory Grove, secure the lore cache, and take the reward without awakening the wrong memory.",
+  "briefing": "Mythos Gates briefing: Elite: Remember the Cauldron Memory Grove: Hidden Cache. Enter Cauldron Memory Grove on Silver-Root Geas Labyrinth through The Silver-Root Gate while the Gate remains Sealed Gate with fae time bleed. Reference deity voice is Morrigan, but the player still chooses one deity from the faction roster. Objective: With one selected deity, open the relic detour in the elite-tuned Cauldron Memory Grove, secure the lore cache, and take the reward without awakening the wrong memory.",
   "lines": {
     "missionIntro": [
       {
-        "speaker": "Morrígan Divine Voice",
+        "speaker": "Morrigan Divine Voice",
         "text": "A geas is a road that remembers the foot that broke it. The Cauldron Memory Grove will know whether one deity is enough."
       }
     ],
@@ -27,13 +27,13 @@
     ],
     "victory": [
       {
-        "speaker": "Morrígan Divine Voice",
+        "speaker": "Morrigan Divine Voice",
         "text": "The root remembers obedience and opens one more ring."
       }
     ],
     "defeat": [
       {
-        "speaker": "Morrígan Divine Voice",
+        "speaker": "Morrigan Divine Voice",
         "text": "Withdraw. The Silver-Root Gate has learned too much from this attempt."
       }
     ],
@@ -44,7 +44,7 @@
       }
     ]
   },
-  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
   "visualDirection": "Frame Cauldron Memory Grove as a treasure or lore node in Silver-Root Geas Labyrinth; silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.",
   "updated": "2026-08-16",
   "mythosGatesDialogueRecreation": {
@@ -54,9 +54,9 @@
     "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable deity language.",
     "soloRule": "Dialogue supports one active god or goddess in the field."
   },
-  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
   "routeId": "MG-DUNGEON-ROUTE-005",
   "routeName": "Silver-Root Geas Labyrinth",
   "routeRoomName": "Cauldron Memory Grove",
-  "entryGate": "The Silver-Root Gate"
+  "entryGate": "The Silver-Root Gate",
+  "npcWitness": "Maeve Root-Memory"
 }

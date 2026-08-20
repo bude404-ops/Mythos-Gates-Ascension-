@@ -23,14 +23,14 @@ const browserEngine = fs.readFileSync('game/browser-battle-engine.mjs', 'utf8');
 const hubRuntime = fs.readFileSync('game/command-hub-runtime.mjs', 'utf8');
 
 assert.equal(contract.status, 'IMPLEMENTED');
-assert.equal(contract.taskId, 'TG-DEV-008');
-assert.equal(tasks.find(task => task.id === 'TG-DEV-008')?.status, 'COMPLETED');
+assert.equal(contract.taskId, 'MG-DEV-008');
+assert.equal(tasks.find(task => task.id === 'MG-DEV-008')?.status, 'COMPLETED');
 assert.equal(hub.creatureBehaviorRuntime?.status, 'IMPLEMENTED');
-assert.deepEqual(hub.creatureBehaviorRuntime?.creatureIds, ['TG-CREATURE-001', 'TG-CREATURE-002']);
+assert.deepEqual(hub.creatureBehaviorRuntime?.creatureIds, ['MG-CREATURE-001', 'MG-CREATURE-002']);
 
-const wretch = creatures.find(c => c.id === 'TG-CREATURE-001');
-const colossus = creatures.find(c => c.id === 'TG-CREATURE-002');
-const deity = deitys.find(t => t.id === 'TG-DEITY-001');
+const wretch = creatures.find(c => c.id === 'MG-CREATURE-001');
+const colossus = creatures.find(c => c.id === 'MG-CREATURE-002');
+const deity = deitys.find(t => t.id === 'MG-DEITY-001');
 assert.ok(wretch && colossus && deity, 'canonical Wretch, Colossus, and starter Deity required');
 assert.equal(wretch.combatRole, 'SWARMER');
 assert.equal(colossus.combatRole, 'BRUTE');
@@ -52,11 +52,11 @@ for (const token of [
   assert.ok(browserEngine.includes(token) || hubRuntime.includes(token), `runtime missing ${token}`);
 }
 
-const mission = { id: 'TG-DEV-008-TEST', recommendedPower: 135, campaignType: 'Normal' };
+const mission = { id: 'MG-DEV-008-TEST', recommendedPower: 135, campaignType: 'Normal' };
 const scaling = resolveMissionScaling({ mission });
 const enemies = [wretch, wretch, colossus].map((enemy, index) => scaleEnemyForMission(enemy, scaling, index));
 let state = createBattleState({
-  battleId: 'TG-DEV-008-BEHAVIOR-SMOKE',
+  battleId: 'MG-DEV-008-BEHAVIOR-SMOKE',
   missionId: mission.id,
   deity,
   enemies,
@@ -99,7 +99,7 @@ while ((reacted.phase === PHASES.ENEMY || reacted.phase === PHASES.REACTION) && 
 assert.ok(reacted.telemetry.objectiveProgress <= 0, 'objective denial should reduce progress telemetry when OBJECTIVE_CRUSH resolves');
 assert.ok(reacted.eventLog.some(row => row.type === 'OBJECTIVE_CRUSH'), 'OBJECTIVE_CRUSH event not logged');
 
-let roarState = createBattleState({ battleId: 'TG-DEV-008-ROAR', missionId: mission.id, deity, enemies: [scaleEnemyForMission(colossus, scaling, 0)], scaling });
+let roarState = createBattleState({ battleId: 'MG-DEV-008-ROAR', missionId: mission.id, deity, enemies: [scaleEnemyForMission(colossus, scaling, 0)], scaling });
 roarState.deity.position = { x: 3, y: 3 };
 roarState.enemies[0].position = { x: 3, y: 4 };
 roarState.round = 3;
@@ -111,7 +111,7 @@ assert.ok(roarState.eventLog.some(row => row.type === 'FRACTURE_ROAR'), 'FRACTUR
 assert.ok(roarState.resources.momentum < 30, 'FRACTURE_ROAR should drain Momentum');
 assert.equal(roarState.phase, PHASES.REACTION);
 
-let stompState = createBattleState({ battleId: 'TG-DEV-008-STOMP', missionId: mission.id, deity, enemies: [scaleEnemyForMission(colossus, scaling, 0)], scaling });
+let stompState = createBattleState({ battleId: 'MG-DEV-008-STOMP', missionId: mission.id, deity, enemies: [scaleEnemyForMission(colossus, scaling, 0)], scaling });
 stompState.deity.position = { x: 3, y: 3 };
 stompState.enemies[0].position = { x: 3, y: 4 };
 stompState.round = 1;

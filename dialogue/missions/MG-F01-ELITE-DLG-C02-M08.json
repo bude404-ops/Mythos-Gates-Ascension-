@@ -5,7 +5,7 @@
   "campaignType": "Elite",
   "status": "Production Ready",
   "tone": "restrained mythic tactical",
-  "briefing": "Mythos Gates briefing: Elite: Judge the Khepri Dawn Loop Chamber: Lughching Law. Enter Khepri Dawn Loop Chamber on Sun-Scale Verdict Descent through The Sun-Scale Gate while the Gate remains Stable Gate under Ma’at strain. Reference deity voice is Amunet, but the player still chooses one deity from the faction roster. Objective: With one selected deity, solve the hazard layer in the elite-tuned Khepri Dawn Loop Chamber, secure the safe crossing, and reach the safe marker without feeding the Gate.",
+  "briefing": "Mythos Gates briefing: Elite: Judge the Khepri Dawn Loop Chamber: Lughching Law. Enter Khepri Dawn Loop Chamber on Sun-Scale Verdict Descent through The Sun-Scale Gate while the Gate remains Stable Gate under Ma\u2019at strain. Reference deity voice is Amunet, but the player still chooses one deity from the faction roster. Objective: With one selected deity, solve the hazard layer in the elite-tuned Khepri Dawn Loop Chamber, secure the safe crossing, and reach the safe marker without feeding the Gate.",
   "lines": {
     "missionIntro": [
       {
@@ -44,8 +44,8 @@
       }
     ]
   },
-  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
-  "visualDirection": "Frame Khepri Dawn Loop Chamber as a hazard node in Sun-Scale Verdict Descent; Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light.",
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
+  "visualDirection": "Frame Khepri Dawn Loop Chamber as a hazard node in Sun-Scale Verdict Descent; Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma\u2019at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light.",
   "updated": "2026-08-16",
   "mythosGatesDialogueRecreation": {
     "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
@@ -54,9 +54,9 @@
     "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable deity language.",
     "soloRule": "Dialogue supports one active god or goddess in the field."
   },
-  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
   "routeId": "MG-DUNGEON-ROUTE-001",
   "routeName": "Sun-Scale Verdict Descent",
   "routeRoomName": "Khepri Dawn Loop Chamber",
-  "entryGate": "The Sun-Scale Gate"
+  "entryGate": "The Sun-Scale Gate",
+  "npcWitness": "Mesha Gate-Scribe"
 }

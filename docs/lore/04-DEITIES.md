@@ -117,7 +117,7 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 
 - Odin — Endurance (Odin's Sacrifice)
 - Thor — Dominion (Storm-Hammer Dominion)
-- Frigg — Counter (Weaver's Foreknowledge)
+- Skadi — Counter (Weaver's Foreknowledge)
 - Freyja — Conduit (Seiðr War-Chant)
 - Mordun — Disruption
 - Veyra — Endurance
@@ -153,7 +153,7 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 
 - Dagda — Endurance (Cauldron of Endless Plenty)
 - Brigid — Conduit (Forge-Flame Conduit)
-- Morrígan — Shadow (Raven-Shadow Prophecy)
+- Morrigan — Shadow (Raven-Shadow Prophecy)
 - Lugh — Disruption (Many-Skilled Striker)
 - Nimue — Disruption
 - Cernan — Endurance
@@ -166,7 +166,7 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 - Michael — Counter (Aegis of the Choral Host)
 - Gabriel — Range (Annunciation Herald)
 - Raphael — Endurance (Sacred Ward Endurance)
-- Uriel — Dominion (Light-Fire Dominion)
+- Jophiel — Dominion (Light-Fire Dominion)
 - Elyndra — Disruption
 - Orison — Endurance
 - Vespera — Range

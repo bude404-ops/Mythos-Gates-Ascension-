@@ -56,14 +56,14 @@ state = applyTerrainTick(state);
 assert(state.phase === PHASES.TERRAIN, 'Terrain phase');
 
 // 8. Zone transition (dungeon crawler)
-state = transitionToNextZone(state, { nextZoneId: 'TG-F01-C01-M02', rewards: { momentum: 10, divinity: 5, solarCharge: 15 } });
+state = transitionToNextZone(state, { nextZoneId: 'MG-F01-C01-M02', rewards: { momentum: 10, divinity: 5, solarCharge: 15 } });
 assert(state.phase === PHASES.EXPLORATION, 'EXPLORATION after zone transition');
-assert(state.missionId === 'TG-F01-C01-M02', 'Mission updated to next zone');
+assert(state.missionId === 'MG-F01-C01-M02', 'Mission updated to next zone');
 assert(state.round === 1, 'Round reset on zone transition');
 
 // 9. Full script execution
 const state2 = createInitialSoloBattleState({
-  battleId: 'test-002', missionId: 'TG-F01-C01-M01',
+  battleId: 'test-002', missionId: 'MG-F01-C01-M01',
   deity: { id: deity.id, name: deity.name, role: deity.role, stats: deity.stats },
   enemies: [],
   terrain: { spaces: [{ position: {x:1,y:1}, type: 'FLOOR', illuminated: true }] },

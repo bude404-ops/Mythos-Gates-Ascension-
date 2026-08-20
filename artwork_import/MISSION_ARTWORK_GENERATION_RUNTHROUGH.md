@@ -44,7 +44,7 @@ Generate the faction kit as a coherent style family before deep mission variatio
 ### Asgardian
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_003 (Storm-Oath Bridge), BATTLEFIELD_004 (Marble Sky Arena)
-- Core Deities: DEITY_010 (The Odin Stormvein), DEITY_011 (Thor Rune-Mountain), DEITY_012 (Frigg Iron Tempest), DEITY_013 (Freyja Valkstorm), DEITY_014 (Mordun Frost-Anvil), DEITY_015 (Veyra Thunderloom), DEITY_016 (Ragnor Skybreaker), DEITY_017 (Ullr Snow-Crown), DEITY_018 (Sigrun Oathflare)
+- Core Deities: DEITY_010 (The Odin Stormvein), DEITY_011 (Thor Rune-Mountain), DEITY_012 (Skadi Iron Tempest), DEITY_013 (Freyja Valkstorm), DEITY_014 (Mordun Frost-Anvil), DEITY_015 (Veyra Thunderloom), DEITY_016 (Ragnor Skybreaker), DEITY_017 (Ullr Snow-Crown), DEITY_018 (Sigrun Oathflare)
 - Campaign characters: CHARACTER_002 (Hrodda Oath-Witness)
 
 ### Olympian
@@ -62,13 +62,13 @@ Generate the faction kit as a coherent style family before deep mission variatio
 ### Tuatha
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_005 (Moon-Grove Rootlabyrinth)
-- Core Deities: DEITY_037 (Dagda Root-Crown), DEITY_038 (Brigid Emerald Oath), DEITY_039 (Morrígan Moon-Grove), DEITY_040 (Lugh Granite Bough), DEITY_041 (Nimue Silver Pool), DEITY_042 (Cernan Wild Vale), DEITY_043 (Ailbhe Thorn-Song), DEITY_044 (Oghma Stone Script), DEITY_045 (Tara Dawn Barrow)
+- Core Deities: DEITY_037 (Dagda Root-Crown), DEITY_038 (Brigid Emerald Oath), DEITY_039 (Morrigan Moon-Grove), DEITY_040 (Lugh Granite Bough), DEITY_041 (Nimue Silver Pool), DEITY_042 (Cernan Wild Vale), DEITY_043 (Ailbhe Thorn-Song), DEITY_044 (Oghma Stone Script), DEITY_045 (Tara Dawn Barrow)
 - Campaign characters: CHARACTER_005 (Maeve Root-Memory)
 
 ### Empyrean
 Generate the faction kit as a coherent style family before deep mission variations.
 - Campaign environments: BATTLEFIELD_011 (Choir Vault Ascent), BATTLEFIELD_012 (Broken Heaven Engine)
-- Core Deities: DEITY_046 (Michael), DEITY_047 (Gabriel Dawnborn Axis), DEITY_048 (Raphael Radiant Spear), DEITY_049 (Uriel Law Warden), DEITY_050 (Elyndra Choir Crown), DEITY_051 (Orison White Citadel), DEITY_052 (Vespera Mercy Blade), DEITY_053 (Axiom Gate Choir), DEITY_054 (Theon Still Horizon)
+- Core Deities: DEITY_046 (Michael), DEITY_047 (Gabriel Dawnborn Axis), DEITY_048 (Raphael Radiant Spear), DEITY_049 (Jophiel Law Warden), DEITY_050 (Elyndra Choir Crown), DEITY_051 (Orison White Citadel), DEITY_052 (Vespera Mercy Blade), DEITY_053 (Axiom Gate Choir), DEITY_054 (Theon Still Horizon)
 - Campaign characters: CHARACTER_006 (Oriel Edict-Keeper)
 
 ### Infernal Dominion

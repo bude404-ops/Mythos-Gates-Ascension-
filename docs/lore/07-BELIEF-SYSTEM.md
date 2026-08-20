@@ -138,10 +138,10 @@ Every deity's faith path maps to one of these 9 mechanical triggers. The player 
 **Mechanic:** Thor's hammer Mjolnir is the storm that interrupts the giant's blow. The Avatar earns bonus Belief by breaking the enemy's attacks mid-swing, proving that no force can withstand the thunder.
 **Mythology:** Thor is the defender of Midgard, whose hammer shatters giant weapons before they land. He does not wait — he strikes first and breaks the enemy's momentum. Every interrupted attack is Mjolnir meeting flesh.
 
-#### Frigg — "Foresight's Ward"
+#### Skadi — "Foresight's Ward"
 **Trigger:** Bulwark — Win without taking a hit from the boss
-**Mechanic:** Frigg sees every possible future. The Avatar earns bonus Belief by dodging every attack, proving that the goddess who knows all fates cannot be touched by surprise.
-**Mythology:** Frigg knows the fate of all things but speaks it to no one. She extracted oaths from all things to protect Baldr — she is the weaver of fate who sees every attack before it is thrown. Winning untouched is the proof: she already saw it coming.
+**Mechanic:** Skadi sees every possible future. The Avatar earns bonus Belief by dodging every attack, proving that the goddess who knows all fates cannot be touched by surprise.
+**Mythology:** Skadi knows the fate of all things but speaks it to no one. She extracted oaths from all things to protect Baldr — she is the weaver of fate who sees every attack before it is thrown. Winning untouched is the proof: she already saw it coming.
 
 #### Freyja — "Seiðr Battle-Trance"
 **Trigger:** Dominion — Win while controlling 60%+ of battlefield nodes
@@ -205,10 +205,10 @@ Every deity's faith path maps to one of these 9 mechanical triggers. The player 
 **Mechanic:** Dagda's cauldron never runs empty — each ability chains into the next like abundance flowing from the never-ending harvest. The Avatar earns bonus Belief by chaining abilities, proving that the good god's power is inexhaustible.
 **Mythology:** The Dagda is the god of life, death, and abundance. His cauldron feeds all who come — it never empties. His club kills with one end and revives with the other. He is the cycle of give-and-return. Combo chains are his cauldron: each ability pours into the next, never running dry.
 
-#### Morrígan — "Phantom Queen's Deflection"
+#### Morrigan — "Phantom Queen's Deflection"
 **Trigger:** Counter — Win after blocking/parrying 5+ enemy attacks
-**Mechanic:** The Morrígan shifts forms and deflects fate itself. The Avatar earns bonus Belief by parrying and blocking, proving that the phantom queen controls the battlefield by redirecting the enemy's own force.
-**Mythology:** The Morrígan is the phantom queen of war, fate, and death. She shifts shape — raven, wolf, eel, heifer — to confound and redirect. She does not meet force with force; she meets it with transformation. Every parried blow is the phantom queen shifting form at the last instant.
+**Mechanic:** The Morrigan shifts forms and deflects fate itself. The Avatar earns bonus Belief by parrying and blocking, proving that the phantom queen controls the battlefield by redirecting the enemy's own force.
+**Mythology:** The Morrigan is the phantom queen of war, fate, and death. She shifts shape — raven, wolf, eel, heifer — to confound and redirect. She does not meet force with force; she meets it with transformation. Every parried blow is the phantom queen shifting form at the last instant.
 
 #### Brigid — "Flame's Forge"
 **Trigger:** Counter — Win after blocking/parrying 5+ enemy attacks
@@ -239,10 +239,10 @@ Every deity's faith path maps to one of these 9 mechanical triggers. The player 
 **Mechanic:** Raphael is the healing light that sustains. The Avatar earns bonus Belief by staying above 50% HP, proving that the divine healer's light keeps the Avatar from falling.
 **Mythology:** Raphael is the archangel of healing — the divine physician whose light mends what is broken. His power is not in destruction but in the preservation of the divine form. Staying above the threshold is his healing light actively sustaining the Avatar — the body refuses to fall because the light will not let it.
 
-#### Uriel — "Fire of God's Wrath"
+#### Jophiel — "Fire of God's Wrath"
 **Trigger:** Range — Win with 5+ ranged kills
-**Mechanic:** Uriel's fire strikes from across the battlefield — the flame of God reaches everywhere. The Avatar earns bonus Belief by eliminating enemies at range, proving that divine fire cannot be outrun.
-**Mythology:** Uriel is the archangel of divine fire — the flame that purifies and destroys. His fire is not bound by distance; it is the wrath of the divine made manifest. Every ranged kill is Uriel's fire crossing the battlefield to find its target.
+**Mechanic:** Jophiel's fire strikes from across the battlefield — the flame of God reaches everywhere. The Avatar earns bonus Belief by eliminating enemies at range, proving that divine fire cannot be outrun.
+**Mythology:** Jophiel is the archangel of divine fire — the flame that purifies and destroys. His fire is not bound by distance; it is the wrath of the divine made manifest. Every ranged kill is Jophiel's fire crossing the battlefield to find its target.
 
 ---
 

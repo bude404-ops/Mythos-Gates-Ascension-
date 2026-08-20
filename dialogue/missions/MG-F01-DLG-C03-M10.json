@@ -5,12 +5,12 @@
   "campaignType": "Normal",
   "status": "Production Ready",
   "tone": "restrained mythic tactical",
-  "briefing": "Mythos Gates briefing: Burn the Ma’at Scale Hall: Elite Lock. Enter Ma’at Scale Hall on Sun-Scale Verdict Descent through The Sun-Scale Gate while the Gate remains Stable Gate under Ma’at strain. Reference deity voice is Sutekh, but the player still chooses one deity from the faction roster. Objective: With one selected deity, defeat the elite lock against Lion-Gate Oathbreaker Captain inside the Ma’at Scale Hall and prove the active deity can endure the trial alone.",
+  "briefing": "Mythos Gates briefing: Burn the Ma\u2019at Scale Hall: Elite Lock. Enter Ma\u2019at Scale Hall on Sun-Scale Verdict Descent through The Sun-Scale Gate while the Gate remains Stable Gate under Ma\u2019at strain. Reference deity voice is Sutekh, but the player still chooses one deity from the faction roster. Objective: With one selected deity, defeat the elite lock against Lion-Gate Oathbreaker Captain inside the Ma\u2019at Scale Hall and prove the active deity can endure the trial alone.",
   "lines": {
     "missionIntro": [
       {
         "speaker": "Sutekh Divine Voice",
-        "text": "The scale waits for weight, not noise. The Ma’at Scale Hall will know whether one deity is enough."
+        "text": "The scale waits for weight, not noise. The Ma\u2019at Scale Hall will know whether one deity is enough."
       }
     ],
     "enemyIntroduction": [
@@ -40,12 +40,12 @@
     "codex": [
       {
         "speaker": "Lore Director",
-        "text": "The Solar Dominion of Khepra is the source Realm; mortal myth is only the later echo. This beat documents Ma’at Scale Hall as part of Sun-Scale Verdict Descent."
+        "text": "The Solar Dominion of Khepra is the source Realm; mortal myth is only the later echo. This beat documents Ma\u2019at Scale Hall as part of Sun-Scale Verdict Descent."
       }
     ]
   },
-  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
-  "visualDirection": "Frame Ma’at Scale Hall as a elite node in Sun-Scale Verdict Descent; Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma’at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light.",
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
+  "visualDirection": "Frame Ma\u2019at Scale Hall as a elite node in Sun-Scale Verdict Descent; Aten sun-discs with life-giving hand-rays, electrum collars, nemes-like light mantles, faience turquoise and lapis inlays, black Nile silt glass, red desert jasper, scarab engines, Ma\u2019at feather geometry, solar barque arcs, pylon harnesses, lion/cobra/falcon/jackal threshold masks, lotus-papyrus river courts, and white-gold noon light.",
   "updated": "2026-08-16",
   "mythosGatesDialogueRecreation": {
     "status": "PASS_1_DEITY_LANGUAGE_ALIGNED",
@@ -54,9 +54,9 @@
     "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable deity language.",
     "soloRule": "Dialogue supports one active god or goddess in the field."
   },
-  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
   "routeId": "MG-DUNGEON-ROUTE-001",
   "routeName": "Sun-Scale Verdict Descent",
-  "routeRoomName": "Ma’at Scale Hall",
-  "entryGate": "The Sun-Scale Gate"
+  "routeRoomName": "Ma\u2019at Scale Hall",
+  "entryGate": "The Sun-Scale Gate",
+  "npcWitness": "Mesha Gate-Scribe"
 }

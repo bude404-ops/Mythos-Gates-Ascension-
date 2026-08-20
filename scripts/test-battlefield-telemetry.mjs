@@ -46,7 +46,7 @@ const objectives = [
   { id: 'destroy_hollow_anchor', progress: 0, requiredProgress: 1, status: 'ACTIVE' }
 ];
 
-let state = createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-TEST-001', missionId: 'TG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 931 });
+let state = createInitialSoloBattleState({ battleId: 'MG-TELEMETRY-TEST-001', missionId: 'MG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 931 });
 state = applyDeityAction(state, { type: 'MOVE', to: { x: 2, y: 1 } });
 state = applyDeityAction(state, { type: 'FOCUS' });
 state = revealEnemyIntents(state);
@@ -63,11 +63,11 @@ state = resolveEnemyPhase(state);
 if (state.phase === 'REACTION_WINDOW') state = applyReaction(state, 'RESOLVE');
 state = applyTerrainTick(state);
 state = evaluateObjectives(state, { objectiveId: 'stabilize_solar_seals', progress: 2, momentum: 12, divinity: 12 });
-state = recordBossPhaseTelemetry(state, { bossId: 'TG-CREATURE-008', phaseIndex: 1, status: 'REACHED', reason: 'test reached' });
-state = recordBossPhaseTelemetry(state, { bossId: 'TG-CREATURE-008', phaseIndex: 1, status: 'FAILED', reason: 'gate pressure overflow' });
+state = recordBossPhaseTelemetry(state, { bossId: 'MG-CREATURE-008', phaseIndex: 1, status: 'REACHED', reason: 'test reached' });
+state = recordBossPhaseTelemetry(state, { bossId: 'MG-CREATURE-008', phaseIndex: 1, status: 'FAILED', reason: 'gate pressure overflow' });
 
 const summary = summarizeBattlefieldTelemetry(state);
-assert.equal(summary.runId, 'TG-TELEMETRY-TEST-001-931');
+assert.equal(summary.runId, 'MG-TELEMETRY-TEST-001-931');
 assert.ok(summary.replayabilityScore >= 0 && summary.replayabilityScore <= 100);
 assert.ok(summary.objectiveCompletionRate > 0);
 assert.ok(summary.hazardDamageShare >= 0);
@@ -75,16 +75,16 @@ assert.ok(summary.bossPhaseFailPoints.some(p => p.phase === 'phase_1'));
 assert.ok(state.eventLog.every(row => row.seq && row.family && row.runId));
 assert.ok(state.eventLog.some(row => row.type === 'OBJECTIVE_COMPLETE'));
 
-const scriptedA = runReducerScript(createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-DETERMINISM', missionId: 'TG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 11 }), [
+const scriptedA = runReducerScript(createInitialSoloBattleState({ battleId: 'MG-TELEMETRY-DETERMINISM', missionId: 'MG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 11 }), [
   { reducer: 'applyDeityAction', action: { type: 'MOVE', to: { x: 2, y: 1 } } },
   { reducer: 'applyDeityAction', action: { type: 'FOCUS' } },
-  { reducer: 'recordBossPhaseTelemetry', bossPhase: { bossId: 'TG-CREATURE-008', phaseIndex: 2, status: 'CLEARED', reason: 'deterministic clear' } },
+  { reducer: 'recordBossPhaseTelemetry', bossPhase: { bossId: 'MG-CREATURE-008', phaseIndex: 2, status: 'CLEARED', reason: 'deterministic clear' } },
   { reducer: 'evaluateObjectives', objectiveEvent: { objectiveId: 'destroy_hollow_anchor', progress: 1 } }
 ]);
-const scriptedB = runReducerScript(createInitialSoloBattleState({ battleId: 'TG-TELEMETRY-DETERMINISM', missionId: 'TG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 11 }), [
+const scriptedB = runReducerScript(createInitialSoloBattleState({ battleId: 'MG-TELEMETRY-DETERMINISM', missionId: 'MG-BATTLEFIELD-VS-001', deity: deity, enemies: enemyRoster, terrain, objectives, seed: 11 }), [
   { reducer: 'applyDeityAction', action: { type: 'MOVE', to: { x: 2, y: 1 } } },
   { reducer: 'applyDeityAction', action: { type: 'FOCUS' } },
-  { reducer: 'recordBossPhaseTelemetry', bossPhase: { bossId: 'TG-CREATURE-008', phaseIndex: 2, status: 'CLEARED', reason: 'deterministic clear' } },
+  { reducer: 'recordBossPhaseTelemetry', bossPhase: { bossId: 'MG-CREATURE-008', phaseIndex: 2, status: 'CLEARED', reason: 'deterministic clear' } },
   { reducer: 'evaluateObjectives', objectiveEvent: { objectiveId: 'destroy_hollow_anchor', progress: 1 } }
 ]);
 assert.deepEqual(summarizeBattlefieldTelemetry(scriptedA), summarizeBattlefieldTelemetry(scriptedB));

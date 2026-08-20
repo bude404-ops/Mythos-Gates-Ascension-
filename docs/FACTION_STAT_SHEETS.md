@@ -172,7 +172,7 @@
 **Ability 3 — Lightning Lance:** Long-range Storm beam. 380 ATK. Pierces all enemies in line. 12s cooldown.  
 **Ultimate — God of Thunder:** Thor channels lightning for 6s. All attacks become AoE Storm +30% ATK. Storm chain lightning on every hit.  
 
-### 007. Frigg — Dominion
+### 007. Skadi — Dominion
 **Mythology:** Heimdall — guardian, vigilance, the bridge  
 | Stat | Value |
 |------|-------|
@@ -188,9 +188,9 @@
 | DMG TYPE | Storm |
 | ROLE | Controller |
 
-**Passive — Bridge Watch:** Enemies that enter Frigg's range are Marked (+25% damage taken) for 4s.  
+**Passive — Bridge Watch:** Enemies that enter Skadi's range are Marked (+25% damage taken) for 4s.  
 **Ability 1 — Gjallar Horn:** Sound wave. 150 ATK. Pushes enemies back and Silences for 2s. 5s cooldown.  
-**Ability 2 — Rainbow Bridge:** Create a storm-bridge path. Frigg moves 50% faster on it. Enemies on it take 60 ATK/s. 7s cooldown.  
+**Ability 2 — Rainbow Bridge:** Create a storm-bridge path. Skadi moves 50% faster on it. Enemies on it take 60 ATK/s. 7s cooldown.  
 **Ability 3 — Vigilant Strike:** 320 ATK to Marked target. If target is Marked, consumes mark for +100% damage. 10s cooldown.  
 **Ultimate — Bifrost Shatter:** Shatters the ground in a massive line. 500 ATK Storm. All enemies in path are Stunned 3s.  
 
@@ -457,7 +457,7 @@
 **Ability 3 — Solas Burst:** 350 ATK Nature AoE. Generates 80 DE if it hits 3+ enemies. 11s cooldown.  
 **Ultimate — Lugh Samildánach:** 8s. All abilities cost 0 DE. Every ability cast grants +15% ATK (stacking).  
 
-### 019. Morrígan — Dominion
+### 019. Morrigan — Dominion
 **Mythology:** Brigid — flame, poetry, healing, forge  
 | Stat | Value |
 |------|-------|
@@ -473,11 +473,11 @@
 | DMG TYPE | Nature |
 | ROLE | Controller |
 
-**Passive — Sacred Flame:** Morrígan's attacks apply Burn (40 ATK/s for 3s, stacks 2x).  
+**Passive — Sacred Flame:** Morrigan's attacks apply Burn (40 ATK/s for 3s, stacks 2x).  
 **Ability 1 — Flame Lash:** 180 ATK Nature + Burn. Chains to 2 nearby enemies. 4s cooldown.  
 **Ability 2 — Forge Wall:** Create a fire wall. Enemies passing through take 100 ATK/s Burn. Blocks movement. 7s cooldown.  
 **Ability 3 — Poetic Fire:** 320 ATK AoE. All enemies with Burn take +50% damage from this ability. 11s cooldown.  
-**Ultimate — Brigid's Hearth:** 10s. Creates a sacred zone. Morrígan and allies heal 5% HP/s. Enemies take 150 ATK/s.  
+**Ultimate — Brigid's Hearth:** 10s. Creates a sacred zone. Morrigan and allies heal 5% HP/s. Enemies take 150 ATK/s.  
 
 ### 020. Lugh — Fracture
 **Mythology:** Morrigan — phantom queen, war, fate, death  
@@ -574,8 +574,8 @@
 **Ability 3 — Guiding Light:** 320 ATK Divine line. All enemies hit are Blinded for 3s. 11s cooldown.  
 **Ultimate — Raphael's Sanctuary:** 8s zone. Raphael is immune to damage. Heals 5% HP/s. Enemies inside take 100 ATK/s Divine.  
 
-### 024. Uriel — Fracture
-**Mythology:** Uriel — fire of God, punishment, repentance  
+### 024. Jophiel — Fracture
+**Mythology:** Jophiel — fire of God, punishment, repentance  
 | Stat | Value |
 |------|-------|
 | HP | 12500 |
@@ -594,7 +594,7 @@
 **Ability 1 — Flame Sword:** 260 ATK Divine + Burn. 3s cooldown.  
 **Ability 2 — Repentance:** Enemies take 200 ATK Divine. If they have Burn, Stuns for 2s and consumes Burn. 7s cooldown.  
 **Ability 3 — Divine Fire:** 450 ATK Divine AoE. Applies Burn to all hit. 13s cooldown.  
-**Ultimate — Uriel's Conflagration:** 800 ATK Divine in a massive cone. All enemies Burned for 5s. Uriel gains +40% ATK for 6s.  
+**Ultimate — Jophiel's Conflagration:** 800 ATK Divine in a massive cone. All enemies Burned for 5s. Jophiel gains +40% ATK for 6s.  
 
 ---
 

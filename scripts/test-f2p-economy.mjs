@@ -14,7 +14,7 @@ import {
 } from '../game/economy-runtime.mjs';
 
 const config = loadEconomyConfig();
-const player = { playerId: 'TEST', resources: [{ id: 'TG-RES-GATE-SHARDS', name: 'Gate Shards', amount: 120 }] };
+const player = { playerId: 'TEST', resources: [{ id: 'MG-RES-GATE-SHARDS', name: 'Gate Shards', amount: 120 }] };
 migratePlayerEconomy(player, config, new Date('2026-08-16T00:00:00Z'));
 assert.equal(player.economy.wallets.SHARDS, 120);
 assert.equal(player.economy.energy.amount, config.energy.maxEnergy);

@@ -121,7 +121,7 @@ if (imported.length) {
 }
 
 const report = {
-  id: 'TG-ARTWORK-IMPORT-REPORT-001',
+  id: 'MG-ARTWORK-IMPORT-REPORT-001',
   status: skipped.length ? (imported.length ? 'IMPORTED_WITH_SKIPS' : 'NO_IMPORTS') : (imported.length ? 'IMPORTED' : 'NO_DROPBOX_FILES'),
   generated: TODAY,
   importedCount: imported.length,

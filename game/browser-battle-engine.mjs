@@ -95,7 +95,7 @@ export function buildStarterTerrain(){
   for(let y=1;y<=5;y++) for(let x=1;x<=5;x++) spaces.push({ position:{x,y}, type:y>=4?'SOLAR_SEAL_COURT':x>=4&&y>=3?'GATE_MOUTH':x<=2&&y<=2?'SUNKEN_SUNLIT_STONE':'BROKEN_THRESHOLD', illuminated:(x<=2&&y<=2)||(y===4&&x<=3), hazard:(x===4&&y===3)||(x===5&&y===3)?'SOLAR_JUDGMENT':null });
   return { grid:{width:5,height:5}, spaces };
 }
-export function createBattleState({ battleId='TG-BATTLE-FIRST-GATE-001', missionId='TG-F01-C01-M01', deity, enemies, terrain=buildStarterTerrain(), objectives, seed=777, scaling=null }){
+export function createBattleState({ battleId='MG-BATTLE-FIRST-GATE-001', missionId='MG-F01-C01-M01', deity, enemies, terrain=buildStarterTerrain(), objectives, seed=777, scaling=null }){
   if(!deity?.id) throw new Error('Battle requires one active deity.');
   if(!Array.isArray(enemies)||!enemies.length) throw new Error('Battle requires enemies.');
   const tStats=deity.stats||{};

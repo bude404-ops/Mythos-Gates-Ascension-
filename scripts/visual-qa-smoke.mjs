@@ -32,7 +32,7 @@ const endgameDashboard = JSON.parse(readFileSync('data/endgame-dashboard.json', 
 const campaignPlayflow = JSON.parse(readFileSync('data/campaign-playflow-contract.json', 'utf8'));
 const miniAppHtml = readFileSync('mini-app/mythos-gates-ascension.html', 'utf8');
 const visualBaselines = JSON.parse(readFileSync('data/visual-baselines.json', 'utf8'));
-const visualReview = JSON.parse(readFileSync('visual/reviews/TG-VISUAL-QA-BASELINE-APPROVAL-001.json', 'utf8'));
+const visualReview = JSON.parse(readFileSync('visual/reviews/MG-VISUAL-QA-BASELINE-APPROVAL-001.json', 'utf8'));
 
 
 if (campaignPlayflow.status !== 'IMPLEMENTED' || campaignPlayflow.flow.length !== 7 || !campaignPlayflow.routeStates.includes('battle')) {
@@ -49,7 +49,7 @@ if (!visualBaselines.length || visualBaselines.some(b => !['APPROVED'].includes(
   console.error(JSON.stringify({ ok: false, visualBaselinesNotApproved: visualBaselines.filter(b => b.status !== 'APPROVED').map(b => b.id) }, null, 2));
   process.exit(1);
 }
-if (visualReview.status !== 'APPROVED' || visualReview.taskId !== 'TG-DEV-009' || visualReview.screens.length !== visualBaselines.length || !visualReview.requiredSmokeScreens.every(s => requiredScreens.includes(s))) {
+if (visualReview.status !== 'APPROVED' || visualReview.taskId !== 'MG-DEV-009' || visualReview.screens.length !== visualBaselines.length || !visualReview.requiredSmokeScreens.every(s => requiredScreens.includes(s))) {
   console.error(JSON.stringify({ ok: false, visualReviewArtifactInvalid: true }, null, 2));
   process.exit(1);
 }
@@ -102,7 +102,7 @@ if (JSON.stringify(endgameDashboard.sampleState || {}) !== '{}' || indexHtml.inc
   process.exit(1);
 }
 
-if (missions.filter(m => m.factionId === 'TG-FACTION-001' && m.campaignType === 'Normal').length !== 20 || missions.filter(m => m.factionId === 'TG-FACTION-001' && m.campaignType === 'Elite').length !== 20 || missionDialogue.length < missions.length || missionArtPackages.length < missions.length) {
+if (missions.filter(m => m.factionId === 'MG-FACTION-001' && m.campaignType === 'Normal').length !== 20 || missions.filter(m => m.factionId === 'MG-FACTION-001' && m.campaignType === 'Elite').length !== 20 || missionDialogue.length < missions.length || missionArtPackages.length < missions.length) {
   console.error(JSON.stringify({ ok: false, missionArchitectureInvalid: true }, null, 2));
   process.exit(1);
 }

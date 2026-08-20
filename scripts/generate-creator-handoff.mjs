@@ -156,12 +156,12 @@ const handoffPackets = [];
 for (const item of firstHandoff) {
   const entry = registryByAsset.get(item.assetId);
   if (!entry) { issues.push(`first-handoff: no registry asset for ${item.assetId}`); continue; }
-  const packet = packetForEntry(entry, { batchId: 'TG-3D-FIRST-HANDOFF-BATTLEFIELDS-001', priority: 'HIGH', reason: 'First 3D battlefield handoff batch from production queue.' });
+  const packet = packetForEntry(entry, { batchId: 'MG-3D-FIRST-HANDOFF-BATTLEFIELDS-001', priority: 'HIGH', reason: 'First 3D battlefield handoff batch from production queue.' });
   handoffPackets.push(packet);
   packets.push(packet);
-  writeJson(path.join(OUT_ROOT, 'TG-3D-FIRST-HANDOFF-BATTLEFIELDS-001', `${entry.asset_id}_${slug(entry.canonical_name)}.json`), packet);
+  writeJson(path.join(OUT_ROOT, 'MG-3D-FIRST-HANDOFF-BATTLEFIELDS-001', `${entry.asset_id}_${slug(entry.canonical_name)}.json`), packet);
 }
-batches.push({ id: 'TG-3D-FIRST-HANDOFF-BATTLEFIELDS-001', name: 'First 3D Battlefield Handoff Batch', type: '3D_BLUEPRINT_HANDOFF_BATCH', packetCount: handoffPackets.length });
+batches.push({ id: 'MG-3D-FIRST-HANDOFF-BATTLEFIELDS-001', name: 'First 3D Battlefield Handoff Batch', type: '3D_BLUEPRINT_HANDOFF_BATCH', packetCount: handoffPackets.length });
 
 const readme = `# Mythos Gates Creator Handoff Bundles
 
@@ -180,7 +180,7 @@ Batches: ${batches.map(batch => `${batch.id} (${batch.packetCount})`).join(', ')
 writeText(path.join(OUT_ROOT, 'README.md'), readme);
 
 const report = {
-  id: 'TG-CREATOR-HANDOFF-REPORT-001',
+  id: 'MG-CREATOR-HANDOFF-REPORT-001',
   schema: 'TG_CREATOR_HANDOFF_REPORT_V1',
   status: issues.length ? 'NEEDS_REVIEW' : 'VALID',
   generated: new Date().toISOString().slice(0, 10),

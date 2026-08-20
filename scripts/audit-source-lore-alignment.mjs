@@ -9,7 +9,7 @@ const oldScalePattern = /\b(one-active-Deity|one active deity?|three-Deity|one a
 const staleGenericPattern = /Low-tier gear component|not rewriting established Canon|distant pyramids|color language|museum version|generic RPG set dressing without faction/i;
 
 const factionCanon = {
-  'TG-FACTION-001': {
+  'MG-FACTION-001': {
     name: 'Aten Ra',
     realm: ['Solar Dominion of Khepra', 'Khepra'],
     source: ['Egyptian solar myth'],
@@ -17,7 +17,7 @@ const factionCanon = {
     gear: ['Ma’at was-sceptre', 'electrum wesekh', 'Khepri scarab', 'Uraeus'],
     avoidRegex: /Viking|Asgard|Olymp|Kami|Tuatha|Empyrean|Infernal|Norse|Greek|Japanese|Celtic|angelic|demonology/i,
   },
-  'TG-FACTION-002': {
+  'MG-FACTION-002': {
     name: 'Asgardian',
     realm: ['Storm-Rooted Aesir Holds', 'Aesir'],
     source: ['Norse saga myth'],
@@ -25,7 +25,7 @@ const factionCanon = {
     gear: ['rune-iron oath axe', 'stormsteel wolf-cloak', 'Yggdrasil thunder-root', 'Valkyrie'],
     avoidRegex: /Aten|Khepra|Olymp|Kami|Tuatha|Empyrean|Infernal|Egyptian|Greek|Japanese|Celtic|angelic|demonology/i,
   },
-  'TG-FACTION-003': {
+  'MG-FACTION-003': {
     name: 'Olympian',
     realm: ['Celestial Heights of Olympus', 'Olympus'],
     source: ['Greek divine court myth'],
@@ -33,7 +33,7 @@ const factionCanon = {
     gear: ['aegis laurel spear', 'living marble bronze', 'oracle ambrosia', 'Athena'],
     avoidRegex: /Aten|Khepra|Asgard|Kami|Tuatha|Empyrean|Infernal|Egyptian|Norse|Japanese|Celtic|angelic|demonology/i,
   },
-  'TG-FACTION-004': {
+  'MG-FACTION-004': {
     name: 'Kami',
     realm: ['Sacred Kingdoms'],
     source: ['Japanese kami', 'Shinto shrine'],
@@ -41,15 +41,15 @@ const factionCanon = {
     gear: ['mirror-talisman spirit blade', 'lacquered shimenawa', 'foxfire magatama', 'kitsune'],
     avoidRegex: /Aten|Khepra|Asgard|Olymp|Tuatha|Empyrean|Infernal|Egyptian|Norse|Greek|Celtic|angelic|demonology/i,
   },
-  'TG-FACTION-005': {
+  'MG-FACTION-005': {
     name: 'Tuatha',
     realm: ['Avalora'],
     source: ['Celtic and Irish fae myth'],
-    anchors: ['sídhe', 'silver branch', 'moon-oak', 'Dagda', 'Lugh', 'Morrígan', 'geas'],
+    anchors: ['sídhe', 'silver branch', 'moon-oak', 'Dagda', 'Lugh', 'Morrigan', 'geas'],
     gear: ['Lugh silver-spear', 'moon-oak sídhe', 'Dagda cauldron', 'fae glamour'],
     avoidRegex: /Aten|Khepra|Asgard|Olymp|Kami|Empyrean|Infernal|Egyptian|Norse|Greek|Japanese|angelic|demonology/i,
   },
-  'TG-FACTION-006': {
+  'MG-FACTION-006': {
     name: 'Empyrean',
     realm: ['Radiant Hierarchies'],
     source: ['angelic hierarchy', 'heavenly myth'],
@@ -57,7 +57,7 @@ const factionCanon = {
     gear: ['seraph bell-edict', 'opal-glass cherubim', 'ophanim many-eye', 'wheel intercept'],
     avoidRegex: /Aten|Khepra|Asgard|Olymp|Kami|Tuatha|Infernal|Egyptian|Norse|Greek|Japanese|Celtic|demonology/i,
   },
-  'TG-FACTION-007': {
+  'MG-FACTION-007': {
     name: 'Infernal Dominion',
     realm: ['Infernal Dominion'],
     source: ['hell', 'demonology', 'infernal contract'],

@@ -15,9 +15,9 @@ assert.ok(sql.includes('idempotency_key TEXT NOT NULL UNIQUE'));
 assert.ok(!/DROP TABLE|TRUNCATE/i.test(sql));
 
 const routes = Object.fromEntries(contract.routeBindings.map(route => [route.handler, route]));
-assert.equal(authorizeRuntimeRequest(routes.commitSave, { subject: 'wallet:one', playerId: 'TG-PLAYER-001', roles: ['PLAYER'] }, 'TG-PLAYER-001').ok, true);
-assert.equal(authorizeRuntimeRequest(routes.commitSave, { subject: 'wallet:two', playerId: 'TG-PLAYER-002', roles: ['PLAYER'] }, 'TG-PLAYER-001').ok, false);
-assert.equal(authorizeRuntimeRequest(routes.getPlayerAuditTrail, { subject: 'admin:read', roles: ['ADMIN_READ'] }, 'TG-PLAYER-001').ok, true);
-assert.equal(authorizeRuntimeRequest(routes.creditCurrency, { subject: 'service:economy', roles: ['SERVICE'] }, 'TG-PLAYER-001').ok, true);
-assert.equal(authorizeRuntimeRequest(routes.creditCurrency, { subject: 'wallet:one', playerId: 'TG-PLAYER-001', roles: ['PLAYER'] }, 'TG-PLAYER-001').ok, false);
+assert.equal(authorizeRuntimeRequest(routes.commitSave, { subject: 'wallet:one', playerId: 'MG-PLAYER-001', roles: ['PLAYER'] }, 'MG-PLAYER-001').ok, true);
+assert.equal(authorizeRuntimeRequest(routes.commitSave, { subject: 'wallet:two', playerId: 'MG-PLAYER-002', roles: ['PLAYER'] }, 'MG-PLAYER-001').ok, false);
+assert.equal(authorizeRuntimeRequest(routes.getPlayerAuditTrail, { subject: 'admin:read', roles: ['ADMIN_READ'] }, 'MG-PLAYER-001').ok, true);
+assert.equal(authorizeRuntimeRequest(routes.creditCurrency, { subject: 'service:economy', roles: ['SERVICE'] }, 'MG-PLAYER-001').ok, true);
+assert.equal(authorizeRuntimeRequest(routes.creditCurrency, { subject: 'wallet:one', playerId: 'MG-PLAYER-001', roles: ['PLAYER'] }, 'MG-PLAYER-001').ok, false);
 console.log(JSON.stringify({ ok: true, runtimePersistenceContract: 'PASS', summary }, null, 2));

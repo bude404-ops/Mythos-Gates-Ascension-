@@ -22,16 +22,16 @@ const deitys = read('data/deitys.json');
 const creatures = read('data/creatures.json');
 const tasks = read('data/development-tasks.json');
 
-assert.equal(verticalSlice.id, 'TG-BATTLEFIELD-VS-001');
+assert.equal(verticalSlice.id, 'MG-BATTLEFIELD-VS-001');
 assert.ok(architecture.runtimeRules.some(rule => rule.includes('No battlefield hardcoded as a one-off')));
 assert.ok(verticalSlice.qualityTargets.includes('one active deity'));
 assert.ok(verticalSlice.qualityTargets.includes('49 meaningful spaces'));
 assert.ok(verticalSlice.qualityTargets.includes('boss phases'));
 assert.ok(verticalSlice.qualityTargets.includes('mobile bottom action bar'));
-assert.ok(qualityGate.id === 'TG-BATTLEFIELD-QUALITY-GATE-001');
+assert.ok(qualityGate.id === 'MG-BATTLEFIELD-QUALITY-GATE-001');
 
-const deity = deitys.find(t => t.id === verticalSlice.canonDecision.starterDeity || t.id === 'TG-DEITY-001');
-assert.equal(deity.id, 'TG-DEITY-001');
+const deity = deitys.find(t => t.id === verticalSlice.canonDecision.starterDeity || t.id === 'MG-DEITY-001');
+assert.equal(deity.id, 'MG-DEITY-001');
 
 const terrain = buildBattlefieldTerrain(verticalSlice);
 assert.equal(terrain.grid.width, 7);
@@ -58,7 +58,7 @@ assert.ok(roster.every(enemy => enemy.stats.hp > 0 && enemy.stats.damage > 0));
 let state = createBattlefieldRuntimeState({ verticalSlice, deity: deity, creatures, seed: 29029 });
 assert.equal(state.battlefield.activeDeityLimit, 1);
 assert.equal(state.terrain.spaces.length, 49);
-assert.equal(state.deity.id, 'TG-DEITY-001');
+assert.equal(state.deity.id, 'MG-DEITY-001');
 assert.equal(state.enemies.length, 7);
 assert.equal(state.battlefield.mobileBottomActionBar, true);
 assert.deepEqual(state.battlefield.routeTypes.sort(), ['direct','optional','safe','tactical'].sort());
@@ -120,6 +120,6 @@ const script = [
 const scriptedA = runBattlefieldScript(createBattlefieldRuntimeState({ verticalSlice, deity: deity, creatures, seed: 77 }), script);
 const scriptedB = runBattlefieldScript(createBattlefieldRuntimeState({ verticalSlice, deity: deity, creatures, seed: 77 }), script);
 assert.deepEqual(summarizeBattlefieldRuntime(scriptedA), summarizeBattlefieldRuntime(scriptedB));
-assert.equal(tasks.find(task => task.id === 'TG-DEV-029').status, 'COMPLETED');
+assert.equal(tasks.find(task => task.id === 'MG-DEV-029').status, 'COMPLETED');
 
 console.log(JSON.stringify({ ok: true, battlefieldRuntime: 'PASS', summary }, null, 2));

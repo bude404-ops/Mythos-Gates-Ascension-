@@ -9,7 +9,7 @@ const versionPattern = /^[0-9]+\.[0-9]+\.[0-9]+-[a-z0-9-]+$/;
 function issue(message){ issues.push(message); }
 function exists(file){ return fs.existsSync(file) && fs.statSync(file).isFile(); }
 
-if (manifest.id !== 'TG-CANON-VERSION-MANIFEST-001') issue('Invalid manifest id.');
+if (manifest.id !== 'MG-CANON-VERSION-MANIFEST-001') issue('Invalid manifest id.');
 if (manifest.schema !== 'TG_CANON_VERSION_MANIFEST_V1') issue('Invalid manifest schema.');
 if (manifest.status !== 'ACTIVE') issue('Manifest must be ACTIVE.');
 if (!versionPattern.test(manifest.currentCanonVersion || '')) issue('currentCanonVersion must use MAJOR.MINOR.PATCH-slug.');
@@ -26,7 +26,7 @@ const ids = new Set();
 let latestApplied = null;
 for (let i = 0; i < migrations.length; i++) {
   const m = migrations[i];
-  const expectedId = `TG-MIG-${String(i + 1).padStart(3, '0')}`;
+  const expectedId = `MG-MIG-${String(i + 1).padStart(3, '0')}`;
   if (m.id !== expectedId) issue(`Migration ${i + 1} must be ${expectedId}, got ${m.id}`);
   if (ids.has(m.id)) issue(`Duplicate migration id: ${m.id}`);
   ids.add(m.id);

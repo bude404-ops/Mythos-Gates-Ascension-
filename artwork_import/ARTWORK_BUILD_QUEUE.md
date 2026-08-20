@@ -150,7 +150,7 @@ Needed source assets: 129
 | 10 | DEITY_009 | DEITY | Amunet | `DEITY_009__amunet-hidden-sun__source-file.ext` |
 | 10 | DEITY_010 | DEITY | The Odin Stormvein | `DEITY_010__the-allfather-stormvein__source-file.ext` |
 | 10 | DEITY_011 | DEITY | Thor Rune-Mountain | `DEITY_011__hrothar-rune-mountain__source-file.ext` |
-| 10 | DEITY_012 | DEITY | Frigg Iron Tempest | `DEITY_012__skeld-iron-tempest__source-file.ext` |
+| 10 | DEITY_012 | DEITY | Skadi Iron Tempest | `DEITY_012__skeld-iron-tempest__source-file.ext` |
 | 10 | DEITY_013 | DEITY | Freyja Valkstorm | `DEITY_013__eirwyn-valkstorm__source-file.ext` |
 | 10 | DEITY_014 | DEITY | Mordun Frost-Anvil | `DEITY_014__mordun-frost-anvil__source-file.ext` |
 | 10 | DEITY_015 | DEITY | Veyra Thunderloom | `DEITY_015__veyra-thunderloom__source-file.ext` |
@@ -177,7 +177,7 @@ Needed source assets: 129
 | 10 | DEITY_036 | DEITY | Yamabito Stone Prayer | `DEITY_036__yamabito-stone-prayer__source-file.ext` |
 | 10 | DEITY_037 | DEITY | Dagda Root-Crown | `DEITY_037__dagoran-root-crown__source-file.ext` |
 | 10 | DEITY_038 | DEITY | Brigid Emerald Oath | `DEITY_038__eryndor-emerald-oath__source-file.ext` |
-| 10 | DEITY_039 | DEITY | Morrígan Moon-Grove | `DEITY_039__melian-moon-grove__source-file.ext` |
+| 10 | DEITY_039 | DEITY | Morrigan Moon-Grove | `DEITY_039__melian-moon-grove__source-file.ext` |
 | 10 | DEITY_040 | DEITY | Lugh Granite Bough | `DEITY_040__bran-granite-bough__source-file.ext` |
 | 10 | DEITY_041 | DEITY | Nimue Silver Pool | `DEITY_041__nimue-silver-pool__source-file.ext` |
 | 10 | DEITY_042 | DEITY | Cernan Wild Vale | `DEITY_042__cernan-wild-vale__source-file.ext` |
@@ -187,7 +187,7 @@ Needed source assets: 129
 | 10 | DEITY_046 | DEITY | Michael | `DEITY_046__seraphel-the-throne-eternal__source-file.ext` |
 | 10 | DEITY_047 | DEITY | Gabriel Dawnborn Axis | `DEITY_047__caelion-dawnborn-axis__source-file.ext` |
 | 10 | DEITY_048 | DEITY | Raphael Radiant Spear | `DEITY_048__aurelia-radiant-spear__source-file.ext` |
-| 10 | DEITY_049 | DEITY | Uriel Law Warden | `DEITY_049__malachor-law-warden__source-file.ext` |
+| 10 | DEITY_049 | DEITY | Jophiel Law Warden | `DEITY_049__malachor-law-warden__source-file.ext` |
 | 10 | DEITY_050 | DEITY | Elyndra Choir Crown | `DEITY_050__elyndra-choir-crown__source-file.ext` |
 | 10 | DEITY_051 | DEITY | Orison White Citadel | `DEITY_051__orison-white-citadel__source-file.ext` |
 | 10 | DEITY_052 | DEITY | Vespera Mercy Blade | `DEITY_052__vespera-mercy-blade__source-file.ext` |

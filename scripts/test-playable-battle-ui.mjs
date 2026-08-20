@@ -53,7 +53,7 @@ async function runSmoke(){
     await page.evaluate(()=>window.TGHub.enterHub());
     await page.evaluate(()=>{
       if (window.TGHub.state.route === 'awakening') {
-        window.TGHub.chooseStarter('TG-DEITY-003');
+        window.TGHub.chooseStarter('MG-DEITY-003');
         window.TGHub.finishAwakening();
       }
     });
@@ -99,13 +99,13 @@ async function runSmoke(){
     });
     await page.evaluate(()=>window.TGHub.completeBattle());
     await page.waitForFunction(() => document.body.innerText.includes('CLAIM CACHE') || document.body.innerText.includes('First-clear cache secured'), null, { timeout:15000 });
-    const pendingSnapshot = await page.evaluate(()=>({ route:window.TGHub.state.route, pending:window.TGHub.state.player.campaignProgress.pendingRewards.length, completed:window.TGHub.state.player.campaignProgress.completedMissionIds.length, nextMission:window.TGHub.state.player.campaignProgress.currentMissionId, rewardLabel:document.body.innerText.includes('First-clear cache secured'), beforeShards:window.TGHub.state.player.resources.find(r=>r.id==='TG-RES-GATE-SHARDS')?.amount||0 }));
+    const pendingSnapshot = await page.evaluate(()=>({ route:window.TGHub.state.route, pending:window.TGHub.state.player.campaignProgress.pendingRewards.length, completed:window.TGHub.state.player.campaignProgress.completedMissionIds.length, nextMission:window.TGHub.state.player.campaignProgress.currentMissionId, rewardLabel:document.body.innerText.includes('First-clear cache secured'), beforeShards:window.TGHub.state.player.resources.find(r=>r.id==='MG-RES-GATE-SHARDS')?.amount||0 }));
     assert.equal(pendingSnapshot.route,'command');
     assert.equal(pendingSnapshot.pending,1,'pending reward cache missing');
     assert.ok(pendingSnapshot.completed>=1,'completed mission not recorded');
     assert.ok(pendingSnapshot.rewardLabel,'pending reward UI missing');
     await page.evaluate(()=>window.TGHub.claimReward(window.TGHub.state.player.campaignProgress.pendingRewards[0].id));
-    const claimedSnapshot = await page.evaluate(()=>({ pending:window.TGHub.state.player.campaignProgress.pendingRewards.length, history:window.TGHub.state.player.campaignProgress.rewardHistory.length, shards:window.TGHub.state.player.resources.find(r=>r.id==='TG-RES-GATE-SHARDS')?.amount||0, text:document.body.innerText.includes('Claimed Reward History') }));
+    const claimedSnapshot = await page.evaluate(()=>({ pending:window.TGHub.state.player.campaignProgress.pendingRewards.length, history:window.TGHub.state.player.campaignProgress.rewardHistory.length, shards:window.TGHub.state.player.resources.find(r=>r.id==='MG-RES-GATE-SHARDS')?.amount||0, text:document.body.innerText.includes('Claimed Reward History') }));
     assert.equal(claimedSnapshot.pending,0,'reward cache not removed after claim');
     assert.ok(claimedSnapshot.history>=1,'claimed reward history missing');
     assert.ok(claimedSnapshot.shards>pendingSnapshot.beforeShards,'claimed shards not applied');

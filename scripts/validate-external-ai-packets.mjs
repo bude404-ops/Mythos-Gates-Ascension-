@@ -17,7 +17,7 @@ const requiredStages = [
 
 if (packet.status !== 'ACTIVE_SOURCE_OF_TRUTH') issues.push('External AI packet must be ACTIVE_SOURCE_OF_TRUTH');
 if (packet.targetAsset?.assetId !== 'BATTLEFIELD_001') issues.push('Packet must target only BATTLEFIELD_001');
-if (packet.targetAsset?.canonicalEntityId !== 'TG-MAP-001') issues.push('Packet must target TG-MAP-001');
+if (packet.targetAsset?.canonicalEntityId !== 'MG-MAP-001') issues.push('Packet must target MG-MAP-001');
 if (packet.approvalGate?.mayStartNextBattlefield !== false) issues.push('Packet must block Battlefield 002+');
 if (!String(packet.absoluteRule || '').includes('ONLY BATTLEFIELD_001')) issues.push('Missing one-battlefield absolute rule');
 for (const stage of requiredStages) if (!(packet.productionStages || []).includes(stage)) issues.push(`Missing production stage ${stage}`);

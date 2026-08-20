@@ -69,7 +69,7 @@ if (issues.length) status = 'ERROR';
 else if (warnings.length) status = 'WARNING';
 if ((registry.entries || []).some(e => e.validation_status === 'NEEDS_CANON_REVIEW')) status = status === 'ERROR' ? status : 'NEEDS_REVIEW';
 
-const report = { id: 'TG-GITHUB-ASSET-VALIDATION-REPORT-001', status, generated: TODAY, registryEntries: (registry.entries || []).length, graphNodes: (graph.nodes || []).length, issues, warnings, checks: ['file_exists','valid_file_type','correct_asset_id','correct_location','stable_id_unique','source_preserved','version_shape','dependency_graph','blueprint_link','MASTER_SCALE_link','asset_manifest','reserved_id_ledger','canon_review_flag'], rule: 'Validation reports VALID, WARNING, ERROR, or NEEDS_REVIEW. It never rewrites source assets.' };
+const report = { id: 'MG-GITHUB-ASSET-VALIDATION-REPORT-001', status, generated: TODAY, registryEntries: (registry.entries || []).length, graphNodes: (graph.nodes || []).length, issues, warnings, checks: ['file_exists','valid_file_type','correct_asset_id','correct_location','stable_id_unique','source_preserved','version_shape','dependency_graph','blueprint_link','MASTER_SCALE_link','asset_manifest','reserved_id_ledger','canon_review_flag'], rule: 'Validation reports VALID, WARNING, ERROR, or NEEDS_REVIEW. It never rewrites source assets.' };
 fs.mkdirSync(path.dirname(REPORT_PATH), { recursive: true });
 fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2) + '\n');
 console.log(JSON.stringify({ ok: issues.length === 0, status, issues: issues.length, warnings: warnings.length, registryEntries: report.registryEntries, graphNodes: report.graphNodes }, null, 2));

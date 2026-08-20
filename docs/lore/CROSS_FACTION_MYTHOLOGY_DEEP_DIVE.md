@@ -50,13 +50,13 @@ Kami as nature/ancestor/spirit phenomena, Shinto shrine thresholds, torii crossi
 - Yokai liminality: twilight, masks, haunted objects, boundary ambiguity
 
 ## Tuatha — Avalora
-Tuatha Dé Danann divine tribes, sídhe mound realms, Tír na nÓg youthlands, druidic prophecy, geasa/taboo vows, silver branches, cauldrons, spears, swords, stones of sovereignty, Morrígan battle omen, Brigid flame/poetry/smithing, Lugh many-skilled radiance, Dagda abundance, moonlit forest courts, and dangerous fae beauty — treated as Earth’s echo of older Avalora.
+Tuatha Dé Danann divine tribes, sídhe mound realms, Tír na nÓg youthlands, druidic prophecy, geasa/taboo vows, silver branches, cauldrons, spears, swords, stones of sovereignty, Morrigan battle omen, Brigid flame/poetry/smithing, Lugh many-skilled radiance, Dagda abundance, moonlit forest courts, and dangerous fae beauty — treated as Earth’s echo of older Avalora.
 
 ### Source anchors
 - Tuatha Dé Danann: divine tribes, craft, sovereignty, otherworld descent
 - Aos Sí/Sídhe: mound gates, hidden courts, fae ancestry
 - Tír na nÓg: youth, impossible time, otherworld beauty
-- Morrígan: battle crow, fate, war prophecy
+- Morrigan: battle crow, fate, war prophecy
 - Brigid: flame, poetry, smithcraft, healing inspiration
 - Lugh: many-skilled radiance, spear, mastery
 - Dagda/Cauldron: abundance, life, feast, restoration

@@ -42,11 +42,11 @@ The Root-Crowned Green Below is defined by ancient roots, living songs, moon poo
 - **Lore Function:** Brigid Emerald Oath embodies the Tuatha answer to the Ascension Collapse: battery shaped into Realm doctrine.
 - **Chapter Hook:** When Brigid Emerald Oath enters a chapter, the scene should test Tuatha's core tension: Their memory is power, but it can become vengeance when old wounds refuse to compost.
 - **Visual Context:** Frame Brigid Emerald Oath against emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist while preserving their individual silhouette and role readability.
-### Morrígan Moon-Grove (MG-DEITY-041)
+### Morrigan Moon-Grove (MG-DEITY-041)
 - **Role:** Dominion
-- **Lore Function:** Morrígan Moon-Grove embodies the Tuatha answer to the Ascension Collapse: controller shaped into Realm doctrine.
-- **Chapter Hook:** When Morrígan Moon-Grove enters a chapter, the scene should test Tuatha's core tension: Their memory is power, but it can become vengeance when old wounds refuse to compost.
-- **Visual Context:** Frame Morrígan Moon-Grove against emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist while preserving their individual silhouette and role readability.
+- **Lore Function:** Morrigan Moon-Grove embodies the Tuatha answer to the Ascension Collapse: controller shaped into Realm doctrine.
+- **Chapter Hook:** When Morrigan Moon-Grove enters a chapter, the scene should test Tuatha's core tension: Their memory is power, but it can become vengeance when old wounds refuse to compost.
+- **Visual Context:** Frame Morrigan Moon-Grove against emerald forests, silver moon pools, Celtic knotwork, antler crowns, moss-covered megaliths, golden dawn mist while preserving their individual silhouette and role readability.
 ### Lugh Granite Bough (MG-DEITY-040)
 - **Role:** Fracture
 - **Lore Function:** Lugh Granite Bough embodies the Tuatha answer to the Ascension Collapse: breaker shaped into Realm doctrine.

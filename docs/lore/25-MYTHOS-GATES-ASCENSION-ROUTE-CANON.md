@@ -201,7 +201,7 @@ Kami does not become a generic dungeon skin here. Torii-Moon Mirror Road is the 
 - 3. **Geas Thorn Corridor** — hazard
 - 4. **Tír na nÓg Mirror Meadow** — elite
 - 5. **Cauldron Memory Grove** — treasure or lore
-- 6. **Morrígan Crow Battlefield** — pre boss
+- 6. **Morrigan Crow Battlefield** — pre boss
 - 7. **Crow-Crowned Boss Mound** — boss
 
 ### Route Hazards

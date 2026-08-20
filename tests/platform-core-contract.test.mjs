@@ -11,7 +11,7 @@ import {
   platformSummary
 } from '../src/platform/index.mjs';
 
-let state = createPlatformProfile({ playerId: 'TG-PLAYER-TEST-001', displayName: 'Platform Tester', starterDeityId: 'MG-DEITY-003' });
+let state = createPlatformProfile({ playerId: 'MG-PLAYER-TEST-001', displayName: 'Platform Tester', starterDeityId: 'MG-DEITY-003' });
 assert.equal(validatePlatformState(state).ok, true);
 assert.equal(state.roster.activeDeityId, 'MG-DEITY-003');
 assert.equal(state.inventory.currencies.sunshards, 120);

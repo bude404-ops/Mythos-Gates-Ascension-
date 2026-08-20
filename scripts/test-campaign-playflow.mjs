@@ -59,6 +59,6 @@ for (const token of ['createCommandHubRuntime','function campaigns','function mi
 for (const token of ['command-hub-runtime.mjs','Command Hub','OPEN THE MYTHOS GATE']) {
   assert.ok(game.includes(token), `game missing ${token}`);
 }
-assert.equal(tasks.find(t => t.id === 'TG-DEV-006')?.status, 'COMPLETED');
-assert.equal(tasks.find(t => t.id === 'TG-DEV-010')?.status, 'COMPLETED');
+assert.equal(tasks.find(t => t.id === 'MG-DEV-006')?.status, 'COMPLETED');
+assert.equal(tasks.find(t => t.id === 'MG-DEV-010')?.status, 'COMPLETED');
 console.log(JSON.stringify({ ok: true, campaignPlayflow: 'PASS', factions: contract.flow.length, chapters: contract.flow.reduce((s,f)=>s+f.chapterRoutes.length,0), normalMissions: contract.flow.reduce((s,f)=>s+f.normalMissionCount,0), eliteMissions: contract.flow.reduce((s,f)=>s+f.eliteMissionCount,0) }, null, 2));

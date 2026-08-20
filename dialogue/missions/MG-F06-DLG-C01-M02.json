@@ -5,11 +5,11 @@
   "campaignType": "Normal",
   "status": "Production Ready",
   "tone": "restrained mythic tactical",
-  "briefing": "Mythos Gates briefing: Ascend the Choir Vault Threshold: Name at the Gate. Enter Choir Vault Threshold on Choir-Vault Discord Ascent through The Choir-Vault Gate while the Gate remains Wound Gate leaking memory-burning radiance. Reference deity voice is Sophia, but the player still chooses one deity from the faction roster. Objective: With one selected deity, cross the threshold in the Choir Vault Threshold, secure the first route marker, and mark the Gate law before the Hollow can read the name.",
+  "briefing": "Mythos Gates briefing: Ascend the Choir Vault Threshold: Name at the Gate. Enter Choir Vault Threshold on Choir-Vault Discord Ascent through The Choir-Vault Gate while the Gate remains Wound Gate leaking memory-burning radiance. Reference deity voice is Raphael, but the player still chooses one deity from the faction roster. Objective: With one selected deity, cross the threshold in the Choir Vault Threshold, secure the first route marker, and mark the Gate law before the Hollow can read the name.",
   "lines": {
     "missionIntro": [
       {
-        "speaker": "Sophia Divine Voice",
+        "speaker": "Raphael Divine Voice",
         "text": "The choir does not forgive discord; it measures it. The Choir Vault Threshold will know whether one deity is enough."
       }
     ],
@@ -27,13 +27,13 @@
     ],
     "victory": [
       {
-        "speaker": "Sophia Divine Voice",
+        "speaker": "Raphael Divine Voice",
         "text": "The discord thins; the ascent keeps its shape."
       }
     ],
     "defeat": [
       {
-        "speaker": "Sophia Divine Voice",
+        "speaker": "Raphael Divine Voice",
         "text": "Withdraw. The Choir-Vault Gate has learned too much from this attempt."
       }
     ],
@@ -44,7 +44,7 @@
       }
     ]
   },
-  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/Deity language is excluded from standard mission combat.",
+  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
   "visualDirection": "Frame Choir Vault Threshold as a entry node in Choir-Vault Discord Ascent; white-gold radiance, many-eye auras, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.",
   "updated": "2026-08-16",
   "mythosGatesDialogueRecreation": {
@@ -54,9 +54,9 @@
     "speakerRule": "Use faction divine voice, Lore Director, or Gameplay Director; no playable deity language.",
     "soloRule": "Dialogue supports one active god or goddess in the field."
   },
-  "soloDeityPolicy": "Dialogue supports one active battlefield deity; roster/deity language is excluded from player-facing copy except legacy IDs.",
   "routeId": "MG-DUNGEON-ROUTE-006",
   "routeName": "Choir-Vault Discord Ascent",
   "routeRoomName": "Choir Vault Threshold",
-  "entryGate": "The Choir-Vault Gate"
+  "entryGate": "The Choir-Vault Gate",
+  "npcWitness": "Oriel Edict-Keeper"
 }

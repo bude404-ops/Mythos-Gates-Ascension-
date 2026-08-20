@@ -118,5 +118,5 @@ for (const rootName of ASSET_ROOTS) {
 registry.updated = TODAY;
 registry.entryCount = registry.entries.length;
 writeJson(REGISTRY_PATH, registry);
-writeJson(REPORT_PATH, { id: 'TG-GITHUB-ASSET-DETECTION-REPORT-001', status: 'IMPLEMENTED', generated: TODAY, discoveredCount: discovered.length, updatedKnownAssets: discovered.filter(d => d.asset_id && byId.has(d.asset_id)).length, needsCanonReviewCount: needsCanonReview.length, discovered, needsCanonReview, rule: 'Detection never modifies original source assets; it only updates registry metadata and review reports.' });
+writeJson(REPORT_PATH, { id: 'MG-GITHUB-ASSET-DETECTION-REPORT-001', status: 'IMPLEMENTED', generated: TODAY, discoveredCount: discovered.length, updatedKnownAssets: discovered.filter(d => d.asset_id && byId.has(d.asset_id)).length, needsCanonReviewCount: needsCanonReview.length, discovered, needsCanonReview, rule: 'Detection never modifies original source assets; it only updates registry metadata and review reports.' });
 console.log(JSON.stringify({ ok: true, discovered: discovered.length, needsCanonReview: needsCanonReview.length, registryEntries: registry.entries.length }, null, 2));

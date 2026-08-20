@@ -38,5 +38,5 @@ for (const snap of arena.defenseSnapshots) {
   assert.equal(snap.checksum, expected);
 }
 for (const token of ['Lore Continuity Sweep', 'one-active-Deity canon', 'One active deity in standard combat', 'The Hollow is a non-playable campaign threat']) assert.ok(mini.includes(token), `mini missing ${token}`);
-assert.equal(tasks.find(t => t.id === 'TG-TASK-SOLO-004')?.status, 'COMPLETED');
+assert.equal(tasks.find(t => t.id === 'MG-TASK-SOLO-004')?.status, 'COMPLETED');
 console.log(JSON.stringify({ ok: true, asyncArenaSnapshots: 'PASS', snapshots: arena.defenseSnapshots.length, livePvpImplemented: arena.livePvpImplemented, standardSquadSize: arena.standardSquadSize }, null, 2));

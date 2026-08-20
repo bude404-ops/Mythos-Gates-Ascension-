@@ -10,7 +10,7 @@ for (const eventType of REQUIRED_EVENT_TYPES) {
   if (!contract.requiredPlatformEvents.includes(eventType)) issues.push(`Contract missing required platform event ${eventType}`);
 }
 let state = createPlatformProfile(contract.defaultPlayer);
-state = completeMission(state, 'TG-F01-C01-M01', { accountXp: 85, currencies: { sunshards: 30, signatureAlloy: 1 } });
+state = completeMission(state, 'MG-F01-C01-M01', { accountXp: 85, currencies: { sunshards: 30, signatureAlloy: 1 } });
 state = debitCurrency(state, 'sunshards', 25, 'CRAFTING_TEST');
 const imported = importSave(exportSave(state));
 const validation = validatePlatformState(imported);

@@ -9,9 +9,9 @@ const tasks = read('data/development-tasks.json');
 const creatureIds = new Set(creatures.map(c => c.id));
 const reducerNames = new Set(schema.reducers.map(r => r.name));
 
-assert.equal(slice.id, 'TG-SOLO-VERTICAL-SLICE-ATEN-RA-001');
+assert.equal(slice.id, 'MG-SOLO-VERTICAL-SLICE-ATEN-RA-001');
 assert.equal(slice.status, 'IMPLEMENTED');
-assert.equal(slice.faction.id, 'TG-FACTION-001');
+assert.equal(slice.faction.id, 'MG-FACTION-001');
 assert.equal(slice.starterDeity.id, schema.verticalSliceDefault.starterDeityId);
 assert.equal(slice.missionTypes.length, 5, 'slice must have exactly five pre-boss mission types');
 assert.equal(slice.bossEncounter.phasePlan.length, 5, 'boss must expose five readable phases');
@@ -40,7 +40,7 @@ for (const phase of slice.bossEncounter.phasePlan) {
   assert.ok(phase.telemetryKey.startsWith('boss_phase_'), `boss phase ${phase.phase}: telemetry key malformed`);
 }
 
-const soloTask = tasks.find(t => t.id === 'TG-TASK-SOLO-003');
+const soloTask = tasks.find(t => t.id === 'MG-TASK-SOLO-003');
 assert.equal(soloTask.status, 'COMPLETED');
 assert.ok(soloTask.relatedFiles.includes('data/solo-vertical-slice.json'));
 assert.ok(soloTask.relatedFiles.includes('scripts/test-solo-vertical-slice.mjs'));
