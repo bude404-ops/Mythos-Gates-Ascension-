@@ -1,0 +1,2877 @@
+[
+  {
+    "id": "MG-CREATURE-001",
+    "slug": "hollow-wretch",
+    "name": "Hollow Wretch",
+    "category": "Hollow Creature",
+    "realm": "Hollow",
+    "threatTier": "Minor",
+    "status": "Lore Complete",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A small Gate-born husk formed from erased memory. Wretches are the most basic Hollow unit \u2014 void-stuff given\u52c9\u5f3a humanoid shape, carrying a single fragment of broken Gate stone in their chests. They attack in groups and leave cold silence behind when destroyed, as if the space they occupied forgets they were ever there.",
+    "visualDescription": "Thin charcoal void-stuff humanoid with half-formed white mask, white fracture cracks, broken Gate stone embedded in chest, anti-light absorption, ash falling upward. Incomplete, lurching, reaching. Minor swarmer.",
+    "abilities": [
+      "Scratch of Forgetting",
+      "Swarm Pressure"
+    ],
+    "mapBehavior": "Rushes isolated Deities and punishes careless positioning.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-001",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-001",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "encounterTags": [
+      "hollow",
+      "general"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event"
+    ],
+    "combatRole": "SWARMER",
+    "stats": {
+      "levelBand": [
+        1,
+        25
+      ],
+      "hp": 45,
+      "damage": 8,
+      "range": 1,
+      "armor": 2,
+      "resistance": 2,
+      "movement": 4,
+      "initiative": 40,
+      "accuracy": 72,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 1.0,
+      "xpValue": 10
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "SWARMER",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Minor SWARMER pressures one active deity through behavior first, stats second; threatWeight 1.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-002",
+    "slug": "gateborn-colossus",
+    "name": "Gateborn Colossus",
+    "category": "Gateborn Creature",
+    "realm": "Unstable Gate",
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A massive stone-black creature with gateway ribs glowing fracture-core and broken arch fragments embedded in shoulders. Born from unstable Gate energy.",
+    "visualDescription": "Massive stone-black creature with gateway ribs glowing fracture-core broken arch fragments. Major siege.",
+    "abilities": [
+      "Gate Stomp",
+      "Fracture Roar",
+      "Objective Crush"
+    ],
+    "mapBehavior": "Controls central objectives and forces Deities to split pressure.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-002",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-002",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "encounterTags": [
+      "hollow",
+      "general"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event"
+    ],
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        15,
+        55
+      ],
+      "hp": 131,
+      "damage": 17,
+      "range": 1,
+      "armor": 11,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 6,
+      "guardBreak": 12,
+      "threatWeight": 2.0,
+      "xpValue": 28
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +2 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Major BRUTE pressures one active deity through behavior first, stats second; threatWeight 2.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-003",
+    "slug": "beast-realm-maneater",
+    "name": "Beast Realm Maneater",
+    "category": "Beast Realm Creature",
+    "realm": "Beast Realms",
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A primordial mythic predator from extradimensional wilderness. Lion-wolf-serpent form with bone mane and ember eyes.",
+    "visualDescription": "Mythic lion-wolf-serpent predator with bone mane ember eyes ancient scars earth-dark hide. Major bruiser.",
+    "abilities": [
+      "Pounce",
+      "Blood-Scent Mark",
+      "Devour Weakness"
+    ],
+    "mapBehavior": "Tracks wounded Deities and escalates if ignored.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-003",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-003",
+    "combatRole": "EXECUTIONER",
+    "stats": {
+      "levelBand": [
+        15,
+        55
+      ],
+      "hp": 104,
+      "damage": 20,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 10,
+      "guardBreak": 12,
+      "threatWeight": 2.0,
+      "xpValue": 28
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "EXECUTIONER",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Major EXECUTIONER pressures one active deity through behavior first, stats second; threatWeight 2.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-004",
+    "slug": "forgotten-standard-bearer",
+    "name": "Forgotten Standard Bearer",
+    "category": "Forgotten Remnant",
+    "realm": "Forgotten",
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A tall armored remnant with faceless helm and shredded banner of erased sigils. The last soldier of a forgotten civilization.",
+    "visualDescription": "Tall armored remnant with faceless helm shredded banner of erased sigils rusted mythic plate ash falling upward. Elite commander.",
+    "abilities": [
+      "Banner of Loss",
+      "Command the Nameless",
+      "Memory Cleave"
+    ],
+    "mapBehavior": "Buffs lesser Hollow enemies and creates denial zones.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-004",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-004",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "encounterTags": [
+      "hollow",
+      "general"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event"
+    ],
+    "combatRole": "GUARDIAN",
+    "stats": {
+      "levelBand": [
+        35,
+        85
+      ],
+      "hp": 187,
+      "damage": 18,
+      "range": 3,
+      "armor": 16,
+      "resistance": 10,
+      "movement": 3,
+      "initiative": 58,
+      "accuracy": 82,
+      "evasion": 9,
+      "guardBreak": 16,
+      "threatWeight": 4.0,
+      "xpValue": 70
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "GUARDIAN",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Elite GUARDIAN pressures one active deity through behavior first, stats second; threatWeight 4.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-005",
+    "slug": "ancient-world-boss-leviathan",
+    "name": "Ancient World Boss: Leviathan of the First Flood",
+    "category": "Ancient World Boss",
+    "realm": "Pre-Gate Mythic Deep",
+    "threatTier": "World Boss",
+    "status": "Lore Complete",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A colossal mythic sea serpent-dragon made of stormwater basalt scales drowned temple chains moonlit eyes and tidal crown horns. Ancient world boss from before the Gates were built.",
+    "visualDescription": "Colossal sea serpent-dragon of stormwater basalt scales drowned temple chains moonlit eyes tidal crown horns. World Boss.",
+    "abilities": [
+      "Flood the Map",
+      "Temple Chain Drag",
+      "Primordial Roar"
+    ],
+    "mapBehavior": "Campaign boss encounter that transforms terrain each phase.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-005",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-005",
+    "combatRole": "CHAMPION",
+    "stats": {
+      "levelBand": [
+        70,
+        100
+      ],
+      "hp": 535,
+      "damage": 29,
+      "range": 3,
+      "armor": 18,
+      "resistance": 18,
+      "movement": 2,
+      "initiative": 65,
+      "accuracy": 86,
+      "evasion": 5,
+      "guardBreak": 32,
+      "threatWeight": 12.0,
+      "xpValue": 350
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +2 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "CHAMPION",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: World Boss CHAMPION pressures one active deity through behavior first, stats second; threatWeight 12.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-006",
+    "slug": "hollow-choirling",
+    "name": "Hollow Choirling",
+    "category": "Hollow Creature",
+    "realm": "Hollow",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Minor",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A small mouthless choir-husk that hums erased prayers until deity battle line timing begins to slip. Choirlings are the Hollow's silence weapons \u2014 they do not attack with force but with absence, disrupting the rhythm of divine abilities and swallowing the sound of sacred words.",
+    "visualDescription": "Small bent void-stuff humanoid with smooth featureless face, throat full of white fracture lines, ash ribbons floating upward from shoulders, Gate-stone spine fragments. Silent choir husk. Minor disruptor.",
+    "abilities": [
+      "Silence Hymn",
+      "Battle line Stutter"
+    ],
+    "mapBehavior": "Stays behind Wretches and applies silence pressure to isolated lanes.",
+    "encounterTags": [
+      "swarm",
+      "silence",
+      "support",
+      "early-campaign"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-006",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-006",
+    "combatRole": "DISRUPTOR",
+    "stats": {
+      "levelBand": [
+        1,
+        25
+      ],
+      "hp": 60,
+      "damage": 9,
+      "range": 4,
+      "armor": 2,
+      "resistance": 6,
+      "movement": 4,
+      "initiative": 46,
+      "accuracy": 72,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 1.0,
+      "xpValue": 10
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "DISRUPTOR",
+      "priority": [
+        "deny Momentum",
+        "contest objective",
+        "punish exposed deity"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Minor DISRUPTOR pressures one active deity through behavior first, stats second; threatWeight 1.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-007",
+    "slug": "hollow-knell-archer",
+    "name": "Hollow Knell Archer",
+    "category": "Hollow Creature",
+    "realm": "Hollow",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Minor",
+    "status": "Lore Complete",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A tall charcoal archer that fires arrows of anti-light from a bow carved from broken Gate stone. Knell Archers apply ranged pressure from distance, their arrows leaving trails of upward-falling ash. Each arrow is a fragment of erased memory shot into a deity's form.",
+    "visualDescription": "Tall thin charcoal archer with broken Gate-stone crescent bow, mask-slit with cold anti-light, torn funeral cloth with erasing sigils, Gate-stone fused in bow-arm. Cold precise ranged unit. Minor.",
+    "abilities": [
+      "Knell Shot",
+      "Backline Mark"
+    ],
+    "mapBehavior": "Targets Endurance and Conduit Deities from cover, forcing movement.",
+    "encounterTags": [
+      "ranged",
+      "mark",
+      "backline",
+      "event"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-007",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-007",
+    "combatRole": "SWARMER",
+    "stats": {
+      "levelBand": [
+        1,
+        25
+      ],
+      "hp": 63,
+      "damage": 10,
+      "range": 1,
+      "armor": 2,
+      "resistance": 2,
+      "movement": 4,
+      "initiative": 40,
+      "accuracy": 72,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 1.0,
+      "xpValue": 10
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "SWARMER",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Minor SWARMER pressures one active deity through behavior first, stats second; threatWeight 1.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-008",
+    "slug": "hollow-oath-eater",
+    "name": "Hollow Oath-Eater",
+    "category": "Hollow Creature",
+    "realm": "Hollow",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A heavy black beast-knight that devours sacred oaths. The Oath-Eater is built from compressed void-stuff \u2014 heavier and denser than other Hollow forms. A broken halo ring forms its jaw, and an oath-stone lodged in its chest is being actively consumed. Oath-Eaters target deities who rely on sworn power, eating the oaths that fuel divine abilities.",
+    "visualDescription": "Heavy massive void-stuff beast-knight with ringed jaw (broken halo fragment), oath-stone in chest with erasing runes, torn rune-chains on forearms, white crack-teeth. Heavy bruiser. Major.",
+    "abilities": [
+      "Vow Bite",
+      "Break Resolve",
+      "Oath Drain"
+    ],
+    "mapBehavior": "Punishes deities that repeat the same objective action without support.",
+    "encounterTags": [
+      "anti-oath",
+      "debuff",
+      "asgardian",
+      "elite"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-008",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-008",
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        15,
+        55
+      ],
+      "hp": 149,
+      "damage": 15,
+      "range": 1,
+      "armor": 11,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 6,
+      "guardBreak": 12,
+      "threatWeight": 2.0,
+      "xpValue": 28
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +2 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Major BRUTE pressures one active deity through behavior first, stats second; threatWeight 2.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-009",
+    "slug": "hollow-sunless-magistrate",
+    "name": "Hollow Sunless Magistrate",
+    "category": "Hollow Creature",
+    "realm": "Hollow",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Narrative Director",
+    "playable": false,
+    "lore": "A tall robed absence that judges with broken law. The Sunless Magistrate wears a cracked sun-disc mask taken from a consumed Aten Ra-adjacent culture and carries scales that always weigh something against nothing. It does not attack \u2014 it RULES that a deity's power should not exist, and reality complies.",
+    "visualDescription": "Tall robed void-judge with cracked sun-disc mask, floating bronze-black scales weighing something against nothing, orbiting judgment shards, Gate keystone in chest. Elite controller.",
+    "abilities": [
+      "Null Verdict",
+      "Sentence the Bright",
+      "Law Inversion"
+    ],
+    "mapBehavior": "Corrupts capture points and reverses sustain if not interrupted.",
+    "encounterTags": [
+      "controller",
+      "objective-corruptor",
+      "aten-ra",
+      "elite"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-009",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-009",
+    "combatRole": "ELITE",
+    "stats": {
+      "levelBand": [
+        35,
+        85
+      ],
+      "hp": 182,
+      "damage": 19,
+      "range": 3,
+      "armor": 11,
+      "resistance": 10,
+      "movement": 3,
+      "initiative": 58,
+      "accuracy": 82,
+      "evasion": 9,
+      "guardBreak": 16,
+      "threatWeight": 4.0,
+      "xpValue": 70
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "ELITE",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Elite ELITE pressures one active deity through behavior first, stats second; threatWeight 4.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-010",
+    "slug": "hollow-banner-maw",
+    "name": "Hollow Banner Maw",
+    "category": "Forgotten Hollow",
+    "realm": "Forgotten / Hollow",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A low quadruped made of torn banners from consumed civilizations. The Banner Maw crawls through the ruins of conquered peoples, wearing their dead heraldry like skin. A hidden maw of white fracture cracks opens beneath the cloth when it feeds. It is a siege creature \u2014 it does not fight deities, it erases the terrain they fight on.",
+    "visualDescription": "Low quadruped made of torn banners with erasing sigils, bone-pole rib framework, hidden white fracture-crack maw beneath cloth, Gate-arch fragments along spine. Consumed heraldry siege creature. Major.",
+    "abilities": [
+      "Devour Insignia",
+      "Nameless Rally"
+    ],
+    "mapBehavior": "Drags nearby swarm units into frenzy when a deity falls below half health.",
+    "encounterTags": [
+      "swarm-commander",
+      "forgotten",
+      "morale",
+      "event"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-010",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-010",
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        15,
+        55
+      ],
+      "hp": 155,
+      "damage": 17,
+      "range": 1,
+      "armor": 11,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 6,
+      "guardBreak": 12,
+      "threatWeight": 2.0,
+      "xpValue": 28
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Major BRUTE pressures one active deity through behavior first, stats second; threatWeight 2.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-011",
+    "slug": "hollow-mirror-saint",
+    "name": "Hollow Mirror Saint",
+    "category": "Hollow Creature",
+    "realm": "Hollow",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A wing-like negative-space guardian with a broken mirror for a chest and floating porcelain mask shards for a face. The Mirror Saint is the most beautiful Hollow creature \u2014 and therefore the most wrong. It looks like a saint-shaped wound in reality, wearing the vestments of a consumed Empyrean-adjacent culture. Beauty made absence.",
+    "visualDescription": "Tall slender void-saint with floating porcelain mask shards, mirror-shaped negative-space wound in torso, wing-shaped absence formations with white fracture edges, cold chain-light vestments. Elite beauty made wrong.",
+    "abilities": [
+      "False Sanctuary",
+      "Reflect Mercy",
+      "Aura Lock"
+    ],
+    "mapBehavior": "Creates shield zones that help Hollow units unless shattered by coordinated strikes.",
+    "encounterTags": [
+      "shield",
+      "empyrean",
+      "elite",
+      "raid-add"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-011",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-011",
+    "combatRole": "ELITE",
+    "stats": {
+      "levelBand": [
+        35,
+        85
+      ],
+      "hp": 188,
+      "damage": 21,
+      "range": 3,
+      "armor": 11,
+      "resistance": 10,
+      "movement": 3,
+      "initiative": 58,
+      "accuracy": 82,
+      "evasion": 9,
+      "guardBreak": 16,
+      "threatWeight": 4.0,
+      "xpValue": 70
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +2 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "ELITE",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Elite ELITE pressures one active deity through behavior first, stats second; threatWeight 4.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-012",
+    "slug": "hollow-root-parasite",
+    "name": "Hollow Root Parasite",
+    "category": "Hollow Infestation",
+    "realm": "Hollow / Avalora Scar",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Minor",
+    "status": "Lore Complete",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A black root-serpent that infests and erases terrain from below. The Root Parasite does not walk on the ground \u2014 it IS the ground, growing through reality and consuming it from within. Multiple tendrils spread through the earth like an infection, each carrying Gate-stone seeds dropped from the broken Gate.",
+    "visualDescription": "Black root-serpent of void-stuff with pale anti-light sap cracks, thorn-mouth opening to void, tail fused into ground, Gate-stone nodes along body. Terrain infestation. Minor swarmer.",
+    "abilities": [
+      "Blight Root",
+      "Terrain Leech"
+    ],
+    "mapBehavior": "Occupies natural terrain and makes sustain tiles hazardous until cleansed.",
+    "encounterTags": [
+      "terrain-corruptor",
+      "tuatha",
+      "swarm",
+      "weekly-trial"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-012",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-012",
+    "combatRole": "SWARMER",
+    "stats": {
+      "levelBand": [
+        1,
+        25
+      ],
+      "hp": 78,
+      "damage": 7,
+      "range": 1,
+      "armor": 2,
+      "resistance": 2,
+      "movement": 4,
+      "initiative": 40,
+      "accuracy": 72,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 1.0,
+      "xpValue": 10
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "SWARMER",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Minor SWARMER pressures one active deity through behavior first, stats second; threatWeight 1.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-013",
+    "slug": "hollow-shrine-mask",
+    "name": "Hollow Shrine-Mask",
+    "category": "Hollow Spirit",
+    "realm": "Hollow / Shrine Scar",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Narrative Director",
+    "playable": false,
+    "lore": "A floating lacquer mask cracked open, with smoke-hands holding dissolving paper wards. The Shrine-Mask is a consumed Kami-adjacent shrine spirit \u2014 it does not walk, it HAUNTS. The two cracked halves of its mask shift to create changing expressions, and its smoke-hands reach for sacred things to erase. A specialist that targets spirit-type abilities.",
+    "visualDescription": "Floating cracked lacquer mask with void-smoke body, smoke-hands holding dissolving paper wards, broken torii fragment in forehead, ink bleeding upward. Haunted shrine spirit. Major specialist.",
+    "abilities": [
+      "False Rite",
+      "Spirit Misstep",
+      "Mask Blink"
+    ],
+    "mapBehavior": "Repositions around shrine terrain and causes missed timing windows.",
+    "encounterTags": [
+      "kami",
+      "reposition",
+      "spirit",
+      "event"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-013",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-013",
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        15,
+        55
+      ],
+      "hp": 164,
+      "damage": 16,
+      "range": 1,
+      "armor": 11,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 6,
+      "guardBreak": 12,
+      "threatWeight": 2.0,
+      "xpValue": 28
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Major BRUTE pressures one active deity through behavior first, stats second; threatWeight 2.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-014",
+    "slug": "hollow-laurel-butcher",
+    "name": "Hollow Laurel Butcher",
+    "category": "Hollow Creature",
+    "realm": "Hollow / Olympian Scar",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "A muscular faceless gladiator with bronze laurel fused to its skull. The Laurel Butcher has consumed an Olympian-adjacent culture and wears its marble aesthetic like a hollow costume. It fights with void-stuff fists in a champion's stance, but the champion has no face and the arena has been forgotten. A bruiser that targets martial deities.",
+    "visualDescription": "Muscular void-stuff gladiator with broken bronze laurel fused to skull, faceless marble-textured void, white fracture cracks following muscle lines, Gate column-capital in shoulder. Consumed Olympian champion. Major bruiser.",
+    "abilities": [
+      "Dirty Triumph",
+      "Contest Ruin",
+      "Laurel Cleave"
+    ],
+    "mapBehavior": "Challenges highest-attack deity and gains pressure if ignored.",
+    "encounterTags": [
+      "olympian",
+      "duelist",
+      "breaker",
+      "elite"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-014",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-014",
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        15,
+        55
+      ],
+      "hp": 167,
+      "damage": 17,
+      "range": 1,
+      "armor": 11,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 6,
+      "guardBreak": 12,
+      "threatWeight": 2.0,
+      "xpValue": 28
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +2 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Major BRUTE pressures one active deity through behavior first, stats second; threatWeight 2.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-015",
+    "slug": "hollow-chain-auditor",
+    "name": "Hollow Chain Auditor",
+    "category": "Hollow Creature",
+    "realm": "Hollow / Infernal Scar",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A bent accountant-devil made of chains and ledger fragments. The Chain Auditor does not fight with violence \u2014 it fights with BUREAUCRACY. It audits reality, finds it wanting, and erases the records that prove things existed. Contract seams burn with cold anti-light through its body. An elite controller that targets contract-type abilities and objective systems.",
+    "visualDescription": "Bent hunched figure made of chains and shattered ledger tablets, chain-blindfold across void face, burning white contract seams, Gate contract-stone in back. Bureaucratic nightmare. Elite controller.",
+    "abilities": [
+      "Unowned Debt",
+      "Chain Levy",
+      "Clause Snare"
+    ],
+    "mapBehavior": "Taxes repeated abilities and punishes greedy burst rotations.",
+    "encounterTags": [
+      "infernal",
+      "resource-tax",
+      "control",
+      "event"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-015",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-015",
+    "combatRole": "ELITE",
+    "stats": {
+      "levelBand": [
+        35,
+        85
+      ],
+      "hp": 200,
+      "damage": 21,
+      "range": 3,
+      "armor": 11,
+      "resistance": 10,
+      "movement": 3,
+      "initiative": 58,
+      "accuracy": 82,
+      "evasion": 9,
+      "guardBreak": 16,
+      "threatWeight": 4.0,
+      "xpValue": 70
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "ELITE",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Elite ELITE pressures one active deity through behavior first, stats second; threatWeight 4.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-016",
+    "slug": "hollow-gate-anchor",
+    "name": "Hollow Gate Anchor",
+    "category": "Gateborn Hollow",
+    "realm": "Unstable Gate / Hollow",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "An obsidian gate-stone torso rooted into the battlefield. The Gate Anchor is not a creature \u2014 it is a BREACH POINT. It is a broken fragment of the Mythos Gate driven into the earth, creating a permanent wound where the Hollow can enter reality. Destroying the Anchor seals the breach; protecting it allows the Hollow to pour through. An elite objective unit.",
+    "visualDescription": "Massive broken Gate-fragment rooted into ground \u2014 obsidian torso with arch-crown, one reaching arm, central void-wound pulsing anti-light. A living breach point, not a creature. Elite objective.",
+    "abilities": [
+      "Breach Pulse",
+      "Spawn Wretches",
+      "Anchor the Wound"
+    ],
+    "mapBehavior": "Acts as a priority objective; spawns minor Hollow until destroyed.",
+    "encounterTags": [
+      "anchor",
+      "spawner",
+      "objective",
+      "raid-add"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-016",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-016",
+    "combatRole": "CONTROLLER",
+    "stats": {
+      "levelBand": [
+        35,
+        85
+      ],
+      "hp": 203,
+      "damage": 18,
+      "range": 4,
+      "armor": 11,
+      "resistance": 13,
+      "movement": 3,
+      "initiative": 58,
+      "accuracy": 82,
+      "evasion": 9,
+      "guardBreak": 16,
+      "threatWeight": 4.0,
+      "xpValue": 70
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "CONTROLLER",
+      "priority": [
+        "deny Momentum",
+        "contest objective",
+        "punish exposed deity"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Elite CONTROLLER pressures one active deity through behavior first, stats second; threatWeight 4.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-017",
+    "slug": "hollow-memory-thief",
+    "name": "Hollow Memory Thief",
+    "category": "Hollow Creature",
+    "realm": "Hollow",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Systems Director",
+    "playable": false,
+    "lore": "A slender blade-limbed figure that steals abilities and memories. The Memory Thief is the most surgical of the Hollow \u2014 it does not destroy, it REMOVES. Stolen glyphs orbit its fingers, flickering as they are consumed. It targets the connections between a deity and their powers, cutting the links that make divine abilities work. A specialist that makes deities forget what they can do.",
+    "visualDescription": "Slender blade-thin void figure with translucent face-veil showing stolen glyph flickers, blade-edge limbs, stolen memory glyphs orbiting fingers, Gate-stone sliver in chest. Surgical memory thief. Major specialist.",
+    "abilities": [
+      "Steal Pattern",
+      "Cooldown Forgetting",
+      "Backstab Silence"
+    ],
+    "mapBehavior": "Targets repeated player actions and disrupts cooldown rhythm.",
+    "encounterTags": [
+      "assassin",
+      "cooldown",
+      "adaptive",
+      "ascension"
+    ],
+    "campaignUse": [
+      "Campaign enemy wave",
+      "Elite remix modifier",
+      "Hollow Breach event",
+      "Ascension threat pool"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-017",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-017",
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        15,
+        55
+      ],
+      "hp": 176,
+      "damage": 16,
+      "range": 1,
+      "armor": 11,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 6,
+      "guardBreak": 12,
+      "threatWeight": 2.0,
+      "xpValue": 28
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +2 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: Major BRUTE pressures one active deity through behavior first, stats second; threatWeight 2.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-018",
+    "slug": "hollow-world-wound-behemoth",
+    "name": "Hollow World-Wound Behemoth",
+    "category": "Hollow World Event Boss",
+    "realm": "Hollow Breach",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "threatTier": "World Boss",
+    "status": "Lore Complete",
+    "director": "Gameplay Director",
+    "playable": false,
+    "lore": "The largest Gate fracture given form. The World-Wound Behemoth is a COLOSSAL living breach \u2014 its ribcage is made of broken Gate arches, its chest is a void that shows the space between Realms, and its heart is the original keystone of the first Mythos Gate. Cities of ash dissolve inside its chest. It does not fight \u2014 it ERASES. It is the consequence of the Ascion Collapse given a body. A World Boss that requires raid-scale coordination to defeat.",
+    "visualDescription": "COLOSSAL 150+ foot wound in reality \u2014 Gate-arch ribs forming a negative-space ribcage, maskless skull-horizon, cities of ash dissolving inside, original Gate keystone as heart. The largest breach given form. World Boss.",
+    "abilities": [
+      "Walk the Breach",
+      "Erase the Ground",
+      "Call the Nameless Storm"
+    ],
+    "mapBehavior": "Seasonal world boss that changes terrain, spawns anchors, and tests multiple divine archetypes.",
+    "encounterTags": [
+      "world-boss",
+      "seasonal",
+      "hollow-breach",
+      "raid"
+    ],
+    "campaignUse": [
+      "Seasonal Hollow Breach world event",
+      "Raid-scale boss",
+      "Ascension milestone boss"
+    ],
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-018",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-018",
+    "combatRole": "CHAMPION",
+    "stats": {
+      "levelBand": [
+        70,
+        100
+      ],
+      "hp": 574,
+      "damage": 30,
+      "range": 3,
+      "armor": 18,
+      "resistance": 18,
+      "movement": 2,
+      "initiative": 65,
+      "accuracy": 86,
+      "evasion": 5,
+      "guardBreak": 32,
+      "threatWeight": 12.0,
+      "xpValue": 350
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; old wins should become easier as Divine Level and gear rise.",
+      "eliteRemix": "+12% hp, +10% damage, +1 mechanic layer, +1 tactical AI priority.",
+      "endgame": "Dynamic scaling is capped at player effective level +8; adds mechanics before raw hp.",
+      "levelFormula": "hp = baseHp * (1 + 0.045 * missionLevel); damage = baseDamage * (1 + 0.035 * missionLevel), capped by tier budget"
+    },
+    "aiProfile": {
+      "archetype": "CHAMPION",
+      "priority": [
+        "survive Ascension window",
+        "force reaction spending",
+        "attack marked weakness"
+      ],
+      "counterplayWindow": "Every major action has a telegraph or setup turn unless spawned as a minor swarmer."
+    },
+    "balanceNotes": "Harder solo tuning: World Boss CHAMPION pressures one active deity through behavior first, stats second; threatWeight 12.0 controls encounter budgets."
+  },
+  {
+    "id": "MG-CREATURE-019",
+    "slug": "sun-seal-vigilant",
+    "name": "Aten Ra Sun-Seal Vigilant",
+    "category": "Aten Ra Faction Run-In",
+    "realm": "The Solar Dominion of Khepra",
+    "sourceFactionId": "MG-FACTION-001",
+    "threatFactionId": null,
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A judgment construct sworn to Ma'at balance, deployed when outsiders trespass sacred solar courts. It tests law through radiant lanes rather than cruelty.",
+    "visualDescription": "Tall faience construct with electrum hand-ray aura plates, lapis visor, obsidian counterweight blade. Ma'at balance guardian. Elite controller.",
+    "abilities": [
+      "Aten Ray Lattice",
+      "Ma\u2019at Measure Bind",
+      "Solar Lane Verdict"
+    ],
+    "mapBehavior": "Locks lanes and punishes deities who ignore objective geometry.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-019",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-019",
+    "encounterTags": [
+      "faction-run-in",
+      "aten-ra",
+      "control",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "CONTROLLER",
+    "stats": {
+      "levelBand": [
+        25,
+        100
+      ],
+      "hp": 126,
+      "damage": 22,
+      "range": 3,
+      "armor": 7,
+      "resistance": 8,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 3.0,
+      "xpValue": 46
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "CONTROLLER",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction CONTROL run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-001",
+      "homeFactionName": "Aten Ra",
+      "sourceCultureRule": "source culture humans later copied as Egyptian solar myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-020",
+    "slug": "scarab-dawn-engine",
+    "name": "Khepri Scarab Dawn Engine",
+    "category": "Aten Ra Faction Run-In",
+    "realm": "The Solar Dominion of Khepra",
+    "sourceFactionId": "MG-FACTION-001",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A mobile dawn-engine guardian from Khepra gateworks the source-culture machine humans later misunderstood as sacred scarab power.",
+    "visualDescription": "Massive scarab-forge construct of faience and electrum sun-core beneath carapace Nile-black glass legs. Elite siege engine.",
+    "abilities": [
+      "Dawn Roll",
+      "Wingflare Guard",
+      "Silt-Glass Crush"
+    ],
+    "mapBehavior": "Advances slowly, guards Gates, and forces AoE decisions around hard shell armor.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-020",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-020",
+    "encounterTags": [
+      "faction-run-in",
+      "aten-ra",
+      "brute",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 14,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction BRUTE run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-001",
+      "homeFactionName": "Aten Ra",
+      "sourceCultureRule": "source culture humans later copied as Egyptian solar myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-021",
+    "slug": "uraeus-counter-edict",
+    "name": "Uraeus Counter-Edict Serpent",
+    "category": "Aten Ra Faction Run-In",
+    "realm": "The Solar Dominion of Khepra",
+    "sourceFactionId": "MG-FACTION-001",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A living legal curse from Aten Ra sanctums that marks oathbreakers and enemy scouts during cross-faction run-ins.",
+    "visualDescription": "Solar cobra of faience with Red Land jasper hood electrum hand-ray spine unreadable light-law from mouth. Elite specialist.",
+    "abilities": [
+      "Counter-Edict Spit",
+      "Blinding Crown",
+      "Law Venom"
+    ],
+    "mapBehavior": "Applies accuracy and cooldown pressure while staying near landmarks.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-021",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-021",
+    "encounterTags": [
+      "faction-run-in",
+      "aten-ra",
+      "debuffer",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "DISRUPTOR",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 7,
+      "resistance": 8,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "DISRUPTOR",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction DEBUFFER run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-001",
+      "homeFactionName": "Aten Ra",
+      "sourceCultureRule": "source culture humans later copied as Egyptian solar myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-022",
+    "slug": "rime-oath-raider",
+    "name": "Storm-Oath Rime Raider",
+    "category": "Asgardian Faction Run-In",
+    "realm": "The Storm-Rooted Aesir Holds",
+    "sourceFactionId": "MG-FACTION-002",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A shield-sworn raider who treats every Gate incursion as an oath trial hostile run-ins are ritual challenge not banditry.",
+    "visualDescription": "Storm-iron raider with frost-iron mail bridge-rune shield raven-black iron cloak. Elite skirmisher.",
+    "abilities": [
+      "Rime Axe Hook",
+      "Bridge-Oath Charge",
+      "Shieldwall Break"
+    ],
+    "mapBehavior": "Closes distance and uses chokepoints to force deity repositioning.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-022",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-022",
+    "encounterTags": [
+      "faction-run-in",
+      "asgardian",
+      "melee",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction MELEE run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-002",
+      "homeFactionName": "Asgardian",
+      "sourceCultureRule": "source culture humans later copied as Norse myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-023",
+    "slug": "thunder-bridge-jotun",
+    "name": "Thunder-Bridge Jotun",
+    "category": "Asgardian Faction Run-In",
+    "realm": "The Storm-Rooted Aesir Holds",
+    "sourceFactionId": "MG-FACTION-002",
+    "threatFactionId": null,
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A mountain-blood giant bound to Aesir border law enormous but still beneath deity scale unless empowered by Gate storm.",
+    "visualDescription": "Basalt-blue iron giant with broken bridge-stone armor storm-root manacles iron-wood club. Elite bruiser.",
+    "abilities": [
+      "Storm Boulder",
+      "Oath Roar",
+      "Bridge Quake"
+    ],
+    "mapBehavior": "Controls elevation and pushes the deity away from objectives.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-023",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-023",
+    "encounterTags": [
+      "faction-run-in",
+      "asgardian",
+      "brute",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        25,
+        100
+      ],
+      "hp": 126,
+      "damage": 22,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 14,
+      "threatWeight": 3.0,
+      "xpValue": 46
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction BRUTE run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-002",
+      "homeFactionName": "Asgardian",
+      "sourceCultureRule": "source culture humans later copied as Norse myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-024",
+    "slug": "valkyr-storm-caller",
+    "name": "Valkyr Storm-Caller",
+    "category": "Asgardian Faction Run-In",
+    "realm": "The Storm-Rooted Aesir Holds",
+    "sourceFactionId": "MG-FACTION-002",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A battlefield psychopomp who calls storm pressure over oathbreakers and strengthens sworn allies during faction clashes.",
+    "visualDescription": "Winged storm-helm psychopomp with rain-bright spear aurora shield shadow-wing patterns. Elite support.",
+    "abilities": [
+      "Gale Mark",
+      "Oath Mend",
+      "Raven Sight"
+    ],
+    "mapBehavior": "Buffs melee units and marks exposed deity routes.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-024",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-024",
+    "encounterTags": [
+      "faction-run-in",
+      "asgardian",
+      "support",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "GUARDIAN",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 7,
+      "resistance": 8,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "GUARDIAN",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction SUPPORT run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-002",
+      "homeFactionName": "Asgardian",
+      "sourceCultureRule": "source culture humans later copied as Norse myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-025",
+    "slug": "laurel-hoplon-guard",
+    "name": "Olympian Laurel Hoplon Guard",
+    "category": "Olympian Faction Run-In",
+    "realm": "The Celestial Heights of Olympus",
+    "sourceFactionId": "MG-FACTION-003",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A city-state guardian of the Celestial Heights trained to treat foreign deities as trial defendants before marble sky courts.",
+    "visualDescription": "Living marble hoplite with bronze-white hoplon shield laurel crest star-polished spear. Elite tank.",
+    "abilities": [
+      "Phalanx Pin",
+      "Laurel Guard",
+      "Trial Rebuke"
+    ],
+    "mapBehavior": "Creates defensive walls and protects ranged allies.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-025",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-025",
+    "encounterTags": [
+      "faction-run-in",
+      "olympian",
+      "defender",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "GUARDIAN",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "GUARDIAN",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction DEFENDER run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-003",
+      "homeFactionName": "Olympian",
+      "sourceCultureRule": "source culture humans later copied as Greek myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-026",
+    "slug": "oracle-glass-archer",
+    "name": "Oracle Glass Archer",
+    "category": "Olympian Faction Run-In",
+    "realm": "The Celestial Heights of Olympus",
+    "sourceFactionId": "MG-FACTION-003",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A sight-bound archer from Olympian oracle terraces who attacks through predicted angles instead of brute force.",
+    "visualDescription": "Slender marble archer with translucent oracle-glass bow white marble mask gold laurel optics. Elite ranged.",
+    "abilities": [
+      "Predicted Shot",
+      "Skyline Volley",
+      "Fate Thread Mark"
+    ],
+    "mapBehavior": "Fires from elevation and rewards the player for closing lanes.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-026",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-026",
+    "encounterTags": [
+      "faction-run-in",
+      "olympian",
+      "ranged",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "CONTROLLER",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 5,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "CONTROLLER",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction RANGED run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-003",
+      "homeFactionName": "Olympian",
+      "sourceCultureRule": "source culture humans later copied as Greek myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-027",
+    "slug": "bronze-chimera-trialbeast",
+    "name": "Bronze Chimera Trialbeast",
+    "category": "Olympian Faction Run-In",
+    "realm": "The Celestial Heights of Olympus",
+    "sourceFactionId": "MG-FACTION-003",
+    "threatFactionId": null,
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A sacred trial creature assembled by Olympian arena law it proves worth through mixed threats not random monstrosity.",
+    "visualDescription": "Marble-bronze chimera lion-goat-serpent with marble joint rings bronze ember mane laurel brand. Elite bruiser.",
+    "abilities": [
+      "Tri-Aspect Maul",
+      "Arena Flame",
+      "Serpent Feint"
+    ],
+    "mapBehavior": "Combines melee, hazard, and debuff pressure.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-027",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-027",
+    "encounterTags": [
+      "faction-run-in",
+      "olympian",
+      "elite",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "ELITE",
+    "stats": {
+      "levelBand": [
+        25,
+        100
+      ],
+      "hp": 126,
+      "damage": 22,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 14,
+      "threatWeight": 3.0,
+      "xpValue": 46
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "ELITE",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction ELITE run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-003",
+      "homeFactionName": "Olympian",
+      "sourceCultureRule": "source culture humans later copied as Greek myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-028",
+    "slug": "torii-foxfire-runner",
+    "name": "Kami Torii Foxfire Runner",
+    "category": "Kami Faction Run-In",
+    "realm": "The Sacred Kingdoms",
+    "sourceFactionId": "MG-FACTION-004",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A shrine-bound trickster spirit that defends contracts and boundaries hostile only when a mission violates local spirit law.",
+    "visualDescription": "Vermilion lacquer fox-spirit with phased body foxfire hands ghost-tails paper seal streamers. Elite skirmisher.",
+    "abilities": [
+      "Foxfire Dash",
+      "Mirror Feint",
+      "Seal Nip"
+    ],
+    "mapBehavior": "Flanks the deity and baits wasted AoE.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-028",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-028",
+    "encounterTags": [
+      "faction-run-in",
+      "kami",
+      "fast",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "HUNTER",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 1,
+      "armor": 5,
+      "resistance": 5,
+      "movement": 5,
+      "initiative": 56,
+      "accuracy": 78,
+      "evasion": 13,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "HUNTER",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction FAST run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-004",
+      "homeFactionName": "Kami",
+      "sourceCultureRule": "source culture humans later copied as Japanese myth and Shinto shrine lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-029",
+    "slug": "mirror-lake-onryo",
+    "name": "Mirror-Lake Onryo",
+    "category": "Kami Faction Run-In",
+    "realm": "The Sacred Kingdoms",
+    "sourceFactionId": "MG-FACTION-004",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A grievance spirit reflected through Gate water attacking broken promises with silence drag and cursed positioning.",
+    "visualDescription": "Pale mirror-water spirit with wet black hair veil shrine-rope bindings cracked moon aura. Elite controller.",
+    "abilities": [
+      "Grudge Pull",
+      "Reflection Hex",
+      "Drowned Silence"
+    ],
+    "mapBehavior": "Pulls the deity toward hazards and slows recovery.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-029",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-029",
+    "encounterTags": [
+      "faction-run-in",
+      "kami",
+      "debuffer",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "DISRUPTOR",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 7,
+      "resistance": 8,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "DISRUPTOR",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction DEBUFFER run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-004",
+      "homeFactionName": "Kami",
+      "sourceCultureRule": "source culture humans later copied as Japanese myth and Shinto shrine lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-030",
+    "slug": "kami-storm-komainu",
+    "name": "Storm Komainu Counter",
+    "category": "Kami Faction Run-In",
+    "realm": "The Sacred Kingdoms",
+    "sourceFactionId": "MG-FACTION-004",
+    "threatFactionId": null,
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A shrine guardian lion-dog awakened by tempest vows to hold sacred thresholds against faction trespass.",
+    "visualDescription": "Stone-lacquer komainu with storm-cloud mane gold bell collar vermilion ward plates. Elite tank guardian.",
+    "abilities": [
+      "Threshold Guard",
+      "Thunder Bite",
+      "Ward Howl"
+    ],
+    "mapBehavior": "Guards objective gates and protects support spirits.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-030",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-030",
+    "encounterTags": [
+      "faction-run-in",
+      "kami",
+      "defender",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "GUARDIAN",
+    "stats": {
+      "levelBand": [
+        25,
+        100
+      ],
+      "hp": 126,
+      "damage": 22,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 3.0,
+      "xpValue": 46
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "GUARDIAN",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction DEFENDER run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-004",
+      "homeFactionName": "Kami",
+      "sourceCultureRule": "source culture humans later copied as Japanese myth and Shinto shrine lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-031",
+    "slug": "moon-grove-stagwarden",
+    "name": "Avalora Moon-Grove Stagwarden",
+    "category": "Tuatha Faction Run-In",
+    "realm": "Avalora",
+    "sourceFactionId": "MG-FACTION-005",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A living border guardian grown from Avalora memory groves hostile when foreign forces wound terrain or steal moon-root relics.",
+    "visualDescription": "Silver-antlered wood-bark guardian with root-bow moonlight arrows moonlit leaf mantle stag-legs. Elite ranged.",
+    "abilities": [
+      "Moonroot Shot",
+      "Grove Snare",
+      "Memory Antler"
+    ],
+    "mapBehavior": "Controls paths with roots and punishes straight-line movement.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-031",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-031",
+    "encounterTags": [
+      "faction-run-in",
+      "tuatha",
+      "ranged",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "CONTROLLER",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 5,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "CONTROLLER",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction RANGED run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-005",
+      "homeFactionName": "Tuatha",
+      "sourceCultureRule": "source culture humans later copied as Celtic and Irish fae myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-032",
+    "slug": "bog-sidhe-hexer",
+    "name": "Bog Sidhe Hexer",
+    "category": "Tuatha Faction Run-In",
+    "realm": "Avalora",
+    "sourceFactionId": "MG-FACTION-005",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A fae court saboteur who protects bargains names and hidden roads by twisting enemy advantages into debts.",
+    "visualDescription": "Peat-dark bog-spirit with thorn crown bone-charm staff blue witchlight heavy bog-mist. Elite caster.",
+    "abilities": [
+      "Name-Tax Hex",
+      "Mire Veil",
+      "Debt Ward"
+    ],
+    "mapBehavior": "Debuffs priority abilities and shields allies with bargain wards.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-032",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-032",
+    "encounterTags": [
+      "faction-run-in",
+      "tuatha",
+      "support",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "GUARDIAN",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 7,
+      "resistance": 8,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "GUARDIAN",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction SUPPORT run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-005",
+      "homeFactionName": "Tuatha",
+      "sourceCultureRule": "source culture humans later copied as Celtic and Irish fae myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-033",
+    "slug": "ancient-root-ogre",
+    "name": "Ancient Root Ogre",
+    "category": "Tuatha Faction Run-In",
+    "realm": "Avalora",
+    "sourceFactionId": "MG-FACTION-005",
+    "threatFactionId": null,
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A massive root-fed guardian of wounded woods it is not evil but it crushes intruders who ignore Avalora living terrain.",
+    "visualDescription": "Massive root-ogre with braided vine muscles stone teeth moon-fungus shoulders bark-face. Elite bruiser.",
+    "abilities": [
+      "Root Slam",
+      "Living Wall",
+      "Spore Stagger"
+    ],
+    "mapBehavior": "Blocks chokepoints and creates destructible terrain pressure.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-033",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-033",
+    "encounterTags": [
+      "faction-run-in",
+      "tuatha",
+      "brute",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        25,
+        100
+      ],
+      "hp": 126,
+      "damage": 22,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 14,
+      "threatWeight": 3.0,
+      "xpValue": 46
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction BRUTE run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-005",
+      "homeFactionName": "Tuatha",
+      "sourceCultureRule": "source culture humans later copied as Celtic and Irish fae myth",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-034",
+    "slug": "radiant-censor-cherub",
+    "name": "Empyrean Radiant Censor",
+    "category": "Empyrean Faction Run-In",
+    "realm": "The Radiant Hierarchies",
+    "sourceFactionId": "MG-FACTION-006",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A lower hierarchic enforcer that burns contradiction from trespassers beautiful severe and terrifyingly procedural.",
+    "visualDescription": "Gold-white light construct in ivory-gold plate with censer helmeted many-eyed armor. Elite caster.",
+    "abilities": [
+      "Censure Beam",
+      "Aura Sight",
+      "Contradiction Lughd"
+    ],
+    "mapBehavior": "Marks the deity and supports disciplined ranged fire.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-034",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-034",
+    "encounterTags": [
+      "faction-run-in",
+      "empyrean",
+      "ranged",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "CONTROLLER",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 5,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "CONTROLLER",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction RANGED run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-006",
+      "homeFactionName": "Empyrean",
+      "sourceCultureRule": "source culture humans later copied as angelic and heavenly lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-035",
+    "slug": "throne-spear-adjudicator",
+    "name": "Throne-Spear Adjudicator",
+    "category": "Empyrean Faction Run-In",
+    "realm": "The Radiant Hierarchies",
+    "sourceFactionId": "MG-FACTION-006",
+    "threatFactionId": null,
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A martial officer of the Radiant Hierarchies who treats every cross-faction incursion as a case requiring forceful ruling.",
+    "visualDescription": "Tall ivory-gold armored judge-general with throne-wheel back radiant spear sapphire core. Elite bruiser.",
+    "abilities": [
+      "Adjudicator Thrust",
+      "Radiant Interdict",
+      "Edict Step"
+    ],
+    "mapBehavior": "Uses reach and zone denial to pin deity movement.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-035",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-035",
+    "encounterTags": [
+      "faction-run-in",
+      "empyrean",
+      "melee",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "BRUTE",
+    "stats": {
+      "levelBand": [
+        25,
+        100
+      ],
+      "hp": 126,
+      "damage": 22,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 3.0,
+      "xpValue": 46
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "BRUTE",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction MELEE run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-006",
+      "homeFactionName": "Empyrean",
+      "sourceCultureRule": "source culture humans later copied as angelic and heavenly lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-036",
+    "slug": "seraphic-bastion-servitor",
+    "name": "Seraphic Bastion Servitor",
+    "category": "Empyrean Faction Run-In",
+    "realm": "The Radiant Hierarchies",
+    "sourceFactionId": "MG-FACTION-006",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A shield servant built around protection rites deployed to preserve Empyrean order during Gate events.",
+    "visualDescription": "White-gold shield-construct with folded wing-plates opal joints aura-engine chest. Elite tank.",
+    "abilities": [
+      "Bastion Wing",
+      "Sanction Shield",
+      "Order Pulse"
+    ],
+    "mapBehavior": "Protects ranged units and counters reckless cleaves.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-036",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-036",
+    "encounterTags": [
+      "faction-run-in",
+      "empyrean",
+      "defender",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "GUARDIAN",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 3,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "GUARDIAN",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction DEFENDER run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-006",
+      "homeFactionName": "Empyrean",
+      "sourceCultureRule": "source culture humans later copied as angelic and heavenly lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-037",
+    "slug": "cinder-chain-bailiff",
+    "name": "Infernal Cinder-Chain Bailiff",
+    "category": "Infernal Dominion Faction Run-In",
+    "realm": "The Infernal Dominion",
+    "sourceFactionId": "MG-FACTION-007",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A contract enforcer of the Infernal Dominion it fights for debt jurisdiction and ambition not cartoon evil.",
+    "visualDescription": "Ash-grey light-devouring enforcer in black iron coat with ember chains horned court mask. Elite controller.",
+    "abilities": [
+      "Chain Writ",
+      "Debt Drag",
+      "Cinder Lock"
+    ],
+    "mapBehavior": "Drags the deity into bad positions and taxes movement.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-037",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-037",
+    "encounterTags": [
+      "faction-run-in",
+      "infernal-dominion",
+      "control",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "CONTROLLER",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 3,
+      "armor": 7,
+      "resistance": 8,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "CONTROLLER",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction CONTROL run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-007",
+      "homeFactionName": "Infernal Dominion",
+      "sourceCultureRule": "source culture humans later copied as hell, demonology, and infernal contract lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-038",
+    "slug": "brass-hellhound-packfiend",
+    "name": "Brass Hellhound Packfiend",
+    "category": "Infernal Dominion Faction Run-In",
+    "realm": "The Infernal Dominion",
+    "sourceFactionId": "MG-FACTION-007",
+    "threatFactionId": null,
+    "threatTier": "Major",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A court-bred pursuit beast used by Infernal houses to chase oathbreakers through Gate corridors and enemy lands.",
+    "visualDescription": "Lean brass-armored ash hound with coal eyes ash mane molten claw seams. Elite skirmisher.",
+    "abilities": [
+      "Pack Lunge",
+      "Scent of Debt",
+      "Ash Snap"
+    ],
+    "mapBehavior": "Fast pressure unit that surrounds and exposes the deity.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-038",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-038",
+    "encounterTags": [
+      "faction-run-in",
+      "infernal-dominion",
+      "fast",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "HUNTER",
+    "stats": {
+      "levelBand": [
+        10,
+        85
+      ],
+      "hp": 88,
+      "damage": 16,
+      "range": 1,
+      "armor": 5,
+      "resistance": 5,
+      "movement": 5,
+      "initiative": 56,
+      "accuracy": 78,
+      "evasion": 13,
+      "guardBreak": 10,
+      "threatWeight": 2.0,
+      "xpValue": 30
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "HUNTER",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction FAST run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-007",
+      "homeFactionName": "Infernal Dominion",
+      "sourceCultureRule": "source culture humans later copied as hell, demonology, and infernal contract lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  },
+  {
+    "id": "MG-CREATURE-039",
+    "slug": "black-iron-executor",
+    "name": "Black Iron Executor",
+    "category": "Infernal Dominion Faction Run-In",
+    "realm": "The Infernal Dominion",
+    "sourceFactionId": "MG-FACTION-007",
+    "threatFactionId": null,
+    "threatTier": "Elite",
+    "status": "Lore Complete",
+    "director": "Lore Director",
+    "playable": false,
+    "lore": "A sanctioned executioner whose brutality is bureaucratic once the contract permits violence it becomes inevitable.",
+    "visualDescription": "Towering black iron executioner with furnace chest execution-brand axe crimson wax seals. Elite bruiser.",
+    "abilities": [
+      "Execution Arc",
+      "Sentence Mark",
+      "Furnace Guard"
+    ],
+    "mapBehavior": "Elite burst threat with telegraphed lethal windows.",
+    "artStatus": "Prompt Ready",
+    "artPromptId": "MG-PROMPT-CREATURE-039",
+    "artworkId": null,
+    "backstoryId": "MG-BACKSTORY-CREATURE-039",
+    "encounterTags": [
+      "faction-run-in",
+      "infernal-dominion",
+      "elite",
+      "cross-faction-event"
+    ],
+    "campaignUse": [
+      "Cross-faction run-in",
+      "Mission event encounter",
+      "Elite remix modifier",
+      "Faction border conflict"
+    ],
+    "combatRole": "ELITE",
+    "stats": {
+      "levelBand": [
+        25,
+        100
+      ],
+      "hp": 126,
+      "damage": 22,
+      "range": 1,
+      "armor": 7,
+      "resistance": 5,
+      "movement": 4,
+      "initiative": 48,
+      "accuracy": 78,
+      "evasion": 8,
+      "guardBreak": 14,
+      "threatWeight": 3.0,
+      "xpValue": 46
+    },
+    "scaling": {
+      "campaign": "Fixed mission bands; older cross-faction run-ins become easier as Divine Level and gear rise.",
+      "eliteRemix": "+10% damage, +1 tactical mechanic, not raw health sponge tuning.",
+      "endgame": "Adds role synergy and objective pressure before raw hp increases.",
+      "levelFormula": "hp and damage scale by mission band and device performance caps; mechanics are preferred over inflated health pools."
+    },
+    "aiProfile": {
+      "archetype": "ELITE",
+      "priority": [
+        "pressure the lone Avatar from its role",
+        "create AoE and positioning decisions",
+        "protect faction-lore objective when present"
+      ],
+      "counterplayWindow": "Major actions must telegraph through stance, landmark, or lane preview before impact."
+    },
+    "balanceNotes": "Cross-faction ELITE run-in tuned for one deity vs many; lore pressure and role synergy first, raw stats second.",
+    "loreGuardrails": {
+      "homeFactionId": "MG-FACTION-007",
+      "homeFactionName": "Infernal Dominion",
+      "sourceCultureRule": "source culture humans later copied as hell, demonology, and infernal contract lore",
+      "forbidden": "Do not use as a generic monster; keep faction law, materials, motives, and silhouette intact."
+    }
+  }
+]
