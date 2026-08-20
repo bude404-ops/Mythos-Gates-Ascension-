@@ -306,6 +306,19 @@
         "npm run validate:mission-campaign-lore-run-ins",
         "npm run index:check"
       ]
+    },
+    {
+      "id": "MG-MIG-013",
+      "fromVersion": "1.16.0-ascension-route-codex-sync",
+      "toVersion": "1.17.0-belief-system-faith-triggers",
+      "date": "2026-08-19",
+      "description": "Added belief system faith triggers for all 28 deities with solo-only activation and faction-specific faith paths.",
+      "changes": [
+        "data/deity-role-matrix.json",
+        "data/solo-deity-roster-redesign.json",
+        "data/ascension-system.json",
+        "data/deity-trial-system.json"
+      ]
     }
   ],
   "avatar_system": {

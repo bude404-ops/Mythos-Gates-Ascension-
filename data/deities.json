@@ -1,9 +1,9 @@
 {
   "avatar_system": {
     "description": "Players control Avatars (divine projections) of Deities, not Deities directly",
-    "belief_resource": "Earned from victories, followers, realm control — spent on Avatar stats",
-    "influence_resource": "Earned from missions, battles, territory — spent on abilities",
-    "death": "Avatar death does not kill the Deity — respawn at home Realm"
+    "belief_resource": "Earned from victories, followers, realm control \u2014 spent on Avatar stats",
+    "influence_resource": "Earned from missions, battles, territory \u2014 spent on abilities",
+    "death": "Avatar death does not kill the Deity \u2014 respawn at home Realm"
   },
   "deities": [
     {
@@ -14,10 +14,10 @@
       "faction": "Aten Ra",
       "rarity": "Legendary",
       "abilities": [
-        "Aten-Ra — Ma’at-Weighted Strike Anchor",
-        "Pylon Edict Technique — Bastion",
+        "Aten-Ra \u2014 Ma\u2019at-Weighted Strike Anchor",
+        "Pylon Edict Technique \u2014 Bastion",
         "Aten-Ra: Sun-Scale Decree Holdfast",
-        "Divine Ascension — Aten-Ra Source Radiance"
+        "Divine Ascension \u2014 Aten-Ra Source Radiance"
       ],
       "stats": {
         "hp": 52,
@@ -34,16 +34,16 @@
         "combatPower": 238
       },
       "equipment": [
-        "Aten-Ra Bulwark Ma’at Was-Sceptre Blade",
+        "Aten-Ra Bulwark Ma\u2019at Was-Sceptre Blade",
         "Aten-Ra Electrum Wesekh Source-Plate",
         "Aten-Ra Khepri Solar Scarab Core"
       ],
       "passives": [
-        "Solar Edict: Aten Ra gains Solar Charge when defender play anchors a control zone and converts enemy commitment into mitigation on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
+        "Solar Edict: Aten Ra gains Solar Charge when defender play anchors a control zone and converts enemy commitment into mitigation on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma\u2019at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
       ],
-      "lore": "Aten-Ra is the living office humans later remembered as Ra, Aten, and divine kingship fused together. He does not wear pharaoh imagery — pharaohs copied his Gate-born crown, collar, and solar hand-rays after dreaming of the Sun-Scale Gate. On the battlefield he anchors Ma’at itself, forcing chaos to declare its weight before it can pass.",
+      "lore": "Aten-Ra is the living office humans later remembered as Ra, Aten, and divine kingship fused together. He does not wear pharaoh imagery \u2014 pharaohs copied his Gate-born crown, collar, and solar hand-rays after dreaming of the Sun-Scale Gate. On the battlefield he anchors Ma\u2019at itself, forcing chaos to declare its weight before it can pass.",
       "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
-      "visualDescription": "Colossal living solar judge with readable divine anatomy, an Aten sun-disc crown radiating subtle hand-like rays, electrum wesekh collar fused into chest armor, Ma’at feather balance seams, white-gold noon aura, black-lapis shadow insets, and pylon-shaped shield forearms. Must feel older than Egyptian royalty, not a statue, robot, sarcophagus, or pyramid body.",
+      "visualDescription": "Colossal living solar judge with readable divine anatomy, an Aten sun-disc crown radiating subtle hand-like rays, electrum wesekh collar fused into chest armor, Ma\u2019at feather balance seams, white-gold noon aura, black-lapis shadow insets, and pylon-shaped shield forearms. Must feel older than Egyptian royalty, not a statue, robot, sarcophagus, or pyramid body.",
       "artStatus": "Prompt Ready",
       "artPromptId": "MG-PROMPT-001",
       "artworkId": null,
@@ -51,7 +51,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-001",
       "abilityDetails": [
         {
-          "name": "Aten-Ra — Ma’at-Weighted Strike Anchor",
+          "name": "Aten-Ra \u2014 Ma\u2019at-Weighted Strike Anchor",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -62,12 +62,12 @@
             "aten-ra",
             "source-culture"
           ],
-          "effect": "Deal Aten Ra source-culture damage at range 2; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+          "effect": "Deal Aten Ra source-culture damage at range 2; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
           "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Pylon Edict Technique — Bastion",
+          "name": "Pylon Edict Technique \u2014 Bastion",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -99,7 +99,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Aten-Ra Source Radiance",
+          "name": "Divine Ascension \u2014 Aten-Ra Source Radiance",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -117,11 +117,11 @@
       ],
       "equipmentDetails": [
         {
-          "name": "Aten-Ra Bulwark Ma’at Was-Sceptre Blade",
+          "name": "Aten-Ra Bulwark Ma\u2019at Was-Sceptre Blade",
           "slot": "Relic Weapon",
           "rarityFloor": "Legendary",
           "primaryStat": "attack",
-          "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through Aten-lit judgment ground. Visual: Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+          "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through Aten-lit judgment ground. Visual: Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
           "balanceGuardrail": "No extra action loops; empowered basics are once per round."
         },
         {
@@ -175,7 +175,7 @@
         "uniqueMechanic": "Aten Ra's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
         "counterplayRule": "spread attackers, displacement, or terrain denial break the anchor"
       },
-      "mythicSource": "Ra/Re + Aten + Ma’at",
+      "mythicSource": "Ra/Re + Aten + Ma\u2019at",
       "visualTraits": [
         "sovereign solar law",
         "noon-sun kingship",
@@ -184,7 +184,7 @@
       ],
       "armorCanon": "electrum-gold pylon collar, Ma'at feather scale bands, Aten sun-disc crown with life-giving hand-rays, broad judgment-shield forearms, royal linen-light mantle",
       "updated": "2026-08-16T17:45:00Z",
-      "weaponCanon": "Aten-Ra Sun-Disc Aegis Staff — was-sceptre crowned with a radiant Aten sun-disc that projects protective hand-ray domes; planted as a judgment anchor",
+      "weaponCanon": "Aten-Ra Sun-Disc Aegis Staff \u2014 was-sceptre crowned with a radiant Aten sun-disc that projects protective hand-ray domes; planted as a judgment anchor",
       "gearCanon": {
         "weapon": "Aten-Ra Sun-Disc Aegis Staff",
         "armor": "Aten-Ra Pylon Judgment-Plate",
@@ -192,16 +192,16 @@
         "movementRelic": "Solar Throne Descent",
         "reactionRelic": "Ma'at Feather Reckoning",
         "executionRelic": "Aten Final Verdict",
-        "visualRule": "Aten sun-disc crown radiating hand-rays, Ma'at feather scale bands, electrum pylon collar, solar noon-gold authority, Nile-black balance — the noon judgment of Ra"
+        "visualRule": "Aten sun-disc crown radiating hand-rays, Ma'at feather scale bands, electrum pylon collar, solar noon-gold authority, Nile-black balance \u2014 the noon judgment of Ra"
       },
       "sex": "Male",
       "deityArtDna": {
-        "mythology": "Ra/Re + Aten + Ma’at",
+        "mythology": "Ra/Re + Aten + Ma\u2019at",
         "realm": "The Solar Dominion of Khepra",
         "civilization": "An extradimensional solar civilization whose crowns, pylons, collars, sun-discs, scarabs, throne-magic, river rites, lion guardians, and desert-storm wardens later appeared in human Egyptian myth as imperfect memories of the source Realm.",
         "cultureRule": "source culture humans later copied as Egyptian solar myth",
         "beautyStandard": "solar-kingship masculinity: ritual height, desert-lean strength, carved jaw, calm judging eyes, electrum restraint, no brute bulk",
-        "realmAnatomy": "sun-forged divine anatomy with electrum warmth under skin, lapis/obsidian shadow seams, faience vein inlays, Ma’at balance scars, and living sun-disc organs",
+        "realmAnatomy": "sun-forged divine anatomy with electrum warmth under skin, lapis/obsidian shadow seams, faience vein inlays, Ma\u2019at balance scars, and living sun-disc organs",
         "identityFace": "one-eyed storm-king face with a broken hawk nose, deep-set glacier eye, heavy brow, forked iron-gray beard, and asymmetric raven-scar cheek; unique to Aten Ra through the broken crown prong facial/cranial rhythm",
         "identityBody": "massive oath-anchor torso, thick forearms, grounded legs, shield-wall stance, unmistakably masculine without losing individual anatomy; height/proportion offset 1: floating oath-ring stack changes the black-shape read",
         "roleSilhouette": "fortress-readable silhouette with broad guard arms, heavy base, protective negative space, and a weapon planted like law plus root-wrapped ankle guard so the character reads alone in silhouette",
@@ -209,10 +209,10 @@
         "auditStatus": "PASS",
         "updated": "2026-08-17",
         "maskHelmetIdentity": "Aten Ra mask/helmet/crown uses spiral hip-chain, sex-specific eye framing, and role-specific brow/cheek geometry; never interchangeable faction headgear.",
-        "armorIdentity": "Colossal living solar judge with readable divine anatomy, an Aten sun-disc crown radiating subtle hand-like rays, electrum wesekh collar fused into chest armor, Ma’at feather balance seams, white-gold noon aura, black-lapis shadow insets, and pylon-shaped shield forearms. Must feel older than Egyptian royalty, not a statue, robot, sarcophagus, or pyramid body.",
+        "armorIdentity": "Colossal living solar judge with readable divine anatomy, an Aten sun-disc crown radiating subtle hand-like rays, electrum wesekh collar fused into chest armor, Ma\u2019at feather balance seams, white-gold noon aura, black-lapis shadow insets, and pylon-shaped shield forearms. Must feel older than Egyptian royalty, not a statue, robot, sarcophagus, or pyramid body.",
         "resolvedArtIdentityPass": true
       },
-      "coreCanon": "Living Sun-Disc Heart — Ra's own noon-sun core that radiates Aten hand-rays; not a scarab engine but the source of solar authority itself",
+      "coreCanon": "Living Sun-Disc Heart \u2014 Ra's own noon-sun core that radiates Aten hand-rays; not a scarab engine but the source of solar authority itself",
       "entityType": "Deity",
       "formerDeityId": "MG-DEITY-001",
       "ascensionTier": "Base",
@@ -220,7 +220,8 @@
       "faith_trigger": "Endurance",
       "faith_name": "Sun-Scale Judgment",
       "combatRole": "Archer",
-      "weaponType": "Solar Bow"
+      "weaponType": "Solar Bow",
+      "role": "Endurance"
     },
     {
       "id": "MG-DEITY-002",
@@ -230,10 +231,10 @@
       "faction": "Aten Ra",
       "rarity": "Epic",
       "abilities": [
-        "Sutekh — Ma’at-Weighted Strike Kindle",
-        "Pylon Edict Technique — Reservoir",
+        "Sutekh \u2014 Ma\u2019at-Weighted Strike Kindle",
+        "Pylon Edict Technique \u2014 Reservoir",
         "Sutekh: Sun-Scale Decree Overchannel",
-        "Divine Ascension — Aten-Ra Source Radiance"
+        "Divine Ascension \u2014 Aten-Ra Source Radiance"
       ],
       "stats": {
         "hp": 38,
@@ -250,14 +251,14 @@
         "combatPower": 226
       },
       "equipment": [
-        "Sutekh Generator Ma’at Was-Sceptre Blade",
+        "Sutekh Generator Ma\u2019at Was-Sceptre Blade",
         "Sutekh Electrum Wesekh Source-Plate",
         "Sutekh Khepri Solar Scarab Core"
       ],
       "passives": [
-        "Solar Edict: Sutekh gains Solar Charge when battery play stores excess resource and refunds Momentum after precise setup on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
+        "Solar Edict: Sutekh gains Solar Charge when battery play stores excess resource and refunds Momentum after precise setup on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma\u2019at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
       ],
-      "lore": "Sutekh is the Realm’s Khepri engine: the force that rolls dead light into dawn and turns Nile-black memory into power. Human scarab amulets are miniature echoes of his living renewal shell. He feeds allies by converting wounds, offerings, and battlefield heat into measured solar return.",
+      "lore": "Sutekh is the Realm\u2019s Khepri engine: the force that rolls dead light into dawn and turns Nile-black memory into power. Human scarab amulets are miniature echoes of his living renewal shell. He feeds allies by converting wounds, offerings, and battlefield heat into measured solar return.",
       "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
       "visualDescription": "Massive renewal-battery Deity with scarab-inspired carapace plates, faience and lapis inlay reservoirs, papyrus-green conduit veins, black Nile-silt glass core, dawn-gold crown, and slow rotating solar arcs behind the shoulders. Avoid insect monster; he is a divine generator of rebirth with clear anatomy and ceremonial mass.",
       "artStatus": "Prompt Ready",
@@ -267,7 +268,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-002",
       "abilityDetails": [
         {
-          "name": "Sutekh — Ma’at-Weighted Strike Kindle",
+          "name": "Sutekh \u2014 Ma\u2019at-Weighted Strike Kindle",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -278,12 +279,12 @@
             "aten-ra",
             "source-culture"
           ],
-          "effect": "Deal Aten Ra source-culture damage at range 3; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+          "effect": "Deal Aten Ra source-culture damage at range 3; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
           "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Pylon Edict Technique — Reservoir",
+          "name": "Pylon Edict Technique \u2014 Reservoir",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -315,7 +316,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Aten-Ra Source Radiance",
+          "name": "Divine Ascension \u2014 Aten-Ra Source Radiance",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -333,11 +334,11 @@
       ],
       "equipmentDetails": [
         {
-          "name": "Sutekh Generator Ma’at Was-Sceptre Blade",
+          "name": "Sutekh Generator Ma\u2019at Was-Sceptre Blade",
           "slot": "Relic Weapon",
           "rarityFloor": "Epic",
           "primaryStat": "attack",
-          "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through Aten-lit judgment ground. Visual: Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+          "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through Aten-lit judgment ground. Visual: Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
           "balanceGuardrail": "No extra action loops; empowered basics are once per round."
         },
         {
@@ -400,7 +401,7 @@
       ],
       "armorCanon": "scarab-carapace back mantle, faience turquoise energy reservoirs, black Nile-silt glass abdominal plates, gold dawn crown, papyrus conduit bands",
       "updated": "2026-08-16T17:45:00Z",
-      "weaponCanon": "Sutekh Khepri Dawn-Roller Staff — was-sceptre with a scarab-head top that channels renewal energy; the scarab rolls dawn light like Khepri rolls the morning sun",
+      "weaponCanon": "Sutekh Khepri Dawn-Roller Staff \u2014 was-sceptre with a scarab-head top that channels renewal energy; the scarab rolls dawn light like Khepri rolls the morning sun",
       "gearCanon": {
         "weapon": "Sutekh Khepri Dawn-Roller Staff",
         "armor": "Sutekh Scarab Carapace Renewal-Plate",
@@ -408,7 +409,7 @@
         "movementRelic": "Dawn Scarab Reroll",
         "reactionRelic": "Renewal Shell Harden",
         "executionRelic": "Black Land Overflow",
-        "visualRule": "Scarab carapace renewal plates, papyrus-green conduit veins, faience energy reservoirs, dawn-gold crown, Nile-silt glass core — the pulse of dawn rebirth"
+        "visualRule": "Scarab carapace renewal plates, papyrus-green conduit veins, faience energy reservoirs, dawn-gold crown, Nile-silt glass core \u2014 the pulse of dawn rebirth"
       },
       "sex": "Male",
       "deityArtDna": {
@@ -417,7 +418,7 @@
         "civilization": "An extradimensional solar civilization whose crowns, pylons, collars, sun-discs, scarabs, throne-magic, river rites, lion guardians, and desert-storm wardens later appeared in human Egyptian myth as imperfect memories of the source Realm.",
         "cultureRule": "source culture humans later copied as Egyptian solar myth",
         "beautyStandard": "solar-kingship masculinity: ritual height, desert-lean strength, carved jaw, calm judging eyes, electrum restraint, no brute bulk",
-        "realmAnatomy": "sun-forged divine anatomy with electrum warmth under skin, lapis/obsidian shadow seams, faience vein inlays, Ma’at balance scars, and living sun-disc organs",
+        "realmAnatomy": "sun-forged divine anatomy with electrum warmth under skin, lapis/obsidian shadow seams, faience vein inlays, Ma\u2019at balance scars, and living sun-disc organs",
         "identityFace": "square wolf-jaw face with flattened warrior nose, close-set amber eyes, cropped battle braids, and frost-bitten cheekbones; unique to Sutekh through the left-shoulder raven mantle facial/cranial rhythm",
         "identityBody": "masculine mythic playable build; height/proportion offset 2: single back banner changes the black-shape read",
         "roleSilhouette": "clear unique playable silhouette plus wing-shadow cape edge so the character reads alone in silhouette",
@@ -428,7 +429,7 @@
         "armorIdentity": "Massive renewal-battery Deity with scarab-inspired carapace plates, faience and lapis inlay reservoirs, papyrus-green conduit veins, black Nile-silt glass core, dawn-gold crown, and slow rotating solar arcs behind the shoulders. Avoid insect monster; he is a divine generator of rebirth with clear anatomy and ceremonial mass.",
         "resolvedArtIdentityPass": true
       },
-      "coreCanon": "Khepri Solar Scarab Engine — living scarab engine that converts darkness and wounds into dawn energy; the original that human scarab amulets echo",
+      "coreCanon": "Khepri Solar Scarab Engine \u2014 living scarab engine that converts darkness and wounds into dawn energy; the original that human scarab amulets echo",
       "entityType": "Deity",
       "formerDeityId": "MG-DEITY-002",
       "ascensionTier": "Base",
@@ -436,7 +437,8 @@
       "faith_trigger": "Fracture",
       "faith_name": "Storm-Fracture's Vow",
       "combatRole": "Warrior",
-      "weaponType": "War Khopesh"
+      "weaponType": "War Khopesh",
+      "role": "Conduit"
     },
     {
       "id": "MG-DEITY-003",
@@ -446,10 +448,10 @@
       "faction": "Aten Ra",
       "rarity": "Epic",
       "abilities": [
-        "Iset — Ma’at-Weighted Strike Vector",
-        "Pylon Edict Technique — Field Rewrite",
+        "Iset \u2014 Ma\u2019at-Weighted Strike Vector",
+        "Pylon Edict Technique \u2014 Field Rewrite",
         "Iset: Sun-Scale Decree Dominion Grid",
-        "Divine Ascension — Aten-Ra Source Radiance"
+        "Divine Ascension \u2014 Aten-Ra Source Radiance"
       ],
       "stats": {
         "hp": 38,
@@ -466,12 +468,12 @@
         "combatPower": 226
       },
       "equipment": [
-        "Iset Compass Ma’at Was-Sceptre Blade",
+        "Iset Compass Ma\u2019at Was-Sceptre Blade",
         "Iset Electrum Wesekh Source-Plate",
         "Iset Khepri Solar Scarab Core"
       ],
       "passives": [
-        "Solar Edict: Iset gains Solar Charge when controller play rewrites movement lanes, delays elite intent, and imprints safe/unsafe tiles on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
+        "Solar Edict: Iset gains Solar Charge when controller play rewrites movement lanes, delays elite intent, and imprints safe/unsafe tiles on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma\u2019at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
       ],
       "lore": "Iset governs the border where the sun leaves the underworld and becomes visible again. Human funerary art copied fragments of her horizon masks and dawn reliefs. She controls terrain by deciding what may cross from shadow into light.",
       "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
@@ -483,7 +485,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-003",
       "abilityDetails": [
         {
-          "name": "Iset — Ma’at-Weighted Strike Vector",
+          "name": "Iset \u2014 Ma\u2019at-Weighted Strike Vector",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -494,12 +496,12 @@
             "aten-ra",
             "source-culture"
           ],
-          "effect": "Deal Aten Ra source-culture damage at range 4; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+          "effect": "Deal Aten Ra source-culture damage at range 4; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
           "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Pylon Edict Technique — Field Rewrite",
+          "name": "Pylon Edict Technique \u2014 Field Rewrite",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -531,7 +533,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Aten-Ra Source Radiance",
+          "name": "Divine Ascension \u2014 Aten-Ra Source Radiance",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -549,11 +551,11 @@
       ],
       "equipmentDetails": [
         {
-          "name": "Iset Compass Ma’at Was-Sceptre Blade",
+          "name": "Iset Compass Ma\u2019at Was-Sceptre Blade",
           "slot": "Relic Weapon",
           "rarityFloor": "Epic",
           "primaryStat": "attack",
-          "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through Aten-lit judgment ground. Visual: Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+          "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through Aten-lit judgment ground. Visual: Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
           "balanceGuardrail": "No extra action loops; empowered basics are once per round."
         },
         {
@@ -616,7 +618,7 @@
       ],
       "armorCanon": "obsidian necropolis mask, horizon-ring collar, black-gold scale skirt, dawn slit visor, limestone funerary relief plates",
       "updated": "2026-08-16T17:45:00Z",
-      "weaponCanon": "Iset Horizon Compass Staff — was-sceptre with a compass-needle head that points toward dawn; controls what may cross from underworld shadow into living light",
+      "weaponCanon": "Iset Horizon Compass Staff \u2014 was-sceptre with a compass-needle head that points toward dawn; controls what may cross from underworld shadow into living light",
       "gearCanon": {
         "weapon": "Iset Horizon Compass Staff",
         "armor": "Iset Obsidian Threshold Mantle",
@@ -624,7 +626,7 @@
         "movementRelic": "Horizon Line Crossing",
         "reactionRelic": "Shadow Threshold Seal",
         "executionRelic": "Duat Gate Verdict",
-        "visualRule": "Obsidian necropolis mask, horizon-ring collar, limestone funerary relief plates, dawn slit visor, angular light lanes from shadow limbs — the threshold between death and dawn"
+        "visualRule": "Obsidian necropolis mask, horizon-ring collar, limestone funerary relief plates, dawn slit visor, angular light lanes from shadow limbs \u2014 the threshold between death and dawn"
       },
       "sex": "Female",
       "deityArtDna": {
@@ -633,7 +635,7 @@
         "civilization": "An extradimensional solar civilization whose crowns, pylons, collars, sun-discs, scarabs, throne-magic, river rites, lion guardians, and desert-storm wardens later appeared in human Egyptian myth as imperfect memories of the source Realm.",
         "cultureRule": "source culture humans later copied as Egyptian solar myth",
         "beautyStandard": "solar-sovereign femininity: radiant Nile grace, narrow luminous waist, rounded hips, long neck, kohl-defined authority, warm alluring dignity",
-        "realmAnatomy": "sun-forged divine anatomy with electrum warmth under skin, lapis/obsidian shadow seams, faience vein inlays, Ma’at balance scars, and living sun-disc organs",
+        "realmAnatomy": "sun-forged divine anatomy with electrum warmth under skin, lapis/obsidian shadow seams, faience vein inlays, Ma\u2019at balance scars, and living sun-disc organs",
         "identityFace": "classical divine face with soft cheek fullness, arched brows, clear mouth, and marble-warm feminine symmetry; unique to Iset through the spiral hip-chain facial/cranial rhythm",
         "identityBody": "elegant tall sorceress build, long neck and arms, tapered waist, flowing garment silhouette, commanding feminine stillness; height/proportion offset 3: braided weapon tether changes the black-shape read",
         "roleSilhouette": "vertical command silhouette with crown/halo/mantle spread, long gesture hand, and battlefield-rule presence plus three-bead brow line so the character reads alone in silhouette",
@@ -644,7 +646,7 @@
         "armorIdentity": "Tall controller Deity of black sunrise: obsidian-blue enamel mask, thin amber dawn visor, horizon-ring collar, ivory limestone relief plates, black-gold scale armor, and angular light lanes emerging from underworld-shadow limbs. Must feel like living threshold law, not a mummy, statue, or necropolis building.",
         "resolvedArtIdentityPass": true
       },
-      "coreCanon": "Duat Dawn-Glass Heart — core of underworld obsidian that refracts the first dawn light; the boundary where Duat meets the living sky",
+      "coreCanon": "Duat Dawn-Glass Heart \u2014 core of underworld obsidian that refracts the first dawn light; the boundary where Duat meets the living sky",
       "entityType": "Deity",
       "formerDeityId": "MG-DEITY-003",
       "ascensionTier": "Base",
@@ -652,7 +654,8 @@
       "faith_trigger": "Conduit",
       "faith_name": "Throne of Weaving",
       "combatRole": "Spell Caster",
-      "weaponType": "Magic Sceptre"
+      "weaponType": "Magic Sceptre",
+      "role": "Dominion"
     },
     {
       "id": "MG-DEITY-004",
@@ -662,10 +665,10 @@
       "faction": "Aten Ra",
       "rarity": "Rare",
       "abilities": [
-        "Amunet — Ma’at-Weighted Strike Rend",
-        "Pylon Edict Technique — Rupture",
+        "Amunet \u2014 Ma\u2019at-Weighted Strike Rend",
+        "Pylon Edict Technique \u2014 Rupture",
         "Amunet: Sun-Scale Decree Sundering Trial",
-        "Divine Ascension — Aten-Ra Source Radiance"
+        "Divine Ascension \u2014 Aten-Ra Source Radiance"
       ],
       "stats": {
         "hp": 44,
@@ -682,16 +685,16 @@
         "combatPower": 214
       },
       "equipment": [
-        "Amunet Sunderer Ma’at Was-Sceptre Blade",
+        "Amunet Sunderer Ma\u2019at Was-Sceptre Blade",
         "Amunet Electrum Wesekh Source-Plate",
         "Amunet Khepri Solar Scarab Core"
       ],
       "passives": [
-        "Solar Edict: Amunet gains Solar Charge when breaker play marks armor, guard, or ritual structure for staged rupture on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
+        "Solar Edict: Amunet gains Solar Charge when breaker play marks armor, guard, or ritual structure for staged rupture on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma\u2019at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
       ],
-      "lore": "Amunet is the punishment side of Ma’at: when something refuses balance, he refracts its hidden weight until armor, lies, and false sanctity split open. Human scales of judgement are crude courtroom copies of his prism engine.",
+      "lore": "Amunet is the punishment side of Ma\u2019at: when something refuses balance, he refracts its hidden weight until armor, lies, and false sanctity split open. Human scales of judgement are crude courtroom copies of his prism engine.",
       "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
-      "visualDescription": "Shadow Deity with crystalline solar-prism chest, weighing-scale shoulder geometry, Ma’at feather linework, clear amber glass execution blades, electrum ribs, and fractured light exposing enemy weak points. Avoid generic crystal robot; the prism must feel sacred, judicial, and alive.",
+      "visualDescription": "Shadow Deity with crystalline solar-prism chest, weighing-scale shoulder geometry, Ma\u2019at feather linework, clear amber glass execution blades, electrum ribs, and fractured light exposing enemy weak points. Avoid generic crystal robot; the prism must feel sacred, judicial, and alive.",
       "artStatus": "Prompt Ready",
       "artPromptId": "MG-PROMPT-004",
       "artworkId": null,
@@ -699,7 +702,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-004",
       "abilityDetails": [
         {
-          "name": "Amunet — Ma’at-Weighted Strike Rend",
+          "name": "Amunet \u2014 Ma\u2019at-Weighted Strike Rend",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -710,12 +713,12 @@
             "aten-ra",
             "source-culture"
           ],
-          "effect": "Deal Aten Ra source-culture damage at range 2; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+          "effect": "Deal Aten Ra source-culture damage at range 2; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
           "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Pylon Edict Technique — Rupture",
+          "name": "Pylon Edict Technique \u2014 Rupture",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -747,7 +750,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Aten-Ra Source Radiance",
+          "name": "Divine Ascension \u2014 Aten-Ra Source Radiance",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -765,11 +768,11 @@
       ],
       "equipmentDetails": [
         {
-          "name": "Amunet Sunderer Ma’at Was-Sceptre Blade",
+          "name": "Amunet Sunderer Ma\u2019at Was-Sceptre Blade",
           "slot": "Relic Weapon",
           "rarityFloor": "Rare",
           "primaryStat": "attack",
-          "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through Aten-lit judgment ground. Visual: Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+          "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through Aten-lit judgment ground. Visual: Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
           "balanceGuardrail": "No extra action loops; empowered basics are once per round."
         },
         {
@@ -823,7 +826,7 @@
         "uniqueMechanic": "Amunet's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Deity exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
         "counterplayRule": "mistimed burst leaves the Deity exposed during recovery"
       },
-      "mythicSource": "Ma’at weighing + prism light + divine verdict",
+      "mythicSource": "Ma\u2019at weighing + prism light + divine verdict",
       "visualTraits": [
         "armor-breaking judgement",
         "weighing-scale geometry",
@@ -832,7 +835,7 @@
       ],
       "armorCanon": "split prism pectoral, scale-beam shoulder arcs, clear solar glass blades, electrum verdict ribs, feather-line engravings",
       "updated": "2026-08-16T17:45:00Z",
-      "weaponCanon": "Amunet Staff — was-sceptre with a crystalline prism head that refracts hidden weight into blinding judgment light; splits lies from truth like a prism splits light",
+      "weaponCanon": "Amunet Staff \u2014 was-sceptre with a crystalline prism head that refracts hidden weight into blinding judgment light; splits lies from truth like a prism splits light",
       "gearCanon": {
         "weapon": "Amunet Staff",
         "armor": "Amunet Crystalline Verdict-Plate",
@@ -840,16 +843,16 @@
         "movementRelic": "Prism Light Step",
         "reactionRelic": "Scale Beam Counter",
         "executionRelic": "Heart Weighing Verdict",
-        "visualRule": "Crystalline solar-prism chest, Ma'at feather linework, scale-beam shoulder arcs, clear amber glass blades, electrum verdict ribs — the refraction of hidden truth into judgment"
+        "visualRule": "Crystalline solar-prism chest, Ma'at feather linework, scale-beam shoulder arcs, clear amber glass blades, electrum verdict ribs \u2014 the refraction of hidden truth into judgment"
       },
       "sex": "Female",
       "deityArtDna": {
-        "mythology": "Ma’at weighing + prism light + divine verdict",
+        "mythology": "Ma\u2019at weighing + prism light + divine verdict",
         "realm": "The Solar Dominion of Khepra",
         "civilization": "An extradimensional solar civilization whose crowns, pylons, collars, sun-discs, scarabs, throne-magic, river rites, lion guardians, and desert-storm wardens later appeared in human Egyptian myth as imperfect memories of the source Realm.",
         "cultureRule": "source culture humans later copied as Egyptian solar myth",
         "beautyStandard": "solar-kingship masculinity: ritual height, desert-lean strength, carved jaw, calm judging eyes, electrum restraint, no brute bulk",
-        "realmAnatomy": "sun-forged divine anatomy with electrum warmth under skin, lapis/obsidian shadow seams, faience vein inlays, Ma’at balance scars, and living sun-disc organs",
+        "realmAnatomy": "sun-forged divine anatomy with electrum warmth under skin, lapis/obsidian shadow seams, faience vein inlays, Ma\u2019at balance scars, and living sun-disc organs",
         "identityFace": "broad sun-carved face with high cheekbones, straight ceremonial nose, close-cropped beard, and steady tribunal gaze; unique to Amunet through the split cloak tail facial/cranial rhythm",
         "identityBody": "masculine mythic playable build; height/proportion offset 4: crescent shoulder void changes the black-shape read",
         "roleSilhouette": "clear unique playable silhouette plus thorn rib lattice so the character reads alone in silhouette",
@@ -857,10 +860,10 @@
         "auditStatus": "PASS",
         "updated": "2026-08-17",
         "maskHelmetIdentity": "Amunet mask/helmet/crown uses floating oath-ring stack, sex-specific eye framing, and role-specific brow/cheek geometry; never interchangeable faction headgear.",
-        "armorIdentity": "Shadow Deity with crystalline solar-prism chest, weighing-scale shoulder geometry, Ma’at feather linework, clear amber glass execution blades, electrum ribs, and fractured light exposing enemy weak points. Avoid generic crystal robot; the prism must feel sacred, judicial, and alive.",
+        "armorIdentity": "Shadow Deity with crystalline solar-prism chest, weighing-scale shoulder geometry, Ma\u2019at feather linework, clear amber glass execution blades, electrum ribs, and fractured light exposing enemy weak points. Avoid generic crystal robot; the prism must feel sacred, judicial, and alive.",
         "resolvedArtIdentityPass": true
       },
-      "coreCanon": "Ma'at Prism Heart — judgment crystal heart that weighs all it touches against the feather of truth; the punishment side of Ma'at's balance",
+      "coreCanon": "Ma'at Prism Heart \u2014 judgment crystal heart that weighs all it touches against the feather of truth; the punishment side of Ma'at's balance",
       "entityType": "Deity",
       "formerDeityId": "MG-DEITY-004",
       "ascensionTier": "Base",
@@ -868,7 +871,8 @@
       "faith_trigger": "Shadow",
       "faith_name": "Hidden Word Devotion",
       "combatRole": "Assassin",
-      "weaponType": "Hidden Blade"
+      "weaponType": "Hidden Blade",
+      "role": "Fracture"
     },
     {
       "id": "MG-DEITY-010",
@@ -878,10 +882,10 @@
       "faction": "Asgardian",
       "rarity": "Legendary",
       "abilities": [
-        "Odin — Oath-Ring Cleave Anchor",
-        "Rune-Thunder Technique — Bastion",
+        "Odin \u2014 Oath-Ring Cleave Anchor",
+        "Rune-Thunder Technique \u2014 Bastion",
         "Odin: Yggdrasil Root Oath Holdfast",
-        "Divine Ascension — Ragnarok Storm Unbound"
+        "Divine Ascension \u2014 Ragnarok Storm Unbound"
       ],
       "stats": {
         "hp": 48,
@@ -915,7 +919,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-010",
       "abilityDetails": [
         {
-          "name": "Odin — Oath-Ring Cleave Anchor",
+          "name": "Odin \u2014 Oath-Ring Cleave Anchor",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -931,7 +935,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Rune-Thunder Technique — Bastion",
+          "name": "Rune-Thunder Technique \u2014 Bastion",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -963,7 +967,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Ragnarok Storm Unbound",
+          "name": "Divine Ascension \u2014 Ragnarok Storm Unbound",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -1084,7 +1088,8 @@
       "faith_trigger": "Endurance",
       "faith_name": "Odin's Sacrifice",
       "combatRole": "Spell Caster",
-      "weaponType": "Rune Staff"
+      "weaponType": "Rune Staff",
+      "role": "Endurance"
     },
     {
       "id": "MG-DEITY-011",
@@ -1094,10 +1099,10 @@
       "faction": "Asgardian",
       "rarity": "Epic",
       "abilities": [
-        "Thor — Oath-Ring Cleave Kindle",
-        "Rune-Thunder Technique — Reservoir",
+        "Thor \u2014 Oath-Ring Cleave Kindle",
+        "Rune-Thunder Technique \u2014 Reservoir",
         "Thor: Yggdrasil Root Oath Overchannel",
-        "Divine Ascension — Ragnarok Storm Unbound"
+        "Divine Ascension \u2014 Ragnarok Storm Unbound"
       ],
       "stats": {
         "hp": 40,
@@ -1131,7 +1136,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-011",
       "abilityDetails": [
         {
-          "name": "Thor — Oath-Ring Cleave Kindle",
+          "name": "Thor \u2014 Oath-Ring Cleave Kindle",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -1147,7 +1152,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Rune-Thunder Technique — Reservoir",
+          "name": "Rune-Thunder Technique \u2014 Reservoir",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -1179,7 +1184,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Ragnarok Storm Unbound",
+          "name": "Divine Ascension \u2014 Ragnarok Storm Unbound",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -1300,7 +1305,8 @@
       "faith_trigger": "Dominion",
       "faith_name": "Storm-Hammer Dominion",
       "combatRole": "Warrior",
-      "weaponType": "War Hammer"
+      "weaponType": "War Hammer",
+      "role": "Conduit"
     },
     {
       "id": "MG-DEITY-012",
@@ -1320,7 +1326,7 @@
         "source culture humans later copied as Norse myth",
         "ice-blue and frost-grey"
       ],
-      "lore": "Skadi is the divine huntress of the Asgardian realm, a frost-giantess who joined the gods after her father's death. She rules mountains, winter, and the hunt. Her divine bow fires arrows of pure frost that freeze enemies solid. She is the gate-keeper of frozen thresholds — what enters her domain either hunts or is hunted.",
+      "lore": "Skadi is the divine huntress of the Asgardian realm, a frost-giantess who joined the gods after her father's death. She rules mountains, winter, and the hunt. Her divine bow fires arrows of pure frost that freeze enemies solid. She is the gate-keeper of frozen thresholds \u2014 what enters her domain either hunts or is hunted.",
       "personality": "Cold, focused, relentless; the patience of a predator in winter.",
       "visualDescription": "Colossal divine huntress standing on a frozen mountain peak. Ice-blue living metal skin with frost-crack energy veins. Wearing Norse hunting leathers and furs over storm-iron armor. Her divine bow is crafted from frozen yew with ice-energy bowstring. Snow swirls around her feet. Frost-blue aura. Low camera angle showing colossal scale with tiny mountain pines at her boots.",
       "artStatus": "Prompt Ready",
@@ -1328,17 +1334,17 @@
       "artworkId": null,
       "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass pending; artwork pending.",
       "abilities": [
-        "Skadi — Frost Arrow Volley",
-        "Winter's Bite Technique — Frozen Ground",
+        "Skadi \u2014 Frost Arrow Volley",
+        "Winter's Bite Technique \u2014 Frozen Ground",
         "Skadi: Avalanche Barrage",
-        "Divine Ascension — Skadi Eternal Winter"
+        "Divine Ascension \u2014 Skadi Eternal Winter"
       ],
       "equipment": [
         "Skadi Frost-Bow of the Thjazi Ridge",
         "Skadi Snow-Leather Hunt-Plate",
         "Skadi Winter-Hunt Sight Core"
       ],
-      "weaponCanon": "Skadi Frost-Bow — divine hunting bow of frozen yew with ice-energy bowstring; fires arrows of pure frost",
+      "weaponCanon": "Skadi Frost-Bow \u2014 divine hunting bow of frozen yew with ice-energy bowstring; fires arrows of pure frost",
       "gearCanon": {
         "weapon": "Skadi Frost-Bow of the Thjazi Ridge",
         "armor": "Skadi Snow-Leather Hunt-Plate",
@@ -1346,16 +1352,16 @@
         "movementRelic": "Ski-Descend of the Mountain",
         "reactionRelic": "Avalanche Counter",
         "executionRelic": "Winter's Final Arrow",
-        "visualRule": "Ice-blue frost armor, frozen yew bow, snow-leather hunting gear, frost-grey and ice-blue authority — the mountain huntress"
+        "visualRule": "Ice-blue frost armor, frozen yew bow, snow-leather hunting gear, frost-grey and ice-blue authority \u2014 the mountain huntress"
       },
       "balanceNotes": {
         "intendedDifficulty": "Ranged kiting specialist: high mobility, high damage at range, vulnerable when caught in melee.",
-        "primaryRole": "archer — ranged DPS and area denial through frozen terrain",
+        "primaryRole": "archer \u2014 ranged DPS and area denial through frozen terrain",
         "uniqueMechanic": "Skadi's Frost Arrows: each arrow leaves a patch of frozen ground that slows enemies. At 3 stacks, the next arrow freezes the target solid for 1 second. At 5 stacks, Avalanche Barrage transforms the battlefield.",
         "counterplayRule": "close distance, use heat/fire abilities, or outmaneuver the frozen zones"
       },
       "deityArtDna": {
-        "mythology": "Skadi — Norse goddess of hunting, winter, skiing, mountains",
+        "mythology": "Skadi \u2014 Norse goddess of hunting, winter, skiing, mountains",
         "realm": "Thrymheim (her mountain hall)",
         "civilization": "A frost-giantess who joined the Aesir; her culture is mountain survival, hunting, and winter warfare. Humans later remembered her as the snowshoe goddess.",
         "cultureRule": "source culture humans later copied as Norse winter/hunting myth",
@@ -1363,12 +1369,13 @@
         "identityFace": "sharp-featured huntress face with high cheekbones, narrowed predator eyes, frost-bitten lips, and ice-white braided hair with a iron circlet",
         "identityBody": "athletic hunter build with broad shoulders for drawing a divine bow, long legs for mountain travel",
         "skinType": "living ice-metal with frost-crack energy veins in ice-blue",
-        "armorCanon": "Norse hunting leathers and furs over storm-iron plate — designed for mobility in extreme cold. NOT full plate. Fur-lined leather, iron chain accents, snowshoe boots.",
+        "armorCanon": "Norse hunting leathers and furs over storm-iron plate \u2014 designed for mobility in extreme cold. NOT full plate. Fur-lined leather, iron chain accents, snowshoe boots.",
         "footwear": "Reinforced winter hunting boots with iron grips",
         "aura": "frost-blue and ice-white with snow particles",
         "groundEffect": "frozen mountain peak with snow, ice crystals, and tiny mountain pines showing colossal scale"
       },
-      "updated": "2026-08-19T21:40:00Z"
+      "updated": "2026-08-19T21:40:00Z",
+      "role": "Dominion"
     },
     {
       "id": "MG-DEITY-013",
@@ -1378,10 +1385,10 @@
       "faction": "Asgardian",
       "rarity": "Rare",
       "abilities": [
-        "Freyja — Oath-Ring Cleave Rend",
-        "Rune-Thunder Technique — Rupture",
+        "Freyja \u2014 Oath-Ring Cleave Rend",
+        "Rune-Thunder Technique \u2014 Rupture",
         "Freyja: Yggdrasil Root Oath Sundering Trial",
-        "Divine Ascension — Ragnarok Storm Unbound"
+        "Divine Ascension \u2014 Ragnarok Storm Unbound"
       ],
       "stats": {
         "hp": 40,
@@ -1415,7 +1422,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-013",
       "abilityDetails": [
         {
-          "name": "Freyja — Oath-Ring Cleave Rend",
+          "name": "Freyja \u2014 Oath-Ring Cleave Rend",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -1431,7 +1438,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Rune-Thunder Technique — Rupture",
+          "name": "Rune-Thunder Technique \u2014 Rupture",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -1463,7 +1470,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Ragnarok Storm Unbound",
+          "name": "Divine Ascension \u2014 Ragnarok Storm Unbound",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -1582,9 +1589,10 @@
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
       "faith_trigger": "Conduit",
-      "faith_name": "Seiðr War-Chant",
+      "faith_name": "Sei\u00f0r War-Chant",
       "combatRole": "Assassin",
-      "weaponType": "Seax Dagger"
+      "weaponType": "Seax Dagger",
+      "role": "Fracture"
     },
     {
       "id": "MG-DEITY-019",
@@ -1594,10 +1602,10 @@
       "faction": "Olympian",
       "rarity": "Legendary",
       "abilities": [
-        "Zeus — Aegis Spear Thrust Anchor",
-        "Laurel Trial Technique — Bastion",
+        "Zeus \u2014 Aegis Spear Thrust Anchor",
+        "Laurel Trial Technique \u2014 Bastion",
         "Zeus: Olympian Verdict Contest Holdfast",
-        "Divine Ascension — Nike Crowned Ascension"
+        "Divine Ascension \u2014 Nike Crowned Ascension"
       ],
       "stats": {
         "hp": 50,
@@ -1631,7 +1639,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-019",
       "abilityDetails": [
         {
-          "name": "Zeus — Aegis Spear Thrust Anchor",
+          "name": "Zeus \u2014 Aegis Spear Thrust Anchor",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -1647,7 +1655,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Laurel Trial Technique — Bastion",
+          "name": "Laurel Trial Technique \u2014 Bastion",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -1679,7 +1687,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Nike Crowned Ascension",
+          "name": "Divine Ascension \u2014 Nike Crowned Ascension",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -1800,7 +1808,8 @@
       "faith_trigger": "Dominion",
       "faith_name": "Sky-Throne Dominion",
       "combatRole": "Spell Caster",
-      "weaponType": "Thunderbolt"
+      "weaponType": "Thunderbolt",
+      "role": "Endurance"
     },
     {
       "id": "MG-DEITY-020",
@@ -1810,10 +1819,10 @@
       "faction": "Olympian",
       "rarity": "Epic",
       "abilities": [
-        "Athena — Aegis Spear Thrust Kindle",
-        "Laurel Trial Technique — Reservoir",
+        "Athena \u2014 Aegis Spear Thrust Kindle",
+        "Laurel Trial Technique \u2014 Reservoir",
         "Athena: Olympian Verdict Contest Overchannel",
-        "Divine Ascension — Nike Crowned Ascension"
+        "Divine Ascension \u2014 Nike Crowned Ascension"
       ],
       "stats": {
         "hp": 42,
@@ -1847,7 +1856,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-020",
       "abilityDetails": [
         {
-          "name": "Athena — Aegis Spear Thrust Kindle",
+          "name": "Athena \u2014 Aegis Spear Thrust Kindle",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -1863,7 +1872,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Laurel Trial Technique — Reservoir",
+          "name": "Laurel Trial Technique \u2014 Reservoir",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -1895,7 +1904,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Nike Crowned Ascension",
+          "name": "Divine Ascension \u2014 Nike Crowned Ascension",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -2016,7 +2025,8 @@
       "faith_trigger": "Counter",
       "faith_name": "Strategist's Aegis",
       "combatRole": "Assassin",
-      "weaponType": "Xiphos Shortsword"
+      "weaponType": "Xiphos Shortsword",
+      "role": "Conduit"
     },
     {
       "id": "MG-DEITY-021",
@@ -2026,10 +2036,10 @@
       "faction": "Olympian",
       "rarity": "Epic",
       "abilities": [
-        "Artemis — Aegis Spear Thrust Vector",
-        "Laurel Trial Technique — Field Rewrite",
+        "Artemis \u2014 Aegis Spear Thrust Vector",
+        "Laurel Trial Technique \u2014 Field Rewrite",
         "Artemis: Olympian Verdict Contest Dominion Grid",
-        "Divine Ascension — Nike Crowned Ascension"
+        "Divine Ascension \u2014 Nike Crowned Ascension"
       ],
       "stats": {
         "hp": 36,
@@ -2063,7 +2073,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-021",
       "abilityDetails": [
         {
-          "name": "Artemis — Aegis Spear Thrust Vector",
+          "name": "Artemis \u2014 Aegis Spear Thrust Vector",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -2079,7 +2089,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Laurel Trial Technique — Field Rewrite",
+          "name": "Laurel Trial Technique \u2014 Field Rewrite",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -2111,7 +2121,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Nike Crowned Ascension",
+          "name": "Divine Ascension \u2014 Nike Crowned Ascension",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -2232,7 +2242,8 @@
       "faith_trigger": "Range",
       "faith_name": "Silver-Arrow Hunt",
       "combatRole": "Archer",
-      "weaponType": "Hunting Bow"
+      "weaponType": "Hunting Bow",
+      "role": "Dominion"
     },
     {
       "id": "MG-DEITY-022",
@@ -2242,10 +2253,10 @@
       "faction": "Olympian",
       "rarity": "Rare",
       "abilities": [
-        "Ares — Aegis Spear Thrust Rend",
-        "Laurel Trial Technique — Rupture",
+        "Ares \u2014 Aegis Spear Thrust Rend",
+        "Laurel Trial Technique \u2014 Rupture",
         "Ares: Olympian Verdict Contest Sundering Trial",
-        "Divine Ascension — Nike Crowned Ascension"
+        "Divine Ascension \u2014 Nike Crowned Ascension"
       ],
       "stats": {
         "hp": 42,
@@ -2279,7 +2290,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-022",
       "abilityDetails": [
         {
-          "name": "Ares — Aegis Spear Thrust Rend",
+          "name": "Ares \u2014 Aegis Spear Thrust Rend",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -2295,7 +2306,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Laurel Trial Technique — Rupture",
+          "name": "Laurel Trial Technique \u2014 Rupture",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -2327,7 +2338,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Nike Crowned Ascension",
+          "name": "Divine Ascension \u2014 Nike Crowned Ascension",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -2448,7 +2459,8 @@
       "faith_trigger": "Fracture",
       "faith_name": "Blood-Fury Fracture",
       "combatRole": "Warrior",
-      "weaponType": "Kopis Sword"
+      "weaponType": "Kopis Sword",
+      "role": "Fracture"
     },
     {
       "id": "MG-DEITY-028",
@@ -2458,10 +2470,10 @@
       "faction": "Kami",
       "rarity": "Legendary",
       "abilities": [
-        "Amaterasu — Kagura Spirit Cut Anchor",
-        "Shide Seal Technique — Bastion",
+        "Amaterasu \u2014 Kagura Spirit Cut Anchor",
+        "Shide Seal Technique \u2014 Bastion",
         "Amaterasu: Torii Boundary Rewrite Holdfast",
-        "Divine Ascension — Amaterasu Moon-Gate Radiance"
+        "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance"
       ],
       "stats": {
         "hp": 52,
@@ -2495,7 +2507,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-028",
       "abilityDetails": [
         {
-          "name": "Amaterasu — Kagura Spirit Cut Anchor",
+          "name": "Amaterasu \u2014 Kagura Spirit Cut Anchor",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -2511,7 +2523,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Shide Seal Technique — Bastion",
+          "name": "Shide Seal Technique \u2014 Bastion",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -2543,7 +2555,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Amaterasu Moon-Gate Radiance",
+          "name": "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -2664,7 +2676,8 @@
       "faith_trigger": "Bulwark",
       "faith_name": "Sun-Goddess Radiance",
       "combatRole": "Archer",
-      "weaponType": "Solar Bow"
+      "weaponType": "Solar Bow",
+      "role": "Endurance"
     },
     {
       "id": "MG-DEITY-029",
@@ -2674,10 +2687,10 @@
       "faction": "Kami",
       "rarity": "Epic",
       "abilities": [
-        "Tsukuyomi — Kagura Spirit Cut Kindle",
-        "Shide Seal Technique — Reservoir",
+        "Tsukuyomi \u2014 Kagura Spirit Cut Kindle",
+        "Shide Seal Technique \u2014 Reservoir",
         "Tsukuyomi: Torii Boundary Rewrite Overchannel",
-        "Divine Ascension — Amaterasu Moon-Gate Radiance"
+        "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance"
       ],
       "stats": {
         "hp": 38,
@@ -2711,7 +2724,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-029",
       "abilityDetails": [
         {
-          "name": "Tsukuyomi — Kagura Spirit Cut Kindle",
+          "name": "Tsukuyomi \u2014 Kagura Spirit Cut Kindle",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -2727,7 +2740,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Shide Seal Technique — Reservoir",
+          "name": "Shide Seal Technique \u2014 Reservoir",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -2759,7 +2772,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Amaterasu Moon-Gate Radiance",
+          "name": "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -2880,7 +2893,8 @@
       "faith_trigger": "Shadow",
       "faith_name": "Moon-Shadow Judgment",
       "combatRole": "Spell Caster",
-      "weaponType": "Lunar Naginata"
+      "weaponType": "Lunar Naginata",
+      "role": "Conduit"
     },
     {
       "id": "MG-DEITY-030",
@@ -2890,10 +2904,10 @@
       "faction": "Kami",
       "rarity": "Epic",
       "abilities": [
-        "Susanoo — Kagura Spirit Cut Vector",
-        "Shide Seal Technique — Field Rewrite",
+        "Susanoo \u2014 Kagura Spirit Cut Vector",
+        "Shide Seal Technique \u2014 Field Rewrite",
         "Susanoo: Torii Boundary Rewrite Dominion Grid",
-        "Divine Ascension — Amaterasu Moon-Gate Radiance"
+        "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance"
       ],
       "stats": {
         "hp": 38,
@@ -2927,7 +2941,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-030",
       "abilityDetails": [
         {
-          "name": "Susanoo — Kagura Spirit Cut Vector",
+          "name": "Susanoo \u2014 Kagura Spirit Cut Vector",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -2943,7 +2957,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Shide Seal Technique — Field Rewrite",
+          "name": "Shide Seal Technique \u2014 Field Rewrite",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -2975,7 +2989,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Amaterasu Moon-Gate Radiance",
+          "name": "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -3096,7 +3110,8 @@
       "faith_trigger": "Disruption",
       "faith_name": "Storm-Blade Disruption",
       "combatRole": "Warrior",
-      "weaponType": "Tachi Longsword"
+      "weaponType": "Tachi Longsword",
+      "role": "Dominion"
     },
     {
       "id": "MG-DEITY-031",
@@ -3106,10 +3121,10 @@
       "faction": "Kami",
       "rarity": "Rare",
       "abilities": [
-        "Izanami — Kagura Spirit Cut Rend",
-        "Shide Seal Technique — Rupture",
+        "Izanami \u2014 Kagura Spirit Cut Rend",
+        "Shide Seal Technique \u2014 Rupture",
         "Izanami: Torii Boundary Rewrite Sundering Trial",
-        "Divine Ascension — Amaterasu Moon-Gate Radiance"
+        "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance"
       ],
       "stats": {
         "hp": 44,
@@ -3143,7 +3158,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-031",
       "abilityDetails": [
         {
-          "name": "Izanami — Kagura Spirit Cut Rend",
+          "name": "Izanami \u2014 Kagura Spirit Cut Rend",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -3159,7 +3174,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Shide Seal Technique — Rupture",
+          "name": "Shide Seal Technique \u2014 Rupture",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -3191,7 +3206,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Amaterasu Moon-Gate Radiance",
+          "name": "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -3312,7 +3327,8 @@
       "faith_trigger": "Endurance",
       "faith_name": "Death-Gate Endurance",
       "combatRole": "Assassin",
-      "weaponType": "Kusarigama"
+      "weaponType": "Kusarigama",
+      "role": "Fracture"
     },
     {
       "id": "MG-DEITY-037",
@@ -3322,10 +3338,10 @@
       "faction": "Tuatha",
       "rarity": "Legendary",
       "abilities": [
-        "Dagda — Silver-Lughch Cut Anchor",
-        "Geas Thorn Technique — Bastion",
-        "Dagda: Sídhe Court Covenant Holdfast",
-        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
+        "Dagda \u2014 Silver-Lughch Cut Anchor",
+        "Geas Thorn Technique \u2014 Bastion",
+        "Dagda: S\u00eddhe Court Covenant Holdfast",
+        "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
       ],
       "stats": {
         "hp": 48,
@@ -3343,13 +3359,13 @@
       },
       "equipment": [
         "Dagda Bulwark Lugh Silver-Spear Thornblade",
-        "Dagda Moon-Oak Sídhe Mantle",
+        "Dagda Moon-Oak S\u00eddhe Mantle",
         "Dagda Dagda Cauldron Memory Core"
       ],
       "passives": [
-        "Geas Bloom: Dagda gains Geas when defender play anchors a control zone and converts enemy commitment into mitigation on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
+        "Geas Bloom: Dagda gains Geas when defender play anchors a control zone and converts enemy commitment into mitigation on s\u00eddhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
       ],
-      "lore": "Dagda is a colossal Tuatha defender from Avalora. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Tuatha defender office: sovereign protector, gate-holder, law shield; Tuatha Dé Danann: divine tribes, craft, sovereignty, otherworld descent.",
+      "lore": "Dagda is a colossal Tuatha defender from Avalora. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Tuatha defender office: sovereign protector, gate-holder, law shield; Tuatha D\u00e9 Danann: divine tribes, craft, sovereignty, otherworld descent.",
       "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
       "visualDescription": "Full-body living myth-source Deity, not a costume: Dagda shows silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.. Role silhouette must read as Endurance faith. Materials include moon silver, living oak bark, thorn vine, moss velvet, green-gold light, fae glass, crow black feather. The design must feel older than human mythology and avoid generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume.",
       "artStatus": "Prompt Ready",
@@ -3359,7 +3375,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-037",
       "abilityDetails": [
         {
-          "name": "Dagda — Silver-Lughch Cut Anchor",
+          "name": "Dagda \u2014 Silver-Lughch Cut Anchor",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -3375,7 +3391,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Geas Thorn Technique — Bastion",
+          "name": "Geas Thorn Technique \u2014 Bastion",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -3391,7 +3407,7 @@
           "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
         },
         {
-          "name": "Dagda: Sídhe Court Covenant Holdfast",
+          "name": "Dagda: S\u00eddhe Court Covenant Holdfast",
           "slot": "Signature",
           "unlockLevel": 12,
           "cost": "45 Momentum + 25 Divinity",
@@ -3407,7 +3423,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Tír na nÓg Moon-Sovereign Form",
+          "name": "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -3433,7 +3449,7 @@
           "balanceGuardrail": "No extra action loops; empowered basics are once per round."
         },
         {
-          "name": "Dagda Moon-Oak Sídhe Mantle",
+          "name": "Dagda Moon-Oak S\u00eddhe Mantle",
           "slot": "Armor Body",
           "rarityFloor": "Legendary",
           "primaryStat": "armor",
@@ -3445,7 +3461,7 @@
           "slot": "Resonance Core",
           "rarityFloor": "Legendary",
           "primaryStat": "energy",
-          "effect": "Stores Geas Memory and unlocks a mastery branch for Sídhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
+          "effect": "Stores Geas Memory and unlocks a mastery branch for S\u00eddhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
           "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
         }
       ],
@@ -3480,10 +3496,10 @@
           "bad terrain matchups",
           "mistimed reactions"
         ],
-        "uniqueMechanic": "Dagda's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+        "uniqueMechanic": "Dagda's Geas Bloom: a solo mechanic where Geas grows through s\u00eddhe-root crossing, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
         "counterplayRule": "spread attackers, displacement, or terrain denial break the anchor"
       },
-      "mythicSource": "Tuatha defender office: sovereign protector, gate-holder, law shield; Tuatha Dé Danann: divine tribes, craft, sovereignty, otherworld descent",
+      "mythicSource": "Tuatha defender office: sovereign protector, gate-holder, law shield; Tuatha D\u00e9 Danann: divine tribes, craft, sovereignty, otherworld descent",
       "visualTraits": [
         "sovereign protector",
         "gate-holder",
@@ -3496,16 +3512,16 @@
       "weaponCanon": "Dagda Bulwark Lugh Silver-Spear Thornblade",
       "gearCanon": {
         "weapon": "Dagda Bulwark Lugh Silver-Spear Thornblade",
-        "armor": "Dagda Moon-Oak Sídhe Mantle",
+        "armor": "Dagda Moon-Oak S\u00eddhe Mantle",
         "core": "Dagda Dagda Cauldron Memory Core",
-        "movementRelic": "Sídhe Mound Slip",
+        "movementRelic": "S\u00eddhe Mound Slip",
         "reactionRelic": "Fae Glamour Reversal",
         "executionRelic": "Collect the Geas Debt",
         "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
       },
       "sex": "Male",
       "deityArtDna": {
-        "mythology": "Tuatha defender office: sovereign protector, gate-holder, law shield; Tuatha Dé Danann: divine tribes, craft, sovereignty, otherworld descent",
+        "mythology": "Tuatha defender office: sovereign protector, gate-holder, law shield; Tuatha D\u00e9 Danann: divine tribes, craft, sovereignty, otherworld descent",
         "realm": "Avalora",
         "civilization": "A fae-sovereign memory civilization whose mound gates, silver oathcraft, living woods, moon courts, battle crows, poetic fire, druid knots, and impossible youthlands later became human Celtic fairy and divine lore.",
         "cultureRule": "source culture humans later copied as Celtic and Irish fae myth",
@@ -3528,7 +3544,8 @@
       "faith_trigger": "Endurance",
       "faith_name": "Cauldron of Endless Plenty",
       "combatRole": "Warrior",
-      "weaponType": "War Club"
+      "weaponType": "War Club",
+      "role": "Endurance"
     },
     {
       "id": "MG-DEITY-038",
@@ -3538,10 +3555,10 @@
       "faction": "Tuatha",
       "rarity": "Epic",
       "abilities": [
-        "Brigid — Silver-Lughch Cut Kindle",
-        "Geas Thorn Technique — Reservoir",
-        "Brigid: Sídhe Court Covenant Overchannel",
-        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
+        "Brigid \u2014 Silver-Lughch Cut Kindle",
+        "Geas Thorn Technique \u2014 Reservoir",
+        "Brigid: S\u00eddhe Court Covenant Overchannel",
+        "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
       ],
       "stats": {
         "hp": 40,
@@ -3559,13 +3576,13 @@
       },
       "equipment": [
         "Brigid Generator Lugh Silver-Spear Thornblade",
-        "Brigid Moon-Oak Sídhe Mantle",
+        "Brigid Moon-Oak S\u00eddhe Mantle",
         "Brigid Dagda Cauldron Memory Core"
       ],
       "passives": [
-        "Geas Bloom: Brigid gains Geas when battery play stores excess resource and refunds Momentum after precise setup on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
+        "Geas Bloom: Brigid gains Geas when battery play stores excess resource and refunds Momentum after precise setup on s\u00eddhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
       ],
-      "lore": "Brigid is a colossal Tuatha battery from Avalora. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Tuatha battery office: renewal engine, resource hearth, stored sacred force; Aos Sí/Sídhe: mound gates, hidden courts, fae ancestry.",
+      "lore": "Brigid is a colossal Tuatha battery from Avalora. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Tuatha battery office: renewal engine, resource hearth, stored sacred force; Aos S\u00ed/S\u00eddhe: mound gates, hidden courts, fae ancestry.",
       "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
       "visualDescription": "Full-body living myth-source Deity, not a costume: Brigid shows silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.. Role silhouette must read as Conduit faith. Materials include moon silver, living oak bark, thorn vine, moss velvet, green-gold light, fae glass, crow black feather. The design must feel older than human mythology and avoid generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume.",
       "artStatus": "Prompt Ready",
@@ -3575,7 +3592,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-038",
       "abilityDetails": [
         {
-          "name": "Brigid — Silver-Lughch Cut Kindle",
+          "name": "Brigid \u2014 Silver-Lughch Cut Kindle",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -3591,7 +3608,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Geas Thorn Technique — Reservoir",
+          "name": "Geas Thorn Technique \u2014 Reservoir",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -3607,7 +3624,7 @@
           "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
         },
         {
-          "name": "Brigid: Sídhe Court Covenant Overchannel",
+          "name": "Brigid: S\u00eddhe Court Covenant Overchannel",
           "slot": "Signature",
           "unlockLevel": 12,
           "cost": "45 Momentum + 25 Divinity",
@@ -3623,7 +3640,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Tír na nÓg Moon-Sovereign Form",
+          "name": "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -3649,7 +3666,7 @@
           "balanceGuardrail": "No extra action loops; empowered basics are once per round."
         },
         {
-          "name": "Brigid Moon-Oak Sídhe Mantle",
+          "name": "Brigid Moon-Oak S\u00eddhe Mantle",
           "slot": "Armor Body",
           "rarityFloor": "Epic",
           "primaryStat": "resistance",
@@ -3661,7 +3678,7 @@
           "slot": "Resonance Core",
           "rarityFloor": "Epic",
           "primaryStat": "energy",
-          "effect": "Stores Geas Memory and unlocks a mastery branch for Sídhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
+          "effect": "Stores Geas Memory and unlocks a mastery branch for S\u00eddhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
           "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
         }
       ],
@@ -3696,10 +3713,10 @@
           "bad terrain matchups",
           "mistimed reactions"
         ],
-        "uniqueMechanic": "Brigid's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+        "uniqueMechanic": "Brigid's Geas Bloom: a solo mechanic where Geas grows through s\u00eddhe-root crossing, reaction-window mastery, and battery decisions that store excess resource and refund Momentum after precise setup. Payoff: accelerate Signature timing without becoming a passive energy battery. Counterplay: interrupts and resource-drain enemies collapse the stored charge; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
         "counterplayRule": "interrupts and resource-drain enemies collapse the stored charge"
       },
-      "mythicSource": "Tuatha battery office: renewal engine, resource hearth, stored sacred force; Aos Sí/Sídhe: mound gates, hidden courts, fae ancestry",
+      "mythicSource": "Tuatha battery office: renewal engine, resource hearth, stored sacred force; Aos S\u00ed/S\u00eddhe: mound gates, hidden courts, fae ancestry",
       "visualTraits": [
         "renewal engine",
         "resource hearth",
@@ -3712,16 +3729,16 @@
       "weaponCanon": "Brigid Generator Lugh Silver-Spear Thornblade",
       "gearCanon": {
         "weapon": "Brigid Generator Lugh Silver-Spear Thornblade",
-        "armor": "Brigid Moon-Oak Sídhe Mantle",
+        "armor": "Brigid Moon-Oak S\u00eddhe Mantle",
         "core": "Brigid Dagda Cauldron Memory Core",
-        "movementRelic": "Sídhe Mound Slip",
+        "movementRelic": "S\u00eddhe Mound Slip",
         "reactionRelic": "Fae Glamour Reversal",
         "executionRelic": "Collect the Geas Debt",
         "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
       },
       "sex": "Female",
       "deityArtDna": {
-        "mythology": "Tuatha battery office: renewal engine, resource hearth, stored sacred force; Aos Sí/Sídhe: mound gates, hidden courts, fae ancestry",
+        "mythology": "Tuatha battery office: renewal engine, resource hearth, stored sacred force; Aos S\u00ed/S\u00eddhe: mound gates, hidden courts, fae ancestry",
         "realm": "Avalora",
         "civilization": "A fae-sovereign memory civilization whose mound gates, silver oathcraft, living woods, moon courts, battle crows, poetic fire, druid knots, and impossible youthlands later became human Celtic fairy and divine lore.",
         "cultureRule": "source culture humans later copied as Celtic and Irish fae myth",
@@ -3744,7 +3761,8 @@
       "faith_trigger": "Conduit",
       "faith_name": "Forge-Flame Conduit",
       "combatRole": "Spell Caster",
-      "weaponType": "Fire Staff"
+      "weaponType": "Fire Staff",
+      "role": "Conduit"
     },
     {
       "id": "MG-DEITY-039",
@@ -3754,10 +3772,10 @@
       "faction": "Tuatha",
       "rarity": "Epic",
       "abilities": [
-        "Morrígan — Silver-Lughch Cut Vector",
-        "Geas Thorn Technique — Field Rewrite",
-        "Morrígan: Sídhe Court Covenant Dominion Grid",
-        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
+        "Morr\u00edgan \u2014 Silver-Lughch Cut Vector",
+        "Geas Thorn Technique \u2014 Field Rewrite",
+        "Morr\u00edgan: S\u00eddhe Court Covenant Dominion Grid",
+        "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
       ],
       "stats": {
         "hp": 40,
@@ -3774,16 +3792,16 @@
         "combatPower": 234
       },
       "equipment": [
-        "Morrígan Compass Lugh Silver-Spear Thornblade",
-        "Morrígan Moon-Oak Sídhe Mantle",
-        "Morrígan Dagda Cauldron Memory Core"
+        "Morr\u00edgan Compass Lugh Silver-Spear Thornblade",
+        "Morr\u00edgan Moon-Oak S\u00eddhe Mantle",
+        "Morr\u00edgan Dagda Cauldron Memory Core"
       ],
       "passives": [
-        "Geas Bloom: Morrígan gains Geas when controller play rewrites movement lanes, delays elite intent, and imprints safe/unsafe tiles on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
+        "Geas Bloom: Morr\u00edgan gains Geas when controller play rewrites movement lanes, delays elite intent, and imprints safe/unsafe tiles on s\u00eddhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
       ],
-      "lore": "Morrígan is a colossal Tuatha controller from Avalora. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Tuatha controller office: terrain law, threshold command, battlefield geometry; Tír na nÓg: youth, impossible time, otherworld beauty.",
+      "lore": "Morr\u00edgan is a colossal Tuatha controller from Avalora. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Tuatha controller office: terrain law, threshold command, battlefield geometry; T\u00edr na n\u00d3g: youth, impossible time, otherworld beauty.",
       "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
-      "visualDescription": "Full-body living myth-source Deity, not a costume: Morrígan shows silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.. Role silhouette must read as Shadow faith. Materials include moon silver, living oak bark, thorn vine, moss velvet, green-gold light, fae glass, crow black feather. The design must feel older than human mythology and avoid generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume.",
+      "visualDescription": "Full-body living myth-source Deity, not a costume: Morr\u00edgan shows silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.. Role silhouette must read as Shadow faith. Materials include moon silver, living oak bark, thorn vine, moss velvet, green-gold light, fae glass, crow black feather. The design must feel older than human mythology and avoid generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume.",
       "artStatus": "Prompt Ready",
       "artPromptId": "MG-PROMPT-039",
       "artworkId": null,
@@ -3791,7 +3809,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-039",
       "abilityDetails": [
         {
-          "name": "Morrígan — Silver-Lughch Cut Vector",
+          "name": "Morr\u00edgan \u2014 Silver-Lughch Cut Vector",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -3807,7 +3825,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Geas Thorn Technique — Field Rewrite",
+          "name": "Geas Thorn Technique \u2014 Field Rewrite",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -3823,7 +3841,7 @@
           "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
         },
         {
-          "name": "Morrígan: Sídhe Court Covenant Dominion Grid",
+          "name": "Morr\u00edgan: S\u00eddhe Court Covenant Dominion Grid",
           "slot": "Signature",
           "unlockLevel": 12,
           "cost": "45 Momentum + 25 Divinity",
@@ -3839,7 +3857,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Tír na nÓg Moon-Sovereign Form",
+          "name": "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -3857,7 +3875,7 @@
       ],
       "equipmentDetails": [
         {
-          "name": "Morrígan Compass Lugh Silver-Spear Thornblade",
+          "name": "Morr\u00edgan Compass Lugh Silver-Spear Thornblade",
           "slot": "Relic Weapon",
           "rarityFloor": "Epic",
           "primaryStat": "attack",
@@ -3865,7 +3883,7 @@
           "balanceGuardrail": "No extra action loops; empowered basics are once per round."
         },
         {
-          "name": "Morrígan Moon-Oak Sídhe Mantle",
+          "name": "Morr\u00edgan Moon-Oak S\u00eddhe Mantle",
           "slot": "Armor Body",
           "rarityFloor": "Epic",
           "primaryStat": "resistance",
@@ -3873,11 +3891,11 @@
           "balanceGuardrail": "Mitigation cannot stack past role caps; does not erase telegraphed boss danger."
         },
         {
-          "name": "Morrígan Dagda Cauldron Memory Core",
+          "name": "Morr\u00edgan Dagda Cauldron Memory Core",
           "slot": "Resonance Core",
           "rarityFloor": "Epic",
           "primaryStat": "energy",
-          "effect": "Stores Geas Memory and unlocks a mastery branch for Sídhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
+          "effect": "Stores Geas Memory and unlocks a mastery branch for S\u00eddhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
           "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
         }
       ],
@@ -3912,10 +3930,10 @@
           "bad terrain matchups",
           "mistimed reactions"
         ],
-        "uniqueMechanic": "Morrígan's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+        "uniqueMechanic": "Morr\u00edgan's Geas Bloom: a solo mechanic where Geas grows through s\u00eddhe-root crossing, reaction-window mastery, and controller decisions that rewrite movement lanes, delay elite intent, and imprint safe/unsafe tiles. Payoff: turn enemy pathing into objective tempo instead of raw crowd control. Counterplay: mobile enemies and line-of-sight denial reduce control value; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
         "counterplayRule": "mobile enemies and line-of-sight denial reduce control value"
       },
-      "mythicSource": "Tuatha controller office: terrain law, threshold command, battlefield geometry; Tír na nÓg: youth, impossible time, otherworld beauty",
+      "mythicSource": "Tuatha controller office: terrain law, threshold command, battlefield geometry; T\u00edr na n\u00d3g: youth, impossible time, otherworld beauty",
       "visualTraits": [
         "terrain law",
         "threshold command",
@@ -3925,32 +3943,32 @@
       ],
       "armorCanon": "Armor must use silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.; construction proves source culture humans later copied as Celtic and Irish fae myth; no generic elf, wood block giant, treehouse body, cute fairy wings.",
       "updated": "2026-08-16T17:45:00Z",
-      "weaponCanon": "Morrígan Compass Lugh Silver-Spear Thornblade",
+      "weaponCanon": "Morr\u00edgan Compass Lugh Silver-Spear Thornblade",
       "gearCanon": {
-        "weapon": "Morrígan Compass Lugh Silver-Spear Thornblade",
-        "armor": "Morrígan Moon-Oak Sídhe Mantle",
-        "core": "Morrígan Dagda Cauldron Memory Core",
-        "movementRelic": "Sídhe Mound Slip",
+        "weapon": "Morr\u00edgan Compass Lugh Silver-Spear Thornblade",
+        "armor": "Morr\u00edgan Moon-Oak S\u00eddhe Mantle",
+        "core": "Morr\u00edgan Dagda Cauldron Memory Core",
+        "movementRelic": "S\u00eddhe Mound Slip",
         "reactionRelic": "Fae Glamour Reversal",
         "executionRelic": "Collect the Geas Debt",
         "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
       },
       "sex": "Female",
       "deityArtDna": {
-        "mythology": "Tuatha controller office: terrain law, threshold command, battlefield geometry; Tír na nÓg: youth, impossible time, otherworld beauty",
+        "mythology": "Tuatha controller office: terrain law, threshold command, battlefield geometry; T\u00edr na n\u00d3g: youth, impossible time, otherworld beauty",
         "realm": "Avalora",
         "civilization": "A fae-sovereign memory civilization whose mound gates, silver oathcraft, living woods, moon courts, battle crows, poetic fire, druid knots, and impossible youthlands later became human Celtic fairy and divine lore.",
         "cultureRule": "source culture humans later copied as Celtic and Irish fae myth",
         "beautyStandard": "Tuatha femininity: otherworldly Celtic beauty, luminous eyes, elegant waist-to-hip line, moonlit sensual grace, thorn-queen danger, never generic elf",
         "realmAnatomy": "Avalora fae-root anatomy with silver-branch nerves, moonlit skin, thorn-bloom scars, mist-vein translucence, geas marks, and living bark/flesh borders",
-        "identityFace": "water-oracle face with rounded cheeks, reflective eyes, long lashes, and calm sensual expression; unique to Morrígan through the spiral hip-chain facial/cranial rhythm",
+        "identityFace": "water-oracle face with rounded cheeks, reflective eyes, long lashes, and calm sensual expression; unique to Morr\u00edgan through the spiral hip-chain facial/cranial rhythm",
         "identityBody": "elegant tall sorceress build, long neck and arms, tapered waist, flowing garment silhouette, commanding feminine stillness; height/proportion offset 39: braided weapon tether changes the black-shape read",
         "roleSilhouette": "vertical command silhouette with crown/halo/mantle spread, long gesture hand, and battlefield-rule presence plus three-bead brow line so the character reads alone in silhouette",
-        "signatureWeapon": "Morrígan Compass Lugh Silver-Spear Thornblade",
+        "signatureWeapon": "Morr\u00edgan Compass Lugh Silver-Spear Thornblade",
         "auditStatus": "PASS",
         "updated": "2026-08-17",
-        "maskHelmetIdentity": "Morrígan mask/helmet/crown uses asymmetric high collar, sex-specific eye framing, and role-specific brow/cheek geometry; never interchangeable faction headgear.",
-        "armorIdentity": "Full-body living myth-source Deity, not a costume: Morrígan shows silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy..",
+        "maskHelmetIdentity": "Morr\u00edgan mask/helmet/crown uses asymmetric high collar, sex-specific eye framing, and role-specific brow/cheek geometry; never interchangeable faction headgear.",
+        "armorIdentity": "Full-body living myth-source Deity, not a costume: Morr\u00edgan shows silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy..",
         "resolvedArtIdentityPass": true
       },
       "entityType": "Deity",
@@ -3960,7 +3978,8 @@
       "faith_trigger": "Shadow",
       "faith_name": "Raven-Shadow Prophecy",
       "combatRole": "Assassin",
-      "weaponType": "Phantom Blade"
+      "weaponType": "Phantom Blade",
+      "role": "Dominion"
     },
     {
       "id": "MG-DEITY-040",
@@ -3970,10 +3989,10 @@
       "faction": "Tuatha",
       "rarity": "Rare",
       "abilities": [
-        "Lugh — Silver-Lughch Cut Rend",
-        "Geas Thorn Technique — Rupture",
-        "Lugh: Sídhe Court Covenant Sundering Trial",
-        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
+        "Lugh \u2014 Silver-Lughch Cut Rend",
+        "Geas Thorn Technique \u2014 Rupture",
+        "Lugh: S\u00eddhe Court Covenant Sundering Trial",
+        "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
       ],
       "stats": {
         "hp": 40,
@@ -3991,13 +4010,13 @@
       },
       "equipment": [
         "Lugh Sunderer Lugh Silver-Spear Thornblade",
-        "Lugh Moon-Oak Sídhe Mantle",
+        "Lugh Moon-Oak S\u00eddhe Mantle",
         "Lugh Dagda Cauldron Memory Core"
       ],
       "passives": [
-        "Geas Bloom: Lugh gains Geas when breaker play marks armor, guard, or ritual structure for staged rupture on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
+        "Geas Bloom: Lugh gains Geas when breaker play marks armor, guard, or ritual structure for staged rupture on s\u00eddhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
       ],
-      "lore": "Lugh is a colossal Tuatha breaker from Avalora. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Tuatha breaker office: judgement rupture, armor sundering, trial by force; Morrígan: battle crow, fate, war prophecy.",
+      "lore": "Lugh is a colossal Tuatha breaker from Avalora. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Tuatha breaker office: judgement rupture, armor sundering, trial by force; Morr\u00edgan: battle crow, fate, war prophecy.",
       "personality": "Ancient, immense, purposeful, and bound to the survival philosophy of its Realm.",
       "visualDescription": "Full-body living myth-source Deity, not a costume: Lugh shows silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.. Role silhouette must read as Disruption faith. Materials include moon silver, living oak bark, thorn vine, moss velvet, green-gold light, fae glass, crow black feather. The design must feel older than human mythology and avoid generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume.",
       "artStatus": "Prompt Ready",
@@ -4007,7 +4026,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-040",
       "abilityDetails": [
         {
-          "name": "Lugh — Silver-Lughch Cut Rend",
+          "name": "Lugh \u2014 Silver-Lughch Cut Rend",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -4023,7 +4042,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Geas Thorn Technique — Rupture",
+          "name": "Geas Thorn Technique \u2014 Rupture",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -4039,7 +4058,7 @@
           "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
         },
         {
-          "name": "Lugh: Sídhe Court Covenant Sundering Trial",
+          "name": "Lugh: S\u00eddhe Court Covenant Sundering Trial",
           "slot": "Signature",
           "unlockLevel": 12,
           "cost": "45 Momentum + 25 Divinity",
@@ -4055,7 +4074,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Tír na nÓg Moon-Sovereign Form",
+          "name": "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -4081,7 +4100,7 @@
           "balanceGuardrail": "No extra action loops; empowered basics are once per round."
         },
         {
-          "name": "Lugh Moon-Oak Sídhe Mantle",
+          "name": "Lugh Moon-Oak S\u00eddhe Mantle",
           "slot": "Armor Body",
           "rarityFloor": "Rare",
           "primaryStat": "armor",
@@ -4093,7 +4112,7 @@
           "slot": "Resonance Core",
           "rarityFloor": "Rare",
           "primaryStat": "energy",
-          "effect": "Stores Geas Memory and unlocks a mastery branch for Sídhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
+          "effect": "Stores Geas Memory and unlocks a mastery branch for S\u00eddhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
           "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
         }
       ],
@@ -4128,10 +4147,10 @@
           "bad terrain matchups",
           "mistimed reactions"
         ],
-        "uniqueMechanic": "Lugh's Geas Bloom: a solo mechanic where Geas grows through sídhe-root crossing, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Deity exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
+        "uniqueMechanic": "Lugh's Geas Bloom: a solo mechanic where Geas grows through s\u00eddhe-root crossing, reaction-window mastery, and breaker decisions that mark armor, guard, or ritual structure for staged rupture. Payoff: turn correct sequencing into burst windows against bosses and shields. Counterplay: mistimed burst leaves the Deity exposed during recovery; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
         "counterplayRule": "mistimed burst leaves the Deity exposed during recovery"
       },
-      "mythicSource": "Tuatha breaker office: judgement rupture, armor sundering, trial by force; Morrígan: battle crow, fate, war prophecy",
+      "mythicSource": "Tuatha breaker office: judgement rupture, armor sundering, trial by force; Morr\u00edgan: battle crow, fate, war prophecy",
       "visualTraits": [
         "judgement rupture",
         "armor sundering",
@@ -4144,16 +4163,16 @@
       "weaponCanon": "Lugh Sunderer Lugh Silver-Spear Thornblade",
       "gearCanon": {
         "weapon": "Lugh Sunderer Lugh Silver-Spear Thornblade",
-        "armor": "Lugh Moon-Oak Sídhe Mantle",
+        "armor": "Lugh Moon-Oak S\u00eddhe Mantle",
         "core": "Lugh Dagda Cauldron Memory Core",
-        "movementRelic": "Sídhe Mound Slip",
+        "movementRelic": "S\u00eddhe Mound Slip",
         "reactionRelic": "Fae Glamour Reversal",
         "executionRelic": "Collect the Geas Debt",
         "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
       },
       "sex": "Male",
       "deityArtDna": {
-        "mythology": "Tuatha breaker office: judgement rupture, armor sundering, trial by force; Morrígan: battle crow, fate, war prophecy",
+        "mythology": "Tuatha breaker office: judgement rupture, armor sundering, trial by force; Morr\u00edgan: battle crow, fate, war prophecy",
         "realm": "Avalora",
         "civilization": "A fae-sovereign memory civilization whose mound gates, silver oathcraft, living woods, moon courts, battle crows, poetic fire, druid knots, and impossible youthlands later became human Celtic fairy and divine lore.",
         "cultureRule": "source culture humans later copied as Celtic and Irish fae myth",
@@ -4176,7 +4195,8 @@
       "faith_trigger": "Disruption",
       "faith_name": "Many-Skilled Striker",
       "combatRole": "Archer",
-      "weaponType": "Celtic Bow"
+      "weaponType": "Celtic Bow",
+      "role": "Fracture"
     },
     {
       "id": "MG-DEITY-046",
@@ -4186,10 +4206,10 @@
       "faction": "Empyrean",
       "rarity": "Legendary",
       "abilities": [
-        "Michael — Seraph Edict Lash Anchor",
-        "Choir Seal Technique — Bastion",
+        "Michael \u2014 Seraph Edict Lash Anchor",
+        "Choir Seal Technique \u2014 Bastion",
         "Michael: Ophanim Throne Judgment Holdfast",
-        "Divine Ascension — Seraphic Choir Unbound"
+        "Divine Ascension \u2014 Seraphic Choir Unbound"
       ],
       "stats": {
         "hp": 50,
@@ -4223,7 +4243,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-046",
       "abilityDetails": [
         {
-          "name": "Michael — Seraph Edict Lash Anchor",
+          "name": "Michael \u2014 Seraph Edict Lash Anchor",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -4239,7 +4259,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Choir Seal Technique — Bastion",
+          "name": "Choir Seal Technique \u2014 Bastion",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -4271,7 +4291,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Seraphic Choir Unbound",
+          "name": "Divine Ascension \u2014 Seraphic Choir Unbound",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -4392,7 +4412,8 @@
       "faith_trigger": "Counter",
       "faith_name": "Aegis of the Choral Host",
       "combatRole": "Warrior",
-      "weaponType": "Divine Sword"
+      "weaponType": "Divine Sword",
+      "role": "Endurance"
     },
     {
       "id": "MG-DEITY-047",
@@ -4402,10 +4423,10 @@
       "faction": "Empyrean",
       "rarity": "Epic",
       "abilities": [
-        "Gabriel — Seraph Edict Lash Kindle",
-        "Choir Seal Technique — Reservoir",
+        "Gabriel \u2014 Seraph Edict Lash Kindle",
+        "Choir Seal Technique \u2014 Reservoir",
         "Gabriel: Ophanim Throne Judgment Overchannel",
-        "Divine Ascension — Seraphic Choir Unbound"
+        "Divine Ascension \u2014 Seraphic Choir Unbound"
       ],
       "stats": {
         "hp": 42,
@@ -4439,7 +4460,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-047",
       "abilityDetails": [
         {
-          "name": "Gabriel — Seraph Edict Lash Kindle",
+          "name": "Gabriel \u2014 Seraph Edict Lash Kindle",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -4455,7 +4476,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Choir Seal Technique — Reservoir",
+          "name": "Choir Seal Technique \u2014 Reservoir",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -4487,7 +4508,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Seraphic Choir Unbound",
+          "name": "Divine Ascension \u2014 Seraphic Choir Unbound",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -4573,7 +4594,7 @@
       ],
       "armorCanon": "Armor must use white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.; construction proves source culture humans later copied as angelic and heavenly lore; no robot angel, spaceship armor, generic church costume, literal cathedral body.",
       "updated": "2026-08-16T17:45:00Z",
-      "weaponCanon": "Gabriel Divine Staff of Illumination — celestial scepter of solidified light with a glowing orb of radiant power at the top",
+      "weaponCanon": "Gabriel Divine Staff of Illumination \u2014 celestial scepter of solidified light with a glowing orb of radiant power at the top",
       "gearCanon": {
         "weapon": "Gabriel Divine Staff of Illumination",
         "armor": "Gabriel Opal-Glass Cherubim Aegis",
@@ -4608,7 +4629,8 @@
       "faith_trigger": "Range",
       "faith_name": "Annunciation Herald",
       "combatRole": "Spell Caster",
-      "weaponType": "Divine Staff"
+      "weaponType": "Divine Staff",
+      "role": "Conduit"
     },
     {
       "id": "MG-DEITY-048",
@@ -4618,10 +4640,10 @@
       "faction": "Empyrean",
       "rarity": "Epic",
       "abilities": [
-        "Raphael — Seraph Edict Lash Vector",
-        "Choir Seal Technique — Field Rewrite",
+        "Raphael \u2014 Seraph Edict Lash Vector",
+        "Choir Seal Technique \u2014 Field Rewrite",
         "Raphael: Ophanim Throne Judgment Dominion Grid",
-        "Divine Ascension — Seraphic Choir Unbound"
+        "Divine Ascension \u2014 Seraphic Choir Unbound"
       ],
       "stats": {
         "hp": 36,
@@ -4655,7 +4677,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-048",
       "abilityDetails": [
         {
-          "name": "Raphael — Seraph Edict Lash Vector",
+          "name": "Raphael \u2014 Seraph Edict Lash Vector",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -4671,7 +4693,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Choir Seal Technique — Field Rewrite",
+          "name": "Choir Seal Technique \u2014 Field Rewrite",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -4703,7 +4725,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Seraphic Choir Unbound",
+          "name": "Divine Ascension \u2014 Seraphic Choir Unbound",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -4824,7 +4846,8 @@
       "faith_trigger": "Endurance",
       "faith_name": "Sacred Ward Endurance",
       "combatRole": "Assassin",
-      "weaponType": "Divine Dagger"
+      "weaponType": "Divine Dagger",
+      "role": "Dominion"
     },
     {
       "id": "MG-DEITY-049",
@@ -4844,25 +4867,25 @@
         "source culture humans later copied as angelic lore",
         "white-gold and amber"
       ],
-      "lore": "Jophiel is the archer of the Empyrean host, whose arrows of pure light pierce not flesh but the shadows that cling to it. She is the \"Beauty of God\" — her divine bow fires bolts of illumination that blind the wicked and guide the righteous. She was the angel sent to expel Adam and Eve from Eden, and her arrows carry the weight of divine judgment wrapped in beauty.",
+      "lore": "Jophiel is the archer of the Empyrean host, whose arrows of pure light pierce not flesh but the shadows that cling to it. She is the \"Beauty of God\" \u2014 her divine bow fires bolts of illumination that blind the wicked and guide the righteous. She was the angel sent to expel Adam and Eve from Eden, and her arrows carry the weight of divine judgment wrapped in beauty.",
       "personality": "Serene, radiant, precise; the calm of perfect light that reveals all.",
-      "visualDescription": "Colossal divine archer clad in living-light armor. Her form radiates white-gold luminescence that bleeds through gaps in her celestial plate. She wears a full helm of radiant gold — her true form too brilliant to perceive directly. Her divine bow is crafted from solidified light — translucent golden-amber with white energy bowstring. Light arrows materialize from nothing. Warm golden aura with motes of light floating around her. Low camera angle showing colossal scale.",
+      "visualDescription": "Colossal divine archer clad in living-light armor. Her form radiates white-gold luminescence that bleeds through gaps in her celestial plate. She wears a full helm of radiant gold \u2014 her true form too brilliant to perceive directly. Her divine bow is crafted from solidified light \u2014 translucent golden-amber with white energy bowstring. Light arrows materialize from nothing. Warm golden aura with motes of light floating around her. Low camera angle showing colossal scale.",
       "artStatus": "Prompt Ready",
       "artPromptId": "MG-PROMPT-049",
       "artworkId": null,
       "developmentStatus": "Combat kit, source-culture weapons, gear, abilities, leveling hooks, and balance pass pending; artwork pending.",
       "abilities": [
-        "Jophiel — Illumination Arrow",
-        "Radiant Volley Technique — Blinding Light",
+        "Jophiel \u2014 Illumination Arrow",
+        "Radiant Volley Technique \u2014 Blinding Light",
         "Jophiel: Eden's Verdict",
-        "Divine Ascension — Jophiel Dawn Eternal"
+        "Divine Ascension \u2014 Jophiel Dawn Eternal"
       ],
       "equipment": [
         "Jophiel Light-Bow of Illumination",
         "Jophiel Radiant Aegis-Plate",
         "Jophiel Wisdom-Sight Core"
       ],
-      "weaponCanon": "Jophiel Light-Bow — divine bow of solidified light; fires arrows of pure illumination that blind and pierce",
+      "weaponCanon": "Jophiel Light-Bow \u2014 divine bow of solidified light; fires arrows of pure illumination that blind and pierce",
       "gearCanon": {
         "weapon": "Jophiel Light-Bow of Illumination",
         "armor": "Jophiel Radiant Aegis-Plate",
@@ -4870,29 +4893,30 @@
         "movementRelic": "Light-Step Descent",
         "reactionRelic": "Radiant Counter",
         "executionRelic": "Eden's Final Arrow",
-        "visualRule": "White-gold radiant armor, helm of light, solidified-light bow, warm golden aura — the illuminating archer"
+        "visualRule": "White-gold radiant armor, helm of light, solidified-light bow, warm golden aura \u2014 the illuminating archer"
       },
       "balanceNotes": {
         "intendedDifficulty": "Ranged precision: moderate damage but high utility through blinding, revealing, and area control.",
-        "primaryRole": "archer — ranged DPS and battlefield illumination",
+        "primaryRole": "archer \u2014 ranged DPS and battlefield illumination",
         "uniqueMechanic": "Jophiel's Illumination: each arrow reveals hidden enemies and applies a stacking blind debuff. At 3 stacks, the next arrow pierces all enemies in a line. At 5 stacks, Eden's Verdict blinds all enemies for 2 seconds.",
         "counterplayRule": "break line of sight, use shadow/anti-light abilities, or close distance quickly"
       },
       "deityArtDna": {
-        "mythology": "Jophiel — archangel of wisdom, beauty, and illumination",
+        "mythology": "Jophiel \u2014 archangel of wisdom, beauty, and illumination",
         "realm": "The Empyrean (highest heaven)",
         "civilization": "An archangel whose role is to illuminate truth and expel darkness. Her culture is divine radiance, beauty, and wisdom.",
         "cultureRule": "source culture humans later copied as angelic wisdom tradition",
         "beautyStandard": "divine beauty: radiant face hidden behind a helm of light, graceful archer build, luminous skin, flowing energy-hair",
-        "identityFace": "serene divine face behind a full helm of radiant gold — light bleeds through visor gaps, suggesting incomprehensible beauty",
+        "identityFace": "serene divine face behind a full helm of radiant gold \u2014 light bleeds through visor gaps, suggesting incomprehensible beauty",
         "identityBody": "graceful athletic archer build with broad shoulders for drawing a divine bow",
-        "skinType": "living light — white-gold luminescence with amber energy veins",
-        "armorCanon": "Radiant celestial plate armor with helm — the armor CONTAINS her brilliant form. Gold and white metal with light bleeding through gaps. Full helm required — her true face is too radiant to perceive.",
+        "skinType": "living light \u2014 white-gold luminescence with amber energy veins",
+        "armorCanon": "Radiant celestial plate armor with helm \u2014 the armor CONTAINS her brilliant form. Gold and white metal with light bleeding through gaps. Full helm required \u2014 her true face is too radiant to perceive.",
         "footwear": "Golden divine boots of light",
         "aura": "warm golden-white with motes of floating light",
-        "groundEffect": "radiant light platform — no ground effects, just pure light radiating from her feet, illuminating everything nearby"
+        "groundEffect": "radiant light platform \u2014 no ground effects, just pure light radiating from her feet, illuminating everything nearby"
       },
-      "updated": "2026-08-19T21:40:00Z"
+      "updated": "2026-08-19T21:40:00Z",
+      "role": "Fracture"
     },
     {
       "id": "MG-DEITY-055",
@@ -4902,10 +4926,10 @@
       "faction": "Infernal Dominion",
       "rarity": "Legendary",
       "abilities": [
-        "Lucifer — Black-Iron Clause Cut Anchor",
-        "Blood-Wax Contract Technique — Bastion",
+        "Lucifer \u2014 Black-Iron Clause Cut Anchor",
+        "Blood-Wax Contract Technique \u2014 Bastion",
         "Lucifer: Infernal Debt Verdict Holdfast",
-        "Divine Ascension — Hell-Crown Dominion Unbound"
+        "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
       ],
       "stats": {
         "hp": 52,
@@ -4939,7 +4963,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-055",
       "abilityDetails": [
         {
-          "name": "Lucifer — Black-Iron Clause Cut Anchor",
+          "name": "Lucifer \u2014 Black-Iron Clause Cut Anchor",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -4955,7 +4979,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Blood-Wax Contract Technique — Bastion",
+          "name": "Blood-Wax Contract Technique \u2014 Bastion",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -4987,7 +5011,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Hell-Crown Dominion Unbound",
+          "name": "Divine Ascension \u2014 Hell-Crown Dominion Unbound",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -5108,7 +5132,8 @@
       "faith_trigger": "Dominion",
       "faith_name": "Morningstar Dominion",
       "combatRole": "Spell Caster",
-      "weaponType": "Dark Sceptre"
+      "weaponType": "Dark Sceptre",
+      "role": "Endurance"
     },
     {
       "id": "MG-DEITY-056",
@@ -5118,10 +5143,10 @@
       "faction": "Infernal Dominion",
       "rarity": "Epic",
       "abilities": [
-        "Asmodeus — Black-Iron Clause Cut Kindle",
-        "Blood-Wax Contract Technique — Reservoir",
+        "Asmodeus \u2014 Black-Iron Clause Cut Kindle",
+        "Blood-Wax Contract Technique \u2014 Reservoir",
         "Asmodeus: Infernal Debt Verdict Overchannel",
-        "Divine Ascension — Hell-Crown Dominion Unbound"
+        "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
       ],
       "stats": {
         "hp": 38,
@@ -5155,7 +5180,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-056",
       "abilityDetails": [
         {
-          "name": "Asmodeus — Black-Iron Clause Cut Kindle",
+          "name": "Asmodeus \u2014 Black-Iron Clause Cut Kindle",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -5171,7 +5196,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Blood-Wax Contract Technique — Reservoir",
+          "name": "Blood-Wax Contract Technique \u2014 Reservoir",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -5203,7 +5228,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Hell-Crown Dominion Unbound",
+          "name": "Divine Ascension \u2014 Hell-Crown Dominion Unbound",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -5324,7 +5349,8 @@
       "faith_trigger": "Fracture",
       "faith_name": "Hellfire Fracture",
       "combatRole": "Warrior",
-      "weaponType": "War Axe"
+      "weaponType": "War Axe",
+      "role": "Conduit"
     },
     {
       "id": "MG-DEITY-057",
@@ -5334,10 +5360,10 @@
       "faction": "Infernal Dominion",
       "rarity": "Epic",
       "abilities": [
-        "Lilith — Black-Iron Clause Cut Vector",
-        "Blood-Wax Contract Technique — Field Rewrite",
+        "Lilith \u2014 Black-Iron Clause Cut Vector",
+        "Blood-Wax Contract Technique \u2014 Field Rewrite",
         "Lilith: Infernal Debt Verdict Dominion Grid",
-        "Divine Ascension — Hell-Crown Dominion Unbound"
+        "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
       ],
       "stats": {
         "hp": 38,
@@ -5371,7 +5397,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-057",
       "abilityDetails": [
         {
-          "name": "Lilith — Black-Iron Clause Cut Vector",
+          "name": "Lilith \u2014 Black-Iron Clause Cut Vector",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -5387,7 +5413,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Blood-Wax Contract Technique — Field Rewrite",
+          "name": "Blood-Wax Contract Technique \u2014 Field Rewrite",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -5419,7 +5445,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Hell-Crown Dominion Unbound",
+          "name": "Divine Ascension \u2014 Hell-Crown Dominion Unbound",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -5540,7 +5566,8 @@
       "faith_trigger": "Shadow",
       "faith_name": "Night-Whisper Shadow",
       "combatRole": "Assassin",
-      "weaponType": "Shadow Daggers"
+      "weaponType": "Shadow Daggers",
+      "role": "Dominion"
     },
     {
       "id": "MG-DEITY-058",
@@ -5550,10 +5577,10 @@
       "faction": "Infernal Dominion",
       "rarity": "Rare",
       "abilities": [
-        "Naamah — Black-Iron Clause Cut Rend",
-        "Blood-Wax Contract Technique — Rupture",
+        "Naamah \u2014 Black-Iron Clause Cut Rend",
+        "Blood-Wax Contract Technique \u2014 Rupture",
         "Naamah: Infernal Debt Verdict Sundering Trial",
-        "Divine Ascension — Hell-Crown Dominion Unbound"
+        "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
       ],
       "stats": {
         "hp": 44,
@@ -5587,7 +5614,7 @@
       "backstoryId": "MG-BACKSTORY-DEITY-058",
       "abilityDetails": [
         {
-          "name": "Naamah — Black-Iron Clause Cut Rend",
+          "name": "Naamah \u2014 Black-Iron Clause Cut Rend",
           "slot": "Basic",
           "unlockLevel": 1,
           "cost": "Action",
@@ -5603,7 +5630,7 @@
           "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
         },
         {
-          "name": "Blood-Wax Contract Technique — Rupture",
+          "name": "Blood-Wax Contract Technique \u2014 Rupture",
           "slot": "Technique",
           "unlockLevel": 4,
           "cost": "20 Momentum",
@@ -5635,7 +5662,7 @@
           "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
         },
         {
-          "name": "Divine Ascension — Hell-Crown Dominion Unbound",
+          "name": "Divine Ascension \u2014 Hell-Crown Dominion Unbound",
           "slot": "Ascension",
           "unlockLevel": 30,
           "cost": "100 Divinity",
@@ -5756,7 +5783,8 @@
       "faith_trigger": "Disruption",
       "faith_name": "Velvet-Chains Disruption",
       "combatRole": "Archer",
-      "weaponType": "Poison Bow"
+      "weaponType": "Poison Bow",
+      "role": "Fracture"
     }
   ],
   "avatar_note": "Players control Avatars of these Deities, not the Deities directly. See docs/lore/04-DEITIES.md for Avatar System details."
