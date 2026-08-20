@@ -18,6 +18,6 @@ assert.ok(contract.negativeRules.some(rule => rule.includes('generic corridor'))
 assert.ok(contract.identityPreservation.some(rule => rule.includes('preserve factions')));
 const summary = mobileFirstSummary(contract, firstTemplate);
 assert.equal(summary.engine, 'Unreal Engine 5');
-assert.equal(summary.firstMission, 'TG-F01-C01-M01');
+assert.equal(summary.firstMission, 'MG-F01-C01-M01');
 assert.equal(summary.expansionLocked, true);
 console.log(JSON.stringify({ ok: true, ue5MobileFirstContract: 'PASS', summary }, null, 2));

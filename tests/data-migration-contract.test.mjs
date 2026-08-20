@@ -6,7 +6,7 @@ const policy = fs.readFileSync('docs/production/DATA_MIGRATION_VERSIONING.md', '
 const audit = fs.readFileSync('scripts/audit-aaa-structure.mjs', 'utf8');
 
 assert.equal(manifest.status, 'ACTIVE');
-assert.equal(manifest.schema, 'TG_CANON_VERSION_MANIFEST_V1');
+assert.equal(manifest.schema, 'MG_CANON_VERSION_MANIFEST_V1');
 assert.ok(manifest.migrations.length >= 4);
 assert.equal(manifest.migrations.at(-1).toVersion, manifest.currentCanonVersion);
 assert.ok(manifest.rules.migrationRequiredWhen.some(rule => rule.includes('schema required field')));

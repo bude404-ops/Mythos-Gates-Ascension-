@@ -78,8 +78,8 @@ const missionDialogue = read('data/mission-dialogue.json');
 const missionArtPackages = read('data/mission-art-packages.json');
 const monetization = read('data/monetization-policy.json');
 const battlefieldCanon = read('data/battlefield-canon-registry.json');
-const soloRoster = read('data/solo-deity-roster-redesign.json').deitys;
-const balancePass = read('data/deity-enemy-balance-pass.json').deitys;
+const soloRoster = read('data/solo-deity-roster-redesign.json').deities;
+const balancePass = read('data/deity-enemy-balance-pass.json').deities;
 const index = read('data/index.json');
 
 const issues = [];
@@ -101,7 +101,7 @@ function requireSource(label, obj) {
 
 // Global generated and sync checks.
 if (index.counts?.factions !== 7) issues.push(`index: expected 7 factions, found ${index.counts?.factions}`);
-if (index.counts?.deitys !== 63) issues.push(`index: expected 28 deities, found ${index.counts?.deitys}`);
+if (index.counts?.deities !== 63) issues.push(`index: expected 28 deities, found ${index.counts?.deities}`);
 if (index.counts?.missions !== 280) issues.push(`index: expected 280 missions, found ${index.counts?.missions}`);
 if (index.counts?.missionDialogue !== 280) issues.push(`index: expected 280 mission dialogue, found ${index.counts?.missionDialogue}`);
 if (index.counts?.missionArtPackages !== 280) issues.push(`index: expected 280 mission art packages, found ${index.counts?.missionArtPackages}`);

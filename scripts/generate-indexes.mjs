@@ -25,7 +25,7 @@ const files = {
   'project.json': 'project',
   'factions.json': 'factions',
   'hollow-faction.json': 'hollowThreatFaction',
-  'deitys.json': 'deitys',
+  'deities.json': 'deitys',
   'characters.json': 'characters',
   'units.json': 'units',
   'art-prompts.json': 'artPrompts',

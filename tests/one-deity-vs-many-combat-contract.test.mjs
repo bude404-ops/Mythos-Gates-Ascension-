@@ -22,5 +22,5 @@ const early = contract.scalingBands.find(band => band.band === 'EARLY');
 assert.deepEqual(early.enemyCountRange, [4, 6]);
 const summary = summarizeOneDeityVsMany(contract, firstTemplate);
 assert.equal(summary.rule, PRIMARY_ONE_DEITY_RULE);
-assert.equal(summary.firstMission, 'TG-F01-C01-M01');
+assert.equal(summary.firstMission, 'MG-F01-C01-M01');
 console.log(JSON.stringify({ ok: true, oneDeityVsManyCombatContract: 'PASS', summary }, null, 2));

@@ -5,7 +5,7 @@ const issues = [];
 const warnings = [];
 const framework = read('data/gameplay-balance-framework.json');
 const deitys = read('data/deitys.json');
-const roleMatrix = read('data/deity-role-matrix.json').factions.flatMap(f => f.deitys || []);
+const roleMatrix = read('data/deity-role-matrix.json').factions.flatMap(f => f.deities || []);
 const missions = read('data/mission-registry.json');
 const enemies = read('data/enemy-archetype-registry.json');
 const raid = read('data/raid-system.json');

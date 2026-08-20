@@ -111,7 +111,7 @@ register('factionVisualBible', data.factionVisualBible, 'data/faction-visual-bib
 register('battlefieldVerticalSlice', data.battlefieldVerticalSlice, 'data/battlefield-vertical-slice.json');
 
 const factionIds = new Set(data.factions.map(f => f.id));
-const deityIds = new Set(data.deitys.map(t => t.id));
+const deityIds = new Set(data.deities.map(t => t.id));
 const promptIds = new Set(data.prompts.map(p => p.id));
 const artworkIds = new Set(data.artworks.map(a => a.id));
 const npcIds = new Set(data.npcs.map(n => n.id));
@@ -130,7 +130,7 @@ const missionArtPackageIds = new Set(data.missionArtPackages.map(a => a.id));
 const campaignChapterIds = new Set(data.campaignChapters.map(c => c.id));
 const storylineArcIds = new Set(data.storylineArcs.map(s => s.id));
 const allowedMissionProblemTags = new Set(['large_enemy_groups','heavily_armored_enemies','fast_enemies','ranged_enemies','enemy_casters','long_survival','boss_duel','terrain_heavy','environmental_hazard','swarm_battle','execution_chain','objective_pressure']);
-const allowedDeityRoles = new Set(data.deitys.map(t => t.role));
+const allowedDeityRoles = new Set(data.deities.map(t => t.role));
 const missionTagCounts = new Map();
 const missionRoleCounts = new Map();
 const enemyArchetypeKeys = new Set((data.enemyArchetypeRegistry.archetypes || []).map(a => a.key));
@@ -139,7 +139,7 @@ const requiredScaleSheetTypes = new Set(['normal_enemy','elite_enemy','player_de
 
 if(data.factions.length !== 7) fail(`Expected 7 playable factions, found ${data.factions.length}`);
 if(data.hollowThreatFaction.playable !== false || data.hollowThreatFaction.classification !== 'Hostile Threat Faction') fail('Hollow must remain a non-playable threat faction');
-if(data.deitys.length !== 63) fail(`Expected 28 Deities, found ${data.deitys.length}`);
+if(data.deities.length !== 63) fail(`Expected 28 Deities, found ${data.deities.length}`);
 if(data.artApprovalManifest.status !== 'IMPLEMENTED' || data.artApprovalManifest.approvalStatus !== 'APPROVED_FOR_GENERATION') fail('Art approval manifest must be approved for generation');
 
 if(data.factionVisualBible.status !== 'IMPLEMENTED') fail('Faction visual bible must be IMPLEMENTED');
@@ -181,7 +181,7 @@ if(data.characters.length < data.npcs.length) fail(`Character registry must mirr
 if(!data.directors.some(d => d.id === 'TG-DIR-006' && d.name === '3D Asset Director')) fail('Missing 3D Asset Director');
 if(data.blueprint3dSystem.status !== 'IMPLEMENTED') fail('3D Blueprint System must be IMPLEMENTED');
 if(data.blueprint3dSystem.assetCounts.registryTotal !== data.blueprint3dRegistry.assets.length) fail('3D Blueprint registry count mismatch');
-if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'DEITY').length !== data.deitys.length) fail('3D deity blueprint count must match canon deities');
+if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'DEITY').length !== data.deities.length) fail('3D deity blueprint count must match canon deities');
 if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'CHARACTER').length !== data.characters.length) fail('3D Character blueprint count must match canon Characters');
 if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'CREATURE').length !== data.creatures.length) fail('3D Creature blueprint count must match canon Creatures');
 if(data.blueprint3dRegistry.assets.filter(a => a.assetType === 'BATTLEFIELD').length !== data.maps.length) fail('3D Battlefield blueprint count must match canon Maps');
@@ -229,7 +229,7 @@ for (const character of data.characters) {
   for (const field of ['name','characterKind','status','director','role','lore','gameplayFunction']) if(!character[field]) fail(`${character.id}: missing ${field}`);
 }
 
-for (const deity of data.deitys) {
+for (const deity of data.deities) {
   if(!factionIds.has(deity.factionId)) fail(`${deity.id}: invalid factionId ${deity.factionId}`);
   if(!promptIds.has(deity.artPromptId)) fail(`${deity.id}: missing prompt ${deity.artPromptId}`);
   if(deity.artworkId && !artworkIds.has(deity.artworkId)) fail(`${deity.id}: invalid artworkId ${deity.artworkId}`);
@@ -369,7 +369,7 @@ for (const backstory of data.backstories) {
   const folder = (backstory.entityType === 'Deity' || backstory.entityType === 'Deity') ? 'deitys' : backstory.entityType === 'NPC' ? 'npcs' : 'creatures';
   if(!exists(`backstories/${folder}/${backstory.id}.json`)) fail(`${backstory.id}: missing individual backstory file`);
 }
-if(data.backstories.length !== data.deitys.length + data.npcs.length + data.creatures.length) fail(`Backstory coverage mismatch: ${data.backstories.length}`);
+if(data.backstories.length !== data.deities.length + data.npcs.length + data.creatures.length) fail(`Backstory coverage mismatch: ${data.backstories.length}`);
 
 
 const hollowCreatureIds = data.creatures.filter(c => c.threatFactionId === data.hollowThreatFaction.id).map(c => c.id);
@@ -592,7 +592,7 @@ if(!data.visualScreens.some(s => s.id === 'TG-SCREEN-TACTICAL-MAP-PROTOTYPE' && 
 const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
 for (const token of ['Art Studio','Lore Codex','Directors','Copy Prompt','Game Preview','Visual QA','Tactical Map Prototype','data/${f}.json']) if(!home.includes(token)) fail(`Dashboard missing ${token}`);
 
-console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, deitys:data.deitys.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status, soloBattleSchema:data.soloBattleStateSchema.status, soloVerticalSlice:data.soloVerticalSlice.status, asyncArena:data.asyncArenaSystem.status, commandHub:data.commandHubContract.status, battlefieldRuntime:data.battlefieldRuntimeArchitecture.status, blueprint3d:data.blueprint3dSystem.status, blueprint3dAssets:data.blueprint3dRegistry.assets.length, blueprint3dProductionQueue:data.blueprint3dProductionQueue.queue.length}, null, 2));
+console.log(JSON.stringify({ok:true, ids:ids.size, factions:data.factions.length, deitys:data.deities.length, npcs:data.npcs.length, creatures:data.creatures.length, hollowCreatures:hollowCreatureIds.length, maps:data.maps.length, campaigns:data.campaigns.length, chapters:data.chapters.length, prompts:data.prompts.length, backstories:data.backstories.length, tasks:data.tasks.length, visualScreens:data.visualScreens.length, visualRules:data.visualChangeRules.length, realmCodex:data.realmCodex.length, hybridLayers:data.hybridVisualArchitecture.visualLayers.length, assetTypes:data.assetPipeline.assetTypes.length, missions:data.missions.length, missionDialogue:data.missionDialogue.length, missionArtPackages:data.missionArtPackages.length, githubSync:data.githubSyncStatus.status, soloBattleSchema:data.soloBattleStateSchema.status, soloVerticalSlice:data.soloVerticalSlice.status, asyncArena:data.asyncArenaSystem.status, commandHub:data.commandHubContract.status, battlefieldRuntime:data.battlefieldRuntimeArchitecture.status, blueprint3d:data.blueprint3dSystem.status, blueprint3dAssets:data.blueprint3dRegistry.assets.length, blueprint3dProductionQueue:data.blueprint3dProductionQueue.queue.length}, null, 2));
 
 
 // GitHub-centered asset repository validation

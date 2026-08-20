@@ -34,7 +34,7 @@ for (const faction of data.factions) {
     for (const field of ['thesis', 'centralConflict', 'landmarks', 'realmHazards', 'campaignHooks', 'visualLanguage', 'deitys']) {
       if (!codex[field] || (Array.isArray(codex[field]) && !codex[field].length)) issues.push(`${faction.name} codex missing ${field}`);
     }
-    if ((codex.deitys || []).length !== 9) issues.push(`${faction.name} codex must cover 4 deities`);
+    if ((codex.deities || []).length !== 9) issues.push(`${faction.name} codex must cover 4 deities`);
   }
   const loreHits = data.lore.filter(entry => JSON.stringify(entry).includes(faction.name) || JSON.stringify(entry).includes(faction.realm) || JSON.stringify(entry).includes(faction.id));
   if (!loreHits.length) issues.push(`${faction.name} missing lore-index coverage`);
@@ -103,7 +103,7 @@ for (const mission of data.missions) {
 const deityBudgetsByFaction = {};
 const deityRoles = {};
 const deityRarities = {};
-for (const deity of data.deitys) {
+for (const deity of data.deities) {
   const stats = deity.stats || {};
   const budget = (stats.hp || 0) + (stats.attack || 0) * 3 + (stats.range || 0) * 4 + (stats.energy || 0) * 5 + (stats.speed || 0) * 4;
   if (stats.hp < 20 || stats.hp > 55) issues.push(`${deity.id} hp out of band ${stats.hp}`);
@@ -150,7 +150,7 @@ const report = {
     missions: data.missions.length,
     missionDialogue: data.dialogue.length,
     missionArtPackages: data.arts.length,
-    deitys: data.deitys.length,
+    deitys: data.deities.length,
     statBudgetSpread: budgetSpread
   },
   flow: {

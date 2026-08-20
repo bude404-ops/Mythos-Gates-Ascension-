@@ -19,7 +19,7 @@ export function listJsonRecords(dirPath) {
 export function loadSourceDataset({ root = '.', includeMissions = true } = {}) {
   const at = relative => path.join(root, relative);
   return {
-    deitys: readJson(at('data/deitys.json')),
+    deities: readJson(at('data/deitys.json')),
     creatures: readJson(at('data/creatures.json')),
     campaigns: readJson(at('data/campaigns.json')),
     maps: readJson(at('data/maps.json')),
@@ -32,7 +32,7 @@ export function loadSourceDataset({ root = '.', includeMissions = true } = {}) {
 export function buildContentLookup(dataset) {
   const byId = records => new Map(records.map(record => [record.id, record]));
   return {
-    deityById: byId(dataset.deitys || []),
+    deityById: byId(dataset.deities || []),
     creatureById: byId(dataset.creatures || []),
     campaignById: byId(dataset.campaigns || []),
     mapById: byId(dataset.maps || []),

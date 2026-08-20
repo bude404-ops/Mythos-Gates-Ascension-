@@ -3,9 +3,9 @@ import { loadSourceDataset } from '../../src/data-loaders/index.mjs';
 export function buildEngineExportSummary({ includeMissions = true } = {}) {
   const dataset = loadSourceDataset({ includeMissions });
   return {
-    schema: 'TG_ENGINE_EXPORT_SUMMARY_V1',
+    schema: 'MG_ENGINE_EXPORT_SUMMARY_V1',
     counts: {
-      deitys: dataset.deitys.length,
+      deities: dataset.deities.length,
       creatures: dataset.creatures.length,
       campaigns: dataset.campaigns.length,
       maps: dataset.maps.length,
@@ -17,7 +17,7 @@ export function buildEngineExportSummary({ includeMissions = true } = {}) {
       engineAdaptersAreCanonConsumers: true
     },
     sample: {
-      firstDeity: dataset.deitys[0]?.id,
+      firstDeity: dataset.deities[0]?.id,
       firstMission: dataset.missions[0]?.id,
       firstMap: dataset.maps[0]?.id
     }

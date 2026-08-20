@@ -20,7 +20,7 @@ assert.equal(contract.status, 'IMPLEMENTED');
 assert.equal(contract.canonFirst, true);
 assert.equal(contract.navigationTabs.length, 5);
 assert.equal(contract.counts.factions, factions.length);
-assert.equal(contract.counts.deitys, deitys.length);
+assert.equal(contract.counts.deities, deitys.length);
 assert.ok(contract.startupPipeline.includes('SAVE_VALIDATION'));
 assert.ok(contract.startupPipeline.includes('MAIN_COMMAND_HUB'));
 assert.equal(contract.onboardingFlow.status, 'IMPLEMENTED');

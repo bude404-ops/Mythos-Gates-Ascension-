@@ -11,14 +11,14 @@ import {
   platformSummary
 } from '../src/platform/index.mjs';
 
-let state = createPlatformProfile({ playerId: 'TG-PLAYER-TEST-001', displayName: 'Platform Tester', starterDeityId: 'TG-DEITY-003' });
+let state = createPlatformProfile({ playerId: 'TG-PLAYER-TEST-001', displayName: 'Platform Tester', starterDeityId: 'MG-DEITY-003' });
 assert.equal(validatePlatformState(state).ok, true);
-assert.equal(state.roster.activeDeityId, 'TG-DEITY-003');
+assert.equal(state.roster.activeDeityId, 'MG-DEITY-003');
 assert.equal(state.inventory.currencies.sunshards, 120);
 
-state = grantDeity(state, 'TG-DEITY-001', { source: 'TEST_UNLOCK' });
-state = setActiveDeity(state, 'TG-DEITY-001');
-state = completeMission(state, 'TG-F01-C01-M01', { accountXp: 125, currencies: { sunshards: 40, gateKeys: 1 }, deitys: ['TG-DEITY-002'] });
+state = grantDeity(state, 'MG-DEITY-001', { source: 'TEST_UNLOCK' });
+state = setActiveDeity(state, 'MG-DEITY-001');
+state = completeMission(state, 'MG-F01-C01-M01', { accountXp: 125, currencies: { sunshards: 40, gateKeys: 1 }, deitys: ['MG-DEITY-002'] });
 state = debitCurrency(state, 'sunshards', 50, 'TEST_CRAFT');
 
 const exported = exportSave(state);
@@ -27,7 +27,7 @@ const summary = platformSummary(imported);
 
 assert.equal(validatePlatformState(imported).ok, true);
 assert.equal(summary.level, 2);
-assert.equal(summary.activeDeityId, 'TG-DEITY-001');
+assert.equal(summary.activeDeityId, 'MG-DEITY-001');
 assert.equal(summary.ownedDeities, 3);
 assert.equal(summary.completedMissions, 1);
 assert.equal(summary.currencies.sunshards, 110);
