@@ -217,11 +217,11 @@
       "formerDeityId": "MG-DEITY-001",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Endurance",
+      "faith_trigger": "Warrior",
       "faith_name": "Sun-Scale Judgment",
-      "combatRole": "Archer",
+      "combatRole": "Warrior",
       "weaponType": "Solar Bow",
-      "role": "Endurance"
+      "role": "Warrior"
     },
     {
       "id": "MG-DEITY-002",
@@ -434,11 +434,11 @@
       "formerDeityId": "MG-DEITY-002",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Fracture",
+      "faith_trigger": "Caster",
       "faith_name": "Storm-Fracture's Vow",
-      "combatRole": "Warrior",
+      "combatRole": "Caster",
       "weaponType": "War Khopesh",
-      "role": "Conduit"
+      "role": "Caster"
     },
     {
       "id": "MG-DEITY-003",
@@ -651,11 +651,11 @@
       "formerDeityId": "MG-DEITY-003",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Conduit",
+      "faith_trigger": "Archer",
       "faith_name": "Throne of Weaving",
-      "combatRole": "Spell Caster",
+      "combatRole": "Archer",
       "weaponType": "Magic Sceptre",
-      "role": "Dominion"
+      "role": "Archer"
     },
     {
       "id": "MG-DEITY-004",
@@ -868,11 +868,11 @@
       "formerDeityId": "MG-DEITY-004",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Shadow",
+      "faith_trigger": "Assassin",
       "faith_name": "Hidden Word Devotion",
       "combatRole": "Assassin",
       "weaponType": "Hidden Blade",
-      "role": "Fracture"
+      "role": "Assassin"
     },
     {
       "id": "MG-DEITY-010",
@@ -1085,11 +1085,11 @@
       "formerDeityId": "MG-DEITY-010",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Endurance",
+      "faith_trigger": "Warrior",
       "faith_name": "Odin's Sacrifice",
-      "combatRole": "Spell Caster",
+      "combatRole": "Warrior",
       "weaponType": "Rune Staff",
-      "role": "Endurance"
+      "role": "Warrior"
     },
     {
       "id": "MG-DEITY-011",
@@ -1302,11 +1302,11 @@
       "formerDeityId": "MG-DEITY-011",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Dominion",
+      "faith_trigger": "Caster",
       "faith_name": "Storm-Hammer Dominion",
-      "combatRole": "Warrior",
+      "combatRole": "Caster",
       "weaponType": "War Hammer",
-      "role": "Conduit"
+      "role": "Caster"
     },
     {
       "id": "MG-DEITY-012",
@@ -1375,7 +1375,21 @@
         "groundEffect": "frozen mountain peak with snow, ice crystals, and tiny mountain pines showing colossal scale"
       },
       "updated": "2026-08-19T21:40:00Z",
-      "role": "Dominion"
+      "role": "Archer",
+      "stats": {
+        "hp": 42,
+        "attack": 11,
+        "range": 4,
+        "speed": 3,
+        "armor": 8,
+        "resistance": 16,
+        "critChance": 8,
+        "accuracy": 86,
+        "evasion": 9,
+        "guardBreak": 10,
+        "combatPower": 238
+      },
+      "faith_trigger": "Archer"
     },
     {
       "id": "MG-DEITY-013",
@@ -1588,11 +1602,11 @@
       "formerDeityId": "MG-DEITY-013",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Conduit",
+      "faith_trigger": "Assassin",
       "faith_name": "Sei\u00f0r War-Chant",
       "combatRole": "Assassin",
       "weaponType": "Seax Dagger",
-      "role": "Fracture"
+      "role": "Assassin"
     },
     {
       "id": "MG-DEITY-019",
@@ -1805,11 +1819,11 @@
       "formerDeityId": "MG-DEITY-019",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Dominion",
+      "faith_trigger": "Warrior",
       "faith_name": "Sky-Throne Dominion",
-      "combatRole": "Spell Caster",
+      "combatRole": "Warrior",
       "weaponType": "Thunderbolt",
-      "role": "Endurance"
+      "role": "Warrior"
     },
     {
       "id": "MG-DEITY-020",
@@ -2022,11 +2036,11 @@
       "formerDeityId": "MG-DEITY-020",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Counter",
+      "faith_trigger": "Caster",
       "faith_name": "Strategist's Aegis",
-      "combatRole": "Assassin",
+      "combatRole": "Caster",
       "weaponType": "Xiphos Shortsword",
-      "role": "Conduit"
+      "role": "Caster"
     },
     {
       "id": "MG-DEITY-021",
@@ -2239,11 +2253,11 @@
       "formerDeityId": "MG-DEITY-021",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Range",
+      "faith_trigger": "Archer",
       "faith_name": "Silver-Arrow Hunt",
       "combatRole": "Archer",
       "weaponType": "Hunting Bow",
-      "role": "Dominion"
+      "role": "Archer"
     },
     {
       "id": "MG-DEITY-022",
@@ -2456,11 +2470,11 @@
       "formerDeityId": "MG-DEITY-022",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Fracture",
+      "faith_trigger": "Assassin",
       "faith_name": "Blood-Fury Fracture",
-      "combatRole": "Warrior",
+      "combatRole": "Assassin",
       "weaponType": "Kopis Sword",
-      "role": "Fracture"
+      "role": "Assassin"
     },
     {
       "id": "MG-DEITY-028",
@@ -2673,11 +2687,11 @@
       "formerDeityId": "MG-DEITY-028",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Bulwark",
+      "faith_trigger": "Warrior",
       "faith_name": "Sun-Goddess Radiance",
-      "combatRole": "Archer",
+      "combatRole": "Warrior",
       "weaponType": "Solar Bow",
-      "role": "Endurance"
+      "role": "Warrior"
     },
     {
       "id": "MG-DEITY-029",
@@ -2890,11 +2904,11 @@
       "formerDeityId": "MG-DEITY-029",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Shadow",
+      "faith_trigger": "Caster",
       "faith_name": "Moon-Shadow Judgment",
-      "combatRole": "Spell Caster",
+      "combatRole": "Caster",
       "weaponType": "Lunar Naginata",
-      "role": "Conduit"
+      "role": "Caster"
     },
     {
       "id": "MG-DEITY-030",
@@ -3107,11 +3121,11 @@
       "formerDeityId": "MG-DEITY-030",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Disruption",
+      "faith_trigger": "Archer",
       "faith_name": "Storm-Blade Disruption",
-      "combatRole": "Warrior",
+      "combatRole": "Archer",
       "weaponType": "Tachi Longsword",
-      "role": "Dominion"
+      "role": "Archer"
     },
     {
       "id": "MG-DEITY-031",
@@ -3324,11 +3338,11 @@
       "formerDeityId": "MG-DEITY-031",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Endurance",
+      "faith_trigger": "Assassin",
       "faith_name": "Death-Gate Endurance",
       "combatRole": "Assassin",
       "weaponType": "Kusarigama",
-      "role": "Fracture"
+      "role": "Assassin"
     },
     {
       "id": "MG-DEITY-037",
@@ -3541,11 +3555,11 @@
       "formerDeityId": "MG-DEITY-037",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Endurance",
+      "faith_trigger": "Warrior",
       "faith_name": "Cauldron of Endless Plenty",
       "combatRole": "Warrior",
       "weaponType": "War Club",
-      "role": "Endurance"
+      "role": "Warrior"
     },
     {
       "id": "MG-DEITY-038",
@@ -3758,11 +3772,11 @@
       "formerDeityId": "MG-DEITY-038",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Conduit",
+      "faith_trigger": "Caster",
       "faith_name": "Forge-Flame Conduit",
-      "combatRole": "Spell Caster",
+      "combatRole": "Caster",
       "weaponType": "Fire Staff",
-      "role": "Conduit"
+      "role": "Caster"
     },
     {
       "id": "MG-DEITY-039",
@@ -3975,11 +3989,11 @@
       "formerDeityId": "MG-DEITY-039",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Shadow",
+      "faith_trigger": "Archer",
       "faith_name": "Raven-Shadow Prophecy",
-      "combatRole": "Assassin",
+      "combatRole": "Archer",
       "weaponType": "Phantom Blade",
-      "role": "Dominion"
+      "role": "Archer"
     },
     {
       "id": "MG-DEITY-040",
@@ -4192,11 +4206,11 @@
       "formerDeityId": "MG-DEITY-040",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Disruption",
+      "faith_trigger": "Assassin",
       "faith_name": "Many-Skilled Striker",
-      "combatRole": "Archer",
+      "combatRole": "Assassin",
       "weaponType": "Celtic Bow",
-      "role": "Fracture"
+      "role": "Assassin"
     },
     {
       "id": "MG-DEITY-046",
@@ -4409,11 +4423,11 @@
       "formerDeityId": "MG-DEITY-046",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Counter",
+      "faith_trigger": "Warrior",
       "faith_name": "Aegis of the Choral Host",
       "combatRole": "Warrior",
       "weaponType": "Divine Sword",
-      "role": "Endurance"
+      "role": "Warrior"
     },
     {
       "id": "MG-DEITY-047",
@@ -4626,11 +4640,11 @@
       "formerDeityId": "MG-DEITY-047",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Range",
+      "faith_trigger": "Caster",
       "faith_name": "Annunciation Herald",
-      "combatRole": "Spell Caster",
+      "combatRole": "Caster",
       "weaponType": "Divine Staff",
-      "role": "Conduit"
+      "role": "Caster"
     },
     {
       "id": "MG-DEITY-048",
@@ -4843,11 +4857,11 @@
       "formerDeityId": "MG-DEITY-048",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Endurance",
+      "faith_trigger": "Archer",
       "faith_name": "Sacred Ward Endurance",
-      "combatRole": "Assassin",
+      "combatRole": "Archer",
       "weaponType": "Divine Dagger",
-      "role": "Dominion"
+      "role": "Archer"
     },
     {
       "id": "MG-DEITY-049",
@@ -4856,7 +4870,7 @@
       "factionId": "MG-FACTION-006",
       "faction": "Empyrean",
       "rarity": "Legendary",
-      "combatRole": "Archer",
+      "combatRole": "Assassin",
       "weaponType": "Light Bow",
       "sex": "Female",
       "mythicSource": "Archangel of wisdom, beauty, and illumination; \"Beauty of God\"; often depicted as female; guardian of wisdom and expeller of darkness; associated with radiant light and divine arrows",
@@ -4916,7 +4930,21 @@
         "groundEffect": "radiant light platform \u2014 no ground effects, just pure light radiating from her feet, illuminating everything nearby"
       },
       "updated": "2026-08-19T21:40:00Z",
-      "role": "Fracture"
+      "role": "Assassin",
+      "stats": {
+        "hp": 46,
+        "attack": 14,
+        "range": 3,
+        "speed": 2,
+        "armor": 12,
+        "resistance": 8,
+        "critChance": 10,
+        "accuracy": 81,
+        "evasion": 5,
+        "guardBreak": 20,
+        "combatPower": 224
+      },
+      "faith_trigger": "Assassin"
     },
     {
       "id": "MG-DEITY-055",
@@ -5129,11 +5157,11 @@
       "formerDeityId": "MG-DEITY-055",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Dominion",
+      "faith_trigger": "Warrior",
       "faith_name": "Morningstar Dominion",
-      "combatRole": "Spell Caster",
+      "combatRole": "Warrior",
       "weaponType": "Dark Sceptre",
-      "role": "Endurance"
+      "role": "Warrior"
     },
     {
       "id": "MG-DEITY-056",
@@ -5346,11 +5374,11 @@
       "formerDeityId": "MG-DEITY-056",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Fracture",
+      "faith_trigger": "Caster",
       "faith_name": "Hellfire Fracture",
-      "combatRole": "Warrior",
+      "combatRole": "Caster",
       "weaponType": "War Axe",
-      "role": "Conduit"
+      "role": "Caster"
     },
     {
       "id": "MG-DEITY-057",
@@ -5563,11 +5591,11 @@
       "formerDeityId": "MG-DEITY-057",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Shadow",
+      "faith_trigger": "Archer",
       "faith_name": "Night-Whisper Shadow",
-      "combatRole": "Assassin",
+      "combatRole": "Archer",
       "weaponType": "Shadow Daggers",
-      "role": "Dominion"
+      "role": "Archer"
     },
     {
       "id": "MG-DEITY-058",
@@ -5780,11 +5808,11 @@
       "formerDeityId": "MG-DEITY-058",
       "ascensionTier": "Base",
       "combatModel": "one-deity-vs-many",
-      "faith_trigger": "Disruption",
+      "faith_trigger": "Assassin",
       "faith_name": "Velvet-Chains Disruption",
-      "combatRole": "Archer",
+      "combatRole": "Assassin",
       "weaponType": "Poison Bow",
-      "role": "Fracture"
+      "role": "Assassin"
     }
   ],
   "avatar_note": "Players control Avatars of these Deities, not the Deities directly. See docs/lore/04-DEITIES.md for Avatar System details."
