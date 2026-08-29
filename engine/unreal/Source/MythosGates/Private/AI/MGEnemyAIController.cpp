@@ -84,87 +84,64 @@ void AMGEnemyAIController::Tick(float DeltaTime)
 
 void AMGEnemyAIController::SetArchetype(EMGEnemyArchetype NewArchetype)
 {
-	if (ControlledEnemy)
+	if (!ControlledEnemy)
+		return;
+
+	ControlledEnemy->Archetype = NewArchetype;
+
+	// Get base stats from the balanced stat table (L1 values)
+	// These match the COMBAT_BALANCE_DOCUMENT.md enemy stat table
+	// Enemy scaling MUST match deity scaling rates to keep dodge/parry % constant
+
+	int32 EnemyLevel = 1; // TODO: Set from mission/campaign difficulty
+
+	MGEnemyBaseStats::FEnemyStats BaseStats;
+
+	switch (NewArchetype)
 	{
-		ControlledEnemy->Archetype = NewArchetype;
-
-		// Adjust stats based on archetype
-		switch (NewArchetype)
-		{
-		case EMGEnemyArchetype::Swarmer:
-			ControlledEnemy->MaxHP = 30.0f;
-			ControlledEnemy->AttackPower = 5.0f;
-			ControlledEnemy->MoveSpeed = 400.0f;
-			ControlledEnemy->AttackRange = 100.0f;
-			ControlledEnemy->AttackCooldown = 1.5f;
-			break;
-		case EMGEnemyArchetype::Brute:
-			ControlledEnemy->MaxHP = 150.0f;
-			ControlledEnemy->AttackPower = 15.0f;
-			ControlledEnemy->MoveSpeed = 200.0f;
-			ControlledEnemy->AttackRange = 150.0f;
-			ControlledEnemy->AttackCooldown = 3.0f;
-			break;
-		case EMGEnemyArchetype::Hunter:
-			ControlledEnemy->MaxHP = 50.0f;
-			ControlledEnemy->AttackPower = 10.0f;
-			ControlledEnemy->MoveSpeed = 250.0f;
-			ControlledEnemy->AttackRange = 600.0f;
-			ControlledEnemy->AttackCooldown = 2.5f;
-			break;
-		case EMGEnemyArchetype::Controller:
-			ControlledEnemy->MaxHP = 80.0f;
-			ControlledEnemy->AttackPower = 8.0f;
-			ControlledEnemy->MoveSpeed = 300.0f;
-			ControlledEnemy->AttackRange = 400.0f;
-			ControlledEnemy->AttackCooldown = 2.0f;
-			break;
-		case EMGEnemyArchetype::Disruptor:
-			ControlledEnemy->MaxHP = 70.0f;
-			ControlledEnemy->AttackPower = 7.0f;
-			ControlledEnemy->MoveSpeed = 350.0f;
-			ControlledEnemy->AttackRange = 300.0f;
-			ControlledEnemy->AttackCooldown = 1.8f;
-			break;
-		case EMGEnemyArchetype::Guardian:
-			ControlledEnemy->MaxHP = 200.0f;
-			ControlledEnemy->AttackPower = 12.0f;
-			ControlledEnemy->MoveSpeed = 150.0f;
-			ControlledEnemy->AttackRange = 120.0f;
-			ControlledEnemy->AttackCooldown = 2.5f;
-			break;
-		case EMGEnemyArchetype::Executioner:
-			ControlledEnemy->MaxHP = 100.0f;
-			ControlledEnemy->AttackPower = 20.0f;
-			ControlledEnemy->MoveSpeed = 300.0f;
-			ControlledEnemy->AttackRange = 150.0f;
-			ControlledEnemy->AttackCooldown = 3.5f;
-			break;
-		case EMGEnemyArchetype::Elite:
-			ControlledEnemy->MaxHP = 120.0f;
-			ControlledEnemy->AttackPower = 14.0f;
-			ControlledEnemy->MoveSpeed = 280.0f;
-			ControlledEnemy->AttackRange = 200.0f;
-			ControlledEnemy->AttackCooldown = 2.0f;
-			break;
-		case EMGEnemyArchetype::Champion:
-			ControlledEnemy->MaxHP = 300.0f;
-			ControlledEnemy->AttackPower = 18.0f;
-			ControlledEnemy->MoveSpeed = 250.0f;
-			ControlledEnemy->AttackRange = 180.0f;
-			ControlledEnemy->AttackCooldown = 2.2f;
-			break;
-		case EMGEnemyArchetype::EnemyDeity:
-			ControlledEnemy->MaxHP = 500.0f;
-			ControlledEnemy->AttackPower = 25.0f;
-			ControlledEnemy->MoveSpeed = 300.0f;
-			ControlledEnemy->AttackRange = 250.0f;
-			ControlledEnemy->AttackCooldown = 1.5f;
-			break;
-		}
-
-		ControlledEnemy->CurrentHP = ControlledEnemy->MaxHP;
+	case EMGEnemyArchetype::Swarmer:
+		BaseStats = MGEnemyBaseStats::Swarmer();
+		break;
+	case EMGEnemyArchetype::Brute:
+		BaseStats = MGEnemyBaseStats::Brute();
+		break;
+	case EMGEnemyArchetype::Hunter:
+		BaseStats = MGEnemyBaseStats::Hunter();
+		break;
+	case EMGEnemyArchetype::Controller:
+		BaseStats = MGEnemyBaseStats::Controller();
+		break;
+	case EMGEnemyArchetype::Disruptor:
+		BaseStats = MGEnemyBaseStats::Disruptor();
+		break;
+	case EMGEnemyArchetype::Guardian:
+		BaseStats = MGEnemyBaseStats::Guardian();
+		break;
+	case EMGEnemyArchetype::Executioner:
+		BaseStats = MGEnemyBaseStats::Executioner();
+		break;
+	case EMGEnemyArchetype::Elite:
+		BaseStats = MGEnemyBaseStats::Elite();
+		break;
+	case EMGEnemyArchetype::Champion:
+		BaseStats = MGEnemyBaseStats::Champion();
+		break;
+	case EMGEnemyArchetype::EnemyDeity:
+		BaseStats = MGEnemyBaseStats::EnemyDeity();
+		break;
 	}
+
+	// Apply progression scaling (matches deity scaling rates)
+	ControlledEnemy->MaxHP = MGEnemyBaseStats::ScaleHP(BaseStats.HP, EnemyLevel);
+	ControlledEnemy->AttackPower = MGEnemyBaseStats::ScaleATK(BaseStats.Attack, EnemyLevel);
+	ControlledEnemy->Accuracy = MGEnemyBaseStats::ScaleAcc(BaseStats.Accuracy, EnemyLevel);
+	// Note: Power stat is used for parry resolution and scales separately from AttackPower
+	// For simplicity, Power = AttackPower (can be separated for fine-tuning)
+	ControlledEnemy->MoveSpeed = BaseStats.MoveSpeed; // Speed doesn't scale
+	ControlledEnemy->AttackRange = BaseStats.AttackRange; // Range doesn't scale
+	ControlledEnemy->AttackCooldown = BaseStats.AttackCooldown; // Cooldown doesn't scale
+
+	ControlledEnemy->CurrentHP = ControlledEnemy->MaxHP;
 }
 
 // === SWARMER ===

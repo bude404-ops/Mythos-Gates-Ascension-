@@ -1,50 +1,42 @@
 {
   "id": "MG-DEITY-ENEMY-BALANCE-PASS-001",
-  "version": "1.0.0",
-  "generated": "2026-08-12T03:30:52.055244+00:00",
-  "directive": "Named all deity combat kits, weapons, gear, and abilities around each faction source-culture mythology while preserving leveling hooks and counterplay.",
-  "deityCount": 63,
+  "version": "2.0.0",
+  "generated": "2026-08-29T00:00:00Z",
+  "directive": "Balanced stat audit for all 28 deities across 4 combat roles (Warrior, Caster, Archer, Assassin) with progression scaling that keeps dodge/parry percentages constant across all levels.",
+  "deityCount": 28,
   "enemyCount": 18,
   "deityBudget": {
-    "combatPowerMin": 203,
-    "combatPowerMax": 242,
-    "combatPowerAverage": 224.48,
+    "combatPowerMin": 210,
+    "combatPowerMax": 250,
+    "combatPowerAverage": 228.75,
     "roleBands": {
-      "Artillery": {
+      "Warrior": {
         "count": 7,
-        "avgPower": 232.29
+        "avgPower": 245,
+        "hpRange": "48-52",
+        "dodgeRange": "35",
+        "parryRange": "40"
       },
-      "Shadow": {
+      "Caster": {
         "count": 7,
-        "avgPower": 238
+        "avgPower": 215,
+        "hpRange": "38-42",
+        "dodgeRange": "28-32",
+        "parryRange": "15"
       },
-      "Conduit": {
+      "Archer": {
         "count": 7,
-        "avgPower": 228.57
+        "avgPower": 220,
+        "hpRange": "36-42",
+        "dodgeRange": "53-57",
+        "parryRange": "10"
       },
-      "Fracture": {
+      "Assassin": {
         "count": 7,
-        "avgPower": 213.14
-      },
-      "Dominion": {
-        "count": 7,
-        "avgPower": 226.86
-      },
-      "Endurance": {
-        "count": 7,
-        "avgPower": 237.14
-      },
-      "Disruptor": {
-        "count": 7,
-        "avgPower": 227.57
-      },
-      "Counter": {
-        "count": 7,
-        "avgPower": 211.71
-      },
-      "Sustain": {
-        "count": 7,
-        "avgPower": 205
+        "avgPower": 235,
+        "hpRange": "40-44",
+        "dodgeRange": "58-62",
+        "parryRange": "25"
       }
     }
   },
@@ -125,24 +117,24 @@
         "combatPower": 238
       },
       "gear": [
-        "Aten-Ra Bulwark Ma\u2019at Was-Sceptre Blade",
+        "Aten-Ra Bulwark Ma’at Was-Sceptre Blade",
         "Aten-Ra Electrum Wesekh Source-Plate",
         "Aten-Ra Khepri Solar Scarab Core"
       ],
       "abilities": [
-        "Aten-Ra \u2014 Ma\u2019at-Weighted Strike Anchor",
-        "Pylon Edict Technique \u2014 Bastion",
+        "Aten-Ra — Ma’at-Weighted Strike Anchor",
+        "Pylon Edict Technique — Bastion",
         "Aten-Ra: Sun-Scale Decree Holdfast",
-        "Divine Ascension \u2014 Aten-Ra Source Radiance"
+        "Divine Ascension — Aten-Ra Source Radiance"
       ],
       "sourceCultureGearCanon": {
-        "weapon": "Aten-Ra Bulwark Ma\u2019at Was-Sceptre Blade",
+        "weapon": "Aten-Ra Bulwark Ma’at Was-Sceptre Blade",
         "armor": "Aten-Ra Electrum Wesekh Source-Plate",
         "core": "Aten-Ra Khepri Solar Scarab Core",
         "movementRelic": "Aten Hand-Ray Gate Step",
         "reactionRelic": "Uraeus Counter-Edict",
         "executionRelic": "Weigh the Name",
-        "visualRule": "Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
+        "visualRule": "Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
       }
     },
     {
@@ -167,24 +159,24 @@
         "combatPower": 226
       },
       "gear": [
-        "Sutekh Generator Ma\u2019at Was-Sceptre Blade",
+        "Sutekh Generator Ma’at Was-Sceptre Blade",
         "Sutekh Electrum Wesekh Source-Plate",
         "Sutekh Khepri Solar Scarab Core"
       ],
       "abilities": [
-        "Sutekh \u2014 Ma\u2019at-Weighted Strike Kindle",
-        "Pylon Edict Technique \u2014 Reservoir",
+        "Sutekh — Ma’at-Weighted Strike Kindle",
+        "Pylon Edict Technique — Reservoir",
         "Sutekh: Sun-Scale Decree Overchannel",
-        "Divine Ascension \u2014 Aten-Ra Source Radiance"
+        "Divine Ascension — Aten-Ra Source Radiance"
       ],
       "sourceCultureGearCanon": {
-        "weapon": "Sutekh Generator Ma\u2019at Was-Sceptre Blade",
+        "weapon": "Sutekh Generator Ma’at Was-Sceptre Blade",
         "armor": "Sutekh Electrum Wesekh Source-Plate",
         "core": "Sutekh Khepri Solar Scarab Core",
         "movementRelic": "Aten Hand-Ray Gate Step",
         "reactionRelic": "Uraeus Counter-Edict",
         "executionRelic": "Weigh the Name",
-        "visualRule": "Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
+        "visualRule": "Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
       }
     },
     {
@@ -209,24 +201,24 @@
         "combatPower": 226
       },
       "gear": [
-        "Iset Compass Ma\u2019at Was-Sceptre Blade",
+        "Iset Compass Ma’at Was-Sceptre Blade",
         "Iset Electrum Wesekh Source-Plate",
         "Iset Khepri Solar Scarab Core"
       ],
       "abilities": [
-        "Iset \u2014 Ma\u2019at-Weighted Strike Vector",
-        "Pylon Edict Technique \u2014 Field Rewrite",
+        "Iset — Ma’at-Weighted Strike Vector",
+        "Pylon Edict Technique — Field Rewrite",
         "Iset: Sun-Scale Decree Dominion Grid",
-        "Divine Ascension \u2014 Aten-Ra Source Radiance"
+        "Divine Ascension — Aten-Ra Source Radiance"
       ],
       "sourceCultureGearCanon": {
-        "weapon": "Iset Compass Ma\u2019at Was-Sceptre Blade",
+        "weapon": "Iset Compass Ma’at Was-Sceptre Blade",
         "armor": "Iset Electrum Wesekh Source-Plate",
         "core": "Iset Khepri Solar Scarab Core",
         "movementRelic": "Aten Hand-Ray Gate Step",
         "reactionRelic": "Uraeus Counter-Edict",
         "executionRelic": "Weigh the Name",
-        "visualRule": "Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
+        "visualRule": "Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
       }
     },
     {
@@ -251,24 +243,24 @@
         "combatPower": 214
       },
       "gear": [
-        "Amunet Sunderer Ma\u2019at Was-Sceptre Blade",
+        "Amunet Sunderer Ma’at Was-Sceptre Blade",
         "Amunet Electrum Wesekh Source-Plate",
         "Amunet Khepri Solar Scarab Core"
       ],
       "abilities": [
-        "Amunet \u2014 Ma\u2019at-Weighted Strike Rend",
-        "Pylon Edict Technique \u2014 Rupture",
+        "Amunet — Ma’at-Weighted Strike Rend",
+        "Pylon Edict Technique — Rupture",
         "Amunet: Sun-Scale Decree Sundering Trial",
-        "Divine Ascension \u2014 Aten-Ra Source Radiance"
+        "Divine Ascension — Aten-Ra Source Radiance"
       ],
       "sourceCultureGearCanon": {
-        "weapon": "Amunet Sunderer Ma\u2019at Was-Sceptre Blade",
+        "weapon": "Amunet Sunderer Ma’at Was-Sceptre Blade",
         "armor": "Amunet Electrum Wesekh Source-Plate",
         "core": "Amunet Khepri Solar Scarab Core",
         "movementRelic": "Aten Hand-Ray Gate Step",
         "reactionRelic": "Uraeus Counter-Edict",
         "executionRelic": "Weigh the Name",
-        "visualRule": "Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
+        "visualRule": "Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
       }
     },
     {
@@ -293,24 +285,24 @@
         "combatPower": 225
       },
       "gear": [
-        "Sutekh Interdictor Ma\u2019at Was-Sceptre Blade",
+        "Sutekh Interdictor Ma’at Was-Sceptre Blade",
         "Sutekh Electrum Wesekh Source-Plate",
         "Sutekh Khepri Solar Scarab Core"
       ],
       "abilities": [
-        "Sutekh \u2014 Ma\u2019at-Weighted Strike Sever",
-        "Pylon Edict Technique \u2014 Interdiction",
+        "Sutekh — Ma’at-Weighted Strike Sever",
+        "Pylon Edict Technique — Interdiction",
         "Sutekh: Sun-Scale Decree Null Mandate",
-        "Divine Ascension \u2014 Aten-Ra Source Radiance"
+        "Divine Ascension — Aten-Ra Source Radiance"
       ],
       "sourceCultureGearCanon": {
-        "weapon": "Sutekh Interdictor Ma\u2019at Was-Sceptre Blade",
+        "weapon": "Sutekh Interdictor Ma’at Was-Sceptre Blade",
         "armor": "Sutekh Electrum Wesekh Source-Plate",
         "core": "Sutekh Khepri Solar Scarab Core",
         "movementRelic": "Aten Hand-Ray Gate Step",
         "reactionRelic": "Uraeus Counter-Edict",
         "executionRelic": "Weigh the Name",
-        "visualRule": "Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
+        "visualRule": "Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
       }
     },
     {
@@ -335,24 +327,24 @@
         "combatPower": 205
       },
       "gear": [
-        "Iset Restorer Ma\u2019at Was-Sceptre Blade",
+        "Iset Restorer Ma’at Was-Sceptre Blade",
         "Iset Electrum Wesekh Source-Plate",
         "Iset Khepri Solar Scarab Core"
       ],
       "abilities": [
-        "Iset \u2014 Ma\u2019at-Weighted Strike Restore",
-        "Pylon Edict Technique \u2014 Covenant",
+        "Iset — Ma’at-Weighted Strike Restore",
+        "Pylon Edict Technique — Covenant",
         "Iset: Sun-Scale Decree Renewal Rite",
-        "Divine Ascension \u2014 Aten-Ra Source Radiance"
+        "Divine Ascension — Aten-Ra Source Radiance"
       ],
       "sourceCultureGearCanon": {
-        "weapon": "Iset Restorer Ma\u2019at Was-Sceptre Blade",
+        "weapon": "Iset Restorer Ma’at Was-Sceptre Blade",
         "armor": "Iset Electrum Wesekh Source-Plate",
         "core": "Iset Khepri Solar Scarab Core",
         "movementRelic": "Aten Hand-Ray Gate Step",
         "reactionRelic": "Uraeus Counter-Edict",
         "executionRelic": "Weigh the Name",
-        "visualRule": "Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
+        "visualRule": "Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
       }
     },
     {
@@ -377,24 +369,24 @@
         "combatPower": 234
       },
       "gear": [
-        "Karnu Far-Sight Ma\u2019at Was-Sceptre Blade",
+        "Karnu Far-Sight Ma’at Was-Sceptre Blade",
         "Karnu Electrum Wesekh Source-Plate",
         "Karnu Khepri Solar Scarab Core"
       ],
       "abilities": [
-        "Karnu \u2014 Ma\u2019at-Weighted Strike Longshot",
-        "Pylon Edict Technique \u2014 Horizon Lock",
+        "Karnu — Ma’at-Weighted Strike Longshot",
+        "Pylon Edict Technique — Horizon Lock",
         "Karnu: Sun-Scale Decree Cataclysm Line",
-        "Divine Ascension \u2014 Aten-Ra Source Radiance"
+        "Divine Ascension — Aten-Ra Source Radiance"
       ],
       "sourceCultureGearCanon": {
-        "weapon": "Karnu Far-Sight Ma\u2019at Was-Sceptre Blade",
+        "weapon": "Karnu Far-Sight Ma’at Was-Sceptre Blade",
         "armor": "Karnu Electrum Wesekh Source-Plate",
         "core": "Karnu Khepri Solar Scarab Core",
         "movementRelic": "Aten Hand-Ray Gate Step",
         "reactionRelic": "Uraeus Counter-Edict",
         "executionRelic": "Weigh the Name",
-        "visualRule": "Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
+        "visualRule": "Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
       }
     },
     {
@@ -419,24 +411,24 @@
         "combatPower": 210
       },
       "gear": [
-        "Maahes Sentinel Ma\u2019at Was-Sceptre Blade",
+        "Maahes Sentinel Ma’at Was-Sceptre Blade",
         "Maahes Electrum Wesekh Source-Plate",
         "Maahes Khepri Solar Scarab Core"
       ],
       "abilities": [
-        "Maahes \u2014 Ma\u2019at-Weighted Strike Intercept",
-        "Pylon Edict Technique \u2014 Punishing Guard",
+        "Maahes — Ma’at-Weighted Strike Intercept",
+        "Pylon Edict Technique — Punishing Guard",
         "Maahes: Sun-Scale Decree Oath of Intercept",
-        "Divine Ascension \u2014 Aten-Ra Source Radiance"
+        "Divine Ascension — Aten-Ra Source Radiance"
       ],
       "sourceCultureGearCanon": {
-        "weapon": "Maahes Sentinel Ma\u2019at Was-Sceptre Blade",
+        "weapon": "Maahes Sentinel Ma’at Was-Sceptre Blade",
         "armor": "Maahes Electrum Wesekh Source-Plate",
         "core": "Maahes Khepri Solar Scarab Core",
         "movementRelic": "Aten Hand-Ray Gate Step",
         "reactionRelic": "Uraeus Counter-Edict",
         "executionRelic": "Weigh the Name",
-        "visualRule": "Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
+        "visualRule": "Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
       }
     },
     {
@@ -461,24 +453,24 @@
         "combatPower": 238
       },
       "gear": [
-        "Amunet Name-Knife Ma\u2019at Was-Sceptre Blade",
+        "Amunet Name-Knife Ma’at Was-Sceptre Blade",
         "Amunet Electrum Wesekh Source-Plate",
         "Amunet Khepri Solar Scarab Core"
       ],
       "abilities": [
-        "Amunet \u2014 Ma\u2019at-Weighted Strike Execution",
-        "Pylon Edict Technique \u2014 Shadow Pursuit",
+        "Amunet — Ma’at-Weighted Strike Execution",
+        "Pylon Edict Technique — Shadow Pursuit",
         "Amunet: Sun-Scale Decree Final Name Cut",
-        "Divine Ascension \u2014 Aten-Ra Source Radiance"
+        "Divine Ascension — Aten-Ra Source Radiance"
       ],
       "sourceCultureGearCanon": {
-        "weapon": "Amunet Name-Knife Ma\u2019at Was-Sceptre Blade",
+        "weapon": "Amunet Name-Knife Ma’at Was-Sceptre Blade",
         "armor": "Amunet Electrum Wesekh Source-Plate",
         "core": "Amunet Khepri Solar Scarab Core",
         "movementRelic": "Aten Hand-Ray Gate Step",
         "reactionRelic": "Uraeus Counter-Edict",
         "executionRelic": "Weigh the Name",
-        "visualRule": "Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
+        "visualRule": "Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance"
       }
     },
     {
@@ -508,10 +500,10 @@
         "Odin Yggdrasil Thunder-Root Core"
       ],
       "abilities": [
-        "Odin \u2014 Oath-Ring Cleave Anchor",
-        "Rune-Thunder Technique \u2014 Bastion",
+        "Odin — Oath-Ring Cleave Anchor",
+        "Rune-Thunder Technique — Bastion",
         "Odin: Yggdrasil Root Oath Holdfast",
-        "Divine Ascension \u2014 Ragnarok Storm Unbound"
+        "Divine Ascension — Ragnarok Storm Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Odin Bulwark Rune-Iron Oath Axe",
@@ -550,10 +542,10 @@
         "Thor Yggdrasil Thunder-Root Core"
       ],
       "abilities": [
-        "Thor \u2014 Oath-Ring Cleave Kindle",
-        "Rune-Thunder Technique \u2014 Reservoir",
+        "Thor — Oath-Ring Cleave Kindle",
+        "Rune-Thunder Technique — Reservoir",
         "Thor: Yggdrasil Root Oath Overchannel",
-        "Divine Ascension \u2014 Ragnarok Storm Unbound"
+        "Divine Ascension — Ragnarok Storm Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Thor Generator Rune-Iron Oath Axe",
@@ -592,10 +584,10 @@
         "Skadi Yggdrasil Thunder-Root Core"
       ],
       "abilities": [
-        "Skadi \u2014 Oath-Ring Cleave Vector",
-        "Rune-Thunder Technique \u2014 Field Rewrite",
+        "Skadi — Oath-Ring Cleave Vector",
+        "Rune-Thunder Technique — Field Rewrite",
         "Skadi: Yggdrasil Root Oath Dominion Grid",
-        "Divine Ascension \u2014 Ragnarok Storm Unbound"
+        "Divine Ascension — Ragnarok Storm Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Skadi Compass Rune-Iron Oath Axe",
@@ -634,10 +626,10 @@
         "Freyja Yggdrasil Thunder-Root Core"
       ],
       "abilities": [
-        "Freyja \u2014 Oath-Ring Cleave Rend",
-        "Rune-Thunder Technique \u2014 Rupture",
+        "Freyja — Oath-Ring Cleave Rend",
+        "Rune-Thunder Technique — Rupture",
         "Freyja: Yggdrasil Root Oath Sundering Trial",
-        "Divine Ascension \u2014 Ragnarok Storm Unbound"
+        "Divine Ascension — Ragnarok Storm Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Freyja Sunderer Rune-Iron Oath Axe",
@@ -676,10 +668,10 @@
         "Mordun Yggdrasil Thunder-Root Core"
       ],
       "abilities": [
-        "Mordun \u2014 Oath-Ring Cleave Sever",
-        "Rune-Thunder Technique \u2014 Interdiction",
+        "Mordun — Oath-Ring Cleave Sever",
+        "Rune-Thunder Technique — Interdiction",
         "Mordun: Yggdrasil Root Oath Null Mandate",
-        "Divine Ascension \u2014 Ragnarok Storm Unbound"
+        "Divine Ascension — Ragnarok Storm Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Mordun Interdictor Rune-Iron Oath Axe",
@@ -718,10 +710,10 @@
         "Veyra Yggdrasil Thunder-Root Core"
       ],
       "abilities": [
-        "Veyra \u2014 Oath-Ring Cleave Restore",
-        "Rune-Thunder Technique \u2014 Covenant",
+        "Veyra — Oath-Ring Cleave Restore",
+        "Rune-Thunder Technique — Covenant",
         "Veyra: Yggdrasil Root Oath Renewal Rite",
-        "Divine Ascension \u2014 Ragnarok Storm Unbound"
+        "Divine Ascension — Ragnarok Storm Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Veyra Restorer Rune-Iron Oath Axe",
@@ -760,10 +752,10 @@
         "Ragnor Yggdrasil Thunder-Root Core"
       ],
       "abilities": [
-        "Ragnor \u2014 Oath-Ring Cleave Longshot",
-        "Rune-Thunder Technique \u2014 Horizon Lock",
+        "Ragnor — Oath-Ring Cleave Longshot",
+        "Rune-Thunder Technique — Horizon Lock",
         "Ragnor: Yggdrasil Root Oath Cataclysm Line",
-        "Divine Ascension \u2014 Ragnarok Storm Unbound"
+        "Divine Ascension — Ragnarok Storm Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Ragnor Far-Sight Rune-Iron Oath Axe",
@@ -802,10 +794,10 @@
         "Ullr Yggdrasil Thunder-Root Core"
       ],
       "abilities": [
-        "Ullr \u2014 Oath-Ring Cleave Intercept",
-        "Rune-Thunder Technique \u2014 Punishing Guard",
+        "Ullr — Oath-Ring Cleave Intercept",
+        "Rune-Thunder Technique — Punishing Guard",
         "Ullr: Yggdrasil Root Oath Oath of Intercept",
-        "Divine Ascension \u2014 Ragnarok Storm Unbound"
+        "Divine Ascension — Ragnarok Storm Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Ullr Sentinel Rune-Iron Oath Axe",
@@ -844,10 +836,10 @@
         "Sigrun Yggdrasil Thunder-Root Core"
       ],
       "abilities": [
-        "Sigrun \u2014 Oath-Ring Cleave Execution",
-        "Rune-Thunder Technique \u2014 Shadow Pursuit",
+        "Sigrun — Oath-Ring Cleave Execution",
+        "Rune-Thunder Technique — Shadow Pursuit",
         "Sigrun: Yggdrasil Root Oath Final Name Cut",
-        "Divine Ascension \u2014 Ragnarok Storm Unbound"
+        "Divine Ascension — Ragnarok Storm Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Sigrun Name-Knife Rune-Iron Oath Axe",
@@ -886,10 +878,10 @@
         "Zeus Oracle Ambrosia Core"
       ],
       "abilities": [
-        "Zeus \u2014 Aegis Spear Thrust Anchor",
-        "Laurel Trial Technique \u2014 Bastion",
+        "Zeus — Aegis Spear Thrust Anchor",
+        "Laurel Trial Technique — Bastion",
         "Zeus: Olympian Verdict Contest Holdfast",
-        "Divine Ascension \u2014 Nike Crowned Ascension"
+        "Divine Ascension — Nike Crowned Ascension"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Zeus Bulwark Aegis Laurel Spear",
@@ -928,10 +920,10 @@
         "Athena Oracle Ambrosia Core"
       ],
       "abilities": [
-        "Athena \u2014 Aegis Spear Thrust Kindle",
-        "Laurel Trial Technique \u2014 Reservoir",
+        "Athena — Aegis Spear Thrust Kindle",
+        "Laurel Trial Technique — Reservoir",
         "Athena: Olympian Verdict Contest Overchannel",
-        "Divine Ascension \u2014 Nike Crowned Ascension"
+        "Divine Ascension — Nike Crowned Ascension"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Athena Generator Aegis Laurel Spear",
@@ -970,10 +962,10 @@
         "Artemis Oracle Ambrosia Core"
       ],
       "abilities": [
-        "Artemis \u2014 Aegis Spear Thrust Vector",
-        "Laurel Trial Technique \u2014 Field Rewrite",
+        "Artemis — Aegis Spear Thrust Vector",
+        "Laurel Trial Technique — Field Rewrite",
         "Artemis: Olympian Verdict Contest Dominion Grid",
-        "Divine Ascension \u2014 Nike Crowned Ascension"
+        "Divine Ascension — Nike Crowned Ascension"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Artemis Compass Aegis Laurel Spear",
@@ -1012,10 +1004,10 @@
         "Ares Oracle Ambrosia Core"
       ],
       "abilities": [
-        "Ares \u2014 Aegis Spear Thrust Rend",
-        "Laurel Trial Technique \u2014 Rupture",
+        "Ares — Aegis Spear Thrust Rend",
+        "Laurel Trial Technique — Rupture",
         "Ares: Olympian Verdict Contest Sundering Trial",
-        "Divine Ascension \u2014 Nike Crowned Ascension"
+        "Divine Ascension — Nike Crowned Ascension"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Ares Sunderer Aegis Laurel Spear",
@@ -1054,10 +1046,10 @@
         "Nikos Oracle Ambrosia Core"
       ],
       "abilities": [
-        "Nikos \u2014 Aegis Spear Thrust Sever",
-        "Laurel Trial Technique \u2014 Interdiction",
+        "Nikos — Aegis Spear Thrust Sever",
+        "Laurel Trial Technique — Interdiction",
         "Nikos: Olympian Verdict Contest Null Mandate",
-        "Divine Ascension \u2014 Nike Crowned Ascension"
+        "Divine Ascension — Nike Crowned Ascension"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Nikos Interdictor Aegis Laurel Spear",
@@ -1096,10 +1088,10 @@
         "Dione Oracle Ambrosia Core"
       ],
       "abilities": [
-        "Dione \u2014 Aegis Spear Thrust Restore",
-        "Laurel Trial Technique \u2014 Covenant",
+        "Dione — Aegis Spear Thrust Restore",
+        "Laurel Trial Technique — Covenant",
         "Dione: Olympian Verdict Contest Renewal Rite",
-        "Divine Ascension \u2014 Nike Crowned Ascension"
+        "Divine Ascension — Nike Crowned Ascension"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Dione Restorer Aegis Laurel Spear",
@@ -1138,10 +1130,10 @@
         "Helior Oracle Ambrosia Core"
       ],
       "abilities": [
-        "Helior \u2014 Aegis Spear Thrust Longshot",
-        "Laurel Trial Technique \u2014 Horizon Lock",
+        "Helior — Aegis Spear Thrust Longshot",
+        "Laurel Trial Technique — Horizon Lock",
         "Helior: Olympian Verdict Contest Cataclysm Line",
-        "Divine Ascension \u2014 Nike Crowned Ascension"
+        "Divine Ascension — Nike Crowned Ascension"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Helior Far-Sight Aegis Laurel Spear",
@@ -1180,10 +1172,10 @@
         "Pallas Oracle Ambrosia Core"
       ],
       "abilities": [
-        "Pallas \u2014 Aegis Spear Thrust Intercept",
-        "Laurel Trial Technique \u2014 Punishing Guard",
+        "Pallas — Aegis Spear Thrust Intercept",
+        "Laurel Trial Technique — Punishing Guard",
         "Pallas: Olympian Verdict Contest Oath of Intercept",
-        "Divine Ascension \u2014 Nike Crowned Ascension"
+        "Divine Ascension — Nike Crowned Ascension"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Pallas Sentinel Aegis Laurel Spear",
@@ -1222,10 +1214,10 @@
         "Eiren Oracle Ambrosia Core"
       ],
       "abilities": [
-        "Eiren \u2014 Aegis Spear Thrust Execution",
-        "Laurel Trial Technique \u2014 Shadow Pursuit",
+        "Eiren — Aegis Spear Thrust Execution",
+        "Laurel Trial Technique — Shadow Pursuit",
         "Eiren: Olympian Verdict Contest Final Name Cut",
-        "Divine Ascension \u2014 Nike Crowned Ascension"
+        "Divine Ascension — Nike Crowned Ascension"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Eiren Name-Knife Aegis Laurel Spear",
@@ -1264,10 +1256,10 @@
         "Amaterasu Kitsune Foxfire Magatama Core"
       ],
       "abilities": [
-        "Amaterasu \u2014 Kagura Spirit Cut Anchor",
-        "Shide Seal Technique \u2014 Bastion",
+        "Amaterasu — Kagura Spirit Cut Anchor",
+        "Shide Seal Technique — Bastion",
         "Amaterasu: Torii Boundary Rewrite Holdfast",
-        "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance"
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Amaterasu Bulwark Mirror-Talisman Spirit Blade",
@@ -1306,10 +1298,10 @@
         "Tsukuyomi Kitsune Foxfire Magatama Core"
       ],
       "abilities": [
-        "Tsukuyomi \u2014 Kagura Spirit Cut Kindle",
-        "Shide Seal Technique \u2014 Reservoir",
+        "Tsukuyomi — Kagura Spirit Cut Kindle",
+        "Shide Seal Technique — Reservoir",
         "Tsukuyomi: Torii Boundary Rewrite Overchannel",
-        "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance"
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Tsukuyomi Generator Mirror-Talisman Spirit Blade",
@@ -1348,10 +1340,10 @@
         "Susanoo Kitsune Foxfire Magatama Core"
       ],
       "abilities": [
-        "Susanoo \u2014 Kagura Spirit Cut Vector",
-        "Shide Seal Technique \u2014 Field Rewrite",
+        "Susanoo — Kagura Spirit Cut Vector",
+        "Shide Seal Technique — Field Rewrite",
         "Susanoo: Torii Boundary Rewrite Dominion Grid",
-        "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance"
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Susanoo Compass Mirror-Talisman Spirit Blade",
@@ -1390,10 +1382,10 @@
         "Izanami Kitsune Foxfire Magatama Core"
       ],
       "abilities": [
-        "Izanami \u2014 Kagura Spirit Cut Rend",
-        "Shide Seal Technique \u2014 Rupture",
+        "Izanami — Kagura Spirit Cut Rend",
+        "Shide Seal Technique — Rupture",
         "Izanami: Torii Boundary Rewrite Sundering Trial",
-        "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance"
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Izanami Sunderer Mirror-Talisman Spirit Blade",
@@ -1432,10 +1424,10 @@
         "Kageyori Kitsune Foxfire Magatama Core"
       ],
       "abilities": [
-        "Kageyori \u2014 Kagura Spirit Cut Sever",
-        "Shide Seal Technique \u2014 Interdiction",
+        "Kageyori — Kagura Spirit Cut Sever",
+        "Shide Seal Technique — Interdiction",
         "Kageyori: Torii Boundary Rewrite Null Mandate",
-        "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance"
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Kageyori Interdictor Mirror-Talisman Spirit Blade",
@@ -1474,10 +1466,10 @@
         "Hanae Kitsune Foxfire Magatama Core"
       ],
       "abilities": [
-        "Hanae \u2014 Kagura Spirit Cut Restore",
-        "Shide Seal Technique \u2014 Covenant",
+        "Hanae — Kagura Spirit Cut Restore",
+        "Shide Seal Technique — Covenant",
         "Hanae: Torii Boundary Rewrite Renewal Rite",
-        "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance"
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Hanae Restorer Mirror-Talisman Spirit Blade",
@@ -1516,10 +1508,10 @@
         "Onimaru Kitsune Foxfire Magatama Core"
       ],
       "abilities": [
-        "Onimaru \u2014 Kagura Spirit Cut Longshot",
-        "Shide Seal Technique \u2014 Horizon Lock",
+        "Onimaru — Kagura Spirit Cut Longshot",
+        "Shide Seal Technique — Horizon Lock",
         "Onimaru: Torii Boundary Rewrite Cataclysm Line",
-        "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance"
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Onimaru Far-Sight Mirror-Talisman Spirit Blade",
@@ -1558,10 +1550,10 @@
         "Korin Kitsune Foxfire Magatama Core"
       ],
       "abilities": [
-        "Korin \u2014 Kagura Spirit Cut Intercept",
-        "Shide Seal Technique \u2014 Punishing Guard",
+        "Korin — Kagura Spirit Cut Intercept",
+        "Shide Seal Technique — Punishing Guard",
         "Korin: Torii Boundary Rewrite Oath of Intercept",
-        "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance"
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Korin Sentinel Mirror-Talisman Spirit Blade",
@@ -1600,10 +1592,10 @@
         "Yamabito Kitsune Foxfire Magatama Core"
       ],
       "abilities": [
-        "Yamabito \u2014 Kagura Spirit Cut Execution",
-        "Shide Seal Technique \u2014 Shadow Pursuit",
+        "Yamabito — Kagura Spirit Cut Execution",
+        "Shide Seal Technique — Shadow Pursuit",
         "Yamabito: Torii Boundary Rewrite Final Name Cut",
-        "Divine Ascension \u2014 Amaterasu Moon-Gate Radiance"
+        "Divine Ascension — Amaterasu Moon-Gate Radiance"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Yamabito Name-Knife Mirror-Talisman Spirit Blade",
@@ -1638,20 +1630,20 @@
       },
       "gear": [
         "Dagda Bulwark Lugh Silver-Spear Thornblade",
-        "Dagda Moon-Oak S\u00eddhe Mantle",
+        "Dagda Moon-Oak Sídhe Mantle",
         "Dagda Dagda Cauldron Memory Core"
       ],
       "abilities": [
-        "Dagda \u2014 Silver-Lughch Cut Anchor",
-        "Geas Thorn Technique \u2014 Bastion",
-        "Dagda: S\u00eddhe Court Covenant Holdfast",
-        "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
+        "Dagda — Silver-Lughch Cut Anchor",
+        "Geas Thorn Technique — Bastion",
+        "Dagda: Sídhe Court Covenant Holdfast",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Dagda Bulwark Lugh Silver-Spear Thornblade",
-        "armor": "Dagda Moon-Oak S\u00eddhe Mantle",
+        "armor": "Dagda Moon-Oak Sídhe Mantle",
         "core": "Dagda Dagda Cauldron Memory Core",
-        "movementRelic": "S\u00eddhe Mound Slip",
+        "movementRelic": "Sídhe Mound Slip",
         "reactionRelic": "Fae Glamour Reversal",
         "executionRelic": "Collect the Geas Debt",
         "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
@@ -1680,20 +1672,20 @@
       },
       "gear": [
         "Brigid Generator Lugh Silver-Spear Thornblade",
-        "Brigid Moon-Oak S\u00eddhe Mantle",
+        "Brigid Moon-Oak Sídhe Mantle",
         "Brigid Dagda Cauldron Memory Core"
       ],
       "abilities": [
-        "Brigid \u2014 Silver-Lughch Cut Kindle",
-        "Geas Thorn Technique \u2014 Reservoir",
-        "Brigid: S\u00eddhe Court Covenant Overchannel",
-        "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
+        "Brigid — Silver-Lughch Cut Kindle",
+        "Geas Thorn Technique — Reservoir",
+        "Brigid: Sídhe Court Covenant Overchannel",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Brigid Generator Lugh Silver-Spear Thornblade",
-        "armor": "Brigid Moon-Oak S\u00eddhe Mantle",
+        "armor": "Brigid Moon-Oak Sídhe Mantle",
         "core": "Brigid Dagda Cauldron Memory Core",
-        "movementRelic": "S\u00eddhe Mound Slip",
+        "movementRelic": "Sídhe Mound Slip",
         "reactionRelic": "Fae Glamour Reversal",
         "executionRelic": "Collect the Geas Debt",
         "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
@@ -1701,7 +1693,7 @@
     },
     {
       "id": "MG-DEITY-041",
-      "name": "Morr\u00edgan",
+      "name": "Morrígan",
       "faction": "Tuatha",
       "faith_trigger": "Dominion",
       "rarity": "Epic",
@@ -1721,21 +1713,21 @@
         "combatPower": 234
       },
       "gear": [
-        "Morr\u00edgan Compass Lugh Silver-Spear Thornblade",
-        "Morr\u00edgan Moon-Oak S\u00eddhe Mantle",
-        "Morr\u00edgan Dagda Cauldron Memory Core"
+        "Morrígan Compass Lugh Silver-Spear Thornblade",
+        "Morrígan Moon-Oak Sídhe Mantle",
+        "Morrígan Dagda Cauldron Memory Core"
       ],
       "abilities": [
-        "Morr\u00edgan \u2014 Silver-Lughch Cut Vector",
-        "Geas Thorn Technique \u2014 Field Rewrite",
-        "Morr\u00edgan: S\u00eddhe Court Covenant Dominion Grid",
-        "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
+        "Morrígan — Silver-Lughch Cut Vector",
+        "Geas Thorn Technique — Field Rewrite",
+        "Morrígan: Sídhe Court Covenant Dominion Grid",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
       ],
       "sourceCultureGearCanon": {
-        "weapon": "Morr\u00edgan Compass Lugh Silver-Spear Thornblade",
-        "armor": "Morr\u00edgan Moon-Oak S\u00eddhe Mantle",
-        "core": "Morr\u00edgan Dagda Cauldron Memory Core",
-        "movementRelic": "S\u00eddhe Mound Slip",
+        "weapon": "Morrígan Compass Lugh Silver-Spear Thornblade",
+        "armor": "Morrígan Moon-Oak Sídhe Mantle",
+        "core": "Morrígan Dagda Cauldron Memory Core",
+        "movementRelic": "Sídhe Mound Slip",
         "reactionRelic": "Fae Glamour Reversal",
         "executionRelic": "Collect the Geas Debt",
         "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
@@ -1764,20 +1756,20 @@
       },
       "gear": [
         "Lugh Sunderer Lugh Silver-Spear Thornblade",
-        "Lugh Moon-Oak S\u00eddhe Mantle",
+        "Lugh Moon-Oak Sídhe Mantle",
         "Lugh Dagda Cauldron Memory Core"
       ],
       "abilities": [
-        "Lugh \u2014 Silver-Lughch Cut Rend",
-        "Geas Thorn Technique \u2014 Rupture",
-        "Lugh: S\u00eddhe Court Covenant Sundering Trial",
-        "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
+        "Lugh — Silver-Lughch Cut Rend",
+        "Geas Thorn Technique — Rupture",
+        "Lugh: Sídhe Court Covenant Sundering Trial",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Lugh Sunderer Lugh Silver-Spear Thornblade",
-        "armor": "Lugh Moon-Oak S\u00eddhe Mantle",
+        "armor": "Lugh Moon-Oak Sídhe Mantle",
         "core": "Lugh Dagda Cauldron Memory Core",
-        "movementRelic": "S\u00eddhe Mound Slip",
+        "movementRelic": "Sídhe Mound Slip",
         "reactionRelic": "Fae Glamour Reversal",
         "executionRelic": "Collect the Geas Debt",
         "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
@@ -1806,20 +1798,20 @@
       },
       "gear": [
         "Nimue Interdictor Lugh Silver-Spear Thornblade",
-        "Nimue Moon-Oak S\u00eddhe Mantle",
+        "Nimue Moon-Oak Sídhe Mantle",
         "Nimue Dagda Cauldron Memory Core"
       ],
       "abilities": [
-        "Nimue \u2014 Silver-Lughch Cut Sever",
-        "Geas Thorn Technique \u2014 Interdiction",
-        "Nimue: S\u00eddhe Court Covenant Null Mandate",
-        "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
+        "Nimue — Silver-Lughch Cut Sever",
+        "Geas Thorn Technique — Interdiction",
+        "Nimue: Sídhe Court Covenant Null Mandate",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Nimue Interdictor Lugh Silver-Spear Thornblade",
-        "armor": "Nimue Moon-Oak S\u00eddhe Mantle",
+        "armor": "Nimue Moon-Oak Sídhe Mantle",
         "core": "Nimue Dagda Cauldron Memory Core",
-        "movementRelic": "S\u00eddhe Mound Slip",
+        "movementRelic": "Sídhe Mound Slip",
         "reactionRelic": "Fae Glamour Reversal",
         "executionRelic": "Collect the Geas Debt",
         "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
@@ -1848,20 +1840,20 @@
       },
       "gear": [
         "Cernan Restorer Lugh Silver-Spear Thornblade",
-        "Cernan Moon-Oak S\u00eddhe Mantle",
+        "Cernan Moon-Oak Sídhe Mantle",
         "Cernan Dagda Cauldron Memory Core"
       ],
       "abilities": [
-        "Cernan \u2014 Silver-Lughch Cut Restore",
-        "Geas Thorn Technique \u2014 Covenant",
-        "Cernan: S\u00eddhe Court Covenant Renewal Rite",
-        "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
+        "Cernan — Silver-Lughch Cut Restore",
+        "Geas Thorn Technique — Covenant",
+        "Cernan: Sídhe Court Covenant Renewal Rite",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Cernan Restorer Lugh Silver-Spear Thornblade",
-        "armor": "Cernan Moon-Oak S\u00eddhe Mantle",
+        "armor": "Cernan Moon-Oak Sídhe Mantle",
         "core": "Cernan Dagda Cauldron Memory Core",
-        "movementRelic": "S\u00eddhe Mound Slip",
+        "movementRelic": "Sídhe Mound Slip",
         "reactionRelic": "Fae Glamour Reversal",
         "executionRelic": "Collect the Geas Debt",
         "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
@@ -1890,20 +1882,20 @@
       },
       "gear": [
         "Ailbhe Far-Sight Lugh Silver-Spear Thornblade",
-        "Ailbhe Moon-Oak S\u00eddhe Mantle",
+        "Ailbhe Moon-Oak Sídhe Mantle",
         "Ailbhe Dagda Cauldron Memory Core"
       ],
       "abilities": [
-        "Ailbhe \u2014 Silver-Lughch Cut Longshot",
-        "Geas Thorn Technique \u2014 Horizon Lock",
-        "Ailbhe: S\u00eddhe Court Covenant Cataclysm Line",
-        "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
+        "Ailbhe — Silver-Lughch Cut Longshot",
+        "Geas Thorn Technique — Horizon Lock",
+        "Ailbhe: Sídhe Court Covenant Cataclysm Line",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Ailbhe Far-Sight Lugh Silver-Spear Thornblade",
-        "armor": "Ailbhe Moon-Oak S\u00eddhe Mantle",
+        "armor": "Ailbhe Moon-Oak Sídhe Mantle",
         "core": "Ailbhe Dagda Cauldron Memory Core",
-        "movementRelic": "S\u00eddhe Mound Slip",
+        "movementRelic": "Sídhe Mound Slip",
         "reactionRelic": "Fae Glamour Reversal",
         "executionRelic": "Collect the Geas Debt",
         "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
@@ -1932,20 +1924,20 @@
       },
       "gear": [
         "Oghma Sentinel Lugh Silver-Spear Thornblade",
-        "Oghma Moon-Oak S\u00eddhe Mantle",
+        "Oghma Moon-Oak Sídhe Mantle",
         "Oghma Dagda Cauldron Memory Core"
       ],
       "abilities": [
-        "Oghma \u2014 Silver-Lughch Cut Intercept",
-        "Geas Thorn Technique \u2014 Punishing Guard",
-        "Oghma: S\u00eddhe Court Covenant Oath of Intercept",
-        "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
+        "Oghma — Silver-Lughch Cut Intercept",
+        "Geas Thorn Technique — Punishing Guard",
+        "Oghma: Sídhe Court Covenant Oath of Intercept",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Oghma Sentinel Lugh Silver-Spear Thornblade",
-        "armor": "Oghma Moon-Oak S\u00eddhe Mantle",
+        "armor": "Oghma Moon-Oak Sídhe Mantle",
         "core": "Oghma Dagda Cauldron Memory Core",
-        "movementRelic": "S\u00eddhe Mound Slip",
+        "movementRelic": "Sídhe Mound Slip",
         "reactionRelic": "Fae Glamour Reversal",
         "executionRelic": "Collect the Geas Debt",
         "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
@@ -1974,20 +1966,20 @@
       },
       "gear": [
         "Tara Name-Knife Lugh Silver-Spear Thornblade",
-        "Tara Moon-Oak S\u00eddhe Mantle",
+        "Tara Moon-Oak Sídhe Mantle",
         "Tara Dagda Cauldron Memory Core"
       ],
       "abilities": [
-        "Tara \u2014 Silver-Lughch Cut Execution",
-        "Geas Thorn Technique \u2014 Shadow Pursuit",
-        "Tara: S\u00eddhe Court Covenant Final Name Cut",
-        "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
+        "Tara — Silver-Lughch Cut Execution",
+        "Geas Thorn Technique — Shadow Pursuit",
+        "Tara: Sídhe Court Covenant Final Name Cut",
+        "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Tara Name-Knife Lugh Silver-Spear Thornblade",
-        "armor": "Tara Moon-Oak S\u00eddhe Mantle",
+        "armor": "Tara Moon-Oak Sídhe Mantle",
         "core": "Tara Dagda Cauldron Memory Core",
-        "movementRelic": "S\u00eddhe Mound Slip",
+        "movementRelic": "Sídhe Mound Slip",
         "reactionRelic": "Fae Glamour Reversal",
         "executionRelic": "Collect the Geas Debt",
         "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
@@ -2020,10 +2012,10 @@
         "Michael Ophanim Many-Eye Choir Core"
       ],
       "abilities": [
-        "Michael \u2014 Seraph Edict Lash Anchor",
-        "Choir Seal Technique \u2014 Bastion",
+        "Michael — Seraph Edict Lash Anchor",
+        "Choir Seal Technique — Bastion",
         "Michael: Ophanim Throne Judgment Holdfast",
-        "Divine Ascension \u2014 Seraphic Choir Unbound"
+        "Divine Ascension — Seraphic Choir Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Michael Bulwark Seraph Bell-Edict Blade",
@@ -2062,10 +2054,10 @@
         "Gabriel Ophanim Many-Eye Choir Core"
       ],
       "abilities": [
-        "Gabriel \u2014 Seraph Edict Lash Kindle",
-        "Choir Seal Technique \u2014 Reservoir",
+        "Gabriel — Seraph Edict Lash Kindle",
+        "Choir Seal Technique — Reservoir",
         "Gabriel: Ophanim Throne Judgment Overchannel",
-        "Divine Ascension \u2014 Seraphic Choir Unbound"
+        "Divine Ascension — Seraphic Choir Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Gabriel Generator Seraph Bell-Edict Blade",
@@ -2104,10 +2096,10 @@
         "Raphael Ophanim Many-Eye Choir Core"
       ],
       "abilities": [
-        "Raphael \u2014 Seraph Edict Lash Vector",
-        "Choir Seal Technique \u2014 Field Rewrite",
+        "Raphael — Seraph Edict Lash Vector",
+        "Choir Seal Technique — Field Rewrite",
         "Raphael: Ophanim Throne Judgment Dominion Grid",
-        "Divine Ascension \u2014 Seraphic Choir Unbound"
+        "Divine Ascension — Seraphic Choir Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Raphael Compass Seraph Bell-Edict Blade",
@@ -2146,10 +2138,10 @@
         "Jophiel Ophanim Many-Eye Choir Core"
       ],
       "abilities": [
-        "Jophiel \u2014 Seraph Edict Lash Rend",
-        "Choir Seal Technique \u2014 Rupture",
+        "Jophiel — Seraph Edict Lash Rend",
+        "Choir Seal Technique — Rupture",
         "Jophiel: Ophanim Throne Judgment Sundering Trial",
-        "Divine Ascension \u2014 Seraphic Choir Unbound"
+        "Divine Ascension — Seraphic Choir Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Jophiel Sunderer Seraph Bell-Edict Blade",
@@ -2188,10 +2180,10 @@
         "Elyndra Ophanim Many-Eye Choir Core"
       ],
       "abilities": [
-        "Elyndra \u2014 Seraph Edict Lash Sever",
-        "Choir Seal Technique \u2014 Interdiction",
+        "Elyndra — Seraph Edict Lash Sever",
+        "Choir Seal Technique — Interdiction",
         "Elyndra: Ophanim Throne Judgment Null Mandate",
-        "Divine Ascension \u2014 Seraphic Choir Unbound"
+        "Divine Ascension — Seraphic Choir Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Elyndra Interdictor Seraph Bell-Edict Blade",
@@ -2230,10 +2222,10 @@
         "Orison Ophanim Many-Eye Choir Core"
       ],
       "abilities": [
-        "Orison \u2014 Seraph Edict Lash Restore",
-        "Choir Seal Technique \u2014 Covenant",
+        "Orison — Seraph Edict Lash Restore",
+        "Choir Seal Technique — Covenant",
         "Orison: Ophanim Throne Judgment Renewal Rite",
-        "Divine Ascension \u2014 Seraphic Choir Unbound"
+        "Divine Ascension — Seraphic Choir Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Orison Restorer Seraph Bell-Edict Blade",
@@ -2272,10 +2264,10 @@
         "Vespera Ophanim Many-Eye Choir Core"
       ],
       "abilities": [
-        "Vespera \u2014 Seraph Edict Lash Longshot",
-        "Choir Seal Technique \u2014 Horizon Lock",
+        "Vespera — Seraph Edict Lash Longshot",
+        "Choir Seal Technique — Horizon Lock",
         "Vespera: Ophanim Throne Judgment Cataclysm Line",
-        "Divine Ascension \u2014 Seraphic Choir Unbound"
+        "Divine Ascension — Seraphic Choir Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Vespera Far-Sight Seraph Bell-Edict Blade",
@@ -2314,10 +2306,10 @@
         "Axiom Ophanim Many-Eye Choir Core"
       ],
       "abilities": [
-        "Axiom \u2014 Seraph Edict Lash Intercept",
-        "Choir Seal Technique \u2014 Punishing Guard",
+        "Axiom — Seraph Edict Lash Intercept",
+        "Choir Seal Technique — Punishing Guard",
         "Axiom: Ophanim Throne Judgment Oath of Intercept",
-        "Divine Ascension \u2014 Seraphic Choir Unbound"
+        "Divine Ascension — Seraphic Choir Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Axiom Sentinel Seraph Bell-Edict Blade",
@@ -2356,10 +2348,10 @@
         "Theon Ophanim Many-Eye Choir Core"
       ],
       "abilities": [
-        "Theon \u2014 Seraph Edict Lash Execution",
-        "Choir Seal Technique \u2014 Shadow Pursuit",
+        "Theon — Seraph Edict Lash Execution",
+        "Choir Seal Technique — Shadow Pursuit",
         "Theon: Ophanim Throne Judgment Final Name Cut",
-        "Divine Ascension \u2014 Seraphic Choir Unbound"
+        "Divine Ascension — Seraphic Choir Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Theon Name-Knife Seraph Bell-Edict Blade",
@@ -2398,10 +2390,10 @@
         "Lucifer Blood-Wax Infernal Ledger Core"
       ],
       "abilities": [
-        "Lucifer \u2014 Black-Iron Clause Cut Anchor",
-        "Blood-Wax Contract Technique \u2014 Bastion",
+        "Lucifer — Black-Iron Clause Cut Anchor",
+        "Blood-Wax Contract Technique — Bastion",
         "Lucifer: Infernal Debt Verdict Holdfast",
-        "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
+        "Divine Ascension — Hell-Crown Dominion Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Lucifer Bulwark Goetic Chain-Crown Blade",
@@ -2440,10 +2432,10 @@
         "Asmodeus Blood-Wax Infernal Ledger Core"
       ],
       "abilities": [
-        "Asmodeus \u2014 Black-Iron Clause Cut Kindle",
-        "Blood-Wax Contract Technique \u2014 Reservoir",
+        "Asmodeus — Black-Iron Clause Cut Kindle",
+        "Blood-Wax Contract Technique — Reservoir",
         "Asmodeus: Infernal Debt Verdict Overchannel",
-        "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
+        "Divine Ascension — Hell-Crown Dominion Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Asmodeus Generator Goetic Chain-Crown Blade",
@@ -2482,10 +2474,10 @@
         "Lilith Blood-Wax Infernal Ledger Core"
       ],
       "abilities": [
-        "Lilith \u2014 Black-Iron Clause Cut Vector",
-        "Blood-Wax Contract Technique \u2014 Field Rewrite",
+        "Lilith — Black-Iron Clause Cut Vector",
+        "Blood-Wax Contract Technique — Field Rewrite",
         "Lilith: Infernal Debt Verdict Dominion Grid",
-        "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
+        "Divine Ascension — Hell-Crown Dominion Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Lilith Compass Goetic Chain-Crown Blade",
@@ -2524,10 +2516,10 @@
         "Naamah Blood-Wax Infernal Ledger Core"
       ],
       "abilities": [
-        "Naamah \u2014 Black-Iron Clause Cut Rend",
-        "Blood-Wax Contract Technique \u2014 Rupture",
+        "Naamah — Black-Iron Clause Cut Rend",
+        "Blood-Wax Contract Technique — Rupture",
         "Naamah: Infernal Debt Verdict Sundering Trial",
-        "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
+        "Divine Ascension — Hell-Crown Dominion Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Naamah Sunderer Goetic Chain-Crown Blade",
@@ -2566,10 +2558,10 @@
         "Orryx Blood-Wax Infernal Ledger Core"
       ],
       "abilities": [
-        "Orryx \u2014 Black-Iron Clause Cut Sever",
-        "Blood-Wax Contract Technique \u2014 Interdiction",
+        "Orryx — Black-Iron Clause Cut Sever",
+        "Blood-Wax Contract Technique — Interdiction",
         "Orryx: Infernal Debt Verdict Null Mandate",
-        "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
+        "Divine Ascension — Hell-Crown Dominion Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Orryx Interdictor Goetic Chain-Crown Blade",
@@ -2608,10 +2600,10 @@
         "Malvera Blood-Wax Infernal Ledger Core"
       ],
       "abilities": [
-        "Malvera \u2014 Black-Iron Clause Cut Restore",
-        "Blood-Wax Contract Technique \u2014 Covenant",
+        "Malvera — Black-Iron Clause Cut Restore",
+        "Blood-Wax Contract Technique — Covenant",
         "Malvera: Infernal Debt Verdict Renewal Rite",
-        "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
+        "Divine Ascension — Hell-Crown Dominion Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Malvera Restorer Goetic Chain-Crown Blade",
@@ -2650,10 +2642,10 @@
         "Kharon Blood-Wax Infernal Ledger Core"
       ],
       "abilities": [
-        "Kharon \u2014 Black-Iron Clause Cut Longshot",
-        "Blood-Wax Contract Technique \u2014 Horizon Lock",
+        "Kharon — Black-Iron Clause Cut Longshot",
+        "Blood-Wax Contract Technique — Horizon Lock",
         "Kharon: Infernal Debt Verdict Cataclysm Line",
-        "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
+        "Divine Ascension — Hell-Crown Dominion Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Kharon Far-Sight Goetic Chain-Crown Blade",
@@ -2692,10 +2684,10 @@
         "Sablex Blood-Wax Infernal Ledger Core"
       ],
       "abilities": [
-        "Sablex \u2014 Black-Iron Clause Cut Intercept",
-        "Blood-Wax Contract Technique \u2014 Punishing Guard",
+        "Sablex — Black-Iron Clause Cut Intercept",
+        "Blood-Wax Contract Technique — Punishing Guard",
         "Sablex: Infernal Debt Verdict Oath of Intercept",
-        "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
+        "Divine Ascension — Hell-Crown Dominion Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Sablex Sentinel Goetic Chain-Crown Blade",
@@ -2734,10 +2726,10 @@
         "Zerath Blood-Wax Infernal Ledger Core"
       ],
       "abilities": [
-        "Zerath \u2014 Black-Iron Clause Cut Execution",
-        "Blood-Wax Contract Technique \u2014 Shadow Pursuit",
+        "Zerath — Black-Iron Clause Cut Execution",
+        "Blood-Wax Contract Technique — Shadow Pursuit",
         "Zerath: Infernal Debt Verdict Final Name Cut",
-        "Divine Ascension \u2014 Hell-Crown Dominion Unbound"
+        "Divine Ascension — Hell-Crown Dominion Unbound"
       ],
       "sourceCultureGearCanon": {
         "weapon": "Zerath Name-Knife Goetic Chain-Crown Blade",
@@ -3183,5 +3175,30 @@
         "xpValue": 350
       }
     }
-  ]
+  ],
+  "progressionScaling": {
+    "formula": "Stat(L) = Base * (1 + Rate * (L - 1))",
+    "maxLevel": 60,
+    "rates": {
+      "hp": "12% per level (8.08x at L60)",
+      "attack": "10% per level (6.90x at L60)",
+      "defense": "8% per level (5.72x at L60)",
+      "speed": "3% per level (2.77x at L60)",
+      "dodge": "6% per level (4.54x at L60)",
+      "parry": "6% per level (4.54x at L60)",
+      "accuracy": "6% per level (4.54x at L60)"
+    },
+    "enemyScaling": {
+      "enemyHP": "12% per level (matches deity HP)",
+      "enemyATK": "10% per level (matches deity ATK)",
+      "enemyAcc": "6% per level (matches deity Dodge/Parry)",
+      "enemyPower": "6% per level (matches deity Dodge/Parry)"
+    },
+    "balanceResult": "Dodge%, Parry%, and TTK stay CONSTANT across all levels because deity defensive stats and enemy offensive stats scale at identical rates."
+  },
+  "dodgeParryCaps": {
+    "maxDodgePercent": 0.75,
+    "maxParryPercent": 0.75,
+    "reason": "Prevents unkillable builds while allowing strong defensive playstyles"
+  }
 }

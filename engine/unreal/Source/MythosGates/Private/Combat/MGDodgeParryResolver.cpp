@@ -16,7 +16,9 @@ float UMGDodgeParryResolver::ResolveAttack(float AttackerAccuracy, float Attacke
 bool UMGDodgeParryResolver::RollDodge(float DefenderDodge, float AttackerAccuracy)
 {
 	// Dodge chance = DefenderDodge / (DefenderDodge + AttackerAccuracy)
-	float DodgeChance = DefenderDodge / (DefenderDodge + AttackerAccuracy + 1.0f);
+	// No +1 bias — both stats scale at the same rate so % stays constant across levels
+	float DodgeChance = DefenderDodge / (DefenderDodge + AttackerAccuracy);
+	DodgeChance = FMath::Clamp(DodgeChance, 0.0f, 0.75f); // Cap at 75% to prevent unkillable builds
 	float Roll = FMath::FRand();
 	return Roll < DodgeChance;
 }
@@ -24,7 +26,9 @@ bool UMGDodgeParryResolver::RollDodge(float DefenderDodge, float AttackerAccurac
 bool UMGDodgeParryResolver::RollParry(float DefenderParry, float AttackerPower)
 {
 	// Parry chance = DefenderParry / (DefenderParry + AttackerPower)
-	float ParryChance = DefenderParry / (DefenderParry + AttackerPower + 1.0f);
+	// No +1 bias — both stats scale at the same rate so % stays constant across levels
+	float ParryChance = DefenderParry / (DefenderParry + AttackerPower);
+	ParryChance = FMath::Clamp(ParryChance, 0.0f, 0.75f); // Cap at 75% to prevent unkillable builds
 	float Roll = FMath::FRand();
 	return Roll < ParryChance;
 }

@@ -23,7 +23,9 @@ void AMGAvatarCharacter::BeginPlay()
 
 	if (DeityData)
 	{
-		MaxHP = DeityData->Stats.HP * 10.0f; // Scale base stats
+		// Use progression-scaled stats based on deity level
+		int32 Level = DeityData->Stats.Level > 0 ? DeityData->Stats.Level : 1;
+		MaxHP = DeityData->Stats.GetScaledHP() * 10.0f; // Scale for game feel
 		CurrentHP = MaxHP;
 		MaxDivineEnergy = 100.0f;
 		CurrentDivineEnergy = 50.0f; // Start with half energy
@@ -70,18 +72,18 @@ float AMGAvatarCharacter::TakeDamageWithResolution(float BaseDamage, float Attac
 	if (IsDead() || !DeityData)
 		return 0.0f;
 
-	// Auto-resolve dodge/parry
+	// Auto-resolve dodge/parry (uses progression-scaled stats)
 	float DamageMultiplier = UMGDodgeParryResolver::ResolveAttack(
 		AttackerAccuracy,
 		AttackerPower,
-		DeityData->Stats.Dodge,
-		DeityData->Stats.Parry
+		DeityData->Stats.GetScaledDodge(),
+		DeityData->Stats.GetScaledParry()
 	);
 
 	float FinalDamage = BaseDamage * DamageMultiplier;
 
-	// Apply armor reduction
-	float ArmorReduction = DeityData->Stats.Armor / (DeityData->Stats.Armor + 100.0f);
+	// Apply armor reduction (uses progression-scaled defense)
+	float ArmorReduction = DeityData->Stats.GetArmorReduction();
 	FinalDamage *= (1.0f - ArmorReduction);
 
 	CurrentHP -= FinalDamage;
@@ -109,7 +111,7 @@ EMGCombatRole AMGAvatarCharacter::GetCombatRole() const
 float AMGAvatarCharacter::GetWeaponRange() const
 {
 	if (DeityData)
-		return DeityData->Stats.Range * 100.0f; // Scale to UE5 units
+		return DeityData->Stats.GetScaledSpeed() * 100.0f; // Scale to UE5 units
 	return 200.0f;
 }
 
