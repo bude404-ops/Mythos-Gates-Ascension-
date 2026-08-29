@@ -12,12 +12,17 @@ public class MythosGates : ModuleRules
 			"Engine",
 			"InputCore",
 			"Paper2D",
-			"Niagara"
+			"Niagara",
+			"NavigationSystem",
+			"AIModule",
+			"GameplayTasks"
 		});
 		
 		PrivateDependencyModuleNames.AddRange(new string[] {
 			"Slate",
-			"SlateCore"
+			"SlateCore",
+			"BehaviorTree",
+			"Blackboard"
 		});
 	}
 }

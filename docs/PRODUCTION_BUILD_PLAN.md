@@ -33,14 +33,14 @@
 - [x] Set up DataTables for stats, abilities, weapons (data assets defined)
 
 ### Phase 2: Core Combat (Week 3-6)
-- [ ] 2.5D combat plane implementation
-- [ ] Tap-to-move player controller
-- [ ] Auto-attack system (weapon range-based)
-- [ ] Stat-driven auto-parry/dodge
-- [ ] Ability system (1 passive + 3 active + 1 ultimate)
-- [ ] Belief charging for ultimate
-- [ ] Enemy AI (5 archetypes, terrain-aware)
-- [ ] Victory/defeat resolution
+- [x] 2.5D combat plane implementation
+- [x] Tap-to-move player controller
+- [x] Auto-attack system (weapon range-based)
+- [x] Stat-driven auto-parry/dodge
+- [x] Ability system (1 passive + 3 active + 1 ultimate)
+- [x] Belief charging for ultimate
+- [x] Enemy AI (10 archetypes, terrain-aware)
+- [x] Victory/defeat resolution
 
 ### Phase 3: Content Pipeline (Week 5-8)
 - [ ] 2D → 3D model conversion (TRELLIS.2 or custom)
