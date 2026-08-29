@@ -1,20 +1,20 @@
 {
-  "generated": "2026-08-17",
+  "generated": "2026-08-29",
   "counts": {
     "project": 1,
     "factions": 7,
     "hollowThreatFaction": 1,
-    "deities": 28,
+    "deitys": 1,
     "characters": 8,
     "units": 0,
-    "artPrompts": 96,
+    "artPrompts": 97,
     "artworks": 0,
     "artImportPipeline": 1,
     "artApprovalManifest": 1,
     "developmentTasks": 49,
     "loreEntries": 36,
     "npcs": 8,
-    "creatures": 39,
+    "creatures": 41,
     "hollowEncounterSystem": 1,
     "characterBackstories": 75,
     "maps": 12,
@@ -90,12 +90,12 @@
     "assetRegistry": 1,
     "githubAssetRepository": 1,
     "blueprint3dSystem": 1,
-    "blueprint3dProductionQueue": 136,
+    "blueprint3dProductionQueue": 97,
     "mythosGatesDungeonRoutes": 7,
     "hollowCreatures": 16,
     "artMapPrompts": 12,
     "artCampaignPrompts": 7,
-    "blueprint3dAssets": 136,
+    "blueprint3dAssets": 97,
     "blueprint3dDeities": 28,
     "blueprint3dBattlefields": 12,
     "blueprint3dGates": 7,
@@ -115,7 +115,7 @@
     "project.json": "data/project.json",
     "factions.json": "data/factions.json",
     "hollow-faction.json": "data/hollow-faction.json",
-    "deitys.json": "data/deitys.json",
+    "deities.json": "data/deities.json",
     "characters.json": "data/characters.json",
     "units.json": "data/units.json",
     "art-prompts.json": "data/art-prompts.json",
@@ -207,28 +207,28 @@
   "sourceFileFingerprints": {
     "project.json": {
       "path": "data/project.json",
-      "bytes": 4143,
-      "sha256": "fe8a4e42ea8e730fe43b7e33afb3d4d068b89a71fcf3b332264d31608bf9b4a0"
+      "bytes": 4144,
+      "sha256": "c4956af1f782fda170c1268be0b35eb66b2ddbe82dc083403e198c7003a0dae2"
     },
     "factions.json": {
       "path": "data/factions.json",
-      "bytes": 44526,
-      "sha256": "7de46d6d4a60e92b4b8757fbbc7a156d59151a1f1f89a6adc043196029a9d221"
+      "bytes": 67915,
+      "sha256": "e70afeb3a6e689bd0038004a8e036380f0a854f24eab7719407b70839e6c9a19"
     },
     "hollow-faction.json": {
       "path": "data/hollow-faction.json",
-      "bytes": 4874,
-      "sha256": "6ca3fc6bcb660b8e4a0f01b5507b97c77374ef6d58eb93122ae19cfbcb04ead0"
+      "bytes": 4876,
+      "sha256": "14bb007b9b885b98250f0652f3043fec75725923d8713e4193f48f33270f79ca"
     },
-    "deitys.json": {
-      "path": "data/deitys.json",
-      "bytes": 405924,
-      "sha256": "55314083fcc7d9198a80a11ae16d599e51744f6a57f8eecacee031a76b547508"
+    "deities.json": {
+      "path": "data/deities.json",
+      "bytes": 360124,
+      "sha256": "949a6d80c8b25f945ae6d505407b9380e9a64050ed4e6ace1cac406aacd29c5a"
     },
     "characters.json": {
       "path": "data/characters.json",
-      "bytes": 18726,
-      "sha256": "3a4e9b10389e5b2812528660e02038846988812e4b697dfecd61d69697df4519"
+      "bytes": 18725,
+      "sha256": "c32a37f676473dfe4b65994dc000c2f9eb2b6520f52bb5fe99a236898ebd5e6c"
     },
     "units.json": {
       "path": "data/units.json",
@@ -237,343 +237,343 @@
     },
     "art-prompts.json": {
       "path": "data/art-prompts.json",
-      "bytes": 328565,
-      "sha256": "2e9260734db71bb5db0dcb28d945febdc3509c8803e251c9ab612ceb8db2e91a"
+      "bytes": 473163,
+      "sha256": "fb20e28faf37ce86105cfab71aad5769274fffc4e499f8f94ecc20d5e8aba07e"
     },
     "artworks.json": {
       "path": "data/artworks.json",
-      "bytes": 2,
-      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
     },
     "art-import-pipeline.json": {
       "path": "data/art-import-pipeline.json",
-      "bytes": 1294,
-      "sha256": "e352592b567703a10ffcfa31e401f98710c3b74de9ca64344f4363d0f042ba98"
+      "bytes": 1357,
+      "sha256": "5d3a5edb19f0dcee39e262eb606b448caed91298333764466e7ee3c4ead867b3"
     },
     "art-approval-manifest.json": {
       "path": "data/art-approval-manifest.json",
-      "bytes": 4264,
-      "sha256": "c70c266bd3f3f17affd29225608e9c43b329a8f1b06331a008470529b8a6a653"
+      "bytes": 4265,
+      "sha256": "347c976aaaa4dc8de0d1fd96af72ed8458beb16059d821d13626e7f91ceac603"
     },
     "development-tasks.json": {
       "path": "data/development-tasks.json",
-      "bytes": 33031,
-      "sha256": "46c393c2fdba1b2dbd80adcfdf654760ee18095f60b3df5ae0c2b0c0b74168bb"
+      "bytes": 33037,
+      "sha256": "7be1c22bee7d83fce14f15c43ab6cf28e54edd22b54919409ac727cd5b4c072a"
     },
     "lore-index.json": {
       "path": "data/lore-index.json",
-      "bytes": 12616,
-      "sha256": "f84d1f72bbe99d4b1aa77ddea5b22ad531e143581fbede1e9a7b1cbae2caec9d"
+      "bytes": 12624,
+      "sha256": "d5fb46fa46e7fc23d7d5638c42e4f9ba2148c93dd979b85a0ca3300907e1cc88"
     },
     "npcs.json": {
       "path": "data/npcs.json",
-      "bytes": 15909,
-      "sha256": "5ee8f787a91377b2a348d51b38bbc87cdd183f0f724d63e2bdcc508d6be755ad"
+      "bytes": 15908,
+      "sha256": "299c3db031f0546e96f7a4569ba142c0bd983e8e9bc2b07a5342a16953c23556"
     },
     "creatures.json": {
       "path": "data/creatures.json",
-      "bytes": 103583,
-      "sha256": "479ad35e948603a70bab712b48c6833a725ddca6a15962d110713d09833664fb"
+      "bytes": 110958,
+      "sha256": "69119e91a42ae79b40157dd969bc77676c990c83fc394c1461f5a3f40b2c054c"
     },
     "hollow-encounter-system.json": {
       "path": "data/hollow-encounter-system.json",
       "bytes": 2620,
-      "sha256": "900bf3fc58f5d97dbef98f9ddd2a30f39857c3b8c5c6281701de78cc0e605990"
+      "sha256": "1c388ee2b6369d3ae54d0b53263b2f4ce47355a909238dde1850abf8e1d92f35"
     },
     "character-backstories.json": {
       "path": "data/character-backstories.json",
-      "bytes": 276160,
-      "sha256": "866e840f878344f32acd578c62f8c708b0a89e8ba5f6377fe288c86e50b9e73d"
+      "bytes": 277026,
+      "sha256": "f1009690ae6a102dea5823776b5b3b9ea78730669e9cbcf62dfffd2e5bd906a0"
     },
     "maps.json": {
       "path": "data/maps.json",
-      "bytes": 10374,
-      "sha256": "cedc2cfbc1bbfe36b62d129785b5d559383cc1e5b4aee6e702fe83c937f33fce"
+      "bytes": 21774,
+      "sha256": "d1fdd3886c204f820fe7033c3081d6950771b3ff1ce7f94e85a97d446b356a7b"
     },
     "campaigns.json": {
       "path": "data/campaigns.json",
-      "bytes": 81700,
-      "sha256": "8777be02947ecb938213c92cac7d6b7af7377a8e36fdfb2ebfa83e767d75d1fa"
+      "bytes": 84082,
+      "sha256": "1986a161a671acb657d4fc5d42a029bdce9bf0b2e81018eecd6d5cba37afec3a"
     },
     "chapters.json": {
       "path": "data/chapters.json",
-      "bytes": 10714,
-      "sha256": "73a20c28f227f532690fd8328a462b5ff30438002b54350eeaf646ac3f7344ec"
+      "bytes": 15143,
+      "sha256": "36e68e998a9b35d9fca6703938979f8c7aae79a23c7c15fa3ba954b3249e34b8"
     },
     "dialogue-scripts.json": {
       "path": "data/dialogue-scripts.json",
-      "bytes": 28516,
-      "sha256": "83211d4f4f2729863d370393ffb109aea8db0d46dc81d9701e720e3302b62cd5"
+      "bytes": 28525,
+      "sha256": "83d5a89cd69159229dedb35d02100c0d4d37fe3fce09a24c62475e473d1c5f3f"
     },
     "visual-screens.json": {
       "path": "data/visual-screens.json",
-      "bytes": 9215,
-      "sha256": "56ca2786ab6683b1f7538466bfb2ecc68f3fdde18575fb10a348d7612fb369c8"
+      "bytes": 9216,
+      "sha256": "5cd77e7709bc8ff5261972b20fad00b3a7d08db816dc6956c545133f5910d22a"
     },
     "visual-change-rules.json": {
       "path": "data/visual-change-rules.json",
       "bytes": 3690,
-      "sha256": "b2f9af2d3c613669b73ce63cb37dbf008c64b362f0e9de9c75ba14d514c5d0ec"
+      "sha256": "ca96d2e2620372ae68d89204bbed0a223e4181799a8be20885c690ed1ab1a894"
     },
     "visual-baselines.json": {
       "path": "data/visual-baselines.json",
       "bytes": 7351,
-      "sha256": "4ec9cff9d170e0cad01b3c2dc86d090e659d8f2a056c6cf300dd3fb875c347be"
+      "sha256": "9c3ccb7924c9e6621d5812e38633c04e741bcecc9bd2922ed45af1890554d4a3"
     },
     "realm-codex.json": {
       "path": "data/realm-codex.json",
-      "bytes": 106600,
-      "sha256": "6adf2b3f0c95278f874e2f3c9b37f7089d6c19f6de153aff2050968b4fad8796"
+      "bytes": 111175,
+      "sha256": "d0b32a34bf783e7b8e5dc0d2e3fc4c90d09da71c29d77bb2ae16e74a9d6a6573"
     },
     "faction-visual-bible.json": {
       "path": "data/faction-visual-bible.json",
-      "bytes": 51791,
-      "sha256": "aead1baac735a93885cc27b63ec34c857f3c357a62d04bd05a07c4cbcb9ded71"
+      "bytes": 91641,
+      "sha256": "8e7a8da3516695109d93a10a1f12b981f98568bd075fb93cec6e1db0680ce597"
     },
     "hybrid-visual-architecture.json": {
       "path": "data/hybrid-visual-architecture.json",
-      "bytes": 7657,
-      "sha256": "3e53676f8a6211380bdab02da267ce7e747e9c2cfb8cb39ff07fed881cc0ba24"
+      "bytes": 7720,
+      "sha256": "7445c09bc7d28f42bc1c0b484719ad7cb644825a2992c7295d3c3c2eeace0404"
     },
     "asset-pipeline.json": {
       "path": "data/asset-pipeline.json",
-      "bytes": 3002,
-      "sha256": "1ed6e61f4cdd87f520e01f81b51e31e98b86870609c3b32fba491c32696fa8ff"
+      "bytes": 3003,
+      "sha256": "b1b4d4fe3c517c0a229c45ddb6196135249fd12811690132e7659b035bd64236"
     },
     "github-sync-policy.json": {
       "path": "data/github-sync-policy.json",
       "bytes": 2228,
-      "sha256": "b5f615b5041e19f37fc3f10eb0ce3d1d59243b7473041da75aad44e077b62488"
+      "sha256": "57783b75d81118948bdb81ed51308ff53ce049896a5f30fbde23e19dd68ad53e"
     },
     "github-sync-status.json": {
       "path": "data/github-sync-status.json",
       "bytes": 2115,
-      "sha256": "730c7a9ff2cd902ff04300ae2f6dbffe6fa77150a608832942c3ce91ab671329"
+      "sha256": "e402a0581fab987a04a998af6106eef377a56ac69b351b4078807802b0c009cb"
     },
     "change-history.json": {
       "path": "data/change-history.json",
-      "bytes": 23235,
-      "sha256": "0535ef8019202181f762a501bfd76890df622a7c7d6582fa21eaac283137cdc9"
+      "bytes": 23237,
+      "sha256": "731d87bde26b4df37275e97d647612b063fd6807c127f02c7f64aacf3974c09e"
     },
     "campaign-architecture.json": {
       "path": "data/campaign-architecture.json",
-      "bytes": 2471,
-      "sha256": "aadd7cf4e4b1d48de21b3fb8d29025d1698af3e4167d8eb9f7a77e4aceb06004"
+      "bytes": 2778,
+      "sha256": "4a7082058f1288a2529b08ca3ebb3aa2c2a07ef683f9dfa72217bcd2dc2471af"
     },
     "campaign-chapter-registry.json": {
       "path": "data/campaign-chapter-registry.json",
-      "bytes": 52211,
-      "sha256": "8c44d902ba145b47838be7bf433fba34a5d65faa6a5b32717348ffae79eb42b5"
+      "bytes": 52207,
+      "sha256": "501669b4572d9dd8ef7bbecfb249c2a18608c97b065bb1cd7ff60d0c3d8b723e"
     },
     "mission-registry.json": {
       "path": "data/mission-registry.json",
-      "bytes": 3335679,
-      "sha256": "a8ab93da9c38e8ca842ab3462fc39d6bf4a6a66f360ef99254f8895c2fe14ba6"
+      "bytes": 3432506,
+      "sha256": "0aa73c2a6c4eb0404fc7ab13fb4e65a466c36662908252d5a4ff8b545cdff51d"
     },
     "mission-dialogue.json": {
       "path": "data/mission-dialogue.json",
-      "bytes": 916489,
-      "sha256": "5a2ce6dcc33060047ca5a3f8893f5c709c270b45ebadfd209d5d535440a535cb"
+      "bytes": 874786,
+      "sha256": "7cbfa321ffecbf93c618cc1f62345dc4a1e9abefa3cfdf1cd06626a9fe5fbd5e"
     },
     "mission-art-packages.json": {
       "path": "data/mission-art-packages.json",
-      "bytes": 1441757,
-      "sha256": "0d875094995e8922cfc8c31d2df8818d6c71ed835bd52a629688d8ba5c06b423"
+      "bytes": 1444618,
+      "sha256": "8499b96f5a1d74723a69122af8d9b003283ee0fc768fcdc655bc1b815e7baea7"
     },
     "objective-system.json": {
       "path": "data/objective-system.json",
       "bytes": 717,
-      "sha256": "414b95d6870bb1146af711fa937be0d3a3cfe19a08c36c01f55cb3c709728cc0"
+      "sha256": "e5f46d6fd87ba1b66fa7a55caa6e812d8186287df9b3025930f40646fd2ef54b"
     },
     "reward-system.json": {
       "path": "data/reward-system.json",
       "bytes": 1394,
-      "sha256": "4e9750688f5279934c87fdf9e5050e3a9f74f205fa9ed38bb51bfb0192a6e40a"
+      "sha256": "14123b4fd091d579bf8a80e25873729562e25542157be5643e5194f9833660ce"
     },
     "campaign-audit.json": {
       "path": "data/campaign-audit.json",
       "bytes": 1123,
-      "sha256": "56b17d7e1f5cadc1ab433985b5aae494edfdfbce63e49a7311d8722e95f0b0b4"
+      "sha256": "fc4567ec34561b607008b12afd247392858f6fa29454b2462334ca8726ee4f08"
     },
     "storyline-arc-registry.json": {
       "path": "data/storyline-arc-registry.json",
-      "bytes": 12696,
-      "sha256": "75d160dea134652f3d2a400941d2d712c114679b2ff792f107138d09bb5a70de"
+      "bytes": 12700,
+      "sha256": "157da9e7cb76c3e8cf9120162ad3677f701d446cac68bbb38f655bae40ee19fd"
     },
     "campaign-consequence-registry.json": {
       "path": "data/campaign-consequence-registry.json",
       "bytes": 9126,
-      "sha256": "142724962fa88eb42bb8d6d222668d55533a588df1cbd05cda94a31ee8e0feaa"
+      "sha256": "112c0b3a50e0977b277e3045d32e583f7ebea30ace91e17c2207d6273618ea16"
     },
     "endgame-architecture.json": {
       "path": "data/endgame-architecture.json",
-      "bytes": 2342,
-      "sha256": "03cf08cc465f4230e6919591b164bab462c76b1007b75b69021a4f375ab39444"
+      "bytes": 2346,
+      "sha256": "a73743254d3efb758fed67f67ab51697ef0764678bb8b928a3b039aa4e064e36"
     },
     "progression-system.json": {
       "path": "data/progression-system.json",
-      "bytes": 5242,
-      "sha256": "ef53aa8829b716609f74db5ff31419c374373d4b09f90baa1d8d1b1baf96e16a"
+      "bytes": 5243,
+      "sha256": "08beab7c3cf28f8f8c94dd8be655207c6ae979c62a1d8d004fefb44009ad9c1d"
     },
     "ascension-system.json": {
       "path": "data/ascension-system.json",
-      "bytes": 6639,
-      "sha256": "f739ddecd93a9862e789de23a69e834aa32d030e6009f19300ca46dc88241c35"
+      "bytes": 12871,
+      "sha256": "99686358c2a98e73e706e8b04c16e67f0293bfd691af4835830f0aebe433e7cf"
     },
     "async-arena-system.json": {
       "path": "data/async-arena-system.json",
-      "bytes": 13580,
-      "sha256": "db9f7bfdf9a353fd69b262a68749ba3853d361bee869a149d6dcce3cf1f110b4"
+      "bytes": 13557,
+      "sha256": "875c5c5ffa891a3b2d292adb7790d3070298dc6f3c2a9d54f02422691375e478"
     },
     "weekly-trials.json": {
       "path": "data/weekly-trials.json",
-      "bytes": 1156,
-      "sha256": "2e1cd7756837b7d5470a66466426ea59b0cee3a47d6e83841e807f596e112ff8"
+      "bytes": 1158,
+      "sha256": "7caedd6696b167a410ed351432637d9ae2aeacfd3dee65b26532ed9d65e0af2d"
     },
     "raid-system.json": {
       "path": "data/raid-system.json",
-      "bytes": 11323,
-      "sha256": "e71acdfc275d6ea346360c512de870ce6c1cf94014d92f723c1a8fc2661de50a"
+      "bytes": 11320,
+      "sha256": "cd603e7c1ddc91729de35e8324ab30aabfc9bb1825cea68774a148be9f982df3"
     },
     "deity-trial-system.json": {
       "path": "data/deity-trial-system.json",
-      "bytes": 4005,
-      "sha256": "9b13b962bc19a1df0326f16b76cf4ef9e278679a3aed329e03f7fc784fc68350"
+      "bytes": 4006,
+      "sha256": "9465b2f7ee62799339c4ab7f4727216fe70a52b0ecdd86113d49002c97ce88e1"
     },
     "faction-mastery.json": {
       "path": "data/faction-mastery.json",
-      "bytes": 3863,
-      "sha256": "bba40ab81f4c4ea2c0317028f2a09345a8738529c04d3f692067ae40379ea997"
+      "bytes": 3877,
+      "sha256": "b7f161fc632956f0953ed8c3101d7f406402e2e5b9c3a110577e42e5ca36f578"
     },
     "season-system.json": {
       "path": "data/season-system.json",
       "bytes": 1685,
-      "sha256": "a282fbbad314bb1ed097b47d0c30e5d861be841904b00810c74ea3be0e1bcea7"
+      "sha256": "75fc67aaf0f582cc8e6a32cb1d6b2f5c13ac853913aafe64357e2ec80f1b43fa"
     },
     "achievement-system.json": {
       "path": "data/achievement-system.json",
-      "bytes": 1174,
-      "sha256": "ac5391f4d4be8830a9acf8534ff726b5541a42c5ed3a57b27178ebd5fc7d302d"
+      "bytes": 1175,
+      "sha256": "2d061d12972ff243cfe8c9fb30101ac618c89b45963e43d7c5eb46f506c29f8e"
     },
     "balance-analytics.json": {
       "path": "data/balance-analytics.json",
-      "bytes": 1924,
-      "sha256": "0d37e1e4d4c2a530de70841cd5675446f66ebde479203e2bb2180d449667e101"
+      "bytes": 1927,
+      "sha256": "ee207f29c59ef65904996b69e17a27b8920f70bdd05afdc3d6809f9b8d16db40"
     },
     "continuity-balance-audit.json": {
       "path": "data/continuity-balance-audit.json",
-      "bytes": 2907,
-      "sha256": "3cb3f42716a24fdfc77aa3c7bfd11bd093473f00e9d05769f2e6cdf8a0e6b733"
+      "bytes": 2620,
+      "sha256": "08ef01cbb46b8fbf99311ba7e017f57b98d2a0272cf9e4ca8c82b78605461384"
     },
     "endgame-dashboard.json": {
       "path": "data/endgame-dashboard.json",
       "bytes": 786,
-      "sha256": "36f3b20040661c5233eeb1c9452594019cabf5fbc97fbb959dae4a9dc8bee9eb"
+      "sha256": "296d30ea6ba7fd4c4f6a7128cb05c1044005246fc73b0647cbe479d151337f10"
     },
     "monetization-policy.json": {
       "path": "data/monetization-policy.json",
-      "bytes": 1933,
-      "sha256": "c4e51b88dd03cb69c08ee7dddbbf255a650f5003f51402cb79aaa4cbca3a4058"
+      "bytes": 1935,
+      "sha256": "99bfc7a319d20c37b2b395120f6c6fff2a850c8cd3b2f1e0d044f23f2df7d30d"
     },
     "solo-deity-migration-report.json": {
       "path": "data/solo-deity-migration-report.json",
-      "bytes": 7716,
-      "sha256": "0f5afbf012a993506bba11ab506dc48416827535868ab3c19014f0e79703260f"
+      "bytes": 7718,
+      "sha256": "41faa71431165547e05bebda81ce56950cd9583ce3d814311fdc4abd0211efc2"
     },
     "solo-combat-design-document.json": {
       "path": "data/solo-combat-design-document.json",
-      "bytes": 12316,
-      "sha256": "a7ebabd68f17f2819834856d4dd42a2805ed0dc5896cecb6d95d3cf0d1c21480"
+      "bytes": 12309,
+      "sha256": "b6a8bbb27202563f2e4035e8c2d154b69995c6e24475f22159841ad2e61daf9f"
     },
     "solo-deity-roster-redesign.json": {
       "path": "data/solo-deity-roster-redesign.json",
-      "bytes": 257371,
-      "sha256": "9f7b969cb41613b7a3d39f7ece9b35df9d34b30777cf7e249736723f210e7738"
+      "bytes": 258081,
+      "sha256": "f1184d811f753958316fe5d24fc2bf9c87be8865aafebce530ead4f10acb4920"
     },
     "enemy-scaling-design-document.json": {
       "path": "data/enemy-scaling-design-document.json",
       "bytes": 9507,
-      "sha256": "03d0ab5819ce5c13ad771bc1b972e2ec9d82534ecf8e132f4dca9253228e416c"
+      "sha256": "b94aa937d148ca72b78d865eb237301d977dff2a8e3f4d32681d7e284a453e94"
     },
     "enemy-archetype-registry.json": {
       "path": "data/enemy-archetype-registry.json",
       "bytes": 13721,
-      "sha256": "71f1a6cc5c6f75c4c00d028dd8549d0140c45f0f503d9a3bd576b2e65b00fb2b"
+      "sha256": "56e633b285eaca5d1a1bf6465f0c3e5968c168c86a96fe38f9c2f87d0aeaaf74"
     },
     "raid-design-document.json": {
       "path": "data/raid-design-document.json",
       "bytes": 6241,
-      "sha256": "0a00440369e602b900b84fb860a2af3dda42f7dd1ce70d242d60330e198f7acb"
+      "sha256": "14862b5784abefb12c4fcbe54c7547722fd861f0abdf2172c6b4b6df94810850"
     },
     "canon-faction-matrix.json": {
       "path": "data/canon-faction-matrix.json",
-      "bytes": 33324,
-      "sha256": "09250fb5ebdf035b16f0930a66b6c6c73456f96075bda4eb15b0026b7161da62"
+      "bytes": 33725,
+      "sha256": "d6bf32195d092b121035bab15cee7e1c9f87dbf5ab5d670f2499effa84192cd9"
     },
     "deity-role-matrix.json": {
       "path": "data/deity-role-matrix.json",
-      "bytes": 5695,
-      "sha256": "17192c12a88abae9a16588c1ac76b9817d064abc55cc9fd203fb0122d07b65b8"
+      "bytes": 6343,
+      "sha256": "2b29e54e3cc33603087b7b432dc7569db01cdb1b8b0f5bcc8a63d955991e417e"
     },
     "roster-depth-map.json": {
       "path": "data/roster-depth-map.json",
-      "bytes": 1285,
-      "sha256": "187ddfe58e3e99f9c23f9295ce3c06dfa274a47ac85f5acec382ed436e9c4391"
+      "bytes": 1286,
+      "sha256": "ae5688f11d2d6dad0f387c6ccfd12d109ac91fb42cf1b2211da30e294359355f"
     },
     "mission-tactical-profile-system.json": {
       "path": "data/mission-tactical-profile-system.json",
-      "bytes": 6635,
-      "sha256": "a59144e1f82b4f1330f5b4a2654cbf1ca95a8049fbbbde297fbcef8e53d92c78"
+      "bytes": 6609,
+      "sha256": "3b1f2f0841320cc51326103af77ebf7f96112e457c6b9b4ff732ef11244335e5"
     },
     "player-onboarding-roster-journey.json": {
       "path": "data/player-onboarding-roster-journey.json",
-      "bytes": 5598,
-      "sha256": "9e97139378c1bb8ec154c9c26be945d4d0be2e8473576bec812e52dfaea6f4f8"
+      "bytes": 5560,
+      "sha256": "3ef3375736fb7d2e673fa3a16c8945a20540b497ccfe18ab58e689f0495c4ef8"
     },
     "battlefield-director.json": {
       "path": "data/battlefield-director.json",
       "bytes": 1071,
-      "sha256": "b7ae7316b6906e7bb4036b6285ee050a8ced3c65a5ab6eabcd876fae2eee490a"
+      "sha256": "df51b99149481e6ff9a00085ed95e92f49f5d42315475028efffa5b2184d4ac5"
     },
     "battlefield-canon-registry.json": {
       "path": "data/battlefield-canon-registry.json",
-      "bytes": 19103,
-      "sha256": "a5a793a3ebdf946c39bb97014de4da00860197b0cf261233de758d8bbc81b34a"
+      "bytes": 24935,
+      "sha256": "31ca51c6ee9ce4a5bfd18562ab77a7e15c84adad21619c114ce919739cc10503"
     },
     "world-scale-reference.json": {
       "path": "data/world-scale-reference.json",
-      "bytes": 1561,
-      "sha256": "25c5e98023efa2cf53a9854522acf57ba2164b70efe9d7fa1c077df0503f9e14"
+      "bytes": 1563,
+      "sha256": "b5e0d031eaa5fc62f078bccbfb60e63fe1ace6689d87b8c5b54ca8cba973e021"
     },
     "art-director-scale-sheets.json": {
       "path": "data/art-director-scale-sheets.json",
-      "bytes": 8786,
-      "sha256": "c6f783d40fd582b02bf7319d0c3ee24d25f81873161a00b2d33159511d4a7391"
+      "bytes": 8793,
+      "sha256": "11848708bb2cd86062c2cf68ef27a6d03753a8f077d5be9ca1704bc187c25244"
     },
     "battlefield-vertical-slice.json": {
       "path": "data/battlefield-vertical-slice.json",
-      "bytes": 9908,
-      "sha256": "8b41c0295b43d6e3d6f6e37d4788c6d8058e50bd954c250e348166dd07d7aea0"
+      "bytes": 10047,
+      "sha256": "eb4e40b9096c4b8fc513e1d746ed9ec886368a61545d58076f0346b742a57895"
     },
     "battlefield-runtime-architecture.json": {
       "path": "data/battlefield-runtime-architecture.json",
       "bytes": 2519,
-      "sha256": "5a5d35df8143b46c8a0247a7e8cb71f309aa58923655b5414abe56f5c434482d"
+      "sha256": "1071efe1a3e6435663aba0b744707459c52024b0fd44f15f35071a1041f7d871"
     },
     "battlefield-quality-gate.json": {
       "path": "data/battlefield-quality-gate.json",
       "bytes": 1517,
-      "sha256": "505151df96cb1bc4d6b69bc613a37187d44eef577be13e6050ddaba4c61de743"
+      "sha256": "b888cfc867b17d357bbc4b9e7257a20515ebfd9d8c463f3a34f7c3ade50e489c"
     },
     "faction-mission-dialogue-completion-audit.json": {
       "path": "data/faction-mission-dialogue-completion-audit.json",
       "bytes": 2386,
-      "sha256": "13ca11d9fac85f9ed5c343224439121cc095018703c8a3cac2091161d8aa74b6"
+      "sha256": "be1b774802515fd779970182546057a3e7e51f7e72717013f9ae42715e631d8e"
     },
     "tactical-blueprint-layouts.json": {
       "path": "data/tactical-blueprint-layouts.json",
       "bytes": 19145,
-      "sha256": "027f73a92be23a6d88e4c3d6756be27fb48ea44b01ffd7024fc0a2803e30311f"
+      "sha256": "cf0d094ac5eb2f025c3ce82913a157b761a0814515d0ee2b28c1d9737f639692"
     },
     "tactical-blueprint-placements.json": {
       "path": "data/tactical-blueprint-placements.json",
@@ -582,89 +582,89 @@
     },
     "deity-enemy-balance-pass.json": {
       "path": "data/deity-enemy-balance-pass.json",
-      "bytes": 99346,
-      "sha256": "8158cf597ea5dd7209194cd6c4a92ba82014a86385e7a0c5acd9b4dbb8559b8a"
+      "bytes": 100755,
+      "sha256": "5ad876ca3529fd7b704637c2f6e71a45fe6b2163a2c631ef61c50e3f75a970b4"
     },
     "deity-art-identity-audit.json": {
       "path": "data/deity-art-identity-audit.json",
-      "bytes": 107871,
-      "sha256": "3034507b6fc205c550c5a891cc6976738e4b10c360947c0bfa80fd49ba4b36c4"
+      "bytes": 218899,
+      "sha256": "9157377ca533ae066bb7d02fac436d22bd78f0d49595acc30d6e91e975fc53e3"
     },
     "gameplay-balance-framework.json": {
       "path": "data/gameplay-balance-framework.json",
-      "bytes": 16205,
-      "sha256": "4d3d436f8e2b127dac0a19d3b06fc5b08275350baf7092dbdb4a5f4a6807997b"
+      "bytes": 16201,
+      "sha256": "bf4dd3b32eebd141c1646153b70687faabfad6e2dfae7b7b599c55691a6b7743"
     },
     "combat-first-gameplay-doctrine.json": {
       "path": "data/combat-first-gameplay-doctrine.json",
-      "bytes": 6366,
-      "sha256": "dd1b4aa408bdb99be9fc73aaa5a216fd05cdf98d3e2a214f90f3e26d736e5338"
+      "bytes": 6368,
+      "sha256": "580e2b9b0cbe146589aefe31a02d7e59e26b77d529cbdb8b3e8e0a5cb2665595"
     },
     "economy-migration-audit.json": {
       "path": "data/economy-migration-audit.json",
       "bytes": 4011,
-      "sha256": "6a25860fa9da142a095c561a96634bb5a964cce6294fe37de492315e18a5652d"
+      "sha256": "6479836810d586807f6f218b92f7fc632d1109b4622b25245646e2fe3d34ae91"
     },
     "free-to-play-economy.json": {
       "path": "data/free-to-play-economy.json",
-      "bytes": 13791,
-      "sha256": "6412d321eafbd8995dbbd36e1ccfcea208204bd460f45557725bbe349434b72f"
+      "bytes": 13821,
+      "sha256": "6798a01b6961832dd1e0661d0d3ad2cd87698d5fd557be1ba2e4f02bfffbfac1"
     },
     "solo-battle-state-schema.json": {
       "path": "data/solo-battle-state-schema.json",
-      "bytes": 4607,
-      "sha256": "be5ef08b206d4dbbdbc5a4b360d58a0154c6afb8c59e39f42106ec16dcc73c86"
+      "bytes": 4608,
+      "sha256": "2d5ef19953ac32942245e661baaafc9048d96143c1dd9a1d4c6b0d25fbb808e3"
     },
     "solo-vertical-slice.json": {
       "path": "data/solo-vertical-slice.json",
-      "bytes": 11042,
-      "sha256": "0cd4fb34f9388f28b207293406939fff3a2b832b1199ad40d268ad1dca87c81d"
+      "bytes": 11051,
+      "sha256": "084db076fac838a12a8d1658e828a884c74b7a6062d9a880d02899521248a08c"
     },
     "battlefield-telemetry-contract.json": {
       "path": "data/battlefield-telemetry-contract.json",
       "bytes": 4553,
-      "sha256": "a9f17eaceacfc4966fe1a57f9b04eeaec3f90ac54857d95f7ce52c53f9bea670"
+      "sha256": "fce7224f002b02973abd0e57b0b4b02878491fc583f0954541f0008cc599d3b7"
     },
     "campaign-playflow-contract.json": {
       "path": "data/campaign-playflow-contract.json",
       "bytes": 40100,
-      "sha256": "32c16870b458ee297e78f17c5f50cfa1d82b73fb8d0b200b6b13780465041b95"
+      "sha256": "87bdfcfe50557f02ebaf6d28b62dc6ef43f15811a2ba6c979312024f94519d0f"
     },
     "command-hub-contract.json": {
       "path": "data/command-hub-contract.json",
-      "bytes": 16308,
-      "sha256": "0c461cd030a06065aeaf3e291bc9ce6923a8b8af0db21e665a8e836be67c9d34"
+      "bytes": 16318,
+      "sha256": "37ac4f19469dfa1270faf6740bf19ed4e3522b8804e7546143f5cc16e8bfd616"
     },
     "asset-registry.json": {
       "path": "data/asset-registry.json",
-      "bytes": 20527,
-      "sha256": "5ddea148f5d94c990a758728ff2c3f55c6c60fd59d9ea93d4aaa1b9884179ea2"
+      "bytes": 20528,
+      "sha256": "c1ba2b0c36499b210ae2d7353722a107ed5679bd1be138f05165dbdc1aa2c256"
     },
     "github-asset-repository.json": {
       "path": "data/github-asset-repository.json",
-      "bytes": 6183,
-      "sha256": "d75f4a7fdb20ca39123ef4c4655748f09e76aafbb3cf9021ac9505dbb64002f5"
+      "bytes": 6184,
+      "sha256": "5d604e297a818a6e2a7d5930e77159f410a19548dd91f6de76b555d8ddced62f"
     },
     "3d-blueprint-system.json": {
       "path": "data/3d-blueprint-system.json",
-      "bytes": 1524,
-      "sha256": "6166bf89842c40903e554f0d9e58404c88093931966286cd609a74a28c20d7ff"
+      "bytes": 1526,
+      "sha256": "09df971feb3bbe4ee4cbc2863b158cd0c62b3e6ae699a3f5af05e5fb916dba74"
     },
     "3d-production-queue.json": {
       "path": "data/3d-production-queue.json",
-      "bytes": 139603,
-      "sha256": "748d3d1bfb1cde7d085aad457b719d554e9d52f3227255562adb4eb9e2a6b159"
+      "bytes": 103632,
+      "sha256": "f9f6e10335d682d39f1f8fb82a175f1531c7e2c3ae74bc62d3fe63ec31d0398a"
     },
     "mythos-gates-dungeon-route-registry.json": {
       "path": "data/mythos-gates-dungeon-route-registry.json",
-      "bytes": 43766,
-      "sha256": "83dca1074f45b6a2865c59b492149983f9c2f01d45c06fe75ac839696fe003f4"
+      "bytes": 54431,
+      "sha256": "74db46865319d4710be5eaa5d9680db587a0a2175e2e9a096953c7733879b5f1"
     }
   },
   "artPromptCategories": {
     "Deity": 28,
     "Campaign": 7,
-    "Creature": 39,
+    "Creature": 40,
     "Map": 12,
     "NPC": 8,
     "FactionScreen": 2
@@ -712,7 +712,7 @@
       "entity": "Moon-Grove Rootlabyrinth",
       "category": "Map",
       "status": "ready",
-      "prompt": "Mythos Gates tactical battleground environment concept: Moon-Grove Rootlabyrinth. A living Avalora forest labyrinth whose roots remember every step and punish careless burning. Moving root walls are natural braided trunks, mossy root arches, thorny hedgerows, and fresh soil upheavals that redirect lanes. Fae misdirection is suggested through moonlit mist, mirrored dew pools, crooked flower paths, and subtly repeated trees. Living terrain backlash appears as charred bark regrowing over old scorch marks, not game-highlight tiles. Ascension route canon overlay: depict Silver-Root Geas Labyrinth through The Silver-Root Gate (Sealed Gate with fae time bleed), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through fae time-thieves, thornbound oathbreakers; make route hazards visible as geas thorns that punish forbidden actions, fae time pools that age or reverse cooldowns. Include shrine/relic mood from Tuatha restoration shrine, The Silver-Root Gate resonance shrine; treasure-room cues may include Geas Thorn Pin, Silver Lughch Token, Mirror-Meadow Dew. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects grown directly from forest lore, no sci-fi. Faction Visual Bible: follow Tuatha material hierarchy, armor shape language, symbols, texture rules, and avoid list from MG-FVB-005; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as Celtic and Irish fae myth; Earth legend is the echo and Avalora is the original. Show silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.. Myth anchors include Tuatha Dé Danann: divine tribes, craft, sovereignty, otherworld descent, Aos Sí/Sídhe: mound gates, hidden courts, fae ancestry, Tír na nÓg: youth, impossible time, otherworld beauty, Morrigan: battle crow, fate, war prophecy. Avoid generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume.",
+      "prompt": "Mythos Gates tactical battleground environment concept: Moon-Grove Rootlabyrinth. A living Avalora forest labyrinth whose roots remember every step and punish careless burning. Moving root walls are natural braided trunks, mossy root arches, thorny hedgerows, and fresh soil upheavals that redirect lanes. Fae misdirection is suggested through moonlit mist, mirrored dew pools, crooked flower paths, and subtly repeated trees. Living terrain backlash appears as charred bark regrowing over old scorch marks, not game-highlight tiles. Ascension route canon overlay: depict Silver-Root Geas Labyrinth through The Silver-Root Gate (Sealed Gate with fae time bleed), built for one selected deity entering alone against multiple enemies. Show Hollow pressure through fae time-thieves, thornbound oathbreakers; make route hazards visible as geas thorns that punish forbidden actions, fae time pools that age or reverse cooldowns. Include shrine/relic mood from Tuatha restoration shrine, The Silver-Root Gate resonance shrine; treasure-room cues may include Geas Thorn Pin, Silver Lughch Token, Mirror-Meadow Dew. Keep all Gate effects physical, mythic, and lore-readable, never sci-fi or UI-grid terrain. Dark mythological tactical RPG battlefield, isometric-friendly composition, mobile-readable lanes and objectives, terrain effects grown directly from forest lore, no sci-fi. Faction Visual Bible: follow Tuatha material hierarchy, armor shape language, symbols, texture rules, and avoid list from MG-FVB-005; faction canon must be visible in silhouette, materials, and posture. Canon premise: this is the source culture humans later copied as Celtic and Irish fae myth; Earth legend is the echo and Avalora is the original. Show silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.. Myth anchors include Tuatha Dé Danann: divine tribes, craft, sovereignty, otherworld descent, Aos Sí/Sídhe: mound gates, hidden courts, fae ancestry, Tír na nÓg: youth, impossible time, otherworld beauty, Morrígan: battle crow, fate, war prophecy. Avoid generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume.",
       "negativePrompt": "sci-fi, futuristic craft, guns, extradimensional beings, modern city, superhero costume, photorealistic celebrity, cute cartoon, low detail, blurry, text, watermark, logo, no glowing tiles, no neon grid markers, no board-game hazard overlays, no UI-like terrain indicators, no artificial colored floor squares, generic elf, treehouse body, wood block giant, terrain chunks, literal forest on shoulders, generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume, sci-fi nature armor, terrain chunks on shoulders, plastic leaves, readable runes"
     },
     {
@@ -806,7 +806,7 @@
   "blueprint3dSystem": {
     "status": "IMPLEMENTED",
     "director": "3D Asset Director",
-    "registryTotal": 136,
+    "registryTotal": 97,
     "registry": "3D_Blueprints/Registry/blueprint-registry.json",
     "productionQueue": "data/3d-production-queue.json",
     "firstHandoffBatch": [

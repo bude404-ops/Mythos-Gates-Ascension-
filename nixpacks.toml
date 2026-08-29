@@ -1,0 +1,11 @@
+[variables]
+NODE_VERSION = "20"
+
+[phases.install]
+cmd = "npm ci --ignore-scripts"
+
+[phases.build]
+cmd = "npm run index && node scripts/build-pages.mjs"
+
+[start]
+cmd = "npx serve dist -l $PORT"
