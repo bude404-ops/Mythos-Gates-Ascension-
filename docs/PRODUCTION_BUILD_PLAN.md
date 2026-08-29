@@ -42,6 +42,24 @@
 - [x] Enemy AI (10 archetypes, terrain-aware)
 - [x] Victory/defeat resolution
 
+### Phase 2.5: Animation & Rigging (Week 4-7)
+- [x] Master skeleton definition (87 bones, IK chains, constraints)
+- [x] Animation weapon class mapping (6 classes for 28 deities)
+- [x] Animation state machine design (Avatar + Enemy)
+- [x] MGAnimInstance C++ (3 state machines: Locomotion, Combat, Reaction)
+- [x] MGEnemyAnimInstance C++ (4 body types: Humanoid, Brute, Quadruped, Flying)
+- [x] MGMasterSkeleton documentation (bone hierarchy, IK, LOD, retargeting)
+- [x] MGWeaponAnimClass mapping (all 28 deities assigned)
+- [x] ANIMATION_RIGGING_SPEC.md (13-section spec document)
+- [ ] Master skeleton creation in UE5 editor
+- [ ] 6 Animation Montages (1 per weapon class, 13 sections each)
+- [ ] ABP_MG_Avatar Animation Blueprint
+- [ ] ABP_MG_Enemy Animation Blueprint
+- [ ] IK Retargeter for each deity mesh
+- [ ] Blend spaces (Movement, Combat Stance, Hit Direction)
+- [ ] LOD configuration (4 levels)
+- [ ] Performance profiling (mobile target: 30fps)
+
 ### Phase 3: Content Pipeline (Week 5-8)
 - [ ] 2D → 3D model conversion (TRELLIS.2 or custom)
 - [ ] GLB → UE5 Static Mesh import

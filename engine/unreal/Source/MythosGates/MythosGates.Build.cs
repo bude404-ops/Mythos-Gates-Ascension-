@@ -15,7 +15,9 @@ public class MythosGates : ModuleRules
 			"Niagara",
 			"NavigationSystem",
 			"AIModule",
-			"GameplayTasks"
+			"GameplayTasks",
+			"AnimGraph",
+			"AnimGraphRuntime"
 		});
 		
 		PrivateDependencyModuleNames.AddRange(new string[] {
