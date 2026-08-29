@@ -5016,5 +5016,999 @@
       "Cross-Faction Run-Ins"
     ],
     "developmentStatus": "Readable faction run-in creature profile integrated into mission/event encounter pools."
+  },
+  {
+    "id": "MG-BACKSTORY-DEITY-002",
+    "entityId": "MG-DEITY-002",
+    "entityType": "Deity",
+    "name": "Sutekh",
+    "slug": "sutekh",
+    "factionId": "MG-FACTION-001",
+    "faction": "Aten Ra",
+    "faith_trigger": "Epic",
+    "rarity": "Epic",
+    "status": "Mythos Gates Backstory Ready",
+    "storyArcIds": [],
+    "campaignHooks": [],
+    "loreTies": [
+      "Sutekh embodies Conduit within Aten Ra.",
+      "MYTHOS_GATES_CORE_UNIVERSE",
+      "ASCENSION_CURRENT_ARC_ONLY",
+      "PLAYABLE_DEITIES_ARE_ACTUAL_GODS",
+      "ONE_DEITY_ENTERS_PER_DUNGEON"
+    ],
+    "shortBackstory": "Sutekh is a playable god in Mythos Gates: Ascension. Sutekh is the Realm\u2019s Khepri engine: the force that rolls dead light into dawn and turns Nile-black memory into power. Human scarab amulets are miniature echoes of his living renewal shell. He feeds allies by converting wounds, offerings, and battlefield heat into measured solar return.",
+    "chapters": [
+      {
+        "title": "Divine Origin",
+        "text": "Sutekh is the actual god recognized by their source culture, born from the supernatural laws of their realm. Their domain determines their symbols, weapons, posture, combat instincts, and relationship to sacred authority."
+      },
+      {
+        "title": "Faction Bond",
+        "text": "Within Aten Ra, Sutekh expresses the civilization rather than merely representing it. Their visual identity carries the materials, beauty standards, and divine symbols of their realm."
+      },
+      {
+        "title": "Mythos Gate Wound",
+        "text": "During the Ascension era, Sutekh can interact with their Mythos Gate because divine beings are intrinsically connected to their Realms. The Gate is a mysterious boundary where separate mythological realities become traversable."
+      },
+      {
+        "title": "Dungeon Role",
+        "text": "When selected by the player, Sutekh enters the dungeon alone as one god against multiple enemies. Every encounter tests how their divine power survives pressure from creatures and rival Realm laws."
+      },
+      {
+        "title": "Ascension Conflict",
+        "text": "Ascension means restoration and evolution of Sutekh's existing divine power. Their personal conflict is to recover strength without reducing their mythology into raw fuel for the crisis."
+      }
+    ],
+    "relationshipHooks": [
+      "Faction witnesses interpret how Sutekh crosses their Gate.",
+      "Rival deities challenge the limits of cross-Realm travel.",
+      "Dungeon lore pickups reveal Gate mystery."
+    ],
+    "readableUnder": [
+      "Deities",
+      "God Backstories",
+      "Faction page",
+      "Mythos Gates Codex"
+    ],
+    "developmentStatus": "Playable deity backstory aligned to Mythos Gates identity.",
+    "mythicSource": "Sutekh",
+    "visualCanon": "Massive renewal-battery Deity with scarab-inspired carapace plates, faience and lapis inlay reservoirs, papyrus-green conduit veins, black Nile-silt glass core, dawn-gold crown, and slow rotating solar arcs behind the shoulders. Avoid insect monster; he is a divine generator of rebirth with clear anatomy and ceremonial mass.",
+    "entityName": "Sutekh",
+    "title": "Conduit",
+    "updated": "2026-08-29",
+    "displayEntityType": "Playable God",
+    "mythosGatesCanon": {
+      "brand": "Mythos Gates",
+      "currentChapter": "Ascension",
+      "sourceRealm": "Aten Ra",
+      "mythosGate": "",
+      "identityRule": "Sutekh is the actual god of their source mythology, never a mortal hero.",
+      "arcRule": "Ascension restores existing divine power; it does not make the character a god for the first time.",
+      "mysteryRule": "The backstory may reveal how this deity interacts with the Mythos Gates but must not resolve the full origin."
+    }
+  },
+  {
+    "id": "MG-BACKSTORY-DEITY-003",
+    "entityId": "MG-DEITY-003",
+    "entityType": "Deity",
+    "name": "Iset",
+    "slug": "iset",
+    "factionId": "MG-FACTION-001",
+    "faction": "Aten Ra",
+    "faith_trigger": "Epic",
+    "rarity": "Epic",
+    "status": "Mythos Gates Backstory Ready",
+    "storyArcIds": [],
+    "campaignHooks": [],
+    "loreTies": [
+      "Iset embodies Dominion within Aten Ra.",
+      "MYTHOS_GATES_CORE_UNIVERSE",
+      "ASCENSION_CURRENT_ARC_ONLY",
+      "PLAYABLE_DEITIES_ARE_ACTUAL_GODS",
+      "ONE_DEITY_ENTERS_PER_DUNGEON"
+    ],
+    "shortBackstory": "Iset is a playable god in Mythos Gates: Ascension. Iset governs the border where the sun leaves the underworld and becomes visible again. Human funerary art copied fragments of her horizon masks and dawn reliefs. She controls terrain by deciding what may cross from shadow into light.",
+    "chapters": [
+      {
+        "title": "Divine Origin",
+        "text": "Iset is the actual god recognized by their source culture, born from the supernatural laws of their realm. Their domain determines their symbols, weapons, posture, combat instincts, and relationship to sacred authority."
+      },
+      {
+        "title": "Faction Bond",
+        "text": "Within Aten Ra, Iset expresses the civilization rather than merely representing it. Their visual identity carries the materials, beauty standards, and divine symbols of their realm."
+      },
+      {
+        "title": "Mythos Gate Wound",
+        "text": "During the Ascension era, Iset can interact with their Mythos Gate because divine beings are intrinsically connected to their Realms. The Gate is a mysterious boundary where separate mythological realities become traversable."
+      },
+      {
+        "title": "Dungeon Role",
+        "text": "When selected by the player, Iset enters the dungeon alone as one god against multiple enemies. Every encounter tests how their divine power survives pressure from creatures and rival Realm laws."
+      },
+      {
+        "title": "Ascension Conflict",
+        "text": "Ascension means restoration and evolution of Iset's existing divine power. Their personal conflict is to recover strength without reducing their mythology into raw fuel for the crisis."
+      }
+    ],
+    "relationshipHooks": [
+      "Faction witnesses interpret how Iset crosses their Gate.",
+      "Rival deities challenge the limits of cross-Realm travel.",
+      "Dungeon lore pickups reveal Gate mystery."
+    ],
+    "readableUnder": [
+      "Deities",
+      "God Backstories",
+      "Faction page",
+      "Mythos Gates Codex"
+    ],
+    "developmentStatus": "Playable deity backstory aligned to Mythos Gates identity.",
+    "mythicSource": "Iset",
+    "visualCanon": "Tall controller Deity of black sunrise: obsidian-blue enamel mask, thin amber dawn visor, horizon-ring collar, ivory limestone relief plates, black-gold scale armor, and angular light lanes emerging from underworld-shadow limbs. Must feel like living threshold law, not a mummy, statue, or necropolis building.",
+    "entityName": "Iset",
+    "title": "Dominion",
+    "updated": "2026-08-29",
+    "displayEntityType": "Playable God",
+    "mythosGatesCanon": {
+      "brand": "Mythos Gates",
+      "currentChapter": "Ascension",
+      "sourceRealm": "Aten Ra",
+      "mythosGate": "",
+      "identityRule": "Iset is the actual god of their source mythology, never a mortal hero.",
+      "arcRule": "Ascension restores existing divine power; it does not make the character a god for the first time.",
+      "mysteryRule": "The backstory may reveal how this deity interacts with the Mythos Gates but must not resolve the full origin."
+    }
+  },
+  {
+    "id": "MG-BACKSTORY-DEITY-004",
+    "entityId": "MG-DEITY-004",
+    "entityType": "Deity",
+    "name": "Amunet",
+    "slug": "amunet",
+    "factionId": "MG-FACTION-001",
+    "faction": "Aten Ra",
+    "faith_trigger": "Rare",
+    "rarity": "Rare",
+    "status": "Mythos Gates Backstory Ready",
+    "storyArcIds": [],
+    "campaignHooks": [],
+    "loreTies": [
+      "Amunet embodies Fracture within Aten Ra.",
+      "MYTHOS_GATES_CORE_UNIVERSE",
+      "ASCENSION_CURRENT_ARC_ONLY",
+      "PLAYABLE_DEITIES_ARE_ACTUAL_GODS",
+      "ONE_DEITY_ENTERS_PER_DUNGEON"
+    ],
+    "shortBackstory": "Amunet is a playable god in Mythos Gates: Ascension. Amunet is the punishment side of Ma\u2019at: when something refuses balance, he refracts its hidden weight until armor, lies, and false sanctity split open. Human scales of judgement are crude courtroom copies of his prism engine.",
+    "chapters": [
+      {
+        "title": "Divine Origin",
+        "text": "Amunet is the actual god recognized by their source culture, born from the supernatural laws of their realm. Their domain determines their symbols, weapons, posture, combat instincts, and relationship to sacred authority."
+      },
+      {
+        "title": "Faction Bond",
+        "text": "Within Aten Ra, Amunet expresses the civilization rather than merely representing it. Their visual identity carries the materials, beauty standards, and divine symbols of their realm."
+      },
+      {
+        "title": "Mythos Gate Wound",
+        "text": "During the Ascension era, Amunet can interact with their Mythos Gate because divine beings are intrinsically connected to their Realms. The Gate is a mysterious boundary where separate mythological realities become traversable."
+      },
+      {
+        "title": "Dungeon Role",
+        "text": "When selected by the player, Amunet enters the dungeon alone as one god against multiple enemies. Every encounter tests how their divine power survives pressure from creatures and rival Realm laws."
+      },
+      {
+        "title": "Ascension Conflict",
+        "text": "Ascension means restoration and evolution of Amunet's existing divine power. Their personal conflict is to recover strength without reducing their mythology into raw fuel for the crisis."
+      }
+    ],
+    "relationshipHooks": [
+      "Faction witnesses interpret how Amunet crosses their Gate.",
+      "Rival deities challenge the limits of cross-Realm travel.",
+      "Dungeon lore pickups reveal Gate mystery."
+    ],
+    "readableUnder": [
+      "Deities",
+      "God Backstories",
+      "Faction page",
+      "Mythos Gates Codex"
+    ],
+    "developmentStatus": "Playable deity backstory aligned to Mythos Gates identity.",
+    "mythicSource": "Amunet",
+    "visualCanon": "Shadow Deity with crystalline solar-prism chest, weighing-scale shoulder geometry, Ma\u2019at feather linework, clear amber glass execution blades, electrum ribs, and fractured light exposing enemy weak points. Avoid generic crystal robot; the prism must feel sacred, judicial, and alive.",
+    "entityName": "Amunet",
+    "title": "Fracture",
+    "updated": "2026-08-29",
+    "displayEntityType": "Playable God",
+    "mythosGatesCanon": {
+      "brand": "Mythos Gates",
+      "currentChapter": "Ascension",
+      "sourceRealm": "Aten Ra",
+      "mythosGate": "",
+      "identityRule": "Amunet is the actual god of their source mythology, never a mortal hero.",
+      "arcRule": "Ascension restores existing divine power; it does not make the character a god for the first time.",
+      "mysteryRule": "The backstory may reveal how this deity interacts with the Mythos Gates but must not resolve the full origin."
+    }
+  },
+  {
+    "id": "MG-BACKSTORY-DEITY-012",
+    "entityId": "MG-DEITY-012",
+    "entityType": "Deity",
+    "name": "Skadi",
+    "slug": "skadi",
+    "factionId": "MG-FACTION-002",
+    "faction": "Asgardian",
+    "faith_trigger": "Legendary",
+    "rarity": "Legendary",
+    "status": "Mythos Gates Backstory Ready",
+    "storyArcIds": [],
+    "campaignHooks": [],
+    "loreTies": [
+      "Skadi embodies Dominion within Asgardian.",
+      "MYTHOS_GATES_CORE_UNIVERSE",
+      "ASCENSION_CURRENT_ARC_ONLY",
+      "PLAYABLE_DEITIES_ARE_ACTUAL_GODS",
+      "ONE_DEITY_ENTERS_PER_DUNGEON"
+    ],
+    "shortBackstory": "Skadi is a playable god in Mythos Gates: Ascension. Skadi is the divine huntress of the Asgardian realm, a frost-giantess who joined the gods after her father's death. She rules mountains, winter, and the hunt. Her divine bow fires arrows of pure frost that freeze enemies solid. She is the gate-keeper of frozen thresholds \u2014 what enters her domain either hunts or is hunted.",
+    "chapters": [
+      {
+        "title": "Divine Origin",
+        "text": "Skadi is the actual god recognized by their source culture, born from the supernatural laws of their realm. Their domain determines their symbols, weapons, posture, combat instincts, and relationship to sacred authority."
+      },
+      {
+        "title": "Faction Bond",
+        "text": "Within Asgardian, Skadi expresses the civilization rather than merely representing it. Their visual identity carries the materials, beauty standards, and divine symbols of their realm."
+      },
+      {
+        "title": "Mythos Gate Wound",
+        "text": "During the Ascension era, Skadi can interact with their Mythos Gate because divine beings are intrinsically connected to their Realms. The Gate is a mysterious boundary where separate mythological realities become traversable."
+      },
+      {
+        "title": "Dungeon Role",
+        "text": "When selected by the player, Skadi enters the dungeon alone as one god against multiple enemies. Every encounter tests how their divine power survives pressure from creatures and rival Realm laws."
+      },
+      {
+        "title": "Ascension Conflict",
+        "text": "Ascension means restoration and evolution of Skadi's existing divine power. Their personal conflict is to recover strength without reducing their mythology into raw fuel for the crisis."
+      }
+    ],
+    "relationshipHooks": [
+      "Faction witnesses interpret how Skadi crosses their Gate.",
+      "Rival deities challenge the limits of cross-Realm travel.",
+      "Dungeon lore pickups reveal Gate mystery."
+    ],
+    "readableUnder": [
+      "Deities",
+      "God Backstories",
+      "Faction page",
+      "Mythos Gates Codex"
+    ],
+    "developmentStatus": "Playable deity backstory aligned to Mythos Gates identity.",
+    "mythicSource": "Skadi",
+    "visualCanon": "Colossal divine huntress standing on a frozen mountain peak. Ice-blue living metal skin with frost-crack energy veins. Wearing Norse hunting leathers and furs over storm-iron armor. Her divine bow is crafted from frozen yew with ice-energy bowstring. Snow swirls around her feet. Frost-blue aura. Low camera angle showing colossal scale with tiny mountain pines at her boots.",
+    "entityName": "Skadi",
+    "title": "Dominion",
+    "updated": "2026-08-29",
+    "displayEntityType": "Playable God",
+    "mythosGatesCanon": {
+      "brand": "Mythos Gates",
+      "currentChapter": "Ascension",
+      "sourceRealm": "Asgardian",
+      "mythosGate": "",
+      "identityRule": "Skadi is the actual god of their source mythology, never a mortal hero.",
+      "arcRule": "Ascension restores existing divine power; it does not make the character a god for the first time.",
+      "mysteryRule": "The backstory may reveal how this deity interacts with the Mythos Gates but must not resolve the full origin."
+    }
+  },
+  {
+    "id": "MG-BACKSTORY-DEITY-013",
+    "entityId": "MG-DEITY-013",
+    "entityType": "Deity",
+    "name": "Freyja",
+    "slug": "freyja",
+    "factionId": "MG-FACTION-002",
+    "faction": "Asgardian",
+    "faith_trigger": "Rare",
+    "rarity": "Rare",
+    "status": "Mythos Gates Backstory Ready",
+    "storyArcIds": [],
+    "campaignHooks": [],
+    "loreTies": [
+      "Freyja embodies Fracture within Asgardian.",
+      "MYTHOS_GATES_CORE_UNIVERSE",
+      "ASCENSION_CURRENT_ARC_ONLY",
+      "PLAYABLE_DEITIES_ARE_ACTUAL_GODS",
+      "ONE_DEITY_ENTERS_PER_DUNGEON"
+    ],
+    "shortBackstory": "Freyja is a playable god in Mythos Gates: Ascension. Freyja is a colossal Asgardian breaker from The Storm-Rooted Aesir Holds. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Asgardian breaker office: judgement rupture, armor sundering, trial by force; Valhalla/einherjar: honored dead, feast before final war.",
+    "chapters": [
+      {
+        "title": "Divine Origin",
+        "text": "Freyja is the actual god recognized by their source culture, born from the supernatural laws of their realm. Their domain determines their symbols, weapons, posture, combat instincts, and relationship to sacred authority."
+      },
+      {
+        "title": "Faction Bond",
+        "text": "Within Asgardian, Freyja expresses the civilization rather than merely representing it. Their visual identity carries the materials, beauty standards, and divine symbols of their realm."
+      },
+      {
+        "title": "Mythos Gate Wound",
+        "text": "During the Ascension era, Freyja can interact with their Mythos Gate because divine beings are intrinsically connected to their Realms. The Gate is a mysterious boundary where separate mythological realities become traversable."
+      },
+      {
+        "title": "Dungeon Role",
+        "text": "When selected by the player, Freyja enters the dungeon alone as one god against multiple enemies. Every encounter tests how their divine power survives pressure from creatures and rival Realm laws."
+      },
+      {
+        "title": "Ascension Conflict",
+        "text": "Ascension means restoration and evolution of Freyja's existing divine power. Their personal conflict is to recover strength without reducing their mythology into raw fuel for the crisis."
+      }
+    ],
+    "relationshipHooks": [
+      "Faction witnesses interpret how Freyja crosses their Gate.",
+      "Rival deities challenge the limits of cross-Realm travel.",
+      "Dungeon lore pickups reveal Gate mystery."
+    ],
+    "readableUnder": [
+      "Deities",
+      "God Backstories",
+      "Faction page",
+      "Mythos Gates Codex"
+    ],
+    "developmentStatus": "Playable deity backstory aligned to Mythos Gates identity.",
+    "mythicSource": "Freyja",
+    "visualCanon": "Full-body living myth-source Deity, not a costume: Freyja shows storm-iron mail, oath-ring collars, raven and wolf omen shapes, world-root veins, Valkyrie wing-weather, thunder scars, frost-giant mass, shield-wall geometry, ash wood, funeral flame, runes burned as physical wounds not UI glow.. Role silhouette must read as Conduit faith. Materials include dark rune iron, storm steel, ash wood, wolf fur, raven feather shadow, oath red wax, bone white. The design must feel older than human mythology and avoid cartoon Viking, generic horned helmet cosplay, clean chrome, sci-fi power armor, glowing UI runes, blocky hammer mech.",
+    "entityName": "Freyja",
+    "title": "Fracture",
+    "updated": "2026-08-29",
+    "displayEntityType": "Playable God",
+    "mythosGatesCanon": {
+      "brand": "Mythos Gates",
+      "currentChapter": "Ascension",
+      "sourceRealm": "Asgardian",
+      "mythosGate": "",
+      "identityRule": "Freyja is the actual god of their source mythology, never a mortal hero.",
+      "arcRule": "Ascension restores existing divine power; it does not make the character a god for the first time.",
+      "mysteryRule": "The backstory may reveal how this deity interacts with the Mythos Gates but must not resolve the full origin."
+    }
+  },
+  {
+    "id": "MG-BACKSTORY-DEITY-020",
+    "entityId": "MG-DEITY-020",
+    "entityType": "Deity",
+    "name": "Athena",
+    "slug": "athena",
+    "factionId": "MG-FACTION-003",
+    "faction": "Olympian",
+    "faith_trigger": "Epic",
+    "rarity": "Epic",
+    "status": "Mythos Gates Backstory Ready",
+    "storyArcIds": [],
+    "campaignHooks": [],
+    "loreTies": [
+      "Athena embodies Conduit within Olympian.",
+      "MYTHOS_GATES_CORE_UNIVERSE",
+      "ASCENSION_CURRENT_ARC_ONLY",
+      "PLAYABLE_DEITIES_ARE_ACTUAL_GODS",
+      "ONE_DEITY_ENTERS_PER_DUNGEON"
+    ],
+    "shortBackstory": "Athena is a playable god in Mythos Gates: Ascension. Athena is a colossal Olympian battery from The Celestial Heights of Olympus. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Olympian battery office: renewal engine, resource hearth, stored sacred force; Athena: strategy, aegis, owl sight, spear and shield order.",
+    "chapters": [
+      {
+        "title": "Divine Origin",
+        "text": "Athena is the actual god recognized by their source culture, born from the supernatural laws of their realm. Their domain determines their symbols, weapons, posture, combat instincts, and relationship to sacred authority."
+      },
+      {
+        "title": "Faction Bond",
+        "text": "Within Olympian, Athena expresses the civilization rather than merely representing it. Their visual identity carries the materials, beauty standards, and divine symbols of their realm."
+      },
+      {
+        "title": "Mythos Gate Wound",
+        "text": "During the Ascension era, Athena can interact with their Mythos Gate because divine beings are intrinsically connected to their Realms. The Gate is a mysterious boundary where separate mythological realities become traversable."
+      },
+      {
+        "title": "Dungeon Role",
+        "text": "When selected by the player, Athena enters the dungeon alone as one god against multiple enemies. Every encounter tests how their divine power survives pressure from creatures and rival Realm laws."
+      },
+      {
+        "title": "Ascension Conflict",
+        "text": "Ascension means restoration and evolution of Athena's existing divine power. Their personal conflict is to recover strength without reducing their mythology into raw fuel for the crisis."
+      }
+    ],
+    "relationshipHooks": [
+      "Faction witnesses interpret how Athena crosses their Gate.",
+      "Rival deities challenge the limits of cross-Realm travel.",
+      "Dungeon lore pickups reveal Gate mystery."
+    ],
+    "readableUnder": [
+      "Deities",
+      "God Backstories",
+      "Faction page",
+      "Mythos Gates Codex"
+    ],
+    "developmentStatus": "Playable deity backstory aligned to Mythos Gates identity.",
+    "mythicSource": "Athena",
+    "visualCanon": "Full-body living myth-source Deity, not a costume: Athena shows living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal halos, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands.. Role silhouette must read as Counter faith. Materials include living white marble, warm bronze, laurel green, aegis scale gold, storm blue, oracle violet smoke, ambrosial ivory. The design must feel older than human mythology and avoid generic toga costume, Roman gladiator confusion, marble statue stiffness, robot bronze automaton, sci-fi halo, neon arena grid.",
+    "entityName": "Athena",
+    "title": "Conduit",
+    "updated": "2026-08-29",
+    "displayEntityType": "Playable God",
+    "mythosGatesCanon": {
+      "brand": "Mythos Gates",
+      "currentChapter": "Ascension",
+      "sourceRealm": "Olympian",
+      "mythosGate": "",
+      "identityRule": "Athena is the actual god of their source mythology, never a mortal hero.",
+      "arcRule": "Ascension restores existing divine power; it does not make the character a god for the first time.",
+      "mysteryRule": "The backstory may reveal how this deity interacts with the Mythos Gates but must not resolve the full origin."
+    }
+  },
+  {
+    "id": "MG-BACKSTORY-DEITY-021",
+    "entityId": "MG-DEITY-021",
+    "entityType": "Deity",
+    "name": "Artemis",
+    "slug": "artemis",
+    "factionId": "MG-FACTION-003",
+    "faction": "Olympian",
+    "faith_trigger": "Epic",
+    "rarity": "Epic",
+    "status": "Mythos Gates Backstory Ready",
+    "storyArcIds": [],
+    "campaignHooks": [],
+    "loreTies": [
+      "Artemis embodies Dominion within Olympian.",
+      "MYTHOS_GATES_CORE_UNIVERSE",
+      "ASCENSION_CURRENT_ARC_ONLY",
+      "PLAYABLE_DEITIES_ARE_ACTUAL_GODS",
+      "ONE_DEITY_ENTERS_PER_DUNGEON"
+    ],
+    "shortBackstory": "Artemis is a playable god in Mythos Gates: Ascension. Artemis is a colossal Olympian controller from The Celestial Heights of Olympus. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Olympian controller office: terrain law, threshold command, battlefield geometry; Apollo: prophecy, sun clarity, music, plague/purification.",
+    "chapters": [
+      {
+        "title": "Divine Origin",
+        "text": "Artemis is the actual god recognized by their source culture, born from the supernatural laws of their realm. Their domain determines their symbols, weapons, posture, combat instincts, and relationship to sacred authority."
+      },
+      {
+        "title": "Faction Bond",
+        "text": "Within Olympian, Artemis expresses the civilization rather than merely representing it. Their visual identity carries the materials, beauty standards, and divine symbols of their realm."
+      },
+      {
+        "title": "Mythos Gate Wound",
+        "text": "During the Ascension era, Artemis can interact with their Mythos Gate because divine beings are intrinsically connected to their Realms. The Gate is a mysterious boundary where separate mythological realities become traversable."
+      },
+      {
+        "title": "Dungeon Role",
+        "text": "When selected by the player, Artemis enters the dungeon alone as one god against multiple enemies. Every encounter tests how their divine power survives pressure from creatures and rival Realm laws."
+      },
+      {
+        "title": "Ascension Conflict",
+        "text": "Ascension means restoration and evolution of Artemis's existing divine power. Their personal conflict is to recover strength without reducing their mythology into raw fuel for the crisis."
+      }
+    ],
+    "relationshipHooks": [
+      "Faction witnesses interpret how Artemis crosses their Gate.",
+      "Rival deities challenge the limits of cross-Realm travel.",
+      "Dungeon lore pickups reveal Gate mystery."
+    ],
+    "readableUnder": [
+      "Deities",
+      "God Backstories",
+      "Faction page",
+      "Mythos Gates Codex"
+    ],
+    "developmentStatus": "Playable deity backstory aligned to Mythos Gates identity.",
+    "mythicSource": "Artemis",
+    "visualCanon": "Full-body living myth-source Deity, not a costume: Artemis shows living marble-light bodies, bronze cuirasses, laurel circuits, aegis scales, thunder tribunal halos, oracle smoke, amphitheater armor curves, hoplite shield geometry, winged victory accents, gold-blue skyfire, carved but non-readable relief bands.. Role silhouette must read as Range faith. Materials include living white marble, warm bronze, laurel green, aegis scale gold, storm blue, oracle violet smoke, ambrosial ivory. The design must feel older than human mythology and avoid generic toga costume, Roman gladiator confusion, marble statue stiffness, robot bronze automaton, sci-fi halo, neon arena grid.",
+    "entityName": "Artemis",
+    "title": "Dominion",
+    "updated": "2026-08-29",
+    "displayEntityType": "Playable God",
+    "mythosGatesCanon": {
+      "brand": "Mythos Gates",
+      "currentChapter": "Ascension",
+      "sourceRealm": "Olympian",
+      "mythosGate": "",
+      "identityRule": "Artemis is the actual god of their source mythology, never a mortal hero.",
+      "arcRule": "Ascension restores existing divine power; it does not make the character a god for the first time.",
+      "mysteryRule": "The backstory may reveal how this deity interacts with the Mythos Gates but must not resolve the full origin."
+    }
+  },
+  {
+    "id": "MG-BACKSTORY-DEITY-030",
+    "entityId": "MG-DEITY-030",
+    "entityType": "Deity",
+    "name": "Susanoo",
+    "slug": "susanoo",
+    "factionId": "MG-FACTION-004",
+    "faction": "Kami",
+    "faith_trigger": "Epic",
+    "rarity": "Epic",
+    "status": "Mythos Gates Backstory Ready",
+    "storyArcIds": [],
+    "campaignHooks": [],
+    "loreTies": [
+      "Susanoo embodies Dominion within Kami.",
+      "MYTHOS_GATES_CORE_UNIVERSE",
+      "ASCENSION_CURRENT_ARC_ONLY",
+      "PLAYABLE_DEITIES_ARE_ACTUAL_GODS",
+      "ONE_DEITY_ENTERS_PER_DUNGEON"
+    ],
+    "shortBackstory": "Susanoo is a playable god in Mythos Gates: Ascension. Susanoo is a colossal Kami controller from The Sacred Kingdoms. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Kami controller office: terrain law, threshold command, battlefield geometry; Kitsune/Inari echoes: foxfire, shapeshift, messengers, rice/abundance.",
+    "chapters": [
+      {
+        "title": "Divine Origin",
+        "text": "Susanoo is the actual god recognized by their source culture, born from the supernatural laws of their realm. Their domain determines their symbols, weapons, posture, combat instincts, and relationship to sacred authority."
+      },
+      {
+        "title": "Faction Bond",
+        "text": "Within Kami, Susanoo expresses the civilization rather than merely representing it. Their visual identity carries the materials, beauty standards, and divine symbols of their realm."
+      },
+      {
+        "title": "Mythos Gate Wound",
+        "text": "During the Ascension era, Susanoo can interact with their Mythos Gate because divine beings are intrinsically connected to their Realms. The Gate is a mysterious boundary where separate mythological realities become traversable."
+      },
+      {
+        "title": "Dungeon Role",
+        "text": "When selected by the player, Susanoo enters the dungeon alone as one god against multiple enemies. Every encounter tests how their divine power survives pressure from creatures and rival Realm laws."
+      },
+      {
+        "title": "Ascension Conflict",
+        "text": "Ascension means restoration and evolution of Susanoo's existing divine power. Their personal conflict is to recover strength without reducing their mythology into raw fuel for the crisis."
+      }
+    ],
+    "relationshipHooks": [
+      "Faction witnesses interpret how Susanoo crosses their Gate.",
+      "Rival deities challenge the limits of cross-Realm travel.",
+      "Dungeon lore pickups reveal Gate mystery."
+    ],
+    "readableUnder": [
+      "Deities",
+      "God Backstories",
+      "Faction page",
+      "Mythos Gates Codex"
+    ],
+    "developmentStatus": "Playable deity backstory aligned to Mythos Gates identity.",
+    "mythicSource": "Susanoo",
+    "visualCanon": "Full-body living myth-source Deity, not a costume: Susanoo shows torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash.. Role silhouette must read as Disruption faith. Materials include lacquered shrine red, aged cedar, white paper shide, braided straw rope, moonlit silk, black ink smoke, foxfire blue. The design must feel older than human mythology and avoid anime mecha samurai, generic ninja, literal shrine body, plastic kimono costume, random kanji text, neon cyberpunk.",
+    "entityName": "Susanoo",
+    "title": "Dominion",
+    "updated": "2026-08-29",
+    "displayEntityType": "Playable God",
+    "mythosGatesCanon": {
+      "brand": "Mythos Gates",
+      "currentChapter": "Ascension",
+      "sourceRealm": "Kami",
+      "mythosGate": "",
+      "identityRule": "Susanoo is the actual god of their source mythology, never a mortal hero.",
+      "arcRule": "Ascension restores existing divine power; it does not make the character a god for the first time.",
+      "mysteryRule": "The backstory may reveal how this deity interacts with the Mythos Gates but must not resolve the full origin."
+    }
+  },
+  {
+    "id": "MG-BACKSTORY-DEITY-031",
+    "entityId": "MG-DEITY-031",
+    "entityType": "Deity",
+    "name": "Izanami",
+    "slug": "izanami",
+    "factionId": "MG-FACTION-004",
+    "faction": "Kami",
+    "faith_trigger": "Rare",
+    "rarity": "Rare",
+    "status": "Mythos Gates Backstory Ready",
+    "storyArcIds": [],
+    "campaignHooks": [],
+    "loreTies": [
+      "Izanami embodies Fracture within Kami.",
+      "MYTHOS_GATES_CORE_UNIVERSE",
+      "ASCENSION_CURRENT_ARC_ONLY",
+      "PLAYABLE_DEITIES_ARE_ACTUAL_GODS",
+      "ONE_DEITY_ENTERS_PER_DUNGEON"
+    ],
+    "shortBackstory": "Izanami is a playable god in Mythos Gates: Ascension. Izanami is a colossal Kami breaker from The Sacred Kingdoms. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Kami breaker office: judgement rupture, armor sundering, trial by force; Tengu: mountain wind, discipline, masks, feathers.",
+    "chapters": [
+      {
+        "title": "Divine Origin",
+        "text": "Izanami is the actual god recognized by their source culture, born from the supernatural laws of their realm. Their domain determines their symbols, weapons, posture, combat instincts, and relationship to sacred authority."
+      },
+      {
+        "title": "Faction Bond",
+        "text": "Within Kami, Izanami expresses the civilization rather than merely representing it. Their visual identity carries the materials, beauty standards, and divine symbols of their realm."
+      },
+      {
+        "title": "Mythos Gate Wound",
+        "text": "During the Ascension era, Izanami can interact with their Mythos Gate because divine beings are intrinsically connected to their Realms. The Gate is a mysterious boundary where separate mythological realities become traversable."
+      },
+      {
+        "title": "Dungeon Role",
+        "text": "When selected by the player, Izanami enters the dungeon alone as one god against multiple enemies. Every encounter tests how their divine power survives pressure from creatures and rival Realm laws."
+      },
+      {
+        "title": "Ascension Conflict",
+        "text": "Ascension means restoration and evolution of Izanami's existing divine power. Their personal conflict is to recover strength without reducing their mythology into raw fuel for the crisis."
+      }
+    ],
+    "relationshipHooks": [
+      "Faction witnesses interpret how Izanami crosses their Gate.",
+      "Rival deities challenge the limits of cross-Realm travel.",
+      "Dungeon lore pickups reveal Gate mystery."
+    ],
+    "readableUnder": [
+      "Deities",
+      "God Backstories",
+      "Faction page",
+      "Mythos Gates Codex"
+    ],
+    "developmentStatus": "Playable deity backstory aligned to Mythos Gates identity.",
+    "mythicSource": "Izanami",
+    "visualCanon": "Full-body living myth-source Deity, not a costume: Izanami shows torii silhouettes, shrine lacquer red, white paper shide, braided shimenawa cords, mirror discs, foxfire blue, ink-wash smoke, cedar bark, moonlit silk, oni iron, tengu feather wind, dragon-rain scales, mask geometry, seasonal petals and ash.. Role silhouette must read as Endurance faith. Materials include lacquered shrine red, aged cedar, white paper shide, braided straw rope, moonlit silk, black ink smoke, foxfire blue. The design must feel older than human mythology and avoid anime mecha samurai, generic ninja, literal shrine body, plastic kimono costume, random kanji text, neon cyberpunk.",
+    "entityName": "Izanami",
+    "title": "Fracture",
+    "updated": "2026-08-29",
+    "displayEntityType": "Playable God",
+    "mythosGatesCanon": {
+      "brand": "Mythos Gates",
+      "currentChapter": "Ascension",
+      "sourceRealm": "Kami",
+      "mythosGate": "",
+      "identityRule": "Izanami is the actual god of their source mythology, never a mortal hero.",
+      "arcRule": "Ascension restores existing divine power; it does not make the character a god for the first time.",
+      "mysteryRule": "The backstory may reveal how this deity interacts with the Mythos Gates but must not resolve the full origin."
+    }
+  },
+  {
+    "id": "MG-BACKSTORY-DEITY-038",
+    "entityId": "MG-DEITY-038",
+    "entityType": "Deity",
+    "name": "Brigid",
+    "slug": "brigid",
+    "factionId": "MG-FACTION-005",
+    "faction": "Tuatha",
+    "faith_trigger": "Epic",
+    "rarity": "Epic",
+    "status": "Mythos Gates Backstory Ready",
+    "storyArcIds": [],
+    "campaignHooks": [],
+    "loreTies": [
+      "Brigid embodies Conduit within Tuatha.",
+      "MYTHOS_GATES_CORE_UNIVERSE",
+      "ASCENSION_CURRENT_ARC_ONLY",
+      "PLAYABLE_DEITIES_ARE_ACTUAL_GODS",
+      "ONE_DEITY_ENTERS_PER_DUNGEON"
+    ],
+    "shortBackstory": "Brigid is a playable god in Mythos Gates: Ascension. Brigid is a colossal Tuatha battery from Avalora. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Tuatha battery office: renewal engine, resource hearth, stored sacred force; Aos S\u00ed/S\u00eddhe: mound gates, hidden courts, fae ancestry.",
+    "chapters": [
+      {
+        "title": "Divine Origin",
+        "text": "Brigid is the actual god recognized by their source culture, born from the supernatural laws of their realm. Their domain determines their symbols, weapons, posture, combat instincts, and relationship to sacred authority."
+      },
+      {
+        "title": "Faction Bond",
+        "text": "Within Tuatha, Brigid expresses the civilization rather than merely representing it. Their visual identity carries the materials, beauty standards, and divine symbols of their realm."
+      },
+      {
+        "title": "Mythos Gate Wound",
+        "text": "During the Ascension era, Brigid can interact with their Mythos Gate because divine beings are intrinsically connected to their Realms. The Gate is a mysterious boundary where separate mythological realities become traversable."
+      },
+      {
+        "title": "Dungeon Role",
+        "text": "When selected by the player, Brigid enters the dungeon alone as one god against multiple enemies. Every encounter tests how their divine power survives pressure from creatures and rival Realm laws."
+      },
+      {
+        "title": "Ascension Conflict",
+        "text": "Ascension means restoration and evolution of Brigid's existing divine power. Their personal conflict is to recover strength without reducing their mythology into raw fuel for the crisis."
+      }
+    ],
+    "relationshipHooks": [
+      "Faction witnesses interpret how Brigid crosses their Gate.",
+      "Rival deities challenge the limits of cross-Realm travel.",
+      "Dungeon lore pickups reveal Gate mystery."
+    ],
+    "readableUnder": [
+      "Deities",
+      "God Backstories",
+      "Faction page",
+      "Mythos Gates Codex"
+    ],
+    "developmentStatus": "Playable deity backstory aligned to Mythos Gates identity.",
+    "mythicSource": "Brigid",
+    "visualCanon": "Full-body living myth-source Deity, not a costume: Brigid shows silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.. Role silhouette must read as Conduit faith. Materials include moon silver, living oak bark, thorn vine, moss velvet, green-gold light, fae glass, crow black feather. The design must feel older than human mythology and avoid generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume.",
+    "entityName": "Brigid",
+    "title": "Conduit",
+    "updated": "2026-08-29",
+    "displayEntityType": "Playable God",
+    "mythosGatesCanon": {
+      "brand": "Mythos Gates",
+      "currentChapter": "Ascension",
+      "sourceRealm": "Tuatha",
+      "mythosGate": "",
+      "identityRule": "Brigid is the actual god of their source mythology, never a mortal hero.",
+      "arcRule": "Ascension restores existing divine power; it does not make the character a god for the first time.",
+      "mysteryRule": "The backstory may reveal how this deity interacts with the Mythos Gates but must not resolve the full origin."
+    }
+  },
+  {
+    "id": "MG-BACKSTORY-DEITY-039",
+    "entityId": "MG-DEITY-039",
+    "entityType": "Deity",
+    "name": "Morrigan",
+    "slug": "morrigan",
+    "factionId": "MG-FACTION-005",
+    "faction": "Tuatha",
+    "faith_trigger": "Epic",
+    "rarity": "Epic",
+    "status": "Mythos Gates Backstory Ready",
+    "storyArcIds": [],
+    "campaignHooks": [],
+    "loreTies": [
+      "Morrigan embodies Dominion within Tuatha.",
+      "MYTHOS_GATES_CORE_UNIVERSE",
+      "ASCENSION_CURRENT_ARC_ONLY",
+      "PLAYABLE_DEITIES_ARE_ACTUAL_GODS",
+      "ONE_DEITY_ENTERS_PER_DUNGEON"
+    ],
+    "shortBackstory": "Morrigan is a playable god in Mythos Gates: Ascension. Morr\u00edgan is a colossal Tuatha controller from Avalora. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Tuatha controller office: terrain law, threshold command, battlefield geometry; T\u00edr na n\u00d3g: youth, impossible time, otherworld beauty.",
+    "chapters": [
+      {
+        "title": "Divine Origin",
+        "text": "Morrigan is the actual god recognized by their source culture, born from the supernatural laws of their realm. Their domain determines their symbols, weapons, posture, combat instincts, and relationship to sacred authority."
+      },
+      {
+        "title": "Faction Bond",
+        "text": "Within Tuatha, Morrigan expresses the civilization rather than merely representing it. Their visual identity carries the materials, beauty standards, and divine symbols of their realm."
+      },
+      {
+        "title": "Mythos Gate Wound",
+        "text": "During the Ascension era, Morrigan can interact with their Mythos Gate because divine beings are intrinsically connected to their Realms. The Gate is a mysterious boundary where separate mythological realities become traversable."
+      },
+      {
+        "title": "Dungeon Role",
+        "text": "When selected by the player, Morrigan enters the dungeon alone as one god against multiple enemies. Every encounter tests how their divine power survives pressure from creatures and rival Realm laws."
+      },
+      {
+        "title": "Ascension Conflict",
+        "text": "Ascension means restoration and evolution of Morrigan's existing divine power. Their personal conflict is to recover strength without reducing their mythology into raw fuel for the crisis."
+      }
+    ],
+    "relationshipHooks": [
+      "Faction witnesses interpret how Morrigan crosses their Gate.",
+      "Rival deities challenge the limits of cross-Realm travel.",
+      "Dungeon lore pickups reveal Gate mystery."
+    ],
+    "readableUnder": [
+      "Deities",
+      "God Backstories",
+      "Faction page",
+      "Mythos Gates Codex"
+    ],
+    "developmentStatus": "Playable deity backstory aligned to Mythos Gates identity.",
+    "mythicSource": "Morrigan",
+    "visualCanon": "Full-body living myth-source Deity, not a costume: Morr\u00edgan shows silver branch crowns, moonlit green-gold, living bark armor, woven thorn mantles, mist veils, standing stone geometry, battle-crow omens, cauldron glow, druid knots as organic growth not decoration, geas scars, fae glass, root-lace anatomy.. Role silhouette must read as Shadow faith. Materials include moon silver, living oak bark, thorn vine, moss velvet, green-gold light, fae glass, crow black feather. The design must feel older than human mythology and avoid generic elf, wood block giant, treehouse body, cute fairy wings, random Celtic clipart knots, Renaissance costume.",
+    "entityName": "Morrigan",
+    "title": "Dominion",
+    "updated": "2026-08-29",
+    "displayEntityType": "Playable God",
+    "mythosGatesCanon": {
+      "brand": "Mythos Gates",
+      "currentChapter": "Ascension",
+      "sourceRealm": "Tuatha",
+      "mythosGate": "",
+      "identityRule": "Morrigan is the actual god of their source mythology, never a mortal hero.",
+      "arcRule": "Ascension restores existing divine power; it does not make the character a god for the first time.",
+      "mysteryRule": "The backstory may reveal how this deity interacts with the Mythos Gates but must not resolve the full origin."
+    }
+  },
+  {
+    "id": "MG-BACKSTORY-DEITY-047",
+    "entityId": "MG-DEITY-047",
+    "entityType": "Deity",
+    "name": "Gabriel",
+    "slug": "gabriel",
+    "factionId": "MG-FACTION-006",
+    "faction": "Empyrean",
+    "faith_trigger": "Epic",
+    "rarity": "Epic",
+    "status": "Mythos Gates Backstory Ready",
+    "storyArcIds": [],
+    "campaignHooks": [],
+    "loreTies": [
+      "Gabriel embodies Conduit within Empyrean.",
+      "MYTHOS_GATES_CORE_UNIVERSE",
+      "ASCENSION_CURRENT_ARC_ONLY",
+      "PLAYABLE_DEITIES_ARE_ACTUAL_GODS",
+      "ONE_DEITY_ENTERS_PER_DUNGEON"
+    ],
+    "shortBackstory": "Gabriel is a playable god in Mythos Gates: Ascension. Gabriel is a colossal Empyrean battery from The Radiant Hierarchies. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Empyrean battery office: renewal engine, resource hearth, stored sacred force; Heavenly city/ladder: ascent, gates, vaults, radiant order.",
+    "chapters": [
+      {
+        "title": "Divine Origin",
+        "text": "Gabriel is the actual god recognized by their source culture, born from the supernatural laws of their realm. Their domain determines their symbols, weapons, posture, combat instincts, and relationship to sacred authority."
+      },
+      {
+        "title": "Faction Bond",
+        "text": "Within Empyrean, Gabriel expresses the civilization rather than merely representing it. Their visual identity carries the materials, beauty standards, and divine symbols of their realm."
+      },
+      {
+        "title": "Mythos Gate Wound",
+        "text": "During the Ascension era, Gabriel can interact with their Mythos Gate because divine beings are intrinsically connected to their Realms. The Gate is a mysterious boundary where separate mythological realities become traversable."
+      },
+      {
+        "title": "Dungeon Role",
+        "text": "When selected by the player, Gabriel enters the dungeon alone as one god against multiple enemies. Every encounter tests how their divine power survives pressure from creatures and rival Realm laws."
+      },
+      {
+        "title": "Ascension Conflict",
+        "text": "Ascension means restoration and evolution of Gabriel's existing divine power. Their personal conflict is to recover strength without reducing their mythology into raw fuel for the crisis."
+      }
+    ],
+    "relationshipHooks": [
+      "Faction witnesses interpret how Gabriel crosses their Gate.",
+      "Rival deities challenge the limits of cross-Realm travel.",
+      "Dungeon lore pickups reveal Gate mystery."
+    ],
+    "readableUnder": [
+      "Deities",
+      "God Backstories",
+      "Faction page",
+      "Mythos Gates Codex"
+    ],
+    "developmentStatus": "Playable deity backstory aligned to Mythos Gates identity.",
+    "mythicSource": "Gabriel",
+    "visualCanon": "Full-body living myth-source Deity, not a costume: Gabriel shows white-gold radiance, many-eye halos, glass armor, feathered and non-feathered wing geometries, bell-metal joints, choral vibration lines, living scroll seals, stair-ladders of light, cathedral vault anatomy, ophanim wheels, seraph fire, cherub guardian masks.. Role silhouette must read as Range faith. Materials include white gold, opal glass, bell bronze, pearl bone, blue-white holy fire, ivory scroll vellum, silver feather. The design must feel older than human mythology and avoid robot angel, spaceship armor, generic church costume, literal cathedral body, block tower silhouette, neon sci-fi halo.",
+    "entityName": "Gabriel",
+    "title": "Conduit",
+    "updated": "2026-08-29",
+    "displayEntityType": "Playable God",
+    "mythosGatesCanon": {
+      "brand": "Mythos Gates",
+      "currentChapter": "Ascension",
+      "sourceRealm": "Empyrean",
+      "mythosGate": "",
+      "identityRule": "Gabriel is the actual god of their source mythology, never a mortal hero.",
+      "arcRule": "Ascension restores existing divine power; it does not make the character a god for the first time.",
+      "mysteryRule": "The backstory may reveal how this deity interacts with the Mythos Gates but must not resolve the full origin."
+    }
+  },
+  {
+    "id": "MG-BACKSTORY-DEITY-049",
+    "entityId": "MG-DEITY-049",
+    "entityType": "Deity",
+    "name": "Jophiel",
+    "slug": "jophiel",
+    "factionId": "MG-FACTION-006",
+    "faction": "Empyrean",
+    "faith_trigger": "Legendary",
+    "rarity": "Legendary",
+    "status": "Mythos Gates Backstory Ready",
+    "storyArcIds": [],
+    "campaignHooks": [],
+    "loreTies": [
+      "Jophiel embodies Fracture within Empyrean.",
+      "MYTHOS_GATES_CORE_UNIVERSE",
+      "ASCENSION_CURRENT_ARC_ONLY",
+      "PLAYABLE_DEITIES_ARE_ACTUAL_GODS",
+      "ONE_DEITY_ENTERS_PER_DUNGEON"
+    ],
+    "shortBackstory": "Jophiel is a playable god in Mythos Gates: Ascension. Jophiel is the archer of the Empyrean host, whose arrows of pure light pierce not flesh but the shadows that cling to it. She is the \"Beauty of God\" \u2014 her divine bow fires bolts of illumination that blind the wicked and guide the righteous. She was the angel sent to expel Adam and Eve from Eden, and her arrows carry the weight of divine judgment wrapped in beauty.",
+    "chapters": [
+      {
+        "title": "Divine Origin",
+        "text": "Jophiel is the actual god recognized by their source culture, born from the supernatural laws of their realm. Their domain determines their symbols, weapons, posture, combat instincts, and relationship to sacred authority."
+      },
+      {
+        "title": "Faction Bond",
+        "text": "Within Empyrean, Jophiel expresses the civilization rather than merely representing it. Their visual identity carries the materials, beauty standards, and divine symbols of their realm."
+      },
+      {
+        "title": "Mythos Gate Wound",
+        "text": "During the Ascension era, Jophiel can interact with their Mythos Gate because divine beings are intrinsically connected to their Realms. The Gate is a mysterious boundary where separate mythological realities become traversable."
+      },
+      {
+        "title": "Dungeon Role",
+        "text": "When selected by the player, Jophiel enters the dungeon alone as one god against multiple enemies. Every encounter tests how their divine power survives pressure from creatures and rival Realm laws."
+      },
+      {
+        "title": "Ascension Conflict",
+        "text": "Ascension means restoration and evolution of Jophiel's existing divine power. Their personal conflict is to recover strength without reducing their mythology into raw fuel for the crisis."
+      }
+    ],
+    "relationshipHooks": [
+      "Faction witnesses interpret how Jophiel crosses their Gate.",
+      "Rival deities challenge the limits of cross-Realm travel.",
+      "Dungeon lore pickups reveal Gate mystery."
+    ],
+    "readableUnder": [
+      "Deities",
+      "God Backstories",
+      "Faction page",
+      "Mythos Gates Codex"
+    ],
+    "developmentStatus": "Playable deity backstory aligned to Mythos Gates identity.",
+    "mythicSource": "Jophiel",
+    "visualCanon": "Colossal divine archer clad in living-light armor. Her form radiates white-gold luminescence that bleeds through gaps in her celestial plate. She wears a full helm of radiant gold \u2014 her true form too brilliant to perceive directly. Her divine bow is crafted from solidified light \u2014 translucent golden-amber with white energy bowstring. Light arrows materialize from nothing. Warm golden aura with motes of light floating around her. Low camera angle showing colossal scale.",
+    "entityName": "Jophiel",
+    "title": "Fracture",
+    "updated": "2026-08-29",
+    "displayEntityType": "Playable God",
+    "mythosGatesCanon": {
+      "brand": "Mythos Gates",
+      "currentChapter": "Ascension",
+      "sourceRealm": "Empyrean",
+      "mythosGate": "",
+      "identityRule": "Jophiel is the actual god of their source mythology, never a mortal hero.",
+      "arcRule": "Ascension restores existing divine power; it does not make the character a god for the first time.",
+      "mysteryRule": "The backstory may reveal how this deity interacts with the Mythos Gates but must not resolve the full origin."
+    }
+  },
+  {
+    "id": "MG-BACKSTORY-DEITY-056",
+    "entityId": "MG-DEITY-056",
+    "entityType": "Deity",
+    "name": "Asmodeus",
+    "slug": "asmodeus",
+    "factionId": "MG-FACTION-007",
+    "faction": "Infernal Dominion",
+    "faith_trigger": "Epic",
+    "rarity": "Epic",
+    "status": "Mythos Gates Backstory Ready",
+    "storyArcIds": [],
+    "campaignHooks": [],
+    "loreTies": [
+      "Asmodeus embodies Conduit within Infernal Dominion.",
+      "MYTHOS_GATES_CORE_UNIVERSE",
+      "ASCENSION_CURRENT_ARC_ONLY",
+      "PLAYABLE_DEITIES_ARE_ACTUAL_GODS",
+      "ONE_DEITY_ENTERS_PER_DUNGEON"
+    ],
+    "shortBackstory": "Asmodeus is a playable god in Mythos Gates: Ascension. Asmodeus is a colossal Infernal Dominion battery from The Infernal Dominion. Humans later copied fragments of this being into myth, ritual, monster lore, and sacred art, but the Deity is the older source: Infernal Dominion battery office: renewal engine, resource hearth, stored sacred force; Judges/executioners: sentencing, sin weights, punishments made visible.",
+    "chapters": [
+      {
+        "title": "Divine Origin",
+        "text": "Asmodeus is the actual god recognized by their source culture, born from the supernatural laws of their realm. Their domain determines their symbols, weapons, posture, combat instincts, and relationship to sacred authority."
+      },
+      {
+        "title": "Faction Bond",
+        "text": "Within Infernal Dominion, Asmodeus expresses the civilization rather than merely representing it. Their visual identity carries the materials, beauty standards, and divine symbols of their realm."
+      },
+      {
+        "title": "Mythos Gate Wound",
+        "text": "During the Ascension era, Asmodeus can interact with their Mythos Gate because divine beings are intrinsically connected to their Realms. The Gate is a mysterious boundary where separate mythological realities become traversable."
+      },
+      {
+        "title": "Dungeon Role",
+        "text": "When selected by the player, Asmodeus enters the dungeon alone as one god against multiple enemies. Every encounter tests how their divine power survives pressure from creatures and rival Realm laws."
+      },
+      {
+        "title": "Ascension Conflict",
+        "text": "Ascension means restoration and evolution of Asmodeus's existing divine power. Their personal conflict is to recover strength without reducing their mythology into raw fuel for the crisis."
+      }
+    ],
+    "relationshipHooks": [
+      "Faction witnesses interpret how Asmodeus crosses their Gate.",
+      "Rival deities challenge the limits of cross-Realm travel.",
+      "Dungeon lore pickups reveal Gate mystery."
+    ],
+    "readableUnder": [
+      "Deities",
+      "God Backstories",
+      "Faction page",
+      "Mythos Gates Codex"
+    ],
+    "developmentStatus": "Playable deity backstory aligned to Mythos Gates identity.",
+    "mythicSource": "Asmodeus",
+    "visualCanon": "Full-body living myth-source Deity, not a costume: Asmodeus shows black iron crowns, volcanic glass armor, contract parchment skin, chain mantles, ember fissures, horn hierarchies, bat/dragon wing shadows, clawed court gloves, blood wax seals, ash velvet, obsidian thrones, coin/debt motifs, execution architecture.. Role silhouette must read as Fracture faith. Materials include black iron, volcanic glass, obsidian, blood wax, ash velvet, molten gold, charred parchment. The design must feel older than human mythology and avoid red robot demon, generic Halloween devil, sci-fi cables, literal castle armor, block fortress body, cartoon pitchfork.",
+    "entityName": "Asmodeus",
+    "title": "Conduit",
+    "updated": "2026-08-29",
+    "displayEntityType": "Playable God",
+    "mythosGatesCanon": {
+      "brand": "Mythos Gates",
+      "currentChapter": "Ascension",
+      "sourceRealm": "Infernal Dominion",
+      "mythosGate": "",
+      "identityRule": "Asmodeus is the actual god of their source mythology, never a mortal hero.",
+      "arcRule": "Ascension restores existing divine power; it does not make the character a god for the first time.",
+      "mysteryRule": "The backstory may reveal how this deity interacts with the Mythos Gates but must not resolve the full origin."
+    }
   }
 ]

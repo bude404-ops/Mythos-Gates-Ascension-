@@ -16,7 +16,7 @@
     "npcs": 8,
     "creatures": 41,
     "hollowEncounterSystem": 1,
-    "characterBackstories": 75,
+    "characterBackstories": 89,
     "maps": 12,
     "campaigns": 8,
     "chapters": 24,
@@ -90,12 +90,12 @@
     "assetRegistry": 1,
     "githubAssetRepository": 1,
     "blueprint3dSystem": 1,
-    "blueprint3dProductionQueue": 97,
+    "blueprint3dProductionQueue": 99,
     "mythosGatesDungeonRoutes": 7,
     "hollowCreatures": 16,
     "artMapPrompts": 12,
     "artCampaignPrompts": 7,
-    "blueprint3dAssets": 97,
+    "blueprint3dAssets": 99,
     "blueprint3dDeities": 28,
     "blueprint3dBattlefields": 12,
     "blueprint3dGates": 7,
@@ -282,8 +282,8 @@
     },
     "character-backstories.json": {
       "path": "data/character-backstories.json",
-      "bytes": 277026,
-      "sha256": "f1009690ae6a102dea5823776b5b3b9ea78730669e9cbcf62dfffd2e5bd906a0"
+      "bytes": 333630,
+      "sha256": "67521598d0ee66a780a90985f24836463bb95ee3574e8c077e46fa6e1b4439e8"
     },
     "maps.json": {
       "path": "data/maps.json",
@@ -647,13 +647,13 @@
     },
     "3d-blueprint-system.json": {
       "path": "data/3d-blueprint-system.json",
-      "bytes": 1526,
-      "sha256": "09df971feb3bbe4ee4cbc2863b158cd0c62b3e6ae699a3f5af05e5fb916dba74"
+      "bytes": 1524,
+      "sha256": "d292f138f81f78d9ae49d12dbc54032002e6813b268f0e700cc92988014fec47"
     },
     "3d-production-queue.json": {
       "path": "data/3d-production-queue.json",
-      "bytes": 103632,
-      "sha256": "f9f6e10335d682d39f1f8fb82a175f1531c7e2c3ae74bc62d3fe63ec31d0398a"
+      "bytes": 105364,
+      "sha256": "a1e10f6bdd9428fc0c205bccb0ed29e8c7d6de4a1a3753df156b8e98c2bbb163"
     },
     "mythos-gates-dungeon-route-registry.json": {
       "path": "data/mythos-gates-dungeon-route-registry.json",
@@ -806,7 +806,7 @@
   "blueprint3dSystem": {
     "status": "IMPLEMENTED",
     "director": "3D Asset Director",
-    "registryTotal": 97,
+    "registryTotal": 99,
     "registry": "3D_Blueprints/Registry/blueprint-registry.json",
     "productionQueue": "data/3d-production-queue.json",
     "firstHandoffBatch": [

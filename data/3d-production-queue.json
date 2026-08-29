@@ -10,7 +10,7 @@
   "canonAuthority": "Lore Director and current canonical game data remain authoritative; queue rows may not invent or alter lore.",
   "productionRule": "Environment and Gate blockouts advance before character polish so playable space scale is protected.",
   "coverage": {
-    "total": 136,
+    "total": 99,
     "byStatus": {
       "READY_FOR_3D": 3,
       "BLUEPRINT_IN_PROGRESS": 168
@@ -583,7 +583,7 @@
         "GLOBAL_REF_002",
         "GLOBAL_REF_003"
       ],
-      "sourcePackage": "3D_Blueprints/Battlefields/BATTLEFIELD_008_mythos-gate-sun-throne/metadata.json",
+      "sourcePackage": "3D_Blueprints/Battlefields/BATTLEFIELD_008_deity-gate-sun-throne/metadata.json",
       "handoffInstruction": "Advance playable space and Gate landmark blockouts before character polish.",
       "acceptanceCriteria": [
         "Blockout supports one-active-deity readability.",
@@ -2627,6 +2627,50 @@
         "Silhouette reads at mobile tactical distance.",
         "Faction source-culture materials are clear.",
         "Telegraphs support one deity vs many combat."
+      ]
+    },
+    {
+      "assetId": "CREATURE_040",
+      "assetType": "CREATURE",
+      "canonicalEntityId": "MG-CREATURE-040",
+      "canonicalName": "Ancient World Boss: The Gate Counter",
+      "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_040_the-gate-counter/metadata.json",
+      "status": "QUEUED",
+      "priority": "Low",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
+      "director": "3D Asset Director",
+      "dependsOn": [
+        "GLOBAL_REF_001",
+        "GLOBAL_REF_002",
+        "GLOBAL_REF_003"
+      ],
+      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
+      "acceptanceCriteria": [
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
+      ]
+    },
+    {
+      "assetId": "CREATURE_041",
+      "assetType": "CREATURE",
+      "canonicalEntityId": "MG-CREATURE-041",
+      "canonicalName": "Ancient World Boss: The Forgotten Giant",
+      "sourcePackage": "3D_Blueprints/Characters/Creatures/CREATURE_041_the-forgotten-giant/metadata.json",
+      "status": "QUEUED",
+      "priority": "Low",
+      "lane": "CREATURE_READABILITY_PASS",
+      "phase": "Enemy Readability Model Brief",
+      "director": "3D Asset Director",
+      "dependsOn": [
+        "GLOBAL_REF_001",
+        "GLOBAL_REF_002",
+        "GLOBAL_REF_003"
+      ],
+      "handoffInstruction": "Preserve counterplay silhouette, hitbox, and animation telegraph needs.",
+      "acceptanceCriteria": [
+        "Threat silhouette, telegraph zones, and counterplay readability are named.",
+        "Runtime AI role remains tied to creature canon."
       ]
     }
   ],
