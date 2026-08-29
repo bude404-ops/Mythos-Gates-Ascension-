@@ -1,0 +1,221 @@
+{
+  "deityId": "MG-DEITY-057",
+  "name": "Lilith",
+  "faction": "Infernal Dominion",
+  "role": "Archer",
+  "weaponAnimClass": "BowRanged",
+  "meshAsset": {
+    "sourceArt": "art/approved/MG-DEITY-057_lilith.png",
+    "modelConversion": "TRELLIS_2",
+    "meshPath": "/Game/Meshes/Deities/MG-DEITY-057_Lilith",
+    "skeleton": "/Game/Animation/MG_MasterSkeleton",
+    "retargeter": "/Game/Animation/Retargeters/MG_Retarget_Lilith",
+    "lodSettings": {
+      "lod0": {
+        "screenSize": 0.85,
+        "bones": 87,
+        "triangles": "max"
+      },
+      "lod1": {
+        "screenSize": 0.5,
+        "bones": 45,
+        "triangles": "60%"
+      },
+      "lod2": {
+        "screenSize": 0.25,
+        "bones": 25,
+        "triangles": "30%"
+      },
+      "lod3": {
+        "screenSize": 0.1,
+        "bones": 12,
+        "triangles": "15%"
+      }
+    }
+  },
+  "materialSlots": [
+    {
+      "slot": "Skin",
+      "material": "/Game/Materials/Deities/Lilith/M_Lilith_Skin",
+      "properties": "Infernal Dominion faction skin standard"
+    },
+    {
+      "slot": "Armor",
+      "material": "/Game/Materials/Deities/Lilith/M_Lilith_Armor",
+      "properties": "Infernal Dominion faction armor"
+    },
+    {
+      "slot": "Weapon",
+      "material": "/Game/Materials/Deities/Lilith/M_Lilith_Weapon",
+      "properties": "Shadow Bow (living shadow)"
+    },
+    {
+      "slot": "Cloth",
+      "material": "/Game/Materials/Deities/Lilith/M_Lilith_Cloth",
+      "properties": "Infernal living shadow cape (anti-physics)"
+    },
+    {
+      "slot": "VFX",
+      "material": "/Game/Materials/Deities/Lilith/M_Lilith_VFX",
+      "properties": "Infernal Dominion faction VFX"
+    }
+  ],
+  "skeletalBones": {
+    "enabledBones": "all 87",
+    "clothBones": [
+      "cape_01-04",
+      "skirt_01_L-02_L",
+      "skirt_01_R-02_R",
+      "skirt_01_B-02_B",
+      "skirt_01_F-02_F"
+    ],
+    "wingBones": "shadow tendrils (optional 3-seg)",
+    "customSockets": [
+      {
+        "socket": "vfx_socket_Hands",
+        "purpose": "anti-light (inverted glow)"
+      },
+      {
+        "socket": "vfx_socket_Weapon",
+        "purpose": "shadow arrow trail"
+      },
+      {
+        "socket": "vfx_socket_Ground",
+        "purpose": "fracture cracks"
+      },
+      {
+        "socket": "vfx_socket_Chest",
+        "purpose": "fracture markings"
+      }
+    ]
+  },
+  "ikChains": {
+    "footIK": {
+      "enabled": true,
+      "type": "2-bone",
+      "bones": "thigh->calf->foot both legs"
+    },
+    "handIK": {
+      "enabled": true,
+      "type": "2-bone",
+      "bones": "upperarm->lowerarm->hand both arms"
+    },
+    "lookAtIK": {
+      "enabled": true,
+      "maxRotation": 30
+    },
+    "weaponGripIK": {
+      "enabled": true,
+      "hand": "right",
+      "target": "weapon_socket_R"
+    }
+  },
+  "clothPhysics": {
+    "enabled": true,
+    "simulation": "UE5 Chaos Cloth",
+    "pieces": [
+      {
+        "name": "living shadow cape (anti-physics)",
+        "wind": -0.3,
+        "gravity": 0.7
+      }
+    ]
+  },
+  "animMontage": {
+    "montagePath": "/Game/Animation/Montages/MG_Lilith_BowRanged_Montage",
+    "weaponClass": "BowRanged",
+    "sections": [
+      {
+        "section": "Spawn",
+        "duration": 1.5,
+        "description": "Bow materializes, draw stance"
+      },
+      {
+        "section": "Idle",
+        "duration": 0.0,
+        "description": "Bow held low, ready"
+      },
+      {
+        "section": "Walk",
+        "duration": 0.0,
+        "description": "Bow at side, light steps"
+      },
+      {
+        "section": "BasicAttack_1",
+        "duration": 0.5,
+        "description": "Quick draw + fire"
+      },
+      {
+        "section": "BasicAttack_2",
+        "duration": 0.6,
+        "description": "Side-step draw + fire"
+      },
+      {
+        "section": "BasicAttack_3",
+        "duration": 0.7,
+        "description": "Power draw + fire (charged)"
+      },
+      {
+        "section": "Ability1",
+        "duration": 1.2,
+        "description": "Multi-arrow volley"
+      },
+      {
+        "section": "Ability2",
+        "duration": 1.5,
+        "description": "Aimed piercing shot"
+      },
+      {
+        "section": "Signature",
+        "duration": 2.0,
+        "description": "Faction-specific arrow rain"
+      },
+      {
+        "section": "Ultimate",
+        "duration": 3.0,
+        "description": "Full screen dramatic"
+      },
+      {
+        "section": "DodgeEvade",
+        "duration": 0.4,
+        "description": "Quick side-step"
+      },
+      {
+        "section": "ParryBlock",
+        "duration": 0.5,
+        "description": "Bow guard raise"
+      },
+      {
+        "section": "HitReact",
+        "duration": 0.5,
+        "description": "Bow drops, stagger"
+      },
+      {
+        "section": "DodgeDash",
+        "duration": 0.4,
+        "description": "Combat roll while nocking"
+      },
+      {
+        "section": "Death",
+        "duration": 2.0,
+        "description": "Fall back, bow slips away"
+      },
+      {
+        "section": "Respawn",
+        "duration": 1.5,
+        "description": "Bow reforms, stance reset"
+      }
+    ]
+  },
+  "animBlueprint": {
+    "path": "/Game/Animation/AnimBPs/MG_AnimBP_Lilith",
+    "parent": "MG_AnimBP_Master",
+    "weaponClassOverride": "BowRanged",
+    "stateMachines": [
+      "Locomotion",
+      "Combat",
+      "Reaction"
+    ]
+  },
+  "specialNotes": "Anti-light shader, shadow-formed bow, bare feet, fracture corruption markings"
+}

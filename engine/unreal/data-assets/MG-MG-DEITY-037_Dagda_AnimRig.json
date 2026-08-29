@@ -1,0 +1,226 @@
+{
+  "deityId": "MG-DEITY-037",
+  "name": "Dagda",
+  "faction": "Tuatha",
+  "role": "Warrior",
+  "weaponAnimClass": "GreatWeapon",
+  "meshAsset": {
+    "sourceArt": "art/approved/MG-DEITY-037_dagda.png",
+    "modelConversion": "TRELLIS_2",
+    "meshPath": "/Game/Meshes/Deities/MG-DEITY-037_Dagda",
+    "skeleton": "/Game/Animation/MG_MasterSkeleton",
+    "retargeter": "/Game/Animation/Retargeters/MG_Retarget_Dagda",
+    "lodSettings": {
+      "lod0": {
+        "screenSize": 0.85,
+        "bones": 87,
+        "triangles": "max"
+      },
+      "lod1": {
+        "screenSize": 0.5,
+        "bones": 45,
+        "triangles": "60%"
+      },
+      "lod2": {
+        "screenSize": 0.25,
+        "bones": 25,
+        "triangles": "30%"
+      },
+      "lod3": {
+        "screenSize": 0.1,
+        "bones": 12,
+        "triangles": "15%"
+      }
+    }
+  },
+  "materialSlots": [
+    {
+      "slot": "Skin",
+      "material": "/Game/Materials/Deities/Dagda/M_Dagda_Skin",
+      "properties": "Tuatha faction skin standard"
+    },
+    {
+      "slot": "Armor",
+      "material": "/Game/Materials/Deities/Dagda/M_Dagda_Armor",
+      "properties": "Tuatha faction armor"
+    },
+    {
+      "slot": "Weapon",
+      "material": "/Game/Materials/Deities/Dagda/M_Dagda_Weapon",
+      "properties": "Oak Club + Cauldron-Lid Shield"
+    },
+    {
+      "slot": "Cloth",
+      "material": "/Game/Materials/Deities/Dagda/M_Dagda_Cloth",
+      "properties": "Tuatha organic cape"
+    },
+    {
+      "slot": "VFX",
+      "material": "/Game/Materials/Deities/Dagda/M_Dagda_VFX",
+      "properties": "Tuatha faction VFX"
+    }
+  ],
+  "skeletalBones": {
+    "enabledBones": "all 87",
+    "clothBones": [
+      "cape_01-04",
+      "skirt_01_L-02_L",
+      "skirt_01_R-02_R",
+      "skirt_01_B-02_B",
+      "skirt_01_F-02_F"
+    ],
+    "wingBones": "none",
+    "customSockets": [
+      {
+        "socket": "vfx_socket_Hands",
+        "purpose": "nature energy (roots/vines)"
+      },
+      {
+        "socket": "vfx_socket_Weapon",
+        "purpose": "club impact nature burst"
+      },
+      {
+        "socket": "vfx_socket_Ground",
+        "purpose": "roots/moss/amber light"
+      },
+      {
+        "socket": "vfx_socket_Shield",
+        "purpose": "cauldron-lid bronze pulse"
+      }
+    ]
+  },
+  "ikChains": {
+    "footIK": {
+      "enabled": true,
+      "type": "2-bone",
+      "bones": "thigh->calf->foot both legs"
+    },
+    "handIK": {
+      "enabled": true,
+      "type": "2-bone",
+      "bones": "upperarm->lowerarm->hand both arms"
+    },
+    "lookAtIK": {
+      "enabled": true,
+      "maxRotation": 30
+    },
+    "weaponGripIK": {
+      "enabled": true,
+      "hand": "right",
+      "target": "weapon_socket_R"
+    }
+  },
+  "clothPhysics": {
+    "enabled": true,
+    "simulation": "UE5 Chaos Cloth",
+    "pieces": [
+      {
+        "name": "organic cape (vines)",
+        "wind": 0.4,
+        "gravity": 0.9
+      },
+      {
+        "name": "leather skirt",
+        "wind": 0.4,
+        "gravity": 0.9
+      }
+    ]
+  },
+  "animMontage": {
+    "montagePath": "/Game/Animation/Montages/MG_Dagda_GreatWeapon_Montage",
+    "weaponClass": "GreatWeapon",
+    "sections": [
+      {
+        "section": "Spawn",
+        "duration": 1.5,
+        "description": "Rise from ground effect"
+      },
+      {
+        "section": "Idle",
+        "duration": 0.0,
+        "description": "Wide stance, weapon on shoulder/at rest"
+      },
+      {
+        "section": "Walk",
+        "duration": 0.0,
+        "description": "Heavy steps, weapon sway"
+      },
+      {
+        "section": "BasicAttack_1",
+        "duration": 0.8,
+        "description": "Overhead swing"
+      },
+      {
+        "section": "BasicAttack_2",
+        "duration": 0.8,
+        "description": "Diagonal slash"
+      },
+      {
+        "section": "BasicAttack_3",
+        "duration": 0.9,
+        "description": "Horizontal sweep (combo finisher)"
+      },
+      {
+        "section": "Ability1",
+        "duration": 1.2,
+        "description": "Ground slam"
+      },
+      {
+        "section": "Ability2",
+        "duration": 1.5,
+        "description": "Charge + smash"
+      },
+      {
+        "section": "Signature",
+        "duration": 2.0,
+        "description": "Faction-specific heavy ult-charge"
+      },
+      {
+        "section": "Ultimate",
+        "duration": 3.0,
+        "description": "Full screen dramatic"
+      },
+      {
+        "section": "DodgeEvade",
+        "duration": 0.4,
+        "description": "Quick roll with weapon"
+      },
+      {
+        "section": "ParryBlock",
+        "duration": 0.5,
+        "description": "Weapon guard"
+      },
+      {
+        "section": "HitReact",
+        "duration": 0.5,
+        "description": "Stagger back"
+      },
+      {
+        "section": "DodgeDash",
+        "duration": 0.4,
+        "description": "Quick roll with weapon"
+      },
+      {
+        "section": "Death",
+        "duration": 2.0,
+        "description": "Fall forward, weapon drops"
+      },
+      {
+        "section": "Respawn",
+        "duration": 1.5,
+        "description": "Rise, weapon retrieved"
+      }
+    ]
+  },
+  "animBlueprint": {
+    "path": "/Game/Animation/AnimBPs/MG_AnimBP_Dagda",
+    "parent": "MG_AnimBP_Master",
+    "weaponClassOverride": "GreatWeapon",
+    "stateMachines": [
+      "Locomotion",
+      "Combat",
+      "Reaction"
+    ]
+  },
+  "specialNotes": "Dual-weapon (club + shield), largest character model, nature ground effects"
+}

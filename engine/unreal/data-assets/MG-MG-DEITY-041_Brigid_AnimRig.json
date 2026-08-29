@@ -1,0 +1,226 @@
+{
+  "deityId": "MG-DEITY-041",
+  "name": "Brigid",
+  "faction": "Tuatha",
+  "role": "Caster",
+  "weaponAnimClass": "StaffCaster",
+  "meshAsset": {
+    "sourceArt": "art/approved/MG-DEITY-041_brigid.png",
+    "modelConversion": "TRELLIS_2",
+    "meshPath": "/Game/Meshes/Deities/MG-DEITY-041_Brigid",
+    "skeleton": "/Game/Animation/MG_MasterSkeleton",
+    "retargeter": "/Game/Animation/Retargeters/MG_Retarget_Brigid",
+    "lodSettings": {
+      "lod0": {
+        "screenSize": 0.85,
+        "bones": 87,
+        "triangles": "max"
+      },
+      "lod1": {
+        "screenSize": 0.5,
+        "bones": 45,
+        "triangles": "60%"
+      },
+      "lod2": {
+        "screenSize": 0.25,
+        "bones": 25,
+        "triangles": "30%"
+      },
+      "lod3": {
+        "screenSize": 0.1,
+        "bones": 12,
+        "triangles": "15%"
+      }
+    }
+  },
+  "materialSlots": [
+    {
+      "slot": "Skin",
+      "material": "/Game/Materials/Deities/Brigid/M_Brigid_Skin",
+      "properties": "Tuatha faction skin standard"
+    },
+    {
+      "slot": "Armor",
+      "material": "/Game/Materials/Deities/Brigid/M_Brigid_Armor",
+      "properties": "Tuatha faction armor"
+    },
+    {
+      "slot": "Weapon",
+      "material": "/Game/Materials/Deities/Brigid/M_Brigid_Weapon",
+      "properties": "Smith Hammer + Fire Sickle"
+    },
+    {
+      "slot": "Cloth",
+      "material": "/Game/Materials/Deities/Brigid/M_Brigid_Cloth",
+      "properties": "Tuatha organic cape"
+    },
+    {
+      "slot": "VFX",
+      "material": "/Game/Materials/Deities/Brigid/M_Brigid_VFX",
+      "properties": "Tuatha faction VFX"
+    }
+  ],
+  "skeletalBones": {
+    "enabledBones": "all 87",
+    "clothBones": [
+      "cape_01-04",
+      "skirt_01_L-02_L",
+      "skirt_01_R-02_R",
+      "skirt_01_B-02_B",
+      "skirt_01_F-02_F"
+    ],
+    "wingBones": "none",
+    "customSockets": [
+      {
+        "socket": "vfx_socket_Hands",
+        "purpose": "sacred fire"
+      },
+      {
+        "socket": "vfx_socket_Weapon",
+        "purpose": "hammer/sickle fire trail"
+      },
+      {
+        "socket": "vfx_socket_Ground",
+        "purpose": "forge flames"
+      },
+      {
+        "socket": "vfx_socket_Chest",
+        "purpose": "flame heart glow"
+      }
+    ]
+  },
+  "ikChains": {
+    "footIK": {
+      "enabled": true,
+      "type": "2-bone",
+      "bones": "thigh->calf->foot both legs"
+    },
+    "handIK": {
+      "enabled": true,
+      "type": "2-bone",
+      "bones": "upperarm->lowerarm->hand both arms"
+    },
+    "lookAtIK": {
+      "enabled": true,
+      "maxRotation": 30
+    },
+    "weaponGripIK": {
+      "enabled": true,
+      "hand": "right",
+      "target": "weapon_socket_R"
+    }
+  },
+  "clothPhysics": {
+    "enabled": true,
+    "simulation": "UE5 Chaos Cloth",
+    "pieces": [
+      {
+        "name": "organic cape (vines)",
+        "wind": 0.4,
+        "gravity": 0.9
+      },
+      {
+        "name": "leather skirt",
+        "wind": 0.4,
+        "gravity": 0.9
+      }
+    ]
+  },
+  "animMontage": {
+    "montagePath": "/Game/Animation/Montages/MG_Brigid_StaffCaster_Montage",
+    "weaponClass": "StaffCaster",
+    "sections": [
+      {
+        "section": "Spawn",
+        "duration": 1.5,
+        "description": "Staff plants ground, energy burst"
+      },
+      {
+        "section": "Idle",
+        "duration": 0.0,
+        "description": "Staff held vertical, channeling idle"
+      },
+      {
+        "section": "Walk",
+        "duration": 0.0,
+        "description": "Staff as walking aid"
+      },
+      {
+        "section": "BasicAttack_1",
+        "duration": 0.7,
+        "description": "Staff swing + projectile"
+      },
+      {
+        "section": "BasicAttack_2",
+        "duration": 0.7,
+        "description": "Staff thrust + projectile"
+      },
+      {
+        "section": "BasicAttack_3",
+        "duration": 0.8,
+        "description": "Staff spin + AoE burst"
+      },
+      {
+        "section": "Ability1",
+        "duration": 1.2,
+        "description": "Channel + cast"
+      },
+      {
+        "section": "Ability2",
+        "duration": 1.5,
+        "description": "Ground rune + area effect"
+      },
+      {
+        "section": "Signature",
+        "duration": 2.0,
+        "description": "Staff raise, faction energy"
+      },
+      {
+        "section": "Ultimate",
+        "duration": 3.0,
+        "description": "Full screen cast"
+      },
+      {
+        "section": "DodgeEvade",
+        "duration": 0.4,
+        "description": "Blink/dash (magical)"
+      },
+      {
+        "section": "ParryBlock",
+        "duration": 0.5,
+        "description": "Staff guard"
+      },
+      {
+        "section": "HitReact",
+        "duration": 0.5,
+        "description": "Staff drops, stagger"
+      },
+      {
+        "section": "DodgeDash",
+        "duration": 0.4,
+        "description": "Magical blink dash"
+      },
+      {
+        "section": "Death",
+        "duration": 2.0,
+        "description": "Staff shatters, collapse"
+      },
+      {
+        "section": "Respawn",
+        "duration": 1.5,
+        "description": "Staff reforms, channeling starts"
+      }
+    ]
+  },
+  "animBlueprint": {
+    "path": "/Game/Animation/AnimBPs/MG_AnimBP_Brigid",
+    "parent": "MG_AnimBP_Master",
+    "weaponClassOverride": "StaffCaster",
+    "stateMachines": [
+      "Locomotion",
+      "Combat",
+      "Reaction"
+    ]
+  },
+  "specialNotes": "Dual-weapon (hammer + sickle), sacred fire VFX"
+}

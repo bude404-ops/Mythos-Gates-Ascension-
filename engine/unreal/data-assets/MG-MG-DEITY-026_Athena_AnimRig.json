@@ -1,0 +1,226 @@
+{
+  "deityId": "MG-DEITY-026",
+  "name": "Athena",
+  "faction": "Olympian",
+  "role": "Caster",
+  "weaponAnimClass": "SwordShield",
+  "meshAsset": {
+    "sourceArt": "art/approved/MG-DEITY-026_athena.png",
+    "modelConversion": "TRELLIS_2",
+    "meshPath": "/Game/Meshes/Deities/MG-DEITY-026_Athena",
+    "skeleton": "/Game/Animation/MG_MasterSkeleton",
+    "retargeter": "/Game/Animation/Retargeters/MG_Retarget_Athena",
+    "lodSettings": {
+      "lod0": {
+        "screenSize": 0.85,
+        "bones": 87,
+        "triangles": "max"
+      },
+      "lod1": {
+        "screenSize": 0.5,
+        "bones": 45,
+        "triangles": "60%"
+      },
+      "lod2": {
+        "screenSize": 0.25,
+        "bones": 25,
+        "triangles": "30%"
+      },
+      "lod3": {
+        "screenSize": 0.1,
+        "bones": 12,
+        "triangles": "15%"
+      }
+    }
+  },
+  "materialSlots": [
+    {
+      "slot": "Skin",
+      "material": "/Game/Materials/Deities/Athena/M_Athena_Skin",
+      "properties": "Olympian faction skin standard"
+    },
+    {
+      "slot": "Armor",
+      "material": "/Game/Materials/Deities/Athena/M_Athena_Armor",
+      "properties": "Olympian faction armor"
+    },
+    {
+      "slot": "Weapon",
+      "material": "/Game/Materials/Deities/Athena/M_Athena_Weapon",
+      "properties": "Aegis Shield + Bronze Spear"
+    },
+    {
+      "slot": "Cloth",
+      "material": "/Game/Materials/Deities/Athena/M_Athena_Cloth",
+      "properties": "Olympian marble-drape cape"
+    },
+    {
+      "slot": "VFX",
+      "material": "/Game/Materials/Deities/Athena/M_Athena_VFX",
+      "properties": "Olympian faction VFX"
+    }
+  ],
+  "skeletalBones": {
+    "enabledBones": "all 87",
+    "clothBones": [
+      "cape_01-04",
+      "skirt_01_L-02_L",
+      "skirt_01_R-02_R",
+      "skirt_01_B-02_B",
+      "skirt_01_F-02_F"
+    ],
+    "wingBones": "none",
+    "customSockets": [
+      {
+        "socket": "vfx_socket_Hands",
+        "purpose": "Olympian lightning"
+      },
+      {
+        "socket": "vfx_socket_Weapon",
+        "purpose": "spear lightning trail"
+      },
+      {
+        "socket": "vfx_socket_Chest",
+        "purpose": "Aegis glow"
+      },
+      {
+        "socket": "vfx_socket_Shield",
+        "purpose": "aegis shield pulse"
+      }
+    ]
+  },
+  "ikChains": {
+    "footIK": {
+      "enabled": true,
+      "type": "2-bone",
+      "bones": "thigh->calf->foot both legs"
+    },
+    "handIK": {
+      "enabled": true,
+      "type": "2-bone",
+      "bones": "upperarm->lowerarm->hand both arms"
+    },
+    "lookAtIK": {
+      "enabled": true,
+      "maxRotation": 30
+    },
+    "weaponGripIK": {
+      "enabled": true,
+      "hand": "right",
+      "target": "weapon_socket_R"
+    }
+  },
+  "clothPhysics": {
+    "enabled": true,
+    "simulation": "UE5 Chaos Cloth",
+    "pieces": [
+      {
+        "name": "marble-drape cape",
+        "wind": 0.4,
+        "gravity": 1.3
+      },
+      {
+        "name": "bronze skirt",
+        "wind": 0.4,
+        "gravity": 1.3
+      }
+    ]
+  },
+  "animMontage": {
+    "montagePath": "/Game/Animation/Montages/MG_Athena_SwordShield_Montage",
+    "weaponClass": "SwordShield",
+    "sections": [
+      {
+        "section": "Spawn",
+        "duration": 1.5,
+        "description": "Shield raise + stance lock"
+      },
+      {
+        "section": "Idle",
+        "duration": 0.0,
+        "description": "Shield up, sword at side"
+      },
+      {
+        "section": "Walk",
+        "duration": 0.0,
+        "description": "Shield-forward march"
+      },
+      {
+        "section": "BasicAttack_1",
+        "duration": 0.6,
+        "description": "Shield bash + slash"
+      },
+      {
+        "section": "BasicAttack_2",
+        "duration": 0.7,
+        "description": "Thrust"
+      },
+      {
+        "section": "BasicAttack_3",
+        "duration": 0.8,
+        "description": "Slash combo"
+      },
+      {
+        "section": "Ability1",
+        "duration": 1.2,
+        "description": "Shield slam (stun)"
+      },
+      {
+        "section": "Ability2",
+        "duration": 1.5,
+        "description": "Shield wall + counter"
+      },
+      {
+        "section": "Signature",
+        "duration": 2.0,
+        "description": "Faction-specific"
+      },
+      {
+        "section": "Ultimate",
+        "duration": 3.0,
+        "description": "Full dramatic"
+      },
+      {
+        "section": "DodgeEvade",
+        "duration": 0.4,
+        "description": "Shield-braced dash"
+      },
+      {
+        "section": "ParryBlock",
+        "duration": 0.5,
+        "description": "Shield block"
+      },
+      {
+        "section": "HitReact",
+        "duration": 0.5,
+        "description": "Shield absorbs impact"
+      },
+      {
+        "section": "DodgeDash",
+        "duration": 0.4,
+        "description": "Shield-braced dash"
+      },
+      {
+        "section": "Death",
+        "duration": 2.0,
+        "description": "Fall to knees, shield drops"
+      },
+      {
+        "section": "Respawn",
+        "duration": 1.5,
+        "description": "Rise with shield, stance lock"
+      }
+    ]
+  },
+  "animBlueprint": {
+    "path": "/Game/Animation/AnimBPs/MG_AnimBP_Athena",
+    "parent": "MG_AnimBP_Master",
+    "weaponClassOverride": "SwordShield",
+    "stateMachines": [
+      "Locomotion",
+      "Combat",
+      "Reaction"
+    ]
+  },
+  "specialNotes": "Aegis shield glow, marble skin + bronze-gold lightning veins"
+}

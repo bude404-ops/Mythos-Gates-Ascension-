@@ -1,0 +1,222 @@
+{
+  "deityId": "MG-DEITY-013",
+  "name": "Freyja",
+  "faction": "Asgardian",
+  "role": "Assassin",
+  "weaponAnimClass": "DualDagger",
+  "meshAsset": {
+    "sourceArt": "art/approved/MG-DEITY-013_freyja.png",
+    "modelConversion": "TRELLIS_2",
+    "meshPath": "/Game/Meshes/Deities/MG-DEITY-013_Freyja",
+    "skeleton": "/Game/Animation/MG_MasterSkeleton",
+    "retargeter": "/Game/Animation/Retargeters/MG_Retarget_Freyja",
+    "lodSettings": {
+      "lod0": {
+        "screenSize": 0.85,
+        "bones": 87,
+        "triangles": "max"
+      },
+      "lod1": {
+        "screenSize": 0.5,
+        "bones": 45,
+        "triangles": "60%"
+      },
+      "lod2": {
+        "screenSize": 0.25,
+        "bones": 25,
+        "triangles": "30%"
+      },
+      "lod3": {
+        "screenSize": 0.1,
+        "bones": 12,
+        "triangles": "15%"
+      }
+    }
+  },
+  "materialSlots": [
+    {
+      "slot": "Skin",
+      "material": "/Game/Materials/Deities/Freyja/M_Freyja_Skin",
+      "properties": "Asgardian faction skin standard"
+    },
+    {
+      "slot": "Armor",
+      "material": "/Game/Materials/Deities/Freyja/M_Freyja_Armor",
+      "properties": "Asgardian faction armor"
+    },
+    {
+      "slot": "Weapon",
+      "material": "/Game/Materials/Deities/Freyja/M_Freyja_Weapon",
+      "properties": "Seax Dagger (Oath Axe)"
+    },
+    {
+      "slot": "Cloth",
+      "material": "/Game/Materials/Deities/Freyja/M_Freyja_Cloth",
+      "properties": "Asgardian fur-lined cape"
+    },
+    {
+      "slot": "VFX",
+      "material": "/Game/Materials/Deities/Freyja/M_Freyja_VFX",
+      "properties": "Asgardian faction VFX"
+    }
+  ],
+  "skeletalBones": {
+    "enabledBones": "all 87",
+    "clothBones": [
+      "cape_01-04",
+      "skirt_01_L-02_L",
+      "skirt_01_R-02_R",
+      "skirt_01_B-02_B",
+      "skirt_01_F-02_F"
+    ],
+    "wingBones": "falcon-feather (optional 3-seg)",
+    "customSockets": [
+      {
+        "socket": "vfx_socket_Hands",
+        "purpose": "Seidr magic energy"
+      },
+      {
+        "socket": "vfx_socket_Chest",
+        "purpose": "Brisingamen glow"
+      },
+      {
+        "socket": "vfx_socket_Weapon",
+        "purpose": "Seax frost-rune trail"
+      }
+    ]
+  },
+  "ikChains": {
+    "footIK": {
+      "enabled": true,
+      "type": "2-bone",
+      "bones": "thigh->calf->foot both legs"
+    },
+    "handIK": {
+      "enabled": true,
+      "type": "2-bone",
+      "bones": "upperarm->lowerarm->hand both arms"
+    },
+    "lookAtIK": {
+      "enabled": true,
+      "maxRotation": 30
+    },
+    "weaponGripIK": {
+      "enabled": true,
+      "hand": "right",
+      "target": "weapon_socket_R"
+    }
+  },
+  "clothPhysics": {
+    "enabled": true,
+    "simulation": "UE5 Chaos Cloth",
+    "pieces": [
+      {
+        "name": "fur-lined cape",
+        "wind": 0.5,
+        "gravity": 1.2
+      },
+      {
+        "name": "leather skirt",
+        "wind": 0.5,
+        "gravity": 1.2
+      }
+    ]
+  },
+  "animMontage": {
+    "montagePath": "/Game/Animation/Montages/MG_Freyja_DualDagger_Montage",
+    "weaponClass": "DualDagger",
+    "sections": [
+      {
+        "section": "Spawn",
+        "duration": 1.5,
+        "description": "Daggers flash, combat crouch"
+      },
+      {
+        "section": "Idle",
+        "duration": 0.0,
+        "description": "Coiled ready stance, daggers crossed"
+      },
+      {
+        "section": "Walk",
+        "duration": 0.0,
+        "description": "Low prowl, daggers at sides"
+      },
+      {
+        "section": "BasicAttack_1",
+        "duration": 0.4,
+        "description": "Left slash"
+      },
+      {
+        "section": "BasicAttack_2",
+        "duration": 0.4,
+        "description": "Right slash"
+      },
+      {
+        "section": "BasicAttack_3",
+        "duration": 0.5,
+        "description": "Cross slash combo finisher"
+      },
+      {
+        "section": "Ability1",
+        "duration": 1.0,
+        "description": "Dash + dual strike"
+      },
+      {
+        "section": "Ability2",
+        "duration": 1.2,
+        "description": "Flurry combo"
+      },
+      {
+        "section": "Signature",
+        "duration": 2.0,
+        "description": "Faction-specific assassin move"
+      },
+      {
+        "section": "Ultimate",
+        "duration": 3.0,
+        "description": "Full screen dramatic"
+      },
+      {
+        "section": "DodgeEvade",
+        "duration": 0.4,
+        "description": "Quick side-step"
+      },
+      {
+        "section": "ParryBlock",
+        "duration": 0.5,
+        "description": "Dagger cross guard"
+      },
+      {
+        "section": "HitReact",
+        "duration": 0.4,
+        "description": "Stagger, daggers drop low"
+      },
+      {
+        "section": "DodgeDash",
+        "duration": 0.3,
+        "description": "Shadow-step blink (fastest dodge)"
+      },
+      {
+        "section": "Death",
+        "duration": 2.0,
+        "description": "Collapse forward, daggers embed"
+      },
+      {
+        "section": "Respawn",
+        "duration": 1.5,
+        "description": "Reform from energy, daggers reignite"
+      }
+    ]
+  },
+  "animBlueprint": {
+    "path": "/Game/Animation/AnimBPs/MG_AnimBP_Freyja",
+    "parent": "MG_AnimBP_Master",
+    "weaponClassOverride": "DualDagger",
+    "stateMachines": [
+      "Locomotion",
+      "Combat",
+      "Reaction"
+    ]
+  },
+  "specialNotes": "Seidr magic visual, falcon-feather wings optional"
+}

@@ -1,0 +1,217 @@
+{
+  "deityId": "MG-DEITY-049",
+  "name": "Jophiel",
+  "faction": "Empyrean",
+  "role": "Assassin",
+  "weaponAnimClass": "BowRanged",
+  "meshAsset": {
+    "sourceArt": "art/approved/MG-DEITY-049_jophiel.png",
+    "modelConversion": "TRELLIS_2",
+    "meshPath": "/Game/Meshes/Deities/MG-DEITY-049_Jophiel",
+    "skeleton": "/Game/Animation/MG_MasterSkeleton",
+    "retargeter": "/Game/Animation/Retargeters/MG_Retarget_Jophiel",
+    "lodSettings": {
+      "lod0": {
+        "screenSize": 0.85,
+        "bones": 87,
+        "triangles": "max"
+      },
+      "lod1": {
+        "screenSize": 0.5,
+        "bones": 45,
+        "triangles": "60%"
+      },
+      "lod2": {
+        "screenSize": 0.25,
+        "bones": 25,
+        "triangles": "30%"
+      },
+      "lod3": {
+        "screenSize": 0.1,
+        "bones": 12,
+        "triangles": "15%"
+      }
+    }
+  },
+  "materialSlots": [
+    {
+      "slot": "Skin",
+      "material": "/Game/Materials/Deities/Jophiel/M_Jophiel_Skin",
+      "properties": "Empyrean faction skin standard"
+    },
+    {
+      "slot": "Armor",
+      "material": "/Game/Materials/Deities/Jophiel/M_Jophiel_Armor",
+      "properties": "Empyrean faction armor"
+    },
+    {
+      "slot": "Weapon",
+      "material": "/Game/Materials/Deities/Jophiel/M_Jophiel_Weapon",
+      "properties": "Light Bow (Templar Standard)"
+    },
+    {
+      "slot": "Cloth",
+      "material": "/Game/Materials/Deities/Jophiel/M_Jophiel_Cloth",
+      "properties": "Empyrean mantle"
+    },
+    {
+      "slot": "VFX",
+      "material": "/Game/Materials/Deities/Jophiel/M_Jophiel_VFX",
+      "properties": "Empyrean faction VFX"
+    }
+  ],
+  "skeletalBones": {
+    "enabledBones": "all 87",
+    "clothBones": [
+      "cape_01-04",
+      "skirt_01_L-02_L",
+      "skirt_01_R-02_R",
+      "skirt_01_B-02_B",
+      "skirt_01_F-02_F"
+    ],
+    "wingBones": "light-tether (3-seg)",
+    "customSockets": [
+      {
+        "socket": "vfx_socket_Hands",
+        "purpose": "Empyrean light"
+      },
+      {
+        "socket": "vfx_socket_Weapon",
+        "purpose": "light arrow trail"
+      },
+      {
+        "socket": "vfx_socket_Chest",
+        "purpose": "light through seams"
+      }
+    ]
+  },
+  "ikChains": {
+    "footIK": {
+      "enabled": true,
+      "type": "2-bone",
+      "bones": "thigh->calf->foot both legs"
+    },
+    "handIK": {
+      "enabled": true,
+      "type": "2-bone",
+      "bones": "upperarm->lowerarm->hand both arms"
+    },
+    "lookAtIK": {
+      "enabled": true,
+      "maxRotation": 30
+    },
+    "weaponGripIK": {
+      "enabled": true,
+      "hand": "right",
+      "target": "weapon_socket_R"
+    }
+  },
+  "clothPhysics": {
+    "enabled": true,
+    "simulation": "UE5 Chaos Cloth",
+    "pieces": [
+      {
+        "name": "templar mantle (heavy)",
+        "wind": 0.2,
+        "gravity": 1.5
+      }
+    ]
+  },
+  "animMontage": {
+    "montagePath": "/Game/Animation/Montages/MG_Jophiel_BowRanged_Montage",
+    "weaponClass": "BowRanged",
+    "sections": [
+      {
+        "section": "Spawn",
+        "duration": 1.5,
+        "description": "Bow materializes, draw stance"
+      },
+      {
+        "section": "Idle",
+        "duration": 0.0,
+        "description": "Bow held low, ready"
+      },
+      {
+        "section": "Walk",
+        "duration": 0.0,
+        "description": "Bow at side, light steps"
+      },
+      {
+        "section": "BasicAttack_1",
+        "duration": 0.5,
+        "description": "Quick draw + fire"
+      },
+      {
+        "section": "BasicAttack_2",
+        "duration": 0.6,
+        "description": "Side-step draw + fire"
+      },
+      {
+        "section": "BasicAttack_3",
+        "duration": 0.7,
+        "description": "Power draw + fire (charged)"
+      },
+      {
+        "section": "Ability1",
+        "duration": 1.2,
+        "description": "Multi-arrow volley"
+      },
+      {
+        "section": "Ability2",
+        "duration": 1.5,
+        "description": "Aimed piercing shot"
+      },
+      {
+        "section": "Signature",
+        "duration": 2.0,
+        "description": "Faction-specific arrow rain"
+      },
+      {
+        "section": "Ultimate",
+        "duration": 3.0,
+        "description": "Full screen dramatic"
+      },
+      {
+        "section": "DodgeEvade",
+        "duration": 0.4,
+        "description": "Quick side-step"
+      },
+      {
+        "section": "ParryBlock",
+        "duration": 0.5,
+        "description": "Bow guard raise"
+      },
+      {
+        "section": "HitReact",
+        "duration": 0.5,
+        "description": "Bow drops, stagger"
+      },
+      {
+        "section": "DodgeDash",
+        "duration": 0.4,
+        "description": "Combat roll while nocking"
+      },
+      {
+        "section": "Death",
+        "duration": 2.0,
+        "description": "Fall back, bow slips away"
+      },
+      {
+        "section": "Respawn",
+        "duration": 1.5,
+        "description": "Bow reforms, stance reset"
+      }
+    ]
+  },
+  "animBlueprint": {
+    "path": "/Game/Animation/AnimBPs/MG_AnimBP_Jophiel",
+    "parent": "MG_AnimBP_Master",
+    "weaponClassOverride": "BowRanged",
+    "stateMachines": [
+      "Locomotion",
+      "Combat",
+      "Reaction"
+    ]
+  },
+  "specialNotes": "Templar standard, light-tether bow"
+}
