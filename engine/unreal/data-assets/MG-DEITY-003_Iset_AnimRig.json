@@ -1,0 +1,119 @@
+{
+  "deityId": "MG-DEITY-003",
+  "name": "Iset",
+  "faction": "Aten Ra",
+  "role": "Archer",
+  "weaponAnimClass": "StaffCaster",
+  "meshAsset": {
+    "sourceArt": "art/approved/MG-DEITY-003_iset.png",
+    "modelConversion": "TRELLIS_2",
+    "meshPath": "/Game/Meshes/Deities/MG-DEITY-003_Iset",
+    "skeleton": "/Game/Animation/MG_MasterSkeleton",
+    "retargeter": "/Game/Animation/Retargeters/MG_Retarget_Iset",
+    "lodSettings": {
+      "lod0": { "screenSize": 0.85, "bones": 87, "triangles": "max" },
+      "lod1": { "screenSize": 0.5, "bones": 45, "triangles": "60%" },
+      "lod2": { "screenSize": 0.25, "bones": 25, "triangles": "30%" },
+      "lod3": { "screenSize": 0.1, "bones": 12, "triangles": "15%" }
+    }
+  },
+  "materialSlots": [
+    {
+      "slot": "Skin",
+      "material": "/Game/Materials/Deities/Iset/M_Iset_Skin",
+      "properties": "bronze-brown Egyptian skin, amber-gold aura subsurface scattering"
+    },
+    {
+      "slot": "Armor",
+      "material": "/Game/Materials/Deities/Iset/M_Iset_Armor",
+      "properties": "obsidian-blue enamel, black-gold scale, limestone relief plates, faience/lapis inlay"
+    },
+    {
+      "slot": "Weapon",
+      "material": "/Game/Materials/Deities/Iset/M_Iset_Weapon",
+      "properties": "compass sceptre - electrum, amber glow, Ma'at scale seams"
+    },
+    {
+      "slot": "Cloth",
+      "material": "/Game/Materials/Deities/Iset/M_Iset_Cloth",
+      "properties": "linen skirt - Nile-black and desert-red, cloth physics enabled"
+    },
+    {
+      "slot": "VFX",
+      "material": "/Game/Materials/Deities/Iset/M_Iset_VFX",
+      "properties": "Aten hand-rays, amber dawn glow, horizon-threshold light lanes"
+    }
+  ],
+  "skeletalBones": {
+    "enabledBones": "all 87",
+    "clothBones": ["cape_01-04", "skirt_01_L-02_L", "skirt_01_R-02_R", "skirt_01_B-02_B", "skirt_01_F-02_F"],
+    "wingBones": "disabled (Iset has no wings)",
+    "customSockets": [
+      { "socket": "vfx_socket_Hands", "purpose": "compass sceptre casting VFX" },
+      { "socket": "vfx_socket_Ground", "purpose": "Aten-lit judgment ground effect" },
+      { "socket": "vfx_socket_Chest", "purpose": "Solar Charge meter glow" },
+      { "socket": "weapon_socket_R", "purpose": "compass sceptre attach point" }
+    ]
+  },
+  "ikChains": {
+    "footIK": { "enabled": true, "type": "2-bone", "bones": "thigh->calf->foot both legs" },
+    "handIK": { "enabled": true, "type": "2-bone", "bones": "upperarm->lowerarm->hand both arms" },
+    "lookAtIK": { "enabled": true, "maxRotation": 30 },
+    "weaponGripIK": { "enabled": true, "hand": "right", "target": "weapon_socket_R" }
+  },
+  "clothPhysics": {
+    "enabled": true,
+    "simulation": "UE5 Chaos Cloth",
+    "pieces": [
+      { "name": "linen_skirt", "bones": "skirt_01_L/R/B/F through skirt_02", "wind": 0.3, "gravity": 1.0 },
+      { "name": "horizon_cape", "bones": "cape_01 through cape_04", "wind": 0.5, "gravity": 0.8 }
+    ]
+  },
+  "animMontage": {
+    "montagePath": "/Game/Animation/Montages/MG_Iset_StaffCaster_Montage",
+    "weaponClass": "StaffCaster",
+    "sections": [
+      { "section": "Spawn", "duration": 2.0, "description": "Rises from underworld shadow, horizon light splits behind her" },
+      { "section": "Idle", "duration": 0.0, "description": "Looping idle - sceptre held at side, subtle amber pulse in compass head" },
+      { "section": "Walk", "duration": 0.0, "description": "Walk cycle - measured, judicial stride, sceptre sways with gait" },
+      { "section": "BasicAttack_1", "duration": 0.8, "description": "Sceptre thrust forward - Aten hand-ray fires from compass head at range 4" },
+      { "section": "BasicAttack_2", "duration": 0.7, "description": "Sceptre sweep right-to-left - second hand-ray, slightly wider beam" },
+      { "section": "BasicAttack_3", "duration": 0.9, "description": "Sceptre raised overhead then pointed down - charged beam, highest damage of combo" },
+      { "section": "Ability1", "duration": 1.5, "description": "Pylon Edict Field Rewrite: sceptre plants into ground, Ma'at scale lines spread, terrain rewrites" },
+      { "section": "Ability2", "duration": 1.2, "description": "Horizon Gate Step dodge dash: sceptre sweeps arc, body phases through shadow, reappears at target" },
+      { "section": "Signature", "duration": 2.5, "description": "Sun-Scale Decree Dominion Grid: sceptre raised high, horizon ring expands, judgment ground transforms in large AoE" },
+      { "section": "Ultimate", "duration": 4.0, "description": "Divine Ascension Aten-Ra Source Radiance: full body glow, sun disk manifests, terrain converts to Aten-lit ground" },
+      { "section": "DodgeEvade", "duration": 0.4, "description": "Quick side-step with sceptre guard raise" },
+      { "section": "ParryBlock", "duration": 0.5, "description": "Sceptre planted vertically, Ma'at scale barrier flashes" },
+      { "section": "HitReact", "duration": 0.5, "description": "Stagger back, compass head flickers" },
+      { "section": "DodgeDash", "duration": 0.6, "description": "Shadow-phase dash - body briefly becomes underworld shadow, reappears at dash end" },
+      { "section": "Death", "duration": 2.0, "description": "Collapses into shadow, sceptre falls, amber light fades" },
+      { "section": "Respawn", "duration": 1.5, "description": "Reforms from horizon light, sceptre reignites" }
+    ]
+  },
+  "blendSpaces": [
+    {
+      "name": "BS_Iset_Locomotion",
+      "type": "2D",
+      "axes": ["Speed", "Direction"],
+      "samples": [
+        { "speed": 0, "direction": 0, "anim": "Idle" },
+        { "speed": 150, "direction": 0, "anim": "Walk_F" },
+        { "speed": 150, "direction": 90, "anim": "Walk_R" },
+        { "speed": 150, "direction": -90, "anim": "Walk_L" },
+        { "speed": 150, "direction": 180, "anim": "Walk_B" }
+      ]
+    }
+  ],
+  "animBlueprint": {
+    "path": "/Game/Animation/AnimBPs/MG_AnimBP_Iset",
+    "parent": "MG_AnimBP_Master",
+    "weaponClassOverride": "StaffCaster",
+    "stateMachines": ["Locomotion", "Combat", "Reaction"],
+    "customNodes": [
+      "SolarCharge_Meter - drives chest VFX intensity (vfx_socket_Chest)",
+      "AtenGround_Active - toggles ground effect material when in Aten-lit judgment ground",
+      "Horizon_Phase - blend override for dodge dash shadow-phase"
+    ]
+  }
+}
