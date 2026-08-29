@@ -10,22 +10,22 @@
     "deities are living extradimensional beings, not buildings, robots, statues, block stacks, or abstract architecture piles.",
     "NPCs are non-playable lore characters whose costume must show role, faction duty, and personal history.",
     "Creatures can be monstrous but must stay rooted in faction or Hollow logic rather than generic alien design.",
-    "Architecture can influence clothing, regalia, auras, weapons, and environment \u2014 never replace living anatomy for character assets.",
+    "Architecture can influence clothing, regalia, auras, weapons, and environment — never replace living anatomy for character assets.",
     "No readable real-world text or logos; glyphs and marks must be abstract lore texture."
   ],
   "sections": {
     "gods_deitys": {
-      "standard": "Divine character identity \u2014 actual gods and goddesses, NOT Deities as separate species",
+      "standard": "Divine character identity — actual gods and goddesses, NOT Deities as separate species",
       "source": "data/deitys.json + data/faction-visual-bible.json",
       "rules": [
-        "Every playable character is an actual god or goddess \u2014 NOT mortal, NOT Deity creature, NOT alien",
-        "Each god needs a unique Divine Signature \u2014 no same glow/aura on everyone",
+        "Every playable character is an actual god or goddess — NOT mortal, NOT Deity creature, NOT alien",
+        "Each god needs a unique Divine Signature — no same glow/aura on everyone",
         "Mythology must remain recognizable (authentic + Mythos Gates interpretation)",
-        "Signature weapons must have lore \u2014 legendary artifacts, not generic equipment",
-        "Unique silhouettes \u2014 no two gods mistaken for each other at distance",
-        "3D model ready \u2014 works from all angles",
+        "Signature weapons must have lore — legendary artifacts, not generic equipment",
+        "Unique silhouettes — no two gods mistaken for each other at distance",
+        "3D model ready — works from all angles",
         "Combat readable at gameplay camera distance",
-        "One God at a Time \u2014 approval before next"
+        "One God at a Time — approval before next"
       ]
     },
     "realms": {
@@ -36,7 +36,7 @@
           "faction": "Aten Ra",
           "realm": "The Solar Dominion of Khepra",
           "gate": "The Sun-Scale Gate",
-          "tone": "Ma\u2019at physics, visible Aten radiance, Ra kingship, Khepri renewal, Nile/Red Land duality, throne-mag"
+          "tone": "Ma’at physics, visible Aten radiance, Ra kingship, Khepri renewal, Nile/Red Land duality, throne-mag"
         },
         {
           "faction": "Asgardian",
@@ -82,7 +82,7 @@
       "factions": [
         {
           "faction": "Aten Ra",
-          "thesis": "Aten Ra is the source behind human Egyptian solar myth: living Ma\u2019at, Ra\u2019s noon authority, Aten\u2019s sun-disc radiance, Khepri\u2019s renewal, Iset\u2019s throne-m",
+          "thesis": "Aten Ra is the source behind human Egyptian solar myth: living Ma’at, Ra’s noon authority, Aten’s sun-disc radiance, Khepri’s renewal, Iset’s throne-m",
           "qualityGate": "Any generated asset for this faction must visibly follow this visual bible and must be rejected if i"
         },
         {
@@ -97,12 +97,12 @@
         },
         {
           "faction": "Kami",
-          "thesis": "Kami are the source behind human Japanese spirit lore: shrine threshold, nature divinity, masks, foxfire, purification, dragon rain, and twilight y\u014dka",
+          "thesis": "Kami are the source behind human Japanese spirit lore: shrine threshold, nature divinity, masks, foxfire, purification, dragon rain, and twilight yōka",
           "qualityGate": "Any generated asset for this faction must visibly follow this visual bible and must be rejected if i"
         },
         {
           "faction": "Tuatha",
-          "thesis": "Tuatha are the source behind human Celtic fae and divine lore: otherworld sovereignty, s\u00eddhe gates, geasa, memory forests, crow prophecy, poetic flame",
+          "thesis": "Tuatha are the source behind human Celtic fae and divine lore: otherworld sovereignty, sídhe gates, geasa, memory forests, crow prophecy, poetic flame",
           "qualityGate": "Any generated asset for this faction must visibly follow this visual bible and must be rejected if i"
         },
         {
@@ -122,7 +122,7 @@
       "source": "data/enemy-archetype-registry.json + data/creatures.json",
       "rules": [
         "Creatures can be monstrous but must stay rooted in faction or Hollow logic rather than generic alien design.",
-        "Architecture can influence clothing, regalia, auras, weapons, and environment \u2014 never replace living anatomy for character assets."
+        "Architecture can influence clothing, regalia, auras, weapons, and environment — never replace living anatomy for character assets."
       ]
     },
     "battlefields": {
@@ -134,7 +134,7 @@
       "source": "data/deitys.json (weaponCanon, equipmentDetails)"
     },
     "gates": {
-      "standard": "Dimensional visual language. Gates are a fundamental force \u2014 NOT just portals behind characters. Woven into the deity's existence.",
+      "standard": "Dimensional visual language. Gates are a fundamental force — NOT just portals behind characters. Woven into the deity's existence.",
       "source": "data/realm-codex.json (gate field)",
       "gates": [
         {
@@ -206,8 +206,34 @@
     "STYLE: Matches Mythos Gates: Ascension visual identity?",
     "ORIGINALITY: Unique deity, not generic RPG character?"
   ],
-  "finalCreativeStandard": "Every playable character should make the player think: That's a GOD \u2192 I know which god \u2192 I know the realm \u2192 I know the faction \u2192 I can see how the Mythos Gates shaped them.",
+  "finalCreativeStandard": "Every playable character should make the player think: That's a GOD → I know which god → I know the realm → I know the faction → I can see how the Mythos Gates shaped them.",
   "totalSections": 21,
   "masterComplete": true,
-  "systemName": "MASTER_DIVINE_GOD_REALM_GATE_v4"
+  "systemName": "MASTER_DIVINE_GOD_REALM_GATE_v4",
+  "directives": {
+    "divineSuggestiveness": {
+      "standard": "DIVINE SUGGESTIVENESS — app-store-safe sensuality",
+      "effective": "2026-08-29",
+      "approvedBy": "BudE404 (Creative Director)",
+      "rules": [
+        "All 14 female deities rendered as feminine, sensual, and dangerous — confident divine beauty",
+        "Form-fitting and sheer/transparent divine clothing — suggests the body through flowing fabric, energy wisps, and translucent material",
+        "Bare shoulders, exposed midriffs, thigh-high slits, deep necklines — all permitted and encouraged",
+        "Side-boob and under-boob silhouettes permitted when covered by energy wisps, divine glow, or sheer fabric",
+        "Divine energy/glow effects naturally cover nipples and genitals — the glow IS the censorship, fits the god aesthetic",
+        "NO full nudity, NO visible nipples, NO visible genitals — always covered by divine energy, sheer fabric, or strategic pose",
+        "Suggestive but not explicit — the form is sensual, powerful, and alluring without showing anything that triggers app store rejection",
+        "Dangerous beauty — she is sexy AND she can destroy you. The sensuality should feel divine, not mortal",
+        "Applies to all 14 female deities across all 7 factions",
+        "Male deities remain as designed — no changes needed"
+      ],
+      "appStoreStrategy": {
+        "mobile": "Divine suggestiveness standard (this document) — passes Apple/Google review at 12+/16+ rating",
+        "pc": "Optional uncensored build for Steam/Epic with toggle — separate from mobile build",
+        "censorshipMethod": "Divine energy glow, sheer fabric, energy wisps — natural to the god aesthetic, not forced censorship"
+      },
+      "previousRule": "No nudity is allowed, but form-fitting and revealing attire is encouraged",
+      "changeReason": "BudE404 approved partial nudity for better aesthetics. Divine suggestiveness achieves the sensual look without app store rejection. Energy/glow coverage fits the existing god aesthetic perfectly."
+    }
+  }
 }
