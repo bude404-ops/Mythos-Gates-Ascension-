@@ -26,11 +26,11 @@
 ## 2. PRODUCTION PHASES
 
 ### Phase 1: Project Scaffold (Week 1-2)
-- [ ] Create UE5 project (Mobile template, C++)
-- [ ] Set up folder structure per Content folder mapping
+- [x] Create UE5 project (Mobile template, C++)
+- [x] Set up folder structure per Content folder mapping
 - [ ] Import data as Data Assets (deities, missions, campaigns, creatures)
-- [ ] Build Blueprint Actor Components for combat system
-- [ ] Set up DataTables for stats, abilities, weapons
+- [x] Build Blueprint Actor Components for combat system (C++ scaffold)
+- [x] Set up DataTables for stats, abilities, weapons (data assets defined)
 
 ### Phase 2: Core Combat (Week 3-6)
 - [ ] 2.5D combat plane implementation
