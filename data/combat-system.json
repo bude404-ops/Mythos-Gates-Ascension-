@@ -1,39 +1,106 @@
 {
   "id": "MG-COMBAT-SYSTEM-001",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "name": "Mythos Gates: Ascension Combat System",
   "model": "one-deity-vs-many-action-rpg",
-  "designPillar": "Avatar Power Fantasy: The player controls a divine Avatar \u2014 a projection of their chosen Deity \u2014 carving through many enemies with readable, spectacular combat.",
+  "designPillar": "Avatar Power Fantasy: The player controls a divine Avatar — a projection of their chosen Deity — carving through many enemies with readable, spectacular combat.",
   "corePrinciples": [
     "Player controls ONE deity at a time in real-time combat",
     "Face waves of enemies, elite foes, and boss encounters",
     "Combat is weighty, divine, and spectacular but visually readable",
-    "Mobile-first controls: virtual joystick + ability buttons + dodge",
+    "Mobile-first controls: TAP-TO-MOVE + ability buttons + dodge dash. NO joystick. One-hand playable.",
     "Tactical clarity: strong silhouettes, readable telegraphs, clear AoE markers",
-    "Each deity has a distinct combat identity, element, and playstyle"
+    "Each deity has a distinct combat identity, element, and playstyle",
+    "MOBA-lite feel (Arena of Valor / Wild Rift simplified) with god-scale combat"
   ],
   "controls": {
-    "movement": "Virtual joystick \u2014 360 degree movement",
-    "basicAttack": "Tap button \u2014 auto-targets nearest enemy, combo chain",
-    "ability1": "Tap button \u2014 short cooldown (5-8s), tactical use",
-    "ability2": "Tap button \u2014 medium cooldown (8-12s), stronger effect",
-    "signature": "Tap button \u2014 long cooldown (15-20s), big impact",
-    "ultimate": "Tap button \u2014 once per battle or long cooldown (60s+), cinematic",
-    "dodge": "Swipe/dash \u2014 i-frames, brief invincibility, directional dodge"
+    "movement": "TAP-TO-MOVE — tap anywhere on the battlefield and the avatar walks to that location. No joystick. No auto-pathing to enemies. Positioning is a deliberate strategic choice.",
+    "basicAttack": "AUTO — basic attacks trigger automatically when an enemy is within weapon range. No input needed. Free. 3-4 hit combo chain with unique properties per deity.",
+    "ability1": "Tap button — short cooldown (5-8s), tactical use. Tap when charged/off cooldown.",
+    "ability2": "Tap button — medium cooldown (8-12s), stronger effect. Tap when charged/off cooldown.",
+    "signature": "Tap button — long cooldown (15-20s), big impact. Tap when charged/off cooldown.",
+    "ultimate": "Tap button — requires 100% Belief bar. Tap to unleash. Screen-wide effect.",
+    "dodge": "Tap button — quick dash reposition. NOT a timing window. NOT i-frames. Spatial awareness counter — use to escape hazard zones, close distance, or reposition strategically. Short cooldown (3-5s)."
+  },
+  "controlSummary": {
+    "totalButtons": "4-5 buttons total",
+    "buttonList": ["3-4 ability buttons (tap when charged/cooldown)", "1 dodge button (quick dash reposition)"],
+    "movementType": "Tap-to-move (tap battlefield = avatar walks there)",
+    "joystick": "NONE — zero joysticks",
+    "oneHandPlayable": true,
+    "autoBasicAttacks": true,
+    "dodgeType": "Spatial reposition dash — NOT timing-based, NOT i-frames"
   },
   "resources": {
     "divineEnergy": "Built from basic attacks and taking damage. Spent on abilities 1, 2, and Signature.",
-    "ascensionGauge": "Built throughout the battle from all combat actions. At 100%, Ultimate/Ascension is unlocked.",
+    "beliefBar": "Built throughout the battle from all combat actions. At 100%, Ultimate/Ascension is unlocked. Replaces the old Ascension Gauge.",
     "factionResource": "Each faction has a unique resource (Solar Charge, Oath Fury, Divine Glory, etc.) that powers the deity's passive ability."
   },
   "abilityKit": {
-    "basicAttack": "No cooldown. Spammable. Builds Divine Energy. Unique per deity. 3-4 hit combo chain with unique properties.",
-    "ability1": "Short cooldown (5-8s). Low Divine Energy cost (20-30). Tactical ability \u2014 mobility, CC, shield, or buff.",
-    "ability2": "Medium cooldown (8-12s). Medium Divine Energy cost (35-45). Stronger ability \u2014 AoE, heavy damage, or sustain.",
-    "signature": "Long cooldown (15-20s). High Divine Energy cost (65-75). Signature divine skill \u2014 the deity's mythic power unleashed.",
-    "ultimate": "Once per battle or 60s+ cooldown. Requires 100 Ascension Gauge. Transforms the deity or unleashes full divine power. Cinematic.",
+    "basicAttack": "No cooldown. Automatic when enemy in range. Builds Divine Energy. Unique per deity. 3-4 hit combo chain with unique properties.",
+    "ability1": "Short cooldown (5-8s). Low Divine Energy cost (20-30). Tactical ability — mobility, CC, shield, or buff.",
+    "ability2": "Medium cooldown (8-12s). Medium Divine Energy cost (35-45). Stronger ability — AoE, heavy damage, or sustain.",
+    "signature": "Long cooldown (15-20s). High Divine Energy cost (65-75). Signature divine skill — the deity's mythic power unleashed.",
+    "ultimate": "Requires 100% Belief bar. Screen-wide effect — every enemy on the battlefield takes the hit. Each deity has a unique ultimate. Cinematic.",
     "passive": "Always active. Builds faction resource from combat actions. At threshold, empowers next ability or attack."
   },
+  "dodgeParrySystem": {
+    "description": "Dodge and parry as DAMAGE MITIGATION are auto-resolved stat checks, not player inputs. The dodge BUTTON is for SPATIAL REPOSITIONING only (quick dash), not for timing-based invincibility.",
+    "howItWorks": [
+      "1. Enemy attacks -> Game rolls Avatar Dodge Stat vs Enemy Accuracy Stat",
+      "2. If Dodge succeeds -> Avatar auto-evades (dodge animation plays)",
+      "3. If Dodge fails -> Game rolls Avatar Parry Stat vs Enemy Attack Power",
+      "4. If Parry succeeds -> Reduced damage taken (parry animation plays)",
+      "5. If both fail -> Full damage taken"
+    ],
+    "statProfiles": {
+      "highDodge": "Agile, evasive playstyle — avatar auto-evades frequently",
+      "highParry": "Tanky, defensive playstyle — reduces damage when hit",
+      "lowBoth": "Glass cannon — takes full hits but deals high damage"
+    },
+    "dodgeButton": "Separate from stat dodge/parry. The dodge button is a quick dash for spatial repositioning — escape hazard zones, close distance, reposition for abilities. Short cooldown (3-5s). No i-frames, no timing window."
+  },
+  "groundEffectZones": {
+    "description": "The flat combat plane contains interactive zones with gameplay effects. Zone layouts are unique per battlefield based on faction terrain.",
+    "zoneTypes": {
+      "damageZones": "Void-mist pools, fire fields, energy burns — deal damage over time",
+      "buffZones": "Faction-aligned power spots — increase damage, defense, or ability charge speed",
+      "debuffZones": "Slow fields, weaken areas — reduce enemy effectiveness",
+      "hazardZones": "Instant damage if occupied too long — forces repositioning"
+    },
+    "factionZones": {
+      "Aten Ra": "Solar burn zones, sandstorm blind areas",
+      "Asgardian": "Storm surge zones, ice slick areas",
+      "Olympian": "Divine light buff zones, earthquake cracks",
+      "Tuatha": "Root-grasp zones, mist concealment areas",
+      "Kami": "Spirit energy zones, sakura bloom buffs",
+      "Empyrean": "Radiant light zones, holy ground buffs",
+      "Infernal Dominion": "Hellfire damage zones, magma flows",
+      "Hollow": "Void-mist dissolution zones, anti-light hazard fields"
+    }
+  },
+  "attackRangeSystem": {
+    "description": "Each weapon has a Range Stat. Auto-attack only triggers when enemy is within weapon range. If no enemy in range, avatar stands idle (player must reposition via tap-to-move).",
+    "ranges": {
+      "melee": "Short range — must be close to auto-attack",
+      "spear": "Medium range — moderate distance",
+      "bow_spell": "Long range — can auto-attack from far away"
+    }
+  },
+  "abilityTypes": {
+    "singleTarget": "Hits 1 enemy in range",
+    "cleave": "Hits enemies in a front arc",
+    "aoe": "Hits all enemies within a radius",
+    "line": "Hits everything in a straight line",
+    "ultimate": "Hits ALL enemies on the battlefield — screen-wide"
+  },
+  "playerDecisions": [
+    "WHERE to stand — ground effect zones make positioning critical",
+    "WHEN to use abilities — charge/cooldown management + enemy positioning",
+    "HOW to build the avatar — stats, gear, belief path (dodge vs parry vs damage)",
+    "WHEN to pop ultimate — Belief bar timing, maximizing enemy hits",
+    "WHEN to dash — dodge button for spatial repositioning (escape zones, close gaps, reposition)"
+  ],
   "elements": {
     "Aten Ra": {
       "element": "Solar",
@@ -72,17 +139,31 @@
     }
   },
   "enemyDesign": {
-    "waves": "Trash mobs \u2014 easily killed by basic attacks, come in groups of 5-15",
-    "elites": "Tougher enemies with special abilities \u2014 require ability usage, come in pairs or small groups",
-    "bosses": "Divine trials, gate guardians, corrupted gods \u2014 require full ability rotation and dodge timing",
-    "hollow": "Hollow-corrupted variants of realm enemies \u2014 twisted, dangerous, destabilized"
+    "waves": "Trash mobs — easily killed by basic attacks, come in groups of 5-15",
+    "elites": "Tougher enemies with special abilities — require ability usage, come in pairs or small groups",
+    "bosses": "Divine trials, gate guardians, corrupted gods — require full ability rotation and strategic positioning",
+    "hollow": "Hollow-corrupted variants of realm enemies — twisted, dangerous, destabilized"
+  },
+  "enemyAI": {
+    "philosophy": "Hollow enemies are tactical opponents that understand the battlefield, player abilities, and ground effect system. Creates emergent, chess-like encounters.",
+    "terrainAwareness": "Enemies exploit buff zones, deny player buff zones, bait toward hazards, use cover, ambush from debuff zones",
+    "combatIntelligence": "Enemies track cooldowns, detect Belief bar charging, exploit range, profile player weaknesses, reposition strategically",
+    "archetypes": {
+      "Stalker": "Flanks and strikes from behind — Assassin",
+      "Brute": "Charges through hazards, creates new hazard zones — Tank/Zone Controller",
+      "Caster": "Stands in buff zones at range, kites if approached — Ranged DPS",
+      "Swarmer": "Groups in debuff zones to slow player, overwhelms with numbers — Crowd Control",
+      "Sentinel": "Guards key positions, won't chase, forces approach into unfavorable zones — Defender"
+    },
+    "zoneManipulation": "Advanced enemies can create, corrupt, displace, or clear ground effect zones",
+    "coordinatedTactics": "Late-game enemies coordinate via pincer, zone traps, ultimate denial, divide-and-conquer"
   },
   "combatFantasy": "One legendary god-like deity enters enemy-controlled territory alone, fights through many coordinated enemies, grows visibly stronger, and eventually destroys forces that once seemed impossible.",
   "mobileReadability": "Strong silhouettes, clear telegraph lines for enemy attacks, obvious AoE markers on the ground, large touch targets for ability buttons, readable health bars and cooldown indicators.",
   "avatar_system": {
     "playable_character": "Avatar (divine projection of chosen Deity)",
-    "deity_status": "Safe in home Realm \u2014 never dies",
-    "scale": "God-scale everywhere (Option A)",
+    "deity_status": "Safe in home Realm — never dies",
+    "scale": "God-scale everywhere — avatars tower over environment",
     "realm_advantage_modifiers": {
       "home_realm": {
         "atk": 0,
@@ -110,39 +191,33 @@
   "belief_integration": {
     "base_belief_per_win": 100,
     "faction_passive": "+10%",
-    "deity_faith_trigger": "+20% (one of 9 solo triggers)",
+    "deity_faith_trigger": "+20% (one of 4 solo triggers)",
     "fallback_bonus": "+5% (any victory, if faith not triggered)",
     "max_per_win": 130,
     "with_faction_bonus_trigger": 135,
     "with_pantheon_resonance": 145
   },
-  "old_roles": {
-    "Warrior": "Win while staying above 50% HP the entire fight. Rewards sustained composure.",
-    "Caster": "Win after executing 3+ ability combo chains in one encounter. Rewards ability mastery.",
-    "Archer": "Win while controlling 60%+ of battlefield nodes. Rewards spatial control.",
-    "Assassin": "Win after breaking 3+ enemy armor/defense stacks. Rewards aggressive offense."
-  },
   "faith_triggers": {
     "Warrior": {
-      "name": "Warrior \u2014 The Unbroken",
+      "name": "Warrior — The Unbroken",
       "trigger": "Win while staying above 50% HP the entire fight",
       "bonus": "+20% Belief",
       "description": "The Avatar's composure under pressure is absolute. Rewards sustained presence and tank discipline."
     },
     "Caster": {
-      "name": "Caster \u2014 The Weaver",
+      "name": "Caster — The Weaver",
       "trigger": "Win after executing 3+ ability combo chains in one encounter",
       "bonus": "+20% Belief",
       "description": "The Avatar channels divine energy through complex ability rotations. Rewards ability mastery and resource management."
     },
     "Archer": {
-      "name": "Archer \u2014 The Sovereign",
+      "name": "Archer — The Sovereign",
       "trigger": "Win while controlling 60%+ of battlefield nodes",
       "bonus": "+20% Belief",
       "description": "The Avatar commands the battlefield from range. Rewards spatial control and positioning."
     },
     "Assassin": {
-      "name": "Assassin \u2014 The Breaker",
+      "name": "Assassin — The Breaker",
       "trigger": "Win after breaking 3+ enemy armor/defense stacks",
       "bonus": "+20% Belief",
       "description": "The Avatar shatters enemy defenses with precise, devastating strikes. Rewards aggressive offense and burst timing."
@@ -156,15 +231,18 @@
     "Archer",
     "Assassin"
   ],
-  "legacy_roles": {
-    "Endurance": "Win while staying above 50% HP the entire fight. Rewards sustained composure.",
-    "Conduit": "Win after executing 3+ ability combo chains in one encounter. Rewards ability mastery.",
-    "Dominion": "Win while controlling 60%+ of battlefield nodes. Rewards spatial control.",
-    "Fracture": "Win after breaking 3+ enemy armor/defense stacks. Rewards aggressive offense.",
-    "Disruption": "Win after interrupting 3+ enemy attacks. Rewards tactical awareness.",
-    "Range": "Win with 5+ ranged kills. Rewards precision from distance.",
-    "Counter": "Win after blocking/parrying 5+ enemy attacks. Rewards defensive mastery.",
-    "Shadow": "Win with 3+ stealth or timed-critical executions. Rewards precise timing.",
-    "Bulwark": "Win without taking a hit from the boss. Rewards perfect dodging."
-  }
+  "battlefieldArchitecture": {
+    "planeType": "2.5D — flat combat plane with 3D terrain for visual depth",
+    "cameraAngle": "~30-degree overhead angle — flat enough for tactical clarity, angled enough to sell 3D depth",
+    "scale": "Tiny human-sized buildings and structures scattered to show god-scale combat (avatars tower over everything)",
+    "noAutoMove": "Player manually taps to reposition. No auto-pathing to enemies."
+  },
+  "changeLog": [
+    "v1.0.0 — Initial turn-based tactical combat system",
+    "v2.0.0 — Reworked to real-time action RPG with virtual joystick + swipe dodge with i-frames",
+    "v2.1.0 (Aug 19 2026) — Removed joystick, switched to tap-to-move. Dodge/parry became auto-resolved stat checks. No reflex inputs.",
+    "v3.0.0 (Aug 20 2026) — FINAL: Tap-to-move + auto basic attacks + 3-4 ability buttons + 1 dodge button (spatial dash, NOT timing-based). Dodge button is for repositioning only. Stat-driven dodge/parry still auto-resolved for damage mitigation. Total 4-5 buttons. Zero joysticks. One-hand playable. MOBA-lite feel."
+  ],
+  "status": "LOCKED — Final Combat System (Aug 20 2026)",
+  "approvedBy": "BudE404 (Creative Director), BIGagent404"
 }
