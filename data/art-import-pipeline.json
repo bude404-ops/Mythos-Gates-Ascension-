@@ -1,7 +1,7 @@
 {
   "id": "MG-ART-IMPORT-PIPELINE-001",
   "version": "0.6.2",
-  "status": "ACTIVE",
+  "status": "ART_IMPORTED",
   "purpose": "Import generated art into a local review queue, attach it to the correct entity/prompt, then export governed metadata for repository registration.",
   "safeFolders": [
     "art/imported",
@@ -46,5 +46,7 @@
     "#/art-import",
     "#/art?category=Map"
   ],
-  "created": "2026-08-10"
+  "created": "2026-08-10",
+  "lastImportDate": "2026-08-29",
+  "importedCount": 118
 }
