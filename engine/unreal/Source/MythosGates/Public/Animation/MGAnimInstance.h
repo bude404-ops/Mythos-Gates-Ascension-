@@ -67,6 +67,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Animation")
 	void SetWeaponAnimClass(EMGWeaponAnimClass NewClass);
 
+	// Load per-deity animation data (weapon class, wings, cloth, special flags)
+	UFUNCTION(BlueprintCallable, Category = "Animation")
+	void LoadDeityAnimData(FName DeityId);
+
 	// Trigger a combat animation
 	UFUNCTION(BlueprintCallable, Category = "Animation")
 	void PlayCombatAnim(EMGAnimState CombatState);
@@ -123,6 +127,22 @@ protected:
 	// Combo step (0 = none, 1-3 = combo chain)
 	UPROPERTY(BlueprintReadOnly, Category = "Combat")
 	int32 ComboStep = 0;
+
+	// Special per-deity animation flags
+	UPROPERTY(BlueprintReadOnly, Category = "Deity")
+	bool bHasWings = false;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Deity")
+	bool bHasClothPhysics = true;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Deity")
+	bool bHasChainPhysics = false;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Deity")
+	bool bHasSpiritTranslucency = false;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Deity")
+	bool bHasAntiLightShader = false;
 
 private:
 	// Get the owning avatar

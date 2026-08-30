@@ -2919,7 +2919,18 @@
       "sourceCultureRule": "mythological source creature"
     },
     "artPromptId": "MG-PROMPT-MG-CREATURE-040",
-    "backstoryId": "MG-BACKSTORY-CREATURE-040"
+    "backstoryId": "MG-BACKSTORY-CREATURE-040",
+    "combatRole": "EXECUTIONER",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "aiProfile": {
+      "archetype": "EXECUTIONER",
+      "priority": [
+        "survive Ascension window",
+        "punish positioning mistakes",
+        "enforce mechanical execution"
+      ],
+      "counterplayWindow": "World boss telegraph windows are longer than standard enemies but deal massive damage if not avoided."
+    }
   },
   {
     "id": "MG-CREATURE-041",
@@ -2950,11 +2961,21 @@
     "artStatus": "Approved",
     "artPromptId": "MG-PROMPT-MG-CREATURE-041",
     "visualDescription": "Colossal ancient titan of forgotten memory, hundreds of feet tall, eroded mythic stone and rusted plate armor fused with flesh, faceless helm cracked open revealing void-fog, shattered crown of broken Gate stones, massive corroded war-sword embedded in earth, ash falling upward, moss and Gate-vine growth on lower body.",
-    "combatRole": "WORLD_BOSS",
+    "combatRole": "EXECUTIONER",
     "threatTier": "World Boss",
     "category": "World Boss",
     "realm": "Neutral",
     "status": "Art Complete",
-    "backstoryId": "MG-BACKSTORY-CREATURE-041"
+    "backstoryId": "MG-BACKSTORY-CREATURE-041",
+    "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+    "aiProfile": {
+      "archetype": "EXECUTIONER",
+      "priority": [
+        "survive Ascension window",
+        "punish positioning mistakes",
+        "enforce mechanical execution"
+      ],
+      "counterplayWindow": "World boss telegraph windows are longer than standard enemies but deal massive damage if not avoided."
+    }
   }
 ]

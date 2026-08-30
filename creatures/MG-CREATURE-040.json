@@ -1,0 +1,40 @@
+{
+  "id": "MG-CREATURE-040",
+  "name": "Ancient World Boss: The Gate Counter",
+  "sourceFactionId": "MG-FACTION-NEUTRAL",
+  "faction": "Neutral",
+  "playable": false,
+  "isWorldBoss": true,
+  "encounterTags": [
+    "world-boss",
+    "server-event"
+  ],
+  "stats": {
+    "hp": 100000,
+    "def": 800,
+    "atk": 600,
+    "speed": 3
+  },
+  "scaling": {
+    "eliteRemix": [
+      "not raw health sponge"
+    ]
+  },
+  "balanceNotes": "one deity vs many \u2014 world boss scale",
+  "loreGuardrails": {
+    "sourceCultureRule": "mythological source creature"
+  },
+  "artPromptId": "MG-PROMPT-MG-CREATURE-040",
+  "backstoryId": "MG-BACKSTORY-CREATURE-040",
+  "combatRole": "EXECUTIONER",
+  "threatFactionId": "MG-THREAT-FACTION-HOLLOW",
+  "aiProfile": {
+    "archetype": "EXECUTIONER",
+    "priority": [
+      "survive Ascension window",
+      "punish positioning mistakes",
+      "enforce mechanical execution"
+    ],
+    "counterplayWindow": "World boss telegraph windows are longer than standard enemies but deal massive damage if not avoided."
+  }
+}
