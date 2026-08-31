@@ -7,10 +7,10 @@
   "rarity": "Mythic God",
   "role": "Warrior",
   "abilities": [
-    "Aten-Ra \u2014 Ma\u2019at-Weighted Strike Anchor",
-    "Pylon Edict Technique \u2014 Bastion",
-    "Aten-Ra: Sun-Scale Decree Holdfast",
-    "Divine Ascension \u2014 Aten-Ra Source Radiance"
+    "Aten-Ra — Ma’at-Weighted Strike Anchor",
+    "Pylon Edict Technique — Bastion",
+    "Ma'at Verdict — shield bash, knocks back enemies, creates protective barrier absorbing damage",
+    "Divine Ascension — Aten-Ra Source Radiance"
   ],
   "stats": {
     "hp": 52,
@@ -27,16 +27,16 @@
     "combatPower": 238
   },
   "equipment": [
-    "Aten-Ra Bulwark Ma\u2019at Was-Sceptre Blade",
+    "Aten-Ra Bulwark Ma’at Was-Sceptre Blade",
     "Aten-Ra Electrum Wesekh Source-Plate",
     "Aten-Ra Khepri Solar Scarab Core"
   ],
   "passives": [
-    "Solar Edict: Aten Ra gains Solar Charge when defender play anchors a control zone and converts enemy commitment into mitigation on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma\u2019at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
+    "Solar Edict: Aten Ra gains Solar Charge when defender play anchors a control zone and converts enemy commitment into mitigation on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
   ],
-  "lore": "Aten Ra, Solar Law King, is now canonized as one of the four playable deities of Aten Ra. The deity is the source-realm divinity behind the mythology rather than a generic champion: solar creator-king and Ma\u2019at throne-holder. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
-  "personality": "A playable mythology deity whose behavior expresses solar creator-king and Ma\u2019at throne-holder; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
-  "visualDescription": "Aten Ra manifests as solar creator-king and Ma\u2019at throne-holder from Aten Ra: regal falcon-eyed masculine face, high cheekbones, gold-lined eyes, calm judging mouth; tall kingly masculine frame, broad chest, narrow waist, sun-carved posture, composed protector mass; signature silhouette: towering sun disk crown, falcon mantle, shield-forward king silhouette. Weapon: sun-disc khopesh and radiant law shield. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
+  "lore": "Aten Ra, Solar Law King, is now canonized as one of the four playable deities of Aten Ra. The deity is the source-realm divinity behind the mythology rather than a generic champion: solar creator-king and Ma’at throne-holder. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
+  "personality": "A playable mythology deity whose behavior expresses solar creator-king and Ma’at throne-holder; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
+  "visualDescription": "Aten Ra manifests as solar creator-king and Ma’at throne-holder from Aten Ra: regal falcon-eyed masculine face, high cheekbones, gold-lined eyes, calm judging mouth; tall kingly masculine frame, broad chest, narrow waist, sun-carved posture, composed protector mass; signature silhouette: towering sun disk crown, falcon mantle, shield-forward king silhouette. Weapon: sun-disc khopesh and radiant law shield. Maintain the approved Mythos Gates premium stylized tactical RPG aesthetic.",
   "artStatus": "READY_FOR_GENERATION",
   "artPromptId": "MG-PROMPT-001",
   "artworkId": null,
@@ -44,7 +44,7 @@
   "backstoryId": "MG-BACKSTORY-DEITY-001",
   "abilityDetails": [
     {
-      "name": "Aten-Ra \u2014 Ma\u2019at-Weighted Strike Anchor",
+      "name": "Aten-Ra — Ma’at-Weighted Strike Anchor",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -55,12 +55,12 @@
         "aten-ra",
         "source-culture"
       ],
-      "effect": "Deal Aten Ra source-culture damage at range 2; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+      "effect": "Deal Aten Ra source-culture damage at range 2; generate Momentum and a small Solar Charge gain when used from Aten-lit judgment ground or against the marked target. The hit reads visually as Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
       "scaling": "100% attack; +15% when the target is vulnerable or standing in faction-favored terrain",
       "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
-      "name": "Pylon Edict Technique \u2014 Bastion",
+      "name": "Pylon Edict Technique — Bastion",
       "slot": "Technique",
       "unlockLevel": 4,
       "cost": "20 Momentum",
@@ -92,7 +92,7 @@
       "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
-      "name": "Divine Ascension \u2014 Aten-Ra Source Radiance",
+      "name": "Divine Ascension — Aten-Ra Source Radiance",
       "slot": "Ascension",
       "unlockLevel": 30,
       "cost": "100 Divinity",
@@ -110,11 +110,11 @@
   ],
   "equipmentDetails": [
     {
-      "name": "Aten-Ra Bulwark Ma\u2019at Was-Sceptre Blade",
+      "name": "Aten-Ra Bulwark Ma’at Was-Sceptre Blade",
       "slot": "Relic Weapon",
       "rarityFloor": "Legendary",
       "primaryStat": "attack",
-      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through Aten-lit judgment ground. Visual: Aten hand-rays, Ma\u2019at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
+      "effect": "+3 attack. Basic attacks gain +4 Momentum once per round when they express source-culture canon through Aten-lit judgment ground. Visual: Aten hand-rays, Ma’at scale seams, electrum collars, faience/lapis inlay, scarab cores, pylon shields, Nile-black and desert-red balance.",
       "balanceGuardrail": "No extra action loops; empowered basics are once per round."
     },
     {
@@ -168,7 +168,7 @@
     "uniqueMechanic": "Aten Ra's Solar Edict: a solo mechanic where Solar Charge grows through Aten-lit judgment ground, reaction-window mastery, and defender decisions that anchor a control zone and convert enemy commitment into mitigation. Payoff: hold objectives longer while redirecting the next revealed enemy intent. Counterplay: spread attackers, displacement, or terrain denial break the anchor; enemies can also drain Momentum/Divinity before the upgraded Signature resolves.",
     "counterplayRule": "spread attackers, displacement, or terrain denial break the anchor"
   },
-  "mythicSource": "Ra-Aten \u2014 playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+  "mythicSource": "Ra-Aten — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
   "visualTraits": {
     "face": "regal falcon-eyed masculine face, high cheekbones, gold-lined eyes, calm judging mouth",
     "bodyProportions": "tall kingly masculine frame, broad chest, narrow waist, sun-carved posture, composed protector mass",
@@ -183,7 +183,7 @@
   "updated": "2026-08-17",
   "weaponCanon": {
     "signatureWeapon": "sun-disc khopesh and radiant law shield",
-    "loreReason": "Chosen because Aten Ra embodies solar creator-king and Ma\u2019at throne-holder in combat."
+    "loreReason": "Chosen because Aten Ra embodies solar creator-king and Ma’at throne-holder in combat."
   },
   "gearCanon": {
     "maskHelmetCrown": "Crown/helmet/mask must support regal falcon-eyed masculine face, high cheekbones, gold-lined eyes, calm judging mouth and towering sun disk crown, falcon mantle, shield-forward king silhouette; never hide sex identity or make the god interchangeable."
@@ -193,13 +193,13 @@
     "rosterCanon": "FOUR_GODS_PER_FACTION_PLAYABLE_ROSTER",
     "mythologyGod": "Ra-Aten",
     "sex": "Male",
-    "archetype": "solar creator-king and Ma\u2019at throne-holder",
+    "archetype": "solar creator-king and Ma’at throne-holder",
     "signatureWeapon": "sun-disc khopesh and radiant law shield",
     "faceLock": "regal falcon-eyed masculine face, high cheekbones, gold-lined eyes, calm judging mouth",
     "bodyLock": "tall kingly masculine frame, broad chest, narrow waist, sun-carved posture, composed protector mass",
     "silhouetteLock": "towering sun disk crown, falcon mantle, shield-forward king silhouette",
     "canonContinuity": "Faction lore, realm lore, civilization canon, campaign canon, and approved rendering style are preserved.",
-    "mythology": "Ra-Aten \u2014 playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
+    "mythology": "Ra-Aten — playable source-realm god identity; existing faction canon and extradimensional civilization remain unchanged.",
     "realm": "The Solar Dominion of Khepra",
     "civilization": "Aten Ra mythological extradimensional civilization",
     "cultureRule": "God identity must come from mythology, realm, civilization, sacred materials, beauty standards, and ritual practice; never color swap alone.",
