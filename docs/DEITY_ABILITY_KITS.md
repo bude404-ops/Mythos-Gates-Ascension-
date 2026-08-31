@@ -45,7 +45,7 @@ All abilities scale from Level 1 to Level 10. Each level increases:
 |-------|------|-------------|---------------------|----------------------|---------------------|
 | Aten Ra | Warrior | Solar Edge — 3-hit khopesh combo, frontal cone, light stacks (+8%/lvl) | Sun-Scale Decree — judgment zone, armor +30% + slow 40%, 4s | Ma'at Verdict — shield bash knocks back, barrier absorbs 1 incoming hit, 5s | Source Radiance — blinding solar AoE, 2x damage to all enemies in zone |
 | Sutekh | Caster | Desert Storm — storm-scepter strikes, storm-sand stacks (+8%/lvl) | Desert Storm Form — living sandstorm, immune to CC, +25% damage 5s | Red Land's Wrath — sand vortex pulls enemies to center, DoT 3s | Red Lord Ascension — body becomes storm, push + blind all, 2x damage 4s |
-| Iset | Archer | Throne Pulse — light-bow arrows, restoration energy (+8%/lvl) | Throne Sovereignty — buff zone, heal 15% + damage boost 20%, 6s | Nile Ward — healing arrow creates pool, cleanses debuffs, heals 10%/s, 4s | Isis Ascension — throne beams heal allies 25% + damage all enemies 2x |
+| Iset | Archer | Throne Pulse — light-bow arrows, restoration energy, 15% lifesteal (+8%/lvl) | Throne Sovereignty — power zone, self-heal 15% + damage boost 20%, 6s | Nile Ward — healing arrow creates pool, cleanses self debuffs, self-heal 10%/s, 4s | Isis Ascension — throne beams, self-heal 25% + damage all enemies 2x |
 | Amunet | Assassin | Hidden Strike — obsidian knife strikes, void-marks (+8%/lvl) | Veil of the Hidden One — invisibility 3s, void damage on reveal | Secret Name — mark target, next attack teleports behind for 2x damage | Amunet Ascension — untargetable 4s, teleport to all marks, 3x damage each |
 
 ## Asgardian (Storm / Honor / Runic Storm)
@@ -61,7 +61,7 @@ All abilities scale from Level 1 to Level 10. Each level increases:
 
 | Deity | Role | Basic Attack | Ability 1 (CD: 8s) | Ability 2 (CD: 12s) | Ultimate (CD: 60s) |
 |-------|------|-------------|---------------------|----------------------|---------------------|
-| Athena | Warrior | Spear of Wisdom — spear thrusts, shield stacks (+8%/lvl) | Aegis Bastion — invulnerable 2s, reflect 50% damage | Phalanx Formation — shield wall blocks projectiles 4s, protects allies | Athena Ascension — foresight reveals all attacks 5s, +50% damage to marked |
+| Athena | Warrior | Spear of Wisdom — spear thrusts, shield stacks (+8%/lvl) | Aegis Bastion — invulnerable 2s, reflect 50% damage | Phalanx Formation — shield wall blocks projectiles 4s, +30% self-armor | Athena Ascension — foresight reveals all attacks 5s, +50% damage to marked |
 | Zeus | Caster | Thunder Fist — thunder-scepter strikes (+8%/lvl) | Olympus Decree — storm throne, lightning aura DoT 5s | Chain Lightning — bolt arcs to 5 enemies, -20% per jump | Zeus Ascension — chain lightning all enemies, 2x damage, stun 1s |
 | Artemis | Archer | Moonshot — silver arrows, hunt-mark stacks (+8%/lvl) | Huntress Moon — tracking arrow, +50% damage to marked | Forest Ambush — stealth volley, first hit 2x + root 1.5s | Artemis Ascension — rain of arrows all enemies, 2x damage, 3s |
 | Ares | Assassin | Wrath Blades — dual wrath-blades, rage stacks (+8%/lvl) | War Frenzy — unkillable 3s, lifesteal 20%, +50% damage | Spear Wall — hurl war-kopis barrier, blocks movement 3s | Ares Ascension — berserker mode 5s, all enemies take 2x damage |
@@ -70,7 +70,7 @@ All abilities scale from Level 1 to Level 10. Each level increases:
 
 | Deity | Role | Basic Attack | Ability 1 (CD: 8s) | Ability 2 (CD: 12s) | Ultimate (CD: 60s) |
 |-------|------|-------------|---------------------|----------------------|---------------------|
-| Amaterasu | Warrior | Sun Spear — radiance blade thrusts, light stacks (+8%/lvl) | Sacred Light Field — blinding zone, allies +20% damage 5s | Mirror Flash — reflect light, blind cone 2s, reveal stealthed | Amaterasu Ascension — eternal sun, blind all 3s, 2x damage |
+| Amaterasu | Warrior | Sun Spear — radiance blade thrusts, light stacks (+8%/lvl) | Sacred Light Field — blinding zone, self +20% damage 5s | Mirror Flash — reflect light, blind cone 2s, reveal stealthed | Amaterasu Ascension — eternal sun, blind all 3s, 2x damage |
 | Tsukuyomi | Caster | Moon Edge — crescent naginata strikes, phase marks (+8%/lvl) | Crescent Domain — night zone, silence 3s + phase damage | Tide of Tsukuyomi — lunar wave pushes back, marks for 2x damage 4s | Tsukuyomi Ascension — eclipse, freeze all in shadow 2.5s, 2x damage |
 | Susanoo | Archer | Storm Blade — tempest greatbow wind-slashes (+8%/lvl) | Hurricane Slash — wind zone, push enemies + DoT 3s | Serpent Slayer — armor-piercing arrow, 2x vs high-defense targets | Susanoo Ascension — living hurricane, scatter all, 2x damage 4s |
 | Izanami | Assassin | Death Touch — shrine fan strikes, death-mark stacks (+8%/lvl) | Underworld Gate — death zone, execute below 20% HP | Yomi's Grasp — spectral hands root 2s, drain 10% HP | Izanami Ascension — all marked enemies executed, 3x if below 30% |
@@ -79,8 +79,8 @@ All abilities scale from Level 1 to Level 10. Each level increases:
 
 | Deity | Role | Basic Attack | Ability 1 (CD: 8s) | Ability 2 (CD: 12s) | Ultimate (CD: 60s) |
 |-------|------|-------------|---------------------|----------------------|---------------------|
-| Dagda | Warrior | Club of Life — oak club strikes, ground cracks (+8%/lvl) | Harp of Seasons — zone cycles: buff allies / debuff enemies, 6s | Cauldron's Bounty — shield slam, healing zone 8%/s, damages enemies 4s | Dagda Ascension — earth-shaker, knockdown all 2s, 2x damage |
-| Brigid | Caster | Flame Touch — sacred flame-staff, burn stacks (+8%/lvl) | Sacred Flame — healing fire zone, allies heal 10%/s 5s | Forge's Blessing — ally weapon +burn damage 25%, 8s | Brigid Ascension — eternal flame, all enemies burn 5s, allies +50% HP |
+| Dagda | Warrior | Club of Life — oak club strikes, ground cracks (+8%/lvl) | Harp of Seasons — zone cycles: self-buff / debuff enemies, 6s | Cauldron's Bounty — shield slam, self-heal zone 8%/s, damages enemies 4s | Dagda Ascension — earth-shaker, knockdown all 2s, 2x damage, self-heal 30% |
+| Brigid | Caster | Flame Touch — sacred flame-staff, burn stacks (+8%/lvl) | Sacred Flame — healing fire zone, self-heal 10%/s 5s | Forge's Blessing — weapon +burn damage 25%, lifesteal 10%, 8s | Brigid Ascension — eternal flame, all enemies burn 5s, self-heal 50% + immunity 3s |
 | Morrígan | Archer | Phantom Bow — crow-feather arrows, death-mark (+8%/lvl) | Battle Crow Form — fly over battlefield 4s, dive attacks 2x | Phantom Strike — spectral arrow pierces all, marks for 2x next hit | Morrígan Ascension — queen of phantoms, fear all 2s, 2x damage 4s |
 | Lugh | Assassin | Spear of Light — fast light-spear thrusts, light stacks (+8%/lvl) | Long Arm — extended reach zone, hit all in line 3s | Sling of Dawn — radiant projectile, blind 2s + 2x damage | Lugh Ascension — master of arts, all abilities empowered 2x for 5s |
 
@@ -90,7 +90,7 @@ All abilities scale from Level 1 to Level 10. Each level increases:
 |-------|------|-------------|---------------------|----------------------|---------------------|
 | Michael | Warrior | Holy Blade — flaming sword strikes, sanctify stacks (+8%/lvl) | Divine Verdict — judgment zone, bind enemies 2s | Wings of Justice — leap to target, stun 1.5s, holy circle DoT 3s | Michael Ascension — archangel form 5s, 2x damage, +50% armor |
 | Gabriel | Caster | Trumpet Strike — trumpet-spear sound waves, resonance stacks (+8%/lvl) | Divine Message — silence zone, block abilities 4s | Herald's Decree — slow target 60% 2s, +50% holy damage taken | Gabriel Ascension — final trumpet, stun all 1.5s, 2x damage |
-| Raphael | Archer | Seraph Arrows — seraph light-bow holy arrows, sanctify stacks (+8%/lvl) | Sanctuary Volley — arrow rain zone, disable enemies 3s | Healing Shot — heal ally 20% + cleanse, or 2x damage to enemy | Raphael Ascension — healing arrows 5s, 50% damage converts to team heal |
+| Raphael | Archer | Seraph Arrows — seraph light-bow holy arrows, sanctify stacks (+8%/lvl) | Sanctuary Volley — arrow rain zone, disable enemies 3s | Healing Shot — self-heal 20% + cleanse, or 2x damage to enemy | Raphael Ascension — healing arrows 5s, 50% damage converts to self-heal |
 | Jophiel | Assassin | Blade of Light — twin radiance-blades, radiance-marks (+8%/lvl) | Beauty Takedown — 2x attack speed 3s, detonate marks | Radiance Flash — blind nearby 2s, backstabs deal 3x for 3s | Jophiel Ascension — teleport strikes 5s, 2x damage, hit all isolated enemies |
 
 ## Infernal Dominion (Shadow / Chains / Infernal Fury)
@@ -104,17 +104,18 @@ All abilities scale from Level 1 to Level 10. Each level increases:
 
 ---
 
-## Balance Summary
+## Balance Summary (Solo Play — No Team Mechanics)
 
 **All ultimates normalized to equivalent power tiers:**
 - AoE damage ults: 2x multiplier to all enemies (Thor, Zeus, Amaterasu, Susanoo, Dagda, Gabriel, Lucifer, Morrígan, Aten Ra, Sutekh, Odin)
 - Single-target/burst ults: 3x multiplier or execute mechanic (Amunet, Skadi, Ares, Izanami, Lugh, Jophiel)
-- Utility/healing ults: team-wide effect + secondary damage (Iset, Brigid, Raphael, Athena, Freyja, Lilith, Naamah, Asmodeus, Michael)
+- Utility/self-heal ults: self-sustain + secondary damage (Iset, Brigid, Raphael, Athena, Freyja, Lilith, Naamah, Asmodeus, Michael)
 
 **CC limits per deity:** Max 2 hard CC (stun/root/freeze/charm) across all abilities  
-**Healing:** 5 deities have healing (Iset, Brigid, Raphael, Dagda, Freyja) — balanced by lower personal damage  
+**Self-Sustain:** 7 deities have lifesteal or self-heal (Iset, Brigid, Raphael, Dagda, Freyja, Amunet, Aten Ra) — balanced by lower burst damage  
 **Mobility:** 4 deities have mobility (Amunet teleport, Morrígan fly, Michael leap, Jophiel teleport) — balanced by lower armor  
 **Scaling:** All abilities +8%/level (basic), +12%/level (abilities), +15%/level (ultimate) — cooldowns reduce 3%/level  
+**No team mechanics:** All healing is lifesteal or self-heal. All buffs are self-buffs. All combat is 1v1 or solo-vs-mobs.  
 
 **Source:** `combat_kits_v4.py` — Full implementation details  
 **Format:** 1 Basic (auto) + 2 Abilities (8s/12s cooldowns) + 1 Ultimate (60s cooldown)  
