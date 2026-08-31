@@ -154,6 +154,15 @@ Every Avatar has:
 - Features: Deity selection, Avatar customization, Relic management, Route selection, Codex (lore library), Daily Challenges
 - Visual: A shattered Mythos Gate plaza with portals to each Realm and to Earth
 
+### 3.6.1 Deity Unlock System
+- **Starting Deity:** Player picks 1 of 7 starter deities (one per faction, all Warriors — simplest mechanics)
+- **Campaign Unlocks:** 21 deities unlock through Acts I-III (3 per faction per Act chapter)
+- **Faction Mastery:** 3 deities unlock by leveling starter to 10/20/30
+- **Gate Shard Purchase:** Any locked deity can be unlocked early (250-1,000 Gate Shards)
+- **All 28 deities are 100% free to unlock** — no paywall on gameplay content
+- **See:** `docs/DEITY_UNLOCK_SYSTEM.md` for full details
+- **Data:** `data/deity-unlock-system.json`
+
 ### 3.7 Death and Respawn
 - **Avatar Death:** The Avatar falls, not the Deity. The Gate returns the divine essence to the home Realm.
 - **Respawn:** Player respawns at their Deity's domain after a cooldown period

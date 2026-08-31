@@ -1,0 +1,218 @@
+{
+  "version": "1.0.0",
+  "date": "2026-08-31",
+  "total_deities": 28,
+  "starters": [
+    {
+      "faction": "Aten Ra",
+      "deity": "Aten Ra",
+      "role": "Warrior",
+      "reason": "Straightforward melee + shield, Solar Edict rewards aggression"
+    },
+    {
+      "faction": "Asgardian",
+      "deity": "Thor",
+      "role": "Warrior",
+      "reason": "Intuitive hammer throws, Rune Oath is forgiving for beginners"
+    },
+    {
+      "faction": "Olympian",
+      "deity": "Athena",
+      "role": "Warrior",
+      "reason": "Classic spear + shield, Aegis Favor gives free cooldowns"
+    },
+    {
+      "faction": "Kami",
+      "deity": "Amaterasu",
+      "role": "Warrior",
+      "reason": "Mirror shield + blade, Spirit Seal teaches dodging"
+    },
+    {
+      "faction": "Tuatha",
+      "deity": "Dagda",
+      "role": "Warrior",
+      "reason": "Big club, simple rotations, Geas Bloom snowballs early"
+    },
+    {
+      "faction": "Empyrean",
+      "deity": "Michael",
+      "role": "Warrior",
+      "reason": "Holy sword, straightforward leap + stun, Choir Edict natural flow"
+    },
+    {
+      "faction": "Infernal Dominion",
+      "deity": "Asmodeus",
+      "role": "Warrior",
+      "reason": "Big glaive, burn stacks, Blood Contract sustainable aggression"
+    }
+  ],
+  "starter_bonuses": {
+    "free": true,
+    "belief_boost": "+20% Belief gain for first 10 levels",
+    "cosmetic": "Unique 'First Ascension' skin at Level 10"
+  },
+  "unlock_methods": {
+    "campaign": {
+      "description": "Complete campaign chapters to unlock faction deities",
+      "unlocks": [
+        {
+          "act": "I",
+          "chapter": 3,
+          "faction": "Aten Ra",
+          "deities": [
+            "Sutekh",
+            "Iset",
+            "Amunet"
+          ]
+        },
+        {
+          "act": "I",
+          "chapter": 4,
+          "faction": "Asgardian",
+          "deities": [
+            "Odin",
+            "Skadi",
+            "Freyja"
+          ]
+        },
+        {
+          "act": "I",
+          "chapter": 5,
+          "faction": "Olympian",
+          "deities": [
+            "Zeus",
+            "Artemis",
+            "Ares"
+          ]
+        },
+        {
+          "act": "II",
+          "chapter": 7,
+          "faction": "Tuatha",
+          "deities": [
+            "Brigid",
+            "Morrígan",
+            "Lugh"
+          ]
+        },
+        {
+          "act": "II",
+          "chapter": 9,
+          "faction": "Kami",
+          "deities": [
+            "Tsukuyomi",
+            "Susanoo",
+            "Izanami"
+          ]
+        },
+        {
+          "act": "II",
+          "chapter": 11,
+          "faction": "Empyrean",
+          "deities": [
+            "Gabriel",
+            "Raphael",
+            "Jophiel"
+          ]
+        },
+        {
+          "act": "III",
+          "chapter": 14,
+          "faction": "Infernal Dominion",
+          "deities": [
+            "Lucifer",
+            "Lilith",
+            "Naamah"
+          ]
+        }
+      ],
+      "total": 21
+    },
+    "faction_mastery": {
+      "description": "Level your starter deity to unlock remaining faction members",
+      "milestones": [
+        {
+          "level": 10,
+          "unlock": "2nd deity in starter faction"
+        },
+        {
+          "level": 20,
+          "unlock": "3rd deity in starter faction"
+        },
+        {
+          "level": 30,
+          "unlock": "4th deity in starter faction"
+        }
+      ],
+      "total": 3,
+      "note": "Only applies to starter's faction — other factions unlock via campaign"
+    },
+    "gate_shards": {
+      "description": "Purchase deity contracts early with Gate Shards",
+      "costs": {
+        "starter_faction_deity": 250,
+        "act_ii_locked_deity": 500,
+        "act_iii_locked_deity": 1000
+      },
+      "earning_rates": {
+        "route_completion": "20-50 by difficulty",
+        "boss_defeat": "50-100",
+        "daily_challenge": 75,
+        "achievement": "100-500",
+        "weekly_challenge": 200
+      },
+      "total": "Any 6 locked deities purchased early"
+    }
+  },
+  "faction_advantages": {
+    "Aten Ra": {
+      "strong_against": "Hollow enemies, shadow types",
+      "weak_against": "Infernal Dominion bosses"
+    },
+    "Asgardian": {
+      "strong_against": "Ice/frost enemies, swarms",
+      "weak_against": "Kami spirit types"
+    },
+    "Olympian": {
+      "strong_against": "Armored enemies, boss fights",
+      "weak_against": "Tuatha wild types"
+    },
+    "Kami": {
+      "strong_against": "Spirit/demon types, CC-heavy enemies",
+      "weak_against": "Empyrean holy types"
+    },
+    "Tuatha": {
+      "strong_against": "Beast enemies, nature bosses",
+      "weak_against": "Asgardian storm types"
+    },
+    "Empyrean": {
+      "strong_against": "Infernal Dominion, shadow bosses",
+      "weak_against": "Hollow void types"
+    },
+    "Infernal Dominion": {
+      "strong_against": "Empyrean enemies, holy types",
+      "weak_against": "Aten Ra solar types"
+    }
+  },
+  "pantheon_resonance": {
+    "trigger": "Max-level all 4 deities in a faction",
+    "effect": "+5% ALL stats for all deities in that faction (permanent)",
+    "names": {
+      "Aten Ra": "Khepra Eternal",
+      "Asgardian": "World-Tree Ascendant",
+      "Olympian": "Olympian Council",
+      "Kami": "Sacred Kingdom Eternal",
+      "Tuatha": "Avalora Sovereign",
+      "Empyrean": "Choir Eternal",
+      "Infernal Dominion": "Black Iron Throne"
+    }
+  },
+  "f2p_balance": {
+    "all_deities_free": true,
+    "premium_only": [
+      "Cosmetics (skins, effects)",
+      "Convenience (XP boosts)"
+    ],
+    "no_paywall_on_gameplay": true
+  }
+}
