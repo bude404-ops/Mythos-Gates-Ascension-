@@ -237,7 +237,7 @@
 | REC | 25 |
 | AREA | 3 |
 | DMG TYPE | Divine |
-| ROLE | Warrior |
+| ROLE | Caster |
 
 **Passive — Sky Sovereignty:** Zeus takes 20% less damage from enemies above 50% HP. Immune to knockback.  
 **Ability 1 — Thunderbolt:** Call down a bolt. 220 ATK Divine. 3s cooldown.  
@@ -259,7 +259,7 @@
 | REC | 20 |
 | AREA | 5 |
 | DMG TYPE | Divine |
-| ROLE | Caster |
+| ROLE | Warrior |
 
 **Passive — Lyre of Light:** Every ability generates a light note. 3 notes = next ability free + +30% damage.  
 **Ability 1 — Sun Arrow:** Long-range Divine arrow. 200 ATK. Pierces. 2s cooldown.  

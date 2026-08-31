@@ -52,8 +52,8 @@ Each deity has:
 ### Olympian (Thunder / Glory / Divine Glory)
 | Deity | Role | Basic Attack | Signature | Ultimate |
 |-------|------|-------------|-----------|----------|
-| Zeus | Warrior | Thunder Fist — lightning-infused strikes | Olympus Decree — storm throne, lightning aura | Zeus Ascension — chain lightning all enemies, 3x damage |
-| Athena | Caster | Spear of Wisdom — tactical spear thrusts, shield stacks | Aegis Bastion — invulnerable zone, reflect damage | Athena Ascension — strategic foresight, all enemy attacks revealed |
+| Zeus | Caster | Thunder Fist — lightning-infused strikes | Olympus Decree — storm throne, lightning aura | Zeus Ascension — chain lightning all enemies, 3x damage |
+| Athena | Warrior | Spear of Wisdom — tactical spear thrusts, shield stacks | Aegis Bastion — invulnerable zone, reflect damage | Athena Ascension — strategic foresight, all enemy attacks revealed |
 | Artemis | Archer | Moonshot — silver arrows, hunt-mark stacks | Huntress Moon — tracking arrows, bonus vs marked | Artemis Ascension — rain of arrows, all enemies hit, 2x vs beasts |
 | Ares | Assassin | Wrath Blades — dual swords, rage stacks | War Frenzy — unkillable mode, lifesteal, 2x damage | Ares Ascension — berserker god, all enemies take 3x damage |
 

@@ -121,8 +121,8 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 
 ### Olympian — The Marble Sky of Olympus
 
-- **Zeus** — Warrior — Sky-throne dominion, lightning king
-- **Athena** — Caster — Strategist's aegis, wisdom warfare
+- **Zeus** — Caster — Sky-throne dominion, lightning king
+- **Athena** — Warrior — Strategist's aegis, wisdom warfare
 - **Artemis** — Archer — Silver-arrow hunt, moon tracking
 - **Ares** — Assassin — Blood-fury breaker, war frenzier
 
