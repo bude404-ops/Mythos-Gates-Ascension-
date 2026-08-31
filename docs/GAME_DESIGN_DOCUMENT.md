@@ -228,6 +228,25 @@ Each route contains:
 - **Act II (Ch 7-13):** Deeper Descent — Tuatha + Kami + Empyrean routes + first World Boss + Earth dungeons unlock
 - **Act III (Ch 14-19):** The Black Iron Bargain — Infernal Dominion + final World Bosses + Hollow climax on Earth
 
+### 4.6 Campaign Gameplay Design
+**See:** `docs/CAMPAIGN_GAMEPLAY_DESIGN.md` for full mission design
+
+**Key Design Principles:**
+1. Every mission uses a role mechanic (Warrior blocks, Caster combos, Archer marks, Assassin executes)
+2. Each chapter teaches one deity's ability kit through a specific challenge
+3. Bosses test specific abilities — each boss counters one playstyle and rewards another
+4. Difficulty tiers 1-5 scale with deity level (Tier 5 = Level 30 builds only)
+5. Faction unlock chapters (Ch 3, 4, 5, 7, 9, 11, 14) have 3 deity-specific challenges
+6. Each deity has at least one "signature campaign moment" where their unique ability shines
+7. Weapon skill tree paths are tested — Path A (burst) vs Path B (sustain) in Ch8 and Ch15
+8. Faction buffs are tested — each faction unlock chapter forces the buff mechanic
+
+**Mission Objectives by Role:**
+- Warrior: Hold the Line, Survive, Protect — tests blocking, zone control, armor stacking
+- Caster: Clear All, Chain Combos, Destroy — tests AoE, ability chaining, terrain manipulation
+- Archer: Hunt Target, Kill Before Escape, Mark & Detonate — tests kiting, mark stacking, pierce
+- Assassin: Kill Before Timer, Stealth Infiltration, Execute All — tests burst, stealth, execute
+
 ---
 
 ## 5. THREAT LAYER
