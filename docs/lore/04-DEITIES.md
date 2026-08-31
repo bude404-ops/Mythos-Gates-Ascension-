@@ -157,8 +157,8 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 
 ### Infernal Dominion — The Black Iron Court of Dominion
 
-- **Lucifer** — Warrior — Morningstar dominion, the fallen king
-- **Asmodeus** — Caster — Hellfire fracture, sin lord
+- **Lucifer** — Caster — Morningstar dominion, the fallen king
+- **Asmodeus** — Warrior — Hellfire fracture, sin lord
 - **Lilith** — Archer — Night-whisper shadow, first woman
 - **Naamah** — Assassin — Velvet-chains disruption, temptation
 

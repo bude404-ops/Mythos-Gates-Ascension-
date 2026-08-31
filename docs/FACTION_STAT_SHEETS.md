@@ -617,7 +617,7 @@
 | REC | 25 |
 | AREA | 3 |
 | DMG TYPE | Infernal |
-| ROLE | Warrior |
+| ROLE | Caster |
 
 **Passive — Morning Star:** Lucifer absorbs light around him. Enemies within 5m deal -15% damage (darkness debuff).  
 **Ability 1 — Shadow Blade:** 220 ATK Infernal. Reduces enemy healing by 50% for 4s. 3s cooldown.  
@@ -639,7 +639,7 @@
 | REC | 20 |
 | AREA | 5 |
 | DMG TYPE | Infernal |
-| ROLE | Caster |
+| ROLE | Warrior |
 
 **Passive — Hellfire Engine:** Every ability generates 1 Hellfire charge. 3 charges = next ability deals +75% damage and costs 0 DE.  
 **Ability 1 — Spike Fist:** 220 ATK Infernal. Knockback. 2s cooldown.  
