@@ -109,9 +109,12 @@ Zone layouts are **unique per battlefield** based on faction terrain:
 - Each deity has a **unique ultimate** (Aten Ra = solar flare, Odin = storm of spears, etc.)
 
 ### Faction Resource
-- Each faction has a unique resource (Solar Charge, Oath Fury, Divine Glory, etc.)
-- Powers the deity's passive ability
-- Builds from combat actions, empowers at threshold
+- Each faction has a unique resource (Solar Charge, Oathfire, Divine Favor, Sealfire, Geas, Choir Resonance, Debtfire)
+- Powers the deity's faction passive buff
+- Builds from combat actions (role-dependent: block, cast, shoot, crit)
+- Empowers at 3 stacks (mini-power) and 5 stacks (full-power)
+- See `FACTION_BUFFS.md` for full details on each faction's buff
+- Scales with level: +10%/+20%/+30% effect at levels 10/20/30
 
 ## Player Decisions (Core Strategy)
 

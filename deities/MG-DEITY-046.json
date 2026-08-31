@@ -32,7 +32,7 @@
     "Michael Ophanim Many-Eye Choir Core"
   ],
   "passives": [
-    "Choir Edict: Michael gains Choir Resonance when defender play anchors a control zone and converts enemy commitment into mitigation on ordered sigil zones. At 3 stacks, the next Technique or Reaction adds a radiant hierarchy judgment rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Radiant Hierarchies."
+    "Choir Edict: Michael gains Choir Resonance — Build by anchoring enemies — every blocked or absorbed hit generates 1 stack. At 3 stacks: Next basic attack deals 3x damage. At 5 stacks: Invulnerable 2s. Max 5 stacks. Buildup to divine power — ability usage leads to holy bursts."
   ],
   "lore": "Michael, Sword of the Highest Gate, is now canonized as one of the four playable deities of Empyrean. The deity is the source-realm divinity behind the mythology rather than a generic champion: heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses heavenly champion, dragon-breaker, gate defender, radiant command beneath the same Empyrean canon; confident, sovereign, readable in combat, loyal to the unchanged Empyrean canon.",
@@ -219,5 +219,15 @@
   "playableClassification": "God",
   "species": "Deity",
   "characterType": "Playable Deity",
-  "rosterClass": "Deity Roster"
+  "rosterClass": "Deity Roster",
+  "factionBuff": {
+    "name": "Choir Edict",
+    "resource": "Choir Resonance",
+    "build": "Hit with abilities to build stacks",
+    "roleBuild": "Build by anchoring enemies — every blocked or absorbed hit generates 1 stack",
+    "stack3": "Next basic attack deals 3x damage",
+    "stack5": "Invulnerable 2s",
+    "maxStacks": 5,
+    "theme": "Buildup to divine power — ability usage leads to holy bursts"
+  }
 }

@@ -32,7 +32,7 @@
     "Raphael Ophanim Many-Eye Choir Core"
   ],
   "passives": [
-    "Choir Edict: Raphael gains Choir Resonance when controller play rewrites movement lanes, delays elite intent, and imprints safe/unsafe tiles on ordered sigil zones. At 3 stacks, the next Technique or Reaction adds a radiant hierarchy judgment rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Radiant Hierarchies."
+    "Choir Edict: Raphael gains Choir Resonance — Build by sustained hits — every 5th basic attack generates 1 stack. At 3 stacks: Next basic attack deals 3x damage. At 5 stacks: Invulnerable 2s. Max 5 stacks. Buildup to divine power — ability usage leads to holy bursts."
   ],
   "lore": "Raphael, Wisdom of the Living Choir, is now canonized as one of the four playable deities of Empyrean. The deity is the source-realm divinity behind the mythology rather than a generic champion: feminine divine wisdom, living ordinance, holy geometry, terrain law made compassionate. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses feminine divine wisdom, living ordinance, holy geometry, terrain law made compassionate; confident, sovereign, readable in combat, loyal to the unchanged Empyrean canon.",
@@ -219,5 +219,15 @@
   "playableClassification": "Goddess",
   "species": "Deity",
   "characterType": "Playable Deity",
-  "rosterClass": "Deity Roster"
+  "rosterClass": "Deity Roster",
+  "factionBuff": {
+    "name": "Choir Edict",
+    "resource": "Choir Resonance",
+    "build": "Hit with abilities to build stacks",
+    "roleBuild": "Build by sustained hits — every 5th basic attack generates 1 stack",
+    "stack3": "Next basic attack deals 3x damage",
+    "stack5": "Invulnerable 2s",
+    "maxStacks": 5,
+    "theme": "Buildup to divine power — ability usage leads to holy bursts"
+  }
 }

@@ -32,7 +32,7 @@
     "Amunet Khepri Solar Scarab Core"
   ],
   "passives": [
-    "Solar Edict: Amunet gains Solar Charge when assassin play sets a vulnerability omen, then cashes it out through execution timing on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
+    "Solar Edict: Amunet gains Solar Charge — Build by burst damage — every critical hit or backstab generates 1 stack. At 3 stacks: Next ability deals +50% damage. At 5 stacks: Ultimate cooldown reduced 30%. Max 5 stacks. Damage escalation — the more you fight, the stronger your strikes."
   ],
   "lore": "Amunet, Hidden Breath Goddess, is now canonized as one of the four playable deities of Aten Ra. The deity is the source-realm divinity behind the mythology rather than a generic champion: hidden wind and unseen name goddess, concealed solar breath, secret execution. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses hidden wind and unseen name goddess, concealed solar breath, secret execution; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
@@ -219,5 +219,15 @@
   "species": "Deity",
   "characterType": "Playable Deity",
   "rosterClass": "Deity Roster",
-  "role": "Assassin"
+  "role": "Assassin",
+  "factionBuff": {
+    "name": "Solar Edict",
+    "resource": "Solar Charge",
+    "build": "Deal damage to build stacks",
+    "roleBuild": "Build by burst damage — every critical hit or backstab generates 1 stack",
+    "stack3": "Next ability deals +50% damage",
+    "stack5": "Ultimate cooldown reduced 30%",
+    "maxStacks": 5,
+    "theme": "Damage escalation — the more you fight, the stronger your strikes"
+  }
 }

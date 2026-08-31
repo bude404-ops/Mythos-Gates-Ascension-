@@ -31,7 +31,7 @@
     "Lucifer Blood-Wax Infernal Ledger Core"
   ],
   "passives": [
-    "Blood Contract: Lucifer gains Debtfire when defender play anchors a control zone and converts enemy commitment into mitigation on contract-scorched court ground. At 3 stacks, the next Technique or Reaction adds a debt, clause, and dominion law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Infernal Dominion."
+    "Blood Contract: Lucifer gains Debtfire — Build by landing abilities — every ability hit on an enemy generates 1 stack. At 3 stacks: Next ability 2x damage + self-heal 10%. At 5 stacks: Gain 30% lifesteal for 5s. Max 5 stacks. Dark pact — pain converts to power, sacrifice fuels strength."
   ],
   "lore": "Lucifer, Morningstar Thronebreaker, is now canonized as one of the four playable deities of Infernal Dominion. The deity is the source-realm divinity behind the mythology rather than a generic champion: fallen morningstar prince, infernal sovereignty, beautiful rebellion and throne defense. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses fallen morningstar prince, infernal sovereignty, beautiful rebellion and throne defense; confident, sovereign, readable in combat, loyal to the unchanged Infernal Dominion canon.",
@@ -220,5 +220,15 @@
   "characterType": "Playable Deity",
   "rosterClass": "Deity Roster",
   "faith_trigger": "Caster",
-  "combatRole": "Caster"
+  "combatRole": "Caster",
+  "factionBuff": {
+    "name": "Blood Contract",
+    "resource": "Debtfire",
+    "build": "Take damage to build stacks",
+    "roleBuild": "Build by landing abilities — every ability hit on an enemy generates 1 stack",
+    "stack3": "Next ability 2x damage + self-heal 10%",
+    "stack5": "Gain 30% lifesteal for 5s",
+    "maxStacks": 5,
+    "theme": "Dark pact — pain converts to power, sacrifice fuels strength"
+  }
 }

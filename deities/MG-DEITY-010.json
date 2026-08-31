@@ -32,7 +32,7 @@
     "Odin Yggdrasil Thunder-Root Core"
   ],
   "passives": [
-    "Rune Oath: Odin gains Oathfire when defender play anchors a control zone and converts enemy commitment into mitigation on storm-carved oathground. At 3 stacks, the next Technique or Reaction adds a rune-bound fate rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of World-Tree war halls."
+    "Rune Oath: Odin gains Oathfire — Build by landing abilities — every ability hit on an enemy generates 1 stack. At 3 stacks: Next hit heals 10% HP. At 5 stacks: Gain 30% armor for 5s. Max 5 stacks. Tank and retaliate — pain fuels your power."
   ],
   "lore": "Odin, Odin Stormvein, is now canonized as one of the four playable deities of Asgardian. The deity is the source-realm divinity behind the mythology rather than a generic champion: one-eyed war-king, rune-sacrifice sovereign, raven wisdom, oath shield of the Storm-Rooted Holds. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses one-eyed war-king, rune-sacrifice sovereign, raven wisdom, oath shield of the Storm-Rooted Holds; confident, sovereign, readable in combat, loyal to the unchanged Asgardian canon.",
@@ -219,5 +219,15 @@
   "playableClassification": "God",
   "species": "Deity",
   "characterType": "Playable Deity",
-  "rosterClass": "Deity Roster"
+  "rosterClass": "Deity Roster",
+  "factionBuff": {
+    "name": "Rune Oath",
+    "resource": "Oathfire",
+    "build": "Take damage to build stacks",
+    "roleBuild": "Build by landing abilities — every ability hit on an enemy generates 1 stack",
+    "stack3": "Next hit heals 10% HP",
+    "stack5": "Gain 30% armor for 5s",
+    "maxStacks": 5,
+    "theme": "Tank and retaliate — pain fuels your power"
+  }
 }

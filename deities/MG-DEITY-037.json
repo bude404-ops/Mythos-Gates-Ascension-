@@ -32,7 +32,7 @@
     "Dagda Dagda Cauldron Memory Core"
   ],
   "passives": [
-    "Geas Bloom: Dagda gains Geas when defender play anchors a control zone and converts enemy commitment into mitigation on sídhe-root crossing. At 3 stacks, the next Technique or Reaction adds a geas sovereignty rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Avalora."
+    "Geas Bloom: Dagda gains Geas — Build by anchoring enemies — every blocked or absorbed hit generates 1 stack. At 3 stacks: Heal 15% HP on kill. At 5 stacks: All cooldowns reduced 50% for 4s. Max 5 stacks. Momentum snowball — each kill makes you stronger."
   ],
   "lore": "Dagda, Good God Cauldron-King, is now canonized as one of the four playable deities of Tuatha. The deity is the source-realm divinity behind the mythology rather than a generic champion: Tuatha father god, abundance cauldron, oak club, sovereign feast and protection. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses Tuatha father god, abundance cauldron, oak club, sovereign feast and protection; confident, sovereign, readable in combat, loyal to the unchanged Tuatha canon.",
@@ -219,5 +219,15 @@
   "playableClassification": "God",
   "species": "Deity",
   "characterType": "Playable Deity",
-  "rosterClass": "Deity Roster"
+  "rosterClass": "Deity Roster",
+  "factionBuff": {
+    "name": "Geas Bloom",
+    "resource": "Geas",
+    "build": "Kill enemies to build stacks",
+    "roleBuild": "Build by anchoring enemies — every blocked or absorbed hit generates 1 stack",
+    "stack3": "Heal 15% HP on kill",
+    "stack5": "All cooldowns reduced 50% for 4s",
+    "maxStacks": 5,
+    "theme": "Momentum snowball — each kill makes you stronger"
+  }
 }

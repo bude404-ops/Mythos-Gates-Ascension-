@@ -32,7 +32,7 @@
     "Hanae Kitsune Foxfire Magatama Core"
   ],
   "passives": [
-    "Spirit Seal: Hanae gains Sealfire when sustain play banks survival value through terrain mastery and converts it into recovery on shrine threshold ground. At 3 stacks, the next Technique or Reaction adds a purification and boundary law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Sacred Kingdoms."
+    "Spirit Seal: Izanami gains Sealfire — Build by burst damage — every critical hit or backstab generates 1 stack. At 3 stacks: Next attack deals 2x damage. At 5 stacks: Immune to CC for 3s. Max 5 stacks. Evasion and precision — skillful dodging unlocks burst windows."
   ],
   "lore": "Izanami, Yomi Mother, is now canonized as one of the four playable deities of Kami. The deity is the source-realm divinity behind the mythology rather than a generic champion: creator mother and underworld queen, death-birth threshold, grave restoration. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses creator mother and underworld queen, death-birth threshold, grave restoration; confident, sovereign, readable in combat, loyal to the unchanged Kami canon.",
@@ -220,5 +220,15 @@
   "species": "Deity",
   "characterType": "Playable Deity",
   "rosterClass": "Deity Roster",
-  "role": "Assassin"
+  "role": "Assassin",
+  "factionBuff": {
+    "name": "Spirit Seal",
+    "resource": "Sealfire",
+    "build": "Dodge enemy attacks to build stacks",
+    "roleBuild": "Build by burst damage — every critical hit or backstab generates 1 stack",
+    "stack3": "Next attack deals 2x damage",
+    "stack5": "Immune to CC for 3s",
+    "maxStacks": 5,
+    "theme": "Evasion and precision — skillful dodging unlocks burst windows"
+  }
 }

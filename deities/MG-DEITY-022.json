@@ -32,7 +32,7 @@
     "Ares Oracle Ambrosia Core"
   ],
   "passives": [
-    "Aegis Favor: Ares gains Favor when breaker play marks armor, guard, or ritual structure for staged rupture on marble thunder line. At 3 stacks, the next Technique or Reaction adds a divine contest law rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of High Olympian courts."
+    "Aegis Favor: Artemis gains Divine Favor — Build by sustained hits — every 5th basic attack generates 1 stack. At 3 stacks: Next ability costs no cooldown. At 5 stacks: Gain 20% lifesteal for 5s. Max 5 stacks. Divine intervention — consistent combat earns divine rewards."
   ],
   "lore": "Artemis, Moon Huntress, is now canonized as one of the four playable deities of Olympian. The deity is the source-realm divinity behind the mythology rather than a generic champion: moon hunt goddess, wild threshold guardian, bow discipline and sudden punishment. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses moon hunt goddess, wild threshold guardian, bow discipline and sudden punishment; confident, sovereign, readable in combat, loyal to the unchanged Olympian canon.",
@@ -219,5 +219,15 @@
   "playableClassification": "God",
   "species": "Deity",
   "characterType": "Playable Deity",
-  "rosterClass": "Deity Roster"
+  "rosterClass": "Deity Roster",
+  "factionBuff": {
+    "name": "Aegis Favor",
+    "resource": "Divine Favor",
+    "build": "Hit enemies to build stacks",
+    "roleBuild": "Build by sustained hits — every 5th basic attack generates 1 stack",
+    "stack3": "Next ability costs no cooldown",
+    "stack5": "Gain 20% lifesteal for 5s",
+    "maxStacks": 5,
+    "theme": "Divine intervention — consistent combat earns divine rewards"
+  }
 }

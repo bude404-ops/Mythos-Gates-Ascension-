@@ -32,7 +32,7 @@
     "Sutekh Khepri Solar Scarab Core"
   ],
   "passives": [
-    "Solar Edict: Sutekh gains Solar Charge when disruptor play places a false timing window that punishes enemy overcommitment on Aten-lit judgment ground. At 3 stacks, the next Technique or Reaction adds a Ma’at balance rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Solar Dominion of Khepra."
+    "Solar Edict: Sutekh gains Solar Charge — Build by landing abilities — every ability hit on an enemy generates 1 stack. At 3 stacks: Next ability deals +50% damage. At 5 stacks: Ultimate cooldown reduced 30%. Max 5 stacks. Damage escalation — the more you fight, the stronger your strikes."
   ],
   "lore": "Sutekh, Red Land Storm God, is now canonized as one of the four playable deities of Aten Ra. The deity is the source-realm divinity behind the mythology rather than a generic champion: desert storm god, chaos-breaker who defends the sun barque against worse chaos. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses desert storm god, chaos-breaker who defends the sun barque against worse chaos; confident, sovereign, readable in combat, loyal to the unchanged Aten Ra canon.",
@@ -220,5 +220,15 @@
   "species": "Deity",
   "characterType": "Playable Deity",
   "rosterClass": "Deity Roster",
-  "role": "Caster"
+  "role": "Caster",
+  "factionBuff": {
+    "name": "Solar Edict",
+    "resource": "Solar Charge",
+    "build": "Deal damage to build stacks",
+    "roleBuild": "Build by landing abilities — every ability hit on an enemy generates 1 stack",
+    "stack3": "Next ability deals +50% damage",
+    "stack5": "Ultimate cooldown reduced 30%",
+    "maxStacks": 5,
+    "theme": "Damage escalation — the more you fight, the stronger your strikes"
+  }
 }

@@ -32,7 +32,7 @@
     "Axiom Ophanim Many-Eye Choir Core"
   ],
   "passives": [
-    "Choir Edict: Axiom gains Choir Resonance when guardian play intercepts a declared threat and stores the impact as later utility on ordered sigil zones. At 3 stacks, the next Technique or Reaction adds a radiant hierarchy judgment rider; at 5 stacks, the Signature upgrades once and then empties the meter. Momentum feeds the setup, Divinity empowers the finisher, and Earth myth remains only the echo of Radiant Hierarchies."
+    "Choir Edict: Gabriel gains Choir Resonance — Build by landing abilities — every ability hit on an enemy generates 1 stack. At 3 stacks: Next basic attack deals 3x damage. At 5 stacks: Invulnerable 2s. Max 5 stacks. Buildup to divine power — ability usage leads to holy bursts."
   ],
   "lore": "Gabriel, Herald of the Final Bell, is now canonized as one of the four playable deities of Empyrean. The deity is the source-realm divinity behind the mythology rather than a generic champion: divine messenger, warning trumpet, command intervention, guardian of announced fate. All prior faction, realm, civilization, campaign, and Lore Codex canon remains intact; only the playable roster scale and divine identity layer changed.",
   "personality": "A playable mythology deity whose behavior expresses divine messenger, warning trumpet, command intervention, guardian of announced fate; confident, sovereign, readable in combat, loyal to the unchanged Empyrean canon.",
@@ -220,5 +220,15 @@
   "species": "Deity",
   "characterType": "Playable Deity",
   "rosterClass": "Deity Roster",
-  "role": "Caster"
+  "role": "Caster",
+  "factionBuff": {
+    "name": "Choir Edict",
+    "resource": "Choir Resonance",
+    "build": "Hit with abilities to build stacks",
+    "roleBuild": "Build by landing abilities — every ability hit on an enemy generates 1 stack",
+    "stack3": "Next basic attack deals 3x damage",
+    "stack5": "Invulnerable 2s",
+    "maxStacks": 5,
+    "theme": "Buildup to divine power — ability usage leads to holy bursts"
+  }
 }
