@@ -45,18 +45,15 @@ Every Avatar has:
 | Ability 3 | Active | Heavy impact ability (long cooldown) |
 | Ultimate | Active | Room-clearing or boss-phase ability (charged via combat) |
 
-### 2.3 Combat Roles (9 Roles)
+### 2.3 Combat Roles (4 Roles)
 | Role | Playstyle | Key Stat |
 |------|----------|----------|
-| Defender | Methodical, unkillable, room-by-room | Armor |
-| Disruptor | Bait, fake, steal tempo, punish recovery | Speed |
-| Sustain | Outlast via lifesteal, regen, endurance | Recovery |
-| Assassin | Stealth, dodge, burst, execute | Crit |
-| Battery | Spam abilities, resource gen, combo chains | Resource |
-| Breaker | Crack defenses, armor-break, stagger | Penetration |
-| Artillery | Positioning-based, devastating lines | Range |
-| Controller | Terrain weapon, hazards, pathing | Area |
-| Guardian | Protect objectives while fighting | Defense |
+| Warrior | Tanky frontline, block, absorb, zone control, lifesteal | Armor/HP |
+| Caster | Ranged AoE, ability combos, terrain manipulation, CC | Divine Energy |
+| Archer | Long-range sustained DPS, mark stacking, kiting, pierce | Attack Speed |
+| Assassin | Burst, stealth, backstab, execute, mobility | Crit/Speed |
+
+See `docs/ROLE_IDENTITY_SYSTEM.md` for full role design.
 
 ### 2.4 Resource System
 - **Divine Energy (DE):** Primary combat resource. Regenerates over time + on hit. Abilities cost DE.
