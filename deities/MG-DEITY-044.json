@@ -7,10 +7,10 @@
   "rarity": "Rare",
   "faithTrigger": "Counter",
   "abilities": [
-    "Oghma Stone Script \u2014 Silver-Lughch Cut Intercept",
-    "Geas Thorn Technique \u2014 Punishing Guard",
-    "Oghma Stone Script: S\u00eddhe Court Covenant Oath of Intercept",
-    "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
+    "Oghma Stone Script — Silver-Lughch Cut Intercept",
+    "Geas Thorn Technique — Punishing Guard",
+    "Oghma Stone Script: Sídhe Court Covenant Oath of Intercept",
+    "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
   ],
   "stats": {
     "hp": 48,
@@ -28,7 +28,7 @@
   },
   "equipment": [
     "Oghma Stone Script Sentinel Lugh Silver-Spear Thornblade",
-    "Oghma Stone Script Moon-Oak S\u00eddhe Mantle",
+    "Oghma Stone Script Moon-Oak Sídhe Mantle",
     "Oghma Stone Script Dagda Cauldron Memory Core"
   ],
   "passives": [
@@ -44,7 +44,7 @@
   "backstoryId": "MG-BACKSTORY-DEITY-044",
   "abilityDetails": [
     {
-      "name": "Oghma Stone Script \u2014 Silver-Lughch Cut Intercept",
+      "name": "Oghma Stone Script — Silver-Lughch Cut Intercept",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -60,7 +60,7 @@
       "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
-      "name": "Geas Thorn Technique \u2014 Punishing Guard",
+      "name": "Geas Thorn Technique — Punishing Guard",
       "slot": "Technique",
       "unlockLevel": 4,
       "cost": "20 Momentum",
@@ -76,7 +76,7 @@
       "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
     },
     {
-      "name": "Oghma Stone Script: S\u00eddhe Court Covenant Oath of Intercept",
+      "name": "Oghma Stone Script: Sídhe Court Covenant Oath of Intercept",
       "slot": "Signature",
       "unlockLevel": 12,
       "cost": "45 Momentum + 25 Divinity",
@@ -92,7 +92,7 @@
       "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
-      "name": "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form",
+      "name": "Divine Ascension — Tír na nÓg Moon-Sovereign Form",
       "slot": "Ascension",
       "unlockLevel": 30,
       "cost": "100 Divinity",
@@ -118,7 +118,7 @@
       "balanceGuardrail": "No extra action loops; empowered basics are once per round."
     },
     {
-      "name": "Oghma Stone Script Moon-Oak S\u00eddhe Mantle",
+      "name": "Oghma Stone Script Moon-Oak Sídhe Mantle",
       "slot": "Armor Body",
       "rarityFloor": "Rare",
       "primaryStat": "armor",
@@ -130,7 +130,7 @@
       "slot": "Resonance Core",
       "rarityFloor": "Rare",
       "primaryStat": "energy",
-      "effect": "Stores Geas Memory and unlocks a mastery branch for S\u00eddhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "effect": "Stores Geas Memory and unlocks a mastery branch for Sídhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
       "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
     }
   ],
@@ -179,11 +179,15 @@
   "weaponCanon": "Oghma Stone Script Sentinel Lugh Silver-Spear Thornblade",
   "gearCanon": {
     "weapon": "Oghma Stone Script Sentinel Lugh Silver-Spear Thornblade",
-    "armor": "Oghma Stone Script Moon-Oak S\u00eddhe Mantle",
+    "armor": "Oghma Stone Script Moon-Oak Sídhe Mantle",
     "core": "Oghma Stone Script Dagda Cauldron Memory Core",
-    "movementRelic": "S\u00eddhe Mound Slip",
+    "movementRelic": "Sídhe Mound Slip",
     "reactionRelic": "Fae Glamour Reversal",
     "executionRelic": "Collect the Geas Debt",
     "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
-  }
+  },
+  "role": "Caster",
+  "characterType": "NPC Deity",
+  "playableClassification": "NPC",
+  "rosterClass": "NPC Roster"
 }

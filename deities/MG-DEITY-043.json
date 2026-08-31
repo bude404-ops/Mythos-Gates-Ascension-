@@ -7,10 +7,10 @@
   "rarity": "Epic",
   "faithTrigger": "Range",
   "abilities": [
-    "Ailbhe Thorn-Song \u2014 Silver-Lughch Cut Longshot",
-    "Geas Thorn Technique \u2014 Horizon Lock",
-    "Ailbhe Thorn-Song: S\u00eddhe Court Covenant Cataclysm Line",
-    "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form"
+    "Ailbhe Thorn-Song — Silver-Lughch Cut Longshot",
+    "Geas Thorn Technique — Horizon Lock",
+    "Ailbhe Thorn-Song: Sídhe Court Covenant Cataclysm Line",
+    "Divine Ascension — Tír na nÓg Moon-Sovereign Form"
   ],
   "stats": {
     "hp": 32,
@@ -28,7 +28,7 @@
   },
   "equipment": [
     "Ailbhe Thorn-Song Far-Sight Lugh Silver-Spear Thornblade",
-    "Ailbhe Thorn-Song Moon-Oak S\u00eddhe Mantle",
+    "Ailbhe Thorn-Song Moon-Oak Sídhe Mantle",
     "Ailbhe Thorn-Song Dagda Cauldron Memory Core"
   ],
   "passives": [
@@ -44,7 +44,7 @@
   "backstoryId": "MG-BACKSTORY-DEITY-043",
   "abilityDetails": [
     {
-      "name": "Ailbhe Thorn-Song \u2014 Silver-Lughch Cut Longshot",
+      "name": "Ailbhe Thorn-Song — Silver-Lughch Cut Longshot",
       "slot": "Basic",
       "unlockLevel": 1,
       "cost": "Action",
@@ -60,7 +60,7 @@
       "counterplay": "Break line of sight, deny favored terrain, bait the mark, or force the Deity into low-value targets."
     },
     {
-      "name": "Geas Thorn Technique \u2014 Horizon Lock",
+      "name": "Geas Thorn Technique — Horizon Lock",
       "slot": "Technique",
       "unlockLevel": 4,
       "cost": "20 Momentum",
@@ -76,7 +76,7 @@
       "counterplay": "Interrupt before resolution, spread enemy ranks, deny the setup terrain, or bait the cooldown."
     },
     {
-      "name": "Ailbhe Thorn-Song: S\u00eddhe Court Covenant Cataclysm Line",
+      "name": "Ailbhe Thorn-Song: Sídhe Court Covenant Cataclysm Line",
       "slot": "Signature",
       "unlockLevel": 12,
       "cost": "45 Momentum + 25 Divinity",
@@ -92,7 +92,7 @@
       "counterplay": "Move out of the rule zone, drain Momentum/Divinity, stagger the Deity, or exploit the exposed recovery turn."
     },
     {
-      "name": "Divine Ascension \u2014 T\u00edr na n\u00d3g Moon-Sovereign Form",
+      "name": "Divine Ascension — Tír na nÓg Moon-Sovereign Form",
       "slot": "Ascension",
       "unlockLevel": 30,
       "cost": "100 Divinity",
@@ -118,7 +118,7 @@
       "balanceGuardrail": "No extra action loops; empowered basics are once per round."
     },
     {
-      "name": "Ailbhe Thorn-Song Moon-Oak S\u00eddhe Mantle",
+      "name": "Ailbhe Thorn-Song Moon-Oak Sídhe Mantle",
       "slot": "Armor Body",
       "rarityFloor": "Epic",
       "primaryStat": "resistance",
@@ -130,7 +130,7 @@
       "slot": "Resonance Core",
       "rarityFloor": "Epic",
       "primaryStat": "energy",
-      "effect": "Stores Geas Memory and unlocks a mastery branch for S\u00eddhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
+      "effect": "Stores Geas Memory and unlocks a mastery branch for Sídhe Mound Slip, Fae Glamour Reversal, and Collect the Geas Debt. Rewards correct terrain and reaction play rather than passive stat gain.",
       "balanceGuardrail": "Resource refund has a per-round cap and cannot chain Ascension windows."
     }
   ],
@@ -179,11 +179,15 @@
   "weaponCanon": "Ailbhe Thorn-Song Far-Sight Lugh Silver-Spear Thornblade",
   "gearCanon": {
     "weapon": "Ailbhe Thorn-Song Far-Sight Lugh Silver-Spear Thornblade",
-    "armor": "Ailbhe Thorn-Song Moon-Oak S\u00eddhe Mantle",
+    "armor": "Ailbhe Thorn-Song Moon-Oak Sídhe Mantle",
     "core": "Ailbhe Thorn-Song Dagda Cauldron Memory Core",
-    "movementRelic": "S\u00eddhe Mound Slip",
+    "movementRelic": "Sídhe Mound Slip",
     "reactionRelic": "Fae Glamour Reversal",
     "executionRelic": "Collect the Geas Debt",
     "visualRule": "silver branches, living oak armor, thorn mantles, standing stones, battle-crow omens, cauldron glow, moonlit green-gold, geas scars"
-  }
+  },
+  "role": "Archer",
+  "characterType": "NPC Deity",
+  "playableClassification": "NPC",
+  "rosterClass": "NPC Roster"
 }

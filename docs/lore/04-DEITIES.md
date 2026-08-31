@@ -103,84 +103,63 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 
 ### Aten Ra — The Solar Dominion of Khepra
 
-- **Aten-Ra** — Endurance — Ra/Aten/Ma'at: the noon sun authority, living solar judgment
-- **Sutekh** — Fracture — Khepri: scarab dawn engine, renewal and rebirth
-- **Iset** — Conduit — Nephthys/Duat: necropolis dawn, horizon threshold judge
-- **Amunet** — Shadow — Ma'at weighing/punishment: prism of divine verdict
-- **Sutekh** — Disruption — Set/Sutekh: desert storm chaos harnessed to defend
-- **Iset** — Endurance — Isis: throne restoration, healing magic, river passage
-- **Karnu** — Range — Solar Barque/Ra sight: long-range divine bombardment
-- **Maahes** — Counter — Maahes: lion war protection, knives, devouring judgment
-- **Amunet** — Shadow — Amunet: hidden power, concealed name, unseen strike
+- **Aten-Ra** — Warrior — Ra/Aten/Ma'at: the noon sun authority, living solar judgment
+- **Sutekh** — Caster — Set/Sutekh: desert storm chaos, scarab dawn engine, renewal and rebirth
+- **Iset** — Archer — Isis/Nephthys: throne restoration, healing magic, river passage, horizon threshold judge
+- **Amunet** — Assassin — Amunet: hidden power, concealed name, unseen strike, Ma'at weighing/punishment
+
+> **Expanded Roster (NPCs):** Karnu (Range), Maahes (Counter) — appear as NPCs, enemies, and dungeon bosses.
 
 ### Asgardian — The Storm-Rooted Aesir Holds
 
-- Odin — Endurance (Odin's Sacrifice)
-- Thor — Dominion (Storm-Hammer Dominion)
-- Skadi — Counter (Weaver's Foreknowledge)
-- Freyja — Conduit (Seiðr War-Chant)
-- Mordun — Disruption
-- Veyra — Endurance
-- Ragnor — Range
-- Ullr — Counter
-- Sigrun — Shadow
+- **Odin** — Warrior — The Allfather, rune wisdom, storm sovereignty
+- **Thor** — Caster — Storm-hammer dominion, lightning avatar
+- **Skadi** — Archer — Frost bow huntress, winter domain
+- **Freyja** — Assassin — Seiðr war-chant, fate reaver, chooser of the slain
+
+> **Expanded Roster (NPCs):** Mordun, Veyra, Ragnor, Ullr, Sigrun — appear as NPCs, enemies, and dungeon bosses.
 
 ### Olympian — The Marble Sky of Olympus
 
-- Zeus — Dominion (Sky-Throne Dominion)
-- Athena — Counter (Strategist's Aegis)
-- Artemis — Range (Silver-Arrow Hunt)
-- Ares — Fracture (Blood-Fury Breaker)
-- Nikos — Disruption
-- Dione — Endurance
-- Helior — Range
-- Pallas — Counter
-- Eiren — Shadow
+- **Zeus** — Warrior — Sky-throne dominion, lightning king
+- **Athena** — Caster — Strategist's aegis, wisdom warfare
+- **Artemis** — Archer — Silver-arrow hunt, moon tracking
+- **Ares** — Assassin — Blood-fury breaker, war frenzier
+
+> **Expanded Roster (NPCs):** Nikos, Dione, Helior, Pallas, Eiren — appear as NPCs, enemies, and dungeon bosses.
 
 ### Kami — The Shrine-Path Archipelago
 
-- Amaterasu — Bulwark (Sun-Goddess Radiance)
-- Tsukuyomi — Shadow (Moon-Shadow Judgment)
-- Susanoo — Disruption (Storm-Blade Disruption)
-- Izanami — Endurance (Death-Gate Endurance)
-- Kageyori — Disruption
-- Hanae — Endurance
-- Onimaru — Range
-- Korin — Counter
-- Yamabito — Shadow
+- **Amaterasu** — Warrior — Sun-goddess radiance, sacred light
+- **Tsukuyomi** — Caster — Moon-shadow judgment, crescent domain
+- **Susanoo** — Archer — Storm-blade disruption, hurricane slash
+- **Izanami** — Assassin — Death-gate endurance, underworld queen
+
+> **Expanded Roster (NPCs):** Kageyori, Hanae, Onimaru, Korin, Yamabito — appear as NPCs, enemies, and dungeon bosses.
 
 ### Tuatha — The Root-Crowned Green Below
 
-- Dagda — Endurance (Cauldron of Endless Plenty)
-- Brigid — Conduit (Forge-Flame Conduit)
-- Morrigan — Shadow (Raven-Shadow Prophecy)
-- Lugh — Disruption (Many-Skilled Striker)
-- Nimue — Disruption
-- Cernan — Endurance
-- Ailbhe — Range
-- Oghma — Counter
-- Tara — Shadow
+- **Dagda** — Warrior — Cauldron of endless plenty, earth-shaker
+- **Brigid** — Caster — Forge-flame conduit, sacred fire
+- **Morrigan** — Archer — Raven-shadow prophecy, phantom bow
+- **Lugh** — Assassin — Many-skilled striker, spear of light
+
+> **Expanded Roster (NPCs):** Nimue, Cernan, Ailbhe, Oghma, Tara — appear as NPCs, enemies, and dungeon bosses.
 
 ### Empyrean — The White Citadel Above Law
 
-- Michael — Counter (Aegis of the Choral Host)
-- Gabriel — Range (Annunciation Herald)
-- Raphael — Endurance (Sacred Ward Endurance)
-- Jophiel — Dominion (Light-Fire Dominion)
-- Elyndra — Disruption
-- Orison — Endurance
-- Vespera — Range
-- Axiom — Counter
-- Theon — Shadow
+- **Michael** — Warrior — Aegis of the choral host, divine verdict
+- **Gabriel** — Caster — Annunciation herald, divine message
+- **Raphael** — Archer — Sacred ward endurance, healing radiance
+- **Jophiel** — Assassin — Light-fire dominion, beauty's blade
+
+> **Expanded Roster (NPCs):** Elyndra, Orison, Vespera, Axiom, Theon — appear as NPCs, enemies, and dungeon bosses.
 
 ### Infernal Dominion — The Black Iron Court of Dominion
 
-- Lucifer — Dominion (Morningstar Dominion)
-- Asmodeus — Fracture (Hellfire Fracture)
-- Lilith — Shadow (Night-Whisper Shadow)
-- Naamah — Disruption (Velvet-Chains Disruption)
-- Orryx — Disruption
-- Malvera — Endurance
-- Kharon — Range
-- Sablex — Counter
-- Zerath — Shadow
+- **Lucifer** — Warrior — Morningstar dominion, the fallen king
+- **Asmodeus** — Caster — Hellfire fracture, sin lord
+- **Lilith** — Archer — Night-whisper shadow, first woman
+- **Naamah** — Assassin — Velvet-chains disruption, temptation
+
+> **Expanded Roster (NPCs):** Orryx, Malvera, Kharon, Sablex, Zerath — appear as NPCs, enemies, and dungeon bosses.

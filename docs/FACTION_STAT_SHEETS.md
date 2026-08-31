@@ -47,7 +47,7 @@
 | REC | 25 |
 | AREA | 3 |
 | DMG TYPE | Solar |
-| ROLE | Defender |
+| ROLE | Warrior |
 
 **Passive — Solar Authority:** Enemies within 5m take -15% damage. Aten-Ra cannot be moved by knockback.  
 **Ability 1 — Sun-Disc Strike:** Forward arc solar slash. 220 ATK damage. 3s cooldown.  
@@ -69,7 +69,7 @@
 | REC | 20 |
 | AREA | 5 |
 | DMG TYPE | Solar |
-| ROLE | Battery |
+| ROLE | Caster |
 
 **Passive — Dawn Engine:** Every 3rd ability cast refunds 30% DE cost and reduces all cooldowns by 1s.  
 **Ability 1 — Scarab Roll:** Dash forward rolling enemies. 180 ATK + knockback. Generates 40 DE. 2s cooldown.  
@@ -91,7 +91,7 @@
 | REC | 15 |
 | AREA | 7 |
 | DMG TYPE | Spirit |
-| ROLE | Controller |
+| ROLE | Archer |
 
 **Passive — Threshold Judge:** Enemies below 30% HP are Slowed and cannot use abilities.  
 **Ability 1 — Duat Gate:** Place a necropolis zone. Enemies inside take 80 ATK/s Spirit damage. Lasts 6s. 5s cooldown.  
@@ -113,7 +113,7 @@
 | REC | 10 |
 | AREA | 4 |
 | DMG TYPE | Solar |
-| ROLE | Breaker |
+| ROLE | Assassin |
 
 **Passive — Divine Verdict:** Every 4th hit ignores all DEF and applies Stagger.  
 **Ability 1 — Prism Slash:** Forward thrust. 250 ATK. Reduces enemy DEF by 20% for 4s. 3s cooldown.  
@@ -142,7 +142,7 @@
 | REC | 25 |
 | AREA | 3 |
 | DMG TYPE | Storm |
-| ROLE | Defender |
+| ROLE | Warrior |
 
 **Passive — Raven Wisdom:** Odin sees enemy telegraphs 0.3s earlier. 10% chance to dodge any attack.  
 **Ability 1 — Storm Spear:** Throw a lightning spear. 200 ATK Storm. Chains to 2 nearby enemies. 3s cooldown.  
@@ -164,7 +164,7 @@
 | REC | 20 |
 | AREA | 6 |
 | DMG TYPE | Storm |
-| ROLE | Battery |
+| ROLE | Caster |
 
 **Passive — Thunder Charge:** Every hit builds a charge. At 5 charges, next ability deals +50% damage and refunds DE.  
 **Ability 1 — Hammer Throw:** Throw Mjolnir. 220 ATK Storm. Returns to hand. 3s cooldown.  
@@ -186,7 +186,7 @@
 | REC | 15 |
 | AREA | 7 |
 | DMG TYPE | Storm |
-| ROLE | Controller |
+| ROLE | Archer |
 
 **Passive — Bridge Watch:** Enemies that enter Skadi's range are Marked (+25% damage taken) for 4s.  
 **Ability 1 — Gjallar Horn:** Sound wave. 150 ATK. Pushes enemies back and Silences for 2s. 5s cooldown.  
@@ -208,7 +208,7 @@
 | REC | 10 |
 | AREA | 4 |
 | DMG TYPE | Storm |
-| ROLE | Breaker |
+| ROLE | Assassin |
 
 **Passive — Seiðr Fury:** Every 3rd consecutive hit on the same enemy applies Armor Break (-25% DEF, stacks 2x).  
 **Ability 1 — Seiðr Lash:** Forward whip-storm. 250 ATK. Applies Armor Break. 3s cooldown.  
@@ -237,7 +237,7 @@
 | REC | 25 |
 | AREA | 3 |
 | DMG TYPE | Divine |
-| ROLE | Defender |
+| ROLE | Warrior |
 
 **Passive — Sky Sovereignty:** Zeus takes 20% less damage from enemies above 50% HP. Immune to knockback.  
 **Ability 1 — Thunderbolt:** Call down a bolt. 220 ATK Divine. 3s cooldown.  
@@ -259,7 +259,7 @@
 | REC | 20 |
 | AREA | 5 |
 | DMG TYPE | Divine |
-| ROLE | Battery |
+| ROLE | Caster |
 
 **Passive — Lyre of Light:** Every ability generates a light note. 3 notes = next ability free + +30% damage.  
 **Ability 1 — Sun Arrow:** Long-range Divine arrow. 200 ATK. Pierces. 2s cooldown.  
@@ -281,7 +281,7 @@
 | REC | 15 |
 | AREA | 7 |
 | DMG TYPE | Divine |
-| ROLE | Controller |
+| ROLE | Archer |
 
 **Passive — Strategic Mind:** Artemis gains +10% damage for each enemy within 8m (max 40%).  
 **Ability 1 — Phalanx Wall:** Create a Divine barrier. Blocks enemy movement and projectiles. 5s cooldown.  
@@ -303,7 +303,7 @@
 | REC | 10 |
 | AREA | 4 |
 | DMG TYPE | Divine |
-| ROLE | Breaker |
+| ROLE | Assassin |
 
 **Passive — Bloodlust:** Every kill restores 15% HP and 30 DE.  
 **Ability 1 — War Slash:** Heavy slash. 260 ATK. Applies Armor Break. 3s cooldown.  
@@ -332,7 +332,7 @@
 | REC | 25 |
 | AREA | 3 |
 | DMG TYPE | Spirit |
-| ROLE | Defender |
+| ROLE | Warrior |
 
 **Passive — Radiant Dawn:** Amaterasu heals 2% max HP/s in combat. Enemies within 4m take -10% ATK.  
 **Ability 1 — Mirror Strike:** 220 ATK Spirit. Reflects 30% of damage taken next 2s back at attacker. 3s cooldown.  
@@ -354,7 +354,7 @@
 | REC | 20 |
 | AREA | 5 |
 | DMG TYPE | Spirit |
-| ROLE | Battery |
+| ROLE | Caster |
 
 **Passive — Moon Phase:** Alternates between Waxing (+30% ATK) and Waning (+30% DEF) every 8s.  
 **Ability 1 — Moonbeam Slash:** 200 ATK Spirit. During Waxing, +50% damage. 2s cooldown.  
@@ -376,7 +376,7 @@
 | REC | 15 |
 | AREA | 7 |
 | DMG TYPE | Storm |
-| ROLE | Controller |
+| ROLE | Archer |
 
 **Passive — Drum of Storms:** Every 4th attack triggers a free storm bolt (150 ATK) at nearest enemy.  
 **Ability 1 — Thunder Drum:** 180 ATK Storm AoE. Stuns for 1s. 4s cooldown.  
@@ -398,7 +398,7 @@
 | REC | 10 |
 | AREA | 4 |
 | DMG TYPE | Storm |
-| ROLE | Breaker |
+| ROLE | Assassin |
 
 **Passive — Storm Blade:** Every hit applies a stack of Storm Charge. At 3 stacks, next attack deals +200% damage and consumes all stacks.  
 **Ability 1 — Tsurugi Slash:** 260 ATK Storm. Applies 1 Storm Charge stack. 3s cooldown.  
@@ -427,7 +427,7 @@
 | REC | 30 |
 | AREA | 3 |
 | DMG TYPE | Nature |
-| ROLE | Defender |
+| ROLE | Warrior |
 
 **Passive — The Dagda's Cauldron:** Dagda regenerates 30 HP/s. Cannot drop below 1 HP from a single hit (survives at 1 HP once per 30s).  
 **Ability 1 — Club of Life:** 200 ATK Nature. Heals Dagda for 5% max HP. 3s cooldown.  
@@ -449,7 +449,7 @@
 | REC | 20 |
 | AREA | 5 |
 | DMG TYPE | Nature |
-| ROLE | Battery |
+| ROLE | Caster |
 
 **Passive — Master of All Arts:** Every 5th ability is free. Abilities used in sequence deal +10% (stacking, max +50%).  
 **Ability 1 — Spear of Lugh:** Throw a divine spear. 220 ATK. Returns. 2s cooldown.  
@@ -471,7 +471,7 @@
 | REC | 15 |
 | AREA | 7 |
 | DMG TYPE | Nature |
-| ROLE | Controller |
+| ROLE | Archer |
 
 **Passive — Sacred Flame:** Morrigan's attacks apply Burn (40 ATK/s for 3s, stacks 2x).  
 **Ability 1 — Flame Lash:** 180 ATK Nature + Burn. Chains to 2 nearby enemies. 4s cooldown.  
@@ -493,7 +493,7 @@
 | REC | 10 |
 | AREA | 4 |
 | DMG TYPE | Nature |
-| ROLE | Breaker |
+| ROLE | Assassin |
 
 **Passive — Battle Crow:** Enemies below 25% HP are revealed. Lugh deals +50% damage to enemies below 25% HP.  
 **Ability 1 — Crow Slash:** 260 ATK Nature. Applies Marked (+25% damage taken) for 4s. 3s cooldown.  
@@ -522,7 +522,7 @@
 | REC | 25 |
 | AREA | 3 |
 | DMG TYPE | Divine |
-| ROLE | Defender |
+| ROLE | Warrior |
 
 **Passive — Containment:** Michael's armor contains his radiance. When below 30% HP, releases a radiant burst (300 ATK AoE) and heals 10% HP. 30s cooldown.  
 **Ability 1 — Radiant Blade:** 220 ATK Divine. Pierces. 3s cooldown.  
@@ -544,7 +544,7 @@
 | REC | 20 |
 | AREA | 5 |
 | DMG TYPE | Divine |
-| ROLE | Battery |
+| ROLE | Caster |
 
 **Passive — Divine Messenger:** Every ability cast grants 10% move speed for 3s (stacks 3x).  
 **Ability 1 — Herald Strike:** 200 ATK Divine. Marks target for +25% damage. 2s cooldown.  
@@ -566,7 +566,7 @@
 | REC | 15 |
 | AREA | 7 |
 | DMG TYPE | Divine |
-| ROLE | Controller |
+| ROLE | Archer |
 
 **Passive — Healing Light:** Raphael heals 3% max HP every 5s. Abilities that hit enemies also heal Raphael for 5% max HP.  
 **Ability 1 — Light Bind:** 180 ATK Divine. Roots enemy in place for 2s. 4s cooldown.  
@@ -588,7 +588,7 @@
 | REC | 10 |
 | AREA | 4 |
 | DMG TYPE | Divine |
-| ROLE | Breaker |
+| ROLE | Assassin |
 
 **Passive — Fire of God:** Every 3rd hit applies Burn (50 ATK/s for 4s). Burn stacks 2x.  
 **Ability 1 — Flame Sword:** 260 ATK Divine + Burn. 3s cooldown.  
@@ -617,7 +617,7 @@
 | REC | 25 |
 | AREA | 3 |
 | DMG TYPE | Infernal |
-| ROLE | Defender |
+| ROLE | Warrior |
 
 **Passive — Morning Star:** Lucifer absorbs light around him. Enemies within 5m deal -15% damage (darkness debuff).  
 **Ability 1 — Shadow Blade:** 220 ATK Infernal. Reduces enemy healing by 50% for 4s. 3s cooldown.  
@@ -639,7 +639,7 @@
 | REC | 20 |
 | AREA | 5 |
 | DMG TYPE | Infernal |
-| ROLE | Battery |
+| ROLE | Caster |
 
 **Passive — Hellfire Engine:** Every ability generates 1 Hellfire charge. 3 charges = next ability deals +75% damage and costs 0 DE.  
 **Ability 1 — Spike Fist:** 220 ATK Infernal. Knockback. 2s cooldown.  
@@ -661,7 +661,7 @@
 | REC | 15 |
 | AREA | 7 |
 | DMG TYPE | Infernal |
-| ROLE | Controller |
+| ROLE | Archer |
 
 **Passive — Night Touched:** Enemies that hit Lilith are Charming (walk toward her for 1.5s). 8s cooldown per enemy.  
 **Ability 1 — Shadow Veil:** 180 ATK Infernal. Lilith becomes invisible for 2s. 4s cooldown.  
@@ -683,7 +683,7 @@
 | REC | 10 |
 | AREA | 4 |
 | DMG TYPE | Infernal |
-| ROLE | Breaker |
+| ROLE | Assassin |
 
 **Passive — Velvet Corruption:** Every hit applies Corrupted (healing reversed) for 2s. Stacks 2x.  
 **Ability 1 — Shadow Claw:** 260 ATK Infernal. Applies Corrupted. 3s cooldown.  
