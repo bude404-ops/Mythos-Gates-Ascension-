@@ -142,7 +142,7 @@
 | REC | 25 |
 | AREA | 3 |
 | DMG TYPE | Storm |
-| ROLE | Warrior |
+| ROLE | Caster |
 
 **Passive — Raven Wisdom:** Odin sees enemy telegraphs 0.3s earlier. 10% chance to dodge any attack.  
 **Ability 1 — Storm Spear:** Throw a lightning spear. 200 ATK Storm. Chains to 2 nearby enemies. 3s cooldown.  
@@ -164,7 +164,7 @@
 | REC | 20 |
 | AREA | 6 |
 | DMG TYPE | Storm |
-| ROLE | Caster |
+| ROLE | Warrior |
 
 **Passive — Thunder Charge:** Every hit builds a charge. At 5 charges, next ability deals +50% damage and refunds DE.  
 **Ability 1 — Hammer Throw:** Throw Mjolnir. 220 ATK Storm. Returns to hand. 3s cooldown.  

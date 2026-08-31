@@ -112,8 +112,8 @@ The design goal is encounter-specific single-Avatar mastery. The player projects
 
 ### Asgardian — The Storm-Rooted Aesir Holds
 
-- **Odin** — Warrior — The Allfather, rune wisdom, storm sovereignty
-- **Thor** — Caster — Storm-hammer dominion, lightning avatar
+- **Odin** — Caster — The Allfather, rune wisdom, storm sovereignty
+- **Thor** — Warrior — Storm-hammer dominion, lightning avatar
 - **Skadi** — Archer — Frost bow huntress, winter domain
 - **Freyja** — Assassin — Seiðr war-chant, fate reaver, chooser of the slain
 

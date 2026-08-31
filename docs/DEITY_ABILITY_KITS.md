@@ -44,8 +44,8 @@ Each deity has:
 ### Asgardian (Storm / Oath / Oath Fury)
 | Deity | Role | Basic Attack | Signature | Ultimate |
 |-------|------|-------------|-----------|----------|
-| Odin | Warrior | Rune Edge — rune-carved blade cleaves | Storm Sovereignty — storm circle, super armor, lightning | Odin Ascension — time slow, rune-mark detonation |
-| Thor | Caster | Mjolnir Strike — hammer throws, lightning on 3rd hit | Storm Hammer — charged throws create storm fields | Thor Ascension — colossal Mjolnir, screen-wide lightning |
+| Odin | Caster | Rune Edge — rune-carved blade cleaves | Storm Sovereignty — storm circle, super armor, lightning | Odin Ascension — time slow, rune-mark detonation |
+| Thor | Warrior | Mjolnir Strike — hammer throws, lightning on 3rd hit | Storm Hammer — charged throws create storm fields | Thor Ascension — colossal Mjolnir, screen-wide lightning |
 | Skadi | Archer | Frost Bow — frost arrows, freeze at 3 stacks | Huntress Domain — frozen ground, +50% range | Skadi Ascension — 5-split arrows, all ground ice, 3x damage |
 | Freyja | Assassin | Fate Reaver — harvest battle-fate, shockwave heal | Battle-Fate Storm — 2x attack speed, fate shockwaves | Chooser Ascension — mark enemies below 50% HP for death |
 
