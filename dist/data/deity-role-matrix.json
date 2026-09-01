@@ -1,0 +1,290 @@
+{
+  "id": "MG-DEITY-ROLE-MATRIX-001",
+  "name": "Deity Role Matrix",
+  "version": 5,
+  "status": "LOCKED",
+  "updated": "2026-09-01",
+  "rosterRule": "Playable characters are the actual gods and goddesses of mythology: exactly four per faction, two male gods and two female goddesses. Each faction has exactly 1 Warrior, 1 Caster, 1 Archer, and 1 Assassin. Roles matched to deity weapons and lore.",
+  "factions": [
+    {
+      "factionId": "MG-FACTION-001",
+      "faction": "Aten Ra",
+      "deities": [
+        {
+          "id": "MG-DEITY-001",
+          "name": "Aten Ra",
+          "sex": "Male",
+          "faith_trigger": "Warrior",
+          "god": "Ra-Aten",
+          "role": "Warrior",
+          "faithTrigger": "Warrior"
+        },
+        {
+          "id": "MG-DEITY-005",
+          "name": "Sutekh",
+          "sex": "Male",
+          "faithTrigger": "Assassin",
+          "god": "Set/Sutekh",
+          "role": "Assassin"
+        },
+        {
+          "id": "MG-DEITY-006",
+          "name": "Iset",
+          "sex": "Female",
+          "faithTrigger": "Caster",
+          "god": "Isis/Iset",
+          "role": "Caster"
+        },
+        {
+          "id": "MG-DEITY-009",
+          "name": "Amunet",
+          "sex": "Female",
+          "faithTrigger": "Archer",
+          "god": "Amunet",
+          "role": "Archer"
+        }
+      ]
+    },
+    {
+      "factionId": "MG-FACTION-002",
+      "faction": "Asgardian",
+      "deities": [
+        {
+          "id": "MG-DEITY-010",
+          "name": "Odin",
+          "sex": "Male",
+          "faith_trigger": "Caster",
+          "god": "Odin",
+          "role": "Caster",
+          "faithTrigger": "Caster"
+        },
+        {
+          "id": "MG-DEITY-011",
+          "name": "Freyja",
+          "sex": "Female",
+          "faith_trigger": "Assassin",
+          "god": "Freyja",
+          "role": "Assassin",
+          "faithTrigger": "Assassin"
+        },
+        {
+          "id": "MG-DEITY-015",
+          "name": "Skadi",
+          "sex": "Female",
+          "faithTrigger": "Archer",
+          "god": "Skadi",
+          "role": "Archer"
+        },
+        {
+          "id": "MG-DEITY-018",
+          "name": "Thor",
+          "sex": "Male",
+          "faithTrigger": "Warrior",
+          "god": "Thor",
+          "role": "Warrior"
+        }
+      ]
+    },
+    {
+      "factionId": "MG-FACTION-003",
+      "faction": "Olympian",
+      "deities": [
+        {
+          "id": "MG-DEITY-019",
+          "name": "Zeus",
+          "sex": "Male",
+          "faith_trigger": "Caster",
+          "god": "Zeus",
+          "role": "Caster",
+          "faithTrigger": "Caster"
+        },
+        {
+          "id": "MG-DEITY-022",
+          "name": "Artemis",
+          "sex": "Female",
+          "faith_trigger": "Archer",
+          "god": "Artemis",
+          "role": "Archer",
+          "faithTrigger": "Archer"
+        },
+        {
+          "id": "MG-DEITY-023",
+          "name": "Ares",
+          "sex": "Male",
+          "faithTrigger": "Warrior",
+          "god": "Ares",
+          "role": "Warrior"
+        },
+        {
+          "id": "MG-DEITY-026",
+          "name": "Athena",
+          "sex": "Female",
+          "faithTrigger": "Assassin",
+          "god": "Athena",
+          "role": "Assassin"
+        }
+      ]
+    },
+    {
+      "factionId": "MG-FACTION-004",
+      "faction": "Kami",
+      "deities": [
+        {
+          "id": "MG-DEITY-028",
+          "name": "Amaterasu",
+          "sex": "Female",
+          "faith_trigger": "Caster",
+          "god": "Amaterasu",
+          "role": "Caster",
+          "faithTrigger": "Caster"
+        },
+        {
+          "id": "MG-DEITY-029",
+          "name": "Tsukuyomi",
+          "sex": "Male",
+          "faith_trigger": "Assassin",
+          "god": "Tsukuyomi",
+          "role": "Assassin",
+          "faithTrigger": "Assassin"
+        },
+        {
+          "id": "MG-DEITY-032",
+          "name": "Susanoo",
+          "sex": "Male",
+          "faithTrigger": "Warrior",
+          "god": "Susanoo",
+          "role": "Warrior"
+        },
+        {
+          "id": "MG-DEITY-033",
+          "name": "Izanami",
+          "sex": "Female",
+          "faithTrigger": "Archer",
+          "god": "Izanami",
+          "role": "Archer"
+        }
+      ]
+    },
+    {
+      "factionId": "MG-FACTION-005",
+      "faction": "Tuatha",
+      "deities": [
+        {
+          "id": "MG-DEITY-037",
+          "name": "Dagda",
+          "sex": "Male",
+          "faith_trigger": "Warrior",
+          "god": "The Dagda",
+          "role": "Warrior",
+          "faithTrigger": "Warrior"
+        },
+        {
+          "id": "MG-DEITY-040",
+          "name": "Morrígan",
+          "sex": "Female",
+          "faith_trigger": "Archer",
+          "god": "The Morrígan",
+          "role": "Archer",
+          "faithTrigger": "Archer"
+        },
+        {
+          "id": "MG-DEITY-041",
+          "name": "Brigid",
+          "sex": "Female",
+          "faithTrigger": "Caster",
+          "god": "Brigid",
+          "role": "Caster"
+        },
+        {
+          "id": "MG-DEITY-042",
+          "name": "Lugh",
+          "sex": "Male",
+          "faithTrigger": "Assassin",
+          "god": "Lugh",
+          "role": "Assassin"
+        }
+      ]
+    },
+    {
+      "factionId": "MG-FACTION-006",
+      "faction": "Empyrean",
+      "deities": [
+        {
+          "id": "MG-DEITY-046",
+          "name": "Michael",
+          "sex": "Male",
+          "faith_trigger": "Warrior",
+          "god": "Archangel Michael",
+          "role": "Warrior",
+          "faithTrigger": "Warrior"
+        },
+        {
+          "id": "MG-DEITY-048",
+          "name": "Raphael",
+          "sex": "Female",
+          "faith_trigger": "Archer",
+          "god": "Raphael",
+          "role": "Archer",
+          "faithTrigger": "Archer"
+        },
+        {
+          "id": "MG-DEITY-050",
+          "name": "Jophiel",
+          "sex": "Female",
+          "faithTrigger": "Assassin",
+          "god": "Jophiel",
+          "role": "Assassin"
+        },
+        {
+          "id": "MG-DEITY-053",
+          "name": "Gabriel",
+          "sex": "Male",
+          "faithTrigger": "Caster",
+          "god": "Archangel Gabriel",
+          "role": "Caster"
+        }
+      ]
+    },
+    {
+      "factionId": "MG-FACTION-007",
+      "faction": "Infernal Dominion",
+      "deities": [
+        {
+          "id": "MG-DEITY-055",
+          "name": "Lucifer",
+          "sex": "Male",
+          "faith_trigger": "Caster",
+          "god": "Lucifer",
+          "role": "Caster",
+          "faithTrigger": "Caster"
+        },
+        {
+          "id": "MG-DEITY-057",
+          "name": "Lilith",
+          "sex": "Female",
+          "faith_trigger": "Archer",
+          "god": "Lilith",
+          "role": "Archer",
+          "faithTrigger": "Archer"
+        },
+        {
+          "id": "MG-DEITY-058",
+          "name": "Asmodeus",
+          "sex": "Male",
+          "faith_trigger": "Warrior",
+          "god": "Asmodeus",
+          "role": "Warrior",
+          "faithTrigger": "Warrior"
+        },
+        {
+          "id": "MG-DEITY-060",
+          "name": "Naamah",
+          "sex": "Female",
+          "faithTrigger": "Assassin",
+          "god": "Naamah",
+          "role": "Assassin"
+        }
+      ]
+    }
+  ]
+}
