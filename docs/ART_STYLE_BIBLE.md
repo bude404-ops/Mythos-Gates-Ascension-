@@ -22,7 +22,7 @@ Mythos Gates: Ascension uses a **stylized dark fantasy** art direction — not p
 ### Reference Points
 - *Hades* — mythological boldness, readable silhouettes
 - *Elden Ring* — dark fantasy atmosphere, divine scale
-- *Diablo Immortal* — premium mobile stylized, faction color clarity
+- Premium mobile stylized — premium mobile stylized, faction color clarity
 - *God of War (2018)* — material authority, divine presence
 
 ### What It Is NOT

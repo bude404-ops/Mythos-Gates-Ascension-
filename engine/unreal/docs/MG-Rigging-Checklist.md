@@ -43,8 +43,8 @@ All 28 playable deities + humanoid enemies share ONE master skeleton.
 ### Wing Bones (Optional Per Deity)
 | Deity | Wing Type | Bones | Notes |
 |-------|-----------|-------|-------|
-| Michael (Empyrean) | Light-tether wings | wing_L/R (3-seg) | Diablo-style energy strands |
-| Gabriel (Empyrean) | Light-tether wings | wing_L/R (3-seg) | Diablo-style energy strands |
+| Michael (Empyrean) | Light-tether wings | wing_L/R (3-seg) | energy-tether strands |
+| Gabriel (Empyrean) | Light-tether wings | wing_L/R (3-seg) | energy-tether strands |
 | Raphael (Empyrean) | Light-tether wings | wing_L/R (3-seg) | From behind mantle |
 | Jophiel (Empyrean) | Light-tether wings | wing_L/R (3-seg) | From behind mantle |
 | Freyja (Asgardian) | Falcon-feather wings | wing_L/R (3-seg) | Optional, lore-accurate |
