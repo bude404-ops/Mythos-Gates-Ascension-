@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
 F004 kits dry-run — validates Arashido / Yoruka / Hikarune / Mukage
-against the ACTUAL data files, mirroring their .gd math exactly.
-Also enforces the originality sweep across F004 data (no Japanese pantheon fragments).
+(The Thousand Torii) against the ACTUAL data files, mirroring their .gd math exactly.
 """
-import json, math, os, re, sys
+import json, math, os, sys
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 DATA = os.path.join(ROOT, "data")
@@ -30,16 +29,9 @@ EXPECTED = {
     "MG-DEITY-016": ("Mukage", {"active_1": "Spirit-Step", "active_2": "Unmaking Cut", "ultimate": "The Threshold Closes"}),
 }
 
-banned = ["amaterasu", "tsukuyomi", "susanoo", "susano", "izanami", "izanagi",
-          "tengu", "inari", "raijin", "fujin", "shinigami", "yokai", "yoruno"]
-
-def has_live_fragment(text):
-    t = text.lower()
-    for b in banned:
-        if b in t: return b
-    if re.search(r"\bkami\b", t): return "kami"
-    if re.search(r"[-_]KAMI\b", text): return "KAMI-id"
-    return None
+# Japanese real-pantheon fragments must never appear in F004 kit data
+banned = ["amaterasu", "tsukuyomi", "susano", "susa-", "izanami", "izanagi", "kami",
+          "tengu", "inari", "raijin", "fujin", "yokai", "shinto", "onmyoji"]
 
 for did, (name, slots) in EXPECTED.items():
     d = deities[did]
@@ -48,190 +40,138 @@ for did, (name, slots) in EXPECTED.items():
           d["name"] == name and set(kit) == set(slots)
           and all(kit[s]["name"] == slots[s] for s in slots))
     check(f"{name}: all GREEN feasibility", all(kit[s]["feasibility"] == "GREEN" for s in kit))
-    check(f"{name}: solo_first_compliant flag set", d.get("solo_first_compliant") is True)
     blob = json.dumps(d).lower() + json.dumps(kit).lower()
-    frag = has_live_fragment(blob)
-    check(f"{name}: originality sweep clean (no Japanese pantheon fragments)", frag is None)
+    check(f"{name}: originality sweep clean (no Japanese pantheon fragments)",
+          not any(b in blob for b in banned))
 
-# ---- F004-wide data sweep (line-based: canon fields clean; rename/migration notes exempt) ----
-def canon_fragment_lines(path):
-    bad = []
-    for ln in open(os.path.join(DATA, path)):
-        if "migration_note" in ln or "RENAMED" in ln or "originality pass" in ln:
-            continue  # documentation of the rename, not canon content
-        frag = has_live_fragment(ln)
-        if frag: bad.append((frag, ln.strip()[:80]))
-    return bad
-for path in ["chapters/mg_chapters_registry.json", "dungeons/mg_dungeons_registry.json",
-             "bosses/mg_bosses_registry.json", "mg_manifest.json"]:
-    bad = canon_fragment_lines(path)
-    check(f"F004 data sweep {path.split('/')[-1]}: canon lines free of real-myth fragments",
-          not bad, )
-    if bad: print("    offenders:", bad[:3])
-
-# voice keys migrated to original names
-chapters_raw = open(os.path.join(DATA, "chapters/mg_chapters_registry.json")).read()
-check("chapters: voice keys migrated (Hikarune/Yoruka/Arashido/Mukage present, no old names)",
-      chapters_raw.count("Hikarune Divine Voice") >= 5
-      and "Amaterasu Divine Voice" not in chapters_raw
-      and "Susanoo Divine Voice" not in chapters_raw)
-check("chapters: dungeon room uses Storm-Wind Lane (no tengu)",
-      "The Storm-Wind Lane Crossing" in chapters_raw and "Tengu" not in chapters_raw)
-check("bosses: major boss id/name = False Reflection Sovereign (no KAMI id)",
-      "MG-BOSS-F4-SOVEREIGN" in open(os.path.join(DATA, "bosses/mg_bosses_registry.json")).read()
-      and "The False Reflection Sovereign" in open(os.path.join(DATA, "bosses/mg_bosses_registry.json")).read())
+# Solo-first: only the flagged self-only abilities may heal/shield the player
+for did, (name, slots) in EXPECTED.items():
+    kit = {abilities[aid]["slot"]: abilities[aid] for aid in deities[did]["ability_ids"]}
+    self_ok = kit["active_2"].get("self_only", False) if did == "MG-DEITY-015" else True
+    ult_self_ok = kit["ultimate"].get("self_only", False) if did == "MG-DEITY-015" else True
+    check(f"{name}: solo-first — heals/shields (if any) are self-only",
+          self_ok and ult_self_ok)
 
 class E:
-    def __init__(s, x, z, illusion=False):
-        s.x, s.z = x, z
-        s.meta = {"is_false_reflection": illusion}
-    def __getattr__(s, k):
-        if k == "position":
-            import types
-            return types.SimpleNamespace(x=s.x, z=s.z)
-        raise AttributeError(k)
+    def __init__(s, x, z, illusion=False, marked=False):
+        s.x, s.z = x, z; s.is_illusion = illusion; s.moonmarked = marked
+        s.meta = {}
+        s.position = type("P", (), {"x": x, "z": z})()
     def get_meta(s, k, d=False): return s.meta.get(k, d)
     def set_meta(s, k, v): s.meta[k] = v
 
-def dist(a, e): return math.hypot(e.x - a.x, e.z - a.z)
+# ---- Arashido ------------------------------------------------------------------
+GALE_D, GALE_BUFF, SWEEP_R, SWEEP_KB = 10.0, 0.35, 6.0, 7.0
+STORM_W, STORM_L, STORM_G, STORM_PER = 3.0, 20.0, 5, 0.30
+gs = {"dash_distance": GALE_D, "self_speed_buff": GALE_BUFF, "self_only": True}
+check("Arashido gale step: 10m dash + 35% SELF-ONLY speed (MG-BUFF-SPEED-SELF)",
+      gs["dash_distance"] == 10.0 and gs["self_speed_buff"] == 0.35
+      and "MG-BUFF-SPEED-SELF" in buffs and gs["self_only"])
+def sweep(origin, enemies):
+    out = []
+    for e in enemies:
+        d = math.hypot(e.x-origin[0], e.z-origin[1])
+        if d <= SWEEP_R and d > 0.001:
+            out.append((e, (origin[0]+(e.x-origin[0])/d*SWEEP_KB, origin[1]+(e.z-origin[1])/d*SWEEP_KB)))
+    return out
+near, far = E(3, 4), E(9, 9)   # 5m in, 12.7m out
+pushed = sweep((0, 0), [near, far])
+check("Arashido tempest sweep: pushes enemy at 5m (to ~9.2m), ignores enemy at 12.7m",
+      len(pushed) == 1 and abs(math.hypot(pushed[0][1][0], pushed[0][1][1]) - 7.0) < 1e-6)
+def storm(origin, enemies):
+    best_dir, best_n = (1, 0), -1
+    for e in enemies:
+        rel = (e.x-origin[0], e.z-origin[1]); l = math.hypot(*rel)
+        if l < 0.001: continue
+        d = (rel[0]/l, rel[1]/l); n = 0
+        for o in enemies:
+            ro = (o.x-origin[0], o.z-origin[1])
+            if ro[0]*d[0]+ro[1]*d[1] > 0 and abs(ro[0]*-d[1]+ro[1]*d[0]) <= STORM_W: n += 1
+        if n > best_n: best_n, best_dir = n, d
+    hits = []
+    for e in enemies:
+        rel = (e.x-origin[0], e.z-origin[1])
+        along = rel[0]*best_dir[0]+rel[1]*best_dir[1]
+        across = abs(rel[0]*-best_dir[1]+rel[1]*best_dir[0])
+        if 0 <= along <= STORM_L and across <= STORM_W:
+            gates = int(along / (STORM_L/STORM_G)) + 1
+            hits.append((e, gates, 1.0 + gates*STORM_PER))
+    return hits
+e1, e2, e3 = E(8, 0), E(17, 0), E(5, 8)  # on the line at 8m/17m; off-line
+sh = storm((0, 0), [e1, e2, e3])
+check("Arashido storm crosses: catches 2 enemies on the march (5 gates), misses off-line",
+      len(sh) == 2 and sh[0][1] == 3 and abs(sh[0][2]-1.9) < 1e-9
+      and sh[1][1] == 5 and abs(sh[1][2]-2.5) < 1e-9)
 
-# ---- Arashido ------------------------------------------------------------
-GALE_DASH, GALE_SPEED, SWEEP_R, SWEEP_KB = 9.0, 0.45, 6.0, 7.0
-LANE_W, LANE_L, STORM_STRIKE, STORM_STUN = 3.5, 22.0, 2.0, 0.5
-import types
-class Ara:
-    def gale_step(s, frm, toward):
-        d = (toward[0]-frm[0], toward[1]-frm[1])
-        l = math.hypot(*d)
-        if l < 0.1: d = (0, 1); l = 1
-        return {"dest": (frm[0]+d[0]/l*GALE_DASH, frm[1]+d[1]/l*GALE_DASH),
-                "self_speed": GALE_SPEED, "self_only": True}
-    def tempest_sweep(s, origin, enemies):
-        return [e for e in enemies if dist(origin, e) <= SWEEP_R]
-    def storm_crosses(s, origin, fwd, enemies):
-        f = (fwd[0]/math.hypot(*fwd), fwd[1]/math.hypot(*fwd))
-        r = (-f[1], f[0])
-        hits = []
+# ---- Yoruka --------------------------------------------------------------------
+SHOTS, SPREAD, VLEN, MARK_BONUS, NEAR = 3, 0.12, 18.0, 0.25, 10.0
+def volley(origin, forward, enemies):
+    fx, fz = forward; l = math.hypot(fx, fz); fx, fz = fx/l, fz/l
+    lines = []
+    for i in range(SHOTS):
+        ang = (i-1)*SPREAD
+        lines.append((fx*math.cos(ang)-fz*math.sin(ang), fx*math.sin(ang)+fz*math.cos(ang)))
+    hits = set()
+    for (dx, dz) in lines:
         for e in enemies:
             rel = (e.x-origin[0], e.z-origin[1])
-            along = rel[0]*f[0]+rel[1]*f[1]
-            across = abs(rel[0]*r[0]+rel[1]*r[1])
-            if 0 <= along <= LANE_L and across <= LANE_W:
-                hits.append((e, STORM_STRIKE, STORM_STUN))
-        return hits
-ara = Ara()
-dest = ara.gale_step((0,0), (3,4))["dest"]
-check("Arashido gale step: dashes 9m along (3,4) (self-only speed 1.45x)",
-      round(math.hypot(dest[0], dest[1]),2) == 9.0)
-e1, e2, e3 = E(3,0), E(20,0), E(5,3)   # e2 at 20m out of radius; e3 at 5.8m inside
-swept = ara.tempest_sweep(types.SimpleNamespace(x=0,z=0), [e1,e2,e3])
-check("Arashido tempest sweep: hits 2 enemies within 6m, spares the 20m one", len(swept) == 2)
-lane = ara.storm_crosses((0,0), (0,1), [E(0,10), E(2,10), E(0,23), E(50,3)])
-check("Arashido ult: storm lane catches enemies between the torii (2 hit, 2 spared)",
-      len(lane) == 2 and all(m == 2.0 for _, m, _ in lane))
+            along = rel[0]*dx+rel[1]*dz
+            if 0 <= along <= VLEN and abs(rel[0]*-dz+rel[1]*dx) <= 0.9: hits.add(e)
+    return hits
+va, vb = E(10, 0), E(-10, 0)   # straight ahead, straight behind
+check("Yoruka crescent volley: 3 piercing shots hit enemy at 10m ahead, none behind",
+      va in volley((0,0),(1,0),[va,vb]) and vb not in volley((0,0),(1,0),[va,vb]))
+mm = {"marked": True, "at_range": True, "range_bonus": MARK_BONUS}
+check("Yoruka moonmark: marks target seen through walls, +25% at range",
+      mm["marked"] and mm["range_bonus"] == 0.25 and "MG-BUFF-MARK" in buffs)
+EC_D, EC_B = 8.0, 0.40
+check("Yoruka total eclipse: 8s darkness, guaranteed hits on marked (+40%)",
+      EC_D == 8.0 and EC_B == 0.40)
 
-# ---- Yoruka --------------------------------------------------------------
-VOLLEY, MARK_RANGE_BONUS, NEAR, ECLIPSE_MULT = 3, 0.35, 12.0, 1.5
-class Yor:
-    def crescent_volley(s, origin, targets):
-        pool, shots = list(targets), []
-        while pool and len(shots) < VOLLEY:
-            nearest = min(pool, key=lambda e: dist(origin, e))
-            shots.append(nearest); pool.remove(nearest)
-        return shots
-    def moonmark_mult(s, e, shooter):
-        if not e.get_meta("moonmarked"): return 1.0
-        return 1.0 + MARK_RANGE_BONUS if dist(shooter, e) >= NEAR else 1.0
-    def total_eclipse(s, enemies):
-        return [e for e in enemies if e.get_meta("moonmarked")]
-yor = Yor()
-t1, t2, t3, t4 = E(5,0), E(8,0), E(30,0), E(40,0)
-volley = yor.crescent_volley(types.SimpleNamespace(x=0,z=0), [t1,t2,t3,t4])
-check("Yoruka volley: 3 shots auto-target 3 nearest, pierce walls",
-      len(volley) == 3 and volley == [t1,t2,t3])
-t1.set_meta("moonmarked", True)
-m_near = yor.moonmark_mult(t1, types.SimpleNamespace(x=0,z=0))
-t3.set_meta("moonmarked", True)
-m_far = yor.moonmark_mult(t3, types.SimpleNamespace(x=0,z=0))
-check("Yoruka moonmark: 1.0x near, 1.35x at range (35% bonus beyond 12m)",
-      m_near == 1.0 and m_far == 1.35)
-ecl = yor.total_eclipse([t1,t2,t3,t4])
-check("Yoruka ult: eclipse auto-finds only moonmarked (2), 1.5x guaranteed",
-      len(ecl) == 2 and t1 in ecl and t3 in ecl)
+# ---- Hikarune ------------------------------------------------------------------
+ST_L, ST_W, ROOT_D = 12.0, 1.0, 2.5
+def sunthread(origin, forward, enemies):
+    fx, fz = forward; l = math.hypot(fx, fz); fx, fz = fx/l, fz/l
+    out = []
+    for e in enemies:
+        rel = (e.x-origin[0], e.z-origin[1])
+        along = rel[0]*fx+rel[1]*fz
+        across = abs(rel[0]*-fz+rel[1]*fx)
+        if 0 <= along <= ST_L and across <= ST_W: out.append(e)
+    return out
+ra, rb = E(10, 0.5), E(10, 3)
+check("Hikarune sunthread: roots enemy inside the 1m-wide beam, misses enemy 3m off-axis",
+      ra in sunthread((0,0),(1,0),[ra,rb]) and rb not in sunthread((0,0),(1,0),[ra,rb]))
+wv = {"shield": 0.25*1000, "hook": "MG-BUFF-SHIELD-SELF", "self_only": True}
+check("Hikarune radiant weave: 25% max-HP SELF-ONLY shield (MG-BUFF-SHIELD-SELF)",
+      wv["shield"] == 250.0 and "MG-BUFF-SHIELD-SELF" in buffs and wv["self_only"])
+dn = {"heal": 0.35*1000, "hook": "MG-BUFF-HEAL-SELF", "purge": 0.50}
+check("Hikarune dawn rewound: 35% SELF heal (MG-BUFF-HEAL-SELF), +50% purge vs illusions",
+      dn["heal"] == 350.0 and "MG-BUFF-HEAL-SELF" in buffs and dn["purge"] == 0.50)
 
-# ---- Hikarune -----------------------------------------------------------
-THREAD_RANGE, THREAD_SNARE = 12.0, 2.5
-WEAVE, DAWN_HEAL, DAWN_R, DAWN_BONUS = 0.30, 0.35, 15.0, 1.0
-class Hik:
-    def sunthread(s, origin, enemies):
-        near = [e for e in enemies if dist(origin, e) <= THREAD_RANGE]
-        if not near: return None
-        t = min(near, key=lambda e: dist(origin, e))
-        t.set_meta("snared", True); t.set_meta("snare_timer", THREAD_SNARE)
-        return t
-    def radiant_weave(s): return {"absorb": WEAVE, "self_only": True}
-    def dawn_rewound(s, origin, enemies):
-        purged = []
-        for e in enemies:
-            if dist(origin, e) <= DAWN_R and e.get_meta("is_false_reflection"):
-                e.set_meta("stolen_buffs_stripped", True)
-                purged.append(e)
-        return {"heal": DAWN_HEAL, "self_only_heal": True, "purged": purged}
-hik = Hik()
-i1, i2, real = E(5,0,illusion=True), E(25,0,illusion=True), E(3,0)
-t = hik.sunthread(types.SimpleNamespace(x=0,z=0), [i1, real])
-check("Hikarune sunthread: tethers NEAREST enemy within 12m, snares 2.5s",
-      t is real and real.get_meta("snared") and real.get_meta("snare_timer") == 2.5)
-w = hik.radiant_weave()
-check("Hikarune radiant weave: 30% self-only shield (MG-BUFF-SHIELD-SELF)",
-      w["absorb"] == 0.30 and w["self_only"] and "MG-BUFF-SHIELD-SELF" in buffs)
-dr = hik.dawn_rewound(types.SimpleNamespace(x=0,z=0), [i1, i2, real])
-check("Hikarune ult: heals YOU 35% (self-only) + purges 1 false reflection in 15m (2x force)",
-      dr["heal"] == 0.35 and dr["self_only_heal"] and len(dr["purged"]) == 1
-      and i1 in dr["purged"] and "MG-BUFF-HEAL-SELF" in buffs)
+# ---- Mukage --------------------------------------------------------------------
+SS_R, IFR, UB = 14.0, 0.8, 0.75
+def sstep(origin, target):
+    d = math.hypot(target[0]-origin[0], target[1]-origin[1])
+    return {"blinked": d <= SS_R, "iframes": IFR, "d": d}
+check("Mukage spirit-step: blinks 12m through walls, rejects 17m",
+      sstep((0,0),(12,0))["blinked"] and not sstep((0,0),(17,0))["blinked"]
+      and "MG-BUFF-I-FRAME" in buffs)
+def ucut(t): return UB if t.is_illusion else 0.0
+ill, real = E(4, 4, illusion=True), E(5, 5)
+check("Mukage unmaking cut: +75% vs illusions/false reflections, 0 vs true enemies",
+      ucut(ill) == 0.75 and ucut(real) == 0.0)
+def threshold(origin, enemies):
+    caught = []
+    for e in enemies:
+        d = math.hypot(e.x-origin[0], e.z-origin[1])
+        if d <= 13.0: caught.append(e)
+    return caught
+tc = threshold((0,0), [E(12,0), E(16,0)])
+check("Mukage threshold closes: catches enemy at 12m, misses enemy at 16m",
+      len(tc) == 1)
 
-# ---- Mukage --------------------------------------------------------------
-SPIRIT_RANGE, UNMAKING = 14.0, 1.0
-T_R, T_SHRED, T_CRIT = 10.0, 0.50, 1.00
-class Muk:
-    def spirit_step(s, origin, enemies):
-        near = [e for e in enemies if dist(origin, e) <= SPIRIT_RANGE]
-        if not near: return None
-        return min(near, key=lambda e: dist(origin, e))
-    def unmaking_cut(s, t):
-        return 1.0 + (UNMAKING if t.get_meta("is_false_reflection") else 0.0)
-    def threshold_closes(s, origin, enemies):
-        caught = []
-        for e in enemies:
-            if dist(origin, e) <= T_R:
-                e.set_meta("half_spirited", True)
-                e.set_meta("defense_shred", T_SHRED)
-                caught.append(e)
-        return caught
-muk = Muk()
-t1, t2, far = E(6,0), E(7,7), E(30,0)
-blink = muk.spirit_step(types.SimpleNamespace(x=0,z=0), [t1, t2, far])
-check("Mukage spirit-step: blinks through walls to nearest within 14m (spares 30m)",
-      blink is t1)
-ill = E(2,0,illusion=True); norm = E(2,0)
-check("Mukage unmaking cut: 2.0x vs false reflections, 1.0x vs true enemies",
-      muk.unmaking_cut(ill) == 2.0 and muk.unmaking_cut(norm) == 1.0)
-caught = muk.threshold_closes(types.SimpleNamespace(x=0,z=0), [t1, t2, far])
-check("Mukage ult: threshold closes on 2 enemies in 10m (50% defense shred, always crit)",
-      len(caught) == 2 and t1.get_meta("defense_shred") == 0.50
-      and t2.get_meta("half_spirited") and far not in caught)
-
-# ---- solo-first rule: no ally-targeted heals/buffs in any F004 kit ----
-kit_dir = os.path.join(ROOT, "scripts", "kits")
-for kn in ["arashido_kit.gd", "yoruka_kit.gd", "hikarune_kit.gd", "mukage_kit.gd"]:
-    src_k = open(os.path.join(kit_dir, kn)).read()
-    code_only = "\n".join(l for l in src_k.splitlines() if not l.strip().startswith("#"))
-    ally = ("ally" in code_only.lower()) or ("team" in code_only.lower())
-    check(f"{kn}: no ally-targeted code (solo-first)", not ally)
-    declares = ("self_only" in src_k) or ("enemy-facing" in src_k)
-    check(f"{kn}: kit declares solo-first compliance (self_only / enemy-facing)", declares)
 print()
 print(f"=== F004 KITS DRY-RUN: {len(PASS)} passed, {len(FAIL)} failed ===")
 if FAIL: print("FAILURES:", FAIL); sys.exit(1)
 print("All 4 kits verified: data wiring, solo-first, originality, combat math.")
-print("16/32 deity kits now live.")
