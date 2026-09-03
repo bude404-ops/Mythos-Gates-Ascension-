@@ -1,27 +1,26 @@
 extends Node
 ## Mythos Gates: Ascension — Hikarune, the Weaving Sun (MG-DEITY-015)
 ## Caster kit, MG-FACTION-004 (The Thousand Torii). DataLayer-driven (proven template).
-## Solo-first compliant: the shield is SELF-ONLY (MG-BUFF-SHIELD-SELF),
-## the ult heal is SELF-ONLY (MG-BUFF-HEAL-SELF). Sunthread is enemy-facing.
-## Tap-to-move compatible: Sunthread tethers the nearest enemy — no aiming.
+## Solo-first: Radiant Weave shields YOU (MG-BUFF-SHIELD-SELF); Dawn Rewound heals YOU
+## (MG-BUFF-HEAL-SELF). No ally heals/buffs anywhere in the kit.
+## Tap-to-move compatible: Sunthread auto-faces the nearest unrooted enemy.
 
 signal faith_gained(amount: int, reason: String)
-signal reflections_purged(count: int)
 
 const DEITY_ID := "MG-DEITY-015"
 const SHIELD_HOOK := "MG-BUFF-SHIELD-SELF"
 const HEAL_HOOK := "MG-BUFF-HEAL-SELF"
 const SNARE_HOOK := "MG-DEBUFF-SNARE"
-const STRIP_HOOK := "MG-DEBUFF-BUFF-STRIP"
 
 # ---- Local tuning (numbers, never lore) ----
-const THREAD_RANGE := 12.0           # Sunthread tether reach
-const THREAD_SNARE := 2.5            # seconds the target is rooted
-const WEAVE_SHIELD := 0.30           # Radiant Weave absorbs 30% of incoming
-const WEAVE_DURATION := 5.0          # shield duration (self-only)
-const DAWN_HEAL := 0.35              # Dawn Rewound restores 35% of YOUR HP
-const DAWN_PURGE_RADIUS := 15.0      # true light reaches this far
-const DAWN_PURGE_BONUS := 1.0        # double force against false reflections
+const SUNTHREAD_LEN := 12.0        # binding beam reach
+const SUNTHREAD_WIDTH := 1.0       # half-width of the sunthread
+const ROOT_DURATION := 2.5         # seconds enemies stay woven to the ground
+const WEAVE_SHIELD_PCT := 0.25     # shield = 25% of your max HP
+const WEAVE_DURATION := 6.0        # seconds the woven light holds
+const DAWN_HEAL_PCT := 0.35        # Dawn Rewound restores 35% of YOUR max HP
+const DAWN_PURGE_BONUS := 0.50     # +50% damage vs illusions / false reflections
+const DAWN_PURGE_WINDOW := 6.0     # seconds the true light lingers
 
 var deity: Dictionary = {}
 var ability_db: Dictionary = {}
@@ -41,40 +40,40 @@ func _ready() -> void:
 		ability_db["ultimate"].get("name", "?")])
 
 # ---------------------------------------------------------------- active_1
-## Sunthread — a binding light-beam roots the nearest enemy (MG-DEBUFF-SNARE).
-func sunthread(origin: Vector3, enemies: Array) -> Dictionary:
-	var nearest: Node3D = null
-	var nd := INF
+## Sunthread — a binding light-beam roots enemies where it touches.
+func sunthread(origin: Vector3, forward: Vector2, enemies: Array) -> Dictionary:
+	var f := forward.normalized()
+	var right := Vector2(-f.y, f.x) * SUNTHREAD_WIDTH
+	var rooted: Array[Dictionary] = []
 	for e in enemies:
-		var d: float = origin.distance_to(e.position)
-		if d <= THREAD_RANGE and d < nd: nd = d; nearest = e
-	if nearest == null: return {"tethered": false}
-	nearest.set_meta("snared", true)
-	nearest.set_meta("snare_timer", THREAD_SNARE)
-	nearest.set_meta("snare_hook", SNARE_HOOK)
-	return {"tethered": true, "target": nearest, "snare": THREAD_SNARE,
-		"debuff_hook": SNARE_HOOK, "distance": nd}
+		var rel := Vector2(e.position.x - origin.x, e.position.z - origin.z)
+		var along := rel.dot(f)
+		var across := absf(rel.dot(right.normalized()))
+		if along >= 0.0 and along <= SUNTHREAD_LEN and across <= SUNTHREAD_WIDTH:
+			e.set_meta("sunthread_rooted", true)
+			e.set_meta("root_timer", ROOT_DURATION)
+			e.set_meta("root_hook", SNARE_HOOK)
+			rooted.append({"enemy": e, "duration": ROOT_DURATION})
+	return {"length": SUNTHREAD_LEN, "half_width": SUNTHREAD_WIDTH, "rooted": rooted}
 
 # ---------------------------------------------------------------- active_2
-## Radiant Weave — a shield woven from light, around YOU only.
-func radiant_weave() -> Dictionary:
-	return {"absorb": WEAVE_SHIELD, "duration": WEAVE_DURATION,
-		"self_only": true, "buff_hook": SHIELD_HOOK}
+## Radiant Weave — a shield woven from light. SELF-ONLY (MG-BUFF-SHIELD-SELF).
+func radiant_weave(your_max_hp: float) -> Dictionary:
+	return {"shield_amount": your_max_hp * WEAVE_SHIELD_PCT,
+		"duration": WEAVE_DURATION, "shield_hook": SHIELD_HOOK,
+		"self_only": true}
 
 # ---------------------------------------------------------------- ultimate
-## Dawn Rewound — the field remembers the true light. Heals YOU (self-only)
-## and purges false reflections: illusions within reach are stripped of their
-## stolen buffs (MG-DEBUFF-BUFF-STRIP) and struck with double force.
-func dawn_rewound(origin: Vector3, enemies: Array) -> Dictionary:
+## Dawn Rewound — restores the true light: heals YOU and purges every false
+## reflection on the field. The hard-counter to this realm's illusions.
+func dawn_rewound(your_max_hp: float, enemies: Array) -> Dictionary:
 	var purged: Array[Dictionary] = []
 	for e in enemies:
-		var d: float = origin.distance_to(e.position)
-		if d <= DAWN_PURGE_RADIUS and e.get_meta("is_false_reflection", false):
-			e.set_meta("stolen_buffs_stripped", true)
-			e.set_meta("strip_hook", STRIP_HOOK)
-			purged.append({"enemy": e, "mult": 1.0 + DAWN_PURGE_BONUS,
-				"revealed": true})
-	reflections_purged.emit(purged.size())
-	faith_gained.emit(4, "the true light was remembered")
-	return {"self_heal": DAWN_HEAL, "self_only_heal": true, "heal_hook": HEAL_HOOK,
-		"purge_radius": DAWN_PURGE_RADIUS, "purged": purged}
+		if e.get_meta("is_illusion", false) or e.get_meta("is_false_reflection", false):
+			e.set_meta("revealed", true)
+			purged.append({"enemy": e, "revealed": true,
+				"damage_taken_mult": 1.0 + DAWN_PURGE_BONUS})
+	faith_gained.emit(5, "the dawn was rewound")
+	return {"heal_amount": your_max_hp * DAWN_HEAL_PCT, "heal_hook": HEAL_HOOK,
+		"self_only_heal": true, "purged": purged,
+		"purge_window": DAWN_PURGE_WINDOW}
