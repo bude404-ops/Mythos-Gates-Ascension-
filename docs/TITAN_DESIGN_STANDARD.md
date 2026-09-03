@@ -49,7 +49,7 @@ The problem: current concepts read as large humans / pin-up goddesses. A titan m
 ## Rollout
 Sample first (Halmarr v2) → BudE404 verdict → re-roll all current titans to standard → standard applies to all future factions.
 
-## MATERIAL SKIN SYSTEM (proposed Sept 3 2026, BudE404 — pending verdict)
+## MATERIAL SKIN SYSTEM (APPROVED & LOCKED Sept 3 2026, BudE404)
 Godflesh takes a LIVING MATERIAL determined by the titan's region/faction origin. The material is ALIVE — light flows beneath it, it is never plating, statue stone, or construct metal.
 
 Draft region-material map:
