@@ -65,3 +65,14 @@ The avatars are **TITANS manifested into the mortal realm to represent their dei
 2. **Manifestation, not portrait:** a titan expresses its deity's ASPECTS (domain, symbols, temperament, effects) — not the god's literal appearance. Design freedom per deity is wide as long as the domain reads.
 3. **Faction tint + per-deity effects** (Amendment 2) unchanged — they layer on the shared titan substrate.
 4. Scale (30 ft, Amendment 1) is now lore-accurate: titans manifested into the mortal realm dwarf mortals and their works by nature.
+
+## Amendment 3 — Canon Consistency (LOCKED by BudE404, Sept 3 2026)
+
+1. **Weapons in concept art MUST be the in-game weapons.** Source of truth: `data/deities/mg_deity_XXX.json` → `weapon` field. No substitute or approximated weapons in any deity concept.
+2. **Representation must read instantly.** Each titan's deity identity (epithet + lore_identity fields) must be legible in the concept without a caption.
+
+F001 canon weapons (from deity registry):
+- Khaveth, the Measured Light — The Amber Verdict (beam-scale staff) — weighs deeds in light
+- Djekhur, the Ashen Gale — Dunemaw (crescent maul) — the desert's anger
+- Shemris, the Glasswind — Semblance (shimmer-spun bow) — heat-shimmer goddess
+- Amekhet, the Sunless Eye — Crescent Veil (paired sickle-daggers) — the shade cast at perfect noon
