@@ -14,12 +14,12 @@ The problem: current concepts read as large humans / pin-up goddesses. A titan m
 - 9-10 heads tall, elongated shins/forearms. NEVER normal human ratios.
 - Even the sleek assassins/archers: elongated limbs + oversized hands. Sleek is still titanic.
 
-### 2. Monumental godflesh — CARVED STATUE, never organic skin (hardened Sept 3 after Shemris v3 rejection)
-- Flesh reads as a COLOSSAL CARVED TEMPLE STATUE that learned to move: hammered bronze, dark marble, obsidian, storm-iron, rose-amber stone.
-- VISIBLE chisel planes, large geometric facet cuts, tool marks, articulated statue-block joints.
-- Hairline cracks of glowing divine light along the facet seams.
-- No pores, no smooth organic curves, no photoshoot skin. If any area reads as flesh, it's wrong.
-- Sexiness lives in draping, jewelry, pose, and expression — NEVER in skin texture.
+### 2. LIVING DIVINE MANIFESTATION — alive, never a construct (reconfigured Sept 3 after Shemris v4 rejection)
+- A titan is a LIVING DIVINE BEING that can manifest into the mortal realm — warm organic godflesh, alive, breathing, radiant.
+- Divinity reads through: soft inner light shining through the skin like sun through amber, faint glow along cheekbones/collarbones/forearm lines, an aura that warps the air around them (heat shimmer, storm swirl), weightless drifting hair, presence bending the light.
+- NEVER stone, metal, chisel planes, statue joints, robot/construct segmentation — those read as constructs, not gods.
+- NEVER plain mortal photoshoot skin either: too big, too luminous, too impossible.
+- The test: would a mortal believe this being just STEPPED INTO the world? Alive and impossible at once.
 
 ### 3. Inhuman eyes
 - No visible pupils/irises — solid glowing light, molten amber, rune-blue, storm-white.
