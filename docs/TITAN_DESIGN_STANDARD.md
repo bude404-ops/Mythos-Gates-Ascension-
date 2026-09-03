@@ -6,16 +6,20 @@ The problem: current concepts read as large humans / pin-up goddesses. A titan m
 
 ## The 6 Titan Rules (all mandatory, every concept)
 
+**Height: ALL titans are 30 FEET TALL. Scale cues must make this undeniable in every image.**
+
 ### 1. Inhuman proportions (Warcraft-style exaggeration, pushed further)
 - Hands the size of ox carts; forearms thicker than a mortal's torso.
 - Shoulders 2-3 heads wide. Neck like a temple column.
 - 9-10 heads tall, elongated shins/forearms. NEVER normal human ratios.
 - Even the sleek assassins/archers: elongated limbs + oversized hands. Sleek is still titanic.
 
-### 2. Monumental godflesh — carved, not smooth skin
-- Flesh reads as LIVING MONUMENT MATERIAL: hammered bronze, dark marble, obsidian, storm-iron.
-- Engraved seams, chisel-plane facets, hairline cracks of glowing divine light along muscle lines.
-- No pores, no soft human texture. If it looks like photoshoot skin, it's wrong.
+### 2. Monumental godflesh — CARVED STATUE, never organic skin (hardened Sept 3 after Shemris v3 rejection)
+- Flesh reads as a COLOSSAL CARVED TEMPLE STATUE that learned to move: hammered bronze, dark marble, obsidian, storm-iron, rose-amber stone.
+- VISIBLE chisel planes, large geometric facet cuts, tool marks, articulated statue-block joints.
+- Hairline cracks of glowing divine light along the facet seams.
+- No pores, no smooth organic curves, no photoshoot skin. If any area reads as flesh, it's wrong.
+- Sexiness lives in draping, jewelry, pose, and expression — NEVER in skin texture.
 
 ### 3. Inhuman eyes
 - No visible pupils/irises — solid glowing light, molten amber, rune-blue, storm-white.
