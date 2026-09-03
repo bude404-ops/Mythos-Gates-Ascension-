@@ -61,3 +61,6 @@ Rules:
 1. Material rides with the faction, glow color with the deity (one-of-one identity = silhouette + material glow).
 2. Material must stay WARM and alive — light moves under the surface, skin flexes like flesh, never rigid or mechanical.
 3. Regional materials reinforce cultural identity and make factions instantly distinguishable in game silhouettes.
+
+## GEAR STANDARD (Sept 3 2026, BudE404)
+Gear is REGIONAL + EPIC GOD-TIER: every piece keeps the faction's real cultural identity (Norse = byrnie, knotwork, wool/fur, oath-rings; Egypt = usekh, nemes, linen) but is DIVINIZED — god-scale craftsmanship, glowing runes/hieroglyph seams, divine metalwork, colossal ornamentation, cloth woven with light. Never museum-mundane, never generic fantasy plate. Regional identity first, epic divinity second.
