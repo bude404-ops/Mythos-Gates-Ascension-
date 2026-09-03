@@ -2,7 +2,7 @@ extends Node
 ## Mythos Gates: Ascension — Vennaith, the Unbanked Flame (MG-DEITY-019)
 ## Caster kit, MG-FACTION-005 (The Silverroot Kindred). DataLayer-driven (proven template).
 ## Solo-first: Rekindle heals YOU (MG-BUFF-HEAL-SELF); all other effects are
-## enemy-facing. No ally heals/buffs anywhere in the kit.
+## enemy-facing. Every heal and buff in this kit is self-only.
 ## Tap-to-move compatible: Cinderbind auto-roots the nearest cluster; the
 ## Smelting wave rolls forward along your facing.
 

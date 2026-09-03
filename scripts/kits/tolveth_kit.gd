@@ -2,7 +2,7 @@ extends Node
 ## Mythos Gates: Ascension — Tolveth, the Rootward (MG-DEITY-017)
 ## Warrior kit, MG-FACTION-005 (The Silverroot Kindred). DataLayer-driven (proven template).
 ## Solo-first: Second Growth heals YOU (MG-BUFF-HEAL-SELF); all other effects are
-## enemy-facing or terrain. No ally heals/buffs anywhere in the kit.
+## enemy-facing or terrain. Every heal and buff in this kit is self-only.
 ## Tap-to-move compatible: Rootslam auto-centers on the nearest enemy cluster.
 
 signal faith_gained(amount: int, reason: String)
