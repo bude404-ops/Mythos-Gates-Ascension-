@@ -43,7 +43,7 @@ func rootslam(origin: Vector3, enemies: Array) -> Dictionary:
 			e.set_meta("snared", true)
 			e.set_meta("snare_timer", ROOTSLAM_SNARE_TIME)
 			e.set_meta("snare_hook", SNARE_DEBUFF)
-			hits.append(e)
+			hits.append({"enemy": e, "snared": true})
 	var ridge := {"position": origin, "length": RIDGE_LENGTH, "hp": RIDGE_HP}
 	return {"hits": hits, "ridge": ridge}
 

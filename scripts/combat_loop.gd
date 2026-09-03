@@ -65,6 +65,20 @@ func spawn_enemy(pos: Vector3) -> Node3D:
 	e.set_meta("hp", ENEMY_MAX_HP)
 	e.set_meta("hp_max", ENEMY_MAX_HP)
 	e.set_meta("hp_frac", 1.0)
+	# Placeholder visual: grim crimson capsule (real GLBs land via the pipeline later).
+	var vis := MeshInstance3D.new()
+	var m := CapsuleMesh.new()
+	m.radius = 0.3
+	m.height = 1.5
+	vis.mesh = m
+	vis.position = Vector3(0, 0.75, 0)
+	var mat := StandardMaterial3D.new()
+	mat.albedo_color = Color(0.30, 0.08, 0.06)
+	mat.emission_enabled = true
+	mat.emission = Color(0.45, 0.10, 0.08)
+	mat.emission_energy_multiplier = 0.25
+	vis.set_surface_override_material(0, mat)
+	e.add_child(vis)
 	get_parent().add_child.call_deferred(e)
 	enemies.append(e)
 	runtime.register(e)
@@ -73,8 +87,15 @@ func spawn_enemy(pos: Vector3) -> Node3D:
 func _process(delta: float) -> void:
 	if player == null or not is_instance_valid(player):
 		return
+	_hide_dead()
 	_auto_attack(delta)
 	_enemy_ai(delta)
+
+## Fallen placeholders vanish from view (hp meta already gates all logic).
+func _hide_dead() -> void:
+	for e in enemies:
+		if is_instance_valid(e) and e.visible and e.get_meta("hp", 1.0) <= 0.0:
+			e.visible = false
 
 ## Auto-attack: nearest enemy in range, damage through the runtime.
 func _auto_attack(delta: float) -> void:

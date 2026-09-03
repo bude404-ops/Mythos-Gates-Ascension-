@@ -42,7 +42,7 @@ func cinderbind(origin: Vector3, enemies: Array) -> Array:
 			e.set_meta("snared", true)
 			e.set_meta("snare_timer", CINDERBIND_SNARE_TIME)
 			e.set_meta("snare_hook", SNARE_DEBUFF)
-			hits.append(e)
+			hits.append({"enemy": e, "snared": true})
 	return hits
 
 # ---------------------------------------------------------------- active_2

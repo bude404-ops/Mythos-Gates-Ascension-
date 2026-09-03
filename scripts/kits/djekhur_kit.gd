@@ -11,7 +11,7 @@ const DASH_HALF_WIDTH := 1.5         # half-width of the gale corridor
 const SHRED_PER_STACK := 0.20        # -20% enemy defense per shred stack
 const SHRED_MAX_STACKS := 2
 const SHRED_DURATION := 6.0
-const SWEEP_RADIUS := 4.5            # Scouring Sweep radius around Djekhur
+const SWEEP_RADIUS := 6.0            # Scouring Sweep radius around Djekhur
 const SWEEP_DEF_DOWN := 0.15         # flat defense down on swept enemies
 const SWEEP_DURATION := 5.0
 

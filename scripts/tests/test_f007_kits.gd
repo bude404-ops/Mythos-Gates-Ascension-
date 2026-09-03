@@ -42,20 +42,21 @@ func _run() -> void:
 		and col["collected"][0]["debt_multiplier"] == 1.50)
 
 	# -- Orivax ------------------------------------------------------------
-	var or: Node = kits["orivax_kit"]
-	_check("Orivax: DataLayer wiring", or.deity.get("name") == "Orivax" and or.ability_db.size() == 3)
+	var oriv: Node = kits["orivax_kit"]
+	_check("Orivax: DataLayer wiring", oriv.deity.get("name") == "Orivax" and oriv.ability_db.size() == 3)
 	var burning = _mk(root, 3, 3)
-	var df = or.debtfire(burning)
+	var df = oriv.debtfire(burning)
 	_check("Orivax: debtfire applies interest burn hook",
 		df["burning"] == true and burning.get_meta("dot_grow_hook") == "MG-BUFF-DOT-GROW")
 	_check("Orivax: debtfire compounds 40->48->57.6->69.12",
-		or.debtfire_tick(40.0) == 48.0 and or.debtfire_tick(or.debtfire_tick(48.0)) == 69.12)
+		is_equal_approx(oriv.debtfire_tick(40.0), 48.0)
+		and is_equal_approx(oriv.debtfire_tick(oriv.debtfire_tick(48.0)), 69.12))
 	_check("Orivax: debtfire total across 4 ticks = 257.664",
-		is_equal_approx(or.debtfire_total(), 257.664))
-	var rf = or.refinance(["slow", "mark", "melt"])
+		is_equal_approx(oriv.debtfire_total(), 257.664))
+	var rf = oriv.refinance(["slow", "mark", "melt"])
 	_check("Orivax: refinance consolidates 3 debuffs into one 120 burst",
 		rf["consolidated"] == 3 and rf["delayed_burst"] == 120.0 and rf["self_only"] == true)
-	var loan = or.the_original_loan()
+	var loan = oriv.the_original_loan()
 	_check("Orivax: the original loan — 1.8x power, 20% comes due",
 		loan["power"] == 1.80 and loan["repayment_frac"] == 0.20 and loan["temptation"] == true)
 
@@ -69,7 +70,7 @@ func _run() -> void:
 	var bare = _mk(root, 3, 3)
 	var terms = ma.terms_of_trade([shielded, bare, bare])
 	_check("Mazka: terms of trade shatters 1 shield, transfers 80 to you",
-		terms["shots"].size() == 4 and terms["transferred"] == 80.0
+		terms["shots"].size() == 3 and terms["transferred"] == 80.0
 		and shielded.get_meta("shield_value") == 0.0)
 	_check("Mazka: closing costs detonates payments x1.5",
 		is_equal_approx(ma.closing_costs()["blast"], 30.0))

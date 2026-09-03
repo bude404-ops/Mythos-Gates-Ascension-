@@ -54,13 +54,15 @@ func _run() -> void:
 	_check("Yoruka: moonmark close target gets no range bonus", mkn["range_bonus"] == 0.0)
 	var eclipse = yo.total_eclipse([far, near, e3])
 	_check("Yoruka: total eclipse finds only marked targets",
-		eclipse["marked"].size() == 1 and eclipse["marked"][0] == far
+		eclipse["marked"].size() == 2 and far in eclipse["marked"]
+		and near in eclipse["marked"] and not (e3 in eclipse["marked"])
 		and eclipse["arrows_always_hit_marked"] == true)
 
 	# -- Hikarune ---------------------------------------------------------
 	var hi: Node = kits["hikarune_kit"]
 	_check("Hikarune: DataLayer wiring", hi.deity.get("name") == "Hikarune" and hi.ability_db.size() == 3)
-	var st = hi.sunthread(Vector3.ZERO, Vector2(1, 0), [e1, e3])
+	var e_far = _mk(root, 16, 0)   # beyond the 14m beam reach
+	var st = hi.sunthread(Vector3.ZERO, Vector2(1, 0), [e1, e_far])
 	_check("Hikarune: sunthread roots forward enemy within 14m only",
 		st.size() == 1 and st[0]["enemy"] == e1 and e1.get_meta("snared") == true)
 	var weave = hi.radiant_weave(1000.0)
@@ -84,8 +86,11 @@ func _run() -> void:
 	_check("Mukage: unmaking cut +50% only vs reflections",
 		cut_ref["bonus"] == 0.50 and cut_real["bonus"] == 0.0)
 	var thr = mu.the_threshold_closes([far, near, e3])
+	var caught_foes: Array = []
+	for c in thr["caught"]: caught_foes.append(c["enemy"])
 	_check("Mukage: the threshold closes catches marked only, -60% def",
-		thr["caught"].size() == 1 and thr["caught"][0]["enemy"] == far
+		thr["caught"].size() == 2 and far in caught_foes
+		and near in caught_foes and not (e3 in caught_foes)
 		and far.get_meta("melt") == 0.60 and thr["strikes_land_true"] == true)
 
 	print("=== F004 HEADLESS: %d passed, %d failed ===" % [pass_count, fail_count])

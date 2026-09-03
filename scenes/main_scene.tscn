@@ -1,15 +1,19 @@
-[gd_scene load_steps=11 format=3 uid="uid://mythos_main_002"]
+[gd_scene load_steps=12 format=3 uid="uid://mythos_main_002"]
 
-[ext_resource type="PackedScene" path="res://assets/models/aten_ra.glb" id="1_aten_ra"]
 [ext_resource type="Script" path="res://scripts/player_controller.gd" id="2_player"]
 [ext_resource type="Script" path="res://scripts/orbit_camera.gd" id="3_camera"]
 [ext_resource type="Script" path="res://scripts/dungeon_generator.gd" id="4_dungeon"]
-[ext_resource type="Script" path="res://scripts/weapon_attachment.gd" id="5_weapon"]
 [ext_resource type="Script" path="res://scripts/touch_controls.gd" id="6_touch"]
 [ext_resource type="Script" path="res://scripts/combat_runtime.gd" id="7_combat"]
 [ext_resource type="Script" path="res://scripts/combat_loop.gd" id="8_loop"]
+[ext_resource type="Script" path="res://scripts/ui/deity_avatar.gd" id="5_avatar"]
 [ext_resource type="Script" path="res://scripts/ui/deity_select.gd" id="9_dselect"]
 [ext_resource type="Script" path="res://scripts/ui/ability_hud.gd" id="10_ahud"]
+
+[sub_resource type="CapsuleMesh" id="avatar_mesh_001"]
+radius = 0.35
+height = 1.6
+
 
 [sub_resource type="Environment" id="env_001"]
 background_mode = 1
@@ -46,10 +50,11 @@ script = ExtResource("4_dungeon")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("2_player")
 
-[node name="Character" parent="Player" instance=ExtResource("1_aten_ra")]
+[node name="Character" type="MeshInstance3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+mesh = SubResource("avatar_mesh_001")
+script = ExtResource("5_avatar")
 
-[node name="WeaponAttachment" type="Node3D" parent="Player"]
-script = ExtResource("5_weapon")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
