@@ -50,8 +50,8 @@ func claim_multiplier(attacker, target) -> float:
 # ---------------------------------------------------------------- active_2
 ## Flourish — SELF-buff: a guaranteed-crit window.
 func flourish() -> Dictionary:
-	return {"guaranteed_crit": true, "duration": FLOURISH_CRIT_WINDOW,
-		"self_buff": true, "hook": CRIT_HOOK}
+	return {"guaranteed_crit": true, "crit_window": FLOURISH_CRIT_WINDOW,
+		"self_buff": true, "crit_hook": CRIT_HOOK}
 
 # ---------------------------------------------------------------- ultimate
 ## Champion's Verdict — inside his duel-circle he cannot lose:

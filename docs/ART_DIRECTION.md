@@ -43,3 +43,16 @@ All deity concept art MUST follow these in addition to the core style:
 
 ### Updated Concept Prompt Template (Deities)
 > Digital concept art, dark fantasy grimdark aesthetic, Warcraft 3 and Diablo style blend, chunky proportions, full-body concept of [DEITY], [ROLE] of [REALM CULTURE], [CULTURAL ARMOR/WEAPON NOTES], hand-painted digital brushstrokes, moody atmospheric lighting, dramatic shadows, rich desaturated palette with glowing accents, TITANIC SCALE — 30 feet tall, low-angle shot, tiny mortals and temples at their feet, cinematic composition, front view, 8k --ar 16:9
+
+## Amendment 2 — Avatar Identity System (BudE404, Sept 3 2026, in review)
+
+### Bans (LOCKED)
+- **No pauldrons / shoulder pads.** None, on any deity.
+- **No structural armor or weapons.** Nothing that reads as architecture (obelisks, monuments, buildings). Gear is functional, not architectural.
+
+### Avatar Identity — "Godflesh" proposal (awaiting BudE404 verdict)
+All 32 deities are physical avatars of their gods walking the mortal realm. They read as ONE species of divine being:
+1. **Shared substrate:** every avatar's body is "godflesh" — a single divine material language (polished, faintly glowing seams along musculature) so they clearly belong to the same order of being.
+2. **Faction tint:** the godflesh substrate takes a material + glow color per faction (e.g. F001 Meridian Court = bronze body, molten amber seams).
+3. **Per-deity identity:** silhouettes, faces, eye glow intensity, hair/crown motifs, robes/draperies, and their tool/weapon are one-of-one per deity.
+4. **Per-deity effects:** each deity carries their own domain FX (light, heat, wind, shadow, glass shimmer...) layered on top of the shared substrate — so the base is uniform and the expression is unique.

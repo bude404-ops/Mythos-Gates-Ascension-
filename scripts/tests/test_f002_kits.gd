@@ -70,8 +70,9 @@ func _run() -> void:
 	# -- Estrith -----------------------------------------------------------
 	var es: Node = kits["estrith_kit"]
 	_check("Estrith: DataLayer wiring", es.deity.get("name") == "Estrith" and es.ability_db.size() == 3)
-	e2.position = Vector3(5, 0, 5); e2.velocity = Vector3(3, 0, 4)
-	var th = es.threadstep(e2)
+	var e2v := CharacterBody3D.new()
+	e2v.position = Vector3(5, 0, 5); e2v.velocity = Vector3(3, 0, 4); root.add_child(e2v)
+	var th = es.threadstep(e2v)
 	_check("Estrith: threadstep predicts future position (6.5, 7.0)",
 		is_equal_approx(th["destination"].x, 6.5) and is_equal_approx(th["destination"].z, 7.0))
 	var us = es.unspool(e1)
