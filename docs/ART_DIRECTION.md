@@ -56,3 +56,12 @@ All 32 deities are physical avatars of their gods walking the mortal realm. They
 2. **Faction tint:** the godflesh substrate takes a material + glow color per faction (e.g. F001 Meridian Court = bronze body, molten amber seams).
 3. **Per-deity identity:** silhouettes, faces, eye glow intensity, hair/crown motifs, robes/draperies, and their tool/weapon are one-of-one per deity.
 4. **Per-deity effects:** each deity carries their own domain FX (light, heat, wind, shadow, glass shimmer...) layered on top of the shared substrate — so the base is uniform and the expression is unique.
+
+## Amendment 2 Revision — TITAN LORE (LOCKED by BudE404, Sept 3 2026)
+
+The avatars are **TITANS manifested into the mortal realm to represent their deity** — they are not the gods' true forms. Consequences for the identity system:
+
+1. **Shared species:** all 32 avatars are titans — one shared titan substrate (the godflesh base is now titan-flesh: massive, polished divine body material with faint glowing seams). They read as the same order of being because they ARE the same order of being.
+2. **Manifestation, not portrait:** a titan expresses its deity's ASPECTS (domain, symbols, temperament, effects) — not the god's literal appearance. Design freedom per deity is wide as long as the domain reads.
+3. **Faction tint + per-deity effects** (Amendment 2) unchanged — they layer on the shared titan substrate.
+4. Scale (30 ft, Amendment 1) is now lore-accurate: titans manifested into the mortal realm dwarf mortals and their works by nature.
