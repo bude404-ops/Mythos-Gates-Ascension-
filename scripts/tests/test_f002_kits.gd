@@ -33,7 +33,7 @@ func _run() -> void:
 	var og = ha.oathguard()
 	_check("Halmarr: oathguard 40% self-reduction + taunt",
 		og["damage_reduction"] == 0.40 and og["self_buff"] == true)
-	e1.hp_max = 500.0; e3.hp_max = 80.0
+	e1.set_meta("hp_max", 500.0); e3.set_meta("hp_max", 80.0)
 	var verdict = ha.verdict_of_the_sky([e1, e3])
 	_check("Halmarr: verdict targets biggest enemy", verdict["condemned"] == e1)
 

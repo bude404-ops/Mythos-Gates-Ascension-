@@ -70,7 +70,7 @@ func verdict_of_the_sky(enemies: Array) -> Dictionary:
 	if enemies.is_empty(): return {"condemned": null}
 	var biggest = null
 	for e in enemies:
-		if biggest == null or e.hp_max > biggest.hp_max:
+		if biggest == null or e.get_meta("hp_max", 0.0) > biggest.get_meta("hp_max", 0.0):
 			biggest = e
 	biggest.set_meta("snared", true)
 	biggest.set_meta("snare_timer", VERDICT_SNARE)

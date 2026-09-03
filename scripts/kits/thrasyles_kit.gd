@@ -43,7 +43,8 @@ func duelists_claim(target, center: Vector3) -> Dictionary:
 
 func claim_multiplier(attacker, target) -> float:
 	var t = claimed.get_ref() if claimed else null
-	if t != null and target == t: return 1.0 + CLAIM_DMG_UP
+	if t != null and target == t:
+		return (1.0 + CLAIM_DMG_UP) if attacker == self else (1.0 - CLAIM_OTHERS_DOWN)
 	return 1.0
 
 # ---------------------------------------------------------------- active_2

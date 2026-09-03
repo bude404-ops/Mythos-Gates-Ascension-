@@ -27,7 +27,7 @@ func _run() -> void:
 	_check("Thrasyles: DataLayer wiring", th.deity.get("name") == "Thrasyles" and th.ability_db.size() == 3)
 	var foe = _mk(root, 4, 0)
 	var claim = th.duelists_claim(foe, Vector3.ZERO)
-	_check("Thrasyles: duelist's claim marks the foe", claim["claimed"] == true)
+	_check("Thrasyles: duelist's claim marks the foe", claim["claimed"] == foe)
 	_check("Thrasyles: claim multiplier +25% from him, -25% from others",
 		is_equal_approx(th.claim_multiplier(th, foe), 1.25)
 		and is_equal_approx(th.claim_multiplier(_mk(root, 9, 9), foe), 0.75))
