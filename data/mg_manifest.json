@@ -1,0 +1,50 @@
+{
+  "registry": "MYTHOS GATES UNIFIED DATA LAYER",
+  "version": "1.0.0",
+  "directive": "Mythos Gates: Ascension — original mythology only, 8 factions × 4 deities",
+  "godot_version": "4.7",
+  "rules": {
+    "original_only": true,
+    "solo_first": true,
+    "engine": "Godot 4.7",
+    "controls": "tap-to-move + auto-attack (no joystick)",
+    "saves": "server-authoritative",
+    "monetization": "F2P cosmetics-only"
+  },
+  "counts": {
+    "factions": 8,
+    "deities": 32,
+    "abilities": 96,
+    "chapters": 40,
+    "bosses": 23,
+    "dungeons": 24
+  },
+  "load_order": [
+    "factions",
+    "deities",
+    "abilities",
+    "buffs",
+    "chapters",
+    "gates",
+    "npcs",
+    "hollow",
+    "dungeons",
+    "bosses"
+  ],
+  "deprecated": {
+    "TG-FACTION-001..007": "superseded by MG-FACTION-*",
+    "real-world deity names": "all removed per Directive Section 2"
+  },
+  "feasibility_flags": {
+    "terrain_walls": "grid-snapped prefab barrier pool, never dynamic deformation",
+    "sothiel_refraction": "Phase 2 — activates when ability registry populated",
+    "dimmed_light": "player glow-radius variable + terrain light flags",
+    "hollow_bargains": "2s slow-mo prompt, TAKE/REFUSE, server-authoritative debt log"
+  },
+  "originality_watchlist": {
+    "status": "all resolved",
+    "F004_boss_name": "RENAMED (approved): 'False Reflection Kami' → 'The False Reflection Sovereign'",
+    "F004_dungeon": "RENAMED: 'Tengu Wind Lane' → 'The Storm-Wind Lane Crossing'",
+    "note": "watchlist auto-checked against NAMING_CONVENTIONS.md on every data-layer commit"
+  }
+}

@@ -1,0 +1,987 @@
+{
+  "registry": "MG-ABILITY",
+  "description": "Unified ability registry — all player abilities. Feeds Sothiel's Refraction and the buff/status engine.",
+  "count": 96,
+  "abilities": [
+    {
+      "id": "MG-ABILITY-0001",
+      "deity_id": "MG-DEITY-001",
+      "slot": "active_1",
+      "name": "Weigh the Deed",
+      "mechanic": "mark: damage escalates as target's deeds are tallied",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0002",
+      "deity_id": "MG-DEITY-001",
+      "slot": "active_2",
+      "name": "Noon Sentence",
+      "mechanic": "beam: burns the verdict into the air — line AOE",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0003",
+      "deity_id": "MG-DEITY-001",
+      "slot": "ultimate",
+      "name": "Meridian Judgement",
+      "mechanic": "pillar of noonlight marks and condemns the strongest unworthy enemy",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0004",
+      "deity_id": "MG-DEITY-002",
+      "slot": "active_1",
+      "name": "Sand-Gale Dash",
+      "mechanic": "mobility: strips enemy armor along the dash line",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0005",
+      "deity_id": "MG-DEITY-002",
+      "slot": "active_2",
+      "name": "Scouring Sweep",
+      "mechanic": "AOE: erodes enemy pride — defense down",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0006",
+      "deity_id": "MG-DEITY-002",
+      "slot": "ultimate",
+      "name": "The Erasing Wind",
+      "mechanic": "storm erases enemy buffs and terrain effects across the field",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0007",
+      "deity_id": "MG-DEITY-003",
+      "slot": "active_1",
+      "name": "Mirage Double",
+      "mechanic": "decoy: a false Shemris draws enemy fire",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0008",
+      "deity_id": "MG-DEITY-003",
+      "slot": "active_2",
+      "name": "Bent Light Volley",
+      "mechanic": "shots curve to arrive from where the enemy is not looking",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0009",
+      "deity_id": "MG-DEITY-003",
+      "slot": "ultimate",
+      "name": "Mirage Volley",
+      "mechanic": "a dozen false suns, one true volley — all false shots convert to damage on the true hit",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0010",
+      "deity_id": "MG-DEITY-004",
+      "slot": "active_1",
+      "name": "Shadow-Step",
+      "mechanic": "blink between sun-spots",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0011",
+      "deity_id": "MG-DEITY-004",
+      "slot": "active_2",
+      "name": "Noonshade Mark",
+      "mechanic": "mark: bonus damage from the one shadow light cannot banish",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0012",
+      "deity_id": "MG-DEITY-004",
+      "slot": "ultimate",
+      "name": "High Noon Eclipsed",
+      "mechanic": "5s: she is the day's only shadow — untargetable, all strikes critical",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0013",
+      "deity_id": "MG-DEITY-005",
+      "slot": "active_1",
+      "name": "Thunderstep",
+      "mechanic": "leap + shockwave on landing",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0014",
+      "deity_id": "MG-DEITY-005",
+      "slot": "active_2",
+      "name": "Oathguard",
+      "mechanic": "self-buff: damage reduction + taunt while the stance holds",
+      "self_only": true,
+      "tags": [
+        "solo_first"
+      ],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0015",
+      "deity_id": "MG-DEITY-005",
+      "slot": "ultimate",
+      "name": "Verdict of the Sky",
+      "mechanic": "one sky-splitting strike on the biggest enemy on the field",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0016",
+      "deity_id": "MG-DEITY-006",
+      "slot": "active_1",
+      "name": "Duskflight",
+      "mechanic": "backwards glide-fire",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0017",
+      "deity_id": "MG-DEITY-006",
+      "slot": "active_2",
+      "name": "Feathermark",
+      "mechanic": "homing mark: next shots seek the marked",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0018",
+      "deity_id": "MG-DEITY-006",
+      "slot": "ultimate",
+      "name": "The Falcon's Price",
+      "mechanic": "untargetable falcon-form barrage",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0019",
+      "deity_id": "MG-DEITY-007",
+      "slot": "active_1",
+      "name": "Rune of Undoing",
+      "mechanic": "strip enemy buffs",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0020",
+      "deity_id": "MG-DEITY-007",
+      "slot": "active_2",
+      "name": "Stormsight",
+      "mechanic": "reveal enemies + weak points",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0021",
+      "deity_id": "MG-DEITY-007",
+      "slot": "ultimate",
+      "name": "The Unwriting",
+      "mechanic": "field-wide: blank runes erase enemy abilities for 6s",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0022",
+      "deity_id": "MG-DEITY-008",
+      "slot": "active_1",
+      "name": "Threadstep",
+      "mechanic": "blink to a target's future position",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0023",
+      "deity_id": "MG-DEITY-008",
+      "slot": "active_2",
+      "name": "Unspool",
+      "mechanic": "debuff: target slowed; its next dodge fails",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0024",
+      "deity_id": "MG-DEITY-008",
+      "slot": "ultimate",
+      "name": "The Predetermined",
+      "mechanic": "5s: strikes are fated — guaranteed hits on marked enemies",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0025",
+      "deity_id": "MG-DEITY-009",
+      "slot": "active_1",
+      "name": "Duelist's Claim",
+      "mechanic": "challenge one enemy: both take more damage, everyone else less",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0026",
+      "deity_id": "MG-DEITY-009",
+      "slot": "active_2",
+      "name": "Flourish",
+      "mechanic": "self-buff: guaranteed crit window",
+      "self_only": true,
+      "tags": [
+        "solo_first"
+      ],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0027",
+      "deity_id": "MG-DEITY-009",
+      "slot": "ultimate",
+      "name": "Champion's Verdict",
+      "mechanic": "inside his duel-circle he cannot lose: massive bonus vs the claimed enemy",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0028",
+      "deity_id": "MG-DEITY-010",
+      "slot": "active_1",
+      "name": "Laurel Snare",
+      "mechanic": "arrow plants a binding laurel-root",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0029",
+      "deity_id": "MG-DEITY-010",
+      "slot": "active_2",
+      "name": "Hunter's Pace",
+      "mechanic": "move-speed stacks per hit",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0030",
+      "deity_id": "MG-DEITY-010",
+      "slot": "ultimate",
+      "name": "The Witness Shot",
+      "mechanic": "one perfect arrow; if it kills, faith surge to you",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0031",
+      "deity_id": "MG-DEITY-011",
+      "slot": "active_1",
+      "name": "Ostracize",
+      "mechanic": "exile target from ally buff synergies",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0032",
+      "deity_id": "MG-DEITY-011",
+      "slot": "active_2",
+      "name": "Sky-Writ",
+      "mechanic": "lightning mark: damage over time",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0033",
+      "deity_id": "MG-DEITY-011",
+      "slot": "ultimate",
+      "name": "The Uncontested Sky",
+      "mechanic": "storm flattens the arena: cover destroyed, enemy casting silenced",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0034",
+      "deity_id": "MG-DEITY-012",
+      "slot": "active_1",
+      "name": "Premise",
+      "mechanic": "mark a target with a logical condition",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0035",
+      "deity_id": "MG-DEITY-012",
+      "slot": "active_2",
+      "name": "Conclusion",
+      "mechanic": "blink to any marked target and strike",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0036",
+      "deity_id": "MG-DEITY-012",
+      "slot": "ultimate",
+      "name": "The Perfect Plan",
+      "mechanic": "6s auto-targeting weak points; kills in it restore your faith",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0037",
+      "deity_id": "MG-DEITY-013",
+      "slot": "active_1",
+      "name": "Gale Step",
+      "mechanic": "dash through torii at speed",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0038",
+      "deity_id": "MG-DEITY-013",
+      "slot": "active_2",
+      "name": "Tempest Sweep",
+      "mechanic": "AOE knockback",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0039",
+      "deity_id": "MG-DEITY-013",
+      "slot": "ultimate",
+      "name": "The Storm Crosses",
+      "mechanic": "a line of storm-torii marches across the field; enemies caught between are struck",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0040",
+      "deity_id": "MG-DEITY-014",
+      "slot": "active_1",
+      "name": "Crescent Volley",
+      "mechanic": "3 piercing moonlight shots",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0041",
+      "deity_id": "MG-DEITY-014",
+      "slot": "active_2",
+      "name": "Moonmark",
+      "mechanic": "see marked through walls; bonus at range",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0042",
+      "deity_id": "MG-DEITY-014",
+      "slot": "ultimate",
+      "name": "Total Eclipse",
+      "mechanic": "field darkens; only moonmarks glow — his arrows always find them",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0043",
+      "deity_id": "MG-DEITY-015",
+      "slot": "active_1",
+      "name": "Sunthread",
+      "mechanic": "binding light-beam roots enemies",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0044",
+      "deity_id": "MG-DEITY-015",
+      "slot": "active_2",
+      "name": "Radiant Weave",
+      "mechanic": "self-shield woven from light",
+      "self_only": true,
+      "tags": [
+        "solo_first"
+      ],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0045",
+      "deity_id": "MG-DEITY-015",
+      "slot": "ultimate",
+      "name": "Dawn Rewound",
+      "mechanic": "restores true light: heals YOU and purges all false reflections — hard-counter to realm illusions",
+      "self_only": true,
+      "tags": [
+        "solo_first"
+      ],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0046",
+      "deity_id": "MG-DEITY-016",
+      "slot": "active_1",
+      "name": "Spirit-Step",
+      "mechanic": "blink across the boundary — through terrain",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0047",
+      "deity_id": "MG-DEITY-016",
+      "slot": "active_2",
+      "name": "Unmaking Cut",
+      "mechanic": "bonus damage vs illusions and false reflections",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0048",
+      "deity_id": "MG-DEITY-016",
+      "slot": "ultimate",
+      "name": "The Threshold Closes",
+      "mechanic": "marked enemies pulled halfway out of their bodies — defenseless; your strikes land true",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0049",
+      "deity_id": "MG-DEITY-017",
+      "slot": "active_1",
+      "name": "Rootslam",
+      "mechanic": "AOE strike + raises a root-ridge barrier (prefab barrier pool)",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0050",
+      "deity_id": "MG-DEITY-017",
+      "slot": "active_2",
+      "name": "Second Growth",
+      "mechanic": "self-heal from grove-sap",
+      "self_only": true,
+      "tags": [
+        "solo_first"
+      ],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0051",
+      "deity_id": "MG-DEITY-017",
+      "slot": "ultimate",
+      "name": "The Forest Rises",
+      "mechanic": "battlefield sprouts: terrain reshapes via grid-snapped prefab walls",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0052",
+      "deity_id": "MG-DEITY-018",
+      "slot": "active_1",
+      "name": "Tradeshot",
+      "mechanic": "Craft stacks swap your next arrow type: fire/frost/shock",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0053",
+      "deity_id": "MG-DEITY-018",
+      "slot": "active_2",
+      "name": "Footwork",
+      "mechanic": "dash; next shot crits",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0054",
+      "deity_id": "MG-DEITY-018",
+      "slot": "ultimate",
+      "name": "Master of the Moment",
+      "mechanic": "6s: every skill he owns fires in sequence, all at once",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0055",
+      "deity_id": "MG-DEITY-019",
+      "slot": "active_1",
+      "name": "Cinderbind",
+      "mechanic": "flame-roots enemies",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0056",
+      "deity_id": "MG-DEITY-019",
+      "slot": "active_2",
+      "name": "Rekindle",
+      "mechanic": "self-heal from the First Flame",
+      "self_only": true,
+      "tags": [
+        "solo_first"
+      ],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0057",
+      "deity_id": "MG-DEITY-019",
+      "slot": "ultimate",
+      "name": "The Smelting",
+      "mechanic": "forge-fire wave: melts armor and strips enemy buffs",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0058",
+      "deity_id": "MG-DEITY-020",
+      "slot": "active_1",
+      "name": "Crowfall",
+      "mechanic": "leap-strike from above; untargetable in crow-form",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0059",
+      "deity_id": "MG-DEITY-020",
+      "slot": "active_2",
+      "name": "War-Omen",
+      "mechanic": "mark: takes more damage the lower its health",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0060",
+      "deity_id": "MG-DEITY-020",
+      "slot": "ultimate",
+      "name": "The End of the Battle",
+      "mechanic": "lands as a flock: all marked enemies take their fate-damage immediately",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0061",
+      "deity_id": "MG-DEITY-021",
+      "slot": "active_1",
+      "name": "Flareguard",
+      "mechanic": "block + blinding shockwave-ring",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0062",
+      "deity_id": "MG-DEITY-021",
+      "slot": "active_2",
+      "name": "Ignited Resolve",
+      "mechanic": "self-buff: attack speed",
+      "self_only": true,
+      "tags": [
+        "solo_first"
+      ],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0063",
+      "deity_id": "MG-DEITY-021",
+      "slot": "ultimate",
+      "name": "The Final Beacon",
+      "mechanic": "plants a light-standard: 8s undying + all enemies drawn to it",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0064",
+      "deity_id": "MG-DEITY-022",
+      "slot": "active_1",
+      "name": "Far Glint",
+      "mechanic": "long-range mark that glows through walls",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0065",
+      "deity_id": "MG-DEITY-022",
+      "slot": "active_2",
+      "name": "Prismatic Volley",
+      "mechanic": "one arrow splits into a spectrum of element-typed shots",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0066",
+      "deity_id": "MG-DEITY-022",
+      "slot": "ultimate",
+      "name": "Sunrise Verdict",
+      "mechanic": "names the strongest enemy; light converges from every angle — cannot outrun dawn",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0067",
+      "deity_id": "MG-DEITY-023",
+      "slot": "active_1",
+      "name": "Refraction",
+      "mechanic": "PHASE 2 (needs ability registry): bend an enemy's last ability back at it",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "YELLOW — activates when ability registry is populated (Phase 2)"
+    },
+    {
+      "id": "MG-ABILITY-0068",
+      "deity_id": "MG-DEITY-023",
+      "slot": "active_2",
+      "name": "Annotated Ray",
+      "mechanic": "precision beam; bonus vs marked",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0069",
+      "deity_id": "MG-DEITY-023",
+      "slot": "ultimate",
+      "name": "The Reversal",
+      "mechanic": "every enemy buff inverts into a debuff",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0070",
+      "deity_id": "MG-DEITY-024",
+      "slot": "active_1",
+      "name": "Threshold Glow",
+      "mechanic": "place a light-node anywhere; swap to it photon-quick",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0071",
+      "deity_id": "MG-DEITY-024",
+      "slot": "active_2",
+      "name": "Irradiate",
+      "mechanic": "infuse an enemy 3s; next strike from within is guaranteed crit",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0072",
+      "deity_id": "MG-DEITY-024",
+      "slot": "ultimate",
+      "name": "Everywhere At Once",
+      "mechanic": "5s: every light-node acts as her — simultaneous strikes from all thresholds",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0073",
+      "deity_id": "MG-DEITY-025",
+      "slot": "active_1",
+      "name": "Writ of War",
+      "mechanic": "mark: damage escalates the longer the mark holds — debt compounds",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0074",
+      "deity_id": "MG-DEITY-025",
+      "slot": "active_2",
+      "name": "Chainstroke",
+      "mechanic": "chain-pull an enemy to him",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0075",
+      "deity_id": "MG-DEITY-025",
+      "slot": "ultimate",
+      "name": "Involuntary Collection",
+      "mechanic": "all marked enemies dragged in; accumulated debt executes at once",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0076",
+      "deity_id": "MG-DEITY-026",
+      "slot": "active_1",
+      "name": "Debtfire",
+      "mechanic": "damage that GROWS over time — interest",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0077",
+      "deity_id": "MG-DEITY-026",
+      "slot": "active_2",
+      "name": "Refinance",
+      "mechanic": "restructure your own debuffs into one delayed burst",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0078",
+      "deity_id": "MG-DEITY-026",
+      "slot": "ultimate",
+      "name": "The Original Loan",
+      "mechanic": "8s overwhelming power; a fraction of damage dealt comes due after. The temptation ult",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0079",
+      "deity_id": "MG-DEITY-027",
+      "slot": "active_1",
+      "name": "Payment Collection",
+      "mechanic": "passive-on-hit: small self-heal per strike",
+      "self_only": true,
+      "tags": [
+        "solo_first"
+      ],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0080",
+      "deity_id": "MG-DEITY-027",
+      "slot": "active_2",
+      "name": "Terms of Trade",
+      "mechanic": "volley shatters shields and transfers their value to you (temporary self-buff)",
+      "self_only": true,
+      "tags": [
+        "solo_first"
+      ],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0081",
+      "deity_id": "MG-DEITY-027",
+      "slot": "ultimate",
+      "name": "Closing Costs",
+      "mechanic": "all payments collected this fight detonate as one blast",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0082",
+      "deity_id": "MG-DEITY-028",
+      "slot": "active_1",
+      "name": "Loophole",
+      "mechanic": "untouchable blink THROUGH enemies",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0083",
+      "deity_id": "MG-DEITY-028",
+      "slot": "active_2",
+      "name": "Default",
+      "mechanic": "bonus damage vs marked/debt-stacked enemies",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0084",
+      "deity_id": "MG-DEITY-028",
+      "slot": "ultimate",
+      "name": "Amnesty",
+      "mechanic": "erases all marks/debuffs on her; brief untargetable; next strike guaranteed crit",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0085",
+      "deity_id": "MG-DEITY-029",
+      "slot": "active_1",
+      "name": "Ridgebreaker",
+      "mechanic": "ground-slam AOE raises stone walls (prefab barrier pool)",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0086",
+      "deity_id": "MG-DEITY-029",
+      "slot": "active_2",
+      "name": "Basalt Skin",
+      "mechanic": "self-buff: damage reduction while standing ground",
+      "self_only": true,
+      "tags": [
+        "solo_first"
+      ],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0087",
+      "deity_id": "MG-DEITY-029",
+      "slot": "ultimate",
+      "name": "The Ridge Wakes",
+      "mechanic": "eruption: shockwave + lava vents in a preset pattern (cone/ring/line)",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0088",
+      "deity_id": "MG-DEITY-030",
+      "slot": "active_1",
+      "name": "Veilcast",
+      "mechanic": "fog wall: blocks enemy sight and projectiles",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0089",
+      "deity_id": "MG-DEITY-030",
+      "slot": "active_2",
+      "name": "Mistake",
+      "mechanic": "deploy a mirage double of yourself",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0090",
+      "deity_id": "MG-DEITY-030",
+      "slot": "ultimate",
+      "name": "Whiteout",
+      "mechanic": "field fills: enemies wander blind while you strike from anywhere",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0091",
+      "deity_id": "MG-DEITY-031",
+      "slot": "active_1",
+      "name": "Upstream",
+      "mechanic": "a shot that pierces forward then RETURNS — every enemy hit twice, going and coming",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0092",
+      "deity_id": "MG-DEITY-031",
+      "slot": "active_2",
+      "name": "Shallows",
+      "mechanic": "deployable river-snare: enemies wade in slow-motion",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0093",
+      "deity_id": "MG-DEITY-031",
+      "slot": "ultimate",
+      "name": "The Spawning Run",
+      "mechanic": "torrent of arrows floods a river-channel you draw; everything swept",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0094",
+      "deity_id": "MG-DEITY-032",
+      "slot": "active_1",
+      "name": "Featherfall",
+      "mechanic": "glide-strike from above, no warning cue",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0095",
+      "deity_id": "MG-DEITY-032",
+      "slot": "active_2",
+      "name": "Night-Eye",
+      "mechanic": "see marked enemies through terrain; reveals Hollow disguised as terrain",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    },
+    {
+      "id": "MG-ABILITY-0096",
+      "deity_id": "MG-DEITY-032",
+      "slot": "ultimate",
+      "name": "The Quiet Hunt",
+      "mechanic": "5s completely undetectable; every strike from the silence is a critical",
+      "self_only": false,
+      "tags": [],
+      "feasibility": "GREEN"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+[gd_scene load_steps=7 format=3 uid="uid://mythos_main_002"]
+
+[ext_resource type="PackedScene" path="res://assets/models/aten_ra.glb" id="1_aten_ra"]
+[ext_resource type="Script" path="res://scripts/player_controller.gd" id="2_player"]
+[ext_resource type="Script" path="res://scripts/orbit_camera.gd" id="3_camera"]
+[ext_resource type="Script" path="res://scripts/dungeon_generator.gd" id="4_dungeon"]
+[ext_resource type="Script" path="res://scripts/weapon_attachment.gd" id="5_weapon"]
+[ext_resource type="Script" path="res://scripts/touch_controls.gd" id="6_touch"]
+
+[sub_resource type="Environment" id="env_001"]
+background_mode = 1
+background_color = Color(0.03, 0.03, 0.05, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.12, 0.10, 0.08, 1)
+ambient_light_energy = 0.4
+glow_enabled = true
+glow_intensity = 0.6
+glow_blend_mode = 1
+fog_enabled = true
+fog_light_color = Color(0.06, 0.05, 0.08, 1)
+fog_density = 0.015
+
+[sub_resource type="SphereMesh" id="torch_mesh_001"]
+radius = 0.15
+height = 0.3
+
+[node name="MainScene" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("env_001")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866, 0, 0.5, 0, 0.866, -0.5, -0.5, 0.5, 0.866, 5, 20, 5)
+light_color = Color(0.6, 0.55, 0.4, 1)
+light_energy = 0.8
+shadow_enabled = true
+
+[node name="Dungeon" type="Node3D" parent="."]
+script = ExtResource("4_dungeon")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+script = ExtResource("2_player")
+
+[node name="Character" parent="Player" instance=ExtResource("1_aten_ra")]
+
+[node name="WeaponAttachment" type="Node3D" parent="Player"]
+script = ExtResource("5_weapon")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 10)
+script = ExtResource("3_camera")
+target = NodePath("../Player")
+
+[node name="TouchControls" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+script = ExtResource("6_touch")
+
+[node name="Torch1" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, -5)
+light_color = Color(0.9, 0.6, 0.2, 1)
+light_energy = 3.0
+omni_range = 8.0
+omni_attenuation = 1.5
+shadow_enabled = true
+
+[node name="Torch2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, 5)
+light_color = Color(0.9, 0.6, 0.2, 1)
+light_energy = 3.0
+omni_range = 8.0
+omni_attenuation = 1.5
+shadow_enabled = true
+
+[node name="Torch3" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 15)
+light_color = Color(0.9, 0.6, 0.2, 1)
+light_energy = 2.5
+omni_range = 8.0
+omni_attenuation = 1.5
+shadow_enabled = true
+
+[node name="Torch4" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, 10)
+light_color = Color(0.9, 0.6, 0.2, 1)
+light_energy = 2.5
+omni_range = 8.0
+omni_attenuation = 1.5
+shadow_enabled = true
+
+[node name="TorchMesh1" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, -5)
+mesh = SubResource("torch_mesh_001")
+
+[node name="TorchMesh2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, 5)
+mesh = SubResource("torch_mesh_001")

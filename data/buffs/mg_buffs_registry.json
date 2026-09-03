@@ -1,0 +1,125 @@
+{
+  "registry": "MG-BUFF",
+  "description": "Unified buff/status engine. self_only=true buffs may never target allies (solo-first rule).",
+  "statuses": [
+    {
+      "id": "MG-BUFF-MARK",
+      "kind": "mark",
+      "description": "applied to enemies; unified hook for escalating/conditional damage",
+      "self_only": false,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-BUFF-DOT-GROW",
+      "kind": "dot_growing",
+      "description": "damage-over-time that compounds (Orivax interest)",
+      "self_only": false,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-BUFF-UNDYING",
+      "kind": "undying",
+      "description": "player cannot die for duration (Varothiel beacon)",
+      "self_only": true,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-BUFF-UNTARGETABLE",
+      "kind": "untargetable",
+      "description": "AI cannot perceive target (stealth/falcon/crow)",
+      "self_only": true,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-BUFF-SHIELD-SELF",
+      "kind": "shield_self",
+      "description": "player-only absorb shield (solo-first)",
+      "self_only": true,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-BUFF-HEAL-SELF",
+      "kind": "heal_self",
+      "description": "self-heal only — no ally heals (solo-first)",
+      "self_only": true,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-BUFF-SPEED-SELF",
+      "kind": "speed_self",
+      "description": "self movement/attack speed",
+      "self_only": true,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-BUFF-GLOW-RADIUS",
+      "kind": "glow_radius",
+      "description": "F006 Dimmed threat mechanic: one player light variable + burning-terrain flags",
+      "self_only": true,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-BUFF-DEBT-STACK",
+      "kind": "debt_stack",
+      "description": "F007 bargain debt: power now, collects later same fight",
+      "self_only": true,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-BUFF-I-FRAME",
+      "kind": "i_frame",
+      "description": "damage immunity window during blinks (Syrrax Loophole)",
+      "self_only": true,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-BUFF-CRIT-CHAIN",
+      "kind": "crit_chain",
+      "description": "guaranteed-crit follow-ups (Flourish, Amnesty, Quiet Hunt)",
+      "self_only": true,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-DEBUFF-SLOW",
+      "kind": "slow",
+      "description": "enemy movement/attack slow",
+      "self_only": false,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-DEBUFF-SNARE",
+      "kind": "snare",
+      "description": "enemy root (Shallows, Sunthread, Laurel Snare)",
+      "self_only": false,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-DEBUFF-BUFF-INVERT",
+      "kind": "buff_inversion",
+      "description": "enemy buffs become debuffs (Sothiel, Vennaith wave)",
+      "self_only": false,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-DEBUFF-BUFF-STRIP",
+      "kind": "buff_strip",
+      "description": "removes enemy buffs (Rune of Undoing, Erasing Wind, Smelting)",
+      "self_only": false,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-DEBUFF-ARMOR-MELT",
+      "kind": "armor_melt",
+      "description": "defense reduction / armor strip",
+      "self_only": false,
+      "solo_first_enforced": true
+    },
+    {
+      "id": "MG-DEBUFF-SILENCE",
+      "kind": "silence",
+      "description": "enemy casting disabled (Uncontested Sky)",
+      "self_only": false,
+      "solo_first_enforced": true
+    }
+  ]
+}

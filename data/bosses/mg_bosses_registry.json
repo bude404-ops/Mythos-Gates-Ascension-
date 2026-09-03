@@ -1,0 +1,179 @@
+{
+  "registry": "MG-BOSS",
+  "description": "Boss registry — all 8 factions, tiered mini/champion/major. F001 bosses derived from realm template pending approval; F004 'Kami' boss-name flagged for originality rename.",
+  "bosses": [
+    {
+      "id": "MG-BOSS-F6-COL",
+      "faction_id": "MG-FACTION-006",
+      "name": "The Stair-Phantoms",
+      "tier": "mini",
+      "summary": "the ascent that lies with mirage-light"
+    },
+    {
+      "id": "MG-BOSS-F6-ENG",
+      "faction_id": "MG-FACTION-006",
+      "name": "The Shattered Engine",
+      "tier": "champion",
+      "summary": "fused light-fragments; eats rejoining radiance"
+    },
+    {
+      "id": "MG-BOSS-F6-LIGHTLESS",
+      "faction_id": "MG-FACTION-006",
+      "name": "The Lightless One of Broken Praise",
+      "tier": "major",
+      "summary": "attacks with anti-light; win by embracing your shadow"
+    },
+    {
+      "id": "MG-BOSS-F7-WARDENS",
+      "faction_id": "MG-FACTION-007",
+      "name": "The False Pact Wardens",
+      "tier": "mini",
+      "summary": "every ability costs extra while they live"
+    },
+    {
+      "id": "MG-BOSS-F7-USURPER",
+      "faction_id": "MG-FACTION-007",
+      "name": "The Ash Court Usurper",
+      "tier": "champion",
+      "summary": "wields Dominion law as a weapon"
+    },
+    {
+      "id": "MG-BOSS-F7-MAGISTRATE",
+      "faction_id": "MG-FACTION-007",
+      "name": "The Volcanic Glass Magistrate",
+      "tier": "major",
+      "summary": "beat it by beating the law: the founding contract was eaten"
+    },
+    {
+      "id": "MG-BOSS-F8-COLLOSSUS",
+      "faction_id": "MG-FACTION-008",
+      "name": "The Grayfell Colossus",
+      "tier": "mini",
+      "summary": "a hollowed old-growth that walks"
+    },
+    {
+      "id": "MG-BOSS-F8-SPORE",
+      "faction_id": "MG-FACTION-008",
+      "name": "The Spore-Mother",
+      "tier": "champion",
+      "summary": "kill the color out of her before she grays the realm"
+    },
+    {
+      "id": "MG-BOSS-F8-STUMP",
+      "faction_id": "MG-FACTION-008",
+      "name": "The First Stump",
+      "tier": "major",
+      "summary": "cannot be killed, only outlasted — endurance exam; absorbed the witness of the beginning"
+    },
+    {
+      "id": "MG-BOSS-F1-UNWEIGHED",
+      "faction_id": "MG-FACTION-001",
+      "name": "The Unweighed",
+      "tier": "mini",
+      "summary": "a Hollow that avoided its verdict; fights from shadow patches the noonlight cannot reach",
+      "status": "approved",
+      "approved_by": "BudE404",
+      "approved_date": "2026-09-02",
+      "approved": true
+    },
+    {
+      "id": "MG-BOSS-F1-ARCHON",
+      "faction_id": "MG-FACTION-001",
+      "name": "The Glare-Sworn Archon",
+      "tier": "champion",
+      "summary": "leader of the light-swimmers; wears a stolen sun",
+      "status": "approved",
+      "approved_by": "BudE404",
+      "approved_date": "2026-09-02",
+      "approved": true
+    },
+    {
+      "id": "MG-BOSS-F1-UNSHAMED",
+      "faction_id": "MG-FACTION-001",
+      "name": "The Unshamed",
+      "tier": "major",
+      "summary": "a god-shaped Hollow that refuses to be weighed — verdict-light slides off it; win by forcing it under the scale",
+      "status": "approved",
+      "approved_by": "BudE404",
+      "approved_date": "2026-09-02",
+      "approved": true
+    },
+    {
+      "id": "MG-BOSS-F2-STANDARD",
+      "faction_id": "MG-FACTION-002",
+      "name": "The Forgotten Standard Bearer",
+      "tier": "mini",
+      "summary": "the pre-Collapse king who swore to hold the bridge and failed"
+    },
+    {
+      "id": "MG-BOSS-F2-OATHMAW",
+      "faction_id": "MG-FACTION-002",
+      "name": "Oathmaw",
+      "tier": "champion",
+      "summary": "a Hollow that learned to speak promises — it sounds exactly like someone you trust"
+    },
+    {
+      "id": "MG-BOSS-F2-PERJURER",
+      "faction_id": "MG-FACTION-002",
+      "name": "The First Perjurer",
+      "tier": "major",
+      "summary": "a god-shaped Hollow, the first ever to break a divine vow. [SECRET-tier: WHAT was the vow — mid-campaign reveal anchor]"
+    },
+    {
+      "id": "MG-BOSS-F3-ORACLE",
+      "faction_id": "MG-FACTION-003",
+      "name": "The Vapored Oracle",
+      "tier": "mini",
+      "summary": "mightiest of the oracle-maddened shades; fights you with your own future"
+    },
+    {
+      "id": "MG-BOSS-F3-PARASITE",
+      "faction_id": "MG-FACTION-003",
+      "name": "The Victory Parasite",
+      "tier": "champion",
+      "summary": "imitates BOTH legal systems (Laurel Agon + Stormmoot) to exploit jurisdictional chaos"
+    },
+    {
+      "id": "MG-BOSS-F3-USURPER",
+      "faction_id": "MG-FACTION-003",
+      "name": "The Thunder Tribunal Usurper",
+      "tier": "major",
+      "summary": "Hollow wearing the shape of a forgotten pre-Collapse judge; every judgment has physical weight. [SECRET-tier: whose shape is it REALLY wearing?]"
+    },
+    {
+      "id": "MG-BOSS-F4-REFLECTION",
+      "faction_id": "MG-FACTION-004",
+      "name": "The False Reflection",
+      "tier": "mini",
+      "summary": "your own copy, fighting without conviction"
+    },
+    {
+      "id": "MG-BOSS-F4-MATRON",
+      "faction_id": "MG-FACTION-004",
+      "name": "The Boundary-Thief Matron",
+      "tier": "champion",
+      "summary": "a Hollow that steals spirits and wears the shells"
+    },
+    {
+      "id": "MG-BOSS-F4-KAMI",
+      "faction_id": "MG-FACTION-004",
+      "name": "The False Reflection Sovereign",
+      "tier": "major",
+      "summary": "the Gate's most perfect imitation; victory requires proving the threshold still has authority. [SECRET-tier: reflections need an original — no such original exists. What is it reflecting?]. RENAME APPLIED (BudE404 approved)"
+    },
+    {
+      "id": "MG-BOSS-F5-CHANGELING",
+      "faction_id": "MG-FACTION-005",
+      "name": "The Geas Changeling",
+      "tier": "mini",
+      "summary": "rearranges the labyrinth mid-fight"
+    },
+    {
+      "id": "MG-BOSS-F5-PREDATOR",
+      "faction_id": "MG-FACTION-005",
+      "name": "The Beast-Realm Predator",
+      "tier": "champion",
+      "summary": "constraint-combat: you cannot win by destroying the terrain it nests in"
+    }
+  ]
+}
