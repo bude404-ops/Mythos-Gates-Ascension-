@@ -76,3 +76,9 @@ F001 canon weapons (from deity registry):
 - Djekhur, the Ashen Gale — Dunemaw (crescent maul) — the desert's anger
 - Shemris, the Glasswind — Semblance (shimmer-spun bow) — heat-shimmer goddess
 - Amekhet, the Sunless Eye — Crescent Veil (paired sickle-daggers) — the shade cast at perfect noon
+
+## Amendment 4 — Cultural Origin Styling (LOCKED by BudE404, Sept 3 2026)
+
+The titans carry ORIGINAL lore, but their design must visually resemble the REAL-WORLD culture their faction/deity is geographically based on. Khaveth and the Amber Verdict get full Egyptian styling. This applies to all future deity concepts: mine the faction's cultural source (garments, motifs, materials, silhouettes) — the lore stays ours, the aesthetic stays true to its origin.
+
+Egyptian styling palette for F001: kohl-lined eyes, gold + bronze + lapis tones, linen (shendyt kilt, nemes-style headcloth), broad usekh collar, scarab / sun-disc / ankh motifs on the weapon (engraved, not architectural).
