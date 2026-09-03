@@ -64,3 +64,9 @@ Rules:
 
 ## GEAR STANDARD (Sept 3 2026, BudE404)
 Gear is REGIONAL + EPIC GOD-TIER: every piece keeps the faction's real cultural identity (Norse = byrnie, knotwork, wool/fur, oath-rings; Egypt = usekh, nemes, linen) but is DIVINIZED — god-scale craftsmanship, glowing runes/hieroglyph seams, divine metalwork, colossal ornamentation, cloth woven with light. Never museum-mundane, never generic fantasy plate. Regional identity first, epic divinity second.
+
+## ROSTER LOCKED AS CANON (Sept 3 2026, BudE404 — "Ok keep")
+The full 8-titan roster (F001 + F002) is approved and promoted to art/approved/:
+- F001 LIVING GOLD FAMILY: Khaveth (polished gold, white-gold glow), Djekhur (scorched bronze, ember glow), Shemris (molten gold — benchmark), Amekhet (black jade, gold veins)
+- F002 LIVING SILVER FAMILY: Halmarr (storm-silver, lightning), Falwyn (dusk-silver, violet), Vargrim (ash-silver, rune-blue), Estrith (moonlit pearl, indigo)
+Only canonical versions exist in the repo. F003–F008 cultural design docs + concepts are the next art-phase deliverables.
