@@ -48,3 +48,16 @@ The problem: current concepts read as large humans / pin-up goddesses. A titan m
 
 ## Rollout
 Sample first (Halmarr v2) → BudE404 verdict → re-roll all current titans to standard → standard applies to all future factions.
+
+## MATERIAL SKIN SYSTEM (proposed Sept 3 2026, BudE404 — pending verdict)
+Godflesh takes a LIVING MATERIAL determined by the titan's region/faction origin. The material is ALIVE — light flows beneath it, it is never plating, statue stone, or construct metal.
+
+Draft region-material map:
+- **F001 Sun-Verdict Desert (Egypt):** LIVING GOLD — molten polished-gold flesh, sunlight flowing beneath the surface. (Authentic to Egyptian canon: gods depicted with gold skin.) Possible per-deity variants: bronze, electrum, black-jade with gold veins.
+- **F002 Stormmoot (Norse):** LIVING STORM-SILVER — pale liquid-silver flesh with lightning-blue light in the seams, frost-mist aura.
+- **F003+ :** assigned per faction cultural origin when each faction enters art phase (e.g. jade, obsidian, bronze, moonlit pearl), locked in that faction's cultural design doc before drawing.
+
+Rules:
+1. Material rides with the faction, glow color with the deity (one-of-one identity = silhouette + material glow).
+2. Material must stay WARM and alive — light moves under the surface, skin flexes like flesh, never rigid or mechanical.
+3. Regional materials reinforce cultural identity and make factions instantly distinguishable in game silhouettes.
