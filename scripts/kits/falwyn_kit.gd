@@ -81,3 +81,26 @@ func the_falcons_price(enemies: Array) -> Dictionary:
 		volley.append({"shot": i + 1, "always_hits": true})
 	return {"untargetable": true, "hook": UNTARGETABLE_HOOK,
 		"duration": ULT_DURATION, "volley": volley}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "duskflight",
+	"active_2": "feathermark",
+	"ultimate": "the_falcons_price",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["player_pos", "player_pos", "enemies"],
+	"active_2": ["target"],
+	"ultimate": ["enemies"],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

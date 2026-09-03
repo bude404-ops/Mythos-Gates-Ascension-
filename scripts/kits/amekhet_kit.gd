@@ -66,3 +66,26 @@ func noonshade_multiplier(target) -> float:
 func high_noon_eclipsed() -> Dictionary:
 	return {"untargetable": true, "all_critical": true,
 		"duration": ULT_DURATION, "buff": UNTARGETABLE_BUFF}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "shadow_step",
+	"active_2": "noonshade_mark",
+	"ultimate": "high_noon_eclipsed",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["player_pos"],
+	"active_2": ["target"],
+	"ultimate": [],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

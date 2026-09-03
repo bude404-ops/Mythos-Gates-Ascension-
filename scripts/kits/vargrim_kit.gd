@@ -63,3 +63,26 @@ func the_unwriting(enemies: Array) -> Dictionary:
 		e.set_meta("silence_timer", UNWRITING_SILENCE)
 		e.set_meta("silence_hook", SILENCE_DEBUFF)
 	return {"silenced": enemies.size(), "duration": UNWRITING_SILENCE, "hook": SILENCE_DEBUFF}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "rune_of_undoing",
+	"active_2": "stormsight",
+	"ultimate": "the_unwriting",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["target"],
+	"active_2": ["player_pos", "enemies"],
+	"ultimate": ["enemies"],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

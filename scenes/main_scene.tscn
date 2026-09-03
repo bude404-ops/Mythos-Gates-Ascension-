@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://mythos_main_002"]
+[gd_scene load_steps=11 format=3 uid="uid://mythos_main_002"]
 
 [ext_resource type="PackedScene" path="res://assets/models/aten_ra.glb" id="1_aten_ra"]
 [ext_resource type="Script" path="res://scripts/player_controller.gd" id="2_player"]
@@ -6,6 +6,10 @@
 [ext_resource type="Script" path="res://scripts/dungeon_generator.gd" id="4_dungeon"]
 [ext_resource type="Script" path="res://scripts/weapon_attachment.gd" id="5_weapon"]
 [ext_resource type="Script" path="res://scripts/touch_controls.gd" id="6_touch"]
+[ext_resource type="Script" path="res://scripts/combat_runtime.gd" id="7_combat"]
+[ext_resource type="Script" path="res://scripts/combat_loop.gd" id="8_loop"]
+[ext_resource type="Script" path="res://scripts/ui/deity_select.gd" id="9_dselect"]
+[ext_resource type="Script" path="res://scripts/ui/ability_hud.gd" id="10_ahud"]
 
 [sub_resource type="Environment" id="env_001"]
 background_mode = 1
@@ -64,6 +68,21 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 0
 script = ExtResource("6_touch")
+
+[node name="CombatManager" type="Node" parent="."]
+script = ExtResource("7_combat")
+
+[node name="CombatLoop" type="Node" parent="."]
+script = ExtResource("8_loop")
+deity_id = "MG-DEITY-001"
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="DeitySelect" type="Control" parent="UI"]
+script = ExtResource("9_dselect")
+
+[node name="AbilityHUD" type="Control" parent="UI"]
+script = ExtResource("10_ahud")
 
 [node name="Torch1" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, -5)

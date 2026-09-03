@@ -67,3 +67,26 @@ func the_uncontested_sky(cover_objects: Array, enemies: Array) -> Dictionary:
 		e.set_meta("silence_hook", SILENCE_DEBUFF)
 	return {"cover_destroyed": destroyed.size(),
 		"silenced": enemies.size(), "silence_duration": UNCONTESTED_SILENCE}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "ostracize",
+	"active_2": "sky_writ",
+	"ultimate": "the_uncontested_sky",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["target"],
+	"active_2": ["target"],
+	"ultimate": ["enemies"],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

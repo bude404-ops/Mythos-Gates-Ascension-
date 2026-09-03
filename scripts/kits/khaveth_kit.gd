@@ -100,3 +100,26 @@ func meridian_judgement(origin: Vector3, enemies: Array) -> Dictionary:
 		verdict_passed.emit(str(best.get_meta("enemy_name", "enemy")))
 		faith_gained.emit(5, "verdict passed openly")
 	return {"condemned": best, "executed": execute}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "weigh_the_deed",
+	"active_2": "noon_sentence",
+	"ultimate": "meridian_judgement",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["target"],
+	"active_2": ["player_pos", "facing", "enemies"],
+	"ultimate": ["player_pos", "enemies"],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

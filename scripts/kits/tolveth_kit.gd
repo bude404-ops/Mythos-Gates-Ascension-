@@ -1,27 +1,21 @@
 extends Node
 ## Mythos Gates: Ascension — Tolveth, the Rootward (MG-DEITY-017)
-## Warrior kit, MG-FACTION-005 (The Silverroot Kindred). DataLayer-driven (proven template).
-## Solo-first: Second Growth heals YOU (MG-BUFF-HEAL-SELF); all other effects are
-## enemy-facing or terrain. Every heal and buff in this kit is self-only.
-## Tap-to-move compatible: Rootslam auto-centers on the nearest enemy cluster.
-
-signal faith_gained(amount: int, reason: String)
+## Warrior kit, MG-FACTION-005 (Silverroot Kindred). DataLayer-driven (proven template).
+## Solo-first: heal is SELF-only; root/snare are enemy-facing.
 
 const DEITY_ID := "MG-DEITY-017"
+const SNARE_DEBUFF := "MG-DEBUFF-SNARE"
 const HEAL_HOOK := "MG-BUFF-HEAL-SELF"
-const SNARE_HOOK := "MG-DEBUFF-SNARE"
 
-# ---- Local tuning (numbers, never lore) ----
-const ROOTSLAM_RADIUS := 6.0        # the club's strike reach
-const RIDGE_LENGTH := 10.0         # root-ridge wall length
-const RIDGE_OFFSET := 2.0          # wall rises behind the swing
-const RIDGE_DURATION := 4.0         # seconds the ridge holds
-const GROVE_HEAL_PCT := 0.30       # Second Growth restores 30% of YOUR max HP
-const GROVE_HEAL_TIME := 3.0       # sap flows over 3s
-const FOREST_RADIUS := 18.0        # The Forest Rises reshapes this far
-const FOREST_GRID := 3.0           # grid snap for terrain walls
-const FOREST_ROOT_TIME := 1.5      # enemies caught by rising roots
-const FOREST_WALLS := 8            # prefab walls that sprout
+# ---- Local tuning ----
+const ROOTSLAM_RADIUS := 5.0
+const ROOTSLAM_SNARE_TIME := 1.5
+const RIDGE_LENGTH := 8.0          # root-ridge barrier length
+const RIDGE_HP := 200.0
+const SECOND_GROWTH_HEAL := 0.25   # 25% max HP from grove-sap, SELF only
+const FOREST_WALL_SNAP := 2.0      # grid snap for prefab walls
+const FOREST_WALL_COUNT := 4       # walls sprouted
+const FOREST_SNARE_TIME := 2.0
 
 var deity: Dictionary = {}
 var ability_db: Dictionary = {}
@@ -41,56 +35,59 @@ func _ready() -> void:
 		ability_db["ultimate"].get("name", "?")])
 
 # ---------------------------------------------------------------- active_1
-## Rootslam — AOE strike; a ridge of living root rises behind the swing,
-## walling enemies off from their prey: you.
-func rootslam(origin: Vector3, forward: Vector2, enemies: Array) -> Dictionary:
-	var struck: Array[Dictionary] = []
+## Rootslam — AOE strike; a root-ridge barrier rises from the impact.
+func rootslam(origin: Vector3, enemies: Array) -> Dictionary:
+	var hits: Array[Dictionary] = []
 	for e in enemies:
-		var d := Vector2(e.position.x - origin.x, e.position.z - origin.z).length()
-		if d <= ROOTSLAM_RADIUS:
-			struck.append({"enemy": e, "distance": d})
-	# Ridge wall: perpendicular to facing, rising behind the swing.
-	var f := forward.normalized()
-	var wall_dir := Vector2(-f.y, f.x)
-	var center := Vector2(origin.x, origin.z) - f * RIDGE_OFFSET
-	return {"struck": struck, "radius": ROOTSLAM_RADIUS,
-		"ridge": {"center": center, "axis": wall_dir,
-			"length": RIDGE_LENGTH, "duration": RIDGE_DURATION,
-			"blocks_enemies": true}}
+		if origin.distance_to(e.position) <= ROOTSLAM_RADIUS:
+			e.set_meta("snared", true)
+			e.set_meta("snare_timer", ROOTSLAM_SNARE_TIME)
+			e.set_meta("snare_hook", SNARE_DEBUFF)
+			hits.append(e)
+	var ridge := {"position": origin, "length": RIDGE_LENGTH, "hp": RIDGE_HP}
+	return {"hits": hits, "ridge": ridge}
 
 # ---------------------------------------------------------------- active_2
-## Second Growth — grove-sap closes your wounds. SELF-ONLY (MG-BUFF-HEAL-SELF).
-func second_growth(your_max_hp: float) -> Dictionary:
-	return {"heal_amount": your_max_hp * GROVE_HEAL_PCT,
-		"heal_time": GROVE_HEAL_TIME, "heal_hook": HEAL_HOOK,
-		"self_only": true}
+## Second Growth — grove-sap knits YOU closed. SELF-only restore.
+func second_growth(max_hp: float) -> Dictionary:
+	return {"heal": max_hp * SECOND_GROWTH_HEAL, "heal_hook": HEAL_HOOK}
 
 # ---------------------------------------------------------------- ultimate
-## The Forest Rises — the battlefield sprouts. Terrain reshapes via
-## grid-snapped prefab walls; enemies standing where roots rise are held.
+## The Forest Rises — the battlefield sprouts grid-snapped walls;
+## enemies caught in the growth are rooted.
 func the_forest_rises(origin: Vector3, enemies: Array) -> Dictionary:
 	var walls: Array[Dictionary] = []
-	var rng := RandomNumberGenerator.new()
-	rng.seed = int(origin.x * 31.0 + origin.z * 17.0)
-	for i: int in FOREST_WALLS:
-		var ang := rng.randf_range(0.0, TAU)
-		var dist := rng.randf_range(3.0, FOREST_RADIUS)
-		var cx := snappedf(origin.x + cos(ang) * dist, FOREST_GRID)
-		var cz := snappedf(origin.z + sin(ang) * dist, FOREST_GRID)
-		var axis_ang := snappedf(ang + PI * 0.5, PI * 0.25)
-		walls.append({"center": Vector2(cx, cz),
-			"axis": Vector2(cos(axis_ang), sin(axis_ang)),
-			"length": FOREST_GRID * 2.0})
-	var rooted: Array[Dictionary] = []
+	for i in FOREST_WALL_COUNT:
+		var w := {"grid": Vector2(
+			round(origin.x / FOREST_WALL_SNAP) * FOREST_WALL_SNAP + i * FOREST_WALL_SNAP,
+			round(origin.z / FOREST_WALL_SNAP) * FOREST_WALL_SNAP), "hp": RIDGE_HP}
+		walls.append(w)
+	var rooted: Array = []
 	for e in enemies:
-		for w: Dictionary in walls:
-			var rel := Vector2(e.position.x, e.position.z) - w["center"]
-			var along := absf(rel.dot(w["axis"]))
-			if along <= FOREST_GRID:  # standing in the sprout line
-				e.set_meta("forest_held", true)
-				e.set_meta("hold_timer", FOREST_ROOT_TIME)
-				e.set_meta("hold_hook", SNARE_HOOK)
-				rooted.append({"enemy": e, "duration": FOREST_ROOT_TIME})
-				break
-	faith_gained.emit(6, "the forest rose")
-	return {"radius": FOREST_RADIUS, "walls": walls, "rooted": rooted}
+		e.set_meta("snared", true)
+		e.set_meta("snare_timer", FOREST_SNARE_TIME)
+		rooted.append(e)
+	return {"walls": walls, "rooted": rooted, "grid_snap": FOREST_WALL_SNAP}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "rootslam",
+	"active_2": "second_growth",
+	"ultimate": "the_forest_rises",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["player_pos", "enemies"],
+	"active_2": ["max_hp"],
+	"ultimate": ["player_pos", "enemies"],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

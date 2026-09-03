@@ -83,3 +83,26 @@ func erasing_wind(enemies: Array, terrain_effects: Array) -> Dictionary:
 		if t.get("hostile", false):
 			erased.append(t)
 	return {"buffs_stripped": buffs_stripped, "terrain_erased": erased}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "sand_gale_dash",
+	"active_2": "scouring_sweep",
+	"ultimate": "erasing_wind",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["player_pos", "facing", "enemies"],
+	"active_2": ["player_pos", "enemies"],
+	"ultimate": ["enemies"],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

@@ -1,23 +1,18 @@
 extends Node
 ## Mythos Gates: Ascension — Corveth, the Battle-Crow (MG-DEITY-020)
-## Assassin kit, MG-FACTION-005 (The Silverroot Kindred). DataLayer-driven (proven template).
-## Solo-first: all effects are enemy-facing (marks, fate-damage); Crowfall's
-## untargetable window applies to YOU mid-flight (MG-BUFF-UNTARGETABLE).
-## Tap-to-move compatible: Crowfall dives the nearest enemy; War-Omen marks
-## whatever you strike; the flock lands where the battle ends.
-
-signal faith_gained(amount: int, reason: String)
+## Assassin kit, MG-FACTION-005 (Silverroot Kindred). DataLayer-driven (proven template).
+## Solo-first: untargetability is SELF-only; omen mark is enemy-facing.
 
 const DEITY_ID := "MG-DEITY-020"
 const UNTARGETABLE_HOOK := "MG-BUFF-UNTARGETABLE"
 const MARK_HOOK := "MG-BUFF-MARK"
 
-# ---- Local tuning (numbers, never lore) ----
-const CROWFALL_RANGE := 12.0        # the dive's reach
-const CROW_FLIGHT_TIME := 0.6       # seconds untargetable in crow-form
-const OMEN_MAX_BONUS := 1.0         # fate doubles as the target fades
-const OMEN_DURATION := 10.0         # the omen hangs this long
-const FATE_EXECUTE_PCT := 0.30      # marked enemies below 30% meet their fate
+# ---- Local tuning ----
+const CROWFALL_RANGE := 10.0
+const CROWFALL_UNTARGETABLE := 0.8   # untouchable in crow-form during the dive
+const OMEN_MIN_BONUS := 0.10          # +10% damage at full health
+const OMEN_MAX_BONUS := 0.60          # +60% damage near death
+const FATE_EXECUTE := 0.15            # marked targets below 15% HP are executed
 
 var deity: Dictionary = {}
 var ability_db: Dictionary = {}
@@ -37,46 +32,57 @@ func _ready() -> void:
 		ability_db["ultimate"].get("name", "?")])
 
 # ---------------------------------------------------------------- active_1
-## Crowfall — a leap-strike from above. Untargetable while in crow-form.
-func crowfall(origin: Vector3, target_pos: Vector3) -> Dictionary:
-	var d := Vector2(target_pos.x - origin.x, target_pos.z - origin.z).length()
-	if d > CROWFALL_RANGE:
-		return {"dived": false, "reason": "beyond the flock's reach"}
-	return {"dived": true, "destination": target_pos,
-		"untargetable": CROW_FLIGHT_TIME,
-		"untargetable_hook": UNTARGETABLE_HOOK, "distance": d}
+## Crowfall — leap-strike from above; untouchable in crow-form mid-dive.
+func crowfall(from_pos: Vector3, target_pos: Vector3) -> Dictionary:
+	var legal := from_pos.distance_to(target_pos) <= CROWFALL_RANGE
+	return {"legal": legal, "untargetable": CROWFALL_UNTARGETABLE,
+		"untargetable_hook": UNTARGETABLE_HOOK}
 
 # ---------------------------------------------------------------- active_2
-## War-Omen — mark a target: the lower its health, the more damage it takes.
-func war_omen(target, target_hp_frac: float) -> Dictionary:
-	if target == null:
-		return {"marked": false}
-	var bonus := clampf((1.0 - target_hp_frac) * OMEN_MAX_BONUS, 0.0, OMEN_MAX_BONUS)
-	target.set_meta("war_omened", true)
-	target.set_meta("omen_timer", OMEN_DURATION)
-	target.set_meta("omen_hook", MARK_HOOK)
-	target.set_meta("omen_damage_mult", 1.0 + bonus)
-	return {"marked": true, "damage_mult": 1.0 + bonus,
-		"duration": OMEN_DURATION, "hp_frac": target_hp_frac}
+## War-Omen — mark the target: it takes more damage the lower its health.
+func war_omen(target) -> Dictionary:
+	if target == null: return {"marked": false}
+	target.set_meta("omenmarked", true)
+	target.set_meta("mark_hook", MARK_HOOK)
+	return {"marked": true}
+
+## Omen damage multiplier — 1.10 at full health, 1.60 near death.
+func omen_multiplier(target_hp_frac: float) -> float:
+	var frac := clampf(target_hp_frac, 0.0, 1.0)
+	return 1.0 + OMEN_MAX_BONUS - (OMEN_MAX_BONUS - OMEN_MIN_BONUS) * frac
 
 # ---------------------------------------------------------------- ultimate
-## The End of the Battle — she lands as a flock. Every marked enemy takes its
-## fate-damage immediately; those already fading are finished.
-func the_end_of_the_battle(origin: Vector3, enemies: Array) -> Dictionary:
-	var fated: Array[Dictionary] = []
-	var executed: Array[Dictionary] = []
+## The End of the Battle — lands as a flock: all marked enemies take
+## their fate-damage immediately.
+func the_end_of_the_battle(enemies: Array) -> Dictionary:
+	var struck: Array[Dictionary] = []
 	for e in enemies:
-		if e.get_meta("war_omened", false):
+		if e.get_meta("omenmarked", false):
 			var hp_frac: float = e.get_meta("hp_frac", 1.0)
-			var bonus: float = clampf((1.0 - hp_frac) * OMEN_MAX_BONUS, 0.0, OMEN_MAX_BONUS)
-			var fate: Dictionary = {"enemy": e, "fate_damage_mult": 1.0 + bonus,
-				"hp_frac": hp_frac}
-			if hp_frac <= FATE_EXECUTE_PCT:
-				e.set_meta("fated", true)
-				fate["executed"] = true
-				executed.append(fate)
-			else:
-				fated.append(fate)
-			e.set_meta("war_omened", false)
-	faith_gained.emit(8, "the battle ended")
-	return {"landed_as_flock": true, "fated": fated, "executed": executed}
+			var executed := hp_frac <= FATE_EXECUTE
+			struck.append({"enemy": e, "executed": executed,
+				"multiplier": omen_multiplier(hp_frac)})
+	return {"struck": struck}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "crowfall",
+	"active_2": "war_omen",
+	"ultimate": "the_end_of_the_battle",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["player_pos", "target_pos"],
+	"active_2": ["target"],
+	"ultimate": ["enemies"],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

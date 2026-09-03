@@ -58,3 +58,26 @@ func the_witness_shot(target, current_hp: float) -> Dictionary:
 	var kills: bool = current_hp <= WITNESS_SHOT_DMG
 	return {"fired": true, "damage": WITNESS_SHOT_DMG, "always_hits": true,
 		"kill": kills, "faith_restored": WITNESS_FAITH_SURGE if kills else 0.0}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "laurel_snare",
+	"active_2": "hunters_pace_hit",
+	"ultimate": "the_witness_shot",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["target"],
+	"active_2": [],
+	"ultimate": ["target"],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

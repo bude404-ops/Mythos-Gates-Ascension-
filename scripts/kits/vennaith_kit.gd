@@ -1,28 +1,20 @@
 extends Node
 ## Mythos Gates: Ascension — Vennaith, the Unbanked Flame (MG-DEITY-019)
-## Caster kit, MG-FACTION-005 (The Silverroot Kindred). DataLayer-driven (proven template).
-## Solo-first: Rekindle heals YOU (MG-BUFF-HEAL-SELF); all other effects are
-## enemy-facing. Every heal and buff in this kit is self-only.
-## Tap-to-move compatible: Cinderbind auto-roots the nearest cluster; the
-## Smelting wave rolls forward along your facing.
-
-signal faith_gained(amount: int, reason: String)
+## Caster kit, MG-FACTION-005 (Silverroot Kindred). DataLayer-driven (proven template).
+## Solo-first: heal is SELF-only; flame-root/melt/strip are enemy-facing.
 
 const DEITY_ID := "MG-DEITY-019"
+const SNARE_DEBUFF := "MG-DEBUFF-SNARE"
 const HEAL_HOOK := "MG-BUFF-HEAL-SELF"
-const SNARE_HOOK := "MG-DEBUFF-SNARE"
-const ARMOR_HOOK := "MG-DEBUFF-ARMOR-MELT"
-const STRIP_HOOK := "MG-DEBUFF-BUFF-STRIP"
+const MELT_DEBUFF := "MG-DEBUFF-ARMOR-MELT"
+const STRIP_DEBUFF := "MG-DEBUFF-BUFF-STRIP"
 
-# ---- Local tuning (numbers, never lore) ----
-const CINDER_RADIUS := 5.0          # flame-roots reach
-const CINDER_ROOT_TIME := 2.0       # seconds the roots hold
-const CINDER_BURN_TIME := 4.0       # the ember-glow lingers
-const REKINDLE_PCT := 0.35          # Rekindle restores 35% of YOUR max HP
-const SMELTING_RANGE := 14.0        # the forge-wave rolls this far
-const SMELTING_WIDTH := 6.0         # full width of the wave front
-const ARMOR_MELT := 0.40            # enemies lose 40% armor
-const MELT_TIME := 5.0              # seconds the melt holds
+# ---- Local tuning ----
+const CINDERBIND_RADIUS := 4.0
+const CINDERBIND_SNARE_TIME := 2.0
+const REKINDLE_HEAL := 0.30           # 30% max HP from the First Flame, SELF
+const SMELTING_MELT := 0.50           # -50% armor in the forge-fire wave
+const SMELTING_WAVE_RADIUS := 12.0
 
 var deity: Dictionary = {}
 var ability_db: Dictionary = {}
@@ -42,45 +34,56 @@ func _ready() -> void:
 		ability_db["ultimate"].get("name", "?")])
 
 # ---------------------------------------------------------------- active_1
-## Cinderbind — flame-roots seize enemies where they stand.
-func cinderbind(origin: Vector3, enemies: Array) -> Dictionary:
-	var caught: Array[Dictionary] = []
+## Cinderbind — the forge-flame takes root: enemies in the radius are rooted.
+func cinderbind(origin: Vector3, enemies: Array) -> Array:
+	var hits: Array[Dictionary] = []
 	for e in enemies:
-		var d := Vector2(e.position.x - origin.x, e.position.z - origin.z).length()
-		if d <= CINDER_RADIUS:
-			e.set_meta("cinderbound", true)
-			e.set_meta("root_timer", CINDER_ROOT_TIME)
-			e.set_meta("root_hook", SNARE_HOOK)
-			caught.append({"enemy": e, "root": CINDER_ROOT_TIME,
-				"burn": CINDER_BURN_TIME})
-	return {"radius": CINDER_RADIUS, "caught": caught}
+		if origin.distance_to(e.position) <= CINDERBIND_RADIUS:
+			e.set_meta("snared", true)
+			e.set_meta("snare_timer", CINDERBIND_SNARE_TIME)
+			e.set_meta("snare_hook", SNARE_DEBUFF)
+			hits.append(e)
+	return hits
 
 # ---------------------------------------------------------------- active_2
-## Rekindle — the First Flame was never let die; it mends YOU. SELF-ONLY.
-func rekindle(your_max_hp: float) -> Dictionary:
-	return {"heal_amount": your_max_hp * REKINDLE_PCT,
-		"heal_hook": HEAL_HOOK, "self_only": true}
+## Rekindle — the First Flame restores YOU. SELF-only.
+func rekindle(max_hp: float) -> Dictionary:
+	return {"heal": max_hp * REKINDLE_HEAL, "heal_hook": HEAL_HOOK}
 
 # ---------------------------------------------------------------- ultimate
-## The Smelting — a wave of forge-fire rolls forward: armor melts and every
-## enemy blessing is stripped to slag.
-func the_smelting(origin: Vector3, forward: Vector2, enemies: Array) -> Dictionary:
-	var f := forward.normalized()
-	var right := Vector2(-f.y, f.x)
-	var smelted: Array[Dictionary] = []
+## The Smelting — a forge-fire wave rolls out: armor melts, buffs strip away.
+func the_smelting(origin: Vector3, enemies: Array) -> Dictionary:
+	var affected: Array[Dictionary] = []
 	for e in enemies:
-		var rel := Vector2(e.position.x - origin.x, e.position.z - origin.z)
-		var along := rel.dot(f)
-		var across := rel.dot(right)
-		if along >= 0.0 and along <= SMELTING_RANGE \
-				and absf(across) <= SMELTING_WIDTH * 0.5:
-			e.set_meta("armor_melted", ARMOR_MELT)
-			e.set_meta("melt_timer", MELT_TIME)
-			e.set_meta("melt_hook", ARMOR_HOOK)
-			e.set_meta("buffs_stripped", true)
-			e.set_meta("strip_hook", STRIP_HOOK)
-			smelted.append({"enemy": e, "armor_melt": ARMOR_MELT,
-				"melt_time": MELT_TIME, "buffs_stripped": true})
-	faith_gained.emit(6, "the smelting rolled")
-	return {"range": SMELTING_RANGE, "width": SMELTING_WIDTH,
-		"smelted": smelted}
+		if origin.distance_to(e.position) <= SMELTING_WAVE_RADIUS:
+			e.set_meta("melt", SMELTING_MELT)
+			e.set_meta("melt_hook", MELT_DEBUFF)
+			var stripped := false
+			if e.has_meta("enemy_buff"):
+				e.set_meta("enemy_buff", {})
+				stripped = true
+			affected.append({"enemy": e, "melt": SMELTING_MELT, "stripped": stripped})
+	return {"radius": SMELTING_WAVE_RADIUS, "affected": affected}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "cinderbind",
+	"active_2": "rekindle",
+	"ultimate": "the_smelting",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["player_pos", "enemies"],
+	"active_2": ["max_hp"],
+	"ultimate": ["player_pos", "enemies"],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

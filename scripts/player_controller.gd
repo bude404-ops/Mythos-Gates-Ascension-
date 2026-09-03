@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
-# Player controller — works with both keyboard AND touch controls
-# WASD for desktop, virtual joystick for mobile
+# Player controller — MOBILE-FIRST: tap-to-move (no joystick).
+# Tap the ground and the deity walks there. WASD still works on desktop.
 
 @export var move_speed: float = 5.0
 @export var rotation_speed: float = 8.0
@@ -14,8 +14,9 @@ var move_vector: Vector2 = Vector2.ZERO
 var attack_triggered: bool = false
 var spellcast_triggered: bool = false
 
-# Touch input state
-var touch_move_vector: Vector2 = Vector2.ZERO
+# Tap-to-move state
+var move_target: Vector3 = Vector3.INF
+const ARRIVE_EPSILON := 0.3
 
 func _ready():
 	# Find AnimationPlayer in the GLB hierarchy
@@ -33,29 +34,26 @@ func _ready():
 		elif "idle" in anims:
 			animation_player.play("idle")
 	
-	# Move to dungeon spawn point
+	# Move to dungeon spawn point (null-safe: tests may not have current_scene)
 	var main = get_tree().current_scene
+	if main == null:
+		main = get_parent()
+	if main == null:
+		main = get_tree().root
 	var dungeon = main.get_node_or_null("Dungeon")
 	if dungeon and dungeon.has_method("get_spawn_point"):
 		var spawn = dungeon.get_spawn_point()
 		global_position = spawn
 		print("Player: Spawned at ", spawn)
 	
-	# Connect to touch controls if available
+	# Connect tap-to-move from touch controls
 	var touch_controls = main.get_node_or_null("TouchControls")
-	if touch_controls and touch_controls.has_signal("move_vector_changed"):
-		touch_controls.move_vector_changed.connect(_on_move_vector_changed)
-		touch_controls.attack_pressed.connect(_on_attack)
-		touch_controls.spellcast_pressed.connect(_on_spellcast)
+	if touch_controls and touch_controls.has_signal("tap_move"):
+		touch_controls.tap_move.connect(_on_tap_move)
 
-func _on_move_vector_changed(vec: Vector2):
-	touch_move_vector = vec
-
-func _on_attack():
-	attack_triggered = true
-
-func _on_spellcast():
-	spellcast_triggered = true
+## Tap on the ground: walk there. A new tap overrides the old target.
+func _on_tap_move(target: Vector3):
+	move_target = target
 
 func _physics_process(delta):
 	# Get input from keyboard OR touch
@@ -71,13 +69,21 @@ func _physics_process(delta):
 	if Input.is_action_pressed("move_right"):
 		input_dir.x += 1
 	
-	# Touch input overrides if active
-	if touch_move_vector.length() > 0.1:
-		input_dir = touch_move_vector
+	# Tap-to-move: walk straight to the tapped point, stop on arrival
+	var tap_dir: Vector3 = Vector3.ZERO
+	if move_target != Vector3.INF and is_finite(move_target.x):
+		var to_target: Vector3 = move_target - global_position
+		to_target.y = 0.0
+		if to_target.length() <= ARRIVE_EPSILON:
+			move_target = Vector3.INF
+		else:
+			tap_dir = to_target.normalized()
 	
 	# Normalize and apply
 	if input_dir.length() > 1.0:
 		input_dir = input_dir.normalized()
+	if tap_dir != Vector3.ZERO:
+		input_dir = Vector2.ZERO   # a tap target owns movement until arrival
 	
 	# Get camera-relative direction
 	var camera = get_viewport().get_camera_3d()
@@ -90,6 +96,8 @@ func _physics_process(delta):
 		right = right.normalized()
 		
 		var direction = (forward * -input_dir.y + right * input_dir.x)
+		if tap_dir != Vector3.ZERO:
+			direction = tap_dir
 		
 		if direction.length() > 0.1:
 			# Move the character
@@ -108,15 +116,15 @@ func _physics_process(delta):
 			velocity = Vector3.ZERO
 			if animation_player and current_anim != "Idle":
 				_play_animation("Idle")
-	else:
-		# Fallback without camera
+	elif input_dir.length() > 0.1:
+		# Fallback without camera (keyboard only)
 		velocity = Vector3(input_dir.x * move_speed, 0, input_dir.y * move_speed)
-		if input_dir.length() > 0.1:
-			if animation_player and current_anim != "Walk":
-				_play_animation("Walk")
-		else:
-			if animation_player and current_anim != "Idle":
-				_play_animation("Idle")
+		if animation_player and current_anim != "Walk":
+			_play_animation("Walk")
+	else:
+		velocity = Vector3.ZERO
+		if animation_player and current_anim != "Idle":
+			_play_animation("Idle")
 	
 	# Handle attack
 	if (Input.is_action_just_pressed("attack") or attack_triggered) and animation_player:

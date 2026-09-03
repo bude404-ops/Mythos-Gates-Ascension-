@@ -59,3 +59,27 @@ func the_perfect_plan(kills: int) -> Dictionary:
 	return {"duration": PLAN_DURATION, "crit_bonus": PLAN_CRIT,
 		"auto_target": true, "faith_restored": kills * PLAN_FAITH_PER_KILL,
 		"self_only": true}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "premise",
+	"active_2": "conclusion",
+	"ultimate": "the_perfect_plan",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["target"],
+	"active_2": ["player_pos",
+	"target"],
+	"ultimate": [],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

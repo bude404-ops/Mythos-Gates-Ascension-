@@ -35,7 +35,8 @@ func _ready() -> void:
 ## Threadstep — blink to the target's future position (predicted lead).
 func threadstep(target) -> Dictionary:
 	if target == null: return {"blinked": false}
-	var future: Vector3 = target.position + target.velocity * THREADSTEP_LEAD
+	var vel = target.get("velocity")   # CharacterBody3D has velocity; Node3D placeholder does not
+	var future: Vector3 = target.position + (vel if vel != null else Vector3.ZERO) * THREADSTEP_LEAD
 	return {"destination": future,
 		"blinked": future.length() > 0.0,
 		"max_range": THREADSTEP_RANGE}
@@ -66,3 +67,26 @@ func the_predetermined(marked_enemies: Array) -> Dictionary:
 	return {"duration": PREDETERMINED_DURATION,
 		"guaranteed_hits_on_marked": true,
 		"fated": marked_enemies.size()}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "threadstep",
+	"active_2": "unspool",
+	"ultimate": "the_predetermined",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["target"],
+	"active_2": ["target"],
+	"ultimate": ["enemies"],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

@@ -62,3 +62,26 @@ func champions_verdict(self_pos: Vector3, circle_center: Vector3) -> Dictionary:
 	return {"in_circle": in_circle, "undying": in_circle,
 		"hook": UNDYING_HOOK, "claimed_bonus": VERDICT_BONUS,
 		"has_claim": t != null, "radius": DUEL_RADIUS}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "duelists_claim",
+	"active_2": "flourish",
+	"ultimate": "champions_verdict",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["target", "target_pos"],
+	"active_2": [],
+	"ultimate": ["player_pos", "target_pos"],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

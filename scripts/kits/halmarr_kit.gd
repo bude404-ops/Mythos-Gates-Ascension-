@@ -76,3 +76,26 @@ func verdict_of_the_sky(enemies: Array) -> Dictionary:
 	biggest.set_meta("snare_timer", VERDICT_SNARE)
 	biggest.set_meta("snare_hook", SNARE_DEBUFF)
 	return {"condemned": biggest, "snare": VERDICT_SNARE}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "thunderstep",
+	"active_2": "oathguard",
+	"ultimate": "verdict_of_the_sky",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["player_pos", "facing", "enemies"],
+	"active_2": [],
+	"ultimate": ["enemies"],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

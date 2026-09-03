@@ -1,24 +1,20 @@
 extends Node
 ## Mythos Gates: Ascension — Mukage, the Unfinished (MG-DEITY-016)
-## Assassin kit, MG-FACTION-004 (The Thousand Torii). DataLayer-driven (proven template).
-## Solo-first: Spirit-Step grants Mukage a brief untouchable window (MG-BUFF-I-FRAME);
-## all other effects are enemy-facing. No ally heals/buffs anywhere in the kit.
-## Tap-to-move compatible: blink lands behind the nearest marked threat.
-
-signal faith_gained(amount: int, reason: String)
+## Assassin kit, MG-FACTION-004 (Thousand Torii). DataLayer-driven (proven template).
+## Solo-first: i-frames are SELF-only; armor melt is enemy-facing.
 
 const DEITY_ID := "MG-DEITY-016"
-const MARK_HOOK := "MG-BUFF-MARK"
-const IFRAME_HOOK := "MG-BUFF-I-FRAME"
+const IFRAME_BUFF := "MG-BUFF-I-FRAME"
+const MELT_DEBUFF := "MG-DEBUFF-ARMOR-MELT"
 
-# ---- Local tuning (numbers, never lore) ----
-const SPIRIT_STEP_RANGE := 14.0     # blink reach — through any terrain
-const IFRAME_WINDOW := 0.8          # seconds untouchable while crossing the boundary
-const UNMAKING_BONUS := 0.75        # +75% damage vs illusions / false reflections
-const THRESHOLD_RADIUS := 13.0      # The Threshold Closes reach
-const HALF_SPIRIT_DEF_SHRED := 1.0  # half-spirited enemies lose 100% of armor
-const HALF_SPIRIT_WINDOW := 5.0     # seconds they hang between body and spirit
-const HALF_SPIRIT_CRIT := 1.00      # your strikes land true: guaranteed crit window
+# ---- Local tuning ----
+const SPIRIT_STEP_RANGE := 12.0     # blink distance — walls do not argue
+const SPIRIT_IFRAMES := 0.5          # brief untargetability mid-crossing
+const UNMAKING_BONUS := 0.50         # +50% vs illusions and false reflections
+const THRESHOLD_SNARE_TIME := 1.0    # pulled halfway out — brief root
+const THRESHOLD_MELT := 0.60         # -60% defense while halfway out
+const THRESHOLD_DURATION := 4.0
+const THRESHOLD_LANDS_TRUE := true   # your strikes cannot miss them
 
 var deity: Dictionary = {}
 var ability_db: Dictionary = {}
@@ -38,44 +34,56 @@ func _ready() -> void:
 		ability_db["ultimate"].get("name", "?")])
 
 # ---------------------------------------------------------------- active_1
-## Spirit-Step — blink across the boundary, through terrain. Mukage is the
-## boundary; walls are merely lines she has already crossed.
-func spirit_step(origin: Vector3, target_pos: Vector3) -> Dictionary:
-	var d := Vector3(origin.x, 0, origin.z).distance_to(
-		Vector3(target_pos.x, 0, target_pos.z))
-	if d > SPIRIT_STEP_RANGE:
-		return {"blinked": false, "reason": "beyond the boundary's reach"}
-	return {"blinked": true, "destination": target_pos,
-		"through_walls": true, "iframes": IFRAME_WINDOW,
-		"iframe_hook": IFRAME_HOOK, "distance": d}
+## Spirit-Step — blink across the boundary, through terrain, untouchable.
+func spirit_step(from_pos: Vector3, to_pos: Vector3) -> Dictionary:
+	var dist := from_pos.distance_to(to_pos)
+	return {"blink": dist <= SPIRIT_STEP_RANGE, "distance": dist,
+		"iframes": SPIRIT_IFRAMES, "iframe_hook": IFRAME_BUFF}
 
 # ---------------------------------------------------------------- active_2
-## Unmaking Cut — the Boundary Blades were drawn to end false things.
-## Bonus damage against illusions and false reflections.
+## Unmaking Cut — the blade finishes what illusions left undone.
 func unmaking_cut(target) -> Dictionary:
-	if target == null: return {"bonus": 0.0}
-	var is_untrue := target.get_meta("is_illusion", false) or \
-		target.get_meta("is_false_reflection", false)
-	return {"bonus": UNMAKING_BONUS if is_untrue else 0.0, "untrue": is_untrue}
+	if target == null: return {"cut": false}
+	var vs_illusion: bool = target.get_meta("is_false_reflection", false) \
+		or target.get_meta("is_illusion", false)
+	return {"cut": true, "bonus": UNMAKING_BONUS if vs_illusion else 0.0,
+		"target_is_reflection": vs_illusion}
 
 # ---------------------------------------------------------------- ultimate
-## The Threshold Closes — the inverse of the boundary-thieves' move: marked
-## enemies are pulled halfway out of their bodies, defenseless. Your strikes
-## land true on half-spirited enemies.
-func the_threshold_closes(origin: Vector3, enemies: Array) -> Dictionary:
+## The Threshold Closes — marked enemies are pulled halfway out of their
+## bodies: defenseless, and your strikes land true.
+func the_threshold_closes(enemies: Array) -> Dictionary:
 	var caught: Array[Dictionary] = []
 	for e in enemies:
-		var d := Vector3(origin.x, 0, origin.z).distance_to(
-			Vector3(e.position.x, 0, e.position.z))
-		var is_marked: bool = e.get_meta("moonmarked", false) or e.get_meta("marked", false)
-		if d <= THRESHOLD_RADIUS:
-			e.set_meta("half_spirited", true)
-			e.set_meta("armor", 0)
-			e.set_meta("half_spirit_timer", HALF_SPIRIT_WINDOW)
-			caught.append({"enemy": e, "half_spirited": true,
-				"defense_shredded": HALF_SPIRIT_DEF_SHRED,
-				"guaranteed_crit": HALF_SPIRIT_CRIT,
-				"was_marked": is_marked})
-	faith_gained.emit(4, "the threshold closed")
-	return {"radius": THRESHOLD_RADIUS, "window": HALF_SPIRIT_WINDOW,
-		"caught": caught}
+		if e.get_meta("moonmarked", false) or e.get_meta("thresholdmarked", false):
+			e.set_meta("snared", true)
+			e.set_meta("snare_timer", THRESHOLD_SNARE_TIME)
+			e.set_meta("melt", THRESHOLD_MELT)
+			e.set_meta("melt_timer", THRESHOLD_DURATION)
+			e.set_meta("melt_hook", MELT_DEBUFF)
+			caught.append({"enemy": e, "defenseless": true})
+	return {"caught": caught, "strikes_land_true": THRESHOLD_LANDS_TRUE,
+		"duration": THRESHOLD_DURATION}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "spirit_step",
+	"active_2": "unmaking_cut",
+	"ultimate": "the_threshold_closes",
+}
+
+const SLOT_ARGS := {
+	"active_1": ["player_pos", "target_pos"],
+	"active_2": ["target"],
+	"ultimate": ["enemies"],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}

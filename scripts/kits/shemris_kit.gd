@@ -65,3 +65,26 @@ func mirage_volley() -> Dictionary:
 	var total := ULT_TRUE_SHOT_BASE + ULT_FALSE_SHOTS * ULT_FALSE_SHOT_DAMAGE
 	return {"false_shots": ULT_FALSE_SHOTS, "true_shot_damage": total,
 		"always_hits": BENT_LIGHT_ALWAYS_HITS}
+
+# ------------------------------------------------ uniform dispatch
+## Uniform dispatch for the combat loop. ctx keys:
+##   player_pos, target_pos, facing, enemies, target, max_hp
+const SLOT_FN := {
+	"active_1": "mirage_double",
+	"active_2": "bent_light_volley",
+	"ultimate": "mirage_volley",
+}
+
+const SLOT_ARGS := {
+	"active_1": [],
+	"active_2": [],
+	"ultimate": [],
+}
+
+func cast_slot(slot: String, ctx: Dictionary) -> Dictionary:
+	var fn: String = SLOT_FN.get(slot, "")
+	if fn.is_empty(): return {"cast": false, "why": "unknown slot"}
+	var args: Array = []
+	for k in SLOT_ARGS.get(slot, []):
+		args.append(ctx if k == "CTX" else ctx[k])
+	return {"cast": true, "slot": slot, "result": self.callv(fn, args)}
