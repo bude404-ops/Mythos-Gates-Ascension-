@@ -79,7 +79,8 @@ Reference embodiments: SOPHRONA v15/v16 (water gown + marble armor), F002 Norse 
 **BELIEF IS THE BINDING.** The element alone is raw and formless — belief is what binds it into a colossus.
 
 - **THE POWER LINE:** mortal faith flows to the Gate → through it into the realm → back out as the power that fills the armor. Visually: streams of prayer-light (soft gold-white) flowing from the world into the Gate, and from the Gate into the armor — the armor DRINKS belief.
-- **BELIEF = DENSITY.** The colossus's solidity IS its faith: FULL BELIEF = solid, blazing, complete elemental body. WANING BELIEF = flickering, translucent edges, gaps in the elemental mass. LOST BELIEF = armor standing empty, element guttering like a dying flame — a shrine, not a god.
+- **BELIEF = DENSITY.** The colossus's solidity IS its faith: FULL BELIEF = solid, blazing, complete elemental body. WANING BELIEF = flickering, translucent edges, gaps in the elemental mass. DYING = the element guttering like a failing flame inside the plate.
+- **DEATH STATE (BudE404 canon): when a colossus dies, the element dissipates COMPLETELY — all that remains is a PILE OF THE ANCIENT ARMOR ITSELF.** The armor collapses, lifeless, a heap of relic plate. No shrine-stance, no lingering glow — the god is simply gone, and the relic armor is all that's left. (The relics can be re-lit by belief — the armor is never destroyed, only emptied.)
 - **GAMEPLAY BRIDGE (ties to canonized FAITH resource):** kills feed the god; faith is the single combat resource; the visual density of the colossus is the faith meter. A low-faith colossus visibly thins. Belief is the health bar of the divine.
 
 **Failure modes:** stone body = missing elemental pillar; empty armor = missing belief/element; generic fire monster = armor lost its relic specificity; element without silhouette = armor not anchoring the form.
