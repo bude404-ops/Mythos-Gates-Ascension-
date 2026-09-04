@@ -37,3 +37,19 @@ Armor standard raised to: **extraordinary, legendary, the greatest armor ever fo
 - Weathering rule still applies: the ornate armor carries millennia patina — legendary but excavated from history, never polished-new
 
 Reference embodiment candidate: SOPHRONA v16 (pending verdict).
+
+## LIVING ELEMENTAL GARMENTS ADDENDUM (BudE404, Sept 4 2026 — doctrine v1.2)
+
+Each Colossal wears LIVING ELEMENTAL GARMENTS fused with its mythology. Robes, gowns, capes, mantles, sashes, and veils are physically composed of the Colossal's own element:
+- flowing fire, cascading water, swirling wind, living roots, floating stone, crystal ice, lightning, shadow, divine light
+- The elements MOVE LIKE LUXURIOUS FABRIC — draping, billowing, trailing — while remaining supernatural and powerful
+- Element is chosen per-deity from regional mythology and the deity's essence (F003 precedent: Sophrona = water, Therissa = sacred-hush mist; F002 precedent: Norse storm-cloud capes)
+- Fabric rule: NO mortal textile anywhere. What is not armor-flesh is elemental flow.
+
+## THE FOUR-LAYER COLOSSAL FORMULA (complete doctrine, v1.2)
+1. ANCIENT BODY — weathered regional material, millennia patina, carved/fused godflesh
+2. LEGENDARY ARMOR — greatest-ever-forged, fused/grown into the body, gemstones + engraved plates + towering crowns (v1.1)
+3. LIVING ELEMENTAL CLOTHING — element-as-fabric garments (this addendum)
+4. DIVINE PRESENCE — serene god-glow, lamp eyes, runes/symbols, worship-by-evidence, landscape domination, LOTR-film treatment
+
+Reference embodiments: SOPHRONA v15/v16 (water gown + marble armor), F002 Norse roster (storm-cloud capes), THERISSA (mist robes).
