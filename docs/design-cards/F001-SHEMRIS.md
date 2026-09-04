@@ -11,7 +11,7 @@ Shemris is the goddess of PRECISION — the shot loosed before the target knows 
 ## Body
 - Weathered golden desert sandstone, anatomy-fused (zero separate plates, ornament carved as relief into the stone skin, gold inlay linework WITHIN the stone)
 - Female colossus — sexy AND titanic: statuesque athletic goddess silhouette, long powerful legs, sculpted waist, proud posture; seductive in presence and styling but unmistakably divine and monumental in anatomy (never mortal softness, never humanized)
-- Proportions: tall and lean where Djekhur is broad — 10 heads tall, elongated elegance, arrow-straight spine
+- MASS PARITY (BudE404, v3 directive): female titans carry the SAME colossal presence and mass as the male colossi — nobody reads smaller. Femininity comes from SHAPE, not thinness: hourglass carved from mass (wide powerful shoulders, sculpted waist, wide hips, powerful thighs). About 10 heads tall
 - Weathered ancient patina, fine chiseled facets, cracks, gold-inlay linework
 - Grimdark activation: faint molten ember seams, exactly 3 sigils (heart-sigil largest, brow glyph, weapon glyph), tight lamp eyes (solid light, no pupils)
 
