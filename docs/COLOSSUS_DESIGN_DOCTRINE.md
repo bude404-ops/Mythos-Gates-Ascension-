@@ -94,7 +94,15 @@ Reference embodiments: SOPHRONA v15/v16 (water gown + marble armor), F002 Norse 
 1. **MATERIAL — AETHERIUM:** AETHERIUM — deep bronze-black relic-metal, ancient worn surface, pale gold inlay seam-linework. The inlay lies DARK until belief enters — then it lights along the seams. Same metal everywhere = same forge.
 - **THE PREMISE:** aetherium is what makes up matter — which is WHY it can hold the deities' raw elemental forms. Elemental power grips aetherium naturally (formless force holding onto the substance of form). The armor works because it is made of reality itself.
 2. **CONSTRUCTION — THE KEY-SEAM:** plates interlock with chevron tab-and-key joinery — no straps, no leather, no fabric anywhere. Plate keys into plate like impossible divine joinery. This seam language is the forge's signature, recognizable on every set.
-3. **SACRED ARCHITECTURE (the constant piece-set):** monumental RELIC CROWN (spire form) • vast COLLAR RING • pauldron monuments rising past the head • CHEST CAGE (the hollow lattice where the elemental core seats — every set has the seat) • relic belt • layered vambraces ending in closed relic gauntlets • towering greaves.
+3. **THE SACRED PIECE-SET (BudE404, Sept 4 2026):** exactly FIVE Aetherium relic pieces + the weapon:
+   - **HELM** (the relic head-piece; lamp-glow eyes burning beneath it)
+   - **CHEST PLATE** (carries the heart-rune sigil + the Gate-mark; the anchor of the whole binding)
+   - **GLOVES** (closed relic gauntlets — the element grips through them, and they grip the ancient weapon)
+   - **GROIN PIECE** (the relic guard-plate)
+   - **BOOTS** (towering relic greaves)
+   - **+ THE ANCIENT WEAPON RELIC** (one-of-one, function made solid, carried in the gauntlets)
+
+**THE EXPOSURE RULE:** the element IS the visible body everywhere the relics don't cover — arms, legs, torso flanks, neck, the face beneath the helm. The design's signature: god-stuff blazing between five dark relic pieces. Armor anchors; element expresses.
 4. **THE GATE-MARK:** one small abstract Gate glyph on the chest cage — pure geometry, no letters — indicating which Gate powers the set.
 
 ### PER-DEITY VARIATION (what differs):
