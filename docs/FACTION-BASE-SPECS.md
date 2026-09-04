@@ -34,7 +34,7 @@ CONFIRMED SIX-ELEMENT SYSTEM (BudE404, Sept 4 2026): Earth, Air, Water, Fire, Li
 
 | Faction | Element | Pantheon | Gate & Terrain | Roster (see docs/MYTHOS_CODEX.md) |
 |---------|---------|----------|---------------|--------|
-| F1 | FIRE | THE CINDERLANDS | The Cinder Gate — the Ashen Expanse | Vulkar, Sorvath, Veskara, Orzeth |
+| F1 | FIRE | THE CINDERLANDS | The Cinder Gate — the Ashen Expanse | Vharkar, Sorvath, Veskara, Orzeth |
 | F2 | AIR | THE SKYWILDS | The Skyrend Gate — the Frozen Reach | Thaelun, Yrdis, Naelis, Sylwen |
 | F3 | LIFE | THE EVERBLOOM | The Bloom Gate — the Sunlit Peaks | Velthar, Mirave, Corvan, Alvenne |
 | F4 | DEATH | THE STILL | The Dusk Gate — the Shrine Isles | Morvain, Uthrel, Senva, Ferran |
