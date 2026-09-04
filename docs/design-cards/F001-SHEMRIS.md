@@ -15,6 +15,11 @@ Shemris is the goddess of PRECISION — the shot loosed before the target knows 
 - Weathered ancient patina, fine chiseled facets, cracks, gold-inlay linework
 - Grimdark activation: faint molten ember seams, exactly 3 sigils (heart-sigil largest, brow glyph, weapon glyph), tight lamp eyes (solid light, no pupils)
 
+## Standing Female-Titan Laws (BudE404, v5)
+1. SIZE PARITY + FEMININE SHAPE (Warcraft female-hero logic): same size tier/height class/presence as male colossi; athletic toned feminine hourglass build. Not male bulk, not dainty.
+2. OVER-EXAGGERATED ARMOR IS UNISEX: female titans wear the SAME oversized armor language as the males — pauldrons dwarfing the head, heavy layered chest relief, monumental crowns. Feminine frame never means reduced armor.
+3. Hearts absolute-banned; sigils brutal angular storm-script, max 3.
+
 ## Invented Divine Iconography (no historical replicas)
 - FALCON-SWOOP PAULDRONS: shoulder masses carved as invented diving-falcon wing geometry — layered swoop-planes and feather-chevrons in her own invented geometry, NOT museum bird replicas
 - VEIL OF FEATHERS: her face-veil and back-cloak carved as cascading feather-forms in the same sandstone — hard-carved, never fabric
