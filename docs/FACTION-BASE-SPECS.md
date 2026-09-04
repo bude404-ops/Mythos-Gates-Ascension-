@@ -61,6 +61,16 @@ FACTION DNA — F004 JAPAN:
 
 (F005-F008: DNA defined at roster reveal.)
 
+### THE MASTER TITAN FORMULA (BudE404, Sept 4 2026) — every titan is a cross of three pillars
+
+Every deity = **COLOSSAL x ELEMENTAL x REGIONAL**. All three pillars at full strength in every roll:
+
+1. **COLOSSAL** — titanic monument scale: the Warcraft Grammar (pauldrons past the head, 10-heads-tall, armor mass, colossus-scaled weapons). The weight and mass of a living monument.
+2. **ELEMENTAL** — the deity's power manifest as a LIVING ELEMENT: solar fire, storm, water, sand, frost, shadow — visibly alive in and around the body (molten energy through seams, elemental garments, radiant presence, weather at their feet). Not decoration — the god IS partly manifest element. This is the pillar that makes them gods, not statues.
+3. **REGIONAL** — distinguishable to the region WITHOUT costume: the Faction DNA applied LIGHT (material palette + 2-3 form echoes per roll, never the full checklist). Enough that you know the pantheon at a glance, not enough to look like a museum piece.
+
+Failure diagnosis: generic fantasy = missing REGIONAL. Cluttered/cheesy = REGIONAL overloaded. Dead statue = missing ELEMENTAL. Too modest/human = missing COLOSSAL.
+
 ### The Override Rule
 **When in doubt, BIGGER.** If a roll reads "too sane", "too realistic", or "too mortal", the failure is always Layer 1 (Warcraft Grammar), never Layer 2 (faction words). Re-roll with the grammar harder, not the faction words changed.
 
