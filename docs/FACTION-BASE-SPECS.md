@@ -1,7 +1,7 @@
 # FACTION-BASE-SPECS — Body Archetype System (New Era)
 
 **Owner:** BudE404
-**Status:** DRAFT (awaiting verdict)
+**Status:** DECIDED — F001 LOCKED, NO RESTART (BudE404, Sept 4 2026)
 **Date:** Sept 4, 2026
 
 ---
@@ -123,11 +123,12 @@ Assessment of existing F001 locks against the new Egypt base words (Column / Sta
 | Shemris | F | Complete (3/3) | ✓ | Voluptuous hourglass, but her falcon-swoop pauldrons and vertical talon crown read columnar. Female-Titan Laws are the origin — she IS the female spec. |
 | Amekhet | F | Stage 1 v4 (verdict pending) | ⚠️ | Open verdict. Her coiled assassin stance is lower than columnar — but the night-bane veil crown rising tall and crossed vertical blades could carry the Column word. Verdict on v4 + possible v5 dial to enforce vertical line language in her stance. |
 
-### Recommendation
-F001 does NOT require a full redo. The locks are close to the Egypt base words. The work plan:
+### DECISION (BudE404, Sept 4 2026)
+**NO RESTART WITH F001.** The existing canons stand — the Egypt base words are reverse-engineered from them. F001 completes with Amekhet's pending stages only. The work plan:
 1. Lock Amekhet Stage 1 (with vertical-line emphasis if needed)
 2. Complete Amekhet through Stages 2 and 3
 3. After F001 is complete, run the F001 4-body subset against the matrix
 4. Any drift gets a targeted re-roll — not a full faction rebuild
+5. F002 onward: every new deity built on the FACTION-BASE-SPECS system from the start
 
 This respects the instinct (the system wasn't formalized when F001 was built, so there may be drift) while avoiding unnecessary rework on canons that already conform.
