@@ -26,18 +26,26 @@ The official style label for ALL generation prompts is **"stylized fantasy reali
 ### The Armor Invention Law (BudE404, Sept 4 2026)
 God-level armor is NEVER stacked blocks. At divine scale, armor abandons mortal construction logic entirely. Each deity's armor gets its own INVENTED CONSTRUCTION PHILOSOPHY — one of, or a fusion of: flowing liquid-stone plates frozen mid-motion; sweeping curved bands that wrap the body like arcs of the sun's path; flame-silhouette edges; gravity-defying floating segments held by divine power; interlocking wave-plates; crystal-grown extrusions; drapery-cast stone that flows like cloth; asymmetric monumental fins. Curves and sweeps over right angles. The armor should look IMPOSSIBLE to forge — the deity's own divine sculpture, not a blacksmith's stacking job.
 
-### THE FACTION DNA FORMULA (BudE404, Sept 4 2026) — how each faction stays unique, divine, original WITHOUT cheese
+### THE ELEMENTAL PANTHEON SYSTEM (BudE404, Sept 4 2026) — factions are born from the world's ELEMENTS, not referenced pantheons
 
-THE PROBLEM: banning replicas (no nemes, no real hieroglyphs) accidentally strips the cultural soul — results read generic fantasy. But copying artifacts directly reads cheesy costume-party. The solution is neither: don't copy WHAT a civilization made — copy HOW they made it.
+Since Mythos is our own invented world, factions are built on the main ELEMENTS OF THE WORLD — earth, wind, fire, water, life, death — not on any referenced mythology. Each faction IS an element: its Gate, its realm's terrain, its colossi, its armor philosophies, its weapon language, its glow color all express that element.
 
-THE THREE-LAYER CULTURAL DNA (defined per faction, BEFORE rolling):
-1. **MATERIAL PALETTE** — the civilization's actual material truth (Egypt: weathered golden sandstone, black granite, lapis blue, turquoise, polished gold inlay). Materials are never cheesy — they ARE the flavor.
-2. **FORM LANGUAGE** — the civilization's design grammar ABSTRACTED into shapes, not artifacts (Egypt: pyramidal tapers, obelisk spires, lotus-bud column curves, sun-disc geometry, broad flat trapezoids, colossal frontal symmetry, horizontal band rhythm). These shapes echo the culture in EVERY invented form without wearing a single artifact.
-3. **CRAFTMARKS** — the civilization's signature techniques executed on invented forms (Egypt: flat relief carving, incised linework, polished stone inlay, smooth monumental polish vs raw weathered stone contrast).
+PROPOSED 8-ELEMENT MAP (DRAFT — awaiting BudE404 verdict):
 
-THE WORDING RULE for every prompt: "INVENTED iconography, EXECUTED IN [material palette], BUILT FROM [form language], CARVED WITH [craftmarks]." Invention lives in the forms; culture lives in the materials/shapes/techniques.
+| Faction | Element | Gate & Terrain | Known Roster |
+|---------|---------|---------------|--------------|
+| F001 | FIRE | Sun Gate — the great desert | Khaveth (solar judgment), Djekhur, Shemris, Amekhet |
+| F002 | WIND | Storm Gate — the frozen fjord north | Halmarr (thunder), Vargrim, Estrith, Falwyn |
+| F003 | ? | Marble Gate — sunlit peaks | Thrasyles, Therissa, Aethrokles, Sophrona — candidates: LIFE or LIGHT |
+| F004 | ? | Vermilion Gate — shrine isles | Arashido, Yoruka, Hikarune, Mukage — candidates: DEATH/DUSK or SPIRIT |
+| F005 | WATER | ? | ? |
+| F006 | EARTH | ? | ? |
+| F007 | LIFE or DEATH | ? | ? |
+| F008 | open — candidates: LIGHT, SHADOW (ties to the Hollow lore), STORM, FROST, SPIRIT | ? | ? |
 
+Confirmed elements named by BudE404: earth, wind, fire, life, death (water implied as a main element). The full 8 list and the F003/F004 assignments are his call.
 
+ELEMENTAL DESIGN RULE: each element defines its pantheon's material palette (fire = sandstone/gold/molten; water = coral/pearl/abyssal stone; earth = granite/root-marble; wind = storm-cloud/rain-slate; life = bloom-stone/amber-sap; death = bone-pale stone/black-vein marble), its armor construction philosophies, its weapon languages, and its glow color. No two element pantheons share a material or glow.
 
 ### THE MASTER TITAN FORMULA (BudE404, Sept 4 2026) — every titan is a cross of three pillars
 
