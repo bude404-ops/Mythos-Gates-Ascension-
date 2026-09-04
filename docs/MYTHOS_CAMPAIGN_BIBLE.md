@@ -3,7 +3,7 @@
 **Owner:** BudE404
 **Built by:** BIGagent404 (commissioned Sept 4 2026)
 **Integrates:** Mythos Codex v2.1, Avatar Doctrine, Dual Vessel Doctrine, Weapon Chassis Law, Hollow Scope, Combat Spec, Female-Titan Laws, Human Aspect Realism Law
-**Status:** Draft for BudE404 verdict
+**Status:** CANON — v1.1 (all 8 verdict points approved Sept 4 2026)
 
 ---
 
@@ -149,16 +149,20 @@ Per the Hollow Scope, three tiers, mapped at BOTH scales:
 
 **LOCKED by existing canon:** world origin, Gates, Hollow origin, Avatar Doctrine, Dual Vessel, Weapon Chassis, Human Aspect Realism, Hollow 3-tier, FAITH resource, worship-by-evidence, avatar-death = silence until re-forged, 1M+1F per faction, kept F1 pair.
 
-**PROPOSED here (BudE404 verdict needed):**
-1. Player = the human aspect itself (vs. mortal champion bearing it).
-2. The Narrow Ways lore (why human vessels exist).
-3. Three-act story + the Forgotten as the Hollow's grudge.
-4. Act III ending choice (forgive vs. cauterize).
-5. The five-beat faction chapter rhythm.
-6. World boss thesis: dead faiths made flesh.
-7. F2–F6 kept-pair cut calls (Haeldir verdict also pending as Skywilds #1).
-8. Quest-type menu.
+**CANONIZED (Sept 4 2026, BudE404 — 'Approve yeah'):** All eight proposed points are LOCKED as canon:
+1. PLAYER = THE HUMAN ASPECT ITSELF — the deity in a small vessel; no mortal-champion intermediary.
+2. THE NARROW WAYS — human aspects exist because colossi cannot walk mortal spaces without turning faith into terror. Canon.
+3. THE FORGOTTEN'S MOTIVE — the Hollow is a GRUDGE: the trapped deity patiently breaking its cage. Canon endgame identity.
+4. THE ENDING CHOICE — Act III offers forgive-the-Forgotten vs. cauterize-the-wound (dual-ending design space open; final call at production of Act III).
+5. THE FIVE-BEAT CHAPTER RHYTHM — Narrow Entry → Fracture Hunts → Throwing of the Gate → Vow Quests → World Boss. Canon for all six factions.
+6. WORLD BOSS THESIS — every T3 is a DEAD FAITH made flesh. Canon across all factions.
+7. F2–F6 KEPT PAIRS LOCKED (1M+1F each): AIR Haeldir + Sylwen (Yrdis & Naeria = tree skins). LIFE Thevril + Miriath (Corvan & Alveth = tree skins). DEATH Morvain + Senvra (Ferran & Uthrel = tree skins). WATER Nerovax + Ilsarra (Maruvak & Thuveth = tree skins). EARTH Grothmar + Bergrun (Dolvarr & Rhovarr = tree skins).
+8. QUEST MENU — Faith Missions, Fracture Hunts, Vow Quests, Relic Salvage, Witness Missions, Aspect Trials. Canon content menu.
+
+**THE VESSEL CHOICE RULE (Sept 4 2026, BudE404 — LOCKED):**
+- IN-CAMPAIGN: the story dictates the vessel — chapter beats summon the colossal and walk the aspect per the five-beat rhythm.
+- BETWEEN CAMPAIGNS AND OUTSIDE CAMPAIGN (free-play): VESSEL IS PLAYER CHOICE — play the human aspect or the colossal avatar freely in the open world.
+- TOWER WAVES (new event mode, canon): a dedicated wave-defense event — the COLOSSAL avatar stands its ground at a Gate, shrine, or gate-town against escalating Hollow waves: T1 swarm floors scaling in density, T2 brute waves at milestones, a boss wave every 10th floor (T2 elite leads; every 30th floor a shard-flavored T3 duel floor). Rewards: FAITH + relic salvage + weapon-tree advancement. Repeatable, leaderboard-scored, the wave-siege gameplay formalized as a standalone event.
 
 ---
-
 *Companion docs: MYTHOS_CODEX.md (roster/doctrine law), COLOSSUS_COMBAT_SPEC.md (T1–T3 numbers), GAMEFEEL_TOP3_SPEC.md (weight/impact), FACTION-BASE-SPECS.md (art grammar).*
