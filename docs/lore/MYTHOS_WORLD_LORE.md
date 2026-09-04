@@ -53,3 +53,15 @@ Since the Gates moved the deities to their own realms, the **colossus has been t
 - **Faith/belief is structural**: losing belief weakens Gates and enables Hollow incursion. (Ties to FAITH single-resource combat spec — kills feed the god.)
 - Colossi are the deities' only presence in Mythos. They are self-grown through the Gates — never mortal-crafted.
 - The deities-walked age stays hidden/forgotten in-world — but its evidence is everywhere in the exaggerated architecture.
+
+## THE ORIGIN, DEEPENED (BudE404 canon, Sept 4 2026)
+
+1. The six elemental powers helped FORM Mythos — the world carries their fingerprints (god-shaped architecture is the standing evidence).
+2. Creation left a residue: THE HOLLOW — a VOID OF RAW UNFORMED ELEMENTAL POWER.
+3. The Hollow threatened to unmake the young world. The six TOGETHER imprisoned it. That imprisonment SAVED Mythos.
+4. But the act concentrated too much divine power inside the world — an imbalance Mythos could not hold. To keep balance, MYTHOS ITSELF EXPELLED THE SIX to their realm domains: ASHFALL (Fire), SKYREND (Air), EVERBLOOM (Life), DUSKMOURN (Death), MARENTH (Water), STONEHEART (Earth).
+5. Ages passed in exile. The six grew into their realms — and FORGOT the Hollow. Their imprisonment of it was built on combined vigilance, and vigilance faded with memory.
+6. The Gates: one per realm, standing in Mythos — the only bridge. Colossi are the six's only way back: vessels grown in exile, powered remotely from the realms. Mortal faith is the structural integrity of the bridge.
+7. The Hollow stirs where memory fails. Forgotten by its jailers, it tests the seams of its prison — the fracture in its Gate.
+
+KEY REFRAME: the deities were not expelled as punishment — they were expelled to KEEP BALANCE after the act that SAVED the world. The world owes them everything and cast them out anyway. Tragedy is structural.
