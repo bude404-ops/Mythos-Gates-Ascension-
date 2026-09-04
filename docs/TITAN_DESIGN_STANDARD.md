@@ -113,3 +113,10 @@ Faces remain readable/authentic to the culture, sculpted from the element itself
 
 ### Gate
 One sample per faction rolls first → BudE404 verdict → then faction re-roll. No mass re-roll without a KEEP on the sample.
+
+### F004 The Thousand Torii — CANON (Sept 3, 2026, KEEP)
+- GODFLESH: living sacred CYPRESS wood (torii cypress), grain flowing like water, weathered knots at joints, bark only at calves/forearms. Per-deity tint: Arashido storm-cypress, Yoruka moon-bleached pale, Hikarune sun-gold patina, Mukage bone-pale living side / translucent ghost-wood spirit side.
+- VEINS: ghostly SPIRIT-ENERGY drifting beneath the wood grain (NOT solid paint-cracks) — wispy translucent tendrils, wisps curling off grain splits and trailing from lamp eyes. Tints: vermilion / moon-silver / sun-gold / boundary vermilion (living side only).
+- HAIR: elemental per deity — storm-cloud (Arashido), moon-mist (Yoruka), woven sunlight (Hikarune), spirit-smoke from a needle-bound wood braid (Mukage).
+- ATTIRE: Japanese silhouettes (war robes, graded indigo vestments, kariginu + hakama, shroud-robes) in living elemental material (light-silk, woven mist, light-thread fabric, spirit-mist). Solid anchors small: vermilion lacquer, cypress gold, jade, bone, black lacquer.
+- WEAPONS (registry locked): Kazenagi naginata, Phase Bow, Sunwoven Mirror, Boundary Blades.
