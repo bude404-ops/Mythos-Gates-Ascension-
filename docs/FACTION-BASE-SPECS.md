@@ -23,6 +23,9 @@ The official style label for ALL generation prompts is **"stylized fantasy reali
 - NO copyrighted or trademarked IP names in any generation prompt, script, or code sent to generators — no "Warcraft", "WoW", "LOTR", "Diablo", "Dragon Ball" etc. Those references live in internal docs as inspiration notes ONLY; prompts describe the look in neutral descriptive language ("exaggerated heroic proportions, stylized fantasy realism, painterly cinematic film-realism").
 - The grammar below is described in our own words. The label on output: stylized fantasy realism.
 
+### The Armor Invention Law (BudE404, Sept 4 2026)
+God-level armor is NEVER stacked blocks. At divine scale, armor abandons mortal construction logic entirely. Each deity's armor gets its own INVENTED CONSTRUCTION PHILOSOPHY — one of, or a fusion of: flowing liquid-stone plates frozen mid-motion; sweeping curved bands that wrap the body like arcs of the sun's path; flame-silhouette edges; gravity-defying floating segments held by divine power; interlocking wave-plates; crystal-grown extrusions; drapery-cast stone that flows like cloth; asymmetric monumental fins. Curves and sweeps over right angles. The armor should look IMPOSSIBLE to forge — the deity's own divine sculpture, not a blacksmith's stacking job.
+
 ### The Override Rule
 **When in doubt, BIGGER.** If a roll reads "too sane", "too realistic", or "too mortal", the failure is always Layer 1 (Warcraft Grammar), never Layer 2 (faction words). Re-roll with the grammar harder, not the faction words changed.
 
