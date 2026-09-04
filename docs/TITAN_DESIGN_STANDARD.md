@@ -70,3 +70,7 @@ The full 8-titan roster (F001 + F002) is approved and promoted to art/approved/:
 - F001 LIVING GOLD FAMILY: Khaveth (polished gold, white-gold glow), Djekhur (scorched bronze, ember glow), Shemris (molten gold — benchmark), Amekhet (black jade, gold veins)
 - F002 LIVING SILVER FAMILY: Halmarr (storm-silver, lightning), Falwyn (dusk-silver, violet), Vargrim (ash-silver, rune-blue), Estrith (moonlit pearl, indigo)
 Only canonical versions exist in the repo. F003–F008 cultural design docs + concepts are the next art-phase deliverables.
+
+## SKIN & BUILD CLARIFICATIONS (Sept 3 2026, BudE404)
+- SKIN RULE: the living godflesh must READ IN-IMAGE — visible molten seams at joints and collarbones, rivers of inner light veining across chest/arms/thighs, inner glow radiating from within the flesh. Skin is god-muscle fused with liquid faction metal, visibly supernatural — never dull metal, never human skin, never a statue.
+- MALE BUILD RULE: male titans are NEVER thin/ascetic/gaunt. All males are powerfully muscled godlike mass. Differentiate males by gear, hair, pose, weight and presence — never by slimming the build.
