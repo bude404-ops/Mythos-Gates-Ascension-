@@ -11,7 +11,7 @@ Shemris is the goddess of PRECISION — the shot loosed before the target knows 
 ## Body
 - Weathered golden desert sandstone, anatomy-fused (zero separate plates, ornament carved as relief into the stone skin, gold inlay linework WITHIN the stone)
 - Female colossus — sexy AND titanic: statuesque athletic goddess silhouette, long powerful legs, sculpted waist, proud posture; seductive in presence and styling but unmistakably divine and monumental in anatomy (never mortal softness, never humanized)
-- MASS PARITY (BudE404, v3 directive): female titans carry the SAME colossal presence and mass as the male colossi — nobody reads smaller. Femininity comes from SHAPE, not thinness: hourglass carved from mass (wide powerful shoulders, sculpted waist, wide hips, powerful thighs). About 10 heads tall
+- SIZE PARITY, FEMININE SHAPE (BudE404, v4 directive — Warcraft female-hero logic): female titans stand in the SAME size tier as the males — same height class, same hero-scale presence, same scale anchors. But the BUILD stays feminine: athletic toned muscle, hourglass curves, sculpted waist, wide hips, powerful thighs, elegant power (think WoW female draenei next to the males). NOT male bulk, NOT slimmed-down daintiness — full size, feminine shape
 - Weathered ancient patina, fine chiseled facets, cracks, gold-inlay linework
 - Grimdark activation: faint molten ember seams, exactly 3 sigils (heart-sigil largest, brow glyph, weapon glyph), tight lamp eyes (solid light, no pupils)
 
