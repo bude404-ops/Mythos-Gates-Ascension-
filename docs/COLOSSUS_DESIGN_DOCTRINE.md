@@ -25,3 +25,15 @@ SOPHRONA v15 (F003-SOPHRONA-CANON.jpg) is the doctrine's reference embodiment.
 - "Armor worn as exaggerated god-layer over separate body" framing (pre-v13 era)
 - Visible-mortal scale anchors (failed twice — never again)
 - Tight temple-court backgrounds (replaced by landscape vistas)
+
+## ARMOR ESCALATION ADDENDUM (BudE404, Sept 4 2026 — same day, doctrine v1.1)
+
+Armor standard raised to: **extraordinary, legendary, the greatest armor ever forged for a god.**
+- Massive, ornate, highly detailed, unmistakably divine
+- Monumental shoulder pieces, intricate chest armor, TOWERING crowns
+- Engraved plates, flowing relics, inlaid GEMSTONES, glowing runes, mythical symbols
+- Epic Tolkien-level craftsmanship — ancient, majestic, supernatural, awe-inspiring
+- Armor appears partially CARVED INTO and GROWN FROM the Colossal's body (fusion rule held: never worn, never detachable)
+- Weathering rule still applies: the ornate armor carries millennia patina — legendary but excavated from history, never polished-new
+
+Reference embodiment candidate: SOPHRONA v16 (pending verdict).
