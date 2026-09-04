@@ -161,3 +161,7 @@ Per-realm particle/motion signature:
 - 🪨 EARTH: settling strata-mass, dust-fall edges, crystal growth at the joints, root-veins in the limbs
 - 🌱 LIFE: blooming/petaling surface, drifting seeds and petals, vine-flow muscle lines, sap-glow pulse
 - 💀 DEATH: pouring shadow-smoke, ash-fall edges, cold violet ghost-light, unnerving stillness that only moves when it must
+
+
+## BELIEF BINDING — LORE ONLY (BudE404, Sept 4 2026)
+Faith/belief still FUELS the colossi in lore (belief is the pulse — it lights the sigils, feeds the element, holds the forms). But the prayer-light STREAMS feeding into the colossus are NEVER DEPICTED IN IMAGES. No visible belief streams, no prayer-light flowing in from above, no worship-tether visuals. The gods simply ARE — powered, blazing, alive. The faith system stays invisible in concept art.
