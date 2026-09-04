@@ -120,3 +120,17 @@ THE SIX SIGILS (pure abstract geometry — no letters, no real-culture forms):
 - 💀 THE STILL — THE DESCENDING: a thin inverted triangle over a single still horizontal line. Glows pale violet.
 
 **READING RULE:** shared forge style (aetherium, key-seams, sacred grammar) tells you the AGE the armor came from. The sigil runes glowing in the element's color tell you WHICH REALM's god wears it. Style = era, sigil = faction, silhouette + weapon = the individual deity.
+
+
+## AETHERIUM RESONANCE (BudE404, Sept 4 2026) — each faction affects the aetherium in its own elemental manner
+
+**The element doesn't just fill the armor — it AFFECTS the aetherium itself.** Each realm's element transforms the relic plate in its own manner, BUT the aetherium keeps its primal form and CONTAINS the colossus's shape. The element is the expression; the aetherium is still the structure.
+
+- 🔥 FIRE — MOLTEN RESONANCE: the aetherium runs ember-hot — hairline molten seams, heat-warped edges, plates glowing deep orange where the fire presses hardest. The relic reads like it just came out of the forge's heart.
+- 💨 AIR — STORM RESONANCE: static-charged etching, frost-lightning veins, plates humming with wind-sound, edges scoured by aeons of gale.
+- 🌊 WATER — TIDE RESONANCE: deep-water patina, pressure-marks like depth-lines, mineral crust and pearl-scale where the tide clings, slow drips that never fall.
+- 🪨 EARTH — STRATA RESONANCE: crystal growth through the plates, strata-bands of new stone, root-gold veining — the earth slowly reclaiming the relic into the mountain.
+- 🌱 LIFE — BLOOM RESONANCE: blooming patina, gold sap-glow in the seams, living growth taking root on the plate edges — the armor half garden, half relic.
+- 💀 DEATH — STILL RESONANCE: pale frost-stillness, void-patina darkening, the plates cold and silent, ghost-light seams — the relic at rest, holding a quiet that unnerves.
+
+**THE RULE (BudE404's line): the faction's element affects the aetherium in its own manner — but the aetherium STAYS PRIMAL IN FORM and CONTAINS THEIR SHAPE.** Resonance changes the surface, the glow, the texture — never the silhouette, never the sacred architecture, never the colossus's form. Expression without deformation.
