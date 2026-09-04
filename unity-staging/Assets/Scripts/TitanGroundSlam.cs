@@ -1,54 +1,116 @@
+using System.Collections;
 using UnityEngine;
-// TitanGroundSlam — windup, slam, expanding ring, crack decals, ant-launching displacement
-public class TitanGroundSlam : MonoBehaviour {
-    public TitanCamera cameraPivot;
-    public Transform ringMesh;           // scaled 0->18m, faction-glow material
-    public GameObject crackDecalPrefab;  // radiating ground cracks
-    private bool _slamming;
 
-    public void Slam() {
-        if (_slamming) return;
-        StartCoroutine(_SlamRoutine());
-    }
-    System.Collections.IEnumerator _SlamRoutine() {
-        _slamming = true;
-        // --- WINDUP: pull back + FOV open ---
-        cameraPivot.PullBack(GameFeelConstants.SLAM_WINDUP_PULLBACK_M, GameFeelConstants.SLAM_WINDUP_FOV_ADD, GameFeelConstants.SLAM_WINDUP_S);
-        yield return new WaitForSeconds(GameFeelConstants.SLAM_WINDUP_S);
+namespace MythosGates.GameFeel
+{
+    /// <summary>Ground-slam shockwave: windup, expanding ring, cracks, radial displacement.
+    /// Mirror of scripts/gamefeel/titan_groundslam.gd. Displaces — never kills at range;
+    /// the titan's follow-up swing does the killing. Impact &gt; damage.</summary>
+    public class TitanGroundSlam : MonoBehaviour
+    {
+        public TitanCamera titanCamera;
+        public LayerMask enemyMask;
+        public GameObject ringPrefab;          // faction-glow expanding ring quad/torus
+        public GameObject crackDecalPrefab;    // radiating crack decals
+        [Range(1, 2)] public int faction = 2;
+        private bool _slamming;
 
-        // --- IMPACT ---
-        cameraPivot.AddTrauma(GameFeelConstants.SLAM_TRAUMA);
-        ringMesh.gameObject.SetActive(true);
-        Vector3 startScale = Vector3.one * 0.01f;
-        Vector3 endScale = Vector3.one * GameFeelConstants.SLAM_RING_RADIUS_M;
-        for (float t = 0; t < GameFeelConstants.SLAM_RING_EXPAND_S; t += Time.deltaTime) {
-            ringMesh.localScale = Vector3.Lerp(startScale, endScale, t / GameFeelConstants.SLAM_RING_EXPAND_S);
-            yield return null;
-        }
-        ringMesh.gameObject.SetActive(false);
-
-        // --- CRACK DECALS: 6-10 radiating, 20deg jitter ---
-        int cracks = Random.Range(6, 11);
-        for (int i = 0; i < cracks; i++) {
-            var c = Instantiate(crackDecalPrefab, transform.position,
-                Quaternion.Euler(0f, (360f / 10f) * i + Random.Range(-20f, 20f), 0f));
+        public void TriggerSlam()
+        {
+            if (!_slamming) StartCoroutine(SlamRoutine());
         }
 
-        // --- DISPLACEMENT: stagger + launch, no range kills (Impact > damage) ---
-        foreach (var body in GameObject.FindGameObjectsWithTag("Enemy")) {
-            float d = Vector3.Distance(transform.position, body.transform.position);
-            if (d > GameFeelConstants.SLAM_RING_RADIUS_M) continue;
-            float falloff = 1f - d / GameFeelConstants.SLAM_RING_RADIUS_M;
-            Vector3 dir = (body.transform.position - transform.position).normalized;
-            body.SendMessage("Stagger", (dir, falloff), SendMessageOptions.DontRequireReceiver);
-            if (d < GameFeelConstants.SLAM_LAUNCH_AIRBORNE_M)
-                body.SendMessage("RagdollLaunch", (dir, falloff), SendMessageOptions.DontRequireReceiver);   // ants fly
+        IEnumerator SlamRoutine()
+        {
+            _slamming = true;
+
+            // --- WINDUP: 0.45 s, camera pulls back 1.5 m + FOV +4° ---
+            float t = 0f;
+            Vector3 camStart = titanCamera.cam.transform.position;
+            while (t < GameFeelConstants.WindupSeconds)
+            {
+                t += Time.deltaTime;
+                titanCamera.cam.transform.position = Vector3.Lerp(camStart,
+                    camStart - transform.forward * GameFeelConstants.WindupCamPullbackM,
+                    t / GameFeelConstants.WindupSeconds);
+                yield return null;
+            }
+
+            Vector3 impact = transform.position - transform.forward * 2f;
+            Impact(impact);
+            _slamming = false;
         }
-        #if UNITY_ANDROID || UNITY_IOS
-        Handheld.Vibrate();
-        yield return new WaitForSeconds(0.12f);
-        Handheld.Vibrate();
-        #endif
-        _slamming = false;
+
+        void Impact(Vector3 at)
+        {
+            titanCamera.AddTrauma(GameFeelConstants.SlamTrauma);  // biggest shake in the game
+            StartCoroutine(SpawnRing(at));
+            SpawnCracks(at);
+            DisplaceEnemies(at);
+
+            if (Application.isMobilePlatform)
+            {
+                Handheld.Vibrate();
+                StartCoroutine(DoubleTapHaptic());
+            }
+        }
+
+        IEnumerator DoubleTapHaptic()
+        {
+            yield return new WaitForSeconds(0.08f);
+            Handheld.Vibrate();
+        }
+
+        IEnumerator SpawnRing(Vector3 at)
+        {
+            var ring = Instantiate(ringPrefab, at, Quaternion.identity);
+            float t = 0f;
+            while (t < GameFeelConstants.RingExpandSeconds)
+            {
+                t += Time.deltaTime;
+                float r = Mathf.Lerp(0f, GameFeelConstants.RingMaxRadiusM,
+                                     t / GameFeelConstants.RingExpandSeconds);
+                ring.transform.localScale = new Vector3(r, 1f, r);
+                yield return null;
+            }
+            Destroy(ring, 0.15f);
+        }
+
+        void SpawnCracks()
+        {
+            SpawnCracks(transform.position - transform.forward * 2f);
+        }
+
+        void SpawnCracks(Vector3 at)
+        {
+            int n = Random.Range(6, 11);                       // 6–10 cracks, 20° jitter
+            for (int i = 0; i < n; i++)
+            {
+                float ang = (360f * i / n) + Random.Range(-20f, 20f);
+                var d = Instantiate(crackDecalPrefab, at, Quaternion.Euler(0f, ang, 0f));
+                d.transform.position += new Vector3(Mathf.Cos(ang * Mathf.Deg2Rad), 0f,
+                    Mathf.Sin(ang * Mathf.Deg2Rad)) * Random.Range(3f, 6f);
+                Destroy(d, 6f);                                 // cracks linger, then go
+            }
+        }
+
+        void DisplaceEnemies(Vector3 at)
+        {
+            // force ∝ (1 − dist/18 m); low-weight enemies airborne at dist < 6 m — ants fly
+            Collider[] hits = Physics.OverlapSphere(at, GameFeelConstants.RingMaxRadiusM, enemyMask);
+            foreach (var hit in hits)
+            {
+                var rb = hit.attachedRigidbody;
+                if (rb == null) continue;
+                Vector3 offset = rb.position - at;
+                float dist = offset.magnitude;
+                if (dist > GameFeelConstants.RingMaxRadiusM) continue;
+                float scale = 1f - dist / GameFeelConstants.RingMaxRadiusM;
+                Vector3 impulse = offset.normalized * scale * 12f;
+                if (dist < GameFeelConstants.LaunchAirborneDistM)
+                    impulse += Vector3.up * scale * 8f;
+                rb.AddForce(impulse, ForceMode.Impulse);
+            }
+        }
     }
 }

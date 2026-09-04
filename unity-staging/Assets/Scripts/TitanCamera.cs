@@ -1,63 +1,85 @@
 using UnityEngine;
-// TitanCamera — low titan camera + trauma shake (Unity mirror of titan_camera.gd)
-// Attach to the camera pivot; assign camera + target (the titan root).
-public class TitanCamera : MonoBehaviour {
-    public Camera cam;
-    public Transform target;
-    private float _trauma;
-    private float _noiseT;
-    private float _baseFov;
 
-    void Start() { _baseFov = GameFeelConstants.CAM_FOV; if (cam) cam.fieldOfView = _baseFov; }
+namespace MythosGates.GameFeel
+{
+    /// <summary>Trauma-based camera shake + LOW TITAN CAMERA (mortal eye height).
+    /// Mirror of scripts/gamefeel/titan_camera.gd. Attach to the player titan prefab.</summary>
+    public class TitanCamera : MonoBehaviour
+    {
+        public Camera cam;
 
-    public void AddTrauma(float amount) { _trauma = Mathf.Clamp(_trauma + amount, 0f, 1f); }
+        private float _trauma;
+        private float _traumaPending;
+        private float _traumaTimer;
+        private float _t;
+        private float _sprintFov;
 
-    public void PullBack(float meters, float fovAdd, float seconds) {
-        StartCoroutine(_PullBackRoutine(meters, fovAdd, seconds));
-    }
-    System.Collections.IEnumerator _PullBackRoutine(float meters, float fovAdd, float seconds) {
-        var startPos = transform.localPosition;
-        var endPos = startPos - Vector3.forward * meters;
-        float startFov = cam.fieldOfView, endFov = startFov + fovAdd;
-        for (float t = 0; t < seconds; t += Time.deltaTime) {
-            float k = t / seconds;
-            transform.localPosition = Vector3.Lerp(startPos, endPos, k);
-            cam.fieldOfView = Mathf.Lerp(startFov, endFov, k);
-            yield return null;
+        void Awake()
+        {
+            if (cam == null) cam = Camera.main;
         }
-    }
 
-    public void SetSprinting(bool active) {
-        StopAllCoroutines();
-        StartCoroutine(_FovRoutine(active ? _baseFov + GameFeelConstants.SPRINT_FOV_ADD : _baseFov));
-    }
-    System.Collections.IEnumerator _FovRoutine(float targetFov) {
-        float start = cam.fieldOfView;
-        for (float t = 0; t < GameFeelConstants.SPRINT_FOV_TIME_S; t += Time.deltaTime) {
-            cam.fieldOfView = Mathf.Lerp(start, targetFov, t / GameFeelConstants.SPRINT_FOV_TIME_S);
-            yield return null;
+        public void AddTrauma(float amount)
+        {
+            _traumaPending = Mathf.Clamp01(_trauma + amount);
+            _traumaTimer = GameFeelConstants.ImpactDelayMs / 1000f; // sound leads the camera
         }
-    }
 
-    void FixedUpdate() {
-        _trauma = Mathf.Max(_trauma - GameFeelConstants.TRAUMA_DECAY * Time.fixedDeltaTime, 0f);
-        _noiseT += Time.fixedDeltaTime * 30f;
-        if (!target || !cam) return;
+        public void SetSprinting(bool active)
+        {
+            StartCoroutine(FovTween(active ? GameFeelConstants.SprintFovAdd : 0f,
+                                    GameFeelConstants.SprintFovTime));
+        }
 
-        // --- LOW TITAN CAMERA (eye NEVER above the knee) ---
-        Vector3 back = -target.forward.normalized;
-        Vector3 camPos = target.position + back * GameFeelConstants.CAM_DISTANCE_M;
-        camPos.y = target.position.y + GameFeelConstants.CAM_HEIGHT_M;
-        transform.position = Vector3.Lerp(transform.position, camPos, 10f * Time.fixedDeltaTime);
-        transform.LookAt(target.position + Vector3.up * 6f);
-        transform.Rotate(Vector3.right, GameFeelConstants.CAM_BASE_PITCH_DEG);   // +8 up-tilt
+        System.Collections.IEnumerator FovTween(float target, float dur)
+        {
+            float start = _sprintFov, e = 0f;
+            while (e < dur)
+            {
+                e += Time.deltaTime;
+                _sprintFov = Mathf.Lerp(start, target, e / dur);
+                yield return null;
+            }
+            _sprintFov = target;
+        }
 
-        // --- TRAUMA SHAKE (power = trauma^2) ---
-        float shake = _trauma * _trauma;
-        float ox = Mathf.PerlinNoise(_noiseT, 0f) * 2f - 1f;
-        float oy = Mathf.PerlinNoise(0f, _noiseT) * 2f - 1f;
-        float roll = (Mathf.PerlinNoise(_noiseT, _noiseT) * 2f - 1f) * GameFeelConstants.SHAKE_MAX_ROLL_DEG * Mathf.Deg2Rad * shake;
-        cam.transform.localPosition = new Vector3(ox * GameFeelConstants.SHAKE_MAX_OFFSET * shake, oy * GameFeelConstants.SHAKE_MAX_OFFSET * shake, 0f);
-        cam.transform.localRotation = Quaternion.Euler(0f, 0f, roll);
+        void LateUpdate()
+        {
+            _t += Time.deltaTime;
+
+            if (_traumaPending > 0f)
+            {
+                _traumaTimer -= Time.deltaTime;
+                if (_traumaTimer <= 0f) { _trauma = _traumaPending; _traumaPending = 0f; }
+            }
+            _trauma = Mathf.Max(0f, _trauma - GameFeelConstants.TraumaDecayPerSecond * Time.deltaTime);
+
+            // --- LOW CAM: mortal eye height, never above the titan's knee ---
+            Vector3 back = -transform.forward;
+            Vector3 anchor = transform.position + back * GameFeelConstants.CamDistance;
+            anchor.y = GroundY(anchor) + GameFeelConstants.CamHeightMortal;
+            cam.transform.position = Vector3.Lerp(cam.transform.position, anchor, 10f * Time.deltaTime);
+
+            // --- TRAUMA SHAKE: offset ∝ trauma², Perlin-driven ---
+            float pow = _trauma * _trauma;
+            float ox = Mathf.PerlinNoise(_t * 12f, 0f) * 2f - 1f;
+            float oy = Mathf.PerlinNoise(0f, _t * 12f + 100f) * 2f - 1f;
+            float roll = (Mathf.PerlinNoise(_t * 12f + 200f, 0f) * 2f - 1f)
+                         * GameFeelConstants.ShakeMaxRollDeg * pow;
+            cam.transform.position += new Vector3(ox, oy, 0f) * GameFeelConstants.ShakeMaxOffsetM * pow;
+            cam.transform.rotation = Quaternion.Euler(
+                -GameFeelConstants.PitchBaseDeg, transform.eulerAngles.y, roll);
+
+            float fov = GameFeelConstants.FovBase + _sprintFov;
+            cam.fieldOfView = fov;
+        }
+
+        float GroundY(Vector3 pos)
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(pos + Vector3.up * 50f, Vector3.down, out hit, 250f))
+                return hit.point.y;
+            return 0f;
+        }
     }
 }

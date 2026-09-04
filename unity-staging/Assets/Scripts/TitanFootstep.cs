@@ -1,36 +1,53 @@
 using UnityEngine;
-// TitanFootstep — footstep weight: crack+bass at contact, dust burst, 40ms-delayed trauma
-public class TitanFootstep : MonoBehaviour {
-    public TitanCamera cameraPivot;
-    public ParticleSystem dust;          // ring-burst at contact
-    public AudioSource bass;             // sub-bass layer
-    public AudioSource crack;           // footfall crack layer
 
-    public void FootDown(bool charging = false) {
-        // 1) audio at CONTACT frame
-        crack.Play();
-        bass.pitch = GameFeelConstants.BASS_START_HZ / 70f;
-        bass.Play();
-        StartCoroutine(_BassFallRoutine());  // 70->40 Hz pitch fall
+namespace MythosGates.GameFeel
+{
+    /// <summary>Footstep weight: shake + dust burst + falling bass thump.
+    /// Mirror of scripts/gamefeel/titan_footstep.gd. Call FootContact() from the walk
+    /// animation's foot-plant keyframe (Animation Event).</summary>
+    public class TitanFootstep : MonoBehaviour
+    {
+        public TitanCamera titanCamera;
+        public ParticleSystem dustPrefab;      // ring-burst emitter, faction-colored
+        public AudioSource bassThump;          // 70->40 Hz falling sub-bass, -6 dB
+        [Range(1, 2)] public int faction = 1;  // 1 = F001 sandstone, 2 = F002 granite
+        public bool charging;
 
-        // 2) dust ring-burst
-        if (dust) { dust.Emit(Random.Range(GameFeelConstants.FOOTSTEP_DUST_MIN, GameFeelConstants.FOOTSTEP_DUST_MAX + 1)); }
+        public void FootContact(Vector3 footWorldPos)
+        {
+            if (titanCamera != null)
+                titanCamera.AddTrauma(charging ? GameFeelConstants.ChargeTrauma
+                                              : GameFeelConstants.WalkTrauma);
 
-        // 3) camera trauma peaks 40 ms AFTER contact
-        float trauma = charging ? GameFeelConstants.FOOTSTEP_TRAUMA_CHARGE : GameFeelConstants.TRAUMA_DECAY > 0 ? GameFeelConstants.FOOTSTEP_TRAUMA_WALK : 0f;
-        StartCoroutine(_DelayedTraumaRoutine(trauma));
+            BurstDust(footWorldPos);
+            if (bassThump != null) bassThump.Play();
 
-        // 4) mobile haptic
-        #if UNITY_ANDROID || UNITY_IOS
-        Handheld.Vibrate();
-        #endif
-    }
-    System.Collections.IEnumerator _BassFallRoutine() {
-        float start = bass.pitch, end = GameFeelConstants.BASS_END_HZ / 70f;
-        for (float t = 0; t < 0.18f; t += Time.deltaTime) { bass.pitch = Mathf.Lerp(start, end, t / 0.18f); yield return null; }
-    }
-    System.Collections.IEnumerator _DelayedTraumaRoutine(float trauma) {
-        yield return new WaitForSeconds(GameFeelConstants.FOOTSTEP_IMPACT_DELAY_S);
-        cameraPivot.AddTrauma(trauma);
+            if (Application.isMobilePlatform)
+                Handheld.Vibrate();  // 25 ms class; map to medium impact via NI API
+        }
+
+        void BurstDust(Vector3 at)
+        {
+            if (dustPrefab == null) return;
+            int count = Random.Range(GameFeelConstants.DustParticlesMin,
+                                     GameFeelConstants.DustParticlesMax + 1);
+            var ps = Instantiate(dustPrefab, at + Vector3.up * 0.05f, Quaternion.identity);
+            var main = ps.main;
+            main.startLifetime = new ParticleSystem.MinMaxCurve(
+                GameFeelConstants.DustLifetimeMin, GameFeelConstants.DustLifetimeMax);
+            var colMod = ps.colorOverLifetime;
+            colMod.enabled = true;
+            // F001 = warm sandstone tan, F002 = cold grey granite (spec section 1)
+            Color baseCol = faction == 1 ? new Color(0.78f, 0.66f, 0.47f)
+                                         : new Color(0.55f, 0.58f, 0.63f);
+            var grad = new Gradient();
+            grad.SetKeys(
+                new[] { new GradientColorKey(baseCol, 0f), new GradientColorKey(baseCol, 1f) },
+                new[] { new GradientAlphaKey(0.9f, 0f), new GradientAlphaKey(0.5f, 0.4f),
+                         new GradientAlphaKey(0f, 1f) });
+            colMod.color = new ParticleSystem.MinMaxGradient(grad);
+            ps.Emit(count);
+            Destroy(ps.gameObject, GameFeelConstants.DustLifetimeMax + 0.5f);
+        }
     }
 }

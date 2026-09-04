@@ -1,53 +1,129 @@
+## TitanGroundSlam — SHOCKWAVE: windup, expanding ring, cracks, displacement (Godot 4.x)
+## Spec: docs/GAMEFEEL_TOP3_SPEC.md — section 2.
+## Attach to the titan. Wire TitanCamera sibling (auto-found) + enemy group name.
 extends Node3D
-## TitanGroundSlam — windup, slam, expanding shockwave ring, crack decals, ant-launching
-## Attach under the titan; assign camera_pivot, ring_mesh (MeshInstance3D w/ shockwave
-## shader), crack_scene (PackedScene decal), area (Area3D for enemy overlap).
 
-@export var camera_pivot: Node3D
-@export var ring_mesh: MeshInstance3D
-@export var crack_scene: PackedScene
-@export var constants: Node
+@export var enemy_group: StringName = &"enemies"
+@export var ring_color_f001 := Color(1.0, 0.82, 0.35)  # warm gold (F001 glow)
+@export var ring_color_f002 := Color(0.45, 0.75, 1.0)  # ice-blue (F002 glow)
+@export var current_faction := 2
 
+const WINDUP_S := 0.45
+const WINDUP_CAM_PULLBACK_M := 1.5
+const WINDUP_FOV_ADD := 4.0
+const RING_MAX_RADIUS_M := 18.0
+const RING_EXPAND_S := 0.7
+const CRACK_COUNT_MIN := 6
+const CRACK_COUNT_MAX := 10
+const CRACK_ANGLE_JITTER_DEG := 20.0
+const SLAM_TRAUMA := 0.65
+const LAUNCH_AIRBORNE_DIST_M := 6.0
+const PULSE_MS := 40
+
+var _camera: Node
 var _slamming := false
 
-func slam() -> void:
-    if _slamming: return
-    _slamming = true
-    # --- WINDUP: camera pulls back + FOV opens (dread beat) ---
-    camera_pivot.pull_back(constants.SLAM_WINDUP_PULLBACK_M, constants.SLAM_WINDUP_FOV_ADD, constants.SLAM_WINDUP_S)
-    await get_tree().create_timer(constants.SLAM_WINDUP_S).timeout
+func _ready() -> void:
+	_camera = get_node_or_null("../TitanCamera")
 
-    # --- IMPACT ---
-    camera_pivot.add_trauma(constants.SLAM_TRAUMA)
-    ring_mesh.scale = Vector3.ONE * 0.01
-    ring_mesh.visible = true
-    var tween := create_tween().set_parallel(true)
-    tween.tween_property(ring_mesh, "scale", Vector3.ONE * constants.SLAM_RING_RADIUS_M, constants.SLAM_RING_EXPAND_S)
-    tween.tween_property(ring_mesh.get_active_material(0), "shader_parameter/albedo_alpha", 0.0, constants.SLAM_RING_EXPAND_S)
+func trigger_slam() -> void:
+	## Bind to the slam ability button (mobile tap target).
+	if _slamming:
+		return
+	_slamming = true
+	await _windup()
+	var impact_pos: Vector3 = global_position + (-global_transform.basis.z * 2.0)
+	_impact(impact_pos)
+	_slamming = false
 
-    # --- CRACK DECALS: 6-10 radiating cracks with 20deg jitter ---
-    for i in range(randi_range(6, 10)):
-        var c := crack_scene.instantiate() as Node3D
-        add_child(c)
-        c.position = Vector3.ZERO
-        c.rotation.y = (TAU / 10.0) * i + deg_to_rad(randf_range(-20.0, 20.0))
+func _windup() -> void:
+	var t := create_tween()
+	t.tween_property(_camera if _camera else self, "position",
+		(_camera.position if _camera else position) + Vector3(0, 0, WINDUP_CAM_PULLBACK_M)
+			* -1.0 * 0.0 + Vector3(0, 0, -WINDUP_CAM_PULLBACK_M), WINDUP_S)
+	await get_tree().create_timer(WINDUP_S).timeout
 
-    # --- DISPLACEMENT: stagger + launch, no kills at range (Impact > damage) ---
-    for body in get_tree().get_nodes_in_group("enemies"):
-        var d: float = global_position.distance_to((body as Node3D).global_position)
-        if d > constants.SLAM_RING_RADIUS_M: continue
-        var falloff := 1.0 - d / constants.SLAM_RING_RADIUS_M
-        var dir: Vector3 = ((body as Node3D).global_position - global_position).normalized()
-        if body.has_method("stagger"):
-            body.stagger(dir, falloff)
-        if d < constants.SLAM_LAUNCH_AIRBORNE_M and body.has_method("ragdoll_launch"):
-            body.ragdoll_launch(dir, falloff)      # ants fly
+func _impact(at: Vector3) -> void:
+	if _camera:
+		_camera.add_trauma(SLAM_TRAUMA)          # biggest shake in the game
+		_camera.set_sprinting(true)              # reuse FOV tween as pull-in +4°
+	_spawn_ring(at)
+	_spawn_cracks(at)
+	_displace_enemies(at)
+	if OS.has_feature("mobile"):
+		Input.vibrate_handheld(80)               # double-tap heavy impact
+		await get_tree().create_timer(0.08).timeout
+		Input.vibrate_handheld(80)
 
-    if OS.has_feature("mobile"):
-        Input.vibrate_handheld(30)
-        await get_tree().create_timer(0.12).timeout
-        Input.vibrate_handheld(60)                # double-tap heavy
+func _spawn_ring(at: Vector3) -> void:
+	var mesh := ImmediateMesh.new()  # simple quad ring; swap to torus in production
+	var ring := MeshInstance3D.new()
+	ring.mesh = mesh
+	var mat := StandardMaterial3D.new()
+	var col: Color = ring_color_f001 if current_faction == 1 else ring_color_f002
+	mat.albedo_color = col
+	mat.emission_enabled = true
+	mat.emission = col
+	mat.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	ring.material_override = mat
+	ring.position = at
+	add_child(ring)
 
-    await get_tree().create_timer(constants.SLAM_RING_EXPAND_S).timeout
-    ring_mesh.visible = false
-    _slamming = false
+	var t := create_tween()
+	var radius := 0.0
+	t.tween_method(func(r: float):
+		_update_ring(mesh, r, col), 0.0, RING_MAX_RADIUS_M, RING_EXPAND_S)
+	await t.finished
+	# fade
+	var f := create_tween()
+	f.tween_property(mat, "albedo_color:a", 0.0, 0.15)
+	await f.finished
+	ring.queue_free()
+
+func _update_ring(mesh: ImmediateMesh, radius: float, col: Color) -> void:
+	mesh.clear_surfaces()
+	var inner := radius * 0.85
+	var segs := 48
+	mesh.surface_begin(Mesh.PRIMITIVE_TRIANGLE_STRIP)
+	for i in segs + 1:
+		var a := TAU * i / segs
+		var d := Vector3(cos(a), 0, sin(a))
+		mesh.surface_set_color(Color(col.r, col.g, col.b, clampf(1.0 - radius / RING_MAX_RADIUS_M, 0.1, 1.0)))
+		mesh.surface_add_vertex(d * inner)
+		mesh.surface_add_vertex(d * radius)
+	mesh.surface_end()
+
+func _spawn_cracks(at: Vector3) -> void:
+	var n := randi_range(CRACK_COUNT_MIN, CRACK_COUNT_MAX)
+	for i in n:
+		var ang := TAU * i / n + deg_to_rad(randf_range(-CRACK_ANGLE_JITTER_DEG, CRACK_ANGLE_JITTER_DEG))
+		# Decal-based ground cracks: swap for Decal node with crack texture per faction.
+		var d := Decal.new()
+		d.size = Vector3(4, 2, randf_range(6, 12))
+		d.rotation = Vector3(-PI / 2.0, ang, 0)
+		d.position = at + Vector3(cos(ang), 0, sin(ang) * d.size.z * 0.5)
+		add_child(d)
+		var f := create_tween()
+		f.tween_interval(6.0)          # cracks linger, then go
+		f.tween_callback(d.queue_free)
+
+func _displace_enemies(at: Vector3) -> void:
+	## Radial launch: force ∝ (1 − dist/18 m). Kills NOTHING at range — displacement only.
+	for body in get_tree().get_nodes_in_group(enemy_group):
+		var e := body as Node3D
+		if e == null:
+			continue
+		var offset := e.global_position - at
+		var dist := offset.length()
+		if dist > RING_MAX_RADIUS_M:
+			continue
+		var force_scale := 1.0 - dist / RING_MAX_RADIUS_M
+		var dir := offset.normalized()
+		if e is RigidBody3D:
+			var rb := e as RigidBody3D
+			var impulse := dir * force_scale * 12.0
+			if dist < LAUNCH_AIRBORNE_DIST_M:
+				impulse += Vector3.UP * force_scale * 8.0   # ants fly
+			rb.apply_central_impulse(impulse)
+		elif e.has_method(&"apply_stagger"):
+			e.apply_stagger(force_scale)
