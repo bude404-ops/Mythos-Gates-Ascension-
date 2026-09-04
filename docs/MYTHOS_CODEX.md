@@ -131,6 +131,13 @@ ROLES ARE REMOVED — weapon class is PLAYER CHOICE: warrior / caster / assassin
 ROSTER TRIM: 2 deities per faction (1M + 1F) = 12 deities, 24 art models. Cinderlands cut call (BudE404): KEEP VHARKAR + VESSKRA. The cut do not die — each faction's two cut deities convert to the SIGNATURE SKINS of the other two weapon-class trees, completing a named identity behind all 4 classes per faction:
 - CINDERLANDS: Vharkar = warrior tree (Crucible Maul) + caster tree (Vesskra's Crucible Staff are both kept avatars); SORVATH = ARCHER tree signature skin (Emberwake Bow); OZRUV = ASSASSIN tree signature skin (Scale-Chain). All four named identities cover the four classes — two playable avatars, two tree skins.
 
+**THE WEAPON CHASSIS LAW (Sept 4 2026, BudE404 — LOCKED):** Weapon types are LIMITED and uniform across all factions — one chassis per class:
+- WARRIOR = TWO-HANDED SWORD
+- CASTER = STAFF
+- ASSASSIN = DUAL SWORDS (one in each hand)
+- ARCHER = BOW
+Identity comes from FACTION (material, elemental philosophy, named relic lore) on top of the fixed chassis — never from a different weapon type. Registry reconciliation: Vharkar's Crucible Maul converts to the CRUCIBLE BLADE (two-handed gouged greatsword, demon-fang lattice guard, molten core channeled down the fuller). Vesskra's Crucible Staff conforms. Sorvath's Emberwake Bow conforms. Ozruv's Scale-Chain conforms as dual swords with the chain as ornament variant. Haeldir's Skyfall Maul converts to the SKYFALL BLADE (storm greatsword, frozen thundercloud core) on his keep. Any kept avatar whose canon art shows an off-chassis weapon gets a weapon-swap direct edit — chassis is law across the board.
+
 **THE HOLLOW SCOPE (Sept 4 2026, BudE404 — LOCKED):** The Hollow is ENEMY ECOLOGY, not a deity roster — no 24-unit pantheon. Because the Hollow has no true deities (only the Forgotten, trapped in the void), it expresses itself through spawn, and its unit list narrows to three tiers that map directly onto the locked combat spec:
 - BASIC ENEMIES (T1): trash-tier void spawn — ants that die in one tap, ragdoll, swarm for scale contrast against 30-foot avatars.
 - SOME ELITES (T2): brutes — 3-6 hits to stagger, distinct silhouettes, mini-threat moments between boss fights.
