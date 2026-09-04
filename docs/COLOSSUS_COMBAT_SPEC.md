@@ -73,3 +73,38 @@ preserved: every heal/buff stays self-targeted (audit re-verified).
 3. Enemy scale decision: Option A locked — future enemy/creature art rolls follow the
    TITAN_DESIGN_STANDARD.md scale anchors (mortals 1.7 m at titan feet).
 4. Anything not listed here inherits the feasibility audit unchanged.
+
+---
+
+## 6. TRUE DRAGON REBASE (Sept 4 2026, BudE404 pivot — supersedes §2 humanoid titan rebasing for COLOSSI; human aspects keep the old numbers at mortal scale)
+
+Colossi are now TRUE DRAGONS (True Dragon Vessel Law). Dragon-unit rebasing:
+
+| Measure | Value |
+|---|---|
+| Canonical colossal length | 14 m nose-to-tail (≈46 ft) — shoulder height ~5 m; camera eye 1.6 m, never above the knee |
+| Wingspan (display/attack) | 22 m half-spread, 30 m full |
+| Walk speed | 6 m/s quadruped stride (1.1 s per stride) |
+| Charge / short flight dash | 12 m/s, +6° FOV kick |
+| Claw reach (fore-talon swipe) | 8 m arc |
+| Bite reach | 7 m cone |
+| Breath special | 24 m line or 12 m cone, 2.5 s channel |
+| Wing-gust AOE | 18 m ring (matches slam radius) |
+| Body slam | 18 m radius ground ring |
+| Roar (fear) | 30 m radius, breaks T1 formations |
+| Tap-to-move range | 40 m per tap |
+
+**DRAGON KIT (universal, no weapons — all colossi share the frame, element reskins the breath):**
+- L1: claw swipe (8 m arc, 0.35 s windup / 0.45 s recovery)
+- L2: bite lunge (7 m, lunges 3 m forward)
+- HEAVY: body slam (0.5 s windup, airborne ants, crater per game-feel spec)
+- SPECIAL: element BREATH (per faction: fire line / storm bolt cone / bloom spore cloud / umbral drain / scald torrent / stone hail) — FAITH-cost
+- MOBILITY: wing-gust (launches ants, shoves T2, propels short hop)
+- UTILITY: roar (fear radius, T1 scatter, T2 stagger entry)
+- ULTIMATE (Tower Waves): GATE RITE — the dragon anchors its Gate and channels a faction-sigil storm (30 m, phase-clearing)
+
+**PHASES:** 66% activation (barding seams ignite, breath widens), 33% frenzy (flight-capable strafing runs, double special). Worship/activation lore maps onto phase cues unchanged.
+
+**ANIMATION NOTE (pipeline debt, deferred per BudE404):** dragon anims do NOT come from the Mixamo humanoid library — custom rig path TBD at pipeline time; humans keep the locked Meshy→Mixamo flow. Game-feel laws (weight = timescale, trauma cam, cratering) carry over 1:1 to quadruped mass.
+
+**HUMAN ASPECT COMBAT:** unchanged — the four class chassis (duelist blade / caster staff / assassin blades / archer bow) play at mortal scale against T1/T2. Human kits = the RPG layer; dragon kit = the event/power layer.
