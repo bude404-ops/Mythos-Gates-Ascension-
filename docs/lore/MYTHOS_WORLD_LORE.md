@@ -65,3 +65,17 @@ Since the Gates moved the deities to their own realms, the **colossus has been t
 7. The Hollow stirs where memory fails. Forgotten by its jailers, it tests the seams of its prison — the fracture in its Gate.
 
 KEY REFRAME: the deities were not expelled as punishment — they were expelled to KEEP BALANCE after the act that SAVED the world. The world owes them everything and cast them out anyway. Tragedy is structural.
+
+
+## AETHERIUM — THE SUBSTANCE OF MATTER (BudE404 canon, Sept 4 2026)
+
+**Aetherium is what makes up matter itself.** Not a metal that was forged — the fundamental substrate of all physical form. Everything that HAS form in Mythos, forms because of aetherium.
+
+**THE PREMISE (and why the armor works):** the deities' power is raw elemental force — fire, storm, tide, stone, growth, shadow — and raw force is formless. Aetherium is what gives force a shape to inhabit. This is why the ancient armor can hold their elemental forms: the Aetherium relic plate is made of the very substance of matter, and elemental power GRIPS it naturally, the way water grips a riverbed. The armor doesn't cage the element — the element holds onto it, because aetherium is the only thing it CAN hold.
+
+- **The colossi:** elemental body given form by aetherium armor — form and force, substrate and power.
+- **The Gates:** transmit belief (formless) into aetherium structure (form) — the power line.
+- **The Hollow:** the residue that never took form — unformed power WITHOUT aetherium's gift. Its hunger is the hunger of the formless for form.
+- **The death pile:** the element releases its grip and dissipates; the aetherium remains — because matter remains. The armor is never destroyed, only emptied.
+
+**One-line cosmology:** aetherium is the body, the elements are the breath, belief is the pulse.

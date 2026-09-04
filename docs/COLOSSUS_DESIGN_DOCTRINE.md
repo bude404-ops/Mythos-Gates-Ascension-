@@ -92,6 +92,7 @@ Reference embodiments: SOPHRONA v15/v16 (water gown + marble armor), F002 Norse 
 
 ### THE SHARED STYLE — the forge's signature traits (present in EVERY set, but each set unique in form):
 1. **MATERIAL — AETHERIUM:** AETHERIUM — deep bronze-black relic-metal, ancient worn surface, pale gold inlay seam-linework. The inlay lies DARK until belief enters — then it lights along the seams. Same metal everywhere = same forge.
+- **THE PREMISE:** aetherium is what makes up matter — which is WHY it can hold the deities' raw elemental forms. Elemental power grips aetherium naturally (formless force holding onto the substance of form). The armor works because it is made of reality itself.
 2. **CONSTRUCTION — THE KEY-SEAM:** plates interlock with chevron tab-and-key joinery — no straps, no leather, no fabric anywhere. Plate keys into plate like impossible divine joinery. This seam language is the forge's signature, recognizable on every set.
 3. **SACRED ARCHITECTURE (the constant piece-set):** monumental RELIC CROWN (spire form) • vast COLLAR RING • pauldron monuments rising past the head • CHEST CAGE (the hollow lattice where the elemental core seats — every set has the seat) • relic belt • layered vambraces ending in closed relic gauntlets • towering greaves.
 4. **THE GATE-MARK:** one small abstract Gate glyph on the chest cage — pure geometry, no letters — indicating which Gate powers the set.
