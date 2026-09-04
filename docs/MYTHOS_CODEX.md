@@ -107,3 +107,25 @@ Every faction runs exactly two male and two female colossi. Females follow the F
 | F4 DEATH ( Duskmourn) | Morvain, the Last Warden | Ferran, the Ferryman | Senvra, the Lampkeeper | Uthrel, the Quiet |
 | F5 WATER (Marenth) | Nerovax, the Undertow | Maruvak, the Deepcall | Ilsarra, the Mirrorfin | Thuveth, the Reefsong |
 | F6 EARTH (Stoneheart) | Grothmar, the Mountain Oath | Rhovarr, the Quakecaller | Bergrun, the Unmoved | Dolvarr, the Deeproot |
+
+
+## WING DOCTRINE v1 (Sept 4 2026, BudE404) — wing types per faction, element exceptions
+
+**THE GLOBAL RULE:** Every wing in the pantheon is DRACONIC in architecture — Aetherium plate-membrane with clawed wing-fingers, built in the faction's materials with the faction's glow. Wings vary by FACTION flavor and per-deity silhouette, never by species (no bird/insect/bat wings — dragon grammar only).
+
+**ELEMENT EXCEPTIONS — two factions never fly:**
+- F5 WATER (Marenth): ZERO wings. Water deities get FIN ARCHITECTURE instead — crest-fins, fin-mantles, tail-blades; the swimming silhouette.
+- F6 EARTH (Stoneheart): ZERO wings. Earth deities get MOUNTAIN ARCHITECTURE instead — cliff-ridge pauldrons, basalt spines, root-anchors. Stone does not leave the ground.
+
+**WINGED FACTIONS:**
+
+| Faction | Wing type | Who's winged |
+|---------|-----------|--------------|
+| F1 FIRE | Ember dragon wings — plate-membrane Aetherium, fire bleeding through the plate seams | ALL FOUR. Vharkar: massive half-spread warden wings (canon). Sorvath: lean swept banking-dives herald wings. Vesskra: broad slow hearth-bellows caster wings. Ozruv: sharp angular ember-fan striker wings. |
+| F2 AIR | Storm dragon wings — thundercloud-slate plate-membrane, lightning veins at the joints — the widest spans in the roster; the master wing faction | ALL FOUR. Haeldir: towering oath-banners. Yrdis: blade-slim whisper-wings. Sylwen: vane-curved weather-wings. Naeria: full-spread gale-wings, widest of all 24. |
+| F3 LIFE | Bloom dragon wings — petal-agate membrane that UNFURLS like petals opening, amber sap-glass veining | THREE. Thevril: unfurling scale-beam wings. Miriath: still closed-petal wings like folded flower. Corvan: firstlight-spread dawn wings. EXCEPTION: Alveth the Rootbond — NO wings, rooted to the world; root-anchor architecture instead. |
+| F4 DEATH | Reliquary dragon wings — bone-frame plate wings, each niche holding a small ghost-flame (matches Senvra's Ash-Relief armor) | TWO. Morvain: bone-frame last-light wings. Senvra: lantern-pane wings carrying the last lights home. EXCEPTIONS: Uthrel the Quiet (stillness needs no wings) and Ferran the Ferryman (he poles the black water — boat logic, oar-blade architecture instead). |
+| F5 WATER | NO WINGS — fin architecture | Ilsarra: mirror-fin crest + fin-mantle. Thuveth: reef-fin crown + coral-blade fins. Maruvak: deep-fin mantle. Nerovax: current-fins down the spine. |
+| F6 EARTH | NO WINGS — mountain architecture | Grothmar: cliff-ridge pauldrons + basalt spine-crest. Rhovarr: quake-spine fracture ridges. Bergrun: sheer bulwark wall-back (she IS the mountain). Dolvarr: deeproot anchor-crests growing down his back like inverted spires. |
+
+**WINGED TOTAL:** 13 of 24 (F1 4 + F2 4 + F3 3 + F4 2). 11 carry element-native alternatives instead.
