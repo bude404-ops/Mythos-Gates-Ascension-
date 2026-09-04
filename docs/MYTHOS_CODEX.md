@@ -111,6 +111,8 @@ Every faction runs exactly two male and two female colossi. Females follow the F
 
 ## WING DOCTRINE v2 (Sept 4 2026, BudE404) — wing type matches the faction's ELEMENT, not one global style
 
+**THE MATERIAL CLAUSE (Sept 4 2026, BudE404):** Wings are PART OF THE ARMOR — not organic appendages, not elemental flesh, not separate growths. Every wing pair is forged of the same Aetherium relic-material as the deity's chest plate, ANCHORED INTO THE BACK-PLATE of the chest armor as a fused extension of the five-piece set, sharing its gouged finish, its seams, and its faction glow. The element-native grammar (storm/petal/bone shape language) lives in the wing's ARCHITECTURE only — the SUBSTANCE is always armor of the faction's material. A wing is a relic, not a limb.
+
 **THE GLOBAL RULE (revised):** Wings are ELEMENT-NATIVE — each faction's wing type embodies its own element. Only the FIRE faction is draconic (dragons ARE the fire beast-language — this is why Vharkar and Sorvath wear dragon wings). The other winged factions carry wings built of their own element.
 
 **ELEMENT EXCEPTIONS — two factions never fly (unchanged):**
