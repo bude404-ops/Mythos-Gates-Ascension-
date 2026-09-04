@@ -1,4 +1,4 @@
-# VULKAR — THE FURNACE WARDEN
+# vharkar — THE FURNACE WARDEN
 ## Design Card — Stage 1 Character Lock v1
 **Realm:** The Cinderlands (Fire — realm domain of exile)
 **Role:** Warden (warrior)
