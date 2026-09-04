@@ -93,3 +93,17 @@ Glow: deep amber-green. Materials: root-marble, mountain granite, iron-vein ston
 - CASTER RULE: all six Casters wield staffs (Vesskra, Sylwen, Miriath, Senvra, Maruvak, Rhovarr). Hard rule, no exceptions.
 - The Hollow = void of elemental powers, imprisoned by the six collectively, forgotten in exile. External to the six realms — the wound holding the origin story together.
 - ALL prior deity names retired (Khaveth, Halmarr, Thrasyles, Arashido et al.).
+
+
+## ROSTER GENDER LOCK — 2 MALE / 2 FEMALE PER FACTION (locked Sept 4 2026, BudE404)
+
+Every faction runs exactly two male and two female colossi. Females follow the Female-Titan Laws (same colossal scale, dimorphism in anatomy, zero mass reduction) and the sexy-and-titanic rule.
+
+| Faction | Male | Male | Female | Female |
+|---------|------|------|--------|--------|
+| F1 FIRE (Ashfall) | Vharkar, the Furnace Warden | Sorvath, the Wildfire Herald | Vesskra, the Kiln Mother | Ozruv, the Ash Auditor |
+| F2 AIR (Skyrend) | Haeldir, the Thunder Oath | Yrdis, the Whisperdrift | Sylwen, the Stormsight | Naeria, the Galeheart |
+| F3 LIFE (Everbloom) | Thevril, the Evenhand | Corvan, the Firstlight | Miriath, the Stillwater | Alveth, the Rootbond |
+| F4 DEATH ( Duskmourn) | Morvain, the Last Warden | Ferran, the Ferryman | Senvra, the Lampkeeper | Uthrel, the Quiet |
+| F5 WATER (Marenth) | Nerovax, the Undertow | Maruvak, the Deepcall | Ilsarra, the Mirrorfin | Thuveth, the Reefsong |
+| F6 EARTH (Stoneheart) | Grothmar, the Mountain Oath | Rhovarr, the Quakecaller | Bergrun, the Unmoved | Dolvarr, the Deeproot |
