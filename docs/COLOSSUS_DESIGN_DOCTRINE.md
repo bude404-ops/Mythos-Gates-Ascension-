@@ -84,3 +84,23 @@ Reference embodiments: SOPHRONA v15/v16 (water gown + marble armor), F002 Norse 
 - **GAMEPLAY BRIDGE (ties to canonized FAITH resource):** kills feed the god; faith is the single combat resource; the visual density of the colossus is the faith meter. A low-faith colossus visibly thins. Belief is the health bar of the divine.
 
 **Failure modes:** stone body = missing elemental pillar; empty armor = missing belief/element; generic fire monster = armor lost its relic specificity; element without silhouette = armor not anchoring the form.
+
+
+## THE FIRST FORGE — THE SHARED ANCIENT ARMOR LANGUAGE (BudE404, Sept 4 2026)
+
+**The elemental bodies differ per deity. The ancient armor is SHARED — one design lineage across all colossi.** All 24 sets come from the same walked-age forge: the same relic-metal, the same construction signature, the same sacred architecture. You should know a colossus wears FIRST FORGE plate the way you know a knight wore the same order's armor.
+
+### SHARED CONSTANTS (identical on every colossi, every realm):
+1. **MATERIAL — GOD-METAL:** deep bronze-black relic-metal, ancient worn surface, pale gold inlay seam-linework. The inlay lies DARK until belief enters — then it lights along the seams. Same metal everywhere = same forge.
+2. **CONSTRUCTION — THE KEY-SEAM:** plates interlock with chevron tab-and-key joinery — no straps, no leather, no fabric anywhere. Plate keys into plate like impossible divine joinery. This seam language is the forge's signature, recognizable on every set.
+3. **SACRED ARCHITECTURE (the constant piece-set):** monumental RELIC CROWN (spire form) • vast COLLAR RING • pauldron monuments rising past the head • CHEST CAGE (the hollow lattice where the elemental core seats — every set has the seat) • relic belt • layered vambraces ending in closed relic gauntlets • towering greaves.
+4. **THE GATE-MARK:** one small abstract Gate glyph on the chest cage — pure geometry, no letters — indicating which Gate powers the set.
+
+### PER-DEITY VARIATION (what differs):
+- The relic set's silhouette details and proportion emphasis (Warden sets heavier, Striker sets leaner, Caster sets carry the staff-crown mount, Ranged sets free the draw arm)
+- The ancient weapon relic (function made solid — always one-of-one)
+- THE ELEMENTAL BODY inside — completely different per deity: fire, storm, tide, stone, growth, shadow
+
+**THE RULE: armor family is constant, element is unique.** A god of fire and a god of tide wear the same order's plate — only what fills it and the details of its forge-work differ.
+
+**DEATH TIES IN:** the death pile (canon) is always recognizable as First Forge plate — the fallen god's relics read as relics of the same ancient order.
