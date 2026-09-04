@@ -19,6 +19,8 @@ Shemris is the goddess of PRECISION — the shot loosed before the target knows 
 1. SIZE PARITY + FEMININE SHAPE (Warcraft female-hero logic): same size tier/height class/presence as male colossi; athletic toned feminine hourglass build. Not male bulk, not dainty.
 2. OVER-EXAGGERATED ARMOR IS UNISEX: female titans wear the SAME oversized armor language as the males — pauldrons dwarfing the head, heavy layered chest relief, monumental crowns. Feminine frame never means reduced armor.
 3. Hearts absolute-banned; sigils brutal angular storm-script, max 3.
+4. VOLUPTUOUS BUILD (v6): full large proud bust — the most dramatic curve of the silhouette.
+5. NO SIX-PACK ABS on female titans (v6): smooth feminine carved torso, gently rounded belly/waist — classical goddess-statue finish. Strength shows in shoulders/arms/legs/posture, never abdominal muscle blocks.
 
 ## Invented Divine Iconography (no historical replicas)
 - FALCON-SWOOP PAULDRONS: shoulder masses carved as invented diving-falcon wing geometry — layered swoop-planes and feather-chevrons in her own invented geometry, NOT museum bird replicas
