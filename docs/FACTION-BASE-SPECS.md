@@ -30,20 +30,18 @@ God-level armor is NEVER stacked blocks. At divine scale, armor abandons mortal 
 
 Since Mythos is our own invented world, factions are built on the main ELEMENTS OF THE WORLD — earth, wind, fire, water, life, death — not on any referenced mythology. Each faction IS an element: its Gate, its realm's terrain, its colossi, its armor philosophies, its weapon language, its glow color all express that element.
 
-PROPOSED 8-ELEMENT MAP (DRAFT — awaiting BudE404 verdict):
+CONFIRMED SIX-ELEMENT SYSTEM (BudE404, Sept 4 2026): Earth, Air, Water, Fire, Life, Death. These are the world's main elements — the factions ARE these elements.
 
-| Faction | Element | Gate & Terrain | Known Roster |
-|---------|---------|---------------|--------------|
-| F001 | FIRE | Sun Gate — the great desert | Khaveth (solar judgment), Djekhur, Shemris, Amekhet |
-| F002 | WIND | Storm Gate — the frozen fjord north | Halmarr (thunder), Vargrim, Estrith, Falwyn |
-| F003 | ? | Marble Gate — sunlit peaks | Thrasyles, Therissa, Aethrokles, Sophrona — candidates: LIFE or LIGHT |
-| F004 | ? | Vermilion Gate — shrine isles | Arashido, Yoruka, Hikarune, Mukage — candidates: DEATH/DUSK or SPIRIT |
-| F005 | WATER | ? | ? |
-| F006 | EARTH | ? | ? |
-| F007 | LIFE or DEATH | ? | ? |
-| F008 | open — candidates: LIGHT, SHADOW (ties to the Hollow lore), STORM, FROST, SPIRIT | ? | ? |
+| Faction | Element | Gate & Terrain | Roster | Notes |
+|---------|---------|---------------|--------|-------|
+| F001 | FIRE | Sun Gate — the great desert | Khaveth, Djekhur, Shemris, Amekhet | solar judgment, molten cores, ember dissolve |
+| F002 | AIR | Storm Gate — the frozen fjord north | Halmarr, Vargrim, Estrith, Falwyn | thunder, storm-cloud garments, gale flow |
+| F003 | LIFE (proposed) | Marble Gate — sunlit peaks | Thrasyles, Therissa, Aethrokles, Sophrona | serene balance, harmony, bloom-light |
+| F004 | DEATH (proposed) | Vermilion Gate — shrine isles | Arashido, Yoruka, Hikarune, Mukage | dusk precision, boundary-keeping, stillness |
+| F005 | WATER | Gate TBD | roster TBD | — |
+| F006 | EARTH | Gate TBD | roster TBD | — |
 
-Confirmed elements named by BudE404: earth, wind, fire, life, death (water implied as a main element). The full 8 list and the F003/F004 assignments are his call.
+STRUCTURAL NOTE: 6 elements x 4 deities = 24 colossi. The original 32-deity plan would need 2 more factions beyond the six — candidates when the time comes: LIGHT / SHADOW (Shadow ties directly to the Hollow lore: the Forgotten deity born of the void). That decision stays open for BudE404; the six-element foundation is confirmed now.
 
 ELEMENTAL DESIGN RULE: each element defines its pantheon's material palette (fire = sandstone/gold/molten; water = coral/pearl/abyssal stone; earth = granite/root-marble; wind = storm-cloud/rain-slate; life = bloom-stone/amber-sap; death = bone-pale stone/black-vein marble), its armor construction philosophies, its weapon languages, and its glow color. No two element pantheons share a material or glow.
 
