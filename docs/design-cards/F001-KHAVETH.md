@@ -1,5 +1,5 @@
 # DESIGN CARD — KHAVETH (F001, Egypt region)
-Status: Stage 1 in progress. Source of truth for all Khaveth prompts.
+Status: Stage 1 in progress. TONE LOCKED: GRIMDARK (BudE404, Sept 4). Source of truth for all Khaveth prompts.
 
 ## Identity
 - **Name:** Khaveth, the Sun-Verdict
@@ -15,7 +15,7 @@ Status: Stage 1 in progress. Source of truth for all Khaveth prompts.
 - **Master-craft design sense:** deliberate, balanced, exquisite divine smithwork grown by the deity's own will.
 
 ## Glow
-- Warm **amber-gold** inner light: serene, powerful — a sun-heart at the core, bleeding softly through the carved seams and facet cracks.
+- GRIMDARK **amber-gold** inner light: ominous, wrathful, dangerous — a smoldering sun-heart at the core bleeding through the carved seams and facet cracks like embers under skin. F001 tone = GRIMDARK (locked by BudE404).
 - **Lamp eyes:** solid glowing amber, casting light onto the cheekbones.
 - Sigils (hieroglyph-essence, MAX 3): (1) sun-disc at the heart — largest, brightest; (2) eye-of-verdict glyph on the brow; (3) scale glyph inscribed on the Amber Verdict blade.
 
