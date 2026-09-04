@@ -13,6 +13,7 @@ Status: Stage 1 in progress. TONE LOCKED: GRIMDARK (BudE404, Sept 4). Source of 
 - **Armor = anatomy.** No discrete plates. Pectorals swell INTO the breastplate shape; shoulders flow into guard-forms; abdominals carved in layered relief like a war-belt grown from the body. Boundary between body and armor: nonexistent.
 - Ornament = **relief carved INTO the stone skin** — fluting, sun-disc motifs, gold inlay as precise linework WITHIN the sandstone (never a separate metal layer).
 - **Master-craft design sense:** deliberate, balanced, exquisite divine smithwork grown by the deity's own will.
+- **DIVINE ORIGINALITY (locked Sept 4, BudE404): armor and weapons are OUR OWN unique inventions — divine-level, one-of-one, forms no mortal civilization ever made. NO historical replicas, no real hieroglyphs, no nemes headdress. Invented divine geometry only (orbital rings, verdict chevron rays, abstract eye-of-verdict forms).
 
 ## Glow
 - GRIMDARK **amber-gold** inner light: ominous, wrathful, dangerous — a smoldering sun-heart at the core bleeding through the carved seams and facet cracks like embers under skin. F001 tone = GRIMDARK (locked by BudE404).
