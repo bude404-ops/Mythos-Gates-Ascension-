@@ -1,58 +1,54 @@
-// TitanGroundSlam — windup, expanding ring, crack decals, ant-launching displacement
-// Attach under the titan; assign cameraPivot, ringTransform (scaled ring mesh w/ faction
-// glow material), crackDecal (GameObject), enemies on layer "Enemies" or tag "Enemy".
 using UnityEngine;
-using System.Collections.Generic;
-
+// TitanGroundSlam — windup, slam, expanding ring, crack decals, ant-launching displacement
 public class TitanGroundSlam : MonoBehaviour {
     public TitanCamera cameraPivot;
-    public Transform ring;
-    public GameObject crackDecal;
-    public Material ringMaterial;                 // faction glow color in emission
-    private bool _slamming = false;
+    public Transform ringMesh;           // scaled 0->18m, faction-glow material
+    public GameObject crackDecalPrefab;  // radiating ground cracks
+    private bool _slamming;
 
     public void Slam() {
         if (_slamming) return;
-        StartCoroutine(SlamRoutine());
+        StartCoroutine(_SlamRoutine());
     }
-
-    System.Collections.IEnumerator SlamRoutine() {
+    System.Collections.IEnumerator _SlamRoutine() {
         _slamming = true;
-        // WINDUP: pull back + FOV open (dread beat)
-        cameraPivot.PullBack(GameFeelConstants.SlamWindupPullbackM,
-                             GameFeelConstants.SlamWindupFovAdd, GameFeelConstants.SlamWindupS);
-        yield return new WaitForSeconds(GameFeelConstants.SlamWindupS);
+        // --- WINDUP: pull back + FOV open ---
+        cameraPivot.PullBack(GameFeelConstants.SLAM_WINDUP_PULLBACK_M, GameFeelConstants.SLAM_WINDUP_FOV_ADD, GameFeelConstants.SLAM_WINDUP_S);
+        yield return new WaitForSeconds(GameFeelConstants.SLAM_WINDUP_S);
 
-        // IMPACT: biggest trauma in the game
-        cameraPivot.AddTrauma(GameFeelConstants.SlamTrauma);
-        ring.localScale = Vector3.one * 0.01f;
-        ring.gameObject.SetActive(true);
-        float r0 = 0.01f;
-        for (float t = 0; t < GameFeelConstants.SlamRingExpandS; t += Time.deltaTime) {
-            float k = t / GameFeelConstants.SlamRingExpandS;
-            ring.localScale = Vector3.one * Mathf.Lerp(r0, GameFeelConstants.SlamRingRadiusM, k);
-            if (ringMaterial) ringMaterial.SetFloat("_Alpha", 1f - k);   // fades with radius
+        // --- IMPACT ---
+        cameraPivot.AddTrauma(GameFeelConstants.SLAM_TRAUMA);
+        ringMesh.gameObject.SetActive(true);
+        Vector3 startScale = Vector3.one * 0.01f;
+        Vector3 endScale = Vector3.one * GameFeelConstants.SLAM_RING_RADIUS_M;
+        for (float t = 0; t < GameFeelConstants.SLAM_RING_EXPAND_S; t += Time.deltaTime) {
+            ringMesh.localScale = Vector3.Lerp(startScale, endScale, t / GameFeelConstants.SLAM_RING_EXPAND_S);
             yield return null;
         }
-        ring.gameObject.SetActive(false);
+        ringMesh.gameObject.SetActive(false);
 
-        // CRACK DECALS: 6-10 radiating, 20 deg jitter
-        int n = Random.Range(6, 11);
-        for (int i = 0; i < n; i++) {
-            var c = Instantiate(crackDecal, transform.position,
-                Quaternion.Euler(90f, (360f / 10f) * i + Random.Range(-20f, 20f), 0f), transform);
+        // --- CRACK DECALS: 6-10 radiating, 20deg jitter ---
+        int cracks = Random.Range(6, 11);
+        for (int i = 0; i < cracks; i++) {
+            var c = Instantiate(crackDecalPrefab, transform.position,
+                Quaternion.Euler(0f, (360f / 10f) * i + Random.Range(-20f, 20f), 0f));
         }
 
-        // DISPLACEMENT: stagger + launch, no kills at range (Impact > damage)
-        foreach (var e in GameObject.FindGameObjectsWithTag("Enemy")) {
-            float d = Vector3.Distance(transform.position, e.transform.position);
-            if (d > GameFeelConstants.SlamRingRadiusM) continue;
-            float falloff = 1f - d / GameFeelConstants.SlamRingRadiusM;
-            Vector3 dir = (e.transform.position - transform.position).normalized;
-            e.SendMessage("Stagger", (dir * falloff), SendMessageOptions.DontRequireReceiver);
-            if (d < GameFeelConstants.SlamLaunchAirborneM)
-                e.SendMessage("RagdollLaunch", (dir * falloff), SendMessageOptions.DontRequireReceiver);
+        // --- DISPLACEMENT: stagger + launch, no range kills (Impact > damage) ---
+        foreach (var body in GameObject.FindGameObjectsWithTag("Enemy")) {
+            float d = Vector3.Distance(transform.position, body.transform.position);
+            if (d > GameFeelConstants.SLAM_RING_RADIUS_M) continue;
+            float falloff = 1f - d / GameFeelConstants.SLAM_RING_RADIUS_M;
+            Vector3 dir = (body.transform.position - transform.position).normalized;
+            body.SendMessage("Stagger", (dir, falloff), SendMessageOptions.DontRequireReceiver);
+            if (d < GameFeelConstants.SLAM_LAUNCH_AIRBORNE_M)
+                body.SendMessage("RagdollLaunch", (dir, falloff), SendMessageOptions.DontRequireReceiver);   // ants fly
         }
+        #if UNITY_ANDROID || UNITY_IOS
+        Handheld.Vibrate();
+        yield return new WaitForSeconds(0.12f);
+        Handheld.Vibrate();
+        #endif
         _slamming = false;
     }
 }
