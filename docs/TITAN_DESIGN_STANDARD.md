@@ -96,3 +96,20 @@ All inner light, vein glow, molten seams and lamp eyes are coded by FACTION, not
 - F006 Radiant Vigil (angelic light): PRISM RADIANCE (iridescent) — proposed, awaiting verdict
 - F007 Black-Iron Dominion (infernal): EMBER-RED (magma crimson) — proposed, awaiting verdict
 - F008 Deepgreen (PNW timber): MOSS EMERALD (deep forest green) — proposed, awaiting verdict
+
+---
+
+## AMENDMENT A6 — ELEMENTAL MANIFESTATION (Sept 3, 2026, BudE404)
+Supersedes the shared godflesh material as the primary body standard. Titans remain HUMANOID IN SHAPE (10 heads tall, inhuman proportions, lamp eyes, 30ft scale anchors, anti-portrait framing, sexy-and-titanic females — all other A5 rules hold), but the BODY IS NO LONGER flesh/godflesh — **each titan is an elemental manifestation of their faction's realm and their own divine domain.** They are the element, wearing a titan's silhouette.
+
+### Faction element cores
+- F001 MERIDIAN COURT (sun-desert): living sun-fire, molten gold, sandstorm, solar corona
+- F002 STORRMOOT (Norse storm-coast): living thunderstorm, lightning, frozen gale, sea-surf
+- F003 (Grecian white-light): living radiance, woven light, aurora marble
+- F004 THOUSAND TORII (Shinto thresholds): vermilion flame, mist, moonlight, spirit-smoke, boundary-light
+
+### Per-deity element = divine domain (element map set with each faction's cultural doc)
+Faces remain readable/authentic to the culture, sculpted from the element itself. Eyes stay solid glowing lamps (the element's color). Wardrobe/weapons stay registry-locked and regional + epic god-tier — gear rides ON the elemental body. Wardrobe stays substantive enough to carry cultural identity.
+
+### Gate
+One sample per faction rolls first → BudE404 verdict → then faction re-roll. No mass re-roll without a KEEP on the sample.
