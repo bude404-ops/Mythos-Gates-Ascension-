@@ -53,3 +53,8 @@ Each Colossal wears LIVING ELEMENTAL GARMENTS fused with its mythology. Robes, g
 4. DIVINE PRESENCE — serene god-glow, lamp eyes, runes/symbols, worship-by-evidence, landscape domination, LOTR-film treatment
 
 Reference embodiments: SOPHRONA v15/v16 (water gown + marble armor), F002 Norse roster (storm-cloud capes), THERISSA (mist robes).
+
+## CROWNS & HELMETS ADDENDUM (BudE404, Sept 4 2026 — doctrine v1.3)
+
+1. CROWNS ARE REGIONAL: if a Colossal wears a crown, it is grown from the faction's OWN regional mythology, architecture, symbols, and materials — Greece: marble laurel and olive fronds with gold inlay; Egypt: sun-disc, cobra-uraeus, scarab motifs; Norse: rune-carved iron and antler crowns; Japan: vermilion crest-diadems. No generic/fantasy crowns.
+2. LEGENDARY HELMETS SANCTIONED: a Colossal MAY wear a full legendary helmet to HIDE ITS FACE — carved from the same regional material as the body, fused/grown like the armor, ornate to the v1.1 standard (engravings, gemstones, gold inlay, mythical symbols). Facelessness reads as divine intimidation — lamp-glow may burn from within the visor/eye-slits, or the helm may be fully sealed. Per-deity choice.
