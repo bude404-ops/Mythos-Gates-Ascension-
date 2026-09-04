@@ -37,29 +37,7 @@ THE THREE-LAYER CULTURAL DNA (defined per faction, BEFORE rolling):
 
 THE WORDING RULE for every prompt: "INVENTED iconography, EXECUTED IN [material palette], BUILT FROM [form language], CARVED WITH [craftmarks]." Invention lives in the forms; culture lives in the materials/shapes/techniques.
 
-THE CHEESE BAN (stays): literal artifacts worn as costume, real glyphs, museum replicas, symbol pileup (more than 3 sigils), cartoon proportions on cultural motifs.
 
-FACTION DNA — F001 EGYPT:
-- Materials: weathered golden sandstone, black granite, lapis-blue inlay, turquoise inlay, polished gold
-- Forms: pyramidal taper, obelisk spire, lotus-bud curve, sun-disc, flat trapezoid, frontal colossal symmetry, horizontal band rhythm
-- Craft: flat relief carving, incised linework, polished inlay, smooth-polish-vs-raw-weather contrast
-
-FACTION DNA — F002 NORSE:
-- Materials: storm granite, bog iron, whalebone, slate, ice
-- Forms: knotwork interlace, prow-curve (longship keel), wedge, rune-stone slab, weathered chunk
-- Craft: deep carved grooves, chip-carve facets, cold-forged banding
-
-FACTION DNA — F003 GREECE:
-- Materials: white Pentelic marble, bronze, lapis, gold leaf
-- Forms: contrapposto S-curve, column flute, laurel sprays, acanthus curl, pediment triangle
-- Craft: smooth polished marble, drilled deep-set lines, chryselephantine inlay contrast
-
-FACTION DNA — F004 JAPAN:
-- Materials: aged shrine cypress, dark granite, vermilion lacquer, bronze
-- Forms: torii gate curve, swept roofline, katana arc, layered shrine terrace, crescent
-- Craft: lacquer-crack glow, precise joinery, brushed steel edge vs rough stone contrast
-
-(F005-F008: DNA defined at roster reveal.)
 
 ### THE MASTER TITAN FORMULA (BudE404, Sept 4 2026) — every titan is a cross of three pillars
 
@@ -67,7 +45,7 @@ Every deity = **COLOSSAL x ELEMENTAL x REGIONAL**. All three pillars at full str
 
 1. **COLOSSAL** — titanic monument scale: the Warcraft Grammar (pauldrons past the head, 10-heads-tall, armor mass, colossus-scaled weapons). The weight and mass of a living monument.
 2. **ELEMENTAL** — the deity's power manifest as a LIVING ELEMENT: solar fire, storm, water, sand, frost, shadow — visibly alive in and around the body (molten energy through seams, elemental garments, radiant presence, weather at their feet). Not decoration — the god IS partly manifest element. This is the pillar that makes them gods, not statues.
-3. **REGIONAL** — distinguishable to the region WITHOUT costume: the Faction DNA applied LIGHT (material palette + 2-3 form echoes per roll, never the full checklist). Enough that you know the pantheon at a glance, not enough to look like a museum piece.
+3. **FACTION IDENTITY** — distinguishable to the PANTHEON at a glance, WITHOUT real-world culture: the faction's own invented DNA applied light (its Gate-biome material palette + 2-3 of its OWN invented form echoes per roll, never the full checklist). You know which Gate this god walked out of — and no two pantheons blur.
 
 Failure diagnosis: generic fantasy = missing REGIONAL. Cluttered/cheesy = REGIONAL overloaded. Dead statue = missing ELEMENTAL. Too modest/human = missing COLOSSAL.
 
@@ -97,14 +75,21 @@ Each faction is defined by exactly THREE words, one from each axis:
 ### The Contrast Rule
 **No two factions may share more than one word.** Any pair sharing two or more words must be re-specced. This mathematically guarantees faction silhouettes never blur together.
 
-### Known Factions (F001–F004)
+### ORIGINAL LORE SYSTEM (BudE404, Sept 4 2026) — NO REAL-WORLD REGIONS
 
-| Faction | Region | SILHOUETTE | MASS | LINE | Inspiration Seed |
-|---------|--------|-----------|------|------|-------------------|
-| F001 | Egypt | Column | Stacked-register | Vertical | Temple colossi: Khaveth, Djekhur, Shemris, Amekhet |
-| F002 | Norse | Pyramid | Top-heavy | Diagonal | Runestone figures: Halmarr, Vargrim, Estrith, Falwyn |
-| F003 | Greece | Athletic-V | Even | Curved | Classical heroic: Thrasyles, Therissa, Aethrokles, Sophrona |
-| F004 | Japan | Blade | Base-heavy | Asymmetric | Shrine guardians: Arashido, Yoruka, Hikarune, Mukage |
+Factions are NOT Egypt/Norse/Greece/Japan. Each faction is an ORIGINAL PANTHEON tied to the geographical location of its MYTHOS GATE. The Gate's environment carries the flavor; the culture is 100% INVENTED — our own materials, forms, iconography, armor philosophies, weapons. No real-culture anchors anywhere. This unlocks fully unique armor and weapons (Divine Originality at 100%) and kills the 'authentic-but-not-replica' paradox.
+
+Gate faction definitions (names/rosters firm up as lore develops):
+
+| Faction | Gate Location (Mythos geography) | Biome/Element | SILHOUETTE | MASS | LINE | Roster |
+|---------|---------------------------|---------------|-----------|------|------|--------|
+| F001 | The Sun Gate — great desert | Sun/fire/verdict | Column | Stacked-register | Vertical | Khaveth, Djekhur, Shemris, Amekhet |
+| F002 | The Storm Gate — frozen fjord north | Storm/frost/oath | Pyramid | Top-heavy | Diagonal | Halmarr, Vargrim, Estrith, Falwyn |
+| F003 | The Marble Gate — sunlit peaks | Light/balance | Athletic-V | Even | Curved | Thrasyles, Therissa, Aethrokles, Sophrona |
+| F004 | The Vermilion Gate — shrine isles | Precision/dusk | Blade | Base-heavy | Asymmetric | Arashido, Yoruka, Hikarune, Mukage |
+| F005-F008 | TBD — Gate locations to be revealed | — | reserved | reserved | reserved | — |
+
+Each faction's INVENTED culture defines: its own material palette (drawn from its Gate's biome), its own iconography (one-of-one invented forms per deity), its own armor construction philosophies (Armor Invention Law), its own weapon language (weapon = deity function made solid). Real-world cultural forms (lotus, laurel, torii, nemes, pharaonic beards, knotwork etc.) are RETIRED from all specs and prompts.
 
 **Pairwise check (4 known):**
 - Egypt ↔ Norse: 0 shared ✓
