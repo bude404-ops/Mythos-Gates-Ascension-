@@ -104,3 +104,18 @@ Reference embodiments: SOPHRONA v15/v16 (water gown + marble armor), F002 Norse 
 **THE RULE: armor family is constant, element is unique.** A god of fire and a god of tide wear the same order's plate — only what fills it and the details of its forge-work differ.
 
 **DEATH TIES IN:** the death pile (canon) is always recognizable as First Forge plate — the fallen god's relics read as relics of the same ancient order.
+
+
+## FACTION SIGIL RUNES (BudE404, Sept 4 2026) — every armor piece bears the faction sigil as a glowing rune
+
+Every piece of First Forge armor carries THE REALM'S SIGIL as a rune, glowing with the realm's elemental color. The sigil is the faction's symbol — one per realm, identical on all 4 of its deities' sets, present on EVERY piece: crown, collar, pauldrons, chest cage (largest + brightest — the heart rune), belt, vambraces, gauntlets, greaves. Weapons may bear the mark on head or hilt.
+
+THE SIX SIGILS (pure abstract geometry — no letters, no real-culture forms):
+- 🔥 CINDERLANDS — THE CHEVRON-FLAME: three nested sharp chevrons rising, ascending flame tongues. Glows molten gold-white.
+- 💨 SKYWILDS — THE GALE-SPIRAL: a hard-angular squared spiral, wind caught mid-turn. Glows pale storm-blue.
+- 🌊 DROWNDEEP — THE CASCADE: descending step-bars stacked like falling water tiers. Glows deep teal.
+- 🪨 ROOTSPINE — THE STRATA-BARS: horizontal stacked bars split by a vertical spine-crack. Glows deep amber-green.
+- 🌱 EVERBLOOM — THE BLOOM-NODE: an angular eight-point node around a square seed core. Glows soft green-gold.
+- 💀 THE STILL — THE DESCENDING: a thin inverted triangle over a single still horizontal line. Glows pale violet.
+
+**READING RULE:** shared forge style (god-metal, key-seams, sacred grammar) tells you the AGE the armor came from. The sigil runes glowing in the element's color tell you WHICH REALM's god wears it. Style = era, sigil = faction, silhouette + weapon = the individual deity.
