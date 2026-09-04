@@ -64,7 +64,7 @@ Glow: pale violet ghost-light. Materials: bone-pale granite, black-vein marble, 
 | Morvain | the Last Warden | Warden | THE DUSKSCYTHE — cuts the last thread of light; never parried | Still-Form: edges blurred like a figure seen at last light |
 | Uthrel | the Quiet | Striker | TWIN BOUNDARY BLADES — one for each side of the line between here and after | Threshold-Plate: split down the middle into pale and dark halves, never touching |
 | Senvra | the Lampkeeper | Caster | THE LANTERN STAFF — a staff crowned with a lantern holding the final light of everyone who has passed; she carries them home | Ash-Relief: bone-pale plate with shallow niches, each holding a small ghost-flame |
-| Kaelth | the Ferryman | Ranged | THE OAR-ARCS — paired crescent blades like oars; he rows souls across | Wake-Line: black water-lines flowing into pale stone, like a wake |
+| Ferran | the Ferryman | Ranged | THE OAR-ARCS — paired crescent blades like oars; he rows souls across | Wake-Line: black water-lines flowing into pale stone, like a wake |
 
 ## F5 — WATER 🌊 Realm: **MARENTH** (the Drowned Deep — sunken world of pressure and pearl-light)
 Glow: deep teal. Materials: abyssal basalt, coral-stone, pearl, wave-glass, barnacled marble. Gate in Mythos: the Abyss Gate, drowned coast.

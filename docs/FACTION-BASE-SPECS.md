@@ -34,12 +34,12 @@ CONFIRMED SIX-ELEMENT SYSTEM (BudE404, Sept 4 2026): Earth, Air, Water, Fire, Li
 
 | Faction | Element | Pantheon | Gate & Terrain | Roster (see docs/MYTHOS_CODEX.md) |
 |---------|---------|----------|---------------|--------|
-| F1 | FIRE | The Emberhost | The Cinder Gate — the Ashen Expanse | Kharvun, Sarrath, Vheska, Ohzreth |
-| F2 | AIR | The Galeward | The Skyrend Gate — the Frozen Reach | Haelvar, Yrdis, Sylwen, Naeril |
-| F3 | LIFE | The Verdant Choir | The Bloom Gate — the Sunlit Peaks | Theriel, Miriath, Corvan, Alvenne |
-| F4 | DEATH | The Hushbound | The Dusk Gate — the Shrine Isles | Morvain, Uthrel, Senvra, Kaelth |
-| F5 | WATER | The Tidalmoot | The Abyss Gate — the Drowned Coast | Nerovax, Ilsabet, Maroqu, Thuvis |
-| F6 | EARTH | The Stonewrought | The Root Gate — the Mountain Spine | Grothmar, Bergith, Rhuveth, Delric |
+| F1 | FIRE | THE CINDERLANDS | The Cinder Gate — the Ashen Expanse | Vulkar, Sorvath, Veskara, Orzeth |
+| F2 | AIR | THE SKYWILDS | The Skyrend Gate — the Frozen Reach | Thaelun, Yrdis, Naelis, Sylwen |
+| F3 | LIFE | THE EVERBLOOM | The Bloom Gate — the Sunlit Peaks | Velthar, Mirave, Corvan, Alvenne |
+| F4 | DEATH | THE STILL | The Dusk Gate — the Shrine Isles | Morvain, Uthrel, Senva, Ferran |
+| F5 | WATER | THE DROWNDEEP | The Abyss Gate — the Drowned Coast | Nerovax, Ilsabet, Maroq, Thuvis |
+| F6 | EARTH | THE ROOTSPINE | The Root Gate — the Mountain Spine | Grothmar, Bergith, Rheva, Delric |
 
 ALL prior deity names retired (Khaveth, Halmarr, Thrasyles, Arashido et al.) — the founding roster v2 lives in docs/MYTHOS_CODEX.md, all names invented from the elements.
 

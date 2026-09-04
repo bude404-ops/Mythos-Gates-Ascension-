@@ -58,7 +58,7 @@ Since the Gates moved the deities to their own realms, the **colossus has been t
 
 1. The six elemental powers helped FORM Mythos — the world carries their fingerprints (god-shaped architecture is the standing evidence).
 2. Creation left a residue: THE HOLLOW — a VOID OF RAW UNFORMED ELEMENTAL POWER.
-3. The Hollow threatened to unmake the young world. The six TOGETHER imprisoned it. That imprisonment SAVED Mythos.
+3. The Hollow — a void of stolen elemental powers — threatened to unmake the young world. The six TOGETHER were its FIRST JAILERS: they imprisoned it at the world's founding, and that imprisonment is what SAVED Mythos. But the act left the mortal realm saturated with divine power — to keep balance, Mythos ITSELF expelled the six into their realm domains. Salvation and exile were one act.
 4. But the act concentrated too much divine power inside the world — an imbalance Mythos could not hold. To keep balance, MYTHOS ITSELF EXPELLED THE SIX to their realm domains: ASHFALL (Fire), SKYREND (Air), EVERBLOOM (Life), DUSKMOURN (Death), MARENTH (Water), STONEHEART (Earth).
 5. Ages passed in exile. The six grew into their realms — and FORGOT the Hollow. Their imprisonment of it was built on combined vigilance, and vigilance faded with memory.
 6. The Gates: one per realm, standing in Mythos — the only bridge. Colossi are the six's only way back: vessels grown in exile, powered remotely from the realms. Mortal faith is the structural integrity of the bridge.
