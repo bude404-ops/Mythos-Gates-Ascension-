@@ -103,6 +103,7 @@ Reference embodiments: SOPHRONA v15/v16 (water gown + marble armor), F002 Norse 
    - **+ THE ANCIENT WEAPON RELIC** (one-of-one, function made solid, carried in the gauntlets)
 
 **THE EXPOSURE RULE:** the element IS the visible body everywhere the relics don't cover — arms, legs, torso flanks, neck, the face beneath the helm. The design's signature: god-stuff blazing between five dark relic pieces. Armor anchors; element expresses.
+**AMENDMENT (BudE404, Sept 4): HANDS AND FEET ARE ALWAYS ARMORED — never exposed.** The gauntlets fully enclose the hands and the boots fully enclose the feet on every colossus. No elemental fingers, no elemental toes, ever. The element expresses only at arms, legs, torso flanks, neck, and the face beneath the helm.
 4. **THE GATE-MARK:** one small abstract Gate glyph on the chest cage — pure geometry, no letters — indicating which Gate powers the set.
 
 ### PER-DEITY VARIATION (what differs):
