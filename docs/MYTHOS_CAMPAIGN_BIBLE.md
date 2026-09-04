@@ -69,6 +69,8 @@ Every faction chapter runs the same five-beat rhythm:
 4. **VOW QUESTS (human aspect):** The chapter's deep dungeon — recover the named relic (signature weapon-tree topper for its class). E.g., Cinderlands: recover the EMBERWAKE BOW (archer tree-topper) and the SCALE-CHAIN (assassin tree-topper) from Hollow-nested vaults.
 5. **THE WORLD BOSS (colossal avatar):** Chapter finale T3 — full phase duel (66%/33%). Beat = faction chapter complete, next realm opens, kept pair's human aspects fully unlocked for free-play.
 
+**THE BUILT WORLD (Sept 4 2026, BudE404 — LOCKED):** Mortal Mythos is built in the gods' image — worship-by-evidence made permanent in architecture and craft. Every region's gate-towns, shrines, and monuments visibly echo their faction's deities and dragon species: dragon-prow ships and storm-vane weathervanes in the Nordic fjord towns, crucible-core hearth towers in the kiln-cities, petal-crest rooflines on the bloom-temples, lantern-niche shrines on the black-water isles, fin-buttressed harbors on the drowned coast, crystal-crowned quake-villages in the mountain spine. Environment art carries the Divine Influence grammar everywhere mortals live.
+
 **Free-play after campaign:** fracture outbreaks recur (live loop), dungeons re-run at tiers, world bosses recycle with modifiers, all 12 kept deities playable across both vessels, weapon trees continue through endgame branches.
 
 **Mobile-first note:** tap-to-move at both scales; ability buttons per class; FAITH as the single visible resource bar in both scales.
