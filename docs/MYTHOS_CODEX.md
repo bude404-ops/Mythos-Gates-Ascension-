@@ -123,6 +123,14 @@ Every faction runs exactly two male and two female colossi. Females follow the F
 - F5 WATER (Marenth): SEA SERPENT — finned and flightless: crest-fins, fin-mantles, tail-blades; the swimming silhouette.
 - F6 EARTH (Rootspine): STONE DRAGON — wingless, mountain-built: strata-plate armor, crystal growth along the spine, the walking-hill silhouette.
 
+**THE DUAL VESSEL DOCTRINE (Sept 4 2026, BudE404 — LOCKED 'K yes lets do it'):** Each deity deploys TWO vessels:
+1. THE COLOSSAL DRACONIAN AVATAR — 30-foot war vessel for campaign, wave battles, and boss fights.
+2. THE HUMAN-SIZED DRACONIAN ASPECT — a mortal-scale vessel with draconian features, for dungeon-scale events, separate wave runs, and small-arena bosses. The deity shapes its vessel to fit the Gate it enters.
+PRODUCTION ORDER: the human aspect rolls FIRST for each kept deity. Each faction ships 4 ART MODELS: 2 colossal avatars + 2 human aspects.
+ROLES ARE REMOVED — weapon class is PLAYER CHOICE: warrior / caster / assassin / archer, chosen freely per faction. Weapon trees are built on WEAPON CLASS x FACTION; each deity's canon weapon survives as the signature tree-topper of its class.
+ROSTER TRIM: 2 deities per faction (1M + 1F) = 12 deities, 24 art models. Cinderlands cut call (BudE404): KEEP VHARKAR + VESSKRA. The cut do not die — each faction's two cut deities convert to the SIGNATURE SKINS of the other two weapon-class trees, completing a named identity behind all 4 classes per faction:
+- CINDERLANDS: Vharkar = warrior tree (Crucible Maul) + caster tree (Vesskra's Crucible Staff are both kept avatars); SORVATH = ARCHER tree signature skin (Emberwake Bow); OZRUV = ASSASSIN tree signature skin (Scale-Chain). All four named identities cover the four classes — two playable avatars, two tree skins.
+
 **THE HOLLOW SCOPE (Sept 4 2026, BudE404 — LOCKED):** The Hollow is ENEMY ECOLOGY, not a deity roster — no 24-unit pantheon. Because the Hollow has no true deities (only the Forgotten, trapped in the void), it expresses itself through spawn, and its unit list narrows to three tiers that map directly onto the locked combat spec:
 - BASIC ENEMIES (T1): trash-tier void spawn — ants that die in one tap, ragdoll, swarm for scale contrast against 30-foot avatars.
 - SOME ELITES (T2): brutes — 3-6 hits to stagger, distinct silhouettes, mini-threat moments between boss fights.
