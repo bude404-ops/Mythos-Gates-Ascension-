@@ -123,6 +123,12 @@ Every faction runs exactly two male and two female colossi. Females follow the F
 - F5 WATER (Marenth): SEA SERPENT — finned and flightless: crest-fins, fin-mantles, tail-blades; the swimming silhouette.
 - F6 EARTH (Rootspine): STONE DRAGON — wingless, mountain-built: strata-plate armor, crystal growth along the spine, the walking-hill silhouette.
 
+**THE HOLLOW SCOPE (Sept 4 2026, BudE404 — LOCKED):** The Hollow is ENEMY ECOLOGY, not a deity roster — no 24-unit pantheon. Because the Hollow has no true deities (only the Forgotten, trapped in the void), it expresses itself through spawn, and its unit list narrows to three tiers that map directly onto the locked combat spec:
+- BASIC ENEMIES (T1): trash-tier void spawn — ants that die in one tap, ragdoll, swarm for scale contrast against 30-foot avatars.
+- SOME ELITES (T2): brutes — 3-6 hits to stagger, distinct silhouettes, mini-threat moments between boss fights.
+- WORLD BOSSES (T3): the Hollow's largest manifestations — full duel encounters with 66%/33% phase design; the biggest of these are the Forgotten's own shards forcing their way through fractured Gates.
+The 24 avatars remain the only divine-tier units in the game; the Hollow supplies everything the player fights between them.
+
 **THE MATERIAL CLAUSE (Sept 4 2026, BudE404):** Wings are PART OF THE ARMOR — not organic appendages, not elemental flesh, not separate growths. Every wing pair is forged of the same Aetherium relic-material as the deity's chest plate, ANCHORED INTO THE BACK-PLATE of the chest armor as a fused extension of the five-piece set, sharing its gouged finish, its seams, and its faction glow. The element-native grammar (storm/petal/bone shape language) lives in the wing's ARCHITECTURE only — the SUBSTANCE is always armor of the faction's material. A wing is a relic, not a limb.
 
 **THE GLOBAL RULE (revised):** Wings are ELEMENT-NATIVE — each faction's wing type embodies its own element. Only the FIRE faction is draconic (dragons ARE the fire beast-language — this is why Vharkar and Sorvath wear dragon wings). The other winged factions carry wings built of their own element.

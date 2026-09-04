@@ -80,3 +80,5 @@ KEY REFRAME: the deities were not expelled as punishment — they were expelled 
 - **The death pile:** the element releases its grip and dissipates; the aetherium remains — because matter remains. The armor is never destroyed, only emptied.
 
 **One-line cosmology:** aetherium is the body, the elements are the breath, belief is the pulse.
+
+The Hollow expresses itself through spawn, not avatars: swarms of basic husks, a few elite brutes, and rare world bosses — the largest being shards of the Forgotten itself. The Hollow has no pantheon; it has an infestation.
