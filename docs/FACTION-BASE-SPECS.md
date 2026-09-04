@@ -32,14 +32,16 @@ Since Mythos is our own invented world, factions are built on the main ELEMENTS 
 
 CONFIRMED SIX-ELEMENT SYSTEM (BudE404, Sept 4 2026): Earth, Air, Water, Fire, Life, Death. These are the world's main elements — the factions ARE these elements.
 
-| Faction | Element | Gate & Terrain | Roster | Notes |
-|---------|---------|---------------|--------|-------|
-| F001 | FIRE | Sun Gate — the great desert | Khaveth, Djekhur, Shemris, Amekhet | solar judgment, molten cores, ember dissolve |
-| F002 | AIR | Storm Gate — the frozen fjord north | Halmarr, Vargrim, Estrith, Falwyn | thunder, storm-cloud garments, gale flow |
-| F003 | LIFE (proposed) | Marble Gate — sunlit peaks | Thrasyles, Therissa, Aethrokles, Sophrona | serene balance, harmony, bloom-light |
-| F004 | DEATH (proposed) | Vermilion Gate — shrine isles | Arashido, Yoruka, Hikarune, Mukage | dusk precision, boundary-keeping, stillness |
-| F005 | WATER | Gate TBD | roster TBD | — |
-| F006 | EARTH | Gate TBD | roster TBD | — |
+| Faction | Element | Pantheon | Gate & Terrain | Roster (see docs/MYTHOS_CODEX.md) |
+|---------|---------|----------|---------------|--------|
+| F1 | FIRE | The Emberhost | The Cinder Gate — the Ashen Expanse | Kharvun, Sarrath, Vheska, Ohzreth |
+| F2 | AIR | The Galeward | The Skyrend Gate — the Frozen Reach | Haelvar, Yrdis, Sylwen, Naeril |
+| F3 | LIFE | The Verdant Choir | The Bloom Gate — the Sunlit Peaks | Theriel, Miriath, Corvan, Alvenne |
+| F4 | DEATH | The Hushbound | The Dusk Gate — the Shrine Isles | Morvain, Uthrel, Senvra, Kaelth |
+| F5 | WATER | The Tidalmoot | The Abyss Gate — the Drowned Coast | Nerovax, Ilsabet, Maroqu, Thuvis |
+| F6 | EARTH | The Stonewrought | The Root Gate — the Mountain Spine | Grothmar, Bergith, Rhuveth, Delric |
+
+ALL prior deity names retired (Khaveth, Halmarr, Thrasyles, Arashido et al.) — the founding roster v2 lives in docs/MYTHOS_CODEX.md, all names invented from the elements.
 
 STRUCTURAL NOTE: 6 elements x 4 deities = 24 colossi. The original 32-deity plan would need 2 more factions beyond the six — candidates when the time comes: LIGHT / SHADOW (Shadow ties directly to the Hollow lore: the Forgotten deity born of the void). That decision stays open for BudE404; the six-element foundation is confirmed now.
 
