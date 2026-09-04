@@ -85,3 +85,14 @@ All male titans are POWERFULLY MUSCLED — broad, heavy, godlike mass. NEVER thi
 ## FEMININITY & REALISM RULES (Sept 3 2026, BudE404, LOCKED)
 - FEMALE TITANS ARE FEMININE: soft curves, gentle waists, graceful shoulders, delicate hands, beautiful serene faces. Athletic tone yes — masculine muscle mass never. Divine feminine beauty, always seductive per the art direction.
 - GREEK TITANS READ GREEK: faces modeled on classical Hellenistic statuary (Zeus of Artemision, kore, Aphrodite types) — heavy brows, aquiline noses, realistic features. NO anime stylization: no elongated faces, no oversized shiny eyes, no spiky hair.
+
+## FACTION INNER-LIGHT CODEX (Sept 3 2026, BudE404, LOCKED)
+All inner light, vein glow, molten seams and lamp eyes are coded by FACTION, not by deity — one light color per faction, shared by all four titans:
+- F001 Meridian Court (Egyptian desert): SUN-GOLD — locked by BudE404
+- F002 Stormmoot (Norse storm): STORM-BLUE — locked by BudE404
+- F003 Laurel Agon (Greek arena): WHITE victory light — locked by BudE404
+- F004 Thousand Torii (Japanese torii): TORII VERMILION (red-orange) — proposed, awaiting verdict
+- F005 Silverroot Kindred (Celtic): SILVER-GREEN (moonlit verdant) — proposed, awaiting verdict
+- F006 Radiant Vigil (angelic light): PRISM RADIANCE (iridescent) — proposed, awaiting verdict
+- F007 Black-Iron Dominion (infernal): EMBER-RED (magma crimson) — proposed, awaiting verdict
+- F008 Deepgreen (PNW timber): MOSS EMERALD (deep forest green) — proposed, awaiting verdict
