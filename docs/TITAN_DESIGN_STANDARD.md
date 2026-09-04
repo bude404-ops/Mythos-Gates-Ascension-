@@ -77,3 +77,7 @@ Only canonical versions exist in the repo. F003–F008 cultural design docs + co
 
 ## MALE BUILD RULE (Sept 3 2026, BudE404, LOCKED)
 All male titans are POWERFULLY MUSCLED — broad, heavy, godlike mass. NEVER thin, gaunt, ascetic or willowy. A caster's identity comes from robes, hair, floating elements and weapon — never from a slim frame. "Anorexia-looking" is a hard reject.
+
+## FEMININITY & REALISM RULES (Sept 3 2026, BudE404, LOCKED)
+- FEMALE RULE: female titans stay FEMININE — soft full curves, rounded hips, graceful shoulders, delicate hands, beautiful serene faces, kohl-lined eyes. Godflesh and tone without masculine muscle mass. Seduction lives in curves, styling and presence.
+- ANTI-ANIME RULE: all faces read CLASSICAL REALISM modeled on Hellenistic statuary (Zeus of Artemision for mature males, kore/Aphrodite for females) — realistic proportions, heavy brows, aquiline or soft straight noses. NO elongated stylized faces, NO oversized shiny eyes, NO spiky hair.
