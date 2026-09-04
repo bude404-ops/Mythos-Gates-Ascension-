@@ -142,3 +142,21 @@ THE SIX SIGILS (pure abstract geometry — no letters, no real-culture forms):
 - 💀 DEATH — STILL RESONANCE: pale frost-stillness, void-patina darkening, the plates cold and silent, ghost-light seams — the relic at rest, holding a quiet that unnerves.
 
 **THE RULE (BudE404's line): the faction's element affects the aetherium in its own manner — but the aetherium STAYS PRIMAL IN FORM and CONTAINS THEIR SHAPE.** Resonance changes the surface, the glow, the texture — never the silhouette, never the sacred architecture, never the colossus's form. Expression without deformation.
+
+
+## ELEMENTAL EFFECT GRAMMAR (BudE404, Sept 4 2026) — how the exposed elemental body LOOKS
+
+Shared rules for every realm's element (the look-language):
+1. **COMPRESSED DENSITY** — the element reads as solid muscle-mass, not gas or mist. Limbs, torso, neck all read as anatomy carved from the element itself. Transparency only at the dissolve edges.
+2. **INTERNAL GRADIENT** — brightest/hottest at the core (the heart behind the chest plate), deepening in color toward the extremities. The body has depth like flesh.
+3. **CONSTANT SLOW MOTION** — the element churns in its natural manner, always alive: fire RISES, storm TURNS, tide SWIRS, stone SETTLES, growth SEEDES, shadow POURS. Never a frozen texture.
+4. **EDGE DISSOLVE** — limb edges, shoulders, hair, waist dissolve into drifting particles of the element (embers, wind-streaks, spray, dust, petals, ash). The silhouette stays colossal; the edge is alive.
+5. **GRIP ON THE RELICS** — the element presses against the Aetherium pieces and blazes through their seams (ties to Aetherium Resonance).
+
+Per-realm particle/motion signature:
+- 🔥 FIRE: rising flame-churn, ember-fleck edges, heat-shimmer halo, plume-hair rising off the helm
+- 💨 AIR: turning wind-spirals, streak-trails off the limbs, cloud-braid hair, static crackle at the fingertips
+- 🌊 WATER: swirling tide-currents visible in the muscle, spray-fleck edges, foam at the seams, wave-crash shoulders
+- 🪨 EARTH: settling strata-mass, dust-fall edges, crystal growth at the joints, root-veins in the limbs
+- 🌱 LIFE: blooming/petaling surface, drifting seeds and petals, vine-flow muscle lines, sap-glow pulse
+- 💀 DEATH: pouring shadow-smoke, ash-fall edges, cold violet ghost-light, unnerving stillness that only moves when it must
