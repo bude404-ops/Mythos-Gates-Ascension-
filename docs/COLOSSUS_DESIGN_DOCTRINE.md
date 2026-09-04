@@ -58,3 +58,28 @@ Reference embodiments: SOPHRONA v15/v16 (water gown + marble armor), F002 Norse 
 
 1. CROWNS ARE REGIONAL: if a Colossal wears a crown, it is grown from the faction's OWN regional mythology, architecture, symbols, and materials — Greece: marble laurel and olive fronds with gold inlay; Egypt: sun-disc, cobra-uraeus, scarab motifs; Norse: rune-carved iron and antler crowns; Japan: vermilion crest-diadems. No generic/fantasy crowns.
 2. LEGENDARY HELMETS SANCTIONED: a Colossal MAY wear a full legendary helmet to HIDE ITS FACE — carved from the same regional material as the body, fused/grown like the armor, ornate to the v1.1 standard (engravings, gemstones, gold inlay, mythical symbols). Facelessness reads as divine intimidation — lamp-glow may burn from within the visor/eye-slits, or the helm may be fully sealed. Per-deity choice.
+
+
+---
+
+## THE ELEMENTAL-BODY DOCTRINE (BudE404, Sept 4 2026) — supersedes stone-body colossi
+
+**The colossus IS the element, formed within its ANCIENT ARMOR.**
+
+1. **BODY = THE ELEMENT ITSELF.** Not stone statues — the element is the flesh: Fire = living flame and ember-light; Air = storm-cloud, wind and frozen lightning; Water = living tide and deep-water pressure; Earth = stone and strata (stone IS earth's element — the one realm where stone was always right); Life = living growth, bloom and sap-light; Death = still shadow and pale void-essence. The element fills the armor's shape — blazing in every gap, flowing from every joint, holding the plate aloft. Where there is no armor, the element IS the visible body.
+
+2. **ANCIENT ARMOR = THE ANCHOR.** Each deity's armor is a relic from the age the deities walked Mythos — divine smithwork, one-of-one, irreplaceable. The armor defines the silhouette; the element defines the mass and glow. Armor floating on a body of fire, a storm wearing a war-plate, tide filling an ancient cuirass.
+
+3. **ANCIENT WEAPONS = RELICS GRASPED.** The weapons are the same class of relic — divine artifacts the elemental colossus reaches out and GRIPS. A fist of living fire closing around an ancient haft. Weapons carry their own Gate-magic.
+
+4. **GATE MAGIC POWERS THE AVATAR.** The element does not burn forever on its own — the deity powers the avatar remotely from their realm THROUGH THE GATE. The Gate line is the life-line.
+
+## THE BELIEF SYSTEM (BudE404 open question — proposed canon)
+
+**BELIEF IS THE BINDING.** The element alone is raw and formless — belief is what binds it into a colossus.
+
+- **THE POWER LINE:** mortal faith flows to the Gate → through it into the realm → back out as the power that fills the armor. Visually: streams of prayer-light (soft gold-white) flowing from the world into the Gate, and from the Gate into the armor — the armor DRINKS belief.
+- **BELIEF = DENSITY.** The colossus's solidity IS its faith: FULL BELIEF = solid, blazing, complete elemental body. WANING BELIEF = flickering, translucent edges, gaps in the elemental mass. LOST BELIEF = armor standing empty, element guttering like a dying flame — a shrine, not a god.
+- **GAMEPLAY BRIDGE (ties to canonized FAITH resource):** kills feed the god; faith is the single combat resource; the visual density of the colossus is the faith meter. A low-faith colossus visibly thins. Belief is the health bar of the divine.
+
+**Failure modes:** stone body = missing elemental pillar; empty armor = missing belief/element; generic fire monster = armor lost its relic specificity; element without silhouette = armor not anchoring the form.
