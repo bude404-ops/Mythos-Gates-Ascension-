@@ -1,7 +1,7 @@
 # FACTION-BASE-SPECS — Body Archetype System (New Era)
 
 **Owner:** BudE404
-**Status:** DECIDED — F001 LOCKED, NO RESTART (BudE404, Sept 4 2026)
+**Status:** DECIDED — RESTART WITH F001 (BudE404, Sept 4 2026)
 **Date:** Sept 4, 2026
 
 ---
@@ -124,11 +124,11 @@ Assessment of existing F001 locks against the new Egypt base words (Column / Sta
 | Amekhet | F | Stage 1 v4 (verdict pending) | ⚠️ | Open verdict. Her coiled assassin stance is lower than columnar — but the night-bane veil crown rising tall and crossed vertical blades could carry the Column word. Verdict on v4 + possible v5 dial to enforce vertical line language in her stance. |
 
 ### DECISION (BudE404, Sept 4 2026)
-**NO RESTART WITH F001.** The existing canons stand — the Egypt base words are reverse-engineered from them. F001 completes with Amekhet's pending stages only. The work plan:
-1. Lock Amekhet Stage 1 (with vertical-line emphasis if needed)
-2. Complete Amekhet through Stages 2 and 3
-3. After F001 is complete, run the F001 4-body subset against the matrix
-4. Any drift gets a targeted re-roll — not a full faction rebuild
-5. F002 onward: every new deity built on the FACTION-BASE-SPECS system from the start
+**RESTART WITH F001.** All four F001 deities rebuild from scratch under this spec system — Warcraft Grammar first, Egypt base words (Column/Stacked-register/Vertical), Divine Originality iconography. Existing F001 canons stand only until each deity's replacement is Kept, then are purged (purge-on-keep). Amekhet's pending Stage 1 v4 verdict is SUPERSEDED — she rolls fresh in the restart. The work plan:
+1. KHAVETH Stage 1 re-roll (restart) under full spec system
+2. Each F001 deity re-canonized one at a time through all 3 stages
+3. Existing canon purged per-deity on replacement Keep
+4. F001 restart completes the founding pantheon under the system
+5. F002 onward: same system from the start
 
 This respects the instinct (the system wasn't formalized when F001 was built, so there may be drift) while avoiding unnecessary rework on canons that already conform.
