@@ -50,7 +50,8 @@ Since the Gates moved the deities to their own realms, the **colossus has been t
 - The mortal realm is always called **Mythos** in design docs and copy.
 - Mythos is the theater of war — every campaign/battle system is set there.
 - The Hollow is the enemy, born from the Forgotten's resentment in the void.
-- **Faith/belief is structural**: losing belief weakens Gates and enables Hollow incursion. (Ties to FAITH single-resource combat spec — kills feed the god.)
+- **The Avatar Doctrine: the deities never cross into Mythos themselves — each sends a draconian avatar, a Gate-crossing vessel forged of Aetherium in the First Forge grammar, carrying the deity's element and wielding its relic weapon. When an avatar falls in the mortal realm, that deity's voice goes silent among mortals until the vessel is re-forged. Avatars are the only divine presence mortals ever witness; every god-sighting in Mythos is one of the twenty-four.
+Faith/belief is structural**: losing belief weakens Gates and enables Hollow incursion. (Ties to FAITH single-resource combat spec — kills feed the god.)
 - Colossi are the deities' only presence in Mythos. They are self-grown through the Gates — never mortal-crafted.
 - The deities-walked age stays hidden/forgotten in-world — but its evidence is everywhere in the exaggerated architecture.
 
