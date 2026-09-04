@@ -74,3 +74,6 @@ Only canonical versions exist in the repo. F003–F008 cultural design docs + co
 ## SKIN & BUILD CLARIFICATIONS (Sept 3 2026, BudE404)
 - SKIN RULE: the living godflesh must READ IN-IMAGE — visible molten seams at joints and collarbones, rivers of inner light veining across chest/arms/thighs, inner glow radiating from within the flesh. Skin is god-muscle fused with liquid faction metal, visibly supernatural — never dull metal, never human skin, never a statue.
 - MALE BUILD RULE: male titans are NEVER thin/ascetic/gaunt. All males are powerfully muscled godlike mass. Differentiate males by gear, hair, pose, weight and presence — never by slimming the build.
+
+## MALE BUILD RULE (Sept 3 2026, BudE404, LOCKED)
+All male titans are POWERFULLY MUSCLED — broad, heavy, godlike mass. NEVER thin, gaunt, ascetic or willowy. A caster's identity comes from robes, hair, floating elements and weapon — never from a slim frame. "Anorexia-looking" is a hard reject.
