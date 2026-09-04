@@ -1,0 +1,39 @@
+# COLOSSUS PRODUCTION PIPELINE — Design Sheet System
+Created September 4, 2026. Proposal pending BudE404 approval.
+
+## THE PROBLEM
+
+One hero image is being asked to hold 12+ doctrine rules at once (self-grown anatomy-fused armor, master-craft design, god-shaped world, Mythos Gate, grimdark tone, sigils ≤3, lamp eyes, material unity, scale anchors, composition). The generator trades wins for regressions every roll — Arashido is 17 versions deep. Scene elements (camera, world, weather) and character design (anatomy, armor, weapon) are fighting each other for the model's attention in a single generation.
+
+## THE FIX — 3-STAGE ART PIPELINE, PER DEITY
+
+### STAGE 1 — CHARACTER LOCK (neutral background)
+1. Write a **Design Card** for the deity first (one page, locked text, source of truth for all prompts): name, faction, class, weapon identity, silhouette notes, regional material, glow color, sigils (max 3 + positions), garment element, anatomy notes, doctrine checklist.
+2. Roll the character on a **NEUTRAL STUDIO BACKGROUND** — plain stone dais, simple atmospheric backdrop, full figure standing, front view (plus side view pass if needed). NO world, NO Gate, NO weather, NO mortals. Iterate ONLY the character here. This is the design sheet.
+3. BudE404 verdicts until KEEP → **character locked**.
+
+### STAGE 2 — WORLD COMPOSITION (cinematic canon art)
+4. With the LOCKED Stage-1 character as the reference image, roll the final cinematic: god-shaped exaggerated world, Mythos Gate conduit, tone/weather, scale anchors, distant full-figure dominance. The character can't drift — it's anchored by the approved reference.
+5. BudE404 verdicts until KEEP → **canon art locked**. This is the art/approved canon image.
+
+### STAGE 3 — 3D CONVERSION SHEET (production-ready)
+6. From the locked Stage-1 design, generate the **3D turnaround sheet**: clean A-pose, front/side/back views, neutral lighting, no scene elements, weapon shown SEPARATELY beside the character (Meshy auto-rig fails when characters hold weapons — established workflow rule).
+7. BudE404 approves the turnaround → it becomes the Meshy reference when he gives the explicit GO.
+8. Meshy (image-to-3D, model only) → Mixamo (rig + animations, free library) → Godot/Unity import (BoneAttachment3D for weapon).
+
+## WHY THE DOCTRINE IS ACTUALLY 3D-FRIENDLY
+
+- **Anatomy-fused armor = one continuous mesh.** No separate plate meshes, no attachment/physics overhead, cleaner topology, easier rigging and skinning. The hardest art rule is the best possible 3D rule.
+- **Turnaround sheets are exactly what image-to-3D wants** — clean orthogonal views of a consistent design beat a cinematic hero shot every time.
+- **Weapons as separate props** (locked workflow fix) — generate, attach to hand bone in engine, swap easily.
+- **Glow system = emissive maps + bloom.** Lamp eyes, sigils, power-light all live in the emissive texture channel — cheap, and intensity can be driven by the FAITH resource in-engine (faith feeds the god = the god burns brighter).
+- **Scale = 9m per combat spec**, exaggerated proportions carry over directly from the Warcraft-legendary stance.
+
+## PILOT
+F001 restart (Khaveth) runs this exact pipeline first — Design Card → neutral character lock → Mythos cinematic → 3D turnaround. Validate the system on one deity, then the roster follows.
+
+## COST / CADENCE (per deity, once approved)
+- Stage 1: 2-5 rolls (character only, fast iteration)
+- Stage 2: 1-3 rolls (character anchored, scene only)
+- Stage 3: 1-2 rolls (turnaround)
+- 3D: ~72 credits/deity per the locked budget (30 model + 5 remesh + 5 rig + 12 anims + 20 weapon prop) — only with explicit GO.
