@@ -81,3 +81,7 @@ All male titans are POWERFULLY MUSCLED — broad, heavy, godlike mass. NEVER thi
 ## FEMININITY & REALISM RULES (Sept 3 2026, BudE404, LOCKED)
 - FEMALE RULE: female titans stay FEMININE — soft full curves, rounded hips, graceful shoulders, delicate hands, beautiful serene faces, kohl-lined eyes. Godflesh and tone without masculine muscle mass. Seduction lives in curves, styling and presence.
 - ANTI-ANIME RULE: all faces read CLASSICAL REALISM modeled on Hellenistic statuary (Zeus of Artemision for mature males, kore/Aphrodite for females) — realistic proportions, heavy brows, aquiline or soft straight noses. NO elongated stylized faces, NO oversized shiny eyes, NO spiky hair.
+
+## FEMININITY & REALISM RULES (Sept 3 2026, BudE404, LOCKED)
+- FEMALE TITANS ARE FEMININE: soft curves, gentle waists, graceful shoulders, delicate hands, beautiful serene faces. Athletic tone yes — masculine muscle mass never. Divine feminine beauty, always seductive per the art direction.
+- GREEK TITANS READ GREEK: faces modeled on classical Hellenistic statuary (Zeus of Artemision, kore, Aphrodite types) — heavy brows, aquiline noses, realistic features. NO anime stylization: no elongated faces, no oversized shiny eyes, no spiky hair.
