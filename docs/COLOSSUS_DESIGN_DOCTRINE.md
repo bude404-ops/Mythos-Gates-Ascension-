@@ -91,7 +91,7 @@ Reference embodiments: SOPHRONA v15/v16 (water gown + marble armor), F002 Norse 
 **The elemental bodies differ per deity, and EVERY ARMOR SET AND WEAPON IS UNIQUE — but they all speak ONE SHARED STYLE.** (BudE404 clarification: shared = the STYLE, not identical sets.) All 24 sets and weapons come from the same walked-age forge lineage: same relic-material, same construction signature, same sacred design grammar — but each set is individually forged for its deity, one-of-one in form, like 24 masterworks from one school of smithing. You should know a colossus wears FIRST FORGE work the way you can tell paintings come from one master's studio — instantly recognizable, never duplicated.
 
 ### THE SHARED STYLE — the forge's signature traits (present in EVERY set, but each set unique in form):
-1. **MATERIAL — GOD-METAL:** deep bronze-black relic-metal, ancient worn surface, pale gold inlay seam-linework. The inlay lies DARK until belief enters — then it lights along the seams. Same metal everywhere = same forge.
+1. **MATERIAL — AETHERIUM:** AETHERIUM — deep bronze-black relic-metal, ancient worn surface, pale gold inlay seam-linework. The inlay lies DARK until belief enters — then it lights along the seams. Same metal everywhere = same forge.
 2. **CONSTRUCTION — THE KEY-SEAM:** plates interlock with chevron tab-and-key joinery — no straps, no leather, no fabric anywhere. Plate keys into plate like impossible divine joinery. This seam language is the forge's signature, recognizable on every set.
 3. **SACRED ARCHITECTURE (the constant piece-set):** monumental RELIC CROWN (spire form) • vast COLLAR RING • pauldron monuments rising past the head • CHEST CAGE (the hollow lattice where the elemental core seats — every set has the seat) • relic belt • layered vambraces ending in closed relic gauntlets • towering greaves.
 4. **THE GATE-MARK:** one small abstract Gate glyph on the chest cage — pure geometry, no letters — indicating which Gate powers the set.
@@ -118,4 +118,4 @@ THE SIX SIGILS (pure abstract geometry — no letters, no real-culture forms):
 - 🌱 EVERBLOOM — THE BLOOM-NODE: an angular eight-point node around a square seed core. Glows soft green-gold.
 - 💀 THE STILL — THE DESCENDING: a thin inverted triangle over a single still horizontal line. Glows pale violet.
 
-**READING RULE:** shared forge style (god-metal, key-seams, sacred grammar) tells you the AGE the armor came from. The sigil runes glowing in the element's color tell you WHICH REALM's god wears it. Style = era, sigil = faction, silhouette + weapon = the individual deity.
+**READING RULE:** shared forge style (aetherium, key-seams, sacred grammar) tells you the AGE the armor came from. The sigil runes glowing in the element's color tell you WHICH REALM's god wears it. Style = era, sigil = faction, silhouette + weapon = the individual deity.
