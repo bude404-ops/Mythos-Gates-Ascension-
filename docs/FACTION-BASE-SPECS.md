@@ -16,7 +16,12 @@ This layer applies IDENTICALLY to all 32 deities across all 8 factions. It is sp
 2. **CINDER-BLOCK HANDS.** Hands are oversized relative to the head — each palm roughly head-sized. Weapons sit in these hands naturally; the hand is never lost around the grip.
 3. **10 HEADS TALL MINIMUM.** Body proportion uses the heroic/titanic scale ratio (8-10 head-heights for the figure). The head is small relative to the body. This is non-negotiable — no deity drops below 10:1.
 4. **ARMOR MASS ≥ 30% OF VISIBLE SILHOUETTE.** Armor, ornamentation, and carved relief must occupy at least one-third of the body's visible silhouette area. Skin/flesh regions are carved godflesh with chiseled facets — they read as "armor-adjacent", never as bare mortal skin. The deity is MORE armored than unarmored at every viewing angle.
-5. **WEAPONS SCALED TO THE COLOSSUS, NEVER THE MAN.** Weapons are oversized relative to a human wielder. A two-handed weapon is taller than the deity's torso. A one-handed weapon is at least 2/3 the arm length. Weapons never read as "human-scale sword held by a big guy" — they read as a titan's instrument.
+5. **WEAPONS SCALED TO THE COLOSSUS, NEVER THE MAN.** Weapons must be PROPER FOR THE DEITY'S ROLE AND LORE — each weapon is the deity's function made solid (Khaveth's Scale-Beam Blade = the verdict being weighed). Every Stage 1 spec states the weapon's role/lore justification before its form. Weapons are oversized relative to a human wielder. A two-handed weapon is taller than the deity's torso. A one-handed weapon is at least 2/3 the arm length. Weapons never read as "human-scale sword held by a big guy" — they read as a titan's instrument.
+
+### STYLE LABEL & COPYRIGHT RULE (BudE404, Sept 4 2026)
+The official style label for ALL generation prompts is **"stylized fantasy realism."**
+- NO copyrighted or trademarked IP names in any generation prompt, script, or code sent to generators — no "Warcraft", "WoW", "LOTR", "Diablo", "Dragon Ball" etc. Those references live in internal docs as inspiration notes ONLY; prompts describe the look in neutral descriptive language ("exaggerated heroic proportions, stylized fantasy realism, painterly cinematic film-realism").
+- The grammar below is described in our own words. The label on output: stylized fantasy realism.
 
 ### The Override Rule
 **When in doubt, BIGGER.** If a roll reads "too sane", "too realistic", or "too mortal", the failure is always Layer 1 (Warcraft Grammar), never Layer 2 (faction words). Re-roll with the grammar harder, not the faction words changed.
