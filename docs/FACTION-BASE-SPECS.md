@@ -26,6 +26,41 @@ The official style label for ALL generation prompts is **"stylized fantasy reali
 ### The Armor Invention Law (BudE404, Sept 4 2026)
 God-level armor is NEVER stacked blocks. At divine scale, armor abandons mortal construction logic entirely. Each deity's armor gets its own INVENTED CONSTRUCTION PHILOSOPHY — one of, or a fusion of: flowing liquid-stone plates frozen mid-motion; sweeping curved bands that wrap the body like arcs of the sun's path; flame-silhouette edges; gravity-defying floating segments held by divine power; interlocking wave-plates; crystal-grown extrusions; drapery-cast stone that flows like cloth; asymmetric monumental fins. Curves and sweeps over right angles. The armor should look IMPOSSIBLE to forge — the deity's own divine sculpture, not a blacksmith's stacking job.
 
+### THE FACTION DNA FORMULA (BudE404, Sept 4 2026) — how each faction stays unique, divine, original WITHOUT cheese
+
+THE PROBLEM: banning replicas (no nemes, no real hieroglyphs) accidentally strips the cultural soul — results read generic fantasy. But copying artifacts directly reads cheesy costume-party. The solution is neither: don't copy WHAT a civilization made — copy HOW they made it.
+
+THE THREE-LAYER CULTURAL DNA (defined per faction, BEFORE rolling):
+1. **MATERIAL PALETTE** — the civilization's actual material truth (Egypt: weathered golden sandstone, black granite, lapis blue, turquoise, polished gold inlay). Materials are never cheesy — they ARE the flavor.
+2. **FORM LANGUAGE** — the civilization's design grammar ABSTRACTED into shapes, not artifacts (Egypt: pyramidal tapers, obelisk spires, lotus-bud column curves, sun-disc geometry, broad flat trapezoids, colossal frontal symmetry, horizontal band rhythm). These shapes echo the culture in EVERY invented form without wearing a single artifact.
+3. **CRAFTMARKS** — the civilization's signature techniques executed on invented forms (Egypt: flat relief carving, incised linework, polished stone inlay, smooth monumental polish vs raw weathered stone contrast).
+
+THE WORDING RULE for every prompt: "INVENTED iconography, EXECUTED IN [material palette], BUILT FROM [form language], CARVED WITH [craftmarks]." Invention lives in the forms; culture lives in the materials/shapes/techniques.
+
+THE CHEESE BAN (stays): literal artifacts worn as costume, real glyphs, museum replicas, symbol pileup (more than 3 sigils), cartoon proportions on cultural motifs.
+
+FACTION DNA — F001 EGYPT:
+- Materials: weathered golden sandstone, black granite, lapis-blue inlay, turquoise inlay, polished gold
+- Forms: pyramidal taper, obelisk spire, lotus-bud curve, sun-disc, flat trapezoid, frontal colossal symmetry, horizontal band rhythm
+- Craft: flat relief carving, incised linework, polished inlay, smooth-polish-vs-raw-weather contrast
+
+FACTION DNA — F002 NORSE:
+- Materials: storm granite, bog iron, whalebone, slate, ice
+- Forms: knotwork interlace, prow-curve (longship keel), wedge, rune-stone slab, weathered chunk
+- Craft: deep carved grooves, chip-carve facets, cold-forged banding
+
+FACTION DNA — F003 GREECE:
+- Materials: white Pentelic marble, bronze, lapis, gold leaf
+- Forms: contrapposto S-curve, column flute, laurel sprays, acanthus curl, pediment triangle
+- Craft: smooth polished marble, drilled deep-set lines, chryselephantine inlay contrast
+
+FACTION DNA — F004 JAPAN:
+- Materials: aged shrine cypress, dark granite, vermilion lacquer, bronze
+- Forms: torii gate curve, swept roofline, katana arc, layered shrine terrace, crescent
+- Craft: lacquer-crack glow, precise joinery, brushed steel edge vs rough stone contrast
+
+(F005-F008: DNA defined at roster reveal.)
+
 ### The Override Rule
 **When in doubt, BIGGER.** If a roll reads "too sane", "too realistic", or "too mortal", the failure is always Layer 1 (Warcraft Grammar), never Layer 2 (faction words). Re-roll with the grammar harder, not the faction words changed.
 
