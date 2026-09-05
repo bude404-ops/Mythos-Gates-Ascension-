@@ -42,3 +42,12 @@ F001 restart (Khaveth) runs this exact pipeline first — Design Card → neutra
 
 ## PIPELINE RULE — SINGLE-SUBJECT 3D INPUT (learned Sept 5, v1 GLB failure)
 The image-to-3D input MUST be exactly ONE figure, ONE view — a single standing T-pose/A-pose render on a flat studio background. NEVER feed a multi-view turnaround sheet to image-to-3D: the generator meshes EVERY view on the sheet, producing fused multi-clone models (v1 Vharkar and Kiln-Warden both came out as 4 fused figures from 4-view sheets). The multi-view turnaround sheet remains a Stage-3 ART artifact only; the 3D input is its single-view descendant. Meshy input recipe: "Exactly ONE single figure, one single front view, no duplicates, no grid — full body, T-pose, arms straight out, weapon in hand, flat neutral background."
+
+
+## STAGE 3 — 3D-INPUT SHEET RULES (locked Sept 5, BudE404)
+
+1. **ONE SUBJECT ONLY.** The input image contains exactly one figure, one view. No multi-view grids, no turnarounds in a single frame — the generator clones every figure it sees and the 3D converter fuses all clones into the mesh. Splice or re-roll: single figure per image, always.
+2. **ZERO WEAPONS in the body mesh.** Weapons are NEVER in the input sheet. A weapon merged into the body cannot be rigged separately — it moves as dead weight with whatever bone it touches, cannot be drawn, dropped, swapped, or two-handed. Instead: **weaponless base mesh → Mixamo rig → weapon as a SEPARATE mesh parented to the hand bone.** This also gives us swappable weapons (signature weapon + variants + shop skins) for free.
+3. Neutral A-pose, arms slightly away from torso, open relaxed hands, flat grey studio background, full figure uncropped — the converter's dream input.
+
+Canonical pipeline: canon art → weaponless single-figure A-pose input sheet → Meshy → weaponless base GLB → Mixamo rig → separate weapon prop (modeled from canon registry weapon) attached at hand bone → engine.
