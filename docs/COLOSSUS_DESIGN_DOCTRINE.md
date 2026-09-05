@@ -174,3 +174,16 @@ Faith/belief still FUELS the colossi in lore (belief is the pulse — it lights 
 1. **NO WEAPONS ON THE COLOSSI.** Their combat is completely different from sprite-scale combat: abilities + environment smashing only. The giant hands ARE the disaster — raised palm = ability surge (magma flare, lightning coil, bloom unfold, wisp spiral, tide column, crystal eruption). Never place a weapon in colossal art again.
 2. **THE ELEMENT-FORMED FACE, HARD PUSH.** Human faces on colossi are rejected: the head is a half-emerged sculptural formation of the raw element — zero human features, zero human skin; only glow-pools deep inside fissures where eyes would rest.
 3. **CHAMPIONS REVIEW ONE AT A TIME.** Pilgrim-hero art is judged individually (keep/re-roll per champion), never as batch sheets.
+
+## THE WAKING SIEGE — STATIONARY COLOSSAL COMBAT (v1.5, Sept 5, 2026, BudE404 proposal, adopted)
+The colossi DO NOT ROAM in combat. They are still BUILT INTO THE WORLD — rooted to the shrine, the mere, and their own landscape — and the Hollow comes to THEM in waves.
+
+**Core loop — the siege at the Gate:**
+- The colossal is the tower and the arena: he stands rooted beside his heart-mere, and waves of Hollow enemies converge on the Gate (his most vulnerable point — a god's divinity lives at his Gate, not in his flesh).
+- THE PLAYER IS THE SURGE: the god's hands do not move him, they defend him — sweeping palm slams, eruption zones, ability surges (magma flare / lightning coil / bloom unfold / wisp spiral / tide column / crystal eruption), environment smashing (fissure the ground, collapse the ridge, raise the tide).
+- **Fail state is the Gate, not the god.** Enemies target the Gate and the mere's sanctity; the player intercepts. The god cannot flee, so mastery = zone control, ability rotation, and lane defense.
+- **WAKE STAGES — escalation is emergence:** as the siege intensifies, the god WAKES MORE. Stage 1: only the arm and palm fight, the body still half-land. Stage 2: the torso rises from the terrain. Stage 3: the full colossus stands revealed. The wave curve IS the waking curve — the drama is the land standing up.
+- **Stationary does not mean small.** His body is fixed, but his ELEMENT ranges far: magma rivers, lightning at distance, tide surges across the whole arena. The combat space is the realm.
+- Lore fit: the land does not chase vermin; the vermin come to the god. The god is the world; you defend the world by wielding it.
+
+This supersedes roaming giant-mode traversal for standard colossal encounters (campaign moments may still stage cinematic processions).
