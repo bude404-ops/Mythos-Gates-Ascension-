@@ -177,6 +177,8 @@ Per-deity variation lives within each signature (scale, count, placement) — th
 
 **EMBLEM BAN (Sept 4 2026, BudE404: 'I don't like the region emblems on them'):** NO region emblems, faction sigils, or chest glyphs on ANY deity — dragon OR human. The old 'faction sigil as the only glyph' rule is RETIRED. Armor carries ZERO symbols, ZERO glyphs, ZERO marks — identity reads from material, silhouette, and effects alone. Total visual text-free: no text, no letters, no emblems, ever.
 
+**DRAGON SCALE-ARMOR LAW (Sept 4 2026, BudE404):** A dragon's armor IS its own natural SCALES — massive overlapping draconic scale banks grown from its own body, like cooled lava crust over living fire. NO metal barding, NO plates, NO relic armor on dragon forms. DEATH STATE (dragon): the dragon simply LOSES ALL LIGHT AND FLAMES — the fire departs and what remains is the dark inert scale husk, the empty shed remains of the god's passage. (Human aspects keep their relic armor — read in lore as forged from the god's own shed scales, preserving the one-forge parity without plating the dragon.)
+
 **THE HOLLOW SCOPE (Sept 4 2026, BudE404 — LOCKED):** The Hollow is ENEMY ECOLOGY, not a deity roster — no 24-unit pantheon. Because the Hollow has no true deities (only the Forgotten, trapped in the void), it expresses itself through spawn, and its unit list narrows to three tiers that map directly onto the locked combat spec:
 - BASIC ENEMIES (T1): trash-tier void spawn — ants that die in one tap, ragdoll, swarm for scale contrast against 30-foot avatars.
 - SOME ELITES (T2): brutes — 3-6 hits to stagger, distinct silhouettes, mini-threat moments between boss fights.
