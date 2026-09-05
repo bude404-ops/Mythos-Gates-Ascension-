@@ -209,3 +209,16 @@ The 24 avatars remain the only divine-tier units in the game; the Hollow supplie
 **THE WING LAW — FINAL (Sept 4 2026, BudE404: 'wings go back to draconian wings of the armor itself — looks better'):** ALL wings are DRACONIC PLATE WINGS made of the armor material itself — armored plate-membrane dragon wings with clawed wing-fingers, forged of the same gouged Aetherium as the chest plate, fused into the chest back-plate as part of the five-piece set, sharing its finish, seams, and faction glow. Per-deity variation lives in proportion, sweep, and silhouette ONLY (Vharkar: massive half-spread warden pair. Sorvath: lean swept banking-dive herald pair). The TENDRIL SYSTEM is RETIRED — the Count Law (5/side), Scale Law (root-thick, 2x height), and Flow Law (arc-and-cascade) are all superseded and no longer binding. A wing is forged armor, not poured element.
 
 **WINGED TOTAL:** 13 of 24 (F1 4 + F2 4 + F3 3 + F4 2). 11 carry element-native alternatives instead. Four wing grammars: draconic (fire), wind-born (air), bloom-born (life), reliquary (death).atives instead.
+
+---
+
+## THE TWO-ROLE LOCK (Sept 4 2026, BudE404 — LOCKED)
+**Only TWO weapon roles ship at launch: WARRIOR (two-handed greatsword) and CASTER (long staff).** The four-class spread (warrior/caster/assassin/archer) is TRIMMED TO TWO — superseding the weapon-class-x-faction four-tree structure of the Dual Vessel Doctrine. Assassin and archer classes are DEFERRED, not deleted: they return later as NEW CHARACTERS (roster additions), not re-skins of existing deities.
+
+WHY (BudE404's call): two roles means two deep, meaningful skill trees instead of four shallow ones. Depth over spread.
+
+STRUCTURE IMPLICATIONS:
+- Each faction's deity pair maps cleanly to the two roles: the greatsword chassis (warrior) and the long staff chassis (caster). Gender does NOT bind role — the pair just covers both weapons (current pattern: Haeldir blade / Sylwen staff, Thevril blade / Miriath staff pending verdicts).
+- The cut-deities-as-signature-skins rule is MOOT for launch — with two classes there are no orphan trees to skin. Cut deities return as full new characters if/when assassin/archer classes go live.
+- Weapon trees: WARRIOR TREE (greatsword line, faction-flavored at the top by the male deity's named relic blade) x CASTER TREE (staff line, faction-flavored by the female deity's named relic rod). Two trees, deep tiers, meaningful choices.
+- Existing art canon is UNCHANGED — every locked vessel already carries blade or staff.
