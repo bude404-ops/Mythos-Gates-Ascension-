@@ -35,3 +35,6 @@
 
 ## HOLLOW ORIGIN UNITS (spawn logic — no breeding, no nests)
 The Hollow does not reproduce; it SPREADS. Fractures in a Gate leak raw residue into the region; residue hollows what it touches (T1), accretes copies of the region's strongest things (T2), and where belief has already guttered out, rehearses whole dead gods (T3). Clear the fracture, the tide stops. The strategic layer is therefore GATE INTEGRITY — the FAITH loop is the war.
+
+## CANON LOCK (Sept 5 2026 — BudE404 'Keep' on all three)
+The Hollow champion art is canonized: **THE ERASED DRAKE** (T2 champion — stolen Ashfall armor, art/hollow -> art/approved/HOLLOW-ERASED-DRAKE-CANON.jpg), **THE STILL CHOIR** (T2 champion — stolen Skyrend plate, art/approved/HOLLOW-STILL-CHOIR-CANON.jpg), **THE FURNACE BRUTE** (T3 echo — the dead god's silhouette worn by the Hollow, art/approved/HOLLOW-FURNACE-BRUTE-CANON.jpg). Hollow doctrine stands: the Unmade steal the vault's own armor grammar and giant silhouettes — the Hollow wears our identity against us.

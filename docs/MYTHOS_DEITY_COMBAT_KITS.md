@@ -39,9 +39,9 @@
 | Ashfall | VHARKAR, the Furnace Warden — Crucible Blade (condensed magma) | VESSKRA, the Kiln Mother — Crucible Staff | CANON |
 | Skyrend | HAELDIR, the Thunder Oath — Skyfall Blade (frozen thundercloud) | SYLWEN, the Stormsight — Weather-Glass Staff | CANON |
 | Everbloom | THEVRIL, the Evenhand — Living Scale | MIRIATH, the Stillwater — Mirror Staff | CANON |
-| Duskmourn | MORVAIN, the Last Warden — Dusk Blade (Duskscythe → chassis conversion) | SENVRA, the Lampkeeper — Lantern Staff | art rolled (Bone Giant/Giantess), names LOCKED |
-| Marenth | NEROVAX, the Undertow — Tidal Greatblade | ILSARRA the Mirrorfin — Mirrorfin Staff (grown coral, pearl-lens; recast to caster per Gender-Role Binding) | art rolled (Tide Giant/Giantess), names LOCKED |
-| Stoneheart | GROTHMAR, the Mountain Oath — Tectonic Blade (Maul → chassis conversion) | BERGRUN, the Unmoved — Bulwark Staff (Garrotes → chassis conversion) | art rolled (Stone Giant/Giantess), names LOCKED |
+| Duskmourn | MORVAIN, the Last Warden — Dusk Blade (Duskscythe → chassis conversion) | SENVRA, the Lampkeeper — Lantern Staff | CANON (Stage 2 world kept Sept 5) |
+| Marenth | NEROVAX, the Undertow — Tidal Greatblade | ILSARRA the Mirrorfin — Mirrorfin Staff (grown coral, pearl-lens; recast to caster per Gender-Role Binding) | CANON (Stage 2 world kept Sept 5) |
+| Stoneheart | GROTHMAR, the Mountain Oath — Tectonic Blade (Maul → chassis conversion) | BERGRUN, the Unmoved — Bulwark Staff (Garrotes → chassis conversion) | CANON (Stage 2 world kept Sept 5) |
 
 **Phase cues (T3 duels vs/with giants):** 66% = strata cracks brighten, element-shed doubles (activation lore); 33% = mantle core exposed, frenzy — double specials. Death state: essence departs, the elemental body dissipates; nothing remains but the discarded weapon-echo (lore-only).
 
@@ -56,9 +56,15 @@
 | Everbloom | BLOOM-WARDEN — bloom-blade | BLOOM-KEEPER — living-bloom staff | Living Crown |
 | Duskmourn | GLOAM-WARDEN — gloom-blade | VEIL-KEEPER — gloom-staff | lantern-cage |
 | Marenth | TIDE-WARDEN — tide-blade | PEARL-KEEPER — pearl tide-staff | fin-crown |
-| Stoneheart | QUARRY-WARDEN — quarry-blade | CRYSTAL-KEEPER — deep-staff | crystal-crest |
+| Stoneheart | CRYSTAL-WARDEN — deep-road blade | HEARTROOT-KEEPER — heartroot staff | crystal-crest |
 
 **Sprite kit frame (same numbers both champions, element reskins):** L1 chassis strike (0.35/0.45 s) / L2 element-laced combo (2-hit) / HEAVY champion-flourish AOE (8 m, stagger T2) / SPECIAL element verse (FAITH 15, 12 m, faction element per table above) / ULT CHAMPION RITE (FAITH 60, 15 m, faction storm — miniature Gate Rite). Sprite units fight Hollow T1 at eye height (bestiary horror read) and cannot fight T3 alone — T3 draws the giant through the Gate (dual-scale loop: quest in the small world, war in the big one).
 
 ## C. FAITH ECONOMY (unchanged, restated)
 +1 ant kill / +5 brute / +25 boss phase / passive trickle in worship zones; actives 15–25, ults 60–100; no mana; cosmetics-only F2P. Mercy kills of Mutefolk pay FAITH (kill = release, bestiary law).
+
+## D. SESSION LOCKS (Sept 5 2026 — vault-seal update)
+- ALL 24 deity kits are canon; every name is art-locked (Duskmourn/Marenth/Stoneheart giant names confirmed via Stage 2 keeps).
+- REALM ANCHORS canon: every GATE RITE ult visually pulls its deity's canonized Stage 2 realm (docs/MYTHOS_STAGE2_WORLDS.md) — Vharkar's rite burns the Cinderlands, Sylwen's stills the Calm Eye, etc.
+- HOLLOW side canon: 3 champions locked (HOLLOW-ERASED-DRAKE-CANON, HOLLOW-STILL-CHOIR-CANON, HOLLOW-FURNACE-BRUTE-CANON) — see HOLLOW_TIDE_BESTIARY.md.
+- Stoneheart sprite champions renamed per Stage 2 canon: CRYSTAL-WARDEN (blade, The Deep Roads) + HEARTROOT-KEEPER (staff, The Heartroot) — supersede Quarry-Warden/Crystal-Keeper.

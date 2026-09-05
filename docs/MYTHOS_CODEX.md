@@ -10,9 +10,12 @@
 
 ---
 
+# STAGE 2 WORLDS — CANON COMPLETE (Sept 5 2026)
+**All 24 realm compositions are canon** — every deity anchors a unique domain, tabled in docs/MYTHOS_STAGE2_WORLDS.md. Realm naming follows the locked Gate-name system: **Cinder Gate (Ashfall), Squall Gate (Skyrend), Bloom Gate (Everbloom), Dusk Gate (Duskmourn), Deep Gate (Marenth), Stone Gate (Stoneheart)** — each faction's mortal heartland sits before its Gate, and each deity's domain is a named place within it (GATE RITE ults draw their realm visually).
+
 # GIANT-ERA CANONICAL ROSTER v3.0 (Sept 5 2026 — supersedes all per-faction deity tables above, the Roster Gender Lock table, and every [SUPERSEDED] roster layer below)
 
-**Each faction fields FOUR canonized divine units — TWO GIANT DEITIES + TWO SPRITE CHAMPIONS.** Giants are primordial raw element (zero armor, Gender-Role Binding weapons). Sprite champions are serious-fey elven-lord war-priests (LOTR-craft armor, signature headgear, male = blade / female = staff). All 24 art models are canonized (Stage 1) with Stage 2 world compositions rolled per deity. Names marked ✦ are locked by canonized art; Duskmourn/Marenth/Stoneheart giant names inherit the kept-pair ruling below (art name-lock pending on their Stage 2 keeps).
+**Each faction fields FOUR canonized divine units — TWO GIANT DEITIES + TWO SPRITE CHAMPIONS.** Giants are primordial raw element (zero armor, Gender-Role Binding weapons). Sprite champions are serious-fey elven-lord war-priests (LOTR-craft armor, signature headgear, male = blade / female = staff). All 24 art models are canonized (Stage 1) with Stage 2 world compositions rolled per deity. ALL names ✦ locked — the Sept 5 2026 verdict session sealed the vault: 24/24 deities, 24/24 Stage 2 world compositions (docs/MYTHOS_STAGE2_WORLDS.md), 3/3 Hollow champions.
 
 ## ROSTER OF THE 24
 
@@ -43,26 +46,26 @@
 **F4 — DUSKMOURN** 💀 (realm: the Silent Isles; glow: pale violet ghost-light)
 | Unit | Form | Epithet | Weapon | Domain |
 |---|---|---|---|---|
-| MORVAIN | Bone Giant (M, warrior) | the Last Warden | DUSK BLADE — greatsword converted from the Duskscythe per the Weapon Chassis Law | THE OSSUARY PLAIN (ribcage hills, skull-ossuary city) |
-| SENVRA | Bone Giantess (F, caster) | the Lampkeeper | LANTERN STAFF — holds the last lights of the passed | THE QUIET VIGIL (bone-spire canyon, mirror-still lake) |
+| MORVAIN ✦ | Bone Giant (M, warrior) | the Last Warden | DUSK BLADE — greatsword converted from the Duskscythe per the Weapon Chassis Law | THE OSSUARY PLAIN (ribcage hills, skull-ossuary city) |
+| SENVRA ✦ | Bone Giantess (F, caster) | the Lampkeeper | LANTERN STAFF — holds the last lights of the passed | THE QUIET VIGIL (bone-spire canyon, mirror-still lake) |
 | THE GLOAM-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Last Road | gloom-blade, lantern-cage headgear | THE LANTERN WAYS (unlit lantern-processions) |
 | THE VEIL-KEEPER ✦ | Sprite Champion (F, staff) | Keeper of the Veil | gloom-staff | THE VEILED STAIR (stair-shrine into the gloom) |
 
 **F5 — MARENTH** 🌊 (realm: the Drowned Deep; glow: deep teal)
 | Unit | Form | Epithet | Weapon | Domain |
 |---|---|---|---|---|
-| NEROVAX | Tide Giant (M, warrior) | the Undertow | TIDAL GREATBLADE — heavier than it looks, drags all near it down | THE TIDEGATE COAST (sea-stack gate-pillars, harbor-city) |
-| ILSARRA | Tide Giantess (F, caster) | the Mirrorfin (recast caster per Gender-Role Binding) | MIRRORFIN STAFF — grown coral staff crowned with a pearl-lens mirroring the tides | THE DEEP HOLLOW (still lagoon, coral-cliff gates) |
+| NEROVAX ✦ | Tide Giant (M, warrior) | the Undertow | TIDAL GREATBLADE — heavier than it looks, drags all near it down | THE TIDEGATE COAST (sea-stack gate-pillars, harbor-city) |
+| ILSARRA ✦ | Tide Giantess (F, caster) | the Mirrorfin (recast caster per Gender-Role Binding) | MIRRORFIN STAFF — grown coral staff crowned with a pearl-lens mirroring the tides | THE DEEP HOLLOW (still lagoon, coral-cliff gates) |
 | THE TIDE-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Night Watch | tide-blade, fin-crown | THE FIRST LIGHT HARBOR (pre-dawn breakwater) |
 | THE PEARL-KEEPER ✦ | Sprite Champion (F, staff) | Oracle of the Tides | pearl-crowned tide-staff | THE MOONTIDE SHRINE (tidal rings under the moon) |
 
 **F6 — STONEHEART** 🪨 (realm: the Mountain Spine; glow: pale gold-white crystal over deep umber)
 | Unit | Form | Epithet | Weapon | Domain |
 |---|---|---|---|---|
-| GROTHMAR | Stone Giant (M, warrior) | the Mountain Oath | TECTONIC BLADE — greatsword of the world's first stone, converted from the Tectonic Maul per the Weapon Chassis Law | THE ROOTSPINE GATE (strata-cathedral cavern, crystal river) |
-| BERGRUN | Stone Giantess (F, caster) | the Unmoved | HEARTROOT STAFF — sheer cliff-stone crowned with a geode cluster holding a mote of living light | THE GEODE VAULTS (hollow geode cathedral, mirror pool) |
-| THE QUARRY-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Deep Roads | quarry-blade, crystal-crest | THE DEEP ROAD GATE (arch gallery under the mountain) |
-| THE CRYSTAL-KEEPER ✦ | Sprite Champion (F, staff) | Keeper of the Mountain's Heart | deep-staff with living crystal mote | THE HEARTROOT CHAMBER (deepest shrine, geode constellation) |
+| GROTHMAR ✦ | Stone Giant (M, warrior) | the Mountain Oath | TECTONIC BLADE — greatsword of the world's first stone, converted from the Tectonic Maul per the Weapon Chassis Law | THE ROOTSPINE GATE (strata-cathedral cavern, crystal river) |
+| BERGRUN ✦ | Stone Giantess (F, caster) | the Unmoved | HEARTROOT STAFF — sheer cliff-stone crowned with a geode cluster holding a mote of living light | THE GEODE VAULTS (hollow geode cathedral, mirror pool) |
+| THE CRYSTAL-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Deep Roads | deep-road blade, crystal-crest | THE DEEP ROADS (delving road below the world, lantern-lit carved stone) |
+| THE HEARTROOT-KEEPER ✦ | Sprite Champion (F, staff) | Keeper of the Mountain's Heart | heartroot staff, crystal-crest | THE HEARTROOT (the world-tree of stone, roots singing to her staff) |
 
 ## ROSTER RULINGS (locked)
 1. **KEPT-PAIR INHERITANCE:** each faction's giant pair = the male Warden-role + female Caster-role deities of the founding roster (Vharkar/Vesskra, Haeldir/Sylwen, Thevril/Miriath, Morvain/Senvra, Nerovax/Ilsarra, Grothmar/Bergrun). Cut deities (Sorvath, Ozruv, Yrdis, Naeria, Corvan, Alveth, Uthrel, Ferran, Maruvak, Thuveth, Rhovarr, Dolvarr) are DEFERRED, not deleted — they return as NEW CHARACTERS when assassin/archer classes go live (Two-Role Lock).
@@ -107,9 +110,9 @@ Under the GIANTS & SPRITES doctrine + Two-Role Lock + Gender-Role Binding, each 
 | EVERBLOOM | THEVRIL the Evenhand (Living Scale) — THE VERDANT MARCH | MIRIATH the Stillwater (Mirror Staff) — THE FLOWERDALE | BLOOM-WARDEN — The Seedkeep Gate | BLOOM-KEEPER — The Petal Shrine Terrace | Living Crown |
 | DUSKMOURN | MORVAIN the Last Warden (Dusk Blade) — THE OSSUARY PLAIN | SENVRA the Lampkeeper (Lantern Staff) — THE QUIET VIGIL | GLOAM-WARDEN — The Lantern Ways | VEIL-KEEPER — The Veiled Stair | lantern-cage |
 | MARENTH | NEROVAX the Undertow (Tidal Greatblade) — THE TIDEGATE COAST | ILSARRA the Mirrorfin (Mirrorfin Staff — grown coral, pearl-lens; recast to caster per the Gender-Role Binding) — THE DEEP HOLLOW | TIDE-WARDEN — The First Light Harbor | PEARL-KEEPER — The Moontide Shrine | fin-crown |
-| STONEHEART | GROTHMAR the Mountain Oath (Tectonic Blade) — THE ROOTSPINE GATE | BERGRUN the Unmoved (Bulwark Staff, chassis conversion) — THE GEODE VAULTS | QUARRY-WARDEN — The Deep Road Gate | CRYSTAL-KEEPER — The Heartroot Chamber | crystal-crest |
+| STONEHEART | GROTHMAR the Mountain Oath (Tectonic Blade) — THE ROOTSPINE GATE | BERGRUN the Unmoved (Bulwark Staff, chassis conversion) — THE GEODE VAULTS | CRYSTAL-WARDEN — The Deep Roads | HEARTROOT-KEEPER — The Heartroot | crystal-crest |
 
-Name verdicts: Ashfall/Skyrend/Everbloom giant names LOCKED via canon art; Duskmourn/Marenth/Stoneheart giant names are INHERITED PROPOSALS from the roster below (BudE404 veto per realm). Sprite champion title-names are canon with the sprite art. Sprite champions wield the elven LOTR armor language (Sprite Armor Law) — ember/storm/bloom/gloom/tide/crystal identity lives in the elven seams; the hollow's Unmade Champions wear the same armor grammar (see HOLLOW_TIDE_BESTIARY v2.0).
+Name verdicts RESOLVED (Sept 5 2026): ALL giant names LOCKED via kept Stage 2 art. Sprite champion title-names canon with the sprite art; Stoneheart pair renamed per Stage 2 canon (Crystal-Warden + Heartroot-Keeper). Sprite champions wield the elven LOTR armor language (Sprite Armor Law) — ember/storm/bloom/gloom/tide/crystal identity lives in the elven seams; the hollow's Unmade Champions wear the same armor grammar (see HOLLOW_TIDE_BESTIARY v2.0).
 
 ## F1 — FIRE 🔥 Realm: **ASHFALL** (the Ashlands — burning deserts of cinder-glass)
 Glow: molten gold-white. Materials: ash-sandstone, obsidian glass, molten gold, ember-veined stone. Gate in Mythos: the Cinder Gate, great desert.
