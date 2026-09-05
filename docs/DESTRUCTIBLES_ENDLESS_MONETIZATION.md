@@ -69,3 +69,33 @@ The line that governs all of it: **sell identity, never power.** The master ques
 Faith · relics · progression · world-state · gate integrity · anything affecting the map-progress bar · loot rates · power of any kind at any price.
 
 **Why this works commercially:** the audience that loves this fantasy will pay to look like their god at both scales — and the strongest cosmetics in our game (the giant form itself, the glimpse hand, the ascension moment) are exclusive to us because they're built on our mythology. We're not competing in the generic skin market; we sell the one thing only Mythos Gates can sell.
+
+---
+
+## 4. PETS v2 — THE ELEMENTAL PIXIES (BudE404 refinement, Sept 5)
+## Each pet = an elemental pixie that lights the character in dungeons; it levels for a brighter aura; reskins monetize.
+
+### The concept
+The Emberlings are now **elemental pixies** — tiny kin of your deity's own element, drawn to the Warden like moths to a god's flame. Their signature role: **THE LIVING LANTERN** — your light companion in the dark places (death crypts, the Ember Depths, night regions).
+
+### The leveling ruling (the part that protects the anti-grind doctrine)
+**Brightness is EARNED through deeds, never bought, never farmed.** The pixie has 5 LIGHT TIERS — and it feeds on your deeds, not on pet-XP: discoveries found, rescues completed, hunts won, verdict waves survived. No pet-XP bar exists; the pixie simply glows brighter as your legend grows. Lore-perfect: belief is what burns in Mythos — your deeds are literally its fuel. The tiers CAP — no infinite pet grind, ever.
+
+| TIER | LIGHT | WHAT IT DOES |
+|---|---|---|
+| 1 — Kindled | companion glow | follows you, idle emotes, picks up faith motes |
+| 2 — Lantern | dungeon light radius | lights the dark path, reveals corruption veins on surfaces |
+| 3 — Seeking | secret-sense | soft chime + drifts toward undiscovered lore/secrets |
+| 4 — Truth | reveals the hidden | glows over illusion-walls and false paths in dungeons |
+| 5 — Beacon | full aura | radiant presence, reactive emotes, signals rare events |
+
+**THE HARD LINE — light is navigation and discovery, NEVER combat power:** the pixie's glow never damages, never stuns, never reveals enemies, and never counts as a SAFE-ZONE light in the death-crypt mechanic. That mechanic belongs to the COLD LANTERN RELIC (earned in-game, never sold). Two lights, two roles: **the pixie illuminates, the relic protects.** This keeps the pet on the right side of "sell identity, never power" even inside light-based dungeon mechanics.
+
+### Dual-scale presence
+At sprite scale: circles you as a living lantern. At manifestation/ascension: a mote circling the COLOSSAL HEAD — your little flame riding on the god's shoulder. Same pet, both scales — monetization that reinforces the identity.
+
+### Monetization — reskins only (light level never sold)
+- **PIXIE LINES per faction** (the base skins): Ashfall emberling, Skyrend static-wisp, Everbloom seedling, Duskmourn lantern-mote, Marenth brineling, Stoneheart pebble-sprite
+- **RESKINS**: seasonal variants (harvest-flame, frost-glow), deity-attuned colorways (Vharkar blue-flame pixie), achievement lines (Verdict-rank exclusives, hunt-trophies), event editions
+- **AURA STYLES** (sellable, cosmetic-only): the SHAPE and character of the glow — sparkle patterns, ember-trail vs. steady-flame vs. pulse — while raw radius/brightness stays earned
+- Rare lines earnable through feats; standard + seasonal lines sold. Brightness tier NEVER purchasable — a day-one player and a whale with the same deeds have equally bright pixies. That's the trust contract, and it's the difference between a beloved companion system and a slot machine.
