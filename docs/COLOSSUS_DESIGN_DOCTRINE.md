@@ -9,3 +9,6 @@ In colossus compositions the Gate renders as built infrastructure AT THE BASE of
 
 ## ELEMENT-HAIR LAW (v2.4, Sept 5, 2026, BudE404: 'female hair needs to be elements not actual hair')
 Colossi never have actual hair — what grows from the crown IS the element in motion: Ashfall = molten magma pour; Skyrend = storm-cloud mass streaming into a squall; Everbloom = living blossom boughs and vine canopy; Duskmourn = shadow-ash plume dissolving to mist; Marenth = sea-foam and kelp crest; Stoneheart = raw crystal spires with dust-motes. The word 'hair' is banned from colossus prompts — it renders strands. Kings and queens alike.
+
+## BOTH-ARMS-OUT LAW (v2.5, Sept 5, 2026, BudE404: 'make sure both arms and hands are out so when we make the 3d reference art it will make sense')
+Every colossus composition shows BOTH arms fully emerged and clearly visible — raised away from the torso on both sides, both hands fully out and unobstructed by mist, terrain merge, or world-body growth. The concept art doubles as 3D reference; arm and hand anatomy must read clean for the image-to-3D pipeline.
