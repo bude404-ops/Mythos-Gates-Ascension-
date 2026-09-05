@@ -127,7 +127,7 @@ THE SIX SIGILS (pure abstract geometry — no letters, no real-culture forms):
 - 💨 SKYWILDS — THE GALE-SPIRAL: a hard-angular squared spiral, wind caught mid-turn. Glows pale storm-blue.
 - 🌊 DROWNDEEP — THE CASCADE: descending step-bars stacked like falling water tiers. Glows deep teal.
 - 🪨 ROOTSPINE — THE STRATA-BARS: horizontal stacked bars split by a vertical spine-crack. Glows deep amber-green.
-- 🌱 EVERBLOOM — THE BLOOM-NODE: an angular eight-point node around a square seed core. Glows soft green-gold.
+- 🌱 BLOOMWEALD — THE BLOOM-NODE: an angular eight-point node around a square seed core. Glows soft green-gold.
 - 💀 THE STILL — THE DESCENDING: a thin inverted triangle over a single still horizontal line. Glows pale violet.
 
 **READING RULE:** shared forge style (aetherium, key-seams, sacred grammar) tells you the AGE the armor came from. The sigil runes glowing in the element's color tell you WHICH REALM's god wears it. Style = era, sigil = faction, silhouette + weapon = the individual deity.

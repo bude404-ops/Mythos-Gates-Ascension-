@@ -9,7 +9,7 @@
 
 ## GLOBAL HOLLOW LOOK
 - Forms that read as "silhouette where substance should be": edges that don't quite hold, faces that are ABSENCE rather than features, movement like film run backwards.
-- DE-COLORED, never evil-colored. Where they stand, the region's element DRAINS in a radius — ember-gold grays out in Ashfall, storm-blue flattens to slate in Skyrend, the green goes out of Everbloom, lantern-violet dims to ash in Duskmourn, tide-teal stills to dead glass in Marenth, crystal-light goes dark in Stoneheart. Environment tell = color-drain rings.
+- DE-COLORED, never evil-colored. Where they stand, the region's element DRAINS in a radius — ember-gold grays out in Embermere, storm-blue flattens to slate in Galemarch, the green goes out of Bloomweald, lantern-violet dims to ash in Gloambarrow, tide-teal stills to dead glass in Marenvale, crystal-light goes dark in Stonefell. Environment tell = color-drain rings.
 - The Hollow has NO light of its own. Where the gods ARE their element, the Hollow is the UN-thing: no glow, no shadow-cast, no sound of its own.
 
 ## SCALE LAW (dual-scale enemy read)
@@ -29,7 +29,7 @@
 
 ## T3 — THE AVATARS OF HUNGER (world bosses — full duels, 66%/33% phases)
 - **GATE-WORMS:** colossal serpentine masses of ERODED GATE-MASONRY pushing through fractures — living siege engines of stolen stone. Every Gate-fracture births them; Tower Wave sieges are Gate-Worm attacks. Phase 1: masonry shell (weak points at the old hinge-stones). Phase 2: shell breaks, the void-choir inside exposed.
-- **THE DEAD-GOD SHAPES:** each faction's Act-closer — the Hollow wearing the shape of a god mortals stopped believing in (first canon: the HOLLOW FURNACE BRUTE of Ashfall, a dead furnace-god's silhouette re-hearsed in absence). They mirror the region's own giant grammar: fights that feel like dueling a memory of your own god.
+- **THE DEAD-GOD SHAPES:** each faction's Act-closer — the Hollow wearing the shape of a god mortals stopped believing in (first canon: the HOLLOW FURNACE BRUTE of Embermere, a dead furnace-god's silhouette re-hearsed in absence). They mirror the region's own giant grammar: fights that feel like dueling a memory of your own god.
 - **THE ECHO OF THE FORGOTTEN:** mid-campaign titan — a titanic WRONG-SHAPED SILHOUETTE, vaster than any giant, made of the ABSENCE of the Forgotten's old form. It has no face because no one ever recorded one. It fights as the dark mirror of a giant god — element-shed in reverse (it sheds ABSENCE), same telegraph grammar as player giants, so the player learns giant-phase timings by fighting their own mirror. CANNOT cross a Gate while a Gate stands — it sends shapes and worms instead.
 - **THE NAMING (endgame event, not a unit):** at the Empty Pedestal the Hollow's advance stalls — because mortals begin to SAY THE NAME of the Forgotten. Naming is the one act the Hollow cannot hollow: to name a thing is to form it. The endgame's true weapon is a word. The Forgotten, finally named, is no longer absence — and absence was all it had.
 
@@ -37,4 +37,4 @@
 The Hollow does not reproduce; it SPREADS. Fractures in a Gate leak raw residue into the region; residue hollows what it touches (T1), accretes copies of the region's strongest things (T2), and where belief has already guttered out, rehearses whole dead gods (T3). Clear the fracture, the tide stops. The strategic layer is therefore GATE INTEGRITY — the FAITH loop is the war.
 
 ## CANON LOCK (Sept 5 2026 — BudE404 'Keep' on all three)
-The Hollow champion art is canonized: **THE ERASED DRAKE** (T2 champion — stolen Ashfall armor, art/hollow -> art/approved/HOLLOW-ERASED-DRAKE-CANON.jpg), **THE STILL CHOIR** (T2 champion — stolen Skyrend plate, art/approved/HOLLOW-STILL-CHOIR-CANON.jpg), **THE FURNACE BRUTE** (T3 echo — the dead god's silhouette worn by the Hollow, art/approved/HOLLOW-FURNACE-BRUTE-CANON.jpg). Hollow doctrine stands: the Unmade steal the vault's own armor grammar and giant silhouettes — the Hollow wears our identity against us.
+The Hollow champion art is canonized: **THE ERASED DRAKE** (T2 champion — stolen Embermere armor, art/hollow -> art/approved/HOLLOW-ERASED-DRAKE-CANON.jpg), **THE STILL CHOIR** (T2 champion — stolen Galemarch plate, art/approved/HOLLOW-STILL-CHOIR-CANON.jpg), **THE FURNACE BRUTE** (T3 echo — the dead god's silhouette worn by the Hollow, art/approved/HOLLOW-FURNACE-BRUTE-CANON.jpg). Hollow doctrine stands: the Unmade steal the vault's own armor grammar and giant silhouettes — the Hollow wears our identity against us.

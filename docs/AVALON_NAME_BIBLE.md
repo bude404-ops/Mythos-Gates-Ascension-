@@ -1,5 +1,5 @@
 # THE AVALON NAME BIBLE
-**Canon v1.0 — Sept 5, 2026, BudE404 directive: "change the names of the regions and gods to match a more Avalon vibe."**
+**Canon v1.1 APPLIED — Sept 5, 2026. BudE404 verdict: "I like it, let's apply it all." Table below is locked canon; the rename has been swept across all docs (art filenames keep working names).**
 Rule: GRAMMAR, NOT LIFTS — no real Arthurian names (no Arthur, Merlin, Avalon in-world); the vibe comes from the MUSIC: soft Brythonic consonants, -mere/-holt/-weald/-march/-barrow place suffixes, -wyn/-eth/-aine name endings. The world stays fully original.
 
 ## NAMING GRAMMAR
@@ -30,3 +30,21 @@ Rule: GRAMMAR, NOT LIFTS — no real Arthurian names (no Arthur, Merlin, Avalon 
 - **First Pilgrims**: their titles re-key to the new realms (the Kiln-Warden → the First Warden of the Ember roads — titles of the ROLES survive; only realm names change).
 - **The Forgotten**: unchanged (already Avalon-toned).
 - Full World Bible / quest / NPC sweep executes after BudE404's verdict on the table (art filenames do NOT change — files keep their working names; canon names live in the docs).
+
+## IV. THE LANGUAGE LAW (all world text in Avalon idiom — BudE404: "make sure any language is in an Avalon-type theme")
+
+- **The gods never speak in words.** They speak in WEATHER, WARMTH, AND DREAM. Any god-voice in text is render-style poetry, never dialogue.
+- **Quest titles read as road-songs:** "The Lantern of Llynved," "What the Barrow Remembers," "The Mere-road East."
+- **Road-folk oaths and blessings:** "may the road keep you," "light in the dark places," "the mere remembers."
+- **NPC names:** short, worn, road-folk — fully invented per the grammar. Sample pools:
+  - Embermere: Dwgan, Morys, Tegan, Hadwyn, Brannoc, Serryl
+  - Galemarch: Rhodric, Caiwyn, Nesta, Elowen, Tewdric, Rys
+  - Bloomweald: Wenlowa, Betrys, Corwen, Talmay, Meraud, Lowarch
+  - Gloambarrow: Sorcha, Nyall, Bethoc, Aldwyn, Merrick, Nyfain
+  - Marenvale: Keverne, Tamsyn, Berran, Malew, Idony, Pengel
+  - Stonefell: Cavan, Delwyn, Grigor, Kensa, Tregor, Pyrs
+- **No modern, sci-fi, or other-mythology vocabulary anywhere in world text.** Every proper noun is invented from this grammar.
+- Gate-towns use CAER- (Caerduff, Caerlow); shrine lakes LLYN-; hill shrines BRYN-. Existing town names that already fit the grammar survive (Emberhollow).
+
+## V. ART FILENAME RULE
+Art files keep their original working filenames (ASHFALL-FIRE-GIANT-CANON.jpg = Vaelthorn canon art; no file renames — canon names live in the docs, art is zero-text by law). New art rolls use new-canon naming.

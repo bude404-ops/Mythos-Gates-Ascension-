@@ -46,7 +46,7 @@ Rules:
 - No precision dodging, no i-frames, no target-lock dueling — the giant's health is its LINK (per Gate layer), not its body
 - Attacks are ARCS and FIELDS; enemies are ARMIES; the terrain is the weapon
 - The question the player asks: **"What can I do to this battlefield because I am enormous?"**
-- Ability identity: elemental verbs per deity (Vharkar: magma fissures, ember storms, ground-melt; Sylwen: gale lanes, static fields...) — growth unlocks new BATTLEFIELD VERBS, never +10% damage
+- Ability identity: elemental verbs per deity (Vaelthorn: magma fissures, ember storms, ground-melt; Sylwenna: gale lanes, static fields...) — growth unlocks new BATTLEFIELD VERBS, never +10% damage
 - Movement is strategic: strides reshape lanes; position is a resource (near gate = strong, deep strike = fading)
 
 ## 4. DESTRUCTIBLE / REACTIVE WORLD — THE CONSEQUENCE LAW

@@ -78,7 +78,7 @@ Major story missions are **journeys** through depth layers, not disconnected com
 ## 5. GATES AS PHYSICAL WORLD LANDMARKS
 
 - Gates are **enormous ancient monuments**, visible from huge distances (100–200m tall), never menu portals
-- A Gate's silhouette on the horizon is the compass of the whole region — sprite navigation uses Gates as landmarks ("head toward the Cinder Gate")
+- A Gate's silhouette on the horizon is the compass of the whole region — sprite navigation uses Gates as landmarks ("head toward the Ember Gate")
 - Approach ramps, pilgrimage paths, and offerings daises scale to the Sprite; the Gate itself scales to the God
 - Passing through = the scale transition (growth cinematic, camera ascent, palette shift)
 

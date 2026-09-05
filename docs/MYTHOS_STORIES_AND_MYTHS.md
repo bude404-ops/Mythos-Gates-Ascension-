@@ -25,49 +25,49 @@ A far region lost its harvests, then its people, then its belief. Its Gate thinn
 
 ## B. THE FACTION CYCLES (region-founding legends)
 
-### ASHFALL — "THE BARGAIN OF THE KILN"
-Forgefall's founders found the Cinder Gate but no flame hot enough to work it. The Kiln Mother's sprite vessel walked among them unrecognized — a fey who never seemed to feel the heat — and showed them how to build a kiln that breathes. The Crucible Core at the heart of Forgefall's great hearth is said to hold the first ember she gifted. The forge-masters' oath: "The kiln gives back what you give it — so give it everything."
-**ART SCENE:** Vesskra's sprite-scale vessel standing in the first kiln-hall, lantern-lit, teaching smiths whose faces show the moment of realization.
+### EMBERMERE — "THE BARGAIN OF THE KILN"
+Forgefall's founders found the Ember Gate but no flame hot enough to work it. The Kiln-Queen's sprite vessel walked among them unrecognized — a fey who never seemed to feel the heat — and showed them how to build a kiln that breathes. The Crucible Core at the heart of Forgefall's great hearth is said to hold the first ember she gifted. The forge-masters' oath: "The kiln gives back what you give it — so give it everything."
+**ART SCENE:** Vessamaine's sprite-scale vessel standing in the first kiln-hall, lantern-lit, teaching smiths whose faces show the moment of realization.
 
-### SKYREND — "THE NAMING OF THE STORMS"
-The Stormshards name every storm like a family member because one once carried the Squall Gate's bell-tone to every isle in a single night, warning the archipelago before the wave came. They say the Wind-Singers of Gaileshollow learned song from the sound a storm giant's stride makes in a thunderhead. Every roof carries a storm-vane so "the sky knows we are still listening."
+### GALEMARCH — "THE NAMING OF THE STORMS"
+The Galeways name every storm like a family member because one once carried the Gale Gate's bell-tone to every isle in a single night, warning the archipelago before the wave came. They say the Wind-Singers of Gaileshollow learned song from the sound a storm giant's stride makes in a thunderhead. Every roof carries a storm-vane so "the sky knows we are still listening."
 **ART SCENE:** Vanecliff in a squall — hundreds of storm-vanes turning in unison as a Storm Giant strides the cloud-head above the shipyards.
 
-### EVERBLOOM — "THE ORCHARD OATH"
+### BLOOMWEALD — "THE ORCHARD OATH"
 The Bloom Gate opens once a year, and for that single day nothing in the Bloomward may be killed — hunter's permits void, grudges suspended, even the Thornhedge wardens stand down. The story: the Bloomward once nearly burned in a feud; the next spring, the petal-arches refused to open until every family had planted in each other's orchards. The peace held. The arches opened onto the Petalfall that still stands.
 **ART SCENE:** the Bloom Gate mid-opening — a wall of colossal petals unfurling over a crowded orchard plaza where old enemies hand each other saplings.
 
-### DUSKMOURN — "THE LANTERN LEDGER"
+### GLOAMBARROW — "THE LANTERN LEDGER"
 The Duskmere keep a ledger of every soul they bury, and a lantern lit for each — the niche shrines of Lanternhush hold thousands. When a family line ends, its lantern is allowed to go out in a ceremony of thanks, not grief: "the light kept its promise; it reached the Still ahead of us." The lantern-makers' guild swears the first lantern was lit from the pale glow inside the Bone Giant's chest.
 **ART SCENE:** Lanternhush at night — a new niche being cut and lit while an old lantern's keeper bows beside it; a Bone Giant's silhouette on the far water.
 
-### MARENTH — "THE DIVER'S WAGES"
+### MARENVALE — "THE DIVER'S WAGES"
 The Deep Gate is entered by diving the Tidebellow whirlpool — the tide-priests of Mistrift keep the safe-line markers painted and are paid in first-harvest salt, never coin. The story goes that the first diver surfaced speaking of pressure-cathedrals and a serpent the length of a road, and the priests have been keeping the markers honest ever since: "The Deep is not drowned. The Deep is DEEP. Respect the difference."
 **ART SCENE:** a Mistrift diver at the whirlpool's edge, breath held, city on stilts behind, the faint glow of the Gate far below the water.
 
-### STONEHEART — "THE SLEEPING QUARRY"
-Craghelm's quarry-city was founded when miners heard the mountain snoring. They did not mine the sound — they built around it, cut their homes in the load-bearing style, and sang the tremor-scales to warn each other in the dark. The Stone Gate inside the mountain opens for the geode-fall, the annual moment the crystal rivers surface at Geodefall and the whole Quakeveins glows from within.
+### STONEFELL — "THE SLEEPING QUARRY"
+Craghelm's quarry-city was founded when miners heard the mountain snoring. They did not mine the sound — they built around it, cut their homes in the load-bearing style, and sang the tremor-scales to warn each other in the dark. The Rune Gate inside the mountain opens for the geode-fall, the annual moment the crystal rivers surface at Geodefall and the whole Quakeveins glows from within.
 **ART SCENE:** the geode-fall at night — Geodefall's streets lit by the crystal river surfacing through the town square, a Stone Giant's crown breaking the mountain ridge above.
 
 ## C. THE DEITY SAGAS (character legends — for art + campaign beats)
 
-### VHARKAR — "THE WARDEN'S WATCH"
-When the Fracture opened, the first thing through was not a Hollow horror — it was silence. The Furnace Warden crossed the Cinder Gate with the sunrise behind him — a hundred feet of raw living magma, strata flaking embers as he moved, the condensed-magma greatsword over his shoulder like a roof-beam. The Emberwaste's people say the ash itself bowed. He took no tribute, asked no hymns, and stood vigil at the Gate for a season, shedding slow embers that the forge-masters still copy into the banded seams of their finest work. He answers fear with heat: "A furnace does not tremble. It holds."
+### VAELTHORN — "THE WARDEN'S WATCH"
+When the Fracture opened, the first thing through was not a Hollow horror — it was silence. The Furnace-King crossed the Ember Gate with the sunrise behind him — a hundred feet of raw living magma, strata flaking embers as he moved, the condensed-magma greatsword over his shoulder like a roof-beam. The Embermarch's people say the ash itself bowed. He took no tribute, asked no hymns, and stood vigil at the Gate for a season, shedding slow embers that the forge-masters still copy into the banded seams of their finest work. He answers fear with heat: "A furnace does not tremble. It holds."
 
 ### VESSKRA — "THE MOTHER'S KILN"
-The Kiln Mother's aspect walked Forgefall as a kiln-tender for a generation before anyone knew. When the Tide first crested the Warm Sea, she stood at Ashport's wall and opened her hands — and every lantern, forge, and kiln in the city drew from her like daughters. The oathsmiths' guild still marks their anvils with her chevron. She is the reason Ashfall prays to fire the way other regions pray to mothers.
+The Kiln-Queen's aspect walked Forgefall as a kiln-tender for a generation before anyone knew. When the Tide first crested the Warm Sea, she stood at Ashport's wall and opened her hands — and every lantern, forge, and kiln in the city drew from her like daughters. The oathsmiths' guild still marks their anvils with her chevron. She is the reason Embermere prays to fire the way other regions pray to mothers.
 
-### HAELDIR — "THE HERALD'S CIRCUIT"
-A Storm Giant does not rule the Stormshards; he HERALDS them. The Circuit: when a storm is named, the giant's passing is said to turn them first — the archipelago's storm-vanes imitate the motion, and every island reads the sky by what its roofline does. He carries the Squall Gate's warnings himself, stride-over-isle. The Wind-Singers swear the vanes would stop turning before the sky would ever lie.
+### HAELDOR — "THE HERALD'S CIRCUIT"
+A Storm Giant does not rule the Galeways; he HERALDS them. The Circuit: when a storm is named, the giant's passing is said to turn them first — the archipelago's storm-vanes imitate the motion, and every island reads the sky by what its roofline does. He carries the Gale Gate's warnings himself, stride-over-isle. The Wind-Singers swear the vanes would stop turning before the sky would ever lie.
 
 ### SYLWEN — "THE SONG BELOW THUNDER"
-She taught the Stormshards that a storm is a chorus — you do not command it, you find your part in it. The weather-readers of the north still read her staff's miniature storm before any sky: the day her Weather-Glass turns clear, they say, is the day the world should apologize for something.
+She taught the Galeways that a storm is a chorus — you do not command it, you find your part in it. The weather-readers of the north still read her staff's miniature storm before any sky: the day her Weather-Glass turns clear, they say, is the day the world should apologize for something.
 
-### THEVRIL — "THE EVENHAND'S ARBOR"
+### THEVRAINE — "THE EVENHAND'S ARBOR"
 The Bloom Gate opens on his word alone, and it has opened for every pilgrim equally for as long as the Bloomward remembers — king and beggar-sprite, oath-keeper and oath-breaker. His greatblade's two seeds (one growing, one sleeping) are the Bloomward's oldest riddle: they say when both wake at once, the choice the Evenhand has been holding will finally be made.
 
 ### MIRIATH — "THE STILL WATER"
-Still water is not weak water — it is water that has already won. The Mirror Staff's frozen spring shows each pilgrim the day they were bravest, and Miriath has never once refused to show it, even to cowards. The Bloomward swears no lie has ever been told within sight of her reflection.
+Still water is not weak water — it is water that has already won. The Mirror Staff's frozen spring shows each pilgrim the day they were bravest, and Mirielle has never once refused to show it, even to cowards. The Bloomward swears no lie has ever been told within sight of her reflection.
 
 ### MORVAIN — "THE LAST WATCH"
 The Bone Giant walks the Ossuary Plain each dusk, and the lantern-niches of the whole realm brighten as he passes, like a father checking the sleeping-house. When a last light gutters, they say the Dusk Blade points to the door before anyone knocks. The Duskmere do not fear him; they leave the gate open for him.
@@ -75,21 +75,21 @@ The Bone Giant walks the Ossuary Plain each dusk, and the lantern-niches of the 
 ### SENVRA — "THE LANTERN LEDGER"
 Every lantern in Lanternhush is hers by oath — each one a final light she carries home in the crown of her staff. The Duskmere believe the Lampkeeper knows every name in the Ledger by heart, and that the reason she never speaks is that the recitation never ends.
 
-### NEROVAX — "THE TIDE'S ARGUMENT"
-The Tidegate Coast has no sea-walls — the tide-keepers refused to build them. Nerovax taught them instead to read the Undertow's blade: when the Tidal Greatblade drags the swell low, the storms will be kind; when it hangs still, the coast prepares. The blade is heavier than it looks, like water itself — it drags everything near it down.
+### NEROVANE — "THE TIDE'S ARGUMENT"
+The Tidegate Coast has no sea-walls — the tide-keepers refused to build them. Nerovane taught them instead to read the Undertow's blade: when the Tidal Greatblade drags the swell low, the storms will be kind; when it hangs still, the coast prepares. The blade is heavier than it looks, like water itself — it drags everything near it down.
 
 ### ILSARRA — "THE MIRRORFIN'S WAGER"
 The pearl-lens of her staff mirrors the tides a heartbeat before they turn — and long ago she wagered the Mistrift priests a single question against a lifetime of honest markers: name the one thing the tide always brings back. They guessed salt, wreckage, the drowned. She answered: "the coast." The markers have stayed honest ever since.
 
-### GROTHMAR — "THE MOUNTAIN'S OATH"
-The geode-fall happens on schedule, and the Quakeveins' tremor-songs have never been wrong — because Grothmar keeps the mountain's promises for it. The first miners heard the mountain snore and built around it instead of mining through; the Tectonic Blade planted at the Rootspine Gate is said to be the world's first boundary stone, and the ground still remembers every promise made beside it.
+### GRATHWYN — "THE MOUNTAIN'S OATH"
+The geode-fall happens on schedule, and the Quakeveins' tremor-songs have never been wrong — because Grathwyn keeps the mountain's promises for it. The first miners heard the mountain snore and built around it instead of mining through; the Tectonic Blade planted at the Rootspine Gate is said to be the world's first boundary stone, and the ground still remembers every promise made beside it.
 
-### BERGRUN — "THE UNMOVED"
+### BERGRUNE — "THE UNMOVED"
 When the Hollow Tide first breached the deep roads, the gate-towns panicked — and the Stone Giantess planted her Bulwark Staff at the first crossroads and simply did not move. The road held. The crystal-keepers still set their staffs the same way, sole to stone, and teach the same sentence: a wall is not a thing you build; it is a thing you are.
 
 ## D. THE HOLLOW WAR CHRONICLE (campaign spine — the present day)
 
-1. **THE SILENT COAST** — Marenth's far isles go quiet; no lanterns, no fish, no birds. (First campaign mission; horror tone.)
+1. **THE SILENT COAST** — Marenvale's far isles go quiet; no lanterns, no fish, no birds. (First campaign mission; horror tone.)
 2. **THE GATE MUST HOLD** — the first Tower Wave: a giant god holding a Gate against the Tide while mortals evacuate behind it. (The core gameplay fantasy, made story.)
 3. **THE NARROW WAYS** — the sprite vessels walk the Heartland to rally the Six-Way Concord, since giants cannot enter the Concord without breaking its neutrality. (Human-aspect gameplay, justified in lore.)
 4. **THE EMPTY PEDESTAL** — the Hollow's tide reaches the Concorde. The pedestal is empty. The question the whole world has avoided is now the only one left: does anyone say the Forgotten's name?

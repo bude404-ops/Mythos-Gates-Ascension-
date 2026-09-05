@@ -14,10 +14,10 @@ Deities render as colossal RAW ELEMENTAL GIANTS (100 ft): zero armor, pure livin
 **Composition law — HALF-ZOOM MID-SHOT:** camera at the giant's chest height, moderate distance, giant fills the central two-thirds full-figure, scenic faction landscape breathing around him, scale anchors mandatory (cities at ankle line, sprite processions as sparks against the shins).
 
 ## 3. THE SPRITES — SERIOUS FEY AT 1-3 FT
-Mortals render as fey-small serious fey: lithe elongated proportions, sharp noble features, faction-palette armor and robes at their scale, element-touched glowing eyes. Never cute mascots. Sprite towns and craft build at their own scale. Reference canon: ASHFALL-FIRE-GIANT-CANON.jpg (Vharkar).
+Mortals render as fey-small serious fey: lithe elongated proportions, sharp noble features, faction-palette armor and robes at their scale, element-touched glowing eyes. Never cute mascots. Sprite towns and craft build at their own scale. Reference canon: ASHFALL-FIRE-GIANT-CANON.jpg (Vaelthorn).
 
 ## 4. THE WORLD — ORIGINAL SIX REGIONS
-All environment art draws from MYTHOS_WORLD_BIBLE.md locations only (Emberwaste, Stormshards, Bloomward, Duskmere, Saltreach, Quakeveins, Heartland + the six realms). Divine Influence grammar: mortal architecture echoes its faction's GIANT (crucible-core hearth towers, storm-vane weathervanes, petal-crest rooflines, lantern-niche shrines, fin-buttressed harbors, crystal-crowned quake-villages). Dragons appear ONLY as wild fauna.
+All environment art draws from MYTHOS_WORLD_BIBLE.md locations only (Embermarch, Galeways, Bloomward, Duskmere, Saltreach, Quakeveins, Heartland + the six realms). Divine Influence grammar: mortal architecture echoes its faction's GIANT (crucible-core hearth towers, storm-vane weathervanes, petal-crest rooflines, lantern-niche shrines, fin-buttressed harbors, crystal-crowned quake-villages). Dragons appear ONLY as wild fauna.
 
 ## 5. STANDING LAWS (unchanged)
 - Unified faction palette: two base colors + one accent family; every glow source in an image reads as the same element.

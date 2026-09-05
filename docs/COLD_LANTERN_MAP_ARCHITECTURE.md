@@ -49,7 +49,7 @@ The brief is 90% right. Six honest critiques:
 
 ## 4. THE COLD LANTERN — MISSION ARCHITECTURE
 
-**Premise:** The lantern-flame of Emberhollow has gone cold. Hollow corruption creeps down from the Cinder Gate's battlefield. You — a lantern-sworn sprite warden — must carry the last Cold Lantern to the Gate, evacuate the town, and wake the sleeping fire: Vharkar, the god beneath the mountain.
+**Premise:** The lantern-flame of Emberhollow has gone cold. Hollow corruption creeps down from the Ember Gate's battlefield. You — a lantern-sworn sprite warden — must carry the last Cold Lantern to the Gate, evacuate the town, and wake the sleeping fire: Vaelthorn, the god beneath the mountain.
 
 | # | BEAT | SCALE | SPACE | OBJECTIVE | WORLD-CHANGE | LANDMARK |
 |---|---|---|---|---|---|---|
@@ -94,5 +94,5 @@ The brief is 90% right. Six honest critiques:
 
 ## 7. THE PROTOTYPE
 
-`web-prototype-cold-lantern.html` — a playable vertical slice of this architecture: one continuous map (Emberhollow → forest → shrine → watchtower → road → Cinder Gate → battlefield → caldera), played FIRST as the sprite (escort, survival, discovery beats) then TRANSFORMED at the Gate into the giant on THE SAME GEOMETRY — landmarks you walked now at your feet, evacuees to protect, the Drake returned for its revenge beat, the Grimlight Colossus duel.
+`web-prototype-cold-lantern.html` — a playable vertical slice of this architecture: one continuous map (Emberhollow → forest → shrine → watchtower → road → Ember Gate → battlefield → caldera), played FIRST as the sprite (escort, survival, discovery beats) then TRANSFORMED at the Gate into the giant on THE SAME GEOMETRY — landmarks you walked now at your feet, evacuees to protect, the Drake returned for its revenge beat, the Grimlight Colossus duel.
 

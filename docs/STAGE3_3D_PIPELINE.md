@@ -25,4 +25,4 @@ Auto-rig the GLB, import the frozen combat-spec animation set: idle / walk 4 m/s
 - Combat scale: giants manifest at 9 m in-engine (100 ft primordial stays lore/art-side)
 
 ## ORDER (faction-by-faction, one verdict at a time — the compressed-iteration method)
-**PILOT: Ashfall / Vharkar turnaround sheet → verdict → if clean, the full Ashfall four, then Skyrend → Everbloom → Duskmourn → Marenth → Stoneheart, then the 3 Hollow champions (enemy rigs last).**
+**PILOT: Embermere / Vaelthorn turnaround sheet → verdict → if clean, the full Embermere four, then Galemarch → Bloomweald → Gloambarrow → Marenvale → Stonefell, then the 3 Hollow champions (enemy rigs last).**

@@ -8,7 +8,7 @@ Lore anchors this layer uses (unchanged):
 1. Mythos forced the deities through the Gates to balance their powers; the Gates are Mythos's own architecture
 2. Belief/FAITH is the structural integrity of a Gate
 3. The Forgotten One's fractured Gate birthed the Hollow — corruption of Gates is already in the mythology
-4. Each faction has one Gate (Cinder, Squall, Bloom, Dusk, Deep, Stone)
+4. Each faction has one Gate (Ember, Gale, Bloom, Dusk, Deep, Stone)
 5. A deity cut off from its Gate is limited; connected, it manifests its true colossal elemental form
 
 **THE LAW THIS LAYER ADDS (mechanics only):**
@@ -22,7 +22,7 @@ Lore anchors this layer uses (unchanged):
 |---|---|---|---|
 | **DORMANT** | Grey stone, dead braziers, still air | Only the Sprite aspect can exist; powers capped | Desaturated zone around gate; no elemental weather |
 | **ATTUNED** | Sigils flicker, heat shimmer, motes drift out | Sprite gains GLIMPSE powers (a colossal hand, one fire-lance); ascension possible but charge-limited | Palette warms; first motes of elemental weather |
-| **ACTIVE** | Full elemental bloom, sky-beam visible across the region | True colossal form can manifest near the gate; full power | Weather turns elemental (ember snowfall at Cinder, storm at Squall); biome bloom radiates outward |
+| **ACTIVE** | Full elemental bloom, sky-beam visible across the region | True colossal form can manifest near the gate; full power | Weather turns elemental (ember snowfall at Ember, storm at Gale); biome bloom radiates outward |
 | **DESTABILIZED** | Flickering, cracked stone, guttering beam | Colossal form thins mid-battle — forced retreat risk | Weather stutters; motes stop |
 | **CORRUPTED** | Inverted palette, purple Hollow veins, whispers | Deity LOCKED OUT of the region — cannot manifest | Hollow spawns THROUGH the gate; realm decays to ash |
 | **SEALED** | Inert stone — a monument again | Sprite only, and weakened (no glimpses) | Region goes permanently grey until restored |
@@ -85,7 +85,7 @@ ACTIVATE (rite) · DEFEND (structural waves) · PURGE (cleanse veins) · REPAIR 
 
 ## 10. GATE TRAVEL — pilgrimage, not teleport (the ruling)
 
-- Lore-safe travel: an ACTIVE gate leads to ITS deity's realm — the realm-threshold (Cinder Gate → the Cinderlands). You walk THROUGH as a pilgrim, not teleport between mortal points
+- Lore-safe travel: an ACTIVE gate leads to ITS deity's realm — the realm-threshold (Ember Gate → the Embermere). You walk THROUGH as a pilgrim, not teleport between mortal points
 - Threshold zones are instanced god-territory: earn ascension charges, meet your giant aspect, take relic quests
 - **Ruling: NO mortal-to-mortal fast travel through gates.** Mortal travel stays on pilgrim roads (keeps the world big, keeps gates sacred, honors "not a fast-travel mechanic")
 
