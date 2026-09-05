@@ -117,3 +117,30 @@ At sprite scale: circles you as a living lantern. At manifestation/ascension: a 
 5. **Different session promises** — missions = 15–30 min arcs with breathing room (SAFE beats, NPC beats, aftermath); Trials = short, pure, repeatable, leaderboard-shaped.
 
 Same combat verbs underneath (so mastery transfers) — different games on top (so neither dilutes the other).
+
+---
+
+## 6. THE THREE TRIAL LADDERS (BudE404 ruling, Sept 5)
+## The tower is a standalone combat product: players who skip the campaign entirely get a full game in the Trials — at the scale THEY choose.
+
+The Trials are no longer one ladder — they are THREE, because players who just want to fight should pick their scale:
+
+### 1. THE WARDEN'S TRIAL (sprite lane)
+Pure sprite-combat floors: precision waves, dodge/parry mastery, elite duels, lantern-vs-darkness pressure floors, sprite-scale bosses. For players who love the tight combat and never want to grow.
+Score grammar: no-hit streaks, parry counts, style multipliers, wave count.
+
+### 2. THE COLOSSUS TRIAL (giant lane)
+Pure giant floors: armies, colossal waves, destruction-pattern playgrounds, protection objectives, clock/essence-link management, colossal bosses. For players who bought the fantasy "I am the god" and want to live there.
+Score grammar: wave-clear efficiency, environmental kills, protection saves, link discipline.
+
+### 3. THE FULL VERDICT (mixed ladder — the flagship)
+The original structure: sprite waves → elite → manifestation window → colossal wave → floor boss → next floor. Tests the true skill of the game: knowing WHEN to be small and WHEN to be enormous.
+Score grammar: clock efficiency, form-choice quality, unspent faith.
+
+**Each ladder carries its own leaderboard, its own titles, and its own Shrine Honor lines** (a Warden's Trial god-carving is not a Colossus Trial carving) — three prestige communities under one roof, none required for any other.
+
+### The standalone promise (the Separation Law extended)
+- A combat-first player can LIVE in the Trials: mastery, ranks, cosmetics, pixie light tiers (verdict deeds feed pixies) — a complete game with zero campaign dependency.
+- A story-first player can live in the Pilgrimage: the Trials never gate story, relics, or world-state.
+- The campaign keeps growing by design — new story missions, regions, and deity arcs are the drip-content plan for later ("we always try and keep adding story line missions"), while the Trials' procedural floor composition makes the combat side cheap to extend seasonally.
+- Same combat verbs across all three ladders and the campaign — mastery transfers everywhere; nothing is wasted play.
