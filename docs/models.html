@@ -2,110 +2,26 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AVALON: THE WAKING GATES — Stage 3 Canon Models</title>
 <style>
-  html,body{margin:0;padding:0;overflow:hidden;background:#14141e;font-family:Georgia,serif;-webkit-user-select:none;user-select:none;touch-action:none}
-  #hud{position:fixed;top:10px;left:50%;transform:translateX(-50%);color:#e8c47a;text-align:center;z-index:10;pointer-events:none;width:94%}
-  #title{font-size:15px;letter-spacing:3px}
-  #status{font-size:10px;color:#9a8b6f;margin-top:3px;min-height:12px}
-  #btns{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:11;flex-wrap:wrap;justify-content:center;width:94%}
-  .mbtn{border:2px solid #6f5a33;background:rgba(20,16,10,.85);color:#e8c47a;border-radius:6px;padding:9px 12px;font-size:11px;letter-spacing:1px;font-family:Georgia,serf}
-  .mbtn.on{background:#4a2c10;border-color:#c47a2a}
-  #hint{position:fixed;bottom:58px;left:50%;transform:translateX(-50%);color:#7a705d;font-size:9px;z-index:10;pointer-events:none;text-align:center;width:94%}
+  html,body{margin:0;height:100%;background:#14141e;font-family:Georgia,serif;color:#e8c47a;display:flex;align-items:center;justify-content:center}
+  .card{text-align:center;padding:40px 20px;max-width:620px}
+  .rune{font-size:56px;margin-bottom:16px}
+  h1{font-size:20px;letter-spacing:4px;margin:0 0 10px;font-weight:normal}
+  p{color:#9a8b6f;font-size:13px;line-height:1.7;letter-spacing:1px}
+  a{color:#c47a2a}
+  .tag{color:#7a705d;font-size:10px;margin-top:24px;letter-spacing:1px}
 </style>
 </head>
 <body>
-<div id="hud"><div id="title">🗿 STAGE 3 — CANON MODELS v1</div><div id="status">tap a model to load</div></div>
-<div id="hint">DRAG TO ORBIT · PINCH/WHEEL TO ZOOM · AUTO-TURNTABLE ON</div>
-<div id="btns">
-  <button class="mbtn" data-i="0">VHARKAR<br><small>A-pose variant</small></button>
-  <button class="mbtn" data-i="1">VHARKAR<br><small>turnaround variant</small></button>
-  <button class="mbtn" data-i="2">KILN-WARDEN<br><small>sprite</small></button>
+<div class="card">
+  <div class="rune">🗿</div>
+  <h1>STAGE 3 — REGENERATING</h1>
+  <p>The old meshes were built from superseded concept art and have been purged from the vault.<br><br>
+  Stage 3 3D will regenerate from the v9 PRIMORDIAL canon — the Twelve as terrain-mid-formation, upper-body combat meshes, weaponless bases, single-view inputs.<br><br>
+  The first v9 meshes land on this page. The <a href="siege.html">Waking Siege prototype</a> stays playable meanwhile.</p>
+  <div class="tag">Vaelthorn · Vessamine · Haeldor · Sylwenna · Thevraine · Mirielle · Morvaine · Senneth · Nerovane · Ylsanne · Grathwyn · Bergrune</div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
-<script>
-(() => {
-  const MODELS = [
-    {name:"VHARKAR v4 — TRUE T-pose", url:"./models/vharkar-v4-tpose.bin"},
-    {name:"KILN-WARDEN v4 — T-pose + EAR FIX", url:"./models/kiln-warden-v4-earfix.bin"},
-    {name:"VHARKAR v3 — WEAPONLESS BASE", url:"./models/vharkar-v3-weaponless.bin"},
-    {name:"KILN-WARDEN v3 — WEAPONLESS BASE", url:"./models/kiln-warden-v3-weaponless.bin"},
-    {name:"VHARKAR v2 — CLEAN T-pose", url:"./models/vharkar-v2.bin"},
-    {name:"KILN-WARDEN v2 — CLEAN T-pose", url:"./models/kiln-warden-v2.bin"},
-    {name:"VHARKAR v1 — A-pose variant", url:"./models/vharkar-aposize.bin"},
-    {name:"VHARKAR v1 — turnaround variant", url:"./models/vharkar-turnaround.bin"},
-    {name:"KILN-WARDEN v1 — sprite", url:"./models/kiln-warden.bin"}
-  ];
-  const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x14141e);
-  scene.fog = new THREE.Fog(0x14141e, 40, 160);
-  const camera = new THREE.PerspectiveCamera(50, innerWidth/innerHeight, 0.01, 500);
-  const renderer = new THREE.WebGLRenderer({antialias:true});
-  renderer.setSize(innerWidth, innerHeight);
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-  document.body.appendChild(renderer.domElement);
-  scene.add(new THREE.HemisphereLight(0xbfae8a, 0x101018, 1.0));
-  const key = new THREE.DirectionalLight(0xffe9c4, 1.2); key.position.set(4,8,6); scene.add(key);
-  const rim = new THREE.DirectionalLight(0x7a86b8, 0.7); rim.position.set(-6,4,-8); scene.add(rim);
-  const floor = new THREE.Mesh(new THREE.CircleGeometry(60, 48), new THREE.MeshStandardMaterial({color:0x1e1a26, roughness:1}));
-  floor.rotation.x = -Math.PI/2; scene.add(floor);
-  const disc = new THREE.Mesh(new THREE.CircleGeometry(3.2, 48), new THREE.MeshStandardMaterial({color:0x2b2019, roughness:1, emissive:0xd84a10, emissiveIntensity:0.12}));
-  disc.rotation.x = -Math.PI/2; disc.position.y = 0.005; scene.add(disc);
-
-  const controls = new THREE.OrbitControls(camera, renderer.domElement);
-  controls.enableDamping = true; controls.autoRotate = true; controls.autoRotateSpeed = 1.2;
-  controls.target.set(0, 2, 0);
-
-  const loader = new THREE.GLTFLoader();
-  let current = null, loading = false;
-  const statusEl = document.getElementById('status');
-  const btns = document.querySelectorAll('.mbtn');
-
-  function clearCurrent(){ if (current){ scene.remove(current); current.traverse(o => { if (o.geometry) o.geometry.dispose(); }); current = null; } }
-  function load(i){
-    if (loading) return;
-    clearCurrent();
-    btns.forEach((b,j) => b.classList.toggle('on', j===i));
-    loading = true;
-    statusEl.textContent = 'forging ' + MODELS[i].name + ' …';
-    loader.load(MODELS[i].url, (gltf) => {
-      current = gltf.scene;
-      // normalize: center + fit
-      const box = new THREE.Box3().setFromObject(current);
-      const size = box.getSize(new THREE.Vector3());
-      const center = box.getCenter(new THREE.Vector3());
-      const maxDim = Math.max(size.x, size.y, size.z);
-      const scale = 5.5 / maxDim;
-      current.scale.setScalar(scale);
-      const box2 = new THREE.Box3().setFromObject(current);
-      const c2 = box2.getCenter(new THREE.Vector3());
-      current.position.x -= c2.x; current.position.z -= c2.z; current.position.y -= box2.min.y;
-      scene.add(current);
-      camera.position.set(7, 4.5, 9);
-      controls.target.set(0, 5.5*0.45, 0);
-      controls.update();
-      statusEl.textContent = '✅ ' + MODELS[i].name + ' — KEEP or RE-ROLL?';
-      loading = false;
-      window.__LOADED__ = i;
-    }, undefined, () => { statusEl.textContent = 'load failed — check connection'; loading = false; });
-  }
-  btns.forEach(b => b.addEventListener('click', () => load(+b.dataset.i)));
-
-  (function animate(){
-    requestAnimationFrame(animate);
-    controls.update();
-    renderer.render(scene, camera);
-  })();
-  addEventListener('resize', () => { camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); });
-
-  // auto-load via ?m= (and default model 0)
-  const params = new URLSearchParams(location.search);
-  const m = parseInt(params.get('m') || '0', 10);
-  load(Math.min(Math.max(m,0), MODELS.length-1));
-})();
-</script>
 </body>
 </html>
