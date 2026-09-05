@@ -6,3 +6,6 @@
 
 ## GATE-BELOW-EDITION (v2.3, Sept 5, 2026, BudE404: 'the gate is infrastructure below the colossal... would also make sense in guarding it')
 In colossus compositions the Gate renders as built infrastructure AT THE BASE of the god — the colossus emerges directly above/behind its Gate, reading as the Gate's guardian. Ties the art to THE WAKING SIEGE: the Hollow come for the Gate, and the god stands over it. v6 Ashfall pair (MATERIAL CONTINUITY grammar) confirmed liked — full v2.1+v2.2+v2.3 grammar now applies to all 12 colossi.
+
+## ELEMENT-HAIR LAW (v2.4, Sept 5, 2026, BudE404: 'female hair needs to be elements not actual hair')
+Colossi never have actual hair — what grows from the crown IS the element in motion: Ashfall = molten magma pour; Skyrend = storm-cloud mass streaming into a squall; Everbloom = living blossom boughs and vine canopy; Duskmourn = shadow-ash plume dissolving to mist; Marenth = sea-foam and kelp crest; Stoneheart = raw crystal spires with dust-motes. The word 'hair' is banned from colossus prompts — it renders strands. Kings and queens alike.
