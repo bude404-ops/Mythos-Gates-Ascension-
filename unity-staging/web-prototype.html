@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>MYTHOS GATES — Playable Prototype (Placeholder Build)</title>
+<style>
+  html,body{margin:0;padding:0;overflow:hidden;background:#0a0a12;font-family:Georgia,serif;-webkit-user-select:none;user-select:none;touch-action:none}
+  #hud{position:fixed;top:10px;left:50%;transform:translateX(-50%);color:#e8c47a;text-align:center;z-index:10;pointer-events:none;text-shadow:0 2px 6px #000}
+  #faith{font-size:20px;letter-spacing:2px}
+  #sub{font-size:11px;color:#9a8b6f;margin-top:2px}
+  #moveHint{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);color:#7a705d;font-size:11px;z-index:10;pointer-events:none;text-align:center}
+  .btn{position:fixed;z-index:11;border:2px solid #6f5a33;background:rgba(20,16,10,.82);color:#e8c47a;border-radius:50%;width:74px;height:74px;font-size:11px;letter-spacing:1px;display:flex;align-items:center;justify-content:center;flex-direction:column;font-family:Georgia,serf}
+  .btn small{font-size:8px;color:#9a8b6f;margin-top:1px}
+  .btn:active{background:#3a2c14}
+  #btnL1{right:20px;bottom:86px}
+  #btnSlam{right:110px;bottom:20px}
+  #btnCharge{left:20px;bottom:20px}
+  #btnCharge.on{background:#4a2c10;border-color:#c47a2a}
+  #verdict{position:fixed;top:70px;left:50%;transform:translateX(-50%);color:#6f5a33;font-size:10px;z-index:10;pointer-events:none;text-align:center;width:90%}
+</style>
+</head>
+<body>
+<div id="hud"><div id="faith">FAITH 20</div><div id="sub">THE UNMADE SWARM MUST BE RELEASED</div></div>
+<div id="verdict">Weight reads? One-tap feels good? Slam feels like a moment?<br>→ that's the green light for canon 3D</div>
+<div id="moveHint">TAP GROUND TO MOVE THE GIANT</div>
+<div class="btn" id="btnL1">L1<small>7m ARC</small></div>
+<div class="btn" id="btnSlam">SLAM<small>18m · 15 FAITH</small></div>
+<div class="btn" id="btnCharge">WALK<small>TAP: CHARGE 8 m/s</small></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(() => {
+  // ---------- SCENE ----------
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x1a1a26);
+  scene.fog = new THREE.Fog(0x1a1a26, 60, 220);
+  const camera = new THREE.PerspectiveCamera(62, innerWidth/innerHeight, 0.1, 500);
+  const renderer = new THREE.WebGLRenderer({antialias:true});
+  renderer.setSize(innerWidth, innerHeight);
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  document.body.appendChild(renderer.domElement);
+
+  // light
+  scene.add(new THREE.HemisphereLight(0x8a7a5a, 0x101018, 0.9));
+  const sun = new THREE.DirectionalLight(0xffd9a0, 0.8); sun.position.set(40,80,20); scene.add(sun);
+
+  // ground — Cinderlands placeholder
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(600,600), new THREE.MeshStandardMaterial({color:0x2b2019, roughness:1}));
+  ground.rotation.x = -Math.PI/2; scene.add(ground);
+  const grid = new THREE.GridHelper(600, 60, 0x3a2a1c, 0x241a12); grid.position.y = 0.01; scene.add(grid);
+
+  // worship zone — ember circle
+  const WORSHIP = {pos:new THREE.Vector3(0,0,-30), r:12};
+  const wz = new THREE.Mesh(new THREE.CircleGeometry(WORSHIP.r, 40), new THREE.MeshBasicMaterial({color:0xe8842a, transparent:true, opacity:0.22}));
+  wz.rotation.x = -Math.PI/2; wz.position.copy(WORSHIP.pos).setY(0.05); scene.add(wz);
+  const wzRing = new THREE.Mesh(new THREE.RingGeometry(WORSHIP.r-0.5, WORSHIP.r, 40), new THREE.MeshBasicMaterial({color:0xffb84a, transparent:true, opacity:0.8}));
+  wzRing.rotation.x = -Math.PI/2; wzRing.position.copy(WORSHIP.pos).setY(0.07); scene.add(wzRing);
+
+  // ---------- GIANT (placeholder — primordial fire giant, blocky placeholder rig) ----------
+  const giant = new THREE.Group();
+  const emberMat = new THREE.MeshStandardMaterial({color:0x3a2318, roughness:0.9, emissive:0xd84a10, emissiveIntensity:0.55});
+  const crustMat = new THREE.MeshStandardMaterial({color:0x241a14, roughness:1, emissive:0x8a2a08, emissiveIntensity:0.2});
+  function box(w,h,d,mat){ return new THREE.Mesh(new THREE.BoxGeometry(w,h,d), mat); }
+  // torso 9m tall target
+  const torso = box(2.6, 3.0, 1.6, emberMat); torso.position.y = 5.4; giant.add(torso);
+  const hips  = box(2.2, 1.2, 1.4, crustMat); hips.position.y = 3.6; giant.add(hips);
+  const head  = box(1.1, 1.2, 1.1, emberMat); head.position.y = 7.5; giant.add(head);
+  // furnace eyes
+  const eyeMat = new THREE.MeshBasicMaterial({color:0xffc26a});
+  const eyeL = box(0.18,0.12,0.05, eyeMat); eyeL.position.set(-0.26,7.6,0.56); giant.add(eyeL);
+  const eyeR = box(0.18,0.12,0.05, eyeMat); eyeR.position.set(0.26,7.6,0.56); giant.add(eyeR);
+  // arms
+  const armL = box(0.7,2.8,0.7, crustMat); armL.position.set(-1.9,5.2,0); giant.add(armL);
+  const armR = box(0.7,2.8,0.7, crustMat); armR.position.set(1.9,5.2,0); giant.add(armR);
+  // legs
+  const legL = box(0.9,3.2,0.9, crustMat); legL.position.set(-0.7,1.6,0); giant.add(legL);
+  const legR = box(0.9,3.2,0.9, crustMat); legR.position.set(0.7,1.6,0); giant.add(legR);
+  // greatsword placeholder — condensed magma blade
+  const swordGroup = new THREE.Group();
+  const blade = box(0.5, 4.2, 0.18, new THREE.MeshStandardMaterial({color:0x4a1c08, roughness:0.5, emissive:0xff5a10, emissiveIntensity:0.8}));
+  blade.position.y = 2.4; swordGroup.add(blade);
+  const hilt = box(0.9, 0.25, 0.25, crustMat); hilt.position.y = 0.15; swordGroup.add(hilt);
+  swordGroup.position.set(2.4, 3.2, 0.4); swordGroup.rotation.z = -0.35;
+  giant.add(swordGroup);
+  giant.position.set(0,0,20);
+  scene.add(giant);
+  const GIANT_R = 2.2; // melee reach basis
+
+  // move-target marker
+  const marker = new THREE.Mesh(new THREE.RingGeometry(0.6,0.85,24), new THREE.MeshBasicMaterial({color:0xffb84a, transparent:true, opacity:0.9}));
+  marker.rotation.x = -Math.PI/2; marker.position.y = 0.08; marker.visible = false; scene.add(marker);
+
+  // ---------- SLAM RING ----------
+  const slamRing = new THREE.Mesh(new THREE.RingGeometry(0.85,1.0,64), new THREE.MeshBasicMaterial({color:0xff7a20, transparent:true, opacity:0.9, side:THREE.DoubleSide}));
+  slamRing.rotation.x = -Math.PI/2; slamRing.visible = false; scene.add(slamRing);
+
+  // ---------- ENEMIES ----------
+  const enemies = [];
+  const antMat  = new THREE.MeshStandardMaterial({color:0x1a1a22, roughness:1, emissive:0x111118, emissiveIntensity:0.3});
+  const bruteMat= new THREE.MeshStandardMaterial({color:0x241626, roughness:1, emissive:0x2a0a2a, emissiveIntensity:0.4});
+  function makeAnt(pos){
+    const g = new THREE.Group();
+    const b = box(0.5,0.6,0.7, antMat); b.position.y = 0.3; g.add(b);
+    const hd = box(0.3,0.3,0.3, antMat); hd.position.set(0,0.55,0.35); g.add(hd);
+    g.position.copy(pos); scene.add(g);
+    const e = {type:'ant', obj:g, dead:false, vy:0, spin:0, home:pos.clone(), target:pos.clone(), retarget:2+Math.random()*3};
+    enemies.push(e); return e;
+  }
+  function makeBrute(pos){
+    const g = new THREE.Group();
+    const b = box(1.6,2.2,1.2, bruteMat); b.position.y = 1.1; g.add(b);
+    const hd = box(0.7,0.6,0.7, bruteMat); hd.position.y = 2.6; g.add(hd);
+    g.position.copy(pos); scene.add(g);
+    const e = {type:'brute', obj:g, hp:5, dead:false, stagger:0, home:pos.clone()};
+    enemies.push(e); return e;
+  }
+  // spawn swarm around the field
+  const spawnPts = [];
+  for (let i=0;i<22;i++){ spawnPts.push(new THREE.Vector3((Math.random()-.5)*90, 0, (Math.random()-.5)*90)); }
+  spawnPts.forEach(p => makeAnt(p));
+  makeBrute(new THREE.Vector3(-24, 0, -12));
+  makeBrute(new THREE.Vector3(28, 0, -34));
+
+  // ---------- STATE ----------
+  let faith = 20, charging = false, walkSpeed = 4, chargeSpeed = 8;
+  let moveTarget = null, attacking = 0, slamActive = 0, slamT = 0;
+  let stepPhase = 0, trauma = 0, inWorship = false;
+  const faithEl = document.getElementById('faith');
+  function setFaith(v){ faith = v; faithEl.textContent = 'FAITH ' + Math.floor(faith); }
+  setFaith(20);
+
+  // ---------- INPUT: tap ground to move ----------
+  const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
+  let tapTime = 0;
+  function onTap(ev){
+    const t = ev.touches ? ev.touches[0] : ev;
+    if (Date.now() - tapTime < 120) return; // dedupe double-fire
+    tapTime = Date.now();
+    ndc.x = (t.clientX/innerWidth)*2-1; ndc.y = -(t.clientY/innerHeight)*2+1;
+    ray.setFromCamera(ndc, camera);
+    const hit = ray.intersectObject(ground)[0];
+    if (!hit) return;
+    let p = hit.point.clone(); p.y = 0;
+    const off = p.clone().sub(giant.position); off.y=0;
+    if (off.length() > 30) p = giant.position.clone().add(off.setLength(30)); // 30m tap cap
+    moveTarget = p;
+    marker.position.copy(p).setY(0.08); marker.visible = true;
+  }
+  renderer.domElement.addEventListener('touchend', e => { e.preventDefault(); onTap(e.changedTouches[0]); }, {passive:false});
+  renderer.domElement.addEventListener('click', onTap);
+
+  // buttons
+  const btnL1 = document.getElementById('btnL1'), btnSlam = document.getElementById('btnSlam'), btnCharge = document.getElementById('btnCharge');
+  btnL1.addEventListener('touchstart', e => { e.preventDefault(); doAttack(); }, {passive:false});
+  btnL1.addEventListener('click', doAttack);
+  btnSlam.addEventListener('touchstart', e => { e.preventDefault(); doSlam(); }, {passive:false});
+  btnSlam.addEventListener('click', doSlam);
+  btnCharge.addEventListener('touchstart', e => { e.preventDefault(); charging = !charging; btnCharge.classList.toggle('on', charging); btnCharge.childNodes[1].textContent = charging ? 'CHARGE' : 'WALK'; }, {passive:false});
+  btnCharge.addEventListener('click', () => { charging = !charging; btnCharge.classList.toggle('on', charging); btnCharge.childNodes[1].textContent = charging ? 'CHARGE' : 'WALK'; });
+
+  function doAttack(){
+    if (attacking > 0) return;
+    attacking = 0.8; // windup+recovery placeholder
+    swordGroup.rotation.x = -2.2; // swing pose
+    setTimeout(() => { // strike at windup
+      enemies.forEach(e => {
+        if (e.dead) return;
+        const to = e.obj.position.clone().sub(giant.position); to.y = 0;
+        if (to.length() <= 7){ // 7m arc
+          const ang = to.angleTo(new THREE.Vector3(giant.rotation.x===0?0:Math.sin(giant.rotation.y),0,giant.rotation.y===0?0:0)) || 0; // keep simple: full 7m radius hits
+          killOrHit(e, giant.position);
+        }
+      });
+      trauma = Math.min(1, trauma + 0.15);
+    }, 350);
+  }
+  function killOrHit(e, fromPos){
+    if (e.type === 'ant'){ // ONE TAP ragdoll
+      e.dead = true; e.vy = 6 + Math.random()*4; e.spin = 6 + Math.random()*8;
+      const push = e.obj.position.clone().sub(fromPos).setY(0).normalize();
+      e.vel = push.multiplyScalar(9 + Math.random()*5); e.vel.y = e.vy;
+      setFaith(faith + 1);
+    } else { // brute
+      e.hp -= 1; e.stagger = 1.2;
+      e.obj.position.y += 0.001;
+      if (e.hp <= 0){ e.dead = true; e.vy = 5; const push = e.obj.position.clone().sub(fromPos).setY(0).normalize(); e.vel = push.multiplyScalar(7); e.vel.y = 5; setFaith(faith + 5); }
+    }
+  }
+  function doSlam(){
+    if (slamActive > 0 || faith < 15) return;
+    setFaith(faith - 15);
+    slamActive = 1; slamT = 0;
+    giant.position.y = 0; torso.position.y = 5.4 + 0.8; // crouch pose placeholder
+    trauma = 1.0;
+    slamRing.visible = true;
+    slamRing.position.copy(giant.position).setY(0.1);
+    setTimeout(() => {
+      torso.position.y = 5.4;
+      enemies.forEach(e => {
+        if (e.dead) return;
+        const d = e.obj.position.clone().sub(giant.position).setY(0).length();
+        if (d <= 18){ killOrHit(e, giant.position); }
+      });
+    }, 450);
+  }
+
+  // ---------- CAMERA: mortal height + trauma shake ----------
+  let shakeT = 0;
+  function updateCamera(dt){
+    const g = giant.position;
+    const behind = new THREE.Vector3(Math.sin(giant.rotation.y), 0, Math.cos(giant.rotation.y)).multiplyScalar(-14);
+    const target = new THREE.Vector3(g.x, 2.2, g.z).add(behind); // mortal eye height 2.2m, 14m back
+    camera.position.lerp(target, 3.2 * dt);
+    const look = new THREE.Vector3(g.x, 5.5, g.z);
+    if (trauma > 0){
+      shakeT += dt * 30;
+      const amp = trauma * 0.35;
+      look.x += Math.sin(shakeT*1.3) * amp; look.y += Math.cos(shakeT*1.1) * amp * 0.6;
+      trauma = Math.max(0, trauma - dt * 1.8);
+    }
+    camera.lookAt(look);
+  }
+
+  // ---------- LOOP ----------
+  const clock = new THREE.Clock();
+  function animate(){
+    requestAnimationFrame(animate);
+    const dt = Math.min(clock.getDelta(), 0.05);
+    // move giant
+    const speed = charging ? chargeSpeed : walkSpeed;
+    if (attacking > 0){ attacking -= dt; if (attacking <= 0) swordGroup.rotation.x = 0; }
+    if (moveTarget){
+      const to = moveTarget.clone().sub(giant.position); to.y = 0;
+      if (to.length() < 0.6){ moveTarget = null; marker.visible = false; }
+      else if (attacking <= 0){
+        giant.rotation.y = Math.atan2(to.x, to.z); // face move dir (three.js: z-forward)
+        giant.position.add(to.setLength(Math.min(speed*dt, to.length())));
+        // footstep weight — shake every step cycle
+        stepPhase += (speed/4) * dt * 1.6;
+        if (stepPhase > 1){ stepPhase = 0; trauma = Math.min(1, trauma + (charging ? 0.34 : 0.22)); }
+        // leg bob placeholder
+        const bob = Math.sin(stepPhase*Math.PI)*0.35;
+        legL.position.y = 1.6 + bob; legR.position.y = 1.6 - bob;
+      }
+    }
+    // worship trickle
+    inWorship = giant.position.distanceTo(new THREE.Vector3(WORSHIP.pos.x,0,WORSHIP.pos.z)) < WORSHIP.r;
+    if (inWorship) setFaith(faith + 0.5*dt);
+    wz.material.opacity = inWorship ? 0.45 : 0.22;
+    // slam ring expand
+    if (slamActive > 0){
+      slamT += dt / 0.7; // RingExpandSeconds
+      if (slamT >= 1){ slamActive = 0; slamRing.visible = false; }
+      else {
+        const s = 1 + slamT * 17; // to ~18m radius
+        slamRing.scale.set(s, s, 1);
+        slamRing.material.opacity = 0.9 * (1 - slamT);
+      }
+    }
+    // enemies
+    enemies.forEach(e => {
+      if (e.dead){
+        e.vel.y -= 22 * dt; e.obj.position.addScaledVector(e.vel, dt);
+        e.obj.rotation.x += e.spin * dt;
+        if (e.obj.position.y < -0.5){ scene.remove(e.obj); }
+        return;
+      }
+      if (e.type === 'ant'){
+        const toP = giant.position.clone().sub(e.obj.position); toP.y = 0;
+        if (toP.length() < 25){ e.target = giant.position; }
+        else { e.retarget -= dt; if (e.retarget <= 0){ e.retarget = 2+Math.random()*3; e.target = e.home.clone().add(new THREE.Vector3((Math.random()-.5)*10,0,(Math.random()-.5)*10)); } }
+        const t2 = e.target.clone().sub(e.obj.position); t2.y = 0;
+        if (t2.length() > 0.2){ e.obj.position.add(t2.setLength(2.5*dt)); }
+      } else {
+        if (e.stagger > 0){ e.stagger -= dt; return; }
+        const toP = giant.position.clone().sub(e.obj.position); toP.y = 0;
+        if (toP.length() < 30 && toP.length() > 3.5){ e.obj.position.add(toP.setLength(1.8*dt)); }
+      }
+    });
+    updateCamera(dt);
+    renderer.render(scene, camera);
+  }
+  animate();
+
+  addEventListener('resize', () => {
+    camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
+    renderer.setSize(innerWidth, innerHeight);
+  });
+})();
+</script>
+</body>
+</html>
