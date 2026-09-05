@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>MYTHOS GATES — Playable Prototype (Placeholder Build)</title>
+<title>MYTHOS GATES — Playable Prototype v2 (Feel Pass 1)</title>
 <style>
   html,body{margin:0;padding:0;overflow:hidden;background:#0a0a12;font-family:Georgia,serif;-webkit-user-select:none;user-select:none;touch-action:none}
   #hud{position:fixed;top:10px;left:50%;transform:translateX(-50%);color:#e8c47a;text-align:center;z-index:10;pointer-events:none;text-shadow:0 2px 6px #000}
@@ -34,7 +34,7 @@
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x1a1a26);
   scene.fog = new THREE.Fog(0x1a1a26, 60, 220);
-  const camera = new THREE.PerspectiveCamera(62, innerWidth/innerHeight, 0.1, 500);
+  const camera = new THREE.PerspectiveCamera(66, innerWidth/innerHeight, 0.1, 500);
   const renderer = new THREE.WebGLRenderer({antialias:true});
   renderer.setSize(innerWidth, innerHeight);
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
@@ -90,6 +90,18 @@
   const marker = new THREE.Mesh(new THREE.RingGeometry(0.6,0.85,24), new THREE.MeshBasicMaterial({color:0xffb84a, transparent:true, opacity:0.9}));
   marker.rotation.x = -Math.PI/2; marker.position.y = 0.08; marker.visible = false; scene.add(marker);
 
+  // ---------- SLASH ARC VISUAL ----------
+  const slashArc = new THREE.Mesh(
+    new THREE.RingGeometry(1.2, 7.2, 24, 1, -0.9, 1.8), // ~103-degree fan
+    new THREE.MeshBasicMaterial({color:0xffd08a, transparent:true, opacity:0, side:THREE.DoubleSide}));
+  slashArc.rotation.x = -Math.PI/2; slashArc.position.y = 0.9; scene.add(slashArc);
+  let slashFlash = 0;
+  function showSlashArc(){
+    slashArc.position.set(giant.position.x, 0.9, giant.position.z);
+    slashArc.rotation.z = -giant.rotation.y + Math.PI;   // fan faces forward
+    slashFlash = 1;
+  }
+
   // ---------- SLAM RING ----------
   const slamRing = new THREE.Mesh(new THREE.RingGeometry(0.85,1.0,64), new THREE.MeshBasicMaterial({color:0xff7a20, transparent:true, opacity:0.9, side:THREE.DoubleSide}));
   slamRing.rotation.x = -Math.PI/2; slamRing.visible = false; scene.add(slamRing);
@@ -111,7 +123,7 @@
     const b = box(1.6,2.2,1.2, bruteMat); b.position.y = 1.1; g.add(b);
     const hd = box(0.7,0.6,0.7, bruteMat); hd.position.y = 2.6; g.add(hd);
     g.position.copy(pos); scene.add(g);
-    const e = {type:'brute', obj:g, hp:5, dead:false, stagger:0, home:pos.clone()};
+    const e = {type:'brute', obj:g, hp:5, dead:false, stagger:0, flashT:0, home:pos.clone()};
     enemies.push(e); return e;
   }
   // spawn swarm around the field
@@ -125,6 +137,7 @@
   let faith = 20, charging = false, walkSpeed = 4, chargeSpeed = 8;
   let moveTarget = null, attacking = 0, slamActive = 0, slamT = 0;
   let stepPhase = 0, trauma = 0, inWorship = false;
+  let swingT = 0, hitstopT = 0;
   const faithEl = document.getElementById('faith');
   function setFaith(v){ faith = v; faithEl.textContent = 'FAITH ' + Math.floor(faith); }
   setFaith(20);
@@ -159,20 +172,34 @@
   btnCharge.addEventListener('click', () => { charging = !charging; btnCharge.classList.toggle('on', charging); btnCharge.childNodes[1].textContent = charging ? 'CHARGE' : 'WALK'; });
 
   function doAttack(){
-    if (attacking > 0) return;
-    attacking = 0.8; // windup+recovery placeholder
-    swordGroup.rotation.x = -2.2; // swing pose
-    setTimeout(() => { // strike at windup
+    if (attacking > 0.22) return;               // chain window: queue next swing near end of recovery
+    attacking = 0.55;                            // faster cycle
+    // auto-face nearest enemy within 11m — attacks should never whiff on feel
+    let best = null, bestD = 11;
+    enemies.forEach(e => { if (e.dead) return;
+      const d = e.obj.position.clone().sub(giant.position).setY(0).length();
+      if (d < bestD){ bestD = d; best = e; } });
+    if (best){
+      const to = best.obj.position.clone().sub(giant.position);
+      giant.rotation.y = Math.atan2(to.x, to.z);
+    }
+    swingT = 0.0001;                             // start animated swing
+    setTimeout(() => { // strike at windup (170ms)
+      let hitAny = false;
+      // small committed lunge — the swing carries him forward
+      giant.position.add(new THREE.Vector3(Math.sin(giant.rotation.y), 0, Math.cos(giant.rotation.y)).multiplyScalar(1.6));
+      showSlashArc();
       enemies.forEach(e => {
         if (e.dead) return;
         const to = e.obj.position.clone().sub(giant.position); to.y = 0;
         if (to.length() <= 7){ // 7m arc
-          const ang = to.angleTo(new THREE.Vector3(giant.rotation.x===0?0:Math.sin(giant.rotation.y),0,giant.rotation.y===0?0:0)) || 0; // keep simple: full 7m radius hits
           killOrHit(e, giant.position);
+          hitAny = true;
         }
       });
       trauma = Math.min(1, trauma + 0.15);
-    }, 350);
+      if (hitAny) hitstopT = 0.055;             // hitstop — kills land with weight
+    }, 170);
   }
   function killOrHit(e, fromPos){
     if (e.type === 'ant'){ // ONE TAP ragdoll
@@ -182,7 +209,7 @@
       setFaith(faith + 1);
     } else { // brute
       e.hp -= 1; e.stagger = 1.2;
-      e.obj.position.y += 0.001;
+      e.obj.scale.set(1.14, 1.14, 1.14); e.flashT = 1; // hit feedback punch
       if (e.hp <= 0){ e.dead = true; e.vy = 5; const push = e.obj.position.clone().sub(fromPos).setY(0).normalize(); e.vel = push.multiplyScalar(7); e.vel.y = 5; setFaith(faith + 5); }
     }
   }
@@ -208,10 +235,10 @@
   let shakeT = 0;
   function updateCamera(dt){
     const g = giant.position;
-    const behind = new THREE.Vector3(Math.sin(giant.rotation.y), 0, Math.cos(giant.rotation.y)).multiplyScalar(-14);
-    const target = new THREE.Vector3(g.x, 2.2, g.z).add(behind); // mortal eye height 2.2m, 14m back
+    const behind = new THREE.Vector3(Math.sin(giant.rotation.y), 0, Math.cos(giant.rotation.y)).multiplyScalar(-27);
+    const target = new THREE.Vector3(g.x, 12.5, g.z).add(behind); // HIGH vantage 12.5m, 27m back — commanding view
     camera.position.lerp(target, 3.2 * dt);
-    const look = new THREE.Vector3(g.x, 5.5, g.z);
+    const look = new THREE.Vector3(g.x, 6.5, g.z);
     if (trauma > 0){
       shakeT += dt * 30;
       const amp = trauma * 0.35;
@@ -225,15 +252,31 @@
   const clock = new THREE.Clock();
   function animate(){
     requestAnimationFrame(animate);
-    const dt = Math.min(clock.getDelta(), 0.05);
+    const realDt = Math.min(clock.getDelta(), 0.05);
+    let dt = realDt;
+    if (hitstopT > 0){ hitstopT -= realDt; dt *= 0.18; }   // hitstop: world slows, weight lands
+    // animated sword swing (replaces instant snap): 0->windup->followthrough->return
+    if (swingT > 0){
+      swingT += dt / 0.55;
+      if (swingT >= 1){ swingT = 0; swordGroup.rotation.x = 0; swordGroup.rotation.z = -0.35; }
+      else {
+        const s = Math.sin(swingT * Math.PI);              // 0->1->0
+        swordGroup.rotation.x = -2.4 * s;
+        swordGroup.rotation.z = -0.35 - 0.5 * s;
+      }
+    }
+    if (slashFlash > 0){ slashFlash -= dt * 7; slashArc.material.opacity = Math.max(0, slashFlash) * 0.75; }
     // move giant
     const speed = charging ? chargeSpeed : walkSpeed;
-    if (attacking > 0){ attacking -= dt; if (attacking <= 0) swordGroup.rotation.x = 0; }
+    if (attacking > 0){ attacking -= dt; }
     if (moveTarget){
       const to = moveTarget.clone().sub(giant.position); to.y = 0;
       if (to.length() < 0.6){ moveTarget = null; marker.visible = false; }
       else if (attacking <= 0){
-        giant.rotation.y = Math.atan2(to.x, to.z); // face move dir (three.js: z-forward)
+        const targetYaw = Math.atan2(to.x, to.z);           // face move dir (three.js: z-forward)
+        let d = targetYaw - giant.rotation.y;
+        while (d > Math.PI) d -= Math.PI*2; while (d < -Math.PI) d += Math.PI*2;
+        giant.rotation.y += d * Math.min(1, 10*dt);         // smooth turn
         giant.position.add(to.setLength(Math.min(speed*dt, to.length())));
         // footstep weight — shake every step cycle
         stepPhase += (speed/4) * dt * 1.6;
@@ -265,6 +308,7 @@
         if (e.obj.position.y < -0.5){ scene.remove(e.obj); }
         return;
       }
+      if (e.type === 'brute' && e.flashT > 0){ e.flashT -= dt*4; const s = 1 + 0.14*Math.max(0,e.flashT); e.obj.scale.set(s,s,s); }
       if (e.type === 'ant'){
         const toP = giant.position.clone().sub(e.obj.position); toP.y = 0;
         if (toP.length() < 25){ e.target = giant.position; }
