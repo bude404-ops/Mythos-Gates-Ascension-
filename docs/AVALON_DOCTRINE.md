@@ -204,12 +204,12 @@ Mirrors the one-armor law: ONE skill tree per role; weapon branches and pledge b
 
 ### 1. THE CLASS IS THE WEAPON — six classes, six weapons, six unique class trees
 No role-vs-weapon matrix — the weapon you carry IS your class and style. THE SIX DISCIPLINES (the locked role ladder, 1:1):
-- **BLADE** (Warden lineage) — relic-coated straight blade; duelist craft: edge-coating rites, Parry-Rite, Vow Strike
-- **LANTERN** (Keeper) — shrine-lantern staff + short blade; light-craft: light radius, Hearth Blessing, Lantern Rite
-- **DAGGER** (Walker) — paired road-daggers; scout craft: Mist-Read, Road Dash, First-Footstep
-- **SONG** (Singer) — bell-staff / hand-harp song-relic; hymn-craft: Hymn of the Road, Verses of Waking, Silence-Break
-- **HAMMER** (Smith) — great forge hammer; forge-craft: Molten Strike, Anvil Prayer, Bulwark Forge
-- **TOWER** (Vigil) — tower shield + mace; bulwark-craft: Bulwark Oath, Gate-Devotion, Last Vigil
+- **WARDEN** — carries the OATHBLADE (relic-coated straight blade); duelist craft: edge-coating rites, Parry-Rite, Vow Strike
+- **KEEPER** — carries the RELIC LANTERN (shrine-lantern staff + short blade); light-craft: light radius, Hearth Blessing, Lantern Rite
+- **WAYFARER** — carries the WAY-DAGGERS (paired road-daggers); scout craft: Mist-Read, Road Dash, First-Footstep
+- **CANTOR** — carries the BELL-STAFF (song-relic); hymn-craft: Hymn of the Road, Verses of Waking, Silence-Break
+- **SMITH** — carries the RITE HAMMER (great forge hammer); forge-craft: Molten Strike, Anvil Prayer, Bulwark Forge
+- **VIGIL** — carries the GATE-SHIELD (tower shield + mace); bulwark-craft: Bulwark Oath, Gate-Devotion, Last Vigil
 Each weapon carries ONE UNIQUE CLASS TREE — identity, FACTION-NEUTRAL (the craft, not the dream).
 
 ### 2. THE FACTION IS THE ABILITIES — six deity-granted ability trees
@@ -223,7 +223,7 @@ The Mark (pledged faction) unlocks that deity's ABILITY TREE — six genuinely D
 Each ~10–12 abilities deep, prayer/rite grammar, FAITH resource; capstone per deity = a Gate-Rite-charging miracle.
 
 ### 3. THE BUILD MATH (deliberately limited)
-Build = class tree + faction tree. **6 × 6 = 36 readable builds**, bounded content: ~72 class skills + ~66 faction abilities ≈ 138 skills total — a full game's worth, capped by design. A Blade pledged to Ashfall (ember-coated dueling) plays completely differently from a Blade pledged to Duskmourn (veil-lantern dueling): same craft, different dream.
+Build = Order tree + faction tree. **6 × 6 = 36 readable builds**, bounded content: ~72 class skills + ~66 faction abilities ≈ 138 skills total — a full game's worth, capped by design. A Blade pledged to Ashfall (ember-coated dueling) plays completely differently from a Blade pledged to Duskmourn (veil-lantern dueling): same craft, different dream.
 
 ### 4. CHANGES vs the Weapon-Faction Bond (v1 retired)
 - The God's Temper (weapons forged at Gates carrying faction element) RETIRED as a build mechanic — weapons are neutral class craft. It survives as LORE ONLY for named/legendary weapons (cosmetic origin stories, collectible flavor — zero build complexity).
@@ -236,3 +236,7 @@ Build = class tree + faction tree. **6 × 6 = 36 readable builds**, bounded cont
 
 ### 6. THE RE-PLEDGE LAW (Sept 5 2026, BudE404 — resolves the fork)
 Re-pledging is **FREE and unlimited** — no token-gating, no cost, no cooldown tax. "Based on who you are and what you have unlocked": each faction tree keeps its own unlocked nodes permanently; re-pledging just swaps which deity's tree is active on your Mark. In fiction: the gods are not jealous — a pilgrim may carry a new dream and walk back to an old one whenever the road asks it. DESIGN INTENT (BudE404): players experiment freely with all 36 builds — build play IS the fun, never a paywall. Monetization stays in cosmetics (identity, never power).
+
+
+### 7. THE ORDER NAMES — FINAL (Sept 5 2026, BudE404: 'I like wayfarer and cantor')
+The six classes are THE ORDERS: **Warden** (Oathblade), **Keeper** (Relic Lantern), **Wayfarer** (Way-Daggers), **Cantor** (Bell-Staff), **Smith** (Rite Hammer), **Vigil** (Gate-Shield). Every class is a vocation on the road; the weapon is the named rite-tool of that vocation. The rejected generic discipline names (Blade/Lantern/Dagger/Song/Hammer/Tower) are retired everywhere — ladder captions, prop names, UI, docs.
