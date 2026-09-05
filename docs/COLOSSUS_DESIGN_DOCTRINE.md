@@ -12,3 +12,6 @@ Colossi never have actual hair — what grows from the crown IS the element in m
 
 ## BOTH-ARMS-OUT LAW (v2.5, Sept 5, 2026, BudE404: 'make sure both arms and hands are out so when we make the 3d reference art it will make sense')
 Every colossus composition shows BOTH arms fully emerged and clearly visible — raised away from the torso on both sides, both hands fully out and unobstructed by mist, terrain merge, or world-body growth. The concept art doubles as 3D reference; arm and hand anatomy must read clean for the image-to-3D pipeline.
+
+## PRIMORDIAL SURFACE LAW (v2.6, Sept 5 2026, BudE404: 'arms and some skin look human not like they are primordial colossals')
+EVERY surface of a colossus is raw element — arms, hands, shoulders, neck included, not just the chest. Arms are great strata formations like cliff buttresses growing from the torso — thick cracked crust, weathered shelves, deep fissures with element light bleeding through. Hands are colossal rock formations, fingers like segmented standing-stones. Zero human skin, zero flesh tones, zero muscle definition anywhere on the body — the entire body from crown to waist reads as the terrain mid-formation. Every colossus prompt carries a dedicated 'ARMS ARE NOT HUMAN LIMBS' block, the same way 'THE HEAD IS NOT HUMAN' fixed the faces.
