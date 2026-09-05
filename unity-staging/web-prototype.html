@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>MYTHOS GATES — Playable Prototype v8 (Feel Pass 6 — L1 flow fix)</title>
+<title>MYTHOS GATES — Playable Prototype v9 (Feel Pass 7 — All Six Mechanics)</title>
 <style>
   html,body{margin:0;padding:0;overflow:hidden;background:#0a0a12;font-family:Georgia,serif;-webkit-user-select:none;user-select:none;touch-action:none}
   #hud{position:fixed;top:10px;left:50%;transform:translateX(-50%);color:#e8c47a;text-align:center;z-index:10;pointer-events:none;text-shadow:0 2px 6px #000}
@@ -19,6 +19,7 @@
   #btnSlam{right:108px;bottom:104px}
   #btnWave{right:108px;bottom:20px}
   #btnCharge{left:20px;bottom:20px}
+  #btnRite{left:20px;bottom:96px}
   #btnCharge.on{background:#4a2c10;border-color:#c47a2a}
   .pop{position:fixed;z-index:12;color:#ffd08a;font-size:16px;font-weight:bold;pointer-events:none;text-shadow:0 0 8px #ff5a10,0 2px 4px #000;letter-spacing:1px}
   .pop.heavy{color:#ff6a20;font-size:20px}
@@ -38,6 +39,7 @@
 <div class="btn" id="btnSlam">SLAM<small>10 FAITH</small></div>
 <div class="btn" id="btnWave">WAVE<small>15 FAITH</small></div>
 <div class="btn" id="btnCharge">WALK<small>TAP: CHARGE 8</small></div>
+<div class="btn" id="btnRite">RITE<small>100 FAITH</small></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 (() => {
@@ -147,7 +149,7 @@
       new THREE.MeshBasicMaterial({color:0xff5a10, transparent:true, opacity:0.4+Math.random()*0.25}));
     dot.rotation.x = -Math.PI/2;
     dot.position.set((Math.random()-.5)*260, 0.06, (Math.random()-.5)*260);
-    scene.add(dot); lavaPools.push({m:dot, ph:Math.random()*7, base:dot.material.opacity});
+    scene.add(dot); lavaPools.push({m:dot, ph:Math.random()*7, base:dot.material.opacity, r});
   }
   for (let i=0;i<40;i++){
     const dot = new THREE.Mesh(new THREE.CircleGeometry(0.4+Math.random()*1.6, 8),
@@ -245,6 +247,9 @@
   // ---------- EMBER PARTICLES ----------
   const particles = [];
   const partGeo = new THREE.BoxGeometry(0.28, 0.28, 0.28);
+  const fpGeo = new THREE.CircleGeometry(0.85, 10);
+  const riteRing = new THREE.Mesh(new THREE.RingGeometry(1.2, 3.2, 56), new THREE.MeshBasicMaterial({color:0xffb84a, transparent:true, opacity:0, side:THREE.DoubleSide, depthWrite:false}));
+  riteRing.rotation.x = -Math.PI/2; riteRing.visible = false; scene.add(riteRing);
   function burst(pos, color, n, power){
     if (particles.length > 130) n = Math.min(n, 6);   // phone perf cap
     for (let i=0;i<n;i++){
@@ -305,6 +310,27 @@
     g.position.copy(pos); scene.add(g);
     const e = {type:'brute', obj:g, yaw:0, hp:5, dead:false, stagger:0, flashT:0, walkT:Math.random()*6, home:pos.clone()}; enemies.push(e); return e;
   }
+  const bossMat = new THREE.MeshStandardMaterial({color:0x1c0f22, roughness:1, emissive:0x8a2ab0, emissiveIntensity:0.5});
+  function makeChampion(pos){
+    const g = new THREE.Group();
+    const b = box(2.6, 4.6, 2.0, bossMat); b.position.y = 2.3; g.add(b);
+    const hd = box(1.2, 1.0, 1.2, bossMat); hd.position.y = 5.2; g.add(hd);
+    for (let i=0;i<6;i++){
+      const sp = new THREE.Mesh(new THREE.ConeGeometry(0.26, 1.6, 5), new THREE.MeshBasicMaterial({color:0xc040ff, transparent:true, opacity:0.9}));
+      sp.position.set((Math.random()-.5)*2.2, 4.8+Math.random()*0.9, (Math.random()-.5)*1.6);
+      g.add(sp);
+    }
+    g.position.copy(pos); scene.add(g);
+    g.traverse(o => { if (o.isMesh) o.castShadow = true; });
+    enemies.push({type:'boss', obj:g, yaw:0, hp:22, dead:false, stagger:0, flashT:0, walkT:0, boss:true});
+  }
+  function spawnChampion(){
+    makeChampion(new THREE.Vector3(giant.position.x + (Math.random()>.5?46:-46), 0, giant.position.z + (Math.random()-.5)*46));
+    bossBar.style.display = 'block'; bossFill.style.width = '100%';
+    popup('HOLLOW CHAMPION APPROACHES', giant.position, true);
+    trauma = 1;
+  }
+  const bossBar = document.getElementById('bossbar'), bossFill = document.getElementById('bossfill');
   const objEl = document.getElementById('obj');
   const WIN_WAVE = 5;
   let phase = 'waves'; // waves -> gate -> endless
@@ -330,6 +356,21 @@
   let swingT = 0, hitstopT = 0, slowmoT = 0, fovKick = 0;
   let comboIdx = 0, comboTimer = 0, comboKills = 0, smokeT = 0;
   let waveNum = 1, totalKills = 0, curSpeed = 0, spawnTimer = 0.6, nextWaveKills = 40, l1Held = false;
+  let giantHP = 100, spawnProtect = 2, riteCd = 0, riteActive = 0, riteT = 0, lastRiteLab = '';
+  let camLock = null, trailT = 0, footSide = 1, vignT = 0;
+  const trails = [], shards = [];
+  const hpBarEl = document.getElementById('hpbar');
+  const vignEl = document.getElementById('vign'), flashEl = document.getElementById('flash');
+  function setHP(){ hpBarEl.style.width = Math.max(0, giantHP) + '%'; }
+  setHP();
+  function dropShard(pos, n){
+    for (let i=0;i<n;i++){
+      const s = new THREE.Mesh(new THREE.OctahedronGeometry(0.45), new THREE.MeshBasicMaterial({color:0xffb84a, transparent:true, opacity:0.95}));
+      s.position.copy(pos).add(new THREE.Vector3((Math.random()-.5)*2, 0.7+Math.random()*0.8, (Math.random()-.5)*2));
+      scene.add(s);
+      shards.push({m:s, life:16, t:Math.random()*7});
+    }
+  }
   const waveEl = document.getElementById('wave'), killsEl = document.getElementById('kills');
   // lock-on marker under the currently locked enemy
   const lockMarker = new THREE.Mesh(new THREE.RingGeometry(0.55, 0.8, 24), new THREE.MeshBasicMaterial({color:0xff5a10, transparent:true, opacity:0.85, side:THREE.DoubleSide}));
@@ -338,6 +379,20 @@
   const faithEl = document.getElementById('faith');
   function setFaith(v){ faith = v; faithEl.textContent = 'FAITH ' + Math.floor(faith); }
   setFaith(20);
+  function damagePlayer(n){
+    if (spawnProtect > 0) return;
+    giantHP = Math.max(0, giantHP - n);
+    setHP();
+    vignEl.style.opacity = 0.9; clearTimeout(vignT); vignT = setTimeout(() => { vignEl.style.opacity = 0; }, 150);
+    trauma = Math.min(1, trauma + 0.25);
+    if (giantHP <= 0){
+      giantHP = 60; setHP(); spawnProtect = 3;
+      giant.position.set(WORSHIP.pos.x, 0, WORSHIP.pos.z);
+      moveTarget = null; marker.visible = false; curSpeed = 0;
+      popup('THE HOLLOW TAKES YOU — REBORN AT THE SHRINE', giant.position, true);
+      trauma = 1;
+    }
+  }
   function showCombo(){
     if (comboIdx >= 2){ comboEl.textContent = 'COMBO ×' + comboIdx; comboEl.style.opacity = 1; }
     else comboEl.style.opacity = 0;
@@ -364,7 +419,8 @@
   renderer.domElement.addEventListener('click', onTap);
 
   const btnL1 = document.getElementById('btnL1'), btnSlam = document.getElementById('btnSlam'),
-        btnWave = document.getElementById('btnWave'), btnCharge = document.getElementById('btnCharge');
+        btnWave = document.getElementById('btnWave'), btnCharge = document.getElementById('btnCharge'),
+        btnRite = document.getElementById('btnRite');
   function bind(btn, fn){
     btn.addEventListener('touchstart', e => { e.preventDefault(); fn(); }, {passive:false});
     btn.addEventListener('click', fn);
@@ -376,6 +432,19 @@
   bind(btnSlam, doSlam);
   bind(btnWave, doWave);
   bind(btnCharge, () => { charging = !charging; btnCharge.classList.toggle('on', charging); btnCharge.childNodes[1].textContent = charging ? 'CHARGE' : 'WALK'; });
+  bind(btnRite, () => {
+    if (riteCd > 0 || faith < 100) return;
+    setFaith(faith - 100); riteCd = 25;
+    slowmoT = 1.3; trauma = 1; fovKick = 12;
+    flashEl.style.opacity = 0.85; setTimeout(() => { flashEl.style.opacity = 0; }, 100);
+    riteActive = 1; riteT = 0; riteRing.visible = true; riteRing.position.copy(giant.position).setY(0.15);
+    burst(giant.position, 0xffb84a, 40, 14);
+    enemies.forEach(e => {
+      if (e.dead) return;
+      const d = e.obj.position.clone().sub(giant.position).setY(0).length();
+      if (d <= 46) killOrHit(e, giant.position, e.boss ? 8 : 3, true);
+    });
+  });
 
   function killOrHit(e, fromPos, amount, isHeavy){
     if (e.type === 'ant'){
@@ -387,16 +456,36 @@
       popup(isHeavy ? '+2' : '+1', e.obj.position, isHeavy);
       setFaith(faith + (isHeavy ? 3 : 2));
       comboKills++; totalKills++; killsEl.textContent = totalKills;
-    } else {
-      e.hp -= amount; e.stagger = isHeavy ? 1.6 : 1.1; e.flashT = 1;
-      burst(e.obj.position, 0xd050a0, 10, 5);
+      if (Math.random() < 0.28) dropShard(e.obj.position, 1);
+    } else if (e.boss){
+      e.hp -= amount; e.stagger = 0.4; e.flashT = 1;
+      burst(e.obj.position, 0xc040ff, 8, 5);
+      bossFill.style.width = Math.max(0, e.hp/22*100) + '%';
       if (e.hp <= 0){
         e.dead = true;
         const push = e.obj.position.clone().sub(fromPos).setY(0).normalize();
-        e.vel = push.multiplyScalar(8); e.vel.y = 5; e.spin = 4;
+        e.vel = push.multiplyScalar(6); e.vel.y = 7; e.spin = 3;
+        popup('HOLLOW CHAMPION FELLED +40', e.obj.position, true);
+        setFaith(faith + 40);
+        slowmoT = 0.7; trauma = 1;
+        burst(e.obj.position, 0xc040ff, 30, 10);
+        dropShard(e.obj.position, 5);
+        comboKills++; totalKills++; killsEl.textContent = totalKills;
+        bossBar.style.display = 'none';
+      }
+    } else {
+      e.hp -= amount; e.stagger = isHeavy ? 1.6 : 1.1; e.flashT = 1;
+      const push = e.obj.position.clone().sub(fromPos).setY(0).normalize();
+      e.kvel = push.multiplyScalar(isHeavy ? 9 : 5);      // knockback — physics toy
+      burst(e.obj.position, 0xd050a0, 10, 5);
+      if (e.hp <= 0){
+        e.dead = true;
+        const push2 = e.obj.position.clone().sub(fromPos).setY(0).normalize();
+        e.vel = push2.multiplyScalar(8); e.vel.y = 5; e.spin = 4;
         popup('+8', e.obj.position, true);
         setFaith(faith + 8);
         comboKills++; totalKills++; killsEl.textContent = totalKills;
+        dropShard(e.obj.position, 1);
       }
     }
   }
@@ -473,14 +562,22 @@
     });
   }
 
-  // ---------- CAMERA ----------
+  // ---------- CAMERA — smooth follow, action-framed, never fights you ----------
   let shakeT = 0;
   function updateCamera(dt){
     const g = giant.position;
-    const behind = new THREE.Vector3(Math.sin(giant.rotation.y), 0, Math.cos(giant.rotation.y)).multiplyScalar(-40);
-    const target = new THREE.Vector3(g.x, 20, g.z).add(behind); // HIGH COMMAND VIEW: 20m up, 40m back
-    camera.position.lerp(target, 3.0 * dt);
-    const look = new THREE.Vector3(g.x, 7, g.z);
+    const focus = new THREE.Vector3(g.x, 7, g.z);
+    if (camLock && !camLock.dead){                          // frame the FIGHT, not just the giant
+      const L = camLock.obj.position;
+      const w = camLock.boss ? 0.42 : 0.3;
+      focus.x = g.x*(1-w) + L.x*w; focus.z = g.z*(1-w) + L.z*w;
+      if (camLock.boss) focus.y = 8.5;
+    }
+    const dist = 34 + Math.min(curSpeed,8)*1.7 + (camLock && camLock.boss ? 9 : 0);
+    const behind = new THREE.Vector3(Math.sin(giant.rotation.y), 0, Math.cos(giant.rotation.y)).multiplyScalar(-dist);
+    const target = new THREE.Vector3(focus.x, 15 + dist*0.14, focus.z).add(behind);
+    camera.position.lerp(target, 1 - Math.exp(-4.5*dt));   // frame-rate-independent damping
+    const look = focus.clone();
     if (trauma > 0){
       shakeT += dt * 30;
       const amp = trauma * 0.4;
@@ -503,6 +600,8 @@
     let dt = realDt;
     if (slowmoT > 0){ slowmoT -= realDt; dt *= 0.35; }        // slam/wave slow-motion
     if (hitstopT > 0){ hitstopT -= realDt; dt *= 0.18; }       // kill hitstop
+    if (spawnProtect > 0) spawnProtect -= realDt;
+    if (riteCd > 0) riteCd -= realDt;
     // HOLD L1 = nonstop smashing
     if (l1Held && attacking <= 0.26) doAttack();
     // combo decay
@@ -531,6 +630,36 @@
       if (slamT >= 1){ slamActive = 0; slamRing.visible = false; }
       else { const s = 1 + slamT * 17; slamRing.scale.set(s, s, 1); slamRing.material.opacity = 0.95 * (1 - slamT); }
     }
+    // gate rite ring
+    if (riteActive > 0){
+      riteT += dt / 1.0;
+      if (riteT >= 1){ riteActive = 0; riteRing.visible = false; }
+      else { const s = 1 + riteT * 14; riteRing.scale.set(s, s, 1); riteRing.material.opacity = 0.9 * (1 - riteT); }
+    }
+    // footprint trails fade
+    for (let i=trails.length-1;i>=0;i--){
+      const tr = trails[i]; tr.life -= realDt;
+      tr.m.material.opacity = Math.max(0, tr.life/2.4) * 0.5;
+      if (tr.life <= 0){ scene.remove(tr.m); trails.splice(i,1); }
+    }
+    // ember shards: bob, magnet, collect
+    for (let i=shards.length-1;i>=0;i--){
+      const s = shards[i]; s.life -= realDt; s.t += realDt;
+      s.m.rotation.y += 3*realDt;
+      const to = giant.position.clone().setY(0).sub(s.m.position.clone().setY(0));
+      const d = to.length();
+      if (d < 9){
+        const pull = Math.min(20, 4 + (9-d)*3);
+        s.m.position.add(to.normalize().multiplyScalar(pull*realDt));
+        s.m.position.y = 0.7 + Math.sin(s.t*4)*0.25;
+        if (d < 2.4){ setFaith(faith + 3); popup('+3', s.m.position, false); scene.remove(s.m); shards.splice(i,1); continue; }
+      } else s.m.position.y = 0.7 + Math.sin(s.t*4)*0.25;
+      s.m.material.opacity = Math.min(0.95, s.life/3);
+      if (s.life <= 0){ scene.remove(s.m); shards.splice(i,1); }
+    }
+    // rite button label
+    const rl = riteCd > 0 ? Math.ceil(riteCd) + 's' : (faith >= 100 ? 'READY' : '100 FAITH');
+    if (rl !== lastRiteLab){ lastRiteLab = rl; btnRite.childNodes[1].textContent = rl; }
     // particles
     for (let i=particles.length-1;i>=0;i--){
       const p = particles[i];
@@ -573,6 +702,7 @@
       lockMarker.material.opacity = 0.5 + 0.35*Math.sin(clock.elapsedTime*8);
       const s = 1 + 0.06*Math.sin(clock.elapsedTime*8); lockMarker.scale.set(s,s,1);
     } else lockMarker.visible = false;
+    camLock = locked;
     if (moveTarget){
       const to = moveTarget.clone().sub(giant.position); to.y = 0;
       if (to.length() < 0.6){ moveTarget = null; marker.visible = false; }
@@ -585,7 +715,25 @@
         curSpeed = Math.min(speed, curSpeed + 10*dt);
         giant.position.add(to.setLength(Math.min(curSpeed*dt, to.length())));
         stepPhase += (speed/4) * dt * 1.6;
-        if (stepPhase > 1){ stepPhase = 0; trauma = Math.min(1, trauma + (charging ? 0.34 : 0.22)); }
+        if (stepPhase > 1){ stepPhase = 0; trauma = Math.min(1, trauma + (charging ? 0.34 : 0.22)); burst(giant.position, 0xff7a20, 3, 3); }
+        // TRAMPLE — charging through ants flattens them
+        if (curSpeed > 4.6){
+          enemies.forEach(e => { if (!e.dead && e.type === 'ant'){
+            const d = e.obj.position.clone().sub(giant.position).setY(0).length();
+            if (d < 3.1) killOrHit(e, giant.position, 1, false);
+          }});
+        }
+        // GLOW FOOTPRINTS — molten tread
+        trailT -= dt;
+        if (trailT <= 0){
+          trailT = 0.15; footSide = -footSide;
+          const perp = new THREE.Vector3(Math.cos(giant.rotation.y), 0, -Math.sin(giant.rotation.y)).multiplyScalar(1.15*footSide);
+          const fp = new THREE.Mesh(fpGeo, new THREE.MeshBasicMaterial({color:0xff5a10, transparent:true, opacity:0.5}));
+          fp.rotation.x = -Math.PI/2;
+          fp.position.copy(giant.position).add(perp).setY(0.06);
+          scene.add(fp); trails.push({m:fp, life:2.4});
+          if (trails.length > 46){ const o = trails.shift(); scene.remove(o.m); }
+        }
         const bob = Math.sin(stepPhase*Math.PI)*0.35;
         legL.position.y = 1.6 + bob; legR.position.y = 1.6 - bob;
         // leg stride + arm counter-swing + charge lean
@@ -610,13 +758,30 @@
     }
     // worship
     inWorship = giant.position.distanceTo(new THREE.Vector3(WORSHIP.pos.x,0,WORSHIP.pos.z)) < WORSHIP.r;
-    if (inWorship){ setFaith(faith + 1.0*dt); wz.material.opacity = 0.45; } else wz.material.opacity = 0.22;
+    if (inWorship){
+      setFaith(faith + 1.0*dt);
+      if (giantHP < 100){ giantHP = Math.min(100, giantHP + 6*dt); setHP(); }
+      wz.material.opacity = 0.45;
+    } else wz.material.opacity = 0.22;
+    emberMat.emissiveIntensity = 0.75 + curSpeed * 0.1;   // body glows brighter the faster he moves
     // enemies
     for (let i=0;i<enemies.length;i++){
       const e = enemies[i];
       if (e.dead){
         e.vel.y -= 22 * dt; e.obj.position.addScaledVector(e.vel, dt);
         e.obj.rotation.x += e.spin * dt;
+        if (!e.lava){                                   // smashed INTO lava = bonus
+          for (const L of lavaPools){
+            const dx = e.obj.position.x - L.m.position.x, dz = e.obj.position.z - L.m.position.z;
+            if (dx*dx + dz*dz < L.r*L.r){
+              e.lava = true;
+              burst(e.obj.position, 0xff8a30, 12, 8);
+              popup('+5 LAVA', e.obj.position, true);
+              setFaith(faith + 5);
+              break;
+            }
+          }
+        }
         if (e.obj.position.y < -0.6){ scene.remove(e.obj); enemies.splice(i,1); i--; }
         continue;
       }
@@ -649,7 +814,43 @@
           e.obj.rotation.y = e.yaw;
           e.obj.position.add(new THREE.Vector3(Math.sin(e.yaw), 0, Math.cos(e.yaw)).multiplyScalar(4.2*(e.speedMul||1)*dt));
           e.obj.rotation.z = Math.sin(e.walkT*10) * 0.09;                   // scuttle waddle
-        } else e.obj.rotation.z *= 0.9;
+        } else {
+          e.obj.rotation.z *= 0.9;
+          if (toP.length() <= 2.6){                        // nibble at your feet
+            if (e.atkT === undefined) e.atkT = 1.0;
+            e.atkT -= dt;
+            if (e.atkT <= 0){ e.atkT = 1.7; damagePlayer(1.5); burst(e.obj.position, 0x882222, 3, 3); }
+          }
+        }
+      } else if (e.boss){
+        // HOLLOW CHAMPION — duel AI: close in, wind up, crush
+        if (e.flashT > 0){ e.flashT -= dt*4; const s = 1 + 0.1*Math.max(0,e.flashT); e.obj.scale.set(s,s,s); }
+        if (e.stagger > 0){ e.stagger -= dt; }
+        else {
+          const toP = giant.position.clone().sub(e.obj.position); toP.y = 0;
+          const dL = toP.length();
+          const ty = Math.atan2(toP.x, toP.z);
+          let dy = ty - e.yaw; while (dy > Math.PI) dy -= Math.PI*2; while (dy < -Math.PI) dy += Math.PI*2;
+          e.yaw += dy * Math.min(1, 2.5*dt); e.obj.rotation.y = e.yaw;
+          if (dL > 7.5){
+            e.obj.position.add(new THREE.Vector3(Math.sin(e.yaw), 0, Math.cos(e.yaw)).multiplyScalar(2.6*dt));
+            e.obj.position.y = Math.abs(Math.sin(e.walkT*3)) * 0.3;
+          } else {
+            if ((e.atkT === undefined || e.atkT <= 0) && (e.windup === undefined || e.windup <= 0)){
+              e.windup = 0.8; e.atkT = 2.8;
+              popup('THE CHAMPION WINDS UP', e.obj.position, false);
+            }
+          }
+          if (e.windup !== undefined && e.windup > 0){
+            e.windup -= dt;
+            e.flashT = Math.max(e.flashT, 0.5);
+            if (e.windup <= 0){
+              burst(e.obj.position, 0xc040ff, 18, 8); trauma = Math.min(1, trauma + 0.5);
+              if (dL <= 10) damagePlayer(25);
+            }
+          }
+          if (e.atkT !== undefined && e.atkT > 0) e.atkT -= dt;
+        }
       } else {
         if (e.flashT > 0){ e.flashT -= dt*4; const s = 1 + 0.14*Math.max(0,e.flashT); e.obj.scale.set(s,s,s); }
         if (e.stagger > 0){ e.stagger -= dt; continue; }
@@ -661,6 +862,27 @@
           e.obj.rotation.y = e.yaw;
           e.obj.position.add(new THREE.Vector3(Math.sin(e.yaw), 0, Math.cos(e.yaw)).multiplyScalar(1.9*dt));
           e.obj.position.y = Math.abs(Math.sin(e.walkT*4)) * 0.18;           // heavy stomp bob
+        } else if (toP.length() <= 3.8){
+          if (e.atkT === undefined) e.atkT = 0.9;
+          e.atkT -= dt;
+          if (e.atkT <= 0){ e.atkT = 2.4; damagePlayer(12); burst(e.obj.position, 0xd050a0, 10, 6); }
+        }
+        // knockback drift
+        if (e.kvel){ e.obj.position.addScaledVector(e.kvel, dt); e.kvel.multiplyScalar(Math.max(0, 1-4*dt)); }
+        // knocked into lava = instant crispy kill
+        if (!e.lava){
+          for (const L of lavaPools){
+            const dx = e.obj.position.x - L.m.position.x, dz = e.obj.position.z - L.m.position.z;
+            if (dx*dx + dz*dz < L.r*L.r){
+              e.lava = true; e.dead = true;
+              e.vel = new THREE.Vector3((Math.random()-.5)*4, 9, (Math.random()-.5)*4); e.spin = 7;
+              burst(e.obj.position, 0xff8a30, 16, 8);
+              popup('+5 LAVA', e.obj.position, true);
+              setFaith(faith + 5);
+              comboKills++; totalKills++; killsEl.textContent = totalKills;
+              break;
+            }
+          }
         }
       }
     }
@@ -678,6 +900,7 @@
         popup('WAVE ' + waveNum, giant.position, true);
         waveEl.textContent = 'WAVE ' + waveNum;
         if (waveNum % 2 === 0) spawnBrutes(1 + Math.floor(waveNum/5));
+        if (waveNum % 5 === 0 && !enemies.some(x => x.boss && !x.dead)) spawnChampion();
         if (phase === 'waves' && waveNum > WIN_WAVE){
           phase = 'gate';
           gateGlow.material.opacity = 0.55; gateBeacon.material.opacity = 0.3;
