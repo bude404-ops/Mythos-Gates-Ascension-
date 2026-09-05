@@ -225,3 +225,27 @@ STRUCTURE IMPLICATIONS:
 
 ## GENDER-ROLE BINDING (Sept 4 2026, BudE404 — LOCKED, supersedes the 'gender does not bind role' line of the Two-Role Lock)
 **ALL MALE DEITIES = WARRIOR (two-handed greatsword). ALL FEMALE DEITIES = CASTER (long staff).** Every faction pair follows: male = greatsword chassis, female = staff chassis. Current canon already conforms (Haeldir blade / Sylwen staff). Thevril's human vessel = greatsword warrior. Miriath's = long-staff caster.
+
+---
+
+# THE GIANTS & SPRITES DOCTRINE (Sept 4 2026, BudE404 — LOCKED DIRECTION)
+The True Dragon Vessel doctrine is RETIRED for deities and mortals. Same overall concept (six elements, Mythos Gates, faith loop, two roles) — the world's peoples change shape:
+
+## 1. DEITIES = ELEMENTAL GIANTS
+The 24 art models re-roll as colossal ELEMENTAL GIANTS/beings — living embodiments of their element. The Avatar Doctrine, Dual Vessel Doctrine, Two-Role Lock, Gender-Role Binding, and Female-Titan Laws all carry over unchanged. A colossal giant gripping a relic greatsword IS the warrior class; a giantess with a relic staff IS the caster class.
+
+## 2. MORTALS = SPRITES
+THE HUMAN-TYPE SIDE IS SPRITES (BudE404 ruling): the mortal civilizations of Mythos are SPRITE-SIZE elemental beings, not humans or dragon-kin. Each faction's sprites mirror their patron giants' element (Ashfall ember-wisps, Skywilds storm-sprites, Everbloom petal-sprites, Duskmourn lantern-motes, Marenth pearl-finned sprites, Stoneheart crystal-sprites — names TBD per faction). Dragon-Kin Law REPEALED. The Narrow Ways: each giant's small vessel walks among the sprites at THEIR scale — divine disguise among tiny worshippers.
+
+## 3. DRAGONS STILL EXIST — AS WORLD-BEASTS
+Dragons and draconic creatures are NOT deities and NOT mortals — they survive as the WILD FAUNA of Mythos: drakes, wyrms, and greater dragon-beasts roam the realms as apex creatures (the existing fauna table already carries Bumblewyrms, Petal-Stags etc. — dragons join that category, some colossal-scale as world bosses/mounts/beasts of legend). They can never be deities again, but the world keeps its dragons.
+
+## ART / PIPELINE IMPLICATIONS
+- All dragon-form deity canon retires (Vharkar, Vesskra, Haeldir, Sylwen, Thevril drakes). The hooded vessel canons retire with them (dragon-scale skin law is dragon-specific).
+- Unified faction palettes, realm environments, worship-by-evidence grammar, scale-architecture armor language, and all pipeline laws SURVIVE and transplant to the giant forms.
+- Sprite mortals = extreme scale anchors in every composition (giants tower, sprites swarm at their feet).
+
+## OPEN RULINGS (defaults proposed, veto anytime)
+1. GIANT ANATOMY (proposed default): living elemental bodies — compressed muscle-mass made OF the element (fire-muscle, storm-mass, stone-mass, petal-flesh — the old First Forge elemental-body grammar revived) anchored by relic armor pieces at the extremes (hands, feet, chest, crown).
+2. PLAYER SCALE (proposed default): players are the SPRITES — the giant is your faction's patron god you serve/ride/channel; Tower Waves are the giants walking.
+3. SPRITE AESTHETIC (proposed default): serious fey-warrior sprites — NOT cute Pixar. Tiny but dignified: little armor, little weapons, faction-palette robes, glowing element-touched eyes. They are a civilization, not mascots.
