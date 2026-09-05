@@ -261,3 +261,10 @@ Dragons and draconic creatures are NOT deities and NOT mortals — they survive 
 
 ## SPRITE AESTHETIC LOCKED (Sept 4 2026, BudE404: 'sprites equal serious fey in looks' — settles Open Ruling 3)
 **The sprites are SERIOUS FEY — dignified, adult-statured tiny beings, never cute Pixar mascots.** Fey gravity: lithe elongated proportions, sharp noble features, faction-palette armor and robes at their scale, element-touched glowing eyes, fine wings or elemental veils only where the faction's element warrants. They are a civilization of small ancient peoples — warriors, casters, scholars — who happen to be six inches tall, not whimsical decorations. Enemy sprites fight like disciplined soldiers; worshipful sprites kneel like a congregation. ALL THREE OPEN RULINGS NOW SETTLED: raw-elemental colossi, dual-scale play, serious-fey sprites.
+
+## THE GIANT-ERA VISUAL CANON (Sept 4 2026, BudE404: 'Keep' on Fire Giant v6 — LOCKED)
+**PRIMORDIAL-MAX ANATOMY + HALF-ZOOM MID-SHOT COMPOSITION = the giant-era canon for all 24 deities.**
+- PRIMORDIAL-MAX: each giant is 'never made — the element that decided to stand.' Half-conceived asymmetric anatomy (mountain-range mid-formation, zero human symmetry, zero gym-muscle), eon-layered crust strata flaking to reveal the molten mantle core, violent elemental arteries, constant element-shed (embers/etc.), face only half-emerged from the element, movement like geology. Awe-not-fear; worship declares divinity.
+- HALF-ZOOM MID-SHOT: camera at the giant's chest height, moderate distance, giant fills central two-thirds full-figure, scenic faction landscape breathing around him, scale anchors intact (cities at ankle line, sprite processions as sparks against the shins).
+- LOTR-cinematic filmic treatment (supersedes Style-A painterly): photorealistic film still, Weta grit, film grain, anamorphic, unified faction palette.
+- FIRST CANON: ASHFALL-FIRE-GIANT-CANON.jpg — name VHARKAR (the Furnace Warden, re-forged as primordial fire giant). Vharkar wields the condensed-magma GREATSWORD (Gender-Role Binding: male = warrior).
