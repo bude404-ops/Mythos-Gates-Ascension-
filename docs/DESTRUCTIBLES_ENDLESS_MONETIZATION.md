@@ -144,3 +144,25 @@ Score grammar: clock efficiency, form-choice quality, unspent faith.
 - A story-first player can live in the Pilgrimage: the Trials never gate story, relics, or world-state.
 - The campaign keeps growing by design — new story missions, regions, and deity arcs are the drip-content plan for later ("we always try and keep adding story line missions"), while the Trials' procedural floor composition makes the combat side cheap to extend seasonally.
 - Same combat verbs across all three ladders and the campaign — mastery transfers everywhere; nothing is wasted play.
+
+---
+
+## 7. RETENTION WITHOUT NUMBERS — the honest answer to "will people be bored?"
+## (BudE404 concern, Sept 5: is titles + leaderboard enough long-term?)
+
+**Honest answer first:** no. Titles and leaderboards alone retain maybe 5–10% of players — they are the PINNACLE of a retention pyramid, never its base. If the Trials only offered glory, most players would drift after the campaign. The doctrine therefore needs the full pyramid, and we already designed its layers:
+
+### THE RETENTION PYRAMID (base → apex)
+1. **VISIBLE WORLD PROGRESS — the mass-audience hook.** The map-is-the-progress-bar: corruption % falling, gate integrity rising, shrines restored, settlements growing. Post-campaign, the Incursions and Hunts continuously feed world-state — the world healing is an endless, visible, NON-repetitive grind. This is the layer most players actually live on.
+2. **NEW WAYS TO PLAY — the mastery hook.** Relic verbs, new Trial tiers/floors, pixie light tiers: horizontal growth. Each unlock changes HOW you play, which is what numeric gear simulates but rarely delivers.
+3. **COLLECTIONS — the checklist hook.** Pixie lines, Shrine Honor carvings, codex lore completion %, achievements. Checklists retain ordinary players powerfully; ours are all cosmetic/lore, never power.
+4. **SOCIAL PRESTIGE — the apex.** Titles, leaderboards, and shrine carvings VISIBLE to other wardens (your statue stands in your town; your honors are carved on the shared gates). Social flex motivates the competitive few — and gives everyone something to admire.
+
+### SEASONS — the anti-boredom engine
+Boredom is answered by cadence, not by numbers: seasonal Trial modifiers, seasonal Incursion events, seasonal pixie lines, and the story-mission drip (new regions, deity arcs) — both rails are cheap to extend (procedural floors / authored missions).
+
+### THE OPTIONAL STRUCTURE (worth considering, fits the trust contract)
+A **seasonal DEED LIST** — a free, achievement-style checklist of seasonal feats ("restore 3 shrines, survive Verdict wave 15, complete the season's Incursion"), with cosmetic-track rewards (skins, aura styles, pixie variants). It gives the checklist-crowd the structure they know from battle passes — while selling NOTHING that touches power. A paid premium cosmetic track is possible later, but the free track must stand alone.
+
+### The root principle
+**Players are not bored by the absence of numbers; they're bored by the absence of VISIBLE CHANGE.** Numbers are just the cheapest visible change. We replace cheap visible change with meaningful visible change: the world healing, the pixie brightening, the shrine filling with your carvings, the codex filling with lore, the Trials rank rising. Every layer of the pyramid changes something the player can SEE — and none of it sells out the doctrine.
