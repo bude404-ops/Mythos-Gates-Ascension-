@@ -39,3 +39,6 @@ F001 restart (Khaveth) runs this exact pipeline first — Design Card → neutra
 - Stage 2: 1-3 rolls (character anchored, scene only)
 - Stage 3: 1-2 rolls (turnaround)
 - 3D: ~72 credits/deity per the locked budget (30 model + 5 remesh + 5 rig + 12 anims + 20 weapon prop) — only with explicit GO.
+
+## PIPELINE RULE — SINGLE-SUBJECT 3D INPUT (learned Sept 5, v1 GLB failure)
+The image-to-3D input MUST be exactly ONE figure, ONE view — a single standing T-pose/A-pose render on a flat studio background. NEVER feed a multi-view turnaround sheet to image-to-3D: the generator meshes EVERY view on the sheet, producing fused multi-clone models (v1 Vharkar and Kiln-Warden both came out as 4 fused figures from 4-view sheets). The multi-view turnaround sheet remains a Stage-3 ART artifact only; the 3D input is its single-view descendant. Meshy input recipe: "Exactly ONE single figure, one single front view, no duplicates, no grid — full body, T-pose, arms straight out, weapon in hand, flat neutral background."
