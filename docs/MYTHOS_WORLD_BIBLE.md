@@ -9,6 +9,11 @@
 
 **MYTHOS** — the mortal realm, the middle world. Mythos itself forced the deities out through the Gates to balance their powers; the Gates remain the only crossings.
 
+**THE DRAGON-KIN LAW (Sept 4 2026, BudE404 ruling, 'Yes'): THERE ARE NO HUMANS IN MYTHOS.** The mortal peoples of Mythos are DRAGON-KIN — humanoid-shaped beings carrying the blood of the deities who once walked the realm. Mortals walk on two legs, wear armor, build cities, wage war, believe, and die — but they are not human: each mortal carries SUBTLE draconic tells — patches of fine scale, small horn nubs, faintly glowing slit-pupil eyes, a warmth beneath the skin. Every faction's mortals echo their patron dragon: ember-scale patches and ember eyes in Ashfall; wind-ruffled hair that never settles and storm-grey eyes in Skyrend; petal-shaped scale fans and bloom-tinted irises in Everbloom; ash-pale skin and lantern-soft eye glow in Duskmourn; fin crests, gill-slit necks and pearl eyes in Marenth; crystal-horn nubs and stone-freckled skin in Stoneheart. **DISCIPLINE: the tells stay SUBTLE — 'people with the dragon's blood in them,' never mini-dragons.** If every mortal reads 40% dragon, the deities stop feeling special.
+
+Consequences: (a) The deities' human-shaped vessels are not 'gods disguised as people' — they are gods walking among their own creations IN THE MORTALS' FORM; the Hooded Aspect Law strengthens (they pass among kin, and the hood hides a face that was never mortal). (b) Belief is family-weighted: kin honoring their makers, not strangers worshipping monsters. (c) 'Humanoid-SHAPED' is production law: dragon-kin use the standard humanoid rig/armor pipeline. (d) All regional armor styles (Forge-Iron, Storm-Steel, Grow-Plate, Lantern-Plate, Tide-Mail, Quarry-Plate) apply to dragon-kin wearers, unchanged.
+
+
 **THE GATES** — six great arches, one per faction, standing where each realm presses closest. Living seams of Aetherium: power crosses them, faith flows back. Structural integrity = FAITH. Where belief dies, a Gate fractures.
 
 **THE FAITH LOOP** — worship is infrastructure. Deeds in a god's name generate faith; faith flows through the Gate; faith maintains the Gate and empowers the deity; the deity's protection enables the deeds. Break the loop and the Gate weakens.
@@ -86,7 +91,7 @@ Mythos fauna are Aetherium-stable natural beings — not Hollow, not divine. Eac
 ## IV. HOW THE WORLD WORKS (LAW RECAP)
 
 - **Colossi = TRUE DRAGONS** (True Dragon Vessel Law): each deity's colossal avatar is its actual draconic form crossing the Gate. No weapons — natural dragon combat. First Forge armor = grown barding fused like natural scales. Faction signatures on every colossal.
-- **Human aspects = THE NARROW WAYS**: the deity compressed to human scale to walk among mortals — real human face/body, humanlike re-forged armor, wing-cape, draconic human boots, class-chassis relic weapon, ember-glow eyes the only tell.
+- **Human aspects = THE NARROW WAYS**: the deity compressed to mortal-kin scale to walk among the dragon-kin — hooded face fully lost in shadow (only ember-glow eye points), armor fitted to pass among mortals that subtly echoes their dragon, wing-cloak as the one disguised draconic silhouette, class-chassis relic weapon, ember-glow eyes the only tell (Hooded Aspect Law).
 - **MORTAL CRAFT = DIVINE INFLUENCE LAW**: every region's architecture visibly echoes its faction (storm-vane weathervanes, crucible-core hearth towers, petal-crest rooflines, lantern-niche shrines, fin-buttresses, crystal crowns).
 - **FACTION SIGNATURES:** Fire = Crucible Core, Air = Storm Vanes, Life = Living Crest, Death = Reliquary Niches, Water = Fin Crown, Earth = Crystal Load.
 - **FAITH = infrastructure. HOLLOW = the tide that erases. TOWER WAVES = colossal event mode** (dragons holding Gates against the Hollow Tide).
