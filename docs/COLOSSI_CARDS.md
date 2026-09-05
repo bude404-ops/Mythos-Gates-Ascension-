@@ -1,7 +1,7 @@
 # THE TWELVE — King and Queen Colossus Cards
 Canon: v9 PRIMORDIAL 12-SET (kept Sept 5, 2026). Each colossus has its own art file (art/approved/*-EMERGENCE-CANON.png) and its own card below. The god that rises at the Gate Rite matches the pilgrim's aspect — a male pilgrim wakes the King, a female pilgrim wakes the Queen. Both aspects are canon per faction.
 
-*Name sweep applied per the AVALON NAME BIBLE (canon v1.1): gods carry their Sleeping Monarch names; realms and Gates use the locked Avalon canon. Art filenames keep their working names — the cards below are the canon names.*
+*Name sweep applied per the AVALON NAME BIBLE (canon v1.1): gods carry their Sleeping Monarch names; realms and Gates use the locked Avalon canon. Art files now carry the canon god names too (art/approved/<GOD>-<TITLE>-EMERGENCE-CANON.png).*
 
 ---
 
@@ -67,4 +67,4 @@ The bedrock aspect. Bergrune's dust-mote plume, geode-lit seams, and henge-crown
 
 ---
 
-*Doctrine: docs/COLOSSUS_DESIGN_DOCTRINE.md (v2.6). Art: art/approved/*-EMERGENCE-CANON.png — one file per colossus (filenames keep working names). The colossus pair per faction shares the Gate; the King and Queen are the same god in two aspects, matched to the pilgrim's own.*
+*Doctrine: docs/COLOSSUS_DESIGN_DOCTRINE.md (v2.6). Art: art/approved/<GOD>-<TITLE>-EMERGENCE-CANON.png — one file per colossus, canon-named (superseded art purged Sept 5 per BudE404). The colossus pair per faction shares the Gate; the King and Queen are the same god in two aspects, matched to the pilgrim's own.*

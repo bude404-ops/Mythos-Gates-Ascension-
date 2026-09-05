@@ -1,5 +1,5 @@
 # THE AVALON NAME BIBLE
-**Canon v1.1 APPLIED — Sept 5, 2026. BudE404 verdict: "I like it, let's apply it all." Table below is locked canon; the rename has been swept across all docs (art filenames keep working names).**
+**Canon v1.1 APPLIED — Sept 5, 2026. BudE404 verdict: "I like it, let's apply it all." Table below is locked canon; the rename has been swept across all docs; the Twelve's canon art files now carry canon god names (superseded-era art purged Sept 5, BudE404: 'we don't need any of the old art').**
 Rule: GRAMMAR, NOT LIFTS — no real Arthurian names (no Arthur, Merlin, Avalon in-world); the vibe comes from the MUSIC: soft Brythonic consonants, -mere/-holt/-weald/-march/-barrow place suffixes, -wyn/-eth/-aine name endings. The world stays fully original.
 
 ## NAMING GRAMMAR
