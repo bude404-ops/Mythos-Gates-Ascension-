@@ -114,7 +114,7 @@ Six layers, one rig. The same base human becomes any role, any region, any eleme
 3. **FACTION STYLE SKIN** — the six canon armor cultures applied to any role kit: Forge-Iron, Storm-Steel, Grow-Plate, Lantern-Plate, Tide-Mail, Quarry-Plate.
 4. **ELEMENT EMISSIVE LAYER** — the relic-gift glow (ember orange, storm blue, bloom gold, dusk white, tide teal, stone green) — SWAP THE GLOW, NOT THE MESH. The relic decides the element, so variation is a texture/emissive change, not new geometry.
 5. **WEAPON KITS** — role weapons × faction styles (modular props parented to the hand bone per the locked weapon rule).
-6. **COSMETICS** — cloaks, heraldry, weathering, hair, lantern styles — the identity layer (monetization lives HERE: sell identity, never power).
+6. **COSMETICS** — cloaks, heraldry, weathering, hair, lantern styles — the identity layer (monetization lives HERE: sell identity, never power). 7. **WEAPON GATE-BLESSING** — per THE WEAPON-FACTION BOND law: every weapon carries its forging Gate (the god's temper); weapon-skill element = the weapon's faction, character-ability element = the pilgrim's pledged faction. See the Weapon-Faction Bond law below.
 
 Output math: 1 base rig × 6 role kits × 6 faction skins × 6 glow layers = 216 readable human variations from ~7 armor sets + emissive swaps — plus unlimited cosmetics.
 
@@ -173,3 +173,26 @@ The pixie/lantern-attire pet designs are retired from doctrine (kept in art hist
 - **THE GATE RUNE = THE MARK.** One universal rune represents the game and the Gates: a trilithon arch of RUGGED rough-hewn weathered megalith (cracks, chisel pitting, chipped edges, age-patina — never polished) with a single rising flame through the center. The stone never glows; ONLY the flame carries the faction color (ember / ice-blue / gold-green / lantern-violet / pearl-teal / geode). Every pilgrim wears it as the Mark on the breastplate.
 - **ONE-ARMOR PRODUCTION LAW.** Armor sets are faction-neutral: one set per role per gender (6 roles x 2 genders = 12 total). Faction identity = the rune's glow color — a color swap, never an armor re-roll.
 - Logo canon: LOGO-AVALON-WAKING-GATES (sigil + Cinzel wordmark), 6 faction colorways. Doctrine: docs/PILGRIM_DESIGN_DOCTRINE.md (v1.4).
+
+---
+
+## THE WEAPON-FACTION BOND + THE PLEDGE — Skill-Tree Element Law (Sept 5, 2026, BudE404)
+"Weapons are tied to a faction so it will get that deity's effects in the skill tree build. Same with the character's abilities."
+
+### 1. GOD-TEMPERED WEAPONS (the weapon-faction bond)
+Every weapon is forged or blessed at one of the six Gates — it carries **the god's temper** (a blacksmith's temper AND a god's temperament). A weapon's Gate is permanent: an ember-forged blade is an Ashfall relic forever. In the skill tree, the equipped weapon unlocks **its faction's WEAPON BRANCH**: the role's weapon skills re-render in that deity's element grammar. One Warden Vow Strike, six dreams: ember-coated (Ashfall), storm-charged (Skyrend), bloom-whipped (Everbloom), lantern-shadow (Duskmourn), tide-crashing (Marenth), stone-shattering (Stoneheart).
+
+### 2. THE PLEDGE (the character-ability bond)
+The pilgrim's own rites and abilities come from the god whose **Mark they carry** — the rune's faction is the pledged deity (set when the lantern lights / first Gate Rite). The PLEDGE BRANCH of the skill tree carries that deity's dream: character abilities, faith-economy rites, and the Gate-Rite charge all speak the pledged god's grammar.
+
+### 3. THE TREE (three lanes)
+1. **ROLE TRUNK** — role identity skills, faction-neutral (every skill is a prayer/rite, resource = FAITH).
+2. **WEAPON BRANCH** — element = the weapon's Gate; swaps when the weapon swaps.
+3. **PLEDGE BRANCH** — element = the pilgrim's Mark; changes only through fiction (a new pilgrimage, a re-pledging arc), never loot.
+
+### 4. RESONANCE LAW (devotion vs wandering)
+- **TRUE DEVOTION** (weapon Gate = pledged Gate): the god answers in full — resonance bonus on both branches, faction capstone unlocked ("the god that knows your name"). Raw power path.
+- **WANDERING DEVOTION** (weapon Gate ≠ pledge): both branches stay open but weaker individually; unlocks **SYNCRETIC nodes** — hybrid rites that blend the two dreams (ember-pledged pilgrim swinging a storm blade = fire-lines in the squall). Flexibility path, and the build-diversity chase: every Gate-forged weapon drop is a new build, not a stat stick.
+
+### 5. PRODUCTION LAW (one tree, glow swaps)
+Mirrors the one-armor law: ONE skill tree per role; weapon branches and pledge branches are element re-skins of the same node grammar (swap the dream, not the structure). Weapon props: each role weapon × 6 faction-forged variants = modular hand-bone props per the locked weapon rule; variants differ by faction material grammar + rune-glow color only.
