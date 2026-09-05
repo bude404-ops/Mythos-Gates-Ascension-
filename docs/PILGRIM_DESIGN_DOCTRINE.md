@@ -15,3 +15,6 @@ Warden / Keeper / Walker / Singer / Smith / Vigil — role kits over a shared ba
 
 ## STACK ORDER (modular pilgrim system)
 base body (M/F) → role kit → faction skin → rune (element swap, not mesh) → weapon kit → cosmetics.
+
+## THE EYES (BudE404: 'The glowing eyes can also be only elemental effects they get')
+The glowing eyes complete the pilgrim's elemental package: exactly TWO elemental effects per pilgrim — the burning RUNE (the Mark) and the GLOWING EYES (faction-colored light points in the hood shadow). Nothing else glows. Amends the Armor + Rune Law.
