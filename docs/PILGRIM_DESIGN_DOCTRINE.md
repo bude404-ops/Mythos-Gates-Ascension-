@@ -38,3 +38,6 @@ The pilgrim's Gate Rune Mark on the breastplate follows four rules, ALL mandator
 3. GLOW DISCIPLINE: ONLY the flame emblem inside the arch glows — one small clean flame carrying the faction color. Zero elemental bleed: no drifting sparks, no molten cracks radiating into the plate, no glowing grooves. The carved arch lines are plain quiet engraving catching ordinary light. Nothing else on the armor glows (eyes excepted — per the Pilgrim Elemental Package).
 4. APPLICATION: every one of the 12 ladder sets gets the Mark engraved in its own plate material (ceramic, kiln clay, crystal, etc.).
 First canon proof: art/approved/PILGRIM-WARDEN-CINDERROADS-MARK-ENGRAVED-CANON.png
+
+## STYLE LANE — CINDER ROADS (locked Sept 5 2026, BudE404 'I like B')
+All pilgrim ladder armor = rugged road-worn smith-craft repair-plate: layered plates from different generations of repair, hand-hammered mismatched ceramic segments, riveted seams, patched pauldrons, worn leather straps and buckles, chipped edges, road dust. Palette: charcoal + ash-brown, faint ember underlight. Rejected lane: Cathedral Forged (grand master-grade plate). The pilgrim looks like they have WALKED the roads.
