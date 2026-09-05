@@ -187,3 +187,10 @@ The colossi DO NOT ROAM in combat. They are still BUILT INTO THE WORLD — roote
 - Lore fit: the land does not chase vermin; the vermin come to the god. The god is the world; you defend the world by wielding it.
 
 This supersedes roaming giant-mode traversal for standard colossal encounters (campaign moments may still stage cinematic processions).
+
+## THE EMERGENCE LAW (v1.6, Sept 5, 2026, BudE404)
+1. **COLOSSI DO NOT WALK.** They RISE UP from the earth itself — and sink back down when the rite is done. The colossus is a manifestation of the terrain, never a pedestrian.
+2. **RELOCATION = SUBMERGENCE TRAVEL.** If the god is needed at a different location, he sinks into his element and rises again elsewhere — each element travels its own way: fire through the magma veins, storm through the stormfront, tide through the waterways, stone through the bedrock, bloom through the root-networks, dusk through the shadow-roads.
+3. **THE COMBAT BODY = TORSO, ARMS, AND HEAD ONLY.** What emerges is the upper body; below, he IS the land. No legs, no stride, no walk cycles — the visible colossus is an emergence, waist-down terrain-merged. All combat art and animation renders the rise: palm surges, sweeping arm slams, torsion of the trunk, the turning of the head.
+4. **ART LAW:** colossal compositions show EMERGENCE — the god risen from earth, water, or cloud, waist-down merged into terrain. Never a full standing stride, never walking.
+5. **PIPELINE WIN:** the combat 3D mesh is upper-body-only — torso, arms, head — cutting model scope and eliminating walk-cycle rigging entirely.
