@@ -222,3 +222,6 @@ STRUCTURE IMPLICATIONS:
 - The cut-deities-as-signature-skins rule is MOOT for launch — with two classes there are no orphan trees to skin. Cut deities return as full new characters if/when assassin/archer classes go live.
 - Weapon trees: WARRIOR TREE (greatsword line, faction-flavored at the top by the male deity's named relic blade) x CASTER TREE (staff line, faction-flavored by the female deity's named relic rod). Two trees, deep tiers, meaningful choices.
 - Existing art canon is UNCHANGED — every locked vessel already carries blade or staff.
+
+## GENDER-ROLE BINDING (Sept 4 2026, BudE404 — LOCKED, supersedes the 'gender does not bind role' line of the Two-Role Lock)
+**ALL MALE DEITIES = WARRIOR (two-handed greatsword). ALL FEMALE DEITIES = CASTER (long staff).** Every faction pair follows: male = greatsword chassis, female = staff chassis. Current canon already conforms (Haeldir blade / Sylwen staff). Thevril's human vessel = greatsword warrior. Miriath's = long-staff caster.
