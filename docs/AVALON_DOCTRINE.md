@@ -196,3 +196,40 @@ The pilgrim's own rites and abilities come from the god whose **Mark they carry*
 
 ### 5. PRODUCTION LAW (one tree, glow swaps)
 Mirrors the one-armor law: ONE skill tree per role; weapon branches and pledge branches are element re-skins of the same node grammar (swap the dream, not the structure). Weapon props: each role weapon × 6 faction-forged variants = modular hand-bone props per the locked weapon rule; variants differ by faction material grammar + rune-glow color only.
+
+---
+
+## THE BUILD SYSTEM v2 — CLASS = WEAPON, FACTION = ABILITIES (Sept 5 2026, BudE404)
+"Each faction has different abilities and skill trees for build; the weapons are just the character class and style with their own unique skill trees — limit the weapons and classes."
+
+### 1. THE CLASS IS THE WEAPON — six classes, six weapons, six unique class trees
+No role-vs-weapon matrix — the weapon you carry IS your class and style. THE SIX DISCIPLINES (the locked role ladder, 1:1):
+- **BLADE** (Warden lineage) — relic-coated straight blade; duelist craft: edge-coating rites, Parry-Rite, Vow Strike
+- **LANTERN** (Keeper) — shrine-lantern staff + short blade; light-craft: light radius, Hearth Blessing, Lantern Rite
+- **DAGGER** (Walker) — paired road-daggers; scout craft: Mist-Read, Road Dash, First-Footstep
+- **SONG** (Singer) — bell-staff / hand-harp song-relic; hymn-craft: Hymn of the Road, Verses of Waking, Silence-Break
+- **HAMMER** (Smith) — great forge hammer; forge-craft: Molten Strike, Anvil Prayer, Bulwark Forge
+- **TOWER** (Vigil) — tower shield + mace; bulwark-craft: Bulwark Oath, Gate-Devotion, Last Vigil
+Each weapon carries ONE UNIQUE CLASS TREE — identity, FACTION-NEUTRAL (the craft, not the dream).
+
+### 2. THE FACTION IS THE ABILITIES — six deity-granted ability trees
+The Mark (pledged faction) unlocks that deity's ABILITY TREE — six genuinely DIFFERENT ability sets, not element reskins:
+- **Ashfall** — ember/hearth rites (fire that answers, forge-warmth wards)
+- **Skyrend** — squall rites (storm-calls, thunder-step)
+- **Everbloom** — bloom rites (growth snares, petal-song renewal)
+- **Duskmourn** — lantern-shadow rites (veil-walk, grave-light wards)
+- **Marenth** — tide rites (undertow pulls, pearl-shell aegis)
+- **Stoneheart** — bulwark rites (stone-skin, geode-ward shatter)
+Each ~10–12 abilities deep, prayer/rite grammar, FAITH resource; capstone per deity = a Gate-Rite-charging miracle.
+
+### 3. THE BUILD MATH (deliberately limited)
+Build = class tree + faction tree. **6 × 6 = 36 readable builds**, bounded content: ~72 class skills + ~66 faction abilities ≈ 138 skills total — a full game's worth, capped by design. A Blade pledged to Ashfall (ember-coated dueling) plays completely differently from a Blade pledged to Duskmourn (veil-lantern dueling): same craft, different dream.
+
+### 4. CHANGES vs the Weapon-Faction Bond (v1 retired)
+- The God's Temper (weapons forged at Gates carrying faction element) RETIRED as a build mechanic — weapons are neutral class craft. It survives as LORE ONLY for named/legendary weapons (cosmetic origin stories, collectible flavor — zero build complexity).
+- Resonance Law (True/Wandering Devotion, syncretic nodes) RETIRED. One faction tree per character; the re-pledging fork (mid-game vs one-time-final) stays open as a fiction decision.
+
+### 5. PRODUCTION LAW
+- Weapon props: 6 signature weapons on the hand-bone mount (+ named legendary cosmetic skins)
+- Armor: unchanged one-armor law — 6 class kits × 2 genders = 12 sets; faction = rune-glow swap only
+- Skills: class trees are faction-neutral data; faction trees are class-agnostic data — the 36-build matrix validates by design, no extra art
