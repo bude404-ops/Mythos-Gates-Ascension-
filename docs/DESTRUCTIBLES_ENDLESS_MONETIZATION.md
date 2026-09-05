@@ -99,3 +99,21 @@ At sprite scale: circles you as a living lantern. At manifestation/ascension: a 
 - **RESKINS**: seasonal variants (harvest-flame, frost-glow), deity-attuned colorways (Vharkar blue-flame pixie), achievement lines (Verdict-rank exclusives, hunt-trophies), event editions
 - **AURA STYLES** (sellable, cosmetic-only): the SHAPE and character of the glow — sparkle patterns, ember-trail vs. steady-flame vs. pulse — while raw radius/brightness stays earned
 - Rare lines earnable through feats; standard + seasonal lines sold. Brightness tier NEVER purchasable — a day-one player and a whale with the same deeds have equally bright pixies. That's the trust contract, and it's the difference between a beloved companion system and a slot machine.
+
+---
+
+## 5. THE SEPARATION LAW — campaign vs. the Endless Verdict / Tower (BudE404 ruling, Sept 5)
+## Campaign/missions and the tower wave mode are DIFFERENT products. Neither borrows from the other's identity.
+
+**CAMPAIGN = THE PILGRIMAGE.** Authored, story-bearing, runs the Form Loop. Geography you walk first, landmarks you remember, wreckage walks, progressive revelation. Stakes are narrative + world-state (the map progress bar). Failure = story states. Built to be EXPERIENCED.
+
+**TOWER = THE TRIALS.** Repeatable score-chasing sport inside the Gate's own interior (its own space — never reuses campaign geography for wave farming). Procedural floor composition, mastery scoring, glory-only rewards. No story reveals ever (no campaign lore locked behind tower floors — completionists are never conscripted into grinding). Failure = just a score. Built to be MASTERED.
+
+**Five walls between them:**
+1. **No shared progression** — campaign drives world-state + relic verbs; the tower drives score, titles, Shrine Honors, cosmetics. Nothing from the tower is ever required for campaign play. A pilgrimage-only player never touches the Trials and loses nothing.
+2. **No story in the tower** — Trials floors carry atmosphere and flavor, never campaign revelation. The story lives in the pilgrimage alone.
+3. **Own space** — the Trials live inside the Gate's interior; campaign regions are never converted into wave arenas. You will never farm a place you once mourned in.
+4. **Different design grammar** — campaign defense beats are authored set-pieces with objectives beyond survival; tower floors are pure combat escalation by design. A mission must never feel like wave-defense in a pretty dress; a floor must never carry mission pacing.
+5. **Different session promises** — missions = 15–30 min arcs with breathing room (SAFE beats, NPC beats, aftermath); Trials = short, pure, repeatable, leaderboard-shaped.
+
+Same combat verbs underneath (so mastery transfers) — different games on top (so neither dilutes the other).
