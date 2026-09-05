@@ -6,7 +6,7 @@
 ---
 
 ## ACT 1 — THE HOOK (sprite mode)
-**Location:** EMBERHOLLOW, the shrine town in the charcoal forest. Player is a ~6-inch ember-wisp sprite (serious fey, ember-toned robes, glowing element-touched eyes).
+**Location:** EMBERHOLLOW, the shrine town in the charcoal forest. Player is a ~2-foot ember-wisp sprite (fey-small) (serious fey, ember-toned robes, glowing element-touched eyes).
 
 The town's hearth-shrine — the perpetual flame every home lights its lantern from — has gone **cold**. Not burned out: *hollowed*. The flame is still there but casts no light and no warmth; ash falls UP from it. Old Mother Brackle (lantern-keeper NPC) won't say the god's name out loud anymore — when she tries, the sound goes missing. The player investigates at sprite scale: questioning the congregation, tracking ash that falls upward to its source, escorting frightened families to the town's Witness lanterns.
 
@@ -17,7 +17,7 @@ The trail leads to an old kiln-shrine outside town where an **Erased Drake** —
 
 Every deed echoes the FAITH meter — visible as a slow ember-tide rising in the Cinder Gate on the horizon. By act's end the meter sits at the cap, but the Gate **won't open**: the Hollow has wrapped the town in a **silence-siege** — the local faith-stream itself is being dammed. Somewhere out in the charcoal forest, something is eating the worship before it reaches the Gate.
 
-**Mechanics on display:** ritual gameplay; Witness Zone defense loop (relight lanterns the Drake extinguishes, protect the watchers); FAITH streams working together (Protection from escorts, Rite from ceremonies); companion sprite options (an Emberhound pup or an ash-wyrm hatchling recruited in Act 1 now fights at your side); the silhouette of a **T3 enemy** for the first time — a *Grimlight Colossus*, hollowed inverse of a shrine-statue, wading through the treeline at giant-scale. You cannot fight it. You are six inches tall.
+**Mechanics on display:** ritual gameplay; Witness Zone defense loop (relight lanterns the Drake extinguishes, protect the watchers); FAITH streams working together (Protection from escorts, Rite from ceremonies); companion sprite options (an Emberhound pup or an ash-wyrm hatchling recruited in Act 1 now fights at your side); the silhouette of a **T3 enemy** for the first time — a *Grimlight Colossus*, hollowed inverse of a shrine-statue, wading through the treeline at giant-scale. You cannot fight it. You are two feet tall.
 
 ## ACT 3 — THE GATE RITE (the handoff: sprite → GIANT)
 The evacuation of Emberhollow begins (escort families along the ash-road to Forgefall — PROTECTION faith at maximum weight). The Grimlight Colossus reaches the town. Lanterns die one by one. Mother Brackle gives the player the town's last lit lantern and says the words the silence had been eating:
