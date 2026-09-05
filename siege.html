@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>MYTHOS GATES — THE WAKING SIEGE</title>
+<style>
+  html,body{margin:0;padding:0;overflow:hidden;background:#0d0a09;font-family:Georgia,serif;-webkit-user-select:none;user-select:none;touch-action:none;height:100%}
+  #hud{position:fixed;inset:0;pointer-events:none;z-index:5}
+  .bar-wrap{position:absolute;left:50%;transform:translateX(-50%);width:min(60vw,420px);text-align:center}
+  #sanct-wrap{top:10px}
+  #faith-wrap{bottom:104px;left:16px;transform:none;width:min(40vw,240px);text-align:left}
+  .lbl{font-size:10px;letter-spacing:2px;color:#e8c9a0;text-shadow:0 1px 3px #000;margin-bottom:3px}
+  .bar{height:10px;background:#1a1210;border:1px solid #5a3a26;border-radius:6px;overflow:hidden}
+  .bar > div{height:100%;border-radius:6px;transition:width .25s}
+  #sanct-bar > div{background:linear-gradient(90deg,#ff8c2e,#ffd27a)}
+  #faith-bar > div{background:linear-gradient(90deg,#7ad0ff,#cfefff)}
+  #wave{position:absolute;top:8px;left:12px;color:#e8c9a0;font-size:13px;letter-spacing:2px;text-shadow:0 1px 3px #000}
+  #stage{position:absolute;top:8px;right:12px;color:#ff9b4d;font-size:12px;letter-spacing:2px;text-shadow:0 1px 3px #000}
+  #banner{position:absolute;top:34%;left:0;right:0;text-align:center;color:#ffdca8;font-size:clamp(22px,6vw,42px);letter-spacing:6px;text-shadow:0 2px 12px #000;opacity:0;transition:opacity .4s;font-style:italic}
+  .btn{position:fixed;border-radius:50%;border:2px solid rgba(232,201,160,.55);background:rgba(30,20,14,.55);color:#e8c9a0;font-size:11px;letter-spacing:1px;display:flex;align-items:center;justify-content:center;z-index:6;font-family:Georgia,serif}
+  #atk{right:20px;bottom:26px;width:74px;height:74px;border-color:rgba(255,150,60,.7)}
+  #skill{right:110px;bottom:56px;width:58px;height:58px}
+  .cd{position:absolute;inset:0;border-radius:50%;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;visibility:hidden}
+  #stick{position:fixed;left:14px;bottom:22px;width:110px;height:110px;border-radius:50%;border:1px solid rgba(232,201,160,.25);background:rgba(20,14,10,.3);z-index:6;display:none}
+  #knob{position:absolute;width:44px;height:44px;border-radius:50%;background:rgba(232,201,160,.35);left:33px;top:33px}
+  #overlay{position:fixed;inset:0;background:rgba(8,5,4,.88);z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#e8c9a0;text-align:center;padding:24px}
+  #overlay h1{font-size:clamp(24px,7vw,44px);letter-spacing:8px;margin:0 0 6px;color:#ffdca8;font-style:italic;font-weight:normal}
+  #overlay p{font-size:14px;line-height:1.7;max-width:520px;margin:8px 0}
+  #overlay button{margin-top:18px;padding:12px 34px;font-family:Georgia,serif;font-size:15px;letter-spacing:3px;background:none;border:1px solid #c98a4b;color:#ffdca8;border-radius:4px;cursor:pointer}
+  #hud,#stick,.btn{display:none}
+  body.playing #hud{display:block}
+  body.playing .btn,body.playing #stick{display:flex}
+</style>
+</head>
+<body>
+<div id="hud">
+  <div id="wave">WAVE 1/9</div>
+  <div id="stage">WAKE: ARM</div>
+  <div class="bar-wrap" id="sanct-wrap"><div class="lbl">GATE SANCTITY</div><div class="bar" id="sanct-bar"><div style="width:100%"></div></div></div>
+  <div class="bar-wrap" id="faith-wrap"><div class="lbl">FAITH</div><div class="bar" id="faith-bar"><div style="width:0%"></div></div></div>
+  <div id="banner"></div>
+</div>
+<div id="stick"><div id="knob"></div></div>
+<button class="btn" id="atk">SWEEP</button>
+<button class="btn" id="skill">EMBER<div class="cd" id="skill-cd">40</div></button>
+<div id="overlay">
+  <h1>THE WAKING SIEGE</h1>
+  <p>The god does not walk. He rises. The Hollow comes for the Gate — from the bottom of the world, up toward him.<br><br>
+  You are the surge: hold the line below, sweep the crawlers back, and spend FAITH to fissure the ground. The god fights with you — his palm answers the deepest leakers, and he WAKES as the waves climb: arm &rarr; torso &rarr; full rise.<br><br>
+  If the Gate's sanctity falls, the siege is lost.</p>
+  <button id="start">BEGIN THE RITE</button>
+</div>
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script>
+(() => {
+const W = () => innerWidth, H = () => innerHeight;
+const renderer = new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(W(), H());
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x120c0a);
+scene.fog = new THREE.FogExp2(0x120c0a, 0.016);
+const camera = new THREE.PerspectiveCamera(58, W()/H(), 0.1, 400);
+
+scene.add(new THREE.AmbientLight(0x504038, 1.6));
+const moon = new THREE.DirectionalLight(0x8a92b8, .55); moon.position.set(-30,60,20); scene.add(moon);
+const emberLight = new THREE.PointLight(0xff7a2e, 3.2, 90, 1.6); emberLight.position.set(0, 14, -46); scene.add(emberLight);
+
+const ARENA_W = 26, GATE_Z = -46, SPAWN_Z = 16;
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(120, 160, 1, 1), new THREE.MeshStandardMaterial({color:0x231a15, roughness:1}));
+ground.rotation.x = -Math.PI/2; scene.add(ground);
+const lavaMat = new THREE.MeshBasicMaterial({color:0xff6a22});
+for (let i=0;i<26;i++){
+  const h = 2+Math.random()*7, sp = new THREE.Mesh(new THREE.ConeGeometry(1+Math.random()*1.6, h, 5), new THREE.MeshStandardMaterial({color:0x2b211c, roughness:1, flatShading:true}));
+  const x = (Math.random()<.5?-1:1)*(9+Math.random()*20), z = -52+Math.random()*84;
+  sp.position.set(x, h/2, z); scene.add(sp);
+}
+for (let i=0;i<14;i++){
+  const f = new THREE.Mesh(new THREE.BoxGeometry(.5+Math.random()*1.2, .02, 6+Math.random()*14), lavaMat);
+  f.position.set((Math.random()<.5?-1:1)*(2+Math.random()*11), .02, -50+Math.random()*76);
+  f.rotation.y = Math.random()*Math.PI; scene.add(f);
+}
+const lake = new THREE.Mesh(new THREE.CircleGeometry(16, 40), new THREE.MeshBasicMaterial({color:0xff7d26}));
+lake.rotation.x = -Math.PI/2; lake.position.set(0, .03, GATE_Z-16); scene.add(lake);
+const lakeGlow = new THREE.PointLight(0xff8c2e, 2.6, 60, 1.8); lakeGlow.position.set(0, 6, GATE_Z-14); scene.add(lakeGlow);
+
+const stoneMat = new THREE.MeshStandardMaterial({color:0x2e241e, roughness:.95});
+const gate = new THREE.Group();
+const p1 = new THREE.Mesh(new THREE.BoxGeometry(2.2, 14, 2.2), stoneMat); p1.position.set(-4.4, 7, 0);
+const p2 = p1.clone(); p2.position.x = 4.4;
+const lintel = new THREE.Mesh(new THREE.BoxGeometry(12, 2.4, 2.6), stoneMat); lintel.position.y = 14.4;
+const runeMat = new THREE.MeshBasicMaterial({color:0xff8c2e});
+const runeStrip = new THREE.Mesh(new THREE.BoxGeometry(.3, 11, .1), runeMat); runeStrip.position.set(-4.4, 7, 1.2);
+const runeStrip2 = runeStrip.clone(); runeStrip2.position.x = 4.4;
+gate.add(p1, p2, lintel, runeStrip, runeStrip2); gate.position.set(0, 0, GATE_Z); scene.add(gate);
+
+const swordMat = new THREE.MeshStandardMaterial({color:0x4a4038, roughness:.8, metalness:.4});
+for (let i=0;i<16;i++){
+  const sw = new THREE.Group();
+  const blade = new THREE.Mesh(new THREE.ConeGeometry(.16, 2.6, 4), swordMat); blade.position.y = 1.1;
+  const hilt = new THREE.Mesh(new THREE.BoxGeometry(.7, .14, .14), swordMat); hilt.position.y = 2.4;
+  sw.add(blade, hilt);
+  const a = Math.random()*Math.PI*2, r = 12+Math.random()*7;
+  sw.position.set(Math.sin(a)*r, .1, GATE_Z-6+Math.cos(a)*r*.5);
+  sw.rotation.z = (Math.random()-.5)*.16; scene.add(sw);
+}
+
+// ---- Colossus ----
+const rockMat = new THREE.MeshStandardMaterial({color:0x3a2a22, roughness:1, flatShading:true});
+const crustMat = new THREE.MeshStandardMaterial({color:0x241a15, roughness:1, flatShading:true});
+const glowMat = new THREE.MeshBasicMaterial({color:0xffb347});
+const colossus = new THREE.Group();
+const mound = new THREE.Mesh(new THREE.ConeGeometry(11, 7, 8), crustMat); mound.position.set(0, 3.4, GATE_Z-9); colossus.add(mound);
+const torso = new THREE.Mesh(new THREE.CylinderGeometry(4.6, 6.4, 13, 8), rockMat); torso.position.set(0, 9.5, GATE_Z-8);
+const chestGlow = new THREE.Mesh(new THREE.BoxGeometry(1.6, 4, .4), glowMat); chestGlow.position.set(0, 10, GATE_Z-3.2); chestGlow.rotation.x=.2;
+const shoulderL = new THREE.Mesh(new THREE.DodecahedronGeometry(2.9, 0), crustMat); shoulderL.position.set(-6.4, 14.6, GATE_Z-8);
+const shoulderR = shoulderL.clone(); shoulderR.position.x = 6.4;
+const armMain = new THREE.Group();
+const upperA = new THREE.Mesh(new THREE.CylinderGeometry(1.7, 1.5, 8, 7), rockMat); upperA.position.y = -4;
+const palmA = new THREE.Mesh(new THREE.DodecahedronGeometry(2.3, 0), crustMat); palmA.position.y = -8.6;
+armMain.add(upperA, palmA); armMain.position.set(6.4, 14.6, GATE_Z-8); armMain.rotation.z = -.5;
+const armSlam = armMain.clone(); armSlam.rotation.z = 2.5; armSlam.visible = false; colossus.add(armSlam);
+const head = new THREE.Mesh(new THREE.DodecahedronGeometry(3.4, 1), rockMat); head.position.set(0, 18.6, GATE_Z-7); head.rotation.set(.3, .5, .1);
+const eyeL = new THREE.Mesh(new THREE.SphereGeometry(.55, 8, 8), glowMat); eyeL.position.set(-1.2, 18.9, GATE_Z-4.4);
+const eyeR = eyeL.clone(); eyeR.position.x = 1.2;
+const thornMat = new THREE.MeshStandardMaterial({color:0x120d0b, roughness:.3, metalness:.5, flatShading:true});
+for (let i=0;i<7;i++){
+  const thorn = new THREE.Mesh(new THREE.ConeGeometry(.7, 2.6+Math.random()*2, 5), thornMat);
+  const a = (i/7)*Math.PI*2;
+  thorn.position.set(Math.sin(a)*2.6, 21.2+Math.random()*.6, GATE_Z-7+Math.cos(a)*1.6);
+  thorn.rotation.set((Math.random()-.5)*.4, 0, (Math.random()-.5)*.4);
+  colossus.add(thorn);
+}
+const stageTorso = [torso, chestGlow, shoulderL, shoulderR];
+colossus.add(...stageTorso, head, eyeL, eyeR, armMain);
+scene.add(colossus);
+function setWake(stage, animate){
+  const showTorso = stage >= 1;
+  stageTorso.forEach(m => m.visible = showTorso);
+  armMain.visible = !slamActive; armSlam.visible = slamActive;
+  colossus.userData.stage = stage;
+  document.getElementById('stage').textContent = 'WAKE: ' + (stage===0?'ARM':stage===1?'TORSO':'FULL RISE');
+  if (animate) stageTorso.forEach(m => { m.scale.set(.01,.01,.01); m.userData.grow = true; });
+}
+
+// ---- Player ----
+const player = new THREE.Group();
+const robe = new THREE.Mesh(new THREE.CylinderGeometry(.55, .75, 1.7, 8), new THREE.MeshStandardMaterial({color:0x1c1815, roughness:1, flatShading:true}));
+robe.position.y = .85;
+const hood = new THREE.Mesh(new THREE.ConeGeometry(.55, .95, 8), new THREE.MeshStandardMaterial({color:0x14100d, roughness:1, flatShading:true}));
+hood.position.y = 1.95; hood.rotation.x = .18;
+const eyesGlow = new THREE.Mesh(new THREE.SphereGeometry(.09, 6, 6), glowMat); eyesGlow.position.set(0, 1.72, .42);
+const lantern = new THREE.Mesh(new THREE.OctahedronGeometry(.18, 0), glowMat); lantern.position.set(.62, 1.25, .3);
+const lanternLight = new THREE.PointLight(0xffb347, 1.4, 9, 1.4); lanternLight.position.set(.62, 1.3, .4);
+const swordM = new THREE.Mesh(new THREE.ConeGeometry(.09, 1.7, 4), new THREE.MeshStandardMaterial({color:0x8a7a60, metalness:.7, roughness:.35}));
+swordM.position.set(.75, 1.15, .35); swordM.rotation.x = Math.PI/2;
+player.add(robe, hood, eyesGlow, lantern, lanternLight, swordM);
+player.position.set(0, 0, 2);
+scene.add(player);
+
+// ---- FX ----
+const fxPool = [];
+function burst(pos, color, size, n){
+  const g = new THREE.BufferGeometry(); const v = [];
+  for (let i=0;i<n;i++) v.push(pos.x, pos.y, pos.z);
+  g.setAttribute('position', new THREE.Float32BufferAttribute(v, 3));
+  const m = new THREE.PointsMaterial({color, size, transparent:true, opacity:1, depthWrite:false});
+  const pts = new THREE.Points(g, m); scene.add(pts);
+  fxPool.push({obj:pts, life:0, vel:Array.from({length:n}, ()=> new THREE.Vector3((Math.random()-.5)*4, Math.random()*3.4, (Math.random()-.5)*4))});
+}
+const rings = [];
+function ring(pos, color, maxR){
+  const m = new THREE.Mesh(new THREE.RingGeometry(.4, .7, 40), new THREE.MeshBasicMaterial({color, transparent:true, opacity:.9, side:THREE.DoubleSide, depthWrite:false}));
+  m.rotation.x = -Math.PI/2; m.position.copy(pos); m.position.y = .06; scene.add(m);
+  rings.push({obj:m, r:.5, maxR:maxR||3});
+}
+function banner(txt, dur){
+  const b = document.getElementById('banner'); b.textContent = txt; b.style.opacity = 1;
+  clearTimeout(b._t); b._t = setTimeout(()=> b.style.opacity = 0, dur||1600);
+}
+
+// ---- State ----
+let sanct = 100, faith = 0, wave = 0, waveN = 9;
+let mobs = [], alive = true, playing = false, respite = 2.5, waveSpawning = false;
+let shake = 0, hitStop = 0, slamCd = 9, slam = null, slamActive = false;
+let keys = {};
+addEventListener('keydown', e => { keys[e.key.toLowerCase()] = true; if([' ','arrowup','arrowdown','arrowleft','arrowright'].includes(e.key.toLowerCase())) e.preventDefault(); });
+addEventListener('keyup', e => keys[e.key.toLowerCase()] = false);
+
+function spawnMob(tier){
+  const g = new THREE.Group();
+  const body = new THREE.Mesh(new THREE.DodecahedronGeometry(.42+tier*.1, 0), new THREE.MeshStandardMaterial({color:0x0d0a12, roughness:1, flatShading:true}));
+  body.position.y = .45;
+  const e1 = new THREE.Mesh(new THREE.SphereGeometry(.07, 6, 6), new THREE.MeshBasicMaterial({color:0x9fe8ff}));
+  const e2 = e1.clone();
+  e1.position.set(-.14, .55, .35); e2.position.set(.14, .55, .35);
+  g.add(body, e1, e2);
+  const x = (Math.random()-.5) * (ARENA_W - 2);
+  g.position.set(x, 0, SPAWN_Z + Math.random()*7);
+  scene.add(g);
+  mobs.push({obj:g, hp:1+tier, speed:(2.6+tier*.5+Math.random()*.8), tier});
+}
+function killMob(m, i){
+  burst(m.obj.position.clone().setY(.5), 0xff8c2e, .5, 8);
+  scene.remove(m.obj); mobs.splice(i,1);
+  faith = Math.min(100, faith + 7 + m.tier*3);
+}
+
+let atkCd = 0, sweep = null, skillCd = 0;
+function doSweep(){
+  if (atkCd > 0 || !playing) return;
+  atkCd = .38; hitStop = .04;
+  const dir = player.userData.face || new THREE.Vector3(0,0,-1);
+  ring(player.position.clone().add(dir.clone().multiplyScalar(1.6)).setY(0), 0xffc27a, 2.4);
+  sweep = {pos: player.position.clone(), dir: dir.clone(), r: 2.6, t: .18};
+}
+const emberLanes = [];
+function doEmberWave(){
+  if (faith < 40 || skillCd > 0 || !playing) return;
+  faith -= 40; skillCd = 3.2; shake = .25; hitStop = .05;
+  const lane = {x: player.position.x, z0: player.position.z, z1: GATE_Z + 2, w: 2.6, life: .9};
+  for (let z = lane.z0; z > lane.z1; z -= 3){
+    ring(new THREE.Vector3(lane.x + (Math.random()-.5)*1.2, 0, z), 0xff6a22, 2.2);
+    burst(new THREE.Vector3(lane.x, .4, z), 0xffb347, .8, 7);
+  }
+  emberLanes.push(lane);
+  emberLight.position.set(lane.x, 14, -40);
+}
+function damageLanes(dt){
+  for (let i = emberLanes.length-1; i >= 0; i--){
+    const lane = emberLanes[i]; lane.life -= dt;
+    for (let j = mobs.length-1; j >= 0; j--){
+      const m = mobs[j];
+      if (Math.abs(m.obj.position.x - lane.x) < lane.w && m.obj.position.z < lane.z0 + 1 && m.obj.position.z > lane.z1){
+        killMob(m, j);
+      }
+    }
+    if (lane.life <= 0) emberLanes.splice(i,1);
+  }
+}
+
+function trySlam(dt){
+  slamCd -= dt;
+  if (slamCd <= 0 && mobs.length > 0 && !slam){
+    slamCd = 8 - (colossus.userData.stage||0) * 2;
+    let deepest = null, minZ = -20;
+    for (const m of mobs) if (m.obj.position.z < minZ){ minZ = m.obj.position.z; deepest = m; }
+    const tx = deepest ? deepest.obj.position.x : (Math.random()-.5)*10;
+    slam = {x: tx, z: Math.min(minZ + 4, -12), t: 0, phase: 0};
+    slamActive = true; armMain.visible = false; armSlam.visible = true;
+    banner('THE PALM ANSWERS', 1000);
+  }
+  if (slam){
+    slam.t += dt;
+    if (slam.phase === 0 && slam.t > .8){
+      slam.phase = 1;
+      const p = new THREE.Vector3(slam.x, 0, slam.z);
+      ring(p, 0xff6a22, 7.5); ring(p, 0xffd27a, 5);
+      burst(p.clone().setY(.6), 0xff8c2e, 1.4, 26);
+      shake = .5; hitStop = .07;
+      for (let i = mobs.length-1; i >= 0; i--){
+        if (mobs[i].obj.position.distanceTo(new THREE.Vector3(slam.x, 0, slam.z)) < 6.5) killMob(mobs[i], i);
+      }
+    }
+    if (slam.t > 1.7){ slam = null; slamActive = false; armMain.visible = true; armSlam.visible = false; }
+  }
+}
+
+let toSpawn = 0, spawnT = 0;
+function startWave(){
+  wave++;
+  document.getElementById('wave').textContent = 'WAVE ' + wave + '/' + waveN;
+  banner('WAVE ' + wave, 1400);
+  waveSpawning = true; toSpawn = 7 + wave*4;
+  if (wave === 4 && colossus.userData.stage === 0){ setWake(1, true); banner('THE TORSO RISES', 1800); shake = .4; }
+  if (wave === 7 && colossus.userData.stage === 1){ setWake(2, true); banner('FULL RISE', 1800); shake = .6; }
+}
+function waveTick(dt){
+  if (waveSpawning){
+    spawnT -= dt;
+    if (toSpawn > 0 && spawnT <= 0){
+      const tier = wave >= 7 ? 2 : (wave >= 3 ? 1 : 0);
+      spawnMob(Math.random() < .25 ? tier : 0);
+      toSpawn--; spawnT = Math.max(.25, 1.1 - wave*.07);
+    }
+    if (toSpawn <= 0 && mobs.length === 0){
+      waveSpawning = false;
+      if (wave >= waveN){ victory(); return; }
+      respite = 2.2; faith = Math.min(100, faith + 25);
+    }
+  } else if (playing){
+    respite -= dt;
+    if (respite <= 0) startWave();
+  }
+}
+
+function gameOver(){
+  if (!alive) return;
+  alive = false; playing = false; document.body.classList.remove('playing');
+  const o = document.getElementById('overlay');
+  o.innerHTML = '<h1>THE GATE IS DEFILED</h1><p>The sanctity fell. The god sinks back into the earth, unwoken.</p><button onclick="location.reload()">RISE AGAIN</button>';
+  o.style.display = 'flex';
+}
+function victory(){
+  playing = false; document.body.classList.remove('playing');
+  const o = document.getElementById('overlay');
+  o.innerHTML = '<h1>THE GATE STANDS</h1><p>The god wakes fully. The Hollow break against his rising like surf against the mountain.<br><br><i>Next rite: colossal vs colossal — the duel, side camera, your god against the Echo.</i></p><button onclick="location.reload()">SIEGE AGAIN</button>';
+  o.style.display = 'flex';
+}
+
+// ---- Input ----
+const stick = document.getElementById('stick'), knob = document.getElementById('knob');
+let stickActive = false, stickVec = {x:0, y:0}, stickId = null, stickHome = null;
+function stickPos(t){
+  const r = stick.getBoundingClientRect();
+  let dx = t.clientX - (r.left + r.width/2), dy = t.clientY - (r.top + r.height/2);
+  const d = Math.hypot(dx, dy), max = r.width/2 - 12;
+  if (d > max){ dx = dx/d*max; dy = dy/d*max; }
+  knob.style.left = (33 + dx) + 'px'; knob.style.top = (33 + dy) + 'px';
+  stickVec = {x: dx/max, y: dy/max};
+}
+renderer.domElement.addEventListener('touchstart', e => {
+  for (const t of e.changedTouches){
+    if (t.clientX < innerWidth * .45 && !stickActive){
+      stickActive = true; stickId = t.identifier;
+      stickHome = {left: stick.style.left, top: stick.style.top};
+      stick.style.left = (t.clientX - 55) + 'px';
+      stick.style.top = (t.clientY - 55) + 'px'; stick.style.bottom = 'auto';
+      stickPos(t);
+    }
+  }
+}, {passive:true});
+renderer.domElement.addEventListener('touchmove', e => {
+  for (const t of e.changedTouches) if (t.identifier === stickId) stickPos(t);
+}, {passive:true});
+const endT = e => { for (const t of e.changedTouches) if (t.identifier === stickId){ stickActive = false; stickId = null; stickVec = {x:0,y:0}; knob.style.left='33px'; knob.style.top='33px'; stick.style.left='14px'; stick.style.top='auto'; stick.style.bottom='22px'; } };
+renderer.domElement.addEventListener('touchend', endT); renderer.domElement.addEventListener('touchcancel', endT);
+document.getElementById('atk').addEventListener('pointerdown', e => { e.preventDefault(); doSweep(); });
+document.getElementById('skill').addEventListener('pointerdown', e => { e.preventDefault(); doEmberWave(); });
+document.getElementById('start').addEventListener('click', () => {
+  document.getElementById('overlay').style.display = 'none';
+  document.body.classList.add('playing');
+  playing = true; alive = true; setWake(0, false); respite = 1.5;
+  banner('DEFEND THE GATE', 1800);
+});
+
+// ---- Loop ----
+const camPos = new THREE.Vector3(0, 7.5, 11), camLook = new THREE.Vector3(0, 4, -18);
+let last = performance.now();
+function loop(now){
+  requestAnimationFrame(loop);
+  let dt = Math.min(.05, (now - last)/1000); last = now;
+  if (hitStop > 0){ hitStop -= dt; dt *= .12; }
+  if (playing){
+    let mx = stickVec.x, mz = stickVec.y;
+    if (keys['w']||keys['arrowup']) mz -= 1; if (keys['s']||keys['arrowdown']) mz += 1;
+    if (keys['a']||keys['arrowleft']) mx -= 1; if (keys['d']||keys['arrowright']) mx += 1;
+    const ml = Math.hypot(mx, mz);
+    if (ml > .12){
+      const sp = 7 * Math.min(1, ml);
+      player.position.x = THREE.MathUtils.clamp(player.position.x + mx/ml*sp*dt, -ARENA_W/2, ARENA_W/2);
+      player.position.z = THREE.MathUtils.clamp(player.position.z + mz/ml*sp*dt, GATE_Z + 6, SPAWN_Z + 5);
+      const face = new THREE.Vector3(mx/ml, 0, mz/ml);
+      player.userData.face = face;
+      player.rotation.y = Math.atan2(face.x, face.z);
+      player.position.y = Math.abs(Math.sin(now*.011)) * .12 * Math.min(1, ml);
+    }
+    if (keys[' ']||keys['j']) doSweep();
+    if (keys['e']||keys['k']) doEmberWave();
+    atkCd = Math.max(0, atkCd - dt); skillCd = Math.max(0, skillCd - dt);
+    document.getElementById('skill-cd').style.visibility = skillCd > 0 ? 'visible' : 'hidden';
+    faith = Math.min(100, faith + dt*1.5);
+    document.querySelector('#sanct-bar > div').style.width = sanct + '%';
+    document.querySelector('#faith-bar > div').style.width = faith + '%';
+    document.getElementById('skill').style.opacity = faith >= 40 ? 1 : .45;
+    for (let i = mobs.length-1; i >= 0; i--){
+      const m = mobs[i];
+      const dz = GATE_Z - m.obj.position.z;
+      const dir = new THREE.Vector3(-m.obj.position.x*.08, 0, dz).normalize();
+      m.obj.position.addScaledVector(dir, m.speed*dt);
+      m.obj.position.y = Math.abs(Math.sin(now*.02 + i)) * .18;
+      m.obj.rotation.y = Math.atan2(dir.x, dir.z);
+      if (m.obj.position.z < GATE_Z + 2.5){
+        sanct -= 4 + m.tier*2; burst(new THREE.Vector3(m.obj.position.x, 1, GATE_Z), 0x9fe8ff, .8, 14);
+        scene.remove(m.obj); mobs.splice(i,1);
+        shake = Math.max(shake, .18);
+        if (sanct <= 0){ sanct = 0; gameOver(); }
+        continue;
+      }
+      if (sweep && sweep.t > 0){
+        const toM = m.obj.position.clone().sub(sweep.pos); toM.y = 0;
+        if (toM.length() < sweep.r && toM.normalize().dot(sweep.dir) > .35){ killMob(m, i); shake = Math.max(shake,.1); }
+      }
+    }
+    if (sweep){ sweep.t -= dt; if (sweep.t <= 0) sweep = null; }
+    damageLanes(dt);
+    trySlam(dt);
+    waveTick(dt);
+    if (armMain.visible && Math.random() < dt*3) burst(new THREE.Vector3(6.4+3.5, 6.5, GATE_Z-11), 0xff8c2e, .7, 2);
+  }
+  colossus.children.forEach(c => { if (c.userData.grow){ const s = Math.min(1, c.scale.x + dt*1.4); c.scale.set(s,s,s); if (s >= 1) c.userData.grow = false; } });
+  for (let i = fxPool.length-1; i >= 0; i--){
+    const f = fxPool[i]; f.life += dt;
+    const pos = f.obj.geometry.attributes.position;
+    for (let j = 0; j < f.vel.length; j++){
+      pos.setXYZ(j, pos.getX(j) + f.vel[j].x*dt, Math.max(0, pos.getY(j) + f.vel[j].y*dt), pos.getZ(j) + f.vel[j].z*dt);
+      f.vel[j].y -= 4*dt;
+    }
+    pos.needsUpdate = true;
+    f.obj.material.opacity = Math.max(0, 1 - f.life/.7);
+    if (f.life > .7){ scene.remove(f.obj); fxPool.splice(i,1); }
+  }
+  for (let i = rings.length-1; i >= 0; i--){
+    const r = rings[i]; r.r += dt * (r.maxR * 2.2);
+    r.obj.scale.setScalar(r.r / .55);
+    r.obj.material.opacity = Math.max(0, .95 * (1 - r.r/r.maxR));
+    if (r.r >= r.maxR){ scene.remove(r.obj); rings.splice(i,1); }
+  }
+  const target = player.position.clone().add(new THREE.Vector3(0, 7.2, 9.5));
+  camPos.lerp(target, Math.min(1, dt*7));
+  camera.position.copy(camPos);
+  if (shake > 0){ shake -= dt; camera.position.x += (Math.random()-.5)*shake*1.6; camera.position.y += (Math.random()-.5)*shake*1.2; }
+  camLook.lerp(player.position.clone().lerp(new THREE.Vector3(0, 9, GATE_Z-6), .4), Math.min(1, dt*5));
+  camera.lookAt(camLook);
+  if (Math.random() < dt*4) burst(new THREE.Vector3((Math.random()-.5)*40, .2, -50+Math.random()*70), 0xff8c2e, .35, 1);
+  renderer.render(scene, camera);
+}
+addEventListener('resize', () => { renderer.setSize(W(), H()); camera.aspect = W()/H(); camera.updateProjectionMatrix(); });
+loop(last);
+})();
+</script>
+</body>
+</html>
