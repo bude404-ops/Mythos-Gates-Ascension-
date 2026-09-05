@@ -1,4 +1,5 @@
-# ABILITY FEASIBILITY AUDIT — all 32 kits vs. the locked toolchain (BudE404 directive, Sept 2 2026)
+# ABILITY FEASIBILITY AUDIT — all 32 kits vs. the locked toolchain
+> **⚠️ ROSTER SUPERSEDED (Sept 5 2026):** the audited 32-kit roster is the old 8-faction era. Current canon = 24 units (docs/MYTHOS_DEITY_COMBAT_KITS.md). The TOOLCHAIN findings below remain fully valid — barrier pool, buff registry, projectile classes, light flags are the shared systems the current 24 kits build on; the per-kit verdicts map 1:1 to the equivalent giant/champion kits. (BudE404 directive, Sept 2 2026)
 Toolchain constraints: Godot 4 mobile • tap-to-move + auto-attack (no joystick) • Meshy mesh → Mixamo rig + free Mixamo animation library (Blender retarget, 24-bone skeleton) • solo-first (self-only heals/buffs) • server-authoritative saves • cosmetics-only F2P • must run on mid-range phones.
 
 ## VERDICT SUMMARY
