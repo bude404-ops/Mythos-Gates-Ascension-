@@ -39,9 +39,9 @@
 | Ashfall | VHARKAR, the Furnace Warden — Crucible Blade (condensed magma) | VESSKRA, the Kiln Mother — Crucible Staff | CANON |
 | Skyrend | HAELDIR, the Thunder Oath — Skyfall Blade (frozen thundercloud) | SYLWEN, the Stormsight — Weather-Glass Staff | CANON |
 | Everbloom | THEVRIL, the Evenhand — Living Scale | MIRIATH, the Stillwater — Mirror Staff | CANON |
-| Duskmourn | MORVAIN, the Last Warden — Dusk Blade (Duskscythe → chassis conversion) | SENVRA, the Lampkeeper — Lantern Staff | art rolled (Bone Giant/Giantess), name verdicts pending |
-| Marenth | NEROVAX, the Undertow — Tidal Greatblade | MARUVAK re-cast → the Abyss Wellstaff (female caster per Gender-Role Binding; name verdict pending) | art rolled (Tide Giant/Giantess), verdicts pending |
-| Stoneheart | GROTHMAR, the Mountain Oath — Tectonic Blade (Maul → chassis conversion) | BERGRUN, the Unmoved — Bulwark Staff (Garrotes → chassis conversion; verdict pending) | art rolled (Stone Giant/Giantess), verdicts pending |
+| Duskmourn | MORVAIN, the Last Warden — Dusk Blade (Duskscythe → chassis conversion) | SENVRA, the Lampkeeper — Lantern Staff | art rolled (Bone Giant/Giantess), names LOCKED |
+| Marenth | NEROVAX, the Undertow — Tidal Greatblade | ILSARRA the Mirrorfin — Mirrorfin Staff (grown coral, pearl-lens; recast to caster per Gender-Role Binding) | art rolled (Tide Giant/Giantess), names LOCKED |
+| Stoneheart | GROTHMAR, the Mountain Oath — Tectonic Blade (Maul → chassis conversion) | BERGRUN, the Unmoved — Bulwark Staff (Garrotes → chassis conversion) | art rolled (Stone Giant/Giantess), names LOCKED |
 
 **Phase cues (T3 duels vs/with giants):** 66% = strata cracks brighten, element-shed doubles (activation lore); 33% = mantle core exposed, frenzy — double specials. Death state: essence departs, the elemental body dissipates; nothing remains but the discarded weapon-echo (lore-only).
 

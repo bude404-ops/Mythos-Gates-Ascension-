@@ -99,7 +99,7 @@ Every faction chapter runs the same five-beat rhythm:
 - **Kept-pair story:** Vharkar's sprite vessel walks as a furnace-judge restoring the kiln-cities' oaths; Vesskra's walks as the kiln-mother midwifing new faith in the foundling shrines.
 
 ### F2 AIR — SKYREND (proposal: Haeldir + Sylwen kept; Yrdis & Naeria = tree skins)
-- **Gate:** the Storm Gate, frozen fjord north. **Crisis:** the winds go silent — storms die mid-birth, and the north's weather-readers lose their gift.
+- **Gate:** the Squall Gate, frozen fjord north. **Crisis:** the winds go silent — storms die mid-birth, and the north's weather-readers lose their gift.
 - **Dungeons:** THE STILL FJORD (frozen wave-harbors), THE WHISPER GALLERY (cliff-carved halls where the wind's voices are kept), THE VANESPIRE (Vow Quest: the Lightning-Thread Bow).
 - **World boss:** THE HELD BREATH — a shard that has stopped the storm; the sky over the fjord is one held inhale.
 - **Note:** Haeldir's colossal carries the SKYFALL BLADE (storm greatsword) per the Weapon Chassis Law reconciliation — his verdict still pending.
@@ -115,12 +115,12 @@ Every faction chapter runs the same five-beat rhythm:
 - **World boss:** THE REFUSAL — a shard that will not let anything end; mortals it touches cannot die, and worse cannot heal.
 
 ### F5 WATER — MARENTH (proposal: Nerovax + Ilsarra kept; Maruvak & Thuveth = tree skins)
-- **Gate:** the Abyss Gate, drowned coast. **Crisis:** the tide forgets its schedule; pearl-light gutters in the deep places, drowned cities surface whole.
+- **Gate:** the Deep Gate, drowned coast. **Crisis:** the tide forgets its schedule; pearl-light gutters in the deep places, drowned cities surface whole.
 - **Dungeons:** THE SURFACED CITY, THE PRESSURE GARDENS (reef terraces gone wrong), THE SINGING CURRENT (Vow Quest: the Lancet Daggers).
 - **World boss:** THE DROWNED CHOIR — a shard of a thousand mouths singing the sea flat.
 
 ### F6 EARTH — STONEHEART (proposal: Grothmar + Bergrun kept; Dolvarr & Rhovarr = tree skins)
-- **Gate:** the Root Gate, mountain spine. **Crisis:** the mountains stop growing — the world's oldest bones go still, and quake-villages lose their warning tremors.
+- **Gate:** the Stone Gate, mountain spine. **Crisis:** the mountains stop growing — the world's oldest bones go still, and quake-villages lose their warning tremors.
 - **Dungeons:** THE STILL SPINE, THE FAULT CATHEDRAL (Rhovarr's breach-hall), THE SEED VAULT (Vow Quest: the Seedstrike Bow).
 - **World boss:** THE STILLNESS — a shard that ends all motion; even the player's colossal moves slow in its radius (mechanical identity).
 

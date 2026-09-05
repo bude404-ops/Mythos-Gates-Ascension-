@@ -106,7 +106,7 @@ Under the GIANTS & SPRITES doctrine + Two-Role Lock + Gender-Role Binding, each 
 | SKYREND | HAELDIR the Thunder Oath (Skyfall Blade) — THE THUNDERSHIELD RANGE | SYLWEN the Stormsight (Weather-Glass Staff) — THE CALM EYE | STORM-WARDEN — The Watchtower Coast | MATRIARCH — The Sky Mother's Shelf | deep cowl + watch-helm / cowl-veil |
 | EVERBLOOM | THEVRIL the Evenhand (Living Scale) — THE VERDANT MARCH | MIRIATH the Stillwater (Mirror Staff) — THE FLOWERDALE | BLOOM-WARDEN — The Seedkeep Gate | BLOOM-KEEPER — The Petal Shrine Terrace | Living Crown |
 | DUSKMOURN | MORVAIN the Last Warden (Dusk Blade) — THE OSSUARY PLAIN | SENVRA the Lampkeeper (Lantern Staff) — THE QUIET VIGIL | GLOAM-WARDEN — The Lantern Ways | VEIL-KEEPER — The Veiled Stair | lantern-cage |
-| MARENTH | NEROVAX the Undertow (Tidal Greatblade) — THE TIDEGATE COAST | the Abyss Wellstaff bearer — THE DEEP HOLLOW (name verdict pending) | TIDE-WARDEN — The First Light Harbor | PEARL-KEEPER — The Moontide Shrine | fin-crown |
+| MARENTH | NEROVAX the Undertow (Tidal Greatblade) — THE TIDEGATE COAST | ILSARRA the Mirrorfin (Mirrorfin Staff — grown coral, pearl-lens; recast to caster per the Gender-Role Binding) — THE DEEP HOLLOW | TIDE-WARDEN — The First Light Harbor | PEARL-KEEPER — The Moontide Shrine | fin-crown |
 | STONEHEART | GROTHMAR the Mountain Oath (Tectonic Blade) — THE ROOTSPINE GATE | BERGRUN the Unmoved (Bulwark Staff, chassis conversion) — THE GEODE VAULTS | QUARRY-WARDEN — The Deep Road Gate | CRYSTAL-KEEPER — The Heartroot Chamber | crystal-crest |
 
 Name verdicts: Ashfall/Skyrend/Everbloom giant names LOCKED via canon art; Duskmourn/Marenth/Stoneheart giant names are INHERITED PROPOSALS from the roster below (BudE404 veto per realm). Sprite champion title-names are canon with the sprite art. Sprite champions wield the elven LOTR armor language (Sprite Armor Law) — ember/storm/bloom/gloom/tide/crystal identity lives in the elven seams; the hollow's Unmade Champions wear the same armor grammar (see HOLLOW_TIDE_BESTIARY v2.0).
@@ -122,7 +122,7 @@ Glow: molten gold-white. Materials: ash-sandstone, obsidian glass, molten gold, 
 | Ozruv | the Ash Auditor | Striker | THE SCALE-CHAIN — twin ember blades joined by a burning chain; weighs, then executes | Weighted-Ash: ash-grey plate with counterweight spheres of solidified smoke |
 
 ## F2 — AIR 💨 Realm: **SKYREND** (the Endless Gale — storm-country of cloud cliffs)
-Glow: pale storm-blue. Materials: rain-slate, thundercloud-stone, pale ice, silver-blue vein-glass. Gate in Mythos: the Storm Gate, frozen fjord north.
+Glow: pale storm-blue. Materials: rain-slate, thundercloud-stone, pale ice, silver-blue vein-glass. Gate in Mythos: the SQUALL GATE, frozen fjord north.
 
 | Deity | Epithet | Role | Weapon | Armor Philosophy |
 |-------|---------|------|--------|-------------------|
@@ -152,7 +152,7 @@ Glow: pale violet ghost-light. Materials: bone-pale granite, black-vein marble, 
 | Ferran | the Ferryman | Ranged | THE OAR-ARCS — paired crescent blades like oars; he rows souls across | Wake-Line: black water-lines flowing into pale stone, like a wake |
 
 ## F5 — WATER 🌊 Realm: **MARENTH** (the Drowned Deep — sunken world of pressure and pearl-light)
-Glow: deep teal. Materials: abyssal basalt, coral-stone, pearl, wave-glass, barnacled marble. Gate in Mythos: the Abyss Gate, drowned coast.
+Glow: deep teal. Materials: abyssal basalt, coral-stone, pearl, wave-glass, barnacled marble. Gate in Mythos: the DEEP GATE, drowned coast.
 
 | Deity | Epithet | Role | Weapon | Armor Philosophy |
 |-------|---------|------|--------|-------------------|
@@ -162,7 +162,7 @@ Glow: deep teal. Materials: abyssal basalt, coral-stone, pearl, wave-glass, barn
 | Thuveth | the Reefsong | Striker | THE LANCET DAGGERS — thin wave-glass blades that sing at a frequency only prey hears | Current-Cut: sleek seamless plate shaped by flow, no beginning and no end |
 
 ## F6 — EARTH 🪨 Realm: **STONEHEART** (the Mountain Spine — the world's oldest bones, still growing)
-Glow: deep amber-green. Materials: root-marble, mountain granite, iron-vein stone, moss-agate, raw crystal. Gate in Mythos: the Root Gate, mountain spine.
+Glow: deep amber-green. Materials: root-marble, mountain granite, iron-vein stone, moss-agate, raw crystal. Gate in Mythos: the STONE GATE, mountain spine.
 
 | Deity | Epithet | Role | Weapon | Armor Philosophy |
 |-------|---------|------|--------|-------------------|
@@ -320,7 +320,7 @@ The True Dragon Vessel doctrine is RETIRED for deities and mortals. Same overall
 The 24 art models re-roll as colossal ELEMENTAL GIANTS/beings — living embodiments of their element. The Avatar Doctrine, Dual Vessel Doctrine, Two-Role Lock, Gender-Role Binding, and Female-Titan Laws all carry over unchanged. A colossal giant gripping a relic greatsword IS the warrior class; a giantess with a relic staff IS the caster class.
 
 ## 2. MORTALS = SPRITES
-THE HUMAN-TYPE SIDE IS SPRITES (BudE404 ruling): the mortal civilizations of Mythos are SPRITE-SIZE elemental beings, not humans or dragon-kin. Each faction's sprites mirror their patron giants' element (Ashfall ember-wisps, Skywilds storm-sprites, Everbloom petal-sprites, Duskmourn lantern-motes, Marenth pearl-finned sprites, Stoneheart crystal-sprites — names TBD per faction). Dragon-Kin Law REPEALED. The Narrow Ways: each giant's small vessel walks among the sprites at THEIR scale — divine disguise among tiny worshippers.
+THE HUMAN-TYPE SIDE IS SPRITES (BudE404 ruling): the mortal civilizations of Mythos are SPRITE-SIZE elemental beings, not humans or dragon-kin. Each faction's sprites mirror their patron giants' element (Ashfall ember-wisps, Skyrend storm-sprites, Everbloom petal-sprites, Duskmourn lantern-motes, Marenth pearl-finned sprites, Stoneheart crystal-sprites — names TBD per faction). Dragon-Kin Law REPEALED. The Narrow Ways: each giant's small vessel walks among the sprites at THEIR scale — divine disguise among tiny worshippers.
 
 ## 3. DRAGONS STILL EXIST — AS WORLD-BEASTS
 Dragons and draconic creatures are NOT deities and NOT mortals — they survive as the WILD FAUNA of Mythos: drakes, wyrms, and greater dragon-beasts roam the realms as apex creatures (the existing fauna table already carries Bumblewyrms, Petal-Stags etc. — dragons join that category, some colossal-scale as world bosses/mounts/beasts of legend). They can never be deities again, but the world keeps its dragons.

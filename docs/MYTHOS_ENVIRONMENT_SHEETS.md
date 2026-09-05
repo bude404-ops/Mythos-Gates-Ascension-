@@ -8,7 +8,7 @@
 ## ASHFALL / THE EMBERWASTE — art grammar
 **Palette:** black ash soil, ember-orange glow, bronze-and-charcoal architecture, white-gold divine fire.
 **Architecture grammar:** riveted FORGE-IRON kiln-plate roofs, crucible-core hearth towers (every tower built around an open furnace heart), forge-cathedrals with chimney-spire skylines, heat-shimmer haze, ember-motes in the air.
-- **THE CINDER GATE (Forgefall):** a colossal arch in the caldera-crown, its stone fused to bronze-black barding-metal at the seams, faint white-gold fire bleeding from its inner face; the gate-plaza is hammered bronze flagstone worn mirror-smooth by processions.
+- **THE CINDER GATE (Forgefall):** a colossal arch in the caldera-crown, its stone fused to bronze-black forge-iron at the seams, faint white-gold fire bleeding from its inner face; the gate-plaza is hammered bronze flagstone worn mirror-smooth by processions.
 - **FORGEFALL:** tiered caldera city — forge-cathedral at the crown, workshop terraces cascading down, kiln-light in every window, ash-storms on the horizon; the great hearth's Crucible Core visible from every street as a shared heartbeat.
 - **EMBERHOLLOW:** charcoal-forest spires (a burned forest preserved as black cathedral columns), shrine-lamps lit inside hollow trunks.
 - **SIGNATURE VISTA:** sunrise over the Warm Sea hitting the ash-plain — the ground smoking, cindercattle herds moving through heat-shimmer, Forgefall's hearth-towers on the ridge.

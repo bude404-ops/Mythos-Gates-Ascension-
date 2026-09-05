@@ -3,9 +3,9 @@
 
 ## A. THE GREAT MYTHS (world-founding — told in every region)
 
-### 1. THE FIRST FORGE
-Before anything, there was Aetherium — unshaped, silent, six-way tense. The tensions ground against each other until they caught: the first FIRE. The Forge was not a place; it was an EVENT — the moment the six tensions became conscious, and the first thing the newly-born gods did was make. They made armor before they made worlds — because a god without a shape is a storm, and storms do not last.
-**ART SCENE:** the primordial forge-moment — six elemental columns of light converging on a single Anvil of raw Aetherium; silhouettes of the first gods (winged, armored) rising from the collision.
+### 1. THE FIRST FORGE (giant-era canon)
+Before anything, there was Aetherium — unshaped, silent, six-way tense. The tensions ground against each other until they caught: the first FIRE. The Forge was not a place; it was an EVENT — the moment the six tensions became conscious. The gods did not make themselves; they WOKE as what they already were: the first FIRE, the first STORM, the first BLOOM, the first QUIET, the first TIDE, the first STONE. A god is not a thing that was made — it is the element that decided to stand. The world formed around them the way a valley forms around the river that runs through it.
+**ART SCENE:** the first standing — six primordial colossi half-emerging from raw element mid-formation (magma, storm, bloom, bone, wave, strata), a young unformed Mythos crystallizing around their feet.
 
 ### 2. THE WALKING AGE
 The gods walked Mythos in their true giant forms — raw living element — and the world learned by imitation. Where a god slept, a lake kept its shape. The lesser drakes sprang from their footprints; the region-beasts carry their elements like inherited surnames. Mortals were taught fire, writing, lanterns, tide-craft, stone-song — each faction credits its own god, and all of them are right.
@@ -13,7 +13,7 @@ The gods walked Mythos in their true giant forms — raw living element — and 
 
 ### 3. THE BALANCING
 The gods grew vast and Mythos grew thin under them. The world itself rose — mountain chains like knuckles, seas like held breath — and pushed. MYTHOS would not be ruled, even benevolently. One by one the giants crossed out through the six Gates. All but one. THE FORGOTTEN had walked farthest, made least, been loved by no nation — and when the Gates were raised, it was on the wrong side of every seam. Sealed beyond the void with no realm, no faithful, no name in any hymn.
-**ART SCENE:** the Gates rising — six arches igniting across a horizon; a solitary winged silhouette turned away from all of them, walking into the dark.
+**ART SCENE:** the Gates rising — six arches igniting across a horizon; a solitary giant-shaped silhouette turned away from all of them, walking into the dark.
 
 ### 4. THE EMPTY PEDESTAL
 Mortals do not hate the Forgotten; they pity it. At the center of the Concorde stands its pedestal — swept, repaired, garlanded, and left eternally empty. Children are taught: "We keep the seat because a god without a place learns to make places out of nothing — and nothing is not a place." It is the world's quietest warning.
@@ -52,7 +52,7 @@ Craghelm's quarry-city was founded when miners heard the mountain snoring. They 
 ## C. THE DEITY SAGAS (character legends — for art + campaign beats)
 
 ### VHARKAR — "THE WARDEN'S WATCH"
-When the Fracture opened, the first thing through was not a Hollow horror — it was silence. The Furnace Warden crossed the Cinder Gate with the sunrise behind him, and the Emberwaste's people say the ash itself bowed. He took no tribute, asked no hymns, and stood at the Gate for a season without closing his wings. The forge-masters still forge the barding-lines of his scales into their finest work. He answers fear with heat: "A furnace does not tremble. It holds."
+When the Fracture opened, the first thing through was not a Hollow horror — it was silence. The Furnace Warden crossed the Cinder Gate with the sunrise behind him — a hundred feet of raw living magma, strata flaking embers as he moved, the condensed-magma greatsword over his shoulder like a roof-beam. The Emberwaste's people say the ash itself bowed. He took no tribute, asked no hymns, and stood vigil at the Gate for a season, shedding slow embers that the forge-masters still copy into the banded seams of their finest work. He answers fear with heat: "A furnace does not tremble. It holds."
 
 ### VESSKRA — "THE MOTHER'S KILN"
 The Kiln Mother's aspect walked Forgefall as a kiln-tender for a generation before anyone knew. When the Tide first crested the Warm Sea, she stood at Ashport's wall and opened her hands — and every lantern, forge, and kiln in the city drew from her like daughters. The oathsmiths' guild still marks their anvils with her chevron. She is the reason Ashfall prays to fire the way other regions pray to mothers.
@@ -61,7 +61,31 @@ The Kiln Mother's aspect walked Forgefall as a kiln-tender for a generation befo
 A Storm Giant does not rule the Stormshards; he HERALDS them. The Circuit: when a storm is named, the giant's passing is said to turn them first — the archipelago's storm-vanes imitate the motion, and every island reads the sky by what its roofline does. He carries the Squall Gate's warnings himself, stride-over-isle. The Wind-Singers swear the vanes would stop turning before the sky would ever lie.
 
 ### SYLWEN — "THE SONG BELOW THUNDER"
-(Open saga — her colossal + aspect are unrolled; her legend will be written with her art. Working canon: she taught the Stormshards that a storm is a chorus — you do not command it, you find your part in it.)
+She taught the Stormshards that a storm is a chorus — you do not command it, you find your part in it. The weather-readers of the north still read her staff's miniature storm before any sky: the day her Weather-Glass turns clear, they say, is the day the world should apologize for something.
+
+### THEVRIL — "THE EVENHAND'S ARBOR"
+The Bloom Gate opens on his word alone, and it has opened for every pilgrim equally for as long as the Bloomward remembers — king and beggar-sprite, oath-keeper and oath-breaker. His greatblade's two seeds (one growing, one sleeping) are the Bloomward's oldest riddle: they say when both wake at once, the choice the Evenhand has been holding will finally be made.
+
+### MIRIATH — "THE STILL WATER"
+Still water is not weak water — it is water that has already won. The Mirror Staff's frozen spring shows each pilgrim the day they were bravest, and Miriath has never once refused to show it, even to cowards. The Bloomward swears no lie has ever been told within sight of her reflection.
+
+### MORVAIN — "THE LAST WATCH"
+The Bone Giant walks the Ossuary Plain each dusk, and the lantern-niches of the whole realm brighten as he passes, like a father checking the sleeping-house. When a last light gutters, they say the Dusk Blade points to the door before anyone knocks. The Duskmere do not fear him; they leave the gate open for him.
+
+### SENVRA — "THE LANTERN LEDGER"
+Every lantern in Lanternhush is hers by oath — each one a final light she carries home in the crown of her staff. The Duskmere believe the Lampkeeper knows every name in the Ledger by heart, and that the reason she never speaks is that the recitation never ends.
+
+### NEROVAX — "THE TIDE'S ARGUMENT"
+The Tidegate Coast has no sea-walls — the tide-keepers refused to build them. Nerovax taught them instead to read the Undertow's blade: when the Tidal Greatblade drags the swell low, the storms will be kind; when it hangs still, the coast prepares. The blade is heavier than it looks, like water itself — it drags everything near it down.
+
+### ILSARRA — "THE MIRRORFIN'S WAGER"
+The pearl-lens of her staff mirrors the tides a heartbeat before they turn — and long ago she wagered the Mistrift priests a single question against a lifetime of honest markers: name the one thing the tide always brings back. They guessed salt, wreckage, the drowned. She answered: "the coast." The markers have stayed honest ever since.
+
+### GROTHMAR — "THE MOUNTAIN'S OATH"
+The geode-fall happens on schedule, and the Quakeveins' tremor-songs have never been wrong — because Grothmar keeps the mountain's promises for it. The first miners heard the mountain snore and built around it instead of mining through; the Tectonic Blade planted at the Rootspine Gate is said to be the world's first boundary stone, and the ground still remembers every promise made beside it.
+
+### BERGRUN — "THE UNMOVED"
+When the Hollow Tide first breached the deep roads, the gate-towns panicked — and the Stone Giantess planted her Bulwark Staff at the first crossroads and simply did not move. The road held. The crystal-keepers still set their staffs the same way, sole to stone, and teach the same sentence: a wall is not a thing you build; it is a thing you are.
 
 ## D. THE HOLLOW WAR CHRONICLE (campaign spine — the present day)
 
