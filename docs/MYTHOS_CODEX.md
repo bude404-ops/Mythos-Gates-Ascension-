@@ -24,7 +24,7 @@
 |---|---|---|---|---|
 | VHARKAR ✦ | Fire Giant (M, warrior) | the Furnace Warden | CRUCIBLE BLADE — condensed-magma greatsword | THE CINDERLANDS (basalt ranges, lava rivers, ember-city, pilgrimage road) |
 | VESSKRA ✦ | Fire Giantess (F, caster) | the Kiln Mother | CRUCIBLE STAFF — crowned with suspended molten gold | THE EMBER GORGE (lava falls, ember lake, kiln-city in the wall) |
-| THE KILN-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Forge-Country | elven forge-blade, ember seams | THE KILN ROAD (dark forge-city below the rampart) |
+| THE KILN-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Forge-Country | LOTR-craft forge-blade, ember seams | THE KILN ROAD (dark forge-city below the rampart) |
 | THE HEARTH-KEEPER ✦ | Sprite Champion (F, staff) | Last Keeper of Every Fire | ember-staff | THE EVERHEARTH VAULT (cathedral of cold hearths) |
 
 **F2 — SKYREND** 💨 (realm: the Endless Gale; glow: pale storm-blue / ice-blue lightning)
@@ -32,7 +32,7 @@
 |---|---|---|---|---|
 | HAELDIR ✦ | Storm Giant (M, warrior) | the Thunder Oath | SKYFALL BLADE — storm greatsword, frozen thundercloud core | THE THUNDERSHIELD RANGE (storm ranks, inert citadel) |
 | SYLWEN ✦ | Storm Giantess (F, caster) | the Stormsight | WEATHER-GLASS STAFF — holds a living miniature storm | THE CALM EYE (still center of the world-hurricane) |
-| THE STORM-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Gale | elven storm-blade, watch-helm + cowl | THE WATCHTOWER COAST (sea-tower in the gale) |
+| THE STORM-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Gale | LOTR-craft storm-blade, watch-helm + cowl | THE WATCHTOWER COAST (sea-tower in the gale) |
 | THE MATRIARCH ✦ | Sprite Champion (F, staff) | Oracle of the High Air | storm staff, cowl-veil + circlet | THE SKY MOTHER'S SHELF (night cloud-sea shrine terrace) |
 
 **F3 — EVERBLOOM** 🌱 (realm: the Verdant Deep; glow: soft green-gold)
@@ -40,7 +40,7 @@
 |---|---|---|---|---|
 | THEVRIL ✦ | Bloom Giant (M, warrior) | the Evenhand | LIVING SCALE — greatblade with two floating seeds at the guard | THE VERDANT MARCH (root-cathedral canopy ranks) |
 | MIRIATH ✦ | Bloom Giantess (F, caster) | the Stillwater | MIRROR STAFF — disc of frozen spring water | THE FLOWERDALE (ocean of house-sized blossoms) |
-| THE BLOOM-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Seedvaults | elven bloom-blade, Living Crown | THE SEEDKEEP GATE (dark canopy-city) |
+| THE BLOOM-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Seedvaults | LOTR-craft bloom-blade, Living Crown | THE SEEDKEEP GATE (dark canopy-city) |
 | THE BLOOM-KEEPER ✦ | Sprite Champion (F, staff) | Keeper of Every Bloom | living-bloom staff | THE PETAL SHRINE TERRACE (hanging-garden cliff shrine) |
 
 **F4 — DUSKMOURN** 💀 (realm: the Silent Isles; glow: pale violet ghost-light)
@@ -70,11 +70,14 @@
 ## ROSTER RULINGS (locked)
 1. **KEPT-PAIR INHERITANCE:** each faction's giant pair = the male Warden-role + female Caster-role deities of the founding roster (Vharkar/Vesskra, Haeldir/Sylwen, Thevril/Miriath, Morvain/Senvra, Nerovax/Ilsarra, Grothmar/Bergrun). Cut deities (Sorvath, Ozruv, Yrdis, Naeria, Corvan, Alveth, Uthrel, Ferran, Maruvak, Thuveth, Rhovarr, Dolvarr) are DEFERRED, not deleted — they return as NEW CHARACTERS when assassin/archer classes go live (Two-Role Lock).
 2. **SPRITE CHAMPIONS ARE TITLES, NOT BIRTH NAMES** — the greatest of each realm's sprite peoples, raised to exarch rank by their patron pair. Their true names are unwitnessed (lore-clean: titles only on all art, zero text law preserved).
-3. **SPRITE CHAMPION WEAPON LAW:** every Warden (male champion) wields the elven BLADE; every Keeper (female champion) wields the elemental STAFF — mirroring the giant Gender-Role Binding at sprite scale. The PLAYER's sprite vessel keeps free class choice (blade/staff/twin blades/bow per the Weapon Chassis Law); champions are the fixed exemplars.
-4. **SPRITE HEADGEAR LAW (silhouette identity):** Ashfall = embercowl/kiln-helm, Skyrend = deep elven cowl + watch-helm, Everbloom = Living Crown, Duskmourn = lantern-cage, Marenth = fin-crown, Stoneheart = crystal-crest. Factions read by SHAPE before color.
+3. **SPRITE CHAMPION WEAPON LAW:** every Warden (male champion) wields the LOTR-craft BLADE; every Keeper (female champion) wields the elemental STAFF — mirroring the giant Gender-Role Binding at sprite scale. The PLAYER's sprite vessel keeps free class choice (blade/staff/twin blades/bow per the Weapon Chassis Law); champions are the fixed exemplars.
+4. **SPRITE HEADGEAR LAW (silhouette identity):** Ashfall = embercowl/kiln-helm, Skyrend = deep watch-cowl + watch-helm, Everbloom = Living Crown, Duskmourn = lantern-cage, Marenth = fin-crown, Stoneheart = crystal-crest. Factions read by SHAPE before color.
 5. **GIANT LAWS carry as canon:** Primordial-Max anatomy ('never made — the element that decided to stand'), element-formed faces, Uniform Surface Law for giantesses (femininity by silhouette only), Empty Realm (inert dark cities; all light belongs to the god), element-forged weapons wielded bare-handed.
 6. **SPRITE ARMOR LAW:** elven LOTR craft (sweeping leaf-tip plates, fine mail, faction element-glow in the seams). Males: fey + manly. Females: mature high-priestess authority.
 7. **STAGE 2 WORLDS:** every deity has a personal domain (table above); all 24 world compositions rolled under the Stage 2 laws (locked anchor identity, wide frame, inert cities, distinct realm per deity).
+8. **SPRITES ARE NOT ELVES (Sept 5 2026, BudE404 'cause they aren't elves'):** Mythos sprites are their own fey race — never described as elves in canon, lore, or prompts. 'Elven' survives ONLY as a CRAFT word for armor/weapon grammar (elven LOTR craft, sweeping leaf-tip plates). The sprite anatomy is native Mythos fey:
+9. **SPRITE EAR LAW (MYTHOS SPRITE EAR):** short, thick, swept-back pointed fey ears with full 3D volume and a clear gap from the head; faction-colored inner-rim glow per faction. NOT long thin LOTR elf ears — the short swept ear is the sprite racial signature (the ear shape BudE404 kept). Never write 'elven ears' in a generation prompt; write 'short thick swept-back pointed fey ears.'
+10. **SPRITE ELEMENTAL BLOODLINE LAW (Sept 5 2026, BudE404):** the element lives inside the whole sprite — skin, hair, facial hair, ears all carry the faction tell. Unified grammar: 'solid form, living surface, dissolving edge' — solid sculptural core, element bleeding through the surface (molten cracks, storm-static, petal-freckles, shadow-lantern, tide-sheen, crystal-veins), dissolve only at tips/edges. Sprites are the purest bloodline of their patron element; effects are texture-level = 3D-pipeline safe.
 
 
 ---
