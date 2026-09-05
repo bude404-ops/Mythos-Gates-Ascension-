@@ -233,3 +233,6 @@ Build = class tree + faction tree. **6 × 6 = 36 readable builds**, bounded cont
 - Weapon props: 6 signature weapons on the hand-bone mount (+ named legendary cosmetic skins)
 - Armor: unchanged one-armor law — 6 class kits × 2 genders = 12 sets; faction = rune-glow swap only
 - Skills: class trees are faction-neutral data; faction trees are class-agnostic data — the 36-build matrix validates by design, no extra art
+
+### 6. THE RE-PLEDGE LAW (Sept 5 2026, BudE404 — resolves the fork)
+Re-pledging is **FREE and unlimited** — no token-gating, no cost, no cooldown tax. "Based on who you are and what you have unlocked": each faction tree keeps its own unlocked nodes permanently; re-pledging just swaps which deity's tree is active on your Mark. In fiction: the gods are not jealous — a pilgrim may carry a new dream and walk back to an old one whenever the road asks it. DESIGN INTENT (BudE404): players experiment freely with all 36 builds — build play IS the fun, never a paywall. Monetization stays in cosmetics (identity, never power).
