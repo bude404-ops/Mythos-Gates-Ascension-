@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>MYTHOS GATES: ASCENSION — ONE WORLD, TWO SCALES (Vertical Slice)</title>
+<style>
+  html,body{margin:0;padding:0;overflow:hidden;background:#0a0a12;font-family:Georgia,serif;-webkit-user-select:none;user-select:none;touch-action:none}
+  #hud{position:fixed;top:10px;left:50%;transform:translateX(-50%);color:#e8c47a;text-align:center;z-index:10;pointer-events:none;text-shadow:0 2px 6px #000}
+  #zone{font-size:15px;letter-spacing:3px}
+  #obj{font-size:12px;color:#ffcf8a;letter-spacing:1px;margin-top:4px}
+  #sub{font-size:10px;color:#9a8b6f;margin-top:3px;letter-spacing:1px}
+  #shrinewrap{display:none;width:180px;height:9px;background:#241210;border:1px solid #5a2a14;margin:6px auto 0}
+  #shrinefill{height:100%;width:100%;background:linear-gradient(90deg,#c06010,#ffcf6a)}
+  .btn{position:fixed;z-index:10;padding:16px 14px;background:rgba(30,22,14,.85);border:1px solid #7a5a2a;color:#e8c47a;font-size:14px;letter-spacing:1px;border-radius:12px;text-align:center;line-height:1.1}
+  .btn small{display:block;font-size:9px;color:#a8895a;letter-spacing:1px;margin-top:2px}
+  .btn:active{background:#4a3214}
+  #btnAct{right:20px;bottom:20px}
+  #btnAlt{right:108px;bottom:64px;display:none}
+  #btnWalk{left:20px;bottom:20px;display:none}
+  #btnTalk{left:50%;transform:translateX(-50%);bottom:120px;display:none;border-color:#ffcf6a}
+  .pop{position:fixed;color:#ffcf6a;font-size:13px;letter-spacing:1px;text-shadow:0 2px 4px #000;pointer-events:none;z-index:12;white-space:nowrap}
+  .pop.heavy{font-size:16px;color:#ffe8b0}
+  #dialog{display:none;position:fixed;bottom:150px;left:50%;transform:translateX(-50%);width:82%;max-width:480px;background:rgba(12,8,5,.92);border:1px solid #7a5a2a;color:#e8c47a;padding:14px 18px;font-size:14px;line-height:1.6;z-index:14;border-radius:10px;text-align:center}
+  #dialog .who{color:#ffcf6a;letter-spacing:2px;font-size:11px;margin-bottom:6px}
+  #overlay{display:none;position:fixed;inset:0;background:rgba(4,3,2,.92);z-index:20;color:#e8c47a;text-align:center}
+  #overlay .big{margin-top:28vh;font-size:28px;letter-spacing:6px;text-shadow:0 4px 14px #000}
+  #overlay .stats{margin-top:16px;font-size:13px;color:#9a8b6f;line-height:1.9}
+  #overlay .btn{position:relative;display:inline-block;margin:26px auto 0;left:0;right:0}
+</style>
+</head>
+<body>
+<div id="hud">
+  <div id="zone">VILLAGE OF EMBERFALL</div>
+  <div id="obj">OBJECTIVE: SPEAK WITH ELDER MARA</div>
+  <div id="sub">ONE WORLD — TWO SCALES · VERTICAL SLICE</div>
+  <div id="shrinewrap"><div id="shrinefill"></div></div>
+</div>
+<div class="btn" id="btnAct">SLASH<small>SPRITE BLADE</small></div>
+<div class="btn" id="btnAlt">SLAM<small>6s</small></div>
+<div class="btn" id="btnWalk">RUN<small>TAP: STRIDE 2X</small></div>
+<div class="btn" id="btnTalk">TALK</div>
+<div id="dialog"><div class="who" id="dwho"></div><div id="dtext"></div></div>
+<div id="overlay">
+  <div class="big" id="obig"></div>
+  <div class="stats" id="ostats"></div>
+  <div class="btn" onclick="location.reload()">RUN IT AGAIN</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  const renderer = new THREE.WebGLRenderer({antialias:true});
+  renderer.setSize(innerWidth, innerHeight);
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75));
+  document.body.appendChild(renderer.domElement);
+  const scene = new THREE.Scene();
+  scene.fog = new THREE.Fog(0x2a160c, 200, 800);
+  const camera = new THREE.PerspectiveCamera(65, innerWidth/innerHeight, 0.1, 2000);
+
+  // ---------- PROCEDURAL TEXTURES ----------
+  function magmaTexture(size){
+    const c = document.createElement('canvas'); c.width = c.height = size;
+    const x = c.getContext('2d');
+    x.fillStyle = '#231410'; x.fillRect(0,0,size,size);
+    for (let i=0;i<260;i++){ x.fillStyle = 'rgba('+(38+Math.random()*28|0)+','+(16+Math.random()*12|0)+','+(9+Math.random()*7|0)+',0.5)';
+      x.beginPath(); x.arc(Math.random()*size, Math.random()*size, 4+Math.random()*16, 0, 7); x.fill(); }
+    x.shadowColor = '#ffb84a'; x.shadowBlur = 5;
+    for (let i=0;i<18;i++){ x.strokeStyle = '#ff5a10'; x.globalAlpha = 0.45+Math.random()*0.55; x.lineWidth = 0.6+Math.random()*1.6;
+      x.beginPath(); let px=Math.random()*size, py=Math.random()*size; x.moveTo(px,py);
+      for (let s=0;s<7;s++){ px += (Math.random()-.5)*48; py += (Math.random()-.5)*48; x.lineTo(px,py); } x.stroke(); }
+    const tex = new THREE.CanvasTexture(c); tex.wrapS = tex.wrapT = THREE.RepeatWrapping; return tex;
+  }
+  function groundTexture(size){
+    const c = document.createElement('canvas'); c.width = c.height = size;
+    const x = c.getContext('2d');
+    x.fillStyle = '#241c14'; x.fillRect(0,0,size,size);
+    for (let i=0;i<700;i++){ x.fillStyle = 'rgba('+(26+Math.random()*26|0)+','+(18+Math.random()*16|0)+','+(11+Math.random()*10|0)+',0.6)';
+      x.beginPath(); x.arc(Math.random()*size, Math.random()*size, 1+Math.random()*9, 0, 7); x.fill(); }
+    const tex = new THREE.CanvasTexture(c); tex.wrapS = tex.wrapT = THREE.RepeatWrapping; tex.repeat.set(60,60); return tex;
+  }
+  const magmaTex = magmaTexture(256);
+
+  // SKY
+  const skyC = document.createElement('canvas'); skyC.width = 32; skyC.height = 256;
+  { const x = skyC.getContext('2d'); const g = x.createLinearGradient(0,0,0,256);
+    g.addColorStop(0, '#0a0a14'); g.addColorStop(0.55, '#1c1218'); g.addColorStop(0.8, '#4a1e0a'); g.addColorStop(1, '#c4581a');
+    x.fillStyle = g; x.fillRect(0,0,32,256); }
+  const skyDome = new THREE.Mesh(new THREE.SphereGeometry(900, 24, 16), new THREE.MeshBasicMaterial({map: new THREE.CanvasTexture(skyC), side: THREE.BackSide, fog: false}));
+  scene.add(skyDome);
+  scene.add(new THREE.HemisphereLight(0x8a7a5a, 0x1c0f0a, 0.85));
+  const sun = new THREE.DirectionalLight(0xffb070, 0.9); sun.position.set(60, 120, 40); scene.add(sun);
+
+  // ---------- THE ONE WORLD (shared at both scales) ----------
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(1400, 1400), new THREE.MeshStandardMaterial({map: groundTexture(512), roughness:1, color:0xb0a090}));
+  ground.rotation.x = -Math.PI/2; scene.add(ground);
+
+  function box(w,h,d,mat){ return new THREE.Mesh(new THREE.BoxGeometry(w,h,d), mat); }
+  const woodMat = new THREE.MeshStandardMaterial({color:0x4a3626, roughness:1});
+  const roofMat = new THREE.MeshStandardMaterial({color:0x6a2a18, roughness:1});
+  const rockMat = new THREE.MeshStandardMaterial({color:0x4a4440, roughness:1});
+
+  // EMBERFALL VILLAGE (SAFE) — z+60 area
+  const VILLAGE = {x:0, z:60};
+  const houseMat = new THREE.MeshStandardMaterial({map: magmaTexture(0), color:0xffffff}); // unused
+  function house(x, z, rot){
+    const g = new THREE.Group();
+    const b = box(5, 3.2, 4, woodMat); b.position.y = 1.6; g.add(b);
+    const roof = new THREE.Mesh(new THREE.ConeGeometry(4.2, 2.2, 4), roofMat); roof.position.y = 4.2; roof.rotation.y = Math.PI/4; g.add(roof);
+    const door = box(1, 1.8, 0.2, new THREE.MeshStandardMaterial({color:0x2a1a10})); door.position.set(0, 0.9, 2.05); g.add(door);
+    g.position.set(x, 0, z); g.rotation.y = rot || 0; scene.add(g); return g;
+  }
+  house(-8, 54, 0.4); house(8, 56, -0.5); house(-10, 68, 0.9); house(9, 70, -0.3);
+  // village shrine (the thing the god later protects)
+  const shrine = new THREE.Group();
+  const dais = new THREE.Mesh(new THREE.CylinderGeometry(3, 3.6, 1, 10), rockMat); dais.position.y = 0.5; shrine.add(dais);
+  const shrineFlame = new THREE.Mesh(new THREE.ConeGeometry(0.8, 2.4, 6), new THREE.MeshBasicMaterial({color:0xff8a30, transparent:true, opacity:0.95}));
+  shrineFlame.position.y = 2.2; shrine.add(shrineFlame);
+  const shrineLight = new THREE.PointLight(0xff7a20, 1.4, 30, 2); shrineLight.position.y = 3; shrine.add(shrineLight);
+  shrine.position.set(0, 0, 62); scene.add(shrine);
+
+  // ELDER MARA — dragon-kin villager NPC
+  const npc = new THREE.Group();
+  const npcMat = new THREE.MeshStandardMaterial({color:0x5a3a2a, roughness:1});
+  const nb = box(0.5, 0.7, 0.3, npcMat); nb.position.y = 0.75; npc.add(nb);
+  const nh = box(0.3, 0.32, 0.3, npcMat); nh.position.y = 1.3; npc.add(nh);
+  const ne = box(0.1, 0.05, 0.04, new THREE.MeshBasicMaterial({color:0xff5a10})); ne.position.set(0, 1.32, 0.16); npc.add(ne);
+  const staff = box(0.06, 1.6, 0.06, woodMat); staff.position.set(0.35, 0.8, 0.1); npc.add(staff);
+  npc.position.set(2.5, 0, 57); npc.rotation.y = Math.PI; scene.add(npc);
+
+  // STREAM + FALLEN TREE BRIDGE — z≈36, crossing the map
+  const stream = new THREE.Mesh(new THREE.PlaneGeometry(1400, 10), new THREE.MeshStandardMaterial({color:0x1a4a6a, roughness:0.3, emissive:0x0a2a4a, emissiveIntensity:0.5}));
+  stream.rotation.x = -Math.PI/2; stream.position.set(0, 0.04, 36); scene.add(stream);
+  const bridge = new THREE.Mesh(new THREE.CylinderGeometry(0.9, 1.1, 14, 8), woodMat);
+  bridge.rotation.z = Math.PI/2; bridge.position.set(0, 0.7, 36); scene.add(bridge);
+
+  // CANYON PATH — rock walls from z=15 down to z=-110, x=±10
+  for (let z=15; z>-115; z-=12){
+    const wl = box(6, 7+Math.random()*5, 10, rockMat); wl.position.set(-13, wl.geometry.parameters.height/2, z); scene.add(wl);
+    const wr = box(6, 7+Math.random()*5, 10, rockMat); wr.position.set(13, wr.geometry.parameters.height/2, z); scene.add(wr);
+  }
+  // braziers (the ritual objective) — start DARK
+  const braziers = [];
+  function makeBrazier(x, z){
+    const g = new THREE.Group();
+    const bowl = new THREE.Mesh(new THREE.CylinderGeometry(0.8, 0.5, 0.9, 8), new THREE.MeshStandardMaterial({color:0x3a3632, roughness:0.5}));
+    bowl.position.y = 1.1; g.add(bowl);
+    const stem = new THREE.Mesh(new THREE.CylinderGeometry(0.15, 0.25, 1.2, 6), woodMat); stem.position.y = 0.6; g.add(stem);
+    const flame = new THREE.Mesh(new THREE.ConeGeometry(0.55, 1.5, 6), new THREE.MeshBasicMaterial({color:0xff8a30, transparent:true, opacity:0}));
+    flame.position.y = 2.1; g.add(flame);
+    const light = new THREE.PointLight(0xff7a20, 0, 26, 2); light.position.y = 2.2; g.add(light);
+    g.position.set(x, 0, z); scene.add(g);
+    braziers.push({g, flame, light, lit:false});
+  }
+  makeBrazier(-4, 8);      // brazier 1 — canyon mouth
+  makeBrazier(4, -70);     // brazier 2 — deep canyon
+  // SECRET — crack in the canyon wall (DISCOVERY)
+  const crackMat = new THREE.MeshBasicMaterial({color:0xffcf6a, transparent:true, opacity:0.7});
+  const crack = new THREE.Mesh(new THREE.PlaneGeometry(0.5, 3), crackMat);
+  crack.rotation.y = -Math.PI/2; crack.position.set(10.1, 1.5, -75); scene.add(crack);
+
+  // CINDER GATE — the 60m landmark, z=-160
+  const GATE = {x:0, z:-160};
+  const gateStone = new THREE.MeshStandardMaterial({map: magmaTexture(256), color:0x9a8a78, roughness:1});
+  const gpL = box(10, 60, 12, gateStone); gpL.position.set(-16, 30, -160); scene.add(gpL);
+  const gpR = box(10, 60, 12, gateStone); gpR.position.set(16, 30, -160); scene.add(gpR);
+  const lintel = box(46, 8, 12, gateStone); lintel.position.set(0, 62, -160); scene.add(lintel);
+  const gateGlow = new THREE.Mesh(new THREE.PlaneGeometry(22, 56), new THREE.MeshBasicMaterial({color:0xff5a10, transparent:true, opacity:0.12, side:THREE.DoubleSide}));
+  gateGlow.position.set(0, 28, -160); scene.add(gateGlow);
+  const gateLight = new THREE.PointLight(0xff5a10, 1.5, 90, 2); gateLight.position.set(0, 30, -152); scene.add(gateLight);
+
+  // destructible boulder at canyon mouth (giant-scale toy)
+  const boulder = new THREE.Mesh(new THREE.DodecahedronGeometry(5), rockMat);
+  boulder.position.set(0, 3, 12); scene.add(boulder);
+
+  // ---------- SPRITE HERO (1m) ----------
+  const sprite = new THREE.Group();
+  const sMat = new THREE.MeshStandardMaterial({color:0x2a2230, roughness:1});
+  const sB = box(0.3, 0.42, 0.2, sMat); sB.position.y = 0.42; sprite.add(sB);
+  const sH = box(0.2, 0.22, 0.22, sMat); sH.position.y = 0.76; sprite.add(sH);
+  const sE = box(0.06, 0.04, 0.02, new THREE.MeshBasicMaterial({color:0xffcf6a})); sE.position.set(0, 0.78, 0.12); sprite.add(sE);
+  const sBlade = box(0.04, 0.7, 0.09, new THREE.MeshStandardMaterial({color:0x6a6a7a, emissive:0xff8a30, emissiveIntensity:0.3, roughness:0.4}));
+  sBlade.position.set(0.22, 0.5, 0.15); sprite.add(sBlade);
+  const spriteLantern = new THREE.PointLight(0xffa050, 1.1, 10, 2); spriteLantern.position.y = 0.8; sprite.add(spriteLantern);
+  sprite.position.set(0, 0, 48); scene.add(sprite);
+
+  // ---------- GOD AVATAR (30m) ----------
+  const god = new THREE.Group();
+  const gEmber = new THREE.MeshStandardMaterial({map: magmaTex, color:0xc0a890, roughness:0.85, emissive:0xff5a10, emissiveMap: magmaTex, emissiveIntensity:0.75});
+  const gCrust = new THREE.MeshStandardMaterial({map: magmaTex, color:0x8a7a68, roughness:1, emissive:0xb03008, emissiveMap: magmaTex, emissiveIntensity:0.4});
+  const torso = box(9, 12, 6, gEmber); torso.position.y = 16; god.add(torso);
+  const head = box(4.5, 4.5, 4.5, gCrust); head.position.y = 24.5; god.add(head);
+  const eyeGlow = new THREE.Mesh(new THREE.PlaneGeometry(2.6, 0.7), new THREE.MeshBasicMaterial({color:0xffb84a}));
+  eyeGlow.position.set(0, 24.6, 2.4); god.add(eyeGlow);
+  const legL = box(3, 10, 3.4, gCrust); legL.position.set(-2.6, 5, 0); god.add(legL);
+  const legR = box(3, 10, 3.4, gCrust); legR.position.set(2.6, 5, 0); god.add(legR);
+  const armR = box(2.4, 11, 2.6, gEmber); armR.position.set(-6.6, 16, 0); god.add(armR);
+  const sword = new THREE.Group();
+  const bladeM = new THREE.MeshStandardMaterial({map: magmaTexture(128), color:0xc0a890, roughness:0.5, emissive:0xff5a10, emissiveMap: magmaTexture(128), emissiveIntensity:1.3});
+  const bladeG = box(1.6, 16, 0.5, bladeM); bladeG.position.y = 8; sword.add(bladeG);
+  const hilt = box(3, 1.2, 1, gCrust); sword.add(hilt);
+  sword.position.set(-6.6, 11, 2); sword.rotation.x = -0.35; god.add(sword);
+  god.visible = false; scene.add(god);
+
+  // ---------- PARTICLES / POPUPS ----------
+  const particles = [];
+  const partGeo = new THREE.BoxGeometry(0.22, 0.22, 0.22);
+  function burst(pos, color, n, power, size){
+    for (let i=0;i<n;i++){
+      const m = new THREE.Mesh(size ? new THREE.BoxGeometry(size, size, size) : partGeo, new THREE.MeshBasicMaterial({color, transparent:true, opacity:1}));
+      m.position.copy(pos);
+      particles.push({m, vel:new THREE.Vector3((Math.random()-.5)*power, Math.random()*power*0.8, (Math.random()-.5)*power), life:0.9+Math.random()*0.5});
+      scene.add(m);
+    }
+  }
+  const popups = []; const v3 = new THREE.Vector3();
+  function popup(text, worldPos, heavy){
+    const el = document.createElement('div');
+    el.className = 'pop' + (heavy ? ' heavy' : ''); el.textContent = text;
+    document.body.appendChild(el);
+    popups.push({el, pos:worldPos.clone(), t:0});
+  }
+  function updatePopups(dt){
+    for (let i=popups.length-1;i>=0;i--){
+      const p = popups[i]; p.t += dt;
+      if (p.t > 1.2){ p.el.remove(); popups.splice(i,1); continue; }
+      v3.copy(p.pos); v3.y += (phase === 'giant' ? 28 : 1.6) + p.t*3; v3.project(camera);
+      if (v3.z > 1){ p.el.style.display = 'none'; continue; }
+      p.el.style.display = 'block';
+      p.el.style.left = ((v3.x*0.5+0.5)*innerWidth) + 'px';
+      p.el.style.top = ((-v3.y*0.5+0.5)*innerHeight) + 'px';
+      p.el.style.opacity = Math.max(0, 1 - p.t/1.2);
+    }
+  }
+
+  // ---------- ENEMIES ----------
+  const enemies = [];
+  const hollowMat = new THREE.MeshStandardMaterial({color:0x1a1a22, roughness:1, emissive:0x2a0a3a, emissiveIntensity:0.5});
+  function makeHollow(pos, big){
+    const g = new THREE.Group();
+    const s = big ? 3 : 1;
+    const b = box(0.5*s, 0.6*s, 0.7*s, hollowMat); b.position.y = 0.3*s; g.add(b);
+    const hd = box(0.3*s, 0.3*s, 0.3*s, hollowMat); hd.position.set(0, 0.55*s, 0.35*s); g.add(hd);
+    const e = box(0.1*s, 0.06*s, 0.03*s, new THREE.MeshBasicMaterial({color:0xb040ff})); e.position.set(0, 0.56*s, 0.52*s); g.add(e);
+    g.position.copy(pos); scene.add(g);
+    enemies.push({obj:g, yaw:0, dead:false, big:!!big, hp: big ? 4 : 1, walkT:Math.random()*6, flashT:0, lava:false, hitCd:0});
+  }
+  // sprite-phase ambush: 3 skitterer-class hollows near brazier 1
+  makeHollow(new THREE.Vector3(-1, 0, 2));
+  makeHollow(new THREE.Vector3(-6, 0, -3));
+  makeHollow(new THREE.Vector3(3, 0, -8));
+
+  // villagers for evacuation visuals (giant phase)
+  const villagers = [];
+  for (let i=0;i<6;i++){
+    const v = new THREE.Group();
+    const vb = box(0.4, 0.6, 0.26, npcMat); vb.position.y = 0.5; v.add(vb);
+    const vh = box(0.24, 0.26, 0.24, npcMat); vh.position.y = 0.94; v.add(vh);
+    v.position.set(VILLAGE.x + (Math.random()-.5)*10, 0, VILLAGE.z + (Math.random()-.5)*10);
+    v.visible = false; scene.add(v);
+    villagers.push({g:v, t:Math.random()*2});
+  }
+
+  // ---------- STATE ----------
+  let phase = 'sprite';   // sprite -> transition -> giant
+  let moveTarget = null, attacking = 0, charging = false, slamCd = 0, trauma = 0, shakeT = 0;
+  let slashHeld = false, stepPhase = 0, curSpeed = 0;
+  let talkIdx = 0, litCount = 0, secretFound = false, dialogOpen = false;
+  let wave = 0, waveAlive = 0, spawnTimer = 0, waveKills = 0, waveNeed = 0;
+  let shrineHP = 100, landmarkV = false, landmarkB = false, landmarkC = false;
+  const zoneEl = document.getElementById('zone'), objEl = document.getElementById('obj'),
+        shrineWrap = document.getElementById('shrinewrap'), shrineFill = document.getElementById('shrinefill'),
+        dialogEl = document.getElementById('dialog'), dwho = document.getElementById('dwho'), dtext = document.getElementById('dtext'),
+        btnTalk = document.getElementById('btnTalk'), btnAct = document.getElementById('btnAct'),
+        btnAlt = document.getElementById('btnAlt'), btnWalk = document.getElementById('btnWalk');
+  function setShrine(){ shrineFill.style.width = Math.max(0, shrineHP) + '%'; }
+  const DIALOG = [
+    ['ELDER MARA', 'The Hollow stirs in the canyon, little one. The braziers that light the pilgrim path have gone dark.'],
+    ['ELDER MARA', 'Light the two braziers on your way — their beacons guide the faithful through the pass.'],
+    ['ELDER MARA', 'Then walk to the Cinder Gate. It has waited a thousand years... for you. The Gate knows its god.']
+  ];
+
+  // ---------- INPUT ----------
+  const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
+  let tapTime = 0;
+  function onTap(ev){
+    const t = ev.touches ? ev.touches[0] : ev;
+    if (Date.now() - tapTime < 120) return; tapTime = Date.now();
+    ndc.x = (t.clientX/innerWidth)*2-1; ndc.y = -(t.clientY/innerHeight)*2+1;
+    ray.setFromCamera(ndc, camera);
+    const hit = ray.intersectObject(ground)[0];
+    if (!hit) return;
+    const p = hit.point.clone(); p.y = 0;
+    moveTarget = p;
+  }
+  renderer.domElement.addEventListener('touchend', e => { e.preventDefault(); onTap(e.changedTouches[0]); }, {passive:false});
+  renderer.domElement.addEventListener('click', onTap);
+  function bind(btn, fn){
+    btn.addEventListener('touchstart', e => { e.preventDefault(); fn(); }, {passive:false});
+    btn.addEventListener('click', fn);
+  }
+  btnAct.addEventListener('touchstart', e => { e.preventDefault(); slashHeld = true; doAct(); }, {passive:false});
+  btnAct.addEventListener('touchend', () => slashHeld = false);
+  btnAct.addEventListener('touchcancel', () => slashHeld = false);
+  btnAct.addEventListener('click', doAct);
+  bind(btnAlt, doSlam);
+  bind(btnWalk, () => { charging = !charging; btnWalk.classList.toggle('on', charging); btnWalk.childNodes[1].textContent = charging ? 'STRIDE' : 'RUN'; });
+  bind(btnTalk, nextDialog);
+
+  function doAct(){
+    if (phase === 'sprite'){
+      if (attacking > 0) return;
+      attacking = 0.34;
+      let hitAny = false;
+      enemies.forEach(e => {
+        if (e.dead || e.big) return;
+        const d = e.obj.position.clone().sub(sprite.position).setY(0).length();
+        if (d < 2.2){ e.dead = true; burst(e.obj.position, 0x8a2ab0, 8, 4); hitAny = true; }
+      });
+      if (hitAny) trauma = Math.min(1, trauma + 0.25);
+    } else if (phase === 'giant'){
+      if (attacking > 0) return;
+      attacking = 0.5;
+      let f = 0;
+      enemies.forEach(e => {
+        if (e.dead) return;
+        const to = e.obj.position.clone().sub(god.position); to.y = 0;
+        if (to.length() > 22) return;
+        e.hp -= 2; e.flashT = 1;
+        const push = to.clone().normalize();
+        e.kvel = push.multiplyScalar(14);
+        if (e.hp <= 0) killHollow(e);
+        f++;
+      });
+      trauma = Math.min(1, trauma + (f ? 0.35 : 0.1));
+    }
+  }
+  function doSlam(){
+    if (phase !== 'giant' || slamCd > 0) return;
+    slamCd = 6;
+    trauma = 1;
+    burst(god.position, 0xff8a30, 26, 14, 1.4);
+    // crater decal
+    const crater = new THREE.Mesh(new THREE.CircleGeometry(14, 18), new THREE.MeshBasicMaterial({color:0x120a06, transparent:true, opacity:0.7}));
+    crater.rotation.x = -Math.PI/2; crater.position.copy(god.position).setY(0.06); scene.add(crater);
+    // destructible boulder
+    if (boulder.visible && boulder.position.distanceTo(god.position) < 26){
+      boulder.visible = false; burst(boulder.position, 0x6a6a5a, 30, 16, 1.2);
+      popup('THE BOULDER SHATTERS', boulder.position, true);
+    }
+    // COLLATERAL — your own shrine is breakable
+    const dShrine = Math.sqrt(Math.pow(god.position.x - VILLAGE.x, 2) + Math.pow(god.position.z - VILLAGE.z, 2));
+    if (dShrine < 30){ shrineHP = Math.max(0, shrineHP - 5); setShrine(); popup('CAREFUL — YOUR SHRINE!', shrine.position, true); }
+    enemies.forEach(e => {
+      if (e.dead) return;
+      const d = e.obj.position.clone().sub(god.position).setY(0).length();
+      if (d <= 32){ e.hp -= 3; e.flashT = 1; if (e.hp <= 0) killHollow(e); }
+    });
+  }
+  function killHollow(e){
+    e.dead = true;
+    const push = e.obj.position.clone().sub(god.position).setY(0).normalize();
+    e.vel = push.multiplyScalar(18); e.vel.y = 8; e.spin = 8;
+    burst(e.obj.position, 0xb040ff, 10, 8, e.big ? 0.8 : 0.4);
+    waveKills++;
+  }
+  function nextDialog(){
+    if (dialogOpen && talkIdx < DIALOG.length){
+      dwho.textContent = DIALOG[talkIdx][0];
+      dtext.textContent = DIALOG[talkIdx][1];
+      talkIdx++;
+      if (talkIdx >= DIALOG.length){
+        dialogOpen = false;
+        btnTalk.style.display = 'none';
+        dialogEl.style.display = 'none';
+        objEl.textContent = 'OBJECTIVE: LIGHT THE PATH BRAZIERS (0/2)';
+      }
+    }
+  }
+
+  // ---------- CAMERA ----------
+  function updateCamera(dt){
+    if (phase === 'sprite'){
+      const off = new THREE.Vector3(4.2, 5.4, 4.2);
+      const target = sprite.position.clone().add(off);
+      camera.position.lerp(target, 1 - Math.exp(-6*dt));
+      const look = sprite.position.clone().setY(1);
+      // the Gate looms on the horizon — pull focus north
+      camera.lookAt(look);
+    } else {
+      const g = god.position;
+      const behind = new THREE.Vector3(Math.sin(god.rotation.y), 0, Math.cos(god.rotation.y)).multiplyScalar(-58);
+      const target = new THREE.Vector3(g.x, 30, g.z).add(behind);
+      camera.position.lerp(target, 1 - Math.exp(-4*dt));
+      const look = new THREE.Vector3(g.x, 14, g.z);
+      camera.lookAt(look);
+    }
+    if (trauma > 0){
+      shakeT += dt*30;
+      const amp = trauma * 0.35;
+      camera.position.x += Math.sin(shakeT*1.3)*amp*0.3;
+      camera.position.y += Math.cos(shakeT*1.1)*amp*0.2;
+      trauma = Math.max(0, trauma - dt*1.8);
+    }
+  }
+
+  // ---------- MISSION LOGIC ----------
+  function updateMission(dt){
+    if (phase === 'sprite'){
+      // talk trigger
+      const dNPC = sprite.position.distanceTo(npc.position);
+      if (talkIdx < 3){
+        if (dNPC < 3){
+          btnTalk.style.display = 'block';
+          if (!dialogOpen){ dialogOpen = true; dialogEl.style.display = 'block'; nextDialog(); }
+        } else { btnTalk.style.display = 'none'; if (dialogOpen && talkIdx < 3){ dialogEl.style.display = 'none'; dialogOpen = false; } }
+      }
+      // braziers
+      braziers.forEach(B => {
+        if (B.lit) return;
+        if (sprite.position.distanceTo(B.g.position) < 2.4){
+          B.lit = true; litCount++;
+          B.flame.material.opacity = 0.95; B.light.intensity = 1.3;
+          popup('BRAZIER LIT', B.g.position, true);
+          burst(B.g.position, 0xff8a30, 12, 5);
+          objEl.textContent = 'OBJECTIVE: LIGHT THE PATH BRAZIERS (' + litCount + '/2)';
+          if (litCount >= 2) objEl.textContent = 'OBJECTIVE: REACH THE CINDER GATE';
+        }
+        if (B.lit) B.flame.scale.y = 1 + Math.sin(clock.elapsedTime*8)*0.15;
+      });
+      // secret crack discovery
+      if (!secretFound && sprite.position.distanceTo(crack.position) < 2.2){
+        secretFound = true;
+        popup('SECRET — LORE: "The Gate does not open. It remembers."', crack.position, true);
+        objEl.textContent = litCount >= 2 ? 'OBJECTIVE: REACH THE CINDER GATE' : 'OBJECTIVE: LIGHT THE PATH BRAZIERS (' + litCount + '/2)';
+        burst(crack.position, 0xffcf6a, 10, 4);
+      }
+      // zone labels
+      if (sprite.position.z > 30 && zoneEl.textContent !== 'VILLAGE OF EMBERFALL') zoneEl.textContent = 'VILLAGE OF EMBERFALL';
+      else if (sprite.position.z <= 30 && sprite.position.z > -140 && zoneEl.textContent !== 'THE CANYON PATH') zoneEl.textContent = 'THE CANYON PATH';
+      // gate reached -> ASCENSION
+      if (sprite.position.z < -148){
+        startTransition();
+      }
+    } else if (phase === 'giant'){
+      // wave driver
+      spawnTimer -= dt;
+      if (waveKills >= waveNeed && enemies.filter(e=>!e.dead).length === 0){
+        wave++;
+        if (wave > 3){ victory(); return; }
+        waveNeed = wave === 1 ? 6 : wave === 2 ? 9 : 12;
+        waveKills = 0;
+        objEl.textContent = 'OBJECTIVE: HOLD THE FIELD — WAVE ' + wave + ' / 3 · PROTECT EMBERFALL';
+        popup('THE HOLLOW MARCHES — WAVE ' + wave, god.position, true);
+        spawnTimer = 0;
+      }
+      if (spawnTimer <= 0 && waveKills + enemies.filter(e=>!e.dead).length < waveNeed){
+        spawnTimer = 2.2;
+        const n = Math.min(4, waveNeed - waveKills - enemies.filter(e=>!e.dead).length);
+        for (let i=0;i<n;i++){
+          const x = (Math.random()-.5)*80;
+          makeHollow(new THREE.Vector3(x, 0, -120 - Math.random()*30), false);
+        }
+        if ((wave === 2 || wave === 3) && !enemies.some(e => e.big && !e.dead)){
+          makeHollow(new THREE.Vector3((Math.random()-.5)*40, 0, -125), true);
+          popup('HOLLOW BRUTE SIGHTED', god.position, true);
+        }
+      }
+      // hollows march on the village; they hurt the shrine
+      enemies.forEach(e => {
+        if (e.dead) return;
+        const toV = new THREE.Vector3(VILLAGE.x, 0, VILLAGE.z).sub(e.obj.position).setY(0);
+        if (toV.length() < 5){
+          if (e.hitCd <= 0){ e.hitCd = 1.5; shrineHP = Math.max(0, shrineHP - (e.big ? 8 : 4)); setShrine(); trauma = Math.min(1, trauma + 0.2);
+            if (shrineHP <= 0){ defeat(); } }
+        }
+        e.hitCd -= dt;
+      });
+      // evacuation visual
+      villagers.forEach(v => { v.visible = true; v.t += dt;
+        if (v.g.position.z > -130){ v.g.position.z -= 3.4*dt; v.g.rotation.y = Math.PI; } });
+      // landmark recognition popups
+      if (!landmarkV && Math.abs(god.position.x - VILLAGE.x) < 30 && Math.abs(god.position.z - VILLAGE.z) < 30){
+        landmarkV = true; popup('EMBERFALL — THE VILLAGE YOU WALKED AS A SPRITE', shrine.position, true);
+      }
+      if (!landmarkB && Math.abs(god.position.x) < 25 && Math.abs(god.position.z - 36) < 25){
+        landmarkB = true; popup('THE FALLEN BRIDGE — ONCE YOUR ONLY WAY ACROSS', bridge.position, true);
+      }
+      if (!landmarkC && Math.abs(god.position.x - 10) < 20 && Math.abs(god.position.z + 75) < 20){
+        landmarkC = true; popup('THE SECRET CRACK — ANKLE-HIGH NOW', crack.position, true);
+      }
+      zoneEl.textContent = 'THE CINDERLANDS — GOD OF THE FORGE';
+      if (slamCd > 0){ slamCd -= dt; btnAlt.childNodes[1].textContent = Math.ceil(slamCd) + 's'; }
+      else btnAlt.childNodes[1].textContent = 'READY';
+    }
+  }
+  function startTransition(){
+    phase = 'transition';
+    objEl.textContent = 'ASCENSION';
+    zoneEl.textContent = 'THE CINDER GATE ANSWERS';
+    btnTalk.style.display = 'none'; dialogEl.style.display = 'none';
+    btnAct.style.display = 'none'; btnWalk.style.display = 'none';
+    // hide sprite, grow the god in place
+    sprite.visible = false;
+    god.visible = true;
+    god.position.copy(sprite.position);
+    god.rotation.y = 0;
+    god.scale.set(0.05, 0.05, 0.05);
+    growT = 0;
+    gateGlow.material.opacity = 0.5;
+    burst(god.position, 0xff8a30, 40, 20, 1.5);
+    trauma = 1;
+  }
+  let growT = 0;
+  function victory(){
+    phase = 'victory';
+    document.getElementById('obig').textContent = 'ASCENSION';
+    document.getElementById('ostats').innerHTML = 'EMBERFALL STANDS — SHRINE AT ' + Math.floor(shrineHP) + '%<br>THE HOLLOW BROKEN · THE GATE STABLE<br><br>One world. Two scales. Same home.';
+    document.getElementById('overlay').style.display = 'block';
+  }
+  function defeat(){
+    phase = 'defeat';
+    document.getElementById('obig').textContent = 'EMBERFALL FALLS';
+    document.getElementById('ostats').innerHTML = 'The shrine is dark. The village you walked as a sprite is ash.<br>Your fire can rebuild it — run it again.';
+    document.getElementById('overlay').style.display = 'block';
+  }
+
+  // ---------- LOOP ----------
+  const clock = new THREE.Clock();
+  function animate(){
+    requestAnimationFrame(animate);
+    const dt = Math.min(clock.getDelta(), 0.05);
+    const et = clock.elapsedTime;
+    if (attacking > 0) attacking -= dt;
+    if (slashHeld && attacking <= 0) doAct();
+    if (phase === 'transition'){
+      growT += dt;
+      const s = Math.min(1, growT/2.5);
+      const scale = 0.05 + s*0.95;
+      god.scale.set(scale, scale, scale);
+      god.position.y = (1-scale) * 2;
+      if (growT >= 3){
+        phase = 'giant';
+        god.scale.set(1,1,1); god.position.y = 0;
+        btnAct.style.display = 'block'; btnAct.childNodes[0].textContent = 'SMASH';
+        btnAct.childNodes[1].textContent = '22m ARC';
+        btnAlt.style.display = 'block'; btnWalk.style.display = 'block';
+        shrineWrap.style.display = 'block'; setShrine();
+        objEl.textContent = 'OBJECTIVE: HOLD THE FIELD — WAVE 1 / 3 · PROTECT EMBERFALL';
+        popup('THE HOLLOW COMES FOR EMBERFALL — STAND AS ITS GOD', god.position, true);
+        villagers.forEach(v => { v.g.visible = true; });
+      }
+      updateCamera(dt); renderer.render(scene, camera); updatePopups(dt);
+      return;
+    }
+    if (phase === 'victory' || phase === 'defeat'){
+      updateCamera(dt); renderer.render(scene, camera); updatePopups(dt);
+      return;
+    }
+    // MOVEMENT
+    if (moveTarget){
+      const mover = phase === 'sprite' ? sprite : god;
+      const speed = phase === 'sprite' ? (charging ? 6 : 3.4) : (charging ? 16 : 9);
+      const to = moveTarget.clone().sub(mover.position); to.y = 0;
+      if (to.length() < (phase === 'sprite' ? 0.5 : 4)){ moveTarget = null; }
+      else {
+        const dir = to.normalize();
+        const ty = Math.atan2(dir.x, dir.z);
+        let d = ty - mover.rotation.y;
+        while (d > Math.PI) d -= Math.PI*2; while (d < -Math.PI) d += Math.PI*2;
+        mover.rotation.y += d * Math.min(1, 8*dt);
+        const step = Math.min(speed*dt, to.length());
+        mover.position.add(dir.clone().multiplyScalar(step));
+        curSpeed = step/dt;
+        stepPhase += (speed/4)*dt*1.4;
+        if (stepPhase > 1){ stepPhase = 0;
+          trauma = Math.min(1, trauma + (phase === 'giant' ? 0.28 : 0.06));
+          if (phase === 'giant') burst(mover.position, 0xff7a20, 3, 6, 0.6);
+        }
+        if (phase === 'sprite'){
+          const sw = Math.sin(et*11)*0.5;
+          sprite.rotation.z = 0;
+          sBlade.rotation.x = sw*0.4;
+        } else {
+          const sw = Math.sin(stepPhase*Math.PI)*0.55;
+          legL.rotation.x = sw; legR.rotation.x = -sw;
+          torso.position.y = 16 + Math.sin(stepPhase*Math.PI*2)*0.2;
+        }
+      }
+    } else {
+      curSpeed = 0;
+      if (phase === 'giant'){ legL.rotation.x *= 0.9; legR.rotation.x *= 0.9; }
+    }
+    // GIANT TRAMPLE
+    if (phase === 'giant' && curSpeed > 10){
+      enemies.forEach(e => {
+        if (e.dead || e.big) return;
+        const d = e.obj.position.clone().sub(god.position).setY(0).length();
+        if (d < 9){ e.dead = true; burst(e.obj.position, 0xff7a20, 8, 8, 0.5); waveKills++; }
+      });
+    }
+    // ENEMY UPDATE
+    enemies.forEach((e, idx) => {
+      if (e.dead){
+        if (e.vel){
+          e.vel.y -= 22*dt; e.obj.position.addScaledVector(e.vel, dt);
+          e.obj.rotation.x += (e.spin||6) * dt;
+          // knocked into the stream = bonus kill
+          if (!e.lava && Math.abs(e.obj.position.z - 36) < 5){
+            e.lava = true; burst(e.obj.position, 0x3aaadd, 12, 8, 0.5);
+            popup('SWEPT AWAY', e.obj.position, true); waveKills++;
+          }
+          if (e.obj.position.y < -1){ scene.remove(e.obj); enemies.splice(idx,1); }
+        }
+        return;
+      }
+      e.walkT += dt;
+      if (e.flashT > 0){ e.flashT -= dt*4; const s = 1 + 0.2*Math.max(0,e.flashT); e.obj.scale.setScalar(s); }
+      else e.obj.scale.setScalar(1);
+      // sprite phase: skitter near home; giant phase: march on the village
+      let target;
+      if (phase === 'giant') target = new THREE.Vector3(VILLAGE.x, 0, VILLAGE.z);
+      else target = (phase === 'sprite') ? sprite.position : god.position;
+      const toP = target.clone().sub(e.obj.position); toP.y = 0;
+      const spd = phase === 'giant' ? 2.6 : (toP.length() < 14 ? 3.4 : 0);
+      if (spd > 0 && toP.length() > 1.5){
+        const ty = Math.atan2(toP.x, toP.z);
+        let dy = ty - e.yaw; while (dy > Math.PI) dy -= Math.PI*2; while (dy < -Math.PI) dy += Math.PI*2;
+        e.yaw += dy * Math.min(1, 5*dt);
+        e.obj.rotation.y = e.yaw;
+        e.obj.position.add(new THREE.Vector3(Math.sin(e.yaw), 0, Math.cos(e.yaw)).multiplyScalar(spd*dt));
+      }
+      if (e.kvel){ e.obj.position.addScaledVector(e.kvel, dt); e.kvel.multiplyScalar(Math.max(0, 1-4*dt)); }
+      // sprite-phase damage to hero
+      if (phase === 'sprite'){
+        const dH = e.obj.position.distanceTo(sprite.position);
+        if (dH < 1.2 && (e.hitHeroCd||0) <= 0){
+          e.hitHeroCd = 1.6;
+          trauma = Math.min(1, trauma + 0.5);
+          popup('THE HOLLOW BITES', sprite.position, false);
+        }
+        if (e.hitHeroCd > 0) e.hitHeroCd -= dt;
+      }
+    });
+    // braziers breathe
+    braziers.forEach(B => { if (B.lit) B.flame.scale.y = 1 + Math.sin(et*8)*0.18; });
+    shrineFlame.scale.y = 1 + Math.sin(et*7)*0.15;
+    gateGlow.material.opacity = phase === 'sprite' ? 0.12 + Math.sin(et*1.5)*0.05 : 0.5 + Math.sin(et*2)*0.1;
+    // particles
+    for (let i=particles.length-1;i>=0;i--){
+      const p = particles[i];
+      p.vel.y -= 16*dt; p.m.position.addScaledVector(p.vel, dt);
+      p.m.rotation.x += 6*dt; p.m.rotation.y += 7*dt;
+      p.life -= dt; p.m.material.opacity = Math.max(0, p.life);
+      if (p.life <= 0){ scene.remove(p.m); particles.splice(i,1); }
+    }
+    updateMission(dt);
+    updatePopups(dt);
+    updateCamera(dt);
+    renderer.render(scene, camera);
+  }
+  animate();
+
+  addEventListener('resize', () => {
+    camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
+    renderer.setSize(innerWidth, innerHeight);
+  });
+})();
+</script>
+</body>
+</html>
