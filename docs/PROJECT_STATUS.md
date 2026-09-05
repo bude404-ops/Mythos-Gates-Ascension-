@@ -27,3 +27,10 @@ _Last updated: Sept 3, 2026 (BIGagent404)_
 - Repo: bude404-ops/Mythos-Gates-Ascension- (branch main). Two writers push to main — always pull --rebase first.
 - Engine: Godot 4.7.2 (godot-bin/, tools/godot-home/).
 - Unity Cloud service keys (BudE404's Unity projects, not this game): validated Sept 3 2026. Basic auth works on services.api.unity.com; token endpoint POST /auth/v1/token-exchange?projectId=<UUID> (query param). Secrets live in encrypted store (UNITY_SECRET_KEY, UNITY_AUTHORIZATION_TOKEN) — never in repo. Blocked on Unity Project ID from cloud.unity.com.
+
+
+## GIANTS & SPRITES ERA (Sept 4 2026)
+- ACTIVE DOCTRINE: deities = colossal RAW ELEMENTAL GIANTS (zero armor; male = element-forged greatsword, female = element-forged staff). Mortals = serious-fey SPRITES (playable human-side). Dragons = world-fauna only. Dual-scale play (giants + sprites).
+- Two-Role Lock (warrior greatsword / caster staff) + Gender-Role Binding carry over.
+- All lore docs synced (WORLD_BIBLE, CODEX, STORIES, ENVIRONMENT, CAMPAIGN, DEEP_LORE, GAMEPLAY, HOLLOW_TIDE, SPRITES companion, NPC roster, COMBAT_SPEC §7 Giant Rebase).
+- Dragon-era deity canon art (Vharkar/Vesskra/Haeldir/Sylwen/Thevril + vessels) RETIRES as giant re-rolls land. Ashfall fire giant = first proof roll, awaiting go.

@@ -5,13 +5,13 @@
 
 **AETHERIUM** — the fundamental matter-substrate of creation. Stone, flesh, storm, flame, dream: all Aetherium in one of six elemental tensions. The First Forge, the Gates, the armor of gods: Aetherium shaped.
 
-**THE SIX TENSIONS (Elements)** — Fire, Air, Life, Death, Water, Earth. The deities are the tensions made conscious. All 24 deities are DRAGON ELEMENTAL GODS — true forms are elemental dragons.
+**THE SIX TENSIONS (Elements)** — Fire, Air, Life, Death, Water, Earth. The deities are the tensions made conscious. All 24 deities are ELEMENTAL GIANT GODS (Giants & Sprites Doctrine, Sept 4 2026) — true forms are RAW ELEMENTAL GIANTS: colossal bipedal beings of pure living element (fire-muscle, storm-mass, petal-flesh, bone-ash, wave-mass, stone-mass), zero armor, wielding weapons forged of their own element (male = greatsword, female = staff). Dragons are not deities — they are world-fauna.
 
 **MYTHOS** — the mortal realm, the middle world. Mythos itself forced the deities out through the Gates to balance their powers; the Gates remain the only crossings.
 
-**THE DRAGON-KIN LAW (Sept 4 2026, BudE404 ruling, 'Yes'): THERE ARE NO HUMANS IN MYTHOS.** The mortal peoples of Mythos are DRAGON-KIN — humanoid-shaped beings carrying the blood of the deities who once walked the realm. Mortals walk on two legs, wear armor, build cities, wage war, believe, and die — but they are not human: each mortal carries SUBTLE draconic tells — patches of fine scale, small horn nubs, faintly glowing slit-pupil eyes, a warmth beneath the skin. Every faction's mortals echo their patron dragon: ember-scale patches and ember eyes in Ashfall; wind-ruffled hair that never settles and storm-grey eyes in Skyrend; petal-shaped scale fans and bloom-tinted irises in Everbloom; ash-pale skin and lantern-soft eye glow in Duskmourn; fin crests, gill-slit necks and pearl eyes in Marenth; crystal-horn nubs and stone-freckled skin in Stoneheart. **DISCIPLINE: the tells stay SUBTLE — 'people with the dragon's blood in them,' never mini-dragons.** If every mortal reads 40% dragon, the deities stop feeling special.
+**THE SPRITE LAW (Sept 4 2026, BudE404 — Giants & Sprites Doctrine, supersedes the Dragon-Kin Law): THERE ARE NO HUMANS IN MYTHOS.** The mortal peoples of Mythos are SPRITES — serious fey civilizations of tiny elemental beings. Sprites are lithe elongated fey with sharp noble features, faction-palette armor and robes at their scale, and element-touched glowing eyes; a dignified adult-statured people six inches tall, never cute mascots. Every faction's mortals mirror their patron giant's element: ember-wisps in Ashfall, storm-sprites in Skywilds, petal-sprites in Everbloom, lantern-motes in Duskmourn, pearl-finned sprites in Marenth, crystal-sprites in Stoneheart. Enemy sprites fight like disciplined soldiers; worshipful sprites kneel like a congregation.
 
-Consequences: (a) The deities' human-shaped vessels are not 'gods disguised as people' — they are gods walking among their own creations IN THE MORTALS' FORM; the Hooded Aspect Law strengthens (they pass among kin, and the hood hides a face that was never mortal). (b) Belief is family-weighted: kin honoring their makers, not strangers worshipping monsters. (c) 'Humanoid-SHAPED' is production law: dragon-kin use the standard humanoid rig/armor pipeline. (d) All regional armor styles (Forge-Iron, Storm-Steel, Grow-Plate, Lantern-Plate, Tide-Mail, Quarry-Plate) apply to dragon-kin wearers, unchanged.
+Consequences: (a) The deities' sprite-scale vessels are gods walking among their own worshippers AT THE MORTALS' SCALE — the Narrow Ways (playable sprite mode covers mortal-scale gameplay). (b) Belief is family-weighted: sprites honoring their makers, the small honoring the vast. (c) Bipedal production law: giants and sprites both use standard humanoid rig pipelines. (d) All regional armor styles (Forge-Iron, Storm-Steel, Grow-Plate, Lantern-Plate, Tide-Mail, Quarry-Plate) apply to sprite wearers, unchanged — at sprite scale.
 
 
 **THE GATES** — six great arches, one per faction, standing where each realm presses closest. Living seams of Aetherium: power crosses them, faith flows back. Structural integrity = FAITH. Where belief dies, a Gate fractures.
@@ -29,48 +29,48 @@ Each faction holds a REALM (beyond its Gate) and a MORTAL REGION (the Mythos lan
 - **Mortal region:** THE EMBERWASTE — ash-fertile badlands where the first Gate-people learned to smelt. Black soil, blood-red grass, geothermal wells.
 - **Gate:** THE CINDER GATE — in the caldera-crown of Forgefall.
 - **Towns:** FORGEFALL (gate-capital, crucible-core hearth towers, forge-cathedrals), KILNREACH (kiln-city of ash-glass blowers), EMBERHOLLOW (shrine town in a charcoal forest), ASHPORT (the one Ashfall harbor, on the Warm Sea).
-- **Deities:** VHARKAR the Furnace Warden (Fire Wyrm colossal), VESSKRA the Kiln Mother (Fire Wyrm colossal), SORVATH (archer human), OZRUV (assassin human).
+- **Deities:** VHARKAR the Furnace Warden (Fire Giant colossal — raw fire-muscle, condensed-flame greatsword), VESSKRA the Kiln Mother (Fire Giant colossal — raw fire-muscle, flame-forged staff). Mortals: ember-wisp sprite fey.
 
 ### F2 — SKYREND (Air)
 - **Realm:** THE SKYWILDS — cloudfields solid enough to walk, thunderhead mountains, floating Aetherium spires.
 - **Mortal region:** THE STORMSHARDS — wind-battered isles, black sea-cliffs, rope-bridges; storms arrive on schedule and are named like family.
 - **Gate:** THE SQUALL GATE — on the highest sea-stack of Vanecliff.
 - **Towns:** VANECLIFF (gate-capital, storm-vane weathervanes on every roof, dragon-prow shipyards), GALESHOLLOW (cliff town of wind-singers), THUNDERMERE (lakeside storm-town), MISTREACH (fog-harbor smugglers' town).
-- **Deities:** HAELDIR (Storm Drake colossal), SYLWEN (Storm Drake colossal), + two human aspects.
+- **Deities:** HAELDIR (Storm Giant colossal — raw storm-mass, condensed-storm greatsword), SYLWEN (Storm Giant colossal — raw storm-mass, frozen-storm staff). Mortals: storm-sprite fey.
 
 ### F3 — EVERBLOOM (Life)
 - **Realm:** THE EVERBLOOM — a garden that never stops growing; petal-forests, nectar-light rivers, canopy-cities of living wood.
 - **Mortal region:** THE BLOOMWARD — Mythos's breadbasket; terraced hills, orchard-roads, bloom-meadows that shift color with the season's mood.
 - **Gate:** THE BLOOM GATE — grown, not built: two colossal petal-arches that open once a year.
 - **Towns:** PETALFALL (gate-capital, petal-crest rooflines, bloom-temples), ROOTMERE (lakeland healers' town), GREENHUSH (orchard monastery, silent by law), THORNHEDGE (ward-town of the wild verge).
-- **Deities:** two Bloom Dragon colossi + two human aspects.
+- **Deities:** two Bloom Giant colossi (raw petal-flesh; male = greatsword, female = staff). Mortals: petal-sprite fey.
 
 ### F4 — DUSKMOURN (Death)
 - **Realm:** THE STILL — the quiet country: pale meadows under a moon that never sets, where everything finished waits politely.
 - **Mortal region:** THE DUSKMERE — black-water isles and willow-fens; undertakers, record-keepers, lantern-makers who believe light is a promise.
 - **Gate:** THE VEIL GATE — on the mirror-lake isle of Lanternhush.
 - **Towns:** LANTERNHUSH (gate-capital, lantern-niche shrines on every wall), LASTLIGHT (town of the death-guilds), VAILCREST (bone-white city of archives), HUSHFIELD (the quiet farms).
-- **Deities:** two Bone Drake colossi + two human aspects.
+- **Deities:** two Bone Giant colossi (raw bone-ash element; male = greatsword, female = staff). Mortals: lantern-mote fey.
 
 ### F5 — MARENTH (Water)
 - **Realm:** THE DOWNDEEP — an ocean with a floor and a sky of its own; pressure-cathedrals, current-roads, trenches that breathe.
 - **Mortal region:** THE SALTREACH — drowned coast, drowned fortresses; tide-towns on stilts, reef-cities in the shallows.
 - **Gate:** THE DEEP GATE — beneath the Tidebellow whirlpool; entered by diving.
 - **Towns:** TIDEBELLOW (gate-capital, fin-buttressed harbors, gill-slit vented walls), FINSPIRE (the reef city), MISTRIFT (stilt-city of tide-priests), SALTMOOR (salt-flat harvest town).
-- **Deities:** two Sea Serpent colossi + two human aspects.
+- **Deities:** two Tide Giant colossi (raw wave-mass; male = greatsword, female = staff). Mortals: pearl-finned sprite fey.
 
 ### F6 — STONEHEART (Earth)
 - **Realm:** THE ROOTSPINE — the inside of a mountain range that dreams; geode vaults, crystal rivers, strata-cathedrals lit from within.
 - **Mortal region:** THE QUAKEVEINS — highland country of quartz terraces, tremor-farms, cliff-homes cut in the load-bearing style.
 - **Gate:** THE STONE GATE — inside Craghelm mountain.
 - **Towns:** CRAGHELM (gate-capital, crystal-crowned), STONEWAKE (the quarry-city), GEODEFALL (where crystal rivers surface), DEEPFURROW (the undermarket).
-- **Deities:** two Stone Dragon colossi + two human aspects.
+- **Deities:** two Stone Giant colossi (raw stone-mass; male = greatsword, female = staff). Mortals: crystal-sprite fey.
 
 **NEUTRAL GROUND:** THE MYTHOS HEARTLAND — central plains between all six regions. THE CONCORDE — neutral city at the crossing of the six great roads, built around the EMPTY PEDESTAL: the monument to the Forgotten deity, maintained but never worshiped, in case it ever comes home. The campaign's political center and its tragedy.
 
 ## III. CREATURES OF MYTHOS (NON-HOLLOW BEINGS)
 
-Mythos fauna are Aetherium-stable natural beings — not Hollow, not divine. Each region's beasts carry its element faintly, the way soil carries a taste. LESSER DRAKES — flighted animal-tier cousins of the gods' true forms — exist wild in every region: proof the deities once walked here.
+Mythos fauna are Aetherium-stable natural beings — not Hollow, not divine. Each region's beasts carry its element faintly, the way soil carries a taste. LESSER DRAKES — the world's wild dragons — exist wild in every region as FAUNA (Giants & Sprites Doctrine: dragons are never deities, never mortals; living relics of the Walking Age and proof the deities once walked here).
 
 **Heartland/common:** THISTLEDEER (quartz-antlered grazers), GATE-FINCHES (navigate by the Gates' faith-currents — the priests' messengers), CONCORD OXEN, ASHFARROW CROWS (follow armies), MOORHOUND (common dog-breed).
 
@@ -90,11 +90,11 @@ Mythos fauna are Aetherium-stable natural beings — not Hollow, not divine. Eac
 
 ## IV. HOW THE WORLD WORKS (LAW RECAP)
 
-- **Colossi = TRUE DRAGONS** (True Dragon Vessel Law): each deity's colossal avatar is its actual draconic form crossing the Gate. No weapons — natural dragon combat. First Forge armor = grown barding fused like natural scales. Faction signatures on every colossal.
-- **Human aspects = THE NARROW WAYS**: the deity compressed to mortal-kin scale to walk among the dragon-kin — hooded face fully lost in shadow (only ember-glow eye points), armor fitted to pass among mortals that subtly echoes their dragon, wing-cloak as the one disguised draconic silhouette, class-chassis relic weapon, ember-glow eyes the only tell (Hooded Aspect Law).
+- **Colossi = RAW ELEMENTAL GIANTS** (Colossal Raw-Elemental Law): each deity's true form is a colossal bipedal giant of pure living element — zero armor, zero relic anchors. Combat = element-forged weapons per the Gender-Role Binding: male giants wield condensed-element GREATSWORDS, female giants wield condensed-element STAVES, both wielded bare-handed. Faction signatures on every colossal. Bipedal anatomy returns the colossi to the standard humanoid rig pipeline.
+- **Sprite-scale vessels = THE NARROW WAYS**: the deity compressed to sprite scale to walk among the sprite civilizations — divine disguise among tiny worshippers (playable sprite mode covers mortal-scale gameplay).
 - **MORTAL CRAFT = DIVINE INFLUENCE LAW**: every region's architecture visibly echoes its faction (storm-vane weathervanes, crucible-core hearth towers, petal-crest rooflines, lantern-niche shrines, fin-buttresses, crystal crowns).
 - **FACTION SIGNATURES:** Fire = Crucible Core, Air = Storm Vanes, Life = Living Crest, Death = Reliquary Niches, Water = Fin Crown, Earth = Crystal Load.
-- **FAITH = infrastructure. HOLLOW = the tide that erases. TOWER WAVES = colossal event mode** (dragons holding Gates against the Hollow Tide).
+- **FAITH = infrastructure. HOLLOW = the tide that erases. TOWER WAVES = colossal event mode** (giants holding Gates against the Hollow Tide).
 
 ## V. HISTORY (SHORT CANON TIMELINE)
 
@@ -102,5 +102,5 @@ Mythos fauna are Aetherium-stable natural beings — not Hollow, not divine. Eac
 2. **THE WALKING AGE** — deities walked Mythos openly; mortals learned everything from them; lesser drakes and region-beasts arose from their footprints. The Forgotten walked too.
 3. **THE BALANCING** — Mythos forces the deities out through the six Gates (no single power may rule the middle world). The Forgotten is denied a realm — sealed beyond the void-seam.
 4. **THE GATE AGE (now)** — civilizations grow around each Gate, shaped by their gods at a distance; faith flows; peace holds through the Six-Way Concord.
-5. **THE FRACTURE** — belief thins in a dying region; its Gate cracks; THE HOLLOW escapes into Mythos. The Hollow Tide begins. The deities answer the only way they can: their true dragon forms cross the Gates.
-6. **THE PRESENT** — the campaign begins: dragons arriving, human aspects walking the Narrow Ways, and the Tide rising.
+5. **THE FRACTURE** — belief thins in a dying region; its Gate cracks; THE HOLLOW escapes into Mythos. The Hollow Tide begins. The deities answer the only way they can: their raw giant forms cross the Gates.
+6. **THE PRESENT** — the campaign begins: giants arriving, sprite-scale vessels walking the Narrow Ways, and the Tide rising.

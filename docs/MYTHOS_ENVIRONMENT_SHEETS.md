@@ -1,7 +1,7 @@
 # MYTHOS — ENVIRONMENT ART SHEETS
 **Canon v1.0 — Sept 4 2026. The art-directed location reference for ALL background art (per the Environment Art Law). Each sheet gives the composition grammar so any generation pulls a consistent world. Companion to MYTHOS_WORLD_BIBLE.md + MYTHOS_STORIES_AND_MYTHS.md.**
 
-**GLOBAL STYLE LAWS:** painterly cinematic stylized fantasy realism; mortal-scale world with visible divine influence (Divine Influence Law); faction signature echoes in every man-made structure; scale anchors mandatory when a dragon is in frame; zero text/letters/numbers anywhere in render; no real-world cultural echoes — these are Mythos originals.
+**GLOBAL STYLE LAWS:** painterly cinematic stylized fantasy realism; mortal-scale world with visible divine influence (Divine Influence Law); faction signature echoes in every man-made structure; scale anchors mandatory when a giant is in frame; zero text/letters/numbers anywhere in render; no real-world cultural echoes — these are Mythos originals.
 
 ---
 
@@ -19,7 +19,7 @@
 - **THE SQUALL GATE (Vanecliff):** a storm-worn arch on the highest sea-stack, laced with bronze vane-rods that turn in a wind only the Gate feels; lightning nests in the arch during storms.
 - **VANECLIFF:** cliff-city carved into the stack's face — shipyards below, wind-singer balconies above, hundreds of vanes turning in unison before weather arrives.
 - **THUNDERMERE:** lakeside town where storms calve over the water — lightning reflected in the meres, storm-cellar architecture, quail-seasons festivals.
-- **SIGNATURE VISTA:** a named storm arriving across the archipelago — wall of weather on the horizon, every island's vanes turned the same way, a Storm Drake banking through the cloud-head.
+- **SIGNATURE VISTA:** a named storm arriving across the archipelago — wall of weather on the horizon, every island's vanes turned the same way, a Storm Giant striding the cloud-head.
 
 ## EVERBLOOM / THE BLOOMWARD — art grammar
 **Palette:** petal-red lacquer, living green, gold nectar-light, greened bronze, morning mist.
@@ -35,7 +35,7 @@
 - **THE VEIL GATE (Lanternhush):** a bone-white arch on the mirror-lake isle, reflected perfectly in still water — the Gate and its twin.
 - **LANTERNHUSH:** isle-capital of niches — the walls are a ledger of lit lights; the lantern-makers' quarter glows all night; new niches being cut beside extinguished ones (the Lantern Ledger made architecture).
 - **VAILCREST:** bone-white archive city — record-towers, scroll-bridges, the death-guilds' halls.
-- **SIGNATURE VISTA:** a lantern-procession crossing the fen at night — grave-hares leading, a Bone Drake's silhouette far out on the water, every window's niche burning.
+- **SIGNATURE VISTA:** a lantern-procession crossing the fen at night — grave-hares leading, a Bone Giant's silhouette far out on the water, every window's niche burning.
 
 ## MARENTH / THE SALTREACH — art grammar
 **Palette:** drowned grey-blue, patinated sea-green bronze, pearl, storm surf, kelp-dark depths.
@@ -51,7 +51,7 @@
 - **THE STONE GATE (Craghelm):** inside the mountain — a hollowed cathedral of strata, the Gate itself a seam of raw Aetherium crystal in the deepest vault.
 - **CRAGHELM:** gate-capital wrapped around the mountain's shoulders — quarry-terraces, crystal-crowned keep, the snoring-mountain shrine.
 - **GEODEFALL:** where the crystal rivers surface — town squares that glow from within during the geode-fall.
-- **SIGNATURE VISTA:** the geode-fall at night — the crystal river surfacing through the square, the town lit from below, a Stone Dragon's crest breaking the ridge-line above.
+- **SIGNATURE VISTA:** the geode-fall at night — the crystal river surfacing through the square, the town lit from below, a Stone Giant's crown breaking the ridge-line above.
 
 ## HEARTLAND / THE CONCORDE — art grammar
 **Palette:** neutral plains gold, six faction accent-colors at the banners, dawn light.

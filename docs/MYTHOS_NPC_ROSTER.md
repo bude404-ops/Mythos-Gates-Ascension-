@@ -1,3 +1,5 @@
+# [GIANTS & SPRITES UPDATE: all mortal NPCs are sprite-scale serious-fey — lithe fey, faction-palette armor at their scale, element-touched eyes; names/roles unchanged]
+
 # MYTHOS — NPC ROSTER
 **Canon v1.0 — Sept 4 2026. Named mortals for campaign quests, shopkeeping, and town life. Companion to the town lore in MYTHOS_WORLD_BIBLE.md.**
 

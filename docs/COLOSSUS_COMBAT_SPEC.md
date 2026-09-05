@@ -108,3 +108,10 @@ Colossi are now TRUE DRAGONS (True Dragon Vessel Law). Dragon-unit rebasing:
 **ANIMATION NOTE (pipeline debt, deferred per BudE404):** dragon anims do NOT come from the Mixamo humanoid library — custom rig path TBD at pipeline time; humans keep the locked Meshy→Mixamo flow. Game-feel laws (weight = timescale, trauma cam, cratering) carry over 1:1 to quadruped mass.
 
 **HUMAN ASPECT COMBAT:** unchanged — the four class chassis (duelist blade / caster staff / assassin blades / archer bow) play at mortal scale against T1/T2. Human kits = the RPG layer; dragon kit = the event/power layer.
+
+
+## 7. GIANT REBASE (Sept 4 2026, BudE404 — Giants & Sprites Doctrine; supersedes §6's dragon specifics, numbers carry)
+- Colossi are now BIPEDAL RAW ELEMENTAL GIANTS (zero armor, pure living element) — back on the standard humanoid rig pipeline (Meshy→Mixamo flow returns for colossi; the custom quadruped-rig debt is CANCELLED).
+- KITS per Gender-Role Binding: male giants wield element-forged GREATSWORDS (condensed flame/storm/bark), female giants wield element-forged STAVES. Natural-layer attacks (sweep, slam, stomp, element-burst) remain the base kit beneath the weapon.
+- Scale/weight/game-feel numbers from §6 carry over 1:1 (giant-unit rebasing, Tower Wave ultimates, trauma cam, cratering).
+- 'Human aspect combat' becomes SPRITE-SCALE combat: the mortal RPG layer plays at sprite scale vs T1/T2, unchanged.

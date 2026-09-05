@@ -9,7 +9,7 @@ FAITH isn't farmed by grinding — it is WORSHIP, and worship is what mortals SE
 | MERCY | releasing Mutefolk (kills release them — the act of ending them GENTLY, not spectacle), sparing broken foes | quiet moments matter |
 | SPECTACLE | skill plays — multi-kills, slams, aerial finishers (crowds watch) | the loud engine |
 | RITES | lighting lanterns, garlanding, festival attendance, repairing niche shrines | the daily devotion |
-FAITH caps and dragon actives unchanged from COMBAT_SPEC — this doc defines WHERE faith comes from, so playstyle = worship-style. A brutal player and a gentle player both reach the Gate Rite — by different roads (the gods take all worship).
+FAITH caps and giant actives unchanged from COMBAT_SPEC — this doc defines WHERE faith comes from, so playstyle = worship-style. A brutal player and a gentle player both reach the Gate Rite — by different roads (the gods take all worship).
 
 ## 2. THE WITNESS — lantern zones (source: Mystery 3, the Sixth Lantern)
 Light with a WITNESS cannot be fully erased. MECHANIC: lit-and-watched lanterns project a WITNESS ZONE (12 m) in which Hollow units decay 2x and Grimlights cannot spawn. Lanterns can be lit (Rite stream) and extinguished by Erased Drakes — relighting is the defense loop of every town siege. THE UNLIT LANTERN (endgame key item, one per region's art, findable by attentive players from Act 1) starts unlit and cannot be lit until Aune's rite — carrying it, all Witness zones double.
