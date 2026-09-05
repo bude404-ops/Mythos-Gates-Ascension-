@@ -84,6 +84,7 @@ Every faction chapter runs the same five-beat rhythm:
 - **FRACTURE HUNTS:** dungeon clears at sprite scale — the Hollow's fey-sized spawn. Output: seals, gear materials.
 - **VOW QUESTS:** deep-dungeon relic recoveries. Output: signature weapons (tree toppers), vessel gear pieces.
 - **RELIC SALVAGE:** recover GODSHARDS from fallen-giant sites (world lore: when a giant falls, its element pools and cools — every ancient battlefield holds cooled god-element). Output: weapon-tree advancement currency.
+- **NO-GRIND GUARD (Sept 4 2026, BudE404 flag):** godshards are STORY-MILESTONE rewards only — a giant falls, a chapter finale, a 30th-floor Tower Wave duel. They never drop from repeatable trash or farmable spawns. Weapon trees advance primarily by QUESTS and DEEDS (the worship economy); salvage is a bonus chapter beat, never a treadmill. Nothing in Mythos is farmed — worship is what mortals SEE you do.
 - **WITNESS MISSIONS:** escort or defend sprites who WITNESS a giant battle — belief spreads by evidence. Output: global faith multiplier events (ties to worship-by-evidence canon).
 - **VESSEL TRIALS:** optional skill dungeons — the deity tests its own vessel. Output: mastery cosmetics + talent points.
 

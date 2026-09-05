@@ -20,11 +20,11 @@ Every deed echoes the FAITH meter — visible as a slow ember-tide rising in the
 **Mechanics on display:** ritual gameplay; Witness Zone defense loop (relight lanterns the Drake extinguishes, protect the watchers); FAITH streams working together (Protection from escorts, Rite from ceremonies); companion sprite options (an Emberhound pup or an ash-wyrm hatchling recruited in Act 1 now fights at your side); the silhouette of a **T3 enemy** for the first time — a *Grimlight Colossus*, hollowed inverse of a shrine-statue, wading through the treeline at giant-scale. You cannot fight it. You are two feet tall.
 
 ## ACT 3 — THE GATE RITE (the handoff: sprite → GIANT)
-The evacuation of Emberhollow begins (escort families along the ash-road to Forgefall — PROTECTION faith at maximum weight). The Grimlight Colossus reaches the town. Lanterns die one by one. Mother Brackle gives the player the town's last lit lantern and says the words the silence had been eating:
+The evacuation of Emberhollow begins (escort families along the ash-road to Forgefall — PROTECTION faith at maximum weight). The Grimlight Colossus reaches the town. Lanterns die one by one. Mother Brackle gives the player the town's last lit lantern and speaks the words the silence had been eating — to the player, without knowing it:
 
 *"Vharkar. The Furnace Warden. First fire that stood. See us — we are still burning."*
 
-**The FAITH cap breaks.** The Cinder Gate opens over the caldera-crown of Forgefall — and the player's camera lifts: sprite-scale play releases into **GIANT MODE**. You are now **VHARKAR** — the raw primordial fire giant, hundred feet of the world's first fire, condensed-magma greatsword in hand, striding across the Emberwaste toward Emberhollow.
+**The FAITH cap breaks.** The Cinder Gate opens over the caldera-crown of Forgefall — and the player's camera lifts: the vessel-disguise burns away and **sprite-scale play releases into GIANT MODE — you were Vharkar all along.** The two feet of fey was the god, compressed; now you take your true form: the raw primordial fire giant, hundred feet of the world's first fire, condensed-magma greatsword in hand, striding across the Emberwaste toward Emberhollow.
 
 ## ACT 4 — THE TOWER WAVE (giant mode climax)
 Classic Tower Wave defense, colossal rules: **the giant holds, the sprites survive.**
@@ -36,7 +36,7 @@ Classic Tower Wave defense, colossal rules: **the giant holds, the sprites survi
 **The finish:** the Grimlight Colossus shatters. Where its core falls, the ash falls UPWARD into the sky — and the cold hearth-shrine of Emberhollow catches and re-lights from within, no rite needed. The Hollow can't hold ground the god has stood on.
 
 ## RESOLUTION & REWARDS
-- **Faith ledger:** the quest pays out FAITH → worship-currency (temple upgrades, new Gate Rites unlocked), plus the town's recorded DEED on the region's ledger ("The Night Emberhollow Rekindled").
+- **Faith ledger:** the quest pays out FAITH → worship-currency (temple upgrades, new Gate Rites unlocked), plus the town's recorded DEED on the region's ledger ("The Night Emberhollow Rekindled"). One GODSHARD — a splinter of cooled god-element from where the colossus shattered — a ONE-TIME story reward (no-grind guard: godshards come only from story milestones, never farmable trash).
 - **Reclamation:** one hollowed landmark (the kiln-shrine) is now reclaimable — rebuilt into a player-usable Wayshrine over the next in-game week.
 - **Progression hooks:** Mother Brackle's ledger hints the silence-siege came from Duskmourn (cross-region campaign thread); VESSKRA's staff-shrine in Kilnreach has gone quiet too — the fire giantess's own Gate Rite is the next quest in the arc.
 - **Companion:** the recruited Emberhound pup matures into a full companion (levels, abilities, mimic-skin slot).
