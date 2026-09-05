@@ -58,7 +58,7 @@ If belief dies everywhere, every god wakes as an Echo. The player's lantern is o
 
 | Old canon | Under the Avalon Doctrine |
 |---|---|
-| Sprites (the mortal race) | RETIRED as a race. The 12 canonized sprite designs (Wardens & Keepers with signature headgear) become **THE FIRST PILGRIMS** — the old faith's legend-heroes: humans anointed so long by relic-light that the element stayed in their blood and bodies (this preserves every kept design law: headgear silhouettes, elemental bloodline tells, elven-craft armor). Statues of them stand in every gate-town. |
+| Sprites (the mortal race) | RETIRED as a race. The 12 canonized sprite designs (Wardens & Keepers with signature headgear) become **THE FIRST PILGRIMS** — the old faith's legend-heroes: humans anointed so long by relic-light that the element stayed in their blood and bodies (this preserves every kept design law: headgear silhouettes, elemental bloodline tells, human-craft armor). Statues of them stand in every gate-town. |
 | Sprites Law (no humans) | SUPERSEDED — the Human Law: mortals are humans. |
 | Dragon-Kin Law | SUPERSEDED (moot). |
 | Dwarves/Construct & Giant-Kin forks | MOOT — the colossal is neither built nor bred: it is the god standing up. |

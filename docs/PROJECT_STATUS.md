@@ -26,7 +26,7 @@ _Last updated: Sept 5, 2026, 6:50 PM ET (BIGagent404) — game title LOCKED, rep
 4. **Old prototype links die on the repo rename** — new links: budE404-ops.github.io/avalon-the-waking-gates/siege.html + /models.html.
 
 ### Locked Rules (current)
-1. Art grammar: LOTR-cinematic hand-painted stylized; giants = primordial surfaces (zero human skin); pilgrims = clean elven-craft plate + rune + eyes.
+1. Art grammar: LOTR-cinematic hand-painted stylized; giants = primordial surfaces (zero human skin); pilgrims = clean human-craft plate + rune + eyes (mortal smiths, not elf-work).
 2. Generation prompts: NEVER a deity name/title in-prompt; zero text/emblems; wing-word banned in human-form prompts; word "hair" banned in colossus prompts.
 3. Armor sets faction-neutral — one per role per gender; faction = rune glow color swap.
 4. Stage pipeline: 1 Character Lock → 2 World Composition → 3 3D (single-view input, weaponless base, weapon as separate mesh) → Meshy/Mixamo → Godot + Unity.

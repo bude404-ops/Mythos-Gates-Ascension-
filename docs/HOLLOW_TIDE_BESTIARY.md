@@ -23,7 +23,7 @@
 - **GRIMLIGHTS:** fist-sized void-motes swarming like gnats. Alone harmless; in cloud they DIM element-light — lanterns gutter, ember-seams fade, crystal veins go dark. They are the anti-witness made small: where they swarm, light forgets itself.
 
 ## T2 — THE WRONGFUL (brutes — 3–6 hits, staggerable; up to 8)
-- **UNMADE CHAMPIONS:** hollowed sprite-wardens still wearing their REAL elven armor — the armor survives because it is craft, not element (erasure cannot eat what was made, only what IS). The body inside is gone; the armor walks. The plates are the only color left in the frame — and they STAY BEHIND when it falls (loot + lore: every kill recovers a mortal thing). First look of the Hollow at champion grade: the vault's own elven LOTR armor grammar worn by absence.
+- **UNMADE CHAMPIONS:** hollowed sprite-wardens still wearing their REAL elven armor — the armor survives because it is craft, not element (erasure cannot eat what was made, only what IS). The body inside is gone; the armor walks. The plates are the only color left in the frame — and they STAY BEHIND when it falls (loot + lore: every kill recovers a mortal thing). First look of the Hollow at champion grade: the vault's own First Pilgrim armor grammar worn by absence.
 - **ERASED DRAKES:** lesser dragon-fauna with the element INVERTED — a fire-drake breathing cold-absence, wings that are pure outline, roar that lands as silence. Dragons are world-fauna now; the Hollow takes them like any other beast. First sign a region is deep-hollowed.
 - **THE STILL CHOIR:** six MUTEFOLK fused in a ring, chanting in reverse, de-coloring the ground they stand on (zone-denial). Break the ring or it re-hollows the ground under the player's feet.
 

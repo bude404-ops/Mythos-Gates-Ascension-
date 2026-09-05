@@ -10,7 +10,7 @@ One sheet per deity, generated from its canon art as the anchor reference. Sheet
 - **FLAT EVEN LIGHTING** — material colors read true for texturing
 - **WEAPON SHOWN SEPARATE** — the element-forged weapon (greatsword/staff/champion blade) as its own prop beside the figure, never in-hand in all views (Meshy needs the body clean for rigging)
 - **ZERO TEXT, zero labels, zero annotations** (standing prompt rule)
-- **Identity locked to canon**: giants = primordial raw element, element-formed face, zero armor; sprites = serious-fey, elven LOTR armor grammar, signature headgear
+- **Identity locked to canon**: giants = primordial raw element, element-formed face, zero armor; sprites = serious-fey, Avalon human-craft armor grammar, signature headgear
 - Giants rendered at humanoid standard proportions ON THE SHEET (the 9m combat scale is set in-engine, not in the sheet)
 
 ## STEP 2 — MESHY (image-to-3D)

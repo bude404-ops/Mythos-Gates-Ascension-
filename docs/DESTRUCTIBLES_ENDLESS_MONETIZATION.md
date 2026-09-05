@@ -50,7 +50,7 @@ Wave count · no-hit streaks · environmental kills (hazard/lane kills, never ra
 The line that governs all of it: **sell identity, never power.** The master question applies to monetization too — what can we sell that REINFORCES the scale fantasy?
 
 ### SKINS
-- **Sprite aspect armor sets** — elven-LOTR craft language per canon, faction-themed lines, seasonal sets
+- **Sprite aspect armor sets** — Avalon human-craft language per canon, faction-themed lines, seasonal sets
 - **Giant mantles** — cosmetic variations of the colossal form's element grammar (Vaelthorn alt-flames: blue-flame variant, obsidian-core variant — palette/material expressions, never new anatomy that contradicts canon)
 - **Weapon skins** — warden blades, greatswords, staves with faction sigilwork
 
