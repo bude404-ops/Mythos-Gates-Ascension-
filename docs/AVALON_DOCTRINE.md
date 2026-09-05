@@ -117,3 +117,51 @@ Six layers, one rig. The same base human becomes any role, any region, any eleme
 6. **COSMETICS** — cloaks, heraldry, weathering, hair, lantern styles — the identity layer (monetization lives HERE: sell identity, never power).
 
 Output math: 1 base rig × 6 role kits × 6 faction skins × 6 glow layers = 216 readable human variations from ~7 armor sets + emissive swaps — plus unlimited cosmetics.
+
+---
+
+## THE HOODED HERO LAW + THE MARKED + THE LANTERN RITES + DREAM-MOTE PETS
+**Locked Sept 5, 2026, BudE404 ruling: "heroes stay hooded or helmed, we need why they were chosen, a better system for the rite or lantern, and a new style of pet to match."**
+
+### THE HOODED HERO LAW
+
+Player heroes keep their faces hidden — deep hood or helm, always (the First Pilgrim headgear canon becomes the hero's helm options: embercowl, watch-helm, Living Crown, lantern-cage, fin-crown, crystal-crest).
+
+**Lore:** a pilgrim who takes the old roads performs the RITE OF THE PUT-AWAY FACE — they vow so deeply that the road is walked as NO ONE. Identity is surrendered to the pilgrimage; the road walks you. When the god rises through you, he does not wear your face — he wears your faith. The First Pilgrims' statues wear hoods because no one remembers their faces. Only their roads.
+
+**Production:** one rig, zero face customization, silhouette language preserved, lore-mystery built into every player character. At high devotion, faint relic-light glows where eyes would be (the god dreaming inside you).
+
+### THE MARKED — why they were chosen
+
+**The lantern does not choose the worthy. It lights where the god dreams of you.**
+
+A sleeping god's dream is vast — and sometimes the dream settles on ONE human: a person whose life matches the answer a wounded realm needs. A keeper of hearths. A walker of roads. A singer who will not stop. When the dream spots you, you are MARKED: relic-gifts light in your hands, the old roads open, and the pilgrimage calls. You are not chosen for being good — you are chosen for being THE SHAPE OF WHAT THE GOD NEEDS.
+
+- Each ROLE is the kind of answer the gods dream of (Warden = a shield for others, Keeper = a hearth that will not go out, Walker = the road itself made a person...).
+- THE FIRST PILGRIMS were the first Marked — the doctrine explains their elemental tells: anointed so long the god's dream stayed in their blood.
+- The Gate Rite works ONLY because the god has been dreaming of this person all along: the rite is not a spell, it is an ANSWERED DREAM.
+- Campaign hook: the antagonist logic — the Hollow/the Echo dreams too. A false waking wears a stolen dream.
+
+### THE LANTERN RITES (the better rite/lantern system)
+
+The lantern is your faith made portable — ONE resource (LIGHT), three uses (power meter, Hollow protection, Gate-Rite charge):
+
+1. **CARRY — light = faith meter.** Deeds feed the light (shrine-keeping, Hollow kills, quest oaths). Brighter lantern = stronger relic-gifts and larger Hollow-protection radius.
+2. **PLANT — the Gate Rite.** Plant the lantern on a dead Gate's altar: the rite anchors, and you defend it DIMMED (risk/reward) while waves of Hollow try to snuff it — relight the Gate and the lantern refills from the faith font, the Gate becomes a permanent heal-point. Realm climax: the planted rite at the heart-Gate = the god's waking cutscene trigger.
+3. **GATHER — light lost is light recoverable.** Die in the Wasteland and your light scatters at the death spot — walk back and gather it ("your faith fell there; go kneel for it"). Doctrine grammar over souls-clone.
+4. **PASS — endgame/co-op.** A Marked pilgrim can tip part of their light into another's lantern — light is the only thing that transfers between players (gift economy; never sold).
+
+### DREAM-MOTE PETS (the new pet style to match the doctrine)
+
+Pets are no longer pixies — they are **DREAM-MOTES: tiny living fragments of the sleeping god's dream, drawn to the Marked.** Where the lantern goes, the dream follows. Each is a small real-animal shape made of the god's element (reverent, never mascot-cute):
+
+- **Ashfall: EMBER-FOX** — fox kit of ember and soot, sparks trailing.
+- **Skyrend: STORM-OWLET** — round owl of storm-slate, lightning veins in the wings.
+- **Everbloom: BLOOM-FAWN** — fawn of living petal and vine, pollen-light freckles.
+- **Duskmourn: DUSK-MOTH** — velvet moth carrying its own soft lantern-glow.
+- **Marenth: TIDE-OTTER** — otter of sea-sheen, wrapped in a ribbon of water.
+- **Stoneheart: STONE-HEDGEHOG** — hedgehog of living geode, crystal-light quills.
+
+Mechanics (carry over from the pet canon): motes grow through FIVE LIGHT TIERS fed by witnessing your deeds (brightness earned, never sold); the tier system and cosmetic reskin monetization survive. NEW RITE MOMENT: at the Gate Rite climax, the mote runs INTO the rising god — a piece of the dream coming home — and returns brighter (tier-up moment written into the rite itself).
+
+The pixie/lantern-attire pet designs are retired from doctrine (kept in art history); the Emberling canon survives as Ashfall's ember-fox lineage.
