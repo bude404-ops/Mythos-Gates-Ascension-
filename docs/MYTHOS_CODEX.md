@@ -174,8 +174,8 @@ Glow: deep amber-green. Materials: root-marble, mountain granite, iron-vein ston
 ---
 
 ## NOTES
-- Realm names (ASHFALL, SKYREND, EVERBLOOM, DUSKMOURN, MARENTH, STONEHEART) + all deity names are PROPOSALS — BudE404 veto per realm; names lock as art canonizes.
-- CASTER RULE: all six Casters wield staffs (Vesskra, Sylwen, Miriath, Senvra, Maruvak, Rhovarr). Hard rule, no exceptions.
+- Realm names LOCKED. Giant deity names LOCKED (canon art + BudE404 confirmation Sept 5 2026: Vharkar/Vesskra, Haeldir/Sylwen, Thevril/Miriath, Morvain/Senvra, Nerovax/Ilsarra, Grothmar/Bergrun). Sprite champion TITLES are canon with the sprite art (true names unwitnessed). Deferred names (Sorvath, Ozruv et al.) reserved for future-class new characters.
+- CASTER RULE: all six giant casters wield staffs (Vesskra, Sylwen, Miriath, Senvra, ILSARRA, BERGRUN). Hard rule, no exceptions. (Old registry below still lists Maruvak/Rhovarr — deferred identities.)
 - The Hollow = void of elemental powers, imprisoned by the six collectively, forgotten in exile. External to the six realms — the wound holding the origin story together.
 - ALL prior deity names retired (Khaveth, Halmarr, Thrasyles, Arashido et al.).
 

@@ -50,7 +50,7 @@ The campaign frames the player as a sprite of the mortal world who is secretly t
 ## IV. THE STORY — THREE ACTS
 
 ### ACT I — THE FLICKERING (Ashfall campaign)
-The Cinder Gate above Forgefall, in the Emberwaste, flickers for the first time in an age. Ashfall's kept pair — VHARKAR the Furnace Warden and VESSKRA the Kiln Mother — send their sprite vessels into Mythos. The player begins bonded to Ashfall (tutorial faction): first fractures in the ash-glass wastes, first T1 spawn swarms, first dungeon (see Faction Campaigns), first Gate thrown wide for the first giant crossing. Act I closes with the faction's first T3 world boss — a HOLLOW BRUTE wearing the shape of a dead furnace-god the mortals stopped believing in — and the revelation: fractures are not random. Something inside the Hollow is choosing where to break through.
+The Cinder Gate above Forgefall, in the Emberwaste, flickers for the first time in an age. Ashfall's kept pair — VHARKAR the Furnace Warden and VESSKRA the Kiln Mother — send their sprite vessels into Mythos. The player begins bonded to Ashfall (tutorial faction): first fractures in the ash-glass wastes, first T1 spawn swarms, first dungeon (see Faction Campaigns), first Gate thrown wide for the first giant crossing. Act I closes with the faction's first T3 world boss — THE HOLLOW FURNACE BRUTE, the first DEAD-GOD SHAPE: the Hollow wearing the shape of a dead furnace-god the mortals stopped believing in (canon: HOLLOW-T3-DEAD-GOD art line) — and the revelation: fractures are not random. Something inside the Hollow is choosing where to break through.
 
 ### ACT II — THE SIX GATES
 Fractures bloom across every realm's Gate. The player travels Mythos unlocking factions (see Faction Campaigns): each faction chapter = its region's gate, its kept deity pair, its signature dungeons, its world boss, its belief-crisis. Recurring thread: at each Gate, the player finds evidence of the FORGOTTEN — the deity trapped in the void during the original imprisonment, resentful, patient, breaking its cage from inside. The Hollow is not a force. It is a GRUDGE.
@@ -92,36 +92,36 @@ Every faction chapter runs the same five-beat rhythm:
 
 ## VII. FACTION CAMPAIGNS (one per realm; kept pairs locked for F1, proposals for F2–F6 pending BudE404 cut calls)
 
-### F1 FIRE — ASHFALL (LOCKED: Vharkar + Vesskra kept; Sorvath & Ozruv = tree skins)
+### F1 FIRE — ASHFALL (LOCKED: Vharkar + Vesskra; Sorvath & Ozruv = deferred identities — return as NEW characters when assassin/archer classes go live)
 - **Gate:** the Cinder Gate, great desert. **Crisis:** the ash-glass kiln-cities cool; smiths' prayers go unanswered as the forge-faith fades.
 - **Dungeons:** THE GLASS KILN (first dungeon, Hollow spawn in a dead foundry-city), THE SUNKEN ANVIL (Vow Quest vault holding the Scale-Chain), THE EMBER WAKE (Vow Quest vault holding the Emberwake Bow).
 - **World boss:** THE COLD FURNACE — a shard wearing the shape of a forgotten forge-god, armor of frozen drips, cold where there should be heat.
 - **Kept-pair story:** Vharkar's sprite vessel walks as a furnace-judge restoring the kiln-cities' oaths; Vesskra's walks as the kiln-mother midwifing new faith in the foundling shrines.
 
-### F2 AIR — SKYREND (proposal: Haeldir + Sylwen kept; Yrdis & Naeria = tree skins)
+### F2 AIR — SKYREND (LOCKED: Haeldir + Sylwen; Yrdis & Naeria = deferred identities)
 - **Gate:** the Squall Gate, frozen fjord north. **Crisis:** the winds go silent — storms die mid-birth, and the north's weather-readers lose their gift.
 - **Dungeons:** THE STILL FJORD (frozen wave-harbors), THE WHISPER GALLERY (cliff-carved halls where the wind's voices are kept), THE VANESPIRE (Vow Quest: the Lightning-Thread Bow).
 - **World boss:** THE HELD BREATH — a shard that has stopped the storm; the sky over the fjord is one held inhale.
 - **Note:** Haeldir's colossal carries the SKYFALL BLADE (storm greatsword) per the Weapon Chassis Law reconciliation — his verdict still pending.
 
-### F3 LIFE — EVERBLOOM (proposal: Thevril + Miriath kept; Corvan & Alveth = tree skins)
+### F3 LIFE — EVERBLOOM (LOCKED: Thevril + Miriath; Corvan & Alveth = deferred identities)
 - **Gate:** the Bloom Gate, sunlit peaks. **Crisis:** terraces of eternal growth begin to WINTER — the first frost the realm has ever known creeps down the green sun's slopes.
 - **Dungeons:** THE FIRST WINTER (frozen bloom-terraces), THE STILL POOL (mirror-water caverns), THE DAWN LOOM (Vow Quest: the Dawnweave Bow).
 - **World boss:** THE UNRIPE — a shard that harvests growth before it can bloom; everything it touches is cut down green.
 
-### F4 DEATH — DUSKMOURN (proposal: Morvain + Senvra kept; Ferran & Uthrel = tree skins)
+### F4 DEATH — DUSKMOURN (LOCKED: Morvain + Senvra; Ferran & Uthrel = deferred identities)
 - **Gate:** the Dusk Gate, shrine isles on black water. **Crisis:** souls stop passing — the last light in the lanterns gutters, and the dead linger where they fell.
 - **Dungeons:** THE STRANDED SHORE (black-water isle where the ferry never came), THE LANTERN VAULT (Senvra's own reliquary, breached), THE BOUNDARY (Vow Quest: the Boundary Blades).
 - **World boss:** THE REFUSAL — a shard that will not let anything end; mortals it touches cannot die, and worse cannot heal.
 
-### F5 WATER — MARENTH (proposal: Nerovax + Ilsarra kept; Maruvak & Thuveth = tree skins)
+### F5 WATER — MARENTH (LOCKED: Nerovax + Ilsarra; Maruvak & Thuveth = deferred identities)
 - **Gate:** the Deep Gate, drowned coast. **Crisis:** the tide forgets its schedule; pearl-light gutters in the deep places, drowned cities surface whole.
 - **Dungeons:** THE SURFACED CITY, THE PRESSURE GARDENS (reef terraces gone wrong), THE SINGING CURRENT (Vow Quest: the Lancet Daggers).
 - **World boss:** THE DROWNED CHOIR — a shard of a thousand mouths singing the sea flat.
 
-### F6 EARTH — STONEHEART (proposal: Grothmar + Bergrun kept; Dolvarr & Rhovarr = tree skins)
+### F6 EARTH — STONEHEART (LOCKED: Grothmar + Bergrun; Dolvarr & Rhovarr = deferred identities)
 - **Gate:** the Stone Gate, mountain spine. **Crisis:** the mountains stop growing — the world's oldest bones go still, and quake-villages lose their warning tremors.
-- **Dungeons:** THE STILL SPINE, THE FAULT CATHEDRAL (Rhovarr's breach-hall), THE SEED VAULT (Vow Quest: the Seedstrike Bow).
+- **Dungeons:** THE STILL SPINE, THE FAULT CATHEDRAL (the breach-hall of the Quakecaller whose name the Quakeveins no longer speak), THE SEED VAULT (Vow Quest: the Seedstrike Bow).
 - **World boss:** THE STILLNESS — a shard that ends all motion; even the player's colossal moves slow in its radius (mechanical identity).
 
 *(All F2–F6 kept-pair proposals follow the 1M+1F law; all names remain BudE404-veto proposals per codex.)*
@@ -144,7 +144,7 @@ Per the Hollow Scope, three tiers, mapped at BOTH scales:
 - **GIANT SKINS:** per deity, per faction (the giant-form catalog with skin lines over each).
 - **VESSEL GEAR SKINS:** the sprite vessel wears player choice — armor skin lines + class-chassis weapon skins (the weapon trees ARE the monetizable gear catalog, since gear is visible at sprite scale).
 - **EFFECTS:** two slots per scale — giant-scale (gate-flare on summon, elemental burst FX, slam shockwaves) and sprite-scale (weapon trails, walk embers).
-- **TREE SKIN IDENTITIES:** Sorvath (archer) and Ozruv (assassin) sets in Cinderlands — the named tree-skin pattern repeats per faction, so every class everywhere has a hero to buy.
+- **DEFERRED IDENTITIES (Two-Role Lock):** Sorvath, Ozruv and the other ten cut names are NOT launch skins — they return as full NEW CHARACTERS when the assassin/archer classes go live. Until then they exist in lore only (registry: Codex old-roster tables).
 - Nothing gameplay-affecting: belief is earned, cosmetics are bought. FAITH stays free.
 
 ---
@@ -160,7 +160,7 @@ Per the Hollow Scope, three tiers, mapped at BOTH scales:
 4. THE ENDING CHOICE — Act III offers forgive-the-Forgotten vs. cauterize-the-wound (dual-ending design space open; final call at production of Act III).
 5. THE FIVE-BEAT CHAPTER RHYTHM — Narrow Entry → Fracture Hunts → Throwing of the Gate → Vow Quests → World Boss. Canon for all six factions.
 6. WORLD BOSS THESIS — every T3 is a DEAD FAITH made flesh. Canon across all factions.
-7. F2–F6 KEPT PAIRS LOCKED (1M+1F each): AIR Haeldir + Sylwen (Yrdis & Naeria = tree skins). LIFE Thevril + Miriath (Corvan & Alveth = tree skins). DEATH Morvain + Senvra (Ferran & Uthrel = tree skins). WATER Nerovax + Ilsarra (Maruvak & Thuveth = tree skins). EARTH Grothmar + Bergrun (Dolvarr & Rhovarr = tree skins).
+7. F2–F6 KEPT PAIRS LOCKED (1M+1F each): AIR Haeldir + Sylwen. LIFE Thevril + Miriath. DEATH Morvain + Senvra. WATER Nerovax + Ilsarra. EARTH Grothmar + Bergrun. (All names confirmed Sept 5 2026; the other twelve deities = deferred identities per the Two-Role Lock.)
 8. QUEST MENU — Faith Missions, Fracture Hunts, Vow Quests, Relic Salvage, Witness Missions, Aspect Trials. Canon content menu.
 
 **THE VESSEL CHOICE RULE (Sept 4 2026, BudE404 — LOCKED):**
@@ -169,4 +169,4 @@ Per the Hollow Scope, three tiers, mapped at BOTH scales:
 - TOWER WAVES (new event mode, canon): a dedicated wave-defense event — the GIANT stands its ground at a Gate, shrine, or gate-town against escalating Hollow waves: T1 swarm floors scaling in density, T2 brute waves at milestones, a boss wave every 10th floor (T2 elite leads; every 30th floor a shard-flavored T3 duel floor). Rewards: FAITH + relic salvage + weapon-tree advancement. Repeatable, leaderboard-scored, the wave-siege gameplay formalized as a standalone event.
 
 ---
-*Companion docs: MYTHOS_CODEX.md (roster/doctrine law), COLOSSUS_COMBAT_SPEC.md (T1–T3 numbers + §7 Giant Rebase), GAMEFEEL_TOP3_SPEC.md (weight/impact), MYTHOS_WORLD_BIBLE.md (world + Sprite Law), QUEST_EXAMPLE_EMBERHOLLOW.md (worked quest loop).* FACTION-BASE-SPECS.md is superseded-era art grammar (historical).
+*Companion docs: MYTHOS_CODEX.md (roster/doctrine law), COLOSSUS_COMBAT_SPEC.md (T1–T3 numbers + §7 Giant Rebase), GAMEFEEL_TOP3_SPEC.md (weight/impact), MYTHOS_WORLD_BIBLE.md (world + Sprite Law), QUEST_EXAMPLE_EMBERHOLLOW.md (worked quest loop).* FACTION-BASE-SPECS is superseded-era (archived at docs/lore/archive-old-era/).
