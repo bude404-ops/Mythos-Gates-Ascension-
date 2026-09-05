@@ -110,7 +110,7 @@ Colossi are now TRUE DRAGONS (True Dragon Vessel Law). Dragon-unit rebasing:
 **SPRITE-VESSEL COMBAT (re-cast Sept 4 2026, formerly 'human aspect combat'):** unchanged — the four class chassis (duelist blade / caster staff / assassin blades / archer bow) play at mortal scale against T1/T2. Human kits = the RPG layer; dragon kit = the event/power layer.
 
 
-## 7. GIANT REBASE (Sept 4 2026, BudE404 — Giants & Sprites Doctrine; supersedes §6's dragon specifics, numbers carry)
+## 7. GIANT REBASE (kits + faction element table + full 24-unit roster now in docs/MYTHOS_DEITY_COMBAT_KITS.md) (Sept 4 2026, BudE404 — Giants & Sprites Doctrine; supersedes §6's dragon specifics, numbers carry)
 - Colossi are now BIPEDAL RAW ELEMENTAL GIANTS (zero armor, pure living element) — back on the standard humanoid rig pipeline (Meshy→Mixamo flow returns for colossi; the custom quadruped-rig debt is CANCELLED).
 - KITS per Gender-Role Binding: male giants wield element-forged GREATSWORDS (condensed flame/storm/bark), female giants wield element-forged STAVES. Natural-layer attacks (sweep, slam, stomp, element-burst) remain the base kit beneath the weapon.
 - Scale/weight/game-feel numbers from §6 carry over 1:1 (giant-unit rebasing, Tower Wave ultimates, trauma cam, cratering).

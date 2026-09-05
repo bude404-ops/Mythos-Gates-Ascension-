@@ -96,6 +96,21 @@
 
 ---
 
+
+## ⚡ THE GIANT-ERA CANONICAL ROSTER (Sept 5 2026 — supersedes the 4-deity tables below as the ACTIVE roster; those tables remain as the name/lore registry)
+Under the GIANTS & SPRITES doctrine + Two-Role Lock + Gender-Role Binding, each faction fields FOUR canon units: 2 GIANT DEITIES (raw elemental colossi: male = element-forged greatsword warrior, female = element-forged staff caster) + 2 SPRITE CHAMPIONS (serious-fey elven LOTR armor: the Warden = blade champion, the Keeper = staff champion — signature headgear law below). Full kits/stats: docs/MYTHOS_DEITY_COMBAT_KITS.md. Realm domains per deity from the Stage 2 world compositions.
+
+| Faction | Giant Warrior | Giant Caster | Blade Champion | Staff Champion | Signature headgear |
+|---|---|---|---|---|---|
+| ASHFALL | VHARKAR the Furnace Warden (Crucible Blade) — domain: THE CINDERLANDS | VESSKRA the Kiln Mother (Crucible Staff) — domain: THE EMBER GORGE | KILN-WARDEN — The Kiln Road | HEARTH-KEEPER — The Everhearth Vault | embercowl / kiln-helm |
+| SKYREND | HAELDIR the Thunder Oath (Skyfall Blade) — THE THUNDERSHIELD RANGE | SYLWEN the Stormsight (Weather-Glass Staff) — THE CALM EYE | STORM-WARDEN — The Watchtower Coast | MATRIARCH — The Sky Mother's Shelf | deep cowl + watch-helm / cowl-veil |
+| EVERBLOOM | THEVRIL the Evenhand (Living Scale) — THE VERDANT MARCH | MIRIATH the Stillwater (Mirror Staff) — THE FLOWERDALE | BLOOM-WARDEN — The Seedkeep Gate | BLOOM-KEEPER — The Petal Shrine Terrace | Living Crown |
+| DUSKMOURN | MORVAIN the Last Warden (Dusk Blade) — THE OSSUARY PLAIN | SENVRA the Lampkeeper (Lantern Staff) — THE QUIET VIGIL | GLOAM-WARDEN — The Lantern Ways | VEIL-KEEPER — The Veiled Stair | lantern-cage |
+| MARENTH | NEROVAX the Undertow (Tidal Greatblade) — THE TIDEGATE COAST | the Abyss Wellstaff bearer — THE DEEP HOLLOW (name verdict pending) | TIDE-WARDEN — The First Light Harbor | PEARL-KEEPER — The Moontide Shrine | fin-crown |
+| STONEHEART | GROTHMAR the Mountain Oath (Tectonic Blade) — THE ROOTSPINE GATE | BERGRUN the Unmoved (Bulwark Staff, chassis conversion) — THE GEODE VAULTS | QUARRY-WARDEN — The Deep Road Gate | CRYSTAL-KEEPER — The Heartroot Chamber | crystal-crest |
+
+Name verdicts: Ashfall/Skyrend/Everbloom giant names LOCKED via canon art; Duskmourn/Marenth/Stoneheart giant names are INHERITED PROPOSALS from the roster below (BudE404 veto per realm). Sprite champion title-names are canon with the sprite art. Sprite champions wield the elven LOTR armor language (Sprite Armor Law) — ember/storm/bloom/gloom/tide/crystal identity lives in the elven seams; the hollow's Unmade Champions wear the same armor grammar (see HOLLOW_TIDE_BESTIARY v2.0).
+
 ## F1 — FIRE 🔥 Realm: **ASHFALL** (the Ashlands — burning deserts of cinder-glass)
 Glow: molten gold-white. Materials: ash-sandstone, obsidian glass, molten gold, ember-veined stone. Gate in Mythos: the Cinder Gate, great desert.
 
