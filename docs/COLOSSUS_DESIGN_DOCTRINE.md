@@ -194,3 +194,11 @@ This supersedes roaming giant-mode traversal for standard colossal encounters (c
 3. **THE COMBAT BODY = TORSO, ARMS, AND HEAD ONLY.** What emerges is the upper body; below, he IS the land. No legs, no stride, no walk cycles — the visible colossus is an emergence, waist-down terrain-merged. All combat art and animation renders the rise: palm surges, sweeping arm slams, torsion of the trunk, the turning of the head.
 4. **ART LAW:** colossal compositions show EMERGENCE — the god risen from earth, water, or cloud, waist-down merged into terrain. Never a full standing stride, never walking.
 5. **PIPELINE WIN:** the combat 3D mesh is upper-body-only — torso, arms, head — cutting model scope and eliminating walk-cycle rigging entirely.
+
+## THE SIEGE CAMERA (v1.7, Sept 5, 2026, BudE404)
+The camera faces the colossus. Player stands between the spawn and the god:
+- **The god holds the TOP of the frame** — camera behind/above the player, the colossus, his Gate, and his mere always in view. The fight happens IN FRONT of him.
+- **The Hollow spawns at the BOTTOM edge of the screen and marches UP at the colossus** — one threat axis, bottom to top, instantly readable on any screen size.
+- God abilities sweep from the top of the frame (palm slams land up-field); player abilities push down-field (lane fissures). The screen itself is the battlefield's arrow diagram.
+- **Wake stages fill the frame**: as the siege escalates the god rises and occupies more of the top of the screen — vertical escalation is the visual drama.
+- Mobile-portrait-friendly: the single vertical axis suits one-handed play.
