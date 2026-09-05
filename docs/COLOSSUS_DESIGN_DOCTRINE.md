@@ -202,3 +202,8 @@ The camera faces the colossus. Player stands between the spawn and the god:
 - God abilities sweep from the top of the frame (palm slams land up-field); player abilities push down-field (lane fissures). The screen itself is the battlefield's arrow diagram.
 - **Wake stages fill the frame**: as the siege escalates the god rises and occupies more of the top of the screen — vertical escalation is the visual drama.
 - Mobile-portrait-friendly: the single vertical axis suits one-handed play.
+
+## THE SIEGE CAMERA LAW (v1.7, Sept 5, 2026, BudE404)
+1. **THE WAKING SIEGE (colossus vs waves):** third-person camera behind the player, FACING the colossus — the god anchors the top of the frame, always legible. Hollow waves spawn at the BOTTOM edge of the screen (the player's side) and push UP the frame toward the Gate. Threat reads in one direction: bottom → top.
+2. **COLOSSAL VS COLOSSAL (god duels):** the same stationary combat, camera moves to the SIDE — a full profile view of BOTH colossi in frame at god scale. The duel stages as a titan standoff across the arena; the player conducts their awakened god's ability rotation against the enemy god. Campaign finale of each Gate: your god vs the Hollow's false god (the Echo).
+3. Both cameras keep the colossus fully legible at all times — **the god is the arena.**
