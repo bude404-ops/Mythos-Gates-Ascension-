@@ -3,79 +3,85 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>MYTHOS GATES — Playable Prototype v2 (Feel Pass 1)</title>
+<title>MYTHOS GATES — Playable Prototype v3 (Feel Pass 2)</title>
 <style>
   html,body{margin:0;padding:0;overflow:hidden;background:#0a0a12;font-family:Georgia,serif;-webkit-user-select:none;user-select:none;touch-action:none}
   #hud{position:fixed;top:10px;left:50%;transform:translateX(-50%);color:#e8c47a;text-align:center;z-index:10;pointer-events:none;text-shadow:0 2px 6px #000}
   #faith{font-size:20px;letter-spacing:2px}
+  #combo{font-size:13px;color:#ff8a30;letter-spacing:2px;margin-top:2px;opacity:0;transition:opacity .15s}
   #sub{font-size:11px;color:#9a8b6f;margin-top:2px}
   #moveHint{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);color:#7a705d;font-size:11px;z-index:10;pointer-events:none;text-align:center}
-  .btn{position:fixed;z-index:11;border:2px solid #6f5a33;background:rgba(20,16,10,.82);color:#e8c47a;border-radius:50%;width:74px;height:74px;font-size:11px;letter-spacing:1px;display:flex;align-items:center;justify-content:center;flex-direction:column;font-family:Georgia,serf}
+  .btn{position:fixed;z-index:11;border:2px solid #6f5a33;background:rgba(20,16,10,.82);color:#e8c47a;border-radius:50%;width:74px;height:74px;font-size:11px;letter-spacing:1px;display:flex;align-items:center;justify-content:center;flex-direction:column;font-family:Georgia,serif}
   .btn small{font-size:8px;color:#9a8b6f;margin-top:1px}
   .btn:active{background:#3a2c14}
-  #btnL1{right:20px;bottom:86px}
-  #btnSlam{right:110px;bottom:20px}
+  .btn.dim{opacity:.4}
+  #btnL1{right:20px;bottom:96px}
+  #btnSlam{right:108px;bottom:104px}
+  #btnWave{right:108px;bottom:20px}
   #btnCharge{left:20px;bottom:20px}
   #btnCharge.on{background:#4a2c10;border-color:#c47a2a}
-  #verdict{position:fixed;top:70px;left:50%;transform:translateX(-50%);color:#6f5a33;font-size:10px;z-index:10;pointer-events:none;text-align:center;width:90%}
+  .pop{position:fixed;z-index:12;color:#ffd08a;font-size:16px;font-weight:bold;pointer-events:none;text-shadow:0 0 8px #ff5a10,0 2px 4px #000;letter-spacing:1px}
+  .pop.heavy{color:#ff6a20;font-size:20px}
+  #verdict{position:fixed;top:84px;left:50%;transform:translateX(-50%);color:#6f5a33;font-size:10px;z-index:10;pointer-events:none;text-align:center;width:90%}
 </style>
 </head>
 <body>
-<div id="hud"><div id="faith">FAITH 20</div><div id="sub">THE UNMADE SWARM MUST BE RELEASED</div></div>
-<div id="verdict">Weight reads? One-tap feels good? Slam feels like a moment?<br>→ that's the green light for canon 3D</div>
-<div id="moveHint">TAP GROUND TO MOVE THE GIANT</div>
+<div id="hud"><div id="faith">FAITH 20</div><div id="combo">COMBO ×1</div><div id="sub">RELEASE THE UNMADE</div></div>
+<div id="verdict">Weight · one-tap · slam · now WAVE too — boring is banished</div>
+<div id="moveHint">TAP GROUND TO MOVE</div>
 <div class="btn" id="btnL1">L1<small>7m ARC</small></div>
-<div class="btn" id="btnSlam">SLAM<small>18m · 15 FAITH</small></div>
-<div class="btn" id="btnCharge">WALK<small>TAP: CHARGE 8 m/s</small></div>
+<div class="btn" id="btnSlam">SLAM<small>15 FAITH</small></div>
+<div class="btn" id="btnWave">WAVE<small>20 FAITH</small></div>
+<div class="btn" id="btnCharge">WALK<small>TAP: CHARGE 8</small></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 (() => {
   // ---------- SCENE ----------
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x1a1a26);
-  scene.fog = new THREE.Fog(0x1a1a26, 60, 220);
-  const camera = new THREE.PerspectiveCamera(66, innerWidth/innerHeight, 0.1, 500);
+  scene.background = new THREE.Color(0x16161f);
+  scene.fog = new THREE.Fog(0x16161f, 140, 420);
+  const camera = new THREE.PerspectiveCamera(73, innerWidth/innerHeight, 0.1, 900);
   const renderer = new THREE.WebGLRenderer({antialias:true});
   renderer.setSize(innerWidth, innerHeight);
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   document.body.appendChild(renderer.domElement);
 
-  // light
-  scene.add(new THREE.HemisphereLight(0x8a7a5a, 0x101018, 0.9));
-  const sun = new THREE.DirectionalLight(0xffd9a0, 0.8); sun.position.set(40,80,20); scene.add(sun);
+  scene.add(new THREE.HemisphereLight(0x8a7a5a, 0x101018, 0.95));
+  const sun = new THREE.DirectionalLight(0xffd9a0, 0.85); sun.position.set(40,90,20); scene.add(sun);
 
-  // ground — Cinderlands placeholder
-  const ground = new THREE.Mesh(new THREE.PlaneGeometry(600,600), new THREE.MeshStandardMaterial({color:0x2b2019, roughness:1}));
+  // ground — Cinderlands placeholder + ember crack-glow dots
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(900,900), new THREE.MeshStandardMaterial({color:0x2b2019, roughness:1}));
   ground.rotation.x = -Math.PI/2; scene.add(ground);
-  const grid = new THREE.GridHelper(600, 60, 0x3a2a1c, 0x241a12); grid.position.y = 0.01; scene.add(grid);
+  const grid = new THREE.GridHelper(900, 90, 0x3a2a1c, 0x241a12); grid.position.y = 0.01; scene.add(grid);
+  for (let i=0;i<60;i++){
+    const dot = new THREE.Mesh(new THREE.CircleGeometry(0.5+Math.random()*2.2, 8),
+      new THREE.MeshBasicMaterial({color:0xd84a10, transparent:true, opacity:0.16+Math.random()*0.2}));
+    dot.rotation.x = -Math.PI/2; dot.position.set((Math.random()-.5)*300, 0.02, (Math.random()-.5)*300);
+    scene.add(dot);
+  }
 
-  // worship zone — ember circle
+  // worship zone
   const WORSHIP = {pos:new THREE.Vector3(0,0,-30), r:12};
   const wz = new THREE.Mesh(new THREE.CircleGeometry(WORSHIP.r, 40), new THREE.MeshBasicMaterial({color:0xe8842a, transparent:true, opacity:0.22}));
   wz.rotation.x = -Math.PI/2; wz.position.copy(WORSHIP.pos).setY(0.05); scene.add(wz);
   const wzRing = new THREE.Mesh(new THREE.RingGeometry(WORSHIP.r-0.5, WORSHIP.r, 40), new THREE.MeshBasicMaterial({color:0xffb84a, transparent:true, opacity:0.8}));
   wzRing.rotation.x = -Math.PI/2; wzRing.position.copy(WORSHIP.pos).setY(0.07); scene.add(wzRing);
 
-  // ---------- GIANT (placeholder — primordial fire giant, blocky placeholder rig) ----------
+  // ---------- GIANT ----------
   const giant = new THREE.Group();
   const emberMat = new THREE.MeshStandardMaterial({color:0x3a2318, roughness:0.9, emissive:0xd84a10, emissiveIntensity:0.55});
   const crustMat = new THREE.MeshStandardMaterial({color:0x241a14, roughness:1, emissive:0x8a2a08, emissiveIntensity:0.2});
   function box(w,h,d,mat){ return new THREE.Mesh(new THREE.BoxGeometry(w,h,d), mat); }
-  // torso 9m tall target
   const torso = box(2.6, 3.0, 1.6, emberMat); torso.position.y = 5.4; giant.add(torso);
   const hips  = box(2.2, 1.2, 1.4, crustMat); hips.position.y = 3.6; giant.add(hips);
   const head  = box(1.1, 1.2, 1.1, emberMat); head.position.y = 7.5; giant.add(head);
-  // furnace eyes
   const eyeMat = new THREE.MeshBasicMaterial({color:0xffc26a});
   const eyeL = box(0.18,0.12,0.05, eyeMat); eyeL.position.set(-0.26,7.6,0.56); giant.add(eyeL);
   const eyeR = box(0.18,0.12,0.05, eyeMat); eyeR.position.set(0.26,7.6,0.56); giant.add(eyeR);
-  // arms
   const armL = box(0.7,2.8,0.7, crustMat); armL.position.set(-1.9,5.2,0); giant.add(armL);
   const armR = box(0.7,2.8,0.7, crustMat); armR.position.set(1.9,5.2,0); giant.add(armR);
-  // legs
   const legL = box(0.9,3.2,0.9, crustMat); legL.position.set(-0.7,1.6,0); giant.add(legL);
   const legR = box(0.9,3.2,0.9, crustMat); legR.position.set(0.7,1.6,0); giant.add(legR);
-  // greatsword placeholder — condensed magma blade
   const swordGroup = new THREE.Group();
   const blade = box(0.5, 4.2, 0.18, new THREE.MeshStandardMaterial({color:0x4a1c08, roughness:0.5, emissive:0xff5a10, emissiveIntensity:0.8}));
   blade.position.y = 2.4; swordGroup.add(blade);
@@ -84,27 +90,68 @@
   giant.add(swordGroup);
   giant.position.set(0,0,20);
   scene.add(giant);
-  const GIANT_R = 2.2; // melee reach basis
 
-  // move-target marker
+  // move marker
   const marker = new THREE.Mesh(new THREE.RingGeometry(0.6,0.85,24), new THREE.MeshBasicMaterial({color:0xffb84a, transparent:true, opacity:0.9}));
   marker.rotation.x = -Math.PI/2; marker.position.y = 0.08; marker.visible = false; scene.add(marker);
 
-  // ---------- SLASH ARC VISUAL ----------
-  const slashArc = new THREE.Mesh(
-    new THREE.RingGeometry(1.2, 7.2, 24, 1, -0.9, 1.8), // ~103-degree fan
+  // ---------- FX: slash arc / wave cone / slam ring ----------
+  const slashArc = new THREE.Mesh(new THREE.RingGeometry(1.2, 7.2, 24, 1, -0.9, 1.8),
     new THREE.MeshBasicMaterial({color:0xffd08a, transparent:true, opacity:0, side:THREE.DoubleSide}));
   slashArc.rotation.x = -Math.PI/2; slashArc.position.y = 0.9; scene.add(slashArc);
   let slashFlash = 0;
-  function showSlashArc(){
-    slashArc.position.set(giant.position.x, 0.9, giant.position.z);
-    slashArc.rotation.z = -giant.rotation.y + Math.PI;   // fan faces forward
-    slashFlash = 1;
+
+  const waveCone = new THREE.Mesh(new THREE.RingGeometry(2.0, 16.0, 24, 1, -0.62, 1.24),
+    new THREE.MeshBasicMaterial({color:0xff7a20, transparent:true, opacity:0, side:THREE.DoubleSide}));
+  waveCone.rotation.x = -Math.PI/2; waveCone.position.y = 1.2; scene.add(waveCone);
+  let waveFlash = 0, waveProgress = 0;
+
+  const slamRing = new THREE.Mesh(new THREE.RingGeometry(0.80, 1.08, 64), new THREE.MeshBasicMaterial({color:0xff8a30, transparent:true, opacity:0.95, side:THREE.DoubleSide}));
+  slamRing.rotation.x = -Math.PI/2; slamRing.visible = false; scene.add(slamRing);
+
+  // ---------- EMBER PARTICLES ----------
+  const particles = [];
+  const partGeo = new THREE.BoxGeometry(0.28, 0.28, 0.28);
+  function burst(pos, color, n, power){
+    for (let i=0;i<n;i++){
+      const m = new THREE.Mesh(partGeo, new THREE.MeshBasicMaterial({color, transparent:true, opacity:1}));
+      m.position.copy(pos); m.position.y += 0.5 + Math.random();
+      scene.add(m);
+      const a = Math.random()*Math.PI*2;
+      particles.push({m, vel:new THREE.Vector3(Math.cos(a)*(1+Math.random()*power), 3+Math.random()*power*0.8, Math.sin(a)*(1+Math.random()*power)), life:0.7+Math.random()*0.5});
+    }
+  }
+  // ambient falling embers
+  const ambient = [];
+  for (let i=0;i<50;i++){
+    const m = new THREE.Mesh(partGeo, new THREE.MeshBasicMaterial({color:0xff7a20, transparent:true, opacity:0.7}));
+    m.position.set((Math.random()-.5)*160, Math.random()*40, (Math.random()-.5)*160);
+    scene.add(m); ambient.push(m);
   }
 
-  // ---------- SLAM RING ----------
-  const slamRing = new THREE.Mesh(new THREE.RingGeometry(0.85,1.0,64), new THREE.MeshBasicMaterial({color:0xff7a20, transparent:true, opacity:0.9, side:THREE.DoubleSide}));
-  slamRing.rotation.x = -Math.PI/2; slamRing.visible = false; scene.add(slamRing);
+  // ---------- POPUPS ----------
+  const popups = [];
+  const v3 = new THREE.Vector3();
+  function popup(text, worldPos, heavy){
+    const el = document.createElement('div');
+    el.className = 'pop' + (heavy ? ' heavy' : '');
+    el.textContent = text;
+    document.body.appendChild(el);
+    popups.push({el, pos:worldPos.clone(), t:0, heavy});
+  }
+  function updatePopups(dt){
+    for (let i=popups.length-1;i>=0;i--){
+      const p = popups[i]; p.t += dt;
+      if (p.t > 1.1){ p.el.remove(); popups.splice(i,1); continue; }
+      v3.copy(p.pos); v3.y += 2 + p.t*3.5; v3.project(camera);
+      if (v3.z > 1){ p.el.style.display='none'; continue; }
+      p.el.style.display='block';
+      p.el.style.left = ((v3.x*0.5+0.5)*innerWidth) + 'px';
+      p.el.style.top = ((-v3.y*0.5+0.5)*innerHeight) + 'px';
+      p.el.style.opacity = Math.max(0, 1 - p.t/1.1);
+      p.el.style.transform = 'translate(-50%,0) scale(' + (1 + (p.heavy?0.3:0.1)*p.t) + ')';
+    }
+  }
 
   // ---------- ENEMIES ----------
   const enemies = [];
@@ -115,137 +162,182 @@
     const b = box(0.5,0.6,0.7, antMat); b.position.y = 0.3; g.add(b);
     const hd = box(0.3,0.3,0.3, antMat); hd.position.set(0,0.55,0.35); g.add(hd);
     g.position.copy(pos); scene.add(g);
-    const e = {type:'ant', obj:g, dead:false, vy:0, spin:0, home:pos.clone(), target:pos.clone(), retarget:2+Math.random()*3};
-    enemies.push(e); return e;
+    enemies.push({type:'ant', obj:g, yaw:0, dead:false, home:pos.clone(), target:pos.clone(), retarget:2+Math.random()*3, walkT:Math.random()*6});
   }
   function makeBrute(pos){
     const g = new THREE.Group();
     const b = box(1.6,2.2,1.2, bruteMat); b.position.y = 1.1; g.add(b);
     const hd = box(0.7,0.6,0.7, bruteMat); hd.position.y = 2.6; g.add(hd);
     g.position.copy(pos); scene.add(g);
-    const e = {type:'brute', obj:g, hp:5, dead:false, stagger:0, flashT:0, home:pos.clone()};
-    enemies.push(e); return e;
+    enemies.push({type:'brute', obj:g, yaw:0, hp:5, dead:false, stagger:0, flashT:0, walkT:Math.random()*6, home:pos.clone()});
   }
-  // spawn swarm around the field
-  const spawnPts = [];
-  for (let i=0;i<22;i++){ spawnPts.push(new THREE.Vector3((Math.random()-.5)*90, 0, (Math.random()-.5)*90)); }
-  spawnPts.forEach(p => makeAnt(p));
-  makeBrute(new THREE.Vector3(-24, 0, -12));
-  makeBrute(new THREE.Vector3(28, 0, -34));
+  for (let i=0;i<24;i++) makeAnt(new THREE.Vector3((Math.random()-.5)*100, 0, (Math.random()-.5)*100));
+  makeBrute(new THREE.Vector3(-26, 0, -14));
+  makeBrute(new THREE.Vector3(30, 0, -36));
+  makeBrute(new THREE.Vector3(-34, 0, 30));
 
   // ---------- STATE ----------
-  let faith = 20, charging = false, walkSpeed = 4, chargeSpeed = 8;
+  let faith = 20, charging = false;
   let moveTarget = null, attacking = 0, slamActive = 0, slamT = 0;
   let stepPhase = 0, trauma = 0, inWorship = false;
-  let swingT = 0, hitstopT = 0;
+  let swingT = 0, hitstopT = 0, slowmoT = 0, fovKick = 0;
+  let comboIdx = 0, comboTimer = 0, comboKills = 0;
+  const comboEl = document.getElementById('combo');
   const faithEl = document.getElementById('faith');
   function setFaith(v){ faith = v; faithEl.textContent = 'FAITH ' + Math.floor(faith); }
   setFaith(20);
+  function showCombo(){
+    if (comboIdx >= 2){ comboEl.textContent = 'COMBO ×' + comboIdx; comboEl.style.opacity = 1; }
+    else comboEl.style.opacity = 0;
+  }
 
-  // ---------- INPUT: tap ground to move ----------
+  // ---------- INPUT ----------
   const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
   let tapTime = 0;
   function onTap(ev){
     const t = ev.touches ? ev.touches[0] : ev;
-    if (Date.now() - tapTime < 120) return; // dedupe double-fire
+    if (Date.now() - tapTime < 120) return;
     tapTime = Date.now();
     ndc.x = (t.clientX/innerWidth)*2-1; ndc.y = -(t.clientY/innerHeight)*2+1;
     ray.setFromCamera(ndc, camera);
     const hit = ray.intersectObject(ground)[0];
     if (!hit) return;
     let p = hit.point.clone(); p.y = 0;
-    const off = p.clone().sub(giant.position); off.y=0;
-    if (off.length() > 30) p = giant.position.clone().add(off.setLength(30)); // 30m tap cap
+    const off = p.clone().sub(giant.position); off.y = 0;
+    if (off.length() > 30) p = giant.position.clone().add(off.setLength(30));
     moveTarget = p;
     marker.position.copy(p).setY(0.08); marker.visible = true;
   }
   renderer.domElement.addEventListener('touchend', e => { e.preventDefault(); onTap(e.changedTouches[0]); }, {passive:false});
   renderer.domElement.addEventListener('click', onTap);
 
-  // buttons
-  const btnL1 = document.getElementById('btnL1'), btnSlam = document.getElementById('btnSlam'), btnCharge = document.getElementById('btnCharge');
-  btnL1.addEventListener('touchstart', e => { e.preventDefault(); doAttack(); }, {passive:false});
-  btnL1.addEventListener('click', doAttack);
-  btnSlam.addEventListener('touchstart', e => { e.preventDefault(); doSlam(); }, {passive:false});
-  btnSlam.addEventListener('click', doSlam);
-  btnCharge.addEventListener('touchstart', e => { e.preventDefault(); charging = !charging; btnCharge.classList.toggle('on', charging); btnCharge.childNodes[1].textContent = charging ? 'CHARGE' : 'WALK'; }, {passive:false});
-  btnCharge.addEventListener('click', () => { charging = !charging; btnCharge.classList.toggle('on', charging); btnCharge.childNodes[1].textContent = charging ? 'CHARGE' : 'WALK'; });
+  const btnL1 = document.getElementById('btnL1'), btnSlam = document.getElementById('btnSlam'),
+        btnWave = document.getElementById('btnWave'), btnCharge = document.getElementById('btnCharge');
+  function bind(btn, fn){
+    btn.addEventListener('touchstart', e => { e.preventDefault(); fn(); }, {passive:false});
+    btn.addEventListener('click', fn);
+  }
+  bind(btnL1, doAttack);
+  bind(btnSlam, doSlam);
+  bind(btnWave, doWave);
+  bind(btnCharge, () => { charging = !charging; btnCharge.classList.toggle('on', charging); btnCharge.childNodes[1].textContent = charging ? 'CHARGE' : 'WALK'; });
+
+  function killOrHit(e, fromPos, amount, isHeavy){
+    if (e.type === 'ant'){
+      e.dead = true;
+      const push = e.obj.position.clone().sub(fromPos).setY(0).normalize();
+      e.vel = push.multiplyScalar(isHeavy ? 20 : 10); e.vel.y = isHeavy ? 11 : 6 + Math.random()*4;
+      e.spin = 8 + Math.random()*10;
+      burst(e.obj.position, 0xff7a20, isHeavy ? 14 : 8, isHeavy ? 9 : 6);
+      popup(isHeavy ? '+2' : '+1', e.obj.position, isHeavy);
+      setFaith(faith + (isHeavy ? 2 : 1));
+      comboKills++;
+    } else {
+      e.hp -= amount; e.stagger = isHeavy ? 1.6 : 1.1; e.flashT = 1;
+      burst(e.obj.position, 0xd050a0, 10, 5);
+      if (e.hp <= 0){
+        e.dead = true;
+        const push = e.obj.position.clone().sub(fromPos).setY(0).normalize();
+        e.vel = push.multiplyScalar(8); e.vel.y = 5; e.spin = 4;
+        popup('+5', e.obj.position, true);
+        setFaith(faith + 5);
+        comboKills++;
+      }
+    }
+  }
 
   function doAttack(){
-    if (attacking > 0.22) return;               // chain window: queue next swing near end of recovery
-    attacking = 0.55;                            // faster cycle
-    // auto-face nearest enemy within 11m — attacks should never whiff on feel
-    let best = null, bestD = 11;
+    if (attacking > 0.22) return;
+    comboTimer = 1.2; comboIdx = (comboIdx % 3) + 1; if (comboTimer <= 0) comboIdx = 1;
+    showCombo();
+    const heavy = comboIdx === 3;
+    attacking = heavy ? 0.7 : 0.5;
+    let best = null, bestD = 11.5;
     enemies.forEach(e => { if (e.dead) return;
       const d = e.obj.position.clone().sub(giant.position).setY(0).length();
       if (d < bestD){ bestD = d; best = e; } });
-    if (best){
-      const to = best.obj.position.clone().sub(giant.position);
-      giant.rotation.y = Math.atan2(to.x, to.z);
-    }
-    swingT = 0.0001;                             // start animated swing
-    setTimeout(() => { // strike at windup (170ms)
+    if (best){ const to = best.obj.position.clone().sub(giant.position); giant.rotation.y = Math.atan2(to.x, to.z); }
+    swingT = 0.0001; swingHeavy = heavy;
+    setTimeout(() => {
       let hitAny = false;
-      // small committed lunge — the swing carries him forward
-      giant.position.add(new THREE.Vector3(Math.sin(giant.rotation.y), 0, Math.cos(giant.rotation.y)).multiplyScalar(1.6));
-      showSlashArc();
+      giant.position.add(new THREE.Vector3(Math.sin(giant.rotation.y), 0, Math.cos(giant.rotation.y)).multiplyScalar(heavy ? 2.4 : 1.6));
+      slashFlash = 1;
+      slashArc.position.set(giant.position.x, 0.9, giant.position.z);
+      slashArc.rotation.z = -giant.rotation.y + Math.PI;
+      slashArc.material.color.setHex(heavy ? 0xff8a40 : 0xffd08a);
       enemies.forEach(e => {
         if (e.dead) return;
         const to = e.obj.position.clone().sub(giant.position); to.y = 0;
-        if (to.length() <= 7){ // 7m arc
-          killOrHit(e, giant.position);
-          hitAny = true;
-        }
+        if (to.length() <= 7.2){ killOrHit(e, giant.position, heavy ? 2 : 1, heavy); hitAny = true; }
       });
-      trauma = Math.min(1, trauma + 0.15);
-      if (hitAny) hitstopT = 0.055;             // hitstop — kills land with weight
-    }, 170);
+      trauma = Math.min(1, trauma + (heavy ? 0.42 : 0.15));
+      if (hitAny){ hitstopT = heavy ? 0.09 : 0.055; if (heavy) fovKick = 5; }
+    }, heavy ? 210 : 160);
   }
-  function killOrHit(e, fromPos){
-    if (e.type === 'ant'){ // ONE TAP ragdoll
-      e.dead = true; e.vy = 6 + Math.random()*4; e.spin = 6 + Math.random()*8;
-      const push = e.obj.position.clone().sub(fromPos).setY(0).normalize();
-      e.vel = push.multiplyScalar(9 + Math.random()*5); e.vel.y = e.vy;
-      setFaith(faith + 1);
-    } else { // brute
-      e.hp -= 1; e.stagger = 1.2;
-      e.obj.scale.set(1.14, 1.14, 1.14); e.flashT = 1; // hit feedback punch
-      if (e.hp <= 0){ e.dead = true; e.vy = 5; const push = e.obj.position.clone().sub(fromPos).setY(0).normalize(); e.vel = push.multiplyScalar(7); e.vel.y = 5; setFaith(faith + 5); }
-    }
-  }
+  let swingHeavy = false;
+
   function doSlam(){
     if (slamActive > 0 || faith < 15) return;
     setFaith(faith - 15);
     slamActive = 1; slamT = 0;
-    giant.position.y = 0; torso.position.y = 5.4 + 0.8; // crouch pose placeholder
-    trauma = 1.0;
+    trauma = 1.0; slowmoT = 0.45; fovKick = 9;
+    torso.position.y = 6.1;
     slamRing.visible = true;
     slamRing.position.copy(giant.position).setY(0.1);
+    burst(giant.position, 0xff8a30, 26, 10);
     setTimeout(() => {
       torso.position.y = 5.4;
       enemies.forEach(e => {
         if (e.dead) return;
         const d = e.obj.position.clone().sub(giant.position).setY(0).length();
-        if (d <= 18){ killOrHit(e, giant.position); }
+        if (d <= 18) killOrHit(e, giant.position, 2, true);
       });
-    }, 450);
+    }, 430);
   }
 
-  // ---------- CAMERA: mortal height + trauma shake ----------
+  function doWave(){
+    if (waveFlash > 0 || faith < 20) return;
+    setFaith(faith - 20);
+    // face nearest cluster
+    let best = null, bestD = 30;
+    enemies.forEach(e => { if (e.dead) return;
+      const d = e.obj.position.clone().sub(giant.position).setY(0).length();
+      if (d < bestD){ bestD = d; best = e; } });
+    if (best){ const to = best.obj.position.clone().sub(giant.position); giant.rotation.y = Math.atan2(to.x, to.z); }
+    waveFlash = 1; waveProgress = 0;
+    fovKick = 7; trauma = Math.min(1, trauma + 0.5); slowmoT = 0.3;
+    swordGroup.rotation.x = -1.2; // plunged pose
+    setTimeout(() => { swordGroup.rotation.x = 0; }, 500);
+    enemies.forEach(e => {
+      if (e.dead) return;
+      const to = e.obj.position.clone().sub(giant.position); to.y = 0;
+      const dist = to.length();
+      if (dist > 17) return;
+      const ang = to.angleTo(new THREE.Vector3(Math.sin(giant.rotation.y), 0, Math.cos(giant.rotation.y)));
+      if (ang < 0.62){ killOrHit(e, giant.position, 2, true); }
+    });
+  }
+
+  // ---------- CAMERA ----------
   let shakeT = 0;
   function updateCamera(dt){
     const g = giant.position;
-    const behind = new THREE.Vector3(Math.sin(giant.rotation.y), 0, Math.cos(giant.rotation.y)).multiplyScalar(-27);
-    const target = new THREE.Vector3(g.x, 12.5, g.z).add(behind); // HIGH vantage 12.5m, 27m back — commanding view
-    camera.position.lerp(target, 3.2 * dt);
-    const look = new THREE.Vector3(g.x, 6.5, g.z);
+    const behind = new THREE.Vector3(Math.sin(giant.rotation.y), 0, Math.cos(giant.rotation.y)).multiplyScalar(-40);
+    const target = new THREE.Vector3(g.x, 20, g.z).add(behind); // HIGH COMMAND VIEW: 20m up, 40m back
+    camera.position.lerp(target, 3.0 * dt);
+    const look = new THREE.Vector3(g.x, 7, g.z);
     if (trauma > 0){
       shakeT += dt * 30;
-      const amp = trauma * 0.35;
+      const amp = trauma * 0.4;
       look.x += Math.sin(shakeT*1.3) * amp; look.y += Math.cos(shakeT*1.1) * amp * 0.6;
       trauma = Math.max(0, trauma - dt * 1.8);
     }
     camera.lookAt(look);
+    // FOV punch decay
+    if (fovKick > 0.01){
+      fovKick *= Math.pow(0.02, dt); // fast decay
+      camera.fov = 73 + fovKick; camera.updateProjectionMatrix();
+    }
   }
 
   // ---------- LOOP ----------
@@ -254,73 +346,126 @@
     requestAnimationFrame(animate);
     const realDt = Math.min(clock.getDelta(), 0.05);
     let dt = realDt;
-    if (hitstopT > 0){ hitstopT -= realDt; dt *= 0.18; }   // hitstop: world slows, weight lands
-    // animated sword swing (replaces instant snap): 0->windup->followthrough->return
+    if (slowmoT > 0){ slowmoT -= realDt; dt *= 0.35; }        // slam/wave slow-motion
+    if (hitstopT > 0){ hitstopT -= realDt; dt *= 0.18; }       // kill hitstop
+    // combo decay
+    if (comboTimer > 0){ comboTimer -= realDt; if (comboTimer <= 0){ comboIdx = 0; comboEl.style.opacity = 0; } }
+    // sword swing anim
     if (swingT > 0){
-      swingT += dt / 0.55;
+      swingT += dt / (swingHeavy ? 0.7 : 0.5);
       if (swingT >= 1){ swingT = 0; swordGroup.rotation.x = 0; swordGroup.rotation.z = -0.35; }
       else {
-        const s = Math.sin(swingT * Math.PI);              // 0->1->0
-        swordGroup.rotation.x = -2.4 * s;
-        swordGroup.rotation.z = -0.35 - 0.5 * s;
+        const s = Math.sin(swingT * Math.PI);
+        if (swingHeavy){ swordGroup.rotation.x = -2.9 * s; swordGroup.rotation.z = -0.35 - 0.4 * s; }
+        else { swordGroup.rotation.x = -2.4 * s; swordGroup.rotation.z = -0.35 + 0.6 * s; } // horizontal sweep feel
       }
     }
-    if (slashFlash > 0){ slashFlash -= dt * 7; slashArc.material.opacity = Math.max(0, slashFlash) * 0.75; }
-    // move giant
-    const speed = charging ? chargeSpeed : walkSpeed;
-    if (attacking > 0){ attacking -= dt; }
+    if (slashFlash > 0){ slashFlash -= dt * 6; slashArc.material.opacity = Math.max(0, slashFlash) * 0.8; }
+    if (waveFlash > 0){
+      waveFlash -= dt * 1.6; waveProgress = Math.min(1, waveProgress + dt*2.2);
+      waveCone.position.set(giant.position.x, 1.2, giant.position.z);
+      waveCone.rotation.z = -giant.rotation.y + Math.PI;
+      const s = 0.3 + waveProgress * 0.9; waveCone.scale.set(s,s,1);
+      waveCone.material.opacity = Math.max(0, waveFlash) * 0.85;
+    }
+    // slam ring
+    if (slamActive > 0){
+      slamT += dt / 0.7;
+      if (slamT >= 1){ slamActive = 0; slamRing.visible = false; }
+      else { const s = 1 + slamT * 17; slamRing.scale.set(s, s, 1); slamRing.material.opacity = 0.95 * (1 - slamT); }
+    }
+    // particles
+    for (let i=particles.length-1;i>=0;i--){
+      const p = particles[i];
+      p.vel.y -= 16 * dt; p.m.position.addScaledVector(p.vel, dt);
+      p.m.rotation.x += 6*dt; p.m.rotation.y += 8*dt;
+      p.life -= dt;
+      if (p.m.position.y < 0.05){ p.vel.y = Math.abs(p.vel.y)*0.35; p.m.position.y = 0.05; }
+      p.m.material.opacity = Math.max(0, p.life);
+      if (p.life <= 0){ scene.remove(p.m); particles.splice(i,1); }
+    }
+    // ambient embers drift
+    ambient.forEach(m => {
+      m.position.y -= (0.6 + m.position.x*0.001) * dt * 3;
+      m.position.x += Math.sin(clock.elapsedTime + m.position.z) * dt * 0.5;
+      if (m.position.y < 0) m.position.y = 35 + Math.random()*10;
+    });
+    // giant move
+    const speed = charging ? 8 : 4;
+    if (attacking > 0) attacking -= dt;
     if (moveTarget){
       const to = moveTarget.clone().sub(giant.position); to.y = 0;
       if (to.length() < 0.6){ moveTarget = null; marker.visible = false; }
       else if (attacking <= 0){
-        const targetYaw = Math.atan2(to.x, to.z);           // face move dir (three.js: z-forward)
+        const targetYaw = Math.atan2(to.x, to.z);
         let d = targetYaw - giant.rotation.y;
         while (d > Math.PI) d -= Math.PI*2; while (d < -Math.PI) d += Math.PI*2;
-        giant.rotation.y += d * Math.min(1, 10*dt);         // smooth turn
+        giant.rotation.y += d * Math.min(1, 10*dt);
         giant.position.add(to.setLength(Math.min(speed*dt, to.length())));
-        // footstep weight — shake every step cycle
         stepPhase += (speed/4) * dt * 1.6;
         if (stepPhase > 1){ stepPhase = 0; trauma = Math.min(1, trauma + (charging ? 0.34 : 0.22)); }
-        // leg bob placeholder
         const bob = Math.sin(stepPhase*Math.PI)*0.35;
         legL.position.y = 1.6 + bob; legR.position.y = 1.6 - bob;
+        torso.position.y = 5.4 + Math.sin(stepPhase*Math.PI*2)*0.08;
       }
     }
-    // worship trickle
+    // worship
     inWorship = giant.position.distanceTo(new THREE.Vector3(WORSHIP.pos.x,0,WORSHIP.pos.z)) < WORSHIP.r;
-    if (inWorship) setFaith(faith + 0.5*dt);
-    wz.material.opacity = inWorship ? 0.45 : 0.22;
-    // slam ring expand
-    if (slamActive > 0){
-      slamT += dt / 0.7; // RingExpandSeconds
-      if (slamT >= 1){ slamActive = 0; slamRing.visible = false; }
-      else {
-        const s = 1 + slamT * 17; // to ~18m radius
-        slamRing.scale.set(s, s, 1);
-        slamRing.material.opacity = 0.9 * (1 - slamT);
-      }
-    }
+    if (inWorship){ setFaith(faith + 0.5*dt); wz.material.opacity = 0.45; } else wz.material.opacity = 0.22;
     // enemies
-    enemies.forEach(e => {
+    for (let i=0;i<enemies.length;i++){
+      const e = enemies[i];
       if (e.dead){
         e.vel.y -= 22 * dt; e.obj.position.addScaledVector(e.vel, dt);
         e.obj.rotation.x += e.spin * dt;
-        if (e.obj.position.y < -0.5){ scene.remove(e.obj); }
-        return;
+        if (e.obj.position.y < -0.6){ scene.remove(e.obj); enemies.splice(i,1); i--; }
+        continue;
       }
-      if (e.type === 'brute' && e.flashT > 0){ e.flashT -= dt*4; const s = 1 + 0.14*Math.max(0,e.flashT); e.obj.scale.set(s,s,s); }
+      e.walkT += dt;
       if (e.type === 'ant'){
         const toP = giant.position.clone().sub(e.obj.position); toP.y = 0;
-        if (toP.length() < 25){ e.target = giant.position; }
-        else { e.retarget -= dt; if (e.retarget <= 0){ e.retarget = 2+Math.random()*3; e.target = e.home.clone().add(new THREE.Vector3((Math.random()-.5)*10,0,(Math.random()-.5)*10)); } }
-        const t2 = e.target.clone().sub(e.obj.position); t2.y = 0;
-        if (t2.length() > 0.2){ e.obj.position.add(t2.setLength(2.5*dt)); }
+        let dir;
+        if (toP.length() < 26 && toP.length() > 2.6) dir = toP.clone().normalize();   // approach but stop at 2.6m — no body-jitter
+        else if (toP.length() <= 2.6) dir = null;
+        else {
+          e.retarget -= dt;
+          if (e.retarget <= 0){ e.retarget = 2+Math.random()*3; e.target = e.home.clone().add(new THREE.Vector3((Math.random()-.5)*12,0,(Math.random()-.5)*12)); }
+          const t2 = e.target.clone().sub(e.obj.position); t2.y = 0;
+          dir = t2.length() > 0.4 ? t2.normalize() : null;
+        }
+        // separation from other ants — no clumping
+        const sep = new THREE.Vector3();
+        for (let j=0;j<enemies.length;j++){
+          if (j===i) continue; const o = enemies[j];
+          if (o.type !== 'ant' || o.dead) continue;
+          const d2 = e.obj.position.clone().sub(o.obj.position); d2.y=0;
+          const L = d2.length(); if (L > 0.01 && L < 1.4) sep.add(d2.setLength((1.4-L)/1.4));
+        }
+        if (sep.lengthSq() > 0) dir = (dir || new THREE.Vector3()).add(sep.multiplyScalar(1.2));
+        if (dir && dir.lengthSq() > 0.001){
+          dir.normalize();
+          const ty = Math.atan2(dir.x, dir.z);
+          let dy = ty - e.yaw; while (dy > Math.PI) dy -= Math.PI*2; while (dy < -Math.PI) dy += Math.PI*2;
+          e.yaw += dy * Math.min(1, 6*dt);                                  // smooth enemy turning
+          e.obj.rotation.y = e.yaw;
+          e.obj.position.add(new THREE.Vector3(Math.sin(e.yaw), 0, Math.cos(e.yaw)).multiplyScalar(3*dt));
+          e.obj.rotation.z = Math.sin(e.walkT*10) * 0.09;                   // scuttle waddle
+        } else e.obj.rotation.z *= 0.9;
       } else {
-        if (e.stagger > 0){ e.stagger -= dt; return; }
+        if (e.flashT > 0){ e.flashT -= dt*4; const s = 1 + 0.14*Math.max(0,e.flashT); e.obj.scale.set(s,s,s); }
+        if (e.stagger > 0){ e.stagger -= dt; continue; }
         const toP = giant.position.clone().sub(e.obj.position); toP.y = 0;
-        if (toP.length() < 30 && toP.length() > 3.5){ e.obj.position.add(toP.setLength(1.8*dt)); }
+        if (toP.length() < 32 && toP.length() > 3.8){
+          const ty = Math.atan2(toP.x, toP.z);
+          let dy = ty - e.yaw; while (dy > Math.PI) dy -= Math.PI*2; while (dy < -Math.PI) dy += Math.PI*2;
+          e.yaw += dy * Math.min(1, 3*dt);
+          e.obj.rotation.y = e.yaw;
+          e.obj.position.add(new THREE.Vector3(Math.sin(e.yaw), 0, Math.cos(e.yaw)).multiplyScalar(1.9*dt));
+          e.obj.position.y = Math.abs(Math.sin(e.walkT*4)) * 0.18;           // heavy stomp bob
+        }
       }
-    });
+    }
+    updatePopups(realDt);
     updateCamera(dt);
     renderer.render(scene, camera);
   }
