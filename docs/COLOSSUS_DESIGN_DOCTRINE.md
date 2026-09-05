@@ -167,3 +167,10 @@ Per-realm particle/motion signature:
 
 ## BELIEF BINDING — LORE ONLY (BudE404, Sept 4 2026)
 Faith/belief still FUELS the colossi in lore (belief is the pulse — it lights the sigils, feeds the element, holds the forms). But the prayer-light STREAMS feeding into the colossus are NEVER DEPICTED IN IMAGES. No visible belief streams, no prayer-light flowing in from above, no worship-tether visuals. The gods simply ARE — powered, blazing, alive. The faith system stays invisible in concept art.
+
+---
+
+## THE COLOSSUS COMBAT LAW (v1.4, Sept 5, 2026, BudE404 verdict)
+1. **NO WEAPONS ON THE COLOSSI.** Their combat is completely different from sprite-scale combat: abilities + environment smashing only. The giant hands ARE the disaster — raised palm = ability surge (magma flare, lightning coil, bloom unfold, wisp spiral, tide column, crystal eruption). Never place a weapon in colossal art again.
+2. **THE ELEMENT-FORMED FACE, HARD PUSH.** Human faces on colossi are rejected: the head is a half-emerged sculptural formation of the raw element — zero human features, zero human skin; only glow-pools deep inside fissures where eyes would rest.
+3. **CHAMPIONS REVIEW ONE AT A TIME.** Pilgrim-hero art is judged individually (keep/re-roll per champion), never as batch sheets.
