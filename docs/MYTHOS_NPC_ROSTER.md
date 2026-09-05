@@ -1,4 +1,4 @@
-# [GIANTS & SPRITES UPDATE: all mortal NPCs are sprite-scale serious-fey — lithe fey, faction-palette armor at their scale, element-touched eyes; names/roles unchanged]
+# [AVALON DOCTRINE UPDATE (Sept 5 2026): all mortal NPCs are HUMAN — gate-town villagers, priests, smiths, pilgrims, champions. Names/roles unchanged. Priests and shrine-keepers tend the thin places; pilgrims walk the old roads between Gates.]
 
 # MYTHOS — NPC ROSTER
 **Canon v1.0 — Sept 4 2026. Named mortals for campaign quests, shopkeeping, and town life. Companion to the town lore in MYTHOS_WORLD_BIBLE.md.**

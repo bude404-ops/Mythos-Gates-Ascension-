@@ -1,6 +1,6 @@
 # MYTHOS — SPRITES: THE SMALL TRUTH (Companion System)
 
-> **DOCTRINE UPDATE (Sept 4 2026 — Giants & Sprites):** the mortal peoples of Mythos are NOW sprite-scale serious-fey civilizations (the playable human-side; see WORLD_BIBLE Sprite Law). The companion system in this doc remains the companion layer — tiny elemental companions that follow sprite mortals and walking vessels alike. Mimic skins now reflect each region's GIANT patron (raw elemental anatomy in miniature) instead of dragon barding.
+> **DOCTRINE UPDATE (Sept 5 2026 — THE AVALON DOCTRINE, supersedes the Giants & Sprites update):** mortals of Mythos are HUMANS (see WORLD_BIBLE Human Law + AVALON_DOCTRINE.md). The companion system in this doc SURVIVES UNCHANGED as the companion layer — sprites here are tiny living motes of god-light (the Emberling pet canon), born from the pooled element of the Walking Age, that follow HUMAN pilgrims and hooded wanderers alike. Mimic skins still reflect each region's GIANT patron. The mortal RACES formerly called sprites are retired; the 12 canonized Warden/Keeper designs are re-keyed as THE FIRST PILGRIMS (legend-humans anointed by relic-light).
 **Canon v1.0 — Sept 4 2026, BudE404 directive: pets/sprites of each elemental region for the human side, with abilities, levels, and skin monetization. Companion to GAMEPLAY_DOCTRINE.**
 
 ## I. LORE — why sprites exist (and why the Hollow fears them)

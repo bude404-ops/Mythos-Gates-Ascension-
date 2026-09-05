@@ -1,10 +1,13 @@
 # Mythos Gates — Project Status
-_Last updated: Sept 5, 2026, 2:00 AM ET (BIGagent404)_
+_Last updated: Sept 5, 2026, 4:40 PM ET (BIGagent404)_
+
+## ⚡ DOCTRINE LOCKED (Sept 5 2026): THE AVALON DOCTRINE — docs/AVALON_DOCTRINE.md is the MASTER LAW
+BudE404 locked the full cast/world restructure: mortals = HUMANS; the land IS the sleeping elemental gods; the colossal = the god standing up; powers = relic-gifts; pilgrimage = Grail-quest campaign; Gates = the gods' pulse-points (thin places); the GATE RITE wakes the god through the player (giant-mode trigger — already prototyped); the Hollow = the Wasteland (T3 Echo = false waking; the Forgotten = the first dead dream). World Bible rewritten to v3.0; Codex/Campaign/Sprites/NPC docs bannered to the doctrine. The 12 Warden/Keeper designs re-keyed as THE FIRST PILGRIMS (anointed legend-humans). ALL kept art canon survives (12 giant designs, hooded aspect law, relics, pets, faction/Gate names unchanged). Race forks (dwarves/construct, giant-kin) are moot.
 
 ## Current Phase: VAULT COMPLETE — Stage 2 worlds rolled, lore+combat synced, verdicts open
 
 ### COMPLETE (all committed + pushed)
-- **ROSTER: 24/24 Stage 1 character canons** — 6 factions (Ashfall, Skyrend, Everbloom, Duskmourn, Marenth, Stoneheart) × (2 primordial giant deities + 2 sprite champions (Mythos fey — NOT elves; elven refers only to LOTR armor craft)). Names locked: Vharkar/Vesskra, Haeldir/Sylwen, Thevril/Miriath, Morvain/Senvra, Nerovax/Ilsarra, Grothmar/Bergrun; champions by title (Kiln-Warden/Hearth-Keeper, Storm-Warden/Matriarch, Bloom-Warden/Bloom-Keeper, Gloam-Warden/Veil-Keeper, Tide-Warden/Pearl-Keeper, Quarry-Warden/Crystal-Keeper).
+- **ROSTER: 24/24 Stage 1 character canons** — 6 factions × (2 sleeping-god waking forms [primordial giants] + 2 FIRST PILGRIMS [anointed legend-humans; formerly 'sprite champions' — design canon unchanged: signature headgear, elemental bloodline tells, LOTR-craft armor]). Names locked: Vharkar/Vesskra, Haeldir/Sylwen, Thevril/Miriath, Morvain/Senvra, Nerovax/Ilsarra, Grothmar/Bergrun; champions by title (Kiln-Warden/Hearth-Keeper, Storm-Warden/Matriarch, Bloom-Warden/Bloom-Keeper, Gloam-Warden/Veil-Keeper, Tide-Warden/Pearl-Keeper, Quarry-Warden/Crystal-Keeper).
 - **STAGE 2: all 24 world compositions rolled + delivered** (Cinderlands → Heartroot Chamber). 2/24 canonized (Vharkar/Cinderlands, Vesskra/Ember Gorge); 22 verdicts open.
 - **HOLLOW ENEMY SET: 7 units, 4 canonized** — T1 Undone (CANON), T2 Unmade Champion (CANON), T2 Erased Drake + Still Choir (pending), T3 Gate-Worm (CANON), T3 Echo of the Forgotten (CANON), T3 Hollow Furnace Brute / first Dead-God Shape (pending). Five more Dead-God Shapes queued behind the Furnace Brute verdict.
 - **LORE SYNC (continuity pass 1 + 2 complete):** Giant-Era Canonical Roster in Codex; gate names unified (Cinder/Squall/Bloom/Dusk/Deep/Stone); First Forge myth re-cast to giant-era; 12/12 giant sagas; Skywilds→Skyrend drift fixed; old eras archived non-canon (docs/lore/archive-old-era/); LORE_CONTINUITY_AUDIT.md = the 11-layer gate map + fix log.

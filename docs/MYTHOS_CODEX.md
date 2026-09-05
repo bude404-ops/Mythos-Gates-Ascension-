@@ -1,6 +1,6 @@
 # THE MYTHOS CODEX — Founding Roster v2.1 (Original Six-Element World)
 
-> ⚡ **ACTIVE DOCTRINE (Sept 4 2026): THE GIANTS & SPRITES DOCTRINE — see the appended section at the bottom of this file.** Deities = colossal RAW ELEMENTAL GIANTS (zero armor, element-forged greatsword/staff per Gender-Role Binding). Mortals = serious-fey SPRITES. Dragons = world-fauna only. Players control giants (colossal mode) AND sprites (mortal mode). All dragon-vessel / dragon-kin / human-aspect material above is HISTORICAL unless restated below.
+> ⚡ **ACTIVE DOCTRINE (Sept 5 2026): THE AVALON DOCTRINE — see docs/AVALON_DOCTRINE.md (the master law).** THE LAND IS THE SLEEPING GODS: each deity sleeps AS the terrain; the colossal = the god standing up (giant-design canon unchanged: raw elemental giants, element-forged greatsword/staff). MORTALS = HUMANS. Powers = relic-GIFTS from the gods. Pilgrimage = the campaign (Grail-quest grammar); Gates = the gods' pulse-points; the Gate Rite wakes the god (giant-mode trigger). The Hollow = the Wasteland (born where a god's dream dies; T3 Echo = false waking). The 12 Warden/Keeper designs = THE FIRST PILGRIMS (anointed legend-humans). Dragons = world-fauna only. All sprite-race / dragon-kin material is HISTORICAL unless restated under the new doctrine.
 
 
 **Owner:** BudE404

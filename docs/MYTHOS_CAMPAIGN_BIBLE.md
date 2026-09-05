@@ -3,7 +3,7 @@
 **Owner:** BudE404
 **Built by:** BIGagent404 (commissioned Sept 4 2026)
 **Integrates:** Mythos Codex v2.1, Giants & Sprites Doctrine, Dual-Scale Play, Weapon Chassis Law, Hollow Scope, Combat Spec, Female-Titan Laws, Sprite Vessel Law
-**REVISED v2.0 (Sept 4 2026):** re-cast to the GIANTS & SPRITES doctrine — deities are colossal raw elemental GIANTS, mortals are fey-small SPRITES (1-3 ft), the player's small vessel is sprite-scale. All 8 approved verdict points and the five-beat rhythm carry over unchanged.
+**REVISED v3.0 (Sept 5 2026):** re-cast to THE AVALON DOCTRINE (see docs/AVALON_DOCTRINE.md) — the land IS the sleeping gods; mortals are HUMANS; the player is a human champion-pilgrim; powers are relic-gifts; each realm's campaign = pilgrimage across the god's sleeping body, relight the Gates, the final GATE RITE wakes the god THROUGH the player (colossal mode = the god's hand), the Hollow burns off. Campaign grammar per realm: arrival in a wounded land -> pilgrimage -> relight Gates -> Gate Rite -> god stands up -> realm cleansed -> god lies back down. All approved verdict points and the five-beat rhythm carry over unchanged.
 **Status:** CANON — v1.1 (all 8 verdict points approved Sept 4 2026)
 
 ---
