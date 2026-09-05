@@ -79,3 +79,41 @@ If belief dies everywhere, every god wakes as an Echo. The player's lantern is o
 Per realm: **arrival in a wounded land -> pilgrimage across the god's sleeping body (mortal scale: quests, shrine-keeping, Hollow fights, relic earning) -> relight the Gates -> the final Gate Rite -> the god stands up through you (colossal scale: the realm battle) -> the Hollow burns off -> the god lies back down as healed land.**
 
 The whole game is one loop, six times over, rising in scale — with the Forgotten as the seventh and final dream to be faced.
+
+---
+
+## THE SCOPE LAW + ROLE SYSTEM + MODULAR PILGRIM SYSTEM
+**Locked Sept 5, 2026, BudE404 ruling: "we just need to create more with the roles and skills and abilities to fit the lore, and come up with a way to make different variations of the humans with armor and weapons."**
+
+### THE SCOPE LAW
+
+1. **ONE COLOSSAL PER FACTION — 6 total.** The god is singular: one waking form per realm. The stronger of each faction's two canon giant designs = THE canon colossal. The second design = the god's OTHER ASPECT (calm waking = staff aspect, war waking = blade aspect) — canon in art and lore, not required in 3D at launch.
+2. **HUMANS ARE NEUTRAL.** Any human can carry any element — powers are GIFTS, not blood. Faction identity = REGION (culture + armor style) + which god's relics you carry. A fire-pilgrim can walk the Stormshards.
+3. **THE 12 FIRST PILGRIM DESIGNS = ROLE TEMPLATES**, rendered in six regional flavors — not 12 fixed characters. New roles are invented freely in the pilgrimage grammar.
+4. **PRODUCTION MATH: 6 colossi + 1 human rig system + armor/relic variety** (supersedes 24 unique character builds).
+
+### THE SIX ROLES (pilgrimage grammar — each readable at a glance)
+
+| Role | Silhouette | Weapon kit | Skills (doctrine grammar) |
+|---|---|---|---|
+| **WARDEN** | blade pilgrim — frontline duelist | straight relic-coated blade | Ember Edge (god-fire coats the blade), Parry-Rite (perfect block stores faith), Vow Strike (charge attack vs Hollow elites) |
+| **KEEPER** | lantern-bearer — support/area control | shrine lantern + short blade | Light Radius (Hollow will not spawn in true light — the Witness mechanic), Hearth Blessing (heals + faith regen), Lantern Rite (portable relight — rekindles dead shrines/Gates) |
+| **WALKER** | scout of the old roads — speed/traversal | paired daggers or short bow | Mist-Read (sees thin places on the map), Road Dash (traversal burst), First-Footstep (backstrike opener) |
+| **SINGER** | faith-caster — hymns of the old roads | song-relic (bell/harp) or staff | Hymn of the Road (party buff), Verses of Waking (charges the Gate Rite faster), Silence-Break (stuns Hollow — their nightmare cannot hold a true song) |
+| **SMITH** | forge-prayer crafter — tank/utility | great hammer | Molten Strike (heavy AoE), Anvil Prayer (repairs/reinforces gear mid-pilgrimage), Bulwark Forge (deploys shrine-cover) |
+| **VIGIL** | gate-guardian — shield tank | tower shield + mace | Bulwark Oath (holds the line; taunt), Gate-Devotion (stronger near relit Gates), Last Vigil (survives a killing blow once per pilgrimage — 'the road is not done with you') |
+
+Skill/ability law: every skill is a PRAYER or RITE in doctrine grammar (no sci-fi tech words), every resource is FAITH, and every ultimate ties into the GATE RITE charge — the pilgrimage loop is the combat economy.
+
+### THE MODULAR PILGRIM SYSTEM (human variations)
+
+Six layers, one rig. The same base human becomes any role, any region, any element:
+
+1. **BASE BODY** — one male + one female human base mesh (~30k tris, Mixamo-ready, weaponless T-pose per the locked base rules).
+2. **ROLE KIT** — armor silhouette per role (Warden plate, Keeper robes + lantern, Walker leathers, Singer vestments, Smith forge apron-plate, Vigil tower set).
+3. **FACTION STYLE SKIN** — the six canon armor cultures applied to any role kit: Forge-Iron, Storm-Steel, Grow-Plate, Lantern-Plate, Tide-Mail, Quarry-Plate.
+4. **ELEMENT EMISSIVE LAYER** — the relic-gift glow (ember orange, storm blue, bloom gold, dusk white, tide teal, stone green) — SWAP THE GLOW, NOT THE MESH. The relic decides the element, so variation is a texture/emissive change, not new geometry.
+5. **WEAPON KITS** — role weapons × faction styles (modular props parented to the hand bone per the locked weapon rule).
+6. **COSMETICS** — cloaks, heraldry, weathering, hair, lantern styles — the identity layer (monetization lives HERE: sell identity, never power).
+
+Output math: 1 base rig × 6 role kits × 6 faction skins × 6 glow layers = 216 readable human variations from ~7 armor sets + emissive swaps — plus unlimited cosmetics.
