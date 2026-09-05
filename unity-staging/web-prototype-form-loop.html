@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>MYTHOS GATES — THE FORM LOOP (Glimpse · Manifestation · Return)</title>
+<style>
+  html,body{margin:0;padding:0;overflow:hidden;background:#0a0806;font-family:Georgia,serif;-webkit-user-select:none;user-select:none;touch-action:none}
+  #hud{position:fixed;top:10px;left:50%;transform:translateX(-50%);color:#e8c47a;text-align:center;z-index:10;pointer-events:none;text-shadow:0 2px 6px #000}
+  #tier{font-size:11px;color:#9a8b6f;letter-spacing:2px}
+  #obj{font-size:14px;margin-top:3px;letter-spacing:1px}
+  .barwrap{width:190px;height:9px;background:#1c1410;border:1px solid #4a3218;margin:5px auto 0}
+  #faithfill{height:100%;width:0%;background:linear-gradient(90deg,#c07010,#ffcf6a)}
+  #timerwrap{display:none;width:240px;height:12px;background:#2a120a;border:1px solid #ff5a10;margin:6px auto 0}
+  #timerfill{height:100%;width:100%;background:linear-gradient(90deg,#ff5a10,#ffcf6a)}
+  #hurt{position:fixed;inset:0;pointer-events:none;z-index:9;box-shadow:inset 0 0 90px 30px rgba(200,20,10,.6);opacity:0;transition:opacity .13s}
+  .btn{position:fixed;z-index:10;padding:16px 14px;background:rgba(30,22,14,.85);border:1px solid #7a5a2a;color:#e8c47a;font-size:14px;letter-spacing:1px;border-radius:12px;text-align:center;line-height:1.1}
+  .btn small{display:block;font-size:9px;color:#a8895a;letter-spacing:1px;margin-top:2px}
+  .btn:active{background:#4a3214}
+  #btnA{right:20px;bottom:20px}
+  #btnB{right:108px;bottom:64px}
+  #btnRite{left:20px;bottom:20px;display:none;border-color:#ffcf6a}
+  .pop{position:fixed;color:#ffcf6a;font-size:13px;letter-spacing:1px;text-shadow:0 2px 4px #000;pointer-events:none;z-index:12;white-space:nowrap}
+  .pop.heavy{font-size:16px;color:#ffe8b0}
+  #overlay{display:none;position:fixed;inset:0;background:rgba(4,3,2,.92);z-index:20;color:#e8c47a;text-align:center}
+  #overlay .big{margin-top:28vh;font-size:26px;letter-spacing:5px;text-shadow:0 4px 12px #000}
+  #overlay .stats{margin-top:14px;font-size:13px;color:#9a8b6f;line-height:1.9}
+  #overlay .btn{position:relative;display:inline-block;margin:26px auto 0;left:0;right:0}
+</style>
+</head>
+<body>
+<div id="hud">
+  <div id="tier">THE REFUGEE ROAD — SPRITE</div>
+  <div id="obj">OBJECTIVE: ESCORT THE REFUGEES NORTH</div>
+  <div class="barwrap"><div id="faithfill"></div></div>
+  <div id="timerwrap"><div id="timerfill"></div></div>
+</div>
+<div id="hurt"></div>
+<div class="btn" id="btnA">SLASH<small>SPRITE</small></div>
+<div class="btn" id="btnB">ROLL<small>DODGE</small></div>
+<div class="btn" id="btnRite">RITE<small>KINDLE THE MANIFESTATION</small></div>
+<div id="overlay">
+  <div class="big" id="obig"></div>
+  <div class="stats" id="ostats"></div>
+  <div class="btn" onclick="location.reload()">RUN IT AGAIN</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  const renderer = new THREE.WebGLRenderer({antialias:true});
+  renderer.setSize(innerWidth, innerHeight);
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75));
+  document.body.appendChild(renderer.domElement);
+  const scene = new THREE.Scene();
+  scene.fog = new THREE.Fog(0x1a120c, 70, 260);
+  const camera = new THREE.PerspectiveCamera(60, innerWidth/innerHeight, 0.1, 600);
+  scene.add(new THREE.HemisphereLight(0x8a7a5a, 0x1c0f0a, 0.9));
+  const sun = new THREE.DirectionalLight(0xffb070, 0.8); sun.position.set(40, 80, 30); scene.add(sun);
+  function box(w,h,d,mat,x,y,z,parent){ const m = new THREE.Mesh(new THREE.BoxGeometry(w,h,d), mat); m.position.set(x,y,z); (parent||scene).add(m); return m; }
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(200, 260), new THREE.MeshStandardMaterial({color:0x3a2a1c, roughness:1}));
+  ground.rotation.x = -Math.PI/2; ground.position.set(0, 0, -45); scene.add(ground);
+  const road = new THREE.Mesh(new THREE.PlaneGeometry(6, 180), new THREE.MeshStandardMaterial({color:0x4a3a26, roughness:1}));
+  road.rotation.x = -Math.PI/2; road.position.set(0, 0.04, -30); scene.add(road);
+
+  // popups / particles
+  const popups = []; const v3 = new THREE.Vector3();
+  function popup(text, worldPos, heavy){
+    const el = document.createElement('div');
+    el.className = 'pop' + (heavy ? ' heavy' : ''); el.textContent = text;
+    document.body.appendChild(el);
+    popups.push({el, pos:worldPos.clone(), t:0});
+  }
+  function updatePopups(dt){
+    for (let i=popups.length-1;i>=0;i--){
+      const p = popups[i]; p.t += dt;
+      if (p.t > 1.5){ p.el.remove(); popups.splice(i,1); continue; }
+      v3.copy(p.pos); v3.y += 2 + p.t*2.5; v3.project(camera);
+      if (v3.z > 1){ p.el.style.display='none'; continue; }
+      p.el.style.display='block';
+      p.el.style.left = ((v3.x*0.5+0.5)*innerWidth) + 'px';
+      p.el.style.top = ((-v3.y*0.5+0.5)*innerHeight) + 'px';
+      p.el.style.opacity = Math.max(0, 1 - p.t/1.5);
+    }
+  }
+  const particles = []; const partGeo = new THREE.BoxGeometry(0.14, 0.14, 0.14);
+  function burst(pos, color, n, power, size){
+    if (particles.length > 160) return;
+    for (let i=0;i<n;i++){
+      const m = new THREE.Mesh(size ? new THREE.BoxGeometry(size,size,size) : partGeo, new THREE.MeshBasicMaterial({color, transparent:true, opacity:1}));
+      m.position.copy(pos);
+      particles.push({m, vel:new THREE.Vector3((Math.random()-.5)*power, Math.random()*power*0.8, (Math.random()-.5)*power), life:0.9+Math.random()*0.5});
+      scene.add(m);
+    }
+  }
+
+  // ============ WORLD ============
+  const woodMat = new THREE.MeshStandardMaterial({color:0x3a2a1a, roughness:1});
+  const stoneMat = new THREE.MeshStandardMaterial({color:0x4a4038, roughness:1});
+  // shrine (faith bank)
+  const shrine = new THREE.Group();
+  box(2.2, 0.7, 2.2, stoneMat, 0, 0.35, 0, shrine);
+  const shrineFlame = new THREE.Mesh(new THREE.ConeGeometry(0.35, 1.0, 6), new THREE.MeshBasicMaterial({color:0xff8a30, transparent:true, opacity:0.9}));
+  shrineFlame.position.y = 1.2; shrine.add(shrineFlame);
+  shrine.position.set(-8, 0, -22); scene.add(shrine);
+  // cliff (rockfall spot)
+  const cliff = new THREE.Group();
+  box(18, 14, 8, stoneMat, 12, 7, 0, cliff);
+  cliff.position.set(0, 0, -35); scene.add(cliff);
+  // HOLLOW BULWARK — 3 destructible segments + heart
+  const wallSegs = [];
+  const bulwark = new THREE.Group();
+  const wallMat = new THREE.MeshStandardMaterial({color:0x241a2a, roughness:1, emissive:0x3a0a4a, emissiveIntensity:0.3});
+  [[-7.5],[0],[7.5]].forEach(p => {
+    const seg = box(5, 10, 3, wallMat, p[0], 5, 0, bulwark);
+    wallSegs.push(seg);
+  });
+  const wallHeart = new THREE.Mesh(new THREE.RingGeometry(0.8, 1.3, 6), new THREE.MeshBasicMaterial({color:0xc040ff, transparent:true, opacity:0.8, side:THREE.DoubleSide}));
+  wallHeart.position.set(0, 6, 1.6); bulwark.add(wallHeart);
+  bulwark.position.set(0, 0, -70); scene.add(bulwark);
+  // corruption obelisk (the deeper discovery)
+  const obelisk = new THREE.Mesh(new THREE.ConeGeometry(2, 9, 4), new THREE.MeshStandardMaterial({color:0x1a0a22, roughness:1, emissive:0x8a2ab0, emissiveIntensity:0.7}));
+  obelisk.position.set(3, 4.5, -88); scene.add(obelisk);
+  const obeliskLight = new THREE.PointLight(0x8a2ab0, 1.2, 18, 2); obeliskLight.position.set(3, 6, -86); scene.add(obeliskLight);
+
+  // ============ HEROES ============
+  const sprite = new THREE.Group();
+  const clothMat = new THREE.MeshStandardMaterial({color:0x241c2a, roughness:1});
+  box(0.55, 0.7, 0.32, clothMat, 0, 1.05, 0, sprite);
+  box(0.34, 0.38, 0.36, clothMat, 0, 1.62, 0, sprite);
+  box(0.1, 0.06, 0.04, new THREE.MeshBasicMaterial({color:0xffcf6a}), 0, 1.66, 0.19, sprite);
+  const sLegL = box(0.2, 0.7, 0.22, clothMat, -0.14, 0.35, 0, sprite);
+  const sLegR = box(0.2, 0.7, 0.22, clothMat, 0.14, 0.35, 0, sprite);
+  sprite.position.set(0, 0, -4); scene.add(sprite);
+
+  const god = new THREE.Group();
+  const magmaMat = new THREE.MeshStandardMaterial({color:0xc0a890, roughness:0.85, emissive:0xff5a10, emissiveIntensity:0.8});
+  box(3.4, 4.2, 2.2, magmaMat, 0, 6.4, 0, god);
+  box(1.7, 1.6, 1.7, magmaMat, 0, 9.6, 0, god);
+  box(0.45, 0.2, 0.3, new THREE.MeshBasicMaterial({color:0xffb84a}), -0.4, 9.9, 0.9, god);
+  box(0.45, 0.2, 0.3, new THREE.MeshBasicMaterial({color:0xffb84a}), 0.4, 9.9, 0.9, god);
+  box(1.5, 3.6, 1.5, magmaMat, -0.95, 1.8, 0, god);
+  box(1.5, 3.6, 1.5, magmaMat, 0.95, 1.8, 0, god);
+  const swordG = new THREE.Group();
+  box(0.5, 4.2, 0.18, new THREE.MeshStandardMaterial({color:0x4a1c08, roughness:0.5, emissive:0xff5a10, emissiveIntensity:1.2}), 0, 2.6, 0, swordG);
+  swordG.position.set(3.1, 4.5, 0); god.add(swordG);
+  god.visible = false; scene.add(god);
+
+  // GLIMPSE — the colossal hand
+  const hand = new THREE.Group();
+  const handMat = new THREE.MeshBasicMaterial({color:0xff8a30, transparent:true, opacity:0.85});
+  box(14, 3, 16, handMat, 0, 0, 0, hand);
+  for (let i=0;i<4;i++) box(2.6, 3.4, 2.6, handMat, -5.2 + i*3.5, 0, -9.3, hand);
+  box(3.4, 3.2, 7, handMat, 0, 0, -11.5, hand);
+  hand.scale.setScalar(0.01); hand.visible = false; scene.add(hand);
+
+  // ============ NPCS / ENEMIES ============
+  const refMat = new THREE.MeshStandardMaterial({color:0x5a4a2a, roughness:1});
+  const refugees = [];
+  for (let i=0;i<3;i++){
+    const g = new THREE.Group();
+    box(0.4, 0.7, 0.3, refMat, 0, 0.9, 0, g);
+    box(0.26, 0.26, 0.26, new THREE.MeshStandardMaterial({color:0xc0a080, roughness:1}), 0, 1.4, 0, g);
+    const glow = new THREE.Mesh(new THREE.SphereGeometry(0.12, 8, 8), new THREE.MeshBasicMaterial({color:0xffcf6a}));
+    glow.position.set(0.28, 1.1, 0.2); g.add(glow);
+    g.position.set((i-1)*1.6, 0, -3 - i);
+    scene.add(g);
+    refugees.push({obj:g, hp:2, hurtCd:0});
+  }
+  const enemies = [];
+  const wispMat = new THREE.MeshStandardMaterial({color:0x14121a, roughness:1, emissive:0x30104a, emissiveIntensity:0.6});
+  function makeHollow(pos, big){
+    const s = big ? 3 : 1;
+    const g = new THREE.Group();
+    box(0.6*s, 0.5*s, 0.6*s, wispMat, 0, 0.6*s, 0, g);
+    box(0.5*s, 0.5*s, 0.5*s, wispMat, 0, 1.05*s, 0, g);
+    const eye = new THREE.Mesh(new THREE.SphereGeometry(0.1*s, 6, 6), new THREE.MeshBasicMaterial({color:0xc040ff}));
+    eye.position.set(0, 1.1*s, 0.28*s); g.add(eye);
+    g.position.copy(pos); scene.add(g);
+    enemies.push({obj:g, yaw:0, hp: big ? 8 : 1, dead:false, big:!!big, walkT:Math.random()*6, flashT:0, atkCd:1});
+    return enemies[enemies.length-1];
+  }
+  // HOLLOW WARDEN — guards the bulwark, descends when the wall breaks
+  const warden = new THREE.Group();
+  const wardMat = new THREE.MeshStandardMaterial({color:0x1c1420, roughness:1, emissive:0x5a1a8a, emissiveIntensity:0.5});
+  box(2.2, 3.4, 1.6, wardMat, 0, 4.2, 0, warden);
+  box(1.2, 1.1, 1.2, wardMat, 0, 6.8, 0, warden);
+  box(0.3, 0.18, 0.12, new THREE.MeshBasicMaterial({color:0xb040ff}), -0.3, 6.9, 0.66, warden);
+  box(0.3, 0.18, 0.12, new THREE.MeshBasicMaterial({color:0xb040ff}), 0.3, 6.9, 0.66, warden);
+  box(1.2, 3.6, 1.2, wardMat, -1.6, 1.8, 0, warden);
+  box(1.2, 3.6, 1.2, wardMat, 1.6, 1.8, 0, warden);
+  const wBlade = box(0.5, 4.5, 0.5, new THREE.MeshStandardMaterial({color:0x2a1a34, emissive:0x8a2ab0, emissiveIntensity:0.8}), 2.6, 3.5, 0, warden);
+  warden.position.set(4, 10, -70); scene.add(warden);
+  let wardenActive = false, wardenAtkCd = 2, wardenDead = false;
+  // warden bolt (sprite-phase threat near the wall)
+  const bolt = new THREE.Mesh(new THREE.SphereGeometry(0.35, 8, 8), new THREE.MeshBasicMaterial({color:0xb040ff}));
+  bolt.visible = false; scene.add(bolt);
+  let boltVel = new THREE.Vector3(), boltActive = false, boltT = 0;
+
+  // boulders (rockfall)
+  const boulders = [];
+  for (let i=0;i<3;i++){
+    const b = new THREE.Mesh(new THREE.DodecahedronGeometry(0.9), stoneMat);
+    b.visible = false; scene.add(b);
+    boulders.push({m:b, vel:new THREE.Vector3(), active:false});
+  }
+
+  // ============ STATE ============
+  let phase = 'sprite';   // sprite -> manifest -> return -> end
+  let faith = 0, hp = 100, iframes = 0, rollT = 0, rollCd = 0, rollDir = new THREE.Vector3(0,0,-1);
+  let moveTarget = null, attacking = 0, slashHeld = false;
+  let gAttacking = 0, gSmashHeld = false, trauma = 0, shakeT = 0, growT = 0;
+  let manifestT = 0, MANIFEST_MAX = 75, wallBroken = 0, discovered = false;
+  let rockfallDone = false, bankDone = false, spawnT = 3, kills = 0, godHP = 100;
+  const tierEl = document.getElementById('tier'), objEl = document.getElementById('obj'),
+        faithFill = document.getElementById('faithfill'), timerWrap = document.getElementById('timerwrap'), timerFill = document.getElementById('timerfill'),
+        hurtEl = document.getElementById('hurt'), btnA = document.getElementById('btnA'), btnB = document.getElementById('btnB'), btnRite = document.getElementById('btnRite');
+  function setFaith(){ faithFill.style.width = Math.min(100, faith) + '%'; }
+  function hurt(n){
+    if (iframes > 0 && phase === 'sprite') return;
+    hp = Math.max(0, hp - n);
+    hurtEl.style.opacity = 0.85; setTimeout(()=>{ hurtEl.style.opacity = 0; }, 140);
+    trauma = Math.min(1, trauma + 0.35);
+    if (hp <= 0){
+      showOverlay('THE WARDEN FALLS', 'The refugees scatter. The road remembers.');
+      phase = 'end';
+    }
+  }
+  function showOverlay(big, stats){ document.getElementById('obig').textContent = big; document.getElementById('ostats').innerHTML = stats; document.getElementById('overlay').style.display = 'block'; }
+  function killHollow(e){
+    e.dead = true; kills++;
+    burst(e.obj.position, 0xb040ff, 10, 6);
+    const gain = e.big ? 30 : 15;
+    if (phase === 'sprite' || (phase === 'sprite2')) { faith = Math.min(100, faith + gain); setFaith(); popup('+' + gain + ' FAITH', e.obj.position, false); }
+  }
+
+  // ============ INPUT ============
+  const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
+  let tapTime = 0;
+  function onTap(ev){
+    const t = ev.touches ? ev.touches[0] : ev;
+    if (Date.now() - tapTime < 120) return; tapTime = Date.now();
+    ndc.x = (t.clientX/innerWidth)*2-1; ndc.y = -(t.clientY/innerHeight)*2+1;
+    ray.setFromCamera(ndc, camera);
+    const hit = ray.intersectObject(ground)[0];
+    if (!hit) return;
+    const p = hit.point.clone(); p.y = 0;
+    const anchor = (phase === 'manifest') ? god : sprite;
+    const maxD = (phase === 'manifest') ? 90 : 32;
+    if (p.distanceTo(anchor.position) > maxD) p.copy(anchor.position).add(p.sub(anchor.position).setLength(maxD));
+    moveTarget = p;
+  }
+  renderer.domElement.addEventListener('touchend', e => { e.preventDefault(); onTap(e.changedTouches[0]); }, {passive:false});
+  renderer.domElement.addEventListener('click', onTap);
+  function bind(btn, fn){ btn.addEventListener('touchstart', e => { e.preventDefault(); fn(); }, {passive:false}); btn.addEventListener('click', fn); }
+  btnA.addEventListener('touchstart', e => { e.preventDefault(); if (phase === 'manifest'){ gSmashHeld = true; doSmash(); } else { slashHeld = true; doSlash(); } }, {passive:false});
+  btnA.addEventListener('touchend', () => { slashHeld = false; gSmashHeld = false; });
+  btnA.addEventListener('touchcancel', () => { slashHeld = false; gSmashHeld = false; });
+  btnA.addEventListener('click', () => { if (phase === 'manifest') doSmash(); else doSlash(); });
+  bind(btnB, () => { if (phase === 'manifest') doSlam(); else doRoll(); });
+  bind(btnRite, () => { if (faith >= 100 && phase === 'sprite') startManifest(); });
+
+  function doSlash(){
+    if (attacking > 0 || rollT > 0) return;
+    attacking = 0.32;
+    setTimeout(() => {
+      enemies.forEach(e => {
+        if (e.dead) return;
+        const to = e.obj.position.clone().sub(sprite.position); to.y = 0;
+        if (to.length() > 2.8) return;
+        const ang = to.angleTo(new THREE.Vector3(Math.sin(sprite.rotation.y), 0, Math.cos(sprite.rotation.y)));
+        if (ang > 1.6) return;
+        e.hp--; e.flashT = 1;
+        burst(e.obj.position, 0x8a2ab0, 5, 4);
+        if (e.hp <= 0) killHollow(e);
+      });
+    }, 100);
+  }
+  function doRoll(){
+    if (rollCd > 0) return;
+    rollCd = 0.9; rollT = 0.24; iframes = 0.45;
+    rollDir.copy(moveTarget ? moveTarget.clone().sub(sprite.position).setY(0).normalize() : new THREE.Vector3(Math.sin(sprite.rotation.y), 0, Math.cos(sprite.rotation.y)));
+  }
+  function doSmash(){
+    if (gAttacking > 0.26) return;
+    gAttacking = 0.5;
+    swordG.rotation.x = -2.4;
+    setTimeout(() => {
+      swordG.rotation.x = 0;
+      const fwd = new THREE.Vector3(Math.sin(god.rotation.y), 0, Math.cos(god.rotation.y));
+      let hitAny = false;
+      // WALL SEGMENTS — the god-problem
+      wallSegs.forEach((seg, i) => {
+        if (!seg.visible) return;
+        const to = seg.position.clone().add(bulwark.position).sub(god.position); to.y = 0;
+        if (to.length() <= 15 && to.angleTo(fwd) < 1.2){
+          seg.visible = false;
+          burst(seg.position.clone().add(bulwark.position).setY(4), 0x6a4a7a, 24, 12, 0.5);
+          wallBroken++;
+          hitAny = true; trauma = 1;
+          popup('THE BULWARK CRACKS (' + (3-wallBroken) + ' SECTIONS STAND)', seg.position, true);
+          if (wallBroken === 2 && !wardenActive){
+            wardenActive = true;
+            warden.position.y = 0; warden.position.set(0, 0, -64);
+            popup('THE HOLLOW WARDEN DESCENDS', warden.position, true);
+          }
+          if (wallBroken >= 3){
+            wallHeart.visible = false;
+            objEl.textContent = 'OBJECTIVE: FELL THE HOLLOW WARDEN — OR WALK THE BREACH';
+          }
+        }
+      });
+      enemies.forEach(e => {
+        if (e.dead) return;
+        const to = e.obj.position.clone().sub(god.position); to.y = 0;
+        if (to.length() <= 15){ e.hp -= 2; e.flashT = 1; hitAny = true; burst(e.obj.position, 0xff7a20, 8, 7); if (e.hp <= 0) killHollow(e); }
+      });
+      if (!wardenDead && wardenActive){
+        const to = warden.position.clone().sub(god.position); to.y = 0;
+        if (to.length() <= 17 && to.angleTo(fwd) < 1.3){
+          wardenDead = true; hitAny = true; trauma = 1;
+          burst(warden.position.clone().setY(5), 0xb040ff, 30, 12, 0.4);
+          warden.visible = false;
+          faith = 100; setFaith();
+          popup('HOLLOW WARDEN FELLED — ITS BLOOD IS FAITH', warden.position, true);
+        }
+      }
+      if (hitAny) trauma = Math.min(1, trauma + 0.25);
+    }, 180);
+  }
+  function doSlam(){
+    if (gAttacking > 0.55) return;
+    gAttacking = 0.7; trauma = 1;
+    burst(god.position, 0xff8a30, 22, 10);
+    wallSegs.forEach((seg, i) => {
+      if (!seg.visible) return;
+      const to = seg.position.clone().add(bulwark.position).sub(god.position); to.y = 0;
+      if (to.length() <= 24){
+        seg.visible = false; wallBroken++;
+        burst(seg.position.clone().add(bulwark.position).setY(4), 0x6a4a7a, 24, 12, 0.5);
+        popup('THE BULWARK CRACKS (' + (3-wallBroken) + ' SECTIONS STAND)', seg.position, true);
+        if (wallBroken === 2 && !wardenActive){ wardenActive = true; warden.position.set(0, 0, -64); popup('THE HOLLOW WARDEN DESCENDS', warden.position, true); }
+        if (wallBroken >= 3){ wallHeart.visible = false; }
+      }
+    });
+    enemies.forEach(e => { if (!e.dead && e.obj.position.clone().sub(god.position).setY(0).length() <= 24){ e.dead = true; killHollow(e); } });
+  }
+  function startManifest(){
+    phase = 'manifest'; manifestT = MANIFEST_MAX;
+    faith = 0; setFaith();
+    btnRite.style.display = 'none';
+    timerWrap.style.display = 'block';
+    tierEl.textContent = 'MANIFESTATION — THE DIVINE CLOCK RUNS';
+    objEl.textContent = 'OBJECTIVE: BREAK THE BULWARK · FELL THE WARDEN — 75 SECONDS OF GODHOOD';
+    sprite.visible = false;
+    god.visible = true;
+    god.position.set(shrine.position.x, 0, shrine.position.z);
+    god.scale.setScalar(0.05); growT = 0;
+    trauma = 1;
+    popup('FOR SEVENTY-FIVE SECONDS, YOU ARE THE DISASTER', god.position, true);
+    // refugees take cover
+    refugees.forEach(r => { r.hiding = true; });
+  }
+  function disperse(){
+    phase = 'sprite';
+    timerWrap.style.display = 'none';
+    god.visible = false;
+    sprite.visible = true;
+    sprite.position.set(shrine.position.x + 3, 0, shrine.position.z + 3);
+    trauma = 0.6;
+    burst(sprite.position, 0xff8a30, 24, 8);
+    if (wallBroken >= 3){
+      tierEl.textContent = 'THE REFUGEE ROAD — SPRITE · RETURN';
+      objEl.textContent = 'OBJECTIVE: WALK THE BREACH — BRING THE REFUGEES THROUGH';
+      popup('THE FORM RELEASES — ITS WORK IS DONE', sprite.position, true);
+      refugees.forEach(r => { r.hiding = false; });
+    } else {
+      tierEl.textContent = 'THE REFUGEE ROAD — SPRITE · THE CLOCK RAN OUT';
+      objEl.textContent = 'OBJECTIVE: RE-BANK 100 FAITH AT THE SHRINE — THE WALL REMEMBERS YOUR BLOWS';
+      popup('DISPERSAL — THE WALL KEEPS ITS WOUNDS, AND YOU KEEP YOURS', sprite.position, true);
+    }
+    // a few hollows creep back
+    for (let i=0;i<2;i++) makeHollow(new THREE.Vector3((Math.random()-.5)*20, 0, -40 - Math.random()*15), false);
+  }
+
+  // ============ CAMERA ============
+  function updateCamera(dt){
+    let target, look;
+    if (phase === 'manifest'){
+      target = god.position.clone().add(new THREE.Vector3(Math.sin(god.rotation.y), 0, Math.cos(god.rotation.y)).multiplyScalar(-34));
+      target.y = 19;
+      look = god.position.clone().setY(8);
+    } else {
+      target = sprite.position.clone().add(new THREE.Vector3(6.5, 8.5, 6.5));
+      look = sprite.position.clone().setY(1);
+    }
+    camera.position.lerp(target, 1 - Math.exp(-4.5*dt));
+    if (trauma > 0){
+      shakeT += dt*30;
+      const amp = trauma*0.4;
+      look.x += Math.sin(shakeT*1.4)*amp; look.y += Math.cos(shakeT*1.2)*amp*0.6;
+      trauma = Math.max(0, trauma - dt*1.9);
+    }
+    camera.lookAt(look);
+  }
+
+  // ============ LOOP ============
+  const clock = new THREE.Clock();
+  function animate(){
+    requestAnimationFrame(animate);
+    const dt = Math.min(clock.getDelta(), 0.05);
+    const et = clock.elapsedTime;
+    if (phase === 'end'){ updateCamera(dt); renderer.render(scene, camera); updatePopups(dt); return; }
+    if (attacking > 0) attacking -= dt;
+    if (gAttacking > 0) gAttacking -= dt;
+    if (rollCd > 0){ rollCd -= dt; btnB.childNodes[1].textContent = rollCd > 0 ? rollCd.toFixed(1) + 's' : 'DODGE'; }
+    if (iframes > 0) iframes -= dt;
+
+    // ---- SPRITE MOVEMENT ----
+    if (phase !== 'manifest'){
+      if (rollT > 0){
+        rollT -= dt;
+        sprite.position.add(rollDir.clone().multiplyScalar(16*dt));
+        sprite.rotation.y = Math.atan2(rollDir.x, rollDir.z);
+      } else if (moveTarget){
+        const to = moveTarget.clone().sub(sprite.position); to.y = 0;
+        if (to.length() < 0.4) moveTarget = null;
+        else {
+          const dir = to.normalize();
+          sprite.rotation.y = Math.atan2(dir.x, dir.z);
+          sprite.position.add(dir.multiplyScalar(5.6*dt));
+          const sw = Math.sin(et*12)*0.5;
+          sLegL.rotation.x = sw; sLegR.rotation.x = -sw;
+        }
+      }
+      if (slashHeld && attacking <= 0 && rollT <= 0) doSlash();
+    }
+
+    // ---- MANIFEST PHASE ----
+    if (phase === 'manifest'){
+      manifestT -= dt;
+      timerFill.style.width = Math.max(0, manifestT/MANIFEST_MAX*100) + '%';
+      if (growT < 2.2){
+        growT += dt;
+        const s = 0.05 + Math.min(1, growT/2.2)*0.95;
+        god.scale.setScalar(s);
+      }
+      if (moveTarget){
+        const to = moveTarget.clone().sub(god.position); to.y = 0;
+        if (to.length() < 4) moveTarget = null;
+        else {
+          const dir = to.normalize();
+          const ty = Math.atan2(dir.x, dir.z);
+          let dy = ty - god.rotation.y;
+          while (dy > Math.PI) dy -= Math.PI*2; while (dy < -Math.PI) dy += Math.PI*2;
+          god.rotation.y += dy * Math.min(1, 7*dt);
+          god.position.add(dir.multiplyScalar(Math.min(11*dt, to.length())));
+        }
+      }
+      if (gSmashHeld && gAttacking <= 0.26) doSmash();
+      // god walking through the breach = the work is done
+      if (wallBroken >= 3 && wardenDead && god.position.z < -72){
+        popup('THE GOD STEPS THROUGH ITS OWN WORK', god.position, true);
+        disperse();
+      }
+      if (manifestT <= 0) disperse();
+      // warden duel AI
+      if (wardenActive && !wardenDead){
+        const to = god.position.clone().sub(warden.position); to.y = 0;
+        if (to.length() > 8){
+          warden.position.add(to.clone().normalize().multiplyScalar(3.2*dt));
+          warden.rotation.y = Math.atan2(to.x, to.z);
+        } else {
+          wardenAtkCd -= dt;
+          if (wardenAtkCd <= 0){
+            wardenAtkCd = 2.2;
+            hurt(10);
+            burst(god.position.clone().setY(8), 0xb040ff, 8, 6, 0.3);
+            trauma = Math.min(1, trauma + 0.4);
+          }
+        }
+      }
+    }
+
+    // ---- ROCKFALL + GLIMPSE ----
+    if (!rockfallDone){
+      const lead = refugees[0];
+      if (lead.obj.position.z < -32){
+        rockfallDone = true;
+        hand.visible = true;
+        hand.position.set(6, 3, -37);
+        hand.rotation.y = 0.5;
+        popup('THE CLIFF GROANS — ROCKFALL', cliff.position, true);
+        boulders.forEach((b, i) => {
+          b.active = true; b.m.visible = true;
+          b.m.position.set(9, 16, -33 + i*2.5);
+          b.vel.set(-2 - Math.random()*2, -2, 0);
+        });
+        setTimeout(() => { popup('A GLIMPSE — THE GOD\'S HAND ANSWERS', hand.position, true); }, 500);
+        setTimeout(() => {
+          hand.visible = false;
+          popup('THE HAND WITHDRAWS — SPENT, BUT WATCHING', sprite.position, true);
+        }, 3400);
+      }
+    }
+    // hand scale-in + boulder physics (bounce off the palm)
+    if (hand.visible){
+      const s = Math.min(1, hand.scale.x + dt*2.2);
+      hand.scale.setScalar(s);
+      hand.position.y = 3 + Math.sin(et*3)*0.3;
+    }
+    boulders.forEach(b => {
+      if (!b.active) return;
+      b.vel.y -= 16*dt;
+      b.m.position.addScaledVector(b.vel, dt);
+      b.m.rotation.x += dt*4; b.m.rotation.z += dt*3;
+      // bounce off the glimpse hand
+      if (hand.visible && b.m.position.distanceTo(hand.position.clone().setY(2.5)) < 9){
+        b.vel.set(-(3 + Math.random()*3), Math.abs(b.vel.y)*0.5 + 3, (Math.random()-.5)*4);
+        burst(b.m.position, 0xff8a30, 4, 4);
+      }
+      if (b.m.position.y < 0.6){
+        b.active = false; b.m.visible = false;
+        burst(b.m.position, 0x6a6a5a, 8, 5);
+      }
+    });
+
+    // ---- REFUGEES ----
+    refugees.forEach(r => {
+      if (r.hp <= 0) return;
+      if (r.hiding) return;
+      const blocked = (wallBroken < 3) && r.obj.position.z < -62;
+      if (!blocked && r.obj.position.z > -78){
+        r.obj.position.z -= 1.5*dt;
+        r.obj.rotation.y = Math.PI;
+        r.obj.position.y = Math.abs(Math.sin(et*8 + r.obj.position.x))*0.1;
+      }
+      // death check
+      if (r.obj.position.z < -80) r.safe = true;
+    });
+
+    // ---- BANKING PHASE (near bulwark) ----
+    const atWall = sprite.position.z < -52 && phase !== 'manifest';
+    if (phase === 'sprite' && refugees[0].obj.position.z < -50 && !bankDone){
+      bankDone = true;
+      tierEl.textContent = 'THE REFUGEE ROAD — THE PROBLEM BEYOND SPRITE STRENGTH';
+      objEl.textContent = 'OBJECTIVE: BANK 100 FAITH AT THE SHRINE — KINDLE THE MANIFESTATION';
+      popup('THE BULWARK IS BEYOND SPRITE STRENGTH — ONLY A GOD BREAKS IT', bulwark.position.clone().setY(12), true);
+    }
+    if (phase === 'sprite' && bankDone && faith < 100){
+      spawnT -= dt;
+      if (spawnT <= 0){
+        spawnT = 5;
+        for (let i=0;i<2;i++) makeHollow(new THREE.Vector3(shrine.position.x + (Math.random()-.5)*18, 0, shrine.position.z + (Math.random()-.5)*16), false);
+      }
+      if (faith >= 100) btnRite.style.display = 'block';
+    }
+    // warden bolts at sprite (if too close to the wall)
+    if (phase === 'sprite' && !wardenActive && sprite.position.z < -60){
+      if (!boltActive && Math.random() < dt*0.5){
+        boltActive = true; bolt.visible = true;
+        bolt.position.copy(warden.position).setY(7);
+        boltVel.copy(sprite.position.clone().setY(1).sub(bolt.position)).normalize().multiplyScalar(14);
+        boltT = 3;
+      }
+    }
+    if (boltActive){
+      boltT -= dt;
+      bolt.position.addScaledVector(boltVel, dt);
+      if (bolt.position.distanceTo(sprite.position.clone().setY(1)) < 0.8){ hurt(12); boltActive = false; bolt.visible = false; }
+      if (boltT <= 0){ boltActive = false; bolt.visible = false; }
+    }
+
+    // ---- ENEMY AI ----
+    enemies.forEach((e, idx) => {
+      if (e.dead){ e.obj.position.y -= dt*2; if (e.obj.position.y < -1.5){ scene.remove(e.obj); enemies.splice(idx,1); } return; }
+      e.walkT += dt;
+      if (e.flashT > 0){ e.flashT -= dt*4; const s = 1 + 0.2*Math.max(0,e.flashT); e.obj.scale.setScalar(s); } else e.obj.scale.setScalar(1);
+      const anchor = (phase === 'manifest') ? god : sprite;
+      const d = e.obj.position.distanceTo(anchor.position);
+      if (d < 24 && d > 1.6){
+        const to = anchor.position.clone().sub(e.obj.position).setY(0).normalize();
+        const ty = Math.atan2(to.x, to.z);
+        let dy = ty - e.yaw; while (dy > Math.PI) dy -= Math.PI*2; while (dy < -Math.PI) dy += Math.PI*2;
+        e.yaw += dy * Math.min(1, 6*dt); e.obj.rotation.y = e.yaw;
+        e.obj.position.add(to.multiplyScalar(3.6*dt));
+        e.obj.position.y = Math.abs(Math.sin(e.walkT*6))*0.25;
+      } else if (d <= 1.6 && phase !== 'manifest'){
+        // bite refugees preferentially when close
+        let victim = null;
+        refugees.forEach(r => { if (r.hp > 0 && !r.hiding && r.obj.position.distanceTo(e.obj.position) < 1.4) victim = r; });
+        if (victim){
+          if (e.atkCd <= 0){ e.atkCd = 1.6; victim.hp--; burst(victim.obj.position, 0xc02020, 4, 3); popup('REFUGEE HURT', victim.obj.position, true); if (victim.hp <= 0){ victim.obj.visible = false; popup('A REFUGEE IS LOST', victim.obj.position, true); } }
+        } else if (e.atkCd <= 0){ e.atkCd = 1.6; hurt(10); }
+      }
+      e.atkCd -= dt;
+    });
+
+    // ---- THE DEEPER DISCOVERY ----
+    if (!discovered && wallBroken >= 3 && sprite.position.z < -78){
+      discovered = true;
+      popup('DISCOVERY — THE OBELISK DRINKS FROM THE DEEP GATE. THE LOOP GOES DEEPER.', obelisk.position, true);
+      burst(obelisk.position, 0x8a2ab0, 20, 8);
+      setTimeout(() => {
+        phase = 'end';
+        const saved = refugees.filter(r => r.hp > 0).length;
+        showOverlay('THE LOOP CONTINUES',
+          'REFUGEES THROUGH THE BREACH: ' + saved + ' / 3<br>HOLLOW FELLED: ' + kills + '<br>BEHIND EVERY WALL, SOMETHING DEEPER.<br><br>Explore. Discover. Kindle. Manifest. Return. Repeat.');
+      }, 2600);
+    }
+
+    // ---- FX ----
+    shrineFlame.scale.y = 1 + Math.sin(et*8)*0.15;
+    wallHeart.rotation.z += dt*0.5;
+    obelisk.rotation.y += dt*0.6;
+    if (phase === 'manifest' && god.visible) swordG.rotation.z = -0.35 + Math.sin(et*1.5)*0.06;
+    for (let i=particles.length-1;i>=0;i--){
+      const p = particles[i];
+      p.vel.y -= 12*dt; p.m.position.addScaledVector(p.vel, dt);
+      p.m.rotation.x += 6*dt; p.life -= dt;
+      p.m.material.opacity = Math.max(0, p.life);
+      if (p.life <= 0){ scene.remove(p.m); particles.splice(i,1); }
+    }
+    updatePopups(dt);
+    updateCamera(dt);
+    renderer.render(scene, camera);
+  }
+  animate();
+
+  addEventListener('resize', () => {
+    camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
+    renderer.setSize(innerWidth, innerHeight);
+  });
+})();
+</script>
+</body>
+</html>
