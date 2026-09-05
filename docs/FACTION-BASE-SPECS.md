@@ -1,3 +1,5 @@
+> ⚠️ **SUPERSEDED (Sept 4 2026 — Giants & Sprites doctrine):** this Warcraft-grammar carved-titan spec is a HISTORICAL era document. Current art law: ART_DIRECTION.md v2.0 (LOTR-cinematic, primordial-max giants, fey-small sprites) + MYTHOS_CODEX.md giant-era canon. Retained for record only.
+
 # FACTION-BASE-SPECS — Body Archetype System (New Era)
 
 **Owner:** BudE404

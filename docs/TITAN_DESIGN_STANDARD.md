@@ -1,3 +1,5 @@
+> ⚠️ **SUPERSEDED (Sept 4 2026):** 30-ft carved-stone titan standard is retired. Current standard: PRIMORDIAL-MAX 100-ft raw elemental giants (ART_DIRECTION.md v2.0 + CODEX giant-era canon).
+
 # TITAN DESIGN STANDARD — "Not human. Not a portrait of a god. A TITAN."
 
 Lock date: Sept 3 2026 (BudE404 directive: titans, not really human, not merely deities)

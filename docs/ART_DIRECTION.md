@@ -1,84 +1,26 @@
-# MYTHOS GATES: ASCENSION — Art Direction (LOCKED by BudE404, Sept 3 2026)
+# MYTHOS ART DIRECTION v2.0 — THE GIANT ERA
 
-## Style Name
-**Stylized Dark Fantasy / "Blizzlike" Gothic Low-Poly** — Warcraft 3 meets Diablo.
+**Locked Sept 4 2026 by BudE404 — 'lets go with the lotr style.'** Supersedes the Style-A hand-painted/Warcraft direction entirely (v1 retained in git history).
 
-## Vibe
-- Chunky proportions, exaggerated armor and shoulders
-- Desaturated earthy tones: rusted iron, bruised purples
-- Grimdark atmosphere with high-contrast focal points
-- Hand-painted texture look, battle-worn surfaces
-- Mobile game ready (clean geometry, low-poly)
+## 1. THE LOOK — LOTR-CINEMATIC
+Photorealistic FILMIC realism: every image reads as a frame from a fantasy epic film shot on location. Grounded cinematic lighting, atmospheric depth haze, Weta Workshop practical-grit textures, IMAX widescreen composition, film grain, anamorphic framing. NOT cartoon, NOT painterly, NOT stylized-low-poly.
 
-## Prompt Templates
+**Base prompt frame:**
+> EPIC CINEMATIC FANTASY ART in the style of a LORD OF THE RINGS live-action film still — photorealistic filmic realism, Weta Workshop practical-grit realism, IMAX widescreen composition. NOT cartoon, NOT stylized.
 
-### 1. 3D Models (Meshy / AI 3D) — REQUIRES BudE404's go, reference art approval first
-> Stylized low-poly 3D game asset of a [unit], Warcraft 3 and Diablo aesthetic, chunky proportions, exaggerated armor and shoulders, hand-painted textured look, grimdark dark fantasy, clean geometry, mobile game ready --no hyperrealism, smooth clean metal
+## 2. THE GIANTS — PRIMORDIAL-MAX ANATOMY
+Deities render as colossal RAW ELEMENTAL GIANTS (100 ft): zero armor, pure living element. 'Never made — the element that decided to stand': half-conceived asymmetric anatomy (mountain-range mid-formation, zero human symmetry), eon-layered crust strata flaking to reveal the molten/elemental core, violent elemental arteries, constant element-shed, face half-emerged from the element, movement like geology. Awe-not-fear; worship declares divinity. Weapons per Gender-Role Binding: male = element-forged GREATSWORD, female = element-forged STAFF.
 
-Keywords: chunky proportions, exaggerated silhouette, Warcraft-style proportions, hand-painted texture style, stylized PBR, battle-worn, grimdark.
+**Composition law — HALF-ZOOM MID-SHOT:** camera at the giant's chest height, moderate distance, giant fills the central two-thirds full-figure, scenic faction landscape breathing around him, scale anchors mandatory (cities at ankle line, sprite processions as sparks against the shins).
 
-### 2. Concept Art & Promotional (Midjourney / DALL-E) — INDEPENDENT PIPELINE, never feeds 3D
-> Digital concept art, dark fantasy grimdark aesthetic, Warcraft 3 and Diablo style blend, chunky proportions, a [subject], moody atmospheric lighting, dramatic shadows, hand-painted digital brushstrokes texture, matte painting, rich desaturated color palette with glowing accents, cinematic composition, 8k --ar 16:9
+## 3. THE SPRITES — SERIOUS FEY AT 1-3 FT
+Mortals render as fey-small serious fey: lithe elongated proportions, sharp noble features, faction-palette armor and robes at their scale, element-touched glowing eyes. Never cute mascots. Sprite towns and craft build at their own scale. Reference canon: ASHFALL-FIRE-GIANT-CANON.jpg (Vharkar).
 
-Keywords: hand-painted digital art, concept art style, visible brushstrokes, volumetric fog, flickering torchlight, gothic gloom, heavy shadows.
+## 4. THE WORLD — ORIGINAL SIX REGIONS
+All environment art draws from MYTHOS_WORLD_BIBLE.md locations only (Emberwaste, Stormshards, Bloomward, Duskmere, Saltreach, Quakeveins, Heartland + the six realms). Divine Influence grammar: mortal architecture echoes its faction's GIANT (crucible-core hearth towers, storm-vane weathervanes, petal-crest rooflines, lantern-niche shrines, fin-buttressed harbors, crystal-crowned quake-villages). Dragons appear ONLY as wild fauna.
 
-### 3. Environment & World Art (Tiles, Props, Maps)
-> Stylized low-poly game environment asset of a [prop/tile], Warcraft 3 and Diablo style, hand-painted textures, dark fantasy grimdark, chunky bold shapes, modular isometric tile, optimized for mobile game
-
-Keywords: crumbling gothic architecture, rusted iron spikes, muddy battlefields, stylized low-poly environment, baked ambient occlusion, modular tile.
-
-## Pipeline Rules (standing)
-- Concept art and 3D assets are TWO INDEPENDENT pipelines — concept art NEVER feeds 3D generators.
-- All 3D work in-house (Blender + MiDaS/Open3D); Meshy.ai stays LOCKED without BudE404's explicit go.
-- Show BudE404 reference art BEFORE any 3D submission. Always.
-
-## Amendment 1 — Deity Concept Art Standards (LOCKED by BudE404, Sept 3 2026)
-
-All deity concept art MUST follow these in addition to the core style:
-
-1. **Cultural armor & weapons.** Every faction's gear draws from its realm's culture — materials, motifs, silhouettes, craftsmanship all reflect the realm they rule. Where realm culture is undefined, define it in the faction's cultural design doc FIRST (docs/lore/FACTION-XXX_CULTURAL_DESIGN.md), then design.
-2. **Unique looks, zero reuse.** Each of the 32 deities has a one-of-one silhouette, palette accent, and weapon identity. No two deities share a silhouette or armor language.
-3. **Divine, not heroic.** These are avatars of GODS, not mortal champions. Idealized, imposing, temple-statue presence. Female deities: seductive AND unmistakably divine — allure expressed through divine confidence and grandeur, never mortal/casual styling.
-4. **30-foot-tall scale via background.** Convey titanic size through the environment: mortals/temples/palms rendered tiny at their feet, low-angle or forced-perspective composition, doors and steps they dwarf. Scale cues are mandatory in every deity concept.
-
-### Updated Concept Prompt Template (Deities)
-> Digital concept art, dark fantasy grimdark aesthetic, Warcraft 3 and Diablo style blend, chunky proportions, full-body concept of [DEITY], [ROLE] of [REALM CULTURE], [CULTURAL ARMOR/WEAPON NOTES], hand-painted digital brushstrokes, moody atmospheric lighting, dramatic shadows, rich desaturated palette with glowing accents, TITANIC SCALE — 30 feet tall, low-angle shot, tiny mortals and temples at their feet, cinematic composition, front view, 8k --ar 16:9
-
-## Amendment 2 — Avatar Identity System (BudE404, Sept 3 2026, in review)
-
-### Bans (LOCKED)
-- **No pauldrons / shoulder pads.** None, on any deity.
-- **No structural armor or weapons.** Nothing that reads as architecture (obelisks, monuments, buildings). Gear is functional, not architectural.
-
-### Avatar Identity — "Godflesh" proposal (awaiting BudE404 verdict)
-All 32 deities are physical avatars of their gods walking the mortal realm. They read as ONE species of divine being:
-1. **Shared substrate:** every avatar's body is "godflesh" — a single divine material language (polished, faintly glowing seams along musculature) so they clearly belong to the same order of being.
-2. **Faction tint:** the godflesh substrate takes a material + glow color per faction (e.g. F001 Meridian Court = bronze body, molten amber seams).
-3. **Per-deity identity:** silhouettes, faces, eye glow intensity, hair/crown motifs, robes/draperies, and their tool/weapon are one-of-one per deity.
-4. **Per-deity effects:** each deity carries their own domain FX (light, heat, wind, shadow, glass shimmer...) layered on top of the shared substrate — so the base is uniform and the expression is unique.
-
-## Amendment 2 Revision — TITAN LORE (LOCKED by BudE404, Sept 3 2026)
-
-The avatars are **TITANS manifested into the mortal realm to represent their deity** — they are not the gods' true forms. Consequences for the identity system:
-
-1. **Shared species:** all 32 avatars are titans — one shared titan substrate (the godflesh base is now titan-flesh: massive, polished divine body material with faint glowing seams). They read as the same order of being because they ARE the same order of being.
-2. **Manifestation, not portrait:** a titan expresses its deity's ASPECTS (domain, symbols, temperament, effects) — not the god's literal appearance. Design freedom per deity is wide as long as the domain reads.
-3. **Faction tint + per-deity effects** (Amendment 2) unchanged — they layer on the shared titan substrate.
-4. Scale (30 ft, Amendment 1) is now lore-accurate: titans manifested into the mortal realm dwarf mortals and their works by nature.
-
-## Amendment 3 — Canon Consistency (LOCKED by BudE404, Sept 3 2026)
-
-1. **Weapons in concept art MUST be the in-game weapons.** Source of truth: `data/deities/mg_deity_XXX.json` → `weapon` field. No substitute or approximated weapons in any deity concept.
-2. **Representation must read instantly.** Each titan's deity identity (epithet + lore_identity fields) must be legible in the concept without a caption.
-
-F001 canon weapons (from deity registry):
-- Khaveth, the Measured Light — The Amber Verdict (beam-scale staff) — weighs deeds in light
-- Djekhur, the Ashen Gale — Dunemaw (crescent maul) — the desert's anger
-- Shemris, the Glasswind — Semblance (shimmer-spun bow) — heat-shimmer goddess
-- Amekhet, the Sunless Eye — Crescent Veil (paired sickle-daggers) — the shade cast at perfect noon
-
-## Amendment 4 — Cultural Origin Styling (LOCKED by BudE404, Sept 3 2026)
-
-The titans carry ORIGINAL lore, but their design must visually resemble the REAL-WORLD culture their faction/deity is geographically based on. Khaveth and the Amber Verdict get full Egyptian styling. This applies to all future deity concepts: mine the faction's cultural source (garments, motifs, materials, silhouettes) — the lore stays ours, the aesthetic stays true to its origin.
-
-Egyptian styling palette for F001: kohl-lined eyes, gold + bronze + lapis tones, linen (shendyt kilt, nemes-style headcloth), broad usekh collar, scarab / sun-disc / ankh motifs on the weapon (engraved, not architectural).
+## 5. STANDING LAWS (unchanged)
+- Unified faction palette: two base colors + one accent family; every glow source in an image reads as the same element.
+- ZERO emblems, ZERO sigils on giants. ABSOLUTE TEXT BAN in all generations: no letters, no numbers, no deity names/titles in prompts (renders as title-card text).
+- Concept art and 3D assets remain two independent pipelines; never feed concept art into 3D generation.
+- Scale anchors mandatory (min 3 per image).

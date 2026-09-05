@@ -107,7 +107,7 @@ Colossi are now TRUE DRAGONS (True Dragon Vessel Law). Dragon-unit rebasing:
 
 **ANIMATION NOTE (pipeline debt, deferred per BudE404):** dragon anims do NOT come from the Mixamo humanoid library — custom rig path TBD at pipeline time; humans keep the locked Meshy→Mixamo flow. Game-feel laws (weight = timescale, trauma cam, cratering) carry over 1:1 to quadruped mass.
 
-**HUMAN ASPECT COMBAT:** unchanged — the four class chassis (duelist blade / caster staff / assassin blades / archer bow) play at mortal scale against T1/T2. Human kits = the RPG layer; dragon kit = the event/power layer.
+**SPRITE-VESSEL COMBAT (re-cast Sept 4 2026, formerly 'human aspect combat'):** unchanged — the four class chassis (duelist blade / caster staff / assassin blades / archer bow) play at mortal scale against T1/T2. Human kits = the RPG layer; dragon kit = the event/power layer.
 
 
 ## 7. GIANT REBASE (Sept 4 2026, BudE404 — Giants & Sprites Doctrine; supersedes §6's dragon specifics, numbers carry)

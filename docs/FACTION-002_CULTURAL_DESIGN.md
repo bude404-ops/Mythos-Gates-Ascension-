@@ -1,3 +1,5 @@
+> ⚠️ **SUPERSEDED (Sept 4 2026):** real-world-culture factions (Norse/Greek/Japan/Egypt) retired — Mythos now uses original six-element regions (MYTHOS_WORLD_BIBLE.md). Historical record only.
+
 # FACTION-002 CULTURAL DESIGN — STORMMOOT (Norse)
 
 Lore is original; the aesthetic is authentic Norse. No historical god names — the titans are ours, the visual language is the North Atlantic.

@@ -1,3 +1,5 @@
+> ⚠️ **SUPERSEDED (Sept 4 2026 — Giants & Sprites doctrine):** fused-armor four-layer formula retired — giants are RAW ELEMENTAL, zero armor. Current law: CODEX giant-era canon + ART_DIRECTION.md v2.0.
+
 # COLOSSUS DESIGN DOCTRINE — LOCKED CANON (BudE404, Sept 4 2026)
 
 Supersedes all prior armor/styling guidance. Applies to ALL factions (F001–F006) and every future Colossal roll.

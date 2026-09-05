@@ -2,7 +2,8 @@
 
 **Owner:** BudE404
 **Built by:** BIGagent404 (commissioned Sept 4 2026)
-**Integrates:** Mythos Codex v2.1, Avatar Doctrine, Dual Vessel Doctrine, Weapon Chassis Law, Hollow Scope, Combat Spec, Female-Titan Laws, Human Aspect Realism Law
+**Integrates:** Mythos Codex v2.1, Giants & Sprites Doctrine, Dual-Scale Play, Weapon Chassis Law, Hollow Scope, Combat Spec, Female-Titan Laws, Sprite Vessel Law
+**REVISED v2.0 (Sept 4 2026):** re-cast to the GIANTS & SPRITES doctrine — deities are colossal raw elemental GIANTS, mortals are fey-small SPRITES (1-3 ft), the player's small vessel is sprite-scale. All 8 approved verdict points and the five-beat rhythm carry over unchanged.
 **Status:** CANON — v1.1 (all 8 verdict points approved Sept 4 2026)
 
 ---
@@ -17,45 +18,45 @@ Ages passed. The six grew into their realms — and forgot the Hollow. Its priso
 
 No god may cross a Gate. But a god may shape a VESSEL that can — and that is the game.
 
-**You play the aspect.** A deity's power poured into a human-shaped vessel — actually human looking, walking dungeons, towns, and wilds among real mortals — gathering belief, hunting fractures, doing the work only someone mortal-scale can do. And when the Hollow surges, you call your deity's COLOSSAL AVATAR through the Gate and fight the open war as a 30-foot draconian colossus.
+**You play the vessel.** A deity's power poured into a SPRITE-SHAPED vessel — fey-small, walking dungeons, towns, and wilds among the real sprite peoples of Mythos — gathering belief, hunting fractures, doing the work only someone mortal-scale can do. And when the Hollow surges, you call your deity's GIANT through the Gate and fight the open war as a hundred-foot primordial colossus of raw living element.
 
-Two vessels. One god. Both are you.
-
----
-
-## II. THE TWO VESSELS — WHY BOTH EXIST (lore-lock)
-
-Per the Dual Vessel Doctrine, the in-world logic:
-
-- **THE GREAT CROSSING:** A colossal avatar requires a Gate thrown wide — an event of worship, a full fracture, a war-calling. Colossi only walk when the situation is big enough to justify the crossing.
-- **THE NARROW WAYS:** Mortals live at mortal scale — in dungeon depths, shrine villages, pilgrim roads, sunken quarters. A 30-foot colossus cannot enter a crypt, question a villager, or walk a market street without turning faith into terror. So each deity learned to shape a SECOND vessel: the HUMAN-SIZED ASPECT — a compression of divine power into a human frame, human-faced, human-scaled, wearing the same First Forge Aetherium (armor too massive for any mortal knight — the divine weight visible even in a small vessel), wielding the same relic weapons recast at mortal size.
-- **THE ASPECT LAW (canon from the Human Aspect Realism direction):** The aspect is human LOOKING — real face, real skin, ember-glow eyes as the only divine tell. Mortals who meet the aspect feel they have met "someone too heavy for the world." The armor's exaggeration IS the tell: no human smith could balance it.
-- **GEAR = CHOICE (canon from the Weapon Chassis Law):** The aspect's armor and weapon mirror what the PLAYER chooses. In-world: a deity shapes its vessel's arms to suit the work — warrior's greatsword, caster's staff, assassin's twin blades, archer's bow. The weapon trees ARE the aspect's armory; every named relic weapon in the codex is a tree-topper waiting to be claimed.
+Two scales. One god. Both are you.
 
 ---
 
-## III. THE PLAYER'S ROLE — THE ASPECT-BOUND
+## II. THE TWO SCALES — WHY BOTH EXIST (lore-lock)
 
-The campaign frames the player as a mortal champion BEARING a deity's aspect (or, simpler and equally canon: AS the aspect itself — recommend the second for player-power fantasy). Design stance:
+Per the Dual-Scale Play doctrine (formerly Dual Vessel), the in-world logic:
 
-- **In human content**, the player IS the human-sized aspect: dungeons, quests, missions, towns, story scenes.
-- **In war content**, the player summons and becomes the colossal avatar: campaign battles, wave sieges, world bosses.
+- **THE GREAT CROSSING:** A giant requires a Gate thrown wide — an event of worship, a full fracture, a war-calling. Giants only walk when the situation is big enough to justify the crossing.
+- **THE NARROW WAYS:** Mortals live at sprite scale — in dungeon depths, shrine villages, pilgrim roads, sunken quarters, all built at fey-small size. A hundred-foot giant cannot enter a crypt, question a villager, or walk a market street without turning faith into terror. So each deity learned to shape a SECOND vessel: the SPRITE-SCALE VESSEL — a compression of divine power into a fey-small frame, appearing as one of the sprite folk, wearing faction-palette fey gear at their scale, wielding class-chassis weapons recast at sprite size. The divine tell is subtle: an ember-warm presence, element-touched eyes that glow a shade too steady — 'one of us, but the fire does not flicker.'
+- **THE VESSEL LAW (supersedes Human Aspect Realism under the Giants & Sprites doctrine):** The sprite vessel is sprite LOOKING — real fey features, element-touched glowing eyes as the divine tell. Sprites who meet the vessel feel they have met "someone too heavy for the world." The presence IS the tell: the fire does not flicker.
+- **GEAR = CHOICE (canon from the Weapon Chassis Law):** The sprite vessel's armor and weapon mirror what the PLAYER chooses. In-world: a deity shapes its vessel's arms to suit the work — warrior's greatsword, caster's staff, assassin's twin blades, archer's bow. The weapon trees ARE the aspect's armory; every named relic weapon in the codex is a tree-topper waiting to be claimed. NOTE the binding split: GIANT forms follow the Gender-Role Binding (male = element-forged greatsword, female = element-forged staff); the SPRITE vessel freely wields the full class chassis (blade, staff, twin blades, bow) — the vessel is the deity shaped to mortal work, and mortal work has four trades.
+
+---
+
+## III. THE PLAYER'S ROLE — THE VESSEL-BOUND
+
+The campaign frames the player as a sprite of the mortal world who is secretly the deity's sprite-scale vessel (canon ruling: AS the vessel itself — no mortal-champion intermediary). Design stance:
+
+- **In sprite content**, the player IS the sprite-scale vessel: dungeons, quests, missions, towns, story scenes — playing at fey-small scale among the sprite peoples.
+- **In war content**, the player summons and becomes the GIANT: campaign battles, wave sieges, world bosses — a hundred feet of raw primordial element.
 - **THE FAITH LOOP binds them:** Mortal deeds generate FAITH. Faith feeds the Gates. Gate integrity determines colossal availability and power. Quest in the small world → fuel the big war. Win the big war → shrines relight, towns grow, quests unlock. The two scales feed each other — that is the game's spine.
 
-**Avatar death rule (canon-compliant):** If your colossal falls in battle, your deity's voice goes silent in Mythos until the vessel is RE-FORGED — a faith cost, not a money cost. In-world it's grief; in systems it's a respawn timer measured in belief.
+**Avatar death rule (canon-compliant):** If your giant falls in battle, your deity's voice goes silent in Mythos until the vessel is RE-FORGED — a faith cost, not a money cost. In-world it's grief; in systems it's a respawn timer measured in belief.
 
 ---
 
 ## IV. THE STORY — THREE ACTS
 
-### ACT I — THE FLICKERING (Cinderlands campaign)
-The Cinder Gate in the great desert flickers for the first time in an age. Ashfall's kept pair — VHARKAR the Furnace Warden and VESSKRA the Kiln Mother — send aspects into Mythos. The player begins bonded to the Cinderlands (tutorial faction): first fractures in the ash-glass wastes, first T1 spawn swarms, first dungeon (see Faction Campaigns), first Gate thrown wide for the first colossal summon. Act I closes with the faction's first T3 world boss — a HOLLOW BRUTE wearing the shape of a dead furnace-god the mortals stopped believing in — and the revelation: fractures are not random. Something inside the Hollow is choosing where to break through.
+### ACT I — THE FLICKERING (Ashfall campaign)
+The Cinder Gate above Forgefall, in the Emberwaste, flickers for the first time in an age. Ashfall's kept pair — VHARKAR the Furnace Warden and VESSKRA the Kiln Mother — send their sprite vessels into Mythos. The player begins bonded to Ashfall (tutorial faction): first fractures in the ash-glass wastes, first T1 spawn swarms, first dungeon (see Faction Campaigns), first Gate thrown wide for the first giant crossing. Act I closes with the faction's first T3 world boss — a HOLLOW BRUTE wearing the shape of a dead furnace-god the mortals stopped believing in — and the revelation: fractures are not random. Something inside the Hollow is choosing where to break through.
 
 ### ACT II — THE SIX GATES
-Fractures bloom across every realm's Gate. The player travels Mythos unlocking factions (see Faction Campaigns): each faction chapter = its realm's gate, its kept deity pair, its signature dungeons, its world boss, its belief-crisis. Recurring thread: at each Gate, the player finds evidence of the FORGOTTEN — the deity trapped in the void during the original imprisonment, resentful, patient, breaking its cage from inside. The Hollow is not a force. It is a GRUDGE.
+Fractures bloom across every realm's Gate. The player travels Mythos unlocking factions (see Faction Campaigns): each faction chapter = its region's gate, its kept deity pair, its signature dungeons, its world boss, its belief-crisis. Recurring thread: at each Gate, the player finds evidence of the FORGOTTEN — the deity trapped in the void during the original imprisonment, resentful, patient, breaking its cage from inside. The Hollow is not a force. It is a GRUDGE.
 
 ### ACT III — THE FORGOTTEN
-The endgame. The fractures converge on a place no map holds: the first Gate, the one built before the six, where the Forgotten was sealed by its siblings' combined vigilance. The six realms must throw all six Gates wide at once — the first Great Crossing since creation — to field every kept avatar together. Final confrontations against the Forgotten's shards (T3 duels, one per realm, re-fightable as endgame raids), then the Forgotten itself. Ending choice (open design question for BudE404): belief restored and the Forgotten forgiven back into the six — or the wound cauterized, the Hollow emptied, and the Gates closed forever, gods and mortals finally separate.
+The endgame. The fractures converge on a place no map holds: the first Gate, the one built before the six, where the Forgotten was sealed by its siblings' combined vigilance. The six factions must throw all six Gates wide at once — the first Great Crossing since creation — to field all the giants together. Final confrontations against the Forgotten's shards (T3 duels, one per realm, re-fightable as endgame raids), then the Forgotten itself. Ending choice (open design question for BudE404): belief restored and the Forgotten forgiven back into the six — or the wound cauterized, the Hollow emptied, and the Gates closed forever, gods and mortals finally separate.
 
 ---
 
@@ -63,28 +64,28 @@ The endgame. The fractures converge on a place no map holds: the first Gate, the
 
 Every faction chapter runs the same five-beat rhythm:
 
-1. **NARROW ENTRY (human aspect):** Story quests in mortal spaces — the gate-town, its people, its dying shrine. Learn the belief-crisis. First faith missions.
-2. **FRACTURE HUNTS (human aspect):** Dungeons at human scale. T1 trash, T2 elites, a dungeon boss. Each cleared fracture seals a seam and feeds the Gate.
-3. **THE THROWING OF THE GATE (colossal avatar):** First colossal summon of the chapter — a wave siege defending the Gate or the gate-town. T1 ant-swarms for scale contrast, T2 brutes, chapter mini-boss.
-4. **VOW QUESTS (human aspect):** The chapter's deep dungeon — recover the named relic (signature weapon-tree topper for its class). E.g., Cinderlands: recover the EMBERWAKE BOW (archer tree-topper) and the SCALE-CHAIN (assassin tree-topper) from Hollow-nested vaults.
-5. **THE WORLD BOSS (colossal avatar):** Chapter finale T3 — full phase duel (66%/33%). Beat = faction chapter complete, next realm opens, kept pair's human aspects fully unlocked for free-play.
+1. **NARROW ENTRY (sprite scale):** Story quests in sprite spaces — the gate-town, its people, its dying shrine. Learn the belief-crisis. First faith missions.
+2. **FRACTURE HUNTS (sprite scale):** Dungeons at fey-small scale. T1 trash, T2 elites, a dungeon boss. Each cleared fracture seals a seam and feeds the Gate.
+3. **THE THROWING OF THE GATE (giant mode):** First giant crossing of the chapter — a wave siege defending the Gate or the gate-town. T1 ant-swarms for scale contrast, T2 brutes, chapter mini-boss.
+4. **VOW QUESTS (sprite scale):** The chapter's deep dungeon — recover the named relic (signature weapon-tree topper for its class). E.g., Cinderlands: recover the EMBERWAKE BOW (archer tree-topper) and the SCALE-CHAIN (assassin tree-topper) from Hollow-nested vaults.
+5. **THE WORLD BOSS (giant mode):** Chapter finale T3 — full phase duel (66%/33%). Beat = faction chapter complete, next realm opens, kept pair's sprite vessels fully unlocked for free-play.
 
 **THE BUILT WORLD (Sept 4 2026, BudE404 — LOCKED):** Mortal Mythos is built in the gods' image — worship-by-evidence made permanent in architecture and craft. Every region's gate-towns, shrines, and monuments visibly echo their faction's deities — the raw elemental GIANTS — and the world's dragon fauna (kept as regional wild beasts): dragon-prow ships and storm-vane weathervanes in the Nordic fjord towns, crucible-core hearth towers in the kiln-cities, petal-crest rooflines on the bloom-temples, lantern-niche shrines on the black-water isles, fin-buttressed harbors on the drowned coast, crystal-crowned quake-villages in the mountain spine. Environment art carries the Divine Influence grammar everywhere mortals live.
 
-**Free-play after campaign:** fracture outbreaks recur (live loop), dungeons re-run at tiers, world bosses recycle with modifiers, all 12 kept deities playable across both vessels, weapon trees continue through endgame branches.
+**Free-play after campaign:** fracture outbreaks recur (live loop), dungeons re-run at tiers, world bosses recycle with modifiers, all kept deities playable across both scales, weapon trees continue through endgame branches.
 
 **Mobile-first note:** tap-to-move at both scales; ability buttons per class; FAITH as the single visible resource bar in both scales.
 
 ---
 
-## VI. QUEST & MISSION TYPES (human-scale content menu)
+## VI. QUEST & MISSION TYPES (sprite-scale content menu)
 
 - **FAITH MISSIONS:** relight shrines, protect pilgrim roads, answer prayers in gate-towns. Output: FAITH (Gate integrity).
-- **FRACTURE HUNTS:** dungeon clears at mortal scale — the Hollow's human-sized spawn. Output: seals, gear materials.
-- **VOW QUESTS:** deep-dungeon relic recoveries. Output: signature weapons (tree toppers), aspect armor pieces.
-- **RELIC SALVAGE:** recover First Forge Aetherium from fallen/dead avatar sites (world lore: every ancient battlefield holds relic shards). Output: weapon-tree advancement currency.
-- **WITNESS MISSIONS:** escort or defend mortals who WITNESS a colossal battle — belief spreads by evidence. Output: global faith multiplier events (ties to worship-by-evidence canon).
-- **ASPECT TRIALS:** optional skill dungeons — the deity tests its own vessel. Output: mastery cosmetics + talent points.
+- **FRACTURE HUNTS:** dungeon clears at sprite scale — the Hollow's fey-sized spawn. Output: seals, gear materials.
+- **VOW QUESTS:** deep-dungeon relic recoveries. Output: signature weapons (tree toppers), vessel gear pieces.
+- **RELIC SALVAGE:** recover GODSHARDS from fallen-giant sites (world lore: when a giant falls, its element pools and cools — every ancient battlefield holds cooled god-element). Output: weapon-tree advancement currency.
+- **WITNESS MISSIONS:** escort or defend sprites who WITNESS a giant battle — belief spreads by evidence. Output: global faith multiplier events (ties to worship-by-evidence canon).
+- **VESSEL TRIALS:** optional skill dungeons — the deity tests its own vessel. Output: mastery cosmetics + talent points.
 
 ---
 
@@ -94,7 +95,7 @@ Every faction chapter runs the same five-beat rhythm:
 - **Gate:** the Cinder Gate, great desert. **Crisis:** the ash-glass kiln-cities cool; smiths' prayers go unanswered as the forge-faith fades.
 - **Dungeons:** THE GLASS KILN (first dungeon, Hollow spawn in a dead foundry-city), THE SUNKEN ANVIL (Vow Quest vault holding the Scale-Chain), THE EMBER WAKE (Vow Quest vault holding the Emberwake Bow).
 - **World boss:** THE COLD FURNACE — a shard wearing the shape of a forgotten forge-god, armor of frozen drips, cold where there should be heat.
-- **Kept-pair story:** Vharkar's aspect walks as a furnace-judge restoring the kiln-cities' oaths; Vesskra's walks as the kiln-mother midwifing new faith in the foundling shrines.
+- **Kept-pair story:** Vharkar's sprite vessel walks as a furnace-judge restoring the kiln-cities' oaths; Vesskra's walks as the kiln-mother midwifing new faith in the foundling shrines.
 
 ### F2 AIR — SKYREND (proposal: Haeldir + Sylwen kept; Yrdis & Naeria = tree skins)
 - **Gate:** the Storm Gate, frozen fjord north. **Crisis:** the winds go silent — storms die mid-birth, and the north's weather-readers lose their gift.
@@ -130,18 +131,18 @@ Every faction chapter runs the same five-beat rhythm:
 
 Per the Hollow Scope, three tiers, mapped at BOTH scales:
 
-- **T1 VOID SPAWN (both scales):** ants — one-tap, ragdoll, swarm for scale contrast. Human-scale versions: crawling fracture-mites and hollow-eyed husks in dungeons. Colossal-scale: tide-swarms at the avatar's ankles.
+- **T1 VOID SPAWN (both scales):** ants — one-tap, ragdoll, swarm for scale contrast. Sprite-scale versions: crawling fracture-mites and hollow-eyed husks in dungeons. Giant-scale: tide-swarms at the giant's ankles.
 - **T2 FRACTURE BRUTES (both scales):** 3–6 hits to stagger. Distinct silhouettes — a brute is a wound given a body.
-- **T3 WORLD BOSSES (colossal scale) + DUNGEON BOSSES (human scale):** full duels; the T3s are the Forgotten's shards wearing the shapes of gods mortals stopped believing in. Every world boss is a DEAD FAITH made flesh — that is the design thesis, and it makes each kill a story beat: kill the lie, relight the truth.
+- **T3 WORLD BOSSES (giant scale) + DUNGEON BOSSES (sprite scale):** full duels; the T3s are the Forgotten's shards wearing the shapes of gods mortals stopped believing in. Every world boss is a DEAD FAITH made flesh — that is the design thesis, and it makes each kill a story beat: kill the lie, relight the truth.
 - **The Forgotten (endgame):** not fought as a unit — fought as a CAMPAIGN. Its shards are its HP bar.
 
 ---
 
 ## IX. MONETIZATION STRUCTURE (per the Dual Vessel Doctrine's depth goal)
 
-- **COLOSSAL SKINS:** per deity, per faction (24-model catalog: 12 colossal + 12 aspect base models with skin lines over each).
-- **ASPECT GEAR SKINS:** the human aspect wears player choice — armor skin lines + class-chassis weapon skins (the weapon trees ARE the monetizable gear catalog, since gear is visible at mortal scale).
-- **EFFECTS:** two slots per vessel — colossal-scale (wing glow, summon FX, slam shockwaves) and aspect-scale (weapon trails, walk embers).
+- **GIANT SKINS:** per deity, per faction (the giant-form catalog with skin lines over each).
+- **VESSEL GEAR SKINS:** the sprite vessel wears player choice — armor skin lines + class-chassis weapon skins (the weapon trees ARE the monetizable gear catalog, since gear is visible at sprite scale).
+- **EFFECTS:** two slots per scale — giant-scale (gate-flare on summon, elemental burst FX, slam shockwaves) and sprite-scale (weapon trails, walk embers).
 - **TREE SKIN IDENTITIES:** Sorvath (archer) and Ozruv (assassin) sets in Cinderlands — the named tree-skin pattern repeats per faction, so every class everywhere has a hero to buy.
 - Nothing gameplay-affecting: belief is earned, cosmetics are bought. FAITH stays free.
 
@@ -149,11 +150,11 @@ Per the Hollow Scope, three tiers, mapped at BOTH scales:
 
 ## X. WHAT THIS BIBLE LOCKS / WHAT STAYS OPEN
 
-**LOCKED by existing canon:** world origin, Gates, Hollow origin, Avatar Doctrine, Dual Vessel, Weapon Chassis, Human Aspect Realism, Hollow 3-tier, FAITH resource, worship-by-evidence, avatar-death = silence until re-forged, 1M+1F per faction, kept F1 pair.
+**LOCKED by existing canon:** world origin, Gates, Hollow origin, Giants & Sprites Doctrine, Dual-Scale Play, Weapon Chassis, Sprite Vessel Law (supersedes Human Aspect Realism), Hollow 3-tier, FAITH resource, worship-by-evidence, giant-death = silence until re-forged, 1M+1F per faction, kept F1 pair.
 
 **CANONIZED (Sept 4 2026, BudE404 — 'Approve yeah'):** All eight proposed points are LOCKED as canon:
-1. PLAYER = THE HUMAN ASPECT ITSELF — the deity in a small vessel; no mortal-champion intermediary.
-2. THE NARROW WAYS — human aspects exist because colossi cannot walk mortal spaces without turning faith into terror. Canon.
+1. PLAYER = THE DEITY'S SPRITE-SCALE VESSEL ITSELF — the deity in a small vessel; no mortal-champion intermediary. (Same ruling, re-cast from human aspect to sprite vessel under the Giants & Sprites doctrine.)
+2. THE NARROW WAYS — sprite vessels exist because giants cannot walk mortal spaces without turning faith into terror. Canon.
 3. THE FORGOTTEN'S MOTIVE — the Hollow is a GRUDGE: the trapped deity patiently breaking its cage. Canon endgame identity.
 4. THE ENDING CHOICE — Act III offers forgive-the-Forgotten vs. cauterize-the-wound (dual-ending design space open; final call at production of Act III).
 5. THE FIVE-BEAT CHAPTER RHYTHM — Narrow Entry → Fracture Hunts → Throwing of the Gate → Vow Quests → World Boss. Canon for all six factions.
@@ -162,9 +163,9 @@ Per the Hollow Scope, three tiers, mapped at BOTH scales:
 8. QUEST MENU — Faith Missions, Fracture Hunts, Vow Quests, Relic Salvage, Witness Missions, Aspect Trials. Canon content menu.
 
 **THE VESSEL CHOICE RULE (Sept 4 2026, BudE404 — LOCKED):**
-- IN-CAMPAIGN: the story dictates the vessel — chapter beats summon the colossal and walk the aspect per the five-beat rhythm.
-- BETWEEN CAMPAIGNS AND OUTSIDE CAMPAIGN (free-play): VESSEL IS PLAYER CHOICE — play the human aspect or the colossal avatar freely in the open world.
-- TOWER WAVES (new event mode, canon): a dedicated wave-defense event — the COLOSSAL avatar stands its ground at a Gate, shrine, or gate-town against escalating Hollow waves: T1 swarm floors scaling in density, T2 brute waves at milestones, a boss wave every 10th floor (T2 elite leads; every 30th floor a shard-flavored T3 duel floor). Rewards: FAITH + relic salvage + weapon-tree advancement. Repeatable, leaderboard-scored, the wave-siege gameplay formalized as a standalone event.
+- IN-CAMPAIGN: the story dictates the scale — chapter beats summon the giant and walk the sprite vessel per the five-beat rhythm.
+- BETWEEN CAMPAIGNS AND OUTSIDE CAMPAIGN (free-play): VESSEL IS PLAYER CHOICE — play the sprite vessel or the giant freely in the open world.
+- TOWER WAVES (new event mode, canon): a dedicated wave-defense event — the GIANT stands its ground at a Gate, shrine, or gate-town against escalating Hollow waves: T1 swarm floors scaling in density, T2 brute waves at milestones, a boss wave every 10th floor (T2 elite leads; every 30th floor a shard-flavored T3 duel floor). Rewards: FAITH + relic salvage + weapon-tree advancement. Repeatable, leaderboard-scored, the wave-siege gameplay formalized as a standalone event.
 
 ---
-*Companion docs: MYTHOS_CODEX.md (roster/doctrine law), COLOSSUS_COMBAT_SPEC.md (T1–T3 numbers), GAMEFEEL_TOP3_SPEC.md (weight/impact), FACTION-BASE-SPECS.md (art grammar).*
+*Companion docs: MYTHOS_CODEX.md (roster/doctrine law), COLOSSUS_COMBAT_SPEC.md (T1–T3 numbers + §7 Giant Rebase), GAMEFEEL_TOP3_SPEC.md (weight/impact), MYTHOS_WORLD_BIBLE.md (world + Sprite Law), QUEST_EXAMPLE_EMBERHOLLOW.md (worked quest loop).* FACTION-BASE-SPECS.md is superseded-era art grammar (historical).

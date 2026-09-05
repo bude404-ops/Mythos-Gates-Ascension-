@@ -4,7 +4,7 @@
 **Canon v1.0 — Sept 4 2026, BudE404 directive: pets/sprites of each elemental region for the human side, with abilities, levels, and skin monetization. Companion to GAMEPLAY_DOCTRINE.**
 
 ## I. LORE — why sprites exist (and why the Hollow fears them)
-When the gods walked Mythos in the Walking Age, their element POOLED behind them — little eddies of divine essence left in footprints, hearths, storms, petals, lanterns, tidepools, crystal seams. Over ages those eddies woke: tiny living motes of a region's tension — SPRITES. They imprint on mortals the way mortals imprint on gods, and follow a human aspect because a god in a small shape is the best thing a small god can imagine.
+When the gods walked Mythos in the Walking Age, their element POOLED behind them — little eddies of divine essence left in footprints, hearths, storms, petals, lanterns, tidepools, crystal seams. Over ages those eddies woke: tiny living motes of a region's tension — SPRITES. They imprint on mortals the way mortals imprint on gods, and follow a sprite-scale vessel because a god in a small shape is the best thing a small god can imagine.
 
 **DEEP TRUTH (deep-lore tie):** sprites cannot be hollowed. They are already almost nothing — pure witness with a wisp of element. The Hollow needs substance to erase and a sprite is mostly LOOKING. Where a sprite floats, Grimlights will not spawn (they are the Witness mechanic made pocket-sized). No one in-world knows this. The gate-finches are descended from them — that is why the finches never sleep.
 

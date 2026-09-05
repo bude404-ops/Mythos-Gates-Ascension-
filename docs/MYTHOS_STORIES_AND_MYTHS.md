@@ -26,8 +26,8 @@ A far region lost its harvests, then its people, then its belief. Its Gate thinn
 ## B. THE FACTION CYCLES (region-founding legends)
 
 ### ASHFALL — "THE BARGAIN OF THE KILN"
-Forgefall's founders found the Cinder Gate but no flame hot enough to work it. The Kiln Mother's human aspect walked among them unrecognized — a woman who never seemed to feel the heat — and showed them how to build a kiln that breathes. The Crucible Core at the heart of Forgefall's great hearth is said to hold the first ember she gifted. The forge-masters' oath: "The kiln gives back what you give it — so give it everything."
-**ART SCENE:** Vesskra's human aspect standing in the first kiln-hall, lantern-lit, teaching smiths whose faces show the moment of realization.
+Forgefall's founders found the Cinder Gate but no flame hot enough to work it. The Kiln Mother's sprite vessel walked among them unrecognized — a fey who never seemed to feel the heat — and showed them how to build a kiln that breathes. The Crucible Core at the heart of Forgefall's great hearth is said to hold the first ember she gifted. The forge-masters' oath: "The kiln gives back what you give it — so give it everything."
+**ART SCENE:** Vesskra's sprite-scale vessel standing in the first kiln-hall, lantern-lit, teaching smiths whose faces show the moment of realization.
 
 ### SKYREND — "THE NAMING OF THE STORMS"
 The Stormshards name every storm like a family member because one once carried the Squall Gate's bell-tone to every isle in a single night, warning the archipelago before the wave came. They say the Wind-Singers of Gaileshollow learned song from the sound a storm giant's stride makes in a thunderhead. Every roof carries a storm-vane so "the sky knows we are still listening."
@@ -67,7 +67,7 @@ A Storm Giant does not rule the Stormshards; he HERALDS them. The Circuit: when 
 
 1. **THE SILENT COAST** — Marenth's far isles go quiet; no lanterns, no fish, no birds. (First campaign mission; horror tone.)
 2. **THE GATE MUST HOLD** — the first Tower Wave: a giant god holding a Gate against the Tide while mortals evacuate behind it. (The core gameplay fantasy, made story.)
-3. **THE NARROW WAYS** — the human aspects walk the Heartland to rally the Six-Way Concord, since giants cannot enter the Concord without breaking its neutrality. (Human-aspect gameplay, justified in lore.)
+3. **THE NARROW WAYS** — the sprite vessels walk the Heartland to rally the Six-Way Concord, since giants cannot enter the Concord without breaking its neutrality. (Human-aspect gameplay, justified in lore.)
 4. **THE EMPTY PEDESTAL** — the Hollow's tide reaches the Concorde. The pedestal is empty. The question the whole world has avoided is now the only one left: does anyone say the Forgotten's name?
 5. **THE SIX GATES** — the endgame: all six Gates ignite in the Faith Loop as one; the Hollow is pushed back beyond the seam. The Forgotten's fate = the sequel hook (redeemed? renamed? or does it choose the void again?).
 

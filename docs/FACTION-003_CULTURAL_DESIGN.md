@@ -1,3 +1,5 @@
+> ⚠️ **SUPERSEDED (Sept 4 2026):** real-world-culture factions retired — original six-element regions now canon (MYTHOS_WORLD_BIBLE.md). Historical record only.
+
 # FACTION-003 CULTURAL DESIGN — LAUREL-SKY (Greek Agon)
 
 Lore is original; the aesthetic is authentic Greek. No historical god names — the titans are ours, the visual language is the Hellenic agon (contest/trial) world: marble arenas, bronze panoply, laurel, verdict-storms.

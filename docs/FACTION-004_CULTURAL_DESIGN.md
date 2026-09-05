@@ -1,3 +1,5 @@
+> ⚠️ **SUPERSEDED (Sept 4 2026):** real-world-culture factions retired — original six-element regions now canon (MYTHOS_WORLD_BIBLE.md). Historical record only.
+
 # FACTION-004 — THE THOUSAND TORII
 ## Cultural Design Doc (pre-art, per Amendment 1)
 Pantheon of boundaries. Gods of every threshold: matter/spirit, reflection/original, storm/shrine, life/death.

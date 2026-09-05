@@ -15,7 +15,7 @@
 
 ## T3 — THE AVATARS OF HUNGER (bosses)
 - **GATE-WORMS:** colossal serpentine masses of eroded Gate-masonry that push through fractures — living siege engines. Tower Wave sieges are Gate-Worm attacks.
-- **THE ECHO OF THE FORGOTTEN:** mid-campaign: a titanic winged silhouette made of the ABSENCE of the Forgotten's old shape — it has no face because no one ever recorded one. Fights like a dark mirror of a giant god (the player learns giant-phase timings by fighting their own mirror).
+- **THE ECHO OF THE FORGOTTEN:** mid-campaign: a titanic wrong-shaped silhouette, vaster than any giant made of the ABSENCE of the Forgotten's old shape — it has no face because no one ever recorded one. Fights like a dark mirror of a giant god (the player learns giant-phase timings by fighting their own mirror).
 - **THE NAMING (endgame event, not a unit):** at the Empty Pedestal, the Hollow's advance stalls because mortals begin to SAY THE NAME — and naming is the one act the Hollow cannot hollow. The endgame's true weapon is a word.
 
 **DESIGN RULE:** no Hollow unit is ever "evil-colored" — they are DE-COLORED. Faction units fight in their region's palette; Hollow units drain it.
