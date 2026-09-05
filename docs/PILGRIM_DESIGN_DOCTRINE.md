@@ -18,3 +18,8 @@ base body (M/F) → role kit → faction skin → rune (element swap, not mesh) 
 
 ## THE EYES (BudE404: 'The glowing eyes can also be only elemental effects they get')
 The glowing eyes complete the pilgrim's elemental package: exactly TWO elemental effects per pilgrim — the burning RUNE (the Mark) and the GLOWING EYES (faction-colored light points in the hood shadow). Nothing else glows. Amends the Armor + Rune Law.
+
+## THE GATE RUNE — UNIVERSAL MARK (Sept 5 2026, BudE404)
+ONE rune symbol for the whole game: the Mark of the Waking Gates — a megalithic trilithon arch (two standing stones + lintel = the Gate) with a single vertical flame of light rising through the center (the pilgrim's light that wakes it). Element-neutral geometry. It is BOTH the game's brand logo AND the in-fiction pilgrim's Mark on the breastplate.
+FACTION = GLOW COLOR ONLY: Ashfall ember-orange · Skyrend ice-blue · Everbloom gold-green · Duskmourn lantern-violet · Marenth pearl-teal · Stoneheart geode white-violet.
+PRODUCTION LAW (the one-armor rule): armor sets are FACTION-NEUTRAL — one armor set per role per gender (6 roles × 2 genders = 12 armor sets total). Faction identity is a rune-color swap, never an armor re-roll. Amends the STACK ORDER: base body (M/F) → role kit → armor (neutral) → rune glow (faction color) → weapon kit → cosmetics.
