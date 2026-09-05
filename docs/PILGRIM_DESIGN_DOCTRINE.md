@@ -29,3 +29,12 @@ Title locked: **AVALON: THE WAKING GATES** (short brand: THE WAKING GATES). Sear
 
 ## THE FLAME-COLOR RULE (BudE404: 'just have the flame turn the color of the other elements when picking that faction')
 SHARPENED per BudE404 ('No only have the flame the different colors I liked the stone gate'): the standing-stone arch is PLAIN WEATHERED STONE — not glowing at all, zero color in the stone, and RUGGED: rough-hewn megalith texture with cracks, chisel pitting, chipped edges and age-patina (BudE404: 'I likes the more rugged gate look texture'). Never polished-smooth stone. ONLY THE RISING FLAME glows, and it alone carries the faction color (ember/ice-blue/gold-green/lantern-violet/pearl-teal/geode). Same rule on the breastplate Mark and every logo colorway. The gate is stone; the flame is the element.
+
+
+## MARK-INTEGRATION LAW (Sept 5 2026, BudE404 — locked via Warden-M verdict chain)
+The pilgrim's Gate Rune Mark on the breastplate follows four rules, ALL mandatory:
+1. GEOMETRY: the canon Gate Rune v3 RUGGED — trilithon arch (two standing stones + lintel), rough-hewn weathered megalithic grammar.
+2. MATERIAL: the Mark is ENGRAVED INTO the plate's own material — small, modest, fine incised lines, shallow recessed grooves, rendered in the same painterly brushwork as the armor itself. Never a sticker, decal, or emblem placed on top. Never large.
+3. GLOW DISCIPLINE: ONLY the flame emblem inside the arch glows — one small clean flame carrying the faction color. Zero elemental bleed: no drifting sparks, no molten cracks radiating into the plate, no glowing grooves. The carved arch lines are plain quiet engraving catching ordinary light. Nothing else on the armor glows (eyes excepted — per the Pilgrim Elemental Package).
+4. APPLICATION: every one of the 12 ladder sets gets the Mark engraved in its own plate material (ceramic, kiln clay, crystal, etc.).
+First canon proof: art/approved/PILGRIM-WARDEN-CINDERROADS-MARK-ENGRAVED-CANON.png
