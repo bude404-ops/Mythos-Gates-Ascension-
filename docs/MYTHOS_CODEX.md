@@ -126,7 +126,7 @@ Every faction runs exactly two male and two female colossi. Females follow the F
 - F5 WATER (Marenth): SEA SERPENT — finned and flightless: crest-fins, fin-mantles, tail-blades; the swimming silhouette.
 - F6 EARTH (Rootspine): STONE DRAGON — wingless, mountain-built: strata-plate armor, crystal growth along the spine, the walking-hill silhouette.
 
-**THE DUAL VESSEL DOCTRINE (Sept 4 2026, BudE404 — LOCKED 'K yes lets do it'):** Each deity deploys TWO vessels:
+**THE DUAL VESSEL DOCTRINE [SUPERSEDED — re-cast as DUAL-SCALE PLAY under the Giants & Sprites doctrine: the two scales are now (1) the 100-ft raw elemental GIANT and (2) the sprite-scale vessel among the fey] (Sept 4 2026, BudE404 — LOCKED 'K yes lets do it'):** Each deity deploys TWO vessels:
 1. THE COLOSSAL DRACONIAN AVATAR — 30-foot war vessel for campaign, wave battles, and boss fights.
 2. THE HUMAN-SIZED DRACONIAN ASPECT — a mortal-scale vessel with draconian features, for dungeon-scale events, separate wave runs, and small-arena bosses. The deity shapes its vessel to fit the Gate it enters.
 [SUPERSEDED — GIANT ERA: the GIANT form rolls first per deity; sprite vessels follow] PRODUCTION ORDER: the human aspect rolls FIRST for each kept deity. Each faction ships 4 ART MODELS: 2 colossal avatars + 2 human aspects.
@@ -227,7 +227,7 @@ STRUCTURE IMPLICATIONS:
 - Existing art canon is UNCHANGED — every locked vessel already carries blade or staff.
 
 ## GENDER-ROLE BINDING (Sept 4 2026, BudE404 — LOCKED, supersedes the 'gender does not bind role' line of the Two-Role Lock)
-**ALL MALE DEITIES = WARRIOR (two-handed greatsword). ALL FEMALE DEITIES = CASTER (long staff).** Every faction pair follows: male = greatsword chassis, female = staff chassis. Current canon already conforms (Haeldir blade / Sylwen staff). Thevril's human vessel = greatsword warrior. Miriath's = long-staff caster.
+**ALL MALE DEITIES = WARRIOR (two-handed greatsword). ALL FEMALE DEITIES = CASTER (long staff).** Every faction pair follows: male = greatsword chassis, female = staff chassis. **GIANT-ERA SCOPE (Sept 4 2026):** the binding governs GIANT forms (male greatsword / female staff of element); the SPRITE-SCALE vessel keeps free player-choice class chassis per the Weapon Chassis Law (see CAMPAIGN BIBLE v2.0 §II).
 
 ---
 
