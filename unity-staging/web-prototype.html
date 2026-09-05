@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>MYTHOS GATES — Playable Prototype v7 (Feel Pass 5)</title>
+<title>MYTHOS GATES — Playable Prototype v8 (Feel Pass 6 — L1 flow fix)</title>
 <style>
   html,body{margin:0;padding:0;overflow:hidden;background:#0a0a12;font-family:Georgia,serif;-webkit-user-select:none;user-select:none;touch-action:none}
   #hud{position:fixed;top:10px;left:50%;transform:translateX(-50%);color:#e8c47a;text-align:center;z-index:10;pointer-events:none;text-shadow:0 2px 6px #000}
@@ -402,11 +402,11 @@
   }
 
   function doAttack(){
-    if (attacking > 0.15) return;
+    if (attacking > 0.26) return;
     comboTimer = 1.2; comboIdx = (comboIdx % 3) + 1; if (comboTimer <= 0) comboIdx = 1;
     showCombo();
     const heavy = comboIdx === 3;
-    attacking = heavy ? 0.55 : 0.36;
+    attacking = heavy ? 0.75 : 0.5;
     let best = null, bestD = 13;
     enemies.forEach(e => { if (e.dead) return;
       const d = e.obj.position.clone().sub(giant.position).setY(0).length();
@@ -427,7 +427,7 @@
       });
       trauma = Math.min(1, trauma + (heavy ? 0.42 : 0.15));
       if (hitAny){ hitstopT = heavy ? 0.09 : 0.055; if (heavy) fovKick = 5; }
-    }, heavy ? 170 : 120);
+    }, heavy ? 220 : 165);
   }
   let swingHeavy = false;
 
@@ -504,7 +504,7 @@
     if (slowmoT > 0){ slowmoT -= realDt; dt *= 0.35; }        // slam/wave slow-motion
     if (hitstopT > 0){ hitstopT -= realDt; dt *= 0.18; }       // kill hitstop
     // HOLD L1 = nonstop smashing
-    if (l1Held && attacking <= 0.15) doAttack();
+    if (l1Held && attacking <= 0.26) doAttack();
     // combo decay
     if (comboTimer > 0){ comboTimer -= realDt; if (comboTimer <= 0){ comboIdx = 0; comboEl.style.opacity = 0; } }
     // sword swing anim
