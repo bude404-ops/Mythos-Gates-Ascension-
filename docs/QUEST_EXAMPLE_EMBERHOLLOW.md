@@ -1,5 +1,5 @@
 # QUEST EXAMPLE — "THE COLD LANTERN" (Emberhollow, Ashfall)
-**Worked example of the quest loop under the Giants & Sprites doctrine — Sept 4 2026. Shows every system in play: dual-scale, the FAITH economy, Witness Zones, the Hollow Tide, and the Gate Rite handoff.**
+**Worked example of the quest loop under the Giants & Sprites doctrine — Sept 4 2026 (sprite scale locked at 1-3 ft / fey-small). Shows every system in play: dual-scale, the FAITH economy, Witness Zones, the Hollow Tide, and the Gate Rite handoff.**
 
 > **THE LOOP IN ONE LINE:** sprite-scale mystery builds FAITH by deed → FAITH fills the Gate → the GIANT crosses over and you take control of the god for the Tower Wave climax.
 
