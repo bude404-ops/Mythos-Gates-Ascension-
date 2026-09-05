@@ -1,4 +1,8 @@
 # MYTHOS WORLD LORE — Master Cosmology
+
+> **⚠️ GIANT-ERA RE-CAST (Sept 5 2026):** This doc predates the GIANTS & SPRITES doctrine. Where it says "colossi shaped remotely through Gates," read the current canon: the deities ARE the primordial giants — raw living element that crosses through its Gate in person, the Gate's mouth sizing the crossing (100-ft true form, titan-unit combat manifestation). Mortals are sprite civilizations, not humans. The Gates, the Forgotten, the Hollow, and the faith mechanics below all stand unchanged — they are the living spine of the current lore (see docs/MYTHOS_WORLD_BIBLE.md + docs/MYTHOS_CODEX.md §GIANT-ERA CANONICAL ROSTER).
+
+
 Canonized September 4, 2026 by BudE404. This is the master world document. All factions, art, and game systems answer to this.
 
 ---
