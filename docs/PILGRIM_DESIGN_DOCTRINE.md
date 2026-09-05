@@ -23,3 +23,9 @@ The glowing eyes complete the pilgrim's elemental package: exactly TWO elemental
 ONE rune symbol for the whole game: the Mark of the Waking Gates — a megalithic trilithon arch (two standing stones + lintel = the Gate) with a single vertical flame of light rising through the center (the pilgrim's light that wakes it). Element-neutral geometry. It is BOTH the game's brand logo AND the in-fiction pilgrim's Mark on the breastplate.
 FACTION = GLOW COLOR ONLY: Ashfall ember-orange · Skyrend ice-blue · Everbloom gold-green · Duskmourn lantern-violet · Marenth pearl-teal · Stoneheart geode white-violet.
 PRODUCTION LAW (the one-armor rule): armor sets are FACTION-NEUTRAL — one armor set per role per gender (6 roles × 2 genders = 12 armor sets total). Faction identity is a rune-color swap, never an armor re-roll. Amends the STACK ORDER: base body (M/F) → role kit → armor (neutral) → rune glow (faction color) → weapon kit → cosmetics.
+
+## GAME NAME CANON (Sept 5, 2026, BudE404)
+Title locked: **AVALON: THE WAKING GATES** (short brand: THE WAKING GATES). Search clearance done Sept 5 2026 — no existing game/app/film/book/trademark found for "Avalon: The Waking Gates" or "The Waking Gates" (nearest: "Tainted Grail: The Fall of Avalon", an unrelated title). Register the trademark when commercializing.
+
+## THE FLAME-COLOR RULE (BudE404: 'just have the flame turn the color of the other elements when picking that faction')
+In the sigil/logo colorways, the standing-stone arch stays neutral; ONLY THE RISING FLAME carries the faction color. Same rule on the breastplate Mark: the arch reads as carved neutral craft, the flame glows the element. Amends the Gate Rune glow law.
