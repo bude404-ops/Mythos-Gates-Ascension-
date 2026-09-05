@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>MYTHOS GATES — Playable Prototype v3 (Feel Pass 2)</title>
+<title>MYTHOS GATES — Playable Prototype v4 (Feel Pass 3)</title>
 <style>
   html,body{margin:0;padding:0;overflow:hidden;background:#0a0a12;font-family:Georgia,serif;-webkit-user-select:none;user-select:none;touch-action:none}
   #hud{position:fixed;top:10px;left:50%;transform:translateX(-50%);color:#e8c47a;text-align:center;z-index:10;pointer-events:none;text-shadow:0 2px 6px #000}
@@ -26,7 +26,7 @@
 </style>
 </head>
 <body>
-<div id="hud"><div id="faith">FAITH 20</div><div id="combo">COMBO ×1</div><div id="sub">RELEASE THE UNMADE</div></div>
+<div id="hud"><div id="faith">FAITH 20</div><div id="combo">COMBO ×1</div><div id="wave" style="font-size:13px;color:#ff8a30;letter-spacing:2px;margin-top:3px">WAVE 1 INCOMING</div><div id="sub">RELEASE THE UNMADE · <span id="kills">0</span> RELEASED</div></div>
 <div id="verdict">Weight · one-tap · slam · now WAVE too — boring is banished</div>
 <div id="moveHint">TAP GROUND TO MOVE</div>
 <div class="btn" id="btnL1">L1<small>7m ARC</small></div>
@@ -162,19 +162,31 @@
     const b = box(0.5,0.6,0.7, antMat); b.position.y = 0.3; g.add(b);
     const hd = box(0.3,0.3,0.3, antMat); hd.position.set(0,0.55,0.35); g.add(hd);
     g.position.copy(pos); scene.add(g);
-    enemies.push({type:'ant', obj:g, yaw:0, dead:false, home:pos.clone(), target:pos.clone(), retarget:2+Math.random()*3, walkT:Math.random()*6});
+    enemies.push({type:'ant', obj:g, yaw:0, dead:false, aggro:26, home:pos.clone(), target:pos.clone(), retarget:2+Math.random()*3, walkT:Math.random()*6});
   }
   function makeBrute(pos){
     const g = new THREE.Group();
     const b = box(1.6,2.2,1.2, bruteMat); b.position.y = 1.1; g.add(b);
     const hd = box(0.7,0.6,0.7, bruteMat); hd.position.y = 2.6; g.add(hd);
     g.position.copy(pos); scene.add(g);
-    enemies.push({type:'brute', obj:g, yaw:0, hp:5, dead:false, stagger:0, flashT:0, walkT:Math.random()*6, home:pos.clone()});
+    const e = {type:'brute', obj:g, yaw:0, hp:5, dead:false, stagger:0, flashT:0, walkT:Math.random()*6, home:pos.clone()}; enemies.push(e); return e;
   }
-  for (let i=0;i<24;i++) makeAnt(new THREE.Vector3((Math.random()-.5)*100, 0, (Math.random()-.5)*100));
-  makeBrute(new THREE.Vector3(-26, 0, -14));
-  makeBrute(new THREE.Vector3(30, 0, -36));
-  makeBrute(new THREE.Vector3(-34, 0, 30));
+  // WAVES replace the standing-around field — constant pressure
+  function spawnWave(n){
+    waveNum = n; waveActive = true;
+    waveEl.textContent = 'WAVE ' + n;
+    popup('WAVE ' + n, giant.position, true);
+    const count = Math.min(34, 12 + 4*n);
+    for (let i=0;i<count;i++){
+      const a = Math.random()*Math.PI*2;
+      const r = 28 + Math.random()*10;
+      const pos = new THREE.Vector3(giant.position.x + Math.cos(a)*r, 0, giant.position.z + Math.sin(a)*r);
+      const e = makeAnt(pos);
+      e.aggro = 999; // wave ants are hunting — no standing around
+      e.home = pos.clone();
+    }
+    if (n % 3 === 0) makeBrute(new THREE.Vector3(giant.position.x + (Math.random()>.5?40:-40), 0, giant.position.z - 30)).aggroB = true;
+  }
 
   // ---------- STATE ----------
   let faith = 20, charging = false;
@@ -182,6 +194,11 @@
   let stepPhase = 0, trauma = 0, inWorship = false;
   let swingT = 0, hitstopT = 0, slowmoT = 0, fovKick = 0;
   let comboIdx = 0, comboTimer = 0, comboKills = 0;
+  let waveNum = 0, waveActive = false, intermission = 1.5, totalKills = 0, curSpeed = 0;
+  const waveEl = document.getElementById('wave'), killsEl = document.getElementById('kills');
+  // lock-on marker under the currently locked enemy
+  const lockMarker = new THREE.Mesh(new THREE.RingGeometry(0.55, 0.8, 24), new THREE.MeshBasicMaterial({color:0xff5a10, transparent:true, opacity:0.85, side:THREE.DoubleSide}));
+  lockMarker.rotation.x = -Math.PI/2; lockMarker.visible = false; scene.add(lockMarker);
   const comboEl = document.getElementById('combo');
   const faithEl = document.getElementById('faith');
   function setFaith(v){ faith = v; faithEl.textContent = 'FAITH ' + Math.floor(faith); }
@@ -231,7 +248,7 @@
       burst(e.obj.position, 0xff7a20, isHeavy ? 14 : 8, isHeavy ? 9 : 6);
       popup(isHeavy ? '+2' : '+1', e.obj.position, isHeavy);
       setFaith(faith + (isHeavy ? 2 : 1));
-      comboKills++;
+      comboKills++; totalKills++; killsEl.textContent = totalKills;
     } else {
       e.hp -= amount; e.stagger = isHeavy ? 1.6 : 1.1; e.flashT = 1;
       burst(e.obj.position, 0xd050a0, 10, 5);
@@ -241,7 +258,7 @@
         e.vel = push.multiplyScalar(8); e.vel.y = 5; e.spin = 4;
         popup('+5', e.obj.position, true);
         setFaith(faith + 5);
-        comboKills++;
+        comboKills++; totalKills++; killsEl.textContent = totalKills;
       }
     }
   }
@@ -390,9 +407,20 @@
       m.position.x += Math.sin(clock.elapsedTime + m.position.z) * dt * 0.5;
       if (m.position.y < 0) m.position.y = 35 + Math.random()*10;
     });
-    // giant move
+    // giant move — ACCELERATION/DECELERATION (weighty, no teleport-speed)
     const speed = charging ? 8 : 4;
     if (attacking > 0) attacking -= dt;
+    // --- AUTO-LOCK-ON: face nearest enemy in range, always ---
+    let locked = null, lockD = 13;
+    enemies.forEach(e => { if (e.dead) return;
+      const d = e.obj.position.clone().sub(giant.position).setY(0).length();
+      if (d < lockD){ lockD = d; locked = e; } });
+    if (locked){
+      lockMarker.visible = true;
+      lockMarker.position.copy(locked.obj.position).setY(0.06);
+      lockMarker.material.opacity = 0.5 + 0.35*Math.sin(clock.elapsedTime*8);
+      const s = 1 + 0.06*Math.sin(clock.elapsedTime*8); lockMarker.scale.set(s,s,1);
+    } else lockMarker.visible = false;
     if (moveTarget){
       const to = moveTarget.clone().sub(giant.position); to.y = 0;
       if (to.length() < 0.6){ moveTarget = null; marker.visible = false; }
@@ -401,12 +429,31 @@
         let d = targetYaw - giant.rotation.y;
         while (d > Math.PI) d -= Math.PI*2; while (d < -Math.PI) d += Math.PI*2;
         giant.rotation.y += d * Math.min(1, 10*dt);
-        giant.position.add(to.setLength(Math.min(speed*dt, to.length())));
+        // accelerate toward move; ease to full speed (decel on arrival handled by distance clamp)
+        curSpeed = Math.min(speed, curSpeed + 10*dt);
+        giant.position.add(to.setLength(Math.min(curSpeed*dt, to.length())));
         stepPhase += (speed/4) * dt * 1.6;
         if (stepPhase > 1){ stepPhase = 0; trauma = Math.min(1, trauma + (charging ? 0.34 : 0.22)); }
         const bob = Math.sin(stepPhase*Math.PI)*0.35;
         legL.position.y = 1.6 + bob; legR.position.y = 1.6 - bob;
+        // leg stride + arm counter-swing + charge lean
+        const sw = Math.sin(stepPhase*Math.PI) * 0.55;
+        legL.rotation.x = sw; legR.rotation.x = -sw;
+        armL.rotation.x = -sw * 0.6; armR.rotation.x = sw * 0.6;
+        torso.rotation.x = charging ? 0.14 : 0.04;
         torso.position.y = 5.4 + Math.sin(stepPhase*Math.PI*2)*0.08;
+      }
+    } else {
+      // standing / no target: decelerate + ease, and AUTO-FACE the locked enemy
+      curSpeed = Math.max(0, curSpeed - 12*dt);
+      legL.rotation.x *= 0.85; legR.rotation.x *= 0.85; armL.rotation.x *= 0.85; armR.rotation.x *= 0.85;
+      torso.rotation.x *= 0.9;
+      if (locked && attacking <= 0){
+        const to = locked.obj.position.clone().sub(giant.position);
+        const ty = Math.atan2(to.x, to.z);
+        let d = ty - giant.rotation.y;
+        while (d > Math.PI) d -= Math.PI*2; while (d < -Math.PI) d += Math.PI*2;
+        giant.rotation.y += d * Math.min(1, 3.5*dt); // gentle tracking, not snapping
       }
     }
     // worship
@@ -425,7 +472,7 @@
       if (e.type === 'ant'){
         const toP = giant.position.clone().sub(e.obj.position); toP.y = 0;
         let dir;
-        if (toP.length() < 26 && toP.length() > 2.6) dir = toP.clone().normalize();   // approach but stop at 2.6m — no body-jitter
+        if (toP.length() < e.aggro && toP.length() > 2.6) dir = toP.clone().normalize();   // approach but stop at 2.6m — no body-jitter
         else if (toP.length() <= 2.6) dir = null;
         else {
           e.retarget -= dt;
@@ -464,6 +511,20 @@
           e.obj.position.y = Math.abs(Math.sin(e.walkT*4)) * 0.18;           // heavy stomp bob
         }
       }
+    }
+    // wave driver — no standing around, ever
+    if (waveActive){
+      const alive = enemies.filter(e => !e.dead).length;
+      if (alive === 0){
+        waveActive = false; intermission = 4;
+        setFaith(faith + 10);
+        popup('WAVE CLEARED +10', giant.position, true);
+        waveEl.textContent = 'WAVE ' + waveNum + ' CLEARED';
+      }
+    } else {
+      intermission -= realDt;
+      if (intermission <= 0) spawnWave(waveNum + 1);
+      else if (intermission < 3.5) waveEl.textContent = 'WAVE ' + (waveNum+1) + ' IN ' + Math.ceil(intermission);
     }
     updatePopups(realDt);
     updateCamera(dt);
