@@ -207,3 +207,9 @@ The camera faces the colossus. Player stands between the spawn and the god:
 1. **THE WAKING SIEGE (colossus vs waves):** third-person camera behind the player, FACING the colossus — the god anchors the top of the frame, always legible. Hollow waves spawn at the BOTTOM edge of the screen (the player's side) and push UP the frame toward the Gate. Threat reads in one direction: bottom → top.
 2. **COLOSSAL VS COLOSSAL (god duels):** the same stationary combat, camera moves to the SIDE — a full profile view of BOTH colossi in frame at god scale. The duel stages as a titan standoff across the arena; the player conducts their awakened god's ability rotation against the enemy god. Campaign finale of each Gate: your god vs the Hollow's false god (the Echo).
 3. Both cameras keep the colossus fully legible at all times — **the god is the arena.**
+
+## GENDER-MATCHED COLOSSI (v2.0, Sept 5, 2026, BudE404)
+Every faction has BOTH a King and a Queen colossus — 12 total, both canon (supersedes the 1-colossal-per-faction scope line; the second aspect is no longer lore-only).
+- **THE GOD MATCHES THE PILGRIM:** the colossus that rises at the Gate Rite takes the aspect of the one who wakes it — a male pilgrim wakes the King, a female pilgrim wakes the Queen. The god dreams of its dreamer.
+- Queens render under the same laws as kings: element-formed face (zero human features), raw primordial anatomy, Avalon styling kit (grown regalia — queens get diadem/circlet variants per element, tribute-reef, mist-veils, swords in the mere), Emergence Law (risen from the element, waist-down terrain-merged, never walking), zero weapons.
+- Feminine colossal silhouette reads through STRUCTURE not skin: narrower shoulders, waist taper into the terrain merge, long element-hair (molten pour / storm-static cloud / flowering vine / shadow-to-wisps / sea-spray and kelp / crystal dust-motes).
