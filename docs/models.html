@@ -16,7 +16,7 @@
 </style>
 </head>
 <body>
-<div id="hud"><div id="title">🗿 STAGE 3 — CANON MODELS v2 — CLEAN SINGLES</div><div id="status">tap a model to load</div></div>
+<div id="hud"><div id="title">🗿 STAGE 3 — CANON MODELS v1</div><div id="status">tap a model to load</div></div>
 <div id="hint">DRAG TO ORBIT · PINCH/WHEEL TO ZOOM · AUTO-TURNTABLE ON</div>
 <div id="btns">
   <button class="mbtn" data-i="0">VHARKAR<br><small>A-pose variant</small></button>
@@ -29,11 +29,13 @@
 <script>
 (() => {
   const MODELS = [
-    {name:"VHARKAR v2 — CLEAN (T-pose input)", url:"./models/vharkar-v2-tpose.bin"},
-    {name:"KILN-WARDEN v2 — CLEAN (T-pose input)", url:"./models/kiln-warden-v2-tpose.bin"},
-    {name:"VHARKAR v1 — A-pose (fused clones)", url:"./models/vharkar-aposize.bin"},
-    {name:"VHARKAR v1 — turnaround (fused clones)", url:"./models/vharkar-turnaround.bin"},
-    {name:"KILN-WARDEN v1 (fused clones)", url:"./models/kiln-warden.bin"}
+    {name:"VHARKAR v3 — WEAPONLESS BASE", url:"./models/vharkar-v3-weaponless.bin"},
+    {name:"KILN-WARDEN v3 — WEAPONLESS BASE", url:"./models/kiln-warden-v3-weaponless.bin"},
+    {name:"VHARKAR v2 — CLEAN T-pose", url:"./models/vharkar-v2.bin"},
+    {name:"KILN-WARDEN v2 — CLEAN T-pose", url:"./models/kiln-warden-v2.bin"},
+    {name:"VHARKAR v1 — A-pose variant", url:"./models/vharkar-aposize.bin"},
+    {name:"VHARKAR v1 — turnaround variant", url:"./models/vharkar-turnaround.bin"},
+    {name:"KILN-WARDEN v1 — sprite", url:"./models/kiln-warden.bin"}
   ];
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x14141e);
