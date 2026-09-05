@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>MYTHOS GATES — Playable Prototype v6 (Graphics Pass 1)</title>
+<title>MYTHOS GATES — Playable Prototype v7 (Feel Pass 5)</title>
 <style>
   html,body{margin:0;padding:0;overflow:hidden;background:#0a0a12;font-family:Georgia,serif;-webkit-user-select:none;user-select:none;touch-action:none}
   #hud{position:fixed;top:10px;left:50%;transform:translateX(-50%);color:#e8c47a;text-align:center;z-index:10;pointer-events:none;text-shadow:0 2px 6px #000}
@@ -26,8 +26,8 @@
 </style>
 </head>
 <body>
-<div id="hud"><div id="faith">FAITH 20</div><div id="combo">COMBO ×1</div><div id="wave" style="font-size:13px;color:#ff8a30;letter-spacing:2px;margin-top:3px">WAVE 1 INCOMING</div><div id="sub">RELEASE THE UNMADE · <span id="kills">0</span> RELEASED</div></div>
-<div id="obj" style="position:fixed;top:52px;left:50%;transform:translateX(-50%);color:#ffb84a;font-size:12px;letter-spacing:1px;z-index:10;pointer-events:none;text-align:center;text-shadow:0 2px 6px #000">OBJECTIVE: SURVIVE 5 WAVES</div>
+<div id="hud"><div id="faith">FAITH 20</div><div id="combo">COMBO ×1</div><div id="wave" style="font-size:13px;color:#ff8a30;letter-spacing:2px;margin-top:3px">WAVE 1 — SMASH</div><div id="sub">RELEASE THE UNMADE · <span id="kills">0</span> RELEASED</div></div>
+<div id="obj" style="position:fixed;top:52px;left:50%;transform:translateX(-50%);color:#ffb84a;font-size:12px;letter-spacing:1px;z-index:10;pointer-events:none;text-align:center;text-shadow:0 2px 6px #000">OBJECTIVE: SMASH TO WAVE 5</div>
 <div id="victory" style="display:none;position:fixed;inset:0;background:rgba(10,6,2,.88);z-index:20;color:#e8c47a;text-align:center">
   <div style="margin-top:32vh;font-size:26px;letter-spacing:4px">THE CINDER GATE OPENS</div>
   <div id="vstats" style="margin-top:14px;font-size:14px;color:#9a8b6f;line-height:1.8"></div>
@@ -35,8 +35,8 @@
 </div>
 <div id="moveHint">TAP GROUND TO MOVE</div>
 <div class="btn" id="btnL1">L1<small>7m ARC</small></div>
-<div class="btn" id="btnSlam">SLAM<small>15 FAITH</small></div>
-<div class="btn" id="btnWave">WAVE<small>20 FAITH</small></div>
+<div class="btn" id="btnSlam">SLAM<small>10 FAITH</small></div>
+<div class="btn" id="btnWave">WAVE<small>15 FAITH</small></div>
 <div class="btn" id="btnCharge">WALK<small>TAP: CHARGE 8</small></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
@@ -308,22 +308,19 @@
   const objEl = document.getElementById('obj');
   const WIN_WAVE = 5;
   let phase = 'waves'; // waves -> gate -> endless
-  // WAVES — constant pressure, BIG
-  function spawnWave(n){
-    waveNum = n; waveActive = true;
-    waveEl.textContent = 'WAVE ' + n;
-    popup('WAVE ' + n, giant.position, true);
-    const count = Math.min(70, 24 + 8*n);      // WAY more mobs per phase
-    for (let i=0;i<count;i++){
+  // CONTINUOUS WAR — enemies never stop coming, no intermissions
+  function spawnBatch(n){
+    for (let i=0;i<n;i++){
       const a = Math.random()*Math.PI*2;
-      const r = 22 + Math.random()*14;
+      const r = 13 + Math.random()*8;         // CLOSE ring — they're on you in seconds
       const pos = new THREE.Vector3(giant.position.x + Math.cos(a)*r, 0, giant.position.z + Math.sin(a)*r);
       const e = makeAnt(pos);
-      e.aggro = 999; e.speedMul = 1 + Math.random()*0.25;
+      e.aggro = 999; e.speedMul = 1.15 + Math.random()*0.35;
       e.home = pos.clone();
     }
-    const brutes = Math.floor(n/2);            // brute every 2nd wave, stacking
-    for (let i=0;i<Math.min(brutes,3);i++) makeBrute(new THREE.Vector3(giant.position.x + (Math.random()>.5?45:-45), 0, giant.position.z - 30));
+  }
+  function spawnBrutes(n){
+    for (let i=0;i<n;i++) makeBrute(new THREE.Vector3(giant.position.x + (Math.random()>.5?34:-34), 0, giant.position.z + (Math.random()-.5)*34));
   }
 
   // ---------- STATE ----------
@@ -332,7 +329,7 @@
   let stepPhase = 0, trauma = 0, inWorship = false;
   let swingT = 0, hitstopT = 0, slowmoT = 0, fovKick = 0;
   let comboIdx = 0, comboTimer = 0, comboKills = 0, smokeT = 0;
-  let waveNum = 0, waveActive = false, intermission = 1.5, totalKills = 0, curSpeed = 0;
+  let waveNum = 1, totalKills = 0, curSpeed = 0, spawnTimer = 0.6, nextWaveKills = 40, l1Held = false;
   const waveEl = document.getElementById('wave'), killsEl = document.getElementById('kills');
   // lock-on marker under the currently locked enemy
   const lockMarker = new THREE.Mesh(new THREE.RingGeometry(0.55, 0.8, 24), new THREE.MeshBasicMaterial({color:0xff5a10, transparent:true, opacity:0.85, side:THREE.DoubleSide}));
@@ -372,7 +369,10 @@
     btn.addEventListener('touchstart', e => { e.preventDefault(); fn(); }, {passive:false});
     btn.addEventListener('click', fn);
   }
-  bind(btnL1, doAttack);
+  btnL1.addEventListener('touchstart', e => { e.preventDefault(); l1Held = true; doAttack(); }, {passive:false});
+  btnL1.addEventListener('touchend', () => l1Held = false);
+  btnL1.addEventListener('touchcancel', () => l1Held = false);
+  btnL1.addEventListener('click', doAttack);
   bind(btnSlam, doSlam);
   bind(btnWave, doWave);
   bind(btnCharge, () => { charging = !charging; btnCharge.classList.toggle('on', charging); btnCharge.childNodes[1].textContent = charging ? 'CHARGE' : 'WALK'; });
@@ -385,7 +385,7 @@
       e.spin = 8 + Math.random()*10;
       burst(e.obj.position, 0xff7a20, isHeavy ? 14 : 8, isHeavy ? 9 : 6);
       popup(isHeavy ? '+2' : '+1', e.obj.position, isHeavy);
-      setFaith(faith + (isHeavy ? 2 : 1));
+      setFaith(faith + (isHeavy ? 3 : 2));
       comboKills++; totalKills++; killsEl.textContent = totalKills;
     } else {
       e.hp -= amount; e.stagger = isHeavy ? 1.6 : 1.1; e.flashT = 1;
@@ -394,20 +394,20 @@
         e.dead = true;
         const push = e.obj.position.clone().sub(fromPos).setY(0).normalize();
         e.vel = push.multiplyScalar(8); e.vel.y = 5; e.spin = 4;
-        popup('+5', e.obj.position, true);
-        setFaith(faith + 5);
+        popup('+8', e.obj.position, true);
+        setFaith(faith + 8);
         comboKills++; totalKills++; killsEl.textContent = totalKills;
       }
     }
   }
 
   function doAttack(){
-    if (attacking > 0.22) return;
+    if (attacking > 0.15) return;
     comboTimer = 1.2; comboIdx = (comboIdx % 3) + 1; if (comboTimer <= 0) comboIdx = 1;
     showCombo();
     const heavy = comboIdx === 3;
-    attacking = heavy ? 0.7 : 0.5;
-    let best = null, bestD = 11.5;
+    attacking = heavy ? 0.55 : 0.36;
+    let best = null, bestD = 13;
     enemies.forEach(e => { if (e.dead) return;
       const d = e.obj.position.clone().sub(giant.position).setY(0).length();
       if (d < bestD){ bestD = d; best = e; } });
@@ -423,17 +423,17 @@
       enemies.forEach(e => {
         if (e.dead) return;
         const to = e.obj.position.clone().sub(giant.position); to.y = 0;
-        if (to.length() <= 7.2){ killOrHit(e, giant.position, heavy ? 2 : 1, heavy); hitAny = true; }
+        if (to.length() <= 8.5){ killOrHit(e, giant.position, heavy ? 2 : 1, heavy); hitAny = true; }
       });
       trauma = Math.min(1, trauma + (heavy ? 0.42 : 0.15));
       if (hitAny){ hitstopT = heavy ? 0.09 : 0.055; if (heavy) fovKick = 5; }
-    }, heavy ? 210 : 160);
+    }, heavy ? 170 : 120);
   }
   let swingHeavy = false;
 
   function doSlam(){
-    if (slamActive > 0 || faith < 15) return;
-    setFaith(faith - 15);
+    if (slamActive > 0 || faith < 10) return;
+    setFaith(faith - 10);
     slamActive = 1; slamT = 0;
     trauma = 1.0; slowmoT = 0.45; fovKick = 9;
     torso.position.y = 6.1;
@@ -451,8 +451,8 @@
   }
 
   function doWave(){
-    if (waveFlash > 0 || faith < 20) return;
-    setFaith(faith - 20);
+    if (waveFlash > 0 || faith < 15) return;
+    setFaith(faith - 15);
     // face nearest cluster
     let best = null, bestD = 30;
     enemies.forEach(e => { if (e.dead) return;
@@ -503,6 +503,8 @@
     let dt = realDt;
     if (slowmoT > 0){ slowmoT -= realDt; dt *= 0.35; }        // slam/wave slow-motion
     if (hitstopT > 0){ hitstopT -= realDt; dt *= 0.18; }       // kill hitstop
+    // HOLD L1 = nonstop smashing
+    if (l1Held && attacking <= 0.15) doAttack();
     // combo decay
     if (comboTimer > 0){ comboTimer -= realDt; if (comboTimer <= 0){ comboIdx = 0; comboEl.style.opacity = 0; } }
     // sword swing anim
@@ -608,7 +610,7 @@
     }
     // worship
     inWorship = giant.position.distanceTo(new THREE.Vector3(WORSHIP.pos.x,0,WORSHIP.pos.z)) < WORSHIP.r;
-    if (inWorship){ setFaith(faith + (waveActive ? 0.5 : 1.5)*dt); wz.material.opacity = 0.45; } else wz.material.opacity = 0.22;
+    if (inWorship){ setFaith(faith + 1.0*dt); wz.material.opacity = 0.45; } else wz.material.opacity = 0.22;
     // enemies
     for (let i=0;i<enemies.length;i++){
       const e = enemies[i];
@@ -645,7 +647,7 @@
           let dy = ty - e.yaw; while (dy > Math.PI) dy -= Math.PI*2; while (dy < -Math.PI) dy += Math.PI*2;
           e.yaw += dy * Math.min(1, 6*dt);                                  // smooth enemy turning
           e.obj.rotation.y = e.yaw;
-          e.obj.position.add(new THREE.Vector3(Math.sin(e.yaw), 0, Math.cos(e.yaw)).multiplyScalar(3.3*(e.speedMul||1)*dt));
+          e.obj.position.add(new THREE.Vector3(Math.sin(e.yaw), 0, Math.cos(e.yaw)).multiplyScalar(4.2*(e.speedMul||1)*dt));
           e.obj.rotation.z = Math.sin(e.walkT*10) * 0.09;                   // scuttle waddle
         } else e.obj.rotation.z *= 0.9;
       } else {
@@ -662,46 +664,37 @@
         }
       }
     }
-    // wave driver — objectives give the walking a purpose
-    if (phase === 'waves'){
-      if (waveActive){
+    // CONTINUOUS WAR driver — no dead time, enemies ALWAYS inbound
+    if (phase === 'waves' || phase === 'endless'){
+      spawnTimer -= realDt;
+      if (spawnTimer <= 0){
+        spawnTimer = Math.max(1.1, 3.0 - waveNum*0.22);   // pressure ramps up every wave
         const alive = enemies.filter(e => !e.dead).length;
-        if (alive === 0){
-          waveActive = false; intermission = 9;
-          setFaith(faith + 10);
-          popup('WAVE CLEARED +10', giant.position, true);
-          waveEl.textContent = 'WAVE ' + waveNum + ' CLEARED';
-          if (waveNum >= WIN_WAVE){
-            phase = 'gate';
-            gateGlow.material.opacity = 0.55; gateBeacon.material.opacity = 0.3;
-            objEl.textContent = 'OBJECTIVE: REACH THE CINDER GATE — GO NORTH 🔥';
-            popup('THE GATE AWAKENS', giant.position, true);
-          } else {
-            objEl.textContent = 'NEXT WAVE INCOMING — RETURN TO THE SHRINE 🏛 BANK FAITH';
-          }
+        const batch = Math.min(12 + waveNum*2, 26);
+        if (alive < 60) spawnBatch(Math.min(batch, 60 - alive));
+      }
+      if (totalKills >= nextWaveKills){
+        waveNum++; nextWaveKills += 38 + waveNum*12;
+        popup('WAVE ' + waveNum, giant.position, true);
+        waveEl.textContent = 'WAVE ' + waveNum;
+        if (waveNum % 2 === 0) spawnBrutes(1 + Math.floor(waveNum/5));
+        if (phase === 'waves' && waveNum > WIN_WAVE){
+          phase = 'gate';
+          gateGlow.material.opacity = 0.55; gateBeacon.material.opacity = 0.3;
+          objEl.textContent = 'OBJECTIVE: REACH THE CINDER GATE — GO NORTH 🔥';
+          popup('THE GATE AWAKENS', giant.position, true);
         }
-      } else {
-        intermission -= realDt;
-        if (intermission <= 0) { spawnWave(waveNum + 1); objEl.textContent = 'OBJECTIVE: SURVIVE — ' + (WIN_WAVE - waveNum) + ' WAVES TO THE GATE'; }
-        else waveEl.textContent = 'WAVE ' + (waveNum+1) + ' IN ' + Math.ceil(intermission);
       }
     } else if (phase === 'gate'){
+      spawnTimer -= realDt;                                   // light pressure on the march
+      if (spawnTimer <= 0){ spawnTimer = 4; spawnBatch(6); }
       const d = giant.position.clone().sub(GATE.pos).setY(0).length();
       if (d < 14){
         phase = 'victory';
         const stats = document.getElementById('vstats');
-        stats.innerHTML = 'WAVES SURVIVED: ' + waveNum + '<br>UNMADE RELEASED: ' + totalKills + '<br>FAITH BANKED: ' + Math.floor(faith);
+        stats.innerHTML = 'WAVES SURVIVED: ' + (waveNum-1) + '<br>UNMADE RELEASED: ' + totalKills + '<br>FAITH BANKED: ' + Math.floor(faith);
         document.getElementById('victory').style.display = 'block';
-        window.__endless = () => { phase = 'endless'; objEl.textContent = 'ENDLESS — SURVIVE THE HOLLOW TIDE'; intermission = 6; };
-      }
-    } else if (phase === 'endless'){
-      if (!waveActive){
-        intermission -= realDt;
-        if (intermission <= 0){ spawnWave(waveNum + 1); waveActive = true; }
-        else waveEl.textContent = 'WAVE ' + (waveNum+1) + ' IN ' + Math.ceil(intermission);
-      } else if (enemies.filter(e => !e.dead).length === 0){
-        waveActive = false; intermission = 6;
-        setFaith(faith + 10); popup('WAVE CLEARED +10', giant.position, true);
+        window.__endless = () => { phase = 'endless'; objEl.textContent = 'ENDLESS — SURVIVE THE HOLLOW TIDE'; };
       }
     }
     updatePopups(realDt);
