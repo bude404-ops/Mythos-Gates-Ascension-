@@ -25,7 +25,7 @@ Supersedes: the Giants & Sprites Doctrine (Sept 4), the Dragon-Kin Law, and all 
 **Gates are not portals. Gates are the god's PULSE-POINTS.**
 
 - A Gate is a THIN PLACE — where the sleeping god lies closest to the surface. The mist is thinnest there; the god's dream can be heard; his warmth rises through the stones.
-- Each realm holds a ring of Gates (the canon Gate names survive: Ember, Gale, Bloom, Dusk, Deep, Stone).
+- Each realm holds a ring of Gates (the canon Gate names per the Name Bible: Ember, Gale, Bloom, Barrow, Deep, Rune).
 - **Structural integrity = FAITH** (unchanged). Where belief dies, a Gate deadens — and the region's dream is exposed.
 - **THE GATE RITE** — the realm quest: walk the old roads, relight each Gate, and perform the final Rite at the realm's heart-Gate. The Rite WAKES THE GOD: this is the giant-mode trigger site. (Already prototyped: pilgrimage -> Gate Rite -> god stands up through you -> realm cleansed.)
 - **Why the Hollow attacks Gates:** Gates are the healing points. Hollow a Gate and a region's dream can be lost.
@@ -165,3 +165,11 @@ Pets are no longer pixies — they are **DREAM-MOTES: tiny living fragments of t
 Mechanics (carry over from the pet canon): motes grow through FIVE LIGHT TIERS fed by witnessing your deeds (brightness earned, never sold); the tier system and cosmetic reskin monetization survive. NEW RITE MOMENT: at the Gate Rite climax, the mote runs INTO the rising god — a piece of the dream coming home — and returns brighter (tier-up moment written into the rite itself).
 
 The pixie/lantern-attire pet designs are retired from doctrine (kept in art history); the Emberling canon survives as Embermere's ember-fox lineage.
+
+
+## THE GAME TITLE + THE GATE RUNE (canon v1.2, Sept 5, 2026)
+
+- **GAME TITLE: AVALON: THE WAKING GATES** (BudE404 pick; search-cleared — no existing game/app/film/trademark on the title). The repo name matches: avalon-the-waking-gates.
+- **THE GATE RUNE = THE MARK.** One universal rune represents the game and the Gates: a trilithon arch of RUGGED rough-hewn weathered megalith (cracks, chisel pitting, chipped edges, age-patina — never polished) with a single rising flame through the center. The stone never glows; ONLY the flame carries the faction color (ember / ice-blue / gold-green / lantern-violet / pearl-teal / geode). Every pilgrim wears it as the Mark on the breastplate.
+- **ONE-ARMOR PRODUCTION LAW.** Armor sets are faction-neutral: one set per role per gender (6 roles x 2 genders = 12 total). Faction identity = the rune's glow color — a color swap, never an armor re-roll.
+- Logo canon: LOGO-AVALON-WAKING-GATES (sigil + Cinzel wordmark), 6 faction colorways. Doctrine: docs/PILGRIM_DESIGN_DOCTRINE.md (v1.4).

@@ -1,3 +1,5 @@
+> **NOTE — LEGACY WORKING NAMES.** Khaveth/Arashido et al. below are pre-Avalon-era working names kept for pipeline history. The pipeline itself is current and applies to the Twelve (canon names in docs/COLOSSI_CARDS.md). Filenames keep working names; lore uses the Name Bible canon.
+
 > ⚠️ **UPDATED FOR THE GIANT ERA (Sept 4 2026):** the 3-stage pipeline (Stage 1 character lock on neutral background → Stage 2 world composition → Stage 3 3D turnaround) REMAINS ACTIVE, but all scale/proportion references update: giants are 100-ft PRIMORDIAL-MAX raw elemental giants (ART_DIRECTION.md v2.0), NOT 9m exaggerated-armor titans. Character Lock now locks the primordial anatomy; turnaround sheets feed the Meshy→Mixamo flow per COMBAT_SPEC §7.
 
 # COLOSSUS PRODUCTION PIPELINE — Design Sheet System

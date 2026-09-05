@@ -1,4 +1,4 @@
-# THE COLD LANTERN — a Mythos Gates quest (share version)
+# THE COLD LANTERN — an AVALON: THE WAKING GATES quest (share version)
 *A plain-language walkthrough of one quest in the game. No jargon.*
 
 ---

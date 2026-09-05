@@ -68,7 +68,7 @@ The line that governs all of it: **sell identity, never power.** The master ques
 ### NEVER SOLD (the trust contract)
 Faith · relics · progression · world-state · gate integrity · anything affecting the map-progress bar · loot rates · power of any kind at any price.
 
-**Why this works commercially:** the audience that loves this fantasy will pay to look like their god at both scales — and the strongest cosmetics in our game (the giant form itself, the glimpse hand, the ascension moment) are exclusive to us because they're built on our mythology. We're not competing in the generic skin market; we sell the one thing only Mythos Gates can sell.
+**Why this works commercially:** the audience that loves this fantasy will pay to look like their god at both scales — and the strongest cosmetics in our game (the giant form itself, the glimpse hand, the ascension moment) are exclusive to us because they're built on our mythology. We're not competing in the generic skin market; we sell the one thing only AVALON: THE WAKING GATES can sell.
 
 ---
 

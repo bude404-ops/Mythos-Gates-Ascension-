@@ -1,34 +1,37 @@
-# Mythos Gates — Project Status
-_Last updated: Sept 5, 2026, 4:40 PM ET (BIGagent404)_
+# AVALON: THE WAKING GATES — Project Status
+_Last updated: Sept 5, 2026, 6:50 PM ET (BIGagent404) — game title LOCKED, repo renamed to match (avalon-the-waking-gates)._
 
-## ⚡ DOCTRINE LOCKED (Sept 5 2026): THE AVALON DOCTRINE — docs/AVALON_DOCTRINE.md is the MASTER LAW
-BudE404 locked the full cast/world restructure: mortals = HUMANS; the land IS the sleeping elemental gods; the colossal = the god standing up; powers = relic-gifts; pilgrimage = Grail-quest campaign; Gates = the gods' pulse-points (thin places); the GATE RITE wakes the god through the player (giant-mode trigger — already prototyped); the Hollow = the Wasteland (T3 Echo = false waking; the Forgotten = the first dead dream). World Bible rewritten to v3.0; Codex/Campaign/Sprites/NPC docs bannered to the doctrine. The 12 Warden/Keeper designs re-keyed as THE FIRST PILGRIMS (anointed legend-humans). ALL kept art canon survives (12 giant designs, hooded aspect law, relics, pets, faction/Gate names unchanged). Race forks (dwarves/construct, giant-kin) are moot.
+## ⚡ CANON STACK (in precedence order)
+1. **AVALON_DOCTRINE.md v1.2** — the master law (title + Gate Rune sections appended). Mortals = HUMANS; the land IS the sleeping gods; the colossal = the god standing up; powers = relic-gifts; pilgrimage = Grail-quest campaign; Gates = the gods' pulse-points; the Gate Rite wakes the god through the player; the Hollow = the Wasteland (T3 Echo = false waking).
+2. **AVALON_NAME_BIBLE.md v1.1** — the locked recast: realms Embermere/Galemarch/Bloomweald/Gloambarrow/Marenvale/Stonefell; gods Vaelthorn/Vessamaine, Haeldor/Sylwenna, Thevraine/Mirielle, Morvaine/Senneth, Nerovane/Ylsanne, Grathwyn/Bergrune; Gates Ember/Gale/Bloom/Barrow/Deep/Rune. Art filenames keep working names.
+3. **COLOSSUS_DESIGN_DOCTRINE.md v2.6** — the Twelve (shrine-crowns, world-body, geology continuity, gate-below, emergence, both-arms-out, element-hair, primordial surfaces, modesty-by-geology).
+4. **PILGRIM_DESIGN_DOCTRINE.md v1.4** — hooded heroes, the Mark (Gate Rune on the breastplate, flame-only faction color), glowing eyes, Cold Lantern, 6 roles, one-armor-per-role-per-gender law, modular pilgrim stack.
+5. **COLOSSI_CARDS.md** — the Twelve's lore cards (canon-name swept Sept 5 evening).
 
-## Current Phase: VAULT COMPLETE — Stage 2 worlds rolled, lore+combat synced, verdicts open
+## COMPLETE (all committed + pushed)
+- **THE TWELVE: 12/12 colossi canonized** (v9 primordial 12-set, first full-keep sheet of the Avalon era) — Kings + Queens per faction, gender-matched at the Gate Rite; individual canon art (art/approved/*-EMERGENCE-CANON.png) + lore cards.
+- **THE GATE RUNE + LOGO CANON** — rugged rough-hewn megalith trilithon arch, flame-only faction color (v3 RUGGED kept); LOGO-AVALON-WAKING-GATES lockup (sigil + Cinzel wordmark) + 6 faction colorways delivered.
+- **GAME NAME: AVALON: THE WAKING GATES** — picked + search-cleared; swept across docs + prototype titles; repo renamed to avalon-the-waking-gates.
+- **WAKING SIEGE PROTOTYPE LIVE** — budE404-ops.github.io/avalon-the-waking-gates/siege.html (wave defense at the Gate, wake stages arm→torso→full rise, FAITH economy, palm slams, mobile touch) + brightness pass (ash-dawn ambient, readable Hollow).
+- **STAGE 3 VIEWER LIVE** — /models.html — Vharkar v4 + Kiln-Warden v4 T-pose meshes (30k tris, Draco, <1.2MB).
+- **ROSTER 24/24 Stage 1 + all 24 Stage 2 world compositions rolled** (2/24 world verdicts in: Vaelthorn/Embermere + Vessamaine/Ember Gorge).
+- **HOLLOW SET** — T1 Undone, T2 Unmade Champion, T3 Gate-Worm, T3 Echo of the Forgotten canonized; Erased Drake + Still Choir + Furnace Brute pending; five Dead-God Shapes queued.
+- **LORE SYNC** — Name Bible swept; Gate names unified (Ember/Gale/Bloom/Barrow/Deep/Rune); old-era docs archived non-canon (docs/lore/archive-old-era/ + SUPERSEDED banners); TITAN_DESIGN_STANDARD + pipeline docs bannered legacy.
 
-### COMPLETE (all committed + pushed)
-- **ROSTER: 24/24 Stage 1 character canons** — 6 factions × (2 sleeping-god waking forms [primordial giants] + 2 FIRST PILGRIMS [anointed legend-humans; formerly 'sprite champions' — design canon unchanged: signature headgear, elemental bloodline tells, LOTR-craft armor]). Names locked: Vaelthorn/Vessamaine, Haeldor/Sylwenna, Thevraine/Mirielle, Morvaine/Senneth, Nerovane/Ylsanne, Grathwyn/Bergrune; champions by title (Kiln-Warden/Hearth-Keeper, Storm-Warden/Matriarch, Bloom-Warden/Bloom-Keeper, Gloam-Warden/Veil-Keeper, Tide-Warden/Pearl-Keeper, Quarry-Warden/Crystal-Keeper).
-- **STAGE 2: all 24 world compositions rolled + delivered** (Embermere → Heartroot Chamber). 2/24 canonized (Vaelthorn/Embermere, Vessamaine/Ember Gorge); 22 verdicts open.
-- **HOLLOW ENEMY SET: 7 units, 4 canonized** — T1 Undone (CANON), T2 Unmade Champion (CANON), T2 Erased Drake + Still Choir (pending), T3 Gate-Worm (CANON), T3 Echo of the Forgotten (CANON), T3 Hollow Furnace Brute / first Dead-God Shape (pending). Five more Dead-God Shapes queued behind the Furnace Brute verdict.
-- **LORE SYNC (continuity pass 1 + 2 complete):** Giant-Era Canonical Roster in Codex; gate names unified (Ember/Gale/Bloom/Dusk/Deep/Stone); First Forge myth re-cast to giant-era; 12/12 giant sagas; Skywilds→Galemarch drift fixed; old eras archived non-canon (docs/lore/archive-old-era/); LORE_CONTINUITY_AUDIT.md = the 11-layer gate map + fix log.
-- **COMBAT LAYER:** MYTHOS_DEITY_COMBAT_KITS.md (giant warrior/caster frames, faction element bursts + gate rites, 12 giant stat blocks, 12 sprite champion kits, FAITH economy); COMBAT_SPEC §7-§8 (dragon rebase retired; 100-ft lore vs 9m combat reconciled via the Gate's mouth).
-
-### Awaiting BudE404
-- 22 Stage 2 world-composition keeps (canonize per faction on keeps).
-- 3 Hollow keeps (Erased Drake, Still Choir, Hollow Furnace Brute) → then the five remaining Dead-God Shapes (dead-storm, dead-bloom, dead-lantern, dead-tide, dead-crystal).
-- Sprite companion skins layer (Mythos Sprites doc) — cosmetic pipeline, whenever.
+### Awaiting BudE404 (verdict queue)
+1. **PILGRIMS — humans production**: Warden of the Cinder Roads v3-RUNE (clean Avalon plate + breastplate rune + glowing eyes) — standing template verdict, then role ladder (Warden/Keeper/Walker/Singer/Smith/Vigil) + 12-set production (6 roles x 2 genders).
+2. **22 Stage 2 world-composition keeps** (per faction).
+3. **3 Hollow keeps** (Erased Drake, Still Choir, Furnace Brute) → five Dead-God Shapes.
+4. **Old prototype links die on the repo rename** — new links: budE404-ops.github.io/avalon-the-waking-gates/siege.html + /models.html.
 
 ### Locked Rules (current)
-1. Art grammar: LOTR-cinematic hand-painted stylized (all 24 + Hollow + worlds unified).
-2. Primordial-Max giant anatomy; element-formed faces; Uniform Surface Law (giantesses); empty-realm law; sprite elven LOTR armor + signature headgear; sprite-world sharp law (foreground anchor, world in depth).
-3. Generation prompts: NEVER a deity name/title in-prompt; zero text/emblems anywhere; wing-word banned in human-form prompts (lore-only).
-4. Hollow doctrine: elites anchor on vault canons (champion armor / giant mirror) — the Hollow steals our identity.
-5. Stage pipeline: 1 Character Lock → 2 World Composition (locked char as anchor) → 3 3D turnaround (A-pose, weapon separate) → Meshy/Mixamo → Godot + Unity.
-6. Unity: staged only — no builds, no credit spend, no migrations without explicit go.
-7. Approved asset → purge all older versions; one consolidated done-report per task; push to GitHub main on every milestone.
-8. Old-era docs are archived non-canon; the canon set is: CODEX (roster+doctrine), WORLD_BIBLE, CAMPAIGN_BIBLE, STORIES, DEEP_LORE, ENV_SHEETS, NPC_ROSTER, SPRITES, DEITY_COMBAT_KITS, HOLLOW_TIDE_BESTIARY, LORE_CONTINUITY_AUDIT, COMBAT_SPEC, GAMEFEEL_TOP3_SPEC.
+1. Art grammar: LOTR-cinematic hand-painted stylized; giants = primordial surfaces (zero human skin); pilgrims = clean elven-craft plate + rune + eyes.
+2. Generation prompts: NEVER a deity name/title in-prompt; zero text/emblems; wing-word banned in human-form prompts; word "hair" banned in colossus prompts.
+3. Armor sets faction-neutral — one per role per gender; faction = rune glow color swap.
+4. Stage pipeline: 1 Character Lock → 2 World Composition → 3 3D (single-view input, weaponless base, weapon as separate mesh) → Meshy/Mixamo → Godot + Unity.
+5. Unity: staged only — no builds, no credit spend, no migrations without explicit go.
+6. Approved asset → purge older versions; one consolidated done-report per task; push to GitHub main on every milestone.
 
 ### Ops
-- Repo: Mythos-Gates-Ascension (branch main). Pull --rebase before pushes.
-- Engines: Godot 4.7.2 + Unity (staged). Godot scripts live (trauma cam, footstep weight, ground-slam, ring shader); Unity C# staged only.
-- Unity Cloud service keys validated (secrets in encrypted store, never in repo; blocked on Unity Project ID — BudE404's Unity projects, not this game).
+- Repo: bude404-ops/avalon-the-waking-gates (branch main; Old-main:docs serves Pages). Pull --rebase before pushes.
+- Engines: Godot 4.7.2 + Unity (staged). 3D: Meshy credits ~2,394 remaining; TRELLIS as free fallback.
