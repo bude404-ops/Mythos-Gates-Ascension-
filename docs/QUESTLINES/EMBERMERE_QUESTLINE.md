@@ -66,3 +66,34 @@ The **Ashfall Depths** (procedural fracture dungeons) = **the Furnace King's fev
 - [x] Codex unlocks AFTER deeds (trophy case)
 - [x] Cold Lantern benchmark integrated without rewrite
 **PILOT PASSES — the five remaining realms run on this template.**
+
+---
+
+## CHAPTER EXTENSION (merged from the pilot draft — questlines 6/6 complete)
+
+The pilot draft (formerly docs/QUESTLINE_EMBEREMERE_PILOT.md) contributed four more doctrine-compliant quests, folded here as the chapter's vow-order:
+
+### V1 — "WHAT THE FORGE BURNS" (Kilnreach, theology test)
+- **HOOK:** a cold front has the kiln-city's furnaces failing; the glass-blowers' guild asks the pilgrim to find fuel. *(Want: the city survives the cold. Lie: the guild's ash-glass archive — the city's entire recorded history — is the only fuel left that burns hot enough. Cost: they know it, and won't say it first.)*
+- **TRAIL:** every alternative fuel fails on-screen (wet peat, green timber, hollow-ash — each attempt gutters). The player arrives at the archive door themselves.
+- **RITE:** the pilgrim stokes the furnace — whatever they feed it, they feed with their own hands.
+- **CHOICE:** burn the archive and the city lives warm / the archive stands and the kilns gutter out a season (the WOUNDED state seeds). **ECHO:** Kilnreach's glass is clear or smoke-gray forever; a glass-blower child either recites the city's lineages from memory ("we burned the papers, we keep the names") or stands in a cold shop.
+
+### V2 — "THE VIGIL" (the Cinder Gate approach — mystery by omission)
+- **HOOK:** no one asks for anything. A vigil-keeper at the Gate's scorched circle silently offers the pilgrim a place at the night fire. (The only quest in the chapter with no want — because the theology being shown is the Furnace-King's: a furnace does not ask.)
+- **TRAIL:** one night of vigil, played: the circle where nothing grows, the ash holding the shape of footprints not the pilgrim's, offerings left by travelers centuries dead.
+- **RITE:** the pilgrim stands the watch. Nothing is explained; the silence is the content.
+- **CHOICE:** at dawn, take the vigil-keepers' unclaimed tribute (real money, real gear) / leave it and mark the circle with their own flame. **ECHO:** at the chapter's Gate Rite, the tribute-taker's Mark flickers once; the marker's burns steadier. No one says why.
+- **TRUTH-SLIVER:** the god stood here, for a season, for nothing owed — the player assembles it themselves.
+
+### V3 — "GOOD STEEL" (the pilgrim road — Order politics)
+- **HOOK:** a Smith-Order quartermaster refuses to re-arm a wounded Warden road-captain — the Warden's rite-blade was "wasted on ceremony." *(Want: the captain's escort must leave by dawn. Lie: the Smith sold the steel meant for the repair to a Cantor caravan — at a profit. Cost: if it surfaces, the Smith's forge-credit collapses.)*
+- **TRAIL:** the pilgrim traces the missing steel through the Cantor caravan's song-receipts (Cantors record debts as sung lines — the player HEARS the ledger).
+- **RITE:** the pilgrim re-forges the blade's edge with the Smith — hours of hammer rhythm, the Smith talking with his hands, not his mouth.
+- **CHOICE:** expose the sale (the Smith is stripped from the road's support; the Wardens' deep trust) / bury it (the Smith owes the pilgrim a lifetime debt — and pays it at the Depths' door). **ECHO:** the road's Order stations open or close to the pilgrim.
+
+### V4 — "THE FIRST OATHBLADE" (the Depths beneath the Cinderlands — vow quest)
+- **HOOK:** the Gate Rite cannot complete without the Gate's own relic — and the shrine-keeper cannot say its name aloud (the sound goes missing — the silence-siege escalated).
+- **TRAIL:** the Depths: braided fracture-dungeons drawn from the Furnace-King's fever of the forge — halls of half-formed steel, walls that pour like slag, T1 nightmare-vermin swarms, a T2 Unmade Champion walking in a First Pilgrim's recovered armor (the vault's own grammar worn by the Hollow).
+- **RITE:** at the vault's heart, the pilgrim re-enacts the First Vigil's oath-half — the half no NPC can speak. (The player has been practicing the rite-fragments since Q1; now they land whole.)
+- **CHOICE:** claim the Oathblade and wake the Unmade Champion (hard fight, the relic comes home) / take the champion's armor and leave the blade (worth more at market — and the blade sleeps on). **ECHO:** the Gate Rite's final beat differs accordingly.
