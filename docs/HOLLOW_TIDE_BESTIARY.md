@@ -55,3 +55,14 @@ The Hollow canon files pre-date the style unification. The redo runs the whole b
 8. Standard prompt laws apply: solo subjects, zero text, no deity names, no banned vocabulary.
 
 **Redo order (one realm set at a time):** EMBERMERE SET FIRST — T1 MUTEFOLK, T2 UNMADE CHAMPION, T3 FURNACE BRUTE. On BudE404's per-unit verdicts: the remaining units (Shade-Beasts, Grimlights, Erased Drake, Still Choir, Gate-Worm, Echo of the Forgotten) + the five other realm sets roll on the kept grammar.
+
+---
+
+## THE ERASURE LINE (Sept 5 — BudE404's question: why does armor stay but flesh go?)
+
+The rule, made explicit: **the Hollow can only unmake what still IS element — it cannot touch what was MADE.**
+
+- **What erases:** living things, terrain, light, sound — anything that is still part of the world's ongoing formation. A person IS element in motion: grown, not made; alive means unfinished. The Hollow is the residue of unformed power, and it can only claim what belongs to its own grammar — the unfinished. A face, a voice, a flame: all element, all erasable.
+- **What survives:** anything fixed into final form by a maker's hands — a smithed plate, a sewn cloak, a carved lantern. Crafting is the mortal version of the NAMING: to make a thing is to declare "this is what it is, finished." And naming is the one act the Hollow cannot hollow (the same law the endgame turns on — to name a thing is to form it, and the Hollow cannot form).
+- **This is the whole horror:** the Hollow takes the person and leaves the plate BECAUSE the plate is more finished than the person. A man's armor outlasts the man in every sense — the Hollow just makes it literal. The Mutefolk wear their clothes because the clothes were made; the person inside was only grown.
+- **Design consequence (already canon, now reasoned):** every Hollow unit wears/carries what craft survived — clothing on T1s, full plate on T2s, stone-work on the Gate-Worm. And the player's own gear is proof they can't be fully hollowed while they hold made things — the lantern, the rite-tools, the Mark are anchors. That's why pilgrims carry tools at all: you cannot be erased while you hold something finished.
