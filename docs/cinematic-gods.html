@@ -276,7 +276,14 @@ async function play(){
     if(b.riseBefore)riser(b.riseBefore,.34);
     if(b.riser)riser(b.riser,.30);
     shot(b);
-    if(b.vid){const vd=document.querySelector('#'+b.vid+' video');vd.currentTime=0;vd.play().catch(()=>{});}
+    if(b.vid){const vd=document.querySelector('#'+b.vid+' video');
+      const ok=vd&&(vd._live||vd.readyState>=2);
+      if(ok){try{vd.currentTime=0;}catch(e){}
+        vd.play().then(()=>{vd._live=true;}).catch(()=>{vd._live=false;$(b.vid).classList.remove('on');});
+        /* stalled-buffer guard: if not actually playing 1.4s in (slow mobile data), retract to the moving still */
+        setTimeout(()=>{ if(!vd._live){ try{vd.pause();}catch(e){} $(b.vid).classList.remove('on'); } },1400);
+      }
+    }
     const el=$(b.vid||b.s);
     if(b.x==='dip'){ $('black').classList.add('on');
       await new Promise(r=>setTimeout(r,900));
