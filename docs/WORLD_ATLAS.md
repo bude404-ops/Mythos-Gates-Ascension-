@@ -1,8 +1,8 @@
 # THE WORLD ATLAS — geography, landmarks, and the Depths (v1 canon)
-Basis: MAP-AVALON-WORLD-v1.png + the six realm keyshots + six Depths dungeons (BudE404 world-art pass, Sept 5 2026).
+Basis: MAP-AVALON-WORLD-v2.png (v1 hand-drawn cartography retired by BudE404 verdict: map must match the painterly art style and show a Gate clearly in each realm) + the six realm keyshots + six Depths dungeons (BudE404 world-art pass, Sept 5 2026).
 Law: the Gates are PHYSICAL power-source landmarks, not fast-travel portals (MYG_MAP_MISSION_ARCHITECTURE). Map carries NO text — landmarks only; this doc holds the names.
 
-## THE ISLAND OF THE SIX GATES (world map v1)
+## THE ISLAND OF THE SIX GATES (world map v2 — painterly aerial matte-painting style, one megalithic Gate clearly visible per realm)
 
 A single island continent, six realms around a central volcanic heartland:
 
