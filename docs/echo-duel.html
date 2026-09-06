@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>AVALON: THE WAKING GATES — THE ECHO DUEL (T3)</title>
+<style>
+  html,body{margin:0;padding:0;overflow:hidden;background:#0b0908;font-family:Georgia,serif;-webkit-user-select:none;user-select:none;touch-action:none;height:100%}
+  #hud{position:fixed;inset:0;pointer-events:none;z-index:5}
+  .bar-wrap{position:absolute;left:50%;transform:translateX(-50%);width:min(64vw,460px);text-align:center}
+  #echo-wrap{top:12px}
+  #hp-wrap{bottom:118px;left:16px;transform:none;width:min(42vw,240px);text-align:left}
+  #faith-wrap{bottom:92px;left:16px;transform:none;width:min(42vw,240px);text-align:left}
+  .lbl{font-size:10px;letter-spacing:2px;color:#e8c9a0;text-shadow:0 1px 3px #000;margin-bottom:3px}
+  .bar{height:10px;background:#1a1210;border:1px solid #5a3a26;border-radius:6px;overflow:hidden;position:relative}
+  .bar > div{height:100%;border-radius:6px;transition:width .2s}
+  #echo-bar > div{background:linear-gradient(90deg,#4a4a52,#8a8a94)}
+  #hp-bar > div{background:linear-gradient(90deg,#ff8c2e,#ffd27a)}
+  #faith-bar > div{background:linear-gradient(90deg,#7ad0ff,#cfefff)}
+  .tick{position:absolute;top:-2px;width:2px;height:14px;background:rgba(255,220,168,.5)}
+  #phase{position:absolute;top:8px;left:12px;color:#e8c9a0;font-size:13px;letter-spacing:2px;text-shadow:0 1px 3px #000}
+  #stage{position:absolute;top:8px;right:12px;color:#ff9b4d;font-size:12px;letter-spacing:2px;text-shadow:0 1px 3px #000}
+  #banner{position:absolute;top:34%;left:0;right:0;text-align:center;color:#ffdca8;font-size:clamp(20px,5.5vw,40px);letter-spacing:6px;text-shadow:0 2px 12px #000;opacity:0;transition:opacity .5s;font-style:italic;text-align:center}
+  #banner small{display:block;font-size:14px;letter-spacing:2px;color:#c9b090;margin-top:10px;font-style:normal}
+  .btn{position:fixed;border-radius:50%;border:2px solid rgba(232,201,160,.55);background:rgba(30,20,14,.55);color:#e8c9a0;font-size:11px;letter-spacing:1px;display:flex;align-items:center;justify-content:center;z-index:6;font-family:Georgia,serif}
+  #atk{right:20px;bottom:26px;width:76px;height:76px;border-color:rgba(255,150,60,.7)}
+  #skill{right:112px;bottom:58px;width:58px;height:58px}
+  #volley{right:112px;bottom:126px;width:58px;height:58px}
+  #ward{left:20px;bottom:40px;width:80px;height:80px;border-color:rgba(255,230,170,.85);background:rgba(60,44,20,.6)}
+  #quake{right:178px;bottom:26px;width:58px;height:58px;border-color:rgba(255,110,60,.8)}
+  #nameit{right:20px;bottom:118px;width:64px;height:64px;border-color:rgba(255,230,170,.9);background:rgba(60,40,18,.7);display:none;font-size:10px}
+  .cd{position:absolute;inset:0;border-radius:50%;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;visibility:hidden}
+  #stick{position:fixed;left:14px;bottom:22px;width:110px;height:110px;border-radius:50%;border:1px solid rgba(232,201,160,.25);background:rgba(20,14,10,.3);z-index:6;display:none}
+  #knob{position:absolute;width:44px;height:44px;border-radius:50%;background:rgba(232,201,160,.35);left:33px;top:33px}
+  #overlay{position:fixed;inset:0;background:rgba(8,5,4,.9);z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#e8c9a0;text-align:center;padding:24px}
+  #overlay h1{font-size:clamp(22px,6vw,40px);letter-spacing:8px;margin:0 0 6px;color:#ffdca8;font-style:italic;font-weight:normal}
+  #overlay p{font-size:13px;line-height:1.75;max-width:540px;margin:8px 0}
+  #overlay button{margin-top:16px;padding:12px 34px;font-family:Georgia,serif;font-size:15px;letter-spacing:3px;background:none;border:1px solid #c98a4b;color:#ffdca8;border-radius:4px;cursor:pointer}
+  #cinebar-t,#cinebar-b{position:fixed;left:0;right:0;height:0;background:#000;z-index:8;transition:height .9s ease}
+  #cinebar-t{top:0}#cinebar-b{bottom:0}
+  body.cine #cinebar-t,body.cine #cinebar-b{height:7vh}
+  #vignette{position:fixed;inset:0;pointer-events:none;z-index:4;background:radial-gradient(ellipse at center, transparent 52%, rgba(5,3,2,.6) 100%);display:none}
+  body.playing #vignette{display:block}
+  #hud,#stick,.btn{display:none}
+  body.playing #hud{display:block}
+  body.playing .btn,body.playing #stick{display:flex}
+</style>
+</head>
+<body>
+<div id="vignette"></div><div id="cinebar-t"></div><div id="cinebar-b"></div>
+<div id="hud">
+  <div id="phase">PHASE I — GOD VS GOD</div>
+  <div id="stage">THE MIRROR</div>
+  <div class="bar-wrap" id="echo-wrap"><div class="lbl">THE ECHO OF THE FORGOTTEN</div><div class="bar" id="echo-bar"><div style="width:100%"></div><div class="tick" style="left:66%"></div><div class="tick" style="left:33%"></div></div></div>
+  <div class="bar-wrap" id="hp-wrap"><div class="lbl">VESSEL INTEGRITY</div><div class="bar" id="hp-bar"><div style="width:100%"></div></div></div>
+  <div class="bar-wrap" id="faith-wrap"><div class="lbl">FAITH</div><div class="bar" id="faith-bar"><div style="width:50%"></div></div></div>
+  <div id="banner"></div>
+</div>
+<div id="stick"><div id="knob"></div></div>
+<button class="btn" id="atk">SWING</button>
+<button class="btn" id="skill">SURGE<div class="cd" id="skill-cd">6</div></button>
+<button class="btn" id="volley">VOLLEY<div class="cd" id="volley-cd">6</div></button>
+<button class="btn" id="quake">QUAKE<div class="cd" id="quake-cd">10</div></button>
+<button class="btn" id="ward">WARD<div class="cd" id="ward-cd">5</div></button>
+<button class="btn" id="ward">WARD</button>
+<button class="btn" id="nameit">NAME IT</button>
+<div id="overlay">
+  <h1>THE ECHO DUEL</h1>
+  <p>At the Gate Rite's height, the Hollow answers the waking with its own god-shape: THE ECHO OF THE FORGOTTEN — a silhouette vaster than any giant, with no face, because no one ever recorded one. It fights as your DARK MIRROR: the same telegraphs you know, shed in reverse — where you shed element, it sheds absence.<br><br>
+  <b>I — GOD VS GOD (100&ndash;66%).</b> Gods do not chase — where you rose is your ground. WARD (bottom-left, timed) drinks any attack it catches and converts it to FAITH. Answer with the kit: three-swing combo (finisher staggers it), SURGE orbs, VOLLEY lances, QUAKE shockwaves.<br>
+  <b>II — THE DRAINED FIELD (66&ndash;33%).</b> Its shell cracks and the arena DE-COLORS: standing on drained ground saps the vessel. Fight from the ember islands.<br>
+  <b>III — THE WOUND (33&ndash;0%).</b> The god-fight and the climb are one encounter: the Echo splits, and YOU — the pilgrim, lantern in hand — cross inside the wound to strike the heart. Void-motes swarm; roll through them with the lantern raised.<br><br>
+  And at the heart: the endgame's one weapon. <i>To name a thing is to form it — and absence was all it had.</i></p>
+  <button id="start">BEGIN THE RITE</button>
+</div>
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script>
+(() => {
+const $ = id => document.getElementById(id);
+const W = () => innerWidth, H = () => innerHeight;
+const renderer = new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(W(), H());
+document.body.appendChild(renderer.domElement);
+
+const S = {
+  mode:'menu', echoHP:100, hp:100, faith:50,
+  surges:[], sheds:[], grayRings:[],
+  camShake:0, hitStop:0, time:0, swing:null, combo:0, comboTO:0,
+  arcs:[], lances:[], quakes:[], waves:[], dwaves:[], staggerT:0,
+  ward:0, wardMesh:null, riseT:0, wardT:0, waveTimer:0, wardM:null,
+  heartHits:0, naming:0, nameHold:0, invuln:0, invulnG:0, rollCD:0,
+};
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(58, W()/H(), 0.1, 400);
+
+function buildColossus(strataColor, fissureColor){
+  const g = new THREE.Group();
+  const strata = new THREE.MeshStandardMaterial({color:strataColor, roughness:1, flatShading:true});
+  const fis = new THREE.MeshBasicMaterial({color:fissureColor});
+  const torso = new THREE.Mesh(new THREE.CylinderGeometry(4.4, 6.0, 13, 7), strata); torso.position.y = 10; g.add(torso);
+  for (let i=0;i<4;i++){
+    const shelf = new THREE.Mesh(new THREE.CylinderGeometry(5.6-i*0.4, 6.6-i*0.4, 1.6, 7), strata);
+    shelf.position.y = 5.5+i*3; g.add(shelf);
+  }
+  for (let i=0;i<7;i++){
+    const f = new THREE.Mesh(new THREE.BoxGeometry(0.5, 2+Math.random()*3.5, 0.5), fis);
+    f.position.set((Math.random()-.5)*7, 4+Math.random()*11, 3.8); g.add(f);
+  }
+  const head = new THREE.Mesh(new THREE.DodecahedronGeometry(2.6, 0), strata); head.position.y = 18.4; g.add(head);
+  for (let i=0;i<6;i++){
+    const m = new THREE.Mesh(new THREE.ConeGeometry(0.9, 3.2, 4), strata);
+    const a = i/6*Math.PI*2; m.position.set(Math.cos(a)*3.4, 21.4, Math.sin(a)*3.4); g.add(m);
+  }
+  const armGeo = new THREE.CylinderGeometry(1.7, 2.3, 11, 6);
+  const aL = new THREE.Mesh(armGeo, strata); aL.position.set(-7.4, 11, 0); aL.rotation.z = 0.5; g.add(aL);
+  const aR = new THREE.Mesh(armGeo, strata); aR.position.set(7.4, 11, 0); aR.rotation.z = -0.5; g.add(aR);
+  const handL = new THREE.Mesh(new THREE.DodecahedronGeometry(2.2, 0), strata); handL.position.set(-10.4, 5.6, 0); g.add(handL);
+  const handR = handL.clone(); handR.position.x = 10.4; g.add(handR);
+  const skirt = new THREE.Mesh(new THREE.CylinderGeometry(7.5, 12, 5, 8), strata); skirt.position.y = 0.6; g.add(skirt);
+  g.userData.armR = aR; g.userData.armL = aL; g.userData.torso = torso;
+  return g;
+}
+
+function buildArena(){
+  scene.background = new THREE.Color(0x1c1410);
+  scene.fog = new THREE.FogExp2(0x1c1410, 0.008);
+  scene.add(new THREE.AmbientLight(0xa89880, 2.4));
+  const moon = new THREE.DirectionalLight(0xbac4e8, 1.1); moon.position.set(-30,60,20); scene.add(moon);
+  S.emberLight = new THREE.PointLight(0xff7a2e, 5.0, 130, 1.5); S.emberLight.position.set(0, 18, 0); scene.add(S.emberLight);
+  const ground = new THREE.Mesh(new THREE.CircleGeometry(60, 48), new THREE.MeshStandardMaterial({color:0x54402e, roughness:1}));
+  ground.rotation.x = -Math.PI/2; scene.add(ground);
+  const arch = new THREE.MeshStandardMaterial({color:0x6b6258, roughness:1, flatShading:true});
+  const gate = new THREE.Group();
+  const l = new THREE.Mesh(new THREE.BoxGeometry(3.2, 16, 3.2), arch); l.position.set(-6, 8, 0); gate.add(l);
+  const r = l.clone(); r.position.x = 6; gate.add(r);
+  const lintel = new THREE.Mesh(new THREE.BoxGeometry(16.5, 3.4, 3.4), arch); lintel.position.y = 16.5; gate.add(lintel);
+  gate.position.set(0, 0, -34); scene.add(gate);
+  for (let i=0;i<18;i++){
+    const h = 3+Math.random()*9;
+    const sp = new THREE.Mesh(new THREE.ConeGeometry(1+Math.random()*1.8, h, 5), new THREE.MeshStandardMaterial({color:0x54453a, roughness:1, flatShading:true}));
+    const a = Math.random()*Math.PI*2, d = 30+Math.random()*22;
+    sp.position.set(Math.cos(a)*d, h/2, Math.sin(a)*d); scene.add(sp);
+  }
+  S.player = buildColossus(0xc98a4b, 0xff7a2e);
+  S.player.position.set(0, 0, 12); scene.add(S.player);
+  S.echo = buildColossus(0x2e2e34, 0x0a0a0e);
+  S.echo.position.set(0, 0, -5); scene.add(S.echo);
+}
+
+function buildWound(){
+  S.woundScene = new THREE.Scene();
+  S.woundScene.background = new THREE.Color(0x070608);
+  S.woundScene.fog = new THREE.FogExp2(0x070608, 0.05);
+  S.woundScene.add(new THREE.AmbientLight(0x404048, 0.7));
+  const wallMat = new THREE.MeshStandardMaterial({color:0x242430, roughness:1, flatShading:true});
+  for (let i=0;i<26;i++){
+    const h = 6+Math.random()*10;
+    const w = new THREE.Mesh(new THREE.BoxGeometry(3+Math.random()*5, h, 3+Math.random()*5), wallMat);
+    const side = i%2? 1 : -1;
+    w.position.set(side*(7+Math.random()*4), h/2-2, -i*9+20); w.rotation.y = Math.random(); S.woundScene.add(w);
+  }
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(40, 320), new THREE.MeshStandardMaterial({color:0x15151c, roughness:1}));
+  floor.rotation.x = -Math.PI/2; S.woundScene.add(floor);
+  S.heart = new THREE.Mesh(new THREE.IcosahedronGeometry(2.4, 1), new THREE.MeshStandardMaterial({color:0x1a1a22, roughness:1, flatShading:true}));
+  S.heart.position.set(0, 4, -210); S.woundScene.add(S.heart);
+  const pil = new THREE.Group();
+  const bodyMat = new THREE.MeshStandardMaterial({color:0x7a6a54, roughness:1, flatShading:true});
+  const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.8, 2.4, 4, 8), bodyMat);
+  body.position.y = 2.2; pil.add(body);
+  const hood = new THREE.Mesh(new THREE.ConeGeometry(1.05, 1.5, 7), bodyMat); hood.position.y = 4.1; pil.add(hood);
+  const lantern = new THREE.PointLight(0xffb35c, 3.2, 26, 1.6); lantern.position.set(1.3, 3.4, 0.8); pil.add(lantern);
+  const lampBox = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.7, 0.5), new THREE.MeshStandardMaterial({color:0x8a6a3a, emissive:0xff9a3c, emissiveIntensity:0.8}));
+  lampBox.position.set(1.3, 3.4, 0.8); pil.add(lampBox);
+  const oath = new THREE.Mesh(new THREE.BoxGeometry(0.16, 2.6, 0.5), new THREE.MeshStandardMaterial({color:0x9a9aa8, roughness:0.5, metalness:0.4}));
+  oath.position.set(-0.9, 2.6, 0.6); oath.rotation.z = 0.35; pil.add(oath);
+  pil.position.set(0, 0, 14); S.woundScene.add(pil);
+  S.pilgrim = pil; S.pLantern = lantern;
+  S.motes = [];
+  const moteGeo = new THREE.SphereGeometry(0.55, 6, 5);
+  const moteMat = new THREE.MeshBasicMaterial({color:0x050507});
+  for (let i=0;i<14;i++){
+    const m = new THREE.Mesh(moteGeo, moteMat);
+    m.position.set((Math.random()-.5)*10, 2+Math.random()*3, -Math.random()*190);
+    S.woundScene.add(m); S.motes.push(m);
+  }
+  S.woundCam = new THREE.PerspectiveCamera(62, W()/H(), 0.1, 200);
+}
+
+// input
+const stick = $('stick'), knob = $('knob');
+let stickVec = {x:0, y:0}, tStart = null;
+const tpos = e => { const t = e.touches ? e.touches[0] : e; return {x:t.clientX, y:t.clientY}; };
+stick.addEventListener('touchstart', e=>{ tStart=tpos(e); e.preventDefault(); }, {passive:false});
+stick.addEventListener('touchmove', e=>{
+  const p = tpos(e); let dx = p.x-tStart.x, dy = p.y-tStart.y;
+  const d = Math.min(1, Math.hypot(dx,dy)/55) || 0, a = Math.atan2(dy,dx);
+  stickVec = {x:Math.cos(a)*d, y:Math.sin(a)*d};
+  knob.style.left = 33+Math.cos(a)*d*36+'px'; knob.style.top = 33+Math.sin(a)*d*36+'px'; e.preventDefault();
+}, {passive:false});
+stick.addEventListener('touchend', ()=>{ stickVec={x:0,y:0}; knob.style.left='33px'; knob.style.top='33px'; });
+addEventListener('keydown', e=>{ if(e.key==='a'||e.key==='A') doAttack(); if(e.key===' '||e.key==='s'||e.key==='S') doSkill(); if(e.key==='q'||e.key==='Q') doVolley(); if(e.key==='e'||e.key==='E') doQuake(); if(e.key==='w'||e.key==='W') doWard(); if(e.key==='w'||e.key==='W') doWard(); if(e.key==='Shift') doRoll(); });
+$('volley').addEventListener('touchstart', e=>{ doVolley(); e.preventDefault(); }, {passive:false});
+$('volley').addEventListener('mousedown', doVolley);
+$('quake').addEventListener('touchstart', e=>{ doQuake(); e.preventDefault(); }, {passive:false});
+$('quake').addEventListener('mousedown', doQuake);
+$('ward').addEventListener('touchstart', e=>{ doWard(); e.preventDefault(); }, {passive:false});
+$('ward').addEventListener('mousedown', doWard);
+$('ward').addEventListener('touchstart', e=>{ doWard(); e.preventDefault(); }, {passive:false});
+$('ward').addEventListener('mousedown', doWard);
+$('atk').addEventListener('touchstart', e=>{ doAttack(); e.preventDefault(); }, {passive:false});
+$('atk').addEventListener('mousedown', doAttack);
+$('skill').addEventListener('touchstart', e=>{ doSkill(); e.preventDefault(); }, {passive:false});
+$('skill').addEventListener('mousedown', doSkill);
+$('nameit').addEventListener('touchstart', e=>{ S.nameHold = 0.4; e.preventDefault(); }, {passive:false});
+$('nameit').addEventListener('mousedown', ()=>{ S.nameHold = 0.4; });
+
+let atkCD = 0, skillCD = 0, volleyCD = 0, quakeCD = 0, wardCD = 0;
+function showCd(id, v){ const el=$(id); if(v>0){ el.style.visibility='visible'; el.textContent=Math.ceil(v); } else el.style.visibility='hidden'; }
+function doAttack(){
+  if (S.mode==='giant' && atkCD<=0){
+    const now = performance.now();
+    S.combo = (now - S.comboTO < 1300) ? S.combo + 1 : 0;
+    if (S.combo > 2) S.combo = 0;
+    S.comboTO = now;
+    const fin = S.combo === 2;
+    atkCD = fin ? 1.1 : 0.72;
+    const dir = S.echo.position.clone().sub(S.player.position).setY(0).normalize();
+    S.swing = {t:0, arm: S.combo===0 ? 'L' : (S.combo===1 ? 'R' : 'B')};
+    const arc = new THREE.Mesh(new THREE.RingGeometry(2.5, 16, 24, 1, fin?-0.9:0.5, fin?2.6:1.6), new THREE.MeshBasicMaterial({color: fin?0xffc04a:0xffa04a, transparent:true, opacity:0.85, side:THREE.DoubleSide}));
+    arc.position.copy(S.player.position).addScaledVector(dir, 12).add(new THREE.Vector3(0, 11, 0));
+    arc.lookAt(camera.position); scene.add(arc); S.arcs.push({m:arc, t:0.3});
+    const d = S.player.position.distanceTo(S.echo.position);
+    if (d < 25){ dmgEcho(fin?8.5:4.2); S.hitStop = fin?0.13:0.08; S.camShake = fin?1.0:0.45; if (fin) staggerEcho(); }
+  } else if (S.mode==='wound' && atkCD<=0){
+    atkCD = 0.45;
+    const dh = S.heart.position.distanceTo(S.pilgrim.position);
+    if (dh < 9){ S.heartHits++; S.hitStop = 0.1; S.camShake = 0.8; heartShock();
+      if (S.heartHits>=3 && S.heartHits<90){ S.heartHits=90; $('nameit').style.display='flex'; banner('THE HEART LIES BARE','hold NAME IT — to name a thing is to form it'); }
+    } else {
+      for (const m of S.motes){ if (m.visible && m.position.distanceTo(S.pilgrim.position) < 4.5){ m.visible=false; } }
+    }
+  }
+}
+function doSkill(){
+  if (S.mode==='giant' && skillCD<=0 && S.faith>=15){
+    skillCD = 3.2; S.faith -= 15;
+    const dir = S.echo.position.clone().sub(S.player.position).setY(0).normalize();
+    const surge = new THREE.Mesh(new THREE.SphereGeometry(1.7, 8, 6), new THREE.MeshBasicMaterial({color:0xff8c2e}));
+    surge.position.copy(S.player.position).add(new THREE.Vector3(0, 12, 0));
+    scene.add(surge); S.surges.push({m:surge, v:dir.multiplyScalar(38), life:2.4});
+  } else if (S.mode==='wound'){ doRoll(); }
+}
+function doRoll(){ if (S.mode==='wound' && S.rollCD<=0){ S.rollCD = 1.1; S.invuln = 0.45; } }
+
+function doVolley(){
+  if (S.mode!=='giant' || volleyCD>0 || S.faith<25) return;
+  volleyCD = 6; S.faith -= 25;
+  const base = S.echo.position.clone();
+  for (let i=0;i<6;i++){
+    const off = new THREE.Vector3((Math.random()-.5)*7, 0, (Math.random()-.5)*7);
+    const mark = new THREE.Mesh(new THREE.RingGeometry(1.5, 2.3, 24), new THREE.MeshBasicMaterial({color:0x9a3f1e, transparent:true, opacity:0, side:THREE.DoubleSide}));
+    mark.rotation.x = -Math.PI/2; mark.position.copy(base).add(off); mark.position.y = 0.14; scene.add(mark);
+    const lance = new THREE.Mesh(new THREE.ConeGeometry(0.55, 9, 6), new THREE.MeshBasicMaterial({color:0xff7a2e}));
+    lance.rotation.x = Math.PI; lance.position.copy(mark.position).add(new THREE.Vector3(0, 40, 0));
+    lance.visible = false; scene.add(lance);
+    S.lances.push({mark, lance, t: -i*0.12});
+  }
+}
+function doQuake(){
+  if (S.mode!=='giant' || quakeCD>0 || S.faith<40) return;
+  quakeCD = 10; S.faith -= 40;
+  S.swing = {t:0.12, arm:'B'};                                        // both fists overhead then down
+  S.hitStop = 0.1; S.camShake = 1.4;
+  for (let i=0;i<3;i++){
+    const r = new THREE.Mesh(new THREE.RingGeometry(1, 1.8, 48), new THREE.MeshBasicMaterial({color:0xff9a3c, transparent:true, opacity:0.85, side:THREE.DoubleSide}));
+    r.rotation.x = -Math.PI/2; r.position.copy(S.player.position); r.position.y = 0.13; r.visible = false;
+    scene.add(r); S.quakes.push({m:r, r:0, delay:i*0.3, hit:false});
+  }
+}
+function doWard(){
+  if (S.mode!=='giant' || wardCD>0) return;
+  wardCD = 2.2; S.wardT = 0.6;
+  const dir = S.echo.position.clone().sub(S.player.position).setY(0).normalize();
+  const ward = new THREE.Mesh(new THREE.RingGeometry(6, 8.5, 32, 1, 0.4, 2.4), new THREE.MeshBasicMaterial({color:0xffd27a, transparent:true, opacity:0.75, side:THREE.DoubleSide}));
+  ward.position.copy(S.player.position).addScaledVector(dir, 6).add(new THREE.Vector3(0, 12, 0));
+  ward.lookAt(camera.position);
+  scene.add(ward); S.wardM = ward;
+}
+function staggerEcho(){
+  if (S.telegraph){ scene.remove(S.telegraph.m); S.telegraph = null; }
+  echoState.act = 'idle'; echoState.t = 0; echoState.next = 1.6;
+  S.staggerT = 0.7;
+}
+function knockEcho(d){
+  const dir = S.echo.position.clone().sub(S.player.position).setY(0).normalize();
+  S.echo.position.addScaledVector(dir, d);
+}
+
+function doWard(){
+  if (S.mode!=='giant' || wardCD>0 || S.riseT>0) return;
+  wardCD = 4.5; S.ward = 0.8;
+  S.wardMesh.visible = true;
+}
+
+// echo behavior
+let echoState = {act:'idle', t:0, next: 1.2};
+function dmgEcho(d){
+  if (S.echoHP<=0) return;
+  S.echoHP = Math.max(0, S.echoHP - d);
+  $('echo-bar').firstElementChild.style.width = S.echoHP+'%';
+  if (S.echoHP<=66 && !S.inP2) enterPhase2();
+  if (S.echoHP<=33) enterPhase3();
+}
+function echoAct(dt){
+  S.echo.lookAt(S.player.position.x, 0, S.player.position.z);
+  const e = echoState; e.t += dt;
+  const speed = S.echoHP<66 ? 1.4 : 1;
+  const gap = S.echo.position.distanceTo(S.player.position);
+  const dirP = S.player.position.clone().sub(S.echo.position).setY(0).normalize();
+  if (S.staggerT > 0){
+    S.staggerT -= dt;
+    S.echo.userData.torso.rotation.z = 0.16 * Math.sin(Math.min(1, S.staggerT) * 4);
+    return;
+  }
+  S.echo.userData.torso.rotation.z = 0;
+  if (e.act === 'idle'){
+    if (e.t > e.next){
+      const r = Math.random();
+      if (gap < 20 && r < 0.38) e.act = 'lash';
+      else if (r < 0.60) e.act = 'shed';
+      else if (r < 0.82) e.act = 'slam';
+      else e.act = 'beam';
+      e.t = 0;
+      if (e.act === 'shed'){
+        const tg = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.6, 40), new THREE.MeshBasicMaterial({color:0x1a1a20, transparent:true, opacity:0.6}));
+        tg.position.copy(S.echo.position).add(new THREE.Vector3(0, 12, 0));
+        tg.lookAt(S.player.position.x, 12, S.player.position.z); scene.add(tg);
+        S.telegraph = {m:tg, t:1.1};
+      } else if (e.act === 'slam'){
+        const ring = new THREE.Mesh(new THREE.RingGeometry(5.2, 5.6, 40), new THREE.MeshBasicMaterial({color:0x2a2a34, side:THREE.DoubleSide, transparent:true, opacity:0.75}));
+        ring.rotation.x = -Math.PI/2; ring.position.set(S.player.position.x, 0.15, S.player.position.z);
+        scene.add(ring); S.telegraph = {m:ring, t:1.5, slam:true};
+      } else if (e.act === 'lash'){
+        const tg = new THREE.Mesh(new THREE.RingGeometry(2.2, 15, 24, 1, 0.4, 1.4), new THREE.MeshBasicMaterial({color:0x14141a, transparent:true, opacity:0, side:THREE.DoubleSide}));
+        tg.position.copy(S.echo.position).addScaledVector(dirP, 11).add(new THREE.Vector3(0, 11, 0));
+        tg.lookAt(camera.position); scene.add(tg);
+        S.telegraph = {m:tg, t:0.9, lash:true};
+      } else if (e.act === 'beam'){
+        const tg = new THREE.Mesh(new THREE.BoxGeometry(1.4, 1.4, 62), new THREE.MeshBasicMaterial({color:0x0c0c12, transparent:true, opacity:0.45}));
+        tg.position.copy(S.echo.position).addScaledVector(dirP, 31).add(new THREE.Vector3(0, 11, 0));
+        tg.lookAt(S.player.position.x, 11, S.player.position.z); scene.add(tg);
+        S.telegraph = {m:tg, t:1.25, beam:true, dir:dirP.clone()};
+      }
+    }
+  }
+  if (S.telegraph){
+    S.telegraph.t -= dt;
+    if (S.telegraph.lash) S.telegraph.m.material.opacity = Math.min(0.6, (0.9 - S.telegraph.t) * 1.2);
+    if (S.telegraph.t <= 0){
+      const tg = S.telegraph;
+      if (tg.slam){
+        const p = tg.m.position;
+        if (S.player.position.distanceTo(new THREE.Vector3(p.x, 0, p.z)) < 6.4) hurtPlayer(16);
+        S.camShake = 1.0;
+      } else if (tg.lash){
+        if (S.echo.position.distanceTo(S.player.position) < 19) hurtPlayer(18);
+        S.camShake = 0.8;
+      } else if (tg.beam){
+        const v = S.player.position.clone().sub(S.echo.position).setY(0);
+        const along = v.dot(tg.dir);
+        const perpD = v.clone().addScaledVector(tg.dir, -along).length();
+        if (along > 4 && along < 64 && perpD < 5) hurtPlayer(24);   // dodge = step off the line (depth)
+        S.camShake = 1.1;
+        tg.m.material.color.setHex(0x3a3a48); tg.m.material.opacity = 0.95;
+        setTimeout(()=>scene.remove(tg.m), 260);
+      } else {
+        const dir = S.player.position.clone().sub(S.echo.position).setY(0).normalize();
+        for (let i=0;i<4;i++){
+          const sh = new THREE.Mesh(new THREE.SphereGeometry(1.4, 7, 5), new THREE.MeshBasicMaterial({color:0x0a0a0e}));
+          sh.position.copy(S.echo.position).add(new THREE.Vector3(0, 12, 0)).addScaledVector(dir, i*3);
+          scene.add(sh); S.sheds.push({m:sh, v:dir.clone().multiplyScalar(30), life:2.2});
+        }
+      }
+      if (!tg.beam) scene.remove(tg.m);
+      S.telegraph = null; e.act = 'idle'; e.t = 0; e.next = (S.echoHP<33 ? 1.5 : 2.3)/speed;
+    }
+  }
+}
+function hurtPlayer(d){
+  if (S.mode!=='giant' || S.invulnG>0) return;
+  if (S.ward > 0){ S.ward = 0; S.camShake = 0.5; S.hitStop = 0.08; return; }  // the VOW shields the god — WARD blocks
+  if (S.wardT > 0){ S.faith = Math.min(100, S.faith + 10); S.camShake = 0.35; return; } // the WARD drinks it
+  S.hp = Math.max(0, S.hp - d); $('hp-bar').firstElementChild.style.width = S.hp+'%';
+  S.camShake = 0.9; S.invulnG = 0.5;
+  if (S.hp<=0) lose();
+}
+
+// phases
+function enterPhase2(){
+  S.inP2 = true;
+  banner('THE SHELL CRACKS','de-coloration waves pulse from it — time the WARD');
+  $('phase').textContent = 'PHASE II — THE DRAINED FIELD'; $('stage').textContent = 'DE-COLORATION';
+  S.camShake = 1.6; S.emberLight.intensity = 2.2;
+  S.waveTimer = 1.6;
+  scene.traverse(o=>{ if (o.geometry && o.geometry.type==='CircleGeometry'){ o.material.color.setHex(0x3a3a40); } });
+}
+function enterPhase3(){
+  if (S.mode!=='giant') return;
+  S.mode = 'transition';
+  banner('THE WOUND OPENS','the god-fight and the climb are one encounter');
+  $('phase').textContent = 'PHASE III — THE WOUND'; $('stage').textContent = 'PILGRIM SCALE';
+  S.camShake = 2.2;
+  setTimeout(()=>{
+    if (!S.woundScene) buildWound();
+    S.mode='wound';
+    document.body.classList.remove('cine');
+    $('stick').style.display='flex'; $('ward').style.display='none';
+    $('atk').textContent='STRIKE'; $('skill').textContent='ROLL';
+    $('volley').style.display='none'; $('quake').style.display='none';
+    $('hp-wrap').style.display='none'; $('faith-wrap').style.display='none';
+    S.hp=100;
+    banner('INSIDE THE ABSENCE','lantern up — roll through the motes — reach the heart');
+  }, 1800);
+}
+function heartShock(){
+  S.heart.material.emissive.setHex(0x883333); S.heart.material.emissiveIntensity = 1.2;
+  setTimeout(()=>{ S.heart.material.emissiveIntensity = 0; }, 240);
+  let spawned = 0;
+  for (const m of S.motes){ if (!m.visible && spawned<3){ m.visible=true; m.position.set((Math.random()-.5)*9, 2+Math.random()*3, S.pilgrim.position.z-8-Math.random()*10); spawned++; } }
+}
+function isInDrainedZone(p){
+  if (!S.inP2 || !S.grayRings.length) return false;
+  const d = Math.hypot(p.x - S.echo.position.x, p.z - S.echo.position.z);
+  const maxR = Math.max(...S.grayRings.map(g=>g.r));
+  return d < maxR - 1.5;
+}
+function win(){
+  S.mode='won';
+  document.body.classList.remove('playing');
+  document.body.classList.remove('cine');
+  const ov = $('overlay'); ov.style.display='flex';
+  ov.innerHTML = '<h1>THE FORGOTTEN, NAMED</h1><p>The absence takes form — and absence was all it had. The silhouette un-hollows from the name outward, a shape at last, dissolving to light.<br><br><i>A man\'s armor outlasted the man. A name outlasted the god.</i></p><button onclick="location.reload()">RUN THE RITE AGAIN</button>';
+}
+function lose(){
+  if (S.mode==='lost'||S.mode==='won') return;
+  S.mode='lost';
+  document.body.classList.remove('playing');
+  document.body.classList.remove('cine');
+  const ov = $('overlay'); ov.style.display='flex';
+  ov.innerHTML = '<h1>THE VESSEL FAILS</h1><p>The Echo cannot cross a Gate while a Gate stands — but it can wait. It always could.<br><br>The Rite can be run again.</p><button onclick="location.reload()">RUN THE RITE AGAIN</button>';
+}
+let bannerTO = null;
+function banner(t, sub){
+  const b = $('banner');
+  b.innerHTML = t + (sub?'<small>'+sub+'</small>':'');
+  b.style.opacity = 1;
+  if (bannerTO) clearTimeout(bannerTO);
+  bannerTO = setTimeout(()=>{ b.style.opacity = 0; }, 2800);
+}
+
+// loop
+let last = performance.now();
+function loop(now){
+  requestAnimationFrame(loop);
+  let dt = Math.min(0.05, (now-last)/1000); last = now;
+  if (S.hitStop>0){ S.hitStop-=dt; dt *= 0.15; }
+  S.time += dt;
+  atkCD -= dt; skillCD -= dt; volleyCD -= dt; quakeCD -= dt; wardCD -= dt; S.wardT -= dt; S.invulnG -= dt; S.nameHold -= dt;
+  showCd('skill-cd', skillCD); showCd('volley-cd', volleyCD); showCd('quake-cd', quakeCD); showCd('ward-cd', wardCD);
+
+  if (S.mode==='giant' || S.mode==='transition'){
+    if (S.mode==='giant'){
+      // EMERGENCE LAW (BudE404 verdict): the god is STATIONARY — where it rose is its position. It does not chase.
+      S.player.lookAt(S.echo.position.x, 0, S.echo.position.z);
+      const axis = S.echo.position.clone().sub(S.player.position).setY(0);
+      const alen = Math.max(0.001, axis.length()); axis.divideScalar(alen);
+      let perp = new THREE.Vector3(-axis.z, 0, axis.x);
+      if (S.lastPerp && perp.dot(S.lastPerp) < 0) perp.negate();
+      S.lastPerp = perp.clone(); S.curPerp = perp.clone();
+      S.faith = Math.min(100, S.faith + dt*6);
+      $('faith-bar').firstElementChild.style.width = S.faith+'%';
+      if (S.inP2){
+        S.waveTimer -= dt;
+        if (S.waveTimer <= 0){ S.waveTimer = 4.2; S.grayRings.push({r:0, speed:7, wave:true}); }
+      }
+      if (S.swing){
+        S.swing.t += dt; const t = S.swing.t/0.4;
+        const u = S.player.userData; const a = -Math.sin(Math.min(1,t)*Math.PI)*2.1;
+        if (S.swing.arm==='L') u.armL.rotation.x = a; else if (S.swing.arm==='R') u.armR.rotation.x = a; else { u.armL.rotation.x = a; u.armR.rotation.x = a; }
+        if (t>=1){ u.armL.rotation.x = 0; u.armR.rotation.x = 0; S.swing = null; }
+      }
+      echoAct(dt);
+      S.player.userData.torso.scale.y = 1 + Math.sin(S.time*0.9)*0.01;
+    }
+    for (let i=S.surges.length-1;i>=0;i--){
+      const s = S.surges[i]; s.life-=dt;
+      s.m.position.addScaledVector(s.v, dt);
+      if (s.m.position.distanceTo(S.echo.position.clone().add(new THREE.Vector3(0,12,0))) < 7){ dmgEcho(7.5); S.camShake=0.7; scene.remove(s.m); S.surges.splice(i,1); continue; }
+      if (s.life<=0){ scene.remove(s.m); S.surges.splice(i,1); }
+    }
+    for (let i=S.sheds.length-1;i>=0;i--){
+      const s = S.sheds[i]; s.life-=dt;
+      s.m.position.addScaledVector(s.v, dt);
+      if (s.m.position.distanceTo(S.player.position.clone().add(new THREE.Vector3(0,12,0))) < 6.5){ hurtPlayer(13); scene.remove(s.m); S.sheds.splice(i,1); continue; }
+      if (s.life<=0){ scene.remove(s.m); S.sheds.splice(i,1); }
+    }
+    for (let i=S.arcs.length-1;i>=0;i--){
+      const a = S.arcs[i]; a.t -= dt; a.m.material.opacity = Math.max(0, a.t*2.8);
+      if (a.t<=0){ scene.remove(a.m); S.arcs.splice(i,1); }
+    }
+    for (let i=S.lances.length-1;i>=0;i--){
+      const L = S.lances[i]; L.t += dt;
+      if (L.t < 0) continue;
+      L.mark.material.opacity = Math.min(0.6, L.t*1.4);
+      L.lance.visible = true;
+      L.lance.position.y -= 64*dt;
+      if (L.lance.position.y <= 1){
+        if (L.mark.position.distanceTo(S.echo.position) < 5.5){ dmgEcho(3.2); S.camShake = Math.max(S.camShake, 0.5); }
+        scene.remove(L.mark); scene.remove(L.lance); S.lances.splice(i,1);
+      }
+    }
+    for (let i=S.quakes.length-1;i>=0;i--){
+      const q = S.quakes[i];
+      if (q.delay > 0){ q.delay -= dt; continue; }
+      q.m.visible = true;
+      q.r += 34*dt;
+      q.m.geometry.dispose(); q.m.geometry = new THREE.RingGeometry(Math.max(0.1,q.r), q.r+2.2, 48);
+      q.m.material.opacity = Math.max(0, 0.85 - q.r*0.012);
+      if (!q.hit){
+        const dE = S.player.position.distanceTo(S.echo.position);
+        if (Math.abs(dE - q.r) < 3){ q.hit = true; dmgEcho(5); staggerEcho(); }
+      }
+      if (q.r > 70){ scene.remove(q.m); S.quakes.splice(i,1); }
+    }
+    if (S.wardT <= 0 && S.wardM){ scene.remove(S.wardM); S.wardM = null; }
+    if (S.wardM){ S.wardM.material.opacity = Math.max(0, Math.min(0.75, S.wardT*1.5)); }
+    for (let i=S.grayRings.length-1;i>=0;i--){
+      const g = S.grayRings[i];
+      g.r += g.speed*dt;
+      if (!g.m){
+        const r = new THREE.Mesh(new THREE.RingGeometry(Math.max(0.1,g.r), g.r+1.4, 64), new THREE.MeshBasicMaterial({color: g.wave?0x3a3a44:0x2e2e36, side:THREE.DoubleSide, transparent:true, opacity: g.wave?0.55:0.35}));
+        r.rotation.x = -Math.PI/2; r.position.y = 0.12; scene.add(r); g.m = r;
+      } else { g.m.geometry.dispose(); g.m.geometry = new THREE.RingGeometry(Math.max(0.1,g.r), g.r+1.4, 64); }
+      if (g.wave && !g.hitP && Math.abs(g.r - S.player.position.distanceTo(S.echo.position)) < 2.2){ g.hitP = true; hurtPlayer(8); }
+      if (g.r > 70){ scene.remove(g.m); S.grayRings.splice(i,1); }
+    }
+    // SIDE VIEW OF THE BATTLE (BudE404 verdict: GOD VS GOD = side view of the duel — god vs waves/anything else = camera facing its front)
+    const p = S.player.position;
+    const mid = p.clone().add(S.echo.position).multiplyScalar(0.5);
+    const perp = (S.curPerp || new THREE.Vector3(1,0,0)).clone();
+    const camT = mid.clone().addScaledVector(perp, 64).add(new THREE.Vector3(0, 24, 0));   // zoomed out — the full scene reads
+    camera.position.lerp(camT, 0.06);
+    camera.fov += (50 - camera.fov)*0.1; camera.updateProjectionMatrix();
+    camera.lookAt(mid.x, 11, mid.z);
+    if (S.camShake>0){ S.camShake-=dt*2; camera.position.x += (Math.random()-.5)*S.camShake; camera.position.y += (Math.random()-.5)*S.camShake*0.6; }
+    renderer.render(scene, camera);
+  }
+  else if (S.mode==='wound'){
+    const v = new THREE.Vector3(stickVec.x, 0, stickVec.y).multiplyScalar((S.invuln>0? 16:8)*dt);
+    S.pilgrim.position.add(v);
+    S.pilgrim.position.x = THREE.MathUtils.clamp(S.pilgrim.position.x, -9, 9);
+    S.pilgrim.position.z = Math.max(-204, S.pilgrim.position.z);
+    if (v.lengthSq()>0.0001) S.pilgrim.rotation.y = Math.atan2(stickVec.x, stickVec.y);
+    S.invuln -= dt; S.rollCD -= dt;
+    $('skill-cd').style.visibility = S.rollCD>0 ? 'visible' : 'hidden'; if (S.rollCD>0) $('skill-cd').textContent = Math.ceil(S.rollCD);
+    S.pilgrim.position.y = S.invuln>0 ? Math.abs(Math.sin(S.time*20))*0.7 : 0;
+    for (const m of S.motes){
+      if (!m.visible) continue;
+      const to = S.pilgrim.position.clone().setY(m.position.y).sub(m.position);
+      if (to.length()<14) m.position.add(to.normalize().multiplyScalar(3.4*dt));
+      if (m.position.distanceTo(S.pilgrim.position.clone().setY(m.position.y)) < 1.6 && S.invuln<=0){
+        S.hp -= 10; $('hp-bar').firstElementChild.style.width = Math.max(0,S.hp)+'%'; S.camShake=0.5;
+        m.position.z = S.pilgrim.position.z - 14 - Math.random()*10;
+        if (S.hp<=0) lose();
+      }
+    }
+    // heart strikes then the naming
+    if (S.heartHits>=90){
+      if (S.nameHold>0){ S.naming += dt; S.nameHold = 0;
+        S.pLantern.intensity = 3.2 + S.naming*3; S.heart.material.emissive.setHex(0xffd27a); S.heart.material.emissiveIntensity = S.naming*0.6;
+        if (S.naming > 2.4) win();
+      } else { S.naming = Math.max(0, S.naming - dt*2); S.pLantern.intensity = 3.2; S.heart.material.emissiveIntensity = S.naming*0.3; }
+    }
+    S.heart.rotation.y += dt*0.6;
+    const pp = S.pilgrim.position;
+    S.woundCam.aspect = W()/H(); S.woundCam.updateProjectionMatrix();
+    // FRONT VIEW (BudE404 verdict): camera ahead of the pilgrim in the corridor, facing his front as he advances
+    S.woundCam.position.lerp(new THREE.Vector3(pp.x*0.5, 6.4, pp.z-10.5), 0.12);
+    S.woundCam.lookAt(pp.x*0.85, 3.2, pp.z+2);
+    if (S.camShake>0){ S.camShake-=dt*2; S.woundCam.position.x += (Math.random()-.5)*S.camShake; }
+    renderer.render(S.woundScene, S.woundCam);
+  }
+  else { renderer.render(scene, camera); }
+}
+
+$('start').addEventListener('click', ()=>{
+  $('overlay').style.display='none';
+  document.body.classList.add('playing');
+  document.body.classList.add('cine');
+  $('stick').style.display='none'; $('ward').style.display='flex';
+  S.mode='giant';
+  banner('IT ANSWERS THE WAKING','your dark mirror — read the reverse-shed');
+});
+
+buildArena();
+addEventListener('resize', ()=>{ renderer.setSize(W(),H()); camera.aspect=W()/H(); camera.updateProjectionMatrix(); });
+requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
