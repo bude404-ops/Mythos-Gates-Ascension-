@@ -353,7 +353,7 @@ function startShot(i){
   if(s.narr) setTimeout(()=>showNarr(s.narr, s.dur*0.8), 350);
   if(s.vo){ try{ voEl.src=s.vo; voEl.currentTime=0; voEl.volume=.95; voEl.play(); }catch(e){} }
   if(s.clip){
-    vclip.src=s.clip; vclip.currentTime=0; vclip.style.opacity=0;
+    vclip.src=s.clip; vclip.currentTime=0; vclip.playbackRate=0.6; vclip.style.opacity=0;
     vclip.play().then(()=>{ vclip.style.opacity=1; }).catch(()=>{});
   } else {
     vclip.style.opacity=0;
