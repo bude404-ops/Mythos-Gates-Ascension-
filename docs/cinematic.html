@@ -23,6 +23,19 @@
   #narr span { font-size:clamp(15px,2.6vw,34px); letter-spacing:.42em; text-indent:.42em; color:#e8dcc6;
     text-transform:uppercase; opacity:0; transform:scale(1.04); filter:drop-shadow(0 2px 14px rgba(0,0,0,.9));
     font-weight:400; }
+  /* studio card */
+  #studio { position:fixed; inset:0; z-index:25; background:#000; display:none; flex-direction:column;
+    align-items:center; justify-content:center; gap:2.6vh; opacity:0; transition:opacity 1.1s ease; }
+  #studio.on { display:flex; }
+  #studio img { max-width:min(46vw,520px); width:46vw; filter:drop-shadow(0 0 34px rgba(255,130,45,.14)); }
+  #studio .co { color:#8d8271; font-size:clamp(10px,1.1vw,13px); letter-spacing:.42em; text-indent:.42em; text-transform:uppercase; }
+  /* credits cards */
+  #credits { position:fixed; inset:0; z-index:27; display:none; flex-direction:column; align-items:center;
+    justify-content:center; pointer-events:none; }
+  #credits.on { display:flex; }
+  #credits .role { color:#8d8271; font-size:clamp(10px,1.1vw,13px); letter-spacing:.4em; text-indent:.4em; text-transform:uppercase; margin-bottom:1.6vh; }
+  #credits .name { color:#e8dcc6; font-size:clamp(18px,3vw,38px); letter-spacing:.34em; text-indent:.34em; text-transform:uppercase;
+    text-shadow:0 2px 18px rgba(0,0,0,.9); }
   /* start screen */
   #start { position:fixed; inset:0; z-index:40; background:radial-gradient(ellipse at 50% 60%, #16120c 0%, #000 70%);
     display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4vh; cursor:pointer; }
@@ -63,20 +76,30 @@
 <div class="bar" id="barBot"></div>
 <div id="narr"><span id="narrText"></span></div>
 
+<div id="studio">
+  <img src="cinematic/STUDIO-LOGO.png" alt="">
+  <div class="co">A Bigfoot404 LLC Company</div>
+</div>
+
+<div id="credits">
+  <div class="role">Directed by</div>
+  <div class="name">BudE404</div>
+</div>
+
 <div id="title">
   <img class="tlogo" id="titleLogo" src="cinematic/TITLE-LOGO.png" alt="">
   <div class="sub">The Gates Are Waking</div>
 </div>
 
 <div id="end">
-  <div style="color:#6f6555; font-size:12px; letter-spacing:.4em; text-indent:.4em; text-transform:uppercase;">A Bigfoot404 Production</div>
+  <div style="color:#6f6555; font-size:12px; letter-spacing:.4em; text-indent:.4em; text-transform:uppercase;">A BIG Entertainment Production</div>
   <button class="again" onclick="location.reload()">Watch Again</button>
 </div>
 
 <div id="hud"></div>
 
 <div id="start">
-  <img class="sigil" src="cinematic/TITLE-SIGIL.png" alt="">
+  <img class="sigil" src="cinematic/TITLE-SIGIL.jpg" alt="">
   <h1>AVALON</h1>
   <p>Cinematic Teaser — Headphones Recommended</p>
   <button class="play">▶ Play</button>
@@ -218,7 +241,21 @@ function enterTitle(){
     hitAndCutDrone();
     document.getElementById('title').classList.add('on');
     cutFlash(1);
-    setTimeout(()=>{ document.getElementById('end').classList.add('on'); }, 3200);
+    const cr=document.getElementById('credits');
+    const rollCredits = (role, name, delay, hold) => {
+      setTimeout(()=>{
+        cr.querySelector('.role').textContent=role;
+        cr.querySelector('.name').textContent=name;
+        cr.classList.add('on'); cr.style.opacity=0;
+        cr.style.transition='opacity 1.1s ease'; boom(.5);
+        requestAnimationFrame(()=>{ cr.style.opacity=1; });
+        setTimeout(()=>{ cr.style.opacity=0; }, (hold||2400));
+        setTimeout(()=>{ cr.classList.remove('on'); }, (hold||2400)+1200);
+      }, delay);
+    };
+    rollCredits('Directed by','BudE404', 3400, 3000);
+    rollCredits('A Bude404 Game','In Association With BIG Entertainment', 8000, 3000);
+    setTimeout(()=>{ document.getElementById('end').classList.add('on'); }, 12600);
   }, 3000);
 }
 // ============ LOOP ============
@@ -259,7 +296,13 @@ document.getElementById('start').addEventListener('click',()=>{
   setTimeout(()=>document.getElementById('start').remove(),1300);
   document.body.classList.add('playing');
   hud.classList.add('on');
-  playing=true; setTimeout(()=>startShot(0),400);
+  playing=true;
+  // studio pre-roll card
+  const st=document.getElementById('studio');
+  st.classList.add('on');
+  setTimeout(()=>{ st.style.opacity=1; boom(.7); }, 500);
+  setTimeout(()=>{ st.style.opacity=0; }, 3600);
+  setTimeout(()=>{ st.classList.remove('on'); boom(.55); startShot(0); }, 4800);
 });
 </script>
 </body>
