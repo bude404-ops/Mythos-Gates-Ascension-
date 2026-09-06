@@ -31,12 +31,27 @@
   #start .go{color:#9a8b6f;letter-spacing:4px;font-size:11px;border:1px solid #5a4526;border-radius:8px;padding:10px 26px;margin-top:8px}
   #tag{position:fixed;top:12.5%;right:14px;z-index:6;color:rgba(232,196,122,.38);font-size:9px;letter-spacing:3px;opacity:0;transition:opacity 2s}
   body.rolling #tag{opacity:1}
+
+  #studio,#dir{position:fixed;inset:0;z-index:9;background:#000;display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px;opacity:0;transition:opacity 1.2s ease}
+  #studio.on,#dir.on{display:flex}
+  #studio img{width:min(44vw,380px);filter:drop-shadow(0 0 34px rgba(255,140,60,.20))}
+  #studio .co,#dir .role,#dir .name{color:#8a7a5f;letter-spacing:5px;font-size:11px}
+  #dir img{width:min(30vw,240px);filter:drop-shadow(0 0 26px rgba(255,140,60,.16))}
+  #dir .role{margin-top:6px}
+  #dir .name{color:#e8c47a;font-size:16px;letter-spacing:7px}
+  #title .tlogo{width:min(62vw,540px);filter:drop-shadow(0 0 40px rgba(0,0,0,.9));opacity:0;transition:opacity 2.4s ease}
+  #title.on .tlogo{opacity:1}
+  #title .cred{opacity:0;transition:opacity 1.6s ease;letter-spacing:5px;font-size:11px;color:#8a7a5f}
+  #title .cred b{color:#e8c47a;font-weight:normal;letter-spacing:6px}
+  #title .cred.show{opacity:.95}
 </style>
 </head>
 <body>
+<div id="studio"><img src="cinematic-gods/STUDIO-LOGO.png"><div class="co">A BIGFOOT404 LLC COMPANY</div></div>
+<div id="dir"><img src="cinematic-gods/DIRECTOR-LOGO.png"><div class="role">DIRECTED BY</div><div class="name">BUD E404</div></div>
 <div id="film" style="position:fixed;inset:0">
   <div class="shot" id="s1" style="background-image:url('cinematic-gods/01-HEARTLAND-DAWN.jpg')"></div>
-  <div class="shot" id="s2" style="background-image:url('cinematic-gods/02-KILN-ROAD.jpg')"></div>
+  <div class="shot" id="s2" style="background-image:url('cinematic-gods/02-THE-LONG-ROAD.jpg')"></div>
   <div class="shot" id="s3" style="background-image:url('cinematic-gods/03-WARM-STONE.jpg')"></div>
   <div class="shot" id="s4" style="background-image:url('cinematic-gods/04-LANTERN-RITE.jpg')"></div>
   <div class="shot" id="s5" style="background-image:url('cinematic-gods/05-THE-LAND-REVEALED.jpg')"></div>
@@ -51,8 +66,12 @@
 <div id="tag">TYPE A · WORLD CINEMATIC · ASHFALL</div>
 <div class="card" id="c3">The stones were warm.</div>
 <div class="card" id="c5">The land was never land.</div>
-<div id="title"><img src="cinematic-gods/RUNE.png">
-  <div class="t">THE WAKING GATES</div>
+<div id="title"><img class="tlogo" src="cinematic-gods/TITLE-LOGO.png">
+  <div class="s" style="margin-top:10px">THE SLEEPING GODS &mdash; they were never mountains. they were waiting.</div>
+  <div class="cred" id="cr1" style="margin-top:34px">DIRECTED BY <b>BUD E404</b></div>
+  <div class="cred" id="cr2">A BUD E404 GAME &middot; IN ASSOCIATION WITH <b>BIG ENTERTAINMENT</b></div>
+  <div class="cred" id="cr3">A <b>BIG ENTERTAINMENT</b> PRODUCTION</div>
+  <a href="index.html" style="margin-top:26px">&#8592; RETURN TO THE GATES</a></div>
   <div class="s">they were never mountains. they were waiting.</div>
   <div class="q">the gates remember who woke them</div><a href="index.html">← RETURN TO THE GATES</a></div>
 <div id="start"><img src="cinematic-gods/RUNE.png">
@@ -121,10 +140,18 @@ function shot(b){const el=$(b.s);
     el.style.transform=`scale(${b.z[1]})`;
     el.style.transformOrigin=`${b.p[1][0]*100}% ${b.p[1][1]*100}%`;}));
 }
+async function preroll(){
+  const fade=(el,ms)=>new Promise(r=>{el.classList.add('on');requestAnimationFrame(()=>{el.style.opacity=1});
+    setTimeout(()=>{el.style.opacity=0;setTimeout(()=>{el.classList.remove('on');r()},1300)},ms)});
+  audioInit();await AC.resume();toVol(.14,1500);
+  await new Promise(r=>setTimeout(r,400));
+  await fade($('studio'),3000);
+  await fade($('dir'),3200);
+}
 async function play(){
   if(playing)return;playing=true;
   $('start').style.display='none';document.body.classList.add('rolling');
-  audioInit();await AC.resume();
+  await preroll();
   for(bi=0;bi<BEATS.length;bi++){
     const b=BEATS[bi];seed(b);
     shot(b);$(b.s).classList.add('on');
@@ -139,6 +166,9 @@ async function play(){
   }
   toVol(.05,2500);
   $('title').classList.add('on');
+  setTimeout(()=>{$('cr1').classList.add('show');toVol(.10,900)},3000);
+  setTimeout(()=>{$('cr2').classList.add('show')},5600);
+  setTimeout(()=>{$('cr3').classList.add('show');toVol(.06,1500)},8000);
   playing=false;
 }
 $('start').addEventListener('click',play);
