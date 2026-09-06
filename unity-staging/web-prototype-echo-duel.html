@@ -25,6 +25,8 @@
   .btn{position:fixed;border-radius:50%;border:2px solid rgba(232,201,160,.55);background:rgba(30,20,14,.55);color:#e8c9a0;font-size:11px;letter-spacing:1px;display:flex;align-items:center;justify-content:center;z-index:6;font-family:Georgia,serif}
   #atk{right:20px;bottom:26px;width:76px;height:76px;border-color:rgba(255,150,60,.7)}
   #skill{right:112px;bottom:58px;width:58px;height:58px}
+  #volley{right:112px;bottom:126px;width:58px;height:58px}
+  #quake{right:178px;bottom:26px;width:58px;height:58px;border-color:rgba(255,110,60,.8)}
   #nameit{right:20px;bottom:118px;width:64px;height:64px;border-color:rgba(255,230,170,.9);background:rgba(60,40,18,.7);display:none;font-size:10px}
   .cd{position:absolute;inset:0;border-radius:50%;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;visibility:hidden}
   #stick{position:fixed;left:14px;bottom:22px;width:110px;height:110px;border-radius:50%;border:1px solid rgba(232,201,160,.25);background:rgba(20,14,10,.3);z-index:6;display:none}
@@ -48,13 +50,15 @@
   <div id="banner"></div>
 </div>
 <div id="stick"><div id="knob"></div></div>
-<button class="btn" id="atk">SWEEP</button>
+<button class="btn" id="atk">SWING</button>
 <button class="btn" id="skill">SURGE<div class="cd" id="skill-cd">6</div></button>
+<button class="btn" id="volley">VOLLEY<div class="cd" id="volley-cd">6</div></button>
+<button class="btn" id="quake">QUAKE<div class="cd" id="quake-cd">10</div></button>
 <button class="btn" id="nameit">NAME IT</button>
 <div id="overlay">
   <h1>THE ECHO DUEL</h1>
   <p>At the Gate Rite's height, the Hollow answers the waking with its own god-shape: THE ECHO OF THE FORGOTTEN — a silhouette vaster than any giant, with no face, because no one ever recorded one. It fights as your DARK MIRROR: the same telegraphs you know, shed in reverse — where you shed element, it sheds absence.<br><br>
-  <b>I — GOD VS GOD (100&ndash;66%).</b> Fight as the woken god. Slow telegraphs both ways: read its reverse-shed, answer with the sweep.<br>
+  <b>I — GOD VS GOD (100&ndash;66%).</b> Fight as the woken god: three-swing combo (the finisher staggers it), SURGE orbs, a VOLLEY of element lances, and the QUAKE shockwave — all powered by FAITH. Read its telegraphs; step off the beam line.<br>
   <b>II — THE DRAINED FIELD (66&ndash;33%).</b> Its shell cracks and the arena DE-COLORS: standing on drained ground saps the vessel. Fight from the ember islands.<br>
   <b>III — THE WOUND (33&ndash;0%).</b> The god-fight and the climb are one encounter: the Echo splits, and YOU — the pilgrim, lantern in hand — cross inside the wound to strike the heart. Void-motes swarm; roll through them with the lantern raised.<br><br>
   And at the heart: the endgame's one weapon. <i>To name a thing is to form it — and absence was all it had.</i></p>
@@ -73,7 +77,8 @@ document.body.appendChild(renderer.domElement);
 const S = {
   mode:'menu', echoHP:100, hp:100, faith:50,
   surges:[], sheds:[], grayRings:[],
-  camShake:0, hitStop:0, time:0, sweep:null,
+  camShake:0, hitStop:0, time:0, swing:null, combo:0, comboTO:0,
+  arcs:[], lances:[], quakes:[], staggerT:0,
   heartHits:0, naming:0, nameHold:0, invuln:0, invulnG:0, rollCD:0,
 };
 const scene = new THREE.Scene();
@@ -103,7 +108,7 @@ function buildColossus(strataColor, fissureColor){
   const handL = new THREE.Mesh(new THREE.DodecahedronGeometry(2.2, 0), strata); handL.position.set(-10.4, 5.6, 0); g.add(handL);
   const handR = handL.clone(); handR.position.x = 10.4; g.add(handR);
   const skirt = new THREE.Mesh(new THREE.CylinderGeometry(7.5, 12, 5, 8), strata); skirt.position.y = 0.6; g.add(skirt);
-  g.userData.armR = aR; g.userData.torso = torso;
+  g.userData.armR = aR; g.userData.armL = aL; g.userData.torso = torso;
   return g;
 }
 
@@ -184,7 +189,11 @@ stick.addEventListener('touchmove', e=>{
   knob.style.left = 33+Math.cos(a)*d*36+'px'; knob.style.top = 33+Math.sin(a)*d*36+'px'; e.preventDefault();
 }, {passive:false});
 stick.addEventListener('touchend', ()=>{ stickVec={x:0,y:0}; knob.style.left='33px'; knob.style.top='33px'; });
-addEventListener('keydown', e=>{ if(e.key==='a'||e.key==='A') doAttack(); if(e.key===' '||e.key==='s'||e.key==='S') doSkill(); if(e.key==='Shift') doRoll(); });
+addEventListener('keydown', e=>{ if(e.key==='a'||e.key==='A') doAttack(); if(e.key===' '||e.key==='s'||e.key==='S') doSkill(); if(e.key==='q'||e.key==='Q') doVolley(); if(e.key==='e'||e.key==='E') doQuake(); if(e.key==='Shift') doRoll(); });
+$('volley').addEventListener('touchstart', e=>{ doVolley(); e.preventDefault(); }, {passive:false});
+$('volley').addEventListener('mousedown', doVolley);
+$('quake').addEventListener('touchstart', e=>{ doQuake(); e.preventDefault(); }, {passive:false});
+$('quake').addEventListener('mousedown', doQuake);
 $('atk').addEventListener('touchstart', e=>{ doAttack(); e.preventDefault(); }, {passive:false});
 $('atk').addEventListener('mousedown', doAttack);
 $('skill').addEventListener('touchstart', e=>{ doSkill(); e.preventDefault(); }, {passive:false});
@@ -192,15 +201,24 @@ $('skill').addEventListener('mousedown', doSkill);
 $('nameit').addEventListener('touchstart', e=>{ S.nameHold = 0.4; e.preventDefault(); }, {passive:false});
 $('nameit').addEventListener('mousedown', ()=>{ S.nameHold = 0.4; });
 
-let atkCD = 0, skillCD = 0;
+let atkCD = 0, skillCD = 0, volleyCD = 0, quakeCD = 0;
+function showCd(id, v){ const el=$(id); if(v>0){ el.style.visibility='visible'; el.textContent=Math.ceil(v); } else el.style.visibility='hidden'; }
 function doAttack(){
   if (S.mode==='giant' && atkCD<=0){
-    atkCD = 0.9; S.sweep = {t:0};
-    const toE = S.echo.position.clone().sub(S.player.position); const d = toE.length();
-    if (d < 26){
-      const fw = new THREE.Vector3(0,0,-1).applyQuaternion(S.player.quaternion);
-      if (fw.dot(toE.clone().setY(0).normalize()) > 0.45){ dmgEcho(4.2); S.hitStop = 0.09; S.camShake = 0.5; }
-    }
+    const now = performance.now();
+    S.combo = (now - S.comboTO < 1300) ? S.combo + 1 : 0;
+    if (S.combo > 2) S.combo = 0;
+    S.comboTO = now;
+    const fin = S.combo === 2;
+    atkCD = fin ? 1.1 : 0.72;
+    const dir = S.echo.position.clone().sub(S.player.position).setY(0).normalize();
+    S.player.position.addScaledVector(dir, fin ? 5 : 2.6);            // lunge into the swing
+    S.swing = {t:0, arm: S.combo===0 ? 'L' : (S.combo===1 ? 'R' : 'B')};
+    const arc = new THREE.Mesh(new THREE.RingGeometry(2.5, 16, 24, 1, fin?-0.9:0.5, fin?2.6:1.6), new THREE.MeshBasicMaterial({color: fin?0xffc04a:0xffa04a, transparent:true, opacity:0.85, side:THREE.DoubleSide}));
+    arc.position.copy(S.player.position).addScaledVector(dir, 12).add(new THREE.Vector3(0, 11, 0));
+    arc.lookAt(camera.position); scene.add(arc); S.arcs.push({m:arc, t:0.3});
+    const d = S.player.position.distanceTo(S.echo.position);
+    if (d < 25){ dmgEcho(fin?8.5:4.2); S.hitStop = fin?0.13:0.08; S.camShake = fin?1.0:0.45; if (fin){ staggerEcho(); knockEcho(3.5); } }
   } else if (S.mode==='wound' && atkCD<=0){
     atkCD = 0.45;
     const dh = S.heart.position.distanceTo(S.pilgrim.position);
@@ -222,6 +240,41 @@ function doSkill(){
 }
 function doRoll(){ if (S.mode==='wound' && S.rollCD<=0){ S.rollCD = 1.1; S.invuln = 0.45; } }
 
+function doVolley(){
+  if (S.mode!=='giant' || volleyCD>0 || S.faith<25) return;
+  volleyCD = 6; S.faith -= 25;
+  const base = S.echo.position.clone();
+  for (let i=0;i<6;i++){
+    const off = new THREE.Vector3((Math.random()-.5)*13, 0, (Math.random()-.5)*13);
+    const mark = new THREE.Mesh(new THREE.RingGeometry(1.5, 2.3, 24), new THREE.MeshBasicMaterial({color:0x9a3f1e, transparent:true, opacity:0, side:THREE.DoubleSide}));
+    mark.rotation.x = -Math.PI/2; mark.position.copy(base).add(off); mark.position.y = 0.14; scene.add(mark);
+    const lance = new THREE.Mesh(new THREE.ConeGeometry(0.55, 9, 6), new THREE.MeshBasicMaterial({color:0xff7a2e}));
+    lance.rotation.x = Math.PI; lance.position.copy(mark.position).add(new THREE.Vector3(0, 40, 0));
+    lance.visible = false; scene.add(lance);
+    S.lances.push({mark, lance, t: -i*0.12});
+  }
+}
+function doQuake(){
+  if (S.mode!=='giant' || quakeCD>0 || S.faith<40) return;
+  quakeCD = 10; S.faith -= 40;
+  S.swing = {t:0.12, arm:'B'};                                        // both fists overhead then down
+  S.hitStop = 0.1; S.camShake = 1.4;
+  for (let i=0;i<3;i++){
+    const r = new THREE.Mesh(new THREE.RingGeometry(1, 1.8, 48), new THREE.MeshBasicMaterial({color:0xff9a3c, transparent:true, opacity:0.85, side:THREE.DoubleSide}));
+    r.rotation.x = -Math.PI/2; r.position.copy(S.player.position); r.position.y = 0.13; r.visible = false;
+    scene.add(r); S.quakes.push({m:r, r:0, delay:i*0.3, hit:false});
+  }
+}
+function staggerEcho(){
+  if (S.telegraph){ scene.remove(S.telegraph.m); S.telegraph = null; }
+  echoState.act = 'idle'; echoState.t = 0; echoState.next = 1.6;
+  S.staggerT = 0.7;
+}
+function knockEcho(d){
+  const dir = S.echo.position.clone().sub(S.player.position).setY(0).normalize();
+  S.echo.position.addScaledVector(dir, d);
+}
+
 // echo behavior
 let echoState = {act:'idle', t:0, next: 1.2};
 function dmgEcho(d){
@@ -234,43 +287,79 @@ function dmgEcho(d){
 function echoAct(dt){
   S.echo.lookAt(S.player.position.x, 0, S.player.position.z);
   const e = echoState; e.t += dt;
-  const speed = S.echoHP<66 ? 1.35 : 1;
-  if (e.act==='idle' && e.t > e.next){
-    const r = Math.random();
-    e.act = r<0.5 ? 'shed' : 'slam'; e.t = 0; e.next = (S.echoHP<33 ? 1.6 : 2.4)/speed;
-    if (e.act==='shed'){
-      const tg = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.6, 40), new THREE.MeshBasicMaterial({color:0x1a1a20, transparent:true, opacity:0.6}));
-      tg.position.copy(S.echo.position).add(new THREE.Vector3(0, 12, 0));
-      tg.lookAt(S.player.position.x, 12, S.player.position.z); scene.add(tg);
-      S.telegraph = {m:tg, t:1.1};
-    } else {
-      const ring = new THREE.Mesh(new THREE.RingGeometry(5.2, 5.6, 40), new THREE.MeshBasicMaterial({color:0x2a2a34, side:THREE.DoubleSide, transparent:true, opacity:0.75}));
-      ring.rotation.x = -Math.PI/2; ring.position.set(S.player.position.x, 0.15, S.player.position.z);
-      scene.add(ring); S.telegraph = {m:ring, t:1.5, slam:true};
+  const speed = S.echoHP<66 ? 1.4 : 1;
+  const gap = S.echo.position.distanceTo(S.player.position);
+  const dirP = S.player.position.clone().sub(S.echo.position).setY(0).normalize();
+  if (S.staggerT > 0){
+    S.staggerT -= dt;
+    S.echo.userData.torso.rotation.z = 0.16 * Math.sin(Math.min(1, S.staggerT) * 4);
+    return;
+  }
+  S.echo.userData.torso.rotation.z = 0;
+  if (e.act === 'idle'){
+    if (gap > 24) S.echo.position.addScaledVector(dirP, 3.0 * dt * speed);   // close the distance
+    else if (gap < 13) S.echo.position.addScaledVector(dirP, -2.6 * dt * speed); // give ground
+    if (e.t > e.next){
+      const r = Math.random();
+      if (gap < 20 && r < 0.38) e.act = 'lash';
+      else if (r < 0.60) e.act = 'shed';
+      else if (r < 0.82) e.act = 'slam';
+      else e.act = 'beam';
+      e.t = 0;
+      if (e.act === 'shed'){
+        const tg = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.6, 40), new THREE.MeshBasicMaterial({color:0x1a1a20, transparent:true, opacity:0.6}));
+        tg.position.copy(S.echo.position).add(new THREE.Vector3(0, 12, 0));
+        tg.lookAt(S.player.position.x, 12, S.player.position.z); scene.add(tg);
+        S.telegraph = {m:tg, t:1.1};
+      } else if (e.act === 'slam'){
+        const ring = new THREE.Mesh(new THREE.RingGeometry(5.2, 5.6, 40), new THREE.MeshBasicMaterial({color:0x2a2a34, side:THREE.DoubleSide, transparent:true, opacity:0.75}));
+        ring.rotation.x = -Math.PI/2; ring.position.set(S.player.position.x, 0.15, S.player.position.z);
+        scene.add(ring); S.telegraph = {m:ring, t:1.5, slam:true};
+      } else if (e.act === 'lash'){
+        const tg = new THREE.Mesh(new THREE.RingGeometry(2.2, 15, 24, 1, 0.4, 1.4), new THREE.MeshBasicMaterial({color:0x14141a, transparent:true, opacity:0, side:THREE.DoubleSide}));
+        tg.position.copy(S.echo.position).addScaledVector(dirP, 11).add(new THREE.Vector3(0, 11, 0));
+        tg.lookAt(camera.position); scene.add(tg);
+        S.telegraph = {m:tg, t:0.9, lash:true};
+      } else if (e.act === 'beam'){
+        const tg = new THREE.Mesh(new THREE.BoxGeometry(1.4, 1.4, 62), new THREE.MeshBasicMaterial({color:0x0c0c12, transparent:true, opacity:0.45}));
+        tg.position.copy(S.echo.position).addScaledVector(dirP, 31).add(new THREE.Vector3(0, 11, 0));
+        tg.lookAt(S.player.position.x, 11, S.player.position.z); scene.add(tg);
+        S.telegraph = {m:tg, t:1.25, beam:true, dir:dirP.clone()};
+      }
     }
   }
   if (S.telegraph){
     S.telegraph.t -= dt;
+    if (S.telegraph.lash) S.telegraph.m.material.opacity = Math.min(0.6, (0.9 - S.telegraph.t) * 1.2);
     if (S.telegraph.t <= 0){
-      if (S.telegraph.slam){
-        const p = S.telegraph.m.position;
-        if (S.player.position.distanceTo(new THREE.Vector3(p.x,0,p.z)) < 6.4) hurtPlayer(16);
+      const tg = S.telegraph;
+      if (tg.slam){
+        const p = tg.m.position;
+        if (S.player.position.distanceTo(new THREE.Vector3(p.x, 0, p.z)) < 6.4) hurtPlayer(16);
         S.camShake = 1.0;
-        scene.remove(S.telegraph.m);
+      } else if (tg.lash){
+        if (S.echo.position.distanceTo(S.player.position) < 19) hurtPlayer(18);
+        S.camShake = 0.8;
+      } else if (tg.beam){
+        const v = S.player.position.clone().sub(S.echo.position).setY(0);
+        const along = v.dot(tg.dir);
+        const perpD = v.clone().addScaledVector(tg.dir, -along).length();
+        if (along > 4 && along < 64 && perpD < 5) hurtPlayer(24);   // dodge = step off the line (depth)
+        S.camShake = 1.1;
+        tg.m.material.color.setHex(0x3a3a48); tg.m.material.opacity = 0.95;
+        setTimeout(()=>scene.remove(tg.m), 260);
       } else {
         const dir = S.player.position.clone().sub(S.echo.position).setY(0).normalize();
-        for (let i=0;i<3;i++){
-          const s = new THREE.Mesh(new THREE.SphereGeometry(1.4, 7, 5), new THREE.MeshBasicMaterial({color:0x0a0a0e}));
-          s.position.copy(S.echo.position).add(new THREE.Vector3(0, 12, 0)).addScaledVector(dir, i*3);
-          scene.add(s); S.sheds.push({m:s, v:dir.clone().multiplyScalar(30), life:2.2});
+        for (let i=0;i<4;i++){
+          const sh = new THREE.Mesh(new THREE.SphereGeometry(1.4, 7, 5), new THREE.MeshBasicMaterial({color:0x0a0a0e}));
+          sh.position.copy(S.echo.position).add(new THREE.Vector3(0, 12, 0)).addScaledVector(dir, i*3);
+          scene.add(sh); S.sheds.push({m:sh, v:dir.clone().multiplyScalar(30), life:2.2});
         }
-        scene.remove(S.telegraph.m);
       }
-      S.telegraph = null; e.act='idle'; e.t=0;
+      if (!tg.beam) scene.remove(tg.m);
+      S.telegraph = null; e.act = 'idle'; e.t = 0; e.next = (S.echoHP<33 ? 1.5 : 2.3)/speed;
     }
   }
-  const toP = S.player.position.clone().sub(S.echo.position).setY(0);
-  if (toP.length() > 22) S.echo.position.add(toP.normalize().multiplyScalar(2.2*dt*speed));
 }
 function hurtPlayer(d){
   if (S.mode!=='giant' || S.invulnG>0) return;
@@ -298,6 +387,7 @@ function enterPhase3(){
     if (!S.woundScene) buildWound();
     S.mode='wound';
     $('atk').textContent='STRIKE'; $('skill').textContent='ROLL';
+    $('volley').style.display='none'; $('quake').style.display='none';
     $('hp-wrap').style.display='none'; $('faith-wrap').style.display='none';
     S.hp=100;
     banner('INSIDE THE ABSENCE','lantern up — roll through the motes — reach the heart');
@@ -344,8 +434,8 @@ function loop(now){
   let dt = Math.min(0.05, (now-last)/1000); last = now;
   if (S.hitStop>0){ S.hitStop-=dt; dt *= 0.15; }
   S.time += dt;
-  atkCD -= dt; skillCD -= dt; S.invulnG -= dt; S.nameHold -= dt;
-  if (skillCD>0) { $('skill-cd').style.visibility='visible'; $('skill-cd').textContent = Math.ceil(skillCD); } else $('skill-cd').style.visibility='hidden';
+  atkCD -= dt; skillCD -= dt; volleyCD -= dt; quakeCD -= dt; S.invulnG -= dt; S.nameHold -= dt;
+  showCd('skill-cd', skillCD); showCd('volley-cd', volleyCD); showCd('quake-cd', quakeCD);
 
   if (S.mode==='giant' || S.mode==='transition'){
     if (S.mode==='giant'){
@@ -367,9 +457,11 @@ function loop(now){
       S.faith = Math.min(100, S.faith + dt*(drained?2:7));
       $('faith-bar').firstElementChild.style.width = S.faith+'%';
       if (drained){ S.hp -= dt*2.2; $('hp-bar').firstElementChild.style.width = Math.max(0,S.hp)+'%'; if (S.hp<=0) lose(); }
-      if (S.sweep){
-        S.sweep.t += dt; const t=S.sweep.t/0.45;
-        if (t<1){ S.player.userData.armR.rotation.x = -Math.sin(t*Math.PI)*1.9; } else { S.player.userData.armR.rotation.x = 0; S.sweep=null; }
+      if (S.swing){
+        S.swing.t += dt; const t = S.swing.t/0.4;
+        const u = S.player.userData; const a = -Math.sin(Math.min(1,t)*Math.PI)*2.1;
+        if (S.swing.arm==='L') u.armL.rotation.x = a; else if (S.swing.arm==='R') u.armR.rotation.x = a; else { u.armL.rotation.x = a; u.armR.rotation.x = a; }
+        if (t>=1){ u.armL.rotation.x = 0; u.armR.rotation.x = 0; S.swing = null; }
       }
       echoAct(dt);
       S.player.userData.torso.scale.y = 1 + Math.sin(S.time*0.9)*0.01;
@@ -385,6 +477,34 @@ function loop(now){
       s.m.position.addScaledVector(s.v, dt);
       if (s.m.position.distanceTo(S.player.position.clone().add(new THREE.Vector3(0,12,0))) < 6.5){ hurtPlayer(13); scene.remove(s.m); S.sheds.splice(i,1); continue; }
       if (s.life<=0){ scene.remove(s.m); S.sheds.splice(i,1); }
+    }
+    for (let i=S.arcs.length-1;i>=0;i--){
+      const a = S.arcs[i]; a.t -= dt; a.m.material.opacity = Math.max(0, a.t*2.8);
+      if (a.t<=0){ scene.remove(a.m); S.arcs.splice(i,1); }
+    }
+    for (let i=S.lances.length-1;i>=0;i--){
+      const L = S.lances[i]; L.t += dt;
+      if (L.t < 0) continue;
+      L.mark.material.opacity = Math.min(0.6, L.t*1.4);
+      L.lance.visible = true;
+      L.lance.position.y -= 64*dt;
+      if (L.lance.position.y <= 1){
+        if (L.mark.position.distanceTo(S.echo.position) < 5.5){ dmgEcho(3.2); S.camShake = Math.max(S.camShake, 0.5); }
+        scene.remove(L.mark); scene.remove(L.lance); S.lances.splice(i,1);
+      }
+    }
+    for (let i=S.quakes.length-1;i>=0;i--){
+      const q = S.quakes[i];
+      if (q.delay > 0){ q.delay -= dt; continue; }
+      q.m.visible = true;
+      q.r += 34*dt;
+      q.m.geometry.dispose(); q.m.geometry = new THREE.RingGeometry(Math.max(0.1,q.r), q.r+2.2, 48);
+      q.m.material.opacity = Math.max(0, 0.85 - q.r*0.012);
+      if (!q.hit){
+        const dE = S.player.position.distanceTo(S.echo.position);
+        if (Math.abs(dE - q.r) < 3){ q.hit = true; dmgEcho(5); staggerEcho(); knockEcho(4); }
+      }
+      if (q.r > 70){ scene.remove(q.m); S.quakes.splice(i,1); }
     }
     for (const g of S.grayRings){
       g.r += g.speed*dt;
