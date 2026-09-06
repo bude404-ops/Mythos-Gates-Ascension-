@@ -1,0 +1,145 @@
+/* ============================================================
+   MYTHOS UI SYSTEM v1 — the awakened interface
+   Canon doctrine: the UI is part of the world, not on top of it.
+   Materials: dark refined stone · ancient metal · carved edges ·
+   soft ember glow · embossed symbols. Elemental color = feedback.
+   Touch-first. Tertiary info never competes with the primary.
+   ============================================================ */
+
+:root{
+  /* ink & stone */
+  --m-ink:#0b0906;        /* deepest background */
+  --m-panel:#17120a;      /* refined dark surface */
+  --m-stone:#221a0e;      /* raised stone */
+  --m-line:#5a4526;       /* ancient metal edge */
+  --m-line-2:#2e2415;     /* worn edge */
+  /* metal & text */
+  --m-gold:#e8c47a;       /* engraved gold text */
+  --m-dim:#a89778;        /* secondary text */
+  --m-faint:#6e6350;      /* tertiary text */
+  /* element accent (feedback, not decoration) */
+  --m-flame:#ff7a1a;
+  --m-flame-soft:rgba(255,122,26,.22);
+  /* type */
+  --m-font:Georgia,'Times New Roman',serif;
+  /* motion */
+  --m-ease:cubic-bezier(.22,.68,.32,1);
+}
+
+/* ---------- base ---------- */
+.m-root, .m-root *{box-sizing:border-box}
+.m-root{font-family:var(--m-font);color:var(--m-gold);background:var(--m-ink)}
+
+/* embossed / engraved type */
+.m-emboss{text-shadow:0 1px 0 rgba(0,0,0,.9),0 -1px 0 rgba(255,225,160,.07)}
+.m-illum{animation:m-illum 2.8s var(--m-ease) infinite alternate}
+@keyframes m-illum{from{filter:drop-shadow(0 0 2px rgba(255,150,50,.25))}to{filter:drop-shadow(0 0 9px rgba(255,150,50,.55))}}
+
+/* ---------- chamfer (megalithic corner cuts, no rounded plastic) ---------- */
+.m-chamfer{clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px)}
+
+/* ---------- carved panel ---------- */
+.m-panel{
+  position:relative;background:linear-gradient(180deg,#1a140b 0%,#120d07 100%);
+  border:1px solid var(--m-line-2);
+  box-shadow:inset 0 1px 0 rgba(255,220,150,.05),inset 0 -1px 0 rgba(0,0,0,.8),0 12px 34px rgba(0,0,0,.55);
+}
+.m-panel::before{ /* carved inner groove */
+  content:'';position:absolute;inset:3px;border:1px solid rgba(90,69,38,.35);
+  pointer-events:none;clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px);
+}
+
+/* ---------- tactile button (physical, responsive) ---------- */
+.m-btn{
+  position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;
+  min-height:54px;padding:14px 20px;border:1px solid var(--m-line-2);
+  background:linear-gradient(180deg,#231a0d 0%,#171108 55%,#120d07 100%);
+  color:var(--m-gold);font-family:var(--m-font);font-size:15px;letter-spacing:3px;text-align:left;cursor:pointer;
+  transition:transform .08s var(--m-ease),box-shadow .12s var(--m-ease),border-color .15s;
+  clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px);
+  text-shadow:0 1px 0 rgba(0,0,0,.9),0 -1px 0 rgba(255,225,160,.06);
+}
+.m-btn:hover:not(.off){border-color:var(--m-line);background:linear-gradient(180deg,#2d2110 0%,#1c150b 55%,#151007 100%)}
+.m-btn.pressed{ /* pushed into the stone */
+  transform:translateY(2px);
+  background:linear-gradient(180deg,#120d07 0%,#1a140b 100%);
+  box-shadow:inset 0 3px 8px rgba(0,0,0,.85),inset 0 -1px 0 rgba(0,0,0,.6);
+}
+.m-btn.off{opacity:.35;cursor:not-allowed}
+.m-btn .m-hint{font-size:10px;letter-spacing:1px;color:var(--m-faint)}
+.m-btn-primary{ /* important actions: subtle flame */
+  border-color:var(--m-line);
+  background:linear-gradient(180deg,#4a2c10 0%,#2a1a08 100%);
+  color:#ffd9a0;justify-content:center;letter-spacing:4px;min-height:58px;
+}
+.m-btn-primary:hover:not(.off){background:linear-gradient(180deg,#6b3d12 0%,#3a2410 100%);box-shadow:0 0 22px var(--m-flame-soft),inset 0 1px 0 rgba(255,220,150,.12)}
+.m-btn.pressed.m-btn-primary{box-shadow:inset 0 3px 10px rgba(0,0,0,.8)}
+
+/* small button (back nav etc.) */
+.m-btn-sm{min-height:44px;padding:9px 16px;font-size:12px;letter-spacing:2px;justify-content:center;width:auto}
+
+/* ---------- cards (faction / deity / field) ---------- */
+.m-card{
+  position:relative;border:1px solid var(--m-line-2);min-height:64px;padding:14px;cursor:pointer;
+  background:linear-gradient(180deg,rgba(30,23,13,.92),rgba(15,11,7,.95));
+  transition:border-color .15s,transform .08s var(--m-ease),box-shadow .15s;
+  clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px);
+}
+.m-card:hover{border-color:var(--m-line)}
+.m-card.pressed{transform:translateY(2px);background:linear-gradient(180deg,rgba(15,11,7,.95),rgba(28,21,12,.92))}
+.m-card.sel{border-color:var(--c,var(--m-flame));box-shadow:inset 0 0 0 1px var(--c,var(--m-flame)),0 0 18px color-mix(in srgb,var(--c,var(--m-flame)) 18%,transparent)}
+
+/* ---------- flame sigil (faction tell) ---------- */
+.m-flame{width:16px;height:22px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
+  background:radial-gradient(ellipse at 50% 80%, #fff8 0 2px, var(--fc,var(--m-flame)) 40%, transparent 75%);
+  filter:blur(.4px);position:absolute;top:12px;right:12px;animation:m-flick 1.6s infinite alternate}
+@keyframes m-flick{from{transform:scaleY(1)}to{transform:scaleY(1.18)}}
+
+/* ---------- resource bar (carved channel, fluid fill) ---------- */
+.m-bar{position:relative;height:14px;border:1px solid var(--m-line-2);background:#0d0a05;
+  box-shadow:inset 0 2px 5px rgba(0,0,0,.85)}
+.m-bar i{position:absolute;inset:1px auto 1px 1px;width:var(--v,50%);
+  background:linear-gradient(180deg,color-mix(in srgb,var(--c,var(--m-flame)) 85%,#fff 15%),var(--c,var(--m-flame)));
+  box-shadow:0 0 8px color-mix(in srgb,var(--c,var(--m-flame)) 45%,transparent);transition:width .25s var(--m-ease)}
+.m-bar i::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),transparent);
+  animation:m-shimmer 2.6s infinite}
+@keyframes m-shimmer{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+
+/* ---------- tooltip (tertiary numbers — hold to reveal) ---------- */
+.m-tip{position:fixed;z-index:99;max-width:280px;padding:10px 13px;
+  background:linear-gradient(180deg,#1e170c,#140f07);border:1px solid var(--m-line);
+  color:var(--m-dim);font-size:11px;letter-spacing:1px;line-height:1.7;font-style:normal;
+  box-shadow:0 8px 24px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,220,150,.06);
+  clip-path:polygon(7px 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%,0 7px);
+  opacity:0;transform:translateY(6px);transition:opacity .18s var(--m-ease),transform .18s var(--m-ease);pointer-events:none}
+.m-tip.show{opacity:1;transform:translateY(0)}
+.m-tip b{color:var(--m-gold);font-weight:normal}
+.m-tip .m-num{color:#ffca7a}
+
+/* ---------- unfold (panels rising from the stone) ---------- */
+.m-unfold{animation:m-unfold .3s var(--m-ease)}
+@keyframes m-unfold{from{opacity:0;transform:translateY(14px) scaleY(.985)}to{opacity:1;transform:none}}
+.m-fade-step{animation:m-fade-step .22s var(--m-ease)}
+@keyframes m-fade-step{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* ---------- art integration (backdrop = the world) ---------- */
+.m-art{position:fixed;inset:-24px;z-index:0;background-size:cover;background-position:center;
+  filter:brightness(.5) saturate(.85);will-change:transform;transition:filter 1s}
+.m-art-veil{position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(ellipse at 50% 42%,transparent 0%,rgba(8,6,3,.55) 62%,rgba(8,6,3,.92) 100%)}
+.m-fg{position:relative;z-index:2}
+
+/* ---------- dividers & labels ---------- */
+.m-label{font-size:10px;letter-spacing:4px;color:var(--m-faint)}
+.m-divider{height:1px;background:linear-gradient(90deg,transparent,var(--m-line-2) 20%,var(--m-line) 50%,var(--m-line-2) 80%,transparent)}
+
+/* ---------- touch-first ---------- */
+@media (pointer:coarse){
+  .m-btn{min-height:56px;font-size:16px}
+  .m-card{min-height:72px}
+  .m-btn-sm{min-height:48px}
+}
+@media (prefers-reduced-motion:reduce){
+  .m-unfold,.m-fade-step,.m-illum,.m-fade-step i::after{animation:none}
+  *{transition-duration:.01ms!important}
+}

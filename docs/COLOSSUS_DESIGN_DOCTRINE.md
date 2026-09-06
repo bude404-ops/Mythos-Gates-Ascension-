@@ -1,0 +1,17 @@
+
+## SHRINE-CROWN + WORLD-BODY + MODESTY LAWS (v2.1, Sept 5, 2026, BudE404)
+- **SHRINE-CROWN:** every colossus crown IS a shrine site — a megalithic shrine structure grown at the brow. Stoneheart = standing-stone trilithon ring (Stonehenge grammar); Ashfall = obsidian monolith ring with lit offering-braziers; Skyrend = storm-bell shrine ring; Everbloom = sacred grove ring; Duskmourn = barrow/lantern-grave ring; Marenth = sunken sea-shrine ring.
+- **WORLD-BODY:** the colossus body carries the living world — shrines, bell-towers, forests, villages, pilgrim-paths, ruins grown onto shoulders/arms/torso strata. Deepens 'the land IS the god'.
+- **MODESTY (v2.2 amendment, Sept 5 2026, BudE404: 'it doesn't look natural tho looks like armor placed over them'):** zero nudity — coverage via MATERIAL CONTINUITY, never worn armor. The torso IS raw geology: cliff-face strata shelves, natural outcrop ridges, cooled flowstone folds. NO armor vocabulary (breastplate/plate/armor/garment) anywhere in coverage prompts — armor words render placed objects. The body reads as continuous living rock so nothing reads as covered or uncovered. Censorship-safe.
+
+## GATE-BELOW-EDITION (v2.3, Sept 5, 2026, BudE404: 'the gate is infrastructure below the colossal... would also make sense in guarding it')
+In colossus compositions the Gate renders as built infrastructure AT THE BASE of the god — the colossus emerges directly above/behind its Gate, reading as the Gate's guardian. Ties the art to THE WAKING SIEGE: the Hollow come for the Gate, and the god stands over it. v6 Ashfall pair (MATERIAL CONTINUITY grammar) confirmed liked — full v2.1+v2.2+v2.3 grammar now applies to all 12 colossi.
+
+## ELEMENT-HAIR LAW (v2.4, Sept 5, 2026, BudE404: 'female hair needs to be elements not actual hair')
+Colossi never have actual hair — what grows from the crown IS the element in motion: Ashfall = molten magma pour; Skyrend = storm-cloud mass streaming into a squall; Everbloom = living blossom boughs and vine canopy; Duskmourn = shadow-ash plume dissolving to mist; Marenth = sea-foam and kelp crest; Stoneheart = raw crystal spires with dust-motes. The word 'hair' is banned from colossus prompts — it renders strands. Kings and queens alike.
+
+## BOTH-ARMS-OUT LAW (v2.5, Sept 5, 2026, BudE404: 'make sure both arms and hands are out so when we make the 3d reference art it will make sense')
+Every colossus composition shows BOTH arms fully emerged and clearly visible — raised away from the torso on both sides, both hands fully out and unobstructed by mist, terrain merge, or world-body growth. The concept art doubles as 3D reference; arm and hand anatomy must read clean for the image-to-3D pipeline.
+
+## PRIMORDIAL SURFACE LAW (v2.6, Sept 5 2026, BudE404: 'arms and some skin look human not like they are primordial colossals')
+EVERY surface of a colossus is raw element — arms, hands, shoulders, neck included, not just the chest. Arms are great strata formations like cliff buttresses growing from the torso — thick cracked crust, weathered shelves, deep fissures with element light bleeding through. Hands are colossal rock formations, fingers like segmented standing-stones. Zero human skin, zero flesh tones, zero muscle definition anywhere on the body — the entire body from crown to waist reads as the terrain mid-formation. Every colossus prompt carries a dedicated 'ARMS ARE NOT HUMAN LIMBS' block, the same way 'THE HEAD IS NOT HUMAN' fixed the faces.
