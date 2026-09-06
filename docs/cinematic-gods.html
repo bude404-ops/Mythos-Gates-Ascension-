@@ -72,9 +72,9 @@ video.on{opacity:1}
   <div class="shot" id="s8" style="background-image:url('cinematic-gods/08-SOMETHING-ELSE.jpg')"></div>
   <div class="shot" id="s9" style="background-image:url('cinematic-gods/09-THE-MARK-IGNITES.jpg')"></div>
   <div class="shot" id="s10" style="background-image:url('cinematic-gods/10-THE-EYE.jpg')"></div>
-  <div class="shot vid" id="v4"><video src="cinematic-gods/clip-lantern.mp4" muted playsinline loop preload="auto"></video></div>
-  <div class="shot vid" id="v6"><video src="cinematic-gods/clip-god-rises.mp4" muted playsinline loop preload="auto"></video></div>
-  <div class="shot vid" id="v10"><video src="cinematic-gods/clip-the-eye.mp4" muted playsinline loop preload="auto"></video></div>
+  <div class="shot vid" id="v4"><video src="cinematic-gods/clip-lantern-m.mp4" muted playsinline loop preload="auto"></video></div>
+  <div class="shot vid" id="v6"><video src="cinematic-gods/clip-god-rises-m.mp4" muted playsinline loop preload="auto"></video></div>
+  <div class="shot vid" id="v10"><video src="cinematic-gods/clip-the-eye-m.mp4" muted playsinline loop preload="auto"></video></div>
 </div>
 <canvas id="fx"></canvas><div id="vig"></div><canvas id="grain"></canvas>
 <div id="barT" class="bar"></div><div id="barB" class="bar"></div>
@@ -277,7 +277,7 @@ async function play(){
     if(b.riser)riser(b.riser,.30);
     shot(b);
     if(b.vid){const vd=document.querySelector('#'+b.vid+' video');
-      const ok=vd&&(vd._live||vd.readyState>=2);
+      const ok=vd&&(vd._live||vd.readyState>=3);
       if(ok){try{vd.currentTime=0;}catch(e){}
         vd.play().then(()=>{vd._live=true;}).catch(()=>{vd._live=false;$(b.vid).classList.remove('on');});
         /* stalled-buffer guard: if not actually playing 1.4s in (slow mobile data), retract to the moving still */
