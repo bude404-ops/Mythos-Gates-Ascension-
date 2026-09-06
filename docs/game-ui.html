@@ -1,484 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>AVALON — The Waking Gates · Game UI</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<title>AVALON — THE GAME SHELL</title>
 <link rel="stylesheet" href="ui/mythos-ui.css">
-<script src="ui/mythos-ui.js"></script>
 <style>
-:root{
-  --g-font:'Cinzel',Georgia,serif;
-  --g-body:'Cormorant Garamond',Georgia,serif;
-  --g-ink:#070503;
-  --g-bronze:#c9a55e;
-  --g-bronze-hi:#f0d79a;
-  --g-bronze-dim:rgba(201,165,94,.42);
-  --g-glass:rgba(12,8,4,.62);
-  --g-flame:#ff7a1a;
-  --ease:cubic-bezier(.22,.68,.32,1);
-}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{margin:0;height:100%;background:#030201;color:var(--g-bronze);font-family:var(--g-body);overflow:hidden}
-body{display:flex;align-items:center;justify-content:center}
-@media (max-width:520px){ body{display:block} }
-#shell{position:relative;width:390px;height:844px;max-height:100vh;background:var(--g-ink);
-  overflow:hidden;border-radius:18px;
-  box-shadow:0 0 0 1px rgba(201,165,94,.28),0 0 0 3px rgba(0,0,0,.9),0 0 60px rgba(255,122,26,.08),0 40px 120px rgba(0,0,0,.9);}
-@media (max-width:520px){ #shell{width:100vw;height:100dvh;border-radius:0;box-shadow:none} }
-#shell::before{content:'';position:absolute;inset:0;z-index:60;pointer-events:none;border-radius:inherit;
-  box-shadow:inset 0 0 2px 1px rgba(201,165,94,.16)}
-.scr{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .5s var(--ease);overflow:hidden}
-.scr.on{opacity:1;pointer-events:auto}
-.world{position:absolute;inset:-16px;z-index:0;background-size:cover;background-position:center;transition:filter .5s}
-.scr:not(.on) .world{filter:brightness(.4)}
-.grain{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.5;mix-blend-mode:overlay;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
-.vignette{position:absolute;inset:0;z-index:2;pointer-events:none;
-  background:radial-gradient(120% 90% at 50% 38%,transparent 40%,rgba(3,2,1,.72) 100%)}
-.t-display{font-family:var(--g-font);font-weight:700;letter-spacing:.06em;color:var(--g-bronze-hi);
-  text-shadow:0 1px 0 rgba(0,0,0,.9),0 -1px 0 rgba(255,225,160,.08)}
-.t-epithet{font-family:var(--g-body);font-style:italic;color:var(--g-bronze);letter-spacing:.04em}
-.t-label{font-family:var(--g-font);font-weight:600;font-size:10px;letter-spacing:.24em;color:var(--g-bronze);text-transform:uppercase}
-.t-micro{font-family:var(--g-body);font-size:11px;letter-spacing:.14em;color:rgba(201,165,94,.55);text-transform:uppercase}
-.relic{position:relative;background:var(--g-glass);backdrop-filter:blur(10px) saturate(1.1);
-  border:1px solid var(--g-bronze-dim);
-  clip-path:polygon(12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px);
-  box-shadow:inset 0 1px 0 rgba(240,215,154,.09),0 10px 30px rgba(0,0,0,.5)}
-.relic::before{content:'';position:absolute;inset:4px;pointer-events:none;border:1px solid rgba(201,165,94,.14);
-  clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px)}
-.relic.ridge{box-shadow:inset 0 1px 0 rgba(240,215,154,.09),inset 0 0 22px rgba(0,0,0,.55),0 10px 30px rgba(0,0,0,.5)}
-.statusbar{position:absolute;top:0;left:0;right:0;z-index:30;display:flex;align-items:center;gap:10px;
-  padding:14px 14px 10px;background:linear-gradient(180deg,rgba(5,3,2,.82),transparent)}
-.sigil-btn{width:40px;height:40px;flex:none;cursor:pointer}
-.sigil-btn svg{width:100%;height:100%;filter:drop-shadow(0 0 6px rgba(255,122,26,.35))}
-.player-name{line-height:1.1}
-.player-name .nm{font-family:var(--g-font);font-weight:600;font-size:13px;letter-spacing:.12em;color:var(--g-bronze-hi)}
-.faith-chip{margin-left:auto;display:flex;align-items:center;gap:7px;padding:7px 12px;cursor:pointer}
-.faith-chip .num{font-family:var(--g-font);font-weight:700;font-size:13px;color:var(--g-bronze-hi)}
-.ctx{position:absolute;top:58px;right:12px;z-index:40;display:none;min-width:170px;padding:6px}
-.ctx.open{display:block;animation:unfold .28s var(--ease)}
-.ctx .item{display:flex;align-items:center;gap:10px;padding:11px 12px;cursor:pointer;font-family:var(--g-font);
-  font-size:11px;font-weight:600;letter-spacing:.18em;color:var(--g-bronze)}
-.ctx .item:hover{background:rgba(201,165,94,.08)}
-.ctx .item svg{width:15px;height:15px;flex:none}
-@keyframes unfold{from{opacity:0;transform:translateY(-8px)}to{opacity:1}}
-.botnav{position:absolute;left:0;right:0;bottom:0;z-index:30;display:flex;justify-content:space-around;
-  padding:10px 8px calc(12px + env(safe-area-inset-bottom));
-  background:linear-gradient(0deg,rgba(4,3,2,.92) 55%,rgba(4,3,2,.55) 82%,transparent)}
-.botnav::before{content:'';position:absolute;top:0;left:18px;right:18px;height:1px;
-  background:linear-gradient(90deg,transparent,rgba(201,165,94,.5),transparent)}
-.nav-item{flex:1;max-width:86px;display:flex;flex-direction:column;align-items:center;gap:5px;padding:7px 2px;cursor:pointer;
-  transition:transform .25s var(--ease)}
-.nav-item svg{width:23px;height:23px;color:rgba(201,165,94,.55);transition:color .25s,filter .25s}
-.nav-item span{font-family:var(--g-font);font-weight:600;font-size:9px;letter-spacing:.2em;color:rgba(201,165,94,.5);transition:color .25s}
-.nav-item.on svg,.nav-item:hover svg{color:var(--g-bronze-hi);filter:drop-shadow(0 0 7px rgba(255,150,50,.5))}
-.nav-item.on span,.nav-item:hover span{color:var(--g-bronze-hi)}
-.nav-item.on{transform:translateY(-2px)}
-.nav-item.on::after{content:'';width:16px;height:2px;margin-top:2px;background:var(--g-flame);
-  box-shadow:0 0 8px rgba(255,122,26,.8);border-radius:1px}
-.ic{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.hub-plate{position:absolute;left:14px;right:14px;bottom:104px;z-index:20;padding:16px 16px 14px}
-.hub-plate .row{display:flex;align-items:baseline;gap:10px}
-.hub-plate .name{font-family:var(--g-font);font-weight:700;font-size:24px;letter-spacing:.05em;color:var(--g-bronze-hi)}
-.hub-chips{display:flex;gap:8px;margin-top:11px;flex-wrap:wrap}
-.chip{display:flex;align-items:center;gap:6px;padding:6px 11px;font-family:var(--g-font);font-weight:600;
-  font-size:10px;letter-spacing:.16em;color:var(--g-bronze)}
-.chip .dot{width:7px;height:7px;flex:none;border-radius:1px;transform:rotate(45deg)}
-.hub-cta{position:absolute;right:14px;bottom:262px;z-index:20;padding:13px 20px;cursor:pointer;font-family:var(--g-font);
-  font-weight:700;font-size:11px;letter-spacing:.24em;color:#0d0804;background:linear-gradient(180deg,#e9c477,#b5853c);
-  clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);
-  box-shadow:0 0 24px rgba(255,160,60,.25),inset 0 1px 0 rgba(255,240,200,.5);transition:transform .2s var(--ease)}
-.hub-cta:active{transform:scale(.96)}
-.hub-cta small{display:block;font-family:var(--g-body);font-style:italic;font-weight:500;font-size:11px;
-  letter-spacing:.05em;text-transform:none;color:rgba(30,18,6,.75);margin-top:2px}
-.map-head{position:absolute;top:56px;left:14px;z-index:20}
-.map-head .t-display{font-size:22px}
-.route-wrap{position:absolute;inset:0;z-index:15}
-.node{position:absolute;transform:translate(-50%,-50%);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:6px;z-index:16}
-.node .ring{position:relative;width:46px;height:46px;border-radius:50%;border:1px solid rgba(201,165,94,.55);
-  background:rgba(8,5,3,.72);display:flex;align-items:center;justify-content:center;
-  box-shadow:0 0 0 4px rgba(8,5,3,.4),inset 0 0 14px rgba(0,0,0,.8);transition:box-shadow .3s,border-color .3s}
-.node .ring::after{content:'';position:absolute;inset:-6px;border-radius:50%;border:1px dashed rgba(201,165,94,.22)}
-.node .lbl{font-family:var(--g-font);font-weight:600;font-size:9.5px;letter-spacing:.14em;color:var(--g-bronze);
-  background:rgba(5,3,2,.66);padding:3px 8px;white-space:nowrap;max-width:130px;overflow:hidden;text-overflow:ellipsis}
-.node.done .ring{border-color:rgba(201,165,94,.28)}
-.node.locked{opacity:.45}
-.node.cur .ring{border-color:var(--g-flame);box-shadow:0 0 0 4px rgba(8,5,3,.4),0 0 22px rgba(255,122,26,.45),inset 0 0 14px rgba(255,122,26,.22)}
-.node .sub{font-size:9px;letter-spacing:.1em;color:rgba(201,165,94,.55);font-style:italic}
-.mode-card{position:absolute;left:14px;right:14px;bottom:104px;z-index:20;padding:13px 15px;display:flex;align-items:center;gap:13px;cursor:pointer}
-.mode-card .ic2{width:38px;height:38px;flex:none;color:var(--g-bronze-hi)}
-.mode-card .ttl{font-family:var(--g-font);font-weight:700;font-size:14px;letter-spacing:.1em;color:var(--g-bronze-hi)}
-.mode-card .dsc{font-size:12.5px;color:rgba(201,165,94,.75);font-style:italic;margin-top:2px}
-.char-stage{position:absolute;inset:0;z-index:0}
-.char-stage .hero{position:absolute;inset:-20px 0 0;background-size:cover;background-position:center 18%}
-.char-head{position:absolute;top:60px;left:0;right:0;z-index:20;text-align:center}
-.char-head .name{font-size:27px}
-.char-head .epi{font-size:16px;margin-top:3px}
-.char-head .fac{display:inline-flex;align-items:center;gap:7px;margin-top:9px;padding:6px 13px}
-.stat-rail{position:absolute;left:12px;top:200px;z-index:20;display:flex;flex-direction:column;gap:9px;width:158px}
-.stat-row{position:relative;padding:9px 11px 16px;display:flex;align-items:center;gap:9px}
-.stat-row .k{font-family:var(--g-font);font-weight:600;font-size:9px;letter-spacing:.18em;color:rgba(201,165,94,.6)}
-.stat-row .v{margin-left:auto;font-family:var(--g-font);font-weight:700;font-size:13px;color:var(--g-bronze-hi)}
-.bar{height:3px;position:absolute;left:11px;right:11px;bottom:7px;background:rgba(201,165,94,.14);overflow:hidden}
-.bar i{display:block;height:100%;background:var(--g-flame);box-shadow:0 0 6px rgba(255,122,26,.7)}
-.abl-dock{position:absolute;right:12px;top:200px;z-index:20;display:flex;flex-direction:column;gap:9px;width:128px}
-.abl{display:flex;align-items:center;gap:10px;padding:9px 10px;cursor:pointer}
-.abl svg{width:17px;height:17px;flex:none}
-.abl .an{font-family:var(--g-font);font-weight:600;font-size:10px;letter-spacing:.14em;color:var(--g-bronze-hi)}
-.abl .ar{font-size:11px;color:rgba(201,165,94,.6);font-style:italic}
-.relic-dock{position:absolute;left:12px;right:12px;bottom:104px;z-index:20;display:flex;gap:9px}
-.relic-slot{flex:1;padding:9px 4px 8px;display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer}
-.relic-slot svg{width:21px;height:21px;color:var(--g-bronze-hi);filter:drop-shadow(0 0 5px rgba(255,150,50,.35))}
-.relic-slot .rl{font-family:var(--g-font);font-weight:600;font-size:8.5px;letter-spacing:.12em;color:rgba(201,165,94,.65);text-align:center}
-.roster-head{position:absolute;top:56px;left:14px;right:14px;z-index:20;display:flex;align-items:baseline;gap:10px}
-.roster-grid{position:absolute;top:100px;left:12px;right:12px;bottom:104px;z-index:20;overflow-y:auto;
-  display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:2px}
-.rcard{position:relative;height:170px;overflow:hidden;cursor:pointer;border:1px solid rgba(201,165,94,.28);
-  clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px)}
-.rcard .bg{position:absolute;inset:0;background-size:cover;background-position:center 22%;filter:brightness(.8) saturate(.92);transition:filter .3s}
-.rcard:hover .bg{filter:brightness(1) saturate(1.05)}
-.rcard .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,3,2,.1) 30%,rgba(4,3,2,.88))}
-.rcard .dn{position:absolute;left:9px;bottom:7px}
-.rcard .dn .n{font-family:var(--g-font);font-weight:700;font-size:12.5px;letter-spacing:.08em;color:var(--g-bronze-hi)}
-.rcard .dn .e{font-size:11px;font-style:italic;color:rgba(201,165,94,.7)}
-.rcard .dot{position:absolute;top:8px;right:8px;width:8px;height:8px;border-radius:1px;transform:rotate(45deg)}
-.roster-grid::-webkit-scrollbar{width:0}
-.inv-grid{position:absolute;top:100px;left:12px;right:12px;bottom:104px;z-index:20;overflow-y:auto;
-  display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:2px;align-content:start}
-.inv-card{padding:13px;display:flex;gap:11px;align-items:flex-start;cursor:pointer}
-.inv-card svg{width:26px;height:26px;flex:none;color:var(--g-bronze-hi);filter:drop-shadow(0 0 5px rgba(255,150,50,.3))}
-.inv-card .in{font-family:var(--g-font);font-weight:700;font-size:11.5px;letter-spacing:.1em;color:var(--g-bronze-hi)}
-.inv-card .id{font-size:11.5px;font-style:italic;color:rgba(201,165,94,.66);margin-top:2px;line-height:1.35}
-.inv-card .tag{display:inline-block;margin-top:6px;font-family:var(--g-font);font-size:8px;letter-spacing:.16em;
-  color:rgba(201,165,94,.55);border:1px solid rgba(201,165,94,.25);padding:2px 6px}
-.inv-grid::-webkit-scrollbar{width:0}
-.code-list{position:absolute;top:100px;left:12px;right:12px;bottom:104px;z-index:20;overflow-y:auto;display:flex;flex-direction:column;gap:9px;padding:2px}
-.code-item{display:flex;align-items:center;gap:12px;padding:13px 14px;cursor:pointer}
-.code-item svg{width:19px;height:19px;flex:none}
-.code-item .cn{font-family:var(--g-font);font-weight:600;font-size:12px;letter-spacing:.12em;color:var(--g-bronze-hi)}
-.code-item .cs{font-size:11.5px;font-style:italic;color:rgba(201,165,94,.6);margin-top:1px}
-.set-row{display:flex;align-items:center;gap:12px;padding:14px 15px;cursor:pointer}
-.set-row svg{width:18px;height:18px;flex:none}
-.set-row .sn{font-family:var(--g-font);font-weight:600;font-size:11.5px;letter-spacing:.14em;color:var(--g-bronze-hi)}
-.set-row .sd{font-size:12px;font-style:italic;color:rgba(201,165,94,.6);margin-top:1px}
-.toggle{margin-left:auto;width:40px;height:22px;border:1px solid rgba(201,165,94,.4);position:relative;flex:none;
-  clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px)}
-.toggle i{position:absolute;top:3px;left:4px;width:14px;height:14px;background:rgba(201,165,94,.35);transition:left .25s var(--ease),background .25s}
-.toggle.on i{left:21px;background:var(--g-flame);box-shadow:0 0 8px rgba(255,122,26,.7)}
-.cb-top{position:absolute;top:0;left:0;right:0;z-index:25;padding:12px 14px 0;display:flex;gap:10px;align-items:center}
-.cb-unit{position:absolute;top:12px;z-index:24;padding:7px 11px;display:flex;align-items:center;gap:8px}
-.cb-unit.left{left:52px}.cb-unit.right{right:52px}
-.cb-unit .nm{font-family:var(--g-font);font-weight:700;font-size:10px;letter-spacing:.1em}
-.cb-unit .hp{width:74px;height:3px;background:rgba(201,165,94,.18)}
-.cb-unit .hp i{display:block;height:100%;background:#e0563a;box-shadow:0 0 6px rgba(224,86,58,.6)}
-.cb-unit.right .hp i{background:#7ea6e0;box-shadow:0 0 6px rgba(126,166,224,.6)}
-.cb-reveal{position:absolute;left:14px;right:14px;top:210px;z-index:24;padding:12px 14px;display:none}
-.cb-reveal.on{display:block;animation:unfold .3s var(--ease)}
-.cb-reveal .rt{font-family:var(--g-font);font-weight:700;font-size:11px;letter-spacing:.2em;color:var(--g-bronze-hi)}
-.cb-reveal .rd{font-size:12px;font-style:italic;color:rgba(201,165,94,.75);margin-top:4px}
-.cb-reveal .stats{display:flex;gap:14px;margin-top:9px}
-.cb-reveal .s .k{font-family:var(--g-font);font-size:8.5px;letter-spacing:.16em;color:rgba(201,165,94,.5)}
-.cb-reveal .s .v{font-family:var(--g-font);font-weight:700;font-size:13px;color:var(--g-bronze-hi)}
-.cb-obj{position:absolute;top:64px;left:50%;transform:translateX(-50%);z-index:24;padding:7px 14px;text-align:center}
-.cb-obj .w{font-family:var(--g-font);font-weight:600;font-size:9px;letter-spacing:.22em;color:var(--g-bronze-hi)}
-.cb-obj .o{font-size:11.5px;font-style:italic;color:rgba(201,165,94,.7);margin-top:1px}
-.cb-tray{position:absolute;left:0;right:0;bottom:0;z-index:30;display:flex;gap:9px;justify-content:center;align-items:flex-end;
-  padding:12px 14px calc(16px + env(safe-area-inset-bottom));
-  background:linear-gradient(0deg,rgba(4,3,2,.9) 40%,transparent)}
-.abtn{position:relative;width:66px;height:66px;flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
-  cursor:pointer;background:rgba(10,7,4,.78);border:1px solid rgba(201,165,94,.4);
-  clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px);
-  transition:transform .15s var(--ease),border-color .2s}
-.abtn:active{transform:scale(.93)}
-.abtn svg{width:22px;height:22px;color:var(--g-bronze-hi)}
-.abtn span{font-family:var(--g-font);font-weight:700;font-size:8.5px;letter-spacing:.14em;color:var(--g-bronze)}
-.abtn.big{width:78px;height:78px;border-color:rgba(255,122,26,.55)}
-.abtn.big svg{color:var(--g-flame);filter:drop-shadow(0 0 7px rgba(255,122,26,.5))}
-.faith-mini{position:absolute;bottom:calc(100px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);
-  z-index:24;display:flex;align-items:center;gap:6px;padding:6px 13px}
-.faith-mini .num{font-family:var(--g-font);font-weight:700;font-size:12px;color:var(--g-bronze-hi)}
-.range{position:absolute;width:150px;height:150px;border:1.5px dashed rgba(255,122,26,.5);border-radius:50%;
-  z-index:12;transform:translate(-50%,-50%);pointer-events:none;animation:spin 14s linear infinite}
-.range::after{content:'';position:absolute;inset:22px;border:1px dashed rgba(255,122,26,.28);border-radius:50%}
-@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
-.toast{position:absolute;left:50%;bottom:190px;transform:translate(-50%,14px);z-index:50;padding:10px 18px;
-  opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;font-family:var(--g-font);font-weight:600;
-  font-size:10.5px;letter-spacing:.16em;color:var(--g-bronze-hi);text-align:center;max-width:320px}
-.toast.show{opacity:1;transform:translate(-50%,0)}
-#present{position:fixed;left:calc(50% - 195px - 210px);top:50%;transform:translateY(-50%);width:190px;display:none;
-  font-family:var(--g-body);color:rgba(201,165,94,.7);z-index:1}
-@media(min-width:900px){#present{display:block}}
-#present h1{font-family:var(--g-font);font-weight:700;font-size:19px;letter-spacing:.06em;color:var(--g-bronze-hi);margin:0 0 6px}
-#present .sub{font-style:italic;font-size:14px;color:rgba(201,165,94,.6)}
-#present p{font-size:13px;line-height:1.5;color:rgba(201,165,94,.66)}
-#present .hint{margin-top:14px;font-family:var(--g-font);font-size:9px;letter-spacing:.2em;color:rgba(201,165,94,.42)}
+  html,body{margin:0;height:100%;background:var(--m-ink);overflow:hidden;font-family:var(--m-font)}
+  #gl{position:fixed;inset:0;z-index:0;display:block;touch-action:none}
+  .screen{position:fixed;inset:0;z-index:2;display:none;flex-direction:column;pointer-events:none}
+  .screen.on{display:flex}
+  .screen>*{pointer-events:auto}
+
+  /* 2D transition veil — cinematic art between worlds */
+  #veil{position:fixed;inset:0;z-index:8;background-size:cover;background-position:center;
+    opacity:0;pointer-events:none;transition:opacity .55s ease}
+  #veil.on{opacity:1}
+  #veilT{position:fixed;inset:0;z-index:8;background:rgba(5,3,1,.55);opacity:0;pointer-events:none;transition:opacity .55s}
+  #veil.on~#veilT{opacity:1}
+  .loadword{position:fixed;z-index:9;left:0;right:0;top:46%;text-align:center;color:var(--m-dim);
+    font-size:11px;letter-spacing:6px;opacity:0;transition:opacity .5s;pointer-events:none}
+  .loadword.on{opacity:.9}
+
+  /* top chrome */
+  .top{display:flex;justify-content:space-between;align-items:flex-start;padding:12px 14px;padding-top:max(12px,env(safe-area-inset-top))}
+  .idplate{border-left:2px solid var(--m-line);padding-left:10px}
+  .idplate .t1{font-size:13px;letter-spacing:3px;color:var(--m-gold);text-shadow:0 1px 0 #000}
+  .idplate .t2{font-size:10px;letter-spacing:2px;color:var(--m-faint);margin-top:3px}
+  .faith{display:flex;align-items:center;gap:7px;border:1px solid var(--m-line-2);padding:7px 12px;
+    background:rgba(18,13,7,.72);font-size:12px;letter-spacing:1px;color:var(--m-gold);
+    clip-path:polygon(7px 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%,0 7px)}
+  .faith svg{width:12px;height:12px}
+
+  /* bottom dock — integrated around the scene */
+  .dock{margin-top:auto;display:flex;justify-content:center;gap:8px;padding:10px 10px max(14px,env(safe-area-inset-bottom))}
+  .dockbtn{width:70px;padding:9px 0 8px;text-align:center;border:1px solid var(--m-line-2);
+    background:linear-gradient(180deg,rgba(30,23,13,.82),rgba(14,10,6,.88));cursor:pointer;
+    clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px);
+    transition:transform .08s var(--m-ease),border-color .15s,box-shadow .15s}
+  .dockbtn svg{width:26px;height:26px;stroke:var(--m-dim);fill:none;stroke-width:1.6}
+  .dockbtn .lb{display:block;font-size:8.5px;letter-spacing:2px;color:var(--m-dim);margin-top:5px}
+  .dockbtn.on{border-color:var(--m-flame);box-shadow:0 0 16px var(--m-flame-soft)}
+  .dockbtn.on svg{stroke:var(--m-gold);filter:drop-shadow(0 0 5px rgba(255,150,50,.5))}
+  .dockbtn.on .lb{color:var(--m-gold)}
+  .dockbtn.pressed{transform:translateY(2px)}
+
+  /* character screen — info frames the figure, never covers it */
+  .charhud{display:flex;flex:1;min-height:0;gap:10px;padding:56px 12px 0}
+  .col-l,.col-r{width:132px;display:flex;flex-direction:column;gap:8px}
+  .col-m{flex:1}
+  .charname{font-size:15px;letter-spacing:3px;text-shadow:0 1px 0 #000}
+  .charepi{font-size:10px;letter-spacing:2px;color:var(--m-dim);font-style:italic;margin-top:3px}
+  .statrow{display:flex;justify-content:space-between;font-size:10.5px;letter-spacing:1.5px;color:var(--m-dim);padding:4px 0;border-bottom:1px solid rgba(46,36,21,.6)}
+  .statrow b{color:#ffca7a;font-weight:normal}
+  .abbtn{width:100%;min-height:42px;margin-top:2px;font-size:10px;letter-spacing:2px}
+  .hint{font-size:9px;letter-spacing:1.5px;color:var(--m-faint);text-align:center;margin:6px 0 8px}
+  @media(max-width:740px){.col-l,.col-r{width:104px}}
+  @media(max-width:560px){.charhud{flex-wrap:wrap;gap:6px;padding-top:50px}
+    .col-m{order:1;width:100%;min-height:40%}
+    .col-l{order:2;width:calc(50% - 3px);flex-direction:row;flex-wrap:wrap}
+    .col-l .m-panel{width:100%}
+    .col-r{order:3;width:calc(50% - 3px)}
+    .abbtn{width:100%}}
+
+  /* world screen */
+  .poi-card{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);width:min(86vw,420px);z-index:4;display:none}
+  .poi-card.on{display:block}
+  .poi-art{height:130px;background-size:cover;background-position:center;border-bottom:1px solid var(--m-line-2)}
+  .poi-body{padding:12px 14px}
+  .poi-t{font-size:13px;letter-spacing:2px}
+  .poi-d{font-size:11px;color:var(--m-dim);line-height:1.6;margin:6px 0 10px;font-style:italic}
+
+  /* boss reveal */
+  .bossword{position:fixed;left:0;right:0;text-align:center;z-index:4;opacity:0;transition:opacity 1.2s ease;pointer-events:none}
+  .bossword.on{opacity:1}
+  .bw1{top:18%;font-size:10px;letter-spacing:6px;color:var(--m-dim)}
+  .bw2{top:56%;font-size:clamp(17px,4vw,26px);letter-spacing:7px;color:#cbb7ff;text-shadow:0 0 26px rgba(140,110,255,.5),0 2px 0 #000}
+  .bw3{top:66%;font-size:10px;letter-spacing:4px;color:var(--m-faint)}
+  .boss-enter{position:fixed;left:50%;bottom:110px;transform:translateX(-50%);width:min(70vw,300px);z-index:4;opacity:0;transition:opacity 1s;pointer-events:none}
+  .boss-enter.on{opacity:1;pointer-events:auto}
+  #flash{position:fixed;inset:0;background:#d9c9ff;opacity:0;pointer-events:none;z-index:3;transition:opacity .9s ease}
+
+  /* codex archive */
+  .archive{flex:1;overflow-y:auto;padding:56px 14px 14px;max-width:760px;width:100%;margin:0 auto}
+  .arcgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+  .arccard{border:1px solid var(--m-line-2);background:rgba(15,11,7,.9);cursor:pointer;
+    clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px)}
+  .arcimg{height:150px;background-size:cover;background-position:center top;filter:brightness(.92)}
+  .arct{font-size:11.5px;letter-spacing:2px;padding:10px 12px 2px}
+  .arcx{font-size:10px;color:var(--m-dim);padding:0 12px 12px;line-height:1.6;font-style:italic}
+  .arcopen{position:fixed;inset:0;z-index:6;display:none;align-items:center;justify-content:center;background:rgba(6,4,2,.9);padding:20px}
+  .arcopen.on{display:flex}
+  .arcopen-inner{max-width:520px;width:100%;max-height:88vh;overflow-y:auto}
+  .arcopen img{width:100%;display:block}
+  .arcopen .body{padding:16px}
+
+  .backbtn{position:fixed;top:max(12px,env(safe-area-inset-top));left:12px;z-index:5}
+  .vtag{position:fixed;bottom:8px;right:12px;font-size:9px;letter-spacing:2px;color:#4a4234;z-index:2;pointer-events:none}
+  .topfade{position:fixed;left:0;right:0;top:0;height:110px;z-index:1;pointer-events:none;
+    background:linear-gradient(180deg,rgba(6,4,2,.75),transparent)}
 </style>
 </head>
-<body>
-<div id="present">
-  <h1>AVALON</h1>
-  <div class="sub">The Waking Gates</div>
-  <p>Cinematic Mythic Relic interface — the artwork is the centerpiece; the interface is the artifact.</p>
-  <p>One frame language everywhere: relic-bronze rails, obsidian glass, carved notches, ember feedback.</p>
-  <div class="hint">TAP · HOLD · WATCH THE WORLD BREATHE</div>
+<body class="m-root">
+<canvas id="gl"></canvas>
+<div class="topfade"></div>
+
+<!-- ================= HUB ================= -->
+<div class="screen on" id="s-hub">
+  <div class="top">
+    <div class="idplate"><div class="t1 m-emboss">VAELTHORN</div><div class="t2">THE FURNACE KING · YOUR GATE</div></div>
+    <div class="faith"><svg viewBox="0 0 24 24"><path d="M12 3c1 4 3 5 3 9 0 3-1 6-3 8-2-2-3-5-3-8 0-4 2-5 3-9z" fill="#ff9a3a"/></svg><span>1,024</span></div>
+  </div>
+  <div style="flex:1"></div>
+  <div class="dock" id="dock">
+    <div class="dockbtn on" data-go="hub" data-tip="The Gate. Your god stands watch.">
+      <svg viewBox="0 0 24 24"><path d="M5 20V9a7 7 0 0 1 14 0v11M3 20h18M12 3v-2"/></svg><span class="lb">THE GATE</span></div>
+    <div class="dockbtn" data-go="char" data-tip="Inspect the Warden — rotate, zoom, preview the kit.">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.4"/><path d="M12 8v7M12 15l-3 6M12 15l3 6M7 11l5-2 5 2"/></svg><span class="lb">THE ORDER</span></div>
+    <div class="dockbtn" data-go="world" data-tip="The roads and the fields — choose where you walk.">
+      <svg viewBox="0 0 24 24"><path d="M3 19l6-9 4 5 3-4 5 8zM3 19h18"/><circle cx="9" cy="7" r="1.6"/></svg><span class="lb">THE ROAD</span></div>
+    <div class="dockbtn" data-go="codex" data-tip="The archive — 2D art and the written roads.">
+      <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-3-6 3zM9 8h6"/></svg><span class="lb">THE CODEX</span></div>
+  </div>
 </div>
-<div id="shell">
-  <section class="scr on" id="scr-hub">
-    <div class="world" id="hub-world" style="background-image:url('roster/VAELTHORN-FURNACEKING-EMERGENCE-CANON.png')"></div>
-    <div class="grain"></div><div class="vignette"></div>
-    <div class="statusbar">
-      <div class="sigil-btn" onclick="toast('The pilgrim record — profile, progression, and the current journey.')">
-        <svg viewBox="0 0 48 48" class="ic"><path d="M24 5 L38 12 V26 C38 34 32 40 24 43 C16 40 10 34 10 26 V12 Z" opacity=".85"/><path d="M24 14 C28 14 31 17 31 21 C31 26 28 28 27 30 V34 H21 V30 C20 28 17 26 17 21 C17 17 20 14 24 14 Z" fill="currentColor" stroke="none" opacity=".9"/></svg>
-      </div>
-      <div class="player-name"><div class="nm">PILGRIM</div><div class="t-micro" id="hub-route">Sun-Scale Ascent</div></div>
-      <div class="faith-chip relic" onclick="toast('FAITH — earned by holding the line. Wards, surges, and miracles are paid in Faith.')">
-        <svg style="width:10px;height:14px" viewBox="0 0 10 14"><path d="M5 0 C7 4 10 6 10 10 C10 12.4 7.8 14 5 14 C2.2 14 0 12.4 0 10 C0 6 3 4 5 0 Z" fill="#ff7a1a"/></svg>
-        <span class="num">2,480</span>
-      </div>
-      <div class="faith-chip" style="padding:7px 8px" onclick="toggleCtx()">
-        <svg viewBox="0 0 20 20" class="ic" style="width:17px;height:17px"><circle cx="4" cy="4" r="1.4" fill="currentColor" stroke="none"/><circle cx="10" cy="4" r="1.4" fill="currentColor" stroke="none"/><circle cx="16" cy="4" r="1.4" fill="currentColor" stroke="none"/><circle cx="4" cy="10" r="1.4" fill="currentColor" stroke="none"/><circle cx="10" cy="10" r="1.4" fill="currentColor" stroke="none"/><circle cx="16" cy="10" r="1.4" fill="currentColor" stroke="none"/><circle cx="4" cy="16" r="1.4" fill="currentColor" stroke="none"/><circle cx="10" cy="16" r="1.4" fill="currentColor" stroke="none"/><circle cx="16" cy="16" r="1.4" fill="currentColor" stroke="none"/></svg>
-      </div>
-    </div>
-    <div class="ctx relic" id="ctx-menu">
-      <div class="item" onclick="go('campaign');closeCtx()"><svg class="ic" viewBox="0 0 20 20"><path d="M2 17 L8 5 L12 5 L18 17 Z M5 17 L15 17"/><circle cx="10" cy="12" r="2.2"/></svg>WORLD</div>
-      <div class="item" onclick="toast('EVENTS — the Gates stir on their own calendar. Nothing stirs yet.')"><svg class="ic" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M10 6 V10 L13 12"/></svg>EVENTS</div>
-      <div class="item" onclick="go('settings');closeCtx()"><svg class="ic" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/><path d="M10 2 V5 M10 15 V18 M2 10 H5 M15 10 H18 M4.3 4.3 L6.4 6.4 M13.6 13.6 L15.7 15.7 M15.7 4.3 L13.6 6.4 M6.4 13.6 L4.3 15.7"/></svg>SETTINGS</div>
-    </div>
-    <div class="hub-plate relic ridge">
-      <div class="row"><span class="name t-display">VAELTHORN</span><span class="t-epithet" style="color:rgba(201,165,94,.8)">the Furnace King</span></div>
-      <div class="hub-chips">
-        <span class="chip relic"><span class="dot" style="background:#ff7a1a;box-shadow:0 0 6px #ff7a1a"></span>AWAKENED</span>
-        <span class="chip relic">TIER II · RISEN</span>
-        <span class="chip relic">KIT: FURNACE-GOD</span>
-      </div>
-      <div class="t-micro" style="margin-top:10px;letter-spacing:.1em;text-transform:none;font-size:12px;font-style:italic;color:rgba(201,165,94,.62)">The mountain is awake. The Gate is held.</div>
-    </div>
-    <div class="hub-cta" onclick="go('combat')">ANSWER THE GATE<small>continue the journey</small></div>
-  </section>
 
-  <section class="scr" id="scr-campaign">
-    <div class="world" style="background-image:url('cinematic-gods/01-HEARTLAND-DAWN.jpg')"></div>
-    <div class="grain"></div><div class="vignette"></div>
-    <div class="map-head">
-      <div class="t-display" style="font-size:22px">THE ROADS</div>
-      <div class="t-micro" style="margin-top:3px">EIGHT ROADS · ONE GATE EACH</div>
-    </div>
-    <div class="route-wrap" id="route-wrap"></div>
-    <div class="mode-card relic ridge" onclick="go('combat')">
-      <svg class="ic2 ic" viewBox="0 0 38 38"><path d="M19 4 L32 10 V22 C32 29 27 33 19 35 C11 33 6 29 6 22 V10 Z"/><path d="M19 12 C22 12 24 14.6 24 17.4 C24 21 22 22.6 19 26.5 C16 22.6 14 21 14 17.4 C14 14.6 16 12 19 12 Z"/></svg>
-      <div>
-        <div class="ttl">SUN-SCALE ASCENT</div>
-        <div class="dsc">Chapter II · the Measured Noon — Meridian Court</div>
-      </div>
-      <svg class="go ic" viewBox="0 0 20 20" style="width:16px;height:16px"><path d="M7 4 L14 10 L7 16"/></svg>
-    </div>
-  </section>
-
-  <section class="scr" id="scr-roster">
-    <div class="world" style="background-image:url('cinematic-gods/04-LANTERN-RITE.jpg')"></div>
-    <div class="grain"></div><div class="vignette"></div>
-    <div class="roster-head">
-      <div class="t-display" style="font-size:22px">THE ROSTER</div>
-      <div class="t-micro">COLOSSI · WOKEN AND SLEEPING</div>
-    </div>
-    <div class="roster-grid" id="roster-grid"></div>
-  </section>
-
-  <section class="scr" id="scr-char">
-    <div class="char-stage"><div class="hero" id="char-hero" style="background-image:url('roster/VAELTHORN-FURNACEKING-EMERGENCE-CANON.png')"></div></div>
-    <div class="grain"></div><div class="vignette"></div>
-    <div class="char-head">
-      <div class="name t-display" id="char-name">VAELTHORN</div>
-      <div class="t-epithet" id="char-epi">the Furnace King</div>
-      <div class="fac relic"><span style="width:7px;height:7px;background:#ff7a1a;box-shadow:0 0 6px #ff7a1a;transform:rotate(45deg)"></span><span class="t-label" id="char-fac">ELEMENT: FURNACE · ROLE: WARRIOR</span></div>
-    </div>
-    <div class="stat-rail">
-      <div class="stat-row relic"><span class="k">VESSEL</span><span class="v">4,180</span><span class="bar"><i style="width:86%"></i></span></div>
-      <div class="stat-row relic"><span class="k">FAITH</span><span class="v">2,480</span><span class="bar"><i style="width:62%"></i></span></div>
-      <div class="stat-row relic"><span class="k">MIGHT</span><span class="v">47</span></div>
-      <div class="stat-row relic"><span class="k">REACH</span><span class="v">31</span></div>
-    </div>
-    <div class="abl-dock">
-      <div class="abl relic" data-tip="Heavy overhead smash — cleaves the ground before the Gate."><svg class="ic" viewBox="0 0 20 20" style="color:#ff7a1a"><path d="M10 2 V13 M6 6 L10 2 L14 6 M4 16 H16"/></svg><div><div class="an">QUAKE</div><div class="ar">heavy · ground</div></div></div>
-      <div class="abl relic" data-tip="A rolling tide of flame thrown down the lane."><svg class="ic" viewBox="0 0 20 20" style="color:#ff7a1a"><path d="M2 12 C4 9 7 9 9 11 C11 13 14 13 16 10 M2 16 C4 13 7 13 9 15 C11 17 14 17 16 14"/></svg><div><div class="an">SURGE</div><div class="ar">tide · lane</div></div></div>
-      <div class="abl relic" data-tip="Ember bolts arc out and seek their marks."><svg class="ic" viewBox="0 0 20 20" style="color:#ff7a1a"><path d="M3 17 L13 7 M13 7 L14 3 L17 6 L13 7 M6 17 L4 15"/></svg><div><div class="an">VOLLEY</div><div class="ar">ranged · seek</div></div></div>
-    </div>
-    <div class="relic-dock">
-      <div class="relic-slot relic" data-tip="The Mark — the Gate Rune carved into the breastplate. It carries the faction flame."><svg class="ic" viewBox="0 0 24 24"><path d="M12 3 L19 7 V14 C19 18 16 20.5 12 22 C8 20.5 5 18 5 14 V7 Z M12 8 C14 8 15.4 9.6 15.4 11.4 C15.4 14 13.4 15 12.6 17.6 H11.4 C10.6 15 8.6 14 8.6 11.4 C8.6 9.6 10 8 12 8 Z"/></svg><span class="rl">THE MARK</span></div>
-      <div class="relic-slot relic" data-tip="The Cold Lantern — earned relic. The companion that wears it keeps the flame."><svg class="ic" viewBox="0 0 24 24"><path d="M9 3 H15 M12 3 V5 M8 5 H16 L17 11 H7 Z M7 11 C7 16 9 18 12 19 C15 18 17 16 17 11"/></svg><span class="rl">COLD LANTERN</span></div>
-      <div class="relic-slot relic" data-tip="Way-Daggers — plain worn steel, carried separated."><svg class="ic" viewBox="0 0 24 24"><path d="M5 3 L8 6 L6 9 L10 13 M19 21 L16 18 L18 15 L14 11 M5 3 L3 5 M19 21 L21 19"/></svg><span class="rl">WAY-DAGGERS</span></div>
-      <div class="relic-slot relic" data-tip="An empty socket in the plate. The roads will offer what they offer."><svg class="ic" viewBox="0 0 24 24"><path d="M12 4 V20 M4 12 H20"/></svg><span class="rl">—</span></div>
-    </div>
-  </section>
-
-  <section class="scr" id="scr-relics">
-    <div class="world" style="background-image:url('cinematic-gods/03-WARM-STONE.jpg')"></div>
-    <div class="grain"></div><div class="vignette"></div>
-    <div class="roster-head">
-      <div class="t-display" style="font-size:22px">RELICS</div>
-      <div class="t-micro">EARNED · NEVER SOLD</div>
-    </div>
-    <div class="inv-grid">
-      <div class="inv-card relic" data-tip="The pilgrim's Mark — the Gate Rune, carved into the breastplate at the first Gate."><svg class="ic" viewBox="0 0 24 24"><path d="M12 3 L19 7 V14 C19 18 16 20.5 12 22 C8 20.5 5 18 5 14 V7 Z M12 8 C14 8 15.4 9.6 15.4 11.4 C15.4 14 13.4 15 12.6 17.6 H11.4 C10.6 15 8.6 14 8.6 11.4 C8.6 9.6 10 8 12 8 Z"/></svg><div><div class="in">THE MARK</div><div class="id">The Gate Rune, carved relief into the plate. The flame carries the faction color.</div><span class="tag">WORN · CANNOT PART</span></div></div>
-      <div class="inv-card relic" data-tip="One companion, two lights: the flame illuminates, the lantern it wears protects."><svg class="ic" viewBox="0 0 24 24"><path d="M9 3 H15 M12 3 V5 M8 5 H16 L17 11 H7 Z M7 11 C7 16 9 18 12 19 C15 18 17 16 17 11"/></svg><div><div class="in">THE COLD LANTERN</div><div class="id">Earned relic. The pixie wears it as attire — one companion, two lights.</div><span class="tag">EARNED RELIC</span></div></div>
-      <div class="inv-card relic" data-tip="Plain worn steel — long blade forward-grip, short blade reverse-grip, always carried separated."><svg class="ic" viewBox="0 0 24 24"><path d="M5 3 L8 6 L6 9 L10 13 M19 21 L16 18 L18 15 L14 11 M5 3 L3 5 M19 21 L21 19"/></svg><div><div class="in">WAY-DAGGERS</div><div class="id">A pair of plain worn steel — carried separated, never crossed.</div><span class="tag">WEAPON · PAIR</span></div></div>
-      <div class="inv-card relic" data-tip="The emberling — it rides along and keeps the flame."><svg class="ic" viewBox="0 0 24 24"><path d="M12 4 C15 8 19 10 19 15 C19 19 16 21.5 12 21.5 C8 21.5 5 19 5 15 C5 10 9 8 12 4 Z M12 11 C13.4 11 14.4 12.2 14.4 13.6 C14.4 16 12.8 17 12.2 19 H11.8 C11.2 17 9.6 16 9.6 13.6 C9.6 12.2 10.6 11 12 11 Z"/></svg><div><div class="in">EMBERLING</div><div class="id">The companion — a small light that keeps the flame company on the roads.</div><span class="tag">COMPANION</span></div></div>
-      <div class="inv-card relic" data-tip="Relics arrive from the roads — nothing is bought."><svg class="ic" viewBox="0 0 24 24"><path d="M12 4 V20 M4 12 H20"/></svg><div><div class="in" style="color:rgba(201,165,94,.4)">UNCHANGED STONE</div><div class="id" style="color:rgba(201,165,94,.35)">An empty socket in the plate. The roads will offer what they offer.</div><span class="tag" style="color:rgba(201,165,94,.3);border-color:rgba(201,165,94,.15)">EMPTY</span></div></div>
-      <div class="inv-card relic" data-tip="Relics arrive from the roads — nothing is bought."><svg class="ic" viewBox="0 0 24 24"><path d="M12 4 V20 M4 12 H20"/></svg><div><div class="in" style="color:rgba(201,165,94,.4)">UNCHANGED STONE</div><div class="id" style="color:rgba(201,165,94,.35)">An empty socket in the plate. The roads will offer what they offer.</div><span class="tag" style="color:rgba(201,165,94,.3);border-color:rgba(201,165,94,.15)">EMPTY</span></div></div>
-    </div>
-  </section>
-
-  <section class="scr" id="scr-codex">
-    <div class="world" style="background-image:url('cinematic-gods/02-KILN-ROAD.jpg')"></div>
-    <div class="grain"></div><div class="vignette"></div>
-    <div class="roster-head">
-      <div class="t-display" style="font-size:22px">CODEX</div>
-      <div class="t-micro">THE RECORD · TOLD IN PLAY</div>
-    </div>
-    <div class="code-list" id="code-list"></div>
-  </section>
-
-  <section class="scr" id="scr-settings">
-    <div class="world" style="background-image:url('cinematic-gods/08-SOMETHING-ELSE.jpg')"></div>
-    <div class="grain"></div><div class="vignette"></div>
-    <div class="roster-head">
-      <div class="t-display" style="font-size:22px">SETTINGS</div>
-      <div class="t-micro">THE ARTIFACT'S DIALS</div>
-    </div>
-    <div class="code-list">
-      <div class="set-row relic" onclick="toggleSw(this)"><svg class="ic" viewBox="0 0 20 20"><path d="M3 5 H17 M3 10 H17 M3 15 H17 M6 3 V7 M13 8 V12 M8 13 V17"/></svg><div><div class="sn">CINEMATIC CAMERA</div><div class="sd">The director frames the god-battles like film.</div></div><div class="toggle on"><i></i></div></div>
-      <div class="set-row relic" onclick="toggleSw(this)"><svg class="ic" viewBox="0 0 20 20"><path d="M10 3 C13 6 16 7 16 11 C16 14 13.4 16 10 16 C6.6 16 4 14 4 11 C4 7 7 6 10 3 Z"/></svg><div><div class="sn">EMBER PARTICLES</div><div class="sd">The world breathes — drifting light in every scene.</div></div><div class="toggle on"><i></i></div></div>
-      <div class="set-row relic" onclick="toggleSw(this)"><svg class="ic" viewBox="0 0 20 20"><path d="M4 6 L9 3 L16 3 L16 8 L11 8 L11 12 M4 6 L4 12 L8 15 M4 12 L4 17 L9 17 L9 12 Z"/></svg><div><div class="sn">STONE VOICE</div><div class="sd">Tactile feedback — carved clicks on every press.</div></div><div class="toggle on"><i></i></div></div>
-      <div class="set-row relic" onclick="toggleSw(this)"><svg class="ic" viewBox="0 0 20 20"><path d="M10 2 L18 17 H2 Z M10 8 V12 M10 14.5 V15"/></svg><div><div class="sn">REDUCED EFFECTS</div><div class="sd">Quiet the artifact — stillness over spectacle.</div></div><div class="toggle"><i></i></div></div>
-      <div class="set-row relic" onclick="toast('Language — the record is kept in one tongue for now.')"><svg class="ic" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7.5"/><path d="M2.5 10 H17.5 M10 2.5 C13 6 13 14 10 17.5 C7 14 7 6 10 2.5 Z"/></svg><div><div class="sn">LANGUAGE</div><div class="sd">The Common Tongue</div></div></div>
-    </div>
-  </section>
-
-  <section class="scr" id="scr-combat">
-    <div class="world" style="background-image:url('cinematic-gods/06-THE-GOD-RISES.jpg');filter:brightness(.85)"></div>
-    <div class="grain"></div>
-    <div class="range" style="left:50%;top:47%"></div>
-    <div class="cb-top">
-      <div class="cb-unit left relic"><svg class="ic" viewBox="0 0 20 20" style="width:15px;height:15px;color:#ff7a1a"><path d="M10 2 C12 5 15 6 15 9 C15 12 13 13 10 15 C7 13 5 12 5 9 C5 6 8 5 10 2 Z"/></svg><div><div class="nm" style="color:#f0d79a">VAELTHORN</div><div class="hp"><i style="width:82%"></i></div></div></div>
-      <div style="flex:none;font-family:var(--g-font);font-weight:700;font-size:9px;letter-spacing:.2em;color:rgba(201,165,94,.55);padding:4px 0">VS</div>
-      <div class="cb-unit right relic"><svg class="ic" viewBox="0 0 20 20" style="width:15px;height:15px;color:#7ea6e0"><path d="M10 2 C12 5 15 6 15 9 C15 12 13 13 10 15 C7 13 5 12 5 9 C5 6 8 5 10 2 Z"/></svg><div><div class="nm" style="color:#bcd0ec">THE ECHO</div><div class="hp"><i style="width:64%"></i></div></div></div>
-    </div>
-    <div class="cb-obj relic"><div class="w">ECHO DUEL · THE GATE OF EMBERS</div><div class="o">Break the Echo's vessel before it breaks yours.</div></div>
-    <div class="cb-reveal relic" id="cb-reveal">
-      <div class="rt">THE ECHO · HOLLOW OF A RIVAL GOD</div>
-      <div class="rd">"It does not fight like the living. It fights like a memory of a fight."</div>
-      <div class="stats">
-        <div class="s"><div class="k">VESSEL</div><div class="v">6,100</div></div>
-        <div class="s"><div class="k">STAGGER</div><div class="v">42</div></div>
-        <div class="s"><div class="k">PATTERN</div><div class="v">MIRROR</div></div>
+<!-- ================= CHARACTER ================= -->
+<div class="screen" id="s-char">
+  <div class="backbtn"><button class="m-btn m-btn-sm" data-go="hub">← THE GATE</button></div>
+  <div class="charhud">
+    <div class="col-l">
+      <div class="m-panel" style="padding:12px">
+        <div class="charname m-emboss">WARDEN</div>
+        <div class="charepi">pilgrim of the Cinder Roads</div>
+        <div class="m-divider" style="margin:9px 0"></div>
+        <div class="statrow"><span>VESSEL</span><b>140</b></div>
+        <div class="statrow"><span>FAITH</span><b>80</b></div>
+        <div class="statrow"><span>MARK</span><b>GATE RUNE</b></div>
+        <div class="statrow"><span>RELIC</span><b>COLD LANTERN</b></div>
       </div>
     </div>
-    <div class="faith-mini relic"><svg style="width:9px;height:13px" viewBox="0 0 10 14"><path d="M5 0 C7 4 10 6 10 10 C10 12.4 7.8 14 5 14 C2.2 14 0 12.4 0 10 C0 6 3 4 5 0 Z" fill="#ff7a1a"/></svg><span class="num">62 FAITH</span></div>
-    <div class="cb-tray">
-      <div class="abtn big" onclick="cbAct(this,'WARD — the Gate absorbs the blow. Blocked strikes become Faith.')"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3 L19 7 V14 C19 18 16 20.5 12 22 C8 20.5 5 18 5 14 V7 Z"/><path d="M12 8 C14 8 15.4 9.6 15.4 11.4 C15.4 14 13.4 15 12.6 17.6 H11.4 C10.6 15 8.6 14 8.6 11.4 C8.6 9.6 10 8 12 8 Z"/></svg><span>WARD</span></div>
-      <div class="abtn" onclick="cbAct(this,'SWING — the three-blow combo. The finisher staggers.')"><svg class="ic" viewBox="0 0 24 24"><path d="M5 19 L15 9 M15 9 L19 3 L21 5 L15 9 M8 19 L4 21 L5 17"/></svg><span>SWING</span></div>
-      <div class="abtn" onclick="cbAct(this,'SURGE — flame rolls down the lane between the Gates.')"><svg class="ic" viewBox="0 0 24 24"><path d="M2 13 C5 9 9 9 12 12 C15 15 19 15 22 11 M2 18 C5 14 9 14 12 17 C15 20 19 20 22 16"/></svg><span>SURGE</span><div class="cd">3</div></div>
-      <div class="abtn" onclick="cbAct(this,'VOLLEY — ember bolts seek their marks.')"><svg class="ic" viewBox="0 0 24 24"><path d="M3 19 L14 8 M14 8 L15 3 L18 6 L14 8 M7 19 L4 16"/></svg><span>VOLLEY</span></div>
-      <div class="abtn" onclick="cbAct(this,'QUAKE — the heavy blow. The ground answers.')"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3 V16 M7 8 L12 3 L17 8 M5 20 H19 M8 20 L10 16.5 M16 20 L14 16.5"/></svg><span>QUAKE</span><div class="cd">7</div></div>
+    <div class="col-m"></div>
+    <div class="col-r">
+      <div class="m-panel" style="padding:12px">
+        <div class="m-label" style="margin-bottom:8px">THE KIT — PREVIEW</div>
+        <button class="m-btn abbtn" data-anim="COMBO">SWING COMBO</button>
+        <button class="m-btn abbtn" data-anim="PARRY">SWORD PARRY</button>
+        <button class="m-btn abbtn" data-anim="SHIELDBASH">SHIELD BASH</button>
+        <button class="m-btn abbtn" data-anim="IDLE">REST</button>
+      </div>
     </div>
-    <div style="position:absolute;top:10px;left:12px;z-index:26;cursor:pointer" onclick="go('hub')"><svg class="ic" viewBox="0 0 20 20" style="width:19px;height:19px;color:rgba(201,165,94,.7)"><path d="M12 4 L5 10 L12 16"/></svg></div>
-  </section>
-
-  <nav class="botnav" id="botnav">
-    <div class="nav-item on" data-scr="hub" onclick="go('hub')">
-      <svg class="ic" viewBox="0 0 24 24"><path d="M12 3 L19 7 V14 C19 18 16 20.5 12 22 C8 20.5 5 18 5 14 V7 Z"/><path d="M12 8 C14 8 15.4 9.6 15.4 11.4 C15.4 14 13.4 15 12.6 17.6 H11.4 C10.6 15 8.6 14 8.6 11.4 C8.6 9.6 10 8 12 8 Z"/></svg><span>HUB</span></div>
-    <div class="nav-item" data-scr="campaign" onclick="go('campaign')">
-      <svg class="ic" viewBox="0 0 24 24"><path d="M3 20 L9 4 L15 4 L21 20 Z M7.5 20 L16.5 20 M10.5 13 H13.5"/><circle cx="12" cy="16.5" r="1.3"/></svg><span>WORLD</span></div>
-    <div class="nav-item" data-scr="roster" onclick="go('roster')">
-      <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21 C5 16.5 8 14.5 12 14.5 C16 14.5 19 16.5 19 21"/></svg><span>ROSTER</span></div>
-    <div class="nav-item" data-scr="relics" onclick="go('relics')">
-      <svg class="ic" viewBox="0 0 24 24"><path d="M9 3 H15 M12 3 V5 M8 5 H16 L17.5 12 H6.5 Z M6.5 12 C6.5 17.5 9 19.5 12 20.5 C15 19.5 17.5 17.5 17.5 12"/></svg><span>RELICS</span></div>
-    <div class="nav-item" data-scr="codex" onclick="go('codex')">
-      <svg class="ic" viewBox="0 0 24 24"><path d="M5 4 H11 C12.5 4 13 5 13 5 C13 5 13.5 4 15 4 H19 V19 H15 C13.5 19 13 20 13 20 C13 20 12.5 19 11 19 H5 Z M13 5 V20"/></svg><span>CODEX</span></div>
-    <div class="nav-item" data-scr="settings" onclick="go('settings')">
-      <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 3 V6 M12 18 V21 M3 12 H6 M18 12 H21 M5.6 5.6 L7.7 7.7 M16.3 16.3 L18.4 18.4 M18.4 5.6 L16.3 7.7 M7.7 16.3 L5.6 18.4"/></svg><span>SETTINGS</span></div>
-  </nav>
-
-  <div class="toast relic" id="toast"></div>
+  </div>
+  <div class="hint">drag to rotate · pinch or scroll to inspect · double-tap for the low angle</div>
 </div>
-<script>
-const FACTIONS=[
- {id:"MG-FACTION-001",name:"Meridian Court",realm:"The Measured Noon",route:"Sun-Scale Ascent",fc:"#f0b840"},
- {id:"MG-FACTION-002",name:"Stormmoot",realm:"The Stormmoot Halls",route:"Sky-Oath Road",fc:"#7ec8ff"},
- {id:"MG-FACTION-003",name:"Laurel Agon",realm:"The Laurel Agon",route:"Trial-Steps Ascent",fc:"#b8d44a"},
- {id:"MG-FACTION-004",name:"Thousand Torii",realm:"The Thousand Torii",route:"Moon-Torii Procession",fc:"#b09fff"},
- {id:"MG-FACTION-005",name:"Silverroot Kindred",realm:"The Silverroot",route:"Rooted Hollow Road",fc:"#cfc0ff"},
- {id:"MG-FACTION-006",name:"Radiant Vigil",realm:"The Light-Vault",route:"Light-Vault Dimming Ascent",fc:"#ffe9a8"},
- {id:"MG-FACTION-007",name:"Black-Iron Dominion",realm:"The Debt Citadel",route:"Black-Iron Debt Descent",fc:"#ff7a1a"},
- {id:"MG-FACTION-008",name:"Deepgreen",realm:"The Deepgreen",route:"Cedar-Mist Descent",fc:"#5fc86a"}];
-const COLOSSI=[
- {n:"VAELTHORN",e:"the Furnace King",img:"roster/VAELTHORN-FURNACEKING-EMERGENCE-CANON.png",fc:"#ff7a1a",st:"AWAKENED",el:"FURNACE"},
- {n:"VESSAMAINE",e:"the Furnace Queen",img:"roster/VESSAMAINE-FURNACEQUEEN-EMERGENCE-CANON.png",fc:"#ff7a1a",st:"AWAKENED",el:"FURNACE"},
- {n:"HAELDOR",e:"the Storm King",img:"roster/HAELDOR-STORMKING-EMERGENCE-CANON.png",fc:"#7ec8ff",st:"RISEN",el:"STORM"},
- {n:"SYLWENNA",e:"the Storm Queen",img:"roster/SYLWENNA-STORMQUEEN-EMERGENCE-CANON.png",fc:"#7ec8ff",st:"RISEN",el:"STORM"},
- {n:"MORVAINE",e:"the Dusk King",img:"roster/MORVAINE-DUSKKING-EMERGENCE-CANON.png",fc:"#b09fff",st:"RISEN",el:"DUSK"},
- {n:"SENNETH",e:"the Dusk Queen",img:"roster/SENNETH-DUSKQUEEN-EMERGENCE-CANON.png",fc:"#b09fff",st:"RISEN",el:"DUSK"},
- {n:"MIRIELLE",e:"the Bloom Queen",img:"roster/MIRIELLE-BLOOMQUEEN-EMERGENCE-CANON.png",fc:"#b8d44a",st:"SLEEPING",el:"BLOOM"},
- {n:"GRATHWYN",e:"the Stone King",img:"roster/GRATHWYN-STONEKING-EMERGENCE-CANON.png",fc:"#cfc0ff",st:"SLEEPING",el:"STONE"}];
-const $=id=>document.getElementById(id);
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const NAV=['hub','campaign','roster','relics','codex','settings','combat','char'];
-function go(scr){
-  NAV.forEach(s=>{const el=$('scr-'+s); if(el) el.classList.toggle('on',s===scr)});
-  document.querySelectorAll('.nav-item').forEach(n=>n.classList.toggle('on',n.dataset.scr===scr));
-  if(window.MUI&&MUI.swell)MUI.swell();
-  if(scr!=='combat') $('cb-reveal').classList.remove('on');
+
+<!-- ================= WORLD ================= -->
+<div class="screen" id="s-world">
+  <div class="backbtn"><button class="m-btn m-btn-sm" data-go="hub">← THE GATE</button></div>
+  <div style="flex:1"></div>
+  <div class="m-panel poi-card" id="poiCard">
+    <div class="poi-art" id="poiArt"></div>
+    <div class="poi-body">
+      <div class="poi-t m-emboss" id="poiT"></div>
+      <div class="poi-d" id="poiD"></div>
+      <button class="m-btn m-btn-primary" id="poiGo" style="min-height:44px;font-size:12px">ENTER THE FIELD</button>
+    </div>
+  </div>
+  <div class="hint" style="margin-bottom:10px">walk the beacon roads · tap a site to learn it</div>
+</div>
+
+<!-- ================= BOSS REVEAL ================= -->
+<div class="screen" id="s-boss">
+  <div class="bossword bw1" id="bw1">THE HOLLOW DO NOT SLEEP</div>
+  <div class="bossword bw2" id="bw2">AN ECHO AT YOUR GATE</div>
+  <div class="bossword bw3" id="bw3">it wears the silhouette of a god</div>
+  <div class="boss-enter" id="bossEnter"><button class="m-btn m-btn-primary" onclick="location.href='echo-duel.html'">ENTER THE FIELD</button></div>
+</div>
+
+<!-- ================= CODEX ================= -->
+<div class="screen" id="s-codex">
+  <div class="backbtn"><button class="m-btn m-btn-sm" data-go="hub">← THE GATE</button></div>
+  <div class="archive">
+    <div class="m-label" style="margin-bottom:10px">THE ARCHIVE — ILLUSTRATED ROADS</div>
+    <div class="arcgrid" id="arcgrid"></div>
+  </div>
+</div>
+
+<!-- codex open page -->
+<div class="arcopen" id="arcopen">
+  <div class="m-panel arcopen-inner">
+    <img id="aoImg" alt="">
+    <div class="body"><div class="poi-t m-emboss" id="aoT" style="margin-bottom:8px"></div><div class="poi-d" id="aoD" style="margin:0"></div></div>
+    <button class="m-btn m-btn-sm" style="margin:0 16px 16px;width:140px" onclick="document.getElementById('arcopen').classList.remove('on')">CLOSE</button>
+  </div>
+</div>
+
+<div id="veil"></div><div id="veilT"></div>
+<div class="loadword" id="loadword">THE GATES REMEMBER…</div>
+<div id="flash"></div>
+<div class="vtag">GAME SHELL v2 — HYBRID 3D+2D RELIC UI</div>
+
+<script src="ui/mythos-ui.js"></script>
+<script type="importmap">
+{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+/* ============ shared renderer ============ */
+const canvas=document.getElementById('gl');
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+renderer.outputColorSpace=THREE.SRGBColorSpace;
+let W,H;const cam=new THREE.PerspectiveCamera(42,1,.1,600);
+function size(){W=innerWidth;H=innerHeight;renderer.setSize(W,H,false);cam.aspect=W/H;cam.updateProjectionMatrix();}
+addEventListener('resize',size);size();
+
+const loader=new GLTFLoader();
+const modelCache={};
+function loadGLB(name){return new Promise((res,rej)=>{
+  if(modelCache[name])return res({node:modelCache[name].node.clone(true),clips:modelCache[name].clips});
+  loader.load(`models/${name}.glb`,g=>{
+    const node=g.scene;
+    node.traverse(o=>{if(o.isMesh){o.castShadow=false;o.receiveShadow=false;}});
+    modelCache[name]={node,clips:g.animations||[]};
+    res({node:node.clone(true),clips:g.animations||[]});
+  },undefined,rej);});}
+
+/* ============ environment kit (procedural, canon palette) ============ */
+function emberParticles(n=120,spread=40,height=22){
+  const g=new THREE.BufferGeometry(),pos=new Float32Array(n*3),seed=[];
+  for(let i=0;i<n;i++){pos[i*3]=(Math.random()-.5)*spread;pos[i*3+1]=Math.random()*height;pos[i*3+2]=(Math.random()-.5)*spread;seed.push(Math.random()*6.28);}
+  g.setAttribute('position',new THREE.BufferAttribute(pos,3));
+  const m=new THREE.PointsMaterial({color:0xff8a2a,size:.16,transparent:true,opacity:.8,blending:THREE.AdditiveBlending,depthWrite:false});
+  const pts=new THREE.Points(g,m);pts.userData={seed,height,spread};
+  return pts;}
+function drift(pts,dt,t){const p=pts.geometry.attributes.position,s=pts.userData.seed;
+  for(let i=0;i<s.length;i++){let y=p.getY(i)+dt*(.4+.3*Math.sin(s[i]));
+    if(y>pts.userData.height)y=0;p.setY(i,y);
+    p.setX(i,p.getX(i)+Math.sin(t*.6+s[i])*dt*.4);}
+  p.needsUpdate=true;}
+function gateArch(mat){ /* rugged megalith trilithon — only the flame carries color (canon) */
+  const grp=new THREE.Group();
+  const h=7,w=4.6,d=1.2;
+  const lintel=new THREE.Mesh(new THREE.BoxGeometry(w+d*2,h*.16,d),mat);
+  lintel.position.y=h;grp.add(lintel);
+  [-1,1].forEach(s=>{const p=new THREE.Mesh(new THREE.BoxGeometry(d,h,d),mat);p.position.set(s*(w/2+d/2-.2),h/2,0);
+    p.rotation.z=s*THREE.MathUtils.degToRad(1.2);grp.add(p);});
+  return grp;}
+function ground(){const c=document.createElement('canvas');c.width=c.height=256;
+  const x=c.getContext('2d');const gr=x.createRadialGradient(128,128,10,128,128,128);
+  gr.addColorStop(0,'#241505');gr.addColorStop(.5,'#120c06');gr.addColorStop(1,'#0a0704');
+  x.fillStyle=gr;x.fillRect(0,0,256,256);
+  const tex=new THREE.CanvasTexture(c);
+  const m=new THREE.Mesh(new THREE.CircleGeometry(80,48),new THREE.MeshStandardMaterial({map:tex,roughness:1}));
+  m.rotation.x=-Math.PI/2;return m;}
+
+/* ============ scene factory ============ */
+let scene=null,mixer=null,embers=null,clock=new THREE.Clock(),camMode=null;
+function clearScene(){scene=null;mixer=null;embers=null;camMode=null;}
+function baseScene(fog=0x0a0704,density=.02){
+  const s=new THREE.Scene();
+  s.background=new THREE.Color(0x0a0704);
+  s.fog=new THREE.FogExp2(fog,density);
+  s.add(ground());
+  const rim=new THREE.DirectionalLight(0xffa050,.55);rim.position.set(-6,9,-4);s.add(rim);
+  const key=new THREE.DirectionalLight(0xffe8c0,.9);key.position.set(4,7,6);s.add(key);
+  s.add(new THREE.AmbientLight(0x3a2a1a,.7));
+  return s;}
+
+/* ---------- HUB: the god at his gate, camera alive ---------- */
+let hubT=0;
+async function buildHub(){
+  const s=baseScene(0x0a0603,.028);
+  const stone=new THREE.MeshStandardMaterial({color:0x4a3d2c,roughness:.95});
+  const arch=gateArch(stone);arch.scale.setScalar(2.2);arch.position.set(0,0,-16);s.add(arch);
+  const flame=new THREE.PointLight(0xff7a1a,60,40,2);flame.position.set(0,3.2,-16);s.add(flame);
+  const {node:god,clips}=await loadGLB('VAELTHORN-IDLE');
+  god.scale.setScalar(1.35);god.position.set(0,0,-16.5);s.add(god);
+  mixer=new THREE.AnimationMixer(god);
+  if(clips[0])mixer.clipAction(clips[0]).play();
+  embers=emberParticles(150,50,26);s.add(embers);
+  scene=s;camMode={type:'hub'};
+  document.getElementById('loadword').classList.remove('on');
 }
+
+/* ---------- CHARACTER: the Warden on the dais ---------- */
+let orbit={theta:Math.PI*0.02,phi:1.28,radius:5.4,cin:false},pendingAnim=null,lastWarden=null;
+async function buildChar(){
+  const s=baseScene(0x0b0705,.03);
+  const dais=new THREE.Mesh(new THREE.CylinderGeometry(2.5,2.9,.5,10),
+    new THREE.MeshStandardMaterial({color:0x3a3020,roughness:.9}));
+  dais.position.y=-.25;s.add(dais);
+  const runeLight=new THREE.PointLight(0xff7a1a,14,10,2);runeLight.position.set(0,2.2,1.5);s.add(runeLight);
+  const back=new THREE.DirectionalLight(0x8a7a5f,.35);back.position.set(0,6,-8);s.add(back);
+  const {node:warden,clips}=await loadGLB('WARDEN-M-IDLE');
+  warden.scale.setScalar(.028);warden.position.set(0,0,-.4);s.add(warden);
+  mixer=new THREE.AnimationMixer(warden);
+  warden.userData.baseClip=clips[0];
+  if(clips[0])mixer.clipAction(clips[0]).play();
+  lastWarden=warden;
+  embers=emberParticles(60,18,10);s.add(embers);
+  scene=s;camMode={type:'orbit'};
+  document.getElementById('loadword').classList.remove('on');
+}
+async function previewAnim(name){
+  if(!scene||pendingAnim||!lastWarden)return;
+  if(name==='IDLE')return; /* already resting */
+  pendingAnim=true;
+  const {node:warden,clips}=await loadGLB(`WARDEN-M-${name}`);
+  const clip=clips[0];if(!clip){pendingAnim=false;return;}
+  warden.scale.setScalar(.028);warden.position.set(0,0,-.4);
+  const idle=lastWarden;
+  scene.remove(idle);scene.add(warden);lastWarden=warden;
+  mixer=new THREE.AnimationMixer(warden);
+  const action=mixer.clipAction(clip);action.setLoop(THREE.LoopOnce,1);action.clampWhenFinished=true;
+  action.play();
+  setTimeout(()=>{
+    scene.remove(warden);scene.add(idle);lastWarden=idle;
+    mixer=new THREE.AnimationMixer(idle);
+    if(idle.userData.baseClip)mixer.clipAction(idle.userData.baseClip).play();
+    pendingAnim=false;
+  },(clip.duration+.4)*1000);
+}
+
+/* ---------- WORLD: beacon road ---------- */
+const POIS=[
+ {id:'siege',t:'THE WAKING SIEGE',d:'Hold the Gate as the Hollow come in waves. The god rises to answer.',art:'cinematic-gods/06-THE-GOD-RISES.jpg',x:-9,z:-20},
+ {id:'duel',t:'ECHO DUEL',d:'God against god — the Hollow echo of a rival colossus at your Gate.',art:'cinematic-gods/10-THE-EYE.jpg',x:9,z:-24},
+ {id:'depths',t:'DEPTHS OF EMBERMERE',d:'Pilgrim-scale descent into the ember-dark beneath the roads.',art:'cinematic/SHOT-03-NIGHT-VIGIL.jpg',x:0,z:-32}];
+let pois3d=[];
+async function buildWorld(){
+  const s=baseScene(0x090604,.03);
+  const stone=new THREE.MeshStandardMaterial({color:0x4a3d2c,roughness:.95});
+  const arch=gateArch(stone);arch.position.set(0,0,-6);s.add(arch);
+  pois3d=[];
+  POIS.forEach(p=>{
+    const beacon=new THREE.Group();
+    const post=new THREE.Mesh(new THREE.CylinderGeometry(.12,.16,3.4,6),stone);post.position.y=1.7;
+    const glow=new THREE.Mesh(new THREE.SphereGeometry(.34,12,12),
+      new THREE.MeshBasicMaterial({color:0xff8a2a,transparent:true,opacity:.92}));
+    glow.position.y=3.7;
+    const pl=new THREE.PointLight(0xff7a1a,10,14,2);pl.position.y=3.7;
+    beacon.add(post,glow,pl);beacon.position.set(p.x,0,p.z);
+    beacon.userData.poi=p;pois3d.push(beacon);s.add(beacon);});
+  const stoneLamp=new THREE.PointLight(0xffb36b,20,26,2);stoneLamp.position.set(0,4,-4);s.add(stoneLamp);
+  embers=emberParticles(90,60,18);s.add(embers);
+  scene=s;camMode={type:'world'};
+  document.getElementById('loadword').classList.remove('on');
+}
+
+/* ---------- BOSS: the echo reveal ---------- */
+async function buildBoss(){
+  const s=baseScene(0x070308,.035);
+  const stone=new THREE.MeshStandardMaterial({color:0x2c2438,roughness:.95});
+  const arch=gateArch(stone);arch.scale.setScalar(2.2);arch.position.set(0,0,-16);s.add(arch);
+  const ghostLight=new THREE.PointLight(0x8a6aff,50,44,2);ghostLight.position.set(0,4,-14);s.add(ghostLight);
+  const {node:echo,clips}=await loadGLB('VAELTHORN-IDLE');
+  echo.scale.setScalar(1.35);echo.position.set(0,0,-16.5);s.add(echo);
+  echo.traverse(o=>{if(o.isMesh){const m=o.material.clone();
+    m.color=new THREE.Color(0x241d2e);m.emissive=new THREE.Color(0x2a1f4a);m.emissiveIntensity=.5;
+    o.material=m;}});
+  mixer=new THREE.AnimationMixer(echo);
+  if(clips[0]){const a=mixer.clipAction(clips[0]);a.timeScale=.55;a.play();}
+  embers=emberParticles(80,40,20);
+  embers.material.color=new THREE.Color(0x9a7fff);s.add(embers);
+  scene=s;camMode={type:'boss'};
+  document.getElementById('loadword').classList.remove('on');
+  runBossSequence();
+}
+function runBossSequence(){
+  const seq=[['bw1',1200],['bw2',3400],['bw3',5200],['bossEnter',7000]];
+  seq.forEach(([id,d])=>setTimeout(()=>{
+    document.getElementById(id).classList.add('on');
+    if(id==='bw2'){const f=document.getElementById('flash');f.style.opacity=.5;
+      setTimeout(()=>f.style.opacity=0,120);}
+  },d));
+}
+
+/* ============ camera laws ============ */
+function updateCamera(dt,t){
+  if(!camMode)return;
+  if(camMode.type==='hub'){
+    hubT+=dt;
+    const a=hubT*.05;
+    cam.position.set(Math.sin(a)*10.5,3.4+Math.sin(hubT*.13)*.5,Math.cos(a)*10.5-4);
+    cam.lookAt(0,4.4,-16);
+  } else if(camMode.type==='orbit'){
+    const o=orbit;
+    if(!o.cin){
+      const phi=Math.max(.55,Math.min(1.45,o.phi));
+      cam.position.set(o.radius*Math.sin(phi)*Math.sin(o.theta),
+                       o.radius*Math.cos(phi)+.6,
+                       o.radius*Math.sin(phi)*Math.cos(o.theta));
+    } else { /* cinematic low angle */
+      cam.position.set(1.4,.9,2.6);
+    }
+    cam.lookAt(0,1.15,0);
+  } else if(camMode.type==='world'){
+    cam.position.set(Math.sin(t*.03)*2.5,4.6,6);
+    cam.lookAt(0,2.6,-20);
+  } else if(camMode.type==='boss'){
+    cam.position.set(Math.sin(t*.04)*2.2,2.6,8.5);
+    cam.lookAt(0,5.6,-16.5);
+  }
+}
+
+/* ============ render loop ============ */
+(function loop(){
+  requestAnimationFrame(loop);
+  const dt=Math.min(.05,clock.getDelta()),t=clock.elapsedTime;
+  if(mixer)mixer.update(dt);
+  if(embers)drift(embers,dt,t);
+  updateCamera(dt,t);
+  if(scene)renderer.render(scene,cam);
+})();
+
+/* ============ navigation ============ */
+const screens=['hub','char','world','boss','codex'];
+let current='hub',building=false;
+const veil=document.getElementById('veil'),loadword=document.getElementById('loadword');
+async function go(name){
+  if(name===current||building)return;
+  building=true;
+  if(window.MUI&&MUI.swell)MUI.swell();
+  veil.style.backgroundImage="url('cinematic/SHOT-04-PROCESSION-GATE.jpg')";
+  veil.classList.add('on');loadword.classList.add('on');
+  await new Promise(r=>setTimeout(r,580));
+  screens.forEach(s=>document.getElementById('s-'+s).classList.toggle('on',s===name));
+  document.querySelectorAll('.dockbtn').forEach(b=>b.classList.toggle('on',b.dataset.go===name));
+  clearScene();
+  document.getElementById('poiCard').classList.remove('on');
+  try{
+    if(name==='hub')await buildHub();
+    else if(name==='char')await buildChar();
+    else if(name==='world')await buildWorld();
+    else if(name==='boss')await buildBoss();
+    else if(name==='codex')await buildCodex();
+  }catch(e){console.error(e);}
+  await new Promise(r=>setTimeout(r,350));
+  veil.classList.remove('on');loadword.classList.remove('on');
+  current=name;building=false;
+  MUI.sweep();
+}
+window.go=go;
+
+/* ---------- orbit controls (touch-first, minimal) ---------- */
 (function(){
-  const pos=[[26,26],[57,20],[86,30],[70,52],[42,58],[16,52],[33,79],[66,80]];
-  const wrap=$('route-wrap');
-  FACTIONS.forEach((f,i)=>{
-    const state = i===0?'cur':(i<3?'done':'locked');
-    const n=document.createElement('div');
-    n.className='node '+state;
-    n.style.left=pos[i][0]+'%'; n.style.top=pos[i][1]+'%';
-    n.innerHTML='<div class="ring" style="color:'+f.fc+'"><svg class="flame" viewBox="0 0 10 14" style="width:12px;height:17px;color:'+f.fc+';filter:drop-shadow(0 0 5px '+f.fc+')"><path d="M5 0 C7 4 10 6 10 10 C10 12.4 7.8 14 5 14 C2.2 14 0 12.4 0 10 C0 6 3 4 5 0 Z" fill="currentColor"/></svg></div><div class="lbl">'+esc(f.route)+'</div><div class="sub">'+esc(f.realm)+'</div>';
-    n.onclick=()=>{ toast(state==='locked' ? f.route+' — the road sleeps. Wake the Gate first.' : f.route+' · '+f.realm+(state==='cur'?' — READY':' · cleared')); };
-    wrap.appendChild(n);
+  let px=0,py=0,startD=0,lastTap=0;
+  canvas.addEventListener('pointerdown',e=>{px=e.clientX;py=e.clientY;
+    if(e.pointerType==='touch'){const t=Date.now();if(t-lastTap<300&&camMode&&camMode.type==='orbit'){orbit.cin=!orbit.cin;}
+      lastTap=t;}});
+  canvas.addEventListener('pointermove',e=>{
+    if(!e.buttons&&e.pointerType!=='touch')return;
+    if(camMode&&camMode.type==='orbit'){
+      orbit.theta-=(e.clientX-px)*.008;
+      orbit.phi-=(e.clientY-py)*.006;
+      px=e.clientX;py=e.clientY;}});
+  canvas.addEventListener('wheel',e=>{if(camMode&&camMode.type==='orbit'){orbit.radius=Math.max(2.4,Math.min(9,orbit.radius+e.deltaY*.0035));}},{passive:true});
+  canvas.addEventListener('touchmove',e=>{if(camMode&&camMode.type==='orbit'&&e.touches.length===2){
+    const d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);
+    if(startD)orbit.radius=Math.max(2.4,Math.min(9,orbit.radius-(d-startD)*.02));
+    startD=d;}},{passive:true});
+  canvas.addEventListener('touchend',()=>startD=0);
+  /* world POI taps */
+  canvas.addEventListener('pointerup',e=>{
+    if(!scene||!camMode||camMode.type!=='world'||e.target!==canvas)return;
+    const ray=new THREE.Raycaster();
+    const m=new THREE.Vector2((e.clientX/W)*2-1,-(e.clientY/H)*2+1);
+    ray.setFromCamera(m,cam);
+    const hits=ray.intersectObjects(pois3d,true);
+    if(hits.length){
+      let g=hits[0].object;while(g&&!g.userData.poi)g=g.parent;
+      if(g){openPoi(g.userData.poi);if(window.MUI)MUI.tick();}
+    } else document.getElementById('poiCard').classList.remove('on');
   });
 })();
-(function(){
-  const g=$('roster-grid');
-  COLOSSI.forEach(c=>{
-    const d=document.createElement('div'); d.className='rcard';
-    d.innerHTML='<div class="bg" style="background-image:url(\''+c.img+'\');'+(c.st==='SLEEPING'?'filter:brightness(.35) saturate(.4)':'')+'"></div><div class="shade"></div><div class="dot" style="background:'+c.fc+';box-shadow:0 0 8px '+c.fc+'"></div><div class="dn"><div class="n">'+esc(c.n)+'</div><div class="e">'+esc(c.e)+' · '+c.st+'</div></div>';
-    d.onclick=()=>{ $('char-name').textContent=c.n; $('char-epi').textContent=c.e;
-      $('char-hero').style.backgroundImage='url(\''+c.img+'\')';
-      $('char-fac').textContent='ELEMENT: '+c.el+' · '+c.st;
-      go('char'); if(MUI.step)MUI.step($('scr-char')); };
-    g.appendChild(d);
-  });
-})();
-(function(){
-  const items=[
-   {t:'THE FACTIONS',s:'Eight courts, eight roads, one Gate each.',x:'<path d="M3 20 L9 4 L15 4 L21 20 Z"/><circle cx="12" cy="16.5" r="1.3"/>',fn:()=>toast('The full faction record opens here — eight courts, eight flames.')},
-   {t:'THE COLOSSI',s:'Kings and Queens of the waking world.',x:'<path d="M12 3 C14 6 17 7 17 10 C17 13 15 14 12 16 C9 14 7 13 7 10 C7 7 10 6 12 3 Z M12 16 V21 M9 21 H15"/>',fn:()=>go('roster')},
-   {t:'THE PILGRIM ORDERS',s:'Warden · Keeper · Walker · Singer · Smith · Vigil',x:'<circle cx="12" cy="8" r="4"/><path d="M5 21 C5 16.5 8 14.5 12 14.5 C16 14.5 19 16.5 19 21"/>',fn:()=>toast('Six orders walk the Cinder Roads — M and F alike.')},
-   {t:'THE HOLLOW',s:'What comes when the Gates are left unheld.',x:'<path d="M12 3 C14 6 17 7 17 10 C17 13 15 14 12 16 C9 14 7 13 7 10 C7 7 10 6 12 3 Z M5 5 L19 19 M7 3 L3 7 M17 17 L21 21"/>',fn:()=>toast('The Hollow take the shapes of what the world forgot.')},
-   {t:'THE GATE RUNE',s:'The mark every pilgrim carries.',x:'<path d="M12 3 L19 7 V14 C19 18 16 20.5 12 22 C8 20.5 5 18 5 14 V7 Z"/><path d="M12 8 C14 8 15.4 9.6 15.4 11.4 C15.4 14 13.4 15 12.6 17.6 H11.4 C10.6 15 8.6 14 8.6 11.4 C8.6 9.6 10 8 12 8 Z"/>',fn:()=>go('relics')},
-   {t:'THE CINEMATICS',s:'The story told before the road begins.',x:'<path d="M3 5 H17 V19 H3 Z M17 9 L21 7 V17 L17 15"/>',fn:()=>{location.href='cinematic-gods.html'}}];
-  const l=$('code-list');
-  items.forEach(i=>{ const d=document.createElement('div'); d.className='code-item relic'; d.onclick=i.fn;
-    d.innerHTML='<svg class="ic" viewBox="0 0 24 24">'+i.x+'</svg><div><div class="cn">'+i.t+'</div><div class="cs">'+i.s+'</div></div>';
-    l.appendChild(d); });
-})();
-let toastT=null;
-function toast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('show');
-  clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'),2600); if(window.MUI){MUI.tick()} }
-function toggleCtx(){ $('ctx-menu').classList.toggle('open'); MUI.tick(); }
-function closeCtx(){ $('ctx-menu').classList.remove('open'); }
-function toggleSw(el){ const t=el.querySelector('.toggle'); t.classList.toggle('on'); if(MUI.tick)MUI.tick(); toast(t.classList.contains('on')?'The dial turns — on.':'The dial rests — off.'); }
-function cbAct(btn,msg){ toast(msg); $('cb-reveal').classList.add('on'); if(MUI.tick)MUI.tick(); if(MUI.swell)MUI.swell(); }
-if(window.MUI && MUI.parallax) MUI.parallax($('hub-world'),7);
-document.addEventListener('click',e=>{ if(!$('ctx-menu').contains(e.target)&&!e.target.closest('[onclick="toggleCtx()"]')) closeCtx(); });
+function openPoi(p){
+  document.getElementById('poiArt').style.backgroundImage=`url('${p.art}')`;
+  document.getElementById('poiT').textContent=p.t;
+  document.getElementById('poiD').textContent=p.d;
+  document.getElementById('poiGo').onclick=()=>{ if(p.id==='duel')go('boss'); else location.href=(p.id==='siege'?'siege.html':'depths-embermere.html'); };
+  document.getElementById('poiCard').classList.add('on');
+  MUI.unfold(document.getElementById('poiCard'));
+}
+window.openPoi=openPoi;window.POIS=POIS;window.previewAnim=previewAnim;
+
+/* ability preview buttons */
+document.querySelectorAll('[data-anim]').forEach(b=>b.addEventListener('click',()=>{previewAnim(b.dataset.anim);if(window.MUI)MUI.tick();}));
+
+/* nav buttons */
+document.getElementById('dock').addEventListener('click',e=>{
+  const b=e.target.closest('.dockbtn');if(b){b.classList.add('pressed');setTimeout(()=>b.classList.remove('pressed'),90);go(b.dataset.go);}});
+document.querySelectorAll('.m-btn[data-go]').forEach(el=>el.addEventListener('click',()=>go(el.dataset.go)));
+
+/* ---------- codex: the illustrated archive ---------- */
+const ARCHIVE=[
+ {t:'THE FURNACE KING',x:'The land is the sleeping gods. When a pilgrim lights the Gate, the god beneath it rises.',art:'roster/VAELTHORN-FURNACEKING-EMERGENCE-CANON.png'},
+ {t:'THE CINDER ROADS',x:'Road-worn plate, riveted mismatched layers, ash-patina. Armor is the record of the walk.',art:'cinematic-gods/02-KILN-ROAD.jpg'},
+ {t:'THE STORM KING',x:'Kings and Queens of the deep elements — shrines grown at the brow, the land carried on their backs.',art:'roster/HAELDOR-STORMKING-EMERGENCE-CANON.png'},
+ {t:'THE LANTERN RITE',x:'Quiet beats carry the myth. The stones were warm. The lantern remembers who lit it.',art:'cinematic-gods/04-LANTERN-RITE.jpg'},
+ {t:'THE DUSK KING',x:'The Hollow steal the vault\'s own silhouette. What comes when a Gate goes dark.',art:'roster/MORVAINE-DUSKKING-EMERGENCE-CANON.png'},
+ {t:'THE BLOOM QUEEN',x:'Living blossom boughs, vine canopies, sacred groves grown onto the crown.',art:'roster/MIRIELLE-BLOOMQUEEN-EMERGENCE-CANON.png'},
+ {t:'THE STONE KING',x:'Standing-stone crowns, crystal spires, the geode light beneath the crust.',art:'roster/GRATHWYN-STONEKING-EMERGENCE-CANON.png'},
+ {t:'THE MARK IGNITES',x:'The Gate Rune carved into the breastplate — only the flame carries the color.',art:'cinematic-gods/09-THE-MARK-IGNITES.jpg'}];
+function buildCodex(){
+  clearScene();
+  const s=new THREE.Scene();s.background=new THREE.Color(0x0a0704); /* ember void behind the archive */
+  scene=s;camMode=null;
+  const grid=document.getElementById('arcgrid');
+  grid.innerHTML=ARCHIVE.map((a,i)=>`
+    <div class="arccard" data-i="${i}">
+      <div class="arcimg" style="background-image:url('${a.art}')"></div>
+      <div class="arct m-emboss">${a.t}</div><div class="arcx">${a.x}</div></div>`).join('');
+  grid.querySelectorAll('.arccard').forEach(c=>c.addEventListener('click',()=>{
+    const a=ARCHIVE[+c.dataset.i];
+    document.getElementById('aoImg').src=a.art;
+    document.getElementById('aoT').textContent=a.t;
+    document.getElementById('aoD').textContent=a.x;
+    document.getElementById('arcopen').classList.add('on');
+    MUI.chime();
+  }));
+  document.getElementById('loadword').classList.remove('on');
+}
+MUI.sweep();
+
+/* ---------- boot at the hub ---------- */
+loadword.classList.add('on');
+buildHub();
 </script>
 </body>
 </html>
