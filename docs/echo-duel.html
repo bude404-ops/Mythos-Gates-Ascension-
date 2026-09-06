@@ -26,6 +26,7 @@
   #atk{right:20px;bottom:26px;width:76px;height:76px;border-color:rgba(255,150,60,.7)}
   #skill{right:112px;bottom:58px;width:58px;height:58px}
   #volley{right:112px;bottom:126px;width:58px;height:58px}
+  #ward{left:20px;bottom:40px;width:80px;height:80px;border-color:rgba(255,230,170,.85);background:rgba(60,44,20,.6)}
   #quake{right:178px;bottom:26px;width:58px;height:58px;border-color:rgba(255,110,60,.8)}
   #nameit{right:20px;bottom:118px;width:64px;height:64px;border-color:rgba(255,230,170,.9);background:rgba(60,40,18,.7);display:none;font-size:10px}
   .cd{position:absolute;inset:0;border-radius:50%;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;visibility:hidden}
@@ -60,11 +61,12 @@
 <button class="btn" id="skill">SURGE<div class="cd" id="skill-cd">6</div></button>
 <button class="btn" id="volley">VOLLEY<div class="cd" id="volley-cd">6</div></button>
 <button class="btn" id="quake">QUAKE<div class="cd" id="quake-cd">10</div></button>
+<button class="btn" id="ward">WARD</button>
 <button class="btn" id="nameit">NAME IT</button>
 <div id="overlay">
   <h1>THE ECHO DUEL</h1>
   <p>At the Gate Rite's height, the Hollow answers the waking with its own god-shape: THE ECHO OF THE FORGOTTEN — a silhouette vaster than any giant, with no face, because no one ever recorded one. It fights as your DARK MIRROR: the same telegraphs you know, shed in reverse — where you shed element, it sheds absence.<br><br>
-  <b>I — GOD VS GOD (100&ndash;66%).</b> Fight as the woken god: three-swing combo (the finisher staggers it), SURGE orbs, a VOLLEY of element lances, and the QUAKE shockwave — all powered by FAITH. Read its telegraphs; step off the beam line.<br>
+  <b>I — GOD VS GOD (100&ndash;66%).</b> Gods do not chase — where you rose is your ground. WARD (bottom-left, timed) drinks any attack it catches and converts it to FAITH. Answer with the kit: three-swing combo (finisher staggers it), SURGE orbs, VOLLEY lances, QUAKE shockwaves.<br>
   <b>II — THE DRAINED FIELD (66&ndash;33%).</b> Its shell cracks and the arena DE-COLORS: standing on drained ground saps the vessel. Fight from the ember islands.<br>
   <b>III — THE WOUND (33&ndash;0%).</b> The god-fight and the climb are one encounter: the Echo splits, and YOU — the pilgrim, lantern in hand — cross inside the wound to strike the heart. Void-motes swarm; roll through them with the lantern raised.<br><br>
   And at the heart: the endgame's one weapon. <i>To name a thing is to form it — and absence was all it had.</i></p>
@@ -84,7 +86,7 @@ const S = {
   mode:'menu', echoHP:100, hp:100, faith:50,
   surges:[], sheds:[], grayRings:[],
   camShake:0, hitStop:0, time:0, swing:null, combo:0, comboTO:0,
-  arcs:[], lances:[], quakes:[], staggerT:0,
+  arcs:[], lances:[], quakes:[], staggerT:0, wardT:0, waveTimer:0, wardM:null,
   heartHits:0, naming:0, nameHold:0, invuln:0, invulnG:0, rollCD:0,
 };
 const scene = new THREE.Scene();
@@ -139,9 +141,9 @@ function buildArena(){
     sp.position.set(Math.cos(a)*d, h/2, Math.sin(a)*d); scene.add(sp);
   }
   S.player = buildColossus(0xc98a4b, 0xff7a2e);
-  S.player.position.set(0, 0, 20); scene.add(S.player);
+  S.player.position.set(0, 0, 12); scene.add(S.player);
   S.echo = buildColossus(0x2e2e34, 0x0a0a0e);
-  S.echo.position.set(0, 0, -18); scene.add(S.echo);
+  S.echo.position.set(0, 0, -5); scene.add(S.echo);
 }
 
 function buildWound(){
@@ -195,11 +197,13 @@ stick.addEventListener('touchmove', e=>{
   knob.style.left = 33+Math.cos(a)*d*36+'px'; knob.style.top = 33+Math.sin(a)*d*36+'px'; e.preventDefault();
 }, {passive:false});
 stick.addEventListener('touchend', ()=>{ stickVec={x:0,y:0}; knob.style.left='33px'; knob.style.top='33px'; });
-addEventListener('keydown', e=>{ if(e.key==='a'||e.key==='A') doAttack(); if(e.key===' '||e.key==='s'||e.key==='S') doSkill(); if(e.key==='q'||e.key==='Q') doVolley(); if(e.key==='e'||e.key==='E') doQuake(); if(e.key==='Shift') doRoll(); });
+addEventListener('keydown', e=>{ if(e.key==='a'||e.key==='A') doAttack(); if(e.key===' '||e.key==='s'||e.key==='S') doSkill(); if(e.key==='q'||e.key==='Q') doVolley(); if(e.key==='e'||e.key==='E') doQuake(); if(e.key==='w'||e.key==='W') doWard(); if(e.key==='Shift') doRoll(); });
 $('volley').addEventListener('touchstart', e=>{ doVolley(); e.preventDefault(); }, {passive:false});
 $('volley').addEventListener('mousedown', doVolley);
 $('quake').addEventListener('touchstart', e=>{ doQuake(); e.preventDefault(); }, {passive:false});
 $('quake').addEventListener('mousedown', doQuake);
+$('ward').addEventListener('touchstart', e=>{ doWard(); e.preventDefault(); }, {passive:false});
+$('ward').addEventListener('mousedown', doWard);
 $('atk').addEventListener('touchstart', e=>{ doAttack(); e.preventDefault(); }, {passive:false});
 $('atk').addEventListener('mousedown', doAttack);
 $('skill').addEventListener('touchstart', e=>{ doSkill(); e.preventDefault(); }, {passive:false});
@@ -207,7 +211,7 @@ $('skill').addEventListener('mousedown', doSkill);
 $('nameit').addEventListener('touchstart', e=>{ S.nameHold = 0.4; e.preventDefault(); }, {passive:false});
 $('nameit').addEventListener('mousedown', ()=>{ S.nameHold = 0.4; });
 
-let atkCD = 0, skillCD = 0, volleyCD = 0, quakeCD = 0;
+let atkCD = 0, skillCD = 0, volleyCD = 0, quakeCD = 0, wardCD = 0;
 function showCd(id, v){ const el=$(id); if(v>0){ el.style.visibility='visible'; el.textContent=Math.ceil(v); } else el.style.visibility='hidden'; }
 function doAttack(){
   if (S.mode==='giant' && atkCD<=0){
@@ -218,13 +222,12 @@ function doAttack(){
     const fin = S.combo === 2;
     atkCD = fin ? 1.1 : 0.72;
     const dir = S.echo.position.clone().sub(S.player.position).setY(0).normalize();
-    S.player.position.addScaledVector(dir, fin ? 5 : 2.6);            // lunge into the swing
     S.swing = {t:0, arm: S.combo===0 ? 'L' : (S.combo===1 ? 'R' : 'B')};
     const arc = new THREE.Mesh(new THREE.RingGeometry(2.5, 16, 24, 1, fin?-0.9:0.5, fin?2.6:1.6), new THREE.MeshBasicMaterial({color: fin?0xffc04a:0xffa04a, transparent:true, opacity:0.85, side:THREE.DoubleSide}));
     arc.position.copy(S.player.position).addScaledVector(dir, 12).add(new THREE.Vector3(0, 11, 0));
     arc.lookAt(camera.position); scene.add(arc); S.arcs.push({m:arc, t:0.3});
     const d = S.player.position.distanceTo(S.echo.position);
-    if (d < 25){ dmgEcho(fin?8.5:4.2); S.hitStop = fin?0.13:0.08; S.camShake = fin?1.0:0.45; if (fin){ staggerEcho(); knockEcho(3.5); } }
+    if (d < 25){ dmgEcho(fin?8.5:4.2); S.hitStop = fin?0.13:0.08; S.camShake = fin?1.0:0.45; if (fin) staggerEcho(); }
   } else if (S.mode==='wound' && atkCD<=0){
     atkCD = 0.45;
     const dh = S.heart.position.distanceTo(S.pilgrim.position);
@@ -251,7 +254,7 @@ function doVolley(){
   volleyCD = 6; S.faith -= 25;
   const base = S.echo.position.clone();
   for (let i=0;i<6;i++){
-    const off = new THREE.Vector3((Math.random()-.5)*13, 0, (Math.random()-.5)*13);
+    const off = new THREE.Vector3((Math.random()-.5)*7, 0, (Math.random()-.5)*7);
     const mark = new THREE.Mesh(new THREE.RingGeometry(1.5, 2.3, 24), new THREE.MeshBasicMaterial({color:0x9a3f1e, transparent:true, opacity:0, side:THREE.DoubleSide}));
     mark.rotation.x = -Math.PI/2; mark.position.copy(base).add(off); mark.position.y = 0.14; scene.add(mark);
     const lance = new THREE.Mesh(new THREE.ConeGeometry(0.55, 9, 6), new THREE.MeshBasicMaterial({color:0xff7a2e}));
@@ -270,6 +273,15 @@ function doQuake(){
     r.rotation.x = -Math.PI/2; r.position.copy(S.player.position); r.position.y = 0.13; r.visible = false;
     scene.add(r); S.quakes.push({m:r, r:0, delay:i*0.3, hit:false});
   }
+}
+function doWard(){
+  if (S.mode!=='giant' || wardCD>0) return;
+  wardCD = 2.2; S.wardT = 0.6;
+  const dir = S.echo.position.clone().sub(S.player.position).setY(0).normalize();
+  const ward = new THREE.Mesh(new THREE.RingGeometry(6, 8.5, 32, 1, 0.4, 2.4), new THREE.MeshBasicMaterial({color:0xffd27a, transparent:true, opacity:0.75, side:THREE.DoubleSide}));
+  ward.position.copy(S.player.position).addScaledVector(dir, 6).add(new THREE.Vector3(0, 12, 0));
+  ward.lookAt(camera.position);
+  scene.add(ward); S.wardM = ward;
 }
 function staggerEcho(){
   if (S.telegraph){ scene.remove(S.telegraph.m); S.telegraph = null; }
@@ -304,8 +316,6 @@ function echoAct(dt){
   }
   S.echo.userData.torso.rotation.z = 0;
   if (e.act === 'idle'){
-    if (gap > 24) S.echo.position.addScaledVector(dirP, 3.0 * dt * speed);   // close the distance
-    else if (gap < 13) S.echo.position.addScaledVector(dirP, -2.6 * dt * speed); // give ground
     if (e.t > e.next){
       const r = Math.random();
       if (gap < 20 && r < 0.38) e.act = 'lash';
@@ -371,6 +381,7 @@ function echoAct(dt){
 }
 function hurtPlayer(d){
   if (S.mode!=='giant' || S.invulnG>0) return;
+  if (S.wardT > 0){ S.faith = Math.min(100, S.faith + 10); S.camShake = 0.35; return; } // the WARD drinks it
   S.hp = Math.max(0, S.hp - d); $('hp-bar').firstElementChild.style.width = S.hp+'%';
   S.camShake = 0.9; S.invulnG = 0.5;
   if (S.hp<=0) lose();
@@ -379,10 +390,10 @@ function hurtPlayer(d){
 // phases
 function enterPhase2(){
   S.inP2 = true;
-  banner('THE SHELL CRACKS','the arena drains — fight from the ember islands');
+  banner('THE SHELL CRACKS','de-coloration waves pulse from it — time the WARD');
   $('phase').textContent = 'PHASE II — THE DRAINED FIELD'; $('stage').textContent = 'DE-COLORATION';
   S.camShake = 1.6; S.emberLight.intensity = 2.2;
-  S.grayRings.push({r:0, speed:2.4});
+  S.waveTimer = 1.6;
   scene.traverse(o=>{ if (o.geometry && o.geometry.type==='CircleGeometry'){ o.material.color.setHex(0x3a3a40); } });
 }
 function enterPhase3(){
@@ -395,6 +406,7 @@ function enterPhase3(){
     if (!S.woundScene) buildWound();
     S.mode='wound';
     document.body.classList.remove('cine');
+    $('stick').style.display='flex'; $('ward').style.display='none';
     $('atk').textContent='STRIKE'; $('skill').textContent='ROLL';
     $('volley').style.display='none'; $('quake').style.display='none';
     $('hp-wrap').style.display='none'; $('faith-wrap').style.display='none';
@@ -445,29 +457,24 @@ function loop(now){
   let dt = Math.min(0.05, (now-last)/1000); last = now;
   if (S.hitStop>0){ S.hitStop-=dt; dt *= 0.15; }
   S.time += dt;
-  atkCD -= dt; skillCD -= dt; volleyCD -= dt; quakeCD -= dt; S.invulnG -= dt; S.nameHold -= dt;
+  atkCD -= dt; skillCD -= dt; volleyCD -= dt; quakeCD -= dt; wardCD -= dt; S.wardT -= dt; S.invulnG -= dt; S.nameHold -= dt;
   showCd('skill-cd', skillCD); showCd('volley-cd', volleyCD); showCd('quake-cd', quakeCD);
 
   if (S.mode==='giant' || S.mode==='transition'){
     if (S.mode==='giant'){
-      // side-view battle cam: stick-x = advance/retreat along the duel axis, stick-y = step toward/away from camera
+      // EMERGENCE LAW (BudE404 verdict): the god is STATIONARY — where it rose is its position. It does not chase.
+      S.player.lookAt(S.echo.position.x, 0, S.echo.position.z);
       const axis = S.echo.position.clone().sub(S.player.position).setY(0);
       const alen = Math.max(0.001, axis.length()); axis.divideScalar(alen);
       let perp = new THREE.Vector3(-axis.z, 0, axis.x);
       if (S.lastPerp && perp.dot(S.lastPerp) < 0) perp.negate();
       S.lastPerp = perp.clone(); S.curPerp = perp.clone();
-      const scrR = new THREE.Vector3(perp.z, 0, -perp.x);       // screen-right in world space
-      const depth = perp.clone().multiplyScalar(-1);            // away from camera
-      const v = scrR.clone().multiplyScalar(stickVec.x*9*dt).add(depth.clone().multiplyScalar(-stickVec.y*6*dt));
-      if (v.lengthSq()>0.0001){
-        S.player.position.add(v);
-        S.player.lookAt(S.echo.position.x, 0, S.echo.position.z); // duelist stance: always face your enemy
-      }
-      if (S.player.position.length()>52) S.player.position.setLength(52);
-      const drained = isInDrainedZone(S.player.position);
-      S.faith = Math.min(100, S.faith + dt*(drained?2:7));
+      S.faith = Math.min(100, S.faith + dt*6);
       $('faith-bar').firstElementChild.style.width = S.faith+'%';
-      if (drained){ S.hp -= dt*2.2; $('hp-bar').firstElementChild.style.width = Math.max(0,S.hp)+'%'; if (S.hp<=0) lose(); }
+      if (S.inP2){
+        S.waveTimer -= dt;
+        if (S.waveTimer <= 0){ S.waveTimer = 4.2; S.grayRings.push({r:0, speed:7, wave:true}); }
+      }
       if (S.swing){
         S.swing.t += dt; const t = S.swing.t/0.4;
         const u = S.player.userData; const a = -Math.sin(Math.min(1,t)*Math.PI)*2.1;
@@ -513,16 +520,21 @@ function loop(now){
       q.m.material.opacity = Math.max(0, 0.85 - q.r*0.012);
       if (!q.hit){
         const dE = S.player.position.distanceTo(S.echo.position);
-        if (Math.abs(dE - q.r) < 3){ q.hit = true; dmgEcho(5); staggerEcho(); knockEcho(4); }
+        if (Math.abs(dE - q.r) < 3){ q.hit = true; dmgEcho(5); staggerEcho(); }
       }
       if (q.r > 70){ scene.remove(q.m); S.quakes.splice(i,1); }
     }
-    for (const g of S.grayRings){
+    if (S.wardT <= 0 && S.wardM){ scene.remove(S.wardM); S.wardM = null; }
+    if (S.wardM){ S.wardM.material.opacity = Math.max(0, Math.min(0.75, S.wardT*1.5)); }
+    for (let i=S.grayRings.length-1;i>=0;i--){
+      const g = S.grayRings[i];
       g.r += g.speed*dt;
       if (!g.m){
-        const r = new THREE.Mesh(new THREE.RingGeometry(Math.max(0.1,g.r), g.r+1.4, 64), new THREE.MeshBasicMaterial({color:0x2e2e36, side:THREE.DoubleSide, transparent:true, opacity:0.35}));
+        const r = new THREE.Mesh(new THREE.RingGeometry(Math.max(0.1,g.r), g.r+1.4, 64), new THREE.MeshBasicMaterial({color: g.wave?0x3a3a44:0x2e2e36, side:THREE.DoubleSide, transparent:true, opacity: g.wave?0.55:0.35}));
         r.rotation.x = -Math.PI/2; r.position.y = 0.12; scene.add(r); g.m = r;
       } else { g.m.geometry.dispose(); g.m.geometry = new THREE.RingGeometry(Math.max(0.1,g.r), g.r+1.4, 64); }
+      if (g.wave && !g.hitP && Math.abs(g.r - S.player.position.distanceTo(S.echo.position)) < 2.2){ g.hitP = true; hurtPlayer(8); }
+      if (g.r > 70){ scene.remove(g.m); S.grayRings.splice(i,1); }
     }
     // CINEMATIC DIRECTOR (BudE404: watch the god-fight like a movie while controlling the attacks)
     const p = S.player.position;
@@ -602,6 +614,7 @@ $('start').addEventListener('click', ()=>{
   $('overlay').style.display='none';
   document.body.classList.add('playing');
   document.body.classList.add('cine');
+  $('stick').style.display='none'; $('ward').style.display='flex';
   S.mode='giant';
   banner('IT ANSWERS THE WAKING','your dark mirror — read the reverse-shed');
 });
