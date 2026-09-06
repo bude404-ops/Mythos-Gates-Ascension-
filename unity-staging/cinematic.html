@@ -65,6 +65,8 @@
 <div class="bar" id="barTop"></div>
 <div class="bar" id="barBot"></div>
 <div id="narr"><span id="narrText"></span></div>
+<video id="vclip" playsinline muted preload="none" style="position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:10;opacity:0;transition:opacity 1.2s ease;pointer-events:none;background:#000;"></video>
+<audio id="vo" preload="auto"></audio>
 
 <div id="studio">
   <img src="cinematic/STUDIO-LOGO.png" alt="">
@@ -112,19 +114,19 @@
 const SEQ = [
   { img:'cinematic/SHOT-01-LONG-ROAD.jpg',   dur:8.0, ease:0,
     from:{x:0.00,y:-0.03,z:1.02,r:-0.5}, to:{x:0.00,y:0.05,z:1.16,r:0.6},
-    narr:'The roads remember.', light:[.5,.18,.10], fog:.55, heat:.0 },
+    narr:'The roads remember.', vo:'https://base44.app/api/apps/69f56986c51e35a876adf38d/files/mp/public/69f56986c51e35a876adf38d/8e6e5ec15_vo_line1.mp3', light:[.5,.18,.10], fog:.55, heat:.0 },
   { img:'cinematic/SHOT-02-PILGRIM-WALK.jpg', dur:7.5, ease:0,
     from:{x:-0.07,y:0.0,z:1.10,r:0.8}, to:{x:0.07,y:-0.01,z:1.04,r:-0.4},
     light:[.62,.30,.12], fog:.35, heat:.0 },
   { img:'cinematic/SHOT-03-NIGHT-VIGIL.jpg', dur:7.5, ease:0,
     from:{x:0.00,y:0.05,z:1.18,r:0}, to:{x:0.00,y:-0.03,z:1.05,r:0},
-    narr:'Every step a prayer.', light:[.42,.62,.30], fog:.5, heat:.25 },
+    narr:'Every step a prayer.', vo:'https://base44.app/api/apps/69f56986c51e35a876adf38d/files/mp/public/69f56986c51e35a876adf38d/2a868d1ad_vo_line2.mp3', light:[.42,.62,.30], fog:.5, heat:.25 },
   { img:'cinematic/SHOT-04-PROCESSION-GATE.jpg', dur:7.0, ease:1,
     from:{x:0.00,y:0.09,z:1.12,r:0.5}, to:{x:0.00,y:-0.07,z:1.03,r:-0.6},
     light:[.5,.30,.18], fog:.6, heat:.1 },
   { img:'cinematic/SHOT-05-GOD-REVEAL.jpg', dur:8.5, ease:1,
     from:{x:0.00,y:0.00,z:1.00,r:-1.2}, to:{x:0.00,y:-0.02,z:1.22,r:0.8},
-    narr:'The gates are waking.', boom:1, light:[.5,.42,.35], fog:.45, heat:.3 },
+    narr:'The gates are waking.', boom:1, vo:'https://base44.app/api/apps/69f56986c51e35a876adf38d/files/mp/public/69f56986c51e35a876adf38d/0010e6fd8_vo_line3.mp3', clip:'https://base44.app/api/apps/69f56986c51e35a876adf38d/files/mp/public/69f56986c51e35a876adf38d/ed7318b55_shot05_clip.mp4', light:[.5,.42,.35], fog:.45, heat:.3 },
   { img:'cinematic/SHOT-09-IMPACT-SLAM.jpg', dur:3.6, ease:2,
     from:{x:0.00,y:0.00,z:1.02,r:0}, to:{x:0.00,y:0.00,z:1.30,r:0},
     shake:1, light:[.5,.5,.5], fog:.3, heat:.4 },
@@ -133,10 +135,10 @@ const SEQ = [
     light:[.35,.25,.28], fog:.7, heat:.05 },
   { img:'cinematic/SHOT-07-THE-HOLLOW.jpg', dur:8.0, ease:0,
     from:{x:0.00,y:0.01,z:1.04,r:0}, to:{x:0.00,y:-0.03,z:1.22,r:3.2},
-    narr:'But something else woke first.', light:[.5,.35,.06], fog:.85, heat:0, grade:[.72,.78,.9] },
+    narr:'But something else woke first.', vo:'https://base44.app/api/apps/69f56986c51e35a876adf38d/files/mp/public/69f56986c51e35a876adf38d/36322fd45_vo_line4.mp3', light:[.5,.35,.06], fog:.85, heat:0, grade:[.72,.78,.9] },
   { img:'cinematic/SHOT-08-FINAL-STAND.jpg', dur:8.5, ease:0,
     from:{x:0.00,y:0.06,z:1.22,r:1.0}, to:{x:0.00,y:-0.04,z:1.02,r:0},
-    narr:'Stand at the gate.', light:[.5,.55,.16], fog:.5, heat:.15 },
+    narr:'Stand at the gate.', vo:'https://base44.app/api/apps/69f56986c51e35a876adf38d/files/mp/public/69f56986c51e35a876adf38d/d1785ea9c_vo_line5.mp3', light:[.5,.55,.16], fog:.5, heat:.15 },
 ];
 const XFADE = 1.1, NARR_IN = 1.4, NARR_OUT = 1.2;
 
@@ -340,6 +342,7 @@ function cutFlash(strong){
   flash.style.transition='none'; flash.style.opacity=strong? .85 : .38;
   requestAnimationFrame(()=>{ flash.style.transition='opacity .7s ease'; flash.style.opacity=0; });
 }
+const vclip=document.getElementById('vclip'), voEl=document.getElementById('vo');
 function startShot(i){
   idx=i;
   if(i>=SEQ.length){ enterTitle(); return; }
@@ -348,6 +351,14 @@ function startShot(i){
   const s=SEQ[i];
   if(s.boom) boom(.8);
   if(s.narr) setTimeout(()=>showNarr(s.narr, s.dur*0.8), 350);
+  if(s.vo){ try{ voEl.src=s.vo; voEl.currentTime=0; voEl.volume=.95; voEl.play(); }catch(e){} }
+  if(s.clip){
+    vclip.src=s.clip; vclip.currentTime=0; vclip.style.opacity=0;
+    vclip.play().then(()=>{ vclip.style.opacity=1; }).catch(()=>{});
+  } else {
+    vclip.style.opacity=0;
+    if(!vclip.paused) vclip.pause();
+  }
   if(s.shake){ shakeUntil=t0+800; boom(1.25); cutFlash(1); }
   else cutFlash(i>0 ? .45 : 1);
 }
@@ -358,6 +369,7 @@ function enterTitle(){
     hitAndCutDrone();
     document.getElementById('title').classList.add('on');
     cutFlash(1);
+    try{ voEl.src='https://base44.app/api/apps/69f56986c51e35a876adf38d/files/mp/public/69f56986c51e35a876adf38d/1f829a000_vo_line6.mp3'; voEl.currentTime=0; voEl.volume=1; voEl.play(); }catch(e){}
     const cr=document.getElementById('credits');
     const rollCredits=(role,name,delay,hold)=>{
       setTimeout(()=>{
