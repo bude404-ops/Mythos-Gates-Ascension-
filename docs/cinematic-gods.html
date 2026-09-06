@@ -259,6 +259,13 @@ async function preroll(){
 }
 async function play(){
   if(playing)return;playing=true;
+  /* kick video loading + mute for iOS; mark each clip live when it can actually play */
+  document.querySelectorAll('.shot.vid video').forEach(v=>{
+    v.muted=true;
+    v.addEventListener('canplay',()=>{v._live=true;},{once:true});
+    v.addEventListener('playing',()=>{v._live=true;});
+    v.load();
+  });
   $('start').style.display='none';document.body.classList.add('rolling');
   await preroll();
   $('black').classList.remove('on');
