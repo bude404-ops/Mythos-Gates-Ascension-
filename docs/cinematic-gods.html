@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AVALON — THE SLEEPING GODS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AVALON — The Sleeping Gods · World Cinematic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 <style>
-  html,body{margin:0;height:100%;background:#000;overflow:hidden;font-family:Georgia,serif}
-  .shot{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 2s ease;will-change:transform}
+  html,body{margin:0;height:100%;background:#000;overflow:hidden}
+  body{font-family:'Cormorant Garamond',serif;color:#e8dcc0;-webkit-font-smoothing:antialiased}
+  #stage{position:fixed;inset:0;background:#000}
+  .shot{position:absolute;inset:0;background-size:cover;background-position:center;
+    opacity:0;will-change:transform,opacity;transition:opacity 1.6s ease}
   .shot.on{opacity:1}
-  .bar{position:fixed;left:0;right:0;height:11%;background:#000;z-index:5;transform:translateY(-110%);transition:transform 1.4s ease}
-  #barB{bottom:0;top:auto;transform:translateY(110%)}
-  body.rolling .bar{transform:translateY(0)}
-  #fx{position:fixed;inset:0;z-index:3;pointer-events:none}
-  #grain{position:fixed;inset:0;z-index:4;pointer-events:none;opacity:.05}
-  #vig{position:fixed;inset:0;z-index:4;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55) 100%)}
-  .card{position:fixed;left:0;right:0;bottom:16%;text-align:center;z-index:6;color:#e8d9b0;
-    font-size:clamp(13px,2.2vw,17px);letter-spacing:4px;font-style:italic;opacity:0;transition:opacity 1.6s ease;text-shadow:0 2px 14px #000}
-  .card.on{opacity:.92}
-  #title{position:fixed;inset:0;z-index:8;background:#000;display:none;flex-direction:column;align-items:center;justify-content:center;gap:16px}
-  #title.on{display:flex}
-  #title img{width:72px;opacity:.92}
-  #title .t{color:#e8c47a;letter-spacing:9px;font-size:clamp(18px,4vw,26px)}
-  #title .s{color:#8a7a5f;letter-spacing:4px;font-size:11px;font-style:italic;margin-top:2px}
-  #title .q{color:#6e6350;letter-spacing:3px;font-size:10px;font-style:italic;margin:14px 0 4px}
-  #title a{color:#9a8b6f;font-size:11px;letter-spacing:3px;text-decoration:none;border:1px solid #3a3128;border-radius:8px;padding:10px 22px}
-  #start{position:fixed;inset:0;z-index:10;background:#050403;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;cursor:pointer}
-  #start img{width:70px}
-  #start .t{color:#e8c47a;letter-spacing:6px;font-size:15px}
-  #start .s{color:#6e6350;letter-spacing:3px;font-size:10px;font-style:italic}
-  #start .go{color:#9a8b6f;letter-spacing:4px;font-size:11px;border:1px solid #5a4526;border-radius:8px;padding:10px 26px;margin-top:8px}
-  #tag{position:fixed;top:12.5%;right:14px;z-index:6;color:rgba(232,196,122,.38);font-size:9px;letter-spacing:3px;opacity:0;transition:opacity 2s}
-  body.rolling #tag{opacity:1}
-
-  #studio,#dir{position:fixed;inset:0;z-index:9;background:#000;display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px;opacity:0;transition:opacity 1.2s ease}
+  .shot.dip{transition:opacity 1.2s ease}
+  #fx,#grain{position:fixed;inset:0;pointer-events:none}
+  #vig{position:fixed;inset:0;pointer-events:none;
+    background:radial-gradient(ellipse at 50% 46%,transparent 46%,rgba(4,2,1,.62) 88%,rgba(2,1,0,.9) 100%)}
+  .bar{position:fixed;left:0;right:0;height:7%;background:#000;z-index:7}
+  #barT{top:0}#barB{bottom:0}
+  #tag{position:fixed;bottom:8.5%;left:0;right:0;text-align:center;z-index:8;font-size:9px;
+    letter-spacing:5px;color:#6b5d42;opacity:0;transition:opacity 2s ease}
+  body.rolling #tag{opacity:.8}
+  .card{position:fixed;left:0;right:0;top:44%;text-align:center;z-index:6;font-size:clamp(17px,3.4vw,26px);
+    font-style:italic;letter-spacing:1px;color:#f0e4c8;opacity:0;transform:translateY(8px);
+    transition:opacity 1.8s ease,transform 1.8s ease;text-shadow:0 2px 18px #000}
+  .card.on{opacity:1;transform:translateY(0)}
+  #black{position:fixed;inset:0;background:#000;z-index:9;opacity:0;pointer-events:none;transition:opacity 1.1s ease}
+  #black.on{opacity:1}
+  #studio,#dir{position:fixed;inset:0;z-index:10;display:none;flex-direction:column;align-items:center;justify-content:center;background:#000}
   #studio.on,#dir.on{display:flex}
-  #studio img{width:min(44vw,380px);filter:drop-shadow(0 0 34px rgba(255,140,60,.20))}
-  #studio .co,#dir .role,#dir .name{color:#8a7a5f;letter-spacing:5px;font-size:11px}
-  #dir img{width:min(30vw,240px);filter:drop-shadow(0 0 26px rgba(255,140,60,.16))}
-  #dir .role{margin-top:6px}
-  #dir .name{color:#e8c47a;font-size:16px;letter-spacing:7px}
-  #title .tlogo{width:min(62vw,540px);filter:drop-shadow(0 0 40px rgba(0,0,0,.9));opacity:0;transition:opacity 2.4s ease}
-  #title.on .tlogo{opacity:1}
-  #title .cred{opacity:0;transition:opacity 1.6s ease;letter-spacing:5px;font-size:11px;color:#8a7a5f}
-  #title .cred b{color:#e8c47a;font-weight:normal;letter-spacing:6px}
-  #title .cred.show{opacity:.95}
+  #studio img{width:min(52vw,300px);opacity:0;transition:opacity 1.3s ease}
+  #dir .t{font-family:'Cinzel',serif;font-size:13px;letter-spacing:8px;opacity:0;transition:opacity 1.3s ease}
+  #dir .n{font-family:'Cinzel',serif;font-size:22px;letter-spacing:10px;margin-top:14px;opacity:0;transition:opacity 1.3s ease}
+  #title{position:fixed;inset:0;z-index:11;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    background:#000;opacity:0;transition:opacity 1.4s ease}
+  #title.on{opacity:1}
+  #title .tlogo{width:min(64vw,380px);transform:scale(1.08);transition:transform .9s cubic-bezier(.16,1,.3,1);opacity:0;transition:opacity .9s ease,transform .9s cubic-bezier(.16,1,.3,1)}
+  #title.reveal .tlogo{transform:scale(1);opacity:1}
+  #title .s{font-style:italic;font-size:clamp(11px,2vw,14px);letter-spacing:2px;color:#b9a880;margin-top:12px;opacity:0;transition:opacity 1.6s ease}
+  #title.sline .s{opacity:.95}
+  .cred{font-family:'Cinzel',serif;font-size:10.5px;letter-spacing:4px;color:#9c8a62;opacity:0;transition:opacity 1.2s ease}
+  .cred b{color:#e0c68a;font-weight:600}
+  .cred.show{opacity:1}
+  #title a{font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;color:#6b5d42;text-decoration:none;
+    border:1px solid #3a3020;padding:9px 22px;opacity:0;transition:opacity 1.2s ease}
+  #title a.show{opacity:1}
+  #start{position:fixed;inset:0;z-index:12;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer}
+  #start img{width:64px;margin-bottom:22px;opacity:.9}
+  #start .t{font-family:'Cinzel',serif;font-size:30px;letter-spacing:16px;color:#e0c68a;text-indent:16px}
+  #start .s{font-style:italic;font-size:13px;color:#8a7a5a;margin-top:10px;letter-spacing:1px}
+  #start .go{font-family:'Cinzel',serif;font-size:12px;letter-spacing:6px;color:#b9a880;margin-top:44px;
+    border:1px solid #4a3d26;padding:13px 40px;transition:all .3s ease}
+  #start:hover .go{border-color:#e0c68a;color:#e0c68a;box-shadow:0 0 24px rgba(224,198,138,.18)}
 </style>
 </head>
 <body>
-<div id="studio"><img src="cinematic-gods/STUDIO-LOGO.png"><div class="co">A BIGFOOT404 LLC COMPANY</div></div>
-<div id="dir"><img src="cinematic-gods/DIRECTOR-LOGO.png"><div class="role">DIRECTED BY</div><div class="name">BUD E404</div></div>
-<div id="film" style="position:fixed;inset:0">
+<div id="black" class="on"></div>
+<div id="stage">
   <div class="shot" id="s1" style="background-image:url('cinematic-gods/01-HEARTLAND-DAWN.jpg')"></div>
   <div class="shot" id="s2" style="background-image:url('cinematic-gods/02-KILN-ROAD.jpg')"></div>
   <div class="shot" id="s3" style="background-image:url('cinematic-gods/03-WARM-STONE.jpg')"></div>
@@ -66,6 +74,8 @@
 <div id="tag">TYPE A · WORLD CINEMATIC · ASHFALL</div>
 <div class="card" id="c3">The stones were warm.</div>
 <div class="card" id="c5">The land was never land.</div>
+<div id="studio"><img src="cinematic-gods/STUDIO-LOGO.png" alt="BIG ENTERTAINMENT"></div>
+<div id="dir"><div class="t">DIRECTED BY</div><div class="n">BUD E404</div></div>
 <div id="title"><img class="tlogo" src="cinematic-gods/TITLE-LOGO.png">
   <div class="s" style="margin-top:10px">THE SLEEPING GODS &mdash; they were never mountains. they were waiting.</div>
   <div class="cred" id="cr1" style="margin-top:34px">DIRECTED BY <b>BUD E404</b></div>
@@ -77,40 +87,130 @@
   <div class="go">▶ BEGIN</div><div class="s" style="letter-spacing:1px">(sound on · story in ten frames)</div></div>
 
 <script>
-/* CINEMATIC PRODUCTION SYSTEM — THE SLEEPING GODS
-   Beat grammar: establish -> journey -> discovery -> QUIET -> revelation -> SPECTACLE -> QUIET -> TENSION -> threshold -> CLOSE */
+/* ============================================================
+   THE SLEEPING GODS — cut v4 "THE DIRECTOR PASS"
+   Craft applied (pro trailer/cinematic editing doctrine):
+   • ACT STRUCTURE with a shot-length curve (long->short, breathe before the climax)
+   • Transition grammar: dissolve within acts, dip-to-black at ACT breaks only
+   • J-cuts: the next beat's audio leads its picture
+   • Sound design: opening boom · drone that evolves per act · whooshes on
+     every transition · risers before the spectacle & title · impacts on the
+     rise/ignition/title slam · true silence in the quiet act · master bus
+   ============================================================ */
 const BEATS=[
- {s:'s1',d:9000,z:[1.02,1.14],p:[[.5,.5],[.44,.55]],em:'#ffb36b',n:16,dr:.08,amp:.4,vol:.35},
- {s:'s2',d:7000,z:[1.10,1.12],p:[[.42,.5],[.60,.5]],em:'#d9a86a',n:10,dr:.05,amp:.3,vol:.32},
- {s:'s3',d:8000,card:'c3',z:[1.05,1.22],p:[[.5,.45],[.5,.62]],em:'#ffcf8a',n:14,dr:.10,amp:.5,vol:.40},
- {s:'s4',d:10000,z:[1.06,1.09],p:[[.5,.5],[.52,.48]],em:'#ffb36b',n:6,dr:.03,amp:.2,vol:.18},
- {s:'s5',d:11000,card:'c5',z:[1.18,1.01],p:[[.44,.56],[.5,.42]],em:'#ffb36b',n:8,dr:.05,amp:.3,vol:.30},
- {s:'s6',d:8000,z:[1.16,1.04],p:[[.5,.44],[.5,.56]],em:'#ffd28a',n:110,dr:.9,amp:2.2,vol:.85},
- {s:'s7',d:8000,z:[1.08,1.11],p:[[.5,.5],[.5,.48]],em:'#d9a86a',n:10,dr:.05,amp:.3,vol:.20},
- {s:'s8',d:7000,z:[1.04,1.10],p:[[.5,.5],[.47,.52]],em:'#a97fff',n:8,dr:.03,amp:.2,vol:.26},
- {s:'s9',d:5000,z:[1.10,1.34],p:[[.5,.55],[.5,.58]],em:'#ffcf8a',n:60,dr:.7,amp:1.6,vol:.60},
- {s:'s10',d:6000,z:[1.02,1.30],p:[[.5,.5],[.5,.47]],em:'#ffd28a',n:24,dr:.25,amp:.8,vol:.50,fadeBlack:true},
+ /* ACT I — THE ROAD (establish -> journey -> discovery) */
+ {s:'s1',d:9000, z:[1.02,1.14],p:[[.5,.5],[.44,.55]], em:'#ffb36b',n:16,dr:.08,amp:.4, bed:.30, x:'dip'},
+ {s:'s2',d:7500, z:[1.10,1.12],p:[[.42,.5],[.60,.5]], em:'#d9a86a',n:10,dr:.05,amp:.3, bed:.30, x:'dissolve'},
+ {s:'s3',d:7000, z:[1.05,1.22],p:[[.5,.45],[.5,.62]], em:'#ffcf8a',n:14,dr:.10,amp:.5, bed:.32, card:'c3', vo:'vo-warm', voAt:2600, x:'dissolve'},
+ /* ACT II — THE QUIET (slowest, near-silence; dip to black entering) */
+ {s:'s4',d:9500, z:[1.06,1.09],p:[[.5,.5],[.52,.48]], em:'#ffb36b',n:6,dr:.03,amp:.2, bed:.10, x:'dip'},
+ {s:'s5',d:9000, z:[1.18,1.01],p:[[.44,.56],[.5,.42]], em:'#ffb36b',n:8,dr:.05,amp:.3, bed:.06, card:'c5', vo:'vo-land', voAt:2600, x:'dissolve'},
+ /* ACT III — THE RISE (spectacle + aftermath) */
+ {s:'s6',d:7600, z:[1.16,1.04],p:[[.5,.44],[.5,.56]], em:'#ffd28a',n:110,dr:.9,amp:2.2, bed:.62, boom:true, riseBefore:2.4, x:'dip'},
+ {s:'s7',d:7000, z:[1.08,1.11],p:[[.5,.5],[.5,.48]], em:'#d9a86a',n:10,dr:.05,amp:.3, bed:.34, x:'dissolve'},
+ /* ACT IV — THE WARNING */
+ {s:'s8',d:6000, z:[1.04,1.10],p:[[.5,.5],[.47,.52]], em:'#a97fff',n:8,dr:.03,amp:.2, bed:.30, tension:true, x:'dip'},
+ /* ACT V — THE MARK (accelerating into the title) */
+ {s:'s9',d:4800, z:[1.10,1.34],p:[[.5,.55],[.5,.58]], em:'#ffcf8a',n:60,dr:.7,amp:1.6, bed:.48, hit:true, jlead:1.1, vo:'vo-waiting', voAt:1300, x:'dissolve'},
+ {s:'s10',d:4200,z:[1.02,1.30],p:[[.5,.5],[.5,.47]], em:'#ffd28a',n:24,dr:.25,amp:.8, bed:.40, riser:3.2, x:'dissolve'},
 ];
-const GAP=2000;let bi=0,playing=false;
 const $=id=>document.getElementById(id);
+let bi=0,playing=false;
 
-/* audio: pad + swell per beat + rumble at the rise */
-let AC,master,rumble;
+/* ============ SOUND DESIGN (all synthesized — the five purposes) ============ */
+let AC,master,comp,noiseBuf;
+const layers={};   /* named drone layers */
+function mkNoise(){const b=AC.createBuffer(1,AC.sampleRate*2,AC.sampleRate),d=b.getChannelData(0);
+  for(let i=0;i<d.length;i++)d[i]=Math.random()*2-1;return b;}
 function audioInit(){
   AC=new (window.AudioContext||window.webkitAudioContext)();
-  master=AC.createGain();master.gain.value=0;master.connect(AC.destination);
-  [55,55.7,110.3,164.8].forEach(f=>{const o=AC.createOscillator();o.type='sine';o.frequency.value=f;
-    const g=AC.createGain();g.gain.value=.4;o.connect(g);g.connect(master);o.start();});
-  const buf=AC.createBuffer(1,AC.sampleRate*2,AC.sampleRate),d=buf.getChannelData(0);
-  for(let i=0;i<d.length;i++)d[i]=Math.random()*2-1;
-  const src=AC.createBufferSource();src.buffer=buf;src.loop=true;
-  const f=AC.createBiquadFilter();f.type='lowpass';f.frequency.value=90;
-  rumble=AC.createGain();rumble.gain.value=0;src.connect(f);f.connect(rumble);rumble.connect(master);src.start();
+  comp=AC.createDynamicsCompressor();
+  comp.threshold.value=-18;comp.ratio.value=6;comp.attack.value=.004;comp.release.value=.28;
+  master=AC.createGain();master.gain.value=0;
+  master.connect(comp);comp.connect(AC.destination);
+  noiseBuf=mkNoise();
+  /* --- drone bed: four stacked chord layers, mixed up per act --- */
+  const mk=(freqs,type,base)=>{const g=AC.createGain();g.gain.value=0;g.connect(master);
+    freqs.forEach(f=>{const o=AC.createOscillator();o.type=type;o.frequency.value=f;
+      const og=AC.createGain();og.gain.value=base;o.connect(og);og.connect(g);o.start();});
+    return g;};
+  layers.root  =mk([55,55.4,110.2],'sine',.30);          /* Act I-II: the deep floor */
+  layers.fifth =mk([164.8],'sine',.22);                     /* Act II: warmth enters   */
+  layers.third =mk([131.2,131.9],'sine',.16);              /* Act III+: minor myth    */
+  layers.dread =mk([58.3,116.9],'sawtooth',.05);           /* Act IV: the warning     */
+  /* --- air: constant wind/room tone, barely there --- */
+  const air=AC.createBufferSource();air.buffer=noiseBuf;air.loop=true;
+  const airF=AC.createBiquadFilter();airF.type='bandpass';airF.frequency.value=420;airF.Q.value=.4;
+  layers.air=AC.createGain();layers.air.gain.value=.012;
+  air.connect(airF);airF.connect(layers.air);layers.air.connect(master);air.start();
+  /* --- VO bus: narration plays THROUGH the mix, bed ducks under it --- */
+  voBus=AC.createGain();voBus.gain.value=.95;voBus.connect(comp);
 }
-function toVol(v,ms){const t=AC.currentTime;master.gain.cancelScheduledValues(t);
-  master.gain.setValueAtTime(master.gain.value,t);master.gain.linearRampToValueAtTime(v,t+ms/1000);}
+let voBus;
+const voEls={};
+function playVO(name){
+  if(!voEls[name]){const el=new Audio('cinematic-gods/'+name+'.mp3');
+    const src=AC.createMediaElementSource(el);src.connect(voBus);voEls[name]=el;}
+  const el=voEls[name];el.currentTime=0;el.play();
+  /* duck the bed under the dialogue */
+  const keep={};Object.keys(layers).forEach(k=>{keep[k]=layers[k].gain.value;
+    ramp(layers[k],keep[k]*.22,500);});
+  el.onended=()=>{ if(BEATS[bi])mixTo(BEATS[bi]); };
+}
+const ramp=(g,v,ms)=>{const t=AC.currentTime;g.gain.cancelScheduledValues(t);
+  g.gain.setValueAtTime(Math.max(g.gain.value,.0001),t);g.gain.linearRampToValueAtTime(v,t+ms/1000);};
 
-/* embers */
+/* --- transition whoosh: filtered noise sweep, rides dissolves & dips --- */
+function whoosh(dur=1.2,dir=1,vol=.16){
+  const t=AC.currentTime,src=AC.createBufferSource();src.buffer=noiseBuf;src.loop=true;
+  const f=AC.createBiquadFilter();f.type='bandpass';f.Q.value=1.1;
+  f.frequency.setValueAtTime(dir>0?300:2400,t);
+  f.frequency.exponentialRampToValueAtTime(dir>0?2600:260,t+dur);
+  const g=AC.createGain();g.gain.setValueAtTime(.0001,t);
+  g.gain.exponentialRampToValueAtTime(vol,t+dur*.55);
+  g.gain.exponentialRampToValueAtTime(.0001,t+dur);
+  src.connect(f);f.connect(g);g.connect(master);src.start(t);src.stop(t+dur+.1);}
+/* --- riser: the wind-up before a big moment --- */
+function riser(dur=2.4,vol=.30){
+  const t=AC.currentTime,src=AC.createBufferSource();src.buffer=noiseBuf;src.loop=true;
+  const f=AC.createBiquadFilter();f.type='bandpass';f.Q.value=3;
+  f.frequency.setValueAtTime(180,t);f.frequency.exponentialRampToValueAtTime(3400,t+dur);
+  const g=AC.createGain();g.gain.setValueAtTime(.0001,t);
+  g.gain.exponentialRampToValueAtTime(vol,t+dur*.9);
+  g.gain.exponentialRampToValueAtTime(.0001,t+dur+.15);
+  src.connect(f);f.connect(g);g.connect(master);src.start(t);src.stop(t+dur+.3);}
+/* --- impact: sub drop + noise burst (the BOOM) --- */
+function boom(vol=.6){
+  const t=AC.currentTime;
+  const o=AC.createOscillator();o.type='sine';
+  o.frequency.setValueAtTime(88,t);o.frequency.exponentialRampToValueAtTime(26,t+1.4);
+  const og=AC.createGain();og.gain.setValueAtTime(vol,t);
+  og.gain.exponentialRampToValueAtTime(.0001,t+1.6);
+  o.connect(og);og.connect(master);o.start(t);o.stop(t+1.7);
+  const src=AC.createBufferSource();src.buffer=noiseBuf;
+  const f=AC.createBiquadFilter();f.type='lowpass';
+  f.frequency.setValueAtTime(900,t);f.frequency.exponentialRampToValueAtTime(90,t+.9);
+  const ng=AC.createGain();ng.gain.setValueAtTime(vol*.55,t);
+  ng.gain.exponentialRampToValueAtTime(.0001,t+1.1);
+  src.connect(f);f.connect(ng);ng.connect(master);src.start(t);src.stop(t+1.2);}
+/* --- crack: sharp transient for the ignition --- */
+function crack(vol=.4){
+  const t=AC.currentTime,src=AC.createBufferSource();src.buffer=noiseBuf;
+  const f=AC.createBiquadFilter();f.type='highpass';f.frequency.value=1800;
+  const g=AC.createGain();g.gain.setValueAtTime(vol,t);
+  g.gain.exponentialRampToValueAtTime(.0001,t+.35);
+  src.connect(f);f.connect(g);g.connect(master);src.start(t);src.stop(t+.4);
+  boom(.5);}
+
+/* --- act mixing: which drone layers breathe in each act --- */
+function mixTo(b){
+  ramp(layers.root, b.bed*1.0, 2200);
+  ramp(layers.fifth,(b.bed>.14?.5:0)*(b.bed), 2600);
+  ramp(layers.third,(b.bed>.4?.55:0)*(b.bed), 2000);
+  ramp(layers.dread, b.tension?.14:0, 1800);
+  ramp(layers.air, b.bed<.12?.030:.012, 3000);}
+
+/* ============ EMBERS ============ */
 const cv=$('fx'),ctx=cv.getContext('2d');let P=[],W,H;
 function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight}addEventListener('resize',rs);rs();
 function seed(b){P=[];for(let i=0;i<b.n;i++)P.push({x:Math.random()*W,y:Math.random()*H,
@@ -122,16 +222,17 @@ function seed(b){P=[];for(let i=0;i<b.n;i++)P.push({x:Math.random()*W,y:Math.ran
     ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.28);ctx.fill()});ctx.globalAlpha=1}
   requestAnimationFrame(tick)})();
 
-/* grain */
+/* ============ GRAIN ============ */
 const gcv=$('grain'),gx=gcv.getContext('2d');
 function grs(){gcv.width=innerWidth;gcv.height=innerHeight}addEventListener('resize',grs);grs();
 setInterval(()=>{if(!playing)return;const id=gx.createImageData(W,H);
   for(let i=0;i<id.data.length;i+=4){const v=Math.random()*255;id.data[i]=id.data[i+1]=id.data[i+2]=v;id.data[i+3]=255}
   gx.putImageData(id,0,0)},90);
 
-/* shot run */
-function shot(b){const el=$(b.s);
-  el.style.transition=`transform ${b.d}ms linear, opacity 2s ease`;
+/* ============ SHOT RUN ============ */
+function shot(b){
+  const el=$(b.s);
+  el.style.transition=`transform ${b.d}ms linear, opacity 1.6s ease`;
   el.style.transformOrigin=`${b.p[0][0]*100}% ${b.p[0][1]*100}%`;
   el.style.transform=`scale(${b.z[0]})`;
   requestAnimationFrame(()=>requestAnimationFrame(()=>{
@@ -141,32 +242,57 @@ function shot(b){const el=$(b.s);
 async function preroll(){
   const fade=(el,ms)=>new Promise(r=>{el.classList.add('on');requestAnimationFrame(()=>{el.style.opacity=1});
     setTimeout(()=>{el.style.opacity=0;setTimeout(()=>{el.classList.remove('on');r()},1300)},ms)});
-  audioInit();await AC.resume();toVol(.14,1500);
-  await new Promise(r=>setTimeout(r,400));
-  await fade($('studio'),3000);
-  await fade($('dir'),3200);
+  audioInit();await AC.resume();
+  /* the opening boom — anchor the mood before anything is seen */
+  ramp(master,.0,0);boom(.42);ramp(master,.13,1600);
+  await new Promise(r=>setTimeout(r,300));
+  await fade($('studio'),2600);whoosh(1.1,1,.10);
+  await fade($('dir'),2800);whoosh(1.1,1,.10);
 }
 async function play(){
   if(playing)return;playing=true;
   $('start').style.display='none';document.body.classList.add('rolling');
   await preroll();
+  $('black').classList.remove('on');
   for(bi=0;bi<BEATS.length;bi++){
-    const b=BEATS[bi];seed(b);
-    shot(b);$(b.s).classList.add('on');
-    toVol(b.vol,1800);
-    if(b.s==='s6'){const t=AC.currentTime;rumble.gain.setValueAtTime(0,t);
-      rumble.gain.linearRampToValueAtTime(.9,t+.5);rumble.gain.exponentialRampToValueAtTime(.1,t+4)}
-    if(b.card)setTimeout(()=>$(b.card).classList.add('on'),2400);
-    if(b.fadeBlack)setTimeout(()=>document.body.style.background='#000',b.d-1200);
-    await new Promise(r=>setTimeout(r,b.d+GAP));
-    $(b.s).classList.remove('on');
+    const b=BEATS[bi];
+    /* J-cut: lead the picture with the sound of what's coming */
+    if(b.jlead&&!b.jleadDone){b.jleadDone=true;setTimeout(()=>{if(b.hit)crack(.38);whoosh(1.2,1,.13)},0);}
+    if(b.riseBefore)riser(b.riseBefore,.34);
+    if(b.riser)riser(b.riser,.30);
+    shot(b);
+    const el=$(b.s);
+    if(b.x==='dip'){ $('black').classList.add('on');
+      await new Promise(r=>setTimeout(r,900));
+      whoosh(1.1,1,.14);
+      el.classList.add('on'); $('black').classList.remove('on');
+    } else { /* dissolve: new shot fades over the previous one */
+      whoosh(1.4,1,.11);
+      el.classList.add('on');
+      await new Promise(r=>setTimeout(r,1500));
+      const prev=BEATS[bi-1];if(prev)$(prev.s).classList.remove('on');
+    }
+    mixTo(b);
+    if(b.boom)setTimeout(()=>boom(.55),b.d*.52);          /* the rise: impact at the reveal */
+    if(b.card)setTimeout(()=>$(b.card).classList.add('on'),2000);
+    if(b.vo)setTimeout(()=>playVO(b.vo),b.voAt||2400);
+    const remain=b.x==='dip'?b.d-900:b.d-1500;
+    await new Promise(r=>setTimeout(r,Math.max(600,remain)));
     if(b.card)$(b.card).classList.remove('on');
   }
-  toVol(.05,2500);
-  $('title').classList.add('on');
-  setTimeout(()=>{$('cr1').classList.add('show');toVol(.10,900)},3000);
-  setTimeout(()=>{$('cr2').classList.add('show')},5600);
-  setTimeout(()=>{$('cr3').classList.add('show');toVol(.06,1500)},8000);
+  /* cut to black · silence · TITLE SLAM — the oldest trick in the book */
+  $('black').classList.add('on');
+  ramp(layers.root,0,700);ramp(layers.fifth,0,700);ramp(layers.third,0,700);ramp(layers.dread,0,500);
+  await new Promise(r=>setTimeout(r,850));                 /* the held silence */
+  $('title').classList.add('on');$('black').classList.remove('on');
+  boom(.6);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>$('title').classList.add('reveal')));
+  setTimeout(()=>$('title').classList.add('sline'),1800);
+  ramp(master,.10,900);
+  setTimeout(()=>{$('cr1').classList.add('show');whoosh(.9,-1,.07)},3200);
+  setTimeout(()=>{$('cr2').classList.add('show')},5800);
+  setTimeout(()=>{$('cr3').classList.add('show');ramp(master,.06,1500)},8200);
+  setTimeout(()=>{document.querySelector('#title a').classList.add('show')},10600);
   playing=false;
 }
 $('start').addEventListener('click',play);
