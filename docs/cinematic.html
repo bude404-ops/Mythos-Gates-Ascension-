@@ -27,6 +27,8 @@
   #credits.on { display:flex; }
   #credits .role { color:#8d8271; font-size:clamp(10px,1.1vw,13px); letter-spacing:.4em; text-indent:.4em; text-transform:uppercase; margin-bottom:1.6vh; }
   #credits .name { color:#e8dcc6; font-size:clamp(18px,3vw,38px); letter-spacing:.34em; text-indent:.34em; text-transform:uppercase; text-shadow:0 2px 18px rgba(0,0,0,.9); }
+  #credits .dlogo { display:none; max-width:min(56vw,600px); width:56vw; filter:drop-shadow(0 0 30px rgba(255,120,40,.22)); }
+  #end .endlogo { max-width:min(34vw,340px); width:34vw; opacity:0; transition:opacity 2.2s ease; filter:drop-shadow(0 0 26px rgba(255,120,40,.18)); }
   #start { position:fixed; inset:0; z-index:40; background:radial-gradient(ellipse at 50% 60%, #16120c 0%, #000 70%);
     display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4vh; cursor:pointer; }
   #start .sigil { width:min(20vh,140px); height:auto; opacity:.9; animation:sigilPulse 4s ease-in-out infinite; }
@@ -70,6 +72,7 @@
 </div>
 
 <div id="credits">
+  <img class="dlogo" id="dirLogo" src="cinematic/DIRECTOR-LOGO.png" alt="">
   <div class="role">Directed by</div>
   <div class="name">BudE404</div>
 </div>
@@ -80,6 +83,7 @@
 </div>
 
 <div id="end">
+  <img class="endlogo" id="endLogo" src="cinematic/DIRECTOR-LOGO.png" alt="">
   <div style="color:#6f6555; font-size:12px; letter-spacing:.4em; text-indent:.4em; text-transform:uppercase;">A BIG Entertainment Production</div>
   <button class="again" onclick="location.reload()">Watch Again</button>
 </div>
@@ -357,6 +361,10 @@ function enterTitle(){
     const cr=document.getElementById('credits');
     const rollCredits=(role,name,delay,hold)=>{
       setTimeout(()=>{
+        const isLogo = (name==='BUD-E404-LOGO');
+        cr.querySelector('.dlogo').style.display = isLogo?'block':'none';
+        cr.querySelector('.role').style.display = isLogo?'none':'block';
+        cr.querySelector('.name').style.display = isLogo?'none':'block';
         cr.querySelector('.role').textContent=role;
         cr.querySelector('.name').textContent=name;
         cr.classList.add('on'); cr.style.opacity=0;
@@ -366,9 +374,10 @@ function enterTitle(){
         setTimeout(()=>{ cr.classList.remove('on'); }, (hold||2400)+1200);
       }, delay);
     };
-    rollCredits('Directed by','BudE404', 3400, 3000);
+    rollCredits('','BUD-E404-LOGO', 3400, 3400);
     rollCredits('A Bude404 Game','In Association With BIG Entertainment', 8000, 3000);
-    setTimeout(()=>{ document.getElementById('end').classList.add('on'); done=true; }, 12600);
+    setTimeout(()=>{ document.getElementById('end').classList.add('on'); done=true;
+      requestAnimationFrame(()=>{ document.getElementById('endLogo').style.opacity=1; }); }, 12600);
   }, 3000);
 }
 
