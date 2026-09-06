@@ -17,6 +17,13 @@ Shared layout grammar (Diablo lane per Quest Doctrine): entrance stair from the 
 
 Per-realm set dressing: Embermere forge-cathedral/magma heart · Galemarch sky-bell chambers/bell-chain bridges · Bloomweald root corridors/rot gardens · Gloambarrow barrow-shelf catacombs/votive lantern heart · Marenvale flooded halls/tidal dais · Stonefell tilted strata slabs/half-carved vow-stone heart.
 
+## DEPTHS CONTENT MODEL — one BIOME per realm, infinite dungeons
+The six layout maps are NOT six single levels — each is its realm's dungeon GRAMMAR (the biome kit the procedural builder constructs from). The Depths are an ENDLESS DESCENT per realm:
+- Every run = a freshly generated dungeon from that realm's grammar (loops + wings reshuffle; heart chamber + grey-end pole fixed).
+- DEPTH TIERS (Gate Cycle endgame): descending tier number = deeper, sicker, denser fever, richer relic-gift loot, and the grey de-coloration creeps closer to the entrance the deeper you go. The deepest tier of a realm borders the Wound.
+- Chamber families per realm give the generator vocabulary variety — e.g. Embermere mixes forge-cathedral, magma cavern, drowned-forge, and ash-gallery chamber families into one descent.
+- Challenge poles: sworn drake (territorial lane) guards the heart chamber each run; the mini-boss wing rotates through the realm's T1/T2 Hollow pool.
+
 ## GATE BATTLE ARENAS (SHEET-GATE-ARENAS-7-v1.jpg)
 Arena grammar (Waking Siege + Stationary God laws): the Gate is the arena's heart and the thing under attack. RISE POINT = ritual stone ring directly before the Gate — the god emerges THERE and never moves. Hollow waves spawn at the field's far edges and march ON the Gate. Terrain toys + hazards radiate outward. Player defends by channeling the god: palm surges, environment smashing, Gate Rite ultimate. Camera doctrine: god-vs-waves = front view facing the player-god; god-vs-god = side view.
 
