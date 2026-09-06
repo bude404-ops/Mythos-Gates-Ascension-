@@ -275,6 +275,7 @@ function renderCodex(){
     `<div class="codexcard"><div class="ctitle">${esc(e.t)}</div><div class="locked">✦ unlocks on the road</div></div>`).join('');
 }
 const GALLERY=[
+ {t:"THE LIVING INTERFACE",s:"hybrid 3D+2D · game ui",u:"game-ui.html"},
  {t:"AVALON — TEASER v3",s:"cinematic · voiced",u:"cinematic.html"},
  {t:"THE SLEEPING GODS",s:"story cinematic · type A",u:"cinematic-gods.html"},
  {t:"ENCOUNTER: MORVAINE",s:"boss cinematic · type C",u:"cinematic-encounter.html"},
@@ -314,7 +315,7 @@ let embersOn=true, parallaxOn=true;
       e.y-=e.s;e.x+=Math.sin(t/1400+e.f*9)*.18;
       if(e.y<-4){e.y=H+4;e.x=Math.random()*W;}
       cx.beginPath();cx.arc(e.x,e.y,e.r,0,7);
-      cx.fillStyle=`rgba(255,${140+e.f*60|0},${40+e.f*30|0},${e.o*(.6+.4*Math.sin(t/600+e.f*7)**2))}`;
+      cx.fillStyle=`rgba(255,${140+e.f*60|0},${40+e.f*30|0},${e.o*(.6+.4*Math.sin(t/600+e.f*7)**2)}`;
       cx.fill();
     }
     requestAnimationFrame(loop);

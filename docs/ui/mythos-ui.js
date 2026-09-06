@@ -8,19 +8,19 @@
   /* ---------- sound: soft stone-tick & ember swell (WebAudio, no assets) ---------- */
   let AC=null; MUI.mute=false;
   const ctx=()=>{ if(!AC){ try{AC=new (window.AudioContext||window.webkitAudioContext)()}catch(e){} } if(AC&&AC.state==='suspended')AC.resume(); return AC; };
-  MUI.tick = function()vol=.12){ const a=ctx(); if(!a)return;
+  MUI.tick = function(vol=.12){ const a=ctx(); if(!a)return;
     const t=a.currentTime, buf=a.createBuffer(1, a.sampleRate*.05, a.sampleRate), d=buf.getChannelData(0);
     for(let i=0;i<d.length;i++) d[i]=(Math.random()*2-1)*Math.pow(1-i/d.length,2.2);
     const src=a.createBufferSource(); src.buffer=buf;
     const f=a.createBiquadFilter(); f.type='bandpass'; f.frequency.value=900; f.Q.value=1.4;
     const g=a.createGain(); g.gain.setValueAtTime(vol,t); g.gain.exponentialRampToValueAtTime(.001,t+.05);
     src.connect(f).connect(g).connect(a.destination); src.start(t); };
-  MUI.swell = function()){ const a=ctx(); if(!a)return;
+  MUI.swell = function(){ const a=ctx(); if(!a)return;
     const t=a.currentTime, o=a.createOscillator(), g=a.createGain();
     o.type='sine'; o.frequency.setValueAtTime(70,t); o.frequency.exponentialRampToValueAtTime(34,t+.5);
     g.gain.setValueAtTime(.16,t); g.gain.exponentialRampToValueAtTime(.001,t+.55);
     o.connect(g).connect(a.destination); o.start(t); o.stop(t+.6); };
-  MUI.chime = function()){ const a=ctx(); if(!a)return;
+  MUI.chime = function(){ const a=ctx(); if(!a)return;
     const t=a.currentTime, o=a.createOscillator(), g=a.createGain();
     o.type='sine'; o.frequency.setValueAtTime(392,t); o.frequency.setValueAtTime(523.25,t+.09);
     g.gain.setValueAtTime(.05,t); g.gain.exponentialRampToValueAtTime(.001,t+.4);

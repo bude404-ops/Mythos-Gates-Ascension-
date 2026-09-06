@@ -1,36 +1,45 @@
-# MYTHOS UI SYSTEM — CANON DESIGN DOCTRINE v1
+# UI DESIGN SYSTEM v1 — THE CINEMATIC MYTHIC RELIC
+*Canon law for every interface in AVALON: THE WAKING GATES. Directive: BudE404, Sept 6 2026.*
 
-*Directive from BudE404, Sept 6 2026. The UI is not placed on top of the game — it is part of the world itself. The player interacts with an ancient mythic system that has been awakened for them.*
+## THE ONE RULE
+The UI does not sit on top of the game — it is another layer of the game world.
+2D artwork tells the mythology. 3D models make the world tangible. The UI connects the two.
 
-## I. INFORMATION HIERARCHY
-- Descriptions, tooltips, detailed numbers, and secondary information live ON DEMAND — never on the face of the screen.
-- **Tertiary information must never visually compete with the primary experience.**
-- Pattern: card face carries the primary (name / epithet / role). **Hold** the card to reveal the numbers (hold-to-reveal tooltip, `.m-tip`).
+## SOURCE OF TRUTH
+Vault lore, art, models, and data are the only canon. Never invent names, factions, lore, or visuals for an interface. If a system is undefined, the UI leaves it out — the menu does not speak for the road.
 
-## II. ARTWORK INTEGRATION
-- Artwork is a fundamental part of the UI, not decoration: full-screen backgrounds, character cutouts, environmental scenes, layered illustrations, portraits, relic illustrations, elemental effects, atmospheric animation.
-- **Reuse existing canon art wherever appropriate.** New art, when required, must match the project's established visual style and existing assets — it may never visually clash with the game.
-- Pattern: `.m-art` full-screen canon backdrop + `.m-art-veil` radial veil so art never competes with foreground; slow parallax (`.m-root` `MUI.parallax`) makes the world breathe.
+## THE TWO MEDIUMS
+**3D for what is tangible:** character showcases, equipment previews, combat, boss reveals, creature showcases, relic inspection, rotatable displays, the hub environment.
+**2D for what is myth:** storytelling, lore, codex, portraits, loading screens, worldbuilding, quest illustrations, atmospheric transitions, cinematic backgrounds.
+Never force one medium to do the other's job.
 
-## III. MATERIAL & EFFECT LANGUAGE
-- Restrained material system: dark refined surfaces · ancient metal · carved or engraved details · subtle stone/mineral elements · glass-like magical surfaces where appropriate · energy accents · soft glow · embossed symbols.
-- **Elemental/divine effects are interactive feedback and emphasis — not decoration everywhere.**
-- Buttons feel physical and responsive: pressed states push into the stone (`.m-btn.pressed`), soft stone-tick sound, haptic pulse.
-- Important actions get subtle animation, glow, sound, tactile feedback (`.m-btn-primary`).
-- Chamfered megalithic corners (`.m-chamfer` cuts) — never rounded plastic.
+## SCREEN LAWS
+- **MAIN HUB (GATES)** — a living 3D scene: the player's character at the Gate, ember field breathing, camera in slow drift. Navigation frames the scene; the character and the Gate never leave view.
+- **CHARACTER (ROSTER)** — the actual 3D model is the centerpiece: drag-rotate, pinch-zoom, camera presets (PORTRAIT / PROFILE / FULL), ability previews from the real animation kit. Info plates frame the model, never cover it. Selecting a COLOSSUS triggers the boss reveal (letterbox → low-angle push → rumble → name → ENTER THE FIELD → gameplay).
+- **WORLD** — the eight roads exist as flames in the 3D scene, not buttons on a list. Tap a flame → camera eases to it → 2D story card (realm, route, flame color) → WALK THE ROAD → gameplay.
+- **COMBAT** — battlefield dominates, UI minimal, primary controls in thumb reach (see echo-duel HUD doctrine).
+- **CODEX** — the 2D archive: illustrated plates of canon art, lore by omission, records unlock through play. Full-plate viewing for each record.
+- **FIELD** — battle select as canon-art cards linking to the live prototypes.
 
-## IV. ANIMATION
-- Cinematic but restrained motion: panels unfolding (`.m-unfold`), relic symbols illuminating (`.m-illum`), energy flowing through borders, artwork drifting with parallax, buttons reacting to touch, characters subtly animating behind menus, smooth screen transitions, dramatic transitions for major discoveries.
-- **No excessive bouncing, spinning, or arcade-style UI animation.**
-- Respect `prefers-reduced-motion`.
+## MATERIAL LANGUAGE
+Dark refined stone · ancient metal edges · engraved gold type · chamfered (megalithic) corners, never rounded plastic · translucent relic-glass panels · restrained ember glow (color = elemental feedback, not decoration).
+**NOT every panel is stone.** Premium, sophisticated, restrained. Energy accents flow through symbols; relic activation is the interaction metaphor.
 
-## V. MOBILE UX — TOUCH-FIRST
-- Large touch targets (buttons ≥54px, cards ≥64px) · thumb-friendly controls · clear hierarchy · minimal text clutter · fast navigation · one-handed usability where practical · clear confirmation states · strong visual feedback · readability on small screens.
-- Looks complex and premium; operates simply.
+## INTERACTION LAWS
+- Touch-first: large targets (54px+ primary), thumb-zone dock, safe-area insets.
+- Tactile: every press physically depresses (`.pressed`), ticks with stone sound, vibrates where supported.
+- Tertiary numbers live on HOLD-TO-REVEAL tooltips — the face stays clean.
+- Motion is cinematic, not arcade: unfold, fade-rise, slow drift, breathing flames. No bounces.
+- Sound: soft stone tick (press), low swell (commit), double chime (screen change).
 
-## VI. REUSABLE DESIGN SYSTEM
-- The system files are `docs/ui/mythos-ui.css` (tokens + components) and `docs/ui/mythos-ui.js` (behaviors: tactile press + WebAudio stone/flame sounds, hold-reveal tooltips, parallax, unfold, chime).
-- **Every future screen, character, faction, location, game mode, cinematic, and feature is built from these components so the visual identity never breaks.** New work pulls from the token set (`--m-*`), the component classes (`.m-*`), and the `MUI.*` behaviors.
-- To add a screen: `.m-root` container + `.m-art` backdrop + `.m-panel` panels + `.m-btn`/`.m-card` controls + `data-tip` for tertiary numbers + `MUI.sweep()` after render.
+## IMPLEMENTATION
+- `docs/ui/mythos-ui.css` — tokens + materials + components (buttons, cards, bars, tooltips, unfold, art veil).
+- `docs/ui/mythos-ui.js` — MUI: tactile press, hold-reveal tooltips, parallax (pointer + gyro), unfold orchestration, WebAudio stone-and-flame sounds.
+- `docs/game-ui.html` — the full living interface: 3D hub (Warden + the Gate + embers), character screen with GLB previews and boss reveal, 3D world flames, 2D codex archive, field select.
+- `docs/index.html` — the menu shell on the same system.
 
-*Applied to: menu shell v2 (docs/index.html). Retrofits of codex, gallery, and battle HUDs inherit from this system.*
+## 3D PRESENTATION GRAMMAR
+Camera: wide establishing, low hero portrait, profile, free orbit. Loaders say SUMMONING. Models drop feet-to-ground and keep the ember key/rim light. Boss reveals end in a direct transition into player control.
+
+## CONTINUITY
+Characters → environments → creatures → architecture → weapons → effects → cinematics → gameplay. Equipment shown in UI must be the same geometry that swings in the field. New UI art follows the ART STYLE BIBLE fingerprint — same art department, same game.
