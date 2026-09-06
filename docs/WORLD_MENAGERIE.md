@@ -73,6 +73,8 @@ ART LAW — ELEMENT-FORMED HERALDS (BudE404 verdict, Sept 5 2026): heralds rende
 
 Pets are called **LUMINARIES**. Pet-relic fusion stands: one companion, two lights — the flame illuminates, the lantern it wears protects. Luminaries are the Witness class embodied: pure-witness motes that cannot be hollowed. Cosmetic variants = faction reskins (ember/ice-blue/gold-green/lantern-violet/pearl-teal/geode) + lantern attire styles; brightness tiers EARNED through pilgrimage deeds, never sold. Bare-flame vs lantern-donned = visible badge of progress.
 
+ART LAW — ELEMENT-FORMED LUMINARIES (BudE404 verdict, Sept 5 2026): a Luminary is formed ENTIRELY of its element — glowing elemental skin with crack/mote texture, hair and wings of pure element, drift-motes at the edges — the same element-wearing-the-being grammar as the heralds and colossi. Faction reskins change the element itself (fire / lightning / bloom-light / mist / water / crystal). The worn bronze lantern stays human-craft — the relic contrast is the point: made thing, named flame.
+
 ## DUNGEON ENCOUNTER MAP (who threatens you besides the Tide)
 | Class | Dungeon role | Tone |
 |---|---|---|
