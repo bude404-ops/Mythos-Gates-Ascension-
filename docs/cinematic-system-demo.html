@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AVALON — SYSTEM PROOF 01: The Kiln Road</title>
+<style>
+  html,body{margin:0;height:100%;background:#000;overflow:hidden;font-family:Georgia,serif}
+  #film{position:fixed;inset:0}
+  .shot{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 2.2s ease}
+  .shot.on{opacity:1}
+  .bar{position:fixed;left:0;right:0;height:11%;background:#000;z-index:5;transition:transform 1.4s ease}
+  #barT{top:0;transform:translateY(-100%)} #barB{bottom:0;transform:translateY(100%)}
+  body.rolling #barT{transform:translateY(0)} body.rolling #barB{transform:translateY(0)}
+  #fx{position:fixed;inset:0;z-index:3;pointer-events:none}
+  #grain{position:fixed;inset:0;z-index:4;pointer-events:none;opacity:.05}
+  #vig{position:fixed;inset:0;z-index:4;pointer-events:none;background:radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.55) 100%)}
+  .card{position:fixed;left:0;right:0;bottom:16%;text-align:center;z-index:6;color:#e8d9b0;
+    font-size:clamp(13px,2.2vw,17px);letter-spacing:4px;font-style:italic;opacity:0;transition:opacity 1.6s ease;
+    text-shadow:0 2px 14px #000}
+  .card.on{opacity:.92}
+  #start{position:fixed;inset:0;z-index:10;background:#050403;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;cursor:pointer}
+  #start img{width:70px}
+  #start .t{color:#e8c47a;letter-spacing:6px;font-size:15px}
+  #start .s{color:#6e6350;letter-spacing:3px;font-size:10px;font-style:italic}
+  #start .go{color:#9a8b6f;letter-spacing:4px;font-size:11px;border:1px solid #5a4526;border-radius:8px;padding:10px 26px;margin-top:10px}
+  #tag{position:fixed;top:12.5%;right:14px;z-index:6;color:rgba(232,196,122,.4);font-size:9px;letter-spacing:3px;opacity:0;transition:opacity 2s}
+  body.rolling #tag{opacity:1}
+  #end{position:fixed;inset:0;z-index:9;background:#000;display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px}
+  #end img{width:64px;opacity:.9}
+  #end .t{color:#e8c47a;letter-spacing:8px;font-size:20px;margin-top:8px}
+  #end .s{color:#6e6350;letter-spacing:3px;font-size:10px;font-style:italic;margin-bottom:16px}
+  #end a{color:#9a8b6f;font-size:11px;letter-spacing:3px;text-decoration:none;border:1px solid #3a3128;border-radius:8px;padding:10px 20px}
+</style>
+</head>
+<body>
+<div id="film">
+  <div class="shot" id="s1" style="background-image:url('cinematic-system/01-ESTABLISH-CINDERLANDS.jpg')"></div>
+  <div class="shot" id="s2" style="background-image:url('cinematic-system/02-SPECTACLE-EMERGENCE.png')"></div>
+  <div class="shot" id="s3" style="background-image:url('cinematic-system/03-QUIET-KILNROAD.jpg')"></div>
+  <div class="shot" id="s4" style="background-image:url('cinematic-system/04-TENSION-ECHO.jpg')"></div>
+</div>
+<canvas id="fx"></canvas>
+<div id="vig"></div><canvas id="grain"></canvas>
+<div id="barT" class="bar"></div><div id="barB" class="bar"></div>
+<div id="tag">SYSTEM PROOF 01 · ASHFALL</div>
+<div class="card" id="c1">The land was never empty. It was sleeping.</div>
+<div class="card" id="c2">The mountains stood up. They had a name.</div>
+<div class="card" id="c3">He kept walking. That is all a pilgrim is.</div>
+<div class="card" id="c4">Something else is walking the roads.</div>
+<div id="end"><img src="cinematic-system/RUNE.png"><div class="t">THE GATES ARE WAKING</div>
+  <div class="s">end of proof — the road continues in play</div><a href="index.html">← RETURN TO THE GATES</a></div>
+<div id="start"><img src="cinematic-system/RUNE.png">
+  <div class="t">AVALON</div><div class="s">SYSTEM PROOF 01 — THE KILN ROAD</div>
+  <div class="go">▶ BEGIN</div>
+  <div class="s" style="letter-spacing:1px">(canon artwork · sound on)</div></div>
+
+<script>
+/* CINEMATIC PRODUCTION SYSTEM — proof engine
+   Beat grammar: ESTABLISH → SPECTACLE → QUIET → TENSION → THRESHOLD */
+const BEATS=[
+ {shot:'s1',dur:12000,card:'c1',zoom:[1.06,1.14],pan:[[.48,.5],[.44,.52]],ember:'#ffb36b',n:60,drift:.14,amp:.9},
+ {shot:'s2',dur:9000,card:'c2',zoom:[1.18,1.02],pan:[[.5,.42],[.5,.55]],ember:'#ffd28a',n:120,drift:.9,amp:2.4},
+ {shot:'s3',dur:13000,card:'c3',zoom:[1.08,1.10],pan:[[.5,.5],[.52,.5]],ember:'#d9a86a',n:26,drift:.06,amp:.5},
+ {shot:'s4',dur:11000,card:'c4',zoom:[1.04,1.12],pan:[[.5,.5],[.47,.48]],ember:'#a97fff',n:18,drift:.04,amp:.4},
+];
+const GAP=2200; // crossfade
+let bi=0,t0=0,playing=false;
+const $=id=>document.getElementById(id);
+
+/* ---- audio: one pad, one swell, one drop ---- */
+let AC,master,pad,padG,rumble;
+function audioInit(){
+  AC=new (window.AudioContext||window.webkitAudioContext)();
+  master=AC.createGain();master.gain.value=.0;master.connect(AC.destination);
+  // low pad — two detuned sines + filtered noise room tone
+  padG=AC.createGain();padG.gain.value=.16;padG.connect(master);
+  [55,55.7,110.3].forEach(f=>{const o=AC.createOscillator();o.type='sine';o.frequency.value=f;
+    const g=AC.createGain();g.gain.value=.5;o.connect(g);g.connect(padG);o.start();});
+  // rumble — filtered noise
+  const buf=AC.createBuffer(1,AC.sampleRate*2,AC.sampleRate);const d=buf.getChannelData(0);
+  for(let i=0;i<d.length;i++)d[i]=Math.random()*2-1;
+  const src=AC.createBufferSource();src.buffer=buf;src.loop=true;
+  const f=AC.createBiquadFilter();f.type='lowpass';f.frequency.value=90;
+  rumble=AC.createGain();rumble.gain.value=0;
+  src.connect(f);f.connect(rumble);rumble.connect(master);src.start();
+}
+function swell(at,peak,dur){master.gain.setValueAtTime(master.gain.value,at);
+  master.gain.linearRampToValueAtTime(peak,at+dur);}
+function rumbleHit(at){rumble.gain.setValueAtTime(0,at);
+  rumble.gain.linearRampToValueAtTime(.9,at+.4);rumble.gain.exponentialRampToValueAtTime(.12,at+4);}
+
+/* ---- particles: element-true embers ---- */
+const cv=$('fx'),ctx=cv.getContext('2d');let P=[],W,H;
+function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight;}
+addEventListener('resize',rs);rs();
+function seed(b){P=[];for(let i=0;i<b.n;i++)P.push({x:Math.random()*W,y:Math.random()*H,
+  r:Math.random()*1.6+.3,s:Math.random()*(b.drift*.6)+b.drift*.25,a:Math.random()*.5+.1,w:Math.random()*6.28});}
+(function tick(){
+  ctx.clearRect(0,0,W,H);
+  const cur=BEATS[bi];
+  if(playing&&cur){ctx.fillStyle=cur.ember;
+    P.forEach(p=>{p.y-=p.s;p.w+=.02;p.x+=Math.sin(p.w)*cur.amp*.3;
+      if(p.y<-6){p.y=H+6;p.x=Math.random()*W;}
+      ctx.globalAlpha=p.a*(.55+.45*Math.sin(p.w*1.7));
+      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.28);ctx.fill();});
+    ctx.globalAlpha=1;}
+  requestAnimationFrame(tick);
+})();
+
+/* ---- grain ---- */
+const gcv=$('grain'),gx=gcv.getContext('2d');
+function grs(){gcv.width=innerWidth;gcv.height=innerHeight;}
+addEventListener('resize',grs);grs();
+setInterval(()=>{if(!playing)return;const id=gx.createImageData(W,H);
+  for(let i=0;i<id.data.length;i+=4){const v=Math.random()*255;id.data[i]=id.data[i+1]=id.data[i+2]=v;id.data[i+3]=255;}
+  gx.putImageData(id,0,0);},90);
+
+/* ---- the shot run ---- */
+function shot(b){
+  const el=$(b.shot);
+  el.style.transition=`transform ${b.dur}ms linear`;
+  el.style.transformOrigin=`${b.pan[0][0]*100}% ${b.pan[0][1]*100}%`;
+  el.style.transform=`scale(${b.zoom[0]})`;
+  requestAnimationFrame(()=>{requestAnimationFrame(()=>{
+    el.style.transform=`scale(${b.zoom[1]})`;
+    el.style.transformOrigin=`${b.pan[1][0]*100}% ${b.pan[1][1]*100}%`;
+  });});
+}
+async function play(){
+  if(playing)return;playing=true;
+  $('start').style.display='none';
+  document.body.classList.add('rolling');
+  audioInit();
+  await AC.resume();
+  const now=AC.currentTime;
+  swell(now,.55,3);
+  for(bi=0;bi<BEATS.length;bi++){
+    const b=BEATS[bi];seed(b);
+    shot(b);$(b.shot).classList.add('on');
+    if(bi===1){rumbleHit(AC.currentTime);swell(AC.currentTime,.8,1.2);}
+    if(bi===2){swell(AC.currentTime,.22,2.5);} // the drop to quiet
+    if(bi===3){swell(AC.currentTime,.34,2);}
+    setTimeout(()=>{$(b.card).classList.add('on');},2600);
+    setTimeout(()=>{$(b.card).classList.remove('on');},b.dur-1800);
+    await new Promise(r=>setTimeout(r,b.dur+GAP));
+    $(b.shot).classList.remove('on');
+  }
+  // threshold close
+  swell(AC.currentTime,.06,2.5);
+  $('end').style.display='flex';
+  playing=false;
+}
+$('start').addEventListener('click',play);
+</script>
+</body>
+</html>
