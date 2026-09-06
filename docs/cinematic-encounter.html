@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ENCOUNTER — THE LAST WARDEN</title>
+<style>
+  :root{--vi:#b09fff;--ghost:#cfc0ff;--gold:#e8c47a}
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:#000;overflow:hidden;font-family:Georgia,serif;color:var(--gold)}
+  #wrap{position:fixed;inset:0}
+  .shot{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease;background-size:cover;background-position:center;will-change:transform}
+  .shot.on{opacity:1}
+  /* letterbox */
+  .lbx{position:fixed;left:0;right:0;height:12%;background:#000;z-index:5}
+  .lbx.t{top:0}.lbx.b{bottom:0}
+  #vig{position:fixed;inset:0;z-index:4;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55) 100%)}
+  #grain{position:fixed;inset:-20px;z-index:3;pointer-events:none;opacity:.07}
+  #fog{position:fixed;inset:0;z-index:2;pointer-events:none;background:radial-gradient(ellipse 120% 60% at 50% 105%,rgba(176,159,255,.14),transparent 60%)}
+  #tremor{position:fixed;inset:0;z-index:2;pointer-events:none;opacity:0;background:radial-gradient(ellipse at 50% 70%,transparent 40%,rgba(176,159,255,.25) 100%);transition:opacity .5s}
+  /* text cards */
+  .card{position:fixed;left:0;right:0;text-align:center;z-index:6;opacity:0;transition:opacity 1.2s}
+  .card.on{opacity:1}
+  .c-top{top:16%;letter-spacing:6px;font-size:11px;color:#8f86b8}
+  .c-name{bottom:18%;letter-spacing:8px;font-size:clamp(18px,4vw,30px);color:var(--ghost);text-shadow:0 2px 26px rgba(0,0,0,.9)}
+  .c-epi{bottom:13.5%;letter-spacing:4px;font-size:11px;font-style:italic;color:#9a8fd0}
+  #go{position:fixed;inset:0;z-index:7;display:none;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:rgba(4,3,8,.88)}
+  #go.on{display:flex}
+  #go .gt{letter-spacing:5px;font-size:12px;color:#9a8fd0}
+  #go a{padding:14px 34px;border:1px solid #5a4a8a;border-radius:10px;color:var(--ghost);text-decoration:none;letter-spacing:4px;font-size:13px;background:rgba(20,16,40,.9)}
+  #go a:hover{background:#2c2248;border-color:var(--ghost)}
+  #go .hint{font-size:10px;letter-spacing:2px;color:#6e6380}
+  #replay{position:fixed;bottom:14%;left:0;right:0;text-align:center;z-index:7;display:none}
+  #replay.on{display:block}
+  #replay button{background:none;border:1px solid #443a68;border-radius:8px;color:#8f86b8;font-family:inherit;font-size:10px;letter-spacing:2px;padding:8px 16px;cursor:pointer}
+  .vtag{position:fixed;bottom:2px;right:10px;font-size:8px;letter-spacing:2px;color:#3a3450;z-index:8}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div class="shot" id="s1"></div>
+  <div class="shot" id="s2"></div>
+</div>
+<div id="fog"></div><div id="tremor"></div><div id="vig"></div>
+<canvas id="grain"></canvas>
+<div class="lbx t"></div><div class="lbx b"></div>
+<div class="card c-top" id="cTop">GLOAMBARROW — THE OSSUARY PLAIN</div>
+<div class="card c-name" id="cName">MORVAINE</div>
+<div class="card c-epi" id="cEpi">THE LAST WARDEN</div>
+<div id="go"><div class="gt">THE GATE STANDS. HOLD IT.</div>
+  <a id="playBtn" href="echo-duel.html?faction=Gloambarrow">ENTER THE DUEL</a>
+  <div class="hint">the cinematic ends where the gameplay begins — same god, same gate</div></div>
+<div id="replay"><button onclick="start()">↻ REPLAY ENCOUNTER</button></div>
+<div class="vtag">TYPE C — ENCOUNTER CINEMATIC · CPS v1</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const S1=$('s1'),S2=$('s2');
+S1.style.backgroundImage="url('encounter/OSSUARY-PLAIN.jpg')";
+S2.style.backgroundImage="url('encounter/MORVAINE-EMERGENCE.jpg')";
+let seq=[],t0=null;
+
+/* tremor grammar: shot 1 slow push + fog; shot 2 emergence tilt-reveal; shot 3 power beat crash-zoom */
+function ease(p){return p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2}
+function anim(dur,fn){seq.push({dur,fn})}
+function wait(ms){anim(ms,()=>{})}
+
+function start(){
+  $('go').classList.remove('on');$('replay').classList.remove('on');
+  ['cTop','cName','cEpi'].forEach(c=>$(c).classList.remove('on'));
+  S1.classList.add('on');S2.classList.remove('on');
+  let z1=1.02,z2=1.02,pan1=50,pan2=46,tilt2=88;
+  seq=[];
+  /* SHOT 1 — the silent plain (slow push, lateral drift, fog breathing) */
+  anim(5200,p=>{const e=ease(p);
+    z1=1.02+e*0.16;pan1=50-e*1.6;
+    S1.style.transform=`scale(${z1})`;S1.style.backgroundPosition=`${pan1}% 55%`;
+    $('fog').style.opacity=.7+.3*Math.sin(p*9);});
+  anim(1400,p=>{S1.style.opacity=1-p;S2.style.opacity=p;}); /* hard film cut */
+  /* SHOT 2 — emergence (tilt reveal base -> crown, ghost-light flicker) */
+  anim(5600,p=>{const e=ease(p);
+    z2=1.06+e*0.10;pan2=46-e*1.2;tilt2=88-e*13;
+    S2.style.transform=`scale(${z2})`;S2.style.backgroundPosition=`${pan2}% ${tilt2}%`;
+    $('tremor').style.opacity=.25+.55*Math.abs(Math.sin(p*22))*(p>.75?1-p:1);});
+  anim(900,p=>{$('cName').style.opacity=p;$('cEpi').style.opacity=p;});
+  /* SHOT 3 — power beat (crash zoom on the god, element pulse, shake) */
+  anim(1300,p=>{const e=ease(p);
+    const sh=p<1?Math.sin(p*60)*(1-p)*6:0;
+    z2=1.16+e*0.42;
+    S2.style.transform=`scale(${z2}) translate(${sh}px,${sh*.6}px)`;
+    $('tremor').style.opacity=.3+.5*(1-p)*Math.abs(Math.sin(p*30));});
+  wait(400);
+  anim(1200,p=>{const sh=Math.sin(p*70)*(1-p)*5;
+    S2.style.transform=`scale(1.58) translate(${sh}px,${sh*.6}px)`;
+    $('tremor').style.opacity=.5*(1-p);});
+  /* MATCH-CUT into gameplay — the doorway, not a poster */
+  anim(1500,p=>{$('go').style.opacity='';$('go').classList.toggle('on',p>.4)});
+  seq.push({dur:1,fn:()=>{$('replay').classList.add('on')}});
+  t0=performance.now();
+  requestAnimationFrame(tick);
+}
+function tick(now){
+  if(t0===null)return;
+  let t=now-t0;
+  while(seq.length&&t>seq[0].dur){t-=seq[0].dur;t0+=seq[0].dur;seq.shift();}
+  if(!seq.length)return;
+  const s=seq[0];s.fn(Math.min(1,t/s.dur));
+  requestAnimationFrame(tick);
+}
+/* film grain */
+const gc=$('grain'),gx=gc.getContext('2d');
+function grain(){gc.width=340;gc.height=240;const d=gx.createImageData(340,240);
+  for(let i=0;i<d.data.length;i+=4){const v=Math.random()*255;d.data[i]=d.data[i+1]=d.data[i+2]=v;d.data[i+3]=22}
+  gx.putImageData(d,0,0)}
+setInterval(grain,90);grain();
+/* start on tap anywhere too (mobile) */
+addEventListener('pointerdown',()=>{if(!$('go').classList.contains('on')&&seq.length)return;},{once:true});
+start();
+</script>
+</body>
+</html>
