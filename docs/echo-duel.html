@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>AVALON: THE WAKING GATES — THE ECHO DUEL (T3)</title>
+<style>
+  html,body{margin:0;padding:0;overflow:hidden;background:#0b0908;font-family:Georgia,serif;-webkit-user-select:none;user-select:none;touch-action:none;height:100%}
+  #hud{position:fixed;inset:0;pointer-events:none;z-index:5}
+  .bar-wrap{position:absolute;left:50%;transform:translateX(-50%);width:min(64vw,460px);text-align:center}
+  #echo-wrap{top:12px}
+  #hp-wrap{bottom:118px;left:16px;transform:none;width:min(42vw,240px);text-align:left}
+  #faith-wrap{bottom:92px;left:16px;transform:none;width:min(42vw,240px);text-align:left}
+  .lbl{font-size:10px;letter-spacing:2px;color:#e8c9a0;text-shadow:0 1px 3px #000;margin-bottom:3px}
+  .bar{height:10px;background:#1a1210;border:1px solid #5a3a26;border-radius:6px;overflow:hidden;position:relative}
+  .bar > div{height:100%;border-radius:6px;transition:width .2s}
+  #echo-bar > div{background:linear-gradient(90deg,#4a4a52,#8a8a94)}
+  #hp-bar > div{background:linear-gradient(90deg,#ff8c2e,#ffd27a)}
+  #faith-bar > div{background:linear-gradient(90deg,#7ad0ff,#cfefff)}
+  .tick{position:absolute;top:-2px;width:2px;height:14px;background:rgba(255,220,168,.5)}
+  #phase{position:absolute;top:8px;left:12px;color:#e8c9a0;font-size:13px;letter-spacing:2px;text-shadow:0 1px 3px #000}
+  #stage{position:absolute;top:8px;right:12px;color:#ff9b4d;font-size:12px;letter-spacing:2px;text-shadow:0 1px 3px #000}
+  #banner{position:absolute;top:34%;left:0;right:0;text-align:center;color:#ffdca8;font-size:clamp(20px,5.5vw,40px);letter-spacing:6px;text-shadow:0 2px 12px #000;opacity:0;transition:opacity .5s;font-style:italic;text-align:center}
+  #banner small{display:block;font-size:14px;letter-spacing:2px;color:#c9b090;margin-top:10px;font-style:normal}
+  .btn{position:fixed;border-radius:50%;border:2px solid rgba(232,201,160,.55);background:rgba(30,20,14,.55);color:#e8c9a0;font-size:11px;letter-spacing:1px;display:flex;align-items:center;justify-content:center;z-index:6;font-family:Georgia,serif}
+  #atk{right:20px;bottom:26px;width:76px;height:76px;border-color:rgba(255,150,60,.7)}
+  #skill{right:112px;bottom:58px;width:58px;height:58px}
+  #nameit{right:20px;bottom:118px;width:64px;height:64px;border-color:rgba(255,230,170,.9);background:rgba(60,40,18,.7);display:none;font-size:10px}
+  .cd{position:absolute;inset:0;border-radius:50%;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;visibility:hidden}
+  #stick{position:fixed;left:14px;bottom:22px;width:110px;height:110px;border-radius:50%;border:1px solid rgba(232,201,160,.25);background:rgba(20,14,10,.3);z-index:6;display:none}
+  #knob{position:absolute;width:44px;height:44px;border-radius:50%;background:rgba(232,201,160,.35);left:33px;top:33px}
+  #overlay{position:fixed;inset:0;background:rgba(8,5,4,.9);z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#e8c9a0;text-align:center;padding:24px}
+  #overlay h1{font-size:clamp(22px,6vw,40px);letter-spacing:8px;margin:0 0 6px;color:#ffdca8;font-style:italic;font-weight:normal}
+  #overlay p{font-size:13px;line-height:1.75;max-width:540px;margin:8px 0}
+  #overlay button{margin-top:16px;padding:12px 34px;font-family:Georgia,serif;font-size:15px;letter-spacing:3px;background:none;border:1px solid #c98a4b;color:#ffdca8;border-radius:4px;cursor:pointer}
+  #hud,#stick,.btn{display:none}
+  body.playing #hud{display:block}
+  body.playing .btn,body.playing #stick{display:flex}
+</style>
+</head>
+<body>
+<div id="hud">
+  <div id="phase">PHASE I — GOD VS GOD</div>
+  <div id="stage">THE MIRROR</div>
+  <div class="bar-wrap" id="echo-wrap"><div class="lbl">THE ECHO OF THE FORGOTTEN</div><div class="bar" id="echo-bar"><div style="width:100%"></div><div class="tick" style="left:66%"></div><div class="tick" style="left:33%"></div></div></div>
+  <div class="bar-wrap" id="hp-wrap"><div class="lbl">VESSEL INTEGRITY</div><div class="bar" id="hp-bar"><div style="width:100%"></div></div></div>
+  <div class="bar-wrap" id="faith-wrap"><div class="lbl">FAITH</div><div class="bar" id="faith-bar"><div style="width:50%"></div></div></div>
+  <div id="banner"></div>
+</div>
+<div id="stick"><div id="knob"></div></div>
+<button class="btn" id="atk">SWEEP</button>
+<button class="btn" id="skill">SURGE<div class="cd" id="skill-cd">6</div></button>
+<button class="btn" id="nameit">NAME IT</button>
+<div id="overlay">
+  <h1>THE ECHO DUEL</h1>
+  <p>At the Gate Rite's height, the Hollow answers the waking with its own god-shape: THE ECHO OF THE FORGOTTEN — a silhouette vaster than any giant, with no face, because no one ever recorded one. It fights as your DARK MIRROR: the same telegraphs you know, shed in reverse — where you shed element, it sheds absence.<br><br>
+  <b>I — GOD VS GOD (100&ndash;66%).</b> Fight as the woken god. Slow telegraphs both ways: read its reverse-shed, answer with the sweep.<br>
+  <b>II — THE DRAINED FIELD (66&ndash;33%).</b> Its shell cracks and the arena DE-COLORS: standing on drained ground saps the vessel. Fight from the ember islands.<br>
+  <b>III — THE WOUND (33&ndash;0%).</b> The god-fight and the climb are one encounter: the Echo splits, and YOU — the pilgrim, lantern in hand — cross inside the wound to strike the heart. Void-motes swarm; roll through them with the lantern raised.<br><br>
+  And at the heart: the endgame's one weapon. <i>To name a thing is to form it — and absence was all it had.</i></p>
+  <button id="start">BEGIN THE RITE</button>
+</div>
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script>
+(() => {
+const $ = id => document.getElementById(id);
+const W = () => innerWidth, H = () => innerHeight;
+const renderer = new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(W(), H());
+document.body.appendChild(renderer.domElement);
+
+const S = {
+  mode:'menu', echoHP:100, hp:100, faith:50,
+  surges:[], sheds:[], grayRings:[],
+  camShake:0, hitStop:0, time:0, sweep:null,
+  heartHits:0, naming:0, nameHold:0, invuln:0, invulnG:0, rollCD:0,
+};
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(58, W()/H(), 0.1, 400);
+
+function buildColossus(strataColor, fissureColor){
+  const g = new THREE.Group();
+  const strata = new THREE.MeshStandardMaterial({color:strataColor, roughness:1, flatShading:true});
+  const fis = new THREE.MeshBasicMaterial({color:fissureColor});
+  const torso = new THREE.Mesh(new THREE.CylinderGeometry(4.4, 6.0, 13, 7), strata); torso.position.y = 10; g.add(torso);
+  for (let i=0;i<4;i++){
+    const shelf = new THREE.Mesh(new THREE.CylinderGeometry(5.6-i*0.4, 6.6-i*0.4, 1.6, 7), strata);
+    shelf.position.y = 5.5+i*3; g.add(shelf);
+  }
+  for (let i=0;i<7;i++){
+    const f = new THREE.Mesh(new THREE.BoxGeometry(0.5, 2+Math.random()*3.5, 0.5), fis);
+    f.position.set((Math.random()-.5)*7, 4+Math.random()*11, 3.8); g.add(f);
+  }
+  const head = new THREE.Mesh(new THREE.DodecahedronGeometry(2.6, 0), strata); head.position.y = 18.4; g.add(head);
+  for (let i=0;i<6;i++){
+    const m = new THREE.Mesh(new THREE.ConeGeometry(0.9, 3.2, 4), strata);
+    const a = i/6*Math.PI*2; m.position.set(Math.cos(a)*3.4, 21.4, Math.sin(a)*3.4); g.add(m);
+  }
+  const armGeo = new THREE.CylinderGeometry(1.7, 2.3, 11, 6);
+  const aL = new THREE.Mesh(armGeo, strata); aL.position.set(-7.4, 11, 0); aL.rotation.z = 0.5; g.add(aL);
+  const aR = new THREE.Mesh(armGeo, strata); aR.position.set(7.4, 11, 0); aR.rotation.z = -0.5; g.add(aR);
+  const handL = new THREE.Mesh(new THREE.DodecahedronGeometry(2.2, 0), strata); handL.position.set(-10.4, 5.6, 0); g.add(handL);
+  const handR = handL.clone(); handR.position.x = 10.4; g.add(handR);
+  const skirt = new THREE.Mesh(new THREE.CylinderGeometry(7.5, 12, 5, 8), strata); skirt.position.y = 0.6; g.add(skirt);
+  g.userData.armR = aR; g.userData.torso = torso;
+  return g;
+}
+
+function buildArena(){
+  scene.background = new THREE.Color(0x1c1410);
+  scene.fog = new THREE.FogExp2(0x1c1410, 0.011);
+  scene.add(new THREE.AmbientLight(0xa89880, 2.4));
+  const moon = new THREE.DirectionalLight(0xbac4e8, 1.1); moon.position.set(-30,60,20); scene.add(moon);
+  S.emberLight = new THREE.PointLight(0xff7a2e, 5.0, 130, 1.5); S.emberLight.position.set(0, 18, 0); scene.add(S.emberLight);
+  const ground = new THREE.Mesh(new THREE.CircleGeometry(60, 48), new THREE.MeshStandardMaterial({color:0x54402e, roughness:1}));
+  ground.rotation.x = -Math.PI/2; scene.add(ground);
+  const arch = new THREE.MeshStandardMaterial({color:0x6b6258, roughness:1, flatShading:true});
+  const gate = new THREE.Group();
+  const l = new THREE.Mesh(new THREE.BoxGeometry(3.2, 16, 3.2), arch); l.position.set(-6, 8, 0); gate.add(l);
+  const r = l.clone(); r.position.x = 6; gate.add(r);
+  const lintel = new THREE.Mesh(new THREE.BoxGeometry(16.5, 3.4, 3.4), arch); lintel.position.y = 16.5; gate.add(lintel);
+  gate.position.set(0, 0, -34); scene.add(gate);
+  for (let i=0;i<18;i++){
+    const h = 3+Math.random()*9;
+    const sp = new THREE.Mesh(new THREE.ConeGeometry(1+Math.random()*1.8, h, 5), new THREE.MeshStandardMaterial({color:0x54453a, roughness:1, flatShading:true}));
+    const a = Math.random()*Math.PI*2, d = 30+Math.random()*22;
+    sp.position.set(Math.cos(a)*d, h/2, Math.sin(a)*d); scene.add(sp);
+  }
+  S.player = buildColossus(0xc98a4b, 0xff7a2e);
+  S.player.position.set(0, 0, 20); scene.add(S.player);
+  S.echo = buildColossus(0x2e2e34, 0x0a0a0e);
+  S.echo.position.set(0, 0, -18); scene.add(S.echo);
+}
+
+function buildWound(){
+  S.woundScene = new THREE.Scene();
+  S.woundScene.background = new THREE.Color(0x070608);
+  S.woundScene.fog = new THREE.FogExp2(0x070608, 0.05);
+  S.woundScene.add(new THREE.AmbientLight(0x404048, 0.7));
+  const wallMat = new THREE.MeshStandardMaterial({color:0x242430, roughness:1, flatShading:true});
+  for (let i=0;i<26;i++){
+    const h = 6+Math.random()*10;
+    const w = new THREE.Mesh(new THREE.BoxGeometry(3+Math.random()*5, h, 3+Math.random()*5), wallMat);
+    const side = i%2? 1 : -1;
+    w.position.set(side*(7+Math.random()*4), h/2-2, -i*9+20); w.rotation.y = Math.random(); S.woundScene.add(w);
+  }
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(40, 320), new THREE.MeshStandardMaterial({color:0x15151c, roughness:1}));
+  floor.rotation.x = -Math.PI/2; S.woundScene.add(floor);
+  S.heart = new THREE.Mesh(new THREE.IcosahedronGeometry(2.4, 1), new THREE.MeshStandardMaterial({color:0x1a1a22, roughness:1, flatShading:true}));
+  S.heart.position.set(0, 4, -210); S.woundScene.add(S.heart);
+  const pil = new THREE.Group();
+  const bodyMat = new THREE.MeshStandardMaterial({color:0x7a6a54, roughness:1, flatShading:true});
+  const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.8, 2.4, 4, 8), bodyMat);
+  body.position.y = 2.2; pil.add(body);
+  const hood = new THREE.Mesh(new THREE.ConeGeometry(1.05, 1.5, 7), bodyMat); hood.position.y = 4.1; pil.add(hood);
+  const lantern = new THREE.PointLight(0xffb35c, 3.2, 26, 1.6); lantern.position.set(1.3, 3.4, 0.8); pil.add(lantern);
+  const lampBox = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.7, 0.5), new THREE.MeshStandardMaterial({color:0x8a6a3a, emissive:0xff9a3c, emissiveIntensity:0.8}));
+  lampBox.position.set(1.3, 3.4, 0.8); pil.add(lampBox);
+  const oath = new THREE.Mesh(new THREE.BoxGeometry(0.16, 2.6, 0.5), new THREE.MeshStandardMaterial({color:0x9a9aa8, roughness:0.5, metalness:0.4}));
+  oath.position.set(-0.9, 2.6, 0.6); oath.rotation.z = 0.35; pil.add(oath);
+  pil.position.set(0, 0, 14); S.woundScene.add(pil);
+  S.pilgrim = pil; S.pLantern = lantern;
+  S.motes = [];
+  const moteGeo = new THREE.SphereGeometry(0.55, 6, 5);
+  const moteMat = new THREE.MeshBasicMaterial({color:0x050507});
+  for (let i=0;i<14;i++){
+    const m = new THREE.Mesh(moteGeo, moteMat);
+    m.position.set((Math.random()-.5)*10, 2+Math.random()*3, -Math.random()*190);
+    S.woundScene.add(m); S.motes.push(m);
+  }
+  S.woundCam = new THREE.PerspectiveCamera(62, W()/H(), 0.1, 200);
+}
+
+// input
+const stick = $('stick'), knob = $('knob');
+let stickVec = {x:0, y:0}, tStart = null;
+const tpos = e => { const t = e.touches ? e.touches[0] : e; return {x:t.clientX, y:t.clientY}; };
+stick.addEventListener('touchstart', e=>{ tStart=tpos(e); e.preventDefault(); }, {passive:false});
+stick.addEventListener('touchmove', e=>{
+  const p = tpos(e); let dx = p.x-tStart.x, dy = p.y-tStart.y;
+  const d = Math.min(1, Math.hypot(dx,dy)/55) || 0, a = Math.atan2(dy,dx);
+  stickVec = {x:Math.cos(a)*d, y:Math.sin(a)*d};
+  knob.style.left = 33+Math.cos(a)*d*36+'px'; knob.style.top = 33+Math.sin(a)*d*36+'px'; e.preventDefault();
+}, {passive:false});
+stick.addEventListener('touchend', ()=>{ stickVec={x:0,y:0}; knob.style.left='33px'; knob.style.top='33px'; });
+addEventListener('keydown', e=>{ if(e.key==='a'||e.key==='A') doAttack(); if(e.key===' '||e.key==='s'||e.key==='S') doSkill(); if(e.key==='Shift') doRoll(); });
+$('atk').addEventListener('touchstart', e=>{ doAttack(); e.preventDefault(); }, {passive:false});
+$('atk').addEventListener('mousedown', doAttack);
+$('skill').addEventListener('touchstart', e=>{ doSkill(); e.preventDefault(); }, {passive:false});
+$('skill').addEventListener('mousedown', doSkill);
+$('nameit').addEventListener('touchstart', e=>{ S.nameHold = 0.4; e.preventDefault(); }, {passive:false});
+$('nameit').addEventListener('mousedown', ()=>{ S.nameHold = 0.4; });
+
+let atkCD = 0, skillCD = 0;
+function doAttack(){
+  if (S.mode==='giant' && atkCD<=0){
+    atkCD = 0.9; S.sweep = {t:0};
+    const toE = S.echo.position.clone().sub(S.player.position); const d = toE.length();
+    if (d < 26){
+      const fw = new THREE.Vector3(0,0,-1).applyQuaternion(S.player.quaternion);
+      if (fw.dot(toE.clone().setY(0).normalize()) > 0.45){ dmgEcho(4.2); S.hitStop = 0.09; S.camShake = 0.5; }
+    }
+  } else if (S.mode==='wound' && atkCD<=0){
+    atkCD = 0.45;
+    const dh = S.heart.position.distanceTo(S.pilgrim.position);
+    if (dh < 9){ S.heartHits++; S.hitStop = 0.1; S.camShake = 0.8; heartShock();
+      if (S.heartHits>=3 && S.heartHits<90){ S.heartHits=90; $('nameit').style.display='flex'; banner('THE HEART LIES BARE','hold NAME IT — to name a thing is to form it'); }
+    } else {
+      for (const m of S.motes){ if (m.visible && m.position.distanceTo(S.pilgrim.position) < 4.5){ m.visible=false; } }
+    }
+  }
+}
+function doSkill(){
+  if (S.mode==='giant' && skillCD<=0 && S.faith>=15){
+    skillCD = 3.2; S.faith -= 15;
+    const dir = S.echo.position.clone().sub(S.player.position).setY(0).normalize();
+    const surge = new THREE.Mesh(new THREE.SphereGeometry(1.7, 8, 6), new THREE.MeshBasicMaterial({color:0xff8c2e}));
+    surge.position.copy(S.player.position).add(new THREE.Vector3(0, 12, 0));
+    scene.add(surge); S.surges.push({m:surge, v:dir.multiplyScalar(38), life:2.4});
+  } else if (S.mode==='wound'){ doRoll(); }
+}
+function doRoll(){ if (S.mode==='wound' && S.rollCD<=0){ S.rollCD = 1.1; S.invuln = 0.45; } }
+
+// echo behavior
+let echoState = {act:'idle', t:0, next: 1.2};
+function dmgEcho(d){
+  if (S.echoHP<=0) return;
+  S.echoHP = Math.max(0, S.echoHP - d);
+  $('echo-bar').firstElementChild.style.width = S.echoHP+'%';
+  if (S.echoHP<=66 && !S.inP2) enterPhase2();
+  if (S.echoHP<=33) enterPhase3();
+}
+function echoAct(dt){
+  S.echo.lookAt(S.player.position.x, 0, S.player.position.z);
+  const e = echoState; e.t += dt;
+  const speed = S.echoHP<66 ? 1.35 : 1;
+  if (e.act==='idle' && e.t > e.next){
+    const r = Math.random();
+    e.act = r<0.5 ? 'shed' : 'slam'; e.t = 0; e.next = (S.echoHP<33 ? 1.6 : 2.4)/speed;
+    if (e.act==='shed'){
+      const tg = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.6, 40), new THREE.MeshBasicMaterial({color:0x1a1a20, transparent:true, opacity:0.6}));
+      tg.position.copy(S.echo.position).add(new THREE.Vector3(0, 12, 0));
+      tg.lookAt(S.player.position.x, 12, S.player.position.z); scene.add(tg);
+      S.telegraph = {m:tg, t:1.1};
+    } else {
+      const ring = new THREE.Mesh(new THREE.RingGeometry(5.2, 5.6, 40), new THREE.MeshBasicMaterial({color:0x2a2a34, side:THREE.DoubleSide, transparent:true, opacity:0.75}));
+      ring.rotation.x = -Math.PI/2; ring.position.set(S.player.position.x, 0.15, S.player.position.z);
+      scene.add(ring); S.telegraph = {m:ring, t:1.5, slam:true};
+    }
+  }
+  if (S.telegraph){
+    S.telegraph.t -= dt;
+    if (S.telegraph.t <= 0){
+      if (S.telegraph.slam){
+        const p = S.telegraph.m.position;
+        if (S.player.position.distanceTo(new THREE.Vector3(p.x,0,p.z)) < 6.4) hurtPlayer(16);
+        S.camShake = 1.0;
+        scene.remove(S.telegraph.m);
+      } else {
+        const dir = S.player.position.clone().sub(S.echo.position).setY(0).normalize();
+        for (let i=0;i<3;i++){
+          const s = new THREE.Mesh(new THREE.SphereGeometry(1.4, 7, 5), new THREE.MeshBasicMaterial({color:0x0a0a0e}));
+          s.position.copy(S.echo.position).add(new THREE.Vector3(0, 12, 0)).addScaledVector(dir, i*3);
+          scene.add(s); S.sheds.push({m:s, v:dir.clone().multiplyScalar(30), life:2.2});
+        }
+        scene.remove(S.telegraph.m);
+      }
+      S.telegraph = null; e.act='idle'; e.t=0;
+    }
+  }
+  const toP = S.player.position.clone().sub(S.echo.position).setY(0);
+  if (toP.length() > 22) S.echo.position.add(toP.normalize().multiplyScalar(2.2*dt*speed));
+}
+function hurtPlayer(d){
+  if (S.mode!=='giant' || S.invulnG>0) return;
+  S.hp = Math.max(0, S.hp - d); $('hp-bar').firstElementChild.style.width = S.hp+'%';
+  S.camShake = 0.9; S.invulnG = 0.5;
+  if (S.hp<=0) lose();
+}
+
+// phases
+function enterPhase2(){
+  S.inP2 = true;
+  banner('THE SHELL CRACKS','the arena drains — fight from the ember islands');
+  $('phase').textContent = 'PHASE II — THE DRAINED FIELD'; $('stage').textContent = 'DE-COLORATION';
+  S.camShake = 1.6; S.emberLight.intensity = 2.2;
+  S.grayRings.push({r:0, speed:2.4});
+  scene.traverse(o=>{ if (o.geometry && o.geometry.type==='CircleGeometry'){ o.material.color.setHex(0x3a3a40); } });
+}
+function enterPhase3(){
+  if (S.mode!=='giant') return;
+  S.mode = 'transition';
+  banner('THE WOUND OPENS','the god-fight and the climb are one encounter');
+  $('phase').textContent = 'PHASE III — THE WOUND'; $('stage').textContent = 'PILGRIM SCALE';
+  S.camShake = 2.2;
+  setTimeout(()=>{
+    if (!S.woundScene) buildWound();
+    S.mode='wound';
+    $('atk').textContent='STRIKE'; $('skill').textContent='ROLL';
+    $('hp-wrap').style.display='none'; $('faith-wrap').style.display='none';
+    S.hp=100;
+    banner('INSIDE THE ABSENCE','lantern up — roll through the motes — reach the heart');
+  }, 1800);
+}
+function heartShock(){
+  S.heart.material.emissive.setHex(0x883333); S.heart.material.emissiveIntensity = 1.2;
+  setTimeout(()=>{ S.heart.material.emissiveIntensity = 0; }, 240);
+  let spawned = 0;
+  for (const m of S.motes){ if (!m.visible && spawned<3){ m.visible=true; m.position.set((Math.random()-.5)*9, 2+Math.random()*3, S.pilgrim.position.z-8-Math.random()*10); spawned++; } }
+}
+function isInDrainedZone(p){
+  if (!S.inP2 || !S.grayRings.length) return false;
+  const d = Math.hypot(p.x - S.echo.position.x, p.z - S.echo.position.z);
+  const maxR = Math.max(...S.grayRings.map(g=>g.r));
+  return d < maxR - 1.5;
+}
+function win(){
+  S.mode='won';
+  document.body.classList.remove('playing');
+  const ov = $('overlay'); ov.style.display='flex';
+  ov.innerHTML = '<h1>THE FORGOTTEN, NAMED</h1><p>The absence takes form — and absence was all it had. The silhouette un-hollows from the name outward, a shape at last, dissolving to light.<br><br><i>A man\'s armor outlasted the man. A name outlasted the god.</i></p><button onclick="location.reload()">RUN THE RITE AGAIN</button>';
+}
+function lose(){
+  if (S.mode==='lost'||S.mode==='won') return;
+  S.mode='lost';
+  document.body.classList.remove('playing');
+  const ov = $('overlay'); ov.style.display='flex';
+  ov.innerHTML = '<h1>THE VESSEL FAILS</h1><p>The Echo cannot cross a Gate while a Gate stands — but it can wait. It always could.<br><br>The Rite can be run again.</p><button onclick="location.reload()">RUN THE RITE AGAIN</button>';
+}
+let bannerTO = null;
+function banner(t, sub){
+  const b = $('banner');
+  b.innerHTML = t + (sub?'<small>'+sub+'</small>':'');
+  b.style.opacity = 1;
+  if (bannerTO) clearTimeout(bannerTO);
+  bannerTO = setTimeout(()=>{ b.style.opacity = 0; }, 2800);
+}
+
+// loop
+let last = performance.now();
+function loop(now){
+  requestAnimationFrame(loop);
+  let dt = Math.min(0.05, (now-last)/1000); last = now;
+  if (S.hitStop>0){ S.hitStop-=dt; dt *= 0.15; }
+  S.time += dt;
+  atkCD -= dt; skillCD -= dt; S.invulnG -= dt; S.nameHold -= dt;
+  if (skillCD>0) { $('skill-cd').style.visibility='visible'; $('skill-cd').textContent = Math.ceil(skillCD); } else $('skill-cd').style.visibility='hidden';
+
+  if (S.mode==='giant' || S.mode==='transition'){
+    if (S.mode==='giant'){
+      const v = new THREE.Vector3(stickVec.x, 0, stickVec.y).multiplyScalar(9*dt);
+      if (v.lengthSq()>0.0001){
+        S.player.position.add(v);
+        S.player.lookAt(S.player.position.x+stickVec.x, 0, S.player.position.z+stickVec.y);
+      }
+      if (S.player.position.length()>52) S.player.position.setLength(52);
+      const drained = isInDrainedZone(S.player.position);
+      S.faith = Math.min(100, S.faith + dt*(drained?2:7));
+      $('faith-bar').firstElementChild.style.width = S.faith+'%';
+      if (drained){ S.hp -= dt*2.2; $('hp-bar').firstElementChild.style.width = Math.max(0,S.hp)+'%'; if (S.hp<=0) lose(); }
+      if (S.sweep){
+        S.sweep.t += dt; const t=S.sweep.t/0.45;
+        if (t<1){ S.player.userData.armR.rotation.x = -Math.sin(t*Math.PI)*1.9; } else { S.player.userData.armR.rotation.x = 0; S.sweep=null; }
+      }
+      echoAct(dt);
+      S.player.userData.torso.scale.y = 1 + Math.sin(S.time*0.9)*0.01;
+    }
+    for (let i=S.surges.length-1;i>=0;i--){
+      const s = S.surges[i]; s.life-=dt;
+      s.m.position.addScaledVector(s.v, dt);
+      if (s.m.position.distanceTo(S.echo.position.clone().add(new THREE.Vector3(0,12,0))) < 7){ dmgEcho(7.5); S.camShake=0.7; scene.remove(s.m); S.surges.splice(i,1); continue; }
+      if (s.life<=0){ scene.remove(s.m); S.surges.splice(i,1); }
+    }
+    for (let i=S.sheds.length-1;i>=0;i--){
+      const s = S.sheds[i]; s.life-=dt;
+      s.m.position.addScaledVector(s.v, dt);
+      if (s.m.position.distanceTo(S.player.position.clone().add(new THREE.Vector3(0,12,0))) < 6.5){ hurtPlayer(13); scene.remove(s.m); S.sheds.splice(i,1); continue; }
+      if (s.life<=0){ scene.remove(s.m); S.sheds.splice(i,1); }
+    }
+    for (const g of S.grayRings){
+      g.r += g.speed*dt;
+      if (!g.m){
+        const r = new THREE.Mesh(new THREE.RingGeometry(Math.max(0.1,g.r), g.r+1.4, 64), new THREE.MeshBasicMaterial({color:0x2e2e36, side:THREE.DoubleSide, transparent:true, opacity:0.35}));
+        r.rotation.x = -Math.PI/2; r.position.y = 0.12; scene.add(r); g.m = r;
+      } else { g.m.geometry.dispose(); g.m.geometry = new THREE.RingGeometry(Math.max(0.1,g.r), g.r+1.4, 64); }
+    }
+    const p = S.player.position;
+    const back = new THREE.Vector3(0,0,1).applyQuaternion(S.player.quaternion);
+    camera.position.lerp(new THREE.Vector3(p.x + back.x*26, 17, p.z + back.z*26), 0.08);
+    camera.lookAt(p.x, 12, p.z-6);
+    if (S.camShake>0){ S.camShake-=dt*2; camera.position.x += (Math.random()-.5)*S.camShake; camera.position.y += (Math.random()-.5)*S.camShake*0.6; }
+    renderer.render(scene, camera);
+  }
+  else if (S.mode==='wound'){
+    const v = new THREE.Vector3(stickVec.x, 0, stickVec.y).multiplyScalar((S.invuln>0? 16:8)*dt);
+    S.pilgrim.position.add(v);
+    S.pilgrim.position.x = THREE.MathUtils.clamp(S.pilgrim.position.x, -9, 9);
+    S.pilgrim.position.z = Math.max(-204, S.pilgrim.position.z);
+    if (v.lengthSq()>0.0001) S.pilgrim.rotation.y = Math.atan2(stickVec.x, stickVec.y);
+    S.invuln -= dt; S.rollCD -= dt;
+    $('skill-cd').style.visibility = S.rollCD>0 ? 'visible' : 'hidden'; if (S.rollCD>0) $('skill-cd').textContent = Math.ceil(S.rollCD);
+    S.pilgrim.position.y = S.invuln>0 ? Math.abs(Math.sin(S.time*20))*0.7 : 0;
+    for (const m of S.motes){
+      if (!m.visible) continue;
+      const to = S.pilgrim.position.clone().setY(m.position.y).sub(m.position);
+      if (to.length()<14) m.position.add(to.normalize().multiplyScalar(3.4*dt));
+      if (m.position.distanceTo(S.pilgrim.position.clone().setY(m.position.y)) < 1.6 && S.invuln<=0){
+        S.hp -= 10; $('hp-bar').firstElementChild.style.width = Math.max(0,S.hp)+'%'; S.camShake=0.5;
+        m.position.z = S.pilgrim.position.z - 14 - Math.random()*10;
+        if (S.hp<=0) lose();
+      }
+    }
+    // heart strikes then the naming
+    if (S.heartHits>=90){
+      if (S.nameHold>0){ S.naming += dt; S.nameHold = 0;
+        S.pLantern.intensity = 3.2 + S.naming*3; S.heart.material.emissive.setHex(0xffd27a); S.heart.material.emissiveIntensity = S.naming*0.6;
+        if (S.naming > 2.4) win();
+      } else { S.naming = Math.max(0, S.naming - dt*2); S.pLantern.intensity = 3.2; S.heart.material.emissiveIntensity = S.naming*0.3; }
+    }
+    S.heart.rotation.y += dt*0.6;
+    const pp = S.pilgrim.position;
+    S.woundCam.aspect = W()/H(); S.woundCam.updateProjectionMatrix();
+    S.woundCam.position.lerp(new THREE.Vector3(pp.x, 6.2, pp.z+11), 0.14);
+    S.woundCam.lookAt(pp.x, 3.4, pp.z-6);
+    if (S.camShake>0){ S.camShake-=dt*2; S.woundCam.position.x += (Math.random()-.5)*S.camShake; }
+    renderer.render(S.woundScene, S.woundCam);
+  }
+  else { renderer.render(scene, camera); }
+}
+
+$('start').addEventListener('click', ()=>{
+  $('overlay').style.display='none';
+  document.body.classList.add('playing');
+  S.mode='giant';
+  banner('IT ANSWERS THE WAKING','your dark mirror — read the reverse-shed');
+});
+
+buildArena();
+addEventListener('resize', ()=>{ renderer.setSize(W(),H()); camera.aspect=W()/H(); camera.updateProjectionMatrix(); });
+requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
