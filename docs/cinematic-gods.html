@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AVALON — THE SLEEPING GODS</title>
+<style>
+  html,body{margin:0;height:100%;background:#000;overflow:hidden;font-family:Georgia,serif}
+  .shot{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 2s ease;will-change:transform}
+  .shot.on{opacity:1}
+  .bar{position:fixed;left:0;right:0;height:11%;background:#000;z-index:5;transform:translateY(-110%);transition:transform 1.4s ease}
+  #barB{bottom:0;top:auto;transform:translateY(110%)}
+  body.rolling .bar{transform:translateY(0)}
+  #fx{position:fixed;inset:0;z-index:3;pointer-events:none}
+  #grain{position:fixed;inset:0;z-index:4;pointer-events:none;opacity:.05}
+  #vig{position:fixed;inset:0;z-index:4;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55) 100%)}
+  .card{position:fixed;left:0;right:0;bottom:16%;text-align:center;z-index:6;color:#e8d9b0;
+    font-size:clamp(13px,2.2vw,17px);letter-spacing:4px;font-style:italic;opacity:0;transition:opacity 1.6s ease;text-shadow:0 2px 14px #000}
+  .card.on{opacity:.92}
+  #title{position:fixed;inset:0;z-index:8;background:#000;display:none;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+  #title.on{display:flex}
+  #title img{width:72px;opacity:.92}
+  #title .t{color:#e8c47a;letter-spacing:9px;font-size:clamp(18px,4vw,26px)}
+  #title .s{color:#8a7a5f;letter-spacing:4px;font-size:11px;font-style:italic;margin-top:2px}
+  #title .q{color:#6e6350;letter-spacing:3px;font-size:10px;font-style:italic;margin:14px 0 4px}
+  #title a{color:#9a8b6f;font-size:11px;letter-spacing:3px;text-decoration:none;border:1px solid #3a3128;border-radius:8px;padding:10px 22px}
+  #start{position:fixed;inset:0;z-index:10;background:#050403;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;cursor:pointer}
+  #start img{width:70px}
+  #start .t{color:#e8c47a;letter-spacing:6px;font-size:15px}
+  #start .s{color:#6e6350;letter-spacing:3px;font-size:10px;font-style:italic}
+  #start .go{color:#9a8b6f;letter-spacing:4px;font-size:11px;border:1px solid #5a4526;border-radius:8px;padding:10px 26px;margin-top:8px}
+  #tag{position:fixed;top:12.5%;right:14px;z-index:6;color:rgba(232,196,122,.38);font-size:9px;letter-spacing:3px;opacity:0;transition:opacity 2s}
+  body.rolling #tag{opacity:1}
+</style>
+</head>
+<body>
+<div id="film" style="position:fixed;inset:0">
+  <div class="shot" id="s1" style="background-image:url('cinematic-gods/01-HEARTLAND-DAWN.jpg')"></div>
+  <div class="shot" id="s2" style="background-image:url('cinematic-gods/02-KILN-ROAD.jpg')"></div>
+  <div class="shot" id="s3" style="background-image:url('cinematic-gods/03-WARM-STONE.jpg')"></div>
+  <div class="shot" id="s4" style="background-image:url('cinematic-gods/04-LANTERN-RITE.jpg')"></div>
+  <div class="shot" id="s5" style="background-image:url('cinematic-gods/05-THE-LAND-REVEALED.jpg')"></div>
+  <div class="shot" id="s6" style="background-image:url('cinematic-gods/06-THE-GOD-RISES.jpg')"></div>
+  <div class="shot" id="s7" style="background-image:url('cinematic-gods/07-THE-PILGRIM-LOOKS-UP.jpg')"></div>
+  <div class="shot" id="s8" style="background-image:url('cinematic-gods/08-SOMETHING-ELSE.jpg')"></div>
+  <div class="shot" id="s9" style="background-image:url('cinematic-gods/09-THE-MARK-IGNITES.jpg')"></div>
+  <div class="shot" id="s10" style="background-image:url('cinematic-gods/10-THE-EYE.jpg')"></div>
+</div>
+<canvas id="fx"></canvas><div id="vig"></div><canvas id="grain"></canvas>
+<div id="barT" class="bar"></div><div id="barB" class="bar"></div>
+<div id="tag">TYPE A · WORLD CINEMATIC · ASHFALL</div>
+<div class="card" id="c3">The stones were warm.</div>
+<div class="card" id="c5">The land was never land.</div>
+<div id="title"><img src="cinematic-gods/RUNE.png">
+  <div class="t">THE WAKING GATES</div>
+  <div class="s">they were never mountains. they were waiting.</div>
+  <div class="q">the gates remember who woke them</div><a href="index.html">← RETURN TO THE GATES</a></div>
+<div id="start"><img src="cinematic-gods/RUNE.png">
+  <div class="t">AVALON</div><div class="s">THE SLEEPING GODS — a world cinematic</div>
+  <div class="go">▶ BEGIN</div><div class="s" style="letter-spacing:1px">(sound on · story in ten frames)</div></div>
+
+<script>
+/* CINEMATIC PRODUCTION SYSTEM — THE SLEEPING GODS
+   Beat grammar: establish -> journey -> discovery -> QUIET -> revelation -> SPECTACLE -> QUIET -> TENSION -> threshold -> CLOSE */
+const BEATS=[
+ {s:'s1',d:9000,z:[1.02,1.14],p:[[.5,.5],[.44,.55]],em:'#ffb36b',n:16,dr:.08,amp:.4,vol:.35},
+ {s:'s2',d:7000,z:[1.10,1.12],p:[[.42,.5],[.60,.5]],em:'#d9a86a',n:10,dr:.05,amp:.3,vol:.32},
+ {s:'s3',d:8000,card:'c3',z:[1.05,1.22],p:[[.5,.45],[.5,.62]],em:'#ffcf8a',n:14,dr:.10,amp:.5,vol:.40},
+ {s:'s4',d:10000,z:[1.06,1.09],p:[[.5,.5],[.52,.48]],em:'#ffb36b',n:6,dr:.03,amp:.2,vol:.18},
+ {s:'s5',d:11000,card:'c5',z:[1.18,1.01],p:[[.44,.56],[.5,.42]],em:'#ffb36b',n:8,dr:.05,amp:.3,vol:.30},
+ {s:'s6',d:8000,z:[1.16,1.04],p:[[.5,.44],[.5,.56]],em:'#ffd28a',n:110,dr:.9,amp:2.2,vol:.85},
+ {s:'s7',d:8000,z:[1.08,1.11],p:[[.5,.5],[.5,.48]],em:'#d9a86a',n:10,dr:.05,amp:.3,vol:.20},
+ {s:'s8',d:7000,z:[1.04,1.10],p:[[.5,.5],[.47,.52]],em:'#a97fff',n:8,dr:.03,amp:.2,vol:.26},
+ {s:'s9',d:5000,z:[1.10,1.34],p:[[.5,.55],[.5,.58]],em:'#ffcf8a',n:60,dr:.7,amp:1.6,vol:.60},
+ {s:'s10',d:6000,z:[1.02,1.30],p:[[.5,.5],[.5,.47]],em:'#ffd28a',n:24,dr:.25,amp:.8,vol:.50,fadeBlack:true},
+];
+const GAP=2000;let bi=0,playing=false;
+const $=id=>document.getElementById(id);
+
+/* audio: pad + swell per beat + rumble at the rise */
+let AC,master,rumble;
+function audioInit(){
+  AC=new (window.AudioContext||window.webkitAudioContext)();
+  master=AC.createGain();master.gain.value=0;master.connect(AC.destination);
+  [55,55.7,110.3,164.8].forEach(f=>{const o=AC.createOscillator();o.type='sine';o.frequency.value=f;
+    const g=AC.createGain();g.gain.value=.4;o.connect(g);g.connect(master);o.start();});
+  const buf=AC.createBuffer(1,AC.sampleRate*2,AC.sampleRate),d=buf.getChannelData(0);
+  for(let i=0;i<d.length;i++)d[i]=Math.random()*2-1;
+  const src=AC.createBufferSource();src.buffer=buf;src.loop=true;
+  const f=AC.createBiquadFilter();f.type='lowpass';f.frequency.value=90;
+  rumble=AC.createGain();rumble.gain.value=0;src.connect(f);f.connect(rumble);rumble.connect(master);src.start();
+}
+function toVol(v,ms){const t=AC.currentTime;master.gain.cancelScheduledValues(t);
+  master.gain.setValueAtTime(master.gain.value,t);master.gain.linearRampToValueAtTime(v,t+ms/1000);}
+
+/* embers */
+const cv=$('fx'),ctx=cv.getContext('2d');let P=[],W,H;
+function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight}addEventListener('resize',rs);rs();
+function seed(b){P=[];for(let i=0;i<b.n;i++)P.push({x:Math.random()*W,y:Math.random()*H,
+  r:Math.random()*1.6+.3,s:Math.random()*(b.dr*.6)+b.dr*.25+.02,a:Math.random()*.5+.1,w:Math.random()*6.28})}
+(function tick(){ctx.clearRect(0,0,W,H);const cur=BEATS[bi];
+  if(playing&&cur){ctx.fillStyle=cur.em;P.forEach(p=>{p.y-=p.s;p.w+=.02;p.x+=Math.sin(p.w)*cur.amp*.3;
+    if(p.y<-6){p.y=H+6;p.x=Math.random()*W}
+    ctx.globalAlpha=p.a*(.55+.45*Math.sin(p.w*1.7));
+    ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.28);ctx.fill()});ctx.globalAlpha=1}
+  requestAnimationFrame(tick)})();
+
+/* grain */
+const gcv=$('grain'),gx=gcv.getContext('2d');
+function grs(){gcv.width=innerWidth;gcv.height=innerHeight}addEventListener('resize',grs);grs();
+setInterval(()=>{if(!playing)return;const id=gx.createImageData(W,H);
+  for(let i=0;i<id.data.length;i+=4){const v=Math.random()*255;id.data[i]=id.data[i+1]=id.data[i+2]=v;id.data[i+3]=255}
+  gx.putImageData(id,0,0)},90);
+
+/* shot run */
+function shot(b){const el=$(b.s);
+  el.style.transition=`transform ${b.d}ms linear, opacity 2s ease`;
+  el.style.transformOrigin=`${b.p[0][0]*100}% ${b.p[0][1]*100}%`;
+  el.style.transform=`scale(${b.z[0]})`;
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    el.style.transform=`scale(${b.z[1]})`;
+    el.style.transformOrigin=`${b.p[1][0]*100}% ${b.p[1][1]*100}%`;}));
+}
+async function play(){
+  if(playing)return;playing=true;
+  $('start').style.display='none';document.body.classList.add('rolling');
+  audioInit();await AC.resume();
+  for(bi=0;bi<BEATS.length;bi++){
+    const b=BEATS[bi];seed(b);
+    shot(b);$(b.s).classList.add('on');
+    toVol(b.vol,1800);
+    if(b.s==='s6'){const t=AC.currentTime;rumble.gain.setValueAtTime(0,t);
+      rumble.gain.linearRampToValueAtTime(.9,t+.5);rumble.gain.exponentialRampToValueAtTime(.1,t+4)}
+    if(b.card)setTimeout(()=>$(b.card).classList.add('on'),2400);
+    if(b.fadeBlack)setTimeout(()=>document.body.style.background='#000',b.d-1200);
+    await new Promise(r=>setTimeout(r,b.d+GAP));
+    $(b.s).classList.remove('on');
+    if(b.card)$(b.card).classList.remove('on');
+  }
+  toVol(.05,2500);
+  $('title').classList.add('on');
+  playing=false;
+}
+$('start').addEventListener('click',play);
+</script>
+</body>
+</html>
