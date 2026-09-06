@@ -37,7 +37,7 @@ video{width:100%;max-width:420px;background:#000;border-radius:10px;margin-top:8
 <script>
 const $=id=>document.getElementById(id);
 $('ua').textContent=navigator.userAgent;
-const clips=['clip-god-rises-m.mp4','clip-lantern-m.mp4','clip-the-eye-m.mp4'];
+const clips=['cinematic-gods/clip-god-rises-m.mp4?v=2','cinematic-gods/clip-lantern-m.mp4?v=2','cinematic-gods/clip-the-eye-m.mp4?v=2'];
 const p=document.createElement('video').canPlayType('video/mp4; codecs="avc1.4d401f"');
 $('support').innerHTML='<div class="row"><span>H.264 Main (our clips)</span><span class="'+(p===''?'bad':'ok')+'">'+(p===''?'NOT SUPPORTED':'SUPPORTED')+'</span></div>';
 clips.forEach((c,i)=>{
@@ -49,6 +49,7 @@ clips.forEach((c,i)=>{
 function doPlay(i){
   const v=$('v'+i);v.style.display='block';v.currentTime=0;
   const st=$('av-state');
+  v.addEventListener('error',()=>{st.textContent='clip '+(i+1)+': ELEMENT ERROR code '+v.error.code+' ('+(v.error.message||'')+')';});
   v.play().then(()=>{
     const iv=setInterval(()=>{
       st.textContent='clip '+(i+1)+': time '+v.currentTime.toFixed(2)+'s · readyState '+v.readyState+' · '+(v.paused?'PAUSED':'PLAYING');
