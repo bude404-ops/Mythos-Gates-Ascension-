@@ -56,7 +56,7 @@ Ashfall rites are about **burn as economy**: enemies carry Cinder Stacks (burn),
 
 ## Visual budget — what we can actually render
 Every rite uses effects we already have or can build cheaply — no new models, no new skeletons, no wing-words:
-- EMBER-TOUCH / stacks: ember particle on hit + small burn puff on the enemy. Reuses the ember-mote particle system (already built for the pixie pet).
+- EMBER-TOUCH / stacks: ember particle on hit + small burn puff on the enemy. Reuses the ember-mote particle system (already built for the Luminary pet).
 - CINDER WARD: soft ash-grey shell shader around the pilgrim, cracks ember on break. One material.
 - ASHFALL STEP: dash + ember trail decal/particles — same tech as the existing movement glow in the Giant mode.
 - FURNACE PALM: cone-shaped particle burst from the free hand — matches the Keeper's palm-orb grammar already canonized in the armor art.

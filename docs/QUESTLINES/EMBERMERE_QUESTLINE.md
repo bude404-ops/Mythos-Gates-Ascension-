@@ -48,7 +48,7 @@
 - **TRUTH-SLIVER:** The god was never far. It was under everything the whole chapter. (The land IS the sleeping gods — learned by standing on him at the end.)
 
 ## SIDE HOOKS (one-liners, same grammar)
-- **"The Emberling Brood"** — a shrine pixie with a cold flame asks the pilgrim to relight its shrine; reward = lantern-attire style variant (pet cosmetic canon).
+- **"The Emberling Brood"** — a shrine Luminary with a cold flame asks the pilgrim to relight its shrine; reward = lantern-attire style variant (pet cosmetic canon).
 - **"The Smiths' Grievance"** — the Smiths petition the Gate to bless a new rite-hammer over Warden objections; the pilgrim's ruling changes which Order trainers hold court in Forgefall (Order politics, door-closing).
 - **"The Kiln Road"** — escort Kilnreach's kiln-road procession; PROTECTION stream at festival weight.
 

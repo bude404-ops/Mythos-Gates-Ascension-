@@ -73,13 +73,13 @@ Faith · relics · progression · world-state · gate integrity · anything affe
 ---
 
 ## 4. PETS v2 — THE ELEMENTAL PIXIES (BudE404 refinement, Sept 5)
-## Each pet = an elemental pixie that lights the character in dungeons; it levels for a brighter aura; reskins monetize.
+## Each pet = an elemental Luminary that lights the character in dungeons; it levels for a brighter aura; reskins monetize.
 
 ### The concept
-The Emberlings are now **elemental pixies** — tiny kin of your deity's own element, drawn to the Warden like moths to a god's flame. Their signature role: **THE LIVING LANTERN** — your light companion in the dark places (death crypts, the Ember Depths, night regions).
+The Emberlings are now **elemental Luminarys** — tiny kin of your deity's own element, drawn to the Warden like moths to a god's flame. Their signature role: **THE LIVING LANTERN** — your light companion in the dark places (death crypts, the Ember Depths, night regions).
 
 ### The leveling ruling (the part that protects the anti-grind doctrine)
-**Brightness is EARNED through deeds, never bought, never farmed.** The pixie has 5 LIGHT TIERS — and it feeds on your deeds, not on pet-XP: discoveries found, rescues completed, hunts won, verdict waves survived. No pet-XP bar exists; the pixie simply glows brighter as your legend grows. Lore-perfect: belief is what burns in Mythos — your deeds are literally its fuel. The tiers CAP — no infinite pet grind, ever.
+**Brightness is EARNED through deeds, never bought, never farmed.** The Luminary has 5 LIGHT TIERS — and it feeds on your deeds, not on pet-XP: discoveries found, rescues completed, hunts won, verdict waves survived. No pet-XP bar exists; the Luminary simply glows brighter as your legend grows. Lore-perfect: belief is what burns in Mythos — your deeds are literally its fuel. The tiers CAP — no infinite pet grind, ever.
 
 | TIER | LIGHT | WHAT IT DOES |
 |---|---|---|
@@ -89,16 +89,16 @@ The Emberlings are now **elemental pixies** — tiny kin of your deity's own ele
 | 4 — Truth | reveals the hidden | glows over illusion-walls and false paths in dungeons |
 | 5 — Beacon | full aura | radiant presence, reactive emotes, signals rare events |
 
-**ONE COMPANION, TWO LIGHTS — PIXIE AND RELIC ARE ONE (BudE404 ruling, Sept 5):** The pixie and the Cold Lantern relic are the SAME being — the pixie WEARS the lantern as its attire. The relic gave the flame a house; the flame gave the relic a soul. Mechanically the roles stay distinct: **the flame illuminates** (the pixie's own glow — deed-fed light tiers, navigation/discovery only, never combat power) and **the lantern it wears protects** (the death-crypt safe-zone light, earned with the relic in-game). The fusion also fixes a real redundancy — one companion, one silhouette in the dungeon instead of two floating lights. GUARDRAIL, non-negotiable: the lantern attire arrives ONLY when the Cold Lantern relic is earned in-game — never sold, never bundled, never granted by any purchase. Pet sales = pixie reskins + lantern STYLE variants for players who already earned it (cosmetic only). Protection stays unpurchasable; brightness stays deed-fed. A bare-flame pixie (no relic yet) vs a lantern-donned pixie is now a VISIBLE BADGE of pilgrimage progress — deeds you can wear. Day-one player and whale: identical function, different fashion. This keeps the pet on the right side of "sell identity, never power" even inside light-based dungeon mechanics.
+**ONE COMPANION, TWO LIGHTS — PIXIE AND RELIC ARE ONE (BudE404 ruling, Sept 5):** The Luminary and the Cold Lantern relic are the SAME being — the Luminary WEARS the lantern as its attire. The relic gave the flame a house; the flame gave the relic a soul. Mechanically the roles stay distinct: **the flame illuminates** (the Luminary's own glow — deed-fed light tiers, navigation/discovery only, never combat power) and **the lantern it wears protects** (the death-crypt safe-zone light, earned with the relic in-game). The fusion also fixes a real redundancy — one companion, one silhouette in the dungeon instead of two floating lights. GUARDRAIL, non-negotiable: the lantern attire arrives ONLY when the Cold Lantern relic is earned in-game — never sold, never bundled, never granted by any purchase. Pet sales = Luminary reskins + lantern STYLE variants for players who already earned it (cosmetic only). Protection stays unpurchasable; brightness stays deed-fed. A bare-flame Luminary (no relic yet) vs a lantern-donned Luminary is now a VISIBLE BADGE of pilgrimage progress — deeds you can wear. Day-one player and whale: identical function, different fashion. This keeps the pet on the right side of "sell identity, never power" even inside light-based dungeon mechanics.
 
 ### Dual-scale presence
 At pilgrim scale: circles you as a living lantern. At manifestation/ascension: a mote circling the COLOSSAL HEAD — your little flame riding on the god's shoulder. Same pet, both scales — monetization that reinforces the identity.
 
 ### Monetization — reskins only (light level never sold)
 - **PIXIE LINES per faction** (the base skins): Embermere emberling, Galemarch static-wisp, Bloomweald seedling, Gloambarrow lantern-mote, Marenvale brineling, Stonefell pebble-sprite
-- **RESKINS**: seasonal variants (harvest-flame, frost-glow), deity-attuned colorways (Vaelthorn blue-flame pixie), achievement lines (Verdict-rank exclusives, hunt-trophies), event editions
+- **RESKINS**: seasonal variants (harvest-flame, frost-glow), deity-attuned colorways (Vaelthorn blue-flame Luminary), achievement lines (Verdict-rank exclusives, hunt-trophies), event editions
 - **AURA STYLES** (sellable, cosmetic-only): the SHAPE and character of the glow — sparkle patterns, ember-trail vs. steady-flame vs. pulse — while raw radius/brightness stays earned
-- Rare lines earnable through feats; standard + seasonal lines sold. Brightness tier NEVER purchasable — a day-one player and a whale with the same deeds have equally bright pixies. That's the trust contract, and it's the difference between a beloved companion system and a slot machine.
+- Rare lines earnable through feats; standard + seasonal lines sold. Brightness tier NEVER purchasable — a day-one player and a whale with the same deeds have equally bright Luminarys. That's the trust contract, and it's the difference between a beloved companion system and a slot machine.
 
 ---
 
@@ -140,7 +140,7 @@ Score grammar: clock efficiency, form-choice quality, unspent faith.
 **Each ladder carries its own leaderboard, its own titles, and its own Shrine Honor lines** (a Warden's Trial god-carving is not a Colossus Trial carving) — three prestige communities under one roof, none required for any other.
 
 ### The standalone promise (the Separation Law extended)
-- A combat-first player can LIVE in the Trials: mastery, ranks, cosmetics, pixie light tiers (verdict deeds feed pixies) — a complete game with zero campaign dependency.
+- A combat-first player can LIVE in the Trials: mastery, ranks, cosmetics, Luminary light tiers (verdict deeds feed Luminarys) — a complete game with zero campaign dependency.
 - A story-first player can live in the Pilgrimage: the Trials never gate story, relics, or world-state.
 - The campaign keeps growing by design — new story missions, regions, and deity arcs are the drip-content plan for later ("we always try and keep adding story line missions"), while the Trials' procedural floor composition makes the combat side cheap to extend seasonally.
 - Same combat verbs across all three ladders and the campaign — mastery transfers everywhere; nothing is wasted play.
@@ -154,15 +154,15 @@ Score grammar: clock efficiency, form-choice quality, unspent faith.
 
 ### THE RETENTION PYRAMID (base → apex)
 1. **VISIBLE WORLD PROGRESS — the mass-audience hook.** The map-is-the-progress-bar: corruption % falling, gate integrity rising, shrines restored, settlements growing. Post-campaign, the Incursions and Hunts continuously feed world-state — the world healing is an endless, visible, NON-repetitive grind. This is the layer most players actually live on.
-2. **NEW WAYS TO PLAY — the mastery hook.** Relic verbs, new Trial tiers/floors, pixie light tiers: horizontal growth. Each unlock changes HOW you play, which is what numeric gear simulates but rarely delivers.
-3. **COLLECTIONS — the checklist hook.** Pixie lines, Shrine Honor carvings, codex lore completion %, achievements. Checklists retain ordinary players powerfully; ours are all cosmetic/lore, never power.
+2. **NEW WAYS TO PLAY — the mastery hook.** Relic verbs, new Trial tiers/floors, Luminary light tiers: horizontal growth. Each unlock changes HOW you play, which is what numeric gear simulates but rarely delivers.
+3. **COLLECTIONS — the checklist hook.** Luminary lines, Shrine Honor carvings, codex lore completion %, achievements. Checklists retain ordinary players powerfully; ours are all cosmetic/lore, never power.
 4. **SOCIAL PRESTIGE — the apex.** Titles, leaderboards, and shrine carvings VISIBLE to other wardens (your statue stands in your town; your honors are carved on the shared gates). Social flex motivates the competitive few — and gives everyone something to admire.
 
 ### SEASONS — the anti-boredom engine
-Boredom is answered by cadence, not by numbers: seasonal Trial modifiers, seasonal Incursion events, seasonal pixie lines, and the story-mission drip (new regions, deity arcs) — both rails are cheap to extend (procedural floors / authored missions).
+Boredom is answered by cadence, not by numbers: seasonal Trial modifiers, seasonal Incursion events, seasonal Luminary lines, and the story-mission drip (new regions, deity arcs) — both rails are cheap to extend (procedural floors / authored missions).
 
 ### THE OPTIONAL STRUCTURE (worth considering, fits the trust contract)
-A **seasonal DEED LIST** — a free, achievement-style checklist of seasonal feats ("restore 3 shrines, survive Verdict wave 15, complete the season's Incursion"), with cosmetic-track rewards (skins, aura styles, pixie variants). It gives the checklist-crowd the structure they know from battle passes — while selling NOTHING that touches power. A paid premium cosmetic track is possible later, but the free track must stand alone.
+A **seasonal DEED LIST** — a free, achievement-style checklist of seasonal feats ("restore 3 shrines, survive Verdict wave 15, complete the season's Incursion"), with cosmetic-track rewards (skins, aura styles, Luminary variants). It gives the checklist-crowd the structure they know from battle passes — while selling NOTHING that touches power. A paid premium cosmetic track is possible later, but the free track must stand alone.
 
 ### The root principle
-**Players are not bored by the absence of numbers; they're bored by the absence of VISIBLE CHANGE.** Numbers are just the cheapest visible change. We replace cheap visible change with meaningful visible change: the world healing, the pixie brightening, the shrine filling with your carvings, the codex filling with lore, the Trials rank rising. Every layer of the pyramid changes something the player can SEE — and none of it sells out the doctrine.
+**Players are not bored by the absence of numbers; they're bored by the absence of VISIBLE CHANGE.** Numbers are just the cheapest visible change. We replace cheap visible change with meaningful visible change: the world healing, the Luminary brightening, the shrine filling with your carvings, the codex filling with lore, the Trials rank rising. Every layer of the pyramid changes something the player can SEE — and none of it sells out the doctrine.

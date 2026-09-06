@@ -34,7 +34,7 @@ Built by the First Pilgrims in the same Cinder Roads grammar as their armor: iro
 - They are not your enemies by default. They are just... not done yet.
 
 ## IV. WITNESSES (un-erasable light-beings — the emberling class)
-Canon: the pixie pets are pure-witness motes; witnesses cannot be hollowed, and the Grimlights are the Hollow's counter to them. Expand the class:
+Canon: the LUMINARIES (formerly 'Luminaries') are pure-witness motes; witnesses cannot be hollowed, and the Grimlights are the Hollow's counter to them. The pet line is named LUMINARIES across all docs, UI, and shop. Expand the class:
 - Wild witnesses: mote-swarms that gather where deeds happen (battlefields, vigils, oaths) — they feed on recorded meaning. Brighten the Codex: a place where witnesses swarm is a place where something WAS done.
 - Shrine witnesses: anchored motes that remember what they've seen — a dungeon's witness can replay a scene (the lore-dispenser that never lies and never editorializes; what it shows is the Codex's trophy case in motion).
 - Grimlight hostility: where wild witnesses and Grimlight swarms meet, the motes FIGHT — light against anti-light, no words, the war in miniature (ambient battle = environmental storytelling; helping the witnesses = FAITH).
@@ -50,6 +50,26 @@ Creatures woven into pilgrimage law — harming them carries a FAITH cost, prote
 Pressure mobs for dungeons WITHOUT erasure grammar. When the Hollow presses a sleeping god, the god's dream runs a fever — and the dream SHEDS. Fever-sheds are element-fauna gone WRONG but still ELEMENT: still colored, still physical, just fever-hot and aggressive. Ashmoles surfacing in swarms, cinderfoxes rabid-bright, bloomdeer antlers grown wrong and rank.
 - Law: **fever-shed = colored and wrong; hollowed = gray and gone.** Never confuse them on screen. One is a sick animal you can put down gently (mercy loop!); the other is a person you're too late for.
 - They give dungeons a mid-tier threat lane that isn't the Hollow: the god's fever, not the enemy's tide. And the cure is always the same: ease the pressure — clear the fracture. Environmental cause-and-effect, on doctrine.
+
+
+## VII. SACRED HERALDS (the mythic fauna — venerated beasts of the old world)
+
+The creatures pilgrims tell stories about — the ones that make the world feel OLD. Rare, seen at thresholds (forests, gates, lakes, high crags). Never farmed, never common; each carries an omen-function. Colored and LIVING (feed-the-contrast): these glow with realm light, never gray.
+
+- **MOON STAGS** (Bloomweald) — sacred deer with antlers of living gold-green light, tiny blossoms grown into the velvet. Guardians of the ancient forests: they stand sentinel over groves where the Bloom still remembers the First Spring. Omens: seeing one at dusk means the forest consents to your passage.
+- **MIST WOLVES** (Gloambarrow — around the Gates) — dire wolves half-woven of fog, eyes two lantern-violet lights. They appear in the mist around the Gates and guide chosen (Marked) warriors through the barrow-fog — pilgrims say a mist wolf that walks beside you is the land vouching for your vow.
+- **STORM EAGLES** (Galemarch) — enormous raptors with lightning laced through slate feathers. Divine messengers: they carry omens between storm-shrines, and their cry answered by thunder is read as a god hearing a prayer.
+- **FAEWILD STEEDS** (cross-realm; the seams) — supernatural horses that walk between realms along the thin places. Pearly, half-material manes. Mounts earned only by great deeds; they refuse riders the vow does not trust.
+- **WORLD SERPENTS** (Marenvale — beneath sacred lakes) — ancient elemental serpents coiled beneath the still meres. When a lake goes quiet, the serpent is listening. Some hold drowned shrines on their brows, tended for centuries.
+- **SILVER SWANS** (Marenvale meres / Gloambarrow mere-roads) — magical swans whose feathers shimmer pearl-teal and violet. Associated with transformation: swan-maiden myths are regional variants of a true thing — a Silver Swan at the mere means the water can change you.
+- **HORNED PRIMORDIALS** (Stonefell; in-world "Cernunnos Beasts" is NOT used in canon text — reserved as working title only) — enormous horned creatures of stone-barked hide and geode antlers, the primordial wilderness walking. Old growth and shrine ruins grown into their shoulders. Where one grazes, the wilderness is still wild.
+- **ELDER DRAGONS** (the Depths; realm-agnostic deep earth) — extremely rare primordial beings, possibly older than the gods themselves. The Depths' oldest dreamers. An Elder Dragon is not fought for loot; encountering one is an event.
+
+Doctrine fit: Heralds NEVER attack pilgrims unless a vow is broken or a sacred site is profaned. They are the living proof that the world was sacred before it was wounded.
+
+## VIII. THE LUMINARY LINE (pets — canon)
+
+Pets are called **LUMINARIES**. Pet-relic fusion stands: one companion, two lights — the flame illuminates, the lantern it wears protects. Luminaries are the Witness class embodied: pure-witness motes that cannot be hollowed. Cosmetic variants = faction reskins (ember/ice-blue/gold-green/lantern-violet/pearl-teal/geode) + lantern attire styles; brightness tiers EARNED through pilgrimage deeds, never sold. Bare-flame vs lantern-donned = visible badge of progress.
 
 ## DUNGEON ENCOUNTER MAP (who threatens you besides the Tide)
 | Class | Dungeon role | Tone |

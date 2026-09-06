@@ -71,7 +71,7 @@ If belief dies everywhere, every god wakes as an Echo. The player's lantern is o
 | Lesser drakes (proof of the Walking Age) | Unchanged — relics of the Walking Age, when gods walked openly. |
 | Aetherium | Unchanged as matter-substrate — now also understood as the gods' DREAM made substance. |
 | Relic system (Cold Lantern etc.) | Unchanged — now the primary power economy (gifts, not gear). |
-| Pixie pets (Emberling, lantern attire) | Unchanged — living bits of god-light given form; the pet-relic fusion canon stands. |
+| Luminary pets (Emberling, lantern attire) | Unchanged — living bits of god-light given form; the pet-relic fusion canon stands. |
 | Faction names, deity names, Gate names | UNCHANGED — they fit the doctrine as-is. |
 
 ## STORYLINE SHAPE (campaign grammar)
@@ -153,7 +153,7 @@ The lantern is your faith made portable — ONE resource (LIGHT), three uses (po
 
 ### DREAM-MOTE PETS (the new pet style to match the doctrine)
 
-Pets are no longer pixies — they are **DREAM-MOTES: tiny living fragments of the sleeping god's dream, drawn to the Marked.** Where the lantern goes, the dream follows. Each is a small real-animal shape made of the god's element (reverent, never mascot-cute):
+Pets are no longer Luminarys — they are **DREAM-MOTES: tiny living fragments of the sleeping god's dream, drawn to the Marked.** Where the lantern goes, the dream follows. Each is a small real-animal shape made of the god's element (reverent, never mascot-cute):
 
 - **Embermere: EMBER-FOX** — fox kit of ember and soot, sparks trailing.
 - **Galemarch: STORM-OWLET** — round owl of storm-slate, lightning veins in the wings.
@@ -164,7 +164,7 @@ Pets are no longer pixies — they are **DREAM-MOTES: tiny living fragments of t
 
 Mechanics (carry over from the pet canon): motes grow through FIVE LIGHT TIERS fed by witnessing your deeds (brightness earned, never sold); the tier system and cosmetic reskin monetization survive. NEW RITE MOMENT: at the Gate Rite climax, the mote runs INTO the rising god — a piece of the dream coming home — and returns brighter (tier-up moment written into the rite itself).
 
-The pixie/lantern-attire pet designs are retired from doctrine (kept in art history); the Emberling canon survives as Embermere's ember-fox lineage.
+The Luminary/lantern-attire pet designs are retired from doctrine (kept in art history); the Emberling canon survives as Embermere's ember-fox lineage.
 
 
 ## THE GAME TITLE + THE GATE RUNE (canon v1.2, Sept 5, 2026)

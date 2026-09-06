@@ -30,4 +30,4 @@ Duskmourn rites are about **gloom as erosion**: enemies carry GLOOM stacks that 
 - Gloom: -4% enemy damage per stack, max 5; no DoT — erosion currency.
 - FAITH pool 100 base +10/tier; ult = only hard-cooldown rite.
 - Synergies: Wayfarer (SHADOW STEP phase-dodge chains), Cantor (BARROW MARK + bell stun lock), Vigil (gloom miss-chance + shield = wall).
-- Visual budget: wisp = floating light particle (pixie-mote recolor), gloom = purple dimming shader on enemy, fear = existing AI flee state, veil = opacity drop. No new meshes/skeletons.
+- Visual budget: wisp = floating light particle (Luminary-mote recolor), gloom = purple dimming shader on enemy, fear = existing AI flee state, veil = opacity drop. No new meshes/skeletons.
