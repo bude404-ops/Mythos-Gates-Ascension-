@@ -35,12 +35,18 @@
   #overlay h1{font-size:clamp(22px,6vw,40px);letter-spacing:8px;margin:0 0 6px;color:#ffdca8;font-style:italic;font-weight:normal}
   #overlay p{font-size:13px;line-height:1.75;max-width:540px;margin:8px 0}
   #overlay button{margin-top:16px;padding:12px 34px;font-family:Georgia,serif;font-size:15px;letter-spacing:3px;background:none;border:1px solid #c98a4b;color:#ffdca8;border-radius:4px;cursor:pointer}
+  #cinebar-t,#cinebar-b{position:fixed;left:0;right:0;height:0;background:#000;z-index:8;transition:height .9s ease}
+  #cinebar-t{top:0}#cinebar-b{bottom:0}
+  body.cine #cinebar-t,body.cine #cinebar-b{height:7vh}
+  #vignette{position:fixed;inset:0;pointer-events:none;z-index:4;background:radial-gradient(ellipse at center, transparent 52%, rgba(5,3,2,.6) 100%);display:none}
+  body.playing #vignette{display:block}
   #hud,#stick,.btn{display:none}
   body.playing #hud{display:block}
   body.playing .btn,body.playing #stick{display:flex}
 </style>
 </head>
 <body>
+<div id="vignette"></div><div id="cinebar-t"></div><div id="cinebar-b"></div>
 <div id="hud">
   <div id="phase">PHASE I — GOD VS GOD</div>
   <div id="stage">THE MIRROR</div>
@@ -269,6 +275,7 @@ function staggerEcho(){
   if (S.telegraph){ scene.remove(S.telegraph.m); S.telegraph = null; }
   echoState.act = 'idle'; echoState.t = 0; echoState.next = 1.6;
   S.staggerT = 0.7;
+  S.cutReq = 'impact';
 }
 function knockEcho(d){
   const dir = S.echo.position.clone().sub(S.player.position).setY(0).normalize();
@@ -306,6 +313,7 @@ function echoAct(dt){
       else if (r < 0.82) e.act = 'slam';
       else e.act = 'beam';
       e.t = 0;
+      if (S.time - (S.lastEchoCut||-99) > 9 && Math.random() < 0.5){ S.cutReq = 'echo'; S.lastEchoCut = S.time; }
       if (e.act === 'shed'){
         const tg = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.6, 40), new THREE.MeshBasicMaterial({color:0x1a1a20, transparent:true, opacity:0.6}));
         tg.position.copy(S.echo.position).add(new THREE.Vector3(0, 12, 0));
@@ -386,6 +394,7 @@ function enterPhase3(){
   setTimeout(()=>{
     if (!S.woundScene) buildWound();
     S.mode='wound';
+    document.body.classList.remove('cine');
     $('atk').textContent='STRIKE'; $('skill').textContent='ROLL';
     $('volley').style.display='none'; $('quake').style.display='none';
     $('hp-wrap').style.display='none'; $('faith-wrap').style.display='none';
@@ -408,6 +417,7 @@ function isInDrainedZone(p){
 function win(){
   S.mode='won';
   document.body.classList.remove('playing');
+  document.body.classList.remove('cine');
   const ov = $('overlay'); ov.style.display='flex';
   ov.innerHTML = '<h1>THE FORGOTTEN, NAMED</h1><p>The absence takes form — and absence was all it had. The silhouette un-hollows from the name outward, a shape at last, dissolving to light.<br><br><i>A man\'s armor outlasted the man. A name outlasted the god.</i></p><button onclick="location.reload()">RUN THE RITE AGAIN</button>';
 }
@@ -415,6 +425,7 @@ function lose(){
   if (S.mode==='lost'||S.mode==='won') return;
   S.mode='lost';
   document.body.classList.remove('playing');
+  document.body.classList.remove('cine');
   const ov = $('overlay'); ov.style.display='flex';
   ov.innerHTML = '<h1>THE VESSEL FAILS</h1><p>The Echo cannot cross a Gate while a Gate stands — but it can wait. It always could.<br><br>The Rite can be run again.</p><button onclick="location.reload()">RUN THE RITE AGAIN</button>';
 }
@@ -513,15 +524,39 @@ function loop(now){
         r.rotation.x = -Math.PI/2; r.position.y = 0.12; scene.add(r); g.m = r;
       } else { g.m.geometry.dispose(); g.m.geometry = new THREE.RingGeometry(Math.max(0.1,g.r), g.r+1.4, 64); }
     }
-    // SIDE VIEW OF THE BATTLE (BudE404 verdict): camera perpendicular to the duel axis, both colossi in profile
+    // CINEMATIC DIRECTOR (BudE404: watch the god-fight like a movie while controlling the attacks)
     const p = S.player.position;
     const mid = p.clone().add(S.echo.position).multiplyScalar(0.5);
-    const gap = p.distanceTo(S.echo.position);
     const perp = (S.curPerp || new THREE.Vector3(1,0,0)).clone();
-    const dist = THREE.MathUtils.clamp(26 + gap*0.32, 32, 46);
-    const camT = mid.clone().addScaledVector(perp, dist).add(new THREE.Vector3(0, 15, 0));
-    camera.position.lerp(camT, 0.06);
-    camera.lookAt(mid.x, 11, mid.z);
+    if (!S.shot) S.shot = {name:'gate', t:0, dur:6};
+    S.shot.t += dt;
+    if (S.cutReq){ S.shot = {name:S.cutReq, t:0, dur: S.cutReq==='impact' ? 1.5 : 4}; S.cutReq = null; S.snapCam = true; }
+    else if (S.shot.t > S.shot.dur){
+      const pool = ['wide','orbit','low-hero','echo','wide','orbit','low-hero'];
+      let nxt = pool[Math.floor(Math.random()*pool.length)];
+      if (nxt === S.shot.name) nxt = nxt==='orbit' ? 'wide' : 'orbit';
+      S.shot = {name:nxt, t:0, dur: 4.5+Math.random()*3};
+      S.snapCam = true;
+    }
+    const t = S.shot.t;
+    let pos, look, fov = 46;
+    if (S.shot.name === 'wide'){       // classic wide of the duel
+      pos = mid.clone().addScaledVector(perp, 46).add(new THREE.Vector3(0, 17, 0)); look = mid.clone().setY(11); fov = 46;
+    } else if (S.shot.name === 'orbit'){ // slow crane around the battle
+      const a = S.time*0.085;
+      pos = new THREE.Vector3(mid.x+Math.cos(a)*42, 13+Math.sin(t*0.05)*5, mid.z+Math.sin(a)*42); look = mid.clone().setY(10); fov = 42;
+    } else if (S.shot.name === 'low-hero'){ // ground-level hero angle looking UP at the gods
+      pos = mid.clone().addScaledVector(perp, 24).add(new THREE.Vector3(Math.sin(t*0.2)*6, 2.2, 0)); look = S.echo.position.clone().setY(15); fov = 55;
+    } else if (S.shot.name === 'echo'){ // tight on the Echo winding up
+      pos = S.echo.position.clone().addScaledVector(perp, 19).add(new THREE.Vector3(0, 13, 0)); look = S.echo.position.clone().setY(15); fov = 36;
+    } else if (S.shot.name === 'impact'){ // impact cut on the stagger
+      pos = S.echo.position.clone().addScaledVector(perp, 13).add(new THREE.Vector3(0, 5, 0)); look = S.echo.position.clone().setY(13); fov = 52;
+    } else {                            // opener: the Gate frames the duel
+      pos = new THREE.Vector3(mid.x*0.4, 16, -48); look = mid.clone().setY(12); fov = 40;
+    }
+    if (S.snapCam){ camera.position.copy(pos); S.snapCam = false; } else camera.position.lerp(pos, 0.07);
+    camera.fov += (fov - camera.fov)*0.12; camera.updateProjectionMatrix();
+    camera.lookAt(look);
     if (S.camShake>0){ S.camShake-=dt*2; camera.position.x += (Math.random()-.5)*S.camShake; camera.position.y += (Math.random()-.5)*S.camShake*0.6; }
     renderer.render(scene, camera);
   }
@@ -566,6 +601,7 @@ function loop(now){
 $('start').addEventListener('click', ()=>{
   $('overlay').style.display='none';
   document.body.classList.add('playing');
+  document.body.classList.add('cine');
   S.mode='giant';
   banner('IT ANSWERS THE WAKING','your dark mirror — read the reverse-shed');
 });
