@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cinematic Doctor</title>
+<style>
+body{margin:0;padding:16px;background:#0a0806;color:#d8c9a3;font:15px/1.5 -apple-system,system-ui,sans-serif}
+h1{font-size:20px;color:#e8b04b;margin:0 0 4px}h2{font-size:16px;color:#e8b04b;margin:28px 0 8px}
+.v{font-size:13px;color:#8f8266;margin-bottom:18px;word-break:break-all}
+.row{display:flex;justify-content:space-between;gap:8px;padding:8px 10px;border-bottom:1px solid #241d14}
+.ok{color:#4caf50;font-weight:700}.bad{color:#f44336;font-weight:700}.mid{color:#ffb74d;font-weight:700}
+button{background:#e8b04b;color:#120c04;border:0;border-radius:8px;padding:14px 18px;font-size:16px;font-weight:700;margin:6px 0 6px 0;width:100%}
+button:active{background:#c98f33}
+video{width:100%;max-width:420px;background:#000;border-radius:10px;margin-top:8px}
+.tag{font-size:12px;color:#8f8266}
+#top{position:sticky;top:0;background:#0a0806;padding-bottom:10px;z-index:2;border-bottom:2px solid #e8b04b}
+</style>
+</head>
+<body>
+<div id="top">
+<h1>Cinematic Doctor</h1>
+<div class="v" id="ua">detecting…</div>
+<div id="verdict"></div>
+</div>
+<h2>1 · Video support</h2>
+<div id="support"></div>
+<h2>2 · Tap-to-play (tests the decoder)</h2>
+<div class="tag">Tap a clip. If it moves your phone decodes fine. If frozen, screenshot which one.</div>
+<div id="clips"></div>
+<h2>3 · Muted autoplay (what the cinematic does)</h2>
+<button id="auto">Run autoplay test</button>
+<video id="av" muted playsinline style="display:none"></video>
+<div id="autores" class="tag">not run yet</div>
+<h2>4 · Live engine readout</h2>
+<div class="row"><span id="av-state">tap a clip button above</span></div>
+<script>
+const $=id=>document.getElementById(id);
+$('ua').textContent=navigator.userAgent;
+const clips=['clip-god-rises-m.mp4','clip-lantern-m.mp4','clip-the-eye-m.mp4'];
+const p=document.createElement('video').canPlayType('video/mp4; codecs="avc1.4d401f"');
+$('support').innerHTML='<div class="row"><span>H.264 Main (our clips)</span><span class="'+(p===''?'bad':'ok')+'">'+(p===''?'NOT SUPPORTED':'SUPPORTED')+'</span></div>';
+clips.forEach((c,i)=>{
+  const b=document.createElement('button');b.textContent='▶ Play clip '+(i+1)+' ('+c.split('-').slice(1).join(' ')+')';
+  b.onclick=()=>{doPlay(i)};$('clips').appendChild(b);
+  const v=document.createElement('video');v.muted=true;v.playsInline=true;v.src=c;v.setAttribute('playsinline','');v.id='v'+i;v.style.display='none';
+  document.body.appendChild(v);
+});
+function doPlay(i){
+  const v=$('v'+i);v.style.display='block';v.currentTime=0;
+  const st=$('av-state');
+  v.play().then(()=>{
+    const iv=setInterval(()=>{
+      st.textContent='clip '+(i+1)+': time '+v.currentTime.toFixed(2)+'s · readyState '+v.readyState+' · '+(v.paused?'PAUSED':'PLAYING');
+      if(v.currentTime>2.5){clearInterval(iv);st.textContent+=' · MOTION CONFIRMED ✅';}
+    },250);
+    setTimeout(()=>clearInterval(iv),8000);
+  }).catch(e=>{st.textContent='clip '+(i+1)+': PLAY REJECTED — '+e.name;});
+}
+$('auto').onclick=()=>{
+  const v=$('av');v.style.display='block';v.src=clips[0];
+  const r=$('autores');
+  v.play().then(()=>{
+    r.textContent='Autoplay: STARTED';
+    setTimeout(()=>{r.textContent='Autoplay: '+(v.paused?'WAS PAUSED (motion died)':'RUNNING at '+v.currentTime.toFixed(2)+'s ✅')+' · readyState '+v.readyState;},2500);
+  }).catch(e=>{r.textContent='Autoplay: BLOCKED — '+e.name;});
+};
+$('verdict').innerHTML='<div class="row"><span>Run tests 2 + 3, screenshot this page back to me</span><span class="mid">👇</span></div>';
+</script>
+</body>
+</html>
