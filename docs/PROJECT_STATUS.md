@@ -19,11 +19,18 @@ _Last updated: Sept 5, 2026, 6:50 PM ET (BIGagent404) — game title LOCKED, rep
 - **HOLLOW SET** — T1 Undone, T2 Unmade Champion, T3 Gate-Worm, T3 Echo of the Forgotten canonized; Erased Drake + Still Choir + Furnace Brute pending; five Dead-God Shapes queued.
 - **LORE SYNC** — Name Bible swept; Gate names unified (Ember/Gale/Bloom/Barrow/Deep/Rune); old-era docs archived non-canon (docs/lore/archive-old-era/ + SUPERSEDED banners); TITAN_DESIGN_STANDARD + pipeline docs bannered legacy.
 
+### Canonized — COMBAT SPINE COMPLETE (Sept 5)
+- **PILGRIM LADDER 12/12 LOCKED** — all six Orders (Warden/Oathblade, Keeper/Relic Lantern, Wayfarer/Way-Daggers, Cantor/Bell-Staff, Smith/Rite Hammer, Vigil/Gate-Shield) x both genders, Cinder Roads grammar, flame-only Mark, Shield-Bare + Caster-Pose + Solo laws.
+- **RITE-TOOL KIT 6/6 LOCKED** — all props 3D-ready single-view (Way-Daggers separated per Prop-Separation rule).
+- **FACTION ABILITY TREES 6/6 CANON** — Ashfall (Cinder Stacks), Skyrend (Static Charge), Everbloom (Grove Seeds), Duskmourn (Gloom), Marenth (Tide momentum), Stoneheart (Crystal Shards) — FAITH economy, borrowed-element binding, existing visual tech only, both dungeon + siege scales.
+- **CLASS TREES 6/6 CANON** (BudE404: 'Class tree you build out') — Blade/Lantern/Dagger/Song/Hammer/Tower, stamina + cooldown economy, faction-neutral, mastery capstones (no second god moment). 'The Orders teach hands; the gods lend flame.'
+- **BUILD SYSTEM v2 FULLY CANON** — 6 class x 6 faction = 36 readable builds, ~138 skills hard cap, free unlimited re-pledge.
+- **THE SIX ORDERS PROTOTYPE LIVE** — budE404-ops.github.io/avalon-the-waking-gates/orders.html — playable class kit on the Waking Siege loop.
+
 ### Awaiting BudE404 (verdict queue)
-1. **PILGRIMS — humans production**: Warden of the Cinder Roads v3-RUNE (clean Avalon plate + breastplate rune + glowing eyes) — standing template verdict, then role ladder (Warden/Keeper/Walker/Singer/Smith/Vigil) + 12-set production (6 roles x 2 genders).
-2. **22 Stage 2 world-composition keeps** (per faction).
+1. **THE SIX ORDERS prototype playtest** — per-Order feel verdicts (Warden/Keeper/Wayfarer/Cantor/Smith/Vigil).
+2. **Next lane call** — Godot build integration (port class kits into the engine) OR T3 boss duel design.
 3. **3 Hollow keeps** (Erased Drake, Still Choir, Furnace Brute) → five Dead-God Shapes.
-4. **Old prototype links die on the repo rename** — new links: budE404-ops.github.io/avalon-the-waking-gates/siege.html + /models.html.
 
 ### Locked Rules (current)
 1. Art grammar: LOTR-cinematic hand-painted stylized; giants = primordial surfaces (zero human skin); pilgrims = clean human-craft plate + rune + eyes (mortal smiths, not elf-work).
