@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AVALON — Combat Animation Viewer</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{height:100%;background:#0b0908;overflow:hidden;font-family:Georgia,'Times New Roman',serif;color:#e8dcc8}
+  #stage{position:fixed;inset:0}
+  canvas{display:block}
+  #vignette{position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.5) 85%,rgba(0,0,0,.8) 100%)}
+  #lt,#lb{position:fixed;left:0;right:0;height:5%;background:#000;z-index:5;pointer-events:none}
+  #lt{top:0}#lb{bottom:0}
+  #title{position:fixed;top:7%;left:0;right:0;text-align:center;z-index:6;pointer-events:none}
+  #title h1{font-size:clamp(15px,3.2vw,24px);letter-spacing:8px;color:#ffdca8;font-style:italic;font-weight:normal;text-shadow:0 2px 14px #000}
+  #title p{font-size:10px;letter-spacing:4px;color:#8a7d6a;margin-top:4px}
+  #panel{position:fixed;bottom:7.5%;left:0;right:0;display:flex;justify-content:center;gap:34px;z-index:6;flex-wrap:wrap;padding:0 10px}
+  .col{text-align:center}
+  .col .who{font-size:10px;letter-spacing:4px;color:#9a8f7d;margin-bottom:8px}
+  .col .who b{color:#ffdca8;font-weight:normal}
+  .abtn{background:rgba(20,14,10,.85);border:1px solid #4a3826;color:#d8c8a8;font-family:inherit;font-size:11px;letter-spacing:2px;padding:9px 15px;margin:3px;cursor:pointer;transition:all .2s;backdrop-filter:blur(4px)}
+  .abtn:hover{border-color:#8a6a3a;color:#ffdca8}
+  .abtn.active{border-color:#c47a2a;color:#ffdca8;background:rgba(90,50,15,.5);box-shadow:0 0 14px rgba(200,110,30,.25)}
+  .abtn:disabled{opacity:.35;cursor:wait}
+  #load{position:fixed;top:7%;right:16px;font-size:10px;letter-spacing:3px;color:#c47a2a;z-index:7;pointer-events:none;opacity:0;transition:opacity .3s}
+  #hint{position:fixed;top:7%;left:16px;font-size:9px;letter-spacing:2px;color:#6d6355;z-index:6;pointer-events:none;line-height:1.9}
+  #err{position:fixed;top:45%;left:0;right:0;text-align:center;color:#c5502f;font-size:13px;letter-spacing:2px;z-index:9;display:none}
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<div id="vignette"></div><div id="lt"></div><div id="lb"></div>
+<div id="title"><h1>THE WAKING GATES</h1><p>COMBAT ANIMATION VIEWER — STAGE 4 PIPELINE VALIDATION</p></div>
+<div id="hint">DRAG — orbit camera<br>WHEEL / PINCH — zoom</div>
+<div id="load">SUMMONING…</div>
+<div id="err"></div>
+<div id="panel">
+  <div class="col" id="col-god">
+    <div class="who"><b>VAELTHORN</b> — THE FURNACE KING · GOD</div>
+    <button class="abtn" data-m="god" data-f="models/VAELTHORN-IDLE.glb">COMBAT IDLE</button>
+    <button class="abtn" data-m="god" data-f="models/VAELTHORN-SLAM.glb">HEAVY SLAM</button>
+    <button class="abtn" data-m="god" data-f="models/VAELTHORN-STOMP.glb">STOMP ATTACK</button>
+  </div>
+  <div class="col" id="col-pil">
+    <div class="who"><b>WARDEN</b> — CINDER ROADS PILGRIM</div>
+    <button class="abtn active" data-m="pil" data-f="models/WARDEN-M-IDLE.glb">COMBAT IDLE</button>
+    <button class="abtn" data-m="pil" data-f="models/WARDEN-M-COMBO.glb">TRIPLE COMBO</button>
+    <button class="abtn" data-m="pil" data-f="models/WARDEN-M-PARRY.glb">SWORD PARRY</button>
+  </div>
+</div>
+<script type="importmap">
+{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+
+const stage=document.getElementById('stage'),loadEl=document.getElementById('load'),errEl=document.getElementById('err');
+const renderer=new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(2,devicePixelRatio));
+renderer.setSize(innerWidth,innerHeight);
+renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;
+stage.appendChild(renderer.domElement);
+
+const scene=new THREE.Scene();
+scene.background=new THREE.Color(0x0b0908);
+scene.fog=new THREE.FogExp2(0x0b0908,0.028);
+const camera=new THREE.PerspectiveCamera(45,innerWidth/innerHeight,0.1,200);
+camera.position.set(0,3.2,10);
+const controls=new OrbitControls(camera,renderer.domElement);
+controls.target.set(0,2.2,0);controls.enableDamping=true;controls.dampingFactor=0.08;
+controls.minDistance=4;controls.maxDistance=30;controls.maxPolarAngle=Math.PI*0.52;
+
+// lights — painterly warm key + cold rim (made vs named doctrine: god light is ember)
+scene.add(new THREE.AmbientLight(0x9a8f7d,0.35));
+const key=new THREE.DirectionalLight(0xffdca8,2.4);key.position.set(6,9,5);key.castShadow=true;
+key.shadow.mapSize.set(2048,2048);key.shadow.camera.left=-12;key.shadow.camera.right=12;key.shadow.camera.top=12;key.shadow.camera.bottom=-12;
+scene.add(key);
+const rim=new THREE.DirectionalLight(0x8fa3d6,1.1);rim.position.set(-7,6,-6);scene.add(rim);
+const ember=new THREE.PointLight(0xff7a30,24,30);ember.position.set(0,0.4,0);scene.add(ember);
+
+// ground — dark forge-stone disc
+const ground=new THREE.Mesh(new THREE.CircleGeometry(26,64),new THREE.MeshStandardMaterial({color:0x1a120d,roughness:0.95}));
+ground.rotation.x=-Math.PI/2;ground.receiveShadow=true;scene.add(ground);
+// rise-point ritual ring under the god (emergence doctrine: stationary, rise point = position)
+const ring=new THREE.Mesh(new THREE.RingGeometry(2.6,2.85,64),new THREE.MeshStandardMaterial({color:0x3a2c20,roughness:1}));
+ring.rotation.x=-Math.PI/2;ring.position.set(-3.6,0.02,0);scene.add(ring);
+const ring2=ring.clone();ring2.geometry=new THREE.RingGeometry(0.85,0.95,48);ring2.position.set(2.4,0.02,0);scene.add(ring2);
+
+const loader=new GLTFLoader();
+const models={god:{root:null,mixer:null},pil:{root:null,mixer:null}};
+const TARGET={god:{h:4.6,x:-3.6,ry:Math.PI*0.82},pil:{h:1.55,x:2.4,ry:-Math.PI*0.12}};
+const cache={};
+
+function showLoad(on){loadEl.style.opacity=on?1:0;}
+function fail(msg){errEl.style.display='block';errEl.textContent=msg;}
+
+function loadAction(which,file,btn){
+  if(cache[file]){apply(which,cache[file]);return;}
+  showLoad(true);
+  const bs=document.querySelectorAll(`.abtn[data-m="${which}"]`);bs.forEach(b=>b.disabled=true);
+  loader.load(file,(gltf)=>{
+    cache[file]=gltf;
+    bs.forEach(b=>b.disabled=false);btn&&btn.classList.add('active');
+    showLoad(false);
+    apply(which,gltf);
+  },undefined,(e)=>{bs.forEach(b=>b.disabled=false);showLoad(false);fail('a mesh refused to answer — '+file);});
+}
+function apply(which,gltf){
+  const m=models[which];
+  if(m.root){scene.remove(m.root);m.root.traverse(o=>{if(o.isMesh){o.geometry.dispose&&o.geometry.dispose();}});}
+  const root=gltf.scene;
+  root.traverse(o=>{if(o.isMesh){o.castShadow=true;o.receiveShadow=true;}});
+  // normalize scale to target height, feet on ground
+  const box=new THREE.Box3().setFromObject(root);
+  const size=box.getSize(new THREE.Vector3());
+  const s=TARGET[which].h/size.y;
+  root.scale.setScalar(s);
+  box.setFromObject(root);
+  root.position.y-=box.min.y;root.position.x+=TARGET[which].x;root.position.z+=0;
+  root.rotation.y=TARGET[which].ry;
+  scene.add(root);
+  m.root=root;
+  m.mixer=new THREE.AnimationMixer(root);
+  const clips=gltf.animations||[];
+  if(clips.length){const a=m.mixer.clipAction(clips[0]);a.reset();a.play();}
+}
+document.querySelectorAll('.abtn').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll(`.abtn[data-m="${b.dataset.m}"]`).forEach(x=>x.classList.remove('active'));
+    loadAction(b.dataset.m,b.dataset.f,b);
+  });
+});
+// initial loads
+loadAction('pil','models/WARDEN-M-IDLE.glb',document.querySelector('.abtn.active'));
+loadAction('god','models/VAELTHORN-IDLE.glb',document.querySelector('#col-god .abtn'));
+
+const clock=new THREE.Clock();
+function tick(){
+  requestAnimationFrame(tick);
+  const dt=clock.getDelta();
+  if(models.god.mixer)models.god.mixer.update(dt);
+  if(models.pil.mixer)models.pil.mixer.update(dt);
+  ember.intensity=22+Math.sin(Date.now()*0.002)*4;
+  controls.update();
+  renderer.render(scene,camera);
+}
+tick();
+addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);});
+</script>
+</body>
+</html>
