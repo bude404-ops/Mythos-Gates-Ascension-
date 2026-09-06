@@ -67,6 +67,8 @@ The creatures pilgrims tell stories about — the ones that make the world feel 
 
 Doctrine fit: Heralds NEVER attack pilgrims unless a vow is broken or a sacred site is profaned. They are the living proof that the world was sacred before it was wounded.
 
+ART LAW — ELEMENT-FORMED HERALDS (BudE404 verdict, Sept 5 2026): heralds render in the same element grammar as the colossi — each beast's body is MADE OF its realm element (bark-wood + sap-light stag, living-fog wolf, solidified-thunderhead eagle, moonlight-glass steed, water-bodied serpent, radiant-light swan, bedrock + geode-crystal horned beast, bark-stone + molten-seamed dragon). A herald is the element wearing the beast — the same primordial grammar as the gods, at fauna scale.
+
 ## VIII. THE LUMINARY LINE (pets — canon)
 
 Pets are called **LUMINARIES**. Pet-relic fusion stands: one companion, two lights — the flame illuminates, the lantern it wears protects. Luminaries are the Witness class embodied: pure-witness motes that cannot be hollowed. Cosmetic variants = faction reskins (ember/ice-blue/gold-green/lantern-violet/pearl-teal/geode) + lantern attire styles; brightness tiers EARNED through pilgrimage deeds, never sold. Bare-flame vs lantern-donned = visible badge of progress.
