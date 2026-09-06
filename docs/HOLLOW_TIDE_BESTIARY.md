@@ -38,3 +38,20 @@ The Hollow does not reproduce; it SPREADS. Fractures in a Gate leak raw residue 
 
 ## CANON LOCK (Sept 5 2026 — BudE404 'Keep' on all three)
 The Hollow champion art is canonized: **THE ERASED DRAKE** (T2 champion — stolen Embermere armor, art/hollow -> art/approved/HOLLOW-ERASED-DRAKE-CANON.jpg), **THE STILL CHOIR** (T2 champion — stolen Galemarch plate, art/approved/HOLLOW-STILL-CHOIR-CANON.jpg), **THE FURNACE BRUTE** (T3 echo — the dead god's silhouette worn by the Hollow, art/approved/HOLLOW-FURNACE-BRUTE-CANON.jpg). Hollow doctrine stands: the Unmade steal the vault's own armor grammar and giant silhouettes — the Hollow wears our identity against us.
+
+---
+
+## ENEMY ART RE-ROLL DOCTRINE (Sept 5 night, BudE404: 'redo the enemy art so it fits our new lore and style')
+
+The Hollow canon files pre-date the style unification. The redo runs the whole bestiary through the CURRENT vault grammar:
+
+1. **GLOBAL GRAMMAR: LOTR-cinematic painterly** — the same painterly film hand as the colossi, realms, and pilgrim sets. No photoreal studio looks anywhere in the vault anymore.
+2. **ERASURE HORROR only** — absence, not gore: faces are smooth absence, edges that don't quite hold, movement like film run backwards. No goo, no rot, no shadow-cast, no sound.
+3. **DE-COLORATION as the signature** — color-drain rings on the ground around every unit: the region's element fading gray in a visible radius. The Hollow has NO light of its own; NO glow anywhere on Hollow units.
+4. **T1 UNDONE (MUTEFOLK / SHADE-BEASTS / GRIMLIGHTS):** hollowed HUMANS walking their old routines — real human-craft clothing fully colored (the clothing is CRAFT, and erasure cannot eat what was MADE), the person inside erased. Pilgrim-scale framing, readable at dungeon-crawler distance.
+5. **T2 UNMADE CHAMPIONS: the armor grammar is now CINDER ROADS.** The stolen First Pilgrim armor = road-worn repair-plate (hand-hammered mismatched plates, riveted seams, ash-patina) — the ONLY colored, real, physical thing in frame; the flame Mark on the breastplate gone GRAY (the flame erased — the Hollow took the pilgrim's one light). Body inside = absence at the visor and plate-gaps. Armor STAYS BEHIND when it falls (loot + lore).
+6. **T3 DEAD-GOD SHAPES: the v9 primordial grammar INVERTED.** The Hollow rehearses a god's silhouette in the half-conceived mid-formation anatomy of the Twelve — but de-colored: gray basalt where molten element should flow, fissures that should blaze holding only darkness, face half-emerged but smoothed to absence, waist-down eroded terrain. The fights feel like dueling a memory of your own god.
+7. **SCALE ANCHORS everywhere:** T1/T2 carry a lantern or landmark for pilgrim-scale read; T3 carries a tiny pilgrim + lantern as the only light in frame.
+8. Standard prompt laws apply: solo subjects, zero text, no deity names, no banned vocabulary.
+
+**Redo order (one realm set at a time):** EMBERMERE SET FIRST — T1 MUTEFOLK, T2 UNMADE CHAMPION, T3 FURNACE BRUTE. On BudE404's per-unit verdicts: the remaining units (Shade-Beasts, Grimlights, Erased Drake, Still Choir, Gate-Worm, Echo of the Forgotten) + the five other realm sets roll on the kept grammar.
