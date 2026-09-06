@@ -76,3 +76,12 @@ Two different properties, previously conflated. Split them:
 - **Why the villagers fell:** no Mark, no vow, no relic. Ordinary made things survive beside you, not over you.
 - **Why T2 Unmade Champions exist at all:** they are FALLEN PILGRIMS — and a vow ends at death. Death closes the vow, the protection ends, and the Hollow can finally take the person. It never gets the plate. That is why First Pilgrim armor still walks after ages: the armor outlived the vow that shielded it.
 - **The danger hook (gameplay law):** while the pilgrim lives and the vow holds, the Hollow cannot hollow them. BREAK the vow — and the door opens. (Ties to Stonefell theology: a vow made is terrain; break one and the ground — and the Hollow — remembers.) The Hollow's only path to a pilgrim runs through the pilgrim's own broken word.
+
+## REALM SETS ROLLED (Sept 5 night, BudE404 'Gotcha I like it ol lets finish') — HOLLOW ART REDO COMPLETE 24/24
+All five remaining realm sets rolled on the locked redo grammar (regional Drake / Choir / Brute per realm):
+- **GALEMARCH:** storm-drake breathing dead calm (motionless air, seeds frozen mid-fall) / storm-shrine bell-ring choir around a cracked storm-bell / STORM BRUTE — dead storm-god, storm-bell monolith crown, cloud-mass drained to inert slate, zero lightning.
+- **BLOOMWEALD:** bloom-drake breathing wilt-absence (petals fall mid-bloom) / harvest-folk choir around a withered grove-sapling / BLOOM BRUTE — dead bloom-god, blossom-bough crown, every petal drained to ash.
+- **GLOAMBARROW:** dusk-drake breathing un-light (flames gutter to nothing) / lantern-tender choir among guttered grave-lanterns / DUSK BRUTE — dead dusk-god, lantern-grave monolith crown, wisp-lights gone dark.
+- **MARENVALE:** tide-drake breathing stillness (waves freezing to dead glass mid-fall) / tide-counter choir on a stilled shore / TIDE BRUTE — dead tide-god, sunken-shrine crown, sea gone glass-flat.
+- **STONEFELL:** stone-drake breathing crumbling (solid rock goes soft and powdery) / vow-keeper choir around a leaning standing-stone / STONE BRUTE — dead stone-god, standing-stone trilithon crown, crystal veins gone dark, promise-lines smoothed unreadable.
+Files: art/pending/HOLLOW-<REALM>-<DRAKE/CHOIR/BRUTE>-REDO-v1.png (15 units) + SHEET-HOLLOW-REDO-REALM-SETS-5-v1.png. p-hash clean across all 24 redo units. PER-UNIT VERDICTS PENDING.
