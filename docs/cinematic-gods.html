@@ -13,8 +13,12 @@
   .shot{position:absolute;inset:0;background-size:cover;background-position:center;
     opacity:0;will-change:transform,opacity;transition:opacity 1.6s ease}
   .shot.on{opacity:1}
+  .shot.vid{background:#000}
+  .shot video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .shot.dip{transition:opacity 1.2s ease}
   #fx,#grain{position:fixed;inset:0;pointer-events:none}
+video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;z-index:2;transition:opacity 1.6s ease}
+video.on{opacity:1}
   #vig{position:fixed;inset:0;pointer-events:none;
     background:radial-gradient(ellipse at 50% 46%,transparent 46%,rgba(4,2,1,.62) 88%,rgba(2,1,0,.9) 100%)}
   .bar{position:fixed;left:0;right:0;height:7%;background:#000;z-index:7}
@@ -68,6 +72,9 @@
   <div class="shot" id="s8" style="background-image:url('cinematic-gods/08-SOMETHING-ELSE.jpg')"></div>
   <div class="shot" id="s9" style="background-image:url('cinematic-gods/09-THE-MARK-IGNITES.jpg')"></div>
   <div class="shot" id="s10" style="background-image:url('cinematic-gods/10-THE-EYE.jpg')"></div>
+  <div class="shot vid" id="v4"><video src="cinematic-gods/clip-lantern.mp4" muted playsinline loop preload="auto"></video></div>
+  <div class="shot vid" id="v6"><video src="cinematic-gods/clip-god-rises.mp4" muted playsinline loop preload="auto"></video></div>
+  <div class="shot vid" id="v10"><video src="cinematic-gods/clip-the-eye.mp4" muted playsinline loop preload="auto"></video></div>
 </div>
 <canvas id="fx"></canvas><div id="vig"></div><canvas id="grain"></canvas>
 <div id="barT" class="bar"></div><div id="barB" class="bar"></div>
@@ -103,16 +110,16 @@ const BEATS=[
  {s:'s2',d:7500, z:[1.10,1.12],p:[[.42,.5],[.60,.5]], em:'#d9a86a',n:10,dr:.05,amp:.3, bed:.30, x:'dissolve'},
  {s:'s3',d:7000, z:[1.05,1.22],p:[[.5,.45],[.5,.62]], em:'#ffcf8a',n:14,dr:.10,amp:.5, bed:.32, card:'c3', vo:'vo-warm', voAt:2600, x:'dissolve'},
  /* ACT II — THE QUIET (slowest, near-silence; dip to black entering) */
- {s:'s4',d:9500, z:[1.06,1.09],p:[[.5,.5],[.52,.48]], em:'#ffb36b',n:6,dr:.03,amp:.2, bed:.10, x:'dip'},
- {s:'s5',d:9000, z:[1.18,1.01],p:[[.44,.56],[.5,.42]], em:'#ffb36b',n:8,dr:.05,amp:.3, bed:.06, card:'c5', vo:'vo-land', voAt:2600, x:'dissolve'},
+ {s:'s4',d:9500, z:[1.06,1.09],p:[[.5,.5],[.52,.48]], em:'#ffb36b',n:6,dr:.03,amp:.2, bed:.10, vid:'v4', x:'dip'},
+ {s:'s5',d:9000, z:[1.18,1.01],p:[[.44,.56],[.5,.42]], em:'#ffb36b',n:8,dr:.05,amp:.3, bed:.06, card:'c5', vo:'vo-land', voAt:2600, vid:'v4', x:'dissolve'},
  /* ACT III — THE RISE (spectacle + aftermath) */
- {s:'s6',d:7600, z:[1.16,1.04],p:[[.5,.44],[.5,.56]], em:'#ffd28a',n:110,dr:.9,amp:2.2, bed:.62, boom:true, riseBefore:2.4, x:'dip'},
+ {s:'s6',d:5100,vid:'v6', z:[1.16,1.04],p:[[.5,.44],[.5,.56]], em:'#ffd28a',n:110,dr:.9,amp:2.2, bed:.62, boom:true, riseBefore:2.4, vid:'v6', x:'dip'},
  {s:'s7',d:7000, z:[1.08,1.11],p:[[.5,.5],[.5,.48]], em:'#d9a86a',n:10,dr:.05,amp:.3, bed:.34, x:'dissolve'},
  /* ACT IV — THE WARNING */
  {s:'s8',d:6000, z:[1.04,1.10],p:[[.5,.5],[.47,.52]], em:'#a97fff',n:8,dr:.03,amp:.2, bed:.30, tension:true, x:'dip'},
  /* ACT V — THE MARK (accelerating into the title) */
- {s:'s9',d:4800, z:[1.10,1.34],p:[[.5,.55],[.5,.58]], em:'#ffcf8a',n:60,dr:.7,amp:1.6, bed:.48, hit:true, jlead:1.1, vo:'vo-waiting', voAt:1300, x:'dissolve'},
- {s:'s10',d:4200,z:[1.02,1.30],p:[[.5,.5],[.5,.47]], em:'#ffd28a',n:24,dr:.25,amp:.8, bed:.40, riser:3.2, x:'dissolve'},
+ {s:'s9',d:4800, z:[1.10,1.34],p:[[.5,.55],[.5,.58]], em:'#ffcf8a',n:60,dr:.7,amp:1.6, bed:.48, hit:true, jlead:1.1, vo:'vo-waiting', voAt:1300, vid:'v10', x:'dissolve'},
+ {s:'s10',d:5100,vid:'v10',z:[1.02,1.30],p:[[.5,.5],[.5,.47]], em:'#ffd28a',n:24,dr:.25,amp:.8, bed:.40, riser:3.2, x:'dissolve'},
 ];
 const $=id=>document.getElementById(id);
 let bi=0,playing=false;
@@ -231,6 +238,7 @@ setInterval(()=>{if(!playing)return;const id=gx.createImageData(W,H);
 
 /* ============ SHOT RUN ============ */
 function shot(b){
+  if(b.vid)return; // video beat: motion lives in the clip
   const el=$(b.s);
   el.style.transition=`transform ${b.d}ms linear, opacity 1.6s ease`;
   el.style.transformOrigin=`${b.p[0][0]*100}% ${b.p[0][1]*100}%`;
@@ -261,7 +269,8 @@ async function play(){
     if(b.riseBefore)riser(b.riseBefore,.34);
     if(b.riser)riser(b.riser,.30);
     shot(b);
-    const el=$(b.s);
+    if(b.vid){const vd=document.querySelector('#'+b.vid+' video');vd.currentTime=0;vd.play().catch(()=>{});}
+    const el=$(b.vid||b.s);
     if(b.x==='dip'){ $('black').classList.add('on');
       await new Promise(r=>setTimeout(r,900));
       whoosh(1.1,1,.14);
@@ -270,15 +279,17 @@ async function play(){
       whoosh(1.4,1,.11);
       el.classList.add('on');
       await new Promise(r=>setTimeout(r,1500));
-      const prev=BEATS[bi-1];if(prev)$(prev.s).classList.remove('on');
+      const prev=BEATS[bi-1];if(prev){$(prev.s).classList.remove('on');if(prev.vid)$(prev.vid).classList.remove('on');}
     }
     mixTo(b);
-    if(b.boom)setTimeout(()=>boom(.55),b.d*.52);          /* the rise: impact at the reveal */
+    if(b.boom)setTimeout(()=>boom(.55),b.d*.55);
+    if(b.vid)$(b.vid).classList.add('on');          /* the rise: impact at the reveal */
     if(b.card)setTimeout(()=>$(b.card).classList.add('on'),2000);
     if(b.vo)setTimeout(()=>playVO(b.vo),b.voAt||2400);
     const remain=b.x==='dip'?b.d-900:b.d-1500;
     await new Promise(r=>setTimeout(r,Math.max(600,remain)));
     if(b.card)$(b.card).classList.remove('on');
+    if(b.vid){const vd=document.querySelector('#'+b.vid+' video');vd.pause();vd.currentTime=0;}
   }
   /* cut to black · silence · TITLE SLAM — the oldest trick in the book */
   $('black').classList.add('on');
