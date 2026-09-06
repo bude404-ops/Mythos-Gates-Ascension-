@@ -5,24 +5,336 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AVALON: THE WAKING GATES</title>
 <style>
-  html,body{margin:0;height:100%;background:#14141e;font-family:Georgia,serif;color:#e8c47a;display:flex;align-items:center;justify-content:center}
-  .card{text-align:center;padding:40px 20px;max-width:600px}
-  .rune{font-size:64px;line-height:1;margin-bottom:18px}
-  h1{font-size:28px;letter-spacing:6px;margin:0 0 6px;font-weight:normal}
-  .sub{color:#9a8b6f;font-size:13px;letter-spacing:3px;margin-bottom:34px}
-  a.btn{display:block;margin:10px auto;padding:14px 26px;border:2px solid #6f5a33;border-radius:8px;background:rgba(20,16,10,.85);color:#e8c47a;text-decoration:none;font-size:14px;letter-spacing:2px;max-width:340px}
-  a.btn:hover{background:#4a2c10;border-color:#c47a2a}
-  .tag{color:#7a705d;font-size:10px;margin-top:26px;letter-spacing:1px}
+  :root{
+    --bg:#0c0a07; --panel:#141009; --line:#5a4526; --line2:#2c2317;
+    --gold:#e8c47a; --dim:#9a8b6f; --faint:#6e6350;
+    --flame:#ff7a1a;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);font-family:Georgia,'Times New Roman',serif;color:var(--gold);overflow:hidden}
+  #embers{position:fixed;inset:0;z-index:0;pointer-events:none}
+  .stage{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px}
+  .titleblock{text-align:center;margin-bottom:26px}
+  .rune-wrap{width:84px;margin:0 auto 10px}
+  h1{font-size:clamp(30px,6vw,46px);letter-spacing:10px;margin:0;font-weight:normal;text-shadow:0 2px 18px rgba(0,0,0,.8)}
+  .sub{color:var(--dim);font-size:12px;letter-spacing:5px;margin-top:6px}
+  .tag{color:var(--faint);font-size:10px;letter-spacing:2px;margin-top:10px;font-style:italic}
+  nav.menu{display:flex;flex-direction:column;gap:10px;width:min(360px,92vw)}
+  .mbtn{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 22px;border:1px solid var(--line2);border-radius:10px;
+    background:linear-gradient(180deg,rgba(28,22,14,.92),rgba(16,12,8,.94));color:var(--gold);font-family:inherit;font-size:14px;letter-spacing:3px;cursor:pointer;text-align:left;width:100%}
+  .mbtn:hover:not(.off){border-color:var(--line);background:linear-gradient(180deg,#3a2c14,#221808)}
+  .mbtn.off{opacity:.38;cursor:not-allowed}
+  .mbtn .hint{font-size:9px;letter-spacing:1px;color:var(--faint)}
+  .panel{position:fixed;inset:0;z-index:2;display:none;flex-direction:column;background:rgba(8,6,4,.96);backdrop-filter:blur(3px)}
+  .panel.open{display:flex}
+  .phead{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line2)}
+  .phead h2{font-size:15px;letter-spacing:5px;margin:0;font-weight:normal;color:var(--gold)}
+  .back{background:none;border:1px solid var(--line2);border-radius:8px;color:var(--dim);font-family:inherit;font-size:11px;letter-spacing:2px;padding:8px 14px;cursor:pointer}
+  .back:hover{color:var(--gold);border-color:var(--line)}
+  .pbody{flex:1;overflow-y:auto;padding:18px;max-width:860px;width:100%;margin:0 auto}
+  .steps{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+  .step{font-size:10px;letter-spacing:2px;color:var(--faint);border:1px solid var(--line2);border-radius:6px;padding:5px 10px}
+  .step.on{color:var(--gold);border-color:var(--line)}
+  .step.done{color:#8fb573;border-color:#3d4a30}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+  .fcard{position:relative;border:1px solid var(--line2);border-radius:10px;padding:14px;background:linear-gradient(180deg,rgba(28,22,14,.9),rgba(14,11,7,.94));cursor:pointer}
+  .fcard:hover{border-color:var(--line)}
+  .fcard.sel{border-color:var(--flame,#ff7a1a);box-shadow:0 0 0 1px var(--flame,#ff7a1a) inset}
+  .fcard .fname{font-size:15px;letter-spacing:2px;margin-bottom:4px}
+  .fcard .frealm{font-size:11px;color:var(--dim);font-style:italic;margin-bottom:8px}
+  .fcard .froute{font-size:10px;color:var(--faint);letter-spacing:1px}
+  .flame{width:16px;height:22px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background:radial-gradient(ellipse at 50% 80%, #fff8 0 2px, var(--fc,#ff7a1a) 40%, transparent 75%);
+    filter:blur(.4px);position:absolute;top:12px;right:12px;animation:flick 1.6s infinite alternate}
+  @keyframes flick{from{transform:scaleY(1) }to{transform:scaleY(1.18)}}
+  .dcard{border:1px solid var(--line2);border-radius:10px;padding:14px;background:rgba(16,12,8,.92);cursor:pointer}
+  .dcard:hover{border-color:var(--line)}
+  .dcard.sel{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold) inset}
+  .dname{font-size:14px;letter-spacing:2px}
+  .depi{font-size:11px;color:var(--dim);font-style:italic;margin:2px 0 8px}
+  .dmeta{font-size:10px;color:var(--faint);letter-spacing:1px;line-height:1.7}
+  .bcard{border:1px solid var(--line2);border-radius:10px;padding:14px;background:rgba(16,12,8,.92);cursor:pointer}
+  .bcard:hover{border-color:var(--line)}
+  .bcard.sel{border-color:var(--flame)}
+  .bname{font-size:14px;letter-spacing:2px;margin-bottom:4px}
+  .bdesc{font-size:11px;color:var(--dim);line-height:1.6}
+  .begin{margin-top:16px;width:100%;padding:14px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(180deg,#4a2c10,#2a1a08);
+    color:#ffd9a0;font-family:inherit;font-size:14px;letter-spacing:4px;cursor:pointer}
+  .begin:hover{background:linear-gradient(180deg,#6b3d12,#3a2410)}
+  .begin.off{opacity:.35;cursor:not-allowed}
+  .setrow{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid var(--line2)}
+  .setrow label{flex:1;font-size:12px;letter-spacing:2px;color:var(--dim)}
+  input[type=range]{width:160px;accent-color:#c47a2a}
+  .toggle{width:52px;height:26px;border:1px solid var(--line);border-radius:14px;background:#1a1409;position:relative;cursor:pointer}
+  .toggle.on::after{content:'';position:absolute;top:2px;right:2px;width:20px;height:20px;border-radius:50%;background:#c47a2a}
+  .toggle::after{content:'';position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:#5a4a2a}
+  .codexcard{border:1px solid var(--line2);border-radius:10px;padding:14px;background:rgba(16,12,8,.9)}
+  .codexcard.open{border-color:#3d4a30}
+  .ctitle{font-size:13px;letter-spacing:2px;margin-bottom:6px;color:var(--gold)}
+  .ctext{font-size:11px;color:var(--dim);line-height:1.7;font-style:italic}
+  .locked{color:var(--faint);display:flex;gap:8px;align-items:center;font-size:11px;letter-spacing:1px}
+  .credwrap{text-align:center;padding:30px 0}
+  .blogo{font-size:26px;letter-spacing:6px;color:#ffb36b;text-shadow:0 0 22px rgba(255,120,26,.35);margin:12px 0 4px}
+  .brole{font-size:11px;letter-spacing:5px;color:var(--dim)}
+  .bprod{font-size:10px;letter-spacing:3px;color:var(--faint);margin-top:26px}
+  .gwrap{display:flex;flex-direction:column;gap:10px}
+  .glink{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line2);border-radius:10px;padding:13px 16px;color:var(--gold);
+    text-decoration:none;font-size:13px;letter-spacing:2px;background:rgba(16,12,8,.92)}
+  .glink:hover{border-color:var(--line);background:#2a1e0e}
+  .glink span{font-size:10px;color:var(--faint);letter-spacing:1px}
+  .vtag{position:fixed;bottom:8px;right:12px;font-size:9px;letter-spacing:2px;color:#4a4234;z-index:1}
+  @media(max-height:640px){.rune-wrap{width:56px}.titleblock{margin-bottom:12px} nav.menu{gap:7px} .mbtn{padding:10px 18px}}
 </style>
 </head>
 <body>
-<div class="card">
-  <div class="rune">🪨</div>
-  <h1>AVALON</h1>
-  <div class="sub">THE WAKING GATES</div>
-  <a class="btn" href="siege.html">🔥 PLAY — THE WAKING SIEGE</a>
-  <a class="btn" href="models.html">🗿 STAGE 3 MODEL VIEWER</a>
-  <div class="tag">The land is the sleeping gods. Walk the roads. Light the Gates.</div>
+<canvas id="embers"></canvas>
+<div class="stage">
+  <div class="titleblock">
+    <div class="rune-wrap">
+      <svg viewBox="0 0 100 90" aria-label="The Gate Rune">
+        <g stroke="#3a3128" stroke-width="4" fill="none" stroke-linecap="round">
+          <path d="M18 84 L18 40 Q18 16 50 16 Q82 16 82 40 L82 84"/>
+          <path d="M8 84 L30 84 M70 84 L92 84" stroke-width="6"/>
+        </g>
+        <g stroke="#241d15" stroke-width="1.4" fill="none" opacity=".9">
+          <path d="M24 62 l6 -5 M70 74 l7 -4 M27 32 l5 6 M64 22 l6 3 M46 18 l2 5"/>
+        </g>
+        <path d="M50 74 C38 64 40 52 44 44 C47 38 46 34 50 26 C52 34 55 36 56 42 C60 38 60 32 58 26 C66 34 64 44 60 52 C57 59 58 66 50 74 Z" fill="url(#fg)"/>
+        <defs>
+          <linearGradient id="fg" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stop-color="#ff7a1a"/><stop offset=".6" stop-color="#ffb36b"/><stop offset="1" stop-color="#fff2d0"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <h1>AVALON</h1>
+    <div class="sub">THE WAKING GATES</div>
+    <div class="tag">The land is the sleeping gods. Walk the roads. Light the Gates.</div>
+  </div>
+  <nav class="menu">
+    <button class="mbtn" onclick="openJourney()">NEW JOURNEY</button>
+    <button class="mbtn off" id="btnCont" onclick="continueJourney()">CONTINUE <span class="hint" id="contHint">no journey remembered</span></button>
+    <button class="mbtn" onclick="openPanel('codex')">THE CODEX</button>
+    <button class="mbtn" onclick="openPanel('gallery')">GALLERY</button>
+    <button class="mbtn" onclick="openPanel('settings')">SETTINGS</button>
+    <button class="mbtn" onclick="openPanel('credits')">CREDITS</button>
+  </nav>
 </div>
+<div class="vtag">MENU SHELL v1 — CANON BUILD</div>
+
+<div class="panel" id="p-journey">
+  <div class="phead"><h2>BEGIN THE JOURNEY</h2><button class="back" onclick="closePanels()">← BACK</button></div>
+  <div class="pbody">
+    <div class="steps" id="jsteps"></div>
+    <div id="jcontent"></div>
+    <button class="begin off" id="beginBtn" onclick="beginJourney()">BEGIN THE RITE</button>
+  </div>
+</div>
+
+<div class="panel" id="p-codex">
+  <div class="phead"><h2>THE CODEX</h2><button class="back" onclick="closePanels()">← BACK</button></div>
+  <div class="pbody">
+    <div class="ctext" style="margin-bottom:14px">The road teaches what the menu cannot. Records unlock only through play.</div>
+    <div class="cards" id="codexcards"></div>
+  </div>
+</div>
+
+<div class="panel" id="p-gallery">
+  <div class="phead"><h2>GALLERY</h2><button class="back" onclick="closePanels()">← BACK</button></div>
+  <div class="pbody"><div class="gwrap" id="gwrap"></div></div>
+</div>
+
+<div class="panel" id="p-settings">
+  <div class="phead"><h2>SETTINGS</h2><button class="back" onclick="closePanels()">← BACK</button></div>
+  <div class="pbody" id="settingsbody"></div>
+</div>
+
+<div class="panel" id="p-credits">
+  <div class="phead"><h2>CREDITS</h2><button class="back" onclick="closePanels()">← BACK</button></div>
+  <div class="pbody"><div class="credwrap">
+    <div style="font-size:11px;letter-spacing:4px;color:var(--dim)">A GAME DIRECTED BY</div>
+    <div class="blogo">BUD E404</div>
+    <div class="brole">GAME DIRECTOR</div>
+    <div class="bprod">A BIG ENTERTAINMENT PRODUCTION</div>
+    <div style="margin-top:34px;font-size:10px;letter-spacing:3px;color:var(--faint)">THE GATES ARE WAKING</div>
+  </div></div>
+</div>
+
+<script>
+/* ===== canon roster (data/factions + data/deities) ===== */
+const FACTIONS=[
+ {id:"MG-FACTION-001",name:"Meridian Court",realm:"The Measured Noon",route:"Sun-Scale Ascent",fc:"#f0b840"},
+ {id:"MG-FACTION-002",name:"Stormmoot",realm:"The Stormmoot Halls",route:"Sky-Oath Road",fc:"#7ec8ff"},
+ {id:"MG-FACTION-003",name:"Laurel Agon",realm:"The Laurel Agon",route:"Trial-Steps Ascent",fc:"#b8d44a"},
+ {id:"MG-FACTION-004",name:"Thousand Torii",realm:"The Thousand Torii",route:"Moon-Torii Procession",fc:"#b09fff"},
+ {id:"MG-FACTION-005",name:"Silverroot Kindred",realm:"The Silverroot",route:"Rooted Hollow Road",fc:"#cfc0ff"},
+ {id:"MG-FACTION-006",name:"Radiant Vigil",realm:"The Light-Vault",route:"Light-Vault Dimming Ascent",fc:"#ffe9a8"},
+ {id:"MG-FACTION-007",name:"Black-Iron Dominion",realm:"The Debt Citadel",route:"Black-Iron Debt Descent",fc:"#ff7a1a"},
+ {id:"MG-FACTION-008",name:"Deepgreen",realm:"The Deepgreen",route:"Cedar-Mist Descent",fc:"#5fc86a"}];
+const DEITIES=[
+ {f:"MG-FACTION-001",n:"Khaveth",e:"the Measured Light",r:"Caster",g:"M"},
+ {f:"MG-FACTION-001",n:"Djekhur",e:"the Ashen Gale",r:"Warrior",g:"M"},
+ {f:"MG-FACTION-001",n:"Shemris",e:"the Glasswind",r:"Archer",g:"F"},
+ {f:"MG-FACTION-001",n:"Amekhet",e:"the Sunless Eye",r:"Assassin",g:"F"},
+ {f:"MG-FACTION-002",n:"Halmarr",e:"the Thundermark",r:"Warrior",g:"M"},
+ {f:"MG-FACTION-002",n:"Falwyn",e:"the Duskfeather",r:"Archer",g:"F"},
+ {f:"MG-FACTION-002",n:"Vargrim",e:"the Hollow-Eyed",r:"Caster",g:"M"},
+ {f:"MG-FACTION-002",n:"Estrith",e:"the Quiet Thread",r:"Assassin",g:"F"},
+ {f:"MG-FACTION-003",n:"Thrasyles",e:"the Contest-Fury",r:"Warrior",g:"M"},
+ {f:"MG-FACTION-003",n:"Therissa",e:"the Silent Laurel",r:"Archer",g:"F"},
+ {f:"MG-FACTION-003",n:"Aethrokles",e:"the Sky-Verdict",r:"Caster",g:"M"},
+ {f:"MG-FACTION-003",n:"Sophrona",e:"the Calculated",r:"Assassin",g:"F"},
+ {f:"MG-FACTION-004",n:"Arashido",e:"the Threshold Storm",r:"Warrior",g:"M"},
+ {f:"MG-FACTION-004",n:"Yoruka",e:"the Hollow Moon",r:"Archer",g:"M"},
+ {f:"MG-FACTION-004",n:"Hikarune",e:"the Weaving Sun",r:"Caster",g:"F"},
+ {f:"MG-FACTION-004",n:"Mukage",e:"the Unfinished",r:"Assassin",g:"F"},
+ {f:"MG-FACTION-005",n:"Tolveth",e:"the Rootward",r:"Warrior",g:"M"},
+ {f:"MG-FACTION-005",n:"Caelvarin",e:"the Every-Handed",r:"Archer",g:"M"},
+ {f:"MG-FACTION-005",n:"Vennaith",e:"the Unbanked Flame",r:"Caster",g:"F"},
+ {f:"MG-FACTION-005",n:"Corveth",e:"the Battle-Crow",r:"Assassin",g:"F"},
+ {f:"MG-FACTION-006",n:"Varothiel",e:"the Last Beacon",r:"Warrior",g:"M"},
+ {f:"MG-FACTION-006",n:"Thraniel",e:"the Far Lumen",r:"Archer",g:"M"},
+ {f:"MG-FACTION-006",n:"Sothiel",e:"the White Ledger",r:"Caster",g:"F"},
+ {f:"MG-FACTION-006",n:"Tashareth",e:"the Already-There",r:"Assassin",g:"F"},
+ {f:"MG-FACTION-007",n:"Kraxus",e:"the Binder King",r:"Warrior",g:"M"},
+ {f:"MG-FACTION-007",n:"Orivax",e:"the First Debtor",r:"Caster",g:"M"},
+ {f:"MG-FACTION-007",n:"Mazka",e:"the Ash Broker",r:"Archer",g:"F"},
+ {f:"MG-FACTION-007",n:"Syrrax",e:"the Unsigned",r:"Assassin",g:"F"},
+ {f:"MG-FACTION-008",n:"Mawkreth",e:"the Sleeping Ridge",r:"Warrior",g:"M"},
+ {f:"MG-FACTION-008",n:"Kolweth",e:"the Gray Veil",r:"Caster",g:"M"},
+ {f:"MG-FACTION-008",n:"Selmara",e:"the Returning River",r:"Archer",g:"F"},
+ {f:"MG-FACTION-008",n:"Thuveka",e:"the Silent Wing",r:"Assassin",g:"F"}];
+const BATTLES=[
+ {id:"siege",name:"THE WAKING SIEGE",desc:"Hold the Gate as the Hollow come in waves. The god rises to answer.",url:"siege.html"},
+ {id:"duel",name:"ECHO DUEL",desc:"God against god — the Hollow echo of a rival colossus at your Gate.",url:"echo-duel.html"},
+ {id:"depths",name:"DEPTHS OF EMBERMERE",desc:"Pilgrim-scale descent into the ember-dark beneath the roads.",url:"depths-embermere.html"}];
+const STEPS=["I · THE ROAD","II · THE ORDER","III · THE KIT","IV · THE FIELD"];
+
+/* ===== state ===== */
+let J={gender:localStorage.getItem('av_gender')||null,faction:null,deity:null,battle:null};
+let step=0;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function openPanel(name){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('open'));$('p-'+name).classList.add('open');}
+function closePanels(){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('open'));}
+
+/* ===== journey flow ===== */
+function openJourney(){J={gender:localStorage.getItem('av_gender')||null,faction:null,deity:null,battle:null};step=J.gender?1:0;openPanel('journey');renderJourney();}
+function renderSteps(){
+  const st=$('jsteps'); if(!st) return;
+  st.innerHTML=STEPS.map((s,i)=>`<div class="step ${i===step?'on':(i<step?'done':'')}">${s}</div>`).join('');
+}
+function renderJourney(){
+  renderSteps();
+  const c=$('jcontent'); const b=$('beginBtn');
+  b.classList.add('off');
+  if(step===0){
+    c.innerHTML=`<div class="cards">
+      <div class="fcard ${J.gender==='M'?'sel':''}" onclick="pick('gender','M')"><div class="fname">PILGRIM — M</div><div class="frealm">He walks the Cinder Roads; the King rises to match him.</div></div>
+      <div class="fcard ${J.gender==='F'?'sel':''}" onclick="pick('gender','F')"><div class="fname">PILGRIM — F</div><div class="frealm">She walks the Cinder Roads; the Queen rises to match her.</div></div></div>`;
+  } else if(step===1){
+    c.innerHTML=`<div class="cards">`+FACTIONS.map(f=>`
+      <div class="fcard ${J.faction===f.id?'sel':''}" style="--flame:${f.fc}" onclick="pick('faction','${f.id}')">
+        <div class="flame" style="--fc:${f.fc}"></div>
+        <div class="fname">${esc(f.name)}</div><div class="frealm">${esc(f.realm)}</div><div class="froute">${esc(f.route)}</div></div>`).join('')+`</div>`;
+  } else if(step===2){
+    const ds=DEITIES.filter(d=>d.f===J.faction && d.g===J.gender);
+    c.innerHTML=`<div class="cards">`+ds.map(d=>`
+      <div class="dcard ${J.deity===d.n?'sel':''}" onclick="pick('deity','${esc(d.n)}')">
+        <div class="dname">${esc(d.n)}</div><div class="depi">${esc(d.e)}</div>
+        <div class="dmeta">ROLE — ${esc(d.r)}</div></div>`).join('')+`</div>`;
+  } else {
+    c.innerHTML=`<div class="cards">`+BATTLES.map(bt=>`
+      <div class="bcard ${J.battle===bt.id?'sel':''}" onclick="pick('battle','${bt.id}')">
+        <div class="bname">${esc(bt.name)}</div><div class="bdesc">${esc(bt.desc)}</div></div>`).join('')+`</div>`;
+    if(J.battle)b.classList.remove('off');
+  }
+}
+function pick(k,v){J[k]=v;
+  if(k==='gender'){localStorage.setItem('av_gender',v);step=1;}
+  else if(k==='faction')step=2;
+  else if(k==='deity')step=3;
+  renderJourney();}
+function beginJourney(){
+  if(!J.battle)return;
+  const bt=BATTLES.find(b=>b.id===J.battle);
+  const j={gender:J.gender,faction:FACTIONS.find(f=>f.id===J.faction).name,deity:J.deity,battle:bt.name,url:bt.url,ts:Date.now()};
+  localStorage.setItem('av_journey',JSON.stringify(j));
+  const q=`?gender=${j.gender}&faction=${encodeURIComponent(j.faction)}&deity=${encodeURIComponent(j.deity)}`;
+  location.href=bt.url+q;
+}
+function continueJourney(){
+  const j=JSON.parse(localStorage.getItem('av_journey')||'null');
+  if(!j)return;
+  location.href=j.url+`?gender=${j.gender}&faction=${encodeURIComponent(j.faction)}&deity=${encodeURIComponent(j.deity)}`;
+}
+
+/* ===== codex ===== */
+const CODEX=[
+ {t:"THE WAKING GATES",open:true,x:"The land is the sleeping gods. Six Gates hold the old roads shut. When a pilgrim lights one, the god beneath it rises."},
+ {t:"THE CINDER ROADS",open:true,x:"Road-worn plate, riveted mismatched layers, ash-patina. Armor is not regalia — it is the record of the walk."},
+ {t:"THE HOLLOW",open:false,x:"What comes when a Gate goes dark. Bestiary entries unlock as you weather them in the field."},
+ {t:"THE COLOSSI",open:false,x:"Kings and Queens of the deep elements. Emergence records unlock when you witness a rising."},
+ {t:"THE ORDERS — 8 RECORDS",open:false,x:"Each Order's dossier unlocks when you walk its road. The menu does not speak for the road."},
+ {t:"QUEST RECORDS",open:false,x:"Chronicled deeds. Mystery is by omission — the field reveals what the ledger keeps."}];
+function renderCodex(){
+  $('codexcards').innerHTML=CODEX.map(e=>e.open?
+    `<div class="codexcard open"><div class="ctitle">${esc(e.t)}</div><div class="ctext">${esc(e.x)}</div></div>`:
+    `<div class="codexcard"><div class="ctitle">${esc(e.t)}</div><div class="locked">🔒 &nbsp;REVEALED THROUGH PLAY — NOT MENUS</div></div>`).join('');
+}
+
+/* ===== gallery ===== */
+const GALLERY=[
+ {n:"STAGE 3 MODEL VIEWER",s:"3D meshes — Meshy→Mixamo→Godot pipeline",u:"models.html"},
+ {n:"CINEMATIC TEASER",s:"The Waking Gates — full trailer",u:"cinematic.html"},
+ {n:"THE ORDERS",s:"Order select prototype",u:"orders.html"},
+ {n:"ECHO DUEL",s:"Colossus duel prototype",u:"echo-duel.html"},
+ {n:"THE WAKING SIEGE",s:"Gate defense prototype",u:"siege.html"},
+ {n:"DEPTHS OF EMBERMERE",s:"Pilgrim-scale dungeon prototype",u:"depths-embermere.html"}];
+function renderGallery(){
+  $('gwrap').innerHTML=GALLERY.map(g=>`<a class="glink" href="${g.u}">${esc(g.n)}<span>${esc(g.s)}</span></a>`).join('');
+}
+
+/* ===== settings ===== */
+function setVal(k,v){const s=JSON.parse(localStorage.getItem('av_settings')||'{}');s[k]=v;localStorage.setItem('av_settings',JSON.stringify(s));}
+function getVal(k,d){const s=JSON.parse(localStorage.getItem('av_settings')||'{}');return k in s?s[k]:d;}
+function renderSettings(){
+  const row=(label,inner)=>`<div class="setrow"><label>${label}</label>${inner}</div>`;
+  $('settingsbody').innerHTML=
+   row("MASTER VOLUME",`<input type="range" min="0" max="100" value="${getVal('master',80)}" oninput="setVal('master',this.value)">`)+
+   row("MUSIC",`<input type="range" min="0" max="100" value="${getVal('music',70)}" oninput="setVal('music',this.value)">`)+
+   row("SFX",`<input type="range" min="0" max="100" value="${getVal('sfx',90)}" oninput="setVal('sfx',this.value)">`)+
+   row("EMBER FIELD",`<div class="toggle ${getVal('embers',true)?'on':''}" onclick="this.classList.toggle('on');setVal('embers',this.classList.contains('on'))"></div>`)+
+   `<div class="ctext" style="margin-top:16px">Camera doctrine is fixed by the director: colossus battles hold the full scene — pilgrimage fronts, duels in profile.</div>`;
+}
+
+/* ===== continue button ===== */
+function refreshContinue(){
+  const j=JSON.parse(localStorage.getItem('av_journey')||'null');
+  const b=$('btnCont');
+  if(j){b.classList.remove('off');$('contHint').textContent=j.deity+' — '+j.battle;}
+}
+
+/* ===== embers ===== */
+const cv=$('embers'),ctx=cv.getContext('2d');
+let P=[],W,H;
+function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight;}
+addEventListener('resize',rs);rs();
+for(let i=0;i<50;i++)P.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.8+.4,s:Math.random()*.35+.12,a:Math.random()*.5+.15,w:Math.random()*6.28});
+(function tick(){
+  ctx.clearRect(0,0,W,H);
+  if(getVal('embers',true)){
+    ctx.fillStyle='#ffb36b';
+    P.forEach(p=>{p.y-=p.s;p.w+=.02;p.x+=Math.sin(p.w)*.24;
+      if(p.y<-6){p.y=H+6;p.x=Math.random()*W;}
+      ctx.globalAlpha=p.a*(.6+.4*Math.sin(p.w*2));
+      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.28);ctx.fill();});
+    ctx.globalAlpha=1;
+  }
+  requestAnimationFrame(tick);
+})();
+
+renderCodex();renderGallery();renderSettings();refreshContinue();
+</script>
 </body>
 </html>
