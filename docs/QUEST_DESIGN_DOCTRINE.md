@@ -92,3 +92,22 @@ The world never explains itself. **NPCs don't exposition — they want things.**
 3. **No lore gates.** A player who skips every menu never hits a wall; a player who opens every menu finds confirmations.
 4. **Every quest ends with a witness.** Something/someone stands visibly changed in the world — the change IS the lore card.
 5. **Faction quests test theology, not loyalty meters.** The reward for a faction questline is understanding what that god costs — the Mark follows.
+
+---
+
+## COMBAT IN THE GRAMMAR (where fighting lives in the five beats)
+
+Combat is a lore vehicle like any other — **the Hollow bestiary is the mythology you fight.** T1s are the world's small things gone wrong (ash-crawlers, Grimlight motes, MUTEFOLK), T2s are the vault's own identity stolen (an Unmade walking in a canon champion's armor), T3s are false gods (the Echo wearing a canon giant's silhouette). You learn what the Hollow IS by fighting what it does to what you love.
+
+**Beat placement (the combat map):**
+- **HOOK** — no combat. The person is the content.
+- **TRAIL** — the combat lane: road ambushes, tracking kills, swarms, the realm's T1 ecology as terrain pressure (Grimlight clouds dim your Mark's glow mid-fight — the anti-witness made mechanical).
+- **RITE** — protected combat: the ceremony is happening and something wants it stopped. Wave-flavored, hold-the-line. The rite completes IF you hold — combat as stakes, not interruption.
+- **CHOICE** — never combat. The choice is sacred: you fight before it and live after it, but the decision moment is untouchable. (Two-goods stays pure.)
+- **ECHO** — usually no combat; the world shows you what you chose. If combat appears here, it's a consequence (the thing your choice released).
+
+**Boss cadence per chapter:** T2 duel mid-chapter (the Depths vow-quest), T3 at the Gate Rite finale — three phases, final phase drops to pilgrim scale inside the wound (god-fight and climb are one encounter; Master Architecture law).
+
+**Scale law:** quest TRAIL/RITE combat runs at pilgrim scale (the EMBER DEPTHS chassis: isometric, lantern-light, i-frame rolls, loot vacuum). The Gate Rite finale opens giant-scale (WAKING SIEGE chassis: wake stages, FAITH ultimates, palm slams) and closes pilgrim-scale. One world, two scales — the transition IS the drama.
+
+**Build law:** quests never gate on build. Any of the 36 (class × faction) plays any quest — but the faction tree's economy changes the FEEL of each quest's combat (Ashfall Cinder Stacks make the forge-quests burn differently than Stoneheart shards do).
