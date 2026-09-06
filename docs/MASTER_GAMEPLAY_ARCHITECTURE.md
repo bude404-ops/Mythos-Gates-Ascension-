@@ -65,7 +65,7 @@ Five shared systems bind the scales together. If any of the five breaks, the gam
 | Element reactions (fire spread, lava rerouting, flood) | area denial | friendly structures burn — care meter |
 | Topple trees/towers | area denial, spawn-pit crush | cover lost for sprite content later |
 
-Rules: (1) every destructible is authored and named; (2) every destruction writes Boon OR Wound — never nothing; (3) wounds are repairable by sprite-scale gameplay (belief repair, shrine quests) — the giant breaks the world, the sprite heals it. **That symmetry IS the game.**
+Rules: (1) every destructible is authored and named; (2) every destruction writes Boon OR Wound — never nothing; (3) wounds are repairable by pilgrim-scale gameplay (belief repair, shrine quests) — the god breaks the world, the pilgrim heals it. **That symmetry IS the game.**
 
 ---
 
@@ -74,9 +74,9 @@ Rules: (1) every destructible is authored and named; (2) every destruction write
 The 12 mission structures, each mapped to form-pattern grammar (E=explore/sprite, G=glimpse, M=manifestation, A=ascension):
 
 1. **INVESTIGATION** — E only (G optional assist): pure sprite detective work; the discovery IS the climax
-2. **RESCUE** — E w/ G: sprite-scale extractions, one glimpse to cheat death
+2. **RESCUE** — E w/ G: pilgrim-scale extractions, one glimpse to cheat death
 3. **ESCORT** — E→M: sprite leads, manifestation clears the blocked pass ahead
-4. **HUNT** — E→M: track at sprite scale, manifestation fells the quarry
+4. **HUNT** — E→M: track at pilgrim scale, manifestation fells the quarry
 5. **SHRINE RESTORATION** — E (ritual, belief repair)
 6. **GATE ACTIVATION** — E→A: the standard pre-ascension mission (charge, rite, cleanliness)
 7. **GATE DEFENSE** — M/A: structural waves, mid-fight thinning
@@ -97,7 +97,7 @@ A colossal boss is NEVER a normal enemy with a big HP bar. Every boss:
 - has **phases that change the RULES of the arena** (a slam ends phase 1 by re-flooring the battlefield)
 - uses **environmental attacks** (its body is a natural disaster — lava bursts, quake rings)
 - carries **objectives beyond HP** (protect, escort, close breaches it opens)
-- and CRITICALLY: **at least one phase drops to sprite scale.** The giant cracks its armor; the WARDEN climbs through the wound to strike the heart; the god-fight and the climb are the same encounter. *God vs God outside, warden vs heart inside.* No other RPG can stage this fight. Every world boss must.
+- and CRITICALLY: **at least one phase drops to pilgrim scale.** The giant cracks its armor; the WARDEN climbs through the wound to strike the heart; the god-fight and the climb are the same encounter. *God vs God outside, warden vs heart inside.* No other RPG can stage this fight. Every world boss must.
 - COLOSSAL HUNTS add a unique mechanic each (armor-break, limb-disable, terrain-luring, settlement-protection, chase, survive-its-destruction) — never an HP sponge.
 
 ---

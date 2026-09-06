@@ -98,7 +98,7 @@ ACTIVATE (rite) · DEFEND (structural waves) · PURGE (cleanse veins) · REPAIR 
 ## 12. DAMAGE / SEAL / RESTORE
 
 - **Damaged**: charge cap reduced (smaller faith battery), broken channel-stones visible — repair quests
-- **Sealed** (by mortal fear, story): inert monument; restoration = BELIEF repair via sprite-scale miracles in the region, then a re-rite
+- **Sealed** (by mortal fear, story): inert monument; restoration = BELIEF repair via pilgrim-scale miracles in the region, then a re-rite
 - **Restored**: permanent integrity/charge cap buff + threshold zone unlock — restoration is the long-game reward loop
 
 ---
