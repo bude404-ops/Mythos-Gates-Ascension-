@@ -61,6 +61,7 @@
 <button class="btn" id="skill">SURGE<div class="cd" id="skill-cd">6</div></button>
 <button class="btn" id="volley">VOLLEY<div class="cd" id="volley-cd">6</div></button>
 <button class="btn" id="quake">QUAKE<div class="cd" id="quake-cd">10</div></button>
+<button class="btn" id="ward">WARD<div class="cd" id="ward-cd">5</div></button>
 <button class="btn" id="ward">WARD</button>
 <button class="btn" id="nameit">NAME IT</button>
 <div id="overlay">
@@ -86,7 +87,8 @@ const S = {
   mode:'menu', echoHP:100, hp:100, faith:50,
   surges:[], sheds:[], grayRings:[],
   camShake:0, hitStop:0, time:0, swing:null, combo:0, comboTO:0,
-  arcs:[], lances:[], quakes:[], staggerT:0, wardT:0, waveTimer:0, wardM:null,
+  arcs:[], lances:[], quakes:[], waves:[], dwaves:[], staggerT:0,
+  ward:0, wardMesh:null, riseT:0, wardT:0, waveTimer:0, wardM:null,
   heartHits:0, naming:0, nameHold:0, invuln:0, invulnG:0, rollCD:0,
 };
 const scene = new THREE.Scene();
@@ -122,7 +124,7 @@ function buildColossus(strataColor, fissureColor){
 
 function buildArena(){
   scene.background = new THREE.Color(0x1c1410);
-  scene.fog = new THREE.FogExp2(0x1c1410, 0.011);
+  scene.fog = new THREE.FogExp2(0x1c1410, 0.008);
   scene.add(new THREE.AmbientLight(0xa89880, 2.4));
   const moon = new THREE.DirectionalLight(0xbac4e8, 1.1); moon.position.set(-30,60,20); scene.add(moon);
   S.emberLight = new THREE.PointLight(0xff7a2e, 5.0, 130, 1.5); S.emberLight.position.set(0, 18, 0); scene.add(S.emberLight);
@@ -197,11 +199,13 @@ stick.addEventListener('touchmove', e=>{
   knob.style.left = 33+Math.cos(a)*d*36+'px'; knob.style.top = 33+Math.sin(a)*d*36+'px'; e.preventDefault();
 }, {passive:false});
 stick.addEventListener('touchend', ()=>{ stickVec={x:0,y:0}; knob.style.left='33px'; knob.style.top='33px'; });
-addEventListener('keydown', e=>{ if(e.key==='a'||e.key==='A') doAttack(); if(e.key===' '||e.key==='s'||e.key==='S') doSkill(); if(e.key==='q'||e.key==='Q') doVolley(); if(e.key==='e'||e.key==='E') doQuake(); if(e.key==='w'||e.key==='W') doWard(); if(e.key==='Shift') doRoll(); });
+addEventListener('keydown', e=>{ if(e.key==='a'||e.key==='A') doAttack(); if(e.key===' '||e.key==='s'||e.key==='S') doSkill(); if(e.key==='q'||e.key==='Q') doVolley(); if(e.key==='e'||e.key==='E') doQuake(); if(e.key==='w'||e.key==='W') doWard(); if(e.key==='w'||e.key==='W') doWard(); if(e.key==='Shift') doRoll(); });
 $('volley').addEventListener('touchstart', e=>{ doVolley(); e.preventDefault(); }, {passive:false});
 $('volley').addEventListener('mousedown', doVolley);
 $('quake').addEventListener('touchstart', e=>{ doQuake(); e.preventDefault(); }, {passive:false});
 $('quake').addEventListener('mousedown', doQuake);
+$('ward').addEventListener('touchstart', e=>{ doWard(); e.preventDefault(); }, {passive:false});
+$('ward').addEventListener('mousedown', doWard);
 $('ward').addEventListener('touchstart', e=>{ doWard(); e.preventDefault(); }, {passive:false});
 $('ward').addEventListener('mousedown', doWard);
 $('atk').addEventListener('touchstart', e=>{ doAttack(); e.preventDefault(); }, {passive:false});
@@ -294,6 +298,12 @@ function knockEcho(d){
   S.echo.position.addScaledVector(dir, d);
 }
 
+function doWard(){
+  if (S.mode!=='giant' || wardCD>0 || S.riseT>0) return;
+  wardCD = 4.5; S.ward = 0.8;
+  S.wardMesh.visible = true;
+}
+
 // echo behavior
 let echoState = {act:'idle', t:0, next: 1.2};
 function dmgEcho(d){
@@ -381,6 +391,7 @@ function echoAct(dt){
 }
 function hurtPlayer(d){
   if (S.mode!=='giant' || S.invulnG>0) return;
+  if (S.ward > 0){ S.ward = 0; S.camShake = 0.5; S.hitStop = 0.08; return; }  // the VOW shields the god — WARD blocks
   if (S.wardT > 0){ S.faith = Math.min(100, S.faith + 10); S.camShake = 0.35; return; } // the WARD drinks it
   S.hp = Math.max(0, S.hp - d); $('hp-bar').firstElementChild.style.width = S.hp+'%';
   S.camShake = 0.9; S.invulnG = 0.5;
@@ -458,7 +469,7 @@ function loop(now){
   if (S.hitStop>0){ S.hitStop-=dt; dt *= 0.15; }
   S.time += dt;
   atkCD -= dt; skillCD -= dt; volleyCD -= dt; quakeCD -= dt; wardCD -= dt; S.wardT -= dt; S.invulnG -= dt; S.nameHold -= dt;
-  showCd('skill-cd', skillCD); showCd('volley-cd', volleyCD); showCd('quake-cd', quakeCD);
+  showCd('skill-cd', skillCD); showCd('volley-cd', volleyCD); showCd('quake-cd', quakeCD); showCd('ward-cd', wardCD);
 
   if (S.mode==='giant' || S.mode==='transition'){
     if (S.mode==='giant'){
@@ -553,18 +564,18 @@ function loop(now){
     const t = S.shot.t;
     let pos, look, fov = 46;
     if (S.shot.name === 'wide'){       // classic wide of the duel
-      pos = mid.clone().addScaledVector(perp, 46).add(new THREE.Vector3(0, 17, 0)); look = mid.clone().setY(11); fov = 46;
+      pos = mid.clone().addScaledVector(perp, 68).add(new THREE.Vector3(0, 24, 0)); look = mid.clone().setY(11); fov = 48;
     } else if (S.shot.name === 'orbit'){ // slow crane around the battle
       const a = S.time*0.085;
-      pos = new THREE.Vector3(mid.x+Math.cos(a)*42, 13+Math.sin(t*0.05)*5, mid.z+Math.sin(a)*42); look = mid.clone().setY(10); fov = 42;
+      pos = new THREE.Vector3(mid.x+Math.cos(a)*62, 22+Math.sin(t*0.05)*6, mid.z+Math.sin(a)*62); look = mid.clone().setY(10); fov = 44;
     } else if (S.shot.name === 'low-hero'){ // ground-level hero angle looking UP at the gods
-      pos = mid.clone().addScaledVector(perp, 24).add(new THREE.Vector3(Math.sin(t*0.2)*6, 2.2, 0)); look = S.echo.position.clone().setY(15); fov = 55;
+      pos = mid.clone().addScaledVector(perp, 38).add(new THREE.Vector3(Math.sin(t*0.2)*6, 2.4, 0)); look = S.echo.position.clone().setY(15); fov = 56;
     } else if (S.shot.name === 'echo'){ // tight on the Echo winding up
-      pos = S.echo.position.clone().addScaledVector(perp, 19).add(new THREE.Vector3(0, 13, 0)); look = S.echo.position.clone().setY(15); fov = 36;
+      pos = S.echo.position.clone().addScaledVector(perp, 26).add(new THREE.Vector3(0, 15, 0)); look = S.echo.position.clone().setY(15); fov = 40;
     } else if (S.shot.name === 'impact'){ // impact cut on the stagger
-      pos = S.echo.position.clone().addScaledVector(perp, 13).add(new THREE.Vector3(0, 5, 0)); look = S.echo.position.clone().setY(13); fov = 52;
+      pos = S.echo.position.clone().addScaledVector(perp, 19).add(new THREE.Vector3(0, 6, 0)); look = S.echo.position.clone().setY(13); fov = 54;
     } else {                            // opener: the Gate frames the duel
-      pos = new THREE.Vector3(mid.x*0.4, 16, -48); look = mid.clone().setY(12); fov = 40;
+      pos = new THREE.Vector3(mid.x*0.4, 26, -66); look = mid.clone().setY(12); fov = 46;
     }
     if (S.snapCam){ camera.position.copy(pos); S.snapCam = false; } else camera.position.lerp(pos, 0.07);
     camera.fov += (fov - camera.fov)*0.12; camera.updateProjectionMatrix();
