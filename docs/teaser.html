@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AVALON: THE WAKING GATES — Teaser</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#000;overflow:hidden;font-family:Georgia,'Times New Roman',serif;color:#e8dcc8}
+  #stage{position:fixed;inset:0}
+  canvas{display:block}
+  #grain{position:fixed;inset:0;pointer-events:none;z-index:8;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E")}
+  #vignette{position:fixed;inset:0;pointer-events:none;z-index:7;background:radial-gradient(ellipse at center,transparent 50%,rgba(0,0,0,.55) 82%,rgba(0,0,0,.92) 100%)}
+  #lt,#lb{position:fixed;left:0;right:0;height:11%;background:#000;z-index:9;pointer-events:none}
+  #lt{top:0}#lb{bottom:0}
+  .card{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:10;pointer-events:none;text-align:center;opacity:0;transition:opacity 1.2s}
+  .card.show{opacity:1}
+  .card .t{font-style:italic;letter-spacing:6px;color:#e8dcc8;font-size:clamp(13px,2.6vw,22px);text-shadow:0 2px 18px #000;padding:0 6vw;line-height:2}
+  #card-title .t1{font-size:clamp(44px,10vw,110px);letter-spacing:22px;color:#ffdca8;font-style:normal;text-shadow:0 0 40px rgba(200,110,30,.35),0 4px 30px #000;margin-bottom:1vh}
+  #card-title .t2{font-size:clamp(13px,2.4vw,22px);letter-spacing:10px;color:#b9a885;font-style:italic}
+  #card-date .t{font-size:clamp(14px,2.2vw,20px);letter-spacing:12px;color:#9a8b6f}
+  #splash{position:fixed;inset:0;background:#000;z-index:20;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:22px}
+  #splash .sigil{font-size:52px;opacity:.9}
+  #splash h1{font-size:clamp(15px,2.6vw,22px);letter-spacing:10px;font-weight:normal;color:#e8dcc8;font-style:italic}
+  #splash p{font-size:10px;letter-spacing:4px;color:#6d6355}
+  #playbtn{margin-top:8px;background:transparent;border:1px solid #5a4426;color:#ffdca8;font-family:inherit;font-size:14px;letter-spacing:6px;padding:14px 38px;cursor:pointer;transition:all .3s}
+  #playbtn:hover{border-color:#c47a2a;box-shadow:0 0 30px rgba(200,110,30,.3)}
+  #endcard{position:fixed;inset:0;background:#000;z-index:15;display:none;align-items:center;justify-content:center;flex-direction:column;gap:20px}
+  #endcard.show{display:flex}
+  #endcard h1{font-size:clamp(26px,5vw,44px);letter-spacing:14px;color:#ffdca8;font-weight:normal;font-style:italic}
+  #endcard a{color:#9a8b6f;font-size:11px;letter-spacing:4px;text-decoration:none;margin:4px}
+  #endcard a:hover{color:#ffdca8}
+  #replay{background:transparent;border:1px solid #5a4426;color:#ffdca8;font-family:inherit;font-size:12px;letter-spacing:5px;padding:11px 26px;cursor:pointer;margin-top:10px}
+  #mute{position:fixed;bottom:12.5%;right:18px;z-index:11;background:rgba(0,0,0,.4);border:1px solid #3a2f22;color:#9a8b6f;font-size:9px;letter-spacing:2px;padding:6px 10px;cursor:pointer;font-family:inherit;opacity:0;transition:opacity .5s}
+  #mute.show{opacity:1}
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<div id="grain"></div><div id="vignette"></div><div id="lt"></div><div id="lb"></div>
+<div class="card" id="card-1"><div class="t">IN THE AGE AFTER THE FORGETTING</div></div>
+<div class="card" id="card-2"><div class="t">THE ROADS REMEMBER WHAT THE WORLD FORGOT</div></div>
+<div class="card" id="card-3"><div class="t">AND ONE FLAME STILL KEEPS THE WAY</div></div>
+<div class="card" id="card-title"><div><div class="t1">AVALON</div><div class="t2">THE WAKING GATES</div></div></div>
+<div class="card" id="card-date"><div class="t">2027</div></div>
+<div id="mute">SOUND ON</div>
+<div id="splash"><div class="sigil">🗿</div><h1>AVALON — THE WAKING GATES</h1><p>OFFICIAL TEASER — PRESS PLAY</p><button id="playbtn">▶ BEGIN</button></div>
+<div id="endcard">
+  <h1>AVALON — THE WAKING GATES</h1>
+  <a href="https://bude404-ops.github.io/avalon-the-waking-gates/combat.html">COMBAT ANIMATIONS</a>
+  <a href="https://bude404-ops.github.io/avalon-the-waking-gates/scenes.html">IN-GAME SCENES</a>
+  <a href="https://bude404-ops.github.io/avalon-the-waking-gates/depths-embermere.html">THE DEPTHS — PLAYABLE</a>
+  <button id="replay">↺ WATCH AGAIN</button>
+</div>
+<script type="importmap">
+{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+
+const renderer=new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(2,devicePixelRatio));
+renderer.setSize(innerWidth,innerHeight);
+renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.0;
+document.getElementById('stage').appendChild(renderer.domElement);
+const scene=new THREE.Scene();
+scene.background=new THREE.Color(0x000000);
+scene.fog=new THREE.FogExp2(0x060504,0.055);
+const camera=new THREE.PerspectiveCamera(42,innerWidth/innerHeight,0.1,300);
+
+scene.add(new THREE.AmbientLight(0x574a3a,0.35));
+const moon=new THREE.DirectionalLight(0x6a7a9a,0.55);moon.position.set(-8,14,-10);scene.add(moon);
+const key=new THREE.DirectionalLight(0xffdca8,0.001);key.position.set(4,10,6);scene.add(key);
+const lantern=new THREE.PointLight(0xff8a34,0,7);scene.add(lantern);
+const gateGlow=new THREE.PointLight(0xff7a24,0,16);gateGlow.position.set(0,1.4,0);scene.add(gateGlow);
+const godLight=new THREE.PointLight(0xff5a14,0,34);godLight.position.set(0,7,-6);scene.add(godLight);
+
+// ground + road
+const ground=new THREE.Mesh(new THREE.PlaneGeometry(400,400),new THREE.MeshStandardMaterial({color:0x0d0a08,roughness:1}));
+ground.rotation.x=-Math.PI/2;scene.add(ground);
+const road=new THREE.Mesh(new THREE.PlaneGeometry(3.4,120),new THREE.MeshStandardMaterial({color:0x181310,roughness:1}));
+road.rotation.x=-Math.PI/2;road.position.set(0,0.01,-6);scene.add(road);
+// the gate — rugged trilithon, zero glow in the stone
+const stoneMat=new THREE.MeshStandardMaterial({color:0x2e2a26,roughness:0.98});
+function slab(w,h,d,x,y,z,rz=0){const s=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),stoneMat);s.position.set(x,y,z);s.rotation.z=rz;s.geometry.attributes.position.array.forEach(()=>0);scene.add(s);return s}
+slab(0.9,4.6,1.0,-1.55,2.3,0);slab(0.9,4.6,1.0,1.55,2.3,0);slab(4.6,0.9,1.2,0,5.05,0);
+// rise ring
+const ring=new THREE.Mesh(new THREE.RingGeometry(2.2,2.35,48),new THREE.MeshBasicMaterial({color:0xff7a24,transparent:true,opacity:0}));
+ring.rotation.x=-Math.PI/2;ring.position.set(0,0.03,0);scene.add(ring);
+// ember particles
+const EMB=140,eGeo=new THREE.BufferGeometry(),ePos=new Float32Array(EMB*3);
+for(let i=0;i<EMB;i++){ePos[i*3]=(Math.random()-0.5)*10;ePos[i*3+1]=Math.random()*8;ePos[i*3+2]=(Math.random()-0.5)*10}
+eGeo.setAttribute('position',new THREE.BufferAttribute(ePos,3));
+const embers=new THREE.Points(eGeo,new THREE.PointsMaterial({color:0xff9a3c,size:0.05,transparent:true,opacity:0,blending:THREE.AdditiveBlending,depthWrite:false}));
+scene.add(embers);
+
+const loader=new GLTFLoader();
+let pilWalk=null,pilIdle=null,god=null,mixers=[],walking=true;
+function fit(model,h){const b=new THREE.Box3().setFromObject(model);const s=h/b.getSize(new THREE.Vector3()).y;model.scale.setScalar(s);const b2=new THREE.Box3().setFromObject(model);model.position.y-=b2.min.y;}
+
+function start(){document.getElementById('splash').style.display='none';
+  document.getElementById('mute').classList.add('show');
+  Promise.all([
+    new Promise(r=>loader.load('models/WARDEN-M-WALK.glb',g=>r(g))),
+    new Promise(r=>loader.load('models/WARDEN-M-IDLE.glb',g=>r(g))),
+    new Promise(r=>loader.load('models/VAELTHORN-IDLE.glb',g=>r(g))),
+  ]).then(([w,i,g])=>{
+    pilWalk=w.scene;pilIdle=i.scene;god=g.scene;
+    [pilWalk,pilIdle,god].forEach(m=>m.traverse(o=>{if(o.isMesh){o.castShadow=false;o.frustumCulled=false}}));
+    fit(pilWalk,1.55);fit(pilIdle,1.55);fit(god,9.5);
+    scene.add(pilWalk);
+    pilWalk.rotation.y=0;
+    god.position.set(0,-10.5,0);scene.add(god);
+    const mw=new THREE.AnimationMixer(pilWalk);mw.clipAction(w.animations[0]).play();
+    const mi=new THREE.AnimationMixer(pilIdle);mi.clipAction(i.animations[0]).play();
+    const mg=new THREE.AnimationMixer(god);mg.clipAction(g.animations[0]).play();
+    mixers=[mw,mi,mg];
+    t0=performance.now();audio();tick();
+  }).catch(()=>{document.getElementById('splash').innerHTML='<p style="color:#c5502f;letter-spacing:3px">THE WAY IS BLOCKED — MESHES UNREACHABLE</p>'});
+}
+document.getElementById('playbtn').addEventListener('click',start);
+document.getElementById('replay').addEventListener('click',()=>{location.reload()});
+
+// ------- audio -------
+let AC,master;
+function audio(){
+  AC=new (window.AudioContext||window.webkitAudioContext)();
+  master=AC.createGain();master.gain.value=0.8;master.connect(AC.destination);
+  // drone
+  const dGain=AC.createGain();dGain.gain.setValueAtTime(0.0001,AC.currentTime);
+  dGain.gain.exponentialRampToValueAtTime(0.14,AC.currentTime+8);
+  const lp=AC.createBiquadFilter();lp.type='lowpass';lp.frequency.value=220;
+  [55,55.7,110.3].forEach(f=>{const o=AC.createOscillator();o.type='sawtooth';o.frequency.value=f;const og=AC.createGain();og.gain.value=0.33;o.connect(og);og.connect(lp);o.start()});
+  lp.connect(dGain);dGain.connect(master);
+  // sub swell at the rise
+  const sub=AC.createOscillator();sub.type='sine';sub.frequency.value=36;
+  const sg=AC.createGain();sg.gain.setValueAtTime(0.0001,AC.currentTime);
+  sub.connect(sg);sg.connect(master);sub.start();
+  window._swell=(t,peak,dur)=>{sg.gain.cancelScheduledValues(t);sg.gain.setValueAtTime(0.0001,t);sg.gain.exponentialRampToValueAtTime(peak,t+dur)};
+}
+function thump(vol=0.5){if(!AC)return;const t=AC.currentTime;const o=AC.createOscillator();o.type='sine';o.frequency.setValueAtTime(88,t);o.frequency.exponentialRampToValueAtTime(30,t+0.25);
+  const g=AC.createGain();g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.35);o.connect(g);g.connect(master);o.start(t);o.stop(t+0.4)}
+// ------- timeline -------
+let t0=null;
+const SHOTS={ // seconds
+  walk:{s:5,e:24}, approach:{s:24,e:40}, rise:{s:40,e:58}, hold:{s:58,e:64}, titles:{s:64,e:80}
+};
+const cards=[
+  {el:'card-1',s:1.5,e:6.5},{el:'card-2',s:26,e:32},{el:'card-3',s:33.5,e:38.5},
+  {el:'card-title',s:65.5,e:74},{el:'card-date',s:74.5,e:80}
+];
+function lerp(a,b,t){return a+(b-a)*t}
+function ease(t){return t<0?0:t>1?1:t*t*(3-2*t)}
+const cam=new THREE.Vector3();
+function camAt(T,shk){
+  // shot 1-2: low tracking, pilgrim walks toward gate from far
+  if(T<SHOTS.approach.e){ // walk phase (camera pans along the approach)
+    const p=Math.min(1,Math.max(0,(T-5)/(SHOTS.walk.e-5)));
+    const z=lerp(-2,-11,p); // camera retreats down the road ahead of him
+    cam.set(0.9,0.75,z);
+    const look=new THREE.Vector3(0,1.15,lerp(-30,2.2,p));
+    camera.lookAt(look);
+  } else if(T<SHOTS.rise.e){ // gate approach: behind pilgrim push to arch
+    const p=ease((T-SHOTS.approach.s)/(SHOTS.approach.e-SHOTS.approach.s));
+    cam.set(lerp(1.2,0.6,p),lerp(1.6,1.0,p),lerp(-11,-5.5,p));
+    camera.lookAt(0,lerp(1.4,2.8,p),0);
+  } else if(T<SHOTS.hold.e){ // the rise: low hero angle looking up
+    const p=(T-SHOTS.rise.s)/(SHOTS.rise.e-SHOTS.rise.s);
+    cam.set(lerp(0.6,3.2,ease(p)),lerp(0.7,1.6,p),lerp(-5.5,-7.5,p));
+    camera.lookAt(0,lerp(2.2,6.5,p),0);
+  } else { // hold: slow crane up
+    const p=(T-SHOTS.hold.s)/(SHOTS.titles.e-SHOTS.hold.s);
+    cam.set(3.2,lerp(1.6,4.5,p),-7.5);
+    camera.lookAt(0,5,0);
+  }
+  camera.position.copy(cam);
+  if(shk>0){camera.position.x+=(Math.random()-0.5)*shk;camera.position.y+=(Math.random()-0.5)*shk}
+}
+let heartNext=0,titleHit=false;
+function tick(){
+  requestAnimationFrame(tick);
+  if(t0===null)return;
+  const dt=clock.getDelta();
+  mixers.forEach(m=>m.update(dt));
+  const T=(performance.now()-t0)/1000;
+  // pilgrim travel: from z=-30 to z=-2.8 over walk phase
+  if(T<SHOTS.walk.e){
+    pilWalk.position.z=lerp(-30,-2.8,Math.min(1,(T-4)/(SHOTS.walk.e-4)));
+    lantern.position.set(pilWalk.position.x+0.25,1.0,pilWalk.position.z+0.2);
+    lantern.intensity=Math.min(6,(T-2)*1.2);
+  } else {
+    // swap to idle at the gate
+    if(walking){walking=false;scene.remove(pilWalk);scene.add(pilIdle);pilIdle.position.set(0,0,-2.8);pilIdle.rotation.y=0}
+    lantern.position.set(0.25,1.0,-2.6);
+    if(T<SHOTS.rise.e)lantern.intensity=6;
+  }
+  // the rise
+  if(T>=SHOTS.rise.s&&T<SHOTS.rise.e){
+    const p=ease((T-SHOTS.rise.s)/(SHOTS.rise.e-SHOTS.rise.s));
+    god.position.y=lerp(-10.5,0,p);
+    godLight.intensity=p*90;gateGlow.intensity=p*14;
+    ring.material.opacity=p*0.55;embers.material.opacity=p*0.9;
+    key.intensity=p*1.4;
+    const shk=(1-p)*0.05+0.012;
+    camAt(T,shk);
+    if(window._swell&&T<SHOTS.rise.s+0.2){window._swell(AC.currentTime,0.5,14)}
+    if(T>heartNext){thump(0.4+0.3*p);heartNext=T+lerp(1.4,0.55,p)}
+    return afterCam(dt,T);
+  }
+  camAt(T, T>SHOTS.rise.e?0:0);
+  afterCam(dt,T);
+}
+function afterCam(dt,T){
+  // embers drift
+  const pos=embers.geometry.attributes.position;const arr=pos.array;
+  for(let i=0;i<EMB;i++){arr[i*3+1]+=dt*(0.25+((i%7)*0.05));if(arr[i*3+1]>8)arr[i*3+1]=0}
+  pos.needsUpdate=true;
+  embers.material.opacity=Math.min(0.9,Math.max(0,T-SHOTS.rise.s)*0.5);
+  // cards
+  cards.forEach(c=>{const el=document.getElementById(c.el);
+    if(T>=c.s&&T<=c.e)el.classList.add('show');else el.classList.remove('show')});
+  if(T>=SHOTS.titles.e&&!titleHit){titleHit=true;
+    document.getElementById('endcard').classList.add('show');
+    document.getElementById('mute').classList.remove('show');
+    if(master)master.gain.linearRampToValueAtTime(0.12,AC.currentTime+2);
+  }
+  renderer.render(scene,camera);
+}
+const clock=new THREE.Clock();
+addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});
+</script>
+</body>
+</html>
