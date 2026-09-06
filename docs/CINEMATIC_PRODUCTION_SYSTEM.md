@@ -119,6 +119,7 @@ Every future cinematic cites its source files per shot in the shot list — trac
 
 ---
 
-## 8. SYSTEM PROOF
+## 8. SYSTEM PROOFS (deployed, both wired into the menu GALLERY)
 
-`cinematic-system-demo.html` (deployed) — SYSTEM PROOF 01: a four-beat Ashfall sequence proving the full doctrine: establish (world card) → spectacle (Vaelthorn's emergence) → QUIET (the Kiln Road, character beat) → tension (T3 Echo) → threshold close. Canon assets only; one narration card; ember-true particles; beat grammar per §3.
+- **`cinematic-system-demo.html` — SYSTEM PROOF 01 (Type A):** a four-beat Ashfall sequence proving the full doctrine: establish (world card) → spectacle (Vaelthorn's emergence) → QUIET (the Kiln Road, character beat) → tension (T3 Echo) → threshold close. Canon assets only; one narration card per beat; ember-true particles; WebAudio score with the spectacle-swell / quiet-drop grammar; beat grammar per §3.
+- **`cinematic-encounter.html` — SYSTEM PROOF 02 (Type C):** Morvaine boss-encounter cinematic — canon emergence art, zero regeneration, ends on the match-cut gameplay transition ("the cinematic ends where the gameplay begins — same god, same gate") per §4.3 and §6.
