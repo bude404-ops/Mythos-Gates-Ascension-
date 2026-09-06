@@ -349,10 +349,18 @@ function loop(now){
 
   if (S.mode==='giant' || S.mode==='transition'){
     if (S.mode==='giant'){
-      const v = new THREE.Vector3(stickVec.x, 0, stickVec.y).multiplyScalar(9*dt);
+      // side-view battle cam: stick-x = advance/retreat along the duel axis, stick-y = step toward/away from camera
+      const axis = S.echo.position.clone().sub(S.player.position).setY(0);
+      const alen = Math.max(0.001, axis.length()); axis.divideScalar(alen);
+      let perp = new THREE.Vector3(-axis.z, 0, axis.x);
+      if (S.lastPerp && perp.dot(S.lastPerp) < 0) perp.negate();
+      S.lastPerp = perp.clone(); S.curPerp = perp.clone();
+      const scrR = new THREE.Vector3(perp.z, 0, -perp.x);       // screen-right in world space
+      const depth = perp.clone().multiplyScalar(-1);            // away from camera
+      const v = scrR.clone().multiplyScalar(stickVec.x*9*dt).add(depth.clone().multiplyScalar(-stickVec.y*6*dt));
       if (v.lengthSq()>0.0001){
         S.player.position.add(v);
-        S.player.lookAt(S.player.position.x+stickVec.x, 0, S.player.position.z+stickVec.y);
+        S.player.lookAt(S.echo.position.x, 0, S.echo.position.z); // duelist stance: always face your enemy
       }
       if (S.player.position.length()>52) S.player.position.setLength(52);
       const drained = isInDrainedZone(S.player.position);
@@ -385,10 +393,15 @@ function loop(now){
         r.rotation.x = -Math.PI/2; r.position.y = 0.12; scene.add(r); g.m = r;
       } else { g.m.geometry.dispose(); g.m.geometry = new THREE.RingGeometry(Math.max(0.1,g.r), g.r+1.4, 64); }
     }
+    // SIDE VIEW OF THE BATTLE (BudE404 verdict): camera perpendicular to the duel axis, both colossi in profile
     const p = S.player.position;
-    const back = new THREE.Vector3(0,0,1).applyQuaternion(S.player.quaternion);
-    camera.position.lerp(new THREE.Vector3(p.x + back.x*26, 17, p.z + back.z*26), 0.08);
-    camera.lookAt(p.x, 12, p.z-6);
+    const mid = p.clone().add(S.echo.position).multiplyScalar(0.5);
+    const gap = p.distanceTo(S.echo.position);
+    const perp = (S.curPerp || new THREE.Vector3(1,0,0)).clone();
+    const dist = THREE.MathUtils.clamp(26 + gap*0.32, 32, 46);
+    const camT = mid.clone().addScaledVector(perp, dist).add(new THREE.Vector3(0, 15, 0));
+    camera.position.lerp(camT, 0.06);
+    camera.lookAt(mid.x, 11, mid.z);
     if (S.camShake>0){ S.camShake-=dt*2; camera.position.x += (Math.random()-.5)*S.camShake; camera.position.y += (Math.random()-.5)*S.camShake*0.6; }
     renderer.render(scene, camera);
   }
@@ -421,8 +434,9 @@ function loop(now){
     S.heart.rotation.y += dt*0.6;
     const pp = S.pilgrim.position;
     S.woundCam.aspect = W()/H(); S.woundCam.updateProjectionMatrix();
-    S.woundCam.position.lerp(new THREE.Vector3(pp.x, 6.2, pp.z+11), 0.14);
-    S.woundCam.lookAt(pp.x, 3.4, pp.z-6);
+    // FRONT VIEW (BudE404 verdict): camera ahead of the pilgrim in the corridor, facing his front as he advances
+    S.woundCam.position.lerp(new THREE.Vector3(pp.x*0.5, 6.4, pp.z-10.5), 0.12);
+    S.woundCam.lookAt(pp.x*0.85, 3.2, pp.z+2);
     if (S.camShake>0){ S.camShake-=dt*2; S.woundCam.position.x += (Math.random()-.5)*S.camShake; }
     renderer.render(S.woundScene, S.woundCam);
   }
