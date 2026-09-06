@@ -291,7 +291,6 @@ function staggerEcho(){
   if (S.telegraph){ scene.remove(S.telegraph.m); S.telegraph = null; }
   echoState.act = 'idle'; echoState.t = 0; echoState.next = 1.6;
   S.staggerT = 0.7;
-  S.cutReq = 'impact';
 }
 function knockEcho(d){
   const dir = S.echo.position.clone().sub(S.player.position).setY(0).normalize();
@@ -333,7 +332,6 @@ function echoAct(dt){
       else if (r < 0.82) e.act = 'slam';
       else e.act = 'beam';
       e.t = 0;
-      if (S.time - (S.lastEchoCut||-99) > 9 && Math.random() < 0.5){ S.cutReq = 'echo'; S.lastEchoCut = S.time; }
       if (e.act === 'shed'){
         const tg = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.6, 40), new THREE.MeshBasicMaterial({color:0x1a1a20, transparent:true, opacity:0.6}));
         tg.position.copy(S.echo.position).add(new THREE.Vector3(0, 12, 0));
@@ -547,39 +545,14 @@ function loop(now){
       if (g.wave && !g.hitP && Math.abs(g.r - S.player.position.distanceTo(S.echo.position)) < 2.2){ g.hitP = true; hurtPlayer(8); }
       if (g.r > 70){ scene.remove(g.m); S.grayRings.splice(i,1); }
     }
-    // CINEMATIC DIRECTOR (BudE404: watch the god-fight like a movie while controlling the attacks)
+    // SIDE VIEW OF THE BATTLE (BudE404 verdict: GOD VS GOD = side view of the duel — god vs waves/anything else = camera facing its front)
     const p = S.player.position;
     const mid = p.clone().add(S.echo.position).multiplyScalar(0.5);
     const perp = (S.curPerp || new THREE.Vector3(1,0,0)).clone();
-    if (!S.shot) S.shot = {name:'gate', t:0, dur:6};
-    S.shot.t += dt;
-    if (S.cutReq){ S.shot = {name:S.cutReq, t:0, dur: S.cutReq==='impact' ? 1.5 : 4}; S.cutReq = null; S.snapCam = true; }
-    else if (S.shot.t > S.shot.dur){
-      const pool = ['wide','orbit','low-hero','echo','wide','orbit','low-hero'];
-      let nxt = pool[Math.floor(Math.random()*pool.length)];
-      if (nxt === S.shot.name) nxt = nxt==='orbit' ? 'wide' : 'orbit';
-      S.shot = {name:nxt, t:0, dur: 4.5+Math.random()*3};
-      S.snapCam = true;
-    }
-    const t = S.shot.t;
-    let pos, look, fov = 46;
-    if (S.shot.name === 'wide'){       // classic wide of the duel
-      pos = mid.clone().addScaledVector(perp, 68).add(new THREE.Vector3(0, 24, 0)); look = mid.clone().setY(11); fov = 48;
-    } else if (S.shot.name === 'orbit'){ // slow crane around the battle
-      const a = S.time*0.085;
-      pos = new THREE.Vector3(mid.x+Math.cos(a)*62, 22+Math.sin(t*0.05)*6, mid.z+Math.sin(a)*62); look = mid.clone().setY(10); fov = 44;
-    } else if (S.shot.name === 'low-hero'){ // ground-level hero angle looking UP at the gods
-      pos = mid.clone().addScaledVector(perp, 38).add(new THREE.Vector3(Math.sin(t*0.2)*6, 2.4, 0)); look = S.echo.position.clone().setY(15); fov = 56;
-    } else if (S.shot.name === 'echo'){ // tight on the Echo winding up
-      pos = S.echo.position.clone().addScaledVector(perp, 26).add(new THREE.Vector3(0, 15, 0)); look = S.echo.position.clone().setY(15); fov = 40;
-    } else if (S.shot.name === 'impact'){ // impact cut on the stagger
-      pos = S.echo.position.clone().addScaledVector(perp, 19).add(new THREE.Vector3(0, 6, 0)); look = S.echo.position.clone().setY(13); fov = 54;
-    } else {                            // opener: the Gate frames the duel
-      pos = new THREE.Vector3(mid.x*0.4, 26, -66); look = mid.clone().setY(12); fov = 46;
-    }
-    if (S.snapCam){ camera.position.copy(pos); S.snapCam = false; } else camera.position.lerp(pos, 0.07);
-    camera.fov += (fov - camera.fov)*0.12; camera.updateProjectionMatrix();
-    camera.lookAt(look);
+    const camT = mid.clone().addScaledVector(perp, 64).add(new THREE.Vector3(0, 24, 0));   // zoomed out — the full scene reads
+    camera.position.lerp(camT, 0.06);
+    camera.fov += (50 - camera.fov)*0.1; camera.updateProjectionMatrix();
+    camera.lookAt(mid.x, 11, mid.z);
     if (S.camShake>0){ S.camShake-=dt*2; camera.position.x += (Math.random()-.5)*S.camShake; camera.position.y += (Math.random()-.5)*S.camShake*0.6; }
     renderer.render(scene, camera);
   }
