@@ -12,7 +12,7 @@ The bridge, the watchtower, the bulwark, the gate pillars' channel-stones. Full 
 
 ### TIER B — PATTERN DESTRUCTIBLES (all standard battlefield walls, fences, ruin chunks, rock spires)
 Destruction **patterns authored once, applied everywhere** via context tags:
-- **RUBBLE-COVER** — broken pieces become sprite-scale cover (and giant-scale nothing)
+- **RUBBLE-COVER** — broken pieces become pilgrim-scale cover (and giant-scale nothing)
 - **LANE-BLOCK** — a collapsed mass blocks an enemy wave path until it decays
 - **SEEP-POINT** — broken stone oozes a minor Hollow seep for 30–60s (light wound; corruption creeps through YOUR rubble)
 - **PASSAGE** — a breach becomes a new route (dual-edge: yours AND theirs)
@@ -61,7 +61,7 @@ The line that governs all of it: **sell identity, never power.** The master ques
 ### PETS — EMBERLINGS (the mote companions)
 **The lore-perfect pet: a mote of YOUR OWN deity's element** — the god's own flame, small enough to sit on the warden's shoulder. Every faction's pets speak its element: Embermere emberlings, Galemarch static-wisps, Bloomweald seedlings, Gloambarrow lantern-motes, Marenvale brinelings, Stonefell pebble-sprites.
 
-- **Scale-dual by design**: at sprite scale it follows as a living lantern beside you; at manifestation/ascension it perches on the god's shoulder or circles the colossal head like a stray mote — your pet present at BOTH scales (monetization that reinforces the identity, not off-brand fluffy commerce).
+- **Scale-dual by design**: at pilgrim scale it follows as a living lantern beside you; at manifestation/ascension it perches on the god's shoulder or circles the colossal head like a stray mote — your pet present at BOTH scales (monetization that reinforces the identity, not off-brand fluffy commerce).
 - **Utility = QoL only**: faith-mote vacuum radius, idle emotes, a soft chime near undiscovered secrets. NEVER combat: no damage, no buffs, no faith generation, no gate integrity effects. A pet cannot touch the economy, period.
 - **Earnable AND purchasable**: rare pet lines come from achievements (Endless Verdict ranks, discovery milestones, hunts) and seasonal events; standard lines are sold. Collection/growth is cosmetic (pets evolve visually through achievements you perform WITH them).
 
@@ -92,7 +92,7 @@ The Emberlings are now **elemental pixies** — tiny kin of your deity's own ele
 **ONE COMPANION, TWO LIGHTS — PIXIE AND RELIC ARE ONE (BudE404 ruling, Sept 5):** The pixie and the Cold Lantern relic are the SAME being — the pixie WEARS the lantern as its attire. The relic gave the flame a house; the flame gave the relic a soul. Mechanically the roles stay distinct: **the flame illuminates** (the pixie's own glow — deed-fed light tiers, navigation/discovery only, never combat power) and **the lantern it wears protects** (the death-crypt safe-zone light, earned with the relic in-game). The fusion also fixes a real redundancy — one companion, one silhouette in the dungeon instead of two floating lights. GUARDRAIL, non-negotiable: the lantern attire arrives ONLY when the Cold Lantern relic is earned in-game — never sold, never bundled, never granted by any purchase. Pet sales = pixie reskins + lantern STYLE variants for players who already earned it (cosmetic only). Protection stays unpurchasable; brightness stays deed-fed. A bare-flame pixie (no relic yet) vs a lantern-donned pixie is now a VISIBLE BADGE of pilgrimage progress — deeds you can wear. Day-one player and whale: identical function, different fashion. This keeps the pet on the right side of "sell identity, never power" even inside light-based dungeon mechanics.
 
 ### Dual-scale presence
-At sprite scale: circles you as a living lantern. At manifestation/ascension: a mote circling the COLOSSAL HEAD — your little flame riding on the god's shoulder. Same pet, both scales — monetization that reinforces the identity.
+At pilgrim scale: circles you as a living lantern. At manifestation/ascension: a mote circling the COLOSSAL HEAD — your little flame riding on the god's shoulder. Same pet, both scales — monetization that reinforces the identity.
 
 ### Monetization — reskins only (light level never sold)
 - **PIXIE LINES per faction** (the base skins): Embermere emberling, Galemarch static-wisp, Bloomweald seedling, Gloambarrow lantern-mote, Marenvale brineling, Stonefell pebble-sprite
@@ -126,7 +126,7 @@ Same combat verbs underneath (so mastery transfers) — different games on top (
 The Trials are no longer one ladder — they are THREE, because players who just want to fight should pick their scale:
 
 ### 1. THE WARDEN'S TRIAL (sprite lane)
-Pure sprite-combat floors: precision waves, dodge/parry mastery, elite duels, lantern-vs-darkness pressure floors, sprite-scale bosses. For players who love the tight combat and never want to grow.
+Pure pilgrim-combat floors: precision waves, dodge/parry mastery, elite duels, lantern-vs-darkness pressure floors, pilgrim-scale bosses. For players who love the tight combat and never want to grow.
 Score grammar: no-hit streaks, parry counts, style multipliers, wave count.
 
 ### 2. THE COLOSSUS TRIAL (giant lane)

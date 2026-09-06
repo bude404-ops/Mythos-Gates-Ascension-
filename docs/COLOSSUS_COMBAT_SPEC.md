@@ -114,11 +114,11 @@ Colossi are now TRUE DRAGONS (True Dragon Vessel Law). Dragon-unit rebasing:
 - Colossi are now BIPEDAL RAW ELEMENTAL GIANTS (zero armor, pure living element) — back on the standard humanoid rig pipeline (Meshy→Mixamo flow returns for colossi; the custom quadruped-rig debt is CANCELLED).
 - KITS per Gender-Role Binding: male giants wield element-forged GREATSWORDS (condensed flame/storm/bark), female giants wield element-forged STAVES. Natural-layer attacks (sweep, slam, stomp, element-burst) remain the base kit beneath the weapon.
 - Scale/weight/game-feel numbers from §6 carry over 1:1 (giant-unit rebasing, Tower Wave ultimates, trauma cam, cratering).
-- (Historical name: 'human aspect combat') becomes SPRITE-SCALE combat: the mortal RPG layer plays at sprite scale vs T1/T2, unchanged.
+- (Historical name: 'human aspect combat') becomes PILGRIM-SCALE combat: the mortal RPG layer plays at pilgrim scale vs T1/T2, unchanged.
 
 ## 8. GIANT-ERA COMBAT SYNC (Sept 5 2026 — supersedes §6's dragon specifics entirely)
 - §6 (True Dragon Rebase) is RETIRED-RECORD: no colossus is a dragon. §7 (Giant Rebase) is the active law — bipedal raw elemental giants, Meshy→Mixamo humanoid rig.
 - SCALE RECONCILIATION: true giant deities = ~100 ft in lore/world art (Stage 2 compositions); PLAYABLE giants manifest at TITAN-UNIT SCALE 9 m — "the Gate's mouth sizes the crossing." All §2 titan-unit numbers are the active tuning contract.
 - Dragon BREATH → **ELEMENT BURST** (faction reskin) and dragon GATE RITE ultimates carry 1:1 onto the giant frame. Full per-unit kits: **docs/MYTHOS_DEITY_COMBAT_KITS.md** (12 giant stat blocks + 12 sprite champion kits) — the per-deity combat layer this spec previously lacked.
 - PHASE CUES (T3): 66% = strata flake (activation), 33% = mantle core exposed (frenzy) — primordial anatomy replaces barding-seam ignition.
-- SPRITE-SCALE COMBAT: unchanged — player vessel + 12 champions at sprite scale vs T1/T2 (see kits doc §V).
+- PILGRIM-SCALE COMBAT: unchanged — the Marked pilgrim + champion duels at mortal scale vs T1/T2 (see kits doc §V).

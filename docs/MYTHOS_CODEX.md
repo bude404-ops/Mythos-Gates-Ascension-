@@ -23,7 +23,7 @@
 | Unit | Form | Epithet | Weapon | Domain (Stage 2 world) |
 |---|---|---|---|---|
 | VAELTHORN ✦ | Fire Giant (M, warrior) | the Furnace-King | CRUCIBLE BLADE — condensed-magma greatsword | THE CINDERLANDS (basalt ranges, lava rivers, ember-city, pilgrimage road) |
-| VESSKRA ✦ | Fire Giantess (F, caster) | the Kiln-Queen | CRUCIBLE STAFF — crowned with suspended molten gold | THE EMBER GORGE (lava falls, ember lake, kiln-city in the wall) |
+| VESSAMAINE ✦ | Fire Giantess (F, caster) | the Kiln-Queen | CRUCIBLE STAFF — crowned with suspended molten gold | THE EMBER GORGE (lava falls, ember lake, kiln-city in the wall) |
 | THE KILN-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Forge-Country | LOTR-craft forge-blade, ember seams | THE KILN ROAD (dark forge-city below the rampart) |
 | THE HEARTH-KEEPER ✦ | Sprite Champion (F, staff) | Last Keeper of Every Fire | ember-staff | THE EVERHEARTH VAULT (cathedral of cold hearths) |
 
@@ -31,7 +31,7 @@
 | Unit | Form | Epithet | Weapon | Domain |
 |---|---|---|---|---|
 | HAELDOR ✦ | Storm Giant (M, warrior) | the Thunder Oath | SKYFALL BLADE — storm greatsword, frozen thundercloud core | THE THUNDERSHIELD RANGE (storm ranks, inert citadel) |
-| SYLWEN ✦ | Storm Giantess (F, caster) | the Stormsight | WEATHER-GLASS STAFF — holds a living miniature storm | THE CALM EYE (still center of the world-hurricane) |
+| SYLWENNA ✦ | Storm Giantess (F, caster) | the Stormsight | WEATHER-GLASS STAFF — holds a living miniature storm | THE CALM EYE (still center of the world-hurricane) |
 | THE STORM-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Gale | LOTR-craft storm-blade, watch-helm + cowl | THE WATCHTOWER COAST (sea-tower in the gale) |
 | THE MATRIARCH ✦ | Sprite Champion (F, staff) | Oracle of the High Air | storm staff, cowl-veil + circlet | THE SKY MOTHER'S SHELF (night cloud-sea shrine terrace) |
 
@@ -39,15 +39,15 @@
 | Unit | Form | Epithet | Weapon | Domain |
 |---|---|---|---|---|
 | THEVRAINE ✦ | Bloom Giant (M, warrior) | the Evenhand | LIVING SCALE — greatblade with two floating seeds at the guard | THE VERDANT MARCH (root-cathedral canopy ranks) |
-| MIRIATH ✦ | Bloom Giantess (F, caster) | the Stillwater | MIRROR STAFF — disc of frozen spring water | THE FLOWERDALE (ocean of house-sized blossoms) |
+| MIRIELLE ✦ | Bloom Giantess (F, caster) | the Stillwater | MIRROR STAFF — disc of frozen spring water | THE FLOWERDALE (ocean of house-sized blossoms) |
 | THE BLOOM-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Seedvaults | LOTR-craft bloom-blade, Living Crown | THE SEEDKEEP GATE (dark canopy-city) |
 | THE BLOOM-KEEPER ✦ | Sprite Champion (F, staff) | Keeper of Every Bloom | living-bloom staff | THE PETAL SHRINE TERRACE (hanging-garden cliff shrine) |
 
 **F4 — GLOAMBARROW** 💀 (realm: the Silent Isles; glow: pale violet ghost-light)
 | Unit | Form | Epithet | Weapon | Domain |
 |---|---|---|---|---|
-| MORVAIN ✦ | Bone Giant (M, warrior) | the Last Warden | DUSK BLADE — greatsword converted from the Duskscythe per the Weapon Chassis Law | THE OSSUARY PLAIN (ribcage hills, skull-ossuary city) |
-| SENVRA ✦ | Bone Giantess (F, caster) | the Lampkeeper | LANTERN STAFF — holds the last lights of the passed | THE QUIET VIGIL (bone-spire canyon, mirror-still lake) |
+| MORVAINE ✦ | Bone Giant (M, warrior) | the Last Warden | DUSK BLADE — greatsword converted from the Duskscythe per the Weapon Chassis Law | THE OSSUARY PLAIN (ribcage hills, skull-ossuary city) |
+| SENNETH ✦ | Bone Giantess (F, caster) | the Lampkeeper | LANTERN STAFF — holds the last lights of the passed | THE QUIET VIGIL (bone-spire canyon, mirror-still lake) |
 | THE GLOAM-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Last Road | gloom-blade, lantern-cage headgear | THE LANTERN WAYS (unlit lantern-processions) |
 | THE VEIL-KEEPER ✦ | Sprite Champion (F, staff) | Keeper of the Veil | gloom-staff | THE VEILED STAIR (stair-shrine into the gloom) |
 
@@ -55,7 +55,7 @@
 | Unit | Form | Epithet | Weapon | Domain |
 |---|---|---|---|---|
 | NEROVANE ✦ | Tide Giant (M, warrior) | the Undertow | TIDAL GREATBLADE — heavier than it looks, drags all near it down | THE TIDEGATE COAST (sea-stack gate-pillars, harbor-city) |
-| ILSARRA ✦ | Tide Giantess (F, caster) | the Mirrorfin (recast caster per Gender-Role Binding) | MIRRORFIN STAFF — grown coral staff crowned with a pearl-lens mirroring the tides | THE DEEP HOLLOW (still lagoon, coral-cliff gates) |
+| YLSANNE ✦ | Tide Giantess (F, caster) | the Mirrorfin (recast caster per Gender-Role Binding) | MIRRORFIN STAFF — grown coral staff crowned with a pearl-lens mirroring the tides | THE DEEP HOLLOW (still lagoon, coral-cliff gates) |
 | THE TIDE-WARDEN ✦ | Sprite Champion (M, blade) | Warden of the Night Watch | tide-blade, fin-crown | THE FIRST LIGHT HARBOR (pre-dawn breakwater) |
 | THE PEARL-KEEPER ✦ | Sprite Champion (F, staff) | Oracle of the Tides | pearl-crowned tide-staff | THE MOONTIDE SHRINE (tidal rings under the moon) |
 
@@ -110,11 +110,11 @@ Under the GIANTS & SPRITES doctrine + Two-Role Lock + Gender-Role Binding, each 
 
 | Faction | Giant Warrior | Giant Caster | Blade Champion | Staff Champion | Signature headgear |
 |---|---|---|---|---|---|
-| EMBERMERE | VAELTHORN the Furnace-King (Crucible Blade) — domain: THE CINDERLANDS | VESSKRA the Kiln-Queen (Crucible Staff) — domain: THE EMBER GORGE | KILN-WARDEN — The Kiln Road | HEARTH-KEEPER — The Everhearth Vault | embercowl / kiln-helm |
-| GALEMARCH | HAELDOR the Thunder Oath (Skyfall Blade) — THE THUNDERSHIELD RANGE | SYLWEN the Stormsight (Weather-Glass Staff) — THE CALM EYE | STORM-WARDEN — The Watchtower Coast | MATRIARCH — The Sky Mother's Shelf | deep cowl + watch-helm / cowl-veil |
-| BLOOMWEALD | THEVRAINE the Evenhand (Living Scale) — THE VERDANT MARCH | MIRIATH the Stillwater (Mirror Staff) — THE FLOWERDALE | BLOOM-WARDEN — The Seedkeep Gate | BLOOM-KEEPER — The Petal Shrine Terrace | Living Crown |
-| GLOAMBARROW | MORVAIN the Last Warden (Dusk Blade) — THE OSSUARY PLAIN | SENVRA the Lampkeeper (Lantern Staff) — THE QUIET VIGIL | GLOAM-WARDEN — The Lantern Ways | VEIL-KEEPER — The Veiled Stair | lantern-cage |
-| MARENVALE | NEROVANE the Undertow (Tidal Greatblade) — THE TIDEGATE COAST | ILSARRA the Mirrorfin (Mirrorfin Staff — grown coral, pearl-lens; recast to caster per the Gender-Role Binding) — THE DEEP HOLLOW | TIDE-WARDEN — The First Light Harbor | PEARL-KEEPER — The Moontide Shrine | fin-crown |
+| EMBERMERE | VAELTHORN the Furnace-King (Crucible Blade) — domain: THE CINDERLANDS | VESSAMAINE the Kiln-Queen (Crucible Staff) — domain: THE EMBER GORGE | KILN-WARDEN — The Kiln Road | HEARTH-KEEPER — The Everhearth Vault | embercowl / kiln-helm |
+| GALEMARCH | HAELDOR the Thunder Oath (Skyfall Blade) — THE THUNDERSHIELD RANGE | SYLWENNA the Stormsight (Weather-Glass Staff) — THE CALM EYE | STORM-WARDEN — The Watchtower Coast | MATRIARCH — The Sky Mother's Shelf | deep cowl + watch-helm / cowl-veil |
+| BLOOMWEALD | THEVRAINE the Evenhand (Living Scale) — THE VERDANT MARCH | MIRIELLE the Stillwater (Mirror Staff) — THE FLOWERDALE | BLOOM-WARDEN — The Seedkeep Gate | BLOOM-KEEPER — The Petal Shrine Terrace | Living Crown |
+| GLOAMBARROW | MORVAINE the Last Warden (Dusk Blade) — THE OSSUARY PLAIN | SENNETH the Lampkeeper (Lantern Staff) — THE QUIET VIGIL | GLOAM-WARDEN — The Lantern Ways | VEIL-KEEPER — The Veiled Stair | lantern-cage |
+| MARENVALE | NEROVANE the Undertow (Tidal Greatblade) — THE TIDEGATE COAST | YLSANNE the Mirrorfin (Mirrorfin Staff — grown coral, pearl-lens; recast to caster per the Gender-Role Binding) — THE DEEP HOLLOW | TIDE-WARDEN — The First Light Harbor | PEARL-KEEPER — The Moontide Shrine | fin-crown |
 | STONEFELL | GRATHWYN the Mountain Oath (Tectonic Blade) — THE ROOTSPINE GATE | BERGRUNE the Unmoved (Bulwark Staff, chassis conversion) — THE GEODE VAULTS | CRYSTAL-WARDEN — The Deep Roads | HEARTROOT-KEEPER — The Heartroot | crystal-crest |
 
 Name verdicts RESOLVED (Sept 5 2026): ALL giant names LOCKED via kept Stage 2 art. Sprite champion title-names canon with the sprite art; Stonefell pair renamed per Stage 2 canon (Crystal-Warden + Heartroot-Keeper). Sprite champions wield the Avalon human-craft armor language (Sprite Armor Law) — ember/storm/bloom/gloom/tide/crystal identity lives in the crafted seams; the hollow's Unmade Champions wear the same armor grammar (see HOLLOW_TIDE_BESTIARY v2.0).
@@ -183,7 +183,7 @@ Glow: deep amber-green. Materials: root-marble, mountain granite, iron-vein ston
 
 ## NOTES
 - Realm names LOCKED. Giant deity names LOCKED (canon art + BudE404 confirmation Sept 5 2026: Vaelthorn/Vessamaine, Haeldor/Sylwenna, Thevraine/Mirielle, Morvaine/Senneth, Nerovane/Ylsanne, Grathwyn/Bergrune). Sprite champion TITLES are canon with the sprite art (true names unwitnessed). Deferred names (Sorvath, Ozruv et al.) reserved for future-class new characters.
-- CASTER RULE: all six giant casters wield staffs (Vessamaine, Sylwenna, Mirielle, Senneth, ILSARRA, BERGRUNE). Hard rule, no exceptions. (Old registry below still lists Maruvak/Rhovarr — deferred identities.)
+- CASTER RULE: all six giant casters wield staffs (Vessamaine, Sylwenna, Mirielle, Senneth, YLSANNE, BERGRUNE). Hard rule, no exceptions. (Old registry below still lists Maruvak/Rhovarr — deferred identities.)
 - The Hollow = void of elemental powers, imprisoned by the six collectively, forgotten in exile. External to the six realms — the wound holding the origin story together.
 - ALL prior deity names retired (Khaveth, Halmarr, Thrasyles, Arashido et al.).
 
@@ -221,7 +221,7 @@ Every faction runs exactly two male and two female colossi. Females follow the F
 2. THE HUMAN-SIZED DRACONIAN ASPECT — a mortal-scale vessel with draconian features, for dungeon-scale events, separate wave runs, and small-arena bosses. The deity shapes its vessel to fit the Gate it enters.
 [SUPERSEDED — GIANT ERA: the GIANT form rolls first per deity; sprite vessels follow] PRODUCTION ORDER: the human aspect rolls FIRST for each kept deity. Each faction ships 4 ART MODELS: 2 colossal avatars + 2 human aspects.
 ROLES ARE REMOVED — weapon class is PLAYER CHOICE: warrior / caster / assassin / archer, chosen freely per faction. Weapon trees are built on WEAPON CLASS x FACTION; each deity's canon weapon survives as the signature tree-topper of its class.
-ROSTER TRIM: 2 deities per faction (1M + 1F) = 12 deities, 24 art models. Embermere cut call (BudE404): KEEP VAELTHORN + VESSKRA. The cut do not die — each faction's two cut deities convert to the SIGNATURE SKINS of the other two weapon-class trees, completing a named identity behind all 4 classes per faction:
+ROSTER TRIM: 2 deities per faction (1M + 1F) = 12 deities, 24 art models. Embermere cut call (BudE404): KEEP VAELTHORN + VESSAMAINE. The cut do not die — each faction's two cut deities convert to the SIGNATURE SKINS of the other two weapon-class trees, completing a named identity behind all 4 classes per faction:
 - CINDERLANDS: Vaelthorn = warrior tree (Crucible Maul) + caster tree (Vessamaine's Crucible Staff are both kept avatars); SORVATH = ARCHER tree signature skin (Emberwake Bow); OZRUV = ASSASSIN tree signature skin (Scale-Chain). All four named identities cover the four classes — two playable avatars, two tree skins.
 
 **THE WEAPON CHASSIS LAW (Sept 4 2026, BudE404 — LOCKED):** Weapon types are LIMITED and uniform across all factions — one chassis per class:
@@ -258,7 +258,7 @@ Per-deity variation lives within each signature (scale, count, placement) — th
 - F4 GLOAMBARROW — LANTERN-PLATE: pale bone-white steel with tiny LANTERN-NICHE shrines cut into the pauldrons and breastplate — actual lit votive windows in the armor; willow-fiber underlay.
 - F5 MARENVALE — TIDE-MAIL: patinated sea-steel scale-mail, fin-crested helms with gill-slit breath vents, pearl and coral inlay, rope-warped harness.
 - F6 STONEFELL — QUARRY-PLATE: grey iron strata-plate layered like the mountain, raw quartz set into the joints so the armor windows glow faintly with crystal light, quake-braced articulation.
-**Supersedes:** the old human-aspect armor rule of 'humanlike re-forged Aetherium.' Existing human canons (VHARKAR-HUMAN, VESSKRA-HUMAN) predate this law and get re-rolled in their region's style (Embermarch FORGE-IRON) on BudE404's word. The rest of the Human Aspect Law (human face/body, wing-cape, draconic human boots, class-chassis relic weapon, sigil-only glyphs, ember-glow eyes) is unchanged — only the armor's material + style changes. Colossal dragon barding stays Aetherium (divine).
+**Supersedes:** the old human-aspect armor rule of 'humanlike re-forged Aetherium.' Existing human canons (VHARKAR-HUMAN, VESSAMAINE-HUMAN) predate this law and get re-rolled in their region's style (Embermarch FORGE-IRON) on BudE404's word. The rest of the Human Aspect Law (human face/body, wing-cape, draconic human boots, class-chassis relic weapon, sigil-only glyphs, ember-glow eyes) is unchanged — only the armor's material + style changes. Colossal dragon barding stays Aetherium (divine).
 
 **ENVIRONMENT ART LAW (Sept 4 2026, BudE404 — v2 of the Fire Wyrm REJECTED because 'his background art was old'):** All environment/background art MUST draw its setting from MYTHOS_WORLD_BIBLE.md locations (the original regions: Embermarch, Galeways, Bloomward, Duskmere, Saltreach, Quakeveins, Heartland). Old-world geography echoes (desert-Egypt style, Nordic fjords, etc.) are retired everywhere including backgrounds. Dragon rolls PAUSED while lore/game-side work continues; on resume, colossal compositions use the world-bible settings.
 

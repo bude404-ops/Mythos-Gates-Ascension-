@@ -1,6 +1,6 @@
 # SKYWREND — Faction Ability Tree (v1 CANON)
 
-> Unlocked by pledging the flame Mark to the Skyrend deity (Haeldir / Sylwen).
+> Unlocked by pledging the flame Mark to the Skyrend deity (Haeldor / Sylwenna).
 > Resource: FAITH. Free re-pledge — progress persists. All effects are BORROWED storm — plain kit at rest, glow is the effect, never an engraving.
 
 ## Storm Doctrine

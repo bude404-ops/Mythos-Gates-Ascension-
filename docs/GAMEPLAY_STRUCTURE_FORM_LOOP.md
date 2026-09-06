@@ -10,7 +10,7 @@ Builds on: ONE WORLD—TWO SCALES (@e01be00d), Cold Lantern architecture (@51df2
 ## 1. THE FORM LOOP (the mission grammar)
 
 ```
-EXPLORE AS SPRITE → DISCOVER A PROBLEM (beyond sprite scale)
+EXPLORE AS PILGRIM → DISCOVER A PROBLEM (beyond pilgrim scale)
 → BUILD/RESTORE DIVINE CONNECTION (faith, rites, gates — per lore)
 → MANIFEST AS GIANT → SOLVE A PROBLEM ONLY A GOD CAN SOLVE
 → RETURN TO SPRITE → EXPLORE THE CONSEQUENCES of the god's actions
@@ -20,7 +20,7 @@ EXPLORE AS SPRITE → DISCOVER A PROBLEM (beyond sprite scale)
 
 Rules:
 - Every mission is a **window onto this loop** — some missions run it once, some three times, story missions spiral it.
-- **The "problem beyond sprite scale" must be genuine** — never a locked door pretending. If the player thinks "I could have just climbed that," the loop breaks.
+- **The "problem beyond pilgrim scale" must be genuine** — never a locked door pretending. If the player thinks "I could have just climbed that," the loop breaks.
 - **The return is mandatory and is content**: the aftermath walk (through your own crater, past your own collapse, among survivors reacting to their god) is where the emotional payoff and the next mystery live. Never fade-to-black past it.
 - **Discovery deepens each cycle** — every loop peels one more layer of the world/Hollow/Gate story (progressive revelation built into mission design, not drip-fed cutscenes).
 
@@ -28,7 +28,7 @@ Rules:
 
 | | 1. GLIMPSE | 2. MANIFESTATION | 3. ASCENSION |
 |---|---|---|---|
-| **What** | A colossal PART (hand, foot, eye, weapon, elemental force) briefly crosses into sprite scale | Short playable giant sequence | Full giant chapter |
+| **What** | A colossal PART (hand, foot, eye, weapon, elemental force) briefly crosses into pilgrim scale | Short playable giant sequence | Full giant chapter |
 | **Duration** | 1.5–3s | 30–90s | Minutes — battlefield scale |
 | **Trigger** | Contextual, faith-costly, sparing | Ritual at a shrine/gate with banked faith | Story: Gate activation (per Gate layer) |
 | **Gameplay role** | REACTIVE MIRACLE — a single intervention: block a collapse, shield refugees, one fire-lance, a god-eye that reveals truth | ONE GOD-PROBLEM — destroy a Hollow structure, break a fortification, stop an environmental threat, crush an elite Colossus, protect a settlement | WAR SANDBOX — armies, multiple objectives, evacuation, Colossal/World bosses |
@@ -64,7 +64,7 @@ Verbs: destroy walls, break bridges, crush structures, stamp craters, ignite ele
 
 Investigation · Rescue · Escort · Hunt · Shrine restoration · Gate activation · Gate defense · Corruption cleansing · Giant manifestation · Colossal defense · Boss hunt · Multi-stage story — and a mission may cross forms MULTIPLE times (sprite → glimpse → sprite → manifestation → sprite → ascension is a legal, encouraged shape).
 
-**Cold Lantern audit against the loop (benchmark mission):** beats 1–5 = EXPLORE/PROBLEM/CONNECTION (keeper → forest → drake threat → escort), beat 6–8 = ASCENSION (rite → battlefield → Grimlight). It currently runs the loop ONCE at full depth — strong for a vertical slice. **Recommended addition for the shipped mission:** one MANIFESTATION mid-mission — when the evacuation column is overwhelmed at the road ambush, a 45-second manifestation clears the blockage, then dispersal, then the drake beat (the god's brief presence is why the drake flees the road — stitching the set-piece). This teaches tier 2 before the climax, so the Ascension lands as "more of a thing I've done" rather than a mode swap.
+**Cold Lantern audit against the loop (benchmark mission):** beats 1–5 = EXPLORE/PROBLEM/CONNECTION (keeper → forest → drake threat → escort), beat 6–8 = ASCENSION (rite → battlefield → Echo of the Forgotten). It currently runs the loop ONCE at full depth — strong for a vertical slice. **Recommended addition for the shipped mission:** one MANIFESTATION mid-mission — when the evacuation column is overwhelmed at the road ambush, a 45-second manifestation clears the blockage, then dispersal, then the drake beat (the god's brief presence is why the drake flees the road — stitching the set-piece). This teaches tier 2 before the climax, so the Ascension lands as "more of a thing I've done" rather than a mode swap.
 
 ## 6. AFTER THE CAMPAIGN — SIX POST-CAMPAIGN MODES (no mandatory grinding)
 

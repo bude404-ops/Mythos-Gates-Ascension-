@@ -1,6 +1,6 @@
 # STONEHEART — Faction Ability Tree (v1 CANON)
 
-> Unlocked by pledging the flame Mark to the Stoneheart deity (Grothmar / Bergrun).
+> Unlocked by pledging the flame Mark to the Stoneheart deity (Grathwyn / Bergrune).
 > Resource: FAITH. Free re-pledge. Borrowed stone — plain kit at rest.
 
 ## Stone Doctrine

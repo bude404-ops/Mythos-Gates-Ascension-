@@ -1,5 +1,5 @@
 # THE HOLLOW TIDE — ENEMY BESTIARY v2.0
-**Canon v2.0 — Sept 5 2026. RE-SYNCED to the GIANTS & SPRITES doctrine. The Hollow's units: erased-things, thief's copies of what they consumed. Tiers map to the combat spec (T1 ants / T2 brutes / T3 bosses). The Hollow cannot create — it can only hollow.**
+**Canon v2.0 — Sept 5 2026. RE-SYNCED to THE AVALON DOCTRINE (mortals are humans). The Hollow's units: erased-things, thief's copies of what they consumed. Tiers map to the combat spec (T1 ants / T2 brutes / T3 bosses). The Hollow cannot create — it can only hollow.**
 
 ## WHAT THE HOLLOW IS (current canon lock)
 - The HOLLOW is the VOID OF UNFORMED ELEMENTAL POWER — the raw residue left over when the six elements helped form Mythos. Not a faction. The wound.
@@ -13,17 +13,17 @@
 - The Hollow has NO light of its own. Where the gods ARE their element, the Hollow is the UN-thing: no glow, no shadow-cast, no sound of its own.
 
 ## SCALE LAW (dual-scale enemy read)
-- AT GIANT SCALE (colossal mode): T1 hollowed sprite-folk read as ants — swarm crowds against the giant's ankles, one-tap ragdoll fodder. T2 brutes read as siege threats. T3 = world bosses.
-- AT SPRITE SCALE (dungeon/town mode): the SAME units meet the player at eye height — a hollowed sprite looks like YOU, walking its old routine. This is the horror engine of the small world: the Hollow tide looks like the people it took.
-- MORTALS ARE SPRITES (1–3 ft serious-fey). All "hollowed mortal" units below are hollowed SPRITE-FOLK. (Companion sprites — the pure-witness motes — cannot be hollowed: nothing to erase. Grimlights are the Hollow's answer to witnesses.)
+- AT GIANT SCALE (colossal mode): T1 hollowed humans read as ants — swarm crowds against the giant's ankles, one-tap ragdoll fodder. T2 brutes read as siege threats. T3 = world bosses.
+- AT PILGRIM SCALE (dungeon/town mode): the SAME units meet the player at eye height — a hollowed neighbor looks like YOU, walking its old routine. This is the horror engine of the small world: the Hollow tide looks like the people it took.
+- MORTALS ARE HUMANS (Avalon Doctrine). All "hollowed mortal" units below are hollowed HUMAN folk. (Companion sprites — the pure-witness motes — cannot be hollowed: nothing to erase. Grimlights are the Hollow's answer to witnesses.)
 
 ## T1 — THE UNDONE (ants — one-tap, crowd; up to 40 pooled)
-- **MUTEFOLK:** hollowed sprite-folk walking the shapes of their old routines at sprite scale — lantern-lighters lighting dead lanterns, weavers weaving nothing, a choir humming in reverse. Smooth absence where faces were. Kill = release: they crumble to gray light that flows toward the nearest Gate (FAITH from mercy — hollowing is not death; the mercy loop is canon).
+- **MUTEFOLK:** hollowed humans walking the shapes of their old routines at mortal scale — lantern-lighters lighting dead lanterns, weavers weaving nothing, a choir humming in reverse. Smooth absence where faces were. Kill = release: they crumble to gray light that flows toward the nearest Gate (FAITH from mercy — hollowing is not death; the mercy loop is canon).
 - **SHADE-BEASTS:** hollowed world-fauna running in silent herds — the thistledeer with no eyes, moorhounds made of outline, drake-fledglings that cast no shadow. Ragdoll fodder at giant scale.
 - **GRIMLIGHTS:** fist-sized void-motes swarming like gnats. Alone harmless; in cloud they DIM element-light — lanterns gutter, ember-seams fade, crystal veins go dark. They are the anti-witness made small: where they swarm, light forgets itself.
 
 ## T2 — THE WRONGFUL (brutes — 3–6 hits, staggerable; up to 8)
-- **UNMADE CHAMPIONS:** hollowed sprite-wardens still wearing their REAL First Pilgrim armor — the armor survives because it is craft, not element (erasure cannot eat what was made, only what IS). The body inside is gone; the armor walks. The plates are the only color left in the frame — and they STAY BEHIND when it falls (loot + lore: every kill recovers a mortal thing). First look of the Hollow at champion grade: the vault's own First Pilgrim armor grammar worn by absence.
+- **UNMADE CHAMPIONS:** hollowed pilgrims still wearing their REAL First Pilgrim armor — the armor survives because it is craft, not element (erasure cannot eat what was made, only what IS). The body inside is gone; the armor walks. The plates are the only color left in the frame — and they STAY BEHIND when it falls (loot + lore: every kill recovers a mortal thing). First look of the Hollow at champion grade: the vault's own First Pilgrim armor grammar worn by absence.
 - **ERASED DRAKES:** lesser dragon-fauna with the element INVERTED — a fire-drake breathing cold-absence, wings that are pure outline, roar that lands as silence. Dragons are world-fauna now; the Hollow takes them like any other beast. First sign a region is deep-hollowed.
 - **THE STILL CHOIR:** six MUTEFOLK fused in a ring, chanting in reverse, de-coloring the ground they stand on (zone-denial). Break the ring or it re-hollows the ground under the player's feet.
 

@@ -28,42 +28,42 @@ Each faction holds a REALM (beyond its Gate) and a MORTAL REGION (the Mythos lan
 - **Mortal region:** THE EMBERWASTE — ash-fertile badlands where the first Gate-people learned to smelt. Black soil, blood-red grass, geothermal wells.
 - **Gate:** THE CINDER GATE — in the caldera-crown of Forgefall.
 - **Towns:** FORGEFALL (gate-capital, crucible-core hearth towers, forge-cathedrals), KILNREACH (kiln-city of ash-glass blowers), EMBERHOLLOW (shrine town in a charcoal forest), ASHPORT (the one Embermere harbor, on the Warm Sea).
-- **Deities:** VAELTHORN the Furnace-King (Fire Giant colossal — raw fire-muscle, condensed-flame greatsword), VESSKRA the Kiln-Queen (Fire Giant colossal — raw fire-muscle, flame-forged staff). Mortals: ember-wisp sprite fey.
+- **Deities:** VAELTHORN the Furnace-King (Fire Giant colossal — raw fire-muscle, condensed-flame greatsword), VESSAMAINE the Kiln-Queen (Fire Giant colossal — raw fire-muscle, flame-forged staff). Mortals: humans (the Embermere forge-folk).
 
 ### F2 — GALEMARCH (Air)
 - **Realm:** GALEMARCH (THE ENDLESS GALE) — cloudfields solid enough to walk, thunderhead mountains, floating Aetherium spires.
 - **Mortal region:** THE STORMSHARDS — wind-battered isles, black sea-cliffs, rope-bridges; storms arrive on schedule and are named like family.
 - **Gate:** THE SQUALL GATE — on the highest sea-stack of Vanecliff.
 - **Towns:** VANECLIFF (gate-capital, storm-vane weathervanes on every roof, dragon-prow shipyards), GALESHOLLOW (cliff town of wind-singers), THUNDERMERE (lakeside storm-town), MISTREACH (fog-harbor smugglers' town).
-- **Deities:** HAELDOR (Storm Giant colossal — raw storm-mass, condensed-storm greatsword), SYLWEN (Storm Giant colossal — raw storm-mass, frozen-storm staff). Mortals: storm-sprite fey.
+- **Deities:** HAELDOR (Storm Giant colossal — raw storm-mass, condensed-storm greatsword), SYLWENNA (Storm Giant colossal — raw storm-mass, frozen-storm staff). Mortals: humans (the Galemarch wind-clans).
 
 ### F3 — BLOOMWEALD (Life)
 - **Realm:** THE BLOOMWEALD — a garden that never stops growing; petal-forests, nectar-light rivers, canopy-cities of living wood.
 - **Mortal region:** THE BLOOMWARD — Mythos's breadbasket; terraced hills, orchard-roads, bloom-meadows that shift color with the season's mood.
 - **Gate:** THE BLOOM GATE — grown, not built: two colossal petal-arches that open once a year.
 - **Towns:** PETALFALL (gate-capital, petal-crest rooflines, bloom-temples), ROOTMERE (lakeland healers' town), GREENHUSH (orchard monastery, silent by law), THORNHEDGE (ward-town of the wild verge).
-- **Deities:** two Bloom Giant colossi (raw petal-flesh; male = greatsword, female = staff). Mortals: petal-sprite fey.
+- **Deities:** two Bloom Giant colossi (raw petal-flesh; male = greatsword, female = staff). Mortals: humans (the Bloomweald orchard-folk).
 
 ### F4 — GLOAMBARROW (Death)
 - **Realm:** THE STILL — the quiet country: pale meadows under a moon that never sets, where everything finished waits politely.
 - **Mortal region:** THE DUSKMERE — black-water isles and willow-fens; undertakers, record-keepers, lantern-makers who believe light is a promise.
 - **Gate:** THE VEIL GATE — on the mirror-lake isle of Lanternhush.
 - **Towns:** LANTERNHUSH (gate-capital, lantern-niche shrines on every wall), LASTLIGHT (town of the death-guilds), VAILCREST (bone-white city of archives), HUSHFIELD (the quiet farms).
-- **Deities:** two Bone Giant colossi (raw bone-ash element; male = greatsword, female = staff). Mortals: lantern-mote fey.
+- **Deities:** two Bone Giant colossi (raw bone-ash element; male = greatsword, female = staff). Mortals: humans (the Gloambarrow lantern-folk).
 
 ### F5 — MARENVALE (Water)
 - **Realm:** THE DOWNDEEP — an ocean with a floor and a sky of its own; pressure-cathedrals, current-roads, trenches that breathe.
 - **Mortal region:** THE SALTREACH — drowned coast, drowned fortresses; tide-towns on stilts, reef-cities in the shallows.
 - **Gate:** THE DEEP GATE — beneath the Tidebellow whirlpool; entered by diving.
 - **Towns:** TIDEBELLOW (gate-capital, fin-buttressed harbors, gill-slit vented walls), FINSPIRE (the reef city), MISTRIFT (stilt-city of tide-priests), SALTMOOR (salt-flat harvest town).
-- **Deities:** two Tide Giant colossi (raw wave-mass; male = greatsword, female = staff). Mortals: pearl-finned sprite fey.
+- **Deities:** two Tide Giant colossi (raw wave-mass; male = greatsword, female = staff). Mortals: humans (the Marenvale tide-folk).
 
 ### F6 — STONEFELL (Earth)
 - **Realm:** THE ROOTSPINE — the inside of a mountain range that dreams; geode vaults, crystal rivers, strata-cathedrals lit from within.
 - **Mortal region:** THE QUAKEVEINS — highland country of quartz terraces, tremor-farms, cliff-homes cut in the load-bearing style.
 - **Gate:** THE STONE GATE — inside Craghelm mountain.
 - **Towns:** CRAGHELM (gate-capital, crystal-crowned), STONEWAKE (the quarry-city), GEODEFALL (where crystal rivers surface), DEEPFURROW (the undermarket).
-- **Deities:** two Stone Giant colossi (raw stone-mass; male = greatsword, female = staff). Mortals: crystal-sprite fey.
+- **Deities:** two Stone Giant colossi (raw stone-mass; male = greatsword, female = staff). Mortals: humans (the Stonefell delver-folk).
 
 **NEUTRAL GROUND:** THE MYTHOS HEARTLAND — central plains between all six regions. THE CONCORDE — neutral city at the crossing of the six great roads, built around the EMPTY PEDESTAL: the monument to the Forgotten deity, maintained but never worshiped, in case it ever comes home. The campaign's political center and its tragedy.
 

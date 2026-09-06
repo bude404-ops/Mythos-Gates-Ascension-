@@ -36,11 +36,11 @@
 ### THE TWELVE GIANT DEITIES (names per Codex roster; canon art locked for Embermere/Galemarch/Bloomweald, pending verdicts for the rest)
 | Faction | Warrior (greatsword) | Caster (staff) | Canon status |
 |---|---|---|---|
-| Embermere | VAELTHORN, the Furnace-King — Crucible Blade (condensed magma) | VESSKRA, the Kiln-Queen — Crucible Staff | CANON |
-| Galemarch | HAELDOR, the Thunder Oath — Skyfall Blade (frozen thundercloud) | SYLWEN, the Stormsight — Weather-Glass Staff | CANON |
-| Bloomweald | THEVRAINE, the Evenhand — Living Scale | MIRIATH, the Stillwater — Mirror Staff | CANON |
-| Gloambarrow | MORVAIN, the Last Warden — Dusk Blade (Duskscythe → chassis conversion) | SENVRA, the Lampkeeper — Lantern Staff | CANON (Stage 2 world kept Sept 5) |
-| Marenvale | NEROVANE, the Undertow — Tidal Greatblade | ILSARRA the Mirrorfin — Mirrorfin Staff (grown coral, pearl-lens; recast to caster per Gender-Role Binding) | CANON (Stage 2 world kept Sept 5) |
+| Embermere | VAELTHORN, the Furnace-King — Crucible Blade (condensed magma) | VESSAMAINE, the Kiln-Queen — Crucible Staff | CANON |
+| Galemarch | HAELDOR, the Thunder Oath — Skyfall Blade (frozen thundercloud) | SYLWENNA, the Stormsight — Weather-Glass Staff | CANON |
+| Bloomweald | THEVRAINE, the Evenhand — Living Scale | MIRIELLE, the Stillwater — Mirror Staff | CANON |
+| Gloambarrow | MORVAINE, the Last Warden — Dusk Blade (Duskscythe → chassis conversion) | SENNETH, the Lampkeeper — Lantern Staff | CANON (Stage 2 world kept Sept 5) |
+| Marenvale | NEROVANE, the Undertow — Tidal Greatblade | YLSANNE the Mirrorfin — Mirrorfin Staff (grown coral, pearl-lens; recast to caster per Gender-Role Binding) | CANON (Stage 2 world kept Sept 5) |
 | Stonefell | GRATHWYN, the Mountain Oath — Tectonic Blade (Maul → chassis conversion) | BERGRUNE, the Unmoved — Bulwark Staff (Garrotes → chassis conversion) | CANON (Stage 2 world kept Sept 5) |
 
 **Phase cues (T3 duels vs/with giants):** 66% = strata cracks brighten, element-shed doubles (activation lore); 33% = mantle core exposed, frenzy — double specials. Death state: essence departs, the elemental body dissipates; nothing remains but the discarded weapon-echo (lore-only).

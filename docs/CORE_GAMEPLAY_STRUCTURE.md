@@ -18,7 +18,7 @@ One lore answer, three gameplay tiers. Frequency problem solved by canon, not by
 ## THE CORE LOOP (mission grammar)
 
 1. **EXPLORE AS SPRITE** — investigation, NPCs, secrets, small-scale Hollow, environmental puzzles. The world is enormous: house = dungeon, tree = bridge, crack = entrance.
-2. **DISCOVER A PROBLEM** — something that CANNOT be solved at sprite scale (a boulder, a corrupted structure, an elite, a ravine). The game TELLS you: blades glance off, doors don't move, "THIS IS BEYOND YOUR SCALE."
+2. **DISCOVER A PROBLEM** — something that CANNOT be solved at pilgrim scale (a boulder, a corrupted structure, an elite, a ravine). The game TELLS you: blades glance off, doors don't move, "THIS IS BEYOND YOUR SCALE."
 3. **BUILD DIVINE CONNECTION** — bank FAITH (kills, rescue, rituals, discoveries), find the rite stone / shrine / channel-stone. This step IS gameplay — never a menu.
 4. **MANIFEST** — the tier appropriate to the problem. Glimpse for obstacles; Manifestation for structures/elites; Ascension for battlefields.
 5. **SOLVE WHAT ONLY A GOD CAN** — destroy, reshape, break, protect, alter the battlefield.

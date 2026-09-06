@@ -40,7 +40,7 @@ The colossal form's power = **f(distance from its Gate)**.
 
 **Why this is the right mechanic:** it makes giant gameplay ORBIT the gate (battlefield objectives radiate outward from it), creates real positioning tension (deep strikes = risking your divinity), and visually proves the lore: the god's existence in Mythos literally runs through the Gate. No other game's portals do this because for everyone else a portal is travel. Ours is a lifeline.
 
-## 3. SPRITE-SCALE GAMEPLAY (what the gate does at 3 feet)
+## 3. PILGRIM-SCALE GAMEPLAY (what the gate does at mortal scale)
 
 - **The sprite IS the limited manifestation** — the lore answer to "why am I small?": a nearly-closed gate can only pass a narrow aspect of a god. (The player's smallness is now canon-deep, not just a mode.)
 - **Glimpse powers near an Attuned gate** — 3-second channelings of the true form (colossal hand blocks a collapse; one god-scale fire-lance) — faith-costly, preview-of-ascension moments between full transformations
@@ -53,7 +53,7 @@ The colossal form's power = **f(distance from its Gate)**.
 Lore says belief is the gate's integrity. Mechanically:
 - **Worshipper economy**: rescued civilians → they build shrines → passive integrity regen. Neglect a region → decay. The mortal ecosystem literally holds the Gate together — protection gameplay has structural payoff, not just gratitude
 - **Kill-to-faith** feeds GATE CHARGE (the mission-length resource for staying colossal)
-- **Miracle quests** at sprite scale (save a town) restore BELIEF in a sealed gate's region — belief, not masonry, is what you repair
+- **Miracle quests** at pilgrim scale (save a town) restore BELIEF in a sealed gate's region — belief, not masonry, is what you repair
 
 ## 5. GATE ACTIVATION CONDITIONS (rite checklist — all three required)
 

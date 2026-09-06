@@ -1,6 +1,6 @@
 # DUSKMOURN — Faction Ability Tree (v1 CANON)
 
-> Unlocked by pledging the flame Mark to the Duskmourn deity (Morvain / Senvra).
+> Unlocked by pledging the flame Mark to the Duskmourn deity (Morvaine / Senneth).
 > Resource: FAITH. Free re-pledge. Borrowed gloom — plain kit at rest.
 
 ## Dusk Doctrine

@@ -41,7 +41,7 @@ Previously the registry (Codex/Campaign) and the narrative layer (Stories/Env Sh
 4. MYTHOS_WORLD_LORE: giant-era re-cast banner (colossi-remote-vessel framing superseded).
 5. ENVIRONMENT_SHEETS: 'barding-metal' → 'forge-iron' (dragon-era word).
 6. Old-era docs archived to docs/lore/archive-old-era/ (8-faction era + colossi-era cultural docs) with a README marking them non-canon.
-7. Names locked per BudE404 across Codex/Kits: Morvaine/Senneth, Nerovane/ILSARRA (Mirrorfin Staff, recast caster), Grathwyn/Bergrune (Bulwark Staff).
+7. Names locked per BudE404 across Codex/Kits: Morvaine/Senneth, Nerovane/YLSANNE (Mirrorfin Staff, recast caster), Grathwyn/Bergrune (Bulwark Staff).
 
 ## IV. STILL OPEN (no action needed, tracked)
 - 22 Stage 2 world-composition verdicts (delivered, awaiting keeps).

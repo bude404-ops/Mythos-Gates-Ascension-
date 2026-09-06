@@ -1,6 +1,6 @@
 # ASHFALL — Faction Ability Tree (Draft v1)
 
-> Unlocked by pledging the flame Mark to the Ashfall deity (Vharkar / Vesskra).
+> Unlocked by pledging the flame Mark to the Ashfall deity (Vaelthorn / Vessamaine).
 > Resource: FAITH. Free re-pledge — progress persists per faction tree.
 
 ## Ember Doctrine
@@ -45,7 +45,7 @@ Ashfall rites are about **burn as economy**: enemies carry Cinder Stacks (burn),
 
 ## Gameplay fit — hooks into existing loops
 - FAITH costs (5-35) sit inside the shrine-banking loop: light rites are spammable between banks, the ult requires deliberate saving. No infinite-sustain loop (stacks need melee application).
-- Every rite is usable in BOTH scales: Sprite dungeon crawl (Ember Depths) and Giant siege modes — the tree never assumes a mode.
+- Every rite is usable in BOTH scales: Pilgrim dungeon crawl (the Depths) and Giant siege modes — the tree never assumes a mode.
 - Order synergies are real, not cosmetic: Wayfarer's dash extends Ashfall Step trail; Smith's 2H swing applies Molten Edge in an arc; Vigil's shield holds enemies inside Pyre Mark radius; Cantor's Bell-Staff resonance can extend stack duration (future cross-tree node).
 
 ## Stat baseline (v1 tuning anchors)

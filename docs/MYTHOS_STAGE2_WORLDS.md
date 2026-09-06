@@ -6,7 +6,7 @@ All 24 deities anchor a unique, canonized realm composition. Locked Sept 5, 2026
 | Deity | Realm | Canon |
 |---|---|---|
 | VAELTHORN, Furnace-King (fire giant) | THE CINDERLANDS — the burning forge-country, ember-storm skies, furnace cities dark at his ankle | STAGE2-ASHFALL-CINDERLANDS-VHARKAR-WORLD-CANON.jpg |
-| VESSKRA (fire giantess) | THE EMBER GORGE — the molten canyon country, glow bleeding from the strata | STAGE2-ASHFALL-EMBER-GORGE-VESSKRA-WORLD-CANON.jpg |
+| VESSAMAINE (fire giantess) | THE EMBER GORGE — the molten canyon country, glow bleeding from the strata | STAGE2-ASHFALL-EMBER-GORGE-VESSAMAINE-WORLD-CANON.jpg |
 | KILN-WARDEN (blade champion) | THE KILN ROAD — the ember processional road through the forge-towns | STAGE2-ASHFALL-KILN-ROAD-KILN-WARDEN-WORLD-CANON.jpg |
 | HEARTH-KEEPER (staff champion) | THE EVERHEARTH — the great hearth-shrine where the family fires are kept | STAGE2-ASHFALL-EVERHEARTH-HEARTH-KEEPER-WORLD-CANON.jpg |
 
@@ -14,7 +14,7 @@ All 24 deities anchor a unique, canonized realm composition. Locked Sept 5, 2026
 | Deity | Realm | Canon |
 |---|---|---|
 | HAELDOR (storm giant) | THE THUNDERSHIELD — the ridge country under the eternal thunderhead | STAGE2-SKYREND-THUNDERSHIELD-HAELDIR-WORLD-CANON.jpg |
-| SYLWEN (storm giantess) | THE CALM EYE — the still center of the hurricane, storm wall circling the horizon | STAGE2-SKYREND-CALM-EYE-SYLWEN-WORLD-CANON.jpg |
+| SYLWENNA (storm giantess) | THE CALM EYE — the still center of the hurricane, storm wall circling the horizon | STAGE2-SKYREND-CALM-EYE-SYLWENNA-WORLD-CANON.jpg |
 | STORM-WARDEN (blade champion) | THE WATCHTOWER — the high coast watch over the storm sea | STAGE2-SKYREND-WATCHTOWER-STORM-WARDEN-WORLD-CANON.jpg |
 | MATRIARCH (staff champion) | THE SKY SHELF — the dawn cloud-sea at the shelf's lip, storm-cells bowing in an arc | STAGE2-SKYREND-SKY-SHELF-MATRIARCH-WORLD-CANON.jpg |
 
@@ -22,15 +22,15 @@ All 24 deities anchor a unique, canonized realm composition. Locked Sept 5, 2026
 | Deity | Realm | Canon |
 |---|---|---|
 | THEVRAINE (bloom giant) | THE VERDANT MARCH — the great processional road through the bloom-plains | STAGE2-EVERBLOOM-VERDANT-MARCH-THEVRIL-WORLD-CANON.jpg |
-| MIRIATH (bloom giantess) | THE FLOWERDALE — her home valley in full bloom, petals rising like reverse snowfall | STAGE2-EVERBLOOM-FLOWERDALE-MIRIATH-WORLD-CANON.jpg |
+| MIRIELLE (bloom giantess) | THE FLOWERDALE — her home valley in full bloom, petals rising like reverse snowfall | STAGE2-EVERBLOOM-FLOWERDALE-MIRIELLE-WORLD-CANON.jpg |
 | BLOOM-WARDEN (blade champion) | THE SEEDKEEP GATE — the seed-vault gate in the great seed-cradle glade | STAGE2-EVERBLOOM-SEEDKEEP-BLOOM-WARDEN-WORLD-CANON.jpg |
 | BLOOM-KEEPER (staff champion) | THE PETAL SHRINE TERRACE — the hanging terrace shrines above the blooming falls | STAGE2-EVERBLOOM-PETAL-TERRACE-BLOOM-KEEPER-WORLD-CANON.jpg |
 
 ## GLOAMBARROW — The Gloam Realm
 | Deity | Realm | Canon |
 |---|---|---|
-| MORVAIN, Dusk Blade (dusk giant) | THE OSSUARY PLAIN — the bone-flats at last light, ossuary spires in the gloom-mist | STAGE2-DUSKMOURN-OSSUARY-PLAIN-MORVAIN-WORLD-CANON.jpg |
-| SENVRA (dusk giantess) | THE QUIET VIGIL — the vigil-hollow, candles lit below her in the blue hour | STAGE2-DUSKMOURN-QUIET-VIGIL-SENVRA-WORLD-CANON.jpg |
+| MORVAINE, Dusk Blade (dusk giant) | THE OSSUARY PLAIN — the bone-flats at last light, ossuary spires in the gloom-mist | STAGE2-DUSKMOURN-OSSUARY-PLAIN-MORVAINE-WORLD-CANON.jpg |
+| SENNETH (dusk giantess) | THE QUIET VIGIL — the vigil-hollow, candles lit below her in the blue hour | STAGE2-DUSKMOURN-QUIET-VIGIL-SENNETH-WORLD-CANON.jpg |
 | GLOAM-WARDEN (blade champion) | THE LANTERN WAYS — the lantern-lit processional streets of the dusk-city | STAGE2-DUSKMOURN-LANTERN-WAYS-GLOAM-WARDEN-WORLD-CANON.jpg |
 | VEIL-KEEPER (staff champion) | THE VEILED STAIR — the great stair between worlds, descending into soft dark | STAGE2-DUSKMOURN-VEILED-STAIR-VEIL-KEEPER-WORLD-CANON.jpg |
 
@@ -38,7 +38,7 @@ All 24 deities anchor a unique, canonized realm composition. Locked Sept 5, 2026
 | Deity | Realm | Canon |
 |---|---|---|
 | NEROVANE (tide giant) | THE TIDEGATE COAST — the drowned coast where the Deep Gate burns beneath the waves | STAGE2-MARENTH-TIDEGATE-COAST-NEROVAX-WORLD-CANON.jpg |
-| ILSARRA (tide giantess) | THE DEEP HOLLOW — the sea-cave cathedral lit only by her presence | STAGE2-MARENTH-DEEP-HOLLOW-ILSARRA-WORLD-CANON.jpg |
+| YLSANNE (tide giantess) | THE DEEP HOLLOW — the sea-cave cathedral lit only by her presence | STAGE2-MARENTH-DEEP-HOLLOW-YLSANNE-WORLD-CANON.jpg |
 | TIDE-WARDEN (blade champion) | THE FIRST LIGHT — the reef at dawn, gold rolling across the shallows | STAGE2-MARENTH-FIRST-LIGHT-TIDE-WARDEN-WORLD-CANON.jpg |
 | PEARL-KEEPER (staff champion) | THE MOONTIDE — the moonlit tide-flats, the moonglade path on the water | STAGE2-MARENTH-MOONTIDE-PEARL-KEEPER-WORLD-CANON.jpg |
 

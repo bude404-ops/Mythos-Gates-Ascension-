@@ -11,10 +11,10 @@ Photorealistic FILMIC realism: every image reads as a frame from a fantasy epic 
 ## 2. THE GIANTS — PRIMORDIAL-MAX ANATOMY
 Deities render as colossal RAW ELEMENTAL GIANTS (100 ft): zero armor, pure living element. 'Never made — the element that decided to stand': half-conceived asymmetric anatomy (mountain-range mid-formation, zero human symmetry), eon-layered crust strata flaking to reveal the molten/elemental core, violent elemental arteries, constant element-shed, face half-emerged from the element, movement like geology. Awe-not-fear; worship declares divinity. Weapons per Gender-Role Binding: male = element-forged GREATSWORD, female = element-forged STAFF.
 
-**Composition law — HALF-ZOOM MID-SHOT:** camera at the giant's chest height, moderate distance, giant fills the central two-thirds full-figure, scenic faction landscape breathing around him, scale anchors mandatory (cities at ankle line, sprite processions as sparks against the shins).
+**Composition law — HALF-ZOOM MID-SHOT:** camera at the giant's chest height, moderate distance, giant fills the central two-thirds full-figure, scenic faction landscape breathing around him, scale anchors mandatory (cities at ankle line, pilgrim processions as sparks against the shins).
 
 ## 3. THE SPRITES — SERIOUS FEY AT 1-3 FT
-Mortals render as fey-small serious fey: lithe elongated proportions, sharp noble features, faction-palette armor and robes at their scale, element-touched glowing eyes. Never cute mascots. Sprite towns and craft build at their own scale. Reference canon: ASHFALL-FIRE-GIANT-CANON.jpg (Vaelthorn).
+Mortals render as HUMANS (Avalon Doctrine): real human proportions, faction-palette human-craft armor and robes, element-touched glowing eyes on the Marked. Towns and craft build at mortal scale. Reference canon: ASHFALL-FIRE-GIANT-CANON.jpg (Vaelthorn).
 
 ## 4. THE WORLD — ORIGINAL SIX REGIONS
 All environment art draws from MYTHOS_WORLD_BIBLE.md locations only (Embermarch, Galeways, Bloomward, Duskmere, Saltreach, Quakeveins, Heartland + the six realms). Divine Influence grammar: mortal architecture echoes its faction's GIANT (crucible-core hearth towers, storm-vane weathervanes, petal-crest rooflines, lantern-niche shrines, fin-buttressed harbors, crystal-crowned quake-villages). Dragons appear ONLY as wild fauna.
