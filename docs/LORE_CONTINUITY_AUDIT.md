@@ -59,7 +59,9 @@ ARCHIVED to docs/lore/archive-old-era/ (45 docs total): 9 root system specs (LEV
 
 SURGICALLY CLEANED: GAME_DESIGN_DOCUMENT belief section (28->32 kits, Aten-Ra/Sutekh examples -> live roster, duplicated old block removed, pointers now to FACTION_BUFFS + live data). docs/lore/README rewritten to mark the folder's current canon + archive boundary.
 
-RESULT: zero retired god names remain in canon docs. (Addendum: ART_STYLE_BIBLE v1.0 — an Avatar-era doc baselined on Aten Ra renders — archived in the same pass; current art canon = ART_DIRECTION.md + the colossi/pilgrim law docs + ART_STYLE_BIBLE's Avalon successor is the CINEMATIC_PRODUCTION_SYSTEM style guide.) The pre-Avalon lineage survives only in the archive, marked never-canon. The Two-Role Lock stands: retired identities may return as NEW characters.
+RESULT: zero retired god names remain in canon docs.
+
+ROUND 2 (same pass, deeper): old-ERA DOCS (pre-pilgrim doctrine / Avatar / UE5 / tap-to-move) archived — COMBAT_SYSTEM_SPEC (superseded by design/PILGRIM-COMBAT-SYSTEM.md — its tap-to-move 'strategist not button-masher' core is the exact opposite of the Macer's Loop), DIALOGUE_SYSTEM, CAMPAIGN_MAPS, ART_STYLE_BIBLE, PRODUCTION_BUILD_PLAN (UE5 plan — engine canon is now Unity 6.5 LTS), MG-TECH-STACK-DECISION, AAA_REPOSITORY_AUDIT, MASTER_RECONFIGURATION_AUDIT, MYTHOS_GATES_BRAND_RESTRUCTURE_AUDIT, MYTHOS_GATES_DUNGEON_ROUTE_REGISTRY. KEPT as live canon: FACTION_BUFFS.md + COMBAT_BALANCE_DOCUMENT.md (live 8-faction deity-mode systems — their 'Ascension' title mentions are branding residue only, no retired names). (Addendum: ART_STYLE_BIBLE v1.0 — an Avatar-era doc baselined on Aten Ra renders — archived in the same pass; current art canon = ART_DIRECTION.md + the colossi/pilgrim law docs + ART_STYLE_BIBLE's Avalon successor is the CINEMATIC_PRODUCTION_SYSTEM style guide.) The pre-Avalon lineage survives only in the archive, marked never-canon. The Two-Role Lock stands: retired identities may return as NEW characters.
 
 ## IV. STILL OPEN (no action needed, tracked)
 - 22 Stage 2 world-composition verdicts (delivered, awaiting keeps).

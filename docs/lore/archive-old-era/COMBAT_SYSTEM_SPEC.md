@@ -71,7 +71,7 @@ The flat combat plane contains **interactive zones** with gameplay effects:
 - **Hazard Zones** — instant damage if occupied too long (forces repositioning)
 
 Zone layouts are **unique per battlefield** based on faction terrain:
-- **Aten Ra (Egypt):** Solar burn zones, sandstorm blind areas
+- **Shemris (Meridian Court, live roster):** heat-shimmer blind zones, verdict-scales burn areas
 - **Asgardian (Scandinavia):** Storm surge zones, ice slick areas
 - **Olympian (Greece):** Divine light buff zones, earthquake cracks
 - **Tuatha (Ireland):** Root-grasp zones, mist concealment areas
@@ -106,7 +106,7 @@ Zone layouts are **unique per battlefield** based on faction terrain:
 - At 100%, Ultimate/Ascension is unlocked
 - Player taps the Ultimate button to unleash
 - Effect is **screen-wide** — every enemy on the battlefield takes the hit
-- Each deity has a **unique ultimate** (live kit examples: data/deities/ — Shemris = heat-shimmer volley, Stormmoot kits = oath-spears, etc.)
+- Each deity has a **unique ultimate** (live roster: data/deities/ — e.g., Shemris the Glasswind = heat-shimmer volley)
 
 ### Faction Resource
 - Each faction has a unique resource (Solar Charge, Oathfire, Divine Favor, Sealfire, Geas, Choir Resonance, Debtfire)
@@ -125,16 +125,16 @@ The player makes 5 strategic decisions every fight:
 4. **WHEN to pop ultimate** — Belief bar timing, maximizing enemy hits
 5. **WHEN to dash** — dodge button for spatial repositioning (escape zones, close gaps, reposition)
 
-## Combat Flow Example (Aten Ra vs Hollow)
+## Combat Flow Example (Shemris vs Hollow)
 
 1. Player taps a spot near a **solar buff zone** → avatar walks there
 2. Avatar enters weapon range of Hollow enemy → auto basic attacks begin
-3. Hollow attacks → game rolls dodge (Aten Ra dodge = 65) vs Hollow accuracy (40) → **Dodge succeeds** → evasion animation plays
+3. Hollow attacks → game rolls dodge (Shemris dodge = 65) vs Hollow accuracy (40) → **Dodge succeeds** → evasion animation plays
 4. Player taps Ability 1 (Cleave) → hits 3 Hollows in front arc
-5. Hollow attacks again → dodge fails → parry roll (Aten Ra parry = 50 vs Hollow power = 60) → **Parry fails** → full damage taken
+5. Hollow attacks again → dodge fails → parry roll (Shemris parry = 50 vs Hollow power = 60) → **Parry fails** → full damage taken
 6. Player taps **dodge button** → quick dash OUT of a void-mist damage zone that appeared
 7. Belief bar fills → 🔋 FULL
-8. Player taps 🔋 → Aten Ra's solar flare ultimate → all remaining Hollows on battlefield take massive damage
+8. Player taps 🔋 → Shemris's glasswind volley ultimate → all remaining Hollows on battlefield take massive damage
 9. Fight ends → loot drops, belief gained, avatar stats reviewed
 
 ## Enemy AI System
@@ -192,10 +192,11 @@ In late-game encounters, enemies coordinate:
 - **Ultimate Denial:** Sentinels block escape routes while the team bursts the player before their Belief bar fills
 - **Divide and Conquer:** Enemies split the player from buff zones, forcing fights in unfavorable terrain
 
-## Avatar System
+## Playable Character (Avalon canon: the two scales)
 
-### Playable Character
-The player controls an **Avatar** — a divine projection of their chosen Deity. The Deity itself is safe in their home Realm and never dies. Only the Avatar can fall in combat.
+The player plays at TWO scales, both directly — no projection layer:
+- **PILGRIM scale**: the hooded pilgrim (one of the six Orders — Warden, Keeper, Walker, Singer, Smith, Vigil), carrying the Mark and the Luminary. This is the campaign scale (Diablo-style descent, front... behind-back third-person camera per the Pilgrim Camera Doctrine).
+- **GOD scale**: the woken colossus itself, played directly at the Gate (siege/duel modes). The god is stationary per the Emergence Law; what falls in combat is never the god's body.
 
 ### Realm Advantage Modifiers
 | Location | ATK | DEF | Cooldown |
