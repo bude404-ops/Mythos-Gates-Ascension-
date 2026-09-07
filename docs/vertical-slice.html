@@ -128,6 +128,23 @@ let gltfReady=false;
 function loadGLB(url){return new Promise((res,rej)=>{loader0.load(url,g=>res(g),undefined,rej);});}
 const loader0=new GLTFLoader();
 let warden=null,wardenMixer=null,wardenBase=null;
+/* THE LUMINARY — the lantern is a living being (canon). Follows the pilgrim,
+   gathers the faith released by the defeated Hollow. Never attacks. */
+const lum=new THREE.Group();
+{ const core=new THREE.Mesh(new THREE.SphereGeometry(.11,12,12),
+    new THREE.MeshBasicMaterial({color:0xffd27a}));
+  const halo=new THREE.Mesh(new THREE.SphereGeometry(.2,12,12),
+    new THREE.MeshBasicMaterial({color:0xffb050,transparent:true,opacity:.28}));
+  const lt=new THREE.PointLight(0xffc070,1.6,7.5);lum.add(core,halo,lt);lum.userData.lt=lt;}
+scene.add(lum);
+const motes=[];const MOTE_GEO=new THREE.SphereGeometry(.055,8,8);
+function dropFaith(x,z){ // Hollow defeated: faith spills as motes, streams to the Luminary
+  for(let i=0;i<3;i++){
+    const m=new THREE.Mesh(MOTE_GEO,new THREE.MeshBasicMaterial({color:0xffd27a}));
+    m.position.set(x+(R()-.5)*.8,.9+R()*.4,z+(R()-.5)*.8);
+    m.userData={t:-i*.14,vx:0,vy:2.2+R(),vz:0};motes.push(m);scene.add(m);
+  }
+}
 async function spawnWarden(){
   const g=await loadGLB('models/WARDEN-M-IDLE.glb');
   warden=g.scene;warden.scale.setScalar(.028);
@@ -167,16 +184,22 @@ async function playAnim(name,dur){
 
 /* ============ Hollows ============ */
 const hollows=[];
-function mkHollow(z){
+function mkHollow(z,elite){
   const g=new THREE.Group();
-  const mat=new THREE.MeshStandardMaterial({color:0x0d0a08,roughness:1});
+  const mat=new THREE.MeshStandardMaterial({color:elite?0x140c07:0x0d0a08,roughness:1});
   const body=new THREE.Mesh(new THREE.CapsuleGeometry(.55,1.6,4,10),mat);
   body.position.y=1.6;g.add(body);
-  const eyeMat=new THREE.MeshBasicMaterial({color:0xff5a10});
-  for(const sx of[-.16,.16]){const e=new THREE.Mesh(new THREE.SphereGeometry(.07,6,6),eyeMat);
+  const eyeMat=new THREE.MeshBasicMaterial({color:elite?0xff2010:0xff5a10});
+  const es=elite?.11:.07;
+  for(const sx of[-.16,.16]){const e=new THREE.Mesh(new THREE.SphereGeometry(es,6,6),eyeMat);
     e.position.set(sx,2.35,.5);g.add(e);}
+  if(elite){ // void-iron guard slab it hides behind — parry or BASH to break it
+    const sh=new THREE.Mesh(new THREE.BoxGeometry(1.5,2.2,.18),
+      new THREE.MeshStandardMaterial({color:0x241610,roughness:.8,metalness:.35}));
+    sh.position.set(0,1.7,.62);sh.name='shield';g.add(sh);
+    g.scale.setScalar(1.38);}
   g.position.set((R()-.5)*9,0,z);
-  g.userData={hp:34,state:'approach',t:0,atkT:0,vit:0};
+  g.userData={hp:elite?90:34,elite:!!elite,guard:!!elite,broken:0,state:'approach',t:0,atkT:0,vit:0};
   scene.add(g);hollows.push(g);return g;
 }
 function clearHollows(){for(const h of hollows)scene.remove(h);hollows.length=0;}
@@ -185,6 +208,9 @@ function clearHollows(){for(const h of hollows)scene.remove(h);hollows.length=0;
 const S={mode:'title',vigor:100,faith:35,wave:0,z:8,gateZ:-96,rite:0,riteHold:false,
   move:{x:0,z:0},keys:{},parryWin:0,shakes:0,camSwing:0,lock:false,dodgeT:0,dodgeCd:0,dodgeV:{x:0,z:0}};
 const WAVES=[3,4,5];
+const STATS={MIGHT:1.0,WIT:1.0,GUARD:.12,TEMPO:1.0}; // pilgrim stat block (combat doc v1)
+function breakGuard(h){const sh=h.getObjectByName('shield');if(sh)sh.visible=false;h.userData.guard=false;
+  h.userData.vit=.4;banner('GUARD BROKEN — STRIKE NOW',1600);sfx('parry');}
 const banner=(t,ms=2200)=>{const b=$('banner');b.textContent=t;b.style.opacity=1;
   clearTimeout(b._t);b._t=setTimeout(()=>b.style.opacity=0,ms);};
 function setBars(){$('hpF').style.width=Math.max(0,S.vigor)+'%';$('faF').style.width=S.faith+'%';}
@@ -204,6 +230,8 @@ function sfx(kind){
       o.connect(g).connect(AC.destination);o.start(t);o.stop(t+3.2);}
     else if(kind==='boom'){o.frequency.setValueAtTime(60,t);o.frequency.exponentialRampToValueAtTime(28,t+.9);
       g.gain.setValueAtTime(.5,t);g.gain.exponentialRampToValueAtTime(.001,t+1.4);o.connect(g).connect(AC.destination);o.start(t);o.stop(t+1.5);}
+    else if(kind==='faith'){o.type='sine';o.frequency.setValueAtTime(880,t);o.frequency.exponentialRampToValueAtTime(1420,t+.14);
+      g.gain.setValueAtTime(.09,t);g.gain.exponentialRampToValueAtTime(.001,t+.18);o.connect(g).connect(AC.destination);o.start(t);o.stop(t+.2);}
   }catch(e){}
 }
 
@@ -268,10 +296,16 @@ function act(name,anim,dur,dmg,range,knock){
   cds[name]=COOLD[name];playAnim(anim,dur);sfx('hit');
   const {h,d}=nearest();
   if(h&&d<range){
-    h.userData.hp-=dmg;h.userData.vit=.25;
-    if(knock)h.position.z-=1.8;
+    const u=h.userData;
+    if(u.guard&&u.broken<=0){ // guarding: blows bounce off the void-iron slab
+      if(knock){u.broken=3.5;breakGuard(h);S.faith=Math.min(100,S.faith+10);setBars();} // BASH opens it
+      else{u.hp-=dmg*STATS.MIGHT*.25;S.shakes=.15;sfx('parry');} // clang — barely a scratch
+    }else{
+      u.hp-=dmg*STATS.MIGHT*(u.broken>0?1.75:1);u.vit=.25;
+      if(knock)h.position.z-=1.8;
+    }
     S.shakes=Math.max(S.shakes,.35);
-    if(h.userData.hp<=0){scene.remove(h);hollows.splice(hollows.indexOf(h),1);
+    if(u.hp<=0){scene.remove(h);hollows.splice(hollows.indexOf(h),1);
       S.faith=Math.min(100,S.faith+6);setBars();
       if(!hollows.length)nextWave();}
   }
@@ -288,6 +322,10 @@ function nextWave(){
       const h=mkHollow(warden.position.z-15-R()*6);
       h.position.x=(R()<.5?-1:1)*(R()*5.0);
     }},i*700);
+  if(S.wave===WAVES.length)setTimeout(()=>{if(S.mode==='fight'){
+      const e=mkHollow(warden.position.z-19-R()*4,true);e.position.x=(R()<.5?-1:1)*2;
+      banner('A WARDEN HOLLOW GUARDS THE WAY — PARRY ITS LUNGE OR BASH IT OPEN',3400);
+    }},1400);
 }
 function beginRite(){
   S.mode='rite';S.faith=100;setBars();
@@ -321,7 +359,7 @@ const clock=new THREE.Clock();
 function tick(){
   requestAnimationFrame(tick);
   const dt=Math.min(.05,clock.getDelta()),t=clock.elapsedTime;
-  for(const k in cds)if(cds[k]>0){cds[k]-=dt;
+  for(const k in cds)if(cds[k]>0){cds[k]-=dt*STATS.TEMPO;
     const el={STRIKE:'bATK',HEAVY:'bHEAVY',PARRY:'bPARRY',BASH:'bBASH'}[k];
     const c=$(el).querySelector('.cd');c.style.height=Math.max(0,cds[k]/COOLD[k]*100)+'%';}
 
@@ -341,7 +379,7 @@ function tick(){
     S.lock=!!lockT&&lockD<13;
     const spd=S.lock?2.6:4.6;
     // dodge: flick (touch) or SHIFT — quick dash with i-frames
-    if(S.dodgeCd>0)S.dodgeCd-=dt;
+    if(S.dodgeCd>0)S.dodgeCd-=dt*STATS.TEMPO;
     const flick=(m>.85&&!S._flickLatch&&S.lock)||S.keys.ShiftLeft||S.keys.ShiftRight;
     if(flick&&S.dodgeCd<=0&&S.dodgeT<=0){
       S.dodgeT=.3;S.dodgeCd=.9;S.dodgeV={x:mx,z:mz};
@@ -364,28 +402,50 @@ function tick(){
     warden.rotation.y+=d*Math.min(1,dt*10);
     if(S.parryWin>0)S.parryWin-=dt;
     document.getElementById('lockind').style.display=S.lock?'inline':'none';
+    // Luminary: hovers at the pilgrim's shoulder, bobs like a living flame
+    const lx=warden.position.x-Math.sin(warden.rotation.y)*.55+Math.cos(warden.rotation.y)*.75;
+    const lz=warden.position.z-Math.cos(warden.rotation.y)*.55-Math.sin(warden.rotation.y)*.75;
+    lum.position.x+=(lx-lum.position.x)*Math.min(1,dt*5);
+    lum.position.z+=(lz-lum.position.z)*Math.min(1,dt*5);
+    lum.position.y=2.05+Math.sin(t*2.3)*.09;
+    // faith motes: pop up, then stream into the Luminary — the loot feel
+    for(let i=motes.length-1;i>=0;i--){const m=motes[i];const u=m.userData;u.t+=dt;
+      if(u.t<0)continue;
+      if(u.t<.28){m.position.y+=u.vy*dt;u.vy-=4*dt;}
+      else{const dx=lum.position.x-m.position.x,dy=(lum.position.y-.1)-m.position.y,dz=lum.position.z-m.position.z;
+        const sp=Math.min(14,3.5+u.t*16);
+        m.position.x+=dx*sp*dt;m.position.y+=dy*sp*dt;m.position.z+=dz*sp*dt;
+        if(Math.hypot(dx,dy,dz)<.28){ // gathered: faith lands in the lantern
+          scene.remove(m);motes.splice(i,1);
+          S.faith=Math.min(100,S.faith+2);setBars();sfx('faith');
+          $('faF').style.filter='brightness(2)';setTimeout(()=>$('faF').style.filter='',110);
+        }}}
 
     /* hollows AI */
     for(const h of hollows){
       const u=h.userData;u.t+=dt;
+      if(u.broken>0){u.broken-=dt;if(u.broken<=0){u.guard=true;
+        const sh=h.getObjectByName('shield');if(sh)sh.visible=true;}}
       const dz=warden.position.z-h.position.z,dx=warden.position.x-h.position.x;
       const dist=Math.hypot(dx,dz);
       h.rotation.y=Math.atan2(dx,dz)+Math.PI; // face pilgrim
       if(u.state==='approach'){
-        const v=2.4+u.t*.04;
+        const v=(u.elite?1.9:2.4)+u.t*.04;
         h.position.z+=Math.sign(dz)*v*dt;h.position.x+=Math.sign(dx)*Math.min(2.5,v)*dt;
         h.position.y=Math.abs(Math.sin(u.t*6))*.12;
         if(dist<2.2&&u.atkT<=0){u.state='windup';u.t=0;}
       }else if(u.state==='windup'){
         h.scale.setScalar(1+Math.sin(u.t*18)*.12); // telegraph pulse
-        if(u.t>.7){u.state='lunge';u.t=0;sfx('hit');}
+        if(u.t>(u.elite?1.0:.7)){u.state='lunge';u.t=0;sfx('hit');}
       }else if(u.state==='lunge'){
         h.position.z+=Math.sign(dz)*9*dt;h.position.x+=Math.sign(dx)*4*dt;
         h.scale.setScalar(1);
         if(Math.hypot(warden.position.z-h.position.z,warden.position.x-h.position.x)<1.7){
           if(S.dodgeT>0){u.state='approach';u.atkT=1.4;} // i-frames: rolled through it
-          else if(S.parryWin>0){S.faith=Math.min(100,S.faith+12);sfx('parry');u.state='approach';u.atkT=1.6;}
-          else{S.vigor=Math.max(0,S.vigor-9);S.shakes=.4;setBars();
+          else if(S.parryWin>0){S.faith=Math.min(100,S.faith+12);sfx('parry');
+            if(u.elite&&u.guard){u.broken=3.5;breakGuard(h);S.faith=Math.min(100,S.faith+8);setBars();}
+            u.state='approach';u.atkT=1.6;}
+          else{S.vigor=Math.max(0,S.vigor-(u.elite?14:9)*(1-STATS.GUARD));S.shakes=.4;setBars();
             if(S.vigor<=0){S.mode='dead';banner('THE HOLLOW TAKES THE LANTERN — TAP TO RETRY',90000);
               setTimeout(()=>location.reload(),4200);}
             u.state='approach';u.atkT=1.8;}
