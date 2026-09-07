@@ -22,7 +22,8 @@ BudE404 directive (Sept 6 2026): mix Diablo Immortal + Genshin into our own styl
 - **Stamina dodge** with i-frames (separate from abilities)
 
 ### Layer 3 — AVALON (the lore wrapper — ours alone)
-- **FAITH economy** (canon): abilities cost FAITH; the WARD converts caught damage INTO FAITH — the more you're sieged, the more you can answer. No other ARPG does ward-to-faith.
+- **FAITH ECONOMY LAW v2 — THE MACER'S LOOP** (BudE404, Sept 6: 'that Diablo dungeon masher feel so instead of mana we just have faith and abilities use faith and attacking and killing builds it back up'): FAITH is the ONLY resource — there is NO mana, NO passive regen bar. THE LOOP: attacking BUILDS faith (every landed hit feeds the flame), killing BUILDS it bigger (mote burst), the WARD converts caught damage INTO faith (the more you're sieged, the more you can answer — unchanged canon), and abilities SPEND it. The pilgrim is always swinging to afford the next miracle — aggression is the economy. This is the Diablo dungeon-masher loop transplanted whole: hatred/essence/fury/spirit -> FAITH.
+- **WEAPON/SKILL TREES FIT THE LOOP**: every weapon tree node and ability is either a BUILDER (more faith per hit/kill/parry — e.g. a Warden parry node that deepens the +12 catch bonus, a Smith node that adds burn-ticks that generate faith) or a SPENDER (faith-cost miracles — surges, reactions, relic verbs), gated by FAITH not long cooldowns. Cooldowns stay SHORT (TEMPO shrinks them) — the resource gate is the faith cost. Kill-burst values scale so chaining packs keeps the bar full (the masher's momentum high).
 - **FAITH DROPS** (BudE404, Sept 6 — the loot feel): defeated Hollow RELEASE their faith as golden motes that visibly float and stream INTO THE LUMINARY, as if the living lantern collects them — the Diablo-gold-drop satisfaction, but the "gold" is belief and the "purse" is your companion. The Luminary gathers; the FAITH lands when the motes arrive (bar ticks per mote, soft chime), not on the kill frame. Lore-perfect: the flame feeds on deeds.
 - **Debt economy** (canon from combat runtime): Hollow ACCRUE DEBT when struck; at threshold a Hollow REVENANTS (enrages) — kill fast or get swarmed by rage.
 - **Void tether**: Hollow are void-element, reaction-IMMUNE until their tether is SEVERED. CANON ROLES (per the ONE COMPANION TWO LIGHTS ruling): the LUMINARY REVEALS the tether — its glow is discovery/navigation light, NEVER combat power — and the PILGRIM severs what it reveals (strike the shown tether-point). The lantern's combat-adjacent role stays PROTECTIVE only: while the Luminary shines, void-chill does not drain VIGOR. The lantern never attacks.
@@ -34,7 +35,7 @@ BudE404 directive (Sept 6 2026): mix Diablo Immortal + Genshin into our own styl
 | Stat | Meaning |
 |---|---|
 | VIGOR | health |
-| FAITH | ability resource (regen: ward catches, lantern-rite beats) |
+| FAITH | the ONLY resource — abilities spend it; landed hits, kills (mote bursts), ward catches build it — no mana, no passive regen |
 | MIGHT | melee/combo/finisher damage |
 | WIT | ability + reaction damage |
 | GUARD | damage mitigation (Cinder Roads plate) |
