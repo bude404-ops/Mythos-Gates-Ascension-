@@ -402,24 +402,6 @@ function tick(){
     warden.rotation.y+=d*Math.min(1,dt*10);
     if(S.parryWin>0)S.parryWin-=dt;
     document.getElementById('lockind').style.display=S.lock?'inline':'none';
-    // Luminary: hovers at the pilgrim's shoulder, bobs like a living flame
-    const lx=warden.position.x-Math.sin(warden.rotation.y)*.55+Math.cos(warden.rotation.y)*.75;
-    const lz=warden.position.z-Math.cos(warden.rotation.y)*.55-Math.sin(warden.rotation.y)*.75;
-    lum.position.x+=(lx-lum.position.x)*Math.min(1,dt*5);
-    lum.position.z+=(lz-lum.position.z)*Math.min(1,dt*5);
-    lum.position.y=2.05+Math.sin(t*2.3)*.09;
-    // faith motes: pop up, then stream into the Luminary — the loot feel
-    for(let i=motes.length-1;i>=0;i--){const m=motes[i];const u=m.userData;u.t+=dt;
-      if(u.t<0)continue;
-      if(u.t<.28){m.position.y+=u.vy*dt;u.vy-=4*dt;}
-      else{const dx=lum.position.x-m.position.x,dy=(lum.position.y-.1)-m.position.y,dz=lum.position.z-m.position.z;
-        const sp=Math.min(14,3.5+u.t*16);
-        m.position.x+=dx*sp*dt;m.position.y+=dy*sp*dt;m.position.z+=dz*sp*dt;
-        if(Math.hypot(dx,dy,dz)<.28){ // gathered: faith lands in the lantern
-          scene.remove(m);motes.splice(i,1);
-          S.faith=Math.min(100,S.faith+2);setBars();sfx('faith');
-          $('faF').style.filter='brightness(2)';setTimeout(()=>$('faF').style.filter='',110);
-        }}}
 
     /* hollows AI */
     for(const h of hollows){
@@ -472,7 +454,7 @@ function tick(){
     if(vael.position.y>=-1.2)godRisen();
   }
 
-  /* camera: FRONT VIEW — ahead of the pilgrim, facing his front */
+  /* camera: third-person behind-back (pilgrim) / souls lock-on framing (fight) */
   if(warden&&S.mode!=='risen'){
     const px=warden.position.x,pz=warden.position.z;
     let cx,cy,cz,lx,ly,lz;
@@ -493,7 +475,27 @@ function tick(){
       cx=0;cy=6.5+S.camSwing*2;cz=pz+15+S.camSwing*6;lx=0;ly=7;lz=S.gateZ-2;}
     cam.position.lerp(new THREE.Vector3(cx,cy,cz),Math.min(1,dt*3));
     cam.lookAt(lx,ly,lz);
-  }else if(S.mode==='risen'){
+  }
+  /* THE LUMINARY follows in every mode; motes stream to it in every mode */
+  if(warden){
+    const lx=warden.position.x-Math.sin(warden.rotation.y)*.55+Math.cos(warden.rotation.y)*.75;
+    const lz=warden.position.z-Math.cos(warden.rotation.y)*.55-Math.sin(warden.rotation.y)*.75;
+    lum.position.x+=(lx-lum.position.x)*Math.min(1,dt*5);
+    lum.position.z+=(lz-lum.position.z)*Math.min(1,dt*5);
+    lum.position.y=2.05+Math.sin(t*2.3)*.09;
+    for(let i=motes.length-1;i>=0;i--){const m=motes[i];const u=m.userData;u.t+=dt;
+      if(u.t<0)continue;
+      if(u.t<.28){m.position.y+=u.vy*dt;u.vy-=4*dt;}
+      else{const dx=lum.position.x-m.position.x,dy=(lum.position.y-.1)-m.position.y,dz=lum.position.z-m.position.z;
+        const sp=Math.min(14,3.5+u.t*16);
+        m.position.x+=dx*sp*dt;m.position.y+=dy*sp*dt;m.position.z+=dz*sp*dt;
+        if(Math.hypot(dx,dy,dz)<.28){ // gathered: faith lands in the lantern
+          scene.remove(m);motes.splice(i,1);
+          S.faith=Math.min(100,S.faith+2);setBars();sfx('faith');
+          $('faF').style.filter='brightness(2)';setTimeout(()=>$('faF').style.filter='',110);
+        }}}
+  }
+  if(S.mode==='risen'){
     const a=t*.06; // slow orbit of the risen god — the reward shot
     cam.position.lerp(new THREE.Vector3(Math.sin(a)*20,8.5+S.camSwing*2,S.gateZ+16+Math.cos(a)*4),Math.min(1,dt*1.2));
     cam.lookAt(0,6.5,S.gateZ-2);
