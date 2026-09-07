@@ -10,7 +10,7 @@ BudE404 directive (Sept 6 2026): mix Diablo Immortal + Genshin into our own styl
 - **Loot-lite**: tribute relics from the Depths (relic-gift altar already canon in Depths prototype)
 
 ### Layer 2 — GENSHIN (the reaction layer)
-- **Elemental identity**: the pilgrim channels ONE element through the Mark (ember/storm/bloom/dusk/tide/stone) — swappable at camp via lantern-oil (solo-first answer to Genshin's team swap)
+- **Elemental identity**: the pilgrim channels ONE element through the Mark (ember/storm/bloom/dusk/tide/stone) — re-attuned at camp/shrine (solo-first answer to Genshin's team swap). THE LANTERN IS THE LUMINARIES (BudE404, Sept 6): the lantern is a living being, never a tool or oil-swapped prop — the Luminary's flame mirrors whatever element the Mark carries, because the flame is kin to that element
 - **ELEMENTAL REACTIONS**: status-on-status = burst effects:
   - ember + tide = STEAMVEIL (blind + area denial)
   - storm + stone = SHATTER (guard break)
@@ -18,13 +18,13 @@ BudE404 directive (Sept 6 2026): mix Diablo Immortal + Genshin into our own styl
   - ember + storm = ASHSTORM (damage-over-time whirl)
   - tide + stone = LODESTONE (pull/anchor)
   - bloom + tide = ROOTMERE (root + heal)
-- Reactions do the big damage — swapping lantern-oil mid-run answers enemy resistances
+- Reactions do the big damage — re-attuning the Mark answers enemy resistances
 - **Stamina dodge** with i-frames (separate from abilities)
 
 ### Layer 3 — AVALON (the lore wrapper — ours alone)
 - **FAITH economy** (canon): abilities cost FAITH; the WARD converts caught damage INTO FAITH — the more you're sieged, the more you can answer. No other ARPG does ward-to-faith.
 - **Debt economy** (canon from combat runtime): Hollow ACCRUE DEBT when struck; at threshold a Hollow REVENANTS (enrages) — kill fast or get swarmed by rage.
-- **Void tether**: Hollow are void-element, reaction-IMMUNE until their tether is SEVERED by lantern light (the only light that stays) — forces lantern play mid-combat.
+- **Void tether**: Hollow are void-element, reaction-IMMUNE until their tether is SEVERED. CANON ROLES (per the ONE COMPANION TWO LIGHTS ruling): the LUMINARY REVEALS the tether — its glow is discovery/navigation light, NEVER combat power — and the PILGRIM severs what it reveals (strike the shown tether-point). The lantern's combat-adjacent role stays PROTECTIVE only: while the Luminary shines, void-chill does not drain VIGOR. The lantern never attacks.
 - **Emergence Law**: god-scale = stationary siege combat (unchanged canon).
 
 ## The Stat Block
@@ -56,4 +56,4 @@ BudE404 directive (Sept 6 2026): mix Diablo Immortal + Genshin into our own styl
 1. Auto-face lock-on + cooldown HUD (slice patch 2 — replaces free-joystick combat)
 2. TEMPO/GUARD stat wiring + elite Warden Hollow with guard-break
 3. Void-tether severing (lantern toggle mid-fight)
-4. Lantern-oil element swap + first 2 reactions (ember+storm, ember+tide)
+4. Mark re-attunement (camp/shrine) + first 2 reactions (ember+storm, ember+tide); Luminary flame mirrors the Mark; Luminary tether-REVEAL + pilgrim-sever loop
