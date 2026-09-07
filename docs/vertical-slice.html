@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>AVALON — The First Waking (Vertical Slice)</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{width:100%;height:100%;background:#070505;overflow:hidden;font-family:Georgia,'Times New Roman',serif;color:#e8dcc8;user-select:none;-webkit-user-select:none;touch-action:none}
+#wrap{position:relative;width:100%;height:100%}
+canvas{display:block;width:100%;height:100%}
+#vig{position:absolute;inset:0;z-index:4;pointer-events:none;background:radial-gradient(ellipse at center,transparent 52%,rgba(0,0,0,.5) 82%,rgba(0,0,0,.85) 100%)}
+#lbT,#lbB{position:absolute;left:0;right:0;height:5%;background:#000;z-index:5;pointer-events:none}
+#lbT{top:0}#lbB{bottom:0}
+#hud{position:absolute;left:14px;bottom:7.5%;z-index:6;pointer-events:none;display:flex;gap:14px;align-items:flex-end}
+.bar{width:132px}.lab{font-size:10px;letter-spacing:3px;color:#9a8f7d;margin-bottom:3px}
+.tr{height:9px;background:#151011;border:1px solid #3a2f28}.fl{height:100%;width:100%;transition:width .15s}
+#hpF{background:linear-gradient(90deg,#8a2318,#c5502f)}#faF{background:linear-gradient(90deg,#7a5a1e,#ffd27a);width:35%}
+#obj{position:absolute;top:7.5%;left:16px;z-index:6;font-size:11px;letter-spacing:3px;color:#9a8f7d;font-style:italic;text-shadow:0 2px 8px #000;pointer-events:none}
+#wave{position:absolute;top:7.5%;right:16px;z-index:6;font-size:11px;letter-spacing:3px;color:#9a8f7d;pointer-events:none}
+#banner{position:absolute;top:32%;left:0;right:0;text-align:center;color:#ffdca8;font-size:clamp(17px,4.5vw,28px);letter-spacing:6px;text-shadow:0 2px 14px #000;opacity:0;transition:opacity .6s;font-style:italic;z-index:8;pointer-events:none}
+#ritewrap{position:absolute;left:50%;bottom:24%;transform:translateX(-50%);z-index:7;display:none;text-align:center}
+#ritewrap .rt{font-size:12px;letter-spacing:4px;color:#ffdca8;font-style:italic}
+#ritebar{width:220px;height:10px;background:#151011;border:1px solid #8a6a3a;margin:8px auto 0}
+#ritefl{height:100%;width:0%;background:linear-gradient(90deg,#b06a1e,#ffd27a);box-shadow:0 0 12px rgba(255,180,80,.6)}
+#joy{position:absolute;left:4.5%;bottom:20%;width:120px;height:120px;border-radius:50%;border:1px solid rgba(138,106,58,.4);background:rgba(20,14,10,.3);z-index:9;display:none}
+#knob{position:absolute;left:35px;top:35px;width:50px;height:50px;border-radius:50%;background:rgba(200,150,80,.25);border:1px solid rgba(255,210,140,.4)}
+#btns{position:absolute;right:4.5%;bottom:18%;z-index:9;display:none;grid-template-columns:repeat(2,64px);gap:12px}
+.ab{width:64px;height:64px;border-radius:50%;border:1px solid #8a6a3a;background:rgba(20,14,10,.55);color:#ffdca8;font-size:10px;letter-spacing:1px;font-family:inherit;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.ab .cd{position:absolute;left:0;bottom:0;width:100%;background:rgba(0,0,0,.65);height:0}
+.ab:active{background:rgba(200,120,40,.25)}
+#overlay{position:absolute;inset:0;z-index:20;background:rgba(4,2,2,.94);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:26px;overflow:auto}
+#overlay h1{font-size:clamp(24px,6vw,42px);letter-spacing:10px;color:#ffdca8;font-weight:normal;font-style:italic;margin-bottom:8px;text-shadow:0 3px 20px rgba(200,90,20,.35)}
+#overlay h2{font-size:clamp(11px,2.4vw,15px);letter-spacing:6px;color:#8a7d6a;font-weight:normal;font-style:italic;margin-bottom:22px}
+#overlay p{max-width:560px;font-size:13px;line-height:2;color:#a89a83;margin-bottom:8px}
+#overlay .keys{font-size:11px;letter-spacing:2px;color:#6d6355;line-height:2;margin-top:16px}
+#overlay button{margin-top:22px;background:transparent;border:1px solid #8a6a3a;color:#ffdca8;padding:13px 46px;font-family:inherit;font-size:15px;letter-spacing:6px;cursor:pointer}
+#overlay button:active,#overlay button:hover{background:rgba(200,120,40,.12)}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<div id="wrap">
+<canvas id="cv"></canvas>
+<div id="vig"></div><div id="lbT"></div><div id="lbB"></div>
+<div id="obj">descend the hall. the Gate waits below.</div>
+<div id="wave">WAVE <span id="wv">—</span></div>
+<div id="banner"></div>
+<div id="hud">
+  <div class="bar"><div class="lab">VIGOR</div><div class="tr"><div class="fl" id="hpF"></div></div></div>
+  <div class="bar"><div class="lab">FAITH</div><div class="tr"><div class="fl" id="faF"></div></div></div>
+</div>
+<div id="ritewrap"><div class="rt">HOLD — WAKE HIM</div><div id="ritebar"><div id="ritefl"></div></div></div>
+<div id="joy"><div id="knob"></div></div>
+<div id="btns">
+  <button class="ab" id="bPARRY">PARRY<span class="cd"></span></button>
+  <button class="ab" id="bBASH">BASH<span class="cd"></span></button>
+  <button class="ab" id="bHEAVY">HEAVY<span class="cd"></span></button>
+  <button class="ab" id="bATK">STRIKE<span class="cd"></span></button>
+</div>
+<div id="overlay">
+  <h1>THE FIRST WAKING</h1>
+  <h2>AVALON — VERTICAL SLICE · THE DEPTHS BELOW EMBERMERE</h2>
+  <p>The pilgrim descends the fever-hall with lantern raised. The Hollow is already here — it was always here. At the hall's end stands the Gate: plain standing stones, and the ember-flame that answers a mark held to it with faith.</p>
+  <p>Clear the waves. Reach the Gate. Hold the rite. Wake the god.</p>
+  <div class="keys">TOUCH — joystick + buttons · DESKTOP — WASD move, SPACE strike, H heavy, P parry, B shield-bash, hold E at the Gate</div>
+  <button id="start">BEGIN THE DESCENT</button>
+</div>
+</div>
+<script type="importmap">
+{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+(()=>{ 'use strict';
+/* ============ boot ============ */
+const $=id=>document.getElementById(id);
+const renderer=new THREE.WebGLRenderer({canvas:$('cv'),antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+const scene=new THREE.Scene();
+scene.background=new THREE.Color(0x0a0605);
+scene.fog=new THREE.FogExp2(0x0a0605,.055);
+const cam=new THREE.PerspectiveCamera(46,innerWidth/innerHeight,.1,300);
+addEventListener('resize',()=>{cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});
+renderer.setSize(innerWidth,innerHeight);
+
+/* lights — fever-orange depths */
+const key=new THREE.DirectionalLight(0xffc890,.85);key.position.set(4,8,6);scene.add(key);
+const rim=new THREE.DirectionalLight(0xff7a2a,.5);rim.position.set(-6,5,-6);scene.add(rim);
+scene.add(new THREE.AmbientLight(0x3a2415,.8));
+const lantern=new THREE.PointLight(0xffb050,26,16,2);scene.add(lantern);
+
+/* ============ hall: floor, walls, ember veins ============ */
+const R=(seed=>()=>((seed=seed*16807%2147483647)/2147483647))(97);
+const rockMat=new THREE.MeshStandardMaterial({color:0x2a2018,roughness:.95});
+const veinMat=new THREE.MeshStandardMaterial({color:0x1a0f08,emissive:0xff5a10,emissiveIntensity:.6,roughness:.9});
+const floor=new THREE.Mesh(new THREE.PlaneGeometry(30,240),rockMat.clone());
+floor.material.color.set(0x241a12);floor.rotation.x=-Math.PI/2;scene.add(floor);
+for(let i=0;i<50;i++){ // wall chunks + magma veins
+  const z=10-R()*200,w=1+R()*2,h=2+R()*7;
+  const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,1+R()*3),rockMat);
+  m.position.set(-6.5+R()*2-1,h/2-1,z);scene.add(m);
+  const m2=m.clone();m2.position.x=6.5+R()*2-1;scene.add(m2);
+  if(R()<.4){const v=new THREE.Mesh(new THREE.BoxGeometry(.15+R()*.2,1.5,2+R()*6),veinMat);
+    v.position.set(-6.9+R()*1.5,.2+R()*1.2,z);scene.add(v);}
+}
+/* ember particles */
+const eN=220,ePos=new Float32Array(eN*3),eSpd=new Float32Array(eN);
+for(let i=0;i<eN;i++){ePos[i*3]=(R()-.5)*24;ePos[i*3+1]=R()*9;ePos[i*3+2]=20-R()*180;eSpd[i]=.35+R()*.9;}
+const eGeo=new THREE.BufferGeometry();eGeo.setAttribute('position',new THREE.BufferAttribute(ePos,3));
+const embers=new THREE.Points(eGeo,new THREE.PointsMaterial({color:0xff9a40,size:.14,transparent:true,opacity:.85,blending:THREE.AdditiveBlending}));
+scene.add(embers);
+
+/* ============ the Gate: plain weathered standing stones ============ */
+const gateGrp=new THREE.Group();
+const stoneMat=new THREE.MeshStandardMaterial({color:0x4a443c,roughness:.98});
+const mkStone=(w,h,d)=>new THREE.Mesh(new THREE.BoxGeometry(w,h,d),stoneMat);
+const sL=mkStone(1.5,9,1.9);sL.position.set(-3.4,4.5,0);sL.rotation.z=.05;
+const sR=mkStone(1.5,9.4,1.9);sR.position.set(3.4,4.7,0);sR.rotation.z=-.07;
+const sT=mkStone(8.6,1.7,2.1);sT.position.set(0,9.6,0);sT.rotation.z=.02;
+gateGrp.add(sL,sR,sT);
+const flame=new THREE.PointLight(0xff8a20,0,22,2);flame.position.set(0,5.2,1.6);gateGrp.add(flame);
+gateGrp.position.set(0,0,-96);scene.add(gateGrp);
+
+/* ============ Warden-M (GLB, cached actions) ============ */
+let gltfReady=false;
+function loadGLB(url){return new Promise((res,rej)=>{loader0.load(url,g=>res(g),undefined,rej);});}
+const loader0=new GLTFLoader();
+let warden=null,wardenMixer=null,wardenBase=null;
+async function spawnWarden(){
+  const g=await loadGLB('models/WARDEN-M-IDLE.glb');
+  warden=g.scene;warden.scale.setScalar(.028);
+  warden.rotation.y=Math.PI; // faces -Z (toward the Gate / into the depths)
+  wardenBase=g;scene.add(warden);
+  wardenMixer=new THREE.AnimationMixer(warden);
+  if(g.animations[0])wardenMixer.clipAction(g.animations[0]).play();
+}
+let swapping=false;
+async function playAnim(name,dur){
+  if(swapping||!warden)return;swapping=true;
+  try{
+    const g=await loadGLB(`models/WARDEN-M-${name}.glb`);
+    const node=g.scene.clone(true);node.scale.copy(warden.scale);
+    node.position.copy(warden.position);node.rotation.copy(warden.rotation);
+    scene.remove(warden);scene.add(node);warden=node;
+    wardenMixer=new THREE.AnimationMixer(node);
+    if(g.animations[0]){const a=wardenMixer.clipAction(g.animations[0]);a.play();
+      a.timeScale=g.animations[0].duration?Math.min(2.2,g.animations[0].duration/1.05):1;}
+    setTimeout(()=>{swapping=false;},dur*1000);
+  }catch(e){swapping=false;}
+}
+
+/* ============ Hollows ============ */
+const hollows=[];
+function mkHollow(z){
+  const g=new THREE.Group();
+  const mat=new THREE.MeshStandardMaterial({color:0x0d0a08,roughness:1});
+  const body=new THREE.Mesh(new THREE.CapsuleGeometry(.55,1.6,4,10),mat);
+  body.position.y=1.6;g.add(body);
+  const eyeMat=new THREE.MeshBasicMaterial({color:0xff5a10});
+  for(const sx of[-.16,.16]){const e=new THREE.Mesh(new THREE.SphereGeometry(.07,6,6),eyeMat);
+    e.position.set(sx,2.35,.5);g.add(e);}
+  g.position.set((R()-.5)*9,0,z);
+  g.userData={hp:34,state:'approach',t:0,atkT:0,vit:0};
+  scene.add(g);hollows.push(g);return g;
+}
+function clearHollows(){for(const h of hollows)scene.remove(h);hollows.length=0;}
+
+/* ============ game state ============ */
+const S={mode:'title',vigor:100,faith:35,wave:0,z:8,gateZ:-96,rite:0,riteHold:false,
+  move:{x:0,z:0},keys:{},parryWin:0,shakes:0,camSwing:0};
+const WAVES=[3,4,5];
+const banner=(t,ms=2200)=>{const b=$('banner');b.textContent=t;b.style.opacity=1;
+  clearTimeout(b._t);b._t=setTimeout(()=>b.style.opacity=0,ms);};
+function setBars(){$('hpF').style.width=Math.max(0,S.vigor)+'%';$('faF').style.width=S.faith+'%';}
+
+/* ============ audio: hits & rite (WebAudio, no assets) ============ */
+let AC=null;
+function sfx(kind){
+  try{
+    AC=AC||new (window.AudioContext||window.webkitAudioContext)();
+    const t=AC.currentTime,o=AC.createOscillator(),g=AC.createGain();
+    if(kind==='hit'){o.frequency.setValueAtTime(140,t);o.frequency.exponentialRampToValueAtTime(48,t+.12);
+      g.gain.setValueAtTime(.25,t);g.gain.exponentialRampToValueAtTime(.001,t+.16);o.connect(g).connect(AC.destination);o.start(t);o.stop(t+.18);}
+    else if(kind==='parry'){o.frequency.setValueAtTime(880,t);o.frequency.exponentialRampToValueAtTime(440,t+.1);
+      g.gain.setValueAtTime(.18,t);g.gain.exponentialRampToValueAtTime(.001,t+.22);o.connect(g).connect(AC.destination);o.start(t);o.stop(t+.24);}
+    else if(kind==='rite'){o.frequency.setValueAtTime(70,t);
+      g.gain.setValueAtTime(.22,t);g.gain.linearRampToValueAtTime(.3,t+2.6);g.gain.linearRampToValueAtTime(.001,t+3.2);
+      o.connect(g).connect(AC.destination);o.start(t);o.stop(t+3.2);}
+    else if(kind==='boom'){o.frequency.setValueAtTime(60,t);o.frequency.exponentialRampToValueAtTime(28,t+.9);
+      g.gain.setValueAtTime(.5,t);g.gain.exponentialRampToValueAtTime(.001,t+1.4);o.connect(g).connect(AC.destination);o.start(t);o.stop(t+1.5);}
+  }catch(e){}
+}
+
+/* ============ Vaelthorn ============ */
+let vael=null,vaelMixer=null;
+async function wakeGod(){
+  const g=await loadGLB('models/VAELTHORN-IDLE.glb');
+  vael=g.scene;vael.scale.setScalar(.075);
+  vael.position.set(0,-14,S.gateZ-3); // below ground; rises per the Emergence Law
+  scene.add(vael);
+  vaelMixer=new THREE.AnimationMixer(vael);
+  if(g.animations[0])vaelMixer.clipAction(g.animations[0]).play();
+  S.shakes=1.6;S.camSwing=1;
+}
+
+/* ============ input ============ */
+addEventListener('keydown',e=>{S.keys[e.code]=true;
+  if(S.mode==='fight'){
+    if(e.code==='Space')doAttack();if(e.code==='KeyH')doHeavy();
+    if(e.code==='KeyP')doParry();if(e.code==='KeyB')doBash();
+  }});
+addEventListener('keyup',e=>{S.keys[e.code]=false;});
+/* touch joystick */
+const joy=$('joy'),knob=$('knob');let joyId=null;
+joy.addEventListener('touchstart',e=>{joyId=e.changedTouches[0].identifier;},{passive:true});
+addEventListener('touchmove',e=>{
+  if(joyId===null)return;
+  for(const t of e.changedTouches)if(t.identifier===joyId){
+    const r=joy.getBoundingClientRect(),cx=r.left+60,cy=r.top+60;
+    let dx=(t.clientX-cx)/50,dy=(t.clientY-cy)/50;
+    const m=Math.hypot(dx,dy);if(m>1){dx/=m;dy/=m;}
+    knob.style.left=35+dx*38+'px';knob.style.top=35+dy*38+'px';
+    S.move.x=dx;S.move.z=dy;
+  }},{passive:true});
+addEventListener('touchend',e=>{for(const t of e.changedTouches)if(t.identifier===joyId){
+  joyId=null;S.move.x=0;S.move.z=0;knob.style.left='35px';knob.style.top='35px';}},{passive:true});
+const bindBtn=(id,fn)=>{$(id).addEventListener('touchstart',e=>{e.preventDefault();fn();},{passive:false});
+  $(id).addEventListener('mousedown',fn);};
+bindBtn('bATK',()=>doAttack());bindBtn('bHEAVY',()=>doHeavy());
+bindBtn('bPARRY',()=>doParry());bindBtn('bBASH',()=>doBash());
+
+/* rite hold: E key or touch on the rite zone */
+const rw=$('ritewrap');
+rw.addEventListener('touchstart',e=>{e.preventDefault();S.riteHold=true;},{passive:false});
+rw.addEventListener('touchend',()=>{S.riteHold=false;});
+addEventListener('mousedown',e=>{if(S.mode==='rite'&&rw.style.display==='block')S.riteHold=true;});
+addEventListener('mouseup',()=>{if(S.mode==='rite')S.riteHold=false;});
+
+/* ============ combat actions ============ */
+const COOLD={STRIKE:.55,HEAVY:2.4,PARRY:3.2,BASH:4.0};
+const cds={STRIKE:0,HEAVY:0,PARRY:0,BASH:0};
+function nearest(){let best=null,bd=1e9;
+  for(const h of hollows){const d=warden.position.distanceTo(h.position);if(d<bd){bd=d;best=h;}}
+  return {h:best,d:bd};}
+function doAttack(){act('STRIKE','COMBO',1.15,22,2.6);}
+function doHeavy(){act('HEAVY','HEAVY',1.5,46,3.4);}
+function doParry(){if(cds.PARRY>0)return;cds.PARRY=COOLD.PARRY;S.parryWin=1.1;
+  playAnim('PARRY',.9);sfx('parry');S.faith=Math.min(100,S.faith+8);setBars();}
+function doBash(){act('BASH','SHIELDBASH',1.2,16,4.4,true);}
+function act(name,anim,dur,dmg,range,knock){
+  if(cds[name]>0||S.mode!=='fight'||!warden)return;
+  cds[name]=COOLD[name];playAnim(anim,dur);sfx('hit');
+  const {h,d}=nearest();
+  if(h&&d<range){
+    h.userData.hp-=dmg;h.userData.vit=.25;
+    if(knock)h.position.z-=1.8;
+    S.shakes=Math.max(S.shakes,.35);
+    if(h.userData.hp<=0){scene.remove(h);hollows.splice(hollows.indexOf(h),1);
+      S.faith=Math.min(100,S.faith+6);setBars();
+      if(!hollows.length)nextWave();}
+  }
+}
+
+/* ============ waves / flow ============ */
+function nextWave(){
+  S.wave++;
+  if(S.wave>WAVES.length){beginRite();return;}
+  $('wv').textContent=S.wave+' / '+WAVES.length;
+  banner('THE HOLLOW COMES — WAVE '+S.wave);
+  const n=WAVES[S.wave-1];
+  for(let i=0;i<n;i++)setTimeout(()=>{if(S.mode==='fight')mkHollow(warden.position.z-14-R()*8);},i*700);
+}
+function beginRite(){
+  S.mode='rite';S.faith=100;setBars();
+  banner('THE GATE. PLAIN STONES. THE FLAME ANSWERS.');
+  $('obj').textContent='hold the rite. wake what waits below.';
+  rw.style.display='block';
+}
+function godRisen(){
+  rw.style.display='none';S.mode='risen';
+  sfx('boom');S.shakes=2.2;
+  banner('THE FURNACE KING WAKES',3800);
+  $('obj').textContent='THE FIRST WAKING — slice complete.';
+  setTimeout(()=>{banner('THE FIRST WAKING — SLICE COMPLETE',6000);},4000);
+}
+
+/* ============ start ============ */
+$('start').addEventListener('click',async()=>{
+  $('overlay').classList.add('hidden');
+  const touch=matchMedia('(pointer:coarse)').matches;
+  if(touch){$('joy').style.display='block';$('btns').style.display='grid';}
+  S.mode='loading';
+  await spawnWarden();
+  warden.position.set(0,0,S.z);
+  S.mode='fight';S.wave=0;
+  banner('THE DEPTHS BELOW EMBERMERE',2400);
+  setTimeout(nextWave,1600);
+});
+
+/* ============ loop ============ */
+const clock=new THREE.Clock();
+function tick(){
+  requestAnimationFrame(tick);
+  const dt=Math.min(.05,clock.getDelta()),t=clock.elapsedTime;
+  for(const k in cds)if(cds[k]>0){cds[k]-=dt;
+    const el={STRIKE:'bATK',HEAVY:'bHEAVY',PARRY:'bPARRY',BASH:'bBASH'}[k];
+    const c=$(el).querySelector('.cd');c.style.height=Math.max(0,cds[k]/COOLD[k]*100)+'%';}
+
+  /* embers drift */
+  const pa=eGeo.attributes.position;
+  for(let i=0;i<eN;i++){let y=pa.getY(i)+eSpd[i]*dt;if(y>9)y=0;pa.setY(i,y);}
+  pa.needsUpdate=true;
+
+  if(S.mode==='fight'&&warden){
+    /* move (front-view: pilgrim advances toward the Gate, camera ahead facing his front) */
+    let mx=S.move.x,mz=S.move.z;
+    if(S.keys.KeyW||S.keys.ArrowUp)mz-=1;if(S.keys.KeyS||S.keys.ArrowDown)mz+=1;
+    if(S.keys.KeyA||S.keys.ArrowLeft)mx-=1;if(S.keys.KeyD||S.keys.ArrowRight)mx+=1;
+    const m=Math.hypot(mx,mz);if(m>1){mx/=m;mz/=m;}
+    const spd=4.6;
+    warden.position.x=THREE.MathUtils.clamp(warden.position.x+mx*spd*dt,-5.4,5.4);
+    warden.position.z=THREE.MathUtils.clamp(warden.position.z+mz*spd*dt,S.gateZ+4.5,14);
+    warden.position.y=Math.abs(Math.sin(t*7))*Math.min(.06,m); // road-bob
+    if(S.parryWin>0)S.parryWin-=dt;
+
+    /* hollows AI */
+    for(const h of hollows){
+      const u=h.userData;u.t+=dt;
+      const dz=warden.position.z-h.position.z,dx=warden.position.x-h.position.x;
+      const dist=Math.hypot(dx,dz);
+      h.rotation.y=Math.atan2(dx,dz)+Math.PI; // face pilgrim
+      if(u.state==='approach'){
+        const v=2.4+u.t*.04;
+        h.position.z+=Math.sign(dz)*v*dt;h.position.x+=Math.sign(dx)*Math.min(2.5,v)*dt;
+        h.position.y=Math.abs(Math.sin(u.t*6))*.12;
+        if(dist<2.2&&u.atkT<=0){u.state='windup';u.t=0;}
+      }else if(u.state==='windup'){
+        h.scale.setScalar(1+Math.sin(u.t*18)*.12); // telegraph pulse
+        if(u.t>.7){u.state='lunge';u.t=0;sfx('hit');}
+      }else if(u.state==='lunge'){
+        h.position.z+=Math.sign(dz)*9*dt;h.position.x+=Math.sign(dx)*4*dt;
+        h.scale.setScalar(1);
+        if(Math.hypot(warden.position.z-h.position.z,warden.position.x-h.position.x)<1.7){
+          if(S.parryWin>0){S.faith=Math.min(100,S.faith+12);sfx('parry');u.state='approach';u.atkT=1.6;}
+          else{S.vigor=Math.max(0,S.vigor-9);S.shakes=.4;setBars();
+            if(S.vigor<=0){S.mode='dead';banner('THE HOLLOW TAKES THE LANTERN — TAP TO RETRY',90000);
+              setTimeout(()=>location.reload(),4200);}
+            u.state='approach';u.atkT=1.8;}
+        }
+        if(u.t>.5){u.state='approach';u.atkT=1.2;}
+      }
+      if(u.atkT>0)u.atkT-=dt;
+    }
+  }
+
+  /* rite */
+  if(S.mode==='rite'){
+    const holding=S.riteHold||S.keys.KeyE;
+    if(holding){S.rite+=dt/3.0;if(S.rite>=1){S.mode='rising';sfx('rite');wakeGod();}
+      if(S.rite>.15&&flame.intensity<1)flame.intensity=S.rite*30;}
+    else S.rite=Math.max(0,S.rite-dt*.7);
+    $('ritefl').style.width=(S.rite*100)+'%';
+    if(flame.intensity>0)flame.intensity=6+S.rite*26+Math.sin(t*9)*4;
+  }
+  /* god rising per the Emergence Law */
+  if(S.mode==='rising'&&vael){
+    vael.position.y=Math.min(-1.2,vael.position.y+dt*3.4);
+    if(S.camSwing>0)S.camSwing=Math.max(0,S.camSwing-dt*.25);
+    if(vael.position.y>=-1.2)godRisen();
+  }
+
+  /* camera: FRONT VIEW — ahead of the pilgrim, facing his front */
+  if(warden&&S.mode!=='risen'){
+    const px=warden.position.x,pz=warden.position.z;
+    let cx=px*.85,cy=3.1,cz=pz+7.2,lx=px*.9,ly=2.1,lz=pz-3.5;
+    if(S.mode==='rite'){cz=pz+10;cy=4.6;lx=0;ly=6.5;lz=S.gateZ+1;}
+    if(S.mode==='rising'||S.mode==='risen'){
+      cx=0;cy=6.5+S.camSwing*2;cz=pz+15+S.camSwing*6;lx=0;ly=7;lz=S.gateZ-2;}
+    cam.position.lerp(new THREE.Vector3(cx,cy,cz),Math.min(1,dt*3));
+    cam.lookAt(lx,ly,lz);
+  }else if(S.mode==='risen'){
+    const a=t*.06; // slow orbit of the risen god — the reward shot
+    cam.position.lerp(new THREE.Vector3(Math.sin(a)*20,8.5+S.camSwing*2,S.gateZ+16+Math.cos(a)*4),Math.min(1,dt*1.2));
+    cam.lookAt(0,6.5,S.gateZ-2);
+  }
+  /* shake */
+  if(S.shakes>0){S.shakes-=dt;cam.position.x+=(R()-.5)*S.shakes*.5;cam.position.y+=(R()-.5)*S.shakes*.4;}
+  /* lantern follows pilgrim */
+  if(warden){lantern.position.set(warden.position.x,2.6,warden.position.z+.8);}
+  if(wardenMixer)wardenMixer.update(dt);
+  if(vaelMixer)vaelMixer.update(dt);
+  renderer.render(scene,cam);
+}
+tick();
+})();
+</script>
+</body>
+</html>
