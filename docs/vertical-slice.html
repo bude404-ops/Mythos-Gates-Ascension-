@@ -94,17 +94,51 @@ const lantern=new THREE.PointLight(0xffb050,26,16,2);scene.add(lantern);
 
 /* ============ hall: floor, walls, ember veins ============ */
 const R=(seed=>()=>((seed=seed*16807%2147483647)/2147483647))(97);
-const rockMat=new THREE.MeshStandardMaterial({color:0x2a2018,roughness:.95});
+/* procedural weathered-stone texture (canvas, mobile-safe 512px) */
+function stoneTex(warm){
+  const c=document.createElement('canvas');c.width=c.height=512;const x=c.getContext('2d');
+  x.fillStyle=warm?'#3a2c1e':'#33291f';x.fillRect(0,0,512,512);
+  for(let i=0;i<9;i++){ // strata bands
+    x.fillStyle=`rgba(${20+i*6},${14+i*4},${10+i*3},${.5})`;
+    x.fillRect(0,i*57+R()*20,512,28+R()*22);
+  }
+  for(let i=0;i<2600;i++){ // grain + pitting
+    const g=30+R()*60;x.fillStyle=`rgba(${g},${g*.72},${g*.5},${.06+R()*.1})`;
+    x.fillRect(R()*512,R()*512,1+R()*3,1+R()*3);
+  }
+  x.strokeStyle='rgba(8,5,3,.55)';x.lineWidth=1.5;
+  for(let i=0;i<26;i++){ // cracks
+    x.beginPath();let cx=R()*512,cy=R()*512;x.moveTo(cx,cy);
+    for(let s=0;s<7;s++){cx+=(R()-.5)*70;cy+=(R()-.5)*70;x.lineTo(cx,cy);}
+    x.stroke();
+  }
+  const t=new THREE.CanvasTexture(c);t.wrapS=t.wrapT=THREE.RepeatWrapping;return t;
+}
+const wallTex=stoneTex(true);wallTex.repeat.set(2,26);
+const wallBump=stoneTex(false);wallBump.repeat.set(2,26);
+const floorTex=stoneTex(true);floorTex.repeat.set(6,40);floorTex.rotation=.06;
+const rockMat=new THREE.MeshStandardMaterial({color:0x9a7a55,roughness:.95,map:wallTex});
 const veinMat=new THREE.MeshStandardMaterial({color:0x1a0f08,emissive:0xff5a10,emissiveIntensity:.6,roughness:.9});
-const floor=new THREE.Mesh(new THREE.PlaneGeometry(30,240),rockMat.clone());
-floor.material.color.set(0x241a12);floor.rotation.x=-Math.PI/2;scene.add(floor);
-for(let i=0;i<50;i++){ // wall chunks + magma veins
+const floor=new THREE.Mesh(new THREE.PlaneGeometry(30,240),
+  new THREE.MeshStandardMaterial({color:0x8a6a4a,roughness:.97,map:floorTex}));
+floor.rotation.x=-Math.PI/2;scene.add(floor);
+for(const side of[-1,1]){ // continuous rough-hewn walls
+  const w=new THREE.Mesh(new THREE.BoxGeometry(1.6,13,232),rockMat);
+  w.position.set(7.2*side,5.6,-85);w.rotation.y=side>0?0:0;scene.add(w);
+}
+for(let i=0;i<40;i++){ // rubble outcrops jutting from the walls + magma veins
   const z=10-R()*200,w=1+R()*2,h=2+R()*7;
   const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,1+R()*3),rockMat);
   m.position.set(-6.5+R()*2-1,h/2-1,z);scene.add(m);
   const m2=m.clone();m2.position.x=6.5+R()*2-1;scene.add(m2);
   if(R()<.4){const v=new THREE.Mesh(new THREE.BoxGeometry(.15+R()*.2,1.5,2+R()*6),veinMat);
     v.position.set(-6.9+R()*1.5,.2+R()*1.2,z);scene.add(v);}
+}
+for(let i=0;i<4;i++){ // wall braziers — warm fire-light down the hall
+  const bz=new THREE.Mesh(new THREE.BoxGeometry(.7,.5,.7),
+    new THREE.MeshStandardMaterial({color:0x1a0f08,emissive:0xff7a20,emissiveIntensity:1.6}));
+  const side=i%2?1:-1;bz.position.set(6.3*side,3.4,-14-i*24);scene.add(bz);
+  const bl=new THREE.PointLight(0xff9a40,7,20,2);bl.position.set(6.3*side,4.2,-14-i*24);scene.add(bl);
 }
 /* ember particles */
 const eN=220,ePos=new Float32Array(eN*3),eSpd=new Float32Array(eN);
@@ -115,7 +149,8 @@ scene.add(embers);
 
 /* ============ the Gate: plain weathered standing stones ============ */
 const gateGrp=new THREE.Group();
-const stoneMat=new THREE.MeshStandardMaterial({color:0x4a443c,roughness:.98});
+const gateTex=stoneTex(false);gateTex.repeat.set(1.4,3);
+const stoneMat=new THREE.MeshStandardMaterial({color:0xa89a85,roughness:.98,map:gateTex});
 const mkStone=(w,h,d)=>new THREE.Mesh(new THREE.BoxGeometry(w,h,d),stoneMat);
 const sL=mkStone(1.5,9,1.9);sL.position.set(-3.4,4.5,0);sL.rotation.z=.05;
 const sR=mkStone(1.5,9.4,1.9);sR.position.set(3.4,4.7,0);sR.rotation.z=-.07;
