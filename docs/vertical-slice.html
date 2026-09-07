@@ -44,7 +44,7 @@ canvas{display:block;width:100%;height:100%}
 <canvas id="cv"></canvas>
 <div id="vig"></div><div id="lbT"></div><div id="lbB"></div>
 <div id="obj">descend the hall. the Gate waits below.</div>
-<div id="wave">WAVE <span id="wv">—</span></div>
+<div id="wave">WAVE <span id="wv">—</span> <span id="lockind" style="color:#ffb050;display:none">· LOCKED</span></div>
 <div id="banner"></div>
 <div id="hud">
   <div class="bar"><div class="lab">VIGOR</div><div class="tr"><div class="fl" id="hpF"></div></div></div>
@@ -183,7 +183,7 @@ function clearHollows(){for(const h of hollows)scene.remove(h);hollows.length=0;
 
 /* ============ game state ============ */
 const S={mode:'title',vigor:100,faith:35,wave:0,z:8,gateZ:-96,rite:0,riteHold:false,
-  move:{x:0,z:0},keys:{},parryWin:0,shakes:0,camSwing:0};
+  move:{x:0,z:0},keys:{},parryWin:0,shakes:0,camSwing:0,lock:false,dodgeT:0,dodgeCd:0,dodgeV:{x:0,z:0}};
 const WAVES=[3,4,5];
 const banner=(t,ms=2200)=>{const b=$('banner');b.textContent=t;b.style.opacity=1;
   clearTimeout(b._t);b._t=setTimeout(()=>b.style.opacity=0,ms);};
@@ -285,8 +285,8 @@ function nextWave(){
   banner('THE HOLLOW COMES — WAVE '+S.wave);
   const n=WAVES[S.wave-1];
   for(let i=0;i<n;i++)setTimeout(()=>{if(S.mode==='fight'){
-      const h=mkHollow(warden.position.z-8-R()*7);
-      h.position.x=(R()<.5?-1:1)*(2.5+R()*4.5);
+      const h=mkHollow(warden.position.z-15-R()*6);
+      h.position.x=(R()<.5?-1:1)*(R()*5.0);
     }},i*700);
 }
 function beginRite(){
@@ -336,11 +336,34 @@ function tick(){
     if(S.keys.KeyW||S.keys.ArrowUp)mz-=1;if(S.keys.KeyS||S.keys.ArrowDown)mz+=1;
     if(S.keys.KeyA||S.keys.ArrowLeft)mx-=1;if(S.keys.KeyD||S.keys.ArrowRight)mx+=1;
     const m=Math.hypot(mx,mz);if(m>1){mx/=m;mz/=m;}
-    const spd=4.6;
-    warden.position.x=THREE.MathUtils.clamp(warden.position.x+mx*spd*dt,-5.4,5.4);
-    warden.position.z=THREE.MathUtils.clamp(warden.position.z+mz*spd*dt,S.gateZ+4.5,14);
+    // lock-on: nearest living hollow in reach engages combat mode
+    const {h:lockT,d:lockD}=nearest();
+    S.lock=!!lockT&&lockD<13;
+    const spd=S.lock?2.6:4.6;
+    // dodge: flick (touch) or SHIFT — quick dash with i-frames
+    if(S.dodgeCd>0)S.dodgeCd-=dt;
+    const flick=(m>.85&&!S._flickLatch&&S.lock)||S.keys.ShiftLeft||S.keys.ShiftRight;
+    if(flick&&S.dodgeCd<=0&&S.dodgeT<=0){
+      S.dodgeT=.3;S.dodgeCd=.9;S.dodgeV={x:mx,z:mz};
+      S._flickLatch=true;setTimeout(()=>S._flickLatch=false,320);
+    }
+    if(m<.5)S._flickLatch=false;
+    if(S.dodgeT>0){S.dodgeT-=dt;
+      warden.position.x=THREE.MathUtils.clamp(warden.position.x+S.dodgeV.x*11*dt,-5.4,5.4);
+      warden.position.z=THREE.MathUtils.clamp(warden.position.z+S.dodgeV.z*11*dt,S.gateZ+4.5,14);
+    }else{
+      warden.position.x=THREE.MathUtils.clamp(warden.position.x+mx*spd*dt,-5.4,5.4);
+      warden.position.z=THREE.MathUtils.clamp(warden.position.z+mz*spd*dt,S.gateZ+4.5,14);
+    }
     warden.position.y=Math.abs(Math.sin(t*7))*Math.min(.06,m); // road-bob
+    // facing: lock-on target > movement direction > hall axis
+    let face=Math.PI;
+    if(S.lock&&lockT){face=Math.atan2(lockT.position.x-warden.position.x,lockT.position.z-warden.position.z);}
+    else if(m>.1){face=Math.atan2(mx,mz);}
+    let d=face-warden.rotation.y;while(d>Math.PI)d-=2*Math.PI;while(d<-Math.PI)d+=2*Math.PI;
+    warden.rotation.y+=d*Math.min(1,dt*10);
     if(S.parryWin>0)S.parryWin-=dt;
+    document.getElementById('lockind').style.display=S.lock?'inline':'none';
 
     /* hollows AI */
     for(const h of hollows){
@@ -360,7 +383,8 @@ function tick(){
         h.position.z+=Math.sign(dz)*9*dt;h.position.x+=Math.sign(dx)*4*dt;
         h.scale.setScalar(1);
         if(Math.hypot(warden.position.z-h.position.z,warden.position.x-h.position.x)<1.7){
-          if(S.parryWin>0){S.faith=Math.min(100,S.faith+12);sfx('parry');u.state='approach';u.atkT=1.6;}
+          if(S.dodgeT>0){u.state='approach';u.atkT=1.4;} // i-frames: rolled through it
+          else if(S.parryWin>0){S.faith=Math.min(100,S.faith+12);sfx('parry');u.state='approach';u.atkT=1.6;}
           else{S.vigor=Math.max(0,S.vigor-9);S.shakes=.4;setBars();
             if(S.vigor<=0){S.mode='dead';banner('THE HOLLOW TAKES THE LANTERN — TAP TO RETRY',90000);
               setTimeout(()=>location.reload(),4200);}
@@ -391,9 +415,19 @@ function tick(){
   /* camera: FRONT VIEW — ahead of the pilgrim, facing his front */
   if(warden&&S.mode!=='risen'){
     const px=warden.position.x,pz=warden.position.z;
-    let cx=px*.85,cy=2.9,cz=pz-7.4,lx=px*.9,ly=1.9,lz=pz+1.6;
+    let cx,cy,cz,lx,ly,lz;
+    if(S.lock&&lockT){ // lock-on: behind the pilgrim relative to the target, souls framing
+      const dx=lockT.position.x-px,dz=lockT.position.z-pz,dm=Math.hypot(dx,dz)||1;
+      const ux=dx/dm,uz=dz/dm;
+      cx=px-ux*6.2+uz*1.1; cy=3.4; cz=pz-uz*6.2-ux*1.1;
+      lx=px+ux*2.4; ly=1.9; lz=pz+uz*2.4;
+    }else{ // exploration: standard third-person, behind + slight high angle
+      cx=px; cy=3.6; cz=pz+5.8;
+      lx=px; ly=1.7; lz=pz-4.5;
+    }
+    // near the Gate the camera rises (never clips the stones)
     const ng=THREE.MathUtils.clamp((-84-pz)/8,0,1);
-    cy+=ng*9; cz=Math.max(S.gateZ+2,cz); lx=px*(1-ng); ly+=(ng*1.2);
+    cy+=ng*6.5; cz=Math.max(S.gateZ+3.5,cz);
     if(S.mode==='rite'){cz=pz+10;cy=4.6;lx=0;ly=6.5;lz=S.gateZ+1;}
     if(S.mode==='rising'||S.mode==='risen'){
       cx=0;cy=6.5+S.camSwing*2;cz=pz+15+S.camSwing*6;lx=0;ly=7;lz=S.gateZ-2;}
