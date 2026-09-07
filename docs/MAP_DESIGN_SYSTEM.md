@@ -392,7 +392,7 @@ Every map consists of two layers:
 | **Rooms** | 3 (boss rush — 3 Hollow-corrupted deity echoes) |
 | **Hazards** | Per arena: Aten Ra = solar radiation, Asgardian = frost zones, Kami = mirror corridors |
 | **Enemies** | None — boss rush only |
-| **Bosses** | Hollow Aten Ra Echo, Hollow Odin Echo, Hollow Amaterasu Echo |
+| **Bosses** | Hollow Echo colossi (the god-shaped shells with no god inside — T3 bestiary canon) |
 | **Art Status** | ⚠️ Needs tactical map art (3 separate arenas) |
 | **Art Direction** | Three distinct arenas: (1) Corrupted Aten Ra temple — gold + void-black, (2) Corrupted Asgardian oathground — ice blue + void-black, (3) Corrupted Kami shrine — vermilion + void-black. Each arena looks like the faction's territory but consumed by Hollow. |
 

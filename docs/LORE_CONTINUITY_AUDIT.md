@@ -52,6 +52,15 @@ Laws ratified AFTER the v1.0 audit, swept across the whole vault this pass:
 4. **QUESTLINE VERDICT — all 6 realms PASS the five-pillar doctrine audit** (Embermere pilot doc contains the full checklist; the other five run on the same template). The Embermere finale (Q6) matches the live vertical slice exactly: hold-the-rite defense, Vaelthorn wakes through the pilgrim's completed rite, male pilgrim -> the Furnace King per the gender-match law ✔.
 5. **Retired-pantheon residue FLAGGED** (Athena/Tsukuyomi/Gabriel-era names — pre-Avalon Mythos-Gates-Ascension lineage): FACTION_STAT_SHEETS.md + MYTHOLOGY_DEEP_DIVE.md were unambiguous old-era and are now ARCHIVED to docs/lore/archive-old-era/. Ambiguous docs still carrying retired names in reference sections — pending Big's verdict rewrite-vs-archive, do NOT treat as canon: ANIMATION_RIGGING_SPEC, CAMPAIGN_GAMEPLAY_DESIGN, DEITY_ABILITY_KITS, DEITY_UNLOCK_SYSTEM, LEVELING_SYSTEM, ROLE_IDENTITY_SYSTEM, TITAN_DESIGN_STANDARD, WEAPON_SYSTEM_SPEC, CAMPAIGN_VISUAL_LORE_AUDIT, and docs/lore/ numbered old-codex files (04-DEITIES, 07-BELIEF-SYSTEM, 10-*-REALM-CODEX, 23-OLYMPIAN, DEITY_ART_IDENTITY_AUDIT, SOURCE_CULTURE_*). Current canon supersessions: 6-faction ability trees + MYTHOS_DEEP_LORE + MYTHOS_DEITY_COMBAT_KITS + FACTION_BUFFS.
 
+## III-C. v1.2 PURGE (Sept 6 2026 — BudE404 verdict: 'Yes, purge')
+The retired pantheon (Athena/Thor/Odin/Zeus/Gabriel/Tsukuyomi and the 7-realm cultural canon) is now FULLY out of the canon vault. Verified first that the LIVE game data is already Avalon-native (32 kits with new names — Shemris the Glasswind etc.; 8 factions with new names — Meridian Court, Stormmoot; cultural 'flavor' tags are design seasoning, not canon names).
+
+ARCHIVED to docs/lore/archive-old-era/ (45 docs total): 9 root system specs (LEVELING_SYSTEM, ROLE_IDENTITY_SYSTEM, TITAN_DESIGN_STANDARD, WEAPON_SYSTEM_SPEC, CAMPAIGN_VISUAL_LORE_AUDIT, DEITY_ABILITY_KITS, DEITY_UNLOCK_SYSTEM, CAMPAIGN_GAMEPLAY_DESIGN, ANIMATION_RIGGING_SPEC — superseded by PROGRESSION_SYSTEM_SPEC / PILGRIM_DESIGN_DOCTRINE / COLOSSUS_DESIGN_DOCTRINE / CLASS_TREE_* / live data / vertical-slice kit docs respectively) + 36 old-era lore files (realm codexes, belief config, 40-mission sets, dialogue sets, deity art audit). NOTE for Unity import: a fresh AVALON rigging spec is TODO (mecanim-driven) — the old ANIMATION_RIGGING_SPEC is reference-only.
+
+SURGICALLY CLEANED: GAME_DESIGN_DOCUMENT belief section (28->32 kits, Aten-Ra/Sutekh examples -> live roster, duplicated old block removed, pointers now to FACTION_BUFFS + live data). docs/lore/README rewritten to mark the folder's current canon + archive boundary.
+
+RESULT: zero retired god names remain in canon docs. The pre-Avalon lineage survives only in the archive, marked never-canon. The Two-Role Lock stands: retired identities may return as NEW characters.
+
 ## IV. STILL OPEN (no action needed, tracked)
 - 22 Stage 2 world-composition verdicts (delivered, awaiting keeps).
 - Champion legend quests (deferred by design).

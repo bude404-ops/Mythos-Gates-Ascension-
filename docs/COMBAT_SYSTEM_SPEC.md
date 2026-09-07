@@ -106,7 +106,7 @@ Zone layouts are **unique per battlefield** based on faction terrain:
 - At 100%, Ultimate/Ascension is unlocked
 - Player taps the Ultimate button to unleash
 - Effect is **screen-wide** — every enemy on the battlefield takes the hit
-- Each deity has a **unique ultimate** (Aten Ra = solar flare, Odin = storm of spears, etc.)
+- Each deity has a **unique ultimate** (live kit examples: data/deities/ — Shemris = heat-shimmer volley, Stormmoot kits = oath-spears, etc.)
 
 ### Faction Resource
 - Each faction has a unique resource (Solar Charge, Oathfire, Divine Favor, Sealfire, Geas, Choir Resonance, Debtfire)
