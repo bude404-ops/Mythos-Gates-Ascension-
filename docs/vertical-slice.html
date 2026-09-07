@@ -80,8 +80,8 @@ const renderer=new THREE.WebGLRenderer({canvas:$('cv'),antialias:true});
 renderer.setPixelRatio(Math.min(devicePixelRatio,2));
 const scene=new THREE.Scene();
 scene.background=new THREE.Color(0x0a0605);
-scene.fog=new THREE.FogExp2(0x0a0605,.032);
-const cam=new THREE.PerspectiveCamera(46,innerWidth/innerHeight,.1,300);
+scene.fog=new THREE.FogExp2(0x0a0605,.021);
+const cam=new THREE.PerspectiveCamera(58,innerWidth/innerHeight,.1,300);
 addEventListener('resize',()=>{cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});
 renderer.setSize(innerWidth,innerHeight);
 
@@ -487,14 +487,14 @@ function tick(){
   if(warden&&S.mode!=='risen'){
     const px=warden.position.x,pz=warden.position.z;
     let cx,cy,cz,lx,ly,lz;
-    if(S.lock&&lockT){ // lock-on: behind the pilgrim relative to the target, souls framing
+    if(S.lock&&lockT){ // lock-on: elevated souls framing — pilgrim + target + the wave fit in frame
       const dx=lockT.position.x-px,dz=lockT.position.z-pz,dm=Math.hypot(dx,dz)||1;
       const ux=dx/dm,uz=dz/dm;
-      cx=px-ux*6.2+uz*1.1; cy=3.4; cz=pz-uz*6.2-ux*1.1;
-      lx=px+ux*2.4; ly=1.9; lz=pz+uz*2.4;
-    }else{ // exploration: standard third-person, behind + slight high angle
-      cx=px; cy=3.6; cz=pz+5.8;
-      lx=px; ly=1.7; lz=pz-4.5;
+      cx=px-ux*8.4+uz*1.2; cy=6.2; cz=pz-uz*8.4-ux*1.2;
+      lx=px+ux*3.0; ly=1.6; lz=pz+uz*3.0;
+    }else{ // DIABLO-ANGLE: behind the back but HIGH — you see the pilgrim AND the enemies coming
+      cx=px; cy=7.6; cz=pz+8.2;
+      lx=px; ly=1.4; lz=pz-4.2;
     }
     // near the Gate the camera rises (never clips the stones)
     const ng=THREE.MathUtils.clamp((-84-pz)/8,0,1);
