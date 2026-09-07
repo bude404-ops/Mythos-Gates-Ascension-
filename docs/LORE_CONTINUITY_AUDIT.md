@@ -59,7 +59,7 @@ ARCHIVED to docs/lore/archive-old-era/ (45 docs total): 9 root system specs (LEV
 
 SURGICALLY CLEANED: GAME_DESIGN_DOCUMENT belief section (28->32 kits, Aten-Ra/Sutekh examples -> live roster, duplicated old block removed, pointers now to FACTION_BUFFS + live data). docs/lore/README rewritten to mark the folder's current canon + archive boundary.
 
-RESULT: zero retired god names remain in canon docs. The pre-Avalon lineage survives only in the archive, marked never-canon. The Two-Role Lock stands: retired identities may return as NEW characters.
+RESULT: zero retired god names remain in canon docs. (Addendum: ART_STYLE_BIBLE v1.0 — an Avatar-era doc baselined on Aten Ra renders — archived in the same pass; current art canon = ART_DIRECTION.md + the colossi/pilgrim law docs + ART_STYLE_BIBLE's Avalon successor is the CINEMATIC_PRODUCTION_SYSTEM style guide.) The pre-Avalon lineage survives only in the archive, marked never-canon. The Two-Role Lock stands: retired identities may return as NEW characters.
 
 ## IV. STILL OPEN (no action needed, tracked)
 - 22 Stage 2 world-composition verdicts (delivered, awaiting keeps).
