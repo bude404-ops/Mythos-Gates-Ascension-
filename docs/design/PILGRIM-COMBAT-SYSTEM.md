@@ -23,6 +23,7 @@ BudE404 directive (Sept 6 2026): mix Diablo Immortal + Genshin into our own styl
 
 ### Layer 3 — AVALON (the lore wrapper — ours alone)
 - **FAITH economy** (canon): abilities cost FAITH; the WARD converts caught damage INTO FAITH — the more you're sieged, the more you can answer. No other ARPG does ward-to-faith.
+- **FAITH DROPS** (BudE404, Sept 6 — the loot feel): defeated Hollow RELEASE their faith as golden motes that visibly float and stream INTO THE LUMINARY, as if the living lantern collects them — the Diablo-gold-drop satisfaction, but the "gold" is belief and the "purse" is your companion. The Luminary gathers; the FAITH lands when the motes arrive (bar ticks per mote, soft chime), not on the kill frame. Lore-perfect: the flame feeds on deeds.
 - **Debt economy** (canon from combat runtime): Hollow ACCRUE DEBT when struck; at threshold a Hollow REVENANTS (enrages) — kill fast or get swarmed by rage.
 - **Void tether**: Hollow are void-element, reaction-IMMUNE until their tether is SEVERED. CANON ROLES (per the ONE COMPANION TWO LIGHTS ruling): the LUMINARY REVEALS the tether — its glow is discovery/navigation light, NEVER combat power — and the PILGRIM severs what it reveals (strike the shown tether-point). The lantern's combat-adjacent role stays PROTECTIVE only: while the Luminary shines, void-chill does not drain VIGOR. The lantern never attacks.
 - **Emergence Law**: god-scale = stationary siege combat (unchanged canon).
