@@ -72,6 +72,7 @@ canvas{display:block;width:100%;height:100%}
 </script>
 <script type="module">import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {DRACOLoader} from 'three/addons/loaders/DRACOLoader.js';
 (()=>{ 'use strict';
 /* ============ boot ============ */
 const $=id=>document.getElementById(id);
@@ -127,6 +128,9 @@ gateGrp.position.set(0,0,-96);scene.add(gateGrp);
 let gltfReady=false;
 function loadGLB(url){return new Promise((res,rej)=>{loader0.load(url,g=>res(g),undefined,rej);});}
 const loader0=new GLTFLoader();
+const draco0=new DRACOLoader();
+draco0.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.7/');
+loader0.setDRACOLoader(draco0);
 let warden=null,wardenMixer=null,wardenBase=null;
 /* THE LUMINARY — the lantern is a living being (canon). Follows the pilgrim,
    gathers the faith released by the defeated Hollow. Never attacks. */
@@ -145,8 +149,19 @@ function dropFaith(x,z){ // Hollow defeated: faith spills as motes, streams to t
     m.userData={t:-i*.14,vx:0,vy:2.2+R(),vz:0};motes.push(m);scene.add(m);
   }
 }
+const ANIMS=['IDLE','COMBO','HEAVY','PARRY','SHIELDBASH','DODGE','WALK','HITREACTION','KNOCKDOWN'];
+const animCache={};
+async function preloadWarden(){
+  let done=0;
+  for(const a of ANIMS){
+    try{animCache[a]=await loadGLB(`models/WARDEN-M-${a}.glb`);}catch(e){try{animCache[a]=await loadGLB(`models/WARDEN-M-${a}.glb`);}catch(e2){}}
+    done++;
+    banner(`SUMMONING THE WARDEN — ${done}/${ANIMS.length}`,900);
+  }
+  try{animCache.GOD=await loadGLB('models/VAELTHORN-IDLE.glb');}catch(e){}
+}
 async function spawnWarden(){
-  const g=await loadGLB('models/WARDEN-M-IDLE.glb');
+  const g=animCache.IDLE||await loadGLB('models/WARDEN-M-IDLE.glb');
   warden=g.scene;warden.scale.setScalar(.028);
   warden.rotation.y=Math.PI; // faces -Z (toward the Gate / into the depths)
   wardenBase=g;scene.add(warden);
@@ -171,7 +186,7 @@ let swapping=false;
 async function playAnim(name,dur){
   if(swapping||!warden)return;swapping=true;
   try{
-    const g=await loadGLB(`models/WARDEN-M-${name}.glb`);
+    const g=animCache[name]||await loadGLB(`models/WARDEN-M-${name}.glb`);
     const node=g.scene.clone(true);node.scale.copy(warden.scale);
     node.position.copy(warden.position);node.rotation.copy(warden.rotation);
     scene.remove(warden);scene.add(node);warden=node;
@@ -187,12 +202,18 @@ const hollows=[];
 function mkHollow(z,elite){
   const g=new THREE.Group();
   const mat=new THREE.MeshStandardMaterial({color:elite?0x140c07:0x0d0a08,roughness:1});
-  const body=new THREE.Mesh(new THREE.CapsuleGeometry(.55,1.6,4,10),mat);
-  body.position.y=1.6;g.add(body);
+  // hooded shade: tall ragged cowl cone + bowed head — a Hollow reads as a phantom, not a pill
+  const robe=new THREE.Mesh(new THREE.ConeGeometry(.62,2.5,7,1,true),mat);
+  robe.position.y=1.25;robe.geometry.translate(0,0,0);robe.rotation.x=.09;g.add(robe);
+  const hem=new THREE.Mesh(new THREE.ConeGeometry(.75,.7,7,1,true),mat);
+  hem.position.y=.35;g.add(hem);
+  const head=new THREE.Mesh(new THREE.SphereGeometry(.24,8,8),mat);
+  head.position.set(0,2.42,.14);g.add(head);
   const eyeMat=new THREE.MeshBasicMaterial({color:elite?0xff2010:0xff5a10});
   const es=elite?.11:.07;
-  for(const sx of[-.16,.16]){const e=new THREE.Mesh(new THREE.SphereGeometry(es,6,6),eyeMat);
-    e.position.set(sx,2.35,.5);g.add(e);}
+  for(const sx of[-.11,.11]){const e=new THREE.Mesh(new THREE.SphereGeometry(es,6,6),eyeMat);
+    e.position.set(sx,2.46,.33);g.add(e);}
+  g.rotation.z=(R()-.5)*.12;
   if(elite){ // void-iron guard slab it hides behind — parry or BASH to break it
     const sh=new THREE.Mesh(new THREE.BoxGeometry(1.5,2.2,.18),
       new THREE.MeshStandardMaterial({color:0x241610,roughness:.8,metalness:.35}));
@@ -238,7 +259,7 @@ function sfx(kind){
 /* ============ Vaelthorn ============ */
 let vael=null,vaelMixer=null;
 async function wakeGod(){
-  const g=await loadGLB('models/VAELTHORN-IDLE.glb');
+  const g=animCache.GOD||await loadGLB('models/VAELTHORN-IDLE.glb');
   vael=g.scene;vael.scale.setScalar(.075);
   vael.position.set(0,-14,S.gateZ-3); // below ground; rises per the Emergence Law
   scene.add(vael);
@@ -306,7 +327,7 @@ function act(name,anim,dur,dmg,range,knock){
     }
     S.shakes=Math.max(S.shakes,.35);
     if(u.hp<=0){scene.remove(h);hollows.splice(hollows.indexOf(h),1);
-      S.faith=Math.min(100,S.faith+6);setBars();
+      dropFaith(h.position.x,h.position.z); // faith spills: 3 motes x 2 = +6, gathered by the Luminary
       if(!hollows.length)nextWave();}
   }
 }
@@ -347,6 +368,8 @@ $('start').addEventListener('click',async()=>{
   const touch=matchMedia('(pointer:coarse)').matches;
   if(touch){$('joy').style.display='block';$('btns').style.display='grid';}
   S.mode='loading';
+  banner('SUMMONING THE WARDEN…',1500);
+  await preloadWarden();
   await spawnWardenSafe();
   warden.position.set(0,0,S.z);
   S.mode='fight';S.wave=0;
@@ -382,7 +405,7 @@ function tick(){
     if(S.dodgeCd>0)S.dodgeCd-=dt*STATS.TEMPO;
     const flick=(m>.85&&!S._flickLatch&&S.lock)||S.keys.ShiftLeft||S.keys.ShiftRight;
     if(flick&&S.dodgeCd<=0&&S.dodgeT<=0){
-      S.dodgeT=.3;S.dodgeCd=.9;S.dodgeV={x:mx,z:mz};
+      S.dodgeT=.3;S.dodgeCd=.9;S.dodgeV={x:mx,z:mz};playAnim('DODGE',.4);
       S._flickLatch=true;setTimeout(()=>S._flickLatch=false,320);
     }
     if(m<.5)S._flickLatch=false;
@@ -394,6 +417,12 @@ function tick(){
       warden.position.z=THREE.MathUtils.clamp(warden.position.z+mz*spd*dt,S.gateZ+4.5,14);
     }
     warden.position.y=Math.abs(Math.sin(t*7))*Math.min(.06,m); // road-bob
+    // walk/idle pose toggling (only when not mid-attack/dodge)
+    if(!swapping){
+      const walking=m>.25&&S.dodgeT<=0;
+      if(walking!==S._walking){S._walking=walking;
+        playAnim(walking?'WALK':'IDLE',.4);}
+    }
     // facing: lock-on target > movement direction > hall axis
     let face=Math.PI;
     if(S.lock&&lockT){face=Math.atan2(lockT.position.x-warden.position.x,lockT.position.z-warden.position.z);}
@@ -428,7 +457,7 @@ function tick(){
             if(u.elite&&u.guard){u.broken=3.5;breakGuard(h);S.faith=Math.min(100,S.faith+8);setBars();}
             u.state='approach';u.atkT=1.6;}
           else{S.vigor=Math.max(0,S.vigor-(u.elite?14:9)*(1-STATS.GUARD));S.shakes=.4;setBars();
-            if(S.vigor<=0){S.mode='dead';banner('THE HOLLOW TAKES THE LANTERN — TAP TO RETRY',90000);
+            if(S.vigor<=0){S.mode='dead';playAnim('KNOCKDOWN',2.5);banner('THE HOLLOW TAKES THE LANTERN — TAP TO RETRY',90000);
               setTimeout(()=>location.reload(),4200);}
             u.state='approach';u.atkT=1.8;}
         }
