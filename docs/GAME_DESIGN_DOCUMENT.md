@@ -60,7 +60,7 @@ See `docs/ROLE_IDENTITY_SYSTEM.md` for full role design.
 - **Ultimate Charge:** Fills via dealing/taking damage. When full, Ultimate is available.
 - **Belief:** Meta-progression resource. Earned from victories, followers, realm control. Spent to level Avatar stats.
 - **Influence:** Meta-progression resource. Earned from missions, battles, territory. Spent to unlock/upgrade abilities.
-- **No Mana/No Cooldown-only:** DE gates ability use, not arbitrary cooldowns. Some abilities have mechanical cooldowns for balance.
+- **No Mana/No Cooldown-only:** FAITH gates ability use (the Macer's Loop — attacking and killing build it, abilities spend it; there is no other resource), not arbitrary cooldowns. Some abilities have mechanical cooldowns for balance.
 
 ### 2.5 Damage Types
 | Damage Type | Description | Counter |
@@ -85,7 +85,7 @@ See `docs/ROLE_IDENTITY_SYSTEM.md` for full role design.
 | Stun | Cannot act for 2.5s |
 | Marked | Takes +25% damage from all sources |
 | Corrupted | Healing reversed (takes damage instead of healing) |
-| Hollowed | Identity drain — abilities cost +50% DE for 4s |
+| Hollowed | Identity drain — abilities cost +50% FAITH for 4s |
 
 ### 2.7 Enemy AI Tiers
 | Tier | Behavior |

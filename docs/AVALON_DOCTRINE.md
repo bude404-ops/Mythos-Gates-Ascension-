@@ -142,14 +142,14 @@ A sleeping god's dream is vast — and sometimes the dream settles on ONE human:
 - The Gate Rite works ONLY because the god has been dreaming of this person all along: the rite is not a spell, it is an ANSWERED DREAM.
 - Campaign hook: the antagonist logic — the Hollow/the Echo dreams too. A false waking wears a stolen dream.
 
-### THE LANTERN RITES (the better rite/lantern system)
+### THE LANTERN RITES v2 (reframed Sept 6 for THE LANTERN IS THE LUMINARIES law — the lantern is a LIVING being, never a planted/refilled tool; the four rites survive intact with living-flame grammar)
 
-The lantern is your faith made portable — ONE resource (LIGHT), three uses (power meter, Hollow protection, Gate-Rite charge):
+The LUMINARY carries your faith beside you — ONE resource (LIGHT), three uses (power meter, Hollow protection, Gate-Rite charge):
 
-1. **CARRY — light = faith meter.** Deeds feed the light (shrine-keeping, Hollow kills, quest oaths). Brighter lantern = stronger relic-gifts and larger Hollow-protection radius.
-2. **PLANT — the Gate Rite.** Plant the lantern on a dead Gate's altar: the rite anchors, and you defend it DIMMED (risk/reward) while waves of Hollow try to snuff it — relight the Gate and the lantern refills from the faith font, the Gate becomes a permanent heal-point. Realm climax: the planted rite at the heart-Gate = the god's waking cutscene trigger.
-3. **GATHER — light lost is light recoverable.** Die in the Wasteland and your light scatters at the death spot — walk back and gather it ("your faith fell there; go kneel for it"). Doctrine grammar over souls-clone.
-4. **PASS — endgame/co-op.** A Marked pilgrim can tip part of their light into another's lantern — light is the only thing that transfers between players (gift economy; never sold).
+1. **CARRY — the flame = faith meter.** Deeds feed the flame (shrine-keeping, Hollow kills, quest oaths — the Macer's Loop feeds it in combat too). A brighter flame = stronger relic-gifts and larger Hollow-protection radius. The flame mirrors the Mark's element (kin to the element — canon).
+2. **ALIGHT — the Gate Rite.** At a dead Gate's altar, the LUMINARY ALIGHTS of its own will — the living flame consents to anchor the rite, and you defend it DIMMED (risk/reward) while waves of Hollow try to snuff the flame. Relight the Gate and the LUMINARY drinks from the faith font; the Gate becomes a permanent heal-point. Realm climax: the alighted rite at the heart-Gate = the god's waking trigger (the god wakes THROUGH the pilgrim's rite, never from a planted object).
+3. **GATHER — light lost is light recoverable.** Die in the Wasteland and your faith scatters as golden motes at the death spot — walk back and gather them ("your faith fell there; go kneel for it"). Same mote grammar as combat faith-drops. Doctrine grammar over souls-clone.
+4. **PASS — endgame/co-op.** A Marked pilgrim can entrust part of their light to another pilgrim's Luminary's keeping — light is the only thing that transfers between players (gift economy; never sold).
 
 ### DREAM-MOTE PETS (the new pet style to match the doctrine)
 

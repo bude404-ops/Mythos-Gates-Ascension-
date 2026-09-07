@@ -70,7 +70,7 @@ The Bloom Gate opens on his word alone, and it has opened for every pilgrim equa
 Still water is not weak water — it is water that has already won. The Mirror Staff's frozen spring shows each pilgrim the day they were bravest, and Mirielle has never once refused to show it, even to cowards. The Bloomweald swears no lie has ever been told within sight of her reflection.
 
 ### MORVAINE — "THE LAST WATCH"
-The Bone Giant walks the Ossuary Plain each dusk, and the lantern-niches of the whole realm brighten as he passes, like a father checking the sleeping-house. When a last light gutters, they say the Dusk Blade points to the door before anyone knocks. The Gloambarrow folk do not fear him; they leave the gate open for him.
+The Bone Giant rises at the Ossuary's edge each dusk — submergence travel along the shadow-roads, the folk never see him move — and the lantern-niches of the whole realm brighten as his shadow crosses them, like a father checking the sleeping-house. When a last light gutters, they say the Dusk Blade points to the door before anyone knocks. The Gloambarrow folk do not fear him; they leave the gate open for him.
 
 ### SENNETH — "THE LANTERN LEDGER"
 Every lantern in Lanternhush is hers by oath — each one a final light she carries home in the crown of her staff. The Gloambarrow folk believe the Lampkeeper knows every name in the Ledger by heart, and that the reason she never speaks is that the recitation never ends.
