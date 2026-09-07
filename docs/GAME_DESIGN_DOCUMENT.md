@@ -335,114 +335,36 @@ Power differences between Realms are shown through:
 
 ---
 
-## 9. AVATAR SYSTEM SUMMARY
+## 9. PLAYABLE CHARACTER SUMMARY (Avalon: the two scales)
 
 | Aspect | Detail |
 |--------|--------|
-| Playable character | Avatar (divine projection of a Deity) |
-| Deity status | Safe in home Realm — never dies |
-| Avatar scale | GOD-SCALE everywhere (Option A) |
-| Power source | Belief (stats) + Influence (abilities) |
-| Home Realm | Full power, full aura, max charges |
-| Enemy Realm | Weakened (-20% ATK, -15% DEF, +25% cooldowns) but +50% rewards |
-| Earth (Neutral) | Balanced, no advantage, +25% rewards |
-| Avatar death | Respawn at Deity domain, lose 10-20% unspent Belief/Influence |
-| Preserved on death | Level, abilities, relics, all progression |
-| Earth role | Neutral dungeons, PvP, Hollow invasions, World Bosses |
+| Pilgrim scale | The hooded pilgrim (six Orders: Warden, Keeper, Walker, Singer, Smith, Vigil), Mark + Luminary, behind-back third-person camera |
+| God scale | The woken colossus itself, played directly at the Gate — stationary per the Emergence Law, front-view cinematic framing |
+| Power source | FAITH (the Macer's Loop — attacking/killing builds it, abilities spend it) + persistent TRIBUTE economy |
+| Progression | Class trees, relic tiers, Mark re-attunement — curated, zero random rolls |
+| Death | The pilgrim falls; the god never walks |
 
 ---
 
-## 10. GUILD & WORLD BOSS SYSTEM
+## 10. ENDGAME — SOLO-FIRST (Avalon canon; supersedes guilds/world-boss/gear endgame)
+**No guilds, no servers to race, no gear to grind.** AVALON is solo-first end to end — one pilgrim, one Luminary, the long descent.
 
-### 10.1 Overview
-After completing their faction campaign, players can join or create **Guilds** — faction-specific groups that tackle **World Bosses** with shared damage pools. Guild progression unlocks passive buffs for all members, creating a social endgame loop.
+### 10.1 The Depths (the grind space)
+Procedural dungeon layer beneath each realm. Tribute flows RICHEST here — the dungeon-masher's home, the place you go to keep the loop hot between chapters. Farming is OPTIONAL: every tree node and relic tier is also earnable through the campaign. The Depths never gate the story.
 
-### 10.2 Guild Structure
-- **Faction-Specific:** Aten Ra players join Aten Ra guilds, Olympian players join Olympian guilds, etc.
-- **Max Members:** 20 players per Guild
-- **Creation:** Any post-campaign player can create a Guild (costs Gate Shards)
-- **Joining:** Players can apply to existing Guilds or accept invitations
-- **Guild Rank:** 1-7, increases as the Guild defeats higher-level World Bosses
+### 10.2 Waking Siege (replayability, god-scale)
+Replayable Hollow-tide defenses at the Gates — waves scale, tribute scales, the god you woke stands and answers. The Masher's Loop at god scale.
 
-### 10.3 World Boss Shared Damage System
-- Each World Boss has a massive HP pool (millions of HP)
-- Guild members fight the boss during a weekly window
-- Each member's damage is **SHARED** — pooled together against the boss
-- Boss HP persists across the week until the Guild defeats it or time runs out
-- No single player can defeat a World Boss alone — it requires the Guild's combined effort
+### 10.3 Echo Duels (god vs god)
+Replayable duels at the Six Gates — your woken colossus against the Echo of another (recorded god-form — solo-first stays true, no live opponent).
 
-### 10.4 World Boss Levels & Difficulties
+### 10.4 Champion Hunts (side quests, lore-forward)
+The legendary Hollow of the bestiary (T2/T3) surface through side quests — 'found, not told' per the quest doctrine. Their felled tribute funds deep tree unlocks.
 
-| Level | HP | Min Members | Key Rewards |
-|-------|----|-------------|-------------|
-| 1 | 5M | 1 (solo possible) | Weapon Shards, Energy Cores |
-| 2 | 10M | 5+ active | + Divine Essence |
-| 3 | 25M | 10+ active | + Faction Relics |
-| 4 | 50M | Full 20-member guild | + Godsteel |
-| 5 | 100M | Full guild, geared | + Primordial Matter |
-| 6 | 200M | Server-first race | + Unique cosmetic title |
-| 7+ | 500M+ | Mythic tier | + Legendary weapon skin |
-
-**Each boss level adds:**
-- Higher HP (requires more coordinated guild effort)
-- New mechanics (damage phases, enrage timers, add waves)
-- Better drop tables (higher-tier materials)
-- More Guild Rank points
-
-### 10.5 Guild Rank Progression
-
-| Rank | Requirement | Unlocks |
-|------|------------|---------|
-| 1 | Defeat Level 1 Boss | Guild name registered |
-| 2 | Defeat Level 2 Boss | Guild emblem unlocked |
-| 3 | Defeat Level 3 Boss | Guild banner, shared buff (+5% damage) |
-| 4 | Defeat Level 4 Boss | Guild fortress, shared buff (+10% damage) |
-| 5 | Defeat Level 5 Boss | Legendary status, shared buff (+15% damage) |
-| 6 | Defeat Level 6 Boss | Server-wide recognition, exclusive cosmetics |
-| 7 | Defeat Level 7+ Boss | Mythic guild, permanent leaderboard spot |
-
-### 10.6 Guild Buffs (Shared Perks)
-As Guild Rank increases, ALL members receive passive bonuses:
-
-| Rank | Buff |
-|------|------|
-| 3+ | +5% weapon damage |
-| 4+ | +10% material drop rate |
-| 4+ | +1 free Rift run per day |
-| 5+ | +15% world boss damage |
-| 6+ | +20% EXP gain |
-
-Guild buffs stack with personal ascension choices — a Rank 5 guild member with all-damage ascension build does significantly more damage than a solo player.
-
-### 10.7 Balance Rules
-- World Boss HP scales so a full Guild of Level 25 weapon players CAN beat Level 5 in ~3-4 weekly attempts
-- Under-geared Guilds can attempt higher bosses but won't have enough combined DPS
-- Solo players can still fight Level 1-2 bosses but it takes many attempts
-- Rewards scale per boss level — no point farming Level 1 when you can do Level 4
-- **Weekly lockout:** Each boss can only be attempted once per week per Guild
-
-### 10.8 Lore Integration
-World Bosses are the most powerful Hollow entities trying to break through the Gate. Each faction's Guild defends their mythological homeland from these invasions. Higher-level bosses are ancient Hollow Lords — entities that existed before the deities themselves.
-
-As a Guild proves itself against stronger bosses, the deities grant their blessing (the shared buffs). A Rank 5 Guild has earned the direct favor of their patron deity.
-
-### 10.9 Progression Flow
-1. Beat faction campaign → Join or create Guild
-2. Guild fights Level 1 World Boss → Rank up to Rank 1
-3. Farm Gate Rifts for better gear → Guild gets stronger
-4. Attempt Level 2-3 bosses → More rank, better rewards
-5. Push for Level 4-5 → Godsteel + Primordial Matter access
-6. Server-first race on Level 6+ → Legendary guild status
-
-**Social Loop:** Top-tier materials (Godsteel, Primordial Matter) come from Guild World Bosses at Level 4+. Solo players can still progress through Rift farming but at a slower rate. This creates natural incentive for guild participation without hard-locking content.
-
-### 10.10 Economy Integration
-| Material | Source | Use |
-|----------|--------|-----|
-| Weapon Shards | Level 1-2 Bosses | Weapon upgrade materials |
-| Energy Cores | Level 1-2 Bosses | Ability enhancement |
-| Divine Essence | Level 2-3 Bosses | Relic enhancement |
-| Faction Relics | Level 3 Bosses | Faction-specific relic drops |
-| Godsteel | Level 4-5 Bosses | Legendary weapon crafting |
-| Primordial Matter | Level 5-6 Bosses | Mythic-tier gear crafting |
-| Legendary Weapon Skin | Level 7+ Bosses | Cosmetic weapon override |
+### 10.5 The Tribute System (progression economy — canon per BudE404, Sept 6: 'in-agree on the gear, the grind part sucks and stats would suck and we would be building more gear etc.')
+- **NO stat-gear treadmill**: zero random rolls, zero affix loot, zero gear power creep. There is NO drop RNG in AVALON.
+- **Two drop currencies from kills**: FAITH motes (in-run resource, unchanged — the Macer's Loop) + **TRIBUTE** (persistent currency) — occasional, tied to notable kills (elites, first-clears, Warden Hollows, siege waves), reading as physical offerings to the god (tribute-reef lore: centuries of pilgrim offerings fused into the god's strata).
+- **Tribute spends at SHRINES**: class-tree nodes (builders/spenders), relic tiers (Cold Lantern line), Mark re-attunement rites, cosmetic rune flame colorways.
+- **Curated loadout, zero randomness**: WEAPON (swappable kits — the six class trees Blade/Dagger/Hammer/Lantern/Song/Tower; weapons are separate hand-bone meshes for exactly this), ARMOR (one set per role per gender — the canon 12; faction = rune colorway), RELIC (deed-earned), skill-tree branches.
+- **Power curve = trees + relic tiers + Mark choices — never drops.**
